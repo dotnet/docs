@@ -30,7 +30,7 @@ The following interfaces are designed to be consumed by Windows Forms controls:
   A class that implements the <xref:System.Collections.IList> interface could be an <xref:System.Array>, <xref:System.Collections.ArrayList>, or <xref:System.Collections.CollectionBase>. These are indexed lists of items of type <xref:System.Object>. These lists must contain homogenous types, because the first item of the index determines the type. <xref:System.Collections.IList> would be available for binding only at run time.
 
   > [!NOTE]
-  >  If you want to create a list of business objects for binding with Windows Forms, you should consider using the <xref:System.ComponentModel.BindingList%601>. The <xref:System.ComponentModel.BindingList%601> is an extensible class that implements the primary interfaces required for two-way Windows Forms data binding.
+  > If you want to create a list of business objects for binding with Windows Forms, you should consider using the <xref:System.ComponentModel.BindingList%601>. The <xref:System.ComponentModel.BindingList%601> is an extensible class that implements the primary interfaces required for two-way Windows Forms data binding.
 
 - <xref:System.ComponentModel.IBindingList> interface
 

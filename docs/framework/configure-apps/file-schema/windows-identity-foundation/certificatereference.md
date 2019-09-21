@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<certificateReference>
 Specifies settings that are used to find and validate an X.509 certificate in a certificate store.  
   
- \<system.identityModel.services>  
-\<federationConfiguration>  
-\<serviceCertificate>  
-\<certificateReference>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCertificate>**](servicecertificate.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<certificateReference>**  
   
 ## Syntax  
   

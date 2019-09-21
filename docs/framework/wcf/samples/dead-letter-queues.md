@@ -266,7 +266,7 @@ public class PurchaseOrderDLQService : IOrderProcessor
 
  When running the client, the client displays the message:
 
-```
+```console
 Press <ENTER> to terminate client.
 ```
 
@@ -274,7 +274,7 @@ Press <ENTER> to terminate client.
 
  You then run the dead-letter service, which reads the message and displays the error code and resends the message back to the service.
 
-```
+```console
 The dead letter service is ready.
 Press <ENTER> to terminate service.
 
@@ -289,7 +289,7 @@ Purchase order resent
 
  The service starts and then reads the resent message and processes it.
 
-```
+```console
 The service is ready.
 Press <ENTER> to terminate service.
 
@@ -341,16 +341,16 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 2. Ensure that you change the configuration on the DeadLetterService, server and the client before you run the sample.
 
     > [!NOTE]
-    >  Setting `security mode` to `None` is equivalent to setting `MsmqAuthenticationMode`, `MsmqProtectionLevel` and `Message` security to `None`.
+    > Setting `security mode` to `None` is equivalent to setting `MsmqAuthenticationMode`, `MsmqProtectionLevel` and `Message` security to `None`.
 
 ## Comments
  By default with the `netMsmqBinding` binding transport, security is enabled. Two properties, `MsmqAuthenticationMode` and `MsmqProtectionLevel`, together determine the type of transport security. By default the authentication mode is set to `Windows` and the protection level is set to `Sign`. For MSMQ to provide the authentication and signing feature, it must be part of a domain. If you run this sample on a computer that is not part of a domain, you receive the following error: "User's internal message queuing certificate does not exist".
 
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  

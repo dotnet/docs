@@ -71,7 +71,7 @@ You can then create a Power BI dashboard to gather insights about the data colle
 
 ![Power BI example](./media/power-bi-example.png)
 
-The full link shortener repository with instructions is available here: [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener). You can read about a simplified version here: [Azure Storage for serverless .NET apps in minutes](https://blogs.msdn.microsoft.com/webdev/2018/01/25/azure-storage-for-serverless-net-apps-in-minutes/).
+The full link shortener repository with instructions is available here: [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener). You can read about a simplified version here: [Azure Storage for serverless .NET apps in minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/).
 
 ## Verify device connectivity using a ping
 
@@ -83,7 +83,7 @@ For more information, see [Azure IoT Hub ping](https://azure.microsoft.com/resou
 
 * [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/)
 * [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/)
-* [Azure Storage for serverless .NET apps in minutes](https://blogs.msdn.microsoft.com/webdev/2018/01/25/azure-storage-for-serverless-net-apps-in-minutes/)
+* [Azure Storage for serverless .NET apps in minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/)
 * [Bring your own app](https://github.com/JeremyLikness/bring-own-app-connect-17)
 * [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol)
 * [Event grid glue](https://github.com/JeremyLikness/Event-Grid-Glue)

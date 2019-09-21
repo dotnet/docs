@@ -61,7 +61,7 @@ using (SqlConnection connection = new SqlConnection(
  The connection pooler satisfies requests for connections by reallocating connections as they are released back into the pool. If the maximum pool size has been reached and no usable connection is available, the request is queued. The pooler then tries to reclaim any connections until the time-out is reached (the default is 15 seconds). If the pooler cannot satisfy the request before the connection times out, an exception is thrown.  
   
 > [!CAUTION]
->  We strongly recommend that you always close the connection when you are finished using it so that the connection will be returned to the pool. You can do this using either the `Close` or `Dispose` methods of the `Connection` object, or by opening all connections inside a `using` statement in C#, or a `Using` statement in Visual Basic. Connections that are not explicitly closed might not be added or returned to the pool. For more information, see [using Statement](../../../csharp/language-reference/keywords/using-statement.md) or [How to: Dispose of a System Resource](../../../visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md) for Visual Basic.  
+> We strongly recommend that you always close the connection when you are finished using it so that the connection will be returned to the pool. You can do this using either the `Close` or `Dispose` methods of the `Connection` object, or by opening all connections inside a `using` statement in C#, or a `Using` statement in Visual Basic. Connections that are not explicitly closed might not be added or returned to the pool. For more information, see [using Statement](../../../csharp/language-reference/keywords/using-statement.md) or [How to: Dispose of a System Resource](../../../visual-basic/programming-guide/language-features/control-flow/how-to-dispose-of-a-system-resource.md) for Visual Basic.  
   
 > [!NOTE]
 > Do not call `Close` or `Dispose` on a `Connection`, a `DataReader`, or any other managed object in the `Finalize` method of your class. In a finalizer, only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
@@ -121,11 +121,11 @@ using (SqlConnection connection = new SqlConnection(
  After a SQL Server application role has been activated by calling the `sp_setapprole` system stored procedure, the security context of that connection cannot be reset. However, if pooling is enabled, the connection is returned to the pool, and an error occurs when the pooled connection is reused. For more information, see the Knowledge Base article, "[SQL application role errors with OLE DB resource pooling](https://support.microsoft.com/default.aspx?scid=KB;EN-US;Q229564)."  
   
 ### Application Role Alternatives  
- We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md).  
+ We recommend that you take advantage of security mechanisms that you can use instead of application roles. For more information, see [Creating Application Roles in SQL Server](./sql/creating-application-roles-in-sql-server.md).  
   
 ## See also
 
-- [Connection Pooling](../../../../docs/framework/data/adonet/connection-pooling.md)
-- [SQL Server and ADO.NET](../../../../docs/framework/data/adonet/sql/index.md)
-- [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connection Pooling](connection-pooling.md)
+- [SQL Server and ADO.NET](./sql/index.md)
+- [Performance Counters](performance-counters.md)
+- [ADO.NET Overview](ado-net-overview.md)

@@ -24,39 +24,39 @@ Although a date and time value represents a moment in time, its string represent
 
 All calendars in .NET derive from the <xref:System.Globalization.Calendar?displayProperty=nameWithType> class, which provides the base calendar implementation. One of the classes that inherits from the <xref:System.Globalization.Calendar> class is the <xref:System.Globalization.EastAsianLunisolarCalendar> class, which is the base class for all lunisolar calendars. .NET includes the following calendar implementations:
 
-* <xref:System.Globalization.ChineseLunisolarCalendar>, which represents the Chinese lunisolar calendar.
+- <xref:System.Globalization.ChineseLunisolarCalendar>, which represents the Chinese lunisolar calendar.
 
-* <xref:System.Globalization.GregorianCalendar>, which represents the Gregorian calendar. This calendar is further divided into subtypes (such as Arabic and Middle East French) that are defined by the <xref:System.Globalization.GregorianCalendarTypes?displayProperty=nameWithType> enumeration. The <xref:System.Globalization.GregorianCalendar.CalendarType%2A?displayProperty=nameWithType> property specifies the subtype of the Gregorian calendar.
+- <xref:System.Globalization.GregorianCalendar>, which represents the Gregorian calendar. This calendar is further divided into subtypes (such as Arabic and Middle East French) that are defined by the <xref:System.Globalization.GregorianCalendarTypes?displayProperty=nameWithType> enumeration. The <xref:System.Globalization.GregorianCalendar.CalendarType%2A?displayProperty=nameWithType> property specifies the subtype of the Gregorian calendar.
 
-* <xref:System.Globalization.HebrewCalendar>, which represents the Hebrew calendar.
+- <xref:System.Globalization.HebrewCalendar>, which represents the Hebrew calendar.
 
-* <xref:System.Globalization.HijriCalendar>, which represents the Hijri calendar.
+- <xref:System.Globalization.HijriCalendar>, which represents the Hijri calendar.
 
-* <xref:System.Globalization.JapaneseCalendar>, which represents the Japanese calendar.
+- <xref:System.Globalization.JapaneseCalendar>, which represents the Japanese calendar.
 
-* <xref:System.Globalization.JapaneseLunisolarCalendar>, which represents the Japanese lunisolar calendar.
+- <xref:System.Globalization.JapaneseLunisolarCalendar>, which represents the Japanese lunisolar calendar.
 
-* <xref:System.Globalization.JulianCalendar>, which represents the Julian calendar.
+- <xref:System.Globalization.JulianCalendar>, which represents the Julian calendar.
 
-* <xref:System.Globalization.KoreanCalendar>, which represents the Korean calendar.
+- <xref:System.Globalization.KoreanCalendar>, which represents the Korean calendar.
 
-* <xref:System.Globalization.KoreanLunisolarCalendar>, which represents the Korean lunisolar calendar.
+- <xref:System.Globalization.KoreanLunisolarCalendar>, which represents the Korean lunisolar calendar.
 
-* <xref:System.Globalization.PersianCalendar>, which represents the Persian calendar.
+- <xref:System.Globalization.PersianCalendar>, which represents the Persian calendar.
 
-* <xref:System.Globalization.TaiwanCalendar>, which represents the Taiwan calendar.
+- <xref:System.Globalization.TaiwanCalendar>, which represents the Taiwan calendar.
 
-* <xref:System.Globalization.TaiwanLunisolarCalendar>, which represents the Taiwan lunisolar calendar.
+- <xref:System.Globalization.TaiwanLunisolarCalendar>, which represents the Taiwan lunisolar calendar.
 
-* <xref:System.Globalization.ThaiBuddhistCalendar>, which represents the Thai Buddhist calendar.
+- <xref:System.Globalization.ThaiBuddhistCalendar>, which represents the Thai Buddhist calendar.
 
-* <xref:System.Globalization.UmAlQuraCalendar>, which represents the Um Al Qura calendar.
+- <xref:System.Globalization.UmAlQuraCalendar>, which represents the Um Al Qura calendar.
 
 A calendar can be used in one of two ways:
 
-* As the calendar used by a specific culture. Each <xref:System.Globalization.CultureInfo> object has a current calendar, which is the calendar that the object is currently using. The string representations of all date and time values automatically reflect the current culture and its current calendar. Typically, the current calendar is the culture's default calendar. <xref:System.Globalization.CultureInfo> objects also have optional calendars, which include additional calendars that the culture can use.
+- As the calendar used by a specific culture. Each <xref:System.Globalization.CultureInfo> object has a current calendar, which is the calendar that the object is currently using. The string representations of all date and time values automatically reflect the current culture and its current calendar. Typically, the current calendar is the culture's default calendar. <xref:System.Globalization.CultureInfo> objects also have optional calendars, which include additional calendars that the culture can use.
 
-* As a standalone calendar independent of a specific culture. In this case, <xref:System.Globalization.Calendar> methods are used to express dates as values that reflect the calendar.
+- As a standalone calendar independent of a specific culture. In this case, <xref:System.Globalization.Calendar> methods are used to express dates as values that reflect the calendar.
 
 Note that six calendar classes – <xref:System.Globalization.ChineseLunisolarCalendar>, <xref:System.Globalization.JapaneseLunisolarCalendar>, <xref:System.Globalization.JulianCalendar>, <xref:System.Globalization.KoreanLunisolarCalendar>, <xref:System.Globalization.PersianCalendar>, and <xref:System.Globalization.TaiwanLunisolarCalendar> – can be used only as standalone calendars. They are not used by any culture as either the default calendar or as an optional calendar.
 
@@ -133,6 +133,7 @@ Calendars typically divide dates into eras. However, the <xref:System.Globalizat
 
 > [!IMPORTANT]
 > The Reiwa era, a new era in the <xref:System.Globalization.JapaneseCalendar> and <xref:System.Globalization.JapaneseLunisolarCalendar>, begins on May 1, 2019. This change affects all applications that use these calendars. See the following articles for more information:
+>
 > - [Handling a new era in the Japanese calendar in .NET](https://devblogs.microsoft.com/dotnet/handling-a-new-era-in-the-japanese-calendar-in-net/), which documents features added to .NET to support calendars with multiple eras and discusses best practices to use when handling multi-era calendars.
 > - [Prepare your application for the Japanese era change](/windows/uwp/design/globalizing/japanese-era-change), which provides information on testing your applications on Windows to ensure their readiness for the era change.
 > - [Summary of new Japanese Era updates for .NET Framework](https://support.microsoft.com/help/4477957/new-japanese-era-updates-for-net-framework), which lists .NET Framework updates for individual Windows versions that are related to the new Japanese calendar era, notes new .NET Framework features for multi-era support, and includes things to look for in testing your applications.

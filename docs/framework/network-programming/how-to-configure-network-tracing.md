@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 5ef9fe4b-8d3d-490e-9259-1d014b2181af
 ---
 # How to: Configure Network Tracing
-The application or computer configuration file holds the settings that determine the format and content of network traces. Before performing this procedure, be sure tracing is enabled. For information about enabling tracing, see [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md).  
+The application or computer configuration file holds the settings that determine the format and content of network traces. Before performing this procedure, be sure tracing is enabled. For information about enabling tracing, see [Enabling Network Tracing](enabling-network-tracing.md).  
   
  The computer configuration file, machine.config, is stored in the %Windir%\Microsoft.NET\Framework folder in the directory where Windows was installed. There is a separate machine.config file in the folders under %Windir%\Microsoft.NET\Framework for each version of the .NET Framework installed on the computer (for example, C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\machine.config or C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\machine.config.).  
   
@@ -93,7 +93,7 @@ The application or computer configuration file holds the settings that determine
   
 ## See also
 
-- [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)
-- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)
-- [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [Interpreting Network Tracing](interpreting-network-tracing.md)
+- [Network Tracing in the .NET Framework](network-tracing.md)
+- [Enabling Network Tracing](enabling-network-tracing.md)
+- [Tracing and Instrumenting Applications](../debug-trace-profile/tracing-and-instrumenting-applications.md)

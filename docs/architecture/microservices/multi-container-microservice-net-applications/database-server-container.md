@@ -25,7 +25,7 @@ The SQL Server container in the sample application is configured with the follow
 
 In a similar way, instead of using `docker-compose`, the following `docker run` command can run that container:
 
-```
+```console
   docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pass@word' -p 5433:1433 -d microsoft/mssql-server-linux:2017-latest
 ```
 
@@ -141,7 +141,6 @@ public class Startup
     }
   
     // Other Startup code ...
-
 }
 ```
 
@@ -161,7 +160,7 @@ Redis provides a Docker image with Redis. That image is available from Docker Hu
 
 You can directly run a Docker Redis container by executing the following Docker CLI command in your command prompt:
 
-```
+```console
   docker run --name some-redis -d redis
 ```
 

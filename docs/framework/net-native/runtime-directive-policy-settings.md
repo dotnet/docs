@@ -10,9 +10,9 @@ ms.author: "ronpet"
 > [!NOTE]
 > This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).
 
-Runtime directive policy settings for .NET Native determine the availability of metadata for types and type members at run time. Without the necessary metadata, operations that rely on reflection, serialization and deserialization, or marshaling of .NET Framework types to COM or the Windows Runtime can fail and throw an exception. Most common exceptions are [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) and (in the case of interop) [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md).
+Runtime directive policy settings for .NET Native determine the availability of metadata for types and type members at run time. Without the necessary metadata, operations that rely on reflection, serialization and deserialization, or marshaling of .NET Framework types to COM or the Windows Runtime can fail and throw an exception. Most common exceptions are [MissingMetadataException](missingmetadataexception-class-net-native.md) and (in the case of interop) [MissingInteropDataException](missinginteropdataexception-class-net-native.md).
 
-Runtime policy settings are controlled by a runtime directives (.rd.xml) file. Each runtime directive defines policy for a particular program element, such as an assembly (the [\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md) element), a type (the [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element), or a method (the [\<Method>](../../../docs/framework/net-native/method-element-net-native.md) element). The directive includes one or more attributes that define the reflection policy types, the serialization policy types, and the interop policy types discussed in the next section. The value of the attribute defines the policy setting.
+Runtime policy settings are controlled by a runtime directives (.rd.xml) file. Each runtime directive defines policy for a particular program element, such as an assembly (the [\<Assembly>](assembly-element-net-native.md) element), a type (the [\<Type>](type-element-net-native.md) element), or a method (the [\<Method>](method-element-net-native.md) element). The directive includes one or more attributes that define the reflection policy types, the serialization policy types, and the interop policy types discussed in the next section. The value of the attribute defines the policy setting.
 
 ## Policy types
 
@@ -30,22 +30,22 @@ Runtime directives files recognize three categories of policy types: reflection,
 
   |Element|Activate|Browse|Dynamic|
   |-------------|--------------|------------|-------------|
-  |[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|✓|✓|✓|
-  |[\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|
-  |[\<AttributeImplies>](../../../docs/framework/net-native/attributeimplies-element-net-native.md)|✓|✓|✓|
-  |[\<Event>](../../../docs/framework/net-native/event-element-net-native.md)||✓|✓|
-  |[\<Field>](../../../docs/framework/net-native/field-element-net-native.md)||✓|✓|
-  |[\<GenericParameter>](../../../docs/framework/net-native/genericparameter-element-net-native.md)|✓|✓|✓|
-  |[\<ImpliesType>](../../../docs/framework/net-native/impliestype-element-net-native.md)|✓|✓|✓|
-  |[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)||✓|✓|
-  |[\<MethodInstantiation>](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)||✓|✓|
-  |[\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|
-  |[\<Parameter>](../../../docs/framework/net-native/parameter-element-net-native.md)|✓|✓|✓|
-  |[\<Property>](../../../docs/framework/net-native/property-element-net-native.md)||✓|✓|
-  |[\<Subtypes>](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|
-  |[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|✓|✓|✓|
-  |[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|✓|✓|✓|
-  |[\<TypeParameter>](../../../docs/framework/net-native/typeparameter-element-net-native.md)|✓|✓|✓|
+  |[\<Application>](application-element-net-native.md)|✓|✓|✓|
+  |[\<Assembly>](assembly-element-net-native.md)|✓|✓|✓|
+  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✓|✓|✓|
+  |[\<Event>](event-element-net-native.md)||✓|✓|
+  |[\<Field>](field-element-net-native.md)||✓|✓|
+  |[\<GenericParameter>](genericparameter-element-net-native.md)|✓|✓|✓|
+  |[\<ImpliesType>](impliestype-element-net-native.md)|✓|✓|✓|
+  |[\<Method>](method-element-net-native.md)||✓|✓|
+  |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)||✓|✓|
+  |[\<Namespace>](namespace-element-net-native.md)|✓|✓|✓|
+  |[\<Parameter>](parameter-element-net-native.md)|✓|✓|✓|
+  |[\<Property>](property-element-net-native.md)||✓|✓|
+  |[\<Subtypes>](subtypes-element-net-native.md)|✓|✓|✓|
+  |[\<Type>](type-element-net-native.md)|✓|✓|✓|
+  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✓|✓|✓|
+  |[\<TypeParameter>](typeparameter-element-net-native.md)|✓|✓|✓|
 
 - Serialization policy types determine which metadata is made available at run time for serialization and deserialization:
 
@@ -61,22 +61,22 @@ Runtime directives files recognize three categories of policy types: reflection,
 
   |Element|Serialize|DataContractSerializer|DataContractJsonSerializer|XmlSerializer|
   |-------------|---------------|----------------------------|--------------------------------|-------------------|
-  |[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|✓|
-  |[\<AttributeImplies>](../../../docs/framework/net-native/attributeimplies-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Event>](../../../docs/framework/net-native/event-element-net-native.md)|||||
-  |[\<Field>](../../../docs/framework/net-native/field-element-net-native.md)|✓||||
-  |[\<GenericParameter>](../../../docs/framework/net-native/genericparameter-element-net-native.md)|✓|✓|✓|✓|
-  |[\<ImpliesType>](../../../docs/framework/net-native/impliestype-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)|||||
-  |[\<MethodInstantiation>](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)|||||
-  |[\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Parameter>](../../../docs/framework/net-native/parameter-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Property>](../../../docs/framework/net-native/property-element-net-native.md)|✓||||
-  |[\<Subtypes>](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|✓|✓|✓|✓|
-  |[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|✓|✓|✓|✓|
-  |[\<TypeParameter>](../../../docs/framework/net-native/typeparameter-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Application>](application-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Assembly>](assembly-element-net-native.md)|✓|✓|✓|✓|
+  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Event>](event-element-net-native.md)|||||
+  |[\<Field>](field-element-net-native.md)|✓||||
+  |[\<GenericParameter>](genericparameter-element-net-native.md)|✓|✓|✓|✓|
+  |[\<ImpliesType>](impliestype-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Method>](method-element-net-native.md)|||||
+  |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)|||||
+  |[\<Namespace>](namespace-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Parameter>](parameter-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Property>](property-element-net-native.md)|✓||||
+  |[\<Subtypes>](subtypes-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Type>](type-element-net-native.md)|✓|✓|✓|✓|
+  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✓|✓|✓|✓|
+  |[\<TypeParameter>](typeparameter-element-net-native.md)|✓|✓|✓|✓|
 
 - Interop policy types determine which metadata is made available at run time to pass references types, value types, and function pointers to COM and the Windows Runtime:
 
@@ -90,22 +90,22 @@ Runtime directives files recognize three categories of policy types: reflection,
 
   |Element|MarshalObject|MarshalDelegate|MarshalStructure|
   |-------------|-------------------|---------------------|----------------------|
-  |[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|✓|✓|✓|
-  |[\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md)|✓|✓|✓|
-  |[\<AttributeImplies>](../../../docs/framework/net-native/attributeimplies-element-net-native.md)|✓|✓|✓|
-  |[\<Event>](../../../docs/framework/net-native/event-element-net-native.md)||||
-  |[\<Field>](../../../docs/framework/net-native/field-element-net-native.md)||||
-  |[\<GenericParameter>](../../../docs/framework/net-native/genericparameter-element-net-native.md)|✓|✓|✓|
-  |[\<ImpliesType>](../../../docs/framework/net-native/impliestype-element-net-native.md)|✓|✓|✓|
-  |[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)||||
-  |[\<MethodInstantiation>](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)||||
-  |[\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md)|✓|✓|✓|
-  |[\<Parameter>](../../../docs/framework/net-native/parameter-element-net-native.md)|✓|✓|✓|
-  |[\<Property>](../../../docs/framework/net-native/property-element-net-native.md)||||
-  |[\<Subtypes>](../../../docs/framework/net-native/subtypes-element-net-native.md)|✓|✓|✓|
-  |[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|✓|✓|✓|
-  |[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|✓|✓|✓|
-  |[\<TypeParameter>](../../../docs/framework/net-native/typeparameter-element-net-native.md)|✓|✓|✓|
+  |[\<Application>](application-element-net-native.md)|✓|✓|✓|
+  |[\<Assembly>](assembly-element-net-native.md)|✓|✓|✓|
+  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✓|✓|✓|
+  |[\<Event>](event-element-net-native.md)||||
+  |[\<Field>](field-element-net-native.md)||||
+  |[\<GenericParameter>](genericparameter-element-net-native.md)|✓|✓|✓|
+  |[\<ImpliesType>](impliestype-element-net-native.md)|✓|✓|✓|
+  |[\<Method>](method-element-net-native.md)||||
+  |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)||||
+  |[\<Namespace>](namespace-element-net-native.md)|✓|✓|✓|
+  |[\<Parameter>](parameter-element-net-native.md)|✓|✓|✓|
+  |[\<Property>](property-element-net-native.md)||||
+  |[\<Subtypes>](subtypes-element-net-native.md)|✓|✓|✓|
+  |[\<Type>](type-element-net-native.md)|✓|✓|✓|
+  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✓|✓|✓|
+  |[\<TypeParameter>](typeparameter-element-net-native.md)|✓|✓|✓|
 
 ## Policy settings
 
@@ -126,5 +126,5 @@ Each policy type can be set to one of the values listed in the following table. 
 
 ## See also
 
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
-- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)

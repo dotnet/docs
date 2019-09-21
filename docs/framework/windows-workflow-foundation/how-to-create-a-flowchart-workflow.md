@@ -46,7 +46,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 9. Click **Create Variable**.  
   
     > [!TIP]
-    >  If no **Create Variable** box is displayed, click the <xref:System.Activities.Statements.Flowchart> activity on the workflow designer surface to select it.  
+    > If no **Create Variable** box is displayed, click the <xref:System.Activities.Statements.Flowchart> activity on the workflow designer surface to select it.  
   
 10. Type `Guess` into the **Name** box, select **Int32** from the **Variable type** drop-down list, and then press ENTER to save the variable.  
   
@@ -74,7 +74,7 @@ Workflows can be constructed from built-in activities as well as from custom act
     ```  
   
     > [!TIP]
-    >  If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
+    > If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
   
 3. Drag a **Prompt** activity from the **NumberGuessWorkflowActivities** section of the **Toolbox**, drop it below the **Assign** activity from the previous step, and connect the **Prompt** activity to the **Assign** activity. There are three ways to connect the two activities. The first way is to connect them as you drop the **Prompt** activity on the workflow. As you are dragging the **Prompt** activity to the workflow, hover it over the **Assign** activity and drop it onto one of the four triangles that appear when the **Prompt** activity is over the **Assign** activity. The second way is to drop the **Prompt** activity onto the workflow at the desired location. Then, hover the mouse over the **Assign** activity and drag one of the rectangles that appears down to the **Prompt** activity. Drag the mouse so that the connecting line from the **Assign** activity connects to one of the rectangles of the **Prompt** activity, and then release the mouse button. The third way is very similar to the first way, except that instead of dragging the **Prompt** activity from the **Toolbox**, you drag it from its location on the workflow design surface, hover it over the **Assign** activity, and drop it onto one of the triangles that appears.  
   
@@ -89,7 +89,7 @@ Workflows can be constructed from built-in activities as well as from custom act
     ```  
   
     > [!TIP]
-    >  If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
+    > If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
   
 5. Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and connect it using one of the methods described in the previous step so that it is below the **Prompt** activity.  
   
@@ -108,19 +108,19 @@ Workflows can be constructed from built-in activities as well as from custom act
 8. Drag another **FlowDecision** activity from the **Toolbox** and drop it below the first one. Connect the two activities by dragging from the rectangle that is labeled **False** on the top **FlowDecision** activity to the rectangle at the top of the second **FlowDecision** activity.  
   
     > [!TIP]
-    >  If you do not see the **True** and **False** labels on the **FlowDecision**, hover the mouse over the **FlowDecision**.  
+    > If you do not see the **True** and **False** labels on the **FlowDecision**, hover the mouse over the **FlowDecision**.  
   
 9. Click the second **FlowDecision** activity to select it. In the **Properties Window**, type the following expression into the **Condition** property value box.  
   
-    ```
-    Guess < Target  
+    ```text
+    Guess < Target
     ```  
   
 10. Drag two **WriteLine** activities from the **Primitives** section of the **Toolbox** and drop them so that they are side by side below the two **FlowDecision** activities. Connect the **True** action of the bottom **FlowDecision** activity to the leftmost **WriteLine** activity, and the **False** action to the rightmost **WriteLine** activity.  
   
 11. Click the leftmost **WriteLine** activity to select it, and type the following expression into the **Text** property value box in the **Properties Window**.  
   
-    ```
+    ```text
     "Your guess is too low."  
     ```  
   
@@ -128,7 +128,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 13. Click the rightmost **WriteLine** activity to select it, and type the following expression into the **Text** property value box in the **Properties Window**.  
   
-    ```
+    ```text
     "Your guess is too high."  
     ```  
   

@@ -102,7 +102,7 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
 ## Example  
  The MainWindow.xaml.cs file should now contain the following code.  
   
-```  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  

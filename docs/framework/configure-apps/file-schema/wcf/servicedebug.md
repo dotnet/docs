@@ -6,11 +6,12 @@ ms.assetid: 6d7ea986-f232-49fe-842c-f934d9966889
 # \<serviceDebug>
 Specifies debugging and help information features for a Windows Communication Foundation (WCF) service.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<serviceDebug>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceDebug>**  
   
 ## Syntax  
   
@@ -56,7 +57,7 @@ Specifies debugging and help information features for a Windows Communication Fo
  Setting `includeExceptionDetailInFaults` to `true` allows the service to return any exception that is thrown by the application code even if the exception is not declared using the <xref:System.ServiceModel.FaultContractAttribute>. This setting is useful when debugging cases where the server is throwing an unexpected exception. By using this attribute, a serialized form of the unknown exception is returned and you can examine more details of the exception.  
   
 > [!CAUTION]
->  Returning managed exception information to clients can be a security risk because exception details expose information about the internal service implementation that could be used by unauthorized clients. Because of the security issues involved, it is strongly recommended that you only do so in controlled debugging scenarios. You should set `includeExceptionDetailInFaults` to `false` when deploying your application.  
+> Returning managed exception information to clients can be a security risk because exception details expose information about the internal service implementation that could be used by unauthorized clients. Because of the security issues involved, it is strongly recommended that you only do so in controlled debugging scenarios. You should set `includeExceptionDetailInFaults` to `false` when deploying your application.  
   
  For details about the security issues related to managed exception, see [Specifying and Handling Faults in Contracts and Services](../../../wcf/specifying-and-handling-faults-in-contracts-and-services.md). For a code sample, see [Service Debug Behavior](../../../wcf/samples/service-debug-behavior.md).  
   

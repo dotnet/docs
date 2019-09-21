@@ -24,6 +24,7 @@ You don't need machine learning expertise to use Model Builder. All you need is 
 You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 
 A scenario is a description of the type of prediction you want to make using your data. For example:
+
 - predict future product sales volume based on historical sales data
 - classify sentiments as positive or negative based on customer reviews
 - detect whether a banking transaction is fraudulent
@@ -36,6 +37,7 @@ In Model Builder, you need to select a machine learning model type. The type of 
 For scenarios that predict a number, the machine learning model type is called `regression`.
 
 For scenarios that predict a category, the model type is `classification`. There are two types of classification:
+
 - where there are only 2 categories: `binary classification`.
 - where there are three or more categories: `multiclass classification`.
 
@@ -84,10 +86,12 @@ Once you have chosen your model type, Model Builder asks you to provide a datase
 ### Choose the output to predict (label)
 
 A dataset is a table of rows of training examples, and columns of attributes. Each row has:
+
 - a **label** (the attribute that you want to predict)
 - **features** (attributes that are used as inputs to predict the label).
 
 For the house-price prediction scenario, the features could be:
+
 - the square footage of the house
 - the number of bedrooms and bathrooms
 - the zip code
@@ -128,11 +132,11 @@ Model Builder splits the training data into a training set and a test set. The t
 
 If your model performance score is not as good as you want it to be, you can:
 
-* Train for a longer period of time. With more time, the automated machine learning engine to try more algorithms and settings.
+- Train for a longer period of time. With more time, the automated machine learning engine to try more algorithms and settings.
 
-* Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model.
+- Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model.
 
-* Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have four classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
+- Balance your data. For classification tasks, make sure that the training set is balanced across the categories. For example, if you have four classes for 100 training examples, and the two first classes (tag1 and tag2) are used for 90 records, but the other two (tag3 and tag4) are only used on the remaining 10 records, the lack of balanced data may cause your model to struggle to correctly predict tag3 or tag4.
 
 ## Code
 

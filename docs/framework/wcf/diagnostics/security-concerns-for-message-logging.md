@@ -85,7 +85,7 @@ This topic describes how you can protect sensitive data from being exposed in me
  The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion about privacy and protecting PII from being exposed, see [User Privacy](https://go.microsoft.com/fwlink/?LinkID=94647).  
   
 > [!CAUTION]
->  PII is not hidden in malformed messages. Such messaged are logged as-is without any modification. Attributes mentioned previously have no effect on this.  
+> PII is not hidden in malformed messages. Such messaged are logged as-is without any modification. Attributes mentioned previously have no effect on this.  
   
 ### Custom Trace Listener  
  Adding a custom trace listener on the Message Logging trace source is a privilege that should be restricted to the administrator. This is because malicious custom listeners can be configured to send messages remotely, which leads to sensitive information disclosure. In addition, if you configure a custom listener to send messages on the wire, such as, to a remote database, you should enforce proper access control on the message logs in the remote machine.  
@@ -101,9 +101,9 @@ This topic describes how you can protect sensitive data from being exposed in me
   
 - Log Known PII Not Allowed: This event is emitted when logging of known PII is not allowed. This happens when the `logKnownPii` attribute of the `source` element in either the App.config or Web.config file is set to `true`, but the `enableLoggingKnownPii` attribute in the `machineSettings` element of the Machine.config file is set to `false`. No exception is thrown.  
   
- These events can be viewed in the Event Viewer tool that comes with Windows. For more information on this, see [Event Logging](../../../../docs/framework/wcf/diagnostics/event-logging/index.md).  
+ These events can be viewed in the Event Viewer tool that comes with Windows. For more information on this, see [Event Logging](./event-logging/index.md).  
   
 ## See also
 
-- [Message Logging](../../../../docs/framework/wcf/diagnostics/message-logging.md)
-- [Security Concerns and Useful Tips for Tracing](../../../../docs/framework/wcf/diagnostics/tracing/security-concerns-and-useful-tips-for-tracing.md)
+- [Message Logging](message-logging.md)
+- [Security Concerns and Useful Tips for Tracing](./tracing/security-concerns-and-useful-tips-for-tracing.md)

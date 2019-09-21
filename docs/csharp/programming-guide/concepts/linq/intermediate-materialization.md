@@ -60,7 +60,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 ToUpper: source >abc<  
 ToUpper: source >def<  
 ToUpper: source >ghi<  

@@ -1,8 +1,8 @@
 ---
-title: "Reflection in the .NET Framework"
+title: "Reflection in .NET"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
-  - "assemblies [.NET Framework], reflection"
+  - "assemblies [.NET], reflection"
   - "EventInfo class, reflection"
   - "common language runtime, reflection"
   - "FieldInfo class, reflection"
@@ -24,12 +24,13 @@ ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Reflection in the .NET Framework
-The classes in the <xref:System.Reflection> namespace, together with <xref:System.Type?displayProperty=nameWithType>, enable you to obtain information about loaded [assemblies](../app-domains/assemblies-in-the-common-language-runtime.md) and the types defined within them, such as [classes](../../standard/base-types/common-type-system.md#classes), [interfaces](../../standard/base-types/common-type-system.md#interfaces), and [value types](../../csharp/language-reference/keywords/value-types.md). You can also use reflection to create type instances at run time, and to invoke and access them. For topics about specific aspects of reflection, see [Related Topics](#related_topics) at the end of this overview.
+# Reflection in .NET
+
+The classes in the <xref:System.Reflection> namespace, together with <xref:System.Type?displayProperty=nameWithType>, enable you to obtain information about loaded [assemblies](../../standard/assembly/index.md) and the types defined within them, such as [classes](../../standard/base-types/common-type-system.md#classes), [interfaces](../../standard/base-types/common-type-system.md#interfaces), and [value types](../../csharp/language-reference/keywords/value-types.md). You can also use reflection to create type instances at run time, and to invoke and access them. For topics about specific aspects of reflection, see [Related Topics](#related_topics) at the end of this overview.
   
- The [common language runtime](../../standard/clr.md) loader manages [application domains](../../../docs/framework/app-domains/application-domains.md), which constitute defined boundaries around objects that have the same application scope. This management includes loading each assembly into the appropriate application domain and controlling the memory layout of the type hierarchy within each assembly.  
+The [common language runtime](../../standard/clr.md) loader manages [application domains](../app-domains/application-domains.md), which constitute defined boundaries around objects that have the same application scope. This management includes loading each assembly into the appropriate application domain and controlling the memory layout of the type hierarchy within each assembly.  
   
- [Assemblies](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md) contain modules, modules contain types, and types contain members. Reflection provides objects that encapsulate assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object. You can then invoke the type's methods or access its fields and properties. Typical uses of reflection include the following:  
+[Assemblies](../app-domains/index.md) contain modules, modules contain types, and types contain members. Reflection provides objects that encapsulate assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object. You can then invoke the type's methods or access its fields and properties. Typical uses of reflection include the following:  
   
 - Use <xref:System.Reflection.Assembly> to define and load assemblies, load modules that are listed in the assembly manifest, and locate a type from this assembly and create an instance of it.  
   
@@ -49,37 +50,39 @@ The classes in the <xref:System.Reflection> namespace, together with <xref:Syste
   
 - Use <xref:System.Reflection.CustomAttributeData> to discover information about custom attributes when you are working in the reflection-only context of an application domain. <xref:System.Reflection.CustomAttributeData> allows you to examine attributes without creating instances of them.  
   
- The classes of the <xref:System.Reflection.Emit> namespace provide a specialized form of reflection that enables you to build types at run time.  
+The classes of the <xref:System.Reflection.Emit> namespace provide a specialized form of reflection that enables you to build types at run time.  
   
- Reflection can also be used to create applications called type browsers, which enable users to select types and then view the information about those types.  
+Reflection can also be used to create applications called type browsers, which enable users to select types and then view the information about those types.  
   
- There are other uses for reflection. Compilers for languages such as JScript use reflection to construct symbol tables. The classes in the <xref:System.Runtime.Serialization> namespace use reflection to access data and to determine which fields to persist. The classes in the <xref:System.Runtime.Remoting> namespace use reflection indirectly through serialization.  
+There are other uses for reflection. Compilers for languages such as JScript use reflection to construct symbol tables. The classes in the <xref:System.Runtime.Serialization> namespace use reflection to access data and to determine which fields to persist. The classes in the <xref:System.Runtime.Remoting> namespace use reflection indirectly through serialization.  
   
 ## Runtime Types in Reflection  
- Reflection provides classes, such as <xref:System.Type> and <xref:System.Reflection.MethodInfo>, to represent types, members, parameters, and other code entities. However, when you use reflection you don't work directly with these classes, most of which are abstract (`MustInherit` in Visual Basic). Instead, you work with types provided by the common language runtime (CLR).  
+Reflection provides classes, such as <xref:System.Type> and <xref:System.Reflection.MethodInfo>, to represent types, members, parameters, and other code entities. However, when you use reflection, you don't work directly with these classes, most of which are abstract (`MustInherit` in Visual Basic). Instead, you work with types provided by the common language runtime (CLR).  
   
- For example, when you use the C# `typeof` operator (`GetType` in Visual Basic) to obtain a <xref:System.Type> object, the object is really a `RuntimeType`. `RuntimeType` derives from <xref:System.Type>, and provides implementations of all the abstract methods.  
+For example, when you use the C# `typeof` operator (`GetType` in Visual Basic) to obtain a <xref:System.Type> object, the object is really a `RuntimeType`. `RuntimeType` derives from <xref:System.Type> and provides implementations of all the abstract methods.  
   
- These runtime classes are `internal` (`Friend` in Visual Basic). They are not documented separately from their base classes, because their behavior is described by the base class documentation.  
+These runtime classes are `internal` (`Friend` in Visual Basic). They are not documented separately from their base classes, because their behavior is described by the base class documentation.  
   
 <a name="related_topics"></a>   
+
 ## Related Topics  
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)|Describes the <xref:System.Type> class and provides code examples that illustrate how to use <xref:System.Type> with several reflection classes to obtain information about constructors, methods, fields, properties, and events.|  
-|[Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)|Explains how reflection handles the type parameters and type arguments of generic types and generic methods.|  
-|[Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)|Describes the rules that determine to what degree reflection can be used to discover type information and access types.|  
-|[Dynamically Loading and Using Types](../../../docs/framework/reflection-and-codedom/dynamically-loading-and-using-types.md)|Describes the reflection custom-binding interface that supports late binding.|  
-|[How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)|Describes the reflection-only load context. Shows how to load an assembly, how to test the context, and how to examine attributes applied to an assembly in the reflection-only context.|  
-|[Accessing Custom Attributes](../../../docs/framework/reflection-and-codedom/accessing-custom-attributes.md)|Demonstrates using reflection to query attribute existence and values.|  
-|[Specifying Fully Qualified Type Names](../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)|Describes the format of fully qualified type names in terms of the Backus-Naur form (BNF), and the syntax required for specifying special characters, assembly names, pointers, references, and arrays.|  
-|[How to: Hook Up a Delegate Using Reflection](../../../docs/framework/reflection-and-codedom/how-to-hook-up-a-delegate-using-reflection.md)|Explains how to create a delegate for a method and hook the delegate up to an event. Explains how to create an event-handling method at run time using <xref:System.Reflection.Emit.DynamicMethod>.|  
-|[Emitting Dynamic Methods and Assemblies](../../../docs/framework/reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)|Explains how to generate dynamic assemblies and dynamic methods.|  
+|[Viewing Type Information](viewing-type-information.md)|Describes the <xref:System.Type> class and provides code examples that illustrate how to use <xref:System.Type> with several reflection classes to obtain information about constructors, methods, fields, properties, and events.|  
+|[Reflection and Generic Types](reflection-and-generic-types.md)|Explains how reflection handles the type parameters and type arguments of generic types and generic methods.|  
+|[Security Considerations for Reflection](security-considerations-for-reflection.md)|Describes the rules that determine to what degree reflection can be used to discover type information and access types.|  
+|[Dynamically Loading and Using Types](dynamically-loading-and-using-types.md)|Describes the reflection custom-binding interface that supports late binding.|  
+|[How to: Load Assemblies into the Reflection-Only Context](how-to-load-assemblies-into-the-reflection-only-context.md)|Describes the reflection-only load context. Shows how to load an assembly, how to test the context, and how to examine attributes applied to an assembly in the reflection-only context.|  
+|[Accessing Custom Attributes](accessing-custom-attributes.md)|Demonstrates using reflection to query attribute existence and values.|  
+|[Specifying Fully Qualified Type Names](specifying-fully-qualified-type-names.md)|Describes the format of fully qualified type names in terms of the Backus-Naur form (BNF), and the syntax required for specifying special characters, assembly names, pointers, references, and arrays.|  
+|[How to: Hook Up a Delegate Using Reflection](how-to-hook-up-a-delegate-using-reflection.md)|Explains how to create a delegate for a method and hook the delegate up to an event. Explains how to create an event-handling method at run time using <xref:System.Reflection.Emit.DynamicMethod>.|  
+|[Emitting Dynamic Methods and Assemblies](emitting-dynamic-methods-and-assemblies.md)|Explains how to generate dynamic assemblies and dynamic methods.|  
   
 ## Reference  
- <xref:System.Type?displayProperty=nameWithType>  
+
+<xref:System.Type?displayProperty=nameWithType>  
   
- <xref:System.Reflection>  
+<xref:System.Reflection>  
   
- <xref:System.Reflection.Emit>  
+<xref:System.Reflection.Emit>  

@@ -1,15 +1,15 @@
 ---
-title: 'Predict prices using regression with Model Builder'
+title: 'Tutorial: Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 07/15/2019
+ms.date: 09/18/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
 ---
 
-# Predict prices using regression with Model Builder
+# Tutorial: Predict prices using regression with Model Builder
 
 Learn how to use ML.NET Model Builder to build a regression model() to predict prices.  The .NET console app that you develop in this tutorial predicts taxi fares based on historical New York taxi fare data.
 
@@ -17,12 +17,13 @@ The Model Builder price prediction template can be used for any scenario requiri
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
-> * Prepare and understand the data
-> * Choose a scenario
-> * Load the data
-> * Train the model
-> * Evaluate the model
-> * Use the model for predictions
+>
+> - Prepare and understand the data
+> - Choose a scenario
+> - Load the data
+> - Train the model
+> - Evaluate the model
+> - Use the model for predictions
 
 > [!NOTE]
 > Model Builder is currently in Preview.
@@ -55,13 +56,13 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
 
     The provided data set contains the following columns:
 
-    * **vendor_id:** The ID of the taxi vendor is a feature.
-    * **rate_code:** The rate type of the taxi trip is a feature.
-    * **passenger_count:** The number of passengers on the trip is a feature.
-    * **trip_time_in_secs:** The amount of time the trip took.
-    * **trip_distance:** The distance of the trip is a feature.
-    * **payment_type:** The payment method (cash or credit card) is a feature.
-    * **fare_amount:** The total taxi fare paid is the label.
+    - **vendor_id:** The ID of the taxi vendor is a feature.
+    - **rate_code:** The rate type of the taxi trip is a feature.
+    - **passenger_count:** The number of passengers on the trip is a feature.
+    - **trip_time_in_secs:** The amount of time the trip took.
+    - **trip_distance:** The distance of the trip is a feature.
+    - **payment_type:** The payment method (cash or credit card) is a feature.
+    - **fare_amount:** The total taxi fare paid is the label.
 
 The `label` is the column you want to predict. When performing a regression task, the goal is to predict a numerical value. In this price prediction scenario, the cost of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns are used as features or inputs to predict the fare amount.
 
@@ -84,17 +85,9 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 The machine learning task used to train the price prediction model in this tutorial is regression. During the model training process, Model Builder trains separate models using different regression algorithms and settings to find the best performing model for your dataset.
 
-The time required for the model to train is proportionate to the amount of data. Use this chart as guidance to select an adequate value for the `Time to train (seconds)` field:
+The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 
-*Dataset Size  | Dataset Type       | Avg. Time to train*
-------------- | ------------------ | --------------
-0 - 10 Mb     | Numeric and Text   | 10 sec
-10 - 100 Mb   | Numeric and Text   | 10 min
-100 - 500 Mb  | Numeric and Text   | 30 min
-500 - 1 Gb    | Numeric and Text   | 60 min
-1 Gb+         | Numeric and Text   | 3 hour+
-
-1. Because the training data file is more than 10MB, use 600 seconds (10 minutes) as the value for *Time to train (seconds)*.
+1. Leave the default value as is for *Time to train (seconds)* unless you prefer to train for a longer time.
 2. Select *Start Training*.
 
 Throughout the training process, progress data is displayed in the `Progress` section of the train step.
@@ -186,12 +179,13 @@ If you need to reference the generated projects at a later time inside of anothe
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
-> * Prepare and understand the data
-> * Choose a scenario
-> * Load the data
-> * Train the model
-> * Evaluate the model
-> * Use the model for predictions
+>
+> - Prepare and understand the data
+> - Choose a scenario
+> - Load the data
+> - Train the model
+> - Evaluate the model
+> - Use the model for predictions
 
 ### Additional Resources
 

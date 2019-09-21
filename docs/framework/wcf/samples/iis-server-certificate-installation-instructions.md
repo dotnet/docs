@@ -9,7 +9,7 @@ To run the samples that securely communicate with Internet Information Services 
 ## Step 1. Creating Certificates  
  To create a certificate for your computer, open a Developer Command Prompt for Visual Studio with administrator privileges and run the Setup.bat that is included in each of the samples that use secure communication with IIS. Ensure that the path includes the folder that contains Makecert.exe before you run this batch file. The following command is used to create the certificate in Setup.bat.  
   
-```  
+```console  
 makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exchange -sk ServiceModelSamples-HTTPS-Key  
 ```  
   
@@ -41,9 +41,9 @@ makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exc
 3. Add the following line of code to the client program.  
   
 > [!IMPORTANT]
->  This code is only required for test certificates such as those created by Makecert.exe. It is not recommended for production code.  
+> This code is only required for test certificates such as those created by Makecert.exe. It is not recommended for production code.  
   
-```  
+```csharp  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
 ```  
   
@@ -70,6 +70,6 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
   
 - Remove the computer certificate by using the following command.  
   
-    ```  
+    ```console  
     httpcfg delete ssl -i 0.0.0.0:443  
     ```

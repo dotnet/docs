@@ -211,12 +211,12 @@ Custom or in-house documentation generation tools can also be used with the stan
 
 Documenting code is recommended for many reasons. What follows are some best practices, general use case scenarios, and things that you should know when using XML documentation tags in your C# code.
 
-* For the sake of consistency, all publicly visible types and their members should be documented. If you must do it, do it all.
-* Private members can also be documented using XML comments. However, this exposes the inner (potentially confidential) workings of your library.
-* At a bare minimum, types and their members should have a `<summary>` tag because its content is needed for IntelliSense.
-* Documentation text should be written using complete sentences ending with full stops.
-* Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
-* The compiler verifies the syntax of the `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.
+- For the sake of consistency, all publicly visible types and their members should be documented. If you must do it, do it all.
+- Private members can also be documented using XML comments. However, this exposes the inner (potentially confidential) workings of your library.
+- At a bare minimum, types and their members should have a `<summary>` tag because its content is needed for IntelliSense.
+- Documentation text should be written using complete sentences ending with full stops.
+- Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
+- The compiler verifies the syntax of the `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.
 - The compiler validates the parameters that contain file paths and references to other parts of the code.
 
 ## See also

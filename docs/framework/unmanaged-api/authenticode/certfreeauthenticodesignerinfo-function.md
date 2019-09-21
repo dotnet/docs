@@ -12,7 +12,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CertFreeAuthenticodeSignerInfo Function
-Frees resources allocated for the [AXL_AUTHENTICODE_SIGNER_INFO](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-signer-info-structure.md) structure.  
+Frees resources allocated for the [AXL_AUTHENTICODE_SIGNER_INFO](axl-authenticode-signer-info-structure.md) structure.  
   
 ## Syntax  
   
@@ -23,11 +23,11 @@ HRESULT CertFreeAuthenticodeSignerInfo (
   
 ## Parameters  
  `pSignerInfo`  
- [in, out] Signer information to be released. See the [AXL_AUTHENTICODE_SIGNER_INFO](../../../../docs/framework/unmanaged-api/authenticode/axl-authenticode-signer-info-structure.md) structure.  
+ [in, out] Signer information to be released. See the [AXL_AUTHENTICODE_SIGNER_INFO](axl-authenticode-signer-info-structure.md) structure.  
   
 ## Return Value  
  `S_OK` if the function succeeds. Otherwise, returns an error code.  
   
 ## See also
 
-- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [Authenticode](index.md)

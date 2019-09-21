@@ -14,9 +14,9 @@ ms.author: "ronpet"
 
 Specifies whether the runtime uses a fixed amount of memory to calculate hash codes for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method.
 
-\<configuration>\
-\<runtime>\
-\<NetFx45_CultureAwareComparerGetHashCode_LongStrings>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx45_CultureAwareComparerGetHashCode_LongStrings>**  
 
 ## Syntax
 

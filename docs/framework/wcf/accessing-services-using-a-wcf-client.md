@@ -25,13 +25,13 @@ The WCF client proxy can be generated manually by using the Service Model Metada
 ## ServiceModel Metadata Utility Tool
  The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) is a command-line tool for generating code from metadata. The following use is an example of a basic Svcutil.exe command.
 
-```
+```console
 Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
 ```
 
  Alternatively, you can use Svcutil.exe with Web Services Description Language (WSDL) and XML Schema definition language (XSD) files on the file system.
 
-```
+```console
 Svcutil.exe <list of WSDL and XSD files on file system>
 ```
 
@@ -39,7 +39,7 @@ Svcutil.exe <list of WSDL and XSD files on file system>
 
  You can also use the tool to generate configuration files.
 
-```
+```console
 Svcutil.exe <file1 [,file2]>
 ```
 

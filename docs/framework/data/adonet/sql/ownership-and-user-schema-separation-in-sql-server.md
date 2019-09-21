@@ -11,7 +11,7 @@ A core concept of SQL Server security is that owners of objects have irrevocable
   
  The four-part naming syntax for referring to objects specifies the schema name.  
   
-```  
+```text
 Server.Database.DatabaseSchema.DatabaseObject  
 ```  
   
@@ -53,9 +53,9 @@ Server.Database.DatabaseSchema.DatabaseObject
   
 ## See also
 
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
-- [Authentication in SQL Server](../../../../../docs/framework/data/adonet/sql/authentication-in-sql-server.md)
-- [Server and Database Roles in SQL Server](../../../../../docs/framework/data/adonet/sql/server-and-database-roles-in-sql-server.md)
-- [Authorization and Permissions in SQL Server](../../../../../docs/framework/data/adonet/sql/authorization-and-permissions-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)
+- [Authentication in SQL Server](authentication-in-sql-server.md)
+- [Server and Database Roles in SQL Server](server-and-database-roles-in-sql-server.md)
+- [Authorization and Permissions in SQL Server](authorization-and-permissions-in-sql-server.md)
+- [ADO.NET Overview](../ado-net-overview.md)

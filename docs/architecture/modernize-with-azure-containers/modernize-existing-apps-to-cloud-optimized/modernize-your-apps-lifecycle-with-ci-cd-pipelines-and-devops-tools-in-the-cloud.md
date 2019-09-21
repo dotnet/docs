@@ -11,9 +11,9 @@ Although continuous integration and deployment practices are well established, t
 
 Azure DevOps Services supports continuous integration and deployment of multi-container applications to a variety of environments through the official Azure DevOps Services deployment tasks:
 
-- [Deploy to an Azure Web App for Containers](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-docker-webapp?view=azure-devops)
+- [Deploy to an Azure Web App for Containers](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-docker-webapp?tabs=dotnet-core)
 
-- [Deploy to Azure Container Service – Kubernetes](https://docs.microsoft.com/azure/devops/build-release/apps/cd/azure/deploy-container-kubernetes)
+- [Deploy to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?tabs=dotnet-core)
 
 But you also can deploy to [Docker Swarm](https://blogs.msdn.microsoft.com/jcorioland/2016/11/29/full-ci-cd-pipeline-to-deploy-multi-containers-application-on-azure-container-service-docker-swarm-using-visual-studio-team-services/) or DC/OS by using Azure DevOps Services script-based tasks.
 
@@ -23,7 +23,7 @@ Figure 4-12 shows a continuous deployment pipeline that deploys to a Kubernetes 
 
 ![Azure DevOps Services continuous deployment pipeline, deploying to a Kubernetes cluster](./media/image12.png)
 
-> **Figure 4-12.** Azure DevOps Services continuous deployment pipeline, deploying to a Kubernetes cluster
+**Figure 4-12.** Azure DevOps Services continuous deployment pipeline, deploying to a Kubernetes cluster
 
 >[!div class="step-by-step"]
 >[Previous](modernize-your-apps-with-monitoring-and-telemetry.md)

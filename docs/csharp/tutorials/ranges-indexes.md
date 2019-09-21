@@ -6,22 +6,24 @@ ms.custom: mvc
 ---
 # Indices and ranges
 
-Ranges and indices provide a succinct syntax for accessing single elements or ranges in an <xref:System.Array>, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. These features enable more concise, clear syntax to access single elements or ranges of elements in a sequence.
+Ranges and indices provide a succinct syntax for accessing single elements or ranges in an <xref:System.Array>, <xref:System.String>, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. These features enable more concise, clear syntax to access single elements or ranges of elements in a sequence.
 
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Use the syntax for ranges in a sequence.
-> * Understand the design decisions for the start and end of each sequence.
-> * Learn scenarios for the <xref:System.Index> and <xref:System.Range> types.
+>
+> - Use the syntax for ranges in a sequence.
+> - Understand the design decisions for the start and end of each sequence.
+> - Learn scenarios for the <xref:System.Index> and <xref:System.Range> types.
 
 ## Language support for indices and ranges
 
-This language support relies on two new types and two new operators.
+This language support relies on two new types and two new operators:
+
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
-- The `^` operator, which specifies that an index is relative to the end of a sequence.
+- The index from end operator `^`, which specifies that an index is relative to the end of a sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
-- The Range operator (`..`), which specifies the start and end of a range as its operands.
+- The range operator `..`, which specifies the start and end of a range as its operands.
 
 Let's start with the rules for indices. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence[sequence.Length - n]`.
 

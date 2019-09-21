@@ -6,11 +6,12 @@ ms.assetid: a47513a4-a96c-4350-8586-daacb05dee71
 # dataContractSerializer
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<endpointBehaviors>  
-\<behavior>  
-\<dataContractSerializer>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dataContractSerializer>**  
   
 ## Syntax  
   
@@ -42,7 +43,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
  See the <xref:System.Runtime.Serialization.DataContractSerializer> documentation for more information about known types.  
   
 > [!CAUTION]
->  The `<dataContractSerializer>` behavior element (if present) should always appear before the `<enableWebScript>` behavior element in the configuration file. Otherwise, the resulting behavior is undefined.  
+> The `<dataContractSerializer>` behavior element (if present) should always appear before the `<enableWebScript>` behavior element in the configuration file. Otherwise, the resulting behavior is undefined.  
   
 ## See also
 

@@ -46,7 +46,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 9. Click **Create Variable**.  
   
     > [!TIP]
-    >  If no **Create Variable** box is displayed, click the <xref:System.Activities.Statements.StateMachine> activity on the workflow designer surface to select it.  
+    > If no **Create Variable** box is displayed, click the <xref:System.Activities.Statements.StateMachine> activity on the workflow designer surface to select it.  
   
 10. Type `Guess` into the **Name** box, select **Int32** from the **Variable type** drop-down list, and then press ENTER to save the variable.  
   
@@ -61,7 +61,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 1. Click **State1** to select it. In the **Properties Window**, change the **DisplayName** to `Initialize Target`.  
   
     > [!TIP]
-    >  If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
+    > If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
   
 2. Double-click the newly renamed **Initialize Target** state in the workflow designer to expand it.  
   
@@ -76,7 +76,7 @@ Workflows can be constructed from built-in activities as well as from custom act
     ```  
   
     > [!TIP]
-    >  If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
+    > If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
   
 4. Return to the overall state machine view in the workflow designer by clicking **StateMachine** in the breadcrumb display at the top of the workflow designer.  
   
@@ -151,21 +151,21 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 23. Type the following expression into the **If** activity’s **Condition** property value box.  
   
-    ```
-    Guess < Target  
+    ```text
+    Guess < Target
     ```  
   
 24. Drag two **WriteLine** activities from the **Primitives** section of the **Toolbox** and drop them so that one is in the **Then** section of the **If** activity, and one is in the **Else** section.  
   
 25. Click the **WriteLine** activity in the **Then** section to select it, and type the following expression into the **Text** property value box.  
   
-    ```
+    ```text
     "Your guess is too low."  
     ```  
   
 26. Click the **WriteLine** activity in the **Else** section to select it, and type the following expression into the **Text** property value box.  
   
-    ```
+    ```text
     "Your guess is too high."  
     ```  
   

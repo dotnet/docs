@@ -18,7 +18,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ASM_CMP_FLAGS Enumeration
-Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-isequal-method.md) method.  
+Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](iassemblyname-isequal-method.md) method.  
   
 ## Syntax  
   
@@ -62,7 +62,7 @@ typedef enum {
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -72,5 +72,5 @@ typedef enum {
   
 ## See also
 
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
-- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)
+- [Fusion Enumerations](fusion-enumerations.md)

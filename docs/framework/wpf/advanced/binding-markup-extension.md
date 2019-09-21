@@ -13,7 +13,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
   
 ## Binding Expression Usage  
   
-```  
+```xaml  
 <object property="{Binding}" .../>  
 -or-  
 <object property="{Binding  bindProp1=value1[, bindPropN=valueN]*}" ...  

@@ -9,7 +9,7 @@ This article describes how to migrate an application that uses .NET Remoting to 
  .NET Remoting is a legacy product that is supported only for backward compatibility. It is not secure across mixed-trust environments because it cannot maintain the separate trust levels between client and server. For example, you should never expose a .NET Remoting endpoint to the Internet or to untrusted clients. We recommend existing Remoting applications be migrated to newer and more secure technologies. If the application’s design uses only HTTP and is RESTful, we recommend ASP.NET Web API. For more information, see ASP.NET Web API. If the application is based on SOAP or requires non-Http protocols such as TCP, we recommend WCF.  
 
 ## Comparing .NET Remoting to WCF  
- This section compares the basic building blocks of .NET Remoting with their WCF equivalents. We will use these building blocks later to create some common client-server scenarios in WCF.The following chart summarizes the main similarities and differences between .NET Remoting and WCF.  
+ This section compares the basic building blocks of .NET Remoting with their WCF equivalents. We will use these building blocks later to create some common client-server scenarios in WCF. The following chart summarizes the main similarities and differences between .NET Remoting and WCF.  
   
 ||.NET Remoting|WCF|  
 |-|-------------------|---------|  
@@ -460,7 +460,7 @@ public class RemotingServer : MarshalByRefObject
    ```  
   
     > [!TIP]
-    >  Notice that the sessionful object is marked with [ServiceContract], making it a normal WCF service interface. Setting the SessionMode property indicates it will be a sessionful service. In WCF, a session is a way of correlating multiple messages sent between two endpoints. This means that once a client obtains a connection to this service, a session will be established between the client and the server. The client will use a single unique instance of the server-side object for all its interactions within this single session.  
+    > Notice that the sessionful object is marked with [ServiceContract], making it a normal WCF service interface. Setting the SessionMode property indicates it will be a sessionful service. In WCF, a session is a way of correlating multiple messages sent between two endpoints. This means that once a client obtains a connection to this service, a session will be established between the client and the server. The client will use a single unique instance of the server-side object for all its interactions within this single session.  
   
 2. Next, we need to provide the implementation of this service interface. By denoting it with [ServiceBehavior] and setting the InstanceContextMode, we tell WCF we want to use a unique instance of this type for an each session.  
   

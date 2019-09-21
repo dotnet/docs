@@ -14,6 +14,7 @@ With .NET Core, you can create and deploy templates that generate projects, file
 In this part of the series you'll learn how to:
 
 > [!div class="checklist"]
+>
 > * Create the resources of a project template
 > * Create the template config folder and file
 > * Install a template from a file path

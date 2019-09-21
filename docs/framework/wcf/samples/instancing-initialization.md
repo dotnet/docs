@@ -24,7 +24,7 @@ This sample extends the [Pooling](../../../../docs/framework/wcf/samples/pooling
 ## The Object Pool  
  The `ObjectPoolInstanceProvider` class contains the implementation for the object pool. This class implements the <xref:System.ServiceModel.Dispatcher.IInstanceProvider> interface to interact with the service model layer. When the EndpointDispatcher calls the <xref:System.ServiceModel.Dispatcher.IInstanceProvider.GetInstance%2A> method, instead of creating a new instance, the custom implementation looks for an existing object in an in-memory pool. If one is available, it is returned. Otherwise, `ObjectPoolInstanceProvider` checks whether the `ActiveObjectsCount` property (number of objects returned from the pool) has reached the maximum pool size. If not, a new instance is created and returned to the caller and `ActiveObjectsCount` is subsequently incremented. Otherwise an object creation request is queued for a configured period of time. The implementation for `GetObjectFromThePool` is shown in the following sample code.  
   
-```  
+```csharp  
 private object GetObjectFromThePool()  
 {  
     bool didNotTimeout =   
@@ -68,7 +68,7 @@ ResourceHelper.GetString("ExObjectCreationTimeout"));
   
  The custom `ReleaseInstance` implementation adds the released instance back to the pool and decrements the `ActiveObjectsCount` value. The EndpointDispatcher can call these methods from different threads, and therefore synchronized access to the class level members in the `ObjectPoolInstanceProvider` class is required.  
   
-```  
+```csharp  
 public void ReleaseInstance(InstanceContext instanceContext, object instance)  
 {  
     lock (poolLock)  
@@ -121,7 +121,7 @@ public void ReleaseInstance(InstanceContext instanceContext, object instance)
   
  The `ReleaseInstance` method provides a *clean up initialization* feature. Normally the pool maintains a minimum number of objects for the lifetime of the pool. However, there can be periods of excessive usage that require creating additional objects in the pool to reach the maximum limit specified in the configuration. Eventually when the pool becomes less active those surplus objects can become an extra overhead. Therefore when the `activeObjectsCount` reaches zero an idle timer is started that triggers and performs a clean-up cycle.  
   
-```  
+```csharp  
 if (activeObjectsCount == 0)  
 {  
     idleTimer.Start();   
@@ -156,7 +156,7 @@ if (activeObjectsCount == 0)
   
  In the custom <xref:System.ServiceModel.Description.IServiceBehavior> implementation, a new instance of `ObjectPoolInstanceProvider` is instantiated and assigned to the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider%2A> property in each <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> that is attached to the <xref:System.ServiceModel.ServiceHostBase>.  
   
-```  
+```csharp  
 public void ApplyDispatchBehavior(ServiceDescription description, ServiceHostBase serviceHostBase)  
 {  
     if (enabled)  
@@ -186,7 +186,7 @@ public void ApplyDispatchBehavior(ServiceDescription description, ServiceHostBas
   
  The object pooling behavior can now be added to a WCF service by annotating the service implementation with the newly created custom `ObjectPooling` attribute.  
   
-```  
+```csharp  
 [ObjectPooling(MaxSize=1024, MinSize=10, CreationTimeout=30000]      
 public class PoolService : IPoolService  
 {  
@@ -201,7 +201,7 @@ public class PoolService : IPoolService
   
  To mimic this functionality, the sample declares a public interface (`IObjectControl`) that has the aforementioned members. This interface is then implemented by service classes intended to provide context specific initialization. The <xref:System.ServiceModel.Dispatcher.IInstanceProvider> implementation must be modified to meet these requirements. Now, each time you get an object by calling the `GetInstance` method, you must check whether the object implements `IObjectControl.` If it does, you must call the `Activate` method appropriately.  
   
-```  
+```csharp  
 if (obj is IObjectControl)  
 {  
     ((IObjectControl)obj).Activate();  
@@ -210,7 +210,7 @@ if (obj is IObjectControl)
   
  When returning an object to the pool, a check is required for the `CanBePooled` property before adding the object back to the pool.  
   
-```  
+```csharp  
 if (instance is IObjectControl)  
 {  
     IObjectControl objectControl = (IObjectControl)instance;  
@@ -224,7 +224,7 @@ if (instance is IObjectControl)
   
  Because the service developer can decide whether an object can be pooled, the object count in the pool at a given time can go below the minimum size. Therefore you must check whether the object count has gone below the minimum level and perform the necessary initialization in the clean-up procedure.  
   
-```  
+```csharp  
 // Remove the surplus objects.  
 if (pool.Count > minPoolSize)  
 {  
@@ -251,10 +251,10 @@ else if (pool.Count < minPoolSize)
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Initialization`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Initialization`  

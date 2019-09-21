@@ -110,4 +110,4 @@ The <xref:System.Linq.Enumerable.Average%2A> operator computes the average of a 
   
 ## See also
 
-- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)
+- [Aggregate Queries](aggregate-queries.md)

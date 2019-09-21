@@ -14,9 +14,9 @@ ms.author: "ronpet"
 # \<ThrowUnobservedTaskExceptions> Element
 Specifies whether unhandled task exceptions should terminate a running process.  
   
- \<configuration>  
-\<runtime>  
-\<ThrowUnobservedTaskExceptions>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<ThrowUnobservedTaskExceptions>**  
   
 ## Syntax  
   

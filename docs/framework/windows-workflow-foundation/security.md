@@ -15,4 +15,4 @@ The SQL Workflow Instance Store uses the following database security roles to se
  For more information about security for persistence stores with Windows Server App Fabric, see [Security Configuration for Persistence Stores in App Fabric](https://go.microsoft.com/fwlink/?LinkId=201208)  
   
 > [!CAUTION]
->  A client that has access to its own instance data in the instance store has access to all other instances in the same instance store. The instance store does not support specifying security permissions at the instance level. You should create separate instance stores and map different groups/users to have access to different stores.
+> A client that has access to its own instance data in the instance store has access to all other instances in the same instance store. The instance store does not support specifying security permissions at the instance level. You should create separate instance stores and map different groups/users to have access to different stores.

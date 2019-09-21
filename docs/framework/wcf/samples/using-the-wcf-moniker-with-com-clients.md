@@ -10,13 +10,13 @@ This sample demonstrates how to use the Windows Communication Foundation (WCF) s
 > The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Interop\COM`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Interop\COM`  
   
  The service implements an `ICalculator` contract defined as shown in the following code example.  
   
@@ -130,7 +130,7 @@ Set wsdlServiceMoniker = GetObject(wsdlMonikerString)
 - The name and namespace of the contract. This identification is required because the WSDL may contain more than one contract.  
   
     > [!NOTE]
-    >  By default, WCF services generate separate WSDL files for each namespace that the use. These are linked with the use of the WSDL import construct. Because the moniker expects a single WSDL definition, the service must either use a single namespace as demonstrated in this sample or the separate files must be manually merged.  
+    > By default, WCF services generate separate WSDL files for each namespace that the use. These are linked with the use of the WSDL import construct. Because the moniker expects a single WSDL definition, the service must either use a single namespace as demonstrated in this sample or the separate files must be manually merged.  
   
  Having constructed the proxy instance with the service moniker, the client application can call methods on the proxy, which results in the service moniker infrastructure calling the corresponding service operations.  
   
@@ -185,7 +185,7 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
 3. From a Developer Command Prompt for Visual Studio, open the \client\bin folder, under the language-specific folder.  
   
     > [!NOTE]
-    >  If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, make sure that you run the command prompt with administrator privileges.  
+    > If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, make sure that you run the command prompt with administrator privileges.  
   
 4. Type in `tlbexp.exe client.dll /out:CalcProxy.tlb` to export the dll to a tlb file. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
   

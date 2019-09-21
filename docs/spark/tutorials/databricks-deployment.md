@@ -14,17 +14,18 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Datab
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Prepare Microsoft.Spark.Worker
-> * Publish your Spark .NET app
-> * Deploy your app to Databricks
-> * Run your app
+>
+> - Prepare Microsoft.Spark.Worker
+> - Publish your Spark .NET app
+> - Deploy your app to Databricks
+> - Run your app
 
 ## Prerequisites
 
 Before you start, do the following:
 
-* Download the [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html).
-* Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
+- Download the [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html).
+- Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
 
 ## Prepare worker dependencies
 
@@ -44,7 +45,7 @@ Before you start, do the following:
 
    You can run the following command on Linux.
 
-   ```bash
+   ```dotnetcli
    dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
    ```
 
@@ -58,9 +59,9 @@ Before you start, do the following:
 
 4. Upload the following to a distributed file system (for example, DBFS) that your cluster has access to:
 
-   * `microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar`: This jar is included as part of the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package and is colocated in your app's build output directory.
-   * `<your app>.zip`
-   * Files (like dependency files or common data accessible to every worker) or assemblies (like DLLs that contain your user-defined functions or libraries that your app depends on) to be placed in the working directory of each executor.
+   - `microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar`: This jar is included as part of the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package and is colocated in your app's build output directory.
+   - `<your app>.zip`
+   - Files (like dependency files or common data accessible to every worker) or assemblies (like DLLs that contain your user-defined functions or libraries that your app depends on) to be placed in the working directory of each executor.
 
 ## Deploy to Databricks
 
@@ -115,7 +116,7 @@ You can use `set JAR` or `spark-submit` to submit your job to Databricks.
 3. Set the parameters appropriately.
 
    ```
-   Main Class: org.apache.spark.deploy.DotnetRunner
+   Main Class: org.apache.spark.deploy.dotnet.DotnetRunner
    Arguments /dbfs/apps/<your-app-name>.zip <your-app-main-class>
    ```
  
@@ -159,7 +160,7 @@ The [spark-submit](https://spark.apache.org/docs/latest/submitting-applications.
 2. Configure `spark-submit` with the following parameters:
 
       ```bash
-      ["--files","/dbfs/<path-to>/<app assembly/file to deploy to worker>","--class","org.apache.spark.deploy.DotnetRunner","/dbfs/<path-to>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar","/dbfs/<path-to>/<app name>.zip","<app bin name>","app arg1","app arg2"]
+      ["--files","/dbfs/<path-to>/<app assembly/file to deploy to worker>","--class","org.apache.spark.deploy.dotnet.DotnetRunner","/dbfs/<path-to>/microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar","/dbfs/<path-to>/<app name>.zip","<app bin name>","app arg1","app arg2"]
       ```
 
 3. Go to your Databricks cluster in your Databricks workspace. Under **Jobs**, select your job and then select **Run Now** to run your job.

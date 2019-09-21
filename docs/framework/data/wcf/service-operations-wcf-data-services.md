@@ -11,9 +11,9 @@ ms.assetid: 583a690a-e60f-4990-8991-d6efce069d76
 ---
 # Service Operations (WCF Data Services)
 
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to define service operations on a data service to expose methods on the server. Like other data service resources, service operations are addressed by URIs. Service operations enable you to expose business logic in a data service, such as to implement validation logic, to apply role-based security, or to expose specialized querying capabilities. Service operations are methods added to the data service class that derives from <xref:System.Data.Services.DataService%601>. Like all other data service resources, you can supply parameters to the service operation method. For example, the following service operation URI (based on the [quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) data service) passes the value `London` to the `city` parameter:
+[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to define service operations on a data service to expose methods on the server. Like other data service resources, service operations are addressed by URIs. Service operations enable you to expose business logic in a data service, such as to implement validation logic, to apply role-based security, or to expose specialized querying capabilities. Service operations are methods added to the data service class that derives from <xref:System.Data.Services.DataService%601>. Like all other data service resources, you can supply parameters to the service operation method. For example, the following service operation URI (based on the [quickstart](quickstart-wcf-data-services.md) data service) passes the value `London` to the `city` parameter:
 
-```
+```http
 http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'
 ```
 
@@ -22,9 +22,9 @@ The definition for this service operation is as follows:
 [!code-csharp[Astoria Northwind Service#ServiceOperationDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#serviceoperationdef)]
 [!code-vb[Astoria Northwind Service#ServiceOperationDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#serviceoperationdef)]
 
-You can use the <xref:System.Data.Services.DataService%601.CurrentDataSource%2A> of the <xref:System.Data.Services.DataService%601> to directly access the data source that the data service is using. For more information, see [How to: Define a Service Operation](../../../../docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md).
+You can use the <xref:System.Data.Services.DataService%601.CurrentDataSource%2A> of the <xref:System.Data.Services.DataService%601> to directly access the data source that the data service is using. For more information, see [How to: Define a Service Operation](how-to-define-a-service-operation-wcf-data-services.md).
 
-For information on how to call a service operation from a .NET Framework client application, see [Calling Service Operations](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md).
+For information on how to call a service operation from a .NET Framework client application, see [Calling Service Operations](calling-service-operations-wcf-data-services.md).
 
 ## Service Operation Requirements
 
@@ -64,7 +64,7 @@ The following requirements apply when defining service operations on the data se
 
 You can address service operations by placing the name of the method in the first path segment of a URI. As an example, the following URI accesses a `GetOrdersByState` operation that returns an <xref:System.Linq.IQueryable%601> collection of `Orders` objects.
 
-```
+```http
 http://localhost:12345/Northwind.svc/GetOrdersByState?state='CA'&includeItems=true
 ```
 
@@ -80,7 +80,7 @@ The following are valid return types for a service operation:
 
 Additional path segments or query options may be added to the URI depending on the return type of the service operation. For example, the following URI accesses a `GetOrdersByCity` operation that returns an <xref:System.Linq.IQueryable%601> collection of `Orders` objects, ordered by `RequiredDate` in descending order, along with the related `Order_Details` objects:
 
-```
+```http
 http://localhost:12345/Northwind.svc/GetOrdersByCity?city='London'&$expand=Order_Details&$orderby=RequiredDate desc
 ```
 
@@ -94,7 +94,7 @@ Service-wide visibility of service operations is controlled by the <xref:System.
 > [!NOTE]
 > If a service operation has a return type that has been hidden by restricting access on the underlying entity sets, then the service operation will not be available to client applications.
 
-For more information, see [How to: Define a Service Operation](../../../../docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md).
+For more information, see [How to: Define a Service Operation](how-to-define-a-service-operation-wcf-data-services.md).
 
 ## Raising Exceptions
 
@@ -105,4 +105,4 @@ We recommend that you use the <xref:System.Data.Services.DataServiceException> c
 
 ## See also
 
-- [Interceptors](../../../../docs/framework/data/wcf/interceptors-wcf-data-services.md)
+- [Interceptors](interceptors-wcf-data-services.md)

@@ -69,12 +69,6 @@
         "files": [
           "index.md"
         ]
-      },
-      {
-        "files": [
-          "toc.yml"
-        ],
-        "dest": "breadcrumb"
       }
     ],
     "resource": [
@@ -137,7 +131,13 @@
     "fileMetadata": {
       "feedback_system": {
         "docs/standard/design-guidelines/**/**.md": "None",
-        "docs/framework/data/adonet/**/**.md": "None"
+        "docs/framework/data/adonet/**/**.md": "None",
+        "docs/framework/data/wcf/**/**.md": "None",
+        "docs/framework/ui-automation/**/**.md": "None",
+        "docs/framework/wcf/**/**.md": "None",
+        "docs/framework/winforms/**/**.md": "None",
+        "docs/framework/wpf/**/**.md": "None",
+        "docs/framework/xaml-services/**/**.md": "None"
       },
       "feedback_product_url": {
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp",
@@ -146,6 +146,7 @@
       "ms.prod": {
         "_csharplang/**/*.md": "dotnet-csharp",
         "_vblang/spec/*.md": "dotnet-visualbasic",
+        "docs/architecture/**/**.md": "dotnet-architecture",
         "docs/core/**/**.md": "dotnet-core",
         "docs/csharp/**/**.md": "dotnet-csharp",
         "docs/csharp/**/**.yml": "dotnet-csharp",
@@ -160,6 +161,7 @@
       "ms.topic": {
         "_csharplang/**/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
+        "docs/csharp/language-reference/**/**.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
         "docs/fsharp/language-reference/**/**.md": "language-reference"
@@ -216,13 +218,17 @@
         "_csharplang/proposals/csharp-7.1/*.md": "02/16/2018",
         "_csharplang/proposals/csharp-7.2/*.md": "01/19/2019",
         "_csharplang/proposals/csharp-7.3/*.md": "11/25/2018",
-        "_csharplang/proposals/csharp-8.0/*.md": "02/25/2019",
+        "_csharplang/proposals/csharp-8.0/*.md": "09/10/2019",
         "_vblang/spec/*.md": "07/21/2017"
       },
       "ms.technology": {
         "_csharplang/**/*.md": "csharp-spec",
         "_vblang/spec/*.md": "vb-spec",
-        "docs/architecture/**/**.md": "dotnet-ebooks",        
+        "docs/architecture/containerized-lifecycle/**/**.md": "containerized-lifecycle",
+        "docs/architecture/microservices/**/**.md": "microservices",
+        "docs/architecture/modernize-with-azure-containers/**/**.md": "modernize-with-azure-containers",
+        "docs/architecture/modern-web-apps-azure/**/**.md": "modern-web-apps-azure",
+        "docs/architecture/serverless/**/**.md": "serverless",
         "docs/csharp/roslyn-sdk/**/**.md": "csharp-roslyn",
         "docs/csharp/language-reference/compiler-messages/**/**.md": "csharp-diagnostics",
         "docs/csharp/misc/**/**.md": "csharp-diagnostics",
@@ -244,13 +250,87 @@
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       },
+      "titleOverwriteH1": {
+        "_csharplang/spec/introduction.md": "Introduction",
+        "_csharplang/spec/lexical-structure.md": "Lexical structure",
+        "_csharplang/spec/basic-concepts.md": "Basic concepts",
+        "_csharplang/spec/types.md": "Types",
+        "_csharplang/spec/variables.md": "Variables",
+        "_csharplang/spec/conversions.md": "Conversions",
+        "_csharplang/spec/expressions.md": "Expressions", 
+        "_csharplang/spec/statements.md": "Statements",
+        "_csharplang/spec/namespaces.md": "Namespaces",
+        "_csharplang/spec/classes.md": "Classes",
+        "_csharplang/spec/structs.md": "Structs",
+        "_csharplang/spec/arrays.md": "Arrays",
+        "_csharplang/spec/interfaces.md": "Interfaces",
+        "_csharplang/spec/enums.md": "Enums",
+        "_csharplang/spec/delegates.md": "Delegates",
+        "_csharplang/spec/exceptions.md": "Exceptions",
+        "_csharplang/spec/attributes.md": "Attributes",
+        "_csharplang/spec/unsafe-code.md": "Unsafe code",
+        "_csharplang/spec/documentation-comments.md": "Documentation comments",
+  
+        "_csharplang/proposals/csharp-7.0/pattern-matching.md": "Pattern matching",
+        "_csharplang/proposals/csharp-7.0/local-functions.md": "Local functions",
+        "_csharplang/proposals/csharp-7.0/out-var.md": "Out variable declarations",
+        "_csharplang/proposals/csharp-7.0/throw-expression.md": "Throw expressions",
+        "_csharplang/proposals/csharp-7.0/binary-literals.md": "Binary literals",
+        "_csharplang/proposals/csharp-7.0/digit-separators.md": "Digit separators",
+
+        "_csharplang/proposals/csharp-7.1/async-main.md": "Async main method",
+        "_csharplang/proposals/csharp-7.1/target-typed-default.md": "Default expressions",
+        "_csharplang/proposals/csharp-7.1/infer-tuple-names.md": "Infer tuple member names",
+        "_csharplang/proposals/csharp-7.1/generics-pattern-match.md": "Pattern matching with generics",
+
+        "_csharplang/proposals/csharp-7.2/readonly-ref.md": "Readonly references",
+        "_csharplang/proposals/csharp-7.2/span-safety.md": "Compile time safety for ref-like types",
+        "_csharplang/proposals/csharp-7.2/non-trailing-named-arguments.md": "Non-trailing named arguments",
+        "_csharplang/proposals/csharp-7.2/private-protected.md": "Private protected",
+        "_csharplang/proposals/csharp-7.2/conditional-ref.md": "Conditional ref",
+        "_csharplang/proposals/csharp-7.2/leading-separator.md": "Leading digit separator",
+
+        "_csharplang/proposals/csharp-7.3/blittable.md": "Unmanaged generic type constraints",
+        "_csharplang/proposals/csharp-7.3/indexing-movable-fixed-fields.md": "Indexing fixed fields without pinning regardless of context",
+        "_csharplang/proposals/csharp-7.3/pattern-based-fixed.md": "Pattern-based fixed statement",
+        "_csharplang/proposals/csharp-7.3/ref-local-reassignment.md": "Ref local reassignment",
+        "_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md": "Stackalloc array initializers",
+        "_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md": "Auto-implemented property field-targeted attributes",
+        "_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md": "Expression variables in initializers",
+        "_csharplang/proposals/csharp-7.3/tuple-equality.md": "Tuple equality (==) and inequality (!=)",
+        "_csharplang/proposals/csharp-7.3/improved-overload-candidates.md": "Improved overload candidates",
+
+        "_csharplang/proposals/csharp-8.0/nullable-reference-types.md": "Null reference types - proposal",
+        "_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md": "Nullable reference types - specification",
+        "_csharplang/proposals/csharp-8.0/patterns.md": "Recursive pattern matching",
+        "_csharplang/proposals/csharp-8.0/default-interface-methods.md": "Default interface methods",
+        "_csharplang/proposals/csharp-8.0/async-streams.md": "Async streams",
+        "_csharplang/proposals/csharp-8.0/ranges.md": "Ranges and indices",
+        "_csharplang/proposals/csharp-8.0/using.md": "Pattern based using and using declarations",
+        "_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md": "Null coalescing assignment",
+        "_csharplang/proposals/csharp-8.0/readonly-instance-members.md": "Readonly instance members",
+
+        "_vblang/spec/introduction.md": "Introduction",
+        "_vblang/spec/lexical-grammar.md": "Lexical grammar",
+        "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
+        "_vblang/spec/general-concepts.md": "General concepts",
+        "_vblang/spec/attributes.md": "Attributes",
+        "_vblang/spec/source-files-and-namespaces.md": "Source files and namespaces",
+        "_vblang/spec/types.md": "Types",
+        "_vblang/spec/conversions.md": "Conversions",
+        "_vblang/spec/type-members.md": "Type members",
+        "_vblang/spec/statements.md": "Statements",
+        "_vblang/spec/expressions.md": "Expressions",
+        "_vblang/spec/documentation-comments.md": "Documentation comments",
+        "_vblang/spec/overload-resolution.md": "Overload resolution"  
+      },
       "titleSuffix": {
         "_csharplang/spec/*.md": "C# language specification",
-        "_csharplang/proposals/csharp-7.0/*.md": "C# 7.0 language proposals",
-        "_csharplang/proposals/csharp-7.1/*.md": "C# 7.1 language proposals",
-        "_csharplang/proposals/csharp-7.2/*.md": "C# 7.2 language proposals",
-        "_csharplang/proposals/csharp-7.3/*.md": "C# 7.3 language proposals",
-        "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 language proposals",
+        "_csharplang/proposals/csharp-7.0/*.md": "C# 7.0 specification proposals",
+        "_csharplang/proposals/csharp-7.1/*.md": "C# 7.1 specification proposals",
+        "_csharplang/proposals/csharp-7.2/*.md": "C# 7.2 specification proposals",
+        "_csharplang/proposals/csharp-7.3/*.md": "C# 7.3 specification proposals",
+        "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 specification proposals",
         "docs/fsharp/tutorials/**/**.md": "F#",
         "docs/fsharp/language-reference/**/**.md": "F#",
         "docs/core/additional-tools/**.md": ".NET Core",

@@ -53,5 +53,5 @@ This section contains descriptions and links to downloadable network programming
   
 ## See also
 
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
-- [Network Programming How-to Topics](../../../docs/framework/network-programming/network-programming-how-to-topics.md)
+- [Network Programming in the .NET Framework](index.md)
+- [Network Programming How-to Topics](network-programming-how-to-topics.md)

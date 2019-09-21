@@ -319,9 +319,7 @@ In programming service types, frequent use is made of the <xref:System.ServiceMo
 
 ASP.NET Web services are compiled into a class library assembly. A file called the service file is provided that has the extension .asmx and contains an `@ WebService` directive that identifies the class that contains the code for the service and the assembly in which it is located.
 
-```
-<%@ WebService Language="C#" Class="Service,ServiceAssembly" %>
-```
+`<%@ WebService Language="C#" Class="Service,ServiceAssembly" %>`
 
 The service file is copied into an ASP.NET application root in Internet Information Services (IIS), and the assembly is copied into the \bin subdirectory of that application root. The application is then accessible by using the uniform resource locator (URL) of the service file in the application root.
 
@@ -333,9 +331,7 @@ To host a service within IIS 5.1, 6.0 or within WAS, use the follows steps:
 
 2. Create a service file with a .svc extension with an `@ ServiceHost` directive to identify the service type:
 
-    ```
-    <%@ServiceHost language="c#" Service="MyService" %>
-    ```
+    `<%@ServiceHost language="c#" Service="MyService" %>`
 
 3. Copy the service file into a virtual directory, and the assembly into the \bin subdirectory of that virtual directory.
 

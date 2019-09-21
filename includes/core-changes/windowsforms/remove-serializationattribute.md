@@ -20,7 +20,7 @@ The following types are decorated with the <xref:System.SerializableAttribute> i
 
 Historically, this serialization mechanism has had serious maintenance and security concerns. Maintaining `SerializableAttribute` on types means those types must be tested for version-to-version serialization changes and potentially framework-to-framework serialization changes. This makes it harder to evolve those types and can be costly to maintain. These types have no known binary serialization scenarios, which minimizes the impact of removing the attribute.
 
-For more information, see <https://docs.microsoft.com/en-us/dotnet/standard/serialization/binary-serialization>.
+For more information, see [Binary serialization](~/docs/standard/serialization/binary-serialization.md).
 
 #### Version introduced
 

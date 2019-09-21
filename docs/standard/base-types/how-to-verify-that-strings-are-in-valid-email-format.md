@@ -44,17 +44,17 @@ The following example uses a regular expression to verify that a string is in va
  [!code-csharp[RegularExpressions.Examples.Email#7](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.Email/cs/example4.cs#7)]
  [!code-vb[RegularExpressions.Examples.Email#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/RegularExpressions.Examples.Email/vb/example4.vb#7)]  
   
- In this example, the regular expression pattern ``^(?(")(".+?(?<!\\)"@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`{}|~\w])*)(?<=[0-9a-z])@))(?([)([(\d{1,3}.){3}\d{1,3}])|(([0-9a-z][-0-9a-z]*[0-9a-z]*.)+[a-z0-9][-a-z0-9]{0,22}[a-z0-9]))$`` is interpreted as shown in the following table. Note that the regular expression is compiled using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> flag.  
+ In this example, the regular expression pattern ``^(?(")(".+?(?<!\\)"@)|(([0-9a-z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-z][-0-9a-z]*[0-9a-z]*\.)+[a-z0-9][\-a-z0-9]{0,22}[a-z0-9]))$`` is interpreted as shown in the following table. Note that the regular expression is compiled using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> flag.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Begin the match at the start of the string.|  
 |`(?(")`|Determine whether the first character is a quotation mark. `(?(")` is the beginning of an alternation construct.|  
-|`(?("")("".+?(?<!\\)""@)`|If the first character is a quotation mark, match a beginning quotation mark followed by at least one occurrence of any character, followed by an ending quotation mark. The ending quotation mark must not be preceded by a backslash character (\\). `(?<!` is the beginning of a zero-width negative lookbehind assertion. The string should conclude with an at sign (@).|  
+|`(?(")(".+?(?<!\\)"@)`|If the first character is a quotation mark, match a beginning quotation mark followed by at least one occurrence of any character, followed by an ending quotation mark. The ending quotation mark must not be preceded by a backslash character (\\). `(?<!` is the beginning of a zero-width negative lookbehind assertion. The string should conclude with an at sign (@).|  
 |<code>&#124;(([0-9a-z]</code>|If the first character is not a quotation mark, match any alphabetic character from a to z or A to Z (the comparison is case insensitive), or any numeric character from 0 to 9.|  
-|`(\.(?!\.))`|If the next character is a period, match it. If it is not a period, look ahead to the next character and continue the match. `(?!\.)` is a zero-width negative lookahead assertion that prevents two consecutive periods from appearing in the local part of an email address.|  
-|<code>&#124;[-!#\$%&'\*\+/=\?\^\`{}&#124;~\w]</code>|If the next character is not a period, match any word character or one of the following characters: -!#$%'*+=?^\`{}&#124;~.|  
-|<code>((\.(?!\.))&#124;[-!#\$%'\*\+/=\?\^\`{}&#124;~\w])*</code>|Match the alternation pattern (a period followed by a non-period, or one of a number of characters) zero or more times.|  
+|`((\.(?!\.))`|If the next character is a period, match it. If it is not a period, look ahead to the next character and continue the match. `(?!\.)` is a zero-width negative lookahead assertion that prevents two consecutive periods from appearing in the local part of an email address.|  
+|<code>&#124;[-!#\\$%&'\\*\\+/=\?\^\`\{\}\&#124;~\w]</code>|If the next character is not a period, match any word character or one of the following characters: -!#$%'*+=?^\`{}&#124;~.|  
+|<code>((\\.(?!\\.))&#124;[-!#\\$%'\\*\\+/=\?\^\`\{\}\&#124;~\w])*</code>|Match the alternation pattern (a period followed by a non-period, or one of a number of characters) zero or more times.|  
 |`@`|Match the @ character.|  
 |`(?<=[0-9a-z])`|Continue the match if the character that precedes the @ character is A through Z, a through z, or 0 through 9. The `(?<=[0-9a-z])` construct defines a zero-width positive lookbehind assertion.|  
 |`(?(\[)`|Check whether the character that follows @ is an opening bracket.|  

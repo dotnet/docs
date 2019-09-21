@@ -286,11 +286,11 @@ Task.Run(() =>
 
 After removing the `BeginInvoke` usage, the Bean Trader app runs successfully on .NET Core!
 
-![Bean Trader running on .NET Core](RunningOnCore.png)
+![Bean Trader running on .NET Core](images/RunningOnCore.png)
 
 All apps are different, of course, so the specific steps needed to migrate your own apps to .NET Core will vary. But hopefully the Bean Trader sample demonstrates the general workflow and the types of issues that can be expected. And, despite this article's length, the actual changes needed in the Bean Trader sample to make it work on .NET Core were fairly limited. Many apps migrate to .NET Core in this same way - with limited or even no code changes needed.
 
-
+[porting-blog-post]: https://devblogs.microsoft.com/dotnet/porting-desktop-apps-to-net-core/
 [sample-github]: https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader
 [apiport]: https://github.com/Microsoft/dotnet-apiport
 [mahapps]: https://mahapps.com/

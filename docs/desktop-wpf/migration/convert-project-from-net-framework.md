@@ -8,7 +8,7 @@ ms.author: mikerou
 
 # Migrating WPF Apps to .NET Core 3
 
-In this guide, we will look at the steps necessary to migrate a WPF app to .NET Core 3. If you don't have a WPF app on hand to port, but would like to try the process out, you can use the Bean Trader sample app available on [GitHub](sample-github). The original app (targeting .NET Framework 4.7.2) is available in the NetFx\BeanTraderClient folder. This guide explains the steps necessary to port apps in general, first, and then walks through the specific changes to apply that step to the Bean Trader sample.
+In this guide, we will look at the steps necessary to migrate a WPF app to .NET Core 3. If you don't have a WPF app on hand to port, but would like to try the process out, you can use the Bean Trader sample app available on [GitHub][sample-github]. The original app (targeting .NET Framework 4.7.2) is available in the NetFx\BeanTraderClient folder. This guide explains the steps necessary to port apps in general, first, and then walks through the specific changes to apply that step to the Bean Trader sample.
 
 The steps used in this tutorial to migrate to .NET Core are:
 
@@ -31,7 +31,7 @@ The steps used in this tutorial to migrate to .NET Core are:
 
 ## About the sample
 
-This guide references the [Bean Trader sample app](sample-github) because it uses a variety of dependencies similar to those real-world WPF apps might have. The app isn't particularly large (~2,000 lines of code), but is meant to be a step up from 'Hello World' in terms of complexity so that we can see some issues users may encounter while porting real applications. The app communicates with a WCF service so, in order for it to run properly, so you will also need to run the BeanTraderServer project (available in the same GitHub repository) and make sure the BeanTraderClient's configuration points at the correct endpoint (by default, the sample assumes that the server is 
+This guide references the [Bean Trader sample app][sample-github] because it uses a variety of dependencies similar to those real-world WPF apps might have. The app isn't particularly large (~2,000 lines of code), but is meant to be a step up from 'Hello World' in terms of complexity so that we can see some issues users may encounter while porting real applications. The app communicates with a WCF service so, in order for it to run properly, so you will also need to run the BeanTraderServer project (available in the same GitHub repository) and make sure the BeanTraderClient's configuration points at the correct endpoint (by default, the sample assumes that the server is 
 running on the same machine at http://localhost:8090, which will be true if you just launch BeanTraderServer locally).
 
 Keep in mind that this sample app is meant to demonstrate .NET Core porting challenges and solutions. It's not meant to demonstrate WPF best practices. In fact, it deliberately includes some anti-patterns to make sure we encounter at least a couple interesting challenges while porting.
@@ -291,11 +291,8 @@ After removing the `BeginInvoke` usage, the Bean Trader app runs successfully on
 All apps are different, of course, so the specific steps needed to migrate your own apps to .NET Core will vary. But hopefully the Bean Trader sample demonstrates the general workflow and the types of issues that can be expected. And, despite this article's length, the actual changes needed in the Bean Trader sample to make it work on .NET Core were fairly limited. Many apps migrate to .NET Core in this same way - with limited or even no code changes needed.
 
 
-[winforms-port]: https://devblogs.microsoft.com/dotnet/porting-desktop-apps-to-net-core/
-[sample-github]: https://github.com/dotnet/windows-desktop/Samples/BeanTrader
-[youtube-walkthrough]: https://www.youtube.com/watch?v=18ckvJ-6GHM&list=PLS__JrkRveTMiWxG-Lv4cBwYfMQ6m2gmt
+[sample-github]: https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader
 [apiport]: https://github.com/Microsoft/dotnet-apiport
-[platform-compat-analyzers]: https://github.com/dotnet/platform-compat
 [mahapps]: https://mahapps.com/
 [castle-windsor]: http://www.castleproject.org/projects/windsor/
 [apiport-ui]: https://github.com/Microsoft/dotnet-apiport-ui
@@ -305,7 +302,6 @@ All apps are different, of course, so the specific steps needed to migrate your 
 [package-reference-migration]: https://docs.microsoft.com/en-us/nuget/reference/migrate-packages-config-to-package-reference
 [fxcop-docs]: https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisfxcopanalyzers
 [sdk-csproj]: https://docs.microsoft.com/en-us/dotnet/core/tools/csproj
-[link-issue]: https://github.com/dotnet/sdk/issues/2697
 [csprojToVs2017]: https://github.com/hvanbakel/CsprojToVs2017
 [csproj-porting-blog]: https://www.hanselman.com/blog/UpgradingAnExistingNETProjectFilesToTheLeanNewCSPROJFormatFromNETCore.aspx
 [Microsoft.Windows.Compatibility]: https://www.nuget.org/packages/Microsoft.Windows.Compatibility/
@@ -313,8 +309,5 @@ All apps are different, of course, so the specific steps needed to migrate your 
 [svcutil]: https://docs.microsoft.com/en-us/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe
 [dotnet-svcutil]: https://docs.microsoft.com/en-us/dotnet/core/additional-tools/dotnet-svcutil-guide
 [wcf-connected-service]: https://docs.microsoft.com/en-us/dotnet/core/additional-tools/wcf-web-service-reference-guide
-[system-servicemodel-apis]: https://apisof.net/catalog/System.ServiceModel.ClientBase%3CTChannel%3E.Close()
-[msbuild-issue]: https://github.com/Microsoft/msbuild/issues/1603
-[directory-build-props]: https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019#directorybuildprops-and-directorybuildtargets
 [begininvoke-issue]: https://github.com/dotnet/corefx/issues/5940
 [begininvoke-blog]: https://devblogs.microsoft.com/dotnet/migrating-delegate-begininvoke-calls-for-net-core/

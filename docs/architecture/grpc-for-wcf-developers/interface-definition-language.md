@@ -22,7 +22,7 @@ When compared with XML, and particularly SOAP, messages encoded using Protobuf h
 The potential disadvantage of Protobuf compared to SOAP is that, because the messages are not human readable, additional tooling is required to debug message content.
 
 > [!TIP]
-> gRPC *does* support server reflection for dynamically accessing services without pre-compiled stubs, although it is intended more for general-purpose tools than application-specific clients. [Find more information about gRPC Server Reflection on the gRPC repo on GitHub.](https://github.com/grpc/grpc/blob/master/doc/server-reflection.md)
+> gRPC *does* support server reflection for dynamically accessing services without pre-compiled stubs, although it is intended more for general-purpose tools than application-specific clients. For more information about gRPC Server Reflection, see [grpc/grpc](https://github.com/grpc/grpc/blob/master/doc/server-reflection.md) repository on GitHub.
 
 > [!NOTE]
 > WCF's binary format, used with the NetTCP binding, is much closer to Protobuf in terms of compactness and performance, but NetTCP is only usable between .NET clients and servers, whereas Protobuf is a cross-platform solution.

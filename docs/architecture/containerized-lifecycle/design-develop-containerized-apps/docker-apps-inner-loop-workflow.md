@@ -246,7 +246,7 @@ docker-machine {IP} {YOUR-CONTAINER-NAME}
 
 On the Docker host, open a browser and navigate to that site; you should see your app/service running, as demonstrated in Figure 4-29.
 
-![Browser view of the response from localhost/API/values.](./media/docker-apps-inner-loop-workflow/test-docker-app-locally-localost.png)
+![Browser view of the response from localhost/API/values.](./media/docker-apps-inner-loop-workflow/test-docker-app-locally-localhost.png)
 
 **Figure 4-29**. Testing your Docker application locally using localhost
 

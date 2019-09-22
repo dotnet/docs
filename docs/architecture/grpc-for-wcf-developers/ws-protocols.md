@@ -21,7 +21,7 @@ The WS-Discovery protocol is used to locate services on a local network. gRPC se
 
 ## Security – WS-Security, WS-Federation, XML Encryption, and so on
 
-Security, authentication, and authorization are covered in much more detail in [Chapter 6](authentication.md). But it's worth noting here that, unlike WCF, gRPC doesn't support WS-Security, WS Federation, or XML Encryption. Even so, gRPC provides excellent security; all gRPC network traffic is automatically encrypted when using HTTP/2 over TLS, and X509 certificates may be used for mutual client/server authentication.
+Security, authentication, and authorization are covered in much more detail in [Chapter 6](security.md). But it's worth noting here that, unlike WCF, gRPC doesn't support WS-Security, WS Federation, or XML Encryption. Even so, gRPC provides excellent security; all gRPC network traffic is automatically encrypted when using HTTP/2 over TLS, and X509 certificates may be used for mutual client/server authentication.
 
 ## WS-ReliableMessaging
 

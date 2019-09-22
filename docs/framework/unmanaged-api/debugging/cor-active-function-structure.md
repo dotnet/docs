@@ -18,7 +18,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # COR_ACTIVE_FUNCTION Structure
-Contains information about the functions that are currently active in a thread's frames. This structure is used by the [ICorDebugThread2::GetActiveFunctions](../../../../docs/framework/unmanaged-api/debugging/icordebugthread2-getactivefunctions-method.md) method.  
+Contains information about the functions that are currently active in a thread's frames. This structure is used by the [ICorDebugThread2::GetActiveFunctions](icordebugthread2-getactivefunctions-method.md) method.  
   
 ## Syntax  
   

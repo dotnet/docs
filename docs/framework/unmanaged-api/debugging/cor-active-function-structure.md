@@ -43,7 +43,7 @@ typedef struct  _COR_ACTIVE_FUNCTION {
 |`flags`|Reserved for future extensibility.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  
   
@@ -53,5 +53,5 @@ typedef struct  _COR_ACTIVE_FUNCTION {
   
 ## See also
 
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

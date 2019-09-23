@@ -1,8 +1,8 @@
 ---
 title: ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: A guide to building gRPC applications with ASP.NET Core, and upgrading from WCF
 author: markrendle
-ms.date: 09/02/2019
+ms.date: 09/23/2019
 ---
 
 # ASP.NET Core gRPC for WCF Developers
@@ -45,7 +45,11 @@ Editors:
 
 ## Introduction
 
-TODO
+Helping machines communicate with each other has been one of the primary preoccupations of the digital age. In particular, there is an ongoing effort to determine the optimal remote communication mechanism that will suit the interoperability demands of the current infrastructure. As you can imagine, that mechanism changes as either the demands or the infrastructure evolves.
+
+The release of .NET Core 3.0 marks a shift in the way that Microsoft delivers remote communication solutions to developers who want to deliver services across a range of platforms. .NET Core doesn't offer Windows Communication Foundation (WCF) out of the box but, with the release of version ASP.NET Core 3.0, it does provide built-in gRPC functionality.
+
+gRPC is a popular framework in the wider software community, used by developers across many programming languages for modern RPC scenarios. The community and the ecosystem are vibrant and active, with support for the gRPC protocol being added to infrastructure components like Kubernetes, service meshes, load balancers and more. These factors, as well as its performance, efficiency and cross-platform compatibility, make gRPC a natural choice for new apps and WCF apps moving to .NET Core.
 
 ## Purpose
 
@@ -56,6 +60,8 @@ TODO
 **UPDATE THIS**
 
 The audience for this guide is WCF developers, development leads, and architects who are interested in migrating WCF solutions on .NET 4 and earlier to ASP.NET Core 3.0 using gRPC services.
+
+This guide was written for developers working in .NET Framework or .NET Core who have previously used WCF and who are seeking to migrate their applications to a modern RPC environment for .NET Core 3.0 and later versions. The guide may also be of use more generally for developers upgrading or considering upgrading to .NET Core 3.0 who want to use the built-in gRPC tools.
 
 ## How you can use this guide
 

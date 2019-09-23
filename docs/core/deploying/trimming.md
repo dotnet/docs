@@ -15,7 +15,7 @@ When it comes to deploying your application, size is often an important factor. 
 
 This feature is available for both Self-Contained Deployments (SCD) and also Self-Contained Executables (SCE).
 
-_Note: Trimming is an experimental feature in .NET Core 3.0. This feature is not available for Framework-Dependent Deployments (FDD) and Framework-Dependent Executables (FDE) since they don't include .NET Core assemblies._  
+_Note: Trimming is an experimental feature in .NET Core 3.0. This feature is not applicable to Framework-Dependent Deployments (FDD) and Framework-Dependent Executables (FDE) since they don't include .NET Core assemblies._  
 
 
 ```dotnetcli

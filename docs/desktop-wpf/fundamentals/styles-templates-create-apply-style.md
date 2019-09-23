@@ -1,5 +1,5 @@
 ---
-title: Create a style in WPF - .NET Core Desktop
+title: Create a style in WPF - .NET Desktop
 description: Learn how to create and reference a control style in Windows Presentation Foundation and .NET Core.
 author: thraka
 ms.author: adegeo

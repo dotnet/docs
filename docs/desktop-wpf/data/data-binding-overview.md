@@ -1,5 +1,5 @@
 ---
-title: Data binding in WPF - .NET Core Desktop
+title: Data binding in WPF - .NET Desktop
 description: Learn about the different data sources you can add to your project in Windows Presentation Foundation for .NET Core. Data sources can be bound to XAML elements to create dynamic applications.
 author: thraka
 ms.date: 09/19/2019

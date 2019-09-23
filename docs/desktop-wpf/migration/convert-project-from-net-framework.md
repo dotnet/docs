@@ -1,5 +1,5 @@
 ---
-title: Migrating WPF Apps to .NET Core 3.0 - .NET Core Desktop
+title: Migrating WPF Apps to .NET Core 3.0 - .NET Desktop
 description: Learn how to migrate a Windows Presentation Foundation (WPF) app to .NET Core 3.0.
 author: mjrousos
 ms.date: 09/12/2019

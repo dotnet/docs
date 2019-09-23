@@ -296,8 +296,8 @@ Some message processing is inherently idempotent. For example, if a system gener
 
 ### Additional resources
 
-- **Honoring message idempotency** <br/>
-    <https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency>
+- **Honoring message idempotency**  
+  <https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency>
 
 ## Deduplicating integration event messages
 

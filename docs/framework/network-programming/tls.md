@@ -207,7 +207,7 @@ For more information with .NET framework 3.5.1, see [Support for TLS System Defa
 
 The following _.REG_ file sets the registry keys and their variants to their most safe values:
 
-```
+```text
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v2.0.50727]

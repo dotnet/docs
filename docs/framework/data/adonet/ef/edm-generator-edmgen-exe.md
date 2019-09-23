@@ -6,9 +6,9 @@ ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
 
 # EDM Generator (EdmGen.exe)
 
-EdmGen.exe is a command-line tool used for working with [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] model and mapping files. You can use the EdmGen.exe tool to do the following:
+EdmGen.exe is a command-line tool used for working with Entity Framework model and mapping files. You can use the EdmGen.exe tool to do the following:
 
-- Connect to a data source by using a data source–specific .NET Framework data provider, and generate the conceptual model (.csdl), storage model (.ssdl), and mapping (.msl) files that are used by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).
+- Connect to a data source by using a data source–specific .NET Framework data provider, and generate the conceptual model (.csdl), storage model (.ssdl), and mapping (.msl) files that are used by the Entity Framework. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).
 
 - Validate an existing model. For more information, see [How to: Use EdmGen.exe to Validate Model and Mapping Files](how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md).
 

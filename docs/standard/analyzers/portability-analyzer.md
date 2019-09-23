@@ -1,14 +1,16 @@
 ---
 title: The .NET Portability Analyzer - .NET
 description: Learn how to use the .NET Portability Analyzer tool to evaluate how portable your code is among the various .NET implementations, including .NET Core, .NET Standard, UWP, and Xamarin.
-ms.date: 07/18/2019
+ms.date: 09/13/2019
 ms.technology: dotnet-standard
 ms.assetid: 0375250f-5704-4993-a6d5-e21c499cea1e
 ---
 
 # The .NET Portability Analyzer
 
-Want to make your libraries support multi-platform? Want to see how much work is required to make your application compatible with other .NET implementations and profiles, including .NET Core, .NET Standard, UWP, and Xamarin for iOS, Android, and Mac? The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that provides you with a detailed report on how flexible your program is across .NET implementations by analyzing assemblies. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer), which analyzes assembly per project, and as a [ApiPort console app](https://aka.ms/apiportdownload), which analyzes assemblies by specified files or directory.
+Want to make your libraries support multi-platform? Want to see how much work is required to make your .NET Framework application to run on .NET Core?  The [.NET Portability Analyzer](https://github.com/microsoft/dotnet-apiport) is a tool that provides you with a detailed report  on missing .NET APIs for your applications or libraries to be portable on your specified targeted .NET platforms by analyzing the assemblies. The Portability Analyzer is offered as a [Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer), which analyzes assembly per project, and as a [ApiPort console app](https://aka.ms/apiportdownload), which analyzes assemblies by specified files or directory.
+
+Once your converted your project to target your targeted platform, like .NET Core, you may use Roslyn based [API Analyzer tool]([https://docs.microsoft.com/en-us/dotnet/standard/analyzers/api-analyzer](api-analyzer.md) to identify APIs throwing PlatformNotSupportedException and some other compatibility issues.
 
 ## Common targets
 
@@ -54,7 +56,7 @@ The Portability Summary section of the report shows the portability percentage f
 
 ![Portability Details](./media/portability-analyzer/portabilitydetails.png)
 
-The Details section of the report lists the APIs missing from one of the Target Platforms. 
+The **Details** section of the report lists the APIs missing from any of the selected **Targeted Platforms**. 
 
 - Target type: the type has missing API from a Target Platform 
 - Target member: the method is missing from a Target Platform 

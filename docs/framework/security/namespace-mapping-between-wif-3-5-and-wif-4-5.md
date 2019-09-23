@@ -7,7 +7,7 @@ author: "BrucePerlerMS"
 
 # Namespace Mapping between WIF 3.5 and WIF 4.5
 
-Beginning with .NET 4.5, Windows Identity Foundation (WIF) has been fully integrated into the .NET Framework. This integration engendered name changes and some consolidation of the WIF namespaces and API surface. This topic provides some guidance and a general mapping between the WIF 3.5 namespaces and the WIF 4.5 namespaces. It is not intended to be exhaustive, but rather provide some general information about where to find familiar WIF 3.5 classes in WIF 4.5. For more detailed information about the differences between WIF 3.5 and WIF 4.5, see [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md). For guidance about how to migrate an applications built using WIF 3.5 to WIF 4.5, see [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md).
+Beginning with .NET 4.5, Windows Identity Foundation (WIF) has been fully integrated into the .NET Framework. This integration engendered name changes and some consolidation of the WIF namespaces and API surface. This topic provides some guidance and a general mapping between the WIF 3.5 namespaces and the WIF 4.5 namespaces. It is not intended to be exhaustive, but rather provide some general information about where to find familiar WIF 3.5 classes in WIF 4.5. For more detailed information about the differences between WIF 3.5 and WIF 4.5, see [What's New in Windows Identity Foundation 4.5](whats-new-in-wif.md). For guidance about how to migrate an applications built using WIF 3.5 to WIF 4.5, see [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md).
 
 ## WIF 3.5 to WIF 4.5 Namespace Map
 
@@ -43,5 +43,5 @@ The following table provides information about where WIF 3.5 classes can be foun
 
 ## See also
 
-- [What's New in Windows Identity Foundation 4.5](../../../docs/framework/security/whats-new-in-wif.md)
-- [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](../../../docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)
+- [What's New in Windows Identity Foundation 4.5](whats-new-in-wif.md)
+- [Guidelines for Migrating an Application Built Using WIF 3.5 to WIF 4.5](guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md)

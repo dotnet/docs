@@ -2,7 +2,7 @@
 title: .NET Core Guide
 description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and Mac apps. Learn about .NET Core to get started.
 author: richlander
-ms.date: 09/06/2019
+ms.date: 09/23/2019
 ms.custom: "updateeachrelease"
 ---
 # .NET Core Guide
@@ -21,13 +21,13 @@ All .NET Core versions are available at [.NET Core Downloads](https://www.micros
 
 ## .NET Core 3.0
 
-The latest version is [.NET Core 3.0](whats-new/dotnet-core-3-0.md). New features include: ...
+The latest version is .NET Core 3.0. New features include Windows Desktop support with Windows Presentation Foundation (WPF) and Windows Forms, full stack C# web development with Blazor, new enhancements to SignalR and Azure SignalR Service, new C# language features with C# 8, and much more. For a full listing of the new features in .NET Core 3.0, see [What's new in .NET Core 3.0](./whats-new/dotnet-core-3-0.md).
 
 ## Create your first application
 
-After installing the .NET Core SDK, open a command prompt. Type the following `dotnet` commands to create and run a C# application.
+After installing the .NET Core SDK, open a command prompt. Type the following `dotnet` commands to create and run a C# application:
 
-```console
+```dotnetcli
 dotnet new console
 dotnet run
 ```
@@ -40,7 +40,7 @@ Hello World!
 
 ## Support
 
-.NET Core is [supported by Microsoft](https://www.microsoft.com/net/support/policy), on Windows, macOS and Linux. It's updated for security and quality several times a year, typically monthly.
+.NET Core is [supported by Microsoft](https://www.microsoft.com/net/support/policy), on Windows, macOS, and Linux. It's updated for security and quality several times a year, typically monthly.
 
 .NET Core binary distributions are built and tested on Microsoft-maintained servers in Azure and supported just like any Microsoft product.
 

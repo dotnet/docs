@@ -3,7 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
-ms.date: 09/06/2019
+ms.date: 09/23/2019
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -49,6 +49,12 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 - [.NET Application Architecture](architecture/index.yml)
 
 Additionally, you can browse the [.NET API reference](/dotnet/api).
+
+## Videos
+
+Explore videos on web, mobile, desktop, C#, machine learning, containers/Docker, data access, and more:
+
+[.NET 101 video series](https://dotnet.microsoft.com/learn/videos)
 
 ## Open source
 

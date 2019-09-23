@@ -39,7 +39,7 @@ Author:
 
 > **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 >
-> **Rob Vettor** - Microsoft - Principal Cloud System Architect/IP Architect - [RobVettor.com](http://robvettor.com)
+> **Rob Vettor** - Microsoft - Principal Cloud System Architect/IP Architect - [RobVettor.com](https://robvettor.com)
 
 Participants and Reviewers:
 

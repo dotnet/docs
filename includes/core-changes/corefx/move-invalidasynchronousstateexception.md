@@ -24,7 +24,7 @@ CoreFx
 
 - None
 
-<!-- 
+<!--
 
 ### Affected APIs
 

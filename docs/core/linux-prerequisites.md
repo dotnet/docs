@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Linux
 description: Supported Linux versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on Linux machines.
 author: leecow
 ms.author: leecow
-ms.date: 09/20/2019
+ms.date: 09/23/2019
 ---
 # Prerequisites for .NET Core on Linux
 
@@ -25,7 +25,7 @@ This article shows the dependencies needed to develop .NET Core applications on 
 
 For download links and more information, see [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
-.NET Core 3.0 is supported on the following Linux distributions/versions. 
+.NET Core 3.0 is supported on the following Linux distributions/versions:
 
 OS                            | Version               | Architectures  
 ------------------------------|-----------------------|----------------
@@ -39,7 +39,7 @@ OpenSUSE Leap                 | 42.3+                 | x64
 SUSE Enterprise Linux (SLES)  | 12 SP2+, 15           | x64
 Alpine Linux                  | 3.8+                  | x64, ARM64
 
-\* ARM32 and ARM64 support starts with Debian 9 and Ubuntu 16.04. Earlier versions of those distros are not supported on ARM chips.
+\* ARM32 and ARM64 support starts with Debian 9 and Ubuntu 16.04. Earlier versions of those distributions aren't supported on ARM chips.
 
 See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 

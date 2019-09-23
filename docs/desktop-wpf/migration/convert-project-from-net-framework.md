@@ -120,7 +120,7 @@ Once the NuGet packages are updated to recent versions, the `<PackageReference>`
 
 Once you understand the state of your project's NuGet dependencies, the next thing to consider is .NET Framework API dependencies. The [.NET Portability Analyzer][apiport] tool is useful for understanding which of the .NET APIs your project uses are available on other .NET platforms.
 
-The tool comes as a [Visual Studio plugin][apiport-plugin], a [command-line tool][apiport-releases], or wrapped in a [simple GUI][apiport-ui] which simplifies its options. You can read more about using the .NET Portability Analyzer (API Port) via the GUI in [this blog post](porting-blog-post). If you prefer to use the command line, the necessary steps are:
+The tool comes as a [Visual Studio plugin][apiport-plugin], a [command-line tool][apiport-releases], or wrapped in a [simple GUI][apiport-ui] which simplifies its options. You can read more about using the .NET Portability Analyzer (API Port) via the GUI in [this blog post][porting-blog-post]. If you prefer to use the command line, the necessary steps are:
 
 1. Download the [.NET Portability Analyzer][apiport-releases] if you don't already have it.
 1. Make sure the .NET Framework app to be ported builds successfully (this is a good idea prior to migration anyhow!).

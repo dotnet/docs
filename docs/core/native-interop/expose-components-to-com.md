@@ -1,5 +1,5 @@
 ---
-title: "Exposing .NET Core Components to COM"
+title: "Exposing .NET Core components to COM"
 ms.date: "07/12/2019"
 helpviewer_keywords: 
   - "exposing .NET Core components to COM"
@@ -10,7 +10,7 @@ author: "jkoritzinsky"
 ms.author: "jekoritz"
 ---
 
-# Exposing .NET Core Components to COM
+# Exposing .NET Core components to COM
 
 In .NET Core, the process for exposing your .NET objects to COM has been significantly streamlined in comparison to .NET Framework. The following process will walk you through how to expose a class to COM. This tutorial shows you how to:
 
@@ -67,7 +67,7 @@ The resulting output will now also have a `ProjectName.X.manifest` file. This fi
 
 There is a fully functional [COM server sample](https://github.com/dotnet/samples/tree/master/core/extensions/COMServerDemo) in the dotnet/samples repository on GitHub.
 
-## Additional Notes
+## Additional notes
 
 Unlike in .NET Framework, there is no support in .NET Core for generating a COM Type Library (TLB) from a .NET Core assembly. You will either have to manually write an IDL file or a C++ header for the native declarations of your interfaces.
 

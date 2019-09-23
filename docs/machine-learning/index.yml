@@ -1,17 +1,17 @@
 ### YamlMime:Landing
 
 title: ML.NET Documentation
-summary: Learn how to use ML.NET, an open-source framework, to build machine learning solutions and integrate them into applications. Tutorials, code examples, and more.
+summary: Learn how to use open-source ML.NET to build machine learning solutions and integrate them into applications. Tutorials, code examples, and more show you how.
 
 metadata:
   title: ML.NET Documentation - Tutorials, API Reference
-  description: Learn how to use ML.NET, an open-source and cross-platform machine learning framework for building custom machine learning solutions and integrating them into .NET applications. Tutorials, code examples, API reference, and other documentation show you how.
+  description: Learn how to use open-source ML.NET to build machine learning solutions and integrate them into applications. Tutorials, code examples, and more show you how.
   ms.prod: dotnet-ml
   ms.topic: landing-page
   ms.collection: collection
   author: natke
   ms.author: nakersha
-  ms.date: 09/20/2019
+  ms.date: 09/23/2019
 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -102,6 +102,6 @@ landingContent:
           - text: ML.NET API reference (preview)
             url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
           - text: ML.NET CLI reference
-            url: reference/ml-net-cli-reference
+            url: reference/ml-net-cli-reference.md
           - text: AutoML API reference
             url: https://docs.microsoft.com/dotnet/api/?view=automl-dotnet

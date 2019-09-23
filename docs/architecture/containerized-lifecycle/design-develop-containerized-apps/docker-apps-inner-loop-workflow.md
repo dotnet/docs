@@ -29,7 +29,7 @@ Apps are made up from your own services plus additional libraries (dependencies)
 
 Figure 4-22 shows the basic steps that you usually need to carry out when building a Docker app, followed by detailed descriptions of each step.
 
-![Workflow overview: Step 1 - Code, Step 2 - Write Dockerfiles, Step 3 - Create images defined with Dockerfiles, Step 4 - Define services with docker-compose file, Step 5 - Run containers or composed apps, Step 6 - Test apps, Step 7 - Push to begin the outer loop (CI/CD pipelines) or continue developing.](./media/docker-apps-inner-loop-workflow/life-cycle-docker-containerized-apps-docker-cli.png)
+![Workflow overview: Step 1 - Code, Step 2 - Write Dockerfiles, Step 3 - Create images defined with Dockerfiles, Step 4 - Define services with docker-compose file, Step 5 - Run containers or composed apps, Step 6 - Test apps, Step 7 - Push to begin the outer loop (CI/CD pipelines) or continue developing.](./media/docker-apps-inner-loop-workflow/life-cycle-containerized-apps-docker-cli.png)
 
 **Figure 4-22**. High-level workflow for the life cycle for Docker containerized applications using Docker CLI
 

@@ -36,7 +36,7 @@ CoreFx
 - <xref:System.Text.UTF8Encoding.GetChars%2A?displayProperty=nameWithType>
 - <xref:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)?displayProperty=nameWithType>
 
-<!-- 
+<!--
 
 ### Affected APIs
 
@@ -45,4 +45,3 @@ CoreFx
 - `M:System.Text.UTF8Encoding.GetString(System.Byte[],System.Int32,System.Int32)`
 
 -->
-

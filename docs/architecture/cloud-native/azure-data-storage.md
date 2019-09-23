@@ -201,7 +201,7 @@ Additionally, note in Figure 5-19 how the cache isn't implemented locally within
 
 [Azure Redis Cache](https://azure.microsoft.com/services/cache/) is a data caching and messaging broker service. It provides high throughput and low-latency access to data for applications. It's fully managed by Microsoft, hosted within Azure, and accessible to any application within or outside of Azure.
 
-Internally, Azure Cache for Redis is backed by the open-source [Redis server](https://redis.io/) and natively supports data structures such as [strings](http://redis.io/topics/data-types#strings), [hashes](http://redis.io/topics/data-types#hashes), [lists](http://redis.io/topics/data-types#sets), [sets](http://redis.io/topics/data-types#sets), and [sorted sets](http://redis.io/topics/data-types#sorted-sets). If your application uses Redis, it will work as-is with Azure Cache for Redis.
+Internally, Azure Cache for Redis is backed by the open-source [Redis server](https://redis.io/) and natively supports data structures such as [strings](https://redis.io/topics/data-types#strings), [hashes](https://redis.io/topics/data-types#hashes), [lists](https://redis.io/topics/data-types#sets), [sets](https://redis.io/topics/data-types#sets), and [sorted sets](https://redis.io/topics/data-types#sorted-sets). If your application uses Redis, it will work as-is with Azure Cache for Redis.
 
 Azure Cache for Redis can also be used as an in-memory data cache, a distributed non-relational database, and a message broker. It's available in three different pricing tiers. The Premium tier features many enterprise-level features such as clustering, data persistence, geo-replication, and Virtual-network security and isolation.
 

@@ -4,7 +4,7 @@ Many of the APIs that return versions in .NET Core now returned the product vers
 
 #### Change description
 
-In .NET Core 2.2 and previous versions, methods such as <xref:System.Environment.Version?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType>, and the file properties dialog for .NET Core assemblies reflect the file version. Starting with .NET Core 3.0, they reflect the product version. 
+In .NET Core 2.2 and previous versions, methods such as <xref:System.Environment.Version?displayProperty=nameWithType>, <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType>, and the file properties dialog for .NET Core assemblies reflect the file version. Starting with .NET Core 3.0, they reflect the product version.
 
 The following figure illustrates the difference in version information for the *System.Runtime.dll* assembly for .NET Core 2.2 (on the left) and .NET Core 3.0 (on the right) as displayed by the **Windows Explorer** file properties dialog.
 
@@ -27,12 +27,11 @@ CoreFx
 - <xref:System.Environment.Version?displayProperty=nameWithType>
 - <xref:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription?displayProperty=nameWithType>
 
-<!-- 
+<!--
 
 ### Affected APIs
 
 - `P:System.Environment.Version`
 - `P:System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription`
-
 
 -->

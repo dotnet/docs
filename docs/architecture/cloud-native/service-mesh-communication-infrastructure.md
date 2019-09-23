@@ -69,4 +69,4 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 >[!div class="step-by-step"]
 >[Previous](rest-grpc.md)
->[Next](distributed-data.md) <!-- Next Chapter -->
+>[Next](distributed-data.md)

@@ -14,7 +14,7 @@ This article describes the differences between .NET Framework's implementation o
 
 ## NuGet package references
 
-If your .NET Framework app lists its NuGet dependencies in a *packages.config* file, migrate to the [`<PackageReference>`](~/nuget/consume-packages/package-references-in-project-files) format.
+If your .NET Framework app lists its NuGet dependencies in a *packages.config* file, migrate to the [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) format.
 
 01. In Visual Studio, find the *Solution Explorer* pane.
 01. With your WPF app, right-click **packages.config** > **Migrate packages.config to PackageReference**.

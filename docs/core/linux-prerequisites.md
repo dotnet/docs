@@ -27,17 +27,17 @@ For download links and more information, see [.NET Core 3.0 downloads](https://d
 
 .NET Core 3.0 is supported on the following Linux distributions/versions:
 
-OS                            | Version               | Architectures  
-------------------------------|-----------------------|----------------
-Red Hat Enterprise Linux      | 6                     | x64
-Red Hat Enterprise Linux<br>CentOS<br>Oracle Linux  | 7                     | x64
-Fedora                        | 28, 29, 30            | x64
-Debian                        | 9, 10                 | x64, ARM32\*, ARM64\*
-Ubuntu                        | 16.04+, 18.04+, 19.04+ | x64, ARM32\*, ARM64\*
-Linux Mint                    | 18                    | x64
-OpenSUSE Leap                 | 42.3+                 | x64
-SUSE Enterprise Linux (SLES)  | 12 SP2+, 15           | x64
-Alpine Linux                  | 3.8+                  | x64, ARM64
+| OS                            | Version               | Architectures   |
+| ------------------------------|-----------------------|---------------- |
+| Red Hat Enterprise Linux      | 6, 7                  | x64 |
+| CentOS<br>Oracle Linux        | 7                     | x64 |
+| Fedora                        | 28, 29, 30            | x64 |
+| Debian                        | 9, 10                 | x64, ARM32\*, ARM64\* |
+| Ubuntu                        | 16.04 or later, 18.04 or later, 19.04 or later | x64, ARM32\*, ARM64\* |
+| Linux Mint                    | 18                    | x64 |
+| OpenSUSE Leap                 | 42.3 or later         | x64 |
+| SUSE Enterprise Linux (SLES)  | 12 SP2 or later, 15   | x64 |
+| Alpine Linux                  | 3.8+                  | x64, ARM64 |
 
 \* ARM32 and ARM64 support starts with Debian 9 and Ubuntu 16.04. Earlier versions of those distributions aren't supported on ARM chips.
 

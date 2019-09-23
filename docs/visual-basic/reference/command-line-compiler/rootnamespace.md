@@ -15,7 +15,7 @@ Specifies a namespace for all type declarations.
   
 ## Syntax  
   
-```  
+```console  
 -rootnamespace:namespace  
 ```  
   

@@ -10,7 +10,7 @@ Specifies a file that contains compiler options and source-code files to compile
   
 ## Syntax  
   
-```  
+```console  
 @response_file  
 ```  
   
@@ -23,7 +23,7 @@ Specifies a file that contains compiler options and source-code files to compile
   
  To specify more than one response file in a compilation, specify multiple response-file options, such as the following.  
   
-```  
+```console  
 @file1.rsp @file2.rsp  
 ```  
   

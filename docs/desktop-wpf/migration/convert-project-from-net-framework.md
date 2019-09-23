@@ -202,7 +202,8 @@ If you have many source files that would need to be excluded this way, you can d
 
 After removing the offending file from the Bean Trader sample, we can re-build and will get four errors. Didn't we use to have one? Why did the number of errors go up? The C# compiler is a [multi-pass compiler][multi-pass-compiler]. This means that it goes through each source file twice. First the compiler just looks at metadata and declarations in each source file and identifies any declaration-level problems. Those are the errors we've fixed. Then, it goes through the code again to build the C# source into IL (those are this second set of errors that we're seeing now).
 
-*`*` In reality, the C# compiler does more than just two passes (as explained in [Eric Lippert's blog on the topic][multi-pass-compiler]), but the end result is that compiler errors for large code changes like this tend to come in two waves.*
+> [!NOTE]
+> The C# compiler does more than just two passes (as explained in [Eric Lippert's blog on the topic][multi-pass-compiler]), but the end result is that compiler errors for large code changes like this tend to come in two waves.
 
 ### Third-party dependency fix-ups (Castle.Windsor)
 

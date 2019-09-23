@@ -40,27 +40,27 @@ If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **S
 
 The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
-| Templates                                    | Short name            | Language     | Tags                                  | Introduced |
-|----------------------------------------------|-----------------------|--------------|---------------------------------------|------------|
-| Console Application                          | [console](#console)   | [C#], F#, VB | Common/Console                        | 1.0        |
-| Class library                                | `classlib`            | [C#], F#, VB | Common/Library                        | 1.0        |
-| WPF Application                              | `wpf`                 | [C#]         | Common/WPF                            | 3.0        |
-| WPF Class library                            | `wpflib`              | [C#]         | Common/WPF                            | 3.0        |
-| WPF Custom Control Library                   | `wpfcustomcontrollib` | [C#]         | Common/WPF                            | 3.0        |
-| WPF User Control Library                     | `wpfusercontrollib`   | [C#]         | Common/WPF                            | 3.0        |
-| Windows Forms (WinForms) Application         | `winforms`            | [C#]         | Common/WinForms                       | 3.0        |
-| Windows Forms (WinForms) Class library       | `winformslib`         | [C#]         | Common/WinForms                       | 3.0        |
-| Worker Service                               | `worker`              | [C#]         | Common/Worker/Web                     | 3.0        |
-| Unit Test Project                            | `mstest`              | [C#], F#, VB | Test/MSTest                           | 1.0        |
-| NUnit 3 Test Project                         | `nunit`               | [C#], F#, VB | Test/NUnit                            | 2.1.400    |
-| NUnit 3 Test Item                            | `nunit-test`          | [C#], F#, VB | Test/NUnit                            | 2.2        |
-| xUnit Test Project                           | `xunit`               | [C#], F#, VB | Test/xUnit                            | 1.0        |
-| Razor Component                              | `razorcomponent`      | [C#]         | Web/ASP.NET                           | 3.0        |
-| Razor Page                                   | `page`                | [C#]         | Web/ASP.NET                           | 2.0        |
-| MVC ViewImports                              | `viewimports`         | [C#]         | Web/ASP.NET                           | 2.0        |
-| MVC ViewStart                                | `viewstart`           | [C#]         | Web/ASP.NET                           | 2.0        |
-| Blazor Server App                            | `blazorserver`        | [C#]         | Web/Blazor                            | 3.0        |
-| ASP.NET Core Empty                           | `web`                 | [C#], F#     | Web/Empty                             | 1.0        |
+| Templates                                    | Short name                      | Language     | Tags                                  | Introduced |
+|----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
+| Console Application                          | [console](#console)             | [C#], F#, VB | Common/Console                        | 1.0        |
+| Class library                                | [classlib](#classlib)           | [C#], F#, VB | Common/Library                        | 1.0        |
+| WPF Application                              | [wpf](#desktop)                 | [C#]         | Common/WPF                            | 3.0        |
+| WPF Class library                            | [wpflib](#desktop)              | [C#]         | Common/WPF                            | 3.0        |
+| WPF Custom Control Library                   | [wpfcustomcontrollib](#desktop) | [C#]         | Common/WPF                            | 3.0        |
+| WPF User Control Library                     | [wpfusercontrollib](#desktop)   | [C#]         | Common/WPF                            | 3.0        |
+| Windows Forms (WinForms) Application         | [winforms](#desktop)            | [C#]         | Common/WinForms                       | 3.0        |
+| Windows Forms (WinForms) Class library       | [winformslib](#desktop)         | [C#]         | Common/WinForms                       | 3.0        |
+| Worker Service                               | [worker](#worker)               | [C#]         | Common/Worker/Web                     | 3.0        |
+| Unit Test Project                            | [mstest](#test)                 | [C#], F#, VB | Test/MSTest                           | 1.0        |
+| NUnit 3 Test Project                         | [nunit](#test)                  | [C#], F#, VB | Test/NUnit                            | 2.1.400    |
+| NUnit 3 Test Item                            | `nunit-test`                    | [C#], F#, VB | Test/NUnit                            | 2.2        |
+| xUnit Test Project                           | [xunit](#test)                  | [C#], F#, VB | Test/xUnit                            | 1.0        |
+| Razor Component                              | `razorcomponent`                | [C#]         | Web/ASP.NET                           | 3.0        |
+| Razor Page                                   | [page](#page)                   | [C#]         | Web/ASP.NET                           | 2.0        |
+| MVC ViewImports                              | [viewimports](#viewimports)     | [C#]         | Web/ASP.NET                           | 2.0        |
+| MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2.0        |
+| Blazor Server App                            | [blazorserver](#tbd)            | [C#]         | Web/Blazor                            | 3.0        |
+| ASP.NET Core Empty                           | [web](#web)                     | [C#], F#     | Web/Empty                             | 1.0        |
 | ASP.NET Core Web App (Model-View-Controller) | `mvc`                 | [C#], F#     | Web/MVC                               | 1.0        |
 | ASP.NET Core Web App                         | `webapp`, `razor`     | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0   |
 | ASP.NET Core with Angular                    | `angular`             | [C#]         | Web/MVC/SPA                           | 2.0        |
@@ -151,12 +151,14 @@ Each project template may have additional options available. The core templates 
 ### console
 
 - **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.0` in .NET Core 3.0 SDK. Option not available in .NET Core 2.x SDK.
-- 
+
 - **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
 
 - **`--no-restore`** - If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
 
-**classlib**
+***
+
+### classlib
 
 - **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp<version>` to create a .NET Core Class Library or `netstandard<version>` to create a .NET Standard Class Library. 
 
@@ -171,57 +173,80 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation. Available since .NET Core 2.0 SDK.
 
-**wpf, wpflib, wpfcustomcontrollib, wpfusercontrollib, winforms, winformslib**
+***
+
+### <a name="desktop"></a> wpf, wpflib, wpfcustomcontrollib, wpfusercontrollib, winforms, winformslib
 
 - **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation.
 
-**angular, react, reactredux**
+***
 
-- **`--exclude-launch-settings`** - Exclude *launchSettings.json* from the generated template.
+### worker
+
+- **`--exclude-launch-settings`** - Excludes *launchSettings.json* from the generated template.
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation.
+
+***
+
+### <a name="test"></a> mstest, nunit, xunit
+
+- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.x SDK for the `mstest` and `xunit` commands. The default value matches the major-minor version of the SDK you're running against. For example, for .NET Core 3.0 SDK, the default value is `netcoreapp3.0`.
+
+- **`-p|--enable-pack`** - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
+
+- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
+
+***
+
+### <a name="spa"></a> angular, react, reactredux
+
+- **`--exclude-launch-settings`** - Excludes *launchSettings.json* from the generated template.
+
+- **`--no-restore`** - Doesn't execute an implicit restore during project creation. Available since .NET Core 2.0 SDK.
 
 - **`--no-https`** - Project doesn't require HTTPS. This option only applies if `IndividualAuth` or `OrganizationalAuth`** are not being used.
 
-**razorclasslib**
+***
 
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
+### page
 
-**mstest, xunit**
-
-- **`-p|--enable-pack`** - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
-
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
-
-**nunit**
-
-- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp2.1`.
-
-- **`-p|--enable-pack`** - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
-
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
-
-**page**
-
-- **`-na|--namespace <NAMESPACE_NAME>`** - Namespace for the generated code. The default value is `MyApp.Namespace`**.
+- **`-na|--namespace <NAMESPACE_NAME>`** - Namespace for the generated code. The default value is `MyApp.Namespace`.
 
 - **`-np|--no-pagemodel`** - Creates the page without a PageModel.
 
-**viewimports**
+***
 
-- **`-na|--namespace <NAMESPACE_NAME>`** - Namespace for the generated code. The default value is `MyApp.Namespace`**.
+### viewimports
 
-**web**
+- **`-na|--namespace <NAMESPACE_NAME>`** - Namespace for the generated code. The default value is `MyApp.Namespace`.
 
-- **`--exclude-launch-settings`** - Exclude *launchSettings.json* from the generated template.
+***
+
+### razorclasslib
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation.
 
-- **`--no-https`** - Project doesn't require HTTPS. This option only applies if `IndividualAuth` or `OrganizationalAuth`** are not being used.
+***
 
-**mvc, webapp**
+### web
+
+- **`--exclude-launch-settings`** - Exclude *launchSettings.json* from the generated template.
+
+- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.x SDK.
+
+- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
+
+- **`--no-https`** - Project doesn't require HTTPS. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't used for `--auth`.
+
+- **`--use-launch-settings`** - Includes *launchSettings.json* in the generated template output.
+
+- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
+
+
+### mvc, webapp
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`** - The type of authentication to use. The possible values are:
 
@@ -260,7 +285,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation.
 
-**webapi**
+### webapi
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`** - The type of authentication to use. The possible values are:
 
@@ -304,12 +329,6 @@ Each project template may have additional options available. The core templates 
 **classlib**
 
 - **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.1` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
-
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
-
-**mstest, xunit**
-
-- **`-p|--enable-pack`** - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation.
 
@@ -397,16 +416,6 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-https`** - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
 
-**page**
-
-- **`-na|--namespace <NAMESPACE_NAME>`** - Namespace for the generated code. The default value is `MyApp.Namespace`.
-
-- **`-np|--no-pagemodel`** - Creates the page without a PageModel.
-
-**viewimports**
-
-- **`-na|--namespace <NAMESPACE_NAME>`** - Namespace for the generated code. The default value is `MyApp.Namespace`.
-
 # [.NET Core 2.0](#tab/netcore20)
 
 **angular, react, reactredux**
@@ -416,12 +425,6 @@ Each project template may have additional options available. The core templates 
 **classlib**
 
 - **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.0` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
-
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
-
-**mstest, xunit**
-
-- **`-p|--enable-pack`** - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation.
 
@@ -503,19 +506,9 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-restore`** - Doesn't execute an implicit restore during project creation.
 
-**page**
-
-`-na|--namespace <NAMESPACE_NAME>`- Namespace for the generated code. The default value is `MyApp.Namespace`.
-
-- **`-np|--no-pagemodel`** - Creates the page without a PageModel.
-
-**viewimports**
-
-`-na|--namespace <NAMESPACE_NAME>`- Namespace for the generated code. The default value is `MyApp.Namespace`.
-
 # [.NET Core 1.x](#tab/netcore1x)
 
-**console, xunit, mstest, web, webapi**
+**console, web, webapi**
 
 - **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1`. The default value is `netcoreapp1.0`.
 

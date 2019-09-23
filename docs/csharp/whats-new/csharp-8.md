@@ -1,11 +1,11 @@
 ---
-title: What's New in C# 8.0 - C# Guide
-description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
+title: What's new in C# 8.0 - C# Guide
+description: Get an overview of the new features available in C# 8.0.
 ms.date: 09/20/2019
 ---
 # What's new in C# 8.0
 
-There are many enhancements to the C# language that you can try out already.
+C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](#readonly-members)
 - [Default interface members](#default-interface-members)
@@ -24,9 +24,6 @@ There are many enhancements to the C# language that you can try out already.
 - [Unmanaged constructed types](#unmanaged-constructed-types)
 - [stackalloc in nested expressions](#stackalloc-in-nested-expressions)
 - [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
-
-> [!NOTE]
-> This article was last updated for C# 8.0 preview 5.
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
 

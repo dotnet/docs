@@ -99,6 +99,6 @@ Also note that many WPF controls consist of a combination of other WPF controls.
 
 ## See also
 
-- [Create a style for a control](styles-templates-create-apply-template.md)
+<!-- - [Create a style for a control](styles-templates-create-apply-template.md) -->
 - [Overview of XAML Resources](xaml-resources-define.md)
 - [XAML overview (WPF & .NET Core)](xaml.md)

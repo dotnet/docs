@@ -53,7 +53,7 @@ For more information, see [Create a style for a control](styles-templates-create
 
 In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> for the control. In many cases, this gives you enough flexibility so that you do not have to write your own custom controls.
 
-For more information, see [Create a template for a control](styles-templates-create-apply-template.md).
+<!--For more information, see [Create a template for a control](styles-templates-create-apply-template.md).-->
 
 ## DataTemplates
 

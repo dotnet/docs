@@ -20,7 +20,7 @@ Windows Presentation Foundation (WPF) is only available for the Windows operatin
 
 01. The .NET Framework implementation of WPF that is supported by Visual Studio 2019 and Visual Studio 2017.
 
-The WPF Desktop Guide is written for .NET Core 3.0 and WPF. For more information about the existing documentation for WPF with the .NET Framework, see [Framework Windows Presentation Foundation](../../../framework/wpf/index.md).
+The WPF Desktop Guide is written for .NET Core 3.0 and WPF. For more information about the existing documentation for WPF with the .NET Framework, see [Framework Windows Presentation Foundation](../../framework/wpf/index.md).
 
 ## XAML
 
@@ -54,13 +54,13 @@ WPF provides different markup extensions for XAML such as `{Binding}` for data b
 
 ## Property system
 
-Windows Presentation Foundation (WPF) provides a set of services that can be used to extend the functionality of a type's [property](../../../standard/base-types/common-type-system.md#Properties). Collectively, these services are typically referred to as the *WPF property system*. A property that is backed by the *WPF property system* is known as a dependency property.
+Windows Presentation Foundation (WPF) provides a set of services that can be used to extend the functionality of a type's [property](../../standard/base-types/common-type-system.md#Properties). Collectively, these services are typically referred to as the *WPF property system*. A property that is backed by the *WPF property system* is known as a dependency property.
 
 Dependency properties extend property functionality by providing the <xref:System.Windows.DependencyProperty> type that backs a property. The dependency property type is an alternative implementation of the standard pattern of backing the property with a private field.
 
 ### Dependency property
 
-In Windows Presentation Foundation (WPF), dependency properties are typically exposed as standard .NET [properties](../../../standard/base-types/common-type-system.md#Properties). At a basic level, you could interact with these properties directly and never know that they're implemented as a dependency property.
+In Windows Presentation Foundation (WPF), dependency properties are typically exposed as standard .NET [properties](../../standard/base-types/common-type-system.md#Properties). At a basic level, you could interact with these properties directly and never know that they're implemented as a dependency property.
 
 The purpose of dependency properties is to provide a way to compute the value of a property based on the value of other inputs. These other inputs might include system properties such as themes and user preferences or just-in-time property from data binding and animations.
 

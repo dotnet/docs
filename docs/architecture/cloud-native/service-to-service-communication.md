@@ -227,4 +227,4 @@ For cloud-native applications that must stream large numbers of events, Azure Ev
 
 >[!div class="step-by-step"]
 >[Previous](front-end-communication.md)
->[Next](rest-grpc.md) <!-- Next Chapter -->
+>[Next](rest-grpc.md)

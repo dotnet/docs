@@ -100,4 +100,4 @@ Many cloud-native applications leverage server-side APIs and rich client single 
 
 >[!div class="step-by-step"]
 >[Previous](azure-active-directory.md)
->[Next](security.md) <!-- Next Chapter -->
+>[Next](security.md)

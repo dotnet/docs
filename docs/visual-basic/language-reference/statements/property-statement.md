@@ -134,7 +134,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `Get`
 
-  Optional. Required if the property is marked `WriteOnly`. Starts a `Get` property procedure that is used to return the value of the property.
+  Optional. Required if the property is marked `ReadOnly`. Starts a `Get` property procedure that is used to return the value of the property. The `Get` statement is not used with [auto-implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
 
 - `statements`
 
@@ -146,7 +146,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `Set`
 
-  Optional. Required if the property is marked `ReadOnly`. Starts a `Set` property procedure that is used to store the value of the property.
+  Optional. Required if the property is marked `WriteOnly`. Starts a `Set` property procedure that is used to store the value of the property. The `Set` statement is not used with [auto-implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
 
 - `End Set`
 

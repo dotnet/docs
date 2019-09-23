@@ -11,7 +11,7 @@ Id: 160
  Category: SMSvcHost  
   
 ## Description  
- This event indicates that an error occurred in the specified Activation Service of the specified protocol, while trying to listen for the specified site, thus the protocol is disabled for the site temporarily..The event lists the URL, status, exception, process name and process ID.  
+ This event indicates that an error occurred in the specified Activation Service of the specified protocol, while trying to listen for the specified site, thus the protocol is disabled for the site temporarily. The event lists the URL, status, exception, process name and process ID.  
   
 ## See also
 

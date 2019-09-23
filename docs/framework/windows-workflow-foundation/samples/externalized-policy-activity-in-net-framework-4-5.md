@@ -19,7 +19,7 @@ This sample demonstrates how the ExternalizedPolicy4 activity allows executing e
 
 The ExternalizedPolicy4 activity is a <xref:System.Activities.NativeActivity> that allows executing WF 3.5 <xref:System.Workflow.Activities.Rules.RuleSet> objects within WF 4.5 workflows. The following example is a simplified definition of the public object model of the activity.
 
-```
+```csharp
 public class ExternalizedPolicy4Activity<TResult>: CodeActivity
 {
     public string RulesFilePath

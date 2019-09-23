@@ -137,7 +137,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
 ### Granting Access to Arbitrary Users or Groups  
  The example in this section grants WMI Provider registration privileges to all local users. If you want to grant access to a user or group that is not built in, then you must obtain that user or group’s Security Identifier (SID). There is no simple way to get the SID for an arbitrary user. One method is to log on as the desired user and then issue the following shell command.  
   
-```  
+```console
 Whoami /user  
 ```  
   

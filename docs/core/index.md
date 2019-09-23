@@ -17,7 +17,7 @@ Check out [.NET Core Tutorials](tutorials/index.md) to learn how to create a sim
 
 Download the [.NET Core SDK](https://www.microsoft.com/net/download) to try .NET Core on your Windows, macOS, or Linux machine. And if you prefer to use Docker containers, visit the [.NET Core Docker Hub](https://hub.docker.com/_/microsoft-dotnet-core/).
 
-All .NET Core versions are available at [.NET Core Downloads](https://www.microsoft.com/net/download/archives) if you're looking for another .NET Core version.
+All .NET Core versions are available at [.NET Core Downloads](https://dotnet.microsoft.com/download/dotnet-core) if you're looking for another .NET Core version.
 
 ## .NET Core 3.0
 
@@ -40,7 +40,7 @@ Hello World!
 
 ## Support
 
-.NET Core is [supported by Microsoft](https://www.microsoft.com/net/support/policy), on Windows, macOS, and Linux. It's updated for security and quality several times a year, typically monthly.
+.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy), on Windows, macOS, and Linux. It's updated for security and quality several times a year, typically monthly.
 
 .NET Core binary distributions are built and tested on Microsoft-maintained servers in Azure and supported just like any Microsoft product.
 

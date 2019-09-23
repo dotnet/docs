@@ -65,4 +65,4 @@ Applications typically consist of many parts that must all be protected from vul
 - [Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
 - [Securing Applications](/visualstudio/ide/securing-applications)
 - [Protecting Connection Information](protecting-connection-information.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

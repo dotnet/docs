@@ -96,4 +96,4 @@ The <xref:System.ServiceModel.ChannelFactory%601.CreateChannelWithIssuedToken%2A
 
 ## See also
 
-- [WIF Features](../../../docs/framework/security/wif-features.md)
+- [WIF Features](wif-features.md)

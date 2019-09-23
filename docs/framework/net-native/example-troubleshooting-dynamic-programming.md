@@ -11,7 +11,7 @@ ms.author: "ronpet"
   
  Not all metadata lookup failures in apps developed using the .NET Native tool chain result in an exception.  Some can manifest in unpredictable ways in an app.  The following example shows an access violation caused by referencing a null object:  
   
-```  
+```output
 Access violation - code c0000005 (first chance)  
 App!$3_App::Core::Util::NavigationArgs.Setup  
 App!$3_App::Core::Util::NavigationArgs..ctor  
@@ -27,14 +27,12 @@ App!$43_System::Threading::SendOrPostCallback.InvokeOpenStaticThunk
 [snip]  
 ```  
   
- Let's try to troubleshoot this exception by using the three-step approach outlined in the "Manually resolve missing metadata" section of [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md).  
+ Let's try to troubleshoot this exception by using the three-step approach outlined in the "Manually resolve missing metadata" section of [Getting Started](getting-started-with-net-native.md).  
   
 ## What was the app doing?  
  The first thing to note is the `async` keyword machinery at the base of the stack.  Determining what the app was really doing in an `async` method can be problematic, because the stack has lost the context of the originating call and has run the `async` code on a different thread. However, we can deduce that the app is trying to load its first page.  In the implementation for `NavigationArgs.Setup`, the following code caused the access violation:  
   
-```  
-AppViewModel.Current.LayoutVM.PageMap  
-```  
+`AppViewModel.Current.LayoutVM.PageMap`  
   
  In this instance, the `LayoutVM` property on `AppViewModel.Current` was **null**.  Some absence of metadata caused a subtle behavior difference and resulted in a property being uninitialized instead of set, as the app expected.  Setting a breakpoint in the code where `LayoutVM` should have been initialized might throw light on the situation.  However, note that `LayoutVM`’s type is `App.Core.ViewModels.Layout.LayoutApplicationVM`.  The only metadata directive present so far in the rd.xml file is:  
   
@@ -52,9 +50,9 @@ AppViewModel.Current.LayoutVM.PageMap
  Other issues might also arise when using `App.Core.ViewModels`.  You must decide whether it’s worth identifying and fixing each missing metadata exception, or saving time and adding directives for a larger class of types.  Here, adding `dynamic` metadata for `App.Core.ViewModels` might be the best approach if the resulting size increase of the output binary isn’t an issue.  
   
 ## Could the code be rewritten?  
- If the app had used `typeof(LayoutApplicationVM)` instead of `Type.GetType("LayoutApplicationVM")`, the tool chain could have preserved `browse` metadata.  However, it still wouldn't have created `invoke` metadata, which would have led to a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception when instantiating the type. To prevent the exception, you'd still have to add a runtime directive for the namespace or the type that specifies the `dynamic` policy. For information on runtime directives, see the [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md).  
+ If the app had used `typeof(LayoutApplicationVM)` instead of `Type.GetType("LayoutApplicationVM")`, the tool chain could have preserved `browse` metadata.  However, it still wouldn't have created `invoke` metadata, which would have led to a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception when instantiating the type. To prevent the exception, you'd still have to add a runtime directive for the namespace or the type that specifies the `dynamic` policy. For information on runtime directives, see the [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md).  
   
 ## See also
 
-- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
-- [Example: Handling Exceptions When Binding Data](../../../docs/framework/net-native/example-handling-exceptions-when-binding-data.md)
+- [Getting Started](getting-started-with-net-native.md)
+- [Example: Handling Exceptions When Binding Data](example-handling-exceptions-when-binding-data.md)

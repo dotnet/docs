@@ -59,4 +59,4 @@ custAdapter.Fill(custDataSet, "Customers");
 - [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
 - [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md)
 - [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

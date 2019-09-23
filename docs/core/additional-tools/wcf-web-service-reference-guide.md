@@ -21,6 +21,7 @@ Over the years, many Visual Studio developers have enjoyed the productivity that
 
 > [!NOTE]
 > The **WCF Web Service Reference** option is applicable to projects created using the following project templates:
+>
 > * **Visual C#** > **.NET Core**
 > * **Visual C#** > **.NET Standard**
 > * **Visual C#** > **Web** > **ASP.NET Core Web Application**

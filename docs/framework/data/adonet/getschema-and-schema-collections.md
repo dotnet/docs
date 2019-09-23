@@ -101,4 +101,4 @@ class Program
 ## See also
 
 - [Retrieving Database Schema Information](retrieving-database-schema-information.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

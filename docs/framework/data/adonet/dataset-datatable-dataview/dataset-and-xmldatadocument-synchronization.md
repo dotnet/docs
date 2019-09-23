@@ -108,4 +108,4 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
   
 ## See also
 
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -41,8 +41,7 @@ The way you develop your application is similar to the way you do it without Doc
 
 With the latest versions of Docker for Mac and Windows, it's easier than ever to develop Docker applications, and the setup is straightforward.
 
-> [!INFORMATION]
->
+> [!TIP]
 > For instructions on setting up Docker for Windows, go to <https://docs.docker.com/docker-for-windows/>.
 >
 >For instructions on setting up Docker for Mac, go to <https://docs.docker.com/docker-for-mac/>.
@@ -51,8 +50,7 @@ In addition, you'll need a code editor so that you can actually develop your app
 
 Microsoft provides Visual Studio Code, which is a lightweight code editor that's supported on Mac, Windows, and Linux, and provides IntelliSense with [support for many languages](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python, and most modern languages), [debugging](https://code.visualstudio.com/Docs/editor/debugging), [integration with Git](https://code.visualstudio.com/Docs/editor/versioncontrol) and [extensions support](https://code.visualstudio.com/docs/extensions/overview). This editor is a great fit for Mac and Linux developers. In Windows, you also can use the full Visual Studio application.
 
-> [!INFORMATION]
->
+> [!TIP]
 > For instructions on installing Visual Studio Code for Windows, Mac, or Linux, go to <https://code.visualstudio.com/docs/setup/setup-overview/>.
 >
 > For instructions on setting up Docker for Mac, go to <https://docs.docker.com/docker-for-mac/>.
@@ -88,7 +86,6 @@ You'll need a `DockerFile` per custom image to be built and per container to be 
 The `DockerFile` is commonly placed in the root folder of your app or service and contains the required commands so that Docker knows how to set up and run that app or service. You can create your `DockerFile` and add it to your project along with your code (node.js, .NET Core, etc.), or, if you're new to the environment, take a look at the following Tip.
 
 > [!TIP]
->
 > You can use the Docker extension to guide you when using the `Dockerfile` and `docker-compose.yml` files related to your Docker containers. Eventually, you'll probably write these kinds of files without this tool, but using the Docker extension is a good starting point that will accelerate your learning curve.
 
 In Figure 4-24, you can see how a docker-compose file is added by using the Docker Extension for VS Code.
@@ -127,8 +124,7 @@ In the DockerFile, you can also instruct Docker to listen to the TCP port that y
 
 You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the `ENTRYPOINT` line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET Core application. If you're using the SDK and the .NET Core CLI (`dotnet CLI`) to build and run the .NET application, this setting would be different. The key point here is that the ENTRYPOINT line and other settings depend on the language and platform you choose for your application.
 
-> [!INFORMATION]
->
+> [!TIP]
 > For more information about building Docker images for .NET Core applications, go to <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.
 >
 > To learn more about building your own images, go to <https://docs.docker.com/engine/tutorials/dockerimages/>.
@@ -148,7 +144,6 @@ You can create your own Docker base image from scratch as explained in this [art
 For each custom service that comprises your app, you'll need to create a related image. If your app is made up of a single service or web app, you'll need just a single image.
 
 > [!NOTE]
->
 > When taking into account the "outer-loop DevOps workflow", the images will be created by an automated build process whenever you push your source code to a Git repository (Continuous Integration), so the images will be created in that global environment from your source code.
 >
 > But before we consider going to that outer-loop route, we need to ensure that the Docker application is actually working properly so that they don't push code that might not work properly to the source control system (Git, etc.).

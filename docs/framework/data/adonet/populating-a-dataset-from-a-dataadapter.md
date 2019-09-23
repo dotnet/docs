@@ -181,4 +181,4 @@ adapter.Fill(customers, "Customers");
 - [Data Type Mappings in ADO.NET](data-type-mappings-in-ado-net.md)
 - [Modifying Data with a DbDataAdapter](modifying-data-with-a-dbdataadapter.md)
 - [Multiple Active Result Sets (MARS)](./sql/multiple-active-result-sets-mars.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

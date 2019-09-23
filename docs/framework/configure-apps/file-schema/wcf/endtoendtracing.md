@@ -6,9 +6,10 @@ ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
 # \<endToEndTracing>
 A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.  
   
- \<system.ServiceModel>  
-\<diagnostic>  
-\<endToEndTracing>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endToEndTracing>**  
   
 ## Syntax  
   

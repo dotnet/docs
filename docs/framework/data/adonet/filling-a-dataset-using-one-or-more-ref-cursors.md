@@ -43,4 +43,4 @@ Private Sub Button1_Click(ByVal sender As Object, _
 ## See also
 
 - [Oracle REF CURSORs](oracle-ref-cursors.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

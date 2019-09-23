@@ -23,4 +23,4 @@ This section describes SQL Server features and functionality that are specific t
 
 - [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md)
 - [SQL Server and ADO.NET](index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

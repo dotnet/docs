@@ -24,4 +24,4 @@ ms.author: "ronpet"
 
 - [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312)
 - [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/p/?LinkID=247912)
-- [Managed Extensibility Framework (MEF)](../../../docs/framework/mef/index.md)
+- [Managed Extensibility Framework (MEF)](index.md)

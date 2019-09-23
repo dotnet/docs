@@ -90,4 +90,4 @@ Int32 rowCount = (Int32) command.Parameters["@RowCount"].Value;
 - [Using Commands to Modify Data](using-commands-to-modify-data.md)
 - [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)
 - [Commands and Parameters](commands-and-parameters.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

@@ -11,7 +11,7 @@ This article covers how to write libraries for .NET using cross-platform CLI too
 
 ## Prerequisites
 
-You need [the .NET Core SDK and CLI](https://www.microsoft.com/net/core) installed on your machine.
+You need [the .NET Core SDK and CLI](https://dotnet.microsoft.com/download) installed on your machine.
 
 For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](https://dotnet.microsoft.com) installed on a Windows machine.
 
@@ -243,7 +243,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
 
 1. Restore packages and build projects:
 
-   ```bash
+   ```dotnetcli
    dotnet restore
    dotnet build
    ```
@@ -315,7 +315,7 @@ This will add the three projects above and a solution file which links them toge
 
 The best way to reference a project is to use the .NET Core CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
-```console
+```dotnetcli
 dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 ```
 

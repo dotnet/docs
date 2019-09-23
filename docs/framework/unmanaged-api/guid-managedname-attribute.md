@@ -22,7 +22,7 @@ Defines a custom interface attribute that specifies the managed namespace name f
   
 ## Syntax  
   
-```  
+```idl
 [  
    custom(GUID_ManagedName, value)  
 ]  
@@ -35,7 +35,7 @@ Defines a custom interface attribute that specifies the managed namespace name f
 ## Definition  
  `GUID_ManagedName` is defined in Cor.h as follows:  
   
-```  
+```cpp
 // {0F21F359-AB84-41e8-9A78-36D110E6D2F9}  
 EXTERN_GUID(GUID_ManagedName, 0xf21f359, 0xab84, 0x41e8, 0x9a, 0x78, 0x36, 0xd1, 0x10, 0xe6, 0xd2, 0xf9);  
 ```  
@@ -50,7 +50,7 @@ EXTERN_GUID(GUID_ManagedName, 0xf21f359, 0xab84, 0x41e8, 0x9a, 0x78, 0x36, 0xd1,
 ## Example  
  The following example shows a library definition using the `GUID_ManagedName` attribute.  
   
-```  
+```idl
 [  
    ...  
    custom(GUID_ManagedName, Microsoft.VisualStudio.CommandBars.dll")  

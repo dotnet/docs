@@ -15,7 +15,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Prerequisites
 
-- [.NET Core SDK 2.1](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 2.1](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!
@@ -24,7 +24,7 @@ You can [view or download the sample code](https://github.com/dotnet/samples/tre
 
 Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
 
-```console
+```dotnetcli
 dotnet new console
 dotnet run
 ```

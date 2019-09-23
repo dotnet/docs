@@ -19,7 +19,7 @@ If your .NET Framework app lists its NuGet dependencies in a *packages.config* f
 01. In Visual Studio, find the *Solution Explorer* pane.
 01. With your WPF app, right-click **packages.config** > **Migrate packages.config to PackageReference**.
 
-![Upgrading to PackageReference](media/convert-project-from-net-framework/package-reference-migration.png)
+![Upgrading to PackageReference](media/differences-from-net-framework/package-reference-migration.png)
 
 A dialog will appear showing calculated top-level NuGet dependencies and asking which other NuGet packages should be promoted to top level. Click **Ok** and the *packages.config* file will be removed from the project and `<PackageReference>` elements will be added to the project file.
 

@@ -5,8 +5,9 @@
   - name: Breaking change categories
     href: categories.md
   - name: Breaking changes
-    href: breaking-changes.md
     items:
+    - name: Breaking changes selector
+      href: breaking-changes.md
     - name: By version
       items:
       - name: .NET Framework - .NET Core

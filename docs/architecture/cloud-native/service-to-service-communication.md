@@ -55,7 +55,7 @@ A popular option for removing microservice coupling is the [Materialized View pa
 
 ### Service Aggregator Pattern
 
-Another option for eliminating microservice-to-micrservice coupling is an [Aggregator microservice](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-10. 
+Another option for eliminating microservice-to-microservice coupling is an [Aggregator microservice](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-10. 
 
 ![Aggregator service](./media/aggregator-service.png)
 

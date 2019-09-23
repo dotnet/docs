@@ -29,7 +29,7 @@ For more information about versioning, see [Overview of how .NET Core is version
 
 ## C# 8.0
 
-C# 8 is also part of this release, which includes nullable, async streams, and more patterns. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
+C# 8.0 is also part of this release, which includes the nullable reference types feature, async streams, and more patterns. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
 
 ## .NET Standard 2.1
 

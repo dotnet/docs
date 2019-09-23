@@ -41,7 +41,7 @@ Author:
 
 Editors:
 
-> **John Doe**
+> **Maira Wenzel** - Sr Content Developer - Microsoft
 
 ## Introduction
 

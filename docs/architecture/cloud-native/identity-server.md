@@ -84,7 +84,7 @@ public class Startup
 }
 ```
 
-**Figure 8-X**. Configuring IdentityServer.
+**Figure 8-2**. Configuring IdentityServer.
 
 IdentityServer also hosts a public demo site that can be used to test various protocols and configurations. It's located at [https://demo.identityserver.io/](https://demo.identityserver.io/) and includes information on how to configure its behavior based on the `client_id` provided to it.
 

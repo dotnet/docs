@@ -27,9 +27,11 @@ When your project uses `<PackageReference>`, packages aren't stored locally in a
 
 ## Code Access Security (CAS)
 
-WPF no longer supports Code Access Security (CAS) as .NET Core doesn't support it. All CAS-related functionality is treated as a no-op; everything is operated under the assumption of full-trust. Therefore, WPF has been removing CAS-related code. Publicly defined CAS-related types were moved out of the WPF assemblies and into the CoreFX assemblies. The original WPF assemblies now have type forwarding to the new location of the moved types. Because CAS is no longer supported, the functionality of these types has been reduced.
+WPF no longer supports Code Access Security (CAS) as .NET Core doesn't support it. All CAS-related functionality is treated under the assumption of full-trust. Therefore, WPF has been removing CAS-related code. The public API surface of these types still exists to ensure that calls into these types succeed. However, these calls don't actually do anything.
 
-| Source Assembly | Target Assembly | Type |
+Publicly defined CAS-related types were moved out of the WPF assemblies and into the CoreFX assemblies. The WPF assemblies have type-forwarding set to the new location of the moved types.
+
+| Source Assembly | Target Assembly | Type                |
 | --------------- | --------------- | ------------------- |
 | **WindowsBase.dll** | **System.Security.Permissions.dll** | <xref:System.Security.Permissions.MediaPermission> |
 |                     |                                     | <xref:System.Security.Permissions.MediaPermissionAttribute> |

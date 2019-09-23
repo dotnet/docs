@@ -20,3 +20,9 @@ You can also view individual issues that detail the breaking changes in the foll
 Select the .NET Core version that you are currently targeting and then the .NET Core version you wish to migrate to:
 
 [!INCLUDE[versionselector](~/includes/core-changes/versionselector.md)]
+
+## Breaking changes by category
+
+Select the .NET Core technology area that you are interested in. Individual changes are ordered by .NET Core version.
+
+[!INCLUDE[cateegoryselector](~/includes/core-changes/categoryselector.md)]

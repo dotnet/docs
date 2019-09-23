@@ -8,8 +8,8 @@
     items:
     - name: Create a WPF application
       href: getting-started/how-to-create-application.md
-    - name: Create a control library
-      href: getting-started/how-to-create-control-library.md
+    # - name: Create a control library
+    #  href: getting-started/how-to-create-control-library.md
   - name: Migration
     items:
     - name: Differences from .NET Framework
@@ -28,31 +28,31 @@
         href: fundamentals/styles-templates-overview.md
       - name: Create and apply a style
         href: fundamentals/styles-templates-create-apply-style.md
-      - name: Create and apply a template
-        href: fundamentals/styles-templates-create-apply-template.md
-    - name: Accessibility overview
-      href: fundamentals/accessibility.md
-    - name: Localize your app
-      href: fundamentals/localize-app.md
-    - name: Draw shapes
-      href: fundamentals/draw-shapes.md
-    - name: Display a dialog popup
-      href: fundamentals/display-dialog-popup.md
+      # - name: Create and apply a template
+      #  href: fundamentals/styles-templates-create-apply-template.md
+    #- name: Accessibility overview
+    #  href: fundamentals/accessibility.md
+    #- name: Localize your app
+    #  href: fundamentals/localize-app.md
+    #- name: Draw shapes
+    #  href: fundamentals/draw-shapes.md
+    #- name: Display a dialog popup
+    #  href: fundamentals/display-dialog-popup.md
   - name: Working with data
     items:
     - name: Data binding overview
       href: data/data-binding-overview.md
-    - name: Add data binding to a control
-      href: data/databind-control.md
-    - name: Add validation to a control
-      href: data/validate-control-input.md
-    - name: Display data in a grid control
-      href: data/use-datagrid-control.md
-  - name: Package and distribute
-    items:
-    - name: Package your app with MSIX
-      href: publishing/package-app-msix.md
-    - name: Publish a library to NuGet
-      href: publishing/create-nuget-package.md
-    - name: Publish to the Microsoft Store
-      href: publishing/publish-microsoft-store.md
+    # - name: Add data binding to a control
+    #   href: data/databind-control.md
+    # - name: Add validation to a control
+    #   href: data/validate-control-input.md
+    # - name: Display data in a grid control
+    #   href: data/use-datagrid-control.md
+#  - name: Package and distribute
+#    items:
+#    - name: Package your app with MSIX
+#      href: publishing/package-app-msix.md
+#    - name: Publish a library to NuGet
+#      href: publishing/create-nuget-package.md
+#    - name: Publish to the Microsoft Store
+#      href: publishing/publish-microsoft-store.md

@@ -1,6 +1,8 @@
 ---
 title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
+f1_keywords: 
+  - "NETSDK1045"
 ms.custom: "updateeachvsrelease"
 ms.date: 09/20/2019
 ---
@@ -48,7 +50,7 @@ For download links and more information, see [.NET downloads](https://dotnet.mic
 
 ## Prerequisites to develop .NET Core apps with Visual Studio
     
-You can use any editor to develop .NET Core applications using the .NET Core SDK. Visual Studio 2017 and later versions provide an integrated development environment for .NET Core apps on Windows.
+Even though you can use any editor to develop .NET Core applications using the .NET Core SDK, Visual Studio 2017 and later versions provide an integrated development environment for .NET Core apps on Windows.
 
 <a name="vs-mapping"></a>
 
@@ -84,7 +86,7 @@ The following image shows the **.NET Core cross-platform development** workload 
 
 Visual Studio 2019 16.3 uses .NET Core 3.0 SDK by default after any of these workloads are installed.
 
-If you want your existing projects to use the latest .NET Core runtime, retarget existing .NET Core projects to .NET Core 3.0 using the following instructions:
+If you want your existing projects to use the latest .NET Core runtime, retarget each existing .NET Core project to .NET Core 3.0 using the following instructions:
 
 * On the **Project** menu, choose **Properties**.
 * In the **Target framework** selection menu, set the value to **.NET Core 3.0**.
@@ -112,7 +114,7 @@ To update Visual Studio to use .NET Core 2.2 SDK:
 
  1. Install the [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download).
 
- 1. If you want your project to use the latest .NET Core runtime, retarget existing or new .NET Core projects to .NET Core 2.2 using the following instructions:
+ 1. If you want your project to use the latest .NET Core runtime, retarget each existing or new .NET Core project to .NET Core 2.2 using the following instructions:
 
     * On the **Project** menu, choose **Properties**.
     * In the **Target framework** selection menu, set the value to **.NET Core 2.2**.

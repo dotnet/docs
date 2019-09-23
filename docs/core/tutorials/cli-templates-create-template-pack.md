@@ -40,7 +40,7 @@ The pack you'll create will include the [item template](cli-templates-create-ite
 
 In your terminal, navigate to the _working_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
 
-```console
+```dotnetcli
 dotnet new console -n templatepack -o .
 ```
 
@@ -98,7 +98,7 @@ The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes
 
 Save this file and then run the pack command
 
-```console
+```dotnetcli
 dotnet pack
 ```
 

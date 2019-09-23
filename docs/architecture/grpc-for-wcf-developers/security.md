@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Security in gRPC applications
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 In any real-world scenario, securing applications and services is essential. Security covers three key areas: encrypting network traffic to prevent it from being intercepted by bad actors; authenticating clients and servers to establish identity and trust; and authorizing clients to control access to systems and apply permissions based on identity.
 
 > [!NOTE]
@@ -44,4 +46,5 @@ For more information, see the [Authentication and authorization documentation on
 This chapter will show how to apply call credentials and channel credentials to a gRPC service, and how to use credentials from a .NET Core gRPC client to authenticate with the service.
 
 >[!div class="step-by-step"]
-<!-->[Next](call-credentials.md)-->
+>[Previous](client-libraries.md)
+>[Next](call-credentials.md)

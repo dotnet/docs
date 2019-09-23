@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Migrate a WCF solution to gRPC
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 This chapter will look at how to work with ASP.NET Core 3.0 gRPC projects and demonstrate migrating different types of WCF service to the gRPC equivalent:
 
 - Create an ASP.NET Core 3.0 gRPC project.
@@ -21,4 +23,5 @@ The sample WCF application is a minimal stub of a set of stock trading services,
 The samples include the WCF and gRPC implementations of each service.
 
 >[!div class="step-by-step"]
-<!-->[Next](create-project.md)-->
+>[Previous](ws-protocols.md)
+>[Next](create-project.md)

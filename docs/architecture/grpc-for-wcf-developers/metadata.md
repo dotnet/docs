@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Metadata
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 "Metadata" refers to additional data that may be useful while processing requests and responses but is not part of the actual application data. Metadata might include authentication tokens, request identifiers and tags for monitoring purposes, or information about the data like the number of records in a dataset.
 
 It's possible to add generic key/value headers to WCF messages using an <xref:System.ServiceModel.OperationContextScope> and the <xref:System.ServiceModel.OperationContext.OutgoingMessageHeaders?displayProperty=nameWithType> property, and handle them using <xref:System.ServiceModel.Channels.MessageProperties>.
@@ -54,6 +56,8 @@ public async Task<GetPortfolioResponse> GetPortfolio(GetPortfolioRequest request
     context.ResponseTrailers.Add("Responder", _serverName);
     // ...
 }
+```
 
 >[!div class="step-by-step"]
-<!-->[Next](error-handling.md)-->
+>[Previous](rpc-types.md)
+>[Next](error-handling.md)

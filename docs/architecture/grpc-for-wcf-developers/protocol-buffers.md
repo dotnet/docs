@@ -1,11 +1,13 @@
 ---
-title: Protocol Buffers - gRPC for WCF Developers
+title: Protocol buffers - gRPC for WCF Developers
 description: Introduction to the Protocol Buffers wire format used for gRPC networking.
 author: markrendle
 ms.date: 09/09/2019
 ---
 
-# Protocol Buffers
+# Protocol buffers
+
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 gRPC services send and receive data as *Protocol Buffer (Protobuf) messages*, similar to WCF's data contracts. Protobuf is an efficient way of serializing structured data for machines to read and write, without the overhead that human-readable formats like XML or JSON incur.
 
@@ -18,4 +20,5 @@ Most .NET object serialization techniques, including WCF's data contracts, work 
 The Protobuf wire format itself is a binary encoding, which uses some clever tricks to minimize the number of bytes used to represent messages. Knowledge of the binary encoding format isn't necessary to use Protobuf, but if you're interested you can learn more about it on [the Protocol Buffers web site](https://developers.google.com/protocol-buffers/docs/encoding).
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-messages.md)-->
+>[Previous](why-grpc.md)
+>[Next](protobuf-messages.md)

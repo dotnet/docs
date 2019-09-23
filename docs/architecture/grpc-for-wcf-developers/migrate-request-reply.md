@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Migrate a WCF request-reply service to a gRPC unary RPC
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 This section covers how to migrate a basic request-reply service in WCF to a unary RPC service in ASP.NET Core gRPC. These services are the simplest service types in both Windows Communication Foundation (WCF) and gRPC, so it's an excellent place to start. After migrating the service, you'll learn how to generate a client library from the same `.proto` file to consume the service from a .NET client application.
 
 ## The WCF solution
@@ -445,4 +447,5 @@ public class Program
 Now, you've migrated a basic WCF application to an ASP.NET Core gRPC service and created a client to consume the service from a .NET application. The next section will cover the more involved "duplex" services.
 
 >[!div class="step-by-step"]
-<!-->[Next](migrate-duplex-services.md)-->
+>[Previous](create-project.md)
+>[Next](migrate-duplex-services.md)

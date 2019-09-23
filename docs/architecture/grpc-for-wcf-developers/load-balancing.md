@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Load balancing gRPC
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 A typical deployment of a gRPC application includes a number of identical instances of the service, providing resilience and horizontal scalability. Load balancing distributed incoming requests across these instances to provide full usage of all available resources. To make this load balancing invisible to the client, it's common to use a proxy load balancer server to handle requests from clients and route them to back-end instances.
 
 Load balancers are classified according to the *layer* they operate on. Layer 4 load balancers work on the *transport* level, for example, with TCP sockets, connections and packets. Layer 7 load balancers work at the *application* level, specifically handling HTTP/2 requests for gRPC applications.
@@ -41,4 +43,5 @@ Refer to the documentation for your preferred load balancer to find out how to c
 See [the section on Service Meshes](service-mesh.md) for a discussion of load balancing across internal services on Kubernetes.
 
 >[!div class="step-by-step"]
-<!-->[Next](application-performance-management.md)-->
+>[Previous](service-mesh.md)
+>[Next](application-performance-management.md)

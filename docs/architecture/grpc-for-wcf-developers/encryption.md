@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Encryption and network security
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 WCF's network security model is extensive and complex, including transport-level security using HTTPS or TLS-over-TCP, and message-level security using the WS-Security specification to encrypt individual messages.
 
 gRPC leaves secure networking to the underlying HTTP/2 protocol, which can be secured using regular TLS certificates.
@@ -26,4 +28,5 @@ Communication between microservices in a cluster like Kubernetes or Docker Swarm
 If you need to use explicit TLS between services running in Kubernetes, consider using an in-cluster Certificate Authority and a Certificate Manager Controller like [cert-manager](https://docs.cert-manager.io/en/latest/) to assign automatically certificates to services at deployment time.
 
 >[!div class="step-by-step"]
-<!-->[Next](grpc-in-production.md)-->
+>[Previous](channel-credentials.md)
+>[Next](grpc-in-production.md)

@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Why gRPC is recommended for WCF developers
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Before diving deeply into the language and techniques of gRPC, it's worth discussing why gRPC is the right solution for WCF developers who want to migrate to .NET Core, given there are alternatives available.
 
 ## Similarity to WCF
@@ -42,4 +44,5 @@ gRPC allows clients to specify a maximum time for an RPC to complete. If the spe
 gRPC is implicitly secure when using HTTP/2 over an TLS end-to-end encrypted connection. Support for Client Certificate authentication (see chapter 6) further increases security and trust between client and server.
 
 >[!div class="step-by-step"]
-<!-->[Next](protocol-buffers.md)-->
+>[Previous](network-protocols.md)
+>[Next](protocol-buffers.md)

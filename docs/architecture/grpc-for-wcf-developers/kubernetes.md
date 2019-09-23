@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Kubernetes
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Although it's possible to run containers manually on Docker hosts, for reliable production systems it's preferable to use a Container Orchestration Engine to manage multiple instances running across several servers in a cluster. There are various Container Orchestration Engines available, including Kubernetes, Docker Swarm and Apache Mesos. But of these engines, Kubernetes is far and away the most widely used, so it will be the focus of this chapter.
 
 Kubernetes includes the following functionality:
@@ -87,7 +89,6 @@ kubectl apply -f object.yml
 ```
 
 The `apply` command will check the validity of the YAML file and display any errors received from the API, but doesn't wait until all the objects declared in the file have been created as this can take some time. Use the `kubectl get` command with the relevant object types to check on object creation in the cluster.
-
 
 ### The namespace declaration
 
@@ -310,4 +311,5 @@ This means that by default requests to a gRPC service aren't balanced across all
 The next chapter, [Service Meshes](service-mesh.md), will look at how to address this problem.
 
 >[!div class="step-by-step"]
-<!-->[Next](service-mesh.md)-->
+>[Previous](docker.md)
+>[Next](service-mesh.md)

@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Introduction
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Helping machines communicate with each other has been one of the primary preoccupations of the digital age. In particular, there is an ongoing effort to determine the optimal remote communication mechanism that will suit the interoperability demands of the current infrastructure. As you can imagine, that mechanism changes as either the demands or the infrastructure evolves.
 
 The release of .NET Core 3.0 marks a shift in the way that Microsoft delivers remote communication solutions to developers who want to deliver services across a range of platforms. .NET Core doesn't offer Windows Communication Foundation (WCF) out of the box but, with the release of version ASP.NET Core 3.0, it does provide built-in gRPC functionality.
@@ -60,4 +62,5 @@ The final section of the book looks at how to get the best from gRPC in practice
 This guide was written for developers working in .NET Framework or .NET Core who have previously used WCF and who are seeking to migrate their applications to a modern RPC environment for .NET Core 3.0 and later versions. The guide may also be of use more generally for developers upgrading or considering upgrading to .NET Core 3.0 who want to use the built-in gRPC tools.
 
 >[!div class="step-by-step"]
-<!-->[Next](grpc-overview.md)-->
+>[Previous](index.md)
+>[Next](grpc-overview.md)

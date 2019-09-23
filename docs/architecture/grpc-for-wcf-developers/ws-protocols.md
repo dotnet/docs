@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # WS-\* protocols
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 One of the real benefits of working with Windows Communication Foundation (WCF) was that it supported many of the existing _WS-\*_ standard protocols. This section will briefly cover how gRPC manages the same WS-\* protocols and discuss what options are available when there's no alternative.
 
 ## Metadata Exchange - WS-Policy, WS-Discovery, and so on
@@ -19,7 +21,7 @@ The WS-Discovery protocol is used to locate services on a local network. gRPC se
 
 ## Security – WS-Security, WS-Federation, XML Encryption, and so on
 
-Security, authentication, and authorization are covered in much more detail in [Chapter 6](authentication.md). But it's worth noting here that, unlike WCF, gRPC doesn't support WS-Security, WS Federation, or XML Encryption. Even so, gRPC provides excellent security; all gRPC network traffic is automatically encrypted when using HTTP/2 over TLS, and X509 certificates may be used for mutual client/server authentication.
+Security, authentication, and authorization are covered in much more detail in [Chapter 6](security.md). But it's worth noting here that, unlike WCF, gRPC doesn't support WS-Security, WS Federation, or XML Encryption. Even so, gRPC provides excellent security; all gRPC network traffic is automatically encrypted when using HTTP/2 over TLS, and X509 certificates may be used for mutual client/server authentication.
 
 ## WS-ReliableMessaging
 
@@ -27,7 +29,8 @@ gRPC does not provide an equivalent to WS-ReliableMessaging. Retry semantics sho
 
 ## WS-Transaction, WS-Coordination
 
-WCF’s implementation of distributed transactions uses Windows’ Microsoft Distributed Transaction Coordinator or MSDTC. It works with resource managers that specifically support it, like SQL Server, MSMQ, or Windows file systems. In the modern microservices world, in part due to the wider range of technologies in use, there is no equivalent as yet. For a discussion of transactions, see [Appendix A](appendix.md).
+WCF's implementation of distributed transactions uses Windows’ Microsoft Distributed Transaction Coordinator or MSDTC. It works with resource managers that specifically support it, like SQL Server, MSMQ, or Windows file systems. In the modern microservices world, in part due to the wider range of technologies in use, there is no equivalent as yet. For a discussion of transactions, see [Appendix A](appendix.md).
 
 >[!div class="step-by-step"]
-<!-->[Next](migrating-wcf-to-grpc.md)-->
+>[Previous](error-handling.md)
+>[Next](migrate-wcf-to-grpc.md)

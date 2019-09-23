@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Error handling
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 WCF uses `FaultException<T>` and `FaultContract` to provide detailed error information, including supporting the SOAP Fault standard.
 
 Unfortunately, the current version of gRPC lacks the sophistication found with WCF and only has limited built-in error handling based on simple status codes and metadata. The following table is a quick guide to the most commonly used status codes:
@@ -68,4 +70,5 @@ catch (RpcException)
 Looking ahead, Google has developed a [richer error model](https://cloud.google.com/apis/design/errors#error_model) that is more like WCF's [FaultContract](xref:System.ServiceModel.FaultContractAttribute), but isn't supported in C# yet. Currently, it's only available for Go, Java, Python and C++, but support for C# is expected to come next year.
 
 >[!div class="step-by-step"]
-<!-->[Next](ws-protocols.md)-->
+>[Previous](metadata.md)
+>[Next](ws-protocols.md)

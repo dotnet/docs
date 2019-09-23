@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # WCF endpoints and gRPC methods
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 In WCF, when you're writing your application code, you use one of the following methods:
 
 - You write the application code in a class and decorate methods with the [OperationContract](xref:System.ServiceModel.OperationContractAttribute) attribute.
@@ -42,7 +44,8 @@ The [OperationContract](xref:System.ServiceModel.OperationContractAttribute) att
 
 The `IsInitiating` property lets you indicate that a method within a [ServiceContract](xref:System.ServiceModel.ServiceContractAttribute) can't be the first method called as part of a session. The `IsTerminating` property causes the server to close the session after an operation is called (or the client, if used on a callback client). In gRPC, streams are created by single methods and closed explicitly. See [gRPC streaming](rpc-types.md#grpc-streaming).
 
-For more information on gRPC security and encryption, see [chapter 6](authentication.md).
+For more information on gRPC security and encryption, see [chapter 6](security.md).
 
 >[!div class="step-by-step"]
-<!-->[Next](wcf-bindings.md)-->
+>[Previous](wcf-services-to-grpc-comparison.md)
+>[Next](wcf-bindings.md)

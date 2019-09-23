@@ -7,7 +7,9 @@ ms.date: 09/09/2019
 
 # Protobuf maps for dictionaries
 
-It is important to be able to represent arbitrary collections of named values in messages. In .NET this is commonly handled using dictionary types. Protobuf's equivalent of the .NET <xref:System.Collections.Generic.IDictionary%602> type is the `map<key_type, value_type>` type. This section shows how to declare a `map` in Protobuf, and how to use the generated code.
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
+It's important to be able to represent arbitrary collections of named values in messages. In .NET this is commonly handled using dictionary types. Protobuf's equivalent of the .NET <xref:System.Collections.Generic.IDictionary%602> type is the `map<key_type, value_type>` type. This section shows how to declare a `map` in Protobuf, and how to use the generated code.
 
 ```protobuf
 message StockPrices {
@@ -46,4 +48,5 @@ public Order CreateOrder(Dictionary<string, string> attributes)
 For more information about Protobuf, see the official [Protobuf documentation](https://developers.google.com/protocol-buffers/docs/overview).
 
 >[!div class="step-by-step"]
-<!-->[Next](comparing-wcf-services-to-grpc.md)-->
+>[Previous](protobuf-enums.md)
+>[Next](wcf-services-to-grpc-comparison.md)

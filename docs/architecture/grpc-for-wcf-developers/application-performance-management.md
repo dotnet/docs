@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Application Performance Management
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 In modern production environments like Kubernetes, it's very important to be able to monitor applications to ensure they're running optimally. Concerns like logging and metrics have never been more important. ASP.NET Core, including gRPC, has first-class support for producing and managing log messages and metrics data, as well as *tracing* data. This section will explore these areas in more details.
 
 ## Logging vs Metrics
@@ -110,7 +112,7 @@ The numerical nature of metrics data means that it's ideally suited to drive ale
 
 ## Distributed tracing
 
-*Distributed tracing* is a relatively recent development in monitoring, which has arisen from the increasing use of microservices and distributed architectures. A single request from a client browser, application, or device may be broken down into many steps and sub-requests, and involve the use of many services across a network. This makes it difficult to correlate log messages and metrics with the specific request that triggered them. Distributed tracing applies identifiers to requests that allow logs and metrics to be correlated with a particular operation. This is similar to [WCF's End-to-End tracing](https://docs.microsoft.com/dotnet/framework/wcf/diagnostics/tracing/end-to-end-tracing), but applied across multiple platforms.
+*Distributed tracing* is a relatively recent development in monitoring, which has arisen from the increasing use of microservices and distributed architectures. A single request from a client browser, application, or device may be broken down into many steps and sub-requests, and involve the use of many services across a network. This makes it difficult to correlate log messages and metrics with the specific request that triggered them. Distributed tracing applies identifiers to requests that allow logs and metrics to be correlated with a particular operation. This is similar to [WCF's end-to-end tracing](https://docs.microsoft.com/dotnet/framework/wcf/diagnostics/tracing/end-to-end-tracing), but applied across multiple platforms.
 
 Although it's still a nascent technology area, distributed tracing has grown quickly in popularity and is now going through a standardization process. The Cloud Native Computing Foundation created the [the Open Tracing standard](https://opentracing.io), attempting to provide vendor-neutral libraries for working with backends like [Jaeger](https://www.jaegertracing.io/) and [Elastic APM](https://www.elastic.co/products/apm). At the same time, Google created the [OpenCensus project](https://opencensus.io/) to address the same set of problems. These two projects are now being merged into a new project, [OpenTelemetry](https://opentelemetry.io), which aims to be the future industry standard.
 
@@ -163,4 +165,5 @@ The OpenTracing package is an abstraction layer and as such it requires a back-e
 For more information on the OpenTracing API for .NET, see the [OpenTracing for C#](https://github.com/opentracing/opentracing-csharp) and the [OpenTracing Contrib C#/.NET Core](https://github.com/opentracing-contrib/csharp-netcore) repositories on GitHub.
 
 >[!div class="step-by-step"]
-<!-->[Next](appendix.md)-->
+>[Previous](load-balancing.md)
+>[Next](appendix.md)

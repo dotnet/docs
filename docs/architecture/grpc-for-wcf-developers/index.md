@@ -41,7 +41,7 @@ Author:
 
 Editors:
 
-> **John Doe**
+> **Maira Wenzel** - Sr Content Developer - Microsoft
 
 ## Introduction
 
@@ -67,10 +67,10 @@ Feel free to forward this guide to your team to help ensure a common understandi
 
 ## References
 
-- **gRPC web site**
+- **gRPC web site**  
   <https://grpc.io>
 - **Choosing between .NET Core and .NET Framework for server apps**  
   <https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
 
 >[!div class="step-by-step"]
-<!-->[Next](introduction.md)-->
+>[Next](introduction.md)

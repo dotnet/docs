@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Create gRPC client libraries
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 It isn't necessary to distribute client libraries for a gPRC application. You can create a shared library of `.proto` files within your organization, and other teams can use those files to generate client code in their own projects. But if you have a private NuGet repository and many other teams are using .NET Core, creating and publishing client NuGet packages as part of your service project may be a good way of sharing and promoting your service.
 
 One advantage of distributing a client library is that you can enhance the generated gRPC and Protobuf classes with helpful "convenience" methods and properties. In the client code, as in the server, all the classes are declared as `partial` so you can extend them without editing the generated code. This means it's easy to add constructors, methods, calculated properties, and more to the basic types.
@@ -146,4 +148,5 @@ namespace Grpc.Core
 The `IAsyncEnumerable` and `IObservable` models are both well-supported and well-documented ways of dealing with asynchronous streams of data in .NET. gRPC streams map well to both paradigms, offering close integration with the modern .NET Core framework and reactive/asynchronous programming styles.
 
 >[!div class="step-by-step"]
-<!-->[Next](security.md)-->
+>[Previous](streaming-versus-repeated.md)
+>[Next](security.md)

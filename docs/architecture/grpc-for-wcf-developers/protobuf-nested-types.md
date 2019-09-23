@@ -7,6 +7,8 @@ ms.date: 09/09/2019
 
 # Protobuf nested types
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 Just like C# allows you to declare classes inside other classes, Protobuf allows you to nest message definitions within other messages. The following example shows how to create nested message types:
 
 ```protobuf
@@ -25,4 +27,5 @@ var inner = new Outer.Types.Inner { Text = "Hello" };
 ```
 
 >[!div class="step-by-step"]
-<!-->[Next](protobuf-repeated.md)-->
+>[Previous](protobuf-data-types.md)
+>[Next](protobuf-repeated.md)

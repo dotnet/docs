@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Docker
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 This section will cover the creation of Docker images for ASP.NET Core gRPC applications, ready to run in Docker, Kubernetes, or other container environments. The sample application used, with an ASP.NET Core MVC web app and a gRPC service, is available on the [RendleLabs/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub.
 
 ## Microsoft base images for ASP.NET Core applications
@@ -149,4 +151,5 @@ docker push internal-registry:5000/myorg/stockdata
 Once the image is in a registry, you can deploy it to individual Docker hosts or to a container orchestration engine like Kubernetes.
 
 >[!div class="step-by-step"]
-<!-->[Next](kubernetes.md)-->
+>[Previous](self-hosted.md)
+>[Next](kubernetes.md)

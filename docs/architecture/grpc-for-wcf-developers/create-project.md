@@ -7,6 +7,8 @@ ms.date: 09/02/2019
 
 # Create a new ASP.NET Core gRPC project
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 .NET Core comes with a powerful CLI tool, `dotnet`, which enables you to create and manage projects and solutions from the command line. The tool is closely integrated with Visual Studio, so everything is also available through the familiar GUI interface. This chapter will show both ways to create a new ASP.NET Core gRPC project: first with Visual Studio, then with the .NET Core CLI.
 
 ## Create the project using Visual Studio
@@ -121,4 +123,5 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 In the next section, we'll add functionality to this new service.
 
 >[!div class="step-by-step"]
-<!-->[Next](migrate-request-reply.md)-->
+>[Previous](migrate-wcf-to-grpc.md)
+>[Next](migrate-request-reply.md)

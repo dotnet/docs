@@ -77,7 +77,7 @@ You can also use directives to set these same contexts anywhere in your project:
 
 The default nullable annotation and warning contexts are `disabled`. That decision means that your existing code compiles without changes and without generating any new warnings.
 
-### Nullable annotation context
+## Nullable annotation context
 
 The compiler uses the following rules in a disabled nullable annotation context:
 

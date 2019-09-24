@@ -40,13 +40,13 @@ The following example shows how you might create a button as part of a UI. This 
 
 The following sections explain the basic forms of XAML syntax, and give a short markup example. These sections are not intended to provide complete information about each syntax form, such as how these are represented in the backing type system. <!--TODO For more information about the specifics of XAML syntax for each of the syntax forms introduced in this article, see [XAML Syntax In Detail](xaml-syntax-in-detail.md).-->
 
-Much of the material in the next few sections will be elementary to you, if you have previous familiarity with the XML language. This is a consequence of one of the basic design principles of XAML. The XAML language defines concepts of its own, but these concepts work within the XML language and markup form.
+Much of the material in the next few sections will be elementary to you if you have previous familiarity with the XML language. This is a consequence of one of the basic design principles of XAML. The XAML language defines concepts of its own, but these concepts work within the XML language and markup form.
 
 ### XAML object elements
 
 An object element typically declares an instance of a type. That type is defined in the assemblies referenced by the technology that uses XAML as a language.
 
-Object element syntax always starts with an opening angle bracket (`\<`). This is followed by the name of the type where you want to create an instance. (The name can possibly include a prefix, a concept that will be explained later.) After this, you can optionally declare attributes on the object element. To complete the object element tag, end with a closing angle bracket (`>`). You can instead use a self-closing form that does not have any content, by completing the tag with a forward slash and closing angle bracket in succession (`/>`). For example, look at the previously shown markup snippet again:
+Object element syntax always starts with an opening angle bracket (`<`). This is followed by the name of the type where you want to create an instance. (The name can possibly include a prefix, a concept that will be explained later.) After this, you can optionally declare attributes on the object element. To complete the object element tag, end with a closing angle bracket (`>`). You can instead use a self-closing form that does not have any content, by completing the tag with a forward slash and closing angle bracket in succession (`/>`). For example, look at the previously shown markup snippet again:
 
 [!code-xaml[XAMLOvwSupport#DirtSimple](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page2.xaml#dirtsimple)]
 

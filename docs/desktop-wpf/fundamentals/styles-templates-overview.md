@@ -13,7 +13,7 @@ dev_langs:
 
 Windows Presentation Foundation (WPF) styling and templating refer to a suite of features that allow developers and designers to create visually compelling effects along with consistent appearance for their product. Although developers and designers can customize the appearance of an application, a strong styling and templating model is necessary to allow maintenance and sharing of the appearance within and among applications. Windows Presentation Foundation (WPF) provides that model.
 
-Another feature of the WPF styling model is the separation of presentation and logic. Meaning, designers can work on the appearance of an application by using only XAML at the same time that developers work on the programming logic by using C# or Visual Basic.
+Another feature of the WPF styling model is the separation of presentation and logic. Designers can work on the appearance of an application by using only XAML at the same time that developers work on the programming logic by using C# or Visual Basic.
 
 This overview focuses on the styling and templating aspects of the application and does not discuss any data binding concepts. For information about data binding, see [Data Binding Overview](../../framework/wpf/data/data-binding-overview.md).
 

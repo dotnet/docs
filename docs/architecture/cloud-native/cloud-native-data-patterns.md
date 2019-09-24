@@ -1,7 +1,7 @@
 ---
-title: Cloudn native data patterns
+title: Cloud native data patterns
 description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Data Patterns
-ms.date: 06/30/2019
+ms.date: 09/23/2019
 ---
 # Cloud native data patterns
 

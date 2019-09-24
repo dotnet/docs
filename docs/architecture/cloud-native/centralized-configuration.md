@@ -21,4 +21,4 @@ With centralized configuration, settings that apply to the entire application, s
 
 >[!div class="step-by-step"]
 >[Previous](deploy-eshoponcontainers-azure.md)
->[Next](scale-applications.md) <!-- Next Chapter -->
+>[Next](scale-applications.md)

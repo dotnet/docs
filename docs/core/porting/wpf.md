@@ -47,7 +47,7 @@ When porting a .NET Framework WPF application, there are a few things you must c
 
 01. You're using a different version of WPF.
 
-    When .NET Core 3.0 Preview 1 was released, WPF went open-source on GitHub. The code for .NET Core WPF is a fork of the .NET Framework WPF code base. It's possible some differences exist and your app won't port.
+    When .NET Core 3.0 Preview 1 was released, WPF went open source on GitHub. The code for .NET Core WPF is a fork of the .NET Framework WPF codebase. It's possible some differences exist and your app won't port.
 
 01. The [Windows Compatibility Pack][compat-pack] may help you migrate.
 

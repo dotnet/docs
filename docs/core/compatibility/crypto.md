@@ -1,5 +1,5 @@
 ---
-title: Breaking changes, version 2.2 to 3.0 - .NET Core
+title: Cryptography breaking changes, version 2.2 to 3.0 - .NET Core
 description: Lists the breaking changes from version 2.2 to version 3.0 of .NET Core, ASP.NET Core, and EF Core.
 ms.date: "09/10/2019"
 author: "rpetrusha"
@@ -59,10 +59,6 @@ If you are migrating from version 2.2 to version 3.0 of .NET Core, ASP.NET Core,
 ## Visual Basic
 
 [!INCLUDE[vbNewLine is obsolete](~/includes/core-changes/visualbasic/vbnewline-is-obsolete.md)]
-
-## ASP.NET Core
-
-[ASP.NET Core breaking change announcements (on GitHub)](https://github.com/aspnet/Announcements/issues?q=is%3Aissue+is%3Aopen+label%3A%22Breaking+change%22+label%3A3.0.0)
 
 ## Entity Framework Core
 

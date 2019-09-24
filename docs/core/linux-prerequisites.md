@@ -37,7 +37,7 @@ For download links and more information, see [.NET Core 3.0 downloads](https://d
 | Linux Mint                    | 18                    | x64 |
 | OpenSUSE Leap                 | 42.3 or later         | x64 |
 | SUSE Enterprise Linux (SLES)  | 12 SP2 or later, 15   | x64 |
-| Alpine Linux                  | 3.8+                  | x64, ARM64 |
+| Alpine Linux                  | 3.8or later           | x64, ARM64 |
 
 \* ARM32 and ARM64 support starts with Debian 9 and Ubuntu 16.04. Earlier versions of those distributions aren't supported on ARM chips.
 

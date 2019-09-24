@@ -26,7 +26,7 @@ We recommend you to use the following process when porting your project to .NET 
 
 3. Install the [.NET API analyzer](../../standard/analyzers/api-analyzer.md) into your projects to identify APIs throwing <xref:System.PlatformNotSupportedException> on some platforms and some other potential compatibility issues.
 
-4. Convert all of your package dependencies to the [PackageReference](/nuget/consume-packages/package-references-in-project-files) format.
+4. Convert all of your `packages.config` dependencies to the [PackageReference](/nuget/consume-packages/package-references-in-project-files) format with the [conversion tool in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference).
 
    This step involves converting your dependencies from the legacy `packages.config` format. `packages.config` doesn't work on .NET Core, so this conversion is required if you have package dependencies.
 

@@ -19,7 +19,7 @@ To learn how to migrate, see the [Migrate from packages.config to PackageReferen
 
 After your migrating your project to the `PackageReference` format, you need to verify if your packages are compatible with .NET Core.
 
-First, upgrade your packages to the latest version that you can. It's likely that newer versions of your package dependencies are already compatible with .NET Core.
+First, upgrade your packages to the latest version that you can. This can be done with the NuGet Package Manager UI in Visual Studio. It's likely that newer versions of your package dependencies are already compatible with .NET Core.
 
 ## Analyze your package dependencies
 
@@ -27,7 +27,7 @@ If you haven't already verified that your converted and upgraded package depende
 
 * Analyze NuGet packages using nuget.org
 
-You can see the TFMs that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
+You can see the Target Framework Monikers (TFMs) that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
 
 Although using the site is an easier method to verify the compatibility, **Dependencies** information isn't available on the site for all packages.
 

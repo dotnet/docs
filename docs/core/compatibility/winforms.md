@@ -8,7 +8,7 @@ ms.author: "ronpet"
 # Breaking changes in Windows Forms
 
 > [!IMPORTANT]
-> This article is under construction. This is not a complete list of .NET Core breaking changes. For more information on .NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repository on GitHub. 
+> This article is under construction. This is not a complete list of .NET Core breaking changes. For more information on .NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repository on GitHub.
 
 The following is a list of breaking changes in Windows Forms by .NET Core version.
 
@@ -49,7 +49,6 @@ The following is a list of breaking changes in Windows Forms by .NET Core versio
 [!INCLUDE[SerializableAttribute removed from some Windows Forms types](~/includes/core-changes/windowsforms/remove-serializationattribute.md)]
 
 ## .NET Core 3.0
-
 
 [!INCLUDE[Control.DefaultFont changed to Segoe UI 9pt](~/includes/core-changes/windowsforms/control-defaultfont-changed.md)]
 

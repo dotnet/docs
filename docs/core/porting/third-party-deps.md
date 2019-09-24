@@ -11,25 +11,25 @@ To port your code to .NET Core or .NET Standard, you must understand your depend
 
 ## Migrate your packages to `PackageReference`
 
-.NET Core uses [PackageReference](/nuget/consume-packages/package-references-in-project-files) to specify package dependencies. If you are using [packages.config](/nuget/reference/packages-config) to specify your packages, you will need to convert over to `PackageReference` because `packages.config` is unsupported for .NET Core.
+.NET Core uses [PackageReference](/nuget/consume-packages/package-references-in-project-files) to specify package dependencies. If you're using [packages.config](/nuget/reference/packages-config) to specify your packages in your project, you need to convert it to the `PackageReference` format because `packages.config` isn't supported in .NET Core.
 
-You can learn how to migrate at [Migrate from packages.config to PackageReference](/nuget/reference/migrate-packages-config-to-package-reference).
+To learn how to migrate, see the [Migrate from packages.config to PackageReference](/nuget/reference/migrate-packages-config-to-package-reference) article.
 
-## Upgrade your NuGet packages after converting them
+## Upgrade your NuGet packages
 
-After converting to `PackageReference`, you need to verify if your packages are compatible with .NET Core.
+After your migrating your project to the `PackageReference` format, you need to verify if your packages are compatible with .NET Core.
 
 First, upgrade your packages to the latest version that you can. It's likely that newer versions of your package dependencies are already compatible with .NET Core.
 
 ## Analyze your package dependencies
 
-If you haven't already verified that your converted and upgrade package dependencies work on .NET Core, here's how you can do that.
+If you haven't already verified that your converted and upgraded package dependencies work on .NET Core, there are a few ways that you can achieve that:
 
-### Analyze NuGet packages using nuget.org
+* Analyze NuGet packages using nuget.org
 
 You can see the TFMs that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
 
-Although using the site is an easier method to verify the compatibility, **Dependencies** information is not available on the site for all packages.
+Although using the site is an easier method to verify the compatibility, **Dependencies** information isn't available on the site for all packages.
 
 ### Analyze NuGet packages using NuGet Package Explorer
 

@@ -164,13 +164,13 @@ The following example shows how to execute the XSLT transformation by using the 
 To dynamically link to the compiled assembly, replace
   
 ```csharp  
-xslt.Load(typeof(Transform))  
+xslt.Load(typeof(Transform));  
 ```  
   
 with  
   
 ```csharp 
-xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"))  
+xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"));  
 ``` 
   
 in the example above. For more information on the Assembly.Load method, see <xref:System.Reflection.Assembly.Load%2A>.  

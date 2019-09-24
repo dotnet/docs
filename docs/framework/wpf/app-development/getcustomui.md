@@ -10,7 +10,7 @@ Called by PresentationHost.exe to get custom progress and error messages from th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCustomUI( [out] BSTR* pwzProgressAssemblyName, [out] BSTR* pwzProgressClassName, [out] BSTR* pwzErrorAssemblyName, [out] BSTR* pwzErrorClassName );  
 ```  
   

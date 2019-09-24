@@ -8,13 +8,13 @@ ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
 # WCF Data Services Resources
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] introductory topics can be found in the following locations. Many of these topics also contain links to related topics that contain more detailed information.  
   
- [Overview](../../../../docs/framework/data/wcf/wcf-data-services-overview.md)  
+ [Overview](wcf-data-services-overview.md)  
  Provides an overview of the features and functionality available in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)].  
   
- [Getting Started](../../../../docs/framework/data/adonet/ef/getting-started.md)  
- Describes how to design and access a data service by using [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], as illustrated by the [quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md).  
+ [Getting Started](../adonet/ef/getting-started.md)  
+ Describes how to design and access a data service by using [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], as illustrated by the [quickstart](quickstart-wcf-data-services.md).  
   
- [Application Scenarios](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
+ [Application Scenarios](application-scenarios-wcf-data-services.md)  
  Provides a task-based approach to creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and applications that access [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds.  
   
  [.NET Glossary](../../../standard/glossary.md)  
@@ -55,4 +55,4 @@ ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
   
 ## See also
 
-- [Getting Started](../../../../docs/framework/data/wcf/getting-started-with-wcf-data-services.md)
+- [Getting Started](getting-started-with-wcf-data-services.md)

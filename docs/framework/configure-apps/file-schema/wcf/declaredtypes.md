@@ -14,9 +14,10 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
   
  For more information about data contracts and known types, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md).  
   
- system.runtime.serialization  
-\<dataContractSerializer>  
-\<declaredTypes>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.serialization>**](system-runtime-serialization.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<dataContractSerializer>**](datacontractserializer.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<declaredTypes>**  
   
 ## Syntax  
   

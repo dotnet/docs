@@ -7,7 +7,7 @@ ms.date: 06/14/2019
 
 # Custom templates for dotnet new
 
-The [.NET Core SDK](https://www.microsoft.com/net/download/core) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
+The [.NET Core SDK](https://dotnet.microsoft.com/download) comes with many templates already installed and ready for you to use. The [`dotnet new` command](dotnet-new.md) isn't only the way to use a template, but also how to install and uninstall templates. Starting with .NET Core 2.0, you can create your own custom templates for any type of project, such as an app, service, tool, or class library. You can even create a template that outputs one or more independent files, such as a configuration file.
 
 You can install custom templates from a NuGet package on any NuGet feed, by referencing a NuGet *.nupkg* file directly, or by specifying a file system directory that contains the template. The template engine offers features that allow you to replace values, include and exclude files, and execute custom processing operations when your template is used.
 
@@ -17,9 +17,9 @@ To follow a walkthrough and create a template, see the [Create a custom template
 
 ### .NET default templates
 
-When you install the [.NET Core SDK](https://www.microsoft.com/net/download/core), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
+When you install the [.NET Core SDK](https://dotnet.microsoft.com/download), you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core apps (including [Angular](https://angular.io/) and [React](https://facebook.github.io/react/) projects), and configuration files. To list the built-in templates, run the `dotnet new` command with the `-l|--list` option:
 
-```console
+```dotnetcli
 dotnet new --list
 ```
 
@@ -165,7 +165,7 @@ Use the [dotnet new -i|--install](dotnet-new.md) command to install a package.
 
 Use the NuGet package identifier to install a template package.
 
-```console
+```dotnetcli
 dotnet new -i <NUGET_PACKAGE_ID>
 ```
 
@@ -173,7 +173,7 @@ dotnet new -i <NUGET_PACKAGE_ID>
 
 Provide the path to a *.nupkg* NuGet package file.
 
-```console
+```dotnetcli
 dotnet new -i <PATH_TO_NUPKG_FILE>
 ```
 
@@ -181,7 +181,7 @@ dotnet new -i <PATH_TO_NUPKG_FILE>
 
 Templates can be installed from a template folder, such as the *mytemplate1* folder from the example above. Specify the folder path of the *.template.config* folder. The path to the template directory does not need to be absolute. However, an absolute path is required to uninstall a template that is installed from a folder.
 
-```console
+```dotnetcli
 dotnet new -i <FILE_SYSTEM_DIRECTORY>
 ```
 
@@ -189,7 +189,7 @@ dotnet new -i <FILE_SYSTEM_DIRECTORY>
 
 The uninstall command, without any other parameters, will list all installed templates.
 
-```console
+```dotnetcli
 dotnet new -u
 ```
 
@@ -225,13 +225,13 @@ Use the [dotnet new -u|--uninstall](dotnet-new.md) command to uninstall a packag
 
 If the package was installed by either a NuGet feed or by a *.nupkg* file directly, provide the identifier.
 
-```console
+```dotnetcli
 dotnet new -u <NUGET_PACKAGE_ID>
 ```
 
 If the package was installed by specifying a path to the *.template.config* folder, use that **absolute** path to uninstall the package. You can see the absolute path of the template in the output provided by the `dotnet new -u` command. For more information, see the [Get a list of installed templates](#get-a-list-of-installed-templates) section above.
 
-```console
+```dotnetcli
 dotnet new -u <ABSOLUTE_FILE_SYSTEM_DIRECTORY>
 ```
 
@@ -239,7 +239,7 @@ dotnet new -u <ABSOLUTE_FILE_SYSTEM_DIRECTORY>
 
 After a template is installed, use the template by executing the `dotnet new <TEMPLATE>` command as you would with any other pre-installed template. You can also specify [options](dotnet-new.md#options) to the `dotnet new` command, including template-specific options you configured in the template settings. Supply the template's short name directly to the command:
 
-```console
+```dotnetcli
 dotnet new <TEMPLATE>
 ```
 

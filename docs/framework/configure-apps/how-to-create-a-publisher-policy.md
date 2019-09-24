@@ -47,24 +47,24 @@ Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create
 
 #### To create a publisher policy assembly
 
-1. Type the following command at the command prompt:
+Type the following command at the command prompt:
 
-    **al /link:** *publisherPolicyFile* **/out:** *publisherPolicyAssemblyFile* **/keyfile:** *keyPairFile* **/platform:** *processorArchitecture*
+**al /link:** *publisherPolicyFile* **/out:** *publisherPolicyAssemblyFile* **/keyfile:** *keyPairFile* **/platform:** *processorArchitecture*
 
-    In this command:
+In this command:
 
-    - The *publisherPolicyFile* argument is the name of the publisher policy file.
+- The *publisherPolicyFile* argument is the name of the publisher policy file.
 
-    - The *publisherPolicyAssemblyFile* argument is the name of the publisher policy assembly that results from this command. The assembly file name must follow the format:
+- The *publisherPolicyAssemblyFile* argument is the name of the publisher policy assembly that results from this command. The assembly file name must follow the format:
 
-        **policy.** *majorNumber* **.** *minorNumber* **.** *mainAssemblyName* **.dll**
+  **policy.** *majorNumber* **.** *minorNumber* **.** *mainAssemblyName* **.dll**
 
-    - The *keyPairFile* argument is the name of the file containing the key pair. You must sign the assembly and publisher policy assembly with the same key pair.
+- The *keyPairFile* argument is the name of the file containing the key pair. You must sign the assembly and publisher policy assembly with the same key pair.
 
-    - The *processorArchitecture* argument identifies the platform targeted by a processor-specific assembly.
+- The *processorArchitecture* argument identifies the platform targeted by a processor-specific assembly.
 
-      > [!NOTE]
-      > The ability to target a specific processor architecture is new in the .NET Framework version 2.0.
+  > [!NOTE]
+  > The ability to target a specific processor architecture is available starting with .NET Framework 2.0.
 
 The following command creates a publisher policy assembly called `policy.1.0.myAssembly` from a publisher policy file called `pub.config`, assigns a strong name to the assembly using the key pair in the `sgKey.snk` file, and specifies that the assembly targets the x86 processor architecture.
 
@@ -82,13 +82,13 @@ Another consequence is that the version 2.0 linker cannot be used to create a pu
 
 Use the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md) to add the publisher policy assembly to the global assembly cache.
 
-#### To add the publisher policy assembly to the global assembly cache
+### To add the publisher policy assembly to the global assembly cache
 
-1. Type the following command at the command prompt:
+Type the following command at the command prompt:
 
-    **gacutil /i**  *publisherPolicyAssemblyFile*
+**gacutil /i**  *publisherPolicyAssemblyFile*
 
-    The following command adds `policy.1.0.myAssembly.dll` to the global assembly cache.
+The following command adds `policy.1.0.myAssembly.dll` to the global assembly cache.
 
 ```console
 gacutil /i policy.1.0.myAssembly.dll
@@ -99,7 +99,7 @@ gacutil /i policy.1.0.myAssembly.dll
 
 ## See also
 
-- [Programming with Assemblies](../app-domains/programming-with-assemblies.md)
+- [Programming with Assemblies](../../standard/assembly/program.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps by using Configuration Files](index.md)
 - [Runtime Settings Schema](./file-schema/runtime/index.md)

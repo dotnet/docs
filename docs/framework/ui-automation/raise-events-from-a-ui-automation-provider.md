@@ -21,4 +21,4 @@ ms.assetid: 9fe2f01b-f7d8-49a8-a185-d4472b9976c0
   
 ## See also
 
-- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
+- [UI Automation Providers Overview](ui-automation-providers-overview.md)

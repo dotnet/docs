@@ -32,4 +32,4 @@ The schema, or structure, of a table is represented by columns and constraints. 
 ## See also
 
 - [DataTables](datatables.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

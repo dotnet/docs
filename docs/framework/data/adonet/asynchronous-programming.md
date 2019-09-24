@@ -84,7 +84,7 @@ The following methods were added in .NET Framework 4.5 to support asynchronous p
 
 - <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>
 
- Other asynchronous members were added to support [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md).
+ Other asynchronous members were added to support [SqlClient Streaming Support](sqlclient-streaming-support.md).
 
 > [!TIP]
 > The new asynchronous methods don't require `Asynchronous Processing=true` in the connection string.
@@ -823,4 +823,4 @@ class Program {
 
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)

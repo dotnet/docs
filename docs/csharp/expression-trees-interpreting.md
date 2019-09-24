@@ -413,6 +413,7 @@ form. In the section on [building expression trees](expression-trees-building.md
 you'll learn techniques to overcome these limitations.
 
 In this expression, you'll encounter nodes of all these types:
+
 1. Equal (binary expression)
 2. Multiply (binary expression)
 3. Conditional (the ? : expression)

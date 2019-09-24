@@ -55,7 +55,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
   
 ## See also
 
-- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)
-- [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)
+- [Programming Guide](programming-guide-linq-to-dataset.md)
+- [Querying DataSets](querying-datasets-linq-to-dataset.md)
 - [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [Getting Started with LINQ in Visual Basic](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

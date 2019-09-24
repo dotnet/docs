@@ -19,7 +19,7 @@ manager: jillfra
 
 Your custom controls will sometimes expose a collection as a property. This walkthrough demonstrates how to use the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> class to control how a collection is serialized at design time. Applying the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content> value to your collection property ensures that the property will be serialized.
 
-To copy the code in this topic as a single listing, see [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](/previous-versions/visualstudio/visual-studio-2013/ms171833(v=vs.120)).
+To copy the code in this topic as a single listing, see [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171833(v=vs.120)).
 
 ## Prerequisites
 
@@ -84,8 +84,8 @@ To test the serialization behavior of your control, you will place it on a form 
 
 5. Type several strings in the **String Collection Editor**. Separate them by pressing **Enter** at the end of each string. Click **OK** when you are finished entering strings.
 
-> [!NOTE]
-> The strings you typed appear in the <xref:System.Windows.Forms.TextBox> of the `SerializationDemoControl`.
+    > [!NOTE]
+    > The strings you typed appear in the <xref:System.Windows.Forms.TextBox> of the `SerializationDemoControl`.
 
 6. In **Solution Explorer**, click the **Show All Files** button.
 
@@ -123,11 +123,11 @@ To test the serialization behavior of your control, you will place it on a form 
 
 Once you know how to serialize a collection of standard types, consider integrating your custom controls more deeply into the design-time environment. The following topics describe how to enhance the design-time integration of your custom controls:
 
-- [Design-Time Architecture](/previous-versions/visualstudio/visual-studio-2013/c5z9s1h4(v=vs.120))
+- [Design-Time Architecture](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/c5z9s1h4(v=vs.120))
 
 - [Attributes in Windows Forms Controls](attributes-in-windows-forms-controls.md)
 
-- [Designer Serialization Overview](/previous-versions/visualstudio/visual-studio-2013/ms171834(v=vs.120))
+- [Designer Serialization Overview](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171834(v=vs.120))
 
 - [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md)
 

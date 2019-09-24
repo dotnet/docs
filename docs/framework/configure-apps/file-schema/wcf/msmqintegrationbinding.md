@@ -8,9 +8,12 @@ ms.assetid: edf277f3-e3bf-4ed8-9f55-83b5788430a7
 # \<msmqIntegrationBinding>
 Defines a binding that provides queuing support by routing messages through MSMQ.  
   
- \<system.ServiceModel>  
-\<bindings>  
-msmqIntegrationBinding  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<msmqIntegrationBinding>**  
   
 ## Syntax  
   

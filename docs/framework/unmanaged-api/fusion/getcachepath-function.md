@@ -34,7 +34,7 @@ HRESULT GetCachePath (
   
 ## Parameters  
  `dwCacheFlags`  
- [in] An [ASM_CACHE_FLAGS](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md) value that indicates the source of the cached assembly.  
+ [in] An [ASM_CACHE_FLAGS](asm-cache-flags-enumeration.md) value that indicates the source of the cached assembly.  
   
  `pwzCachePath`  
  [out] The returned pointer to the path.  
@@ -43,7 +43,7 @@ HRESULT GetCachePath (
  [in, out] The requested maximum length of `pwzCachePath`, and upon return, the actual length of `pwzCachePath`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -51,5 +51,5 @@ HRESULT GetCachePath (
   
 ## See also
 
-- [ASM_CACHE_FLAGS Enumeration](../../../../docs/framework/unmanaged-api/fusion/asm-cache-flags-enumeration.md)
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [ASM_CACHE_FLAGS Enumeration](asm-cache-flags-enumeration.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

@@ -11,7 +11,7 @@ ms.assetid: 0c4ec84d-53df-408f-8953-9bc437f56c28
 ---
 # How to: Compare Claims
 
-The Identity Model infrastructure in Windows Communication Foundation (WCF) is used to perform authorization checking. As such, a common task is to compare claims in the authorization context to the claims required to perform the requested action or access the requested resource. This topic describes how to compare claims, including built-in and custom claim types. For more information about the Identity Model infrastructure, see [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).
+The Identity Model infrastructure in Windows Communication Foundation (WCF) is used to perform authorization checking. As such, a common task is to compare claims in the authorization context to the claims required to perform the requested action or access the requested resource. This topic describes how to compare claims, including built-in and custom claim types. For more information about the Identity Model infrastructure, see [Managing Claims and Authorization with the Identity Model](../feature-details/managing-claims-and-authorization-with-the-identity-model.md).
 
 Claim comparison involves comparing the three parts of a claim (type, right, and resource) against the same parts in another claim to see if they are equal. See the following example.
 
@@ -68,5 +68,5 @@ The following example shows a comparison of custom claims where the claim resour
 
 ## See also
 
-- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
-- [How to: Create a Custom Claim](../../../../docs/framework/wcf/extending/how-to-create-a-custom-claim.md)
+- [Managing Claims and Authorization with the Identity Model](../feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- [How to: Create a Custom Claim](how-to-create-a-custom-claim.md)

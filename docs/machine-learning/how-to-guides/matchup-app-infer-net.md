@@ -18,13 +18,13 @@ Probabilistic programming allows you to create statistical models of real-world 
 
 - Local development environment setup
 
-  This how-to guide expects you to have a machine you can use for development. The .NET [Get Started in 10 minutes](https://www.microsoft.com/net/core) tutorial has instructions for setting up your local development environment on Mac, PC, or Linux.
+  This how-to guide expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on macOS, Windows, or Linux.
 
 ## Create your app
 
 1. Open a new command prompt and run the following commands:
 
-```console
+```dotnetcli
 dotnet new console -o myApp
 cd myApp
 ```
@@ -35,7 +35,7 @@ The `dotnet` command creates a `new` application of type `console`. The `-o` par
 
 To use Infer.NET, you need to install the `Microsoft.ML.Probabilistic.Compiler` package. In your command prompt, run the following command:
 
-```console
+```dotnetcli
 dotnet add package Microsoft.ML.Probabilistic.Compiler
 ```
 
@@ -126,7 +126,7 @@ namespace myApp
 
 In your command prompt, run the following command:
 
-```console
+```dotnetcli
 dotnet run
 ```
 

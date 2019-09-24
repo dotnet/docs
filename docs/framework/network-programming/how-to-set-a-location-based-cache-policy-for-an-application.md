@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 683bb88e-3411-4f46-9686-3411b6ba511c
 ---
 # How to: Set a Location-Based Cache Policy for an Application
-Location-based cache policies allow an application to explicitly define caching behavior based on the location of the requested resource. This topic demonstrates setting the cache policy programmatically. For information on setting the policy for an application using the configuration files, see [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+Location-based cache policies allow an application to explicitly define caching behavior based on the location of the requested resource. This topic demonstrates setting the cache policy programmatically. For information on setting the policy for an application using the configuration files, see [\<requestCaching> Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
 ### To set a location-based cache policy for an application  
   
@@ -149,8 +149,8 @@ Location-based cache policies allow an application to explicitly define caching 
   
 ## See also
 
-- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
-- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)
-- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)
-- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)
-- [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)
+- [Cache Management for Network Applications](cache-management-for-network-applications.md)
+- [Cache Policy](cache-policy.md)
+- [Location-Based Cache Policies](location-based-cache-policies.md)
+- [Time-Based Cache Policies](time-based-cache-policies.md)
+- [\<requestCaching> Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)

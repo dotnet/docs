@@ -9,6 +9,7 @@ ms.date: 04/02/2019
 # Data transformations
 
 Data transformations are used to:
+
 - prepare data for model training
 - apply an imported model in TensorFlow or ONNX format
 - post-process data after it has been passed through a model

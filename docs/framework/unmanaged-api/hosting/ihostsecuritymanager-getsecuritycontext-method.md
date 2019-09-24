@@ -23,7 +23,7 @@ Gets the requested [IHostSecurityContext](../../../../docs/framework/unmanaged-a
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT GetSecurityContext (  
     [in]  EContextType eContextType,   
     [out] IHostSecurityContext** ppSecurityContext  

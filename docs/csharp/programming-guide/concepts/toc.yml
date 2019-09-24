@@ -1,24 +1,6 @@
 - name: Programming Concepts
   href: index.md
   items:
-  - name: Assemblies
-    items:
-      - name: Friend Assemblies
-        items:
-        - name: "How to: Create Unsigned Friend Assemblies"
-          href: assemblies-gac/how-to-create-unsigned-friend-assemblies.md
-        - name: "How to: Create Signed Friend Assemblies"
-          href: assemblies-gac/how-to-create-signed-friend-assemblies.md
-      - name: "How to: Create and Use Assemblies Using the Command Line"
-        href: assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md
-      - name: "How to: Determine If a File Is an Assembly"
-        href: assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md
-      - name: "How to: Load and Unload Assemblies"
-        href: assemblies-gac/how-to-load-and-unload-assemblies.md
-      - name: "How to: Share an Assembly with Other Applications"
-        href: assemblies-gac/how-to-share-an-assembly-with-other-applications.md
-      - name: "Walkthrough: Embedding Types from Managed Assemblies in Visual Studio"
-        href: assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md
   - name: Asynchronous Programming with async and await
     href: async/
   - name: Attributes

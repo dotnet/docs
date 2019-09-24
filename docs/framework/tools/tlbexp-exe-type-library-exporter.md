@@ -14,13 +14,13 @@ ms.author: "ronpet"
 # Tlbexp.exe (Type Library Exporter)
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 tlbexp assemblyName [options]  
 ```  
   
@@ -58,24 +58,24 @@ tlbexp assemblyName [options]
   
  The entire assembly is converted at once. You cannot use Tlbexp.exe to generate type information for a subset of the types defined in an assembly.  
   
- You cannot use Tlbexp.exe to produce a type library from an assembly that was imported using the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md). Instead, you should refer to the original type library that was imported with Tlbimp.exe. You can export a type library from an assembly that references assemblies that were imported using Tlbimp.exe. See the examples section below.  
+ You cannot use Tlbexp.exe to produce a type library from an assembly that was imported using the [Type Library Importer (Tlbimp.exe)](tlbimp-exe-type-library-importer.md). Instead, you should refer to the original type library that was imported with Tlbimp.exe. You can export a type library from an assembly that references assemblies that were imported using Tlbimp.exe. See the examples section below.  
   
  Tlbexp.exe places generated type libraries in the current working directory or the directory specified for the output file. A single assembly might cause several type libraries to be generated.  
   
- Tlbexp.exe generates a type library but does not register it. This is in contrast to the [Assembly Registration tool (Regasm.exe)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md), which both generates and registers a type library. To generate and register a type library with COM, use Regasm.exe.  
+ Tlbexp.exe generates a type library but does not register it. This is in contrast to the [Assembly Registration tool (Regasm.exe)](regasm-exe-assembly-registration-tool.md), which both generates and registers a type library. To generate and register a type library with COM, use Regasm.exe.  
   
  If you do not specify either the `/win32` or `/win64` option, Tlbexp.exe generates a 32-bit or 64-bit type library that corresponds to the type of computer on which you are performing the compilation (32-bit or 64-bit computer). For cross-compilation purposes, you can use the `/win64` option on a 32-bit computer to generate a 64-bit type library and you can use the `/win32` option on a 64-bit computer to generate a 32-bit type library. In 32-bit type libraries, the <xref:System.Runtime.InteropServices.ComTypes.SYSKIND> value is set to <xref:System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_WIN32>. In 64-bit type libraries, the <xref:System.Runtime.InteropServices.ComTypes.SYSKIND> value is set to <xref:System.Runtime.InteropServices.ComTypes.SYSKIND.SYS_WIN64>. All data type transformations (for example, pointer-sized data types such as `IntPtr` and `UIntPtr`) are converted appropriately.  
   
  If you use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to specify a <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArraySubType> value of `VT_UNKOWN` or `VT_DISPATCH`, Tlbexp.exe ignores any subsequent use of the <xref:System.Runtime.InteropServices.MarshalAsAttribute.SafeArrayUserDefinedSubType> field. For example, given the following signatures:  
   
-```  
+```csharp
 [return:MarshalAs(UnmanagedType.SafeArray, SafeArraySubType=VarEnum.VT_UNKNOWN, SafeArrayUserDefinedSubType=typeof(ConsoleKeyInfo))] public Array StructUnkSafe(){return null;}  
 [return:MarshalAs(UnmanagedType.SafeArray, SafeArraySubType=VarEnum.VT_DISPATCH, SafeArrayUserDefinedSubType=typeof(ConsoleKeyInfo))] public Array StructDispSafe(){return null;}  
 ```  
   
  the following type library is generated:  
   
-```  
+```cpp 
 [id(0x60020004)]  
 HRESULT StructUnkSafe([out, retval] SAFEARRAY(IUnknown*)* pRetVal);  
 [id(0x60020005)]  
@@ -93,13 +93,13 @@ HRESULT StructDispSafe([out, retval] SAFEARRAY(IDispatch*)* pRetVal);
 ## Examples  
  The following command generates a type library with the same name as the assembly found in `myTest.dll`.  
   
-```  
+```console  
 tlbexp myTest.dll  
 ```  
   
  The following command generates a type library with the name `clipper.tlb`.  
   
-```  
+```console  
 tlbexp myTest.dll /out:clipper.tlb  
 ```  
   
@@ -107,27 +107,27 @@ tlbexp myTest.dll /out:clipper.tlb
   
  First use Tlbimp.exe to import the type library `myLib.tlb` and save it as `myLib.dll`.  
   
-```  
+```console  
 tlbimp myLib.tlb /out:myLib.dll  
 ```  
   
  The following command uses the C# compiler to compile the `Sample.dll,` which references `myLib.dll` created in the previous example.  
   
-```  
+```console  
 CSC Sample.cs /reference:myLib.dll /out:Sample.dll  
 ```  
   
  The following command generates a type library for `Sample.dll` that references `myLib.dll`.  
   
-```  
+```console  
 tlbexp Sample.dll  
 ```  
   
 ## See also
 
 - <xref:System.Runtime.InteropServices.TypeLibExporterFlags>
-- [Tools](../../../docs/framework/tools/index.md)
-- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)
+- [Tools](index.md)
+- [Regasm.exe (Assembly Registration Tool)](regasm-exe-assembly-registration-tool.md)
 - [Assembly to Type Library Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/xk1120c3(v=vs.100))
-- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tlbimp.exe (Type Library Importer)](tlbimp-exe-type-library-importer.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

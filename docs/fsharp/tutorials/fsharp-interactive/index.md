@@ -80,7 +80,7 @@ printfn "%A" (MyAssembly.myFunction 10 40)
 
 The output is as follows:
 
-```
+```console
 Command line arguments: 
 file1.fsx
 test

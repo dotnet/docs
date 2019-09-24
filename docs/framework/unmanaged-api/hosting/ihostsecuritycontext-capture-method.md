@@ -23,7 +23,7 @@ Gets a clone of the [IHostSecurityContext](../../../../docs/framework/unmanaged-
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT Capture (  
     [out] IHostSecurityContext** ppClonedContext  
 );  

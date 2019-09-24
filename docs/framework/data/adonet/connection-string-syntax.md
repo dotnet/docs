@@ -24,7 +24,7 @@ Each .NET Framework data provider has a `Connection` object that inherits from <
   
 - <xref:System.Data.OracleClient.OracleConnectionStringBuilder>  
   
- The connection string builders allow you to construct syntactically valid connection strings at run time, so you do not have to manually concatenate connection string values in your code. For more information, see [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md).  
+ The connection string builders allow you to construct syntactically valid connection strings at run time, so you do not have to manually concatenate connection string values in your code. For more information, see [Connection String Builders](connection-string-builders.md).  
 
 ## Windows Authentication  
  We recommend using Windows Authentication (sometimes referred to as *integrated security*) to connect to data sources that support it. The syntax employed in the connection string varies by provider. The following table shows the Windows Authentication syntax used with the .NET Framework data providers.  
@@ -84,7 +84,7 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
 ## Connecting and Attaching to SQL Server Express User Instances  
  User instances are a feature in SQL Server Express. They allow a user running on a least-privileged local Windows account to attach and run a SQL Server database without requiring administrative privileges. A user instance executes with the user's Windows credentials, not as a service.  
   
- For more information on working with user instances, see [SQL Server Express User Instances](../../../../docs/framework/data/adonet/sql/sql-server-express-user-instances.md).  
+ For more information on working with user instances, see [SQL Server Express User Instances](./sql/sql-server-express-user-instances.md).  
   
 ## Using TrustServerCertificate  
  The `TrustServerCertificate` keyword is valid only when connecting to a SQL Server instance with a valid certificate. When `TrustServerCertificate` is set to `true`, the transport layer will use SSL to encrypt the channel and bypass walking the certificate chain to validate trust.  
@@ -190,6 +190,6 @@ Data Source=Oracle9i;User ID=*****;Password=*****;
   
 ## See also
 
-- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
-- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connection Strings](connection-strings.md)
+- [Connecting to a Data Source](connecting-to-a-data-source.md)
+- [ADO.NET Overview](ado-net-overview.md)

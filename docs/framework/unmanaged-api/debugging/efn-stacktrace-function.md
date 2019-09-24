@@ -71,7 +71,7 @@ HRESULT CALLBACK _EFN_StackTrace(
   
 - `wszTextOut` is written in the following format:  
   
-    ```  
+    ```output  
     "<ModuleName>!<Function Name>[+<offset in hex>]  
     ...  
     (TRANSITION)  
@@ -84,7 +84,7 @@ HRESULT CALLBACK _EFN_StackTrace(
   
 - The `Flags` parameter is either 0 or SOS_STACKTRACE_SHOWADDRESSES to see EBP and ESP in front of each `module!functionname` line. By default, it is 0.  
   
-    ```  
+    ```cpp  
     #define SOS_STACKTRACE_SHOWADDRESSES   0x00000001  
     ```  
   

@@ -19,7 +19,7 @@ The .NET Client Profile is a subset of the .NET Framework, which was provided wi
   
  However, if you are targeting the .NET Framework 4 or 3.5 and want to learn more about the Client Profile and when to use it, see [.NET Framework Client Profile](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc656912%28v=vs.100%29) in the .NET Framework 4 documentation.  
   
- When you install the .NET Framework 4.5, the .NET Framework 4 Client Profile is updated to the full version of the .NET Framework. For information about installing the .NET Framework 4.5, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
+ When you install the .NET Framework 4.5, the .NET Framework 4 Client Profile is updated to the full version of the .NET Framework. For information about installing the .NET Framework 4.5, see [Install the .NET Framework for developers](../install/guide-for-developers.md).  
   
 ## See also
 

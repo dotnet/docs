@@ -53,6 +53,7 @@ The data is sent securely to Microsoft servers using [Azure Application Insights
 
 ### Data points not collected
 The telemetry feature *doesn't* collect:
+
 - personal data, such as usernames
 - dataset filenames
 - data from dataset files
@@ -68,6 +69,7 @@ The Microsoft distribution of ML.NET CLI is licensed with the [Microsoft Softwar
 When you first run a [ML.NET CLI command](../reference/ml-net-cli-reference.md) such as `mlnet auto-train`, the ML.NET CLI tool displays disclosure text that tells you how to opt out of telemetry. Text may vary slightly depending on the version of the CLI you're running.
 
 ## See also
+
 - [ML.NET CLI reference](../reference/ml-net-cli-reference.md)
 - [Microsoft Software License Terms: Microsoft .NET Library](https://aka.ms/dotnet-core-eula)
 - [Privacy at Microsoft](https://www.microsoft.com/trustcenter/privacy/)

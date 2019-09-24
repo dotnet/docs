@@ -51,6 +51,7 @@ The .NET Core runtime host will output useful trace messages when certain enviro
 ## Managed assembly default probing
 
 When probing to locate a managed assembly, the <xref:System.Runtime.Loader.AssemblyLoadContext.Default%2A?displayProperty=nameWithType> looks in order at:
+
 - Files matching the <xref:System.Reflection.AssemblyName.Name?displayProperty=nameWithType> in `TRUSTED_PLATFORM_ASSEMBLIES` (after removing file extensions).
 - Native image assembly files in `APP_NI_PATHS` with common file extensions.
 - Assembly files in `APP_PATHS` with common file extensions.

@@ -25,7 +25,7 @@ For Windows Forms apps that target previous versions of the .NET Framework, such
 
 ## Mitigation
 
-If this change is undesirable, apps that target the .NET Framework 4.6.1 or a later version can opt out of it by adding the following configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:
+If this change is undesirable, apps that target the .NET Framework 4.6.1 or a later version can opt out of it by adding the following configuration setting to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:
 
 ```xml
 <runtime>
@@ -33,7 +33,7 @@ If this change is undesirable, apps that target the .NET Framework 4.6.1 or a la
 </runtime>
 ```
 
-In addition, apps that target previous versions of the .NET Framework but are running under the .NET Framework 4.6.1 or a later version can opt in to this behavior by adding the following configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:
+In addition, apps that target previous versions of the .NET Framework but are running under the .NET Framework 4.6.1 or a later version can opt in to this behavior by adding the following configuration setting to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:
 
 ```xml
 <runtime>
@@ -43,4 +43,4 @@ In addition, apps that target previous versions of the .NET Framework but are ru
 
 ## See also
 
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-1.md)
+- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-1.md)

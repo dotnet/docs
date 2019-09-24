@@ -187,8 +187,8 @@ Now that you've learned the basics of Table storage, follow these links
 to learn about more complex storage tasks and the Azure Cosmos DB Table API.
 
 - [Introduction to Azure Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction)
-- [Storage Client Library for .NET reference](https://docs.microsoft.com/dotnet/api/overview/azure/storage?view=azure-dotnet)
+- [Storage Client Library for .NET reference](https://docs.microsoft.com/dotnet/api/overview/azure/storage)
 - [Azure Storage Type Provider](https://fsprojects.github.io/AzureStorageTypeProvider/)
-- [Azure Storage Team Blog](https://blogs.msdn.com/b/windowsazurestorage/)
+- [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Configuring Connection Strings](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 - [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/)

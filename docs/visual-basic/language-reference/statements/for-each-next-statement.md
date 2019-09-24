@@ -152,7 +152,7 @@ However, this blocking of modification isn't determined by Visual Basic, but rat
 Sub LightBlueBackground(thisForm As System.Windows.Forms.Form)
     For Each thisControl In thisForm.Controls
         thisControl.BackColor = System.Drawing.Color.LightBlue
-    Next
+    Next thisControl
 End Sub
 ```
 

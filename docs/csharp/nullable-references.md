@@ -29,7 +29,7 @@ string? name;
 
 Any variable where the `?` is not appended to the type name is a **non-nullable reference type**. That includes all reference type variables in existing code when you have enabled this feature.
 
-The compiler uses static analysis to determine if a nullable reference is known to be non-null. The compiler warns you if you dereference a nullable reference when it may be null. You can override this behavior by using the **null-forgiving operator** (`!`) following a variable name. For example, if you know the `name` variable isn't null but the compiler issues a warning, you can write the following code to override the compiler's analysis:
+The compiler uses static analysis to determine if a nullable reference is known to be non-null. The compiler warns you if you dereference a nullable reference when it may be null. You can override this behavior by using the **null-forgiving operator** `!` following a variable name. For example, if you know the `name` variable isn't null but the compiler issues a warning, you can write the following code to override the compiler's analysis:
 
 ```csharp
 name!.Length;
@@ -95,7 +95,7 @@ The compiler uses the following rules in an enabled nullable annotation context:
 - Any nullable reference type (noted by `?` after the type in the variable declaration) may be null. Static analysis determines if the value is known to be non-null when it is dereferenced. If not, the compiler warns you.
 - You can use the null-forgiving operator to declare that a nullable reference isn't null.
 
-In an enabled nullable annotation context, the `?` character appended to a reference type declares a **nullable reference type**. The **null forgiveness operator** (`!`) may be appended to an expression to declare that the expression isn't null.
+In an enabled nullable annotation context, the `?` character appended to a reference type declares a **nullable reference type**. The **null-forgiving operator** `!` may be appended to an expression to declare that the expression isn't null.
 
 ## Nullable warning context
 

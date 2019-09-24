@@ -2,22 +2,34 @@
 title: Analyze dependencies to port code to .NET Core
 description: Learn how to analyze external dependencies in order to port your project from .NET Framework to .NET Core.
 author: cartermp
-ms.date: 12/07/2018
+ms.date: 09/23/2019
 ms.custom: seodec18
 ---
 # Analyze your dependencies to port code to .NET Core
 
-To port your code to .NET Core or .NET Standard, you must understand your dependencies. External dependencies are the [NuGet packages](#analyze-referenced-nuget-packages-in-your-projects) or [DLLs](#analyze-dependencies-that-arent-nuget-packages) you reference in your project, but that you don't build. Evaluate each dependency and develop a contingency plan for the ones that aren't compatible with .NET Core. Here's how to determine if a dependency is compatible with .NET Core.
+To port your code to .NET Core or .NET Standard, you must understand your dependencies. External dependencies are the [NuGet packages](#analyze-referenced-nuget-packages-in-your-projects) or [DLLs](#analyze-dependencies-that-arent-nuget-packages) you reference in your project, but that you don't build yourself.
 
-## Analyze referenced NuGet packages in your projects
+## Migrate your packages to `PackageReference`
 
-If you reference NuGet packages in your project, you need to verify if they're compatible with .NET Core.
-There are two ways to accomplish that:
+.NET Core uses [PackageReference](/nuget/consume-packages/package-references-in-project-files) to specify package dependencies. If you are using [packages.config](/nuget/reference/packages-config) to specify your packages, you will need to convert over to `PackageReference` because `packages.config` is unsupported for .NET Core.
 
-* [Using the NuGet Package Explorer app](#analyze-nuget-packages-using-nuget-package-explorer)
-* [Using the nuget.org site](#analyze-nuget-packages-using-nugetorg)
+You can learn how to migrate at [Migrate from packages.config to PackageReference](/nuget/reference/migrate-packages-config-to-package-reference).
 
-After analyzing the packages, if they're not compatible with .NET Core and only target .NET Framework, you can check if the [.NET Framework compatibility mode](#net-framework-compatibility-mode) can help with your porting process.
+## Upgrade your NuGet packages after converting them
+
+After converting to `PackageReference`, you need to verify if your packages are compatible with .NET Core.
+
+First, upgrade your packages to the latest version that you can. It's likely that newer versions of your package dependencies are already compatible with .NET Core.
+
+## Analyze your package dependencies
+
+If you haven't already verified that your converted and upgrade package dependencies work on .NET Core, here's how you can do that.
+
+### Analyze NuGet packages using nuget.org
+
+You can see the TFMs that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
+
+Although using the site is an easier method to verify the compatibility, **Dependencies** information is not available on the site for all packages.
 
 ### Analyze NuGet packages using NuGet Package Explorer
 
@@ -31,39 +43,13 @@ The easiest way to inspect NuGet Package folders is to use the [NuGet Package Ex
 4. Select the package name from the search results and click **open**.
 5. Expand the *lib* folder on the right-hand side and look at folder names.
 
-Look for a folder with any of the following names:
-
-```
-netstandard1.0
-netstandard1.1
-netstandard1.2
-netstandard1.3
-netstandard1.4
-netstandard1.5
-netstandard1.6
-netstandard2.0
-netcoreapp1.0
-netcoreapp1.1
-netcoreapp2.0
-netcoreapp2.1
-netcoreapp2.2
-portable-net45-win8
-portable-win8-wpa8
-portable-net451-win81
-portable-net45-win8-wpa8-wpa81
-```
+Look for a folder with any of the following names: `netstandardX.Y` or `netcoreappX.Y`.
 
 These values are the [Target Framework Monikers (TFMs)](../../standard/frameworks.md) that map to versions of the [.NET Standard](../../standard/net-standard.md), .NET Core, and traditional Portable Class Library (PCL) profiles that are compatible with .NET Core.
 
 > [!IMPORTANT]
 > When looking at the TFMs that a package supports, note that `netcoreapp*`, while compatible, is for .NET Core projects only and not for .NET Standard projects.
 > A library that only targets `netcoreapp*` and not `netstandard*` can only be consumed by other .NET Core apps.
-
-### Analyze NuGet packages using nuget.org
-
-Alternatively, you can see the TFMs that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
-
-Although using the site is an easier method to verify the compatibility, **Dependencies** information is not available on the site for all packages.
 
 ### .NET Framework compatibility mode
 
@@ -86,12 +72,6 @@ To suppress the warning by editing the project file, find the `PackageReference`
 ```
 
 For more information on how to suppress compiler warnings in Visual Studio, see [Suppressing warnings for NuGet packages](/visualstudio/ide/how-to-suppress-compiler-warnings#suppress-warnings-for-nuget-packages).
-
-## Port your packages to `PackageReference`
-
-.NET Core uses [PackageReference](/nuget/consume-packages/package-references-in-project-files) to specify package dependencies. If you are using [packages.config](/nuget/reference/packages-config) to specify your packages, you will need to convert over to `PackageReference`.
-
-You can learn more at [Migrate from packages.config to PackageReference](/nuget/reference/migrate-packages-config-to-package-reference).
 
 ## What to do when your NuGet package dependency doesn't run on .NET Core
 

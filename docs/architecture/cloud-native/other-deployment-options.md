@@ -42,4 +42,4 @@ Azure Container Instances offers the fastest, simplest way to run a container in
 
 >[!div class="step-by-step"]
 >[Previous](scale-containers-serverless.md)
->[Next](communication-patterns.md) <!-- Next Chapter -->
+>[Next](communication-patterns.md)

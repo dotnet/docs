@@ -17,7 +17,7 @@ This article first discusses concepts fundamental to WPF data binding and then c
 
 [!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
 
-## What is data binding
+## What is data binding?
 
 Data binding is the process that establishes a connection between the application UI and the data it displays. If the binding has the correct settings and the data provides the proper notifications, when the data changes its value, the elements that are bound to the data reflect changes automatically. Data binding can also mean that if an outer representation of the data in an element changes, then the underlying data can be automatically updated to reflect the change. For example, if the user edits the value in a `TextBox` element, the underlying data value is automatically updated to reflect that change.
 
@@ -190,7 +190,7 @@ However, what if instead of having a property of type string your binding source
 [!code-csharp[CodeOnlyBinding](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/ColorBrushConverter.cs#ColorBrushConverter)]
 [!code-vb[CodeOnlyBinding](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/vb/ColorBrushConverter.vb#ColorBrushConverter)]
 
-The <xref:System.Windows.Data.IValueConverter> reference page provides more information.
+See <xref:System.Windows.Data.IValueConverter> for more information.
 
 Now the custom converter is used instead of default conversion, and our diagram looks like this:
 
@@ -198,19 +198,19 @@ Now the custom converter is used instead of default conversion, and our diagram 
 
 To reiterate, default conversions may be available because of type converters that are present in the type being bound to. This behavior will depend on which type converters are available in the target. If in doubt, create your own converter.
 
-Following are some typical scenarios where it makes sense to implement a data converter:
+The following are some typical scenarios where it makes sense to implement a data converter:
 
-- Your data should be displayed differently, depending on culture. For instance, you might want to implement a currency converter or a calendar date/time converter based on the values or standards used in a particular culture.
+- Your data should be displayed differently, depending on culture. For instance, you might want to implement a currency converter or a calendar date/time converter based on the conventions used in a particular culture.
 
 - The data being used is not necessarily intended to change the text value of a property, but is instead intended to change some other value, such as the source for an image, or the color or style of the display text. Converters can be used in this instance by converting the binding of a property that might not seem to be appropriate, such as binding a text field to the Background property of a table cell.
 
-- More than one control or to multiple properties of controls are bound to the same data. In this case, the primary binding might just display the text, whereas other bindings handle specific display issues but still use the same binding as source information.
+- More than one control or multiple properties of controls are bound to the same data. In this case, the primary binding might just display the text, whereas other bindings handle specific display issues but still use the same binding as source information.
 
-- So far we have not yet discussed <xref:System.Windows.Data.MultiBinding>, where a target property has a collection of bindings. For <xref:System.Windows.Data.MultiBinding>, you use a custom <xref:System.Windows.Data.IMultiValueConverter> to produce a final value from the values of the bindings. For example, color may be computed from red, blue, and green values, which can be values from the same or different binding source objects. See the <xref:System.Windows.Data.MultiBinding> class page for examples and information.
+- A target property has a collection of bindings, which is termed <xref:System.Windows.Data.MultiBinding>. For <xref:System.Windows.Data.MultiBinding>, you use a custom <xref:System.Windows.Data.IMultiValueConverter> to produce a final value from the values of the bindings. For example, color may be computed from red, blue, and green values, which can be values from the same or different binding source objects. See  <xref:System.Windows.Data.MultiBinding> for examples and information.
 
 ## Binding to collections
 
-A binding source object can be treated either as a single object of which the properties contain data or as a data collection of polymorphic objects that are often grouped together (such as the result of a query to a database). So far we've only discussed binding to single objects, however, binding to a data collection is a common scenario. For example, a common scenario is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a data collection, such as in the application shown in the [What Is Data Binding](#what-is-data-binding) section.
+A binding source object can be treated either as a single object whose properties contain data or as a data collection of polymorphic objects that are often grouped together (such as the result of a query to a database). So far we've only discussed binding to single objects. However, binding to a data collection is a common scenario. For example, a common scenario is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a data collection, such as in the application shown in the [What Is Data Binding](#what-is-data-binding) section.
 
 Fortunately, our basic diagram still applies. If you are binding an <xref:System.Windows.Controls.ItemsControl> to a collection, the diagram looks like this:
 
@@ -224,13 +224,13 @@ You can enumerate over any collection that implements the <xref:System.Collectio
 
 WPF provides the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which is a built-in implementation of a data collection that exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. To fully support transferring data values from source objects to targets, each object in your collection that supports bindable properties must also implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Binding Sources Overview](../../framework/wpf/data/binding-sources-overview.md).
 
-Before implementing your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others. If you have an advanced scenario and want to implement your own collection, consider using <xref:System.Collections.IList>, which provides a non-generic collection of objects that can be individually accessed by index and thus the best performance.
+Before implementing your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others. If you have an advanced scenario and want to implement your own collection, consider using <xref:System.Collections.IList`1>, which provides a non-generic collection of objects that can be individually accessed by index and thus the best performance.
 
 ### Collection views
 
 Once your <xref:System.Windows.Controls.ItemsControl> is bound to a data collection, you may want to sort, filter, or group the data. To do that, you use collection views, which are classes that implement the <xref:System.ComponentModel.ICollectionView> interface.
 
-#### What Are collection views
+#### What Are collection views?
 
 A collection view is a layer on top of a binding source collection that allows you to navigate and display the source collection based on sort, filter, and group queries, without having to change the underlying source collection itself. A collection view also maintains a pointer to the current item in the collection. If the source collection implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface, the changes raised by the <xref:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged> event are propagated to the views.
 
@@ -264,7 +264,7 @@ To get the default view, you use the <xref:System.Windows.Data.CollectionViewSou
 
 #### Collection views with ADO.NET DataTables
 
-To improve performance, collection views for ADO.NET <xref:System.Data.DataTable> or <xref:System.Data.DataView> objects delegate sorting and filtering to the <xref:System.Data.DataView>. Which causes sorting and filtering to be shared across all collection views of the data source. To enable each collection view to sort and filter independently, initialize each collection view with its own <xref:System.Data.DataView> object.
+To improve performance, collection views for ADO.NET <xref:System.Data.DataTable> or <xref:System.Data.DataView> objects delegate sorting and filtering to the <xref:System.Data.DataView>, which causes sorting and filtering to be shared across all collection views of the data source. To enable each collection view to sort and filter independently, initialize each collection view with its own <xref:System.Data.DataView> object.
 
 #### Sorting
 
@@ -277,7 +277,7 @@ The following example shows the sorting logic of the "Sort by category and date"
 
 #### Filtering
 
-Views can also apply a filter to a collection. Meaning, that although an item might exist in the collection, this particular view is intended to show only a certain subset of the full collection. You might filter on a condition in the data. For instance, as is done by the application in the [What Is Data Binding](#what-is-data-binding) section, the "Show only bargains" <xref:System.Windows.Controls.CheckBox> contains logic to filter out items that cost $25 or more. The following code is executed to set *ShowOnlyBargainsFilter* as the <xref:System.Windows.Data.CollectionViewSource.Filter> event handler when that <xref:System.Windows.Controls.CheckBox> is selected:
+Views can also apply a filter to a collection, so that the view shows only a certain subset of the full collection. You might filter on a condition in the data. For instance, as is done by the application in the [What Is Data Binding](#what-is-data-binding) section, the "Show only bargains" <xref:System.Windows.Controls.CheckBox> contains logic to filter out items that cost $25 or more. The following code is executed to set *ShowOnlyBargainsFilter* as the <xref:System.Windows.Data.CollectionViewSource.Filter> event handler when that <xref:System.Windows.Controls.CheckBox> is selected:
 
 [!code-csharp[ListingViewFilter](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/CollectionView.xaml.cs#ListingViewFilter)]
 [!code-vb[ListingViewFilter](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/vb/CollectionView.xaml.vb#ListingViewFilter)]
@@ -291,7 +291,7 @@ If you are using one of the <xref:System.Windows.Data.CollectionView> classes di
 
 #### Grouping
 
-Except for the internal class that views an <xref:System.Collections.IEnumerable> collection, all collection views support the functionality of grouping, which allows the user to partition the collection in the collection view into logical groups. The groups can be explicit, where the user supplies a list of groups, or implicit, where the groups are generated dynamically depending on the data.
+Except for the internal class that views an <xref:System.Collections.IEnumerable> collection, all collection views support *grouping*, which allows the user to partition the collection in the collection view into logical groups. The groups can be explicit, where the user supplies a list of groups, or implicit, where the groups are generated dynamically depending on the data.
 
 The following example shows the logic of the "Group by category" <xref:System.Windows.Controls.CheckBox>:
 
@@ -336,11 +336,11 @@ You may have noticed that the above example uses a template. In fact, the data w
 
 ## Data templating
 
-Without the use of data templates, our application UI in the [What Is Data Binding](#what-is-data-binding) section would look like the following image:
+Without the use of data templates, our application UI in the [What Is Data Binding](#what-is-data-binding) section would look like the following:
 
 ![Data Binding Demo without Data Templates](./media/data-binding-overview/demo-no-template.png)
 
-As shown in the example in the previous section, both the <xref:System.Windows.Controls.ListBox> control and the <xref:System.Windows.Controls.ContentControl> are bound to the entire collection object (or more specifically, the view over the collection object) of *AuctionItem*s. Without specific instructions of how to display the data collection, the <xref:System.Windows.Controls.ListBox> is displaying a string representation of each object in the underlying collection and the <xref:System.Windows.Controls.ContentControl> is displaying a string representation of the object it is bound to.
+As shown in the example in the previous section, both the <xref:System.Windows.Controls.ListBox> control and the <xref:System.Windows.Controls.ContentControl> are bound to the entire collection object (or more specifically, the view over the collection object) of *AuctionItem*s. Without specific instructions of how to display the data collection, the <xref:System.Windows.Controls.ListBox> displays the string representation of each object in the underlying collection, and the <xref:System.Windows.Controls.ContentControl> displays the string representation of the object it is bound to.
 
 To solve that problem, the application defines <xref:System.Windows.DataTemplate?text=DataTemplates>. As shown in the example in the previous section, the <xref:System.Windows.Controls.ContentControl> explicitly uses the *detailsProductListingTemplate* data template. The <xref:System.Windows.Controls.ListBox> control implicitly uses the following data template when displaying the *AuctionItem* objects in the collection:
 
@@ -352,7 +352,7 @@ For more information about data templates, see the [Data Templating Overview](..
 
 ## Data validation
 
-Most applications that take user input need to have validation logic to ensure that the user has entered the expected information. The validation checks can be based on type, range, format, or other application-specific requirements. This section discusses how data validation works in the WPF.
+Most applications that take user input need to have validation logic to ensure that the user has entered the expected information. The validation checks can be based on type, range, format, or other application-specific requirements. This section discusses how data validation works in WPF.
 
 ### Associating validation rules with a binding
 
@@ -360,7 +360,7 @@ The WPF data binding model allows you to associate <xref:System.Windows.Data.Bin
 
 [!code-xaml[TextboxStartPrice](../../../samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/DataValidation.xaml#TextboxStartPrice)]
 
-A <xref:System.Windows.Controls.ValidationRule> object checks whether the value of a property is valid. WPF has the following two types of built-in <xref:System.Windows.Controls.ValidationRule> objects:
+A <xref:System.Windows.Controls.ValidationRule> object checks whether the value of a property is valid. WPF has two types of built-in <xref:System.Windows.Controls.ValidationRule> objects:
 
 - A <xref:System.Windows.Controls.ExceptionValidationRule> checks for exceptions thrown during the update of the binding source property. In the previous example, `StartPrice` is of type integer. When the user enters a value that cannot be converted to an integer, an exception is thrown, causing the binding to be marked as invalid. An alternative syntax to setting the <xref:System.Windows.Controls.ExceptionValidationRule> explicitly is to set the <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> property to `true` on your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object.
 

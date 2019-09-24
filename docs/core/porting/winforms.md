@@ -45,7 +45,7 @@ When porting a .NET Framework Windows Forms application, there are a few things 
 
 01. You're using a different version of Windows Forms.
 
-    When .NET Core 3.0 Preview 1 was released, Windows Forms went open-source on GitHub. The code for .NET Core Windows Forms is a fork of the .NET Framework Windows Forms code base. It's possible some differences exist and your app won't port.
+    When .NET Core 3.0 Preview 1 was released, Windows Forms went open source on GitHub. The code for .NET Core Windows Forms is a fork of the .NET Framework Windows Forms codebase. It's possible some differences exist and your app won't port.
 
 01. The [Windows Compatibility Pack][compat-pack] may help you migrate.
 

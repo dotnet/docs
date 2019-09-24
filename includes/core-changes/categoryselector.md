@@ -1,4 +1,5 @@
 > [!div class="op_single_selector"]
+>
 > - [CoreFx](~/docs/core/compatibility/corefx.md)
 > - [Cryptography](~/docs/core/compatibility/cryptography.md)
 > - [Globalization](~/docs/core/compatibility/globalization.md)

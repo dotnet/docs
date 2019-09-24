@@ -58,9 +58,9 @@ Any of these options will allow you to create various types of .NET Core applica
 
 ### Step 2: Publish your app
 
-You can publish your app in one of two configurations - as a [Framework Dependent Deployment (FDD)](publish.md#Framework-Dependent-Deployment-FDD) or as a [Self-Contained Deployment (SCD)](publish.md#Self-contained-deployment-SCD).
+You can publish your app as a [Framework Dependent Deployment (FDD)](publish.md#Framework-Dependent-Deployment-FDD) which will exclude .NET Core runtime assembly dependencies, or a [Self-Contained Deployment (SCD)](publish.md#Self-contained-deployment-SCD) which will include the .NET Core runtime assembly dependencies.
 
-For both of the above configurations, you can publish the app either as a set of loose assemblies for either `xcopy` or package up for deployment. Alternatively, you can publish your app as a single file executable.
+For both options, you can have the publish action produce a set of loose assemblies, or produce as a single file executable for a total of 4 possible configurations.
 
 More information about each of these configurations can be found in the document on how to [Publish your app](publish.md).
 
@@ -75,7 +75,9 @@ If you prefer to package your app with a more professional installer experience 
 
 You can package your app using one of the deployment technologies built into Visual Studio (MSIX and MSI), or use a third-party installer of your choice.
 
-This document on [.NET Core Packaging](packaging.md) covers packaging your app as either an MSIX or MSI in further detail. You may also want to review the guide on [Packaging a desktop app using third party installers](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-third-party-installer). 
+This document on [Packaging your Desktop Application](desktop-packaging.md) covers packaging your app as either an MSIX or MSI in further detail. You may also want to review the guide on [Packaging a desktop app using third party installers](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-third-party-installer). 
+
+In addition to the packaging built into Visual Studio, you can also package your app using a variety of other third-party deployment choices such as using [Docker](https://hub.docker.com/), creating Linux packages - [.rpm](https://docs.fedoraproject.org/en-US/quick-docs/creating-rpm-packages/) or [.deb](https://www.linux.com/news/make-your-own-packages-debian-based-systems/), deploying your app through the [Snap Store](https://snapcraft.io/store), etc.
 
 
 <br/>

@@ -17,7 +17,7 @@ You can create various types of deployments for .NET Core applications:
   As the name implies, framework-dependent deployment (FDD) relies on the presence of a shared system-wide version of .NET Core on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain .dll files that can be launched by using the dotnet utility from the command line. For example, `dotnet app.dll` runs an application named app.
 
 - **Self-contained deployment (SCD)**  
-  Unlike Framework Dependent Deployment (FDD), a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable (such as app.exe on Windows platforms for an application named app), which is a renamed version of the platform-specific .NET Core host, and a .dll file (such as app.dll), which is the actual application.
+  Unlike Framework Dependent Deployment (FDD), a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. Additionally SCDs include an executable that will launch the application. The executable is a renamed version of the platform-specific .NET Core host.
 
 - **Framework-Dependent Executables (FDE)**  
   Produce an executable that runs on a target platform. Similar to FDDs, framework-dependent executables (FDE) aren’t self-contained. These deployments still rely on the presence of a shared system-wide version of .NET Core to run. Unlike an SCD, your app only contains your code and any third-party dependencies that are outside of the .NET Core libraries. FDEs produce an executable that runs on the target platform.
@@ -125,6 +125,10 @@ For example, to create a Framework-dependent, single file executable for the Win
 dotnet publish -c Release -r win10-x64 --self-contained false /p:PublishSingleFile=true
 ```
 
+<br/>
+
+***Note**: Since FDD is the default deployment type, `--self-contained false` is implied if not specified*
+
 ***Note**: creating a single file executable **requires** that you specify a Runtime Identifier (RID) via the -r switch even if the executable will be Framework_dependent and not self-contained.*
 
 
@@ -162,7 +166,7 @@ To summarize,
 
 ## Step-by-step examples
 
-Both SCD and FDD deployments for your app can be created for your app through either Visual Studio or the CLI. 
+Both Self-Contained and Framework-Dependent deployments for your app can be created using either Visual Studio or the CLI. 
 
 For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). 
 

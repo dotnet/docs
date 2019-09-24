@@ -1,11 +1,12 @@
 ---
-title: Cloud native data patterns
-description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Data Patterns
-ms.date: 06/30/2019
+title: Cloud-native data patterns
+description: Learn about common data patterns found in cloud-native applications
+author: robvet
+ms.date: 09/23/2019
 ---
 # Cloud native data patterns
 
-While decentralized data can increase agility, performance, and scalability, it also presents many challenges. Querying for data across microservices is complex. A transaction that spans microservices must be managed programmatically as distributed transactions aren't supported in cloud-native applications. You move from a world of *immediate consistency* to *eventual consistency*.
+While data distributed across many microservices can increase agility, performance, and scalability, it also presents many challenges. For example, querying for data across microservices is complex. Updating data across microservices must be managed programmatically as distributed transactions aren't supported in cloud-native applications. You move from a world of *immediate consistency* to *eventual consistency*.
 
 We discuss these challenges now.
 
@@ -15,63 +16,41 @@ How does an application query data that is spread across many independent micros
 
 Figure 5-4 shows this scenario.
 
-![Querying across microservices](media/cross-service-query.png)
+![Querying across microservices](./media/cross-service-query.png)
 
 **Figure 5-4**. Querying across microservices
 
-In the previous figure we see a shopping basket microservice that adds an item to a user's shopping basket. While the shopping basket's data store contains data tables for basket and lineItems, it doesn't contain product or pricing data. Instead, those data items are found in the product and price microservices. This presents a problem. How can the shoping backet microservice add an item when it doesn't have product data and pricing data in its database? 
+In the previous figure we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for the microservice contains data tables for basket and lineItems, it doesn't contain product or pricing data. Instead, those data items are found in the catalog and pricing microservices. This presents a problem. How can the shoping backet microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database? 
 
-One option that we discussed in Chapter 4 involves a direct HTTP call from the Shopping Basket microservices to the Product and Pricing microservices. However, we also said that direct HTTP calls are discouraged. Indpendent microservices become coupled and are not considered a good practice. We could asyncchornlulsy send a message across the services for the data, but that could block the call and leave the user waiting for long periods of time for a response.
+One option that we discussed in Chapter 4 involves a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we also discussed how direct HTTP calls across microservices couple the system and are not considered a good practice. Independent microservices noew become coupled and system performance can be impacted. We could asyncchornlulsy send messages across the services for the data, but that could block the call and leave the user waiting for long periods of time for a response.
 
-While feasible to implement, in chapter 4 we discussed how direct HTTP calls across microservices couple the system and are not considered a good practice.
+A common approach for removing cross-service queries is the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
 
+![Materialized view pattern](./media/materialized-view-pattern.png)
 
-
-
-
-Figure 5-5 shows the shopping basket microservice making a direct HTTP call to both the product catalog and pricing microservices.
-
-![Direct http communication](media/direct-http-communication.png)
-
-**Figure 5-5**. Direct HTTP communication
-
-While feasible to implement, in chapter 4 we discussed how direct HTTP calls across microservices couple the system and are not considered a good practice.
-
-We could implement an aggregator microservice shown in Figure 5-6.
-
-![Aggregator microservice](media/aggregator-microservice.png)
-
-**Figure 5-6.** Aggregator microservice
-
-While this approach encapsulates the business operation workflow inside of an individual microservice, it adds complexity and still results in direct HTTP calls.
-
-A common approach for executing cross-service queries utilizes the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-7.
-
-![Materialized view pattern](media/materialized-view-pattern.png)
-
-**Figure5-7**. Materialized View Pattern
+**Figure5-5**. Materialized View Pattern
 
 With this pattern, you directly place a local table (known as a *read model*) in the shopping basket service that contains a denormalized copy of the data that is needed from the product and pricing microservices. Placing that data inside the shopping basket microservice eliminates the need for invoking expensive cross-service calls. With the data local to the service, you improve response time and reliability.
 
-The catch with this approach is you now have duplicate data in your system. In cloud native systems, duplicate data is not considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is commonly implemented in cloud-native systems. However, one and only one system can be the owner of any dataset, and you will need to implement a synchronization mechanism for the system of record to update all of the associated read models, whenever a change to its underlying data occurs.
+The catch with this approach is you now have duplicate data in your system. In cloud native systems, duplicate data is not considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is a widely-accepted pracitce in cloud-native systems. However, one and only one system can be the owner of any dataset, and you will need to implement a synchronization mechanism for the system of record to update all of the associated read models, whenever a change to the underlying data occurs.
 
 ## Transactional support
 
-While queries across microservices are challenging, implementing a transaction across microservices can be complex. The inherent challenge of maintaining data consistency across data sources that reside in different microservices cannot be understated. Figure 5-8 shows the problem.
+While queries across microservices are challenging, implementing a transaction across microservices can be complex. The inherent challenge of maintaining data consistency across data sources that reside in different microservices cannot be understated. Figure 5-6 shows the problem.
 
-![Transaction in saga pattern](media/saga-transaction-operation.png)
+![Transaction in saga pattern](./media/saga-transaction-operation.png)
 
-**Figure 5-8**. Implementing a transaction across microservices
+**Figure 5-6**. Implementing a transaction across microservices
 
 Note how in the previous figure five independent microservices all participate in a distributed *Create Order* transaction. However, the transaction for each of the five individual microservices must succeed, or all must abort and roll-back the operation. While built-in transactional support is available inside each of the microservices, there is no support for a distributed transaction across all five services.
 
 Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to progammatically construct a distributed transaction.
 
-A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It is implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-9 shows a failed transaction with the Saga pattern.
+A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It is implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-7 shows a failed transaction with the Saga pattern.
 
-![Rollback in saga pattern](media/saga-rollback-operation.png)
+![Rollback in saga pattern](./media/saga-rollback-operation.png)
 
-**Figure 5-9**. Rolling back a transaction
+**Figure 5-7**. Rolling back a transaction
 
 Note how in the previous figure the *GenerateContent* operation has failed in the music microservice. The Saga invokes compensating transactions (in red) to remove the content, cancel the payment, and cancel the order, returning the data for each microservice back to a consistent state.
 
@@ -85,11 +64,11 @@ In normal data access scenarios, you implement a single model (entity and reposi
 
 However, a more advanced data access scenario might benefit from separate models and data tables for reads and writes. To improve performance, the read operation, known as a *query*, might query against a highly denormalized representation of the data to avoid expensive repetitive table joins. Whereas the *write* operation, known as a *command*, might update against a fully normalized representation of the data. You would then need to implement a mechanism to keep both representations in sync. Typically, whenever the write table is modified, it raises an event that replicates the data modification to the read table.
 
-Figure 5-10 shows an implementation of the CQRS pattern.
+Figure 5-8 shows an implementation of the CQRS pattern.
 
-![CQRS implementation](media/cqrs-implementation.png)
+![CQRS implementation](./media/cqrs-implementation.png)
 
-**Figure 5-10**. CQRS implementation
+**Figure 5-8**. CQRS implementation
 
 Note how in the previous figure separate command and query models are implemented. Moreover, each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the propagation process operates on the principle of [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/), whereas the read model eventually synchronizes with the write model, but there may be some lag in the process.
 
@@ -105,11 +84,11 @@ On the one side, relational databases have been a prevalent technology for decad
 
 No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. They do not offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
 
-A way to understand the differences between these types of databases can be found in the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles that can be applied to distributed systems that store state. Figure 5-11 shows the three properties of the CAP theorem.
+A way to understand the differences between these types of databases can be found in the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles that can be applied to distributed systems that store state. Figure 5-9 shows the three properties of the CAP theorem.
 
-![CAP theorem](media/cap-theorem.png)
+![CAP theorem](./media/cap-theorem.png)
 
-**Figure 5-11**. The CAP theorem
+**Figure 5-9**. The CAP theorem
 
 The theorem states that any distributed data system will offer a trade-off between consistency, availability, and partition tolerance, and that any database can only guarantee two of the three properties:
 

@@ -5,7 +5,7 @@ ms.date: 06/30/2019
 ---
 # Cloud native data patterns
 
-While decentralized data can lead to improved performance, scalability and cost savings, it also presents many challenges. Querying for data across microservices is complex. A transaction that spans microservices must be managed programmatically as distributed transactions are not supported in cloud-native applications. You  move from a world of *immediate consistency* to *eventual consistency*.
+While decentralized data can increase agility, performance, and scalability, it also presents many challenges. Querying for data across microservices is complex. A transaction that spans microservices must be managed programmatically as distributed transactions aren't supported in cloud-native applications. You move from a world of *immediate consistency* to *eventual consistency*.
 
 We discuss these challenges now.
 
@@ -19,7 +19,15 @@ Figure 5-4 shows this scenario.
 
 **Figure 5-4**. Querying across microservices
 
-Note how in the previous figure we see a shopping basket microservice that adds an item to a user's shopping cart. While the shopping basket's data store contains a basket and lineItem table, it does not contain product or pricing data as those items are found in the product and price microservices. In order to add an item, the shopping basket microservice needs product data and pricing data. What are options to obtain the product and pricing data?
+In the previous figure we see a shopping basket microservice that adds an item to a user's shopping basket. While the shopping basket's data store contains data tables for basket and lineItems, it doesn't contain product or pricing data. Instead, those data items are found in the product and price microservices. This presents a problem. How can the shoping backet microservice add an item when it doesn't have product data and pricing data in its database? 
+
+One option that we discussed in Chapter 4 involves a direct HTTP call from the Shopping Basket microservices to the Product and Pricing microservices. However, we also said that direct HTTP calls are discouraged. Indpendent microservices become coupled and are not considered a good practice. We could asyncchornlulsy send a message across the services for the data, but that could block the call and leave the user waiting for long periods of time for a response.
+
+While feasible to implement, in chapter 4 we discussed how direct HTTP calls across microservices couple the system and are not considered a good practice.
+
+
+
+
 
 Figure 5-5 shows the shopping basket microservice making a direct HTTP call to both the product catalog and pricing microservices.
 

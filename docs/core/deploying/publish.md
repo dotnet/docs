@@ -64,7 +64,7 @@ Each app package as SCD uses separate host executables, so you can sign a host e
 
 ### Why deploy a self-contained deployment?
 
-Deploying a Self-contained deployment has two major advantages:
+Deploying a SCD has two major advantages:
 
 - You have sole control of the version of .NET Core that is deployed with your app. .NET Core can be serviced only by you.
 

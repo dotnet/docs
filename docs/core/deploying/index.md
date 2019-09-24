@@ -43,7 +43,7 @@ When it comes to creating and building your app, you have two choices - you can 
 _There are several other ways to acquire the .NET Core SDK and Runtime, these options are covered in the [.NET Core Acquisition Experiences](acquisition-experiences.md) guide._
 
 
-Once you acquire the tools, you're ready to build your app. Pick the approach that corresponds to whether in the previous step you chose to use an IDE like Visual Studio or Visual Studio for Mac or the CLI.
+Once you acquire the tools, you're ready to build your app. Pick the approach that corresponds to whether or not in the previous step you chose to use an IDE like Visual Studio or Visual Studio for Mac or the CLI.
 
 [Build your first .NET Core app using the Command Line Interface (CLI)](../tutorials/using-with-xplat-cli.md)
 

@@ -15,7 +15,7 @@ When it comes to deploying your application, size is often an important factor. 
 
 Depending on the complexity of the application, only a subset of the runtime is required to run the application. These unused parts of the runtime are unnecessary and can be trimmed from the packaged application. 
 
-Starting in .NET 3.0, support has been added to remove the unnecessary .NET Core assemblies from the final deployment. The dotnet publish verb now supports _Trimming_, which is removing of unused .NET Core assemblies from the final deployment. 
+_Note: Trimming is an experimental feature in .NET Core 3.0. This feature is not available for Framework-Dependent Deployments (FDD) and Framework-Dependent Executables (FDE) since they don't include .NET Core assemblies._  
 
 The Trimming feature is available for both Self-Contained Deployments (SCD) and also Self-Contained Executables (SCE), but is not available for Framework-Dependent Deployments (FDD) and Framework-Dependent Executables (FDE) since they don't include .NET Core assemblies.
 

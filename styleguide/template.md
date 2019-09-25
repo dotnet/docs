@@ -319,8 +319,8 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |SQL|sql|
 |Swift|swift|
 |TypeScript|typescript|
-|VB|vb|
-|vbscript|vbscript|
+|Visual Basic|vb|
+|VBScript|vbscript|
 |XAML|xaml|
 |XML|xml|
 

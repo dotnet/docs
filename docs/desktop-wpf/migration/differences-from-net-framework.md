@@ -8,9 +8,15 @@ ms.author: adegeo
 
 # Differences in .NET Core WPF
 
-This article describes the differences between .NET Framework's implementation of Windows Presentation Foundation (WPF) and .NET Core's implementation of WPF. .NET Core's implementation of WPF is based on the open-source release hosted on [GitHub](https://github.com/dotnet/wpf).
+This article describes the differences between Windows Presentation Foundation (WPF) on .NET Core and .NET Framework. WPF for .NET Core is an [open-source framework](https://github.com/dotnet/wpf) forked from the original WPF for .NET Framework source code.
+
+There are a few features of .NET Framework that .NET Core doesn't support. Meaning, WPF for .NET Core has a few limitations you should be aware of. For more information on unsupported technologies, see [.NET Framework technologies unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md).
 
 [!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+
+## SDK-style projects
+
+.NET Core uses SDK-style project files. These project files are different from the traditional .NET Framework project files managed by Visual Studio. To migrate your .NET Framework WPF application to .NET Core, you must convert your projects. For more information, see [Migrating WPF Apps to .NET Core 3.0][migrate-project].
 
 ## NuGet package references
 
@@ -27,7 +33,7 @@ When your project uses `<PackageReference>`, packages aren't stored locally in a
 
 ## Code Access Security (CAS)
 
-Code Access Security (CAS) is not supported by .NET Core or WPF for .NET Core. All CAS-related functionality is treated under the assumption of full-trust. Therefore, WPF has been removing CAS-related code. The public API surface of these types still exists to ensure that calls into these types succeed. However, these calls don't actually do anything.
+Code Access Security (CAS) is not supported by .NET Core or WPF for .NET Core. All CAS-related functionality is treated under the assumption of full-trust. WPF for .NET Core has been removing CAS-related code. The public API surface of these types still exists to ensure that calls into these types succeed. However, these calls don't actually do anything.
 
 Publicly defined CAS-related types were moved out of the WPF assemblies and into the CoreFX assemblies. The WPF assemblies have type-forwarding set to the new location of the moved types.
 
@@ -50,6 +56,10 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 > - `PrivateAccessToTypeName`
 > - `AssemblyNameString`
 
+
+
 ## Next steps
 
-- [Learn how to port a .NET Framework WPF app to .NET Core.](convert-project-from-net-framework.md)
+- [Learn how to port a .NET Framework WPF app to .NET Core.][migrate-project]
+
+[migrate-project]: convert-project-from-net-framework.md

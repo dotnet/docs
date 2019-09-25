@@ -5,6 +5,9 @@ helpviewer_keywords:
   - "accessibility [Windows Forms], Windows applications"
   - "Windows applications [Windows Forms], accessibility"
   - "applications [Windows Forms], accessibility"
+dev_langs:
+  - csharp
+  - vb
 ms.assetid: 654c7f2f-1586-480b-9f12-9d9b8f5cc32b
 ---
 # Walkthrough: Creating an Accessible Windows-based Application

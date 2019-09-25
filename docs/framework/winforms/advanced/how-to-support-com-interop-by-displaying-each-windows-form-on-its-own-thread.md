@@ -1,6 +1,8 @@
 ---
 title: "How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread"
 ms.date: "03/30/2017"
+dev_langs:
+  - "vb"
 helpviewer_keywords:
   - "COM interop [Windows Forms], Windows Forms"
   - "COM [Windows Forms]"

@@ -320,6 +320,7 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
+|vbscript|vbscript|
 |XAML|xaml|
 |XML|xml|
 

@@ -65,7 +65,7 @@ Or you can extract substrings by using array slice syntax, as shown in the follo
 
 The output is as follows.
 
-```
+```console
 abc
 def
 ```

@@ -98,7 +98,7 @@ typedef struct _MYPERSON
   
  In this sample, the `MyPoint` and `MyPerson` structures contain embedded types. The <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute is set to ensure that the members are arranged in memory sequentially, in the order in which they appear.  
   
- The `LibWrap` class contains a set of methods called by the `App` class. For specific details about passing arrays, see the comments in the following sample. An array, which is a reference type, is passed as an In parameter by default. For the caller to receive the results, **InAttribute** and **OutAttribute** must be applied explicitly to the argument containing the array.  
+ The `NativeMethods` class contains a set of methods called by the `App` class. For specific details about passing arrays, see the comments in the following sample. An array, which is a reference type, is passed as an In parameter by default. For the caller to receive the results, **InAttribute** and **OutAttribute** must be applied explicitly to the argument containing the array.  
   
 ### Declaring Prototypes  
  [!code-csharp[Conceptual.Interop.Marshaling#31](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.interop.marshaling/cs/arrays.cs#31)]

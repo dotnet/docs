@@ -18,13 +18,14 @@ This tutorial shows you how to create an ASP.NET Core Razor Pages application th
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * Create an ASP.NET Core Razor Pages application
-> * Prepare and understand the data
-> * Choose a scenario
-> * Load the data
-> * Train the model
-> * Evaluate the model
-> * Use the model for predictions
+>
+> - Create an ASP.NET Core Razor Pages application
+> - Prepare and understand the data
+> - Choose a scenario
+> - Load the data
+> - Train the model
+> - Evaluate the model
+> - Use the model for predictions
 
 > [!NOTE]
 > Model Builder is currently in Preview.
@@ -39,17 +40,17 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. Create a **ASP.NET Core Razor Pages Application**.
 
-    1. Open Visual Studio and select **File > New > Project** from the menu bar. 
-    1. In the New Project dialog, select the **Visual C#** node followed by the **Web** node. 
-    1. Then select the **ASP.NET Core Web Application** project template. 
+    1. Open Visual Studio and select **File > New > Project** from the menu bar.
+    1. In the New Project dialog, select the **Visual C#** node followed by the **Web** node.
+    1. Then select the **ASP.NET Core Web Application** project template.
     1. In the **Name** text box, type "SentimentRazor".
-    1. The **Create a directory for solution** checkbox should be checked by default. If that's not the case, check it. 
+    1. The **Create a directory for solution** checkbox should be checked by default. If that's not the case, check it.
     1. Select the **OK** button.
     1. Choose **Web Application** in the window that displays the different types of ASP.NET Core Projects, and then select the **OK** button.
 
 ## Prepare and understand the data
 
-Download [Wikipedia detox dataset](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv). When the webpage opens, right-click on the page, select **Save As** and save the file anywhere on your computer. 
+Download [Wikipedia detox dataset](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv). When the webpage opens, right-click on the page, select **Save As** and save the file anywhere on your computer.
 
 Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a different review left by a user on Wikipedia. The first column represents the sentiment of the text (0 is non-toxic, 1 is toxic), and the second column represents the comment left by the user. The columns are separated by tabs. The data looks like the following:
 
@@ -63,7 +64,7 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 
 ![](./media/sentiment-analysis-model-builder/model-builder-screen.png)
 
-To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. 
+To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
 1. In **Solution Explorer**, right-click the *SentimentRazor* project, and select **Add** > **Machine Learning**.
 1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Sentiment Analysis** scenario.
@@ -81,7 +82,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 The machine learning task used to train the price prediction model in this tutorial is binary classification. During the model training process, Model Builder trains separate models using different binary classification algorithms and settings to find the best performing model for your dataset.
 
-The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source. 
+The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 
 1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 30 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
 1. Select **Start Training**.
@@ -118,8 +119,8 @@ Two projects will be created as a result of the training process.
 
 1. To use the trained model inside your Razor Pages application, add a reference to the *SentimentRazorML.Model* project.
 
-    1. Right-click **SentimentRazor** project. 
-    1. Select **Add > Reference**. 
+    1. Right-click **SentimentRazor** project.
+    1. Select **Add > Reference**.
     1. Choose the **Projects > Solution** node and from the list, check the **SentimentRazorML.Model** project.
     1. Select **OK**.
 
@@ -128,21 +129,21 @@ Two projects will be created as a result of the training process.
 To make a single prediction, use [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). In order to use [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) in your application, you must create it when it's needed. In that case, a best practice to consider is dependency injection.
 
 > [!WARNING]
-> [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. For improved performance and thread safety, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of `PredictionEngine` objects for application use. Read the following blog post to learn more about [creating and using `PredictionEngine` object pools in ASP.NET Core](https://devblogs.microsoft.com/cesardelatorre/how-to-optimize-and-run-ml-net-models-on-scalable-asp-net-core-webapis-or-web-apps/). 
+> [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. For improved performance and thread safety, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of `PredictionEngine` objects for application use. Read the following blog post to learn more about [creating and using `PredictionEngine` object pools in ASP.NET Core](https://devblogs.microsoft.com/cesardelatorre/how-to-optimize-and-run-ml-net-models-on-scalable-asp-net-core-webapis-or-web-apps/).
 
 1. Install the *Microsoft.Extensions.ML* NuGet package:
 
-    1. In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. 
-    1. Choose "nuget.org" as the Package source. 
-    1. Select the **Browse** tab and search for **Microsoft.Extensions.ML**. 
-    1. Select the package in the list, and select the **Install** button. 
+    1. In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**.
+    1. Choose "nuget.org" as the Package source.
+    1. Select the **Browse** tab and search for **Microsoft.Extensions.ML**.
+    1. Select the package in the list, and select the **Install** button.
     1. Select the **OK** button on the **Preview Changes** dialog
-    1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. 
+    1. Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 1. Open the *Startup.cs* file in the *SentimentRazor* project.
 1. Add the following using statements to reference the *Microsoft.Extensions.ML* NuGet package and *SentimentRazorML.Model* project:
 
-    [!code-csharp [StartupUsings](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L12-L14)]        
+    [!code-csharp [StartupUsings](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L12-L14)]
 
 1. Create a global variable to store the location of the trained model file.
 
@@ -168,7 +169,7 @@ Predictions will be made inside the main page of the application. Therefore, a m
 
     [!code-csharp [IndexUsings](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L7-L8)]
 
-    In order to use the `PredictionEnginePool` configured in the `Startup` class, you have to inject it into the constructor of the model where you want to use it. 
+    In order to use the `PredictionEnginePool` configured in the `Startup` class, you have to inject it into the constructor of the model where you want to use it.
 
 1. Add a variable to reference the `PredictionEnginePool` inside the `IndexModel` class.
 
@@ -191,15 +192,15 @@ Predictions will be made inside the main page of the application. Therefore, a m
 
     1. Inside the `OnGetAnalyzeSentiment` method, return *Neutral* sentiment if the input from the user is blank or null.
 
-        [!code-csharp [InitInput](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L28)] 
-    
-    1. Given a valid input, create a new instance of `ModelInput`. 
+        [!code-csharp [InitInput](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L28)]
 
-        [!code-csharp [InitInput](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L29)] 
+    1. Given a valid input, create a new instance of `ModelInput`.
+
+        [!code-csharp [InitInput](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L29)]
 
     1. Use the `PredictionEnginePool` to predict sentiment.
 
-        [!code-csharp [MakePrediction](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L30)] 
+        [!code-csharp [MakePrediction](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L30)]
 
     1. Convert the predicted `bool` value into toxic or not toxic with the following code.
 
@@ -213,7 +214,7 @@ Predictions will be made inside the main page of the application. Therefore, a m
 
 The results returned by the `OnGetAnalyzeSentiment` will be dynamically displayed on the `Index` web page.
 
-1. Open the *Index.cshtml* file in the *Pages* directory and replace its contents with the following code: 
+1. Open the *Index.cshtml* file in the *Pages* directory and replace its contents with the following code:
 
     [!code-cshtml [IndexPage](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml)]
 
@@ -253,13 +254,14 @@ If you need to reference the Model Builder generated projects at a later time in
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
-> * Create an ASP.NET Core Razor Pages application
-> * Prepare and understand the data
-> * Choose a scenario
-> * Load the data
-> * Train the model
-> * Evaluate the model
-> * Use the model for predictions
+>
+> - Create an ASP.NET Core Razor Pages application
+> - Prepare and understand the data
+> - Choose a scenario
+> - Load the data
+> - Train the model
+> - Evaluate the model
+> - Use the model for predictions
 
 ### Additional Resources
 

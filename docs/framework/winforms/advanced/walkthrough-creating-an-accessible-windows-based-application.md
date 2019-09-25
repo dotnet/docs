@@ -189,7 +189,7 @@ In our application, the only element that is not using the system settings for c
     }
     ```
 
-2. Call the `SetColorScheme` procedure in the form constructor (`Public Sub New()` in Visual Basic and `public class Form1` in Visual C#). To access the constructor in Visual Basic, you will need to expand the region labeled **Windows Form Designer generated code**.
+2. Call the `SetColorScheme` procedure in the form constructor (`Public Sub New()` in Visual Basic and `public Form1()` in Visual C#). To access the constructor in Visual Basic, you will need to expand the region labeled **Windows Form Designer generated code**.
 
     ```vb
     Public Sub New()

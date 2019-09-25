@@ -40,9 +40,9 @@ This topic outlines two procedures.
 
 8. Click **OK**.
 
-9. Right-click the MainWindows.xaml file in the **Solution Explorer**, select **Delete** and confirm **OK** in the **Microsoft Visual Studio** dialogue box.
+9. Right-click the MainWindows.xaml file in the **Solution Explorer**, select **Delete** and confirm **OK** in the **Microsoft Visual Studio** dialog box.
 
-10. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **WPF** category from the **Installed Templates** section on the left.
+10. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialog and select the **WPF** category from the **Installed Templates** section on the left.
 
 11. Select the  **Window (WPF)** template, name it `RehostingWFDesigner`, and click **Add**.
 
@@ -149,7 +149,7 @@ This topic outlines two procedures.
     }
     ```
 
-14. Right-click the References directory in Solution Explorer and select **Add Reference …** to bring up the **Add Reference** dialogue.
+14. Right-click the References directory in Solution Explorer and select **Add Reference …** to bring up the **Add Reference** dialog.
 
 15. Click the **.NET** tab, locate the assembly named **System.Activities.Core.Presentation**, select it and click **OK**.
 
@@ -163,7 +163,7 @@ This topic outlines two procedures.
 
 17. Open the App.xaml file and change the value of the StartUpUri to "RehostingWFDesigner.xaml".
 
-18. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **Workflow** category form the **Installed Templates** section on the left.
+18. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialog and select the **Workflow** category form the **Installed Templates** section on the left.
 
 19. Select the **Activity Designer** template, name it `SimpleNativeDesigner`, and click **Add**.
 
@@ -206,7 +206,7 @@ This topic outlines two procedures.
     </sap:ActivityDesigner>
     ```
 
-21. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **Workflow** category form the **Installed Templates** section on the left.
+21. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialog and select the **Workflow** category form the **Installed Templates** section on the left.
 
 22. Select the  **Code Activity** template, name it `SimpleNativeActivity`, and click **Add**.
 

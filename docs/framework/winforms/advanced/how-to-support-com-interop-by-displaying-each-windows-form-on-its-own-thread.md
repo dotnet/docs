@@ -1,8 +1,6 @@
 ---
 title: "How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread"
 ms.date: "03/30/2017"
-dev_langs:
-  - "vb"
 helpviewer_keywords:
   - "COM interop [Windows Forms], Windows Forms"
   - "COM [Windows Forms]"
@@ -10,9 +8,6 @@ helpviewer_keywords:
   - "ActiveX controls [Windows Forms], COM interop"
   - "Windows Forms, interop"
 ms.assetid: a9e04765-d2de-4389-a494-a9a6d07aa6ee
-dev_langs:
- - CSharp
- - VB
 ---
 # How to: Support COM interop by displaying each Windows Form on its own thread
 

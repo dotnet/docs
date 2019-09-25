@@ -20,14 +20,14 @@ The previous point - that asynchrony is independent of the utilization of multip
 * Parallelism, which is when multiple computations or several parts of a unique computation run at exactly the same time
 * Asynchrony, which is when one or more computations can execute separately from the main program flow
 
-All three are orthagonal concepts, but can be easily conflated, especially when they are used together. For example, you may need to execute multiple asynchronous computations in parallel. This does not mean that parallelism or asynchrony imply one another in this situation.
+All three are orthogonal concepts, but can be easily conflated, especially when they are used together. For example, you may need to execute multiple asynchronous computations in parallel. This does not mean that parallelism or asynchrony imply one another in this situation.
 
-If you look at the etymology of the word "asynchronous", there are two pieces invovled:
+If you look at the etymology of the word "asynchronous", there are two pieces involved:
 
 * "a", meaning "not"
 * "synchronous", meaning "at the same time"
 
-Put together, "asynchronous" means "not at the same time". That's it! There is no impliciation of concurrency or parallelism in this definition. This is also true in practice.
+Put together, "asynchronous" means "not at the same time". That's it! There is no implication of concurrency or parallelism in this definition. This is also true in practice.
 
 In practical terms, asynchronous computations in F# are scheduled to execute independently of the main program flow. This doesn't imply concurrency or parallelism, nor does it imply that a computation always happens in the background. In fact, asynchronous computations could even execute synchronously, depending on the nature of the computation and the environment the computation is executing in.
 
@@ -301,7 +301,7 @@ What to watch out for:
 
 You may be working with a .NET library or C# codebase that uses [async/await](../../../standard/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions rather than `Async<'T>`, you must cross a boundary between these two approaches to asynchrony.
 
-### How to work with .NET async and Task<T>
+### How to work with .NET async and `Task<T>`
 
 Working with .NET async libraries and codebases that use <xref:System.Threading.Tasks.Task%601> (that is, async computations that have return values) is straightforward and has built-in support with F#.
 

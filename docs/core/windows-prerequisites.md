@@ -103,6 +103,7 @@ Once you have Visual Studio configured with .NET Core 3.0 SDK, you can do the fo
 
 To develop .NET Core apps in Visual Studio 2017 using the .NET Core 2.2 SDK:
 
+* [Download and install Visual Studio 2019 version 16.3 or higher](/visualstudio/install/install-visual-studio) with the **.NET Core cross-platform development** workload (in the **Other Toolsets** section) selected.
 * [Download and install Visual Studio 2017 version 15.9.0 or higher](/visualstudio/install/install-visual-studio) with the **.NET Core cross-platform development** workload (in the **Other Toolsets** section) selected.
 
 ![Screenshot of Visual Studio 2017 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs-2017-workloads.jpg)
@@ -126,19 +127,5 @@ Once you have Visual Studio configured with .NET Core 2.2 SDK, you can do the fo
 * Open, build, and run existing .NET Core 1.x and 2.x projects.
 * Retarget .NET Core 1.x and 2.x projects to .NET Core 2.2, build, and run.
 * Create new .NET Core 2.2 projects.
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Studio 2017](/visualstudio/install/install-visual-studio) with the **".NET Core cross-platform development"** workload (in the **Other Toolsets** section) selected.
-
-![Screenshot of Visual Studio 2017 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs-workloads.jpg)
-
-> [!IMPORTANT]
-> It's possible to use Visual Studio 2015 for .NET Core 1.x development, but it's not recommended for the following reasons:
->
-> * The .NET Core tooling is a preview version, which is not supported.
-> * The projects are project.json-based, which is deprecated.
->
-> For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 
 ---

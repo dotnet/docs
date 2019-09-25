@@ -1,6 +1,6 @@
 ### EnvelopedCms defaults to AES-256 encryption
 
-The default symmetric encryption algorithm used by `EnvelopedCms` has changed from TripleDES to AES-256
+The default symmetric encryption algorithm used by `EnvelopedCms` has changed from TripleDES to AES-256.
 
 #### Details
 

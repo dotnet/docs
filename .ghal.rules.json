@@ -30,7 +30,10 @@
               "(?i)dotnet-architecture$": ":books: Area - .NET Architecture Guide"
             },
             "contentsource": {
+              "(?i).*master\/docs\/architecture\/blazor-for-web-forms-developers.*": ":book: guide - Blazor",
+              "(?i).*master\/docs\/architecture\/cloud-native.*": ":book: guide - Cloud Native",
               "(?i).*master\/docs\/architecture\/containerized-lifecycle.*": ":book: guide - Docker lifecycle",
+              "(?i).*master\/docs\/architecture\/grpc-for-wcf-developers.*": ":book: guide - gRPC",
               "(?i).*master\/docs\/architecture\/microservices.*": ":book: guide - .NET Microservices",
               "(?i).*master\/docs\/architecture\/modern-web-apps-azure.*": ":book: guide - ASP.NET Core web apps",
               "(?i).*master\/docs\/architecture\/modernize-with-azure-containers.*": ":book: guide - Modernizing w/ Windows containers",

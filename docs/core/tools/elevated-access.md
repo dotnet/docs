@@ -35,7 +35,7 @@ If the folder `%ProgramFiles%\dotnet-tools` already exists, do the following to 
 
 To install tools, run the following command in elevated prompt. It will create the *dotnet-tools* folder during the installation.
 
-```cmd
+```dotnetcli
 dotnet tool install PACKAGEID --tool-path "%ProgramFiles%\dotnet-tools".
 ```
 
@@ -63,7 +63,7 @@ TOOLCOMMAND
 
 In an elevated prompt, type the following command:
 
-```cmd
+```dotnetcli
 dotnet tool uninstall PACKAGEID --tool-path "%ProgramFiles%\dotnet-tools"
 ```
 

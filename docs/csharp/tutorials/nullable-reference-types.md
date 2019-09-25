@@ -38,9 +38,6 @@ Create a new console application either in Visual Studio or from the command lin
 <Nullable>enable</Nullable>
 ```
 
-> [!NOTE]
-> When C# 8 is released (not in preview mode), the `Nullable` element will be added by new project templates. Until then, you'll need to add it manually.
-
 ### Design the types for the application
 
 This survey application requires creating a number of classes:

@@ -45,7 +45,8 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 | **System.Xaml.dll** | **System.Windows.Extension.dll**    | <xref:System.Xaml.Permissions.XamlAccessLevel><br/> |
 
 > [!NOTE]
-> In order to minimize porting friction, the functionality for storing and retrieving information related to the following properties were retained in the `XamlAccessLevel` type.  
+> In order to minimize porting friction, the functionality for storing and retrieving information related to the following properties was retained in the `XamlAccessLevel` type.
+>
 > - `PrivateAccessToTypeName`
 > - `AssemblyNameString`
 

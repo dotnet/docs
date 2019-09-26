@@ -24,7 +24,7 @@ More information about packaging your app as an MSIX package, see [Package a des
 
 ## Visual Studio Installer Project (package your app as an MSI)
 
-[Windows Installer](https://docs.microsoft.com/windows/win32/msi/windows-installer-portal) deployment allows you to create installer packages in an MSI format, the user runs the setup installer and steps through a wizard to install the application. 
+The [Windows Installer](https://docs.microsoft.com/windows/win32/msi/windows-installer-portal) allows you to create installer packages in an MSI format, the user runs the setup installer and steps through a wizard to install the application. 
 
 You can use the [VS Installer Projects Visual Studio Extension](https://marketplace.visualstudio.com/items?itemName=visualstudioclient.MicrosoftVisualStudio2017InstallerProjects) to generate an MSI package for your .NET Core app.
 

@@ -17,7 +17,7 @@ The following code demonstrates the pattern matching `is` statement. It contains
 
 The preceding sample demonstrates a few features of pattern matching syntax. The `if (a is Mammal m)` and `if (o is Mammal m)` statements combine the test with an initialization assignment. The assignment occurs only when the test succeeds. The variable `m` is only in scope in the embedded `if` statement where it has been assigned. You cannot access `m` later in the same method. Try it in the interactive window.
 
-You can also use the same syntax for testing if a [nullable type](../programming-guide/nullable-types/index.md) has a value, as shown in the following sample code:
+You can also use the same syntax for testing if a [nullable value type](../programming-guide/nullable-types/index.md) has a value, as shown in the following sample code:
 
 [!code-csharp[Pattern matching with nullable types](../../../samples/snippets/csharp/how-to/safelycast/nullablepatternmatching/Program.cs#PatternMatchingNullable)]
 

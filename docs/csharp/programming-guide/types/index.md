@@ -15,7 +15,7 @@ ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
 ---
 # Types (C# Programming Guide)
 
-## Types, Variables, and Values
+## Types, variables, and values
 
 C# is a strongly-typed language. Every variable and constant has a type, as does every expression that evaluates to a value. Every method signature specifies a type for each input parameter and for the return value. The .NET class library defines a set of built-in numeric types as well as more complex types that represent a wide variety of logical constructs, such as the file system, network connections, collections and arrays of objects, and dates. A typical C# program uses types from the class library as well as user-defined types that model the concepts that are specific to the program's problem domain.
 
@@ -42,7 +42,7 @@ The compiler uses type information to make sure that all operations that are per
 
 The compiler embeds the type information into the executable file as metadata. The common language runtime (CLR) uses that metadata at run time to further guarantee type safety when it allocates and reclaims memory.
 
-### Specifying Types in Variable Declarations
+### Specifying types in variable declarations
 
 When you declare a variable or constant in a program, you must either specify its type or use the [var](../../language-reference/keywords/var.md) keyword to let the compiler infer the type. The following example shows some variable declarations that use both built-in numeric types and complex user-defined types:
 
@@ -56,15 +56,15 @@ After a variable is declared, it cannot be re-declared with a new type, and it c
 
 For more information, see [Casting and Type Conversions](./casting-and-type-conversions.md).
 
-## Built-in Types
+## Built-in types
 
 C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in `string` and `object` types. These are available for you to use in any C# program. For more information about the built-in types, see [Reference Tables for built-in Types](../../language-reference/keywords/built-in-types-table.md).
 
-## Custom Types
+## Custom types
 
 You use the [struct](../../language-reference/keywords/struct.md), [class](../../language-reference/keywords/class.md), [interface](../../language-reference/keywords/interface.md), and [enum](../../language-reference/keywords/enum.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code. For more information, see [.NET Class Library](../../../standard/class-library-overview.md).
 
-## The Common Type System
+## The common type system
 
 It is important to understand two fundamental points about the type system in .NET:
 
@@ -81,7 +81,7 @@ The following image shows value types and reference types in the CTS:
 > [!NOTE]
 > You can see that the most commonly used types are all organized in the <xref:System> namespace. However, the namespace in which a type is contained has no relation to whether it is a value type or reference type.
 
-### Value Types
+### Value types
 
 Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from <xref:System.Object?displayProperty=nameWithType>. Types that derive from <xref:System.ValueType?displayProperty=nameWithType> have special behavior in the CLR. Value type variables directly contain their values, which means that the memory is allocated inline in whatever context the variable is declared. There is no separate heap allocation or garbage collection overhead for value-type variables.
 
@@ -118,7 +118,7 @@ The `System.IO.FileMode.Create` constant has a value of 2. However, the name is 
 
 All enums inherit from <xref:System.Enum?displayProperty=nameWithType>, which inherits from <xref:System.ValueType?displayProperty=nameWithType>. All the rules that apply to structs also apply to enums. For more information about enums, see [Enumeration Types](../enumeration-types.md).
 
-### Reference Types
+### Reference types
 
 A type that is defined as a [class](../../language-reference/keywords/class.md), [delegate](../../language-reference/keywords/delegate.md), array, or [interface](../../language-reference/keywords/interface.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../language-reference/keywords/null.md) until you explicitly create an object by using the [new](../../language-reference/operators/new-operator.md) operator, or assign it an object that has been created elsewhere by using `new`, as shown in the following example:
 
@@ -141,7 +141,7 @@ All arrays are reference types, even if their elements are value types. Arrays i
 
 Reference types fully support inheritance. When you create a class, you can inherit from any other interface or class that is not defined as [sealed](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override your virtual methods. For more information about how to create your own classes, see [Classes and Structs](../classes-and-structs/index.md). For more information about inheritance and virtual methods, see [Inheritance](../classes-and-structs/inheritance.md).
 
-## Types of Literal Values
+## Types of literal values
 
 In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer a type for the literal. For more information about which types can be specified with letter suffixes, see the reference pages for individual types in [Value Types](../../language-reference/keywords/value-types.md).
 
@@ -149,7 +149,7 @@ Because literals are typed, and all types derive ultimately from <xref:System.Ob
 
 [!code-csharp[csProgGuideTypes#37](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#37)]
 
-## Generic Types
+## Generic types
 
 A type can be declared with one or more *type parameters* that serve as a placeholder for the actual type (the *concrete type*) that client code will provide when it creates an instance of the type. Such types are called *generic types*. For example, the .NET type <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> has one type parameter that by convention is given the name *T*. When you create an instance of the type, you specify the type of the objects that the list will contain, for example, string:
 
@@ -162,15 +162,15 @@ stringList.Add(4);
 
 The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../language-reference/keywords/object.md). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `stringList` object in the previous example. For more information, see [Generics](../generics/index.md).
 
-## Implicit Types, Anonymous Types, and Nullable Types
+## Implicit types, anonymous types, and nullable value types
 
 As stated previously, you can implicitly type a local variable (but not class members) by using the [var](../../language-reference/keywords/var.md) keyword. The variable still receives a type at compile time, but the type is provided by the compiler. For more information, see [Implicitly Typed Local Variables](../classes-and-structs/implicitly-typed-local-variables.md).
 
 In some cases, it is inconvenient to create a named type for simple sets of related values that you do not intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous Types](../classes-and-structs/anonymous-types.md).
 
-Ordinary value types cannot have a value of [null](../../language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](../../language-reference/keywords/null.md). In the CTS, nullable types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable Types](../nullable-types/index.md).
+Ordinary value types cannot have a value of [null](../../language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable value types](../nullable-types/index.md).
 
-## Related Sections
+## Related sections
 
 For more information, see the following topics:
 
@@ -190,7 +190,7 @@ For more information, see the following topics:
 
 - [Generics](../generics/index.md)
 
-## C# Language Specification
+## C# language specification
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 

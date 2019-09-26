@@ -11,7 +11,7 @@ ms.custom:
 <br/>
 
 ## Full Installers
-.NET Core major and minor releases, and servicing updates always ship as the full product installers. The installer carries the entire product even if only a subset of the files is updated.
+.NET Core major and minor releases as well as servicing updates always ship as the full product installers. The installer carries the entire product even if only a subset of the files is updated.
 
 <br/>
 

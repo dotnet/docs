@@ -8,7 +8,7 @@ Dereferences a reference value and produces the result of that dereference.
   
 ## Syntax  
   
-```  
+```sql  
 SELECT DEREF ( o.expression ) from Table as o;  
 ```  
   

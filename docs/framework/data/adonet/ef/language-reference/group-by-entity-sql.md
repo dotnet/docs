@@ -8,7 +8,7 @@ Specifies groups into which objects returned by a query ([SELECT](select-entity-
   
 ## Syntax  
   
-```  
+```sql  
 [ GROUP BY aliasedExpression [ ,...n ] ]  
 ```  
   
@@ -44,7 +44,7 @@ Specifies groups into which objects returned by a query ([SELECT](select-entity-
   
  Each GROUP By key expression must have at least one reference to the input scope:  
   
-```  
+```sql  
 SELECT FROM Persons as P  
 GROUP BY Q + P   -- GOOD  
 GROUP BY Q   -- BAD  

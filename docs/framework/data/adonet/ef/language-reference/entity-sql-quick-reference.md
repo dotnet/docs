@@ -13,7 +13,7 @@ This topic provides a quick reference to [!INCLUDE[esql](../../../../../../inclu
   
  The following is an example of a Non-Unicode string literal:  
   
-```  
+```sql  
 'hello'  
 --same as  
 "hello"  
@@ -30,7 +30,7 @@ This topic provides a quick reference to [!INCLUDE[esql](../../../../../../inclu
   
  Example:  
   
-```  
+```sql  
 DATETIME '2006-12-25 01:01:00.000'   
 --same as  
 DATETIME '2006-12-25 01:01'  
@@ -47,7 +47,7 @@ DATETIME '2006-12-25 01:01'
   
  Example:  
   
-```  
+```sql  
 --a collection of integers  
 {1, 2, 3}  
 ```  
@@ -70,7 +70,7 @@ DATETIME '2006-12-25 01:01'
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE row (product.ProductID as ProductID, product.Name   
     as ProductName) FROM AdventureWorksEntities.Product AS product  
 ```  
@@ -91,7 +91,7 @@ SELECT VALUE row (product.ProductID as ProductID, product.Name
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE product FROM AdventureWorksEntities.Product AS product WHERE product.ListPrice IN MultiSet (125, 300)  
 ```  
   
@@ -106,7 +106,7 @@ SELECT VALUE product FROM AdventureWorksEntities.Product AS product WHERE produc
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE AdventureWorksModel.SalesOrderDetail (o.SalesOrderDetailID, o.CarrierTrackingNumber, o.OrderQty,   
 o.ProductID, o.SpecialOfferID, o.UnitPrice, o.UnitPriceDiscount,   
 o.rowguid, o.ModifiedDate) FROM AdventureWorksEntities.SalesOrderDetail   
@@ -126,7 +126,7 @@ AS o
 ### REF  
  [REF](ref-entity-sql.md) creates a reference to an entity type instance. For example, the following query returns references to each Order entity in the Orders entity set:  
   
-```  
+```sql  
 SELECT REF(o) AS OrderID FROM Orders AS o  
 ```  
   
@@ -143,7 +143,7 @@ SELECT REF(o) AS OrderID FROM Orders AS o
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE REF(p).Name FROM   
     AdventureWorksEntities.Product as p  
 ```  
@@ -162,7 +162,7 @@ SELECT VALUE REF(p).Name FROM
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE DEREF(REF(p)).Name FROM   
     AdventureWorksEntities.Product as p  
 ```  
@@ -181,7 +181,7 @@ SELECT VALUE DEREF(REF(p)).Name FROM
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))   
     FROM AdventureWorksEntities.Product as p  
 ```  
@@ -202,7 +202,7 @@ SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))
   
  Example:  
   
-```  
+```sql  
 SELECT Length(c. FirstName) As NameLen FROM   
     AdventureWorksEntities.Contact AS c   
     WHERE c.ContactID BETWEEN 10 AND 12  
@@ -221,7 +221,7 @@ SELECT Length(c. FirstName) As NameLen FROM
   
  Example:  
   
-```  
+```sql  
 SELECT SqlServer.LEN(c.EmailAddress) As EmailLen FROM   
     AdventureWorksEntities.Contact AS c WHERE   
     c.ContactID BETWEEN 10 AND 12  
@@ -240,7 +240,7 @@ SELECT SqlServer.LEN(c.EmailAddress) As EmailLen FROM
   
  Example:  
   
-```  
+```sql  
 using SqlServer; LOWER('AA');  
 ```  
   
@@ -255,7 +255,7 @@ using SqlServer; LOWER('AA');
   
  Example:  
   
-```  
+```sql  
 SELECT c.ContactID as ID, c.LastName as Name FROM   
     AdventureWorks.Contact AS c ORDER BY c.ContactID SKIP 9 LIMIT 3;  
 ```  
@@ -273,7 +273,7 @@ SELECT c.ContactID as ID, c.LastName as Name FROM
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE name FROM AdventureWorksEntities.Product as P   
     GROUP BY P.Name HAVING MAX(P.ListPrice) > 5  
 ```  
@@ -292,7 +292,7 @@ SELECT VALUE name FROM AdventureWorksEntities.Product as P
   
  Example:  
   
-```  
+```sql  
 SELECT a.AddressID, (SELECT VALUE DEREF(v) FROM   
     NAVIGATE(a, AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID) AS v)   
     FROM AdventureWorksEntities.Address AS a  
@@ -314,7 +314,7 @@ SELECT a.AddressID, (SELECT VALUE DEREF(v) FROM
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE p.Name FROM AdventureWorksEntities.Product as p  
 ```  
   
@@ -346,7 +346,7 @@ SELECT VALUE p.Name FROM AdventureWorksEntities.Product as p
   
  Example:  
   
-```  
+```sql  
 CASE WHEN AVG({25,12,11}) < 100 THEN TRUE ELSE FALSE END  
 ```  
   

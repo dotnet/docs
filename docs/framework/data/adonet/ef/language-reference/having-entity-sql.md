@@ -8,7 +8,7 @@ Specifies a search condition for a group or an aggregate.
   
 ## Syntax  
   
-```  
+```sql  
 [ HAVING search_condition ]  
 ```  
   
@@ -24,7 +24,7 @@ Specifies a search condition for a group or an aggregate.
   
  The HAVING clause works like the WHERE clause except that it is applied after the GROUP BY operation. This means that the HAVING clause can only make references to grouping aliases and aggregates, as illustrated in the following example.  
   
-```  
+```sql  
 SELECT Name, SUM(o.Price * o.Quantity) AS Total FROM orderLines AS o GROUP BY o.Product AS Name  
 HAVING SUM(o.Quantity) > 1  
 ```  

@@ -8,7 +8,7 @@ Divides one number by another.
   
 ## Syntax  
   
-```  
+```sql  
 dividend / divisor  
 ```  
   

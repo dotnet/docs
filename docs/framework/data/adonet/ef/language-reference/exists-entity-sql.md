@@ -8,7 +8,7 @@ Determines if a collection is empty.
   
 ## Syntax  
   
-```  
+```sql  
 [NOT] EXISTS ( expression )  
 ```  
   

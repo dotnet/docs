@@ -8,7 +8,7 @@ Converts a collection of collections into a flattened collection. The new collec
   
 ## Syntax  
   
-```  
+```sql  
 FLATTEN ( collection )  
 ```  
   

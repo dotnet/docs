@@ -31,7 +31,7 @@ This topic describes the differences between [!INCLUDE[esql](../../../../../../i
   
  The following are all valid [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries:  
   
-```  
+```sql  
 1+2 *3  
 "abc"  
 row(1 as a, 2 as b)  
@@ -66,32 +66,32 @@ set(e1)
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] also imposes additional restrictions on queries involving `group by` clauses. Expressions in the `select` clause and `having` clause of such queries may only refer to the `group by` keys via their aliases. The following construct is valid in Transact-SQL but are not in [!INCLUDE[esql](../../../../../../includes/esql-md.md)]:  
   
-```  
+```sql  
 select t.x + t.y from T as t group by t.x + t.y  
 ```  
   
  To do this in [!INCLUDE[esql](../../../../../../includes/esql-md.md)]:  
   
-```  
+```sql  
 select k from T as t group by (t.x + t.y) as k  
 ```  
   
 ## Referencing Columns (Properties) of Tables (Collections)  
  All column references in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] must be qualified with the table alias. The following construct (assuming that `a` is a valid column of table `T`) is valid in Transact-SQL but not in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
-```  
+```sql  
 select a from T  
 ```  
   
  The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] form is  
   
-```  
+```sql  
 select t.a as A from T as t  
 ```  
   
  The table aliases are optional in the `from` clause. The name of the table is used as the implicit alias. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] allows the following form as well:  
   
-```  
+```sql  
 select Tab.a from Tab  
 ```  
   
@@ -100,7 +100,7 @@ select Tab.a from Tab
   
  For example, if `p` is an expression of type Person, the following is the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] syntax for referencing the city of the address of this person.  
   
-```  
+```sql  
 p.Address.City   
 ```  
   
@@ -114,7 +114,7 @@ p.Address.City
 ## Changes to Group By  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports aliasing of `group by` keys. Expressions in the `select` clause and `having` clause must refer to the `group by` keys via these aliases. For example, this [!INCLUDE[esql](../../../../../../includes/esql-md.md)] syntax:  
   
-```  
+```sql  
 select k1, count(t.a), sum(t.a)  
 from T as t  
 group by t.b + t.c as k1  
@@ -122,7 +122,7 @@ group by t.b + t.c as k1
   
  ...is equivalent to the following Transact-SQL:  
   
-```  
+```sql  
 select b + c, count(*), sum(a)   
 from T  
 group by b + c  
@@ -133,27 +133,27 @@ group by b + c
   
  Collection-based aggregates operate on collections and produce the aggregated result. These can appear anywhere in the query, and do not require a `group by` clause. For example:  
   
-```  
+```sql  
 select t.a as a, count({1,2,3}) as b from T as t     
 ```  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] also supports SQL-style aggregates. For example:  
   
-```  
+```sql  
 select a, sum(t.b) from T as t group by t.a as a  
 ```  
   
 ## ORDER BY Clause Usage  
  Transact-SQL allows ORDER BY clauses to be specified only in the topmost SELECT .. FROM .. WHERE block. In [!INCLUDE[esql](../../../../../../includes/esql-md.md)] you can use a nested ORDER BY expression and it can be placed anywhere in the query, but ordering in a nested query is not preserved.  
   
-```  
+```sql  
 -- The following query will order the results by the last name  
 SELECT C1.FirstName, C1.LastName  
         FROM AdventureWorks.Contact as C1  
         ORDER BY C1.LastName  
 ```  
   
-```  
+```sql  
 -- In the following query ordering of the nested query is ignored.  
 SELECT C2.FirstName, C2.LastName  
     FROM (SELECT C1.FirstName, C1.LastName  
@@ -191,14 +191,14 @@ SELECT C2.FirstName, C2.LastName
  Batching Query Results  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not support batching query results. For example, the following is valid Transact-SQL (sending as a batch):  
   
-```  
+```sql  
 select * from products;  
 select * from catagories;  
 ```  
   
  However, the equivalent [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is not supported:  
   
-```  
+```sql  
 Select value p from Products as p;  
 Select value c from Categories as c;  
 ```  

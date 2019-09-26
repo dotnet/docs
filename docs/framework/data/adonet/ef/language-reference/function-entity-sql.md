@@ -8,7 +8,7 @@ Defines a function in the scope of an Entity SQL query command.
   
 ## Syntax  
   
-```  
+```sql  
 FUNCTION function-name  
 ( [ { parameter_name <type_definition>   
         [ ,...n ]  

@@ -8,7 +8,7 @@ Determines whether a value matches any value in a collection.
   
 ## Syntax  
   
-```  
+```sql  
 value [ NOT ] IN expression  
 ```  
   

@@ -8,7 +8,7 @@ Returns a collection of argument values that are projected off the current group
   
 ## Syntax  
   
-```  
+```sql  
 GROUPPARTITION( [ALL|DISTINCT] expression )  
 ```  
   
@@ -19,14 +19,14 @@ GROUPPARTITION( [ALL|DISTINCT] expression )
 ## Remarks  
  The following query produces a list of products and a collection of order line quantities per each product:  
   
-```  
+```sql  
 select p, GroupPartition(ol.Quantity) from LOB.OrderLines as ol  
   group by ol.Product as p  
 ```  
   
  The following two queries are semantically equal:  
   
-```  
+```sql  
 select p, Sum(GroupPartition(ol.Quantity)) from LOB.OrderLines as ol  
   group by ol.Product as p  
 select p, Sum(ol.Quantity) from LOB.OrderLines as ol  
@@ -37,13 +37,13 @@ select p, Sum(ol.Quantity) from LOB.OrderLines as ol
   
  `GROUPPARTITION` is a special aggregate operator that holds a reference to the grouped input set. This reference can be used anywhere in the query where GROUP BY is in scope. For example,  
   
-```  
+```sql  
 select p, GroupPartition(ol.Quantity) from LOB.OrderLines as ol group by ol.Product as p  
 ```  
   
  With a regular GROUP BY, the results of the grouping are hidden. You can only use the results in an aggregate function. In order to see the results of the grouping, you have to correlate the results of the grouping and the input set by using a subquery. The following two queries are equivalent:  
   
-```  
+```sql  
 select p, (select q from GroupPartition(ol.Quantity) as q) from LOB.OrderLines as ol group by ol.Product as p  
 select p, (select ol.Quantity as q from LOB.OrderLines as ol2 where ol2.Product = p) from LOB.OrderLines as ol group by ol.Product as p  
 ```  
@@ -54,7 +54,7 @@ select p, (select ol.Quantity as q from LOB.OrderLines as ol2 where ol2.Product 
   
  For instance all of the following input expressions to the group partition are valid:  
   
-```  
+```sql  
 select groupkey, GroupPartition(b) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  
 select groupkey, GroupPartition(1) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  
 select groupkey, GroupPartition(a + b) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  

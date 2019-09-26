@@ -203,4 +203,4 @@ Congratulations! You have successfully served your model to make predictions ove
 
 ## Next Steps
 
-- [Deploy to Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1#deploy-the-app-to-azure)
+- [Deploy to Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs#deploy-the-app-to-azure)

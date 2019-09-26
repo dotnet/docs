@@ -116,7 +116,7 @@ You can map your localizable content to resource assemblies by using resource id
 
 2. Use the following command to assign resource identifiers to your localizable content.
 
-    ```
+    ```console
     msbuild -t:updateuid LocalizingWpfInWf.csproj
     ```
 
@@ -136,7 +136,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 2. In the Command Prompt window, use the following command to extract resource strings into a temporary file.
 
-    ```
+    ```console
     LocBaml /parse LocalizingWpfInWf.g.en-US.resources /out:temp.csv
     ```
 
@@ -146,7 +146,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 5. Use the following command to generate the localized resource file.
 
-    ```
+    ```console
     LocBaml /generate /trans:temp.csv LocalizingWpfInWf.g.en-US.resources /out:. /cul:es-ES
     ```
 
@@ -154,7 +154,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 6. Use the following command to build the localized satellite assembly.
 
-    ```
+    ```console
     Al.exe /out:LocalizingWpfInWf.resources.dll /culture:es-ES /embed:LocalizingWpfInWf.Form1.es-ES.resources /embed:LocalizingWpfInWf.g.es-ES.resources
     ```
 

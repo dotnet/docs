@@ -27,7 +27,7 @@ ms.author: "mairaw"
 ## ThreadCreated Event  
  This event is also raised  under the rundown provider as `ThreadDC` (under the `AppDomainResourceManagementRundownKeyword` keyword). This is the only event that is raised under the rundown provider in this category.  
   
- The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+ The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -152,4 +152,4 @@ ms.author: "mairaw"
   
 ## See also
 
-- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+- [CLR ETW Events](clr-etw-events.md)

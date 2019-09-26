@@ -22,7 +22,7 @@ ms.author: "mairaw"
  These events relate to the runtime's worker thread pool and provide notifications for thread events (for example, when a thread is created or stopped). The worker thread pool uses an adaptive algorithm for concurrency control, where the number of threads is calculated based on the measured throughput. Worker thread pool events can be used to understand how an application is using the thread pool, and the effect that certain workloads may have on concurrency control.  
   
 ### ThreadPoolWorkerThreadStart and ThreadPoolWorkerThreadStop  
- The following table shows the keyword and level for these events. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+ The following table shows the keyword and level for these events. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -211,4 +211,4 @@ ms.author: "mairaw"
   
 ## See also
 
-- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+- [CLR ETW Events](clr-etw-events.md)

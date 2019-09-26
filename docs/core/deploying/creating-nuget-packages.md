@@ -27,7 +27,7 @@ cd src/SuperAwesomeLibrary
 
 Then it's just a single command from the command line:
 
-```console
+```dotnetcli
 dotnet pack
 ```
 
@@ -43,7 +43,7 @@ SuperAwesomeLibrary.1.0.0.symbols.nupkg
 
 Note that this will produce a package which is capable of being debugged. If you want to build a NuGet package with release binaries, all you need to do is add the `--configuration` (or `-c`) switch and use `release` as the argument.
 
-```console
+```dotnetcli
 dotnet pack --configuration release
 ```
 

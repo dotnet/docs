@@ -8,7 +8,7 @@ Declares a XAML member in markup.
   
 ## XAML Object Element Usage  
   
-```  
+```xaml  
 <object x:Class="className">  
   <x:Members>  
     <x:Member Name="propertyName"/>  

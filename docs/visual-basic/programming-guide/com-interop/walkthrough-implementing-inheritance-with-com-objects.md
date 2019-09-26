@@ -16,7 +16,7 @@ The following procedure shows how to use Visual Basic 6.0 to create a COM object
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
 
-### To build the COM object that is used in this walkthrough
+## To build the COM object that is used in this walkthrough
 
 1. In Visual Basic 6.0, open a new ActiveX DLL project. A project named `Project1` is created. It has a class named `Class1`.
 
@@ -70,7 +70,7 @@ The following procedure shows how to use Visual Basic 6.0 to create a COM object
 
 In the following procedure, you will create an interop assembly, which acts as a bridge between unmanaged code (such as a COM object) and the managed code Visual Studio uses. The interop assembly that Visual Basic creates handles many of the details of working with COM objects, such as *interop marshaling*, the process of packaging parameters and return values into equivalent data types as they move to and from COM objects. The reference in the Visual Basic application points to the interop assembly, not the actual COM object.
 
-#### To use a COM object with Visual Basic 2005 and later versions
+### To use a COM object with Visual Basic 2005 and later versions
 
 1. Open a new Visual Basic Windows Application project.
 
@@ -102,7 +102,7 @@ In the following procedure, you will create an interop assembly, which acts as a
 
 The new class inherits the properties of the base class in the COM object, overloads a method, and defines a new method to extend the class.
 
-#### To test the inherited class
+### To test the inherited class
 
 1. Add a button to your startup form, and then double-click it to view its code.
 

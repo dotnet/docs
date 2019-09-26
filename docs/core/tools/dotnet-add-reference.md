@@ -59,18 +59,18 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 * Add a project reference:
 
-  ```console
+  ```dotnetcli
   dotnet add app/app.csproj reference lib/lib.csproj
   ```
 
 * Add multiple project references to the project in the current directory:
 
-  ```console
+  ```dotnetcli
   dotnet add reference lib1/lib1.csproj lib2/lib2.csproj
   ```
 
 * Add multiple project references using a globbing pattern on Linux/Unix:
 
-  ```console
+  ```dotnetcli
   dotnet add app/app.csproj reference **/*.csproj
   ```

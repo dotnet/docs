@@ -243,7 +243,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
 
 1. Restore packages and build projects:
 
-   ```bash
+   ```dotnetcli
    dotnet restore
    dotnet build
    ```
@@ -315,7 +315,7 @@ This will add the three projects above and a solution file which links them toge
 
 The best way to reference a project is to use the .NET Core CLI to add a project reference. From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
-```console
+```dotnetcli
 dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 ```
 

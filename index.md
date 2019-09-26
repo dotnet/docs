@@ -5,7 +5,7 @@ hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 ms.custom: "updateeachrelease"
-ms.date: "09/04/2019"
+ms.date: "09/23/2019"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -30,7 +30,7 @@ ms.date: "09/04/2019"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-2.2">
+                <a href="/dotnet/api/?view=netcore-3.0">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">

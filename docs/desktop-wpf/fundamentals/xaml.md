@@ -4,6 +4,7 @@ description: Learn how the XAML language is structured and implemented by Window
 author: thraka
 ms.date: 08/08/2019
 ms.author: adegeo
+dev_langs: ["csharp", "vb"]
 helpviewer_keywords: 
   - "user interfaces [XAML]"
   - "classes [XAML]"

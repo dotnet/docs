@@ -94,7 +94,7 @@ F# functions are also first-class, meaning they can be passed as parameters and 
 F# has full support for objects, which are useful data types when you need to blend data and functionality. F# functions are used to manipulate objects.
 
 ```fsharp
-type Set<[<EqualityConditionOn>] 'T when 'T: comparison>(elements: seq<'T>) =
+type Set<'T when 'T: comparison>(elements: seq<'T>) =
     member s.IsEmpty = // Implementation elided
     member s.Contains (value) =// Implementation elided
     member s.Add (value) = // Implementation elided

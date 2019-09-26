@@ -8,7 +8,7 @@ Extracts the key of a reference or of an entity expression.
   
 ## Syntax  
   
-```  
+```sql  
 KEY(createref_expression)  
 ```  
   
@@ -17,7 +17,7 @@ KEY(createref_expression)
   
  In the following example, the key operator is passed a reference to the BadOrder entity, and returns the key portion of that reference. In this case, a record type with exactly one field corresponding to the `Id` property.  
   
-```  
+```sql  
 select Key( CreateRef(LOB.BadOrders, row(o.Id)) )   
 from LOB.Orders as o  
 ```  

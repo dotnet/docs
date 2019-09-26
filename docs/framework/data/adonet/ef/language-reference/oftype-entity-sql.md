@@ -8,7 +8,7 @@ Returns a collection of objects from a query expression that is of a specific ty
   
 ## Syntax  
   
-```  
+```sql  
 OFTYPE ( expression, [ONLY] test_type )  
 ```  
   
@@ -27,19 +27,19 @@ OFTYPE ( expression, [ONLY] test_type )
   
  An `OFTYPE` expression is an abbreviation of the following query expression:  
   
-```  
+```sql  
 select value treat(t as T) from ts as t where t is of (T)  
 ```  
   
  Given that a Manager is a subtype of Employee, the following expression produces a collection of only managers from a collection of employees:  
   
-```  
+```sql  
 OfType(employees, NamespaceName.Manager)  
 ```  
   
  It is also possible to up cast a collection using the type filter:  
   
-```  
+```sql
 OfType(executives, NamespaceName.Manager)  
 ```  
   

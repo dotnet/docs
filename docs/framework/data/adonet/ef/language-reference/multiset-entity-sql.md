@@ -8,9 +8,9 @@ Creates an instance of a multiset from a list of values. All the values in the M
   
 ## Syntax  
   
-```  
+```sql  
 MULTISET ( expression [{, expression }] )  
-or  
+-- or  
 { expression [{, expression }] }  
 ```  
   

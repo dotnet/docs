@@ -8,7 +8,7 @@ Determines whether a specific character `String` matches a specified pattern.
   
 ## Syntax  
   
-```  
+```sql  
 match [NOT] LIKE pattern [ESCAPE escape]  
 ```  
   
@@ -53,7 +53,7 @@ match [NOT] LIKE pattern [ESCAPE escape]
 ### Escape  
  By using the ESCAPE clause, you can search for character strings that include one or more of the special wildcard characters described in the table in the previous section. For example, assume several documents include the literal "100%" in the title and you want to search for all of those documents. Because the percent (%) character is a wildcard character, you must escape it using the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] ESCAPE clause to successfully execute the search. The following is an example of this filter.  
   
-```  
+```sql  
 "title like '%100!%%' escape '!'"  
 ```  
   

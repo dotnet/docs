@@ -8,7 +8,7 @@ Returns the remainder of one expression divided by another.
   
 ## Syntax  
   
-```  
+```sql  
 dividend % divisor  
 ```  
   

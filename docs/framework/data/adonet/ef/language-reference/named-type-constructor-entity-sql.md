@@ -8,7 +8,7 @@ Used to create instances of conceptual model nominal types such as Entity or Com
   
 ## Syntax  
   
-```  
+```sql  
 [{identifier. }] identifier( [expression [{, expression }]] )  
 ```  
   

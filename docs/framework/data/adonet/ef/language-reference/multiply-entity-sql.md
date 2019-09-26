@@ -8,7 +8,7 @@ Multiplies two expressions.
   
 ## Syntax  
   
-```  
+```sql  
 expression * expression  
 ```  
   

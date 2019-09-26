@@ -8,11 +8,11 @@ Negates a `Boolean` expression.
   
 ## Syntax  
   
-```  
+```sql  
 NOT boolean_expression  
-or  
+-- or  
 ! boolean_expression  
-```  
+``` 
   
 ## Arguments  
  `boolean_expression`  

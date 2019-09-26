@@ -8,7 +8,7 @@ Returns a collection of any distinct values that are returned by both the query 
   
 ## Syntax  
   
-```  
+```sql  
 expression INTERSECT expression  
 ```  
   

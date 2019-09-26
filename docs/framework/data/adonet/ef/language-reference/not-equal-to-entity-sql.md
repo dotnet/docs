@@ -8,9 +8,9 @@ Compares two expressions to determine whether the left expression is not equal t
   
 ## Syntax  
   
-```  
+```sql  
 expression != expression  
-or  
+-- or  
 expression <> expression  
 ```  
   

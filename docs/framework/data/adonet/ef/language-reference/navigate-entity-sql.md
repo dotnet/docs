@@ -10,7 +10,7 @@ Navigates over the relationship established between entities.
 
 ## Syntax
 
-```
+```sql
 navigate(instance-expression, [relationship-type], [to-end [, from-end] ])
 ```
 

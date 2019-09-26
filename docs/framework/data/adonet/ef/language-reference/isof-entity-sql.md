@@ -8,7 +8,7 @@ Determines whether the type of an expression is of the specified type or one of 
   
 ## Syntax  
   
-```  
+```sql  
 expression IS [ NOT ] OF ( [ ONLY ] type )  
 ```  
   

@@ -46,13 +46,16 @@ The name of the executable determines how you invoke the tool. The following tab
 
     If you're trying to run a global tool, check that the `PATH` environment variable on your machine contains the path where you installed the global tool and that the executable is in that path.
 
-    The .NET Core CLI tries to add the default locations to the PATH environment variable on its first usage. However, there are a couple of scenarios where the location might not be added to PATH automatically, such as:
+    The .NET Core CLI tries to add the default locations to the PATH environment variable on its first usage. However, there are a couple of scenarios where the location might not be added to PATH automatically, so you'll have to edit PATH to configure it for the following cases:
 
-  * If you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable.
-  * On macOS, if you've installed the .NET Core SDK using *.tar.gz* files and not *.pkg*.
-  * On Linux, you need to edit the shell environment file to configure the PATH.
-
+  * If you're using Linux and you've installed the .NET Core SDK using *.tar.gz* files and not apt-get or rpm.
+  * If you're using macOS 10.15 "Catalina" or later versions.
+  * If you're using macOS 10.14 "Mojave" or earlier versions, and you've installed the .NET Core SDK using *.tar.gz* files and not *.pkg*.
+  * If you've installed the .NET Core 3.0 SDK and you've set the `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH` environment variable to `false`.
+  * If you've installed .NET Core 2.2 SDK or earlier versions, and you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable to `true`.
+  
   For more information about global tools, see [.NET Core Global Tools overview](global-tools.md).
+
 * Local tools
 
   If you're trying to run a local tool, verify that there's a manifest file called *dotnet-tools.json* in the current directory or any of its parent directories. This file can also live under a folder named *.config* anywhere in the project folder hierarchy, instead of the root folder. If *dotnet-tools.json* exists, open it and check for the tool you're trying to run. If the file doesn't contain an entry for `"isRoot": true`, then also check further up the file hierarchy for additional tool manifest files.

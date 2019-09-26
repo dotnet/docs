@@ -254,11 +254,11 @@ Since you'll display the image data and the related predictions more than once, 
 
    [!code-csharp[DisplayPrediction](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DisplayPrediction)]
 
-## Generate the model
+1. Add a method to generate the model
 
-This part of the code is the heart of the tutorial. It creates a pipeline for the model, and trains the pipeline to produce the ML.NET model. It also evaluates the model against some previously unseen test data.
+    This method is the heart of the tutorial. It creates a pipeline for the model, and trains the pipeline to produce the ML.NET model. It also evaluates the model against some previously unseen test data.
 
-1. Create the `GenerateModel()` method, just after the `InceptionSettings` struct and just before the `DisplayResults()` method, using the following code:
+    Create the `GenerateModel()` method, just after the `InceptionSettings` struct and just before the `DisplayResults()` method, using the following code:
 
     ```csharp
     public static ITransformer GenerateModel(MLContext mlContext)
@@ -267,7 +267,9 @@ This part of the code is the heart of the tutorial. It creates a pipeline for th
     }
     ```
 
-### Create the ML.NET model pipeline
+    The following steps in the tutorial add the steps to construct, train, and evaluate the model.
+
+## Construct the ML.NET model pipeline
 
 An ML.NET model pipeline is a chain of estimators. Note that no execution happens during pipeline construction. The estimator objects are created but not executed.
 
@@ -303,7 +305,7 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
     [!code-csharp[MapKeyToValue](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#MapKeyToValue)]
 
-### Train the model
+## Train the model
 
 1. Load the training data using the `MLContext.Data.LoadFromTextFile` wrapper. Add the following code as the next line in the `GenerateModel()` method:
 
@@ -317,7 +319,7 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
     The `Fit()` method trains your model by applying the training dataset to the pipeline.
 
-### Evaluate the accuracy of the model
+## Evaluate the accuracy of the model
 
 1. Load and transform the test data, by adding the following code to the next line of the `GenerateModel` method:
 
@@ -345,13 +347,11 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
     * `Log-loss` - see [Log Loss](../resources/glossary.md#log-loss). You want Log-loss to be as close to zero as possible.
     * `Per class Log-loss`. You want per class Log-loss to be as close to zero as possible.
 
-### Return the trained model
+## Tie it all together 
 
 1. Add the following code to return the trained model as the next line:
 
     [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ReturnModel)]
-
-## Fill in the `Main` method
 
 1. Add the call to `GenerateModel` in the `Main` method after the creation of the MLContext class:
 

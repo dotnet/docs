@@ -22,7 +22,7 @@ Figure 5-4 shows this scenario.
 
 In the previous figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains data tables for basket and lineItems, it doesn't contain product or pricing data. Instead, those data items are found in the catalog and pricing microservices. This presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database? 
 
-One option that we discussed in Chapter 4 involves a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said that direct HTTP calls couple microservices together, reducing their autonomy, and diminishing many of their architectural benefits. We could also send asynchronous messages across microservices for data, but that could leave the user waiting for a response.
+One option that we discussed in Chapter 4 involves a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said that direct HTTP calls couple microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages across microservices for data, but that could leave the user waiting for a response.
 
 A common approach for removing cross-service queries is the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
 
@@ -42,23 +42,23 @@ While querying data across microservices is difficult, implementing a transactio
 
 **Figure 5-6**. Implementing a transaction across microservices
 
-Note how in the previous figure five independent microservices all participate in a distributed *Create Order* transaction. However, the transaction for each of the five individual microservices must succeed, or all must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there is no support for a distributed transaction across all five services.
+Note in the previous figure how five independent microservices participate in a distributed *Create Order* transaction. The transaction for each of the five individual microservices must succeed, or all must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
 
 Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to programmatically construct a distributed transaction.
 
-A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It is implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-7 shows a failed transaction with the Saga pattern.
+A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-7 shows a failed transaction with the Saga pattern.
 
 ![Roll back in saga pattern](./media/saga-rollback-operation.png)
 
 **Figure 5-7**. Rolling back a transaction
 
-Note how in the previous figure the *GenerateContent* operation has failed in the music microservice. The Saga invokes compensating transactions (in red) to remove the content, cancel the payment, and cancel the order, returning the data for each microservice back to a consistent state.
+In the previous figure, the *GenerateContent* operation has failed in the music microservice. The Saga invokes compensating transactions (in red) to remove the content, cancel the payment and the order, and return the data for each microservice back to a consistent state.
 
-Saga patterns are typically choreographed as a series of related events or orchestrated as a set of related commands.
+Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands.
 
 ## CQRS pattern
 
-CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from those that write data. This pattern can help maximize performance, scalability, and security.
+CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from operations that write data. This pattern can help maximize performance, scalability, and security.
 
 In normal data access scenarios, you implement a single model (entity and repository object) that perform *both* read and write data operations.
 
@@ -80,7 +80,7 @@ Typically, CQRS patterns are applied to limited sections of your system based up
 
 The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies cannot be overstated, especially for distributed cloud native systems. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
-On the one side, relational databases have been a prevalent technology for decades. They are mature, proven, and widely implemented. Competing database products, expertise and tooling abounds. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data and have [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) (also known as Atomicity, Consistency, Isolation, and Durability) guarantees.
+On the one side, relational databases have been a prevalent technology for decades. They are mature, proven, and widely implemented. Competing database products, expertise, and tooling abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and have [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) (also known as Atomicity, Consistency, Isolation, and Durability) guarantees.
 
 No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. They do not offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
 
@@ -98,11 +98,13 @@ The theorem states that any distributed data system will offer a trade-off betwe
 
 - *Partition Tolerance.* Guarantees that the system will continue operating if a node fails or loses connectivity with another.
 
-Relational databases exhibit consistency and availability, but not partition tolerance. Partitioning a relational database, such as sharding, is difficult and can impact performance.
+Generally speaking, relational databases typically exhibit consistency and availability, but not partition tolerance. Partitioning a relational database, such as sharding, is difficult and can impact performance.
 
-On the other hand, NoSQL databases typically exhibit partition tolerance, known as horizontal scalability, and high availability. As the CAP theorem specifies, you can only have two of the three principles, and you lose the  consistency property.
+On the other hand, NoSQL databases typically exhibit high availability and partition tolerance, implemented as horizontal scalability. As the CAP theorem specifies, you can only have two of the three principles, and with partition tolerance, you lose the consistency property.
 
-NoSQL databases are distributed and commonly scaled out across commodity servers. Doing so can provide great availability, both within and across geographical regions at a reduced cost. Data can be partitioned and replicated across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query, even if the data that it is presenting is stale and has not been updated yet.
+> Care must be taken with these descriptions as some databases support configurations that can *"toggle"* these principles. For example, MySQL can be configured as either consistent and available or available and partition tolerant. 
+
+NoSQL databases are distributed and scale out across commodity servers. Doing so can provide great availability, both within and across geographical regions at a reduced cost. Data can be partitioned and replicated across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query, even if the data that it is presenting is stale and has not been updated yet.
 
 This is known [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/), a characteristic of distributed data systems where ACID transactions are not supported. It is a brief delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. If you update a product item in a NoSQL database in the United States, but at same time query that same data item from a replica node in Europe, you might retrieve the earlier product information - until the European node has been updated with product change. The trade-off is that by giving up [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency),  waiting for all replica nodes to update before returning a query result, you are able to support enormous scale and traffic volume, but with the possibility of presenting older data.
 
@@ -116,31 +118,27 @@ NoSQL databases can be categorized by the following four models:
 
 - *Graph stores.* (neo4j, titan) Data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes.
 
-NoSQL databases can be optimized to deal with large-scale data, especially when the data is relatively simple. Consider a NoSQL database when:
+NoSQL databases can be optimized to deal with large-scale data, especially when the data is relatively simple. 
 
-- Your workload requires large scale and high-concurrency.
 
-- You have large numbers of users.
+|  Consider a NoSQL database when: | 
+| :-------- |
+| Your workload requires large scale and high-concurrency |
+| You have large numbers of users |
+| Your data can be expressed simply without relationships | 
+| You need to geographically distribute your data | 
+| You don't need ACID guarantees | 
+| Will be deployed to commodity hardware, such as with public clouds |
 
-- Your data can be expressed simply without relationships.
+<br/>
 
-- You need to geographically distribute your data.
-
-- You don't need ACID guarantees.
-
-- Will be deployed to commodity hardware.
-
-Then, consider a relational database when:
-
-- Your workloads require medium to large scale.
-
-- Concurrency isn't a major concern.
-
-- ACID guarantees are needed.
-
-- Data is best expressed relationally.
-
-- Your application will be deployed to large, high-end hardware.
+|  Consider a relational database when: | 
+| :-------- |
+| Your workloads require medium to large scale |
+| Concurrency isn't a major concern|
+| ACID guarantees are needed | 
+| Data is best expressed relationally | 
+| Your application will be deployed to large, high-end hardware | 
 
 Next, we look at data storage in the Azure cloud.
 

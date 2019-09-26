@@ -214,7 +214,7 @@ To run the project, perform the following steps:
 
 10. Choose the F5 key to run the program, and then choose the **Start** button.
 
-    The following output should appear.
+    The following output should appear:
 
     ```console
     ONE:   Entering startButton_Click.
@@ -301,7 +301,7 @@ The following statement assigns this task to the `getLengthTask` variable.
 Dim getLengthTask As Task(Of Integer) = AccessTheWebAsync()
 ```
 
-As in `AccessTheWebAsync`, `startButton_Click` can continue with work that doesn’t depend on the results of the asynchronous task (`getLengthTask`) until the task is awaited. The following output lines represent that work.
+As in `AccessTheWebAsync`, `startButton_Click` can continue with work that doesn’t depend on the results of the asynchronous task (`getLengthTask`) until the task is awaited. The following output lines represent that work:
 
 ```console
 FOUR:  Back in startButton_Click.
@@ -321,7 +321,7 @@ In the following illustration, the arrows show the flow of control from the awai
 
 ### Step FIVE
 
-When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing.
+When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing:
 
 ```console
 FIVE:  Back in AccessTheWebAsync.

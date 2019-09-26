@@ -216,7 +216,7 @@ To extend the example yourself, step by step, follow the instructions in the "Do
     Await AccessTheWebAsync(cts.Token)
     ```
 
-5. If you don’t cancel the program, it produces the following output.
+5. If you don’t cancel the program, it produces the following output:
 
     ```console
     Length of the downloaded string: 35939.

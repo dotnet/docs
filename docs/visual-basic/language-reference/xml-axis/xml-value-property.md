@@ -1,9 +1,9 @@
 ---
 title: "XML Value Property (Visual Basic)"
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vb.XmlPropertyExtensionValue"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Value property [Visual Basic]"
   - "Visual Basic code, accessing XML"
   - "XML axis [Visual Basic], Value"

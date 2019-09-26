@@ -119,9 +119,9 @@ Transient command- or event-based data used to orchestrate application behavior 
 
 Your application's requirements should dictate its architecture. There are many different Azure services available. Choosing the right one is an important decision. Microsoft offers a gallery of reference architectures to help identify typical architectures optimized for common scenarios. You may find a reference architecture that maps closely to your application's requirements, or at least offers a starting point.
 
-Figure 11-2 shows an example reference architecture. This diagram describes a recommended architecture approach for a Sitecore content management system website optimized for marketing.
+Figure 11-1 shows an example reference architecture. This diagram describes a recommended architecture approach for a Sitecore content management system website optimized for marketing.
 
-![Figure 11-2](./media/image11-2.png)
+![Figure 11-1](./media/image11-2.png)
 
 **Figure 11-1.** Sitecore marketing website reference architecture.
 

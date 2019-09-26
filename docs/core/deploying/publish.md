@@ -20,10 +20,10 @@ You can create various types of deployments for .NET Core applications:
   Unlike Framework Dependent Deployment (FDD), a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. Additionally SCDs include an executable that will launch the application. The executable is a renamed version of the platform-specific .NET Core host.
 
 - **Framework-Dependent Executables (FDE)**  
-  Produce an executable that runs on a target platform. Similar to FDDs, framework-dependent executables (FDE) aren’t self-contained. These deployments still rely on the presence of a shared system-wide version of .NET Core to run. Unlike an SCD, your app only contains your code and any third-party dependencies that are outside of the .NET Core libraries. FDEs produce an executable that runs on the target platform.
+  The same as an FDD except the application is packaged into a single executable file. A framework-dependent executable (FDE) relies on the presence of a shared system-wide version of .NET Core to run. Unlike an SCD, your app only contains your code and any third-party dependencies that are outside of the .NET Core libraries.
 
 - **Self-contained Executables (SCE)**  
-  Produce an executable that runs on a target platform. Similar to SCDs, a self-contained executable (SCE) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications.
+  The same as an SCD except the application is packaged into a single executable file. A self-contained executable (SCE) doesn't rely on the presence of shared components on the target system. 
 
 
 ## Framework-Dependent Deployments (FDD)

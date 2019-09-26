@@ -43,4 +43,4 @@ result = object1 IsNot object2
 - [Is Operator](is-operator.md)
 - [TypeOf Operator](typeof-operator.md)
 - [Operator Precedence in Visual Basic](operator-precedence.md)
-- [How to: Test Whether Two Objects Are the Same](how-to-test-whether-two-objects-are-the-same.md)
+- [How to: Test Whether Two Objects Are the Same](../../programming-guide/language-features/operators-and-expressions/how-to-test-whether-two-objects-are-the-same.md)

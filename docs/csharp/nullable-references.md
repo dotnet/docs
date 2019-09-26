@@ -68,12 +68,12 @@ You can also use directives to set these same contexts anywhere in your project:
 - `#nullable enable`: Sets the nullable annotation context and nullable warning context to **enabled**.
 - `#nullable disable`: Sets the nullable annotation context and nullable warning context to **disabled**.
 - `#nullable restore`: Restores the nullable annotation context and nullable warning context to the project settings.
-- `#nullable disable nullable warnings`: Set the nullable warning context to **disabled**.
-- `#nullable enable nullable warnings`: Set the nullable warning context to **enabled**.
-- `#nullable restore nullable warnings`: Restores the nullable warning context to the project settings.
-- `#nullable disable nullable annotations`: Set the nullable annotation context to **disabled**.
-- `#nullable enable nullable annotations`: Set the nullable annotation context to **enabled**.
-- `#nullable restore nullable annotations`: Restores the annotation warning context to the project settings.
+- `#nullable disable warnings`: Set the nullable warning context to **disabled**.
+- `#nullable enable warnings`: Set the nullable warning context to **enabled**.
+- `#nullable restore warnings`: Restores the nullable warning context to the project settings.
+- `#nullable disable annotations`: Set the nullable annotation context to **disabled**.
+- `#nullable enable annotations`: Set the nullable annotation context to **enabled**.
+- `#nullable restore annotations`: Restores the annotation warning context to the project settings.
 
 The default nullable annotation and warning contexts are `disabled`. That decision means that your existing code compiles without changes and without generating any new warnings.
 

@@ -7,7 +7,7 @@ ms.date: 02/15/2019
 
 By the very nature of the containers and Docker technology, developers can share their software and dependencies easily with IT operations and production environments while eliminating the typical "it works on my machine" excuse. Containers solve application conflicts between different environments. Indirectly, containers and Docker bring developers and IT operations closer together, making it easier for them to collaborate effectively. Adopting the container workflow provides many customers with the DevOps continuity they've sought but previously had to implement via more complex configuration for release and build pipelines. Containers simplify the build/test/deploy pipelines in DevOps.
 
-![Docker helps building bridges between Developer and architects on the develop/design workload and IT operations in the run/monitor/manage workload](./media/image1.png)
+![Diagram showing the ownership of the life-cycle of a Docker app.](./media/containers-foundation-for-devops-collaboration/persona-workloads-docker-container-lifecycle.png)
 
 **Figure 2-1.** Main workloads per "personas" in the life cycle for containerized Docker applications
 
@@ -51,9 +51,11 @@ If you can answer all those questions, you'll be better prepared to move your ap
 
 Figure 2-2 presents a more detailed workflow for a Docker application life cycle, focusing in this instance on specific DevOps activities and assets.
 
-![This diagram shows the "outer loop" of DevOps. When code is pushed to the repo, a CI pipeline is started, then begins the CD pipeline, where the application gets deployed. Metrics collected from deployed applications are fed back into the development workload, where the "inner loop" occurs, so development teams have actual data to respond to user and business needs.](./media/image2.png)
+![Diagram showing the generic end-to-end life-cycle of a Docker app.](./media/containers-foundation-for-devops-collaboration/generic-end-to-enddpcker-app-life-cycle.png)
 
 **Figure 2-2.** High-level workflow for the Docker containerized application life cycle
+
+This diagram shows the "outer loop" of DevOps. When code is pushed to the repo, a CI pipeline is started, then begins the CD pipeline, where the application gets deployed. Metrics collected from deployed applications are fed back into the development workload, where the "inner loop" occurs, so development teams have actual data to respond to user and business needs.
 
 Everything begins with the developer, who starts writing code in the inner-loop workflow. The inner-loop stage is where developers define everything that happens before pushing code into the code repository (for example, a source control system such as Git). After it's committed, the repository triggers Continuous Integration (CI) and the rest of the workflow.
 

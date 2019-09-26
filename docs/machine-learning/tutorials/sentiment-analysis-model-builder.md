@@ -62,7 +62,7 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 
 ## Choose a scenario
 
-![](./media/sentiment-analysis-model-builder/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](./media/sentiment-analysis-model-builder/model-builder-screen.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
@@ -246,7 +246,7 @@ Now that your application is set up, run the application which should launch in 
 
 When the application launches, enter *Model Builder is cool!* into the text area. The predicted sentiment displayed should be *Not Toxic*.
 
-![](./media/sentiment-analysis-model-builder/web-app.png)
+![Running window with the predicted sentiment window](./media/sentiment-analysis-model-builder/web-app.png)
 
 If you need to reference the Model Builder generated projects at a later time inside of another solution, you can find them inside the `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
 

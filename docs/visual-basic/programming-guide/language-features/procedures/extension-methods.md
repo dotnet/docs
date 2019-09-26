@@ -39,7 +39,6 @@ Extension methods enable developers to add custom functionality to data types th
 
  The following example shows `Print` and `PrintAndPunctuate` defined and called. <xref:System.Runtime.CompilerServices> is imported in the definition module in order to enable access to the extension attribute.
 
-### Code
 
 ```vb
 Imports System.Runtime.CompilerServices

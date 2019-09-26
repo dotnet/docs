@@ -1,11 +1,11 @@
 ---
-title: What's New in C# 8.0 - C# Guide
-description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
-ms.date: 09/10/2019
+title: What's new in C# 8.0 - C# Guide
+description: Get an overview of the new features available in C# 8.0.
+ms.date: 09/20/2019
 ---
 # What's new in C# 8.0
 
-There are many enhancements to the C# language that you can try out already.
+C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](#readonly-members)
 - [Default interface members](#default-interface-members)
@@ -22,10 +22,8 @@ There are many enhancements to the C# language that you can try out already.
 - [Indices and ranges](#indices-and-ranges)
 - [Null-coalescing assignment](#null-coalescing-assignment)
 - [Unmanaged constructed types](#unmanaged-constructed-types)
+- [stackalloc in nested expressions](#stackalloc-in-nested-expressions)
 - [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
-
-> [!NOTE]
-> This article was last updated for C# 8.0 preview 5.
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
 
@@ -487,6 +485,16 @@ Span<Coords<int>> coordinates = stackalloc[]
 ```
 
 For more information, see [Unmanaged types](../language-reference/builtin-types/unmanaged-types.md).
+
+## stackalloc in nested expressions
+
+Starting with C# 8.0, if the result of a [stackalloc](../language-reference/operators/stackalloc.md) expression is of the <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> type, you can use the `stackalloc` expression in other expressions:
+
+```csharp
+Span<int> numbers = stackalloc[] { 1, 2, 3, 4, 5, 6 };
+var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6 ,8 });
+Console.WriteLine(ind);  // output: 1
+```
 
 ## Enhancement of interpolated verbatim strings
 

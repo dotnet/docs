@@ -3,7 +3,7 @@ title: 'Tutorial: Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 09/25/2019
+ms.date: 09/26/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
@@ -80,7 +80,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 1. In the data step of the Model Builder tool, select *File* from the data source dropdown.
 1. Select the button next to the *Select a file* text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory
 1. Choose *fare_amount* in the *Column to Predict (Label)* dropdown and navigate to the train step of the Model Builder tool.
-1. Expand the *Input Columns (Features)* drop-down and uncheck the *trip_time_in_secs* column to exclude it as a feature during training.
+1. Expand the *Input Columns (Features)* dropdown and uncheck the *trip_time_in_secs* column to exclude it as a feature during training.
 
 ## Train the model
 

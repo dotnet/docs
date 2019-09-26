@@ -22,17 +22,13 @@ In this tutorial, you learn how to:
 > * Train and evaluate the ML.NET model
 > * Classify a test image
 
+You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository. Note that by default, the .NET project configuration for this tutorial targets .NET core 2.2.
+
 ## What is transfer learning?
 
 Transfer learning is the process of using knowledge gained while solving one problem and applying it to a different but related problem.
 
 For this tutorial, you use part of a TensorFlow model - trained to classify images into a thousand categories - in an ML.NET model that classifies images into 3 categories.
-
-## Image classification sample overview
-
-The sample is a console application that uses ML.NET to build an image classifier by reusing a pre-trained model to classify images with a small amount of training data.
-
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/samples/tree/master/machine-learning/tutorials/TransferLearningTF) repository. Note that by default, the .NET project configuration for this tutorial targets .NET core 2.2.
 
 ## Prerequisites
 

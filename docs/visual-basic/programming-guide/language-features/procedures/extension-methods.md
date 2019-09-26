@@ -20,7 +20,6 @@ Extension methods enable developers to add custom functionality to data types th
 
 ## Example
 
-### Description
 
  The following example defines a `Print` extension to the <xref:System.String> data type. The method uses `Console.WriteLine` to display a string. The parameter of the `Print` method, `aString`, establishes that the method extends the <xref:System.String> class.
   

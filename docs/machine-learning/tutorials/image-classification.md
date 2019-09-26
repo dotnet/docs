@@ -1,31 +1,32 @@
 ---
-title: 'Tutorial: Retrain TensorFlow image classifier - transfer learning'
-description: Learn how to retrain an image classification TensorFlow model with transfer learning and ML.NET. The original model was trained to classify individual images. After retraining, the new model organizes the images into broad categories.
-ms.date: 09/17/2019
+title: 'Tutorial: Generate an ML.NET image classification model from a pre-trained TensorFlow model'
+description: Learn how to transfer the intelligence from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
+ms.date: 09/26/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-#Customer intent: As a developer, I want to reuse a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
+#Customer intent: As a developer, I want to use a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
 ---
-# Tutorial: Apply transfer learning to a TensorFlow image classifier with ML.NET
+# Tutorial: Generate an ML.NET image classification model from a pre-trained TensorFlow model
 
-Learn how to use a TensorFlow model as part in an ML.NET image classification model.
+Learn how to transfer the intelligence from an existing TensorFlow model into a new ML.NET image classification model.
 
-The TensorFlow model was trained to classify images into thousands of different categories. The ML.NET model makes use of part of the TensorFlow model in its pipeline to train a model to classify images into 3 categories.
+The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of part of the TensorFlow model in its pipeline to train a model to classify images into 3 categories.
 
-Training an [Image Classification](https://en.wikipedia.org/wiki/Outline_of_object_recognition) model from scratch requires setting millions of parameters, a ton of labeled training data and a vast amount of compute resources (hundreds of GPU hours). While not as effective as training a custom model from scratch, transfer learning allows you to shortcut this process by working with thousands of images vs. millions of labeled images and build a customized model fairly quickly (within an hour on a machine without a GPU).
+Training an [Image Classification](https://en.wikipedia.org/wiki/Outline_of_object_recognition) model from scratch requires setting millions of parameters, a ton of labeled training data and a vast amount of compute resources (hundreds of GPU hours). While not as effective as training a custom model from scratch, transfer learning allows you to shortcut this process by working with thousands of images vs. millions of labeled images and build a customized model fairly quickly (within an hour on a machine without a GPU). This tutorial scales that process down even further, using only a dozen training images.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Understand the problem
 > * Incorporate the pre-trained TensorFlow model into the ML.NET pipeline
-> * Classify Images
+> * Train and evaluate the ML.NET model
+> * Classify a test image
 
 ## What is transfer learning?
 
 Transfer learning is the process of using knowledge gained while solving one problem and applying it to a different but related problem.
 
-For this tutorial, part of a TensorFlow model trained to classify images into a thousand different categories as part of an ML.NET model that classifies images into 3 categories.
+For this tutorial, you use part of a TensorFlow model - trained to classify images into a thousand categories - in an ML.NET model that classifies images into 3 categories.
 
 ## Image classification sample overview
 

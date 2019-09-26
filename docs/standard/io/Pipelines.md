@@ -4,7 +4,6 @@ ms.date: "10/01/2019"
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
-  - "vb"
 helpviewer_keywords:
   - "asynchronous I/O"
   - "synchronous I/O"
@@ -16,9 +15,9 @@ ms.author: "mairaw"
 ---
 # System.IO.Pipelines
 
-- [What problem does it solve?](#what-problem-does-it-solve)
+- [What problem does it solve?](#solve)
 - [Pipe](#pipe)
-    - [Basic usage](#basic-usage)
+    - [Basic usage](#pbu)
     - [Backpressure and flow control](#backpressure-and-flow-control)
     - [PipeScheduler](#pipescheduler)
     - [Reset](#reset)
@@ -34,6 +33,8 @@ ms.author: "mairaw"
 - [Streams](#streams)
 
 `System.IO.Pipelines` is a new library that is designed to make it easier to do high performance IO in .NET. It’s a library targeting .NET Standard that works on all .NET implementations.
+
+<a name="solve"></a>
 
 ## What problem does System.IO.Pipelines solve?
 
@@ -141,9 +142,11 @@ PipeReader reader = pipe.Reader;
 PipeWriter reader = pipe.Writer;
 ```
 
+<a name="pbu"></a>
+
 ### Pipe basic usage
 
-[!code-csharp[](media/pipelines/Pipe.cs"?name=snippet)]
+[!code-csharp[](media/pipelines/Pipe.cs?name=snippet)]
 
 Snippet above, embedded below
 
@@ -243,11 +246,11 @@ There are 2 loops:
 - `FillPipeAsync` reads from the `Socket` and writes to the `PipeWriter`.
 - `ReadPipeAsync` reads from the `PipeReader` and parses incoming lines.
 
-There are no explicit buffers allocated. All buffer management is delegated to the `PipeReader`/`PipeWriter` implementations. This makes it easier for consuming code to focus solely on the business logic instead of complex buffer management.
+There are no explicit buffers allocated. All buffer management is delegated to the `PipeReader` and `PipeWriter` implementations. Delegating buffer management makes it easier for consuming code to focus solely on the business logic.
 
-In the first loop, `PipeWriter.GetMemory(int)`:
+In the first loop`:
 
-* Is called to get memory from the underlying writer.
+* `PipeWriter.GetMemory(int)` is called to get memory from the underlying writer.
 * `PipeWriter.Advance(int)` is called to tell the `PipeWriter` how much data was written to the buffer.
 * `PipeWriter.FlushAsync` is called to make the data available to the `PipeReader`.
 
@@ -263,7 +266,7 @@ After finding the end of line (EOL) delimiter and parsing the line:
 * The logic processes the buffer to skip what's already processed.
 * `PipeReader.AdvanceTo` is called to tell the `PipeReader` how much data has been consumed and examined.
 
-The reader and writer loops end by calling `Complete`. `Complete` lets the underlying Pipe release all of the memory it allocated.
+The reader and writer loops end by calling `Complete`. `Complete` lets the underlying Pipe release the memory it allocated.
 
 ### Backpressure and flow control
 

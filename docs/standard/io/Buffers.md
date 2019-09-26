@@ -1,3 +1,19 @@
+---
+title: "Buffers in .NET"
+ms.date: "10/01/2019"
+ms.technology: dotnet-standard
+dev_langs:
+  - "csharp"
+helpviewer_keywords:
+  - "asynchronous I/O"
+  - "synchronous I/O"
+  - "streams, asynchronous streams"
+  - "I/O [.NET Framework], asynchronous I/O"
+ms.assetid: dbdd55ee-d6b9-4f9e-bad0-ab0edd4457f7
+author: "mairaw"
+ms.author: "mairaw"
+---
+
 # System.Buffers
 
 - **Writing**

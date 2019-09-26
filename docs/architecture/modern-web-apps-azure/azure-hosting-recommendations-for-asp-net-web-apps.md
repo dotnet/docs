@@ -121,7 +121,7 @@ Your application's requirements should dictate its architecture. There are many 
 
 Figure 11-2 shows an example reference architecture. This diagram describes a recommended architecture approach for a Sitecore content management system website optimized for marketing.
 
-![](./media/image11-2.png)
+![Figure 11-2](./media/image11-2.png)
 
 **Figure 11-1.** Sitecore marketing website reference architecture.
 

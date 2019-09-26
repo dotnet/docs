@@ -45,9 +45,11 @@ Moreover, having HTTP dependencies between microservices, like when creating lon
 
 The more you add synchronous dependencies between microservices, such as query requests, the worse the overall response time gets for the client apps.
 
-![In synchronous communication a "chain" of requests is created between microservices while serving the client request. This is an anti-pattern. In asynchronous communication microservices use asynchronous messages or http polling to communicate with other microservices, but the client request is served right away.](./media/image15.png)
+![Diagram showing three types of communications across microservices.](./media/communication-in-microservice-architecture/sync-vs-async-patterns-across-microservices.png)
 
 **Figure 4-15**. Anti-patterns and patterns in communication between microservices
+
+In synchronous communication a "chain" of requests is created between microservices while serving the client request. This is an anti-pattern. In asynchronous communication microservices use asynchronous messages or http polling to communicate with other microservices, but the client request is served right away.
 
 If your microservice needs to raise an additional action in another microservice, if possible, do not perform that action synchronously and as part of the original microservice request and reply operation. Instead, do it asynchronously (using asynchronous messaging or integration events, queues, etc.). But, as much as possible, do not invoke the action synchronously as part of the original synchronous request and reply operation.
 
@@ -69,7 +71,7 @@ There are also multiple message formats like JSON or XML, or even binary formats
 
 When a client uses request/response communication, it sends a request to a service, then the service processes the request and sends back a response. Request/response communication is especially well suited for querying data for a real-time UI (a live user interface) from client apps. Therefore, in a microservice architecture you'll probably use this communication mechanism for most queries, as shown in Figure 4-16.
 
-![You can use request/response communication for live queries when the client sends the request to an API Gateway, assuming the response from microservices will arrive in a very short time.](./media/image16.png)
+![Diagram showing request/response comms for live queries and updates.](./media/communication-in-microservice-architecture/request-response-comms-live-queries-updates.png)
 
 **Figure 4-16**. Using HTTP request/response communication (synchronous or asynchronous)
 
@@ -93,11 +95,11 @@ Another possibility (usually for different purposes than REST) is a real-time an
 
 As Figure 4-17 shows, real-time HTTP communication means that you can have server code pushing content to connected clients as the data becomes available, rather than having the server wait for a client to request new data.
 
-![SignalR is a good way to achieve real-time communication for pushing content to the clients from a back-end server.](./media/image17.png)
+![Diagram showing push and real-time comms based on HTTP.](./media/communication-in-microservice-architecture/one-to-many-communication.png)
 
 **Figure 4-17**. One-to-one real-time asynchronous message communication
 
-Since communication is in real time, client apps show the changes almost instantly. This is usually handled by a protocol such as WebSockets, using many WebSockets connections (one per client). A typical example is when a service communicates a change in the score of a sports game to many client web apps simultaneously.
+SignalR is a good way to achieve real-time communication for pushing content to the clients from a back-end server.Since communication is in real time, client apps show the changes almost instantly. This is usually handled by a protocol such as WebSockets, using many WebSockets connections (one per client). A typical example is when a service communicates a change in the score of a sports game to many client web apps simultaneously.
 
 >[!div class="step-by-step"]
 >[Previous](direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md)

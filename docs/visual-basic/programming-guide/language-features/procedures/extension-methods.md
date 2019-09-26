@@ -76,7 +76,6 @@ Module Module1
 End Module  
 ```  
   
-### Comments
 
  All that is required to be able to run these or similar extension methods is that they be in scope. If the module that contains an extension method is in scope, it is visible in IntelliSense and can be called as if it were an ordinary instance method.
 

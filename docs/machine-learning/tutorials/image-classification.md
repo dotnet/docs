@@ -387,8 +387,9 @@ In this tutorial, you learned how to:
 > [!div class="checklist"]
 >
 > * Understand the problem
-> * Use the pre-trained model
-> * Classify images with a loaded model
+> * Incorporate the pre-trained TensorFlow model into the ML.NET pipeline
+> * Train and evaluate the ML.NET model
+> * Classify a test image
 
 Check out the Machine Learning samples GitHub repository to explore an expanded image classification sample.
 > [!div class="nextstepaction"]

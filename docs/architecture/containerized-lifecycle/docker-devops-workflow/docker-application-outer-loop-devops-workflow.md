@@ -5,9 +5,9 @@ ms.date: 02/15/2019
 ---
 # Steps in the outer-loop DevOps workflow for a Docker application
 
-Figure 5-1 presents an end-to-end depiction of the steps comprising the DevOps outer-loop workflow.
+Figure 5-1 presents an end-to-end depiction of the steps comprising the DevOps outer-loop workflow. It shows the "outer loop" of DevOps. When code is pushed to the repo, a CI pipeline is started, then begins the CD pipeline, where the application gets deployed. Metrics collected from deployed applications are fed back into the development workload, where the "inner loop" occurs, so development teams have actual data to respond to user and business needs.
 
-![This diagram shows the "outer loop" of DevOps. When code is pushed to the repo, a CI pipeline is started, then begins the CD pipeline, where the application gets deployed. Metrics collected from deployed applications are fed back into the development workload, where the "inner loop" occurs, so development teams have actual data to respond to user and business needs.](./media/image1.png)
+![Diagram showing the 6 steps of the DevOps outer-loop workflow.](./media/docker-application-outer-loop-devops-workflow/overview-dev-ops-outter-loop-workflow.png)
 
 **Figure 5-1**. DevOps outer-loop workflow for Docker applications with Microsoft tools
 
@@ -39,9 +39,9 @@ You can use Azure DevOps Services as the foundation for building your applicatio
 
 When using Docker for the deployment, the "final artifacts" to be deployed are Docker images with your application or services embedded within them. Those images are pushed or published to a *Docker Registry* (a private repository like the ones you can have in Azure Container Registry, or a public one like Docker Hub Registry, which is commonly used for official base images).
 
-Here is the basic concept: The CI pipeline will be kicked-off by a commit to an SCC repository like Git. The commit will cause Azure DevOps Services to run a build job within a Docker container and, upon successful completion of that job, push a Docker image to the Docker Registry, as illustrated in Figure 5-2.
+Here is the basic concept: The CI pipeline will be kicked-off by a commit to an SCC repository like Git. The commit will cause Azure DevOps Services to run a build job within a Docker container and, upon successful completion of that job, push a Docker image to the Docker Registry, as illustrated in Figure 5-2. The first part of the outer loop involves steps 1 to 3, from code, run, debug and validate, then the code repo up to the build and test CI step.
 
-![The first part of the outer loop involves steps 1 to 3, from code, run, debug and validate, then the code repo up to the build and test CI step](./media/image2.png)
+![Diagram showing the three steps involved in the CI workflow.](./media/docker-application-outer-loop-devops-workflow/continuous-integration-steps.png)
 
 **Figure 5-2**. The steps involved in CI
 
@@ -63,7 +63,7 @@ Here are the basic CI workflow steps with Docker and Azure DevOps Services:
 
 Visual Studio Azure DevOps Services contains Build & Release Templates that you can use in your CI/CD pipeline with which you can build Docker images, push Docker images to an authenticated Docker registry, run Docker images, or run other operations offered by the Docker CLI. It also adds a Docker Compose task that you can use to build, push, and run multi-container Docker applications, or run other operations offered by the Docker Compose CLI, as shown in Figure 5-3.
 
-![Browser view of the Docker CI pipeline in Azure DevOps](./media/image3.png)
+![Screenshot of the Docker CI pipeline in Azure DevOps.](./media/docker-application-outer-loop-devops-workflow/docker-ci-pipeline-azure-devops.png)
 
 **Figure 5-3**. The Docker CI pipeline in Azure DevOps Services including Build & Release Templates and associated tasks.
 
@@ -119,15 +119,15 @@ Similar to how the application code stored in your SCC repository (Git, etc.) is
 
 Typically, you might want to have your private repositories for your custom images either in a private repository in Azure Container Registry or in an on-premises registry like Docker Trusted Registry, or in a public-cloud registry with restricted access (like Docker Hub), although in this last case if your code is not open source, you must trust the vendor's security. Either way, the method you use is similar and is based on the `docker push` command, as shown in Figure 5-4.
 
-![In step 3, for building integration and testing (CI) you might publish the resulting docker images to a private or public registry.](./media/image4.png)
+![Diagram showing the push of custom images to a container registry.](./media/docker-application-outer-loop-devops-workflow/docker-push-custom-images.png)
 
 **Figure 5-4**. Publishing custom images to Docker Registry
 
-There are multiple offerings of Docker registries from cloud vendors like Azure Container Registry, Amazon Web Services Container Registry, Google Container Registry, Quay Registry, and so on.
+In step 3, for building integration and testing (CI) you might publish the resulting docker images to a private or public registry. There are multiple offerings of Docker registries from cloud vendors like Azure Container Registry, Amazon Web Services Container Registry, Google Container Registry, Quay Registry, and so on.
 
 Using the Docker tasks, you can push a set of service images defined by a `docker-compose.yml` file, with multiple tags, to an authenticated Docker registry (like Azure Container Registry), as shown in Figure 5-5.
 
-![Browser view of the step to publish images to a registry from Azure DevOps.](./media/image5.png)
+![Screenshot showing the step to publish images to a registry.](./media/docker-application-outer-loop-devops-workflow/publish-custom-image-to-docker-registry.png)
 
 **Figure 5-5**. Using Azure DevOps Services to publishing custom images to a Docker Registry
 
@@ -144,13 +144,13 @@ However, at this point it depends on what kind of Docker application you're depl
 
 Let's look first at the less-complex scenario: deploying to simple Docker hosts (VMs or servers) in a single environment or multiple environments (QA, staging, and production). In this scenario, internally your CD pipeline can use docker-compose (from your Azure DevOps Services deployment tasks) to deploy the Docker applications with its related set of containers or services, as illustrated in Figure 5-6.
 
-![The CD deploy step (#4) can publish to different environments, like q&a, staging and production.](./media/image6.png)
+![Diagram showing the CD deploy step deploying to three environments.](./media/docker-application-outer-loop-devops-workflow/deploy-app-containers-to-docker-host-environments.png)
 
 **Figure 5-6**. Deploying application containers to simple Docker host environments registry
 
 Figure 5-7 highlights how you can connect your build CI to QA/test environments via Azure DevOps Services by clicking Docker Compose in the Add Task dialog box. However, when deploying to staging or production environments, you would usually use Release Management features handling multiple environments (like QA, staging, and production). If you're deploying to single Docker hosts, it is using the Azure DevOps Services "Docker Compose" task (which is invoking the `docker-compose up` command under the hood). If you're deploying to Azure Kubernetes Service (AKS), it uses the Docker Deployment task, as explained in the section that follows.
 
-![Browser view of adding a Docker Compose task.](./media/image7.png)
+![Screenshot showing Add tasks dialog of the Docker Compose task.](./media/docker-application-outer-loop-devops-workflow/add-tasks-docker-compose.png)
 
 **Figure 5-7**. Adding a Docker Compose task in an Azure DevOps Services pipeline
 
@@ -162,7 +162,7 @@ The Azure DevOps Services templates give you the ability to generate build artif
 
 Through the Azure DevOps Services templates, you can build a new image, publish it to a Docker registry, run it on Linux or Windows hosts, and use commands such as `docker-compose` to deploy multiple containers as an entire application, all through the Azure DevOps Services Release Management capabilities intended for multiple environments, as shown in Figure 5-8.
 
-![Browser view of Azure DevOps, configuring Docker compose releases.](./media/image8.png)
+![Screenshot showing the configuration of Docker compose releases.](./media/docker-application-outer-loop-devops-workflow/configure-docker-compose-release.png)
 
 **Figure 5-8**. Configuring Azure DevOps Services Docker Compose tasks from Azure DevOps Services Release Management
 
@@ -176,19 +176,19 @@ You could deploy containers manually to those clusters from a CLI tool or a web 
 
 From a CD point of view, and Azure DevOps Services specifically, you can run specially made deployment tasks from your Azure DevOps Services Release Management environments that will deploy your containerized applications to distributed clusters in Container Service, as illustrated in Figure 5-9.
 
-![The CD deploy step (#4) can also publish to clusters through orchestrators.](./media/image9.png)
+![Diagram showing the CD deploy step deploying to orchestrators.](./media/docker-application-outer-loop-devops-workflow/cd-deploy-to-orchestrators.png)
 
 **Figure 5-9**. Deploying distributed applications to Container Service
 
 Initially, when deploying to certain clusters or orchestrators, you would traditionally use specific deployment scripts and mechanisms per each orchestrator (that is, Kubernetes and Service Fabric have different deployment mechanisms) instead of the simpler and easy-to-use `docker-compose` tool based on the `docker-compose.yml` definition file. However, thanks to the Azure DevOps Services Docker Deploy task, shown in Figure 5-10, you now also can deploy to the supported orchestrators by just using your familiar `docker-compose.yml` file because the tool performs that “translation” for you (from your `docker-compose.yml` file to the format needed by the orchestrator).
 
-![Browser view of the task catalog in Azure DevOps, showing the deploy to Kubernetes task.](./media/add-deploy-to-kubernetes-task.png)
+![Screenshot showing the Deploy to Kubernetes task.](./media/docker-application-outer-loop-devops-workflow/add-deploy-to-kubernetes-task.png)
 
 **Figure 5-10**. Adding the Deploy to Kubernetes task to your Environment
 
 Figure 5-11 demonstrates how you can edit the Deploy to Kubernetes task with the sections available for configuration. This is the task that will retrieve your ready-to-use custom Docker images to be deployed as containers in the cluster.
 
-![Browser view of Azure DevOps, deploy to Kubernetes task definition.](./media/edit-deploy-to-kubernetes-task.png)
+![Screenshot showing the Deploy to Kubernetes task configuration.](./media/docker-application-outer-loop-devops-workflow/edit-deploy-to-kubernetes-task.png)
 
 **Figure 5-11**. Docker Deploy task definition deploying to ACS DC/OS
 

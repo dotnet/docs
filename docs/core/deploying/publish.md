@@ -62,7 +62,7 @@ Starting with NET Core 2.1 SDK (version 2.1.300), .NET Core supports *patch vers
 
 Each app package as SCD uses separate host executables, so you can sign a host executable for an SCD with your publisher signature.
 
-### Why deploy a self-contained deployment?
+### Why create a self-contained deployment?
 
 Deploying a SCD has two major advantages:
 
@@ -92,14 +92,14 @@ dotnet publish -c Release -r win10-x64 --self-contained true
 
 For a comprehensive list of all supported Runtime Identifiers (RIDs), refer to the [.NET Core RID Catalog](../rid-catalog.md).
 
-***Note**: Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core globalization invariant mode. Ordinarily, .NET Core on Linux relies on the ICU libraries for globalization support. In invariant mode, the libraries are excluded with your deployment, and all cultures behave like the invariant culture.*
+***Note**: Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using [.NET Core globalization invariant mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the ICU libraries for globalization support. In invariant mode, the libraries are excluded with your deployment, and all cultures behave like the invariant culture.*
 
 
 ## Framework-Dependent Executables (FDE) 
 
 Starting with .NET Core 2.2, you can package up your framework-dependent deployment into a single file executable. Your app will use the version of .NET Core that's installed on the target system.
 
-### Why deploy a framework-dependent executable?
+### Why create a framework-dependent executable?
 
 Deploying an FDE has a number of advantages:
 
@@ -129,12 +129,12 @@ dotnet publish -c Release -r win10-x64 --self-contained false /p:PublishSingleFi
 
 ***Note**: Since FDD is the default deployment type, `--self-contained false` is implied if not specified*
 
-***Note**: creating a single file executable **requires** that you specify a Runtime Identifier (RID) via the -r switch even if the executable will be Framework_dependent and not self-contained.*
+***Note**: creating a single file executable **requires** that you specify a [Runtime Identifier (RID)](../rid-catalog.md) via the -r switch.*
 
 
 ## Self-Contained Executable (SCE)
 
-Starting with .NET Core 3.0, you can package up your self-contained deployment (with the .NET Core runtime) into a single file executable. This option has some of the same benefits and drawbacks as self-contained deployments.
+Starting with .NET Core 3.0, you can package up your self-contained deployment (with the .NET Core runtime) into a single file executable. This option has some of the same benefits and drawbacks as [self-contained deployments](#self-contained-deployments-scd)).
 
 To create a Self-contained, single file executable for the Windows 10 x64 operating system you would use the following command line:
 
@@ -144,7 +144,7 @@ dotnet publish -c Release -r win10-x64 --self-contained true /p:PublishSingleFil
 
 <br/>
 
-***Note**: creating a self-contained executable **requires** that you specify a Runtime Identifier (RID) via the -r switch.*
+***Note**: creating a self-contained executable **requires** that you specify a [Runtime Identifier (RID)](../rid-catalog.md) via the -r switch.*
 
 ## Summary
 

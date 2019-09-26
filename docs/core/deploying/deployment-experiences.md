@@ -20,7 +20,7 @@ Before .NET Core 3.0, all .NET Core releases including servicing updates were fu
 
 For example, installing the .NET Core 2.2.14 update when you already have the .NET Core 2.2.13 update installed will result in both .NET Core 2.2.13 and .NET Core 2.2.14 being present on the computer. 
 
-As customers installed multiple updates each of these installed side by side and accumulated on disk. We received strong feedback that the experience was undesirable. To address this feedback, changes were made to the installer in .NET Core 3.0.
+As customers installed multiple updates, each of these installed side by side and accumulated on disk. We received strong feedback that the experience was undesirable. To address this feedback, changes were made to the installer in .NET Core 3.0.
 
 In .NET Core 3.0 and later versions, new major and minor releases continue to install side by side with earlier major and minor releases. 
 

@@ -129,7 +129,7 @@ The following code illustrates the use of operator overloading to implement a fr
 
 **Output:**
 
-```
+```console
 3/4 + 1/2 = 5/4
 3/4 - 1/2 = 1/4
 3/4 * 1/2 = 3/8

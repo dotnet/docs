@@ -87,7 +87,7 @@ printfn "class1.ExplicitProperty = %d" class1.ExplicitProperty
 
 **Output**
 
-```
+```console
 class1.AutoProperty = 1853799794
 class1.AutoProperty = 1853799794
 class1.ExplicitProperty = 978922705

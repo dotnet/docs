@@ -13,7 +13,7 @@ ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
 
 Expose relational data from a database as an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed.
 
-- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+- [Quickstart](quickstart-wcf-data-services.md)
 
 - [Exposing Your Data as a Service](exposing-your-data-as-a-service-wcf-data-services.md)
 
@@ -21,7 +21,7 @@ Expose relational data from a database as an [!INCLUDE[ssODataShort](../../../..
 
 Expose arbitrary CLR data classes as an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed.
 
-- [Exposing Your Data as a Service](../../../../docs/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services.md)
+- [Exposing Your Data as a Service](exposing-your-data-as-a-service-wcf-data-services.md)
 
 - [How to: Create a Data Service Using the Reflection Provider](create-a-data-service-using-rp-wcf-data-services.md)
 
@@ -29,7 +29,7 @@ Expose arbitrary CLR data classes as an [!INCLUDE[ssODataShort](../../../../incl
 
 Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in a .NET Framework-based client application.
 
-- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+- [Quickstart](quickstart-wcf-data-services.md)
 
 - [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md)
 
@@ -45,7 +45,7 @@ Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] fee
 
 Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in an AJAX-based client application.
 
-- [Using a Data Service in a Client Application](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)
+- [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md)
 
 - [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=185564)
 
@@ -53,7 +53,7 @@ Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] fee
 
 Create an end-to-end data solution that uses [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] to transfer data between client and server.
 
-- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)
+- [Quickstart](quickstart-wcf-data-services.md)
 
 - [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md)
 
@@ -61,7 +61,7 @@ Create an end-to-end data solution that uses [!INCLUDE[ssODataShort](../../../..
 
 Create a .NET Framework-based client application that consumes an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed asynchronously to avoid latency issues on the client.
 
-- [How to: Execute Asynchronous Data Service Queries](../../../../docs/framework/data/wcf/how-to-execute-asynchronous-data-service-queries-wcf-data-services.md)
+- [How to: Execute Asynchronous Data Service Queries](how-to-execute-asynchronous-data-service-queries-wcf-data-services.md)
 
 - [Asynchronous Operations](asynchronous-operations-wcf-data-services.md)
 
@@ -69,13 +69,13 @@ Create a .NET Framework-based client application that consumes an [!INCLUDE[ssOD
 
 Expose and consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed with a binary large object that is accessed and changed as a stream.
 
-- [Streaming Provider](../../../../docs/framework/data/wcf/streaming-provider-wcf-data-services.md)
+- [Streaming Provider](streaming-provider-wcf-data-services.md)
 
 - [Working with Binary Data](working-with-binary-data-wcf-data-services.md)
 
 Bind [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds to controls in a Windows Presentation Framework (WPF) application.
 
-- [Binding Data to Controls](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md)
+- [Binding Data to Controls](binding-data-to-controls-wcf-data-services.md)
 
 - [How to: Bind Data to Windows Presentation Foundation Elements](bind-data-to-wpf-elements-wcf-data-services.md)
 
@@ -83,13 +83,13 @@ Bind [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds to 
 
 Intercept incoming messages to the data service to perform data validation and role-based filtering of queries.
 
-- [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md)
+- [How to: Intercept Data Service Messages](how-to-intercept-data-service-messages-wcf-data-services.md)
 
 - [Interceptors](interceptors-wcf-data-services.md)
 
 Create endpoints on a data service to enable custom service behaviors.
 
-- [How to: Define a Service Operation](../../../../docs/framework/data/wcf/how-to-define-a-service-operation-wcf-data-services.md)
+- [How to: Define a Service Operation](how-to-define-a-service-operation-wcf-data-services.md)
 
 - [Service Operations](service-operations-wcf-data-services.md)
 

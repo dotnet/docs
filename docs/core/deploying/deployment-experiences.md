@@ -24,7 +24,7 @@ As customers installed multiple updates, each of these installed side by side an
 
 In .NET Core 3.0 and later versions, new major and minor releases continue to install side by side with earlier major and minor releases. 
 
-**_Successfully installation of a new patch version will remove any earlier patches for the same minor release._** 
+**_Successful installation of a new patch version will remove any earlier patches for the same minor release._** 
 
 For example, installing 3.0.2 when you already have 3.0.1 installed will result in 3.0.2 replacing 3.0.1.
 

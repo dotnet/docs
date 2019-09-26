@@ -17,10 +17,10 @@ There are various Acquisition options for .NET Core -
 * [Snap store](#Snap-store)
 * [.NET Core on GitHub](#NET-Core-on-GitHub)
 
-Each of these choices has their own strengths. Some options support both initial acquisition, and subsequent notification of updates for the .NET Core runtime and tools, while others don't support update notifications.
+Each of these choices has their own strengths. Some options support both initial acquisition and subsequent notification of updates for the .NET Core runtime and tools, while others don't support update notifications.
 
 |Acquisition Choice|Update|
-|:-|:-:|
+|:-:|:-:|
 [Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | ✔️ |
 [https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | ❌ |
 [Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | ✔️ |
@@ -33,7 +33,10 @@ Each of these choices has their own strengths. Some options support both initial
 _\*Some package Managers provide update notifications__
 
 
-Differences between the various choices covered above make some of them a great option for developers while others are better suited for DevOps engineers and IT administrators. A DevOps engineer or IT administrator is likely to download the .NET Core runtime and run this installer on multiple machines in the environment they manage. Therefore, the ability to run the installer in silent or passive mode without user interaction and via a command line is an imporant attribute. Developers would not have a similar constraint. 
+A DevOps engineer or IT administrator is likely to download the .NET Core runtime installer and run it on multiple machines in the environment they manage. Therefore, having the ability to run the installer in silent or passive mode without user interaction and via a command line is an important attribute. Developers would not have a similar constraint. 
+
+Differences between the various choices covered above make some of them a great option for developers while others are better suited for DevOps engineers and IT administrators. 
+
 
 |Acquisition Choice|Great For Developers|Great For DevOps/ IT Admins|
 |:-|:-:|:-:|
@@ -129,7 +132,7 @@ You can find more information about deploying your app in a container in the doc
 
 ## Linux Package Managers
 
-.NET Core packages are available in native package managers for various Linux distros encompassing `.deb` and `.rpm` based systems. 
+* .NET Core packages are available in native package managers for various Linux distros encompassing `.deb` and `.rpm` based systems. 
 
   Information about getting .NET Core using a package manager can be found in the document titled [Preparing your Linux system for .NET Core – Using a package manager](https://github.com/dotnet/core/blob/4b39c16ccae64a69799f642f49f3fbf742623a9c/Documentation/linux-setup.md#installation-using-a-package-manager).
 
@@ -138,13 +141,13 @@ You can find more information about deploying your app in a container in the doc
   * [Install .NET Core SDK on Linux](https://dotnet.microsoft.com/download/linux-package-manager/rhel/sdk-2.2.402)
   * [Install .NET Core Runtime on Linux](https://dotnet.microsoft.com/download/linux-package-manager/rhel/runtime-2.2.7)
 
- To review instructions for other package managers, change the distro selected at the top of the page. 
-
 ### Red Hat Enterprise Linux
 
 If you are using Red Hat Enterprise Linux, Red Hat supports .NET Core within their software collections repositories. For more information, see: [Red Hat Product Documentation for .NET Core](https://access.redhat.com/documentation/en-us/net_core)
 
 Starting with Red Hat Enterprise Linux 8, you can find the .NET Core Runtime & tools directly as the “dotnet” package in the [AppStream repository](https://developers.redhat.com/blog/2018/11/15/rhel8-introducing-appstreams/).
+
+To review instructions for other package managers, change the distro selected at the top of the page. 
 
 
 ## Azure DevOps pipeline Installer Task

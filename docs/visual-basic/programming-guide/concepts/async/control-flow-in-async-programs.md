@@ -56,7 +56,7 @@ Class MainWindow
 End Class
 ```
 
-Each of the labeled locations, "ONE" through "SIX," displays information about the current state of the program. The following output is produced.
+Each of the labeled locations, "ONE" through "SIX," displays information about the current state of the program. The following output is produced:
 
 ```console
 ONE:   Entering startButton_Click.

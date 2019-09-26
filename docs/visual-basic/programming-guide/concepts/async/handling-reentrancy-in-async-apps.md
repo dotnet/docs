@@ -239,7 +239,7 @@ Private Async Function AccessTheWebAsync(ct As CancellationToken) As Task
 End Function
 ```
 
-If you choose the **Start** button several times while this app is running, it should produce results that resemble the following output.
+If you choose the **Start** button several times while this app is running, it should produce results that resemble the following output:
 
 ```console
 1. msdn.microsoft.com/library/hh191443.aspx                83732

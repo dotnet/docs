@@ -268,7 +268,7 @@ End Sub
   
 9. Choose the F5 key to run the program, and then choose the **Start** button.  
   
-     The following output should appear.  
+     The following output should appear:  
   
     ```console  
     Application can continue working while the Task<T> runs. . . .   

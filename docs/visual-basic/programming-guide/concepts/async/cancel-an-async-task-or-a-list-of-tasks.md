@@ -119,14 +119,14 @@ Then add the following changes to the MainWindow.xaml.vb file of that project.
     End Function
     ```
 
-5. If you don’t cancel the program, it produces the following output.
+5. If you don’t cancel the program, it produces the following output:
 
     ```console
     Ready to download.
     Length of the downloaded string: 158125.
     ```
 
-    If you choose the **Cancel** button before the program finishes downloading the content, the program produces the following output.
+    If you choose the **Cancel** button before the program finishes downloading the content, the program produces the following output:
 
     ```console
     Ready to download.

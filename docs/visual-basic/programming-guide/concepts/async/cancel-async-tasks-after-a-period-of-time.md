@@ -65,7 +65,7 @@ Private Async Sub startButton_Click(sender As Object, e As RoutedEventArgs)
 End Sub  
 ```  
   
- Run the program several times to verify that the output might show output for all websites, no websites, or some web sites. The following output is a sample.  
+ Run the program several times to verify that the output might show output for all websites, no websites, or some web sites. The following output is a sample:  
   
 ```console  
 Length of the downloaded string: 35990.  

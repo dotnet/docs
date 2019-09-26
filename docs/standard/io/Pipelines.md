@@ -143,6 +143,10 @@ PipeWriter reader = pipe.Writer;
 
 ### Pipe basic usage
 
+[!code-csharp[](media/pipelines/Pipe.cs"?name=snippet)]
+
+Snippet above, embedded below
+
 ```csharp
 async Task ProcessLinesAsync(Socket socket)
 {

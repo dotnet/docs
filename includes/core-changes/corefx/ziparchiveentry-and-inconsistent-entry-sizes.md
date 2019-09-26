@@ -16,7 +16,7 @@ This change was made to ensure that a <xref:System.IO.Compression.ZipArchiveEntr
 
 #### Recommended action
 
-Repackage any zip archive which exhibits these problems.
+Repackage any zip archive that exhibits these problems.
 
 #### Category
 
@@ -38,6 +38,4 @@ CoreFx
 `Overload:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A`
 `Overload:System.IO.Compression.ZipFile.ExtractToDirectory%2A`
 
-
 -->
-

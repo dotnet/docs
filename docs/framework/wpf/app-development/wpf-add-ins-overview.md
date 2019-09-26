@@ -21,7 +21,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 
 ## Prerequisites
 
-Familiarity with the .NET Framework add-in model is required. For more information, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).
+Familiarity with the .NET Framework add-in model is required. For more information, see [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).
 
 <a name="AddInsOverview"></a>
 
@@ -60,7 +60,7 @@ In order for add-ins to be used, host applications need to find them and load th
 Ultimately, developing a robust add-in model is a non-trivial undertaking. For this reason, the .NET Framework provides an infrastructure for building add-in models.
 
 > [!NOTE]
-> For more detailed information on add-ins, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).
+> For more detailed information on add-ins, see [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).
 
 <a name="NETFrameworkAddInModelOverview"></a>
 
@@ -121,7 +121,7 @@ How <xref:System.AddIn.Contract.INativeHandleContract>, <xref:System.AddIn.Pipel
 
 For an add-in to return a UI to a host application, the following are required:
 
-1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.
+1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.
 
 2. The contract must implement <xref:System.AddIn.Contract.IContract> and, to return a UI, the contract must declare a method with a return value of type <xref:System.AddIn.Contract.INativeHandleContract>.
 
@@ -141,7 +141,7 @@ For an example that demonstrates how to implement an add-in that returns a UI, s
 
 When an add-in is a UI, the following are required:
 
-1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.
+1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.
 
 2. The contract interface for the add-in must implement <xref:System.AddIn.Contract.INativeHandleContract>.
 
@@ -305,7 +305,7 @@ By default, when multiple application domains are used, the various .NET Framewo
 ## See also
 
 - <xref:System.LoaderOptimizationAttribute>
-- [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
+- [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
 - [Application Domains](../../app-domains/application-domains.md)
 - [.NET Framework Remoting Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kwdt6w2k(v=vs.100))
 - [Making Objects Remotable](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/wcf3swha(v=vs.100))

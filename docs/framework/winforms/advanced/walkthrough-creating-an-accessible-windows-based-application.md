@@ -5,6 +5,9 @@ helpviewer_keywords:
   - "accessibility [Windows Forms], Windows applications"
   - "Windows applications [Windows Forms], accessibility"
   - "applications [Windows Forms], accessibility"
+dev_langs:
+  - csharp
+  - vb
 ms.assetid: 654c7f2f-1586-480b-9f12-9d9b8f5cc32b
 ---
 # Walkthrough: Creating an Accessible Windows-based Application
@@ -159,96 +162,88 @@ In our application, the only element that is not using the system settings for c
 1. Create a method to set the colors of the label to the system colors.
 
     ```vb
-    ' Visual Basic
     Private Sub SetColorScheme()
-       If SystemInformation.HighContrast Then
-          companyLabel.BackColor = SystemColors.Window
-          companyLabel.ForeColor = SystemColors.WindowText
-       Else
-          companyLabel.BackColor = Color.Blue
-          companyLabel.ForeColor = Color.Yellow
-       End If
+        If SystemInformation.HighContrast Then
+            companyLabel.BackColor = SystemColors.Window
+            companyLabel.ForeColor = SystemColors.WindowText
+        Else
+            companyLabel.BackColor = Color.Blue
+            companyLabel.ForeColor = Color.Yellow
+        End If
     End Sub
     ```
 
     ```csharp
-    // C#
     private void SetColorScheme()
     {
-       if (SystemInformation.HighContrast)
-       {
-          companyLabel.BackColor = SystemColors.Window;
-          companyLabel.ForeColor = SystemColors.WindowText;
-       }
-       else
-       {
-          companyLabel.BackColor = Color.Blue;
-          companyLabel.ForeColor = Color.Yellow;
-       }
+        if (SystemInformation.HighContrast)
+        {
+            companyLabel.BackColor = SystemColors.Window;
+            companyLabel.ForeColor = SystemColors.WindowText;
+        }
+        else
+        {
+            companyLabel.BackColor = Color.Blue;
+            companyLabel.ForeColor = Color.Yellow;
+        }
     }
     ```
 
-2. Call the `SetColorScheme` procedure in the form constructor (`Public Sub New()` in Visual Basic and `public class Form1` in Visual C#). To access the constructor in Visual Basic, you will need to expand the region labeled **Windows Form Designer generated code**.
+2. Call the `SetColorScheme` procedure in the form constructor (`Public Sub New()` in Visual Basic and `public Form1()` in Visual C#). To access the constructor in Visual Basic, you will need to expand the region labeled **Windows Form Designer generated code**.
 
     ```vb
-    ' Visual Basic
     Public Sub New()
-       MyBase.New()
-       InitializeComponent()
-       SetColorScheme()
+        MyBase.New()
+        InitializeComponent()
+        SetColorScheme()
     End Sub
     ```
 
     ```csharp
-    // C#
     public Form1()
     {
-       InitializeComponent();
-       SetColorScheme();
+        InitializeComponent();
+        SetColorScheme();
     }
     ```
 
 3. Create an event procedure, with the appropriate signature, to respond to the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event.
 
     ```vb
-    ' Visual Basic
-    Protected Sub UserPreferenceChanged(ByVal sender As Object, _
-    ByVal e As Microsoft.Win32.UserPreferenceChangedEventArgs)
-       SetColorScheme()
+    Protected Sub UserPreferenceChanged(sender As Object, _
+    e As Microsoft.Win32.UserPreferenceChangedEventArgs)
+        SetColorScheme()
     End Sub
     ```
 
     ```csharp
-    // C#
     public void UserPreferenceChanged(object sender,
     Microsoft.Win32.UserPreferenceChangedEventArgs e)
     {
-       SetColorScheme();
+        SetColorScheme();
     }
     ```
 
 4. Add code to the form constructor, after the call to `InitializeComponents`, to hook up the event procedure to the system event. This method calls the `SetColorScheme` procedure.
 
     ```vb
-    ' Visual Basic
     Public Sub New()
-       MyBase.New()
-       InitializeComponent()
-       SetColorScheme()
-       AddHandler Microsoft.Win32.SystemEvents.UserPreferenceChanged, _
-          AddressOf Me.UserPreferenceChanged
+        MyBase.New()
+        InitializeComponent()
+        SetColorScheme()
+        AddHandler Microsoft.Win32.SystemEvents.UserPreferenceChanged, _
+           AddressOf Me.UserPreferenceChanged
     End Sub
     ```
 
     ```csharp
-    // C#
     public Form1()
     {
-       InitializeComponent();
-       SetColorScheme();
-       Microsoft.Win32.SystemEvents.UserPreferenceChanged
-          += new Microsoft.Win32.UserPreferenceChangedEventHandler(
-          this.UserPreferenceChanged);
+        InitializeComponent();
+        SetColorScheme();
+        Microsoft.Win32.SystemEvents.UserPreferenceChanged
+           += new Microsoft.Win32.UserPreferenceChangedEventHandler(
+           this.UserPreferenceChanged);
     }
     ```
 
@@ -258,34 +253,27 @@ In our application, the only element that is not using the system settings for c
     > The system event code runs a thread separate from the main application. If you do not release the event, the code that you hook up to the event will run even after the program is closed.
 
     ```vb
-    ' Visual Basic
     Protected Overloads Overrides Sub Dispose(ByVal disposing As Boolean)
-       If disposing Then
-          If Not (components Is Nothing) Then
-             components.Dispose()
-          End If
-       End If
-       RemoveHandler Microsoft.Win32.SystemEvents.UserPreferenceChanged, _
-          AddressOf Me.UserPreferenceChanged
-       MyBase.Dispose(disposing)
+        If disposing AndAlso components IsNot Nothing Then
+            components.Dispose()
+        End If
+        RemoveHandler Microsoft.Win32.SystemEvents.UserPreferenceChanged, _
+           AddressOf Me.UserPreferenceChanged
+        MyBase.Dispose(disposing)
     End Sub
     ```
 
     ```csharp
-    // C#
-    protected override void Dispose( bool disposing )
+    protected override void Dispose(bool disposing)
     {
-       if( disposing )
-       {
-          if (components != null)
-          {
-             components.Dispose();
-          }
-       }
-       Microsoft.Win32.SystemEvents.UserPreferenceChanged
-          -= new Microsoft.Win32.UserPreferenceChangedEventHandler(
-          this.UserPreferenceChanged);
-       base.Dispose( disposing );
+        if(disposing && components != null)
+        {
+            components.Dispose();
+        }
+        Microsoft.Win32.SystemEvents.UserPreferenceChanged
+           -= new Microsoft.Win32.UserPreferenceChangedEventHandler(
+           this.UserPreferenceChanged);
+        base.Dispose( disposing );
     }
     ```
 

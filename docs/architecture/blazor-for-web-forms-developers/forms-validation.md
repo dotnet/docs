@@ -72,7 +72,7 @@ The following component demonstrates building a form in Blazor based on the `Sta
     <p>
         <label for="identifier">Identifier: </label>
         <InputText id="identifier" @bind-Value="starship.Identifier" />
-        <ValidationMessage For="() => "starship.Identifier" />
+        <ValidationMessage For="() => starship.Identifier" />
     </p>
     <p>
         <label for="description">Description (optional): </label>
@@ -86,22 +86,22 @@ The following component demonstrates building a form in Blazor based on the `Sta
             <option value="Diplomacy">Diplomacy</option>
             <option value="Defense">Defense</option>
         </InputSelect>
-        <ValidationMessage For="() => "starship.Classification" />
+        <ValidationMessage For="() => starship.Classification" />
     </p>
     <p>
         <label for="accommodation">Maximum Accommodation: </label>
         <InputNumber id="accommodation" @bind-Value="starship.MaximumAccommodation" />
-        <ValidationMessage For="() => "starship.MaximumAccommodation" />
+        <ValidationMessage For="() => starship.MaximumAccommodation" />
     </p>
     <p>
         <label for="valid">Engineering Approval: </label>
         <InputCheckbox id="valid" @bind-Value="starship.IsValidatedDesign" />
-        <ValidationMessage For="() => "starship.IsValidatedDesign" />
+        <ValidationMessage For="() => starship.IsValidatedDesign" />
     </p>
     <p>
         <label for="productionDate">Production Date: </label>
         <InputDate id="productionDate" @bind-Value="starship.ProductionDate" />
-        <ValidationMessage For="() => "starship.ProductionDate" />
+        <ValidationMessage For="() => starship.ProductionDate" />
     </p>
 
     <button type="submit">Submit</button>

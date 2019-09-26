@@ -59,7 +59,7 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
     - **vendor_id:** The ID of the taxi vendor is a feature.
     - **rate_code:** The rate type of the taxi trip is a feature.
     - **passenger_count:** The number of passengers on the trip is a feature.
-    - **trip_time_in_secs:** The amount of time the trip took. ou want to predict the fare of the trip before the trip is completed. At that moment you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model.
+    - **trip_time_in_secs:** The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model.
     - **trip_distance:** The distance of the trip is a feature.
     - **payment_type:** The payment method (cash or credit card) is a feature.
     - **fare_amount:** The total taxi fare paid is the label.
@@ -111,7 +111,7 @@ If you're not satisfied with your accuracy metrics, some easy ways to try and im
 Two projects will be created as a result of the training process.
 
 - TaxiFarePredictionML.ConsoleApp: A .NET Core Console application that contains the model training and sample consumption code.
-- TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data, the serialized version of the best performing model during training and a helper class called `ConsumeModel` to make predictions.
+- TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data, the saved version of the best performing model during training and a helper class called `ConsumeModel` to make predictions.
 
 1. In the code step of the Model Builder tool, select **Add Projects** to add the auto-generated projects to the solution.
 1. Open the *Program.cs* file in the *TaxiFarePrediction* project.

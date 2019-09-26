@@ -114,7 +114,7 @@ Two projects will be created as a result of the training process.
     The following projects should appear in the **Solution Explorer**:
 
     - *SentimentRazorML.ConsoleApp*: A .NET Core Console application that contains the model training and prediction code.
-    - *SentimentRazorML.Model*: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the serialized version of the best performing model during training.
+    - *SentimentRazorML.Model*: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the saved version of the best performing model during training.
 
     For this tutorial, only the *SentimentRazorML.Model* project is used because predictions will be made in the *SentimentRazor* web application rather than in the console. Although the *SentimentRazorML.ConsoleApp* won't be used for scoring, it can be used to retrain the model using new data at a later time. Retraining is outside the scope of this tutorial though.
 

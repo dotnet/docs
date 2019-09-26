@@ -157,7 +157,7 @@ The training and testing images are located in the assets folders that you'll do
 
 1. Create classes for your input data, and predictions.
 
-    [!code-csharp[DeclareTypes](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DeclareImageDataType)]
+    [!code-csharp[DeclareImageData](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DeclareImageData)]
 
     `ImageData` is the input image data class and has the following <xref:System.String> fields:
 
@@ -166,7 +166,7 @@ The training and testing images are located in the assets folders that you'll do
 
 1. Add a new class to your project for `ImagePrediction`:
 
-    [!code-csharp[DeclareGlobalVariables](../../../samples/machine-learning/tutorials/TransferLearningTF/ImagePrediction.cs#DeclareTypes)]
+    [!code-csharp[DeclareImagePrediction](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DeclareImagePrediction)]
 
     `ImagePrediction` is the image prediction class and has the following fields:
 

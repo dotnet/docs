@@ -8,7 +8,7 @@ Specifies the sort order used on objects returned in a SELECT statement.
   
 ## Syntax  
   
-```  
+```sql  
 [ ORDER BY   
    {  
       order_by_expression [SKIP n] [LIMIT n]  
@@ -47,14 +47,14 @@ Specifies the sort order used on objects returned in a SELECT statement.
   
  If your code iterates over an ordered set, other than for a top-level projection, the output is not guaranteed to have its order preserved.  
   
-```  
+```sql  
 -- In the following sample, order is guaranteed to be preserved:  
 SELECT C1.FirstName, C1.LastName  
         FROM AdventureWorks.Contact as C1  
         ORDER BY C1.LastName  
 ```  
   
-```  
+```sql  
 -- In the following query ordering of the nested query is ignored.  
 SELECT C2.FirstName, C2.LastName  
     FROM (SELECT C1.FirstName, C1.LastName  
@@ -64,7 +64,7 @@ SELECT C2.FirstName, C2.LastName
   
  To have an ordered UNION, UNION ALL, EXCEPT, or INTERSECT operation, use the following pattern:  
   
-```  
+```sql  
 SELECT ...  
 FROM ( UNION/EXCEPT/INTERSECT operation )  
 ORDER BY ...  
@@ -94,14 +94,14 @@ ORDER BY ...
 ## Ordering Nested Queries  
  In the Entity Framework, a nested expression can be placed anywhere in the query; the order of a nested query is not preserved.  
   
-```  
+```sql  
 -- The following query will order the results by the last name.  
 SELECT C1.FirstName, C1.LastName  
         FROM AdventureWorks.Contact as C1  
         ORDER BY C1.LastName  
 ```  
   
-```  
+```sql  
 -- In the following query, ordering of the nested query is ignored.  
 SELECT C2.FirstName, C2.LastName  
     FROM (SELECT C1.FirstName, C1.LastName  

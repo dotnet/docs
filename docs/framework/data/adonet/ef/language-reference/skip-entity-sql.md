@@ -9,7 +9,7 @@ You can perform physical paging by using the SKIP sub-clause in the ORDER BY cla
 
 ## Syntax
 
-```
+```sql
 [ SKIP n ]
 ```
 

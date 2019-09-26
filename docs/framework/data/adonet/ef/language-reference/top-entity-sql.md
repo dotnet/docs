@@ -10,7 +10,7 @@ The SELECT clause can have an optional TOP sub-clause following the optional ALL
 
 ## Syntax
 
-```
+```sql
 [ TOP (n) ]
 ```
 

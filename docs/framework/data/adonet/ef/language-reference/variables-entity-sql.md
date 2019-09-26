@@ -9,7 +9,7 @@ ms.assetid: 3eed222a-f8f6-46b6-9cd5-220cc0e4e5d8
   
  The following example shows the use of a variable in the expression. The `c` in the FROM clause is the definition of the variable. The use of `c` in the SELECT clause represents the variable reference.  
   
-```  
+```sql  
 select c   
 from LOB.customers as c  
 ```  

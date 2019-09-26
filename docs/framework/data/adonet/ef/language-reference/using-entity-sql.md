@@ -8,7 +8,7 @@ Specifies namespaces used in a query expression.
   
 ## Syntax  
   
-```  
+```sql  
 USING [ alias = ] namespace  
 ```  
   
@@ -26,7 +26,7 @@ USING [ alias = ] namespace
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
-```  
+```sql  
 using SqlServer; RAND()  
 ```  
   

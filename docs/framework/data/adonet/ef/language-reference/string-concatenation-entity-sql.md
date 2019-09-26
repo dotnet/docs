@@ -8,7 +8,7 @@ Concatenates two strings.
   
 ## Syntax  
   
-```  
+```sql  
 expression + expression  
 ```  
   

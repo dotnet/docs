@@ -22,7 +22,7 @@ Whenever an attempt to execute a query is made, the query pipeline looks up its 
   
  Query plan caching on static queries and parameterized queries can provide performance benefits. The following is an example of a static query:  
   
-```  
+```sql  
 "SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp";  
 ```  
   

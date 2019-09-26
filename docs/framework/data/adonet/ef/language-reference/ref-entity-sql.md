@@ -8,7 +8,7 @@ Returns a reference to an entity instance.
   
 ## Syntax  
   
-```  
+```sql  
 REF( expression )   
 ```  
   

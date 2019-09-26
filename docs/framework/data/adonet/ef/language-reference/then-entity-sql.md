@@ -8,7 +8,7 @@ The result of a WHEN clause when it evaluates to `true`.
   
 ## Syntax  
   
-```  
+```sql  
 WHEN when_expression THEN then_expression  
 ```  
   

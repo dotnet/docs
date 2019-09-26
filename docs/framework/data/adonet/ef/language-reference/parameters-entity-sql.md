@@ -10,7 +10,7 @@ Parameters are variables that are defined outside [!INCLUDE[esql](../../../../..
   
 ## Example  
   
-```  
+```sql  
 select c   
       from LOB.Customers as c   
       where c.Name = @name  

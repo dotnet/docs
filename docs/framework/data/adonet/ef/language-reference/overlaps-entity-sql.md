@@ -8,7 +8,7 @@ Determines whether two collections have common elements.
   
 ## Syntax  
   
-```  
+```sql  
 expression OVERLAPS expression  
 ```  
   

@@ -8,7 +8,7 @@ Subtracts two numbers.
   
 ## Syntax  
   
-```  
+```sql  
 expression - expression  
 ```  
   

@@ -8,7 +8,7 @@ The SET expression is used to convert a collection of objects into a set by yiel
   
 ## Syntax  
   
-```  
+```sql  
 SET ( expression )  
 ```  
   
@@ -19,7 +19,7 @@ SET ( expression )
 ## Remarks  
  The set expression `SET(c)` is logically equivalent to the following select statement:  
   
-```  
+```sql  
 SELECT VALUE DISTINCT c FROM c  
 ```  
   

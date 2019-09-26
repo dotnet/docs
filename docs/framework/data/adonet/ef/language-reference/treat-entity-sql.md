@@ -8,7 +8,7 @@ Treats an object of a particular base type as an object of the specified derived
   
 ## Syntax  
   
-```  
+```sql  
 TREAT ( expression as type)  
 ```  
   
@@ -33,7 +33,7 @@ TREAT ( expression as type)
   
  TREAT is used in inheritance scenarios where you can do a query like the following:  
   
-```  
+```sql  
 SELECT TREAT(p AS NamespaceName.Employee)  
 FROM ContainerName.Person AS p  
 WHERE p IS OF (NamespaceName.Employee)   

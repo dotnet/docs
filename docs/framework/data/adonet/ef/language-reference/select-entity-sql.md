@@ -8,10 +8,10 @@ Specifies the elements returned by a query.
   
 ## Syntax  
   
-```  
+```sql  
 SELECT [ ALL | DISTINCT ] [ topSubclause ] aliasedExpr   
       [{ , aliasedExpr }] FROM fromClause [ WHERE whereClause ] [ GROUP BY groupByClause [ HAVING havingClause ] ] [ ORDER BY orderByClause ]  
-or  
+-- or  
 SELECT VALUE [ ALL | DISTINCT ] [ topSubclause ] expr FROM fromClause [ WHERE whereClause ] [ GROUP BY groupByClause [ HAVING havingClause ] ] [ ORDER BY orderByClause  
 ```  
   
@@ -43,13 +43,13 @@ SELECT VALUE [ ALL | DISTINCT ] [ topSubclause ] expr FROM fromClause [ WHERE wh
   
  The list of one or more query expressions following the SELECT keyword is known as the select list, or more formally as the projection. The most general form of projection is a single query expression. If you select a member `member1` from a collection `collection1`, you will produce a new collection of all the `member1` values for each object in `collection1`, as illustrated in the following example.  
   
-```  
+```sql  
 SELECT collection1.member1 FROM collection1  
 ```  
   
  For example, if `customers` is a collection of type `Customer` that has a property `Name` that is of type `string`, selecting `Name` from `customers` will yield a collection of strings, as illustrated in the following example.  
   
-```  
+```sql  
 SELECT customers.Name FROM customers AS c  
 ```  
   
@@ -64,7 +64,7 @@ SELECT customers.Name FROM customers AS c
   
  A row select is always expressible in terms of VALUE SELECT, as illustrated in the following example.  
   
-```  
+```sql  
 SELECT 1 AS a, "abc" AS b FROM C  
 SELECT VALUE ROW(1 AS a, "abc" AS b) FROM C   
 ```  
@@ -75,13 +75,13 @@ SELECT VALUE ROW(1 AS a, "abc" AS b) FROM C
 ## Differences from Transact-SQL  
  Unlike Transact-SQL, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not support use of the * argument in the SELECT clause.  Instead, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] allows queries to project out entire records by referencing the collection aliases from the FROM clause, as illustrated in the following example.  
   
-```  
+```sql  
 SELECT * FROM T1, T2  
 ```  
   
  The previous Transact-SQL query expression is expressed in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] in the following way.  
   
-```  
+```sql  
 SELECT a1, a2 FROM T1 AS a1, T2 AS a2  
 ```  
   

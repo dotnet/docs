@@ -8,7 +8,7 @@ Constructs anonymous, structurally typed records from one or more values.
   
 ## Syntax  
   
-```  
+```sql  
 ROW ( expression [ AS alias ] [,...] )  
 ```  
   
@@ -25,7 +25,7 @@ ROW ( expression [ AS alias ] [,...] )
 ## Remarks  
  You use row constructors in the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to construct anonymous, structurally typed records from one or more values. The result type of a row constructor is a row type whose field types correspond to the types of the values that were used to construct the row. For example, the following expression constructs a value of type `Record(a int, b string, c int)`.  
   
-```  
+```sql  
 ROW(1 AS a, "abc" AS b, a+34 AS c)  
 ```  
   

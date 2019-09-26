@@ -8,7 +8,7 @@ Combines the results of two or more queries into a single collection.
   
 ## Syntax  
   
-```  
+```sql  
 expression  
 UNION [ ALL ]  
 expression  

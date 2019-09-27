@@ -5,7 +5,7 @@ hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 ms.custom: "updateeachrelease"
-ms.date: "09/04/2019"
+ms.date: "09/23/2019"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -30,7 +30,7 @@ ms.date: "09/04/2019"
                 </a>
             </li>
             <li>
-                <a href="/dotnet/api/?view=netcore-2.2">
+                <a href="/dotnet/api/?view=netcore-3.0">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -112,6 +112,7 @@ ms.date: "09/04/2019"
                                                 <p><a href="/dotnet/core/porting/">Porting from .NET Framework</a></p>
                                                 <p><a href="/aspnet/core/getting-started/">ASP.NET Core</a></p>
                                                 <p><a href="/ef/core/">EF Core</a></p>
+                                                <p><a href="/dotnet/desktop-wpf/">Desktop Guide (WPF)</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -580,17 +581,38 @@ ms.date: "09/04/2019"
                                 </a>
                             </li>
                             <li>
+                                <a href="/dotnet/desktop-wpf/">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/net-docs-desktop-2-core.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Windows Presentation Foundation (.NET Core)</h3>
+                                                    <p>WPF provides developers with a XAML-based model for building desktop
+                                                        applications on Windows.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="/dotnet/framework/wpf/">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="/dotnet/images/hub/net-docs-desktop-2.svg" alt="" />
+                                                        <img src="/dotnet/images/hub/net-docs-desktop-2-framework.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Windows Presentation Foundation (WPF)</h3>
+                                                    <h3>Windows Presentation Foundation (.NET Framework)</h3>
                                                     <p>WPF provides developers with a XAML-based model for building desktop
                                                         applications on Windows.
                                                     </p>

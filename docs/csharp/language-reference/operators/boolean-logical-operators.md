@@ -121,7 +121,7 @@ For the `bool?` operands, the `&` and `|` operators support the three-valued log
 |null|false|false|null|  
 |null|null|null|null|  
 
-The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator which is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands is `null`. However, the `&` and `|` operators can produce non-null even if one of the operands is `null`. For more information about the operator behavior with nullable value types, see the [Operators](../../programming-guide/nullable-types/using-nullable-types.md#operators) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
+The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator which is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands is `null`. However, the `&` and `|` operators can produce non-null even if one of the operands is `null`. For more information about the operator behavior with nullable value types, see the [Operators](../../programming-guide/nullable-types/using-nullable-types.md#operators) section of the [Using nullable value types](../../programming-guide/nullable-types/using-nullable-types.md) article.
 
 You can also use the `!` and `^` operators with the `bool?` operands, as the following example shows:
 

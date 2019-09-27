@@ -6,7 +6,7 @@ ms.topic: tutorial
 ms.custom: mvc
 ms.author: nakersha
 author: natke
-#Customer intent: As a developer, I want to use ML.NET to make inferences with a pre-trained TensorFlow model. 
+#Customer intent: As a developer, I want to use ML.NET to make inferences with a pre-trained TensorFlow model.
 ---
 # Tutorial: Analyze sentiment of movie reviews using a pre-trained TensorFlow model in ML.NET
 
@@ -16,6 +16,7 @@ The TensorFlow model used in this tutorial was trained using movie reviews from 
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Load a pre-trained TensorFlow model
 > * Transform website comment text into features suitable for the model
 > * Use the model to make a prediction
@@ -115,7 +116,7 @@ The variable length feature array is then resized to a fixed length of 600. This
     [!code-csharp[Prediction](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#Prediction "Declare prediction class")]
 
     `MovieReviewSentimentPrediction` is the prediction class used after the model training. `MovieReviewSentimentPrediction` has a single `float` array (`Prediction`) and a `VectorType` attribute.
-    
+
 ### Create the MLContext, lookup dictionary, and action to resize features
 
 The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all ML.NET operations. Initializing `mlContext` creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
@@ -186,7 +187,7 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 
 1. Add the code to create the model from the pipeline:
 
-    [!code-csharp[SnippetCreateModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#SnippetCreateModel)]  
+    [!code-csharp[SnippetCreateModel](~/samples/machine-learning/tutorials/TextClassificationTF/Program.cs#SnippetCreateModel)]
 
     An ML.NET model is created from the chain of estimators in the pipeline by calling the `Fit` method. In this case, we are not fitting any data to create the model, as the TensorFlow model has already been previously trained. We supply an empty data view object to satisfy the requirements of the `Fit` method.
 
@@ -195,10 +196,10 @@ The [MLContext class](xref:Microsoft.ML.MLContext) is a starting point for all M
 1. Add the `PredictSentiment` method below the `Main` method:
 
     ```csharp
-        public static void PredictSentiment(MLContext mlContext, ITransformer model)
-        {
+    public static void PredictSentiment(MLContext mlContext, ITransformer model)
+    {
 
-        }
+    }
     ```
 
 1. Add the following code to create the `PredictionEngine` as the first line in the `PredictSentiment()` method:
@@ -236,8 +237,8 @@ Build and run your application.
 Your results should be similar to the following. During processing, messages are displayed. You may see warnings, or processing messages. These messages have been removed from the following results for clarity.
 
 ```console
-   Number of classes: 2
-   Is sentiment/review positive ? Yes
+Number of classes: 2
+Is sentiment/review positive ? Yes
 ```
 
 Congratulations! You've now successfully built a machine learning model for classifying and predicting messages sentiment by reusing a pre-trained `TensorFlow` model in ML.NET.
@@ -246,6 +247,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > * Load a pre-trained TensorFlow model
 > * Transform website comment text into features suitable for the model
 > * Use the model to make a prediction

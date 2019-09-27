@@ -14,7 +14,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 
 |Constraint|Description|
 |----------------|-----------------|
-|`where T : struct`|The type argument must be a value type. Any value type except <xref:System.Nullable%601> can be specified. For more information about nullable types, see [Nullable types](../nullable-types/index.md).|
+|`where T : struct`|The type argument must be a value type. Any value type except <xref:System.Nullable%601> can be specified. For more information about nullable value types, see [Nullable value types](../nullable-types/index.md).|
 |`where T : class`|The type argument must be a reference type. This constraint applies also to any class, interface, delegate, or array type.|
 |`where T : notnull`|The type argument must be a non-nullable type. The argument can be a non-nullable reference type in C# 8.0 or later, or a not nullable value type. This constraint applies also to any class, interface, delegate, or array type.|
 |`where T : unmanaged`|The type argument must be an [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md).|

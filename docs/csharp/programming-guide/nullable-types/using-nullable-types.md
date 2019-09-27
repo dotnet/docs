@@ -14,7 +14,7 @@ Nullable value types are types that represent all the values of an underlying va
 > [!NOTE]
 > C# 8.0 introduces the nullable reference types feature. For more information, see [Nullable reference types](../../nullable-references.md). The nullable value types are available starting with C# 2.
 
-You can refer to a nullable type in any of the following forms: `Nullable<T>` or `T?`. These two forms are interchangeable.
+You can refer to a nullable value type in any of the following interchangeable forms: `Nullable<T>` or `T?`. `T` must be a value type.
 
 ## Declaration and assignment
 

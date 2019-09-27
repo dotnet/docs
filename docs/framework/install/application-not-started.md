@@ -51,7 +51,7 @@ To address this issue so that you can run your application, do the following:
 
 1. Attempt to launch the application.
 
-1. In some cases, you may see a dialog box like the following, which asks you to install the .NET Framework 3.5. Select **Download and install this feature** to install the .NET Framewoork 3.5, then launch the application again.
+1. In some cases, you may see a dialog box like the following, which asks you to install the .NET Framework 3.5. Select **Download and install this feature** to install the .NET Framework 3.5, then launch the application again.
 
    ![Unable to resolve the problem](media/application-not-started/install-3-5.png)
 

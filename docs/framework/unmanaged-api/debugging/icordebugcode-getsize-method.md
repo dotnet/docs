@@ -32,7 +32,7 @@ HRESULT GetSize (
 
 ## Parameters
 
- `pcBytes`
+ `pcBytes`  
  [out] A pointer to the size, in bytes, of the binary code that this `ICorDebugCode` object represents.
 
 ## Requirements

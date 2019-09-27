@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 09/13/2019
+ms.date: 09/26/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
@@ -62,7 +62,7 @@ Each row in the *wikipedia-detox-250-line-data.tsv* dataset represents a differe
 
 ## Choose a scenario
 
-![](./media/sentiment-analysis-model-builder/model-builder-screen.png)
+![Model Builder wizard in Visual Studio](./media/sentiment-analysis-model-builder/model-builder-screen.png)
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
@@ -75,7 +75,8 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
 1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the *wikipedia-detox-250-line-data.tsv* file.
-1. Choose **Sentiment** in the **Label or Column to Predict** dropdown
+1. Choose **Sentiment** in the **Column to Predict (Label)** dropdown.
+1. Leave the default values for the **Input Columns (Features)** dropdown.
 1. Select the **Train** link to move to the next step in the Model Builder tool.
 
 ## Train the model
@@ -113,23 +114,13 @@ Two projects will be created as a result of the training process.
     The following projects should appear in the **Solution Explorer**:
 
     - *SentimentRazorML.ConsoleApp*: A .NET Core Console application that contains the model training and prediction code.
-    - *SentimentRazorML.Model*: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
+    - *SentimentRazorML.Model*: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the saved version of the best performing model during training.
 
     For this tutorial, only the *SentimentRazorML.Model* project is used because predictions will be made in the *SentimentRazor* web application rather than in the console. Although the *SentimentRazorML.ConsoleApp* won't be used for scoring, it can be used to retrain the model using new data at a later time. Retraining is outside the scope of this tutorial though.
 
-1. To use the trained model inside your Razor Pages application, add a reference to the *SentimentRazorML.Model* project.
-
-    1. Right-click **SentimentRazor** project.
-    1. Select **Add > Reference**.
-    1. Choose the **Projects > Solution** node and from the list, check the **SentimentRazorML.Model** project.
-    1. Select **OK**.
-
 ### Configure the PredictionEngine pool
 
-To make a single prediction, use [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). In order to use [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) in your application, you must create it when it's needed. In that case, a best practice to consider is dependency injection.
-
-> [!WARNING]
-> [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. For improved performance and thread safety, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of `PredictionEngine` objects for application use. Read the following blog post to learn more about [creating and using `PredictionEngine` object pools in ASP.NET Core](https://devblogs.microsoft.com/cesardelatorre/how-to-optimize-and-run-ml-net-models-on-scalable-asp-net-core-webapis-or-web-apps/).
+To make a single prediction, you have to create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602). [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. Additionally, you have to create an instance of it everywhere it is needed within your application. As your application grows, this process can become unmanageable. For improved performance and thread safety, use a combination of dependency injection and the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application.
 
 1. Install the *Microsoft.Extensions.ML* NuGet package:
 
@@ -246,7 +237,7 @@ Now that your application is set up, run the application which should launch in 
 
 When the application launches, enter *Model Builder is cool!* into the text area. The predicted sentiment displayed should be *Not Toxic*.
 
-![](./media/sentiment-analysis-model-builder/web-app.png)
+![Running window with the predicted sentiment window](./media/sentiment-analysis-model-builder/web-app.png)
 
 If you need to reference the Model Builder generated projects at a later time inside of another solution, you can find them inside the `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
 

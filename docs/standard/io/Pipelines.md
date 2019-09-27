@@ -351,15 +351,13 @@ public class MyConnection
 
 #### Code samples
 
-These code samples will result in data loss, hangs, potential security issues (depending on where they are used) and should **NOT** be copied. They exist solely for illustration of the [PipeReader Common problems](#gotchas) mentioned above.
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 ❌ **Data loss**
 
 The `ReadResult` can return the final segment of data when `IsCompleted` is set to true. Not reading that data before exiting the read loop will result in data loss.
 
 ```csharp
-// Move these to includes
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the PipeReader common problems mentioned in the accompanying document.
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
 {
@@ -375,8 +373,9 @@ while (true)
     
     reader.AdvanceTo(dataLossBuffer.Start, dataLossBuffer.End);
 }
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the PipeReader common problems in the accompanying document.
+in the accompanying document.
 ```
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Infinite loop**
 

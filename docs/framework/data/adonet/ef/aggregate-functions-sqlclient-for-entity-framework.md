@@ -217,10 +217,7 @@ A `Double`.
   
 ## See also
 
-For more information about the aggregate functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:
-
 - **SQL Server 2005:** [Aggregate Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms173454(v=sql.90))
 - **SQL Server 2008 and later:** [Aggregate Functions (Transact-SQL)](/sql/t-sql/functions/aggregate-functions-transact-sql)
-
 - [Entity SQL Language](./language-reference/entity-sql-language.md)
 - [Aggregate Canonical Functions](./language-reference/aggregate-canonical-functions.md)

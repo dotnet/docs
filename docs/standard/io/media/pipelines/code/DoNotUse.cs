@@ -4,7 +4,7 @@
  * PROBABLY BETTER THEY DON'T COMPILE AS IS
 */
 
-
+#if NEVER
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -33,3 +33,5 @@ namespace Pipes
         }
     }
 }
+
+#endif

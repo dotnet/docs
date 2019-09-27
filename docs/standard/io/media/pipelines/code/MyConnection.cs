@@ -38,7 +38,8 @@ namespace Pipes
                             break;
                         }
 
-                        // Process all messages from the buffer, modifying the input buffer on each iteration
+                        // Process all messages from the buffer, modifying the input buffer on each
+                        //iteration
                         while (TryParseMessage(ref buffer, out Message message))
                         {
                             await ProcessMessageAsync(message);

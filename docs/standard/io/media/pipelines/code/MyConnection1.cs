@@ -10,7 +10,8 @@ namespace Pipes
     class MyConnection1
     {
         #region snippet
-        async Task ProcessMessagesAsync(PipeReader reader, CancellationToken cancellationToken = default)
+        async Task ProcessMessagesAsync(PipeReader reader, 
+                                        CancellationToken cancellationToken = default)
         {
             try
             {
@@ -21,7 +22,8 @@ namespace Pipes
 
                     try
                     {
-                        // Process all messages from the buffer, modifying the input buffer on each iteration
+                        // Process all messages from the buffer, modifying the input buffer
+                        // on each iteration.
                         while (TryParseMessage(ref buffer, out Message message))
                         {
                             await ProcessMessageAsync(message);
@@ -40,8 +42,8 @@ namespace Pipes
                     }
                     finally
                     {
-                        // Since we're processing all messages in the buffer, we can use the remaining buffer's
-                        // Start and End position to determine consumed and examined.
+                        // Since we're processing all messages in the buffer, we can use the remaining
+                        // buffer'sStart and End position to determine consumed and examined.
                         reader.AdvanceTo(buffer.Start, buffer.End);
                     }
                 }

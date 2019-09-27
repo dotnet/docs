@@ -228,22 +228,6 @@ The code below reads all messages from a `PipeReader` and calls `ProcessMessageA
 
 [!code-csharp[](media/pipelines/code/MyConnection1.cs?name=snippet)]
 
-zz
-
-
-```csharp
-async Task ProcessMessagesAsync(PipeReader reader, CancellationToken cancellationToken = default)
-{
-    try
-    {
-        while (true)
-        {
-            ReadResult result = await reader.ReadAsync(cancellationToken);
-            ReadOnlySequence<byte> buffer = result.Buffer;
-
-        
-```
-
 ### Cancellation
 
 `PipeReader.ReadAsync` supports passing a `CancellationToken` which will result in an `OperationCanceledException` if the token is cancelled while there's a read pending. It also supports a way to cancel the current read operation via `PipeReader.CancelPendingRead` which avoids raising an exception. Calling this method will return a `ReadResult` with `IsCanceled` set to true. This can be extremely useful for halting the existing read loop in a non-destructive and non-exceptional way.
@@ -478,23 +462,12 @@ The preceding code:
 * Calls `Advance(written)` to indicate how many bytes were written to the buffer.
 * Flushes the `PipeWriter`, which sends the bytes to the underlying device.
 
-The preceding method of writing uses the buffers provided by the `PipeWriter`. Alternatively,[PipeWriter.WriteAync](xref:System.IO.Pipelines.PipeWriter.WriteAsync*):
+The preceding method of writing uses the buffers provided by the `PipeWriter`. Alternatively, [PipeWriter.WriteAync](xref:System.IO.Pipelines.PipeWriter.WriteAsync*):
 
 * Copies the existing buffer to the `PipeWriter`.
 * Calls `GetSpan`, `Advance` as appropriate and calls `PipeWriter.FlushAsync`.
 
-[!code-csharp[](media/pipelines/code/MyPipeWriter.cs?name=snippe2)]
-
-zz
-```csharp
-async Task WriteHelloAsync(PipeWriter writer, CanceallationToken cancellationToken = default)
-{
-    byte[] helloBytes = Encoding.ASCII.GetBytes("Hello");
-    
-    // Write helloBytes to the writer, there's no need to call Advance here (Write does that)
-    await writer.WriteAsync(helloBytes, cancellationToken);
-}
-```
+[!code-csharp[](media/pipelines/code/MyPipeWriter.cs?name=snippet2)]
 
 ### Cancellation
 

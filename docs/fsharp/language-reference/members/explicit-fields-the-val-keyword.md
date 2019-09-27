@@ -42,7 +42,7 @@ The following code shows the use of explicit fields and, for comparison, a `let`
 
 The output is as follows:
 
-```
+```console
 11 12 abc
 30 def
 ```

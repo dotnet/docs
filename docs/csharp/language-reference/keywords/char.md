@@ -1,7 +1,6 @@
 ---
 title: "char keyword - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "char"
@@ -46,5 +45,4 @@ For more information, see [Integral types](~/_csharplang/spec/types.md#integral-
 - [Built-In Types Table](./built-in-types-table.md)
 - [Implicit Numeric Conversions Table](./implicit-numeric-conversions-table.md)
 - [Explicit Numeric Conversions Table](./explicit-numeric-conversions-table.md)
-- [Nullable Types](../../programming-guide/nullable-types/index.md)
 - [Strings](../../programming-guide/strings/index.md)

@@ -131,6 +131,11 @@
             "redirect_url": "/dotnet/core/packages"
         },
         {
+            "source_path": "docs/core/porting/wpf.md",
+            "redirect_url": "/dotnet/desktop-wpf/migration/convert-project-from-net-framework",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/core/preview3/deploying/index.md",
             "redirect_url": "/dotnet/core/deploying",
             "redirect_document_id": true
@@ -2396,6 +2401,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml-resources-define",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/advanced/xaml-overview-wpf.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/wpf/controls/datepicker-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/datepicker-styles-and-templates",
             "redirect_document_id": true
@@ -2411,6 +2426,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/controls/styling-and-templating.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/styles-and-templates-overview",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/wpf/controls/thumb-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/thumb-styles-and-templates",
             "redirect_document_id": true
@@ -2418,6 +2438,11 @@
         {
             "source_path": "docs/framework/wpf/controls/togglebutton-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/togglebutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/data/data-binding-overview.md",
+            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
             "redirect_document_id": true
         },
         {

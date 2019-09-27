@@ -103,7 +103,7 @@ In the first loop`:
 
 * `PipeWriter.GetMemory(int)` is called to get memory from the underlying writer.
 * `PipeWriter.Advance(int)` is called to tell the `PipeWriter` how much data was written to the buffer.
-* `PipeWriter.FlushAsync` is called to make the data available to the `PipeReader`.
+* <xref:System.IO.Pipelines.PipeWriter.FlushAsync*> is called to make the data available to the `PipeReader`.
 
 In the second loop, the `PipeReader` consumes the buffers written by `PipeWriter`. The buffers come from the Socket. The call to `PipeReader.ReadAsync`:
 
@@ -135,14 +135,14 @@ For optimal performance, there is a balance between frequent pauses and allocati
 
 To solve the preceding problem, the `Pipe` has two settings to control the flow of data:
 
-* `PauseWriterThreshold`: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses.
+* `PauseWriterThreshold`: Determines how much data should be buffered before calls to <xref:System.IO.Pipelines.PipeWriter.FlushAsync*> pauses.
 * `ResumeWriterThreshold`: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses.
 
 The `ResumeWriterThreshold` controls how much the reader has to observe before writing can resume.
 
 ![diagram with ResumeWriterThreshold and PauseWriterThreshold](media/pipelines/resume-pause.png)
 
-`PipeWriter.FlushAsync`:
+<xref:System.IO.Pipelines.PipeWriter.FlushAsync*>:
 
 * Returns an incomplete `ValueTask<FlushResult>` when the amount of data in the `Pipe` crosses `PauseWriterThreshold`.
 * Completes `ValueTask<FlushResult>` when it becomes lower than `ResumeWriterThreshold`.
@@ -541,29 +541,21 @@ The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the cal
 
 [!code-csharp[](media/pipelines/code/MyPipeWriter.cs?name=snippet)]
 
-Delete embedded zz
+The preceding code:
 
-```csharp
-async Task WriteHelloAsync(PipeWriter writer, CanceallationToken cancellationToken = default)
-{
-    // Request at least 5 bytes from the PipeWriter
-    Span<byte> span = writer.GetSpan(5);
-    ReadOnlySpan<char> helloSpan = "Hello".AsSpan();
-    
-    // Write directly into the buffer
-    int written = Encoding.ASCII.GetBytes(helloSpan, span);
-    
-    // Tell the writer how many bytes we wrote
-    writer.Advance(written);
-    
-    await writer.FlushAsync(cancellationToken);
-}
-```
+* Requests a buffer of at least 5 bytes from the `PipeWriter` using `GetSpan(5)`. 
+* Writes bytes for the ASCII string "Hello" to the returned `Span<byte>`.
+* Calls `Advance(written)` to indicate how many bytes were written to the buffer.
+* Flushes the `PipeWriter`, which sends the bytes to the underlying device.
 
-The preceding method requests a buffer of at least 5 bytes from the `PipeWriter` using `GetSpan(5)`. It then writes bytes for the ASCII string "Hello" to the returned `Span<byte>`. It then calls `Advance(written)` to indicate how many bytes were written to the buffer. Flushing the `PipeWriter` pushes the bytes to the underlying device.
+The preceding method of writing uses the buffers provided by the `PipeWriter`. Alternatively,[PipeWriter.WriteAync](xref:System.IO.Pipelines.PipeWriter.WriteAsync*):
 
-This method of writing will use the buffers provided by the `PipeWriter` but you can also use the [`PipeWriter.WriteAync`](/dotnet/api/system.io.pipelines.pipewriter.writeasync?view=dotnet-plat-ext-3.0)  method to copy an existing buffer to the `PipeWriter`. This will do the work of calling `GetSpan` and `Advance` as appropriate and will also call `PipeWriter.FlushAsync`.
+* Copies the existing buffer to the `PipeWriter`.
+* Calls `GetSpan`, `Advance` as appropriate and calls `PipeWriter.FlushAsync`.
 
+[!code-csharp[](media/pipelines/code/MyPipeWriter.cs?name=snippe2)]
+
+zz
 ```csharp
 async Task WriteHelloAsync(PipeWriter writer, CanceallationToken cancellationToken = default)
 {
@@ -576,7 +568,7 @@ async Task WriteHelloAsync(PipeWriter writer, CanceallationToken cancellationTok
 
 ### Cancellation
 
-`PipeWriter.FlushAsync` supports passing a `CancellationToken` which will result in an `OperationCanceledException` if the token is cancelled while there's a flush pending. It also supports a way to cancel the current flush operation via `PipeWriter.CancelPendingFlush` without raising an exception. Calling this method will return a `FlushResult` with `IsCanceled` set to true. This can be extremely useful for halting the yielding flush in a non-destructive and non-exceptional way.
+<xref:System.IO.Pipelines.PipeWriter.FlushAsync*> supports passing a `CancellationToken`. Passing a `CancellationToken` results in an `OperationCanceledException` if the token is cancelled while there's a flush pending. `PipeWriter.FlushAsync` supports a way to cancel the current flush operation via `PipeWriter.CancelPendingFlush` without raising an exception. Calling `PipeWriter.CancelPendingFlush` returns a `FlushResult` with `IsCanceled` set to `true`. This can be extremely useful for halting the yielding flush in a non-destructive and non-exceptional way.
 
 <a name="pwcm"></a>
 
@@ -584,14 +576,14 @@ async Task WriteHelloAsync(PipeWriter writer, CanceallationToken cancellationTok
 
 - `GetSpan` and `GetMemory` return a buffer with at least the requested amount of memory. Don't assume exact buffer sizes.
 - There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
-- You must request a new buffer after calling `Advance` to continue writing more data; you cannot write to a previously acquired buffer.
+- A new buffer must be requested after calling `Advance` to continue writing more data. The previously acquired buffer cannot be written to.
 - Calling `GetMemory` or `GetSpan` while there's an incomplete call to `FlushAsync` is not safe.
 - Calling `Complete` or `CompleteAsync` while there's unflushed data can result in memory corruption.
 
-## [IDuplexPipe](/dotnet/api/system.io.pipelines.iduplexpipe?view=dotnet-plat-ext-2.1)
+## IDuplexPipe
 
-The `IDuplexPipe` is a contract for types that support both reading and writing. For example, a network connection would be represented by an `IDuplexPipe`.
+The <xref:System.IO.Pipelines.IDuplexPipe> is a contract for types that support both reading and writing. For example, a network connection would be represented by an `IDuplexPipe`.
 
 ## Streams
 
-When reading streaming data it is very common to read data using a de-serializer or write data using a serializer. Most of these APIs take `Stream` today. In order to make it easier to integrate with these existing APIs `PipeReader` and `PipeWriter` expose an `AsStream` which will return a `Stream` implementation around the `PipeReader` or `PipeWriter`. 
+When reading or writing stream data you typically read data using a de-serializer and write data using a serializer. Most of these read/write stream APIs have a `Stream` parameter. In order to make it easier to integrate with these existing APIs, `PipeReader` and `PipeWriter` expose an `AsStream`.  `AsStream` returns a `Stream` implementation around the `PipeReader` or `PipeWriter`.

@@ -206,7 +206,7 @@ If all you have is a memory dump and you need to look at what objects are actual
 
 The following shows sample output from analyzing the LOH:
 
-```
+```console
 0:003> .loadby sos mscorwks
 0:003> !eeheap -gc
 Number of GC Heaps: 1
@@ -247,7 +247,7 @@ Because the LOH is not compacted, sometimes the LOH is thought to be the source 
 
    The following example shows fragmentation in the VM space:
 
-   ```
+   ```console
    0:000> !address
    00000000 : 00000000 - 00010000
    Type     00000000

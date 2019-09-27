@@ -154,5 +154,6 @@ Tool installation requires access to the NuGet feed that contains the tool packa
 * You mistyped the name of the tool.
 
 A common reason for failure is that the tool name isn't correct. This can happen because of mistyping, or because the tool has moved or been deprecated. For tools on NuGet.org, one way to ensure you have the name correct is to search for the tool at NuGet.org and copy the installation command.
+
 ## See also
 * [.NET Core Global Tools overview](global-tools.md)

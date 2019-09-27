@@ -102,7 +102,15 @@ namespace Pipes
     }
         #endregion
 
-
+        private void dummy()
+        {
+            #region snippet2
+            var pipe = new Pipe();
+            PipeReader reader = pipe.Reader;
+            PipeWriter writer = pipe.Writer;
+            #endregion
+        }
+        
         public static void LogError(Exception ex)
         {
             throw new NotImplementedException();

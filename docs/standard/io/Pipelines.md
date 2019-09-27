@@ -15,6 +15,7 @@ ms.author: "mairaw"
 ---
 # System.IO.Pipelines
 
+<!--  This is auto generated
 - [What problem does it solve?](#solve)
 - [Pipe](#pipe)
     - [Basic usage](#pbu)
@@ -24,19 +25,20 @@ ms.author: "mairaw"
 - [PipeReader](#pipereader)
     - [Scenarios](#scenarios)
     - [Cancellation](#cancellation)
-    - [Gotchas](#gotchas)
+    - [Common problems](#gotchas)
 - [PipeWriter](#pipewriter)
     - [Scenarios](#)
     - [Cancellation](#cancellation)
     - [Gotchas](#)
 - [IDuplexPipe](#iduplexpipe)
 - [Streams](#streams)
+- -->
 
 `System.IO.Pipelines` is a new library that is designed to make it easier to do high performance IO in .NET. It’s a library targeting .NET Standard that works on all .NET implementations.
 
 <a name="solve"></a>
 
-## What problem does System.IO.Pipelines solve?
+## What problem does System.IO.Pipelines solve
 
 Apps that parse streaming data are composed of boilerplate code having many corner cases. The boilerplate/corner case code is complex and difficult to maintain.
 
@@ -75,171 +77,20 @@ To fix the preceding problems, the following changes are required:
 - Consider using buffer pooling to avoid allocating memory repeatedly.
 - The following code address some of these problems:
 
-```csharp
-async Task ProcessLinesAsync(NetworkStream stream)
-{
-    byte[] buffer = ArrayPool<byte>.Shared.Rent(1024);
-    var bytesBuffered = 0;
-    var bytesConsumed = 0;
 
-    while (true)
-    {
-        // Calculate the amount of bytes remaining in the buffer
-        var bytesRemaining = buffer.Length - bytesBuffered;
-
-        if (bytesRemaining == 0)
-        {
-            // Double the buffer size and copy the previously buffered data into the new buffer
-            var newBuffer = ArrayPool<byte>.Shared.Rent(buffer.Length * 2);
-            Buffer.BlockCopy(buffer, 0, newBuffer, 0, buffer.Length);
-            // Return the old buffer to the pool
-            ArrayPool<byte>.Shared.Return(buffer);
-            buffer = newBuffer;
-            bytesRemaining = buffer.Length - bytesBuffered;
-        }
-
-        var bytesRead = await stream.ReadAsync(buffer, bytesBuffered, bytesRemaining);
-        if (bytesRead == 0)
-        {
-            // EOF
-            break;
-        }
-        
-        // Keep track of the amount of buffered bytes
-        bytesBuffered += bytesRead;
-        
-        do
-        {
-            // Look for a EOL in the buffered data
-            linePosition = Array.IndexOf(buffer, (byte)'\n', bytesConsumed, bytesBuffered - bytesConsumed);
-
-            if (linePosition >= 0)
-            {
-                // Calculate the length of the line based on the offset
-                var lineLength = linePosition - bytesConsumed;
-
-                // Process the line
-                ProcessLine(buffer, bytesConsumed, lineLength);
-
-                // Move the bytesConsumed to skip past the line we consumed (including \n)
-                bytesConsumed += lineLength + 1;
-            }
-        }
-        while (linePosition >= 0);
-    }
-}
-```
-
-The preceding code is complex, and doesn't address all the problems identified. High-performance networking usually means writing very complex code in order to maximize performance. **System.IO.Pipelines** was designed to make writing this type of code easier.
+The preceding code is complex and doesn't address all the problems identified. High-performance networking usually means writing very complex code in order to maximize performance. **System.IO.Pipelines** was designed to make writing this type of code easier.
 
 ## Pipe
 
 The <xref:System.IO.Pipelines.Pipe> class can be used to create a `PipeWriter/PipeReader` pair. All data written into the `PipeWriter` is available in the `PipeReader`:
 
-```csharp
-var pipe = new Pipe();
-PipeReader reader = pipe.Reader;
-PipeWriter reader = pipe.Writer;
-```
+[!code-csharp[](media/pipelines/Pipe.cs?name=snippet2)]
 
 <a name="pbu"></a>
 
 ### Pipe basic usage
 
 [!code-csharp[](media/pipelines/Pipe.cs?name=snippet)]
-
-Snippet above, embedded below
-
-```csharp
-async Task ProcessLinesAsync(Socket socket)
-{
-    var pipe = new Pipe();
-    Task writing = FillPipeAsync(socket, pipe.Writer);
-    Task reading = ReadPipeAsync(pipe.Reader);
-
-    return Task.WhenAll(reading, writing);
-}
-
-async Task FillPipeAsync(Socket socket, PipeWriter writer)
-{
-    const int minimumBufferSize = 512;
-
-    while (true)
-    {
-        // Allocate at least 512 bytes from the PipeWriter.
-        Memory<byte> memory = writer.GetMemory(minimumBufferSize);
-        try
-        {
-            int bytesRead = await socket.ReceiveAsync(memory, SocketFlags.None);
-            if (bytesRead == 0)
-            {
-                break;
-            }
-            // Tell the PipeWriter how much was read from the Socket.
-            writer.Advance(bytesRead);
-        }
-        catch (Exception ex)
-        {
-            LogError(ex);
-            break;
-        }
-
-        // Make the data available to the PipeReader.
-        FlushResult result = await writer.FlushAsync();
-
-        if (result.IsCompleted)
-        {
-            break;
-        }
-    }
-
-    // Tell the PipeReader that there's no more data.
-    writer.Complete();
-}
-
-async Task ReadPipeAsync(PipeReader reader)
-{
-    while (true)
-    {
-        ReadResult result = await reader.ReadAsync();
-        ReadOnlySequence<byte> buffer = result.Buffer;
-
-        while (TryReadLine(ref buffer, out ReadOnlySequence<byte> line))
-        {
-            // Process the line.
-            ProcessLine(line);
-        }
-
-        // Tell the PipeReader how much of the buffer has been consumed.
-        reader.AdvanceTo(buffer.Start, buffer.End);
-
-        // Stop reading if there's no more data.
-        if (result.IsCompleted)
-        {
-            break;
-        }
-    }
-
-    // Mark the PipeReader as complete.
-    reader.Complete();
-}
-
-bool TryReadLine(ref ReadOnlySequence<byte> buffer, out ReadOnlySequence<byte> buffer)
-{
-    // Look for a EOL in the buffer.
-    SequencePosition? position = buffer.PositionOf((byte)'\n');
-
-    if (position == null)
-    {
-        buffer = default;
-        return false;
-    }
-    
-    // Skip the line and the \n
-    buffer = buffer.Slice(buffer.GetPosition(1, position.Value));
-    return true;
-}
-```
 
 There are 2 loops:
 
@@ -270,7 +121,7 @@ The reader and writer loops end by calling `Complete`. `Complete` lets the under
 
 ### Backpressure and flow control
 
-Ideally, reading and parsing work together: 
+Ideally, reading and parsing work together:
 
 * The writing thread consumes data from the network and puts it in buffers.
 * The parsing thread is responsible for constructing the appropriate data structures.
@@ -285,7 +136,7 @@ For optimal performance, there is a balance between frequent pauses and allocati
 To solve the preceding problem, the `Pipe` has two settings to control the flow of data:
 
 * `PauseWriterThreshold`: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses.
-* `ResumeWriterThreshold`: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses. 
+* `ResumeWriterThreshold`: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses.
 
 The `ResumeWriterThreshold` controls how much the reader has to observe before writing can resume.
 
@@ -301,7 +152,7 @@ Two values are used to prevent rapid cycling if one value was used.
 #### Examples
 
 ```csharp
-// The Pipe will start returning incomplete tasks from FlushAsync until 
+// The Pipe will start returning incomplete tasks from FlushAsync until
 // the reader examines at least 5 bytes.
 var options = new PipeOptions(pauseWriterThreshold: 10, resumeWriterThreshold: 5);
 var pipe = new Pipe(options);
@@ -309,64 +160,26 @@ var pipe = new Pipe(options);
 
 ### PipeScheduler
 
-### [PipeScheduler](/dotnet/api/system.io.pipelines.pipescheduler?view=dotnet-plat-ext-2.1)
+<xref:System.IO.Pipelines.PipeScheduler>
 
-Typically when using async/await, asynchronous code resumes on either on a `TaskScheduler` or on the current `SynchronizationContext`.
+Typically when using `async` amd `await`, asynchronous code resumes on either on a <xref:System.Threading.Tasks.TaskScheduler> or on the current  <xref:System.Threading.SynchronizationContext>.
 
-When doing IO it's important to have fine-grained control over where that IO is performed. This control is required so to take advantage of CPU caches more effectively. Efficient caching is critical for high-performance apps like web servers. <xref:System.IO.Pipelines.PipeScheduler> gives users control over where asynchronous callbacks run. By default:
+When doing IO, it's important to have fine-grained control over where that IO is performed. This control allows taking advantage of CPU caches effectively. Efficient caching is critical for high-performance apps like web servers. <xref:System.IO.Pipelines.PipeScheduler> provides control over where asynchronous callbacks run. By default:
 
 * The current `SynchronizationContext` will be used.
 * If there is no `SynchronizationContext`, it will use the thread pool to run callbacks.
 
 #### Examples
 
-```csharp
-
-public static void Main(string[] args)
-{
-    var writeScheduler = new SingleThreadPipeScheduler();
-    var readScheduler = new SingleThreadPipeScheduler();
-
-    // Tell the Pipe what schedulers to use
-    // and disable the SynchronizationContext .
-    var options = new PipeOptions(readerScheduler: readScheduler, writerScheduler: writeScheduler, useSynchronizationContext: false);
-    var pipe = new Pipe(options);
-}
-
-// This is a sample scheduler that async callbacks on a single dedicated thread.
-public class SingleThreadPipeScheduler : PipeScheduler
-{
-    private readonly BlockingCollection<(Action<object> Action, object State)> _queue = new BlockingCollection<(Action<object> Action, object State)>();
-    private readonly Thread _thread;
-
-    public SingleThreadPipeScheduler()
-    {
-        _thread = new Thread(DoWork);
-        _thread.Start();
-    }
-
-    private void DoWork()
-    {
-        foreach (var item in _queue.GetConsumingEnumerable())
-        {
-            item.Action(item.State);
-        }
-    }
-
-    public override void Schedule(Action<object> action, object state)
-    {
-        _queue.Add((action, state));
-    }
-}
-```
+[!code-csharp[](media/pipelines/Program.cs?name=snippet)]
 
 ### Pipe reset
 
-It's frequently efficient to reuse the Pipe object. To reset the pipe, call <xref:System.IO.Pipelines.PipeReader> [Reset](/dotnet/api/system.io.pipelines.pipe.reset) when both the `PipeReader` and `PipeWriter` are complete.
+It's frequently efficient to reuse the Pipe object. To reset the pipe, call <xref:System.IO.Pipelines.PipeReader> <xref:System.IO.Pipelines.Pipe.Reset*> when both the `PipeReader` and `PipeWriter` are complete.
 
 ## PipeReader
 
-<xref:System.IO.Pipelines.PipeReader> manages memory on the caller's behalf. **Always** call `PipeReader.AdvanceTo` after calling `PipeReader.ReadAsync`. This lets the `PipeReader` know when the caller is done with the memory so that it can be tracked. The `ReadOnlySequence<byte>` returned from `PipeReader.ReadAsync` is only valid until the call the `PipeReader.AdvanceTo`:
+<xref:System.IO.Pipelines.PipeReader> manages memory on the caller's behalf. **Always** call <xref:System.IO.Pipelines.PipeReader.AdvanceTo*> after calling `PipeReader.ReadAsync`. This lets the `PipeReader` know when the caller is done with the memory so that it can be tracked. The `ReadOnlySequence<byte>` returned from `PipeReader.ReadAsync` is only valid until the call the `PipeReader.AdvanceTo`:
 
 * It's illegal to use `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo`.
 * Using `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo` is undefined.
@@ -374,7 +187,9 @@ It's frequently efficient to reuse the Pipe object. To reset the pipe, call <xre
 `PipeReader.AdvanceTo` takes two `SequencePosition` arguments:
 
 * The first argument determines how much memory was consumed.
-* The second argument determines how much of the buffer was observed. 
+* The second argument determines how much of the buffer was observed.
+
+<!-- What about <xref:System.IO.Pipelines.PipeReader.AdvanceTo*> that takes 1 arg? -->
 
 Marking data as consumed means that the pipe can return the memory to the underlying buffer pool. Marking data as observed controls what the next call to `PipeReader.ReadAsync` does. Marking everything as observed means that the next call to `PipeReader.ReadAsync` will not return until there's more data written to the pipe. Any other value will make the next call to `PipeReader.ReadAsync` return immediately with the unobserved data.
 
@@ -395,63 +210,19 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 The following code reads a single message from a `PipeReader` and returns it to the caller.
 
-```csharp
-async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, CancellationToken cancellationToken = default)
-{
-    while (true)
-    {
-        ReadResult result = await reader.ReadAsync(cancellationToken);
-        ReadOnlySequence<byte> buffer = result.Buffer;
-        
-        // In the event no message is parsed successfully,
-        // mark consumed as nothing and examined as the entire buffer.
-        SequencePosition consumed = buffer.Start;
-        SequencePosition examined = buffer.End;
-        
-        try
-        {
-            if (TryParseMessage(ref buffer, out Message message))
-            {
-                // Successfully parsed a single message so mark the start
-                // as the parsed buffer as consumed.
-                // TryParseMessage trims the buffer to point to the data
-                // after the message is parsed.
-                consumed = buffer.Start;
-                
-                // Examined is marked the same as consumed here so that the
-                // next call to ReadSingleMessageAsync processs the next message
-                // if there is one
-                examined = consumed;
+[!code-csharp[](media/pipelines/ReadSingleMsg.cs?name=snippet)]
 
-                return message;
-            }
-            
-            // There's no more data to be processed.
-            if (result.IsCompleted)
-            {
-                if (buffer.Length > 0)
-                {
-                    // There is an incomplete message and there's no more data
-                    // to process.
-                    throw new InvalidDataException("Incomplete message!");
-                }
-                
-                break;
-            }
-        }
-        finally
-        {
-            reader.AdvanceTo(consumed, examined);
-        }
-    }
-    
-    return null;
-}
-```
-<!-- zz start ediit here -->
-The code above parses a single message and updates the consumed `SequencePosition` and examined `SequencePosition` to point to the start of the trimmed input buffer. This is because `TryParseMessage` removes the parsed message from the input buffer. Generally, when parsing a single message from the buffer, the examined position should be the end of the message or the end of the received buffer if no message was found.
+The preceding code:
 
-The single message case has the most potential for errors. Passing the wrong values to *examined* can result in an OOM or infinite loop (see the [gotchas](#) section below).
+* Parses a single message.
+* Updates the consumed `SequencePosition` and examined `SequencePosition` to point to the start of the trimmed input buffer.
+
+The two `SequencePosition` arguments are updated because `TryParseMessage` removes the parsed message from the input buffer. Generally, when parsing a single message from the buffer, the examined position should be one of the following:
+
+* The end of the message.
+* The end of the received buffer if no message was found.
+
+The single message case has the most potential for errors. Passing the wrong values to *examined* can result in an out of memory exception or and infinite loop. For more information, see the [PipeReader common problems](#gotchas) section in this document.
 
 #### Reading multiple messages
 
@@ -566,7 +337,9 @@ public class MyConnection
 }
 ```
 
-### Gotchas
+<a name="gotchas"></a>
+
+### PipeReader common problems
 
 - Passing the wrong values to consumed/examined may result in reading already read data (for e.g. passing a `SequencePosition` that was already processed)
 - Passing `buffer.End` as examined may result in stalled data, and possibly an eventual OOM if data is not consumed. (for example, `PipeReader.AdvanceTo(position, buffer.End)` when processing a single message at a time from the buffer.)
@@ -578,14 +351,14 @@ public class MyConnection
 
 #### Code samples
 
-These code samples will result in data loss, hangs, potential security issues (depending on where they are used) and should **NOT** be copied. They exist solely for illustration of the gotchas mentioned above.
+These code samples will result in data loss, hangs, potential security issues (depending on where they are used) and should **NOT** be copied. They exist solely for illustration of the [PipeReader Common problems](#gotchas) mentioned above.
 
 ❌ **Data loss**
 
 The `ReadResult` can return the final segment of data when `IsCompleted` is set to true. Not reading that data before exiting the read loop will result in data loss.
 
 ```csharp
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
+// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the PipeReader common problems mentioned in the accompanying document.
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
 {
@@ -601,7 +374,7 @@ while (true)
     
     reader.AdvanceTo(dataLossBuffer.Start, dataLossBuffer.End);
 }
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
+// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the PipeReader common problems in the accompanying document.
 ```
 
 ❌ **Infinite loop**
@@ -609,7 +382,7 @@ while (true)
 The below logic may result in an infinite loop if the `Result.IsCompleted` is true but there's never a complete message in the buffer.
 
 ```csharp
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
+// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the PipeReader common problems in the accompanying document.
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
 {
@@ -624,7 +397,7 @@ while (true)
     
     reader.AdvanceTo(infiniteLoopBuffer.Start, infiniteLoopBuffer.End);
 }
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
+// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the PipeReader common problems in the accompanying document.
 ```
 
 Here's another piece of code with the same problem. It's checking for a non-empty buffer before checking `ReadResult.IsCompleted`, but since it's in an `else if`, it will loop forever if there's never a complete message in the buffer.
@@ -792,7 +565,9 @@ async Task WriteHelloAsync(PipeWriter writer, CanceallationToken cancellationTok
 
 `PipeWriter.FlushAsync` supports passing a `CancellationToken` which will result in an `OperationCanceledException` if the token is cancelled while there's a flush pending. It also supports a way to cancel the current flush operation via `PipeWriter.CancelPendingFlush` without raising an exception. Calling this method will return a `FlushResult` with `IsCanceled` set to true. This can be extremely useful for halting the yielding flush in a non-destructive and non-exceptional way.
 
-### Gotchas
+<a name="pwcm"></a>
+
+### PipeWriter common problems
 
 - `GetSpan` and `GetMemory` return a buffer with at least the requested amount of memory. Don't assume exact buffer sizes.
 - There is no guarantee that successive calls will return the same buffer or the same-sized buffer.

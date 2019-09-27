@@ -69,4 +69,3 @@ Looking ahead, gRPC could play a major role in dethroning the dominance of REST 
 >[!div class="step-by-step"]
 >[Previous](service-to-service-communication.md)
 >[Next](service-mesh-communication-infrastructure.md)
-

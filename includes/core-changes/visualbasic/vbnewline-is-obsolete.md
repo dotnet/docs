@@ -1,6 +1,6 @@
 ﻿### Microsoft.VisualBasic.Constants.vbNewLine is obsolete
 
-The <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> constant is marked [Obsolete](xref:System.ObsoleteAttribute) in .NET Framework, but the attribute was missing previously in the .NET Core 3.0 library.
+The <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> constant is marked [Obsolete](xref:System.ObsoleteAttribute) starting with .NET Core 3.0 Preview 8.
 
 #### Version introduced
 
@@ -8,10 +8,10 @@ The <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> co
 
 #### Details
 
-Starting with .NET Core 3.0 Preview 8, the [Obsolete](xref:System.ObsoleteAttribute) attribute has been applied to the <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> constant to conform to `vbNewLine` in the .NET Framework. Use of the `vbNewLine` constant produces a compiler warning. 
+Starting with .NET Core 3.0 Preview 8, the [Obsolete](xref:System.ObsoleteAttribute) attribute has been applied to the <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> constant. Use of the constant produces a compiler warning. In previous releases of both .NET Core and .NET Framework, it was not marked as obsolete.
 
-In previous versions of .NET Core, `vbNewLine` did not produce a compiler warning.
-
+This change was made to support Visual Basic as a language for multi-platform development. The `vbNewLine` constant is equivalent to `\r\n`, the newline character sequence on Windows. On Unix-based systems, the newline character is `\n`.
+ 
 #### Recommended action
 
 The [Obsolete](xref:System.ObsoleteAttribute) attribute message for `vbNewLine` includes the following recommendation:

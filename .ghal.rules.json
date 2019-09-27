@@ -20,6 +20,7 @@
               "(?i)dotnet-csharp$": ":books: Area - C# Guide",
               "(?i)dotnet-visualbasic$": ":books: Area - Visual Basic Guide",
               "(?i)dotnet-core$": ":books: Area - .NET Core Guide",
+              "(?i)dotnet-desktop$": ":books: Area - Desktop Guide",
               "(?i)dotnet-framework$": ":books: Area - .NET Framework Guide",
               "(?i)dotnet-fsharp$": ":books: Area - F# Guide",
               "(?i)dotnet-ml$": ":books: Area - ML.NET Guide",
@@ -28,6 +29,9 @@
               "(?i)dotnet-ml-api$": ":books: Area - API Reference,:file_folder: Repo - ml-api-docs",
               "(?i)dotnet-roslyn-api$": ":books: Area - Roslyn API Reference,:file_folder: Repo - roslyn-api-docs",
               "(?i)dotnet-architecture$": ":books: Area - .NET Architecture Guide"
+            },
+            "technology": {
+              "(?i)dotnet-wpf$": ":card_file_box: Technology - WPF"
             },
             "contentsource": {
               "(?i).*master\/docs\/architecture\/blazor-for-web-forms-developers.*": ":book: guide - Blazor",

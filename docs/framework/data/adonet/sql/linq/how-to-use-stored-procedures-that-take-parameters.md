@@ -37,5 +37,5 @@ where O.CUSTOMERID = @CustomerID AND O.ORDERID = OD.ORDERID
 
 - [Stored Procedures](stored-procedures.md)
 - [Downloading Sample Databases](downloading-sample-databases.md)
-- [Using Nullable Types](../../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)
+- [Using Nullable Value Types](../../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)
 - [Nullable Value Types](../../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

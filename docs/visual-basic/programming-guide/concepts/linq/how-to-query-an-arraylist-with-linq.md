@@ -8,7 +8,7 @@ When using LINQ to query non-generic <xref:System.Collections.IEnumerable> colle
   
 ```vb  
 Dim query = From student As Student In arrList   
-...  
+'...  
 ```  
   
  By specifying the type of the range variable, you are casting each item in the <xref:System.Collections.ArrayList> to a `Student`.  

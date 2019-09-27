@@ -1,6 +1,6 @@
 ---
 title: ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: Introduction to building gRPC Services in ASP.NET Core 3.0 with particular reference to WCF
 author: markrendle
 ms.date: 09/02/2019
 ---
@@ -45,21 +45,21 @@ Editors:
 
 ## Introduction
 
-TODO
+Helping machines communicate with each other has been one of the primary preoccupations of the digital age. 
 
 ## Purpose
 
-TODO
+The popular framework 'gRPC' is a natural choice for new apps and WCF apps moving to .NET Core.  This is a short introduction to building gRPC Services in ASP.NET Core 3.0 and offers guidance for migrating an existing WCF application to gRPC.
 
 ## Who should use this guide
 
-**UPDATE THIS**
+[//]: #(UPDATE THIS)
 
 The audience for this guide is WCF developers, development leads, and architects who are interested in migrating WCF solutions on .NET 4 and earlier to ASP.NET Core 3.0 using gRPC services.
 
 ## How you can use this guide
 
-**UPDATE THIS**
+[//]: #(UPDATE THIS)
 
 This is a short introduction to building gRPC Services in ASP.NET Core 3.0 with particular reference to WCF as an analogous platform. It explains the principles of gRPC, relating each concept to the equivalent features of WCF, and offers guidance for migrating an existing WCF application to gRPC. It is also useful for developers who have experience of WCF and are looking to learn gRPC to build new services. The sample application can be used as a template or reference for your own projects, and you are free to copy and reuse code from the book or its samples.
 

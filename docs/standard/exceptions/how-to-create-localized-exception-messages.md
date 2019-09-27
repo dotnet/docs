@@ -54,7 +54,7 @@ To create a custom exception, follow these steps:
 
         public StudentNotFoundException(string message, Exception inner)
             : base(message, inner) { }
-	
+
         public StudentNotFoundException(string message, string studentName)
             : this(message)
         {

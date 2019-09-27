@@ -105,7 +105,7 @@ Write clear sentences and include ending punctuation. Each sentence in the strin
 
 The error message that the user sees is derived from the <xref:System.Exception.Message?displayProperty=nameWithType> property of the exception that was thrown, and not from the name of the exception class. Typically, you assign a value to the <xref:System.Exception.Message?displayProperty=nameWithType>  property by passing the message string to the `message` argument of an [Exception constructor](xref:System.Exception.%23ctor%2A).
 
-For localized applications, you should provide a localized message string for every exception that your application can throw. You use resource files to provide localized error messages. For information on localizing applications and retrieving localized strings, see [How to: create user-defined exceptions with localized exception messages](how-to-create-localized-exception-messsages.md), [Resources in Desktop Apps](../../framework/resources/index.md) and <xref:System.Resources.ResourceManager?displayProperty=nameWithType>.
+For localized applications, you should provide a localized message string for every exception that your application can throw. You use resource files to provide localized error messages. For information on localizing applications and retrieving localized strings, see [How to: create user-defined exceptions with localized exception messages](how-to-create-localized-exception-messages.md), [Resources in Desktop Apps](../../framework/resources/index.md), and <xref:System.Resources.ResourceManager?displayProperty=nameWithType>.
 
 ## In custom exceptions, provide additional properties as needed
 

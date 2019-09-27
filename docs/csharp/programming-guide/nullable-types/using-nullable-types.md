@@ -18,7 +18,7 @@ You can refer to a nullable type in any of the following forms: `Nullable<T>` or
 
 ## Declaration and assignment
 
-As a value type can be implicitly converted to the corresponding nullable type, you assign a value to a nullable type as you would for its underlying value type. You also can assign the `null` value. For example:
+As a value type can be implicitly converted to the corresponding nullable value type, you assign a value to a nullable type as you would for its underlying value type. You also can assign the `null` value. For example:
 
 [!code-csharp[declare and assign](../../../../samples/snippets/csharp/programming-guide/nullable-types/NullableTypesUsage.cs#1)]
 

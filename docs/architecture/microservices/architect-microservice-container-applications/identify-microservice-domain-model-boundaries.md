@@ -21,7 +21,7 @@ You'll know that you got the right boundaries and sizes of each BC and domain mo
 
 Perhaps the best answer to the question of how large a domain model for each microservice should be is the following: it should have an autonomous BC, as isolated as possible, that enables you to work without having to constantly switch to other contexts (other microservice's models). In Figure 4-10, you can see how multiple microservices (multiple BCs) each has their own model and how their entities can be defined, depending on the specific requirements for each of the identified domains in your application.
 
-![Diagram showing entities in several model boundaries (Bounded Contexts).](./media/identify-microservice-domain-model-boundaries/identify-entities-microservice-model-boundries.png)
+![Diagram showing entities in several model boundaries.](./media/identify-microservice-domain-model-boundaries/identify-entities-microservice-model-boundries.png)
 
 **Figure 4-10**. Identifying entities and microservice model boundaries
 

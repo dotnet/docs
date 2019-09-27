@@ -11,7 +11,7 @@ In a microservices architecture, each microservice exposes a set of (typically) 
 
 A possible approach is to use a direct client-to-microservice communication architecture. In this approach, a client app can make requests directly to some of the microservices, as shown in Figure 4-12.
 
-![Diagram showing direct client-to-microservice communication architecture. Each app communicates directly with individual microservices.](./media/direct-client-to-microservice-communication-versus-the-API-Gateway-pattern/direct-client-to-microservice-communication.png)
+![Diagram showing direct client-to-microservice communication architecture.](./media/direct-client-to-microservice-communication-versus-the-API-Gateway-pattern/direct-client-to-microservice-communication.png)
 
 **Figure 4-12**. Using a direct client-to-microservice communication architecture
 

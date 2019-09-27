@@ -76,7 +76,7 @@ End Module
 ### Comments  
  This example produces the following output:  
   
-```  
+```console  
 The default style is: Normal  
 ```  
   

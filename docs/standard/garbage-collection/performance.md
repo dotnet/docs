@@ -315,7 +315,7 @@ This section describes the following procedures to isolate the cause of your per
 
     If the exception is managed, <xref:System.OutOfMemoryException> is displayed as the exception type, as shown in the following example.
 
-    ```
+    ```console
     Exception object: 39594518
     Exception type: System.OutOfMemoryException
     Message: <none>
@@ -329,7 +329,7 @@ This section describes the following procedures to isolate the cause of your per
 
     The thread with the stack that has exception calls is indicated by the `RaiseTheException` argument. This is the managed exception object.
 
-    ```
+    ```console
     28adfb44 7923918f 5b61f2b4 00000000 5b61f2b4 mscorwks!RaiseTheException+0xa0
     ```
 
@@ -349,7 +349,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The largest free region is displayed as shown in the following output.
 
-  ```
+  ```console
   Largest free region: Base 54000000 - Size 0003A980
   ```
 
@@ -363,7 +363,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The largest free region is the largest value in the MAXIMUM column, as shown in the following output.
 
-  ```
+  ```console
   TYPE        MINIMUM   MAXIMUM     AVERAGE   BLK COUNT   TOTAL
   ~~~~        ~~~~~~~   ~~~~~~~     ~~~~~~~   ~~~~~~~~~~  ~~~~
   Free:
@@ -409,7 +409,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The result is as follows.
 
-  ```
+  ```console
   Number of GC Heaps: 2
   ------------------------------
   Heap 0 (002db550)
@@ -453,7 +453,7 @@ This section describes the following procedures to isolate the cause of your per
 
   You can start analyzing from the last few lines of the output, because they list the objects that use the most space. For example:
 
-  ```
+  ```console
   2c6108d4   173712     14591808 DevExpress.XtraGrid.Views.Grid.ViewInfo.GridCellInfo
   00155f80      533     15216804      Free
   7a747c78   791070     15821400 System.Collections.Specialized.ListDictionary+DictionaryNode
@@ -473,7 +473,7 @@ This section describes the following procedures to isolate the cause of your per
 
   An example of the results is as follows.
 
-  ```
+  ```console
   Address  MT           Size  Gen
   1875d2c0 790fa3e0      152    2 System.String HighlightNullStyle_Blotter_PendingOrder-11_Blotter_PendingOrder-11
   …
@@ -497,7 +497,7 @@ This section describes the following procedures to isolate the cause of your per
 
   Roots found on stacks may be false positives. For more information, use the command `!help gcroot`.
 
-  ```
+  ```console
   ebx:Root:19011c5c(System.Windows.Forms.Application+ThreadContext)->
   19010b78(DemoApp.FormDemoApp)->
   19011158(System.Windows.Forms.PropertyStore)->
@@ -545,7 +545,7 @@ This section describes the following procedures to isolate the cause of your per
 
     This command provides output such as the following.
 
-    ```
+    ```console
        OSID     Special thread type
     2    cd0    DbgHelper
     3    c18    Finalizer
@@ -564,7 +564,7 @@ This section describes the following procedures to isolate the cause of your per
 
   This command displays the total size of all the free objects on the managed heap, as shown in the following example.
 
-  ```
+  ```console
   total 230 objects
   Statistics:
         MT    Count    TotalSize Class Name
@@ -578,7 +578,7 @@ This section describes the following procedures to isolate the cause of your per
 
   This command displays output similar to the following. The last line shows the ephemeral segment.
 
-  ```
+  ```console
   Heap 0 (0015ad08)
   generation 0 starts at 0x49521f8c
   generation 1 starts at 0x494d7f64
@@ -598,7 +598,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The result is as follows. Generation 0 is approximately 9 MB.
 
-  ```
+  ```console
   Evaluate expression: 9321848 = 008e3d78
   ```
 
@@ -608,7 +608,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The result is as follows.
 
-  ```
+  ```console
   ------------------------------
   Heap 0
   total 409 objects
@@ -641,7 +641,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The statistics displayed includes the number of pinned handles, as the following example shows.
 
-  ```
+  ```console
   GC Handle Statistics:
   Strong Handles:      29
   Pinned Handles:      10
@@ -659,7 +659,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The following data shows four sampling intervals of two seconds, for an 8-second study. The `Gen0`, `Gen1`, and `Gen2` columns show the number of garbage collections that occurred during that interval for that generation.
 
-  ```
+  ```console
   Interval    Gen0    Gen1    Gen2    % Time in GC
           1       9       3       1              10
           2      10       3       1               1
@@ -671,7 +671,7 @@ This section describes the following procedures to isolate the cause of your per
 
   In this example, there are 5 periods.
 
-  ```
+  ```console
   Interval    Gen0    Gen1    Gen2     % Time in GC
           1       9       3       1                3
           2      10       3       1                1
@@ -686,7 +686,7 @@ This section describes the following procedures to isolate the cause of your per
 
   For example, the following data shows an event sequence that occurred during a non-concurrent garbage collection.
 
-  ```
+  ```console
   Timestamp    Event name
   513052        GCSuspendEEBegin_V1
   513078        GCSuspendEEEnd
@@ -705,7 +705,7 @@ This section describes the following procedures to isolate the cause of your per
 
   The following output provides an example for background garbage collection, and includes the process, thread, and event fields. (Not all data is shown.)
 
-  ```
+  ```console
   timestamp(us)    event name            process    thread    event field
   42504385        GCSuspendEEBegin_V1    Test.exe    4372             1
   42504648        GCSuspendEEEnd         Test.exe    4372
@@ -745,7 +745,7 @@ This section describes the following procedures to isolate the cause of your per
 
   This command displays output similar to the following.
 
-  ```
+  ```console
   0012f3b0 79ff0bf8 mscorwks!WKS::GCHeap::GarbageCollect
   0012f454 30002894 mscorwks!GCInterface::CollectGeneration+0xa4
   0012f490 79fa22bd fragment_ni!request.Main(System.String[])+0x48
@@ -755,7 +755,7 @@ This section describes the following procedures to isolate the cause of your per
 
   If the garbage collection was caused by memory allocation, the stack appears as follows:
 
-  ```
+  ```console
   0012f230 7a07c551 mscorwks!WKS::GCHeap::GarbageCollectGeneration
   0012f2b8 7a07cba8 mscorwks!WKS::gc_heap::try_allocate_more_space+0x1a1
   0012f2d4 7a07cefb mscorwks!WKS::gc_heap::allocate_more_space+0x18
@@ -775,7 +775,7 @@ This section describes the following procedures to isolate the cause of your per
 
   Example output (abridged to show the objects that use the most space):
 
-  ```
+  ```console
   79124228    31857      9862328 System.Object[]
   035f0384    25668     11601936 Toolkit.TlkPosition
   00155f80    21248     12256296      Free
@@ -797,7 +797,7 @@ This section describes the following procedures to isolate the cause of your per
 
   Example output (abridged to show the objects that use the most space):
 
-  ```
+  ```console
   79124228    26648      9314256 System.Object[]
   035f0384    25668     11601936 Toolkit.TlkPosition
   79103b6c   296770     13057880 System.Threading.ReaderWriterLock

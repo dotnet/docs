@@ -23,7 +23,7 @@ expression1 + expression2
 or
 
 ```vb  
-+ expression1  
++expression1  
 ```  
   
 ## Parts  

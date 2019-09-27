@@ -149,7 +149,7 @@ The `ResumeWriterThreshold` controls how much the reader has to observe before w
 
 Two values are used to prevent rapid cycling if one value was used.
 
-#### Examples
+### Examples
 
 ```csharp
 // The Pipe will start returning incomplete tasks from FlushAsync until
@@ -168,8 +168,6 @@ When doing IO, it's important to have fine-grained control over where that IO is
 
 * The current `SynchronizationContext` will be used.
 * If there is no `SynchronizationContext`, it will use the thread pool to run callbacks.
-
-#### Examples
 
 [!code-csharp[](media/pipelines/code/Program.cs?name=snippet)]
 
@@ -206,7 +204,7 @@ The following examples use the `TryParseMessage` method for parsing messages fro
 bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 ```
 
-#### Reading a single message
+### Reading a single message
 
 The following code reads a single message from a `PipeReader` and returns it to the caller.
 
@@ -224,9 +222,14 @@ The two `SequencePosition` arguments are updated because `TryParseMessage` remov
 
 The single message case has the most potential for errors. Passing the wrong values to *examined* can result in an out of memory exception or and infinite loop. For more information, see the [PipeReader common problems](#gotchas) section in this document.
 
-#### Reading multiple messages
+### Reading multiple messages
 
 The code below reads all messages from a `PipeReader` and calls `ProcessMessageAsync` on each.
+
+[!code-csharp[](media/pipelines/code/MyConnection1.cs?name=snippet)]
+
+zz
+
 
 ```csharp
 async Task ProcessMessagesAsync(PipeReader reader, CancellationToken cancellationToken = default)
@@ -238,43 +241,16 @@ async Task ProcessMessagesAsync(PipeReader reader, CancellationToken cancellatio
             ReadResult result = await reader.ReadAsync(cancellationToken);
             ReadOnlySequence<byte> buffer = result.Buffer;
 
-            try
-            {
-                // Process all messages from the buffer, modifying the input buffer on each iteration
-                while (TryParseMessage(ref buffer, out Message message))
-                {
-                    await ProcessMessageAsync(message);
-                }
-
-                // There's no more data to be processed
-                if (result.IsCompleted)
-                {
-                    if (buffer.Length > 0)
-                    {
-                        // We have an incomplete message and there's no more data to process
-                        throw new InvalidDataException("Incomplete message!");
-                    }
-                    break;
-                }
-            }
-            finally
-            {
-                // Since we're processing all messages in the buffer, we can use the remaining buffer's Start and End
-                // position to determine consumed and examined
-                reader.AdvanceTo(buffer.Start, buffer.End);
-            }
-        }
-    }
-    finally
-    {
-        await reader.CompleteAsync();
-    }
-}
+        
 ```
 
 ### Cancellation
 
 `PipeReader.ReadAsync` supports passing a `CancellationToken` which will result in an `OperationCanceledException` if the token is cancelled while there's a read pending. It also supports a way to cancel the current read operation via `PipeReader.CancelPendingRead` which avoids raising an exception. Calling this method will return a `ReadResult` with `IsCanceled` set to true. This can be extremely useful for halting the existing read loop in a non-destructive and non-exceptional way.
+
+[!code-csharp[](media/pipelines/code/MyConnection.cs?name=snippet)]
+
+zz
 
 ```csharp
 public class MyConnection
@@ -288,53 +264,7 @@ public class MyConnection
     
     public void Abort()
     {
-        // Cancel the pending read so the the process loop ends without an exception
-        reader.CancelPendingRead();
-    }
-    
-    public async Task ProcessMessagesAsync()
-    {
-        try
-        {
-            while (true)
-            {
-                ReadResult result = await reader.ReadAsync();
-                ReadOnlySequence<byte> buffer = result.Buffer;
-
-                try
-                {
-                    if (result.IsCanceled)
-                    {
-                        // The read was canceled, we can quit without reading the existing data
-                        break;
-                    }
-
-                    // Process all messages from the buffer, modifying the input buffer on each iteration
-                    while (TryParseMessage(ref buffer, out Message message))
-                    {
-                        await ProcessMessageAsync(message);
-                    }
-
-                    // There's no more data to be processed
-                    if (result.IsCompleted)
-                    {
-                        break;
-                    }
-                }
-                finally
-                {
-                    // Since we're processing all messages in the buffer, we can use the remaining buffer's Start and End
-                    // position to determine consumed and examined
-                    reader.AdvanceTo(buffer.Start, buffer.End);
-                }
-            }
-        }
-        finally
-        {
-            await reader.CompleteAsync();
-        }
-    }
-}
+     
 ```
 
 <a name="gotchas"></a>

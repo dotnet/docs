@@ -28,7 +28,7 @@ This page lists some common problems that can occur when working with procedures
  End Function
  ```
   
- The statement `AllOnes(i) = 1` generates a compiler error because it appears to call `AllOnes` with an argument of the wrong data type (a singleton `Integer` instead of an `Integer` array). The statement `Return AllOnes()` generates a compiler error because it appears to call `AllOnes` with no argument.
+ The statement `AllOnes(i) = 1` generates a compiler error because it appears to call `AllOnes` with an argument of the wrong data type (a scalar `Integer` instead of an `Integer` array). The statement `Return AllOnes()` generates a compiler error because it appears to call `AllOnes` with no argument.
 
  **Correct Approach:** To be able to modify the elements of an array that is to be returned, define an internal array as a local variable. The following example compiles without error.
 

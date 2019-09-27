@@ -8,12 +8,10 @@ ms.custom:
 ---
 # .NET Core Deployment Experiences
 
-<br/>
 
 ## Full Installers
 .NET Core major and minor releases as well as servicing updates always ship as the full product installers. The installer carries the entire product even if only a subset of the files is updated.
 
-<br/>
 
 ## Side by Side installs versus in-place updates
 Before .NET Core 3.0, all .NET Core releases including servicing updates were fully side-by-side installs. If you installed a minor version, and then installed another minor release or even a patch release for the minor release, both the original and patch versions would always be installed in discrete install locations. 
@@ -30,7 +28,6 @@ For example, installing 3.0.2 when you already have 3.0.1 installed will result 
 
 Customers that have a strong business need to be conservative and protect against any possibility of an update delivering a breaking change can isolate their deployments by creating [Self-Contained deployments (SCD)](publish.md#self-contained-deployments-scd).
 
-<br/>
 
 ## Roll-Forward
 Starting with Core 2.1, .NET Core updates support patch roll-forward. When you create a self-contained deployment, .NET Core tools automatically download the latest servicing version of .NET Core from NuGet.org and include this runtime with your application targets.
@@ -44,7 +41,6 @@ For more information about roll-forward in self-contained deployments, see [Self
 For more information about runtime binding, see [Runtime Binding Behavior](https://github.com/dotnet/designs/blob/master/accepted/runtime-binding.md).
 
 
-<br/>
 
 ## See Also
 

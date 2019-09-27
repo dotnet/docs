@@ -14,7 +14,7 @@ ms.custom:
 You can create various types of deployments for .NET Core applications:
 
 - **Framework-Dependent Deployment (FDD)**  
-  As the name implies, framework-dependent deployment (FDD) relies on the presence of a shared system-wide version of .NET Core on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain .dll files that can be launched by using the dotnet utility from the command line. For example, `dotnet app.dll` runs an application named app.
+  As the name implies, framework-dependent deployment (FDD) relies on the presence of a shared system-wide version of .NET Core on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain .dll files that can be launched by using the dotnet utility from the command line, for example, `dotnet app.dll` runs an application named app. Starting with .NET Core 3, FDDs also produce an executable, so you can directly run the executable and do not need to launch via `dotnet app.dll`.
 
 - **Self-contained deployment (SCD)**  
   Unlike Framework Dependent Deployment (FDD), a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. Additionally SCDs include an executable that will launch the application. The executable is a renamed version of the platform-specific .NET Core host.
@@ -80,7 +80,7 @@ It also has a number of disadvantages:
 
 - Deploying many self-contained .NET Core apps to a single system can consume significant amounts of disk space, since each app duplicates .NET Core files.
 
-Self-contained deployment is available for Windows Client, Windows Server, MacOS, and Linux platforms. You can build an SCD deployment on any platform regardless of the target platform.
+Self-contained deployment is available for Windows Client, Windows Server, macOS, and Linux platforms. You can build an SCD deployment on any platform regardless of the target platform.
 
 To create a self-contained deployment for a Windows 10 x64 operating system, you would use the following command line:
 
@@ -125,7 +125,6 @@ For example, to create a Framework-dependent, single file executable for the Win
 dotnet publish -c Release -r win10-x64 --self-contained false /p:PublishSingleFile=true
 ```
 
-<br/>
 
 ***Note**: Since FDD is the default deployment type, `--self-contained false` is implied if not specified*
 
@@ -142,9 +141,12 @@ To create a Self-contained, single file executable for the Windows 10 x64 operat
 dotnet publish -c Release -r win10-x64 --self-contained true /p:PublishSingleFile=true
 ```
 
-<br/>
 
 ***Note**: creating a self-contained executable **requires** that you specify a [Runtime Identifier (RID)](../rid-catalog.md) via the -r switch.*
+
+
+***Note**: Both FDDs and SCDs can be created using either the command line as shown in the previous examples, or using the Publish action (available on right-click) for a project.
+
 
 ## Summary
 

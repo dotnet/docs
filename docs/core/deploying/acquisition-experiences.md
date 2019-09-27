@@ -19,8 +19,8 @@ There are various Acquisition options for .NET Core -
 
 Each of these choices has their own strengths. Some options support both initial acquisition and subsequent notification of updates for the .NET Core runtime and tools, while others don't support update notifications.
 
-|Acquisition Choice|Update|
-|:-:|:-:|
+|Acquisition Choice|Updates|
+|:-|:-:|
 [Visual Studio and Visual Studio Code](#Visual-Studio-and-Visual-Studio-Code)   | ✔️ |
 [https://dot.net (Microsoft .NET site)](#httpsdotnet-Microsoft-NET-site)        | ❌ |
 [Dotnet-install.ps1/.sh Scripts](#Dotnet-install.ps1.sh-Scripts)                | ✔️ |
@@ -33,9 +33,7 @@ Each of these choices has their own strengths. Some options support both initial
 _\*Some package Managers provide update notifications__
 
 
-A DevOps engineer or IT administrator is likely to download the .NET Core runtime installer and run it on multiple machines in the environment they manage. Therefore, having the ability to run the installer in silent or passive mode without user interaction and via a command line is an important attribute. Developers would not have a similar constraint. 
-
-Differences between the various choices covered above make some of them a great option for developers while others are better suited for DevOps engineers and IT administrators. 
+Differences between the various choices covered above make some of them a great option for developers while others are better suited for DevOps engineers and IT administrators. A DevOps engineer or IT administrator is likely to download the .NET Core runtime installer and run it on multiple machines in the environment they manage. Therefore, having the ability to run the installer in silent or passive mode without user interaction and via a command line is an important attribute. Developers would not have a similar constraint. 
 
 
 |Acquisition Choice|Great For Developers|Great For DevOps/ IT Admins|
@@ -67,20 +65,20 @@ In recent previews of Visual Studio 2019 Update 3, we have made changes to the i
 
 
 
-### Visual Studio for MacOS
+### Visual Studio for Mac
 
-The latest release version of the .NET Core tools are installed when you install Visual Studio for Mac and select the .NET Core workload. To get started with .NET Core development on MacOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019).
+The latest release version of the .NET Core tools are installed when you install Visual Studio for Mac and select the .NET Core workload. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019).
 
 ![Install Visual Studio for Mac](media/install-vs-mac.png "Install Visual Studio for Mac")
 
-Note: .NET Core 2.x development is supported on MacOS 10.12 “Sierra” and later. 
+Note: .NET Core 2.x development is supported on macOS 10.12 “Sierra” and later. 
 
-For more information about .NET Core development on MacOS, see [Get started with .NET Core on macOS using Visual Studio for Mac](https://docs.microsoft.com/dotnet/core/tutorials/using-on-mac-vs).
+For more information about .NET Core development on macOS, see [Get started with .NET Core on macOS using Visual Studio for Mac](https://docs.microsoft.com/dotnet/core/tutorials/using-on-mac-vs).
 
 
 ## Visual Studio Code
 
-Visual Studio Code is a powerful, but lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, MacOS, and Linux.
+Visual Studio Code is a powerful, but lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.
 
 While VS Code doesn't come with .NET Core support in the box, adding .NET Core support is straightforward. You can add support in a couple of steps.
 
@@ -92,7 +90,7 @@ While VS Code doesn't come with .NET Core support in the box, adding .NET Core s
 
 The [Microsoft .NET](https://dot.net/) site is your one stop shop for all things .NET, from [downloads for the latest installers](https://dotnet.microsoft.com/download) for your platform to [Getting Started](https://docs.microsoft.com/dotnet/core/get-started?tabs=windows) guides, and [Tutorials](https://docs.microsoft.com/dotnet/core/tutorials/).
 
-This site provides downloads for the native installers (MSI for Windows, PKG for MacOS), and tar.gz files for download, installation, and redistribution with your app.
+This site provides downloads for the native installers (MSI for Windows, PKG for macOS), and tar.gz files for download, installation, and redistribution with your app.
 
 
 ## Dotnet-install.ps1/.sh Scripts
@@ -100,7 +98,7 @@ This site provides downloads for the native installers (MSI for Windows, PKG for
 The dotnet-install scripts are used to perform a non-admin installation of the .NET Core SDK.
 
 The primary usage scenario of these scripts is in automation scenarios and non-admin installations. 
-There are two scripts: one is a PowerShell script that works on Windows and everywhere that PowerShell is supported including [Linux](https://azure.microsoft.com/blog/powershell-is-open-sourced-and-is-available-on-linux/) and [MacOS](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6). The other is a bash script that works on Linux/MacOS. Both scripts have the same behavior.
+There are two scripts: one is a PowerShell script that works on Windows and everywhere that PowerShell is supported including [Linux](https://azure.microsoft.com/blog/powershell-is-open-sourced-and-is-available-on-linux/) and [macOS](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6). The other is a bash script that works on Linux/macOS. Both scripts have the same behavior.
 
 For more information about these scripts, see [dotnet-install scripts reference](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script).
 
@@ -152,7 +150,7 @@ To review instructions for other package managers, change the distro selected at
 
 ## Azure DevOps pipeline Installer Task
 
-Azure DevOps provides a Task that can be used in build or release pipelines to deploy .NET Core. You can use the [.NET Core Installer Task](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) to acquire a specific version of .NET Core from the Internet or the tools cache and add it to the PATH. This task can also be used to change the version of .NET Core that is used in subsequent tasks like [.NET Core cli task](https://github.com/Microsoft/azure-pipelines-tasks/tree/master/Tasks/DotNetCoreCLIV2).
+Azure DevOps provides a Task that can be used in build or release pipelines to deploy .NET Core. You can use the [Use .NET Core sdk](https://docs.microsoft.com/azure/devops/pipelines/tasks/tool/dotnet-core-tool-installer?view=azure-devops) task to acquire a specific version of .NET Core from the Internet or the tools cache and add it to the PATH. This task can also be used to change the version of .NET Core that is used in subsequent tasks like [.NET Core](https://docs.microsoft.com/azure/devops/pipelines/tasks/build/dotnet-core-cli) task.
 
 
 ## Snap Store
@@ -170,8 +168,6 @@ Visit [Snapcraft.io](https://snapcraft.io/) for guidance on preparing your syste
 
 .NET Core sources are available in public repositories on GitHub. Building from source is covered in depth in the document titled [Build .NET Core from source](https://docs.microsoft.com/dotnet/core/build/).
 
-
-<br/>
 
 ## Updates and Notifications
 

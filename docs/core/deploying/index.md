@@ -16,7 +16,6 @@ First, let's review some basic terminology we will be using throughout this guid
 
 **_Deployment_** is about packaging the application and delivering the application and runtime to the target machine.
 
-<br/>
 
 ## For Developers: Building and Deploying your .NET Core app
 
@@ -27,7 +26,6 @@ Step 1 | | Step 2 | | Step 3 | | Step 4 |
  [Build your App](#Step-1-Build-your-app) | --> | [Publish your app](#Step-2-publish-your-app) | --> | [Package your app for deployment](#Step-3-Package-your-app-for-deployment) | --> | [Deploy your app](#Step-4-Deploy-your-app) | 
 
 
-<br/>
 
 ### Step 1: Build your app
 
@@ -54,8 +52,6 @@ Once you acquire the tools, you're ready to build your app. Pick the approach th
 Any of these options will allow you to create various types of .NET Core applications including ASP.NET Core, WPF, and Windows Forms applications.
 
 
-<br/>
-
 ### Step 2: Publish your app
 
 You can publish your app as a [Framework Dependent Deployment (FDD)](publish.md#Framework-Dependent-Deployment-FDD) which will exclude .NET Core runtime assembly dependencies, or a [Self-Contained Deployment (SCD)](publish.md#Self-contained-deployment-SCD) which will include the .NET Core runtime assembly dependencies.
@@ -64,8 +60,6 @@ For both options, you can have the publish action produce a set of loose assembl
 
 More information about each of these configurations can be found in the document on how to [Publish your app](publish.md).
 
-
-<br/>
 
 ### Step 3: Package your app for deployment
 
@@ -79,8 +73,6 @@ This document on [Packaging your Desktop Application](desktop-packaging.md) cove
 
 In addition to the packaging built into Visual Studio, you can also package your app using a variety of other third-party deployment choices such as using [Docker](https://hub.docker.com/), creating Linux packages - [.rpm](https://docs.fedoraproject.org/en-US/quick-docs/creating-rpm-packages/) or [.deb](https://www.linux.com/news/make-your-own-packages-debian-based-systems/), deploying your app through the [Snap Store](https://snapcraft.io/store), etc.
 
-
-<br/>
 
 ### Step 4: Deploy your app
 
@@ -110,10 +102,6 @@ a) [Enable Developer mode](https://docs.microsoft.com/windows/uwp/get-started/en
 b) Import the test certificate on the target computer (Trusted Root Certification Authorities) folder
 
 
-<br/>
-<br/>
-
-
 
 ## For DevOps Engineers and Enterprise IT Administrators
 
@@ -124,7 +112,6 @@ As a DevOps Engineer you may be responsible for deploying the .NET Core tools an
 | [Acquire the .NET Core runtime](#Step-1-acquire-the-core-runtime) | --> | [Deploy the .NET Core runtime](#step-2-deploy-the-core-runtime) | 
 
 
-<br/>
 
 ### Step 1: Acquire the Core Runtime
 
@@ -133,7 +120,6 @@ When it comes to acquiring the .NET Core runtime and tools, there are several op
 Various acquisition options for the .NET Core runtime and tools are covered in more detail in the [.NET Core Acquisition Experiences guide](acquisition-experiences.md).
 
 
-<br/>
 
 ### Step 2: Deploy the Core Runtime
 
@@ -153,14 +139,12 @@ When it comes to deploying the .NET Core runtime, you can again choose between v
 
   Software update management tools like System Center Configuration Manager allow you to define a target group of computers for deploying the .NET Core runtime and also the app itself. You then push the deployment to the target group. 
 
-  System Center Configuration Manager client is supported on Windows Server and Client computers, MacOS, and Linux. 
+  System Center Configuration Manager client is supported on Windows Server and Client computers, macOS, and Linux. 
 
   For more information about using SCCM to deploy the .NET Core runtime, see [Create and deploy an application with SCCM](https://docs.microsoft.com/sccm/apps/get-started/create-and-deploy-an-application).
 
 * Another option for deploying the .NET Core runtime or tools to on-premises clients/servers is the [Dotnet-install Script](acquisition-experiences.md#Dotnet-install.ps1.sh-Scripts). You can use this script anywhere PowerShell and Bash are supported. 
 
-
-<br/>
 
 ## See also
 

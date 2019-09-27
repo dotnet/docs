@@ -1,14 +1,16 @@
 ---
 title: 'Tutorial: Generate an ML.NET image classification model from a pre-trained TensorFlow model'
-description: Learn how to transfer the intelligence from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
+description: Learn how to transfer the knowledge from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
 ms.date: 09/26/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
+author: natke
+ms.author: nakersha
 #Customer intent: As a developer, I want to use a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
 ---
 # Tutorial: Generate an ML.NET image classification model from a pre-trained TensorFlow model
 
-Learn how to transfer the intelligence from an existing TensorFlow model into a new ML.NET image classification model.
+Learn how to transfer the knowledge from an existing TensorFlow model into a new ML.NET image classification model.
 
 The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of part of the TensorFlow model in its pipeline to train a model to classify images into 3 categories.
 
@@ -206,11 +208,9 @@ Since you'll display the image data and the related predictions more than once, 
 
     [!code-csharp[DisplayPredictions](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DisplayPredictions)]
 
-    The `Transform()` method populated `ImagePath` in `ImagePrediction` along with the predicted fields. As the ML.NET process progresses, each component adds columns, and this makes it easy to display the results:
-
 ### Create a .tsv file utility method
 
-1. Create the `ReadFromTsv()` method, just after the `PairAndDisplayResults()` method, using the following code:
+1. Create the `ReadFromTsv()` method, just after the `DisplayResults()` method, using the following code:
 
     ```csharp
     public static IEnumerable<ImageData> ReadFromTsv(string file, string folder)
@@ -244,11 +244,15 @@ Since you'll display the image data and the related predictions more than once, 
 
     [!code-csharp[PredictSingle](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#PredictSingle)]
 
-    The [PredictionEngine class](xref:Microsoft.ML.PredictionEngine%602) is a convenience API that performs a prediction on a single instance of data. The [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) function makes a prediction on a single column of data.
+    The [PredictionEngine class](xref:Microsoft.ML.PredictionEngine%602) class is a convenience API that performs a prediction on a single instance of data. To get the prediction, use the [Predict()](xref:Microsoft.ML.PredictionEngine%602.Predict%2A) method.
 
 1. Display the prediction result as the next line of code in the `ClassifySingleImage()` method:
 
    [!code-csharp[DisplayPrediction](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#DisplayPrediction)]
+
+## Construct the ML.NET model pipeline
+
+An ML.NET model pipeline is a chain of estimators. Note that no execution happens during pipeline construction. The estimator objects are created but not executed.
 
 1. Add a method to generate the model
 
@@ -263,12 +267,6 @@ Since you'll display the image data and the related predictions more than once, 
     }
     ```
 
-    The following steps in the tutorial add the steps to construct, train, and evaluate the model.
-
-## Construct the ML.NET model pipeline
-
-An ML.NET model pipeline is a chain of estimators. Note that no execution happens during pipeline construction. The estimator objects are created but not executed.
-
 1. Add the estimators to load, resize and extract the pixels from the image data:
 
     [!code-csharp[ImageTransforms](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ImageTransforms)]
@@ -279,11 +277,11 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
     [!code-csharp[ScoreTensorFlowModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ScoreTensorFlowModel)]
 
-    The next stage in the pipeline is to load the TensorFlow model into memory, then process the vector of pixel values through the TensorFlow model network. Applying inputs to a deep learning model is referred to as **Scoring**. When using the model in its entirety, scoring makes an inference, or prediction. 
+    This stage in the pipeline loads the TensorFlow model into memory, then processes the vector of pixel values through the TensorFlow model network. Applying inputs to a deep learning model, and generating an output using the model, is referred to as **Scoring**. When using the model in its entirety, scoring makes an inference, or prediction. 
 
-    In this case, you use all of the TensorFlow model except the last layer, which is the layer that makes the inference. The output of the penultimate layer is labeled `softmax_2_preactivation`. This output of this layer is effectively a vector of features that characterize the original input images.
+    In this case, you use all of the TensorFlow model except the last layer, which is the layer that makes the inference. The output of the penultimate layer is labeled `softmax_2_preactivation`. The output of this layer is effectively a vector of features that characterize the original input images.
 
-    This feature vector generated by the TensorFlow model will be used as input to the ML.NET trainer below.
+    This feature vector generated by the TensorFlow model will be used as input to an ML.NET training algorithm.
 
 1. Add the estimator to map the string labels in the training data to integer key values:
 
@@ -301,7 +299,7 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
 ## Train the model
 
-1. Load the training data using the `MLContext.Data.LoadFromTextFile` wrapper. Add the following code as the next line in the `GenerateModel()` method:
+1. Load the training data using the [LoadFromTextFile](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile(Microsoft.ML.DataOperationsCatalog,System.String,Microsoft.ML.Data.TextLoader.Options)) wrapper. Add the following code as the next line in the `GenerateModel()` method:
 
     [!code-csharp[LoadData](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#LoadData "Load the data")]
 
@@ -319,7 +317,7 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
     [!code-csharp[LoadAndTransformTestData](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#LoadAndTransformTestData "Load and transform test data")]
 
-    There are a few sample images that you can use to evaluate the model. Like the training data, these need to be loaded into an IDataView, so that they can be transformed by the model.
+    There are a few sample images that you can use to evaluate the model. Like the training data, these need to be loaded into an `IDataView`, so that they can be transformed by the model.
    
 1. Add the following code to the `GenerateModel()` method to evaluate the model:
 
@@ -341,11 +339,11 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
     * `Log-loss` - see [Log Loss](../resources/glossary.md#log-loss). You want Log-loss to be as close to zero as possible.
     * `Per class Log-loss`. You want per class Log-loss to be as close to zero as possible.
 
-## Tie it all together 
-
 1. Add the following code to return the trained model as the next line:
 
     [!code-csharp[SaveModel](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#ReturnModel)]
+
+## Run the application!
 
 1. Add the call to `GenerateModel` in the `Main` method after the creation of the MLContext class:
 
@@ -355,29 +353,27 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
     [!code-csharp[CallClassifySingleImage](../../../samples/machine-learning/tutorials/TransferLearningTF/Program.cs#CallClassifySingleImage)]
 
-## Results
+1. Run your console app (Ctrl + F5). Your results should be similar to the following output.  You may see warnings or processing messages, but these messages have been removed from the following results for clarity.
 
-After following the previous steps, run your console app (Ctrl + F5). Your results should be similar to the following output.  You may see warnings or processing messages, but these messages have been removed from the following results for clarity.
+    ```console
+    =============== Training classification model ===============
+    Image: broccoli.jpg predicted as: food with score: 0.976743
+    Image: pizza.jpg predicted as: food with score: 0.9751652
+    Image: pizza2.jpg predicted as: food with score: 0.9660203
+    Image: teddy2.jpg predicted as: toy with score: 0.9748783
+    Image: teddy3.jpg predicted as: toy with score: 0.9829691
+    Image: teddy4.jpg predicted as: toy with score: 0.9868168
+    Image: toaster.jpg predicted as: appliance with score: 0.9769174
+    Image: toaster2.png predicted as: appliance with score: 0.9800823
+    =============== Classification metrics ===============
+    LogLoss is: 0.0228266745633507
+    PerClassLogLoss is: 0.0277501705149937 , 0.0186303530571291 , 0.0217359128952187
+    =============== Making single image classification ===============
+    Image: toaster3.jpg predicted as: appliance with score: 0.9625379
 
-```console
-=============== Training classification model ===============
-Image: broccoli.jpg predicted as: food with score: 0.976743
-Image: pizza.jpg predicted as: food with score: 0.9751652
-Image: pizza2.jpg predicted as: food with score: 0.9660203
-Image: teddy2.jpg predicted as: toy with score: 0.9748783
-Image: teddy3.jpg predicted as: toy with score: 0.9829691
-Image: teddy4.jpg predicted as: toy with score: 0.9868168
-Image: toaster.jpg predicted as: appliance with score: 0.9769174
-Image: toaster2.png predicted as: appliance with score: 0.9800823
-=============== Classification metrics ===============
-LogLoss is: 0.0228266745633507
-PerClassLogLoss is: 0.0277501705149937 , 0.0186303530571291 , 0.0217359128952187
-=============== Making single image classification ===============
-Image: toaster3.jpg predicted as: appliance with score: 0.9625379
-
-C:\Program Files\dotnet\dotnet.exe (process 4304) exited with code 0.
-Press any key to close this window . . .
-```
+    C:\Program Files\dotnet\dotnet.exe (process 4304) exited with code 0.
+    Press any key to close this window . . .
+    ```
 
 Congratulations! You've now successfully built a machine learning model for image classification by applying transfer learning to a `TensorFlow` model in ML.NET.
 

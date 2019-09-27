@@ -12,7 +12,7 @@ There are a couple of options when it comes to packaging up your desktop applica
 
 ## Windows Application Packaging Project (package your app as an MSIX)
 
-The [MSIX application package](https://docs.microsoft.com/windows/msix/overview) format provides a modern packaging experience to all Windows apps. It enables both initial deployment of the app, automatic detection, and deployment of updates. 
+The [MSIX application package](https://docs.microsoft.com/windows/msix/overview) format provides a modern packaging experience to all Windows apps. It enables initial deployment of the app as well as automatic detection and deployment of updates. 
 
 You can use the [Windows Application Packaging Project](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-packaging-dot-net) in Visual Studio to generate an MSIX package for your .NET Core 3.0 or later app. You can then [sideload](https://docs.microsoft.com/windows/msix/package/packaging-uwp-apps#sideload-your-app-package) this app on to a computer.
 

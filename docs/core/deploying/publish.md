@@ -168,7 +168,7 @@ To summarize,
 
 ## Step-by-step examples
 
-Both Self-Contained and Framework-Dependent deployments for your app can be created using either Visual Studio or the CLI. 
+Both Self-Contained and Framework-Dependent deployments for your app can be created using either Visual Studio or the CLI. The Visual Studio publish experience also offers the ability to create a single file app for both of these types of deployments.
 
 For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). 
 

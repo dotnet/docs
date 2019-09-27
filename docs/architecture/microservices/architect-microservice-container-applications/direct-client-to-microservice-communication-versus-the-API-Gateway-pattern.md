@@ -11,11 +11,11 @@ In a microservices architecture, each microservice exposes a set of (typically) 
 
 A possible approach is to use a direct client-to-microservice communication architecture. In this approach, a client app can make requests directly to some of the microservices, as shown in Figure 4-12.
 
-![Diagram showing direct client-to-microservice communication architecture, where each app communicates directly with individual microservices.](./media/image12.png)
+![Diagram showing direct client-to-microservice communication architecture. Each app communicates directly with individual microservices.](./media/direct-client-to-microservice-communication-versus-the-API-Gateway-pattern/direct-client-to-microservice-communication.png)
 
 **Figure 4-12**. Using a direct client-to-microservice communication architecture
 
-In this approach, each microservice has a public endpoint, sometimes with a different TCP port for each microservice. An example of a URL for a particular service could be the following URL in Azure:
+Each app communicates directly with individual microservices. In this approach, each microservice has a public endpoint, sometimes with a different TCP port for each microservice. An example of a URL for a particular service could be the following URL in Azure:
 
 `http://eshoponcontainers.westus.cloudapp.azure.com:88/`
 
@@ -63,11 +63,11 @@ Therefore, the API gateway sits between the client apps and the microservices. I
 
 Figure 4-13 shows how a custom API Gateway can fit into a simplified microservice-based architecture with just a few microservices.
 
-![Diagram showing an API Gateway implemented as a custom service, so apps connect to a single endpoint, the API Gateway, that's configured to forward requests to individual microservices.](./media/image13.png)
+![Diagram showing an API Gateway implemented as a custom service.](./media/direct-client-to-microservice-communication-versus-the-API-Gateway-pattern/custom-service-api-gateway.png)
 
 **Figure 4-13**. Using an API Gateway implemented as a custom service
 
-In this example, the API Gateway would be implemented as a custom ASP.NET Core WebHost service running as a container.
+Apps connect to a single endpoint, the API Gateway, that's configured to forward requests to individual microservices. In this example, the API Gateway would be implemented as a custom ASP.NET Core WebHost service running as a container.
 
 It's important to highlight that in that diagram, you would be using a single custom API Gateway service facing multiple and different client apps. That fact can be an important risk because your API Gateway service will be growing and evolving based on many different requirements from the client apps. Eventually, it will be bloated because of those different needs and effectively it could be pretty similar to a monolithic application or monolithic service. That's why it's very much recommended to split the API Gateway in multiple services or multiple smaller API Gateways, one per client app form-factor type, for instance.
 
@@ -77,11 +77,11 @@ Therefore, the API Gateways should be segregated based on business boundaries an
 
 When splitting the API Gateway tier into multiple API Gateways, if your application has multiple client apps, that can be a primary pivot when identifying the multiple API Gateways types, so that you can have a different facade for the needs of each client app. This case is a pattern named "Backend for Frontend" ([BFF](https://samnewman.io/patterns/architectural/bff/)) where each API Gateway can provide a different API tailored for each client app type, possibly even based on the client form factor by implementing specific adapter code which underneath calls multiple internal microservices, as shown in the following image:
 
-![Diagram showing multiple custom API Gateways, where API Gateways are segregated by client type; one for mobile clients and one for web clients. A traditional web app connects to an MVC microservice that uses the web API Gateway.](./media/image13.1.png)
+![Diagram showing multiple custom API Gateways.](./media/direct-client-to-microservice-communication-versus-the-API-Gateway-pattern/multiple-custom-api-gateways.png)
 
 **Figure 4-13.1**. Using multiple custom API Gateways
 
-The previous image shows a simplified architecture with multiple fine-grained API Gateways. In this case, the boundaries identified for each API Gateway are based purely on the "Backend for Frontend" ([BFF](https://samnewman.io/patterns/architectural/bff/)) pattern, hence based just on the API needed per client app. But in larger applications you should also go further and create additional API Gateways based on business boundaries as a second design pivot.
+Figure 4-13.1 shows API Gateways that are segregated by client type; one for mobile clients and one for web clients. A traditional web app connects to an MVC microservice that uses the web API Gateway. The example depicts a simplified architecture with multiple fine-grained API Gateways. In this case, the boundaries identified for each API Gateway are based purely on the "Backend for Frontend" ([BFF](https://samnewman.io/patterns/architectural/bff/)) pattern, hence based just on the API needed per client app. But in larger applications you should also go further and create additional API Gateways based on business boundaries as a second design pivot.
 
 ## Main features in the API Gateway pattern
 
@@ -122,11 +122,11 @@ There can be many more cross-cutting concerns offered by the API Gateways produc
 
 [Azure API Management](https://azure.microsoft.com/services/api-management/) (as shown in Figure 4-14) not only solves your API Gateway needs but provides features like gathering insights from your APIs. If you're using an API management solution, an API Gateway is only a component within that full API management solution.
 
-![Azure API Management solves both your API Gateway and Management needs like logging, security, metering, etc.](./media/api-gateway-azure-api-management.png)
+![Diagram showing how to use Azure API Management as your API gateway.](./media/direct-client-to-microservice-communication-versus-the-API-Gateway-pattern/api-gateway-azure-api-management.png)
 
 **Figure 4-14**. Using Azure API Management for your API Gateway
 
-In this case, when using a product like Azure API Management, the fact that you might have a single API Gateway is not so risky because these kinds of API Gateways are "thinner", meaning that you don't implement custom C# code that could evolve towards a monolithic component. 
+Azure API Management solves both your API Gateway and Management needs like logging, security, metering, etc. In this case, when using a product like Azure API Management, the fact that you might have a single API Gateway is not so risky because these kinds of API Gateways are "thinner", meaning that you don't implement custom C# code that could evolve towards a monolithic component. 
 
 The API Gateway products usually act like a reverse proxy for ingress communication, where you can also filter the APIs from the internal microservices plus apply authorization to the published APIs in this single tier.
 

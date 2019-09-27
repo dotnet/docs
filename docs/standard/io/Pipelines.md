@@ -84,13 +84,13 @@ The preceding code is complex and doesn't address all the problems identified. H
 
 The <xref:System.IO.Pipelines.Pipe> class can be used to create a `PipeWriter/PipeReader` pair. All data written into the `PipeWriter` is available in the `PipeReader`:
 
-[!code-csharp[](media/pipelines/Pipe.cs?name=snippet2)]
+[!code-csharp[](media/pipelines/code/Pipe.cs?name=snippet2)]
 
 <a name="pbu"></a>
 
 ### Pipe basic usage
 
-[!code-csharp[](media/pipelines/Pipe.cs?name=snippet)]
+[!code-csharp[](media/pipelines/code/Pipe.cs?name=snippet)]
 
 There are 2 loops:
 
@@ -171,7 +171,7 @@ When doing IO, it's important to have fine-grained control over where that IO is
 
 #### Examples
 
-[!code-csharp[](media/pipelines/Program.cs?name=snippet)]
+[!code-csharp[](media/pipelines/code/Program.cs?name=snippet)]
 
 ### Pipe reset
 
@@ -210,7 +210,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 The following code reads a single message from a `PipeReader` and returns it to the caller.
 
-[!code-csharp[](media/pipelines/ReadSingleMsg.cs?name=snippet)]
+[!code-csharp[](media/pipelines/code/ReadSingleMsg.cs?name=snippet)]
 
 The preceding code:
 
@@ -373,16 +373,17 @@ while (true)
     
     reader.AdvanceTo(dataLossBuffer.Start, dataLossBuffer.End);
 }
-in the accompanying document.
 ```
+
 [!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Infinite loop**
 
-The below logic may result in an infinite loop if the `Result.IsCompleted` is true but there's never a complete message in the buffer.
+The following logic may result in an infinite loop if the `Result.IsCompleted` is true but there's never a complete message in the buffer.
+
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 ```csharp
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the PipeReader common problems in the accompanying document.
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
 {
@@ -397,13 +398,14 @@ while (true)
     
     reader.AdvanceTo(infiniteLoopBuffer.Start, infiniteLoopBuffer.End);
 }
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the PipeReader common problems in the accompanying document.
 ```
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 Here's another piece of code with the same problem. It's checking for a non-empty buffer before checking `ReadResult.IsCompleted`, but since it's in an `else if`, it will loop forever if there's never a complete message in the buffer.
 
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+
 ```csharp
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
 {
@@ -421,15 +423,16 @@ while (true)
     
     reader.AdvanceTo(infiniteLoopBuffer.Start, infiniteLoopBuffer.End);
 }
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
 ```
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Unexpected Hang**
 
 Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the examined position may result in hangs when parsing a single message. The next call to `PipeReader.AdvanceTo` will not return until there's more data written to the pipe, that was not previously examined.
 
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+
 ```csharp
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
 {    
@@ -450,15 +453,16 @@ while (true)
         return message;
     }
 }
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
 ```
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Out of Memory**
 
 If there's no maximum message size and the data returned from the `PipeReader` does not make a complete message (because the other side is writing a large message e.g 4GB) the logic below will keep buffering until an `OutOfMemoryException` occurs.
 
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+
 ```csharp
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
 {
@@ -481,9 +485,13 @@ while (true)
 }
 ```
 
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+
 ❌ **Memory Corruption**
 
 When writing helpers that read the buffer, any returned payload should be copied before calling Advance. The following example will return memory that the `Pipe` has discarded and may reuse it for the next operation (read/write).
+
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 ```csharp
 public class Message
@@ -491,7 +499,6 @@ public class Message
    public ReadOnlySequence<byte> CorruptedPayload { get; set; }
 }
 
-// These code samples will result in data loss, hangs, security issues and should **NOT** be copied. They exists solely for illustration of the gotchas mentioned above.
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
 {
@@ -526,9 +533,15 @@ while (true)
 }
 ```
 
-## [PipeWriter](/dotnet/api/system.io.pipelines.pipewriter?view=dotnet-plat-ext-2.1)
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
-The `PipeWriter` manages buffers for writing on the caller's behalf. `PipeWriter` implements the [`IBufferWriter<byte>`](/dotnet/api/system.buffers.ibufferwriter-1?view=netstandard-2.1) which makes it possible to get access to buffers in order to perform writes without additional buffer copies.
+## PipeWriter
+
+The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the caller's behalf. `PipeWriter` implements [`IBufferWriter<byte>`](/dotnet/api/system.buffers.ibufferwriter-1). `IBufferWriter<byte>` makes it possible to get access to buffers in order to perform writes without additional buffer copies.
+
+[!code-csharp[](media/pipelines/code/MyPipeWriter.cs?name=snippet)]
+
+Delete embedded zz
 
 ```csharp
 async Task WriteHelloAsync(PipeWriter writer, CanceallationToken cancellationToken = default)

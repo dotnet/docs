@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```xml  
+```console
 Results are identical  
 <CompanyName>Great Lakes Food Market</CompanyName>  
 <ContactName>Howard Snyder</ContactName>  

@@ -49,7 +49,7 @@ Console.WriteLine(customer1)
   
  This example produces the following output:  
   
-```xml  
+```console
 Results are identical  
 <Customer CustomerID="HUNGC">  
   <CompanyName>Hungry Coyote Import Store</CompanyName>  

@@ -35,7 +35,7 @@ Next
   
  This example produces the following output:  
   
-```xml  
+```console
 Results are identical  
 <Name>Ellen Adams</Name>  
 <Name>Tai Yee</Name>  

@@ -38,7 +38,7 @@ Next
   
  This example produces the following output:  
   
-```xml  
+```console
 Results are identical  
 <Book id="bk101">  
   <Author>Garghentini, Davide</Author>  

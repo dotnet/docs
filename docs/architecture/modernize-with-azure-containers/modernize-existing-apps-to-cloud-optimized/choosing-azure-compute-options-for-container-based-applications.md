@@ -19,9 +19,9 @@ However, this recommendation should be taken with a pinch of salt, as the produc
 
 After a deeper analysis of the application’s needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
 
-In the next figure, you can see a breakdown of different kinds of apps and their ideal Azure hosting scenarios.
+In Figure 1, you can see a breakdown of different kinds of apps and their ideal Azure hosting scenarios.
 
-![](./media/image8.5.png)
+![Figure 1](./media/image8.5.png)
 
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

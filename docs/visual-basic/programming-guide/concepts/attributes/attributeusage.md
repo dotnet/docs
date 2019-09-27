@@ -145,7 +145,7 @@ End Class
   
 ## Sample Output  
   
-```  
+```console  
 Attributes on Base Class:  
 A1  
 A2  

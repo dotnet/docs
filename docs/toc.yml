@@ -317,13 +317,18 @@
     items:
     - name: Overview
       href: core/tools/index.md
-    - name: Global Tools
+    - name: Tools
       expanded: true
       items:
-      - name: Overview
-        href: core/tools/global-tools.md
-      - name: Create a Global Tool
-        href: core/tools/global-tools-how-to-create.md
+      - name: Global Tools
+        expanded: true
+        items:
+        - name: Overview
+          href: core/tools/global-tools.md
+        - name: Create a Global Tool
+          href: core/tools/global-tools-how-to-create.md
+      - name: Troubleshoot tool usage issues
+        href: core/tools/troubleshoot-usage-issues.md
     - name: Elevated access
       href: core/tools/elevated-access.md
     - name: Extensibility Model

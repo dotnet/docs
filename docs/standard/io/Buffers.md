@@ -10,8 +10,8 @@ helpviewer_keywords:
   - "streams, asynchronous streams"
   - "I/O [.NET Framework], asynchronous I/O"
 ms.assetid: dbdd55ee-d6b9-4f9e-bad0-ab0edd4457f7
-author: "mairaw"
-ms.author: "mairaw"
+author: rick-anderson
+ms.author: riande
 ---
 
 # System.Buffers

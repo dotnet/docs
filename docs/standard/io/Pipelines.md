@@ -10,8 +10,8 @@ helpviewer_keywords:
   - "streams, asynchronous streams"
   - "I/O [.NET Framework], asynchronous I/O"
 ms.assetid: dbdd55ee-d6b9-4f9e-bad0-ab0edd4457f7
-author: "mairaw"
-ms.author: "mairaw"
+author: rick-anderson
+ms.author: riande
 ---
 # System.IO.Pipelines
 
@@ -20,8 +20,8 @@ ms.author: "mairaw"
 <a name="solve"></a>
 
 ## What problem does System.IO.Pipelines solve
-
-Apps that parse streaming data are composed of boilerplate code having many corner cases. The boilerplate/corner case code is complex and difficult to maintain.
+<!-- corner case doesn't MT (machine translate)   -->
+Apps that parse streaming data are composed of boilerplate code having many specialized and unusual code flows. The boilerplate and special case code is complex and difficult to maintain.
 
 System.IO.Pipelines was architected to:
 
@@ -225,35 +225,15 @@ The code below reads all messages from a `PipeReader` and calls `ProcessMessageA
 - Failing to call `PipeReader.Complete/CompleteAsync` may result in a memory leak.
 - Checking `ReadResult.IsCompleted` and exiting the reading logic before processing the buffer will result in data loss. The loop exit condition should be based on `ReadResult.Buffer.IsEmpty` and `ReadResult.IsCompleted`. Doing this in the wrong order could result in an infinite loop.
 
-#### Code samples
-
-[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+#### Problematic code
 
 ❌ **Data loss**
 
 The `ReadResult` can return the final segment of data when `IsCompleted` is set to true. Not reading that data before exiting the read loop will result in data loss.
 
-zz embedded below
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet)]
-
-```csharp
-Environment.FailFast("This code is terrible, don't use it!");
-while (true)
-{
-    ReadResult result = await reader.ReadAsync(cancellationToken);
-    ReadOnlySequence<byte> dataLossBuffer = result.Buffer;
-    
-    if (result.IsCompleted)
-    {
-        break;
-    }
-    
-    Process(ref dataLossBuffer, out Message message);
-    
-    reader.AdvanceTo(dataLossBuffer.Start, dataLossBuffer.End);
-}
-```
 
 [!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
@@ -265,50 +245,14 @@ The following logic may result in an infinite loop if the `Result.IsCompleted` i
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet2)]
 
-```csharp
-Environment.FailFast("This code is terrible, don't use it!");
-while (true)
-{
-    ReadResult result = await reader.ReadAsync(cancellationToken);
-    ReadOnlySequence<byte> infiniteLoopBuffer = result.Buffer;
-    if (result.IsCompleted && infiniteLoopBuffer.IsEmpty)
-    {
-        break;
-    }
-    
-    Process(ref infiniteLoopBuffer, out Message message);
-    
-    reader.AdvanceTo(infiniteLoopBuffer.Start, infiniteLoopBuffer.End);
-}
-```
-
 [!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
-Here's another piece of code with the same problem. It's checking for a non-empty buffer before checking `ReadResult.IsCompleted`, but since it's in an `else if`, it will loop forever if there's never a complete message in the buffer.
+Here's another piece of code with the same problem. It's checking for a non-empty buffer before checking `ReadResult.IsCompleted`. Because it's in an `else if`, it will loop forever if there's never a complete message in the buffer.
 
 [!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet3)]
 
-```csharp
-Environment.FailFast("This code is terrible, don't use it!");
-while (true)
-{
-    ReadResult result = await reader.ReadAsync(cancellationToken);
-    ReadOnlySequence<byte> infiniteLoopBuffer = result.Buffer;
-    
-    if (!infiniteLoopBuffer.IsEmpty)
-    {
-        Process(ref infiniteLoopBuffer, out Message message);
-    }
-    else if (result.IsCompleted)
-    {
-        break;
-    }
-    
-    reader.AdvanceTo(infiniteLoopBuffer.Start, infiniteLoopBuffer.End);
-}
-```
 [!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Unexpected Hang**
@@ -319,28 +263,6 @@ Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the examined
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet4)]
 
-```csharp
-Environment.FailFast("This code is terrible, don't use it!");
-while (true)
-{    
-    ReadResult result = await reader.ReadAsync(cancellationToken);
-    ReadOnlySequence<byte> hangBuffer = result.Buffer;
-    
-    Process(ref hangBuffer, out Message message);
-    
-    if (result.IsCompleted)
-    {
-        break;
-    }
-    
-    reader.AdvanceTo(hangBuffer.Start, hangBuffer.End);
-    
-    if (message != null)
-    {
-        return message;
-    }
-}
-```
 [!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Out of Memory**
@@ -350,29 +272,6 @@ If there's no maximum message size and the data returned from the `PipeReader` d
 [!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet5)]
-
-```csharp
-Environment.FailFast("This code is terrible, don't use it!");
-while (true)
-{
-    ReadResult result = await reader.ReadAsync(cancellationToken);
-    ReadOnlySequence<byte> thisCouldOutOfMemory = result.Buffer;
-    
-    Process(ref thisCouldOutOfMemory, out Message message);
-    
-    if (result.IsCompleted)
-    {
-        break;
-    }
-    
-    reader.AdvanceTo(thisCouldOutOfMemory.Start, thisCouldOutOfMemory.End);
-    
-    if (message != null)
-    {
-        return message;
-    }
-}
-```
 
 [!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 

@@ -6,13 +6,13 @@ ms.date: 09/23/2019
 ---
 # Cloud native data patterns
 
-While data distributed across many microservices can increase agility, performance, and scalability, it also presents many challenges. For example, querying for data across microservices is complex. Updating data across microservices must be managed programmatically as distributed transactions aren't supported in cloud-native applications. You move from a world of *immediate consistency* to *eventual consistency*.
+While having each microservice in your cloud-native application encapsulate its own data increases agility, performance, and scalability, it also presents many challenges. In this section, we discuss patterns and best practices for data access in cloud-native systems  
 
-We discuss these challenges now.
+https://auth0.com/blog/introduction-to-microservices-part-4-dependencies/
 
 ## Cross-service queries
 
-How does an application query data that is spread across many independent microservices?
+While microservices are independent and focus on specific functional capabilities, such as inventory, shipping, or orders, they often rely on the cooperation and integration of other microservices to perform operations. In these scenarios, how does a microservice query data that is owned by another microservice?
 
 Figure 5-4 shows this scenario.
 
@@ -24,7 +24,7 @@ In the previous figure, we see a shopping basket microservice that adds an item 
 
 One option that we discussed in Chapter 4 involves a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said direct HTTP calls couple microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages across microservices for data, but that could impact performance for operations waiting for a response to complete.
 
-A common approach involves removing cross-service queries using the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
+As you can see, querying data across microservices is complex. A common approach involves removing cross-service dependencies by implementing the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
 
 ![Materialized view pattern](./media/materialized-view-pattern.png)
 
@@ -35,6 +35,13 @@ With this pattern, you directly place a local table (known as a *read model*) in
 The catch with this approach is you now have duplicate data in your system. In cloud native systems, duplicate data isn't considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is a widely accepted practice. However, one and only one system can be the owner of a dataset.  You'll need to synchronize the read models when the system of record is updated.
 
 ## Transactional support
+
+
+ > Updating data across microservices is even more challenging and must be managed programmatically.  The lack of distributed transactions in cloud-native applications moves you from a world of *immediate consistency* to *eventual consistency*.
+ 
+
+
+
 
 While querying data across microservices is difficult, implementing a transaction across microservices is always complex. The inherent challenge of maintaining data consistency for data sources that are in different microservices can't be understated. Figure 5-6 shows the problem.
 

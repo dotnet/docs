@@ -14,7 +14,7 @@ You might come across issues when trying to install or run a .NET Core tool, whi
 When a .NET Core tool fails to run, most likely you ran into one of the following issues:
 
 * The executable file for the tool wasn't found.
-* The correct version of the .NET Core runtime wasn't found. 
+* The correct version of the .NET Core runtime wasn't found.
 
 ### Executable file not found
 
@@ -53,18 +53,18 @@ The name of the executable determines how you invoke the tool. The following tab
   * If you're using macOS 10.14 "Mojave" or earlier versions, and you've installed the .NET Core SDK using *.tar.gz* files and not *.pkg*.
   * If you've installed the .NET Core 3.0 SDK and you've set the `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH` environment variable to `false`.
   * If you've installed .NET Core 2.2 SDK or earlier versions, and you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable to `true`.
-  
+
   For more information about global tools, see [.NET Core Global Tools overview](global-tools.md).
 
 * Local tools
 
   If you're trying to run a local tool, verify that there's a manifest file called *dotnet-tools.json* in the current directory or any of its parent directories. This file can also live under a folder named *.config* anywhere in the project folder hierarchy, instead of the root folder. If *dotnet-tools.json* exists, open it and check for the tool you're trying to run. If the file doesn't contain an entry for `"isRoot": true`, then also check further up the file hierarchy for additional tool manifest files.
 
-    If you're trying to run a .NET Core tool that was installed with a specified path, you need to include that path when using the tool. An example of using a tool-path installed tool is:
+  If you're trying to run a .NET Core tool that was installed with a specified path, you need to include that path when using the tool. An example of using a tool-path installed tool is:
 
-   ```console
-   ..\<toolDirectory>\dotnet-<toolName>
-    ```
+  ```console
+  ..\<toolDirectory>\dotnet-<toolName>
+  ```
 
 ### Runtime not found
 
@@ -141,7 +141,7 @@ dotnet tool install -g --version 1.1.0-pre <toolName>
 
 If you try to install a NuGet package that is a regular NuGet package and not a .NET Core tool, you'll see an error similar to the following:
 
-`NU1212: Invalid project-package combination for `<ToolName>`. DotnetToolReference project style can only contain references of the DotnetTool type.`
+> NU1212: Invalid project-package combination for `<ToolName>`. DotnetToolReference project style can only contain references of the DotnetTool type.
 
 ### NuGet feed can't be accessed
 
@@ -156,4 +156,5 @@ Tool installation requires access to the NuGet feed that contains the tool packa
 A common reason for failure is that the tool name isn't correct. This can happen because of mistyping, or because the tool has moved or been deprecated. For tools on NuGet.org, one way to ensure you have the name correct is to search for the tool at NuGet.org and copy the installation command.
 
 ## See also
+
 * [.NET Core Global Tools overview](global-tools.md)

@@ -34,11 +34,13 @@ namespace Pipes
                     {
                         if (result.IsCanceled)
                         {
-                            // The read was canceled, we can quit without reading the existing data
+                            // The read was canceled, we can quit without reading the 
+                            // existing data.
                             break;
                         }
 
-                        // Process all messages from the buffer, modifying the input buffer on each
+                        // Process all messages from the buffer, modifying the input buffer
+                        //on each.
                         //iteration
                         while (TryParseMessage(ref buffer, out Message message))
                         {
@@ -53,8 +55,9 @@ namespace Pipes
                     }
                     finally
                     {
-                        // Since we're processing all messages in the buffer, we can use the remaining 
-                        // buffer's Start and End position to determine consumed and examined.
+                        // Since we're processing all messages in the buffer, we can use the
+                        // remaining buffer's Start and End position to determine consumed 
+                        // and examined.
                         reader.AdvanceTo(buffer.Start, buffer.End);
                     }
                 }
@@ -71,8 +74,5 @@ namespace Pipes
             throw new NotImplementedException();
         }
 
-        private class Message
-        {
-        }
     }
 }

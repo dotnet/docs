@@ -34,7 +34,8 @@ namespace Pipes
                         {
                             if (buffer.Length > 0)
                             {
-                                // We have an incomplete message and there's no more data to process
+                                // We have an incomplete message and there's no more data to
+                                // process.
                                 throw new InvalidDataException("Incomplete message!");
                             }
                             break;
@@ -42,8 +43,9 @@ namespace Pipes
                     }
                     finally
                     {
-                        // Since we're processing all messages in the buffer, we can use the remaining
-                        // buffer'sStart and End position to determine consumed and examined.
+                        // Since we're processing all messages in the buffer, we can use the
+                        // remaining buffer'sStart and End position to determine consumed and 
+                        // examined.
                         reader.AdvanceTo(buffer.Start, buffer.End);
                     }
                 }
@@ -59,9 +61,6 @@ namespace Pipes
             throw new NotImplementedException();
         }
 
-        private class Message
-        {
-        }
         #endregion
     }
 }

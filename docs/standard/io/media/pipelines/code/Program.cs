@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Concurrent;
+using System.IO.Pipelines;
 using System.IO.Pipes;
 using System.Threading;
+//using PipeOptions = System.IO.Pipelines.PipeOptions;
 
 namespace Pipes
 {
@@ -15,14 +17,16 @@ namespace Pipes
 
             // Tell the Pipe what schedulers to use
             // and disable the SynchronizationContext .
-            var options = new PipeOptions(readerScheduler: readScheduler, writerScheduler: writeScheduler, useSynchronizationContext: false);
+            var options = new PipeOptions(readerScheduler: readScheduler, 
+                          writerScheduler: writeScheduler, useSynchronizationContext: false);
             var pipe = new Pipe(options);
         }
 
         // This is a sample scheduler that async callbacks on a single dedicated thread.
         public class SingleThreadPipeScheduler : PipeScheduler
         {
-            private readonly BlockingCollection<(Action<object> Action, object State)> _queue = new BlockingCollection<(Action<object> Action, object State)>();
+            private readonly BlockingCollection<(Action<object> Action, object State)>
+                    _queue = new BlockingCollection<(Action<object> Action, object State)>();
             private readonly Thread _thread;
 
             public SingleThreadPipeScheduler()

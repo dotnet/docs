@@ -15,25 +15,6 @@ ms.author: "mairaw"
 ---
 # System.IO.Pipelines
 
-<!--  This is auto generated
-- [What problem does it solve?](#solve)
-- [Pipe](#pipe)
-    - [Basic usage](#pbu)
-    - [Backpressure and flow control](#backpressure-and-flow-control)
-    - [PipeScheduler](#pipescheduler)
-    - [Reset](#reset)
-- [PipeReader](#pipereader)
-    - [Scenarios](#scenarios)
-    - [Cancellation](#cancellation)
-    - [Common problems](#gotchas)
-- [PipeWriter](#pipewriter)
-    - [Scenarios](#)
-    - [Cancellation](#cancellation)
-    - [Gotchas](#)
-- [IDuplexPipe](#iduplexpipe)
-- [Streams](#streams)
-- -->
-
 `System.IO.Pipelines` is a new library that is designed to make it easier to do high performance IO in .NET. It’s a library targeting .NET Standard that works on all .NET implementations.
 
 <a name="solve"></a>
@@ -160,11 +141,9 @@ var pipe = new Pipe(options);
 
 ### PipeScheduler
 
-<xref:System.IO.Pipelines.PipeScheduler>
-
 Typically when using `async` amd `await`, asynchronous code resumes on either on a <xref:System.Threading.Tasks.TaskScheduler> or on the current  <xref:System.Threading.SynchronizationContext>.
 
-When doing IO, it's important to have fine-grained control over where that IO is performed. This control allows taking advantage of CPU caches effectively. Efficient caching is critical for high-performance apps like web servers. <xref:System.IO.Pipelines.PipeScheduler> provides control over where asynchronous callbacks run. By default:
+When doing IO, it's important to have fine-grained control over where the IO is performed. This control allows taking advantage of CPU caches effectively. Efficient caching is critical for high-performance apps like web servers. <xref:System.IO.Pipelines.PipeScheduler> provides control over where asynchronous callbacks run. By default:
 
 * The current `SynchronizationContext` will be used.
 * If there is no `SynchronizationContext`, it will use the thread pool to run callbacks.
@@ -234,23 +213,6 @@ The code below reads all messages from a `PipeReader` and calls `ProcessMessageA
 
 [!code-csharp[](media/pipelines/code/MyConnection.cs?name=snippet)]
 
-zz
-
-```csharp
-public class MyConnection
-{
-    private PipeReader reader;
-    
-    public MyConnection(PipeReader reader)
-    {
-        this.reader = reader;
-    }
-    
-    public void Abort()
-    {
-     
-```
-
 <a name="gotchas"></a>
 
 ### PipeReader common problems
@@ -270,6 +232,10 @@ public class MyConnection
 ❌ **Data loss**
 
 The `ReadResult` can return the final segment of data when `IsCompleted` is set to true. Not reading that data before exiting the read loop will result in data loss.
+
+zz embedded below
+
+[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet)]
 
 ```csharp
 Environment.FailFast("This code is terrible, don't use it!");
@@ -297,6 +263,8 @@ The following logic may result in an infinite loop if the `Result.IsCompleted` i
 
 [!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
+[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet2)]
+
 ```csharp
 Environment.FailFast("This code is terrible, don't use it!");
 while (true)
@@ -313,11 +281,14 @@ while (true)
     reader.AdvanceTo(infiniteLoopBuffer.Start, infiniteLoopBuffer.End);
 }
 ```
+
 [!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 Here's another piece of code with the same problem. It's checking for a non-empty buffer before checking `ReadResult.IsCompleted`, but since it's in an `else if`, it will loop forever if there's never a complete message in the buffer.
 
 [!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+
+[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet3)]
 
 ```csharp
 Environment.FailFast("This code is terrible, don't use it!");
@@ -345,6 +316,8 @@ while (true)
 Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the examined position may result in hangs when parsing a single message. The next call to `PipeReader.AdvanceTo` will not return until there's more data written to the pipe, that was not previously examined.
 
 [!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+
+[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet4)]
 
 ```csharp
 Environment.FailFast("This code is terrible, don't use it!");
@@ -375,6 +348,8 @@ while (true)
 If there's no maximum message size and the data returned from the `PipeReader` does not make a complete message (because the other side is writing a large message e.g 4GB) the logic below will keep buffering until an `OutOfMemoryException` occurs.
 
 [!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+
+[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet5)]
 
 ```csharp
 Environment.FailFast("This code is terrible, don't use it!");
@@ -412,40 +387,9 @@ public class Message
 {
    public ReadOnlySequence<byte> CorruptedPayload { get; set; }
 }
-
-Environment.FailFast("This code is terrible, don't use it!");
-while (true)
-{
-    ReadResult result = await reader.ReadAsync(cancellationToken);
-    ReadOnlySequence<byte> buffer = result.Buffer;
-    
-    ReadHeader(ref buffer, out int length);
-    
-    if (length > 0)
-    {
-        message = new Message 
-        {
-            // Slice the payload from the existing buffer
-            CorruptedPayload = buffer.Slice(0, length);
-        };
-        
-        buffer = buffer.Slice(length);
-    }
-    
-    if (result.IsCompleted)
-    {
-        break;
-    }
-    
-    reader.AdvanceTo(buffer.Start, buffer.End);
-    
-    if (message != null)
-    {
-        // This code is broken since we called reader.AdvanceTo() with a position *after* the buffer we captured
-        return message;
-    }
-}
 ```
+
+[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet6)]
 
 [!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 

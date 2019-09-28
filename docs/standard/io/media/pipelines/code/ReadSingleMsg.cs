@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
+using System.IO.Pipelines;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Pipes
@@ -8,7 +9,8 @@ namespace Pipes
     class ReadSingleMsg
     {
         #region snippet
-        async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, CancellationToken cancellationToken = default)
+        async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, 
+                                                CancellationToken cancellationToken = default)
         {
             while (true)
             {
@@ -60,5 +62,6 @@ namespace Pipes
             return null;
         }
         #endregion
+
     }
 }

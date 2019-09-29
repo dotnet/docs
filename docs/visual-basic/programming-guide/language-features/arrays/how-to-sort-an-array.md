@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "examples [Visual Basic], arrays"
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
 ---
-# How to: Sort An Array in Visual Basic
+# How to: sort an array in Visual Basic
  
 ## Example
 
@@ -24,17 +24,17 @@ Private Sub SortAnimals()
 End Sub
 ```
 
-## Compiling the Code
+## Compiling the code
 
  This example requires access to the <xref:System> namespace.
 
-## Robust Programming
+## Robust programming
 
- The following conditions may cause an exception:
+The following conditions may cause an exception:
 
-- Array is empty (<xref:System.ArgumentNullException> class)
-- Array is multidimensional (<xref:System.RankException> class)
-- One or more elements of the array do not implement the <xref:System.IComparable> interface (<xref:System.InvalidOperationException> class)
+- Array is empty (<xref:System.ArgumentNullException> class).
+- Array is multidimensional (<xref:System.RankException> class).
+- One or more elements of the array don't implement the <xref:System.IComparable> interface (<xref:System.InvalidOperationException> class).
 
 ## See also
 

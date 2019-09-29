@@ -14,12 +14,15 @@ Extension methods enable developers to add custom functionality to data types th
   
 ## Remarks
 
- An extension method can be only a `Sub` procedure or a `Function` procedure. You cannot define an extension property, field, or event. All extension methods must be marked with the extension attribute `<Extension>` from the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace.
+ An extension method can be only a `Sub` procedure or a `Function` procedure. You cannot define an extension property, field, or event. All extension methods must be marked with the extension attribute `<Extension>` from the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace and must be defined in a [Module](../../../language-reference/statements/module-statement.md). If an extension method is defined outside a module, the Visual Basic compiler generates error [BC36551](../../../misc/bc36551.md), "Extension methods can be defined only in modules".
 
  The first parameter in an extension method definition specifies which data type the method extends. When the method is run, the first parameter is bound to the instance of the data type that invokes the method.
 
-## Example
+ The `Extension` attribute can only be applied to a Visual Basic [`Module`](../../../language-reference/statements/module-statement.md), [`Sub`](../../../language-reference/statements/sub-statement.md), or [`Function`](../../../language-reference/statements/function-statement.md). If you apply it to a `Class` or a `Structure`, the Visual Basic compiler generates error [BC36550](../../../language-reference/error-messages/extension-attribute-can-be-applied-only-to-module-sub-or-function-declarations.md), "'Extension' attribute can be applied only to 'Module', 'Sub', or 'Function' declarations".
+ 
+ 
 
+## Example
 
  The following example defines a `Print` extension to the <xref:System.String> data type. The method uses `Console.WriteLine` to display a string. The parameter of the `Print` method, `aString`, establishes that the method extends the <xref:System.String> class.
   

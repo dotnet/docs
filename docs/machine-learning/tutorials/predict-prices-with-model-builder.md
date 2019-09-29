@@ -1,15 +1,15 @@
 ---
-title: 'Predict prices using regression with Model Builder'
+title: 'Tutorial: Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 09/12/2019
+ms.date: 09/26/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
 ---
 
-# Predict prices using regression with Model Builder
+# Tutorial: Predict prices using regression with Model Builder
 
 Learn how to use ML.NET Model Builder to build a regression model() to predict prices.  The .NET console app that you develop in this tutorial predicts taxi fares based on historical New York taxi fare data.
 
@@ -42,11 +42,11 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. The data set used to train and evaluate the machine learning model is originally from the NYC TLC Taxi Trip data set.
 
-    To download the data set, navigate to the [taxi-fare-train.csv download link](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/taxi-fare-train.csv).
+    1. To download the data set, navigate to the [taxi-fare-train.csv download link](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/taxi-fare-train.csv).
 
-    When the page loads, right-click anywhere on the page and select **Save as**.
+    1. When the page loads, right-click anywhere on the page and select **Save as**.
 
-    Use the **Save As Dialog** to save the file in the *Data* folder you created at the previous step.
+    1. Use the **Save As Dialog** to save the file in the *Data* folder you created at the previous step.
 
 1. In **Solution Explorer**, right-click the *taxi-fare-train.csv* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
@@ -59,12 +59,12 @@ Each row in the `taxi-fare-train.csv` data set contains details of trips made by
     - **vendor_id:** The ID of the taxi vendor is a feature.
     - **rate_code:** The rate type of the taxi trip is a feature.
     - **passenger_count:** The number of passengers on the trip is a feature.
-    - **trip_time_in_secs:** The amount of time the trip took.
+    - **trip_time_in_secs:** The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model.
     - **trip_distance:** The distance of the trip is a feature.
     - **payment_type:** The payment method (cash or credit card) is a feature.
     - **fare_amount:** The total taxi fare paid is the label.
 
-The `label` is the column you want to predict. When performing a regression task, the goal is to predict a numerical value. In this price prediction scenario, the cost of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns are used as features or inputs to predict the fare amount.
+The `label` is the column you want to predict. When performing a regression task, the goal is to predict a numerical value. In this price prediction scenario, the cost of a taxi ride is being predicted. Therefore, the **fare_amount** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the rest of the columns with the exception of **trip_time_in_secs** are used as features or inputs to predict the fare amount.
 
 ## Choose a scenario
 
@@ -79,7 +79,8 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 1. In the data step of the Model Builder tool, select *File* from the data source dropdown.
 1. Select the button next to the *Select a file* text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory
-1. Choose *fare_amount* in the *Label or Column to Predict* dropdown and navigate to the train step of the Model Builder tool.
+1. Choose *fare_amount* in the *Column to Predict (Label)* dropdown and navigate to the train step of the Model Builder tool.
+1. Expand the *Input Columns (Features)* dropdown and uncheck the *trip_time_in_secs* column to exclude it as a feature during training.
 
 ## Train the model
 
@@ -109,43 +110,19 @@ If you're not satisfied with your accuracy metrics, some easy ways to try and im
 
 Two projects will be created as a result of the training process.
 
-- TaxiFarePredictionML.ConsoleApp: A .NET Core Console application that contains the model training and consumption code.
-- TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data as well as the persisted version of the best performing model during training.
+- TaxiFarePredictionML.ConsoleApp: A .NET Core Console application that contains the model training and sample consumption code.
+- TaxiFarePredictionML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data, the saved version of the best performing model during training and a helper class called `ConsumeModel` to make predictions.
 
 1. In the code step of the Model Builder tool, select **Add Projects** to add the auto-generated projects to the solution.
-1. Right-click *TaxiFarePrediction* project. Then, **Add > Reference**. Choose the **Projects > Solution** node and from the list, check the *TaxiFarePredictionML.Model* project and select OK.
 1. Open the *Program.cs* file in the *TaxiFarePrediction* project.
-1. Add the following using statements to reference the *Microsoft.ML* NuGet package and *TaxiFarePredictionML.Model* project:
+1. Add the following using statement to reference the *TaxiFarePredictionML.Model* project:
 
     ```csharp
     using System;
-    using Microsoft.ML;
-    using TaxiFarePredictionML.Model.DataModels;
+    using TaxiFarePredictionML.Model;
     ```
 
-1. Add the `ConsumeModel` method to the `Program` class.
-
-    ```csharp
-    static ModelOutput ConsumeModel(ModelInput input)
-    {
-        // 1. Load the model
-        MLContext mlContext = new MLContext();
-        ITransformer mlModel = mlContext.Model.Load("MLModel.zip", out var modelInputSchema);
-
-        // 2. Create PredictionEngine
-        var predictionEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
-
-        // 3. Use PredictionEngine to use model on input data
-        ModelOutput result = predictionEngine.Predict(input);
-
-        // 4. Return prediction result
-        return result;
-    }
-    ```
-
-    The `ConsumeModel` will load the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model and use it to make predictions on new data.
-
-1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class and use the `ConsumeModel` method. Notice that the fare amount is not part of the input. This is because the model will generate the prediction for it. Add the following code to the `Main` method and run the application
+1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the fare amount is not part of the input. This is because the model will generate the prediction for it. 
 
     ```csharp
     // Create sample data
@@ -154,23 +131,28 @@ Two projects will be created as a result of the training process.
         Vendor_id = "CMT",
         Rate_code = 1,
         Passenger_count = 1,
-        Trip_time_in_secs = 1271,
         Trip_distance = 3.8f,
         Payment_type = "CRD"
     };
+    ```
 
+1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model and uses it to make predictions on new data. 
+
+    ```csharp
     // Make prediction
-    ModelOutput prediction = ConsumeModel(input);
+    ModelOutput prediction = ConsumeModel.Predict(input);
 
     // Print Prediction
     Console.WriteLine($"Predicted Fare: {prediction.Score}");
     Console.ReadKey();
     ```
 
+1. Run the application.
+
     The output generated by the program should look similar to the snippet below:
 
     ```bash
-    Predicted Fare: 16.82245
+    Predicted Fare: 14.96086
     ```
 
 If you need to reference the generated projects at a later time inside of another solution, you can find them inside the `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.

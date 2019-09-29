@@ -46,8 +46,6 @@ static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
 
 With Polly, you can define a Retry policy with the number of retries, the exponential backoff configuration, and the actions to take when there's an HTTP exception, such as logging the error. In this case, the policy is configured to try six times with an exponential retry, starting at two seconds. 
 
-so it will try six times and the seconds between each retry will be exponential, starting on two seconds.
-
 ## Add a jitter strategy to the retry policy
 
 A regular Retry policy can impact your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in case of partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This can improve the overall performance of the end-to-end system by adding randomness to the exponential backoff. This spreads out the spikes when issues arise. When you use a plain Polly policy, code to implement jitter could look like the following example:

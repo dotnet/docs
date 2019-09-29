@@ -9,38 +9,37 @@ helpviewer_keywords:
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
 ---
 # How to: Sort An Array in Visual Basic
-This example declares an array of `String` objects named `zooAnimals`, populates it, and then sorts it alphabetically.  
+ 
+## Example
+
+This example declares an array of `String` objects named `zooAnimals`, populates it, and then sorts it alphabetically:
   
-## Example  
-  
-```  
-Private Sub sortAnimals()  
-    Dim zooAnimals(2) As String  
-    zooAnimals(0) = "lion"  
-    zooAnimals(1) = "turtle"  
-    zooAnimals(2) = "ostrich"  
-    Array.Sort(zooAnimals)  
-End Sub  
-```  
-  
-## Compiling the Code  
- This example requires:  
-  
-- Access to the <xref:System> namespace.  
-  
-## Robust Programming  
- The following conditions may cause an exception:  
-  
-- Array is empty (<xref:System.ArgumentNullException> class)  
-  
-- Array is multidimensional (<xref:System.RankException> class)  
-  
-- One or more elements of the array do not implement the <xref:System.IComparable> interface (<xref:System.InvalidOperationException> class)  
-  
+```vb
+Private Sub SortAnimals()
+    Dim zooAnimals(2) As String
+    zooAnimals(0) = "lion"
+    zooAnimals(1) = "turtle"
+    zooAnimals(2) = "ostrich"
+    Array.Sort(zooAnimals)
+End Sub
+```
+
+## Compiling the Code
+
+ This example requires access to the <xref:System> namespace.
+
+## Robust Programming
+
+ The following conditions may cause an exception:
+
+- Array is empty (<xref:System.ArgumentNullException> class)
+- Array is multidimensional (<xref:System.RankException> class)
+- One or more elements of the array do not implement the <xref:System.IComparable> interface (<xref:System.InvalidOperationException> class)
+
 ## See also
 
 - <xref:System.Array.Sort%2A?displayProperty=nameWithType>
-- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
-- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)
+- [Arrays](index.md)
+- [Troubleshooting Arrays](troubleshooting-arrays.md)
 - [Collections](../../concepts/collections.md)
-- [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [For Each...Next Statement](../../../language-reference/statements/for-each-next-statement.md)

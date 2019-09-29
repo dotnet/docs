@@ -27,7 +27,7 @@ This section describes how to convert strings into other data types.
  How to convert a hexadecimal string into an integer.
  
  [How to: Convert a String to an Array of Characters in Visual Basic](how-to-convert-a-string-to-an-array-of-characters.md)  
- How to convert a string into an characters.
+ How to convert a string into an array of characters.
  
  [How to: Access Characters in Strings in Visual Basic](how-to-access-characters-in-strings.md)  
  How to access a character in a string by its index.

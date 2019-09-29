@@ -156,9 +156,9 @@ The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xr
 
 For more information, see [Iterators](../concepts/iterators.md).
 
-## C# Language Specification
+## C# language specification
 
- [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
 ## See also
 

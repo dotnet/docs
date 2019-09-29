@@ -8,7 +8,9 @@ helpviewer_keywords:
 ms.assetid: ae4c79e0-08ea-489f-bdb2-5eb6d355f284
 ---
 # How to: search within a string (Visual Basic)
-  
+
+This article shows an example of how to search within a string in Visual Basic.
+
 ## Example
 
 This example calls the <xref:System.String.IndexOf%2A> method on a <xref:System.String> object to report the index of the first occurrence of a substring:

@@ -6,66 +6,61 @@ ms.date: 09/23/2019
 ---
 # Cloud native data patterns
 
-While having each microservice in your cloud-native application encapsulate its own data increases agility, performance, and scalability, it also presents many challenges. In this section, we discuss patterns and best practices for data access in cloud-native systems  
+As discussed in chapter 1, a key pillar of a cloud native system is a microservice-based architecture. Microservices favor small, independent data stores scoped to each service. While isolating data can increase agility, performance, and scalability, it also presents many challenges. In this section, we discuss these challenges and present patterns and best practices to help overcome them.  
 
 https://auth0.com/blog/introduction-to-microservices-part-4-dependencies/
 
 ## Cross-service queries
 
-While microservices are independent and focus on specific functional capabilities, such as inventory, shipping, or orders, they often rely on the cooperation and integration of other microservices to perform operations. In these scenarios, how does a microservice query data that is owned by another microservice?
+While microservices are independent and focus on specific functional capabilities, like inventory, shipping, or ordering, they often depend on the cooperation and integration of other microservices to fulfill user requests. Typically what is needed is data. In these scenarios, how does a microservice query data that is owned by another microservice?
 
-Figure 5-4 shows this scenario.
+Figure 5-4 shows the scenario.
 
 ![Querying across microservices](./media/cross-service-query.png)
 
 **Figure 5-4**. Querying across microservices
 
-In the previous figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains data tables for basket and lineItems, it doesn't contain product or pricing data. Instead, those data items are found in the catalog and pricing microservices. This presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database? 
+In the preceding figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains data tables for basket and lineItems, it doesn't contain product or pricing data. Instead, those data items are found in the catalog and pricing microservices. This presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database? 
 
-One option that we discussed in Chapter 4 involves a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said direct HTTP calls couple microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages across microservices for data, but that could impact performance for operations waiting for a response to complete.
+One option discussed in Chapter 4 is a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said direct HTTP calls couple microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages back and forth across microservices, but that could block an operation waiting for a response to complete.
 
-As you can see, querying data across microservices is complex. A common approach involves removing cross-service dependencies by implementing the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
+As you can see, querying data across microservices is complex. A common approach to this problem removes cross-service dependencies by implementing the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
 
 ![Materialized view pattern](./media/materialized-view-pattern.png)
 
 **Figure5-5**. Materialized View Pattern
 
-With this pattern, you directly place a local table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data that is needed from the product and pricing microservices. Copying the data into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve response time and reliability.
+With this pattern, you place a local data table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data needed from the product and pricing microservices. Copying the data into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve response time and reliability.
 
 The catch with this approach is you now have duplicate data in your system. In cloud native systems, duplicate data isn't considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is a widely accepted practice. However, one and only one system can be the owner of a dataset.  You'll need to synchronize the read models when the system of record is updated.
 
 ## Transactional support
 
+While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency for data sources that are in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage cross-service transactions programmatically. You move from a world of *immediate consistency* to *eventual consistency*. 
 
- > Updating data across microservices is even more challenging and must be managed programmatically.  The lack of distributed transactions in cloud-native applications moves you from a world of *immediate consistency* to *eventual consistency*.
- 
-
-
-
-
-While querying data across microservices is difficult, implementing a transaction across microservices is always complex. The inherent challenge of maintaining data consistency for data sources that are in different microservices can't be understated. Figure 5-6 shows the problem.
+Figure 5-6 shows the problem.
 
 ![Transaction in saga pattern](./media/saga-transaction-operation.png)
 
 **Figure 5-6**. Implementing a transaction across microservices
 
-Note in the previous figure how five independent microservices participate in a distributed *Create Order* transaction. The transaction for each of the five individual microservices must succeed, or all must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
+In the preceding figure, five independent microservices participate in a distributed transaction that creates an order. The local transaction for each of the five individual microservices must succeed, or all must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
 
-Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to programmatically construct a distributed transaction.
+Since transactional support is essential to keep the data consistent in each of the microservices, you have to programmatically construct a distributed transaction.
 
-A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-7 shows a failed transaction with the Saga pattern.
+A popular pattern for adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-7 shows a failed transaction with the Saga pattern.
 
 ![Roll back in saga pattern](./media/saga-rollback-operation.png)
 
 **Figure 5-7**. Rolling back a transaction
 
-In the previous figure, the *GenerateContent* operation has failed in the music microservice. The Saga invokes compensating transactions (in red) to remove the content, cancel the payment and the order, and return the data for each microservice back to a consistent state.
+In the preceding figure, the *GenerateContent* operation has failed in the music microservice. The Saga invokes compensating transactions (in red) to remove the content, cancel the payment and the order, and return the data for each microservice back to a consistent state.
 
 Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands.
 
 ## CQRS pattern
 
-CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from those that write data. This pattern can help maximize performance, scalability, and security, especially for services with high-volume data requirements.
+Cloud-native applications often support high-volume data requirements. But traditional data storage techniques frequently become the performance bottleneck. CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separate operations that read data from operations that write data. 
 
 For normal scenarios, you implement a single model (entity and repository object) that performs *both* read and write data operations.
 
@@ -79,7 +74,7 @@ Figure 5-8 shows an implementation of the CQRS pattern.
 
 Note in the previous figure how separate command and query models are implemented. Each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the data propagation process operates on the principle of [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/). The read model eventually synchronizes with the write model, but there may be some lag in the process.
 
-By implementing separation, reads and writes scale independently. Read operations can use a schema optimized for queries, while the writes use a schema optimized for updates. Read queries go against denormalized data, while complex business logic can be applied to the write model. As well, you might impose tighter security on write operations than those concerning reads.
+By implementing separation, reads and writes scale independently. Read operations use a schema optimized for queries, while the writes use a schema optimized for updates. Read queries go against denormalized data, while complex business logic can be applied to the write model. As well, you might impose tighter security on write operations than those concerning reads.
 
 Implementing CQRS can improve application performance for cloud-native services. However, it does result in a more complex design. Apply this principle sparingly to those sections of your application that will most benefit from it.
 

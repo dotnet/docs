@@ -119,21 +119,21 @@ If you mark a method with the [async](../../language-reference/keywords/async.md
 > [!NOTE]
 > An async method returns to the caller when either it encounters the first awaited object that’s not yet complete or it gets to the end of the async method, whichever occurs first.
 
- An async method can have a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, or void. The void return type is used primarily to define event handlers, where a void return type is required. An async method that returns void can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws.
+An async method can have a return type of <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, or void. The void return type is used primarily to define event handlers, where a void return type is required. An async method that returns void can't be awaited, and the caller of a void-returning method can't catch exceptions that the method throws.
 
- In the following example, `DelayAsync` is an async method that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `return` statement that returns an integer. Therefore the method declaration of `DelayAsync` must have a return type of `Task<int>`. Because the return type is `Task<int>`, the evaluation of the `await` expression in `DoSomethingAsync` produces an integer as the following statement demonstrates: `int result = await delayTask`.
+In the following example, `DelayAsync` is an async method that has a return type of <xref:System.Threading.Tasks.Task%601>. `DelayAsync` has a `return` statement that returns an integer. Therefore the method declaration of `DelayAsync` must have a return type of `Task<int>`. Because the return type is `Task<int>`, the evaluation of the `await` expression in `DoSomethingAsync` produces an integer as the following statement demonstrates: `int result = await delayTask`.
 
- The `startButton_Click` method is an example of an async method that has a return type of void. Because `DoSomethingAsync` is an async method, the task for the call to `DoSomethingAsync` must be awaited, as the following statement shows: `await DoSomethingAsync();`. The `startButton_Click` method must be defined with the `async` modifier because the method has an `await` expression.
+The `startButton_Click` method is an example of an async method that has a return type of void. Because `DoSomethingAsync` is an async method, the task for the call to `DoSomethingAsync` must be awaited, as the following statement shows: `await DoSomethingAsync();`. The `startButton_Click` method must be defined with the `async` modifier because the method has an `await` expression.
 
- [!code-csharp[csAsyncMethod#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csasyncmethod/cs/mainwindow.xaml.cs#2)]
+[!code-csharp[csAsyncMethod#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csasyncmethod/cs/mainwindow.xaml.cs#2)]
 
- An async method can't declare any [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameters, but it can call methods that have such parameters.
+An async method can't declare any [ref](../../language-reference/keywords/ref.md) or [out](../../language-reference/keywords/out-parameter-modifier.md) parameters, but it can call methods that have such parameters.
 
- For more information about async methods, see [Asynchronous Programming with async and await](../concepts/async/index.md), [Control Flow in Async Programs](../concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../concepts/async/async-return-types.md).
+For more information about async methods, see [Asynchronous Programming with async and await](../concepts/async/index.md), [Control Flow in Async Programs](../concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../concepts/async/async-return-types.md).
 
-## Expression Body Definitions
+## Expression body definitions
 
- It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:
+It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method. There is a syntax shortcut for defining such methods using `=>`:
 
 ```csharp
 public Point Move(int dx, int dy) => new Point(x + dx, y + dy);
@@ -144,17 +144,17 @@ public string Name => First + " " + Last;
 public Customer this[long id] => store.LookupCustomer(id);
 ```
 
- If the method returns `void` or is an async method, then the body of the method must be a statement expression (same as with lambdas).  For properties and indexers, they must be read only, and you don't use the `get` accessor keyword.
+If the method returns `void` or is an async method, then the body of the method must be a statement expression (same as with lambdas). For properties and indexers, they must be read only, and you don't use the `get` accessor keyword.
 
 ## Iterators
 
- An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a [yield return](../../language-reference/keywords/yield.md) statement is reached, the current location in code is remembered. Execution is restarted from that location when the iterator is called the next time.
+An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](../../language-reference/keywords/yield.md) statement to return each element one at a time. When a [yield return](../../language-reference/keywords/yield.md) statement is reached, the current location in code is remembered. Execution is restarted from that location when the iterator is called the next time.
 
- You call an iterator from client code by using a [foreach](../../language-reference/keywords/foreach-in.md) statement.
+You call an iterator from client code by using a [foreach](../../language-reference/keywords/foreach-in.md) statement.
 
- The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
+The return type of an iterator can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.
 
- For more information, see [Iterators](../concepts/iterators.md).
+For more information, see [Iterators](../concepts/iterators.md).
 
 ## C# Language Specification
 

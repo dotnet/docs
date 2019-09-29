@@ -14,7 +14,7 @@ This section describes how to convert strings into other data types.
 
 ## In This Section
 
- [How to: Convert an Array of Bytes into a String in Visual Basic](how-to-convert-an-array-of-bytes-into-a-string.md)
+ [How to: Convert an Array of Bytes into a String in Visual Basic](how-to-convert-an-array-of-bytes-into-a-string.md)  
  How to convert the bytes from a byte array into a string.  
   
  [How to: Convert Strings into an Array of Bytes in Visual Basic](how-to-convert-strings-into-an-array-of-bytes.md)  

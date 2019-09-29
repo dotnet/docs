@@ -77,12 +77,16 @@ The problem with the previous line is that `"The student cannot be found."` is j
 To create the localized exception messages:
 
 1. Create a new folder named *Resources* to hold the resource files.
-1. Add a new resource file to it. To do that in Visual Studio, right-click the folder in **Solution Explorer**, and select **Add** -> **New Item** -> **Resources File**. Name the file *ExceptionMessages.resx*. This is the default resources file.
+1. Add a new resource file to it. To do that in Visual Studio, right-click the folder in **Solution Explorer**, and select **Add** > **New Item** > **Resources File**. Name the file *ExceptionMessages.resx*. This is the default resources file.
 1. Add a name/value pair for your exception message, like the following image shows:
- ![Add resources to the default culture](media/add-resources-to-default-culture.jpg)
+
+   ![Add resources to the default culture](media/add-resources-to-default-culture.jpg)
+
 1. Add a new resource file for French. Name it *ExceptionMessages.fr-FR.resx*.
 1. Add a name/value pair for the exception message again, but with a French value:
- ![Add resources to the fr-FR culture](media/add-resources-to-fr-culture.jpg)
+
+   ![Add resources to the fr-FR culture](media/add-resources-to-fr-culture.jpg)
+
 1. After you build the project, the build output folder should contain the *fr-FR* folder with a *.dll* file, which is the satellite assembly.
 1. You throw the exception with code like the following:
 

@@ -680,19 +680,13 @@ ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
 ---
 # Sorry, we don't have specifics on this C# error
 
-We're sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or you can ask other developers using one of these forums:
+We're sorry, but we don’t have any specific information about this error. You can search for the error number and message text to find information on the web. Or you can ask other developers using one of these:
   
- [Visual C# Language](https://social.msdn.microsoft.com/Forums/home?forum=csharplanguage)  
- Provides a forum for questions about and general discussions of the Visual C# language syntax and compiler.  
-
- [Visual C# IDE](https://social.msdn.microsoft.com/Forums/home?forum=csharpide)  
- Provides a forum for questions about how to work in the Visual Studio environment.  
-
- [Visual C# General](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)  
+ [Msdn forums - Visual C#](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)  
  Provides a forum for questions about and issues with Visual C# that are not discussed in other forums.  
 
  [Stack Overflow](https://stackoverflow.com/questions/tagged/c%23)  
- Provides a forum for questions about and issues with Visual C#.  
+Provides a QA website for questions about and issues with Visual C#.  
 
  Also see:  
  [Additional Resources for Visual C# Programmers](../getting-started/additional-resources.md)  

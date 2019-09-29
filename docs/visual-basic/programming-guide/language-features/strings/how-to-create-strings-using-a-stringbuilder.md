@@ -19,7 +19,7 @@ This example constructs a long string from many smaller strings using the <xref:
 ## See also
 
 - [Using the StringBuilder Class](../../../../standard/base-types/stringbuilder.md)
-- [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)
+- [&= Operator](../../../language-reference/operators/and-assignment-operator.md)
 - [Strings](index.md)
 - [Creating New Strings](../../../../standard/base-types/creating-new.md)
 - [Manipulating Strings](../../../../standard/base-types/manipulating-strings.md)

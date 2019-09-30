@@ -47,7 +47,7 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
 
 ## Example
 
-Following is the complete example that reads from the file `testfile.txt`:
+The following is the complete example that reads from the file `testfile.txt`:
 
  [!code-vb[VbFileIORead#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#8)]
 

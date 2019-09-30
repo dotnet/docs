@@ -27,7 +27,7 @@ Specifies settings that authorize access to service operations
 </serviceAuthorization>
 ```
 
-## Attributes and Elements
+## Attributes and elements
 
 The following sections describe attributes, child elements, and parent elements:
 

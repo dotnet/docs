@@ -136,21 +136,51 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 
     [!code-csharp [StartupUsings](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L7-L9)]
 
+    ```csharp
+    using System.IO;
+    using Microsoft.Extensions.ML;
+    using SentimentRazorML.Model;
+    ```
+
 1. Create a global variable to store the location of the trained model file.
 
     [!code-csharp [ModelPath](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L15)]
+
+    ```csharp
+    private readonly string _modelPath;
+    ```
 
 1. The model file is stored in the build directory alongside the assembly files of your application. To make it easier to access, create a helper method called `GetAbsolutePath` after the `Configure` method
 
     [!code-csharp [GetAbsolutePathMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L62-L69)]
 
+    ```csharp
+    public static string GetAbsolutePath(string relativePath)
+    {
+        FileInfo _dataRoot = new FileInfo(typeof(Program).Assembly.Location);
+        string assemblyFolderPath = _dataRoot.Directory.FullName;
+
+        string fullPath = Path.Combine(assemblyFolderPath, relativePath);
+        return fullPath;
+    }    
+    ```
+
 1. Use the `GetAbsolutePath` method in the `Startup` class constructor to set the `_modelPath`.
 
     [!code-csharp [InitModelPath](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L20)]
 
+    ```csharp
+    _modelPath = GetAbsolutePath("MLModel.zip");
+    ```
+
 1. Configure the `PredictionEnginePool` for your application in the `ConfigureServices` method:
 
     [!code-csharp [InitPredEnginePool](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L37-L38)]
+
+    ```csharp
+    services.AddPredictionEnginePool<ModelInput, ModelOutput>()
+            .FromFile(_modelPath);
+    ```
 
 ### Create sentiment analysis handler
 
@@ -160,15 +190,31 @@ Predictions will be made inside the main page of the application. Therefore, a m
 
     [!code-csharp [IndexUsings](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L4-L5)]
 
+    ```csharp
+    using Microsoft.Extensions.ML;
+    using SentimentRazorML.Model;
+    ```
+
     In order to use the `PredictionEnginePool` configured in the `Startup` class, you have to inject it into the constructor of the model where you want to use it.
 
 1. Add a variable to reference the `PredictionEnginePool` inside the `IndexModel` class.
 
     [!code-csharp [PredEnginePool](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L11)]
 
+    ```csharp
+    private readonly PredictionEnginePool<ModelInput, ModelOutput> _predictionEnginePool;
+    ```
+
 1. Create a constructor in the `IndexModel` class and inject the `PredictionEnginePool` service into it.
 
     [!code-csharp [IndexConstructor](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L13-L16)]
+
+    ```csharp
+    public IndexModel(PredictionEnginePool<ModelInput, ModelOutput> predictionEnginePool)
+    {
+        _predictionEnginePool = predictionEnginePool;
+    }    
+    ```
 
 1. Create a method handler that uses the `PredictionEnginePool` to make predictions from user input received from the web page.
 
@@ -185,21 +231,41 @@ Predictions will be made inside the main page of the application. Therefore, a m
 
         [!code-csharp [CheckInputNull](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L25)]
 
+        ```csharp
+        if (String.IsNullOrEmpty(text)) return Content("Neutral");
+        ```
+
     1. Given a valid input, create a new instance of `ModelInput`.
 
         [!code-csharp [InitInput](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L26)]
+
+        ```csharp
+        var input = new ModelInput { SentimentText = text };
+        ```
 
     1. Use the `PredictionEnginePool` to predict sentiment.
 
         [!code-csharp [MakePrediction](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L27)]
 
+        ```csharp
+        var prediction = _predictionEnginePool.Predict(input);
+        ```
+
     1. Convert the predicted `bool` value into toxic or not toxic with the following code.
 
         [!code-csharp [ConvertPrediction](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L28)]
 
+        ```csharp
+        var sentiment = Convert.ToBoolean(prediction.Prediction) ? "Toxic" : "Not Toxic";
+        ```
+
     1. Finally, return the sentiment back to the web page.
 
         [!code-csharp [ReturnSentiment](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Pages/Index.cshtml.cs#L29)]
+
+        ```csharp
+        return Content(sentiment);
+        ```
 
 ### Configure the web page
 

@@ -129,7 +129,7 @@ End Module
   
  This example produces the following output:  
   
-```xml  
+```console
 Before Transform  
 ----------------  
 <Root>  
@@ -342,7 +342,7 @@ End Module
   
  This example produces the following output:  
   
-```xml  
+```console
 Before Transform  
 ----------------  
 <Root Att1="123">  

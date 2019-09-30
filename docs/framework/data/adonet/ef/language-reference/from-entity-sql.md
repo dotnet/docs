@@ -9,7 +9,7 @@ Specifies the collection used in [SELECT](select-entity-sql.md) statements.
 ## Syntax
 
 ```sql
-FROM expression [ ,...n ] as C
+FROM expression [ ,...n ] AS C
 ```
 
 ## Arguments

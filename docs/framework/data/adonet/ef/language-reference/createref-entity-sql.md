@@ -25,8 +25,8 @@ CreateRef(entityset_identifier, row_typed_expression)
  In the example below, Orders and BadOrders are both entitysets of type Order, and Id is assumed to be the single key property of Order. The example illustrates how we may produce a reference to an entity in BadOrders. Note that the reference may be dangling.  That is, the reference may not actually identify a specific entity. In those cases, a `DEREF` operation on that reference returns a null.  
   
 ```sql  
-select CreateRef(LOB.BadOrders, row(o.Id))   
-from LOB.Orders as o   
+SELECT CreateRef(LOB.BadOrders, row(o.Id))
+FROM LOB.Orders AS o
 ```  
   
 ## Example  

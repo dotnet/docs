@@ -67,32 +67,32 @@ set(e1)
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] also imposes additional restrictions on queries involving `group by` clauses. Expressions in the `select` clause and `having` clause of such queries may only refer to the `group by` keys via their aliases. The following construct is valid in Transact-SQL but are not in [!INCLUDE[esql](../../../../../../includes/esql-md.md)]:  
   
 ```sql  
-select t.x + t.y from T as t group by t.x + t.y  
+SELECT t.x + t.y FROM T AS t group BY t.x + t.y
 ```  
   
  To do this in [!INCLUDE[esql](../../../../../../includes/esql-md.md)]:  
   
 ```sql  
-select k from T as t group by (t.x + t.y) as k  
+SELET k FROM T AS t GROUP BY (t.x + t.y) AS k
 ```  
   
 ## Referencing Columns (Properties) of Tables (Collections)  
  All column references in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] must be qualified with the table alias. The following construct (assuming that `a` is a valid column of table `T`) is valid in Transact-SQL but not in [!INCLUDE[esql](../../../../../../includes/esql-md.md)].  
   
 ```sql  
-select a from T  
+SELECT a FROM T
 ```  
   
  The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] form is  
   
 ```sql  
-select t.a as A from T as t  
+SELECT t.a AS A FROM T AS t
 ```  
   
  The table aliases are optional in the `from` clause. The name of the table is used as the implicit alias. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] allows the following form as well:  
   
 ```sql  
-select Tab.a from Tab  
+SELET Tab.a FROM Tab
 ```  
   
 ## Navigation Through Objects  
@@ -115,17 +115,17 @@ p.Address.City
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports aliasing of `group by` keys. Expressions in the `select` clause and `having` clause must refer to the `group by` keys via these aliases. For example, this [!INCLUDE[esql](../../../../../../includes/esql-md.md)] syntax:  
   
 ```sql  
-select k1, count(t.a), sum(t.a)  
-from T as t  
-group by t.b + t.c as k1  
+SELECT k1, count(t.a), sum(t.a)
+FROM T AS t
+GROUP BY t.b + t.c AS k1
 ```  
   
  ...is equivalent to the following Transact-SQL:  
   
 ```sql  
-select b + c, count(*), sum(a)   
-from T  
-group by b + c  
+SELECT b + c, count(*), sum(a)
+FROM T
+GROUP BY b + c
 ```  
   
 ## Collection-Based Aggregates  
@@ -134,22 +134,22 @@ group by b + c
  Collection-based aggregates operate on collections and produce the aggregated result. These can appear anywhere in the query, and do not require a `group by` clause. For example:  
   
 ```sql  
-select t.a as a, count({1,2,3}) as b from T as t     
+SELECT t.a AS a, count({1,2,3}) AS b FROM T AS t
 ```  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] also supports SQL-style aggregates. For example:  
   
 ```sql  
-select a, sum(t.b) from T as t group by t.a as a  
+SELECT a, sum(t.b) FROM T AS t GROUP BY t.a AS a
 ```  
   
 ## ORDER BY Clause Usage  
- Transact-SQL allows ORDER BY clauses to be specified only in the topmost SELECT .. FROM .. WHERE block. In [!INCLUDE[esql](../../../../../../includes/esql-md.md)] you can use a nested ORDER BY expression and it can be placed anywhere in the query, but ordering in a nested query is not preserved.  
+Transact-SQL allows `ORDER BY` clauses to be specified only in the topmost `SELECT .. FROM .. WHERE` block. In [!INCLUDE[esql](../../../../../../includes/esql-md.md)] you can use a nested `ORDER BY` expression and it can be placed anywhere in the query, but ordering in a nested query is not preserved.  
   
 ```sql  
 -- The following query will order the results by the last name  
 SELECT C1.FirstName, C1.LastName  
-        FROM AdventureWorks.Contact as C1  
+        FROM AdventureWorks.Contact AS C1
         ORDER BY C1.LastName  
 ```  
   
@@ -192,15 +192,15 @@ SELECT C2.FirstName, C2.LastName
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] does not support batching query results. For example, the following is valid Transact-SQL (sending as a batch):  
   
 ```sql  
-select * from products;  
-select * from catagories;  
+SELECT * FROM products;
+SELECT * FROM catagories;
 ```  
   
  However, the equivalent [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is not supported:  
   
 ```sql  
-Select value p from Products as p;  
-Select value c from Categories as c;  
+SELECT value p FROM Products AS p;
+SELECT value c FROM Categories AS c;
 ```  
   
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] only supports one result-producing query statement per command.  

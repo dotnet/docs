@@ -20,32 +20,32 @@ GROUPPARTITION( [ALL|DISTINCT] expression )
  The following query produces a list of products and a collection of order line quantities per each product:  
   
 ```sql  
-select p, GroupPartition(ol.Quantity) from LOB.OrderLines as ol  
-  group by ol.Product as p  
+SELECT p, GroupPartition(ol.Quantity) FROM LOB.OrderLines AS ol
+  GROUP BY ol.Product AS p
 ```  
   
  The following two queries are semantically equal:  
   
 ```sql  
-select p, Sum(GroupPartition(ol.Quantity)) from LOB.OrderLines as ol  
-  group by ol.Product as p  
-select p, Sum(ol.Quantity) from LOB.OrderLines as ol  
+SELECT p, Sum(GroupPartition(ol.Quantity)) FROM LOB.OrderLines AS ol
+  GROUP BY ol.Product AS p
+SELET p, Sum(ol.Quantity) FROM LOB.OrderLines AS ol
   group by ol.Product as p  
 ```  
   
  The `GROUPPARTITION` operator can be used in conjunction with user-defined aggregate functions.  
   
- `GROUPPARTITION` is a special aggregate operator that holds a reference to the grouped input set. This reference can be used anywhere in the query where GROUP BY is in scope. For example,  
+`GROUPPARTITION` is a special aggregate operator that holds a reference to the grouped input set. This reference can be used anywhere in the query where GROUP BY is in scope. For example:
   
 ```sql  
-select p, GroupPartition(ol.Quantity) from LOB.OrderLines as ol group by ol.Product as p  
+SELECT p, GroupPartition(ol.Quantity) FROM LOB.OrderLines AS ol GROUP BY ol.Product AS p
 ```  
   
- With a regular GROUP BY, the results of the grouping are hidden. You can only use the results in an aggregate function. In order to see the results of the grouping, you have to correlate the results of the grouping and the input set by using a subquery. The following two queries are equivalent:  
+ With a regular `GROUP BY`, the results of the grouping are hidden. You can only use the results in an aggregate function. In order to see the results of the grouping, you have to correlate the results of the grouping and the input set by using a subquery. The following two queries are equivalent:  
   
 ```sql  
-select p, (select q from GroupPartition(ol.Quantity) as q) from LOB.OrderLines as ol group by ol.Product as p  
-select p, (select ol.Quantity as q from LOB.OrderLines as ol2 where ol2.Product = p) from LOB.OrderLines as ol group by ol.Product as p  
+SELET p, (SELECT q FROM GroupPartition(ol.Quantity) AS q) FROM LOB.OrderLines AS ol GROUP BY ol.Product AS p
+SELECT p, (SELECT ol.Quantity AS q FROM LOB.OrderLines AS ol2 WHERE ol2.Product = p) FROM LOB.OrderLines AS ol GROUP BY ol.Product AS p
 ```  
   
  As seen from the example, the GROUPPARTITION aggregate operator makes it easier to get a reference to the input set after the grouping.  
@@ -55,9 +55,9 @@ select p, (select ol.Quantity as q from LOB.OrderLines as ol2 where ol2.Product 
  For instance all of the following input expressions to the group partition are valid:  
   
 ```sql  
-select groupkey, GroupPartition(b) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  
-select groupkey, GroupPartition(1) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  
-select groupkey, GroupPartition(a + b) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  
+SELECT groupkey, GroupPartition(b) FROM {1,2,3} AS a INNER JOIN {4,5,6} AS b ON true GROUP BY a AS groupkey
+SELECT groupkey, GroupPartition(1) FROM {1,2,3} AS a INNER JOIN {4,5,6} AS b ON true GROUP BY a AS groupkey
+SELECT groupkey, GroupPartition(a + b) FROM {1,2,3} AS a INNER JOIN {4,5,6} AS b ON true GROUP BY a AS groupkey
 select groupkey, GroupPartition({a + b}) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  
 select groupkey, GroupPartition({42}) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  
 select groupkey, GroupPartition(b > a) from {1,2,3} as a inner join {4,5,6} as b on true group by a as groupkey  

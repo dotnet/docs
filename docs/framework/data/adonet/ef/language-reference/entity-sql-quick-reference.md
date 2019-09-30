@@ -71,8 +71,8 @@ DATETIME '2006-12-25 01:01'
  Example:  
   
 ```sql  
-SELECT VALUE row (product.ProductID as ProductID, product.Name   
-    as ProductName) FROM AdventureWorksEntities.Product AS product  
+SELECT VALUE row (product.ProductID AS ProductID, product.Name
+    AS ProductName) FROM AdventureWorksEntities.Product AS product
 ```  
   
  Output:  
@@ -145,7 +145,7 @@ SELECT REF(o) AS OrderID FROM Orders AS o
   
 ```sql  
 SELECT VALUE REF(p).Name FROM   
-    AdventureWorksEntities.Product as p  
+    AdventureWorksEntities.Product AS p
 ```  
   
  Output:  
@@ -164,7 +164,7 @@ SELECT VALUE REF(p).Name FROM
   
 ```sql  
 SELECT VALUE DEREF(REF(p)).Name FROM   
-    AdventureWorksEntities.Product as p  
+    AdventureWorksEntities.Product AS p
 ```  
   
  Output:  
@@ -183,7 +183,7 @@ SELECT VALUE DEREF(REF(p)).Name FROM
   
 ```sql  
 SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))   
-    FROM AdventureWorksEntities.Product as p  
+    FROM AdventureWorksEntities.Product AS p
 ```  
   
  Output:  
@@ -203,7 +203,7 @@ SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))
  Example:  
   
 ```sql  
-SELECT Length(c. FirstName) As NameLen FROM   
+SELECT Length(c. FirstName) AS NameLen FROM
     AdventureWorksEntities.Contact AS c   
     WHERE c.ContactID BETWEEN 10 AND 12  
 ```  
@@ -222,7 +222,7 @@ SELECT Length(c. FirstName) As NameLen FROM
  Example:  
   
 ```sql  
-SELECT SqlServer.LEN(c.EmailAddress) As EmailLen FROM   
+SELECT SqlServer.LEN(c.EmailAddress) AS EmailLen FROM
     AdventureWorksEntities.Contact AS c WHERE   
     c.ContactID BETWEEN 10 AND 12  
 ```  
@@ -256,7 +256,7 @@ using SqlServer; LOWER('AA');
  Example:  
   
 ```sql  
-SELECT c.ContactID as ID, c.LastName as Name FROM   
+SELECT c.ContactID as ID, c.LastName AS Name FROM
     AdventureWorks.Contact AS c ORDER BY c.ContactID SKIP 9 LIMIT 3;  
 ```  
   
@@ -274,7 +274,7 @@ SELECT c.ContactID as ID, c.LastName as Name FROM
  Example:  
   
 ```sql  
-SELECT VALUE name FROM AdventureWorksEntities.Product as P   
+SELECT VALUE name FROM AdventureWorksEntities.Product AS P
     GROUP BY P.Name HAVING MAX(P.ListPrice) > 5  
 ```  
   
@@ -315,7 +315,7 @@ SELECT a.AddressID, (SELECT VALUE DEREF(v) FROM
  Example:  
   
 ```sql  
-SELECT VALUE p.Name FROM AdventureWorksEntities.Product as p  
+SELECT VALUE p.Name FROM AdventureWorksEntities.Product AS p
 ```  
   
  Output:  

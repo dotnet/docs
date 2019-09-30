@@ -22,7 +22,7 @@ Specifies a search condition for a group or an aggregate.
 > [!NOTE]
 > HAVING can be used only with the [SELECT](select-entity-sql.md) statement. When [GROUP BY](group-by-entity-sql.md) is not used, HAVING behaves like a WHERE clause.  
   
- The HAVING clause works like the WHERE clause except that it is applied after the GROUP BY operation. This means that the HAVING clause can only make references to grouping aliases and aggregates, as illustrated in the following example.  
+The HAVING clause works like the WHERE clause except that it is applied after the GROUP BY operation. This means that the HAVING clause can only make references to grouping aliases and aggregates, as illustrated in the following example:
   
 ```sql  
 SELECT Name, SUM(o.Price * o.Quantity) AS Total FROM orderLines AS o GROUP BY o.Product AS Name  

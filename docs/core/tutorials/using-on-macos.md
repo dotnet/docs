@@ -207,7 +207,7 @@ dotnet run -p app/app.csproj
 
 Set a breakpoint at the `WriteLine` statement in the `Main` method. Do this by either pressing the <kbd>F9</kbd> key when the cursor is over the `WriteLine` line or by clicking the mouse in the left margin on the line where you want to set the breakpoint. A red circle will appear in the margin next to the line of code. When the breakpoint is reached, code execution will stop *before* the breakpoint line is executed.
 
-Open the debugger tab by selecting the Debug icon in the Visual Studio Code toolbar, selecting **View > Debug** from the menu bar, or using the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>SHIFT</kbd>+<kbd>D</kbd>:
+Open the debugger tab by selecting the Debug icon in the Visual Studio Code toolbar, selecting **View > Debug** from the menu bar, or using the keyboard shortcut <kbd>&#8679;</kbd><kbd>&#8984;</kbd><kbd>D</kbd>:
 
 ![Visual Studio Code Debugger](./media/using-on-macos/visual-studio-code-debugger.png)
 

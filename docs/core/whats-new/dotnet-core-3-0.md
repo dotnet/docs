@@ -179,7 +179,7 @@ To compile your project as ReadyToRun, do the following:
 01. Publish a self-contained app. For example, this command creates a self-contained app for the 64-bit version of Windows:
 
     ```dotnetcli
-    dotnet publish -c Release -r win-x64 --self-contained true
+    dotnet publish -c Release -r win-x64
     ```
 
 ### Cross platform/architecture restrictions

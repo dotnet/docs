@@ -112,11 +112,7 @@ For more information, see the [Samples Readme](https://github.com/dotnet/samples
 
 ## The C# interactive experience
 
-Short code samples in C# can use the `csharp-interactive` language tag to 
-specify a C# sample that runs in the browser. (Inline code samples use the
-`csharp-interactive` tag, for snippets included from source, use the
-`code-csharp-interactive` tag.) These code samples
-display a code window and an output window in the article. The output window displays any output from
+Short code samples in C# can use the `csharp-interactive` language tag to specify a C# sample that runs in the browser. (Inline code samples use the `csharp-interactive` tag, for snippets included from source, use the `code-csharp-interactive` tag.) These code samples display a code window and an output window in the article. The output window displays any output from
 executing the interactive code once the user has run the sample. 
 
 The C# interactive experience changes how we work with samples. Visitors can run the sample

@@ -142,7 +142,7 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 
 1. The model file is stored in the build directory alongside the assembly files of your application. To make it easier to access, create a helper method called `GetAbsolutePath` after the `Configure` method
 
-    [!code-csharp [GetAbsolutePathMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L66-L73)]
+    [!code-csharp [GetAbsolutePathMethod](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L67-L74)]
 
 1. Use the `GetAbsolutePath` method in the `Startup` class constructor to set the `_modelPath`.
 
@@ -150,7 +150,7 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 
 1. Configure the `PredictionEnginePool` for your application in the `ConfigureServices` method:
 
-    [!code-csharp [InitPredEnginePool](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L42)]
+    [!code-csharp [InitPredEnginePool](~/machinelearning-samples/samples/modelbuilder/BinaryClassification_Sentiment_Razor/SentimentRazor/Startup.cs#L42-L43)]
 
 ### Create sentiment analysis handler
 

@@ -29,7 +29,7 @@ Apps are made up from your own services plus additional libraries (dependencies)
 
 Figure 4-22 shows the basic steps that you usually need to carry out when building a Docker app, followed by detailed descriptions of each step.
 
-![Diagram showing the seven steps it takes to creat a containerized app.](./media/docker-apps-inner-loop-workflow/life-cycle-containerized-apps-docker-cli.png)
+![Diagram showing the seven steps it takes to create a containerized app.](./media/docker-apps-inner-loop-workflow/life-cycle-containerized-apps-docker-cli.png)
 
 **Figure 4-22**. High-level workflow for the life cycle for Docker containerized applications using Docker CLI
 

@@ -17,7 +17,7 @@ Performs an arithmetic left shift on the value of a variable or property and ass
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty <<= amount  
 ```  
   

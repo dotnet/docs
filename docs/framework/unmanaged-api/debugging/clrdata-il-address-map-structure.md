@@ -49,13 +49,13 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None   
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
 
-- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
+- [Debugging](index.md)
+- [Debugging Structures](debugging-structures.md)

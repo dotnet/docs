@@ -59,20 +59,20 @@ For Windows apps for Windows 10, you upload .NET Native Code Compilation binarie
 
 For more information about developing apps with .NET Native Code Compilation, see these topics:
 
-- [Getting Started with .NET Native Code Compilation: The Developer Experience Walkthrough](../../../docs/framework/net-native/getting-started-with-net-native.md)
+- [Getting Started with .NET Native Code Compilation: The Developer Experience Walkthrough](getting-started-with-net-native.md)
 
-- [.NET Native and Compilation:](../../../docs/framework/net-native/net-native-and-compilation.md) How .NET Native compiles your project to native code.
+- [.NET Native and Compilation:](net-native-and-compilation.md) How .NET Native compiles your project to native code.
 
-- [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md)
+- [Reflection and .NET Native](reflection-and-net-native.md)
 
-  - [APIs That Rely on Reflection](../../../docs/framework/net-native/apis-that-rely-on-reflection.md)
+  - [APIs That Rely on Reflection](apis-that-rely-on-reflection.md)
 
-  - [Reflection API Reference](../../../docs/framework/net-native/net-native-reflection-api-reference.md)
+  - [Reflection API Reference](net-native-reflection-api-reference.md)
 
-  - [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+  - [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
 
-- [Serialization and Metadata](../../../docs/framework/net-native/serialization-and-metadata.md)
+- [Serialization and Metadata](serialization-and-metadata.md)
 
-- [Migrating Your Windows Store App to .NET Native](../../../docs/framework/net-native/migrating-your-windows-store-app-to-net-native.md)
+- [Migrating Your Windows Store App to .NET Native](migrating-your-windows-store-app-to-net-native.md)
 
-- [.NET Native General Troubleshooting](../../../docs/framework/net-native/net-native-general-troubleshooting.md)
+- [.NET Native General Troubleshooting](net-native-general-troubleshooting.md)

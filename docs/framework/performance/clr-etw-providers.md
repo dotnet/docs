@@ -13,16 +13,16 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
  The runtime provider raises events, depending on which keywords (categories of events) are enabled. For example, you can collect loader events by enabling the `LoaderKeyword` keyword.  
   
- Event Tracing for Windows (ETW) events are logged into a file that has an .etl extension, which can later be post-processed in comma-separated value (.csv) files as needed. For information about how to convert the .etl file to a .csv file, see [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md).  
+ Event Tracing for Windows (ETW) events are logged into a file that has an .etl extension, which can later be post-processed in comma-separated value (.csv) files as needed. For information about how to convert the .etl file to a .csv file, see [Controlling .NET Framework Logging](controlling-logging.md).  
   
 ## The Runtime Provider  
  The runtime provider is the main CLR ETW provider.  
   
  The CLR runtime provider GUID is e13c0d23-ccbc-4e12-931b-d9cc2eee27e4.  
   
- For examples of how to log and view CLR ETW events by using commonly available tools, see [Controlling .NET Framework Logging](../../../docs/framework/performance/controlling-logging.md).  
+ For examples of how to log and view CLR ETW events by using commonly available tools, see [Controlling .NET Framework Logging](controlling-logging.md).  
   
- In addition to using keywords such as `LoaderKeyword`, you may have to enable keywords for logging events that may be raised too frequently. The `StartEnumerationKeyword` and the `EndEnumerationKeyword` keywords enable these events and are summarized in [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).  
+ In addition to using keywords such as `LoaderKeyword`, you may have to enable keywords for logging events that may be raised too frequently. The `StartEnumerationKeyword` and the `EndEnumerationKeyword` keywords enable these events and are summarized in [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).  
   
 ## The Rundown Provider  
  The rundown provider must be turned on for certain special-purpose uses. However, for a majority of users, the runtime provider should suffice.  
@@ -54,7 +54,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
 1. Turn on ETW logging by using the CLR runtime provider:  
   
-    ```  
+    ```console
     xperf -start clr -on e13c0d23-ccbc-4e12-931b-d9cc2eee27e4:0x1CCBD:0x5 -f clr1.etl      
     ```  
   
@@ -62,7 +62,7 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
 2. To stop profiling while the process continues to execute, start the rundown provider to capture the `DCEnd` events:  
   
-    ```  
+    ```console
     xperf -start clrRundown -on A669021C-C450-4609-A035-5AF59AF4DF18:0xB8:0x5 -f clr2.etl      
     ```  
   
@@ -70,14 +70,14 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
 3. Turn off all ETW profiling:  
   
-    ```  
+    ```console
     xperf -stop clrRundown   
     xperf -stop clr  
     ```  
   
 4. Merge the profiles to create one log file:  
   
-    ```  
+    ```console
     xperf -merge clr1.etl clr2.etl merged.etl  
     ```  
   
@@ -87,4 +87,4 @@ The common language runtime (CLR) has two providers: the runtime provider and th
   
 ## See also
 
-- [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md)
+- [ETW Events in the Common Language Runtime](etw-events-in-the-common-language-runtime.md)

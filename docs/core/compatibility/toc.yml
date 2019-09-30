@@ -1,0 +1,36 @@
+- name: Application Compatibility
+  items:
+  - name: Evaluate breaking changes
+    href: index.md
+  - name: Breaking change categories
+    href: categories.md
+  - name: Breaking changes selector
+    href: breaking-changes.md
+  - name: By version
+    items:
+    - name: .NET Framework - .NET Core
+      href: framework-core.md
+    - name: 2.2 - 3.0
+      href: 2.2-3.0.md
+    - name: 3.0 Preview 6 - 3.0 Preview 7
+      href: 3.0.6-3.0.7.md
+    - name: 3.0 Preview 7 - 3.0 Preview 8
+      href: 3.0.7-3.0.8.md
+    - name: 3.0 Preview 8 - 3.0 Preview 9
+      href: 3.0.8-3.0.9.md
+  - name: By category
+    items:
+    - name: CoreFx
+      href: corefx.md
+    - name: Cryptography
+      href: cryptography.md
+    - name: Globalization
+      href: globalization.md
+    - name: Visual Basic
+      href: visualbasic.md
+    - name: ASP.NET Core (on GitHub)
+      href: https://github.com/aspnet/Announcements/issues?q=is%3Aissue+is%3Aopen+label%3A%22Breaking+change%22+label%3A3.0.0
+    - name: Entity Framework Core
+      href: /ef/core/what-is-new/ef-core-3.0/breaking-changes
+    - name: Windows Forms
+      href: winforms.md 

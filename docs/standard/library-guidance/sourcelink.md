@@ -25,6 +25,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 > [!TIP]
 > You can further enhance a developer's debugging experience by adding debugger attributes to your types.
+>
 > * <xref:System.Diagnostics.DebuggerDisplayAttribute> can customize how a class or field is displayed in the debugger variable windows.
 > * <xref:System.Diagnostics.DebuggerStepThroughAttribute> instructs the debugger to step through the code instead of stepping into the code.
 > * <xref:System.Diagnostics.DebuggerBrowsableAttribute> controls whether a member is displayed in the debugger variable windows.

@@ -50,4 +50,4 @@ Registration-free COM interop activates a component without using the Windows re
   
 ## See also
 
-- [How to: Configure .NET Framework-Based COM Components for Registration-Free Activation](../../../docs/framework/interop/configure-net-framework-based-com-components-for-reg.md)
+- [How to: Configure .NET Framework-Based COM Components for Registration-Free Activation](configure-net-framework-based-com-components-for-reg.md)

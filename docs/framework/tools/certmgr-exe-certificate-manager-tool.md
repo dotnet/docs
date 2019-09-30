@@ -19,20 +19,20 @@ ms.author: "ronpet"
 # Certmgr.exe (Certificate Manager Tool)
 The Certificate Manager tool (Certmgr.exe) manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).  
   
- The Certificate Manager is automatically installed with Visual Studio. To start the tool, use the [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ The Certificate Manager is automatically installed with Visual Studio. To start the tool, use the [Command Prompts](developer-command-prompt-for-vs.md).  
   
 > [!NOTE]
 > The Certificate Manager tool (Certmgr.exe) is a command-line utility, whereas Certificates (Certmgr.msc) is a Microsoft Management Console (MMC) snap-in. Because Certmgr.msc is usually found in the Windows System directory, entering `certmgr` at the command line may load the Certificates MMC snap-in even if you have opened the Developer Command Prompt for Visual Studio. This occurs because the path to the snap-in precedes the path to the Certificate Manager tool in the PATH environment variable. If you encounter this problem, you can execute Certmgr.exe commands by specifying the path to the executable.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
- For an overview of X.509 certificates, see [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ For an overview of X.509 certificates, see [Working with Certificates](../wcf/feature-details/working-with-certificates.md).  
   
  At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
       certmgr [/add | /del | /put] [options]  
 [/s[/r registryLocation]] [sourceStorename]  
 [/s[/r registryLocation]] [destinationStorename]  
@@ -86,53 +86,53 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
  [!code-csharp[Tools.CertMgr#1](../../../samples/snippets/csharp/VS_Snippets_CLR/tools.certmgr/cs/storenames1.cs#1)]
  [!code-vb[Tools.CertMgr#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/tools.certmgr/vb/storenames1.vb#1)]  
   
- For more information about certificates, see [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ For more information about certificates, see [Working with Certificates](../wcf/feature-details/working-with-certificates.md).  
   
 ## Examples  
  The following command displays a default system store called `my` with verbose output.  
   
-```  
+```console  
 certmgr /v /s my  
 ```  
   
  The following command adds all the certificates in a file called `myFile.ext` to a new file called `newFile.ext`.  
   
-```  
+```console  
 certmgr /add /all /c myFile.ext newFile.ext  
 ```  
   
  The following command adds the certificate in a file named `testcert.cer` to the `my` system store.  
   
-```  
+```console  
 certmgr /add /c testcert.cer /s my  
 ```  
   
  The following command adds the certificate in a file named `TrustedCert.cer` to the root certificate store.  
   
-```  
+```console  
 certmgr /c /add TrustedCert.cer /s root  
 ```  
   
  The following command saves a certificate with the common name `myCert` in the `my` system store to a file called `newCert.cer`.  
   
-```  
+```console  
 certmgr /add /c /n myCert /s my newCert.cer  
 ```  
   
  The following command deletes all CTLs in the `my` system store and saves the resulting store to a file called `newStore.str`.  
   
-```  
+```console  
 certmgr /del /all /ctl /s my newStore.str  
 ```  
   
  The following command saves a certificate in the `my` system store in the file `newFile`. You will be prompted to enter the certificate number from `my` to put in `newFile`.  
   
-```  
+```console  
 certmgr /put /c /s my newFile  
 ```  
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
+- [Tools](index.md)
 - [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

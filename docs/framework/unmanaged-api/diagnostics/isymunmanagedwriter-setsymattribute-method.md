@@ -23,7 +23,7 @@ Defines a custom attribute based upon its name. These attributes are held in the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSymAttribute(  
     [in] mdToken parent,  
     [in] const WCHAR *name,  

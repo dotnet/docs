@@ -40,7 +40,7 @@ The steps used in this tutorial to migrate to .NET Core are:
 
 ## About the sample
 
-This article references the [Bean Trader sample app](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader) because it uses a variety of dependencies similar to those real-world WPF apps might have. The app isn't large but is meant to be a step up from 'Hello World' in terms of complexity. The app will demonstrate some issues users may encounter while porting real applications. The app communicates with a WCF service so, in order for it to run properly, you'll also need to run the BeanTraderServer project (available in the same GitHub repository) and make sure the BeanTraderClient's configuration points at the correct endpoint (by default, the sample assumes the server is running on the same machine at `http://localhost:8090`, which will be true if you just launch **BeanTraderServer** locally).
+This article references the [Bean Trader sample app](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader) because it uses a variety of dependencies similar to those real-world WPF apps might have. The app isn't large but is meant to be a step up from 'Hello World' in terms of complexity. The app demonstrates some issues users may encounter while porting real applications. The app communicates with a WCF service, so for it to run properly, you'll also need to run the BeanTraderServer project (available in the same GitHub repository) and make sure the BeanTraderClient's configuration points at the correct endpoint. (By default, the sample assumes the server is running on the same machine at *http://localhost:8090*, which will be true if you just launch **BeanTraderServer** locally.)
 
 Keep in mind that this sample app is meant to demonstrate .NET Core porting challenges and solutions. It's not meant to demonstrate WPF best practices. In fact, it deliberately includes some anti-patterns to make sure you come across at least a couple of interesting challenges while porting.
 
@@ -50,7 +50,7 @@ The primary challenge of migrating a .NET Framework app to .NET Core is that its
 
 ### Upgrade to `<PackageReference>` NuGet references
 
-Older .NET Framework projects typically list their NuGet dependencies in a *packages.config* file. The new SDK-style project file format references NuGet packages differently, though. It uses [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) elements in the *csproj* file itself (rather than in a separate config file) to reference NuGet dependencies.
+Older .NET Framework projects typically list their NuGet dependencies in a *packages.config* file. The new SDK-style project file format references NuGet packages as [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) elements in the csproj file itself rather than in a separate config file.
 
 When migrating, there are two advantages to using `<PackageReference>`-style references:
 

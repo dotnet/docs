@@ -8,7 +8,7 @@ The XML Serializer Generator creates an XML serialization assembly for types in 
   
 ## Syntax  
   
-```  
+```console  
 sgen [options]  
 ```  
   
@@ -43,7 +43,7 @@ sgen [options]
 ## Examples  
  The following command creates an assembly named Data.XmlSerializers.dll for serializing all the types contained in the assembly named Data.dll.  
   
-```  
+```console  
 sgen Data.dll   
 ```  
   

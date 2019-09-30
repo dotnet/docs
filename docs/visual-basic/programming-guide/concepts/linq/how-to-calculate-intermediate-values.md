@@ -26,7 +26,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 55.92  
 73.50  
 89.99  
@@ -60,7 +60,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 55.92  
 73.50  
 89.99  

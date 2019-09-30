@@ -23,7 +23,7 @@ The steps used in this tutorial to migrate to .NET Core are:
 
 01. Migrate the project file to the new SDK-style format:
 
-    01. Choose whether to target both .NET Core and .NET Framework or only .NET Core.
+    01. Choose whether to target both .NET Core and .NET Framework, or only .NET Core.
     01. Copy relevant project file properties and items to the new project file.
 
 01. Fix build issues:
@@ -36,11 +36,11 @@ The steps used in this tutorial to migrate to .NET Core are:
 01. Runtime testing:
 
     01. Confirm the ported app works as expected.
-    01. Beware of NotSupportedExceptions.
+    01. Beware of <xref:System.NotSupportedException> exceptions.
 
 ## About the sample
 
-This article references the [Bean Trader sample app](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader) because it uses a variety of dependencies similar to those real-world WPF apps might have. The app isn't large but is meant to be a step up from 'Hello World' in terms of complexity. The app will demonstrate some issues users may encounter while porting real applications. The app communicates with a WCF service so, in order for it to run properly, so you'll also need to run the BeanTraderServer project (available in the same GitHub repository) and make sure the BeanTraderClient's configuration points at the correct endpoint (by default, the sample assumes the server is running on the same machine at *http://localhost:8090*, which will be true if you just launch **BeanTraderServer** locally).
+This article references the [Bean Trader sample app](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader) because it uses a variety of dependencies similar to those real-world WPF apps might have. The app isn't large but is meant to be a step up from 'Hello World' in terms of complexity. The app will demonstrate some issues users may encounter while porting real applications. The app communicates with a WCF service so, in order for it to run properly, so you'll also need to run the BeanTraderServer project (available in the same GitHub repository) and make sure the BeanTraderClient's configuration points at the correct endpoint (by default, the sample assumes the server is running on the same machine at `http://localhost:8090`, which will be true if you just launch **BeanTraderServer** locally).
 
 Keep in mind that this sample app is meant to demonstrate .NET Core porting challenges and solutions. It's not meant to demonstrate WPF best practices. In fact, it deliberately includes some anti-patterns to make sure you come across at least a couple interesting challenges while porting.
 
@@ -50,7 +50,7 @@ The primary challenge with migrating a .NET Framework app to .NET Core is that i
 
 ### Upgrade to `<PackageReference>` NuGet references
 
-Older .NET Framework projects typically list their NuGet dependencies in a packages.config file. The new SDK-style project file format references NuGet packages differently, though. It uses [`<PackageReference>`](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files) elements in the csproj file itself (rather than in a separate config file) to reference NuGet dependencies.
+Older .NET Framework projects typically list their NuGet dependencies in a packages.config file. The new SDK-style project file format references NuGet packages differently, though. It uses [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) elements in the csproj file itself (rather than in a separate config file) to reference NuGet dependencies.
 
 When migrating, there are two advantages to using `<PackageReference>`-style references:
 
@@ -67,13 +67,13 @@ A dialog will appear showing calculated top-level NuGet dependencies and asking 
 
 ### Review NuGet packages
 
-Now that it's easy to see the top-level NuGet packages the project depends on, you can review whether those packages will be available on .NET Core or not.
+Now, that is easy to see the top-level NuGet packages the project depends on, you can review whether those packages are available on .NET Core or not.
 
-You can know whether a package supports .NET Core by looking at its dependencies on nuget.org. The community-created fuget.org site also shows this information prominently at the top of the package information page.
+You can know whether a package supports .NET Core by looking at its dependencies on nuget.org. The community-created fuget.org site, which shows this information prominently at the top of the package information page.
 
-When targeting .NET Core 3, any packages targeting .NET Core or .NET Standard should work (since .NET Core implements the .NET Standard surface area). In some cases, the specific version of a package that's used won't target .NET Core or .NET Standard but newer versions will. In this case, you should consider upgrading to the latest version of the package.
+When targeting .NET Core 3.0, any packages targeting .NET Core or .NET Standard should work (since .NET Core implements the .NET Standard surface area). In some cases, the specific version of a package that's used won't target .NET Core or .NET Standard but newer versions will. In this case, you should consider upgrading to the latest version of the package.
 
-You can use packages targeting .NET Framework, as well, but that introduces some risk. .NET Core to .NET Framework dependencies are allowed because .NET Core and .NET Framework surface areas are similar enough that such dependencies *often* work. However, if the package tries to use a .NET API that is not present in .NET Core, you'll encounter a runtime exception. Because of that, you should only reference .NET Framework packages when no other options are available and understand that doing so imposes a test burden.
+You can use packages targeting .NET Framework, as well, but that introduces some risk. .NET Core to .NET Framework dependencies are allowed because .NET Core and .NET Framework surface areas are similar enough that such dependencies *often* work. However, if the package tries to use a .NET API that isn't present in .NET Core, you'll encounter a runtime exception. Because of that, you should only reference .NET Framework packages when no other options are available and understand that doing so imposes a test burden.
 
 If there are packages referenced that don't target .NET Core or .NET Standard, you'll have to think about other alternatives:
 

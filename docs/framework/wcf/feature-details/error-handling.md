@@ -45,7 +45,7 @@ With an IErrorHandler, you can explicitly control the behavior of your applicati
 
 One can install a custom error handler by adding it to the ErrorHandlers property of the channel dispatchers for your service.  It is possible to have more than one error handler and they are called in the order they are added to this collection.
 
-IErrorHandler.ProvideFault controls the fault message that is sent to the client. This method is called regardless of the type of the exception thrown by an operation in your service. If no operation is performed here, WCF assumes its default behaviour and continues as if there were no custom error handlers in place.
+IErrorHandler.ProvideFault controls the fault message that is sent to the client. This method is called regardless of the type of the exception thrown by an operation in your service. If no operation is performed here, WCF assumes its default behavior and continues as if there were no custom error handlers in place.
 
 One area that you could perhaps use this approach is when you want to create a central place for converting exceptions to faults before they are sent to the client (ensuring that the instance is not disposed and the channel is not moved to the Faulted state).
 

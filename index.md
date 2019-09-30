@@ -5,7 +5,7 @@ hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 ms.custom: "updateeachrelease"
-ms.date: "09/23/2019"
+ms.date: "09/29/2019"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -822,6 +822,49 @@ ms.date: "09/23/2019"
                                                 <div class="cardText">
                                                     <h3>.NET for Apache Spark</h3>
                                                     <p>Process batches of data, real-time streams, machine learning, and ad-hoc query anywhere you write .NET code.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#architecture">Architecture</a>
+                        <ul id="architecture" class="cardsC">
+                            <li>
+                                <a href="/dotnet/architecture/microservices">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/microservices.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>.NET Microservices: Architecture for Containerized .NET Applications</h3>
+                                                    <p>This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/architecture/cloud-native">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/cloud-native.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Architecting Cloud Native .NET Applications for Azure</h3>
+                                                    <p><strong>Preview</strong> This guide defines cloud native, introduces a sample app built using cloud-native principles, and covers topics common to most cloud-native applications.</p>
                                                 </div>
                                             </div>
                                         </div>

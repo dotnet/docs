@@ -37,6 +37,7 @@ As you can see, Netflix, Uber, and WeChat expose systems that consist of hundred
 The speed and agility of cloud native come about from a number of factors. Foremost is cloud infrastructure. Five additional foundational pillars shown in Figure 1-3 also provide the bedrock for cloud-native systems.
 
 ![Cloud-native foundational pillars](./media/cloud-native-foundational-pillars.png)
+
 **Figure 1-3**. Cloud-native foundational pillars
 
 Let’s take some time to better understand the significance of each pillar.
@@ -245,6 +246,7 @@ Cloud-native systems depend upon many different ancillary resources, such as dat
  Figure 1-7 shows many common backing services that cloud-native systems consume.
 
 ![Common backing services](./media/common-backing-services.png)
+
 **Figure 1-7**. Common backing services
 
 Backing services promote the "Statelessness" principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
@@ -293,9 +295,10 @@ The [Twelve-Factor Application](https://12factor.net/), discussed earlier, calls
 
 Modern CI/CD systems help fulfill this principle. They provide separate deployment steps and help ensure consistent and quality code that's readily available to users. 
 
-Figure 1.8 shows the separation across the deployment process.
+Figure 1-8 shows the separation across the deployment process.
 
 ![Deployments Steps in CI/CD Pipeline](./media/build-release-run-pipeline.png)
+
 **Figure 1-8**. Deployment steps in a CI/CD Pipeline
 
 In the previous figure, pay special attention to separation of tasks. 

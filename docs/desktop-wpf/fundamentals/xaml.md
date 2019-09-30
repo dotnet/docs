@@ -1,5 +1,5 @@
 ---
-title: XAML overview (WPF) - .NET Desktop
+title: XAML overview - WPF
 description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET Core.
 author: thraka
 ms.date: 08/08/2019

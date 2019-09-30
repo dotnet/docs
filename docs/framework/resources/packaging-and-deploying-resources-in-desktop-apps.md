@@ -50,7 +50,7 @@ There are several advantages to this model:
 When you package your application's resources, you must name them using the resource naming conventions that the common language runtime expects. The runtime identifies a resource by its culture name. Each culture is given a unique name, which is usually a combination of a two-letter, lowercase culture name associated with a language and, if required, a two-letter, uppercase subculture name associated with a country or region. The subculture name follows the culture name, separated by a dash (-). Examples include ja-JP for Japanese as spoken in Japan, en-US for English as spoken in the United States, de-DE for German as spoken in Germany, or de-AT for German as spoken in Austria. See the **Language tag** column in the [list of language/region names supported by Windows](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47).
 
 > [!NOTE]
-> There are some exceptions for the two-letter culture names such as `zh-Hans` for Chienese (Simplieied).
+> There are some exceptions for the two-letter culture names such as `zh-Hans` for Chienese (Simplified).
 
 > [!NOTE]
 > For information about creating resource files, see [Creating Resource Files](creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](creating-satellite-assemblies-for-desktop-apps.md).

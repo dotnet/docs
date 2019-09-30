@@ -13,9 +13,9 @@ ms.assetid: 4cf36786-b89a-40e2-a0f1-86bb9b783343
 # \<switches> Element
 Contains trace switches and the level where the trace switches are set.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<switches>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<switches>**  
   
 ## Syntax  
   
@@ -66,3 +66,4 @@ Contains trace switches and the level where the trace switches are set.
 - <xref:System.Diagnostics.TraceSwitch>
 - <xref:System.Diagnostics.BooleanSwitch>
 - [Trace and Debug Settings Schema](index.md)
+ 

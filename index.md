@@ -5,7 +5,7 @@ hide_bc: true
 title: .NET Documentation
 description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 ms.custom: "updateeachrelease"
-ms.date: "09/29/2019"
+ms.date: "09/30/2019"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -845,7 +845,96 @@ ms.date: "09/29/2019"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>.NET Microservices: Architecture for Containerized .NET Applications</h3>
-                                                    <p>This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/architecture/containerized-lifecycle">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/devops.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Containerized Docker Application Lifecycle with Microsoft Platform and Tools</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/architecture/modernize-with-azure-containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/azure-containers.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Modernize existing .NET applications with Azure cloud and Windows Containers</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/architecture/modernize-with-azure-containers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/azure-containers.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Modernize existing .NET applications with Azure cloud and Windows Containers</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/architecture/modern-web-apps-azure">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/tools.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Architect Modern Web Applications with ASP.NET Core and Azure</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/architecture/serverless">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/serverless.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Serverless apps: Architecture, patterns, and Azure implementation</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -863,8 +952,43 @@ ms.date: "09/29/2019"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Architecting Cloud Native .NET Applications for Azure</h3>
-                                                    <p><strong>Preview</strong> This guide defines cloud native, introduces a sample app built using cloud-native principles, and covers topics common to most cloud-native applications.</p>
+                                                    <h3><strong>Preview</strong> Architecting Cloud Native .NET Applications for Azure</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/architecture/blazor-for-web-forms-developers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/blazor.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3><strong>Preview</strong> Blazor for ASP.NET Web Forms Developers</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/dotnet/architecture/grpc-for-wcf-developers">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="/dotnet/images/hub/grpc.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3><strong>Preview</strong> ASP.NET Core gRPC for WCF Developers</h3>
                                                 </div>
                                             </div>
                                         </div>

@@ -38,7 +38,7 @@ csc /r:acme.dll example.cs
 
 This creates an executable assembly named `example.exe`, which, when run, produces the output:
 
-```output
+```console
 100
 10
 1

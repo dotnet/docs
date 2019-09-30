@@ -67,7 +67,7 @@ A dialog will appear showing calculated top-level NuGet dependencies and asking 
 
 ### Review NuGet packages
 
-Now, that is easy to see the top-level NuGet packages the project depends on, you can review whether those packages are available on .NET Core or not.
+Now that is easy to see the top-level NuGet packages the project depends on, you can review whether those packages are available on .NET Core or not.
 
 You can know whether a package supports .NET Core by looking at its dependencies on nuget.org. The community-created fuget.org site, which shows this information prominently at the top of the package information page.
 

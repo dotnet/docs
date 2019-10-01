@@ -13,7 +13,7 @@ This tutorial expects you to have a machine you can use for development. The .NE
 
 ## Explore integer math
 
-Create a directory named *numbers-quickstart*. Make that it's the current directory and run `dotnet new console -n NumbersInCSharp -o .`.
+Create a directory named *numbers-quickstart*. Make that the current directory and run `dotnet new console -n NumbersInCSharp -o .`.
 
 Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following:
 

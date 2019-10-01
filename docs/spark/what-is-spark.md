@@ -9,7 +9,7 @@ ms.custom: mvc
 
 # What is Apache Spark?
 
-[Apache Spark](https://spark.apache.org/) is an open-source parallel processing framework that supports in-memory processing to boost the performance of applications that analyze big data. A Spark job can repeatedly query data that is loaded and cached into memory, which is much faster than disk-based alternatives. Spark is a general purpose distributed processing engine that can be used in many big data scenarios, including:
+[Apache Spark](https://spark.apache.org/) is an open-source parallel processing framework that supports in-memory processing to boost the performance of applications that analyze big data. A Spark job can repeatedly query data that is loaded and cached into memory, which is much faster than disk-based alternatives. Spark is a general-purpose distributed processing engine that can be used in many big data scenarios, including:
 
 - Extract, transform, and load (ETL) functions
 - Real-time data stream processing through Spark Streaming
@@ -32,7 +32,7 @@ The driver consists of your program, like a C# console app, and a Spark session.
 
 ### Executors
 
-Each executor, or worker node, receives a task from the driver and executes that task.
+Each executor, or worker node, receives a task from the driver and executes that task. The executors reside on an entity known as a cluster.
 
 ### Cluster manager
 
@@ -55,14 +55,16 @@ Apache Spark supports the following programming languages:
 
 ## Spark APIs
 
-- Spark Scala API
-- Spark Java API
-- Spark Python API
-- Spark R API
-- Spark SQL, built-in functions
+Apache Spark supports the following APIs:
+
+- [Spark Scala API](https://spark.apache.org/docs/2.2.0/api/scala/index.html)
+- [Spark Java API](https://spark.apache.org/docs/2.2.0/api/java/index.html)
+- [Spark Python API](https://spark.apache.org/docs/2.2.0/api/python/index.html)
+- [Spark R API](https://spark.apache.org/docs/2.2.0/api/R/index.html)
+- [Spark SQL](https://spark.apache.org/docs/latest/api/sql/index.html), built-in functions
 
 ## Next steps
 
-Learn how you can use Apache Spark in your .NET application.
+Learn how you can use Apache Spark in your .NET application. With .NET for Apache Spark, developers with .NET experience and business logic can write big data queries in C# and F#.
 > [!div class="nextstepaction"]
 > [What is .NET for Apache Spark](what-is-apache-spark-dotnet.md)

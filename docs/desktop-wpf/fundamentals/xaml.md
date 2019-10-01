@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "attribute syntax [XAML]"
 ---
 
-# XAML overview for WPF
+# XAML overview in WPF
 
 This article describes the features of the XAML language and demonstrates how you can use XAML to write Windows Presentation Foundation (WPF) applications. This article specifically describes XAML as implemented by WPF. XAML itself is a larger language concept than WPF.
 

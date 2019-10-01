@@ -3,7 +3,7 @@ title: Diagnostics tools overview - .NET Core
 description: An overview of the tools and techniques available to diagnose .NET Core applications.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 08/05/2019
+ms.date: 10/01/2019
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
@@ -25,15 +25,15 @@ This article helps you find the various tools you need.
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
 
-## .NET Core dotnet diagnostic global command-line tools
+## .NET Core dotnet diagnostic Global Tools
 
 ### dotnet-counters
 
-[dotnet-counters](dotnet-counters.md) is a performance monitoring tool for ad-hoc health monitoring or first-level performance investigation. It can observe performance counter values that are published via the `EventCounter` [API](https://docs.microsoft.com/dotnet/api/system.diagnostics.tracing.eventcounter). For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application.
+[dotnet-counters](dotnet-counters.md) is a performance monitoring tool for first-level health monitoring and performance investigation. It observes performance counter values published via the <xref:System.Diagnostics.Tracing.EventCounter> API. For example, you can quickly monitor things like the CPU usage or the rate of exceptions being thrown in your .NET Core application.
 
 ### dotnet-dump
 
-The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows and Linux core dumps all without any native debugger.
+The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows and Linux core dumps without a native debugger.
 
 ### dotnet-trace
 

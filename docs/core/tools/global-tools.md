@@ -33,6 +33,8 @@ You may also find tool recommendations in blog posts or in the [natemcmaster/dot
 
 You can also see the source code for the Global Tools created by the ASP.NET team at the [aspnet/DotNetTools](https://github.com/aspnet/DotNetTools/) GitHub repository.
 
+See also [.NET Core dotnet diagnostic Global Tools](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
+
 ## Check the author and statistics
 
 Since .NET Core Global Tools run in full trust and are generally installed on your path, they can be very powerful. Don't download tools from people you don't trust.

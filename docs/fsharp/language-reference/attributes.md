@@ -25,7 +25,7 @@ The *arguments* are the arguments to the constructor for the attribute type. If 
 property-name = property-value
 ```
 
-Such property initializations can be in any order, but they must follow any positional arguments. Following is an example of an attribute that uses positional arguments and property initializations:
+Such property initializations can be in any order, but they must follow any positional arguments. The following is an example of an attribute that uses positional arguments and property initializations:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6202.fs)]
 

@@ -13,7 +13,7 @@ Markup extensions are a XAML technique for obtaining a value that is neither a p
 When a markup extension usage is accessed, the XAML object writer can provide services to a custom <xref:System.Windows.Markup.MarkupExtension> class through a service connection point in the <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A?displayProperty=nameWithType> override. The services can be used to obtain context about the usage, specific capabilities of the object writer, XAML schema context, and so on.
 
 <a name="XAML_Defined_Markup_Extensions"></a>
-## XAML-Defined markup extensions
+## XAML-defined markup extensions
 
 Several markup extensions are implemented by .NET Framework XAML Services for XAML language support. These markup extensions correspond to parts of the specification of XAML as a language. These are typically identifiable by the `x:` prefix in the syntax as seen in common usage. The .NET Framework XAML Services implementations for these XAML language elements all derive from the  <xref:System.Windows.Markup.MarkupExtension> base class.
 

@@ -27,7 +27,7 @@ This language support relies on two new types and two new operators:
 
 Let's start with the rules for indices. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence[sequence.Length - n]`.
 
-```csharp-interactive
+```csharp
 string[] words = new string[]
 {
                 // index from start    index from end

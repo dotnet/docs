@@ -19,7 +19,7 @@ The <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object provides a way to
   
 1. Add a text file named testfile.txt to your project. Add the following content to the text file.  
   
-    ```  
+    ```text  
     Err  1001 Cannot access resource.  
     Err  2014 Resource not found.  
     Acc  10/03/2009User1      Administrator.  

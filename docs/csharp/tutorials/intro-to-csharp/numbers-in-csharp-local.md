@@ -117,7 +117,7 @@ the operation or operations you want performed first. Add the following
 lines and run again:
 
 ```csharp
-d = (a  + b) * c;
+d = (a + b) * c;
 Console.WriteLine(d);
 ```
 

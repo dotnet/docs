@@ -32,7 +32,7 @@ The following example shows how you would create a button as part of a UI. This 
 </StackPanel>
 ```
 
-<!--For more information, see [XAML overview (WPF)][for-more-info-xaml].-->
+<!--For more information, see [XAML overview (WPF)](../../../framework/wpf/advanced/xaml-overview-wpf.md).-->
 
 ### XAML extensions
 
@@ -48,7 +48,7 @@ For example, the previous XAML code defined a button with the visible content se
 
 WPF provides different markup extensions for XAML such as `{Binding}` for data binding.
 
-<!--For more information, see [Markup Extensions and WPF XAML][for-more-info-markup-ext].-->
+<!--For more information, see [Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).-->
 
 ## Property system
 
@@ -88,7 +88,7 @@ The dependency property is defined as a static member of a dependency object typ
 
 The `Value` property in the example above wraps the dependency property, providing the standard .NET property pattern you're probably used to.
 
-<!--For more information, see [Dependency properties overview][for-more-info-dependency-props].-->
+<!--For more information, see [Dependency properties overview](../../../framework/wpf/advanced/dependency-properties-overview.md).-->
 
 ## Events
 
@@ -98,7 +98,7 @@ A routed event is a CLR event that is backed by an instance of the `RoutedEvent`
 
 The main advantage of the routed event system is that events are "bubbled" up the control element tree looking for a handler. For example, because WPF has a rich content model, you set an image control as the content of a button control. When the mouse is clicked on the image control, you would expect it to consume the mouse events, and thus break the hit-tests that cause a button to invoke the `Click` event. In a traditional CLR eventing model, you would work around this limitation by attaching the same handler to both the image and the button. But with the routed event system, the mouse events invoked on the image control (like clicking on it) bubble up to the parent button control.
 
-<!--For more information, including other types of event models, see [Events overview][for-more-info-events].-->
+<!--For more information, including other types of event models, see [Events overview](../../../framework/wpf/advanced/routed-events-overview.md).-->
 
 ## Data binding
 
@@ -114,7 +114,7 @@ Data binding can be configured in XAML through the `{Binding}` markup extension.
 </StackPanel>
 ```
 
-<!--For more information, see [Data Binding Overview][for-more-info-databinding].-->
+For more information, see [Data Binding Overview](../data/data-binding-overview).
 
 ## UI components
 
@@ -128,7 +128,7 @@ Another feature of the WPF styling model is the separation of presentation and l
 
 In addition, it's important to understand resources, which are what enable styles and templates to be reused.
 
-<!--For more information, see [Styling and Templating][for-more-info-styling].-->
+For more information, see [Styles and templates](../fundamentals/styles-templates-overview.md).
 
 ## Resources
 
@@ -136,12 +136,4 @@ WPF resources are objects that can be reused in different places in your applica
 
 Every framework-level element (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) has a `Resources` property (which is a <xref:System.Windows.ResourceDictionary> type) that contains defined resources. Since all elements inherit from a framework-level element, all elements can define resources. It's common though to define resources on a root element of a XAML document.
 
-<!--For more information, see [XAML Resources][for-more-info-resources].-->
-
-[for-more-info-markup-ext]: ../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md
-[for-more-info-xaml]: ../../../framework/wpf/advanced/xaml-overview-wpf.md
-[for-more-info-databinding]: ../../../framework/wpf/data/data-binding-overview.md
-[for-more-info-styling]: ../../../framework/wpf/controls/styling-and-templating.md
-[for-more-info-dependency-props]: ../../../framework/wpf/advanced/dependency-properties-overview.md
-[for-more-info-events]: ../../../framework/wpf/advanced/routed-events-overview.md
-[for-more-info-resources]: ../../../framework/wpf/advanced/xaml-resources.md
+<!--For more information, see [XAML Resources](../../../framework/wpf/advanced/xaml-resources.md).-->

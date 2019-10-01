@@ -1,25 +1,25 @@
 ### YamlMime:Landing
 
 title: ML.NET Documentation
-summary: Learn how to use open-source ML.NET to build machine learning solutions and integrate them into applications. Tutorials, code examples, and more show you how.
+summary: Learn how to use open-source ML.NET to build custom machine learning models and integrate them into apps. Tutorials, code examples, and more show you how.
 
 metadata:
   title: ML.NET Documentation - Tutorials, API Reference
-  description: Learn how to use open-source ML.NET to build machine learning solutions and integrate them into applications. Tutorials, code examples, and more show you how.
+  description: Learn how to use open-source ML.NET to build custom machine learning models and integrate them into apps. Tutorials, code examples, and more show you how.
   ms.prod: dotnet-ml
   ms.topic: landing-page
   ms.collection: collection
   author: natke
   ms.author: nakersha
-  ms.date: 09/23/2019
+  ms.date: 10/02/2019
 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
 
-  # Card (optional)
-  - title: About ML.NET
+  # Basics
+  - title: ML.NET Basics
     linkLists:
       - linkListType: overview
         links:
@@ -27,42 +27,47 @@ landingContent:
             url: how-does-mldotnet-work.md
       - linkListType: concept
         links:
-          - text: Machine learning model types
+          - text: Machine learning tasks & algorithms
             url: resources/tasks.md
           - text: How to choose an algorithm
             url: how-to-choose-an-ml-net-algorithm.md
-          - text: Data transformations
-            url: resources/transforms.md
 
-   # Model Builder Card
-  - title: Use Model Builder 
+   # Get started 
+  - title: Get started in 10 minutes 
     linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Model Builder?
-            url: automate-training-with-model-builder.md
       - linkListType: quickstart
         links:
-          - text: Install Model Builder
+          - text: Set up Model Builder in Visual Studio
             url: how-to-guides/install-model-builder.md
-      - linkListType: tutorial
-        links:
-          - text: Predict prices - Model Builder
-            url: tutorials/predict-prices-with-model-builder.md
-          - text: Build a Razor Pages web app to analyze sentiment
-            url: tutorials/sentiment-analysis-model-builder.md
- 
-  # API Card
-  - title: Get started with the API
+          - text: Develop code-first with the API
+            url: xxxxxxxx.md
+          - text: Install CLI on Mac OS, Windows, or Linux
+            url: how-to-guides/install-ml-net-cli.md
+
+ # API Card
+  - title: Tutorials for business scenarios
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Build a TensorFlow image classifier with transfer learning
+          - text: Analyze website comment sentiment (Model Builder)
+            url: tutorials/sentiment-analysis-model-builder.md   
+          - text: Predict prices (Model Builder)
+            url: tutorials/predict-prices-with-model-builder.md                 
+          - text: Categorize support issues (API)
+            url: tutorials/github-issue-classification.md
+          - text: Classify images with TensorFlow (API)
             url: tutorials/image-classification.md
-          - text: Analyze website comment sentiment
-            url: tutorials/sentiment-analysis.md
-          - text: Detect objects in images using ONNX
+          - text: Detect objects in images API)  
             url: tutorials/object-detection-onnx.md
+          - text: Detect anomalies in product sales (API)
+            url: tutorials/sales-anomaly-detection.md
+          - text: Build a movie recommender (API)
+            url: tutorials/movie-recommendation.md  
+
+
+  # API Card
+  - title: How-to guides
+    linkLists:
       - linkListType: how-to-guide
         links:
           - text: Load data from various sources  

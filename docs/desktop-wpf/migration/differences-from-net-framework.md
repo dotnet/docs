@@ -1,5 +1,5 @@
 ---
-title: Differences between .NET Framework and .NET Core WPF - .NET Desktop
+title: Differences between .NET Framework and .NET Core - WPF
 description: Describes the differences between the .NET Framework implementation of Windows Presentation Foundation (WPF) and .NET Core WPF. When migrating your app, you should consider these incompatibilities.
 author: thraka
 ms.date: 09/21/2019
@@ -33,9 +33,9 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 
 | Source Assembly | Target Assembly | Type                |
 | --------------- | --------------- | ------------------- |
-| **WindowsBase.dll** | **System.Security.Permissions.dll** | <xref:System.Security.Permissions.MediaPermission> <br /> <xref:System.Security.Permissions.MediaPermissionAttribute> <br /> <xref:System.Security.Permissions.MediaPermissionAudio> <br /> <xref:System.Security.Permissions.MediaPermissionImage> <br /> <xref:System.Security.Permissions.MediaPermissionVideo> <br /> <xref:System.Security.Permissions.WebBrowserPermission> <br /> <xref:System.Security.Permissions.WebBrowserPermissionAttribute> <br /> <xref:System.Security.Permissions.WebBrowserPermissionLevel> |
-| **System.Xaml.dll** | **System.Security.Permissions.dll** | <xref:System.Xaml.Permissions.XamlLoadPermission> |
-| **System.Xaml.dll** | **System.Windows.Extension.dll**    | <xref:System.Xaml.Permissions.XamlAccessLevel><br/> |
+| *WindowsBase.dll* | *System.Security.Permissions.dll* | <xref:System.Security.Permissions.MediaPermission> <br /> <xref:System.Security.Permissions.MediaPermissionAttribute> <br /> <xref:System.Security.Permissions.MediaPermissionAudio> <br /> <xref:System.Security.Permissions.MediaPermissionImage> <br /> <xref:System.Security.Permissions.MediaPermissionVideo> <br /> <xref:System.Security.Permissions.WebBrowserPermission> <br /> <xref:System.Security.Permissions.WebBrowserPermissionAttribute> <br /> <xref:System.Security.Permissions.WebBrowserPermissionLevel> |
+| *System.Xaml.dll* | *System.Security.Permissions.dll* | <xref:System.Xaml.Permissions.XamlLoadPermission> |
+| *System.Xaml.dll* | *System.Windows.Extension.dll*    | <xref:System.Xaml.Permissions.XamlAccessLevel><br/> |
 
 > [!NOTE]
 > In order to minimize porting friction, the functionality for storing and retrieving information related to the following properties was retained in the `XamlAccessLevel` type.

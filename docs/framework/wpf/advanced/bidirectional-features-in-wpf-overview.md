@@ -172,7 +172,7 @@ This has allowed applications to process numerical values without the need to co
 
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] continues the same tradition, and adds further support for this feature that allows more user control over when and how substitution is used. While this feature is designed for any language, it is particularly useful in bidirectional content where shaping digits for a specific language is usually a challenge for application developers because of the various cultures an application might run on.
 
-The core property controlling how number substitution works in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] is the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> dependency property. The <xref:System.Windows.Media.NumberSubstitution> class specifies how numbers in text are to be displayed. It has three public properties that define its behavior. Following is a summary of each of the properties.
+The core property controlling how number substitution works in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] is the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> dependency property. The <xref:System.Windows.Media.NumberSubstitution> class specifies how numbers in text are to be displayed. It has three public properties that define its behavior. The following is a summary of each of the properties:
 
 **CultureSource:**
 

@@ -114,4 +114,3 @@ You can use Visual Studio to create Windows-based applications that support bi-d
 ## See also
 
 - [Bidirectional Support for ASP.NET Web Applications](https://docs.microsoft.com/previous-versions/aspnet/6eedwbtt(v=vs.100))
-- [Globalizing Windows Forms applications](globalizing-windows-forms.md)

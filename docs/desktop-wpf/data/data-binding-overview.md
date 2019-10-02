@@ -1,5 +1,5 @@
 ---
-title: Data binding in WPF - .NET Desktop
+title: Data binding overview - WPF
 description: Learn about the different data sources you can add to your project in Windows Presentation Foundation for .NET Core. Data sources can be bound to XAML elements to create dynamic applications.
 author: thraka
 ms.date: 09/19/2019
@@ -7,7 +7,7 @@ ms.author: adegeo
 dev_langs: ["csharp", "vb"]
 ---
 
-# Data Binding Overview
+# Data Binding Overview in WPF
 
 Windows Presentation Foundation (WPF) data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of .NET objects and XML. Any <xref:System.Windows.Controls.ContentControl> such as <xref:System.Windows.Controls.Button> and any <xref:System.Windows.Controls.ItemsControl> such as <xref:System.Windows.Controls.ListBox> and <xref:System.Windows.Controls.ListView>, have built-in functionality to enable flexible styling of single data items or collections of data items. Sort, filter, and group views can be generated on top of the data.
 

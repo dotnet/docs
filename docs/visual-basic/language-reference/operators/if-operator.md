@@ -17,7 +17,7 @@ Uses short-circuit evaluation to conditionally return one of two values. The `If
   
 ## Syntax  
   
-```  
+```vb  
 If( [argument1,] argument2, argument3 )  
 ```  
   

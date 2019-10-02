@@ -12,9 +12,9 @@ ms.assetid: 9d663c4b-07b4-4f6f-9b12-efbd3630354f
 # \<defaultProxy> Element (Network Settings)
 Configures the Hypertext Transfer Protocol (HTTP) proxy server.  
   
- \<configuration>  
-\<system.net>  
-\<defaultProxy>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultProxy>**  
   
 ## Syntax  
   

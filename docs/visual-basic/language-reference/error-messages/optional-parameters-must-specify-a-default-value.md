@@ -17,7 +17,7 @@ Optional parameters must provide default values that can be used if no parameter
   
 - Specify default values for optional parameters; for example:  
   
-    ```  
+    ```vb  
     Sub Proc1(ByVal X As Integer,   
           Optional ByVal Y As String = "Default Value")  
        MsgBox("Default argument is: " & Y)  

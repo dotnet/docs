@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "examples [Visual Basic], arrays"
 ms.assetid: 9289aeaa-9626-4698-94a7-1d1fd3702b87
 ---
+
 # How to: Sort An Array in Visual Basic
 This example declares an array of `String` objects named `zooAnimals`, populates it, and then sorts it alphabetically.  
   
@@ -40,7 +41,7 @@ End Sub
 ## See also
 
 - <xref:System.Array.Sort%2A?displayProperty=nameWithType>
-- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
-- [Troubleshooting Arrays](../../../../visual-basic/programming-guide/language-features/arrays/troubleshooting-arrays.md)
+- [Arrays](index.md)
+- [Troubleshooting Arrays](troubleshooting-arrays.md)
 - [Collections](../../concepts/collections.md)
-- [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)
+- [For Each...Next Statement](../../../language-reference/statements/for-each-next-statement.md)

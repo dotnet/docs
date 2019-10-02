@@ -10,7 +10,7 @@ ms.author: adegeo
 
 This article describes the differences between Windows Presentation Foundation (WPF) on .NET Core and .NET Framework. WPF for .NET Core is an [open-source framework](https://github.com/dotnet/wpf) forked from the original WPF for .NET Framework source code.
 
-There are a few features of .NET Framework that .NET Core doesn't support. Meaning, WPF for .NET Core has a few limitations you should be aware of. For more information on unsupported technologies, see [.NET Framework technologies unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md).
+There are a few features of .NET Framework that .NET Core doesn't support. For more information on unsupported technologies, see [.NET Framework technologies unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md).
 
 [!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
 

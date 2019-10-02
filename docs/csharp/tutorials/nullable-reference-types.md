@@ -61,7 +61,7 @@ As you write the code, you'll see that a non-nullable reference type as the defa
 
 The app you'll build does the following steps:
 
-1. Create a survey and add questions to it.
+1. Creates a survey and adds questions to it.
 1. Create a pseudo-random set of respondents for the survey.
 1. Contact respondents until the completed survey size reaches the goal number.
 1. Write out important statistics on the survey responses.

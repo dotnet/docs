@@ -21,9 +21,11 @@ CQRS means having two objects for a read/write operation where in other contexts
 
 An example of this kind of service is the ordering microservice from the eShopOnContainers reference application. This service implements a microservice based on a simplified CQRS approach. It uses a single data source or database, but two logical models plus DDD patterns for the transactional domain, as shown in Figure 7-2.
 
-![The logical Ordering microservice includes its Ordering database, which can be or not in the same Docker host. Having the database in the same Docker host is good for development, but not for production.](./media/image2.png)
+![Diagram showing a high level Simplified CQRS and DDD microservice.](./media/apply-simplified-microservice-cqrs-ddd-patterns/simplified-cqrs-ddd-microservice.png)
 
 **Figure 7-2**. Simplified CQRS- and DDD-based microservice
+
+The Logical "Ordering" Microservice includes its Ordering database, which can be, but doesn't have to be, the same Docker host. Having the database in the same Docker host is good for development, but not for production.
 
 The application layer can be the Web API itself. The important design aspect here is that the microservice has split the queries and ViewModels (data models especially created for the client applications) from the commands, domain model, and transactions following the CQRS pattern. This approach keeps the queries independent from restrictions and constraints coming from DDD patterns that only make sense for transactions and updates, as explained in later sections.
 

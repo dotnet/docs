@@ -25,7 +25,7 @@ Dim numbers() As Integer = {1, 2, 3, 4, 5}
   
 - Assign the expression to a member name, as shown in the following code:  
   
-    ```  
+    ```vb  
     Dim instanceName2 = New With {.number = numbers(3)}  
     ```  
   

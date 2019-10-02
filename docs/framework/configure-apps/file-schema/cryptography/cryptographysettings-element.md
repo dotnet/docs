@@ -12,9 +12,9 @@ ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
 # \<cryptographySettings> Element
 Contains cryptography settings.  
   
- \<configuration>  
-\<mscorlib>  
-\<cryptographySettings>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptographySettings>**  
   
 ## Syntax  
   

@@ -12,10 +12,10 @@ ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
 # \<webProxyScript> Element (Network Settings)
 Configures the characteristics of the script used to discover Web proxies.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<webProxyScript>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webProxyScript>**  
   
 ## Syntax  
   

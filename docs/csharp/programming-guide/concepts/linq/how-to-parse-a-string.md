@@ -41,7 +41,7 @@ XElement contacts = XElement.Parse(
 Console.WriteLine(contacts);
 ```
 
-The root `Contacts` node has two `Contact` nodes. To access some specific data in your parsed xml, use the `Elements` method. The following example prints the first `Contact` node to the console:
+The root `Contacts` node has two `Contact` nodes. To access some specific data in your parsed XML, use the [XElement.Elements()](xref:System.Xml.Linq.XContainer.Elements) method, which in this case returns the child elements of the root `Contacts` node. The following example prints the first `Contact` node to the console:
 
 ```csharp
 List<XElement> contactNodes = contacts.Elements("Contact").ToList();

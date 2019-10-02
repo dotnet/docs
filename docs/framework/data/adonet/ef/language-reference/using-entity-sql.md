@@ -26,7 +26,7 @@ USING [ alias = ] namespace
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
-```sql  
+```csharp
 using SqlServer; RAND()  
 ```  
   

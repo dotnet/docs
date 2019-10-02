@@ -16,14 +16,16 @@ Whenever an attempt to execute a query is made, the query pipeline looks up its 
 ## Recommended Practice  
  Dynamic queries should be avoided, in general. The following dynamic query example is vulnerable to SQL injection attacks, because it takes user input directly without any validation.  
   
- `"SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp WHERE sp.EmployeeID = " + employeeTextBox.Text;`  
-  
+ ```csharp
+ var query = "SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp WHERE sp.EmployeeID = " + employeeTextBox.Text;  
+ ```
+ 
  If you do use dynamically generated queries, consider disabling query plan caching to avoid unnecessary memory consumption for cache entries that are unlikely to be reused.  
   
  Query plan caching on static queries and parameterized queries can provide performance benefits. The following is an example of a static query:  
   
-```sql  
-"SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp";  
+```csharp
+var query = "SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp";  
 ```  
   
  For queries to be matched properly by the query plan cache, they should comply with the following requirements:  

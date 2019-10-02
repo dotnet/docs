@@ -58,4 +58,4 @@ Provides documentation for private .NET Framework APIs used by Microsoft tools.
 
 ## See also
 
-* [.NET Framework Class Library](/dotnet/api/?view=netframework-4.8)
+- [.NET Framework Class Library](/dotnet/api/?view=netframework-4.8)

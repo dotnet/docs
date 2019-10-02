@@ -1,5 +1,5 @@
 ---
-title: "Exposing .NET Core Components to COM"
+title: "Exposing .NET Core components to COM"
 ms.date: "07/12/2019"
 helpviewer_keywords: 
   - "exposing .NET Core components to COM"
@@ -10,7 +10,7 @@ author: "jkoritzinsky"
 ms.author: "jekoritz"
 ---
 
-# Exposing .NET Core Components to COM
+# Exposing .NET Core components to COM
 
 In .NET Core, the process for exposing your .NET objects to COM has been significantly streamlined in comparison to .NET Framework. The following process will walk you through how to expose a class to COM. This tutorial shows you how to:
 
@@ -20,17 +20,24 @@ In .NET Core, the process for exposing your .NET objects to COM has been signifi
 
 ## Prerequisites
 
-- Install the [.NET Core 3.0 Preview 7 SDK](https://dotnet.microsoft.com/download) or a newer version.
+- Install [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download) or a newer version.
 
 ## Create the library
 
 The first step is to create the library.
 
-1. Create a new folder, and in that folder run `dotnet new classlib`.
+1. Create a new folder, and in that folder run the following command:
+    
+    ```dotnetcli
+    dotnet new classlib
+    ```
+
 2. Open `Class1.cs`.
 3. Add `using System.Runtime.InteropServices;` to the top of the file.
 4. Create an interface named `IServer`. For example:
-  [!code-csharp[The IServer interface](~/samples/core/extensions/COMServerDemo/COMContract/IServer.cs)]
+
+   [!code-csharp[The IServer interface](~/samples/core/extensions/COMServerDemo/COMContract/IServer.cs)]
+
 5. Add the `[Guid("<IID>")]` attribute to the interface, with the interface GUID for the COM interface you're implementing. For example, `[Guid("fe103d6e-e71b-414c-80bf-982f18f6c1c7")]`. Note that this GUID needs to be unique since it is the only identifier of this interface for COM. In Visual Studio, you can generate a GUID by going to Tools > Create GUID to open the Create GUID tool.
 6. Add the `[InterfaceType]` attribute to the interface and specify what base COM interfaces your interface should implement.
 7. Create a class named `Server` that implements `IServer`.
@@ -62,7 +69,7 @@ The resulting output will now also have a `ProjectName.X.manifest` file. This fi
 
 There is a fully functional [COM server sample](https://github.com/dotnet/samples/tree/master/core/extensions/COMServerDemo) in the dotnet/samples repository on GitHub.
 
-## Additional Notes
+## Additional notes
 
 Unlike in .NET Framework, there is no support in .NET Core for generating a COM Type Library (TLB) from a .NET Core assembly. You will either have to manually write an IDL file or a C++ header for the native declarations of your interfaces.
 

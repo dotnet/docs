@@ -18,11 +18,11 @@ Checks whether the runtime type of an expression's result is type-compatible wit
   
 ## Syntax  
   
-```  
+```vb  
 result = TypeOf objectexpression Is typename  
 ```  
   
-```  
+```vb  
 result = TypeOf objectexpression IsNot typename  
 ```  
   

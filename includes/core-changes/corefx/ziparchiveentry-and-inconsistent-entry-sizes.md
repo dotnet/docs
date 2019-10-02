@@ -38,6 +38,4 @@ CoreFx
 `Overload:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A`
 `Overload:System.IO.Compression.ZipFile.ExtractToDirectory%2A`
 
-
 -->
-

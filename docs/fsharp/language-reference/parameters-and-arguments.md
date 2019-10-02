@@ -50,7 +50,7 @@ Other patterns that are sometimes used in arguments are the `as` pattern, and id
 
 The output is as follows.
 
-```
+```console
 Data begins at 0 and ends at 4 in string Et tu, Brute?
 Et tu
 ```
@@ -115,7 +115,7 @@ The following example illustrates the use of optional parameters.
 
 The output is as follows.
 
-```
+```console
 Baud Rate: 9600 Duplex: Full Parity: false
 Baud Rate: 4800 Duplex: Half Parity: false
 Baud Rate: 300 Duplex: Half Parity: true

@@ -114,7 +114,7 @@ Data binding can be configured in XAML through the `{Binding}` markup extension.
 </StackPanel>
 ```
 
-For more information, see [Data Binding Overview](../data/data-binding-overview).
+For more information, see [Data Binding Overview](../data/data-binding-overview.md).
 
 ## UI components
 

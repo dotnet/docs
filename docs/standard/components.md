@@ -80,19 +80,19 @@ You have access to an extensive set of tools and infrastructure components that 
 
 ## Applicable standards
 
-The C# Language and the Common Language Infrastructure (CLI) specifications are standardized through [Ecma International®](http://www.ecma-international.org/). The first editions of these standards were published by Ecma in December 2001.
+The C# Language and the Common Language Infrastructure (CLI) specifications are standardized through [Ecma International®](https://www.ecma-international.org/). The first editions of these standards were published by Ecma in December 2001.
 
-Subsequent revisions to the standards have been developed by the TC49-TG2 (C#) and TC49-TG3 (CLI) task groups within the Programming Languages Technical Committee ([TC49](http://www.ecma-international.org/memento/tc49.htm)), and adopted by the Ecma General Assembly and subsequently by ISO/IEC JTC 1 via the ISO Fast-Track process.
+Subsequent revisions to the standards have been developed by the TC49-TG2 (C#) and TC49-TG3 (CLI) task groups within the Programming Languages Technical Committee ([TC49](https://www.ecma-international.org/memento/tc49.htm)), and adopted by the Ecma General Assembly and subsequently by ISO/IEC JTC 1 via the ISO Fast-Track process.
 
-### Latest Standards
+### Latest standards
 
-The following official Ecma documents are available for [C#](http://www.ecma-international.org/publications/standards/Ecma-334.htm) and the [CLI](http://www.ecma-international.org/publications/standards/Ecma-335.htm) ([TR-84](http://www.ecma-international.org/publications/techreports/E-TR-084.htm)). These links are direct from Ecma International®:
+The following official Ecma documents are available for [C#](http://www.ecma-international.org/publications/standards/Ecma-334.htm) and the [CLI](http://www.ecma-international.org/publications/standards/Ecma-335.htm) ([TR-84](http://www.ecma-international.org/publications/techreports/E-TR-084.htm)):
 
-- **The C# Language Standard (version 5.0)**: [ECMA-334.pdf](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
-- **The Common Language Infrastructure**: This is avaialble in [pdf](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) form and [zip](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip) form.
-- **Information Derived from the Partition IV XML File**: This is available in [pdf](http://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) and [zip](http://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip) format.
+- **The C# Language Standard (version 5.0)**: [ECMA-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
+- **The Common Language Infrastructure**: This is available in [pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) form and [zip](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip) form.
+- **Information Derived from the Partition IV XML File**: This is available in [pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) and [zip](https://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip) formats.
  
-The official ISO/IEC documents are available from the ISO/IEC [Freely Available Standards](https://standards.iso.org/ittf/PubliclyAvailableStandards/) page. These links are direct from that page:
+The official ISO/IEC documents are available from the ISO/IEC [Publicly Available Standards](https://standards.iso.org/ittf/PubliclyAvailableStandards/) page. These links are direct from that page:
 
 - **Information technology - Programming languages - C#**: [ISO/IEC 23270:2018](https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip)
 - **Information technology — Common Language Infrastructure (CLI) Partitions I to VI**: [ISO/IEC 23271:2012](https://standards.iso.org/ittf/PubliclyAvailableStandards/c058046_ISO_IEC_23271_2012(E).zip)

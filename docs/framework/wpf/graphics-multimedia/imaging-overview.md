@@ -50,13 +50,13 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
 <a name="_imageformats"></a>   
 ## WPF Image Formats  
- A codec is used to decode or encode a specific media format. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] includes a codec  for BMP, JPEG, PNG, [!INCLUDE[TLA2#tla_tiff](../../../../includes/tla2sharptla-tiff-md.md)], [!INCLUDE[TLA2#tla_wdp](../../../../includes/tla2sharptla-wdp-md.md)], GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
+ A codec is used to decode or encode a specific media format. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] includes a codec  for BMP, JPEG, PNG, TIFF, [!INCLUDE[TLA2#tla_wdp](../../../../includes/tla2sharptla-wdp-md.md)], GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
   
  <xref:System.Windows.Media.Imaging.BitmapSource> is an important class used in the decoding and encoding of images. It is the basic building block of the [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] pipeline and represents a single, constant set of pixels at a certain size and resolution. A <xref:System.Windows.Media.Imaging.BitmapSource> can be an individual frame of a multiple frame image, or it can be the result of a transform performed on a <xref:System.Windows.Media.Imaging.BitmapSource>. It is the parent of many of the primary classes used in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] imaging such as <xref:System.Windows.Media.Imaging.BitmapFrame>.  
   
- A <xref:System.Windows.Media.Imaging.BitmapFrame> is used to store the actual bitmap data of an image format. Many image formats only support a single <xref:System.Windows.Media.Imaging.BitmapFrame>, although formats such as GIF and [!INCLUDE[TLA2#tla_tiff](../../../../includes/tla2sharptla-tiff-md.md)] support multiple frames per image. Frames are used by decoders as input data and are passed to encoders to create image files.  
+ A <xref:System.Windows.Media.Imaging.BitmapFrame> is used to store the actual bitmap data of an image format. Many image formats only support a single <xref:System.Windows.Media.Imaging.BitmapFrame>, although formats such as GIF and TIFF support multiple frames per image. Frames are used by decoders as input data and are passed to encoders to create image files.  
   
- The following example demonstrates how a <xref:System.Windows.Media.Imaging.BitmapFrame> is created from a <xref:System.Windows.Media.Imaging.BitmapSource> and then added to a [!INCLUDE[TLA2#tla_tiff](../../../../includes/tla2sharptla-tiff-md.md)] image.  
+ The following example demonstrates how a <xref:System.Windows.Media.Imaging.BitmapFrame> is created from a <xref:System.Windows.Media.Imaging.BitmapSource> and then added to a TIFF image.  
   
  [!code-csharp[BitmapFrameExample#10](~/samples/snippets/csharp/VS_Snippets_Wpf/BitmapFrameExample/CSharp/BitmapFrame.cs#10)]
  [!code-vb[BitmapFrameExample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  

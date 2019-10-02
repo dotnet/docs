@@ -33,7 +33,7 @@ When your project uses `<PackageReference>`, packages aren't stored locally in a
 
 ## Code Access Security (CAS)
 
-Code Access Security (CAS) is not supported by .NET Core or WPF for .NET Core. All CAS-related functionality is treated under the assumption of full-trust. WPF for .NET Core has been removing CAS-related code. The public API surface of these types still exists to ensure that calls into these types succeed. However, these calls don't actually do anything.
+Code Access Security (CAS) is not supported by .NET Core or WPF for .NET Core. All CAS-related functionality is treated under the assumption of full-trust. WPF for .NET Core removes CAS-related code. The public API surface of these types still exists to ensure that calls into these types succeed. However, these calls don't actually do anything.
 
 Publicly defined CAS-related types were moved out of the WPF assemblies and into the CoreFX assemblies. The WPF assemblies have type-forwarding set to the new location of the moved types.
 

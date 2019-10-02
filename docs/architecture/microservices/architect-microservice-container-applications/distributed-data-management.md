@@ -41,11 +41,11 @@ In a hypothetical monolithic version of this application, when the price changes
 
 However, in a microservices-based application, the Product and Basket tables are owned by their respective microservices. No microservice should ever include tables/storage owned by another microservice in its own transactions, not even in direct queries, as shown in Figure 4-9.
 
-![Diagram showing that microservice DB data can't be shared.](./media/distributed-data-management/indepentent-microservice-databases.png)
+![Diagram showing that microservices database data can't be shared.](./media/distributed-data-management/indepentent-microservice-databases.png)
 
 **Figure 4-9**. A microservice can't directly access a table in another microservice
 
-A microservice cannot directly access a table in another microservice, eventual consistency must be used to synchronize data. The Catalog microservice shouldn't update the Basket table directly, because the Basket table is owned by the Basket microservice. To make an update to the Basket microservice, the Catalog microservice should use eventual consistency probably based on asynchronous communication such as integration events (message and event-based communication). This is how the [eShopOnContainers](https://aka.ms/eshoponcontainers) reference application performs this type of consistency across microservices.
+The Catalog microservice shouldn't update the Basket table directly, because the Basket table is owned by the Basket microservice. To make an update to the Basket microservice, the Catalog microservice should use eventual consistency probably based on asynchronous communication such as integration events (message and event-based communication). This is how the [eShopOnContainers](https://aka.ms/eshoponcontainers) reference application performs this type of consistency across microservices.
 
 As stated by the [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem), you need to choose between availability and ACID strong consistency. Most microservice-based scenarios demand availability and high scalability as opposed to strong consistency. Mission-critical applications must remain up and running, and developers can work around strong consistency by using techniques for working with weak or eventual consistency. This is the approach taken by most microservice-based architectures.
 

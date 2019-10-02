@@ -31,7 +31,7 @@ However, you might also have entities that have a different shape but share the 
 
 A similar approach is illustrated in Figure 4-11.
 
-![Diagram showing how to decompose a data model into multiple domains.](./media/identify-microservice-domain-model-boundaries/decompose-traditional-data-models.png)
+![Diagram showing how to decompose a data model into multiple domain models.](./media/identify-microservice-domain-model-boundaries/decompose-traditional-data-models.png)
 
 **Figure 4-11**. Decomposing traditional data models into multiple domain models
 

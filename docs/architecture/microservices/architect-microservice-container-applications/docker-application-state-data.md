@@ -41,7 +41,7 @@ Volumes can be named or anonymous (the default). Named volumes are the evolution
 
 As shown in Figure 4-5, regular Docker volumes can be stored outside of the containers themselves but within the physical boundaries of the host server or VM. However, Docker containers can't access a volume from one host server or VM to another. In other words, with these volumes, it isn't possible to manage data shared between containers that run on different Docker hosts, although it could be achieved with a volume driver that supports remote hosts.
 
-![Diagram showing containers accessing external data sources.](./media/docker-application-state-data/volumes-external-data-sources.png)
+![Diagram showing volumes and external data sources for container-based apps.](./media/docker-application-state-data/volumes-external-data-sources.png)
 
 **Figure 4-5**. Volumes and external data sources for container-based applications
 

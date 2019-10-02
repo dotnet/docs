@@ -13,7 +13,7 @@ This principle is similar in [Domain-driven design (DDD)](https://en.wikipedia.o
 
 On the other hand, the traditional (monolithic data) approach used in many applications is to have a single centralized database or just a few databases. This is often a normalized SQL database that's used for the whole application and all its internal subsystems, as shown in Figure 4-7.
 
-![Diagram showing the two database database approaches.](./media/data-sovereignty-per-microservice/data-sovereignty-comparison.png)
+![Diagram showing the two database approaches.](./media/data-sovereignty-per-microservice/data-sovereignty-comparison.png)
 
 **Figure 4-7**. Data sovereignty comparison: monolithic database versus microservices
 

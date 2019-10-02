@@ -15,7 +15,7 @@ A possible approach is to use a direct client-to-microservice communication arch
 
 **Figure 4-12**. Using a direct client-to-microservice communication architecture
 
-Each app communicates directly with individual microservices. In this approach, each microservice has a public endpoint, sometimes with a different TCP port for each microservice. An example of a URL for a particular service could be the following URL in Azure:
+In this approach, each microservice has a public endpoint, sometimes with a different TCP port for each microservice. An example of a URL for a particular service could be the following URL in Azure:
 
 `http://eshoponcontainers.westus.cloudapp.azure.com:88/`
 

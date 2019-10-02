@@ -9,7 +9,7 @@ ms.date: 10/23/2018
 
 This tutorial teaches you how to use C# [string interpolation](../../language-reference/tokens/interpolated.md) to insert values into a single result string. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that show you how to insert values into a string and format those values in different ways.
 
-This tutorial expects that you have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Mac, Windows or Linux. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
+This tutorial expects that you have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Windows, Linux, or macOS. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
 
 ## Create an interpolated string
 

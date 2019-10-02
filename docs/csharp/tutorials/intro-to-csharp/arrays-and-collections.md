@@ -9,7 +9,7 @@ ms.custom: mvc
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.
 
-This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Mac, Windows or Linux. A quick overview of the commands you'll use is in [Become familiar with the development tools](local-environment.md), with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Windows, Linux, or macOS. A quick overview of the commands you'll use is in [Become familiar with the development tools](local-environment.md), with links to more details.
 
 ## A basic list example
 

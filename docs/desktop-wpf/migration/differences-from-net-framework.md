@@ -16,7 +16,7 @@ There are a few features of .NET Framework that .NET Core doesn't support. For m
 
 ## SDK-style projects
 
-.NET Core uses SDK-style project files. These project files are different from the traditional .NET Framework project files managed by Visual Studio. To migrate your .NET Framework WPF application to .NET Core, you must convert your projects. For more information, see [Migrating WPF Apps to .NET Core 3.0][migrate-project].
+.NET Core uses SDK-style project files. These project files are different from the traditional .NET Framework project files managed by Visual Studio. To migrate your .NET Framework WPF application to .NET Core, you must convert your projects. For more information, see [Migrating WPF Apps to .NET Core 3.0](convert-project-from-net-framework.md).
 
 ## NuGet package references
 
@@ -60,6 +60,5 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 
 ## Next steps
 
-- [Learn how to port a .NET Framework WPF app to .NET Core.][migrate-project]
+- [Learn how to port a .NET Framework WPF app to .NET Core.](convert-project-from-net-framework.md)
 
-[migrate-project]: convert-project-from-net-framework.md

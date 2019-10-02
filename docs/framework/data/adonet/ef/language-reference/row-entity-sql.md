@@ -46,7 +46,7 @@ ROW(1 AS a, "abc" AS b, a+34 AS c)
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-sql[DP EntityServices Concepts 2#ROW](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts 2/tsql/entitysql.sql#row)]  
+ [!code-sql[DP EntityServices Concepts#ROW](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#row)]  
   
 ## See also
 

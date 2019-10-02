@@ -66,7 +66,7 @@ match [NOT] LIKE pattern [ESCAPE escape]
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
- [!code-sql[DP EntityServices Concepts 2#LIKE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#like)]  
+ [!code-sql[DP EntityServices Concepts#LIKE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#like)]  
   
 ## See also
 

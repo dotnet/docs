@@ -14,11 +14,12 @@ The document covers the process for contributing to the articles and code sample
 
 This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
 
-- [Code samples and snippets](https://github.com/dotnet/samples)
-- [API reference](https://github.com/dotnet/dotnet-api-docs)
-- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
-
-Issues and tasks for roslyn-api-docs repository is tracked here.
+- [Code samples and snippets](https://github.com/dotnet/samples)  
+    Issues and taks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
+- [API reference](https://github.com/dotnet/dotnet-api-docs)  
+    Issues and taks for this repo are tracked in [dotnet/dotnet-api-docs/issues](https://github.com/dotnet/dotnet-api-docs/issues).
+- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)  
+    Issues and taks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
 
 ## Process for contributing
 

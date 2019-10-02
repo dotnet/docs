@@ -43,15 +43,15 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 1. In **Solution Explorer**, right-click your project's name and then click **Add Reference**. The **Add Reference** dialog box appears.
 
-2. On the **Assemblies**  page, select **Microsoft.Office.Interop.Word** in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Excel**.  If you do not see the assemblies, you may need to ensure they are installed and displayed (see [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies))
+2. On the **Assemblies**  page, select **Microsoft.Office.Interop.Word** in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Excel**.  If you do not see the assemblies, you may need to ensure they are installed and displayed. See [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies).
 
 3. Click **OK**.
 
 ## To add necessary using directives
 
-1. In **Solution Explorer**, right-click the **Program.cs** file and then click **View Code**.
+1. In **Solution Explorer**, right-click the *Program.cs* file and then click **View Code**.
 
-2. Add the following `using` directives to the top of the code file.
+2. Add the following `using` directives to the top of the code file:
 
      [!code-csharp[csProgGuideOfficeHowTo#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#1)]
 

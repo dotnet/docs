@@ -23,7 +23,7 @@ By default, Add Service Reference generates Task-returning async service operati
 
 When you add a service reference in Visual Studio or use the SvcUtil.exe tool, a client configuration file is generated. In previous versions of WCF these configuration files contained the value of every binding property even if its value is the default value. In WCF 4.5 the generated configuration files contain only those binding properties that are set to a non-default value.
 
-For more information, see [WCF Simplification Features](../../../docs/framework/wcf/wcf-simplification-features.md)
+For more information, see [WCF Simplification Features](wcf-simplification-features.md).
 
 ### Contract-First Development
 
@@ -105,7 +105,7 @@ To help minimize this overhead, WCF can cache channel factories when you are usi
 
 ## Compression and the Binary Encoder
 
-Beginning with WCF 4.5 the WCF binary encoder adds support for compression. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Both the client and the service must configure the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Compression will work for HTTP, HTTPS, and TCP protocols. If a client specifies to use compression but the service does not support it a protocol exception is thrown indicating a protocol mismatch. For more information, see [Choosing a Message Encoder](../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
+Beginning with WCF 4.5 the WCF binary encoder adds support for compression. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Both the client and the service must configure the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Compression will work for HTTP, HTTPS, and TCP protocols. If a client specifies to use compression but the service does not support it a protocol exception is thrown indicating a protocol mismatch. For more information, see [Choosing a Message Encoder](./feature-details/choosing-a-message-encoder.md).
 
 ## UDP
 

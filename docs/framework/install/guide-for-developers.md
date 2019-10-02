@@ -149,7 +149,7 @@ Both web and offline installers are designed for x86-based and x64-based compute
 
 - .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, and .NET Framework 4.8 replace .NET Framework 4. When you install these versions on a system that has .NET Framework 4 installed, the assemblies are replaced.
 
-- Uninstalling .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, or .NET Framework 4.8 also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. (See [Installing the .NET Framework 4](https://go.microsoft.com/fwlink/p/?LinkId=230665).)
+- Uninstalling .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, or .NET Framework 4.8 also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. See [Installing the .NET Framework 4](https://go.microsoft.com/fwlink/p/?LinkId=230665).
 
 - You must have administrative credentials to install .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point release, and .NET Framework 4.8.
 

@@ -94,7 +94,7 @@ Enable dump collection diagnostic logging.
 dotnet-dump analyze [-h|--help] <dump_path> [-c|--command <debug_command>]
 ```
 
-Starts an interactive shell to explore a dump. The shell accepts various [SOS commands](#analyze-SOS-commands).
+Starts an interactive shell to explore a dump. The shell accepts various [SOS commands](#analyze-sos-commands).
 
 `<dump_path>`
 

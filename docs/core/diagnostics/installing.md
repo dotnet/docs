@@ -9,10 +9,10 @@ ms.date: 08/21/2019
 
 Depending on the diagnostics scenario, you can use one or more tools to get to root cause.
 
-These tools are implemented as [.NET Core Global Tools](../../tools/global-tools.md). They're installed, upgraded, and uninstalled using the `dotnet tool` commands:
-- [dotnet tool install](../../tools/dotnet-tool-install.md).
-- [dotnet tool update](../../tools/dotnet-tool-update.md).
-- [dotnet tool uninstall](../../tools/dotnet-tool-uninstall.md).
+These tools are implemented as [.NET Core Global Tools](../tools/global-tools.md). They're installed, upgraded, and uninstalled using the `dotnet tool` commands:
+- [dotnet tool install](../tools/dotnet-tool-install.md).
+- [dotnet tool update](../tools/dotnet-tool-update.md).
+- [dotnet tool uninstall](../tools/dotnet-tool-uninstall.md).
 
 ## Using prerelease versions
 
@@ -27,7 +27,7 @@ The pre-release packages are published on [NuGet package](https://www.nuget.org/
 
 ### Install
 
-These prerelease versions can't be installed without an explicit `--version` option to the [dotnet tool install](../../tools/dotnet-tool-install.md) command. For instance:
+These prerelease versions can't be installed without an explicit `--version` option to the [dotnet tool install](../tools/dotnet-tool-install.md) command. For instance:
 
 ```bash
 dotnet tool install --global dotnet-dump --version 3.0.0-preview8.19412.1
@@ -35,7 +35,7 @@ dotnet tool install --global dotnet-dump --version 3.0.0-preview8.19412.1
 
 ### Upgrade
 
-To upgrade from or to a prerelease version, [dotnet tool uninstall](../../tools/dotnet-tool-uninstall.md) the previous version of the tool before upgrade. Preview versions can't be automatically updated. For instance:
+To upgrade from or to a prerelease version, [dotnet tool uninstall](../tools/dotnet-tool-uninstall.md) the previous version of the tool before upgrade. Preview versions can't be automatically updated. For instance:
 
 ```bash
 dotnet tool uninstall --global dotnet-dump
@@ -47,7 +47,7 @@ dotnet tool install --global dotnet-dump --version 3.0.0-preview8.19412.1
 ### "Tool already installed"
 
 If you see the error message `Tool 'dotnet-...' is already installed`, you can either:
-- [Uninstall](../../tools/dotnet-tool-uninstall.md) the global tool before reinstalling the tool.
+- [Uninstall](../tools/dotnet-tool-uninstall.md) the global tool before reinstalling the tool.
 - Install to a different path.
 
 ### "Specified command or file was not found"

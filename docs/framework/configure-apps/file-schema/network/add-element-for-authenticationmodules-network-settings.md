@@ -14,10 +14,10 @@ ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 # \<add> Element for authenticationModules (Network Settings)
 Adds an authentication module to the application.  
   
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   

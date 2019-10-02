@@ -42,7 +42,7 @@ If you want to handle mouse click events in the proper order, you need to know t
 
 4. <xref:System.Windows.Forms.Control.MouseUp> event.
 
-Following is the order of events raised for a double mouse-button click:
+The following is the order of events raised for a double mouse-button click:
 
 1. <xref:System.Windows.Forms.Control.MouseDown> event.
 
@@ -66,7 +66,10 @@ For a code example that demonstrates the order of the mouse click events, see [H
 
 The following controls do not conform to the standard mouse click event behavior:
 
-- <xref:System.Windows.Forms.Button>, <xref:System.Windows.Forms.CheckBox>, <xref:System.Windows.Forms.ComboBox>, and <xref:System.Windows.Forms.RadioButton> controls
+- <xref:System.Windows.Forms.Button>
+- <xref:System.Windows.Forms.CheckBox>
+- <xref:System.Windows.Forms.ComboBox>
+- <xref:System.Windows.Forms.RadioButton>
 
   > [!NOTE]
   > For the <xref:System.Windows.Forms.ComboBox> control, the event behavior detailed later occurs if the user clicks on the edit field, the button, or on an item within the list.
@@ -118,7 +121,7 @@ The following controls do not conform to the standard mouse click event behavior
 
   - Right double-click: <xref:System.Windows.Forms.Control.Click>, <xref:System.Windows.Forms.Control.MouseClick>; <xref:System.Windows.Forms.Control.DoubleClick>, <xref:System.Windows.Forms.Control.MouseDoubleClick>
 
-### Painting Behavior of Toggle Controls
+### Painting behavior of toggle controls
 
 Toggle controls, such as the controls deriving from the <xref:System.Windows.Forms.ButtonBase> class, have the following distinctive painting behavior in combination with mouse click events:
 

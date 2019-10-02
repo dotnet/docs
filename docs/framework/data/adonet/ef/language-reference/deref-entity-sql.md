@@ -29,7 +29,7 @@ SELECT DEREF ( o.expression ) FROM Table AS o;
   
 2. Pass the following query as an argument to the ExecutePrimitiveTypeQuery method:  
   
- [!code-csharp[DP EntityServices Concepts 2#DEREF](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#deref)]  
+ [!code-sql[DP EntityServices Concepts#DEREF](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#deref)]  
   
 ## See also
 

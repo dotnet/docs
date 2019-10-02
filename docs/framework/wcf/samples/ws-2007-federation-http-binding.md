@@ -103,7 +103,7 @@ Press <ENTER> to terminate client.
 
 The *Setup.bat* file included with this sample allows you to configure the server and STS with the relevant certificates to run a self-hosted application. The batch file creates two certificates in the LocalMachine/TrustedPeople certificate store. The first certificate has a subject name of CN=STS and is used by STS to sign the security tokens that it issues to the client. The second certificate has a subject name of CN=localhost and is used by STS to encrypt a key in a way that the service can decrypt.
 
-### To set up, build, and run the sample
+## To set up, build, and run the sample
   
 1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 

@@ -24,7 +24,7 @@ For details and other options, see [Installing the diagnostics tools](installing
 
 ## Synopsis
 
-```dotnetcli
+```console
 dotnet-dump [-h|--help] [--version] <command>
 
 dotnet-dump collect [-h|--help] [-p|--process-id <pid>] [--type <Heap|Mini>] [-o|--output <output_dump_path>] [--diag]
@@ -55,7 +55,7 @@ Show command-line help.
 
 ## dotnet-dump collect
 
-```dotnetcli
+```console
 dotnet-dump collect [-h|--help] [-p|--process-id <pid>] [--type <Heap|Mini>] [-o|--output <output_dump_path>] [--diag]
 ```
 
@@ -90,7 +90,7 @@ Enable dump collection diagnostic logging.
 
 ## dotnet-dump analyze
 
-```dotnetcli
+```console
 dotnet-dump analyze [-h|--help] <dump_path> [-c|--command <debug_command>]
 ```
 
@@ -147,7 +147,7 @@ Command to run in the shell on start.
 
 The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/xplat-minidump-generation.md#configurationpolicy) can each create core dumps.
 
-```dotnetcli
+```console
 $ dotnet-dump collect --process-id 1902
 Writing minidump to file ./core_20190226_135837
 Written 98983936 bytes (24166 pages) to core file
@@ -166,7 +166,7 @@ Type 'quit' or 'exit' to exit the session.
 
 This action brings up an interactive session that accepts commands like:
 
-```dotnetcli
+```console
 > clrstack
 OS Thread Id: 0x573d (0)
     Child SP               IP Call Site
@@ -182,7 +182,7 @@ OS Thread Id: 0x573d (0)
 
 To see an unhandled exception that killed your app:
 
-```dotnetcli
+```console
 > pe -lines
 Exception object: 00007fb18c038590
 Exception type:   System.Reflection.TargetInvocationException

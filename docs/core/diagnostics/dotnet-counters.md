@@ -13,7 +13,7 @@ ms.date: 10/01/2019
 
 To install the latest release version of the `dotnet-counters` [NuGet package](https://www.nuget.org/packages/dotnet-counters), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
-```console
+```dotnetcli
 dotnet tool install --global dotnet-counters
 ```
 
@@ -21,8 +21,8 @@ For details and other options, see [Installing the diagnostics tools](installing
 
 ## Synopsis
 
-```dotnetcli
-dotnet-counters [-h, --help] [--version]
+```console
+dotnet-counters [-h|--help] [--version]
 
 dotnet-counters list [-h|--help]
 
@@ -52,7 +52,7 @@ Show command-line help.
 
 ## dotnet-counters list
 
-```dotnetcli
+```console
 dotnet-counters list [-h|--help]
 ```
 
@@ -76,8 +76,8 @@ Display a list of counter names and descriptions, grouped by provider.
 
 ## dotnet-counters monitor
 
-```dotnetcli
-dotnet-counters monitor [-h||--help] [-p|--process-id <pid>] [--refreshInterval <sec>] [counter_list]
+```console
+dotnet-counters monitor [-h|--help] [-p|--process-id <pid>] [--refreshInterval <sec>] [counter_list]
 ```
 
 Display periodically refreshing values of selected counters.
@@ -96,7 +96,7 @@ A space separated list of counters. Counters can be specified `provider_name[:co
 
 ### Examples - dotnet-counters monitor
 
-1. Monitoring all counters from `System.Runtime` at a refresh interval of 3 seconds:
+- Monitoring all counters from `System.Runtime` at a refresh interval of 3 seconds:
 
 ```console
 > dotnet-counters monitor --process-id 1902  --refresh-interval 3 System.Runtime
@@ -112,7 +112,7 @@ Press p to pause, r to resume, q to quit.
     Number of Exceptions / sec                     4
 ```
 
-2. Monitoring just CPU usage and GC heap size from `System.Runtime`:
+- Monitoring just CPU usage and GC heap size from `System.Runtime`:
 
 ```console
 > dotnet-counters monitor --process-id 1902 System.Runtime[cpu-usage,gc-heap-size]
@@ -123,7 +123,7 @@ Press p to pause, r to resume, q to quit.
     GC Heap Size (MB)                            811
 ```
 
-1. Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md for details.)
+- Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md for details.)
 
 ```console
 > dotnet-counters monitor --process-id 1902 Samples-EventCounterDemos-Minimal

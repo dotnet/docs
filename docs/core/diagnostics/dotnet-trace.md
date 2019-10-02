@@ -21,7 +21,7 @@ For details and other options, see [Installing the diagnostics tools](installing
 
 ## Synopsis
 
-```dotnetcli
+```console
 dotnet-trace [-h, --help] [--version]
 
 dotnet-trace collect [-h|--help] [-p|--process-id <pid>] [--buffersize <size>] [-o|--output <trace-file-path>]
@@ -59,7 +59,7 @@ Show command-line help.
 
 ## dotnet-trace collect
 
-```dotnetcli
+```console
 dotnet-trace collect [-h|--help] [-p|--process-id <pid>] [--buffersize <size>] [-o|--output <trace-file-path>]
     [--providers <list-of-comma-separated-providers>] [--profile <profile-name>] [--format <NetTrace|Speedscope>]
 ```
@@ -98,7 +98,7 @@ Sets the output format for the trace file conversion.
 
 ## dotnet-trace convert
 
-```dotnetcli
+```console
 dotnet-trace convert [-h|--help] [--format <NetTrace|Speedscope>] [-o|--output <output-filename>] <input-filename>
 ```
 
@@ -118,7 +118,7 @@ Input trace file to be converted. Defaults to 'trace.nettrace'.
 
 ## dotnet-trace list-processes
 
-```dotnetcli
+```console
 dotnet-trace list-processes [-h|--help]
 ```
 
@@ -126,7 +126,7 @@ Lists dotnet processes that can be traced.
 
 ## dotnet-trace list-profiles
 
-```dotnetcli
+```console
 dotnet-trace list-profiles [-h|--help]
 ```
 
@@ -169,7 +169,7 @@ If you're trying to use `EventCounter` for basic health monitoring in  performan
 
 For example, if you want to collect runtime performance counter values, you can use the following command:
 
-```dotnetcli
+```console
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1
 ```
 
@@ -177,7 +177,7 @@ This command will tell the runtime counters to be reported once every second for
 
 If you want to disable runtime events to reduce the overhead (and trace size) even further, you can use the following command to disable runtime events and managed stack profiler.
 
-```bash
+```console
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1
 ```
 

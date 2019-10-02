@@ -15,7 +15,7 @@ A programming element is qualified with a qualification string that includes a t
   
  The following statements can generate this error.  
   
-```  
+```vb  
 Public Function checkText(Of c As System.Windows.Forms.Control)(  
     ByVal badText As String) As Boolean  
   

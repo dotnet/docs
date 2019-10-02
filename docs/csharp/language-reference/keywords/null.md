@@ -2,10 +2,10 @@
 title: "null keyword - C# Reference"
 ms.custom: seodec18
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "null"
   - "null_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "null keyword [C#]"
 ms.assetid: fecb1c60-6232-4efe-87f7-9a86ba2e9119
 ---
@@ -23,7 +23,7 @@ The following example demonstrates some behaviors of the null keyword:
 
 ## See also
 
-- [C# reference](../../language-reference/index.md)
+- [C# reference](../index.md)
 - [C# keywords](index.md)
 - [Default values table](default-values-table.md)
 - [Nothing (Visual Basic)](../../../visual-basic/language-reference/nothing.md)

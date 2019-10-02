@@ -62,7 +62,7 @@ You must declare every member using a [Dim Statement](../../../visual-basic/lang
 
 The following paradigm shows the outline of the declaration of a structure.
 
-```
+```vb
 [Public | Protected | Friend | Protected Friend | Private] Structure structname
     {Dim | Public | Friend | Private} member1 As datatype1
     ' ...

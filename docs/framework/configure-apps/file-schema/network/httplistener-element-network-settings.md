@@ -6,10 +6,10 @@ ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 # \<httpListener> Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<httpListener>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<httpListener>**  
   
 ## Syntax  
   

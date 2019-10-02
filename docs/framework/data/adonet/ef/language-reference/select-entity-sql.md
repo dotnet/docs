@@ -92,7 +92,7 @@ SELECT a1, a2 FROM T1 AS a1, T2 AS a2
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#LESS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#less)]  
+ [!code-sql[DP EntityServices Concepts 2#LESS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts 2/tsql/entitysql.sql#less)]  
   
 ## See also
 

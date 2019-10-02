@@ -32,7 +32,7 @@ SELECT VALUE DISTINCT c FROM c
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#SET](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#set)]  
+ [!code-sql[DP EntityServices Concepts 2#SET](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts 2/tsql/entitysql.sql#set)]  
   
 ## See also
 

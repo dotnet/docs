@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You'll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8 beta compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -190,7 +190,7 @@ The last step is to display survey results. You'll add code to many of the class
 
 [!code-csharp[ReportResponses](../../../samples/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#SurveyStatus)]
 
-Because `surveyResponses` is a non-nullable reference type, no checks are necessary before de-referencing it. The `Answer` method returns a non-nullable string, so choose the overload of `GetValueOrDefault` that takes a second argument for the default value.
+Because `surveyResponses` is a nullable reference type null checks are necessary before de-referencing it. The `Answer` method returns a non-nullable string, so we have to cover the case of a missing answer by using the null-coalescing operator.
 
 Next, add these three expression-bodied members to the `SurveyRun` class:
 

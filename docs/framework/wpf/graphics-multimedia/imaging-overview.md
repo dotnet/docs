@@ -32,7 +32,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
 - Extensibility model for new or proprietary image formats.  
   
-- Improved performance and security on native image formats including bitmap (BMP), Joint Photographics Experts Group (JPEG), Portable Network Graphics (PNG), [!INCLUDE[TLA#tla_tiff](../../../../includes/tlasharptla-tiff-md.md)], [!INCLUDE[TLA#tla_wdp](../../../../includes/tlasharptla-wdp-md.md)], Graphics Interchange Format (GIF), and icon (.ico).  
+- Improved performance and security on native image formats including bitmap (BMP), Joint Photographics Experts Group (JPEG), Portable Network Graphics (PNG), Tagged Image File Format (TIFF), [!INCLUDE[TLA#tla_wdp](../../../../includes/tlasharptla-wdp-md.md)], Graphics Interchange Format (GIF), and icon (.ico).  
   
 - Preservation of high bit-depth image data up to 8 bits per channel (32 bits per pixel).  
   

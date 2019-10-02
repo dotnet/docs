@@ -132,7 +132,7 @@ class WorkScope :
     }
 ```
 
- The fault handler targets the `WorkScope` activity.The WF4 workflow is equally simplistic.  A <xref:System.Activities.Statements.CompensableActivity> has a body and a compensation handler.  An explicit compensate is next in the sequence.  The body activity and compensation handler activity are both empty implementations:
+ The fault handler targets the `WorkScope` activity. The WF4 workflow is equally simplistic.  A <xref:System.Activities.Statements.CompensableActivity> has a body and a compensation handler.  An explicit compensate is next in the sequence.  The body activity and compensation handler activity are both empty implementations:
 
 ```csharp
 public sealed class CompensableActivityEmptyCompensation : CodeActivity

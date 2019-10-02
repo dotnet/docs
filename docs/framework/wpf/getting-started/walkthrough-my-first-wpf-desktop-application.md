@@ -20,6 +20,7 @@ This article shows you how to develop a Windows Presentation Foundation (WPF) de
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Create a WPF project.
 > - Use XAML to design the appearance of the application's user interface (UI).
 > - Write code to build the application's behavior.

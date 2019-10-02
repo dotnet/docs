@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "output file name for assemblies"
   - "code modules"
   - "single-file assemblies"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
@@ -34,7 +34,6 @@ At the command prompt, type the following command:
 In this command, *compiler command* is the compiler command for the language used in your code module, and *module name* is the name of the code module to compile into the assembly.
 
 The following example creates an assembly named *myCode.exe* from a code module called `myCode`.
-
 
 ```csharp
 csc myCode.cs
@@ -80,6 +79,7 @@ csc -out:myCodeLibrary.dll -t:library myCode.cs
 ```vb
 vbc -out:myCodeLibrary.dll -t:library myCode.vb
 ```
+
 ## See also
 
 - [Create assemblies](../../standard/assembly/create.md)

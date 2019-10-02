@@ -26,4 +26,4 @@ A common language runtime host creates application domains automatically when th
 ## See also
 
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Using Application Domains](use.md)

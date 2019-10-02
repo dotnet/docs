@@ -51,7 +51,7 @@ The following code uses `Seq.concat` to demonstrate the scenarios that you can s
 
 The output is as follows.
 
-```
+```console
 seq [1; 2; 3; 4; ...]
 seq [1; 2; 3; 4; ...]
 seq [1; 2; 3; 4; ...]

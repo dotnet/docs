@@ -27,24 +27,24 @@ The [dotnet build](dotnet-build.md) command is equivalent to `dotnet msbuild -re
 
 * Build a project and its dependencies:
 
-  ```console
+  ```dotnetcli
   dotnet msbuild
   ```
 
 * Build a project and its dependencies using Release configuration:
 
-  ```console
+  ```dotnetcli
   dotnet msbuild -p:Configuration=Release
   ```
 
 * Run the publish target and publish for the `osx.10.11-x64` RID:
 
-  ```console
+  ```dotnetcli
   dotnet msbuild -t:Publish -p:RuntimeIdentifiers=osx.10.11-x64
   ```
 
 * See the whole project with all targets included by the SDK:
 
-  ```console
+  ```dotnetcli
   dotnet msbuild -pp
   ```

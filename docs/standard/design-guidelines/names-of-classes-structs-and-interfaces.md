@@ -44,7 +44,7 @@ The naming guidelines that follow apply to general type naming.
   
  **✓ CONSIDER** using `T` as the type parameter name for types with one single-letter type parameter.  
   
-```  
+```csharp  
 public int IComparer<T> { ... }  
 public delegate bool Predicate<T>(T item);  
 public struct Nullable<T> where T:struct { ... }  
@@ -52,7 +52,7 @@ public struct Nullable<T> where T:struct { ... }
   
  **✓ DO** prefix descriptive type parameter names with `T`.  
   
-```  
+```csharp  
 public interface ISessionChannel<TSession> where TSession : ISession {  
     TSession Session { get; }  
 }  

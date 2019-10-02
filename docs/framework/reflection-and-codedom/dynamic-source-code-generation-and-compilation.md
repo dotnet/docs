@@ -25,16 +25,16 @@ The .NET Framework includes a mechanism called the Code Document Object Model (C
  The .NET Framework includes code generators and code compilers for <xref:Microsoft.CSharp.CSharpCodeProvider>, <xref:Microsoft.JScript.JScriptCodeProvider>, and <xref:Microsoft.VisualBasic.VBCodeProvider>.  
   
 ## In This Section  
- [Using the CodeDOM](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)  
+ [Using the CodeDOM](using-the-codedom.md)  
  Describes common uses, and demonstrates building a simple object graph using the CodeDOM.  
   
- [Generating Source Code and Compiling a Program from a CodeDOM Graph](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)  
+ [Generating Source Code and Compiling a Program from a CodeDOM Graph](generating-and-compiling-source-code-from-a-codedom-graph.md)  
  Describes how to generate source code and compile the generated code with an external compiler using classes defined in the `System.CodeDom.Compiler` namespace.  
   
- [How to: Create an XML Documentation File Using CodeDOM](../../../docs/framework/reflection-and-codedom/how-to-create-an-xml-documentation-file-using-codedom.md)  
+ [How to: Create an XML Documentation File Using CodeDOM](how-to-create-an-xml-documentation-file-using-codedom.md)  
  Describes how to use CodeDOM to generate code with XML documentation comments, and compile the generated code so that it creates the XML documentation output.  
   
- [How to: Create a Class Using CodeDOM](../../../docs/framework/reflection-and-codedom/how-to-create-a-class-using-codedom.md)  
+ [How to: Create a Class Using CodeDOM](how-to-create-a-class-using-codedom.md)  
  Describes how to use CodeDOM to generate a class containing fields, properties, a method, a constructor, and an entry point.  
   
 ## Reference  

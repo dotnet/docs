@@ -28,7 +28,7 @@ Table 6-1 lists common management tools related to their orchestrators, schedule
 
 Another choice for cluster-deployment and management is Azure Service Fabric. [Service Fabric](https://azure.microsoft.com/services/service-fabric/) is a Microsoft microservices platform that includes container orchestration as well as developer programming models to build highly scalable microservices applications. Service Fabric supports Docker in Linux and Windows Containers and can run in Windows and Linux servers.
 
-Following are Service Fabric management tools:
+The following are Service Fabric management tools:
 
 - [Azure portal for Service Fabric](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-creation-via-portal) cluster-related operations (create/update/delete) a cluster or configure its infrastructure (VMs, load balancer, networking, etc.)
 

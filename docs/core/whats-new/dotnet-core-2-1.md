@@ -33,7 +33,7 @@ A major focus of .NET Core 2.1 is improving build-time performance, particularly
 
 - Use of long-running SDK build servers, which are processes that span across individual `dotnet build` invocations. They eliminate the need to JIT-compile large blocks of code every time `dotnet build` is run. Build server processes can be automatically terminated with the following command:
 
-   ```console
+   ```dotnetcli
    dotnet buildserver shutdown
    ```
 
@@ -43,13 +43,13 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 - `dotnet watch` provides a file system watcher that waits for a file to change before executing a designated set of commands. For example, the following command automatically rebuilds the current project and generates verbose output whenever a file in it changes:
 
-   ```console
+   ```dotnetcli
    dotnet watch -- --verbose build
    ```
 
    Note the `--` option that precedes the `--verbose` option. It delimits the options passed directly to the `dotnet watch` command from the arguments that are passed to the child `dotnet` process. Without it, the `--verbose` option applies to the `dotnet watch` command, not the `dotnet build` command.
   
-   For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch)
+   For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch).
 
 - `dotnet dev-certs` generates and manages certificates used during development in ASP.NET Core applications.
 
@@ -65,7 +65,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 To install a Global Tool, you use the [dotnet tool install](../tools/dotnet-tool-install.md) command. For example:
 
-```console
+```dotnetcli
 dotnet tool install -g dotnetsay
 ```
 
@@ -110,7 +110,7 @@ You can modify this setting in any of three ways:
 
 - When using [.NET Core CLI tools](../tools/index.md), add the following option with the desired value to a .NET Core command such as `run`:
 
-   ```console
+   ```dotnetcli
    dotnet run --rollForwardOnNoCandidateFx=0
    ```
 

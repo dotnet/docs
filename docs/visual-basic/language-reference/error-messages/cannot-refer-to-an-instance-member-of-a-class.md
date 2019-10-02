@@ -12,7 +12,7 @@ ms.assetid: 39d9466b-c1f3-4406-91a5-3d6c52d23a3d
 # Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class
 You have tried to refer to a non-shared member of a class from within a shared procedure. The following example demonstrates such a situation.  
   
-```  
+```vb  
 Class sample  
     Public x as Integer  
     Public Shared Sub setX()  

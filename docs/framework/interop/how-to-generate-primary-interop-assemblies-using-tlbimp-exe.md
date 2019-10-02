@@ -13,9 +13,9 @@ ms.author: "ronpet"
 
 There are two ways to generate a primary interop assembly:
 
-- Using the [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) provided by the Windows SDK.
+- Using the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md) provided by the Windows SDK.
 
-  The most straightforward way to produce primary interop assemblies is to use the [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md). Tlbimp.exe provides the following safeguards:
+  The most straightforward way to produce primary interop assemblies is to use the [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md). Tlbimp.exe provides the following safeguards:
 
   - Checks for other registered primary interop assemblies before creating new interop assemblies for any nested type library references.
 
@@ -65,4 +65,4 @@ tlbimp MyLib.tlb /primary /keyfile:CompanyB.snk /namespace:CompanyB.MyLib /refer
 
 ## See also
 
-- [How to: Register Primary Interop Assemblies](../../../docs/framework/interop/how-to-register-primary-interop-assemblies.md)
+- [How to: Register Primary Interop Assemblies](how-to-register-primary-interop-assemblies.md)

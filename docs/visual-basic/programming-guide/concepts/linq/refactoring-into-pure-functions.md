@@ -43,7 +43,7 @@ End Module
 
 This code produces the following output:
 
-```
+```console
 StringOne-StringTwo
 ```
 

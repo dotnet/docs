@@ -16,7 +16,7 @@ Multiplies two numbers.
   
 ## Syntax  
   
-```  
+```vb  
 number1 * number2  
 ```  
   

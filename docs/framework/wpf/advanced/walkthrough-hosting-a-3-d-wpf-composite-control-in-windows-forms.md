@@ -45,7 +45,7 @@ You need the following components to complete this walkthrough:
 <a name="To_Create_the_Windows_Forms_Host_Project"></a>
 ## Create the host project
 
-1. Add a **WPF App (.NET Framework)** project named `WpfUserControlHost` to the solution. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
+1. Add a **Windows Forms App (.NET Framework)** project named `WpfUserControlHost` to the solution.
 
 2. In **Solution Explorer**, add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 

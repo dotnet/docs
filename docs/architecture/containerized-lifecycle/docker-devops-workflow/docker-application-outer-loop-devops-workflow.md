@@ -99,7 +99,7 @@ Therefore, after building the application containers in the CI pipeline, you als
 
 If you're using a single host, you can use Docker commands such as docker-compose to build and deploy related containers to test and validate the Docker environment in a single VM. But, if you're working with an orchestrator cluster like DC/OS, Kubernetes, or Docker Swarm, you need to deploy your containers through a different mechanism or orchestrator, depending on your selected cluster/scheduler.
 
-Following are several types of tests that you can run against Docker containers:
+The following are several types of tests that you can run against Docker containers:
 
 - Unit tests for Docker containers
 

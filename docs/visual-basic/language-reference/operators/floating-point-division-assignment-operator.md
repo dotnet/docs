@@ -16,7 +16,7 @@ Divides the value of a variable or property by the value of an expression and as
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty /= expression  
 ```  
   

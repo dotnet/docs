@@ -95,7 +95,7 @@ public class Mammal
 
 The COM client can obtain a pointer to a class interface named `_Mammal`. On .NET Framework, you can use the [Type Library Exporter (Tlbexp.exe)](../../framework/tools/tlbexp-exe-type-library-exporter.md) tool to generate a type library containing the `_Mammal` interface definition. The Type Library Exporter is not supported on .NET Core. If the `Mammal` class implemented one or more interfaces, the interfaces would appear under the coclass.
 
-```
+```console
 [odl, uuid(…), hidden, dual, nonextensible, oleautomation]
 interface _Mammal : IDispatch
 {

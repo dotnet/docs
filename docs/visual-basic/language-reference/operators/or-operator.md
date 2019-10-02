@@ -21,7 +21,7 @@ Performs a logical disjunction on two `Boolean` expressions, or a bitwise disjun
   
 ## Syntax  
   
-```  
+```vb  
 result = expression1 Or expression2  
 ```  
   

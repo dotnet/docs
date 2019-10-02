@@ -15,7 +15,7 @@ Compares two object reference variables.
   
 ## Syntax  
   
-```  
+```vb  
 result = object1 Is object2  
 ```  
   

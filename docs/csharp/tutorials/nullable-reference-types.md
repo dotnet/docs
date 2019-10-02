@@ -4,7 +4,7 @@ description: This advanced tutorial provides an introduction to nullable referen
 ms.date: 02/19/2019
 ms.custom: mvc
 ---
-# Tutorial: express your design intent more clearly with nullable and non-nullable reference types
+# Tutorial: Express your design intent more clearly with nullable and non-nullable reference types
 
 C# 8 introduces **nullable reference types**, which complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value*, others *may be missing a value*.
 
@@ -62,9 +62,9 @@ As you write the code, you'll see that a non-nullable reference type as the defa
 The app you'll build does the following steps:
 
 1. Creates a survey and adds questions to it.
-1. Create a pseudo-random set of respondents for the survey.
-1. Contact respondents until the completed survey size reaches the goal number.
-1. Write out important statistics on the survey responses.
+1. Creates a pseudo-random set of respondents for the survey.
+1. Contacts respondents until the completed survey size reaches the goal number.
+1. Writes out important statistics on the survey responses.
 
 ## Build the survey with nullable and non-nullable types
 

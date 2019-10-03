@@ -59,7 +59,7 @@ The nullable annotation context and nullable warning context can be set for a pr
 - `warnings`: The nullable annotation context is **disabled**. The nullable warning context is **enabled**.
   - Variables of a reference type are oblivious. All nullability warnings are enabled.
 - `annotations`: The nullable annotation context is **enabled**. The nullable warning context is **disabled**.
-  - Variables of a reference type are oblivious. All nullability warnings are enabled.
+  - Variables of a reference type are oblivious. All nullability warnings are disabled.
 - `disable`: The nullable annotation context is **disabled**. The nullable warning context is **disabled**.
   - Variables of a reference type are oblivious, just like earlier versions of C#. All nullability warnings are disabled.
 
@@ -68,9 +68,12 @@ You can also use directives to set these same contexts anywhere in your project:
 - `#nullable enable`: Sets the nullable annotation context and nullable warning context to **enabled**.
 - `#nullable disable`: Sets the nullable annotation context and nullable warning context to **disabled**.
 - `#nullable restore`: Restores the nullable annotation context and nullable warning context to the project settings.
-- `#pragma warning disable nullable`: Set the nullable warning context to **disabled**.
-- `#pragma warning enable nullable`: Set the nullable warning context to **enabled**.
-- `#pragma warning restore nullable`: Restores the nullable warning context to the project settings.
+- `#nullable disable warnings`: Set the nullable warning context to **disabled**.
+- `#nullable enable warnings`: Set the nullable warning context to **enabled**.
+- `#nullable restore warnings`: Restores the nullable warning context to the project settings.
+- `#nullable disable annotations`: Set the nullable annotation context to **disabled**.
+- `#nullable enable annotations`: Set the nullable annotation context to **enabled**.
+- `#nullable restore annotations`: Restores the annotation warning context to the project settings.
 
 The default nullable annotation and warning contexts are `disabled`. That decision means that your existing code compiles without changes and without generating any new warnings.
 

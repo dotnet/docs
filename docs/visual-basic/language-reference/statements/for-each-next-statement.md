@@ -149,8 +149,8 @@ However, this blocking of modification isn't determined by Visual Basic, but rat
 **Modifying Collection Elements.** The <xref:System.Collections.IEnumerator.Current%2A> property of the enumerator object is [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md), and it returns a local copy of each collection element. This means that you cannot modify the elements themselves in a `For Each`...`Next` loop. Any modification you make affects only the local copy from `Current` and isn't reflected back into the underlying collection. However, if an element is a reference type, you can modify the members of the instance to which it points. The following example modifies the `BackColor` member of each `thisControl` element. You cannot, however, modify `thisControl` itself.
 
 ```vb
-Sub lightBlueBackground(ByVal thisForm As System.Windows.Forms.Form)
-    For Each thisControl As System.Windows.Forms.Control In thisForm.Controls
+Sub LightBlueBackground(thisForm As System.Windows.Forms.Form)
+    For Each thisControl In thisForm.Controls
         thisControl.BackColor = System.Drawing.Color.LightBlue
     Next thisControl
 End Sub

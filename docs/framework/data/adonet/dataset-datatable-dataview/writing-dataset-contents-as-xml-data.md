@@ -35,7 +35,7 @@ string xmlDS = custDS.GetXml();
   
  When writing an XML representation of a <xref:System.Data.DataSet> that contains **DataRelation** objects, you will most likely want the resulting XML to have the child rows of each relation nested within their related parent elements. To accomplish this, set the **Nested** property of the **DataRelation** to **true** when you add the **DataRelation** to the <xref:System.Data.DataSet>. For more information, see [Nesting DataRelations](nesting-datarelations.md).  
   
- Following are two examples of how to write the XML representation of a <xref:System.Data.DataSet> to a file. The first example passes the file name for the resulting XML as a string to **WriteXml**. The second example passes a **System.IO.StreamWriter** object.  
+ The following are two examples of how to write the XML representation of a <xref:System.Data.DataSet> to a file. The first example passes the file name for the resulting XML as a string to **WriteXml**. The second example passes a **System.IO.StreamWriter** object.
   
 ```vb  
 custDS.WriteXml("Customers.xml", XmlWriteMode.WriteSchema)  

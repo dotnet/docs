@@ -67,7 +67,7 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
   Console.WriteLine(customerRow.CustomerID);  
 ```  
   
- Following is the XML Schema used for the example.  
+ The following is the XML Schema used for the example:
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

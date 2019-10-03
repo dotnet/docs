@@ -16,7 +16,7 @@ Adds the value of a numeric expression to the value of a numeric variable or pro
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty += expression  
 ```  
   

@@ -14,10 +14,10 @@ ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
 # \<add> Element for webRequestModules (Network Settings)
 Adds a custom Web request module to the application.  
   
- \<configuration>  
-\<system.net>  
-\<webRequestModules>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<webRequestModules>**](webrequestmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   

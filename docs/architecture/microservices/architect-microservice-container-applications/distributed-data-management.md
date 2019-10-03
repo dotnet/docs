@@ -41,7 +41,7 @@ In a hypothetical monolithic version of this application, when the price changes
 
 However, in a microservices-based application, the Product and Basket tables are owned by their respective microservices. No microservice should ever include tables/storage owned by another microservice in its own transactions, not even in direct queries, as shown in Figure 4-9.
 
-![A microservice cannot directly access a table in another microservice, eventual consistency must be used to synchronize data.](./media/image9.png)
+![Diagram showing that microservices database data can't be shared.](./media/distributed-data-management/indepentent-microservice-databases.png)
 
 **Figure 4-9**. A microservice can't directly access a table in another microservice
 

@@ -16,24 +16,24 @@ This topic lists key feature names for each version of Visual Basic, with detail
 ## Current version
 
 Visual Basic 16.0 / Visual Studio 2019 Version 16.0  
-For new features, see [Visual Basic 16.0](#visual-basic-160)
+For new features, see [Visual Basic 16.0](#visual-basic-160).
 
 ## Previous versions
 
 Visual Basic 15.8 / Visual Studio 2017 Version 15.8
-For new features, see [Visual Basic 15.8](#visual-basic-158)
+For new features, see [Visual Basic 15.8](#visual-basic-158).
 
 Visual Basic 15.5 / Visual Studio 2017 Version 15.5
-For new features, see [Visual Basic 15.5](#visual-basic-155)
+For new features, see [Visual Basic 15.5](#visual-basic-155).
 
 Visual Basic 15.3 / Visual Studio 2017 Version 15.3
-For new features, see [Visual Basic 15.3](#visual-basic-153)
+For new features, see [Visual Basic 15.3](#visual-basic-153).
 
 Visual Basic 2017 / Visual Studio 2017
-For new features, see [Visual Basic 2017](#visual-basic-2017)
+For new features, see [Visual Basic 2017](#visual-basic-2017).
 
 Visual Basic / Visual Studio 2015
-For new features, see [Visual Basic 14](#visual-basic-14)
+For new features, see [Visual Basic 14](#visual-basic-14).
 
 Visual Basic / Visual Studio 2013
 Technology previews of the .NET Compiler Platform (“Roslyn”)

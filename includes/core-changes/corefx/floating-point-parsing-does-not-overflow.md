@@ -1,4 +1,4 @@
-### Floating-point parsing operations no longer throw fail or throw an OverflowException
+### Floating-point parsing operations no longer fail or throw an OverflowException
 
 The floating-point parsing methods no longer throw an <xref:System.OverflowException> or return `false` when they parse a string whose numeric value is outside the range of the <xref:System.Single> or <xref:System.Double> floating point type.
 

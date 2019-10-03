@@ -25,7 +25,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## Incorporate nullable reference types into your designs
 
-In this tutorial, you'll build a library that models running a survey. The code uses both nullable reference types and non-nullable reference types to represent the real-world concepts. The survey questions can never be null. A respondent might prefer not to answer a question. The responses might be null in this case.
+In this tutorial, you'll build a library that models running a survey. The code uses both nullable reference types and non-nullable reference types to represent the real-world concepts. The survey questions can never be null. A respondent might prefer not to answer a question. The responses might be `null` in this case.
 
 The code you'll write for this sample expresses that intent, and the compiler enforces that intent.
 
@@ -52,12 +52,12 @@ These types will make use of both nullable and non-nullable reference types to e
 - The respondents can never be null. You'll want to track people you contacted, even respondents that declined to participate.
 - Any response to a question may be null. Respondents can decline to answer some or all questions.
 
-If you've programmed in C#, you may be so accustomed to reference types that allow null values that you may have missed other opportunities to declare non-nullable instances:
+If you've programmed in C#, you may be so accustomed to reference types that allow `null` values that you may have missed other opportunities to declare non-nullable instances:
 
 - The collection of questions should be non-nullable.
 - The collection of respondents should be non-nullable.
 
-As you write the code, you'll see that a non-nullable reference type as the default for references avoids common mistakes that could lead to null reference exceptions. One lesson from this tutorial is that you made decisions about which variables could or could not be null. The language didn't provide syntax to express those decisions. Now it does.
+As you write the code, you'll see that a non-nullable reference type as the default for references avoids common mistakes that could lead to <xref:System.NullReferenceException>s. One lesson from this tutorial is that you made decisions about which variables could or could not be `null`. The language didn't provide syntax to express those decisions. Now it does.
 
 The app you'll build does the following steps:
 
@@ -170,7 +170,7 @@ Add the following code to your `SurveyResponse` class:
 
 [!code-csharp[AnswerSurvey](~/samples/csharp/NullableIntroduction/NullableIntroduction/SurveyResponse.cs#AnswerSurvey)]
 
-The storage for the survey answers is a `Dictionary<int, string>?`, indicating that it may be null. You're using the new language feature to declare your design intent, both to the compiler and to anyone reading your code later. If you ever dereference `surveyResponses` without checking for the null value first, you'll get a compiler warning. You don't get a warning in the `AnswerSurvey` method because the compiler can determine the `surveyResponses` variable was set to a non-null value above.
+The storage for the survey answers is a `Dictionary<int, string>?`, indicating that it may be null. You're using the new language feature to declare your design intent, both to the compiler and to anyone reading your code later. If you ever dereference `surveyResponses` without checking for the `null` value first, you'll get a compiler warning. You don't get a warning in the `AnswerSurvey` method because the compiler can determine the `surveyResponses` variable was set to a non-null value above.
 
 Using `null` for missing answers highlights a key point for working with nullable reference types: your goal isn't to remove all `null` values from your program. Rather, your goal is to ensure that the code you write expresses the intent of your design. Missing values are a necessary concept to express in your code. The `null` value is a clear way to express those missing values. Trying to remove all `null` values only leads to defining some other way to express those missing values without `null`.
 

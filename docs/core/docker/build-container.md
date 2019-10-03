@@ -26,12 +26,12 @@ You'll understand the Docker container build and deploy tasks for a .NET Core ap
 
 Install the following prerequisites:
 
-* [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download)\
+- [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download)\
 If you have .NET Core installed, use the `dotnet --info` command to determine which SDK you're using.
 
-* [Docker Community Edition](https://www.docker.com/products/docker-desktop)
+- [Docker Community Edition](https://www.docker.com/products/docker-desktop)
 
-* A temporary working folder for the *Dockerfile* and .NET Core example app. In this tutorial, the name `docker-working` is used as the working folder.
+- A temporary working folder for the *Dockerfile* and .NET Core example app. In this tutorial, the name `docker-working` is used as the working folder.
 
 ### Use SDK version 2.2
 
@@ -407,13 +407,13 @@ exit
 
 Docker has many different commands that cover what you want to do with your container and images. These Docker commands are essential to managing your containers:
 
-* [docker build](https://docs.docker.com/engine/reference/commandline/build/)
-* [docker run](https://docs.docker.com/engine/reference/commandline/run/)
-* [docker ps](https://docs.docker.com/engine/reference/commandline/ps/)
-* [docker stop](https://docs.docker.com/engine/reference/commandline/stop/)
-* [docker rm](https://docs.docker.com/engine/reference/commandline/rm/)
-* [docker rmi](https://docs.docker.com/engine/reference/commandline/rmi/)
-* [docker image](https://docs.docker.com/engine/reference/commandline/image/)
+- [docker build](https://docs.docker.com/engine/reference/commandline/build/)
+- [docker run](https://docs.docker.com/engine/reference/commandline/run/)
+- [docker ps](https://docs.docker.com/engine/reference/commandline/ps/)
+- [docker stop](https://docs.docker.com/engine/reference/commandline/stop/)
+- [docker rm](https://docs.docker.com/engine/reference/commandline/rm/)
+- [docker rmi](https://docs.docker.com/engine/reference/commandline/rmi/)
+- [docker image](https://docs.docker.com/engine/reference/commandline/image/)
 
 ## Clean up resources
 
@@ -451,7 +451,7 @@ Use the `docker images` command to see a list of images installed.
 
 ## Next steps
 
-* [Try the ASP.NET Core Microservice Tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
-* [Review the Azure services that support containers.](https://azure.microsoft.com/overview/containers/)
-* [Read about Dockerfile commands.](https://docs.docker.com/engine/reference/builder/)
-* [Explore the Container Tools for Visual Studio](/visualstudio/containers/overview)
+- [Try the ASP.NET Core Microservice Tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
+- [Review the Azure services that support containers.](https://azure.microsoft.com/overview/containers/)
+- [Read about Dockerfile commands.](https://docs.docker.com/engine/reference/builder/)
+- [Explore the Container Tools for Visual Studio](/visualstudio/containers/overview)

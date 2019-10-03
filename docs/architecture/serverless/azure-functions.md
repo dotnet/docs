@@ -54,9 +54,9 @@ For more information, see [App service plans](https://docs.microsoft.com/azure/a
 
 There are three common ways you can create function apps.
 
-* Script functions in the portal.
-* Create the necessary resources using the Azure Command Line Interface (CLI).
-* Build functions locally using your favorite IDE and publish them to Azure.
+- Script functions in the portal.
+- Create the necessary resources using the Azure Command Line Interface (CLI).
+- Build functions locally using your favorite IDE and publish them to Azure.
 
 For more information on creating a scripted function in the portal, see [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function).
 
@@ -70,16 +70,16 @@ Functions are invoked by a *trigger* and can have exactly one. In addition to in
 
 Some common triggers include:
 
-* Blob Storage: invoke your function when a file or folder is uploaded or changed in storage.
-* HTTP: invoke your function like a REST API.
-* Queue: invoke your function when items exist in a queue.
-* Timer: invoke your function on a regular cadence.
+- Blob Storage: invoke your function when a file or folder is uploaded or changed in storage.
+- HTTP: invoke your function like a REST API.
+- Queue: invoke your function when items exist in a queue.
+- Timer: invoke your function on a regular cadence.
 
 Examples of bindings include:
 
-* CosmosDB: easily connect to the database to load or save files.
-* Table Storage: work with key/value storage from your function app.
-* Queue Storage: easily retrieve items from a queue, or place new items on the queue.
+- CosmosDB: easily connect to the database to load or save files.
+- Table Storage: work with key/value storage from your function app.
+- Queue Storage: easily retrieve items from a queue, or place new items on the queue.
 
 The following example *functions.json* file defines a trigger and a binding:
 
@@ -125,17 +125,17 @@ For a full list of triggers and bindings, see [Azure Functions triggers and bind
 
 Proxies provide redirect functionality for your application. Proxies expose an endpoint and map that endpoint to another resource. With proxies, you can:
 
-* Reroute an incoming request to another endpoint.
-* Modify the incoming request before it's passed along.
-* Modify or provide a response.
+- Reroute an incoming request to another endpoint.
+- Modify the incoming request before it's passed along.
+- Modify or provide a response.
 
 Proxies are used for scenarios such as:
 
-* Simplifying, shortening, or changing the URL.
-* Providing a consistent API prefix to multiple back-end services.
-* Mocking a response to an endpoint being developed.
-* Providing a static response to a well-known endpoint.
-* Keeping an API endpoint consistent while the back end is moved or migrated.
+- Simplifying, shortening, or changing the URL.
+- Providing a consistent API prefix to multiple back-end services.
+- Mocking a response to an endpoint being developed.
+- Providing a static response to a well-known endpoint.
+- Keeping an API endpoint consistent while the back end is moved or migrated.
 
 Proxies are stored as JSON definitions. Here is an example:
 

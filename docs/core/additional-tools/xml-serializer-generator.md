@@ -24,8 +24,8 @@ Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-
 
 To complete this tutorial:
 
-* [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later
-* Your favorite code editor.
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later.
+- Your favorite code editor.
 
 > [!TIP]
 > Need to install a code editor? Try [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)!
@@ -124,6 +124,6 @@ Congratulations! You have just:
 
 ## Related resources
 
-* [Introducing XML Serialization](../../standard/serialization/introducing-xml-serialization.md)
-* [How to: Serialize Using XmlSerializer (C#)](../../csharp/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
-* [How to: Serialize Using XmlSerializer (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
+- [Introducing XML Serialization](../../standard/serialization/introducing-xml-serialization.md)
+- [How to: Serialize Using XmlSerializer (C#)](../../csharp/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)
+- [How to: Serialize Using XmlSerializer (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md)

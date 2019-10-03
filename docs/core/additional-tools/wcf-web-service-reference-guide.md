@@ -63,9 +63,9 @@ Using the **ASP.NET Core Web Application** project template as an example, this 
 
 While displaying progress, the tool:
 
-* Downloads metadata from the WCF service.
-* Generates the service reference code in a file named *reference.cs*, and adds it to your project under the **Connected Services** node.
-* Updates the project file (.csproj) with NuGet package references required to compile and run on the target platform.
+- Downloads metadata from the WCF service.
+- Generates the service reference code in a file named *reference.cs*, and adds it to your project under the **Connected Services** node.
+- Updates the project file (.csproj) with NuGet package references required to compile and run on the target platform.
 
 ![Visual Studio Progress window](./media/wcf-web-service-reference-guide/wcfcs-ProgressWindow.png)
 
@@ -79,4 +79,4 @@ If you have any questions or feedback, [open an issue on GitHub](https://github.
 
 ### Release notes
 
-* Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/WCF-Web-Service-Reference-notes.md) for updated release information, including known issues.
+- Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/WCF-Web-Service-Reference-notes.md) for updated release information, including known issues.

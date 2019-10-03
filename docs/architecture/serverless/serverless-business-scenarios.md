@@ -81,15 +81,15 @@ For more information, see [Azure IoT Hub ping](https://azure.microsoft.com/resou
 
 ## Recommended resources
 
-* [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/)
-* [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/)
-* [Azure Storage for serverless .NET apps in minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/)
-* [Bring your own app](https://github.com/JeremyLikness/bring-own-app-connect-17)
-* [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol)
-* [Event grid glue](https://github.com/JeremyLikness/Event-Grid-Glue)
-* [Implementing a simple Azure Function with a Xamarin.Forms client](https://azure.microsoft.com/resources/samples/functions-xamarin-getting-started/)
-* [Lift and shift with serverless Azure functions](https://channel9.msdn.com/Events/Connect/2017/E102)
-* [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener)
+- [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/)
+- [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/)
+- [Azure Storage for serverless .NET apps in minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/)
+- [Bring your own app](https://github.com/JeremyLikness/bring-own-app-connect-17)
+- [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol)
+- [Event grid glue](https://github.com/JeremyLikness/Event-Grid-Glue)
+- [Implementing a simple Azure Function with a Xamarin.Forms client](https://azure.microsoft.com/resources/samples/functions-xamarin-getting-started/)
+- [Lift and shift with serverless Azure functions](https://channel9.msdn.com/Events/Connect/2017/E102)
+- [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener)
 
 >[!div class="step-by-step"]
 >[Previous](orchestration-patterns.md)

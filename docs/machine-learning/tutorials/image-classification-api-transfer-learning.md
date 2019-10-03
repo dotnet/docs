@@ -99,14 +99,14 @@ SDNET2018 is an image dataset that contains annotations for cracked and non-crac
 
 The data is organized in three sub-directories:
 
-    - D contains bridge deck images
-    - P contains pavement images
-    - W contains wall images
+- D contains bridge deck images
+- P contains pavement images
+- W contains wall images
 
 Each of these subdirectories contains two additional pre-fixed sub-directories:
 
-    - C is the prefix used for cracked surfaces
-    - U is the prefix used for uncracked surfaces
+- C is the prefix used for cracked surfaces
+- U is the prefix used for uncracked surfaces
 
 In this tutorial, only bridge deck images are used.
 
@@ -133,14 +133,14 @@ In this tutorial, only bridge deck images are used.
 
     1. Below the `Program` class in *Program.cs*, define the schema of your input data in a new class called `ModelInput`.
 
-    ```csharp
-    class ImageInput
-    {
-        public string ImagePath { get; set; }
+        ```csharp
+        class ImageInput
+        {
+            public string ImagePath { get; set; }
 
-        public string Label { get; set; }
-    }
-    ```
+            public string Label { get; set; }
+        }
+        ```
 
     `ModelInput` contains the following properties:
 
@@ -149,14 +149,14 @@ In this tutorial, only bridge deck images are used.
 
     1. Then, below the `ModelInput` class, define the schema of your output data in a new class called `ModelOutput`. 
 
-    ```csharp
-    class ModelOutput
-    {
-        public string Label { get; set; }
+        ```csharp
+        class ModelOutput
+        {
+            public string Label { get; set; }
 
-        public UInt32 PredictedLabel { get; set; }
-    }
-    ```
+            public UInt32 PredictedLabel { get; set; }
+        }
+        ```
 
     `ModelOutput` contains the following properties:
 

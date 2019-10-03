@@ -101,7 +101,7 @@ The data is organized in three sub-directories:
 
     - D contains bridge deck images
     - P contains pavement images
-    - W contains bridge deck images
+    - W contains wall images
 
 Each of these subdirectories contains two additional pre-fixed sub-directories:
 

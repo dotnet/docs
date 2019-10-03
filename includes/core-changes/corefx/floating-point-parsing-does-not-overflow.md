@@ -18,7 +18,7 @@ This change was made for improved IEEE 754:2008 compliance.
 
 This change can affect your code in either of two ways:
 
-- Your code depends on the handler for the <xref:System.OverflowException> to execute when an overflow occurs. In this case, you should remove the `catch` statement and place any necessary code in an `If` statement that tests whether <xref:System.Double.IsInfinity?displayProperty=nameWithType> or <xref:System.Single.IsInfinity?displayProperty=nameWithType> is `true`.
+- Your code depends on the handler for the <xref:System.OverflowException> to execute when an overflow occurs. In this case, you should remove the `catch` statement and place any necessary code in an `If` statement that tests whether <xref:System.Double.IsInfinity%2A?displayProperty=nameWithType> or <xref:System.Single.IsInfinity%2A?displayProperty=nameWithType> is `true`.
 
 - Your code assumes that floating-point values are not `Infinity`. In this case, you should add the necessary code to check for floating-point values of `PositiveInfinity` and `NegativeInfinity`.
 

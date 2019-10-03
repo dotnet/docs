@@ -57,7 +57,6 @@ To become active, a service must be hosted within a run-time environment that cr
   
 ## See also
 
-- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)
 - [Basic Programming Lifecycle](../../../docs/framework/wcf/basic-programming-lifecycle.md)
 - [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)
 - [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)

@@ -22,15 +22,14 @@ This topic summarizes information about the Windows Communication Foundation (WC
 ## Reference  
  <xref:System.ServiceModel>  
   
-## Related Sections  
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
+## Related Sections
+
+[Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
   
- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)  
+[Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)  
   
- [Windows Communication Foundation Samples](../../../docs/framework/wcf/samples/index.md)  
+[Windows Communication Foundation Samples](../../../docs/framework/wcf/samples/index.md)  
   
- [Tools](../../../docs/framework/wcf/diagnostics/exceptions-reference/tools.md)  
+[Tools](../../../docs/framework/wcf/diagnostics/exceptions-reference/tools.md)  
   
- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)  
-  
- [General Reference](../../../docs/framework/wcf/general-reference.md)
+[General Reference](../../../docs/framework/wcf/general-reference.md)

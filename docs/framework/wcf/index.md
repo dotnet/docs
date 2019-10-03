@@ -40,9 +40,6 @@ This section of the documentation provides information about Windows Communicati
  [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)  
  Describes the diagnostic features of WCF  
   
- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)  
- Describes system requirements needed to run WCF  
-  
  [Operating System Resources Required by WCF](../../../docs/framework/wcf/operating-system-resources-required-by-wcf.md)  
  Describes operating system resources required by WCF  
   

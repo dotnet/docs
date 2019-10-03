@@ -45,7 +45,6 @@ This section presents the fundamentals for creating Windows Communication Founda
  <xref:System.ServiceModel.Description>  
   
 ## Related Sections  
- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)  
   
  [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)  
   

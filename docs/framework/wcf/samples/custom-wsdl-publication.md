@@ -20,7 +20,7 @@ This sample demonstrates how to:
 ## Service  
  The service in this sample is marked with two custom attributes. The first, the `WsdlDocumentationAttribute`, accepts a string in the constructor and can be applied to provide a contract interface or operation with a string that describes its usage. The second, `WsdlParamOrReturnDocumentationAttribute`, can be applied to return values or parameters to describe those values in the operation. The following example shows a service contract, `ICalculator`, described using these attributes.  
   
-```  
+```csharp  
 // Define a service contract.      
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 // Document it.  

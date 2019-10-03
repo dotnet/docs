@@ -18,19 +18,19 @@ The ConfigurationCodeGenerator is a tool that you can use to expose your custom 
   
 1. At the command prompt type the following if you have both a custom `BindingElement` type and a custom `Binding` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /be:YourCustomBindingElementTypeName /sb:YourCustomStdBindingTypeName /dll:TheAssemblyWhereTheseTypesAreDefined  
     ```  
   
      Or type the following if you have only a custom `BindingElement` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /be:YourCustomBindingElementTypeName /dll: TheAssemblyWhereThisTypeIsDefined  
     ```  
   
      Or type the following if you have only a custom `Binding` type:  
   
-    ```  
+    ```console  
     ConfigurationCodeGenerator.exe /sb:YourCustomStdBindingTypeName /dll:TheAssemblyWhereThisTypeIsDefined  
     ```  
   

@@ -14,7 +14,9 @@ helpviewer_keywords:
 ms.assetid: f1de5a0f-76c5-4833-819f-5222b8146340
 ---
 # Network Settings Schema
-Network settings specify how the .NET Framework connects to the Internet. The following table describes the function of each child configuration element under the [\<system.Net> Element (Network Settings)](system-net-element-network-settings.md).  
+Network settings specify how the .NET Framework connects to the Internet.
+
+The \<system.net> settings specify how the .NET Framework connects to the network. The following table describes the function of each child configuration element under the [\<system.Net> Element (Network Settings)](system-net-element-network-settings.md).  
   
 |Element|Description|  
 |-------------|-----------------|  
@@ -25,7 +27,7 @@ Network settings specify how the .NET Framework connects to the Internet. The fo
 |[\<requestCaching> Element (Network Settings)](requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
 |[\<webRequestModules> Element (Network Settings)](webrequestmodules-element-network-settings.md)|Specifies the modules used to request information from Internet hosts.|  
   
- Uri settings specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs). The following table describes the function of each child configuration element under the [\<Uri> Element (Uri Settings)](uri-element-uri-settings.md).  
+The \<uri> settings specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs). The following table describes the function of each child configuration element under the [\<uri> Element (Uri Settings)](uri-element-uri-settings.md).  
   
 |Element|Description|  
 |-------------|-----------------|  

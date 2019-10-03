@@ -106,7 +106,7 @@ This sample demonstrates how to implement a custom client issued token provider.
 ## Custom Client Credentials and Token Provider  
  The following steps show how to develop a custom token provider that caches issued tokens and integrate it with WCF: security.  
   
-#### To develop a custom token provider  
+### To develop a custom token provider  
   
 1. Write a custom token provider.  
   
@@ -114,7 +114,7 @@ This sample demonstrates how to implement a custom client issued token provider.
   
      To perform this task, the custom token provider derives the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class and overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%2A> method. This method tries to get a token from the cache, or if a token cannot be found in the cache, retrieves a token from the underlying provider and then caches that token. In both cases the method returns a `SecurityToken`.  
   
-    ```  
+    ```csharp  
     protected override SecurityToken GetTokenCore(TimeSpan timeout)  
     {  
       GenericXmlSecurityToken token;  
@@ -176,11 +176,11 @@ This sample demonstrates how to implement a custom client issued token provider.
   
       public IssuedTokenCache IssuedTokenCache  
       {  
-        Get  
+        get  
         {  
           return this.cache;  
         }  
-        Set  
+        set  
         {  
           this.cache = value;  
         }  
@@ -206,7 +206,7 @@ This sample demonstrates how to implement a custom client issued token provider.
       public abstract void AddToken ( GenericXmlSecurityToken token, EndpointAddress target, EndpointAddress issuer);  
       public abstract bool TryGetToken(EndpointAddress target, EndpointAddress issuer, out GenericXmlSecurityToken cachedToken);  
     }  
-    Configure the client to use the custom client credential.  
+    // Configure the client to use the custom client credential.  
     ```  
   
      For the client to use the custom client credential, the sample deletes the default client credential class and supplies the new client credential class.  
@@ -225,7 +225,7 @@ This sample demonstrates how to implement a custom client issued token provider.
 ## The Setup.cmd Batch File  
  The Setup.cmd batch file included with this sample allows you to configure the server and security token service with relevant certificates to run a self-hosted application. The batch file creates two certificates both in the CurrentUser/TrustedPeople certificate store. The first certificate has a subject name of CN=STS and is used by the Security Token Service to sign the security tokens that it issues to the client. The second certificate has a subject name of CN=localhost and is used by the Security Token Service to encrypt a secret so that the service can decrypt it.  
   
-#### To set up, build, and run the sample  
+### To set up, build, and run the sample  
   
 1. Run the Setup.cmd file to create the required certificates.  
   
@@ -235,7 +235,7 @@ This sample demonstrates how to implement a custom client issued token provider.
   
 4. Run Client.exe.  
   
-#### To clean up after the sample  
+### To clean up after the sample  
   
 1. Run Cleanup.cmd in the samples folder once you have finished running the sample.  
   

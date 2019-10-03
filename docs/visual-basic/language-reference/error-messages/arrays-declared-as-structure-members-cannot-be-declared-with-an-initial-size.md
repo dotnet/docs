@@ -19,7 +19,7 @@ An array in a structure is declared with an initial size. You cannot initialize 
   
 2. If you require a certain size of array, you can redimension a dynamic array with a [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md) when your code is running. The following example illustrates this.  
   
-    ```  
+    ```vb  
     Structure demoStruct  
         Public demoArray() As Integer  
     End Structure  

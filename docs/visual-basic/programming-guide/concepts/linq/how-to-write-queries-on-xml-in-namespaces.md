@@ -39,7 +39,7 @@ End Module
   
  This example produces the following output:  
   
-```  
+```console  
 1  
 2  
 3  
@@ -76,7 +76,7 @@ End Module
   
  This example produces the following output:  
   
-```  
+```console  
 1  
 2  
 3  

@@ -21,7 +21,7 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
 
      Custom attributes within managed code can enhance the interoperability of a component.
 
-- [Packaging an assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md).
+- [Packaging an assembly for COM](packaging-an-assembly-for-com.md).
 
      COM developers might require that you summarize the steps involved in referencing and deploying your assemblies.
 
@@ -29,11 +29,11 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
 
 ## To consume a managed type from COM
 
-1. [Register assemblies with COM](../../../docs/framework/interop/registering-assemblies-with-com.md).
+1. [Register assemblies with COM](registering-assemblies-with-com.md).
 
      Types in an assembly (and type libraries) must be registered at design time. If an installer does not register the assembly, instruct COM developers to use Regasm.exe.
 
-2. [Reference .NET types from COM](../../../docs/framework/interop/how-to-reference-net-types-from-com.md).
+2. [Reference .NET types from COM](how-to-reference-net-types-from-com.md).
 
      COM developers can reference types in an assembly using the same tools and techniques they use today.
 
@@ -47,5 +47,5 @@ Writing a .NET type and consuming that type from unmanaged code are distinct act
 
 ## See also
 
-- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)
-- [COM Interop Sample: COM Client and .NET Server](../../../docs/framework/interop/com-interop-sample-com-client-and-net-server.md)
+- [Interoperating with Unmanaged Code](index.md)
+- [COM Interop Sample: COM Client and .NET Server](com-interop-sample-com-client-and-net-server.md)

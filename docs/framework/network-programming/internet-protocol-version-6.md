@@ -36,7 +36,7 @@ The Internet Protocol version 6 (IPv6) is a new suite of standard protocols for 
   
 - Built-in authentication and confidentiality.  
   
- For more information, see [IPv6 Addressing](../../../docs/framework/network-programming/ipv6-addressing.md), [IPv6 Routing](../../../docs/framework/network-programming/ipv6-routing.md), [IPv6 Auto-Configuration](../../../docs/framework/network-programming/ipv6-auto-configuration.md), [Enabling and Disabling IPv6](../../../docs/framework/network-programming/enabling-and-disabling-ipv6.md), and [How to: Modify the Computer Configuration File to Enable IPv6 Support](../../../docs/framework/network-programming/how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md).  
+ For more information, see [IPv6 Addressing](ipv6-addressing.md), [IPv6 Routing](ipv6-routing.md), [IPv6 Auto-Configuration](ipv6-auto-configuration.md), [Enabling and Disabling IPv6](enabling-and-disabling-ipv6.md), and [How to: Modify the Computer Configuration File to Enable IPv6 Support](how-to-modify-the-computer-configuration-file-to-enable-ipv6-support.md).  
   
 ## References  
  The following are selected RFC documents that you can find at the [Internet Engineering Task Force (IETF)](https://www.ietf.org/) website:  
@@ -54,5 +54,5 @@ The Internet Protocol version 6 (IPv6) is a new suite of standard protocols for 
 ## See also
 
 - [IPv6 Sockets Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms180981%28v=vs.85%29)
-- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
-- [Sockets](../../../docs/framework/network-programming/sockets.md)
+- [Network Programming Samples](network-programming-samples.md)
+- [Sockets](sockets.md)

@@ -14,6 +14,7 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Datab
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > - Prepare Microsoft.Spark.Worker
 > - Publish your Spark .NET app
 > - Deploy your app to Databricks
@@ -44,7 +45,7 @@ Before you start, do the following:
 
    You can run the following command on Linux.
 
-   ```bash
+   ```dotnetcli
    dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
    ```
 
@@ -114,11 +115,11 @@ You can use `set JAR` or `spark-submit` to submit your job to Databricks.
 
 3. Set the parameters appropriately.
 
-   ```
-   Main Class: org.apache.spark.deploy.dotnet.DotnetRunner
-   Arguments /dbfs/apps/<your-app-name>.zip <your-app-main-class>
-   ```
- 
+   | Parameter   | Value                                                |
+   |-------------|------------------------------------------------------|
+   | Main Class  | org.apache.spark.deploy.dotnet.DotnetRunner          |
+   | Arguments   | /dbfs/apps/<your-app-name>.zip <your-app-main-class> |
+
 4. Configure the **Cluster** to point to the existing cluster you created the **Init Script** for in the previous section.
 
 #### Publish and run your app

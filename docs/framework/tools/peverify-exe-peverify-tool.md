@@ -16,13 +16,13 @@ ms.author: "ronpet"
 # Peverify.exe (PEVerify Tool)
 The PEVerify tool helps developers who generate Microsoft intermediate language (MSIL) (such as compiler writers, script engine developers, and so on) to determine whether their MSIL code and associated metadata meet type safety requirements. Some compilers generate verifiably type-safe code only if you avoid using certain language constructs. If, as a developer, you are using such a compiler, you may want to verify that you have not compromised the type safety of your code. In this situation, you can run the PEVerify tool on your files to check the MSIL and metadata.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 peverify filename [options]  
 ```  
   
@@ -62,25 +62,25 @@ peverify filename [options]
 ## Examples  
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`.  
   
-```  
+```console  
 peverify myAssembly.exe /md /il  
 ```  
   
  Upon successful completion of the above request, Peverify.exe displays the following message.  
   
-```  
+```output
 All classes and methods in myAssembly.exe Verified  
 ```  
   
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`. The tool displays the time required to perform these checks.  
   
-```  
+```console  
 peverify myAssembly.exe /md /il /clock  
 ```  
   
  Upon successful completion of the above request, Peverify.exe displays the following message.  
   
-```  
+```output
 All classes and methods in myAssembly.exe Verified  
 Timing: Total run     320 msec  
         MD Val.cycle  40 msec  
@@ -91,32 +91,32 @@ Timing: Total run     320 msec
   
  The following command performs metadata validation checks and MSIL type safety verification checks for methods implemented in the assembly `myAssembly.exe`. Peverify.exe stops, however, when it reaches the maximum error count of 100. The tool also ignores the specified error codes.  
   
-```  
+```console  
 peverify myAssembly.exe /break=100 /ignore=0x12345678,0xABCD1234  
 ```  
   
  The following command produces the same result as the above previous example, but specifies the error codes to ignore in the response file `ignoreErrors.rsp`.  
   
-```  
+```console  
 peverify myAssembly.exe /break=100 /ignore@ignoreErrors.rsp  
 ```  
   
  The response file can contain a comma-separated list of error codes.  
   
-```  
+```text
 0x12345678, 0xABCD1234  
 ```  
   
  Alternatively, the response file can be formatted with one error code per line.  
   
-```  
+```text
 0x12345678  
 0xABCD1234  
 ```  
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Writing Verifiably Type-Safe Code](../../../docs/framework/misc/code-access-security-basics.md#typesafe_code)
+- [Tools](index.md)
+- [Writing Verifiably Type-Safe Code](../misc/code-access-security-basics.md#typesafe_code)
 - [Type Safety and Security](../../standard/security/key-security-concepts.md#type-safety-and-security)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

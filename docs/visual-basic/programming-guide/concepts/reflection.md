@@ -58,4 +58,4 @@ System.Console.WriteLine(info)
 ## See also
 
 - [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)
-- [Assemblies in the Common Language Runtime](../../../framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](../../../standard/assembly/index.md)

@@ -8,8 +8,8 @@ Specifies the collection used in [SELECT](select-entity-sql.md) statements.
 
 ## Syntax
 
-```
-FROM expression [ ,...n ] as C
+```sql
+FROM expression [ ,...n ] AS C
 ```
 
 ## Arguments

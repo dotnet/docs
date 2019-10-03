@@ -17,7 +17,7 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
   
 2. Pass the XML Schema as an argument to the XML Schema Definition tool, which creates a set of classes that are precisely matched to the XML Schema, for example:  
   
-    ```  
+    ```console  
     xsd mySchema.xsd  
     ```  
   
@@ -40,7 +40,7 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
   
 3. Pass the DLL as an argument to Xsd.exe, for example:  
   
-    ```  
+    ```console  
     xsd MyFile.dll  
     ```  
   

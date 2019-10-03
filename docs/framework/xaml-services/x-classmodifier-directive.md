@@ -16,7 +16,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:Class="namespace.classname" x:ClassModifier="NotPublic">  
    ...  
 </object>  

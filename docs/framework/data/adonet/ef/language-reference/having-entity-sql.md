@@ -8,7 +8,7 @@ Specifies a search condition for a group or an aggregate.
   
 ## Syntax  
   
-```  
+```sql  
 [ HAVING search_condition ]  
 ```  
   
@@ -22,9 +22,9 @@ Specifies a search condition for a group or an aggregate.
 > [!NOTE]
 > HAVING can be used only with the [SELECT](select-entity-sql.md) statement. When [GROUP BY](group-by-entity-sql.md) is not used, HAVING behaves like a WHERE clause.  
   
- The HAVING clause works like the WHERE clause except that it is applied after the GROUP BY operation. This means that the HAVING clause can only make references to grouping aliases and aggregates, as illustrated in the following example.  
+The HAVING clause works like the WHERE clause except that it is applied after the GROUP BY operation. This means that the HAVING clause can only make references to grouping aliases and aggregates, as illustrated in the following example:
   
-```  
+```sql  
 SELECT Name, SUM(o.Price * o.Quantity) AS Total FROM orderLines AS o GROUP BY o.Product AS Name  
 HAVING SUM(o.Quantity) > 1  
 ```  
@@ -38,7 +38,7 @@ HAVING SUM(o.Quantity) > 1
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#HAVING](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#having)]  
+ [!code-sql[DP EntityServices Concepts#HAVING](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#having)]  
   
 ## See also
 

@@ -25,6 +25,10 @@ landingContent:
         links:
           - text: What is ML.NET?
             url: how-does-mldotnet-work.md
+      - linkListType: video
+        links:
+          - text: Machine learning basics
+            url: https://channel9.msdn.com/Series/MLNET/MLNET-Machine-Learning-Introduction-1-of-8         
       - linkListType: concept
         links:
           - text: Machine learning tasks & algorithms
@@ -32,20 +36,20 @@ landingContent:
           - text: How to choose an algorithm
             url: how-to-choose-an-ml-net-algorithm.md
 
-   # Get started 
-  - title: Get started in 10 minutes 
+  # Get started
+  - title: Get started in 10 minutes
     linkLists:
       - linkListType: quickstart
         links:
           - text: Set up Model Builder in Visual Studio
             url: how-to-guides/install-model-builder.md
-          - text: Develop code-first with the API
-            url: xxxxxxxx.md
-          - text: Install CLI on Mac OS, Windows, or Linux
+          - text: Get started with the ML.NET API
+            url: https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro  
+          - text: Install the CLI on Mac OS, Windows, or Linux
             url: how-to-guides/install-ml-net-cli.md
 
- # API Card
-  - title: Tutorials for business scenarios
+ # Tutorials - scenarios
+  - title: Tutorials
     linkLists:
       - linkListType: tutorial
         links:
@@ -75,38 +79,17 @@ landingContent:
           - text: Prepare data for building a model
             url: how-to-guides/prepare-data-ml-net.md
           - text: Train & evaluate a model
-            url: how-to-guides/train-machine-learning-model-ml-net.md
+            url: how-to-guides/train-machine-learning-model-ml-net.md         
           - text: Make predictions with a trained model
             url: how-to-guides/machine-learning-model-predictions-ml-net.md
           - text: Save & load a trained model
-            url: how-to-guides/save-load-machine-learning-models-ml-net.md                         
-  
-  # CLI card
-  - title:  Use the ML.NET CLI
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Automate model training with the ML.NET CLI
-            url: automate-training-with-cli.md
-      - linkListType: quickstart
-        links:
-          - text: Install ML.NET CLI
-            url: how-to-guides/install-ml-net-cli.md
-      - linkListType: tutorial
-        links:
-          - text: Analyze sentiment - ML.NET CLI & AutoML
-            url: tutorials/mlnet-cli.md
-
-  # Reference card
-  - title: API reference
-    linkLists:
+            url: how-to-guides/save-load-machine-learning-models-ml-net.md   
+          - text: Retrain a model
+            url: how-to-guides/retrain-model-ml-net.md                 
       - linkListType: reference
         links:
           - text: ML.NET API reference  
-            url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
-          - text: ML.NET API reference (preview)
-            url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
-          - text: ML.NET CLI reference
-            url: reference/ml-net-cli-reference.md
-          - text: AutoML API reference
-            url: https://docs.microsoft.com/dotnet/api/?view=automl-dotnet
+            url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet 
+          - text: ML.NET samples
+            url: https://github.com/dotnet/machinelearning-samples
+

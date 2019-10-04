@@ -7,7 +7,7 @@ ms.date: 10/01/2019
 ---
 # dotnet-counters
 
-**This article applies to: .NET Core 3.0 SDK and later versions
+**This article applies to: ✓** .NET Core 3.0 SDK and later versions
 
 ## Install dotnet-counters
 
@@ -17,7 +17,7 @@ To install the latest release version of the `dotnet-counters` [NuGet package](h
 dotnet tool install --global dotnet-counters
 ```
 
-For details and other options, see [Installing the diagnostics tools](installing.md).
+For details and other options, see [Installing the diagnostics tools](install-tools.md).
 
 ## Synopsis
 

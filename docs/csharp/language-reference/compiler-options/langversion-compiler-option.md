@@ -29,17 +29,17 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 |preview|The compiler accepts all valid language syntax from the latest preview version that it can support.|
 |latest|The compiler accepts all valid language syntax from the latest version (including minor releases) that it can support.|
 |latestMajor|The compiler accepts all valid language syntax from the latest major version that it can support.|
-|8.0|The compiler accepts only syntax that is included in C# 8.0 or lower. <sup id="TCS80">[CS80](#FCS80)</sup>|
-|7.3|The compiler accepts only syntax that is included in C# 7.3 or lower <sup id="TCS73">[CS73](#FCS73)</sup>|
-|7.2|The compiler accepts only syntax that is included in C# 7.2 or lower <sup id="TCS72">[CS72](#FCS72)</sup>|
-|7.1|The compiler accepts only syntax that is included in C# 7.1 or lower <sup id="TCS71">[CS71](#FCS71)</sup>|
-|7|The compiler accepts only syntax that is included in C# 7.0 or lower <sup id="TCS7">[CS7](#FCS7)</sup>|
-|6|The compiler accepts only syntax that is included in C# 6.0 or lower <sup id="TCS6">[CS6](#FCS6)</sup>|
-|5|The compiler accepts only syntax that is included in C# 5.0 or lower <sup id="TCS5">[CS5](#FCS5)</sup>|
-|4|The compiler accepts only syntax that is included in C# 4.0 or lower <sup id="TCS4">[CS4](#FCS4)</sup>|
-|3|The compiler accepts only syntax that is included in C# 3.0 or lower <sup id="TCS3">[CS3](#FCS3)</sup>|
-|ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0) <sup id="TISO2">[ISO2](#FISO2)</sup>|
-|ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2) <sup id="TISO1">[ISO1](#FISO1)</sup>|  
+|8.0|The compiler accepts only syntax that is included in C# 8.0 or lower 
+|7.3|The compiler accepts only syntax that is included in C# 7.3 or lower
+|7.2|The compiler accepts only syntax that is included in C# 7.2 or lower
+|7.1|The compiler accepts only syntax that is included in C# 7.1 or lower
+|7|The compiler accepts only syntax that is included in C# 7.0 or lower
+|6|The compiler accepts only syntax that is included in C# 6.0 or lower
+|5|The compiler accepts only syntax that is included in C# 5.0 or lower
+|4|The compiler accepts only syntax that is included in C# 4.0 or lower
+|3|The compiler accepts only syntax that is included in C# 3.0 or lower
+|ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0)
+|ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2)
 
 The default language version depends on the target framework for your application and the version of the SDK or Visual Studio installed. Those rules are defined in the article on [configuring the language version](../configure-language-version.md#defaults)
 

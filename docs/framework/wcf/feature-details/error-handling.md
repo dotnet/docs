@@ -3,7 +3,7 @@ title: "Error handling"
 ms.date: "03/30/2017"
 ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
 ---
-# Error handling in Windows Communication Foundation
+# Error handling in Windows Communication Foundation (WCF)
 
 When a service encounters an unexpected exception or error, there are multiple ways to design an exception-handling solution. While there is no single "correct" or "best practice" error-handling solution, there are multiple valid paths for one to consider. It is normally recommended that one implement a hybrid solution that combines multiple approaches from the list below, depending on the complexity of the WCF implementation, the type and frequency of the exceptions, the handled vs. unhandled nature of the exceptions, and any associated tracing, logging, or policy requirements.
 
@@ -13,7 +13,7 @@ These solutions are explained more deeply in the rest of this section.
 
 The Microsoft Enterprise Library Exception Handling Application Block helps implement common design patterns and create a consistent strategy for processing exceptions that occur in all architectural layers of an enterprise application. It is designed to support the typical code contained in catch statements in application components. Instead of repeating this code (such as code that logs exception information) in identical catch blocks throughout an application, the Exception Handling Application Block allows developers to encapsulate this logic as reusable exception handlers.
 
-This Library includes out-of-the-box a Fault Contract Exception Handler. This exception handler is designed for use at Windows® Communication Foundation (WCF) service boundaries, and generates a new Fault Contract from the exception.
+This Library includes out-of-the-box a Fault Contract Exception Handler. This exception handler is designed for use at WCF service boundaries, and generates a new Fault Contract from the exception.
 
 Application blocks aim to incorporate commonly used best practices and provide a common approach for exception handling throughout your application. On the other hand, custom error handlers and fault contracts developed on one’s own can also be very useful. For instance, custom error handlers provide an excellent opportunity to automatically promote all exceptions to FaultExceptions and also to add logging capabilities to your application.
 

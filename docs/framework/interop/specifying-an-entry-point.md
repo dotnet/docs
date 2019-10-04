@@ -10,9 +10,10 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Specifying an Entry Point
+
 An entry point identifies the location of a function in a DLL. Within a managed project, the original name or ordinal entry point of a target function identifies that function across the interoperation boundary. Further, you can map the entry point to a different name, effectively renaming the function.  
   
- Following is a list of possible reasons to rename a DLL function:  
+ The following is a list of possible reasons to rename a DLL function:  
   
 - To avoid using case-sensitive API function names  
   
@@ -25,7 +26,8 @@ An entry point identifies the location of a function in a DLL. Within a managed 
  This topic demonstrates how to rename a DLL function in managed code.  
   
 ## Renaming a Function in Visual Basic  
- Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field. The following example shows a basic declaration.  
+ 
+Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field. The following example shows a basic declaration.  
   
 ```vb
 Friend Class NativeMethods
@@ -37,7 +39,7 @@ Friend Class NativeMethods
 End Class
 ```
   
- You can replace the **MessageBox** entry point with **MsgBox** by including the **Alias** keyword in your definition, as shown in the following example. In both examples the **Auto** keyword eliminates the need to specify the character-set version of the entry point. For more information about selecting a character set, see [Specifying a Character Set](specifying-a-character-set.md).  
+You can replace the **MessageBox** entry point with **MsgBox** by including the **Alias** keyword in your definition, as shown in the following example. In both examples the **Auto** keyword eliminates the need to specify the character-set version of the entry point. For more information about selecting a character set, see [Specifying a Character Set](specifying-a-character-set.md).  
   
 ```vb
 Friend Class NativeMethods

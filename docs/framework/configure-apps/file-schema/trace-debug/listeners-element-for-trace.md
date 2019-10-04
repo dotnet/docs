@@ -11,10 +11,10 @@ ms.assetid: 1394c2c3-6304-46db-87c1-8e8b16f5ad5b
 # \<listeners> Element for \<trace>
 Specifies a listener that collects, stores, and routes messages. Listeners direct the tracing output to an appropriate target.  
   
- \<configuration> Element  
-\<system.diagnostics> Element  
-\<trace> Element  
-\<listeners> Element for \<trace>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<trace>**](trace-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<listeners>**  
   
 ## Syntax  
   

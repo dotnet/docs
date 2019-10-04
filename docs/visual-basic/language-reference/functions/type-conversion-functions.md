@@ -87,7 +87,7 @@ These functions are compiled inline, meaning the conversion code is part of the 
   
 ## Syntax  
   
-```  
+```vb  
 CBool(expression)  
 CByte(expression)  
 CChar(expression)  

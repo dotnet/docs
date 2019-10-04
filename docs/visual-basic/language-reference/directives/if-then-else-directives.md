@@ -24,7 +24,7 @@ Conditionally compiles selected blocks of Visual Basic code.
   
 ## Syntax  
   
-```  
+```vb  
 #If expression Then  
    statements  
 [ #ElseIf expression Then  

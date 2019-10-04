@@ -8,7 +8,7 @@ Divides one number by another.
   
 ## Syntax  
   
-```  
+```sql  
 dividend / divisor  
 ```  
   
@@ -29,7 +29,7 @@ dividend / divisor
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#DIVIDE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#divide)]  
+ [!code-sql[DP EntityServices Concepts#DIVIDE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#divide)]  
   
 ## See also
 

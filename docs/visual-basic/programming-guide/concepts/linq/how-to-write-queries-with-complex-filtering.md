@@ -32,7 +32,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 99505  
 ```  
   
@@ -66,7 +66,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 99505  
 ```  
   

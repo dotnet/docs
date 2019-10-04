@@ -11,8 +11,8 @@ ms.assetid: 54f901f2-bf2f-472c-ae8d-73e8ecfc57fe
 ---
 # Built-in types table (C# Reference)
 
-The following table shows the keywords for built-in C# types, which are aliases of predefined types in the <xref:System> namespace.  
-  
+The following table shows the keywords for built-in C# types, which are aliases of predefined types in the <xref:System> namespace:
+
 |C# type|.NET type|  
 |--------------|-------------------------|  
 |[bool](bool.md)|<xref:System.Boolean?displayProperty=nameWithType>|  
@@ -33,9 +33,9 @@ The following table shows the keywords for built-in C# types, which are aliases 
   
 ## Remarks
 
-All of the types in the table, except `object` and `string`, are referred to as simple types.  
-  
-The .NET types and their C# type keyword aliases are interchangeable. For example, you can declare an integer variable by using either of the following declarations:  
+All of the types in the table, except `object` and `string`, are referred to as simple types.
+
+The .NET types and their C# type keyword aliases are interchangeable. For example, you can declare an integer variable by using either of the following declarations:
 
 ```csharp
 int x = 123;

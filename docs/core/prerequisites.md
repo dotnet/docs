@@ -9,33 +9,115 @@ zone_pivot_groups: operating-systems-set-one
 
 # Prerequisites for .NET Core
 
-This article shows the dependencies needed to develop .NET Core applications on Linux. The supported Linux distributions/versions, and dependencies that follow apply to the two ways of developing .NET Core apps on Linux:
+This article shows the supported OS versions and required dependencies to develop and run .NET Core applications on Windows, Linux, and macOS. There are a variety of ways to develop .NET Core apps:
 
 ::: zone pivot="os-windows"
 
-This is visible if Windows is selected.
+- [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
+- [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ::: zone-end
 
 ::: zone pivot="os-linux"
 
-This is visible if Linux is selected.
+- [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ::: zone-end
 
 ::: zone pivot="os-macos"
 
-This is visible if Mac is selected.
+- [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
+- [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link).
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ::: zone-end
 
-* [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
-* [Visual Studio Code](https://code.visualstudio.com/)
+## Check what is installed
 
-> [!NOTE]
-> The .NET Core SDK package is not required for production servers/environments. Only the .NET Core runtime package is needed for apps deployed to production environments. The .NET Core runtime is deployed with apps as part of a self-contained deployment, however, it must be deployed for Framework-dependent deployed apps separately. For more information about framework-dependent and self-contained deployment types, see [.NET Core application deployment](./deploying/index.md). Also see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md) for specific guidelines.
+Based on your environment, the .NET Core SDK may already be installed. If you use an IDE, such as Visual Studio, Visual Studio Code, or Visual Studio for Mac, the .NET Core SDK may already be installed on your system. You can check what is installed by opening a terminal and running the `dotnet` command:
 
-## Supported Linux versions
+::: zone pivot="os-windows"
+
+```console
+dotnet --list-sdks
+
+2.1.500 [C:\program files\dotnet\sdk]
+2.1.502 [C:\program files\dotnet\sdk]
+2.1.504 [C:\program files\dotnet\sdk]
+2.1.600 [C:\program files\dotnet\sdk]
+2.1.602 [C:\program files\dotnet\sdk]
+2.2.101 [C:\program files\dotnet\sdk]
+3.0.100 [C:\program files\dotnet\sdk]
+```
+
+::: zone-end
+
+::: zone pivot="os-linux"
+
+```bash
+$ dotnet --list-sdks
+
+2.1.500 [/home/user/dotnet/sdk]
+2.1.502 [/home/user/dotnet/sdk]
+2.1.504 [/home/user/dotnet/sdk]
+2.1.600 [/home/user/dotnet/sdk]
+2.1.602 [/home/user/dotnet/sdk]
+2.2.101 [/home/user/dotnet/sdk]
+3.0.100 [/home/user/dotnet/sdk]
+```
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+```bash
+$ dotnet --list-sdks
+
+2.1.500 [/home/user/dotnet/sdk]
+2.1.502 [/home/user/dotnet/sdk]
+2.1.504 [/home/user/dotnet/sdk]
+2.1.600 [/home/user/dotnet/sdk]
+2.1.602 [/home/user/dotnet/sdk]
+2.2.101 [/home/user/dotnet/sdk]
+3.0.100 [/home/user/dotnet/sdk]
+```
+
+::: zone-end
+
+## Downloads and dependencies
+
+::: zone pivot="os-windows"
+
+| .NET Core SDK version | Visual Studio version                      |
+| --------------------- | ------------------------------------------ |
+| 3.0                   | Visual Studio 2019 version 16.3 or higher. |
+| 2.2                   | Visual Studio 2017 version 15.9 or higher. |
+| 2.1                   | Visual Studio 2017 version 15.7 or higher. |
+
+<!-- markdownlint-disable MD025 -->
+
+# [.NET Core 3.0](#tab/netcore30)
+
+The following Windows operating systems are supported with .NET Core 3.0:
+
+| OS                            | Version                        | Architectures   |
+| ----------------------------- | ------------------------------ | --------------- |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
+| Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Nano Server                   | Version 1803+                  | x64, ARM32      |
+| Windows Server                | 2012 R2 SP1+                   | x64, x86        |
+
+# [.NET Core 2.2](#tab/netcore22)
+
+# [.NET Core 2.1](#tab/netcore21)
+
+---
+
+::: zone-end
+
+::: zone pivot="os-linux"
 
 <!-- markdownlint-disable MD025 -->
 
@@ -118,51 +200,41 @@ See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 ---
 
-## Linux distribution dependencies
+::: zone-end
 
-The following are intended to be examples. The exact versions and names may vary slightly on your Linux distribution of choice.
+::: zone pivot="os-macos"
 
-### Ubuntu
+<!-- markdownlint-disable MD025 -->
 
-Ubuntu distributions require the following libraries installed:
+# [.NET Core 3.0](#tab/netcore30)
 
-* liblttng-ust0
-* libcurl3 (for 14.x and 16.x)
-* libcurl4 (for 18.x)
-* libssl1.0.0
-* libkrb5-3
-* zlib1g
-* libicu52 (for 14.x)
-* libicu55 (for 16.x)
-* libicu57 (for 17.x)
-* libicu60 (for 18.x)
+.NET Core 3.0 is supported on **macOS High Sierra (version 10.13)** and later versions. A **x64** CPU architecture is required.
 
-For versions earlier than .NET Core 2.1, following dependencies are also required:
+Download and install the .NET Core SDK from the [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0) page. [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 
-* libunwind8
-* libuuid1
+For a list of known issues, see [.NET Core known issues](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-known-issues.md).
 
-### CentOS and Fedora
+# [.NET Core 2.2](#tab/netcore22)
 
-CentOS distributions require the following libraries installed:
+.NET Core 2.2 is supported on **macOS Sierra (version 10.12)** and later versions. A **x64** CPU architecture is required.
 
-* lttng-ust
-* libcurl
-* openssl-libs
-* krb5-libs
-* libicu
-* zlib
+Download and install the .NET Core SDK from the [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2) page. [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 
-Fedora users: If your openssl's version >= 1.1, you'll need to install compat-openssl10.
+For a list of known issues, see [.NET Core known issues](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-known-issues.md).
 
-For versions earlier than .NET Core 2.1, following dependencies are also required:
+# [.NET Core 2.1](#tab/netcore21)
 
-* libunwind
-* libuuid
+.NET Core 2.1 is supported on **macOS Sierra (version 10.12)** and later versions. A **x64** CPU architecture is required.
 
-For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+Download and install the .NET Core SDK from the [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1) page. [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 
-## Installing .NET Core dependencies with the native installers
+For a list of known issues, see [.NET Core known issues](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-known-issues.md).
+
+---
+
+::: zone-end
+
+## Installing with the native installers
 
 .NET Core native installers are available for supported Linux distributions/versions. The native installers require admin (sudo) access to the server. The advantage of using a native installer is that all of the .NET Core native dependencies are installed. Native installers also install the .NET Core SDK system-wide.
 
@@ -171,7 +243,7 @@ On Linux, there are two installer package choices:
 * Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.
 * Using the packages themselves, DEB or RPM.
 
-### Scripting Installs with the .NET Core installer script
+## Installer script for automation
 
 The [dotnet-install scripts](./tools/dotnet-install-script.md) are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the script from <https://dot.net/v1/dotnet-install.sh>.
 
@@ -183,12 +255,39 @@ The script defaults to installing the latest "LTS" version, which is currently .
 
 The installer bash script is used in automation scenarios and non-admin installations. This script also reads PowerShell switches, so they can be used with the script on Linux/OS X systems.
 
-## Troubleshoot
+::: zone pivot="os-windows"
 
-If you have problems with a .NET Core installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:
+## Install with Visual Studio
 
-* [.NET Core 3.0 known issues](https://github.com/dotnet/core/tree/master/release-notes/3.0)
-* [.NET Core 2.2 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.2)
-* [.NET Core 2.1 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.1)
-* [.NET Core 1.1 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.1)
-* [.NET Core 1.0 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.0)
+Stuff
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+## Install with Visual Studio for Mac
+
+Stuff
+
+::: zone-end
+
+## Install with Visual Studio Code
+
+Stuff
+
+
+
+
+<!--
+::: zone pivot="os-windows"
+
+::: zone-end
+
+::: zone pivot="os-linux"
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+::: zone-end
+-->

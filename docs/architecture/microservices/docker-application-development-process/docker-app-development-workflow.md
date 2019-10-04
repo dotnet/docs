@@ -21,7 +21,7 @@ This section describes the *inner-loop* development workflow for Docker containe
 
 An application is composed of your own services plus additional libraries (dependencies). The following are the basic steps you usually take when building a Docker application, as illustrated in Figure 5-1.
 
-![Diagram showing the seven steps it takes to create a containerized app.](./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png)
+![Diagram showing the 7 steps it takes to create a containerized app.](./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png)
 
 **Figure 5-1.** Step-by-step workflow for developing Docker containerized apps
 

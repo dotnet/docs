@@ -9,13 +9,13 @@ In distributed systems like microservices-based applications, there's an ever-pr
 
 For example, consider the Order details page from the eShopOnContainers sample application. If the ordering microservice is unresponsive when the user tries to submit an order, a bad implementation of the client process (the MVC web application)—for example, if the client code were to use synchronous RPCs with no timeout—would block threads indefinitely waiting for a response. Besides creating a bad user experience, every unresponsive wait consumes or blocks a thread, and threads are extremely valuable in highly scalable applications. If there are many blocked threads, eventually the application’s runtime can run out of threads. In that case, the application can become globally unresponsive instead of just partially unresponsive, as shown in Figure 8-1.
 
-![Diagram depicting the previous paragraph](./media/image1.png)
+![Diagram showing partial failures.](./media/handle-partial-failure/partial-failures-diagram.png)
 
 **Figure 8-1**. Partial failures because of dependencies that impact service thread availability
 
 In a large microservices-based application, any partial failure can be amplified, especially if most of the internal microservices interaction is based on synchronous HTTP calls (which is considered an anti-pattern). Think about a system that receives millions of incoming calls per day. If your system has a bad design that's based on long chains of synchronous HTTP calls, these incoming calls might result in many more millions of outgoing calls (let’s suppose a ratio of 1:4) to dozens of internal microservices as synchronous dependencies. This situation is shown in Figure 8-2, especially dependency \#3.
 
-![An incorrect design for web app microservice that depends on a chain of dependencies on other microservices](./media/image2.png)
+![Diagram showing multiple distributed dependencies.](./media/handle-partial-failure/multiple-distributed-dependencies.png)
 
 **Figure 8-2**. The impact of having an incorrect design featuring long chains of HTTP requests
 
@@ -23,7 +23,7 @@ Intermittent failure is guaranteed in a distributed and cloud-based system, even
 
 If you do not design and implement techniques to ensure fault tolerance, even small downtimes can be amplified. As an example, 50 dependencies each with 99.99% of availability would result in several hours of downtime each month because of this ripple effect. When a microservice dependency fails while handling a high volume of requests, that failure can quickly saturate all available request threads in each service and crash the whole application.
 
-![Partial failures can be severely amplified by chained dependencies](./media/image3.png)
+![Diagram showing partial failure amplified in microservices.](./media/handle-partial-failure/partial-failure-amplified-microservices.png)
 
 **Figure 8-3**. Partial failure amplified by microservices with long chains of synchronous HTTP calls
 

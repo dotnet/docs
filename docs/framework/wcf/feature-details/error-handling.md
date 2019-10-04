@@ -3,15 +3,13 @@ title: "Error handling"
 ms.date: "03/30/2017"
 ms.assetid: c948841a-7db9-40ae-9b78-587d216cbcaf
 ---
-# Error handling
-
-## Error handling in Windows Communication Foundation
+# Error handling in Windows Communication Foundation
 
 When a service encounters an unexpected exception or error, there are multiple ways to design an exception-handling solution. While there is no single "correct" or "best practice" error-handling solution, there are multiple valid paths for one to consider. It is normally recommended that one implement a hybrid solution that combines multiple approaches from the list below, depending on the complexity of the WCF implementation, the type and frequency of the exceptions, the handled vs. unhandled nature of the exceptions, and any associated tracing, logging, or policy requirements.
 
 These solutions are explained more deeply in the rest of this section.
 
-### The Microsoft Enterprise Library
+## The Microsoft Enterprise Library
 
 The Microsoft Enterprise Library Exception Handling Application Block helps implement common design patterns and create a consistent strategy for processing exceptions that occur in all architectural layers of an enterprise application. It is designed to support the typical code contained in catch statements in application components. Instead of repeating this code (such as code that logs exception information) in identical catch blocks throughout an application, the Exception Handling Application Block allows developers to encapsulate this logic as reusable exception handlers.
 
@@ -21,11 +19,11 @@ Application blocks aim to incorporate commonly used best practices and provide a
 
 For more information, please see [Microsoft Enterprise Library](https://docs.microsoft.com/previous-versions/msp-n-p/ff632023(v=pandp.10)).
 
-### Dealing with expected exceptions
+## Dealing with expected exceptions
 
 The proper course of action is to catch expected exceptions in every operation or relevant extensibility point, decide whether they can be recovered from, and return the proper custom fault in a FaultException\<T>.
   
-### Dealing with unexpected exceptions using an IErrorHandler
+## Dealing with unexpected exceptions using an IErrorHandler
 
 To deal with unexpected exceptions, the recommended course of action is to "hook" an IErrorHandler. Error handlers only catch exceptions at the WCF runtime level (the "service model" layer), not at the channel layer. The only way to hook an IErrorHandler at the channel level is to create a custom channel, which is not recommended in most scenarios.
 
@@ -51,15 +49,15 @@ One area that you could perhaps use this approach is when you want to create a c
 
 The IErrorHandler.HandleError method is usually used to implement error-related behaviors such as error logging, system notifications, shutting down the application, etc. IErrorHandler.HandleError can be called at multiple places inside the service, and depending on where the error is thrown, the HandleError method may or may not be called by the same thread as the operation; no guarantees are made in this regard.
 
-### Dealing with exceptions outside WCF
+## Dealing with exceptions outside WCF
 
 Often, configuration exceptions, database connection string exceptions, and other similar exceptions may occur within the context of a WCF application, but are themselves are not exceptions caused by the service model or the web service itself. These exceptions are "regular" exceptions external to the web service, and should be handled just as other external exceptions in the environment are to be handled.
 
-### Tracing exceptions
+## Tracing exceptions
 
 Tracing is the only "catch-all" place where one can potentially see all exceptions. For more information on tracing and logging exceptions, see Tracing and Logging.
 
-### URI template errors when using WebGetAttribute and WebInvokeAttribute
+## URI template errors when using WebGetAttribute and WebInvokeAttribute
 
 The WebGet and WebInvoke attributes allow you to specify a URI template that maps components of the request address to operation parameters. For example, the URI template "weather/{state}/{city}" maps the request address into literal tokens, a parameter named state, and a parameter named city. These parameters might then be bound by name to some of the formal parameters of the operation.
 

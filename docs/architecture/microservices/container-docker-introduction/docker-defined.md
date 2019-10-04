@@ -7,11 +7,11 @@ ms.date: 08/31/2018
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
-![Docker containers can run anywhere, on-premises in the customer datacenter, in an external service provider or in the cloud, on Azure.](./media/image2.png)
+![Diagram showing the places Docker containers can run.](./media/docker-defined/docker-containers-run-anywhere.png)
 
-**Figure 2-2**. Docker deploys containers at all layers of the hybrid cloud
+**Figure 2-2**. Docker deploys containers at all layers of the hybrid cloud.
 
-Docker image containers can run natively on Linux and Windows. However, Windows images can run only on Windows hosts and Linux images can run on Linux hosts and Windows hosts (using a Hyper-V Linux VM, so far), where host means a server or a VM.
+Docker containers can run anywhere, on-premises in the customer datacenter, in an external service provider or in the cloud, on Azure. Docker image containers can run natively on Linux and Windows. However, Windows images can run only on Windows hosts and Linux images can run on Linux hosts and Windows hosts (using a Hyper-V Linux VM, so far), where host means a server or a VM.
 
 Developers can use development environments on Windows, Linux, or macOS. On the development computer, the developer runs a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or on the Mac use a Docker host that is Linux based, and they can create images only for Linux containers. (Developers working on the Mac can edit code or run the Docker CLI from macOS, but as of the time of this writing, containers don't run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
 
@@ -31,10 +31,12 @@ Figure 2-3 shows a comparison between VMs and Docker containers.
 
 | Virtual Machines | Docker Containers |
 | -----------------| ------------------|
-|![For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries.](./media/image3.png)|![For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, that keeps container isolated but sharing the base OS services.](./media/image4.png)|
+|![Diagram showing the hardware/software stack of a traditional VM.](./media/docker-defined/virtual-machine-hardware-software.png)|![Diagram showing the hardware/software stack for Docker containers.](./media/docker-defined/docker-container-hardware-software.png)|
 |Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization. | Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.) |
 
 **Figure 2-3**. Comparison of traditional virtual machines to Docker containers
+
+For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries. For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, that keeps container isolated but sharing the base OS services.
 
 Because containers require far fewer resources (for example, they don't need a full OS), they're easy to deploy and they start fast. This allows you to have higher density, meaning that it allows you to run more services on the same hardware unit, thereby reducing costs.
 

@@ -75,15 +75,14 @@ The default language version depends on the target framework for your applicatio
 |C# 1.0|[Download DOC](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%201st%20edition%20December%202001.pdf)|C# Language Specification Version 1.0: Microsoft Corporation|
 
 ### Minimum compiler version needed to support all language features
-
-[↩](#TCS80)<a name="FCS80">CS80</a>: Microsoft Visual Studio/Build Tools 2019, version 16, or .NET Core 3.0 SDK  
-[↩](#TCS73)<a name="FCS73">CS73</a>: Microsoft Visual Studio/Build Tools 2017, version 15.7  
-[↩](#TCS72)<a name="FCS72">CS72</a>: Microsoft Visual Studio/Build Tools 2017, version 15.5  
-[↩](#TCS71)<a name="FCS71">CS71</a>: Microsoft Visual Studio/Build Tools 2017, version 15.3  
-[↩](#TCS7)<a name="FCS7">CS7</a>: Microsoft Visual Studio/Build Tools 2017  
-[↩](#TCS6)<a name="FCS6">CS6</a>: Microsoft Visual Studio/Build Tools 2015  
-[↩](#TCS5)<a name="FCS5">CS5</a>: Microsoft Visual Studio/Build Tools 2012 or bundled .NET Framework 4.5 compiler  
-[↩](#TCS4)<a name="FCS4">CS4</a>: Microsoft Visual Studio/Build Tools 2010 or bundled .NET Framework 4.0 compiler  
-[↩](#TCS3)<a name="FCS3">CS3</a>: Microsoft Visual Studio/Build Tools 2008 or bundled .NET Framework 3.5 compiler  
-[↩](#TISO2)<a name="FISO2">ISO2</a>: Microsoft Visual Studio/Build Tools 2005 or bundled .NET Framework 2.0 compiler  
-[↩](#TISO1)<a name="FISO1">ISO1</a>: Microsoft Visual Studio/Build Tools .NET 2002 or bundled .N Framework 1.0 compiler  
+CS80: Microsoft Visual Studio/Build Tools 2019, version 16, or .NET Core 3.0 SDK  
+CS73: Microsoft Visual Studio/Build Tools 2017, version 15.7  
+CS72: Microsoft Visual Studio/Build Tools 2017, version 15.5  
+CS71: Microsoft Visual Studio/Build Tools 2017, version 15.3  
+CS7: Microsoft Visual Studio/Build Tools 2017  
+CS6: Microsoft Visual Studio/Build Tools 2015  
+CS5: Microsoft Visual Studio/Build Tools 2012 or bundled .NET Framework 4.5 compiler  
+CS4: Microsoft Visual Studio/Build Tools 2010 or bundled .NET Framework 4.0 compiler  
+CS3: Microsoft Visual Studio/Build Tools 2008 or bundled .NET Framework 3.5 compiler  
+ISO2: Microsoft Visual Studio/Build Tools 2005 or bundled .NET Framework 2.0 compiler  
+ISO1: Microsoft Visual Studio/Build Tools .NET 2002 or bundled .N Framework 1.0 compiler  

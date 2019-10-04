@@ -26,11 +26,11 @@ The **floating-point types** are a subset of the **simple types** and can be ini
 
 C# supports the following predefined floating-point types:
   
-|C# type/keyword|Approximate range|Precision|.NET type|
-|----------|-----------------------|---------------|--------------|
-|`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|<xref:System.Single?displayProperty=nameWithType>|
-|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|<xref:System.Double?displayProperty=nameWithType>|
-|`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|<xref:System.Decimal?displayProperty=nameWithType>|
+|C# type/keyword|Approximate range|Precision|Memory taken|.NET type|
+|----------|-----------------------|---------------|--------------|--------------|
+|`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|4 bytes|<xref:System.Single?displayProperty=nameWithType>|
+|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|8 bytes|<xref:System.Double?displayProperty=nameWithType>|
+|`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|16 bytes|<xref:System.Decimal?displayProperty=nameWithType>|
 
 In the preceding table, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
 

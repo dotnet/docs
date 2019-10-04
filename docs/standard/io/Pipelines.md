@@ -239,29 +239,29 @@ The code below reads all messages from a `PipeReader` and calls `ProcessMessageA
 
 The `ReadResult` can return the final segment of data when `IsCompleted` is set to `true`. Not reading that data before exiting the read loop will result in data loss.
 
-[!INCLUDE[](~/includes/do-not-use-include1.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet)]
 
-[!INCLUDE[](~/includes/do-not-use-include2.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Infinite loop**
 
 The following logic may result in an infinite loop if the `Result.IsCompleted` is `true` but there's never a complete message in the buffer.
 
-[!INCLUDE[](~/includes/do-not-use-include1.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet2)]
 
-[!INCLUDE[](~/includes/do-not-use-include2.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 Here's another piece of code with the same problem. It's checking for a non-empty buffer before checking `ReadResult.IsCompleted`. Because it's in an `else if`, it will loop forever if there's never a complete message in the buffer.
 
-[!INCLUDE[](~/includes/do-not-use-include1.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet3)]
 
-[!INCLUDE[](~/includes/do-not-use-include2.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Unexpected Hang**
 
@@ -270,11 +270,11 @@ Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the `examine
 * There's more data written to the pipe.
 * And the new data wasn't previously examined.
 
-[!INCLUDE[](~/includes/do-not-use-include1.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet4)]
 
-[!INCLUDE[](~/includes/do-not-use-include2.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Out of Memory (OOM)**
 
@@ -283,17 +283,17 @@ With the following conditions, the code below keeps buffering until an <xref:Sys
 * There's no maximum message size.
 * The data returned from the `PipeReader` does not make a complete message. For example, it doesn't make a complete message because the other side is writing a large message (For example, a 4GB message).
 
-[!INCLUDE[](~/includes/do-not-use-include1.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet5)]
 
-[!INCLUDE[](~/includes/do-not-use-include2.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ❌ **Memory Corruption**
 
 When writing helpers that read the buffer, any returned payload should be copied before calling `Advance`. The following example will return memory that the `Pipe` has discarded and may reuse it for the next operation (read/write).
 
-[!INCLUDE[](~/includes/do-not-use-include1.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
 ```csharp
 public class Message
@@ -304,7 +304,7 @@ public class Message
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet6)]
 
-[!INCLUDE[](~/includes/do-not-use-include2.md)]
+[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
 
 ## PipeWriter
 

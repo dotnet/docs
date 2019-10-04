@@ -21,7 +21,7 @@ This section describes the *inner-loop* development workflow for Docker containe
 
 An application is composed of your own services plus additional libraries (dependencies). The following are the basic steps you usually take when building a Docker application, as illustrated in Figure 5-1.
 
-![The development process for Docker apps: 1 - Code your App, 2 - Write Dockerfile/s, 3 - Create images defined at Dockerfile/s, 4 - (optional) Compose services in the docker-compose.yml file, 5 - Run container or docker-compose app, 6 - Test your app or microservices, 7 - Push to repo and repeat. ](./media/docker-app-development-workflow/image1.png)
+![Diagram showing the seven steps it takes to create a containerized app.](./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png)
 
 **Figure 5-1.** Step-by-step workflow for developing Docker containerized apps
 
@@ -33,7 +33,7 @@ When you're using Visual Studio 2017, many of those steps are handled for you, w
 
 However, just because Visual Studio makes those steps automatic doesn't mean that you don't need to know what's going on underneath with Docker. Therefore, the following guidance details every step.
 
-![1 - Code your app](./media/docker-app-development-workflow/image2.png)
+![Image of the Step 1 tile from the step-by-step workflow.](./media/docker-app-development-workflow/step-1-code-your-app.png)
 
 ## Step 1. Start coding and create your initial application or service baseline
 
@@ -61,7 +61,7 @@ You can start coding your application in plain .NET (usually in .NET Core if you
 - **Visual Studio 2017** \
   [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
-![2 - Write Dockerfiles](./media/docker-app-development-workflow/image4.png)
+![Image of the Step 2 tile from the step-by-step workflow.](./media/docker-app-development-workflow/image4.png)
 
 ## Step 2. Create a Dockerfile related to an existing .NET base image
 
@@ -298,7 +298,7 @@ You can create your own Docker base image from scratch. This scenario is not rec
 - **Create a base image**. Official Docker documentation.\
   <https://docs.docker.com/develop/develop-images/baseimages/>
 
-![3 - Create images defined at Dockerfiles](./media/docker-app-development-workflow/image7.png)
+![Image of the Step 3 tile from the step-by-step workflow.](./media/docker-app-development-workflow/image7.png)
 
 ## Step 3. Create your custom Docker images and embed your application or service in them
 
@@ -330,7 +330,7 @@ You can find the existing images in your local repository by using the docker im
 
 When you use Visual Studio to create a project with Docker support, you don't explicitly create an image. Instead, the image is created for you when you press **F5** (or **Ctrl-F5**) to run the dockerized application or service. This step is automatic in Visual Studio and you won't see it happen, but it's important that you know what's going on underneath.
 
-![4 - (optional) Compose services in the docker-compose.yml file](./media/docker-app-development-workflow/image10.png)
+![Image of the optional Step 4 tile from the step-by-step workflow.](./media/docker-app-development-workflow/image10.png)
 
 ## Step 4. Define your services in docker-compose.yml when building a multi-container Docker application
 
@@ -421,7 +421,7 @@ After you add orchestrator support to your solution in Visual Studio, you will a
 
 You could deploy a multi-container application with a single docker-compose.yml file by using the `docker-compose up` command. However, Visual Studio adds a group of them so you can override values depending on the environment (development or production) and execution type (release or debug). This capability will be explained in later sections.
 
-![5 - Run containers or composed app](./media/docker-app-development-workflow/image12.png)
+![Image of the Step 5 tile from the step-by-step workflow.](./media/docker-app-development-workflow/image12.png)
 
 ## Step 5. Build and run your Docker application
 
@@ -494,7 +494,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 
 The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach for production deployments, where you should target orchestrators like [Kubernetes](https://kubernetes.io/) or [Service Fabric](https://azure.microsoft.com/services/service-fabric/). If you're using Kubernetes you have to use [pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) to organize containers and [services](https://kubernetes.io/docs/concepts/services-networking/service/) to network them. You also use [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to organize pod creation and modification.
 
-![6 - Test your app or microservices](./media/docker-app-development-workflow/image17.png)
+![Image of the Step 6 tile from the step-by-step workflow.](./media/docker-app-development-workflow/image17.png)
 
 ## Step 6. Test your Docker application using your local Docker host
 
@@ -534,7 +534,7 @@ If you're developing using the editor/CLI approach, debugging containers is more
 
 Effectively, the workflow when using Visual Studio is a lot simpler than if you use the editor/CLI approach. Most of the steps required by Docker related to the Dockerfile and docker-compose.yml files are hidden or simplified by Visual Studio, as shown in Figure 5-15.
 
-![Simplified container development workflow with Visual Studio: 1 - Code your App, 2 - Add Docker support to projects (just once), 3 - Run container or docker-compose app, 4 - Test your app or microservices, 5 - Push to repo and repeat.](./media/docker-app-development-workflow/image20.png)
+![Diagram showing the five steps it takes to create a simplified app.](./media/docker-app-development-workflow/image20.png)
 
 **Figure 5-15**. Simplified workflow when developing with Visual Studio
 

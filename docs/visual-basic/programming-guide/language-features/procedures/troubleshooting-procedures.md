@@ -17,7 +17,7 @@ This page lists some common problems that can occur when working with procedures
 If a `Function` procedure returns an array data type, you cannot use the `Function` name to store values in the elements of the array. If you attempt to do this, the compiler interprets it as a call to the `Function`. The following example generates compiler errors.  
   
 ```vb
-Function allOnes(n As Integer) As Integer()`  
+Function allOnes(n As Integer) As Integer()
    For i As Integer = 1 To n - 1  
       ' The following statement generates a COMPILER ERROR.  
       allOnes(i) = 1  

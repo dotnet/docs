@@ -14,4 +14,4 @@ The following resources enable you to learn more about ML.NET
 
 ## Next Steps
 
-Learn more about ML.NET by checking out the [ML.NET tutorials](../tutorials).
+Learn more about ML.NET by checking out the [ML.NET tutorials](~/docs/tutorials/index.md).

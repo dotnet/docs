@@ -12,7 +12,7 @@ Specifies the name of the assembly that this module will be a part of.
   
 ## Syntax  
   
-```  
+```console  
 -moduleassemblyname:assembly_name  
 ```  
   

@@ -13,7 +13,7 @@ Specifies how the Visual Basic compiler should report internal compiler errors.
 
 ## Syntax
 
-```
+```console
 -errorreport:{ prompt | queue | send | none }
 ```
 
@@ -43,7 +43,7 @@ This option is best used with the [/bugreport](../../../visual-basic/reference/c
 
 The following code attempts to compile `T2.vb`, and if the compiler encounters an internal compiler error, it prompts you to send the error report to Microsoft.
 
-```
+```console
 vbc -errorreport:prompt t2.vb
 ```
 

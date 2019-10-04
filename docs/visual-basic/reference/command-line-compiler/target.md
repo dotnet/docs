@@ -12,7 +12,7 @@ Specifies the format of compiler output.
   
 ## Syntax  
   
-```  
+```console  
 -target:{exe | library | module | winexe | appcontainerexe | winmdobj}  
 ```  
   

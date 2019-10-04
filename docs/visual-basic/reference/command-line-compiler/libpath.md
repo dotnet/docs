@@ -12,7 +12,7 @@ Specifies the location of referenced assemblies.
   
 ## Syntax  
   
-```  
+```console  
 -libpath:dirList  
 ```  
   

@@ -62,5 +62,15 @@ namespace Pipes
         }
 
         #endregion
+
+
+        private bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message)
+        {
+            throw new NotImplementedException();
+        }
+
+        private class Message
+        {
+        }
     }
 }

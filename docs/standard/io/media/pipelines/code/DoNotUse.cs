@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Buffers;
-using System.Collections.Generic;
 using System.IO.Pipelines;
-using System.Text;
+using System.Threading;
 
 namespace Pipes
 {
@@ -14,8 +13,12 @@ namespace Pipes
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                ReadResult result = await reader.ReadAsync(cancellationToken);
-                ReadOnlySequence<byte> dataLossBuffer = result.Buffer;
+                var pipe = new Pipe();
+                PipeReader reader = pipe.Reader;
+                var cancellationToken  = default(CancellationToken);
+                var result =  reader.ReadAsync(cancellationToken);
+
+                ReadOnlySequence<byte> dataLossBuffer = result.Result.Buffer;
 
                 if (result.IsCompleted)
                 {
@@ -29,14 +32,24 @@ namespace Pipes
             #endregion
         }
 
+        private void Process(ref ReadOnlySequence<byte> dataLossBuffer, out Message message)
+        {
+            throw new NotImplementedException();
+        }
+
         private void Dummy2()
         {
             #region snippet2
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                ReadResult result = await reader.ReadAsync(cancellationToken);
-                ReadOnlySequence<byte> infiniteLoopBuffer = result.Buffer;
+                var pipe = new Pipe();
+                PipeReader reader = pipe.Reader;
+                var cancellationToken = default(CancellationToken);
+                var result = reader.ReadAsync(cancellationToken);
+
+                ReadOnlySequence<byte> infiniteLoopBuffer = result.Result.Buffer;
+
                 if (result.IsCompleted && infiniteLoopBuffer.IsEmpty)
                 {
                     break;
@@ -55,8 +68,12 @@ namespace Pipes
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                ReadResult result = await reader.ReadAsync(cancellationToken);
-                ReadOnlySequence<byte> infiniteLoopBuffer = result.Buffer;
+                var pipe = new Pipe();
+                PipeReader reader = pipe.Reader;
+                var cancellationToken = default(CancellationToken);
+                var result = reader.ReadAsync(cancellationToken); 
+                
+                ReadOnlySequence<byte> infiniteLoopBuffer = result.Result.Buffer;
 
                 if (!infiniteLoopBuffer.IsEmpty)
                 {
@@ -72,14 +89,18 @@ namespace Pipes
             #endregion
         }
 
-        private void Dummy4()
+        private Message Dummy4()
         {
             #region snippet4
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                ReadResult result = await reader.ReadAsync(cancellationToken);
-                ReadOnlySequence<byte> hangBuffer = result.Buffer;
+                var pipe = new Pipe();
+                PipeReader reader = pipe.Reader;
+                var cancellationToken = default(CancellationToken);
+                var result = reader.ReadAsync(cancellationToken);
+
+                ReadOnlySequence<byte> hangBuffer = result.Result.Buffer;
 
                 Process(ref hangBuffer, out Message message);
 
@@ -96,16 +117,20 @@ namespace Pipes
                 }
             }
             #endregion
+            return null;
         }
 
-        private void Dummy5()
+        private Message Dummy5()
         {
             #region snippet5
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                ReadResult result = await reader.ReadAsync(cancellationToken);
-                ReadOnlySequence<byte> thisCouldOutOfMemory = result.Buffer;
+                var pipe = new Pipe();
+                PipeReader reader = pipe.Reader;
+                var cancellationToken = default(CancellationToken);
+                var result = reader.ReadAsync(cancellationToken);
+                ReadOnlySequence<byte> thisCouldOutOfMemory = result.Result.Buffer;
 
                 Process(ref thisCouldOutOfMemory, out Message message);
 
@@ -122,17 +147,20 @@ namespace Pipes
                 }
             }
             #endregion
+            return null;
         }
 
         private Message Dummy6()
         {
-            #region snippet6          
-
+            #region snippet6
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                ReadResult result = await reader.ReadAsync(cancellationToken);
-                ReadOnlySequence<byte> buffer = result.Buffer;
+                var pipe = new Pipe();
+                PipeReader reader = pipe.Reader;
+                var cancellationToken = default(CancellationToken);
+                var result = reader.ReadAsync(cancellationToken);
+                ReadOnlySequence<byte> buffer = result.Result.Buffer;
 
                 ReadHeader(ref buffer, out int length);
 
@@ -142,7 +170,7 @@ namespace Pipes
                 {
                     message = new Message
                     {
-                        // Slice the payload from the existing buffer
+                        // Slice the payload from the existing buffer.
                         CorruptedPayload = buffer.Slice(0, length)
                     };
 
@@ -158,13 +186,15 @@ namespace Pipes
 
                 if (message != null)
                 {
-                    // This code is broken since we called reader.AdvanceTo() with a position *after* the buffer we captured
+                    // This code is broken since we called reader.AdvanceTo() with a position
+                    // *after* the buffer we captured.
                     return message;
                 }
 
                 return null;
             }
             #endregion
+            return null;
         }
 
         private void ReadHeader(ref ReadOnlySequence<byte> buffer, out int length)

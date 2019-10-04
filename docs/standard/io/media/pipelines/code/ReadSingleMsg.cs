@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Buffers;
 using System.IO;
 using System.IO.Pipelines;
 using System.Threading;
@@ -8,6 +9,11 @@ namespace Pipes
 {
     class ReadSingleMsg
     {
+        //sync ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, 
+        //                                               CancellationToken cancellationToken 
+            //                                           = default)
+        // Fowler I can't left align CancellationToken below unless I make another line, 
+        // which looks silly. Snippet is max width without a horizontal scroll bar on a tablet
         #region snippet
         async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, 
                                                 CancellationToken cancellationToken = default)
@@ -61,7 +67,22 @@ namespace Pipes
 
             return null;
         }
+
+
         #endregion
 
+        private Task ProcessMessageAsync(Message message)
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message)
+        {
+            throw new NotImplementedException();
+        }
+
+        private class Message
+        {
+        }
     }
 }

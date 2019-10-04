@@ -17,7 +17,7 @@ namespace Pipes
 
         public void Abort()
         {
-            // Cancel the pending read so the the process loop ends without an exception
+            // Cancel the pending read so the the process loop ends without an exception.
             reader.CancelPendingRead();
         }
 
@@ -74,5 +74,13 @@ namespace Pipes
             throw new NotImplementedException();
         }
 
+        private bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message)
+        {
+            throw new NotImplementedException();
+        }
+
+        private class Message
+        {
+        }
     }
 }

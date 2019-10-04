@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Pipes
 {
-    class ProcessLinesAsync
+    class MyProcessLinesAsync
     {
         #region snippet
         async Task ProcessLinesAsync(NetworkStream stream)
@@ -18,15 +18,16 @@ namespace Pipes
 
             while (true)
             {
-                // Calculate the amount of bytes remaining in the buffer
+                // Calculate the amount of bytes remaining in the buffer.
                 var bytesRemaining = buffer.Length - bytesBuffered;
 
                 if (bytesRemaining == 0)
                 {
-                    // Double the buffer size and copy the previously buffered data into the new buffer
+                    // Double the buffer size and copy the previously buffered data into the 
+                    // new buffer.
                     var newBuffer = ArrayPool<byte>.Shared.Rent(buffer.Length * 2);
                     Buffer.BlockCopy(buffer, 0, newBuffer, 0, buffer.Length);
-                    // Return the old buffer to the pool
+                    // Return the old buffer to the pool.
                     ArrayPool<byte>.Shared.Return(buffer);
                     buffer = newBuffer;
                     bytesRemaining = buffer.Length - bytesBuffered;
@@ -39,24 +40,26 @@ namespace Pipes
                     break;
                 }
 
-                // Keep track of the amount of buffered bytes
+                // Keep track of the amount of buffered bytes.
                 bytesBuffered += bytesRead;
                 int linePosition = 0;
 
                 do
                 {
                     // Look for a EOL in the buffered data
-                     linePosition = Array.IndexOf(buffer, (byte)'\n', bytesConsumed, bytesBuffered - bytesConsumed);
+                     linePosition = Array.IndexOf(buffer, (byte)'\n', bytesConsumed,
+                                                  bytesBuffered - bytesConsumed);
 
                     if (linePosition >= 0)
                     {
-                        // Calculate the length of the line based on the offset
+                        // Calculate the length of the line based on the offset.
                         var lineLength = linePosition - bytesConsumed;
 
-                        // Process the line
+                        // Process the line.
                         ProcessLine(buffer, bytesConsumed, lineLength);
 
-                        // Move the bytesConsumed to skip past the line we consumed (including \n)
+                        // Move the bytesConsumed to skip past the line we consumed 
+                        // (including \n)
                         bytesConsumed += lineLength + 1;
                     }
                 }

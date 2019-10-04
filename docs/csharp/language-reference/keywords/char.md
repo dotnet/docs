@@ -1,12 +1,11 @@
 ---
 title: "char keyword - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "char"
   - "char_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "char data type [C#]"
 ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228
 ---
@@ -22,7 +21,7 @@ The `char` keyword is used to declare an instance of the <xref:System.Char?displ
 
 ## Literals
 
-Constants of the `char` type can be written as character literals, hexadecimal escape sequence, or Unicode representation. You can also cast the integral character codes. In the following example four `char` variables are initialized with the same character `X`:
+Constants of the `char` type can be written as character literals, hexadecimal escape sequence, or Unicode representation. You can also cast the integral character codes. In the following example, the four elements of an array of `char` are initialized with the same character `X`:
 
 [!code-csharp[csrefKeywordsTypes#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#19)]
 
@@ -46,5 +45,4 @@ For more information, see [Integral types](~/_csharplang/spec/types.md#integral-
 - [Built-In Types Table](./built-in-types-table.md)
 - [Implicit Numeric Conversions Table](./implicit-numeric-conversions-table.md)
 - [Explicit Numeric Conversions Table](./explicit-numeric-conversions-table.md)
-- [Nullable Types](../../programming-guide/nullable-types/index.md)
 - [Strings](../../programming-guide/strings/index.md)

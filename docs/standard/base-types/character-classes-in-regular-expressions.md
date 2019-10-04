@@ -53,17 +53,13 @@ A character class defines a set of characters, any one of which can occur in an 
   
  The syntax for specifying a list of individual characters is as follows:  
 
-```  
-[*character_group*]  
-```
+`[*character_group*]`
 
  where *character_group* is a list of the individual characters that can appear in the input string for a match to succeed. *character_group* can consist of any combination of one or more literal characters, [escape characters](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md), or character classes.  
   
  The syntax for specifying a range of characters is as follows:  
   
-```  
-[firstCharacter-lastCharacter]  
-```  
+`[firstCharacter-lastCharacter]`  
   
  where *firstCharacter* is the character that begins the range and *lastCharacter* is the character that ends the range. A character range is a contiguous series of characters defined by specifying the first character in the series, a hyphen (-), and then the last character in the series. Two characters are contiguous if they have adjacent Unicode code points. *firstCharacter* must be the character with the lower code point, and *lastCharacter* must be the character with the higher code point.
 
@@ -113,17 +109,13 @@ Some common regular expression patterns that contain positive character classes 
   
 The syntax for specifying a list of individual characters is as follows:  
 
-```
-[*^character_group*]  
-```
+`[*^character_group*]`
 
  where *character_group* is a list of the individual characters that cannot appear in the input string for a match to succeed. *character_group* can consist of any combination of one or more literal characters, [escape characters](../../../docs/standard/base-types/character-escapes-in-regular-expressions.md), or character classes.  
   
  The syntax for specifying a range of characters is as follows:  
 
-```
-[^*firstCharacter*-*lastCharacter*]  
-```
+`[^*firstCharacter*-*lastCharacter*]`
 
 where *firstCharacter* is the character that begins the range and *lastCharacter* is the character that ends the range. A character range is a contiguous series of characters defined by specifying the first character in the series, a hyphen (-), and then the last character in the series. Two characters are contiguous if they have adjacent Unicode code points. *firstCharacter* must be the character with the lower code point, and *lastCharacter* must be the character with the higher code point.
 
@@ -261,9 +253,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 ## Non-word character: \W  
  `\W` matches any non-word character. The \W language element is equivalent to the following character class:  
   
-```  
-[^\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]  
-```  
+`[^\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]`  
   
  In other words, it matches any character except for those in the Unicode categories listed in the following table.  
   

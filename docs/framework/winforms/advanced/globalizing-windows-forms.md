@@ -16,9 +16,6 @@ ms.assetid: 72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5
 
 ## In this section
 
-[Encoding and Windows Forms Globalization](encoding-and-windows-forms-globalization.md)  
-Describes full Unicode support and its implications.
-
 [International Fonts in Windows Forms and Controls](international-fonts-in-windows-forms-and-controls.md)  
 Explains when and how to select fonts for display of international characters on Windows Forms.
 

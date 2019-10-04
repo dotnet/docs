@@ -37,20 +37,20 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
 There are several advantages to this model:
 
 - You can incrementally add resources for new cultures after you have deployed an application. Because subsequent development of culture-specific resources can require a significant amount of time, this allows you to release your main application first, and deliver culture-specific resources at a later date.
-
 - You can update and change an application's satellite assemblies without recompiling the application.
-
 - An application needs to load only those satellite assemblies that contain the resources needed for a particular culture. This can significantly reduce the use of system resources.
 
  However, there are also disadvantages to this model:
 
 - You must manage multiple sets of resources.
-
 - The initial cost of testing an application increases, because you must test several configurations. Note that in the long term it will be easier and less expensive to test one core application with several satellites, than to test and maintain several parallel international versions.
 
-## Resource Naming Conventions
+## Resource naming conventions
 
 When you package your application's resources, you must name them using the resource naming conventions that the common language runtime expects. The runtime identifies a resource by its culture name. Each culture is given a unique name, which is usually a combination of a two-letter, lowercase culture name associated with a language and, if required, a two-letter, uppercase subculture name associated with a country or region. The subculture name follows the culture name, separated by a dash (-). Examples include ja-JP for Japanese as spoken in Japan, en-US for English as spoken in the United States, de-DE for German as spoken in Germany, or de-AT for German as spoken in Austria. See the **Language tag** column in the [list of language/region names supported by Windows](https://docs.microsoft.com/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Culture names follow the standard defined by [BCP 47](https://tools.ietf.org/html/bcp47).
+
+> [!NOTE]
+> There are some exceptions for the two-letter culture names, such as `zh-Hans` for Chinese (Simplified).
 
 > [!NOTE]
 > For information about creating resource files, see [Creating Resource Files](creating-resource-files-for-desktop-apps.md) and [Creating Satellite Assemblies](creating-satellite-assemblies-for-desktop-apps.md).
@@ -199,8 +199,8 @@ and for the Russian language resource as follows:
 
 The application source code resides in a file named Example1.cs or Example1.vb. It includes the <xref:System.Resources.NeutralResourcesLanguageAttribute> attribute to indicate that the default application resource is in the fr subdirectory. It instantiates the Resource Manager, retrieves the value of the `Greeting` resource, and displays it to the console.
 
-[!code-csharp[Conceptual.Resources.Packaging#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.packaging/cs/example1.cs#1)]
-[!code-vb[Conceptual.Resources.Packaging#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.packaging/vb/example1.vb#1)]
+[!code-csharp[Conceptual.Resources.Packaging#1](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.packaging/cs/example1.cs#1)]
+[!code-vb[Conceptual.Resources.Packaging#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.packaging/vb/example1.vb#1)]
 
 You can then compile C# source code from the command line as follows:
 

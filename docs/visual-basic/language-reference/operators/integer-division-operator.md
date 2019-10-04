@@ -23,7 +23,7 @@ Divides two numbers and returns an integer result.
   
 ## Syntax  
   
-```  
+```vb  
 expression1 \ expression2  
 ```  
   

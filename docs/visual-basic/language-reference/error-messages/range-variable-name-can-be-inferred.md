@@ -17,7 +17,7 @@ A programming element that takes one or more arguments is included in a LINQ que
   
 1. Supply an explicit variable name for the programming element, as shown in the following code:  
   
-```  
+```vb  
 Dim query = From var1 In collection1   
             Select VariableAlias= SampleFunction(var1), var1  
 ```  

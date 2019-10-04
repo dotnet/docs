@@ -14,7 +14,7 @@ author: "KrzysztofCwalina"
 # Member Overloading
 Member overloading means creating two or more members on the same type that differ only in the number or type of parameters but have the same name. For example, in the following, the `WriteLine` method is overloaded:  
   
-```  
+```csharp  
 public static class Console {  
     public void WriteLine();  
     public void WriteLine(string value);  

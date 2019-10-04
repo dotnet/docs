@@ -10,7 +10,7 @@ Mapping "C" to en_US_POSIX culture caused customer confusion, because en_US_POSI
 
 #### Version introduced
 
-.NET Core 3.0
+3.0
 
 ### Recommended action
 

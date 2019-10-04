@@ -29,7 +29,7 @@ A derived class inherits all the definitions of its base class. If you want to d
   
      The following example illustrates shadowing of an inherited variable.  
   
-    ```  
+    ```vb  
     Public Class shadowBaseClass  
         Public shadowString As String = "This is the base class string."  
     End Class  

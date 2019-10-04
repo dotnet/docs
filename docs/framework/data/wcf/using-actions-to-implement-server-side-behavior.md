@@ -51,7 +51,7 @@ OData Actions provide a way to implement a behavior that acts upon a resource re
   
  Movies(1) specifies the movie you wish to rate and Rate specifies the Rate action. The actual value of the rating will be in the body of the HTTP request as shown in the following example:  
   
-```  
+```http
 POST http://MovieServer/MoviesService.svc/Movies(1)/Rate HTTP/1.1   
 Content-Type: application/json   
 Content-Length: 20   
@@ -76,7 +76,7 @@ context.Execute(new Uri("http://MyServer/MoviesService.svc/Movies(1)/Rate"), "PO
   
 ## See also
 
-- [WCF Data Services 4.5](../../../../docs/framework/data/wcf/index.md)
-- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
-- [Developing and Deploying WCF Data Services](../../../../docs/framework/data/wcf/developing-and-deploying-wcf-data-services.md)
-- [Custom Data Service Providers](../../../../docs/framework/data/wcf/custom-data-service-providers-wcf-data-services.md)
+- [WCF Data Services 4.5](index.md)
+- [Defining WCF Data Services](defining-wcf-data-services.md)
+- [Developing and Deploying WCF Data Services](developing-and-deploying-wcf-data-services.md)
+- [Custom Data Service Providers](custom-data-service-providers-wcf-data-services.md)

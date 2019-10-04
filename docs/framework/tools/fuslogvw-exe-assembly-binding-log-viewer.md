@@ -19,11 +19,11 @@ The Assembly Binding Log Viewer displays details for assembly binds. This inform
 > [!IMPORTANT]
 > You must run fuslogvw.exe with administrator privileges.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7) with administrator credentials. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7) with administrator credentials. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
-```
+```console
 fuslogvw
 ```
 
@@ -54,13 +54,13 @@ The viewer displays an entry for each failed assembly bind. For each failure, th
 
     - A description of any Application, Publisher, or Administrator version policies that have been applied.
 
-    - Whether the assembly was found in the [global assembly cache](../../../docs/framework/app-domains/gac.md).
+    - Whether the assembly was found in the [global assembly cache](../app-domains/gac.md).
 
     - A list of all probing URLs.
 
 The following sample log entry shows detailed information about a failed assembly bind.
 
-```
+```output
 *** Assembly Binder Log Entry  (3/5/2007 @ 12:54:20 PM) ***
 
 The operation failed.
@@ -116,7 +116,7 @@ LOG: All probing URLs attempted and failed.
 
 ## Binding Logs for Native Images
 
-By default, Fuslogvw.exe logs normal assembly bind requests. Alternatively, you can log assembly binds for native images that were created using the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md).
+By default, Fuslogvw.exe logs normal assembly bind requests. Alternatively, you can log assembly binds for native images that were created using the [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md).
 
 #### To log assembly binds for native images
 
@@ -124,7 +124,7 @@ By default, Fuslogvw.exe logs normal assembly bind requests. Alternatively, you 
 
 The following log shows a failure caused by a dependency that did not exist when the native image was created for the application. If the dependencies at run time differ from the dependencies when Ngen.exe is run, binding to a native image is not allowed.
 
-```
+```output
 *** Assembly Binder Log Entry  (12/8/2006 @ 5:22:07 PM) ***
 
 The operation failed.
@@ -148,7 +148,7 @@ LOG: Bind to native image assembly did not succeed. Use IL image.
 
 The following log shows a native image binding failure that occurred because the security settings on the computer when the application was run were different from the security settings at the time the native image was created.
 
-```
+```output
 *** Assembly Binder Log Entry  (12/8/2006 @ 5:29:09 PM) ***
 
 The operation failed.
@@ -212,7 +212,7 @@ You can use the **Log Settings** dialog to perform the following actions.
 2. Enter the path into the **Custom log path** text box.
 
 > [!NOTE]
-> The [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) uses the Internet Explorer (IE) cache to store its binding log. Due to occasional corruption in the IE cache, the [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) can sometimes stop showing new binding logs in the viewing window. As a result of this corruption, the .NET binding infrastructure (fusion) cannot write to or read from the binding log. (This issue is not encountered if you use a custom log path.)  To fix the corruption and allow fusion to show binding logs again, clear the IE cache by deleting temporary internet files from within the IE Internet Options dialog.
+> The [Assembly Binding Log Viewer (Fuslogvw.exe)](fuslogvw-exe-assembly-binding-log-viewer.md) uses the Internet Explorer (IE) cache to store its binding log. Due to occasional corruption in the IE cache, the [Assembly Binding Log Viewer (Fuslogvw.exe)](fuslogvw-exe-assembly-binding-log-viewer.md) can sometimes stop showing new binding logs in the viewing window. As a result of this corruption, the .NET binding infrastructure (fusion) cannot write to or read from the binding log. (This issue is not encountered if you use a custom log path.)  To fix the corruption and allow fusion to show binding logs again, clear the IE cache by deleting temporary internet files from within the IE Internet Options dialog.
 >
 > If your unmanaged application hosts the common language runtime by implementing the `IHostAssemblyManager` and `IHostAssemblyStore` interfaces, log entries can't be stored in the wininet cache.  To view log entries for custom hosts that implement these interfaces, you must specify an alternate log path.
 
@@ -228,7 +228,7 @@ You can use the **Log Settings** dialog to perform the following actions.
 ## See also
 
 - <xref:System.TypeLoadException>
-- [Tools](../../../docs/framework/tools/index.md)
-- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Global Assembly Cache](../app-domains/gac.md)
+- [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

@@ -35,7 +35,7 @@ The <xref:System.Linq.Enumerable.Union%2A> method is defined for multisets as th
 <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> methods are well defined only against *ordered sets*. The semantics for unordered sets or multisets are undefined.
 
 > [!NOTE]
-> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).
+> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
 
 Because of limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of these methods to the result of the method. For example, consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query:
 
@@ -117,15 +117,15 @@ Equality of arguments is required in the implementation of the following methods
 
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports equality and comparison for *flat* arguments, but not for arguments that are or contain sequences. A flat argument is a type that can be mapped to a SQL row. A projection of one or more entity types that can be statically determined not to contain a sequence is considered a flat argument.
 
-Following are examples of flat arguments:
+The following are examples of flat arguments:
 
-[!code-csharp[DLinqSQOTranslation#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs/Program.cs#3)]
-[!code-vb[DLinqSQOTranslation#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb/Module1.vb#3)]
+[!code-csharp[DLinqSQOTranslation#3](~/samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs/Program.cs#3)]
+[!code-vb[DLinqSQOTranslation#3](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb/Module1.vb#3)]
 
-The following are examples of non-flat (hierarchical) arguments.
+The following are examples of non-flat (hierarchical) arguments:
 
-[!code-csharp[DLinqSQOTranslation#4](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs/Program.cs#4)]
-[!code-vb[DLinqSQOTranslation#4](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb/Module1.vb#4)]
+[!code-csharp[DLinqSQOTranslation#4](~/samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs/Program.cs#4)]
+[!code-vb[DLinqSQOTranslation#4](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb/Module1.vb#4)]
 
 ### Visual Basic Function Translation
 
@@ -152,7 +152,7 @@ Conversion methods:
 
 ### Inheritance Mapping Restrictions
 
-For more information, see [How to: Map Inheritance Hierarchies](../../../../../../docs/framework/data/adonet/sql/linq/how-to-map-inheritance-hierarchies.md).
+For more information, see [How to: Map Inheritance Hierarchies](how-to-map-inheritance-hierarchies.md).
 
 ### Inheritance in Queries
 
@@ -178,7 +178,7 @@ The following query operators are not supported on values mapped to the new SQL 
 
 - `Sum`
 
-For more information about mapping to these SQL Server date and time types, see [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md).
+For more information about mapping to these SQL Server date and time types, see [SQL-CLR Type Mapping](sql-clr-type-mapping.md).
 
 ## SQL Server 2005 Support
 
@@ -212,7 +212,7 @@ SQL Server 2000 (through SP4) binder has some idiosyncrasies that are triggered 
 
 ### Skip and Take Operators
 
-<xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).
+<xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).
 
 ## Object Materialization
 
@@ -242,9 +242,9 @@ Materialization creates CLR objects from rows that are returned by one or more S
 
 ## See also
 
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
-- [Return Or Skip Elements in a Sequence](../../../../../../docs/framework/data/adonet/sql/linq/return-or-skip-elements-in-a-sequence.md)
-- [Concatenate Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/concatenate-two-sequences.md)
-- [Return the Set Difference Between Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-difference-between-two-sequences.md)
-- [Return the Set Intersection of Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-intersection-of-two-sequences.md)
-- [Return the Set Union of Two Sequences](../../../../../../docs/framework/data/adonet/sql/linq/return-the-set-union-of-two-sequences.md)
+- [Reference](reference.md)
+- [Return Or Skip Elements in a Sequence](return-or-skip-elements-in-a-sequence.md)
+- [Concatenate Two Sequences](concatenate-two-sequences.md)
+- [Return the Set Difference Between Two Sequences](return-the-set-difference-between-two-sequences.md)
+- [Return the Set Intersection of Two Sequences](return-the-set-intersection-of-two-sequences.md)
+- [Return the Set Union of Two Sequences](return-the-set-union-of-two-sequences.md)

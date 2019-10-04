@@ -22,6 +22,7 @@ The client application uses the generated proxy class to communicate with the se
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Create and configure a console app project for the WCF client.
 > - Add a service reference to the WCF service to generate the proxy class and configuration files.
 
@@ -106,6 +107,7 @@ After you've created the client, Visual Studio creates the **App.config** config
 ```
 
 Under the [\<system.serviceModel>](../configure-apps/file-schema/wcf/system-servicemodel.md) section, notice the [\<endpoint>](../configure-apps/file-schema/wcf/endpoint-element.md) element. The **&lt;endpoint&gt;** element defines the endpoint that the client uses to access the service as follows:
+
 - Address: `http://localhost:8000/GettingStarted/CalculatorService`. The address of the endpoint.
 - Service contract: `ServiceReference1.ICalculator`. The service contract handles communication between the WCF client and the service. Visual Studio generated this contract when you used its **Add Service Reference** function. It's essentially a copy of the contract that you defined in the GettingStartedLib project. 
 - Binding: <xref:System.ServiceModel.WSHttpBinding>. The binding specifies HTTP as the transport, interoperable security, and other configuration details.
@@ -114,6 +116,7 @@ Under the [\<system.serviceModel>](../configure-apps/file-schema/wcf/system-serv
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Create and configure a console app project for the WCF client.
 > - Add a service reference to the WCF service to generate the proxy class and configuration files for the client application.
 

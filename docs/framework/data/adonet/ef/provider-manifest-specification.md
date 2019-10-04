@@ -8,20 +8,20 @@ This section discusses how a data store provider can support the types and funct
   
  Entity Services operates independently of a specific data store provider yet still allows a data provider to explicitly define how models, mappings, and queries interact with an underlying data store. Without a layer of abstraction, Entity Services could only be targeted at a specific data store or data provider.  
   
- Types that the provider supports are directly or indirectly supported by the underlying database. These types are not necessarily the exact store types, but the types the provider uses to support the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. Provider/store types are described in the Entity Data Model (EDM) terms.  
+ Types that the provider supports are directly or indirectly supported by the underlying database. These types are not necessarily the exact store types, but the types the provider uses to support the Entity Framework. Provider/store types are described in the Entity Data Model (EDM) terms.  
   
  Parameter and return types for the functions supported by the data store are specified in EDM terms.  
   
 ## Requirements  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] and the data store need to be able to pass data back and forth in known types without any data loss or truncation.  
+ The Entity Framework and the data store need to be able to pass data back and forth in known types without any data loss or truncation.  
   
  The provider manifest must be loadable by tools at design time without having to open a connection to the data store.  
   
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] is case sensitive, but the underlying data store may not be. When EDM artifacts (identifiers and type names, for example) are defined and used in the manifest, they must use the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] case sensitivity. If data store elements that may be case sensitive appear in the provider manifest, that casing needs to be maintained in the provider manifest.  
+ The Entity Framework is case sensitive, but the underlying data store may not be. When EDM artifacts (identifiers and type names, for example) are defined and used in the manifest, they must use the Entity Framework case sensitivity. If data store elements that may be case sensitive appear in the provider manifest, that casing needs to be maintained in the provider manifest.  
   
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] requires a provider manifest for all data providers. If you try to use a provider that does not have a provider manifest with the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], you will get an error.  
+ The Entity Framework requires a provider manifest for all data providers. If you try to use a provider that does not have a provider manifest with the Entity Framework, you will get an error.  
   
- The following table describes the kinds of exceptions the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] would throw when exceptions arise through provider interaction:  
+ The following table describes the kinds of exceptions the Entity Framework would throw when exceptions arise through provider interaction:  
   
 |Issue|Exception|  
 |-----------|---------------|  
@@ -33,7 +33,7 @@ This section discusses how a data store provider can support the types and funct
  A provider should support the following scenarios:  
   
 ### Writing a Provider with Symmetric Type Mapping  
- You can write a provider for the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] where each store type maps to a single EDM type, regardless of the mapping direction. For a provider type that has very simple mapping that corresponds with an EDM type, you can use a symmetric solution because the type system is simple or matches EDM types.  
+ You can write a provider for the Entity Framework where each store type maps to a single EDM type, regardless of the mapping direction. For a provider type that has very simple mapping that corresponds with an EDM type, you can use a symmetric solution because the type system is simple or matches EDM types.  
   
  You can use the simplicity of their domain and produce a static declarative provider manifest.  
   
@@ -44,7 +44,7 @@ This section discusses how a data store provider can support the types and funct
 - A list of functions supported by the provider where parameter and return types are expressed in EDM terms.  
   
 ### Writing a Provider with Asymmetric Type Mapping  
- When writing a data store provider for the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], the EDM-to-provider type mapping for some types may be different from provider-to-EDM type mapping. For instance, unbounded EDM PrimitiveTypeKind.String may map to nvarchar(4000) on the provider, while nvarchar(4000) maps to the EDM PrimitiveTypeKind.String(MaxLength=4000).  
+ When writing a data store provider for the Entity Framework, the EDM-to-provider type mapping for some types may be different from provider-to-EDM type mapping. For instance, unbounded EDM PrimitiveTypeKind.String may map to nvarchar(4000) on the provider, while nvarchar(4000) maps to the EDM PrimitiveTypeKind.String(MaxLength=4000).  
   
  You write an XML file that has two sections:  
   
@@ -55,7 +55,7 @@ This section discusses how a data store provider can support the types and funct
 ## Provider Manifest Discoverability  
  The manifest is used indirectly by several component types in Entity Services (for example Tools or Query) but more directly leveraged by metadata through the use of the data store metadata loader.  
   
- ![dfb3d02b&#45;7a8c&#45;4d51&#45;ac5a&#45;a73d8aa145e6](../../../../../docs/framework/data/adonet/ef/media/dfb3d02b-7a8c-4d51-ac5a-a73d8aa145e6.gif "dfb3d02b-7a8c-4d51-ac5a-a73d8aa145e6")  
+ ![dfb3d02b&#45;7a8c&#45;4d51&#45;ac5a&#45;a73d8aa145e6](./media/dfb3d02b-7a8c-4d51-ac5a-a73d8aa145e6.gif "dfb3d02b-7a8c-4d51-ac5a-a73d8aa145e6")  
   
  However, a given provider may support different stores or different versions of the same store. Therefore, a provider must report a different manifest for each supported data store.  
   
@@ -71,7 +71,7 @@ This section discusses how a data store provider can support the types and funct
 ## Provider Manifest Programming Model  
  Providers derive from <xref:System.Data.Common.DbXmlEnabledProviderManifest>, which allows them to specify their manifests declaratively. The following illustration shows the class hierarchy of a provider:  
   
- ![None](../../../../../docs/framework/data/adonet/ef/media/d541eba3-2ee6-4cd1-88f5-89d0b2582a6c.gif "d541eba3-2ee6-4cd1-88f5-89d0b2582a6c")  
+ ![None](./media/d541eba3-2ee6-4cd1-88f5-89d0b2582a6c.gif "d541eba3-2ee6-4cd1-88f5-89d0b2582a6c")  
   
 ### Discoverability API  
  The provider manifest is loaded by the Store Metadata loader (StoreItemCollection), either by using a data store connection or a provider manifest token.  
@@ -275,4 +275,4 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
   
 ## See also
 
-- [Writing an Entity Framework Data Provider](../../../../../docs/framework/data/adonet/ef/writing-an-ef-data-provider.md)
+- [Writing an Entity Framework Data Provider](writing-an-ef-data-provider.md)

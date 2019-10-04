@@ -56,7 +56,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 - The opening tag must be completed by a right angle bracket (>). Other object elements, property elements, or inner text, can follow the opening tag. Exactly what content may be contained here is typically constrained by the object model of the element. The equivalent closing tag for the object element must also exist, in proper nesting and balance with other opening and closing tag pairs.  
   
- XAML as implemented by .NET has a set of rules that map object elements into types, attributes into properties or events, and XAML namespaces to CLR namespaces plus assembly. For WPF and the .NET Framework, XAML object elements map to [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] types as defined in referenced assemblies, and the attributes map to members of those types. When you reference a CLR type in XAML, you have access to the inherited members of that type as well.  
+ XAML as implemented by .NET has a set of rules that map object elements into types, attributes into properties or events, and XAML namespaces to CLR namespaces plus assembly. For WPF and .NET, XAML object elements map to .NET types as defined in referenced assemblies, and the attributes map to members of those types. When you reference a CLR type in XAML, you have access to the inherited members of that type as well.  
   
  For example, the following example is object element syntax that instantiates a new instance of the <xref:System.Windows.Controls.Button> class, and also specifies a <xref:System.Windows.FrameworkElement.Name%2A> attribute and a value for that attribute:  
   
@@ -106,7 +106,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  For flagwise enumerations, the behavior is based on the <xref:System.Enum.Parse%2A?displayProperty=nameWithType> method. You can specify multiple values for a flagwise enumeration by separating each value with a comma. However, you cannot combine enumeration values that are not flagwise. For instance, you cannot use the comma syntax to attempt to create a <xref:System.Windows.Trigger> that acts on multiple conditions of a nonflag enumeration:  
   
-```  
+```xaml  
 <!--This will not compile, because Visibility is not a flagwise enumeration.-->  
 ...  
 <Trigger Property="Visibility" Value="Collapsed,Hidden">  
@@ -191,7 +191,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ### XAML Content Property Values Must Be Contiguous  
  The value of a XAML content property must be given either entirely before or entirely after any other property elements on that object element. This is true whether the value of a XAML content property is specified as a string, or as one or more objects. For example, the following markup does not parse:  
   
-```  
+```xaml  
 <Button>I am a   
   <Button.Background>Blue</Button.Background>  
   blue button</Button>  
@@ -199,7 +199,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  This is illegal essentially because if this syntax were made explicit by using property element syntax for the content property, then the content property would be set twice:  
   
-```xml  
+```xaml  
 <Button>  
   <Button.Content>I am a </Button.Content>  
   <Button.Background>Blue</Button.Background>  
@@ -209,7 +209,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  A similarly illegal example is if the content property is a collection, and child elements are interspersed with property elements:  
   
-```xml  
+```xaml  
 <StackPanel>  
   <Button>This example</Button>  
   <StackPanel.Resources>  

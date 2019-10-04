@@ -15,22 +15,25 @@ This topic lists key feature names for each version of Visual Basic, with detail
 
 ## Current version
 
-Visual Basic 15.8 / Visual Studio 2017 Version 15.8
-For new features, see [Visual Basic 15.8](#visual-basic-158)
+Visual Basic 16.0 / Visual Studio 2019 Version 16.0  
+For new features, see [Visual Basic 16.0](#visual-basic-160).
 
 ## Previous versions
 
+Visual Basic 15.8 / Visual Studio 2017 Version 15.8
+For new features, see [Visual Basic 15.8](#visual-basic-158).
+
 Visual Basic 15.5 / Visual Studio 2017 Version 15.5
-For new features, see [Visual Basic 15.5](#visual-basic-155)
+For new features, see [Visual Basic 15.5](#visual-basic-155).
 
 Visual Basic 15.3 / Visual Studio 2017 Version 15.3
-For new features, see [Visual Basic 15.3](#visual-basic-153)
+For new features, see [Visual Basic 15.3](#visual-basic-153).
 
 Visual Basic 2017 / Visual Studio 2017
-For new features, see [Visual Basic 2017](#visual-basic-2017)
+For new features, see [Visual Basic 2017](#visual-basic-2017).
 
 Visual Basic / Visual Studio 2015
-For new features, see [Visual Basic 14](#visual-basic-14)
+For new features, see [Visual Basic 14](#visual-basic-14).
 
 Visual Basic / Visual Studio 2013
 Technology previews of the .NET Compiler Platform (“Roslyn”)
@@ -52,6 +55,22 @@ Bit-shift operators, loop variable declaration
 
 Visual Basic / Visual Studio .NET 2002
 The first release of Visual Basic .NET
+
+## Visual Basic 16.0
+Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core and is the first version of Visual Basic focused on .NET Core. Many portions of the Visual Basic Runtime depend on WinForms and these will be added in a later version of Visual Basic. 
+
+**Comments allowed in more places within statements**
+In Visual Basic 15.8 and earlier versions, comments are only allowed on blank lines, at the end of a statement, or in specific places within a statement where an implicit line continuation is allowed. Starting with Visual Basic 16.0, comments are also allowed after explicit line continuations and within a statement on a line beginning with a space followed by an underscore.
+
+```vb
+Public Sub Main()
+    cmd.CommandText = ' Comment is allowed here without _
+        "SELECT * FROM Titles JOIN Publishers " _ ' This is a comment
+        & "ON Publishers.PubId = Titles.PubID " _
+ _ ' This is a comment on a line without code
+        & "WHERE Publishers.State = 'CA'"
+End Sub
+```
 
 ## Visual Basic 15.8
 

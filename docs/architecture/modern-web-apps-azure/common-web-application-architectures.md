@@ -22,7 +22,7 @@ The smallest possible number of projects for an application architecture is one.
 
 A new ASP.NET Core project, whether created in Visual Studio or from the command line, starts out as a simple "all-in-one" monolith. It contains all of the behavior of the application, including presentation, business, and data access logic. Figure 5-1 shows the file structure of a single-project app.
 
-![](./media/image5-1.png)
+![A single project ASP.NET Core app](./media/image5-1.png)
 
 **Figure 5-1.** A single project ASP.NET Core app.
 
@@ -53,7 +53,7 @@ Logical layering is a common technique for improving the organization of code in
 
 The most common organization of application logic into layers is shown in Figure 5-2.
 
-![](./media/image5-2.png)
+![Typical application layers](./media/image5-2.png)
 
 **Figure 5-2.** Typical application layers.
 
@@ -63,19 +63,19 @@ One disadvantage of this traditional layering approach is that compile-time depe
 
 Figure 5-3 shows an example solution, breaking the application into three projects by responsibility (or layer).
 
-![](./media/image5-3.png)
+![A simple monolithic application with three projects](./media/image5-3.png)
 
 **Figure 5-3.** A simple monolithic application with three projects.
 
 Although this application uses several projects for organizational purposes, it's still deployed as a single unit and its clients will interact with it as a single web app. This allows for very simple deployment process. Figure 5-4 shows how such an app might be hosted using Azure.
 
-![](./media/image5-4.png)
+![Simple deployment of Azure Web App](./media/image5-4.png)
 
 **Figure 5-4.** Simple deployment of Azure Web App
 
 As application needs grow, more complex and robust deployment solutions may be required. Figure 5-5 shows an example of a more complex deployment plan that supports additional capabilities.
 
-![](./media/image5-5.png)
+![Deploying a web app to an Azure App Service](./media/image5-5.png)
 
 **Figure 5-5.** Deploying a web app to an Azure App Service
 
@@ -85,7 +85,7 @@ This unit can be scaled up or out to take advantage of cloud-based on-demand sca
 
 The simplest approach to scaling a web application in Azure is to configure scaling manually in the application's App Service Plan. Figure 5-6 shows the appropriate Azure dashboard screen to configure how many instances are serving an app.
 
-![](./media/image5-6.png)
+![App Service Plan scaling in Azure](./media/image5-6.png)
 
 **Figure 5-6.** App Service Plan scaling in Azure.
 
@@ -98,7 +98,7 @@ Applications that follow the Dependency Inversion Principle as well as the Domai
 
 Clean architecture puts the business logic and application model at the center of the application. Instead of having business logic depend on data access or other infrastructure concerns, this dependency is inverted: infrastructure and implementation details depend on the Application Core. This is achieved by defining abstractions, or interfaces, in the Application Core, which are then implemented by types defined in the Infrastructure layer. A common way of visualizing this architecture is to use a series of concentric circles, similar to an onion. Figure 5-7 shows an example of this style of architectural representation.
 
-![](./media/image5-7.png)
+![Clean Architecture; onion view](./media/image5-7.png)
 
 **Figure 5-7.** Clean Architecture; onion view
 
@@ -106,7 +106,7 @@ In this diagram, dependencies flow toward the innermost circle. The Application 
 
 Figure 5-8 shows a more traditional horizontal layer diagram that better reflects the dependency between the UI and other layers.
 
-![](./media/image5-8.png)
+![Clean Architecture; horizontal layer view](./media/image5-8.png)
 
 **Figure 5-8.** Clean Architecture; horizontal layer view
 
@@ -114,7 +114,7 @@ Note that the solid arrows represent compile-time dependencies, while the dashed
 
 Figure 5-9 shows a more detailed view of an ASP.NET Core application's architecture when built following these recommendations.
 
-![ASPNET Core Architecture](./media/image5-9.png)
+![ASP.NET Core architecture diagram following Clean Architecture](./media/image5-9.png)
 
 **Figure 5-9.** ASP.NET Core architecture diagram following Clean Architecture.
 
@@ -180,7 +180,7 @@ You can build a single and monolithic-deployment based Web Application or Servic
 
 To manage this model, you deploy a single container to represent the application. To scale, just add additional copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or VM.
 
-![](./media/image5-13.png)
+![Figure 5-13](./media/image5-13.png)
 
 You can include multiple components/libraries or internal layers within each container, as illustrated in Figure 5-13. But, following the container principle of _"a container does one thing, and does it in one process_", the monolithic pattern might be a conflict.
 
@@ -192,7 +192,7 @@ In addition to the "scale everything" problem, changes to a single component req
 
 The monolithic approach is common, and many organizations are developing with this architectural approach. Many are having good enough results, while others are hitting limits. Many designed their applications in this model, because the tools and infrastructure were too difficult to build service-oriented architectures (SOA), and they didn't see the need until the app grew. If you find you're hitting the limits of the monolithic approach, breaking up the app to enable it to better leverage containers and microservices may be the next logical step.
 
-![](./media/image5-14.png)
+![Figure 5-14](./media/image5-14.png)
 
 Deploying monolithic applications in Microsoft Azure can be achieved using dedicated VMs for each instance. Using [Azure Virtual Machine Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), you can easily scale the VMs. [Azure App Services](https://azure.microsoft.com/services/app-service/) can run monolithic applications and easily scale instances without having to manage the VMs. Azure App Services can run single instances of Docker containers as well, simplifying the deployment. Using Docker, you can deploy a single VM as a Docker host, and run multiple instances. Using the Azure balancer, as shown in the Figure 5-14, you can manage scaling.
 
@@ -256,7 +256,7 @@ networks:
 
 The `docker-compose.yml` file references the `Dockerfile` in the `Web` project. The `Dockerfile` is used to specify which base container will be used and how the application will be configured on it. The `Web`' `Dockerfile`:
 
-```
+```Dockerfile
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
 WORKDIR /app
 
@@ -286,16 +286,17 @@ Note that running Docker containers may be bound to ports you might otherwise tr
 If you want to add Docker support to your application using Visual Studio, make sure Docker Desktop is running when you do so. The wizard won't run correctly if Docker Desktop isn't running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add support for Windows Containers, you need to run the wizard while you have Docker Desktop running with Windows Containers configured. If you want to add support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 
 ### References – Common web architectures
-> - **The Clean Architecture**  
->   <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
-> - **The Onion Architecture**  
->   <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
-> - **The Repository Pattern**  
->   <https://deviq.com/repository-pattern/>
-> - **Clean Architecture Solution Sample**  
->   <https://github.com/ardalis/cleanarchitecture>
-> - **Architecting Microservices e-book**  
->   <https://aka.ms/MicroservicesEbook>
+
+- **The Clean Architecture**  
+  <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
+- **The Onion Architecture**  
+  <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
+- **The Repository Pattern**  
+  <https://deviq.com/repository-pattern/>
+- **Clean Architecture Solution Sample**  
+  <https://github.com/ardalis/cleanarchitecture>
+- **Architecting Microservices e-book**  
+  <https://aka.ms/MicroservicesEbook>
 
 >[!div class="step-by-step"]
 >[Previous](architectural-principles.md)

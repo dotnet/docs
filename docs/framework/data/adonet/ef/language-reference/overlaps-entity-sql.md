@@ -24,12 +24,12 @@ expression OVERLAPS expression
   
  `EXISTS ( expression INTERSECT expression )`  
   
- OVERLAPS is one of the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators. All [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators are evaluated from left to right. For precedence information for the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators, see [EXCEPT](../../../../../../docs/framework/data/adonet/ef/language-reference/except-entity-sql.md).  
+ OVERLAPS is one of the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators. All [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators are evaluated from left to right. For precedence information for the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] set operators, see [EXCEPT](except-entity-sql.md).  
   
 ## Example  
  The following Entity SQL query uses the OVERLAPS operator to determines whether two collections have a common value. The query is based on the AdventureWorks Sales Model. To compile and run this, follow these steps:  
   
-1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
@@ -37,4 +37,4 @@ expression OVERLAPS expression
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Reference](entity-sql-reference.md)

@@ -22,7 +22,7 @@ foreach (XElement el in childElements)
   
  This example produces the following output.  
   
-```  
+```output  
 Name: Address  
 Name: Address  
 Name: DeliveryNotes  

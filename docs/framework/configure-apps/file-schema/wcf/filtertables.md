@@ -6,9 +6,10 @@ ms.assetid: 41f1ac35-f559-473a-b2c3-8cc83a6a3831
 # \<filterTables>
 Represents a configuration section for defining routing tables that contain mappings between the routing filters and the target endpoints to send messages to when the filter matches.  
   
- \<system.serviceModel>  
-\<routing>  
-\<routingTables>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filterTables>**  
   
 ## Syntax  
   

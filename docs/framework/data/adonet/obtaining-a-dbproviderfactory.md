@@ -73,7 +73,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 ```  
   
 ### Retrieving a Connection String by Provider Name  
- In order to create a provider factory, you must supply a connection string as well as the provider name. This example demonstrates how to retrieve a connection string from an application configuration file by passing the provider name in the invariant format "*System.Data.ProviderName*". The code iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection>. It returns the <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A> on success; otherwise `null` (`Nothing` in Visual Basic). If there are multiple entries for a provider, the first one found is returned. For more information and examples of retrieving connection strings from configuration files, see [Connection Strings and Configuration Files](../../../../docs/framework/data/adonet/connection-strings-and-configuration-files.md).  
+ In order to create a provider factory, you must supply a connection string as well as the provider name. This example demonstrates how to retrieve a connection string from an application configuration file by passing the provider name in the invariant format "*System.Data.ProviderName*". The code iterates through the <xref:System.Configuration.ConnectionStringSettingsCollection>. It returns the <xref:System.Configuration.ConnectionStringSettings.ProviderName%2A> on success; otherwise `null` (`Nothing` in Visual Basic). If there are multiple entries for a provider, the first one found is returned. For more information and examples of retrieving connection strings from configuration files, see [Connection Strings and Configuration Files](connection-strings-and-configuration-files.md).  
   
 > [!NOTE]
 > A reference to `System.Configuration.dll` is required in order for the code to run.  
@@ -91,7 +91,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
   
 ## See also
 
-- [DbProviderFactories](../../../../docs/framework/data/adonet/dbproviderfactories.md)
-- [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md)
+- [DbProviderFactories](dbproviderfactories.md)
+- [Connection Strings](connection-strings.md)
 - [Using the Configuration Classes](https://docs.microsoft.com/previous-versions/aspnet/ms228063(v=vs.100))
 - [ADO.NET Overview](ado-net-overview.md)

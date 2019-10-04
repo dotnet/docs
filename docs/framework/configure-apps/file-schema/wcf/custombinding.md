@@ -8,9 +8,10 @@ ms.assetid: 9da4f960-f64e-4d8a-894d-2b09eba5ce4b
 
 Provides full control over the messaging stack for the user.
 
-\<system.serviceModel>\
-\<bindings>\
-\<customBinding>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<customBinding>**  
 
 ## Syntax
 

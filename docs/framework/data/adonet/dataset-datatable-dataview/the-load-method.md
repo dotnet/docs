@@ -64,5 +64,5 @@ End Sub
   
 ## See also
 
-- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Manipulating Data in a DataTable](manipulating-data-in-a-datatable.md)
+- [ADO.NET Overview](../ado-net-overview.md)

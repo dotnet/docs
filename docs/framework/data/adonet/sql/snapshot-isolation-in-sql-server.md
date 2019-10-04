@@ -10,7 +10,7 @@ ms.assetid: 43ae5dd3-50f5-43a8-8d01-e37a61664176
 Snapshot isolation enhances concurrency for OLTP applications.  
   
 ## Understanding Snapshot Isolation and Row Versioning  
- Once snapshot isolation is enabled, updated row versions for each transaction are maintained in **tempdb**. A unique transaction sequence number identifies each transaction, and these unique numbers are recorded for each row version. The transaction works with the most recent row versions having a sequence number before the sequence number of the transaction. Newer row versions created after the transaction has begun are ignored by the transaction.  
+ Once snapshot isolation is enabled, updated row versions for each transaction must be maintained.  Prior to SQL Server 2019, these versions were stored in **tempdb**. SQL Server 2019 introduces a new feature, Accelerated Database Recovery (ADR) which requires its own set of row versions.  So, as of SQL Server 2019, if ADR is not enabled, row versions are kept in **tempdb** as always.  If ADR is enabled, then all row versions, both related to snapshot isolation and ADR, are kept in ADR's Persistent Version Store (PVS), which is located in the user database in a filegroup which the user specifies. A unique transaction sequence number identifies each transaction, and these unique numbers are recorded for each row version. The transaction works with the most recent row versions having a sequence number before the sequence number of the transaction. Newer row versions created after the transaction has begun are ignored by the transaction.  
   
  The term "snapshot" reflects the fact that all queries in the transaction see the same version, or snapshot, of the database, based on the state of the database at the moment in time when the transaction begins. No locks are acquired on the underlying data rows or data pages in a snapshot transaction, which permits other transactions to execute without being blocked by a prior uncompleted transaction. Transactions that modify data do not block transactions that read data, and transactions that read data do not block transactions that write data, as they normally would under the default READ COMMITTED isolation level in SQL Server. This non-blocking behavior also significantly reduces the likelihood of deadlocks for complex transactions.  
   
@@ -137,6 +137,6 @@ SELECT * FROM TestSnapshotUpdate WITH (UPDLOCK)
   
 ## See also
 
-- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server and ADO.NET](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)
 - [Transaction Locking and Row Versioning Guide](/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide)

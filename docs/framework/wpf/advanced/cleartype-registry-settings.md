@@ -13,7 +13,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
 ## Technology Overview  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications that render text to a display device use ClearType features to provide an enhanced reading experience. ClearType is a software technology developed by Microsoft that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType works by accessing the individual vertical color stripe elements in every pixel of an LCD screen. For more information on ClearType, see [ClearType Overview](cleartype-overview.md).  
   
- Text that is rendered with ClearType can appear significantly different when viewed on various display devices. For example, a small number of monitors implement the color stripe elements in blue, green, red order rather than the more common red, green, blue (    [!INCLUDE[TLA#tla_rgb](../../../../includes/tlasharptla-rgb-md.md)]) order.  
+ Text that is rendered with ClearType can appear significantly different when viewed on various display devices. For example, a small number of monitors implement the color stripe elements in blue, green, red order rather than the more common red, green, blue (RGB) order.  
   
  Text that is rendered with ClearType can also appear significantly different when viewed by individuals with varying levels of color sensitivity. Some individuals can detect slight differences in color better than others.  
   
@@ -57,7 +57,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
   
 <a name="gamma_level"></a>   
 ## Gamma Level  
- The gamma level refers to the nonlinear relationship between a pixel value and luminance. The gamma level setting should correspond to the physical characteristics of the display device; otherwise, distortions in rendered output may occur. For example, test may appear too wide or too narrow, or color fringes may appear on the edges of vertical stems of glyphs.  
+ The gamma level refers to the nonlinear relationship between a pixel value and luminance. The gamma level setting should correspond to the physical characteristics of the display device; otherwise, distortions in rendered output may occur. For example, text may appear too wide or too narrow, or color fringes may appear on the edges of vertical stems of glyphs.  
   
  The gamma level is an integer value that ranges from 1000 to 2200. The default level is 1900.  
   

@@ -6,9 +6,10 @@ ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4
 # \<wsHttpContextBinding>
 Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that requires that the protection level be signed.  
   
-\<system.serviceModel>  
-\<bindings>  
-\<wsHttpContextBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<wsHttpContextBinding>**  
   
 ## Syntax  
   

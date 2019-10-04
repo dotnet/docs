@@ -17,7 +17,7 @@ Given an XML Schema that complies with the XML Schema definition language (XSD) 
 xsd.exe /d /l:CS XSDSchemaFileName.xsd /eld /n:XSDSchema.Namespace  
 ```  
   
- In this syntax, the `/d` directive tells the tool to generate a **DataSet**, and the `/l:` tells the tool what language to use (for example, C# or Visual Basic .NET). The optional `/eld` directive specifies that you can use LINQ to DataSet to query against the generated **DataSet.** This option is used when the `/d` option is also specified. For more information, see [Querying Typed DataSets](../../../../../docs/framework/data/adonet/querying-typed-datasets.md). The optional `/n:` directive tells the tool to also generate a namespace for the **DataSet** called **XSDSchema.Namespace**. The output of the command is XSDSchemaFileName.cs, which can be compiled and used in an ADO.NET application. The generated code can be compiled as a library or a module.  
+ In this syntax, the `/d` directive tells the tool to generate a **DataSet**, and the `/l:` tells the tool what language to use (for example, C# or Visual Basic .NET). The optional `/eld` directive specifies that you can use LINQ to DataSet to query against the generated **DataSet.** This option is used when the `/d` option is also specified. For more information, see [Querying Typed DataSets](../querying-typed-datasets.md). The optional `/n:` directive tells the tool to also generate a namespace for the **DataSet** called **XSDSchema.Namespace**. The output of the command is XSDSchemaFileName.cs, which can be compiled and used in an ADO.NET application. The generated code can be compiled as a library or a module.  
   
  The following code shows the syntax for compiling the generated code as a library using the C# compiler (csc.exe).  
   
@@ -67,7 +67,7 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
   Console.WriteLine(customerRow.CustomerID);  
 ```  
   
- Following is the XML Schema used for the example.  
+ The following is the XML Schema used for the example:
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -92,6 +92,6 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
 
 - <xref:System.Data.DataColumnCollection>
 - <xref:System.Data.DataSet>
-- [Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Typed DataSets](typed-datasets.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

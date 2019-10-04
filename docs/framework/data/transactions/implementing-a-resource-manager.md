@@ -8,7 +8,7 @@ Each resource used in a transaction is managed by a resource manager, whose acti
   
  A resource manager manages either durable or volatile data. The durability (or conversely the volatility) of a resource manager refers to whether the resource manager supports failure recovery. If a resource manager supports failure recovery, it persists data to durable storage during Phase1 (prepare) such that if the resource manager goes down, it can re-enlist in the transaction upon recovery and perform the proper actions based on the notifications received from the transaction manager. In general, volatile resource managers manage volatile resources such as an in-memory data structure (for example, an in-memory transacted-hashtable), and durable resource managers manage resources that have a more persistent backing store (for example, a database whose backing store is disk).  
   
- In order for a resource to participate in a transaction, it must enlist in the transaction. The <xref:System.Transactions.Transaction> class defines a set of methods whose names begin with **Enlist** that provide this functionality. The different **Enlist** methods correspond to the different types of enlistment that a resource manager may have. Specifically, you use the <xref:System.Transactions.Transaction.EnlistVolatile%2A> methods for volatile resources, and the <xref:System.Transactions.Transaction.EnlistDurable%2A> method for durable resources. For simplicity, after deciding whether to use the <xref:System.Transactions.Transaction.EnlistDurable%2A> or <xref:System.Transactions.Transaction.EnlistVolatile%2A> method based on your resource's durability support, you should enlist your resource to participate in Two Phase Commit (2PC) by implementing the <xref:System.Transactions.IEnlistmentNotification> interface for your resource manager. For more information on 2PC, see [Committing a Transaction in Single-Phase and Multi-Phase](../../../../docs/framework/data/transactions/committing-a-transaction-in-single-phase-and-multi-phase.md).  
+ In order for a resource to participate in a transaction, it must enlist in the transaction. The <xref:System.Transactions.Transaction> class defines a set of methods whose names begin with **Enlist** that provide this functionality. The different **Enlist** methods correspond to the different types of enlistment that a resource manager may have. Specifically, you use the <xref:System.Transactions.Transaction.EnlistVolatile%2A> methods for volatile resources, and the <xref:System.Transactions.Transaction.EnlistDurable%2A> method for durable resources. For simplicity, after deciding whether to use the <xref:System.Transactions.Transaction.EnlistDurable%2A> or <xref:System.Transactions.Transaction.EnlistVolatile%2A> method based on your resource's durability support, you should enlist your resource to participate in Two Phase Commit (2PC) by implementing the <xref:System.Transactions.IEnlistmentNotification> interface for your resource manager. For more information on 2PC, see [Committing a Transaction in Single-Phase and Multi-Phase](committing-a-transaction-in-single-phase-and-multi-phase.md).  
   
  By enlisting, the resource manager ensures that it gets callbacks from the transaction manager when the transaction commits or aborts. There is one instance of <xref:System.Transactions.IEnlistmentNotification> per enlistment. Typically, there is one enlistment per transaction, but a resource manager can choose to enlist multiple times in the same transaction.  
   
@@ -24,27 +24,27 @@ Each resource used in a transaction is managed by a resource manager, whose acti
   
  In summary, the two-phase commit protocol and the resource managers combine to make transactions atomic and durable.  
   
- The <xref:System.Transactions.Transaction> class also provides the <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A> method to enlist a Promotable Single Phase Enlistment (PSPE). This allows a durable resource manager (RM) to host and "own" a transaction that can later be escalated to be managed by the MSDTC if necessary. For more information on this, see [Optimization using Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md).  
+ The <xref:System.Transactions.Transaction> class also provides the <xref:System.Transactions.Transaction.EnlistPromotableSinglePhase%2A> method to enlist a Promotable Single Phase Enlistment (PSPE). This allows a durable resource manager (RM) to host and "own" a transaction that can later be escalated to be managed by the MSDTC if necessary. For more information on this, see [Optimization using Single Phase Commit and Promotable Single Phase Notification](optimization-spc-and-promotable-spn.md).  
   
 ## In This Section  
  The steps generally followed by a resource manager are outlined in the following topics.  
   
- [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md)  
+ [Enlisting Resources as Participants in a Transaction](enlisting-resources-as-participants-in-a-transaction.md)  
   
  Describes how a durable or volatile resource can enlist in a transaction.  
   
- [Committing a Transaction in Single-Phase and Multi-Phase](../../../../docs/framework/data/transactions/committing-a-transaction-in-single-phase-and-multi-phase.md)  
+ [Committing a Transaction in Single-Phase and Multi-Phase](committing-a-transaction-in-single-phase-and-multi-phase.md)  
   
  Describes how a resource manager responds to commit notification and prepare the commit.  
   
- [Performing Recovery](../../../../docs/framework/data/transactions/performing-recovery.md)  
+ [Performing Recovery](performing-recovery.md)  
   
  Describes how a durable resource manager recovers from failure.  
   
- [Security Trust Levels in Accessing Resources](../../../../docs/framework/data/transactions/security-trust-levels-in-accessing-resources.md)  
+ [Security Trust Levels in Accessing Resources](security-trust-levels-in-accessing-resources.md)  
   
  Describes how the three levels of trust for System.Transactions restrict access on the types of resources that <xref:System.Transactions> exposes.  
   
- [Optimization using Single Phase Commit and Promotable Single Phase Notification](../../../../docs/framework/data/transactions/optimization-spc-and-promotable-spn.md)  
+ [Optimization using Single Phase Commit and Promotable Single Phase Notification](optimization-spc-and-promotable-spn.md)  
   
  Describes optimization practices available to implementations of resource managers.

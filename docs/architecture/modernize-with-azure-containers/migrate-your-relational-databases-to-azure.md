@@ -12,7 +12,7 @@ In Azure, you can migrate your database servers directly to IaaS VMs (pure lift 
 
 ![Database migration paths in Azure](./media/image3-1.png)
 
-> **Figure 3-1.** Database migration paths in Azure
+**Figure 3-1.** Database migration paths in Azure
 
 ## When to migrate to Azure SQL Database Managed Instance
 

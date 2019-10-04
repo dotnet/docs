@@ -20,7 +20,7 @@ Performs a logical exclusion on two `Boolean` expressions, or a bitwise exclusio
   
 ## Syntax  
   
-```  
+```vb  
 result = expression1 Xor expression2  
 ```  
   

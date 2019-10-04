@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<UseSmallInternalThreadStacks> Element
 Requests that the common language runtime (CLR) reduce memory use by specifying explicit stack sizes when it creates certain threads that it uses internally, instead of using the default stack size for those threads.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<UseSmallInternalThreadStacks> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<UseSmallInternalThreadStacks>**  
   
 ## Syntax  
   

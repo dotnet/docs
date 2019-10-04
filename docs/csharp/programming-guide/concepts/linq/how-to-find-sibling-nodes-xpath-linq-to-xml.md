@@ -45,7 +45,7 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Book id="bk101">  
   <Author>Garghentini, Davide</Author>  

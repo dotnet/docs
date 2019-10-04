@@ -81,7 +81,7 @@ Normally, the case identifiers can be used without qualifying them with the name
 In F# Discriminated Unions are often used in domain-modeling for wrapping a single type. It's easy to extract the underlying value via pattern matching as well. You don't need to use a match expression for a single case:
 
 ```fsharp
-let ([UnionCaseName] [values]) = [UnionValue]
+let ([UnionCaseIdentifier] [values]) = [UnionValue]
 ```
 
 The following example demonstrates this:
@@ -136,7 +136,7 @@ Instead of a virtual method to compute an area or perimeter, as you would use in
 
 The output is as follows:
 
-```
+```console
 Area of circle that has radius 15.000000: 706.858347
 Area of square that has side 10.000000: 100.000000
 Area of rectangle that has height 5.000000 and width 10.000000 is 50.000000

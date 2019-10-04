@@ -74,7 +74,7 @@ class XLinqTest
   
  This example produces the following output:  
   
-```  
+```output  
 Testing for type: XElementNullContainer  
   Deserialized type: XElementNullContainer  
 Testing for type: System.Xml.Linq.XElement  

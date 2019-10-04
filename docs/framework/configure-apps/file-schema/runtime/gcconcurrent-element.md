@@ -16,9 +16,9 @@ ms.author: "ronpet"
 
 Specifies whether the common language runtime runs garbage collection on a separate thread.
 
-\<configuration>\
-\<runtime>\
-\<gcConcurrent>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<gcConcurrent>**  
 
 ## Syntax
 

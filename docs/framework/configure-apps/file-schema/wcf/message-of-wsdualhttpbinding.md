@@ -6,12 +6,13 @@ ms.assetid: 75101744-eed8-4d61-91f4-5fc4473a21f2
 # \<message> of \<wsDualHttpBinding>
 Defines message-level security for the [\<wsDualHttpBinding>](wsdualhttpbinding.md).  
   
- \<system.ServiceModel>  
-\<bindings>  
-\<wsDualHttpBinding>  
-\<binding>  
-\<security>  
-\<message>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<wsDualHttpBinding>**](wsdualhttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-wsdualhttpbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
   
 ## Syntax  
   

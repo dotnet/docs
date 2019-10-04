@@ -132,8 +132,8 @@ author: "BrucePerlerMS"
   
 1. Open the **Default.aspx** file under the **TestApp** project and replace its existing markup with the following markup:  
   
-    ```  
-    %@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>  
+    ```aspx-csharp
+    <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>  
   
     <!DOCTYPE html>  
   

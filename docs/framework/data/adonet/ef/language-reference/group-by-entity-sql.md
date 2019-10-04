@@ -4,11 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: cf4f4972-4724-4945-ba44-943a08549139
 ---
 # GROUP BY (Entity SQL)
-Specifies groups into which objects returned by a query ([SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md)) expression are to be placed.  
+Specifies groups into which objects returned by a query ([SELECT](select-entity-sql.md)) expression are to be placed.  
   
 ## Syntax  
   
-```  
+```sql  
 [ GROUP BY aliasedExpression [ ,...n ] ]  
 ```  
   
@@ -44,25 +44,25 @@ Specifies groups into which objects returned by a query ([SELECT](../../../../..
   
  Each GROUP By key expression must have at least one reference to the input scope:  
   
-```  
+```sql  
 SELECT FROM Persons as P  
 GROUP BY Q + P   -- GOOD  
 GROUP BY Q   -- BAD  
 GROUP BY 1   -- BAD, a constant is not allowed  
 ```  
   
- For an example of using GROUP BY, see [HAVING](../../../../../../docs/framework/data/adonet/ef/language-reference/having-entity-sql.md).  
+ For an example of using GROUP BY, see [HAVING](having-entity-sql.md).  
   
 ## Example  
  The following Entity SQL query uses the GROUP BY operator to specify groups into which objects are returned by a query. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#GROUPBY](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#groupby)]  
+ [!code-sql[DP EntityServices Concepts#GROUPBY](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#groupby)]  
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Query Expressions](query-expressions-entity-sql.md)

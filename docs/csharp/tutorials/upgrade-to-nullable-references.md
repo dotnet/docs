@@ -11,6 +11,7 @@ C# 8 introduces **nullable reference types**, which complement reference types t
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > - Enable null reference checks as you work with code.
 > - Diagnose and correct different warnings related to null values.
 > - Manage the interface between nullable enabled and nullable disabled contexts.
@@ -18,7 +19,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8 compiler is available starting with [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -45,9 +46,6 @@ A good next step is to turn on the nullable annotation context and see how many 
 ```xml
 <Nullable>enable</Nullable>
 ```
-
-> [!IMPORTANT]
-> The `Nullable` element was previously named `NullableContextOptions`. The rename ships with Visual Studio 2019, 16.2-p1. The .NET Core SDK 3.0.100-preview5-011568 does not have this change. If you are using the .NET Core CLI, you'll need to use `NullableContextOptions` until the next preview is available.
 
 Do a test build, and notice the warning list. In this small application, the compiler generates five warnings, so it's likely you'd leave the nullable annotation context enabled and start fixing warnings for the entire project.
 

@@ -8,7 +8,7 @@ ms.assetid: f0dbf7b0-0292-4e31-9ae4-b98288336dc1
 ---
 # Object Materialization (WCF Data Services)
 
-When you use the **Add Service Reference** dialog to consume an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed in a .NET Framework-based client application, equivalent data classes are generated for each entity type in the data model exposed by the feed. For more information, see [Generating the Data Service Client Library](../../../../docs/framework/data/wcf/generating-the-data-service-client-library-wcf-data-services.md). Entity data that is returned by a query is materialized into an instance of one of these generated client data service classes. For information about merge options and identity resolution for tracked objects, see [Managing the Data Service Context](../../../../docs/framework/data/wcf/managing-the-data-service-context-wcf-data-services.md).
+When you use the **Add Service Reference** dialog to consume an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed in a .NET Framework-based client application, equivalent data classes are generated for each entity type in the data model exposed by the feed. For more information, see [Generating the Data Service Client Library](generating-the-data-service-client-library-wcf-data-services.md). Entity data that is returned by a query is materialized into an instance of one of these generated client data service classes. For information about merge options and identity resolution for tracked objects, see [Managing the Data Service Context](managing-the-data-service-context-wcf-data-services.md).
 
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] also enables you to define your own client data service classes rather than using the tool-generated data classes. This enables you to use your own data classes, also known as "plain-old CLR object" (POCO) data classes. When using these types of custom data classes, you should attribute the data class with either <xref:System.Data.Services.Common.DataServiceKeyAttribute> or <xref:System.Data.Services.Common.DataServiceEntityAttribute> and ensure that type names on the client match type names in the data model of the data service.
 
@@ -32,10 +32,10 @@ After the library receives the query response message, it materializes the retur
 
     - Complex properties are set to a new complex type instance, which are set with the properties of the complex type from the response.
 
-    - Navigation properties that return a collection of related entities are set to a new or existing instance of <xref:System.Collections.Generic.ICollection%601>, where `T` is the type of the related entity. This collection is empty unless the related objects have been loaded into the <xref:System.Data.Services.Client.DataServiceContext>. For more information, see [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md).
+    - Navigation properties that return a collection of related entities are set to a new or existing instance of <xref:System.Collections.Generic.ICollection%601>, where `T` is the type of the related entity. This collection is empty unless the related objects have been loaded into the <xref:System.Data.Services.Client.DataServiceContext>. For more information, see [Loading Deferred Content](loading-deferred-content-wcf-data-services.md).
 
       > [!NOTE]
-      > When the generated client data classes support data binding, navigation properties return instances of the <xref:System.Data.Services.Client.DataServiceCollection%601> class instead. For more information, see [Binding Data to Controls](../../../../docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md).
+      > When the generated client data classes support data binding, navigation properties return instances of the <xref:System.Data.Services.Client.DataServiceCollection%601> class instead. For more information, see [Binding Data to Controls](binding-data-to-controls-wcf-data-services.md).
 
 4. The <xref:System.Data.Services.Client.DataServiceContext.ReadingEntity> event is raised.
 
@@ -43,5 +43,5 @@ After the library receives the query response message, it materializes the retur
 
 ## See also
 
-- [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md)
-- [Query Projections](../../../../docs/framework/data/wcf/query-projections-wcf-data-services.md)
+- [Querying the Data Service](querying-the-data-service-wcf-data-services.md)
+- [Query Projections](query-projections-wcf-data-services.md)

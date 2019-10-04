@@ -12,7 +12,7 @@ Identifies a user-defined Win32 application manifest file to be embedded into a 
   
 ## Syntax  
   
-```  
+```console  
 -win32manifest: fileName  
 ```  
   

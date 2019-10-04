@@ -85,6 +85,7 @@
       href: keywords/abstract.md
     - name: async
       href: keywords/async.md
+      displayName: await
     - name: const
       href: keywords/const.md
     - name: event
@@ -201,10 +202,6 @@
         href: keywords/new-constraint.md
       - name: where
         href: keywords/where-generic-type-constraint.md
-  - name: Operator Keywords
-    items:
-    - name: await
-      href: keywords/await.md
   - name: Access Keywords
     items:
     - name: base
@@ -296,7 +293,7 @@
     displayName: ">, <, >=, <=, greater, less"
   - name: Member access operators
     href: operators/member-access-operators.md
-    displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation"
+    displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
   - name: Type-testing and cast operators
     href: operators/type-testing-and-cast.md
     displayName: "is operator, is keyword, as operator, as keyword, typeof, (), conversion"
@@ -318,15 +315,18 @@
   - name: "?: operator"
     href: operators/conditional-operator.md
     displayName: conditional, ternary, ref
-  - name: "?? operator"
+  - name: "?? and ??= operators"
     href: operators/null-coalescing-operator.md
-    displayName: null-coalescing
+    displayName: null-coalescing, assignment
   - name: => operator
     href: operators/lambda-operator.md
     displayName: lambda
   - name: ":: operator"
     href: operators/namespace-alias-qualifier.md
     displayName: "namespace alias qualifier, global namespace"
+  - name: await operator
+    href: operators/await.md
+    displayName: async
   - name: default operator
     href: operators/default.md
     displayName: default value, default literal, type default
@@ -555,7 +555,7 @@
     href: ../../../_csharplang/spec/unsafe-code.md
   - name: Documentation comments
     href: ../../../_csharplang/spec/documentation-comments.md
-- name: C# 7.0 language proposals
+- name: C# 7.0 specification proposals
   items:
   - name: Pattern matching
     href: ../../../_csharplang/proposals/csharp-7.0/pattern-matching.md
@@ -569,7 +569,7 @@
     href: ../../../_csharplang/proposals/csharp-7.0/binary-literals.md
   - name: Digit separators
     href: ../../../_csharplang/proposals/csharp-7.0/digit-separators.md
-- name: C# 7.1 language proposals
+- name: C# 7.1 specification proposals
   items:
   - name: Async main method
     href: ../../../_csharplang/proposals/csharp-7.1/async-main.md
@@ -579,7 +579,7 @@
     href: ../../../_csharplang/proposals/csharp-7.1/infer-tuple-names.md
   - name: Pattern matching with generics
     href: ../../../_csharplang/proposals/csharp-7.1/generics-pattern-match.md
-- name: C# 7.2 language proposals
+- name: C# 7.2 specification proposals
   items:
   - name: Readonly references
     href: ../../../_csharplang/proposals/csharp-7.2/readonly-ref.md
@@ -593,7 +593,7 @@
     href: ../../../_csharplang/proposals/csharp-7.2/conditional-ref.md
   - name: Leading digit separator
     href: ../../../_csharplang/proposals/csharp-7.2/leading-separator.md
-- name: C# 7.3 language proposals
+- name: C# 7.3 specification proposals
   items:
   - name: Unmanaged generic type constraints
     href: ../../../_csharplang/proposals/csharp-7.3/blittable.md
@@ -607,25 +607,29 @@
     href: ../../../_csharplang/proposals/csharp-7.3/stackalloc-array-initializers.md
   - name: Auto-implemented property field-targeted attributes
     href: ../../../_csharplang/proposals/csharp-7.3/auto-prop-field-attrs.md
-  - name: expression variables in initializers
+  - name: Expression variables in initializers
     href: ../../../_csharplang/proposals/csharp-7.3/expression-variables-in-initializers.md
   - name: Tuple equality (==) and inequality (!=)
     href: ../../../_csharplang/proposals/csharp-7.3/tuple-equality.md
   - name: Improved overload candidates
     href: ../../../_csharplang/proposals/csharp-7.3/improved-overload-candidates.md
-- name: C# 8.0 language proposals
+- name: C# 8.0 specification proposal
   items:
-  - name: Null reference types - proposal
+  - name: Nullable reference types - proposal
     href: ../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md
-  - name: nullable reference types - specification
+  - name: Nullable reference types - specification
     href: ../../../_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md
   - name: Recursive pattern matching
     href: ../../../_csharplang/proposals/csharp-8.0/patterns.md
-  - name: async streams
+  - name: Default interface members
+    href: ../../../_csharplang/proposals/csharp-8.0/default-interface-methods.md
+  - name: Async streams
     href: ../../../_csharplang/proposals/csharp-8.0/async-streams.md
   - name: Ranges
     href: ../../../_csharplang/proposals/csharp-8.0/ranges.md
   - name: Pattern based using and using declarations
     href: ../../../_csharplang/proposals/csharp-8.0/using.md
-  - name: null coalescing assignment
+  - name: Null coalescing assignment
     href: ../../../_csharplang/proposals/csharp-8.0/null-coalescing-assignment.md
+  - name: Readonly instance members
+    href: ../../../_csharplang/proposals/csharp-8.0/readonly-instance-members.md

@@ -29,7 +29,7 @@ The `virtualCERCall` managed debugging assistant (MDA) is activated as a warning
   
 ## Output  
   
-```  
+```output
 Method 'MethodWithCer', while executing within a constrained execution region, makes a call  
 at IL offset 0x0024 to 'VirtualMethod', which is virtual and cannot be prepared automatically  
 at compile time. The caller must ensure this method is prepared explicitly at  
@@ -93,5 +93,5 @@ void MethodWithCer(MyClass object)
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

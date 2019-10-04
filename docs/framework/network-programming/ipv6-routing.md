@@ -29,5 +29,5 @@ A flexible routing mechanism is a benefit of IPv6. Due to the way in which IPv4 
   
 ## See also
 
-- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
-- [Sockets](../../../docs/framework/network-programming/sockets.md)
+- [Internet Protocol Version 6](internet-protocol-version-6.md)
+- [Sockets](sockets.md)

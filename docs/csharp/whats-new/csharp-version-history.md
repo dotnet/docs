@@ -23,7 +23,7 @@ The C# build tools consider the latest major language release the default langua
 
 ## C# version 1.0
 
-When you go back and look, C# version 1.0 looked a lot like Java. As [part of its stated design goals for ECMA](https://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html), it sought to be a "simple, modern, general-purpose object-oriented language."  At the time, looking like Java meant it achieved those early design goals.
+When you go back and look, C# version 1.0, released with Visual Studio .NET 2002, looked a lot like Java. As [part of its stated design goals for ECMA](https://feeldotneteasy.blogspot.com/2011/01/c-design-goals.html), it sought to be a "simple, modern, general-purpose object-oriented language."  At the time, looking like Java meant it achieved those early design goals.
 
 But if you look back on C# 1.0 now, you'd find yourself a little dizzy. It lacked the built-in async capabilities and some of the slick functionality around generics you take for granted. As a matter of fact, it lacked generics altogether.  And [LINQ](../linq/index.md)? Not available yet. Those additions would take some years to come out.
 
@@ -43,7 +43,7 @@ The major features of C# 1.0 included:
 
 ## C# version 1.2
 
-C# version 1.2 shipped with Visual Studio 2003. It contained a few small enhancements to the language. Most notable is that starting with this version, the code generated in a `foreach` loop called <xref:System.IDisposable.Dispose%2A> on an <xref:System.Collections.IEnumerator> when that <xref:System.Collections.IEnumerator> implemented <xref:System.IDisposable>.
+C# version 1.2 shipped with Visual Studio .NET 2003. It contained a few small enhancements to the language. Most notable is that starting with this version, the code generated in a `foreach` loop called <xref:System.IDisposable.Dispose%2A> on an <xref:System.Collections.IEnumerator> when that <xref:System.Collections.IEnumerator> implemented <xref:System.IDisposable>.
 
 ## C# version 2.0
 
@@ -52,7 +52,7 @@ Now things start to get interesting. Let's take a look at some major features of
 - [Generics](../programming-guide/generics/index.md)
 - [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-classes)
 - [Anonymous methods](../language-reference/operators/delegate-operator.md)
-- [Nullable types](../programming-guide/nullable-types/index.md)
+- [Nullable value types](../programming-guide/nullable-types/index.md)
 - [Iterators](../programming-guide/concepts/iterators.md)
 - [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/index.md)
 
@@ -95,7 +95,7 @@ It took time for people to really grasp and integrate the concept, but they grad
 
 ## C# version 4.0
 
-C# version 4.0 would have had a difficult time living up to the groundbreaking status of version 3.0. With version 3.0, C# had moved the language firmly out from the shadow of Java and into prominence. The language was quickly becoming elegant.
+C# version 4.0, released with Visual Studio 2010, would have had a difficult time living up to the groundbreaking status of version 3.0. With version 3.0, C# had moved the language firmly out from the shadow of Java and into prominence. The language was quickly becoming elegant.
 
 The next version did introduce some interesting new features:
 
@@ -112,7 +112,7 @@ Dynamic binding gives you the potential for errors but also great power within t
 
 ## C# version 5.0
 
-C# version 5.0 was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept: the `async` and `await` model for asynchronous programming.  Here is the major features list:
+C# version 5.0, released with Visual Studio 2012, was a focused version of the language. Nearly all of the effort for that version went into another groundbreaking language concept: the `async` and `await` model for asynchronous programming.  Here is the major features list:
 
 - [Asynchronous members](../async.md)
 - [Caller info attributes](../programming-guide/concepts/caller-information.md)
@@ -127,7 +127,7 @@ But `async` and `await` are the real stars of this release. When these features 
 
 ## C# version 6.0
 
-With versions 3.0 and 5.0, C# had added major new features in an object-oriented language. With version 6.0, it would go away from doing a dominant killer feature and instead release many smaller features that made C# programming more productive. Here are some of them:
+With versions 3.0 and 5.0, C# had added major new features in an object-oriented language. With version 6.0, released with Visual Studio 2013, it would go away from doing a dominant killer feature and instead release many smaller features that made C# programming more productive. Here are some of them:
 
 - [Static imports](./csharp-6.md#using-static)
 - [Exception filters](./csharp-6.md#exception-filters)
@@ -149,7 +149,7 @@ They did one other thing along with this version, though it's not a traditional 
 
 ## C# version 7.0
 
-The most recent major version is C# version 7.0. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
+The most recent major version is C# version 7.0, released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
 
 - [Out variables](./csharp-7.md#out-variables)
 - [Tuples and deconstruction](./csharp-7.md#tuples)

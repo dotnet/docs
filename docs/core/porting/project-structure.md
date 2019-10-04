@@ -59,7 +59,7 @@ If there are existing projects that target older frameworks, you may want to lea
 Changes to note are:
 
 - The .NET Core and existing projects are kept in separate folders.
-- Keeping projects in separate folders avoids forcing you to have Visual Studio 2017. You can create a separate solution that only opens the old projects.
+  - Keeping projects in separate folders avoids forcing you to have Visual Studio 2017 or later versions. You can create a separate solution that only opens the old projects.
 
 ## See also
 

@@ -7,10 +7,10 @@ ms.date: 10/01/2019
 ---
 # Dump collection and analysis utility (`dotnet-dump`)
 
-**This article applies to: .NET Core 3.0 SDK and later versions
+**This article applies to: ✓** .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
-> `dotnet-dump` is not supported on macOS.
+> `dotnet-dump` isn't supported on macOS.
 
 ## Installing `dotnet-dump`
 
@@ -20,16 +20,12 @@ To install the latest release version of the `dotnet-dump` [NuGet package](https
 dotnet tool install -g dotnet-dump
 ```
 
-For details and other options, see [Installing the diagnostics tools](installing.md).
+For details and other options, see [Installing the diagnostics tools](install-tools.md).
 
 ## Synopsis
 
 ```console
 dotnet-dump [-h|--help] [--version] <command>
-
-dotnet-dump collect [-h|--help] [-p|--process-id <pid>] [--type <Heap|Mini>] [-o|--output <output_dump_path>] [--diag]
-
-dotnet-dump analyze [-h|--help] <dump_path> [-c|--command <debug_command>]
 ```
 
 ## Description
@@ -38,71 +34,84 @@ The `dotnet-dump` CLI global tool is a way to collect and analyze Windows and Li
 
 ## Options
 
-`--version`
+- **`--version`**
 
-Display the version of the dotnet-counters utility.
+Displays the version of the dotnet-counters utility.
 
-`-h|--help`
+- **`-h|--help`**
 
-Show command-line help.
+Shows command-line help.
 
 ## Commands
 
-| Command                                     | Function                                       |
-| ------------------------------------------- | ---------------------------------------------- |
-| [dotnet-dump collect](#dotnet-dump-collect) | Capture a dump from a process.                 |
-| [dotnet-dump analyze](#dotnet-dump-analyze) | Starts an interactive shell to explore a dump. |
+| Command                                     |
+| ------------------------------------------- |
+| [dotnet-dump collect](#dotnet-dump-collect) |
+| [dotnet-dump analyze](#dotnet-dump-analyze) |
 
 ## dotnet-dump collect
+
+Captures a dump from a process.
+
+### Synopsis
 
 ```console
 dotnet-dump collect [-h|--help] [-p|--process-id <pid>] [--type <Heap|Mini>] [-o|--output <output_dump_path>] [--diag]
 ```
 
-Capture a dump from a process.
+### Options
 
-`-p|--process-id <pid>`
+- **`-h|--help`**
 
-The process to collect a memory dump from.
+  Shows command-line help.
 
-`--type <Heap|Mini>`
+- **`-p|--process-id <pid>`**
 
-The dump type determines the kinds of information that are collected from the process. There are two types:
+  Specifies the process ID number to collect a memory dump from.
 
-- `Heap` - A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.
-- `Mini` - A small dump containing module lists, thread lists, exception information, and all stacks.
+- **`--type <Heap|Mini>`**
 
-If not specified `Heap` is the default.
+  Specifies the dumb type, which determines the kinds of information that are collected from the process. There are two types:
 
-`-o|--output <output_dump_path>`
+    - `Heap` - A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.
+    - `Mini` - A small dump containing module lists, thread lists, exception information, and all stacks.
 
-The full path and file name where the collected dump should be written.
+  If not specified, `Heap` is the default.
 
-If not specified:
+- **`-o|--output <output_dump_path>`**
 
-- Where YYYYMMDD is Year/Month/Day and HHMMSS is Hour/Minute/Second...
-- Defaults to '.\dump_YYYYMMDD_HHMMSS.dmp' on Windows.
-- Defaults to './core_YYYYMMDD_HHMMSS' on Linux.
+  The full path and file name where the collected dump should be written.
 
-`--diag`
+  If not specified:
 
-Enable dump collection diagnostic logging.
+    - Defaults to *.\dump_YYYYMMDD_HHMMSS.dmp* on Windows.
+    - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux.
+
+    YYYYMMDD is Year/Month/Day and HHMMSS is Hour/Minute/Second.
+
+- **`--diag`**
+
+  Enables dump collection diagnostic logging.
 
 ## dotnet-dump analyze
+
+Starts an interactive shell to explore a dump. The shell accepts various [SOS commands](#analyze-sos-commands).
+ 
+### Synopsis 
 
 ```console
 dotnet-dump analyze [-h|--help] <dump_path> [-c|--command <debug_command>]
 ```
 
-Starts an interactive shell to explore a dump. The shell accepts various [SOS commands](#analyze-sos-commands).
+### Options
 
-`<dump_path>`
+- **`<dump_path>`**
 
-Path to the dump file to analyze.
+Specifies the path to the dump file to analyze.
 
-`[-c|--command <debug_command>]`
+- **`[-c|--command <debug_command>]`**
 
-Command to run in the shell on start.
+Specifies the [command](#analyze-sos-commands) to run in the shell on start.
 
 ### Analyze SOS commands
 
@@ -110,10 +119,10 @@ Command to run in the shell on start.
 | ----------------------------------- | --------------------------------------------------------------------------------------------- |
 | `soshelp`                           | Displays all available commands                                                               |
 | `soshelp|help <command>`            | Displays the specified command.                                                               |
-| `exit|quit`                         | Exit interactive mode.                                                                        |
+| `exit|quit`                         | Exits interactive mode.                                                                       |
 | `clrstack <arguments>`              | Provides a stack trace of managed code only.                                                  |
-| `clrthreads <arguments>`            | List the managed threads running.                                                             |
-| `dumpasync <arguments>`             | Displays info about async state machines on the garbage-collected heap.                       |
+| `clrthreads <arguments>`            | Lists the managed threads running.                                                            |
+| `dumpasync <arguments>`             | Displays information about async state machines on the garbage-collected heap.                |
 | `dumpassembly <arguments>`          | Displays details about an assembly.                                                           |
 | `dumpclass <arguments>`             | Displays information about a EE class structure at the specified address.                     |
 | `dumpdelegate <arguments>`          | Displays information about a delegate.                                                        |
@@ -154,7 +163,7 @@ Written 98983936 bytes (24166 pages) to core file
 Complete
 ```
 
-Now analyze the core dump with the `analyze` command.
+Now analyze the core dump with the `analyze` command:
 
 ```console
 $ dotnet-dump analyze ./core_20190226_135850

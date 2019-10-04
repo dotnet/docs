@@ -13,7 +13,7 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
   
 ## Syntax  
   
-```  
+```console  
 xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]  
 ```  
   
@@ -48,31 +48,31 @@ xsltc [options] [/class:<name>] <sourceFile> [[/class:<name>] <sourceFile>...]
 ## Examples  
  The following command compiles the style sheet and creates an assembly named booksort.dll.  
   
-```  
+```console  
 xsltc booksort.xsl  
 ```  
   
  The following command compiles the style sheet and creates an assembly and PDB file that are named booksort.dll and booksort.pdb respectively.  
   
-```  
+```console  
 xsltc booksort.xsl /debug  
 ```  
   
  The following command compiles a style sheet that contains an msxsl:script element and creates two assemblies named calc.dll and calc_Script1.dll.  
   
-```  
+```console  
 xsltc /settings:script+ calc.xsl  
 ```  
   
  The following command enables DTD processing and script support and creates two assemblies named myTest.dll and myTest_Script1.dll.  
   
-```  
+```console  
 xsltc /settings:DTD+,script+ /out:myTest calc.xsl  
 ```  
   
  The following command compiles two style sheet modules and creates a single assembly named booksort.dll.  
   
-```  
+```console  
 xsltc booksort.xsl output.xsl  
 ```  
   

@@ -9,24 +9,22 @@ namespace Pipes
 {
     class Program
     {
+        // Reverted   - Recommend formatting code for Tables -no Horizontal bar end code here
         #region snippet
         public static void Main(string[] args)
         {
             var writeScheduler = new SingleThreadPipeScheduler();
             var readScheduler = new SingleThreadPipeScheduler();
 
-            // Tell the Pipe what schedulers to use
-            // and disable the SynchronizationContext .
-            var options = new PipeOptions(readerScheduler: readScheduler, 
-                          writerScheduler: writeScheduler, useSynchronizationContext: false);
+            // Tell the Pipe what schedulers to use, we also disable the SynchronizationContext 
+            var options = new PipeOptions(readerScheduler: readScheduler, writerScheduler: writeScheduler, useSynchronizationContext: false);
             var pipe = new Pipe(options);
         }
 
-        // This is a sample scheduler that async callbacks on a single dedicated thread.
+        // This is a sample scheduler that async callbacks on a single dedicated thread
         public class SingleThreadPipeScheduler : PipeScheduler
         {
-            private readonly BlockingCollection<(Action<object> Action, object State)>
-                    _queue = new BlockingCollection<(Action<object> Action, object State)>();
+            private readonly BlockingCollection<(Action<object> Action, object State)> _queue = new BlockingCollection<(Action<object> Action, object State)>();
             private readonly Thread _thread;
 
             public SingleThreadPipeScheduler()

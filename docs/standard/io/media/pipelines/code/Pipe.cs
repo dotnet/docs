@@ -8,6 +8,7 @@ namespace Pipes
 {
     public class MyPipeSample
     {
+        // reverted
         #region snippet
         async Task ProcessLinesAsync(Socket socket)
         {
@@ -15,7 +16,7 @@ namespace Pipes
             Task writing = FillPipeAsync(socket, pipe.Writer);
             Task reading = ReadPipeAsync(pipe.Reader);
 
-            await Task.WhenAll(reading, writing);
+            return Task.WhenAll(reading, writing);
         }
 
         async Task FillPipeAsync(Socket socket, PipeWriter writer)
@@ -24,7 +25,7 @@ namespace Pipes
 
             while (true)
             {
-                // Allocate at least 512 bytes from the PipeWriter.
+                // Allocate at least 512 bytes from the PipeWriter
                 Memory<byte> memory = writer.GetMemory(minimumBufferSize);
                 try
                 {
@@ -33,7 +34,7 @@ namespace Pipes
                     {
                         break;
                     }
-                    // Tell the PipeWriter how much was read from the Socket.
+                    // Tell the PipeWriter how much was read from the Socket
                     writer.Advance(bytesRead);
                 }
                 catch (Exception ex)
@@ -42,7 +43,7 @@ namespace Pipes
                     break;
                 }
 
-                // Make the data available to the PipeReader.
+                // Make the data available to the PipeReader
                 FlushResult result = await writer.FlushAsync();
 
                 if (result.IsCompleted)
@@ -51,7 +52,7 @@ namespace Pipes
                 }
             }
 
-            // Tell the PipeReader that there's no more data.
+            // Tell the PipeReader that there's no more data coming
             writer.Complete();
         }
 
@@ -64,48 +65,27 @@ namespace Pipes
 
                 while (TryReadLine(ref buffer, out ReadOnlySequence<byte> line))
                 {
-                    // Process the line.
+                    // Process the line
                     ProcessLine(line);
                 }
 
-                // Tell the PipeReader how much of the buffer has been consumed.
+                // Tell the PipeReader how much of the buffer we have consumed
                 reader.AdvanceTo(buffer.Start, buffer.End);
 
-                // Stop reading if there's no more data.
+                // Stop reading if there's no more data coming
                 if (result.IsCompleted)
                 {
                     break;
                 }
             }
 
-            // Mark the PipeReader as complete.
+            // Mark the PipeReader as complete
             reader.Complete();
         }
 
-        bool TryReadLine(ref ReadOnlySequence<byte> buffer, 
-                         out ReadOnlySequence<byte> bufferOut)
+        bool TryReadLine(ref ReadOnlySequence<byte> buffer, out ReadOnlySequence<byte> buffer)
         {
-            // Look for a EOL in the buffer.
-            SequencePosition? position = buffer.PositionOf((byte)'\n');
-
-            if (position == null)
-            {
-                buffer = default;
-                bufferOut = default;
-                return false;
-            }
-
-            // Skip the line and the \n
-            bufferOut = buffer.Slice(buffer.GetPosition(1, position.Value));
-            return true;
-        }
-        #endregion
-
-// Review Required - Original code below
-/*
- *         bool TryReadLine(ref ReadOnlySequence<byte> buffer, out ReadOnlySequence<byte> buffer)
-        {
-            // Look for a EOL in the buffer.
+            // Look for a EOL in the buffer
             SequencePosition? position = buffer.PositionOf((byte)'\n');
 
             if (position == null)
@@ -114,11 +94,11 @@ namespace Pipes
                 return false;
             }
 
-            // Skip the line and the \n
+            // Skip the line + the \n
             buffer = buffer.Slice(buffer.GetPosition(1, position.Value));
             return true;
         }
-        */
+        #endregion
 
         private void ProcessLine(ReadOnlySequence<byte> line)
         {
@@ -127,10 +107,15 @@ namespace Pipes
 
         private void dummy()
         {
+            /* NOT REVERTED as you had duplicate reader 
+             * var pipe = new Pipe();
+PipeReader reader = pipe.Reader;
+PipeWriter reader = pipe.Writer;   <-- I changed this line
+*/
             #region snippet2
             var pipe = new Pipe();
             PipeReader reader = pipe.Reader;
-            PipeWriter writer = pipe.Writer;
+            PipeWriter writer = pipe.Writer;   // @davidfowl approve change
             #endregion
         }
 
@@ -141,4 +126,3 @@ namespace Pipes
 
     }
 }
- 

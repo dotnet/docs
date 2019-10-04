@@ -7,18 +7,15 @@ namespace Pipes
 {
     class DoNotUse
     {
-        private void Dummy()
+        private void Data_loss()
         {
+            // reverted
             #region snippet
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                var pipe = new Pipe();
-                PipeReader reader = pipe.Reader;
-                var cancellationToken  = default(CancellationToken);
-                var result =  reader.ReadAsync(cancellationToken);
-
-                ReadOnlySequence<byte> dataLossBuffer = result.Result.Buffer;
+                ReadResult result = await reader.ReadAsync(cancellationToken);
+                ReadOnlySequence<byte> dataLossBuffer = result.Buffer;
 
                 if (result.IsCompleted)
                 {
@@ -37,19 +34,15 @@ namespace Pipes
             throw new NotImplementedException();
         }
 
-        private void Dummy2()
+        private void Infinite_loop()
         {
+            // reverted
             #region snippet2
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                var pipe = new Pipe();
-                PipeReader reader = pipe.Reader;
-                var cancellationToken = default(CancellationToken);
-                var result = reader.ReadAsync(cancellationToken);
-
-                ReadOnlySequence<byte> infiniteLoopBuffer = result.Result.Buffer;
-
+                ReadResult result = await reader.ReadAsync(cancellationToken);
+                ReadOnlySequence<byte> infiniteLoopBuffer = result.Buffer;
                 if (result.IsCompleted && infiniteLoopBuffer.IsEmpty)
                 {
                     break;
@@ -62,18 +55,15 @@ namespace Pipes
             #endregion
         }
 
-        private void Dummy3()
+        private void Infinite_loop2()
         {
+            // reverted
             #region snippet3
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                var pipe = new Pipe();
-                PipeReader reader = pipe.Reader;
-                var cancellationToken = default(CancellationToken);
-                var result = reader.ReadAsync(cancellationToken); 
-                
-                ReadOnlySequence<byte> infiniteLoopBuffer = result.Result.Buffer;
+                ReadResult result = await reader.ReadAsync(cancellationToken);
+                ReadOnlySequence<byte> infiniteLoopBuffer = result.Buffer;
 
                 if (!infiniteLoopBuffer.IsEmpty)
                 {
@@ -89,18 +79,15 @@ namespace Pipes
             #endregion
         }
 
-        private Message Dummy4()
+        private Message Unexpected_Hang()
         {
+            // reverted
             #region snippet4
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                var pipe = new Pipe();
-                PipeReader reader = pipe.Reader;
-                var cancellationToken = default(CancellationToken);
-                var result = reader.ReadAsync(cancellationToken);
-
-                ReadOnlySequence<byte> hangBuffer = result.Result.Buffer;
+                ReadResult result = await reader.ReadAsync(cancellationToken);
+                ReadOnlySequence<byte> hangBuffer = result.Buffer;
 
                 Process(ref hangBuffer, out Message message);
 
@@ -120,17 +107,15 @@ namespace Pipes
             return null;
         }
 
-        private Message Dummy5()
+        private Message Out_of_Memory()
         {
+            // reverted
             #region snippet5
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                var pipe = new Pipe();
-                PipeReader reader = pipe.Reader;
-                var cancellationToken = default(CancellationToken);
-                var result = reader.ReadAsync(cancellationToken);
-                ReadOnlySequence<byte> thisCouldOutOfMemory = result.Result.Buffer;
+                ReadResult result = await reader.ReadAsync(cancellationToken);
+                ReadOnlySequence<byte> thisCouldOutOfMemory = result.Buffer;
 
                 Process(ref thisCouldOutOfMemory, out Message message);
 
@@ -150,62 +135,56 @@ namespace Pipes
             return null;
         }
 
-        private Message Dummy6()
+        private Message Memory_Corruption()
         {
+            // reverted
             #region snippet6
             Environment.FailFast("This code is terrible, don't use it!");
             while (true)
             {
-                var pipe = new Pipe();
-                PipeReader reader = pipe.Reader;
-                var cancellationToken = default(CancellationToken);
-                var result = reader.ReadAsync(cancellationToken);
-                ReadOnlySequence<byte> buffer = result.Result.Buffer;
+                ReadResult result = await reader.ReadAsync(cancellationToken);
+                ReadOnlySequence<byte> buffer = result.Buffer;
 
                 ReadHeader(ref buffer, out int length);
-
-                Message message = null;
 
                 if (length > 0)
                 {
                     message = new Message
                     {
-                        // Slice the payload from the existing buffer.
-                        CorruptedPayload = buffer.Slice(0, length)
-                    };
+                        // Slice the payload from the existing buffer
+                        CorruptedPayload = buffer.Slice(0, length);
+                };
 
-                    buffer = buffer.Slice(length);
-                }
-
-                if (result.IsCompleted)
-                {
-                    break;
-                }
-
-                reader.AdvanceTo(buffer.Start, buffer.End);
-
-                if (message != null)
-                {
-                    // This code is broken since we called reader.AdvanceTo() with a position
-                    // *after* the buffer we captured.
-                    return message;
-                }
-
-                return null;
+                buffer = buffer.Slice(length);
             }
-            #endregion
-            return null;
+
+            if (result.IsCompleted)
+            {
+                break;
+            }
+
+            reader.AdvanceTo(buffer.Start, buffer.End);
+
+            if (message != null)
+            {
+                // This code is broken since we called reader.AdvanceTo() with a position *after* the buffer we captured
+                return message;
+            }
         }
+        #endregion
 
         private void ReadHeader(ref ReadOnlySequence<byte> buffer, out int length)
         {
             throw new NotImplementedException();
         }
 
+        // Reverted
+        #region snippetMessage
         public class Message
         {
             public ReadOnlySequence<byte> CorruptedPayload { get; set; }
         }
+        #endregion
     }
 }
 

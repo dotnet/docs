@@ -9,22 +9,17 @@ namespace Pipes
 {
     class ReadSingleMsg
     {
-        //sync ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, 
-        //                                               CancellationToken cancellationToken 
-            //                                           = default)
-        // Fowler I can't left align CancellationToken below unless I make another line, 
-        // which looks silly. Snippet is max width without a horizontal scroll bar on a tablet
+        // Reverted.  Recommend formatting for table   --------------------------------------
         #region snippet
-        async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, 
-                                                CancellationToken cancellationToken = default)
+        async ValueTask<Message> ReadSingleMessageAsync(PipeReader reader, CancellationToken cancellationToken = default)
         {
             while (true)
             {
                 ReadResult result = await reader.ReadAsync(cancellationToken);
                 ReadOnlySequence<byte> buffer = result.Buffer;
 
-                // In the event no message is parsed successfully,
-                // mark consumed as nothing and examined as the entire buffer.
+                // In the event that we don't parse any message successfully, mark consumed as nothing
+                // and examined as the entire buffer.
                 SequencePosition consumed = buffer.Start;
                 SequencePosition examined = buffer.End;
 
@@ -32,27 +27,23 @@ namespace Pipes
                 {
                     if (TryParseMessage(ref buffer, out Message message))
                     {
-                        // Successfully parsed a single message so mark the start
-                        // as the parsed buffer as consumed.
-                        // TryParseMessage trims the buffer to point to the data
-                        // after the message is parsed.
+                        // We successfully parsed a single message so mark the start as the parsed buffer as consumed
+                        // TryParseMessage trims the buffer to point to the data after the message was parsed
                         consumed = buffer.Start;
 
-                        // Examined is marked the same as consumed here so that the
-                        // next call to ReadSingleMessageAsync processs the next message
-                        // if there is one
+                        // Examined is marked the same as consumed here so that the next call to ReadSingleMessageAsync
+                        // will process the next message if there is one
                         examined = consumed;
 
                         return message;
                     }
 
-                    // There's no more data to be processed.
+                    // There's no more data to be processed
                     if (result.IsCompleted)
                     {
                         if (buffer.Length > 0)
                         {
-                            // There is an incomplete message and there's no more data
-                            // to process.
+                            // We have an incomplete message and there's no more data to process
                             throw new InvalidDataException("Incomplete message!");
                         }
 
@@ -67,8 +58,6 @@ namespace Pipes
 
             return null;
         }
-
-
         #endregion
 
         private Task ProcessMessageAsync(Message message)

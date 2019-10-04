@@ -295,12 +295,7 @@ When writing helpers that read the buffer, any returned payload should be copied
 
 [!INCLUDE[](media/pipelines/do-not-use-include1.md)]
 
-```csharp
-public class Message
-{
-   public ReadOnlySequence<byte> CorruptedPayload { get; set; }
-}
-```
+[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippetMessage)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet6)]
 

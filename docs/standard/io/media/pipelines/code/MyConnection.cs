@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Pipes
 {
+    // Reverted.  Recommend formatting for table   --------------------------------------
     #region snippet
     public class MyConnection
     {
@@ -17,7 +18,7 @@ namespace Pipes
 
         public void Abort()
         {
-            // Cancel the pending read so the the process loop ends without an exception.
+            // Cancel the pending read so the the process loop ends without an exception
             reader.CancelPendingRead();
         }
 
@@ -34,14 +35,11 @@ namespace Pipes
                     {
                         if (result.IsCanceled)
                         {
-                            // The read was canceled, we can quit without reading the 
-                            // existing data.
+                            // The read was canceled, we can quit without reading the existing data
                             break;
                         }
 
-                        // Process all messages from the buffer, modifying the input buffer
-                        //on each.
-                        //iteration
+                        // Process all messages from the buffer, modifying the input buffer on each iteration
                         while (TryParseMessage(ref buffer, out Message message))
                         {
                             await ProcessMessageAsync(message);
@@ -55,9 +53,8 @@ namespace Pipes
                     }
                     finally
                     {
-                        // Since we're processing all messages in the buffer, we can use the
-                        // remaining buffer's Start and End position to determine consumed 
-                        // and examined.
+                        // Since we're processing all messages in the buffer, we can use the remaining buffer's Start and End
+                        // position to determine consumed and examined
                         reader.AdvanceTo(buffer.Start, buffer.End);
                     }
                 }
@@ -67,20 +64,6 @@ namespace Pipes
                 await reader.CompleteAsync();
             }
         }
-        #endregion
-
-        private Task ProcessMessageAsync(Message message)
-        {
-            throw new NotImplementedException();
-        }
-
-        private bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message)
-        {
-            throw new NotImplementedException();
-        }
-
-        private class Message
-        {
-        }
     }
+    #endregion
 }

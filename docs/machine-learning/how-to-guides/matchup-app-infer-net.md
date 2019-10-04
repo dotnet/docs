@@ -24,7 +24,7 @@ Probabilistic programming allows you to create statistical models of real-world 
 
 1. Open a new command prompt and run the following commands:
 
-```console
+```dotnetcli
 dotnet new console -o myApp
 cd myApp
 ```
@@ -35,7 +35,7 @@ The `dotnet` command creates a `new` application of type `console`. The `-o` par
 
 To use Infer.NET, you need to install the `Microsoft.ML.Probabilistic.Compiler` package. In your command prompt, run the following command:
 
-```console
+```dotnetcli
 dotnet add package Microsoft.ML.Probabilistic.Compiler
 ```
 
@@ -126,7 +126,7 @@ namespace myApp
 
 In your command prompt, run the following command:
 
-```console
+```dotnetcli
 dotnet run
 ```
 
@@ -134,7 +134,7 @@ dotnet run
 
 Your results should be similar to the following:
 
-```
+```console
 Compiling model...done.
 Iterating:
 .........|.........|.........|.........|.........| 50

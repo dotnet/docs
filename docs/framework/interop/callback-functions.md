@@ -19,9 +19,9 @@ A callback function is code within a managed application that helps an unmanaged
   
  ![Diagram showing the platform invoke callback process.](./media/callback-functions/platform-invoke-callback-process.gif)  
   
- Callback functions are ideal for use in situations in which a task is performed repeatedly. Another common usage is with enumeration functions, such as **EnumFontFamilies**, **EnumPrinters**, and **EnumWindows** in the Windows API. The **EnumWindows** function enumerates through all existing windows on your computer, calling the callback function to perform a task on each window. For instructions and an example, see [How to: Implement Callback Functions](../../../docs/framework/interop/how-to-implement-callback-functions.md).  
+ Callback functions are ideal for use in situations in which a task is performed repeatedly. Another common usage is with enumeration functions, such as **EnumFontFamilies**, **EnumPrinters**, and **EnumWindows** in the Windows API. The **EnumWindows** function enumerates through all existing windows on your computer, calling the callback function to perform a task on each window. For instructions and an example, see [How to: Implement Callback Functions](how-to-implement-callback-functions.md).  
   
 ## See also
 
-- [How to: Implement Callback Functions](../../../docs/framework/interop/how-to-implement-callback-functions.md)
-- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
+- [How to: Implement Callback Functions](how-to-implement-callback-functions.md)
+- [Calling a DLL Function](calling-a-dll-function.md)

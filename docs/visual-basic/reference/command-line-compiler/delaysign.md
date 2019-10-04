@@ -12,7 +12,7 @@ Specifies whether the assembly will be fully or partially signed.
   
 ## Syntax  
   
-```  
+```console  
 -delaysign[+ | -]  
 ```  
   
@@ -27,7 +27,7 @@ Specifies whether the assembly will be fully or partially signed.
   
  For example, by using `-delaysign+`, a developer in an organization can distribute unsigned test versions of an assembly that testers can register with the global assembly cache and use. When work on the assembly is completed, the person responsible for the organization's private key can fully sign the assembly. This compartmentalization protects the organization's private key from disclosure, while allowing all developers to work on the assemblies.  
   
- See [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
+ See [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) for more information on signing an assembly.  
   
 ### To set -delaysign in the Visual Studio integrated development environment  
   

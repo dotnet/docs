@@ -54,9 +54,9 @@ Follow these general guidelines to create managed applications or components des
   
  The assembly version is used by the runtime for assembly binding. Two identical assemblies with different version numbers are treated as two different assemblies by the runtime.  
   
- The [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md) allows you to replace an assembly when only the file version number is newer. The installer generally does not install over an assembly unless the assembly version number is greater.  
+ The [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md) allows you to replace an assembly when only the file version number is newer. The installer generally does not install over an assembly unless the assembly version number is greater.  
   
 ## See also
 
-- [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md)
-- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
+- [Side-by-Side Execution](side-by-side-execution.md)
+- [How to: Enable and Disable Automatic Binding Redirection](../configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

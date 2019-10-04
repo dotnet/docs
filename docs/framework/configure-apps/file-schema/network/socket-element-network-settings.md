@@ -12,10 +12,10 @@ ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
 # \<socket> Element (Network Settings)
 Specifies whether socket operations use completion ports.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<socket>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<socket>**  
   
 ## Syntax  
   

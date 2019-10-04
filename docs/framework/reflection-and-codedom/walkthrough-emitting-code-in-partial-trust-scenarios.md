@@ -29,13 +29,13 @@ This walkthrough illustrates the following tasks:
 - [Setting up a simple sandbox for testing partially trusted code](#Setting_up).
 
   > [!IMPORTANT]
-  > This is a simple way to experiment with code in partial trust. To run code that actually comes from untrusted locations, see [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).
+  > This is a simple way to experiment with code in partial trust. To run code that actually comes from untrusted locations, see [How to: Run Partially Trusted Code in a Sandbox](../misc/how-to-run-partially-trusted-code-in-a-sandbox.md).
 
 - [Running code in partially trusted application domains](#Running_code).
 
 - [Using anonymously hosted dynamic methods to emit and execute code in partial trust](#Using_methods).
 
-For more information about emitting code in partial trust scenarios, see [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md).
+For more information about emitting code in partial trust scenarios, see [Security Issues in Reflection Emit](security-issues-in-reflection-emit.md).
 
 For a complete listing of the code shown in these procedures, see the [Example section](#Example) at the end of this walkthrough.
 
@@ -65,7 +65,7 @@ The following procedure creates a sandboxed application domain that runs your co
 2. Create an <xref:System.AppDomainSetup> object to initialize the application domain with an application path.
 
     > [!IMPORTANT]
-    > For simplicity, this code example uses the current folder. To run code that actually comes from the Internet, use a separate folder for the untrusted code, as described in [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md).
+    > For simplicity, this code example uses the current folder. To run code that actually comes from the Internet, use a separate folder for the untrusted code, as described in [How to: Run Partially Trusted Code in a Sandbox](../misc/how-to-run-partially-trusted-code-in-a-sandbox.md).
 
     [!code-csharp[HowToEmitCodeInPartialTrust#3](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/cs/source.cs#3)]
     [!code-vb[HowToEmitCodeInPartialTrust#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEmitCodeInPartialTrust/vb/source.vb#3)]
@@ -219,5 +219,5 @@ This comparison shows how <xref:System.Security.Permissions.ReflectionPermission
 
 ## See also
 
-- [Security Issues in Reflection Emit](../../../docs/framework/reflection-and-codedom/security-issues-in-reflection-emit.md)
-- [How to: Run Partially Trusted Code in a Sandbox](../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [Security Issues in Reflection Emit](security-issues-in-reflection-emit.md)
+- [How to: Run Partially Trusted Code in a Sandbox](../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)

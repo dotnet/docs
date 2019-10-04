@@ -26,7 +26,7 @@ Every computation expression is backed by a *builder* type. The builder type def
 
 All computation expressions have the following form:
 
-```
+```fsharp
 builder-expr { cexper }
 ```
 

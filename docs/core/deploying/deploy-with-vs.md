@@ -20,7 +20,7 @@ The following sections show how to use Microsoft Visual Studio to create the fol
 - Self-contained deployment
 - Self-contained deployment with third-party dependencies
 
-For information on using Visual Studio to develop .NET Core applications, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md#prerequisites-with-visual-studio-2017).
+For information on using Visual Studio to develop .NET Core applications, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md#prerequisites-to-develop-net-core-apps-with-visual-studio).
 
 ## Framework-dependent deployment
 
@@ -103,6 +103,8 @@ Deploying a self-contained deployment with no third-party dependencies involves 
    If you've enabled globalization invariant mode, be particularly sure to test whether the absence of culture-sensitive data is suitable for your application.
 
 Once you've finished debugging, you can publish your self-contained deployment:
+
+<!-- markdownlint-disable MD025 -->
 
 # [Visual Studio 15.6 and earlier](#tab/vs156)
 

@@ -65,14 +65,14 @@ Next, introduce the dialog into the larger [!INCLUDE[TLA2#tla_winclient](../../.
 
 You can turn a dialog box into a child HWND using the WS_CHILD and DS_CONTROL styles. Go into the resource file (.rc) where the dialog is defined, and find the beginning of the definition of the dialog:
 
-```
+```text
 IDD_DIALOG1 DIALOGEX 0, 0, 303, 121
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 ```
 
 Change the second line to:
 
-```
+```text
 STYLE DS_SETFONT | WS_CHILD | WS_BORDER | DS_CONTROL
 ```
 

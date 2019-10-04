@@ -317,13 +317,18 @@
     items:
     - name: Overview
       href: core/tools/index.md
-    - name: Global Tools
+    - name: Tools
       expanded: true
       items:
-      - name: Overview
-        href: core/tools/global-tools.md
-      - name: Create a Global Tool
-        href: core/tools/global-tools-how-to-create.md
+      - name: Global Tools
+        expanded: true
+        items:
+        - name: Overview
+          href: core/tools/global-tools.md
+        - name: Create a Global Tool
+          href: core/tools/global-tools-how-to-create.md
+      - name: Troubleshoot tool usage issues
+        href: core/tools/troubleshoot-usage-issues.md
     - name: Elevated access
       href: core/tools/elevated-access.md
     - name: Extensibility Model
@@ -532,6 +537,8 @@
     href: framework/tools/
   - name: Additional Class Libraries and APIs
     href: framework/additional-apis/
+- name: .NET Desktop Guide - WPF
+  href: desktop-wpf/
 - name: C# Guide
   href: csharp/index.md
   items:
@@ -599,7 +606,7 @@
     href: csharp/tour-of-csharp/
   - name: What's new in C#
     items:
-    - name: C# 8.0 - Preview 5
+    - name: C# 8.0
       href: csharp/whats-new/csharp-8.md
     - name: C# 7.3
       href: csharp/whats-new/csharp-7-3.md
@@ -1070,24 +1077,6 @@
   - name: Programming Concepts
     href: visual-basic/programming-guide/concepts/index.md
     items:
-    - name: Assemblies
-      items:
-      - name: Friend Assemblies
-        items:
-        - name: "How to: Create Unsigned Friend Assemblies"
-          href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md
-        - name: "How to: Create Signed Friend Assemblies"
-          href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md
-      - name: "How to: Create and Use Assemblies Using the Command Line"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md
-      - name: "How to: Determine If a File Is an Assembly"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md
-      - name: "How to: Load and Unload Assemblies"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md
-      - name: "How to: Share an Assembly with Other Applications"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/how-to-share-an-assembly-with-other-applications.md
-      - name: "Walkthrough: Embedding Types from Managed Assemblies"
-        href: visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md
     - name: Asynchronous Programming with Async and Await
       href: visual-basic/programming-guide/concepts/async/index.md
     - name: Attributes

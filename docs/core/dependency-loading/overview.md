@@ -22,6 +22,7 @@ The <xref:System.Runtime.Loader.AssemblyLoadContext> API is central to the .NET 
 ## Loading details
 
 The loading algorithm details are covered briefly in several articles:
+
 - [Managed assembly loading algorithm](loading-managed.md)
 - [Satellite assembly loading algorithm](loading-resources.md)
 - [Unmanaged (native) library loading algorithm](loading-unmanaged.md)

@@ -40,7 +40,7 @@ In Visual Basic, adding references to COM objects that have type libraries requi
   
      The following code provides an example:  
   
-    ```  
+    ```console  
     Tlbimp test3.dll /out:NameSpace1 /out:Interop1.dll  
     ```  
   

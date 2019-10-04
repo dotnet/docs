@@ -58,13 +58,13 @@ The following example package store manifest (*packages.csproj*) is used to add 
 
 Provision the runtime package store by executing `dotnet store` with the package store manifest, runtime, and framework:
 
-```console
+```dotnetcli
 dotnet store --manifest <PATH_TO_MANIFEST_FILE> --runtime <RUNTIME_IDENTIFIER> --framework <FRAMEWORK>
 ```
 
 **Example**
 
-```console
+```dotnetcli
 dotnet store --manifest packages.csproj --runtime win10-x64 --framework netcoreapp2.0 --framework-version 2.0.0
 ```
 
@@ -88,13 +88,13 @@ The following *artifact.xml* file is produced after running the previous example
 
 If you have a target manifest file on disk, you specify the path to the file when publishing your app with the [`dotnet publish`](../tools/dotnet-publish.md) command:
 
-```console
+```dotnetcli
 dotnet publish --manifest <PATH_TO_MANIFEST_FILE>
 ```
 
 **Example**
 
-```console
+```dotnetcli
 dotnet publish --manifest manifest.xml
 ```
 

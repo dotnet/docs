@@ -25,6 +25,7 @@ Configuration-based activation takes the metadata that used to be placed in the 
  With this in the Web.config file, you can place the service source code in the App_Code directory of the application or a complied assembly in the Bin directory of the application.
 
 > [!NOTE]
+>
 > - When using configuration-based activation, inline code in .svc files is not supported.
 > - The `relativeAddress` attribute must be set to a relative address such as "\<sub-directory>/service.svc" or "~/\<sub-directory/service.svc".
 > - A configuration exception is thrown if you register a relative address that does not have a known extension associated with WCF.

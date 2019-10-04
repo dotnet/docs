@@ -63,4 +63,4 @@ Changes to note are:
 
 ## See also
 
-Please see the [.NET Core porting documentation](index.md) for more guidance on migrating to .NET Core.
+- [.NET Core porting documentation](index.md)

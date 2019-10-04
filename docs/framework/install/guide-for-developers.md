@@ -22,7 +22,7 @@ This article provides links for installing all versions of the .NET Framework fr
 
 [!INCLUDE[net-framework-4-versions](../../../includes/net-framework-4x-versions.md)]
 
-For more information about versions of the .NET Framework and how to determine which versions are installed on a computer, see [Versions and Dependencies](../migration-guide/versions-and-dependencies.md) and [How to: Determine Which .NET Framework Versions Are Installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md).
+For more information about versions of the .NET Framework and how to determine which versions are installed on a computer, see [Versions and Dependencies](../migration-guide/versions-and-dependencies.md) and [How to: Determine Which .NET Framework Versions Are Installed](../migration-guide/how-to-determine-which-versions-are-installed.md).
 
 > [!NOTE]
 > For information on the .NET Framework 3.5, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](dotnet-35-windows-10.md).
@@ -149,7 +149,7 @@ Both web and offline installers are designed for x86-based and x64-based compute
 
 - .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, and .NET Framework 4.8 replace .NET Framework 4. When you install these versions on a system that has .NET Framework 4 installed, the assemblies are replaced.
 
-- Uninstalling .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, or .NET Framework 4.8 also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. (See [Installing the .NET Framework 4](https://go.microsoft.com/fwlink/p/?LinkId=230665).)
+- Uninstalling .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, or .NET Framework 4.8 also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. See [Installing the .NET Framework 4](https://go.microsoft.com/fwlink/p/?LinkId=230665).
 
 - You must have administrative credentials to install .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point release, and .NET Framework 4.8.
 
@@ -221,7 +221,7 @@ The following table lists the supported languages.
 
 - If you're new to the .NET Framework, see the [overview](../get-started/overview.md) for an introduction to key concepts and components.
 
-- For new features and improvements in the .NET Framework 4.5 and all later versions, see [What's New](../../../docs/framework/whats-new/index.md).
+- For new features and improvements in the .NET Framework 4.5 and all later versions, see [What's New](../whats-new/index.md).
 
 - For detailed information about deploying the .NET Framework with your app, see [Deployment Guide for Developers](../deployment/deployment-guide-for-developers.md).
 

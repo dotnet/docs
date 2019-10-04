@@ -30,7 +30,7 @@ There are two ways to make this type information available to your application:
 
 When you use design-time-only interop assemblies, you can embed type information from the primary interop assembly published by the author of the COM component. However, you do not have to deploy the primary interop assembly with your application.
 
-Using design-time-only interop assemblies reduces the size of your application, because most applications do not use all the features of a COM component. The compiler is very efficient when it embeds type information; if your application uses only some of the methods on a COM interface, the compiler does not embed the unused methods. When an application that has embedded type information interacts with another such application, or interacts with an application that uses a primary interop assembly, the common language runtime uses type equivalence rules to determine whether two types with the same name represent the same COM type. You do not have to know these rules to use COM objects. However, if you are interested in the rules, see [Type Equivalence and Embedded Interop Types](../../../docs/framework/interop/type-equivalence-and-embedded-interop-types.md).
+Using design-time-only interop assemblies reduces the size of your application, because most applications do not use all the features of a COM component. The compiler is very efficient when it embeds type information; if your application uses only some of the methods on a COM interface, the compiler does not embed the unused methods. When an application that has embedded type information interacts with another such application, or interacts with an application that uses a primary interop assembly, the common language runtime uses type equivalence rules to determine whether two types with the same name represent the same COM type. You do not have to know these rules to use COM objects. However, if you are interested in the rules, see [Type Equivalence and Embedded Interop Types](type-equivalence-and-embedded-interop-types.md).
 
 ## Generating Metadata
 
@@ -40,11 +40,11 @@ After you locate the type library that contains the implementation of your targe
 
 - Visual Studio
 
-  Visual Studio automatically converts COM types in a type library to metadata in an assembly. For instructions, see [How to: Add References to Type Libraries](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md).
+  Visual Studio automatically converts COM types in a type library to metadata in an assembly. For instructions, see [How to: Add References to Type Libraries](how-to-add-references-to-type-libraries.md).
 
-- [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)
+- [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md)
 
-  The Type Library Importer provides command-line options to adjust metadata in the resulting interop file, imports types from an existing type library, and generates an interop assembly and a namespace. For instructions, see [How to: Generate Interop Assemblies from Type Libraries](../../../docs/framework/interop/how-to-generate-interop-assemblies-from-type-libraries.md).
+  The Type Library Importer provides command-line options to adjust metadata in the resulting interop file, imports types from an existing type library, and generates an interop assembly and a namespace. For instructions, see [How to: Generate Interop Assemblies from Type Libraries](how-to-generate-interop-assemblies-from-type-libraries.md).
 
 - <xref:System.Runtime.InteropServices.TypeLibConverter?displayProperty=nameWithType> class
 
@@ -69,12 +69,12 @@ After you locate the type library that contains the implementation of your targe
 ## See also
 
 - <xref:System.Runtime.InteropServices.TypeLibConverter>
-- [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)
+- [Exposing COM Components to the .NET Framework](exposing-com-components.md)
 - [Type Library to Assembly Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
-- [Tlbimp.exe (Type Library Importer)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md)
+- [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md)
 - [Customizing Standard Wrappers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100))
 - [Using COM Types in Managed Code](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
-- [Compiling an Interop Project](../../../docs/framework/interop/compiling-an-interop-project.md)
-- [Deploying an Interop Application](../../../docs/framework/interop/deploying-an-interop-application.md)
-- [How to: Add References to Type Libraries](../../../docs/framework/interop/how-to-add-references-to-type-libraries.md)
-- [How to: Generate Interop Assemblies from Type Libraries](../../../docs/framework/interop/how-to-generate-interop-assemblies-from-type-libraries.md)
+- [Compiling an Interop Project](compiling-an-interop-project.md)
+- [Deploying an Interop Application](deploying-an-interop-application.md)
+- [How to: Add References to Type Libraries](how-to-add-references-to-type-libraries.md)
+- [How to: Generate Interop Assemblies from Type Libraries](how-to-generate-interop-assemblies-from-type-libraries.md)

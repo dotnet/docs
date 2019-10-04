@@ -12,10 +12,10 @@ ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
 # \<defaultFtpCachePolicy> Element (Network Settings)
 Describes whether FTP caching is active and describes the default caching policy.  
   
- \<configuration>  
-\<system.net>  
-\<requestCaching>  
-\<defaultFtpCachePolicy>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<requestCaching>**](requestcaching-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultFtpCachePolicy>**  
   
 ## Syntax  
   

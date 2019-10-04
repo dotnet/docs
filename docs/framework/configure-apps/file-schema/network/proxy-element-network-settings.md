@@ -12,10 +12,10 @@ ms.assetid: 37a548d8-fade-4ac5-82ec-b49b6c6cb22a
 # \<proxy> Element (Network Settings)
 Defines a proxy server.  
   
- \<configuration>  
-\<system.net>  
-\<defaultProxy>  
-\<proxy>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<proxy>**  
   
 ## Syntax  
   

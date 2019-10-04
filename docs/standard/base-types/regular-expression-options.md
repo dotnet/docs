@@ -209,9 +209,7 @@ By default, capturing groups are defined by the use of parentheses in the regula
 
 Grouping constructs are often used only to apply quantifiers to multiple language elements, and the captured substrings are of no interest. For example, if the following regular expression:
 
-```
-\b\(?((\w+),?\s?)+[\.!?]\)?
-```
+`\b\(?((\w+),?\s?)+[\.!?]\)?`
 
 is intended only to extract sentences that end with a period, exclamation point, or question mark from a document, only the resulting sentence (which is represented by the <xref:System.Text.RegularExpressions.Match> object) is of interest. The individual words in the collection are not.
 

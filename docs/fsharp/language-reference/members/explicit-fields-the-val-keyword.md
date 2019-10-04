@@ -22,19 +22,16 @@ Explicit fields can be static or non-static. The *access-modifier* can be `publi
 The [DefaultValue](https://msdn.microsoft.com/library/a3a3307b-8c05-441e-b109-245511614d58) attribute is required on explicit fields in class types that have a primary constructor. This attribute specifies that the field is initialized to zero. The type of the field must support zero-initialization. A type supports zero-initialization if it is one of the following:
 
 - A primitive type that has a zero value.
-
 - A type that supports a null value, either as a normal value, as an abnormal value, or as a representation of a value. This includes classes, tuples, records, functions, interfaces, .NET reference types, the `unit` type, and discriminated union types.
-
 - A .NET value type.
-
 - A structure whose fields all support a default zero value.
 
 For example, an immutable field called `someField` has a backing field in the .NET compiled representation with the name `someField@`, and you access the stored value using a property named `someField`.
 
 For a mutable field, the .NET compiled representation is a .NET field.
 
->[!WARNING]
->The .NET Framework namespace `System.ComponentModel` contains an attribute that has the same name. For information about this attribute, see `System.ComponentModel.DefaultValueAttribute`.
+> [!WARNING]
+> The .NET Framework namespace `System.ComponentModel` contains an attribute that has the same name. For information about this attribute, see <xref:System.ComponentModel.DefaultValueAttribute>.
 
 The following code shows the use of explicit fields and, for comparison, a `let` binding in a class that has a primary constructor. Note that the `let`-bound field `myInt1` is private. When the `let`-bound field `myInt1` is referenced from a member method, the self identifier `this` is not required. But when you are referencing the explicit fields `myInt2` and `myString`, the self identifier is required.
 
@@ -53,7 +50,7 @@ The following code shows the use of explicit fields in a class that does not hav
 
 The output is `35 22`.
 
-The following code shows the use of explicit fields in a structure. Because a structure is a value type, it automatically has a default constructor that sets the values of its fields to zero. Therefore, the `DefaultValue` attribute is not required.
+The following code shows the use of explicit fields in a structure. Because a structure is a value type, it automatically has a parameterless constructor that sets the values of its fields to zero. Therefore, the `DefaultValue` attribute is not required.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6703.fs)]
 

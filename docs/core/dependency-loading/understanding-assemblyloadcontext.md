@@ -89,6 +89,7 @@ To complicate matters, exception messages about these mismatched types can be co
 ### Debugging type conversion issues
 
 Given a pair of mismatched types it's important to also know:
+
 - Each type's <xref:System.Type.Assembly?displayProperty=nameWithType>
 - Each type's <xref:System.Runtime.Loader.AssemblyLoadContext>, which can be obtained via the <xref:System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(System.Reflection.Assembly)?displayProperty=nameWithType> function.
 

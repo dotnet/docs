@@ -63,7 +63,7 @@ new SendMail
 ### Sending an email using a template  
  This snippet shows how to send an email using a template tokens in the body. Notice that when setting the `BodyTemplateFilePath` property we don’t need to provide the value for Body property (the contents of the template file will be copied to the body).  
   
-```  
+```csharp  
 new SendMail  
 {    
     From = new LambdaValue<MailAddress>(ctx => new MailAddress("john.doe@contoso.com")),  
@@ -80,7 +80,7 @@ new SendMail
 ### Sending Mails in Testing Mode  
  This code snippet shows how to set the two testing properties: by setting `TestMailTo` to all messages will be sent to `john.doe@contoso.con` (without regard of the values of To, Cc, Bcc). By setting TestDropPath all outgoing emails will be also recorded in the provided path. These properties can be set independently (they are not related).  
   
-```  
+```csharp  
 new SendMail  
 {    
    From = new LambdaValue<MailAddress>(ctx => new MailAddress("john.doe@contoso.com")),  

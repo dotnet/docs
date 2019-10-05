@@ -96,5 +96,5 @@ End Module
 
 - <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
-- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [Viewing Type Information](viewing-type-information.md)
 - [Type Conversion in the .NET Framework](../../standard/base-types/type-conversion.md)

@@ -13,6 +13,7 @@ This tutorial illustrates how to use ML.NET to build a [clustering model](../res
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Understand the problem
 > - Select the appropriate machine learning task
 > - Prepare the data
@@ -180,6 +181,7 @@ Congratulations! You've now successfully built a machine learning model for iris
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Understand the problem
 > - Select the appropriate machine learning task
 > - Prepare the data

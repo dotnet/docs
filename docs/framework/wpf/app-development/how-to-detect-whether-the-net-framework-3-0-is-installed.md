@@ -17,7 +17,7 @@ Before administrators can deploy Microsoft .NET Framework applications on a syst
 ## Detect the ".NET CLR" User-Agent String  
  When .NET Framework is installed, the MSI adds ".NET CLR" and the version number to the UserAgent string. The following example shows a script embedded in a simple HTML page. The script searches the UserAgent string to determine whether .NET Framework is installed, and displays a status message on the results of the search.  
   
-```  
+```html  
 <HTML>  
   <HEAD>  
     <TITLE>Test for the .NET Framework 3.0</TITLE>  

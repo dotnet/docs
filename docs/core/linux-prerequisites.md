@@ -17,6 +17,8 @@ This article shows the dependencies needed to develop .NET Core applications on 
 
 ## Supported Linux versions
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.x](#tab/netcore2x)
 
 .NET Core 2.x treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 

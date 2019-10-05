@@ -284,8 +284,7 @@ With the following conditions, the code below keeps buffering until an <xref:Sys
 * There's no maximum message size.
 * The data returned from the `PipeReader` does not make a complete message. For example, it doesn't make a complete message because the other side is writing a large message (For example, a 4GB message).
 
-[!INCLUDE[](../../../includes/do-not-use-include1.md)]
-[!INCLUDE[](~/includes/do-not-use-include1.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet5)]
 

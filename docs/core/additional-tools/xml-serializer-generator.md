@@ -12,11 +12,11 @@ This tutorial teaches you how to use the Microsoft XML Serializer Generator in a
 
 > [!div class="checklist"]
 >
-> * How to create a .NET Core app
-> * How to add a reference to the Microsoft.XmlSerializer.Generator package
-> * How to edit your MyApp.csproj to add dependencies
-> * How to add a class and an XmlSerializer
-> * How to build and run the application
+> - How to create a .NET Core app
+> - How to add a reference to the Microsoft.XmlSerializer.Generator package
+> - How to edit your MyApp.csproj to add dependencies
+> - How to add a class and an XmlSerializer
+> - How to build and run the application
 
 Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-serializer-generator-tool-sgen-exe.md) for the .NET Framework, the [Microsoft.XmlSerializer.Generator NuGet package](https://www.nuget.org/packages/Microsoft.XmlSerializer.Generator) is the equivalent for .NET Core and .NET Standard projects. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or de-serializing objects of those types using <xref:System.Xml.Serialization.XmlSerializer>.
 
@@ -116,11 +116,11 @@ If everything succeeds, an assembly named *MyApp.XmlSerializers.dll* is generate
 Congratulations! You have just:
 > [!div class="checklist"]
 >
-> * Created a .NET Core app.
-> * Added a reference to the Microsoft.XmlSerializer.Generator package.
-> * Edited your MyApp.csproj to add dependencies.
-> * Added a class and an XmlSerializer.
-> * Built and ran the application.
+> - Created a .NET Core app.
+> - Added a reference to the Microsoft.XmlSerializer.Generator package.
+> - Edited your MyApp.csproj to add dependencies.
+> - Added a class and an XmlSerializer.
+> - Built and ran the application.
 
 ## Related resources
 

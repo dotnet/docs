@@ -244,7 +244,7 @@ The `ReadResult` can return the final segment of data when `IsCompleted` is set 
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet)]
 
-[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
+[!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Infinite loop**
 
@@ -254,7 +254,7 @@ The following logic may result in an infinite loop if the `Result.IsCompleted` i
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet2)]
 
-[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
+[!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
 Here's another piece of code with the same problem. It's checking for a non-empty buffer before checking `ReadResult.IsCompleted`. Because it's in an `else if`, it will loop forever if there's never a complete message in the buffer.
 
@@ -262,7 +262,7 @@ Here's another piece of code with the same problem. It's checking for a non-empt
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet3)]
 
-[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
+[!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Unexpected Hang**
 
@@ -275,7 +275,7 @@ Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the `examine
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet4)]
 
-[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
+[!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Out of Memory (OOM)**
 
@@ -289,7 +289,7 @@ With the following conditions, the code below keeps buffering until an <xref:Sys
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet5)]
 
-[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
+[!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Memory Corruption**
 
@@ -301,7 +301,7 @@ When writing helpers that read the buffer, any returned payload should be copied
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet6)]
 
-[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
+[!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
 ## PipeWriter
 

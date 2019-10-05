@@ -31,13 +31,13 @@ When tackling complexity, it is important to have a domain model controlled by a
 
 Figure 7-5 shows how a layered design is implemented in the eShopOnContainers application.
 
-![The three layers in a DDD microservice like Ordering. Each layer is a VS project: Application layer is Ordering.API, Domain layer is Ordering.Domain and the Infrastructure layer is Ordering.Infrastructure.](./media/image6.png)
+![Diagram showing the layers in a domain-driven design microservice.](./media/ddd-oriented-microservice/domain-driven-design-microservice.png)
 
 **Figure 7-5**. DDD layers in the ordering microservice in eShopOnContainers
 
-You want to design the system so that each layer communicates only with certain other layers. That may be easier to enforce if layers are implemented as different class libraries, because you can clearly identify what dependencies are set between libraries. For instance, the domain model layer should not take a dependency on any other layer (the domain model classes should be Plain Old CLR Objects, or [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object), classes). As shown in Figure 7-6, the **Ordering.Domain** layer library has dependencies only on the .NET Core libraries or NuGet packages, but not on any other custom library, such as data library or persistence library.
+The three layers in a DDD microservice like Ordering. Each layer is a VS project: Application layer is Ordering.API, Domain layer is Ordering.Domain and the Infrastructure layer is Ordering.Infrastructure. You want to design the system so that each layer communicates only with certain other layers. That may be easier to enforce if layers are implemented as different class libraries, because you can clearly identify what dependencies are set between libraries. For instance, the domain model layer should not take a dependency on any other layer (the domain model classes should be Plain Old CLR Objects, or [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object), classes). As shown in Figure 7-6, the **Ordering.Domain** layer library has dependencies only on the .NET Core libraries or NuGet packages, but not on any other custom library, such as data library or persistence library.
 
-![The Solution Explorer view of Ordering.Domain dependencies, showing it only depends on .NET Core libraries.](./media/image7.png)
+![Screenshot of Ordering.Domain dependencies.](./media/ddd-oriented-microservice/ordering-domain-dependencies.png)
 
 **Figure 7-6**. Layers implemented as libraries allow better control of dependencies between layers
 
@@ -79,11 +79,11 @@ In accordance with the previously mentioned [Persistence Ignorance](https://devi
 
 Thus, your layers or class libraries and projects should ultimately depend on your domain model layer (library), not vice versa, as shown in Figure 7-7.
 
-![Dependencies in a DDD Service, the Application layer depends on Domain and Infrastructure, and Infrastructure depends on Domain, but Domain doesn't depend on any layer.](./media/image8.png)
+![Diagram showing dependencies that exist between DDD service layers.](./media/ddd-oriented-microservice/ddd-service-layer-dependencies.png)
 
 **Figure 7-7**. Dependencies between layers in DDD
 
-This layer design should be independent for each microservice. As noted earlier, you can implement the most complex microservices following DDD patterns, while implementing simpler data-driven microservices (simple CRUD in a single layer) in a simpler way.
+TDependencies in a DDD Service, the Application layer depends on Domain and Infrastructure, and Infrastructure depends on Domain, but Domain doesn't depend on any layer. his layer design should be independent for each microservice. As noted earlier, you can implement the most complex microservices following DDD patterns, while implementing simpler data-driven microservices (simple CRUD in a single layer) in a simpler way.
 
 #### Additional resources
 

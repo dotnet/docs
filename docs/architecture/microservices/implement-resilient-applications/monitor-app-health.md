@@ -117,7 +117,7 @@ The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com
 
 For instance, in the `Catalog.API` microservice, the following NuGet packages were added:
 
-![Solution explorer view of the Catalog.API project where AspNetCore.Diagnostics.HealthChecks NuGet packages are referenced](./media/image6.png)
+![Screenshot of the AspNetCore.Diagnostics.HealthChecks NuGet packages.](./media/monitor-app-health/aspnet-core-diagnostics-health-checks.png)
 
 **Figure 8-7**. Custom Health Checks implemented in Catalog.API using AspNetCore.Diagnostics.HealthChecks
 
@@ -185,7 +185,7 @@ app.UseHealthChecks("/hc", new HealthCheckOptions()
 
 When you've configured health checks as described in this article and you have the microservice running in Docker, you can directly check from a browser if it's healthy. You have to publish the container port in the Docker host, so you can access the container through the external Docker host IP or through `localhost`, as shown in figure 8-8.
 
-![Browser view of the JSON response returned by a health check](./media/image7.png)
+![Screenshot of the JSON response returned by a health check.](./media/monitor-app-health/health-check-json-response.png)
 
 **Figure 8-8**. Checking health status of a single service from a browser
 
@@ -199,7 +199,7 @@ The eShopOnContainers sample contains a web page that displays sample health che
 
 Fortunately, [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) also provides [AspNetCore.HealthChecks.UI](https://www.nuget.org/packages/AspNetCore.HealthChecks.UI/) NuGet package that can be used to display the health check results from the configured URIs.
 
-![Browser view of the WebStatus app, showing the health status of all microservices from eShopOnContainers](./media/image8.png)
+![Screenshot of the Health Checks UI eShopOnContainers health statuses.](./media/monitor-app-health/health-check-status.png)
 
 **Figure 8-9**. Sample health check report in eShopOnContainers
 

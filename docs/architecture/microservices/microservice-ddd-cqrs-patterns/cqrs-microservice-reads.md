@@ -9,15 +9,15 @@ For reads/queries, the ordering microservice from the eShopOnContainers referenc
 
 The approach is simple, as shown in Figure 7-3. The API interface is implemented by the Web API controllers using any infrastructure, such as a micro Object Relational Mapper (ORM) like Dapper, and returning dynamic ViewModels depending on the needs of the UI applications.
 
-![The simplest approach for the queries-side in a simplified CQRS approach can be implemented by just querying the database with a Micro-ORM like Dapper, returning dynamic ViewModels.](./media/image3.png)
+![](./media/cqrs-microservice-reads/simple-approach-cqrs-queries.png)
 
 **Figure 7-3**. The simplest approach for queries in a CQRS microservice
 
-This is the simplest possible approach for queries. The query definitions query the database and return a dynamic ViewModel built on the fly for each query. Since the queries are idempotent, they won't change the data no matter how many times you run a query. Therefore, you don't need to be restricted by any DDD pattern used in the transactional side, like aggregates and other patterns, and that is why queries are separated from the transactional area. You simply query the database for the data that the UI needs and return a dynamic ViewModel that does not need to be statically defined anywhere (no classes for the ViewModels) except in the SQL statements themselves.
+The simplest approach for the queries-side in a simplified CQRS approach can be implemented by just querying the database with a Micro-ORM like Dapper, returning dynamic ViewModels. The query definitions query the database and return a dynamic ViewModel built on the fly for each query. Since the queries are idempotent, they won't change the data no matter how many times you run a query. Therefore, you don't need to be restricted by any DDD pattern used in the transactional side, like aggregates and other patterns, and that is why queries are separated from the transactional area. You simply query the database for the data that the UI needs and return a dynamic ViewModel that does not need to be statically defined anywhere (no classes for the ViewModels) except in the SQL statements themselves.
 
 Since this is a simple approach, the code required for the queries side (such as code using a micro ORM like [Dapper](https://github.com/StackExchange/Dapper)) can be implemented [within the same Web API project](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Queries/OrderQueries.cs). Figure 7-4 shows this. The queries are defined in the **Ordering.API** microservice project within the eShopOnContainers solution.
 
-![Solution Explorer view of the Ordering.API project, showing the Application > Queries folder.](./media/image4.png)
+![Screenshot of the of the Ordering.API project's Queries folder.](./media/cqrs-microservice-reads/ordering-api-queries-folder.png)
 
 **Figure 7-4**. Queries in the Ordering microservice in eShopOnContainers
 
@@ -35,7 +35,7 @@ You can use any micro ORM, Entity Framework Core, or even plain ADO.NET for quer
 
 Dapper is an open-source project (original created by Sam Saffron), and is part of the building blocks used in [Stack Overflow](https://stackoverflow.com/). To use Dapper, you just need to install it through the [Dapper NuGet package](https://www.nuget.org/packages/Dapper), as shown in the following figure:
 
-![The Dapper package as viewed in the manage NuGet packages view in VS.](./media/image4.1.png)
+![Screenshot of the Dapper package in the NuGet packages view.](./media/cqrs-microservice-reads/drapper-package-nuget.png)
 
 You also need to add a using statement so your code has access to the Dapper extension methods.
 
@@ -171,7 +171,7 @@ This is another reason why explicit returned types are better than dynamic types
 
 In the following image, you can see how Swagger UI shows the ResponseType information.
 
-![Browser view of the Swagger UI page for the Ordering API.](./media/image5.png)
+![Screenshot of the Swagger UI page for the Ordering API.](./media/cqrs-microservice-reads/swagger-ordering-http-api.png)
 
 **Figure 7-5**. Swagger UI showing response types and possible HTTP status codes from a Web API
 

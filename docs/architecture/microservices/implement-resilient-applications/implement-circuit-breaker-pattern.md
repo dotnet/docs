@@ -89,7 +89,7 @@ For instance, once the application is running, you can enable the middleware by 
 
 You can then check the status using the URI `http://localhost:5103/failing`, as shown in Figure 8-5.
 
-![Browser view of the result from checking the status of the failing middleware simulation](./media/image4.png)
+![Screenshot of checking the status of failing middleware simulation.](./media/implement-circuit-breaker-pattern/failing-middleware-simulation.png)
 
 **Figure 8-5**. Checking the state of the “Failing” ASP.NET middleware – In this case, disabled.
 
@@ -129,7 +129,7 @@ public class CartController : Controller
 
 Here’s a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of retries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 8-6.
 
-![Browser view of the MVC web app showing a "basket service inoperative" message triggered by the circuit breaker policy](./media/image5.png)
+![Screenshot of the MVC web app with "basket service inoperative" error.](./media/implement-circuit-breaker-pattern/basket-service-inoperative.png)
 
 **Figure 8-6**. Circuit breaker returning an error to the UI
 

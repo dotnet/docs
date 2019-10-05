@@ -17,8 +17,6 @@ To install the latest release version of the `dotnet-trace` [NuGet package](http
 dotnet tool install --global dotnet-trace
 ```
 
-For details and other options, see [Installing the diagnostics tools](installing.md).
-
 ## Synopsis
 
 ```console

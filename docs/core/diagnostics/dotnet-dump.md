@@ -20,8 +20,6 @@ To install the latest release version of the `dotnet-dump` [NuGet package](https
 dotnet tool install -g dotnet-dump
 ```
 
-For details and other options, see [Installing the diagnostics tools](install-tools.md).
-
 ## Synopsis
 
 ```console

@@ -17,8 +17,6 @@ To install the latest release version of the `dotnet-counters` [NuGet package](h
 dotnet tool install --global dotnet-counters
 ```
 
-For details and other options, see [Installing the diagnostics tools](install-tools.md).
-
 ## Synopsis
 
 ```console

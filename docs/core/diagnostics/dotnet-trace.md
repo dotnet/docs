@@ -20,16 +20,7 @@ dotnet tool install --global dotnet-trace
 ## Synopsis
 
 ```console
-dotnet-trace [-h, --help] [--version]
-
-dotnet-trace collect [-h|--help] [-p|--process-id <pid>] [--buffersize <size>] [-o|--output <trace-file-path>]
-    [--providers <list-of-comma-separated-providers>] [--profile <profile-name>] [--format <NetTrace|Speedscope>]
-
-dotnet-trace list-processes [-h|--help]
-
-dotnet-trace list-profiles [-h|--help]
-
-dotnet-trace convert [-h|--help] [--format <NetTrace|Speedscope>] [-o|--output <output-filename>] <input-filename>
+dotnet-trace [-h, --help] [--version] <command>
 ```
 
 ## Description
@@ -38,45 +29,49 @@ The `dotnet-trace` tool is a cross-platform CLI global tool that enables the col
 
 ## Options
 
-`--version`
+- **`--version`**
 
 Display the version of the dotnet-counters utility.
 
-`-h|--help`
+- **`-h|--help`**
 
 Show command-line help.
 
 ## Commands
 
-| Command                                                     | Function                                                |
-| ----------------------------------------------------------- | ------------------------------------------------------- |
-| [dotnet-trace collect](#dotnet-trace-collect)               | Collects a diagnostic trace from a running process.     |
-| [dotnet-trace convert](#dotnet-trace-convert)               | Converts `nettrace` format traces to alternate formats. |
-| [dotnet-trace list-processes](#dotnet-trace-list-processes) | Lists dotnet processes.                                 |
-| [dotnet-trace list-profiles](#dotnet-trace-list-profiles)   | Lists pre-built tracing profiles.                       |
+| Command                                                     |
+| ----------------------------------------------------------- |
+| [dotnet-trace collect](#dotnet-trace-collect)               |
+| [dotnet-trace convert](#dotnet-trace-convert)               |
+| [dotnet-trace list-processes](#dotnet-trace-list-processes) |
+| [dotnet-trace list-profiles](#dotnet-trace-list-profiles)   |
 
 ## dotnet-trace collect
+
+Collects a diagnostic trace from a running process.
+
+### Synopsis
 
 ```console
 dotnet-trace collect [-h|--help] [-p|--process-id <pid>] [--buffersize <size>] [-o|--output <trace-file-path>]
     [--providers <list-of-comma-separated-providers>] [--profile <profile-name>] [--format <NetTrace|Speedscope>]
 ```
 
-Collects a diagnostic trace from a running process.
+### Options
 
-`-p|--process-id <pid>`
+- **`-p|--process-id <pid>`**
 
 The process to collect the trace from.
 
-`--buffersize <size>`
+- **`--buffersize <size>`**
 
 Sets the size of the in-memory circular buffer in megabytes. Default 256 MB.
 
-`-o|--output <trace-file-path>`
+- **`-o|--output <trace-file-path>`**
 
 The output path for the collected trace data. If not specified it defaults to `trace.nettrace`.
 
-`--providers <list-of-comma-separated-providers>`
+- **`--providers <list-of-comma-separated-providers>`**
 
 A list of EventPipe providers to be enabled. These providers supplement any providers implied by the `--profile argument`. If there's any inconsistency for a particular provider, the configuration here takes precedence over the implicit configuration from the profile.
 
@@ -86,49 +81,57 @@ This list of providers is in the form:
 - `Provider` is in the form: `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`.
 - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
 
-`--profile <profile-name>`
+- **`--profile <profile-name>`**
 
 A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly.
 
-`--format <NetTrace|Speedscope>`
+- **`--format <NetTrace|Speedscope>`**
 
 Sets the output format for the trace file conversion.
 
 ## dotnet-trace convert
 
+Converts `nettrace` traces to alternate formats for use with alternate trace analysis tools.
+
+### Synopsis
+
 ```console
 dotnet-trace convert [-h|--help] [--format <NetTrace|Speedscope>] [-o|--output <output-filename>] <input-filename>
 ```
 
-Converts `nettrace` traces to alternate formats for use with alternate trace analysis tools.
+### Options
 
-`[--format <NetTrace|Speedscope>]`
+- **`[--format <NetTrace|Speedscope>]`**
 
 Sets the output format for the trace file conversion.
 
-`[-o|--output <output-filename>]`
+- **`[-o|--output <output-filename>]`**
 
 Output filename. Extension of target format will be added.
 
-`<input-filename>`
+- **`<input-filename>`**
 
 Input trace file to be converted. Defaults to 'trace.nettrace'.
 
 ## dotnet-trace list-processes
 
+Lists dotnet processes that can be traced.
+
+### Synopsis
+
 ```console
 dotnet-trace list-processes [-h|--help]
 ```
 
-Lists dotnet processes that can be traced.
-
 ## dotnet-trace list-profiles
+
+Lists pre-built tracing profiles with a description of what providers and filters are in each profile.
+
+### Synopsis
 
 ```console
 dotnet-trace list-profiles [-h|--help]
 ```
-
-Lists pre-built tracing profiles with a description of what providers and filters are in each profile.
 
 ## Collect a trace with `dotnet-trace`
 

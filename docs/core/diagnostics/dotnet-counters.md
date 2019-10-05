@@ -20,11 +20,7 @@ dotnet tool install --global dotnet-counters
 ## Synopsis
 
 ```console
-dotnet-counters [-h|--help] [--version]
-
-dotnet-counters list [-h|--help]
-
-dotnet-counters monitor [-h||--help] [-p|--process-id <pid>] [--refreshInterval <sec>] [counter_list]
+dotnet-counters [-h|--help] [--version] <command>
 ```
 
 ## Description
@@ -33,28 +29,30 @@ dotnet-counters monitor [-h||--help] [-p|--process-id <pid>] [--refreshInterval 
 
 ## Options
 
-`--version`
+- **`--version`**
 
 Display the version of the dotnet-counters utility.
 
-`-h|--help`
+- **`-h|--help`**
 
 Show command-line help.
 
 ## Commands
 
-| Command                                             | Function                                                     |
-| --------------------------------------------------- | ------------------------------------------------------------ |
-| [dotnet-counters list](#dotnet-counters-list)       | Display a list of counter names and descriptions.            |
-| [dotnet-counters monitor](#dotnet-counters-monitor) | Display periodically refreshing values of selected counters. |
+| Command                                             |
+| --------------------------------------------------- |
+| [dotnet-counters list](#dotnet-counters-list)       |
+| [dotnet-counters monitor](#dotnet-counters-monitor) |
 
 ## dotnet-counters list
+
+Display a list of counter names and descriptions, grouped by provider.
+
+### Synopsis
 
 ```console
 dotnet-counters list [-h|--help]
 ```
-
-Display a list of counter names and descriptions, grouped by provider.
 
 ### Example - dotnet-counters list
 
@@ -74,21 +72,25 @@ Display a list of counter names and descriptions, grouped by provider.
 
 ## dotnet-counters monitor
 
+### Synopsis
+
+Display periodically refreshing values of selected counters.
+
 ```console
 dotnet-counters monitor [-h|--help] [-p|--process-id <pid>] [--refreshInterval <sec>] [counter_list]
 ```
 
-Display periodically refreshing values of selected counters.
+### Options
 
-`-p|--process-id`
+- **`-p|--process-id`**
 
 The ID of the process that will be monitored.
 
-`--refresh-interval`
+- **`--refresh-interval`**
 
 The number of seconds to delay between updating the displayed counters
 
-`counter_list`
+- **`counter_list`**
 
 A space separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying `counter_name`, then all counters will be shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
 

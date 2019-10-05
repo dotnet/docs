@@ -16,7 +16,7 @@ If you're unsure what .NET Core is, or how it relates to other .NET technologies
 
 First, download and install the [.NET Core SDK](https://dotnet.microsoft.com/download) on your computer.
 
-Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**. Type the following `dotnet` commands to create and run a C# application.
+Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**. Type the following `dotnet` commands to create and run a C# application:
 
 ```dotnetcli
 dotnet new console --output sample1
@@ -39,13 +39,13 @@ You can get started developing .NET Core applications by following these step-by
 
 # [Windows](#tab/windows)
 
-* [Build a C# "Hello World" Application with .NET Core in Visual Studio 2017.](./tutorials/with-visual-studio.md)
-* [Build a C# class library with .NET Core in Visual Studio 2017.](./tutorials/library-with-visual-studio.md)
-* [Build a Visual Basic "Hello World" application with .NET Core in Visual Studio 2017.](./tutorials/vb-with-visual-studio.md)
-* [Build a class library with Visual Basic and .NET Core in Visual Studio 2017.](./tutorials/vb-library-with-visual-studio.md)  
-* Watch a video on [how to install and use Visual Studio Code and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core/).
-* Watch a video on [how to install and use Visual Studio 2017 and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-Started-NET-Core-Visual-Studio-2017/).
-* [Getting started with .NET Core using the command-line.](tutorials/using-with-xplat-cli.md)
+- [Build a C# "Hello World" Application with .NET Core in Visual Studio 2017.](./tutorials/with-visual-studio.md)
+- [Build a C# class library with .NET Core in Visual Studio 2017.](./tutorials/library-with-visual-studio.md)
+- [Build a Visual Basic "Hello World" application with .NET Core in Visual Studio 2017.](./tutorials/vb-with-visual-studio.md)
+- [Build a class library with Visual Basic and .NET Core in Visual Studio 2017.](./tutorials/vb-library-with-visual-studio.md)  
+- Watch a video on [how to install and use Visual Studio Code and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core/).
+- Watch a video on [how to install and use Visual Studio 2017 and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-Started-NET-Core-Visual-Studio-2017/).
+- [Getting started with .NET Core using the command-line.](tutorials/using-with-xplat-cli.md)
 
 See the [Prerequisites for Windows development](windows-prerequisites.md) article for a list of the supported Windows versions.
 

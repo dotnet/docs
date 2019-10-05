@@ -173,8 +173,8 @@ If you have any questions or feedback, [open an issue on GitHub](https://github.
 
 ## Release notes
 
-* Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/dotnet-svcutil-notes.md) for updated release information, including known issues.
+- Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/dotnet-svcutil-notes.md) for updated release information, including known issues.
 
 ## Information
 
-* [dotnet-svcutil NuGet Package](https://nuget.org/packages/dotnet-svcutil)
+- [dotnet-svcutil NuGet Package](https://nuget.org/packages/dotnet-svcutil)

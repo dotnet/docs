@@ -7,6 +7,8 @@ ms.date: 03/07/2019
 
 # Architecting Cloud Native .NET Applications for Azure
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 ![cover image](./media/cover.png)
 
 PUBLISHED BY
@@ -35,11 +37,11 @@ The Docker whale logo is a registered trademark of Docker, Inc. Used by permissi
 
 All other marks and logos are property of their respective owners.
 
-Author:
+Authors:
 
 > **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 >
-> **Rob Vettor** - Microsoft - Principal Cloud System Architect/IP Architect - [RobVettor.com](http://robvettor.com)
+> **Rob Vettor** - Microsoft - Principal Cloud System Architect/IP Architect - [RobVettor.com](https://robvettor.com)
 
 Participants and Reviewers:
 

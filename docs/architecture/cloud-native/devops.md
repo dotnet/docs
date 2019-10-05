@@ -88,7 +88,7 @@ An alternative to using many repositories is to put all the source code together
 
 ### Single repository
 
-In this approach, sometimes referred to as a [monorepository](http://danluu.com/monorepo/), all the source code for every service is put into the same repository. At first, this seems like a terrible idea likely to make dealing with source code unwieldy. There are, however, some marked advantages to working this way.
+In this approach, sometimes referred to as a [monorepository](https://danluu.com/monorepo/), all the source code for every service is put into the same repository. At first, this seems like a terrible idea likely to make dealing with source code unwieldy. There are, however, some marked advantages to working this way.
 
 The first advantage is that it's easier to manage dependencies between projects. Instead of relying on some external artifact feed, projects can directly import one another. This means that updates are instant, and conflicting versions are likely to be found at compile time on the developer's workstation. In effect, shifting some of the integration testing left.
 

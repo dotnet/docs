@@ -44,11 +44,11 @@ ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
 
      The *URL* value for the **-debugSecurityZoneURL** parameter is the [!INCLUDE[TLA#tla_url](../../../../includes/tlasharptla-url-md.md)] for the location that you want to simulate as being the site of origin of your application.
 
- As an example, consider a [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)] that uses a Web service with the following [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)]:
+ As an example, consider a [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)] that uses a Web service with the following URL:
 
  `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
- The site of origin [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)] for this Web service is:
+ The site of origin URL for this Web service is:
 
  `http://services.msdn.microsoft.com`
 

@@ -12,7 +12,7 @@ Specifies whether the assembly will be fully or partially signed.
   
 ## Syntax  
   
-```  
+```console  
 -delaysign[+ | -]  
 ```  
   

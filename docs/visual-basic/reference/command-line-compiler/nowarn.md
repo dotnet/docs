@@ -12,7 +12,7 @@ Suppresses the compiler's ability to generate warnings.
   
 ## Syntax  
   
-```  
+```console  
 -nowarn[:numberList]  
 ```  
   

@@ -21,7 +21,7 @@ Another way of printing XPS is to use the <xref:System.Windows.Controls.PrintDia
 
 The main steps to using the three-parameter <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method are as follows. The example below gives details.
 
-1. Determine if the printer is an XPSDrv printer. (See [Printing Overview](printing-overview.md) for more about XPSDrv.)
+1. Determine if the printer is an XPSDrv printer. See [Printing Overview](printing-overview.md) for more about XPSDrv.
 
 2. If the printer is not an XPSDrv printer, set the thread's apartment to single thread.
 

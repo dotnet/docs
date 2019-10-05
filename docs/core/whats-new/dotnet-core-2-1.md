@@ -49,7 +49,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
    Note the `--` option that precedes the `--verbose` option. It delimits the options passed directly to the `dotnet watch` command from the arguments that are passed to the child `dotnet` process. Without it, the `--verbose` option applies to the `dotnet watch` command, not the `dotnet build` command.
   
-   For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch)
+   For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch).
 
 - `dotnet dev-certs` generates and manages certificates used during development in ASP.NET Core applications.
 

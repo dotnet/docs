@@ -6,7 +6,7 @@ ms.assetid: 9b0cf1ab-de48-4c6e-9f00-05b40fade46e
 # Converting Data Types (Visual Basic)
 Conversion methods change the type of input objects.  
   
- Conversion operations in LINQ queries are useful in a variety of applications. Following are some examples:  
+ Conversion operations in LINQ queries are useful in a variety of applications. The following are some examples:
   
 - The <xref:System.Linq.Enumerable.AsEnumerable%2A?displayProperty=nameWithType> method can be used to hide a type's custom implementation of a standard query operator.  
   

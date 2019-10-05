@@ -14,7 +14,7 @@ Enables the use of local type inference in variable declarations.
   
 ## Syntax  
   
-```  
+```console  
 -optioninfer[+ | -]  
 ```  
   

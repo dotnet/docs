@@ -1,11 +1,11 @@
 ---
 title: "I/O pipelines - .NET"
 ms.date: "10/01/2019"
+ms.technology: dotnet-standard
 helpviewer_keywords:
-  - "asynchronous I/O"
-  - "synchronous I/O"
-  - "streams, asynchronous streams"
-  - "I/O [.NET Framework], asynchronous I/O"
+  - "Pipelines"
+  - "Pipelines I/O"
+  - "I/O [.NET], Pipelines"
 author: rick-anderson
 ms.author: riande
 ---
@@ -39,23 +39,23 @@ async Task ProcessLinesAsync(NetworkStream stream)
 
 The preceding code has several problems:
 
-- The entire message (end of line) might not be received in a single call to `ReadAsync`.
-- It's ignoring the result of `stream.ReadAsync`. `stream.ReadAsync` returns how much data was read.
-- It doesn't handle the case where multiple lines are read in a single `ReadAsync` call.
+* The entire message (end of line) might not be received in a single call to `ReadAsync`.
+* It's ignoring the result of `stream.ReadAsync`. `stream.ReadAsync` returns how much data was read.
+* It doesn't handle the case where multiple lines are read in a single `ReadAsync` call.
 
 To fix the preceding problems, the following changes are required:
 
-- Buffer the incoming data until a new line is found.
-- Parse all of the lines returned in the buffer.
-- It's possible that the line is bigger than 1 KB (1024 bytes). The code needs to resize the input buffer a complete line is found.
+* Buffer the incoming data until a new line is found.
+* Parse all the lines returned in the buffer.
+* It's possible that the line is bigger than 1 KB (1024 bytes). The code needs to resize the input buffer a complete line is found.
 
-  - If the buffer is resized, more buffer copies are made as longer lines appear in the input.
-  - To reduce wasted space, compact the buffer used for reading lines.
+  * If the buffer is resized, more buffer copies are made as longer lines appear in the input.
+  * To reduce wasted space, compact the buffer used for reading lines.
 
-- Consider using buffer pooling to avoid allocating memory repeatedly.
-- The following code address some of these problems:
+* Consider using buffer pooling to avoid allocating memory repeatedly.
+* The following code address some of these problems:
 
-[!code-csharp[](media/pipelines/code/ProcessLinesAsync.cs?name=snippet)]
+[!code-csharp[](~/samples/snippets/csharp/pipelines/ProcessLinesAsync.cs?name=snippet)]
 
 The previous code is complex and doesn't address all the problems identified. High-performance networking usually means writing very complex code to maximize performance. `System.IO.Pipelines` was designed to make writing this type of code easier.
 
@@ -63,18 +63,18 @@ The previous code is complex and doesn't address all the problems identified. Hi
 
 The <xref:System.IO.Pipelines.Pipe> class can be used to create a `PipeWriter/PipeReader` pair. All data written into the `PipeWriter` is available in the `PipeReader`:
 
-[!code-csharp[](media/pipelines/code/Pipe.cs?name=snippet2)]
+[!code-csharp[](~/samples/snippets/csharp/pipelines/Pipe.cs?name=snippet2)]
 
 <a name="pbu"></a>
 
 ### Pipe basic usage
 
-[!code-csharp[](media/pipelines/code/Pipe.cs?name=snippet)]
+[!code-csharp[](~/samples/snippets/csharp/pipelines/Pipe.cs?name=snippet)]
 
 There are two loops:
 
-- `FillPipeAsync` reads from the `Socket` and writes to the `PipeWriter`.
-- `ReadPipeAsync` reads from the `PipeReader` and parses incoming lines.
+* `FillPipeAsync` reads from the `Socket` and writes to the `PipeWriter`.
+* `ReadPipeAsync` reads from the `PipeReader` and parses incoming lines.
 
 There are no explicit buffers allocated. All buffer management is delegated to the `PipeReader` and `PipeWriter` implementations. Delegating buffer management makes it easier for consuming code to focus solely on the business logic.
 
@@ -147,7 +147,7 @@ When doing I/O, it's important to have fine-grained control over where the I/O i
 * The current <xref:System.Threading.SynchronizationContext> is used.
 * If there's no `SynchronizationContext`, it uses the thread pool to run callbacks.
 
-[!code-csharp[](media/pipelines/code/Program.cs?name=snippet)]
+[!code-csharp[](~/samples/snippets/csharp/pipelines/Program.cs?name=snippet)]
 
 ### Pipe reset
 
@@ -186,7 +186,7 @@ bool TryParseMessage(ref ReadOnlySequence<byte> buffer, out Message message);
 
 The following code reads a single message from a `PipeReader` and returns it to the caller.
 
-[!code-csharp[](media/pipelines/code/ReadSingleMsg.cs?name=snippet)]
+[!code-csharp[ReadSingleMsg](~/samples/snippets/csharp/pipelines/ReadSingleMsg.cs?name=snippet)]
 
 The preceding code:
 
@@ -198,13 +198,13 @@ The two `SequencePosition` arguments are updated because `TryParseMessage` remov
 * The end of the message.
 * The end of the received buffer if no message was found.
 
-The single message case has the most potential for errors. Passing the wrong values to *examined* can result in an out of memory exception or and infinite loop. For more information, see the [PipeReader common problems](#gotchas) section in this article.
+The single message case has the most potential for errors. Passing the wrong values to *examined* can result in an out of memory exception or an infinite loop. For more information, see the [PipeReader common problems](#gotchas) section in this article.
 
 ### Reading multiple messages
 
-The code below reads all messages from a `PipeReader` and calls `ProcessMessageAsync` on each.
+The following code reads all messages from a `PipeReader` and calls `ProcessMessageAsync` on each.
 
-[!code-csharp[](media/pipelines/code/MyConnection1.cs?name=snippet)]
+[!code-csharp[MyConnection1](~/samples/snippets/csharp/pipelines/MyConnection1.cs?name=snippet)]
 
 ### Cancellation
 
@@ -214,21 +214,23 @@ The code below reads all messages from a `PipeReader` and calls `ProcessMessageA
 * Throws in an <xref:System.OperationCanceledException> if the `CancellationToken` is canceled while there's a read pending.
 * Supports a way to cancel the current read operation via <xref:System.IO.Pipelines.PipeReader.CancelPendingRead%2A?displayProperty=nameWithType>, which avoids raising an exception. Calling `PipeReader.CancelPendingRead` returns a <xref:System.IO.Pipelines.ReadResult> with `IsCanceled` set to `true`. This can be useful for halting the existing read loop in a non-destructive and non-exceptional way.
 
-[!code-csharp[](media/pipelines/code/MyConnection.cs?name=snippet)]
+[!code-csharp[MyConnection](~/samples/snippets/csharp/pipelines/MyConnection.cs?name=snippet)]
 
 <a name="gotchas"></a>
 
 ### PipeReader common problems
 
-- Passing the wrong values to `consumed` or `examined` may result in reading already read data. For example, passing a `SequencePosition` that was already processed.
-- Passing `buffer.End` as examined may result in:
-  -  Stalled data
-  - Possibly an eventual Out of Memory (OOM) exception if data isn't consumed. For example, `PipeReader.AdvanceTo(position, buffer.End)` when processing a single message at a time from the buffer.
-- Passing the wrong values to `consumed` or `examined` may result in an infinite loop. For example, `PipeReader.AdvanceTo(buffer.Start)` if `buffer.Start` hasn't changed will cause the next call to `PipeReader.ReadAsync` to return immediately before new data arrives.
-- Passing the wrong values to `consumed` or `examined` may result in infinite buffering (eventual OOM). For example, `PipeReader.AdvanceTo(buffer.Start, buffer.End)` unconditionally when processing a single message at a time from the buffer.
-- Using the `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo` may result in memory corruption (use after free).
-- Failing to call `PipeReader.Complete/CompleteAsync` may result in a memory leak.
-- Checking <xref:System.IO.Pipelines.ReadResult.IsCompleted?displayProperty=nameWithType> and exiting the reading logic before processing the buffer results in data loss. The loop exit condition should be based on `ReadResult.Buffer.IsEmpty` and `ReadResult.IsCompleted`. Doing this in the wrong order could result in an infinite loop.
+* Passing the wrong values to `consumed` or `examined` may result in reading already read data. For example, passing a `SequencePosition` that was already processed.
+* Passing `buffer.End` as examined may result in:
+
+  * Stalled data
+  * Possibly an eventual Out of Memory (OOM) exception if data isn't consumed. For example, `PipeReader.AdvanceTo(position, buffer.End)` when processing a single message at a time from the buffer.
+
+* Passing the wrong values to `consumed` or `examined` may result in an infinite loop. For example, `PipeReader.AdvanceTo(buffer.Start)` if `buffer.Start` hasn't changed will cause the next call to `PipeReader.ReadAsync` to return immediately before new data arrives.
+* Passing the wrong values to `consumed` or `examined` may result in infinite buffering (eventual OOM). For example, `PipeReader.AdvanceTo(buffer.Start, buffer.End)` unconditionally when processing a single message at a time from the buffer.
+* Using the `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo` may result in memory corruption (use after free).
+* Failing to call `PipeReader.Complete/CompleteAsync` may result in a memory leak.
+* Checking <xref:System.IO.Pipelines.ReadResult.IsCompleted?displayProperty=nameWithType> and exiting the reading logic before processing the buffer results in data loss. The loop exit condition should be based on `ReadResult.Buffer.IsEmpty` and `ReadResult.IsCompleted`. Doing this in the wrong order could result in an infinite loop.
 
 #### Problematic code
 
@@ -238,7 +240,7 @@ The `ReadResult` can return the final segment of data when `IsCompleted` is set 
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet)]
+[!code-csharp[DoNotUse#1](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet)]
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -248,7 +250,7 @@ The following logic may result in an infinite loop if the `Result.IsCompleted` i
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet2)]
+[!code-csharp[DoNotUse#2](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet2)]
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -256,7 +258,7 @@ Here's another piece of code with the same problem. It's checking for a non-empt
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet3)]
+[!code-csharp[DoNotUse#3](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet3)]
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -269,20 +271,20 @@ Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the `examine
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet4)]
+[!code-csharp[DoNotUse#4](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet4)]
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Out of Memory (OOM)**
 
-With the following conditions, the code below keeps buffering until an <xref:System.OutOfMemoryException> occurs:
+With the following conditions, the following code keeps buffering until an <xref:System.OutOfMemoryException> occurs:
 
 * There's no maximum message size.
 * The data returned from the `PipeReader` doesn't make a complete message. For example, it doesn't make a complete message because the other side is writing a large message (For example, a 4-GB message).
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet5)]
+[!code-csharp[DoNotUse#5](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet5)]
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -292,9 +294,9 @@ When writing helpers that read the buffer, any returned payload should be copied
 
 [!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
-[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippetMessage)]
+[!code-csharp[DoNotUse#Message](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippetMessage)]
 
-[!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet6)]
+[!code-csharp[DoNotUse#6](~/samples/snippets/csharp/pipelines/DoNotUse.cs?name=snippet6)]
 
 [!INCLUDE [pipelines-do-not-use-2](../../../includes/pipelines-do-not-use-2.md)]
 
@@ -302,7 +304,7 @@ When writing helpers that read the buffer, any returned payload should be copied
 
 The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the caller's behalf. `PipeWriter` implements [`IBufferWriter<byte>`](xref:System.Buffers.IBufferWriter`1). `IBufferWriter<byte>` makes it possible to get access to buffers to perform writes without additional buffer copies.
 
-[!code-csharp[](media/pipelines/code/MyPipeWriter.cs?name=snippet)]
+[!code-csharp[MyPipeWriter](~/samples/snippets/csharp/pipelines/MyPipeWriter.cs?name=snippet)]
 
 The previous code:
 
@@ -316,7 +318,7 @@ The previous method of writing uses the buffers provided by the `PipeWriter`. Al
 * Copies the existing buffer to the `PipeWriter`.
 * Calls `GetSpan`, `Advance` as appropriate and calls <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A>.
 
-[!code-csharp[](media/pipelines/code/MyPipeWriter.cs?name=snippet2)]
+[!code-csharp[MyPipeWriter#2](~/samples/snippets/csharp/pipelines/MyPipeWriter.cs?name=snippet2)]
 
 ### Cancellation
 
@@ -326,11 +328,11 @@ The previous method of writing uses the buffers provided by the `PipeWriter`. Al
 
 ### PipeWriter common problems
 
-- <xref:System.IO.Pipelines.PipeWriter.GetSpan%2A> and <xref:System.IO.Pipelines.PipeWriter.GetMemory%2A> return a buffer with at least the requested amount of memory. **Don't** assume exact buffer sizes.
-- There's no guarantee that successive calls will return the same buffer or the same-sized buffer.
-- A new buffer must be requested after calling <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to continue writing more data. The previously acquired buffer can't be written to.
-- Calling `GetMemory` or `GetSpan` while there's an incomplete call to `FlushAsync` isn't safe.
-- Calling `Complete` or `CompleteAsync` while there's unflushed data can result in memory corruption.
+* <xref:System.IO.Pipelines.PipeWriter.GetSpan%2A> and <xref:System.IO.Pipelines.PipeWriter.GetMemory%2A> return a buffer with at least the requested amount of memory. **Don't** assume exact buffer sizes.
+* There's no guarantee that successive calls will return the same buffer or the same-sized buffer.
+* A new buffer must be requested after calling <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to continue writing more data. The previously acquired buffer can't be written to.
+* Calling `GetMemory` or `GetSpan` while there's an incomplete call to `FlushAsync` isn't safe.
+* Calling `Complete` or `CompleteAsync` while there's unflushed data can result in memory corruption.
 
 ## IDuplexPipe
 

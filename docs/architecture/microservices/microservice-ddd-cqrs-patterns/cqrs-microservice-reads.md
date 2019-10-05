@@ -9,7 +9,7 @@ For reads/queries, the ordering microservice from the eShopOnContainers referenc
 
 The approach is simple, as shown in Figure 7-3. The API interface is implemented by the Web API controllers using any infrastructure, such as a micro Object Relational Mapper (ORM) like Dapper, and returning dynamic ViewModels depending on the needs of the UI applications.
 
-![](./media/cqrs-microservice-reads/simple-approach-cqrs-queries.png)
+![Diagram showing high-level queries-side in simplified CQRS.](./media/cqrs-microservice-reads/simple-approach-cqrs-queries.png)
 
 **Figure 7-3**. The simplest approach for queries in a CQRS microservice
 

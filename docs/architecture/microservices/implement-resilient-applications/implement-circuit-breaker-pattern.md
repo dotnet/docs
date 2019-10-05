@@ -129,7 +129,7 @@ public class CartController : Controller
 
 Here’s a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of retries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 8-6.
 
-![Screenshot of the MVC web app with "basket service inoperative" error.](./media/implement-circuit-breaker-pattern/basket-service-inoperative.png)
+![Screenshot of the MVC web app with basket service inoperative error.](./media/implement-circuit-breaker-pattern/basket-service-inoperative.png)
 
 **Figure 8-6**. Circuit breaker returning an error to the UI
 

@@ -616,9 +616,9 @@ Data access is an important aspect of any app. The eShop project stores catalog 
 
 The following EF-related changes were necessary to eShop:
 
-* In .NET Framework, the `DbContext` object accepts a string of the form *name=ConnectionString* and uses the connection string from
+- In .NET Framework, the `DbContext` object accepts a string of the form *name=ConnectionString* and uses the connection string from
   `ConfigurationManager.AppSettings[ConnectionString]` to connect. In .NET Core, this isn't supported. The connection string must be supplied.
-* The database was accessed in a synchronous way. Though this works, scalability may suffer. This logic should be moved to an asynchronous pattern.
+- The database was accessed in a synchronous way. Though this works, scalability may suffer. This logic should be moved to an asynchronous pattern.
 
 Although there isn't the same native support for dataset binding, Blazor provides flexibility and power with its C# support in a Razor page. For example, you can perform calculations and display the result. For more information on data patterns in Blazor, see the [Data access](data.md) chapter.
 

@@ -17,7 +17,7 @@ The interface inherits two or more members with the same name from multiple inte
   
 - Cast the value to the base interface that you want to use; for example:  
   
-    ```  
+    ```vb  
     Interface Left  
         Sub MySub()  
     End Interface  

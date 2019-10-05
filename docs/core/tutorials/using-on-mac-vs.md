@@ -19,7 +19,7 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 
 See the [Prerequisites for .NET Core on Mac](../macos-prerequisites.md) topic.
 
-Check the [.NET Core Support](https://docs.microsoft.com/visualstudio/mac/net-core-support?view=vsmac-2019) guide to ensure you're using a supported version of .NET Core.
+Check the [.NET Core Support](/visualstudio/mac/net-core-support) article to ensure you're using a supported version of .NET Core.
 
 ## Get started
 

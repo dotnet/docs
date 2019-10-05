@@ -45,6 +45,10 @@
       href: tutorials/mlnet-cli.md
     - name: Analyze sentiment using Model Builder and Razor Pages
       href: tutorials/sentiment-analysis-model-builder.md
+  - name: Infer.NET
+    items:
+    - name: Probabilistic programming with Infer.NET
+      href: how-to-guides/matchup-app-infer-net.md
 - name: Concepts
   items:
   - name: ML.NET tasks (model types)
@@ -95,10 +99,6 @@
       href: how-to-guides/install-ml-net-cli.md
     - name: Use the automated ML API
       href: how-to-guides/how-to-use-the-automl-api.md
-  - name: Infer.NET
-    items:
-    - name: Probabilistic programming with Infer.NET
-      href: how-to-guides/matchup-app-infer-net.md
 - name: Reference
   items:
   - name: API

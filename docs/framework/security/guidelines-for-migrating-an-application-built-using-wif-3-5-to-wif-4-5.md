@@ -105,7 +105,7 @@ You can install the Identity and Access Tool from the Extensions and Updates Man
 
 - The stand-alone Federation Utility (FedUtil) is not available in WIF 4.5. You can use the Identity and Access Tool to modify your configuration files to outsource identity management to an STS.
 
-For more information about the Identity and Access Tool, see [Identity and Access Tool for Visual Studio 2012](identity-and-access-tool-for-vs.md)
+For more information about the Identity and Access Tool, see [Identity and Access Tool for Visual Studio 2012](identity-and-access-tool-for-vs.md).
 
 <a name="BKMK_ToolingChanges"></a>
 

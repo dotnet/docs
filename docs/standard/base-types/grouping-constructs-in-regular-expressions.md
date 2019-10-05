@@ -72,9 +72,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is the following:  
   
-```  
-(\w+)\s(\1)\W  
-```  
+`(\w+)\s(\1)\W`  
   
  The following table shows how the regular expression pattern is interpreted.  
   
@@ -89,15 +87,11 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Named Matched Subexpressions  
  The following grouping construct captures a matched subexpression and lets you access it by name or by number:  
   
-```  
-(?<name>subexpression)  
-```  
+`(?<name>subexpression)`  
   
  or:  
   
-```  
-(?'name'subexpression)  
-```  
+`(?'name'subexpression)`  
   
  where *name* is a valid group name, and *subexpression* is any valid regular expression pattern. *name* must not contain any punctuation characters and cannot begin with a number.  
   
@@ -135,9 +129,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is as follows:  
   
-```  
-(?<duplicateWord>\w+)\s\k<duplicateWord>\W(?<nextWord>\w+)  
-```  
+`(?<duplicateWord>\w+)\s\k<duplicateWord>\W(?<nextWord>\w+)`  
   
  The following table shows how the regular expression is interpreted.  
   
@@ -169,15 +161,11 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Balancing Group Definitions  
  A balancing group definition deletes the definition of a previously defined group and stores, in the current group, the interval between the previously defined group and the current group. This grouping construct has the following format:  
   
-```  
-(?<name1-name2>subexpression)  
-```  
+`(?<name1-name2>subexpression)`  
   
  or:  
   
-```  
-(?'name1-name2' subexpression)  
-```  
+`(?'name1-name2' subexpression)`
   
  where *name1* is the current group (optional), *name2* is a previously defined group, and *subexpression* is any valid regular expression pattern. The balancing group definition deletes the definition of *name2* and stores the interval between *name2* and *name1* in *name1*. If no *name2* group is defined, the match backtracks. Because deleting the last definition of *name2* reveals the previous definition of *name2*, this construct lets you use the stack of captures for group *name2* as a counter for keeping track of nested constructs such as parentheses or opening and closing brackets.  
   
@@ -193,9 +181,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is:  
   
-```  
-^[^<>]*(((?'Open'<)[^<>]*)+((?'Close-Open'>)[^<>]*)+)*(?(Open)(?!))$  
-```  
+`^[^<>]*(((?'Open'<)[^<>]*)+((?'Close-Open'>)[^<>]*)+)*(?(Open)(?!))$`  
   
  The regular expression is interpreted as follows:  
   
@@ -248,9 +234,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Noncapturing Groups  
  The following grouping construct does not capture the substring that is matched by a subexpression:  
   
-```  
-(?:subexpression)  
-```  
+`(?:subexpression)`
   
  where *subexpression* is any valid regular expression pattern. The noncapturing group construct is typically used when a quantifier is applied to a group, but the substrings captured by the group are of no interest.  
   

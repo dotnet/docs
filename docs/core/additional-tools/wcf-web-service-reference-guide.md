@@ -15,16 +15,16 @@ Over the years, many Visual Studio developers have enjoyed the productivity that
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.5](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) or later versions
+- [Visual Studio 2017 15.5](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) or later versions
 
 ## How to use the extension
 
 > [!NOTE]
 > The **WCF Web Service Reference** option is applicable to projects created using the following project templates:
 >
-> * **Visual C#** > **.NET Core**
-> * **Visual C#** > **.NET Standard**
-> * **Visual C#** > **Web** > **ASP.NET Core Web Application**
+> - **Visual C#** > **.NET Core**
+> - **Visual C#** > **.NET Standard**
+> - **Visual C#** > **Web** > **ASP.NET Core Web Application**
 
 Using the **ASP.NET Core Web Application** project template as an example, this article walks you through adding a WCF service reference to the project:
 

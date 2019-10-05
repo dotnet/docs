@@ -1,5 +1,5 @@
 ---
-title: "I/O pipelines in .NET"
+title: "I/O pipelines - .NET"
 ms.date: "10/01/2019"
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,7 +13,7 @@ ms.assetid: dbdd55ee-d6b9-4f9e-bad0-ab0edd4457f7
 author: rick-anderson
 ms.author: riande
 ---
-# System.IO.Pipelines
+# System.IO.Pipelines in .NET
 
 <xref:System.IO.Pipelines> is a new library that is designed to make it easier to do high performance IO in .NET. It’s a library targeting .NET Standard that works on all .NET implementations.
 
@@ -55,6 +55,7 @@ To fix the preceding problems, the following changes are required:
 
   - If the buffer is re-sized, more buffer copies are made as longer lines appear in the input.
   - To reduce wasted space, compact the buffer used for reading lines.
+
 - Consider using buffer pooling to avoid allocating memory repeatedly.
 - The following code address some of these problems:
 
@@ -81,12 +82,12 @@ There are 2 loops:
 
 There are no explicit buffers allocated. All buffer management is delegated to the `PipeReader` and `PipeWriter` implementations. Delegating buffer management makes it easier for consuming code to focus solely on the business logic.
 
-In the first loop`:
+In the first loop:
 
-* [PipeWriter.GetMemory(Int32)](xref:System.IO.Pipelines.PipeWriter.GetMemory*) is called to get memory from the underlying writer.
-* [PipeWriter.Advance(Int32)](xref:System.IO.Pipelines.PipeWriter.Advance*)
+* [PipeWriter.GetMemory(Int32)](xref:System.IO.Pipelines.PipeWriter.GetMemory%2A) is called to get memory from the underlying writer.
+* [PipeWriter.Advance(Int32)](xref:System.IO.Pipelines.PipeWriter.Advance%2A)
 is called to tell the `PipeWriter` how much data was written to the buffer.
-* <xref:System.IO.Pipelines.PipeWriter.FlushAsync*> is called to make the data available to the `PipeReader`.
+* <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> is called to make the data available to the `PipeReader`.
 
 In the second loop, the `PipeReader` consumes the buffers written by `PipeWriter`. The buffers come from the Socket. The call to `PipeReader.ReadAsync`:
 
@@ -118,14 +119,14 @@ For optimal performance, there is a balance between frequent pauses and allocati
 
 To solve the preceding problem, the `Pipe` has two settings to control the flow of data:
 
-* <xref:System.IO.Pipelines.PipeOptions.PauseWriterThreshold>: Determines how much data should be buffered before calls to <xref:System.IO.Pipelines.PipeWriter.FlushAsync*> pauses.
+* <xref:System.IO.Pipelines.PipeOptions.PauseWriterThreshold>: Determines how much data should be buffered before calls to <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> pauses.
 * <xref:System.IO.Pipelines.PipeOptions.ResumeWriterThreshold>: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses.
 
 The `ResumeWriterThreshold` controls how much the reader has to observe before writing can resume.
 
 ![diagram with ResumeWriterThreshold and PauseWriterThreshold](media/pipelines/resume-pause.png)
 
-<xref:System.IO.Pipelines.PipeWriter.FlushAsync*>:
+<xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A>:
 
 * Returns an incomplete `ValueTask<FlushResult>` when the amount of data in the `Pipe` crosses `PauseWriterThreshold`.
 * Completes `ValueTask<FlushResult>` when it becomes lower than `ResumeWriterThreshold`.
@@ -147,18 +148,18 @@ Typically when using `async` amd `await`, asynchronous code resumes on either on
 
 When doing IO, it's important to have fine-grained control over where the IO is performed. This control allows taking advantage of CPU caches effectively. Efficient caching is critical for high-performance apps like web servers. <xref:System.IO.Pipelines.PipeScheduler> provides control over where asynchronous callbacks run. By default:
 
-* The current <xref:System.Threading.SynchronizationContext> will be used.
-* If there is no `SynchronizationContext`, it will use the thread pool to run callbacks.
+* The current <xref:System.Threading.SynchronizationContext> is used.
+* If there is no `SynchronizationContext`, it uses the thread pool to run callbacks.
 
 [!code-csharp[](media/pipelines/code/Program.cs?name=snippet)]
 
 ### Pipe reset
 
-It's frequently efficient to reuse the Pipe object. To reset the pipe, call <xref:System.IO.Pipelines.PipeReader> <xref:System.IO.Pipelines.Pipe.Reset*> when both the `PipeReader` and `PipeWriter` are complete.
+It's frequently efficient to reuse the `Pipe` object. To reset the pipe, call <xref:System.IO.Pipelines.PipeReader> <xref:System.IO.Pipelines.Pipe.Reset%2A> when both the `PipeReader` and `PipeWriter` are complete.
 
 ## PipeReader
 
-<xref:System.IO.Pipelines.PipeReader> manages memory on the caller's behalf. **Always** call [PipeReader.AdvanceTo](xref:System.IO.Pipelines.PipeReader.AdvanceTo*)> after calling [PipeReader.ReadAsync](xref:System.IO.Pipelines.PipeReader.ReadAsync*). This lets the `PipeReader` know when the caller is done with the memory so that it can be tracked. The `ReadOnlySequence<byte>` returned from `PipeReader.ReadAsync` is only valid until the call the `PipeReader.AdvanceTo`:
+<xref:System.IO.Pipelines.PipeReader> manages memory on the caller's behalf. **Always** call [PipeReader.AdvanceTo](xref:System.IO.Pipelines.PipeReader.AdvanceTo%2A)> after calling [PipeReader.ReadAsync](xref:System.IO.Pipelines.PipeReader.ReadAsync%2A). This lets the `PipeReader` know when the caller is done with the memory so that it can be tracked. The `ReadOnlySequence<byte>` returned from `PipeReader.ReadAsync` is only valid until the call the `PipeReader.AdvanceTo`:
 
 * It's illegal to use `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo`.
 * Using `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo` is undefined.
@@ -215,7 +216,7 @@ The code below reads all messages from a `PipeReader` and calls `ProcessMessageA
 
 * Supports passing a <xref:System.Threading.CancellationToken>.
 * Throws in an <xref:System.OperationCanceledException> if the `CancellationToken` is cancelled while there's a read pending.
-* Supports a way to cancel the current read operation via [PipeReader.CancelPendingRead](xref:System.IO.Pipelines.PipeReader.CancelPendingRead*) which avoids raising an exception. Calling `PipeReader.CancelPendingRead` returns a <xref:System.IO.Pipelines.ReadResult> with `IsCanceled` set to `true`. This can be very useful for halting the existing read loop in a non-destructive and non-exceptional way.
+* Supports a way to cancel the current read operation via [PipeReader.CancelPendingRead](xref:System.IO.Pipelines.PipeReader.CancelPendingRead%2A) which avoids raising an exception. Calling `PipeReader.CancelPendingRead` returns a <xref:System.IO.Pipelines.ReadResult> with `IsCanceled` set to `true`. This can be very useful for halting the existing read loop in a non-destructive and non-exceptional way.
 
 [!code-csharp[](media/pipelines/code/MyConnection.cs?name=snippet)]
 
@@ -239,29 +240,29 @@ The code below reads all messages from a `PipeReader` and calls `ProcessMessageA
 
 The `ReadResult` can return the final segment of data when `IsCompleted` is set to `true`. Not reading that data before exiting the read loop will result in data loss.
 
-[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet)]
 
-[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Infinite loop**
 
 The following logic may result in an infinite loop if the `Result.IsCompleted` is `true` but there's never a complete message in the buffer.
 
-[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet2)]
 
-[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
 
 Here's another piece of code with the same problem. It's checking for a non-empty buffer before checking `ReadResult.IsCompleted`. Because it's in an `else if`, it will loop forever if there's never a complete message in the buffer.
 
-[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet3)]
 
-[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Unexpected Hang**
 
@@ -270,11 +271,11 @@ Unconditionally calling `PipeReader.AdvanceTo` with `buffer.End` in the `examine
 * There's more data written to the pipe.
 * And the new data wasn't previously examined.
 
-[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet4)]
 
-[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Out of Memory (OOM)**
 
@@ -288,19 +289,19 @@ With the following conditions, the code below keeps buffering until an <xref:Sys
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet5)]
 
-[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
 
 ❌ **Memory Corruption**
 
 When writing helpers that read the buffer, any returned payload should be copied before calling `Advance`. The following example will return memory that the `Pipe` has discarded and may reuse it for the next operation (read/write).
 
-[!INCLUDE[](media/pipelines/do-not-use-include1.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-1.md)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippetMessage)]
 
 [!code-csharp[](media/pipelines/code/DoNotUse.cs?name=snippet6)]
 
-[!INCLUDE[](media/pipelines/do-not-use-include2.md)]
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/pipelines-do-not-use-2.md)]
 
 ## PipeWriter
 
@@ -310,29 +311,29 @@ The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the cal
 
 The preceding code:
 
-* Requests a buffer of at least 5 bytes from the `PipeWriter` using <xref:System.IO.Pipelines.PipeWriter.GetSpan*>.
+* Requests a buffer of at least 5 bytes from the `PipeWriter` using <xref:System.IO.Pipelines.PipeWriter.GetSpan%2A>.
 * Writes bytes for the ASCII string `"Hello"` to the returned `Span<byte>`.
-* Calls <xref:System.IO.Pipelines.PipeWriter.Advance*> to indicate how many bytes were written to the buffer.
+* Calls <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to indicate how many bytes were written to the buffer.
 * Flushes the `PipeWriter`, which sends the bytes to the underlying device.
 
-The preceding method of writing uses the buffers provided by the `PipeWriter`. Alternatively, [PipeWriter.WriteAync](xref:System.IO.Pipelines.PipeWriter.WriteAsync*):
+The preceding method of writing uses the buffers provided by the `PipeWriter`. Alternatively, [PipeWriter.WriteAync](xref:System.IO.Pipelines.PipeWriter.WriteAsync%2A):
 
 * Copies the existing buffer to the `PipeWriter`.
-* Calls `GetSpan`, `Advance` as appropriate and calls <xref:System.IO.Pipelines.PipeWriter.FlushAsync*>.
+* Calls `GetSpan`, `Advance` as appropriate and calls <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A>.
 
 [!code-csharp[](media/pipelines/code/MyPipeWriter.cs?name=snippet2)]
 
 ### Cancellation
 
-<xref:System.IO.Pipelines.PipeWriter.FlushAsync*> supports passing a <xref:System.Threading.CancellationToken>. Passing a `CancellationToken` results in an `OperationCanceledException` if the token is cancelled while there's a flush pending. `PipeWriter.FlushAsync` supports a way to cancel the current flush operation via [PipeWriter.CancelPendingFlush ](xref:System.IO.Pipelines.PipeWriter.CancelPendingFlush*) without raising an exception. Calling `PipeWriter.CancelPendingFlush` returns a <xref:System.IO.Pipelines.FlushResult> with `IsCanceled` set to `true`. This can be very useful for halting the yielding flush in a non-destructive and non-exceptional way.
+<xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> supports passing a <xref:System.Threading.CancellationToken>. Passing a `CancellationToken` results in an `OperationCanceledException` if the token is cancelled while there's a flush pending. `PipeWriter.FlushAsync` supports a way to cancel the current flush operation via [PipeWriter.CancelPendingFlush ](xref:System.IO.Pipelines.PipeWriter.CancelPendingFlush%2A) without raising an exception. Calling `PipeWriter.CancelPendingFlush` returns a <xref:System.IO.Pipelines.FlushResult> with `IsCanceled` set to `true`. This can be very useful for halting the yielding flush in a non-destructive and non-exceptional way.
 
 <a name="pwcp"></a>
 
 ### PipeWriter common problems
 
-- <xref:System.IO.Pipelines.PipeWriter.GetSpan*> and <xref:System.IO.Pipelines.PipeWriter.GetMemory*> return a buffer with at least the requested amount of memory. Do **not** assume exact buffer sizes.
+- <xref:System.IO.Pipelines.PipeWriter.GetSpan%2A> and <xref:System.IO.Pipelines.PipeWriter.GetMemory%2A> return a buffer with at least the requested amount of memory. Do **not** assume exact buffer sizes.
 - There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
-- A new buffer must be requested after calling <xref:System.IO.Pipelines.PipeWriter.Advance*> to continue writing more data. The previously acquired buffer cannot be written to.
+- A new buffer must be requested after calling <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to continue writing more data. The previously acquired buffer cannot be written to.
 - Calling `GetMemory` or `GetSpan` while there's an incomplete call to `FlushAsync` is not safe.
 - Calling `Complete` or `CompleteAsync` while there's unflushed data can result in memory corruption.
 
@@ -342,4 +343,4 @@ The <xref:System.IO.Pipelines.IDuplexPipe> is a contract for types that support 
 
 ## Streams
 
-When reading or writing stream data you typically read data using a de-serializer and write data using a serializer. Most of these read and write stream APIs have a `Stream` parameter. In order to make it easier to integrate with these existing APIs, `PipeReader` and `PipeWriter` expose an <xref:System.IO.Pipelines.PipeReader.AsStream*>.  <xref:System.IO.Pipelines.PipeWriter.AsStream*> returns a `Stream` implementation around the `PipeReader` or `PipeWriter`.
+When reading or writing stream data you typically read data using a de-serializer and write data using a serializer. Most of these read and write stream APIs have a `Stream` parameter. In order to make it easier to integrate with these existing APIs, `PipeReader` and `PipeWriter` expose an <xref:System.IO.Pipelines.PipeReader.AsStream%2A>.  <xref:System.IO.Pipelines.PipeWriter.AsStream%2A> returns a `Stream` implementation around the `PipeReader` or `PipeWriter`.

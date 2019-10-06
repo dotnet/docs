@@ -66,4 +66,4 @@ If any matching file exists, attempt to load and return it.
 
 ## Unmanaged (native) library probing
 
-When probing to locate an unmanaged library, the `NATIVE_DLL_SEARCH_DIRECTORIES` are searched looking for a matching library,
+When probing to locate an unmanaged library, the `NATIVE_DLL_SEARCH_DIRECTORIES` are searched looking for a matching library.

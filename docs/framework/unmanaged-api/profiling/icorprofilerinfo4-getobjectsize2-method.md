@@ -23,7 +23,7 @@ Returns the size of a specified object. Replaces the [ICorProfilerInfo::GetObjec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectSize2(  
     [in]  ObjectID objectId,  
     [out] SIZE_T *pcSize);  

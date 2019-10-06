@@ -10,7 +10,7 @@ Returns the object size for an object based on its typespec signature.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectSize(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
@@ -31,7 +31,7 @@ HRESULT GetObjectSize(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

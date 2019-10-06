@@ -18,7 +18,7 @@ Provides additional information about debug events on the Windows platform.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugDecodeEventFlagsWindows {  
     IS_FIRST_CHANCE = 1,  
 } CorDebugDecodeEventFlagsWindows;  
@@ -34,7 +34,7 @@ typedef enum CorDebugDecodeEventFlagsWindows {
  The [ICorDebugProcess6::DecodeEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-decodeevent-method.md) method includes a `dwFlags` parameter that provides additional information about a debug event and whose value is dependent on the target architecture. The `CorDebugDecodeEventFlagsWindows` enumeration can be used with debug events on the Windows platform.  
   
 > [!NOTE]
->  This enumeration is intended for use in .NET Native debugging scenarios only.  
+> This enumeration is intended for use in .NET Native debugging scenarios only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

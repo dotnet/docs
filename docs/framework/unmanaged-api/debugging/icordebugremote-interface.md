@@ -22,7 +22,7 @@ Provides the ability to launch or attach a managed debugger to a remote target p
   
 ## Syntax  
   
-```  
+```cpp  
 interface ICorDebugRemote : IUnknown  
 {  
     HRESULT CreateProcessEx  

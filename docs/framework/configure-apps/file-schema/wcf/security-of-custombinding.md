@@ -6,11 +6,12 @@ ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
 # \<security> of \<customBinding>
 Specifies the security options for a custom binding.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<security>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<security>**  
   
 ## Syntax  
   
@@ -84,26 +85,26 @@ Specifies the security options for a custom binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<issuedTokenParameters>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md)|Specifies a current issued token. This element is of type <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>.|  
-|[\<localClientSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/localclientsettings-element.md)|Specifies the security settings of a local client for this binding. This element is of type <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>.|  
-|[\<localServiceSettings>](../../../../../docs/framework/configure-apps/file-schema/wcf/localservicesettings-element.md)|Specifies the security settings of a local service for this binding. This element is of type <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>.|  
-|[\<secureConversationBootstrap>](../../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md)|Specifies the default values used for initiating a secure conversation service.|  
+|[\<issuedTokenParameters>](issuedtokenparameters.md)|Specifies a current issued token. This element is of type <xref:System.ServiceModel.Configuration.IssuedTokenParametersElement>.|  
+|[\<localClientSettings>](localclientsettings-element.md)|Specifies the security settings of a local client for this binding. This element is of type <xref:System.ServiceModel.Configuration.LocalClientSecuritySettingsElement>.|  
+|[\<localServiceSettings>](localservicesettings-element.md)|Specifies the security settings of a local service for this binding. This element is of type <xref:System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement>.|  
+|[\<secureConversationBootstrap>](secureconversationbootstrap.md)|Specifies the default values used for initiating a secure conversation service.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
- For more information about using this element, see [SecurityBindingElement Authentication Modes](../../../../../docs/framework/wcf/feature-details/securitybindingelement-authentication-modes.md) and [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
+ For more information about using this element, see [SecurityBindingElement Authentication Modes](../../../wcf/feature-details/securitybindingelement-authentication-modes.md) and [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
   
 ## Example  
  The following example demonstrates how to configure security using a custom binding. It shows how to use a custom binding to enable message-level security together with a secure transport. This is useful when a secure transport is required to transmit the messages between client and service and simultaneously the messages must be secure on the message level. This configuration is not supported by system-provided bindings.  
   
- The service configuration defines a custom binding that supports TCP communication protected using TLS/SSL protocol, and Windows message security. The custom binding uses a service certificate to authenticate the service on the transport level and to protect the messages during the transmission between client and service. This is accomplished by the [\<sslStreamSecurity>](../../../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md) binding element. The service's certificate is configured using a service behavior.  
+ The service configuration defines a custom binding that supports TCP communication protected using TLS/SSL protocol, and Windows message security. The custom binding uses a service certificate to authenticate the service on the transport level and to protect the messages during the transmission between client and service. This is accomplished by the [\<sslStreamSecurity>](sslstreamsecurity.md) binding element. The service's certificate is configured using a service behavior.  
   
- Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the [security](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element. Both client and service are authenticated using message-level security if Kerberos authentication mechanism is available. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate service to the client. The [security](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element is configured to use `SecureConversation` authenticationType, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work. For more information on running this example, see [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md).  
+ Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the [security](security-of-custombinding.md) binding element. Both client and service are authenticated using message-level security if Kerberos authentication mechanism is available. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate service to the client. The [security](security-of-custombinding.md) binding element is configured to use `SecureConversation` authenticationType, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work. For more information on running this example, see [Custom Binding Security](../../../wcf/samples/custom-binding-security.md).  
   
 ```xml  
 <configuration>
@@ -165,9 +166,9 @@ Specifies the security options for a custom binding.
 - <xref:System.ServiceModel.Configuration.SecurityElement>
 - <xref:System.ServiceModel.Channels.SecurityBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
-- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [Custom Binding Security](../../../wcf/samples/custom-binding-security.md)

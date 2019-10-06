@@ -24,7 +24,7 @@ Defines the basic information about a given profiler-instrumented method.
 
 ## Syntax
 
-```
+```cpp
 struct MSLAYOUT DacpReJitData
 {
     enum Flags

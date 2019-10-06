@@ -23,7 +23,7 @@ Gets the ICorDebugProcess interface that corresponds to a common language runtim
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenVirtualProcess(  
     [in] ULONG64 moduleBaseAddress,  
     [in] IUnknown * pDataTarget,  

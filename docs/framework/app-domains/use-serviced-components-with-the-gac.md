@@ -21,5 +21,5 @@ Serviced components (managed code COM+ components) should be put in the Global A
   
 ## See also
 
-- [Working with Assemblies and the Global Assembly Cache](../../../docs/framework/app-domains/working-with-assemblies-and-the-gac.md)
-- [Gacutil.exe (Global Assembly Cache Tool)](../../../docs/framework/tools/gacutil-exe-gac-tool.md)
+- [Working with Assemblies and the Global Assembly Cache](working-with-assemblies-and-the-gac.md)
+- [Gacutil.exe (Global Assembly Cache Tool)](../tools/gacutil-exe-gac-tool.md)

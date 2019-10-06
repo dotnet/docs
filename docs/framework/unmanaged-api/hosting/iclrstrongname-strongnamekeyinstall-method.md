@@ -23,7 +23,7 @@ Imports a public/private key pair into a container.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyInstall (  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  

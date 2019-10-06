@@ -12,7 +12,7 @@ ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
 ---
 # break (C# Reference)
 
-The `break` statement terminates the closest enclosing loop or [switch](../../../csharp/language-reference/keywords/switch.md) statement in which it appears. Control is passed to the statement that follows the terminated statement, if any.
+The `break` statement terminates the closest enclosing loop or [switch](./switch.md) statement in which it appears. Control is passed to the statement that follows the terminated statement, if any.
 
 ## Example
 
@@ -28,7 +28,7 @@ In this example, the `break` statement is used to break out of an inner nested l
 
 ## Example
 
-This example demonstrates the use of `break` in a [switch](../../../csharp/language-reference/keywords/switch.md) statement.
+This example demonstrates the use of `break` in a [switch](./switch.md) statement.
 
 [!code-csharp[csrefKeywordsJump#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#2)]
 
@@ -45,7 +45,7 @@ Sorry, invalid selection.
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [switch](../../../csharp/language-reference/keywords/switch.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [switch](./switch.md)

@@ -23,7 +23,7 @@ Notifies the profiler that an application domain is being unloaded from a proces
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AppDomainShutdownStarted(  
     [in] AppDomainID appDomainId);  
 ```  

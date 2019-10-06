@@ -1,7 +1,7 @@
 ---
 title: "Explain model predictions using Permutation Feature Importance"
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 05/02/2019
+ms.date: 08/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
@@ -14,7 +14,7 @@ Learn how to explain ML.NET machine learning model predictions by understanding 
 
 Machine learning models are often thought of as black boxes that take inputs and generate an output. The intermediate steps or interactions among the features that influence the output are rarely understood. As machine learning is introduced into more aspects of everyday life such as healthcare, it's of utmost importance to understand why a machine learning model makes the decisions it does. For example, if diagnoses are made by a machine learning model, healthcare professionals need a way to look into the factors that went into making that diagnoses. Providing the right diagnosis could make a great difference on whether a patient has a speedy recovery or not. Therefore the higher the level of explainability in a model, the greater confidence healthcare professionals have to accept or reject the decisions made by the model.
 
-Various techniques are used to explain models, one of which is PFI. PFI is a technique used to explain classification and regression models that is inspired by [Breiman's *Random Forests* paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf)(see section 10). At a high level, the way it works is by randomly shuffling data one feature at a time for the entire dataset and calculating how much the performance metric of interest decreases. The larger the change, the more important that feature is. 
+Various techniques are used to explain models, one of which is PFI. PFI is a technique used to explain classification and regression models that is inspired by [Breiman's *Random Forests* paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf) (see section 10). At a high level, the way it works is by randomly shuffling data one feature at a time for the entire dataset and calculating how much the performance metric of interest decreases. The larger the change, the more important that feature is. 
 
 Additionally, by highlighting the most important features, model builders can focus on using a subset of more meaningful features which can potentially reduce noise and training time.
 
@@ -46,7 +46,7 @@ A sample of the dataset is shown below:
 2,98,16,1,0.25,10,5,1,8,689,13,36,12
 ```
 
-The data in this sample can be modeled by a class like `HousingPriceData`:
+The data in this sample can be modeled by a class like `HousingPriceData` and loaded into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ```csharp
 class HousingPriceData
@@ -92,8 +92,6 @@ class HousingPriceData
     public float Price { get; set; }
 }
 ```
-
-Load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ## Train the model
 
@@ -171,4 +169,4 @@ NearWater           |   0.000203
 PercentPopulationLivingBelowPoverty|    0.000031
 ToxicWasteLevels    |   -0.000019
 
-Taking a look at the the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate and average number of rooms in the home.
+Taking a look at the five most important features for this dataset, the price of a house predicted by this model is influenced by its proximity to highways, student teacher ratio of schools in the area, proximity to major employment centers, property tax rate and average number of rooms in the home.

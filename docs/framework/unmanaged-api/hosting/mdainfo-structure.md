@@ -22,7 +22,7 @@ Provides details about the `Event_MDAFired` event, which triggers the creation o
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _MDAInfo {  
     LPCWSTR  lpMDACaption;  
     LPCWSTR  lpMDAMessage  

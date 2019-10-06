@@ -34,16 +34,24 @@
 /docs/visual-basic/** @KathleenDollard
 
 # The ML.NET Guide:
-/docs/machine-learning/** @JRAlexander
+/docs/machine-learning/** @natke
 
 # The .NET for Apache Spark Guide:
 /docs/spark/** @mamccrea
+
+# The .NET Architecture Guide:
+/docs/architecture/** @nishanil
+
+# The Desktop WPF Guide:
+/docs/desktop-wpf/** @Thraka
 
 ############### .NET Core ########################
 # What's New
 /docs/core/whats-new/** @rpetrusha
 # Deployment
 /docs/core/deploying/** @rpetrusha
+# Breaking changes
+/docs/core/compatibility/** @rpetrusha
 
 ################### .NET FRAMEWORK ##################
 # .NET Framework migration guide
@@ -63,6 +71,10 @@
 /docs/framework/configure-apps/file-schema/wcf/** @HongGit
 /docs/framework/data/wcf/** @HongGit
 /docs/framework/wcf/** @HongGit
+# WPF
+/docs/framework/wpf/** @Thraka
+# Winforms
+/docs/framework/winforms/** @Thraka
 
 ################## .NET STANDARD ##################
 # Analyzers:
@@ -76,9 +88,8 @@
 # .NET threading
 /docs/standard/threading/** @rpetrusha
 
-################## .NET E-BOOKS ##################
-/docs/standard/containerized-lifecycle-architecture/** @nishanil
-/docs/standard/microservices-architecture/** @nishanil
-/docs/standard/modern-web-apps-azure-architecture/** @nishanil
-/docs/standard/modernize-with-azure-and-containers/** @nishanil
-/docs/standard/serverless-architecture/** @nishanil
+################## E-BOOKS ##################
+# Blazor:
+/docs/architecture/blazor-for-web-forms-developers/** @danroth27
+# gRPC:
+/docs/architecture/grpc-for-wcf-developers/** @shirhatti

@@ -23,7 +23,7 @@ Gets the number of functions that were loaded by the application or forcibly loa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount([out] ULONG * pcelt);  
 ```  
   

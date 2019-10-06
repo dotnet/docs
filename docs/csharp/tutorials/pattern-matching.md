@@ -11,13 +11,14 @@ C# 7 introduced basic pattern matching features. Those features are extended in 
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Recognize situations where pattern matching should be used.
-> * Use pattern matching expressions to implement behavior based on types and property values.
-> * Combine pattern matching with other techniques to create complete algorithms.
+>
+> - Recognize situations where pattern matching should be used.
+> - Use pattern matching expressions to implement behavior based on types and property values.
+> - Combine pattern matching with other techniques to create complete algorithms.
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8 preview compiler is available with the latest [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8 compiler is available starting with [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -139,7 +140,7 @@ You're starting to see how patterns can help you create algorithms where the cod
 The toll authority wants to encourage vehicles to travel at maximum capacity. They've decided to charge more when vehicles have fewer passengers, and encourage full vehicles by offering lower pricing:
 
 - Cars and taxis with no passengers pay an extra $0.50.
-- Cars and taxis with two passengers get a 0.50 discount.
+- Cars and taxis with two passengers get a $0.50 discount.
 - Cars and taxis with three or more passengers get a $1.00 discount.
 - Buses that are less than 50% full pay an extra $2.00.
 - Buses that are more than 90% full get a $1.00 discount.
@@ -193,7 +194,12 @@ vehicle switch
 };
 ```
 
-The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they charge more based on the weight class of the trucks. Trucks over 5000 lbs are charged an extra $5.00. Light trucks under 3000 lbs are given a $2.00 discount. That rule is implemented with the following code:
+The toll authority isn't concerned with the number of passengers in the delivery trucks. Instead, they adjust the toll amount based on the weight class of the trucks as follows:
+
+- Trucks over 5000 lbs are charged an extra $5.00.
+- Light trucks under 3000 lbs are given a $2.00 discount.
+
+That rule is implemented with the following code:
 
 ```csharp
 vehicle switch
@@ -228,6 +234,9 @@ vehicle switch
     DeliveryTruck t when (t.GrossWeightClass > 5000) => 10.00m + 5.00m,
     DeliveryTruck t when (t.GrossWeightClass < 3000) => 10.00m - 2.00m,
     DeliveryTruck t => 10.00m,
+    
+    { }     => throw new ArgumentException(message: "Not a known vehicle type", paramName: nameof(vehicle)),
+    null    => throw new ArgumentNullException(nameof(vehicle))
 };
 ```
 

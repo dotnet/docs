@@ -23,7 +23,7 @@ Gets the value of the given array element.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetElement (  
     [in]  ULONG32          cdim,  
     [in, size_is(cdim), length_is(cdim)]   

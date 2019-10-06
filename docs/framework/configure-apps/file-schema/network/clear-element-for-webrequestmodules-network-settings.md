@@ -14,10 +14,10 @@ ms.assetid: 48f38bcb-f30c-4b74-a8f0-1a3caf1aa96f
 # \<clear> Element for webRequestModules (Network Settings)
 Removes all registered Web request modules from the application.  
   
- \<configuration>  
-\<system.net>  
-\<webRequestModules>  
-\<clear>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<webRequestModules>**](webrequestmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**  
   
 ## Syntax  
   
@@ -38,7 +38,7 @@ Removes all registered Web request modules from the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[webRequestModules](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
+|[webRequestModules](webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
   
 ## Remarks  
  The `clear` element removes all registered Web request modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
@@ -66,4 +66,4 @@ Removes all registered Web request modules from the application.
 ## See also
 
 - <xref:System.Net.WebRequest>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

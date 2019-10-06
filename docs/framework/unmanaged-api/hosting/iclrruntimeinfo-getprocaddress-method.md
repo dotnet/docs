@@ -25,7 +25,7 @@ Gets the address of a specified function that was exported from the common langu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcAddress(  
      [in]  LPCSTR pszProcName,  
      [out, retval] LPVOID *ppProc);  

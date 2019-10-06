@@ -18,11 +18,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # COR_ACTIVE_FUNCTION Structure
-Contains information about the functions that are currently active in a thread's frames. This structure is used by the [ICorDebugThread2::GetActiveFunctions](../../../../docs/framework/unmanaged-api/debugging/icordebugthread2-getactivefunctions-method.md) method.  
+Contains information about the functions that are currently active in a thread's frames. This structure is used by the [ICorDebugThread2::GetActiveFunctions](icordebugthread2-getactivefunctions-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct  _COR_ACTIVE_FUNCTION {  
     ICorDebugAppDomain   *pAppDomain;  
     ICorDebugModule      *pModule;  
@@ -43,7 +43,7 @@ typedef struct  _COR_ACTIVE_FUNCTION {
 |`flags`|Reserved for future extensibility.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  
   
@@ -53,5 +53,5 @@ typedef struct  _COR_ACTIVE_FUNCTION {
   
 ## See also
 
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

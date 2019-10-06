@@ -6,10 +6,10 @@ ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 # \<httpListener> Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<httpListener>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<httpListener>**  
   
 ## Syntax  
   
@@ -37,7 +37,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+|[settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
  The **unescapeRequestUrl** attribute indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.  
@@ -136,4 +136,4 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 - <xref:System.Net.Configuration.HttpListenerElement>
 - <xref:System.Net.HttpListener>
 - <xref:System.Net.HttpListenerRequest.Url%2A>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

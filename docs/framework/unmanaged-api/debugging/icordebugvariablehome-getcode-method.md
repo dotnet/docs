@@ -23,7 +23,7 @@ Gets the "ICorDebugCode" instance that contains this [ICorDebugVariableHome](../
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode(  
     [out] ICorDebugCode **ppCode  
 );  

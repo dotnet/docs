@@ -3,22 +3,22 @@ title: Get started with .NET Core
 description: Find resources to learn how to build .NET Core applications on Windows, Linux and macOS.
 author: thraka
 ms.author: adegeo
-ms.date: 06/27/2018
+ms.date: 09/19/2019
 ---
 
 # Get started with .NET Core
 
 This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications. 
 
-If you're unsure what .NET Core is, or how it relates to other .NET technologies, start with the [What is .NET](https://www.microsoft.com/net/learn/dotnet/what-is-dotnet) overview. Put simply, .NET Core is an open-source, cross-platform, implementation of .NET.
+If you're unsure what .NET Core is, or how it relates to other .NET technologies, start with the [What is .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet) overview. Put simply, .NET Core is an open-source, cross-platform implementation of .NET.
 
 ## Create an application
 
-First, download and install the [.NET Core SDK](https://www.microsoft.com/net/download/) on your computer.
+First, download and install the [.NET Core SDK](https://dotnet.microsoft.com/download) on your computer.
 
 Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**. Type the following `dotnet` commands to create and run a C# application.
 
-```console
+```dotnetcli
 dotnet new console --output sample1
 dotnet run --project sample1
 ```
@@ -29,11 +29,13 @@ You should see the following output:
 Hello World!
 ```
 
-Congratulations! You've created a simple .NET Core application. You can also use [Visual Studio Code](tutorials/with-visual-studio-code.md), [Visual Studio 2017](tutorials/with-visual-studio.md) (Windows only), or [Visual Studio for Mac](tutorials/using-on-mac-vs.md) (macOS only), to create a .NET Core application.
+Congratulations! You've created a simple .NET Core application. You can also use [Visual Studio Code](tutorials/with-visual-studio-code.md), [Visual Studio](tutorials/with-visual-studio.md) (Windows only), or [Visual Studio for Mac](tutorials/using-on-mac-vs.md) (macOS only), to create a .NET Core application.
 
 ## Tutorials
 
 You can get started developing .NET Core applications by following these step-by-step tutorials.
+
+<!-- markdownlint-disable MD025 -->
 
 # [Windows](#tab/windows)
 

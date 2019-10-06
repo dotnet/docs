@@ -23,7 +23,7 @@ Gets every method that has line information in the provided document.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodsInDocument(  
     [in]  ISymUnmanagedDocument *document,  
     [in]  ULONG32 cMethod,  

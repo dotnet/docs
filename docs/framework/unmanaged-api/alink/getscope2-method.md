@@ -22,7 +22,7 @@ Gets an import scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetScope2(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  
@@ -42,7 +42,7 @@ HRESULT GetScope2(
  Zero-based scope to import.  
   
  `ppImportScope`  
- Receives pointer to [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md) interface for indicated scope.  
+ Receives pointer to [IMetaDataImport2 Interface](../metadata/imetadataimport2-interface.md) interface for indicated scope.  
   
 ## Return Value  
  Returns S_OK if the method succeeds.  
@@ -52,6 +52,6 @@ HRESULT GetScope2(
   
 ## See also
 
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [IALink Interface](ialink-interface.md)
+- [ALink API](index.md)

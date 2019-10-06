@@ -23,7 +23,7 @@ Sets the callback interface that the debugging services will call as common lang
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetDebuggerThreadControl (  
     [in] IDebuggerThreadControl* pDebuggerThreadControl  
 );  

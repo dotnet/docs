@@ -10,7 +10,7 @@ Gets the culture name string of the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCulture(  
    [in] ULONG32 cchCulture,   
    [out] ULONG32 *pcchCulture,   
@@ -32,7 +32,7 @@ HRESULT GetCulture(
  The culture name is a unique string that identifies a culture, such as "en-US" (for the English (United States) culture), or "neutral" (for a neutral culture).  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -33,7 +33,7 @@ Applies runtime reflection policy to a constructor or method.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*method_name*|The method name. The type of the method is defined by the parent [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) or [\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) element.|  
+|*method_name*|The method name. The type of the method is defined by the parent [\<Type>](type-element-net-native.md) or [\<TypeInstantiation>](typeinstantiation-element-net-native.md) element.|  
   
 ## Signature attribute  
   
@@ -45,30 +45,30 @@ Applies runtime reflection policy to a constructor or method.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*policy_setting*|The setting to apply to this policy type. Possible values are `Auto`, `Excluded`, `Included`, and `Required`. For more information, see [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md).|  
+|*policy_setting*|The setting to apply to this policy type. Possible values are `Auto`, `Excluded`, `Included`, and `Required`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Parameter>](../../../docs/framework/net-native/parameter-element-net-native.md)|Applies policy to the type of the argument passed to a method.|  
-|[\<GenericParameter>](../../../docs/framework/net-native/genericparameter-element-net-native.md)|Applies policy to the parameter type of a generic type or method.|  
-|[\<ImpliesType>](../../../docs/framework/net-native/impliestype-element-net-native.md)|Applies policy to a type, if that policy has been applied to the method represented by the containing `<Method>` element.|  
-|[\<TypeParameter>](../../../docs/framework/net-native/typeparameter-element-net-native.md)|Applies policy to the type represented by a <xref:System.Type> argument passed to a method.|  
+|[\<Parameter>](parameter-element-net-native.md)|Applies policy to the type of the argument passed to a method.|  
+|[\<GenericParameter>](genericparameter-element-net-native.md)|Applies policy to the parameter type of a generic type or method.|  
+|[\<ImpliesType>](impliestype-element-net-native.md)|Applies policy to a type, if that policy has been applied to the method represented by the containing `<Method>` element.|  
+|[\<TypeParameter>](typeparameter-element-net-native.md)|Applies policy to the type represented by a <xref:System.Type> argument passed to a method.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
-|[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
+|[\<Type>](type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
+|[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
   
 ## Remarks  
  A `<Method>` element of a generic method applies its policy to all instantiations that do not have their own policy.  
   
  You can use the `Signature` attribute to specify policy for a particular method overload. Otherwise, if the `Signature` attribute is absent, the runtime directive applies to all overloads of the method.  
   
- You cannot define the runtime reflection policy for a constructor by using the `<Method>` element. Instead, use the `Activate` attribute of the  [\<Assembly>](../../../docs/framework/net-native/assembly-element-net-native.md), [\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md), [\<Type>](../../../docs/framework/net-native/type-element-net-native.md), or [\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) element.  
+ You cannot define the runtime reflection policy for a constructor by using the `<Method>` element. Instead, use the `Activate` attribute of the  [\<Assembly>](assembly-element-net-native.md), [\<Namespace>](namespace-element-net-native.md), [\<Type>](type-element-net-native.md), or [\<TypeInstantiation>](typeinstantiation-element-net-native.md) element.  
   
 ## Example  
  The `Stringify` method in the following example is a general-purpose formatting method that uses reflection to convert an object to its string representation. In addition to calling the object's default `ToString` method, the method can produce a formatted result string by passing an object's `ToString` method a format string, an <xref:System.IFormatProvider> implementation, or both. It can also call one of the <xref:System.Convert.ToString%2A?displayProperty=nameWithType> overloads that converts a number to its binary, hexadecimal, or octal representation.  
@@ -79,9 +79,9 @@ Applies runtime reflection policy to a constructor or method.
   
  [!code-csharp[ProjectN_Reflection#7](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn_reflection/cs/method1.cs#7)]  
   
- However, when compiled with .NET Native, the example can throw an number of exceptions at runtime, including <xref:System.NullReferenceException> and [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exceptions, This occurs because the `Stringify` method is intended primarily to support dynamically formatting the primitive types in the .NET Framework Class Library. However, their metadata is not made available by the default directives file. Even when their metadata is made available, however, the example throws [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exceptions because the appropriate `ToString` implementations have not been include in the native code.  
+ However, when compiled with .NET Native, the example can throw an number of exceptions at runtime, including <xref:System.NullReferenceException> and [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md) exceptions, This occurs because the `Stringify` method is intended primarily to support dynamically formatting the primitive types in the .NET Framework Class Library. However, their metadata is not made available by the default directives file. Even when their metadata is made available, however, the example throws [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md) exceptions because the appropriate `ToString` implementations have not been include in the native code.  
   
- These exceptions can all be eliminated by using the [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element to define the types whose metadata must be present, and by adding `<Method>` elements to ensure that the implementation of method overloads that can be called dynamically is also present. The following is the default.rd.xml file that eliminates these exceptions and allows the example to execute without error.  
+ These exceptions can all be eliminated by using the [\<Type>](type-element-net-native.md) element to define the types whose metadata must be present, and by adding `<Method>` elements to ensure that the implementation of method overloads that can be called dynamically is also present. The following is the default.rd.xml file that eliminates these exceptions and allows the example to execute without error.  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
@@ -141,7 +141,7 @@ Applies runtime reflection policy to a constructor or method.
   
 ## See also
 
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
-- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
-- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
-- [\<MethodInstantiation> Element](../../../docs/framework/net-native/methodinstantiation-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](runtime-directive-policy-settings.md)
+- [\<MethodInstantiation> Element](methodinstantiation-element-net-native.md)

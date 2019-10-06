@@ -14,15 +14,15 @@ C# programs can consist of one or more files. Each file can contain zero or more
 ## Related Sections  
  For more information:  
   
-- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)  
+- [Classes](../classes-and-structs/classes.md)  
   
-- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)  
+- [Structs](../classes-and-structs/structs.md)  
   
-- [Namespaces](../../../csharp/programming-guide/namespaces/index.md)  
+- [Namespaces](../namespaces/index.md)  
   
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)  
+- [Interfaces](../interfaces/index.md)  
   
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
+- [Delegates](../delegates/index.md)  
   
 ## C# Language Specification  
 
@@ -30,6 +30,6 @@ For more information, see [Basic concepts](~/_csharplang/spec/basic-concepts.md)
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)
-- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Programming Guide](../index.md)
+- [Inside a C# Program](./index.md)
+- [C# Reference](../../language-reference/index.md)

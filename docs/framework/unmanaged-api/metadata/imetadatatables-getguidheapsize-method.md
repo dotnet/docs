@@ -23,7 +23,7 @@ Gets the size, in bytes, of the GUID heap.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGuidHeapSize (  
     [out] ULONG   *pcbGuids  
 );  

@@ -43,7 +43,7 @@ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framewor
  You can use this WCF client class by creating a new instance of it and calling the methods it implements. Those methods invoke the service operation with which it is designed and configured to interact. For more information, see [WCF Client Overview](../../../../docs/framework/wcf/wcf-client-overview.md).  
   
 > [!NOTE]
->  When SvcUtil.exe generates a WCF client class, it adds a <xref:System.Diagnostics.DebuggerStepThroughAttribute> to the client class that prevents debuggers from stepping through the WCF client class.  
+> When SvcUtil.exe generates a WCF client class, it adds a <xref:System.Diagnostics.DebuggerStepThroughAttribute> to the client class that prevents debuggers from stepping through the WCF client class.  
   
 ### Finding Data Types  
  To locate data types in the generated code, the most basic mechanism is to identify the type name specified in a contract and search the code for that type declaration. For example, the following contract specifies that the `SampleMethod` can return a SOAP fault of type `microsoft.wcf.documentation.SampleFault`.  

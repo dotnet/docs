@@ -24,7 +24,7 @@ Terminates an enumeration sequence started with a call to the [BeginMethodEnumer
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndMethodEnumeration (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr 
@@ -55,7 +55,7 @@ This function wraps a call to the [IWbemClassObject::EndMethodEnumeration](/wind
 The caller begins the enumeration sequence using [BeginMethodEnumeration function](beginmethodenumeration.md), and then calls the [NextMethod function](nextmethod.md )until the method  returns `WBEM_S_NO_MORE_DATA`. The caller optionally finishes the sequence by calling `EndMethodEnumeration`. The caller may terminate the enumeration early by calling `EndMethodEnumeration` at any time.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

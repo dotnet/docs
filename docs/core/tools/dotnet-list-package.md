@@ -1,7 +1,7 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 04/09/2019
+ms.date: 06/26/2019
 ---
 # dotnet list package
 
@@ -13,9 +13,9 @@ ms.date: 04/09/2019
 
 ## Synopsis
 
-```
-dotnet list [<PROJECT | SOLUTION>] package [--config] [--framework] [--highest-minor] [--highest-patch] 
-   [--include-prerelease] [--include-transitive] [--outdated] [--source]
+```dotnetcli
+dotnet list [<PROJECT>|<SOLUTION>] package [--config] [--framework] [--highest-minor] [--highest-patch] 
+   [--include-prerelease] [--include-transitive] [--interactive] [--outdated] [--source]
 dotnet list package [-h|--help]
 ```
 
@@ -99,6 +99,10 @@ The project or solution file to operate on. If not specified, the command search
 
   Lists transitive packages, in addition to the top-level packages. When specifying this option, you get a list of packages that the top-level packages depend on.
 
+* **`--interactive`**
+
+  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+
 * **`--outdated`**
 
   Lists packages that have newer versions available.
@@ -111,18 +115,18 @@ The project or solution file to operate on. If not specified, the command search
 
 * List package references of a specific project:
 
-  ```console
+  ```dotnetcli
   dotnet list SentimentAnalysis.csproj package
   ```
 
 * List package references that have newer versions available, including prerelease versions:
 
-  ```console
+  ```dotnetcli
   dotnet list package --outdated --include-prerelease
   ```
 
 * List package references for a specific target framework:
 
-  ```console
+  ```dotnetcli
   dotnet list package --framework netcoreapp3.0
   ```

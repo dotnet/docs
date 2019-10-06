@@ -22,7 +22,7 @@ Indicates whether a variable is compiler-generated.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSymVarFlag   
 {  
     VAR_IS_COMP_GEN = 1  

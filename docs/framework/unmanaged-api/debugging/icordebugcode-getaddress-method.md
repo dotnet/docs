@@ -23,7 +23,7 @@ Gets the relative virtual address (RVA) of the code segment that this "ICorDebug
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddress (  
     [out] CORDB_ADDRESS *pStart  
 );  
@@ -40,6 +40,4 @@ HRESULT GetAddress (
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
-## See also
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

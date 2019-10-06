@@ -16,7 +16,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:Class="namespace.classname" x:ClassModifier="NotPublic">  
    ...  
 </object>  
@@ -38,7 +38,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
   
 - For Microsoft Visual Basic .NET, the string to pass to designate <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> is `Friend`.  
   
-- For [!INCLUDE[TLA2#tla_cppcli](../../../includes/tla2sharptla-cppcli-md.md)], no targets exist that support compiling XAML; therefore, the value to pass is unspecified.  
+- For C++/CLI, no targets exist that support compiling XAML; therefore, the value to pass is unspecified.  
   
  You can also specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> (`public` in C#, `Public` in Visual Basic); however, specifying <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> is infrequently done because <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> is already the default behavior.  
   

@@ -13,14 +13,14 @@ ms.assetid: ad22b4b8-00af-4778-9cca-cb609ce1f8ff
 # Interpreting Network Tracing
 When network tracing is enabled, you can use tracing to capture calls your application makes to various <xref:System.Net> class members. The output from these calls may be similar to the following examples.  
   
-```  
+```output
 [588]   (4357)   Entering Socket#33574638::Send()  
-[588]   (4387)   Exiting Socket#33574638::Send()-> 61#61  
+[588]   (4387)   Exiting Socket#33574638::Send()-> 61#61
 ```  
   
  In the preceding example, [588] is the current thread's unique identifier. (4357) and (4387) are timestamps denoting the number of milliseconds that have elapsed since the application started. The data following the timestamp shows the application entering and exiting the method **Socket.Send**. The object executing the **Send** method has 33574638 as its unique identifier. The method exit trace includes the return value (61 in the preceding example).  
   
- Network traces can capture network traffic that is sent from or received by your application using application-level protocols such as Hypertext Transfer Protocol (HTTP). This data can be captured as text and, optionally, hexadecimal data. Hexadecimal data is available when you specify **includehex** as the value of the **tracemode** attribute. (For detailed information about this attribute, see [How to: Configure Network Tracing](../../../docs/framework/network-programming/how-to-configure-network-tracing.md).) The following example trace was generated using **includehex**.  
+ Network traces can capture network traffic that is sent from or received by your application using application-level protocols such as Hypertext Transfer Protocol (HTTP). This data can be captured as text and, optionally, hexadecimal data. Hexadecimal data is available when you specify **includehex** as the value of the **tracemode** attribute. (For detailed information about this attribute, see [How to: Configure Network Tracing](how-to-configure-network-tracing.md).) The following example trace was generated using **includehex**.  
   
  `[1692]   (1142)   00000000 : 47 45 54 20 2F 77 70 61-64 2E 64 61 74 20 48 54 : GET /wpad.dat HT`  
   
@@ -40,6 +40,6 @@ When network tracing is enabled, you can use tracing to capture calls your appli
   
 ## See also
 
-- [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)
-- [How to: Configure Network Tracing](../../../docs/framework/network-programming/how-to-configure-network-tracing.md)
-- [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)
+- [Enabling Network Tracing](enabling-network-tracing.md)
+- [How to: Configure Network Tracing](how-to-configure-network-tracing.md)
+- [Network Tracing in the .NET Framework](network-tracing.md)

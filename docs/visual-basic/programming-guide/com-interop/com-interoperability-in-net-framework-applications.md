@@ -21,6 +21,6 @@ The links on this page provide details on the interactions between COM and .NET 
 |---------|---------|
 | [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md) | Provides links to topics covering COM interoperability in Visual Basic, including COM objects, ActiveX controls, Win32 DLLs, managed objects, and inheritance of COM objects. |
 | [Interoperating with Unmanaged Code](../../../framework/interop/index.md) | Briefly describes some of the interaction issues between managed and unmanaged code, and provides links for further study. |
-| [COM Wrappers](../../../framework/interop/com-wrappers.md) | Discusses runtime callable wrappers, which allow managed code to call COM methods, and COM callable wrappers, which allow COM clients to call .NET object methods. |
+| [COM Wrappers](../../../standard/native-interop/com-wrappers.md) | Discusses runtime callable wrappers, which allow managed code to call COM methods, and COM callable wrappers, which allow COM clients to call .NET object methods. |
 | [Advanced COM Interoperability](../../../framework/interop/index.md) | Provides links to topics covering COM interoperability with respect to wrappers, exceptions, inheritance, threading, events, conversions, and marshaling. |
 | [Tlbimp.exe (Type Library Importer)](../../../framework/tools/tlbimp-exe-type-library-importer.md) | Discusses the tool you can use to convert the type definitions found within a COM type library into equivalent definitions in a common language runtime assembly. |

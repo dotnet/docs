@@ -14,10 +14,10 @@ ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
 # \<clear> Element for connectionManagement (Network Settings)
 Clears the connection management list.  
   
- \<configuration>  
-\<system.net>  
-\<connectionManagement>  
-\<clear>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**  
   
 ## Syntax  
   
@@ -38,7 +38,7 @@ Clears the connection management list.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[connectionManagement](../../../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
+|[connectionManagement](connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
   
 ## Remarks  
  The `clear` element clears all entries from the connection management list.  
@@ -65,4 +65,4 @@ Clears the connection management list.
 
 - <xref:System.Net.ServicePoint>
 - <xref:System.Net.ServicePointManager>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

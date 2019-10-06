@@ -23,7 +23,7 @@ Gets the string referenced by this ICorDebugStringValue.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetString (  
     [in] ULONG32    cchString,  
     [out] ULONG32   *pcchString,  

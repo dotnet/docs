@@ -21,7 +21,7 @@ Indicates whether the runtime has been started (that is, whether the [ICLRRuntim
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsStarted(  
         [out] BOOL     *pbStarted,  
         [out] DWORD    *pdwStartupFlags);  

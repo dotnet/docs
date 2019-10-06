@@ -24,7 +24,7 @@ Sets the policy for reading program database (PDB) files. The policy determines 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSymbolReadingPolicy (  
     [in] ESymbolReadingPolicy policy  
 );  

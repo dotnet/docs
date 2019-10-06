@@ -25,7 +25,7 @@ Gets a buffer of the appropriate size for the method at the specified relative v
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodBuffer (  
     [in]  ULONG       RVA,  
     [out] UCHAR       **lpBuffer  

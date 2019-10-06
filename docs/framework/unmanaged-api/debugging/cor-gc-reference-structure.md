@@ -22,7 +22,7 @@ Contains information about an object that is to be garbage-collected.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_GC_REFERENCE {  
     ICorDebugAppDomain *domain;   
     ICorDebugValue *location;  
@@ -37,11 +37,11 @@ typedef struct _COR_GC_REFERENCE {
 |------------|-----------------|  
 |`domain`|A pointer to the application domain to which the handle or object belongs. Its value may be `null`.|  
 |`location`|Either an ICorDebugValue or an ICorDebugReferenceValue interface that corresponds to the object to be garbage-collected.|  
-|`type`|A [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) enumeration value that indicates where the root came from. For more information, see the Remarks section.|  
+|`type`|A [CorGCReferenceType](corgcreferencetype-enumeration.md) enumeration value that indicates where the root came from. For more information, see the Remarks section.|  
 |`extraData`|Additional data about the object to be garbage-collected. This information depends on the source of the object, as indicated by the `type` field. For more information, see the Remarks section.|  
   
 ## Remarks  
- The `type` field is a [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) enumeration value that indicates where the reference came from. A particular `COR_GC_REFERENCE` value can reflect any of the following kinds of managed objects:  
+ The `type` field is a [CorGCReferenceType](corgcreferencetype-enumeration.md) enumeration value that indicates where the reference came from. A particular `COR_GC_REFERENCE` value can reflect any of the following kinds of managed objects:  
   
 - Objects from all managed stacks (`CorGCReferenceType.CorReferenceStack`). This includes live references in managed code, as well as objects created by the common language runtime.  
   
@@ -58,7 +58,7 @@ typedef struct _COR_GC_REFERENCE {
 - `Size`. If the `type` is `CorGCREferenceType.CorHandleStrongSizedByref`, this field is the last size of the object tree for which the garbage collector calculated the object roots. Note that this calculation is not necessarily up to date.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -68,5 +68,5 @@ typedef struct _COR_GC_REFERENCE {
   
 ## See also
 
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

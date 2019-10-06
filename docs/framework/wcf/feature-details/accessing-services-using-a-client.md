@@ -32,7 +32,7 @@ Client applications must create, configure, and use WCF client or channel object
  Open clients explicitly or implicitly by calling the first operation.  
   
 > [!NOTE]
->  Trying to explicitly detect faulted sessionful channels is not typically useful, because when you are notified depends upon the session implementation. For example, because the <xref:System.ServiceModel.NetTcpBinding?displayProperty=nameWithType> (with the reliable session disabled) surfaces the session of the TCP connection, if you listen to the <xref:System.ServiceModel.ICommunicationObject.Faulted?displayProperty=nameWithType> event on the service or the client you are likely to be notified quickly in the event of a network failure. But reliable sessions (established by bindings in which the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType> is enabled) are designed to insulate services from small network failures. If the session can be reestablished within a reasonable period of time, the same binding—configured for reliable sessions—might not fault until the interruption continued for a longer period of time.  
+> Trying to explicitly detect faulted sessionful channels is not typically useful, because when you are notified depends upon the session implementation. For example, because the <xref:System.ServiceModel.NetTcpBinding?displayProperty=nameWithType> (with the reliable session disabled) surfaces the session of the TCP connection, if you listen to the <xref:System.ServiceModel.ICommunicationObject.Faulted?displayProperty=nameWithType> event on the service or the client you are likely to be notified quickly in the event of a network failure. But reliable sessions (established by bindings in which the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType> is enabled) are designed to insulate services from small network failures. If the session can be reestablished within a reasonable period of time, the same binding—configured for reliable sessions—might not fault until the interruption continued for a longer period of time.  
   
  Most of the system-provided bindings (which expose channels to the application layer) use sessions by default, but the <xref:System.ServiceModel.BasicHttpBinding?displayProperty=nameWithType> does not. For more information, see [Using Sessions](../../../../docs/framework/wcf/using-sessions.md).  
   
@@ -45,7 +45,7 @@ Client applications must create, configure, and use WCF client or channel object
  Handling exceptions in client applications is straightforward. If a channel is opened, used, and closed inside a try block, then the conversation has succeeded, unless an exception is thrown. Typically, if an exception is thrown the conversation is aborted.  
   
 > [!NOTE]
->  Use of the `using` statement (`Using` in Visual Basic) is not recommended. This is because the end of the `using` statement can cause exceptions that can mask other exceptions you may need to know about. For more information, see [Use Close and Abort to release WCF client resources](../../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).  
+> Use of the `using` statement (`Using` in Visual Basic) is not recommended. This is because the end of the `using` statement can cause exceptions that can mask other exceptions you may need to know about. For more information, see [Use Close and Abort to release WCF client resources](../../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).  
   
  The following code example shows the recommended client pattern using a try/catch block and not the `using` statement.  
   
@@ -53,7 +53,7 @@ Client applications must create, configure, and use WCF client or channel object
  [!code-vb[FaultContractAttribute#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]  
   
 > [!NOTE]
->  Checking the value of the <xref:System.ServiceModel.ICommunicationObject.State%2A?displayProperty=nameWithType> property is a race condition and is not recommended to determine whether to reuse or close a channel.  
+> Checking the value of the <xref:System.ServiceModel.ICommunicationObject.State%2A?displayProperty=nameWithType> property is a race condition and is not recommended to determine whether to reuse or close a channel.  
   
  Datagram channels never fault even if exceptions occur when they are closed. In addition, non-duplex clients that fail to authenticate using a secure conversation typically throw a <xref:System.ServiceModel.Security.MessageSecurityException?displayProperty=nameWithType>. However if the duplex client using a secure conversation fails to authenticate, the client receives a <xref:System.TimeoutException?displayProperty=nameWithType> instead.  
   

@@ -22,7 +22,7 @@ Specifies how much data to pass back with a stack snapshot in each call to the p
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _COR_PRF_SNAPSHOT_INFO {  
     COR_PRF_SNAPSHOT_DEFAULT = 0x0,  
     COR_PRF_SNAPSHOT_REGISTER_CONTEXT = 0x1,  

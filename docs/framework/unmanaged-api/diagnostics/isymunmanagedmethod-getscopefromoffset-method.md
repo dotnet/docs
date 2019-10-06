@@ -23,7 +23,7 @@ Gets the most enclosing lexical scope within this method that encloses the given
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetScopeFromOffset(  
     [in]  ULONG32 offset,  
     [out, retval] ISymUnmanagedScope**  pRetVal);  

@@ -25,7 +25,7 @@ Creates an [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icorde
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDebuggingInterfaceFromVersion (  
     [in]  int      iDebuggerVersion,   
     [in]  LPCWSTR  szDebuggeeVersion,   

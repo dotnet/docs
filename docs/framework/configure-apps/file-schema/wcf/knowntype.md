@@ -4,13 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: ee2b7be3-7148-4a3a-b861-48e7330615e5
 ---
 # \<knownType>
-Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. The element specifies a "known type" that is returned by a field or property of a "declared type." For more information, see [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
+Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. The element specifies a "known type" that is returned by a field or property of a "declared type." For more information, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md).  
   
- \<system.runtime.serialization>  
-\<dataContractSerializer>  
-\<declaredTypes> Element  
-\<add> of \<declaredTypes>  
-\<knownType> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.serialization>**](system-runtime-serialization.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<dataContractSerializer>**](datacontractserializer.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<declaredTypes>**](declaredtypes.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-of-declaredtypes-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<knownType>**  
   
 ## Syntax  
   
@@ -37,18 +38,18 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<parameter>](../../../../../docs/framework/configure-apps/file-schema/wcf/parameter.md)|Specifies a parameter index when the declared type is a generic type.|  
+|[\<parameter>](parameter.md)|Specifies a parameter index when the declared type is a generic type.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)|Adds a declared type to the collection of declared types.|  
+|[\<add>](add-of-declaredtypes-element.md)|Adds a declared type to the collection of declared types.|  
   
 ## Remarks  
- For more information about known types, see [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
+ For more information about known types, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
- See the [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) for an example of using this element.  
+ See the [\<dataContractSerializer>](datacontractserializer-element.md) for an example of using this element.  
   
 ## Example  
   
@@ -66,6 +67,6 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
 ## See also
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
-- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
-- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)
-- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)
+- [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)
+- [\<dataContractSerializer>](datacontractserializer-element.md)
+- [\<add>](add-of-declaredtypes-element.md)

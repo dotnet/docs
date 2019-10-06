@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: b54f491d-196b-4279-876c-76b83ec0442c
 ---
 # Transport Security with Basic Authentication
-The following illustration shows a Windows Communication Foundation (WCF) service and client. The server needs a valid X.509 certificate that can be used for Secure Sockets Layer (SSL), and the clients must trust the server’s certificate. Further, the Web service already has an SSL implementation that can be used. For more information about enabling basic authentication on Internet Information Services (IIS), see <https://go.microsoft.com/fwlink/?LinkId=83822>.  
+The following illustration shows a Windows Communication Foundation (WCF) service and client. The server needs a valid X.509 certificate that can be used for Secure Sockets Layer (SSL), and the clients must trust the server’s certificate. Further, the Web service already has an SSL implementation that can be used. For more information about enabling basic authentication on Internet Information Services (IIS), see <https://docs.microsoft.com/iis/configuration/system.webserver/security/authentication/basicauthentication>.  
   
  ![Screenshot that shows transport security with basic authentication.](./media/transport-security-with-basic-authentication/transport-security-basic-authentication.gif)  
   
@@ -69,7 +69,7 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
  The following code shows the client code that includes the user name and password. Note that the user must provide a valid Windows user name and password. The code to return the user name and password is not shown here. Use a dialog box or other interface to query the user for the information.  
   
 > [!NOTE]
->  User name and password can only be set using code.  
+> User name and password can only be set using code.  
   
  [!code-csharp[C_SecurityScenarios#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#2)]
  [!code-vb[C_SecurityScenarios#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#2)]  
@@ -78,7 +78,7 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
  The following code shows the client configuration.  
   
 > [!NOTE]
->  You cannot use configuration to set the user name and password. The configuration shown here must be augmented using code to set the user name and password.  
+> You cannot use configuration to set the user name and password. The configuration shown here must be augmented using code to set the user name and password.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

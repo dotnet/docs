@@ -18,7 +18,7 @@ In addition to the basic <xref:System.DateTime> structure, .NET provides the fol
 
 * <xref:System.TimeZone>
 
-  Use this class to work with the system's local time zone and the Coordinated Universal Time (UTC) zone.The functionality of the <xref:System.TimeZone> class is largely superseded by the <xref:System.TimeZoneInfo> class.
+  Use this class to work with the system's local time zone and the Coordinated Universal Time (UTC) zone. The functionality of the <xref:System.TimeZone> class is largely superseded by the <xref:System.TimeZoneInfo> class.
 
 * <xref:System.TimeZoneInfo>
 

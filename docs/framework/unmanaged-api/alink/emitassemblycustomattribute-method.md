@@ -23,7 +23,7 @@ Call to set assembly-level custom attributes.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmitAssemblyCustomAttribute(  
     mdAssembly   AssemblyID,  
     mdToken      FileToken,  
@@ -65,6 +65,6 @@ HRESULT EmitAssemblyCustomAttribute(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

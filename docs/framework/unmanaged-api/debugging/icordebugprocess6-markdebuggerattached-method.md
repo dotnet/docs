@@ -10,7 +10,7 @@ Changes the internal state of the debugee so that the <xref:System.Diagnostics.D
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MarkDebuggerAttached(  
     BOOL fIsAttached  
 );  
@@ -32,7 +32,7 @@ HRESULT MarkDebuggerAttached(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

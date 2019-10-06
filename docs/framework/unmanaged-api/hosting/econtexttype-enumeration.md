@@ -22,7 +22,7 @@ Describes the security context of the currently executing thread.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eCurrentContext    = 0x00,  
     eRestrictedContext = 0x01  

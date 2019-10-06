@@ -35,11 +35,11 @@ The following operators perform arithmetic operations with numeric types:
 - Unary [`++` (increment)](#increment-operator-), [`--` (decrement)](#decrement-operator---), [`+` (plus)](#unary-plus-and-minus-operators), and [`-` (minus)](#unary-plus-and-minus-operators) operators
 - Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators
 
-Those operators support all [integral](../keywords/integral-types-table.md) and [floating-point](../keywords/floating-point-types-table.md) numeric types.
+Those operators support all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
 
 ## Increment operator ++
 
-The unary increment operator `++` increments its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../../csharp/programming-guide/indexers/index.md) access.
+The unary increment operator `++` increments its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../programming-guide/indexers/index.md) access.
 
 The increment operator is supported in two forms: the postfix increment operator, `x++`, and the prefix increment operator, `++x`.
 
@@ -57,7 +57,7 @@ The result of `++x` is the value of `x` *after* the operation, as the following 
 
 ## Decrement operator --
 
-The unary decrement operator `--` decrements its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../../csharp/programming-guide/indexers/index.md) access.
+The unary decrement operator `--` decrements its operand by 1. The operand must be a variable, a [property](../../programming-guide/classes-and-structs/properties.md) access, or an [indexer](../../programming-guide/indexers/index.md) access.
 
 The decrement operator is supported in two forms: the postfix decrement operator, `x--`, and the prefix decrement operator, `--x`.
 
@@ -79,7 +79,7 @@ The unary `+` operator returns the value of its operand. The unary `-` operator 
 
 [!code-csharp-interactive[unary plus and minus](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#UnaryPlusAndMinus)]
 
-The unary `-` operator doesn't support the [ulong](../keywords/ulong.md) type.
+The unary `-` operator doesn't support the [ulong](../builtin-types/integral-numeric-types.md) type.
 
 ## Multiplication operator *
 
@@ -91,7 +91,7 @@ The unary `*` operator is the [pointer indirection operator](pointer-related-ope
 
 ## Division operator /
 
-The division operator `/` divides its first operand by its second operand.
+The division operator `/` divides its left-hand operand by its right-hand operand.
 
 ### Integer division
 
@@ -113,11 +113,11 @@ If one of the operands is `decimal`, another operand can be neither `float` nor 
 
 ## Remainder operator %
 
-The remainder operator `%` computes the remainder after dividing its first operand by its second operand.
+The remainder operator `%` computes the remainder after dividing its left-hand operand by its right-hand operand.
 
 ### Integer remainder
   
-For the operands of integer types, the result of `a % b` is the value produced by `a - (a / b) * b`. The sign of the non-zero remainder is the same as that of the first operand, as the following example shows:
+For the operands of integer types, the result of `a % b` is the value produced by `a - (a / b) * b`. The sign of the non-zero remainder is the same as that of the left-hand operand, as the following example shows:
 
 [!code-csharp-interactive[integer remainder](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#IntegerRemainder)]
 
@@ -151,7 +151,7 @@ You also can use the `+` operator for string concatenation and delegate combinat
 
 ## Subtraction operator -
 
-The subtraction operator `-` subtracts its second operand from its first operand:
+The subtraction operator `-` subtracts its right-hand operand from its left-hand operand:
 
 [!code-csharp-interactive[subtraction operator](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#Subtraction)]
 
@@ -237,7 +237,7 @@ For more information, see remarks at [System.Double](/dotnet/api/system.double#r
 
 ## Operator overloadability
 
-A user-defined type can [overload](../keywords/operator.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
+A user-defined type can [overload](operator-overloading.md) the unary (`++`, `--`, `+`, and `-`) and binary (`*`, `/`, `%`, `+`, and `-`) arithmetic operators. When a binary operator is overloaded, the corresponding compound assignment operator is also implicitly overloaded. A user-defined type cannot explicitly overload a compound assignment operator.
 
 ## C# language specification
 

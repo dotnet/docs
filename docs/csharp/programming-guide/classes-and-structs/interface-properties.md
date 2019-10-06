@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 6503e9ed-33d7-44ec-b4c1-cc16c084b795
 ---
 # Interface Properties (C# Programming Guide)
-Properties can be declared on an [interface](../../../csharp/language-reference/keywords/interface.md). The following is an example of an interface property accessor:  
+Properties can be declared on an [interface](../../language-reference/keywords/interface.md). The following is an example of an interface property accessor:  
   
  [!code-csharp[csProgGuideProperties#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#14)]  
   
@@ -21,7 +21,7 @@ Properties can be declared on an [interface](../../../csharp/language-reference/
   
  [!code-csharp[csProgGuideProperties#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#16)]  
   
- This is called [Explicit Interface Implementation](../../../csharp/programming-guide/interfaces/explicit-interface-implementation.md). For example, if the class `Employee` is implementing two interfaces `ICitizen` and `IEmployee` and both interfaces have the `Name` property, the explicit interface member implementation will be necessary. That is, the following property declaration:  
+ This is called [Explicit Interface Implementation](../interfaces/explicit-interface-implementation.md). For example, if the class `Employee` is implementing two interfaces `ICitizen` and `IEmployee` and both interfaces have the `Name` property, the explicit interface member implementation will be necessary. That is, the following property declaration:  
   
  [!code-csharp[csProgGuideProperties#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#16)]  
   
@@ -47,9 +47,9 @@ Properties can be declared on an [interface](../../../csharp/language-reference/
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
-- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)
-- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
+- [C# Programming Guide](../index.md)
+- [Properties](./properties.md)
+- [Using Properties](./using-properties.md)
+- [Comparison Between Properties and Indexers](../indexers/comparison-between-properties-and-indexers.md)
+- [Indexers](../indexers/index.md)
+- [Interfaces](../interfaces/index.md)

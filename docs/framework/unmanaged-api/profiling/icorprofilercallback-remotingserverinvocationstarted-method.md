@@ -23,7 +23,7 @@ Notifies the profiler that the process is invoking a method in response to a rem
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingServerInvocationStarted();  
 ```  
   

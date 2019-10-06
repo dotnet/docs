@@ -23,7 +23,7 @@ Gets an interface pointer of type <xref:System.Security.Principal.IIdentity?disp
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateEvidence (  
     [out] IUnknown** pEvidence  
 );  

@@ -23,7 +23,7 @@ Gets a value that indicates whether the current task, which is being switched ou
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NeedsPriorityScheduling (  
     [out] BOOL *pbNeedsPriorityScheduling  
 );  

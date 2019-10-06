@@ -23,7 +23,7 @@ Gets a metadata token for a type that is defined in the specified scope, which i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineTypeRefByName (   
     [in]  mdToken     tkResolutionScope,   
     [in]  LPCWSTR     szName,   

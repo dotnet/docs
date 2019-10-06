@@ -17,7 +17,7 @@ Performs short-circuiting inclusive logical disjunction on two expressions.
   
 ## Syntax  
   
-```  
+```vb
 result = expression1 OrElse expression2  
 ```  
   
@@ -43,7 +43,8 @@ result = expression1 OrElse expression2
 |`False`|`False`|`False`|  
   
 ## Data Types  
- The `OrElse` operator is defined only for the [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md). Visual Basic converts each operand as necessary to `Boolean` and performs the operation entirely in `Boolean`. If you assign the result to a numeric type, Visual Basic converts it from `Boolean` to that type. This could produce unexpected behavior. For example, `5 OrElse 12` results in `–1` when converted to `Integer`.  
+ The `OrElse` operator is defined only for the [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md). Visual Basic converts each operand as necessary to `Boolean` before evaluating the expression. If you assign the result to a numeric type, Visual Basic converts it from `Boolean` to that type such that `False` becomes `0` and `True` becomes `-1`.
+For more information, see [Boolean Type Conversions](../data-types/boolean-data-type.md#type-conversions).
   
 ## Overloading  
  The [Or Operator](../../../visual-basic/language-reference/operators/or-operator.md) and the [IsTrue Operator](../../../visual-basic/language-reference/operators/istrue-operator.md) can be *overloaded*, which means that a class or structure can redefine their behavior when an operand has the type of that class or structure. Overloading the `Or` and `IsTrue` operators affects the behavior of the `OrElse` operator. If your code uses `OrElse` on a class or structure that overloads `Or` and `IsTrue`, be sure you understand their redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  

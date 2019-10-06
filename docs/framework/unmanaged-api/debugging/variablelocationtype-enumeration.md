@@ -22,7 +22,7 @@ Indicates the native location type of a variable.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum VariableLocationType  
 {  
     VLT_REGISTER,               

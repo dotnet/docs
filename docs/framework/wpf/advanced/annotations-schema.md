@@ -12,9 +12,9 @@ ms.assetid: a893442b-e220-4603-bf6a-b01fefcb4b37
 
 This topic describes the XML schema definition (XSD) used by the Microsoft Annotations Framework to save and retrieve user annotation data.
 
-The [!INCLUDE[TLA2#tla_caf](../../../../includes/tla2sharptla-caf-md.md)] serializes annotation data from an internal representation to an XML format.  The XML format used for this conversion is described by the [!INCLUDE[TLA2#tla_caf](../../../../includes/tla2sharptla-caf-md.md)] XSD Schema.  The schema defines the implementation-independent XML format that can be used to exchange annotation data between applications.
+The Annotations Framework serializes annotation data from an internal representation to an XML format.  The XML format used for this conversion is described by the Annotations Framework XSD Schema.  The schema defines the implementation-independent XML format that can be used to exchange annotation data between applications.
 
-The [!INCLUDE[TLA2#tla_caf](../../../../includes/tla2sharptla-caf-md.md)] XML schema definition consists of two subschemas
+The Annotations Framework XML schema definition consists of two subschemas
 
 - The Annotations XML Core Schema (Core Schema).
 

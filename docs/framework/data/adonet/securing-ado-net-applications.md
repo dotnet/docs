@@ -11,29 +11,29 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  Writing secure code does not guard against self-inflicted security holes when working with unmanaged resources such as databases. Most server databases, such as SQL Server, have their own security systems, which enhance security when implemented correctly. However, even a data source with a robust security system can be victimized in an attack if it is not configured appropriately.  
   
 ## In This Section  
- [Security Overview](../../../../docs/framework/data/adonet/security-overview.md)  
+ [Security Overview](security-overview.md)  
  Provides recommendations for designing secure ADO.NET applications.  
   
- [Secure Data Access](../../../../docs/framework/data/adonet/secure-data-access.md)  
+ [Secure Data Access](secure-data-access.md)  
  Describes how to work with data from a secured data source.  
   
- [Secure Client Applications](../../../../docs/framework/data/adonet/secure-client-applications.md)  
+ [Secure Client Applications](secure-client-applications.md)  
  Describes security considerations for client applications.  
   
- [Code Access Security and ADO.NET](../../../../docs/framework/data/adonet/code-access-security.md)  
+ [Code Access Security and ADO.NET](code-access-security.md)  
  Describes how CAS can help protect ADO.NET code. Also discusses how to work with partial trust.  
   
- [Privacy and Data Security](../../../../docs/framework/data/adonet/privacy-and-data-security.md)  
+ [Privacy and Data Security](privacy-and-data-security.md)  
  Describes encryption options for ADO.NET applications.  
   
 ## Related Sections  
- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)  
+ [SQL Server Security](./sql/sql-server-security.md)  
  Describes SQL Server security features from a developer's perspective.  
   
- [Security Considerations](../../../../docs/framework/data/adonet/ef/security-considerations.md)  
+ [Security Considerations](./ef/security-considerations.md)  
  Describes security for Entity Framework applications.  
   
- [Security](../../../../docs/standard/security/index.md)  
+ [Security](../../../standard/security/index.md)  
  Contains links to topics describing all aspects of security in .NET.  
   
  [Security Tools](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/7w3fd0wb(v=vs.90))  
@@ -47,5 +47,5 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
   
 ## See also
 
-- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET](index.md)
+- [ADO.NET Overview](ado-net-overview.md)

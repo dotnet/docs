@@ -154,7 +154,7 @@ Press <ENTER> to terminate client.
 
 ### To set up, build, and run the sample
 
-1. Ensure that [!INCLUDE[iisver](../../../../includes/iisver-md.md)] is installed. [!INCLUDE[iisver](../../../../includes/iisver-md.md)] is required for WAS activation.
+1. Ensure that IIS 7.0 is installed. IIS 7.0 is required for WAS activation.
 
 2. Ensure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 

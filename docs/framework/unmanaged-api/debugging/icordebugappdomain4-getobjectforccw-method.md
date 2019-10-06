@@ -10,7 +10,7 @@ Gets a managed object from a COM callable wrapper (CCW) pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectForCCW(  
    [in]CORDB_ADDRESS ccwPointer,   
    [out]ICorDebugValue **ppManagedObject  

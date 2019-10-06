@@ -19,7 +19,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModuleInMemorySymbolsUpdated(  
      ModuleID moduleId  
 );  
@@ -33,7 +33,7 @@ HRESULT ModuleInMemorySymbolsUpdated(
  This callback is controlled by setting the [COR_PRF_HIGH_IN_MEMORY_SYMBOLS_UPDATED](../../../../docs/framework/unmanaged-api/profiling/cor-prf-high-monitor-enumeration.md) event mask flag when calling the [ICorProfilerCallback5::SetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-seteventmask2-method.md) method.  
   
 > [!NOTE]
->  This event is not currently raised for symbols implicitly created or modified via <xref:System.Reflection.Emit> APIs.  
+> This event is not currently raised for symbols implicitly created or modified via <xref:System.Reflection.Emit> APIs.  
   
  Even when symbols are provided up front in a call to one of the overloads of the managed <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> methods that includes a `rawSymbolStore` argument to specify the symbols for the assembly, the runtime may not actually associate the symbolic data with the module until after the [ModuleLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md) callback has occurred. This event provides a later opportunity to collect symbols for such modules.  
   

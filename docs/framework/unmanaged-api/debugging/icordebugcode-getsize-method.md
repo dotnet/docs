@@ -19,27 +19,29 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ICorDebugCode::GetSize Method
-Gets the size, in bytes, of the binary code represented by this "ICorDebugCode".  
-  
-## Syntax  
-  
-```  
-HRESULT GetSize (  
-    [out] ULONG32    *pcBytes  
-);  
-```  
-  
-## Parameters  
+
+Gets the size, in bytes, of the binary code represented by this "ICorDebugCode".
+
+## Syntax
+
+```cpp
+HRESULT GetSize (
+    [out] ULONG32    *pcBytes
+);
+```
+
+## Parameters
+
  `pcBytes`  
- [out] A pointer to the size, in bytes, of the binary code that this `ICorDebugCode` object represents.  
-  
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** CorDebug.idl, CorDebug.h  
-  
- **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
-## See also
+ [out] A pointer to the size, in bytes, of the binary code that this `ICorDebugCode` object represents.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** CorDebug.idl, CorDebug.h
+
+ **Library:** CorGuids.lib
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ 

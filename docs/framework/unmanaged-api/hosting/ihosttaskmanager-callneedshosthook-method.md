@@ -23,7 +23,7 @@ Enables the host to specify whether the common language runtime (CLR) can inline
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CallNeedsHostHook (  
     [in]  SIZE_T target,   
     [out] BOOL   *pbCallNeedsHostHook  

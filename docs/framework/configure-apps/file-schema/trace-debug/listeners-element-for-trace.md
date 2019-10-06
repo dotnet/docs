@@ -11,10 +11,10 @@ ms.assetid: 1394c2c3-6304-46db-87c1-8e8b16f5ad5b
 # \<listeners> Element for \<trace>
 Specifies a listener that collects, stores, and routes messages. Listeners direct the tracing output to an appropriate target.  
   
- \<configuration> Element  
-\<system.diagnostics> Element  
-\<trace> Element  
-\<listeners> Element for \<trace>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<trace>**](trace-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<listeners>**  
   
 ## Syntax  
   
@@ -36,9 +36,9 @@ Specifies a listener that collects, stores, and routes messages. Listeners direc
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-trace.md)|Adds a listener to the `Listeners` collection.|  
-|[\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-trace.md)|Clears the `Listeners` collection for trace.|  
-|[\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-trace.md)|Removes a listener from the `Listeners` collection.|  
+|[\<add>](add-element-for-listeners-for-trace.md)|Adds a listener to the `Listeners` collection.|  
+|[\<clear>](clear-element-for-listeners-for-trace.md)|Clears the `Listeners` collection for trace.|  
+|[\<remove>](remove-element-for-listeners-for-trace.md)|Removes a listener from the `Listeners` collection.|  
   
 ### Parent Elements  
   
@@ -81,4 +81,4 @@ Specifies a listener that collects, stores, and routes messages. Listeners direc
 ## See also
 
 - <xref:System.Diagnostics.TraceListener>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Trace and Debug Settings Schema](index.md)

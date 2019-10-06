@@ -25,7 +25,7 @@ One of the most basic projects in Visual Studio is the Console Application.  Her
 
 Let's get started by writing some code first.  Make sure that the `Program.fs` file is open, and then replace its contents with the following:
 
-[!code-fsharp[HelloSquare](../../../samples/snippets/fsharp/getting-started/hello-square.fs)]
+[!code-fsharp[HelloSquare](~/samples/snippets/fsharp/getting-started/hello-square.fs)]
 
 In the previous code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../language-reference/type-inference.md), the type of `x` doesn't need to be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
 
@@ -45,7 +45,7 @@ You can run the code and see results by pressing **Ctrl**+**F5**.  This runs the
 
 You should now see the following printed to the console window that Visual Studio popped up:
 
-```
+```console
 12 squared is 144!
 ```
 

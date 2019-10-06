@@ -25,7 +25,7 @@ Gets version and directory information about the common language runtime (CLR) r
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRequestedRuntimeInfo (  
     [in]  LPCWSTR  pExe,   
     [in]  LPCWSTR  pwszVersion,   

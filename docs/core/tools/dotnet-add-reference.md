@@ -1,7 +1,7 @@
 ---
 title: dotnet-add reference command
 description: The dotnet add reference command provides a convenient option to add project to project references.
-ms.date: 04/24/2019
+ms.date: 06/26/2019
 ---
 # dotnet-add reference
 
@@ -17,11 +17,11 @@ ms.date: 04/24/2019
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help]`
+`dotnet add [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help] [--interactive]`
 
 ## Description
 
-The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the [`<ProjectReference>`](/visualstudio/msbuild/common-msbuild-project-items) elements are added to the project file.
+The `dotnet add reference` command provides a convenient option to add project references to a project. After running the command, the `<ProjectReference>` elements are added to the project file.
 
 ```xml
 <ItemGroup>
@@ -51,22 +51,26 @@ The `dotnet add reference` command provides a convenient option to add project r
 
   Adds project references only when targeting a specific [framework](../../standard/frameworks.md).
 
+* **`--interactive`**
+
+  Allows the command to stop and wait for user input or action (for example, to complete authentication). Available since .NET Core 3.0 SDK.
+
 ## Examples
 
 * Add a project reference:
 
-  ```console
+  ```dotnetcli
   dotnet add app/app.csproj reference lib/lib.csproj
   ```
 
 * Add multiple project references to the project in the current directory:
 
-  ```console
+  ```dotnetcli
   dotnet add reference lib1/lib1.csproj lib2/lib2.csproj
   ```
 
 * Add multiple project references using a globbing pattern on Linux/Unix:
 
-  ```console
+  ```dotnetcli
   dotnet add app/app.csproj reference **/*.csproj
   ```

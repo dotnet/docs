@@ -6,8 +6,9 @@ ms.assetid: 4f8a7c4f-e735-4987-979a-b74fcdae2652
 # \<serviceHostingEnvironment>
 This element defines the type the service hosting environment instantiates for a particular transport. If this element is empty, the default type is used. This element can only be used at the application or machine level configuration files.  
   
- \<system.ServiceModel>  
-\<ServiceHostingEnvironment>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceHostingEnvironment>**  
   
 ## Syntax  
   
@@ -36,7 +37,7 @@ This element defines the type the service hosting environment instantiates for a
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|aspNetCompatibilityEnabled|A Boolean value indicating whether the ASP.NET compatibility mode has been turned on for the current application. The default is `false`.<br /><br /> When this attribute is set to `true`, requests to Windows Communication Foundation (WCF) services flow through the ASP.NET HTTP pipeline, and communication over non-HTTP protocols is prohibited. For more information, see [WCF Services and ASP.NET](../../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).|  
+|aspNetCompatibilityEnabled|A Boolean value indicating whether the ASP.NET compatibility mode has been turned on for the current application. The default is `false`.<br /><br /> When this attribute is set to `true`, requests to Windows Communication Foundation (WCF) services flow through the ASP.NET HTTP pipeline, and communication over non-HTTP protocols is prohibited. For more information, see [WCF Services and ASP.NET](../../../wcf/feature-details/wcf-services-and-aspnet.md).|  
 |minFreeMemoryPercentageToActivateService|An integer that specifies the minimum amount of free memory that should be available to the system, before a WCF service can be activated. **Caution:**  Specifying this attribute along with partial trust in the web.config file of a WCF service will result in a <xref:System.Security.SecurityException> when the service is run.|  
 |multipleSiteBindingsEnabled|A Boolean value that specifies whether multiple IIS bindings per site is enabled.<br /><br /> IIS consists of web sites, which are containers for virtual applications containing virtual directories. The application in a site can be accessed through one or more IIS binding. An IIS binding provides two pieces of information: a binding protocol and binding information. Binding protocol defines the scheme over which communication occurs, and binding information is the information used to access the site. An example of a binding protocol can be HTTP, whereas binding information can contain an IP address, Port, host header, etc.<br /><br /> IIS supports specifying multiple IIS bindings per site, which results in multiple base addresses per scheme. However, a Windows Communication Foundation (WCF) service hosted under a site allows binding to only one baseAddress per scheme.<br /><br /> To enable multiple IIS bindings per site for a Windows Communication Foundation (WCF) service, set this attribute to `true`. Notice that multiple site binding is supported only for the HTTP protocol. The address of endpoints in the configuration file needs to be a complete URI.|  
   
@@ -44,9 +45,9 @@ This element defines the type the service hosting environment instantiates for a
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<baseAddressPrefixFilters>](../../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md)|A collection of configuration elements that specify prefix filters for the base addresses used by the service host.|  
-|[\<serviceActivations>](../../../../../docs/framework/configure-apps/file-schema/wcf/serviceactivations.md)|A configuration section that describes activation settings.|  
-|[\<transportConfigurationTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/transportconfigurationtypes.md)|A collection of configuration elements that identify the type of a particular transport.|  
+|[\<baseAddressPrefixFilters>](baseaddressprefixfilters.md)|A collection of configuration elements that specify prefix filters for the base addresses used by the service host.|  
+|[\<serviceActivations>](serviceactivations.md)|A configuration section that describes activation settings.|  
+|[\<transportConfigurationTypes>](transportconfigurationtypes.md)|A collection of configuration elements that identify the type of a particular transport.|  
   
 ### Parent Elements  
   
@@ -90,5 +91,5 @@ This element defines the type the service hosting environment instantiates for a
 
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
-- [WCF Services and ASP.NET](../../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)
+- [WCF Services and ASP.NET](../../../wcf/feature-details/wcf-services-and-aspnet.md)

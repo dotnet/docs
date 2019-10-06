@@ -10,7 +10,7 @@ Specifies a file that contains compiler options and source-code files to compile
   
 ## Syntax  
   
-```  
+```console  
 @response_file  
 ```  
   
@@ -23,7 +23,7 @@ Specifies a file that contains compiler options and source-code files to compile
   
  To specify more than one response file in a compilation, specify multiple response-file options, such as the following.  
   
-```  
+```console  
 @file1.rsp @file2.rsp  
 ```  
   
@@ -34,7 +34,7 @@ Specifies a file that contains compiler options and source-code files to compile
  Visual Basic provides the Vbc.rsp file, which is located in the same directory as the Vbc.exe file. The Vbc.rsp file is included by default unless the `-noconfig` option is used. For more information, see [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md).  
   
 > [!NOTE]
->  The `@` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `@` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following lines are from a sample response file.  

@@ -20,7 +20,7 @@ Performs logical negation on a `Boolean` expression, or bitwise negation on a nu
   
 ## Syntax  
   
-```  
+```vb  
 result = Not expression  
 ```  
   
@@ -47,7 +47,7 @@ result = Not expression
 |0|1|  
   
 > [!NOTE]
->  Since the logical and bitwise operators have a lower precedence than other arithmetic and relational operators, any bitwise operations should be enclosed in parentheses to ensure accurate execution.  
+> Since the logical and bitwise operators have a lower precedence than other arithmetic and relational operators, any bitwise operations should be enclosed in parentheses to ensure accurate execution.  
   
 ## Data Types  
  For a Boolean negation, the data type of the result is `Boolean`. For a bitwise negation, the result data type is the same as that of `expression`. However, if expression is `Decimal`, the result is `Long`.  

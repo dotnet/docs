@@ -46,4 +46,4 @@ This topic describes the language type, language vendor, and document type const
   
 ## See also
 
-- [Unmanaged API Reference](../../../docs/framework/unmanaged-api/index.md)
+- [Unmanaged API Reference](index.md)

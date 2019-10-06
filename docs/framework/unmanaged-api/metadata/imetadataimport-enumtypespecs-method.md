@@ -23,7 +23,7 @@ Enumerates TypeSpec tokens defined in the current metadata scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeSpecs (  
    [in, out] HCORENUM    *phEnum,  
    [out] mdTypeSpec      rTypeSpecs[],  

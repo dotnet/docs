@@ -23,7 +23,7 @@ Gets the address of the specified relative virtual address (RVA) static field.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRVAStaticAddress(  
     [in] ClassID classId,  
     [in] mdFieldDef fieldToken,  

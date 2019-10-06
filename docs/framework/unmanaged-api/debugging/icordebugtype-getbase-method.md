@@ -23,7 +23,7 @@ Gets an interface pointer to an ICorDebugType that represents the base type, if 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBase (  
     [out] ICorDebugType   **pBase  
 );  

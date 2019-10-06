@@ -46,7 +46,7 @@ WCF includes the following set of features. For more information, see [WCF Featu
 
 - **Data Contracts**
 
-     Because WCF is built using the .NET Framework, it also includes code-friendly methods of supplying the contracts you want to enforce. One of the universal types of contracts is the data contract. In essence, as you code your service using Visual C# or Visual Basic, the easiest way to handle data is by creating classes that represent a data entity with properties that belong to the data entity. WCF includes a comprehensive system for working with data in this easy manner. Once you have created the classes that represent data, your service automatically generates the metadata that allows clients to comply with the data types you have designed. For more information, see [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+     Because WCF is built using the .NET Framework, it also includes code-friendly methods of supplying the contracts you want to enforce. One of the universal types of contracts is the data contract. In essence, as you code your service using Visual C# or Visual Basic, the easiest way to handle data is by creating classes that represent a data entity with properties that belong to the data entity. WCF includes a comprehensive system for working with data in this easy manner. Once you have created the classes that represent data, your service automatically generates the metadata that allows clients to comply with the data types you have designed. For more information, see [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).
 
 - **Security**
 
@@ -66,7 +66,7 @@ WCF includes the following set of features. For more information, see [WCF Featu
 
 - **Transactions**
 
-     WCF also supports transactions using one of three transaction models: WS-AtomicTtransactions, the APIs in the <xref:System.Transactions> namespace, and Microsoft Distributed Transaction Coordinator. For more information about transaction support in WCF see [Transactions](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md).
+     WCF also supports transactions using one of three transaction models: WS-AtomicTransactions, the APIs in the <xref:System.Transactions> namespace, and Microsoft Distributed Transaction Coordinator. For more information about transaction support in WCF see [Transactions](../../../docs/framework/wcf/feature-details/transactions-in-wcf.md).
 
 - **AJAX and REST Support**
 
@@ -86,7 +86,7 @@ Microsoft BizTalk Server R2 also utilizes WCF as a communication technology. Biz
 
 Microsoft Silverlight is a platform for creating interoperable, rich Web applications that allow developers to create media-intensive Web sites (such as streaming video). Beginning with version 2, Silverlight has incorporated WCF as a communication technology to connect Silverlight applications to WCF endpoints.
 
-The [!INCLUDE[dublin](../../../includes/dublin-md.md)] application server is specifically built for deploying and managing applications that use WCF for communication. The [!INCLUDE[dublin2](../../../includes/dublin2-md.md)] includes rich tooling and configuration options specifically designed for WCF-enabled applications.
+The hosting features of Windows Server AppFabric application server are specifically designed for deploying and managing applications that use WCF for communication. The hosting features include rich tooling and configuration options specifically designed for WCF-enabled applications.
 
 ## See also
 

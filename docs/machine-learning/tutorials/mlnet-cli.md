@@ -1,5 +1,5 @@
 ---
-title: Auto generate a binary classifier using the ML.NET CLI 
+title: Analyze sentiment using the ML.NET CLI
 description: Automatically generate an ML model and related C# code from a sample dataset 
 author: cesardl
 ms.author: cesardl
@@ -9,20 +9,21 @@ ms.topic: tutorial
 #Customer intent: As a developer, I want to automatically generate an ML model and related C# code from my own data.
 ---
 
-# Auto generate a binary classifier using the CLI
+# Analyze sentiment using the ML.NET CLI
 
 Learn how to use ML.NET CLI to automatically generate an ML.NET model and underlying C# code. You provide your dataset and the machine learning task you want to implement, and the CLI uses the AutoML engine to create model generation and deployment source code, as well as the binary model.
 
 In this tutorial, you will do the following steps:
 > [!div class="checklist"]
-> * Prepare your data for the selected machine learning task
-> * Run the 'mlnet auto-train' command from the CLI
-> * Review the quality metric results
-> * Understand the generated C# code to use the model in your application
-> * Explore the generated C# code that was used to train the model
+>
+> - Prepare your data for the selected machine learning task
+> - Run the 'mlnet auto-train' command from the CLI
+> - Review the quality metric results
+> - Understand the generated C# code to use the model in your application
+> - Explore the generated C# code that was used to train the model
 
 > [!NOTE]
-> This topic refers to the ML.NET CLI tool, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+> This topic refers to the ML.NET CLI tool, which is currently in Preview, and material may be subject to change. For more information, visit the [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) page.
 
 The ML.NET CLI is part of ML.NET and its main goal is to "democratize" ML.NET for .NET developers when learning ML.NET so you don't need to code from scratch to get started.
 
@@ -90,7 +91,8 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     You will see output from the CLI, similar to:
 
-    <!-- markdownlint-disable MD023 -->
+    <!-- markdownlint-disable MD023 MD025 -->
+
     # [Windows](#tab/windows)
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/mlnet-auto-train-binary-classification-powershell.gif)
@@ -112,7 +114,7 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
     For additional metrics and more **detailed information about the metrics** such as Accuracy, AUC, AUCPR, F1-score used to evaluate the different models, you can read [Understanding ML.NET metrics](../resources/metrics.md)
 
     > [!NOTE]
-    >  You can try this very same dataset and specify a few minutes for `--max-exploration-time` (for instance three minutes so you specify 180 seconds) which will find a better "best model" for you with a different training pipeline configuration for this dataset (which is pretty small, 1000 rows). 
+    > You can try this very same dataset and specify a few minutes for `--max-exploration-time` (for instance three minutes so you specify 180 seconds) which will find a better "best model" for you with a different training pipeline configuration for this dataset (which is pretty small, 1000 rows). 
         
     In order to find a "best/good quality" model that is a "production-ready model" targeting larger datasets, you should make experiments with the CLI usually specifying much more exploration time depending on the size of the dataset. In fact, in many cases you might require multiple hours of exploration time especially if the dataset is large on rows and columns. 
 
@@ -198,7 +200,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
     Run the console app from the command-prompt by typing the following commands:
 
-     ```
+     ```bash
      > cd SampleBinaryClassification
      > cd SampleBinaryClassification.ConsoleApp
 
@@ -255,11 +257,12 @@ It is interesting to compare the chosen algorithm and pipeline configuration in 
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
-> * Prepare your data for the selected ML task (problem to solve)
-> * Run the 'mlnet auto-train' command in the CLI tool
-> * Review the quality metric results
-> * Understand the generated C# code to run the model (Code to use in your end-user app)
-> * Explore the generated C# code that was used to train the "best quality" model (Learning purposes)
+>
+> - Prepare your data for the selected ML task (problem to solve)
+> - Run the 'mlnet auto-train' command in the CLI tool
+> - Review the quality metric results
+> - Understand the generated C# code to run the model (Code to use in your end-user app)
+> - Explore the generated C# code that was used to train the "best quality" model (Learning purposes)
 
 > [!div class="nextstepaction"]
 > [Automate model training with the ML.NET CLI](../automate-training-with-cli.md)

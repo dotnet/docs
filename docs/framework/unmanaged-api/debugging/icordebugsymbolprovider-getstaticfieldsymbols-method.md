@@ -10,7 +10,7 @@ Gets the static field symbols that correspond to a typespec signature.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldSymbols(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
@@ -39,7 +39,7 @@ HRESULT GetStaticFieldSymbols(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

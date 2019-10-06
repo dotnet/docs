@@ -23,7 +23,7 @@ Gets the length, in bytes, of the embedded source.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceLength(  
     [out, retval]  ULONG32*  pRetVal);  
 ```  

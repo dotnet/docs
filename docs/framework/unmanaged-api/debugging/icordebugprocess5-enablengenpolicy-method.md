@@ -23,7 +23,7 @@ Sets a value that determines how an application loads native images while runnin
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableNGENPolicy(  
     [in] CorDebugNGENPolicy ePolicy  
 );  

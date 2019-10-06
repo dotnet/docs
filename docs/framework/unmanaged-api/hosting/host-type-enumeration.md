@@ -22,7 +22,7 @@ Contains values that specify the type of host that is launching an application.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     HOST_TYPE_DEFAULT     = 0x0,  
     HOST_TYPE_APPLAUNCH   = 0x1,  

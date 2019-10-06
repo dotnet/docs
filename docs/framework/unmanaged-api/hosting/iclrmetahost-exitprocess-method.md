@@ -23,7 +23,7 @@ Attempts to shut down all loaded runtimes gracefully and then terminates the pro
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExitProcess (  
     [in] INT32 iExitCode);  
 ```  

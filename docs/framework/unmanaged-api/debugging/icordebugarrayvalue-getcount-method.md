@@ -23,7 +23,7 @@ Gets the total number of elements in the array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (  
     [out] ULONG32 *pnCount  
 );  

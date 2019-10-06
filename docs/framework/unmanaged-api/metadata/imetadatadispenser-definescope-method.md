@@ -23,7 +23,7 @@ Creates a new area in memory in which you can create new metadata.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineScope (  
     [in]  REFCLSID    rclsid,  
     [in]  DWORD       dwCreateFlags,  

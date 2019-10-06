@@ -26,15 +26,15 @@ ms.author: "ronpet"
 - The type parameters of generic type definitions and generic method definitions are represented by instances of the <xref:System.Type> class.  
   
     > [!NOTE]
-    >  Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method topics. For example, see <xref:System.Type.IsAutoClass%2A> and <xref:System.Type.DeclaringType%2A>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition%2A>.  
+    > Many properties and methods of <xref:System.Type> have different behavior when a <xref:System.Type> object represents a generic type parameter. These differences are documented in the property and method topics. For example, see <xref:System.Type.IsAutoClass%2A> and <xref:System.Type.DeclaringType%2A>. In addition, some members are valid only when a <xref:System.Type> object represents a generic type parameter. For example, see <xref:System.Type.GetGenericTypeDefinition%2A>.  
   
 - If an instance of <xref:System.Type> represents a generic type, then it includes an array of types that represent the type parameters (for generic type definitions) or the type arguments (for constructed types). The same is true of an instance of the <xref:System.Reflection.MethodInfo> class that represents a generic method.  
   
  Reflection provides methods of <xref:System.Type> and <xref:System.Reflection.MethodInfo> that allow you to access the array of type parameters, and to determine whether an instance of <xref:System.Type> represents a type parameter or an actual type.  
   
- For example code demonstrating the methods discussed here, see [How to: Examine and Instantiate Generic Types with Reflection](../../../docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md).  
+ For example code demonstrating the methods discussed here, see [How to: Examine and Instantiate Generic Types with Reflection](how-to-examine-and-instantiate-generic-types-with-reflection.md).  
   
- The following discussion assumes familiarity with the terminology of generics, such as the difference between type parameters and arguments and open or closed constructed types. For more information, see [Generics](../../../docs/standard/generics/index.md).  
+ The following discussion assumes familiarity with the terminology of generics, such as the difference between type parameters and arguments and open or closed constructed types. For more information, see [Generics](../../standard/generics/index.md).  
   
  This overview consists of the following sections:  
   
@@ -125,10 +125,10 @@ generic<typename V, typename W> ref class D : B<int, V> {};
  The <xref:System.Type.GenericParameterAttributes%2A> property gets a <xref:System.Reflection.GenericParameterAttributes> value that indicates the variance (covariance or contravariance) and the special constraints of a type parameter.  
   
 #### Covariance and Contravariance  
- To determine whether a type parameter is covariant or contravariant, apply the <xref:System.Reflection.GenericParameterAttributes.VarianceMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, the type parameter is invariant. See [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md).  
+ To determine whether a type parameter is covariant or contravariant, apply the <xref:System.Reflection.GenericParameterAttributes.VarianceMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, the type parameter is invariant. See [Covariance and Contravariance](../../standard/generics/covariance-and-contravariance.md).  
   
 #### Special Constraints  
- To determine the special constraints of a type parameter, apply the <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, there are no special constraints. A type parameter can be constrained to be a reference type, to be a non-nullable value type, and to have a default constructor.  
+ To determine the special constraints of a type parameter, apply the <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, there are no special constraints. A type parameter can be constrained to be a reference type, to be a non-nullable value type, and to have a parameterless constructor.  
   
  [Back to top](#top)  
   
@@ -143,7 +143,7 @@ generic<typename V, typename W> ref class D : B<int, V> {};
   
 |Title|Description|  
 |-----------|-----------------|  
-|[How to: Examine and Instantiate Generic Types with Reflection](../../../docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md)|Shows how to use the properties and methods of <xref:System.Type> and <xref:System.Reflection.MethodInfo> to examine generic types.|  
-|[Generics](../../../docs/standard/generics/index.md)|Describes the generics feature and how it is supported in the .NET Framework.|  
-|[How to: Define a Generic Type with Reflection Emit](../../../docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md)|Shows how to use reflection emit to generate generic types in dynamic assemblies.|  
-|[Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)|Describes the <xref:System.Type> class and provides code examples that illustrate how to use <xref:System.Type> with various reflection classes to obtain information about constructors, methods, fields, properties, and events.|
+|[How to: Examine and Instantiate Generic Types with Reflection](how-to-examine-and-instantiate-generic-types-with-reflection.md)|Shows how to use the properties and methods of <xref:System.Type> and <xref:System.Reflection.MethodInfo> to examine generic types.|  
+|[Generics](../../standard/generics/index.md)|Describes the generics feature and how it is supported in the .NET Framework.|  
+|[How to: Define a Generic Type with Reflection Emit](how-to-define-a-generic-type-with-reflection-emit.md)|Shows how to use reflection emit to generate generic types in dynamic assemblies.|  
+|[Viewing Type Information](viewing-type-information.md)|Describes the <xref:System.Type> class and provides code examples that illustrate how to use <xref:System.Type> with various reflection classes to obtain information about constructors, methods, fields, properties, and events.|

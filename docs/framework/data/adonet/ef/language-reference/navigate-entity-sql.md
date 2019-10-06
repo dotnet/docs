@@ -34,7 +34,7 @@ If the cardinality of the to end is 1, the return value will be `Ref<T>`. If the
 
 ## Remarks
 
-Relationships are first-class constructs in the [!INCLUDE[adonet_edm](../../../../../../includes/adonet-edm-md.md)] (EDM). Relationships can be established between two or more entity types, and users can navigate over the relationship from one end (entity) to another. `from` and `to` are conditionally optional when there is no ambiguity in name resolution within the relationship.
+Relationships are first-class constructs in the Entity Data Model (EDM). Relationships can be established between two or more entity types, and users can navigate over the relationship from one end (entity) to another. `from` and `to` are conditionally optional when there is no ambiguity in name resolution within the relationship.
 
 NAVIGATE is valid in O and C space.
 
@@ -71,7 +71,7 @@ The instance-expression must be an entity/ref type.
 
 The following Entity SQL query uses the NAVIGATE operator to navigate over the relationship established between Address and SalesOrderHeader entity types. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:
 
-1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).
 
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:
 
@@ -79,5 +79,5 @@ The following Entity SQL query uses the NAVIGATE operator to navigate over the r
 
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [How to: Navigate Relationships with Navigate Operator](../../../../../../docs/framework/data/adonet/ef/language-reference/navigate-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [How to: Navigate Relationships with Navigate Operator](navigate-entity-sql.md)

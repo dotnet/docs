@@ -24,12 +24,12 @@ ms.assetid: 756c24c1-f591-40e8-a838-559761539b0b
 ## Remarks  
  The \<paramref> tag gives you a way to indicate that a word in the code comments, for example in a \<summary> or \<remarks> block refers to a parameter. The XML file can be processed to format this word in some distinct way, such as with a bold or italic font.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
  [!code-csharp[csProgGuideDocComments#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#7)]  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [C# Programming Guide](../index.md)
+- [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md)

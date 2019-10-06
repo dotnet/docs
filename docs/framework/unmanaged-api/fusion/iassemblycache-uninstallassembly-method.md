@@ -23,7 +23,7 @@ Uninstalls the specified assembly from the global assembly cache.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UninstallAssembly (  
     [in] DWORD dwFlags,  
     [in] LPCWSTR pszAssemblyName,  
@@ -40,7 +40,7 @@ HRESULT UninstallAssembly (
  [in] The name of the assembly to uninstall.  
   
  `pRefData`  
- [in] A [FUSION_INSTALL_REFERENCE](../../../../docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md) structure that contains the installation data for the assembly.  
+ [in] A [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) structure that contains the installation data for the assembly.  
   
  `pulDisposition`  
  [out, optional] One of the disposition values defined in Fusion.idl. Possible values include the following:  
@@ -58,7 +58,7 @@ HRESULT UninstallAssembly (
 - IASSEMBLYCACHE_UNINSTALL_DISPOSITION_REFERENCE_NOT_FOUND (6)  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -66,4 +66,4 @@ HRESULT UninstallAssembly (
   
 ## See also
 
-- [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
+- [IAssemblyCache Interface](iassemblycache-interface.md)

@@ -25,7 +25,7 @@ Loads the CLR into the current process and returns runtime interface pointers, s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInterface(  
 [in]  REFCLSID rclsid,  
 [in]  REFIID   riid,  

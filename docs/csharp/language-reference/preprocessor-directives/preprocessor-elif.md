@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
 ---
 # #elif (C# Reference)
-`#elif` lets you create a compound conditional directive. The `#elif` expression will be evaluated if neither the preceding [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If a `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:  
+`#elif` lets you create a compound conditional directive. The `#elif` expression will be evaluated if neither the preceding [#if](./preprocessor-if.md) nor any preceding, optional, `#elif` directive expressions evaluate to `true`. If a `#elif` expression evaluates to `true`, the compiler evaluates all the code between the `#elif` and the next conditional directive. For example:  
   
 ```csharp
 #define VC7  
@@ -32,12 +32,12 @@ ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
 #if  
 ```  
   
- Using `#elif` is simpler, because each `#if` requires a [#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md), whereas a `#elif` can be used without a matching `#endif`.  
+ Using `#elif` is simpler, because each `#if` requires a [#endif](./preprocessor-endif.md), whereas a `#elif` can be used without a matching `#endif`.  
   
- See [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) for an example of how to use `#elif`.  
+ See [#if](./preprocessor-if.md) for an example of how to use `#elif`.  
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Preprocessor Directives](./index.md)

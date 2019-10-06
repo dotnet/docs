@@ -23,7 +23,7 @@ Enumerates MemberDef tokens representing members of the specified type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMembers (   
    [in, out]  HCORENUM    *phEnum,   
    [in]  mdTypeDef   cl,   

@@ -23,7 +23,7 @@ Gets the register set for the active part of this chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisterSet (  
     [out] ICorDebugRegisterSet **ppRegisters  
 );  

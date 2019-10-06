@@ -23,7 +23,7 @@ Reports the layout of objects in the heap as a result of a non-compacting garbag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SurvivingReferences(  
     [in] ULONG  cSurvivingObjectIDRanges,  
     [in, size_is(cSurvivingObjectIDRanges)] ObjectID  
@@ -49,7 +49,7 @@ HRESULT SurvivingReferences(
 ## Remarks  
   
 > [!IMPORTANT]
->  This method reports sizes as `MAX_ULONG` for objects that are greater than 4 GB on 64-bit platforms. For objects that are larger than 4 GB, use the [ICorProfilerCallback4::SurvivingReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-survivingreferences2-method.md) method instead.  
+> This method reports sizes as `MAX_ULONG` for objects that are greater than 4 GB on 64-bit platforms. For objects that are larger than 4 GB, use the [ICorProfilerCallback4::SurvivingReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-survivingreferences2-method.md) method instead.  
   
  The elements of the `objectIDRangeStart` and `cObjectIDRangeLength` arrays should be interpreted as follows to determine whether an object survived the garbage collection. Assume that an `ObjectID` value (`ObjectID`) lies within the following range:  
   

@@ -22,7 +22,7 @@ Gets a value that indicates whether the specified assembly is managed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsFrameworkAssembly (  
     [in]  LPCWSTR pwzAssemblyReference,  
     [out] LPBOOL  pbIsFrameworkAssembly,  
@@ -52,8 +52,8 @@ HRESULT IsFrameworkAssembly (
  If the named assembly is not part of the .NET Framework, or if the `pwzAssemblyReference` parameter does not name an assembly, `pbIsFrameworkAssembly` will contain a Boolean value of `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
 ## See also
 
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

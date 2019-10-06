@@ -23,7 +23,7 @@ Gets the value of an argument or local variable that is stored in the specified 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalRegisterValue (  
     [in]  CorDebugRegister   reg,  
     [in]  ULONG              cbSigBlob,  

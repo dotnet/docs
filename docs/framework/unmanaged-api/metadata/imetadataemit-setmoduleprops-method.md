@@ -23,7 +23,7 @@ Updates references to a module defined by a prior call to [IMetaDataEmit::Define
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetModuleProps (   
     [in]  LPCWSTR     szName  
 );  

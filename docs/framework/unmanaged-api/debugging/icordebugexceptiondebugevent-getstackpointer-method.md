@@ -10,7 +10,7 @@ Gets the stack pointer for this exception debug event.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackPointer(  
    [out]CORDB_ADDRESS *pStackPointer  
 );  
@@ -31,7 +31,7 @@ HRESULT GetStackPointer(
 |[MANAGED_EXCEPTION_UNHANDLED](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md)|`pStackPointer` is **null**.|  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
  The event type is available from the [ICorDebugDebugEvent::GetEventKind](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-geteventkind-method.md) method.  
   

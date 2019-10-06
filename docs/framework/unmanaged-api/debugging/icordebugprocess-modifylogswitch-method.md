@@ -23,7 +23,7 @@ Sets the severity level of the specified log switch.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ModifyLogSwitch(  
     [in] WCHAR *pLogSwitchName,  
     [in] LONG  lLevel);  

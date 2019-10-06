@@ -15,7 +15,7 @@ Inserts a Win32 resource file in the output file.
   
 ## Syntax  
   
-```  
+```console  
 -win32resource:filename  
 ```  
   
@@ -31,7 +31,7 @@ Inserts a Win32 resource file in the output file.
  See [-linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md) to reference a .NET Framework resource file, or [-resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md) to attach a .NET Framework resource file.  
   
 > [!NOTE]
->  The `-win32resource` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-win32resource` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code compiles `In.vb` and attaches a Win32 resource file, `Rf.res`:  

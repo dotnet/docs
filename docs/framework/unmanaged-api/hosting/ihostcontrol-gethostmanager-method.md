@@ -23,7 +23,7 @@ Gets an interface pointer to the host's implementation of the interface with the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHostManager (  
     [in] REFIID riid,  
     [out, iid_is(riid)] void** ppObject  

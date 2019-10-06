@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 66f2b0a9-2c23-4735-988e-bbc9dfb55c7b
 ---
 # Chaining Standard Query Operators Together (C#)
-This is the final topic in the [Tutorial: Chaining Queries Together (C#)](../../../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md) tutorial.  
+This is the final topic in the [Tutorial: Chaining Queries Together (C#)](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md) tutorial.  
   
  The standard query operators can also be chained together. For example, you can interject the <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> operator, and it also operates in a lazy fashion. No intermediate results are materialized by it.  
   
@@ -69,7 +69,7 @@ class Program
   
  This example produces the following output:  
   
-```  
+```output  
 ToUpper: source >abc<  
 ToUpper: source >def<  
 AppendString: source >DEF<  
@@ -79,4 +79,3 @@ ToUpper: source >ghi<
 AppendString: source >GHI<  
 Main: str >GHI!!!<  
 ```  
-  

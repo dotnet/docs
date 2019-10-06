@@ -23,7 +23,7 @@ Gets a value that indicates whether an address is inside a stub that will cause 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsTransitionStub(  
     [in]  CORDB_ADDRESS address,  
     [out] BOOL *pbTransitionStub);  

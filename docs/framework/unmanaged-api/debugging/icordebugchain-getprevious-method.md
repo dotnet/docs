@@ -23,7 +23,7 @@ Gets the previous chain of frames for the thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPrevious (  
     [out] ICorDebugChain     **ppChain  
 );  

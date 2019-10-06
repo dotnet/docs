@@ -23,7 +23,7 @@ Resets the specified enumerator to the specified position.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ResetEnum (  
    [in] HCORENUM    hEnum,   
    [in] ULONG       ulPos  

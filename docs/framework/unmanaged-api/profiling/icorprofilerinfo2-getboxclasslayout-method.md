@@ -23,7 +23,7 @@ Gets information about where the specified value type is located when it is boxe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBoxClassLayout(  
     [in] ClassID classId,  
     [out] ULONG32 *pBufferOffset);  

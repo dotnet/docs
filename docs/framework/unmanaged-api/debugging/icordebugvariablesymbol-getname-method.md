@@ -10,7 +10,7 @@ Gets the name of a variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   
@@ -31,7 +31,7 @@ HRESULT GetName(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

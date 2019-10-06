@@ -19,11 +19,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IAssemblyCache::CreateAssemblyCacheItem Method
-Gets a reference to a new [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md) object.  
+Gets a reference to a new [IAssemblyCacheItem](iassemblycacheitem-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAssemblyCacheItem (  
     [in]  DWORD dwFlags,  
     [in]  PVOID pvReserved,  
@@ -50,7 +50,7 @@ HRESULT CreateAssemblyCacheItem (
  [in, optional] Uncanonicalized, comma-separated `name=value` pairs.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -58,5 +58,5 @@ HRESULT CreateAssemblyCacheItem (
   
 ## See also
 
-- [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
-- [IAssemblyCacheItem Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md)
+- [IAssemblyCache Interface](iassemblycache-interface.md)
+- [IAssemblyCacheItem Interface](iassemblycacheitem-interface.md)

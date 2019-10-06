@@ -12,10 +12,10 @@ ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
 # \<performanceCounter> Element (Network Settings)
 Enables or disables networking performance counters.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<performanceCounters>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<performanceCounters>**  
   
 ## Syntax  
   
@@ -41,12 +41,12 @@ Enables or disables networking performance counters.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+|[settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
- Networking performance counters need to be enabled in the configuration file to be used. All networking performance counters are enabled or disabled with a single setting in the configuration file. Individual networking performance counters cannot be enabled or disabled. For more information on the specific networking performance counters, see [Networking Performance Counters](../../../../../docs/framework/debug-trace-profile/performance-counters.md#networking).  
+ Networking performance counters need to be enabled in the configuration file to be used. All networking performance counters are enabled or disabled with a single setting in the configuration file. Individual networking performance counters cannot be enabled or disabled. For more information on the specific networking performance counters, see [Networking Performance Counters](../../../debug-trace-profile/performance-counters.md#networking).  
   
  The default value is that networking performance counters are disabled.  
   
@@ -71,5 +71,5 @@ Enables or disables networking performance counters.
 
 - <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
-- [Networking Performance Counters](../../../../../docs/framework/debug-trace-profile/performance-counters.md#networking)
+- [Network Settings Schema](index.md)
+- [Networking Performance Counters](../../../debug-trace-profile/performance-counters.md#networking)

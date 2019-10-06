@@ -12,9 +12,9 @@ ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
 # \<settings> Element (Network Settings)
 Configures basic network options for the <xref:System.Net?displayProperty=nameWithType> namespace.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<settings>**  
   
 ## Syntax  
   
@@ -40,19 +40,19 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
   
 |Element|Description|  
 |-------------|-----------------|  
-|[httpListener](../../../../../docs/framework/configure-apps/file-schema/network/httplistener-element-network-settings.md)|Customizes parameters used by the <xref:System.Net.HttpListener> class.|  
-|[httpWebRequest](../../../../../docs/framework/configure-apps/file-schema/network/httpwebrequest-element-network-settings.md)|Customizes Web request parameters.|  
-|[ipv6](../../../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)|Enables Internet Protocol version 6 (IPv6) support.|  
-|[\<performanceCounter> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/performancecounter-element-network-settings.md)|Enables network performance counters.|  
-|[servicePointManager](../../../../../docs/framework/configure-apps/file-schema/network/servicepointmanager-element-network-settings.md)|Configures connections to network resources.|  
-|[socket](../../../../../docs/framework/configure-apps/file-schema/network/socket-element-network-settings.md)|Specifies whether socket operations use completion ports.|  
-|[\<webProxyScript> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/webproxyscript-element-network-settings.md)|Configures the characteristics of the script used to discover Web proxies.|  
+|[httpListener](httplistener-element-network-settings.md)|Customizes parameters used by the <xref:System.Net.HttpListener> class.|  
+|[httpWebRequest](httpwebrequest-element-network-settings.md)|Customizes Web request parameters.|  
+|[ipv6](ipv6-element-network-settings.md)|Enables Internet Protocol version 6 (IPv6) support.|  
+|[\<performanceCounter> Element (Network Settings)](performancecounter-element-network-settings.md)|Enables network performance counters.|  
+|[servicePointManager](servicepointmanager-element-network-settings.md)|Configures connections to network resources.|  
+|[socket](socket-element-network-settings.md)|Specifies whether socket operations use completion ports.|  
+|[\<webProxyScript> Element (Network Settings)](webproxyscript-element-network-settings.md)|Configures the characteristics of the script used to discover Web proxies.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[system.net](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
+|[system.net](system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Remarks  
   
@@ -62,4 +62,4 @@ Configures basic network options for the <xref:System.Net?displayProperty=nameWi
 ## See also
 
 - <xref:System.Net?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

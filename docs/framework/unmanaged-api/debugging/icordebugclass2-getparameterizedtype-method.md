@@ -23,7 +23,7 @@ Gets the type declaration for this class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParameterizedType (  
     [in] CorElementType                      elementType,  
     [in] ULONG32                             nTypeArgs,  

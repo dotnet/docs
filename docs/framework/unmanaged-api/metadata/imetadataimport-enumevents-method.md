@@ -23,7 +23,7 @@ Enumerates event definition tokens for the specified TypeDef token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumEvents (   
    [in, out] HCORENUM    *phEnum,   
    [in]      mdTypeDef   td,   

@@ -23,7 +23,7 @@ Creates an auto-reset event object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAutoEvent (  
     [out] IHostAutoEvent **ppEvent  
 );  

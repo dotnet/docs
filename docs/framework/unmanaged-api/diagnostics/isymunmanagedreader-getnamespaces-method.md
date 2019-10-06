@@ -23,7 +23,7 @@ Gets the namespaces defined at global scope within this symbol store.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNamespaces (  
     [in]  ULONG32  cNameSpaces,  
     [out] ULONG32  *pcNameSpaces,  

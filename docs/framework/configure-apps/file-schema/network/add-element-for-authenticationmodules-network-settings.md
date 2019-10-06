@@ -14,10 +14,10 @@ ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 # \<add> Element for authenticationModules (Network Settings)
 Adds an authentication module to the application.  
   
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ Adds an authentication module to the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[authenticationModules](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
  The `add` element adds an authentication module to the end of the list of registered authentication modules. Authentication modules are called in the order in which they were added to the list.  
@@ -79,4 +79,4 @@ Adds an authentication module to the application.
 
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

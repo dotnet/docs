@@ -23,7 +23,7 @@ Gets the string representation of this managed object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSerializedBuffer (  
     [out] BSTR *pBSTR  
 );  

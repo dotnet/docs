@@ -17,7 +17,7 @@ This sample contains example data in .csv format, together with methods that tra
  The data represents a subset of the Northwind database. Fifty (50) customer records are included, but not all fields. A subset of the rows from the Orders and corresponding Order_Detail data for every Customer is included. All Products are included.  
   
 > [!NOTE]
->  The data set is not large enough to demonstrate that PLINQ is faster than LINQ to Objects for queries that contain just basic `where` and `select` clauses. To observe speed increases for small data sets such as this, use queries that contain computationally expensive operations on every element in the data set.  
+> The data set is not large enough to demonstrate that PLINQ is faster than LINQ to Objects for queries that contain just basic `where` and `select` clauses. To observe speed increases for small data sets such as this, use queries that contain computationally expensive operations on every element in the data set.  
   
 ### To set up this sample  
   
@@ -29,7 +29,7 @@ This sample contains example data in .csv format, together with methods that tra
   
 4. Press F5 to verify that the project builds and runs correctly. The following output should be displayed in the console window.  
   
-    ```  
+    ```console  
     Customer count: 50  
     Product count: 77  
     Order count: 190  
@@ -42,7 +42,7 @@ This sample contains example data in .csv format, together with methods that tra
   
 ## Data  
   
-```  
+```console  
 CUSTOMERS  
 ALFKI,Alfreds Futterkiste,Obere Str. 57,Berlin,12209  
 ANATR,Ana Trujillo Emparedados y helados,Avda. de la Constitución 2222,México D.F.,05021  

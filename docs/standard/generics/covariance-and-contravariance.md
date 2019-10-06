@@ -35,7 +35,7 @@ ms.author: "mairaw"
   
      You cannot assign an instance of `List<Base>` (`List(Of Base)` in Visual Basic) to a variable of type `List<Derived>` or vice versa.  
   
- Covariant type parameters enable you to make assignments that look much like ordinary [Polymorphism](~/docs/csharp/programming-guide/classes-and-structs/polymorphism.md), as shown in the following code.  
+ Covariant type parameters enable you to make assignments that look much like ordinary [Polymorphism](../../csharp/programming-guide/classes-and-structs/polymorphism.md), as shown in the following code.  
   
  [!code-csharp[CoContraSimpleIEnum#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontrasimpleienum/cs/example.cs#1)]
  [!code-vb[CoContraSimpleIEnum#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontrasimpleienum/vb/example.vb#1)]  
@@ -104,7 +104,7 @@ ms.author: "mairaw"
  In the .NET Framework 4, the `Func` generic delegates, such as <xref:System.Func%602>, have covariant return types and contravariant parameter types. The `Action` generic delegates, such as <xref:System.Action%602>, have contravariant parameter types. This means that the delegates can be assigned to variables that have more derived parameter types and (in the case of the `Func` generic delegates) less derived return types.  
   
 > [!NOTE]
->  The last generic type parameter of the `Func` generic delegates specifies the type of the return value in the delegate signature. It is covariant (`out` keyword), whereas the other generic type parameters are contravariant (`in` keyword).  
+> The last generic type parameter of the `Func` generic delegates specifies the type of the return value in the delegate signature. It is covariant (`out` keyword), whereas the other generic type parameters are contravariant (`in` keyword).  
   
  The following code illustrates this. The first piece of code defines a class named `Base`, a class named `Derived` that inherits `Base`, and another class with a `static` method (`Shared` in Visual Basic) named `MyMethod`. The method takes an instance of `Base` and returns an instance of `Derived`. (If the argument is an instance of `Derived`, `MyMethod` returns it; if the argument is an instance of `Base`, `MyMethod` returns a new instance of `Derived`.) In `Main()`, the example creates an instance of `Func<Base, Derived>` (`Func(Of Base, Derived)` in Visual Basic) that represents `MyMethod`, and stores it in the variable `f1`.  
   
@@ -143,12 +143,12 @@ ms.author: "mairaw"
  Starting with the .NET Framework 4, Visual Basic and C# have keywords that enable you to mark the generic type parameters of interfaces and delegates as covariant or contravariant.  
   
 > [!NOTE]
->  Starting with the .NET Framework version 2.0, the common language runtime supports variance annotations on generic type parameters. Prior to the .NET Framework 4, the only way to define a generic class that has these annotations is to use Microsoft intermediate language (MSIL), either by compiling the class with [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md) or by emitting it in a dynamic assembly.  
+> Starting with the .NET Framework version 2.0, the common language runtime supports variance annotations on generic type parameters. Prior to the .NET Framework 4, the only way to define a generic class that has these annotations is to use Microsoft intermediate language (MSIL), either by compiling the class with [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md) or by emitting it in a dynamic assembly.  
   
  A covariant type parameter is marked with the `out` keyword (`Out` keyword in Visual Basic, `+` for the [MSIL Assembler](../../../docs/framework/tools/ilasm-exe-il-assembler.md)). You can use a covariant type parameter as the return value of a method that belongs to an interface, or as the return type of a delegate. You cannot use a covariant type parameter as a generic type constraint for interface methods.  
   
 > [!NOTE]
->  If a method of an interface has a parameter that is a generic delegate type, a covariant type parameter of the interface type can be used to specify a contravariant type parameter of the delegate type.  
+> If a method of an interface has a parameter that is a generic delegate type, a covariant type parameter of the interface type can be used to specify a contravariant type parameter of the delegate type.  
   
  A contravariant type parameter is marked with the `in` keyword (`In` keyword in Visual Basic, `-` for the [MSIL Assembler](../../../docs/framework/tools/ilasm-exe-il-assembler.md)). You can use a contravariant type parameter as the type of a parameter of a method that belongs to an interface, or as the type of a parameter of a delegate. You can use a contravariant type parameter as a generic type constraint for an interface method.  
   

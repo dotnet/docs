@@ -22,7 +22,7 @@ Contains values that describe features of an assembly reference.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     arfFullOriginator = 0x0001  
 } AssemblyRefFlags;  

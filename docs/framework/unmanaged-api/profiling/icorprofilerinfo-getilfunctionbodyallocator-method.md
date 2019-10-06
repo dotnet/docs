@@ -23,7 +23,7 @@ Gets an interface that provides a method to allocate memory to be used for swapp
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILFunctionBodyAllocator(  
     [in]  ModuleID      moduleId,  
     [out] IMethodMalloc **ppMalloc);  

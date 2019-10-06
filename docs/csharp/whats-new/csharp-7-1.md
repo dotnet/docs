@@ -17,19 +17,27 @@ configuration element, three new language features, and new compiler behavior.
 
 The new language features in this release are:
 
-* [`async` `Main` method](#async-main)
+- [`async` `Main` method](#async-main)
   - The entry point for an application can have the `async` modifier.
-* [`default` literal expressions](#default-literal-expressions)
+- [`default` literal expressions](#default-literal-expressions)
   - You can use default literal expressions in default value expressions when the target type can be inferred.
-* [Inferred tuple element names](#inferred-tuple-element-names)
+- [Inferred tuple element names](#inferred-tuple-element-names)
   - The names of tuple elements can be inferred from tuple initialization in many cases.
-* [Pattern matching on generic type parameters](#pattern-matching-on-generic-type-parameters)
+- [Pattern matching on generic type parameters](#pattern-matching-on-generic-type-parameters)
   - You can use pattern match expressions on variables whose type is a generic type parameter.
 
 Finally, the compiler has two options `-refout` and `-refonly` that
 control [reference assembly generation](#reference-assembly-generation).
 
 To use the latest features in a point release, you need to [configure the compiler language version](../language-reference/configure-language-version.md) and select the version.
+
+The remainder of this article provides an overview of each feature. For each feature,
+you'll learn the reasoning behind it. You'll learn the syntax. You can explore these features in your environment using the `dotnet try` global tool:
+
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp7* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
 
 ## Async main
 
@@ -84,10 +92,7 @@ You can now omit the type on the right-hand side of the initialization:
 Func<string, bool> whereClause = default;
 ```
 
-You can learn more about this enhancement in the C# Programming Guide article
-on [default value expressions](../programming-guide/statements-expressions-operators/default-value-expressions.md).
-
-This enhancement also changes some of the parsing rules for the [default keyword](../language-reference/keywords/default.md).
+For more information, see the [default literal](../language-reference/operators/default.md#default-literal) section of the [default operator](../language-reference/operators/default.md) article.
 
 ## Inferred tuple element names
 

@@ -10,7 +10,7 @@ Creates a new stack unwinder that starts unwinding from an initial context (whic
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateVirtualUnwinder(  
     [in] DWORD nativeThreadID,  
     [in] ULONG32 contextFlags,  
@@ -42,7 +42,7 @@ HRESULT CreateVirtualUnwinder(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

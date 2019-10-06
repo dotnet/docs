@@ -22,7 +22,7 @@ Contains values that describe the type of file mapping that is returned from a c
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorFileMapping {  
   
     fmFlat                  =   0x0000,  

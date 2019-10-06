@@ -11,7 +11,7 @@ ms.assetid: b41cc5a3-cc59-4996-aa3c-8dd9c17d3c90
 ---
 # MainMenu Component Overview (Windows Forms)
 > [!IMPORTANT]
->  Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
+> Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
   
  The Windows Forms <xref:System.Windows.Forms.MainMenu> component displays a menu at run time. All submenus of the main menu and individual items are <xref:System.Windows.Forms.MenuItem> objects.  
   

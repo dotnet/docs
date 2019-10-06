@@ -18,9 +18,9 @@ The following procedure and example demonstrate how a managed application, using
   
 1. Look at the signature for the **EnumWindows** function before going further with the implementation. **EnumWindows** has the following signature:  
   
-    ```  
-    BOOL EnumWindows(WNDENUMPROC lpEnumFunc, LPARAM lParam)  
-    ```  
+    ```cpp
+    BOOL EnumWindows(WNDENUMPROC lpEnumFunc, LPARAM lParam)
+    ```
   
      One clue that this function requires a callback is the presence of the **lpEnumFunc** argument. It is common to see the **lp** (long pointer) prefix combined with the **Func** suffix in the name of arguments that take a pointer to a callback function. For documentation about Win32 functions, see the Microsoft Platform SDK.  
   
@@ -32,7 +32,7 @@ The following procedure and example demonstrate how a managed application, using
   
 4. Ensure that the garbage collector does not reclaim the delegate before the callback function completes its work. When you pass a delegate as a parameter, or pass a delegate contained as a field in a structure, it remains uncollected for the duration of the call. So, as is the case in the following enumeration example, the callback function completes its work before the call returns and requires no additional action by the managed caller.  
   
-     If, however, the callback function can be invoked after the call returns, the managed caller must take steps to ensure that the delegate remains uncollected until the callback function finishes. For detailed information about preventing garbage collection, see [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md) with Platform Invoke.  
+     If, however, the callback function can be invoked after the call returns, the managed caller must take steps to ensure that the delegate remains uncollected until the callback function finishes. For detailed information about preventing garbage collection, see [Interop Marshaling](interop-marshaling.md) with Platform Invoke.  
   
 ## Example  
   
@@ -125,5 +125,5 @@ int main()
   
 ## See also
 
-- [Callback Functions](../../../docs/framework/interop/callback-functions.md)
-- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
+- [Callback Functions](callback-functions.md)
+- [Calling a DLL Function](calling-a-dll-function.md)

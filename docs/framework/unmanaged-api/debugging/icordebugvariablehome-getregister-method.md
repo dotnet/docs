@@ -23,7 +23,7 @@ Gets the register that contains a variable with a location type of `VLT_REGISTER
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegister(  
     [out] CorDebugRegister *pRegister  
 );  

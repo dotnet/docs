@@ -10,7 +10,7 @@ Gets the simple name of the assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSimpleName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   
@@ -32,7 +32,7 @@ HRESULT GetSimpleName(
  This method retrieves the simple name of an assembly (such as "System.Collections"), without a file extension, version, culture, or public key token. It corresponds to the <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType> property in managed code.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -39,11 +39,11 @@ F# has numerous features, including:
 * Pattern matching
 * Async programming
 
-A full set of features are documented in the [F# language reference](language-reference/index.md).
+A full set of features are documented in the [F# language reference](./language-reference/index.md).
 
 ## Rich data types
 
-Data types such as [Records](language-reference/records.md) and [Discriminated Unions](language-reference/discriminated-unions.md) let you represent complex data and domains.
+Data types such as [Records](./language-reference/records.md) and [Discriminated Unions](./language-reference/discriminated-unions.md) let you represent complex data and domains.
 
 ```fsharp
 // Group data with Records
@@ -70,7 +70,7 @@ F# records and discriminated unions are non-null, immutable, and comparable by d
 
 ## Enforced correctness with functions and pattern matching
 
-F# functions are easy to declare and powerful in practice. When combined with [pattern matching](language-reference/pattern-matching.md), they allow you to define behavior whose correctness is enforced by the compiler.
+F# functions are easy to declare and powerful in practice. When combined with [pattern matching](./language-reference/pattern-matching.md), they allow you to define behavior whose correctness is enforced by the compiler.
 
 ```fsharp
 // Returns a WithdrawalResult
@@ -94,7 +94,7 @@ F# functions are also first-class, meaning they can be passed as parameters and 
 F# has full support for objects, which are useful data types when you need to blend data and functionality. F# functions are used to manipulate objects.
 
 ```fsharp
-type Set<[<EqualityConditionOn>] ‘T when ‘T: comparison>(elements: seq<'T>) =
+type Set<'T when 'T: comparison>(elements: seq<'T>) =
     member s.IsEmpty = // Implementation elided
     member s.Contains (value) =// Implementation elided
     member s.Add (value) = // Implementation elided
@@ -104,7 +104,6 @@ type Set<[<EqualityConditionOn>] ‘T when ‘T: comparison>(elements: seq<'T>) 
     interface IEnumerable<‘T>
     interface IReadOnlyCollection<‘T>
 
-[<RequireQualifiedAccess>]
 module Set =
     let isEmpty (set: Set<'T>) = set.IsEmpty
 
@@ -113,7 +112,7 @@ module Set =
     let add value (set: Set<'T>) = set.Add(value)
 ```
 
-Rather than writing code that is object-oriented, in F#, you will often write code that treats objects as another data type for functions to manipulate. Features such as [generic interfaces](language-reference/interfaces.md), [object expressions](language-reference/object-expressions.md), and judicious use of [members](language-reference/members/index.md) are common in larger F# programs.
+Rather than writing code that is object-oriented, in F#, you will often write code that treats objects as another data type for functions to manipulate. Features such as [generic interfaces](./language-reference/interfaces.md), [object expressions](./language-reference/object-expressions.md), and judicious use of [members](./language-reference/members/index.md) are common in larger F# programs.
 
 ## Next steps
 

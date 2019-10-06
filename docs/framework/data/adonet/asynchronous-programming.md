@@ -84,7 +84,7 @@ The following methods were added in .NET Framework 4.5 to support asynchronous p
 
 - <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServerAsync%2A?displayProperty=nameWithType>
 
- Other asynchronous members were added to support [SqlClient Streaming Support](../../../../docs/framework/data/adonet/sqlclient-streaming-support.md).
+ Other asynchronous members were added to support [SqlClient Streaming Support](sqlclient-streaming-support.md).
 
 > [!TIP]
 > The new asynchronous methods don't require `Asynchronous Processing=true` in the connection string.
@@ -488,7 +488,7 @@ namespace SqlBulkCopyAsyncCodeSample {
          }
       }
 
-      // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchornous calls)
+      // 3.2 Add new Async.NET capabilities in an existing application (Mixing synchronous and asynchronous calls)
       private static async Task MixSyncAsyncSqlBulkCopy() {
          using (OdbcConnection odbcconn = new OdbcConnection(odbcConnectionString)) {
             odbcconn.Open();
@@ -698,7 +698,7 @@ class Class1 {
    }
 
    private static string GetConnectionString() {
-      // To avoid storing the connection string in your code, you can retrive it from a configuration file.
+      // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
       return "Data Source=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";
    }
 }
@@ -815,7 +815,7 @@ class Program {
    }
 
    private static string GetConnectionString() {
-      // To avoid storing the connection string in your code, you can retrive it from a configuration file.
+      // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
       return "Data Source=(local);Integrated Security=SSPI;Initial Catalog=AdventureWorks;MultipleActiveResultSets=True";
    }
 }
@@ -823,4 +823,4 @@ class Program {
 
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)

@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 229fd6eb-7401-4992-b0c9-8b28de230c0f
 ---
 # How to: Animate Material Properties in a 3-D Scene
-This example shows how to animate the <xref:System.Windows.Media.Brush.Opacity%2A> property of the <xref:System.Windows.Media.Media3D.Material> applied to a [!INCLUDE[TLA#tla_3d](../../../../includes/tlasharptla-3d-md.md)] model.  
+This example shows how to animate the <xref:System.Windows.Media.Brush.Opacity%2A> property of the <xref:System.Windows.Media.Media3D.Material> applied to a 3-D model.  
   
  The following code example defines the <xref:System.Windows.Media.LinearGradientBrush> used as the <xref:System.Windows.Media.Media3D.Material> applied to the 3D object.  
   

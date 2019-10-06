@@ -23,15 +23,15 @@ Platform invoke is a service that enables managed code to call unmanaged functio
   
 #### To consume exported DLL functions  
   
-1. [Identify functions in DLLs](../../../docs/framework/interop/identifying-functions-in-dlls.md).  
+1. [Identify functions in DLLs](identifying-functions-in-dlls.md).  
   
      Minimally, you must specify the name of the function and name of the DLL that contains it.  
   
-2. [Create a class to hold DLL functions](../../../docs/framework/interop/creating-a-class-to-hold-dll-functions.md).  
+2. [Create a class to hold DLL functions](creating-a-class-to-hold-dll-functions.md).  
   
      You can use an existing class, create an individual class for each unmanaged function, or create one class that contains a set of related unmanaged functions.  
   
-3. [Create prototypes in managed code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md).  
+3. [Create prototypes in managed code](creating-prototypes-in-managed-code.md).  
   
      [Visual Basic] Use the **Declare** statement with the **Function** and **Lib** keywords. In some rare cases, you can use the **DllImportAttribute** with the **Shared Function** keywords. These cases are explained later in this section.  
   
@@ -39,11 +39,11 @@ Platform invoke is a service that enables managed code to call unmanaged functio
   
      [C++] Use the **DllImportAttribute** to identify the DLL and function. Mark the wrapper method or function with **extern "C"**.  
   
-4. [Call a DLL function](../../../docs/framework/interop/calling-a-dll-function.md).  
+4. [Call a DLL function](calling-a-dll-function.md).  
   
-     Call the method on your managed class as you would any other managed method. [Passing structures](../../../docs/framework/interop/passing-structures.md) and [implementing callback functions](../../../docs/framework/interop/callback-functions.md) are special cases.  
+     Call the method on your managed class as you would any other managed method. [Passing structures](passing-structures.md) and [implementing callback functions](callback-functions.md) are special cases.  
   
- For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md).  
+ For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
   
 ## A closer look at platform invoke  
  Platform invoke relies on metadata to locate exported functions and marshal their arguments at run time. The following illustration shows this process.  
@@ -59,7 +59,7 @@ Platform invoke is a service that enables managed code to call unmanaged functio
 3. Locates the address of the function in memory and pushes its arguments onto the stack, marshaling data as required.  
   
     > [!NOTE]
-    >  Locating and loading the DLL, and locating the address of the function in memory occur only on the first call to the function.  
+    > Locating and loading the DLL, and locating the address of the function in memory occur only on the first call to the function.  
   
 4. Transfers control to the unmanaged function.  
   
@@ -67,6 +67,6 @@ Platform invoke is a service that enables managed code to call unmanaged functio
 
 ## See also
 
-- [Interoperating with Unmanaged Code](../../../docs/framework/interop/index.md)
-- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Interoperating with Unmanaged Code](index.md)
+- [Platform Invoke Examples](platform-invoke-examples.md)
+- [Interop Marshaling](interop-marshaling.md)

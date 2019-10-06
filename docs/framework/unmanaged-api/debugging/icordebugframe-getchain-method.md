@@ -23,7 +23,7 @@ Gets a pointer to the chain this frame is a part of.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetChain (  
     [out] ICorDebugChain     **ppChain  
 );  

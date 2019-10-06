@@ -13,7 +13,7 @@ Suppresses display of the copyright banner and informational messages during com
   
 ## Syntax  
   
-```  
+```console  
 -nologo  
 ```  
   
@@ -21,7 +21,7 @@ Suppresses display of the copyright banner and informational messages during com
  If you specify `-nologo`, the compiler does not display a copyright banner. By default, `-nologo` is not in effect.  
   
 > [!NOTE]
->  The `-nologo` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-nologo` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code compiles `T2.vb` and does not display a copyright banner.  

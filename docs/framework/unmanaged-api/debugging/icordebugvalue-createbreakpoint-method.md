@@ -23,7 +23,7 @@ The `CreateBreakpoint` method is currently not implemented.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint (  
     [out] ICorDebugValueBreakpoint **ppBreakpoint  
 );  

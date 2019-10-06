@@ -23,7 +23,7 @@ Requests that the host create a new I/O completion port.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateIoCompletionPort (  
     [out] HANDLE *phPort  
 );  

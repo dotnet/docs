@@ -23,7 +23,7 @@ Returns an enumerator that provides methods to sequentially iterate through the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumThreads([out]  
             ICorProfilerThreadEnum** ppEnum);  
 ```  

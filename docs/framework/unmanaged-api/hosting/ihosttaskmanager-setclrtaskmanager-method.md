@@ -23,7 +23,7 @@ Provides the host with an interface pointer to an [ICLRTaskManager](../../../../
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCLRTaskManager (  
     [in] ICLRTaskManager *pManager  
 );  

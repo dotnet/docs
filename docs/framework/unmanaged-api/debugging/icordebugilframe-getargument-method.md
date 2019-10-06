@@ -23,7 +23,7 @@ Gets the value of the specified argument in this Microsoft intermediate language
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArgument (  
     [in] DWORD                  dwIndex,  
     [out] ICorDebugValue        **ppValue  

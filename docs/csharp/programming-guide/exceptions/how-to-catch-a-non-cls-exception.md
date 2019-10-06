@@ -46,4 +46,4 @@ catch (RuntimeWrappedException e)
 ## See also
 
 - <xref:System.Runtime.CompilerServices.RuntimeWrappedException>
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
+- [Exceptions and Exception Handling](./index.md)

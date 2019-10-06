@@ -1,1 +1,0 @@
-Microsoft Internet Explorer 6 (SP2)

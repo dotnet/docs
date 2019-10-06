@@ -31,11 +31,11 @@ string xmlDS = custDS.GetXml();
 |-------------------------|-----------------|  
 |**IgnoreSchema**|Writes the current contents of the <xref:System.Data.DataSet> as XML data, without an XML Schema. This is the default.|  
 |**WriteSchema**|Writes the current contents of the <xref:System.Data.DataSet> as XML data with the relational structure as inline XML Schema.|  
-|**DiffGram**|Writes the entire <xref:System.Data.DataSet> as a DiffGram, including original and current values. For more information, see [DiffGrams](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/diffgrams.md).|  
+|**DiffGram**|Writes the entire <xref:System.Data.DataSet> as a DiffGram, including original and current values. For more information, see [DiffGrams](diffgrams.md).|  
   
- When writing an XML representation of a <xref:System.Data.DataSet> that contains **DataRelation** objects, you will most likely want the resulting XML to have the child rows of each relation nested within their related parent elements. To accomplish this, set the **Nested** property of the **DataRelation** to **true** when you add the **DataRelation** to the <xref:System.Data.DataSet>. For more information, see [Nesting DataRelations](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations.md).  
+ When writing an XML representation of a <xref:System.Data.DataSet> that contains **DataRelation** objects, you will most likely want the resulting XML to have the child rows of each relation nested within their related parent elements. To accomplish this, set the **Nested** property of the **DataRelation** to **true** when you add the **DataRelation** to the <xref:System.Data.DataSet>. For more information, see [Nesting DataRelations](nesting-datarelations.md).  
   
- Following are two examples of how to write the XML representation of a <xref:System.Data.DataSet> to a file. The first example passes the file name for the resulting XML as a string to **WriteXml**. The second example passes a **System.IO.StreamWriter** object.  
+ The following are two examples of how to write the XML representation of a <xref:System.Data.DataSet> to a file. The first example passes the file name for the resulting XML as a string to **WriteXml**. The second example passes a **System.IO.StreamWriter** object.
   
 ```vb  
 custDS.WriteXml("Customers.xml", XmlWriteMode.WriteSchema)  
@@ -69,9 +69,9 @@ xmlSW.Close();
   
 ## See also
 
-- [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
-- [DiffGrams](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/diffgrams.md)
-- [Nesting DataRelations](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations.md)
-- [Writing DataSet Schema Information as XSD](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/writing-dataset-schema-information-as-xsd.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Using XML in a DataSet](using-xml-in-a-dataset.md)
+- [DiffGrams](diffgrams.md)
+- [Nesting DataRelations](nesting-datarelations.md)
+- [Writing DataSet Schema Information as XSD](writing-dataset-schema-information-as-xsd.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

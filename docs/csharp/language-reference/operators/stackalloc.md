@@ -1,7 +1,7 @@
 ---
 title: "stackalloc operator - C# reference"
 ms.custom: seodec18
-ms.date: 06/10/2019
+ms.date: 09/20/2019
 f1_keywords: 
   - "stackalloc_CSharpKeyword"
 helpviewer_keywords: 
@@ -10,6 +10,8 @@ helpviewer_keywords:
 # stackalloc operator (C# reference)
 
 The `stackalloc` operator allocates a block of memory on the stack. A stack allocated memory block created during the method execution is automatically discarded when that method returns. You cannot explicitly free memory allocated with the `stackalloc` operator. A stack allocated memory block is not subject to [garbage collection](../../../standard/garbage-collection/index.md) and doesn't have to be pinned with the [`fixed` statement](../keywords/fixed-statement.md).
+
+In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must be an expression of type `int`.
 
 You can assign the result of the `stackalloc` operator to a variable of one of the following types:
 
@@ -23,6 +25,10 @@ You can assign the result of the `stackalloc` operator to a variable of one of t
 
   [!code-csharp[stackalloc expression](~/samples/csharp/language-reference/operators/StackallocOperator.cs#AsExpression)]
 
+  Starting with C# 8.0, you can use a `stackalloc` expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
+
+  [!code-csharp[stackalloc in nested expressions](~/samples/csharp/language-reference/operators/StackallocOperator.cs#Nested)]
+
   > [!NOTE]
   > We recommend using <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> types to work with stack allocated memory whenever possible.
 
@@ -31,6 +37,8 @@ You can assign the result of the `stackalloc` operator to a variable of one of t
   [!code-csharp[stackalloc pointer](~/samples/csharp/language-reference/operators/StackallocOperator.cs#AssignToPointer)]
 
   As the preceding example shows, you must use an `unsafe` context when you work with pointer types.
+
+  In the case of pointer types, you can use a `stackalloc` expression only in a local variable declaration to initialize the variable.
 
 The content of the newly allocated memory is undefined. Starting with C# 7.3, you can use array initializer syntax to define the content of the newly allocated memory. The following example demonstrates various ways to do that:
 

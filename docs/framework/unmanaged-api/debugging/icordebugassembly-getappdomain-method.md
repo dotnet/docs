@@ -23,7 +23,7 @@ Gets an interface pointer to the application domain that contains this `ICorDebu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppDomain (  
     [out] ICorDebugAppDomain  **ppAppDomain  
 );  

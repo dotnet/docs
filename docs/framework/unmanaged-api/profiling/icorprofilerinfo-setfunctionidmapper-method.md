@@ -23,7 +23,7 @@ Specifies the profiler-implemented function that will be called to map `Function
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFunctionIDMapper (  
     [in] FunctionIDMapper *pFunc);  
 ```  

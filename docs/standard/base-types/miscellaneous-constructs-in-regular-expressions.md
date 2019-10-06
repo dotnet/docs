@@ -19,9 +19,7 @@ Regular expressions in .NET include three miscellaneous language constructs. One
 ## Inline Options  
  You can set or disable specific pattern matching options for part of a regular expression by using the syntax  
   
-```  
-(?imnsx-imnsx)  
-```  
+`(?imnsx-imnsx)`  
   
  You list the options you want to enable after the question mark, and the options you want to disable after the minus sign. The following table describes each option. For more information about each option, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
   
@@ -36,7 +34,7 @@ Regular expressions in .NET include three miscellaneous language constructs. One
  Any change in regular expression options defined by the `(?imnsx-imnsx)` construct remains in effect until the end of the enclosing group.  
   
 > [!NOTE]
->  The `(?imnsx-imnsx:`*subexpression*`)` grouping construct provides identical functionality for a subexpression. For more information, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
+> The `(?imnsx-imnsx:`*subexpression*`)` grouping construct provides identical functionality for a subexpression. For more information, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
   
  The following example uses the `i`, `n`, and `x` options to enable case insensitivity and explicit captures, and to ignore white space in the regular expression pattern in the middle of a regular expression.  
   

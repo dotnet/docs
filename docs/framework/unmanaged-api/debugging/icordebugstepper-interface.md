@@ -47,7 +47,7 @@ Represents a step in code execution that is performed by a debugger, serves as a
  A stepper may migrate between threads if the common language runtime (CLR) makes a cross-threaded, marshaled call.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

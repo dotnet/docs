@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<appDomainManagerType> Element
 Specifies the type that serves as the application domain manager for the default application domain.  
   
- \<configuration>  
-\<runtime>  
-\<appDomainManagerType>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainManagerType>**  
   
 ## Syntax  
   
@@ -42,9 +42,9 @@ Specifies the type that serves as the application domain manager for the default
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
- To specify the type of the application domain manager, you must specify both this element and the [\<appDomainManagerAssembly>](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) element. If either of these elements is not specified, the other is ignored.  
+ To specify the type of the application domain manager, you must specify both this element and the [\<appDomainManagerAssembly>](appdomainmanagerassembly-element.md) element. If either of these elements is not specified, the other is ignored.  
   
- When the default application domain is loaded, <xref:System.TypeLoadException> is thrown if the specified type does not exist in the assembly that is specified by the [\<appDomainManagerAssembly>](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) element; and the process fails to start.  
+ When the default application domain is loaded, <xref:System.TypeLoadException> is thrown if the specified type does not exist in the assembly that is specified by the [\<appDomainManagerAssembly>](appdomainmanagerassembly-element.md) element; and the process fails to start.  
   
  When you specify the application domain manager type for the default application domain, other application domains created from the default application domain inherit the application domain manager type. Use the <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType> and <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType> properties to specify a different application domain manager type for a new application domain.  
   
@@ -71,7 +71,7 @@ Specifies the type that serves as the application domain manager for the default
 
 - <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>
-- [\<appDomainManagerAssembly> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md)
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [SetAppDomainManagerType Method](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)
+- [\<appDomainManagerAssembly> Element](appdomainmanagerassembly-element.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [SetAppDomainManagerType Method](../../../unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

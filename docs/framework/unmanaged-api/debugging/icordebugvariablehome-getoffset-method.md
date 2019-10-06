@@ -23,7 +23,7 @@ Gets the offset from the base register for a variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetOffset(  
     [out] LONG *pOffset  
 );  

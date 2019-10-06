@@ -15,11 +15,11 @@ helpviewer_keywords:
 ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 ---
 # Security (WPF)
-<a name="introduction"></a> When developing Windows Presentation Foundation (WPF) standalone and browser-hosted applications, you must consider the security model. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] standalone applications execute with unrestricted permissions ( [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]**FullTrust** permission set), whether deployed using Windows Installer (.msi), XCopy, or [!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]. Deploying partial-trust, standalone WPF applications with ClickOnce is unsupported. However, a full-trust host application can create a partial-trust <xref:System.AppDomain> using the .NET Framework Add-in model. For more information, see [WPF Add-Ins Overview](./app-development/wpf-add-ins-overview.md).  
+<a name="introduction"></a> When developing Windows Presentation Foundation (WPF) standalone and browser-hosted applications, you must consider the security model. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] standalone applications execute with unrestricted permissions ( CAS**FullTrust** permission set), whether deployed using Windows Installer (.msi), XCopy, or ClickOnce. Deploying partial-trust, standalone WPF applications with ClickOnce is unsupported. However, a full-trust host application can create a partial-trust <xref:System.AppDomain> using the .NET Framework Add-in model. For more information, see [WPF Add-Ins Overview](./app-development/wpf-add-ins-overview.md).  
   
- [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications are hosted by [!INCLUDE[TLA#tla_iegeneric](../../../includes/tlasharptla-iegeneric-md.md)] or Firefox, and can be either [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)] or loose [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] documents For more information, see [WPF XAML Browser Applications Overview](./app-development/wpf-xaml-browser-applications-overview.md).  
+ [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications are hosted by Windows Internet Explorer or Firefox, and can be either [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)] or loose [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] documents For more information, see [WPF XAML Browser Applications Overview](./app-development/wpf-xaml-browser-applications-overview.md).  
   
- [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications execute within a partial trust security sandbox, by default, which is limited to the default [!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]**Internet** zone permission set. This effectively isolates [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications from the client computer in the same way that you would expect typical Web applications to be isolated. An XBAP can elevate privileges, up to Full Trust, depending on the security zone of the deployment URL and the client's security configuration. For more information, see [WPF Partial Trust Security](wpf-partial-trust-security.md).  
+ [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications execute within a partial trust security sandbox, by default, which is limited to the default CAS**Internet** zone permission set. This effectively isolates [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications from the client computer in the same way that you would expect typical Web applications to be isolated. An XBAP can elevate privileges, up to Full Trust, depending on the security zone of the deployment URL and the client's security configuration. For more information, see [WPF Partial Trust Security](wpf-partial-trust-security.md).  
   
  This topic discusses the security model for Windows Presentation Foundation (WPF) standalone and browser-hosted applications.  
   
@@ -59,7 +59,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |Application code|XAML resources that have a compiled code-behind.<br /><br /> -or-<br /><br /> XAML files that are added to a project with a build type of **Page**.|`pack://application:,,,/MyResourceFile` `.xaml`|  
   
 > [!NOTE]
->  For more information about application data files and pack [!INCLUDE[TLA2#tla_uri#plural](../../../includes/tla2sharptla-urisharpplural-md.md)], see [WPF Application Resource, Content, and Data Files](./app-development/wpf-application-resource-content-and-data-files.md).  
+> For more information about application data files and pack [!INCLUDE[TLA2#tla_uri#plural](../../../includes/tla2sharptla-urisharpplural-md.md)], see [WPF Application Resource, Content, and Data Files](./app-development/wpf-application-resource-content-and-data-files.md).  
   
  Files of these content types can be navigated to by either the user or programmatically:  
   
@@ -83,7 +83,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 ## Web Browsing Software Security Settings  
  The security settings on your computer determine the access that any Web browsing software is granted. Web browsing software includes any application or component that uses the [WinINet](https://go.microsoft.com/fwlink/?LinkId=179379) or [UrlMon](https://go.microsoft.com/fwlink/?LinkId=179383) APIs, including Internet Explorer and PresentationHost.exe.  
   
- [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] provides a mechanism by which you can configure the functionality that is allowed to be executed by or from [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)], including the following:  
+ Internet Explorer provides a mechanism by which you can configure the functionality that is allowed to be executed by or from Internet Explorer, including the following:  
   
 - .NET Framework-reliant components  
   
@@ -112,13 +112,13 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
      ![Screenshot that shows the Security Settings dialog box.](./media/security-wpf/windows-presentation-foundation-security-settings.png)  
   
 > [!NOTE]
->  You can also get to the Internet Options dialog box from Internet Explorer. Click **Tools** and then click **Internet Options**.  
+> You can also get to the Internet Options dialog box from Internet Explorer. Click **Tools** and then click **Internet Options**.  
   
- Starting with [!INCLUDE[TLA#tla_ie7](../../../includes/tlasharptla-ie7-md.md)], the following security settings specifically for .NET Framework are included:  
+ Starting with Windows Internet Explorer 7, the following security settings specifically for .NET Framework are included:  
   
-- **Loose XAML**. Controls whether [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
+- **Loose XAML**. Controls whether Internet Explorer can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
   
-- **XAML browser applications**. Controls whether [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] can navigate to and run [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)]. (Enable, Disable, and Prompt options).  
+- **XAML browser applications**. Controls whether Internet Explorer can navigate to and run [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)]. (Enable, Disable, and Prompt options).  
   
  By default, these settings are all enabled for the **Internet**, **Local intranet**, and **Trusted sites** zones, and disabled for the **Restricted sites** zone.  
   
@@ -145,7 +145,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  The WPF <xref:System.Windows.Controls.WebBrowser> control can be used to host Web content. The WPF <xref:System.Windows.Controls.WebBrowser> control wraps the underlying WebBrowser ActiveX control. WPF provides some support for securing your application when you use the WPF <xref:System.Windows.Controls.WebBrowser> control to host untrusted Web content. However, some security features must be applied directly by the applications using the <xref:System.Windows.Controls.WebBrowser> control. For more information about the WebBrowser ActiveX control, see [WebBrowser Control Overviews and Tutorials](https://go.microsoft.com/fwlink/?LinkId=179388).  
   
 > [!NOTE]
->  This section also applies to the <xref:System.Windows.Controls.Frame> control since it uses the <xref:System.Windows.Controls.WebBrowser> to navigate to HTML content.  
+> This section also applies to the <xref:System.Windows.Controls.Frame> control since it uses the <xref:System.Windows.Controls.WebBrowser> to navigate to HTML content.  
   
  If the WPF <xref:System.Windows.Controls.WebBrowser> control is used to host untrusted Web content, your application should use a partial-trust <xref:System.AppDomain> to help insulate your application code from potentially malicious HTML script code. This is especially true if your application is interacting with the hosted script by using the <xref:System.Windows.Controls.WebBrowser.InvokeScript%2A> method and the <xref:System.Windows.Controls.WebBrowser.ObjectForScripting%2A> property. For more information, see [WPF Add-Ins Overview](./app-development/wpf-add-ins-overview.md).  
   
@@ -178,7 +178,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  Feature controls are applied by the process instantiating the WebBrowser ActiveX object. Therefore, if you are creating a stand-alone application that can navigate to untrusted content, you should seriously consider enabling additional feature controls.  
   
 > [!NOTE]
->  This recommendation is based on general recommendations for MSHTML and SHDOCVW host security. For more information, see [The MSHTML Host Security FAQ: Part I of II](https://go.microsoft.com/fwlink/?LinkId=179396) and [The MSHTML Host Security FAQ: Part II of II](https://go.microsoft.com/fwlink/?LinkId=179415).  
+> This recommendation is based on general recommendations for MSHTML and SHDOCVW host security. For more information, see [The MSHTML Host Security FAQ: Part I of II](https://go.microsoft.com/fwlink/?LinkId=179396) and [The MSHTML Host Security FAQ: Part II of II](https://go.microsoft.com/fwlink/?LinkId=179415).  
   
  For your executable, consider enabling the following feature controls by setting the registry value to 1.  
   
@@ -201,18 +201,18 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |---------------------|  
 |FEATURE_ENABLE_SCRIPT_PASTE_URLACTION_IF_PROMPT|  
   
- If you run a partial-trust [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in [!INCLUDE[TLA#tla_iegeneric](../../../includes/tlasharptla-iegeneric-md.md)], WPF hosts the WebBrowser ActiveX control in the address space of the Internet Explorer process. Since the WebBrowser ActiveX control is hosted in the [!INCLUDE[TLA2#tla_iegeneric](../../../includes/tla2sharptla-iegeneric-md.md)] process, all of the feature controls for Internet Explorer are also enabled for the WebBrowser ActiveX control.  
+ If you run a partial-trust [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Windows Internet Explorer, WPF hosts the WebBrowser ActiveX control in the address space of the Internet Explorer process. Since the WebBrowser ActiveX control is hosted in the Internet Explorer process, all of the feature controls for Internet Explorer are also enabled for the WebBrowser ActiveX control.  
   
  XBAPs running in Internet Explorer also get an additional level of security compared to normal standalone applications. This additional security is because Internet Explorer, and therefore the WebBrowser ActiveX control, runs in protected mode by default on [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)] and [!INCLUDE[win7](../../../includes/win7-md.md)]. For more information about protected mode, see [Understanding and Working in Protected Mode Internet Explorer](https://go.microsoft.com/fwlink/?LinkId=179393).  
   
 > [!NOTE]
->  If you try to run an XBAP that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Firefox, while in the Internet zone, a <xref:System.Security.SecurityException> will be thrown. This is due to WPF security policy.  
+> If you try to run an XBAP that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Firefox, while in the Internet zone, a <xref:System.Security.SecurityException> will be thrown. This is due to WPF security policy.  
   
 <a name="APTCA"></a>   
 ## Disabling APTCA Assemblies for Partially Trusted Client Applications  
- When managed assemblies are installed into the [!INCLUDE[TLA#tla_gac](../../../includes/tlasharptla-gac-md.md)], they become fully trusted because the user must provide explicit permission to install them. Because they are fully trusted, only fully trusted managed client applications can use them. To allow partially trusted applications to use them, they must be marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA). Only assemblies that have been tested to be safe for execution in partial trust should be marked with this attribute.  
+ When managed assemblies are installed into the global assembly cache (GAC), they become fully trusted because the user must provide explicit permission to install them. Because they are fully trusted, only fully trusted managed client applications can use them. To allow partially trusted applications to use them, they must be marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA). Only assemblies that have been tested to be safe for execution in partial trust should be marked with this attribute.  
   
- However, it is possible for an APTCA assembly to exhibit a security flaw after being installed into the [!INCLUDE[TLA2#tla_gac](../../../includes/tla2sharptla-gac-md.md)]. Once a security flaw is discovered, assembly publishers can produce a security update to fix the problem on existing installations, and to protect against installations that may occur after the problem is discovered. One option for the update is to uninstall the assembly, although that may break other fully trusted client applications that use the assembly.  
+ However, it is possible for an APTCA assembly to exhibit a security flaw after being installed into the  GAC . Once a security flaw is discovered, assembly publishers can produce a security update to fix the problem on existing installations, and to protect against installations that may occur after the problem is discovered. One option for the update is to uninstall the assembly, although that may break other fully trusted client applications that use the assembly.  
   
  [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] provides a mechanism by which an APTCA assembly can be disabled for partially trusted [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)] without uninstalling the APTCA assembly.  
   
@@ -235,7 +235,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  If an assembly has to be disabled for partially trusted client applications, you can write an update that creates the registry key and value.  
   
 > [!NOTE]
->  Core .NET Framework assemblies are not affected by disabling them in this way because they are required for managed applications to run. Support for disabling APTCA assemblies is primarily targeted to third-party applications.  
+> Core .NET Framework assemblies are not affected by disabling them in this way because they are required for managed applications to run. Support for disabling APTCA assemblies is primarily targeted to third-party applications.  
   
 <a name="LooseContentSandboxing"></a>   
 ## Sandbox Behavior for Loose XAML Files  
@@ -252,7 +252,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  With this setting, external content will be loaded into a process that is separate from the process that is hosting the application. This process is restricted to the default Internet zone permission set, effectively isolating it from the hosting application and the client computer.  
   
 > [!NOTE]
->  Even though navigation to loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application is implemented based on the WPF browser hosting infrastructure, involving the PresentationHost process, the security level is slightly less than when the content is loaded directly in Internet Explorer on [!INCLUDE[wiprlhext](../../../includes/wiprlhext-md.md)] and [!INCLUDE[win7](../../../includes/win7-md.md)] (which would still be through PresentationHost). This is because a standalone WPF application using a Web browser does not provide the additional Protected Mode security feature of Internet Explorer.  
+> Even though navigation to loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application is implemented based on the WPF browser hosting infrastructure, involving the PresentationHost process, the security level is slightly less than when the content is loaded directly in Internet Explorer on [!INCLUDE[wiprlhext](../../../includes/wiprlhext-md.md)] and [!INCLUDE[win7](../../../includes/win7-md.md)] (which would still be through PresentationHost). This is because a standalone WPF application using a Web browser does not provide the additional Protected Mode security feature of Internet Explorer.  
   
 <a name="BestPractices"></a>   
 ## Resources for Developing WPF Applications that Promote Security  
@@ -261,8 +261,8 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |Area|Resource|  
 |----------|--------------|  
 |Managed code|[Patterns and Practices Security Guidance for Applications](https://go.microsoft.com/fwlink/?LinkId=117426)|  
-|[!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]|[Code Access Security](../misc/code-access-security.md)|  
-|[!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]|[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)|  
+|CAS|[Code Access Security](../misc/code-access-security.md)|  
+|ClickOnce|[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)|  
 |[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]|[WPF Partial Trust Security](wpf-partial-trust-security.md)|  
   
 ## See also

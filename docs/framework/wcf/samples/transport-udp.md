@@ -41,7 +41,7 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
  Each of these MEPs can also support sessions. The added functionality provided by a session-aware channel is that it correlates all messages sent and received on a channel. The Request-Response pattern is a stand-alone two-message session, as the request and reply are correlated. In contrast, the Request-Response pattern that supports sessions implies that all request/response pairs on that channel are correlated with each other. This gives you a total of six MEPs—Datagram, Request-Response, Duplex, Datagram with sessions, Request-Response with sessions, and Duplex with sessions—to choose from.  
   
 > [!NOTE]
->  For the UDP transport, the only MEP that is supported is Datagram, because UDP is inherently a "fire and forget" protocol.  
+> For the UDP transport, the only MEP that is supported is Datagram, because UDP is inherently a "fire and forget" protocol.  
   
 ### The ICommunicationObject and the WCF object lifecycle  
  WCF has a common state machine that is used for managing the lifecycle of objects like <xref:System.ServiceModel.Channels.IChannel>, <xref:System.ServiceModel.Channels.IChannelFactory>, and <xref:System.ServiceModel.Channels.IChannelListener> that are used for communication. There are five states in which these communication objects can exist. These states are represented by the <xref:System.ServiceModel.CommunicationState> enumeration, and are as follows:  
@@ -440,7 +440,7 @@ Press <ENTER> to terminate the service and exit...
  To regenerate the client code and configuration using Svcutil.exe, start the service application and then run the following Svcutil.exe from the root directory of the sample.  
   
 ```console
-svcutil http://localhost:8000/udpsample/ /reference:UdpTranport\bin\UdpTransport.dll /svcutilConfig:svcutil.exe.config  
+svcutil http://localhost:8000/udpsample/ /reference:UdpTransport\bin\UdpTransport.dll /svcutilConfig:svcutil.exe.config  
 ```  
   
  Note that Svcutil.exe does not generate the binding extension configuration for the `SampleProfileUdpBinding`, so you must add it manually.  
@@ -467,10 +467,10 @@ svcutil http://localhost:8000/udpsample/ /reference:UdpTranport\bin\UdpTransport
 3. Refer to the preceding "The UDP Test Service and Client" section.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\Udp`
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transport\Udp`

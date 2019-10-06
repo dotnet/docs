@@ -23,7 +23,7 @@ Resets a domain enumerator back to the beginning of the domain list.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseEnum (  
     [in] HCORENUM hEnum  
 );  

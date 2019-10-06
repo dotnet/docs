@@ -23,7 +23,7 @@ Opens a new lexical scope in the current method. The scope becomes the new curre
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScope(  
     [in] ULONG32 startOffset,  
     [out, retval] ULONG32* pRetVal);  

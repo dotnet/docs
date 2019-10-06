@@ -33,7 +33,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |---|---|  
 |[-doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Process documentation comments to an XML file.|  
 |[-deterministic](../../../visual-basic/reference/command-line-compiler/deterministic.md)|Causes the compiler to output an assembly whose binary content is identical across compilations if inputs are identical.|
-|[-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)|Sets the compiler to target the [!INCLUDE[Compact](~/includes/compact-md.md)].|  
+|[-netcf](../../../visual-basic/reference/command-line-compiler/netcf.md)|Sets the compiler to target the .NET Compact Framework.|  
 |[-out](../../../visual-basic/reference/command-line-compiler/out.md)|Specifies an output file.|  
 |[-refonly](refonly-compiler-option.md)|Outputs only a reference assembly.|
 |[-refout](refout-compiler-option.md)|Specifies the output path of a reference assembly.|
@@ -118,9 +118,9 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-vbruntime](../../../visual-basic/reference/command-line-compiler/vbruntime.md)|Specifies that the compiler should compile without a reference to the Visual Basic Runtime Library, or with a reference to a specific runtime library.|  
 |[-win32manifest](../../../visual-basic/reference/command-line-compiler/win32manifest.md)|Identifies a user-defined Win32 application manifest file to be embedded into a project's portable executable (PE) file.|  
 |`-parallel[+&#124;-]`|Specifies whether to use concurrent build (+).|  
-|`-checksumalgorithm:<alg>`|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
+|`-checksumalgorithm:<alg>`|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256. <br>Due to collision problems with SHA1, Microsoft recommends SHA256 or better.|  
   
 ## See also
 
 - [Visual Basic Compiler Options Listed Alphabetically](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically.md)
-- [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)
+- [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties)

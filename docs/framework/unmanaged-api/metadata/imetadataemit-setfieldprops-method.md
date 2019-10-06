@@ -23,7 +23,7 @@ Sets or updates the default value for the field referenced by the specified fiel
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFieldProps (  
     [in]  mdFieldDef  fd,   
     [in]  DWORD       dwFieldFlags,   

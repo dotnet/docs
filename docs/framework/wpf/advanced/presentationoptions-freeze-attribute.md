@@ -12,7 +12,7 @@ Sets the <xref:System.Windows.Freezable.IsFrozen%2A> state to `true` on the cont
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object  
   xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"  
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  

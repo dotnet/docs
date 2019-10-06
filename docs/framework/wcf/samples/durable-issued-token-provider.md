@@ -7,7 +7,7 @@ ms.assetid: 76fb27f5-8787-4b6a-bf4c-99b4be1d2e8b
 This sample demonstrates how to implement a custom client issued token provider.  
   
 ## Discussion  
- A token provider in Windows Communication Foundation (WCF) is used to supply credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with a [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:  
+ A token provider in Windows Communication Foundation (WCF) is used to supply credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with a CardSpace token provider. Custom token providers are useful in the following cases:  
   
 - If you have a credential store that the built-in token provider cannot operate with.  
   
@@ -28,7 +28,7 @@ This sample demonstrates how to implement a custom client issued token provider.
  This sample consists of a client console program (Client.exe), a security token service console program (Securitytokenservice.exe) and a service console program (Service.exe). The service implements a contract that defines a request-reply communication pattern. The contract is defined by the `ICalculator` interface, which exposes math operations (add, subtract, multiply, and divide). The client gets a security token from the Security Token Service (STS) and makes synchronous requests to the service for a given math operation and the service replies with the result. Client activity is visible in the console window.  
   
 > [!NOTE]
->  The set-up procedure and build instructions for this sample are located at the end of this topic.  
+> The set-up procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample exposes the ICalculator contract using the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The configuration of this binding on the client is shown in the following code.  
   
@@ -106,7 +106,7 @@ This sample demonstrates how to implement a custom client issued token provider.
 ## Custom Client Credentials and Token Provider  
  The following steps show how to develop a custom token provider that caches issued tokens and integrate it with WCF: security.  
   
-#### To develop a custom token provider  
+### To develop a custom token provider  
   
 1. Write a custom token provider.  
   
@@ -114,7 +114,7 @@ This sample demonstrates how to implement a custom client issued token provider.
   
      To perform this task, the custom token provider derives the <xref:System.IdentityModel.Selectors.SecurityTokenProvider> class and overrides the <xref:System.IdentityModel.Selectors.SecurityTokenProvider.GetTokenCore%2A> method. This method tries to get a token from the cache, or if a token cannot be found in the cache, retrieves a token from the underlying provider and then caches that token. In both cases the method returns a `SecurityToken`.  
   
-    ```  
+    ```csharp  
     protected override SecurityToken GetTokenCore(TimeSpan timeout)  
     {  
       GenericXmlSecurityToken token;  
@@ -131,7 +131,7 @@ This sample demonstrates how to implement a custom client issued token provider.
   
      The <xref:System.IdentityModel.Selectors.SecurityTokenManager> is used to create a <xref:System.IdentityModel.Selectors.SecurityTokenProvider> for a specific <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> that is passed to it in the `CreateSecurityTokenProvider` method. Security token manager is also used to create token authenticators and token serializers, but those are not covered by this sample. In this sample, the custom security token manager inherits from the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager> class and overrides the `CreateSecurityTokenProvider` method to return the custom token provider when the passed token requirements indicate that an issued token is requested.  
   
-    ```  
+    ```csharp  
     class DurableIssuedTokenClientCredentialsTokenManager :  
      ClientCredentialsSecurityTokenManager  
     {  
@@ -148,7 +148,7 @@ This sample demonstrates how to implement a custom client issued token provider.
         {  
           return new DurableIssuedSecurityTokenProvider ((IssuedSecurityTokenProvider)base.CreateSecurityTokenProvider( tokenRequirement), this.cache);  
         }  
-        Else  
+        else  
         {  
           return base.CreateSecurityTokenProvider(tokenRequirement);  
         }  
@@ -160,7 +160,7 @@ This sample demonstrates how to implement a custom client issued token provider.
   
      A client credentials class is used to represent the credentials that are configured for the client proxy and creates the security token manager that is used to obtain token authenticators, token providers and token serializers.  
   
-    ```  
+    ```csharp  
     public class DurableIssuedTokenClientCredentials : ClientCredentials  
     {  
       IssuedTokenCache cache;  
@@ -176,11 +176,11 @@ This sample demonstrates how to implement a custom client issued token provider.
   
       public IssuedTokenCache IssuedTokenCache  
       {  
-        Get  
+        get  
         {  
           return this.cache;  
         }  
-        Set  
+        set  
         {  
           this.cache = value;  
         }  
@@ -200,18 +200,18 @@ This sample demonstrates how to implement a custom client issued token provider.
   
 4. Implement the token cache. The sample implementation uses an abstract base class through which consumers of a given token cache interact with the cache.  
   
-    ```  
+    ```csharp  
     public abstract class IssuedTokenCache  
     {  
       public abstract void AddToken ( GenericXmlSecurityToken token, EndpointAddress target, EndpointAddress issuer);  
       public abstract bool TryGetToken(EndpointAddress target, EndpointAddress issuer, out GenericXmlSecurityToken cachedToken);  
     }  
-    Configure the client to use the custom client credential.  
+    // Configure the client to use the custom client credential.  
     ```  
   
      For the client to use the custom client credential, the sample deletes the default client credential class and supplies the new client credential class.  
   
-    ```  
+    ```csharp  
     clientFactory.Endpoint.Behaviors.Remove<ClientCredentials>();  
     DurableIssuedTokenClientCredentials durableCreds = new DurableIssuedTokenClientCredentials();  
     durableCreds.IssuedTokenCache = cache;  
@@ -225,7 +225,7 @@ This sample demonstrates how to implement a custom client issued token provider.
 ## The Setup.cmd Batch File  
  The Setup.cmd batch file included with this sample allows you to configure the server and security token service with relevant certificates to run a self-hosted application. The batch file creates two certificates both in the CurrentUser/TrustedPeople certificate store. The first certificate has a subject name of CN=STS and is used by the Security Token Service to sign the security tokens that it issues to the client. The second certificate has a subject name of CN=localhost and is used by the Security Token Service to encrypt a secret so that the service can decrypt it.  
   
-#### To set up, build, and run the sample  
+### To set up, build, and run the sample  
   
 1. Run the Setup.cmd file to create the required certificates.  
   
@@ -235,15 +235,15 @@ This sample demonstrates how to implement a custom client issued token provider.
   
 4. Run Client.exe.  
   
-#### To clean up after the sample  
+### To clean up after the sample  
   
 1. Run Cleanup.cmd in the samples folder once you have finished running the sample.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\DurableIssuedTokenProvider`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Security\DurableIssuedTokenProvider`  

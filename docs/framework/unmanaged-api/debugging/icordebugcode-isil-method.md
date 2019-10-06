@@ -19,27 +19,28 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # ICorDebugCode::IsIL Method
-Gets a value that indicates whether this "ICorDebugCode" represents code that was compiled in Microsoft intermediate language (MSIL).  
-  
-## Syntax  
-  
-```  
-HRESULT IsIL (  
-    [out] BOOL       *pbIL  
-);  
-```  
-  
-## Parameters  
+
+Gets a value that indicates whether this "ICorDebugCode" represents code that was compiled in Microsoft intermediate language (MSIL).
+
+## Syntax
+
+```cpp
+HRESULT IsIL (
+    [out] BOOL       *pbIL
+);
+```
+
+## Parameters
  `pbIL`  
- [out] `true` if this `ICorDebugCode` represents code that was compiled in MSIL; otherwise, `false`.  
-  
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
+ [out] `true` if this `ICorDebugCode` represents code that was compiled in MSIL; otherwise, `false`.
+
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
+
  **Header:** CorDebug.idl, CorDebug.h  
-  
+
  **Library:** CorGuids.lib  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
-## See also
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
+ 

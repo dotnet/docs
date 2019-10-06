@@ -22,7 +22,7 @@ Specifies constants used by [CoInitializeEE](../../../../docs/framework/unmanage
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum tagCOINITEE {  
    COINITEE_DEFAULT = 0x0,  
    COINITEE_DLL     = 0x1,  

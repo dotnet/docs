@@ -23,7 +23,7 @@ Converts an object address to an "ICorDebugObjectValue" object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject(  
     [in] CORDB_ADDRESS addr,   
     [out] ICorDebugObjectValue **ppObject  

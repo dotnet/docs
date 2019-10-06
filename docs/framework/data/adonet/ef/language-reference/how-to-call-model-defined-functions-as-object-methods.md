@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 33bae8a8-4ed8-4a1f-85d1-c62ff288cc61
 ---
 # How to: Call Model-Defined Functions as Object Methods
-This topic describes how to call a model-defined function as a method on an <xref:System.Data.Objects.ObjectContext> object or as a static method on a custom class. A *model-defined function* is a function that is defined in the conceptual model. The procedures in the topic describe how to call these functions directly instead of calling them from LINQ to Entities queries. For information about calling model-defined functions in LINQ to Entities queries, see [How to: Call Model-Defined Functions in Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/how-to-call-model-defined-functions-in-queries.md).  
+This topic describes how to call a model-defined function as a method on an <xref:System.Data.Objects.ObjectContext> object or as a static method on a custom class. A *model-defined function* is a function that is defined in the conceptual model. The procedures in the topic describe how to call these functions directly instead of calling them from LINQ to Entities queries. For information about calling model-defined functions in LINQ to Entities queries, see [How to: Call Model-Defined Functions in Queries](how-to-call-model-defined-functions-in-queries.md).  
   
  Whether you call a model-defined function as an <xref:System.Data.Objects.ObjectContext> method or as a static method on a custom class, you must first map the method to the model-defined function with an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>. However, when you define a method on the <xref:System.Data.Objects.ObjectContext> class, you must use the <xref:System.Data.Objects.ObjectContext.QueryProvider%2A> property to expose the LINQ provider, whereas when you define a static method on a custom class, you must use the <xref:System.Linq.IQueryable.Provider%2A> property to expose the LINQ provider. For more information, see the examples that follow the procedures below.  
   
@@ -81,7 +81,7 @@ This topic describes how to call a model-defined function as a method on an <xre
  The next example demonstrates how to call a model-defined function as a static method on a custom class. The example uses the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).  
   
 > [!NOTE]
->  When you call a model-defined function as a static method on a custom class, the model-defined function must accept a collection and return an aggregation of values in the collection.  
+> When you call a model-defined function as a static method on a custom class, the model-defined function must accept a collection and return an aggregation of values in the collection.  
   
  Consider the conceptual model function below that returns product revenue for a SalesOrderDetail collection. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).).  
   
@@ -102,5 +102,5 @@ This topic describes how to call a model-defined function as a method on an <xre
 ## See also
 
 - [.edmx File Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
-- [Queries in LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/queries-in-linq-to-entities.md)
-- [Calling Functions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/calling-functions-in-linq-to-entities-queries.md)
+- [Queries in LINQ to Entities](queries-in-linq-to-entities.md)
+- [Calling Functions in LINQ to Entities Queries](calling-functions-in-linq-to-entities-queries.md)

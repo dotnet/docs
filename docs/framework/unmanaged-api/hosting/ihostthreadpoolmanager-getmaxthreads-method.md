@@ -23,7 +23,7 @@ Gets the maximum number of threads that the host maintains concurrently in the t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMaxThreads (  
     [out] DWORD *pdwMaxWorkerThreads  
 );  

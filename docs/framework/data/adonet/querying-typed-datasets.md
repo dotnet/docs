@@ -8,7 +8,7 @@ ms.assetid: ad712fa1-2baf-462a-b163-574cce6d376a
 ---
 # Query typed DataSets
 
-If the schema of the <xref:System.Data.DataSet> is known at application design time, we recommend that you use a typed <xref:System.Data.DataSet> when using LINQ to DataSet. A typed <xref:System.Data.DataSet> is a class that derives from a <xref:System.Data.DataSet>. As such, it inherits all the methods, events, and properties of a <xref:System.Data.DataSet>. Additionally, a typed <xref:System.Data.DataSet> provides strongly typed methods, events, and properties. This means that you can access tables and columns by name, instead of using collection-based methods. This makes queries simpler and more readable. For more information, see [Typed DataSets](../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md).
+If the schema of the <xref:System.Data.DataSet> is known at application design time, we recommend that you use a typed <xref:System.Data.DataSet> when using LINQ to DataSet. A typed <xref:System.Data.DataSet> is a class that derives from a <xref:System.Data.DataSet>. As such, it inherits all the methods, events, and properties of a <xref:System.Data.DataSet>. Additionally, a typed <xref:System.Data.DataSet> provides strongly typed methods, events, and properties. This means that you can access tables and columns by name, instead of using collection-based methods. This makes queries simpler and more readable. For more information, see [Typed DataSets](./dataset-datatable-dataview/typed-datasets.md).
 
 LINQ to DataSet also supports querying over a typed <xref:System.Data.DataSet>. With a typed <xref:System.Data.DataSet>, you do not have to use the generic <xref:System.Data.DataRowExtensions.Field%2A> method or <xref:System.Data.DataRowExtensions.SetField%2A> method to access column data. Property names are available at compile time because the type information is included in the <xref:System.Data.DataSet>. LINQ to DataSet provides access to column values as the correct type, so that type mismatch errors are caught when the code is compiled instead of at run time.
 
@@ -54,6 +54,6 @@ Next
 
 ## See also
 
-- [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)
-- [Cross-Table Queries](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)
-- [Single-Table Queries](../../../../docs/framework/data/adonet/single-table-queries-linq-to-dataset.md)
+- [Querying DataSets](querying-datasets-linq-to-dataset.md)
+- [Cross-Table Queries](cross-table-queries-linq-to-dataset.md)
+- [Single-Table Queries](single-table-queries-linq-to-dataset.md)

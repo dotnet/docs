@@ -23,7 +23,7 @@ Sets the PInvoke marshaling information for the field, method return, or method 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFieldMarshal (  
     [in]  mdToken          tk,   
     [in]  PCCOR_SIGNATURE  pvNativeType,   

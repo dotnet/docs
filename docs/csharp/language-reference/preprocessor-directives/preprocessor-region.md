@@ -24,12 +24,12 @@ public class MyClass
 ```  
   
 ## Remarks  
- A `#region` block must be terminated with a [#endregion](../../../csharp/language-reference/preprocessor-directives/preprocessor-endregion.md) directive.  
+ A `#region` block must be terminated with a [#endregion](./preprocessor-endregion.md) directive.  
   
- A `#region` block cannot overlap with a [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) block. However, a `#region` block can be nested in a `#if` block, and a `#if` block can be nested in a `#region` block.  
+ A `#region` block cannot overlap with a [#if](./preprocessor-if.md) block. However, a `#region` block can be nested in a `#if` block, and a `#if` block can be nested in a `#region` block.  
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Preprocessor Directives](./index.md)

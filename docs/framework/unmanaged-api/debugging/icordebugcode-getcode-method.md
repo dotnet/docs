@@ -23,7 +23,7 @@ Gets all the code for the specified function, formatted for disassembly. This me
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode (  
     [in] ULONG32     startOffset,   
     [in] ULONG32     endOffset,  

@@ -23,7 +23,7 @@ Returns `true` if the document has source embedded in the debugging symbols; oth
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HasEmbeddedSource(  
    [out, retval]  BOOL  *pRetVal);  
 ```  

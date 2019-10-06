@@ -23,7 +23,7 @@ To force the expressions to be performed, you call the method `Force`. `Force` c
 
 The following code illustrates the use of lazy expressions and the use of `Force`. In this code, the type of `result` is `Lazy<int>`, and the `Force` method returns an `int`.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet73011.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet73011.fs)]
 
 Lazy evaluation, but not the `Lazy` type, is also used for sequences. For more information, see [Sequences](sequences.md).
 

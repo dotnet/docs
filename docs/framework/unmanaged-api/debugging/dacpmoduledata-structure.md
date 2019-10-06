@@ -24,7 +24,7 @@ Defines a transport buffer for a module's runtime information.
 
 ## Syntax
 
-```
+```cpp
 struct DacpModuleData
 {
     CLRDATA_ADDRESS Address;

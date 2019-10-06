@@ -1,30 +1,36 @@
 ---
-title: What's New in C# 8.0 - C# Guide
-description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
-ms.date: 02/12/2019
+title: What's new in C# 8.0 - C# Guide
+description: Get an overview of the new features available in C# 8.0.
+ms.date: 09/20/2019
 ---
 # What's new in C# 8.0
 
-There are many enhancements to the C# language that you can try out already. 
+C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](#readonly-members)
 - [Default interface members](#default-interface-members)
 - [Pattern matching enhancements](#more-patterns-in-more-places):
-  * [Switch expressions](#switch-expressions)
-  * [Property patterns](#property-patterns)
-  * [Tuple patterns](#tuple-patterns)
-  * [Positional patterns](#positional-patterns)
+  - [Switch expressions](#switch-expressions)
+  - [Property patterns](#property-patterns)
+  - [Tuple patterns](#tuple-patterns)
+  - [Positional patterns](#positional-patterns)
 - [Using declarations](#using-declarations)
 - [Static local functions](#static-local-functions)
 - [Disposable ref structs](#disposable-ref-structs)
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
 - [Indices and ranges](#indices-and-ranges)
+- [Null-coalescing assignment](#null-coalescing-assignment)
+- [Unmanaged constructed types](#unmanaged-constructed-types)
+- [stackalloc in nested expressions](#stackalloc-in-nested-expressions)
+- [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
 
-> [!NOTE]
-> This article was last updated for C# 8.0 preview 5.
+The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
 
-The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided.
+1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.
+1. Clone the [dotnet/try-samples](https://github.com/dotnet/try-samples) repository.
+1. Set the current directory to the *csharp8* subdirectory for the *try-samples* repository.
+1. Run `dotnet try`.
 
 ## Readonly members
 
@@ -254,7 +260,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
     using var file = new System.IO.StreamWriter("WriteLines2.txt");
     foreach (string line in lines)
     {
-        // If the line doesn't contain the word 'Second', write the line to the file.
         if (!line.Contains("Second"))
         {
             file.WriteLine(line);
@@ -264,7 +269,7 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 }
 ```
 
-In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code using the classic [using statements](../language-reference/keywords/using-statement.md) statement:
+In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code that uses the classic [using statement](../language-reference/keywords/using-statement.md):
 
 ```csharp
 static void WriteLinesToFile(IEnumerable<string> lines)
@@ -273,7 +278,6 @@ static void WriteLinesToFile(IEnumerable<string> lines)
     {
         foreach (string line in lines)
         {
-            // If the line doesn't contain the word 'Second', write the line to the file.
             if (!line.Contains("Second"))
             {
                 file.WriteLine(line);
@@ -285,7 +289,7 @@ static void WriteLinesToFile(IEnumerable<string> lines)
 
 In the preceding example, the file is disposed when the closing brace associated with the `using` statement is reached.
 
-In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the using statement is not disposable.
+In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the `using` statement is not disposable.
 
 ## Static local functions
 
@@ -365,17 +369,18 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 ## Indices and ranges
 
-Ranges and indices provide a succinct syntax for specifying subranges in an array, <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
+Indices and ranges provide a succinct syntax for accessing single elements or ranges in a sequence.
 
-This language support relies on two new types, and two new operators.
+This language support relies on two new types, and two new operators:
+
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
-- The `^` operator, which specifies that an index is relative to the end of the sequence.
+- The index from end operator `^`, which specifies that an index is relative to the end of the sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
-- The Range operator (`..`), which specifies the start and end of a range as is operands.
+- The range operator `..`, which specifies the start and end of a range as its operands.
 
 Let's start with the rules for indexes. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
-A range specifies the *start* and *end* of a range. Ranges are exclusive, meaning the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range. 
+A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range.
 
 Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
 
@@ -419,7 +424,7 @@ The following examples create ranges that are open ended for the start, end, or 
 ```csharp
 var allWords = words[..]; // contains "The" through "dog".
 var firstPhrase = words[..4]; // contains "The" through "fox"
-var lastPhrase = words[6..]; // contains "the, "lazy" and "dog"
+var lastPhrase = words[6..]; // contains "the", "lazy" and "dog"
 ```
 
 You can also declare ranges as variables:
@@ -434,4 +439,65 @@ The range can then be used inside the `[` and `]` characters:
 var text = words[phrase];
 ```
 
+Not only arrays support indices and ranges. You also can use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. For more information, see [Type support for indices and ranges](../tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
+
 You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
+
+## Null-coalescing assignment
+
+C# 8.0 introduces the null-coalescing assignment operator `??=`. You can use the `??=` operator to assign the value of its right-hand operand to its left-hand operand only if the left-hand operand evaluates to `null`.
+
+```csharp
+List<int> numbers = null;
+int? i = null;
+
+numbers ??= new List<int>();
+numbers.Add(i ??= 17);
+numbers.Add(i ??= 20);
+
+Console.WriteLine(string.Join(" ", numbers));  // output: 17 17
+Console.WriteLine(i);  // output: 17
+```
+
+For more information, see the [?? and ??= operators](../language-reference/operators/null-coalescing-operator.md) article.
+
+## Unmanaged constructed types
+
+In C# 7.3 and earlier, a constructed type (a type that includes at least one type argument) cannot be an [unmanaged type](../language-reference/builtin-types/unmanaged-types.md). Starting with C# 8.0, a constructed value type is unmanaged if it contains fields of unmanaged types only.
+
+For example, given the following definition of the generic `Coords<T>` type:
+
+```csharp
+public struct Coords<T>
+{
+    public T X;
+    public T Y;
+}
+```
+
+the `Coords<int>` type is an unmanaged type in C# 8.0 and later. Like for any unmanaged type, you can create a pointer to a variable of this type or [allocate a block of memory on the stack](../language-reference/operators/stackalloc.md) for instances of this type:
+
+```csharp
+Span<Coords<int>> coordinates = stackalloc[]
+{
+    new Coords<int> { X = 0, Y = 0 },
+    new Coords<int> { X = 0, Y = 3 },
+    new Coords<int> { X = 4, Y = 0 }
+};
+```
+
+For more information, see [Unmanaged types](../language-reference/builtin-types/unmanaged-types.md).
+
+## stackalloc in nested expressions
+
+Starting with C# 8.0, if the result of a [stackalloc](../language-reference/operators/stackalloc.md) expression is of the <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> type, you can use the `stackalloc` expression in other expressions:
+
+```csharp
+Span<int> numbers = stackalloc[] { 1, 2, 3, 4, 5, 6 };
+var ind = numbers.IndexOfAny(stackalloc[] { 2, 4, 6 ,8 });
+Console.WriteLine(ind);  // output: 1
+```
+
+## Enhancement of interpolated verbatim strings
+
+Order of the `$` and `@` tokens in [interpolated](../language-reference/tokens/interpolated.md) verbatim strings can be any: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.

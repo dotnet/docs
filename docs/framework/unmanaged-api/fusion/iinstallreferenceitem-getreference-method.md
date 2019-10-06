@@ -19,11 +19,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IInstallReferenceItem::GetReference Method
-Gets a pointer to the [FUSION_INSTALL_REFERENCE](../../../../docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md) structure represented by this [IInstallReferenceItem](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md) object.  
+Gets a pointer to the [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) structure represented by this [IInstallReferenceItem](iinstallreferenceitem-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReference (  
     [out] LPFUSION_INSTALL_REFERENCE *ppRefData,  
     [in]  DWORD dwFlags,  
@@ -42,7 +42,7 @@ HRESULT GetReference (
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -50,5 +50,5 @@ HRESULT GetReference (
   
 ## See also
 
-- [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)
-- [FUSION_INSTALL_REFERENCE Structure](../../../../docs/framework/unmanaged-api/fusion/fusion-install-reference-structure.md)
+- [IInstallReferenceItem Interface](iinstallreferenceitem-interface.md)
+- [FUSION_INSTALL_REFERENCE Structure](fusion-install-reference-structure.md)

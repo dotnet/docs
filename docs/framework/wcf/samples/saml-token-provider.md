@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: eb16e5e2-4c8d-4f61-a479-9c965fcec80c
 ---
 # SAML Token Provider
-This sample demonstrates how to implement a custom client SAML token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] token provider. Custom token providers are useful in the following cases:
+This sample demonstrates how to implement a custom client SAML token provider. A token provider in Windows Communication Foundation (WCF) is used for supplying credentials to the security infrastructure. The token provider in general examines the target and issues appropriate credentials so that the security infrastructure can secure the message. WCF ships with the default Credential Manager Token Provider. WCF also ships with a CardSpace token provider. Custom token providers are useful in the following cases:
 
 - If you have a credential store that these token providers cannot operate with.
 
@@ -352,14 +352,14 @@ This sample demonstrates how to implement a custom client SAML token provider. A
 2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
 > [!NOTE]
->  If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.
+> If you use Svcutil.exe to regenerate the configuration for this sample, be sure to modify the endpoint name in the client configuration to match the client code.
 
 #### To run the sample on the same computer
 
 1. Run Setup.bat from the sample installation folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.  
   
 2. Launch Service.exe from service\bin.  
   

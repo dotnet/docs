@@ -12,7 +12,7 @@ Causes the compiler to make all type information from the specified file(s) avai
   
 ## Syntax  
   
-```  
+```console  
 -addmodule:fileList  
 ```  
   
@@ -30,7 +30,7 @@ Causes the compiler to make all type information from the specified file(s) avai
  Use [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md) to import metadata from a file that contains an assembly.  
   
 > [!NOTE]
->  The `-addmodule` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-addmodule` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code creates a module.  

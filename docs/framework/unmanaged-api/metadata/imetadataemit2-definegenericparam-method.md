@@ -23,7 +23,7 @@ Creates a definition for a generic type parameter, and gets a token to that gene
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineGenericParam (   
     [in]  mdToken         tk,   
     [in]  ULONG           ulParamSeq,   

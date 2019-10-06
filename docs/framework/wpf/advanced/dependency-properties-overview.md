@@ -62,7 +62,7 @@ As an example of non-attribute syntax, the following XAML example shows another 
 [!code-xaml[PropertiesOvwSupport#PESyntaxProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#pesyntaxproperty)]
 
 ### Setting properties in code
- Setting dependency property values in code is typically just a call to the set implementation exposed by the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper".
+ Setting dependency property values in code is typically just a call to the set implementation exposed by the CLR "wrapper".
 
 [!code-csharp[PropertiesOvwSupport#ProceduralPropertySet](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml.cs#proceduralpropertyset)]
 [!code-vb[PropertiesOvwSupport#ProceduralPropertySet](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page1.xaml.vb#proceduralpropertyset)]
@@ -72,7 +72,7 @@ Getting a property value is also essentially a call to the get "wrapper" impleme
 [!code-csharp[PropertiesOvwSupport#ProceduralPropertyGet](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml.cs#proceduralpropertyget)]
  [!code-vb[PropertiesOvwSupport#ProceduralPropertyGet](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PropertiesOvwSupport/visualbasic/page1.xaml.vb#proceduralpropertyget)]
 
-You can also call the property system [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> directly. This is not typically necessary if you are using existing properties (the wrappers are more convenient, and provide better exposure of the property for developer tools), but calling the [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] directly is appropriate for certain scenarios.
+You can also call the property system APIs <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> directly. This is not typically necessary if you are using existing properties (the wrappers are more convenient, and provide better exposure of the property for developer tools), but calling the APIs directly is appropriate for certain scenarios.
 
 Properties can be also set in XAML and then accessed later in code, through code-behind. For details, see [Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md).
 
@@ -184,7 +184,7 @@ Typically, you would not want styles to always apply and to obscure even a local
 
 ## Learning more about dependency properties  
 
-- An attached property is a type of property that supports a specialized syntax in XAML. An attached property often does not have a 1:1 correspondence with a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] property, and is not necessarily a dependency property. The typical purpose of a attached property is to allow child elements to report property values to a parent element, even if the parent element and child element do not both possess that property as part of the class members listings. One primary scenario is to enable child elements to inform the parent how they should be presented in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]; for an example, see <xref:System.Windows.Controls.DockPanel.Dock%2A> or <xref:System.Windows.Controls.Canvas.Left%2A>. For details, see [Attached Properties Overview](attached-properties-overview.md).
+- An attached property is a type of property that supports a specialized syntax in XAML. An attached property often does not have a 1:1 correspondence with a common language runtime (CLR) property, and is not necessarily a dependency property. The typical purpose of a attached property is to allow child elements to report property values to a parent element, even if the parent element and child element do not both possess that property as part of the class members listings. One primary scenario is to enable child elements to inform the parent how they should be presented in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]; for an example, see <xref:System.Windows.Controls.DockPanel.Dock%2A> or <xref:System.Windows.Controls.Canvas.Left%2A>. For details, see [Attached Properties Overview](attached-properties-overview.md).
 
 - Component developers or application developers may wish to create their own dependency property, in order to enable capabilities such as data binding or styles support, or for invalidation and value coercion support. For details, see [Custom Dependency Properties](custom-dependency-properties.md).
 

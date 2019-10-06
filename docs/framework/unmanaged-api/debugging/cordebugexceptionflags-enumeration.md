@@ -22,7 +22,7 @@ Provides additional information about an exception.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugExceptionFlags {  
     DEBUG_EXCEPTION_NONE = 0,  
     DEBUG_EXCEPTION_CAN_BE_INTERCEPTED = 0x0001  

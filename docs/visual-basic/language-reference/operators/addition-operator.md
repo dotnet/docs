@@ -17,9 +17,13 @@ Adds two numbers or returns the positive value of a numeric expression. Can also
 ## Syntax  
   
 ```vb
-expression1 + expression2  
-- or -  
-+ expression1  
+expression1 + expression2
+```
+  
+or
+
+```vb  
++expression1  
 ```  
   
 ## Parts  
@@ -74,7 +78,7 @@ expression1 + expression2
  If either `Object` expression evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md) or <xref:System.DBNull>, the `+` operator treats it as a `String` with a value of "".  
   
 > [!NOTE]
->  When you use the `+` operator, you might not be able to determine whether addition or string concatenation will occur. Use the `&` operator for concatenation to eliminate ambiguity and to provide self-documenting code.  
+> When you use the `+` operator, you might not be able to determine whether addition or string concatenation will occur. Use the `&` operator for concatenation to eliminate ambiguity and to provide self-documenting code.  
   
 ## Overloading  
  The `+` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  

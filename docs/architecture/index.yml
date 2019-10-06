@@ -1,0 +1,32 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: .NET Application Architecture Guidance
+metadata:
+  document_id: na
+  title: .NET Application Architecture Guidance
+  meta.description: Learn about recommended practices for architecting, designing and building .NET software.
+  ms.topic: landing-page
+  ms.date: 06/12/2019
+abstract:
+  description: Learn how to build production-ready .NET apps with free application architecture guidance.
+sections:
+- title: Published e-books
+  items:
+  - html: '<ul><li><p><a href="containerized-lifecycle/index">Containerized Docker application lifecycle with the Microsoft platform and tools</a></p>'
+  - html: '<p>This guide is an introduction to the recommended end to end lifecycle processes you''ll use to develop, validate, and deploy containerized Docker applications using Visual Studio and Microsoft Azure.</p></li></ul>'
+  - html: '<ul><li><p><a href="modernize-with-azure-containers/index">Modernize existing .NET applications with Azure cloud and Windows containers</a></p>'
+  - html: '<p>This guide is an introduction to the strategies you''ll need to migrate existing web applications to the Azure cloud and Windows containers. You''ll learn about code strategies, data migration, orchestrators, and CI/CD processes.</p></li></ul>'
+  - html: '<ul><li><p><a href="modern-web-apps-azure/index">Architect modern web applications with ASP.NET Core and Azure</a></p>'
+  - html: '<p>This guide is an introduction to the recommended architecture, design, and deployment processes you''ll use to build ASP.NET and ASP.NET Core applications and host those applications in Azure.</p></li></ul>'
+  - html: '<ul><li><p><a href="microservices/index">Architecting container and microservice-based applications</a></p>'
+  - html: '<p>This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.</p></li></ul>'
+  - html: '<ul><li><p><a href="serverless/index">Serverless apps: Architecture, patterns, and Azure implementation</a></p>'
+  - html: '<p>This is a guide for building serverless applications with examples using Azure. It discusses various architecture and design approaches, the benefits and challenges that come with serverless, and provides scenarios and use cases for serverless apps.</p></li></ul>'
+- title: Preview e-books
+  items:
+  - html: '<ul><li><p><a href="cloud-native/index">Architecting cloud-native .NET apps for Azure</a></p>'
+  - html: '<p>This guide defines what cloud native is, introduces a sample app built using cloud-native principles, and covers topics common to most cloud-native applications.</p></li></ul>'
+  - html: '<ul><li><p><a href="blazor-for-web-forms-developers/index">Blazor for ASP.NET Web Forms Developers</a></p>'
+  - html: '<p>An introduction to Blazor for ASP.NET Web Forms developers. Learn how to build full-stack web apps with .NET using Blazor and .NET Core in a simple and familiar way.</p></li></ul>'
+  - html: '<ul><li><p><a href="grpc-for-wcf-developers/index">ASP.NET Core gRPC for WCF Developers</a></p>'
+  - html: '<p>This guide explains what gRPC is, relating each concept to the equivalent features of WCF, and offers guidance for migrating an existing WCF app to gRPC.</p></li></ul>'

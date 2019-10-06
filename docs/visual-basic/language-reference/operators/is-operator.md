@@ -15,7 +15,7 @@ Compares two object reference variables.
   
 ## Syntax  
   
-```  
+```vb  
 result = object1 Is object2  
 ```  
   
@@ -35,7 +35,7 @@ result = object1 Is object2
  `Is` can also be used with the `TypeOf` keyword to make a `TypeOf`...`Is` expression, which tests whether an object variable is compatible with a data type.  
   
 > [!NOTE]
->  The `Is` keyword is also used in the [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md).  
+> The `Is` keyword is also used in the [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md).  
   
 ## Example  
  The following example uses the `Is` operator to compare pairs of object references. The results are assigned to a `Boolean` value representing whether the two objects are identical.  

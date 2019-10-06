@@ -33,7 +33,7 @@ Often, applications will have menu commands for actions such as Tile, Cascade, a
     ```  
   
     > [!NOTE]
-    >  You can also tile windows and arranging windows as icons by changing the <xref:System.Windows.Forms.MdiLayout> enumeration value used.  
+    > You can also tile windows and arranging windows as icons by changing the <xref:System.Windows.Forms.MdiLayout> enumeration value used.  
   
 2. If you’re using Visual C#, place the following code in the form's constructor to register the event handler.  
   

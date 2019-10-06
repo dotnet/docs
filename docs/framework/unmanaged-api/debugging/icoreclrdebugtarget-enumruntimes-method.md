@@ -25,7 +25,7 @@ Enumerates the common language runtimes (CLRs) in the specified process that is 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumRuntimes (  
       [in] DWORD       dwInternalProcessID,  
       [out] DWORD*     pcRuntimes,  

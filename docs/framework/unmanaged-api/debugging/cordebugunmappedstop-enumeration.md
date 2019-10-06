@@ -22,7 +22,7 @@ Specifies the type of unmapped code that can trigger a halt in code execution by
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugUnmappedStop {  
     STOP_NONE               = 0x0,  
     STOP_PROLOG             = 0x01,  

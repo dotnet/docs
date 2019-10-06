@@ -23,7 +23,7 @@ Verifies the signature of a strongly named assembly, and provides a mapping from
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameSignatureVerificationEx (  
     [in]  LPCWSTR   wszFilePath,  
     [in]  BOOLEAN   fForceVerification,    [in]  BYTE      *pbEcmaPublicKey,  

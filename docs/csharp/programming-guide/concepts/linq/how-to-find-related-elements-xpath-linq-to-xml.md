@@ -15,7 +15,7 @@ This topic shows how to get an element selecting on an attribute that is referre
   
  Note that indexing into a list in .NET is 'zero' based. Indexing into a collection of nodes in an XPath predicate is 'one' based. This example reflects this difference.  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
 ```csharp  
 XDocument co = XDocument.Load("CustomersOrders.xml");  
@@ -60,7 +60,7 @@ Console.WriteLine(customer1);
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Customer CustomerID="HUNGC">  
   <CompanyName>Hungry Coyote Import Store</CompanyName>  

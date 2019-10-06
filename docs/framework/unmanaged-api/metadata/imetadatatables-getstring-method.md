@@ -23,7 +23,7 @@ Gets the string at the specified index from the table column in the current refe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetString (   
     [in]  ULONG       ixString,  
     [out] const char  **ppString  

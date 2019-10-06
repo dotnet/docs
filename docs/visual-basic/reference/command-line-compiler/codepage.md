@@ -12,7 +12,7 @@ Specifies the code page to use for all source-code files in the compilation.
   
 ## Syntax  
   
-```  
+```console  
 -codepage:id  
 ```  
   
@@ -28,7 +28,7 @@ Specifies the code page to use for all source-code files in the compilation.
  The `-codepage` option is not needed if the source-code files were saved using the current ANSI code page, Unicode, or UTF-8 with a signature. Visual Studio saves all source-code files with the current ANSI code page by default, unless the user specifies another encoding in the **Encoding** dialog box. Visual Studio uses the **Encoding** dialog box to open source-code files saved with a different code page.  
   
 > [!NOTE]
->  The `-codepage` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-codepage` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## See also
 

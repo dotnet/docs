@@ -18,7 +18,7 @@ Windows Communication Foundation (WCF) traces internal events in the Windows eve
   
 - Shared Listener: The WCF TCP Port Sharing Service logs an event when it fails to start.  
   
-- [!INCLUDE[infocard](../../../../../includes/infocard-md.md)]: Logs events when the service fails to start.  
+- CardSpace: Logs events when the service fails to start.  
   
 - Critical and error events, such as startup failures or crashes  
   
@@ -26,7 +26,7 @@ Windows Communication Foundation (WCF) traces internal events in the Windows eve
   
 - An event is logged when the `enableLoggingKnownPII` attribute in the `machineSettings` element of the `machine.config` file is set. This attribute specifies if any application running on the machine is permitted to log known personally identifiable information (PII).  
   
-- If the `logKnownPii` attribute in either the `app.config` or `web.config` file is set to `true` for a specific application to turn on PII logging, but the `enableLoggingKnownPII` attribute in the `machineSettings` element of the `machine.config` file is set to `false`, an event is logged. In addition, if both `logKnownPii` and `enableLoggingKnownPII` are set to `true`, and event is logged. For more information on these configuration settings, see the Security section of the [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md) topic.  
+- If the `logKnownPii` attribute in either the `app.config` or `web.config` file is set to `true` for a specific application to turn on PII logging, but the `enableLoggingKnownPII` attribute in the `machineSettings` element of the `machine.config` file is set to `false`, an event is logged. In addition, if both `logKnownPii` and `enableLoggingKnownPII` are set to `true`, and event is logged. For more information on these configuration settings, see the Security section of the [Configuring Message Logging](../configuring-message-logging.md) topic.  
   
 ### Security Event Log  
  The **Security Event Log** contains security audit events that are logged by WCF.  
@@ -43,5 +43,5 @@ Windows Communication Foundation (WCF) traces internal events in the Windows eve
   
 ## See also
 
-- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
-- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+- [Administration and Diagnostics](../index.md)
+- [Events General Reference](events-general-reference.md)

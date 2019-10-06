@@ -24,7 +24,7 @@ Overflow checking can be enabled by compiler options, environment configuration,
 
 [!code-csharp[csrefKeywordsChecked#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsChecked/CS/csrefKeywordsChecked.cs#4)]
 
-The [unchecked](../../../csharp/language-reference/keywords/unchecked.md) keyword can be used to prevent overflow checking.
+The [unchecked](./unchecked.md) keyword can be used to prevent overflow checking.
 
 ## Example
 
@@ -38,8 +38,8 @@ This sample shows how to use `checked` to enable overflow checking at run time.
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Keywords](../../../csharp/language-reference/keywords/index.md)
-- [Checked and Unchecked](../../../csharp/language-reference/keywords/checked-and-unchecked.md)
-- [unchecked](../../../csharp/language-reference/keywords/unchecked.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Keywords](./index.md)
+- [Checked and Unchecked](./checked-and-unchecked.md)
+- [unchecked](./unchecked.md)

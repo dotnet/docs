@@ -23,7 +23,7 @@ Called when a `catch` block for an exception is found inside the common language
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionCLRCatcherFound();  
 ```  
   

@@ -23,7 +23,7 @@ Gets the estimated binary size of the assembly and its metadata in the current s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSaveSize (  
     [in]  CorSaveSize fSave,  
     [out] DWORD       *pdwSaveSize  

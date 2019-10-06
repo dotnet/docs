@@ -22,7 +22,7 @@ Provides flags to specify the level at which to apply or modify assembly policy.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     ePolicyLevelNone         = 0x0,  
     ePolicyLevelRetargetable = 0x1,  

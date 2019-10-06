@@ -39,7 +39,7 @@ Holds values that can be only `True` or `False`. The keywords `True` and `False`
 ## Example  
  In the following example, `runningVB` is a `Boolean` variable, which stores a simple yes/no setting.  
   
-```  
+```vb  
 Dim runningVB As Boolean  
 ' Check to see if program is running on Visual Basic engine.  
 If scriptEngine = "VB" Then  

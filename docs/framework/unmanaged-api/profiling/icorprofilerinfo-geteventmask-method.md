@@ -23,7 +23,7 @@ Gets the current event categories for which the profiler wants to receive event 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEventMask(  
     [out] DWORD *pdwEvents);  
 ```  
@@ -35,7 +35,7 @@ HRESULT GetEventMask(
 ## Remarks  
   
 > [!NOTE]
->  You should call the [GetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md) method instead of this method. Although the `SetEventMask` method continues to be supported, [GetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md) provides additional functionality.  
+> You should call the [GetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md) method instead of this method. Although the `SetEventMask` method continues to be supported, [GetEventMask2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo5-geteventmask2-method.md) provides additional functionality.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

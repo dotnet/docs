@@ -23,7 +23,7 @@ Sets or updates features of the metadata signature of a permission set defined b
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPermissionSetProps (   
     [in]  mdToken         tk,   
     [in]  DWORD           dwAction,   

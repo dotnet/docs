@@ -23,7 +23,7 @@ Determines whether the specified frame is the parent of the current frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2  
                                       *pPotentialParentFrame,  
                               [out] BOOL *pIsParent);  

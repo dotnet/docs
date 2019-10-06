@@ -23,7 +23,7 @@ Provides a callback function that is guaranteed to be called when a common langu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestRuntimeLoadedNotification (  
     [in] RuntimeLoadedCallbackFnPtr pCallbackFunction);  
 ```  
@@ -51,7 +51,7 @@ HRESULT RequestRuntimeLoadedNotification (
   
  The callback function has the following prototype:  
   
-```  
+```cpp  
 typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(  
                      ICLRRuntimeInfo *pRuntimeInfo,  
                      CallbackThreadSetFnPtr pfnCallbackThreadSet,  
@@ -62,13 +62,13 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
   
 - `pfnCallbackThreadSet`:  
   
-    ```  
+    ```cpp  
     typedef HRESULT (__stdcall *CallbackThreadSetFnPtr)();  
     ```  
   
 - `pfnCallbackThreadUnset`:  
   
-    ```  
+    ```cpp  
     typedef HRESULT (__stdcall *CallbackThreadUnsetFnPtr)();  
     ```  
   
@@ -81,7 +81,7 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
 - `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` are both non-reentrant.  
   
 > [!NOTE]
->  Host applications must not call `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` outside the scope of the `pCallbackFunction` parameter.  
+> Host applications must not call `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` outside the scope of the `pCallbackFunction` parameter.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

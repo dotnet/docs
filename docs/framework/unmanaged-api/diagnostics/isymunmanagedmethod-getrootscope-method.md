@@ -23,7 +23,7 @@ Gets the root lexical scope within this method. This scope encloses the entire m
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRootScope(  
     [out, retval] ISymUnmanagedScope** pRetVal);  
 ```  

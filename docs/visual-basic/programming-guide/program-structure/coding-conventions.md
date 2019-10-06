@@ -40,7 +40,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 - If **Pretty listing (reformatting) of code** doesn't format continuation lines automatically, manually indent continuation lines one tab stop. However, always left-align items in a list.  
   
-    ```  
+    ```vb  
     a As Integer,  
     b As Integer  
     ```  
@@ -69,9 +69,11 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 ### String Data Type  
   
-- To concatenate strings, use an ampersand (&).  
+- Use [string interpolation](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/strings/interpolated-strings) to concatenate short strings, as shown in the following code.
   
-     [!code-vb[VbVbalrGuidelines#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#4)]  
+     ```vb
+     MsgBox($"hello{vbCrLf}goodbye")
+     ```
   
 - To append strings in loops, use the <xref:System.Text.StringBuilder> object.  
   

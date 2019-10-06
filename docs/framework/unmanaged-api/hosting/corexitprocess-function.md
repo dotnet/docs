@@ -28,7 +28,7 @@ Shuts down the current unmanaged process.
   
 ## Syntax  
   
-```  
+```cpp  
 void STDMETHODCALLTYPE CorExitProcess (   
   int  exitCode  
 );  
@@ -41,7 +41,7 @@ void STDMETHODCALLTYPE CorExitProcess (
 ## Remarks  
   
 > [!NOTE]
->  Beginning with the .NET Framework 4, `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.  
+> Beginning with the .NET Framework 4, `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

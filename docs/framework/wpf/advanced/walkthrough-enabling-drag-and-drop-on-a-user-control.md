@@ -61,7 +61,7 @@ You need Visual Studio to complete this walkthrough.
 
 5. Open Circle.xaml.cs or Circle.xaml.vb.
 
-6. In C#, add the following code after the default constructor to create a copy constructor. In Visual Basic, add the following code to create both a default constructor and a copy constructor.
+6. In C#, add the following code after the parameterless constructor to create a copy constructor. In Visual Basic, add the following code to create both a parameterless constructor and a copy constructor.
 
      In order to allow the user control to be copied, you add a copy constructor method in the code-behind file. In the simplified Circle user control, you will only copy the Fill and the size of the of the user control.
 
@@ -74,7 +74,7 @@ You need Visual Studio to complete this walkthrough.
 
 2. Add the following XAML to the opening <xref:System.Windows.Window> tag to create an XML namespace reference to the current application.
 
-    ```
+    ```xaml
     xmlns:local="clr-namespace:DragDropExample"
     ```
 

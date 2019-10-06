@@ -41,14 +41,14 @@ foreach(string str in cList)
   
  This code produces the following output:  
   
-```  
+```output  
 Child One Text  
 Child Two Text  
 Child Four Text  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
 ```csharp  
 XElement root = XElement.Parse(@"<Root xmlns='http://www.adatum.com'>  
@@ -83,7 +83,7 @@ foreach (string str in cList)
   
  This code produces the following output:  
   
-```  
+```output  
 Child One Text  
 Child Two Text  
 Child Four Text  
@@ -94,5 +94,5 @@ Child Four Text
 - <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [Projection Operations (C#)](../../../../csharp/programming-guide/concepts/linq/projection-operations.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [Projection Operations (C#)](./projection-operations.md)

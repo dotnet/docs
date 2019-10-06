@@ -23,7 +23,7 @@ Walks the managed frames on the stack for the specified thread, and sends inform
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DoStackSnapshot(  
     [in] ThreadID thread,  
     [in] StackSnapshotCallback *callback,  

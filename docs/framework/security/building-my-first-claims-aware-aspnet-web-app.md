@@ -21,7 +21,7 @@ author: "BrucePerlerMS"
   
 3. The user is redirected from the STS to the claims-aware application with the STS-issued token in the request.  
   
-4. The claims-aware application is configured to trust the STS and the tokens it issues. The claims-aware application uses WIF to validate the token and to parse it. Developers use the appropriate WIF API and types, for example, **ClaimsPrincpal** for the application’s needs, such as implementing authorization for it.  
+4. The claims-aware application is configured to trust the STS and the tokens it issues. The claims-aware application uses WIF to validate the token and to parse it. Developers use the appropriate WIF API and types, for example, **ClaimsPrincipal** for the application’s needs, such as implementing authorization for it.  
   
  Starting from .NET 4.5, WIF is part of the .NET Framework package. Having the WIF classes directly available in the framework allows a much deeper integration of claims-based identity in .NET, making it easier to use claims. With WIF 4.5, you do not need to install any out-of-band components in order to start developing claims-aware web applications. WIF classes are now spread across various assemblies, the main ones being System.Security.Claims, System.IdentityModel and System.IdentityModel.Services.  
   
@@ -35,12 +35,12 @@ author: "BrucePerlerMS"
   
  To build your first claims-aware ASP.NET application using WIF, follow the instructions in one of the following:  
   
-- [How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md)  
+- [How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF](how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md)  
   
-- [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)  
+- [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)  
   
-- [How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication](../../../docs/framework/security/claims-aware-aspnet-app-forms-authentication.md)  
+- [How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication](claims-aware-aspnet-app-forms-authentication.md)  
   
 ## See also
 
-- [Getting Started With WIF](../../../docs/framework/security/getting-started-with-wif.md)
+- [Getting Started With WIF](getting-started-with-wif.md)

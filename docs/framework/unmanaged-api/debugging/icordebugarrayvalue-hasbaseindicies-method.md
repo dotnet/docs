@@ -23,7 +23,7 @@ Gets a value that indicates whether any dimensions of this array have a base ind
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HasBaseIndicies (  
     [out] BOOL    *pbHasBaseIndicies  
 );  

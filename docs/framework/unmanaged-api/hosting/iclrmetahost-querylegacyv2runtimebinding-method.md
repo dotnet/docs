@@ -23,7 +23,7 @@ Returns an interface that represents a runtime to which legacy activation policy
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QueryLegacyV2RuntimeBinding (  
     [in] REFIID riid,  
     [out, iid_is(riid), retval] LPVOID *ppUnk);  

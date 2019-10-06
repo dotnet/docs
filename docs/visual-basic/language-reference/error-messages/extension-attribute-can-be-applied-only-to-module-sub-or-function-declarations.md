@@ -22,7 +22,7 @@ The only way to extend a data type in Visual Basic is to define an extension met
 ## Example  
  The following example defines a `Print` method for the `String` data type.  
   
-```  
+```vb  
 Imports StringUtility  
 Imports System.Runtime.CompilerServices  
 Namespace StringUtility  

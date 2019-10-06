@@ -10,7 +10,7 @@ Enables or disables virtual module splitting.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableVirtualModuleSplitting(  
    BOOL enableSplitting  
 );  
@@ -24,7 +24,7 @@ HRESULT EnableVirtualModuleSplitting(
  Virtual module splitting causes [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) to recognize modules that were merged together during the build process and present them as a group of separate modules rather than a single large module. Doing this changes the behavior of various [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) methods described below.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
  This method can be called and the value of `enableSplitting` can be changed at any time. It does not cause any stateful functional changes in an [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) object, other than altering the behavior of the methods listed in the [Virtual module splitting and the unmanaged debugging APIs](#APIs) section at the time they are called. Using virtual modules does incur a performance penalty when calling those methods. In addition, significant in-memory caching of the virtualized metadata may be required to correctly implement the [IMetaDataImport](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) APIs, and these caches may be retained even after virtual module splitting has been turned off.  
   

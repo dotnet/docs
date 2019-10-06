@@ -1,14 +1,16 @@
 ---
-title: Load Data
-description: Load data file and streaming data into ML.NET
-ms.date: 05/03/2019
-ms.custom: mvc,how-to
-#Customer intent: As a developer I want to know how to load data from file and streaming data sources.
+title: Load data from files and other sources
+description: This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
+ms.date: 09/11/2019
+author: luisquintanilla
+ms.author: luquinta
+ms.custom: mvc,how-to, title-hack-0625
+#Customer intent: As a developer I want to know how to load data from file and other data sources.
 ---
 
-# Load data from file and in-memory sources
+# Load data from files and other sources
 
-This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or real-time / streaming data sources.
+This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
 
 ## Create the data model
 
@@ -27,7 +29,7 @@ public class HousingData
 {
     [LoadColumn(0)]
     public float Size { get; set; }
- 
+
     [LoadColumn(1, 3)]
     [VectorType(3)]
     public float[] HistoricalPrices { get; set; }
@@ -47,11 +49,12 @@ The [`LoadColumn`](xref:Microsoft.ML.Data.LoadColumnAttribute) attribute specifi
 > [!IMPORTANT]
 > [`LoadColumn`](xref:Microsoft.ML.Data.LoadColumnAttribute) is only required when loading data from a file.
 
-Load columns as: 
+Load columns as:
+
 - Individual columns like `Size` and `CurrentPrices` in the `HousingData` class.
 - Multiple columns at a time in the form of a vector like `HistoricalPrices` in the `HousingData` class.
 
-If you have a vector property, apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to the property in your data model. It's important to note that all of the elements in the vector need to be the same type.
+If you have a vector property, apply the [`VectorType`](xref:Microsoft.ML.Data.VectorTypeAttribute) attribute to the property in your data model. It's important to note that all of the elements in the vector need to be the same type. Keeping the columns separated allows for ease and flexibility of feature engineering, but for a very large number of columns, operating on the individual columns causes an impact on training speed.
 
 ML.NET Operates through column names. If you want to change the name of a column to something other than the property name, use the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute. When creating in-memory objects, you still create objects using the property name. However, for data processing and building machine learning models, ML.NET overrides and references the property with the value provided in the [`ColumnName`](xref:Microsoft.ML.Data.ColumnNameAttribute) attribute.
 
@@ -98,16 +101,67 @@ TextLoader textLoader = mlContext.Data.CreateTextLoader<HousingData>(separatorCh
 IDataView data = textLoader.Load("DataFolder/SubFolder1/1.txt", "DataFolder/SubFolder2/1.txt");
 ```
 
-## Load data from a streaming source
+## Load data from a relational database
 
-In addition to loading data stored on disk, ML.NET supports loading data from various streaming sources that include but are not limited to:
+> [!NOTE]
+> DatabaseLoader is currently in preview. It can be used by referencing the [Microsoft.ML.Experimental](https://www.nuget.org/packages/Microsoft.ML.Experimental/0.16.0-preview) and [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/4.6.1) NuGet packages.
+
+ML.NET supports loading data from a variety of relational databases supported by [`System.Data`](xref:System.Data) that include SQL Server, Azure SQL Database, Oracle, SQLite, PostgreSQL, Progress, IBM DB2, and many more.
+
+Given a database with a table named `House` and the following schema:
+
+```SQL
+CREATE TABLE [House] (
+    [HouseId] int NOT NULL IDENTITY,
+    [Size] real NOT NULL,
+    [Price] real NOT NULL
+    CONSTRAINT [PK_House] PRIMARY KEY ([HouseId])
+);
+```
+
+The data can be modeled by a class like `HouseData`.
+
+```csharp
+public class HouseData
+{
+    public float Size { get; set; }
+
+    public float Price { get; set; }
+}
+```
+
+Then, inside of your application, create a `DatabaseLoader`.
+
+```csharp
+MLContext mlContext = new MLContext();
+
+DatabaseLoader loader = mlContext.Data.CreateDatabaseLoader<HouseData>();
+```
+
+Define your connection string as well as the SQL command to be executed on the database and create a `DatabaseSource` instance. This sample uses a LocalDB SQL Server database with a file path. However, DatabaseLoader supports any other valid connection string for databases on-premises and in the cloud.
+
+```csharp
+string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=<YOUR-DB-FILEPATH>;Database=<YOUR-DB-NAME>;Integrated Security=True;Connect Timeout=30";
+
+string sqlCommand = "SELECT Size,Price FROM House";
+
+DatabaseSource dbSource = new DatabaseSource(SqlClientFactory.Instance,connectionString,sqlCommand);
+```
+
+Finally, use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
+
+```csharp
+IDataView data = loader.Load(dbSource);
+```
+
+## Load data from other sources
+
+In addition to loading data stored in files, ML.NET supports loading data from sources that include but are not limited to:
 
 - In-memory collections
 - JSON/XML
-- Databases
 
-> [!IMPORTANT]
-> Note that when working with streaming sources, ML.NET expects input to be in the form of an in-memory collection. Therefore, when working with sources like JSON/XML, make sure to format the data into an in-memory collection.
+Note that when working with streaming sources, ML.NET expects input to be in the form of an in-memory collection. Therefore, when working with sources like JSON/XML, make sure to format the data into an in-memory collection.
 
 Given the following in-memory collection:
 
@@ -136,6 +190,9 @@ HousingData[] inMemoryCollection = new HousingData[]
 ```
 
 Load the in-memory collection into an [`IDataView`](xref:Microsoft.ML.IDataView) with the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) method:
+
+> [!IMPORTANT]
+> [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) assumes that the [`IEnumerable`](xref:System.Collections.IEnumerable) it loads from is thread-safe.
 
 ```csharp
 // Create MLContext

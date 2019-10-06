@@ -23,7 +23,7 @@ Creates a manual-reset event object for the implementation of a reader lock.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRWLockReaderEvent (  
     [in]  BOOL bInitialState,  
     [in]  SIZE_T cookie,  

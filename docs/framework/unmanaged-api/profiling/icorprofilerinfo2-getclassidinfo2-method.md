@@ -23,7 +23,7 @@ Gets the parent module and metadata token for the open generic definition of the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassIDInfo2(  
     [in]  ClassID classId,  
     [out] ModuleID *pModuleId,  

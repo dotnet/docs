@@ -11,13 +11,14 @@ C# 8.0 introduces **async streams**, which model a streaming source of data when
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Create a data source that generates a sequence of data elements asynchronously.
-> * Consume that data source asynchronously.
-> * Recognize when the new interface and data source are preferred to earlier synchronous data sequences.
+>
+> - Create a data source that generates a sequence of data elements asynchronously.
+> - Consume that data source asynchronously.
+> - Recognize when the new interface and data source are preferred to earlier synchronous data sequences.
 
 ## Prerequisites
 
-You’ll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available starting with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0). Async streams are first available in .NET Core 3.0 preview 1.
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8 compiler is available starting with [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
 
 You'll need to create a [GitHub access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/#creating-a-token) so that you can access the GitHub GraphQL endpoint. Select the following permissions for your GitHub Access Token:
 

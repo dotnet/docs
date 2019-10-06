@@ -35,7 +35,7 @@ var filename = "PurchaseOrder.xml";
 var currentDirectory = Directory.GetCurrentDirectory();
 var purchaseOrderFilepath = Path.Combine(currentDirectory, filename);
 
-XElement purchaseOrder = XElement.Load($"{purchaseOrderFilepath}");
+XElement purchaseOrder = XElement.Load(purchaseOrderFilepath);
 
 IEnumerable<string> partNos =  from item in purchaseOrder.Descendants("Item")
                                select (string) item.Attribute("PartNumber");
@@ -55,7 +55,7 @@ var filename = "PurchaseOrder.xml";
 var currentDirectory = Directory.GetCurrentDirectory();
 var purchaseOrderFilepath = Path.Combine(currentDirectory, filename);
 
-XElement purchaseOrder = XElement.Load($"{purchaseOrderFilepath}");
+XElement purchaseOrder = XElement.Load(purchaseOrderFilepath);
 
 IEnumerable<XElement> pricesByPartNos =  from item in purchaseOrder.Descendants("Item")
                                  where (int) item.Element("Quantity") * (decimal) item.Element("USPrice") > 100
@@ -110,11 +110,11 @@ new XElement("Contacts",
 );
 ```
 
-For more information, see [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md).
+For more information, see [Creating XML Trees (C#)](./creating-xml-trees-linq-to-xml-2.md).
 
 ## See also
 
-- [Reference (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/reference-linq-to-xml.md)
-- [LINQ to XML vs. DOM (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-vs-dom.md)
-- [LINQ to XML vs. Other XML Technologies](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md)
+- [Reference (LINQ to XML)](./reference-linq-to-xml.md)
+- [LINQ to XML vs. DOM (C#)](./linq-to-xml-vs-dom.md)
+- [LINQ to XML vs. Other XML Technologies](./linq-to-xml-vs-other-xml-technologies.md)
 - <xref:System.Xml.Linq>

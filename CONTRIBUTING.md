@@ -2,30 +2,31 @@
 
 Thank you for your interest in contributing to the .NET documentation!
 
-> We're in the process of moving our guidelines into a site-wide contribution guide. 
+> We're in the process of moving our guidelines into a site-wide contribution guide.
 > To see the new guidance, visit [Microsoft Docs contributor guide overview](https://docs.microsoft.com/contribute/).
 
 The document covers the process for contributing to the articles and code samples that are hosted on the [.NET documentation site](https://docs.microsoft.com/dotnet). Contributions may be as simple as typo corrections or as complex as new articles.
 
-* [Process for contributing](#process-for-contributing)
-* [The C# interactive experience](#the-c-interactive-experience)
-* [DOs and DON'Ts](#dos-and-donts)
-* [Contributor License Agreement](#contributor-license-agreement)
+- [Process for contributing](#process-for-contributing)
+- [The C# interactive experience](#the-c-interactive-experience)
+- [DOs and DON'Ts](#dos-and-donts)
+- [Contributor License Agreement](#contributor-license-agreement)
 
 This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
 
-- [Code samples and snippets](https://github.com/dotnet/samples)
-- [API reference](https://github.com/dotnet/dotnet-api-docs)
-- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
-
-Issues and tasks for all these repositories are tracked here.
+- [Code samples and snippets](https://github.com/dotnet/samples)  
+    Issues and tasks for this repository are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
+- [.NET API reference](https://github.com/dotnet/dotnet-api-docs)  
+    Issues and tasks for this repository are tracked in [dotnet/dotnet-api-docs/issues](https://github.com/dotnet/dotnet-api-docs/issues).
+- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)  
+    Issues and taks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
 
 ## Process for contributing
 
 You need a basic understanding of [Git and GitHub.com](https://guides.github.com/activities/hello-world/).
 
 **Step 1:** Skip this step for small changes (for example, if you're correcting a typo or immediately opening a pull request to address an issue that you find in the docs). If you're interested in writing new content or in thoroughly revising existing content, open an [issue](https://github.com/dotnet/docs/issues) describing what you want to do.
-The content inside the **docs** folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal.
+The content inside the *docs* folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal.
 
 -or-
 
@@ -35,14 +36,13 @@ You can also choose from existing issues for which community contributions are w
 
 - **Content updates**. Given the enormity of the doc set, content easily becomes outdated and requires revision. In addition, for a variety of reason, some content has been duplicated or even triplicated. Updating content involves making sure that individual topics are current or revising content in a feature area to eliminate duplication and ensure that all unique content is preserved in the smaller documentation set.
 
-- **New content authoring**. If you're interested in authoring your own topic, these issues list topics that we know we'd like to add to our doc set. Let us know before you begin working on a topic, though. If you're interested in writing a topic that isn't listed here, open an issue. 
+- **New content authoring**. If you're interested in authoring your own topic, these issues list topics that we know we'd like to add to our doc set. Let us know before you begin working on a topic, though. If you're interested in writing a topic that isn't listed here, open an issue.
 
 You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
 
 **Step 2:** Fork the `dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
 
-For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. 
-GitHub creates the new branch for you when you submit the changes.
+For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. GitHub creates the new branch for you when you submit the changes.
 
 **Step 3:** Make the changes on this new branch.
 
@@ -51,7 +51,7 @@ If it's a new topic, you can use this [template file](./styleguide/template.md) 
 Navigate to the folder that corresponds to the TOC location determined for your article in step 1.
 That folder contains the Markdown files for all articles in that section.
 If necessary, create a new folder to place the files for your content. The main article for that section is called *index.md*.
-For images and other static resources, create a subfolder called **media** inside the folder that contains your article, if it doesn't already exist. Inside the **media** folder, create a subfolder with the article name (except for the index file).
+For images and other static resources, create a subfolder called *media* inside the folder that contains your article, if it doesn't already exist. Inside the *media* folder, create a subfolder with the article name (except for the index file).
 Include larger samples in the *samples* folder under the root of the repo.
 
 Be sure to follow the proper Markdown syntax. For more information, see the [style guide](./styleguide/template.md).
@@ -69,7 +69,7 @@ docs
             portability_report.png
 ```
 
-**Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
+**Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`, `dotnet/dotnet-api-docs/master`, or `dotnet/samples/master`.
 
 Your PR should *always* target the master branch. You should *never* open a PR that targets the live branch.
 
@@ -103,10 +103,7 @@ In addition, all samples under the *core* and *standard* folders should build an
 
 We may expand these directories as the docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories.
 
-Each complete sample that you create should contain a *readme.md* file. This file should
-contain a short description of the sample (one or two paragraphs). Your *readme.md*
-should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain
-a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
+Each complete sample that you create should contain a *readme.md* file. This file should contain a short description of the sample (one or two paragraphs). Your *readme.md* should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
 with `https://docs.microsoft.com/dotnet`.
 
@@ -116,11 +113,7 @@ For more information, see the [Samples Readme](https://github.com/dotnet/samples
 
 ## The C# interactive experience
 
-Short code samples in C# can use the `csharp-interactive` language tag to
-specify a C# sample that runs in the browser. (Inline code samples use the
-`csharp-interactive` tag, for snippets included from source, use the
-`code-csharp-interactive` tag.) These code samples
-display a code window and an output window in the article. The output window displays any output from
+Short code samples in C# can use the `csharp-interactive` language tag to specify a C# sample that runs in the browser. (Inline code samples use the `csharp-interactive` tag, for snippets included from source, use the `code-csharp-interactive` tag.) These code samples display a code window and an output window in the article. The output window displays any output from
 executing the interactive code once the user has run the sample. 
 
 The C# interactive experience changes how we work with samples. Visitors can run the sample

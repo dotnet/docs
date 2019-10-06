@@ -42,7 +42,7 @@ While this mechanism was sufficient for most purposes, it suffered from the foll
 
 - It is not compatible with the newer layout managers introduced with the .NET Framework version 2.0, such as <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>.
 
-- It did not support scaling based directly on the display resolution that is required for compatibility to the [!INCLUDE[compact](../../../includes/compact-md.md)].
+- It did not support scaling based directly on the display resolution that is required for compatibility to the .NET Compact Framework.
 
 Although this mechanism is preserved in the .NET Framework version 2.0 to maintain backward compatibility, it has been superseded by the more robust scaling mechanism described next. As a consequence, the <xref:System.Windows.Forms.Form.AutoScale%2A>, <xref:System.Windows.Forms.Form.ApplyAutoScaling%2A>, <xref:System.Windows.Forms.Form.AutoScaleBaseSize%2A>, and certain <xref:System.Windows.Forms.Control.Scale%2A> overloads are marked as obsolete.
 
@@ -57,7 +57,7 @@ The .NET Framework version 2.0 surmounts previous limitations by introducing the
 
 - The <xref:System.Windows.Forms.Control> class also has several new members that allow it to participate in scaling and to support mixed scaling on the same form. Specifically the <xref:System.Windows.Forms.Control.Scale%2A>, <xref:System.Windows.Forms.Control.ScaleChildren%2A>, and <xref:System.Windows.Forms.Control.GetScaledBounds%2A> members support scaling.
 
-- Support for scaling based upon the screen resolution has been added to complement system font support, as defined by the <xref:System.Windows.Forms.AutoScaleMode> enumeration. This mode is compatible with automatic scaling supported by the [!INCLUDE[compact](../../../includes/compact-md.md)] enabling easier application migration.
+- Support for scaling based upon the screen resolution has been added to complement system font support, as defined by the <xref:System.Windows.Forms.AutoScaleMode> enumeration. This mode is compatible with automatic scaling supported by the .NET Compact Framework enabling easier application migration.
 
 - Compatibility with layout managers such as <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel> has been added to the implementation of automatic scaling.
 

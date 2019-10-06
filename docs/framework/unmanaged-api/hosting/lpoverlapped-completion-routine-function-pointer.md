@@ -24,7 +24,7 @@ Points to a function that notifies the host when an overlapped (that is, asynchr
   
 ## Syntax  
   
-```  
+```cpp  
 typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (  
     [in] DWORD  dwErrorCode,  
     [in] DWORD  dwNumberOfBytesTransfered,  

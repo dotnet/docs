@@ -7,13 +7,13 @@ dev_langs:
 ms.assetid: 1767f3a7-29d2-4834-a763-7d169693fa8b
 ---
 # Calling Service Operations (WCF Data Services)
-The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] defines service operations for a data service. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to define such operations as methods on the data service. Like other data service resources, these service operations are addressed by using URIs. A service operation can return collections of entity types, single entity type instances, and primitive types, such as integer and string. A service operation can also return `null` (`Nothing` in Visual Basic). The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library can be used to access service operations that support HTTP GET requests. These kinds of service operations are defined as methods that have the <xref:System.ServiceModel.Web.WebGetAttribute> applied. For more information, see [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md).  
+The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] defines service operations for a data service. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to define such operations as methods on the data service. Like other data service resources, these service operations are addressed by using URIs. A service operation can return collections of entity types, single entity type instances, and primitive types, such as integer and string. A service operation can also return `null` (`Nothing` in Visual Basic). The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library can be used to access service operations that support HTTP GET requests. These kinds of service operations are defined as methods that have the <xref:System.ServiceModel.Web.WebGetAttribute> applied. For more information, see [Service Operations](service-operations-wcf-data-services.md).  
   
  Service operations are exposed in the metadata returned by a data service that implements the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]. In the metadata, service operations are represented as `FunctionImport` elements. When generating the strongly-typed <xref:System.Data.Services.Client.DataServiceContext>, the Add Service Reference and DataSvcUtil.exe tools ignore this element. Because of this, you will not find a method on the context that can be used to call a service operation directly. However, you can still use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client to call service operations in one of these two ways:  
   
 - By calling the <xref:System.Data.Services.Client.DataServiceContext.Execute%2A> method on the <xref:System.Data.Services.Client.DataServiceContext>, supplying the URI of the service operation, along with any parameters. This method is used to call any GET service operation.  
   
-- By using the <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> to create a <xref:System.Data.Services.Client.DataServiceQuery%601> object. When calling <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A>, the name of the service operation is supplied to the `entitySetName` parameter. This method returns a <xref:System.Data.Services.Client.DataServiceQuery%601> object that calls the service operation when enumerated or when the <xref:System.Data.Services.Client.DataServiceQuery%601.Execute%2A> method is called. This method is used to call GET service operations that return a collection. A single parameter can be supplied by using the <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method. The <xref:System.Data.Services.Client.DataServiceQuery%601> object returned by this method can be further composed against like any query object. For more information, see [Querying the Data Service](../../../../docs/framework/data/wcf/querying-the-data-service-wcf-data-services.md).  
+- By using the <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> to create a <xref:System.Data.Services.Client.DataServiceQuery%601> object. When calling <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A>, the name of the service operation is supplied to the `entitySetName` parameter. This method returns a <xref:System.Data.Services.Client.DataServiceQuery%601> object that calls the service operation when enumerated or when the <xref:System.Data.Services.Client.DataServiceQuery%601.Execute%2A> method is called. This method is used to call GET service operations that return a collection. A single parameter can be supplied by using the <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method. The <xref:System.Data.Services.Client.DataServiceQuery%601> object returned by this method can be further composed against like any query object. For more information, see [Querying the Data Service](querying-the-data-service-wcf-data-services.md).  
   
 ## Considerations for Calling Service Operations  
  The following considerations apply when using the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client to call service operations.  
@@ -33,19 +33,19 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] defines serv
 ## Examples of Calling Service Operations  
  This section contains the following examples of how to call service operations by using the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library:  
   
-- [Calling Execute&lt;T&gt; to Return a Collection of Entities](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecuteIQueryable)  
+- [Calling Execute&lt;T&gt; to Return a Collection of Entities](calling-service-operations-wcf-data-services.md#ExecuteIQueryable)  
   
-- [Using CreateQuery&lt;T&gt; to Return a Collection of Entities](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#CreateQueryIQueryable)  
+- [Using CreateQuery&lt;T&gt; to Return a Collection of Entities](calling-service-operations-wcf-data-services.md#CreateQueryIQueryable)  
   
-- [Calling Execute&lt;T&gt; to Return a Single Entity](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecuteSingleEntity)  
+- [Calling Execute&lt;T&gt; to Return a Single Entity](calling-service-operations-wcf-data-services.md#ExecuteSingleEntity)  
   
-- [Calling Execute&lt;T&gt; to Return a Collection of Primitive Values](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecutePrimitiveCollection)  
+- [Calling Execute&lt;T&gt; to Return a Collection of Primitive Values](calling-service-operations-wcf-data-services.md#ExecutePrimitiveCollection)  
   
-- [Calling Execute&lt;T&gt; to Return a Single Primitive Value](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecutePrimitiveValue)  
+- [Calling Execute&lt;T&gt; to Return a Single Primitive Value](calling-service-operations-wcf-data-services.md#ExecutePrimitiveValue)  
   
-- [Calling a Service Operation that Returns No Data](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecuteVoid)  
+- [Calling a Service Operation that Returns No Data](calling-service-operations-wcf-data-services.md#ExecuteVoid)  
   
-- [Calling a Service Operation Asynchronously](../../../../docs/framework/data/wcf/calling-service-operations-wcf-data-services.md#ExecuteAsync)  
+- [Calling a Service Operation Asynchronously](calling-service-operations-wcf-data-services.md#ExecuteAsync)  
   
 <a name="ExecuteIQueryable"></a>   
 ### Calling Execute\<T> to Return a Collection of Entities  
@@ -120,4 +120,4 @@ The [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] defines serv
   
 ## See also
 
-- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [WCF Data Services Client Library](wcf-data-services-client-library.md)

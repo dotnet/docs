@@ -11,13 +11,13 @@ Along with late bound access to values through weakly typed variables, the <xref
  Additionally, the strongly typed **DataSet** provides access to values as the correct type at compile time. With a strongly typed **DataSet**, type mismatch errors are caught when the code is compiled rather than at run time.  
   
 ## In This Section  
- [Generating Strongly Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-strongly-typed-datasets.md)  
+ [Generating Strongly Typed DataSets](generating-strongly-typed-datasets.md)  
  Describes how to create and use a strongly typed **DataSet**.  
   
- [Annotating Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/annotating-typed-datasets.md)  
+ [Annotating Typed DataSets](annotating-typed-datasets.md)  
  Describes how to annotate the XML Schema definition language (XSD) schema used to generate a strongly typed **DataSet**, to give **DataSet** elements friendly names without altering the underlying schema.  
   
 ## See also
 
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

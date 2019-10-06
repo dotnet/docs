@@ -15,8 +15,8 @@ ms.author: "mairaw"
 
 Removes custom application settings.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md)   
+[**\<configuration>**](../configuration-element.md)   
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## Syntax
@@ -37,7 +37,7 @@ Removes custom application settings.
 
 |     | Description |
 | --- | ----------- |
-| [**\<appSettings>**](~/docs/framework/configure-apps/file-schema/appsettings/appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
+| [**\<appSettings>**](appsettings-element-for-configuration.md) | Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application. |
 
 ## Child elements
 
@@ -55,4 +55,4 @@ The following example shows how to remove a custom configuration setting for `Ap
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](../index.md)

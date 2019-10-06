@@ -25,7 +25,7 @@ Allocates a new object instance of the specified type, without attempting to cal
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewObjectNoConstructor (  
     [in] ICorDebugClass     *pClass  
 );  

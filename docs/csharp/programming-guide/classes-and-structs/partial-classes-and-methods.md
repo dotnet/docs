@@ -10,7 +10,7 @@ ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
 ---
 # Partial Classes and Methods (C# Programming Guide)
 
-It is possible to split the definition of a [class](../../../csharp/language-reference/keywords/class.md), a [struct](../../../csharp/language-reference/keywords/struct.md), an [interface](../../../csharp/language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
+It is possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/keywords/struct.md), an [interface](../../language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
 
 ## Partial Classes
 
@@ -20,7 +20,7 @@ There are several situations when splitting a class definition is desirable:
 
 - When working with automatically generated source, code can be added to the class without having to recreate the source file. Visual Studio uses this approach when it creates Windows Forms, Web service wrapper code, and so on. You can create code that uses these classes without having to modify the file created by Visual Studio.
 
-- To split a class definition, use the [partial](../../../csharp/language-reference/keywords/partial-type.md) keyword modifier, as shown here:
+- To split a class definition, use the [partial](../../language-reference/keywords/partial-type.md) keyword modifier, as shown here:
 
   [!code-csharp[csProgGuideObjects#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#26)]
 
@@ -85,25 +85,25 @@ There are several rules to follow when you are working with partial class defini
 
 - The following keywords on a partial-type definition are optional, but if present on one partial-type definition, cannot conflict with the keywords specified on another partial definition for the same type:
 
-  - [public](../../../csharp/language-reference/keywords/public.md)
+  - [public](../../language-reference/keywords/public.md)
 
-  - [private](../../../csharp/language-reference/keywords/private.md)
+  - [private](../../language-reference/keywords/private.md)
 
-  - [protected](../../../csharp/language-reference/keywords/protected.md)
+  - [protected](../../language-reference/keywords/protected.md)
 
-  - [internal](../../../csharp/language-reference/keywords/internal.md)
+  - [internal](../../language-reference/keywords/internal.md)
 
-  - [abstract](../../../csharp/language-reference/keywords/abstract.md)
+  - [abstract](../../language-reference/keywords/abstract.md)
 
-  - [sealed](../../../csharp/language-reference/keywords/sealed.md)
+  - [sealed](../../language-reference/keywords/sealed.md)
 
   - base class
 
-  - [new](../../../csharp/language-reference/keywords/new.md) modifier (nested parts)
+  - [new](../../language-reference/keywords/new-modifier.md) modifier (nested parts)
 
   - generic constraints
 
-For more information, see [Constraints on Type Parameters](../../../csharp/programming-guide/generics/constraints-on-type-parameters.md).
+For more information, see [Constraints on Type Parameters](../generics/constraints-on-type-parameters.md).
 
 ## Example 1
 
@@ -146,19 +146,19 @@ partial void onNameChanged()
 }
 ```
 
-- Partial method declarations must begin with the contextual keyword [partial](../../../csharp/language-reference/keywords/partial-type.md) and the method must return [void](../../../csharp/language-reference/keywords/void.md).
+- Partial method declarations must begin with the contextual keyword [partial](../../language-reference/keywords/partial-type.md) and the method must return [void](../../language-reference/keywords/void.md).
 
-- Partial methods can have [in](../../../csharp/language-reference/keywords/in-parameter-modifier.md) or [ref](../../../csharp/language-reference/keywords/ref.md) but not [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) parameters.
+- Partial methods can have [in](../../language-reference/keywords/in-parameter-modifier.md) or [ref](../../language-reference/keywords/ref.md) but not [out](../../language-reference/keywords/out-parameter-modifier.md) parameters.
 
-- Partial methods are implicitly [private](../../../csharp/language-reference/keywords/private.md), and therefore they cannot be [virtual](../../../csharp/language-reference/keywords/virtual.md).
+- Partial methods are implicitly [private](../../language-reference/keywords/private.md), and therefore they cannot be [virtual](../../language-reference/keywords/virtual.md).
 
-- Partial methods cannot be [extern](../../../csharp/language-reference/keywords/extern.md), because the presence of the body determines whether they are defining or implementing.
+- Partial methods cannot be [extern](../../language-reference/keywords/extern.md), because the presence of the body determines whether they are defining or implementing.
 
-- Partial methods can have [static](../../../csharp/language-reference/keywords/static.md) and [unsafe](../../../csharp/language-reference/keywords/unsafe.md) modifiers.
+- Partial methods can have [static](../../language-reference/keywords/static.md) and [unsafe](../../language-reference/keywords/unsafe.md) modifiers.
 
 - Partial methods can be generic. Constraints are put on the defining partial method declaration, and may optionally be repeated on the implementing one. Parameter and type parameter names do not have to be the same in the implementing declaration as in the defining one.
 
-- You can make a [delegate](../../../csharp/language-reference/keywords/delegate.md) to a partial method that has been defined and implemented, but not to a partial method that has only been defined.
+- You can make a [delegate](../../language-reference/keywords/delegate.md) to a partial method that has been defined and implemented, but not to a partial method that has only been defined.
 
 ## C# Language Specification
 
@@ -166,8 +166,8 @@ For more information, see [Partial types](~/_csharplang/spec/classes.md#partial-
 
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)
-- [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md)
-- [Interfaces](../../../csharp/programming-guide/interfaces/index.md)
-- [partial (Type)](../../../csharp/language-reference/keywords/partial-type.md)
+- [C# Programming Guide](../index.md)
+- [Classes](./classes.md)
+- [Structs](./structs.md)
+- [Interfaces](../interfaces/index.md)
+- [partial (Type)](../../language-reference/keywords/partial-type.md)

@@ -23,7 +23,7 @@ Gets the current execution context for the given thread in the target process. T
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext (  
     [in] ULONG32            threadID,  
     [in] ULONG32            contextFlags,  

@@ -1,7 +1,7 @@
 ---
 title: What is ML.NET and how does it work?
-description: ML.NET gives you the ability to add machine learning to .NET applications. With this capability, you can make automatic predictions using the data available to your application. This article explains the basics of machine learning in ML.NET. 
-ms.date: 04/10/2019
+description: ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET. 
+ms.date: 09/27/2019
 ms.topic: overview
 ms.custom: mvc
 ms.author: nakersha
@@ -11,7 +11,9 @@ author: natke
 
 # What is ML.NET and how does it work?
 
-ML.NET gives you the ability to add machine learning to .NET applications. With this capability, you can make automatic predictions using the data available to your application. This article explains the basics of machine learning in ML.NET. 
+ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network. This article explains the basics of machine learning in ML.NET.
+
+ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, except for TensorFlow, LightGBM, and ONNX related functionality.
 
 Examples of the type of predictions that you can make with ML.NET include:
 
@@ -28,8 +30,6 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
  ```csharp
     using System;
-    using System.IO;
-    using Microsoft.Data.DataView;
     using Microsoft.ML;
     using Microsoft.ML.Data;
     
@@ -80,6 +80,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 ## Code workflow
 
 The following diagram represents the application code structure, as well as the iterative process of model development:
+
 - Collect and load training data into an **IDataView** object
 - Specify a pipeline of operations to extract features and apply a machine learning algorithm
 - Train a model by calling **Fit()** on the pipeline
@@ -161,17 +162,20 @@ In this section, we go through the architectural patterns of ML.NET. If you are 
 
 An ML.NET application starts with an <xref:Microsoft.ML.MLContext> object. This singleton object contains **catalogs**. A catalog is a factory for data loading and saving, transforms, trainers, and model operation components. Each catalog object has methods to create the different types of components:
 
-||||
-|-|-|-|
-|Data loading and saving||<xref:Microsoft.ML.DataOperationsCatalog>|
-|Data preparation||<xref:Microsoft.ML.TransformsCatalog>|
-|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>|
-||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>|
-||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>|
-||Ranking|<xref:Microsoft.ML.RankingCatalog>|
-||Regression|<xref:Microsoft.ML.RegressionCatalog>|
-||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|
-|Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>|
+|||||
+|-|-|-|-|
+|Data loading and saving||<xref:Microsoft.ML.DataOperationsCatalog>||
+|Data preparation||<xref:Microsoft.ML.TransformsCatalog>||
+|Training algorithms|Binary classification|<xref:Microsoft.ML.BinaryClassificationCatalog>||
+||Multiclass classification|<xref:Microsoft.ML.MulticlassClassificationCatalog>||
+||Anomaly detection|<xref:Microsoft.ML.AnomalyDetectionCatalog>||
+||Clustering|<xref:Microsoft.ML.ClusteringCatalog>||
+||Forecasting|<xref:Microsoft.ML.ForecastingCatalog>||
+||Ranking|<xref:Microsoft.ML.RankingCatalog>||
+||Regression|<xref:Microsoft.ML.RegressionCatalog>||
+||Recommendation|<xref:Microsoft.ML.RecommendationCatalog>|add the `Microsoft.ML.Recommender` NuGet package|
+||TimeSeries|<xref:Microsoft.ML.TimeSeriesCatalog>|add the `Microsoft.ML.TimeSeries` NuGet package|
+|Model usage ||<xref:Microsoft.ML.ModelOperationsCatalog>||
 
 You can navigate to the creation methods in each of the above categories. Using Visual Studio, the catalogs show up via IntelliSense.
 
@@ -214,7 +218,7 @@ You can transform input data into predictions in bulk, or one input at a time. I
 
 ```csharp
     var size = new HouseData() { Size = 2.5F };
-    var predEngine = model.CreatePredictionEngine<HouseData, Prediction>(mlContext);
+    var predEngine = mlContext.CreatePredictionEngine<HouseData, Prediction>(model);
     var price = predEngine.Predict(size);
 ```
  
@@ -224,7 +228,7 @@ The `CreatePredictionEngine()` method takes an input class and an output class. 
 
 At the core of an ML.NET machine learning pipeline are [DataView](xref:Microsoft.ML.IDataView) objects.
 
-Each transformation in the pipeline has an input schema (data names, types, and sizes that the transform expects to see on its input); and an output schema (data names, types, and sizes that the transform produces after the transformation). 
+Each transformation in the pipeline has an input schema (data names, types, and sizes that the transform expects to see on its input); and an output schema (data names, types, and sizes that the transform produces after the transformation). The following document provides an in-depth explanation of the [IDataView interface and its type system](https://xadupre.github.io/machinelearningext/mlnetdocs/idataviewtypesystem.html).
 
 If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
 

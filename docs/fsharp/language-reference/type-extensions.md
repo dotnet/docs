@@ -7,9 +7,9 @@ ms.date: 02/08/2019
 
 Type extensions (also called _augmentations_) are a family of features that let you add new members to a previously defined object type. The three features are:
 
-* Intrinsic type extensions
-* Optional type extensions
-* Extension methods
+- Intrinsic type extensions
+- Optional type extensions
+- Extension methods
 
 Each can be used in different scenarios and has different tradeoffs.
 
@@ -60,9 +60,9 @@ type Variant with
 
 Using a type extension allows you to separate each of the following:
 
-* The declaration of a `Variant` type
-* Functionality to print the `Variant` class depending on its "shape"
-* A way to access the printing functionality with object-style `.`-notation
+- The declaration of a `Variant` type
+- Functionality to print the `Variant` class depending on its "shape"
+- A way to access the printing functionality with object-style `.`-notation
 
 This is an alternative to defining everything as a member on `Variant`. Although it is not an inherently better approach, it can be a cleaner representation of functionality in some situations.
 
@@ -115,9 +115,9 @@ type IEnumerable<'T> with
 
 There is no way to get this code to work with an optional type extension:
 
-* As is, the `Sum` member has a different constraint on `'T` (`static member get_Zero` and `static member (+)`) than what the type extension defines.
-* Modifying the type extension to have the same constraint as `Sum` will no longer match the defined constraint on `IEnumerable<'T>`.
-* Changing `member this.Sum` to `member inline this.Sum` will give an error that type constraints are mismatched.
+- As is, the `Sum` member has a different constraint on `'T` (`static member get_Zero` and `static member (+)`) than what the type extension defines.
+- Modifying the type extension to have the same constraint as `Sum` will no longer match the defined constraint on `IEnumerable<'T>`.
+- Changing `member this.Sum` to `member inline this.Sum` will give an error that type constraints are mismatched.
 
 What is desired are static methods that "float in space" and can be presented as if they're extending a type. This is where extension methods become necessary.
 
@@ -144,26 +144,26 @@ When used, this code will make it appear as if `Sum` is defined on <xref:System.
 
 Type extensions also have the following attributes:
 
-* Any type that can be accessed can be extended.
-* Intrinsic and optional type extensions can define _any_ member type, not just methods. So extension properties are also possible, for example.
-* The `self-identifier` token in the [syntax](type-extensions.md#syntax) represents the instance of the type being invoked, just like ordinary members.
-* Extended members can be static or instance members.
-* Type variables on a type extension must match the constraints of the declared type.
+- Any type that can be accessed can be extended.
+- Intrinsic and optional type extensions can define _any_ member type, not just methods. So extension properties are also possible, for example.
+- The `self-identifier` token in the [syntax](type-extensions.md#syntax) represents the instance of the type being invoked, just like ordinary members.
+- Extended members can be static or instance members.
+- Type variables on a type extension must match the constraints of the declared type.
 
 The following limitations also exist for type extensions:
 
-* Type extensions do not support virtual or abstract methods.
-* Type extensions do not support override methods as augmentations.
-* Type extensions do not support [Statically Resolved Type Parameters](generics/statically-resolved-type-parameters.md).
-* Optional Type extensions do not support constructors as augmentations.
-* Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
-* Type extensions are not valid for `byref<'T>` (though they can be declared).
-* Type extensions are not valid for attributes (though they can be declared).
-* You can define extensions that overload other methods of the same name, but the F# compiler gives preference to non-extension methods if there is an ambiguous call.
+- Type extensions do not support virtual or abstract methods.
+- Type extensions do not support override methods as augmentations.
+- Type extensions do not support [Statically Resolved Type Parameters](./generics/statically-resolved-type-parameters.md).
+- Optional Type extensions do not support constructors as augmentations.
+- Type extensions cannot be defined on [type abbreviations](type-abbreviations.md).
+- Type extensions are not valid for `byref<'T>` (though they can be declared).
+- Type extensions are not valid for attributes (though they can be declared).
+- You can define extensions that overload other methods of the same name, but the F# compiler gives preference to non-extension methods if there is an ambiguous call.
 
 Finally, if multiple intrinsic type extensions exist for one type, all members must be unique. For optional type extensions, members in different type extensions to the same type can have the same names. Ambiguity errors occur only if client code opens two different scopes that define the same member names.
 
 ## See also
 
 - [F# Language Reference](index.md)
-- [Members](members/index.md)
+- [Members](./members/index.md)

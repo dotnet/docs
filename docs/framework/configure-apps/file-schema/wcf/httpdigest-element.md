@@ -6,17 +6,18 @@ ms.assetid: 3da4f276-dfd9-4247-8c07-01d83618727c
 # \<httpDigest> Element
 Specifies a digest type credential used when authenticating the client to a service.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<endpointBehaviors>  
-\<behavior>  
-\<clientCredentials>  
-\<httpDigest>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<httpDigest>**  
   
 ## Syntax  
   
 ```xml  
-<digest impersonationLevel="Identification/Impersonation/Delegation/Anonymous/None" />
+<httpDigest impersonationLevel="Identification/Impersonation/Delegation/Anonymous/None" />
 ```  
   
 ## Attributes and Elements  
@@ -35,7 +36,7 @@ Specifies a digest type credential used when authenticating the client to a serv
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate a client to a service.|  
+|[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate a client to a service.|  
   
 ## Remarks  
  A digest is a hash determined by using an algorithm and a set of inputs. The authenticator and the authenticated agree upon an algorithm and exchange the data used as inputs. The client can calculate the hash and send it to the service. The service also calculates the hash and compares the values. A match validates the client.  
@@ -50,7 +51,7 @@ Specifies a digest type credential used when authenticating the client to a serv
 - <xref:System.ServiceModel.Description.ClientCredentials.HttpDigest%2A>
 - <xref:System.ServiceModel.Configuration.HttpDigestClientElement>
 - <xref:System.ServiceModel.Security.HttpDigestClientCredential>
-- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)
-- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)
-- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

@@ -23,7 +23,7 @@ Gets a value that indicates the kind of handle referenced by this ICorDebugHandl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandleType (  
     [out] CorDebugHandleType  *pType  
 );  

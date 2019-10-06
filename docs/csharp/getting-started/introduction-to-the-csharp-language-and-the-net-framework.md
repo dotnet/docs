@@ -38,9 +38,9 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  The following are additional C# resources:  
   
-- For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../../csharp/language-reference/language-specification/index.md).  
+- For a good general introduction to the language, see Chapter 1 of the [C# Language Specification](../language-reference/language-specification/index.md).  
   
-- For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
+- For detailed information about specific aspects of the C# language, see the [C# Reference](../language-reference/index.md).  
   
 - For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](../programming-guide/concepts/linq/index.md).  
 
@@ -48,7 +48,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
 
  C# programs run on the .NET Framework, an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.  
   
- Source code written in C# is compiled into an intermediate language (IL) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored on disk in an executable file called an assembly, typically with an extension of .exe or .dll. An assembly contains a manifest that provides information about the assembly's types, version, culture, and security requirements.  
+ Source code written in C# is compiled into an [intermediate language (IL)](../../standard/managed-code.md) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored on disk in an executable file called an assembly, typically with an extension of .exe or .dll. An assembly contains a manifest that provides information about the assembly's types, version, culture, and security requirements.  
   
  When the C# program is executed, the assembly is loaded into the CLR, which might take various actions based on the information in the manifest. Then, if the security requirements are met, the CLR performs just in time (JIT) compilation to convert the IL code to native machine instructions. The CLR also provides other services related to automatic garbage collection, exception handling, and resource management. Code that is executed by the CLR is sometimes referred to as "managed code," in contrast to "unmanaged code" which is compiled into native machine language that targets a specific system. The following diagram illustrates the compile-time and run-time relationships of C# source code files, the .NET Framework class libraries, assemblies, and the CLR.  
   
@@ -62,5 +62,5 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 ## See also
 
-- [C#](../../csharp/index.md)
+- [C#](../index.md)
 - [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

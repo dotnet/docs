@@ -23,7 +23,7 @@ Returns the source server data for the module. The caller must free resources by
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceServerData(  
     [out] ULONG* pDataByteCount,   
     [out, size_is (, *pDataByteCount)] BYTE** ppData);  

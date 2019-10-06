@@ -23,7 +23,7 @@ Sets the flags that must be embedded in a precompiled image in order for the run
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetDesiredNGENCompilerFlags (  
     [in] DWORD    pdwFlags  
 );  

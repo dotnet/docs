@@ -12,7 +12,7 @@ Normally when hosting a Windows Communication Foundation (WCF) service under Int
 Configuration-based activation takes the metadata that used to be placed in the .svc file and places it in the Web.config file. Within the<`serviceHostingEnvironment`> element there is a <`serviceActivations`> element. Within the <`serviceActivations`> element are one or more <`add`> elements, one for each hosted service. The <`add`> element contains attributes that let you set the relative address for the service and the service type or a service host factory. The following configuration example code shows how this section is used.
 
 > [!NOTE]
->  Each <`add`> element must specify a service or a factory attribute. Specifying both service and factory attributes is allowed.
+> Each <`add`> element must specify a service or a factory attribute. Specifying both service and factory attributes is allowed.
 
 ```xml
 <serviceHostingEnvironment>
@@ -25,6 +25,7 @@ Configuration-based activation takes the metadata that used to be placed in the 
  With this in the Web.config file, you can place the service source code in the App_Code directory of the application or a complied assembly in the Bin directory of the application.
 
 > [!NOTE]
+>
 > - When using configuration-based activation, inline code in .svc files is not supported.
 > - The `relativeAddress` attribute must be set to a relative address such as "\<sub-directory>/service.svc" or "~/\<sub-directory/service.svc".
 > - A configuration exception is thrown if you register a relative address that does not have a known extension associated with WCF.

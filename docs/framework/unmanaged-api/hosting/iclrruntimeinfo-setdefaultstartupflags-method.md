@@ -23,7 +23,7 @@ Sets the startup flags and the host configuration file that will be used to star
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetDefaultStartupFlags(  
            [in]  DWORD dwStartupFlags,  
            [in]  LPCWSTR pwzHostConfigFile);  

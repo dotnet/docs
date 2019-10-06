@@ -23,7 +23,7 @@ Notifies the code profiler that an object with a finalizer has been queued to th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FinalizeableObjectQueued(  
     [in] DWORD finalizerFlags,  
     [in] ObjectID objectID);  

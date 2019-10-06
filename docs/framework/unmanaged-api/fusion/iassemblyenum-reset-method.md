@@ -19,18 +19,18 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IAssemblyEnum::Reset Method
-Resets this [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md) object to its starting position.  
+Resets this [IAssemblyEnum](iassemblyenum-interface.md) object to its starting position.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset (  
     void  
 );  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -38,4 +38,4 @@ HRESULT Reset (
   
 ## See also
 
-- [IAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)
+- [IAssemblyEnum Interface](iassemblyenum-interface.md)

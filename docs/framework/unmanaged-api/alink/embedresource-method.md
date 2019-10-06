@@ -23,7 +23,7 @@ Declares an embedded resource. This method does not actually embed the resource.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmbedResource(  
     mdAssembly  AssemblyID,  
     mdToken     FileToken,  
@@ -47,7 +47,7 @@ HRESULT EmbedResource(
  Offset of resource from RVA.  
   
  `dwFlags`  
- Accessibility flags such as `mrPublic` and `mrPrivate`. These flags may be passed to [DefineExportedType Method](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineexportedtype-method.md).  
+ Accessibility flags such as `mrPublic` and `mrPrivate`. These flags may be passed to [DefineExportedType Method](../metadata/imetadataassemblyemit-defineexportedtype-method.md).  
   
 ## Return Value  
  Returns S_OK if the method succeeds.  
@@ -57,6 +57,6 @@ HRESULT EmbedResource(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

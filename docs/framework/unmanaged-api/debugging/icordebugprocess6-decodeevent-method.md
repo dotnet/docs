@@ -10,7 +10,7 @@ Decodes managed debug events that have been encapsulated in the payload of speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DecodeEvent(  
         [in, length_is(countBytes), size_is(countBytes)]  const BYTE pRecord[],  
         [in] DWORD countBytes,  
@@ -43,7 +43,7 @@ HRESULT DecodeEvent(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

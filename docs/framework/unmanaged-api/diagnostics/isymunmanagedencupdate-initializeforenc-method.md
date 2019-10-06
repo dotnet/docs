@@ -23,7 +23,7 @@ Allows method boundaries to be computed before the first call to the [ISymUnmana
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeForEnc();  
 ```  
   

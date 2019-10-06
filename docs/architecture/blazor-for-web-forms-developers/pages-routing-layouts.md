@@ -60,9 +60,9 @@ The equivalent page in a Blazor app would look like this:
     <button @onclick="OnClick">Submit</button>
 </div>
 <div>
-    if (name != null)
+    @if (name != null)
     {
-        Hello @name
+        @:Hello @name
     }
 </div>
 

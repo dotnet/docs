@@ -52,7 +52,7 @@ You can test user controls from other projects in your current project's test co
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.RadioButton> control from the **Toolbox** onto the control's design surface.
 
-3. Press <kbd>F5<kbd> to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
+3. Press <kbd>F5</kbd> to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
 
 4. Click the **Load** button.
 

@@ -129,7 +129,7 @@ To see the effects of setting properties on the hosted control, follow these ste
      [!code-csharp[WpfLayoutHostingWfWithXaml#101](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml.cs#101)]
      [!code-vb[WpfLayoutHostingWfWithXaml#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic/Window1.xaml.vb#101)]
 
-4. Press </kbd>F5</kbd> to build and run the application.
+4. Press <kbd>F5</kbd> to build and run the application.
 
 5. Click the **Click me** button. The `button1_Click` event handler sets the <xref:System.Windows.Forms.Control.Top%2A> and <xref:System.Windows.Forms.Control.Left%2A> properties on the hosted control. This causes the hosted control to be repositioned within the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. The host maintains the same screen area, but the hosted control is clipped. Instead, the hosted control should always fill the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.
 

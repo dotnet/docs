@@ -1,6 +1,6 @@
 ---
 name: Doc request
-about: Request a new topic to help us improve
+about: Request a new article to help us improve
 
 ---
 
@@ -9,9 +9,9 @@ about: Request a new topic to help us improve
 - Tell us what search terms you used and how you searched docs.
 - Tell us what docs you found that didn't address your concern.
 
-**Describe the new topic**
+**Describe the new article**
 
-- Explain why this topic is needed.
+- Explain why this article is needed.
 - Suggest a location in the Table of Contents.
-- Write an abstract. In one **short** paragraph, describe what this topic will cover.
-- Create an outline for the new topic. We'll help review the outline and approve it before anyone writes a topic.
+- Write an abstract. In one **short** paragraph, describe what this article will cover.
+- Create an outline for the new article. We'll help review the outline and approve it before anyone writes the article.

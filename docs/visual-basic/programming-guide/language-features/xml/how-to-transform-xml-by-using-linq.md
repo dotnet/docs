@@ -112,7 +112,7 @@ ms.assetid: 815687f4-0bc2-4c0b-adc6-d78744aa356f
   
 6. Press F5 to run the code. The resulting saved document will resemble the following:  
   
-    ```  
+    ```html  
     <?xml version="1.0"?>  
     <html>  
       <body>  

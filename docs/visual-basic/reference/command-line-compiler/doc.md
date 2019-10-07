@@ -12,9 +12,13 @@ Processes documentation comments to an XML file.
   
 ## Syntax  
   
-```  
+```console  
 -doc[+ | -]  
-' -or-  
+```
+
+or  
+
+```console
 -doc:file  
 ```  
   

@@ -4,7 +4,7 @@ The <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> co
 
 #### Version introduced
 
-.NET Core 3.0 Preview 8
+3.0 Preview 8
 
 #### Details
 

@@ -15,9 +15,13 @@ Defines conditional compiler constants.
   
 ## Syntax  
   
-```  
+```console  
 -define:["]symbol[=value][,symbol[=value]]["]  
-' -or-  
+```
+
+or
+
+```console  
 -d:["]symbol[=value][,symbol[=value]]["]  
 ```  
   

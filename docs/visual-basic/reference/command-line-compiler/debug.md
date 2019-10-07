@@ -13,11 +13,15 @@ Causes the compiler to generate debugging information and place it in the output
   
 ## Syntax  
   
-```  
+```console 
 -debug[+ | -]  
-' -or-  
+```
+
+or
+
+```console  
 -debug:[full | pdbonly]  
-```  
+```
   
 ## Arguments  
   
@@ -40,7 +44,7 @@ Causes the compiler to generate debugging information and place it in the output
 ## Example  
  The following example puts debugging information in output file `App.exe`.  
   
-```  
+```console  
 vbc -debug -out:app.exe test.vb  
 ```  
   

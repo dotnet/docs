@@ -1,0 +1,134 @@
+---
+title: Create virtual extension methods with default interface members
+description: Using default interface members you can extend interfaces with optional virtual implementations. 
+ms.date: 10/04/2019
+---
+# Tutorial: Update interfaces with default interface members in C# 8.0
+
+Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. This provides new capabilities where you can declare if implementors can or must override the default implementation. You can also specify if an implementation from a class can be overriden by more derived classes.
+
+In this tutorial, you'll learn how to:
+
+> [!div class="checklist"]
+>
+> * Create interfaces with implementations that describe discrete features.
+> * Create classes that use the default implementations.
+> * Create classes that override some or all of the default implementations.
+
+## Prerequisites
+
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 preview compiler. The C# 8.0 preview compiler is available starting with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0). Default interface members are available beginning with .NET Core 3.0 preview 4.
+
+## Limitations of extension methods
+
+One way provide behavior that appears to be part of an interface is to define [extension methods](../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. This enables interfaces to declare a minimum set of members while providing a greater surface area for any class that implements that interface. This works well. The extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
+
+Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to chose that implementation. When the compile time type matches the interface, method calls resolve to the extension method.
+
+Starting with C# 8.0, you can use declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this sounds similar to how you could use [extension methods](../programming-guide/classes-and-structs/extension-methods.md). Default interface methods enable `virtual` methods, which provides important new behavior. 
+
+In this article, you'll learn how virtual default interface implementations enable new scenarios.
+
+## Design the application.
+
+Consider a home automation application. You'd probably have many different types of lights and indicators that could be used throughout the house. Every light must support APIs to turn them on and off, and to report the current state. Some lights and indicators may support other features, such as:
+
+- Turn light on, then turn it off after a timer.
+- Blink the light for a period of time.
+
+Some of these extended capabilities could be emulated in devices that support the minimal set. That indicates providing a default implementation. For those devices that have more capabilities built in, the device software would use the native capabilities. For other lights, they could choose to implement the interface and use the default implementation.
+
+Default interface members is a better solution for this scenario than extension methods. Class authors can control which interfaces they choose to implement. Only those interfaces they choose are available as methods. In addition, because default interface methods can be virtual, the method dispatch always chooses the implementation in the class. 
+
+Let's create the code to demonstrate these differences.
+
+## Create interfaces
+
+Start by creating the interface that defines the behavior for all lights:
+
+[!code-csharp[Declare base interface](~/samples/csharp/tutorials/virtual-interface-methods/UnusedSampleCode.cs?name=SnippetILightInterfaceV1)]
+
+A basic overhead light fixture might implement this interface as shown in the following code:
+
+[!code-csharp[First overhead light](~/samples/csharp/tutorials/virtual-interface-methods/UnusedExampleCode.cs?name=SnippetOverheadLightV1)]
+
+In this tutorial, the code doesn't drive IoT devices, but emulate those activities by writing messages to the console. You can explore the code without automating your house.
+
+Next, let's define the interfaces for a light that can automatically turn off after a timeout:
+
+[!code-csharp[pure Timer interface](~/samples/csharp/tutorials/virtual-interface-methods/UnusedExampleCode.cs?name=SnippetPureTimerInterface)]
+
+You could add a basic implementation to the overhead light, but a better solution is to modify this interface definition to provide a `virtual` default implementation:
+
+[!code-csharp[Timer interface](~/samples/csharp/tutorials/virtual-interface-methods/ITimerLight.cs?name=SnippetTimerLightFinal)]
+
+By adding that change, the `OverheadLight` can implement the timer function by declaring support for the interface:
+
+```csharp
+public class OverheadLight : ITimerLight
+```
+
+The `TurnOnFor` method is `public` and `virtual`, so is seen as part of the public interface for the `OverheadLight`. A different light type may support a more sophisticated protocol. It can provide its own implementation fro `TurnOnFor`, as shown in the following code:
+
+[!code-csharp[Override the timer function](~/samples/csharp/tutorials/virtual-interface-methods/HalogenLight.cs?name=SnippetHalogenLight)]
+
+There are a few important points about the preceding code. First of all, because `TurnOnFor` is virtual, calls will resolve to the derived `HalogenLight.TurnOnFor` implementation, even when accessed through a variable of type `ITimerLight`. Virtual dispatch works just like `virtual` methods declared in base classes. However, unlike overriding class methods, the declaration of `TurnOnFor` in the `HalogenLight` class does not need the `override` keyword. 
+
+## Mix and match capabilities
+
+The advantages of virtual interface methods becomes more clear as you introduce more advanced capabilities. Using interfaces enables you to mix and match capabilities. It also enables each class author to choose between the default implementation and a custom implementation. Let's add an interface with a default implmentation for a blinking light:
+
+[!code-csharp[Define the blinking light interface](~/samples/csharp/tutorials/virtual-interface-methods/IBlinkingLight.cs?name=SnippetBlinkingLight)]
+
+The default implementation enables any light to blink. The overhead light can add both timer and blink capabilities using the default implementation:
+
+[!code-csharp[Use the default blink function](~/samples/csharp/tutorials/virtual-interface-methods/OverheadLight.cs?name=SnippetOverheadLight)]
+
+A new light type, the `LEDLight` supports both the timer function and the blink function directly. This light style implements both the `ITimerLight` and `IBlinkingLight` interfaces, and overrides the `Blink` method:
+
+[!code-csharp[Override the blink function](~/samples/csharp/tutorials/virtual-interface-methods/LEDLight.cs?name=SnippetOverheadLight)]
+
+An `ExtraFancyLight` might support both blink and timer functions directly:
+
+[!code-csharp[Override the blink and timer function](~/samples/csharp/tutorials/virtual-interface-methods/ExtraFancyLight.cs?name=SnippetExtraFancyLight)]
+
+The `HalogenLight` you created earlier does not support blinking. You just don't add the `IBlinkingLight` to the list of its supported interfaces.
+
+## Detect the light types using pattern matching
+
+
+
+=> Somewhere in here, use pattern matching to use the lights.
+
+This scenario shows a base interface without any implementations. Adding a method into the `IIndicatorLight` interface introduces new complexities. The language rules governing default interface methods minimize the effect on the concrete classes that implement multiple derived interfaces. Let's enhance the original interface with a new method to show how that changes its use. Every indicator light can report its power status as an enumerated value:
+
+```csharp
+enum PowerStatus
+{
+    NoPower,
+    ACPower,
+    FullBattery,
+    MidBattery,
+    LowBattery
+}
+```
+
+
+The default implementation would assume AC power:
+
+```csharp
+public interface IIndicatorLight
+{
+    void SwitchOn();
+    void SwitchOff();
+    bool IsOn();
+    public virtual PowerStatus Power() => PowerStatus.NoPower;
+}
+```
+
+Explain "nearest implementation"
+<< Compile and fix errors. Maybe factor power into its own interface. Or, put it in a base class. Or use generics for derived interfaces...>>
+
+<< Contrast with extension methods re: patterns, best implementation.>>
+
+This sample shows one scenario where you can define discrete features that can be mixed into classes to declare any set of supported functionality. You can deconstruct functionality to discrete, independent interfaces. Any class can implement any or all of the optional interfaces. Each can declare its capabilities by declaring which interfaces it does or doesn't support. The use of virtual default interface methods enables classes to use or define a different implementation for any or or all the interface methods. This language capability provides new ways to model the real world systems you're building. Default interface methods provide a more clear way to express related classes that may mix and match different features using virtual implementations of those capabilities.

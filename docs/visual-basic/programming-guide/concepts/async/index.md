@@ -37,7 +37,7 @@ The [Async](../../../../visual-basic/language-reference/modifiers/async.md) and 
 
 The following example shows an async method. Almost everything in the code should look completely familiar to you. The comments call out the features that you add to create the asynchrony.
 
-You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://github.com/dotnet/samples/tree/master/async/async-and-await/vb).
+You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-vb/).
 
 ```vb
 ' Three things to note about writing an Async Function:
@@ -245,7 +245,7 @@ You can ignore the convention where an event, base class, or interface contract 
 
 ## <a name="BKMK_CompleteExample"></a> Complete Example
 
-The following code is the MainWindow.xaml.vb file from the Windows Presentation Foundation (WPF) application that this topic discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://github.com/dotnet/samples/tree/master/async/async-and-await/vb).
+The following code is the MainWindow.xaml.vb file from the Windows Presentation Foundation (WPF) application that this topic discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-vb/).
 
 [!code-vb[async](~/samples/async/async-and-await/vb/MainWindow.xaml.vb)]
 

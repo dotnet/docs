@@ -135,7 +135,7 @@ Set the `watchForChanges` parameter to `true`, and the `PredictionEnginePool` st
 The model is identified by the `modelName` parameter so that more than one model per application can be reloaded upon change. 
 
 > [!TIP]
-> Alternatively, you can use the `FromUri` method when working with models stored remotely. Rather than watching for file changed events, `FromUri` polls the remote location for changes. The polling interval defaults to 5 minutes. You can increase or decrease the polling interval based on your application's requirements. In the code sample below, the model polls the specified URI every minute.
+> Alternatively, you can use the `FromUri` method when working with models stored remotely. Rather than watching for file changed events, `FromUri` polls the remote location for changes. The polling interval defaults to 5 minutes. You can increase or decrease the polling interval based on your application's requirements. In the code sample below, the `PredictionEnginePool` polls the model stored at the specified URI every minute.
 >    
 >```csharp
 >builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()

@@ -5,7 +5,7 @@ ms.date: 10/04/2019
 ---
 # Tutorial: Update interfaces with default interface members in C# 8.0
 
-Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. This provides new capabilities where you can declare if implementors can or must override the default implementation. You can also specify if an implementation from a class can be overriden by more derived classes.
+Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. This feature provides new capabilities where you declare if implementors can or must override the default implementation. You specify if an implementation from a class may be overridden by more derived classes.
 
 In this tutorial, you'll learn how to:
 
@@ -21,24 +21,24 @@ You’ll need to set up your machine to run .NET Core, including the C# 8.0 prev
 
 ## Limitations of extension methods
 
-One way provide behavior that appears to be part of an interface is to define [extension methods](../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. This enables interfaces to declare a minimum set of members while providing a greater surface area for any class that implements that interface. This works well. The extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
+One way you can implement behavior that appears as part of an interface is to define [extension methods](../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. The extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
 
-Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to chose that implementation. When the compile time type matches the interface, method calls resolve to the extension method.
+Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension method.
 
-Starting with C# 8.0, you can use declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this sounds similar to how you could use [extension methods](../programming-guide/classes-and-structs/extension-methods.md). Default interface methods enable `virtual` methods, which provides important new behavior. 
+Starting with C# 8.0, you can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../programming-guide/classes-and-structs/extension-methods.md). Default interface methods enable `virtual` methods, which provide important new behavior. 
 
 In this article, you'll learn how virtual default interface implementations enable new scenarios.
 
 ## Design the application.
 
-Consider a home automation application. You'd probably have many different types of lights and indicators that could be used throughout the house. Every light must support APIs to turn them on and off, and to report the current state. Some lights and indicators may support other features, such as:
+Consider a home automation application. You probably have many different types of lights and indicators that could be used throughout the house. Every light must support APIs to turn them on and off, and to report the current state. Some lights and indicators may support other features, such as:
 
 - Turn light on, then turn it off after a timer.
 - Blink the light for a period of time.
 
 Some of these extended capabilities could be emulated in devices that support the minimal set. That indicates providing a default implementation. For those devices that have more capabilities built in, the device software would use the native capabilities. For other lights, they could choose to implement the interface and use the default implementation.
 
-Default interface members is a better solution for this scenario than extension methods. Class authors can control which interfaces they choose to implement. Only those interfaces they choose are available as methods. In addition, because default interface methods can be virtual, the method dispatch always chooses the implementation in the class. 
+Default interface members is a better solution for this scenario than extension methods. Class authors can control which interfaces they choose to implement. Those interfaces they choose are available as methods. In addition, because default interface methods can be virtual, the method dispatch always chooses the implementation in the class. 
 
 Let's create the code to demonstrate these differences.
 
@@ -76,7 +76,7 @@ There are a few important points about the preceding code. First of all, because
 
 ## Mix and match capabilities
 
-The advantages of virtual interface methods becomes more clear as you introduce more advanced capabilities. Using interfaces enables you to mix and match capabilities. It also enables each class author to choose between the default implementation and a custom implementation. Let's add an interface with a default implmentation for a blinking light:
+The advantages of virtual interface methods become clearer as you introduce more advanced capabilities. Using interfaces enables you to mix and match capabilities. It also enables each class author to choose between the default implementation and a custom implementation. Let's add an interface with a default implementation for a blinking light:
 
 [!code-csharp[Define the blinking light interface](~/samples/csharp/tutorials/virtual-interface-methods/IBlinkingLight.cs?name=SnippetBlinkingLight)]
 
@@ -96,7 +96,7 @@ The `HalogenLight` you created earlier does not support blinking. You just don't
 
 ## Detect the light types using pattern matching
 
-Next, let's write some test code. You can make use of C#'s [pattern matching](../pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it support.  The following method exercises the supported capabilities of each light:
+Next, let's write some test code. You can make use of C#'s [pattern matching](../pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it supports.  The following method exercises the supported capabilities of each light:
 
 [!code-csharp[Test a light's capabilities](~/samples/csharp/tutorials/virtual-interface-methods/Program.cs?name=SnippetTestLightFunctions)]
 
@@ -114,8 +114,8 @@ The default implementation assumes AC power:
 
 [!code-csharp[Report a default power status](~/samples/csharp/tutorials/virtual-interface-methods/ILight.cs?name=SnippetILightInterface)]
 
-These changes compile cleanly, even though the `ExtraFancyLight` declares support for the `ILight` interface and both derived interfaces, `ITimerLight` and `IBlinkingLight`. There's only one "closest" implementation declared in the `ILight` interface. Any class that declared an override would become the one "closest" implementation, as shown in the preceding examples overriding the members of the other derived interfaces.
+These changes compile cleanly, even though the `ExtraFancyLight` declares support for the `ILight` interface and both derived interfaces, `ITimerLight` and `IBlinkingLight`. There's only one "closest" implementation declared in the `ILight` interface. Any class that declared an override would become the one "closest" implementation. You saw examples in the preceding classes that overrode the members of other derived interfaces.
 
-You should avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `PowerStatus`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. You can usually avoid this situation by keeping interface definitions small and focused on one feature. In this scenario, each capability of a light is its own interface, multiple interfaces are only inherited by classes.
+Avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `PowerStatus`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. You can usually avoid this situation by keeping interface definitions small and focused on one feature. In this scenario, each capability of a light is its own interface, multiple interfaces are only inherited by classes.
 
-This sample shows one scenario where you can define discrete features that can be mixed into classes to declare any set of supported functionality. You can deconstruct functionality to discrete, independent interfaces. Any class can implement any or all of the optional interfaces. Each can declare its capabilities by declaring which interfaces it does or doesn't support. The use of virtual default interface methods enables classes to use or define a different implementation for any or or all the interface methods. This language capability provides new ways to model the real world systems you're building. Default interface methods provide a more clear way to express related classes that may mix and match different features using virtual implementations of those capabilities.
+This sample shows one scenario where you can define discrete features that can be mixed into classes. You declare any set of supported functionality by declaring which interfaces a class supports. The use of virtual default interface methods enables classes to use or define a different implementation for any or all the interface methods. This language capability provides new ways to model the real world systems you're building. Default interface methods provide a clearer way to express related classes that may mix and match different features using virtual implementations of those capabilities.

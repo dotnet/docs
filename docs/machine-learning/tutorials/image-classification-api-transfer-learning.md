@@ -134,7 +134,7 @@ In this tutorial, only bridge deck images are used.
     1. Below the `Program` class in *Program.cs*, define the schema of your input data in a new class called `ModelInput`.
 
         ```csharp
-        class ImageInput
+        class ModelInput
         {
             public string ImagePath { get; set; }
 

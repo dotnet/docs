@@ -162,7 +162,7 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Multiclass Classification](../resources/glossary.md#multiclass-classification)
-- [Multiclass Classification Model Metrics](../resources/metrics.md#metrics#metrics-for-multi-class-classification)
+- [Multiclass Classification Model Metrics](../resources/metrics.md#metrics-for-multi-class-classification)
 
 
 

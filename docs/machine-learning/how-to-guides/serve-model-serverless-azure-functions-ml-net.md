@@ -151,7 +151,7 @@ The model is identified by the `modelName` parameter so that more than one model
 >    
 >```csharp
 >builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
->   FromUri(
+>   .FromUri(
 >       modelName: "SentimentAnalysisModel", 
 >       uri:"https://github.com/dotnet/samples/raw/master/machine-learning/models/sentimentanalysis/sentiment_model.zip", 
 >       period: TimeSpan.FromMinutes(1));

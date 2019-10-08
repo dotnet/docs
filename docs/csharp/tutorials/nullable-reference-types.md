@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8 compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You'll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8.0 compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or [.NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
@@ -78,7 +78,7 @@ namespace NullableIntroduction
 }
 ```
 
-The compiler interprets every reference type variable declaration as a **non-nullable** reference type for code in a nullable enabled context. You can see your first warning by adding properties for the question text and the type of question, as shown in the following code:
+The compiler interprets every reference type variable declaration as a **non-nullable** reference type for code in an enabled nullable annotation context. You can see your first warning by adding properties for the question text and the type of question, as shown in the following code:
 
 ```csharp
 namespace NullableIntroduction
@@ -128,7 +128,7 @@ Switch to *Program.cs* in your editor and replace the contents of `Main` with th
 
 [!code-csharp[AddQuestions](~/samples/csharp/NullableIntroduction/NullableIntroduction/Program.cs#AddQuestions)]
 
-Because the entire project is in a nullable enabled context, you'll get warnings when you pass `null` to any method expecting a non-nullable reference type. Try it by adding the following line to `Main`:
+Because the entire project is in an enabled nullable annotation context, you'll get warnings when you pass `null` to any method expecting a non-nullable reference type. Try it by adding the following line to `Main`:
 
 ```csharp
 surveyRun.AddQuestion(QuestionType.Text, default);

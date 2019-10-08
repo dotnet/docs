@@ -1,5 +1,5 @@
 ---
-title: "JSON serialization in .NET"
+title: "Serialize and deserialize JSON using C# in .NET"
 author: tdykstra
 ms.author: tdykstra
 ms.date: "09/16/2019"
@@ -13,7 +13,7 @@ ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
 
 # JSON serialization in .NET
 
-The `System.Text.Json` namespace provides functionality for serializing to and from JavaScript Object Notation (JSON).
+The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON).
 
 The library design emphasizes high performance and low memory allocation over an extensive feature set. Built-in UTF-8 support optimizes the process of reading and writing JSON text encoded as UTF-8, which is the most prevalent encoding for data on the web and files on disk.
 
@@ -25,7 +25,7 @@ The library also provides classes for working with an in-memory document object 
 * For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
   * .NET Standard 2.0 and later versions
   * .NET Framework 4.61 and later versions
-  * .NET Core 2.0 and later versions
+  * .NET Core 2.0, 2.1, and 2.2
 
 ## Additional resources
 

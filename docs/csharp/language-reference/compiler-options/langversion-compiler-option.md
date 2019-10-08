@@ -71,7 +71,7 @@ For information about how to set this compiler option programmatically, see <xre
 
 ## Minimum SDK version needed to support all language features
 
-The following table lists the the minimum version of the SDK with the C# compiler that supports the corresponding language version:
+The following table lists the the minimum versions of the SDK with the C# compiler that supports the corresponding language version:
 
 |C# version|Minimum SDK version|
 |----------|-------------------|

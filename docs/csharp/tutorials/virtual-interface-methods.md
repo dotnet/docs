@@ -21,7 +21,7 @@ You’ll need to set up your machine to run .NET Core, including the C# 8.0 prev
 
 ## Limitations of extension methods
 
-One way you can implement behavior that appears as part of an interface is to define [extension methods](../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. The extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
+One way you can implement behavior that appears as part of an interface is to define [extension methods](../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. For example, the extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
 
 Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension method.
 
@@ -29,7 +29,7 @@ Starting with C# 8.0, you can declare the default implementations as interface m
 
 In this article, you'll learn how virtual default interface implementations enable new scenarios.
 
-## Design the application.
+## Design the application
 
 Consider a home automation application. You probably have many different types of lights and indicators that could be used throughout the house. Every light must support APIs to turn them on and off, and to report the current state. Some lights and indicators may support other features, such as:
 
@@ -52,7 +52,7 @@ A basic overhead light fixture might implement this interface as shown in the fo
 
 [!code-csharp[First overhead light](~/samples/csharp/tutorials/virtual-interface-methods/UnusedExampleCode.cs?name=SnippetOverheadLightV1)]
 
-In this tutorial, the code doesn't drive IoT devices, but emulate those activities by writing messages to the console. You can explore the code without automating your house.
+In this tutorial, the code doesn't drive IoT devices, but emulates those activities by writing messages to the console. You can explore the code without automating your house.
 
 Next, let's define the interfaces for a light that can automatically turn off after a timeout:
 
@@ -116,6 +116,6 @@ The default implementation assumes AC power:
 
 These changes compile cleanly, even though the `ExtraFancyLight` declares support for the `ILight` interface and both derived interfaces, `ITimerLight` and `IBlinkingLight`. There's only one "closest" implementation declared in the `ILight` interface. Any class that declared an override would become the one "closest" implementation. You saw examples in the preceding classes that overrode the members of other derived interfaces.
 
-Avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `PowerStatus`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. You can usually avoid this situation by keeping interface definitions small and focused on one feature. In this scenario, each capability of a light is its own interface, multiple interfaces are only inherited by classes.
+Avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `PowerStatus`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. You can usually avoid this situation by keeping interface definitions small and focused on one feature. In this scenario, each capability of a light is its own interface; multiple interfaces are only inherited by classes.
 
 This sample shows one scenario where you can define discrete features that can be mixed into classes. You declare any set of supported functionality by declaring which interfaces a class supports. The use of virtual default interface methods enables classes to use or define a different implementation for any or all the interface methods. This language capability provides new ways to model the real world systems you're building. Default interface methods provide a clearer way to express related classes that may mix and match different features using virtual implementations of those capabilities.

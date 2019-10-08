@@ -74,8 +74,8 @@
       "opened": {
         "processor-files": {
           "labels-add": {
-            "defaults": [ ":watch: Not Triaged" ],
             "path": {
+              "(?i).*docs\/architecture.*": ":books: Area - .NET Architecture Guide",
               "(?i).*docs\/architecture\/blazor-for-web-forms-developers.*": ":book: guide - Blazor",
               "(?i).*docs\/architecture\/cloud-native.*": ":book: guide - Cloud Native",
               "(?i).*docs\/architecture\/containerized-lifecycle.*": ":book: guide - Docker lifecycle",
@@ -87,6 +87,9 @@
               "(?i).*docs\/core.*": ":books: Area - .NET Core Guide",
               "(?i).*docs\/core\/tools.*": ":card_file_box: Technology - CLI",
               "(?i).*docs\/core\/docker.*": ":card_file_box: Technology - Docker",
+              "(?i).*docs\/csharp.*": ":books: Area - C# Guide",
+              "(?i).*docs\/desktop-wpf*": ":books: Area - Desktop Guide,:card_file_box: Technology - WPF",
+              "(?i).*docs\/framework.*": ":books: Area - .NET Framework Guide",
               "(?i).*docs\/framework\/configure-apps\/file-schema\/network.*": ":card_file_box: Technology - NCL",
               "(?i).*docs\/framework\/configure-apps\/file-schema\/wcf.*": ":card_file_box: Technology - WCF",
               "(?i).*docs\/framework\/data\/adonet.*": ":card_file_box: Technology - Data Access",
@@ -99,8 +102,13 @@
               "(?i).*docs\/framework\/wpf.*": ":card_file_box: Technology - WPF",
               "(?i).*docs\/framework\/wcf.*": ":card_file_box: Technology - WCF",
               "(?i).*docs\/framework\/winforms.*": ":card_file_box: Technology - WinForms",
+              "(?i).*docs\/fsharp.*": ":books: Area - F# Guide",
+              "(?i).*docs\/machine-learning.*": ":books: Area - ML.NET Guide",
+              "(?i).*docs\/spark.*": ":books: Area - .NET for Apache Spark Guide",
+              "(?i).*docs\/standard.*": ":books: Area - .NET Guide",
               "(?i).*docs\/standard\/security.*": ":card_file_box: Technology - Security",
-              "(?i).*docs\/standard\/standard\/design-guidelines\/.*": ":book: guide - Framework Design Guidelines"
+              "(?i).*docs\/standard\/standard\/design-guidelines\/.*": ":book: guide - Framework Design Guidelines",
+              "(?i).*docs\/visual-basic.*": ":books: Area - Visual Basic Guide"
             }
           }
         }

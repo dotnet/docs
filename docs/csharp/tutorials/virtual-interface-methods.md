@@ -96,39 +96,26 @@ The `HalogenLight` you created earlier does not support blinking. You just don't
 
 ## Detect the light types using pattern matching
 
+Next, let's write some test code. You can make use of C#'s [pattern matching](../pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it support.  The following method exercises the supported capabilities of each light:
 
+[!code-csharp[Test a light's capabilities](~/samples/csharp/tutorials/virtual-interface-methods/Program.cs?name=SnippetTestLightFunctions)]
 
-=> Somewhere in here, use pattern matching to use the lights.
+The following code in your `Main` method creates each light type in sequence and tests that light:
 
-This scenario shows a base interface without any implementations. Adding a method into the `IIndicatorLight` interface introduces new complexities. The language rules governing default interface methods minimize the effect on the concrete classes that implement multiple derived interfaces. Let's enhance the original interface with a new method to show how that changes its use. Every indicator light can report its power status as an enumerated value:
+[!code-csharp[Test a light's capabilities](~/samples/csharp/tutorials/virtual-interface-methods/Program.cs?name=SnippetMainMethod)]
 
-```csharp
-enum PowerStatus
-{
-    NoPower,
-    ACPower,
-    FullBattery,
-    MidBattery,
-    LowBattery
-}
-```
+## How the compiler determines best implementation
 
+This scenario shows a base interface without any implementations. Adding a method into the `ILight` interface introduces new complexities. The language rules governing default interface methods minimize the effect on the concrete classes that implement multiple derived interfaces. Let's enhance the original interface with a new method to show how that changes its use. Every indicator light can report its power status as an enumerated value:
 
-The default implementation would assume AC power:
+[!code-csharp[Enumeration for power status](~/samples/csharp/tutorials/virtual-interface-methods/ILight.cs?name=SnippetPowerStatus)]
 
-```csharp
-public interface IIndicatorLight
-{
-    void SwitchOn();
-    void SwitchOff();
-    bool IsOn();
-    public virtual PowerStatus Power() => PowerStatus.NoPower;
-}
-```
+The default implementation assumes AC power:
 
-Explain "nearest implementation"
-<< Compile and fix errors. Maybe factor power into its own interface. Or, put it in a base class. Or use generics for derived interfaces...>>
+[!code-csharp[Report a default power status](~/samples/csharp/tutorials/virtual-interface-methods/ILight.cs?name=SnippetILightInterface)]
 
-<< Contrast with extension methods re: patterns, best implementation.>>
+These changes compile cleanly, even though the `ExtraFancyLight` declares support for the `ILight` interface and both derived interfaces, `ITimerLight` and `IBlinkingLight`. There's only one "closest" implementation declared in the `ILight` interface. Any class that declared an override would become the one "closest" implementation, as shown in the preceding examples overriding the members of the other derived interfaces.
+
+You should avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `PowerStatus`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. You can usually avoid this situation by keeping interface definitions small and focused on one feature. In this scenario, each capability of a light is its own interface, multiple interfaces are only inherited by classes.
 
 This sample shows one scenario where you can define discrete features that can be mixed into classes to declare any set of supported functionality. You can deconstruct functionality to discrete, independent interfaces. Any class can implement any or all of the optional interfaces. Each can declare its capabilities by declaring which interfaces it does or doesn't support. The use of virtual default interface methods enables classes to use or define a different implementation for any or or all the interface methods. This language capability provides new ways to model the real world systems you're building. Default interface methods provide a more clear way to express related classes that may mix and match different features using virtual implementations of those capabilities.

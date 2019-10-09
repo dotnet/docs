@@ -56,7 +56,7 @@ More information about platform-specific binaries is covered in the [Framework-d
 
 You can use the following app to explore the publishing commands. The app is created by running the following commands in your terminal:
 
-```console
+```dotnetcli
 mkdir apptest1
 cd apptest1
 dotnet new console

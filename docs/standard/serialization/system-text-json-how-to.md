@@ -1,5 +1,5 @@
 ---
-title: "How to serialize JSON - .NET"
+title: "How to serialize and deserialize JSON using C# - .NET"
 author: tdykstra
 ms.author: tdykstra
 ms.date: "09/16/2019"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to serialize JSON in .NET
+# How to serialize and deserialize JSON in .NET
 
 > [!IMPORTANT]
 > The JSON serialization documentation is under construction. This article doesn't cover all scenarios. For more information, examine [System.Text.Json issues](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) in the dotnet/corefx repository on GitHub, especially those labeled [json-functionality-doc](https://github.com/dotnet/corefx/labels/json-functionality-doc).

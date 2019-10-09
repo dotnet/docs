@@ -6,7 +6,7 @@ The default value of the <xref:System.Net.Http.HttpRequestMessage.Version?displa
 
 .NET Core 3.0
 
-#### Details
+#### Change description
 
 In .NET Core 1.0 through 2.0, the default value of the <xref:System.Net.Http.HttpRequestMessage.Version?displayProperty=fullName> property is 1.1. Starting with .NET Core 2.1, it was changed to 2.1. 
 

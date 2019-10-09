@@ -29,7 +29,7 @@ ms.author: riande
 <xref:System.Buffers.IBufferWriter`1?displayProperty=fullName> is a contract for synchronous buffered writing. At the lowest level the interface:
 
 * Is basic and not difficult to use.
-* Allows access to a <xref:System.Memory<T>> or <xref:System.Span<T>>. The `Memory<T>` or `Span<T>` can be written too and you can determine how many `T` items were written.
+* Allows access to a <xref:System.Memory\<T>> or <xref:System.Span\<T>>. The `Memory<T>` or `Span<T>` can be written too and you can determine how many `T` items were written.
 
 [!code-csharp[](temp/MyClass.cs?name=snippet)]
 

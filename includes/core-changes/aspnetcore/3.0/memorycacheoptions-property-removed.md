@@ -18,7 +18,7 @@ The `MemoryCacheOptions.CompactOnMemoryPressure` property has been removed.
 
 #### Reason for change
 
-Automatically compacting the cache caused problems. We recommend compacting the cache when needed to avoid unexpected behavior.
+Automatically compacting the cache caused problems. To avoid unexpected behavior, the cache should only be compacted when needed.
 
 #### Recommended action
 

@@ -24,7 +24,7 @@ The Google+ Sign-in APIs changed.
 
 ##### Owin with ASP.NET Web Forms and MVC
 
-For `Microsoft.Owin` 3.1.0 and later, a temporary mitigation is outlined [here](https://github.com/aspnet/AspNetKatana/issues/251#issuecomment-449587635). Apps should complete testing with the mitigation to check for changes in the data format. We'll plan to release `Microsoft.Owin` 4.0.1 with a fix. Apps using any prior version should update to version 4.0.1.
+For `Microsoft.Owin` 3.1.0 and later, a temporary mitigation is outlined [here](https://github.com/aspnet/AspNetKatana/issues/251#issuecomment-449587635). Apps should complete testing with the mitigation to check for changes in the data format. There are plans to release `Microsoft.Owin` 4.0.1 with a fix. Apps using any prior version should update to version 4.0.1.
 
 ##### ASP.NET Core 1.x
 
@@ -54,7 +54,7 @@ Apps should complete testing with the new code to check for data format changes.
 
 ##### ASP.NET Core 3.0
 
-The mitigation given for ASP.NET Core 2.x can also be used for ASP.NET Core 3.0. In future 3.0 previews, we're considering removing the `Microsoft.AspNetCore.Authentication.Google` package and directing users to `Microsoft.AspNetCore.Authentication.OpenIdConnect` instead. We'll follow up with the final plan. The following code shows how to replace `AddGoogle` with `AddOpenIdConnect` in `Startup.ConfigureServices`. This replacement can be used with ASP.NET Core 2.0 and later and can be adapted for ASP.NET Core 1.x as needed.
+The mitigation given for ASP.NET Core 2.x can also be used for ASP.NET Core 3.0. In future 3.0 previews, the `Microsoft.AspNetCore.Authentication.Google` package may be removed. Users would be directed to `Microsoft.AspNetCore.Authentication.OpenIdConnect` instead. The following code shows how to replace `AddGoogle` with `AddOpenIdConnect` in `Startup.ConfigureServices`. This replacement can be used with ASP.NET Core 2.0 and later and can be adapted for ASP.NET Core 1.x as needed.
 
 ```csharp
 .AddOpenIdConnect("Google", o =>

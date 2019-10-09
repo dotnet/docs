@@ -29,7 +29,7 @@ The action is routable via `Product/ListAsync`. Link generation requires specify
 
 #### New behavior
 
-In ASP.NET Core 3.0, the action is routable via `Product/List`. Link generation requires not specifying the `Async` suffix. For example:
+In ASP.NET Core 3.0, the action is routable via `Product/List`. Link generation code should omit the `Async` suffix. For example:
 
 ```cshtml
 <a asp-controller="Product" asp-action="List">List</a>

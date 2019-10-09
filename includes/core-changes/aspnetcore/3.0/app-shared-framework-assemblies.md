@@ -49,7 +49,7 @@ This change doesn't apply to all binaries referenced via `Microsoft.AspNetCore.A
     - APIs that provide third-party integration
     - Experimental features
     - APIs with dependencies that couldn't [fulfill the requirements to be in the shared framework][shared-fx-guidance]
-- Extensions to MVC that maintain support for Json.NET. We intend to provide an API as a NuGet package to support using Json.NET and MVC.
+- Extensions to MVC that maintain support for Json.NET. An API will be provided as a NuGet package to support using Json.NET and MVC.
 - The SignalR .NET client will continue to support .NET Standard and ship as a NuGet package. It's intended for use on many .NET runtimes, such as Xamarin and UWP.
 
 For more information, see [Stop producing packages for shared framework assemblies in 3.0][packages-removed-from-fx]. You can use [aspnet/AspNetCore#3757][discussion] for discussion.

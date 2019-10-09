@@ -16,7 +16,7 @@ Implementations of `IAuthorizationPolicyProvider` require a `GetFallbackPolicyAs
 
 #### Reason for change
 
-We needed a new method for the new `AuthorizationMiddleware` to use when no policy is specified.
+A new method was needed for the new `AuthorizationMiddleware` to use when no policy is specified.
 
 #### Recommended action
 

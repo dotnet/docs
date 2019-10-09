@@ -14,7 +14,7 @@ Returns a specified number of contiguous elements from the start of a collection
   
 ## Syntax  
   
-```  
+```vb  
 Take count  
 ```  
   

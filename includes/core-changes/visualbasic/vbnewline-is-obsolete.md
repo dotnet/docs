@@ -6,7 +6,7 @@ The <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> co
 
 3.0 Preview 8
 
-#### Details
+#### Change description
 
 Starting with .NET Core 3.0 Preview 8, the [Obsolete](xref:System.ObsoleteAttribute) attribute has been applied to the <xref:Microsoft.VisualBasic.Constants.vbNewLine?displayProperty=fullName> constant. Use of the constant produces a compiler warning. In previous releases of both .NET Core and .NET Framework, it was not marked as obsolete.
 
@@ -32,5 +32,4 @@ Visual Basic
 
 - `F:Microsoft.VisualBasic.Constants.vbNewLine`
 
--- >
-
+-->

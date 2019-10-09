@@ -29,7 +29,7 @@ ms.author: riande
 <xref:System.Buffers.IBufferWriter`1?displayProperty=fullName> is a contract for synchronous buffered writing. At the lowest level the interface:
 
 * Is basic and not difficult to use.
-* Allows access to a <xref:System.Memory\<T>> or <xref:System.Span\<T>>. The `Memory<T>` or `Span<T>` can be written too and you can determine how many `T` items were written.
+* Allows access to a <xref:System.Memory%601> or <xref:System.Span%601>. The `Memory<T>` or `Span<T>` can be written too and you can determine how many `T` items were written.
 
 [!code-csharp[](temp/MyClass.cs?name=snippet)]
 
@@ -37,11 +37,9 @@ The preceding method:
 
 * Requests a buffer of at least 5 bytes from the `IBufferWriter<byte>` using `GetSpan(5)`.
 * Writes bytes for the ASCII string "Hello" to the returned `Span<byte>`.
-* Calls <xref:System.Buffers.IBufferWriter*> to indicate how many bytes were written to the buffer.
+* Calls  <xref:System.Buffers.IBufferWriter`1> to indicate how many bytes were written to the buffer.
 
-This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IBufferWriter<T>`. Alternatively, the <xref:System.Buffers.BuffersExtensions.Write*> extension method can be used to copy an existing buffer to the `IBufferWriter<T>`. `Write` does the work of calling `GetSpan`/`Advance` as appropriate, so there's no need to call `Advance` after writing.
-
-In the following code, there is no need to call `Advance` because `Write` calls `Advance`:
+This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IBufferWriter<T>`. Alternatively, the <xref:System.Buffers.BuffersExtensions.Write*> extension method can be used to copy an existing buffer to the `IBufferWriter<T>`. `Write` does the work of calling `GetSpan`/`Advance` as appropriate, so there's no need to call `Advance` after writing:
 
 [!code-csharp[](temp/MyClass.cs?name=snippet2)]
 
@@ -53,14 +51,17 @@ In the following code, there is no need to call `Advance` because `Write` calls 
 - There is no guarantee that successive calls will return the same buffer or the same-sized buffer.
 - A new buffer must be requested after calling `Advance` to continue writing more data. A previously acquired buffer cannot be written to.
 
-## [ReadOnlySequence\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.readonlysequence-1)
+## ReadOnlySequence\<T\>
 
-![image](https://user-images.githubusercontent.com/95136/64049773-cbd04600-cb2a-11e9-9d37-404488a2d6d5.png)
+## [ReadOnlySequence\<T\>](/dotnet/api/system.buffers.readonlysequence-1)
 
-`ReadOnlySequence<T>` is a struct that can represent a contiguous or discontiguous sequence of T. It can be constructed from:
+![Browser window highlighting the Bootstrap navigation button](media/buffers/ro-sequence.png)
+
+<xref:System.Buffers.ReadOnlySequence%601> is a struct that can represent a contiguous or discontiguous sequence of T. It can be constructed from:
+
 1. A `T[]`
 1. A `ReadOnlyMemory<T>`
-1. A pair of linked list node [`ReadOnlySequenceSegment<T>`](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.readonlysequencesegment-1?view=netstandard-2.1) and index to represent the start and end position of the sequence
+1. A pair of linked list node <xref:System.Buffers.ReadOnlySequenceSegment`1> and index to represent the start and end position of the sequence.
 
 The 3rd representation is the most interesting one as it has performance implications on various operations on the `ReadOnlySequence<T>`:
 
@@ -75,56 +76,24 @@ The 3rd representation is the most interesting one as it has performance implica
 |`ReadOnlySequenceSegment<T>`|`Slice(int, int)`|`O(number of segments)`
 |`ReadOnlySequenceSegment<T>`|`Slice(SequencePostion, SequencePostion)`|`O(1)`
 
-Because of this mixed representation, the `ReadOnlySequence<T>` exposes indexes as `SequencePosition` instead of an integer. A `SequencePosition` is an opaque value that represents an index into the `ReadOnlySequence<T>` where it originated. It consists of 2 parts, an integer and an object, what these 2 values represent are tied to the implementation of `ReadOnlySequence<T>`.
+Because of this mixed representation, the `ReadOnlySequence<T>` exposes indexes as `SequencePosition` instead of an integer. A `SequencePosition`:
+
+* Is an opaque value that represents an index into the `ReadOnlySequence<T>` where it originated.
+* Consists of two parts, an integer and an object. What these 2 values represent are tied to the implementation of `ReadOnlySequence<T>`.
 
 ### Accessing data
 
 The `ReadOnlySequence<T>` exposes data as an enumerable of `ReadOnlyMemory<T>`. Enumerating each of the segments can be done using a simple foreach:
 
-```C#
-long FindIndexOf(in ReadOnlySequence<byte> buffer, byte data)
-{
-    long position = 0;
-    
-    foreach (ReadOnlyMemory<byte> segment in buffer)
-    {
-        ReadOnlySpan<byte> span = segment.Span;
-        var index = span.IndexOf(data);
-        if (index != -1)
-        {
-            return position + index;
-        }
-        
-        position += span.Length;
-    }
-    
-    return -1;
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet3)]
 
-The above method searches each segment for a specific byte. If we need to keep track of each segment's `SequencePosition` then [`ReadOnlySequence.TryGet`](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.readonlysequence-1.tryget?view=netcore-3.0) would be more appropriate. Let's change the above code to return a `SequencePosition` instead of an integer. This has the added benefit of allowing the caller to avoid a second scan to get the data at a specific index.
+The preceding method searches each segment for a specific byte. If you need to keep track of each segment's `SequencePosition`, <xref:System.Buffers.ReadOnlySequence*> zz  [`ReadOnlySequence.TryGet`](/dotnet/api/system.buffers.readonlysequence-1.tryget?view=netcore-3.0) is more appropriate. Let's change the preceding code to return a `SequencePosition` instead of an integer. This has the added benefit of allowing the caller to avoid a second scan to get the data at a specific index.
 
-```C#
-SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data)
-{
-    SequencePosition position = buffer.Start;
-    
-    while (buffer.TryGet(ref position, out ReadOnlyMemory<byte> segment))
-    {
-        ReadOnlySpan<byte> span = segment.Span;
-        var index = span.IndexOf(data);
-        if (index != -1)
-        {
-            return buffer.GetPosition(position, index);
-        }
-    }
-    return null;
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet4)]
 
-The combination of `SequencePosition` and `TryGet` act like an enumerator. The position field is modified at the start of each iteration to be start of each segment within the `ReadOnlySequence<T>`. 
+The combination of `SequencePosition` and `TryGet` act like an enumerator. The position field is modified at the start of each iteration to be start of each segment within the `ReadOnlySequence<T>`.
 
-The preceding method exists as an extension method on `ReadOnlySequence<T>`. We can use [PositionOf](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.buffersextensions.positionof?view=netstandard-2.1) to simplify the above code:
+The preceding method exists as an extension method on `ReadOnlySequence<T>`. [PositionOf](/dotnet/api/system.buffers.buffersextensions.positionof?view=netstandard-2.1) can be used to simplify the preceding code:
 
 ```C#
 SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data) => buffer.PositionOf(data);
@@ -315,7 +284,7 @@ There are several quirks when dealing with a `ReadOnlySequence<T>`/`SequencePosi
 - `ReadOnlySequence<T>` is bigger than an object reference and should be passed by `in` or `ref` where possible. This reduces copies of the struct.
 - Empty segments are valid within a `ReadOnlySequence<T>` and can appear when iterating using `ReadOnlySequence<T>.TryGet` or slicing the sequence using `ReadOnlySequence<T>.Slice()` with `SequencePosition`(s).
 
-## [SequenceReader\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.sequencereader-1?view=netcore-3.0)
+## [SequenceReader\<T\>](/dotnet/api/system.buffers.sequencereader-1?view=netcore-3.0)
 
 `SequenceReader<T>` is a new type that was introduced in .NET Core 3.0 to simplify the processing of a `ReadOnlySequence<T>`. It unifies the differences between a single segment `ReadOnlySequence<T>` and multi-segment `ReadOnlySequence<T>`. It also provides helpers for reading binary and text data (byte and char) that may or may not be split across segments. 
 

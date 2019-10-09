@@ -12,7 +12,7 @@ As mentioned previously, the application layer can be implemented as part of the
 
 For instance, the application layer code of the ordering microservice is directly implemented as part of the **Ordering.API** project (an ASP.NET Core Web API project), as shown in Figure 7-23.
 
-![The Solution Explorer view of the Ordering.API microservice, showing the sub-folders under the Application folder: Behaviors, Commands, DomainEventHandlers, IntegrationEvents, Models, Queries and Validations.](./media/image20.png)
+![Screenshot of the Ordering.API microservice in the Solution Explorer.](./media/microservice-application-layer-implementation-web-api/ordering-api-microservice.png)
 
 **Figure 7-23**. The application layer in the Ordering.API ASP.NET Core Web API project
 
@@ -176,9 +176,11 @@ The Command pattern is intrinsically related to the CQRS pattern that was introd
 
 As shown in Figure 7-24, the pattern is based on accepting commands from the client side, processing them based on the domain model rules, and finally persisting the states with transactions.
 
-![The high level view of the writes-side in CQRS: UI app sends a command through the API that gets to a CommandHandler, that depends on the Domain model and the Infrastructure to update the database.](./media/image21.png)
+![Diagram showing the high-level data flow from client to database.](./media/microservice-application-layer-implementation-web-api/high-level-writes-side.png)
 
 **Figure 7-24**. High-level view of the commands or “transactional side” in a CQRS pattern
+
+The high level view of the writes-side in CQRS: UI app sends a command through the API that gets to a CommandHandler, that depends on the Domain model and the Infrastructure to update the database.
 
 ### The command class
 
@@ -418,9 +420,11 @@ The other two main options, which are the recommended options, are:
 
 As shown in Figure 7-25, in a CQRS approach you use an intelligent mediator, similar to an in-memory bus, which is smart enough to redirect to the right command handler based on the type of the command or DTO being received. The single black arrows between components represent the dependencies between objects (in many cases, injected through DI) with their related interactions.
 
-![Zooming in from the previous image: the ASP.NET Core controller sends the command to MediatR's command pipeline, so they get to the appropriate handler.](./media/image22.png)
+![Diagram showing a more detailed data flow from client to database.](./media/microservice-application-layer-implementation-web-api/mediator-cqrs-microservice.png)
 
 **Figure 7-25**. Using the Mediator pattern in process in a single CQRS microservice
+
+Zooming in from the previous image: the ASP.NET Core controller sends the command to MediatR's command pipeline, so they get to the appropriate handler.
 
 The reason that using the Mediator pattern makes sense is that in enterprise applications, the processing requests can get complicated. You want to be able to add an open number of cross-cutting concerns like logging, validations, audit, and security. In these cases, you can rely on a mediator pipeline (see [Mediator pattern](https://en.wikipedia.org/wiki/Mediator_pattern)) to provide a means for these extra behaviors or cross-cutting concerns.
 
@@ -434,11 +438,11 @@ For example, in the eShopOnContainers ordering microservice, we implemented two 
 
 Another choice is to use asynchronous messages based on brokers or message queues, as shown in Figure 7-26. That option could also be combined with the mediator component right before the command handler.
 
-![Command's pipeline can also be handled by a high availability message queue to deliver the commands to the appropriate handler.](./media/image23.png)
+![Diagram showing the dataflow using an HA message queue.](./media/microservice-application-layer-implementation-web-api/add-ha-message-queue.png)
 
 **Figure 7-26**. Using message queues (out of process and inter-process communication) with CQRS commands
 
-Using message queues to accept the commands can further complicate your command’s pipeline, because you will probably need to split the pipeline into two processes connected through the external message queue. Still, it should be used if you need to have improved scalability and performance based on asynchronous messaging. Consider that in the case of Figure 7-26, the controller just posts the command message into the queue and returns. Then the command handlers process the messages at their own pace. That is a great benefit of queues: the message queue can act as a buffer in cases when hyper scalability is needed, such as for stocks or any other scenario with a high volume of ingress data.
+Command's pipeline can also be handled by a high availability message queue to deliver the commands to the appropriate handler. Using message queues to accept the commands can further complicate your command’s pipeline, because you will probably need to split the pipeline into two processes connected through the external message queue. Still, it should be used if you need to have improved scalability and performance based on asynchronous messaging. Consider that in the case of Figure 7-26, the controller just posts the command message into the queue and returns. Then the command handlers process the messages at their own pace. That is a great benefit of queues: the message queue can act as a buffer in cases when hyper scalability is needed, such as for stocks or any other scenario with a high volume of ingress data.
 
 However, because of the asynchronous nature of message queues, you need to figure out how to communicate with the client application about the success or failure of the command’s process. As a rule, you should never use “fire and forget” commands. Every business application needs to know if a command was processed successfully, or at least validated and accepted.
 

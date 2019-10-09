@@ -1,5 +1,5 @@
 ---
-title: "Serialization Samples for .NET"
+title: "Binary serialization samples for .NET"
 ms.date: "03/30/2017"
 ---
 # Binary Serialization Samples for .NET

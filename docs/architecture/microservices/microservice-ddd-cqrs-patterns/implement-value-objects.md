@@ -12,7 +12,7 @@ A value object can reference other entities. For example, in an application that
 
 Figure 7-13 shows the Address value object within the Order aggregate.
 
-![The Address value-object inside the Order Aggregate.](./media/image14.png)
+![Diagram showing the Address value-object inside the Order Aggregate.](./media/implement-value-objects/value-object-within-aggregate.png)
 
 **Figure 7-13**. Address value object within the Order aggregate
 

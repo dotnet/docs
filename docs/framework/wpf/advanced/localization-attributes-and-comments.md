@@ -7,13 +7,13 @@ helpviewer_keywords:
 ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
 ---
 # Localization Attributes and Comments
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] localization comments are properties, inside [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] source code, supplied by developers to provide rules and hints for localization. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] localization comments contain two sets of information: localizability attributes and free-form localization comments. Localizability attributes are used by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Localization API to indicate which resources are to be localized. Free-form comments are any information that the application author wants to include.  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] localization comments are properties, inside XAML source code, supplied by developers to provide rules and hints for localization. [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] localization comments contain two sets of information: localizability attributes and free-form localization comments. Localizability attributes are used by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] Localization API to indicate which resources are to be localized. Free-form comments are any information that the application author wants to include.  
 
 <a name="Localizer_Comments_"></a>   
 ## Localization Comments  
- If markup application authors have requirements for specific elements in [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)], such as constraints on text length, font family, or font size, they can convey this information to localizers with comments in the [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] code. The process for adding comments to source code is as follows:  
+ If markup application authors have requirements for specific elements in XAML, such as constraints on text length, font family, or font size, they can convey this information to localizers with comments in the XAML code. The process for adding comments to source code is as follows:  
   
-1. Application developer adds localization comments to [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] source code.  
+1. Application developer adds localization comments to XAML source code.  
   
 2. During the build process, you can specify in the .proj file whether to leave the free-form localization comments in the assembly, strip out part of the comments, or strip out all the comments. The stripped-out comments are placed in a separate file. You specify your option using a `LocalizationDirectivesToLocFile` tag, eg:  
   
@@ -31,7 +31,7 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
   
 5. Localization comment files, containing only free-form comments, are incorporated into the localization process at a later time.  
   
- The following example shows how to add localization comments to a [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] file.  
+ The following example shows how to add localization comments to a XAML file.  
   
  `<TextBlock x:Id = "text01"`  
   

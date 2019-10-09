@@ -130,7 +130,7 @@ In [classification](#classification), the recall for a class is the number of it
  Regularization penalizes a linear model for being too complicated. There are two types of regularization:
 
 - $L_1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
-- $L_2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
+- $L_2$ regularization minimizes weight range for insignificant features. This is a more general process and is less sensitive to outliers.
 
 ## Regression
 

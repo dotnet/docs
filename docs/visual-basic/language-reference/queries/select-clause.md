@@ -14,7 +14,7 @@ Defines the result of a query.
   
 ## Syntax  
   
-```  
+```vb  
 Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]  
 ```  
   

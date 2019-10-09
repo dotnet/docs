@@ -28,7 +28,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the control's design surface.
 
-3. Press **F5** to build the project and run the **UserControl Test Container**. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
+3. Press <kbd>F5</kbd> to build the project and run the **UserControl Test Container**. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
 
 4. Select the <xref:System.Windows.Forms.Control.BackColor%2A> property displayed in the <xref:System.Windows.Forms.PropertyGrid> control to the right of the **Preview** pane. Change its value to **ControlDark**. Observe that the control changes to a darker color. Try changing other property values and observe the effect on your control.
 
@@ -40,9 +40,9 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 8. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto the control's design surface.
 
-9. Press **F5** to build the project and run the test container.
+9. Press <kbd>F5</kbd> to build the project and run the test container.
 
-10. Click the **Select User Control**<xref:System.Windows.Forms.ComboBox> to switch between the two user controls.
+10. Click the **Select User Control** <xref:System.Windows.Forms.ComboBox> to switch between the two user controls.
 
 ## Test user controls from another project
 
@@ -52,13 +52,13 @@ You can test user controls from other projects in your current project's test co
 
 2. In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.RadioButton> control from the **Toolbox** onto the control's design surface.
 
-3. Press **F5** to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
+3. Press <kbd>F5</kbd> to build the project and run the test container. The test container appears with your <xref:System.Windows.Forms.UserControl> in the **Preview** pane.
 
 4. Click the **Load** button.
 
-5. In the **Open** dialog box, navigate to **TestContainerExample**.dll, which you built in the previous procedure. Select **TestContainerExample**.dll and click the **Open** button to load the user controls
+5. In the **Open** dialog box, navigate to *TestContainerExample.dll*, which you built in the previous procedure. Select *TestContainerExample.dll* and click the **Open** button to load the user controls.
 
-6. Use the **Select User Control**<xref:System.Windows.Forms.ComboBox> to switch between the two user controls from the **TestContainerExample** project.
+6. Use the **Select User Control** <xref:System.Windows.Forms.ComboBox> to switch between the two user controls from the **TestContainerExample** project.
 
 ## See also
 

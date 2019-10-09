@@ -26,6 +26,7 @@ items:
     int c = a + b;
     Console.WriteLine(c);
     ```
+
     If you are running this on your environment, you should follow the instructions for the [local version](numbers-in-csharp-local.md) instead.
 
     You've just seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a positive or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:

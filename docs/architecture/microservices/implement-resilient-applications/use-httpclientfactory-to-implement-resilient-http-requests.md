@@ -30,6 +30,9 @@ To address those mentioned issues and make the management of `HttpClient` instan
 - `HttpClient` already has the concept of delegating handlers that could be linked together for outgoing HTTP requests. You register HTTP clients into the factory and you can use a Polly handler to use Polly policies for Retry, CircuitBreakers, and so on.
 - Manage the lifetime of `HttpClientMessageHandlers` to avoid the mentioned problems/issues that can occur when managing `HttpClient` lifetimes yourself.
 
+> [!NOTE]
+> `HttpClientFactory` is tightly tied to the Microsoft.Extensions.DependencyInjection implementation. You might want to read this [GitHub discussion]((https://github.com/aspnet/Extensions/issues/1345)) about using other dependency injection containers.
+
 ## Multiple ways to use HttpClientFactory
 
 There are several ways that you can use `HttpClientFactory` in your application:
@@ -174,14 +177,17 @@ Up to this point, the code shown is just performing regular Http requests, but t
 
 ## Additional resources
 
-- **Using HttpClientFactory in .NET Core** \
+- **Using HttpClientFactory in .NET Core**  
   [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
-- **HttpClientFactory GitHub repo** \
+- **HttpClientFactory GitHub repo**  
   <https://github.com/aspnet/Extensions/tree/master/src/HttpClientFactory>
 
-- **Polly (.NET resilience and transient-fault-handling library)** \
+- **Polly (.NET resilience and transient-fault-handling library)**  
   <http://www.thepollyproject.org/>
+  
+- **Using HttpClientFactory without dependency injection (GitHub issue)**  
+  <https://github.com/dotnet/docs/issues/13850>
 
 >[!div class="step-by-step"]
 >[Previous](explore-custom-http-call-retries-exponential-backoff.md)

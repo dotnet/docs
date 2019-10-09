@@ -1,11 +1,11 @@
 ---
-title: Create virtual extension methods with default interface members
-description: Using default interface members you can extend interfaces with optional virtual implementations. 
+title: Create mixin types using default interface methods
+description: Using default interface members you can extend interfaces with optional default implementations for implementors.
 ms.date: 10/04/2019
 ---
-# Tutorial: Update interfaces with default interface members in C# 8.0
+# Tutorial: Mix in functionality when creating classes using interfaces with default interface methods
 
-Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. This feature provides new capabilities where you declare if implementors can or must override the default implementation. You specify if an implementation from a class may be overridden by more derived classes.
+Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. This feature provides new capabilities where you can define default implementations for features declared in interfaces. Classes can pick when to override functionality, when to use the default functionality, and when not to declare support for discrete features.
 
 In this tutorial, you'll learn how to:
 
@@ -14,6 +14,7 @@ In this tutorial, you'll learn how to:
 > * Create interfaces with implementations that describe discrete features.
 > * Create classes that use the default implementations.
 > * Create classes that override some or all of the default implementations.
+> * Expose default interface methods to classes using the `virtual` keyword.
 
 ## Prerequisites
 
@@ -23,11 +24,11 @@ You’ll need to set up your machine to run .NET Core, including the C# 8.0 prev
 
 One way you can implement behavior that appears as part of an interface is to define [extension methods](../programming-guide/classes-and-structs/extension-methods.md) that provide the default behavior. Interfaces declare a minimum set of members while providing a greater surface area for any class that implements that interface. For example, the extension methods in <xref:System.Linq.Enumerable> provide the implementation for any sequence to be the source of a LINQ query.
 
-Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension method.
+Extension methods are resolved at compile time, using the declared type of the variable. Classes that implement the interface can provide a better implementation for any extension method. Variable declarations must match the implementing type to enable the compiler to choose that implementation. When the compile-time type matches the interface, method calls resolve to the extension method. Another concern with extension methods is that those methods are accessible wherever the class containing the extension methods is accessible. Classes cannot declare if they should or should not provide features declared in extension methods.
 
-Starting with C# 8.0, you can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../programming-guide/classes-and-structs/extension-methods.md). Default interface methods enable `virtual` methods, which provide important new behavior. 
+Starting with C# 8.0, you can declare the default implementations as interface methods. Then, every class automatically uses the default implementation. Any class that can provide a better implementation can override the interface method definition with a better algorithm. In one sense, this technique sounds similar to how you could use [extension methods](../programming-guide/classes-and-structs/extension-methods.md). Default interface methods can be declared with the `virtual` keyword, which means those methods become part of the interface of implementing classes. WIthout the `virtual` keyword on the interface method, default interface methods are accessible only with a reference to the interface type.
 
-In this article, you'll learn how virtual default interface implementations enable new scenarios.
+In this article, you'll learn how default interface implementations enable new scenarios.
 
 ## Design the application
 
@@ -72,11 +73,11 @@ The `TurnOnFor` method is `public` and `virtual`, so is seen as part of the publ
 
 [!code-csharp[Override the timer function](~/samples/csharp/tutorials/virtual-interface-methods/HalogenLight.cs?name=SnippetHalogenLight)]
 
-There are a few important points about the preceding code. First of all, because `TurnOnFor` is virtual, calls will resolve to the derived `HalogenLight.TurnOnFor` implementation, even when accessed through a variable of type `ITimerLight`. Virtual dispatch works just like `virtual` methods declared in base classes. However, unlike overriding class methods, the declaration of `TurnOnFor` in the `HalogenLight` class does not need the `override` keyword. 
+There are a few important points about the preceding code. First of all, because `TurnOnFor` is declared `virtual`, The `TurnOnFor` method is part of the public interface for the `OverheadLight`. Without that keyword, the `OverheadLight`, and any other light type that used the default implementation, would need to be case to an `ITimerLight` to access the `TurnOnFor` method. However, unlike overriding virtual class methods, the declaration of `TurnOnFor` in the `HalogenLight` class does not use the `override` keyword. 
 
 ## Mix and match capabilities
 
-The advantages of virtual interface methods become clearer as you introduce more advanced capabilities. Using interfaces enables you to mix and match capabilities. It also enables each class author to choose between the default implementation and a custom implementation. Let's add an interface with a default implementation for a blinking light:
+The advantages of default interface methods become clearer as you introduce more advanced capabilities. Using interfaces enables you to mix and match capabilities. It also enables each class author to choose between the default implementation and a custom implementation. Let's add an interface with a default implementation for a blinking light:
 
 [!code-csharp[Define the blinking light interface](~/samples/csharp/tutorials/virtual-interface-methods/IBlinkingLight.cs?name=SnippetBlinkingLight)]
 

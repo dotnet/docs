@@ -14,6 +14,10 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 
 ## ASP.NET Core 3.0
 
+[!INCLUDE[obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](~/includes/core-changes/aspnetcore/3.0/obsolete-apis-removed.md)]
+
+***
+
 [!INCLUDE[AddAuthorization overload assembly change](~/includes/core-changes/aspnetcore/3.0/add-authz-assembly-change.md)]
 
 ***

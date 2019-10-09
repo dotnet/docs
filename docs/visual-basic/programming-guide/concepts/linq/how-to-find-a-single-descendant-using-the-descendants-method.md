@@ -33,7 +33,7 @@ Console.WriteLine(grandChild3)
   
  This code produces the following output:  
   
-```  
+```console  
 GC3 Value  
 ```  
   
@@ -70,7 +70,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 GC3 Value  
 ```  
   

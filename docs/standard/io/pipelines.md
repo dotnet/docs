@@ -1,5 +1,6 @@
 ---
 title: "I/O pipelines - .NET"
+description: Shows how to avoid problems and efficiently use I/O pipelines in .NET
 ms.date: "10/01/2019"
 ms.technology: dotnet-standard
 helpviewer_keywords:

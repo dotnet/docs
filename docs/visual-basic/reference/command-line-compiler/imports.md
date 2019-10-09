@@ -12,7 +12,7 @@ Imports namespaces from a specified assembly.
   
 ## Syntax  
   
-```  
+```console  
 -imports:namespaceList  
 ```  
   

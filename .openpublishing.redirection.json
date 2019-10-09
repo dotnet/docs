@@ -1,6 +1,10 @@
 {
     "redirections": [
         {
+            "source_path": "docs/standard/serialization/serialization-samples.md",
+            "redirect_url": "/dotnet/standard/serialization/index"
+        },
+        {
             "source_path": "docs/about/index.md",
             "redirect_url": "/dotnet/standard/index"
         },
@@ -2431,7 +2435,7 @@
         },
         {
             "source_path": "docs/framework/wpf/controls/styling-and-templating.md",
-            "redirect_url": "/dotnet/desktop-wpf/fundamentals/styles-and-templates-overview",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/styles-templates-overview",
             "redirect_document_id": true
         },
         {

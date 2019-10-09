@@ -16,7 +16,7 @@ Specifies the sort order for a query result.
   
 ## Syntax  
   
-```  
+```vb  
 Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]  
 ```  
   

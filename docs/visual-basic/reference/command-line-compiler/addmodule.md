@@ -12,7 +12,7 @@ Causes the compiler to make all type information from the specified file(s) avai
   
 ## Syntax  
   
-```  
+```console  
 -addmodule:fileList  
 ```  
   

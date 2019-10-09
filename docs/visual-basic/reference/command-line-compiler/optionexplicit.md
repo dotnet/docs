@@ -15,7 +15,7 @@ Causes the compiler to report errors if variables are not declared before they a
   
 ## Syntax  
   
-```  
+```console  
 -optionexplicit[+ | -]  
 ```  
   

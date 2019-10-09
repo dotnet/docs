@@ -145,7 +145,7 @@ This way, when you pull an image from a Windows host, it will pull the Windows v
 
 The Dockerfile is similar to a batch script. Similar to what you would do if you had to set up the machine from the command line.
 
-It starts with a base image that sets up the initial context, it's like the startup filesystem, that sits on top of the host OS. It's not an OS, but you can think of if like "the" OS inside the container.
+It starts with a base image that sets up the initial context, it's like the startup filesystem, that sits on top of the host OS. It's not an OS, but you can think of it like "the" OS inside the container.
 
 The execution of every command line creates a new layer on the filesystem with the changes from the previous one, so that, when combined, produce the resulting filesystem.
 

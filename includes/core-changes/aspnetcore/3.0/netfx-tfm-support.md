@@ -1,10 +1,10 @@
 ### ASP.NET Core 3.0 only runs on .NET Core
 
-.NET Framework will get less of the new platform and language features that come to .NET Core moving forward. This is because of the in-place update nature of .NET Framework and the desire to limit changes there that might break existing apps. To ensure ASP.NET Core can fully leverage the improvements coming to .NET Core moving forward, ASP.NET Core will only run on .NET Core starting from 3.0. Moving forward, you can think of ASP.NET Core as being part of .NET Core.
+.NET Framework will get less of the new platform and language features that come to .NET Core. The reasoning is the in-place update nature of .NET Framework and the decision to limit changes there that might break existing apps. To ensure ASP.NET Core can use the improvements coming to .NET Core, ASP.NET Core will only run on .NET Core starting from 3.0. You can think of ASP.NET Core 3.0 as being part of .NET Core.
 
-Customers using ASP.NET Core on .NET Framework today can continue to do so in a fully supported fashion using the [2.1 LTS release][2.1-lts]. Support and servicing for 2.1 will continue until at least August 21, 2021 (three years after its declaration as an LTS release) in accordance with the [.NET Support Policy](https://www.microsoft.com/net/platform/support-policy). In addition, support for ASP.NET Core 2.1 packages **on .NET Framework** will extend indefinitely, similar to the [servicing policy for other package-based ASP.NET frameworks](https://dotnet.microsoft.com/platform/support/policy/aspnet).
+Customers using ASP.NET Core with .NET Framework can continue in a fully supported fashion using the [2.1 LTS release][2.1-lts]. Support and servicing for 2.1 continues until at least August 21, 2021. This date is three years after declaration of the LTS release per the [.NET Support Policy](https://www.microsoft.com/net/platform/support-policy). Support for ASP.NET Core 2.1 packages **on .NET Framework** will extend indefinitely, similar to the [servicing policy for other package-based ASP.NET frameworks](https://dotnet.microsoft.com/platform/support/policy/aspnet).
 
-For more information about porting from .NET Framework to .NET Core, see our documentation on [Porting to .NET Core.](/dotnet/core/porting/).
+For more information about porting from .NET Framework to .NET Core, see [Porting to .NET Core.](/dotnet/core/porting/).
 
 `Microsoft.Extensions` packages (such as logging, dependency injection, and configuration) and Entity Framework Core aren't affected. They'll continue to support .NET Standard.
 
@@ -29,7 +29,7 @@ ASP.NET Core apps can only be run on .NET Core.
 
 #### Reason for change
 
-.NET Framework will receive less of the new platform and language features that come to .NET Core moving forward, due to the in-place update nature of .NET Framework and the desire to limit changes there that might break existing apps. To ensure ASP.NET Core can fully leverage the improvements coming to .NET Core moving forward, ASP.NET Core will only run on .NET Core.
+.NET Framework will receive less of the new platform and language features that come to .NET Core. The reasoning is the in-place update nature of .NET Framework and the decision to limit breaking changes to existing apps. To ensure ASP.NET Core can adopt the improvements coming to .NET Core, ASP.NET Core will only run on .NET Core.
 
 #### Recommended action
 

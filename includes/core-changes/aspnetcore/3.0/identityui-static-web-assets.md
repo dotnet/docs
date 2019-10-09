@@ -1,6 +1,6 @@
 ### Identity UI uses static web assets feature
 
-ASP.NET Core 3.0 introduced a static web assets feature, and Identity UI has adopted that new feature. As part of this move, there are a few API breaking changes to note.
+ASP.NET Core 3.0 introduced a static web assets feature, and Identity UI has adopted it. As part of this move, there are a few API breaking changes to note.
 
 Bootstrap 4 is the default UI framework for Identity UI. Bootstrap 3 has reached end of life and you should consider migrating to a supported version.
 

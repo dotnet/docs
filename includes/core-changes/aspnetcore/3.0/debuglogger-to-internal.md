@@ -1,6 +1,6 @@
 ### DebugLogger class made internal
 
-`DebugLogger` has effectively been removed. It was previously `public`. Now it's `internal` to match other logger implementations such as `ConsoleLogger`.
+`DebugLogger` has effectively been removed. It was `public` and is now `internal` to match other logger implementations such as `ConsoleLogger`.
 
 #### Version introduced
 

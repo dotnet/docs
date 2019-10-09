@@ -45,7 +45,7 @@ If you're using these packages, update your apps to use the functionality:
 - In the `Microsoft.AspNetCore.SpaServices.Extensions` package.
 - Provided by the SPA frameworks you're using
 
-To enable features like server-side prerendering and hot module reload, refer to the documentation for the corresponding SPA framework. The functionality in `Microsoft.AspNetCore.SpaServices.Extensions` is *not* obsolete and will continue to be supported.
+To enable features like server-side prerendering and hot module reload, see the documentation for the corresponding SPA framework. The functionality in `Microsoft.AspNetCore.SpaServices.Extensions` is *not* obsolete and will continue to be supported.
 
 #### Category
 

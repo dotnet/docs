@@ -16,7 +16,7 @@ The assembly `Microsoft.AspNetCore.Server.Kestrel.Https` doesn't exist.
 
 #### Reason for change
 
-In ASP.NET Core 2.1, the contents of `Microsoft.AspNetCore.Server.Kestrel.Https` were moved to `Microsoft.AspNetCore.Server.Kestrel.Core`. This was done in a non-breaking way using `[TypeForwardedTo]` attributes.
+In ASP.NET Core 2.1, the contents of `Microsoft.AspNetCore.Server.Kestrel.Https` were moved to `Microsoft.AspNetCore.Server.Kestrel.Core`. This change was done in a non-breaking way using `[TypeForwardedTo]` attributes.
 
 #### Recommended action
 

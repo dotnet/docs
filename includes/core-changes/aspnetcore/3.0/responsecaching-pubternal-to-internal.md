@@ -4,7 +4,7 @@ In ASP.NET Core, "pubternal" types are declared as `public` but reside in a name
 
 In ASP.NET Core 3.0, "pubternal" types in ResponseCaching have been changed to `internal`.
 
-In addition, a default implementation for `IResponseCachingPolicyProvider` and `IResponseCachingKeyProvider` are no longer added to services as part of the `AddResponseCaching` method.
+In addition, default implementations of `IResponseCachingPolicyProvider` and `IResponseCachingKeyProvider` are no longer added to services as part of the `AddResponseCaching` method.
 
 #### Version introduced
 

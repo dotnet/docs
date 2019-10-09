@@ -8,7 +8,7 @@ New request extension methods have been added to access these trailers.
 
 HTTP/1.1 trailers are available once the entire request body has been read.
 
-HTTP/2 trailers are available as soon as they're received from the client, but the client won't send them until the entire request body has been at least buffered by the server. You may need to read the request body to free up buffer space. Trailers will always be available if you read the request body to the end. The trailers mark the end of the body.
+HTTP/2 trailers are available once they're received from the client. The client won't send the trailers until the entire request body has been at least buffered by the server. You may need to read the request body to free up buffer space. Trailers are always available if you read the request body to the end. The trailers mark the end of the body.
 
 #### Version introduced
 

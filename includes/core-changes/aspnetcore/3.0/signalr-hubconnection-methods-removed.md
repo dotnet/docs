@@ -20,7 +20,7 @@ These methods were originally intended only for internal use but were made publi
 
 #### Recommended action
 
-Discontinue use of these methods.
+Don't use these methods.
 
 #### Category
 

@@ -16,7 +16,7 @@ The [HandshakeProtocol.SuccessHandshakeData](https://github.com/aspnet/AspNetCor
 
 #### Reason for change
 
-This change was made because additional fields were added to the handshake _response_ that are non-constant and change depending on the selected protocol.
+Additional fields were added to the handshake _response_ that are non-constant and change depending on the selected protocol.
 
 #### Recommended action
 

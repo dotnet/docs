@@ -6,7 +6,7 @@ Earlier this year, we announced the `Microsoft.AspNetCore.App` metapackage (see 
 
 For migration instructions, see [Migrating from Microsoft.AspNetCore.All to Microsoft.AspNetCore.App](/aspnet/core/fundamentals/metapackage?view=aspnetcore-2.1#migrating-from-microsoftaspnetcoreall-to-microsoftaspnetcoreapp).
 
-As of ASP.NET Core 3.0, the `Microsoft.AspNetCore.All` metapackage and the matching `Microsoft.AspNetCore.All` shared framework is no longer produced.
+In ASP.NET Core 3.0, the `Microsoft.AspNetCore.All` metapackage and the matching `Microsoft.AspNetCore.All` shared framework are no longer produced.
 
 This package will be available in ASP.NET Core 2.2 and will continue to receive servicing updates in ASP.NET Core 2.1.
 
@@ -16,11 +16,11 @@ This package will be available in ASP.NET Core 2.2 and will continue to receive 
 
 #### Old behavior
 
-Apps were able to use the `Microsoft.AspNetCore.All` metapackage to target the `Microsoft.AspNetCore.All` shared framework on .NET Core.
+Apps could use the `Microsoft.AspNetCore.All` metapackage to target the `Microsoft.AspNetCore.All` shared framework on .NET Core.
 
 #### New behavior
 
-There is no `Microsoft.AspNetCore.All` shared framework as part of .NET Core 3.0.
+.NET Core 3.0 doesn't include a `Microsoft.AspNetCore.All` shared framework.
 
 #### Reason for change
 

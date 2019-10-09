@@ -67,7 +67,7 @@ This change includes types in the following namespaces:
 
 #### Reason for change
 
-To align them with how other AspNetCore packages implement logging, we are removing this automatic fallback.
+There's a need to align with how other ASP.NET Core packages implement logging.
 
 #### Recommended action
 

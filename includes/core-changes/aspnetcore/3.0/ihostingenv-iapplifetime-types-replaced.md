@@ -38,7 +38,7 @@ Replaced any usages of the old types with the newly introduced types as below:
 - `Microsoft.Extensions.Hosting.IHostApplicationLifetime`
 - `Microsoft.Extensions.Hosting.Environments`
 
-Note the new `IHostEnvironment` `IsDevelopment`, `IsProduction`, etc. extension methods are in the `Microsoft.Extensions.Hosting` namespace. That namespace may need to be added to your project.
+The new `IHostEnvironment` `IsDevelopment` and `IsProduction` extension methods are in the `Microsoft.Extensions.Hosting` namespace. That namespace may need to be added to your project.
 
 #### Category
 

@@ -20,7 +20,7 @@ The old behavior was problematic because, by default, these principals were reje
 
 #### Recommended action
 
-As of ASP.NET Core 3.0 Preview 6, there's a `RequireAuthenticatedSignIn` flag on `AuthenticationOptions` that is `true` by default. Set this flag to `false` to restore the old behavior.
+In ASP.NET Core 3.0 Preview 6, there's a `RequireAuthenticatedSignIn` flag on `AuthenticationOptions` that is `true` by default. Set this flag to `false` to restore the old behavior.
 
 #### Category
 

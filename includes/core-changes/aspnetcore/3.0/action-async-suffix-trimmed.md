@@ -21,7 +21,7 @@ public class ProductController : Controller
 }
 ```
 
-Prior to ASP.NET Core 3.0, the action is routable via `Product/ListAsync`. Link generation requires specifying the `Async` suffix. For example:
+The action is routable via `Product/ListAsync`. Link generation requires specifying the `Async` suffix. For example:
 
 ```cshtml
 <a asp-controller="Product" asp-action="ListAsync">List</a>
@@ -50,7 +50,7 @@ By convention, asynchronous .NET methods are suffixed with `Async`. However, whe
 
 #### Recommended action
 
-If your app depends on MVC actions retaining the `Async` suffix in the name, choose one of the following mitigations:
+If your app depends on MVC actions preserving the name's `Async` suffix, choose one of the following mitigations:
 
 - Use the `[ActionName]` attribute to preserve the original name.
 - Disable the renaming entirely by setting `MvcOptions.SuppressAsyncSuffixInActionNames` to `false` in `Startup.ConfigureServices`:

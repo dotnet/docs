@@ -1,6 +1,6 @@
 ### Removed DefaultHttpContext extensibility
 
-As part of performance improvements made to ASP.NET Core 3.0, we've removed the extensibility of `DefaultHttpContext`. The class is now `sealed`. For more information, see [aspnet/AspNetCore#6504](https://github.com/aspnet/AspNetCore/pull/6504). This extensibility was provided initially to allow pooling of the `HttpContext`, but it introduced more complexity than necessary and precluded other optimizations. As a result, we decided to remove this extensibility.
+As part of performance improvements made to ASP.NET Core 3.0, we've removed the extensibility of `DefaultHttpContext`. The class is now `sealed`. For more information, see [aspnet/AspNetCore#6504](https://github.com/aspnet/AspNetCore/pull/6504). This extensibility was provided initially to allow pooling of the `HttpContext`, but it introduced unnecessary complexity and impeded other optimizations. As a result, we decided to remove this extensibility.
 
 If your units tests use `Mock<DefaultHttpContext>`, use `Mock<HttpContext>` instead. 
 
@@ -20,7 +20,7 @@ Classes could derive from `DefaultHttpContext`.
 
 #### Reason for change
 
-Extensibility introduced more complexity than necessary and precluded other optimizations. As a result, the extensibility was removed.
+Extensibility introduced unnecessary complexity and impeded other optimizations. As a result, the extensibility was removed.
 
 #### Recommended action
 

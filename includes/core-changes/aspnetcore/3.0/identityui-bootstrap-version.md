@@ -41,4 +41,12 @@ ASP.NET Core
 
 #### Affected APIs
 
+None
+
+<!-- 
+
+### Affected APIs
+
 Not detectable via API analysis
+
+-->

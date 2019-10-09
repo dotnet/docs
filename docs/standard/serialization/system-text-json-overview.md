@@ -24,7 +24,7 @@ The library also provides classes for working with an in-memory document object 
 * The library is built-in as part of the [.NET Core 3.0](https://aka.ms/netcore3download) shared framework.
 * For other target frameworks, install the [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) NuGet package. The package supports:
   * .NET Standard 2.0 and later versions
-  * .NET Framework 4.61 and later versions
+  * .NET Framework 4.6.1 and later versions
   * .NET Core 2.0, 2.1, and 2.2
 
 ## Additional resources

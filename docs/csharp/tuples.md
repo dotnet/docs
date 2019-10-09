@@ -426,6 +426,20 @@ if (("Althea", "Goodwin") == p)
 
 The `Deconstruct` method could convert the `Person` object `p` to a tuple containing two strings, but it is not applicable in the context of equality tests.
 
+## Tuples as out parameters
+
+Tuples can be used as out parameters _themselves_, not to be confused with any ambiguity mentioned above in **[Deconstruction](#Deconstruction)**. In a method call, you need only describe the tuple's shape.
+
+!code-csharp[TuplesAsOurParameters](../../samples/snippets/csharp/tuples/program.cs#01_TupleAsOutVariable "Tuples as out parameters")]
+
+Alternatively, you could use an [_unnamed_](#named-and-unnamed-tuples) tuple, and refer to its fields as `Item1` and `Item2`:
+
+```csharp
+dict.TryGetValue(2, out (int, string) pair);
+// ...
+Console.WriteLine($"{pair.Item1}: {pair.Item2}");
+```
+
 ## Conclusion 
 
 The new language and library support for named tuples makes it much easier

@@ -45,11 +45,11 @@ For the operands of the [integral](../builtin-types/integral-numeric-types.md) t
 
 ## Logical negation operator !
 
-The `!` operator computes logical negation of its operand. That is, it produces `true`, if the operand evaluates to `false`, and `false`, if the operand evaluates to `true`:
+The unary prefix `!` operator computes logical negation of its operand. That is, it produces `true`, if the operand evaluates to `false`, and `false`, if the operand evaluates to `true`:
 
 [!code-csharp-interactive[logical negation](~/samples/csharp/language-reference/operators/BooleanLogicalOperators.cs#Negation)]
 
-Starting with C# 8.0, the unary postfix `!` operator is a null-forgiving operator. In an enabled nullable annotation context, you use it to declare that expression `x` of a nullable reference type isn't null: `x!`. For more information, see [Nullable reference types](../../nullable-references.md).
+Starting with C# 8.0, the unary postfix `!` operator is a [null-forgiving operator](null-forgiving.md).
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 

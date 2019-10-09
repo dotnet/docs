@@ -55,7 +55,7 @@ This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IB
 
 ## [ReadOnlySequence\<T\>](/dotnet/api/system.buffers.readonlysequence-1)
 
-![Browser window highlighting the Bootstrap navigation button](media/buffers/ro-sequence.png)
+![ReadOnlySequence showing memory in pipe and below that sequence position of read only memory](media/buffers/ro-sequence.png)
 
 <xref:System.Buffers.ReadOnlySequence%601> is a struct that can represent a contiguous or discontiguous sequence of T. It can be constructed from:
 

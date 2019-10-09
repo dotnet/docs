@@ -1,9 +1,9 @@
 ---
-title: "Stand-Alone JSON Serialization"
+title: "Stand-Alone JSON Serialization using DataContractJsonSerializer"
 ms.date: "03/30/2017"
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
 ---
-# Stand-Alone JSON Serialization
+# Stand-Alone JSON Serialization using DataContractJsonSerializer
 
 > [!NOTE]
 > This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the tools in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md). 

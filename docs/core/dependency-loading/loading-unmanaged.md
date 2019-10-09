@@ -15,7 +15,7 @@ The following algorithm describes how native libraries are loaded through `PInvo
 
 `PInvoke` uses the following algorithm when attempting to load an unmanaged assembly:
 
-1. Determine the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>. For an unmanaged load library, the `active` AssemblyLoadContext is the one with the assembly which defines the `PInvoke`.
+1. Determine the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>. For an unmanaged load library, the `active` AssemblyLoadContext is the one with the assembly that defines the `PInvoke`.
 
 2. For the `active` <xref:System.Runtime.Loader.AssemblyLoadContext>, try to find the assembly in priority order by:
     * Checking its cache.

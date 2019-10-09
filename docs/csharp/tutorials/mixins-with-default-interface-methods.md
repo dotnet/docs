@@ -47,21 +47,21 @@ Let's create the code to demonstrate these differences.
 
 Start by creating the interface that defines the behavior for all lights:
 
-[!code-csharp[Declare base interface](~/samples/csharp/tutorials/virtual-interface-methods/UnusedSampleCode.cs?name=SnippetILightInterfaceV1)]
+[!code-csharp[Declare base interface](~/samples/csharp/tutorials/mixins-with-interfaces/UnusedSampleCode.cs?name=SnippetILightInterfaceV1)]
 
 A basic overhead light fixture might implement this interface as shown in the following code:
 
-[!code-csharp[First overhead light](~/samples/csharp/tutorials/virtual-interface-methods/UnusedExampleCode.cs?name=SnippetOverheadLightV1)]
+[!code-csharp[First overhead light](~/samples/csharp/tutorials/mixins-with-interfaces/UnusedExampleCode.cs?name=SnippetOverheadLightV1)]
 
 In this tutorial, the code doesn't drive IoT devices, but emulates those activities by writing messages to the console. You can explore the code without automating your house.
 
 Next, let's define the interfaces for a light that can automatically turn off after a timeout:
 
-[!code-csharp[pure Timer interface](~/samples/csharp/tutorials/virtual-interface-methods/UnusedExampleCode.cs?name=SnippetPureTimerInterface)]
+[!code-csharp[pure Timer interface](~/samples/csharp/tutorials/mixins-with-interfaces/UnusedExampleCode.cs?name=SnippetPureTimerInterface)]
 
 You could add a basic implementation to the overhead light, but a better solution is to modify this interface definition to provide a `virtual` default implementation:
 
-[!code-csharp[Timer interface](~/samples/csharp/tutorials/virtual-interface-methods/ITimerLight.cs?name=SnippetTimerLightFinal)]
+[!code-csharp[Timer interface](~/samples/csharp/tutorials/mixins-with-interfaces/ITimerLight.cs?name=SnippetTimerLightFinal)]
 
 By adding that change, the `OverheadLight` can implement the timer function by declaring support for the interface:
 
@@ -71,7 +71,7 @@ public class OverheadLight : ITimerLight
 
 The `TurnOnFor` method is `public` and `virtual`, so is seen as part of the public interface for the `OverheadLight`. A different light type may support a more sophisticated protocol. It can provide its own implementation fro `TurnOnFor`, as shown in the following code:
 
-[!code-csharp[Override the timer function](~/samples/csharp/tutorials/virtual-interface-methods/HalogenLight.cs?name=SnippetHalogenLight)]
+[!code-csharp[Override the timer function](~/samples/csharp/tutorials/mixins-with-interfaces/HalogenLight.cs?name=SnippetHalogenLight)]
 
 There are a few important points about the preceding code. First of all, because `TurnOnFor` is declared `virtual`, The `TurnOnFor` method is part of the public interface for the `OverheadLight`. Without that keyword, the `OverheadLight`, and any other light type that used the default implementation, would need to be case to an `ITimerLight` to access the `TurnOnFor` method. However, unlike overriding virtual class methods, the declaration of `TurnOnFor` in the `HalogenLight` class does not use the `override` keyword. 
 
@@ -79,19 +79,19 @@ There are a few important points about the preceding code. First of all, because
 
 The advantages of default interface methods become clearer as you introduce more advanced capabilities. Using interfaces enables you to mix and match capabilities. It also enables each class author to choose between the default implementation and a custom implementation. Let's add an interface with a default implementation for a blinking light:
 
-[!code-csharp[Define the blinking light interface](~/samples/csharp/tutorials/virtual-interface-methods/IBlinkingLight.cs?name=SnippetBlinkingLight)]
+[!code-csharp[Define the blinking light interface](~/samples/csharp/tutorials/mixins-with-interfaces/IBlinkingLight.cs?name=SnippetBlinkingLight)]
 
 The default implementation enables any light to blink. The overhead light can add both timer and blink capabilities using the default implementation:
 
-[!code-csharp[Use the default blink function](~/samples/csharp/tutorials/virtual-interface-methods/OverheadLight.cs?name=SnippetOverheadLight)]
+[!code-csharp[Use the default blink function](~/samples/csharp/tutorials/mixins-with-interfaces/OverheadLight.cs?name=SnippetOverheadLight)]
 
 A new light type, the `LEDLight` supports both the timer function and the blink function directly. This light style implements both the `ITimerLight` and `IBlinkingLight` interfaces, and overrides the `Blink` method:
 
-[!code-csharp[Override the blink function](~/samples/csharp/tutorials/virtual-interface-methods/LEDLight.cs?name=SnippetOverheadLight)]
+[!code-csharp[Override the blink function](~/samples/csharp/tutorials/mixins-with-interfaces/LEDLight.cs?name=SnippetOverheadLight)]
 
 An `ExtraFancyLight` might support both blink and timer functions directly:
 
-[!code-csharp[Override the blink and timer function](~/samples/csharp/tutorials/virtual-interface-methods/ExtraFancyLight.cs?name=SnippetExtraFancyLight)]
+[!code-csharp[Override the blink and timer function](~/samples/csharp/tutorials/mixins-with-interfaces/ExtraFancyLight.cs?name=SnippetExtraFancyLight)]
 
 The `HalogenLight` you created earlier does not support blinking. You just don't add the `IBlinkingLight` to the list of its supported interfaces.
 
@@ -99,21 +99,21 @@ The `HalogenLight` you created earlier does not support blinking. You just don't
 
 Next, let's write some test code. You can make use of C#'s [pattern matching](../pattern-matching.md) feature to determine a light's capabilities by examining which interfaces it supports.  The following method exercises the supported capabilities of each light:
 
-[!code-csharp[Test a light's capabilities](~/samples/csharp/tutorials/virtual-interface-methods/Program.cs?name=SnippetTestLightFunctions)]
+[!code-csharp[Test a light's capabilities](~/samples/csharp/tutorials/mixins-with-interfaces/Program.cs?name=SnippetTestLightFunctions)]
 
 The following code in your `Main` method creates each light type in sequence and tests that light:
 
-[!code-csharp[Test a light's capabilities](~/samples/csharp/tutorials/virtual-interface-methods/Program.cs?name=SnippetMainMethod)]
+[!code-csharp[Test a light's capabilities](~/samples/csharp/tutorials/mixins-with-interfaces/Program.cs?name=SnippetMainMethod)]
 
 ## How the compiler determines best implementation
 
 This scenario shows a base interface without any implementations. Adding a method into the `ILight` interface introduces new complexities. The language rules governing default interface methods minimize the effect on the concrete classes that implement multiple derived interfaces. Let's enhance the original interface with a new method to show how that changes its use. Every indicator light can report its power status as an enumerated value:
 
-[!code-csharp[Enumeration for power status](~/samples/csharp/tutorials/virtual-interface-methods/ILight.cs?name=SnippetPowerStatus)]
+[!code-csharp[Enumeration for power status](~/samples/csharp/tutorials/mixins-with-interfaces/ILight.cs?name=SnippetPowerStatus)]
 
 The default implementation assumes AC power:
 
-[!code-csharp[Report a default power status](~/samples/csharp/tutorials/virtual-interface-methods/ILight.cs?name=SnippetILightInterface)]
+[!code-csharp[Report a default power status](~/samples/csharp/tutorials/mixins-with-interfaces/ILight.cs?name=SnippetILightInterface)]
 
 These changes compile cleanly, even though the `ExtraFancyLight` declares support for the `ILight` interface and both derived interfaces, `ITimerLight` and `IBlinkingLight`. There's only one "closest" implementation declared in the `ILight` interface. Any class that declared an override would become the one "closest" implementation. You saw examples in the preceding classes that overrode the members of other derived interfaces.
 

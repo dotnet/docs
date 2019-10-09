@@ -187,7 +187,7 @@ Up to this point, the code shown is just performing regular Http requests, but t
   <http://www.thepollyproject.org/>
   
 - **Using HttpClientFactory without dependency injection (GitHub issue)**  
-  <https://github.com/dotnet/docs/issues/13850>
+  <https://github.com/aspnet/Extensions/issues/1345>
 
 >[!div class="step-by-step"]
 >[Previous](explore-custom-http-call-retries-exponential-backoff.md)

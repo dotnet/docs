@@ -5,7 +5,7 @@ ms.date: 09/20/2018
 ---
 # Creating composite UI based on microservices
 
-Microservices architecture often starts with the server-side handling data and logic. However, a more advanced approach is to design your application UI based on microservices as well. That means having a composite UI produced by the microservices, instead of having microservices on the server and just a monolithic client app consuming the microservices. With this approach, the microservices you build can be complete with both logic and visual representation.
+Microservices architecture often starts with the server-side handling data and logic but, in many cases, the UI is still handled as a monolith. However, a more advanced approach, called [micro frontends](https://martinfowler.com/articles/micro-frontends.html), is to design your application UI based on microservices as well. That means having a composite UI produced by the microservices, instead of having microservices on the server and just a monolithic client app consuming the microservices. With this approach, the microservices you build can be complete with both logic and visual representation.
 
 Figure 4-20 shows the simpler approach of just consuming microservices from a monolithic client application. Of course, you could have an ASP.NET MVC service in between producing the HTML and JavaScript. The figure is a simplification that highlights that you have a single (monolithic) client UI consuming the microservices, which just focus on logic and data and not on the UI shape (HTML and JavaScript).
 
@@ -33,19 +33,25 @@ However, we encourage you to use the following references to learn more about co
 
 ## Additional resources
 
-- **Composite UI using ASP.NET (Particular's Workshop)** \
+- **Micro Frontends (Martin Fowler's blog)**  
+  <https://martinfowler.com/articles/micro-frontends.html>
+  
+- **Micro Frontends (Michael Geers site & GitHub repo**  
+  <https://micro-frontends.org/>
+  
+- **Composite UI using ASP.NET (Particular's Workshop)**  
   <https://github.com/Particular/Workshop/tree/master/demos/asp-net-core>
 
-- **Ruben Oostinga. The Monolithic Frontend in the Microservices Architecture** \
+- **Ruben Oostinga. The Monolithic Frontend in the Microservices Architecture**  
   <https://xebia.com/blog/the-monolithic-frontend-in-the-microservices-architecture/>
 
-- **Mauro Servienti. The secret of better UI composition** \
+- **Mauro Servienti. The secret of better UI composition**  
   <https://particular.net/blog/secret-of-better-ui-composition>
 
-- **Viktor Farcic. Including Front-End Web Components Into Microservices** \
+- **Viktor Farcic. Including Front-End Web Components Into Microservices**  
   <https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/>
 
-- **Managing Frontend in the Microservices Architecture** \
+- **Managing Frontend in the Microservices Architecture**  
   <https://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html>
 
 >[!div class="step-by-step"]

@@ -39,7 +39,7 @@ Monolithic apps that are critical to the business oftentimes benefit from an enh
 
 Finally, monolithic apps that perform strategic enterprise functions might best benefit from a *Cloud-Native* approach, the subject of this book. This approach provides agility and velocity. But, it comes at a cost of replatforming, rearchitecting, and rewriting code.
 
-If you and your team believe a cloud-native approach is appropriate, it behooves you to rationalize the decision with your organization. What exactly is the business problem that a cloud- native approach will solve? How would it align with business needs?
+If you and your team believe a cloud-native approach is appropriate, it behooves you to rationalize the decision with your organization. What exactly is the business problem that a cloud-native approach will solve? How would it align with business needs?
 
 - Rapid releases of features with increased confidence?
 
@@ -59,7 +59,7 @@ The right migration strategy depends on organizational priorities and the system
 
 ## Summary
 
-In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilities that drive a cloud-native application. We looked the types of applications that might justify this investment and effort.
+In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort.
 
 With the introduction behind, we now dive into a much more detailed look at cloud native.
 

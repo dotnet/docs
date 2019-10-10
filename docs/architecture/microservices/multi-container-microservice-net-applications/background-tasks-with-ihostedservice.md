@@ -218,7 +218,7 @@ WebHost.CreateDefaultBuilder(args)
 
 The following image shows a visual summary of the classes and interfaced involved when implementing IHostedServices.
 
-![Class diagram: IWebHost and IHost can host many services, which inherit from BackgroundService, which implements IHostedService.](./media/image27.png)
+![Diagram showing that IWebHost and IHost can host many services.](./media/background-tasks-with-ihostedservice/class-diagram-custom-ihostedservice.png)
 
 **Figure 6-27**. Class diagram showing the multiple classes and interfaces related to IHostedService
 

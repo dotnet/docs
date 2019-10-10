@@ -12,6 +12,8 @@ ms.author: riande
 ---
 # Work with Buffers in .NET
 
+Fix links like https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc
+then remove
 <!-- >
 - **Writing**
     - [IBufferWriter\<T\>](#ibufferwritert)
@@ -53,11 +55,9 @@ This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IB
 
 ## ReadOnlySequence\<T\>
 
-## [ReadOnlySequence\<T\>](/dotnet/api/system.buffers.readonlysequence-1)
-
 ![ReadOnlySequence showing memory in pipe and below that sequence position of read only memory](media/buffers/ro-sequence.png)
 
-<xref:System.Buffers.ReadOnlySequence%601> is a struct that can represent a contiguous or discontiguous sequence of T. It can be constructed from:
+<xref:System.Buffers.ReadOnlySequence%601> is a struct that can represent a contiguous or noncontiguous sequence of T. It can be constructed from:
 
 1. A `T[]`
 1. A `ReadOnlyMemory<T>`
@@ -81,13 +81,13 @@ Because of this mixed representation, the `ReadOnlySequence<T>` exposes indexes 
 * Is an opaque value that represents an index into the `ReadOnlySequence<T>` where it originated.
 * Consists of two parts, an integer and an object. What these 2 values represent are tied to the implementation of `ReadOnlySequence<T>`.
 
-### Accessing data
+### Access data
 
 The `ReadOnlySequence<T>` exposes data as an enumerable of `ReadOnlyMemory<T>`. Enumerating each of the segments can be done using a simple foreach:
 
 [!code-csharp[](temp/MyClass.cs?name=snippet3)]
 
-The preceding method searches each segment for a specific byte. If you need to keep track of each segment's `SequencePosition`, <xref:System.Buffers.ReadOnlySequence*> zz  [`ReadOnlySequence.TryGet`](/dotnet/api/system.buffers.readonlysequence-1.tryget?view=netcore-3.0) is more appropriate. Let's change the preceding code to return a `SequencePosition` instead of an integer. This has the added benefit of allowing the caller to avoid a second scan to get the data at a specific index.
+The preceding method searches each segment for a specific byte. If you need to keep track of each segment's `SequencePosition`, <xref:System.Buffers.ReadOnlySequence%601>  [`ReadOnlySequence.TryGet`](/dotnet/api/system.buffers.readonlysequence-1.tryget?view=netcore-3.0) is more appropriate. The next sample changes the preceding code to return a `SequencePosition` instead of an integer. Returning a `SequencePosition` has the benefit of allowing the caller to avoid a second scan to get the data at a specific index.
 
 [!code-csharp[](temp/MyClass.cs?name=snippet4)]
 
@@ -99,175 +99,44 @@ The preceding method exists as an extension method on `ReadOnlySequence<T>`. [Po
 SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data) => buffer.PositionOf(data);
 ```
 
-#### Processing a ReadOnlySequence\<T\> 
+#### Process a ReadOnlySequence\<T\>
 
-Processing a `ReadOnlySequence<T>` can be challenging since data may be split across multiple segments within the sequence. For the best performance, split code into a fast path, that deals with the single segment case, and a slow path that deals with the data split across segments. There are a few approaches that can be used to process data in multi-segmented sequences:
+Processing a `ReadOnlySequence<T>` can be challenging since data may be split across multiple segments within the sequence. For the best performance, split code into two paths:
+
+* A fast path, that deals with the single segment case.
+* A slow path that deals with the data split across segments.
+
+There are a few approaches that can be used to process data in multi-segmented sequences:
 
 - Use the [`SequenceReader<T>`](#sequencereadert)
-- Parse data segment by segment, keeping track of the `SequencePosition` and index within the segment parsed. This avoids unnecessary allocations but may be inefficient (especially for small buffers).
+- Parse data segment by segment, keeping track of the `SequencePosition` and index within the segment parsed. This avoids unnecessary allocations but may be inefficient, especially for small buffers.
 - Copy the `ReadOnlySequence<T>` to a contiguous array and treat it like a single buffer:
-  - If the `ReadOnlySequence<T>` has a length less then 256, it may be reasonable to copy the data into a stack-allocated buffer (using the `stackalloc` keyword).
-  - Copy the `ReadOnlySequence<T>` into a pooled array using `ArrayPool<T>.Shared`.
-  - Use `ReadOnlySequence<T>.ToArray()`. This is not recommended in hot paths as it allocates a new `T[]` on the heap.
+  - If the `ReadOnlySequence<T>` has a length less then 256, it may be reasonable to copy the data into a stack-allocated buffer using the [stackalloc](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc) operator.
+  - Copy the `ReadOnlySequence<T>` into a pooled array using <xref:System.Buffers.ArrayPool`1.Shared*>.
+  - Use [`ReadOnlySequence<T>.ToArray()`](xref:System.Buffers.BuffersExtensions.ToArray*). This is not recommended in hot paths as it allocates a new `T[]` on the heap.
 
 The following examples demonstrate some common cases for processing `ReadOnlySequence<byte>`:
 
-##### Processing Binary Data
+##### Process binary data
 
-This example parses a 4 byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
+This example parses a 4 byte [big-endian](https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/b/big-endian-little-endian) integer length from the start of the `ReadOnlySequence<byte>`.
 
-```C#
-bool TryParseHeaderLength(ref ReadOnlySequence<byte> buffer, out int length)
-{
-    // If we don't have enough space, we can't get the length
-    if (buffer.Length < 4)
-    {
-        length = 0;
-        return false;
-    }
-    
-    // Grab the first 4 bytes of the buffer
-    var lengthSlice = buffer.Slice(buffer.Start, 4);
-    if (lengthSlice.IsSingleSegment)
-    {
-        // Fast path since it's a single segment
-        length = BinaryPrimitives.ReadInt32BigEndian(lengthSlice.First.Span);
-    }
-    else
-    {
-        // We have 4 bytes split across multiple segments, since it's so small we can copy it to a
-        // stack allocated buffer, this avoids a heap allocation.
-        Span<byte> stackBuffer = stackalloc byte[4];
-        lengthSlice.CopyTo(stackBuffer);
-        length = BinaryPrimitives.ReadInt32BigEndian(stackBuffer);
-    }
-    
-    // Move the buffer 4 bytes ahead
-    buffer = buffer.Slice(lengthSlice.End);
-    
-    return true;
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet5)]
 
-##### Processing Text Data
+##### Process text data
 
-This example finds the first newline (`\r\n`) in the `ReadOnlySequence<byte>` and returns it via the out 'line' parameter. It also trims that line (excluding the `\r\n` from the input buffer).
+The following example:
 
-```C#
-static bool TryParseLine(ref ReadOnlySequence<byte> buffer, out ReadOnlySequence<byte> line)
-{
-    SequencePosition position = buffer.Start;
-    SequencePosition previous = position;
-    var index = -1;
-    line = default;
+* Finds the first newline (`\r\n`) in the `ReadOnlySequence<byte>` and returns it via the out 'line' parameter.
+* Trims that line, excluding the `\r\n` from the input buffer.
 
-    while (buffer.TryGet(ref position, out ReadOnlyMemory<byte> segment))
-    {
-        ReadOnlySpan<byte> span = segment.Span;
-
-        // Look for \r in the current segment
-        index = span.IndexOf((byte)'\r');
-
-        if (index != -1)
-        {
-            // Check next segment for \n
-            if (index + 1 >= span.Length)
-            {
-                var next = position;
-                if (!buffer.TryGet(ref next, out ReadOnlyMemory<byte> nextSegment))
-                {
-                    // We're at the end of the sequence
-                    return false;
-                }
-                else if (nextSegment.Span[0] == (byte)'\n')
-                {
-                    //  We found a match
-                    break;
-                }
-            }
-            // Check the current segment of \n
-            else if (span[index + 1] == (byte)'\n')
-            {
-                // Found it
-                break;
-            }
-        }
-
-        previous = position;
-    }
-
-    if (index != -1)
-    {
-        // Get the position just before the \r\n
-        var delimeter = buffer.GetPosition(index, previous);
-        
-        // Slice the line (excluding \r\n)
-        line = buffer.Slice(buffer.Start, delimeter);
-        
-        // Slice the buffer to get the renamining data after the line
-        buffer = buffer.Slice(buffer.GetPosition(2, delimeter));
-        return true;
-    }
-
-    return false;
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet6)]
 
 ##### Empty segments
 
-It is valid to store empty segments inside of a `ReadOnlySequence<T>` and it may show up while enumerating segments explicitly:
+It's valid to store empty segments inside of a `ReadOnlySequence<T>` and it may show up while enumerating segments explicitly:
 
-```C#
-static void EmptySegments()
-{
-    // This logic creates a ReadOnlySequence<byte> with 4 segments but with a length of 2
-    // 2 of those segments are empty
-    var first = new BufferSegment(new byte[0]);
-    var last = first.Append(new byte[] { 97 }).Append(new byte[0]).Append(new byte[] { 98 });
-    
-    // Construct the ReadOnlySequence<byte> from the linked list segments
-    var data = new ReadOnlySequence<byte>(first, 0, last, 1);
-
-    // Slice using numbers
-    var sequence1 = data.Slice(0, 2);
-    
-    // Slice using SequencePosition pointing at the empty segment
-    var sequence2 = data.Slice(data.Start, 2);
-
-    Console.WriteLine($"sequence1.Length={sequence1.Length}"); // sequence1.Length=2
-    Console.WriteLine($"sequence2.Length={sequence2.Length}"); // sequence2.Length=2
-
-    Console.WriteLine($"sequence1.FirstSpan.Length={sequence1.FirstSpan.Length}"); // sequence1.FirstSpan.Length=1
-    
-    // Slicing using SequencePosition will Slice the ReadOnlySequence<byte> directly on the empty segment!
-    Console.WriteLine($"sequence2.FirstSpan.Length={sequence2.FirstSpan.Length}"); // sequence2.FirstSpan.Length=0
-
-    // This prints 0, 1, 0, 1
-    SequencePosition position = data.Start;
-    while (data.TryGet(ref position, out ReadOnlyMemory<byte> memory))
-    {
-        Console.WriteLine(memory.Length);
-    }
-}
-
-class BufferSegment : ReadOnlySequenceSegment<byte>
-{
-    public BufferSegment(Memory<byte> memory)
-    {
-        Memory = memory;
-    }
-
-    public BufferSegment Append(Memory<byte> memory)
-    {
-        var segment = new BufferSegment(memory)
-        {
-            RunningIndex = RunningIndex + Memory.Length
-        };
-        Next = segment;
-        return segment;
-    }
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet7)]
 
 The preceding logic creates a `ReadOnlySequence<byte>` with empty segments and shows how those empty segments affect the various APIs:
 - `ReadOnlySequence<T>.Slice` with a `SequencePosition` pointing to an empty segment will preserve that segment.
@@ -290,7 +159,7 @@ There are several quirks when dealing with a `ReadOnlySequence<T>`/`SequencePosi
 
 There are built-in methods for dealing with processing both binary and delimited data. Let's take a look at what those same methods look like with the `SequenceReader<T>`:
 
-#### Accessing data
+#### Access data
 
 `SequenceReader<T>` has methods for enumerating data inside of the `ReadOnlySequence<T>` directly. Below is an example of processing a `ReadOnlySequence<byte>` a `byte` at a time:
 
@@ -334,7 +203,7 @@ SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data)
 }
 ```
 
-#### Processing Binary Data
+#### Process binary data
 
 This example parses a 4 byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
 
@@ -346,7 +215,7 @@ bool TryParseHeaderLength(ref ReadOnlySequence<byte> buffer, out int length)
 }
 ```
 
-#### Processing Text Data
+#### Process text data
 
 ```C#
 static ReadOnlySpan<byte> NewLine => new byte[] { (byte)'\r', (byte)'\n' };

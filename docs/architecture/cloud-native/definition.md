@@ -148,7 +148,7 @@ Figure 1-2 contrasts a monolithic application approach with a microservices appr
 
 Note how microservices promote the "One Codebase, One Application" principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
 
-> *Factor \#1  specifies "A single code base for each microservice, stored in its own repository. Tracked with version control, it can deploy to multiple environments "*
+> *Factor \#1  specifies "A single code base for each microservice, stored in its own repository. Tracked with version control, it can deploy to multiple environments"*
 
 ### Why microservices?
 
@@ -168,13 +168,13 @@ Microservices can be created with any modern development platform.
 
 The Microsoft .NET Core platform is an excellent choice. Free and open source, it has many built-in features to simplify microservice development. .NET Core is cross-platform. Applications can be built and run on Windows, macOS, and most flavors of Linux.
 
-.NET Core is highly performant and has scored well in comparison to Node.js and other completing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET Core scored in the top 10 - well above Node.js and other competing platforms. 
+.NET Core is highly performant and has scored well in comparison to Node.js and other competing platforms. Interestingly, [TechEmpower](https://www.techempower.com/) conducted an extensive set of [performance benchmarks](https://www.techempower.com/benchmarks/#section=data-r17&hw=ph&test=plaintext) across many web application platforms and frameworks. .NET Core scored in the top 10 - well above Node.js and other competing platforms. 
 
 .NET Core is maintained by Microsoft and the .NET community on GitHub. 
 
 ## Containers
 
-Nowadays, it natural to hear the term *container* mentioned in any conversation concerning *cloud native*. In the book, [Cloud Native Patterns](https://www.manning.com/books/cloud-native-patterns), Author Cornelia Davis observes that, "Containers are a great enabler of cloud-native software." The Cloud Native Computing Foundation places microservice containerization as the first step in their [Cloud-Native Trail Map](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png) - guidance for enterprises beginning their cloud-native journey.
+Nowadays, it's natural to hear the term *container* mentioned in any conversation concerning *cloud native*. In the book, [Cloud Native Patterns](https://www.manning.com/books/cloud-native-patterns), Author Cornelia Davis observes that, "Containers are a great enabler of cloud-native software." The Cloud Native Computing Foundation places microservice containerization as the first step in their [Cloud-Native Trail Map](https://raw.githubusercontent.com/cncf/trailmap/master/CNCF_TrailMap_latest.png) - guidance for enterprises beginning their cloud-native journey.
 
 Containerizing a microservice is simple and straightforward. The code, its dependencies, and runtime are packaged into a binary called a [container image](https://docs.docker.com/glossary/?term=image). Images are stored in a [container registry](https://caylent.com/container-registries/), which acts as a repository or library for images. A registry can be located on your development computer, in your data center, or in a public cloud. Docker itself maintains a public registry via [Docker Hub](https://hub.docker.com/). The Azure cloud features a [container registry](https://azure.microsoft.com/services/container-registry/) to store container images close to the cloud applications that will run them.
 
@@ -281,7 +281,7 @@ With IaC, you automate platform provisioning and application deployment. You ess
 
 ### Automating infrastructure
 
-Tools like [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/), [Terraform, and the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest), enable you to declaratively script the cloud infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You invoke the script to provision a consistent and repeatable infrastructure across system environments, such as QA, staging, and production. 
+Tools like [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/), Terraform, and the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest), enable you to declaratively script the cloud infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You invoke the script to provision a consistent and repeatable infrastructure across system environments, such as QA, staging, and production. 
 
 Under the hood, IaC is idempotent, meaning that you can run the same script over and over without side effects. If the team needs to make a change, they edit and rerun the script. Only the updated resources are affected.
 

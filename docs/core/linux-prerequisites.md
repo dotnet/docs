@@ -122,6 +122,15 @@ For versions earlier than .NET Core 2.1, following dependencies are also require
 * libunwind8
 * libuuid1
 
+If your code uses the System.Drawing.Common assembly, you will also need the following dependencies:
+
+* libgdiplus (version 6.0.1 or later)
+
+> [!NOTE]
+> Most versions of Ubuntu include an earlier version of libgdiplus. You can install a recent version
+> of libgdiplus by adding the Mono repository to your system. See https://www.mono-project.com/download/stable/
+> for more information.
+
 ### CentOS and Fedora
 
 CentOS distributions require the following libraries installed:
@@ -141,6 +150,15 @@ For versions earlier than .NET Core 2.1, following dependencies are also require
 * libuuid
 
 For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+
+If your code uses the System.Drawing.Common assembly, you will also need the following dependencies:
+
+* libgdiplus (version 6.0.1 or later)
+
+> [!NOTE]
+> Most versions of CentOS and Fedora include an earlier version of libgdiplus. You can install a recent version
+> of libgdiplus by adding the Mono repository to your system. See https://www.mono-project.com/download/stable/
+> for more information.
 
 ## Installing .NET Core dependencies with the native installers
 

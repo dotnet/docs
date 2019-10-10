@@ -214,7 +214,7 @@ The following code reads all messages from a `PipeReader` and calls `ProcessMess
 
 ### PipeReader common problems
 
-* Passing the wrong values to `consumed` or `examined` may result in reading already read data. For example, passing a `SequencePosition` that was already processed to `examined` but not `consumed`.
+* Passing the wrong values to `consumed` or `examined` may result in reading already read data.
 * Passing `buffer.End` as examined may result in:
 
   * Stalled data
@@ -224,7 +224,7 @@ The following code reads all messages from a `PipeReader` and calls `ProcessMess
 * Passing the wrong values to `consumed` or `examined` may result in infinite buffering (eventual OOM).
 * Using the `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo` may result in memory corruption (use after free).
 * Failing to call `PipeReader.Complete/CompleteAsync` may result in a memory leak.
-* Checking <xref:System.IO.Pipelines.ReadResult.IsCompleted?displayProperty=nameWithType> and exiting the reading logic before processing the buffer results in data loss. The loop exit condition should be based on `ReadResult.Buffer.IsEmpty` and `ReadResult.IsCompleted`. Doing this in the wrong order could result in an infinite loop.
+* Checking <xref:System.IO.Pipelines.ReadResult.IsCompleted?displayProperty=nameWithType> and exiting the reading logic before processing the buffer results in data loss. The loop exit condition should be based on `ReadResult.Buffer.IsEmpty` and `ReadResult.IsCompleted`. Doing this incorrectly could result in an infinite loop.
 
 #### Problematic code
 

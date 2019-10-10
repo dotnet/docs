@@ -1,10 +1,6 @@
 {
     "redirections": [
         {
-            "source_path": "docs/standard/serialization/serialization-samples.md",
-            "redirect_url": "/dotnet/standard/serialization/index"
-        },
-        {
             "source_path": "docs/about/index.md",
             "redirect_url": "/dotnet/standard/index"
         },
@@ -2978,6 +2974,10 @@
         {
             "source_path": "docs/standard/serialization/persistent-storage.md",
             "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
+        },
+        {
+            "source_path": "docs/standard/serialization/serialization-samples.md",
+            "redirect_url": "/dotnet/standard/serialization/index"
         },
         {
             "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",

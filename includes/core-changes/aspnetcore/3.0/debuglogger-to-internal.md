@@ -1,6 +1,6 @@
 ### DebugLogger class made internal
 
-`DebugLogger` has effectively been removed. Prior to ASP.NET Core 3.0, it was `public`. Starting with ASP.NET Core 3.0, it's `internal` to match other logger implementations such as `ConsoleLogger`.
+Prior to ASP.NET Core 3.0, `DebugLogger`'s access modifier was `public`. In ASP.NET Core 3.0, the access modifier changed to `internal`.
 
 #### Version introduced
 
@@ -8,7 +8,10 @@
 
 #### Reason for change
 
-Consistency and reduction of API surface.
+The change is being made to:
+
+* Enforce consistency with other logger implementations such as `ConsoleLogger`.
+* Reduce the API surface.
 
 #### Recommended action
 
@@ -23,7 +26,7 @@ ASP.NET Core
 <xref:Microsoft.Extensions.Logging.Debug.DebugLogger?displayProperty=nameWithType>
 
 <!--
-### Affected APIs
+#### Affected APIs
 
 `T:Microsoft.Extensions.Logging.Debug.DebugLogger`
 

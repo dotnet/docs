@@ -1,6 +1,6 @@
 ### Default Bootstrap version of Identity UI changed to 4
 
-Currently, the default version of Bootstrap for Identity UI is `UIFramework.Bootstrap3`. Starting in ASP.NET Core 3.0, the default version is `UIFramework.Bootstrap4`.
+Starting in ASP.NET Core 3.0, Identity UI defaults to using version 4 of Bootstrap.
 
 #### Version introduced
 
@@ -45,7 +45,7 @@ None
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 Not detectable via API analysis
 

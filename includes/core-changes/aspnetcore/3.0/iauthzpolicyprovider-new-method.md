@@ -1,6 +1,8 @@
 ### IAuthorizationPolicyProvider implementations require a new method
 
-As part of [aspnet/AspNetCore#9759](https://github.com/aspnet/AspNetCore/pull/9759), a new `GetFallbackPolicyAsync` method was added to `IAuthorizationPolicyProvider`. This fallback policy is used by the authorization middleware when no policy is specified.
+In ASP.NET Core 3.0, a new `GetFallbackPolicyAsync` method was added to `IAuthorizationPolicyProvider`. This fallback policy is used by the authorization middleware when no policy is specified.
+
+For more information, see [aspnet/AspNetCore#9759](https://github.com/aspnet/AspNetCore/pull/9759). 
 
 #### Version introduced
 
@@ -20,7 +22,7 @@ A new method was needed for the new `AuthorizationMiddleware` to use when no pol
 
 #### Recommended action
 
-Add `GetFallbackPolicyAsync` method to your implementations of `IAuthorizationPolicyProvider`.
+Add the `GetFallbackPolicyAsync` method to your implementations of `IAuthorizationPolicyProvider`.
 
 #### Category
 
@@ -28,4 +30,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-[IAuthorizationPolicyProvider](/dotnet/api/microsoft.aspnetcore.authorization.iauthorizationpolicyprovider?view=aspnetcore-2.2)
+<xref:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider?displayProperty=fullName>
+
+<!-- 
+
+#### Affected APIs
+
+`T:Microsoft.AspNetCore.Authorization.IAuthorizationPolicyProvider`
+
+-->

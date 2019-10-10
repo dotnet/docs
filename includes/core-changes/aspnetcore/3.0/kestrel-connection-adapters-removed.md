@@ -30,4 +30,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-[IConnectionAdapter](/dotnet/api/microsoft.aspnetcore.server.kestrel.core.adapter.internal.iconnectionadapter)
+<xref:Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.IConnectionAdapter?displayProperty=nameWithType>
+
+<!-- 
+
+#### Affected APIs
+
+`T:Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.IConnectionAdapter`
+
+-->

@@ -41,4 +41,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-[HttpRequest.Headers](/dotnet/api/microsoft.aspnetcore.http.httprequest.headers?view=aspnetcore-2.2#Microsoft_AspNetCore_Http_HttpRequest_Headers)
+<xref:Microsoft.AspNetCore.Http.HttpRequest.Headers?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+`P:Microsoft.AspNetCore.Http.HttpRequest.Headers`
+
+-->

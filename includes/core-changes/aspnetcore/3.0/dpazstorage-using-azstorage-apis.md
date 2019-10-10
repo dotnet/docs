@@ -1,8 +1,6 @@
 ### DataProtection.AzureStorage uses new Azure Storage APIs
 
-`Microsoft.AspNetCore.DataProtection.AzureStorage` depends on the [Azure Storage libraries](https://github.com/Azure/azure-storage-net). These libraries renamed their assemblies, packages, and namespaces. Starting in ASP.NET Core 3.0, `Microsoft.AspNetCore.DataProtection.AzureStorage` uses the new `Microsoft.Azure.Storage.`-prefixed APIs and packages.
-
-If you still need to use the older Azure Storage APIs with ASP.NET Core 3.0, add a direct dependency to the [WindowsAzure.Storage](https://www.nuget.org/packages/WindowsAzure.Storage/) package. This package can be installed alongside the new `Microsoft.Azure.Storage` APIs.
+<xref:Microsoft.AspNetCore.DataProtection.AzureStorage?displayProperty=fullName> depends on the [Azure Storage libraries](https://github.com/Azure/azure-storage-net). These libraries renamed their assemblies, packages, and namespaces. Starting in ASP.NET Core 3.0, `Microsoft.AspNetCore.DataProtection.AzureStorage` uses the new `Microsoft.Azure.Storage.`-prefixed APIs and packages.
 
 For questions about the Azure Storage APIs, use https://github.com/Azure/azure-storage-net. For discussion on this issue, see [aspnet/AspNetCore#8472](https://github.com/aspnet/AspNetCore/issues/8472).
 
@@ -24,7 +22,9 @@ This change allows `Microsoft.AspNetCore.DataProtection.AzureStorage` to migrate
 
 #### Recommended action
 
-Changes to your code may be necessary to use the new API. In many cases, the upgrade only involves changing the `using` statements to use the new namespaces:
+If you still need to use the older Azure Storage APIs with ASP.NET Core 3.0, add a direct dependency to the [WindowsAzure.Storage](https://www.nuget.org/packages/WindowsAzure.Storage/) package. This package can be installed alongside the new `Microsoft.Azure.Storage` APIs.
+
+In many cases, the upgrade only involves changing the `using` statements to use the new namespaces:
 
 ```diff
 - using Microsoft.WindowsAzure.Storage;
@@ -43,7 +43,7 @@ None
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 Not detectable via API analysis
 

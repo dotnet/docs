@@ -34,57 +34,34 @@ ASP.NET Core
 
 This change includes types in the following namespaces:
 
-- Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal
-- Microsoft.AspNetCore.Mvc.Cors.Internal
-- Microsoft.AspNetCore.Mvc.ViewFeatures.Internal
-- Microsoft.AspNetCore.Mvc.Formatters.Json.Internal
-- Microsoft.AspNetCore.Mvc.RazorPages.Internal
-- Microsoft.AspNetCore.Mvc.DataAnnotations.Internal
-- Microsoft.AspNetCore.Mvc.TagHelpers.Internal
-- Microsoft.AspNetCore.Mvc.Internal
-- Microsoft.AspNetCore.Mvc.Razor.Internal
-- Microsoft.AspNetCore.Mvc.Formatters.Internal
-- Microsoft.AspNetCore.Mvc.Core.Internal
-- Microsoft.AspNetCore.Mvc.ModelBinding.Internal
+- <xref:Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Cors.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.RazorPages.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.DataAnnotations.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.TagHelpers.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Razor.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Formatters.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Core.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.ModelBinding.Internal?displayProperty=nameWithType>
 
-***
-
-### Microsoft.AspNetCore.SpaServices and NodeServices no longer fallback to console logger by default
-
-`Microsoft.AspNetCore.SpaServices` and `Microsoft.AspNetCore.NodeServices` won't display console logs unless logging is configured.
-
-#### Version introduced
-
-3.0
-
-#### Old behavior
-
-`Microsoft.AspNetCore.SpaServices` and `Microsoft.AspNetCore.NodeServices` used to automatically create a console logger when logging isn't configured. 
-
-#### New behavior
-
-`Microsoft.AspNetCore.SpaServices` and `Microsoft.AspNetCore.NodeServices` won't display console logs unless logging is configured.
-
-#### Reason for change
-
-There's a need to align with how other ASP.NET Core packages implement logging.
-
-#### Recommended action
-
-If the old behavior is required, to configure console logging, add `services.AddLogging(builder => builder.AddConsole())` to your `Setup.ConfigureServices` method.
-
-#### Category
-
-ASP.NET Core
+<!--
 
 #### Affected APIs
 
-None
-
-<!-- 
-
-### Affected APIs
-
-Not detectable via API analysis
+- `N:Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Cors.Internal`
+- `N:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal`
+- `N:Microsoft.AspNetCore.Mvc.RazorPages.Internal`
+- `N:Microsoft.AspNetCore.Mvc.DataAnnotations.Internal`
+- `N:Microsoft.AspNetCore.Mvc.TagHelpers.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Razor.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Formatters.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Core.Internal`
+- `N:Microsoft.AspNetCore.Mvc.ModelBinding.Internal`
 
 -->

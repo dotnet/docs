@@ -30,4 +30,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-[MemoryCacheOptions.CompactOnMemoryPressure](/dotnet/api/microsoft.extensions.caching.memory.memorycacheoptions.compactonmemorypressure?view=aspnetcore-2.2)
+<xref:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.CompactOnMemoryPressure%2A?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+`Overload:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions.CompactOnMemoryPressure`
+
+-->

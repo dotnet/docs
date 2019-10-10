@@ -4,8 +4,6 @@ In ASP.NET Core 1.1, the `Microsoft.AspNetCore.Mvc.Razor.ViewCompilation` (MVC p
 
 In ASP.NET Core 3.0, the ASP.NET Core 1.1-era MVC precompilation tool was removed. Earlier package versions will continue receiving important bug and security fixes in the patch release. 
 
-For users of ASP.NET Core 2.1 or later, migrate to the Razor SDK. If bugs or missing features prevent migration to the Razor SDK, open an issue at https://github.com/aspnet/Razor/issues.
-
 #### Version introduced
 
 3.0
@@ -24,7 +22,7 @@ The Razor SDK provides more functionality and verifies the correctness of *.csht
 
 #### Recommended action
 
-Update to use the native support for precompilation in the [Razor SDK](/aspnet/core/razor-pages/sdk?view=aspnetcore-3.0).
+For users of ASP.NET Core 2.1 or later, update to use the native support for precompilation in the [Razor SDK](/aspnet/core/razor-pages/sdk?view=aspnetcore-3.0). If bugs or missing features prevent migration to the Razor SDK, open an issue at [aspnet/AspNetCore](https://github.com/aspnet/AspNetCore/issues).
 
 #### Category
 

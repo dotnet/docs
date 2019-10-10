@@ -1,22 +1,14 @@
-### Empty Microsoft.AspNetCore.Server.Kestrel.Https assembly removed
+### Empty Kestrel HTTPS assembly removed
 
-The assembly `Microsoft.AspNetCore.Server.Kestrel.Https` has been removed.
+The assembly <xref:Microsoft.AspNetCore.Server.Kestrel.Https?displayProperty=fullName> has been removed.
 
 #### Version introduced
 
 3.0
 
-#### Old behavior
-
-The assembly `Microsoft.AspNetCore.Server.Kestrel.Https` was available.
-
-#### New behavior
-
-The assembly `Microsoft.AspNetCore.Server.Kestrel.Https` doesn't exist.
-
 #### Reason for change
 
-In ASP.NET Core 2.1, the contents of `Microsoft.AspNetCore.Server.Kestrel.Https` were moved to `Microsoft.AspNetCore.Server.Kestrel.Core`. This change was done in a non-breaking way using `[TypeForwardedTo]` attributes.
+In ASP.NET Core 2.1, the contents of `Microsoft.AspNetCore.Server.Kestrel.Https` were moved to <xref:Microsoft.AspNetCore.Server.Kestrel.Core?displayProperty=fullName>. This change was done in a non-breaking way using `[TypeForwardedTo]` attributes.
 
 #### Recommended action
 
@@ -33,7 +25,7 @@ None
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 Not detectable via API analysis
 

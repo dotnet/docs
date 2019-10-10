@@ -1,6 +1,6 @@
 ### Removed Microsoft.AspNetCore.All shared framework
 
-In ASP.NET Core 3.0, the `Microsoft.AspNetCore.All` metapackage and the matching `Microsoft.AspNetCore.All` shared framework are no longer produced. This package is available in ASP.NET Core 2.2 and will continue to receive servicing updates in ASP.NET Core 2.1.
+Starting in ASP.NET Core 3.0, the `Microsoft.AspNetCore.All` metapackage and the matching `Microsoft.AspNetCore.All` shared framework are no longer produced. This package is available in ASP.NET Core 2.2 and will continue to receive servicing updates in ASP.NET Core 2.1.
 
 #### Version introduced
 

@@ -8,7 +8,7 @@ The infrastructure backing an HTTP response body has changed. If you're using `H
 
 #### Old behavior
 
-There were three APIs associated with the response body:
+There were three APIs associated with the HTTP response body:
 
 - `IHttpResponseFeature.Body`
 - `IHttpSendFileFeature.SendFileAsync`
@@ -33,6 +33,16 @@ ASP.NET Core
 
 #### Affected APIs
 
-- [IHttpResponseFeature.Body](/dotnet/api/microsoft.aspnetcore.http.features.ihttpresponsefeature.body?view=aspnetcore-2.2#Microsoft_AspNetCore_Http_Features_IHttpResponseFeature_Body)
-- [IHttpSendFileFeature](/dotnet/api/microsoft.aspnetcore.http.features.ihttpsendfilefeature?view=aspnetcore-2.2)
-- [IHttpBufferingFeature](/dotnet/api/microsoft.aspnetcore.http.features.ihttpbufferingfeature?view=aspnetcore-2.2)
+- <xref:Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.Body?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Http.Features.IHttpSendFileFeature?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Http.Features.IHttpBufferingFeature?displayProperty=nameWithType>
+ 
+<!-- 
+
+#### Affected APIs
+
+- `P:Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.Body`
+- `T:Microsoft.AspNetCore.Http.Features.IHttpSendFileFeature`
+- `T:Microsoft.AspNetCore.Http.Features.IHttpBufferingFeature`
+
+-->

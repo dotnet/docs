@@ -30,5 +30,14 @@ ASP.NET Core
 
 #### Affected APIs
 
-- [ResourceManagerWithCultureStringLocalizer](/dotnet/api/microsoft.extensions.localization.resourcemanagerwithculturestringlocalizer?view=aspnetcore-3.0)
-- [ResourceManagerStringLocalizer.WithCulture](/dotnet/api/microsoft.extensions.localization.resourcemanagerstringlocalizer.withculture?view=aspnetcore-3.0#Microsoft_Extensions_Localization_ResourceManagerStringLocalizer_WithCulture_System_Globalization_CultureInfo_)
+- <xref:Microsoft.Extensions.Localization.ResourceManagerWithCultureStringLocalizer>
+- <xref:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer.WithCulture%2A?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:Microsoft.Extensions.Localization.ResourceManagerWithCultureStringLocalizer`
+- `Overload:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer.WithCulture`
+
+-->

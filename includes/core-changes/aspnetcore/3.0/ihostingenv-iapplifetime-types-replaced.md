@@ -12,7 +12,7 @@ There were two different `IHostingEnvironment` and `IApplicationLifetime` types 
 
 #### New behavior
 
-The old types have been obsoleted and replaced by new types.
+The old types have been marked as obsolete and replaced with new types.
 
 #### Reason for change
 
@@ -46,9 +46,22 @@ ASP.NET Core
 
 #### Affected APIs
 
-- [Microsoft.Extensions.Hosting.IHostingEnvironment](/dotnet/api/microsoft.extensions.hosting.ihostingenvironment?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.Hosting.IHostingEnvironment](/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment?view=aspnetcore-2.2)
-- [Microsoft.Extensions.Hosting.IApplicationLifetime](/dotnet/api/microsoft.extensions.hosting.iapplicationlifetime?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.Hosting.IApplicationLifetime](/dotnet/api/microsoft.aspnetcore.hosting.iapplicationlifetime?view=aspnetcore-2.2)
-- [Microsoft.Extensions.Hosting.EnvironmentName](/dotnet/api/microsoft.extensions.hosting.environmentname?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.Hosting.EnvironmentName](/dotnet/api/microsoft.aspnetcore.hosting.environmentname?view=aspnetcore-2.2)
+- <xref:Microsoft.Extensions.Hosting.IHostingEnvironment?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Hosting.IHostingEnvironment?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.IApplicationLifetime?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Hosting.IApplicationLifetime?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.EnvironmentName?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Hosting.EnvironmentName?displayProperty=nameWithType>
+
+<!-- 
+
+#### Affected APIs
+
+- `T:Microsoft.Extensions.Hosting.IHostingEnvironment`
+- `T:Microsoft.AspNetCore.Hosting.IHostingEnvironment`
+- `T:Microsoft.Extensions.Hosting.IApplicationLifetime`
+- `T:Microsoft.AspNetCore.Hosting.IApplicationLifetime`
+- `T:Microsoft.Extensions.Hosting.EnvironmentName`
+- `T:Microsoft.AspNetCore.Hosting.EnvironmentName`
+
+-->

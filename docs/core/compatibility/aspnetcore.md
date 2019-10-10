@@ -186,4 +186,8 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 
 ***
 
+[!INCLUDE[SpaServices and NodeServices console logger fallback default change](~/includes/core-changes/aspnetcore/3.0/spaservices-nodeservices-fallback.md)]
+
+***
+
 [!INCLUDE[Identity UI uses static web assets feature](~/includes/core-changes/aspnetcore/3.0/identityui-static-web-assets.md)]

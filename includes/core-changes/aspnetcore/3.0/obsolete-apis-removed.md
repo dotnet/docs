@@ -111,3 +111,11 @@ All types and members that were marked `Obsolete` for 2.1 and 2.2.
 - `Microsoft.AspNetCore.Mvc.RazorPages.RazorPagesOptions.AllowDefaultHandlingForOptionsRequests { get; set; }`
 - `Microsoft.AspNetCore.Mvc.MvcViewOptions.SuppressTempDataAttributePrefix { get; set; }`
 - `Microsoft.AspNetCore.Mvc.MvcViewOptions.AllowRenderingMaxLengthAttribute { get; set; }`
+
+<!--
+
+#### Affected APIs
+
+
+
+-->

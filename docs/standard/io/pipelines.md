@@ -116,8 +116,8 @@ For optimal performance, there's a balance between frequent pauses and allocatin
 
 To solve the preceding problem, the `Pipe` has two settings to control the flow of data:
 
-* <xref:System.IO.Pipelines.PipeOptions.PauseWriterThreshold>: Determines how much data should be buffered before calls to <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> pauses.
-* <xref:System.IO.Pipelines.PipeOptions.ResumeWriterThreshold>: Determines how much data should be buffered before calls to `PipeWriter.FlushAsync` pauses.
+* <xref:System.IO.Pipelines.PipeOptions.PauseWriterThreshold>: Determines how much data should be buffered before calls to <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> pause.
+* <xref:System.IO.Pipelines.PipeOptions.ResumeWriterThreshold>: Determines how much data the reader has to observe before calls to `PipeWriter.FlushAsync` resume.
 
 The `ResumeWriterThreshold` controls how much the reader has to observe before writing can resume.
 

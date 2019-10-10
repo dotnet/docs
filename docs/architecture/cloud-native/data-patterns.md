@@ -36,7 +36,7 @@ The catch with this approach is you now have duplicate data in your system. In c
 
 ## Transactional support
 
-While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency for data sources that are in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage cross-service transactions programmatically. You move from a world of *immediate consistency* to *eventual consistency*. 
+While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency for independent data sources in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage cross-service transactions programmatically. You move from a world of *immediate consistency* to *eventual consistency*. 
 
 Figure 5-6 shows the problem.
 
@@ -44,11 +44,11 @@ Figure 5-6 shows the problem.
 
 **Figure 5-6**. Implementing a transaction across microservices
 
-In the preceding figure, five independent microservices participate in a distributed transaction that creates an order. The local transaction for each of the five individual microservices must succeed, or all must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
+In the preceding figure, five independent microservices participate in a distributed transaction that creates an order. Each microservice maintains its own data store and implements it own local transaction for its store. The local transaction for each individual microservices must succeed, or all must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
 
-Since transactional support is essential to keep the data consistent in each of the microservices, you have to programmatically construct a distributed transaction.
+Since transactional support is essential to keep the data consistent in each of the microservices, you must construct a distributed transaction *programmatically*.
 
-A popular pattern for adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-7 shows a failed transaction with the Saga pattern.
+A popular pattern for adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If any local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions and restore data consistency. Figure 5-7 shows a failed transaction with the Saga pattern.
 
 ![Roll back in saga pattern](./media/saga-rollback-operation.png)
 

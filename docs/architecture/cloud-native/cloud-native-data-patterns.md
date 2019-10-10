@@ -15,7 +15,7 @@ To start, how does an application query data that is distributed across multiple
 
 This scenario is shwon in Figure 5-4.
 
-![Cross service query](media/cross-service-query.png)
+![Cross service query] (./media/cross-service-query.png)
 
 **Figure 5-4**. Cross-service query
 
@@ -23,7 +23,7 @@ In the prevous figure, we see a shopping basket microservice that adds an item t
 
 The shopping basket microservice could make a direct HTTP call to both the product catalog and pricinp microservices shown in Figure 5-5.
 
-![Direct http communication](media/direct-http-communication.png)
+![Direct http communication](./media/direct-http-communication.png)
 
 **Figure 5-5**. Direct HTTP communication
 
@@ -31,7 +31,7 @@ But, as we discussed in chapter 4, direct HTTP calls made across multiple backen
 
 We could implement an *aggregator microservice* as shown in Figure 5-6.
 
-![Aggregator microservice](media/aggregator-microservice.png)
+![Aggregator microservice](./media/aggregator-microservice.png)
 
 **Figure 5-6.** Aggregator microservice
 
@@ -39,7 +39,7 @@ While this approach isolates the workflow to an a dedicated microservice, it add
 
 Instead, a common approach for executing cross-microservice queries system is the [Materialized view pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), as show in Figure 5-7 below.
 
-![Materialized view pattern](media/materialized-view-pattern.png)
+![Materialized view pattern](./media/materialized-view-pattern.png)
 
 **Figure5-7**. Materialized view pattern
 
@@ -57,7 +57,7 @@ The catch is that we now have duplicate data in our system. The good news is dup
 
 While cross-service queries can be complex, implementing cross-service transactions is even more tricky. The inherent challenge of maintaining consistency across data sources that reside in different services cannot be understated. Figure 5-8, shown below, depicts the problem.
 
-![Transaction in saga pattern](media/saga-transaction-operation.png)
+![Transaction in saga pattern](./media/saga-transaction-operation.png)
 
 **Figure 5-8**. Implementing a Transaction Across Microservices
 
@@ -67,7 +67,7 @@ However, transactional support is essential for this operation as without it, we
 
 A widely-accepted pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-  microservices-part/). It is implemented by building a message-driven sequence of local transactions in which each service is sequentially updated. If any local transaction fails, the Saga aborts the operation and invokes [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) that undo the changes made by the preceding local transactions. Figure 5-9, show below, depicts a failed Saga.
 
-![Rollback in saga pattern](media/saga-rollback-operation.png)
+![Rollback in saga pattern](./media/saga-rollback-operation.png)
 
 **Figure 5-9**. Rolling Back an Operation
 
@@ -85,7 +85,7 @@ However, a more advanced data access scenario might warrant separate models (i.e
 
 Figure 5-10, shown below, depicts a CQRS pattern.
 
-![CQRS implementation](media/cqrs-implementation.png)
+![CQRS implementation](./media/cqrs-implementation.png)
 
 **Figure 5-10**. CQRS Implementation
 
@@ -105,7 +105,7 @@ No-SQL databases, on the other side, refer to high-performance, non-relational d
 
 A way to understand the differences between these types of databases can be found in the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles that can be applied to distributed systems that store state. Figure 5-11 below depicts the three properties of the CAP theorem.
 
-![CAP theorem](media/cap-theorem.png)
+![CAP theorem](./media/cap-theorem.png)
 
 **Figure 5-11**. The CAP Theorem
 

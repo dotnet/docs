@@ -36,7 +36,7 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
         {  
             return n1 + n2;  
         }
-		//Other operations omitted…
+        // Other operations omitted…
     }
     ```  
   

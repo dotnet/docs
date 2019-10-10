@@ -10,7 +10,7 @@ Windows Communication Foundation (WCF) Web HTTP error handling enables you to re
  The <xref:System.ServiceModel.Web.WebFaultException> class defines a constructor that allows you to specify an HTTP status code. This status code is then returned to the client. A generic version of the <xref:System.ServiceModel.Web.WebFaultException> class, <xref:System.ServiceModel.Web.WebFaultException%601> enables you to return a user-defined type that contains information about the error that occurred. This custom object is serialized using the format specified by the operation and returned to the client. The following example shows how to return an HTTP status code.  
   
 ```csharp
-Public string Operation1()  
+public string Operation1()
 {   // Operation logic  
    // ...
    throw new WebFaultException(HttpStatusCode.Forbidden);
@@ -20,10 +20,10 @@ Public string Operation1()
  The following example shows how to return an HTTP status code and extra information in a user-defined type. `MyErrorDetail` is a user-defined type that contains extra information about the error that occurred.  
   
 ```csharp
-Public string Operation2()  
+public string Operation2()
    // Operation logic  
    // ...
-   MyErrorDetail detail = new MyErrorDetail  
+   MyErrorDetail detail = new MyErrorDetail()
    {  
       Message = "Error Message",  
       ErrorCode = 123,  

@@ -432,7 +432,7 @@ Tuples can be used as out parameters _themselves_. Not to be confused with any a
 
 [!code-csharp[TuplesAsOutParameters](../../samples/snippets/csharp/tuples/program.cs#01_TupleAsOutVariable "Tuples as out parameters")]
 
-Alternatively, you could use an [_unnamed_](#named-and-unnamed-tuples) tuple, and refer to its fields as `Item1` and `Item2`:
+Alternatively, you could use an [_unnamed_](#named-and-unnamed-tuples) tuple and refer to its fields as `Item1` and `Item2`:
 
 ```csharp
 dict.TryGetValue(2, out (int, string) pair);

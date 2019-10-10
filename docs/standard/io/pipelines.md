@@ -166,7 +166,7 @@ It's frequently efficient to reuse the `Pipe` object. To reset the pipe, call <x
 * The first argument determines how much memory was consumed.
 * The second argument determines how much of the buffer was observed.
 
-Marking data as consumed means that the pipe can return the memory to the underlying buffer pool. Marking data as observed controls what the next call to `PipeReader.ReadAsync` does. Marking everything as observed means that the next call to `PipeReader.ReadAsync` won't return until there's more data written to the pipe. Any other value will make the next call to `PipeReader.ReadAsync` return immediately with the unobserved data.
+Marking data as consumed means that the pipe can return the memory to the underlying buffer pool. Marking data as observed controls what the next call to `PipeReader.ReadAsync` does. Marking everything as observed means that the next call to `PipeReader.ReadAsync` won't return until there's more data written to the pipe. Any other value will make the next call to `PipeReader.ReadAsync` return immediately with the observed *and* unobserved data, but data that has already been consumed.
 
 ### Read streaming data scenarios
 

@@ -154,10 +154,7 @@ It's frequently efficient to reuse the `Pipe` object. To reset the pipe, call <x
 
 ## PipeReader
 
-<xref:System.IO.Pipelines.PipeReader> manages memory on the caller's behalf. **Always** call <xref:System.IO.Pipelines.PipeReader.AdvanceTo%2A?displayProperty=nameWithType> after calling <xref:System.IO.Pipelines.PipeReader.ReadAsync%2A?displayProperty=nameWithType>. This lets the `PipeReader` know when the caller is done with the memory so that it can be tracked. The `ReadOnlySequence<byte>` returned from `PipeReader.ReadAsync` is only valid until the call the `PipeReader.AdvanceTo`:
-
-* It's illegal to use `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo`.
-* Using `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo` is undefined.
+<xref:System.IO.Pipelines.PipeReader> manages memory on the caller's behalf. **Always** call <xref:System.IO.Pipelines.PipeReader.AdvanceTo%2A?displayProperty=nameWithType> after calling <xref:System.IO.Pipelines.PipeReader.ReadAsync%2A?displayProperty=nameWithType>. This lets the `PipeReader` know when the caller is done with the memory so that it can be tracked. The `ReadOnlySequence<byte>` returned from `PipeReader.ReadAsync` is only valid until the call the `PipeReader.AdvanceTo`. It's illegal to use `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo`.
 
 `PipeReader.AdvanceTo` takes two <xref:System.SequencePosition> arguments:
 

@@ -28,4 +28,11 @@ ASP.NET Core
 
 #### Affected APIs
 
-[AddAuthorization(Action<AuthorizationOptions>)](/dotnet/api/microsoft.extensions.dependencyinjection.authorizationservicecollectionextensions.addauthorization?view=aspnetcore-2.2#Microsoft_Extensions_DependencyInjection_AuthorizationServiceCollectionExtensions_AddAuthorization_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Microsoft_AspNetCore_Authorization_AuthorizationOptions__)
+<xref:Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.Authorization.AuthorizationOptions})?displayProperty=fullName>
+
+<!--
+### Affected APIs
+
+`M:Microsoft.Extensions.DependencyInjection.AuthorizationServiceCollectionExtensions.AddAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Microsoft.AspNetCore.Authorization.AuthorizationOptions})`
+
+-->

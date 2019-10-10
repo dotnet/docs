@@ -5,7 +5,7 @@ ms.date: 09/20/2018
 ---
 # Creating composite UI based on microservices
 
-Microservices architecture often starts with the server-side handling data and logic but, in many cases, the UI is still handled as a monolith. However, a more advanced approach, called [micro frontends](https://martinfowler.com/articles/micro-frontends.html), is to design your application UI based on microservices as well. That means having a composite UI produced by the microservices, instead of having microservices on the server and just a monolithic client app consuming the microservices. With this approach, the microservices you build can be complete with both logic and visual representation.
+Microservices architecture often starts with the server-side handling data and logic, but, in many cases, the UI is still handled as a monolith. However, a more advanced approach, called [micro frontends](https://martinfowler.com/articles/micro-frontends.html), is to design your application UI based on microservices as well. That means having a composite UI produced by the microservices, instead of having microservices on the server and just a monolithic client app consuming the microservices. With this approach, the microservices you build can be complete with both logic and visual representation.
 
 Figure 4-20 shows the simpler approach of just consuming microservices from a monolithic client application. Of course, you could have an ASP.NET MVC service in between producing the HTML and JavaScript. The figure is a simplification that highlights that you have a single (monolithic) client UI consuming the microservices, which just focus on logic and data and not on the UI shape (HTML and JavaScript).
 
@@ -36,7 +36,7 @@ However, we encourage you to use the following references to learn more about co
 - **Micro Frontends (Martin Fowler's blog)**  
   <https://martinfowler.com/articles/micro-frontends.html>
   
-- **Micro Frontends (Michael Geers site & GitHub repo**  
+- **Micro Frontends (Michael Geers site)**  
   <https://micro-frontends.org/>
   
 - **Composite UI using ASP.NET (Particular's Workshop)**  

@@ -110,5 +110,19 @@
       href: stdole.stdfont.md
     - name: StdPicture Interface
       href: stdole.stdpicture.md
-
-
+  - name: XpsDocumentWriter
+    items:
+    - name: raise__WritingCancelled Method
+      href: xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
+    - name: raise__WritingCompleted Method 
+      href: xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
+    - name: raise__WritingPrintTicketRequired Method
+      href: xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
+    - name: raise__WritingProgressChanged
+      href: xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps.md
+    - name: _WritingCancelled
+      href: xpsdocumentwriter-writingcancelled-event-system-windows-xps.md
+    - name: _WritingCompleted
+      href: xpsdocumentwriter-writingcompleted-event-system-windows-xps.md
+    - name: _WritingProgressChanged
+      href: xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md

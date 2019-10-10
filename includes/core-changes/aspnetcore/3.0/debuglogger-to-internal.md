@@ -28,4 +28,11 @@ ASP.NET Core
 
 #### Affected APIs
 
-[DebugLogger](/dotnet/api/microsoft.extensions.logging.debug.debuglogger?view=aspnetcore-2.2)
+<xref:Microsoft.Extensions.Logging.Debug.DebugLogger?displayProperty=nameWithType>
+
+<!--
+### Affected APIs
+
+`T:Microsoft.Extensions.Logging.Debug.DebugLogger`
+
+-->

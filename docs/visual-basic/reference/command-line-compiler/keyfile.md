@@ -12,7 +12,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
   
 ## Syntax  
   
-``` 
+```console 
 -keyfile:file  
 ```  
   

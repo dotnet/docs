@@ -6,7 +6,7 @@ The types in the <xref:Microsoft.VisualBasic.Devices?displayProperty=fullName> n
 
 .NET Core 3.0 Preview 8
 
-#### Details
+#### Change description
 
 The types in the <xref:Microsoft.VisualBasic.Devices?displayProperty=fullName> namespace were available in some .NET Core 3.0 Preview releases,. They are no longer available starting with .NET Core 3.0 Preview 9.
 

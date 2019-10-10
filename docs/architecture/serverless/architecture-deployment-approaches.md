@@ -91,7 +91,7 @@ Benefits of containers include:
 
 A container runs on a container host (that in turn may run on a bare metal machine or a virtual machine). Multiple containers or instances of the same containers may run on a single host. For true failover and resiliency, containers must be scaled across hosts.
 
-For more information about Docker containers, see [What is Docker](../microservices/container-docker-introduction/docker-defined.md)?
+For more information about Docker containers, see [What is Docker](../microservices/container-docker-introduction/docker-defined.md).
 
 Managing containers across hosts typically requires an orchestration tool such as Kubernetes. Configuring and managing orchestration solutions may add additional overhead and complexity to projects. Fortunately, many cloud providers provide orchestration services through PaaS solutions to simplify the management of containers.
 

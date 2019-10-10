@@ -2,16 +2,17 @@
 title: "Floating-point numeric types - C# reference"
 description: "Overview of the built-in C# floating-point types"
 ms.date: 06/30/2019
-f1_keywords: 
+f1_keywords:
   - "float"
   - "float_CSharpKeyword"
   - "double"
   - "double_CSharpKeyword"
   - "decimal_CSharpKeyword"
   - "decimal"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "floating-point numbers [C#]"
   - "ranges of floating-point types [C#]"
+  - "size of floating-point types [C#]"
   - "types [C#], floating-point types"
   - "float keyword [C#]"
   - "floating-point numbers [C#], float keyword"
@@ -26,11 +27,11 @@ The **floating-point types** are a subset of the **simple types** and can be ini
 
 C# supports the following predefined floating-point types:
   
-|C# type/keyword|Approximate range|Precision|.NET type|
-|----------|-----------------------|---------------|--------------|
-|`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|<xref:System.Single?displayProperty=nameWithType>|
-|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|<xref:System.Double?displayProperty=nameWithType>|
-|`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|<xref:System.Decimal?displayProperty=nameWithType>|
+|C# type/keyword|Approximate range|Precision|Size|.NET type|
+|----------|-----------------------|---------------|--------------|--------------|
+|`float`|±1.5 x 10<sup>−45</sup> to ±3.4 x 10<sup>38</sup>|~6-9 digits|4 bytes|<xref:System.Single?displayProperty=nameWithType>|
+|`double`|±5.0 × 10<sup>−324</sup> to ±1.7 × 10<sup>308</sup>|~15-17 digits|8 bytes|<xref:System.Double?displayProperty=nameWithType>|
+|`decimal`|±1.0 x 10<sup>-28</sup> to ±7.9228 x 10<sup>28</sup>|28-29 digits|16 bytes|<xref:System.Decimal?displayProperty=nameWithType>|
 
 In the preceding table, each C# type keyword from the leftmost column is an alias for the corresponding .NET type. They are interchangeable. For example, the following declarations declare variables of the same type:
 

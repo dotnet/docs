@@ -44,7 +44,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 Child One Text  
 Child Two Text  
 Child Four Text  
@@ -94,7 +94,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 Child One Text  
 Child Two Text  
 Child Four Text  

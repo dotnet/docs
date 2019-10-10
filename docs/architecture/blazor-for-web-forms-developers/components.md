@@ -560,7 +560,7 @@ A templated Blazor component can also define multiple component parameters of ty
 @Heading
 
 <ul>
-@foreach (var item in items)
+@foreach (var item in Items)
 {
     <li>@ItemTemplate(item)</li>
 }

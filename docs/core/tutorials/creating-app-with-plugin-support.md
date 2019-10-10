@@ -29,7 +29,7 @@ The first step is to create the application:
     dotnet new console -o AppWithPlugin
     ```
 
-2. To make building the project easier, create a Visual Studio solution file using. Run the following command in the same folder:
+2. To make building the project easier, create a Visual Studio solution file in the same folder. Run the following command:
 
     ```dotnetcli
     dotnet new sln

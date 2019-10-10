@@ -1,19 +1,19 @@
 ---
-title: "How to: Serialize and Deserialize JSON Data"
+title: "How to: use DataContractJsonSerializer"
 ms.date: "03/25/2019"
 ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
 ---
-# How to: Serialize and deserialize JSON data
+# How to: use DataContractJsonSerializer
 JSON (JavaScript Object Notation) is an efficient data encoding format that enables fast exchanges of small amounts of data between client browsers and AJAX-enabled Web services.  
   
  This article demonstrates how to serialize .NET type objects into JSON-encoded data and then deserialize data in the JSON format back into instances of .NET types. This example uses a data contract to demonstrate serialization and deserialization of a user-defined `Person` type and uses <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.  
   
- Normally, JSON serialization and deserialization are handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly.   
-  
+ Normally, JSON serialization and deserialization are handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly.
+
 > [!NOTE]
-> If an error occurs during serialization of an outgoing reply on the server or for some other reason, it may not get returned to the client as a fault.  
+> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the tools in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md). 
   
- This article is based on the [JSON serialization](../samples/json-serialization.md) sample.  
+ This article is based on the [DataContractJsonSerializer sample](../samples/json-serialization.md).  
   
 ## To define the data contract for a Person type 
   
@@ -33,6 +33,9 @@ JSON (JavaScript Object Notation) is an efficient data encoding format that enab
   
 ## To serialize an instance of type Person to JSON  
   
+> [!NOTE]
+> If an error occurs during serialization of an outgoing reply on the server or for some other reason, it may not get returned to the client as a fault.  
+
 1. Create an instance of the `Person` type.  
   
     ```csharp  
@@ -131,5 +134,5 @@ public class TestDuplicateDataDerived : TestDuplicateDataBase
   
 ## See also
 
-- [Stand-alone JSON serialization](stand-alone-json-serialization.md)
-- [Support for JSON and other data transfer formats](support-for-json-and-other-data-transfer-formats.md)
+- [JSON serialization in .NET](../../../standard/serialization/system-text-json-overview.md)
+

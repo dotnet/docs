@@ -2,7 +2,7 @@
 title: .NET Core distribution packaging
 description: Learn how to package, name, and version .NET Core for distribution.
 author: tmds
-ms.date: 03/02/2018
+ms.date: 10/09/2019
 ms.custom: "seodec18"
 ---
 # .NET Core distribution packaging
@@ -17,37 +17,37 @@ As .NET Core becomes available on more and more platforms, it's useful to learn 
 When installed, .NET Core consists of several components that are laid out as follows in the filesystem:
 
 ```
-.
+{dotnet_root}                                     (*)
 ├── dotnet                       (1)
 ├── LICENSE.txt                  (8)
 ├── ThirdPartyNotices.txt        (8)
-├── host
-│   └── fxr
+├── host                                          (*)
+│   └── fxr                                       (*)
 │       └── <fxr version>        (2)
-├── sdk
+├── sdk                                           (*)
 │   ├── <sdk version>            (3)
-│   └── NuGetFallbackFolder      (4)
-├── packs
-│   ├── Microsoft.AspNetCore.App.Ref
+│   └── NuGetFallbackFolder      (4)              (*)
+├── packs                                         (*)
+│   ├── Microsoft.AspNetCore.App.Ref              (*)
 │   │   └── <aspnetcore ref version>     (11)
-│   ├── Microsoft.NETCore.App.Ref
+│   ├── Microsoft.NETCore.App.Ref                 (*)
 │   │   └── <netcore ref version>        (12)
-│   ├── Microsoft.NETCore.App.Host.<rid>
+│   ├── Microsoft.NETCore.App.Host.<rid>          (*)
 │   │   └── <apphost version>            (13)
-│   ├── Microsoft.WindowsDesktop.App.Ref
+│   ├── Microsoft.WindowsDesktop.App.Ref          (*)
 │   │   └── <desktop ref version>        (14)
-│   └── NETStandard.Library.Ref
+│   └── NETStandard.Library.Ref                   (*)
 │       └── <netstandard version>        (15)
-├── shared
-│   ├── Microsoft.NETCore.App
+├── shared                                        (*)
+│   ├── Microsoft.NETCore.App                     (*)
 │   │   └── <runtime version>     (5)
-│   ├── Microsoft.AspNetCore.App
+│   ├── Microsoft.AspNetCore.App                  (*)
 │   │   └── <aspnetcore version>  (6)
-│   ├── Microsoft.AspNetCore.All
+│   ├── Microsoft.AspNetCore.All                  (*)
 │   │   └── <aspnetcore version>  (6)
-│   └── Microsoft.WindowsDesktop.App
+│   └── Microsoft.WindowsDesktop.App              (*)
 │       └── <desktop app version> (7)
-└── templates
+└── templates                                     (*)
 │   └── <templates version>      (17)
 /
 ├── etc/dotnet
@@ -88,9 +88,11 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
 
-- (16) **/etc/dotnet/install_location** is a file that contains the full path to the folder that contains the `dotnet` host binary. The path may be terminated with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
+- (16) **/etc/dotnet/install_location** is a file that contains the full path for `{dotnet_root}`. The path may end with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
 
 - (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
+
+The folders marked with `(*)` are used by multiple packages. Some package formats (for example, `rpm`) require special handling of such folders. The package maintainer must take care of this.
 
 ## Recommended packages
 
@@ -107,7 +109,7 @@ The following lists the recommended packages:
   - **Version:** \<runtime version>
   - **Example:** dotnet-sdk-2.1
   - **Contains:** (3),(4)
-  - **Dependencies:** `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
+  - **Dependencies:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`
 
 - `aspnetcore-runtime-[major].[minor]` - Installs a specific ASP.NET Core runtime
   - **Version:** \<aspnetcore runtime version>
@@ -124,13 +126,13 @@ The following lists the recommended packages:
   - **Version:** \<runtime version>
   - **Example:** dotnet-runtime-2.1
   - **Contains:** (5)
-  - **Dependencies:** `dotnet-hostfxr:<runtime version>+`, `dotnet-runtime-deps-[major].[minor]`
+  - **Dependencies:** `dotnet-hostfxr-[major].[minor]`, `dotnet-runtime-deps-[major].[minor]`
 
-- `dotnet-hostfxr` - dependency
+- `dotnet-hostfxr-[major].[minor]` - dependency
   - **Version:** \<runtime version>
-  - **Example:** dotnet-hostfxr
+  - **Example:** dotnet-hostfxr-3.0
   - **Contains:** (2)
-  - **Dependencies:** `host:<runtime version>+`
+  - **Dependencies:** `dotnet-host`
 
 - `dotnet-host` - dependency
   - **Version:** \<runtime version>
@@ -149,7 +151,7 @@ The following lists the recommended packages:
   - **Version:** \<aspnetcore runtime version>
   - **Contains:** (11)
 
-- `netstandard-targeting-pack-[major].[minor]` - Allows targeting a netstandard version
+- `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]` - Allows targeting a netstandard version
   - **Version:** \<sdk version>
   - **Contains:** (15)
 
@@ -157,11 +159,11 @@ The following lists the recommended packages:
   - **Version:** \<sdk version>
   - **Contains:** (15)
 
-The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
+The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro-specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 
-When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[major].[minor]`, this also matches with the .NET Core version.
+When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, this also matches with the .NET Core version.
 
-Dependencies between packages should use a _equal or greater than_ version requirement. For example, `dotnet-sdk-2.2:2.2.401` requires `aspnetcore-runtime-2.2 >= 2.2.6`. This makes it possible for the user to upgrade their installation via a root package (e.g. `dnf update dotnet-sdk-2.2`).
+Dependencies between packages should use an _equal or greater than_ version requirement. For example, `dotnet-sdk-2.2:2.2.401` requires `aspnetcore-runtime-2.2 >= 2.2.6`. This makes it possible for the user to upgrade their installation via a root package (for example, `dnf update dotnet-sdk-2.2`).
 
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 

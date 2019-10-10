@@ -36,7 +36,7 @@ A property procedure is a series of Visual Basic statements that manipulate a cu
   
  The syntax for declaring a property and its procedures is as follows:  
   
-```  
+```vb  
 [Default] [Modifiers] Property PropertyName[(ParameterList)] [As DataType]  
     [AccessLevel] Get  
         ' Statements of the Get procedure.  

@@ -37,6 +37,7 @@ Specifies that a variable or property can be read but not written.
  Sub ChangeArrayElement()
      characterArray(1) = "M"c
  End Sub
+ ```
   
  When initialized, the array pointed to by `characterArray()` holds "x", "y", and "z". Because the variable `characterArray` is `ReadOnly`, you cannot change its value once it is initialized; that is, you cannot assign a new array to it. However, you can change the values of one or more of the array members. Following a call to the procedure `ChangeArrayElement`, the array pointed to by `characterArray()` holds "x", "M", and "z".
   

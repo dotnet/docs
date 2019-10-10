@@ -14,18 +14,16 @@ ms.author: riande
 
 Fix links like https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc
 then remove
-<!-- >
-- **Writing**
-    - [IBufferWriter\<T\>](#ibufferwritert)
-       - [Gotchas](#gotchas)
-- **Reading**
-    - [ReadOnlySequence\<T\>](#readonlysequencet)
-       - [Accessing data](#accessing-data)
-       - [Gotchas](#gotchas-1)
-    - [SequenceReader\<T\>](#sequencereadert)
-       - [Accessing data](#accessing-data-1)
-       - [Gotchas](#gotchas-2)
-   -->
+
+Review questions.
+
+Can I remove the `// Return the position.` comment?
+
+```CaptainObvious
+// Return the position.
+   return reader.Position;
+```
+
 ## IBufferWriter\<T\>
 
 <xref:System.Buffers.IBufferWriter`1?displayProperty=fullName> is a contract for synchronous buffered writing. At the lowest level the interface:
@@ -139,9 +137,9 @@ It's valid to store empty segments inside of a `ReadOnlySequence<T>` and it may 
 [!code-csharp[](temp/MyClass.cs?name=snippet7)]
 
 The preceding logic creates a `ReadOnlySequence<byte>` with empty segments and shows how those empty segments affect the various APIs:
-- `ReadOnlySequence<T>.Slice` with a `SequencePosition` pointing to an empty segment will preserve that segment.
-- `ReadOnlySequence<T>.Slice` with an int will skip over the empty segments.
-- Enumerating the `ReadOnlySequence<T>` will enumerate the empty segments as well.
+- `ReadOnlySequence<T>.Slice` with a `SequencePosition` pointing to an empty segment preservs that segment.
+- `ReadOnlySequence<T>.Slice` with an int skips over the empty segments.
+- Enumerating the `ReadOnlySequence<T>` enumerates the empty segments.
 
 ### Gotchas
 
@@ -153,88 +151,39 @@ There are several quirks when dealing with a `ReadOnlySequence<T>`/`SequencePosi
 - `ReadOnlySequence<T>` is bigger than an object reference and should be passed by `in` or `ref` where possible. This reduces copies of the struct.
 - Empty segments are valid within a `ReadOnlySequence<T>` and can appear when iterating using `ReadOnlySequence<T>.TryGet` or slicing the sequence using `ReadOnlySequence<T>.Slice()` with `SequencePosition`(s).
 
-## [SequenceReader\<T\>](/dotnet/api/system.buffers.sequencereader-1?view=netcore-3.0)
+## SequenceReader\<T\>
 
-`SequenceReader<T>` is a new type that was introduced in .NET Core 3.0 to simplify the processing of a `ReadOnlySequence<T>`. It unifies the differences between a single segment `ReadOnlySequence<T>` and multi-segment `ReadOnlySequence<T>`. It also provides helpers for reading binary and text data (byte and char) that may or may not be split across segments. 
+<xref:System.Buffers.SequenceReader%601>:
 
-There are built-in methods for dealing with processing both binary and delimited data. Let's take a look at what those same methods look like with the `SequenceReader<T>`:
+* Is a new type that was introduced in .NET Core 3.0 to simplify the processing of a `ReadOnlySequence<T>`.
+*  Unifies the differences between a single segment `ReadOnlySequence<T>` and multi-segment `ReadOnlySequence<T>`.
+* Provides helpers for reading binary and text data (`byte` and `char`) that may or may not be split across segments.
+
+There are built-in methods for dealing with processing both binary and delimited data. The following section demonstrates what those same methods look like with the `SequenceReader<T>`:
 
 #### Access data
 
 `SequenceReader<T>` has methods for enumerating data inside of the `ReadOnlySequence<T>` directly. Below is an example of processing a `ReadOnlySequence<byte>` a `byte` at a time:
 
-```C#
-while (!reader.End)
-{
-    var b = reader.CurrentSpan[reader.CurrentSpanIndex];
-    Process(b);
-    reader.Advance(1);
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet8)]
 
-The `CurrentSpan` exposes the current segment's `Span` (similar to what we do in the method manually).
+The `CurrentSpan` exposes the current segment's `Span`, which is similar to what was done in the method manually.
 
 #### Position
 
-Here's an example implementation of `FindIndexOf` using the `SequenceReader<T>`:
+The following code is an example implementation of `FindIndexOf` using the `SequenceReader<T>`:
 
-```C#
-SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data)
-{
-    var reader = new SequenceReader<byte>(buffer);
-
-    while (!reader.End)
-    {
-        // Search for the byte in the current span
-        var index = reader.CurrentSpan.IndexOf(data);
-        if (index != -1)
-        {
-            // We found it so advance to the position
-            reader.Advance(index);
-            
-            // Return the position
-            return reader.Position;
-        }
-        // Skip the current segment since there's nothing in it
-        reader.Advance(reader.CurrentSpan.Length);
-    }
-
-    return null;
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet9)]
 
 #### Process binary data
 
-This example parses a 4 byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
+The following example parses a 4 byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
 
-```C#
-bool TryParseHeaderLength(ref ReadOnlySequence<byte> buffer, out int length)
-{
-    var reader = new SequenceReader<byte>(buffer);
-    return reader.TryReadBigEndian(out length);
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet11)]
 
 #### Process text data
 
-```C#
-static ReadOnlySpan<byte> NewLine => new byte[] { (byte)'\r', (byte)'\n' };
-
-static bool TryParseLine(ref ReadOnlySequence<byte> buffer, out ReadOnlySequence<byte> line)
-{
-    var reader = new SequenceReader<byte>(buffer);
-
-    if (reader.TryReadTo(out line, NewLine))
-    {
-        buffer = buffer.Slice(reader.Position);
-
-        return true;
-    }
-
-    line = default;
-    return false;
-}
-```
+[!code-csharp[](temp/MyClass.cs?name=snippet10)]
 
 ### Gotchas
 - `SequenceReader<T>` is a mutable struct; it should always be passed by reference (ref keyword).

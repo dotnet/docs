@@ -137,10 +137,11 @@ namespace MyBuffers
         #region snippet7
         static void EmptySegments()
         {
-            // This logic creates a ReadOnlySequence<byte> with 4 segments but with a length of 2
-            // 2 of those segments are empty
+            // This logic creates a ReadOnlySequence<byte> with 4 segments but with a length 
+            // of 2 of those segments are empty.
             var first = new BufferSegment(new byte[0]);
-            var last = first.Append(new byte[] { 97 }).Append(new byte[0]).Append(new byte[] { 98 });
+            var last = first.Append(new byte[] { 97 })
+                            .Append(new byte[0]).Append(new byte[] { 98 });
 
             // Construct the ReadOnlySequence<byte> from the linked list segments
             var data = new ReadOnlySequence<byte>(first, 0, last, 1);
@@ -154,12 +155,15 @@ namespace MyBuffers
             Console.WriteLine($"sequence1.Length={sequence1.Length}"); // sequence1.Length=2
             Console.WriteLine($"sequence2.Length={sequence2.Length}"); // sequence2.Length=2
 
-            Console.WriteLine($"sequence1.FirstSpan.Length={sequence1.FirstSpan.Length}"); // sequence1.FirstSpan.Length=1
+            // sequence1.FirstSpan.Length=1
+            Console.WriteLine($"sequence1.FirstSpan.Length={sequence1.FirstSpan.Length}");
 
-            // Slicing using SequencePosition will Slice the ReadOnlySequence<byte> directly on the empty segment!
-            Console.WriteLine($"sequence2.FirstSpan.Length={sequence2.FirstSpan.Length}"); // sequence2.FirstSpan.Length=0
+            // Slicing using SequencePosition will Slice the ReadOnlySequence<byte> directly 
+            // on the empty segment!
+            // sequence2.FirstSpan.Length=0
+            Console.WriteLine($"sequence2.FirstSpan.Length={sequence2.FirstSpan.Length}");
 
-            // This prints 0, 1, 0, 1
+            // The following code prints 0, 1, 0, 1
             SequencePosition position = data.Start;
             while (data.TryGet(ref position, out ReadOnlyMemory<byte> memory))
             {
@@ -185,6 +189,26 @@ namespace MyBuffers
             }
         }
         #endregion
+
+#if DAVID_FIX_CODE
+        public void Reader1()
+        {
+        #region snippet8
+            while (!reader.End)
+            {
+                var b = reader.CurrentSpan[reader.CurrentSpanIndex];
+                Process(b);
+                reader.Advance(1);
+            }
+        #endregion
+        }
+#endif
+
+        private void Process(object b)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 
     class MyClass2
@@ -201,7 +225,7 @@ namespace MyBuffers
         #endregion
 
 #if DAVID_FIX_CODE
-#region snippet4
+        #region snippet4
         SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data)
         {
             SequencePosition position = buffer.Start;
@@ -217,7 +241,65 @@ namespace MyBuffers
             }
             return null;
         }
-#endregion
+        #endregion
 #endif
+
+        #region snippet9
+        SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data)
+        {
+            var reader = new SequenceReader<byte>(buffer);
+
+            while (!reader.End)
+            {
+                // Search for the byte in the current span.
+                var index = reader.CurrentSpan.IndexOf(data);
+                if (index != -1)
+                {
+                    // We found it so advance to the position.
+                    reader.Advance(index);
+
+                    // Return the position.
+                    return reader.Position;
+                }
+                // Skip the current segment since there's nothing in it.
+                reader.Advance(reader.CurrentSpan.Length);
+            }
+
+            return null;
+        }
+        #endregion
+
+        #region snippet11
+        bool TryParseHeaderLength(ref ReadOnlySequence<byte> buffer, out int length)
+        {
+            var reader = new SequenceReader<byte>(buffer);
+            return reader.TryReadBigEndian(out length);
+        }
+        #endregion
+
+    }
+
+    public static class MyClass3
+    {
+        #region snippet10
+        static ReadOnlySpan<byte> NewLine => new byte[] { (byte)'\r', (byte)'\n' };
+
+        static bool TryParseLine(ref ReadOnlySequence<byte> buffer, 
+                                 out ReadOnlySequence<byte> line)
+        {
+            var reader = new SequenceReader<byte>(buffer);
+
+            if (reader.TryReadTo(out line, NewLine))
+            {
+                buffer = buffer.Slice(reader.Position);
+
+                return true;
+            }
+
+            line = default;
+            return false;
+        }
+        #endregion
+
     }
 }

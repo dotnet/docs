@@ -43,6 +43,7 @@ The preceding code has several problems:
 * The entire message (end of line) might not be received in a single call to `ReadAsync`.
 * It's ignoring the result of `stream.ReadAsync`. `stream.ReadAsync` returns how much data was read.
 * It doesn't handle the case where multiple lines are read in a single `ReadAsync` call.
+* It allocates a `byte` array with each read.
 
 To fix the preceding problems, the following changes are required:
 

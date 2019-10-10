@@ -2,7 +2,7 @@
 title: .NET Core distribution packaging
 description: Learn how to package, name, and version .NET Core for distribution.
 author: tmds
-ms.date: 03/02/2018
+ms.date: 10/09/2019
 ms.custom: "seodec18"
 ---
 # .NET Core distribution packaging
@@ -88,11 +88,11 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (15) **NETStandard.Library.Ref** describes the netstandard `x.y` API. These files are used when compiling for that target.
 
-- (16) **/etc/dotnet/install_location** is a file that contains the full path for `{dotnet_root}`. The path may be terminated with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
+- (16) **/etc/dotnet/install_location** is a file that contains the full path for `{dotnet_root}`. The path may end with a newline. It's not necessary to add this file when the root is `/usr/share/dotnet`.
 
 - (17) **templates** contains the templates used by the SDK. For example, `dotnet new` finds project templates here.
 
-The folders marked with `(*)` are used by multiple packages. Some package formats (e.g. `rpm`) require special handling of such folders. The package maintainer must take care of this.
+The folders marked with `(*)` are used by multiple packages. Some package formats (for example, `rpm`) require special handling of such folders. The package maintainer must take care of this.
 
 ## Recommended packages
 
@@ -159,11 +159,11 @@ The following lists the recommended packages:
   - **Version:** \<sdk version>
   - **Contains:** (15)
 
-The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
+The `dotnet-runtime-deps-[major].[minor]` requires understanding the _distro-specific dependencies_. Because the distro build system may be able to derive this automatically, the package is optional, in which case these dependencies are added directly to the `dotnet-runtime-[major].[minor]` package.
 
 When package content is under a versioned folder, the package name `[major].[minor]` match the versioned folder name. For all packages, except the `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, this also matches with the .NET Core version.
 
-Dependencies between packages should use a _equal or greater than_ version requirement. For example, `dotnet-sdk-2.2:2.2.401` requires `aspnetcore-runtime-2.2 >= 2.2.6`. This makes it possible for the user to upgrade their installation via a root package (e.g. `dnf update dotnet-sdk-2.2`).
+Dependencies between packages should use an _equal or greater than_ version requirement. For example, `dotnet-sdk-2.2:2.2.401` requires `aspnetcore-runtime-2.2 >= 2.2.6`. This makes it possible for the user to upgrade their installation via a root package (for example, `dnf update dotnet-sdk-2.2`).
 
 Most distributions require all artifacts to be built from source. This has some impact on the packages:
 

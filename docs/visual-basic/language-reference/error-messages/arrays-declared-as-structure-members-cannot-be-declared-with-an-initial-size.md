@@ -9,28 +9,39 @@ helpviewer_keywords:
 ms.assetid: 5bd90c71-1b78-444b-91e1-4789451ef085
 ---
 # Arrays declared as structure members cannot be declared with an initial size
-An array in a structure is declared with an initial size. You cannot initialize any structure element, and declaring an array size is one form of initialization.  
+
+An array in a structure is declared with an initial size. You cannot initialize any structure element, and declaring an array size is one form of initialization.
+
+**Error ID:** BC31043
+
+## Example
+
+The following example generates BC31043:
+
+```vb
+Structure DemoStruct
+    Public demoArray(9) As Integer
+End Structure
+```
+
+## To correct this error
+
+1. Define the array in your structure as dynamic (no initial size).
+
+2. If you require a certain size of array, you can redimension a dynamic array with a [ReDim Statement](../statements/redim-statement.md) when your code is running. The following example illustrates this:
   
- **Error ID:** BC31043  
-  
-## To correct this error  
-  
-1. Define the array in your structure as dynamic (no initial size).  
-  
-2. If you require a certain size of array, you can redimension a dynamic array with a [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md) when your code is running. The following example illustrates this.  
-  
-    ```vb  
-    Structure demoStruct  
-        Public demoArray() As Integer  
-    End Structure  
-    Sub useStruct()  
-        Dim struct As demoStruct  
-        ReDim struct.demoArray(9)  
-        Struct.demoArray(2) = 777  
+    ```vb
+    Structure DemoStruct
+        Public demoArray() As Integer
+    End Structure
+    Sub UseStruct()
+        Dim struct As DemoStruct  
+        ReDim struct.demoArray(9)
+        Struct.demoArray(2) = 777
     End Sub  
-    ```  
+    ```
   
 ## See also
 
-- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
-- [How to: Declare a Structure](../../../visual-basic/programming-guide/language-features/data-types/how-to-declare-a-structure.md)
+- [Arrays](../../programming-guide/language-features/arrays/index.md)
+- [How to: Declare a Structure](../../programming-guide/language-features/data-types/how-to-declare-a-structure.md)

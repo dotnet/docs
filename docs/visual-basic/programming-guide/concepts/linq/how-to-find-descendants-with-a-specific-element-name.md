@@ -43,7 +43,7 @@ Console.WriteLine(str)
   
  This code produces the following output:  
   
-```  
+```console  
 Some text that is broken up into multiple segments.  
 ```  
   
@@ -90,7 +90,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 Some text that is broken up into multiple segments.  
 ```  
   

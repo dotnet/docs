@@ -210,8 +210,8 @@ The following code reads all messages from a `PipeReader` and calls `ProcessMess
 `PipeReader.ReadAsync`:
 
 * Supports passing a <xref:System.Threading.CancellationToken>.
-* Throws in an <xref:System.OperationCanceledException> if the `CancellationToken` is canceled while there's a read pending.
-* Supports a way to cancel the current read operation via <xref:System.IO.Pipelines.PipeReader.CancelPendingRead%2A?displayProperty=nameWithType>, which avoids raising an exception. Calling `PipeReader.CancelPendingRead` returns a <xref:System.IO.Pipelines.ReadResult> with `IsCanceled` set to `true`. This can be useful for halting the existing read loop in a non-destructive and non-exceptional way.
+* Throws an <xref:System.OperationCanceledException> if the `CancellationToken` is canceled while there's a read pending.
+* Supports a way to cancel the current read operation via <xref:System.IO.Pipelines.PipeReader.CancelPendingRead%2A?displayProperty=nameWithType>, which avoids raising an exception. Calling `PipeReader.CancelPendingRead` causes the current or next call to `PipeReader.ReadAsync` to return a <xref:System.IO.Pipelines.ReadResult> with `IsCanceled` set to `true`. This can be useful for halting the existing read loop in a non-destructive and non-exceptional way.
 
 [!code-csharp[MyConnection](~/samples/snippets/csharp/pipelines/MyConnection.cs?name=snippet)]
 
@@ -219,7 +219,7 @@ The following code reads all messages from a `PipeReader` and calls `ProcessMess
 
 ### PipeReader common problems
 
-* Passing the wrong values to `consumed` or `examined` may result in reading already read data. For example, passing a `SequencePosition` that was already processed.
+* Passing the wrong values to `consumed` or `examined` may result in reading already read data. For example, passing a `SequencePosition` that was already processed to `examined` but not `consumed`.
 * Passing `buffer.End` as examined may result in:
 
   * Stalled data
@@ -321,7 +321,7 @@ The previous method of writing uses the buffers provided by the `PipeWriter`. Al
 
 ### Cancellation
 
-<xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> supports passing a <xref:System.Threading.CancellationToken>. Passing a `CancellationToken` results in an `OperationCanceledException` if the token is canceled while there's a flush pending. `PipeWriter.FlushAsync` supports a way to cancel the current flush operation via <xref:System.IO.Pipelines.PipeWriter.CancelPendingFlush%2A?displayProperty=nameWithType> without raising an exception. Calling `PipeWriter.CancelPendingFlush` returns a <xref:System.IO.Pipelines.FlushResult> with `IsCanceled` set to `true`. This can be useful for halting the yielding flush in a non-destructive and non-exceptional way.
+<xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> supports passing a <xref:System.Threading.CancellationToken>. Passing a `CancellationToken` results in an `OperationCanceledException` if the token is canceled while there's a flush pending. `PipeWriter.FlushAsync` supports a way to cancel the current flush operation via <xref:System.IO.Pipelines.PipeWriter.CancelPendingFlush%2A?displayProperty=nameWithType> without raising an exception. Calling `PipeWriter.CancelPendingFlush` causes the current or next call to `PipeWriter.FlushAsync` or `PipeWriter.WriteAsync` to return a <xref:System.IO.Pipelines.FlushResult> with `IsCanceled` set to `true`. This can be useful for halting the yielding flush in a non-destructive and non-exceptional way.
 
 <a name="pwcp"></a>
 

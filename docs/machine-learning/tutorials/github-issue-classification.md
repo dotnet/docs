@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Categorize support issues - multiclass classification' 
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 09/30/2019
+ms.date: 10/10/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to categorize support issues to assign them to a given area.
@@ -267,13 +267,13 @@ Notice the use of the [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A)
 
 The following metrics are evaluated for multiclass classification:
 
-* Micro Accuracy - Every sample-class pair contributes equally to the accuracy metric.  You want Micro Accuracy to be as close to 1 as possible.
+* Micro Accuracy - Every sample-class pair contributes equally to the accuracy metric.  You want Micro Accuracy to be as close to one as possible.
 
-* Macro Accuracy - Every class contributes equally to the accuracy metric. Minority classes are given equal weight as the larger classes. You want Macro Accuracy to be as close to 1 as possible.
+* Macro Accuracy - Every class contributes equally to the accuracy metric. Minority classes are given equal weight as the larger classes. You want Macro Accuracy to be as close to one as possible.
 
 * Log-loss - see [Log Loss](../resources/glossary.md#log-loss). You want Log-loss to be as close to zero as possible.
 
-* Log-loss reduction - Ranges from [-inf, 100], where 100 is perfect predictions and 0 indicates mean predictions. You want Log-loss reduction to be as close to zero as possible.
+* Log-loss reduction - Ranges from [-inf, 1.00], where 1.00 is perfect predictions and 0 indicates mean predictions. You want Log-loss reduction to be as close to one as possible.
 
 ### Displaying the metrics for model validation
 

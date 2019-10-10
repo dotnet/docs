@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\wrk\\DotNetDocs\\docs\\docs\\standard\\io\\temp\\MyBuffers.csproj": {}
+  },
+  "projects": {
+    "C:\\wrk\\DotNetDocs\\docs\\docs\\standard\\io\\temp\\MyBuffers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\wrk\\DotNetDocs\\docs\\docs\\standard\\io\\temp\\MyBuffers.csproj",
+        "projectName": "MyBuffers",
+        "projectPath": "C:\\wrk\\DotNetDocs\\docs\\docs\\standard\\io\\temp\\MyBuffers.csproj",
+        "packagesPath": "C:\\Users\\riande\\.nuget\\packages\\",
+        "outputPath": "C:\\wrk\\DotNetDocs\\docs\\docs\\standard\\io\\temp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\riande\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core-preview7-012802/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -21,7 +21,7 @@ In Figure 3-1 you can see the possible OS version depending on the .NET framewor
 You can also create your own Docker image in cases where you want to use a different Linux distro or where you want an image with versions not provided by Microsoft. For example, you might create an image with ASP.NET Core running on the traditional .NET Framework and Windows Server Core, which is a not-so-common scenario for Docker.
 
 > [!IMPORTANT]
-> When using Windows Server Core images you might find that some DLLs that are missing, when compared to full Windows images. You might be able to solve the problem creating a custom Server Core image, adding the missing files at image build time.
+> When using Windows Server Core images, you might find that some DLLs are missing, when compared to full Windows images. You might be able to solve this problem by creating a custom Server Core image, adding the missing files at image build time.
 
 When you add the image name to your Dockerfile file, you can select the operating system and version depending on the tag you use, as in the following examples:
 
@@ -34,7 +34,7 @@ When you add the image name to your Dockerfile file, you can select the operatin
 
 ## Additional resources
 
-- **Server Core for .Net Framework Insufficient (GitHub issue)**  
+- **Server Core for .NET Framework Insufficient (GitHub issue)**  
   <https://github.com/dotnet/docs/issues/13409>
 
 > [!div class="step-by-step"]

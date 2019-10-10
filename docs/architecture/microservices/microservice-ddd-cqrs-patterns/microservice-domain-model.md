@@ -25,11 +25,11 @@ A domain entity in DDD must implement the domain logic or behavior related to th
 
 Figure 7-8 shows a domain entity that implements not only data attributes but operations or methods with related domain logic.
 
-![A domain model entity implements behaviors through methods, that is, it's not an "anemic" model.](./media/image9.png)
+![Diagram showing a Domain Entity's pattern.](./media/microservice-domain-model/domain-entity-pattern.png)
 
 **Figure 7-8**. Example of a domain entity design implementing data plus behavior
 
-Of course, sometimes you can have entities that do not implement any logic as part of the entity class. This can happen in child entities within an aggregate if the child entity does not have any special logic because most of the logic is defined in the aggregate root. If you have a complex microservice that has a lot of logic implemented in the service classes instead of in the domain entities, you could be falling into the anemic domain model, explained in the following section.
+A domain model entity implements behaviors through methods, that is, it's not an "anemic" model. Of course, sometimes you can have entities that do not implement any logic as part of the entity class. This can happen in child entities within an aggregate if the child entity does not have any special logic because most of the logic is defined in the aggregate root. If you have a complex microservice that has a lot of logic implemented in the service classes instead of in the domain entities, you could be falling into the anemic domain model, explained in the following section.
 
 ### Rich domain model versus anemic domain model
 
@@ -102,11 +102,11 @@ The purpose of an aggregate root is to ensure the consistency of the aggregate; 
 
 In Figure 7-9, you can see sample aggregates like the buyer aggregate, which contains a single entity (the aggregate root Buyer). The order aggregate contains multiple entities and a value object.
 
-![A DDD domain model is composed from aggregates, an aggregate can have just one entity or more, and can include value objects as well.](./media/image10.png)
+![Diagram comparing a buyer aggregate and an order aggregate.](./media/microservice-domain-model/buyer-order-aggregate-pattern.png)
 
 **Figure 7-9**. Example of aggregates with multiple or single entities
 
-Note that the Buyer aggregate could have additional child entities, depending on your domain, as it does in the ordering microservice in the eShopOnContainers reference application. Figure 7-9 just illustrates a case in which the buyer has a single entity, as an example of an aggregate that contains only an aggregate root.
+A DDD domain model is composed from aggregates, an aggregate can have just one entity or more, and can include value objects as well. Note that the Buyer aggregate could have additional child entities, depending on your domain, as it does in the ordering microservice in the eShopOnContainers reference application. Figure 7-9 just illustrates a case in which the buyer has a single entity, as an example of an aggregate that contains only an aggregate root.
 
 In order to maintain separation of aggregates and keep clear boundaries between them, it is a good practice in a DDD domain model to disallow direct navigation between aggregates and only having the foreign key (FK) field, as implemented in the [Ordering microservice domain model](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs) in eShopOnContainers. The Order entity only has a FK field for the buyer, but not an EF Core navigation property, as shown in the following code:
 

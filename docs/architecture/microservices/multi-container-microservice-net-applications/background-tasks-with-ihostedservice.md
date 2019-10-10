@@ -11,11 +11,11 @@ From a generic point of view, in .NET Core we called these type of tasks *Hosted
 
 Since .NET Core 2.0, the framework provides a new interface named <xref:Microsoft.Extensions.Hosting.IHostedService> helping you to easily implement hosted services. The basic idea is that you can register multiple background tasks (hosted services), that run in the background while your web host or host is running, as shown in the image 6-26.
 
-![ASP.NET Core 1.x and 2.x support IWebHost for background processes in web apps, .NET Core 2,1 supports IHost for background processes with plain console apps.](./media/image26.png)
+![Diagram comparing ASP.NET Core IWebHost and .NET Core IHost.](./media/background-tasks-with-ihostedservice/ihosted-service-webhost-vs-host.png)
 
 **Figure 6-26**. Using IHostedService in a WebHost vs. a Host
 
-Note the difference made between `WebHost` and `Host`.
+ASP.NET Core 1.x and 2.x support IWebHost for background processes in web apps. .NET Core 2.1 supports IHost for background processes with plain console apps. Note the difference made between `WebHost` and `Host`.
 
 A `WebHost` (base class implementing `IWebHost`) in ASP.NET Core 2.0 is the infrastructure artifact you use to provide HTTP server features to your process, such as if you are implementing an MVC web app or Web API service. It provides all the new infrastructure goodness in ASP.NET Core, enabling you to use dependency injection, insert middlewares in the request pipeline, etc. and precisely use these `IHostedServices` for background tasks.
 

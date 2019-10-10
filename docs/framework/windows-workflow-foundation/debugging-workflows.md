@@ -17,7 +17,7 @@ If a workflow has paused at a breakpoint in the designer, the workflow can also 
 
 ## Debugging in Code
 
-Code breakpoints can be used in [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in the same way that they can be used in other imperative applications. Click the left margin of the code pane to create a code breakpoint, or press <kbd>F9</kbd> to place a breakpoint at the cursor location.
+To set a breakpoint, click the left margin of the code pane, or press <kbd>F9</kbd> with the cursor at the line where you want to set it.
 
 ## Attaching to a Workflow Process
 

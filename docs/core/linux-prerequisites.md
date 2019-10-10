@@ -122,7 +122,7 @@ For versions earlier than .NET Core 2.1, following dependencies are also require
 * libunwind8
 * libuuid1
 
-If your code uses the System.Drawing.Common assembly, you will also need the following dependencies:
+For .NET Core applications which use the System.Drawing.Common assembly, you will also need the following dependencies:
 
 * libgdiplus (version 6.0.1 or later)
 
@@ -151,7 +151,7 @@ For versions earlier than .NET Core 2.1, following dependencies are also require
 
 For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 
-If your code uses the System.Drawing.Common assembly, you will also need the following dependencies:
+For .NET Core applications which use the System.Drawing.Common assembly, you will also need the following dependencies:
 
 * libgdiplus (version 6.0.1 or later)
 

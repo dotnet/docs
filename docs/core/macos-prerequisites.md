@@ -40,6 +40,19 @@ For a list of known issues, see [.NET Core known issues](https://github.com/dotn
 
 ---
 
+## libgdiplus
+
+.NET Core applications which use the System.Drawing.Common assembly require libgdiplus to be installed.
+
+An easy way to obtain libgdiplus is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install libgdiplus by executing the following commands at a Terminal (command) prompt:
+
+```console
+brew update
+brew install libgdiplus
+```
+
+---
+
 ## Visual Studio for Mac
 
 You can use any editor to develop .NET Core applications using the .NET Core SDK. However, if you want to develop .NET Core applications on a Mac in an integrated development environment, you can use [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link).

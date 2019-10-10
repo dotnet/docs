@@ -1,7 +1,7 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 08/08/2019
+ms.date: 10/07/2019
 ---
 # dotnet build
 
@@ -60,9 +60,9 @@ The project or solution file to build. If a project or solution file isn't speci
 
 ## Options
 
-* **`-c|--configuration {Debug|Release}`**
+* **`-c|--configuration {CONFIGURATION}`**
 
-  Defines the build configuration. The default value is `Debug`.
+  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
 * **`-f|--framework <FRAMEWORK>`**
 

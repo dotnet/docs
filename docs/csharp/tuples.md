@@ -430,7 +430,7 @@ The `Deconstruct` method could convert the `Person` object `p` to a tuple contai
 
 Tuples can be used as out parameters _themselves_. Not to be confused with any ambiguity previously mentioned in the [Deconstruction](#deconstruction) section. In a method call, you need only describe the tuple's shape:
 
-[!code-csharp[TuplesAsOutParameters](../../samples/snippets/csharp/tuples/program.cs#01_TupleAsOutVariable "Tuples as out parameters")]
+[!code-csharp[TuplesAsOutParameters](~/samples/snippets/csharp/tuples/program.cs#01_TupleAsOutVariable "Tuples as out parameters")]
 
 Alternatively, you could use an [_unnamed_](#named-and-unnamed-tuples) tuple and refer to its fields as `Item1` and `Item2`:
 

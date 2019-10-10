@@ -38,7 +38,7 @@ Retrieving a custom attribute is a simple process. First, declare an instance of
   
  This program displays the following text when executed.  
   
-```  
+```console  
 The Name Attribute is: Joan Smith.  
 The Level Attribute is: 42.  
 The Reviewed Attribute is: True.  
@@ -46,7 +46,7 @@ The Reviewed Attribute is: True.
   
  If the attribute is not found, the **GetCustomAttribute** method initializes `MyAttribute` to a null value. This example checks `MyAttribute` for such an instance and notifies the user if no attribute is found. If the `DeveloperAttribute` is not found in the class scope, the following message displays to the console.  
   
-```  
+```console  
 The attribute was not found.   
 ```  
   

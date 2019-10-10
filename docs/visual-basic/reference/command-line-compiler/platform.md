@@ -12,7 +12,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 ## Syntax  
   
-```  
+```console  
 -platform:{ x86 | x64 | Itanium | arm | anycpu | anycpu32bitpreferred }  
 ```  
   

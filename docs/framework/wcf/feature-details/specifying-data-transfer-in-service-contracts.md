@@ -490,7 +490,7 @@ For Each op As OperationDescription In factory.Endpoint.Contract.Operations
     Dim client As IDataService = factory.CreateChannel  
 ```  
   
- Following is the equivalent code on the service, in the self-hosted case.  
+The following is the equivalent code on the service, in the self-hosted case:
   
 ```csharp  
 ServiceHost serviceHost = new ServiceHost(typeof(IDataService))  

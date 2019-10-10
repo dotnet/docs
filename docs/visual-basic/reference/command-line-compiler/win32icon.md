@@ -12,7 +12,7 @@ Inserts an .ico file in the output file. This .ico file represents the output fi
   
 ## Syntax  
   
-```  
+```console  
 -win32icon:filename  
 ```  
   

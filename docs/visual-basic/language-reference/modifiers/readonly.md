@@ -32,30 +32,29 @@ Specifies that a variable or property can be read but not written.
 > [!IMPORTANT]
 > If the data type of the variable is a reference type, such as an array or a class instance, its members can be changed even if the variable itself is `ReadOnly`. The following example illustrates this.  
   
- `ReadOnly characterArray() As Char = {"x"c, "y"c, "z"c}`  
+ ```vb
+ ReadOnly characterArray() As Char = {"x"c, "y"c, "z"c}
+ Sub ChangeArrayElement()
+     characterArray(1) = "M"c
+ End Sub
+ ```
   
- `Sub changeArrayElement()`  
+ When initialized, the array pointed to by `characterArray()` holds "x", "y", and "z". Because the variable `characterArray` is `ReadOnly`, you cannot change its value once it is initialized; that is, you cannot assign a new array to it. However, you can change the values of one or more of the array members. Following a call to the procedure `ChangeArrayElement`, the array pointed to by `characterArray()` holds "x", "M", and "z".
   
- `characterArray(1) = "M"c`  
+ Note that this is similar to declaring a procedure parameter to be [ByVal](byval.md), which prevents the procedure from changing the calling argument itself but allows it to change its members.  
   
- `End Sub`  
+## Example
+
+The following example defines a `ReadOnly` property for the date on which an employee was hired. The class stores the property value internally as a `Private` variable, and only code inside the class can change that value. However, the property is `Public`, and any code that can access the class can read the property.
   
- When initialized, the array pointed to by `characterArray()` holds "x", "y", and "z". Because the variable `characterArray` is `ReadOnly`, you cannot change its value once it is initialized; that is, you cannot assign a new array to it. However, you can change the values of one or more of the array members. Following a call to the procedure `changeArrayElement`, the array pointed to by `characterArray()` holds "x", "M", and "z".  
+[!code-vb[VbVbalrKeywords#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#4)]
   
- Note that this is similar to declaring a procedure parameter to be [ByVal](../../../visual-basic/language-reference/modifiers/byval.md), which prevents the procedure from changing the calling argument itself but allows it to change its members.  
+The `ReadOnly` modifier can be used in these contexts:
   
-## Example  
- The following example defines a `ReadOnly` property for the date on which an employee was hired. The class stores the property value internally as a `Private` variable, and only code inside the class can change that value. However, the property is `Public`, and any code that can access the class can read the property.  
-  
- [!code-vb[VbVbalrKeywords#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#4)]  
-  
- The `ReadOnly` modifier can be used in these contexts:  
-  
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
-  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Dim Statement](../statements/dim-statement.md) 
+- [Property Statement](../statements/property-statement.md)  
   
 ## See also
 
-- [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [WriteOnly](writeonly.md)
+- [Keywords](../keywords/index.md)

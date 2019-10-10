@@ -15,9 +15,13 @@ Causes the compiler to make type information in the specified assemblies availab
   
 ## Syntax  
   
-```  
+```console  
 -reference:fileList  
-' -or-  
+```
+
+or
+
+```console
 -r:fileList  
 ```  
   

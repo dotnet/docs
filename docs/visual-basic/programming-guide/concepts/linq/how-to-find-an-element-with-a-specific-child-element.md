@@ -24,7 +24,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 0002  
 0006  
 ```  
@@ -55,7 +55,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 0002  
 0006  
 ```  

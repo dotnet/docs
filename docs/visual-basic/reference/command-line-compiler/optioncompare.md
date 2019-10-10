@@ -15,7 +15,7 @@ Specifies how string comparisons are made.
   
 ## Syntax  
   
-```  
+```console  
 -optioncompare:{binary | text}  
 ```  
   

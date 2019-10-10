@@ -119,8 +119,6 @@ To solve the preceding problem, the `Pipe` has two settings to control the flow 
 * <xref:System.IO.Pipelines.PipeOptions.PauseWriterThreshold>: Determines how much data should be buffered before calls to <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A> pause.
 * <xref:System.IO.Pipelines.PipeOptions.ResumeWriterThreshold>: Determines how much data the reader has to observe before calls to `PipeWriter.FlushAsync` resume.
 
-The `ResumeWriterThreshold` controls how much the reader has to observe before writing can resume.
-
 ![Diagram with ResumeWriterThreshold and PauseWriterThreshold](./media/pipelines/resume-pause.png)
 
 <xref:System.IO.Pipelines.PipeWriter.FlushAsync%2A?displayProperty=nameWithType>:
@@ -226,7 +224,7 @@ The following code reads all messages from a `PipeReader` and calls `ProcessMess
   * Possibly an eventual Out of Memory (OOM) exception if data isn't consumed. For example, `PipeReader.AdvanceTo(position, buffer.End)` when processing a single message at a time from the buffer.
 
 * Passing the wrong values to `consumed` or `examined` may result in an infinite loop. For example, `PipeReader.AdvanceTo(buffer.Start)` if `buffer.Start` hasn't changed will cause the next call to `PipeReader.ReadAsync` to return immediately before new data arrives.
-* Passing the wrong values to `consumed` or `examined` may result in infinite buffering (eventual OOM). For example, `PipeReader.AdvanceTo(buffer.Start, buffer.End)` unconditionally when processing a single message at a time from the buffer.
+* Passing the wrong values to `consumed` or `examined` may result in infinite buffering (eventual OOM).
 * Using the `ReadOnlySequence<byte>` after calling `PipeReader.AdvanceTo` may result in memory corruption (use after free).
 * Failing to call `PipeReader.Complete/CompleteAsync` may result in a memory leak.
 * Checking <xref:System.IO.Pipelines.ReadResult.IsCompleted?displayProperty=nameWithType> and exiting the reading logic before processing the buffer results in data loss. The loop exit condition should be based on `ReadResult.Buffer.IsEmpty` and `ReadResult.IsCompleted`. Doing this in the wrong order could result in an infinite loop.
@@ -336,6 +334,8 @@ The previous method of writing uses the buffers provided by the `PipeWriter`. Al
 ## IDuplexPipe
 
 The <xref:System.IO.Pipelines.IDuplexPipe> is a contract for types that support both reading and writing. For example, a network connection would be represented by an `IDuplexPipe`.
+
+ Unlike `Pipe` which contains a `PipeReader` and a `PipeWriter`, `IDuplexPipe` represents a single side of a full duplex connection. That means what is written to the `PipeWriter` will not be read from the `PipeReader`.
 
 ## Streams
 

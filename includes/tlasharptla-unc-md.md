@@ -1,1 +1,0 @@
-Universal Naming Convention (UNC)

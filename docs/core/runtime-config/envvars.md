@@ -30,6 +30,7 @@ The following sections list selected supported environment variables by category
 |`COMPlus_GCName`|*string_path*|Specifies a path to the library containing the GC that the runtime intends to load. For more information, see [Standalone GC Loader Design](https://github.com/dotnet/coreclr/blob/4c7c066d0bacdb86a2311333de1ca73d94ae5280/Documentation/design-docs/standalone-gc-loading.md).|
 
 ## Networking
+
 |Variable name|Variable value|Description|
 |--|--|--|
 |`DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT`|0 or 1|Starting with .NET Core 3.0, indicates whether support for the HTTP/2 protocol is enabled (1) or disabled (0, the default value).|

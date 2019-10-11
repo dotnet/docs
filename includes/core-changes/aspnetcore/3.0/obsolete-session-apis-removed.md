@@ -1,26 +1,18 @@
 ### Obsolete session APIs removed 
 
-This change removes APIs for configuring session cookies that were marked obsolete as part of https://github.com/aspnet/Announcements/issues/257.
+Obsolete APIs for configuring session cookies were removed. For more information, see [aspnet/Announcements#257](https://github.com/aspnet/Announcements/issues/257).
 
 #### Version introduced
 
 3.0
 
-#### Old behavior
-
-Obsolete APIs were present in the runtime.
-
-#### New behavior
-
-Obsolete APIs were removed.
-
 #### Reason for change
 
-This change makes our APIs for configuring features that use cookies consistent across ASP.NET Core.
+This change enforces consistency across APIs for configuring features that use cookies.
 
 #### Recommended action
 
-Migrate usage of the removed APIs to their newer replacements. For example:
+Migrate usage of the removed APIs to their newer replacements. Consider the following example in `Startup.ConfigureServices`:
 
 ```csharp
 public void ConfigureServices(ServiceCollection services)
@@ -50,8 +42,20 @@ ASP.NET Core
 
 #### Affected APIs
 
-- [SessionOptions.CookieName](/dotnet/api/microsoft.aspnetcore.builder.sessionoptions.cookiedomain?view=aspnetcore-2.2#Microsoft_AspNetCore_Builder_SessionOptions_CookieName)
-- [SessionOptions.CookieDomain](/dotnet/api/microsoft.aspnetcore.builder.sessionoptions.cookiedomain?view=aspnetcore-2.2#Microsoft_AspNetCore_Builder_SessionOptions_CookieDomain)
-- [SessionOptions.CookiePath](/dotnet/api/microsoft.aspnetcore.builder.sessionoptions.cookiedomain?view=aspnetcore-2.2#Microsoft_AspNetCore_Builder_SessionOptions_CookiePath)
-- [SessionOptions.CookieHttpOnly](/dotnet/api/microsoft.aspnetcore.builder.sessionoptions.cookiedomain?view=aspnetcore-2.2#Microsoft_AspNetCore_Builder_SessionOptions_CookieHttpOnly)
-- [SessionOptions.CookieSecure](/dotnet/api/microsoft.aspnetcore.builder.sessionoptions.cookiedomain?view=aspnetcore-2.2#Microsoft_AspNetCore_Builder_SessionOptions_CookieSecure)
+- <xref:Microsoft.AspNetCore.Builder.SessionOptions.CookieDomain?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Builder.SessionOptions.CookieHttpOnly?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Builder.SessionOptions.CookieName?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Builder.SessionOptions.CookiePath?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Builder.SessionOptions.CookieSecure?displayProperty=fullName>
+
+<!-- 
+
+#### Affected APIs
+
+- `P:Microsoft.AspNetCore.Builder.SessionOptions.CookieDomain`
+- `P:Microsoft.AspNetCore.Builder.SessionOptions.CookieHttpOnly`
+- `P:Microsoft.AspNetCore.Builder.SessionOptions.CookieName`
+- `P:Microsoft.AspNetCore.Builder.SessionOptions.CookiePath`
+- `P:Microsoft.AspNetCore.Builder.SessionOptions.CookieSecure`
+
+-->

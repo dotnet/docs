@@ -46,7 +46,18 @@ ASP.NET Core
 
 #### Affected APIs
 
-- [Microsoft.AspNetCore.Builder.IApplicationBuilder.UseSignalR](/dotnet/api/microsoft.aspnetcore.builder.signalrappbuilderextensions.usesignalr?view=aspnetcore-2.2#Microsoft_AspNetCore_Builder_SignalRAppBuilderExtensions_UseSignalR_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Action_Microsoft_AspNetCore_SignalR_HubRouteBuilder__)
-- [Microsoft.AspNetCore.Builder.IApplicationBuilder.UseConnections](/dotnet/api/microsoft.aspnetcore.builder.connectionsappbuilderextensions.useconnections?view=aspnetcore-2.2#Microsoft_AspNetCore_Builder_ConnectionsAppBuilderExtensions_UseConnections_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Action_Microsoft_AspNetCore_Http_Connections_ConnectionsRouteBuilder__)
-- [Microsoft.AspNetCore.Http.Connections.ConnectionsRouteBuilder](/dotnet/api/microsoft.aspnetcore.http.connections.connectionsroutebuilder?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.SignalR.HubRouteBuilder](/dotnet/api/microsoft.aspnetcore.signalr.hubroutebuilder?view=aspnetcore-2.2)
+- <xref:Microsoft.AspNetCore.Builder.ConnectionsAppBuilderExtensions.UseConnections(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.Http.Connections.ConnectionsRouteBuilder})?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Builder.SignalRAppBuilderExtensions.UseSignalR(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.SignalR.HubRouteBuilder})?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Http.Connections.ConnectionsRouteBuilder?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.SignalR.HubRouteBuilder>
+
+<!-- 
+
+#### Affected APIs
+
+- `M:Microsoft.AspNetCore.Builder.ConnectionsAppBuilderExtensions.UseConnections(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.Http.Connections.ConnectionsRouteBuilder})`
+- `M:Microsoft.AspNetCore.Builder.SignalRAppBuilderExtensions.UseSignalR(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.SignalR.HubRouteBuilder})`
+- `T:Microsoft.AspNetCore.Http.Connections.ConnectionsRouteBuilder`
+- `T:Microsoft.AspNetCore.SignalR.HubRouteBuilder`
+
+-->

@@ -31,7 +31,7 @@ This change was necessary to remove the ASP.NET Core shared framework dependency
 Apps that require runtime compilation or recompilation of Razor files should take the following steps:
 
 1. Add a reference to the `Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation` package.
-1. Update the project's `Startup.ConfigureServices` method to include a call to `AddMvcRazorRuntimeCompilation`. For example:
+1. Update the project's `Startup.ConfigureServices` method to include a call to `AddMvcRazorRuntimeCompilation`. For example, in `Startup.ConfigureServices`:
 
     ```csharp
     services.AddMvc()
@@ -44,4 +44,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-[Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions](/dotnet/api/microsoft.aspnetcore.mvc.razor.razorviewengineoptions?view=aspnetcore-2.2)
+<xref:Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions?displayProperty=fullName>
+
+<!--
+
+#### Affected APIs
+
+`T:Microsoft.AspNetCore.Mvc.Razor.RazorViewEngineOptions`
+
+-->

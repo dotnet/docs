@@ -23,7 +23,7 @@ ms.date: "06/19/2019"
       "runtimeOptions": {
          "configProperties": {
             "config-property-name1": "config-value1",
-            "config-property-name2": config-value2
+            "config-property-name2": "config-value2"
          }
       }
    }

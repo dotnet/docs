@@ -56,5 +56,14 @@ ASP.NET Core
 
 #### Affected APIs
 
-- [HubConnectionContext.ctor(ConnectionContext, TimeSpan , ILoggerFactory)](/dotnet/api/microsoft.aspnetcore.signalr.hubconnectioncontext.-ctor?view=aspnetcore-2.2#Microsoft_AspNetCore_SignalR_HubConnectionContext__ctor_Microsoft_AspNetCore_Connections_ConnectionContext_System_TimeSpan_Microsoft_Extensions_Logging_ILoggerFactory_)
-- [HubConnectionContext.ctor(ConnectionContext, TimeSpan , ILoggerFactory, TimeSpan)](/dotnet/api/microsoft.aspnetcore.signalr.hubconnectioncontext.-ctor?view=aspnetcore-2.2#Microsoft_AspNetCore_SignalR_HubConnectionContext__ctor_Microsoft_AspNetCore_Connections_ConnectionContext_System_TimeSpan_Microsoft_Extensions_Logging_ILoggerFactory_)
+- <xref:Microsoft.AspNetCore.SignalR.HubConnectionContext.%23ctor(Microsoft.AspNetCore.Connections.ConnectionContext,System.TimeSpan,Microsoft.Extensions.Logging.ILoggerFactory)?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.SignalR.HubConnectionContext.%23ctor(Microsoft.AspNetCore.Connections.ConnectionContext,System.TimeSpan,Microsoft.Extensions.Logging.ILoggerFactory,System.TimeSpan)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:Microsoft.AspNetCore.SignalR.HubConnectionContext.#ctor(Microsoft.AspNetCore.Connections.ConnectionContext,System.TimeSpan,Microsoft.Extensions.Logging.ILoggerFactory)`
+- `M:Microsoft.AspNetCore.SignalR.HubConnectionContext.#ctor(Microsoft.AspNetCore.Connections.ConnectionContext,System.TimeSpan,Microsoft.Extensions.Logging.ILoggerFactory,System.TimeSpan)`
+
+-->

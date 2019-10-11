@@ -20,7 +20,7 @@ The motivation for the change was to add support for new email / confirmation fl
 
 #### Recommended action
 
-If manually constructing a `SignInManager`, provide an implementation of `IUserConfirmation` or grab one from DI to provide.
+If manually constructing a `SignInManager`, provide an implementation of `IUserConfirmation` or grab one from dependency injection to provide.
 
 #### Category
 
@@ -28,4 +28,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-[SignInManager.ctor](/dotnet/api/microsoft.aspnetcore.identity.signinmanager-1?view=aspnetcore-2.2)
+<xref:Microsoft.AspNetCore.Identity.SignInManager`1.%23ctor%2A?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+`Overload:Microsoft.AspNetCore.Identity.SignInManager`1.#ctor`
+
+-->

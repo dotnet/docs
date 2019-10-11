@@ -32,14 +32,33 @@ ASP.NET Core
 
 #### Affected APIs
 
-- `Microsoft.AspNetCore.ResponseCaching.Internal.CachedResponse`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.CachedVaryByRules`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCacheEntry`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingKeyProvider`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingPolicyProvider`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.MemoryResponseCache`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingContext`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingKeyProvider`
-- `Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingPolicyProvider`
-- /dotnet/api/microsoft.aspnetcore.responsecaching.responsecachingmiddleware.-ctor?view=aspnetcore-2.2
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.CachedResponse?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.CachedVaryByRules?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCacheEntry?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingKeyProvider?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingPolicyProvider?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.MemoryResponseCache?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingContext?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingKeyProvider?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingPolicyProvider?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.%23ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions},Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingPolicyProvider,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingKeyProvider)?displayProperty=fullName>
+
+<!-- 
+
+#### Affected APIs
+
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.CachedResponse`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.CachedVaryByRules`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCacheEntry`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingKeyProvider`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingPolicyProvider`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.MemoryResponseCache`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingContext`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingKeyProvider`
+- `T:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingPolicyProvider`
+- `M:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions},Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingPolicyProvider,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingKeyProvider)",
+"nameWithType": "ResponseCachingMiddleware.ResponseCachingMiddleware(RequestDelegate, IOptions<ResponseCachingOptions>, ILoggerFactory, IResponseCachingPolicyProvider, IResponseCache, IResponseCachingKeyProvider)`
+
+-->

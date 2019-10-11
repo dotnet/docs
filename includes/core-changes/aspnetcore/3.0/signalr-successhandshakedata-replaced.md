@@ -28,4 +28,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-[HandshakeProtocol.SuccessHandshakeData Field](/dotnet/api/microsoft.aspnetcore.signalr.protocol.handshakeprotocol.successhandshakedata?view=aspnetcore-2.2)
+<xref:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol.SuccessHandshakeData?displayProperty=namewithType>
+
+<!--
+
+#### Affected APIs
+
+`F:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol.SuccessHandshakeData`
+
+-->

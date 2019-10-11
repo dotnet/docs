@@ -149,6 +149,8 @@ When doing I/O, it's important to have fine-grained control over where the I/O i
 
 [!code-csharp[](~/samples/snippets/csharp/pipelines/Program.cs?name=snippet)]
 
+[PipeScheduler.ThreadPool](xref:System.IO.Pipelines.PipeScheduler.ThreadPool) is the <xref:System.IO.Pipelines.PipeScheduler> implementation that queues callbacks to the thread pool. `PipeScheduler.ThreadPool` is the default and generally the best choice. [PipeScheduler.Inline](xref:System.IO.Pipelines.PipeScheduler.Inline) can cause unintended consequences such as deadlocks.
+
 ### Pipe reset
 
 It's frequently efficient to reuse the `Pipe` object. To reset the pipe, call <xref:System.IO.Pipelines.PipeReader> <xref:System.IO.Pipelines.Pipe.Reset%2A> when both the `PipeReader` and `PipeWriter` are complete.

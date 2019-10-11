@@ -2,8 +2,6 @@
 title: "Runtime configuration with runtimeconfig.json"
 description: "Use the runtime.config.json file to configure the runtime behavior of .NET Core applications."
 ms.date: "06/19/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Runtime configuration with runtimeconfig.json
 

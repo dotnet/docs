@@ -206,7 +206,7 @@ public class StoreKey
 }  
 ```  
   
-```output  
+```console  
 Key added to container:  
 <RSAKeyValue> Key Information A</RSAKeyValue>  
 Key retrieved from container :  

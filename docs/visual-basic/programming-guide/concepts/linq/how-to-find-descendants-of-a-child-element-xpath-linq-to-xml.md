@@ -28,7 +28,7 @@ Dim root As XElement = _
             </Annotation>  
         </Paragraph>  
         <Paragraph>  
-            <Text>  This is a second sentence.</Text>  
+            <Text>This is a second sentence.</Text>  
         </Paragraph>  
     </Root>  
   
@@ -58,7 +58,7 @@ Console.WriteLine(str2)
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 This is the start of a sentence.  This is a second sentence.  
 ```  

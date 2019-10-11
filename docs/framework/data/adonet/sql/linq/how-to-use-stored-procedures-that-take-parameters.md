@@ -14,7 +14,7 @@ ms.assetid: b935fd84-cb9c-4205-8c48-658d5db2ec93
 ## Example  
  The following example takes a single input parameter (the customer ID) and returns an out parameter (the total sales for that customer).  
   
-```  
+```sql
 CREATE PROCEDURE [dbo].[CustOrderTotal]   
 @CustomerID nchar(5),  
 @TotalSales money OUTPUT  

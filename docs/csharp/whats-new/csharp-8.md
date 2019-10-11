@@ -8,7 +8,7 @@ ms.date: 09/20/2019
 C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](#readonly-members)
-- [Default interface members](#default-interface-members)
+- [Default interface methods](#default-interface-methods)
 - [Pattern matching enhancements](#more-patterns-in-more-places):
   - [Switch expressions](#switch-expressions)
   - [Property patterns](#property-patterns)
@@ -79,11 +79,11 @@ public readonly void Translate(int xOffset, int yOffset)
 
 This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
 
-## Default interface members
+## Default interface methods
 
-You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface members also enable scenarios similar to a "traits" language feature.
+You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface methods also enable scenarios similar to a "traits" language feature.
 
-Default interface members affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-members-versions.md). Other tutorials and reference updates are coming in time for general release.
+Default interface methods affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-methods-versions.md). Other tutorials and reference updates are coming in time for general release.
 
 ## More patterns in more places
 

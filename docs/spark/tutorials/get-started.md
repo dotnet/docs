@@ -63,7 +63,7 @@ Double check that you can run `dotnet`, `java`, `mvn`, `spark-shell` from your c
 
 1. Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub Releases page to your local machine. For example, you might download it to the path, `c:\bin\Microsoft.Spark.Worker\`.
 
-2. Create a [new environment variable](https://www.java.com/en/download/help/path.xml) called `DotnetWorkerPath` and set it to the directory where you downloaded and extracted the **Microsoft.Spark.Worker**. For example, `c:\bin\Microsoft.Spark.Worker`.
+2. Create a [new environment variable](https://www.java.com/en/download/help/path.xml) called `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the **Microsoft.Spark.Worker**. For example, `c:\bin\Microsoft.Spark.Worker`.
 
 ## Clone the .NET for Apache Spark GitHub repo
 

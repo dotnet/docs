@@ -13,7 +13,7 @@ Transfers control immediately to the next iteration of a loop.
   
 ## Syntax  
   
-```  
+```vb  
 Continue { Do | For | While }  
 ```  
   

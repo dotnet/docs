@@ -232,7 +232,7 @@ var options = new JsonSerializerOptions
     ReadCommentHandling = JsonCommentHandling.Skip,
     AllowTrailingCommas = true
 };
-var weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(json, options);
+var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json, options);
 ```
 
 Here's example JSON with comments and a trailing comma:

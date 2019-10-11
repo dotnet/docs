@@ -42,7 +42,7 @@ For a list of known issues, see [.NET Core known issues](https://github.com/dotn
 
 ## libgdiplus
 
-.NET Core applications which use the System.Drawing.Common assembly require libgdiplus to be installed.
+.NET Core applications that use the *System.Drawing.Common* assembly require libgdiplus to be installed.
 
 An easy way to obtain libgdiplus is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install libgdiplus by executing the following commands at a Terminal (command) prompt:
 
@@ -50,8 +50,6 @@ An easy way to obtain libgdiplus is by using the [Homebrew ("brew")](https://bre
 brew update
 brew install libgdiplus
 ```
-
----
 
 ## Visual Studio for Mac
 

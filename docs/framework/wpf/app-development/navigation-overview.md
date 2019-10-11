@@ -703,7 +703,7 @@ You can display a loose [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharpt
 
 - A Web site on the local machine, the intranet, or the Internet.
 
-- A [!INCLUDE[TLA#tla_unc](../../../../includes/tlasharptla-unc-md.md)] file share.
+- A Universal Naming Convention (UNC) file share.
 
 - The local disk.
 

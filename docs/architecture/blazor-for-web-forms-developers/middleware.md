@@ -1,15 +1,15 @@
 ---
 title: Modules, handlers, and middleware
-description: Handling requests with HTTP modules, handlers, and middleware
+description: Learn about handling HTTP requests with modules, handlers, and middleware.
 author: danroth27
 ms.author: daroth
-ms.date: 09/11/2019
+ms.date: 10/11/2019
 ---
 # Modules, handlers, and middleware
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-An ASP.NET Core application is built upon a series of middleware that are handlers arranged into a pipeline to handle requests and response. In a WebForms application, HTTP handlers and modules could be used to solve similar problems. However, in ASP.NET Core, modules, handlers, *Global.asax.cs*, and the application life cycle have been replaced with middleware. In this chapter, we will explore what middleware is in terms of a Blazor application.
+An ASP.NET Core app is built upon a series of middleware. Middlewares are handlers, which are arranged into a pipeline to handle requests and responses. In a Web Forms app, HTTP handlers and modules solve similar problems. In ASP.NET Core, modules, handlers, *Global.asax.cs*, and the app life cycle are replaced with middleware. In this chapter, you'll learn what middleware in the context of a Blazor app.
 
 ## Overview
 
@@ -17,42 +17,42 @@ The ASP.NET Core request pipeline consists of a sequence of request delegates, c
 
 ![pipeline](media/middleware/request-delegate-pipeline.png)
 
-No where in this diagram is there a concept of life cycle events, a concept that was foundational to how ASP.NET WebForms requests were handled. This system allows for easier reasoning about what process is occuring and allows middleware to be inserted at any point. Middleware execution is based on the order in which they're inserted into the request pipeline. They are also added in code instead of configuration files, usually in *Startup.cs*.
+The preceding diagram lacks a concept of lifecycle events. This concept is foundational to how ASP.NET Web Forms requests are handled. This system makes it easier to reason about what process is occurring and allows middleware to be inserted at any point. Middleware executes in the order in which it's added to the request pipeline. They're also added in code instead of configuration files, usually in *Startup.cs*.
 
 ## Katana
 
-For those readers who have familiarity with Katana, this may look familiar. Katana was a framework that ASP.NET Core derives from that inroduced similar middleware and pipeline patterns for ASP.NET. Middleware designed for Katana can fairly easily be adapted to work with the ASP.NET Core pipeline.
+Readers familiar with Katana will feel comfortable in ASP.NET Core. In fact, Katana is a framework from which ASP.NET Core derives. It introduced similar middleware and pipeline patterns for ASP.NET 4.x. Middleware designed for Katana can be adapted to work with the ASP.NET Core pipeline.
 
-## Common Middleware
+## Common middleware
 
-ASP.NET was shipped with many modules available for a developer. In a similar fashion, ASP.NET Core has many middleware components available as well. IIS modules may be used in some cases with ASP.NET Core, or native ASP.NET Core middleware may be available.
+ASP.NET 4.x includes many modules. In a similar fashion, ASP.NET Core has many middleware components available as well. IIS modules may be used in some cases with ASP.NET Core. In other cases, native ASP.NET Core middleware may be available.
 
-Some of the replacement middleware is shown below:
+The following table lists replacement middleware and components in ASP.NET Core.
 
-| Module | ASP.NET Module | ASP.NET Core Option |
-| --- | :--: | --- |
-| **HTTP Errors** | `CustomErrorModule`                                                            | [Status Code Pages Middleware](xref:fundamentals/error-handling#usestatuscodepages) |
-| **Default Document** | `DefaultDocumentModule`                                                   | [Default Files Middleware](xref:fundamentals/static-files#serve-a-default-document) |
-| **Directory Browsing** | `DirectoryListingModule`                                                | [Directory Browsing Middleware](xref:fundamentals/static-files#enable-directory-browsing) |
-| **Dynamic Compression** | `DynamicCompressionModule`                                            | [Response Compression Middleware](xref:performance/response-compression) |
-| **Failed Requests Tracing** | `FailedRequestsTracingModule`                                     | [ASP.NET Core Logging](xref:fundamentals/logging/index#tracesource-provider) |
-| **File Caching** | `FileCacheModule`                                                             | [Response Caching Middleware](xref:performance/caching/middleware) |
-| **HTTP Caching** | `HttpCacheModule`                                                             | [Response Caching Middleware](xref:performance/caching/middleware) |
-| **HTTP Logging** | `HttpLoggingModule`                                                          | [ASP.NET Core Logging](xref:fundamentals/logging/index) |
-| **HTTP Redirection** | `HttpRedirectionModule`                                                  | [URL Rewriting Middleware](xref:fundamentals/url-rewriting) |
-| **ISAPI Filters** | `IsapiFilterModule`                                                         | [Middleware](xref:fundamentals/middleware/index) |
-| **ISAPI** | `IsapiModule`                                                                       | [Middleware](xref:fundamentals/middleware/index) |
-| **Request Filtering** | `RequestFilteringModule`                                                | [URL Rewriting Middleware `IRule`](xref:fundamentals/url-rewriting#irule-based-rule) |
-| **URL Rewriting**&#8224; | `RewriteModule`                                                      | [URL Rewriting Middleware](xref:fundamentals/url-rewriting) |
-| **Static Compression** | `StaticCompressionModule`                                               | [Response Compression Middleware](xref:performance/response-compression) |
-| **Static Content** | `StaticFileModule`                                                          | [Static File Middleware](xref:fundamentals/static-files) |
-| **URL Authorization** | `UrlAuthorizationModule`                                                | [ASP.NET Core Identity](xref:security/authentication/identity) |
+|Module                 |ASP.NET 4.x module           |ASP.NET Core option|
+|-----------------------|-----------------------------|-------------------|
+|HTTP errors            |`CustomErrorModule`          |[Status Code Pages Middleware](/aspnet/core/fundamentals/error-handling#usestatuscodepages)|
+|Default document       |`DefaultDocumentModule`      |[Default Files Middleware](/aspnet/core/fundamentals/static-files#serve-a-default-document)|
+|Directory browsing     |`DirectoryListingModule`     |[Directory Browsing Middleware](/aspnet/core/fundamentals/static-files#enable-directory-browsing)|
+|Dynamic compression    |`DynamicCompressionModule`   |[Response Compression Middleware](/aspnet/core/performance/response-compression)|
+|Failed requests tracing|`FailedRequestsTracingModule`|[ASP.NET Core Logging](/aspnet/core/fundamentals/logging/index#tracesource-provider)|
+|File caching           |`FileCacheModule`            |[Response Caching Middleware](/aspnet/core/performance/caching/middleware)|
+|HTTP caching           |`HttpCacheModule`            |[Response Caching Middleware](/aspnet/core/performance/caching/middleware)|
+|HTTP logging           |`HttpLoggingModule`          |[ASP.NET Core Logging](/aspnet/core/fundamentals/logging/index)|
+|HTTP redirection       |`HttpRedirectionModule`      |[URL Rewriting Middleware](/aspnet/core/fundamentals/url-rewriting)|
+|ISAPI filters          |`IsapiFilterModule`          |[Middleware](/aspnet/core/fundamentals/middleware/index)|
+|ISAPI                  |`IsapiModule`                |[Middleware](/aspnet/core/fundamentals/middleware/index)|
+|Request filtering      |`RequestFilteringModule`     |[URL Rewriting Middleware IRule](/aspnet/core/fundamentals/url-rewriting#irule-based-rule)|
+|URL rewriting&#8224;   |`RewriteModule`              |[URL Rewriting Middleware](/aspnet/core/fundamentals/url-rewriting)|
+|Static compression     |`StaticCompressionModule`    |[Response Compression Middleware](/aspnet/core/performance/response-compression)|
+|Static content         |`StaticFileModule`           |[Static File Middleware](/aspnet/core/fundamentals/static-files)|
+|URL authorization      |`UrlAuthorizationModule`     |[ASP.NET Core Identity](/aspnet/core/security/authentication/identity)|
 
-This list is not exhaustive but should give an idea of what mapping exists between the two frameworks. For a more detailed list, please see [here](https://docs.microsoft.com/aspnet/core/host-and-deploy/iis/modules).
+This list isn't exhaustive but should give an idea of what mapping exists between the two frameworks. For a more detailed list, see [IIS modules with ASP.NET Core](/aspnet/core/host-and-deploy/iis/modules).
 
 ## Custom middleware
 
-Built in middleware may not handle all of the scenarios you need for an application. In these cases, it makes sense to insert your own middleware. There are multiple ways of defining middleware, with the simplest being a simple delegate. For example, the following middleware takes a culture request from a query string:
+Built-in middleware may not handle all scenarios needed for an app. In such cases, it makes sense to create your own middleware. There are multiple ways of defining middleware, with the simplest being a simple delegate. Consider the following middleware, which accepts a culture request from a query string:
 
 ```csharp
 public class Startup
@@ -62,6 +62,7 @@ public class Startup
         app.Use(async (context, next) =>
         {
             var cultureQuery = context.Request.Query["culture"];
+
             if (!string.IsNullOrWhiteSpace(cultureQuery))
             {
                 var culture = new CultureInfo(cultureQuery);
@@ -75,16 +76,13 @@ public class Startup
         });
 
         app.Run(async (context) =>
-        {
             await context.Response.WriteAsync(
-                $"Hello {CultureInfo.CurrentCulture.DisplayName}");
-        });
-
+                $"Hello {CultureInfo.CurrentCulture.DisplayName}"));
     }
 }
 ```
 
-Middleware can also be defined as class, either by implementing the `IMiddleware` interface or by following middleware convention. For more details on this and other middleware topics, please see [here](https://docs.microsoft.com/aspnet/core/fundamentals/middleware/write).
+Middleware can also be defined as class, either by implementing the `IMiddleware` interface or by following middleware convention. For more information, see [Write custom ASP.NET Core middleware](/aspnet/core/fundamentals/middleware/write).
 
 >[!div class="step-by-step"]
 >[Previous](data.md)

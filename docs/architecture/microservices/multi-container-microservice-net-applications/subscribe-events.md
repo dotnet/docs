@@ -134,7 +134,7 @@ When implementing the steps of publishing the events, you have these choices:
 
 Figure 6-22 shows the architecture for the first of these approaches.
 
-![Diagram of atomicity when publishing without a worker microservice.](./media/subscribe-events/atomicity-even-bus.png)
+![Diagram of atomicity when publishing without a worker microservice.](./media/subscribe-events/atomicity-publish-event-bus.png)
 
 **Figure 6-22**. Atomicity when publishing events to the event bus
 
@@ -142,7 +142,7 @@ One approach to handle atomicity when publishing events: use one transaction to 
 
 About the second approach: you use the EventLog table as a queue and always use a worker microservice to publish the messages. In that case, the process is like that shown in Figure 6-23. This shows an additional microservice, and the table is the single source when publishing events.
 
-![Diagram of atomicity when publishing with a worker microservice.](./media/subscribe-events/atomicity-worker-microservice.png)
+![Diagram of atomicity when publishing with a worker microservice.](./media/subscribe-events/atomicity-publish-worker-microservice.png)
 
 **Figure 6-23**. Atomicity when publishing events to the event bus with a worker microservice
 

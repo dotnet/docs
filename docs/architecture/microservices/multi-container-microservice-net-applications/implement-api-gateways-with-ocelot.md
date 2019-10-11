@@ -275,7 +275,7 @@ But as introduced in the architecture and design sections, if you really want to
 
 In eShopOnContainers we’re using a single Docker container image with the Ocelot API Gateway but then, at run time, we create different services/containers for each type of API-Gateway/BFF by providing a different configuration.json file, using a docker volume to access a different PC folder for each service.
 
-![Diagram of single Ocelot API gateway Docker image for all API gateways.](./media/implement-api-gateways-with-ocelot/reusing-single-ocelot-docker-image.png)
+![Diagram of a single Ocelot gateway Docker image for all API gateways.](./media/implement-api-gateways-with-ocelot/reusing-single-ocelot-docker-image.png)
 
 **Figure 6-33**. Re-using a single Ocelot Docker image across multiple API Gateway types
 

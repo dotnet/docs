@@ -14,7 +14,7 @@ ms.date: 09/27/2019
 
 .NET for Apache Spark empowers developers with .NET experience or code bases to participate in the world of big data analytics. .NET for Apache Spark provides high performance APIs for using Spark from C# and F#. With C# and F#, you can access:
 
-* DataFrame and SparkSQL for working with structured data, which is formatted data
+* DataFrame and SparkSQL for working with structured data
 * Spark Structured Streaming for working with streaming data
 * Spark SQL for writing queries with SQL syntax
 * Machine learning integration for faster training and prediction (i.e. use .NET for Apache Spark alongside [ML.NET](http://dot.net/ml))

@@ -9,7 +9,11 @@ ms.custom: mvc
 
 # What is Apache Spark?
 
-[Apache Spark](https://spark.apache.org/) is an open-source parallel processing framework that supports in-memory processing to boost the performance of applications that analyze big data. A Spark job can repeatedly query data that is loaded and cached into memory, which is much faster than disk-based alternatives. Spark is a general-purpose distributed processing engine that can be used in many big data scenarios, including:
+[Apache Spark](https://spark.apache.org/) is an open-source parallel processing framework that supports in-memory processing to boost the performance of applications that analyze big data. A Spark job can repeatedly query data that is loaded and cached into memory, which is much faster than disk-based alternatives.
+
+## Common Big Data scenarios
+
+Spark is a general-purpose distributed processing engine that can be used in many big data scenarios. This section describes scenarios.
 
 - Extract, transform, and load (ETL) functions
 - Real-time data stream processing through Spark Streaming
@@ -20,7 +24,7 @@ ms.custom: mvc
 - SQL and structured data processing with Spark SQL
 - Data visualization
 
-## Architecture
+## Apache Spark architecture
 
 Apache Spark, which uses the master/worker architecture, has three main components: the driver, executors, and cluster manager.
 

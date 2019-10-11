@@ -4,8 +4,6 @@ ms.date: "06/19/2019"
 helpviewer_keywords: 
   - "gcHeapCount element"
   - "<gcHeapCount> element"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<GCHeapAffinitizeMask> element
 

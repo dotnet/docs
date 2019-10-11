@@ -4,8 +4,6 @@ ms.date: "06/19/2019"
 helpviewer_keywords: 
   - "gcNoAffinitize element"
   - "<gcNoAffinitize> element"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<GCNoAffinitize> element
 

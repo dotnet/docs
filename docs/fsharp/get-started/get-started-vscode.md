@@ -153,9 +153,9 @@ Select both lines of text and press Alt+Enter to execute these lines in FSI. The
 Next, in the FSI window, call the function with the `PigLatin` module that you defined earlier:
 
 ```console
-> PigLatin.toPigLatin "banana";;
+> toPigLatin "banana";;
 val it : string = "ananabay"
-> PigLatin.toPigLatin "apple";;
+> toPigLatin "apple";;
 val it : string = "appleyay"
 ```
 

@@ -180,7 +180,7 @@ Up to this point, the code shown is just performing regular Http requests, but t
 - **Using HttpClientFactory in .NET Core**  
   [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
-- **HttpClientFactory source code in the .NET Extensions GitHub repository**  
+- **HttpClientFactory source code in the `aspnet/Extensions` GitHub repository**  
   <https://github.com/aspnet/Extensions/tree/master/src/HttpClientFactory>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  

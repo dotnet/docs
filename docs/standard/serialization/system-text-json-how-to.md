@@ -30,7 +30,9 @@ Attributes from the <xref:System.Runtime.Serialization> namespace aren't current
 
 ## How to write .NET objects to JSON (serialize)
 
-To write JSON to a string, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method. The following example uses an overload with a generic type parameter:
+To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method.
+
+The following example creates JSON as a string:
 
 ```csharp
 WeatherForecast weatherForecast;
@@ -38,13 +40,36 @@ WeatherForecast weatherForecast;
 string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
 ```
 
-You can omit the generic type parameter and use generic type inference instead:
+The following example uses synchronous code to create a JSON file:
+
+```csharp
+WeatherForecast weatherForecast;
+string outputFileName;
+//...
+File.WriteAllText(outputFileName, JsonSerializer.Serialize(weatherForecast));
+```
+
+The following example uses asynchronous code to create a JSON file:
+
+```csharp
+WeatherForecast weatherForecast;
+string outputFileName;
+//...
+using (FileStream fs = File.Create(outputFileName))
+{
+    await JsonSerializer.SerializeAsync(fs, weatherForecastMin);
+}
+```
+
+You can omit the generic type parameter with `Serialize()` and use generic type inference instead:
 
 ```csharp
 WeatherForecast weatherForecast;
 //...
 string json = JsonSerializer.Serialize(weatherForecast);
 ```
+
+### Serialization example
 
 Here's an example type to be serialized, which contains collections and nested classes:
 
@@ -114,8 +139,6 @@ The following example shows the same JSON, formatted (that is, pretty-printed wi
 }
 ```
 
-Overloads of <xref:System.Text.Json.JsonSerializer.Serialize%2A> let you serialize to a <xref:System.IO.Stream>. Async versions of the `Stream` overloads are available.
-
 ### Serialize to UTF-8
 
 To serialize to UTF-8, call the <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes%2A?displayProperty=nameWithType> method:
@@ -133,7 +156,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * By default, all public properties are serialized. You can [specify properties to exclude](#exclude-properties).
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
-* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names).
+* By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
 * Circular references are detected and exceptions thrown. For more information, see the [issue on circular references](https://github.com/dotnet/corefx/issues/38579) in the dotnet/corefx repository on GitHub.
 * Currently, fields are excluded.
 
@@ -150,17 +173,38 @@ Supported types include:
 
 ## How to read JSON into .NET objects (deserialize)
 
-To deserialize from a string, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method, as shown in the following example:
+To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method.
+
+The following example reads JSON from a string:
 
 ```csharp
-string json = ... ;
-
+string json;
+//...
 var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 ```
 
-For an example, see the [serialize](#how-to-write-net-objects-to-json-serialize) section. The JSON and .NET object are the same, but the direction is reversed.
+To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 
-Overloads of <xref:System.Text.Json.JsonSerializer.Deserialize*> let you deserialize from a `Stream`.  Async versions of the `Stream` overloads are available.
+```csharp
+string inputFileName;
+//...
+string json = File.ReadAllText(inputFileName);
+weatherForecastMin = JsonSerializer.Deserialize<WeatherForecast>(json);
+```
+
+To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
+
+```csharp
+WeatherForecast weatherForecast;
+string inputFileName;
+//...
+using (FileStream fs = File.OpenRead(inputFileName))
+{
+    weatherForecast = await JsonSerializer.DeserializeAsync<WeatherForecast>(fs);
+}
+```
+
+For an example type and corresponding JSON, see the [Serialization example](#serialization-example) section.
 
 ### Deserialize from UTF-8
 
@@ -245,16 +289,15 @@ Here's example JSON with comments and a trailing comma:
 }
 ```
 
-## Customize JSON names
+## Customize JSON names and values
 
-By default, property names and dictionary keys are unchanged in the JSON output, including case. This section explains how to:
+By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. This section explains how to:
 
 * Customize individual property names
 * Convert all property names to camel case
 * Implement a custom property naming policy
 * Convert dictionary keys to camel case
-
-Currently, there's no support for automatically converting enums to camel case. For more information, see the [issue on enum camel case support](https://github.com/dotnet/corefx/issues/37725) in the dotnet/corefx repository on GitHub.
+* Convert enums to strings and camel case 
 
 ### Customize individual property names
 
@@ -412,6 +455,152 @@ Here's an example object to serialize and JSON output:
 
 The camel case naming policy applies to serialization only.
 
+## Enums as strings
+
+By default, enums are serialized as numbers. To serialize enum names as strings, use the <xref:System.Text.Json.Serialization.JsonStringEnumConverter>.
+
+For example, suppose you need to serialize the following class that has an enum:
+
+```csharp
+public enum Summary
+{
+    Cold, Cool, Warm, Hot
+}
+
+class WeatherForecastWithEnum
+{
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureC { get; set; }
+    public Summary Summary { get; set; }
+}
+```
+
+If the Summary is `Hot`, by default the serialized JSON has the numeric value 3:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureC": 25,
+  "Summary": 3
+}
+```
+
+The following sample code serializes the enum names instead, and converts them to camel case:
+
+```csharp
+options = new JsonSerializerOptions();
+options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
+jsonWithEnumsAsStrings = JsonSerializer.Serialize(weatherForecastWithEnum, options);
+```
+
+The resulting JSON looks like the following example:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureC": 25,
+  "Summary": "hot"
+}
+```
+
+The support for enums as strings applies to deserialization also, as shown in the following example:
+
+```csharp
+options = new JsonSerializerOptions();
+options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
+weatherForecastWithEnum = JsonSerializer.Deserialize<WeatherForecastWithEnum>(jsonWithEnumsAsStrings, options);
+```
+
+## Custom converters
+
+Serialization converts in-memory object representations to text in a JSON file or string, and deserialization does the opposite conversion. These tasks are done by *converters*. If the `System.Text.Json` namespace doesn't have a built-in converter for a type that you use, or your JSON uses a format different from what the built-in converter provides, you can create a custom converter:
+
+* Create a class that derives from JsonConverter<T>.
+* Override the `Read` and `Write` methods.
+* Add an instance of the class to the <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> collection, or apply the [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute) attribute to a property. If the converter is for a custom data type, the data type itself can have a `[JsonConverter]` attribute.
+
+Here's an example converter for the `DateTimeOffset` type. The code converts to and from mm/dd/yyyy format.
+
+```csharp
+private class ExampleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
+{
+    public override DateTimeOffset Read(
+        ref Utf8JsonReader reader, 
+        Type typeToConvert, 
+        JsonSerializerOptions options)
+    {
+        Debug.Assert(typeToConvert == typeof(DateTimeOffset));
+        return DateTimeOffset.ParseExact(reader.GetString(), 
+            "MM/dd/yyyy", CultureInfo.InvariantCulture);
+    }
+
+    public override void Write(
+        Utf8JsonWriter writer, 
+        DateTimeOffset value, 
+        JsonSerializerOptions options)
+    {
+        writer.WriteStringValue(value.ToString("MM/dd/yyyy"));
+    }
+}
+```
+
+### Use the Converters collection
+
+Here's an example of code that uses the `JsonSerializer.Converters` collection:
+
+```csharp
+WeatherForecast weatherForecast;
+//...
+JsonSerializerOptions options = new JsonSerializerOptions();
+options.Converters.Add(new ExampleDateTimeOffsetConverter());
+string json = JsonSerializer.Serialize(weatherForecast, options);
+```
+
+With this code, the following example type serializes to the following example JSON:
+
+```csharp
+class WeatherForecast
+{
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureC { get; set; }
+    public string Summary { get; set; }
+}
+```
+
+```json
+{
+  "Date": "08/01/2019",
+  "TemperatureC": 25,
+  "Summary": "Hot"
+}
+```
+
+### Use the [JsonConverter] attribute
+
+Here's an example of a type that uses the `[JsonConverter]` attribute:
+
+```csharp
+class WeatherForecastWithConverter
+{
+    [JsonConverter(typeof(ExampleDateTimeOffsetConverter))]
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureC { get; set; }
+    public string Summary { get; set; }
+}
+```
+
+The code to serialize and deserialize this type doesn't require `JsonSerializerOptions`, as shown in the following example:
+
+```csharp
+WeatherForecastWithConverter weatherForecast;
+//...
+string json = JsonSerializer.Serialize(weatherForecast);
+```
+
+```csharp
+weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithConverter>(json);
+```
+
 ## Exclude properties
 
 By default, all public properties are serialized. If you don't want some of them to appear in the JSON output, you have several options. This section explains how to exclude:
@@ -539,7 +728,7 @@ class WeatherForecast
 }
 ```
 
-## Include properties of derived classes
+## Serialize properties of derived classes
 
 Polymorphic serialization isn't supported when you specify at compile time the type to be serialized. For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
 
@@ -556,16 +745,10 @@ class WeatherForecastWithWind : WeatherForecast
 }
 ```
 
-And suppose the type passed to, or inferred by, the `Serialize` method at compile time is `WeatherForecast`:
+And suppose the type passed to the `Serialize` method at compile time is `WeatherForecast`:
 
 ```csharp
 string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
-```
-
-```csharp
-WeatherForecast weatherForecast;
-//...
-json = JsonSerializer.Serialize(weatherForecast);
 ```
 
 In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is actually a `WeatherForecastWithWind` object. Only the base class properties are serialized:
@@ -683,9 +866,62 @@ When the target object is serialized, the extension data key value pairs become 
 
 Notice that the `ExtensionData` property name doesn't appear in the JSON. This behavior lets the JSON make a round trip without losing any extra data that otherwise wouldn't be deserialized.
 
-## Use Utf8JsonWriter directly
+## Ignore null when deserializing
 
-The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter> class directly.
+By default, if a property in JSON is null, the corresponding property in the target object is set to null. In some scenarios, the target property might have a default value, and you don't want a null value to override the default.
+
+For example, suppose the following code represents your target object:
+
+```csharp
+class WeatherForecastWithDefault
+{
+    public WeatherForecastWithDefault()
+    {
+        Summary = "No summary";
+    }
+    public DateTimeOffset Date { get; set; }
+    public int TemperatureC { get; set; }
+    public string Summary { get; set; }
+}
+```
+
+And suppose the following JSON is deserialized:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureC": 25,
+  "Summary": null,
+}
+```
+
+After deserialization, the `Summary` property of the `WeatherForecastWithDefault` object is null.
+
+To change this behavior, set `IgnoreNullValues` to `true`, as shown in the following example:
+
+```csharp
+var options = new JsonSerializerOptions
+{
+    IgnoreNullValues = true
+};
+weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithDefault>(json, options);
+```
+
+With this option, the `Summary` property of the `WeatherForecastWithDefault` object is the default value "No summary" after deserialization.
+
+## Utf8JsonReader, Utf8JsonWriter, and JsonDocument
+
+<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers. The <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method uses `Utf8JsonReader` under the covers.
+
+<xref:System.Text.Json.Utf8JsonWriter?displayProperty=fullName> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers. The <xref:System.Text.Json.JsonSerializer.Serialize%2A?displayProperty=nameWithType> method uses `Utf8JsonWriter` under the covers.
+
+<xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to build a read-only Document Object Model (DOM) by using `Utf8JsonReader`. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` provides array and object enumerators along with APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
+
+The following sections show how to use these low-level tools for reading and writing JSON.
+
+## Use Utf8JsonWriter
+
+The following example shows how to write Json by using the <xref:System.Text.Json.Utf8JsonWriter> class.
 
 ```csharp
 var options = new JsonWriterOptions
@@ -708,9 +944,9 @@ using (var stream = new MemoryStream())
 }
 ```
 
-## Use Utf8JsonReader directly
+## Use Utf8JsonReader
 
-The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class directly. The code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
+The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class. The code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
 ```csharp
 var options = new JsonReaderOptions
@@ -748,6 +984,169 @@ while (reader.Read())
 
     Console.WriteLine();
 }
+```
+
+## Random access to data using JsonDocument
+
+The following example shows how to use the <xref:System.Text.Json.JsonDocument> class to calculate an average grade in JSON data that is composed of Student objects that have a `Grade` property. The code assigns a default grade of 70 for students who don't have a grade. Here's an example of the JSON:
+
+```json
+{
+  "Class Name": "Science",
+  "Teacher's Name": "Jane",
+  "Semester": "2019-01-01",
+  "Students": [
+    {
+      "Name": "John",
+      "Grade": 94.3
+    },
+    {
+      "Name": "James",
+      "Grade": 81.0
+    },
+    {
+      "Name": "Julia",
+      "Grade": 91.9
+    },
+    {
+      "Name": "Jessica",
+      "Grade": 72.4
+    },
+    {
+      "Name": "Johnathan"
+    }
+  ],
+  "Final": true
+}
+```
+
+Here's code that calculates the average grade. It assumes the JSON to analyze is in a string named `jsonString`.
+
+```csharp
+double sum = 0;
+int count = 0;
+
+using (JsonDocument document = JsonDocument.Parse(jsonString))
+{
+    JsonElement root = document.RootElement;
+    JsonElement studentsElement = root.GetProperty("Students");
+    foreach (JsonElement student in studentsElement.EnumerateArray())
+    {
+        if (student.TryGetProperty("Grade", out JsonElement gradeElement))
+        {
+            sum += gradeElement.GetDouble();
+        }
+        else
+        {
+            sum += 70;
+        }
+        count++;
+    }
+}
+
+double average = sum / count;
+Console.WriteLine($"Average grade: {average}");
+```
+
+An alternative to incrementing the count variable with each iteration is to call GetArrayLength:
+
+```csharp
+//...
+JsonElement studentsElement = root.GetProperty("Students");
+count = studentsElement.GetArrayLength();
+//...
+```
+
+## Read JSON file into JsonDocument
+
+The following example shows how to read a file synchronously into a <xref:System.Text.Json.JsonDocument>. A file encoded as UTF-8 can be read directly into a `Span<byte>`. A file encoded as UTF-16 must be transcoded into UTF-8. The code uses the `JsonDocument` to count `name` property values that end with "University".
+
+
+```csharp
+// Read as UTF-16 and transcode to UTF-8 to convert to a Span<byte>
+string jsonString = File.ReadAllText(fileName);
+ReadOnlySpan<byte> jsonReadOnlySpan = Encoding.UTF8.GetBytes(jsonString);
+
+// Or ReadAllBytes if the file encoding is UTF-8:
+//ReadOnlySpan<byte> jsonReadOnlySpan = File.ReadAllBytes(fileName); 
+
+int count = 0;
+int total = 0;
+
+var json = new Utf8JsonReader(jsonReadOnlySpan, isFinalBlock: true, state: default);
+
+while (json.Read())
+{
+    JsonTokenType tokenType = json.TokenType;
+
+    switch (tokenType)
+    {
+        case JsonTokenType.StartObject:
+            total++;
+            break;
+        case JsonTokenType.PropertyName:
+            if (json.ValueSpan.SequenceEqual(s_nameUtf8))
+            {
+                bool result = json.Read();
+
+                Debug.Assert(result);  // Assume valid JSON
+                Debug.Assert(json.TokenType == JsonTokenType.String); // Assume known, valid JSON schema
+
+                if (json.ValueSpan.EndsWith(s_universityOfUtf8))
+                {
+                    count++;
+                }
+            }
+            break;
+    }
+}
+Console.WriteLine($"{count} out of {total} have names that end with 'University'");
+```
+
+The code uses two class variables:
+
+```csharp
+private static readonly byte[] s_nameUtf8 = Encoding.UTF8.GetBytes("name");
+private static readonly byte[] s_universityOfUtf8 = Encoding.UTF8.GetBytes("University");
+```
+
+Here's a sample of the JSON:
+
+```json
+[
+  {
+    "web_pages": [ "https://contoso.edu/" ],
+    "alpha_two_code": "US",
+    "state-province": null,
+    "country": "United States",
+    "domains": [ "contoso.edu" ],
+    "name": "Contoso Community College"
+  },
+  {
+    "web_pages": [ "http://fabrikam.edu/" ],
+    "alpha_two_code": "US",
+    "state-province": null,
+    "country": "United States",
+    "domains": [ "fabrikam.edu" ],
+    "name": "Fabrikam Community College"
+  },
+  {
+    "web_pages": [ "http://www.contosouniversity.edu/" ],
+    "alpha_two_code": "US",
+    "state-province": null,
+    "country": "United States",
+    "domains": [ "contosouniversity.edu" ],
+    "name": "Contoso University"
+  },
+  {
+    "web_pages": [ "http://www.fabrikamuniversity.edu/" ],
+    "alpha_two_code": "US",
+    "state-province": null,
+    "country": "United States",
+    "domains": [ "fabrikamuniversity.edu" ],
+    "name": "Fabrikam University"
+  }
+]
 ```
 
 ## Additional resources

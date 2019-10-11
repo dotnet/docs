@@ -36,7 +36,7 @@ The [async](../../../language-reference/keywords/async.md) and [await](../../../
 
 The following example shows an async method. Almost everything in the code should look completely familiar to you.
 
-You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://code.msdn.microsoft.com/Async-Sample-Example-from-9b9f505c).
+You can find a complete Windows Presentation Foundation (WPF) example file at the end of this topic, and you can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-vb/).
 
 ```csharp
 async Task<int> AccessTheWebAsync()
@@ -251,7 +251,7 @@ You can ignore the convention where an event, base class, or interface contract 
 
 ## <a name="BKMK_CompleteExample"></a> Complete example
 
-The following code is the MainWindow.xaml.cs file from the Windows Presentation Foundation (WPF) application that this topic discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://code.msdn.microsoft.com/Async-Sample-Example-from-9b9f505c).
+The following code is the MainWindow.xaml.cs file from the Windows Presentation Foundation (WPF) application that this topic discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-vb/).
 
 ```csharp
 using System;

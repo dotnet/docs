@@ -14,9 +14,11 @@ For Linux, multiple distros are available and supported in official .NET Docker 
 
 In Figure 3-1 you can see the possible OS version depending on the .NET framework used.
 
-![When deploying legacy .NET Framework applications you have to target Windows Server Core, compatible with legacy apps and IIS, has a larger image. When deploying .NET Core applications, you can target Windows Nano Server, which is cloud optimized, uses Kestrel and is smaller and starts faster. You can also target Linux, supporting Debian, Alpine and others. Also uses Kestrel and is smaller and starts faster.](./media/image1.png)
+![Diagram showing what OS to use with which .NET containers.](./media/net-container-os-targets/targeting-operating-systems.png)
 
 **Figure 3-1.** Operating systems to target depending on versions of the .NET framework
+
+When deploying legacy .NET Framework applications you have to target Windows Server Core, compatible with legacy apps and IIS, has a larger image. When deploying .NET Core applications, you can target Windows Nano Server, which is cloud optimized, uses Kestrel and is smaller and starts faster. You can also target Linux, supporting Debian, Alpine and others. Also uses Kestrel and is smaller and starts faster.
 
 You can also create your own Docker image in cases where you want to use a different Linux distro or where you want an image with versions not provided by Microsoft. For example, you might create an image with ASP.NET Core running on the traditional .NET Framework and Windows Server Core, which is a not-so-common scenario for Docker.
 

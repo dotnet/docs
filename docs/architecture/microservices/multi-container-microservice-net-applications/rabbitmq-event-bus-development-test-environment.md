@@ -11,11 +11,11 @@ One of the event bus custom implementation in eShopOnContainers is basically a l
 
 The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 6-21.
 
-![RabbitMQ functions as an intermediary between message publisher and subscribers, to handle distribution.](./media/image22.png)
+![Diagram showing RabbitMQ between message sender and message receiver.](./media/rabbitmq-event-bus-development-test-environment/rabbitmq-implementation.png)
 
 **Figure 6-21.** RabbitMQ implementation of an event bus
 
-In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This is based on Dependency Injection so that you can swap from this dev/test version to a production version.
+RabbitMQ functions as an intermediary between message publisher and subscribers, to handle distribution. In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This is based on Dependency Injection so that you can swap from this dev/test version to a production version.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable

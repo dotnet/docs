@@ -15,15 +15,17 @@ It's often necessary for resources and APIs published by a service to be limited
 
 In microservice scenarios, authentication is typically handled centrally. If you're using an API Gateway, the gateway is a good place to authenticate, as shown in Figure 9-1. If you use this approach, make sure that the individual microservices cannot be reached directly (without the API Gateway) unless additional security is in place to authenticate messages whether they come from the gateway or not.
 
-![When the API Gateway centralizes authentication, it adds user information when forwarding requests to the microservices.](./media/image1.png)
+![Diagram showing how the client mobile app interacts with the backend.](./media/index/api-gateway-centralized-authentication.png)
 
 **Figure 9-1**. Centralized authentication with an API Gateway
 
-If services can be accessed directly, an authentication service like Azure Active Directory or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. (These tokens can be shared between ASP.NET Core applications, if needed, by implementing [cookie sharing](/aspnet/core/security/cookie-sharing).) This pattern is illustrated in Figure 9-2.
+When the API Gateway centralizes authentication, it adds user information when forwarding requests to the microservices. If services can be accessed directly, an authentication service like Azure Active Directory or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. (These tokens can be shared between ASP.NET Core applications, if needed, by implementing [cookie sharing](/aspnet/core/security/cookie-sharing).) This pattern is illustrated in Figure 9-2.
 
-![When microservices are accessed directly, trust, that includes authentication and authorization, is handled by a security token issued by a dedicated microservice, shared between microservices.](./media/image2.png)
+![Diagram showing authentication through backend microservices.](./media/index/identity-microservice-authentication.png)
 
 **Figure 9-2**. Authentication by identity microservice; trust is shared using an authorization token
+
+When microservices are accessed directly, trust, that includes authentication and authorization, is handled by a security token issued by a dedicated microservice, shared between microservices.
 
 ### Authenticate with ASP.NET Core Identity
 
@@ -115,7 +117,7 @@ else
 
 If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, all the code necessary to sign in with an external provider is already in the project, as shown in Figure 9-3.
 
-![Dialog for the New ASP.NET Core Web Application, highlighting the button to change authentication.](./media/image3.png)
+![Screenshot of the New ASP.NET Core Web Application dialog.](./media/index/select-external-authentication-option.png)
 
 **Figure 9-3**. Selecting an option for using external authentication when creating a web application project
 

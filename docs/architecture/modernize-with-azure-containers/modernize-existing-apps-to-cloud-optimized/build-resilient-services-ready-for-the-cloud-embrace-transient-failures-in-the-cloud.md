@@ -21,7 +21,7 @@ A similar scenario might occur in an app that consumes HTTP services. The networ
 
 A resilient application like the one shown in Figure 4-9 should implement techniques like "retries with exponential backoff" to give the application an opportunity to handle transient failures in resources. You also should use "circuit breakers" in your applications. A circuit breaker stops an application from trying to access a resource when it's actually a long-term failure. By using a circuit breaker, the application avoids provoking a denial of service to itself.
 
-![Partial failures handled by retries with exponential backoff](./media/image9.png)
+![Diagram of partial failures handled by exponential backoff retries.](./media/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud/retry-partial-failures.png)
 
 **Figure 4-9.** Partial failures handled by retries with exponential backoff
 

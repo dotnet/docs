@@ -23,7 +23,8 @@ Defines the affinity between GC heaps and individual processors.
 ```  
   
 ## Attributes and elements  
- The following sections describe attributes, child elements, and parent elements.  
+
+The following sections describe attributes, child elements, and parent elements.
   
 ### Attributes  
   
@@ -58,7 +59,7 @@ By default, server GC threads are hard-affinitized with their respective CPU so 
 
 - [\<GCHeapCount>](gcheapaffinitizemask-element.md), which limits the number of heaps used by the process for server GC. By default, there is one heap for each processor. 
 
-***nnnn** is a bit mask expressed as a decimal value. Bit 0 of byte 0 represents processor 0, bit 1 of byte 0 represents processor 1, and so on. For example:
+**nnnn** is a bit mask expressed as a decimal value. Bit 0 of byte 0 represents processor 0, bit 1 of byte 0 represents processor 1, and so on. For example:
 
 ```xml
 <GCHeapAffinitizeMask enabled=”1023″/> 
@@ -86,5 +87,5 @@ The following example indicates that an application uses server GC with 10 heaps
 - [\<GCNoAffinitize> element](gcnoaffinitize-element.md) element
 - [\<GCHeapCount> element](gcheapcount-element.md)
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

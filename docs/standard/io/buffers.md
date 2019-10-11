@@ -23,7 +23,7 @@ Can I remove the `// Return the position.` comment?
 
 ## IBufferWriter\<T\>
 
-<xref:System.Buffers.IBufferWriter`1?displayProperty=fullName> is a contract for synchronous buffered writing. At the lowest level the interface:
+<xref:System.Buffers.IBufferWriter`1?displayProperty=fullName> is a contract for synchronous buffered writing. At the lowest level, the interface:
 
 * Is basic and not difficult to use.
 * Allows access to a <xref:System.Memory%601> or <xref:System.Span%601>. The `Memory<T>` or `Span<T>` can be written too and you can determine how many `T` items were written.
@@ -50,15 +50,15 @@ This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IB
 
 ## ReadOnlySequence\<T\>
 
-![ReadOnlySequence showing memory in pipe and below that sequence position of read only memory](media/buffers/ro-sequence.png)
+![ReadOnlySequence showing memory in pipe and below that sequence position of read-only memory](media/buffers/ro-sequence.png)
 
-<xref:System.Buffers.ReadOnlySequence%601> is a struct that can represent a contiguous or noncontiguous sequence of T. It can be constructed from:
+<xref:System.Buffers.ReadOnlySequence%601> is a struct that can represent a contiguous or noncontiguous sequence of `T`. It can be constructed from:
 
 1. A `T[]`
 1. A `ReadOnlyMemory<T>`
 1. A pair of linked list node <xref:System.Buffers.ReadOnlySequenceSegment`1> and index to represent the start and end position of the sequence.
 
-The 3rd representation is the most interesting one as it has performance implications on various operations on the `ReadOnlySequence<T>`:
+The third representation is the most interesting one as it has performance implications on various operations on the `ReadOnlySequence<T>`:
 
 |Representation|Operation|Complexity|
 ---|---|---
@@ -74,11 +74,11 @@ The 3rd representation is the most interesting one as it has performance implica
 Because of this mixed representation, the `ReadOnlySequence<T>` exposes indexes as `SequencePosition` instead of an integer. A `SequencePosition`:
 
 * Is an opaque value that represents an index into the `ReadOnlySequence<T>` where it originated.
-* Consists of two parts, an integer and an object. What these 2 values represent are tied to the implementation of `ReadOnlySequence<T>`.
+* Consists of two parts, an integer and an object. What these two values represent are tied to the implementation of `ReadOnlySequence<T>`.
 
 ### Access data
 
-The `ReadOnlySequence<T>` exposes data as an enumerable of `ReadOnlyMemory<T>`. Enumerating each of the segments can be done using a simple foreach:
+The `ReadOnlySequence<T>` exposes data as an enumerable of `ReadOnlyMemory<T>`. Enumerating each of the segments can be done using a basic foreach:
 
 [!code-csharp[](temp/MyClass.cs?name=snippet3)]
 
@@ -86,7 +86,7 @@ The preceding method searches each segment for a specific byte. If you need to k
 
 [!code-csharp[](temp/MyClass.cs?name=snippet4)]
 
-The combination of `SequencePosition` and `TryGet` act like an enumerator. The position field is modified at the start of each iteration to be start of each segment within the `ReadOnlySequence<T>`.
+The combination of `SequencePosition` and `TryGet` acts like an enumerator. The position field is modified at the start of each iteration to be start of each segment within the `ReadOnlySequence<T>`.
 
 The preceding method exists as an extension method on `ReadOnlySequence<T>`. [PositionOf](/dotnet/api/system.buffers.buffersextensions.positionof?view=netstandard-2.1) can be used to simplify the preceding code:
 
@@ -106,15 +106,15 @@ There are a few approaches that can be used to process data in multi-segmented s
 - Use the [`SequenceReader<T>`](#sequencereadert)
 - Parse data segment by segment, keeping track of the `SequencePosition` and index within the segment parsed. This avoids unnecessary allocations but may be inefficient, especially for small buffers.
 - Copy the `ReadOnlySequence<T>` to a contiguous array and treat it like a single buffer:
-  - If the `ReadOnlySequence<T>` has a length less then 256, it may be reasonable to copy the data into a stack-allocated buffer using the [stackalloc](/dotnet/csharp/language-reference/operators/stackalloc) operator.
-  - Copy the `ReadOnlySequence<T>` into a pooled array using <xref:System.Buffers.ArrayPool`1.Shared*>.
+  - If the `ReadOnlySequence<T>` has a length less than 256, it may be reasonable to copy the data into a stack-allocated buffer using the [stackalloc](/dotnet/csharp/language-reference/operators/stackalloc) operator.
+  - Copy the `ReadOnlySequence<T>` into a pooled array using [`ArrayPool<T>.Shared`](xref:System.Buffers.ArrayPool`1.Shared*).
   - Use [`ReadOnlySequence<T>.ToArray()`](xref:System.Buffers.BuffersExtensions.ToArray*). This is not recommended in hot paths as it allocates a new `T[]` on the heap.
 
 The following examples demonstrate some common cases for processing `ReadOnlySequence<byte>`:
 
 ##### Process binary data
 
-This example parses a 4 byte [big-endian](/style-guide/a-z-word-list-term-collections/b/big-endian-little-endian) integer length from the start of the `ReadOnlySequence<byte>`.
+This example parses a 4-byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
 
 [!code-csharp[](temp/MyClass.cs?name=snippet5)]
 
@@ -133,20 +133,25 @@ It's valid to store empty segments inside of a `ReadOnlySequence<T>` and it may 
 
 [!code-csharp[](temp/MyClass.cs?name=snippet7)]
 
-The preceding logic creates a `ReadOnlySequence<byte>` with empty segments and shows how those empty segments affect the various APIs:
-- `ReadOnlySequence<T>.Slice` with a `SequencePosition` pointing to an empty segment preservs that segment.
+The preceding code creates a `ReadOnlySequence<byte>` with empty segments and shows how those empty segments affect the various APIs:
+- `ReadOnlySequence<T>.Slice` with a `SequencePosition` pointing to an empty segment preserves that segment.
 - `ReadOnlySequence<T>.Slice` with an int skips over the empty segments.
 - Enumerating the `ReadOnlySequence<T>` enumerates the empty segments.
 
-### Gotchas
+### Potential problems with ReadOnlySequence\<T> and SequencePosition
 
 There are several quirks when dealing with a `ReadOnlySequence<T>`/`SequencePosition` vs. a normal `ReadOnlySpan<T>`/`ReadOnlyMemory<T>`/`T[]`/`int`:
 - `SequencePosition` is a position marker for a specific `ReadOnlySequence<T>`, not an absolute position. As it is relative to a specific `ReadOnlySequence<T>`, it doesn't have meaning if used outside of the `ReadOnlySequence<T>` where it originated.
-- Arithmetic cannot be performed on `SequencePosition` without the `ReadOnlySequence<T>`. This means doing simple things like `position++` looks like `ReadOnlySequence<T>.GetPosition(position, 1)`.
-- `GetPosition(long)` does **not** support negative indexes. This means it's impossible to get the second to last character without walking all segments.
-- `SequencePosition`(s) cannot be compared. This makes it hard to know if one position is greater than or less than another position and makes it hard to write some parsing algorithms.
-- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by `in` or `ref` where possible. This reduces copies of the struct.
-- Empty segments are valid within a `ReadOnlySequence<T>` and can appear when iterating using `ReadOnlySequence<T>.TryGet` or slicing the sequence using `ReadOnlySequence<T>.Slice()` with `SequencePosition`(s).
+- Arithmetic cannot be performed on `SequencePosition` without the `ReadOnlySequence<T>`. That means doing basic things like `position++` is written `ReadOnlySequence<T>.GetPosition(position, 1)`.
+- `GetPosition(long)` does **not** support negative indexes. That means it's impossible to get the second to last character without walking all segments.
+- Two `SequencePosition` cannot be compared, making it difficult to:
+   - Know if one position is greater than or less than another position.
+   - Write some parsing algorithms.
+- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by `in` or `ref` where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](/dotnet/csharp/language-reference/keywords/struct).
+- Empty segments:
+  - Are valid within a `ReadOnlySequence<T>`
+  - Can appear when iterating using `ReadOnlySequence<T>.TryGet` 
+  - Can appear slicing the sequence using `ReadOnlySequence<T>.Slice()` with `SequencePosition`(s).
 
 ## SequenceReader\<T\>
 
@@ -160,7 +165,7 @@ There are built-in methods for dealing with processing both binary and delimited
 
 #### Access data
 
-`SequenceReader<T>` has methods for enumerating data inside of the `ReadOnlySequence<T>` directly. Below is an example of processing a `ReadOnlySequence<byte>` a `byte` at a time:
+`SequenceReader<T>` has methods for enumerating data inside of the `ReadOnlySequence<T>` directly. The following code is an example of processing a `ReadOnlySequence<byte>` a `byte` at a time:
 
 [!code-csharp[](temp/MyClass.cs?name=snippet8)]
 
@@ -174,7 +179,7 @@ The following code is an example implementation of `FindIndexOf` using the `Sequ
 
 #### Process binary data
 
-The following example parses a 4 byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
+The following example parses a 4-byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
 
 [!code-csharp[](temp/MyClass.cs?name=snippet11)]
 

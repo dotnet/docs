@@ -12,9 +12,6 @@ ms.author: riande
 ---
 # Work with Buffers in .NET
 
-Fix links like https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc
-then remove
-
 Review questions.
 
 Can I remove the `// Return the position.` comment?
@@ -109,7 +106,7 @@ There are a few approaches that can be used to process data in multi-segmented s
 - Use the [`SequenceReader<T>`](#sequencereadert)
 - Parse data segment by segment, keeping track of the `SequencePosition` and index within the segment parsed. This avoids unnecessary allocations but may be inefficient, especially for small buffers.
 - Copy the `ReadOnlySequence<T>` to a contiguous array and treat it like a single buffer:
-  - If the `ReadOnlySequence<T>` has a length less then 256, it may be reasonable to copy the data into a stack-allocated buffer using the [stackalloc](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc) operator.
+  - If the `ReadOnlySequence<T>` has a length less then 256, it may be reasonable to copy the data into a stack-allocated buffer using the [stackalloc](/dotnet/csharp/language-reference/operators/stackalloc) operator.
   - Copy the `ReadOnlySequence<T>` into a pooled array using <xref:System.Buffers.ArrayPool`1.Shared*>.
   - Use [`ReadOnlySequence<T>.ToArray()`](xref:System.Buffers.BuffersExtensions.ToArray*). This is not recommended in hot paths as it allocates a new `T[]` on the heap.
 
@@ -117,7 +114,7 @@ The following examples demonstrate some common cases for processing `ReadOnlySeq
 
 ##### Process binary data
 
-This example parses a 4 byte [big-endian](https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/b/big-endian-little-endian) integer length from the start of the `ReadOnlySequence<byte>`.
+This example parses a 4 byte [big-endian](/style-guide/a-z-word-list-term-collections/b/big-endian-little-endian) integer length from the start of the `ReadOnlySequence<byte>`.
 
 [!code-csharp[](temp/MyClass.cs?name=snippet5)]
 
@@ -185,7 +182,9 @@ The following example parses a 4 byte big-endian integer length from the start o
 
 [!code-csharp[](temp/MyClass.cs?name=snippet10)]
 
-### Gotchas
-- `SequenceReader<T>` is a mutable struct; it should always be passed by reference (ref keyword).
-- `SequenceReader<T>` is a ref-struct so it can only be used in synchronous methods and cannot be stored in fields.
+### SequenceReader\<T\> problem areas
+
+- `SequenceReader<T>` is a mutable struct, it should always be passed by [reference] (/dotnet/csharp/language-reference/keywords/ref).
+- `SequenceReader<T>` is a [ref struct](/dotnet/csharp/language-reference/keywords/ref#ref-struct-types) so it can only be used in synchronous methods and cannot be stored in fields. For more information, see [Write safe and efficient C# code
+](/dotnet/csharp/write-safe-efficient-code)
 - `SequenceReader<T>` is a forward-only reader, and `Advance` does not support negative numbers.

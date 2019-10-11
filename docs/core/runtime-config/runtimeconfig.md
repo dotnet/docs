@@ -14,7 +14,7 @@ You can use the **configProperties** section of the *runtimeconfig.json* file to
 
 ## File format
 
-The  *runtimeconfig.json* file has the following format:
+The *runtimeconfig.json* file has the following format:
 
 ```json
 {
@@ -29,7 +29,7 @@ The  *runtimeconfig.json* file has the following format:
 
 ## Individual configuration settings
 
-The  *runtimeconfig.json* file supports the following configuration settings:
+The *runtimeconfig.json* file supports the following configuration settings:
 
 |Name|Value|Description|
 |--|--|--|

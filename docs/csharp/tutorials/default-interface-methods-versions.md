@@ -1,10 +1,10 @@
 ---
-title: Safely update interfaces using default interface members in C#
+title: Safely update interfaces using default interface methods in C#
 description: This advanced tutorial explores how you can safely add new capabilities to existing interface definitions without breaking all classes and structs that implement that interface.
 ms.date: 05/06/2019
 ms.custom: mvc
 ---
-# Tutorial: Update interfaces with default interface members in C# 8.0
+# Tutorial: Update interfaces with default interface methods in C# 8.0
 
 Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. The most common scenario is to safely add members to an interface already released and used by innumerable clients.
 
@@ -38,11 +38,11 @@ The most natural way to add this functionality is to enhance the `ICustomer` int
 
 Default interface implementations enable developers to upgrade an interface while still enabling any implementors to override that implementation. Users of the library can accept the default implementation as a non-breaking change. If their business rules are different, they can override.
 
-## Upgrade with default interface members
+## Upgrade with default interface methods
 
 The team agreed on the most likely default implementation: a loyalty discount for customers.
 
-The upgrade should provide the functionality to set two properties: the number of orders needed to be eligible for the discount, and the percentage of the discount. This makes it a perfect scenario for default interface members. You can add a method to the `ICustomer` interface, and provide the most likely implementation. All existing, and any new implementations can use the default implementation, or provide their own.
+The upgrade should provide the functionality to set two properties: the number of orders needed to be eligible for the discount, and the percentage of the discount. This makes it a perfect scenario for default interface methods. You can add a method to the `ICustomer` interface, and provide the most likely implementation. All existing, and any new implementations can use the default implementation, or provide their own.
 
 First, add the new method to the implementation:
 

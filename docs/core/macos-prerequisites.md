@@ -4,7 +4,7 @@ description: Supported macOS versions and .NET Core dependencies to develop, dep
 author: thraka
 ms.author: adegeo
 ms.custom: "updateeachvsrelease"
-ms.date: 09/27/2019
+ms.date: 10/11/2019
 ---
 # Prerequisites for .NET Core on macOS
 

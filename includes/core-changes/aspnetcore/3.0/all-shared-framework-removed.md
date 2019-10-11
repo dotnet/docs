@@ -28,4 +28,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-Any API that was only present in the `Microsoft.AspNetCore.All` framework.
+None
+
+<!-- 
+
+#### Affected APIs
+
+Not detectable via API analysis
+
+-->

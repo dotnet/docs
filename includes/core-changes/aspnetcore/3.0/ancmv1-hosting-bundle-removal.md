@@ -4,7 +4,7 @@ Starting with ASP.NET Core 3.0, the Windows Hosting Bundle won't contain AspNetC
 
 ANCM V2 is backwards compatible with ANCM OutOfProcess and is recommended for use with ASP.NET Core 3.0 apps.
 
-For discussion, see https://github.com/aspnet/AspNetCore/issues/7095.
+For discussion, see [aspnet/AspNetCore#7095](https://github.com/aspnet/AspNetCore/issues/7095).
 
 #### Version introduced
 

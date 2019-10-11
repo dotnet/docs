@@ -41,6 +41,7 @@ ASP.NET Core
 <xref:Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1.ExchangeCodeAsync(System.String,System.String)?displayProperty=nameWithType>
 
 <!--
+
 #### Affected APIs
 
 `M:Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler`1.ExchangeCodeAsync(System.String,System.String)`

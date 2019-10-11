@@ -1,6 +1,10 @@
 ### Assemblies removed from Microsoft.AspNetCore.App
 
-Starting in ASP.NET Core 3.0, the ASP.NET Core shared framework (`Microsoft.AspNetCore.App`) only contains first-party assemblies that are fully developed, supported, and serviceable by Microsoft. Think of the change as the redefining of boundaries for the ASP.NET Core "platform." The shared framework will be [source-buildable by anybody via GitHub](https://github.com/dotnet/source-build) and will continue to offer the existing benefits of .NET Core shared frameworks to your apps. Some benefits include smaller deployment size, centralized patching, and faster startup time.
+Starting in ASP.NET Core 3.0, the ASP.NET Core shared framework (`Microsoft.AspNetCore.App`) only contains first-party assemblies that are fully developed, supported, and serviceable by Microsoft. 
+
+#### Change description
+
+Think of the change as the redefining of boundaries for the ASP.NET Core "platform." The shared framework will be [source-buildable by anybody via GitHub](https://github.com/dotnet/source-build) and will continue to offer the existing benefits of .NET Core shared frameworks to your apps. Some benefits include smaller deployment size, centralized patching, and faster startup time.
 
 As part of the change, some notable breaking changes are introduced in `Microsoft.AspNetCore.App`.
 
@@ -67,6 +71,14 @@ ASP.NET Core
 
 #### Affected APIs
 
-- Json.NET (`Newtonsoft.Json`)
-- Entity Framework Core (assemblies prefixed with `Microsoft.EntityFrameworkCore.`) 
-- Roslyn (`Microsoft.CodeAnalysis`)
+- <xref:Microsoft.CodeAnalysis?displayProperty=nameWithType>
+- <xref:Microsoft.EntityFrameworkCore?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `N:Microsoft.CodeAnalysis`
+- `N:Microsoft.EntityFrameworkCore`
+
+-->

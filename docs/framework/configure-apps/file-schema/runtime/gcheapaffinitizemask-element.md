@@ -1,5 +1,5 @@
 ---
-title: "<GCHeapAffinitizeMask element"
+title: "<GCHeapAffinitizeMask> element"
 ms.date: "06/19/2019"
 helpviewer_keywords: 
   - "gcHeapCount element"

@@ -8,7 +8,8 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # \<GCNoAffinitize> element
-Specifies whether or not to affinitize server GC threads with CPUs.  
+
+Specifies whether or not to affinitize server GC threads with CPUs.
   
 \<configuration>  
 \<runtime>  
@@ -22,7 +23,8 @@ Specifies whether or not to affinitize server GC threads with CPUs.
 ```  
   
 ## Attributes and elements  
- The following sections describe attributes, child elements, and parent elements.  
+
+The following sections describe attributes, child elements, and parent elements.
   
 ### Attributes  
   
@@ -69,7 +71,7 @@ The following example does not hard-affinitize server GC threads:
 </configuration>  
 ```
 
-The following example does not affinitize server GC threads and limits the number of GC heaps/threads to 10.
+The following example does not affinitize server GC threads and limits the number of GC heaps/threads to 10:
 
 ```xml
 <configuration>  
@@ -87,5 +89,5 @@ The following example does not affinitize server GC threads and limits the numbe
 - [\<GCHeapAffinitizeMask> element](gcheapaffinitizemask-element.md)
 - [\<GCHeapCount> element](gcheapcount-element.md) element
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

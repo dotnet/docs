@@ -25,7 +25,7 @@ dotnet run --project sample1
 
 You should see the following output:
 
-```output
+```console
 Hello World!
 ```
 

@@ -2,8 +2,6 @@
 title: "Runtime configuration with environment variables"
 description: "Use environment variables to configure the runtime behavior of .NET Core applications."
 ms.date: "06/19/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Runtime configuration with environment variables
 

@@ -63,7 +63,7 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
 ## Could not load type ‘System.ServiceModel.Activation.HttpModule’ from assembly ‘System.ServiceModel, Version 3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089’  
  This error occurs if [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] is installed and then WCF HTTP Activation is enabled. To resolve the issue run the following command-line from inside the Developer Command Prompt for Visual Studio:  
   
-```Output  
+```console
 aspnet_regiis.exe -i -enable  
 ```  
   

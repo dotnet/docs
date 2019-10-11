@@ -2,8 +2,6 @@
 title: "Runtime configuration settings"
 description: "Learn how to configure .NET Core applications by using runtime configuration settings."
 ms.date: "06/19/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Core runtime configuration settings
 

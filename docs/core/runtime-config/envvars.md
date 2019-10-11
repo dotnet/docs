@@ -7,7 +7,7 @@ ms.date: "06/19/2019"
 
 .NET Core supports a number of environment variables that you can use to configure your applications. 
 
-The following sections list selected supported environment variables by category. For a complete list of supported, as well as unsupported and internal environment variables, see [Host Configuration Knobs](https://github.com/dotnet/coreclr/blob/a28b25aacdcd2adb0fdfa70bd869f53ba6565976/Documentation/project-docs/clr-configuration-knobs.md).
+The following sections list selected supported environment variables by category. For a complete list of supported, as well as unsupported and internal environment variables, see [Host Configuration Knobs](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/clr-configuration-knobs.md).
 
 > [!NOTE]
 > This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to add or correct the information. For information on submitting pull requests for the dotnet/docs repo, see the [contributor's guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).

@@ -32,9 +32,10 @@ ASP.NET Core
 
 #### Affected APIs
 
-<xref:Microsoft.AspNetCore.Http.DefaultHttpContext>
+<xref:Microsoft.AspNetCore.Http.DefaultHttpContext?displayProperty=nameWithType>
 
 <!--
+
 #### Affected APIs
 
 `T:Microsoft.AspNetCore.Http.DefaultHttpContext`

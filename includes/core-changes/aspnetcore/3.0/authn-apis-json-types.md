@@ -32,14 +32,15 @@ ASP.NET Core
 
 #### Affected APIs
 
-- <xref:Microsoft.AspNetCore.Authentication.OAuth>
-- <xref:Microsoft.AspNetCore.Authentication.OpenIdConnect>
-- <xref:Microsoft.AspNetCore.Authentication.Facebook>
-- <xref:Microsoft.AspNetCore.Authentication.Google>
-- <xref:Microsoft.AspNetCore.Authentication.Twitter>
-- <xref:Microsoft.AspNetCore.Authentication.MicrosoftAccount>
+- <xref:Microsoft.AspNetCore.Authentication.OAuth?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Authentication.OpenIdConnect?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Authentication.Facebook?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Authentication.Google?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Authentication.Twitter?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Authentication.MicrosoftAccount?displayProperty=nameWithType>
 
 <!--
+
 #### Affected APIs
 
 - `N:Microsoft.AspNetCore.Authentication.OAuth`

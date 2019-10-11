@@ -33,8 +33,8 @@ ASP.NET Core apps can only be run on .NET Core.
 
 #### Recommended action
 
-- Keep your app on ASP.NET Core 2.1
-- Migrate your app and dependencies to .NET Core
+- Keep your app on ASP.NET Core 2.1.
+- Migrate your app and dependencies to .NET Core.
 
 #### Category
 

@@ -24,19 +24,19 @@ Replaced any usages of the old types with the newly introduced types as below:
 
 **Obsolete types (warning):**
 
-- `Microsoft.Extensions.Hosting.IHostingEnvironment`
-- `Microsoft.AspNetCore.Hosting.IHostingEnvironment`
-- `Microsoft.Extensions.Hosting.IApplicationLifetime`
-- `Microsoft.AspNetCore.Hosting.IApplicationLifetime`
-- `Microsoft.Extensions.Hosting.EnvironmentName`
-- `Microsoft.AspNetCore.Hosting.EnvironmentName`
+- <xref:Microsoft.Extensions.Hosting.IHostingEnvironment?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Hosting.IHostingEnvironment?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.IApplicationLifetime?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Hosting.IApplicationLifetime?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.EnvironmentName?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Hosting.EnvironmentName?displayProperty=nameWithType>
 
 **New types:**
 
-- `Microsoft.Extensions.Hosting.IHostEnvironment`
+- <xref:Microsoft.Extensions.Hosting.IHostEnvironment?displayProperty=nameWithType>
 - `Microsoft.AspNetCore.Hosting.IWebHostEnvironment : IHostEnvironment`
-- `Microsoft.Extensions.Hosting.IHostApplicationLifetime`
-- `Microsoft.Extensions.Hosting.Environments`
+- <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.Environments?displayProperty=nameWithType>
 
 The new `IHostEnvironment` `IsDevelopment` and `IsProduction` extension methods are in the `Microsoft.Extensions.Hosting` namespace. That namespace may need to be added to your project.
 

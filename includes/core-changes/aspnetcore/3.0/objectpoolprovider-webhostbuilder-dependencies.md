@@ -2,8 +2,6 @@
 
 As part of making ASP.NET Core more pay for play, the `ObjectPoolProvider` was removed from the main set of dependencies. Specific components relying on `ObjectPoolProvider` now add it themselves.
 
-If your component requires `ObjectPoolProvider`, it needs to be added to your dependencies via the `IServiceCollection`.
-
 For discussion, see [aspnet/AspNetCore#5944](https://github.com/aspnet/AspNetCore/issues/5944).
 
 #### Version introduced
@@ -24,7 +22,7 @@ This change was made to make ASP.NET Core more pay for play.
 
 #### Recommended action
 
-For anyone relying on `ObjectPoolProvider`, add them to your dependencies via the `IServiceCollection`.
+If your component requires `ObjectPoolProvider`, it needs to be added to your dependencies via the `IServiceCollection`.
 
 #### Category
 

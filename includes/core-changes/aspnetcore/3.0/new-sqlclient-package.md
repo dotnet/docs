@@ -1,6 +1,6 @@
 ### Microsoft.Extensions.Caching.SqlServer uses the new Microsoft.Data.SqlClient package
 
-The `Microsoft.Extensions.Caching.SqlServer` package will use the new `Microsoft.Data.SqlClient` package instead of `System.Data.SqlClient` package. This change could cause slight behavioral breaking changes. For more information, see https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/.
+The `Microsoft.Extensions.Caching.SqlServer` package will use the new `Microsoft.Data.SqlClient` package instead of `System.Data.SqlClient` package. This change could cause slight behavioral breaking changes. For more information, see [Introducing the new Microsoft.Data.SqlClient](https://devblogs.microsoft.com/dotnet/introducing-the-new-microsoftdatasqlclient/).
 
 #### Version introduced
 

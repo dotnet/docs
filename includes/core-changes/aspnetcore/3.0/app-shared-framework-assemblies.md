@@ -52,7 +52,7 @@ This change doesn't apply to all binaries referenced via `Microsoft.AspNetCore.A
 - Extensions to MVC that maintain support for Json.NET. An API will be provided as a NuGet package to support using Json.NET and MVC.
 - The SignalR .NET client will continue to support .NET Standard and ship as a NuGet package. It's intended for use on many .NET runtimes, such as Xamarin and UWP.
 
-For more information, see [Stop producing packages for shared framework assemblies in 3.0][packages-removed-from-fx]. You can use [aspnet/AspNetCore#3757][discussion] for discussion.
+For more information, see [Stop producing packages for shared framework assemblies in 3.0][packages-removed-from-fx]. For discussion, see [aspnet/AspNetCore#3757][discussion].
 
 [2.1-lts]: https://www.microsoft.com/net/download/dotnet-core/2.1
 [aspnet-blog]: https://blogs.msdn.microsoft.com/webdev/2018/10/29/a-first-look-at-changes-coming-in-asp-net-core-3-0
@@ -67,6 +67,6 @@ ASP.NET Core
 
 #### Affected APIs
 
-- Json.NET (Newtonsoft.Json)
+- Json.NET (`Newtonsoft.Json`)
 - Entity Framework Core (assemblies prefixed with `Microsoft.EntityFrameworkCore.`) 
 - Roslyn (`Microsoft.CodeAnalysis`)

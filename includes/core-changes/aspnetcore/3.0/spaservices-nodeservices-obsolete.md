@@ -1,6 +1,6 @@
 ### SpaServices and NodeServices are obsolete
 
-The contents of the following NuGet packages have all been unnecessary since ASP.NET Core 2.1. Consequently, the packages are being marked as obsolete.
+The contents of the following NuGet packages have all been unnecessary since ASP.NET Core 2.1. Consequently, the following packages are being marked as obsolete:
 
 - [Microsoft.AspNetCore.SpaServices](https://www.nuget.org/packages/Microsoft.AspNetCore.SpaServices/)
 - [Microsoft.AspNetCore.NodeServices](https://www.nuget.org/packages/Microsoft.AspNetCore.NodeServices/)
@@ -53,27 +53,58 @@ ASP.NET Core
 
 #### Affected APIs
 
-- [Microsoft.AspNetCore.Builder.SpaRouteExtensions](/dotnet/api/microsoft.aspnetcore.builder.sparouteextensions?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.Builder.WebpackDevMiddleware](/dotnet/api/microsoft.aspnetcore.builder.webpackdevmiddleware?view=aspnetcore-2.2)
+- <xref:Microsoft.AspNetCore.Builder.SpaRouteExtensions?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Builder.WebpackDevMiddleware?displayProperty=nameWithType>
 
-- [Microsoft.AspNetCore.NodeServices.EmbeddedResourceReader](/dotnet/api/microsoft.aspnetcore.nodeservices.embeddedresourcereader?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.INodeServices](/dotnet/api/microsoft.aspnetcore.nodeservices.inodeservices?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.NodeServicesFactory](/dotnet/api/microsoft.aspnetcore.nodeservices.nodeservicesfactory?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.NodeServicesOptions](/dotnet/api/microsoft.aspnetcore.nodeservices.nodeservicesoptions?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.StringAsTempFile](/dotnet/api/microsoft.aspnetcore.nodeservices.stringastempfile?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.HostingModels.INodeInstance](/dotnet/api/microsoft.aspnetcore.nodeservices.hostingmodels.inodeinstance?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException](/dotnet/api/microsoft.aspnetcore.nodeservices.hostingmodels.nodeinvocationexception?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationInfo](/dotnet/api/microsoft.aspnetcore.nodeservices.hostingmodels.nodeinvocationinfo?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.HostingModels.NodeServicesOptionsExtensions](/dotnet/api/microsoft.aspnetcore.nodeservices.hostingmodels.nodeservicesoptionsextensions?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance](/dotnet/api/microsoft.aspnetcore.nodeservices.hostingmodels.outofprocessnodeinstance?view=aspnetcore-2.2)
+- <xref:Microsoft.AspNetCore.NodeServices.EmbeddedResourceReader?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.INodeServices?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.NodeServicesFactory?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.NodeServicesOptions?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.StringAsTempFile?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.HostingModels.INodeInstance?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationInfo?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.HostingModels.NodeServicesOptionsExtensions?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance?displayProperty=nameWithType>
 
-- [Microsoft.AspNetCore.SpaServices.Prerendering.ISpaPrerenderer](/dotnet/api/microsoft.aspnetcore.spaservices.prerendering.ispaprerenderer?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.SpaServices.Prerendering.ISpaPrerendererBuilder](/dotnet/api/microsoft.aspnetcore.spaservices.prerendering.ispaprerendererbuilder?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.SpaServices.Prerendering,JavaScriptModuleExport](/dotnet/api/microsoft.aspnetcore.spaservices.prerendering.javascriptmoduleexport?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.SpaServices.Prerendering.Prerenderer](/dotnet/api/microsoft.aspnetcore.spaservices.prerendering.prerenderer?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper](/dotnet/api/microsoft.aspnetcore.spaservices.prerendering.prerendertaghelper?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.SpaServices.Prerendering.RenderToStringResult](/dotnet/api/microsoft.aspnetcore.spaservices.prerendering.rendertostringresult?view=aspnetcore-2.2)
-- [Microsoft.AspNetCore.SpaServices.Webpack.WebpackDevMiddlewareOptions](/dotnet/api/microsoft.aspnetcore.spaservices.webpack.webpackdevmiddlewareoptions?view=aspnetcore-2.2)
+- <xref:Microsoft.AspNetCore.SpaServices.Prerendering.ISpaPrerenderer?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.SpaServices.Prerendering.ISpaPrerendererBuilder?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.SpaServices.Prerendering.JavaScriptModuleExport?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.SpaServices.Prerendering.Prerenderer?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.SpaServices.Prerendering.RenderToStringResult?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.SpaServices.Webpack.WebpackDevMiddlewareOptions?displayProperty=nameWithType>
 
-- [Microsoft.Extensions.DependencyInjection.NodeServicesServiceCollectionExtensions](/dotnet/api/microsoft.extensions.dependencyinjection.nodeservicesservicecollectionextensions?view=aspnetcore-2.2)
-- [Microsoft.Extensions.DependencyInjection.PrerenderingServiceCollectionExtensions](/dotnet/api/microsoft.extensions.dependencyinjection.prerenderingservicecollectionextensions?view=aspnetcore-2.2)
+- <xref:Microsoft.Extensions.DependencyInjection.NodeServicesServiceCollectionExtensions?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.DependencyInjection.PrerenderingServiceCollectionExtensions?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:Microsoft.AspNetCore.Builder.SpaRouteExtensions`
+- `T:Microsoft.AspNetCore.Builder.WebpackDevMiddleware`
+
+- `T:Microsoft.AspNetCore.NodeServices.EmbeddedResourceReader`
+- `T:Microsoft.AspNetCore.NodeServices.INodeServices`
+- `T:Microsoft.AspNetCore.NodeServices.NodeServicesFactory`
+- `T:Microsoft.AspNetCore.NodeServices.NodeServicesOptions`
+- `T:Microsoft.AspNetCore.NodeServices.StringAsTempFile`
+- `T:Microsoft.AspNetCore.NodeServices.HostingModels.INodeInstance`
+- `T:Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationException`
+- `T:Microsoft.AspNetCore.NodeServices.HostingModels.NodeInvocationInfo`
+- `T:Microsoft.AspNetCore.NodeServices.HostingModels.NodeServicesOptionsExtensions`
+- `T:Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance`
+
+- `T:Microsoft.AspNetCore.SpaServices.Prerendering.ISpaPrerenderer`
+- `T:Microsoft.AspNetCore.SpaServices.Prerendering.ISpaPrerendererBuilder`
+- `T:Microsoft.AspNetCore.SpaServices.Prerendering.JavaScriptModuleExport`
+- `T:Microsoft.AspNetCore.SpaServices.Prerendering.Prerenderer`
+- `T:Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper`
+- `T:Microsoft.AspNetCore.SpaServices.Prerendering.RenderToStringResult`
+- `T:Microsoft.AspNetCore.SpaServices.Webpack.WebpackDevMiddlewareOptions`
+
+- `T:Microsoft.Extensions.DependencyInjection.NodeServicesServiceCollectionExtensions`
+- `T:Microsoft.Extensions.DependencyInjection.PrerenderingServiceCollectionExtensions`
+
+-->

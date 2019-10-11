@@ -1,22 +1,14 @@
 ### SignInManager constructor accepts new parameter
 
-As part of adding support for new email / confirmation flows in Identity, a new `IUserConfirmation<TUser>` argument was added to the `SignInManager` constructor. For more information, see [aspnet/AspNetCore#8356](https://github.com/aspnet/AspNetCore/issues/8356).
+Starting with ASP.NET Core 3.0, a new `IUserConfirmation<TUser>` parameter was added to the `SignInManager` constructor. For more information, see [aspnet/AspNetCore#8356](https://github.com/aspnet/AspNetCore/issues/8356).
 
 #### Version introduced
 
 3.0
 
-#### Old behavior
-
-`SignInManager` didn't require `IUserConfirmation` when constructing.
-
-#### New behavior
-
-`SignInManager` requires an `IUserConfirmation`.
-
 #### Reason for change
 
-The motivation for the change was to add support for new email / confirmation flows.
+The motivation for the change was to add support for new email / confirmation flows in Identity.
 
 #### Recommended action
 

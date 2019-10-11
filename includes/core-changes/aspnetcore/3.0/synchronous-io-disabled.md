@@ -1,5 +1,9 @@
 ### AllowSynchronousIO disabled in all servers
 
+Starting with ASP.NET Core 3.0, synchronous server operations are disabled by default.
+
+#### Change description
+
 `AllowSynchronousIO` is an option in each server that enables or disables synchronous IO APIs like `HttpRequest.Body.Read`, `HttpResponse.Body.Write`, and `Stream.Flush`. These APIs have long been a source of thread starvation and app hangs. Starting in ASP.NET Core 3.0 Preview 3, these synchronous operations are disabled by default.
 
 Affected servers:
@@ -27,9 +31,9 @@ if (syncIOFeature != null)
 }
 ```
 
-If you have trouble with TextWriters or other streams calling synchronous APIs in `Dispose`, call the new `DisposeAsync` API instead.
+If you have trouble with a `TextWriter` or another stream calling a synchronous API in `Dispose`, call the new `DisposeAsync` API instead.
 
-For discussion, see https://github.com/aspnet/AspNetCore/issues/7644.
+For discussion, see [aspnet/AspNetCore#7644](https://github.com/aspnet/AspNetCore/issues/7644).
 
 #### Version introduced
 
@@ -71,6 +75,16 @@ ASP.NET Core
 
 #### Affected APIs
 
-- [HttpRequest.Body.Read](/dotnet/api/system.io.stream.read?view=netframework-4.8)
-- [HttpResponse.Body.Flush](/dotnet/api/system.io.stream.flush?view=netframework-4.8)
-- [HttpResponse.Body.Write](/dotnet/api/system.io.stream.write?view=netframework-4.8)
+- <xref:System.IO.Stream.Flush%2A?displayProperty=nameWithType>
+- <xref:System.IO.Stream.Read%2A?displayProperty=nameWithType>
+- <xref:System.IO.Stream.Write%2A?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `Overload:System.IO.Stream.Flush`
+- `Overload:System.IO.Stream.Read`
+- `Overload:System.IO.Stream.Write`
+
+-->

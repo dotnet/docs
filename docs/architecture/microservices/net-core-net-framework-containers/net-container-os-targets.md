@@ -34,8 +34,8 @@ When you add the image name to your Dockerfile file, you can select the operatin
 
 ## Additional resources
 
-- **Server Core for .NET Framework Insufficient (GitHub issue)**  
-  <https://github.com/dotnet/docs/issues/13409>
+- **BitmapDecoder fails due to missing WindowsCodecsExt.dll (GitHub issue)**  
+  <https://github.com/microsoft/dotnet-framework-docker/issues/299>
 
 > [!div class="step-by-step"]
 > [Previous](container-framework-choice-factors.md)

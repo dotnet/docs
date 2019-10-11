@@ -23,7 +23,8 @@ Specifies the number of heaps/threads to use for server garbage collection.
 ```  
   
 ## Attributes and elements  
- The following sections describe attributes, child elements, and parent elements.  
+
+The following sections describe attributes, child elements, and parent elements.
   
 ### Attributes  
   

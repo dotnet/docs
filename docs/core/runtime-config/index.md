@@ -37,8 +37,8 @@ ms.date: "06/19/2019"
          "configProperties": {
             "System.GC.Concurrent": true,
             "System.GC.RetainVM": true,
-            "System.Threading.ThreadPool.MinThreads": 4,
-            "System.Threading.ThreadPool.MaxThreads": 25
+            "System.Threading.ThreadPool.MinThreads": "4",
+            "System.Threading.ThreadPool.MaxThreads": "25"
       }
    }
    ```

@@ -1,6 +1,6 @@
 ---
 title: "! (null-forgiving) operator - C# reference"
-ms.date: 10/09/2019
+ms.date: 10/11/2019
 f1_keywords: 
   - "!_CSharpKeyword"
 helpviewer_keywords: 
@@ -19,67 +19,23 @@ For more information about the nullable reference types feature, see [Nullable r
 
 One of the use cases of the null-forgiving operator is in testing the argument validation logic. For example, consider the following class:
 
-```csharp
-#nullable enable
-using System;
+[!code-csharp[Person class](~/samples/csharp/language-reference/operators/NullForgivingOperator.cs#PersonClass)]
 
-public class Person
-{
-    public Person(string name) => Name = name ?? throw new ArgumentNullException(nameof(name));
+Using the [MSTest test framework](../../../core/testing/unit-testing-with-mstest.md), you can create the following test for the validation logic in the constructor:
 
-    public string Name { get; }
-}
-```
-
-Using the [MSTest test framework](../../../core/testing/unit-testing-with-mstest.md), you can create the following test for the constructor argument validation logic:
-
-```csharp
-[TestMethod, ExpectedException(typeof(ArgumentNullException))]
-public void NullNameShouldThrowTest()
-{
-    var person = new Person(null!);
-}
-```
+[!code-csharp[Person test](~/samples/csharp/language-reference/operators/NullForgivingOperator.cs#TestPerson)]
 
 Without the null-forgiving operator, the compiler generates the following warning for the preceding code: `Warning CS8625: Cannot convert null literal to non-nullable reference type`. With the use of the null-forgiving operator, you let the compiler know that passing `null` is expected and shouldn't be warned about.
 
 You also can use the null-forgiving operator when you definitely know that an expression cannot be `null` but the compiler doesn't manage to recognize that. In the following example, if the `IsValid` method returns `true`, its argument is not `null` and you can safely dereference it:
 
-```csharp
-public static void Main()
-{
-    Person? p = Find("John");
-    if (IsValid(p))
-    {
-        Console.WriteLine($"Found {p!.Name}");
-    }
-}
-
-public static bool IsValid(Person? person)
-{
-    return person != null && !string.IsNullOrEmpty(person.Name);
-}
-```
+[!code-csharp[Use null-forgiving operator](~/samples/csharp/language-reference/operators/NullForgivingOperator.cs#UseNullForgiving)]
 
 Without the null-forgiving operator, the compiler generates the following warning for the `p.Name` code: `Warning CS8602: Dereference of a possibly null reference.`.
 
 If you can modify the `IsValid` method, you can use the [NotNullWhen](xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute) attribute to let the compiler know that an argument of the `IsValid` method cannot be `null` when the method returns `true`:
 
-```csharp
-public static void Main()
-{
-    Person? p = Find("John");
-    if (IsValid(p))
-    {
-        Console.WriteLine($"Found {p.Name}");
-    }
-}
-
-public static bool IsValid([NotNullWhen(true)] Person? person)
-{
-    return person != null && !string.IsNullOrEmpty(person.Name);
-}
-```
+[!code-csharp[Use an attribute](~/samples/csharp/language-reference/operators/NullForgivingOperator.cs#UseAttribute)]
 
 In the preceding example, you don't need to use the null-forgiving operator because the compiler has enough information to find out that `p` cannot be `null` inside the `if` statement. For more information about the attributes that allow you to specify additional information about the null state of a variable, see [Upgrade APIs with attributes to define null expectations](../../nullable-attributes.md).
 

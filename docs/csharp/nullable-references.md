@@ -102,7 +102,7 @@ The nullable warning context is distinct from the nullable annotation context. W
 1. The variable has been definitely assigned to a non-null value.
 1. The variable or expression has been checked against null before de-referencing it.
 
-The compiler generates warnings whenever you dereference a variable or expression in a **maybe null** state when the nullable warning context is enabled. Furthermore, warnings are generated when a **maybe null** variable or expression is assigned to a nonnullable reference type in enabled nullable annotation context.
+The compiler generates warnings whenever you dereference a variable or expression in a **maybe null** state when the nullable warning context is enabled. Furthermore, warnings are generated when a **maybe null** variable or expression is assigned to a nonnullable reference type in an enabled nullable annotation context.
 
 ## See also
 

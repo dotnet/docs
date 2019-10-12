@@ -1,8 +1,10 @@
 ### Make "pubternal" types in MVC internal
 
-In ASP.NET Core, "pubternal" types are declared as `public` but reside in a `.Internal`-suffixed namespace. While these types are `public`, they have no support policy and are subject to breaking changes. Unfortunately, accidental use of these types has been common, resulting in breaking changes to these projects and limiting our ability to maintain the framework.
-
 In ASP.NET Core 3.0, all "pubternal" types in MVC were updated to either be `public` in a supported namespace or `internal` as appropriate.
+
+#### Change description
+
+In ASP.NET Core, "pubternal" types are declared as `public` but reside in a `.Internal`-suffixed namespace. While these types are `public`, they have no support policy and are subject to breaking changes. Unfortunately, accidental use of these types has been common, resulting in breaking changes to these projects and limiting the ability to maintain the framework.
 
 #### Version introduced
 
@@ -18,7 +20,7 @@ All such types are updated either to be `public` in a supported namespace, or ma
 
 #### Reason for change
 
-Accidental use of the "pubternal" types has been common, resulting in breaking changes to these projects and limiting our ability to maintain the framework.
+Accidental use of the "pubternal" types has been common, resulting in breaking changes to these projects and limiting the ability to maintain the framework.
 
 #### Recommended action
 

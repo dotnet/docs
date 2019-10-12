@@ -39,7 +39,7 @@ SignalR is one example of an artifact using hosted services, but you can also us
 
 You can basically offload any of those actions to a background task based on IHostedService.
 
-The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the [AddHostedService](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.servicecollectionhostedserviceextensions.addhostedservice?view=aspnetcore-3.0) extension method in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost.
+The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the [AddHostedService](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.servicecollectionhostedserviceextensions.addhostedservice) extension method in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost.
 
 ```csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)

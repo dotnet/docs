@@ -21,7 +21,7 @@ Bindings are objects that are used to specify the communication details that are
  Determines the underlying transport protocol to use (for example, TCP or HTTP).  
   
 ## The Elements of a Binding  
- A binding basically consists of an ordered stack of binding elements, each of which specifies part of the communication information required to connect to a service endpoint. The two lowest layers in the stack are both required. At the base of the stack is the transport binding element and just above this is the element that contains the message encoding specifications. The optional binding elements that specify the other communication protocols are layered above these two required elements. For more information about these binding elements and their correct ordering, see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
+ A binding basically consists of an ordered stack of binding elements, each of which specifies part of the communication information required to connect to a service endpoint. The two lowest layers in the stack are both required. At the base of the stack is the transport binding element and just above this is the element that contains the message encoding specifications. The optional binding elements that specify the other communication protocols are layered above these two required elements. For more information about these binding elements and their correct ordering, see [Custom Bindings](./extending/custom-bindings.md).  
   
 ## System-Provided Bindings  
  The information in a binding can be complex, and some settings may not be compatible with others. For this reason, WCF includes a set of system-provided bindings. These bindings are designed to cover most application requirements. The following classes represent some examples of system-provided bindings:  
@@ -36,10 +36,10 @@ Bindings are objects that are used to specify the communication details that are
 
 - <xref:System.ServiceModel.NetTcpBinding>: This binding offers higher performance than HTTP bindings and is ideal for use in a local network.
   
- For a complete list, with descriptions, of all the WCF-provided bindings, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md).  
+ For a complete list, with descriptions, of all the WCF-provided bindings, see [System-Provided Bindings](system-provided-bindings.md).  
   
 ## Using Your Own Bindings  
- If none of the system-provided bindings included has the right combination of features that a service application requires, you can create your own binding. There are two ways to do this. You can either create a new binding from pre-existing binding elements using a <xref:System.ServiceModel.Channels.CustomBinding> object or you can create a completely user-defined binding by deriving from the <xref:System.ServiceModel.Channels.Binding> binding. For more information about creating your own binding using these two approaches, see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md) and [Creating User-Defined Bindings](../../../docs/framework/wcf/extending/creating-user-defined-bindings.md).  
+ If none of the system-provided bindings included has the right combination of features that a service application requires, you can create your own binding. There are two ways to do this. You can either create a new binding from pre-existing binding elements using a <xref:System.ServiceModel.Channels.CustomBinding> object or you can create a completely user-defined binding by deriving from the <xref:System.ServiceModel.Channels.Binding> binding. For more information about creating your own binding using these two approaches, see [Custom Bindings](./extending/custom-bindings.md) and [Creating User-Defined Bindings](./extending/creating-user-defined-bindings.md).  
   
 ## Using Bindings  
  Using bindings entails two basic steps:  
@@ -53,4 +53,4 @@ Bindings are objects that are used to specify the communication details that are
   
 ## See also
 
-- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
+- [Using Bindings to Configure Services and Clients](using-bindings-to-configure-services-and-clients.md)

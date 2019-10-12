@@ -23,7 +23,7 @@ This article shows you how to find out which .NET Framework security updates and
 
 The installed security updates and hotfixes for each version of the .NET Framework installed on a computer are listed in the Windows registry. You can use the Registry Editor (*regedit.exe*) program to view this information.
 
-1. Open the program **regedit.exe**. In Windows 8 and later versions, right-click **Start** ![Windows logo](../get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo"), then select **Run**. In the **Open** box, enter **regedit** and select **OK**.
+1. Open the program **regedit.exe**. In Windows 8 and later versions, right-click **Start** ![Screenshot of the Windows key logo.](./media/how-to-determine-which-net-framework-updates-are-installed/windows-keyboard-logo.png "Windowskeyboardlogo"), then select **Run**. In the **Open** box, enter **regedit** and select **OK**.
 
 2. In the Registry Editor, open the following subkey:
 

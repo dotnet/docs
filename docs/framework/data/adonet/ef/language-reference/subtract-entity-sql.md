@@ -8,7 +8,7 @@ Subtracts two numbers.
   
 ## Syntax  
   
-```  
+```sql  
 expression - expression  
 ```  
   
@@ -26,7 +26,7 @@ expression - expression
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#SUBTRACT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#subtract)]  
+ [!code-sql[DP EntityServices Concepts#SUBTRACT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#subtract)]  
   
 ## See also
 

@@ -9,31 +9,31 @@ ms.assetid: a9ea7a53-f31a-46eb-806e-898e465a4992
 # WCF Troubleshooting Quickstart
 This topic lists a number of known issues customers have run into while developing WCF clients and services. If the issue you are running into is not in this list, we recommend you configure tracing for your service. This will generate a trace file that you can view with the trace file viewer and get detailed information about exceptions that may be occurring within the service. For more information on configuring tracing, see: [Configuring Tracing](./diagnostics/tracing/configuring-tracing.md). For more information on the trace file viewer, see: [Service Trace Viewer Tool (SvcTraceViewer.exe)](service-trace-viewer-tool-svctraceviewer-exe.md).  
   
-1. [After installing Windows 7 and IIS, when I attempt to browse to a WCF service I get the following error message: HTTP Error 404.3 – Not Found](wcf-troubleshooting-quickstart.md#bkmk_0)  
+1. [After installing Windows 7 and IIS, when I attempt to browse to a WCF service I get the following error message: HTTP Error 404.3 – Not Found](#bkmk_0)  
   
      HTTP Error 404.3 – Not FoundThe page you are requesting cannot be served because of the extension configuration. If the page is a script, add a handler. If the file should be downloaded, add a MIME map. Detailed Error InformationModule StaticFileModule.  
   
-2. [Sometimes I receive a MessageSecurityException on the second request if my client is idle for a while after the first request. What is happening?](wcf-troubleshooting-quickstart.md#BKMK_q1)  
+2. [Sometimes I receive a MessageSecurityException on the second request if my client is idle for a while after the first request. What is happening?](#BKMK_q1)  
   
-3. [My service starts to reject new clients after about 10 clients are interacting with it. What is happening?](wcf-troubleshooting-quickstart.md#BKMK_q2)  
+3. [My service starts to reject new clients after about 10 clients are interacting with it. What is happening?](#BKMK_q2)  
   
-4. [Can I load my service configuration from somewhere other than the WCF application’s configuration file?](wcf-troubleshooting-quickstart.md#BKMK_q3)  
+4. [Can I load my service configuration from somewhere other than the WCF application’s configuration file?](#BKMK_q3)  
   
-5. [My service and client work great, but I can’t get them to work when the client is on another computer? What’s happening?](wcf-troubleshooting-quickstart.md#BKMK_q4)  
+5. [My service and client work great, but I can’t get them to work when the client is on another computer? What’s happening?](#BKMK_q4)  
   
-6. [When I throw a FaultException\<Exception> where the type is an exception, I always receive a general FaultException type on the client and not the generic type. What’s happening?](wcf-troubleshooting-quickstart.md#BKMK_q5)  
+6. [When I throw a FaultException\<Exception> where the type is an exception, I always receive a general FaultException type on the client and not the generic type. What’s happening?](#BKMK_q5)  
   
-7. [It seems like one-way and request-reply operations return at roughly the same speed when the reply contains no data. What's happening?](wcf-troubleshooting-quickstart.md#BKMK_q6)  
+7. [It seems like one-way and request-reply operations return at roughly the same speed when the reply contains no data. What's happening?](#BKMK_q6)  
   
-8. [I’m using an X.509 certificate with my service and I get a System.Security.Cryptography.CryptographicException. What’s happening?](wcf-troubleshooting-quickstart.md#BKMK_q77)  
+8. [I’m using an X.509 certificate with my service and I get a System.Security.Cryptography.CryptographicException. What’s happening?](#BKMK_q77)  
   
-9. [I changed the first parameter of an operation from uppercase to lowercase; now my client throws an exception. What's happening?](wcf-troubleshooting-quickstart.md#BKMK_q88)  
+9. [I changed the first parameter of an operation from uppercase to lowercase; now my client throws an exception. What's happening?](#BKMK_q88)  
   
-10. [I’m using one of my tracing tools and I get an EndpointNotFoundException. What’s happening?](wcf-troubleshooting-quickstart.md#BKMK_q99)  
+10. [I’m using one of my tracing tools and I get an EndpointNotFoundException. What’s happening?](#BKMK_q99)  
   
-11. [When calling a WCF Web HTTP application from a WCF SOAP application the service returns the following error: 405 Method Not Allowed](wcf-troubleshooting-quickstart.md#BK_MK99)  
+11. [When calling a WCF Web HTTP application from a WCF SOAP application the service returns the following error: 405 Method Not Allowed](#BK_MK99)  
   
- [What is the base address? How does it relate to an endpoint address?](wcf-troubleshooting-quickstart.md#BKMK_q10)  
+ [What is the base address? How does it relate to an endpoint address?](#BKMK_q10)  
   
 <a name="bkmk_0"></a>   
 ## After installing Windows 7 and IIS, when I attempt to browse to a WCF service I get the following error message: HTTP Error 404.3 – Not Found  

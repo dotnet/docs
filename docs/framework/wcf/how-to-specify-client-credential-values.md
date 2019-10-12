@@ -10,7 +10,7 @@ ms.assetid: 82293d7f-471a-4549-8f19-0be890e7b074
 
 Using Windows Communication Foundation (WCF), the service can specify how a client is authenticated to the service. For example, a service can stipulate that the client be authenticated with a certificate.
 
-### To determine the client credential type
+## To determine the client credential type
 
 1. Retrieve metadata from the service's metadata endpoint. The metadata typically consists of two files: the client code in the programming language of your choice (the default is Visual C#), and an XML configuration file. One way to retrieve metadata is to use the Svcutil.exe tool to return the client code and client configuration. For more information, see [Retrieving Metadata](../../../docs/framework/wcf/feature-details/retrieving-metadata.md) and [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).
 
@@ -37,7 +37,7 @@ The following XML code shows configuration for a client using message security a
 
 This example sets the security mode to Transport mode and sets the client credential value to an X.509 certificate. The following procedures demonstrate how to set the client credential value on the client in code and configuration. This assumes that you have used the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to return the metadata (code and configuration) from the service. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).
 
-#### To specify the client credential value on the client in code
+### To specify the client credential value on the client in code
 
 1. Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate code and configuration from the service.
 
@@ -50,7 +50,7 @@ This example sets the security mode to Transport mode and sets the client creden
 
      You can use any of the enumerations of the <xref:System.Security.Cryptography.X509Certificates.X509FindType> class. The subject name is used here in case the certificate is changed (due to an expiration date). Using the subject name enables the infrastructure to find the certificate again.
 
-#### To specify the client credential value on the client in configuration
+### To specify the client credential value on the client in configuration
 
 1. Add a [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to the [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element.
 

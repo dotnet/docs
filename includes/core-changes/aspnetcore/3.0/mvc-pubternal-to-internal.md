@@ -26,7 +26,7 @@ Accidental use of the "pubternal" types has been common, resulting in breaking c
 
 If you're using types that have become truly `public` and have been moved into a new, supported namespace, update your references to match the new namespaces.
 
-If you're using types that have become marked as `internal`, you'll need to find an alternative. The previously "pubternal" types were never supported for public use. If there are specific types in these namespaces that are critical to your apps, file an issue at https://github.com/aspnet/AspNetCore. Considerations may be made for making the requested types `public`.
+If you're using types that have become marked as `internal`, you'll need to find an alternative. The previously "pubternal" types were never supported for public use. If there are specific types in these namespaces that are critical to your apps, file an issue at [aspnet/AspNetCore](https://github.com/aspnet/AspNetCore/issues). Considerations may be made for making the requested types `public`.
 
 #### Category
 

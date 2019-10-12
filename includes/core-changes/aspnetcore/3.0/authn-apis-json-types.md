@@ -5,7 +5,7 @@ In ASP.NET Core 3.0, `Newtonsoft.Json` types used in Authentication APIs have be
 * Classes derived from the OAuth providers, such as those from [aspnet-contrib](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers)
 * Advanced claim manipulation implementations
 
-For more information, see https://github.com/aspnet/AspNetCore/pull/7105. For discussion, see https://github.com/aspnet/AspNetCore/issues/7289.
+For more information, see [aspnet/AspNetCore#7105](https://github.com/aspnet/AspNetCore/pull/7105). For discussion, see [aspnet/AspNetCore#7289](https://github.com/aspnet/AspNetCore/issues/7289).
 
 #### Version introduced
 

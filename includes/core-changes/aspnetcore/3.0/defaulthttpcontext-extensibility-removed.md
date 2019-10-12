@@ -4,7 +4,7 @@ As part of ASP.NET Core 3.0 performance improvements, the extensibility of `Defa
 
 If your units tests use `Mock<DefaultHttpContext>`, use `Mock<HttpContext>` instead. 
 
-For discussion, see https://github.com/aspnet/AspNetCore/issues/6534.
+For discussion, see [aspnet/AspNetCore#6534](https://github.com/aspnet/AspNetCore/issues/6534).
 
 #### Version introduced
 

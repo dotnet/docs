@@ -281,7 +281,7 @@ With IaC, you automate platform provisioning and application deployment. You ess
 
 ### Automating infrastructure
 
-Tools like [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/), Terraform, and the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest), enable you to declaratively script the cloud infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You invoke the script to provision a consistent and repeatable infrastructure across system environments, such as QA, staging, and production. 
+Tools like [Azure Resource Manager](https://azure.microsoft.com/documentation/articles/resource-group-overview/), Terraform, and the [Azure CLI](https://docs.microsoft.com/cli/azure/), enable you to declaratively script the cloud infrastructure you require. Resource names, locations, capacities, and secrets are parameterized and dynamic. The script is versioned and checked into source control as an artifact of your project. You invoke the script to provision a consistent and repeatable infrastructure across system environments, such as QA, staging, and production. 
 
 Under the hood, IaC is idempotent, meaning that you can run the same script over and over without side effects. If the team needs to make a change, they edit and rerun the script. Only the updated resources are affected.
 

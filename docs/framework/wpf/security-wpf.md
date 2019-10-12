@@ -49,7 +49,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
 <a name="Application_Navigation_Security"></a>   
 ### Application Navigation Security  
- Application navigation is considered safe if it can be identified with a pack [!INCLUDE[TLA2#tla_uri](../../../includes/tla2sharptla-uri-md.md)], which supports four types of content:  
+ Application navigation is considered safe if it can be identified with a pack URI, which supports four types of content:  
   
 |Content Type|Description|URI Example|  
 |------------------|-----------------|-----------------|  

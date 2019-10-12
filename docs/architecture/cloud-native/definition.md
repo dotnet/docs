@@ -148,7 +148,7 @@ Figure 1-2 contrasts a monolithic application approach with a microservices appr
 
 Note how microservices promote the "One Codebase, One Application" principle from the [Twelve-Factor Application](https://12factor.net/), discussed earlier in the chapter.
 
-> *Factor \#1  specifies "A single code base for each microservice, stored in its own repository. Tracked with version control, it can deploy to multiple environments"*
+> *Factor \#1  specifies "A single codebase for each microservice, stored in its own repository. Tracked with version control, it can deploy to multiple environments."*
 
 ### Why microservices?
 

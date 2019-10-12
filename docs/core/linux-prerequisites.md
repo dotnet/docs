@@ -124,7 +124,7 @@ For versions earlier than .NET Core 2.1, following dependencies are also require
 
 For .NET Core applications that use the *System.Drawing.Common* assembly, you also need the following dependency:
 
-* libgdiplus (version 6.0.1 or later) - required by applications that use the *System.Drawing.Common* assembly.
+* libgdiplus (version 6.0.1 or later)
 
 > [!NOTE]
 > Most versions of Ubuntu include an earlier version of libgdiplus. You can install a recent version

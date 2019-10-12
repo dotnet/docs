@@ -45,22 +45,25 @@ Finally, there's the new [Azure SQL Database Hyperscale](https://azure.microsoft
 
 Beyond the traditional Microsoft SQL Server stack, Azure also features managed versions of several popular open-source databases.
 
+## Open source databases in Azure
 
-Microsoft continues is commitment to keeping Azure an “open platform” by making several popular open source databases available as well.  Azure offers managed support for many open-source [relational](https://en.wikipedia.org/wiki/Relational_database_management_system) and [NoSQL](https://en.wikipedia.org/wiki/NoSQL) databases. It also actively contributes to their various open-source foundations.
+Open source relational database are popular. Many enterprises favor them over commerical products, especially to save money. But, many times, the advanced features and security found in commerical products become critical. 
 
+Azure meets developers where they already are. Instead of migrating data to Azure SQL Db, developers can use several of world's most popular open source databses "as-is." 
 
+Microsoft continues is commitment to keeping Azure an “open platform” by making several popular open source databases available as well. It also actively contributes to their various open-source foundations.
+  
+Developers can self-host a database in Azure by installing it on an Azure VM. While you get full control, it puts you on the hook for many key responsbilities, including provisioning, deprovisioning, master-slave configurations, backups, scaling, upgrades, log rotations, OS patching, and monitoring.
 
-## Azure Database for MySQL
-
-[MySQL](https://en.wikipedia.org/wiki/MySQL) is an open-source relational database. It's commonly found in the [LAMP software stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) and used by many large organizations, including Facebook, Twitter, and You Tube. The community edition is available for free, and the enterprise edition requires a license purchase. Originally created in 1995, the product was purchased by Sun Microsystems in 2008, which was acquired by Oracle in 2010.
-
-[Azure Database for MySQL](https://azure.microsoft.com/services/mysql/) is a fully managed, enterprise-ready relational database service based on the open-source MySQL Server engine. It uses the MySQL Community edition and includes the following Platform as a Service (PaaS) capabilities at no additional cost:
+Azure offers managed DBaaS options for several open-source [relational](https://en.wikipedia.org/wiki/Relational_database_management_system). These managed open source databases are built upon the same fabric and infastructure that the Azure SQL Db has been built since 2010. This provides many key Platform as a Service (PaaS) capabilities at no additional cost:
 
 - Built-in [high availability](https://docs.microsoft.com/azure/mysql/concepts-high-availability).
 
 - Predictable performance, using inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mysql/concepts-pricing-tiers). 
 
-- [Scale](https://docs.microsoft.com/azure/mysql/concepts-high-availability) as needed within seconds.
+- [Vertical Scale](https://docs.microsoft.com/azure/mysql/concepts-high-availability) as needed within seconds.
+
+- [Monitoring and alerting to quickly assess the impact of scaling.
 
 - Secured to protect sensitive data at-rest and in-motion.
 
@@ -70,33 +73,31 @@ Microsoft continues is commitment to keeping Azure an “open platform” by mak
 
 These types of built-in features are important to organizations who have hundreds of “tactical" (non-strategic) databases in their data centers and don't have resources to administer patching, backup, security, and performance monitoring. 
 
-The managed [Azure MySQL server](https://docs.microsoft.com/azure/mysql/concepts-servers) is the central administrative point for the service. It's the same MySQL server engine used for on-premises deployments. The engine can create a single database per server that consumes all resources or create multiple databases per server to share resources. Your team can continue to manage data using the same open-source tools and platforms without having to learn new skills or manage virtual machines.
+You can create an managed open source Azure Database server in one of three different pricing tiers: Basic, General Purpose, and Memory Optimized. The pricing tiers are differentiated by the amount of compute in vCores that can be provisioned, memory per vCore, and the storage technology used to store the data. All resources are provisioned at the database server level. A server can have one or many databases.
 
-The [Azure Data Migration Service](https://azure.microsoft.com/services/database-migration/) can migrate data from several database sources, including MySQL, into Azure Data platforms with minimal downtime. The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
+| Pricing tier | Target workloads  |
+| :-------- | :-------- |
+| Basic | Workloads that require light compute and I/O performance. Examples include servers used for development or testing or small-scale infrequently used applications. |
+| General Purpose | Most business workloads that require balanced compute and memory with scalable I/O throughput. Examples include servers for hosting web and mobile apps and other enterprise applications. |
+| Memory Optimized | High-performance database workloads that require in-memory performance for faster transaction processing and higher concurrency. Examples include servers for processing real-time data and high-performance transactional or analytical apps. |
 
-## Azure Database for MariaDB
+### Azure Database for MySQL
 
-[MariaDB](https://mariadb.com/) Server is another popular open-source database server. It was created as a fork of MySQL when Oracle purchased Sun Microsystems who owned MySQL. The intent was to ensure that MariaDB remained open-source.
+[MySQL](https://en.wikipedia.org/wiki/MySQL) is an open-source relational database and a pillar for applications built on the [LAMP software stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle)). It's used by many large organizations, including Facebook, Twitter, and You Tube. The community edition is available for free, while the enterprise edition requires a license purchase. Originally created in 1995, the product was purchased by Sun Microsystems in 2008. Oracle acquired Sun and MySQL in 2010.
+
+[Azure Database for MySQL](https://azure.microsoft.com/services/mysql/) is a fully managed relational database service based on the open-source MySQL Server engine. It uses the MySQL Community edition.  The managed [Azure MySQL server](https://docs.microsoft.com/azure/mysql/concepts-servers) is the central administrative point for the service. It's the same MySQL server engine used for on-premises deployments. The engine can create a single database per server that consumes all resources or create multiple databases per server to share resources. Your team can continue to manage data using the same open-source tools and platforms without having to learn new skills or manage virtual machines.
+
+### Azure Database for MariaDB
+
+[MariaDB](https://mariadb.com/) Server is another popular open-source database server. It was created as a *fork* of MySQL when Oracle purchased Sun Microsystems, who owned MySQL. The intent was to ensure that MariaDB remained open-source.
 
 As MariaDB is a [fork of MySQL](https://blog.panoply.io/a-comparative-vmariadb-vs-mysql), the data and table definitions are compatible, and the client protocols, structures, and APIs, are close-knit. MySQL data connectors will work MariaDB without modification.
 
 MariaDB has a strong community and is used by many large enterprises. While Oracle continues to maintain, enhance, and support MySQL, the MariaDB foundation manages MariaDB,  allowing public contributions to the product and documentation.
 
-[Azure Database for MariaDB](https://azure.microsoft.com/services/mariadb/) is a fully managed database as a service in the Azure cloud. The service is based on the [MariaDB community edition](https://mariadb.org/download/) server engine. It can handle mission-critical workloads with predictable performance and dynamic scalability. Similar to the other Azure Database platforms, it includes many Platform-as-a-Service capabilities at no additional cost:
+[Azure Database for MariaDB](https://azure.microsoft.com/services/mariadb/) is a fully managed relational database as a service in the Azure cloud. The service is based on the [MariaDB community edition](https://mariadb.org/download/) server engine. It can handle mission-critical workloads with predictable performance and dynamic scalability.
 
-- Built-in [high availability](https://docs.microsoft.com/azure/mariadb/concepts-high-availability).
-
-- Predictable performance, using inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mariadb/concepts-pricing-tiers). 
- 
-- [Scaling](https://docs.microsoft.com/azure/mariadb/concepts-high-availability) as needed within seconds.
-
-- Secured protection of sensitive data at rest and in-motion.
-
-- [Automatic backups](https://docs.microsoft.com/azure/mariadb/concepts-backup) and [point-in-time-restore](https://docs.microsoft.com/azure/mariadb/concepts-backup) for up to 35 days.
-
-- Enterprise-grade security and compliance.
-
-## Azure Database for PostgreSQL 
+### Azure Database for PostgreSQL 
 
 [PostgreSQL](https://www.postgresql.org/) is another popular, open-source relational database with over 30 years of active development. It's a general purpose and object-relational database management system. The product has “liberal” licensing and is free to use, modify, and distribute in any form. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
 
@@ -109,6 +110,21 @@ Azure Database for PostgreSQL is available as two deployment options: Single Ser
 - The [Single Server](https://docs.microsoft.com/azure/postgresql/concepts-servers) deployment option is a central administrative point for multiple databases. It is the same PostgreSQL server engine available for on-premises deployments. With it, you can create a single database per server to consume all resources or create multiple databases to share resources. The pricing is structured per-server based upon cores and storage.
 
 - The [Hyperscale (Citus) option](https://azure.microsoft.com/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/) is powered by [Citus Data](https://www.citusdata.com/) technology. It enables high-performance scaling by horizontally scaling a single database across hundreds of nodes to deliver blazingly fast performance and scale. This option allows the engine to fit more data in memory, parallelize queries across hundreds of nodes, and index data faster. The Hyperscale feature is compatible with the latest innovations, versions, and tools for PostgreSQL, so you can leverage your existing PostgreSQL expertise.
+
+### Data migration to Azure
+
+The [Azure Data Migration Service](https://azure.microsoft.com/services/database-migration/) can migrate data from several database sources, including MySQL, into Azure Data platforms with minimal downtime. The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
+
+
+
+
+	
+	
+
+	
+
+	
+
 
 ## Cosmos DB
 

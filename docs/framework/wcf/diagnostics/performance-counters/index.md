@@ -114,15 +114,11 @@ config.Save();
 ## Programming the WCF Performance Counters  
  Several files are installed in the SDK install folder so that you can access the WCF performance counters programmatically. These files are listed as follows.  
   
-- _ServiceModelEndpointPerfCounters.vrg  
-  
-- _ServiceModelOperationPerfCounters.vrg  
-  
-- _ServiceModelServicePerfCounters.vrg  
-  
-- _SMSvcHostPerfCounters.vrg  
-  
-- _TransactionBridgePerfCounters.vrg  
+- *\_ServiceModelEndpointPerfCounters.vrg*
+- *\_ServiceModelOperationPerfCounters.vrg*
+- *\_ServiceModelServicePerfCounters.vrg*  
+- *\_SMSvcHostPerfCounters.vrg*
+- *\_TransactionBridgePerfCounters.vrg*
   
  For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://go.microsoft.com/fwlink/?LinkId=95179).  
   

@@ -53,7 +53,7 @@ The language rules for XAML state that significant white space must be processed
   
 <a name="east_asian_characters"></a>   
 ## East Asian characters  
- "East Asian characters" is defined as a set of [!INCLUDE[TLA2#tla_unicode](../../../includes/tla2sharptla-unicode-md.md)] character ranges U+20000 to U+2FFFD and U+30000 to U+3FFFD. This subset is also sometimes referred to as "CJK ideographs". For more information, see <https://www.unicode.org>.  
+ "East Asian characters" is defined as a set of Unicode character ranges U+20000 to U+2FFFD and U+30000 to U+3FFFD. This subset is also sometimes referred to as "CJK ideographs". For more information, see <https://www.unicode.org>.  
   
 <a name="whitespace_and_text_content_models"></a>   
 ## White space and text content models  

@@ -67,14 +67,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-- <xref:Microsoft.AspNetCore.Authentication.Google?displayProperty=fullName>
-- <xref:Microsoft.Owin.Security.Google?displayProperty=fullName>
+<xref:Microsoft.AspNetCore.Authentication.Google?displayProperty=fullName>
 
 <!-- 
 
 #### Affected APIs
 
-- `N:Microsoft.AspNetCore.Authentication.Google`
-- `N:Microsoft.Owin.Security.Google`
+`N:Microsoft.AspNetCore.Authentication.Google`
 
 -->

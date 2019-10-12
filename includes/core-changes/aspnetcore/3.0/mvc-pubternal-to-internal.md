@@ -34,34 +34,32 @@ ASP.NET Core
 
 This change includes types in the following namespaces:
 
-- <xref:Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Mvc.Cors.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.RazorPages.Internal?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Mvc.DataAnnotations.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.TagHelpers.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Razor.Internal?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Mvc.Formatters.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Core.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Internal?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Mvc.ModelBinding.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.Razor.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.RazorPages.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.TagHelpers.Internal?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal?displayProperty=nameWithType>
 
 <!--
 
 #### Affected APIs
 
-- `N:Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal`
 - `N:Microsoft.AspNetCore.Mvc.Cors.Internal`
-- `N:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal`
-- `N:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal`
-- `N:Microsoft.AspNetCore.Mvc.RazorPages.Internal`
 - `N:Microsoft.AspNetCore.Mvc.DataAnnotations.Internal`
-- `N:Microsoft.AspNetCore.Mvc.TagHelpers.Internal`
-- `N:Microsoft.AspNetCore.Mvc.Internal`
-- `N:Microsoft.AspNetCore.Mvc.Razor.Internal`
 - `N:Microsoft.AspNetCore.Mvc.Formatters.Internal`
-- `N:Microsoft.AspNetCore.Mvc.Core.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Internal`
 - `N:Microsoft.AspNetCore.Mvc.ModelBinding.Internal`
+- `N:Microsoft.AspNetCore.Mvc.Razor.Internal`
+- `N:Microsoft.AspNetCore.Mvc.RazorPages.Internal`
+- `N:Microsoft.AspNetCore.Mvc.TagHelpers.Internal`
+- `N:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal`
 
 -->

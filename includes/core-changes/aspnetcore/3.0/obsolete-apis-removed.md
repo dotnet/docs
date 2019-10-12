@@ -24,8 +24,6 @@ The following types and members were marked as obsolete for ASP.NET Core 2.1 and
 
 **Types**
 
-- <xref:Microsoft.AspNetCore.Diagnostics.Views.AttributeValue?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Diagnostics.Views.BaseView?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Diagnostics.Views.WelcomePage?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.DiagnosticsViewPage.Views.AttributeValue?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.DiagnosticsViewPage.Views.BaseView?displayProperty=nameWithType>
@@ -33,7 +31,6 @@ The following types and members were marked as obsolete for ASP.NET Core 2.1 and
 - <xref:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetails21Wrapper?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetails21Wrapper?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Mvc.Razor.Compilation.ViewsFeatureProvider?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageArgumentBinder?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageArgumentBinder?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Routing.IRouteValuesAddressMetadata?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Routing.RouteValuesAddressMetadata?displayProperty=nameWithType>
@@ -115,8 +112,6 @@ The following types and members were marked as obsolete for ASP.NET Core 2.1 and
 
 **Types**
 
-- `T:Microsoft.AspNetCore.Diagnostics.Views.AttributeValue`
-- `T:Microsoft.AspNetCore.Diagnostics.Views.BaseView`
 - `T:Microsoft.AspNetCore.Diagnostics.Views.WelcomePage`
 - `T:Microsoft.AspNetCore.DiagnosticsViewPage.Views.AttributeValue`
 - `T:Microsoft.AspNetCore.DiagnosticsViewPage.Views.BaseView`
@@ -124,7 +119,6 @@ The following types and members were marked as obsolete for ASP.NET Core 2.1 and
 - `T:Microsoft.AspNetCore.Mvc.Formatters.Xml.ProblemDetails21Wrapper`
 - `T:Microsoft.AspNetCore.Mvc.Formatters.Xml.ValidationProblemDetails21Wrapper`
 - `T:Microsoft.AspNetCore.Mvc.Razor.Compilation.ViewsFeatureProvider`
-- `T:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.DefaultPageArgumentBinder`
 - `T:Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageArgumentBinder`
 - `T:Microsoft.AspNetCore.Routing.IRouteValuesAddressMetadata`
 - `T:Microsoft.AspNetCore.Routing.RouteValuesAddressMetadata`

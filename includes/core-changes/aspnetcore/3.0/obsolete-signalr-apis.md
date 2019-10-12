@@ -49,7 +49,7 @@ ASP.NET Core
 - <xref:Microsoft.AspNetCore.Builder.ConnectionsAppBuilderExtensions.UseConnections(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.Http.Connections.ConnectionsRouteBuilder})?displayProperty=fullName>
 - <xref:Microsoft.AspNetCore.Builder.SignalRAppBuilderExtensions.UseSignalR(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Action{Microsoft.AspNetCore.SignalR.HubRouteBuilder})?displayProperty=fullName>
 - <xref:Microsoft.AspNetCore.Http.Connections.ConnectionsRouteBuilder?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.SignalR.HubRouteBuilder>
+- <xref:Microsoft.AspNetCore.SignalR.HubRouteBuilder?displayProperty=fullName>
 
 <!-- 
 

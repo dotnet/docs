@@ -33,16 +33,16 @@ ASP.NET Core
 
 #### Affected APIs
 
-- <xref:Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.Body?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Http.Features.IHttpSendFileFeature?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Features.IHttpBufferingFeature?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.Body?displayProperty=fullName>
+- <xref:Microsoft.AspNetCore.Http.Features.IHttpSendFileFeature?displayProperty=nameWithType>
  
 <!-- 
 
 #### Affected APIs
 
+- `T:Microsoft.AspNetCore.Http.Features.IHttpBufferingFeature`
 - `P:Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.Body`
 - `T:Microsoft.AspNetCore.Http.Features.IHttpSendFileFeature`
-- `T:Microsoft.AspNetCore.Http.Features.IHttpBufferingFeature`
 
 -->

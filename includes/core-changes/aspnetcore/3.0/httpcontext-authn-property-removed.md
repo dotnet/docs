@@ -26,34 +26,34 @@ ASP.NET Core
 
 #### Affected APIs
 
-- <xref:Microsoft.AspNetCore.Http.HttpContext.Authentication?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Http.Authentication.AuthenticationManager?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Authentication.AuthenticateInfo?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Http.Authentication.AuthenticationManager?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Authentication.AuthenticationProperties?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Features.Authentication.AuthenticateContext?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Http.Features.Authentication.ChallengeContext?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Features.Authentication.ChallengeBehavior?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Http.Features.Authentication.ChallengeContext?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Features.Authentication.DescribeSchemesContext?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Features.Authentication.IAuthenticationHandler?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature.Handler?displayProperty=fullName>
 - <xref:Microsoft.AspNetCore.Http.Features.Authentication.SignInContext?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Features.Authentication.SignOutContext?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature.Handler?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Http.HttpContext.Authentication?displayProperty=fullName>
 
 <!-- 
 
 #### Affected APIs
 
-- `P:Microsoft.AspNetCore.Http.HttpContext.Authentication`
-- `T:Microsoft.AspNetCore.Http.Authentication.AuthenticationManager`
 - `T:Microsoft.AspNetCore.Http.Authentication.AuthenticateInfo`
+- `T:Microsoft.AspNetCore.Http.Authentication.AuthenticationManager`
 - `T:Microsoft.AspNetCore.Http.Authentication.AuthenticationProperties`
 - `T:Microsoft.AspNetCore.Http.Features.Authentication.AuthenticateContext`
-- `T:Microsoft.AspNetCore.Http.Features.Authentication.ChallengeContext`
 - `T:Microsoft.AspNetCore.Http.Features.Authentication.ChallengeBehavior`
+- `T:Microsoft.AspNetCore.Http.Features.Authentication.ChallengeContext`
 - `T:Microsoft.AspNetCore.Http.Features.Authentication.DescribeSchemesContext`
 - `T:Microsoft.AspNetCore.Http.Features.Authentication.IAuthenticationHandler`
+- `P:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature.Handler`
 - `T:Microsoft.AspNetCore.Http.Features.Authentication.SignInContext`
 - `T:Microsoft.AspNetCore.Http.Features.Authentication.SignOutContext`
-- `P:Microsoft.AspNetCore.Http.Features.Authentication.IHttpAuthenticationFeature.Handler`
+- `P:Microsoft.AspNetCore.Http.HttpContext.Authentication`
 
 -->

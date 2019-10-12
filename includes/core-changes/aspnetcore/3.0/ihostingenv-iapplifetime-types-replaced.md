@@ -46,22 +46,22 @@ ASP.NET Core
 
 #### Affected APIs
 
-- <xref:Microsoft.Extensions.Hosting.IHostingEnvironment?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Hosting.IHostingEnvironment?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.IApplicationLifetime?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Hosting.IApplicationLifetime?displayProperty=nameWithType>
-- <xref:Microsoft.Extensions.Hosting.EnvironmentName?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Hosting.EnvironmentName?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Hosting.IApplicationLifetime?displayProperty=nameWithType>
+- <xref:Microsoft.AspNetCore.Hosting.IHostingEnvironment?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.EnvironmentName?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.IApplicationLifetime?displayProperty=nameWithType>
+- <xref:Microsoft.Extensions.Hosting.IHostingEnvironment?displayProperty=nameWithType>
 
 <!-- 
 
 #### Affected APIs
 
-- `T:Microsoft.Extensions.Hosting.IHostingEnvironment`
-- `T:Microsoft.AspNetCore.Hosting.IHostingEnvironment`
-- `T:Microsoft.Extensions.Hosting.IApplicationLifetime`
-- `T:Microsoft.AspNetCore.Hosting.IApplicationLifetime`
-- `T:Microsoft.Extensions.Hosting.EnvironmentName`
 - `T:Microsoft.AspNetCore.Hosting.EnvironmentName`
+- `T:Microsoft.AspNetCore.Hosting.IApplicationLifetime`
+- `T:Microsoft.AspNetCore.Hosting.IHostingEnvironment`
+- `T:Microsoft.Extensions.Hosting.EnvironmentName`
+- `T:Microsoft.Extensions.Hosting.IApplicationLifetime`
+- `T:Microsoft.Extensions.Hosting.IHostingEnvironment`
 
 -->

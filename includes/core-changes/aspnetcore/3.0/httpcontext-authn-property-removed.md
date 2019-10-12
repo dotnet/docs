@@ -18,7 +18,7 @@ ASP.NET Core 1.0 APIs have been replaced by extension methods in <xref:Microsoft
 
 #### Recommended action
 
-See the [migration guide)(/aspnet/core/migration/1x-to-2x/identity-2x?view=aspnetcore-2.2#use-httpcontext-authentication-extensions).
+See the [migration guide](/aspnet/core/migration/1x-to-2x/identity-2x?view=aspnetcore-2.2#use-httpcontext-authentication-extensions).
 
 #### Category
 

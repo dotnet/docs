@@ -315,6 +315,9 @@
   - name: "?: operator"
     href: operators/conditional-operator.md
     displayName: conditional, ternary, ref
+  - name: "! (null-forgiving) operator"
+    href: operators/null-forgiving.md
+    displayName: nullable reference, null-forgiveness
   - name: "?? and ??= operators"
     href: operators/null-coalescing-operator.md
     displayName: null-coalescing, assignment

@@ -13,7 +13,7 @@ The language rules for XAML state that significant white space must be processed
   
 <a name="whitespace_definition"></a>   
 ## White-space definition  
- Consistent with [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sharptla-xml-md.md)], white-space characters in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] are space, linefeed, and tab. These correspond to the [!INCLUDE[TLA#tla_unicode](../../../includes/tlasharptla-unicode-md.md)] values 0020, 000A, and 0009 respectively.  
+ Consistent with [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sharptla-xml-md.md)], white-space characters in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] are space, linefeed, and tab. These correspond to the Unicode values 0020, 000A, and 0009 respectively.  
   
 <a name="whitespace_normalization"></a>   
 ## White-space normalization  
@@ -49,7 +49,7 @@ The language rules for XAML state that significant white space must be processed
   
  **xml:space="preserve"**: Specify this attribute at the level of the element where white-space preservation is desired. This preserves all white space, which includes the spaces that might be added by code-editing applications to "pretty-print" align elements as a visually intuitive nesting. However, whether those spaces render is determined by the content model for the containing element. Avoid specifying `xml:space="preserve"` at the root level because most object models do not consider white space as significant regardless of how you set the attribute. Setting `xml:space` globally may have performance consequences on XAML processing (particularly serialization) in some implementations. It is a better practice to only set the attribute specifically at the level of elements that render white space within strings, or are white-space significant collections.  
   
- **Entities and non breaking spaces**: [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] supports placing any [!INCLUDE[TLA#tla_unicode](../../../includes/tlasharptla-unicode-md.md)] entity within a text object model. You can use dedicated entities such as nonbreaking space (&\#160; in UTF-8 encoding). You can also use rich text controls that support nonbreaking space characters. You should be cautious if you are using entities to simulate layout characteristics such as indention, because the run-time output of the entities will vary based on a greater number of factors than would the capabilities for producing indention results in a typical layout system, such as proper use of panels and margins. For instance, entities are mapped to fonts and can change size in response to user font selection.  
+ **Entities and non breaking spaces**: [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] supports placing any Unicode entity within a text object model. You can use dedicated entities such as nonbreaking space (&\#160; in UTF-8 encoding). You can also use rich text controls that support nonbreaking space characters. You should be cautious if you are using entities to simulate layout characteristics such as indention, because the run-time output of the entities will vary based on a greater number of factors than would the capabilities for producing indention results in a typical layout system, such as proper use of panels and margins. For instance, entities are mapped to fonts and can change size in response to user font selection.  
   
 <a name="east_asian_characters"></a>   
 ## East Asian characters  

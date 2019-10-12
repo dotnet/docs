@@ -17,7 +17,7 @@ This topic introduces issues that you should be aware of when writing [!INCLUDE[
 
 <a name="char_reference"></a>
 ### Character References
-A character reference gives the UTF16 code unit of the particular [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] character it represents, in either decimal or hexadecimal. The following example shows a decimal character reference for the COPTIC CAPITAL LETTER HORI, or 'Ϩ':
+A character reference gives the UTF16 code unit of the particular Unicode character it represents, in either decimal or hexadecimal. The following example shows a decimal character reference for the COPTIC CAPITAL LETTER HORI, or 'Ϩ':
 
 ```
 &#1000;

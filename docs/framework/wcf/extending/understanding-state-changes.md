@@ -27,7 +27,7 @@ Figure 1. The ICommunicationObject State Machine.
   
  Windows Communication Foundation (WCF) provides an abstract base class named <xref:System.ServiceModel.Channels.CommunicationObject> that implements <xref:System.ServiceModel.ICommunicationObject> and the channel state machine. The following graphic is a modified state diagram that is specific to <xref:System.ServiceModel.Channels.CommunicationObject>. In addition to the <xref:System.ServiceModel.ICommunicationObject> state machine, it shows the timing when additional <xref:System.ServiceModel.Channels.CommunicationObject> methods are invoked.  
   
- ![Dataflow diagram of state changes.](./media/understanding-state-changes/wcfc-wcf-channel-sigure-5-state-transitions-details-c.gif "wcfc_WCFChannelsigure5StateTransitionsDetailsc")  
+ ![Dataflow diagram of CommunicationObject implementation state changes.](./media/understanding-state-changes/wcfc-wcf-channel-sigure-5-state-transitions-details-c.gif "wcfc_WCFChannelsigure5StateTransitionsDetailsc")  
 Figure 2. The CommunicationObject implementation of the ICommunicationObject state machine including calls to events and protected methods.  
   
 ### ICommunicationObject Events  
@@ -84,7 +84,7 @@ Figure 2. The CommunicationObject implementation of the ICommunicationObject sta
   
  It then sets the state to Opening and calls OnOpening() (which raises the Opening event), OnOpen() and OnOpened() in that order. OnOpened() sets the state to Opened and raises the Opened event. If any of these throws an exception, Open()calls Fault() and lets the exception bubble up. The following diagram shows the Open process in more detail.  
   
- ![Dataflow diagram of state changes.](./media/understanding-state-changes/wcfc-wcf-channel-sigure-coopen-flowchart-f.gif "wcfc_WCFChannelsigureCOOpenFlowChartf")  
+ ![Dataflow diagram of ICommunicationObject.Open state changes.](./media/understanding-state-changes/wcfc-wcf-channel-sigure-coopen-flowchart-f.gif "wcfc_WCFChannelsigureCOOpenFlowChartf")  
 Override the OnOpen method to implement custom open logic such as opening an inner communication object.  
   
  Close Method  
@@ -95,7 +95,7 @@ Override the OnOpen method to implement custom open logic such as opening an inn
   
  The Close() method can be called at any state. It tries to close the object normally. If an error is encountered, it terminates the object. The method does nothing if the current state is Closing or Closed. Otherwise it sets the state to Closing. If the original state was Created, Opening or Faulted, it calls Abort() (see the following diagram). If the original state was Opened, it calls OnClosing() (which raises the Closing event), OnClose() and OnClosed() in that order. If any of these throws an exception, Close()calls Abort() and lets the exception bubble up. OnClosed() sets the state to Closed and raises the Closed event. The following diagram shows the Close process in more detail.  
   
- ![Dataflow diagram of state changes.](./media/understanding-state-changes/wcfc-wcf-channel-sguire-7-ico-close-flowchart-c.gif "wcfc_WCFChannelsguire7ICO-CloseFlowChartc")  
+ ![Dataflow diagram of ICommunicationObject.Close state changes.](./media/understanding-state-changes/wcfc-wcf-channel-sguire-7-ico-close-flowchart-c.gif "wcfc_WCFChannelsguire7ICO-CloseFlowChartc")  
 Override the OnClose method to implement custom close logic, such as closing an inner communication object. All graceful closing logic that may block for a long time (for example, waiting for the other side to respond) should be implemented in OnClose() because it takes a timeout parameter and because it is not called as part of Abort().  
   
  Abort  
@@ -105,7 +105,7 @@ Post-condition: State is Closed. May throw an exception.
   
  The Abort() method does nothing if the current state is Closed or if the object has been terminated before (for example, possibly by having Abort() executing on another thread). Otherwise it sets the state to Closing and calls OnClosing() (which raises the Closing event), OnAbort(), and OnClosed() in that order (does not call OnClose because the object is being terminated, not closed). OnClosed() sets the state to Closed and raises the Closed event. If any of these throw an exception, it is re-thrown to the caller of Abort. Implementations of OnClosing(), OnClosed() and OnAbort() should not block (for example, on input/output). The following diagram shows the Abort process in more detail.  
   
- ![Dataflow diagram of state changes.](./media/understanding-state-changes/wcfc-wcf-channel-sigure-8-ico-abort-flowchart-c.gif "wcfc_WCFChannelsigure8ICO-AbortFlowChartc")  
+ ![Dataflow diagram of ICommunicationObject.Abort state changes.](./media/understanding-state-changes/wcfc-wcf-channel-sigure-8-ico-abort-flowchart-c.gif "wcfc_WCFChannelsigure8ICO-AbortFlowChartc")  
 Override the OnAbort method to implement custom terminate logic such as terminating an inner communication object.  
   
  Fault  

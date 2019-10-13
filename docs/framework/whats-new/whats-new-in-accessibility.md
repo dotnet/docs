@@ -506,7 +506,7 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   After:   
 
-  ![Screenshot of ComboBox disabled before accessibility improvements.](./media/whats-new-in-accessibility/combo-disabled-after.png)
+  ![Screenshot of ComboBox disabled after accessibility improvements.](./media/whats-new-in-accessibility/combo-disabled-after.png)
 
   In addition, disabled and focused buttons use the correct theme color.
 

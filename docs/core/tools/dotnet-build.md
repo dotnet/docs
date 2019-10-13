@@ -44,7 +44,7 @@ Whether the project is executable or not is determined by the `<OutputType>` pro
 </PropertyGroup>
 ```
 
-To produce a library, omit the `<OutputType>` property, or change the `OutputType` to `Library`. The IL DLL for a library doesn't contain entry points and can't be executed.
+To produce a library, omit the `<OutputType>` property or change its value to `Library`. The IL DLL for a library doesn't contain entry points and can't be executed.
 
 ### MSBuild
 

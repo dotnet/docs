@@ -24,7 +24,7 @@ Once your converted your project to target your targeted platform, like .NET Cor
 
 To begin using the .NET Portability Analyzer in Visual Studio, you first need to download and install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer). It works on Visual Studio 2017 and later versions. You can configure it in Visual Studio via **Analyze** > **Portability Analyzer Settings** and select your Target Platforms, which is the .NET platforms/versions that you want to evaluate the portability gaps comparing with the platform/version that your current assembly is built with.
 
-![Screenshot of portability.](./media/portability-analyzer/portability-screenshot.png)
+![Screenshot of portability analyzer.](./media/portability-analyzer/portability-screenshot.png)
 
 You can also use the ApiPort console application, download it from [ApiPort repository](https://aka.ms/apiportdownload). You can use `listTargets` command option to display the available target list, then pick target platforms by specifying `-t` or `--target` command option. 
 

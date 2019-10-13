@@ -10,7 +10,7 @@ You can analyze the structure and content of expression trees when you debug you
 
 Since `DebugView` is a string, you can use the [built-in Text Visualizer](https://docs.microsoft.com/visualstudio/debugger/view-strings-visualizer#open-a-string-visualizer) to view it across multiple lines, by selecting **Text Visualizer** from the magnifying glass icon next to the `DebugView` label.
 
- ![Screenshot of Text Visualizer applied to results of DebugView.](media/debugging-expression-trees-in-visual-studio/string-visualizer.png)
+ ![Screenshot of Text Visualizer applied to results of DebugView.](media/debugging-expression-trees-in-visual-studio/string-visualizer-debugview.png)
 
 Alternatively, you can install and use [a custom visualizer](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data) for expression trees, such as:
 
@@ -18,9 +18,9 @@ Alternatively, you can install and use [a custom visualizer](https://docs.micros
 
   ![Screenshot of the Readable Expressions visualizer.](media/debugging-expression-trees-in-visual-studio/readable-expressions-visualizer.png)
 
-- [Screenshot of the Expression Tree Visualizer.](https://github.com/zspitz/ExpressionToString#visual-studio-debugger-visualizer-for-expression-trees) ([MIT license](https://github.com/zspitz/ExpressionToString/blob/master/LICENSE)), provides a graphical view of the expression tree, its properties, and related objects:
+- [Expression Tree Visualizer](https://github.com/zspitz/ExpressionToString#visual-studio-debugger-visualizer-for-expression-trees) ([MIT license](https://github.com/zspitz/ExpressionToString/blob/master/LICENSE)), provides a graphical view of the expression tree, its properties, and related objects:
 
-  ![ExpressionToString visualizer](media/debugging-expression-trees-in-visual-studio/expression-to-string-visualizer.png)
+  ![Screenshot of the Expression Tree Visualizer.](media/debugging-expression-trees-in-visual-studio/expression-to-string-visualizer.png)
 
 ### To open a visualizer for an expression tree  
   

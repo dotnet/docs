@@ -82,7 +82,7 @@ ms.date: "09/30/2019"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/dotnet.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/dotnet-logo-image.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

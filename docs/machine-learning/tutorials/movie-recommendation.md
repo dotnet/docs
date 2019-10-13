@@ -69,7 +69,7 @@ There are several ways to approach recommendation problems, such as recommending
 
 2. In Solution Explorer, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-   ![copy if newer in VS](./media/movie-recommendation/copytoout.gif)
+   ![GIF of a user selecting copy if newer in VS.](./media/movie-recommendation/copy-to-output-if-newer.gif)
 
 ## Load your data
 
@@ -79,7 +79,7 @@ The recommendation ratings data is split into `Train` and `Test` datasets. The `
 
 Below is a preview of the data from your \*.csv files:
 
-![preview of data](./media/movie-recommendation/csv-dataset-preview.png)
+![Screenshot of the preview of the CVS dataset.](./media/movie-recommendation/csv-file-dataset-preview.png)
 
 In the \*.csv files, there are four columns:
 
@@ -167,11 +167,11 @@ There are three major concepts in ML.NET: [Data](../resources/glossary.md#data),
 
 Machine learning training algorithms require data in a certain format. `Transformers` are used to transform tabular data to a compatible format.
 
-![transformer image](./media/movie-recommendation/transformer.png)
+![Diagram of the Transformer dataflow.](./media/movie-recommendation/data-transformer-transformed.png)
 
 You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take in data and return `Transformers`.
 
-![estimator image](./media/movie-recommendation/estimator.png)
+![Diagram of the Estimator dataflow.](./media/movie-recommendation/data-estimator-transformer.png)
 
 The recommendation training algorithm you will use for training your model is an example of an `Estimator`.
 

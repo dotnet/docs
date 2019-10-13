@@ -41,7 +41,7 @@ This sample creates a .NET core console application that detects objects within 
 
 Object detection is a computer vision problem. While closely related to image classification, object detection performs image classification at a more granular scale. Object detection both locates _and_ categorizes entities within images. Use object detection when images contain multiple objects of different types.
 
-![Side-by-side images showing Image Classification of a dog on the left, and Object Classification of a group at a dog show on the right](./media/object-detection-onnx/img-classification-obj-detection.PNG)
+![Side-by-side images showing Image Classification of a dog on the left, and Object Classification of a group at a dog show on the right](./media/object-detection-onnx/img-classification-obj-detection.png)
 
 Some use cases for object detection include:
 
@@ -699,7 +699,7 @@ person and its Confidence score: 0.5551759
 
 To see the images with bounding boxes, navigate to the `assets/images/output/` directory. Below is a sample from one of the processed images.
 
-![Sample processed image of a dinning room](./media/object-detection-onnx/image3.jpg)
+![Sample processed image of a dinning room](./media/object-detection-onnx/dinning-room-table-chairs.png)
 
 Congratulations! You've now successfully built a machine learning model for object detection by reusing a pre-trained `ONNX` model in ML.NET.
 

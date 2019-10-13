@@ -122,7 +122,7 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
 Anomaly detection flags unexpected or unusual events or behaviors. It gives clues where to look for problems and helps you answer the question "Is this weird?".
 
-![Is this weird](./media/sales-anomaly-detection/anomalydetection.png)
+![Example of the "Is this weird" anomaly detection.](./media/sales-anomaly-detection/time-series-anomaly-detection.png)
 
 Anomaly detection is the process of detecting time-series data outliers; points on a given input time-series where the behavior isn't what was expected, or "weird".
 
@@ -147,7 +147,7 @@ You'll analyze the same product sales data to detect spikes and change points. T
 
 The goal of spike detection is to identify sudden yet temporary bursts that significantly differ from the majority of the time series data values. It's important to detect these suspicious rare items, events, or observations in a timely manner to be minimized. The following approach can be used to detect a variety of anomalies such as: outages, cyber-attacks, or viral web content. The following image is an example of spikes in a time series dataset:
 
-![SpikeDetection](./media/sales-anomaly-detection/SpikeDetection.png)
+![Screenshot that shows two spike detections.](./media/sales-anomaly-detection/two-spike-detections.png)
 
 ### Add the CreateEmptyDataView() method
 
@@ -261,7 +261,7 @@ Alert   Score   P-Value
 
 `Change points` are persistent changes in a time series event stream distribution of values, like level changes and trends. These persistent changes last much longer than `spikes` and could indicate catastrophic event(s). `Change points` are not usually visible to the naked eye, but can be detected in your data using approaches such as in the following method.  The following image is an example of a change point detection:
 
-![ChangePointDetection](./media/sales-anomaly-detection/ChangePointDetection.png)
+![Screenshot that shows a change point detection.](./media/sales-anomaly-detection/change-point-detection.png)
 
 ### Create the DetectChangepoint() method
 

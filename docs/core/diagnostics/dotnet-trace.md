@@ -61,33 +61,33 @@ dotnet-trace collect [-h|--help] [-p|--process-id <pid>] [--buffersize <size>] [
 
 - **`-p|--process-id <pid>`**
 
-The process to collect the trace from.
+  The process to collect the trace from.
 
 - **`--buffersize <size>`**
 
-Sets the size of the in-memory circular buffer in megabytes. Default 256 MB.
+  Sets the size of the in-memory circular buffer in megabytes. Default 256 MB.
 
 - **`-o|--output <trace-file-path>`**
 
-The output path for the collected trace data. If not specified it defaults to `trace.nettrace`.
+  The output path for the collected trace data. If not specified it defaults to `trace.nettrace`.
 
 - **`--providers <list-of-comma-separated-providers>`**
 
-A list of EventPipe providers to be enabled. These providers supplement any providers implied by the `--profile argument`. If there's any inconsistency for a particular provider, the configuration here takes precedence over the implicit configuration from the profile.
+  A list of EventPipe providers to be enabled. These providers supplement any providers implied by the `--profile argument`. If there's any inconsistency for a particular provider, the configuration here takes precedence over the implicit configuration from the profile.
 
-This list of providers is in the form:
+  This list of providers is in the form:
 
-- `Provider[,Provider]`
-- `Provider` is in the form: `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`.
-- `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
+  - `Provider[,Provider]`
+  - `Provider` is in the form: `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`.
+  - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
 
 - **`--profile <profile-name>`**
 
-A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly.
+  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly.
 
 - **`--format <NetTrace|Speedscope>`**
 
-Sets the output format for the trace file conversion.
+  Sets the output format for the trace file conversion.
 
 ## dotnet-trace convert
 
@@ -103,15 +103,15 @@ dotnet-trace convert [-h|--help] [--format <NetTrace|Speedscope>] [-o|--output <
 
 - **`[--format <NetTrace|Speedscope>]`**
 
-Sets the output format for the trace file conversion.
+  Sets the output format for the trace file conversion.
 
 - **`[-o|--output <output-filename>]`**
 
-Output filename. Extension of target format will be added.
+  Output filename. Extension of target format will be added.
 
 - **`<input-filename>`**
 
-Input trace file to be converted. Defaults to 'trace.nettrace'.
+  Input trace file to be converted. Defaults to 'trace.nettrace'.
 
 ## dotnet-trace list-processes
 
@@ -160,9 +160,10 @@ Collecting to file: <Full-Path-To-Trace>/trace.nettrace
 
 On Windows, `.nettrace` files can be viewed on [PerfView](https://github.com/microsoft/perfview) for analysis, just like traces collected with ETW or LTTng. For traces collected on Linux, you can move the trace to a Windows machine to be viewed on PerfView.
 
-You may also view the trace on a Linux machine by changing the output format of `dotnet-trace` to `speedscope`. You can change the output file format using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` to produce a `speedscope` file. You can currently choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at https://www.speedscope.app.
+You may also view the trace on a Linux machine by changing the output format of `dotnet-trace` to `speedscope`. You can change the output file format using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` to produce a `speedscope` file. You can currently choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at <https://www.speedscope.app>.
 
-Note: The .NET Core runtime generates traces in the `nettrace` format, and they're converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
+> [!NOTE]
+> The .NET Core runtime generates traces in the `nettrace` format, and they're converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
 
 ## Using `dotnet-trace` to collect counter values over time
 
@@ -182,7 +183,7 @@ If you want to disable runtime events to reduce the overhead (and trace size) ev
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1
 ```
 
-## More information on .NET Providers
+## .NET Providers
 
 The .NET Core runtime supports the following .NET providers. .NET Core uses the same keywords to enable both
 `Event Tracing for Windows (ETW)` and `EventPipe` traces.

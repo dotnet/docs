@@ -49,7 +49,7 @@ The output should be similar to the below:
 
 Here we can see that right after startup, the CPU isn't being consumed at all (0%).
 
-Now, let's hit the URL (http://localhost:5000/api/diagscenario/highcpu/60000)
+Now, let's hit the URL [http://localhost:5000/api/diagscenario/highcpu/60000](http://localhost:5000/api/diagscenario/highcpu/60000)
 
 Rerun the [dotnet-counters](dotnet-counters.md) command. We should see an increase in CPU usage as shown below:
 

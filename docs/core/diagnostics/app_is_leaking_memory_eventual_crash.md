@@ -62,7 +62,7 @@ The output should be similar to:
 
 Here we can see that right after startup, the managed heap memory is 4 MB.
 
-Now, let's hit the URL http://localhost:5000/api/diagscenario/memleak/200000
+Now, let's hit the URL [http://localhost:5000/api/diagscenario/memleak/200000](http://localhost:5000/api/diagscenario/memleak/200000)
 
 Rerun the dotnet-counters command. We should see an increase in memory usage as shown below:
 
@@ -89,7 +89,7 @@ When analyzing possible memory leaks, we need access to the apps memory heap. We
 Using the previous [Sample debug target](sample-debug-target.md) started above, run the following command to generate a core dump:
 
 ```dotnetcli
-sudo ./dotnet-dump collect -p 4807
+sudo dotnet-dump collect -p 4807
 ```
 
 4807 is the process ID that can be found using `dotnet-trace list-processes`. The result is a core dump located in the same folder.

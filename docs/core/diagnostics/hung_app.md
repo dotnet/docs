@@ -39,12 +39,12 @@ dotnet-trace list-processes
 
 Navigate to the following URL:
 
-http://localhost:5000/api/diagscenario/deadlock
+[http://localhost:5000/api/diagscenario/deadlock](http://localhost:5000/api/diagscenario/deadlock)
 
 Let the request run for about 10-15 seconds then create the dump:
 
 ```dotnetcli
-sudo ./dotnet-dump collect -p 4807
+sudo dotnet-dump collect -p 4807
 ```
 
 ## Analyzing the core dump
@@ -52,13 +52,13 @@ sudo ./dotnet-dump collect -p 4807
 To start our investigation, let's open the core dump using dotnet-dump analyze:
 
 ```dotnetcli
-./dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
+dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
 ```
 
 Since we're looking at a potential hang, we want an overall feel for the thread activity in the process. We can use the threads command as shown below:
 
 ```console
-threads
+> threads
 *0 0x1DBFF (121855)
  1 0x1DC01 (121857)
  2 0x1DC02 (121858)

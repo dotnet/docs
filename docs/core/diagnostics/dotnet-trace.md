@@ -3,7 +3,7 @@ title: dotnet-trace - .NET Core
 description: Installing and using the dotnet-trace command-line tool.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 10/01/2019
+ms.date: 10/14/2019
 ---
 # Trace for performance analysis utility (`dotnet-trace`)
 

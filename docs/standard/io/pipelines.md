@@ -49,13 +49,13 @@ To fix the preceding problems, the following changes are required:
 
 * Buffer the incoming data until a new line is found.
 * Parse all the lines returned in the buffer.
-* It's possible that the line is bigger than 1 KB (1024 bytes). The code needs to resize the input buffer a complete line is found.
+* It's possible that the line is bigger than 1 KB (1024 bytes). The code needs to resize the input buffer until the delimiter is found in order to fit the complete line inside the buffer.
 
   * If the buffer is resized, more buffer copies are made as longer lines appear in the input.
   * To reduce wasted space, compact the buffer used for reading lines.
 
 * Consider using buffer pooling to avoid allocating memory repeatedly.
-* The following code address some of these problems:
+* The following code addresses some of these problems:
 
 [!code-csharp[](~/samples/snippets/csharp/pipelines/ProcessLinesAsync.cs?name=snippet)]
 

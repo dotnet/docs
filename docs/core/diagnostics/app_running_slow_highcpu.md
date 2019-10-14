@@ -3,11 +3,21 @@ title: Debugging high CPU usage - .NET Core
 description: A tutorial walk-through, debugging high CPU usage in .NET Core.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 08/27/2019
+ms.date: 10/14/2019
 ---
 # Debugging high CPU usage
 
+**This article applies to:** .NET Core 3.0 SDK and later versions
+
 In this scenario, the [sample debug target](sample-debug-target.md) will consume excessive CPU. To diagnose this scenario, we need several key pieces of diagnostics data.
+
+The tutorial uses:
+
+- [Sample debug target](sample-debug-target.md) to trigger the scenario.
+- [dotnet-trace](dotnet-trace.md) to list processes and generate a profile.
+- [dotnet-counters](dotnet-counters.md) to monitor cpu usage.
+
+The tutorial assumes the sample and tools are ready to use.
 
 ## CPU counters
 
@@ -15,19 +25,19 @@ Before we dig into collecting diagnostics data, we need to convince ourselves th
 
 Lets run the [sample debug target](sample-debug-target.md).
 
-```bash
+```dotnetcli
 dotnet run
 ```
 
 Then find the process ID using:
 
-```bash
+```dotnetcli
 dotnet-trace list-processes
 ```
 
 Before hitting the above URL that will cause the high CPU condition, lets check our CPU counters using the [dotnet-counters](dotnet-counters.md) tool:
 
-```bash
+```dotnetcli
 dotnet-counters monitor --refresh-interval 1 -p 22884
 ```
 
@@ -47,7 +57,7 @@ Rerun the [dotnet-counters](dotnet-counters.md) command. We should see an increa
 
 Throughout the execution of that request, CPU hovers at around 30%.
 
-```bash
+```dotnetcli
 dotnet-counters monitor System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
 ```
 
@@ -61,7 +71,7 @@ When analyzing a slow request, we need a diagnostics tool that can give us insig
 
 We can use the [dotnet-trace](dotnet-trace.md) tool. Using the previous [sample debug target](sample-debug-target.md), hit the URL (http://localhost:5000/api/diagscenario/highcpu/60000) again and while its running within the 1-minute request, run:
 
-```bash
+```dotnetcli
 dotnet-trace collect -p 2266  --providers Microsoft-DotNETCore-SampleProfiler
 ```
 
@@ -83,14 +93,14 @@ Set the `COMPlus_PerfMapEnabled` to cause the .NET Core app to create a `map` fi
 
 Run the [sample debug target](sample-debug-target.md) in the same terminal session.
 
-```bash
+```dotnetcli
 export COMPlus_PerfMapEnabled=1
 dotnet run
 ```
 
 Hit the URL (http://localhost:5000/api/diagscenario/highcpu/60000) again and while its running within the 1-minute request, run:
 
-```bash
+```console
 sudo perf record -p 2266 -g
 ```
 
@@ -98,13 +108,13 @@ This command will start the perf collection process. Let it run for about 20-30 
 
 You can use the same perf command to see the output of the trace.
 
-```bash
+```console
 sudo perf report -f
 ```
 
 You can also generate a flame-graph by using the following commands:
 
-```bash
+```console
 git clone --depth=1 https://github.com/BrendanGregg/FlameGraph
 sudo perf script | FlameGraph/stackcollapse-perf.pl | FlameGraph/flamegraph.pl > flamegraph.svg
 ```

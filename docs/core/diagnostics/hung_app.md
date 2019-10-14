@@ -3,11 +3,23 @@ title: Debugging deadlock - .NET Core
 description: A tutorial walk-through, debugging locking issues in .NET Core.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 08/27/2019
+ms.date: 10/14/2019
 ---
 # Debugging deadlock
 
-In this scenario, the endpoint will experience a hang and thread accumulation. We'll show how you can use the existing tools to analyze the problem.
+**This article applies to:** .NET Core 3.0 SDK and later versions
+
+In this scenario, the endpoint will experience a hang and thread accumulation. We'll show how you can use the tools to analyze the problem.
+
+## Preparing
+
+The tutorial uses:
+
+- [Sample debug target](sample-debug-target.md) to trigger the scenario.
+- [dotnet-trace](dotnet-trace.md) to list processes.
+- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
+
+The tutorial assumes the sample and tools are ready to use and you are running on **Linux**.
 
 ## Core dump generation
 
@@ -15,23 +27,15 @@ To investigate hung application, a memory dump allows us to inspect the state of
 
 Lets run the [Sample debug target](sample-debug-target.md).
 
-```bash
+```dotnetcli
 dotnet run
 ```
 
 Then find the process ID using:
 
-```bash
+```dotnetcli
 dotnet-trace list-processes
 ```
-
-Before causing the leak, lets check our managed memory counters:
-
-```bash
-dotnet-counters monitor --refresh-interval 1 -p 4807
-```
-
-4807 is the process ID that was found using `dotnet-trace  list-processes`.
 
 Navigate to the following URL:
 
@@ -39,21 +43,21 @@ http://localhost:5000/api/diagscenario/deadlock
 
 Let the request run for about 10-15 seconds then create the dump:
 
-```bash
+```dotnetcli
 sudo ./dotnet-dump collect -p 4807
 ```
 
-### Analyzing the core dump
+## Analyzing the core dump
 
 To start our investigation, let's open the core dump using dotnet-dump analyze:
 
-```bash
+```dotnetcli
 ./dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
 ```
 
 Since we're looking at a potential hang, we want an overall feel for the thread activity in the process. We can use the threads command as shown below:
 
-```
+```console
 threads
 *0 0x1DBFF (121855)
  1 0x1DC01 (121857)
@@ -102,13 +106,13 @@ The next step is to get a better understanding of what the threads are currently
 
 Run:
 
-```bash
-clrstack -all
+```console
+> clrstack -all
 ```
 
 A representative portion of the output looks like:
 
-```
+```console
   ...
   ...
   ...
@@ -190,7 +194,7 @@ OS Thread Id: 0x1dc88
 
 Eye balling the callstacks for all 300+ threads shows a pattern where a majority of the threads share a common callstack:
 
-```bash
+```console
 OS Thread Id: 0x1dc88
         Child SP               IP Call Site
 00007F2ADFFAE680 00007f305abc6360 [GCFrame: 00007f2adffae680]
@@ -206,7 +210,7 @@ The callstack seems to show that the request arrived in our deadlock method that
 
 The next step then is to find out which thread is actually holding the monitor lock. Since monitors typically store lock information in the sync block table, we can use the `syncblk` command to get more information:
 
-```bash
+```console
 > syncblk
 Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBlock Owner
    41 000000000143D038          603         1 00007F2B542D28C0 1dc1d  20   00007f2e90080fb8 System.Object
@@ -217,11 +221,11 @@ Free            0
 
 ```
 
-The two interesting columns are the `MonitorHeld` and the `Owning Thread Info` columns. The `MonitorHeld` shows whether a monitor lock is acquired by a thread and the number of waiting threads. The `Owning Thread Info` shows which thread currently owns the monitor lock. The thread info has three different subcolumns. The second subcolumn shows operating system thread ID.
+The two interesting columns are the `MonitorHeld` and the `Owning Thread Info` columns. The `MonitorHeld` shows whether a monitor lock is acquired by a thread and the number of waiting threads. The `Owning Thread Info` shows which thread currently owns the monitor lock. The thread info has three different sub-columns. The second sub-column shows operating system thread ID.
 
 At this point, we know two different threads (0x1dc1d and 0x1dc1e) hold a monitor lock. The next step is to take a look at what those threads are doing. We need to check if they're stuck indefinitely holding the lock. Let's use the `setthread` and `clrstack` commands to switch to each of the threads and display the callstacks:
 
-```bash
+```console
 > setthread 0x1dc1d
 > clrstack
 OS Thread Id: 0x1dc1d (20)
@@ -240,7 +244,7 @@ OS Thread Id: 0x1dc1d (20)
 
 Lets look at the first thread. The deadlock function is waiting to acquire a lock, but it already owns the lock. It's in deadlock waiting for the lock it already holds.
 
-```
+```console
 > setthread 0x1dc1e
 > clrstack
 OS Thread Id: 0x1dc1e (21)

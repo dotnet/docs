@@ -41,4 +41,14 @@ The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows a
 
 ## .NET Core diagnostics walk throughs
 
-The [.NET Core diagnostics walk throughs](diagnostic-scenarios.md) are designed to highlight key use cases.
+### Debugging a memory leak
+
+[Debugging a memory leak](app_is_leaking_memory_eventual_crash.md) walks through finding a memory leak. The [dotnet-counters](dotnet-counters.md) tool is used to confirm the leak. Then the [dotnet-dump](dotnet-dump.md) tool is used to diagnose the leak.
+
+### Debugging a slow running application
+
+[Debugging high CPU usage](app_running_slow_highcpu.md) walks through investigating high CPU usage. It uses the [dotnet-counters](dotnet-counters.md) tool to confirm the high CPU usage. It then walks through using [Trace for performance analysis utility (`dotnet-trace`)](dotnet-trace.md) or Linux `perf` to collect and view CPU usage profile.
+
+### Debugging deadlock
+
+The [debugging deadlock](hung_app.md) tutorial explores using the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.

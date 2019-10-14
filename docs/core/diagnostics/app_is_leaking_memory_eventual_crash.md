@@ -3,11 +3,24 @@ title: Debugging a memory leak - .NET Core
 description: A tutorial walk-through, debugging a memory leak in .NET Core.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 08/27/2019
+ms.date: 10/14/2019
 ---
 # Debugging a memory leak
 
+**This article applies to:** .NET Core 3.0 SDK and later versions
+
 In this scenario, the endpoint will slowly start leaking memory and eventually will result in an out of memory exception. To diagnose this scenario, we need several key pieces of diagnostics data.
+
+## Preparing
+
+The tutorial uses:
+
+- [Sample debug target](sample-debug-target.md) to trigger the scenario.
+- [dotnet-trace](dotnet-trace.md) to list processes.
+- [dotnet-counters](dotnet-counters.md) to check managed memory usage.
+- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
+
+The tutorial assumes the sample and tools are ready to use and you are running on **Linux**.
 
 ## Memory counters
 
@@ -15,19 +28,19 @@ Before we dig into collecting diagnostics data to help us root cause this scenar
 
 Lets run the [Sample debug target](sample-debug-target.md).
 
-```bash
+```dotnetcli
 dotnet run
 ```
 
 Then find the process ID using:
 
-```bash
+```dotnetcli
 dotnet-trace list-processes
 ```
 
 Before causing the leak, lets check our managed memory counters:
 
-```bash
+```dotnetcli
 dotnet-counters monitor --refresh-interval 1 -p 4807
 ```
 
@@ -35,7 +48,7 @@ dotnet-counters monitor --refresh-interval 1 -p 4807
 
 The output should be similar to:
 
-```
+```console
     Press p to pause, r to resume, q to quit.
       System.Runtime:
         CPU Usage (%)                                  4
@@ -49,11 +62,11 @@ The output should be similar to:
 
 Here we can see that right after startup, the managed heap memory is 4 MB.
 
-Now, let's hit the URL (http://localhost:5000/api/diagscenario/memleak/200000)
+Now, let's hit the URL http://localhost:5000/api/diagscenario/memleak/200000
 
 Rerun the dotnet-counters command. We should see an increase in memory usage as shown below:
 
-```
+```console
     Press p to pause, r to resume, q to quit.
       System.Runtime:
         CPU Usage (%)                                  4
@@ -75,7 +88,7 @@ When analyzing possible memory leaks, we need access to the apps memory heap. We
 
 Using the previous [Sample debug target](sample-debug-target.md) started above, run the following command to generate a core dump:
 
-```bash
+```dotnetcli
 sudo ./dotnet-dump collect -p 4807
 ```
 
@@ -88,7 +101,7 @@ sudo ./dotnet-dump collect -p 4807
 
 Now that we have a core dump generated, use the [dotnet-dump)](dotnet-dump.md) tool to analyze the dump:
 
-```bash
+```dotnetcli
 dotnet-dump analyze core_20190430_185145
 ```
 
@@ -99,8 +112,8 @@ Where `core_20190430_185145` is the name of the core dump you want to analyze.
 
 You'll be presented with a prompt where you can enter SOS commands. Commonly, the first thing we want to look at is the overall state of the managed heap:
 
-```bash
-dumpheap -stat
+```console
+> dumpheap -stat
 ```
 
 The (partial) output can be seen below:

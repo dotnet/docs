@@ -3,7 +3,7 @@ title: Sample debug target
 description: Introduction to the sample debug target used in the scenarios.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 08/27/2019
+ms.date: 10/14/2019
 ---
 # Sample debug target
 
@@ -15,7 +15,7 @@ The sample code is in [DiagnosticScenarios](https://github.com/dotnet/samples/bl
 
 The simplest way to acquire to source is to clone the [samples repo](https://github.com/dotnet/sample)
 
-```bash
+```console
 git clone git@github.com:dotnet/samples.git
 ```
 
@@ -23,13 +23,15 @@ git clone git@github.com:dotnet/samples.git
 
 After cloning the source, you can easily create the webapi using:
 
-```bash
+```console
 cd core/diagnostics/DiagnosticScenarios
 dotnet build
 dotnet run
 ```
 
 ## Target methods
+
+The target triggers undesirable behaviors when hitting specific URLs.
 
 ### Deadlock
 

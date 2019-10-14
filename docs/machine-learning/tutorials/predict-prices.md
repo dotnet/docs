@@ -183,7 +183,7 @@ Load the test dataset using the [LoadFromTextFile()](xref:Microsoft.ML.TextLoade
 
 [!code-csharp[LoadTestDataset](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#15 "Load the test dataset")]
 
-Next, transform the `Test` data by adding the following code to `EvaluateModel()`:
+Next, transform the `Test` data by adding the following code to `Evaluate()`:
 
 [!code-csharp[PredictWithTransformer](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#16 "Predict using the Transformer")]
 

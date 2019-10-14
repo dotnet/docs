@@ -23,7 +23,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 ProductName:Lawnmower  
 ProductName:Baby Monitor  
 ```  
@@ -67,7 +67,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 {http://www.adventure-works.com}ProductName:Lawnmower  
 {http://www.adventure-works.com}ProductName:Baby Monitor  
 ```  

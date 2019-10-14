@@ -271,7 +271,7 @@ Here is the complete list of [SPDX license identifiers](https://spdx.org/license
 
 The exact syntax of the license expressions is described below in [ABNF](https://tools.ietf.org/html/rfc5234).
 
-```cli
+```abnf
 license-id            = <short form license identifier from https://spdx.org/spdx-specification-21-web-version#h.luq9dgcle9mo>
 
 license-exception-id  = <short form license exception identifier from https://spdx.org/spdx-specification-21-web-version#h.ruv3yl8g6czd>
@@ -348,6 +348,12 @@ Specifies the URL for the repository where the source code for the package resid
 ### RepositoryType
 
 Specifies the type of the repository. Default is "git".
+
+### RepositoryBranch
+Specifies the name of the source branch in the repository. When the project is packaged in a NuGet package, it's added to the package metadata.
+
+### RepositoryCommit
+Optional repository commit or changeset to indicate which source the package was built against. `RepositoryUrl` must also be specified for this property to be included. When the project is packaged in a NuGet package, this commit or changeset is added to the package metadata.
 
 ### NoPackageAnalysis
 

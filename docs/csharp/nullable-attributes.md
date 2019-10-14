@@ -3,7 +3,7 @@ title: Upgrade APIs with attributes to define null expectations
 description: This article explains the motivations and techniques for adding descriptive attributes to describe the null state of arguments and return values from APIs
 ms.date: 07/31/2019
 ---
-# Update libraries to use nullable reference types and communicate nullable rules to callers.
+# Update libraries to use nullable reference types and communicate nullable rules to callers
 
 The addition of [nullable reference types](nullable-references.md) means you can declare whether or not a `null` value is allowed or expected for every variable. That provides a great experience as you write code. You get warnings if a non-nullable variable might be set to `null`. You get warnings if a nullable variable isn't null-checked before you dereference it. Updating your libraries can take time, but the payoffs are worth it. The more information you provide to the compiler about *when* a `null` value is allowed or prohibited, the better warnings users of your API will get. Let's start with a familiar example. Imagine your library has the following API to retrieve a resource string:
 
@@ -212,7 +212,7 @@ You specify unconditional postconditions using the following attributes:
 
 ## Specify conditional post-conditions: `NotNullWhen` and `MaybeNullWhen`
 
-You're likely familiar with the `string` method <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType>. This method returns `true` when the argument isn't null, and not the empty string. It is a form of null-check: Callers don't need to null-check the argument if the method returns `false`. To make a method like this nullable aware, you'd set the argument to a nullable type, and add the `NotNullWhen` attribute:
+You're likely familiar with the `string` method <xref:System.String.IsNullOrEmpty(System.String)?DisplayProperty=nameWithType>. This method returns `true` when the argument is null or an empty string. It's a form of null-check: Callers don't need to null-check the argument if the method returns `false`. To make a method like this nullable aware, you'd set the argument to a nullable type, and add the `NotNullWhen` attribute:
 
 ```csharp
 bool IsNullOrEmpty([NotNullWhen(false)]string? value);

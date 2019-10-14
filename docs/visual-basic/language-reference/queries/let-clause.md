@@ -14,7 +14,7 @@ Computes a value and assigns it to a new variable within the query.
   
 ## Syntax  
   
-```  
+```vb  
 Let variable = expression [, ...]  
 ```  
   

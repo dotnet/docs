@@ -7,7 +7,7 @@ ms.date: 10/01/2019
 ---
 # Trace for performance analysis utility (`dotnet-trace`)
 
-**This article applies to: .NET Core 3.0 SDK and later versions
+**This article applies to:** .NET Core 3.0 SDK and later versions
 
 ## Installing `dotnet-trace`
 
@@ -174,7 +174,7 @@ For example, if you want to collect runtime performance counter values, you can 
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1
 ```
 
-This command will tell the runtime counters to be reported once every second for lightweight health monitoring. Replacing `EventCounterIntervalSec=1` with a higher value (say 60) will allow you to collect a smaller trace with less granularity in the counter data.
+This command tells the runtime counters to be reported once every second for lightweight health monitoring. Replacing `EventCounterIntervalSec=1` with a higher value (for example, 60) allows you to collect a smaller trace with less granularity in the counter data.
 
 If you want to disable runtime events to reduce the overhead (and trace size) even further, you can use the following command to disable runtime events and managed stack profiler.
 
@@ -187,9 +187,8 @@ dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCoun
 The .NET Core runtime supports the following .NET providers. .NET Core uses the same keywords to enable both
 `Event Tracing for Windows (ETW)` and `EventPipe` traces.
 
- Provider Name                          | Information
- ------------------------------------- | ------------
-Microsoft-Windows-DotNETRuntime         | [The Runtime Provider](https://docs.microsoft.com/dotnet/framework/performance/clr-etw-providers#the-runtime-provider)<br>[CLR Runtime Keywords](https://docs.microsoft.com/dotnet/framework/performance/clr-etw-keywords-and-levels#runtime)
-
-Microsoft-Windows-DotNETRuntimeRundown  | [The Rundown Provider](https://docs.microsoft.com/dotnet/framework/performance/clr-etw-providers#the-rundown-provider)<br>[CLR Rundown Keywords](https://docs.microsoft.com/dotnet/framework/performance/clr-etw-keywords-and-levels#rundown)
-Microsoft-DotNETCore-SampleProfiler     | Enable the sample profiler
+| Provider name                            | Information |
+|------------------------------------------|-------------|
+| `Microsoft-Windows-DotNETRuntime`        | [The Runtime Provider](../../framework/performance/clr-etw-providers.md#the-runtime-provider)<br>[CLR Runtime Keywords](../../framework/performance/clr-etw-keywords-and-levels.md#runtime) |
+| `Microsoft-Windows-DotNETRuntimeRundown` | [The Rundown Provider](../../framework/performance/clr-etw-providers.md#the-rundown-provider)<br>[CLR Rundown Keywords](../../framework/performance/clr-etw-keywords-and-levels.md#rundown) |
+| `Microsoft-DotNETCore-SampleProfiler`    | Enables the sample profiler. |

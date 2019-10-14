@@ -49,10 +49,10 @@ This change doesn't apply to all binaries referenced via `Microsoft.AspNetCore.A
 
 - `Microsoft.Extensions` libraries that continue to target .NET Standard will be available as NuGet packages (see https://github.com/aspnet/Extensions)
 - APIs produced by the ASP.NET Core team that aren't part of `Microsoft.AspNetCore.App`. For example, the following components are available as NuGet packages:
-    - Entity Framework Core
-    - APIs that provide third-party integration
-    - Experimental features
-    - APIs with dependencies that couldn't [fulfill the requirements to be in the shared framework][shared-fx-guidance]
+  - Entity Framework Core
+  - APIs that provide third-party integration
+  - Experimental features
+  - APIs with dependencies that couldn't [fulfill the requirements to be in the shared framework][shared-fx-guidance]
 - Extensions to MVC that maintain support for Json.NET. An API will be provided as a NuGet package to support using Json.NET and MVC.
 - The SignalR .NET client will continue to support .NET Standard and ship as a NuGet package. It's intended for use on many .NET runtimes, such as Xamarin and UWP.
 

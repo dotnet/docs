@@ -1,4 +1,4 @@
-### ResetSendPing and ResetTimeout methods removed from SignalR HubConnection
+### SignalR: HubConnection ResetSendPing and ResetTimeout methods removed
 
 The `ResetSendPing` and `ResetTimeout` methods were removed from the SignalR `HubConnection` API. These methods were originally intended only for internal use but were made public in ASP.NET Core 2.2. These methods won't be available starting in the ASP.NET Core 3.0 Preview 4 release. For discussion, see [aspnet/AspNetCore#8543](https://github.com/aspnet/AspNetCore/issues/8543).
 

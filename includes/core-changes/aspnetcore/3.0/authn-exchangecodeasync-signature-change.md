@@ -1,4 +1,4 @@
-### OAuthHandler ExchangeCodeAsync signature change
+### Authentication: OAuthHandler ExchangeCodeAsync signature changed
 
 In ASP.NET Core 3.0, the signature of `OAuthHandler.ExchangeCodeAsync` was changed from:
 

@@ -1,4 +1,4 @@
-### AllowSynchronousIO disabled in all servers
+### HTTP: Synchronous IO disabled in all servers
 
 Starting with ASP.NET Core 3.0, synchronous server operations are disabled by default.
 

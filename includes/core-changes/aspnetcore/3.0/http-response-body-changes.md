@@ -1,4 +1,4 @@
-### HttpResponse body infrastructure changes
+### HTTP: Response body infrastructure changes
 
 The infrastructure backing an HTTP response body has changed. If you're using `HttpResponse` directly, you shouldn't need to make any code changes. Read further if you're wrapping or replacing `HttpResponse.Body` or accessing `HttpContext.Features`.
 

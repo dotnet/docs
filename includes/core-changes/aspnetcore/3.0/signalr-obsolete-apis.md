@@ -1,4 +1,4 @@
-### UseSignalR and UseConnections methods are marked obsolete
+### SignalR: UseSignalR and UseConnections methods marked obsolete
 
 The methods `UseConnections` and `UseSignalR` and the classes `ConnectionsRouteBuilder` and `HubRouteBuilder` are marked as obsolete in ASP.NET Core 3.0.
 

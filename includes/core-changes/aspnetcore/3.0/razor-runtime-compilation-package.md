@@ -1,4 +1,4 @@
-### Razor file runtime compilation moved to a package
+### Razor: Runtime compilation moved to a package
 
 Support for runtime compilation of Razor views and Razor Pages has moved to a separate package.
 

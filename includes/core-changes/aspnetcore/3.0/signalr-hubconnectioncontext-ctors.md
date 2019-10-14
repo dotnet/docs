@@ -1,4 +1,4 @@
-### SignalR HubConnectionContext constructors changed
+### SignalR: HubConnectionContext constructors changed
 
 SignalR's `HubConnectionContext` constructors changed to accept an options type, rather than multiple parameters, to future-proof adding options. This change replaces two constructors with a single constructor that accepts an options type.
 

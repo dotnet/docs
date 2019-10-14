@@ -1,4 +1,8 @@
-### ASP.NET Core 3.0 only runs on .NET Core
+### Target framework: .NET Framework support dropped
+
+Starting with ASP.NET Core 3.0, .NET Framework is an unsupported target framework.
+
+#### Change description
 
 .NET Framework will get less of the new platform and language features that come to .NET Core. The reasoning is the in-place update nature of .NET Framework and the decision to limit changes there that might break existing apps. To ensure ASP.NET Core can use the improvements coming to .NET Core, ASP.NET Core will only run on .NET Core starting from 3.0. You can think of ASP.NET Core 3.0 as being part of .NET Core.
 

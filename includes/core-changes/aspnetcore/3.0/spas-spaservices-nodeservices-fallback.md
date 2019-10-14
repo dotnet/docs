@@ -1,4 +1,4 @@
-### SpaServices and NodeServices no longer fall back to console logger by default
+### SPAs: SpaServices and NodeServices no longer fall back to console logger
 
 <xref:Microsoft.AspNetCore.SpaServices?displayProperty=nameWithType> and <xref:Microsoft.AspNetCore.NodeServices?displayProperty=nameWithType> won't display console logs unless logging is configured.
 

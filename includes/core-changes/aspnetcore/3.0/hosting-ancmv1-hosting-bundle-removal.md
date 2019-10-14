@@ -1,4 +1,4 @@
-### AspNetCoreModule V1 removed from Windows Hosting Bundle
+### Hosting: AspNetCoreModule V1 removed from Windows Hosting Bundle
 
 Starting with ASP.NET Core 3.0, the Windows Hosting Bundle won't contain AspNetCoreModule (ANCM) V1.
 

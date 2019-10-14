@@ -1,4 +1,4 @@
-### Make "pubternal" types in ResponseCaching internal
+### Caching: ResponseCaching "pubternal" types changed to internal
 
 In ASP.NET Core 3.0, "pubternal" types in `ResponseCaching` have been changed to `internal`.
 

@@ -1,4 +1,4 @@
-### Removed deprecated HttpContext.Authentication property
+### Authentication: HttpContext.Authentication property removed
 
 The deprecated `Authentication` property on `HttpContext` has been removed.
 

@@ -1,4 +1,4 @@
-### SignalR JavaScript client package name changed
+### SignalR: JavaScript client package name changed
 
 In ASP.NET Core 3.0 Preview 7, the SignalR JavaScript client package name changed from `@aspnet/signalr` to `@microsoft/signalr`. The name change reflects the fact that SignalR is useful in more than just ASP.NET Core apps, thanks to the Azure SignalR Service.
 

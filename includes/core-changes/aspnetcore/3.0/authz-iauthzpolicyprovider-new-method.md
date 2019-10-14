@@ -1,4 +1,4 @@
-### IAuthorizationPolicyProvider implementations require a new method
+### Authorization: IAuthorizationPolicyProvider implementations require new method
 
 In ASP.NET Core 3.0, a new `GetFallbackPolicyAsync` method was added to `IAuthorizationPolicyProvider`. This fallback policy is used by the authorization middleware when no policy is specified.
 

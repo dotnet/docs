@@ -1,4 +1,4 @@
-### Removed DefaultHttpContext extensibility
+### HTTP: DefaultHttpContext extensibility removed
 
 As part of ASP.NET Core 3.0 performance improvements, the extensibility of `DefaultHttpContext` was removed. The class is now `sealed`. For more information, see [aspnet/AspNetCore#6504](https://github.com/aspnet/AspNetCore/pull/6504).
 

@@ -1,4 +1,4 @@
-### ObjectPoolProvider removed from WebHostBuilder dependencies
+### Hosting: ObjectPoolProvider removed from WebHostBuilder dependencies
 
 As part of making ASP.NET Core more pay for play, the `ObjectPoolProvider` was removed from the main set of dependencies. Specific components relying on `ObjectPoolProvider` now add it themselves.
 

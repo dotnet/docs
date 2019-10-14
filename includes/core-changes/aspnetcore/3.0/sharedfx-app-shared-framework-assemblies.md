@@ -1,4 +1,4 @@
-### Assemblies removed from Microsoft.AspNetCore.App
+### Shared framework: Assemblies removed from Microsoft.AspNetCore.App
 
 Starting in ASP.NET Core 3.0, the ASP.NET Core shared framework (`Microsoft.AspNetCore.App`) only contains first-party assemblies that are fully developed, supported, and serviceable by Microsoft. 
 

@@ -1,4 +1,4 @@
-### Kestrel transport abstractions removed and made public
+### Kestrel: Transport abstractions removed and made public
 
 As part of moving away from "pubternal" APIs, the Kestrel transport layer APIs are exposed as a public interface in the `Microsoft.AspNetCore.Connections.Abstractions` library.
 

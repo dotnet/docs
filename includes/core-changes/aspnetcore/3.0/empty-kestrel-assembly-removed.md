@@ -1,4 +1,4 @@
-### Empty Kestrel HTTPS assembly removed
+### Kestrel: Empty HTTPS assembly removed
 
 The assembly <xref:Microsoft.AspNetCore.Server.Kestrel.Https?displayProperty=fullName> has been removed.
 

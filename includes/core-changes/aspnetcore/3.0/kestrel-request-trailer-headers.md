@@ -1,4 +1,4 @@
-### Kestrel request trailer headers moved to new collection
+### Kestrel: Request trailer headers moved to new collection
 
 In prior versions, Kestrel added HTTP/1.1 chunked trailer headers into the request headers collection when the request body was read to the end. This behavior caused concerns about ambiguity between headers and trailers. The decision was made to move the trailers to a new collection.
 

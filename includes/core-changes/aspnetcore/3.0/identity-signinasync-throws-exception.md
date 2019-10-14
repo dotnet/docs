@@ -1,4 +1,4 @@
-### SignInAsync throws exception for an unauthenticated identity
+### Identity: SignInAsync throws exception for unauthenticated identity
 
 By default, `SignInAsync` throws an exception for principals / identities in which `IsAuthenticated` is `false`.
 

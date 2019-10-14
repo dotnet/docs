@@ -1,4 +1,4 @@
-### Async suffix trimmed from controller action names
+### MVC: Async suffix trimmed from controller action names
 
 As part of addressing [aspnet/AspNetCore#4849](https://github.com/aspnet/AspNetCore/issues/4849), ASP.NET Core MVC trims the suffix `Async` from action names by default. Starting with ASP.NET Core 3.0, this change affects both routing and link generation.
 

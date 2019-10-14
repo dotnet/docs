@@ -1,4 +1,4 @@
-### Deprecated ASP.NET Core MVC precompilation tool
+### MVC: Precompilation tool deprecated
 
 In ASP.NET Core 1.1, the `Microsoft.AspNetCore.Mvc.Razor.ViewCompilation` (MVC precompilation tool) package was introduced to add support for publish-time compilation of Razor files (*.cshtml* files). In ASP.NET Core 2.1, the [Razor SDK](/aspnet/core/razor-pages/sdk?view=aspnetcore-2.1) was introduced to expand upon features of the precompilation tool. The Razor SDK added support for build- and publish-time compilation of Razor files. The SDK verifies the correctness of *.cshtml* files at build time while improving on app startup time. The Razor SDK is on by default, and no gesture is required to start using it.
 

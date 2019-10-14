@@ -1,4 +1,4 @@
-### DataProtection.AzureStorage uses new Azure Storage APIs
+### Data Protection: DataProtection.AzureStorage uses new Azure Storage APIs
 
 <xref:Microsoft.AspNetCore.DataProtection.AzureStorage?displayProperty=fullName> depends on the [Azure Storage libraries](https://github.com/Azure/azure-storage-net). These libraries renamed their assemblies, packages, and namespaces. Starting in ASP.NET Core 3.0, `Microsoft.AspNetCore.DataProtection.AzureStorage` uses the new `Microsoft.Azure.Storage.`-prefixed APIs and packages.
 

@@ -1,4 +1,4 @@
-### DebugLogger class made internal
+### Logging: DebugLogger class made internal
 
 Prior to ASP.NET Core 3.0, `DebugLogger`'s access modifier was `public`. In ASP.NET Core 3.0, the access modifier changed to `internal`.
 

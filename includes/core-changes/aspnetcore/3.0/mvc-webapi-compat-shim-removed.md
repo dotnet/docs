@@ -1,4 +1,4 @@
-### Removed Microsoft.AspNetCore.Mvc.WebApiCompatShim
+### MVC: Web API compatibility shim removed
 
 Starting with ASP.NET Core 3.0, the `Microsoft.AspNetCore.Mvc.WebApiCompatShim` package is no longer available.
 

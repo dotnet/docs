@@ -1,4 +1,4 @@
-### Obsolete session APIs removed 
+### Session state: Obsolete APIs removed 
 
 Obsolete APIs for configuring session cookies were removed. For more information, see [aspnet/Announcements#257](https://github.com/aspnet/Announcements/issues/257).
 

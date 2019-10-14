@@ -1,4 +1,4 @@
-### IHostingEnvironment and IApplicationLifetime types marked obsolete and replaced
+### Hosting: IHostingEnvironment and IApplicationLifetime types marked obsolete and replaced
 
 New types have been introduced to replace existing `IHostingEnvironment` and `IApplicationLifetime` types.
 

@@ -1,4 +1,4 @@
-### Newtonsoft.Json types replaced in Microsoft.AspNetCore.Authentication APIs
+### Authentication: Newtonsoft.Json types replaced
 
 In ASP.NET Core 3.0, `Newtonsoft.Json` types used in Authentication APIs have been replaced with `System.Text.Json` types. Except for the following cases, basic usage of the Authentication packages remains unaffected:
 

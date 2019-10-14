@@ -1,4 +1,4 @@
-### Generic host restricts Startup constructor injection
+### Hosting: Generic host restricts Startup constructor injection
 
 The only types the generic host supports for `Startup` class constructor injection are `IHostEnvironment`, `IWebHostEnvironment`, and `IConfiguration`. Apps using `WebHost` are unaffected.
 

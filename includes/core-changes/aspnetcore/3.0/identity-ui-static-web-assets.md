@@ -1,4 +1,4 @@
-### Identity UI uses static web assets feature
+### Identity: UI uses static web assets feature
 
 ASP.NET Core 3.0 introduced a static web assets feature, and Identity UI has adopted it.
 

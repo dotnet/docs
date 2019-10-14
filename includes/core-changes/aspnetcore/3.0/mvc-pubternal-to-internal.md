@@ -1,4 +1,4 @@
-### Make "pubternal" types in MVC internal
+### MVC: "Pubternal" types changed to internal
 
 In ASP.NET Core 3.0, all "pubternal" types in MVC were updated to either be `public` in a supported namespace or `internal` as appropriate.
 

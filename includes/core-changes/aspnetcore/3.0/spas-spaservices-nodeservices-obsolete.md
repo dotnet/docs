@@ -1,4 +1,4 @@
-### SpaServices and NodeServices are obsolete
+### SPAs: SpaServices and NodeServices marked obsolete
 
 The contents of the following NuGet packages have all been unnecessary since ASP.NET Core 2.1. Consequently, the following packages are being marked as obsolete:
 

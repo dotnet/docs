@@ -1,4 +1,4 @@
-### Google+ authentication deprecation and replacement
+### Authentication: Google+ deprecated and replaced
 
 Google is starting to [shut down](https://developers.google.com/+/api-shutdown) Google+ Sign-in for apps as early as January 28, 2019.
 

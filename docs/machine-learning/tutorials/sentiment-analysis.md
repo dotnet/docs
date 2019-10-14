@@ -56,10 +56,9 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
     [!code-csharp[AddUsings](~/samples/machine-learning/tutorials/SentimentAnalysis/Program.cs#AddUsings "Add necessary usings")]
 
-2. Create two global fields to hold the recently downloaded dataset file path and the saved model file path:
+2. Create this global field to hold the recently downloaded dataset file path:
 
     - `_dataPath` has the path to the dataset used to train the model.
-    - `_modelPath` has the path where the trained model is saved.
 
 3. Add the following code to the line right above the `Main` method to specify the paths:
 

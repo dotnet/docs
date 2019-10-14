@@ -30,7 +30,7 @@ In this tutorial, you learn how to:
 - [Microsoft.ML NuGet Package](https://www.nuget.org/packages/Microsoft.ML/)
 - [Microsoft.ML.ImageAnalytics NuGet Package](https://www.nuget.org/packages/Microsoft.ML.ImageAnalytics/)
 - [Microsoft.ML.OnnxTransformer NuGet Package](https://www.nuget.org/packages/Microsoft.ML.OnnxTransformer/)
-- [Tiny YOLOv2 pre-trained model](https://github.com/onnx/models/tree/master/tiny_yolov2)
+- [Tiny YOLOv2 pre-trained model](https://github.com/onnx/models/tree/master/vision/object_detection_segmentation/tiny_yolov2)
 - [Netron](https://github.com/lutzroeder/netron) (optional)
 
 ## ONNX object detection sample overview
@@ -703,7 +703,7 @@ To see the images with bounding boxes, navigate to the `assets/images/output/` d
 
 Congratulations! You've now successfully built a machine learning model for object detection by reusing a pre-trained `ONNX` model in ML.NET.
 
-You can find the source code for this tutorial at the [dotnet/samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx) repository.
+You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx) repository.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
@@ -716,4 +716,4 @@ In this tutorial, you learned how to:
 
 Check out the Machine Learning samples GitHub repository to explore an expanded object detection sample.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/end-to-end-apps/DeepLearning_ObjectDetection_Onnx)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx)

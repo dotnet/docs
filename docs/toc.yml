@@ -271,6 +271,14 @@
       href: core/diagnostics/managed-debuggers.md
     - name: Logging and tracing
       href: core/diagnostics/logging-tracing.md
+    - name: .NET Core CLI global tools
+      items:
+      - name: dotnet-counters
+        href: core/diagnostics/dotnet-counters.md
+      - name: dotnet-dump
+        href: core/diagnostics/dotnet-dump.md
+      - name: dotnet-trace
+        href: core/diagnostics/dotnet-trace.md
   - name: Unit Testing
     href: core/testing/index.md
     items:

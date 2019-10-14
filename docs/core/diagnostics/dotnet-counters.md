@@ -31,11 +31,11 @@ dotnet-counters [-h|--help] [--version] <command>
 
 - **`--version`**
 
-Display the version of the dotnet-counters utility.
+  Displays the version of the dotnet-counters utility.
 
 - **`-h|--help`**
 
-Show command-line help.
+  Shows command-line help.
 
 ## Commands
 
@@ -46,7 +46,7 @@ Show command-line help.
 
 ## dotnet-counters list
 
-Display a list of counter names and descriptions, grouped by provider.
+Displays a list of counter names and descriptions, grouped by provider.
 
 ### Synopsis
 
@@ -54,7 +54,7 @@ Display a list of counter names and descriptions, grouped by provider.
 dotnet-counters list [-h|--help]
 ```
 
-### Example - dotnet-counters list
+### Example
 
 ```console
 > dotnet-counters list
@@ -72,62 +72,62 @@ dotnet-counters list [-h|--help]
 
 ## dotnet-counters monitor
 
+Displays periodically refreshing values of selected counters.
+
 ### Synopsis
 
-Display periodically refreshing values of selected counters.
-
 ```console
-dotnet-counters monitor [-h|--help] [-p|--process-id <pid>] [--refreshInterval <sec>] [counter_list]
+dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [counter_list]
 ```
 
 ### Options
 
-- **`-p|--process-id`**
+- **`-p|--process-id <PID>`**
 
-The ID of the process that will be monitored.
+  The ID of the process to be monitored.
 
-- **`--refresh-interval`**
+- **`--refresh-interval <SECONDS>`**
 
-The number of seconds to delay between updating the displayed counters
+  The number of seconds to delay between updating the displayed counters
 
-- **`counter_list`**
+- **`counter_list <COUNTERS>`**
 
-A space separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying `counter_name`, then all counters will be shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
+  A space separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying `counter_name`, then all counters are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
 
-### Examples - dotnet-counters monitor
+### Examples
 
-- Monitoring all counters from `System.Runtime` at a refresh interval of 3 seconds:
+- Monitor all counters from `System.Runtime` at a refresh interval of 3 seconds:
 
-```console
-> dotnet-counters monitor --process-id 1902  --refresh-interval 3 System.Runtime
+  ```console
+  > dotnet-counters monitor --process-id 1902  --refresh-interval 3 System.Runtime
 
-Press p to pause, r to resume, q to quit.
-  System.Runtime:
-    CPU Usage (%)                                 24
-    Working Set (MB)                            1982
-    GC Heap Size (MB)                            811
-    Gen 0 GC / second                             20
-    Gen 1 GC / second                              4
-    Gen 2 GC / second                              1
-    Number of Exceptions / sec                     4
-```
+  Press p to pause, r to resume, q to quit.
+    System.Runtime:
+      CPU Usage (%)                                 24
+      Working Set (MB)                            1982
+      GC Heap Size (MB)                            811
+      Gen 0 GC / second                             20
+      Gen 1 GC / second                              4
+      Gen 2 GC / second                              1
+      Number of Exceptions / sec                     4
+  ```
 
-- Monitoring just CPU usage and GC heap size from `System.Runtime`:
+- Monitor just CPU usage and GC heap size from `System.Runtime`:
 
-```console
-> dotnet-counters monitor --process-id 1902 System.Runtime[cpu-usage,gc-heap-size]
+  ```console
+  > dotnet-counters monitor --process-id 1902 System.Runtime[cpu-usage,gc-heap-size]
 
-Press p to pause, r to resume, q to quit.
-  System.Runtime:
-    CPU Usage (%)                                 24
-    GC Heap Size (MB)                            811
-```
+  Press p to pause, r to resume, q to quit.
+    System.Runtime:
+      CPU Usage (%)                                 24
+      GC Heap Size (MB)                            811
+  ```
 
-- Monitoring EventCounter values from user-defined EventSource: (see https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md for details.)
+- Monitor `EventCounter` values from user-defined `EventSource`. For more information, see [Tutorial: How to measure performance for very frequent events using EventCounters](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md).
 
-```console
-> dotnet-counters monitor --process-id 1902 Samples-EventCounterDemos-Minimal
+  ```console
+  > dotnet-counters monitor --process-id 1902 Samples-EventCounterDemos-Minimal
 
-Press p to pause, r to resume, q to quit.
-    request                                      100
-```
+  Press p to pause, r to resume, q to quit.
+      request                                      100
+  ```

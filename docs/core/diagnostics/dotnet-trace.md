@@ -53,8 +53,8 @@ Collects a diagnostic trace from a running process.
 ### Synopsis
 
 ```console
-dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--output <trace-file-path>]
-    [--providers] [--profile <profile-name>] [--format <NetTrace|Speedscope>]
+dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--output]
+    [--providers] [--profile <profile-name>] [--format]
 ```
 
 ### Options
@@ -96,22 +96,24 @@ Converts `nettrace` traces to alternate formats for use with alternate trace ana
 ### Synopsis
 
 ```console
-dotnet-trace convert [-h|--help] [--format <NetTrace|Speedscope>] [-o|--output <output-filename>] <input-filename>
+dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 ```
 
-### Options
-
-- **`[--format <NetTrace|Speedscope>]`**
-
-  Sets the output format for the trace file conversion.
-
-- **`[-o|--output <output-filename>]`**
-
-  Output filename. Extension of target format will be added.
+### Arguments
 
 - **`<input-filename>`**
 
-  Input trace file to be converted. Defaults to 'trace.nettrace'.
+  Input trace file to be converted. Defaults to *trace.nettrace*.
+
+### Options
+
+- **`--format <NetTrace|Speedscope>`**
+
+  Sets the output format for the trace file conversion.
+
+- **`-o|--output <output-filename>`**
+
+  Output filename. Extension of target format will be added.
 
 ## dotnet-trace list-processes
 

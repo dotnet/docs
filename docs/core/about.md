@@ -107,7 +107,7 @@ Because .NET Core supports side-by-side installation and its runtime is complete
 
 ### Comparison with Mono
 
-[Mono](https://www.mono-project.com/) is the original cross-platform of .NET. It started out as an [open-source]([open-source](https://github.com/mono/mono)) alternative to .NET Framework and transitioned to targeting mobile devices as iOS and Android devices became popular. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft to provide a compatible implementation.
+[Mono](https://www.mono-project.com/) is the original cross-platform of .NET. It started out as an [open-source](https://github.com/mono/mono)) alternative to .NET Framework and transitioned to targeting mobile devices as iOS and Android devices became popular. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft to provide a compatible implementation.
 
 The major differences between .NET Core and Mono:
 

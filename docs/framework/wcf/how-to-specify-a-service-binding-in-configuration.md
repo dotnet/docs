@@ -15,7 +15,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
   
  For the source copy of this example, see [BasicBinding](./samples/basicbinding.md).  
   
-### To specify the BasicHttpBinding to use to configure the service  
+## To specify the BasicHttpBinding to use to configure the service  
   
 1. Define a service contract for the type of service.  
   
@@ -73,7 +73,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
     <%@ServiceHost language=c# Service="CalculatorService" %>   
     ```  
   
-### To modify the default values of the binding properties  
+## To modify the default values of the binding properties  
   
 1. To modify one of the default property values of the <xref:System.ServiceModel.WSHttpBinding>, create a new binding configuration name - `<binding name="Binding1">` - within the [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) element and set the new values for the attributes of the binding in this binding element. For example, to change the default open and close timeout values of 1 minute to 2 minutes, add the following to the configuration file.  
   

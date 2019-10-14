@@ -9,11 +9,11 @@ Using orchestrators for production-ready applications is essential if your appli
 
 Figure 4-6 illustrates deployment into a cluster of an application composed of multiple microservices (containers).
 
-![Diagram showing Composed Docker applications in a cluster.](./media/orchestrate-high-scalability-availability/composed-docker-applications-cluster.png)
+![Diagram showing composed Docker applications in a cluster.](./media/orchestrate-high-scalability-availability/composed-docker-applications-cluster.png)
 
 **Figure 4-6**. A cluster of containers
 
-You use one container for each service instance. Docker containers are “units of deployment” and a container is an instance of a Docker. A host handles many containers. It looks like a logical approach. But how are you handling load balancing, routing, and orchestrating these composed applications?
+It looks like a logical approach. But how are you handling load balancing, routing, and orchestrating these composed applications?
 
 The Docker command-line interface (CLI) meets the needs of managing one container on one host, but it falls short when it comes to managing multiple containers deployed on multiple hosts for more complex distributed applications. In most cases, you need a management platform that will automatically start containers, scale out containers with multiple instances per image, suspend them, or shut them down when needed, and ideally also control how they access resources like the network and data storage.
 
@@ -48,7 +48,7 @@ AKS provides a way to simplify the creation, configuration, and management of a 
 
 Azure Kubernetes Service optimizes the configuration of popular Docker clustering open-source tools and technologies specifically for Azure. You get an open solution that offers portability for both your containers and your application configuration. You select the size, the number of hosts, and the orchestrator tools, and AKS handles everything else.
 
-![Diagram showing a Kubernetes cluster structure.](media/orchestrate-high-scalability-availability/kubernetes-cluster-simplified-structure.png)
+![Diagram showing a Kubernetes cluster structure.](./media/orchestrate-high-scalability-availability/kubernetes-cluster-simplified-structure.png)
 
 **Figure 4-7**. Kubernetes cluster's simplified structure and topology
 
@@ -58,7 +58,7 @@ Figure 4-7 shows the structure of a Kubernetes cluster where a master node (VM) 
 
 In the development environment that [Docker announced in July 2018](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/), Kubernetes can also run in a single development machine (Windows 10 or macOS) by just installing [Docker Desktop](https://www.docker.com/community-edition). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-8.
 
-![Diagram showing Kubernetes on a dev machine then deployed to AKS.](media/orchestrate-high-scalability-availability/kubernetes-development-environment.png)
+![Diagram showing Kubernetes on a dev machine then deployed to AKS.](./media/orchestrate-high-scalability-availability/kubernetes-development-environment.png)
 
 **Figure 4-8**. Running Kubernetes in dev machine and the cloud
 
@@ -90,9 +90,9 @@ As mentioned, Azure Dev Spaces uses Helm charts when deploying container-based a
 
 Azure Dev Spaces helps development teams be more productive on Kubernetes because it allows you to rapidly iterate and debug code directly in a global Kubernetes cluster in Azure by just using Visual Studio 2017 or Visual Studio Code. That Kubernetes cluster in Azure is a shared managed Kubernetes cluster, so your team can collaboratively work together. You can develop your code in isolation, then deploy to the global cluster and do end-to-end testing with other components without replicating or mocking up dependencies.
 
-As shown in figure 4-9, the most differentiating feature in Azure Dev Spaces is the capability of creating 'spaces' that can run integrated to the rest of the global deployment in the cluster.
+As shown in figure 4-9, the most differentiating feature in Azure Dev Spaces is the capability of creating 'spaces' that can run integrated to the rest of the global deployment in the cluster:
 
-![Diagram showing the use of multiple spaces in Azure Dev Spaces.](media/orchestrate-high-scalability-availability/use-multiple-spaces-azure-dev.png)
+![Diagram showing the use of multiple spaces in Azure Dev Spaces.](./media/orchestrate-high-scalability-availability/use-multiple-spaces-azure-dev.png)
 
 **Figure 4-9**. Using multiple spaces in Azure Dev Spaces
 
@@ -135,7 +135,7 @@ As shown in Figure 4-10, you can create and run microservices in Service Fabric 
 
 **Figure 4-10**. Deploying microservices as processes or as containers in Azure Service Fabric
 
-In the first image, you see microservices as processes where each node runs one process for each microservice. IN the second image, you see microservices as containers where each node runs Docker with several containers, one container per microservice. Service Fabric clusters based on Linux and Windows hosts can run Docker Linux containers and Windows Containers, respectively.
+In the first image, you see microservices as processes, where each node runs one process for each microservice. In the second image, you see microservices as containers, where each node runs Docker with several containers, one container per microservice. Service Fabric clusters based on Linux and Windows hosts can run Docker Linux containers and Windows Containers, respectively.
 
 For up-to-date information about containers support in Azure Service Fabric, see [Service Fabric and containers](https://docs.microsoft.com/azure/service-fabric/service-fabric-containers-overview).
 
@@ -163,7 +163,7 @@ A Service Fabric application can run several containers accessing an external da
 
 Note that you can mix services in processes, and services in containers, in the same Service Fabric application, as shown in Figure 4-13.
 
-![Diagram showing an app with services and containers in the same node.](./media/orchestrate-high-scalability-availability/business-microservice-mapped-to-service-fabric-application.png)
+![Diagram showing services in processes and in containers in the same app.](./media/orchestrate-high-scalability-availability/business-microservice-mapped-to-service-fabric-application.png)
 
 **Figure 4-13**. Business microservice mapped to a Service Fabric application with containers and stateful services
 
@@ -179,7 +179,7 @@ But the services themselves can also be stateful in Service Fabric, which means 
 
 **Figure 4-14**. Stateless versus stateful microservices
 
-In stateless services the state (persistence, database) is kept out of the microservice. In stateful services state is kept inside the microservice. A stateless approach is perfectly valid and is easier to implement than stateful microservices, since the approach is similar to traditional and well-known patterns. But stateless microservices impose latency between the process and data sources. They also involve more moving pieces when you're trying to improve performance with additional cache and queues. The result is that you can end up with complex architectures that have too many tiers.
+In stateless services, the state (persistence, database) is kept out of the microservice. In stateful services, state is kept inside the microservice. A stateless approach is perfectly valid and is easier to implement than stateful microservices, since the approach is similar to traditional and well-known patterns. But stateless microservices impose latency between the process and data sources. They also involve more moving pieces when you're trying to improve performance with additional cache and queues. The result is that you can end up with complex architectures that have too many tiers.
 
 In contrast, [stateful microservices](https://docs.microsoft.com/azure/service-fabric/service-fabric-reliable-services-introduction#when-to-use-reliable-services-apis) can excel in advanced scenarios, because there's no latency between the domain logic and data. Heavy data processing, gaming back ends, databases as a service, and other low-latency scenarios all benefit from stateful services, which enable local state for faster access.
 
@@ -197,7 +197,7 @@ Azure Service Fabric Mesh is a fully managed service that enables developers to 
 
 As shown in figure 4-15, applications hosted on Service Fabric Mesh run and scale without you worrying about the infrastructure powering it.
 
-![Diagram showing deployment from a local repo to Service Fabric Mesh.](media/orchestrate-high-scalability-availability/deploy-microservice-containers-apps-service-fabric-mesh.png)
+![Diagram showing deployment from a local repository to Service Fabric Mesh.](media/orchestrate-high-scalability-availability/deploy-microservice-containers-apps-service-fabric-mesh.png)
 
 **Figure 4-15**. Deploying a microservice/containers application to Service Fabric Mesh
 

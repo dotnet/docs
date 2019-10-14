@@ -37,9 +37,9 @@ You can also use [Azure App Services](https://azure.microsoft.com/services/app-s
 
 You can deploy multiple VMs as Docker hosts and run any number of containers per VM. Then, by using an Azure Load Balancer, as illustrated in the Figure 4-3, you can manage scaling.
 
-![A diagram showing a monolithic app scaled-out to different hosts.](./media/monolithic-applications/multiple-hosts-from-single-docker-container.png)
+![A diagram showing a monolithic app scaled out to different hosts.](./media/monolithic-applications/multiple-hosts-from-single-docker-container.png)
 
-**Figure 4-3**. Multiple hosts scaling-out a single Docker application apps/containers
+**Figure 4-3**. Multiple hosts scaling out a single Docker application
 
 You can manage the deployment of the hosts themselves via traditional deployment techniques.
 

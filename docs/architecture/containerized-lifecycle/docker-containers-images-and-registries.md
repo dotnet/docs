@@ -13,7 +13,7 @@ You store images in a registry, that acts as a library of images. You need a reg
 
 Figure 1-4 shows how images and registries in Docker relate to other components. It also shows the multiple registry offerings from vendors.
 
-![A diagram showing the basic taxonomy in Docker.](./media/docker-containers-images-and-registries/taxonomy-of-docker-terms-and-concepts.png)
+![A diagram showing the basic taxonomy in Docker.](./media/docker-containers-images-and-registries/taxonomy-docker-terms-concepts.png)
 
 **Figure 1-4**. Taxonomy of Docker terms and concepts
 

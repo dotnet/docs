@@ -46,7 +46,7 @@ Let's create the code to demonstrate these differences.
 
 Start by creating the interface that defines the behavior for all lights:
 
-[!code-csharp[Declare base interface](~/samples/csharp/tutorials/mixins-with-interfaces/UnusedSampleCode.cs?name=SnippetILightInterfaceV1)]
+[!code-csharp[Declare base interface](~/samples/csharp/tutorials/mixins-with-interfaces/UnusedExampleCode.cs?name=SnippetILightInterfaceV1)]
 
 A basic overhead light fixture might implement this interface as shown in the following code:
 
@@ -54,7 +54,7 @@ A basic overhead light fixture might implement this interface as shown in the fo
 
 In this tutorial, the code doesn't drive IoT devices, but emulates those activities by writing messages to the console. You can explore the code without automating your house.
 
-Next, let's define the interfaces for a light that can automatically turn off after a timeout:
+Next, let's define the interface for a light that can automatically turn off after a timeout:
 
 [!code-csharp[pure Timer interface](~/samples/csharp/tutorials/mixins-with-interfaces/UnusedExampleCode.cs?name=SnippetPureTimerInterface)]
 
@@ -62,13 +62,13 @@ You could add a basic implementation to the overhead light, but a better solutio
 
 [!code-csharp[Timer interface](~/samples/csharp/tutorials/mixins-with-interfaces/ITimerLight.cs?name=SnippetTimerLightFinal)]
 
-By adding that change, the `OverheadLight` can implement the timer function by declaring support for the interface:
+By adding that change, the `OverheadLight` class can implement the timer function by declaring support for the interface:
 
 ```csharp
-public class OverheadLight : ITimerLight
+public class OverheadLight : ITimerLight { }
 ```
 
-A different light type may support a more sophisticated protocol. It can provide its own implementation fro `TurnOnFor`, as shown in the following code:
+A different light type may support a more sophisticated protocol. It can provide its own implementation for `TurnOnFor`, as shown in the following code:
 
 [!code-csharp[Override the timer function](~/samples/csharp/tutorials/mixins-with-interfaces/HalogenLight.cs?name=SnippetHalogenLight)]
 
@@ -86,13 +86,13 @@ The default implementation enables any light to blink. The overhead light can ad
 
 A new light type, the `LEDLight` supports both the timer function and the blink function directly. This light style implements both the `ITimerLight` and `IBlinkingLight` interfaces, and overrides the `Blink` method:
 
-[!code-csharp[Override the blink function](~/samples/csharp/tutorials/mixins-with-interfaces/LEDLight.cs?name=SnippetOverheadLight)]
+[!code-csharp[Override the blink function](~/samples/csharp/tutorials/mixins-with-interfaces/LEDLight.cs?name=SnippetLEDLight)]
 
 An `ExtraFancyLight` might support both blink and timer functions directly:
 
 [!code-csharp[Override the blink and timer function](~/samples/csharp/tutorials/mixins-with-interfaces/ExtraFancyLight.cs?name=SnippetExtraFancyLight)]
 
-The `HalogenLight` you created earlier does not support blinking. You just don't add the `IBlinkingLight` to the list of its supported interfaces.
+The `HalogenLight` you created earlier doesn't support blinking. So, don't add the `IBlinkingLight` to the list of its supported interfaces.
 
 ## Detect the light types using pattern matching
 
@@ -118,4 +118,4 @@ These changes compile cleanly, even though the `ExtraFancyLight` declares suppor
 
 Avoid overriding the same method in multiple derived interfaces. Doing so creates an ambiguous method call whenever a class implements both derived interfaces. For example, if both the `IBlinkingLight` and `ITimerLight` implemented an override of `PowerStatus`, the `OverheadLight` would need to provide a more specific override. Otherwise, the compiler can't pick between the implementations in the two derived interfaces. You can usually avoid this situation by keeping interface definitions small and focused on one feature. In this scenario, each capability of a light is its own interface; multiple interfaces are only inherited by classes.
 
-This sample shows one scenario where you can define discrete features that can be mixed into classes. You declare any set of supported functionality by declaring which interfaces a class supports. The use of virtual default interface methods enables classes to use or define a different implementation for any or all the interface methods. This language capability provides new ways to model the real world systems you're building. Default interface methods provide a clearer way to express related classes that may mix and match different features using virtual implementations of those capabilities.
+This sample shows one scenario where you can define discrete features that can be mixed into classes. You declare any set of supported functionality by declaring which interfaces a class supports. The use of virtual default interface methods enables classes to use or define a different implementation for any or all the interface methods. This language capability provides new ways to model the real-world systems you're building. Default interface methods provide a clearer way to express related classes that may mix and match different features using virtual implementations of those capabilities.

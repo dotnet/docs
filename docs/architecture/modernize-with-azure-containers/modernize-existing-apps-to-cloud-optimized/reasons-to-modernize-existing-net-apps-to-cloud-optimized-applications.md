@@ -35,7 +35,7 @@ The following list describes the main tenets or practices for Cloud-Optimized ap
 
 Figure 4-2 shows the main optional pillars of a Cloud-Optimized application. The more pillars you implement, the readier your application will be to succeed in meeting your customers' expectations.
 
-![Diagram naming the ain pillars of a Cloud-Optimized application.](./media/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications/main-pillars-cloud-optimized-application.png)
+![Diagram naming the main pillars of a Cloud-Optimized application.](./media/reasons-to-modernize-existing-net-apps-to-cloud-optimized-applications/main-pillars-cloud-optimized-application.png)
 
 **Figure 4-2.** Main pillars of a Cloud-Optimized application
 

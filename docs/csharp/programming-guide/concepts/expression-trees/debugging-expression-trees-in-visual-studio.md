@@ -6,11 +6,11 @@ ms.assetid: 1369fa25-0fbd-4b92-98d0-8df79c49c27a
 # Debugging Expression Trees in Visual Studio (C#)
 You can analyze the structure and content of expression trees when you debug your applications. To get a quick overview of the expression tree structure, you can use the `DebugView` property, which represents expression trees [using a special syntax](debugview-syntax.md). (Note that `DebugView` is available only in debug mode.)  
 
-![Screenshot of the DebugView of expression tree within VS debugger.](media/debugging-expression-trees-in-visual-studio/debugview-expression-tree.png)
+![Screenshot of the DebugView of an expression tree within VS debugger.](media/debugging-expression-trees-in-visual-studio/debugview-expression-tree.png)
 
 Since `DebugView` is a string, you can use the [built-in Text Visualizer](https://docs.microsoft.com/visualstudio/debugger/view-strings-visualizer#open-a-string-visualizer) to view it across multiple lines, by selecting **Text Visualizer** from the magnifying glass icon next to the `DebugView` label.
 
- ![Screenshot of Text Visualizer applied to results of DebugView.](media/debugging-expression-trees-in-visual-studio/string-visualizer-debugview.png)
+ ![Screenshot of the Text Visualizer applied to results of DebugView.](media/debugging-expression-trees-in-visual-studio/string-visualizer-debugview.png)
 
 Alternatively, you can install and use [a custom visualizer](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data) for expression trees, such as:
 

@@ -45,7 +45,7 @@ Significant improvements in agility, portability, and control ultimately lead to
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) that automates the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology. The company works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
-![Diagram showing ow Docker deploys containers in the hybrid cloud.](./media/deploy-existing-net-apps-as-windows-containers/docker-deploys-containers-all-layers.png)
+![Diagram showing how Docker deploys containers in the hybrid cloud.](./media/deploy-existing-net-apps-as-windows-containers/docker-deploys-containers-all-layers.png)
 
 **Figure 4-6.** Docker deploys containers at all layers of the hybrid cloud
 

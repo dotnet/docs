@@ -106,7 +106,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.
+  Directory in which to place the built binaries. If not specified, the default path is `./bin/<configuration>/<framework>/`.  For projects with multiple target frameworks (via the `TargetFrameworks` property), you also need to define `--framework` when you specify this option.
 
 * **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 

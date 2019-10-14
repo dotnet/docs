@@ -22,7 +22,7 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 
 ***
 
-[!INCLUDE[Authentication: HttpContext.Authentication property removed](~/includes/core-changes/aspnetcore/3.0/auth-httpcontext-property-removed.md)]
+[!INCLUDE[Authentication: HttpContext.Authentication property removed](~/includes/core-changes/aspnetcore/3.0/authn-httpcontext-property-removed.md)]
 
 ***
 
@@ -38,7 +38,7 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 
 ***
 
-[!INCLUDE[Authorization: IAuthorizationPolicyProvider implementations require new method](~/includes/core-changes/aspnetcore/3.0/iauthzpolicyprovider-new-method.md)]
+[!INCLUDE[Authorization: IAuthorizationPolicyProvider implementations require new method](~/includes/core-changes/aspnetcore/3.0/authz-iauthzpolicyprovider-new-method.md)]
 
 ***
 
@@ -66,7 +66,7 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 
 ***
 
-[!INCLUDE[Hosting: IHostingEnvironment and IApplicationLifetime types replaced](~/includes/core-changes/aspnetcore/3.0/ihostingenv-iapplifetime-types-replaced.md)]
+[!INCLUDE[Hosting: IHostingEnvironment and IApplicationLifetime types replaced](~/includes/core-changes/aspnetcore/3.0/hosting-ihostingenv-iapplifetime-types-replaced.md)]
 
 ***
 
@@ -110,7 +110,7 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 
 ***
 
-[!INCLUDE[Kestrel: Empty HTTPS assembly removed](~/includes/core-changes/aspnetcore/3.0/empty-kestrel-assembly-removed.md)]
+[!INCLUDE[Kestrel: Empty HTTPS assembly removed](~/includes/core-changes/aspnetcore/3.0/kestrel-empty-assembly-removed.md)]
 
 ***
 
@@ -126,7 +126,7 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 
 ***
 
-[!INCLUDE[Logging: DebugLogger class made internal](~/includes/core-changes/aspnetcore/3.0/debuglogger-to-internal.md)]
+[!INCLUDE[Logging: DebugLogger class made internal](~/includes/core-changes/aspnetcore/3.0/logging-debuglogger-to-internal.md)]
 
 ***
 

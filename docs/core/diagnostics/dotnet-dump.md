@@ -28,17 +28,17 @@ dotnet-dump [-h|--help] [--version] <command>
 
 ## Description
 
-The `dotnet-dump` CLI global tool is a way to collect and analyze Windows and Linux dumps without any native debugger involved like `lldb` on Linux. This tool is important on platforms like Alpine Linux where a fully working `lldb` isn't available. The `dotnet-dump` tool allows you to run SOS commands to analyze crashes and the garbage collector (GC), but it isn't a native debugger so things like displaying native stack frames aren't supported.
+The `dotnet-dump` global tool is a way to collect and analyze Windows and Linux dumps without any native debugger involved like `lldb` on Linux. This tool is important on platforms like Alpine Linux where a fully working `lldb` isn't available. The `dotnet-dump` tool allows you to run SOS commands to analyze crashes and the garbage collector (GC), but it isn't a native debugger so things like displaying native stack frames aren't supported.
 
 ## Options
 
 - **`--version`**
 
-Displays the version of the dotnet-counters utility.
+  Displays the version of the dotnet-counters utility.
 
 - **`-h|--help`**
 
-Shows command-line help.
+  Shows command-line help.
 
 ## Commands
 
@@ -54,7 +54,7 @@ Captures a dump from a process.
 ### Synopsis
 
 ```console
-dotnet-dump collect [-h|--help] [-p|--process-id <pid>] [--type <Heap|Mini>] [-o|--output <output_dump_path>] [--diag]
+dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag]
 ```
 
 ### Options
@@ -63,7 +63,7 @@ dotnet-dump collect [-h|--help] [-p|--process-id <pid>] [--type <Heap|Mini>] [-o
 
   Shows command-line help.
 
-- **`-p|--process-id <pid>`**
+- **`-p|--process-id <PID>`**
 
   Specifies the process ID number to collect a memory dump from.
 
@@ -98,18 +98,20 @@ Starts an interactive shell to explore a dump. The shell accepts various [SOS co
 ### Synopsis 
 
 ```console
-dotnet-dump analyze [-h|--help] <dump_path> [-c|--command <debug_command>]
+dotnet-dump analyze [-h|--help] <dump_path> [-c|--command]
 ```
 
-### Options
+### Arguments
 
 - **`<dump_path>`**
 
-Specifies the path to the dump file to analyze.
+  Specifies the path to the dump file to analyze.
+
+### Options
 
 - **`[-c|--command <debug_command>]`**
 
-Specifies the [command](#analyze-sos-commands) to run in the shell on start.
+  Specifies the [command](#analyze-sos-commands) to run in the shell on start.
 
 ### Analyze SOS commands
 
@@ -208,12 +210,12 @@ StackTraceString: <none>
 HResult: 80131604
 ```
 
-## Docker special instructions
+## Special instructions for Docker
 
 If you're running under Docker, dump collection requires `SYS_PTRACE` capabilities (`--cap-add=SYS_PTRACE` or `--privileged`).
 
 On Microsoft .NET Core SDK Linux Docker images, some `dotnet-dump` commands can throw the following exception:
 
-`Unhandled exception: System.DllNotFoundException: Unable to load shared library 'libdl.so' or one of its dependencies` exception.
+> Unhandled exception: System.DllNotFoundException: Unable to load shared library 'libdl.so' or one of its dependencies' exception.
 
 To work around this problem, install the "libc6-dev" package.

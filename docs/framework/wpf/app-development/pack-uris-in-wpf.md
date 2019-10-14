@@ -12,7 +12,7 @@ ms.assetid: 43adb517-21a7-4df3-98e8-09e9cdf764c4
 ---
 # Pack URIs in WPF
 
-In Windows Presentation Foundation (WPF), [!INCLUDE[TLA#tla_uri#plural](../../../../includes/tlasharptla-urisharpplural-md.md)] are used to identify and load files in many ways, including the following:
+In Windows Presentation Foundation (WPF), uniform resource identifiers (URIs) are used to identify and load files in many ways, including the following:
 
 - Specifying the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] to show when an application first starts.
 

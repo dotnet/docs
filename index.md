@@ -82,7 +82,7 @@ ms.date: "09/30/2019"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/dotnet-logo-image.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/dotnet-logo-image.svg" alt="Screenshot of the purple .NET logo." />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -242,7 +242,7 @@ ms.date: "09/30/2019"
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/images/hub/netspark-logo-image.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/netspark-logo-image.svg" alt="Screenshot of the purple .NET for Apache Spark Guide logo." />
                                                 </div>
                                             </div>
                                             <div class="cardText">

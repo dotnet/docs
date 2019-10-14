@@ -1,7 +1,7 @@
 ---
 title: What is Apache Spark?
-description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows.
-ms.date: 09/26/2019
+description: Learn about Apache Spark and big data scenarios.
+ms.date: 10/15/2019
 ms.topic: conceptual
 ms.custom: mvc
 #Customer intent: As a developer, I want an introduction to Apache Spark.
@@ -9,20 +9,43 @@ ms.custom: mvc
 
 # What is Apache Spark?
 
-[Apache Spark](https://spark.apache.org/) is an open-source parallel processing framework that supports in-memory processing to boost the performance of applications that analyze big data. A Spark job can repeatedly query data that is loaded and cached into memory, which is much faster than disk-based alternatives.
+[Apache Spark](https://spark.apache.org/) is an open-source parallel processing framework that supports in-memory processing to boost the performance of applications that analyze big data. Big data solutions are designed to handle data that is too large or complex for traditional databases. Spark processes large amounts of data in memory, which is much faster than disk-based alternatives. 
 
-## Common Big Data scenarios
+## Common big data scenarios
 
-Spark is a general-purpose distributed processing engine that can be used in many big data scenarios. This section describes scenarios.
+You might consider a big data architecture if you need to store and process large volumes of data, transform unstructured data, or processes streaming data. Spark is a general-purpose distributed processing engine that can be used for several big data scenarios. 
 
-- Extract, transform, and load (ETL) functions
-- Real-time data stream processing through Spark Streaming
-- Batch processing
-- Machine learning through MLlib
-- Ad-hoc querying
-- Graph processing through GraphX
-- SQL and structured data processing with Spark SQL
-- Data visualization
+### Extract, transform, and load (ETL)
+
+[Extract, transform, and load (ETL)](/azure/architecture/data-guide/relational-data/etl) is the process of collecting data from one or multiple sources, modifying the data, and moving the data to a new data store. There are several ways to transform data, including:
+
+* Filtering
+* Sorting
+* Aggregating
+* Joining
+* Cleaning
+* Deduplicating
+* Validating
+
+### Real-time data stream processing
+
+Streaming, or real-time, data is data in motion. Telemetry from IoT devices, weblogs, and clickstreams are all examples of streaming data. Real-time data can be processed to provide useful information, such as geospatial analysis, remote monitoring, and anomaly detection. Just like relational data, you can filter, aggregate, and prepare streaming data before moving the data to an output sink. Apache Spark supports [real-time data stream processing](/azure/architecture/data-guide/big-data/real-time-processing) through [Spark Streaming](https://spark.apache.org/streaming/). 
+
+### Batch processing
+
+[Batch processing](/azure/architecture/data-guide/big-data/batch-processing) is the processing of big data at rest. You can filter, aggregate, and prepare very large datasets using long-running jobs in parallel.
+
+### Machine learning through MLlib
+
+Machine learning is used for advanced analytical problems. Your computer can use existing data to forecast or predict future behaviors, outcomes, and trends. Apache Spark's machine learning library, [MLlib](https://spark.apache.org/mllib/), contains several machine learning algorithms and utilities.
+
+### Graph processing through GraphX
+
+A graph is a collection of nodes connected by edges. You might use a graph database if you have hierarchial data or data with interconnected relationships. You can process this data using Apache Spark's [GraphX](https://spark.apache.org/graphx/) API.
+
+### SQL and structured data processing with Spark SQL
+
+If you're working with structured (formatted) data, you can use SQL queries in your Spark application using [Spark SQL](https://spark.apache.org/sql/).
 
 ## Apache Spark architecture
 

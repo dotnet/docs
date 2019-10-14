@@ -98,7 +98,7 @@ Starts an interactive shell to explore a dump. The shell accepts various [SOS co
 ### Synopsis
 
 ```console
-dotnet-dump analyze [-h|--help] <dump_path> [-c|--command]
+dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 ```
 
 ### Arguments
@@ -109,7 +109,7 @@ dotnet-dump analyze [-h|--help] <dump_path> [-c|--command]
 
 ### Options
 
-- **`[-c|--command <debug_command>]`**
+- **`-c|--command <debug_command>`**
 
   Specifies the [command](#analyze-sos-commands) to run in the shell on start.
 

@@ -71,8 +71,8 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
   Specifies the dumb type, which determines the kinds of information that are collected from the process. There are two types:
 
-    - `Heap` - A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.
-    - `Mini` - A small dump containing module lists, thread lists, exception information, and all stacks.
+  - `Heap` - A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.
+  - `Mini` - A small dump containing module lists, thread lists, exception information, and all stacks.
 
   If not specified, `Heap` is the default.
 
@@ -82,10 +82,10 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
   If not specified:
 
-    - Defaults to *.\dump_YYYYMMDD_HHMMSS.dmp* on Windows.
-    - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux.
+  - Defaults to *.\dump_YYYYMMDD_HHMMSS.dmp* on Windows.
+  - Defaults to *./core_YYYYMMDD_HHMMSS* on Linux.
 
-    YYYYMMDD is Year/Month/Day and HHMMSS is Hour/Minute/Second.
+  YYYYMMDD is Year/Month/Day and HHMMSS is Hour/Minute/Second.
 
 - **`--diag`**
 

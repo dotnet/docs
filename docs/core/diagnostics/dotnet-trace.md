@@ -53,13 +53,13 @@ Collects a diagnostic trace from a running process.
 ### Synopsis
 
 ```console
-dotnet-trace collect [-h|--help] [-p|--process-id <pid>] [--buffersize <size>] [-o|--output <trace-file-path>]
-    [--providers <list-of-comma-separated-providers>] [--profile <profile-name>] [--format <NetTrace|Speedscope>]
+dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--output <trace-file-path>]
+    [--providers] [--profile <profile-name>] [--format <NetTrace|Speedscope>]
 ```
 
 ### Options
 
-- **`-p|--process-id <pid>`**
+- **`-p|--process-id <PID>`**
 
   The process to collect the trace from.
 
@@ -73,7 +73,7 @@ dotnet-trace collect [-h|--help] [-p|--process-id <pid>] [--buffersize <size>] [
 
 - **`--providers <list-of-comma-separated-providers>`**
 
-  A list of EventPipe providers to be enabled. These providers supplement any providers implied by the `--profile argument`. If there's any inconsistency for a particular provider, the configuration here takes precedence over the implicit configuration from the profile.
+  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, the configuration here takes precedence over the implicit configuration from the profile.
 
   This list of providers is in the form:
 

@@ -94,8 +94,8 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 ## dotnet-dump analyze
 
 Starts an interactive shell to explore a dump. The shell accepts various [SOS commands](#analyze-sos-commands).
- 
-### Synopsis 
+
+### Synopsis
 
 ```console
 dotnet-dump analyze [-h|--help] <dump_path> [-c|--command]

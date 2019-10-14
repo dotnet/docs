@@ -16,7 +16,7 @@ The API <xref:System.Windows.Markup.XamlWriter.Save%2A> can be used to serialize
   
 <a name="Serialization_is_Self_Contained"></a>   
 ## Serialization is Self-Contained  
- The serialized output of <xref:System.Windows.Markup.XamlWriter.Save%2A> is self-contained; everything that is serialized is contained inside a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] single page, with a single root element, and no external references other than [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)]. For instance, if your page referenced resources from application resources, these will appear as if they were a component of the page being serialized.  
+ The serialized output of <xref:System.Windows.Markup.XamlWriter.Save%2A> is self-contained; everything that is serialized is contained inside a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] single page, with a single root element, and no external references other than URIs. For instance, if your page referenced resources from application resources, these will appear as if they were a component of the page being serialized.  
   
 <a name="Extension_References_are_Dereferenced"></a>   
 ## Extension References are Dereferenced  

@@ -22,7 +22,7 @@ In Windows Presentation Foundation (WPF), uniform resource identifiers (URIs) ar
 
 - Loading non-executable data files.
 
-Furthermore, [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] can be used to identify and load files from a variety of locations, including the following:
+Furthermore, URIs can be used to identify and load files from a variety of locations, including the following:
 
 - The current assembly.
 
@@ -32,7 +32,7 @@ Furthermore, [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-ur
 
 - The application's site of origin.
 
-To provide a consistent mechanism for identifying and loading these types of files from these locations, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] leverages the extensibility of the *pack URI scheme*. This topic provides an overview of the scheme, covers how to construct pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] for a variety of scenarios, discusses absolute and relative [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] and URI resolution, before showing how to use pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] from both markup and code.
+To provide a consistent mechanism for identifying and loading these types of files from these locations, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] leverages the extensibility of the *pack URI scheme*. This topic provides an overview of the scheme, covers how to construct pack URIs for a variety of scenarios, discusses absolute and relative URIs and URI resolution, before showing how to use pack URIs from both markup and code.
 
 <a name="The_Pack_URI_Scheme"></a>
 
@@ -73,7 +73,7 @@ To access these types of files, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla
 > [!NOTE]
 > The authority component of a pack URI is an embedded URI that points to a package and must conform to RFC 2396. Additionally, the "/" character must be replaced with the "," character, and reserved characters such as "%" and "?" must be escaped. See the OPC for details.
 
-The following sections explain how to construct pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] using these two authorities in conjunction with the appropriate paths for identifying resource, content, and site of origin files.
+The following sections explain how to construct pack URIs using these two authorities in conjunction with the appropriate paths for identifying resource, content, and site of origin files.
 
 <a name="Resource_File_Pack_URIs___Local_Assembly"></a>
 
@@ -211,7 +211,7 @@ The relative pack URI that refers to this resource file would be the following.
 `/ResourceFile.xaml`
 
 > [!NOTE]
-> Because site of origin files are not associated with assemblies, they can only be referred to with absolute pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)].
+> Because site of origin files are not associated with assemblies, they can only be referred to with absolute pack URIs.
 
 By default, a relative pack URI is considered relative to the location of the markup or code that contains the reference. If a leading backslash is used, however, the relative pack URI reference is then considered relative to the root of the application. For example, consider the following project structure.
 
@@ -237,7 +237,7 @@ If Page1.xaml contains a URI that references *Root*\Page2.xaml, the reference ca
 
 ## Pack URI Resolution
 
-The format of pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] makes it possible for pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] for different types of files to look the same. For example, consider the following absolute pack URI.
+The format of pack URIs makes it possible for pack URIs for different types of files to look the same. For example, consider the following absolute pack URI.
 
 `pack://application:,,,/ResourceOrContentFile.xaml`
 
@@ -245,7 +245,7 @@ This absolute pack URI could refer to either a resource file in the local assemb
 
 `/ResourceOrContentFile.xaml`
 
-In order to determine the type of file that a pack URI refers to, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] resolves [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] for resource files in local assemblies and content files by using the following heuristics:
+In order to determine the type of file that a pack URI refers to, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] resolves URIs for resource files in local assemblies and content files by using the following heuristics:
 
 1. Probe the assembly metadata for an <xref:System.Windows.Resources.AssemblyAssociatedContentFileAttribute> attribute that matches the pack URI.
 
@@ -257,13 +257,13 @@ In order to determine the type of file that a pack URI refers to, [!INCLUDE[TLA2
 
 5. If the resource is not found, the internally created <xref:System.Uri> is invalid.
 
-URI resolution does not apply for [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that refer to the following:
+URI resolution does not apply for URIs that refer to the following:
 
 - Content files in referenced assemblies: these file types are not supported by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)].
 
-- Embedded files in referenced assemblies: [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that identify them are unique because they include both the name of the referenced assembly and the `;component` suffix.
+- Embedded files in referenced assemblies: URIs that identify them are unique because they include both the name of the referenced assembly and the `;component` suffix.
 
-- Site of origin files: [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that identify them are unique because they are the only files that can be identified by pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that contain the siteoforigin:/// authority.
+- Site of origin files: URIs that identify them are unique because they are the only files that can be identified by pack URIs that contain the siteoforigin:/// authority.
 
 One simplification that pack URI resolution allows is for code to be somewhat independent of the locations of resource and content files. For example, if you have a resource file in the local assembly that is reconfigured to be a content file, the pack URI for the resource remains the same, as does the code that uses the pack URI.
 
@@ -271,7 +271,7 @@ One simplification that pack URI resolution allows is for code to be somewhat in
 
 ## Programming with Pack URIs
 
-Many [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] classes implement properties that can be set with pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)], including:
+Many [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] classes implement properties that can be set with pack URIs, including:
 
 - <xref:System.Windows.Application.StartupUri%2A?displayProperty=nameWithType>
 
@@ -295,7 +295,7 @@ A pack URI is specified in markup by setting the element of an attribute with th
 
 `<element attribute="pack://application:,,,/File.xaml" />`
 
-Table 1 illustrates the various absolute pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that you can specify in markup.
+Table 1 illustrates the various absolute pack URIs that you can specify in markup.
 
 Table 1: Absolute Pack URIs in Markup
 
@@ -311,7 +311,7 @@ Table 1: Absolute Pack URIs in Markup
 |Site of origin file|`"pack://siteoforigin:,,,/SOOFile.xaml"`|
 |Site of origin file in subfolder|`"pack://siteoforigin:,,,/Subfolder/SOOFile.xaml"`|
 
-Table 2 illustrates the various relative pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that you can specify in markup.
+Table 2 illustrates the various relative pack URIs that you can specify in markup.
 
 Table 2: Relative Pack URIs in Markup
 
@@ -334,7 +334,7 @@ You specify a pack URI in code by instantiating the <xref:System.Uri> class and 
 Uri uri = new Uri("pack://application:,,,/File.xaml");
 ```
 
-By default, the <xref:System.Uri> class considers pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] to be absolute. Consequently, an exception is raised when an instance of the <xref:System.Uri> class is created with a relative pack URI.
+By default, the <xref:System.Uri> class considers pack URIs to be absolute. Consequently, an exception is raised when an instance of the <xref:System.Uri> class is created with a relative pack URI.
 
 ```csharp
 Uri uri = new Uri("/File.xaml");
@@ -358,7 +358,7 @@ TextBox userProvidedUriTextBox = new TextBox();
 Uri uri = new Uri(userProvidedUriTextBox.Text, UriKind.RelativeOrAbsolute);
 ```
 
-Table 3 illustrates the various relative pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that you can specify in code by using <xref:System.Uri?displayProperty=nameWithType>.
+Table 3 illustrates the various relative pack URIs that you can specify in code by using <xref:System.Uri?displayProperty=nameWithType>.
 
 Table 3: Absolute Pack URIs in Code
 
@@ -374,7 +374,7 @@ Table 3: Absolute Pack URIs in Code
 |Site of origin file|`Uri uri = new Uri("pack://siteoforigin:,,,/SOOFile.xaml", UriKind.Absolute);`|
 |Site of origin file in subfolder|`Uri uri = new Uri("pack://siteoforigin:,,,/Subfolder/SOOFile.xaml", UriKind.Absolute);`|
 
-Table 4 illustrates the various relative pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] that you can specify in code using <xref:System.Uri?displayProperty=nameWithType>.
+Table 4 illustrates the various relative pack URIs that you can specify in code using <xref:System.Uri?displayProperty=nameWithType>.
 
 Table 4: Relative Pack URIs in Code
 
@@ -391,7 +391,7 @@ Table 4: Relative Pack URIs in Code
 
 ### Common Pack URI Scenarios
 
-The preceding sections have discussed how to construct pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] to identify resource, content, and site of origin files. In [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], these constructions are used in a variety of ways, and the following sections cover several common usages.
+The preceding sections have discussed how to construct pack URIs to identify resource, content, and site of origin files. In [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], these constructions are used in a variety of ways, and the following sections cover several common usages.
 
 <a name="Specifying_the_UI_to_Show_when_an_Application_Starts"></a>
 
@@ -433,7 +433,7 @@ For more information, see <xref:System.Windows.Window.Icon%2A>.
 
 #### Loading Image, Audio, and Video Files
 
-[!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] allows applications to use a wide variety of media types, all of which can be identified and loaded with pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)], as shown in the following examples.
+[!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] allows applications to use a wide variety of media types, all of which can be identified and loaded with pack URIs, as shown in the following examples.
 
 [!code-xaml[MediaPlayerVideoSample#VideoPackURIAtSOO](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaPlayerVideoSample/CS/HomePage.xaml#videopackuriatsoo)]
 
@@ -447,7 +447,7 @@ For more information on working with media content, see [Graphics and Multimedia
 
 #### Loading a Resource Dictionary from the Site of Origin
 
-Resource dictionaries (<xref:System.Windows.ResourceDictionary>) can be used to support application themes. One way to create and manage themes is to create multiple themes as resource dictionaries that are located at an application's site of origin. This allows themes to be added and updated without recompiling and redeploying an application. These resource dictionaries can be identified and loaded using pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)], which is shown in the following example.
+Resource dictionaries (<xref:System.Windows.ResourceDictionary>) can be used to support application themes. One way to create and manage themes is to create multiple themes as resource dictionaries that are located at an application's site of origin. This allows themes to be added and updated without recompiling and redeploying an application. These resource dictionaries can be identified and loaded using pack URIs, which is shown in the following example.
 
 [!code-xaml[ResourceDictionarySnippets#ResourceDictionaryPackURI](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceDictionarySnippets/CS/App.xaml#resourcedictionarypackuri)]
 

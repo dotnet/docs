@@ -127,7 +127,7 @@ An application definition is usually implemented using both markup and code-behi
 An [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] can use its application definition to specify a start <xref:System.Windows.Controls.Page>, which is the <xref:System.Windows.Controls.Page> that is automatically loaded when the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] is launched. You do this by setting the <xref:System.Windows.Application.StartupUri%2A> property with the uniform resource identifier (URI) for the desired <xref:System.Windows.Controls.Page>.
 
 > [!NOTE]
-> In most cases, the <xref:System.Windows.Controls.Page> is either compiled into or deployed with an application. In these cases, the URI that identifies a <xref:System.Windows.Controls.Page> is a pack URI, which is a URI that conforms to the *pack* scheme. Pack [!INCLUDE[TLA2#tla_uri#plural](../../../../includes/tla2sharptla-urisharpplural-md.md)] are discussed further in     [Pack URIs in WPF](pack-uris-in-wpf.md). You can also navigate to content using the http scheme, which is discussed below.
+> In most cases, the <xref:System.Windows.Controls.Page> is either compiled into or deployed with an application. In these cases, the URI that identifies a <xref:System.Windows.Controls.Page> is a pack URI, which is a URI that conforms to the *pack* scheme. Pack URIs are discussed further in     [Pack URIs in WPF](pack-uris-in-wpf.md). You can also navigate to content using the http scheme, which is discussed below.
 
 You can set <xref:System.Windows.Application.StartupUri%2A> declaratively in markup, as shown in the following example.
 

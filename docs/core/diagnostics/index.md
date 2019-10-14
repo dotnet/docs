@@ -3,7 +3,7 @@ title: Diagnostics tools overview - .NET Core
 description: An overview of the tools and techniques available to diagnose .NET Core applications.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 10/01/2019
+ms.date: 10/14/2019
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---

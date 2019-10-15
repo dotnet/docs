@@ -1,5 +1,5 @@
 ---
-title: Exception.PrepForRemoting() Method (System)
+title: Exception.PrepForRemoting Method (System)
 author: mairaw
 ms.author: mairaw
 ms.date: 10/08/2019
@@ -12,13 +12,18 @@ api_location:
 api_type:
   - "Assembly"
 ---
-# Exception.PrepForRemoting() Method
+# Exception.PrepForRemoting Method
 
 Preserves the server-side stack trace by appending it to the message before the exception is rethrown at the client call site.
 
 ```csharp
 internal Exception PrepForRemoting();
 ```
+
+## Returns
+
+<xref:System.Exception>  
+This <xref:System.Exception> instance.
 
 ## Remarks
 

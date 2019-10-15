@@ -2,7 +2,7 @@
 title: Cloud-native data
 description: Contrast data storage in monolithic and cloud-native applications
 author: robvet
-ms.date: 09/23/2019
+ms.date: 10/14/2019
 ---
 # Cloud-native data
 

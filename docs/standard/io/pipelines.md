@@ -300,8 +300,7 @@ When writing helpers that read the buffer, any returned payload should be copied
 
 ## PipeWriter
 
-<!-- markdownlint-disable MD033 BUG with backticks in ref links -->
-The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the caller's behalf. `PipeWriter` implements [`IBufferWriter<byte>`](xref:System.Buffers.IBufferWriter`1). `IBufferWriter<byte>` makes it possible to get access to buffers to perform writes without additional buffer copies.
+The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the caller's behalf. `PipeWriter` implements [`IBufferWriter<byte>`](xref:System.Buffers.IBufferWriter%601). `IBufferWriter<byte>` makes it possible to get access to buffers to perform writes without additional buffer copies.
 
 [!code-csharp[MyPipeWriter](~/samples/snippets/csharp/pipelines/MyPipeWriter.cs?name=snippet)]
 

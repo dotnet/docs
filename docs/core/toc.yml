@@ -321,11 +321,11 @@
     - name: Create a .NET Core application with plugins
       href: tutorials/creating-app-with-plugin-support.md
     - name: How to use and debug assembly unloadability in .NET Core
-      href: standard/assembly/unloadability-howto.md
+      href: ../standard/assembly/unloadability-howto.md
 - name: Build .NET Core from source
   href: build/index.md
   items:
   - name: .NET Core distribution packaging
     href: build/distribution-packaging.md
 - name: VS 2015/project.json docs
-  href: project-json.md
+  href: ../project-json.md

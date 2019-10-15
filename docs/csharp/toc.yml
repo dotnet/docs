@@ -9,27 +9,27 @@
   - name: Introduction to programming with C#
     items:
     - name: Choose your first lesson
-      href: tutorials/intro-to-index.md
+      href: tutorials/intro-to-csharp/index.md
     - name: Hello world
-      href: tutorials/intro-to-hello-world.yml
+      href: tutorials/intro-to-csharp/hello-world.yml
     - name: Numbers in C#
-      href: tutorials/intro-to-numbers-in-csharp.yml
+      href: tutorials/intro-to-csharp/numbers-in-csharp.yml
     - name: Branches and loops
-      href: tutorials/intro-to-branches-and-loops.yml
+      href: tutorials/intro-to-csharp/branches-and-loops.yml
     - name: List collections
       href: tutorials/intro-to-list-collection.yml
     - name: Work in your local environment
       items:
       - name: Setup your environment
-        href: tutorials/intro-to-local-environment.md
+        href: tutorials/intro-to-csharp/local-environment.md
       - name: Numbers in C#
-        href: tutorials/intro-to-numbers-in-csharp-local.md
+        href: tutorials/intro-to-csharp/numbers-in-csharp-local.md
       - name: Branches and loops
-        href: tutorials/intro-to-branches-and-loops-local.md
+        href: tutorials/intro-to-csharp/branches-and-loops-local.md
       - name: List collections
-        href: tutorials/intro-to-arrays-and-collections.md
+        href: tutorials/intro-to-csharp/arrays-and-collections.md
       - name: Introduction to classes
-        href: tutorials/intro-to-introduction-to-classes.md
+        href: tutorials/intro-to-csharp/introduction-to-classes.md
   - name: Explore C# 6
     href: tutorials/exploration/csharp-6.yml
   - name: Explore string interpolation - interactive
@@ -63,7 +63,7 @@
   - name: Using Attributes
     href: tutorials/attributes.md
 - name: Tour of C#
-  href: tour-of-
+  href: tour-of-csharp/
 - name: What's new in C#
   items:
   - name: C# 8.0
@@ -179,7 +179,7 @@
   - name: Concatenate strings
     href: how-to/concatenate-multiple-strings.md
   - name: Convert a string to a DateTime
-    href: standard/base-types/parsing-datetime.md
+    href: ../standard/base-types/parsing-datetime.md
   - name: Search strings
     href: how-to/search-strings.md
   - name: Modify string contents

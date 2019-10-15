@@ -21,7 +21,7 @@ To continue facilitating deployment agility, these tools provide excellent dev-t
 
 Figure 4-12 shows a continuous deployment pipeline that deploys to a Kubernetes cluster in Azure Container Service.
 
-![Screenshot of Azure DevOps Services deploying to a Kubernetes cluster.](./media/life-cycle-ci-cd-pipelines-devops-tool/deploy-mvc-app-container-kubernetes.png)
+![Screenshot of Azure DevOps Services deploying to a Kubernetes cluster.](./media/life-cycle-ci-cd-pipelines-devops-tools/deploy-mvc-app-container-kubernetes.png)
 
 **Figure 4-12.** Azure DevOps Services continuous deployment pipeline, deploying to a Kubernetes cluster
 

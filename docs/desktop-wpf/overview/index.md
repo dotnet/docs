@@ -8,21 +8,21 @@ ms.topic: overview
 
 # What is Windows Presentation Foundation
 
-Welcome to the Desktop Guide for Windows Presentation Foundation (WPF). This article provides a basic overview of WPF. WPF is a UI framework that creates desktop client applications. The WPF development platform supports a broad set of application development features, including an application model, controls, graphics, and data binding. WPF uses the Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
+Welcome to the Desktop Guide for Windows Presentation Foundation (WPF), a UI framework that creates desktop client applications for Windows. The WPF development platform supports a broad set of application development features, including an application model, controls, graphics, and data binding. WPF uses Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
 
 [!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
 
-WPF is only available for the Windows operating system. There are two implementations of WPF:
+There are two implementations of WPF:
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/wpf). This version runs on .NET Core 3.0. The WPF Visual Designer for XAML requires, at a minimum, [Visual Studio 2019 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide).
 
-01. The .NET Framework implementation of WPF that is supported by Visual Studio 2019 and Visual Studio 2017.
+01. The .NET Framework implementation that's supported by Visual Studio 2019 and Visual Studio 2017.
 
-The WPF Desktop Guide is written for .NET Core 3.0 and WPF. For more information about the existing documentation for WPF with the .NET Framework, see [Framework Windows Presentation Foundation](../../framework/wpf/index.md).
+This Desktop Guide is written for .NET Core 3.0 and WPF. For more information about the existing documentation for WPF with the .NET Framework, see [Framework Windows Presentation Foundation](../../framework/wpf/index.md).
 
 ## XAML
 
-XAML is a declarative XML-based language used by WPF in many ways, such as defining resources or UI elements. Elements defined in XAML represent the instantiation of objects from an assembly. XAML is unlike most other markup languages, which are interpreted at runtime without a direct tie to a backing type system.
+XAML is a declarative XML-based language that WPF uses for things such as defining resources or UI elements. Elements defined in XAML represent the instantiation of objects from an assembly. XAML is unlike most other markup languages, which are interpreted at runtime without a direct tie to a backing type system.
 
 The following example shows how you would create a button as part of a UI. This example is intended to give you an idea of how XAML represents an object, where `Button` is the type and `Content` is a property.
 
@@ -52,7 +52,7 @@ WPF provides different markup extensions for XAML such as `{Binding}` for data b
 
 ## Property system
 
-WPF provides a set of services that can be used to extend the functionality of a type's [property](../../standard/base-types/common-type-system.md#Properties). Collectively, these services are typically referred to as the *WPF property system*. A property that is backed by the *WPF property system* is known as a dependency property.
+WPF provides a set of services that can be used to extend the functionality of a type's [property](../../standard/base-types/common-type-system.md#Properties). Collectively, these services are referred to as the *WPF property system*. A property that is backed by the WPF property system is known as a dependency property.
 
 Dependency properties extend property functionality by providing the <xref:System.Windows.DependencyProperty> type that backs a property. The dependency property type is an alternative implementation of the standard pattern of backing the property with a private field.
 
@@ -60,13 +60,13 @@ Dependency properties extend property functionality by providing the <xref:Syste
 
 In WPF, dependency properties are typically exposed as standard .NET [properties](../../standard/base-types/common-type-system.md#Properties). At a basic level, you could interact with these properties directly and never know that they're implemented as a dependency property.
 
-The purpose of dependency properties is to provide a way to compute the value of a property based on the value of other inputs. These other inputs might include system properties such as themes and user preferences or just-in-time property from data binding and animations.
+The purpose of dependency properties is to provide a way to compute the value of a property based on the value of other inputs. These other inputs might include system properties such as themes and user preferences, or just-in-time property from data binding and animations.
 
-A dependency property can be implemented to provide validation, default values, callbacks that monitor changes to other properties. Derived classes can also change some specific characteristics of an existing property by overriding dependency property metadata, rather than creating a new property or overriding an existing property.
+A dependency property can be implemented to provide validation, default values, and callbacks that monitor changes to other properties. Derived classes can also change some specific characteristics of an existing property by overriding dependency property metadata, rather than creating a new property or overriding an existing property.
 
 ### Dependency object
 
-Another type that is key to the *WPF property system* is the <xref:System.Windows.DependencyObject>. This type defines the base class that can register and own a dependency property. The <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> methods provide the backing implementation of the dependency property for the dependency object instance.
+Another type that is key to the WPF property system is the <xref:System.Windows.DependencyObject>. This type defines the base class that can register and own a dependency property. The <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> methods provide the backing implementation of the dependency property for the dependency object instance.
 
 The following example shows a dependency object that defines a single dependency property identifier named `ValueProperty`. The dependency property is created with the `Value` .NET property.
 
@@ -94,15 +94,15 @@ The `Value` property in the example above wraps the dependency property, providi
 
 WPF provides an eventing system that is layered on top of the .NET common language runtime (CLR) events you're familiar with. These WPF events are called routed events.
 
-A routed event is a CLR event that is backed by an instance of the `RoutedEvent` class and registered with the WPF event system. The `RoutedEvent` instance obtained from event registration is typically retained as a `public static readonly` field member of the class that registers, and thus "owns," the routed event. The connection to the identically named CLR event (which is sometimes termed the "wrapper" event) is accomplished by overriding the `add` and `remove` implementations for the CLR event. The routed event backing and connection mechanism is conceptually similar to how a [dependency property](#dependency-property) is a CLR property that is backed by the `DependencyProperty` class and registered with the WPF property system.
+A routed event is a CLR event that is backed by an instance of the `RoutedEvent` class and registered with the WPF event system. The `RoutedEvent` instance obtained from event registration is typically retained as a `public static readonly` field member of the class that registers, and thus *owns* the routed event. The connection to the identically named CLR event (which is sometimes termed the *wrapper* event) is accomplished by overriding the `add` and `remove` implementations for the CLR event. The routed event backing and connection mechanism is conceptually similar to how a [dependency property](#dependency-property) is a CLR property that is backed by the `DependencyProperty` class and registered with the WPF property system.
 
-The main advantage of the routed event system is that events are "bubbled" up the control element tree looking for a handler. For example, because WPF has a rich content model, you set an image control as the content of a button control. When the mouse is clicked on the image control, you would expect it to consume the mouse events, and thus break the hit-tests that cause a button to invoke the `Click` event. In a traditional CLR eventing model, you would work around this limitation by attaching the same handler to both the image and the button. But with the routed event system, the mouse events invoked on the image control (like clicking on it) bubble up to the parent button control.
+The main advantage of the routed event system is that events are *bubbled up* the control element tree looking for a handler. For example, because WPF has a rich content model, you set an image control as the content of a button control. When the mouse is clicked on the image control, you would expect it to consume the mouse events, and thus break the hit-tests that cause a button to invoke the `Click` event. In a traditional CLR eventing model, you would work around this limitation by attaching the same handler to both the image and the button. But with the routed event system, the mouse events invoked on the image control (such as selecting it) bubble up to the parent button control.
 
 <!--For more information, including other types of event models, see [Events overview](../../../framework/wpf/advanced/routed-events-overview.md).-->
 
 ## Data binding
 
-WPF data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from different kinds of data sources in the form of common language runtime (CLR) objects and XML. WPF also provides a mechanism for the transfer of data through drag-and-drop operations.
+WPF data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from different types of data sources in the form of common language runtime (CLR) objects and XML. WPF also provides a mechanism for the transfer of data through drag-and-drop operations.
 
 Data binding is the process that establishes a connection between the application UI and business logic. If the binding has the correct settings and the data provides the proper notifications, then, when the data changes its value, the elements that bound to the data reflect changes automatically. Data binding can also mean that if an outer representation of the data in an element changes, then the underlying data is automatically updated to reflect the change. For example, if the user edits the value in a TextBox element, the underlying data value is automatically updated to reflect that change.
 
@@ -114,17 +114,17 @@ Data binding can be configured in XAML through the `{Binding}` markup extension.
 </StackPanel>
 ```
 
-For more information, see [Data Binding Overview](../data/data-binding-overview.md).
+For more information, see [Data binding overview](../data/data-binding-overview.md).
 
 ## UI components
 
-WPF provides many of the common UI components that are used in almost every Windows application, such as `Button`, `Label`, `TextBox`, `Menu`, and `ListBox`. Historically, these objects have been referred to as controls. While the WPF SDK continues to use the term "control" to loosely mean any class that represents a visible object in an application, it's important to note that a class doesn't need to inherit from the `Control` class to have a visible presence. Classes that inherit from the `Control` class contain a `ControlTemplate`, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass.
+WPF provides many of the common UI components that are used in almost every Windows application, such as `Button`, `Label`, `TextBox`, `Menu`, and `ListBox`. Historically, these objects have been referred to as controls. While the WPF SDK continues to use the term control to loosely mean any class that represents a visible object in an application, it's important to note that a class doesn't need to inherit from the `Control` class to have a visible presence. Classes that inherit from the `Control` class contain a `ControlTemplate`, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass.
 
 ## Styles and templates
 
-WPF styling and templating refer to a suite of features (styles, templates, triggers, and storyboards) that allow an application, document, or user interface (UI) designer to create visually compelling applications and to standardize on a particular look for their product.
+WPF styling and templating refer to a suite of features (styles, templates, triggers, and storyboards) that allow an application, document, or UI designer to create visually compelling applications and to standardize on a particular look for their product.
 
-Another feature of the WPF styling model is the separation of presentation and logic. Meaning, designers can work on the appearance of an application with XAML while developers work on the programming logic elsewhere.
+Another feature of the WPF styling model is the separation of presentation and logic, which means designers can work on the appearance of an application with XAML while developers work on the programming logic elsewhere.
 
 In addition, it's important to understand resources, which are what enable styles and templates to be reused.
 
@@ -134,6 +134,12 @@ For more information, see [Styles and templates](../fundamentals/styles-template
 
 WPF resources are objects that can be reused in different places in your application. Examples of resources include styles, templates, and color brushes. Resources can be both defined and referenced in code and in XAML format.
 
-Every framework-level element (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) has a `Resources` property (which is a <xref:System.Windows.ResourceDictionary> type) that contains defined resources. Since all elements inherit from a framework-level element, all elements can define resources. It's common though to define resources on a root element of a XAML document.
+Every framework-level element (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) has a `Resources` property (which is a <xref:System.Windows.ResourceDictionary> type) that contains defined resources. Since all elements inherit from a framework-level element, all elements can define resources. It's most common, however, to define resources on a root element of a XAML document.
 
 <!--For more information, see [XAML Resources](../../../framework/wpf/advanced/xaml-resources.md).-->
+
+## Next steps
+
+- [Create a WPF application.](https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json)
+- [Explore the differences from .NET Framework.](migration/differences-from-net-framework.md)
+- [Learn about XAML.](fundamentals/xaml.md)

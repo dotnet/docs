@@ -60,5 +60,5 @@ Microsoft Azure Stack Development Kit is a single-node deployment of Azure Stack
     <https://azure.microsoft.com/pricing/hybrid-benefit/>
 
 >[!div class="step-by-step"]
->[Previous](mmodernize-lifecycle-ci-cd-pipelines-devops-cloud-tools.md)
+>[Previous](modernize-lifecycle-ci-cd-pipelines-devops-cloud-tools.md)
 >[Next](../walkthroughs-technical-get-started-overview.md)

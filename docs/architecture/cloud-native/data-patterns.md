@@ -2,13 +2,11 @@
 title: Cloud-native data patterns
 description: Learn about common data patterns found in cloud-native applications
 author: robvet
-ms.date: 09/23/2019
+ms.date: 10/14/2019
 ---
 # Cloud native data patterns
 
 As discussed in chapter 1, a key pillar of a cloud native system is a microservice-based architecture. Microservices favor small, independent data stores scoped to each service. While isolating data can increase agility, performance, and scalability, it also presents many challenges. In this section, we discuss these challenges and present patterns and best practices to help overcome them.  
-
-https://auth0.com/blog/introduction-to-microservices-part-4-dependencies/
 
 ## Cross-service queries
 

@@ -35,15 +35,15 @@ ASP.NET Core
 #### Affected APIs
 
 - `Microsoft.AspNetCore.ResponseCaching.Internal.CachedResponse`
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.CachedVaryByRules?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCacheEntry?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingKeyProvider?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingPolicyProvider?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.MemoryResponseCache?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingContext?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingKeyProvider?displayProperty=fullName>
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingPolicyProvider?displayProperty=fullName>
+- `Microsoft.AspNetCore.ResponseCaching.Internal.CachedVaryByRules`
+- `Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache`
+- `Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCacheEntry`
+- `Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingKeyProvider`
+- `Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingPolicyProvider`
+- `Microsoft.AspNetCore.ResponseCaching.Internal.MemoryResponseCache`
+- `Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingContext`
+- `Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingKeyProvider`
+- `Microsoft.AspNetCore.ResponseCaching.Internal.ResponseCachingPolicyProvider`
 - <xref:Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.%23ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{Microsoft.AspNetCore.ResponseCaching.ResponseCachingOptions},Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingPolicyProvider,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache,Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCachingKeyProvider)?displayProperty=fullName>
 
 <!-- 

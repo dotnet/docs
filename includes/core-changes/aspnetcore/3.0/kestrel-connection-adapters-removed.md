@@ -30,7 +30,7 @@ ASP.NET Core
 
 #### Affected APIs
 
-<xref:Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.IConnectionAdapter?displayProperty=nameWithType>
+`Microsoft.AspNetCore.Server.Kestrel.Core.Adapter.Internal.IConnectionAdapter`
 
 <!-- 
 

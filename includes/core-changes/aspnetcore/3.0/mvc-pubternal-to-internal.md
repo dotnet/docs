@@ -36,17 +36,17 @@ ASP.NET Core
 
 This change includes types in the following namespaces:
 
-- <xref:Microsoft.AspNetCore.Mvc.Cors.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.DataAnnotations.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Formatters.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Formatters.Json.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.ModelBinding.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.Razor.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.RazorPages.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.TagHelpers.Internal?displayProperty=nameWithType>
-- <xref:Microsoft.AspNetCore.Mvc.ViewFeatures.Internal?displayProperty=nameWithType>
+- `Microsoft.AspNetCore.Mvc.Cors.Internal`
+- `Microsoft.AspNetCore.Mvc.DataAnnotations.Internal`
+- `Microsoft.AspNetCore.Mvc.Formatters.Internal`
+- `Microsoft.AspNetCore.Mvc.Formatters.Json.Internal`
+- `Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal`
+- `Microsoft.AspNetCore.Mvc.Internal`
+- `Microsoft.AspNetCore.Mvc.ModelBinding.Internal`
+- `Microsoft.AspNetCore.Mvc.Razor.Internal`
+- `Microsoft.AspNetCore.Mvc.RazorPages.Internal`
+- `Microsoft.AspNetCore.Mvc.TagHelpers.Internal`
+- `Microsoft.AspNetCore.Mvc.ViewFeatures.Internal`
 
 <!--
 

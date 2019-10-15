@@ -54,4 +54,3 @@ An *out-of-band event* is an unmanaged event during which interaction with the m
  **Library:** CorGuids.lib
 
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
- 

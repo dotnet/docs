@@ -33,8 +33,8 @@ In this article, you'll learn how default interface implementations enable new s
 
 Consider a home automation application. You probably have many different types of lights and indicators that could be used throughout the house. Every light must support APIs to turn them on and off, and to report the current state. Some lights and indicators may support other features, such as:
 
-- Turn light on, then turn it off after a timer.
-- Blink the light for a period of time.
+* Turn light on, then turn it off after a timer.
+* Blink the light for a period of time.
 
 Some of these extended capabilities could be emulated in devices that support the minimal set. That indicates providing a default implementation. For those devices that have more capabilities built in, the device software would use the native capabilities. For other lights, they could choose to implement the interface and use the default implementation.
 

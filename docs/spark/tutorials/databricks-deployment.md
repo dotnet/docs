@@ -118,7 +118,7 @@ You can use `set JAR` or `spark-submit` to submit your job to Databricks.
    | Parameter   | Value                                                |
    |-------------|------------------------------------------------------|
    | Main Class  | org.apache.spark.deploy.dotnet.DotnetRunner          |
-   | Arguments   | /dbfs/apps/<your-app-name>.zip <your-app-main-class> |
+   | Arguments   | /dbfs/apps/\<your-app-name>.zip \<your-app-main-class> |
 
 4. Configure the **Cluster** to point to the existing cluster you created the **Init Script** for in the previous section.
 

@@ -80,4 +80,4 @@ These APIs support the product infrastructure and are not intended/supported to 
   
 ## See also
 
-- [The .NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md)
+* [The .NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md)

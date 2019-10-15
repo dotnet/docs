@@ -63,4 +63,4 @@ Changes to note are:
 
 ## See also
 
-- [.NET Core porting documentation](index.md)
+* [.NET Core porting documentation](index.md)

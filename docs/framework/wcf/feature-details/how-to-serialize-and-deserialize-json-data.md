@@ -135,4 +135,3 @@ public class TestDuplicateDataDerived : TestDuplicateDataBase
 ## See also
 
 - [JSON serialization in .NET](../../../standard/serialization/system-text-json-overview.md)
-

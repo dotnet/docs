@@ -261,4 +261,3 @@ The following code is the *MainWindow.xaml.cs* file from the WPF application tha
 - [await](../../../language-reference/operators/await.md)
 - [Asynchronous programming](../../../async.md)
 - [Async overview](../../../../standard/async.md)
- 

@@ -83,4 +83,4 @@ You can use the Log Analytics Container Monitoring solution to:
 
 >[!div class="step-by-step"]
 >[Previous](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
->[Next](life-cycle-ci-cd-pipelines-devops-tool.md)
+>[Next](life-cycle-ci-cd-pipelines-devops-tools.md)

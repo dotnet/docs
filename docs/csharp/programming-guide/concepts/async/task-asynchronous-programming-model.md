@@ -40,7 +40,7 @@ You can find a complete Windows Presentation Foundation (WPF) example file at th
 
 ```csharp
 async Task<int> AccessTheWebAsync()
-{ 
+{
     // You need to add a reference to System.Net.Http to declare client.
     var client = new HttpClient();
 
@@ -54,7 +54,7 @@ async Task<int> AccessTheWebAsync()
     // The await operator suspends AccessTheWebAsync.
     //  - AccessTheWebAsync can't continue until getStringTask is complete.
     //  - Meanwhile, control returns to the caller of AccessTheWebAsync.
-    //  - Control resumes here when getStringTask is complete. 
+    //  - Control resumes here when getStringTask is complete.
     //  - The await operator then retrieves the string result from getStringTask.
     string urlContents = await getStringTask;
 
@@ -253,7 +253,7 @@ You can ignore the convention where an event, base class, or interface contract 
 
 The following code is the *MainWindow.xaml.cs* file from the WPF application that this article discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs/).
 
-[!code-csharp[async](~/samples/async/async-and-await/cs/MainWindow.xaml.cs)] 
+[!code-csharp[async](~/samples/async/async-and-await/cs/MainWindow.xaml.cs)]
 
 ## See also
 
@@ -261,4 +261,3 @@ The following code is the *MainWindow.xaml.cs* file from the WPF application tha
 - [await](../../../language-reference/operators/await.md)
 - [Asynchronous programming](../../../async.md)
 - [Async overview](../../../../standard/async.md)
- 

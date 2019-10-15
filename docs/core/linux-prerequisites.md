@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Linux
 description: Supported Linux versions and .NET Core dependencies to develop, deploy, and run .NET Core applications on Linux machines.
 author: leecow
 ms.author: leecow
-ms.date: 09/25/2019
+ms.date: 10/11/2019
 ---
 # Prerequisites for .NET Core on Linux
 
@@ -122,6 +122,15 @@ For versions earlier than .NET Core 2.1, following dependencies are also require
 * libunwind8
 * libuuid1
 
+For .NET Core applications that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+* libgdiplus (version 6.0.1 or later)
+
+> [!NOTE]
+> Most versions of Ubuntu include an earlier version of libgdiplus. You can install a recent version
+> of libgdiplus by adding the Mono repository to your system. For more information,
+> see <https://www.mono-project.com/download/stable/>.
+
 ### CentOS and Fedora
 
 CentOS distributions require the following libraries installed:
@@ -141,6 +150,15 @@ For versions earlier than .NET Core 2.1, following dependencies are also require
 * libuuid
 
 For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+
+For .NET Core applications that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
+
+* libgdiplus (version 6.0.1 or later)
+
+> [!NOTE]
+> Most versions of CentOS and Fedora include an earlier version of libgdiplus. You can install a recent version
+> of libgdiplus by adding the Mono repository to your system. For more information,
+> see <https://www.mono-project.com/download/stable/>.
 
 ## Installing .NET Core dependencies with the native installers
 

@@ -38,6 +38,7 @@ In addition, some libraries target specific platforms or implementations of the 
 These APIs support the product infrastructure and are not intended/supported to be used directly from your code.  
   
 * [Microsoft.SqlServer.Server.SmiOrderProperty.Item Property](microsoft.sqlserver.server.smiorderproperty.item.md)
+* [System.Exception.PrepForRemoting Method](system.exception.prepforremoting.md)
 * [System.Data.SqlTypes.SqlChars.Stream Property](system.data.sqltypes.sqlchars.stream.md)
 * [System.Data.SqlTypes.SqlStreamChars Constructor](system.data.sqltypes.sqlstreamchars.-ctor.md)
 * [System.Data.SqlTypes.SqlStreamChars.CanSeek Property](system.data.sqltypes.sqlstreamchars.canseek.md)
@@ -50,7 +51,6 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Data.SqlTypes.SqlStreamChars.Seek Method](system.data.sqltypes.sqlstreamchars.seek.md)
 * [System.Data.SqlTypes.SqlStreamChars.SetLength Method](system.data.sqltypes.sqlstreamchars.setlength.md)
 * [System.Data.SqlTypes.SqlStreamChars.Write Method](system.data.sqltypes.sqlstreamchars.write.md)
-* [System.Exception.PrepForRemoting Method](system.exception.prepforremoting.md)
 * [System.Net.Connection Class](connection.md)
 * [System.Net.Connection.m\_WriteList Field](m_writelist.md)
 * [System.Net.ConnectionGroup Class](connectiongroup.md)

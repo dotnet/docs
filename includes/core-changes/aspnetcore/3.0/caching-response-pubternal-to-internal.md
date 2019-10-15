@@ -34,7 +34,7 @@ ASP.NET Core
 
 #### Affected APIs
 
-- <xref:Microsoft.AspNetCore.ResponseCaching.Internal.CachedResponse?displayProperty=fullName>
+- `Microsoft.AspNetCore.ResponseCaching.Internal.CachedResponse`
 - <xref:Microsoft.AspNetCore.ResponseCaching.Internal.CachedVaryByRules?displayProperty=fullName>
 - <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCache?displayProperty=fullName>
 - <xref:Microsoft.AspNetCore.ResponseCaching.Internal.IResponseCacheEntry?displayProperty=fullName>

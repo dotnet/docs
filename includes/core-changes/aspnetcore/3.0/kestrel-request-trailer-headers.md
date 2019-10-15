@@ -2,7 +2,7 @@
 
 In prior versions, Kestrel added HTTP/1.1 chunked trailer headers into the request headers collection when the request body was read to the end. This behavior caused concerns about ambiguity between headers and trailers. The decision was made to move the trailers to a new collection.
 
-HTTP/2 request trailers were unavailable in ASP.NET Core 2.2, but are now also available in this new collection in ASP.NET Core 3.0.
+HTTP/2 request trailers were unavailable in ASP.NET Core 2.2 but are now also available in this new collection in ASP.NET Core 3.0.
 
 New request extension methods have been added to access these trailers.
 

@@ -2,7 +2,7 @@
 
 <xref:Microsoft.AspNetCore.DataProtection.AzureStorage?displayProperty=fullName> depends on the [Azure Storage libraries](https://github.com/Azure/azure-storage-net). These libraries renamed their assemblies, packages, and namespaces. Starting in ASP.NET Core 3.0, `Microsoft.AspNetCore.DataProtection.AzureStorage` uses the new `Microsoft.Azure.Storage.`-prefixed APIs and packages.
 
-For questions about the Azure Storage APIs, use https://github.com/Azure/azure-storage-net. For discussion on this issue, see [aspnet/AspNetCore#8472](https://github.com/aspnet/AspNetCore/issues/8472).
+For questions about the Azure Storage APIs, use <https://github.com/Azure/azure-storage-net>. For discussion on this issue, see [aspnet/AspNetCore#8472](https://github.com/aspnet/AspNetCore/issues/8472).
 
 #### Version introduced
 

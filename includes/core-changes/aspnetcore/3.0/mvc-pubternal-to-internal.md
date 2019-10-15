@@ -16,7 +16,7 @@ Some types in MVC were `public` but in a `.Internal` namespace. These types had 
 
 #### New behavior
 
-All such types are updated either to be `public` in a supported namespace, or marked as `internal`.
+All such types are updated either to be `public` in a supported namespace or marked as `internal`.
 
 #### Reason for change
 

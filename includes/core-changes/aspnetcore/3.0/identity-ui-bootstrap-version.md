@@ -20,7 +20,7 @@ Bootstrap 4 was released during ASP.NET Core 3.0 timeframe.
 
 #### Recommended action
 
-You're impacted by this change if you use the default Identity UI and have added it in `Startup.ConfigureServices` as shown below:
+You're impacted by this change if you use the default Identity UI and have added it in `Startup.ConfigureServices` as shown in the following example:
 
 ```csharp
 services.AddDefaultIdentity<IdentityUser>().AddDefaultUI();

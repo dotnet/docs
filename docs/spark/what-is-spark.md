@@ -65,30 +65,30 @@ Each executor, or worker node, receives a task from the driver and executes that
 
 The cluster manager communicates with both the driver and the executors to:
 
-- Manage resource allocation
-- Manage program division
-- Manage program execution
+* Manage resource allocation
+* Manage program division
+* Manage program execution
 
 ## Language support
 
 Apache Spark supports the following programming languages:
 
-- Scala
-- Python
-- Java
-- SQL
-- R
-- .NET
+* Scala
+* Python
+* Java
+* SQL
+* R
+* .NET
 
 ## Spark APIs
 
 Apache Spark supports the following APIs:
 
-- [Spark Scala API](https://spark.apache.org/docs/2.2.0/api/scala/index.html)
-- [Spark Java API](https://spark.apache.org/docs/2.2.0/api/java/index.html)
-- [Spark Python API](https://spark.apache.org/docs/2.2.0/api/python/index.html)
-- [Spark R API](https://spark.apache.org/docs/2.2.0/api/R/index.html)
-- [Spark SQL](https://spark.apache.org/docs/latest/api/sql/index.html), built-in functions
+* [Spark Scala API](https://spark.apache.org/docs/2.2.0/api/scala/index.html)
+* [Spark Java API](https://spark.apache.org/docs/2.2.0/api/java/index.html)
+* [Spark Python API](https://spark.apache.org/docs/2.2.0/api/python/index.html)
+* [Spark R API](https://spark.apache.org/docs/2.2.0/api/R/index.html)
+* [Spark SQL](https://spark.apache.org/docs/latest/api/sql/index.html), built-in functions
 
 ## Next steps
 

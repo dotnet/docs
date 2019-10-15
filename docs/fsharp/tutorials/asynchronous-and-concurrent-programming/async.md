@@ -7,8 +7,8 @@ ms.date: 12/17/2018
 
 Asynchronous programming is a mechanism that is essential to modern applications for diverse reasons. There are two primary use cases that most developers will encounter:
 
-* Presenting a server process that can service a significant number of concurrent incoming requests, while minimizing the system resources occupied while request processing awaits inputs from systems or services external to that process
-* Maintaining a responsive UI or main thread while concurrently progressing background work
+- Presenting a server process that can service a significant number of concurrent incoming requests, while minimizing the system resources occupied while request processing awaits inputs from systems or services external to that process
+- Maintaining a responsive UI or main thread while concurrently progressing background work
 
 Although background work often does involve the utilization of multiple threads, it's important to consider the concepts of asynchrony and multi-threading separately. In fact, they are separate concerns, and one does not imply the other. What follows in this article will describe this in more detail.
 
@@ -16,9 +16,9 @@ Although background work often does involve the utilization of multiple threads,
 
 The previous point - that asynchrony is independent of the utilization of multiple threads - is worth explaining a bit further. There are three concepts that are sometimes related, but strictly independent of one another:
 
-* Concurrency; when multiple computations execute in overlapping time periods.
-* Parallelism; when multiple computations or several parts of a single computation run at exactly the same time.
-* Asynchrony; when one or more computations can execute separately from the main program flow.
+- Concurrency; when multiple computations execute in overlapping time periods.
+- Parallelism; when multiple computations or several parts of a single computation run at exactly the same time.
+- Asynchrony; when one or more computations can execute separately from the main program flow.
 
 All three are orthogonal concepts, but can be easily conflated, especially when they are used together. For example, you may need to execute multiple asynchronous computations in parallel. This does not mean that parallelism or asynchrony imply one another.
 
@@ -37,9 +37,9 @@ The main takeaway you should have is that asynchronous computations are independ
 
 In F#, asynchronous programming is centered around three core concepts:
 
-* The `Async<'T>` type, which represents a composable asynchronous computation.
-* The `Async` module functions, which let you schedule asynchronous work, compose asynchronous computations, and transform asynchronous results.
-* The `async { }` [computation expression](../../language-reference/computation-expressions.md), which provides a convenient syntax for building and controlling asynchronous computations.
+- The `Async<'T>` type, which represents a composable asynchronous computation.
+- The `Async` module functions, which let you schedule asynchronous work, compose asynchronous computations, and transform asynchronous results.
+- The `async { }` [computation expression](../../language-reference/computation-expressions.md), which provides a convenient syntax for building and controlling asynchronous computations.
 
 You can see these three concepts in the following example:
 
@@ -47,7 +47,7 @@ You can see these three concepts in the following example:
 open System
 open System.IO
 
-let countFileBytes path =
+let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
@@ -56,14 +56,14 @@ let countFileBytes path =
 
 [<EntryPoint>]
 let main argv =
-    countFileBytes "path-to-file.txt"
+    printTotalFileBytes "path-to-file.txt"
     |> Async.RunSynchronously
 
     Console.Read() |> ignore
     0
 ```
 
-In the example, the `countFileBytes` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification* of the work that is to execute asynchronously. It will call `Async.AwaitTask` in its body, which will convert the result of <xref:System.IO.File.WriteAllBytesAsync%2A> to an appropriate type when it is called.
+In the example, the `printTotalFileBytes` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification- of the work that is to execute asynchronously. It will call `Async.AwaitTask` in its body, which will convert the result of <xref:System.IO.File.WriteAllBytesAsync%2A> to an appropriate type when it is called.
 
 Another important line is the call to `Async.RunSynchronously`. This is one of the Async module starting functions that you'll need to call if you want to actually execute an F# asynchronous computation.
 
@@ -77,7 +77,7 @@ Here is an example that builds upon the previous one by combining computations:
 open System
 open System.IO
 
-let countFileBytes path =
+let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
@@ -87,7 +87,7 @@ let countFileBytes path =
 [<EntryPoint>]
 let main argv =
     argv
-    |> Array.map countFileBytes
+    |> Array.map printTotalFileBytes
     |> Async.Parallel
     |> Async.Ignore
     |> Async.RunSynchronously
@@ -98,18 +98,18 @@ let main argv =
 As you can see, the `main` function has quite a few more calls made. Conceptually, it does the following:
 
 1. Transform the command-line arguments into `Async<unit>` computations with `Array.map`.
-2. Create an `Async<'T[]>` that schedules and runs the `countFileBytes` computations in parallel when it runs.
+2. Create an `Async<'T[]>` that schedules and runs the `printTotalFileBytes` computations in parallel when it runs.
 3. Create an `Async<unit>` that will run the parallel computation and ignore its result.
 4. Explicitly run the last computation with `Async.RunSynchronously` and block until it is completes.
 
-When this program runs, `countFileBytes` runs in parallel for each command-line argument. Because asynchronous computations execute independently of program flow, there is no order in which they print their information and finish executing. The computations will be scheduled in parallel, but their order of execution is not guaranteed.
+When this program runs, `printTotalFileBytes` runs in parallel for each command-line argument. Because asynchronous computations execute independently of program flow, there is no order in which they print their information and finish executing. The computations will be scheduled in parallel, but their order of execution is not guaranteed.
 
 ## Sequencing asynchronous computations
 
 Because `Async<'T>` is a specification of work rather than an already-running task, you can perform more intricate transformations easily. Here is an example that sequences a set of Async computations so they execute one after another.
 
 ```fsharp
-let countFileBytes path =
+let printTotalFileBytes path =
     async {
         let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
         let fileName = Path.GetFileName(path)
@@ -119,13 +119,13 @@ let countFileBytes path =
 [<EntryPoint>]
 let main argv =
     argv
-    |> Array.map countFileBytes
+    |> Array.map printTotalFileBytes
     |> Async.Sequential
     |> Async.RunSynchronously
     |> ignore
 ```
 
-This will schedule `countFileBytes` to execute in the order of the elements of `argv` rather than scheduling them in parallel. Because the next item will not be scheduled until after the last computation has finished executing, the computations are sequenced such that there is no overlap in their execution.
+This will schedule `printTotalFileBytes` to execute in the order of the elements of `argv` rather than scheduling them in parallel. Because the next item will not be scheduled until after the last computation has finished executing, the computations are sequenced such that there is no overlap in their execution.
 
 ## Important Async module functions
 
@@ -140,18 +140,18 @@ Starts a child computation within an asynchronous computation. This allows multi
 Signature:
 
 ```fsharp
-computation: Async<'T> * timeout: ?int -> Async<Async<'T>>
+computation: Async<'T> - timeout: ?int -> Async<Async<'T>>
 ```
 
 When to use:
 
-* When you want to execute multiple asynchronous computations concurrently rather than one at a time, but not have them scheduled in parallel.
-* When you wish to tie the lifetime of a child computation to that of a parent computation.
+- When you want to execute multiple asynchronous computations concurrently rather than one at a time, but not have them scheduled in parallel.
+- When you wish to tie the lifetime of a child computation to that of a parent computation.
 
 What to watch out for:
 
-* Starting multiple computations with `Async.StartChild` isn't the same as scheduling them in parallel. If you wish to schedule computations in parallel, use `Async.Parallel`.
-* Canceling a parent computation will trigger cancellation of all child computations it started.
+- Starting multiple computations with `Async.StartChild` isn't the same as scheduling them in parallel. If you wish to schedule computations in parallel, use `Async.Parallel`.
+- Canceling a parent computation will trigger cancellation of all child computations it started.
 
 ### Async.StartImmediate
 
@@ -160,16 +160,16 @@ Runs an asynchronous computation, starting immediately on the current operating 
 Signature:
 
 ```fsharp
-computation: Async<unit> * cancellationToken: ?CancellationToken -> unit
+computation: Async<unit> - cancellationToken: ?CancellationToken -> unit
 ```
 
 When to use:
 
-* When you need to update something on the calling thread in the middle of an asynchronous computation.
+- When you need to update something on the calling thread in the middle of an asynchronous computation.
 
 What to watch out for:
 
-* Code in the asynchronous computation will run on whatever thread one happens to be scheduled on. This can be problematic if that thread is in some way sensitive, such as a UI thread. In such cases, `Async.StartImmediate` is likely inappropriate to use.
+- Code in the asynchronous computation will run on whatever thread one happens to be scheduled on. This can be problematic if that thread is in some way sensitive, such as a UI thread. In such cases, `Async.StartImmediate` is likely inappropriate to use.
 
 ### Async.StartAsTask
 
@@ -178,16 +178,16 @@ Executes a computation in the thread pool. Returns a <xref:System.Threading.Task
 Signature:
 
 ```fsharp
-computation: Async<'T> * taskCreationOptions: ?TaskCreationOptions * cancellationToken: ?CancellationToken -> Task<'T>
+computation: Async<'T> - taskCreationOptions: ?TaskCreationOptions - cancellationToken: ?CancellationToken -> Task<'T>
 ```
 
 When to use:
 
-* When you need to call into a .NET API that expects a <xref:System.Threading.Tasks.Task%601> to represent the result of an asynchronous computation.
+- When you need to call into a .NET API that expects a <xref:System.Threading.Tasks.Task%601> to represent the result of an asynchronous computation.
 
 What to watch out for:
 
-* This call will allocate an additional `Task` object, which can increase overhead if it is used often.
+- This call will allocate an additional `Task` object, which can increase overhead if it is used often.
 
 ### Async.Parallel
 
@@ -196,18 +196,18 @@ Schedules a sequence of asynchronous computations to be executed in parallel. Th
 Signature:
 
 ```fsharp
-computations: seq<Async<'T>> * ?maxDegreesOfParallelism: int -> Async<'T[]>
+computations: seq<Async<'T>> - ?maxDegreesOfParallelism: int -> Async<'T[]>
 ```
 
 When to use it:
 
-* If you need to run a set of computations at the same time and have no reliance on their order of execution.
-* If you don't require results from computations scheduled in parallel until they have all completed.
+- If you need to run a set of computations at the same time and have no reliance on their order of execution.
+- If you don't require results from computations scheduled in parallel until they have all completed.
 
 What to watch out for:
 
-* You can only access the resulting array of values once all computations have finished.
-* Computations will be run however they end up getting scheduled. This means you cannot rely on their order of their execution.
+- You can only access the resulting array of values once all computations have finished.
+- Computations will be run however they end up getting scheduled. This means you cannot rely on their order of their execution.
 
 ### Async.Sequential
 
@@ -221,12 +221,12 @@ computations: seq<Async<'T>> -> Async<'T[]>
 
 When to use it:
 
-* If you need to execute multiple computations in order.
+- If you need to execute multiple computations in order.
 
 What to watch out for:
 
-* You can only access the resulting array of values once all computations have finished.
-* Computations will be run in the order that they are passed to this function, which can mean that more time will elapse before the results are returned.
+- You can only access the resulting array of values once all computations have finished.
+- Computations will be run in the order that they are passed to this function, which can mean that more time will elapse before the results are returned.
 
 ### Async.AwaitTask
 
@@ -240,11 +240,11 @@ task: Task<'T>  -> Async<'T>
 
 When to use:
 
-* When you are consuming a .NET API that returns a <xref:System.Threading.Tasks.Task%601> within an F# asynchronous computation.
+- When you are consuming a .NET API that returns a <xref:System.Threading.Tasks.Task%601> within an F# asynchronous computation.
 
 What to watch out for:
 
-* Exceptions are wrapped in <xref:AggregateException> following the convention of the Task Parallel Library, and this is different from how F# async generally surfaces exceptions.
+- Exceptions are wrapped in <xref:AggregateException> following the convention of the Task Parallel Library, and this is different from how F# async generally surfaces exceptions.
 
 ### Async.Catch
 
@@ -258,11 +258,11 @@ computation: Async<'T> -> Async<Choice<'T, exn>>
 
 When to use:
 
-* When you are performing asynchronous work that may fail with an exception and you want to handle that exception in the caller.
+- When you are performing asynchronous work that may fail with an exception and you want to handle that exception in the caller.
 
 What to watch out for:
 
-* When using combined or sequenced asynchronous computations, the encompassing computation will fully stop if one of its "internal" computations throws an exception.
+- When using combined or sequenced asynchronous computations, the encompassing computation will fully stop if one of its "internal" computations throws an exception.
 
 ### Async.Ignore
 
@@ -276,11 +276,11 @@ computation: Async<'T> -> Async<unit>
 
 When to use:
 
-* When you have an asynchronous computation whose result is not needed. This is analogous to the `ignore` code for non-asynchronous code.
+- When you have an asynchronous computation whose result is not needed. This is analogous to the `ignore` code for non-asynchronous code.
 
 What to watch out for:
 
-* If you must use this because you wish to use `Async.Start` or another function that requires `Async<unit>`, consider if discarding the result is okay to do. Discarding results just to fit a type signature should not generally be done.
+- If you must use this because you wish to use `Async.Start` or another function that requires `Async<unit>`, consider if discarding the result is okay to do. Discarding results just to fit a type signature should not generally be done.
 
 ### Async.RunSynchronously
 
@@ -289,17 +289,17 @@ Runs an asynchronous computation and awaits its result on the calling thread. Th
 Signature:
 
 ```fsharp
-computation: Async<'T> * timeout: ?int * cancellationToken: ?CancellationToken -> 'T
+computation: Async<'T> - timeout: ?int - cancellationToken: ?CancellationToken -> 'T
 ```
 
 When to use it:
 
-* If you need it, use it only once in an application - at the entry point for an executable.
-* When you don't care about performance and want to execute a set of other asynchronous operations at once.
+- If you need it, use it only once in an application - at the entry point for an executable.
+- When you don't care about performance and want to execute a set of other asynchronous operations at once.
 
 What to watch out for:
 
-* Calling `Async.RunSynchronously` blocks the calling thread until the execution completes.
+- Calling `Async.RunSynchronously` blocks the calling thread until the execution completes.
 
 ### Async.Start
 
@@ -308,20 +308,20 @@ Starts an asynchronous computation in the thread pool that returns `unit`. Doesn
 Signature:
 
 ```fsharp
-computation: Async<unit> * cancellationToken: ?CancellationToken -> unit
+computation: Async<unit> - cancellationToken: ?CancellationToken -> unit
 ```
 
 Use only when:
 
-* You have an asynchronous computation that doesn't yield a result and/or require processing of one.
-* You don't need to know when an asynchronous computation completes.
-* You don't care which thread an asynchronous computation runs on.
-* You don't have any need to be aware of or report exceptions resulting from the task.
+- You have an asynchronous computation that doesn't yield a result and/or require processing of one.
+- You don't need to know when an asynchronous computation completes.
+- You don't care which thread an asynchronous computation runs on.
+- You don't have any need to be aware of or report exceptions resulting from the task.
 
 What to watch out for:
 
-* Exceptions raised by computations started with `Async.Start` aren't propagated to the caller. The call stack will be completely unwound.
-* Any effectful work (such as calling `printfn`) started with `Async.Start` won't cause the effect to happen on the main thread of a program's execution.
+- Exceptions raised by computations started with `Async.Start` aren't propagated to the caller. The call stack will be completely unwound.
+- Any effectful work (such as calling `printfn`) started with `Async.Start` won't cause the effect to happen on the main thread of a program's execution.
 
 ## Interoperating with .NET
 
@@ -377,7 +377,7 @@ Although F# provides some abilities to start an asynchronous computation on the 
 
 ## See also
 
-* [The F# Asynchronous Programming Model](https://www.microsoft.com/research/publication/the-f-asynchronous-programming-model)
-* [Jet.com's F# Async Guide](https://medium.com/jettech/f-async-guide-eb3c8a2d180a)
-* [F# for fun and profit's Asynchronous Programming guide](https://fsharpforfunandprofit.com/posts/concurrency-async-and-parallel/)
-* [Async in C# and F#: Asynchronous gotchas in C#](http://tomasp.net/blog/csharp-async-gotchas.aspx/)
+- [The F# Asynchronous Programming Model](https://www.microsoft.com/research/publication/the-f-asynchronous-programming-model)
+- [Jet.com's F# Async Guide](https://medium.com/jettech/f-async-guide-eb3c8a2d180a)
+- [F# for fun and profit's Asynchronous Programming guide](https://fsharpforfunandprofit.com/posts/concurrency-async-and-parallel/)
+- [Async in C# and F#: Asynchronous gotchas in C#](http://tomasp.net/blog/csharp-async-gotchas.aspx/)

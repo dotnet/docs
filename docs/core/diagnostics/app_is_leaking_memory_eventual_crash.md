@@ -7,7 +7,7 @@ ms.date: 10/14/2019
 ---
 # Debugging a memory leak
 
-**This article applies to:** .NET Core 3.0 SDK and later versions
+**This article applies to: ✓** .NET Core 3.0 SDK and later versions
 
 In this scenario, the endpoint will slowly start leaking memory and eventually will result in an out of memory exception. To diagnose this scenario, we need several key pieces of diagnostics data.
 

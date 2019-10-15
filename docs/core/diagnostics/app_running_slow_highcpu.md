@@ -7,7 +7,7 @@ ms.date: 10/14/2019
 ---
 # Debugging high CPU usage
 
-**This article applies to:** .NET Core 3.0 SDK and later versions
+**This article applies to: ✓** .NET Core 3.0 SDK and later versions
 
 In this scenario, the [sample debug target](sample-debug-target.md) will consume excessive CPU. To diagnose this scenario, we need several key pieces of diagnostics data.
 

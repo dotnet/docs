@@ -86,4 +86,4 @@ This example shows various uses of the `Format` function to format values using 
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)
 - [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
 - [String Manipulation Summary](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)
-- [System.String class methods]<xref:System.String#methods?displayProperty=nameWithType>
+- [System.String class methods](/dotnet/api/system.string#methods)

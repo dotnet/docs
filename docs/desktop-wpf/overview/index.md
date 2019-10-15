@@ -137,3 +137,9 @@ WPF resources are objects that can be reused in different places in your applica
 Every framework-level element (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) has a `Resources` property (which is a <xref:System.Windows.ResourceDictionary> type) that contains defined resources. Since all elements inherit from a framework-level element, all elements can define resources. It's most common, however, to define resources on a root element of a XAML document.
 
 <!--For more information, see [XAML Resources](../../../framework/wpf/advanced/xaml-resources.md).-->
+
+## Next steps
+
+- [Create a WPF application.](https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json)
+- [Explore the differences from .NET Framework.](migration/differences-from-net-framework.md)
+- [Learn about XAML.](fundamentals/xaml.md)

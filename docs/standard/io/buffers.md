@@ -10,14 +10,7 @@ ms.author: riande
 ---
 # Work with Buffers in .NET
 
-Review questions.
-
-Can I remove the `// Return the position.` comment?
-
-```Captain_Obvious
-// Return the position.
-   return reader.Position;
-```
+INTRO NEEDS TO GO HERE
 
 ## IBufferWriter\<T\>
 

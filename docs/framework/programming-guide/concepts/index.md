@@ -1,10 +1,9 @@
 ---
-title: "Programming Concepts (C#)"
-ms.date: 07/20/2015
-ms.assetid: 3227afd5-4794-484b-b83b-0f1f94a0476b
+title: "Programming Concepts"
+ms.date: 10/16/2019
 ---
-# Programming Concepts (C#)
-This section explains programming concepts in the C# language.  
+# Programming Concepts
+This section explains programming concepts in the C# and VB language.  
   
 ## In This Section  
   

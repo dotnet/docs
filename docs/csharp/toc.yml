@@ -418,23 +418,35 @@
     - name: Generics and Attributes
       href: programming-guide/generics/generics-and-attributes.md
   - name: Namespaces
-    href: programming-guide/namespaces/
+    items:
+    - name: Overview
+      href: programming-guide/namespaces/index.md
+    - name: Using namespaces
+      href: programming-guide/namespaces/using-namespaces.md
+    - name: "How to: use the My namespace"
+      href: programming-guide/namespaces/how-to-use-the-my-namespace.md
   - name: Nullable value types
-    href: programming-guide/nullable-types/
+    items:
+    - name: Overview
+      href: programming-guide/nullable-types/index.md
+    - name: Using nullable value types
+      href: programming-guide/nullable-types/using-nullable-types.md
+    - name: "How to: identify a nullable value type"
+      href: programming-guide/nullable-types/how-to-identify-a-nullable-type.md
   - name: Unsafe Code and Pointers
+    items:
+    - name: Overview and restrictions
+      href: programming-guide/unsafe-code-pointers/index.md
+    - name: Fixed size buffers
+      href: programming-guide/unsafe-code-pointers/fixed-size-buffers.md
+    - name: Pointer types
       items:
-      - name: Overview and restrictions
-        href: programming-guide/unsafe-code-pointers/index.md
-      - name: Fixed size buffers
-        href: programming-guide/unsafe-code-pointers/fixed-size-buffers.md
-      - name: Pointer types
-        items:
-        - name: Overview
-          href: programming-guide/unsafe-code-pointers/pointer-types.md
-        - name: Pointer conversions
-          href: programming-guide/unsafe-code-pointers/pointer-conversions.md
-        - name: "How to: use pointers to copy an array of bytes"
-          href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
+      - name: Overview
+        href: programming-guide/unsafe-code-pointers/pointer-types.md
+      - name: Pointer conversions
+        href: programming-guide/unsafe-code-pointers/pointer-conversions.md
+      - name: "How to: use pointers to copy an array of bytes"
+        href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
   - name: XML Documentation Comments
     href: programming-guide/xmldoc/
   - name: Exceptions and Exception Handling

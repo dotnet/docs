@@ -20,7 +20,7 @@ ASP.NET Core
 
 #### Affected APIs
 
-<xref:Microsoft.AspNetCore.Identity.SignInManager`1.%23ctor%2A?displayProperty=nameWithType>
+<xref:Microsoft.AspNetCore.Identity.SignInManager%601.%23ctor%2A?displayProperty=nameWithType>
 
 <!--
 

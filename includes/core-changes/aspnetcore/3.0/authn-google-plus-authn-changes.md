@@ -42,7 +42,7 @@ For `Microsoft.AspNetCore.Authentication.Google` version 2.x, replace your exist
 });
 ```
 
-The February 2.1 and 2.2 patches will incorporate the preceding reconfiguration as the new default. No patch is planned for ASP.NET Core 2.0 since it has reached [end of life](https://dotnet.microsoft.com/platform/support-policy).
+The February 2.1 and 2.2 patches incorporated the preceding reconfiguration as the new default. No patch is planned for ASP.NET Core 2.0 since it has reached [end of life](https://dotnet.microsoft.com/platform/support-policy).
 
 ##### ASP.NET Core 3.0
 

@@ -8,7 +8,7 @@ Starting with ASP.NET Core 3.0, .NET Framework is an unsupported target framewor
 
 Customers using ASP.NET Core with .NET Framework can continue in a fully supported fashion using the [2.1 LTS release][2.1-lts]. Support and servicing for 2.1 continues until at least August 21, 2021. This date is three years after declaration of the LTS release per the [.NET Support Policy](https://www.microsoft.com/net/platform/support-policy). Support for ASP.NET Core 2.1 packages **on .NET Framework** will extend indefinitely, similar to the [servicing policy for other package-based ASP.NET frameworks](https://dotnet.microsoft.com/platform/support/policy/aspnet).
 
-For more information about porting from .NET Framework to .NET Core, see [Porting to .NET Core.](/dotnet/core/porting/).
+For more information about porting from .NET Framework to .NET Core, see [Porting to .NET Core.](~/docs/core/porting/index.md).
 
 `Microsoft.Extensions` packages (such as logging, dependency injection, and configuration) and Entity Framework Core aren't affected. They'll continue to support .NET Standard.
 

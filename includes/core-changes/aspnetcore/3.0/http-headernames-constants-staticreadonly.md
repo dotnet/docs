@@ -1,6 +1,6 @@
 ### HTTP: HeaderNames constants changed to static readonly
 
-Starting in ASP.NET Core 3.0 Preview 5, the fields in <xref:Microsoft.Net.Http.Headers.HeaderNames?displayProperty=fullName> will change from `const` to `static readonly`.
+Starting in ASP.NET Core 3.0 Preview 5, the fields in <xref:Microsoft.Net.Http.Headers.HeaderNames?displayProperty=fullName> changed from `const` to `static readonly`.
 
 For discussion, see [aspnet/AspNetCore#9514](https://github.com/aspnet/AspNetCore/issues/9514).
 
@@ -31,7 +31,7 @@ Recompile against 3.0. Source code using these fields in the following ways can 
 * As a `case` in a `switch` statement
 * When defining another `const`
 
-To work around the break, switch to using self-defined header name constants or string literals.
+To work around the breaking change, switch to using self-defined header name constants or string literals.
 
 #### Category
 

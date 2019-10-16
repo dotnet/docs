@@ -14,7 +14,7 @@ Review questions.
 
 Can I remove the `// Return the position.` comment?
 
-```CaptainObvious
+```Captain_Obvious
 // Return the position.
    return reader.Position;
 ```
@@ -113,7 +113,7 @@ The following examples demonstrate some common cases for processing `ReadOnlySeq
 
 ##### Process binary data
 
-This example parses a 4-byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
+The following example parses a 4-byte big-endian integer length from the start of the `ReadOnlySequence<byte>`.
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet5)]
 
@@ -128,7 +128,7 @@ The following example:
 
 ##### Empty segments
 
-It's valid to store empty segments inside of a `ReadOnlySequence<T>` and it may show up while enumerating segments explicitly:
+It's valid to store empty segments inside of a `ReadOnlySequence<T>`. Empty segments may occur while enumerating segments explicitly:
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet7)]
 
@@ -140,15 +140,15 @@ The preceding code creates a `ReadOnlySequence<byte>` with empty segments and sh
 
 ### Potential problems with ReadOnlySequence\<T> and SequencePosition
 
-There are several quirks when dealing with a `ReadOnlySequence<T>`/`SequencePosition` vs. a normal `ReadOnlySpan<T>`/`ReadOnlyMemory<T>`/`T[]`/`int`:
+There are several unusual outcomes when dealing with a `ReadOnlySequence<T>`/`SequencePosition` vs. a normal `ReadOnlySpan<T>`/`ReadOnlyMemory<T>`/`T[]`/`int`:
 
-- `SequencePosition` is a position marker for a specific `ReadOnlySequence<T>`, not an absolute position. As it's relative to a specific `ReadOnlySequence<T>`, it doesn't have meaning if used outside of the `ReadOnlySequence<T>` where it originated.
+- `SequencePosition` is a position marker for a specific `ReadOnlySequence<T>`, not an absolute position. Because it's relative to a specific `ReadOnlySequence<T>`, it doesn't have meaning if used outside of the `ReadOnlySequence<T>` where it originated.
 - Arithmetic can't be performed on `SequencePosition` without the `ReadOnlySequence<T>`. That means doing basic things like `position++` is written `ReadOnlySequence<T>.GetPosition(position, 1)`.
 - `GetPosition(long)` does **not** support negative indexes. That means it's impossible to get the second to last character without walking all segments.
 - Two `SequencePosition` can't be compared, making it difficult to:
   - Know if one position is greater than or less than another position.
   - Write some parsing algorithms.
-- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by `in` or `ref` where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](../../csharp/language-reference/keywords/struct.md).
+- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by [in](/dotnet/csharp/language-reference/keywords/in-parameter-modifier) or [ref](/dotnet/csharp/language-reference/keywords/ref) where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](../../csharp/language-reference/keywords/struct.md).
 - Empty segments:
   - Are valid within a `ReadOnlySequence<T>`
   - Can appear when iterating using `ReadOnlySequence<T>.TryGet` 

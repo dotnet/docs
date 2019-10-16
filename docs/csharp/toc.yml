@@ -364,7 +364,127 @@
     - name: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
       href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
   - name: Classes and Structs
-    href: programming-guide/classes-and-structs/
+    items:
+    - name: Overview
+      href: programming-guide/classes-and-structs/index.md
+    - name: Classes
+      href: programming-guide/classes-and-structs/classes.md
+    - name: Objects
+      href: programming-guide/classes-and-structs/objects.md
+    - name: Structs
+      items:
+      - name: Overview
+        href: programming-guide/classes-and-structs/structs.md
+      - name: Using Structs
+        href: programming-guide/classes-and-structs/using-structs.md
+    - name: Inheritance
+      href: programming-guide/classes-and-structs/inheritance.md
+    - name: Polymorphism
+      items:
+      - name: Overview
+        href: programming-guide/classes-and-structs/polymorphism.md
+      - name: Versioning with the Override and New Keywords
+        href: programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md
+      - name: Knowing When to Use Override and New Keywords
+        href: programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md
+      - name: "How to: Override the ToString Method"
+        href: programming-guide/classes-and-structs/how-to-override-the-tostring-method.md
+    - name: Members
+      items:
+      - name: Members overview
+        href: programming-guide/classes-and-structs/members.md
+      - name: Abstract and Sealed Classes and Class Members
+        href: programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md
+      - name: Static Classes and Static Class Members
+        href: programming-guide/classes-and-structs/static-classes-and-static-class-members.md
+      - name: Access Modifiers
+        href: programming-guide/classes-and-structs/access-modifiers.md
+      - name: Fields
+        href: programming-guide/classes-and-structs/fields.md
+      - name: Constants
+        href: programming-guide/classes-and-structs/constants.md
+      - name: "How to: Define Abstract Properties"
+        href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
+      - name: "How to: Define Constants in C#"
+        href: programming-guide/classes-and-structs/how-to-define-constants.md
+    - name: Properties
+      items:
+      - name: Properties overview
+        href: programming-guide/classes-and-structs/properties.md
+      - name: Using Properties
+        href: programming-guide/classes-and-structs/using-properties.md
+      - name: Interface Properties
+        href: programming-guide/classes-and-structs/interface-properties.md
+      - name: Restricting Accessor Accessibility
+        href: programming-guide/classes-and-structs/restricting-accessor-accessibility.md
+      - name: "How to: Declare and Use Read Write Properties"
+        href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
+      - name: Auto-Implemented Properties
+        href: programming-guide/classes-and-structs/auto-implemented-properties.md
+      - name: "How to: Implement a Lightweight Class with Auto-Implemented Properties"
+        href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
+    - name: Methods
+      items:
+      - name: Methods overview
+        href: programming-guide/classes-and-structs/methods.md
+      - name: Local functions
+        href: programming-guide/classes-and-structs/local-functions.md
+      - name: Ref returns and ref locals
+        href: programming-guide/classes-and-structs/ref-returns.md
+      - name: Parameters
+        items:
+        - name: Passing parameters
+          href: programming-guide/classes-and-structs/passing-parameters.md
+        - name: Passing Value-Type Parameters
+          href: programming-guide/classes-and-structs/passing-value-type-parameters.md
+        - name: Passing Reference-Type Parameters
+          href: programming-guide/classes-and-structs/passing-reference-type-parameters.md
+        - name: "How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method"
+          href: programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
+      - name: Implicitly Typed Local Variables
+        href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
+      - name: "How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression"
+        href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
+      - name: Extension Methods
+        href: programming-guide/classes-and-structs/extension-methods.md
+      - name: "How to: Implement and Call a Custom Extension Method"
+        href: programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md
+      - name: "How to: Create a New Method for an Enumeration"
+        href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
+      - name: Named and Optional Arguments
+        href: programming-guide/classes-and-structs/named-and-optional-arguments.md
+      - name: "How to: Use Named and Optional Arguments in Office Programming"
+        href: programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md
+    - name: Constructors
+      items:
+      - name: Constructors overview
+        href: programming-guide/classes-and-structs/constructors.md
+      - name: Using Constructors
+        href: programming-guide/classes-and-structs/using-constructors.md
+      - name: Instance Constructors
+        href: programming-guide/classes-and-structs/instance-constructors.md
+      - name: Private Constructors
+        href: programming-guide/classes-and-structs/private-constructors.md
+      - name: Static Constructors
+        href: programming-guide/classes-and-structs/static-constructors.md
+      - name: "How to: Write a Copy Constructor"
+        href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
+    - name: Finalizers
+      href: programming-guide/classes-and-structs/destructors.md
+    - name: Object and Collection Initializers
+      href: programming-guide/classes-and-structs/object-and-collection-initializers.md
+    - name: "How to: Initialize Objects by Using an Object Initializer"
+      href: programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md
+    - name: "How to: Initialize a Dictionary with a Collection Initializer"
+      href: programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md
+    - name: Nested Types
+      href: programming-guide/classes-and-structs/nested-types.md
+    - name: Partial Classes and Methods
+      href: programming-guide/classes-and-structs/partial-classes-and-methods.md
+    - name: Anonymous Types
+      href: programming-guide/classes-and-structs/anonymous-types.md
+    - name: "How to: Return Subsets of Element Properties in a Query"
+      href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
   - name: Interfaces
     href: programming-guide/interfaces/
   - name: Enumeration Types
@@ -372,7 +492,23 @@
   - name: Delegates
     href: programming-guide/delegates/index.md
   - name: Arrays
-    href: programming-guide/arrays/
+    items:
+    - name: Overview
+      href: programming-guide/arrays/index.md
+    - name: Arrays as Objects
+      href: programming-guide/arrays/arrays-as-objects.md
+    - name: Single-Dimensional Arrays
+      href: programming-guide/arrays/single-dimensional-arrays.md
+    - name: Multidimensional Arrays
+      href: programming-guide/arrays/multidimensional-arrays.md
+    - name: Jagged Arrays
+      href: programming-guide/arrays/jagged-arrays.md
+    - name: Using foreach with Arrays
+      href: programming-guide/arrays/using-foreach-with-arrays.md
+    - name: Passing Arrays as Arguments
+      href: programming-guide/arrays/passing-arrays-as-arguments.md
+    - name: Implicitly Typed Arrays
+      href: programming-guide/arrays/implicitly-typed-arrays.md
   - name: Strings
     items:
     - name: Programming with strings
@@ -448,7 +584,57 @@
       - name: "How to: use pointers to copy an array of bytes"
         href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
   - name: XML Documentation Comments
-    href: programming-guide/xmldoc/
+    items:
+    - name: Overview
+      href: programming-guide/xmldoc/index.md
+    - name: Recommended Tags for Documentation Comments
+      href: programming-guide/xmldoc/recommended-tags-for-documentation-comments.md
+    - name: Processing the XML File
+      href: programming-guide/xmldoc/processing-the-xml-file.md
+    - name: Delimiters for Documentation Tags
+      href: programming-guide/xmldoc/delimiters-for-documentation-tags.md
+    - name: "How to: Use the XML Documentation Features"
+      href: programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md
+    - name: Documentation tag reference  
+      items:
+      - name: <c>
+        href: programming-guide/xmldoc/code-inline.md
+      - name: <code>
+        href: programming-guide/xmldoc/code.md
+      - name: cref Attribute
+        href: programming-guide/xmldoc/cref-attribute.md
+      - name: <example>
+        href: programming-guide/xmldoc/example.md
+      - name: <exception>
+        href: programming-guide/xmldoc/exception.md
+      - name: <include>
+        href: programming-guide/xmldoc/include.md
+      - name: <list>
+        href: programming-guide/xmldoc/list.md
+      - name: <para>
+        href: programming-guide/xmldoc/para.md
+      - name: <param>
+        href: programming-guide/xmldoc/param.md
+      - name: <paramref>
+        href: programming-guide/xmldoc/paramref.md
+      - name: <permission>
+        href: programming-guide/xmldoc/permission.md
+      - name: <remarks>
+        href: programming-guide/xmldoc/remarks.md
+      - name: <returns>
+        href: programming-guide/xmldoc/returns.md
+      - name: <see>
+        href: programming-guide/xmldoc/see.md
+      - name: <seealso>
+        href: programming-guide/xmldoc/seealso.md
+      - name: <summary>
+        href: programming-guide/xmldoc/summary.md
+      - name: <typeparam>
+        href: programming-guide/xmldoc/typeparam.md
+      - name: <typeparamref>
+        href: programming-guide/xmldoc/typeparamref.md
+      - name: <value>
+        href: programming-guide/xmldoc/value.md
   - name: Exceptions and Exception Handling
     items:
     - name: Overview

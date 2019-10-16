@@ -19,7 +19,7 @@ Azure Stack is a hybrid cloud platform that lets you deliver Azure services from
 
 Figure 4-13 shows an overview of the true hybrid cloud platform that Microsoft offers.
 
-![Microsoft hybrid cloud platform with Azure Stack and Azure](./media/image13.jpg)
+![Diagram of Microsoft hybrid cloud platform with Azure Stack and Azure.](./media/migrate-to-hybrid-cloud-scenarios/microsoft-hybrid-cloud-platform.png)
 
 **Figure 4-13.** Microsoft hybrid cloud platform with Azure Stack and Azure
 
@@ -60,5 +60,5 @@ Microsoft Azure Stack Development Kit is a single-node deployment of Azure Stack
     <https://azure.microsoft.com/pricing/hybrid-benefit/>
 
 >[!div class="step-by-step"]
->[Previous](modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md)
+>[Previous](life-cycle-ci-cd-pipelines-devops-tools.md)
 >[Next](../walkthroughs-technical-get-started-overview.md)

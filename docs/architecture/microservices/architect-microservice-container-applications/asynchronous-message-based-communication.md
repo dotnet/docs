@@ -79,7 +79,7 @@ Additional topics to consider when using asynchronous communication are message 
 ## Additional resources
 
 - **Event Driven Messaging** \
-  <http://soapatterns.org/design_patterns/event_driven_messaging>
+  <https://soapatterns.org/design_patterns/event_driven_messaging>
 
 - **Publish/Subscribe Channel** \
   <https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html>

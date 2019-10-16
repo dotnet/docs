@@ -154,7 +154,7 @@ Worker Service                                    worker                [C#]    
 
 ### Test the project template
 
-Now that you have an item template installed, test it. Navigate to the _test_ folder and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
+Now that you have an item template installed, test it. Navigate to the _test_ folder and create a new console application with `dotnet new consoleasync`. This generates a working project you can easily test with the `dotnet run` command.
 
 ```console
 C:\test> dotnet new consoleasync

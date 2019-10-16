@@ -1,0 +1,198 @@
+- name: C# Guide
+  href: index.md
+- name: Get Started
+  href: getting-started/
+- name: Tutorials
+  items:
+  - name: Overview
+    href: tutorials/index.md
+  - name: Introduction to programming with C#
+    items:
+    - name: Choose your first lesson
+      href: tutorials/intro-to-csharp/index.md
+    - name: Hello world
+      href: tutorials/intro-to-csharp/hello-world.yml
+    - name: Numbers in C#
+      href: tutorials/intro-to-csharp/numbers-in-csharp.yml
+    - name: Branches and loops
+      href: tutorials/intro-to-csharp/branches-and-loops.yml
+    - name: List collections
+      href: tutorials/intro-to-csharp/list-collection.yml
+    - name: Work in your local environment
+      items:
+      - name: Setup your environment
+        href: tutorials/intro-to-csharp/local-environment.md
+      - name: Numbers in C#
+        href: tutorials/intro-to-csharp/numbers-in-csharp-local.md
+      - name: Branches and loops
+        href: tutorials/intro-to-csharp/branches-and-loops-local.md
+      - name: List collections
+        href: tutorials/intro-to-csharp/arrays-and-collections.md
+      - name: Introduction to classes
+        href: tutorials/intro-to-csharp/introduction-to-classes.md
+  - name: Explore C# 6
+    href: tutorials/exploration/csharp-6.yml
+  - name: Explore string interpolation - interactive
+    href: tutorials/exploration/interpolated-strings.yml
+  - name: Explore string interpolation - in your environment
+    href: tutorials/exploration/interpolated-strings-local.md
+  - name: Advanced scenarios for string Interpolation
+    href: tutorials/string-interpolation.md
+  - name: Safely update interfaces with default interface methods
+    href: tutorials/default-interface-methods-versions.md
+  - name: Create mixin functionality with default interface methods
+    href: tutorials/mixins-with-default-interface-methods.md
+  - name: Explore indexes and ranges
+    href: tutorials/ranges-indexes.md
+  - name: Work with nullable reference types
+    href: tutorials/nullable-reference-types.md
+  - name: Upgrade an app to nullable reference types
+    href: tutorials/upgrade-to-nullable-references.md
+  - name: Generate and consume asynchronous streams
+    href: tutorials/generate-consume-asynchronous-stream.md
+  - name: Extend data capabilities using pattern matching
+    href: tutorials/pattern-matching.md
+  - name: Console Application
+    href: tutorials/console-teleprompter.md
+  - name: REST Client
+    href: tutorials/console-webapiclient.md
+  - name: Inheritance in C# and .NET
+    href: tutorials/inheritance.md
+  - name: Working with LINQ
+    href: tutorials/working-with-linq.md
+  - name: Using Attributes
+    href: tutorials/attributes.md
+- name: Tour of C#
+  href: tour-of-csharp/
+- name: What's new in C#
+  items:
+  - name: C# 8.0
+    href: whats-new/csharp-8.md
+  - name: C# 7.3
+    href: whats-new/csharp-7-3.md
+  - name: C# 7.2
+    href: whats-new/csharp-7-2.md
+  - name: C# 7.1
+    href: whats-new/csharp-7-1.md
+  - name: C# 7.0
+    href: whats-new/csharp-7.md
+  - name: C# 6
+    href: whats-new/csharp-6.md
+  - name: C# Version History
+    href: whats-new/csharp-version-history.md
+  - name: Relationships between language and framework
+    href: whats-new/relationships-between-language-and-library.md
+  - name: Version and update considerations
+    href: whats-new/version-update-considerations.md
+- name: C# Concepts
+  items:
+  - name: C# Type system
+    href: programming-guide/types/index.md
+  - name: Nullable reference types
+    href: nullable-references.md
+  - name: Describe nullable APIs using attributes and constraints
+    href: nullable-attributes.md
+  - name: Namespaces
+    href: programming-guide/namespaces/index.md
+  - name: Basic Types
+    href: basic-types.md
+  - name: Classes
+    href: programming-guide/classes-and-structs/classes.md
+  - name: Structs
+    href: structs.md
+  - name: Tuples
+    href: tuples.md
+  - name: Deconstructing tuples and other types
+    href: deconstruct.md
+  - name: Interfaces
+    href: programming-guide/interfaces/index.md
+  - name: Methods
+    href: methods.md
+  - name: Lambda Expressions
+    href: programming-guide/statements-expressions-operators/lambda-expressions.md
+  - name: Properties
+    href: properties.md
+  - name: Indexers
+    href: indexers.md
+  - name: Discards
+    href: discards.md
+  - name: Generics
+    href: programming-guide/generics/index.md
+  - name: Iterators
+    href: iterators.md
+  - name: Delegates & events
+    items:
+    - name: Introduction to Delegates
+      href: delegates-overview.md
+    - name: System.Delegate and the delegate keyword
+      href: delegate-class.md
+    - name: Strongly Typed Delegates
+      href: delegates-strongly-typed.md
+    - name: Common Patterns for Delegates
+      href: delegates-patterns.md
+    - name: Introduction to Events
+      href: events-overview.md
+    - name: Standard .NET event patterns
+      href: event-pattern.md
+    - name: The Updated .NET Event Pattern
+      href: modern-events.md
+    - name: Distinguishing Delegates and Events
+      href: distinguish-delegates-events.md
+  - name: Language Integrated Query (LINQ)
+    href: linq/
+  - name: Asynchronous programming
+    href: async.md
+  - name: Pattern Matching
+    href: pattern-matching.md
+  - name: Write safe, efficient code
+    href: write-safe-efficient-code.md
+  - name: Expression Trees
+    items:
+    - name: Introduction to expression trees
+      href: expression-trees.md
+    - name: Expression Trees Explained
+      href: expression-trees-explained.md
+    - name: Framework Types Supporting Expression Trees
+      href: expression-classes.md
+    - name: Executing Expressions
+      href: expression-trees-execution.md
+    - name: Interpreting Expressions
+      href: expression-trees-interpreting.md
+    - name: Building Expressions
+      href: expression-trees-building.md
+    - name: Translating Expressions
+      href: expression-trees-translating.md
+    - name: Summary
+      href: expression-trees-summary.md
+  - name: Native interoperability
+    href: programming-guide/interop/index.md
+  - name: Documenting your code
+    href: codedoc.md
+  - name: Versioning
+    href: versioning.md
+- name: How To C# Topics
+  items:
+  - name: Topic index
+    href: how-to/index.md
+  - name: Parse strings using `String.Split`
+    href: how-to/parse-strings-using-split.md
+  - name: Concatenate strings
+    href: how-to/concatenate-multiple-strings.md
+  - name: Convert a string to a DateTime
+    href: ../standard/base-types/parsing-datetime.md
+  - name: Search strings
+    href: how-to/search-strings.md
+  - name: Modify string contents
+    href: how-to/modify-string-contents.md
+  - name: Compare strings
+    href: how-to/compare-strings.md
+  - name: Safely cast using pattern matching, is and as operators
+    href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
+- name: The .NET Compiler Platform SDK (Roslyn APIs)
+  href: roslyn-sdk/
+- name: C# Programming Guide
+  href: programming-guide/
+- name: Language Reference
+  href: language-reference/
+- name: Walkthroughs
+  href: walkthroughs.md

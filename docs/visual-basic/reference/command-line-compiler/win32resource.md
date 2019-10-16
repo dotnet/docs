@@ -15,7 +15,7 @@ Inserts a Win32 resource file in the output file.
   
 ## Syntax  
   
-```  
+```console  
 -win32resource:filename  
 ```  
   

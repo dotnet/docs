@@ -10,7 +10,7 @@ Navigates over the relationship established between entities.
 
 ## Syntax
 
-```
+```sql
 navigate(instance-expression, [relationship-type], [to-end [, from-end] ])
 ```
 
@@ -75,7 +75,7 @@ The following Entity SQL query uses the NAVIGATE operator to navigate over the r
 
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:
 
- [!code-csharp[DP EntityServices Concepts 2#NAVIGATE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#navigate)]
+ [!code-sql[DP EntityServices Concepts#NAVIGATE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#navigate)]
 
 ## See also
 

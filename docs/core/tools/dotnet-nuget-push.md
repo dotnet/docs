@@ -46,7 +46,7 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 
 * **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
 * **`--interactive`**
 
@@ -68,6 +68,10 @@ Prints out a short help for the command.
 
   Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
 
+* **`--skip-duplicate`**
+
+  When pushing multiple packages to an HTTP(S) server, treat any 409 Conflict response as a warning so that the push can continue.
+                                 
 * **`-sk|--symbol-api-key <API_KEY>`**
 
   The API key for the symbol server.
@@ -122,3 +126,10 @@ Prints out a short help for the command.
   > If this command doesn't work, it might be due to a bug that existed in older versions of the SDK (.NET Core 2.1 SDK and earlier versions).
   > To fix this, upgrade your SDK version or run the following command instead:
   > `dotnet nuget push **/*.nupkg`
+  
+  
+* Pushes all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) Server:
+
+  ```dotnetcli
+  dotnet nuget push *.nupkg --skip-duplicate
+  ```

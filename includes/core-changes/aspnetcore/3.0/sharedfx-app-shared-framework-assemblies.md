@@ -33,13 +33,13 @@ Entity Framework Core ships as NuGet packages. This change aligns the shipping m
 
 Json.NET and Entity Framework Core continue to work with ASP.NET Core. They won't, however, be included in the shared framework.
 
-For more information, see [The future of JSON in .NET Core 3.0](https://github.com/dotnet/announcements/issues/90). Also see [the complete list of binaries][items-removed-from-fx] removed from the shared framework.
+For more information, see [The future of JSON in .NET Core 3.0](https://github.com/dotnet/announcements/issues/90). Also see [the complete list of binaries](https://github.com/aspnet/AspNetCore/issues/3755) removed from the shared framework.
 
 #### Reason for change
 
 This change simplifies the consumption of `Microsoft.AspNetCore.App` and reduces the duplication between NuGet packages and shared frameworks.
 
-For more information on the motivation for this change, see [this blog post][aspnet-blog].
+For more information on the motivation for this change, see [this blog post](https://blogs.msdn.microsoft.com/webdev/2018/10/29/a-first-look-at-changes-coming-in-asp-net-core-3-0).
 
 #### Recommended action
 
@@ -52,18 +52,11 @@ This change doesn't apply to all binaries referenced via `Microsoft.AspNetCore.A
   - Entity Framework Core
   - APIs that provide third-party integration
   - Experimental features
-  - APIs with dependencies that couldn't [fulfill the requirements to be in the shared framework][shared-fx-guidance]
+  - APIs with dependencies that couldn't [fulfill the requirements to be in the shared framework](https://github.com/aspnet/AspNetCore/blob/4e44e5bcbedd961cc0d4f6b846699c7c494f5597/docs/SharedFramework.md)
 - Extensions to MVC that maintain support for Json.NET. An API will be provided as a NuGet package to support using Json.NET and MVC.
 - The SignalR .NET client will continue to support .NET Standard and ship as a NuGet package. It's intended for use on many .NET runtimes, such as Xamarin and UWP.
 
-For more information, see [Stop producing packages for shared framework assemblies in 3.0][packages-removed-from-fx]. For discussion, see [aspnet/AspNetCore#3757][discussion].
-
-[2.1-lts]: https://www.microsoft.com/net/download/dotnet-core/2.1
-[aspnet-blog]: https://blogs.msdn.microsoft.com/webdev/2018/10/29/a-first-look-at-changes-coming-in-asp-net-core-3-0
-[discussion]: https://github.com/aspnet/AspNetCore/issues/3757
-[items-removed-from-fx]: https://github.com/aspnet/AspNetCore/issues/3755
-[packages-removed-from-fx]: https://github.com/aspnet/AspNetCore/issues/3756
-[shared-fx-guidance]: https://github.com/aspnet/AspNetCore/blob/4e44e5bcbedd961cc0d4f6b846699c7c494f5597/docs/SharedFramework.md
+For more information, see [Stop producing packages for shared framework assemblies in 3.0](https://github.com/aspnet/AspNetCore/issues/3756). For discussion, see [aspnet/AspNetCore#3757](https://github.com/aspnet/AspNetCore/issues/3757).
 
 #### Category
 

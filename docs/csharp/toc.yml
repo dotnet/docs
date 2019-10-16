@@ -320,7 +320,31 @@
   - name: Programming Concepts
     href: programming-guide/concepts/
   - name: Statements, Expressions, and Operators
-    href: programming-guide/statements-expressions-operators/
+    items:
+    - name: Overview
+      href: programming-guide/statements-expressions-operators/index.md
+    - name: Statements
+      href: programming-guide/statements-expressions-operators/statements.md
+    - name: Expressions
+      href: programming-guide/statements-expressions-operators/expressions.md
+    - name: Expression-bodied members
+      href: programming-guide/statements-expressions-operators/expression-bodied-members.md
+    - name: Anonymous functions
+      items:
+      - name: Overview
+        href: programming-guide/statements-expressions-operators/anonymous-functions.md
+      - name: Lambda expressions
+        href: programming-guide/statements-expressions-operators/lambda-expressions.md
+      - name: "How to: use lambda expressions in a query"
+        href: programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md
+    - name: Equality and equality comparisons
+      items:
+      - name: Equality comparisons
+        href: programming-guide/statements-expressions-operators/equality-comparisons.md
+      - name: "How to: define value equality for a type"
+        href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
+      - name: "How to: test for reference equality (identity)"
+        href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
   - name: Types
     items:
     - name: Use and define types
@@ -406,7 +430,21 @@
   - name: File System and the Registry
     href: programming-guide/file-system/
   - name: Interoperability
-    href: programming-guide/interop/
+    items:
+    - name: .NET Interoperability
+      href: programming-guide/interop/index.md
+    - name: Interoperability Overview
+      href: programming-guide/interop/interoperability-overview.md
+    - name: "How to: Access Office Interop Objects by Using Visual C# Features"
+      href: programming-guide/interop/how-to-access-office-onterop-objects.md
+    - name: "How to: Use Indexed Properties in COM Interop Programming"
+      href: programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
+    - name: "How to: Use Platform Invoke to Play a Wave File"
+      href: programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
+    - name: "Walkthrough: Office Programming (C# and Visual Basic)"
+      href: programming-guide/interop/walkthrough-office-programming.md
+    - name: Example COM Class
+      href: programming-guide/interop/example-com-class.md
 - name: Language Reference
   href: language-reference/
 - name: Walkthroughs

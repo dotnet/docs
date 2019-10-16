@@ -1,7 +1,11 @@
 - name: C# Guide
   href: index.md
 - name: Get Started
-  href: getting-started/
+  items:
+  - name: How to use this guide
+    href: getting-started/index.md
+  - name: Introduction to the C# language and the .NET framework
+    href: getting-started/introduction-to-the-csharp-language-and-the-net-framework.md
 - name: Tutorials
   items:
   - name: Overview
@@ -139,7 +143,47 @@
     - name: Distinguishing Delegates and Events
       href: distinguish-delegates-events.md
   - name: Language Integrated Query (LINQ)
-    href: linq/
+    items:
+    - name: Overview of LINQ
+      href: linq/index.md
+    - name: Query expression basics
+      href: linq/query-expression-basics.md
+    - name: LINQ in C#
+      href: linq/linq-in-csharp.md
+    - name: Write LINQ queries in C#
+      href: linq/write-linq-queries.md
+    - name: Query a collection of objects
+      href: linq/query-a-collection-of-objects.md
+    - name: Return a query from a method
+      href: linq/return-a-query-from-a-method.md
+    - name: Store the results of a query in memory
+      href: linq/store-the-results-of-a-query-in-memory.md
+    - name: Group query results
+      href: linq/group-query-results.md
+    - name: Create a nested group
+      href: linq/create-a-nested-group.md
+    - name: Perform a subquery on a grouping operation
+      href: linq/perform-a-subquery-on-a-grouping-operation.md
+    - name: Group results by contiguous keys
+      href: linq/group-results-by-contiguous-keys.md
+    - name: Dynamically specify predicate filters at runtime
+      href: linq/dynamically-specify-predicate-filters-at-runtime.md
+    - name: Perform inner joins
+      href: linq/perform-inner-joins.md
+    - name: Perform grouped joins
+      href: linq/perform-grouped-joins.md
+    - name: Perform left outer joins
+      href: linq/perform-left-outer-joins.md
+    - name: Order the results of a join clause
+      href: linq/order-the-results-of-a-join-clause.md
+    - name: Join by using composite keys
+      href: linq/join-by-using-composite-keys.md
+    - name: Perform custom join operations
+      href: linq/perform-custom-join-operations.md
+    - name: Handle null values in query expressions
+      href: linq/handle-null-values-in-query-expressions.md
+    - name: Handle exceptions in query expressions
+      href: linq/handle-exceptions-in-query-expressions.md
   - name: Asynchronous programming
     href: async.md
   - name: Pattern Matching
@@ -189,7 +233,50 @@
   - name: Safely cast using pattern matching, is and as operators
     href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
 - name: The .NET Compiler Platform SDK (Roslyn APIs)
-  href: roslyn-sdk/
+  items:
+  - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
+    href: roslyn-sdk/index.md
+  - name: Understand the compiler API model
+    href: roslyn-sdk/compiler-api-model.md
+  - name: Work with syntax
+    href: roslyn-sdk/work-with-syntax.md
+  - name: Work with semantics
+    href: roslyn-sdk/work-with-semantics.md
+  - name: Work with a workspace
+    href: roslyn-sdk/work-with-workspace.md
+  - name: Explore code with the syntax visualizer
+    href: roslyn-sdk/syntax-visualizer.md
+  - name: Quick Starts
+    items:
+    - name: Syntax analysis
+      href: roslyn-sdk/get-started/syntax-analysis.md
+    - name: Semantic analysis
+      href: roslyn-sdk/get-started/semantic-analysis.md
+    - name: Syntax Transformation
+      href: roslyn-sdk/get-started/syntax-transformation.md
+  - name: Tutorials
+    items:
+    - name: Build your first analyzer and code fix
+      href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#    - name: Get started writing custom analyzers and code fixes
+#  - name: Tutorials
+#    items:
+#    - name: Build your first analyzer
+#    - name: Build your first code fix
+#    - name: Deploy your analyzer as a VSIX
+#    - name: Deploy your analyzer as a NuGet package
+#- name: Samples
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#  items:
+#    - name: Async packages
+#    - name: Console classifier
+#    - name: Convert to auto property
+#    - name: Format solution
+#    - name: Implement notify property changed
+#    - name: Make const
+#    - name: How to guides
+# Look at the samples, and determine which are "How To" vs. Samples.
 - name: C# Programming Guide
   href: programming-guide/
 - name: Language Reference

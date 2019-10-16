@@ -328,7 +328,31 @@
     - name: Main() Return Values
       href: programming-guide/main-and-command-args/main-return-values.md
   - name: Programming Concepts
-    href: programming-guide/concepts/
+    items:
+    - name: Overview
+      href: programming-guide/concepts/index.md
+    - name: Asynchronous Programming with async and await
+      href: programming-guide/concepts/async/
+    - name: Attributes
+      href: programming-guide/concepts/attributes/
+    - name: Caller Information
+      href: programming-guide/concepts/caller-information.md
+    - name: Collections
+      href: programming-guide/concepts/collections.md
+    - name: Covariance and Contravariance
+      href: programming-guide/concepts/covariance-contravariance/
+    - name: Expression Trees
+      href: programming-guide/concepts/expression-trees/
+    - name: Iterators
+      href: programming-guide/concepts/iterators.md
+    - name: Language-Integrated Query (LINQ)
+      href: programming-guide/concepts/linq/
+    - name: Object-Oriented Programming
+      href: programming-guide/concepts/object-oriented-programming.md
+    - name: Reflection
+      href: programming-guide/concepts/reflection.md
+    - name: Serialization (C#)
+      href: programming-guide/concepts/serialization/
   - name: Statements, Expressions, and Operators
     items:
     - name: Overview

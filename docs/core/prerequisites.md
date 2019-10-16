@@ -7,6 +7,10 @@ ms.date: 10/03/2019
 zone_pivot_groups: operating-systems-set-one
 ---
 
+This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
+
+.NET Core is made up of two components, the runtime and the SDK. The runtime is required if you deploy a .NET Core application that doesn't include a runtime. The SDK is required to build .NET Core applications.
+
 # Prerequisites for .NET Core
 
 This article shows the supported OS versions and required dependencies to develop and run .NET Core applications on Windows, Linux, and macOS. There are a variety of ways to develop .NET Core apps:
@@ -36,7 +40,7 @@ This article shows the supported OS versions and required dependencies to develo
 
 ## Check what is installed
 
-Based on your environment, the .NET Core SDK may already be installed. If you use an IDE, such as Visual Studio, Visual Studio Code, or Visual Studio for Mac, the .NET Core SDK may already be installed on your system. You can check what is installed by opening a terminal and running the `dotnet` command:
+Based on your environment, the .NET Core SDK may already be installed. If you use an IDE, such as Visual Studio, Visual Studio Code, or Visual Studio for Mac, the .NET Core SDK may already be installed on your system. You can check what is installed by opening a terminal and running the `dotnet --list-sdks` command:
 
 ::: zone pivot="os-windows"
 
@@ -75,20 +79,26 @@ $ dotnet --list-sdks
 ```bash
 $ dotnet --list-sdks
 
-2.1.500 [/home/user/dotnet/sdk]
-2.1.502 [/home/user/dotnet/sdk]
-2.1.504 [/home/user/dotnet/sdk]
-2.1.600 [/home/user/dotnet/sdk]
-2.1.602 [/home/user/dotnet/sdk]
-2.2.101 [/home/user/dotnet/sdk]
-3.0.100 [/home/user/dotnet/sdk]
+2.1.500 [/usr/local/share/dotnet/sdk]
+2.1.502 [/usr/local/share/dotnet/sdk]
+2.1.504 [/usr/local/share/dotnet/sdk]
+2.1.600 [/usr/local/share/dotnet/sdk]
+2.1.602 [/usr/local/share/dotnet/sdk]
+2.2.101 [/usr/local/share/dotnet/sdk]
+3.0.100 [/usr/local/share/dotnet/sdk]
 ```
 
 ::: zone-end
 
-## Downloads and dependencies
+You can also see what runtimes are installed with the command `dotnet --list-runtimes`.
+
+## Dependencies
+
+Depending on the OS you're using, you may need to install additional dependencies.
 
 ::: zone pivot="os-windows"
+
+If you're using Visual Studio to develop .NET Core applications, the following table describes the minimum required version of Visual Studio based on the target .NET Core runtime.
 
 | .NET Core SDK version | Visual Studio version                      |
 | --------------------- | ------------------------------------------ |

@@ -3,7 +3,7 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/10/2019
+ms.date: 10/16/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use transfer learning in an image classification scenario to classify images using a pretrained TensorFlow model and ML.NET's Image Classification API.
@@ -11,7 +11,7 @@ ms.custom: mvc
 
 # Tutorial: Automated visual inspection using transfer learning with ML.NET's Image Classification API
 
-Learn to train a custom deep learning model using transfer learning and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
+Learn how to train a custom deep learning model using transfer learning and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
 
 > [!NOTE]
 > The ML.NET Image Classification API is currently in preview.
@@ -44,7 +44,7 @@ This tutorial trains a custom image classification model to perform automated vi
 
 ML.NET provides various ways of performing image classification. This tutorial focuses on the Image Classification API. The Image Classification API makes use of [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET), a low-level library that provides C# bindings for the TensorFlow C++ API.
 
-![ML.NET Image Classification API Architecture](./media/image-classification-api-transfer-learning/architecture.png)
+![ML.NET Image Classification API Architecture](./media/image-classification-api-transfer-learning/120px-architecture.png)
 
 ### What is transfer learning?
 
@@ -63,15 +63,15 @@ The Image Classification API starts the training process by loading a pre-traine
 
 #### Bottleneck phase
 
-During the bottleneck phase, the set of training images are loaded and the values are used as as input, or features, for the frozen layers of the pre-trained model. The frozen layers include all of the layers in the neural network up to the penultimate layer, informally known as the bottleneck layer. These layers are referred to as frozen because no training will occur on these layers and operations are pass-through. It's at these frozen layers that the lower-level patterns that help a model differentiate between the different classes are computed. The larger the number of layers, the more computationally intensive this step is. Fortunately, since this is a one-time calculation, the results can be cached and used in later runs when experimenting with different parameters.
+During the bottleneck phase, the set of training images are loaded and the pixel values are used as as input, or features, for the frozen layers of the pre-trained model. The frozen layers include all of the layers in the neural network up to the penultimate layer, informally known as the bottleneck layer. These layers are referred to as frozen because no training will occur on these layers and operations are pass-through. It's at these frozen layers that the lower-level patterns that help a model differentiate between the different classes are computed. The larger the number of layers, the more computationally intensive this step is. Fortunately, since this is a one-time calculation, the results can be cached and used in later runs when experimenting with different parameters.
 
 #### Training phase
 
-Once the bottleneck values are computed, they are used as input to retrain the final layer of the model. This process is iterative and runs for the number of times specified by model parameters. During each run, the loss and accuracy are evaluated and the appropriate adjustments are made to improve the model with the goal of minimizing the loss and maximizing the accuracy. Once training is finished, two model formats are output. One of them is the `.pb` version of the model and the other is the `.zip` ML.NET serialized version of the model. When working in environemnts supported by ML.NET, it is recommended to use the `.zip` version of the model. However, in environemnts where ML.NET is not supported, you have the option of using the `.pb` version.
+Once the output values from the bottleneck phase are computed, they are used as input to retrain the final layer of the model. This process is iterative and runs for the number of times specified by model parameters. During each run, the loss and accuracy are evaluated and the appropriate adjustments are made to improve the model with the goal of minimizing the loss and maximizing the accuracy. Once training is finished, two model formats are output. One of them is the `.pb` version of the model and the other is the `.zip` ML.NET serialized version of the model. When working in environemnts supported by ML.NET, it is recommended to use the `.zip` version of the model. However, in environemnts where ML.NET is not supported, you have the option of using the `.pb` version.
 
 ## Understand the pretrained model
 
-The pre-trained model used in this tutorial is the 101-layer variant of the Residual Network (ResNet) v2 model. The original model takes an input image of size 224 x 224 and outputs the class probabilities for each of the classes it's trained on.
+The pre-trained model used in this tutorial is the 101-layer variant of the Residual Network (ResNet) v2 model. The original model is trained to classify images into a thousand categories. The model takes as input an image of size 224 x 224 and outputs the class probabilities for each of the classes it's trained on. Part of this model is used to train a new model using custom images to make predictions between two classes. 
 
 ## Create console application
 
@@ -288,7 +288,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
                                     .Transform(shuffledData);
     ```
 
-1. To train a model, it's important to have a training dataset as well as a validation dataset. The model is trained on the training set of data and how well it makes predictions on unseen data is measured by the performance against the validation set. Based on the results of that performance, the model makes adustments to what it has learned in an effort to improve. The validation set can come from either splitting your original dataset or from another source that has already been set aside for this purpose. In this case, the pre-processed dataset is split into training, validation and test sets.
+1. To train a model, it's important to have a training dataset as well as a validation dataset. The model is trained on the training set. How well it makes predictions on unseen data is measured by the performance against the validation set. Based on the results of that performance, the model makes adjustments to what it has learned in an effort to improve. The validation set can come from either splitting your original dataset or from another source that has already been set aside for this purpose. In this case, the pre-processed dataset is split into training, validation and test sets.
 
     ```csharp
     TrainTestData trainSplit = mlContext.Data.TrainTestSplit(data: preProcessedData, testFraction:0.3);
@@ -297,7 +297,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
 
     The code sample above performs two splits. First, the pre-processed data is split and 70% is used for training while the remaining 30% is used for validation. Then, the 30% validation set is further split into validation and test sets where 90% is used for validation and 10% is used for testing. 
 
-    A way to think about the purpose of these data partitions is taking an exam. When studying for an exam, you review your notes, books or other resources to get get a grasp on the concepts that are on the exam. This is what the train set is for. Then, you might take a mock exam to validate your knowledge. This is where the validation set comes in handy. You want to check whether you have a good grasp of the concepts before taking the actual exanm. Based on those results, you take note of what you got wrong or didn't understand well and incorporate your changes as you review for the real exam. Finally, you take the exam. This is what the test set is used for. You've never seen the questions that are on the exam and now use what you learned from training and validation to apply your knowledge to the task at hand. 
+    A way to think about the purpose of these data partitions is taking an exam. When studying for an exam, you review your notes, books or other resources to get get a grasp on the concepts that are on the exam. This is what the train set is for. Then, you might take a mock exam to validate your knowledge. This is where the validation set comes in handy. You want to check whether you have a good grasp of the concepts before taking the actual exam. Based on those results, you take note of what you got wrong or didn't understand well and incorporate your changes as you review for the real exam. Finally, you take the exam. This is what the test set is used for. You've never seen the questions that are on the exam and now use what you learned from training and validation to apply your knowledge to the task at hand. 
 
 1. Assign the partitions their respective values for the train, validation and test data.
 

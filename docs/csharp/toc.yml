@@ -332,9 +332,51 @@
     - name: Overview
       href: programming-guide/concepts/index.md
     - name: Asynchronous Programming with async and await
-      href: programming-guide/concepts/async/
+      items:
+      - name: Overview
+        href: programming-guide/concepts/async/index.md
+      - name: Task asynchronous programming model
+        href: programming-guide/concepts/async/task-asynchronous-programming-model.md
+      - name: "Walkthrough: Accessing the Web by Using async and await"
+        href: programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md
+      - name: "How to: Extend the async Walkthrough by Using Task.WhenAll"
+        href: programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md
+      - name: "How to: Make Multiple Web Requests in Parallel by Using async and await"
+        href: programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md
+      - name: Async Return Types
+        href: programming-guide/concepts/async/async-return-types.md
+      - name: Control Flow in Async Programs
+        href: programming-guide/concepts/async/control-flow-in-async-programs.md
+      - name: Cancel tasks and processing completed tasks
+        items:
+        - name: Overview
+          href: programming-guide/concepts/async/fine-tuning-your-async-application.md
+        - name: Cancel an Async Task or a List of Tasks
+          href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
+        - name: Cancel Async Tasks after a Period of Time
+          href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md
+        - name: Cancel Remaining Async Tasks after One Is Complete
+          href: programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md
+        - name: Start Multiple Async Tasks and Process Them As They Complete
+          href: programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md
+      - name: Handling Reentrancy in Async Apps
+        href: programming-guide/concepts/async/handling-reentrancy-in-async-apps.md
+      - name: Using Async for File Access
+        href: programming-guide/concepts/async/using-async-for-file-access.md
     - name: Attributes
-      href: programming-guide/concepts/attributes/
+      items:
+      - name: Overview
+        href: programming-guide/concepts/attributes/index.md
+      - name: Creating Custom Attributes
+        href: programming-guide/concepts/attributes/creating-custom-attributes.md
+      - name: AttributeUsage
+        href: programming-guide/concepts/attributes/attributeusage.md
+      - name: Accessing Attributes by Using Reflection
+        href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
+      - name: "How to: Create a C-C++ Union by Using Attributes"
+        href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
+      - name: Common Attributes
+        href: programming-guide/concepts/attributes/common-attributes.md
     - name: Caller Information
       href: programming-guide/concepts/caller-information.md
     - name: Collections

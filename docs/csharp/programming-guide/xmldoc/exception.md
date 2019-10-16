@@ -29,7 +29,7 @@ ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
 ## Remarks  
  The \<exception> tag lets you specify which exceptions can be thrown. This tag can be applied to definitions for methods, properties, events, and indexers.  
   
- Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
  For more information about exception handling, see [Exceptions and Exception Handling](../exceptions/index.md).  
   

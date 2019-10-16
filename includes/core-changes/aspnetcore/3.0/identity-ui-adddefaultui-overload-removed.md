@@ -14,7 +14,9 @@ This change was a result of adoption of the static web assets feature.
 
 Call <xref:Microsoft.AspNetCore.Identity.IdentityBuilderUIExtensions.AddDefaultUI(Microsoft.AspNetCore.Identity.IdentityBuilder)?displayProperty=nameWithType> instead of the overload. If you're using Bootstrap 3, also add the following line to a `<PropertyGroup>` element in your project file:
 
-`<IdentityUIFrameworkVersion>Bootstrap3</IdentityUIFrameworkVersion>`
+```xml
+<IdentityUIFrameworkVersion>Bootstrap3</IdentityUIFrameworkVersion>
+```
 
 #### Category
 

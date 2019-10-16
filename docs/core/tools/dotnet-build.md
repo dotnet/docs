@@ -28,15 +28,15 @@ dotnet build [-h|--help]
 
 The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a *.dll* extension.  Depending on the project type and settings, other files may be included, such as:
 
-- An executable which can be used to run the application, if the project type is an executable targeting .NET Core 3.0 or later
-- Symbol files used for debugging with a *.pdb* extension
-- A *.deps.json* file which lists the dependencies of the application or library
-- A *.runtimeconfig.json* file which specifies the shared runtime and its version for an application
-- Other libraries that the project depends on (via project references or NuGet package references)
+- An executable that can be used to run the application, if the project type is an executable targeting .NET Core 3.0 or later.
+- Symbol files used for debugging with a *.pdb* extension.
+- A *.deps.json* file, which lists the dependencies of the application or library.
+- A *.runtimeconfig.json* file, which specifies the shared runtime and its version for an application.
+- Other libraries that the project depends on (via project references or NuGet package references).
 
-For executable projects targeting versions earlier than .NET Core 3.0, library dependencies from NuGet are typically NOT copied to the output folder.  They are resolved from the NuGet global packages folder at run time. With that in mind, the product of `dotnet build` isn't ready to be transferred to another machine to run. You need to publish the application (for example with the [dotnet publish](dotnet-publish.md) command) in order to create a version of the application that can be deployed.  For more information, see [.NET Core Application Deployment](../deploying/index.md).
+For executable projects targeting versions earlier than .NET Core 3.0, library dependencies from NuGet are typically NOT copied to the output folder.  They're resolved from the NuGet global packages folder at run time. With that in mind, the product of `dotnet build` isn't ready to be transferred to another machine to run. To create a version of the application that can be deployed, you need to publish it (for example, with the [dotnet publish](dotnet-publish.md) command). For more information, see [.NET Core Application Deployment](../deploying/index.md).
 
-For executable projects targeting .NET Core 3.0 and later, library dependencies will be copied to the output folder.  This means that if there isn't any other publish-specific logic (such as Web projects have), the build output should be deployable.
+For executable projects targeting .NET Core 3.0 and later, library dependencies are copied to the output folder. This means that if there isn't any other publish-specific logic (such as Web projects have), the build output should be deployable.
 
 Building requires the *project.assets.json* file, which lists the dependencies of your application. The file is created when [`dotnet restore`](dotnet-restore.md) is executed. Without the assets file in place, the tooling can't resolve reference assemblies, which results in errors. With .NET Core 1.x SDK, you needed to explicitly run `dotnet restore` before running `dotnet build`. Starting with .NET Core 2.0 SDK, `dotnet restore` runs implicitly when you run `dotnet build`. If you want to disable implicit restore when running the build command, you can pass the `--no-restore` option.
 
@@ -58,7 +58,7 @@ To produce a library, omit the `<OutputType>` property or change its value to `L
 
 In addition to its options, the `dotnet build` command accepts MSBuild options, such as `-p` for setting properties or `-l` to define a logger. For more information about these options, see the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). Or you can also use the [dotnet msbuild](dotnet-msbuild.md) command.
 
-Running `dotnet build` is essentially equivalent to `dotnet msbuild -restore` (the default verbosity of the output is different though).
+Running `dotnet build` is equivalent to running `dotnet msbuild -restore`; however, the default verbosity of the output is different.
 
 ## Arguments
 

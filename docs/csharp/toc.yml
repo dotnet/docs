@@ -416,13 +416,489 @@
     - name: Iterators
       href: programming-guide/concepts/iterators.md
     - name: Language-Integrated Query (LINQ)
-      href: programming-guide/concepts/linq/
+      items:
+      - name: Overview
+        href: programming-guide/concepts/linq/index.md
+      - name: Getting Started with LINQ in C#
+        items:
+        - name: Introduction to LINQ Queries
+          href: programming-guide/concepts/linq/introduction-to-linq-queries.md
+        - name: LINQ and Generic Types
+          href: programming-guide/concepts/linq/linq-and-generic-types.md
+        - name: Basic LINQ Query Operations
+          href: programming-guide/concepts/linq/basic-linq-query-operations.md
+        - name: Data Transformations with LINQ
+          href: programming-guide/concepts/linq/data-transformations-with-linq.md
+        - name: Type Relationships in LINQ Query Operations
+          href: programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md
+        - name: Query Syntax and Method Syntax in LINQ
+          href: programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md
+        - name: C# Features That Support LINQ
+          href: programming-guide/concepts/linq/features-that-support-linq.md
+        - name: "Walkthrough: Writing Queries in C# (LINQ)"
+          href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
+      - name: Standard Query Operators Overview
+        items:
+        - name: Overview
+          href: programming-guide/concepts/linq/standard-query-operators-overview.md
+        - name: Query Expression Syntax for Standard Query Operators
+          href: programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md
+        - name: Classification of Standard Query Operators by Manner of Execution
+          href: programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md
+        - name: Sorting Data
+          href: programming-guide/concepts/linq/sorting-data.md
+        - name: Set Operations
+          href: programming-guide/concepts/linq/set-operations.md
+        - name: Filtering Data
+          href: programming-guide/concepts/linq/filtering-data.md
+        - name: Quantifier Operations
+          href: programming-guide/concepts/linq/quantifier-operations.md
+        - name: Projection Operations
+          href: programming-guide/concepts/linq/projection-operations.md
+        - name: Partitioning Data
+          href: programming-guide/concepts/linq/partitioning-data.md
+        - name: Join Operations
+          href: programming-guide/concepts/linq/join-operations.md
+        - name: Grouping Data
+          href: programming-guide/concepts/linq/grouping-data.md
+        - name: Generation Operations
+          href: programming-guide/concepts/linq/generation-operations.md
+        - name: Equality Operations
+          href: programming-guide/concepts/linq/equality-operations.md
+        - name: Element Operations
+          href: programming-guide/concepts/linq/element-operations.md
+        - name: Converting Data Types
+          href: programming-guide/concepts/linq/converting-data-types.md
+        - name: Concatenation Operations
+          href: programming-guide/concepts/linq/concatenation-operations.md
+        - name: Aggregation Operations
+          href: programming-guide/concepts/linq/aggregation-operations.md
+      - name: LINQ to Objects
+        items:
+        - name: Overview
+          href: programming-guide/concepts/linq/linq-to-objects.md
+        - name: LINQ and Strings
+          href: programming-guide/concepts/linq/linq-and-strings.md
+        - name: How to articles
+          items:
+          - name: "How to: Count Occurrences of a Word in a String (LINQ)"
+            href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
+          - name: "How to: Query for Sentences that Contain a Specified Set of Words (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
+          - name: "How to: Query for Characters in a String (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
+          - name: "How to: Combine LINQ Queries with Regular Expressions"
+            href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
+          - name: "How to: Find the Set Difference Between Two Lists (LINQ)"
+            href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
+          - name: "How to: Sort or Filter Text Data by Any Word or Field (LINQ)"
+            href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
+          - name: "How to: Reorder the Fields of a Delimited File (LINQ)"
+            href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
+          - name: "How to: Combine and Compare String Collections (LINQ)"
+            href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
+          - name: "How to: Populate Object Collections from Multiple Sources (LINQ)"
+            href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
+          - name: "How to: Split a File Into Many Files by Using Groups (LINQ)"
+            href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
+          - name: "How to: Join Content from Dissimilar Files (LINQ)"
+            href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
+          - name: "How to: Compute Column Values in a CSV Text File (LINQ)"
+            href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+        - name: LINQ and Reflection
+          href: programming-guide/concepts/linq/linq-and-reflection.md
+        - name: "How to: Query An Assembly's Metadata with Reflection (LINQ)"
+          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+        - name: LINQ and File Directories
+          items:
+          - name: Overview
+            href: programming-guide/concepts/linq/linq-and-file-directories.md
+          - name: "How to: Query for Files with a Specified Attribute or Name"
+            href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
+          - name: "How to: Group Files by Extension (LINQ)"
+            href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
+          - name: "How to: Query for the Total Number of Bytes in a Set of Folders (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
+          - name: "How to: Compare the Contents of Two Folders (LINQ)"
+            href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
+          - name: "How to: Query for the Largest File or Files in a Directory Tree (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
+          - name: "How to: Query for Duplicate Files in a Directory Tree (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
+          - name: "How to: Query the Contents of Files in a Folder (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
+        - name: "How to: Query an ArrayList with LINQ"
+          href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
+        - name: "How to: Add Custom Methods for LINQ Queries"
+          href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
+      - name: LINQ to XML
+        items:
+        - name: Getting Started (LINQ to XML)
+          items:
+          - name: LINQ to XML Overview
+            href: programming-guide/concepts/linq/linq-to-xml-overview.md
+          - name: LINQ to XML vs. DOM
+            href: programming-guide/concepts/linq/linq-to-xml-vs-dom.md
+          - name: LINQ to XML vs. Other XML Technologies
+            href: programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md
+        - name: Programming Guide (LINQ to XML)
+          items:
+          - name: LINQ to XML Programming Overview
+            items:
+            - name: Functional vs. Procedural Programming (LINQ to XML)
+              href: programming-guide/concepts/linq/functional-vs-procedural-programming-linq-to-xml.md
+            - name: LINQ to XML Classes Overview
+              href: programming-guide/concepts/linq/linq-to-xml-classes-overview.md
+            - name: XElement Class Overview
+              href: programming-guide/concepts/linq/xelement-class-overview.md
+            - name: XAttribute Class Overview
+              href: programming-guide/concepts/linq/xattribute-class-overview.md
+            - name: XDocument Class Overview
+              href: programming-guide/concepts/linq/xdocument-class-overview.md
+            - name: "How to: Build LINQ to XML Examples"
+              href: programming-guide/concepts/linq/how-to-build-linq-to-xml-examples.md
+          - name: XML Trees
+            items:
+            - name: Functional Construction (LINQ to XML)
+              href: programming-guide/concepts/linq/functional-construction-linq-to-xml.md
+            - name: Creating XML Trees in C# (LINQ to XML)
+              href: programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2.md
+            - name: Parsing XML
+              items:
+              - name: "How to: Parse a String"
+                href: programming-guide/concepts/linq/how-to-parse-a-string.md
+              - name: "How to: Load XML from a File"
+                href: programming-guide/concepts/linq/how-to-load-xml-from-a-file.md
+              - name: Preserving White Space while Loading or Parsing XML
+                href: programming-guide/concepts/linq/preserving-white-space-while-loading-or-parsing-xml1.md
+              - name: "How to: Catch Parsing Errors"
+                href: programming-guide/concepts/linq/how-to-catch-parsing-errors.md
+              - name: "How to: Create a Tree from an XmlReader"
+                href: programming-guide/concepts/linq/how-to-create-a-tree-from-an-xmlreader.md
+              - name: "How to: Stream XML Fragments from an XmlReader"
+                href: programming-guide/concepts/linq/how-to-stream-xml-fragments-from-an-xmlreader.md
+            - name: "How to: Populate an XML Tree with an XmlWriter (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-populate-an-xml-tree-with-an-xmlwriter-linq-to-xml.md
+            - name: "How to: Validate Using XSD (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md
+            - name: Valid Content of XElement and XDocument Objects
+              href: programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects3.md
+          - name: Working with XML Namespaces
+            items:
+            - name: Namespaces Overview (LINQ to XML)
+              href: programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md
+            - name: "How to: Create a Document with Namespaces (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-create-a-document-with-namespaces-linq-to-xml.md
+            - name: "How to: Control Namespace Prefixes (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-control-namespace-prefixes-linq-to-xml.md
+            - name: Scope of Default Namespaces in C#
+              href: programming-guide/concepts/linq/scope-of-default-namespaces.md
+            - name: "How to: Write Queries on XML in Namespaces"
+              href: programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md
+          - name: Serializing XML Trees
+            items:
+            - name: Preserving White Space While Serializing
+              href: programming-guide/concepts/linq/preserving-white-space-while-serializing.md
+            - name: Serializing with an XML Declaration
+              href: programming-guide/concepts/linq/serializing-with-an-xml-declaration.md
+            - name: Serializing to Files, TextWriters, and XmlWriters
+              href: programming-guide/concepts/linq/serializing-to-files-textwriters-and-xmlwriters.md
+            - name: Serializing to an XmlReader (Invoking XSLT)
+              href: programming-guide/concepts/linq/serializing-to-an-xmlreader-invoking-xslt.md
+          - name: LINQ to XML Axes
+            items:
+            - name: LINQ to XML Axes Overview
+              href: programming-guide/concepts/linq/linq-to-xml-axes-overview.md
+            - name: "How to: Retrieve a Collection of Elements (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-a-collection-of-elements-linq-to-xml.md
+            - name: "How to: Retrieve the Value of an Element (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-element-linq-to-xml.md
+            - name: "How to: Filter on Element Names (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-filter-on-element-names-linq-to-xml.md
+            - name: "How to: Chain Axis Method Calls (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-chain-axis-method-calls-linq-to-xml.md
+            - name: "How to: Retrieve a Single Child Element (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-a-single-child-element-linq-to-xml.md
+            - name: "How to: Retrieve a Collection of Attributes (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-a-collection-of-attributes-linq-to-xml.md
+            - name: "How to: Retrieve a Single Attribute (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-a-single-attribute-linq-to-xml.md
+            - name: "How to: Retrieve the Value of an Attribute (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-attribute-linq-to-xml.md
+            - name: "How to: Retrieve the Shallow Value of an Element"
+              href: programming-guide/concepts/linq/how-to-retrieve-the-shallow-value-of-an-element.md
+          - name: Querying XML Trees
+            items:
+            - name: Basic Queries (LINQ to XML)
+              items:
+              - name: "How to: Find an Element with a Specific Attribute"
+                href: programming-guide/concepts/linq/how-to-find-an-element-with-a-specific-attribute.md
+              - name: "How to: Find an Element with a Specific Child Element"
+                href: programming-guide/concepts/linq/how-to-find-an-element-with-a-specific-child-element.md
+              - name: Querying an XDocument vs. Querying an XElement
+                href: programming-guide/concepts/linq/querying-an-xdocument-vs-querying-an-xelement.md
+              - name: "How to: Find Descendants with a Specific Element Name"
+                href: programming-guide/concepts/linq/how-to-find-descendants-with-a-specific-element-name.md
+              - name: "How to: Find a Single Descendant Using the Descendants Method"
+                href: programming-guide/concepts/linq/how-to-find-a-single-descendant-using-the-descendants-method.md
+              - name: "How to: Write Queries with Complex Filtering"
+                href: programming-guide/concepts/linq/how-to-write-queries-with-complex-filtering.md
+              - name: "How to: Filter on an Optional Element"
+                href: programming-guide/concepts/linq/how-to-filter-on-an-optional-element.md
+              - name: "How to: Find All Nodes in a Namespace"
+                href: programming-guide/concepts/linq/how-to-find-all-nodes-in-a-namespace.md
+              - name: "How to: Sort Elements"
+                href: programming-guide/concepts/linq/how-to-sort-elements.md
+              - name: "How to: Sort Elements on Multiple Keys"
+                href: programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md
+              - name: "How to: Calculate Intermediate Values"
+                href: programming-guide/concepts/linq/how-to-calculate-intermediate-values.md
+              - name: "How to: Write a Query that Finds Elements Based on Context"
+                href: programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md
+              - name: "How to: Debug Empty Query Results Sets"
+                href: programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md
+            - name: Projections and Transformations (LINQ to XML)
+              items:
+              - name: "How to: Work with Dictionaries Using LINQ to XML"
+                href: programming-guide/concepts/linq/how-to-work-with-dictionaries-using-linq-to-xml.md
+              - name: "How to: Transform the Shape of an XML Tree"
+                href: programming-guide/concepts/linq/how-to-transform-the-shape-of-an-xml-tree.md
+              - name: "How to: Control the Type of a Projection"
+                href: programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md
+              - name: "How to: Project a New Type (LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-project-a-new-type-linq-to-xml.md
+              - name: "How to: Project an Object Graph"
+                href: programming-guide/concepts/linq/how-to-project-an-object-graph.md
+              - name: "How to: Project an Anonymous Type"
+                href: programming-guide/concepts/linq/how-to-project-an-anonymous-type.md
+              - name: "How to: Generate Text Files from XML"
+                href: programming-guide/concepts/linq/how-to-generate-text-files-from-xml.md
+              - name: "How to: Generate XML from CSV Files"
+                href: programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md
+            - name: Advanced Query Techniques (LINQ to XML)
+              items:
+              - name: "How to: Join Two Collections (LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-join-two-collections-linq-to-xml.md
+              - name: "How to: Create Hierarchy Using Grouping"
+                href: programming-guide/concepts/linq/how-to-create-hierarchy-using-grouping.md
+              - name: "How to: Query LINQ to XML Using XPath"
+                href: programming-guide/concepts/linq/how-to-query-linq-to-xml-using-xpath.md
+              - name: "How to: Write a LINQ to XML Axis Method"
+                href: programming-guide/concepts/linq/how-to-write-a-linq-to-xml-axis-method.md
+              - name: "How to: Perform Streaming Transformations of Text to XML"
+                href: programming-guide/concepts/linq/how-to-perform-streaming-transformations-of-text-to-xml.md
+              - name: "How to: List All Nodes in a Tree"
+                href: programming-guide/concepts/linq/how-to-list-all-nodes-in-a-tree.md
+              - name: "How to: Retrieve Paragraphs from an Office Open XML Document"
+                href: programming-guide/concepts/linq/how-to-retrieve-paragraphs-from-an-office-open-xml-document.md
+              - name: "How to: Modify an Office Open XML Document"
+                href: programming-guide/concepts/linq/how-to-modify-an-office-open-xml-document.md
+              - name: "How to: Populate an XML Tree from the File System"
+                href: programming-guide/concepts/linq/how-to-populate-an-xml-tree-from-the-file-system.md
+            - name: LINQ to XML for XPath Users
+              items:
+              - name: Comparison of XPath and LINQ to XML
+                href: programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml.md
+              - name: "How to: Find a Child Element (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-a-child-element-xpath-linq-to-xml.md
+              - name: "How to: Find a List of Child Elements (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-a-list-of-child-elements-xpath-linq-to-xml.md
+              - name: "How to: Find the Root Element (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-the-root-element-xpath-linq-to-xml.md
+              - name: "How to: Find Descendant Elements (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-descendant-elements-xpath-linq-to-xml.md
+              - name: "How to: Filter on an Attribute (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-filter-on-an-attribute-xpath-linq-to-xml.md
+              - name: "How to: Find Related Elements (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-related-elements-xpath-linq-to-xml.md
+              - name: "How to: Find Elements in a Namespace (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-elements-in-a-namespace-xpath-linq-to-xml.md
+              - name: "How to: Find Preceding Siblings (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-preceding-siblings-xpath-linq-to-xml.md
+              - name: "How to: Find Descendants of a Child Element (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-descendants-of-a-child-element-xpath-linq-to-xml.md
+              - name: "How to: Find a Union of Two Location Paths (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-a-union-of-two-location-paths-xpath-linq-to-xml.md
+              - name: "How to: Find Sibling Nodes (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-sibling-nodes-xpath-linq-to-xml.md
+              - name: "How to: Find an Attribute of the Parent (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml.md
+              - name: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-attributes-of-siblings-with-a-specific-name-xpath-linq-to-xml.md
+              - name: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-elements-with-a-specific-attribute-xpath-linq-to-xml.md
+              - name: "How to: Find Child Elements Based on Position (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-child-elements-based-on-position-xpath-linq-to-xml.md
+              - name: "How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md
+            - name: Pure Functional Transformations of XML
+              items:
+              - name: Introduction to Pure Functional Transformations
+                href: programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md
+              - name: Concepts and Terminology (Functional Transformation)
+                href: programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md
+              - name: Functional Programming vs. Imperative Programming
+                href: programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md
+              - name: Refactoring Into Pure Functions
+                href: programming-guide/concepts/linq/refactoring-into-pure-functions.md
+              - name: Applicability of Functional Transformation
+                href: programming-guide/concepts/linq/applicability-of-functional-transformation.md
+              - name: Functional Transformation of XML
+                href: programming-guide/concepts/linq/functional-transformation-of-xml.md
+              - name: "Tutorial: Chaining Queries Together"
+                items:
+                - name: Deferred Execution and Lazy Evaluation in LINQ to XML
+                  href: programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
+                - name: Deferred Execution Example
+                  href: programming-guide/concepts/linq/deferred-execution-example.md
+                - name: Chaining Queries Example
+                  href: programming-guide/concepts/linq/chaining-queries-example.md
+                - name: Intermediate Materialization
+                  href: programming-guide/concepts/linq/intermediate-materialization.md
+                - name: Chaining Standard Query Operators Together
+                  href: programming-guide/concepts/linq/chaining-standard-query-operators-together.md
+              - name: "Tutorial: Chaining Queries Together"
+                items:
+                - name: Deferred Execution and Lazy Evaluation in LINQ to XML
+                  href: programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
+                - name: Deferred Execution Example
+                  href: programming-guide/concepts/linq/deferred-execution-example.md
+                - name: Chaining Queries Example
+                  href: programming-guide/concepts/linq/chaining-queries-example.md
+                - name: Intermediate Materialization
+                  href: programming-guide/concepts/linq/intermediate-materialization.md
+                - name: Chaining Standard Query Operators Together
+                  href: programming-guide/concepts/linq/chaining-standard-query-operators-together.md
+              - name: "Tutorial: Manipulating Content in a WordprocessingML Document"
+                items:
+                - name: Shape of WordprocessingML Documents
+                  href: programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md
+                - name: Creating the Source Office Open XML Document
+                  href: programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md
+                - name: Finding the Default Paragraph Style
+                  href: programming-guide/concepts/linq/finding-the-default-paragraph-style.md
+                - name: Retrieving the Paragraphs and Their Styles
+                  href: programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md
+                - name: Retrieving the Text of the Paragraphs
+                  href: programming-guide/concepts/linq/retrieving-the-text-of-the-paragraphs.md
+                - name: Refactoring Using an Extension Method
+                  href: programming-guide/concepts/linq/refactoring-using-an-extension-method.md
+                - name: Refactoring Using a Pure Function
+                  href: programming-guide/concepts/linq/refactoring-using-a-pure-function.md
+                - name: Projecting XML in a Different Shape
+                  href: programming-guide/concepts/linq/projecting-xml-in-a-different-shape.md
+                - name: Finding Text in Word Documents
+                  href: programming-guide/concepts/linq/finding-text-in-word-documents.md
+                - name: Details of Office Open XML WordprocessingML Documents
+                  items:
+                  - name: WordprocessingML Document with Styles
+                    href: programming-guide/concepts/linq/wordprocessingml-document-with-styles.md
+                  - name: Style Part of a WordprocessingML Document
+                    href: programming-guide/concepts/linq/style-part-of-a-wordprocessingml-document.md
+                  - name: Example that Outputs Office Open XML Document Parts
+                    href: programming-guide/concepts/linq/example-that-outputs-office-open-xml-document-parts.md
+          - name: Modifying XML Trees (LINQ to XML)
+            items:
+            - name: In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML)
+              href: programming-guide/concepts/linq/in-memory-xml-tree-modification-vs-functional-construction-linq-to-xml.md
+            - name: Adding Elements, Attributes, and Nodes to an XML Tree
+              href: programming-guide/concepts/linq/adding-elements-attributes-and-nodes-to-an-xml-tree.md
+            - name: Modifying Elements, Attributes, and Nodes in an XML Tree
+              href: programming-guide/concepts/linq/modifying-elements-attributes-and-nodes-in-an-xml-tree.md
+            - name: Removing Elements, Attributes, and Nodes from an XML Tree
+              href: programming-guide/concepts/linq/removing-elements-attributes-and-nodes-from-an-xml-tree.md
+            - name: Maintaining Name-Value Pairs
+              href: programming-guide/concepts/linq/maintaining-name-value-pairs.md
+            - name: "How to: Change the Namespace for an Entire XML Tree"
+              href: programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md
+          - name: Performance (LINQ to XML)
+            items:
+            - name: Performance of Chained Queries (LINQ to XML)
+              href: programming-guide/concepts/linq/performance-of-chained-queries-linq-to-xml.md
+            - name: Atomized XName and XNamespace Objects (LINQ to XML)
+              href: programming-guide/concepts/linq/atomized-xname-and-xnamespace-objects-linq-to-xml.md
+            - name: Pre-Atomization of XName Objects (LINQ to XML)
+              href: programming-guide/concepts/linq/pre-atomization-of-xname-objects-linq-to-xml.md
+            - name: Statically Compiled Queries (LINQ to XML)
+              href: programming-guide/concepts/linq/statically-compiled-queries-linq-to-xml.md
+          - name: Advanced LINQ to XML Programming
+            items:
+            - name: LINQ to XML Annotations
+              href: programming-guide/concepts/linq/linq-to-xml-annotations.md
+            - name: LINQ to XML Events
+              href: programming-guide/concepts/linq/linq-to-xml-events.md
+            - name: Programming with Nodes
+              href: programming-guide/concepts/linq/programming-with-nodes.md
+            - name: Mixed Declarative Code-Imperative Code Bugs (LINQ to XML)
+              href: programming-guide/concepts/linq/mixed-declarative-code-imperative-code-bugs-linq-to-xml.md
+            - name: "How to: Stream XML Fragments with Access to Header Information"
+              href: programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md
+            - name: "How to: Perform Streaming Transform of Large XML Documents"
+              href: programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md
+            - name: "How to: Read and Write an Encoded Document"
+              href: programming-guide/concepts/linq/how-to-read-and-write-an-encoded-document.md
+            - name: Using XSLT to Transform an XML Tree
+              href: programming-guide/concepts/linq/using-xslt-to-transform-an-xml-tree.md
+            - name: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style"
+              href: programming-guide/concepts/linq/how-to-use-annotations-to-transform-linq-to-xml-trees-in-an-xslt-style.md
+            - name: Serializing Object Graphs that Contain XElement Objects
+              items:
+              - name: "How to: Serialize Using XmlSerializer"
+                href: programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md
+              - name: "How to: Serialize Using DataContractSerializer"
+                href: programming-guide/concepts/linq/how-to-serialize-using-datacontractserializer.md
+          - name: LINQ to XML Security
+            href: programming-guide/concepts/linq/linq-to-xml-security.md
+          - name: Sample XML Documents (LINQ to XML)
+            items:
+            - name: "Sample XML File: Typical Purchase Order (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md
+            - name: "Sample XML File: Typical Purchase Order in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md
+            - name: "Sample XML File: Multiple Purchase Orders (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md
+            - name: "Sample XML File: Multiple Purchase Orders in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md
+            - name: "Sample XML File: Test Configuration (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md
+            - name: "Sample XML File: Test Configuration in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace1.md
+            - name: "Sample XML File: Customers and Orders (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md
+            - name: "Sample XSD File: Customers and Orders"
+              href: programming-guide/concepts/linq/sample-xsd-file-customers-and-orders1.md
+            - name: "Sample XML File: Customers and Orders in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-customers-and-orders-in-a-namespace.md
+            - name: "Sample XML File: Numerical Data (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md
+            - name: "Sample XML File: Numerical Data in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md
+            - name: "Sample XML File: Books (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md
+            - name: "Sample XML File: Consolidated Purchase Orders"
+              href: programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md
+        - name: Reference (LINQ to XML)
+          href: rprogramming-guide/concepts/linq/eference-linq-to-xml.md
+      - name: LINQ to ADO.NET (Portal Page)
+        href: programming-guide/concepts/linq/linq-to-adonet-portal-page.md
+      - name: Enabling a Data Source for LINQ Querying
+        href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
+      - name: Visual Studio IDE and Tools Support for LINQ
+        href: programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md
     - name: Object-Oriented Programming
       href: programming-guide/concepts/object-oriented-programming.md
     - name: Reflection
       href: programming-guide/concepts/reflection.md
     - name: Serialization (C#)
-      href: programming-guide/concepts/serialization/
+      items:
+      - name: Overview
+        href: programming-guide/concepts/serialization/index.md
+      - name: "How to: Write Object Data to an XML File"
+        href: programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md
+      - name: "How to: Read Object Data from an XML File"
+        href: programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md
+      - name: "Walkthrough: Persisting an Object in Visual Studio"
+        href: programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md
   - name: Statements, Expressions, and Operators
     items:
     - name: Overview

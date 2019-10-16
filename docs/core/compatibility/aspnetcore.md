@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Core breaking changes - .NET Core
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: "10/09/2019"
+ms.date: "10/15/2019"
 author: "scottaddie"
 ms.author: "scaddie"
 ---

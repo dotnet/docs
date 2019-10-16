@@ -18,7 +18,7 @@ If you don't already have Visual Basic, you can download a free version of Visua
 [Getting Started](../visual-basic/getting-started/index.md)\
 Helps you begin working by listing what is new and what is available in various editions of the product.  
    
-[Programming Concepts](../visual-basic/programming-guide/concepts/index.md)\
+[Programming Concepts](../framework/programming-guide/concepts/index.md)\
 Presents the language concepts that are most useful to Visual Basic programmers.
 
 [Program Structure and Code Conventions](../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)\

@@ -97,4 +97,4 @@ For information about how to access an assembly's `internal` (C#) or `Friend` (V
 - [How to: Create signed friend assemblies](create-signed-friend.md)
 - [Assemblies in .NET](index.md)
 - [C# programming guide](../../csharp/programming-guide/index.md)
-- [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
+- [Programming concepts](../../framework/programming-guide/concepts/index.md)

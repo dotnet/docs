@@ -19,6 +19,6 @@ If you want to unload some assemblies but not others in a .NET Framework applica
 ## See also
 
 - [C# programming guide](../../csharp/programming-guide/index.md)
-- [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
+- [Programming concepts](../../framework/programming-guide/concepts/index.md)
 - [Assemblies in .NET](index.md)
 - [How to: Load assemblies into an application domain](../../framework/app-domains/how-to-load-assemblies-into-an-application-domain.md)

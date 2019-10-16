@@ -28,20 +28,19 @@ equality, but some differences, such as case differences, may be ignored.
 
 ## Default ordinal comparisons
 
-The most common operations:
+By default, the most common operations:
 
 - <xref:System.String.CompareTo%2A?displayProperty=nameWithType>
 - <xref:System.String.Equals%2A?displayProperty=nameWithType>
-- <xref:System.String.op_Equality%2A?displayProperty=nameWithType> 
+- <xref:System.String.op_Equality%2A?displayProperty=nameWithType> and <xref:System.String.op_Inequality%2A?displayProperty=nameWithType>, that is, [equality operators `==` and `!=`](../language-reference/operators/equality-operators.md#string-equality), respectively
 
-use an ordinal comparison, a case-sensitive comparison, and use the current culture. The results are shown in the following example:
+perform a case-sensitive ordinal comparison and, if necessary, use the current culture. The following example demonstrates that:
 
 [!code-csharp-interactive[Comparing strings using an ordinal comparison](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
 
-The default ordinal comparison does not take linguistic rules into account when comparing
-strings. It compares the binary value of each <xref:System.Char> object in two strings. As a result, the default ordinal comparison is also case-sensitive. 
+The default ordinal comparison doesn't take linguistic rules into account when comparing strings. It compares the binary value of each <xref:System.Char> object in two strings. As a result, the default ordinal comparison is also case-sensitive.
 
-Note that the test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and <xref:System.String.op_Equality%2A?displayProperty=nameWithType> differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. While the tests for equality perform a case-sensitive ordinal comparison, the comparison method perform a case-sensitive, culture-sensitive comparison using the current culture. Because the default comparison methods often perform different types of comparisons, we recommend that you always make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
+Note that the test for equality with <xref:System.String.Equals%2A?displayProperty=nameWithType> and the `==` and `!=` operators differs from string comparison using the <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and <xref:System.String.Compare(System.String,System.String)?displayProperty=nameWithType)> methods. While the tests for equality perform a case-sensitive ordinal comparison, the comparison methods perform a case-sensitive, culture-sensitive comparison using the current culture. Because the default comparison methods often perform different types of comparisons, we recommend that you always make the intent of your code clear by calling an overload that explicitly specifies the type of comparison to perform.
 
 ## Case-insensitive ordinal comparisons
 

@@ -127,7 +127,6 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
   > To fix this, upgrade your SDK version or run the following command instead:
   > `dotnet nuget push **/*.nupkg`
   
-  
 * Pushes all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) Server:
 
   ```dotnetcli

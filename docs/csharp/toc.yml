@@ -322,7 +322,23 @@
   - name: Statements, Expressions, and Operators
     href: programming-guide/statements-expressions-operators/
   - name: Types
-    href: programming-guide/types/
+    items:
+    - name: Use and define types
+      href: programming-guide/types/index.md
+    - name: Casting and Type Conversions
+      href: programming-guide/types/casting-and-type-conversions.md
+    - name: Boxing and Unboxing
+      href: programming-guide/types/boxing-and-unboxing.md
+    - name: "How to: Convert a byte Array to an int"
+      href: programming-guide/types/how-to-convert-a-byte-array-to-an-int.md
+    - name: "How to: Convert a String to a Number"
+      href: programming-guide/types/how-to-convert-a-string-to-a-number.md
+    - name: "How to: Convert Between Hexadecimal Strings and Numeric Types"
+      href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
+    - name: Using Type dynamic
+      href: programming-guide/types/using-type-dynamic.md
+    - name: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
+      href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
   - name: Classes and Structs
     href: programming-guide/classes-and-structs/
   - name: Interfaces

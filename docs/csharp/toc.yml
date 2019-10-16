@@ -67,7 +67,31 @@
   - name: Using Attributes
     href: tutorials/attributes.md
 - name: Tour of C#
-  href: tour-of-csharp/
+  items:
+  - name: Introduction
+    href: tour-of-csharp/index.md
+  - name: Program Structure
+    href: tour-of-csharp/program-structure.md
+  - name: Types and Variables
+    href: tour-of-csharp/types-and-variables.md
+  - name: Expressions
+    href: tour-of-csharp/expressions.md
+  - name: Statements
+    href: tour-of-csharp/statements.md
+  - name: Classes and objects
+    href: tour-of-csharp/classes-and-objects.md
+  - name: Structs
+    href: tour-of-csharp/structs.md
+  - name: Arrays
+    href: tour-of-csharp/arrays.md
+  - name: Interfaces
+    href: tour-of-csharp/interfaces.md
+  - name: Enums
+    href: tour-of-csharp/enums.md
+  - name: Delegates
+    href: tour-of-csharp/delegates.md
+  - name: Attributes
+    href: tour-of-csharp/attributes.md
 - name: What's new in C#
   items:
   - name: C# 8.0

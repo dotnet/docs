@@ -334,7 +334,11 @@
   - name: Arrays
     href: programming-guide/arrays/
   - name: Strings
-    href: programming-guide/strings/
+    items:
+    - name: Programming with strings
+      href: programming-guide/strings/index.md
+    - name: "How to: Determine Whether a String Represents a Numeric Value"
+      href: programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md
   - name: Indexers
     items:
     - name: Overview

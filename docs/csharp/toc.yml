@@ -308,7 +308,15 @@
   - name: Inside a C# Program
     href: programming-guide/inside-a-program/
   - name: Main() and Command-Line Arguments
-    href: programming-guide/main-and-command-args/
+    items:
+    - name: Overview
+      href: programming-guide/main-and-command-args/index.md
+    - name: Command-Line Arguments
+      href: programming-guide/main-and-command-args/command-line-arguments.md
+    - name: "How to: Display Command Line Arguments"
+      href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
+    - name: Main() Return Values
+      href: programming-guide/main-and-command-args/main-return-values.md
   - name: Programming Concepts
     href: programming-guide/concepts/
   - name: Statements, Expressions, and Operators
@@ -328,7 +336,15 @@
   - name: Strings
     href: programming-guide/strings/
   - name: Indexers
-    href: programming-guide/indexers/
+    items:
+    - name: Overview
+      href: programming-guide/indexers/index.md
+    - name: Using Indexers
+      href: programming-guide/indexers/using-indexers.md
+    - name: Indexers in Interfaces
+      href: programming-guide/indexers/indexers-in-interfaces.md
+    - name: Comparison Between Properties and Indexers
+      href: programming-guide/indexers/comparison-between-properties-and-indexers.md
   - name: Events
     href: programming-guide/events/
   - name: Generics

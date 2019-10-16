@@ -244,7 +244,7 @@ When to use:
 
 What to watch out for:
 
-- Exceptions are wrapped in <xref:AggregateException> following the convention of the Task Parallel Library, and this is different from how F# async generally surfaces exceptions.
+- Exceptions are wrapped in <xref:System.AggregateException> following the convention of the Task Parallel Library, and this is different from how F# async generally surfaces exceptions.
 
 ### Async.Catch
 

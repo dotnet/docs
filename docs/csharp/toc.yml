@@ -302,7 +302,51 @@
 #    - name: How to guides
 # Look at the samples, and determine which are "How To" vs. Samples.
 - name: C# Programming Guide
-  href: programming-guide/
+  items:
+  - name: Overview
+    href: programming-guide/index.md
+  - name: Inside a C# Program
+    href: programming-guide/inside-a-program/
+  - name: Main() and Command-Line Arguments
+    href: programming-guide/main-and-command-args/
+  - name: Programming Concepts
+    href: programming-guide/concepts/
+  - name: Statements, Expressions, and Operators
+    href: programming-guide/statements-expressions-operators/
+  - name: Types
+    href: programming-guide/types/
+  - name: Classes and Structs
+    href: programming-guide/classes-and-structs/
+  - name: Interfaces
+    href: programming-guide/interfaces/
+  - name: Enumeration Types
+    href: programming-guide/enumeration-types.md
+  - name: Delegates
+    href: programming-guide/delegates/index.md
+  - name: Arrays
+    href: programming-guide/arrays/
+  - name: Strings
+    href: programming-guide/strings/
+  - name: Indexers
+    href: programming-guide/indexers/
+  - name: Events
+    href: programming-guide/events/
+  - name: Generics
+    href: programming-guide/generics/
+  - name: Namespaces
+    href: programming-guide/namespaces/
+  - name: Nullable value types
+    href: programming-guide/nullable-types/
+  - name: Unsafe Code and Pointers
+    href: programming-guide/unsafe-code-pointers/
+  - name: XML Documentation Comments
+    href: programming-guide/xmldoc/
+  - name: Exceptions and Exception Handling
+    href: programming-guide/exceptions/
+  - name: File System and the Registry
+    href: programming-guide/file-system/
+  - name: Interoperability
+    href: programming-guide/interop/
 - name: Language Reference
   href: language-reference/
 - name: Walkthroughs

@@ -422,11 +422,39 @@
   - name: Nullable value types
     href: programming-guide/nullable-types/
   - name: Unsafe Code and Pointers
-    href: programming-guide/unsafe-code-pointers/
+      items:
+      - name: Overview and restrictions
+        href: programming-guide/unsafe-code-pointers/index.md
+      - name: Fixed size buffers
+        href: programming-guide/unsafe-code-pointers/fixed-size-buffers.md
+      - name: Pointer types
+        items:
+        - name: Overview
+          href: programming-guide/unsafe-code-pointers/pointer-types.md
+        - name: Pointer conversions
+          href: programming-guide/unsafe-code-pointers/pointer-conversions.md
+        - name: "How to: use pointers to copy an array of bytes"
+          href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
   - name: XML Documentation Comments
     href: programming-guide/xmldoc/
   - name: Exceptions and Exception Handling
-    href: programming-guide/exceptions/
+    items:
+    - name: Overview
+      href: programming-guide/exceptions/index.md
+    - name: Using Exceptions
+      href: programming-guide/exceptions/using-exceptions.md
+    - name: Exception Handling
+      href: programming-guide/exceptions/exception-handling.md
+    - name: Creating and Throwing Exceptions
+      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
+    - name: Compiler-Generated Exceptions
+      href: programming-guide/exceptions/compiler-generated-exceptions.md
+    - name: "How to: Handle an Exception Using try-catch"
+      href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
+    - name: "How to: Execute Cleanup Code Using finally"
+      href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
+    - name: "How to: Catch a non-CLS Exception"
+      href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
   - name: File System and the Registry
     href: programming-guide/file-system/
   - name: Interoperability

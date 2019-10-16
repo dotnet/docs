@@ -306,7 +306,17 @@
   - name: Overview
     href: programming-guide/index.md
   - name: Inside a C# Program
-    href: programming-guide/inside-a-program/
+    items:
+    - name: What's inside a C# Program
+      href: programming-guide/inside-a-program/index.md
+    - name: Hello World -- Your First Program
+      href: programming-guide/inside-a-program/hello-world-your-first-program.md
+    - name: General Structure of a C# Program
+      href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
+    - name: Identifier names
+      href: programming-guide/inside-a-program/identifier-names.md
+    - name: C# Coding Conventions
+      href: programming-guide/inside-a-program/coding-conventions.md
   - name: Main() and Command-Line Arguments
     items:
     - name: Overview
@@ -486,11 +496,29 @@
     - name: "How to: Return Subsets of Element Properties in a Query"
       href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
   - name: Interfaces
-    href: programming-guide/interfaces/
+    items: 
+    - name: Overview
+      href: programming-guide/interfaces/index.md
+    - name: Explicit Interface Implementation
+      href: programming-guide/interfaces/explicit-interface-implementation.md
+    - name: "How to: Explicitly Implement Interface Members"
+      href: programming-guide/interfaces/how-to-explicitly-implement-interface-members.md
+    - name: "How to: Explicitly Implement Members of Two Interfaces"
+      href: programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md
   - name: Enumeration Types
     href: programming-guide/enumeration-types.md
   - name: Delegates
-    href: programming-guide/delegates/index.md
+    items:
+    - name: Overview
+      href: programming-guide/delegates/index.md
+    - name: Using Delegates
+      href: programming-guide/delegates/using-delegates.md
+    - name: Delegates with Named vs. Anonymous Methods
+      href: programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md
+    - name: "How to: Combine Delegates (Multicast Delegates)(C# Programming Guide)"
+      href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
+    - name: "How to: Declare, Instantiate, and Use a Delegate"
+      href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
   - name: Arrays
     items:
     - name: Overview
@@ -526,7 +554,19 @@
     - name: Comparison Between Properties and Indexers
       href: programming-guide/indexers/comparison-between-properties-and-indexers.md
   - name: Events
-    href: programming-guide/events/
+    items:
+    - name: Overview
+      href: programming-guide/events/index.md
+    - name: "How to: Subscribe to and Unsubscribe from Events"
+      href: programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md
+    - name: "How to: Publish Events that Conform to .NET Framework Guidelines"
+      href: programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md
+    - name: "How to: Raise Base Class Events in Derived Classes"
+      href: programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md
+    - name: "How to: Implement Interface Events"
+      href: programming-guide/events/how-to-implement-interface-events.md
+    - name: "How to: Implement Custom Event Accessors"
+      href: programming-guide/events/how-to-implement-custom-event-accessors.md
   - name: Generics
     items:
     - name: Overview
@@ -654,7 +694,27 @@
     - name: "How to: Catch a non-CLS Exception"
       href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
   - name: File System and the Registry
-    href: programming-guide/file-system/
+    items:
+    - name: Overview
+      href: programming-guide/file-system/index.md
+    - name: "How to: Iterate Through a Directory Tree"
+      href: programming-guide/file-system/how-to-iterate-through-a-directory-tree.md
+    - name: "How to: Get Information About Files, Folders, and Drives"
+      href: programming-guide/file-system/how-to-get-information-about-files-folders-and-drives.md
+    - name: "How to: Create a File or Folder"
+      href: programming-guide/file-system/how-to-create-a-file-or-folder.md
+    - name: "How to: Copy, Delete, and Move Files and Folders"
+      href: programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md
+    - name: "How to: Provide a Progress Dialog Box for File Operations"
+      href: programming-guide/file-system/how-to-provide-a-progress-dialog-box-for-file-operations.md
+    - name: "How to: Write to a Text File"
+      href: programming-guide/file-system/how-to-write-to-a-text-file.md
+    - name: "How to: Read From a Text File"
+      href: programming-guide/file-system/how-to-read-from-a-text-file.md
+    - name: "How to: Read a Text File One Line at a Time (Visual C#)"
+      href: programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md
+    - name: "How to: Create a Key In the Registry (Visual C#)"
+      href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
   - name: Interoperability
     items:
     - name: .NET Interoperability

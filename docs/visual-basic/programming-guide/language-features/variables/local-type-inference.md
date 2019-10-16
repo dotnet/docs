@@ -72,5 +72,5 @@ The Visual Basic compiler uses *type inference* to determine the data types of l
 - [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md)
 - [For...Next Statement](../../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [Option Infer Statement](../../../../visual-basic/language-reference/statements/option-infer-statement.md)
-- [/optioninfer](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [-optioninfer](../../../../visual-basic/reference/command-line-compiler/optioninfer.md)
 - [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)

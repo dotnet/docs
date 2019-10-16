@@ -400,7 +400,19 @@
         - name: Using Variance for Func and Action Generic Delegates
           href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
     - name: Expression Trees
-      href: programming-guide/concepts/expression-trees/
+      items:
+      - name: Overview
+        href: programming-guide/concepts/expression-trees/index.md
+      - name: "How to: Execute Expression Trees"
+        href: programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md
+      - name: "How to: Modify Expression Trees"
+        href: programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md
+      - name: "How to: Use Expression Trees to Build Dynamic Queries"
+        href: programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md
+      - name: Debugging Expression Trees in Visual Studio
+        href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
+      - name: DebugView Syntax
+        href: programming-guide/concepts/expression-trees/debugview-syntax.md
     - name: Iterators
       href: programming-guide/concepts/iterators.md
     - name: Language-Integrated Query (LINQ)

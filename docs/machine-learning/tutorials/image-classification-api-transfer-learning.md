@@ -46,8 +46,7 @@ ML.NET provides various ways of performing image classification. This tutorial f
 
 <img src="./media/image-classification-api-transfer-learning/120px-architecture.png" 
 alt="ML.NET Image Classification API Architecture"
-style="height:50%; width:50%"
-/>
+style="height:120px; width:120px"/>
 
 ### What is transfer learning?
 
@@ -451,4 +450,4 @@ If you're not satisfied with the results of your model, you can try to improve i
 - **Augment the data**: A common technique to add variety to the data is to augment the data by taking an image and applying different transforms (rotate, flip, shift, crop). This adds more varied examples for the model to learn from. 
 - **Train for a longer time**: The longer you train, the more tuned the model will be. Increasing the number of epochs may improve the performance of your model.
 - **Experiment with the hyper-parameters**: In addition to the parameters used in this tutorial, other parameters can be tuned to potentially improve performance. Changing the learning rate, which determines the magnitude of updates made to the model after each epoch may improve performance.
-- **Use a different model architecture**: Depending on what your data looks like, the model that can best learn its features may differ. If you're not satisfied with the performance of your model, try changing the architecture. 
+- **Use a different model architecture**: Depending on what your data looks like, the model that can best learn its features may differ. If you're not satisfied with the performance of your model, try changing the architecture.

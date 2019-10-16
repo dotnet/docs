@@ -44,9 +44,7 @@ This tutorial trains a custom image classification model to perform automated vi
 
 ML.NET provides various ways of performing image classification. This tutorial focuses on the Image Classification API. The Image Classification API makes use of [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET), a low-level library that provides C# bindings for the TensorFlow C++ API.
 
-<img src="./media/image-classification-api-transfer-learning/120px-architecture.png" 
-alt="ML.NET Image Classification API Architecture"
-style="height:120px; width:120px"/>
+![ML.NET Image Classification API Architecture](./media/image-classification-api-transfer-learning/architecture.png)
 
 ### What is transfer learning?
 

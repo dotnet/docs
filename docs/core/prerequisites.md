@@ -7,13 +7,13 @@ ms.date: 10/03/2019
 zone_pivot_groups: operating-systems-set-one
 ---
 
-This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
-
-.NET Core is made up of two components, the runtime and the SDK. The runtime is required if you deploy a .NET Core application that doesn't include a runtime. The SDK is required to build .NET Core applications.
-
 # Prerequisites for .NET Core
 
-This article shows the supported OS versions and required dependencies to develop and run .NET Core applications on Windows, Linux, and macOS. There are a variety of ways to develop .NET Core apps:
+This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
+
+.NET Core is made up of two components, the runtime and the SDK. The **runtime** is required to run a .NET Core application that doesn't include the runtime. The **SDK** is required to build .NET Core applications.
+
+There are a variety of ways to develop .NET Core apps:
 
 ::: zone pivot="os-windows"
 
@@ -37,6 +37,12 @@ This article shows the supported OS versions and required dependencies to develo
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 ::: zone-end
+
+The following articles have a complete list of .NET Core supported operating systems per version:
+
+- [.NET Core 3.0](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md)
+- [.NET Core 2.2](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)
+- [.NET Core 2.1](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)
 
 ## Check what is installed
 
@@ -98,6 +104,75 @@ Depending on the OS you're using, you may need to install additional dependencie
 
 ::: zone pivot="os-windows"
 
+<!-- markdownlint-disable MD025 -->
+
+# [.NET Core 3.0](#tab/netcore30)
+
+The following Windows operating systems are supported with .NET Core 3.0:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
+
+| OS                            | Version                        | Architectures   |
+| ----------------------------- | ------------------------------ | --------------- |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
+| Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Windows Server                | 2012 R2 SP1+                   | x64, x86        |
+| Nano Server                   | Version 1803+                  | x64, ARM32      |
+
+# [.NET Core 2.2](#tab/netcore22)
+
+The following Windows operating systems are supported with .NET Core 2.2:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
+
+| OS                            | Version                        | Architectures   |
+| ----------------------------- | ------------------------------ | --------------- |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
+| Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Windows Server                | 2008 R2 SP1+                   | x64, x86        |
+| Nano Server                   | Version 1709+                  | x64, ARM32      |
+
+# [.NET Core 2.1](#tab/netcore21)
+
+The following Windows operating systems are supported with .NET Core 2.1:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
+
+| OS                            | Version                        | Architectures   |
+| ----------------------------- | ------------------------------ | --------------- |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
+| Windows 10 Client             | Version 1607+                  | x64, x86        |
+| Windows Server                | 2008 R2 SP1+                   | x64, x86        |
+
+---
+
+### Windows 7 / 8.1 / Server 2008 R2
+
+There are additional prerequisites if you're installing the .NET SDK or Runtime on the following Windows operating systems:
+
+- Windows 7 SP1
+- Windows 8.1
+- Windows Server 2008 R2
+- Windows Server 2012 R2
+
+Install the following:
+
+- [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=52685).
+- [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)
+
+The requirements above are also required if you encounter one of the following errors:
+
+> The program can't start because api-ms-win-crt-runtime-l1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.
+>
+> \- or -
+>
+> The library hostfxr.dll was found, but loading it from C:\\\<path_to_app>\\hostfxr.dll failed.
+
+### Visual Studio
+
 If you're using Visual Studio to develop .NET Core applications, the following table describes the minimum required version of Visual Studio based on the target .NET Core runtime.
 
 | .NET Core SDK version | Visual Studio version                      |
@@ -106,24 +181,11 @@ If you're using Visual Studio to develop .NET Core applications, the following t
 | 2.2                   | Visual Studio 2017 version 15.9 or higher. |
 | 2.1                   | Visual Studio 2017 version 15.7 or higher. |
 
-<!-- markdownlint-disable MD025 -->
+To verify your Visual Studio version:
 
-# [.NET Core 3.0](#tab/netcore30)
-
-The following Windows operating systems are supported with .NET Core 3.0:
-
-| OS                            | Version                        | Architectures   |
-| ----------------------------- | ------------------------------ | --------------- |
-| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
-| Windows 10 Client             | Version 1607+                  | x64, x86        |
-| Nano Server                   | Version 1803+                  | x64, ARM32      |
-| Windows Server                | 2012 R2 SP1+                   | x64, x86        |
-
-# [.NET Core 2.2](#tab/netcore22)
-
-# [.NET Core 2.1](#tab/netcore21)
-
----
+01. Open Visual Studio.
+01. Press the **Help** > **About Microsoft Visual Studio** menu.
+01. Read the version number from the **About** dialog.
 
 ::: zone-end
 
@@ -192,6 +254,9 @@ See [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 For download links and more information, see [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1).
 
 .NET Core 2.1 is supported on the following Linux distributions/versions:
+
+> [!NOTE]
+> A `+` symbol represents the minimum version.
 
 | OS                             |  Version                |  Architectures   |
 | ------------------------------ | ----------------------- | ---------------- |

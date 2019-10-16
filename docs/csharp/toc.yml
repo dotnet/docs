@@ -382,7 +382,23 @@
     - name: Collections
       href: programming-guide/concepts/collections.md
     - name: Covariance and Contravariance
-      href: programming-guide/concepts/covariance-contravariance/
+      items:
+      - name: Overview
+        href: programming-guide/concepts/covariance-contravariance/index.md
+      - name: Variance in Generic Interfaces
+        href: programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md
+        items:
+        - name: Creating Variant Generic Interfaces
+          href: programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md
+        - name: Using Variance in Interfaces for Generic Collections
+          href: programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md
+      - name: Variance in Delegates
+        href: programming-guide/concepts/covariance-contravariance/variance-in-delegates.md
+        items:
+        - name: Using Variance in Delegates
+          href: programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md
+        - name: Using Variance for Func and Action Generic Delegates
+          href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
     - name: Expression Trees
       href: programming-guide/concepts/expression-trees/
     - name: Iterators

@@ -8,7 +8,7 @@
 
 #### Old behavior
 
-`Microsoft.AspNetCore.SpaServices` and `Microsoft.AspNetCore.NodeServices` used to automatically create a console logger when logging isn't configured. 
+`Microsoft.AspNetCore.SpaServices` and `Microsoft.AspNetCore.NodeServices` used to automatically create a console logger when logging isn't configured.
 
 #### New behavior
 
@@ -30,7 +30,7 @@ ASP.NET Core
 
 None
 
-<!-- 
+<!--
 
 #### Affected APIs
 

@@ -23,7 +23,7 @@ Declares the operator symbol, operands, and code that define an operator procedu
   
 ## Syntax  
   
-```  
+```vb  
 [ <attrlist> ] Public [ Overloads ] Shared [ Shadows ] [ Widening | Narrowing ]   
 Operator operatorsymbol ( operand1 [, operand2 ]) [ As [ <attrlist> ] type ]  
     [ statements ]  

@@ -16,7 +16,7 @@ Imports XML namespace prefixes for use in XML literals and XML axis properties.
 
 ## Syntax
 
-```
+```vb
 Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
 ```
 

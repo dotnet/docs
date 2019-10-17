@@ -7,7 +7,7 @@ ms.date: 02/15/2019
 
 Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using their preferred languages or platforms, and testing it locally (Figure 4-21). But in every case, you'll have an important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you're always developing and testing Docker containers, but locally.
 
-![Step 1 - Code/Run/Debug](./media/image18.png)
+![Diagram showing the concept of an inner loop dev environment.](./media/docker-apps-inner-loop-workflow/inner-loop-development-context.png)
 
 **Figure 4-21**. Inner-loop development context
 
@@ -29,7 +29,7 @@ Apps are made up from your own services plus additional libraries (dependencies)
 
 Figure 4-22 shows the basic steps that you usually need to carry out when building a Docker app, followed by detailed descriptions of each step.
 
-![Workflow overview: Step 1 - Code, Step 2 - Write Dockerfiles, Step 3 - Create images defined with Dockerfiles, Step 4 - Define services with docker-compose file, Step 5 - Run containers or composed apps, Step 6 - Test apps, Step 7 - Push to begin the outer loop (CI/CD pipelines) or continue developing.](./media/image19.png)
+![Diagram showing the seven steps it takes to create a containerized app.](./media/docker-apps-inner-loop-workflow/life-cycle-containerized-apps-docker-cli.png)
 
 **Figure 4-22**. High-level workflow for the life cycle for Docker containerized applications using Docker CLI
 
@@ -41,19 +41,17 @@ The way you develop your application is similar to the way you do it without Doc
 
 With the latest versions of Docker for Mac and Windows, it's easier than ever to develop Docker applications, and the setup is straightforward.
 
-> [!INFORMATION]
->
+> [!TIP]
 > For instructions on setting up Docker for Windows, go to <https://docs.docker.com/docker-for-windows/>.
 >
 >For instructions on setting up Docker for Mac, go to <https://docs.docker.com/docker-for-mac/>.
 
 In addition, you'll need a code editor so that you can actually develop your application while using Docker CLI.
 
-Microsoft provides Visual Studio Code, which is a lightweight code editor that's supported on Mac, Windows, and Linux, and provides IntelliSense with [support for many languages](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python, and most modern languages), [debugging](https://code.visualstudio.com/Docs/editor/debugging), [integration with Git](https://code.visualstudio.com/Docs/editor/versioncontrol) and [extensions support](https://code.visualstudio.com/docs/extensions/overview). This editor is a great fit for Mac and Linux developers. In Windows, you also can use the full Visual Studio application.
+Microsoft provides Visual Studio Code, which is a lightweight code editor that's supported on Windows, Linux, and macOS, and provides IntelliSense with [support for many languages](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python, and most modern languages), [debugging](https://code.visualstudio.com/Docs/editor/debugging), [integration with Git](https://code.visualstudio.com/Docs/editor/versioncontrol) and [extensions support](https://code.visualstudio.com/docs/extensions/overview). This editor is a great fit for macOS and Linux developers. In Windows, you also can use Visual Studio.
 
-> [!INFORMATION]
->
-> For instructions on installing Visual Studio Code for Windows, Mac, or Linux, go to <https://code.visualstudio.com/docs/setup/setup-overview/>.
+> [!TIP]
+> For instructions on installing Visual Studio Code for Windows, Linux, or macOS, go to <https://code.visualstudio.com/docs/setup/setup-overview/>.
 >
 > For instructions on setting up Docker for Mac, go to <https://docs.docker.com/docker-for-mac/>.
 
@@ -77,7 +75,7 @@ The Docker extension for VS Code provides the following features:
 
 To install the Docker extension, press Ctrl+Shift+P, type `ext install`, and then run the Install Extension command to bring up the Marketplace extension list. Next, type **docker** to filter the results, and then select the Docker Support extension, as depicted in Figure 4-23.
 
-![View of the Docker extension for VS Code.](./media/image20.png)
+![View of the Docker extension for VS Code.](./media/docker-apps-inner-loop-workflow/install-docker-extension-vs-code.png)
 
 **Figure 4-23**. Installing the Docker Extension in Visual Studio Code
 
@@ -88,12 +86,11 @@ You'll need a `DockerFile` per custom image to be built and per container to be 
 The `DockerFile` is commonly placed in the root folder of your app or service and contains the required commands so that Docker knows how to set up and run that app or service. You can create your `DockerFile` and add it to your project along with your code (node.js, .NET Core, etc.), or, if you're new to the environment, take a look at the following Tip.
 
 > [!TIP]
->
 > You can use the Docker extension to guide you when using the `Dockerfile` and `docker-compose.yml` files related to your Docker containers. Eventually, you'll probably write these kinds of files without this tool, but using the Docker extension is a good starting point that will accelerate your learning curve.
 
 In Figure 4-24, you can see how a docker-compose file is added by using the Docker Extension for VS Code.
 
-![Console view of Docker extension for VS Code.](./media/image24.png)
+![Console view of Docker extension for VS Code.](./media/docker-apps-inner-loop-workflow/add-docker-files-to-workspace-command.png)
 
 **Figure 4-24**. Docker files added using the **Add Docker files to Workspace command**
 
@@ -127,8 +124,7 @@ In the DockerFile, you can also instruct Docker to listen to the TCP port that y
 
 You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the `ENTRYPOINT` line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET Core application. If you're using the SDK and the .NET Core CLI (`dotnet CLI`) to build and run the .NET application, this setting would be different. The key point here is that the ENTRYPOINT line and other settings depend on the language and platform you choose for your application.
 
-> [!INFORMATION]
->
+> [!TIP]
 > For more information about building Docker images for .NET Core applications, go to <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.
 >
 > To learn more about building your own images, go to <https://docs.docker.com/engine/tutorials/dockerimages/>.
@@ -148,7 +144,6 @@ You can create your own Docker base image from scratch as explained in this [art
 For each custom service that comprises your app, you'll need to create a related image. If your app is made up of a single service or web app, you'll need just a single image.
 
 > [!NOTE]
->
 > When taking into account the "outer-loop DevOps workflow", the images will be created by an automated build process whenever you push your source code to a Git repository (Continuous Integration), so the images will be created in that global environment from your source code.
 >
 > But before we consider going to that outer-loop route, we need to ensure that the Docker application is actually working properly so that they don't push code that might not work properly to the source control system (Git, etc.).
@@ -157,7 +152,7 @@ For each custom service that comprises your app, you'll need to create a related
 
 To create an image in your local environment and using the DockerFile, you can use the docker build command, as demonstrated in Figure 4-25 (you also can run `docker-compose up --build` for applications composed by several containers/services).
 
-![Console output of the docker-compose build, showing the images downloading progress.](./media/image25.png)
+![Screenshot showing the console output of the docker build command.](./media/docker-apps-inner-loop-workflow/run-docker-build-command.png)
 
 **Figure 4-25**. Running docker build
 
@@ -167,7 +162,7 @@ This example creates a Docker image with the name `cesardl/netcore-webapi-micros
 
 You can find the existing images in your local repository (your development machine) by using the docker images command, as illustrated in Figure 4-26.
 
-![Console output from command docker images, showing existing images.](./media/image26.png)
+![Console output from command docker images, showing existing images.](./media/docker-apps-inner-loop-workflow/view-existing-images-with-docker-images.png)
 
 **Figure 4-26**. Viewing existing images using docker images
 
@@ -222,13 +217,13 @@ For this particular deployment, we'll be redirecting requests sent to port 80 to
 
 In most enterprise scenarios, a Docker application will be composed of multiple services. For these cases, you can run the `docker-compose up` command (Figure 4-27), which will use the docker-compose.yml file that you might have created previously. Running this command deploys a composed application with all of its related containers.
 
-![Console output from the docker-compose up command.](./media/image27.png)
+![Console output from the docker-compose up command.](./media/docker-apps-inner-loop-workflow/results-docker-compose-up.png)
 
 **Figure 4-27**. Results of running the "docker-compose up" command
 
 After you run `docker-compose up`, you deploy your application and its related container(s) into your Docker Host, as illustrated in Figure 4-28, in the VM representation.
 
-![VM running multi-container applications.](./media/image28.png)
+![VM running multi-container applications.](./media/docker-apps-inner-loop-workflow/vm-with-docker-containers-deployed.png)
 
 **Figure 4-28**. VM with Docker containers deployed
 
@@ -246,7 +241,7 @@ docker-machine {IP} {YOUR-CONTAINER-NAME}
 
 On the Docker host, open a browser and navigate to that site; you should see your app/service running, as demonstrated in Figure 4-29.
 
-![Browser view of the response from localhost/API/values.](./media/image29.png)
+![Browser view of the response from localhost/API/values.](./media/docker-apps-inner-loop-workflow/test-docker-app-locally-localhost.png)
 
 **Figure 4-29**. Testing your Docker application locally using localhost
 
@@ -254,7 +249,7 @@ Note that it's using port 80, but internally it's being redirected to port 5000,
 
 You can test this by using CURL from the terminal. In a Docker installation on Windows, the default IP is 10.0.75.1, as depicted in Figure 4-30.
 
-![Console output from getting the http://10.0.75.1/API/values with curl](./media/image30.png)
+![Console output from getting the http://10.0.75.1/API/values with curl](./media/docker-apps-inner-loop-workflow/test-docker-app-locally-curl.png)
 
 **Figure 4-30**. Testing a Docker application locally by using CURL
 
@@ -264,9 +259,8 @@ Visual Studio Code supports debugging Docker if you're using Node.js and other p
 
 You also can debug .NET Core or .NET Framework containers in Docker when using Visual Studio for Windows or Mac, as described in the next section.
 
-> [!INFORMATION]
->
-> To learn more about debugging Node.js Docker containers, go to <https://blog.docker.com/2016/07/live-debugging-docker/> and <https://blogs.msdn.microsoft.com/user_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more/>.
+> [!TIP]
+> To learn more about debugging Node.js Docker containers, see <https://blog.docker.com/2016/07/live-debugging-docker/> and <https://blogs.msdn.microsoft.com/user_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more/>.
 
 >[!div class="step-by-step"]
 >[Previous](docker-apps-development-environment.md)

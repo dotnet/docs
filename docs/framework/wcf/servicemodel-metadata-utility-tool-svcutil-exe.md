@@ -22,11 +22,11 @@ The following table summarizes the various functionalities provided by this tool
 
 |Task|Topic|
 |----------|-----------|
-|Generates code from running services or static metadata documents.|[Generating a WCF Client from Service Metadata](../../../docs/framework/wcf/feature-details/generating-a-wcf-client-from-service-metadata.md)|
-|Exports metadata documents from compiled code.|[How to: Use Svcutil.exe to Export Metadata from Compiled Service Code](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)|
-|Validates compiled service code.|[How to: Use Svcutil.exe to Validate Compiled Service Code](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-validate-compiled-service-code.md)|
-|Downloads metadata documents from running services.|[How to: Use Svcutil.exe to Download Metadata Documents](../../../docs/framework/wcf/feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)|
-|Generates serialization code.|[How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)|
+|Generates code from running services or static metadata documents.|[Generating a WCF Client from Service Metadata](./feature-details/generating-a-wcf-client-from-service-metadata.md)|
+|Exports metadata documents from compiled code.|[How to: Use Svcutil.exe to Export Metadata from Compiled Service Code](./feature-details/how-to-use-svcutil-exe-to-export-metadata-from-compiled-service-code.md)|
+|Validates compiled service code.|[How to: Use Svcutil.exe to Validate Compiled Service Code](./feature-details/how-to-use-svcutil-exe-to-validate-compiled-service-code.md)|
+|Downloads metadata documents from running services.|[How to: Use Svcutil.exe to Download Metadata Documents](./feature-details/how-to-use-svcutil-exe-to-download-metadata-documents.md)|
+|Generates serialization code.|[How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](./feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)|
 
 > [!CAUTION]
 > Svcutil overwrites existing files on a disk if the names supplied as parameters are identical. This can include code files, configuration, or metadata files. To avoid this when generating code and configuration files, use the `/mergeConfig` switch.
@@ -63,7 +63,7 @@ The following table shows some commonly used options for this tool:
 
 Svcutil.exe can generate code for service contracts, clients and data types from metadata documents. These metadata documents can be on a durable storage, or be retrieved online. Online retrieval follows either the WS-Metadata Exchange protocol or the DISCO protocol (for details see the Metadata Download section).
 
-You can use the *SvcUtil.exe* tool to generate service and data contracts based on a predefined WSDL document. Use the /serviceContract switch and specify a URL or file location where the WSDL document can be downloaded or found. This generates the service and data contracts defined in the WSDL document that can then be used to implement a complaint service. For more information, see [How to: Retrieve Metadata and Implement a Compliant Service](../../../docs/framework/wcf/feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md).
+You can use the *SvcUtil.exe* tool to generate service and data contracts based on a predefined WSDL document. Use the /serviceContract switch and specify a URL or file location where the WSDL document can be downloaded or found. This generates the service and data contracts defined in the WSDL document that can then be used to implement a complaint service. For more information, see [How to: Retrieve Metadata and Implement a Compliant Service](./feature-details/how-to-retrieve-metadata-and-implement-a-compliant-service.md).
 
 For a service with a BasicHttpContextBinding endpoint, *Svcutil.exe* generates a BasicHttpBinding with the `allowCookies` attribute set to `true` instead. The cookies are used for context on the server. If you would like to manage context on the client when the service uses cookies, you can manually modify the configuration to use a context binding.
 
@@ -102,10 +102,10 @@ For a service with a BasicHttpContextBinding endpoint, *Svcutil.exe* generates a
 |/serializer:DataContractSerializer|Generates data types that use the Data Contract Serializer for serialization and deserialization.<br /><br /> Short Form: `/ser:DataContractSerializer`|
 |/serializer:XmlSerializer|Generates data types that use the <xref:System.Xml.Serialization.XmlSerializer> for serialization and deserialization.<br /><br /> Short Form: `/ser:XmlSerializer`|
 |/targetClientVersion|Specify which version of .NET Framework the application is targeting. Valid values are `Version30` and `Version35`. The default value is `Version30`.<br /><br /> Short Form: `/tcv`<br /><br /> `Version30`: Use `/tcv:Version30` if you are generating code for clients that use WinFX.<br /><br /> `Version35`: Use `/tcv:Version35` if you are generating code for clients that use [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]. When using `/tcv:Version35` with the `/async` switch, both event-based and callback/delegate-based asynchronous methods are generated. In addition, support for LINQ-enabled DataSets and <xref:System.DateTimeOffset> is enabled.|
-|/wrapped|Controls whether special-casing is used for document-literal styled documents with wrapped parameters. Use the **/wrapped** switch with the [Service Model Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool to specify normal casing.|
+|/wrapped|Controls whether special-casing is used for document-literal styled documents with wrapped parameters. Use the **/wrapped** switch with the [Service Model Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) tool to specify normal casing.|
 
 > [!NOTE]
-> When the service binding is one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)), and the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> property is set to either `None` or `Sign`, Svcutil generates a configuration file using the [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) element instead of the expected system-provided element. For example, if the service uses the `<wsHttpBinding>` element with the `ProtectionLevel` set to `Sign`, the generated configuration has `<customBinding>` in the bindings section instead of `<wsHttpBinding>`. For more information about the protection level, see [Understanding Protection Level](../../../docs/framework/wcf/understanding-protection-level.md).
+> When the service binding is one of the system-provided bindings (see [System-Provided Bindings](system-provided-bindings.md)), and the <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> property is set to either `None` or `Sign`, Svcutil generates a configuration file using the [\<customBinding>](../configure-apps/file-schema/wcf/custombinding.md) element instead of the expected system-provided element. For example, if the service uses the `<wsHttpBinding>` element with the `ProtectionLevel` set to `Sign`, the generated configuration has `<customBinding>` in the bindings section instead of `<wsHttpBinding>`. For more information about the protection level, see [Understanding Protection Level](understanding-protection-level.md).
 
 ### Metadata Export
 
@@ -170,7 +170,7 @@ Services and client applications that use data types that are serializable using
 > [!NOTE]
 > Pre-generated serialization code can only be used in client applications and not in services.
 
-Svcutil.exe can generate the necessary C# serialization code from the compiled assemblies for the application, thus improving start-up performance for these applications. For more information, see [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md).
+Svcutil.exe can generate the necessary C# serialization code from the compiled assemblies for the application, thus improving start-up performance for these applications. For more information, see [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](./feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md).
 
 > [!NOTE]
 > Svcutil.exe only generates code for types used by Service Contracts found in the input assemblies.
@@ -274,4 +274,4 @@ Finally, you should not use the tool in the middle-tier of your application, as 
 
 - <xref:System.Runtime.Serialization.DataContractAttribute>
 - <xref:System.Runtime.Serialization.DataMemberAttribute>
-- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
+- [How to: Create a Client](how-to-create-a-wcf-client.md)

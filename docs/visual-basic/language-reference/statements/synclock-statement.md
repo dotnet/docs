@@ -15,7 +15,7 @@ Acquires an exclusive lock for a statement block before executing the block.
   
 ## Syntax  
   
-```  
+```vb  
 SyncLock lockobject  
     [ block ]  
 End SyncLock  

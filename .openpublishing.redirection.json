@@ -35,7 +35,11 @@
         },
         {
             "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
-            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/life-cycle-ci-cd-pipelines-devops-tools"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/life-cycle-ci-cd-pipelines-devops-tools"
         },
         {
             "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
@@ -129,6 +133,11 @@
         {
             "source_path": "docs/core/porting/nuget-packages.md",
             "redirect_url": "/dotnet/core/packages"
+        },
+        {
+            "source_path": "docs/core/porting/wpf.md",
+            "redirect_url": "/dotnet/desktop-wpf/migration/convert-project-from-net-framework",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/core/preview3/deploying/index.md",
@@ -888,12 +897,40 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
-            "redirect_url": "/dotnet/standard/assembly/friend-assemblies",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/standard/assembly/friend",
+            "redirect_document_id":true
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md",
             "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md",
+            "redirect_url": "/dotnet/standard/assembly/index"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/create-signed-friend"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/create-unsigned-friend"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md",
+            "redirect_url": "/dotnet/standard/assembly/identify"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/load-unload"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/how-to-share-an-assembly-with-other-applications.md",
+            "redirect_url": "/dotnet/framework/app-domains/how-to-share-an-assembly-with-other-applications"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md",
+            "redirect_url": "/dotnet/standard/assembly/embed-types-visual-studio"
         },
         {
             "source_path": "docs/csharp/programming-guide/concepts/async/asynchronous-programming-with-async-and-await.md",
@@ -1334,6 +1371,10 @@
             "redirect_url": "/dotnet/csharp/roslyn-sdk/"
         },
         {
+            "source_path": "docs/csharp/tutorials/default-interface-members-versions.md",
+            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
+        },
+        {
             "source_path": "docs/csharp/tutorials/exploration/csharp-7.yml",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
         },
@@ -1370,6 +1411,114 @@
         {
             "source_path": "docs/framework/add-ins/walkthrough-create-extensible-app.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)"
+        },
+        {
+            "source_path": "docs/framework/app-domains/assemblies-and-side-by-side-execution.md",
+            "redirect_url": "/dotnet/standard/assembly/side-by-side-execution"
+        },
+        {
+            "source_path": "docs/framework/app-domains/assemblies-in-the-common-language-runtime.md",
+            "redirect_url": "/dotnet/standard/assembly/index"
+        },
+        {
+            "source_path": "docs/framework/app-domains/assembly-contents.md",
+            "redirect_url": "/dotnet/standard/assembly/contents"
+        },
+        {
+            "source_path": "docs/framework/app-domains/assembly-location.md",
+            "redirect_url": "/dotnet/standard/assembly/location"
+        },
+        {
+            "source_path": "docs/framework/app-domains/assembly-manifest.md",
+            "redirect_url": "/dotnet/standard/assembly/manifest"
+        },
+        {
+            "source_path": "docs/framework/app-domains/assembly-names.md",
+            "redirect_url": "/dotnet/standard/assembly/names"
+        },
+        {
+            "source_path": "docs/framework/app-domains/assembly-security-considerations.md",
+            "redirect_url": "/dotnet/standard/assembly/security-considerations"
+        },
+        {
+            "source_path": "docs/framework/app-domains/assembly-versioning.md",
+            "redirect_url": "/dotnet/standard/assembly/versioning"
+        },
+        {
+            "source_path": "docs/framework/app-domains/create-and-use-strong-named-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/create-use-strong-named"
+        },
+        {
+            "source_path": "docs/framework/app-domains/create-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/create"
+        },
+        {
+            "source_path": "docs/framework/app-domains/delay-sign-assembly.md",
+            "redirect_url": "/dotnet/standard/assembly/delay-sign"
+        },
+        {
+            "source_path": "docs/framework/app-domains/enhanced-strong-naming.md",
+            "redirect_url": "/dotnet/standard/assembly/enhanced-strong-naming"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-build-a-multifile-assembly.md",
+            "redirect_url": "/framework/app-domains/build-multifile-assembly"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-build-a-single-file-assembly.md",
+            "redirect_url": "/framework/app-domains/build-single-file-assembly"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-create-a-public-private-key-pair.md",
+            "redirect_url": "/dotnet/standard/assembly/create-public-private-key-pair"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-determine-assembly-fully-qualified-name.md",
+            "redirect_url": "/dotnet/standard/assembly/find-fully-qualified-name"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-disable-the-strong-name-bypass-feature.md",
+            "redirect_url": "/dotnet/standard/assembly/disable-strong-name-bypass-feature"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-install-an-assembly-into-the-gac.md",
+            "redirect_url": "/dotnet/framework/app-domains/install-assembly-into-gac"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-obtain-type-and-member-information-from-an-assembly.md",
+            "redirect_url": "/dotnet/framework/reflection-and-codedom/get-type-member-information"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-reference-a-strong-named-assembly.md",
+            "redirect_url": "/dotnet/standard/assembly/reference-strong-named"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md",
+            "redirect_url": "/dotnet/standard/assembly/sign-strong-name"
+        },
+        {
+            "source_path": "docs/framework/app-domains/how-to-view-assembly-contents.md",
+            "redirect_url": "/dotnet/standard/assembly/view-contents"
+        },
+        {
+            "source_path": "docs/framework/app-domains/programming-with-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/program"
+        },
+        {
+            "source_path": "docs/framework/app-domains/resolve-assembly-loads.md",
+            "redirect_url": "/dotnet/standard/assembly/resolve-loads"
+        },
+        {
+            "source_path": "docs/framework/app-domains/set-assembly-attributes.md",
+            "redirect_url": "/dotnet/standard/assembly/set-attributes"
+        },
+        {
+            "source_path": "docs/framework/app-domains/strong-named-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/strong-named"
+        },
+        {
+            "source_path": "docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md",
+            "redirect_url": "/dotnet/standard/assembly/type-forwarding"
         },
         {
             "source_path": "docs/framework/common-client-technologies/client-application-services.md",
@@ -2203,6 +2352,10 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee264174(v%3dvs.100)"
         },
         {
+            "source_path": "docs/framework/winforms/advanced/encoding-and-windows-forms-globalization.md",
+            "redirect_url": "/previous-versions/visualstudio/visual-studio-2010/401dkz3c(v=vs.100)"
+        },
+        {
             "source_path": "docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md",
             "redirect_url": "/dotnet/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp"
         },
@@ -2260,6 +2413,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml-resources-define",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/advanced/xaml-overview-wpf.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/wpf/controls/datepicker-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/datepicker-styles-and-templates",
             "redirect_document_id": true
@@ -2275,6 +2438,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/controls/styling-and-templating.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/styles-templates-overview",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/wpf/controls/thumb-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/thumb-styles-and-templates",
             "redirect_document_id": true
@@ -2282,6 +2450,11 @@
         {
             "source_path": "docs/framework/wpf/controls/togglebutton-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/togglebutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/data/data-binding-overview.md",
+            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
             "redirect_document_id": true
         },
         {
@@ -2495,6 +2668,14 @@
             "source_path": "docs/standard/assembly-format.md",
             "redirect_url": "/dotnet/standard/assembly/file-format",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/assembly/friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/friend"
+        },
+        {
+            "source_path": "docs/standard/assembly/unloadability-howto.md",
+            "redirect_url": "/dotnet/standard/assembly/unloadability"
         },
         {
             "source_path": "docs/standard/asynchronous-programming-patterns/multithreaded-programming-with-the-event-based-asynchronous-pattern.md",
@@ -2803,6 +2984,10 @@
             "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
         },
         {
+            "source_path": "docs/standard/serialization/serialization-samples.md",
+            "redirect_url": "/dotnet/standard/serialization/index"
+        },
+        {
             "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
         },
@@ -3034,6 +3219,42 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/visual-basic/language-reference/error-messages/a-reference-was-created-to-embedded-interop-assembly-assembly1.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc40059",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/access-of-shared-member-through-an-instance-qualifying-expression.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc42025",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/addressof-operand-must-be-the-name-of-a-method-without-parentheses.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30577",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/anonymous-type-member-name-can-be-inferred-only-from-a-simple-or-qualified-name.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc36556",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/array-bounds-cannot-appear-in-type-specifiers.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30638",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/array-declared-as-for-loop-control-variable-cannot-be-declared.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc32039",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/array-subscript-expression-missing.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30306",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/arrays-declared-as-structure-members-cannot-be-declared-with-an-initial-size.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc31043",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/as-any-is-not-supported-in-declare-statements.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30828",
+        },
+        {
             "source_path": "docs/visual-basic/language-reference/queries/queries.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/queries/index",
             "redirect_document_id": true
@@ -3130,7 +3351,35 @@
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md",
-            "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
+            "redirect_url": "/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120)"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md",
+            "redirect_url": "/dotnet/standard/assembly/embed-types-visual-studio"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md",
+            "redirect_url": "/dotnet/standard/assembly/index"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-signed-friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/create-signed-friend"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/how-to-create-unsigned-friend-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/create-unsigned-friend"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/how-to-determine-if-a-file-is-an-assembly.md",
+            "redirect_url": "/dotnet/standard/assembly/identify"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/how-to-load-and-unload-assemblies.md",
+            "redirect_url": "/dotnet/standard/assembly/load-unload"
+        },
+        {
+            "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/how-to-share-an-assembly-with-other-applications.md",
+            "redirect_url": "/dotnet/framework/app-domains/how-to-share-an-assembly-with-other-applications"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/covariance-contravariance/covariance-and-contravariance.md",

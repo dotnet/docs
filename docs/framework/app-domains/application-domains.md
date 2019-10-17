@@ -58,7 +58,7 @@ Operating systems and runtime environments typically provide some form of isolat
   
 - If an assembly is not loaded domain-neutral, it must be JIT-compiled in every application domain in which it is loaded. However, the assembly can be unloaded from the process by unloading all the application domains in which it is loaded.  
   
- The runtime host determines whether to load assemblies as domain-neutral when it loads the runtime into a process. For managed applications, apply the <xref:System.LoaderOptimizationAttribute> attribute to the entry-point method for the process, and specify a value from the associated <xref:System.LoaderOptimization> enumeration. For unmanaged applications that host the common language runtime, specify the appropriate flag when you call the [CorBindToRuntimeEx Function](../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) method.  
+ The runtime host determines whether to load assemblies as domain-neutral when it loads the runtime into a process. For managed applications, apply the <xref:System.LoaderOptimizationAttribute> attribute to the entry-point method for the process, and specify a value from the associated <xref:System.LoaderOptimization> enumeration. For unmanaged applications that host the common language runtime, specify the appropriate flag when you call the [CorBindToRuntimeEx Function](../unmanaged-api/hosting/corbindtoruntimeex-function.md) method.  
   
  There are three options for loading domain-neutral assemblies:  
   
@@ -70,7 +70,7 @@ Operating systems and runtime environments typically provide some form of isolat
   
  JIT-compiled code cannot be shared for assemblies loaded into the load-from context, using the <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class, or loaded from images using overloads of the <xref:System.Reflection.Assembly.Load%2A> method that specify byte arrays.  
   
- Assemblies that have been compiled to native code by using the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md) can be shared between application domains, if they are loaded domain-neutral the first time they are loaded into a process.  
+ Assemblies that have been compiled to native code by using the [Ngen.exe (Native Image Generator)](../tools/ngen-exe-native-image-generator.md) can be shared between application domains, if they are loaded domain-neutral the first time they are loaded into a process.  
   
  JIT-compiled code for the assembly that contains the application entry point is shared only if all its dependencies can be shared.  
   
@@ -122,7 +122,7 @@ Operating systems and runtime environments typically provide some form of isolat
   
 ### Syntax  
   
-```  
+```env  
 COMPLUS_LoaderOptimization = 1  
 ```  
   
@@ -145,7 +145,7 @@ COMPLUS_LoaderOptimization = 1
 
  To force all assemblies not to be loaded as domain-neutral for the IISADMIN service can be achieved by appending `COMPLUS_LoaderOptimization=1` to the Environment’s Multi-String Value in the HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN key.  
   
-```  
+```env  
 Key = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN  
 Name = Environment  
 Type = REG_MULTI_SZ  

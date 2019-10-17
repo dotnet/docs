@@ -64,7 +64,7 @@ You may need to convert an object to a different type.
 - [Use pattern matching, the `as` and `is` operators to safely cast to a different type](../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).
 - [Define custom type conversions](../language-reference/operators/user-defined-conversion-operators.md).
 - [Determine if a type is a nullable value type](../programming-guide/nullable-types/how-to-identify-a-nullable-type.md).
-- [Convert between nullable and non-nullable value types](../programming-guide/nullable-types/using-nullable-types.md#conversion-from-a-nullable-type-to-an-underlying-type).
+- [Convert between nullable and non-nullable value types](../programming-guide/nullable-types/using-nullable-types.md#conversion-from-a-nullable-value-type-to-an-underlying-type).
 
 ## Equality and ordering comparisons
 

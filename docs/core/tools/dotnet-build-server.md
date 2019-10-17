@@ -17,7 +17,7 @@ ms.date: 04/24/2019
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet build-server shutdown [--msbuild] [--razor] [--vbcscompiler]
 dotnet build-server shutdown [-h|--help]
 dotnet build-server [-h|--help]
@@ -25,24 +25,24 @@ dotnet build-server [-h|--help]
 
 ## Commands
 
-* **`shutdown`**
+- **`shutdown`**
 
   Shuts down build servers that are started from dotnet. By default, all servers are shut down.
 
 ## Options
 
-* **`-h|--help`**
+- **`-h|--help`**
 
   Prints out a short help for the command.
 
-* **`--msbuild`**
+- **`--msbuild`**
 
   Shuts down the MSBuild build server.
 
-* **`--razor`**
+- **`--razor`**
 
   Shuts down the Razor build server.
 
-* **`--vbcscompiler`**
+- **`--vbcscompiler`**
 
   Shuts down the VB/C# compiler build server.

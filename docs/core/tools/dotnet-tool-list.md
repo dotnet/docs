@@ -13,7 +13,7 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet tool list <-g|--global>
 dotnet tool list <--tool-path>
 dotnet tool list <-h|--help>

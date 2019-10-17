@@ -12,6 +12,7 @@ Learn how to build an anomaly detection application for product sales data. This
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Load the data
 > * Create a transform for spike anomaly detection
 > * Detect spike anomalies with the transform
@@ -367,6 +368,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > * Load the data
 > * Train the model for spike anomaly detection
 > * Detect spike anomalies with the trained model

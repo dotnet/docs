@@ -31,17 +31,17 @@ In addition, WCF clients and services can use undeclared soap faults for debuggi
 
 The first step in creating an operation that handles error conditions is to decide under what conditions a client application should be informed about errors. Some operations have error conditions specific to their functionality. For example, a `PurchaseOrder` operation might return specific information to customers who are no longer permitted to initiate a purchase order. In other cases, such as a `Calculator` service, a more general `MathFault` SOAP fault may be able to describe all error conditions across an entire service. Once the error conditions of clients of your service are identified, a custom SOAP fault can be constructed and the operation can be marked as returning that SOAP fault when its corresponding error condition arises.
 
-For more information about this step of developing your service or client, see [Defining and Specifying Faults](../../../docs/framework/wcf/defining-and-specifying-faults.md).
+For more information about this step of developing your service or client, see [Defining and Specifying Faults](defining-and-specifying-faults.md).
 
 ## Clients and Services Handle SOAP Faults as Exceptions
 
 Identifying operation error conditions, defining custom SOAP faults, and marking those operations as returning those faults are the first steps in successful error handling in WCF applications. The next step is to properly implement the sending and receiving of these faults. Typically services send faults to inform client applications about error conditions, but duplex clients can also send SOAP faults to services.
 
-For more information, see [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md).
+For more information, see [Sending and Receiving Faults](sending-and-receiving-faults.md).
 
 ## Undeclared SOAP Faults and Debugging
 
-Declared SOAP faults are extremely useful for building robust, interoperable, distributed applications. However, in some cases it is useful for a service (or duplex client) to send an undeclared SOAP fault, one that is not mentioned in the Web Services Description Language (WSDL) for that operation. For example, when developing a service, unexpected situations can occur in which it is useful for debugging purposes to send information back to the client. In addition, you can set the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property to `true` to permit WCF clients to obtain information about internal service operation exceptions. Both sending individual faults and setting the debugging behavior properties are described in [Sending and Receiving Faults](../../../docs/framework/wcf/sending-and-receiving-faults.md).
+Declared SOAP faults are extremely useful for building robust, interoperable, distributed applications. However, in some cases it is useful for a service (or duplex client) to send an undeclared SOAP fault, one that is not mentioned in the Web Services Description Language (WSDL) for that operation. For example, when developing a service, unexpected situations can occur in which it is useful for debugging purposes to send information back to the client. In addition, you can set the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property or the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> property to `true` to permit WCF clients to obtain information about internal service operation exceptions. Both sending individual faults and setting the debugging behavior properties are described in [Sending and Receiving Faults](sending-and-receiving-faults.md).
 
 > [!IMPORTANT]
 > Because managed exceptions can expose internal application information, setting <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A?displayProperty=nameWithType> to `true` can permit WCF clients to obtain information about internal service operation exceptions, including personally identifiable or other sensitive information.
@@ -70,4 +70,4 @@ When deserializing a fault contract, WCF first attempts to match the fault contr
 - <xref:System.ServiceModel.FaultException.Reason%2A>
 - <xref:System.ServiceModel.FaultCode.SubCode%2A>
 - <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A>
-- [Defining and Specifying Faults](../../../docs/framework/wcf/defining-and-specifying-faults.md)
+- [Defining and Specifying Faults](defining-and-specifying-faults.md)

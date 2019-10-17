@@ -13,7 +13,7 @@ Suppresses display of the copyright banner and informational messages during com
   
 ## Syntax  
   
-```  
+```console  
 -nologo  
 ```  
   

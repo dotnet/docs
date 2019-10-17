@@ -48,7 +48,7 @@ This section of the .NET Framework documentation provides information about basi
  [Globalization and Localization](../../docs/standard/globalization-localization/index.md)  
  Provides information to help you design and develop world-ready applications.  
   
- Accessibility  
+ [Accessibility](../../docs/framework/ui-automation/index.md)
  Provides information about Microsoft UI Automation, which is an accessibility framework that addresses the needs of assistive technology products and automated test frameworks by providing programmatic access to information about the user interface (UI).  
   
  [Attributes](../../docs/standard/attributes/index.md)  

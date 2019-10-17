@@ -13,38 +13,38 @@ Regardless of the architecture approach used to design a business application, t
 
 The [N-Tier architecture pattern](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) is a mature architecture and simply refers to applications that separate various logical layers into separate physical tiers. N-Tier architecture is a physical implementation of N-Layer architecture. The most common implementation of this architecture includes:
 
-* A presentation tier, for example a web app.
-* An API or data access tier, such as a REST API.
-* A data tier, such as a SQL database.
+- A presentation tier, for example a web app.
+- An API or data access tier, such as a REST API.
+- A data tier, such as a SQL database.
 
 ![N-tier architecture](./media/n-tier-architecture.png)
 
 N-tier solutions have the following characteristics:
 
-* Projects are typically aligned with tiers.
-* Testing may be approached differently by tier.
-* Tiers provide layers of abstraction, for example the presentation tier is typically ignorant of the implementation details of the data tier.
-* Typically, layers only interact with adjacent layers.
-* Releases are often managed at the project, and therefore tier, level. A simple API change may require a new release of an entire middle tier.
+- Projects are typically aligned with tiers.
+- Testing may be approached differently by tier.
+- Tiers provide layers of abstraction, for example the presentation tier is typically ignorant of the implementation details of the data tier.
+- Typically, layers only interact with adjacent layers.
+- Releases are often managed at the project, and therefore tier, level. A simple API change may require a new release of an entire middle tier.
 
 This approach provides several benefits, including:
 
-* Isolation of the database (often the front end doesn't have direct access to the database back end).
-* Reuse of the API (for example, mobile, desktop, and web app clients can all reuse the same APIs).
-* Ability to scale out tiers independent of each other.
-* Refactoring isolation: one tier may be refactored without impacting other tiers.
+- Isolation of the database (often the front end doesn't have direct access to the database back end).
+- Reuse of the API (for example, mobile, desktop, and web app clients can all reuse the same APIs).
+- Ability to scale out tiers independent of each other.
+- Refactoring isolation: one tier may be refactored without impacting other tiers.
 
 ## On-premises and Infrastructure as a Service (IaaS)
 
 The traditional approach to hosting applications requires buying hardware and managing all of the software installations, including the operating system. Originally this involved expensive data centers and physical hardware. The challenges that come with operating physical hardware are many, including:
 
-* The need to buy excess for "just in case" or peak demand scenarios.
-* Securing physical access to the hardware.
-* Responsibility for hardware failure (such as disk failure).
-* Cooling.
-* Configuring routers and load balancers.
-* Power redundancy.
-* Securing software access.
+- The need to buy excess for "just in case" or peak demand scenarios.
+- Securing physical access to the hardware.
+- Responsibility for hardware failure (such as disk failure).
+- Cooling.
+- Configuring routers and load balancers.
+- Power redundancy.
+- Securing software access.
 
 ![IaaS approach](./media/iaas-approach.png)
 
@@ -62,10 +62,10 @@ Platform as a Service (PaaS) offers configured solutions that developers can plu
 
 PaaS addresses the challenges common to IaaS. PaaS allows the developer to focus on the code or database schema rather than how it gets deployed. Benefits of PaaS include:
 
-* Pay for use models that eliminate the overhead of investing in idle machines.
-* Direct deployment and improved DevOps, continuous integration (CI), and continuous delivery (CD) pipelines.
-* Automatic upgrades, updates, and security patches.
-* Push-button scale out and scale up (elastic scale).
+- Pay for use models that eliminate the overhead of investing in idle machines.
+- Direct deployment and improved DevOps, continuous integration (CI), and continuous delivery (CD) pipelines.
+- Automatic upgrades, updates, and security patches.
+- Push-button scale out and scale up (elastic scale).
 
 The main disadvantage of PaaS traditionally has been vendor lock-in. For example, some PaaS providers only support ASP.NET, Node.js, or other specific languages and platforms. Products like Azure App Service have evolved to address multiple platforms and support a variety of languages and frameworks for hosting web apps.
 
@@ -83,15 +83,15 @@ Containers are an interesting solution that enables PaaS-like benefits without t
 
 Benefits of containers include:
 
-* Lightweight and portable
-* Self-contained so no need to install dependencies
-* Provide a consistent environment regardless of the host (runs exactly same on a laptop as on a cloud server)
-* Can be provisioned quickly for scale-out
-* Can be restarted quickly to recover from failure
+- Lightweight and portable
+- Self-contained so no need to install dependencies
+- Provide a consistent environment regardless of the host (runs exactly same on a laptop as on a cloud server)
+- Can be provisioned quickly for scale-out
+- Can be restarted quickly to recover from failure
 
 A container runs on a container host (that in turn may run on a bare metal machine or a virtual machine). Multiple containers or instances of the same containers may run on a single host. For true failover and resiliency, containers must be scaled across hosts.
 
-For more information about Docker containers, see [What is Docker](../microservices/container-docker-introduction/docker-defined.md)?
+For more information about Docker containers, see [What is Docker](../microservices/container-docker-introduction/docker-defined.md).
 
 Managing containers across hosts typically requires an orchestration tool such as Kubernetes. Configuring and managing orchestration solutions may add additional overhead and complexity to projects. Fortunately, many cloud providers provide orchestration services through PaaS solutions to simplify the management of containers.
 
@@ -119,10 +119,10 @@ The following illustration diagrams four serverless components. An HTTP request 
 
 The advantages of serverless include:
 
-* **High density.** Many instances of the same serverless code can run on the same host compared to containers or virtual machines. The instances scale across multiple hosts scale out and resiliency.
-* **Micro-billing**. Most serverless providers bill based on serverless executions, enabling massive cost savings in certain scenarios.
-* **Instant scale**. Serverless can scale to match workloads automatically and quickly.
-* **Faster time to market** Developers focus on code and deploy directly to the serverless platform. Components can be released independently of each other.
+- **High density.** Many instances of the same serverless code can run on the same host compared to containers or virtual machines. The instances scale across multiple hosts scale out and resiliency.
+- **Micro-billing.** Most serverless providers bill based on serverless executions, enabling massive cost savings in certain scenarios.
+- **Instant scale.** Serverless can scale to match workloads automatically and quickly.
+- **Faster time to market.** Developers focus on code and deploy directly to the serverless platform. Components can be released independently of each other.
 
 Serverless is most often discussed in the context of compute, but can also apply to data. For example, [Azure SQL](https://docs.microsoft.com/azure/sql-database) and [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) both provide cloud databases that don't require you to configure host machines or clusters. This book focuses on serverless compute.
 
@@ -138,26 +138,26 @@ There's a broad spectrum of available choices for architecture, including a hybr
 |**Lifetime**|Months|Days to Months|Minutes to Days|Milliseconds to Minutes|
 |**Responsibility**|Applications, dependencies, runtime, and operating system|Applications and dependencies|Applications, dependencies, and runtime|Function
 
-* **Scale** refers to the unit that is used to scale the application
-* **Abstracts** refers to the layer that is abstracted by the implementation
-* **Unit** refers to the scope of what is deployed
-* **Lifetime** refers to the typical runtime of a specific instance
-* **Responsibility** refers to the overhead to build, deploy, and maintain the application
+- **Scale** refers to the unit that is used to scale the application
+- **Abstracts** refers to the layer that is abstracted by the implementation
+- **Unit** refers to the scope of what is deployed
+- **Lifetime** refers to the typical runtime of a specific instance
+- **Responsibility** refers to the overhead to build, deploy, and maintain the application
 
 The next chapter will focus on serverless architecture, use cases, and design patterns.
 
 ## Recommended resources
 
-* [Azure application architecture guide](https://docs.microsoft.com/azure/architecture/guide/)
-* [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
-* [Azure SQL](https://docs.microsoft.com/azure/sql-database)
-* [N-Tier architecture pattern](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)
-* [Kubernetes on Azure](https://docs.microsoft.com/azure/aks/intro-kubernetes)
-* [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)
-* [Virtual machine N-tier reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/n-tier)
-* [Virtual machines](https://docs.microsoft.com/azure/virtual-machines/)
-* [What is Docker?](../microservices/container-docker-introduction/docker-defined.md)
-* [Wingtip Tickets SaaS application](https://docs.microsoft.com/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
+- [Azure application architecture guide](https://docs.microsoft.com/azure/architecture/guide/)
+- [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
+- [Azure SQL](https://docs.microsoft.com/azure/sql-database)
+- [N-Tier architecture pattern](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)
+- [Kubernetes on Azure](https://docs.microsoft.com/azure/aks/intro-kubernetes)
+- [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)
+- [Virtual machine N-tier reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/n-tier)
+- [Virtual machines](https://docs.microsoft.com/azure/virtual-machines/)
+- [What is Docker?](../microservices/container-docker-introduction/docker-defined.md)
+- [Wingtip Tickets SaaS application](https://docs.microsoft.com/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
 
 >[!div class="step-by-step"]
 >[Previous](architecture-approaches.md)

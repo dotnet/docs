@@ -24,7 +24,7 @@ You can [view or download the sample code](https://github.com/dotnet/samples/tre
 
 Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
 
-```console
+```dotnetcli
 dotnet new console
 dotnet run
 ```

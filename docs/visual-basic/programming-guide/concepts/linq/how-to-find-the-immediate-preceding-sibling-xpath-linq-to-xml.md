@@ -37,7 +37,7 @@ Console.WriteLine(el1)
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Child3 />  
 ```  

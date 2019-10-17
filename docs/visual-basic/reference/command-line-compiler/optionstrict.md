@@ -14,7 +14,7 @@ Enforces strict type semantics to restrict implicit type conversions.
   
 ## Syntax  
   
-```  
+```console  
 -optionstrict[+ | -]  
 -optionstrict[:custom]  
 ```  

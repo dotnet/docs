@@ -18,19 +18,23 @@ The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service R
 
 ## Prerequisites
 
+<!-- markdownlint-disable MD025 -->
+
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
-* [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions
-* Your favorite code editor
+
+- [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later versions
+- Your favorite code editor
 
 # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
-* [.NET Core 1.0.4 SDK](https://dotnet.microsoft.com/download) or later versions
-* Your favorite code editor
+
+- [.NET Core 1.0.4 SDK](https://dotnet.microsoft.com/download) or later versions
+- Your favorite code editor
 
 ---
 
 ## Getting started
 
-The following example walks you through the steps required to add a web service reference to a .NET Core web project and invoke the service. You'll create a .NET Core web application named _HelloSvcutil_ and add a reference to a web service that implements the following contract:
+The following example walks you through the steps required to add a web service reference to a .NET Core web project and invoke the service. You'll create a .NET Core web application named *HelloSvcutil* and add a reference to a web service that implements the following contract:
 
 ```csharp
 [ServiceContract]
@@ -54,7 +58,7 @@ From a Windows, macOS, or Linux command window perform the following steps:
 
 2. Create a new C# web project in that directory using the [`dotnet new`](../tools/dotnet-new.md) command as follows:
 
-    ```console
+    ```dotnetcli
     dotnet new web
     ```
 
@@ -62,7 +66,7 @@ From a Windows, macOS, or Linux command window perform the following steps:
     <!-- markdownlint-disable MD023 -->
     # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
 
-    ```console
+    ```dotnetcli
     dotnet tool install --global dotnet-svcutil
     ```
 
@@ -77,7 +81,7 @@ From a Windows, macOS, or Linux command window perform the following steps:
 
     Then restore the _dotnet-svcutil_ package using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
 
-    ```console
+    ```dotnetcli
     dotnet restore
     ```
 
@@ -87,13 +91,13 @@ From a Windows, macOS, or Linux command window perform the following steps:
 
     # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
 
-    ```console
+    ```dotnetcli
     dotnet-svcutil http://contoso.com/SayHello.svc
     ```
 
     # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
 
-    ```console
+    ```dotnetcli
     dotnet svcutil http://contoso.com/SayHello.svc
     ```
 
@@ -105,7 +109,7 @@ The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The
 
 1. Restore the WCF packages using the [`dotnet restore`](../tools/dotnet-restore.md) command as follows:
 
-    ```console
+    ```dotnetcli
     dotnet restore
     ```
 
@@ -139,7 +143,7 @@ The generated file is saved as _HelloSvcutil/ServiceReference/Reference.cs_. The
 
 5. Run the application using the [`dotnet run`](../tools/dotnet-run.md) command as follows:
 
-    ```console
+    ```dotnetcli
     dotnet run
     ```
 
@@ -151,13 +155,13 @@ You should see the following output:
 For a detailed description of the `dotnet-svcutil` tool parameters, invoke the tool passing the help parameter as follows:
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
 
-```console
+```dotnetcli
 dotnet-svcutil --help
 ```
 
 # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
 
-```console
+```dotnetcli
 dotnet svcutil --help
 ```
 
@@ -169,8 +173,8 @@ If you have any questions or feedback, [open an issue on GitHub](https://github.
 
 ## Release notes
 
-* Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/dotnet-svcutil-notes.md) for updated release information, including known issues.
+- Refer to the [Release notes](https://github.com/dotnet/wcf/blob/master/release-notes/dotnet-svcutil-notes.md) for updated release information, including known issues.
 
 ## Information
 
-* [dotnet-svcutil NuGet Package](https://nuget.org/packages/dotnet-svcutil)
+- [dotnet-svcutil NuGet Package](https://nuget.org/packages/dotnet-svcutil)

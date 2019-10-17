@@ -42,6 +42,7 @@ In [regression](#regression), an evaluation metric that indicates how well data 
 ## Data
 
 Data is central to any machine learning application. In ML.NET data is represented by <xref:Microsoft.ML.IDataView> objects. Data view objects:
+
 - are made up of columns and rows
 - are lazily evaluated, that is they only load data when an operation calls for it
 - contain a schema that defines the type, format and length of each column
@@ -129,7 +130,7 @@ In [classification](#classification), the recall for a class is the number of it
  Regularization penalizes a linear model for being too complicated. There are two types of regularization:
 
 - $L_1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
-- $L_2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
+- $L_2$ regularization minimizes weight range for insignificant features. This is a more general process and is less sensitive to outliers.
 
 ## Regression
 

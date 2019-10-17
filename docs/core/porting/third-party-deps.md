@@ -14,8 +14,8 @@ To port your code to .NET Core or .NET Standard, you must understand your depend
 If you reference NuGet packages in your project, you need to verify if they're compatible with .NET Core.
 There are two ways to accomplish that:
 
-* [Using the NuGet Package Explorer app](#analyze-nuget-packages-using-nuget-package-explorer)
-* [Using the nuget.org site](#analyze-nuget-packages-using-nugetorg)
+- [Using the NuGet Package Explorer app](#analyze-nuget-packages-using-nuget-package-explorer)
+- [Using the nuget.org site](#analyze-nuget-packages-using-nugetorg)
 
 After analyzing the packages, if they're not compatible with .NET Core and only target .NET Framework, you can check if the [.NET Framework compatibility mode](#net-framework-compatibility-mode) can help with your porting process.
 

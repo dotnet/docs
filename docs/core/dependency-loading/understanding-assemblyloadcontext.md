@@ -84,13 +84,12 @@ When two <xref:System.Runtime.Loader.AssemblyLoadContext> instances contain type
 
 To complicate matters, exception messages about these mismatched types can be confusing. The types are referred to in the exception messages by their simple type names. The common exception message in this case would be of the form:
 
-```
-Object of type 'IsolatedType' cannot be converted to type 'IsolatedType'.
-```
+> Object of type 'IsolatedType' cannot be converted to type 'IsolatedType'.
 
 ### Debugging type conversion issues
 
 Given a pair of mismatched types it's important to also know:
+
 - Each type's <xref:System.Type.Assembly?displayProperty=nameWithType>
 - Each type's <xref:System.Runtime.Loader.AssemblyLoadContext>, which can be obtained via the <xref:System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(System.Reflection.Assembly)?displayProperty=nameWithType> function.
 

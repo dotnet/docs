@@ -47,7 +47,7 @@ class CustomFactory : WorkflowServiceHostFactory
 
  When this handler is invoked, the message can be retrieved by using the <xref:System.ServiceModel.UnknownMessageReceivedEventArgs.Message%2A> property of the <xref:System.ServiceModel.UnknownMessageReceivedEventArgs>, and will resemble the following message.
 
-```Output
+```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
   <s:Header>
     <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:8080/OrderService</To>
@@ -115,7 +115,7 @@ host.WorkflowExtensions.Add(new ConsoleTrackingParticipant());
 ## Common Context Exchange Correlation Issues
  Certain types of correlation require that a specific type of binding is used for the correlation to work correctly. Examples include request-reply correlation, which requires a two-way binding such as <xref:System.ServiceModel.BasicHttpBinding>, and context exchange correlation, which requires a context-based binding such as <xref:System.ServiceModel.BasicHttpContextBinding>. Most bindings support two-way operations so this is not a common issue for request-reply correlation, but there are only a handful of context-based bindings including <xref:System.ServiceModel.BasicHttpContextBinding>, <xref:System.ServiceModel.WSHttpContextBinding>, and <xref:System.ServiceModel.NetTcpContextBinding>. If one of these bindings is not used, the initial call to a workflow service will succeed, but subsequent calls will fail with the following <xref:System.ServiceModel.FaultException>.
 
-```Output
+```output
 There is no context attached to the incoming message for the service
 and the current operation is not marked with "CanCreateInstance = true".
 In order to communicate with this service check whether the incoming binding

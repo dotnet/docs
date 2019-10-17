@@ -45,7 +45,7 @@ Significant improvements in agility, portability, and control ultimately lead to
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) that automates the deployment of applications as portable, self-sufficient containers that can run in the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology. The company works in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
-![Docker deploys containers at all layers of the hybrid cloud](./media/image6.png)
+![Diagram showing how Docker deploys containers in the hybrid cloud.](./media/deploy-existing-net-apps-as-windows-containers/docker-deploys-containers-all-layers.png)
 
 **Figure 4-6.** Docker deploys containers at all layers of the hybrid cloud
 
@@ -77,7 +77,7 @@ For Linux, multiple distros are available and supported in official .NET Docker 
 
 Figure 4-7 shows OS versions that you can target, depending on the app's version of the .NET Framework.
 
-![Operating systems to target based on .NET Framework version](./media/image7.png)
+![Diagram showing what OS to target based on .NET Framework version.](./media/deploy-existing-net-apps-as-windows-containers/dotnet-framework-operating-systems.png)
 
 **Figure 4-7.** Operating systems to target based on .NET Framework version
 
@@ -132,11 +132,12 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 In previous sections, it’s been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
 However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application’s needs, you should choose one or another Azure product.
 
-![The container ecosystem in Azure](./media/image7.5.png)
+![Diagram of the container ecosystem in Azure.](./media/deploy-existing-net-apps-as-windows-containers/azure-container-ecosystem.png)
 
 **Figure 4-7.5.** The container ecosystem in Azure
 
 From the container ecosystem in Azure, the following products supporting containers that are considered infrastructure:
+
 - **Azure Container Instances (ACI)**
 - **Azure Virtual Machines** (With container's support)
 - **Azure Virtual Machine Scale Sets** (With container's support)

@@ -15,14 +15,19 @@ topic_type:
 
 Raises the <xref:System.Windows.Xps.XpsDocumentWriter.WritingCancelled> event.
 
-**Assembly:** System.Printing (in system.printing.dll)
+## Syntax
+
+```csharp
+public void raise__WritingCancelled (object value0, 
+  System.Windows.Documents.Serialization.WritingCancelledEventArgs value1);
+```
 
 ## Parameters
 
-- `value0`
+- `value0` <xref:System.Object>
   The source of the event.
 
-- `value1`
+- `value1` <xref:System.Windows.Documents.Serialization.WritingCancelledEventArgs>
   The event data.
 
 ## Requirements

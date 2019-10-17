@@ -174,7 +174,7 @@ The Membership and Role Provider sample demonstrates how a service can use the A
   
      The certificate is stored in My (Personal) store under the LocalMachine store location.  
   
-    ```bat  
+    ```console
     echo ************  
     echo Server cert setup starting  
     echo %SERVER_NAME%  

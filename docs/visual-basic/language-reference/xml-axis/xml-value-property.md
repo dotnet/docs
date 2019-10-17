@@ -12,16 +12,16 @@ ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
 ---
 # XML Value Property (Visual Basic)
 
-Provides access to the value of the first element of a collection of <xref:System.Xml.Linq.XElement> objects.  
-  
-## Syntax  
-  
-```vb  
-object.Value  
-```  
-  
-## Parts  
-  
+Provides access to the value of the first element of a collection of <xref:System.Xml.Linq.XElement> objects.
+
+## Syntax
+
+```vb
+object.Value
+```
+
+## Parts
+
 |Term|Definition|  
 |---|---|  
 |`object`|Required. Collection of <xref:System.Xml.Linq.XElement> objects.|  

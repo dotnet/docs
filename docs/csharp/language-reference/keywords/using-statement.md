@@ -16,7 +16,7 @@ The following example shows how to use the `using` statement.
 
 [!code-csharp[csrefKeywordsNamespace#4](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace.cs#4)]
 
-Beginning with C# 8.0, you can use the following alternative syntax for the `using` statement:
+Beginning with C# 8.0, you can use the following alternative syntax for the `using` statement that doesn't require braces:
 
 [!code-csharp[csrefKeywordsNamespace#New](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace.cs#ModernUsing)]
 
@@ -30,7 +30,7 @@ The `using` statement ensures that <xref:System.IDisposable.Dispose%2A> is calle
 
 [!code-csharp[csrefKeywordsNamespace#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace.cs#5)]
 
-The newer `using` statement translates to very similar code. The `try` block opens where the variable is declared. The `finally` block is added at the close of the enclosing block, typically at the end of a method.
+The newer `using` statement syntax translates to very similar code. The `try` block opens where the variable is declared. The `finally` block is added at the close of the enclosing block, typically at the end of a method.
 
 For more information about the `try`-`finally` statement, see the [try-finally](try-finally.md) topic.
 

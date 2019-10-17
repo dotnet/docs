@@ -145,7 +145,7 @@ This way, when you pull an image from a Windows host, it will pull the Windows v
 
 The Dockerfile is similar to a batch script. Similar to what you would do if you had to set up the machine from the command line.
 
-It starts with a base image that sets up the initial context, it's like the startup filesystem, that sits on top of the host OS. It's not an OS, but you can think of if like "the" OS inside the container.
+It starts with a base image that sets up the initial context, it's like the startup filesystem, that sits on top of the host OS. It's not an OS, but you can think of it like "the" OS inside the container.
 
 The execution of every command line creates a new layer on the filesystem with the changes from the previous one, so that, when combined, produce the resulting filesystem.
 
@@ -198,28 +198,37 @@ The initial Dockerfile might look something like this:
 
 And these are the details, line by line:
 
-<!-- markdownlint-disable MD029-->
-1. Begin a stage with a "small" runtime-only base image, call it **base** for reference.
-2. Create **/app** directory in the image.
-3. Expose port **80**.
-<!-- skip -->
-5. Begin a new stage with "large" image for building/publishing, call it **build** for reference.
-6. Create directory **/src** in the image.
-7. Up to line 16, copy referenced projects **.csproj** files, to be able to restore packages later.
-<!-- skip -->
-17. Restore packages for the **Catalog.API** project and the referenced projects.
-18. Copy **all directory tree for the solution** (except the files/directories included in the **.dockerignore** file) from to the **/src** directory in the image.
-19. Change current folder to **Catalog.API** project.
-20. Build project (and other project dependencies) and output to **/app** directory in the image.
-<!-- skip -->
-22. Begin a new stage continuing from build, call it **publish** for reference.
-23. Publish project (and dependencies) and output to **/app** directory in the image.
-<!-- skip -->
-25. Begin a new stage continuing from **base** and call it **final**
-26. Change current directory to **/app**
-27. Copy the **/app** directory from stage **publish** to the current directory
-28. Define the command to run when the container is started.
-<!-- markdownlint-enable MD029-->
+- **Line #1:** Begin a stage with a "small" runtime-only base image, call it **base** for reference.
+
+- **Line #2:** Create the **/app** directory in the image.
+
+- **Line #3:** Expose port **80**.
+
+- **Line #5:** Begin a new stage with the "large" image for building/publishing. Call it **build** for reference.
+
+- **Line #6:** Create directory **/src** in the image.
+
+- **Line #7:** Up to line 16, copy referenced **.csproj** project files to be able to restore packages later.
+
+- **Line #17:** Restore packages for the **Catalog.API** project and the referenced projects.
+
+- **Line #18:** Copy **all directory tree for the solution** (except the files/directories included in the **.dockerignore** file) to the **/src** directory in the image.
+
+- **Line #19:** Change the current folder to the **Catalog.API** project.
+
+- **Line #20:** Build the project (and other project dependencies) and output to the **/app** directory in the image.
+
+- **Line #22:** Begin a new stage continuing from the build. Call it **publish** for reference.
+
+- **Line #23:** Publish the project (and dependencies) and output to the **/app** directory in the image.
+
+- **Line #25:** Begin a new stage continuing from **base** and call it **final**.
+
+- **Line #26:** Change the current directory to **/app**.
+
+- **Line #27:** Copy the **/app** directory from stage **publish** to the current directory.
+
+- **Line #28:** Define the command to run when the container is started.
 
 Now let's explore some optimizations to improve the whole process performance that, in the case of eShopOnContainers, means about 22 minutes or more to build the complete solution in Linux containers.
 
@@ -233,9 +242,9 @@ COPY . .
 
 Then it would be just the same for every service, it would copy the whole solution and would create a larger layer but:
 
-1) The copy process would only be executed the first time (and when rebuilding if a file is changed) and would use the cache for all other services and
+1. The copy process would only be executed the first time (and when rebuilding if a file is changed) and would use the cache for all other services and
 
-2) Since the larger image occurs in an intermediate stage it, doesn't affect the final image size.
+2. Since the larger image occurs in an intermediate stage it, doesn't affect the final image size.
 
 The next significant optimization involves the `restore` command executed in line 17, which is also different for every service of eShopOnContainers. If you change that line to just:
 

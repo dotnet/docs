@@ -136,10 +136,7 @@ void IServiceBehavior.ApplyDispatchBehavior(ServiceDescription description, Serv
             if ((this.throttlingBehavior == null) &&   
                         (this.maxPoolSize != Int32.MaxValue))  
             {  
-                if (throttle == null)  
-                {  
-                    throttle = cd.ServiceThrottle;  
-                }  
+                throttle ??= cd.ServiceThrottle;
                 if (cd.ServiceThrottle == null)  
                 {  
                     throw new   

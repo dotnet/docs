@@ -22,7 +22,7 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
   
 3. Declare the connection and create an instance of it as part of the `Using` statement.  
   
-    ```  
+    ```vb  
     ' Insert the following line at the beginning of your source file.  
     Imports System.Data.SqlClient  
     Public Sub AccessSql(ByVal s As String)  

@@ -15,7 +15,7 @@ WCF supports serializing data in JSON format. This topic describes how to tell W
 ## Untyped Message Programming  
  When working directly with untyped Message objects, you must explicitly set the properties on the untyped message to serialize it as JSON. The following code snippet shows how to do this.  
   
-```  
+```csharp
  Message response = Message.CreateMessage(  
                   MessageVersion.None,    // No SOAP message version  
                              "*",                     // SOAP action, ignored since this is JSON  

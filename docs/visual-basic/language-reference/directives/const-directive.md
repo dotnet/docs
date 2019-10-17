@@ -21,7 +21,7 @@ Defines conditional compiler constants for Visual Basic.
   
 ## Syntax  
   
-```  
+```vb  
 #Const constname = expression  
 ```  
   

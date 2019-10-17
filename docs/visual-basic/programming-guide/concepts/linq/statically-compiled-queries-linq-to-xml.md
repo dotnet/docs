@@ -13,7 +13,7 @@ The following example shows how to get the descendant elements with a specified 
 
 The following is the equivalent XPath expression:
 
-```
+```vb
 //Address[@Type='Shipping']
 ```
 

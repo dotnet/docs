@@ -42,14 +42,16 @@
 # The .NET Architecture Guide:
 /docs/architecture/** @nishanil
 
-# The Desktop Guide:
-/docs/desktop/** @Thraka
+# The Desktop WPF Guide:
+/docs/desktop-wpf/** @Thraka
 
 ############### .NET Core ########################
 # What's New
 /docs/core/whats-new/** @rpetrusha
 # Deployment
 /docs/core/deploying/** @rpetrusha
+# Breaking changes
+/docs/core/compatibility/** @rpetrusha
 
 ################### .NET FRAMEWORK ##################
 # .NET Framework migration guide
@@ -85,3 +87,9 @@
 /docs/standard/base-types/formatting-types/** @rpetrusha
 # .NET threading
 /docs/standard/threading/** @rpetrusha
+
+################## E-BOOKS ##################
+# Blazor:
+/docs/architecture/blazor-for-web-forms-developers/** @danroth27
+# gRPC:
+/docs/architecture/grpc-for-wcf-developers/** @shirhatti

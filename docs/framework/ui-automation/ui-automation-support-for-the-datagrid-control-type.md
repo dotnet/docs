@@ -18,7 +18,7 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the DataGrid control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all data grid controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], [!INCLUDE[TLA#tla_win32](../../../includes/tlasharptla-win32-md.md)], or [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)].  
   
 ## Required UI Automation Tree Structure  
- The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to data grid controls and describes what can be contained in each view. For more information about the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md).  
+ The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to data grid controls and describes what can be contained in each view. For more information about the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Tree - Control View|[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Tree - Content View|  
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|  
@@ -26,7 +26,7 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
   
 <a name="Required_UI_Automation_Properties"></a>   
 ## Required UI Automation Properties  
- The following table lists the properties whose value or definition is especially relevant to data grid controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](../../../docs/framework/ui-automation/ui-automation-properties-for-clients.md).  
+ The following table lists the properties whose value or definition is especially relevant to data grid controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
 |Property|Value|Notes|  
 |--------------|-----------|-----------|  
@@ -42,7 +42,7 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty>|See notes.|The data grid control typically gets the value for its `Name` property from a static text label. If there is not a static text label an application developer must assign a value to for the `Name` property. The value of the `Name` property must never be the textual contents of the edit control.|  
   
 ## Required UI Automation Control Patterns  
- The following table lists the control patterns required to be supported by all data grid controls. For more information about control patterns, see [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md).  
+ The following table lists the control patterns required to be supported by all data grid controls. For more information about control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
 |Control Pattern|Support|Notes|  
 |---------------------|-------------|-----------|  
@@ -63,7 +63,7 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
   
 <a name="Required_UI_Automation_Events"></a>   
 ## Required UI Automation Events  
- The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all data grid controls. For more information about events, see [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md).  
+ The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all data grid controls. For more information about events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
 |[!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] Event|Support|Notes|  
 |---------------------------------------------------------------------------------|-------------|-----------|  
@@ -85,7 +85,7 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
 ## Date Grid Control Type Example  
  The following image illustrates a List View control that implements the DataGrid control type.  
   
- ![Graphic of a List View control with two data items](../../../docs/framework/ui-automation/media/uiauto-data-grid-detailed.GIF "uiauto_data_grid_detailed")  
+ ![Graphic of a List View control with two data items](./media/uiauto-data-grid-detailed.GIF "uiauto_data_grid_detailed")  
   
  The control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to the List View control is displayed below. The control patterns for each automation element are shown in parentheses.  
   
@@ -98,5 +98,5 @@ ms.assetid: a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a
 ## See also
 
 - <xref:System.Windows.Automation.ControlType.DataGrid>
-- [UI Automation Control Types Overview](../../../docs/framework/ui-automation/ui-automation-control-types-overview.md)
-- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+- [UI Automation Control Types Overview](ui-automation-control-types-overview.md)
+- [UI Automation Overview](ui-automation-overview.md)

@@ -22,7 +22,7 @@ Executes a series of statements that repeatedly refer to a single object or stru
 
 ## Syntax
 
-```
+```vb
 With objectExpression
     [ statements ]
 End With

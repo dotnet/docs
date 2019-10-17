@@ -22,46 +22,46 @@ A `null` instance of a structured type is an instance that does not exist. This 
   
 - Shaping `null` as a structured type:  
   
-    ```  
+    ```sql  
     TREAT (NULL AS StructuredType)  
     ```  
   
 - Upcasting of a base type to a derived type:  
   
-    ```  
+    ```sql  
     TREAT (BaseType AS DerivedType)  
     ```  
   
 - Outer join on false condition:  
   
-    ```  
+    ```sql  
     Collection1 LEFT OUTER JOIN Collection2  
     ON FalseCondition  
     ```  
   
      --or  
   
-    ```  
+    ```sql  
     Collection1 RIGHT OUTER JOIN Collection2  
     ON FalseCondition  
     ```  
   
      --or  
   
-    ```  
+    ```sql  
     Collection1 FULL OUTER JOIN Collection2  
     ON FalseCondition  
     ```  
   
 - Dereferencing a `null` reference:  
   
-    ```  
+    ```sql  
     DEREF(NullRef)  
     ```  
   
 - Obtaining ANYELEMENT from an empty collection:  
   
-    ```  
+    ```sql  
     ANYELEMENT(EmptyCollection)  
     ```  
   

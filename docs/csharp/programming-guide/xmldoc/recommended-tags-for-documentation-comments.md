@@ -41,5 +41,5 @@ The C# compiler processes documentation comments in your code and formats them a
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [/doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [-doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
 - [XML Documentation Comments](./index.md)

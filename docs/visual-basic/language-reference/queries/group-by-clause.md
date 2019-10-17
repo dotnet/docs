@@ -18,7 +18,7 @@ Groups the elements of a query result. Can also be used to apply aggregate funct
   
 ## Syntax  
   
-```  
+```vb  
 Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]  
   Into aggregateList  
 ```  
@@ -41,13 +41,13 @@ Group [ listField1 [, listField2 [...] ] By keyExp1 [, keyExp2 [...] ]
   
      Required. One or more expressions that identify how the groups are aggregated. To identify a member name for the grouped results, use the `Group` keyword, which can be in either of the following forms:  
   
-    ```  
+    ```vb  
     Into Group  
     ```  
   
      -or-  
   
-    ```  
+    ```vb  
     Into <alias> = Group  
     ```  
   

@@ -17,8 +17,11 @@ This sample demonstrates how to replace the message filters that Windows Communi
   
  These filters can be changed using a behavior. In the sample, the service creates an <xref:System.ServiceModel.Description.IEndpointBehavior> that replaces the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> and <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> on the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher>:  
   
-```csharp  
-class FilteringEndpointBehavior : IEndpointBehavior …  
+```csharp
+class FilteringEndpointBehavior : IEndpointBehavior
+{
+    //...
+}
 ```  
   
  Two address filters are defined:  

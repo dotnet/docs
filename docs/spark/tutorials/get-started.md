@@ -14,6 +14,7 @@ This tutorial teaches you how to run a .NET for Apache Spark app using .NET Core
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * Prepare your Windows environment for .NET for Apache Spark
 > * Download the **Microsoft.Spark.Worker**
 > * Build and run a simple .NET for Apache Spark application
@@ -62,7 +63,7 @@ Double check that you can run `dotnet`, `java`, `mvn`, `spark-shell` from your c
 
 1. Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub Releases page to your local machine. For example, you might download it to the path, `c:\bin\Microsoft.Spark.Worker\`.
 
-2. Create a [new environment variable](https://www.java.com/en/download/help/path.xml) called `DotnetWorkerPath` and set it to the directory where you downloaded and extracted the **Microsoft.Spark.Worker**. For example, `c:\bin\Microsoft.Spark.Worker`.
+2. Create a [new environment variable](https://www.java.com/en/download/help/path.xml) called `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the **Microsoft.Spark.Worker**. For example, `c:\bin\Microsoft.Spark.Worker`.
 
 ## Clone the .NET for Apache Spark GitHub repo
 
@@ -120,6 +121,7 @@ Congratulations! You successfully authored and ran a .NET for Apache Spark app.
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > * Prepare your Windows environment for .NET for Apache Spark
 > * Download the **Microsoft.Spark.Worker**
 > * Build and run a simple .NET for Apache Spark application

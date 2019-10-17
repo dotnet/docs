@@ -13,7 +13,7 @@ ms.date: 06/13/2018
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet sln [<SOLUTION_NAME>] add <PROJECT> <PROJECT> ...
 dotnet sln [<SOLUTION_NAME>] add <GLOBBING_PATTERN>
 dotnet sln [<SOLUTION_NAME>] remove <PROJECT> <PROJECT> ...
@@ -28,7 +28,7 @@ The `dotnet sln` command provides a convenient way to add, remove, and list proj
 
 To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command, like in the following example:
 
-```console
+```dotnetcli
 dotnet new sln
 ```
 

@@ -78,7 +78,7 @@ As shown in Figure 7-15, starting from the same domain event, you can handle mul
 
 The event handlers are typically in the application layer, because you will use infrastructure objects like repositories or an application API for the microservice’s behavior. In that sense, event handlers are similar to command handlers, so both are part of the application layer. The important difference is that a command should be processed only once. A domain event could be processed zero or *n* times, because it can be received by multiple receivers or event handlers with a different purpose for each handler.
 
-Having an open number of handlers per domain event allows you to add as many domain rules without as needed, without affecting  current code. For instance, implementing the following business rule might be as easy as adding a few event handlers (or even just one):
+Having an open number of handlers per domain event allows you to add as many domain rules as needed, without affecting  current code. For instance, implementing the following business rule might be as easy as adding a few event handlers (or even just one):
 
 > When the total amount purchased by a customer in the store, across any number of orders, exceeds $6,000, apply a 10% off discount to every new order and notify the customer with an email about that discount for future orders.
 

@@ -14,10 +14,10 @@ ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
 # \<clear> Element for authenticationModules (Network Settings)
 Clears all authentication modules from the application.  
   
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-\<clear>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**  
   
 ## Syntax  
   

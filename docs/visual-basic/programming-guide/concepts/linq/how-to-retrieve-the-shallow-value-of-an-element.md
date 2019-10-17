@@ -64,7 +64,7 @@ End Module
 
 This example produces the following output:
 
-```
+```console
 Column  Name="CustomerId"   =Customer.CustomerId.Heading
 Column  Name="Name"         =Customer.Name.Heading
 Column  Name="CustomerId"   =Customer.CustomerId

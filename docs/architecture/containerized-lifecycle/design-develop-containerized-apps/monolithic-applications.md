@@ -11,11 +11,11 @@ To manage this model, you deploy a single container to represent the application
 
 Following the principal that a container does one thing only, and does it in one process, the monolithic pattern is in conflict. You can include multiple components/libraries or internal layers within each container, as illustrated in Figure 4-1.
 
-![A monolithic app has all or most of its functionality within a single process or container and it's componentized in internal layers or libraries.](./media/image1.png)
+![Diagram showing a monolithic app that scales out by cloning the app.](./media/monolithic-applications/monolithic-application-architecture-example.png)
 
 **Figure 4-1.** An example of monolithic application architecture
 
-The downside to this approach comes if or when the application grows, requiring it to scale. If the entire application scaled, it's not really a problem. However, in most cases, a few parts of the application are the choke points that require scaling, whereas other components are used less.
+A monolithic app has all or most of its functionality within a single process or container and it's componentized in internal layers or libraries. The downside to this approach comes if or when the application grows, requiring it to scale. If the entire application scaled, it's not really a problem. However, in most cases, a few parts of the application are the choke points that require scaling, whereas other components are used less.
 
 Using the typical e-commerce example, what you likely need is to scale the product information component. Many more customers browse products than purchase them. More customers use their basket than use the payment pipeline. Fewer customers add comments or view their purchase history. And you likely have only a handful of employees, in a single region, that need to manage the content and marketing campaigns. By scaling the monolithic design, all of the code is deployed multiple times.
 
@@ -25,7 +25,7 @@ The monolithic approach is common, and many organizations are developing with th
 
 From an infrastructure perspective, each server can run many applications within the same host and have an acceptable ratio of efficiency in your resources usage, as shown in Figure 4-2.
 
-![A single host can run multiple apps in separate containers.](./media/image2.png)
+![A diagram showing one host with multiple apps in separate containers.](./media/monolithic-applications/host-with-multiple-apps-containers.png)
 
 **Figure 4-2.** A host running multiple apps/containers
 
@@ -37,9 +37,9 @@ You can also use [Azure App Services](https://azure.microsoft.com/services/app-s
 
 You can deploy multiple VMs as Docker hosts and run any number of containers per VM. Then, by using an Azure Load Balancer, as illustrated in the Figure 4-3, you can manage scaling.
 
-![A monolithic app can be scaled-out to different hosts where each one is running the app in containers.](./media/image3.png)
+![A diagram showing a monolithic app scaled out to different hosts.](./media/monolithic-applications/multiple-hosts-from-single-docker-container.png)
 
-**Figure 4-3**. Multiple hosts scaling-out a single Docker application apps/containers
+**Figure 4-3**. Multiple hosts scaling out a single Docker application
 
 You can manage the deployment of the hosts themselves via traditional deployment techniques.
 
@@ -65,7 +65,7 @@ Using Azure App Service is intuitive and you can get up and running quickly beca
 
 Now, as shown in Figure 4-4, when using Visual Studio 2017, container support in Azure App Service gives you the ability to include whatever you want in your app environment. If you added a dependency to your app, because you're running it in a container, you get the capability of including those dependencies in your Dockerfile or Docker image.
 
-![View of Visual Studio wizard to publish to an Azure app service, highlighting the selector for the container registry.](./media/image4.png)
+![Screenshot of Create App Service dialog showing a Container Registry.](./media/monolithic-applications/publish-azure-app-service-container.png)
 
 **Figure 4-4**. Publishing a container to Azure App Service from Visual Studio apps/containers
 

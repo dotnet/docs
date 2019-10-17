@@ -39,5 +39,5 @@ The `pInvokeLog` managed debugging assistant (MDA) is activated for each unique 
   
 ## See also
 
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Consuming Unmanaged DLL Functions](../interop/consuming-unmanaged-dll-functions.md)

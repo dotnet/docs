@@ -187,7 +187,7 @@ services:
 
 So, to run the functional/integration tests you must first run this command, from the solution test folder:
 
-``` console
+```console
 docker-compose -f docker-compose-test.yml -f docker-compose-test.override.yml up
 ```
 

@@ -37,7 +37,8 @@ The following table lists the C# operators starting with the highest precedence 
 | Operators | Category or name |
 | --------- | ---------------- |
 | [x.y](member-access-operators.md#member-access-operator-), [x?.y](member-access-operators.md#null-conditional-operators--and-), [x?[y]](member-access-operators.md#null-conditional-operators--and-), [f(x)](member-access-operators.md#invocation-operator-), [a&#91;i&#93;](member-access-operators.md#indexer-operator-), [x++](arithmetic-operators.md#increment-operator-), [x--](arithmetic-operators.md#decrement-operator---), [new](new-operator.md), [typeof](type-testing-and-cast.md#typeof-operator), [checked](../keywords/checked.md), [unchecked](../keywords/unchecked.md), [default](default.md), [nameof](nameof.md), [delegate](delegate-operator.md), [sizeof](sizeof.md), [stackalloc](stackalloc.md), [x->y](pointer-related-operators.md#pointer-member-access-operator--) | Primary |
-| [+x](arithmetic-operators.md#unary-plus-and-minus-operators), [-x](arithmetic-operators.md#unary-plus-and-minus-operators), [\!x](boolean-logical-operators.md#logical-negation-operator-), [~x](bitwise-and-shift-operators.md#bitwise-complement-operator-), [++x](arithmetic-operators.md#increment-operator-), [--x](arithmetic-operators.md#decrement-operator---), [(T)x](type-testing-and-cast.md#cast-operator-), [await](await.md), [&x](pointer-related-operators.md#address-of-operator-), [*x](pointer-related-operators.md#pointer-indirection-operator-), [true and false](true-false-operators.md) | Unary |
+| [+x](arithmetic-operators.md#unary-plus-and-minus-operators), [-x](arithmetic-operators.md#unary-plus-and-minus-operators), [\!x](boolean-logical-operators.md#logical-negation-operator-), [~x](bitwise-and-shift-operators.md#bitwise-complement-operator-), [++x](arithmetic-operators.md#increment-operator-), [--x](arithmetic-operators.md#decrement-operator---), [^x](member-access-operators.md#index-from-end-operator-), [(T)x](type-testing-and-cast.md#cast-operator-), [await](await.md), [&x](pointer-related-operators.md#address-of-operator-), [*x](pointer-related-operators.md#pointer-indirection-operator-), [true and false](true-false-operators.md) | Unary |
+| [x..y](member-access-operators.md#range-operator-) | Range |
 | [x * y](arithmetic-operators.md#multiplication-operator-), [x / y](arithmetic-operators.md#division-operator-), [x % y](arithmetic-operators.md#remainder-operator-) | Multiplicative|
 | [x + y](arithmetic-operators.md#addition-operator-), [x – y](arithmetic-operators.md#subtraction-operator--) | Additive |
 | [x \<\<  y](bitwise-and-shift-operators.md#left-shift-operator-), [x >> y](bitwise-and-shift-operators.md#right-shift-operator-) | Shift |
@@ -56,8 +57,8 @@ The following table lists the C# operators starting with the highest precedence 
 
 When operators have the same precedence, associativity of the operators determines the order in which the operations are performed:
 
-- *Left-associative* operators are evaluated in order from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operator `??`](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
-- *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operator `??`, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
+- *Left-associative* operators are evaluated in order from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operators](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
+- *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operators, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
 
 Use parentheses to change the order of evaluation imposed by operator associativity:
 
@@ -78,7 +79,7 @@ Unrelated to operator precedence and associativity, operands in an expression ar
 |`a / b + c * d`|a, b, /, c, d, *, +|
 |`a / (b + c) * d`|a, b, c, +, /, d, *|
 
-Typically, all operator operands are evaluated. Some operators evaluate operands conditionally. That is, the value of the first operand of such an operator defines if (or which) other operands should be evaluated. These operators are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operator `??`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md). See the description of each operator for more details.
+Typically, all operator operands are evaluated. Some operators evaluate operands conditionally. That is, the value of the first operand of such an operator defines if (or which) other operands should be evaluated. These operators are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operators `??` and `??=`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md). See the description of each operator for more details.
 
 ## C# language specification
 

@@ -62,7 +62,7 @@ None.
   
 ## See also
 
-- [Runtime Settings Schema](index.md)
-- [Configuration File Schema](../index.md)
-- [Specifying an Assembly's Location](../../specify-assembly-location.md)
-- [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)
+- [Runtime settings schema](index.md)
+- [Configuration file schema](../index.md)
+- [Specify an assembly's location](../../../../standard/assembly/location.md)
+- [How the runtime locates assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

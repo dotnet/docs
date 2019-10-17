@@ -36,7 +36,7 @@ Declares and allocates storage space for one or more variables.
 
 ## Syntax
 
-```
+```vb
 [ <attributelist> ] [ accessmodifier ] [[ Shared ] [ Shadows ] | [ Static ]] [ ReadOnly ]
 Dim [ WithEvents ] variablelist
 ```

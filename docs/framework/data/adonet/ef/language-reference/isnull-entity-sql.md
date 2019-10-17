@@ -8,7 +8,7 @@ Determines if a query expression is null.
   
 ## Syntax  
   
-```  
+```sql  
 expression IS [ NOT ] NULL  
 ```  
   
@@ -25,7 +25,7 @@ expression IS [ NOT ] NULL
 ## Remarks  
  Use `IS NULL` to determine if the element of an outer join is null:  
   
-```  
+```sql  
 select c   
       from LOB.Customers as c left outer join LOB.Orders as o   
                               on c.ID = o.CustomerID    
@@ -34,7 +34,7 @@ select c
   
  Use `IS NULL` to determine if a member has an actual value:  
   
-```  
+```sql  
 select c from LOB.Customer as c where c.DOB is not null  
 ```  
   
@@ -57,7 +57,7 @@ select c from LOB.Customer as c where c.DOB is not null
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#ISNULL](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#isnull)]  
+ [!code-sql[DP EntityServices Concepts#ISNULL](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#isnull)]  
   
 ## See also
 

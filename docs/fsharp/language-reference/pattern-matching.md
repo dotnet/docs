@@ -89,7 +89,7 @@ The use of the named field is optional, so in the previous example, both `Circle
 
 When you specify multiple fields, use the semicolon (;) as a separator.
 
-```
+```fsharp
 match shape with
 | Rectangle(height = h; width = w) -> printfn "Rectangle with height %f and width %f" h w
 | _ -> ()

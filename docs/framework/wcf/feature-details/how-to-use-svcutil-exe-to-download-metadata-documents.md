@@ -23,7 +23,7 @@ You can use Svcutil.exe to download metadata from running services and to save t
   
 2. At the command prompt, launch the tool using the following format.  
   
-    ```  
+    ```console
     svcutil.exe /t:metadata  <url>* | <epr>  
     ```  
   
@@ -36,7 +36,7 @@ You can use Svcutil.exe to download metadata from running services and to save t
 ## Example  
  The following command downloads metadata documents from a running service.  
   
-```  
+```console
 svcutil /t:metadata http://service/metadataEndpoint  
 ```  
   

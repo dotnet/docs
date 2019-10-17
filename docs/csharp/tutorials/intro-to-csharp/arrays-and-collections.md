@@ -9,13 +9,13 @@ ms.custom: mvc
 This introductory tutorial provides an introduction to the C# language and the basics of the <xref:System.Collections.Generic.List%601>
 class.
 
-This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in [Become familiar with the development tools](local-environment.md), with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Windows, Linux, or macOS. A quick overview of the commands you'll use is in [Become familiar with the development tools](local-environment.md), with links to more details.
 
 ## A basic list example
 
-Create a directory named **list-tutorial**. Make that the current directory and run `dotnet new console`.
+Create a directory named *list-tutorial*. Make that the current directory and run `dotnet new console`.
 
-Open **Program.cs** in your favorite editor, and replace the existing code with the following:
+Open *Program.cs* in your favorite editor, and replace the existing code with the following:
 
 ```csharp
 using System;
@@ -37,7 +37,7 @@ namespace list_tutorial
 }
 ```
 
-Replace `<name>` with your name. Save **Program.cs**. Type `dotnet run` in your console window to try it.
+Replace `<name>` with your name. Save *Program.cs*. Type `dotnet run` in your console window to try it.
 
 You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts that you've learned in earlier tutorials to loop through the list.
 

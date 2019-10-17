@@ -28,7 +28,7 @@ ms.assetid: e4e5e4e8-527f-44d1-92fa-8904a08784ea
   
 1. Once the classes are generated, they can be used in code like any other classes. The following code example returns a new instance of the `rssChannelImage` class.  
   
-    ```  
+    ```csharp  
     var channelImage = new rssChannelImage()   
     {   
         title = "MyImage",   

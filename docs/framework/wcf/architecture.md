@@ -11,7 +11,7 @@ ms.assetid: a3bcb0a1-56ea-4ba6-9736-d260d90dade5
 The following graphic illustrates the major layers of the Windows Communication Foundation (WCF) architecture.  
   
 ## WCF Architecture  
- ![The WCF Architecture](../../../docs/framework/wcf/media/wcf-architecture.gif "WCF_Architecture")  
+ ![The WCF Architecture](./media/wcf-architecture.gif "WCF_Architecture")  
   
 ### Contracts and Descriptions  
  Contracts define various aspects of the message system. The data contract describes every parameter that makes up every message that a service can create or consume. The message parameters are defined by XML Schema definition language (XSD) documents, enabling any system that understands XML to process the documents. The message contract defines specific message parts using SOAP protocols, and allows finer-grained control over parts of the message, when interoperability demands such precision. The service contract specifies the actual method signatures of the service, and is distributed as an interface in one of the supported programming languages, such as Visual Basic or Visual C#.  
@@ -41,5 +41,5 @@ The following graphic illustrates the major layers of the Windows Communication 
   
 ## See also
 
-- [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)
-- [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)
+- [What Is Windows Communication Foundation](whats-wcf.md)
+- [Fundamental Windows Communication Foundation Concepts](fundamental-concepts.md)

@@ -1,9 +1,9 @@
 ---
 title: "SByte Data Type (Visual Basic)"
 ms.date: 04/20/2017
-f1_keywords: 
+f1_keywords:
   - "vb.sbyte"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "numbers [Visual Basic], whole"
   - "whole numbers"
   - "integral data types [Visual Basic]"
@@ -17,8 +17,8 @@ ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
 ---
 # SByte data type (Visual Basic)
 
-Holds signed 8-bit (1-byte) integers that range in value from -128 through 127.  
-  
+Holds signed 8-bit (1-byte) integers that range in value from -128 through 127.
+
 ## Remarks
 
 Use the `SByte` data type to contain integer values that do not require the full data width of `Integer` or even the half data width of `Short`. In some cases, the common language runtime might be able to pack your `SByte` variables closely together and save memory consumption.
@@ -26,19 +26,19 @@ Use the `SByte` data type to contain integer values that do not require the full
 The default value of `SByte` is 0.
 
 ## Literal assignments
-  
+
 You can declare and initialize an `SByte` variable by assigning it a decimal literal, a hexadecimal literal, an octal literal, or (starting with Visual Basic 2017) a binary literal.
 
 In the following example, integers equal to -102 that are represented as decimal, hexadecimal, and binary literals are assigned to `SByte` values. This example requires that you compile with the `/removeintchecks` compiler switch.
 
-[!code-vb[SByte](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#SByte)]  
+[!code-vb[SByte](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#SByte)]
 
-> [!NOTE] 
+> [!NOTE]
 > You use the prefix `&h` or `&H` to denote a hexadecimal literal, the prefix `&b` or `&B` to denote a binary literal, and the prefix `&o` or `&O` to denote an octal literal. Decimal literals have no prefix.
 
 Starting with Visual Basic 2017, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
 
-[!code-vb[SByteSeparator](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#SByteS)]  
+[!code-vb[SByteSeparator](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#SByteS)]
 
 Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
 
@@ -57,15 +57,15 @@ If the integer literal is outside the range of `SByte` (that is, if it is less t
    [!code-vb[SByteTypeChars](../../../../samples/snippets/visualbasic/language-reference/data-types/sbyte-assignment.vb#1)]
 
 ## Programming tips
-  
+
 - **CLS Compliance.** The `SByte` data type is not part of the [Common Language Specification](https://www.ecma-international.org/publications/standards/Ecma-335.htm) (CLS), so CLS-compliant code cannot consume a component that uses it.
 
 - **Widening.** The `SByte` data type widens to `Short`, `Integer`, `Long`, `Decimal`, `Single`, and `Double`. This means you can convert `SByte` to any of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.
-  
-- **Type Characters.** `SByte` has no literal type character or identifier type character.  
-  
+
+- **Type Characters.** `SByte` has no literal type character or identifier type character.
+
 - **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.SByte?displayProperty=nameWithType> structure.
-  
+
 ## See also
 
 - <xref:System.SByte?displayProperty=nameWithType>

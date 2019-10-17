@@ -10,7 +10,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
  A WCF service is configurable using the .NET Framework configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a WCF service. The elements allow you to change details such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis. In addition, WCF includes several system-provided elements that allow you to quickly select the most basic features for a service. Starting with [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)], WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with some standard endpoints and default binding/behavior. In practice, writing configuration is a major part of programming WCF applications.  
   
- For more information, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md). For a list of the most commonly used elements, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+ For more information, see [Configuring Bindings for Services](configuring-bindings-for-wcf-services.md). For a list of the most commonly used elements, see [System-Provided Bindings](system-provided-bindings.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).  
   
 > [!IMPORTANT]
 > When deploying side by side scenarios where two different versions of a service are deployed, it is necessary to specify partial names of assemblies referenced in configuration files. This is because the configuration file is shared across all versions of a service and they could be running under different versions of the .NET Framework.  
@@ -63,7 +63,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<services> Element  
  The `services` element contains the specifications for all services the application hosts. Starting with the simplified configuration model in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this section is optional.  
   
- [\<services>](../../../docs/framework/configure-apps/file-schema/wcf/services.md)  
+ [\<services>](../configure-apps/file-schema/wcf/services.md)  
   
 ### The \<service> Element  
  Each service has these attributes:  
@@ -72,7 +72,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 - `behaviorConfiguration`. Specifies the name of one of the `behavior` elements found in the `behaviors` element. The specified behavior governs actions such as whether the service allows impersonation. If its value is the empty name or no `behaviorConfiguration` is provided then the default set of service behaviors is added to the service.  
   
-- [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)  
+- [\<service>](../configure-apps/file-schema/wcf/service.md)  
   
 ### The \<endpoint> Element  
  Each endpoint requires an address, a binding, and a contract, which are represented by the following attributes:  
@@ -90,24 +90,24 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 ### The \<bindings> Element  
  The `bindings` element contains the specifications for all bindings that can be used by any endpoint defined in any service.  
   
- [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)  
+ [\<bindings>](../configure-apps/file-schema/wcf/bindings.md)  
   
 ### The \<binding> Element  
- The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)) or a custom binding (see [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
+ The `binding` elements contained in the `bindings` element can be either one of the system-provided bindings (see [System-Provided Bindings](system-provided-bindings.md)) or a custom binding (see [Custom Bindings](./extending/custom-bindings.md)). The `binding` element has a `name` attribute that correlates the binding with the endpoint specified in the `bindingConfiguration` attribute of the `endpoint` element. If no name is specified then that binding corresponds to the default of that binding type.  
   
 For more information about configuring services and clients, see [Configuring WCF services](configuring-services.md).
   
- [\<binding>](../../../docs/framework/misc/binding.md)  
+ [\<binding>](../misc/binding.md)  
   
 ### The \<behaviors> Element  
  This is a container element for the `behavior` elements that define the behaviors for a service.  
   
- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)  
+ [\<behaviors>](../configure-apps/file-schema/wcf/behaviors.md)  
   
 ### The \<behavior> Element  
  Each `behavior` element is identified by a `name` attribute and provides either a system-provided behavior, such as <`throttling`>, or a custom behavior. If no name is given then that behavior element corresponds to the default service or endpoint behavior.  
   
- [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md)  
+ [\<behavior>](../configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md)  
   
 ## How to Use Binding and Behavior Configurations  
  WCF makes it easy to share configurations between endpoints using a reference system in configuration. Rather than directly assigning configuration values to an endpoint, binding-related configuration values are grouped in `bindingConfiguration` elements in the `<binding>` section. A binding configuration is a named group of settings on a binding. Endpoints can then reference the `bindingConfiguration` by name.  
@@ -142,7 +142,7 @@ For more information about configuring services and clients, see [Configuring WC
 </configuration>  
 ```  
   
- The `name` of the `bindingConfiguration` is set in the `<binding>` element. The `name` must be a unique string within the scope of the binding type—in this case the [<basicHttpBinding\>](../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md), or an empty value to refer to the default binding. The endpoint links to the configuration by setting the `bindingConfiguration` attribute to this string.  
+ The `name` of the `bindingConfiguration` is set in the `<binding>` element. The `name` must be a unique string within the scope of the binding type—in this case the [<basicHttpBinding\>](../configure-apps/file-schema/wcf/basichttpbinding.md), or an empty value to refer to the default binding. The endpoint links to the configuration by setting the `bindingConfiguration` attribute to this string.  
   
  A `behaviorConfiguration` is implemented the same way, as illustrated in the following sample.  
   
@@ -175,7 +175,7 @@ For more information about configuring services and clients, see [Configuring WC
 </configuration>  
 ```  
   
- Note that the default set of service behaviors are added to the service. This system allows endpoints to share common configurations without redefining the settings. If machine-wide scope is required, create the binding or behavior configuration in Machine.config. The configuration settings are available in all App.config files. The [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md) makes it easy to create configurations.  
+ Note that the default set of service behaviors are added to the service. This system allows endpoints to share common configurations without redefining the settings. If machine-wide scope is required, create the binding or behavior configuration in Machine.config. The configuration settings are available in all App.config files. The [Configuration Editor Tool (SvcConfigEditor.exe)](configuration-editor-tool-svcconfigeditor-exe.md) makes it easy to create configurations.  
   
 ## Behavior Merge  
  The behavior merge feature makes it easier to manage behaviors when you want a set of common behaviors to be used consistently. This feature allows you to specify behaviors at different levels of the configuration hierarchy and have services inherit behaviors from multiple levels of the configuration hierarchy. To illustrate how this works assume you have the following virtual directory layout in IIS:  
@@ -258,7 +258,7 @@ For more information about configuring services and clients, see [Configuring WC
   
 ## See also
 
-- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
+- [Simplified Configuration](simplified-configuration.md)
 - [Configuring WCF services](configuring-services.md)
-- [\<service>](../../../docs/framework/configure-apps/file-schema/wcf/service.md)
-- [\<binding>](../../../docs/framework/misc/binding.md)
+- [\<service>](../configure-apps/file-schema/wcf/service.md)
+- [\<binding>](../misc/binding.md)

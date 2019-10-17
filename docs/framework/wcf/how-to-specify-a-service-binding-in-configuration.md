@@ -7,15 +7,15 @@ dev_langs:
 ms.assetid: 885037f7-1c2b-4d7a-90d9-06b89be172f2
 ---
 # How to: Specify a Service Binding in Configuration
-In this example, an `ICalculator` contract is defined for a basic calculator service, the service is implemented in the `CalculatorService` class, and then its endpoint is configured in the Web.config file, where it is specified that the service uses the <xref:System.ServiceModel.BasicHttpBinding>. For a description of how to configure this service using code instead of a configuration, see [How to: Specify a Service Binding in Code](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-code.md).  
+In this example, an `ICalculator` contract is defined for a basic calculator service, the service is implemented in the `CalculatorService` class, and then its endpoint is configured in the Web.config file, where it is specified that the service uses the <xref:System.ServiceModel.BasicHttpBinding>. For a description of how to configure this service using code instead of a configuration, see [How to: Specify a Service Binding in Code](how-to-specify-a-service-binding-in-code.md).  
   
  It is usually the best practice to specify the binding and address information declaratively in configuration rather than imperatively in code. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. More generally, keeping the binding and addressing information out of the code allows them to change without having to recompile or redeploy the application.  
   
- All of the following configuration steps can be undertaken using the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md).  
+ All of the following configuration steps can be undertaken using the [Configuration Editor Tool (SvcConfigEditor.exe)](configuration-editor-tool-svcconfigeditor-exe.md).  
   
- For the source copy of this example, see [BasicBinding](../../../docs/framework/wcf/samples/basicbinding.md).  
+ For the source copy of this example, see [BasicBinding](./samples/basicbinding.md).  
   
-### To specify the BasicHttpBinding to use to configure the service  
+## To specify the BasicHttpBinding to use to configure the service  
   
 1. Define a service contract for the type of service.  
   
@@ -73,9 +73,9 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
     <%@ServiceHost language=c# Service="CalculatorService" %>   
     ```  
   
-### To modify the default values of the binding properties  
+## To modify the default values of the binding properties  
   
-1. To modify one of the default property values of the <xref:System.ServiceModel.WSHttpBinding>, create a new binding configuration name - `<binding name="Binding1">` - within the [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element and set the new values for the attributes of the binding in this binding element. For example, to change the default open and close timeout values of 1 minute to 2 minutes, add the following to the configuration file.  
+1. To modify one of the default property values of the <xref:System.ServiceModel.WSHttpBinding>, create a new binding configuration name - `<binding name="Binding1">` - within the [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) element and set the new values for the attributes of the binding in this binding element. For example, to change the default open and close timeout values of 1 minute to 2 minutes, add the following to the configuration file.  
   
     ```xml  
     <wsHttpBinding>  
@@ -88,5 +88,5 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
   
 ## See also
 
-- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)
+- [Using Bindings to Configure Services and Clients](using-bindings-to-configure-services-and-clients.md)
+- [Specifying an Endpoint Address](specifying-an-endpoint-address.md)

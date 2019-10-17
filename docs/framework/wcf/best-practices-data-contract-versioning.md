@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
 ---
 # Best Practices: Data Contract Versioning
-This topic lists the best practices for creating data contracts that can evolve easily over time. For more information about data contracts, see the topics in [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md).  
+This topic lists the best practices for creating data contracts that can evolve easily over time. For more information about data contracts, see the topics in [Using Data Contracts](./feature-details/using-data-contracts.md).  
   
 ## Note on Schema Validation  
  In discussing data contract versioning, it is important to note that the data contract schema exported by Windows Communication Foundation (WCF) does not have any versioning support, other than the fact that elements are marked as optional by default.  
@@ -29,7 +29,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
  Although in these examples names are changed (by appending a "2"), the recommendation is to change namespaces instead of names by appending new namespaces with a version number or a date. For example, the `http://schemas.contoso.com/2005/05/21/PurchaseOrder` data contract would change to the `http://schemas.contoso.com/2005/10/14/PurchaseOrder` data contract.  
   
- For more information, see Best Practices: [Service Versioning](../../../docs/framework/wcf/service-versioning.md).  
+ For more information, see Best Practices: [Service Versioning](service-versioning.md).  
   
  Occasionally, you must guarantee strict schema compliance for messages sent by your application, but cannot rely on the incoming messages to be strictly schema-compliant. In this case, there is a danger that an incoming message might contain extraneous data. The extraneous values are stored and returned by WCF and thus results in schema-invalid messages being sent. To avoid this problem, the round-tripping feature should be turned off. There are two ways to do this.  
   
@@ -37,10 +37,10 @@ This topic lists the best practices for creating data contracts that can evolve 
   
 - Apply a <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to your service contract with the <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> property set to `true`.  
   
- For more information about round-tripping, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
+ For more information about round-tripping, see [Forward-Compatible Data Contracts](./feature-details/forward-compatible-data-contracts.md).  
   
 ## Versioning When Schema Validation Is Not Required  
- Strict schema compliance is rarely required. Many platforms tolerate extra elements not described by a schema. As long as this is tolerated, the full set of features described in [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md) and [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md) can be used. The following guidelines are recommended.  
+ Strict schema compliance is rarely required. Many platforms tolerate extra elements not described by a schema. As long as this is tolerated, the full set of features described in [Data Contract Versioning](./feature-details/data-contract-versioning.md) and [Forward-Compatible Data Contracts](./feature-details/forward-compatible-data-contracts.md) can be used. The following guidelines are recommended.  
   
  Some of the guidelines must be followed exactly in order to send new versions of a type where an older one is expected or send an old one where the new one is expected. Other guidelines are not strictly required, but are listed here because they may be affected by the future of schema versioning.  
   
@@ -48,9 +48,9 @@ This topic lists the best practices for creating data contracts that can evolve 
   
 2. The use of inheritance together with data contracts is allowed, provided that inheritance is not used as a versioning mechanism and that certain rules are followed. If a type derives from a certain base type, do not make it derive from a different base type in a future version (unless it has the same data contract). There is one exception to this: you can insert a type into the hierarchy between a data contract type and its base type, but only if it does not contain data members with the same names as other members in any possible versions of the other types in the hierarchy. In general, using data members with the same names at different levels of the same inheritance hierarchy can lead to serious versioning problems and should be avoided.  
   
-3. Starting with the first version of a data contract, always implement <xref:System.Runtime.Serialization.IExtensibleDataObject> to enable round-tripping. For more information, see [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md). If you have released one or more versions of a type without implementing this interface, implement it in the next version of the type.  
+3. Starting with the first version of a data contract, always implement <xref:System.Runtime.Serialization.IExtensibleDataObject> to enable round-tripping. For more information, see [Forward-Compatible Data Contracts](./feature-details/forward-compatible-data-contracts.md). If you have released one or more versions of a type without implementing this interface, implement it in the next version of the type.  
   
-4. In later versions, do not change the data contract name or namespace. If changing the name or namespace of the type underlying the data contract, be sure to preserve the data contract name and namespace by using the appropriate mechanisms, such as the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>. For more information about naming, see [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md).  
+4. In later versions, do not change the data contract name or namespace. If changing the name or namespace of the type underlying the data contract, be sure to preserve the data contract name and namespace by using the appropriate mechanisms, such as the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> property of the <xref:System.Runtime.Serialization.DataContractAttribute>. For more information about naming, see [Data Contract Names](./feature-details/data-contract-names.md).  
   
 5. In later versions, do not change the names of any data members. If changing the name of the field, property, or event underlying the data member, use the `Name` property of the <xref:System.Runtime.Serialization.DataMemberAttribute> to preserve the existing data member name.  
   
@@ -62,7 +62,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
     1. The <xref:System.Runtime.Serialization.DataMemberAttribute.IsRequired%2A> property should always be left at its default value of `false`.  
   
-    2. If a default value of `null` or zero for the member is unacceptable, a callback method should be provided using the <xref:System.Runtime.Serialization.OnDeserializingAttribute> to provide a reasonable default in case the member is not present in the incoming stream. For more information about the callback, see [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md).  
+    2. If a default value of `null` or zero for the member is unacceptable, a callback method should be provided using the <xref:System.Runtime.Serialization.OnDeserializingAttribute> to provide a reasonable default in case the member is not present in the incoming stream. For more information about the callback, see [Version-Tolerant Serialization Callbacks](./feature-details/version-tolerant-serialization-callbacks.md).  
   
     3. The <xref:System.Runtime.Serialization.DataMemberAttribute.Order?displayProperty=nameWithType> property should be used to make sure that all of the newly added data members appear after the existing data members. The recommended way of doing this is as follows: None of the data members in the first version of the data contract should have their `Order` property set. All of the data members added in version 2 of the data contract should have their `Order` property set to 2. All of the data members added in version 3 of the data contract should have their `Order` set to 3, and so on. It is permissible to have more than one data member set to the same `Order` number.  
   
@@ -80,7 +80,7 @@ This topic lists the best practices for creating data contracts that can evolve 
   
 14. You should not add or remove enumeration members between versions. You should also not rename enumeration members, unless you use the Name property on the `EnumMemberAttribute` attribute to keep their names in the data contract model the same.  
   
-15. Collections are interchangeable in the data contract model as described in [Collection Types in Data Contracts](../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md). This allows for a great degree of flexibility. However, make sure that you do not inadvertently change a collection type in a non-interchangeable way from version to version. For example, do not change from a non-customized collection (that is, without the `CollectionDataContractAttribute` attribute) to a customized one or a customized collection to a non-customized one. Also, do not change the properties on the `CollectionDataContractAttribute` from version to version. The only allowed change is adding a Name or Namespace property if the underlying collection type's name or namespace has changed and you need to make its data contract name and namespace the same as in a previous version.  
+15. Collections are interchangeable in the data contract model as described in [Collection Types in Data Contracts](./feature-details/collection-types-in-data-contracts.md). This allows for a great degree of flexibility. However, make sure that you do not inadvertently change a collection type in a non-interchangeable way from version to version. For example, do not change from a non-customized collection (that is, without the `CollectionDataContractAttribute` attribute) to a customized one or a customized collection to a non-customized one. Also, do not change the properties on the `CollectionDataContractAttribute` from version to version. The only allowed change is adding a Name or Namespace property if the underlying collection type's name or namespace has changed and you need to make its data contract name and namespace the same as in a previous version.  
   
  Some of the guidelines listed here can be safely ignored when special circumstances apply. Make sure you fully understand the serialization, deserialization, and schema mechanisms involved before deviating from the guidelines.  
   
@@ -95,8 +95,8 @@ This topic lists the best practices for creating data contracts that can evolve 
 - <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A>
 - <xref:System.Runtime.Serialization.ExtensionDataObject>
 - <xref:System.Runtime.Serialization.OnDeserializingAttribute>
-- [Using Data Contracts](../../../docs/framework/wcf/feature-details/using-data-contracts.md)
-- [Data Contract Versioning](../../../docs/framework/wcf/feature-details/data-contract-versioning.md)
-- [Data Contract Names](../../../docs/framework/wcf/feature-details/data-contract-names.md)
-- [Forward-Compatible Data Contracts](../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md)
-- [Version-Tolerant Serialization Callbacks](../../../docs/framework/wcf/feature-details/version-tolerant-serialization-callbacks.md)
+- [Using Data Contracts](./feature-details/using-data-contracts.md)
+- [Data Contract Versioning](./feature-details/data-contract-versioning.md)
+- [Data Contract Names](./feature-details/data-contract-names.md)
+- [Forward-Compatible Data Contracts](./feature-details/forward-compatible-data-contracts.md)
+- [Version-Tolerant Serialization Callbacks](./feature-details/version-tolerant-serialization-callbacks.md)

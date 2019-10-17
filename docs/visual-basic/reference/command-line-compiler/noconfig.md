@@ -12,7 +12,7 @@ Specifies that the compiler should not automatically reference the commonly used
   
 ## Syntax  
   
-```  
+```console  
 -noconfig  
 ```  
   

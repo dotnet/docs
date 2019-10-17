@@ -8,11 +8,11 @@ Negates a `Boolean` expression.
   
 ## Syntax  
   
-```  
+```sql  
 NOT boolean_expression  
-or  
+-- or  
 ! boolean_expression  
-```  
+``` 
   
 ## Arguments  
  `boolean_expression`  
@@ -28,7 +28,7 @@ or
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#NOT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#not)]  
+ [!code-sql[DP EntityServices Concepts#NOT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#not)]  
   
 ## See also
 

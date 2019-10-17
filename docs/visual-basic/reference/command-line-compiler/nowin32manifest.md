@@ -12,7 +12,7 @@ Instructs the compiler not to embed any application manifest into the executable
   
 ## Syntax  
   
-```  
+```console  
 -nowin32manifest  
 ```  
   

@@ -129,7 +129,7 @@ Console.WriteLine("v4:{0}", IIf(Not (v4.HasValue), "element does not exist", v4)
   
  This code produces the following output:  
   
-```  
+```console  
 c1:child 1 content  
 c2:2  
 c3:element does not exist  

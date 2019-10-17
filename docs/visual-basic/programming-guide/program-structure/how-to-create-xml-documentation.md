@@ -29,10 +29,10 @@ This example shows how to add XML documentation comments to your code.
 
     IntelliSense displays the text from the \<summary> tag for the type or member.
 
-5. Compile the code to generate an XML file containing the documentation comments. For more information, see [/doc](../../../visual-basic/reference/command-line-compiler/doc.md).
+5. Compile the code to generate an XML file containing the documentation comments. For more information, see [-doc](../../../visual-basic/reference/command-line-compiler/doc.md).
 
 ## See also
 
 - [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
-- [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)
+- [-doc](../../../visual-basic/reference/command-line-compiler/doc.md)

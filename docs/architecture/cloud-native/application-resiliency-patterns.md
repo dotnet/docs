@@ -39,7 +39,7 @@ The [Retry pattern](https://docs.microsoft.com/azure/architecture/patterns/retry
 
 In the previous figure, a retry pattern has been implemented for a request operation. It's configured to allow up to four retries before failing with a backoff interval (wait time) starting at two seconds, which exponentially doubles for each subsequent attempt.
 
-- The first invocation fails and returns an HTTP status code of 500. The application waits for two seconds and reties the call.
+- The first invocation fails and returns an HTTP status code of 500. The application waits for two seconds and retries the call.
 - The second invocation also fails and returns an HTTP status code of 500. The application now doubles the backoff interval to four seconds and retries the call.
 - Finally, the third call succeeds.
 - In this scenario, the retry operation would have attempted up to four retries while doubling the backoff duration before failing the call.

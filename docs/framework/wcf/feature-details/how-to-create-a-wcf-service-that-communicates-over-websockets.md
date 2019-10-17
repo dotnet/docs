@@ -42,7 +42,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
             var callback = OperationContext.Current.GetCallbackChannel<IStockQuoteCallback>();  
             var random = new Random();  
             double price = 29.00;  
-		
+
             while (((IChannel)callback).State == CommunicationState.Opened)  
             {  
                 await callback.SendQuote("MSFT", price);  

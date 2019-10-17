@@ -17,7 +17,7 @@ This tutorial shows you how to create a custom <xref:System.Runtime.Loader.Assem
 
 ## Prerequisites
 
-- Install the [.NET Core 3.0](https://dotnet.microsoft.com/download) or a newer version.
+- Install the [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download) or a newer version.
 
 ## Create the application
 

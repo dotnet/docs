@@ -12,18 +12,18 @@ ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
 ---
 # Using Statement (Visual Basic)
 
-Declares the beginning of a `Using` block and optionally acquires the system resources that the block controls.  
-  
-## Syntax  
-  
-```vb  
-Using { resourcelist | resourceexpression }  
-    [ statements ]  
-End Using  
-```  
-  
-## Parts  
-  
+Declares the beginning of a `Using` block and optionally acquires the system resources that the block controls.
+
+## Syntax
+
+```vb
+Using { resourcelist | resourceexpression }
+    [ statements ]
+End Using
+```
+
+## Parts
+
 |Term|Definition|  
 |---|---|  
 |`resourcelist`|Required if you do not supply `resourceexpression`. List of one or more system resources that this `Using` block controls, separated by commas.|  

@@ -33,9 +33,9 @@ Instead of using the following constructor:
 
 ```csharp
 HubConnectionContext connectionContext = new HubConnectionContext(
-    connectionContext, 
-    keepAliveInterval: TimeSpan.FromSeconds(15), 
-    loggerFactory, 
+    connectionContext,
+    keepAliveInterval: TimeSpan.FromSeconds(15),
+    loggerFactory,
     clientTimeoutInterval: TimeSpan.FromSeconds(15));
 ```
 

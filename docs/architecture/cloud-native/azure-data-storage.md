@@ -149,7 +149,7 @@ Note in Figure 5-14 how Cosmos DB supports [Table Storage](https://azure.microso
 
 Applications written for Azure Table storage can migrate to Azure Cosmos DB by using the Table API with no code changes.
 
-In [Brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development) application scenarios, development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to the existing data or application code. For [Greenfield](https://en.wikipedia.org/wiki/Greenfield_project) scenarios, development teams can choose the data model that best meets their requirements and preferences, including fully supported open-source options for the MongoDB, Cassandra, and Gremlin platforms.
+In [Brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development)) application scenarios, development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to the existing data or application code. For [Greenfield](https://en.wikipedia.org/wiki/Greenfield_project) scenarios, development teams can choose the data model that best meets their requirements and preferences, including fully supported open-source options for the MongoDB, Cassandra, and Gremlin platforms.
 
 ### Consistency Models
 
@@ -173,7 +173,7 @@ You manage data in Cosmos DB data by creating [databases, containers, and items]
 
 **Figure 5-17**: Hierarchy of Cosmos DB entities
 
-Note in Figure 5-17 how you start by creating a Cosmos DB database inside of an Azure account. That database becomes the unit of management for a set of containers. A container is a schema-agnostic grouping of items that can be expressed as a collection, table, or graph, based on your selected API provider (discussed in the prior section). Items are the data that you add to the container and are represented as documents, rows, nodes, or edges. By default, all items that you add to a container are automatically indexed without requiring explicit index or schema management.
+Note in Figure 5-17 how you start by creating a Cosmos DB database inside of a database account. That database becomes the unit of management for a set of containers. A container is a schema-agnostic grouping of items that can be expressed as a collection, table, or graph, based on your selected API provider (discussed in the prior section). Items are the data that you add to the container and are represented as documents, rows, nodes, or edges. By default, all items that you add to a container are automatically indexed without requiring explicit index or schema management.
 
 To partition the container, items are divided into distinct subsets called [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data). Logical partitions are created based on the value of a partition key that is associated with each item in a container. Figure 5-18 shows how all items in a logical partition have the same partition key value.
 

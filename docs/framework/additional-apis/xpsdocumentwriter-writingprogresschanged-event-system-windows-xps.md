@@ -1,10 +1,10 @@
 ---
-title: XpsDocumentWriter.\_WritingProgressChanged Event (System.Windows.Xps)
+title: XpsDocumentWriter._WritingProgressChanged Event (System.Windows.Xps)
 ms.date: 10/17/2017
 api_location:
 - system.printing.dll
 api_name:
-- System.Windows.Xps.XpsDocumentWriter.\_WritingProgressChanged
+- System.Windows.Xps.XpsDocumentWriter._WritingProgressChanged
 - System.Windows.Xps.XpsDocumentWriter.add__WritingProgressChanged
 - System.Windows.Xps.XpsDocumentWriter.remove__WritingProgressChanged
 api_type:

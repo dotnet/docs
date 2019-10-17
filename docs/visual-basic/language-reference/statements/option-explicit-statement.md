@@ -17,7 +17,7 @@ Forces explicit declaration of all variables in a file, or allows implicit decla
   
 ## Syntax  
   
-```  
+```vb  
 Option Explicit { On | Off }  
 ```  
   

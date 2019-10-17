@@ -170,8 +170,7 @@ Before a garbage collection starts, all managed threads are suspended except for
 
 The following illustration shows a thread that triggers a garbage collection and causes the other threads to be suspended.
 
-![When a thread triggers a Garbage Collection](../../../docs/standard/garbage-collection/media/gc-triggered.png "GC_Triggered")
-Thread that triggers a garbage collection
+![When a thread triggers a Garbage Collection](../../../docs/standard/garbage-collection/media/gc-triggered.png "When a thread triggers a Garbage Collection")
 
 [Back to top](#top)
 
@@ -203,8 +202,7 @@ The garbage collector is self-tuning and can work in a wide variety of scenarios
 
 The following illustration shows the dedicated threads that perform the garbage collection on a server.
 
-![Server Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-server.png "GC_Server")
-Server garbage collection
+![Server Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-server.png "Server Garbage Collection Threads")
 
 ### Configuring garbage collection
 
@@ -258,8 +256,7 @@ Concurrent garbage collection has a slightly bigger working set (compared with n
 
 The following illustration shows concurrent garbage collection performed on a separate dedicated thread.
 
-![Concurrent Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-concurrent.png "GC_Concurrent")
-Concurrent garbage collection
+![Concurrent Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-concurrent.png "Concurrent Garbage Collection Threads")
 
 [Back to top](#top)
 
@@ -280,7 +277,7 @@ Background garbage collection removes allocation restrictions imposed by concurr
 
 The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation:
 
-![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png)
+![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png "Diagram that shows background workstation garbage collection.")
 
 [Back to top](#top)
 
@@ -292,7 +289,7 @@ Starting with the .NET Framework 4.5, background server garbage collection is th
 
 The following illustration shows background garbage collection performed on a separate dedicated thread on a server:
 
-![Diagram that shows background server garbage collection.](./media/fundamentals/background-server-garbage-collection.png)
+![Diagram that shows background server garbage collection.](./media/fundamentals/background-server-garbage-collection.png "Diagram that shows background server garbage collection.")
 
 ## See also
 

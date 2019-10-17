@@ -26,7 +26,7 @@ Repeats a block of statements while a `Boolean` condition is `True` or until the
   
 ## Syntax  
   
-```  
+```vb  
 Do { While | Until } condition  
     [ statements ]  
     [ Continue Do ]  
@@ -34,7 +34,7 @@ Do { While | Until } condition
     [ Exit Do ]  
     [ statements ]  
 Loop  
--or-  
+' -or-  
 Do  
     [ statements ]  
     [ Continue Do ]  

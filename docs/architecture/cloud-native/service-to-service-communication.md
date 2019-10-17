@@ -55,7 +55,7 @@ A popular option for removing microservice coupling is the [Materialized View pa
 
 ### Service Aggregator Pattern
 
-Another option for eliminating microservice-to-micrservice coupling is an [Aggregator microservice](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-10. 
+Another option for eliminating microservice-to-microservice coupling is an [Aggregator microservice](https://devblogs.microsoft.com/cesardelatorre/designing-and-implementing-api-gateways-with-ocelot-in-a-microservices-and-container-based-architecture/), shown in purple in Figure 4-10. 
 
 ![Aggregator service](./media/aggregator-service.png)
 
@@ -203,7 +203,7 @@ Event Grid is a fully managed serverless cloud service. It dynamically scales ba
 
 ### Streaming messages in the Azure cloud
 
-Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events like a new document been inserted into a Cosmos DB). But, what if your cloud-native system needs to process a *stream of related events*? [Event streams](https://msdn.microsoft.com/magazine/dn904671.aspx?f=255&MSPPError=-2147217396) are more complex. They're typically time-ordered, interrelated and must be processed as a group.
+Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events like a new document has been inserted into a Cosmos DB. But, what if your cloud-native system needs to process a *stream of related events*? [Event streams](https://msdn.microsoft.com/magazine/dn904671) are more complex. They're typically time-ordered, interrelated, and must be processed as a group.
 
 [Azure Event Hub](https://azure.microsoft.com/services/event-hubs/) is a data streaming platform and event ingestion service that collects, transforms, and stores events. It's fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context. The service is highly scalable and can store and [process millions of events per second](https://docs.microsoft.com/azure/event-hubs/event-hubs-about). Shown in Figure 4-18, it's often a front door for an event pipeline, decoupling ingest stream from event consumption.
 
@@ -227,4 +227,4 @@ For cloud-native applications that must stream large numbers of events, Azure Ev
 
 >[!div class="step-by-step"]
 >[Previous](front-end-communication.md)
->[Next](rest-grpc.md) <!-- Next Chapter -->
+>[Next](rest-grpc.md)

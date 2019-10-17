@@ -8,7 +8,7 @@ Returns a reference to an entity instance.
   
 ## Syntax  
   
-```  
+```sql  
 REF( expression )   
 ```  
   
@@ -31,7 +31,7 @@ REF( expression )
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#REF](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#ref)]  
+ [!code-sql[DP EntityServices Concepts#REF](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#ref)]  
   
 ## See also
 

@@ -163,7 +163,7 @@ So far, the control of how buttons look in the application has been confined to 
 
      Press F5 to run the application. It should look like the following.
 
-     ![](./media/custom-button-animatedbutton-4.gif "custom_button_AnimatedButton_4")
+     ![Window with 3 buttons](./media/custom-button-animatedbutton-4.gif)
 
 3. **Add a glasseffect to the template:** Next you will add the glass. First you create some resources that create a glass gradient effect. Add these gradient resources anywhere within the `Application.Resources` block:
 

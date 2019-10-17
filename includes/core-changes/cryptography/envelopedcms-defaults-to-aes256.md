@@ -2,7 +2,7 @@
 
 The default symmetric encryption algorithm used by `EnvelopedCms` has changed from TripleDES to AES-256.
 
-#### Details
+#### Change description
 
 In .NET Core Preview 7 and earlier versions, when <xref:System.Security.Cryptography.Pkcs.EnvelopedCms> is used to encrypt data without specifying a symmetric encryption algorithm via a constructor overload, the data was encrypted with the TripleDES/3DES/3DEA/DES3-EDE algorithm.
 

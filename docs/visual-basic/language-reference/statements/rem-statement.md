@@ -19,7 +19,7 @@ Used to include explanatory remarks in the source code of a program.
   
 ## Syntax  
   
-```  
+```vb  
 REM comment  
 ' comment  
 ```  

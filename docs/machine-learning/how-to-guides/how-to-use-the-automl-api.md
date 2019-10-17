@@ -122,6 +122,9 @@ The optimizing metric, as shown in the example above, determines the metric to b
 
 ## Data pre-processing and featurization
 
+> [!NOTE]
+> The feature column only supported types of [`Boolean`](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [`Single`](https://docs.microsoft.com/en-us/dotnet/api/system.single), and [`String`](https://docs.microsoft.com/en-us/dotnet/api/system.string).
+
 Data pre-processing happens by default and the following steps are performed automatically for you:
 
 1. Drop features with no useful information

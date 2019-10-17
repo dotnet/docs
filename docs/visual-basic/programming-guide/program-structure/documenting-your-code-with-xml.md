@@ -13,7 +13,7 @@ In Visual Basic, you can document your code using XML
 
 ## XML Documentation Comments
 
-Visual Basic provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same name as your project and the .xml extension. For more information, see [/doc](../../../visual-basic/reference/command-line-compiler/doc.md).
+Visual Basic provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same name as your project and the .xml extension. For more information, see [-doc](../../../visual-basic/reference/command-line-compiler/doc.md).
 
 The XML file can be consumed or otherwise manipulated as XML. This file is located in the same directory as the output .exe or .dll file of your project.
 
@@ -33,7 +33,7 @@ XML documentation starts with `'''`. The processing of these comments has some r
 
 For details on creating an XML file with documentation comments, see the following topics:
 
-- [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)
+- [-doc](../../../visual-basic/reference/command-line-compiler/doc.md)
 
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
 

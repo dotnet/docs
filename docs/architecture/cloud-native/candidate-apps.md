@@ -28,10 +28,11 @@ Then there are legacy systems. While we'd all like to build new applications, we
 
 ### Modernizing legacy apps
 
-The free Microsoft e-book [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook) provides guidance for migrating on-premises workloads into cloud. Figure 1-8 shows that there isn't a single, one-size-fits-all strategy for modernizing legacy applications.
+The free Microsoft e-book [Modernize existing .NET applications with Azure cloud and Windows Containers](https://dotnet.microsoft.com/download/thank-you/modernizing-existing-net-apps-ebook) provides guidance for migrating on-premises workloads into cloud. Figure 1-10 shows that there isn't a single, one-size-fits-all strategy for modernizing legacy applications.
 
 ![Strategies for migrating legacy workloads](./media/strategies-for-migrating-legacy-workloads.png)
-**Figure 1-8**. Strategies for migrating legacy workloads
+
+**Figure 1-10**. Strategies for migrating legacy workloads
 
 Monolithic apps that are non-critical largely benefit from a quick lift-and-shift ([Cloud Infrastructure-Ready](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-azure-iaas)) migration. Here, the on-premises workload is rehosted to a cloud-based VM, without changes. This approach uses the [IaaS (Infrastructure as a Service) model](https://azure.microsoft.com/overview/what-is-iaas/). Azure includes several tools such as ([Azure Migrate](https://aka.ms/azuremigrate), [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/), and [Azure Database Migration Service](https://azure.microsoft.com/campaigns/database-migration/)) to make such a move easier. While this strategy can yield some cost savings, such applications typically weren't architected to unlock and leverage the benefits of cloud computing. 
 
@@ -39,7 +40,7 @@ Monolithic apps that are critical to the business oftentimes benefit from an enh
 
 Finally, monolithic apps that perform strategic enterprise functions might best benefit from a *Cloud-Native* approach, the subject of this book. This approach provides agility and velocity. But, it comes at a cost of replatforming, rearchitecting, and rewriting code.
 
-If you and your team believe a cloud-native approach is appropriate, it behooves you to rationalize the decision with your organization. What exactly is the business problem that a cloud- native approach will solve? How would it align with business needs?
+If you and your team believe a cloud-native approach is appropriate, it behooves you to rationalize the decision with your organization. What exactly is the business problem that a cloud-native approach will solve? How would it align with business needs?
 
 - Rapid releases of features with increased confidence?
 
@@ -59,7 +60,7 @@ The right migration strategy depends on organizational priorities and the system
 
 ## Summary
 
-In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilities that drive a cloud-native application. We looked the types of applications that might justify this investment and effort.
+In this chapter, we introduced cloud-native computing. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort.
 
 With the introduction behind, we now dive into a much more detailed look at cloud native.
 
@@ -87,4 +88,4 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 >[!div class="step-by-step"]
 >[Previous](definition.md)
->[Next](introduce-eshoponcontainers-reference-app.md) <!-- Next Chapter -->
+>[Next](introduce-eshoponcontainers-reference-app.md)

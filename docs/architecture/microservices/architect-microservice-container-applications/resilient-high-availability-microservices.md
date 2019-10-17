@@ -40,7 +40,7 @@ A microservice-based application should not try to store the output stream of ev
 
 When you create a microservice-based application, you need to deal with complexity. Of course, a single microservice is simple to deal with, but dozens or hundreds of types and thousands of instances of microservices is a complex problem. It isn't just about building your microservice architecture—you also need high availability, addressability, resiliency, health, and diagnostics if you intend to have a stable and cohesive system.
 
-![Orchestrators supply a support platform for running your microservices.](./media/image22.png)
+![Diagram of clusters supplying a support platform for microservices.](./media/resilient-high-availability-microservices/microservice-platform.png)
 
 **Figure 4-22**. A Microservice Platform is fundamental for an application's health management
 

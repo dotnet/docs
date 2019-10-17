@@ -27,7 +27,7 @@ Runs one of several groups of statements, depending on the value of an expressio
   
 ## Syntax  
   
-```  
+```vb  
 Select [ Case ] testexpression  
     [ Case expressionlist  
         [ statements ] ]  

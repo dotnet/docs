@@ -1,14 +1,14 @@
 ---
-title: What's New in C# 8.0 - C# Guide
-description: Get an overview of the new features available in C# 8.0. This article is up-to-date with preview 5.
+title: What's new in C# 8.0 - C# Guide
+description: Get an overview of the new features available in C# 8.0.
 ms.date: 09/20/2019
 ---
 # What's new in C# 8.0
 
-There are many enhancements to the C# language that you can try out already.
+C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](#readonly-members)
-- [Default interface members](#default-interface-members)
+- [Default interface methods](#default-interface-methods)
 - [Pattern matching enhancements](#more-patterns-in-more-places):
   - [Switch expressions](#switch-expressions)
   - [Property patterns](#property-patterns)
@@ -24,9 +24,6 @@ There are many enhancements to the C# language that you can try out already.
 - [Unmanaged constructed types](#unmanaged-constructed-types)
 - [stackalloc in nested expressions](#stackalloc-in-nested-expressions)
 - [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
-
-> [!NOTE]
-> This article was last updated for C# 8.0 preview 5.
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
 
@@ -82,11 +79,11 @@ public readonly void Translate(int xOffset, int yOffset)
 
 This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
 
-## Default interface members
+## Default interface methods
 
-You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface members also enable scenarios similar to a "traits" language feature.
+You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface methods also enable scenarios similar to a "traits" language feature.
 
-Default interface members affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-members-versions.md). Other tutorials and reference updates are coming in time for general release.
+Default interface methods affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-methods-versions.md). Other tutorials and reference updates are coming in time for general release.
 
 ## More patterns in more places
 
@@ -258,25 +255,36 @@ You can explore pattern matching techniques in this [advanced tutorial on patter
 A **using declaration** is a variable declaration preceded by the `using` keyword. It tells the compiler that the variable being declared should be disposed at the end of the enclosing scope. For example, consider the following code that writes a text file:
 
 ```csharp
-static void WriteLinesToFile(IEnumerable<string> lines)
+static int WriteLinesToFile(IEnumerable<string> lines)
 {
     using var file = new System.IO.StreamWriter("WriteLines2.txt");
+    // Notice how we declare skippedLines after the using statement.
+    int skippedLines = 0;
     foreach (string line in lines)
     {
         if (!line.Contains("Second"))
         {
             file.WriteLine(line);
         }
+        else
+        {
+            skippedLines++;
+        }
     }
-// file is disposed here
+    // Notice how skippedLines is in scope here.
+    return skippedLines;
+    // file is disposed here
 }
 ```
 
 In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code that uses the classic [using statement](../language-reference/keywords/using-statement.md):
 
 ```csharp
-static void WriteLinesToFile(IEnumerable<string> lines)
+static int WriteLinesToFile(IEnumerable<string> lines)
 {
+    // We must declare the variable outside of the using block
+    // so that it is in scope to be returned.
+    int skippedLines = 0;
     using (var file = new System.IO.StreamWriter("WriteLines2.txt"))
     {
         foreach (string line in lines)
@@ -285,8 +293,13 @@ static void WriteLinesToFile(IEnumerable<string> lines)
             {
                 file.WriteLine(line);
             }
+            else
+            {
+                skippedLines++;
+            }
         }
     } // file is disposed here
+    return skippedLines;
 }
 ```
 
@@ -372,18 +385,18 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 ## Indices and ranges
 
-Ranges and indices provide a succinct syntax for specifying subranges in an array, [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
+Indices and ranges provide a succinct syntax for accessing single elements or ranges in a sequence.
 
 This language support relies on two new types, and two new operators:
 
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
-- The `^` operator, which specifies that an index is relative to the end of the sequence.
+- The index from end operator `^`, which specifies that an index is relative to the end of the sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
-- The Range operator (`..`), which specifies the start and end of a range as its operands.
+- The range operator `..`, which specifies the start and end of a range as its operands.
 
 Let's start with the rules for indexes. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
-A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range. 
+A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range.
 
 Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
 
@@ -442,6 +455,8 @@ The range can then be used inside the `[` and `]` characters:
 var text = words[phrase];
 ```
 
+Not only arrays support indices and ranges. You also can use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. For more information, see [Type support for indices and ranges](../tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
+
 You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
 
 ## Null-coalescing assignment
@@ -456,7 +471,7 @@ numbers ??= new List<int>();
 numbers.Add(i ??= 17);
 numbers.Add(i ??= 20);
 
-Console.WriteLine(string.Join(' ', numbers));  // output: 17 17
+Console.WriteLine(string.Join(" ", numbers));  // output: 17 17
 Console.WriteLine(i);  // output: 17
 ```
 

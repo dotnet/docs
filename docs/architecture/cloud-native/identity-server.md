@@ -41,7 +41,7 @@ IdentityServer4 is open-source and free to use. You can add it to your applicati
 
 ## Configuration
 
-IdentityServer supports different kinds of protocols and social authentication providers that can be configured as part of each custom installation. This is typically done in the ASP.NET Core application's `Startup` class in the `ConfigureServices` method. The configuration involves specifying the supported protocols and the paths to the servers and endpoints that will be used. Figure 8-X shows an example configuration taken from the IdentityServer4 Quickstart UI project:
+IdentityServer supports different kinds of protocols and social authentication providers that can be configured as part of each custom installation. This is typically done in the ASP.NET Core application's `Startup` class in the `ConfigureServices` method. The configuration involves specifying the supported protocols and the paths to the servers and endpoints that will be used. Figure 8-2 shows an example configuration taken from the IdentityServer4 Quickstart UI project:
 
 ```csharp
 public class Startup
@@ -84,7 +84,7 @@ public class Startup
 }
 ```
 
-**Figure 8-X**. Configuring IdentityServer.
+**Figure 8-2**. Configuring IdentityServer.
 
 IdentityServer also hosts a public demo site that can be used to test various protocols and configurations. It's located at [https://demo.identityserver.io/](https://demo.identityserver.io/) and includes information on how to configure its behavior based on the `client_id` provided to it.
 
@@ -100,4 +100,4 @@ Many cloud-native applications leverage server-side APIs and rich client single 
 
 >[!div class="step-by-step"]
 >[Previous](azure-active-directory.md)
->[Next](security.md) <!-- Next Chapter -->
+>[Next](security.md)

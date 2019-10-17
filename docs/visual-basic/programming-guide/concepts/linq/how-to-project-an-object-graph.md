@@ -294,7 +294,7 @@ End Sub
   
  The example produces the following output:  
   
-```  
+```console  
 PurchaseOrderNumber: 99503  
 OrderDate: 10/20/1999  
   

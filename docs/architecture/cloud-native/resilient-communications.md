@@ -14,7 +14,7 @@ Throughout this book, we've evangelized the merits of moving beyond traditional 
 - *Resiliency.* How do you manage short-lived failures and keep the system stable?
 - *Load balancing.* How does inbound traffic get distributed across multiple instances of a service?
 - *Security.* How are security concerns such as transport-level encryption and certificate management enforced?
-- *Distributed Monitoring. - How do you correlate and capture traceability and monitoring for a single request across multiple consuming services?
+- *Distributed Monitoring.* - How do you correlate and capture traceability and monitoring for a single request across multiple consuming services?
 
 While these concerns can be addressed with various libraries and frameworks, implementing them inside your codebase can be expensive, complex, and time-consuming. Moreover, you end up with a solution where infrastructure concerns are coupled to business logic.
 
@@ -69,4 +69,4 @@ The Azure cloud embraces Istio and provides direct support for it within Azure K
 
 >[!div class="step-by-step"]
 >[Previous](infrastructure-resiliency-azure.md)
->[Next](monitoring-health.md) <!-- Next Chapter -->
+>[Next](monitoring-health.md)

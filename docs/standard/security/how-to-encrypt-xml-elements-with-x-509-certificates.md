@@ -30,9 +30,9 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ### To encrypt an XML element with an X.509 certificate  
   
-1. Use the [Certificate Creation Tool (Makecert.exe)](/windows/desktop/SecCrypto/makecert) to generate a test X.509 certificate and place it in the local user store.  You must generate an exchange key and you must make the key exportable. Run the following command:  
+1. Use the [Certificate Creation Tool (Makecert.exe)](/windows/desktop/SecCrypto/makecert) to generate a test X.509 certificate and place it in the local user store. You must generate an exchange key and you must make the key exportable. Run the following command:  
   
-    ```  
+    ```console  
     makecert -r -pe -n "CN=XML_ENC_TEST_CERT" -b 01/01/2005 -e 01/01/2010 -sky exchange -ss my  
     ```  
   

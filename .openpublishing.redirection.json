@@ -35,7 +35,11 @@
         },
         {
             "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
-            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud"
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/life-cycle-ci-cd-pipelines-devops-tools"
+        },
+        {
+            "source_path": "docs/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md",
+            "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/life-cycle-ci-cd-pipelines-devops-tools"
         },
         {
             "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/modernize-your-apps-with-monitoring-and-telemetry.md",
@@ -129,6 +133,11 @@
         {
             "source_path": "docs/core/porting/nuget-packages.md",
             "redirect_url": "/dotnet/core/packages"
+        },
+        {
+            "source_path": "docs/core/porting/wpf.md",
+            "redirect_url": "/dotnet/desktop-wpf/migration/convert-project-from-net-framework",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/core/preview3/deploying/index.md",
@@ -1362,6 +1371,10 @@
             "redirect_url": "/dotnet/csharp/roslyn-sdk/"
         },
         {
+            "source_path": "docs/csharp/tutorials/default-interface-members-versions.md",
+            "redirect_url": "/dotnet/csharp/tutorials/default-interface-methods-versions"
+        },
+        {
             "source_path": "docs/csharp/tutorials/exploration/csharp-7.yml",
             "redirect_url": "/dotnet/csharp/whats-new/csharp-7"
         },
@@ -2339,6 +2352,10 @@
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/ee264174(v%3dvs.100)"
         },
         {
+            "source_path": "docs/framework/winforms/advanced/encoding-and-windows-forms-globalization.md",
+            "redirect_url": "/previous-versions/visualstudio/visual-studio-2010/401dkz3c(v=vs.100)"
+        },
+        {
             "source_path": "docs/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-basic.md",
             "redirect_url": "/dotnet/framework/winforms/controls/walkthrough-authoring-a-composite-control-with-visual-csharp"
         },
@@ -2396,6 +2413,16 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml-resources-define",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/advanced/xaml-overview-wpf.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/wpf/controls/datepicker-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/datepicker-styles-and-templates",
             "redirect_document_id": true
@@ -2411,6 +2438,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/controls/styling-and-templating.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/styles-templates-overview",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/wpf/controls/thumb-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/thumb-styles-and-templates",
             "redirect_document_id": true
@@ -2418,6 +2450,11 @@
         {
             "source_path": "docs/framework/wpf/controls/togglebutton-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/togglebutton-styles-and-templates",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/data/data-binding-overview.md",
+            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
             "redirect_document_id": true
         },
         {
@@ -2947,6 +2984,10 @@
             "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
         },
         {
+            "source_path": "docs/standard/serialization/serialization-samples.md",
+            "redirect_url": "/dotnet/standard/serialization/index"
+        },
+        {
             "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",
             "redirect_url": "/previous-versions/dotnet/netframework-4.0/h2byscsb(v=vs.100)"
         },
@@ -3176,6 +3217,42 @@
             "source_path": "docs/visual-basic/language-reference/directives/directives.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/directives/index",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/a-reference-was-created-to-embedded-interop-assembly-assembly1.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc40059",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/access-of-shared-member-through-an-instance-qualifying-expression.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc42025",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/addressof-operand-must-be-the-name-of-a-method-without-parentheses.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30577",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/anonymous-type-member-name-can-be-inferred-only-from-a-simple-or-qualified-name.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc36556",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/array-bounds-cannot-appear-in-type-specifiers.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30638",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/array-declared-as-for-loop-control-variable-cannot-be-declared.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc32039",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/array-subscript-expression-missing.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30306",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/arrays-declared-as-structure-members-cannot-be-declared-with-an-initial-size.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc31043",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/as-any-is-not-supported-in-declare-statements.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30828",
         },
         {
             "source_path": "docs/visual-basic/language-reference/queries/queries.md",

@@ -16,7 +16,7 @@ Multiplies the value of a variable or property by the value of an expression and
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty *= expression  
 ```  
   

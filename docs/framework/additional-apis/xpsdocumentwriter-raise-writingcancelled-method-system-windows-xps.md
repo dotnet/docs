@@ -24,10 +24,10 @@ public void raise__WritingCancelled (object value0,
 
 ## Parameters
 
-- `value0` <xref:System.Object>
+- `value0` <xref:System.Object>  
   The source of the event.
 
-- `value1` <xref:System.Windows.Documents.Serialization.WritingCancelledEventArgs>
+- `value1` <xref:System.Windows.Documents.Serialization.WritingCancelledEventArgs>  
   The event data.
 
 ## Requirements

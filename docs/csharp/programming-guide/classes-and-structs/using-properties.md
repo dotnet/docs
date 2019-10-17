@@ -44,7 +44,7 @@ The `get` accessor can be used to return the field value or to compute it and re
 
 [!code-csharp[csProgGuideProperties#11](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#11)]
 
-In the previous code segment, if you do not assign a value to the `Name` property, it will return the value "NA".
+In the previous code segment, if you do not assign a value to the `Name` property, it will return the value `NA`.
 
 ## The set Accessor
 

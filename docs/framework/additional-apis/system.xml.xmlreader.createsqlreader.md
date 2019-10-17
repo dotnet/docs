@@ -23,10 +23,10 @@ internal static XmlReader CreateSqlReader(Stream input,
 
 ## Parameters
 
-- `input` <xref:System.IO.Stream>
+- `input` <xref:System.IO.Stream>  
   The stream that contains the XML data.
 
-- `settings` <xref:System.Xml.XmlReaderSettings>
+- `settings` <xref:System.Xml.XmlReaderSettings>  
   The settings for the new <xref:System.Xml.XmlReader> instance. This value can be `null`.
 
 - `inputContext` 

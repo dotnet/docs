@@ -15,17 +15,17 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> - Prepare Microsoft.Spark.Worker
-> - Publish your Spark .NET app
-> - Deploy your app to Databricks
-> - Run your app
+> * Prepare Microsoft.Spark.Worker
+> * Publish your Spark .NET app
+> * Deploy your app to Databricks
+> * Run your app
 
 ## Prerequisites
 
 Before you start, do the following:
 
-- Download the [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html).
-- Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
+* Download the [Databricks CLI](https://docs.databricks.com/user-guide/dev-tools/databricks-cli.html).
+* Download [install-worker.sh](https://github.com/dotnet/spark/blob/master/deployment/install-worker.sh) to your local machine. This is a helper script that you use later to copy .NET for Apache Spark dependent files into your Spark cluster's worker nodes.
 
 ## Prepare worker dependencies
 
@@ -59,9 +59,9 @@ Before you start, do the following:
 
 4. Upload the following to a distributed file system (for example, DBFS) that your cluster has access to:
 
-   - `microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar`: This jar is included as part of the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package and is colocated in your app's build output directory.
-   - `<your app>.zip`
-   - Files (like dependency files or common data accessible to every worker) or assemblies (like DLLs that contain your user-defined functions or libraries that your app depends on) to be placed in the working directory of each executor.
+   * `microsoft-spark-<spark_majorversion.spark_minorversion.x>-<spark_dotnet_version>.jar`: This jar is included as part of the [Microsoft.Spark](https://www.nuget.org/packages/Microsoft.Spark/) NuGet package and is colocated in your app's build output directory.
+   * `<your app>.zip`
+   * Files (like dependency files or common data accessible to every worker) or assemblies (like DLLs that contain your user-defined functions or libraries that your app depends on) to be placed in the working directory of each executor.
 
 ## Deploy to Databricks
 
@@ -133,21 +133,21 @@ You can use `set JAR` or `spark-submit` to submit your job to Databricks.
 
 2. This step is only required if your app assemblies (for example, DLLs that contain user-defined functions along with their dependencies) need to be placed in the working directory of each **Microsoft.Spark.Worker**.
 
-   - Upload your application assemblies to your Databricks cluster
+   * Upload your application assemblies to your Databricks cluster
 
       ```bash
       cd <path-to-your-app-publish-directory>
       databricks fs cp <assembly>.dll dbfs:/apps/dependencies
       ```
 
-   - Uncomment and modify the app dependencies section in [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) to point to your app dependencies path and upload to your Databricks cluster.
+   * Uncomment and modify the app dependencies section in [db-init.sh](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) to point to your app dependencies path and upload to your Databricks cluster.
 
       ```bash
       cd <path-to-db-init-and-install-worker>
       databricks fs cp db-init.sh dbfs:/spark-dotnet/db-init.sh
       ```
 
-   - Restart your cluster.
+   * Restart your cluster.
 
 3. Go to your Databricks cluster in your Databricks workspace. Under **Jobs**, select your job and then select **Run Now** to run your job.
 

@@ -17,7 +17,7 @@ Restricts implicit data type conversions to only widening conversions, disallows
   
 ## Syntax  
   
-```  
+```vb  
 Option Strict { On | Off }  
 ```  
   

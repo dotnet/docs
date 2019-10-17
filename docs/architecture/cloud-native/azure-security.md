@@ -15,10 +15,10 @@ On the flip side, smaller services, each with their own data store, limit the sc
 
 No matter if the advantages outweigh the disadvantages of cloud-native applications, the same holistic security mindset must be followed. Security and secure thinking must be part of every step of the development and operations story. When planning an application ask questions like:
 
-* What would be the impact of this data being lost?
-* How can we limit the damage from bad data being injected into this service?
-* Who should have access to this data?
-* Are there auditing policies in place around the development and release process?
+- What would be the impact of this data being lost?
+- How can we limit the damage from bad data being injected into this service?
+- Who should have access to this data?
+- Are there auditing policies in place around the development and release process?
 
 All these questions are part of a process called [threat modeling](https://docs.microsoft.com/azure/security/azure-security-threat-modeling-tool). This process tries to answer the question of what threats there are to the system, how likely the threats are, and the potential damage from them. 
 
@@ -106,13 +106,10 @@ The first component in RBAC is a security principal. A security principal can be
 ![Figure 10-2 Different types of security principals](./media/rbac-security-principal.png)
 **Figure 10-2**. Different types of security principals.
 
-* User - Any user who has an account in Azure Active Directory is a user.
-
-* Group - A collection of users from Azure Active Directory. As a member of a group, a user takes on the roles of that group in addition to their own.
-
-* Service principal - A security identity under which services or applications run.
-
-* Managed identity - An Azure Active Directory identity managed by Azure. Managed identities are typically used when developing cloud applications that manage the credentials for authenticating to Azure services.
+- User - Any user who has an account in Azure Active Directory is a user.
+- Group - A collection of users from Azure Active Directory. As a member of a group, a user takes on the roles of that group in addition to their own.
+- Service principal - A security identity under which services or applications run.
+- Managed identity - An Azure Active Directory identity managed by Azure. Managed identities are typically used when developing cloud applications that manage the credentials for authenticating to Azure services.
 
 The security principal can be applied to most any resource. This means that it's possible to assign a security principal to a container running within Azure Kubernetes, allowing it to access secrets stored in Key Vault. An Azure Function could take on a permission allowing it to talk to an Active Directory instance to validate a JWT for a calling user. Once services are enabled with a service principal, their permissions can be managed granularly using roles and scopes.  
 

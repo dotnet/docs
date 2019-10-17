@@ -15,9 +15,9 @@ Returns control to the code that called a `Function`, `Sub`, `Get`, `Set`, or `O
   
 ## Syntax  
   
-```  
+```vb  
 Return  
--or-  
+' -or-  
 Return expression  
 ```  
   

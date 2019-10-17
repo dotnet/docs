@@ -18,7 +18,7 @@ Suspends execution.
   
 ## Syntax  
   
-```  
+```vb  
 Stop  
 ```  
   

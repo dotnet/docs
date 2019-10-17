@@ -24,7 +24,7 @@ Declares the default comparison method to use when comparing string data.
   
 ## Syntax  
   
-```  
+```vb  
 Option Compare { Binary | Text }  
 ```  
   

@@ -11,7 +11,8 @@ Windows Communication Foundation (WCF) Web HTTP error handling enables you to re
   
 ```csharp
 public string Operation1()
-{   // Operation logic  
+{
+    // Operation logic  
    // ...
    throw new WebFaultException(HttpStatusCode.Forbidden);
 }  
@@ -21,6 +22,7 @@ public string Operation1()
   
 ```csharp
 public string Operation2()
+{
    // Operation logic  
    // ...
    MyErrorDetail detail = new MyErrorDetail()

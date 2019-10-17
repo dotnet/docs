@@ -28,7 +28,7 @@ class FilteringEndpointBehavior : IEndpointBehavior
   
 ```csharp
 // Matches any message whose To address contains the letter 'e'  
-class MatchEAddressFilter : MessageFilter …  
+class MatchEAddressFilter : MessageFilter { }
 // Matches any message whose To address does not contain the letter 'e'  
 class MatchNoEAddressFilter : MessageFilter  
 ```  
@@ -36,7 +36,7 @@ class MatchNoEAddressFilter : MessageFilter
  The `FilteringEndpointBehavior` is made configurable and allows for two different variations.  
   
 ```csharp
-public class FilteringEndpointBehaviorExtension : BehaviorExtensionElement  
+public class FilteringEndpointBehaviorExtension : BehaviorExtensionElement { }
 ```  
   
  Variation 1 matches only addresses that contain an 'e' (but that have any Action) whereas Variation 2 matches only addresses that lack an 'e':  

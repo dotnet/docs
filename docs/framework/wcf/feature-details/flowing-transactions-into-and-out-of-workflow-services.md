@@ -271,7 +271,6 @@ Workflow services and clients can participate in transactions.  For a service op
             client.Completed = Program.Completed;  
             client.Aborted = Program.Aborted;  
             client.OnUnhandledException = Program.OnUnhandledException;  
-	
             //Wait for service to start  
             Console.WriteLine("Press ENTER once service is started.");  
             Console.ReadLine();  

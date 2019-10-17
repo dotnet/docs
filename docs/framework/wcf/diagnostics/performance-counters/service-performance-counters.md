@@ -13,4 +13,4 @@ Service performance counters measure the service behavior as a whole and can be 
   
 ## See also
 
-- [Performance Counters](../../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)
+- [Performance Counters](index.md)

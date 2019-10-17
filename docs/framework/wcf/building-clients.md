@@ -10,13 +10,13 @@ ms.assetid: 28dfff47-d95b-4cc2-9d5c-b3b9ba71fd50
 The topics in this section demonstrate how to create and use a Windows Communication Foundation (WCF) client.  
   
 ## In This Section  
- [WCF Client Overview](../../../docs/framework/wcf/wcf-client-overview.md)  
+ [WCF Client Overview](wcf-client-overview.md)  
  Provides an overview of WCF clients and how they work.  
   
- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
+ [Accessing Services Using a WCF Client](accessing-services-using-a-wcf-client.md)  
  Outlines the basic method of creating a WCF client object for use in a client application.  
   
- [Securing Clients](../../../docs/framework/wcf/securing-clients.md)  
+ [Securing Clients](securing-clients.md)  
  Describes how to configure security for WCF clients.  
   
 ## Reference  
@@ -35,6 +35,6 @@ The topics in this section demonstrate how to create and use a Windows Communica
  <xref:System.Runtime.Serialization.DataMemberAttribute>  
   
 ## Related Sections  
- [Hosting Services](../../../docs/framework/wcf/hosting-services.md)  
+ [Hosting Services](hosting-services.md)  
   
- [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)
+ [Designing and Implementing Services](designing-and-implementing-services.md)

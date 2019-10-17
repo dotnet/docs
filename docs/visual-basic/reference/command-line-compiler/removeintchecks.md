@@ -15,7 +15,7 @@ Turns overflow-error checking for integer operations on or off.
   
 ## Syntax  
   
-```  
+```console  
 -removeintchecks[+ | -]  
 ```  
   

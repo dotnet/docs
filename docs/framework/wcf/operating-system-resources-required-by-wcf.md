@@ -14,4 +14,4 @@ Windows Communication Foundation (WCF) depends on several resources that are pro
   
 ## See also
 
-- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)
+- [System Requirements](wcf-system-requirements.md)

@@ -17,7 +17,7 @@ Writing notes or comments on paper documents is such a commonplace activity that
 
 <a name="caf1_type_stickynotes"></a>   
 ## Sticky Notes  
- A typical sticky note contains information written on a small piece of colored paper that is then "stuck" to a document. Digital sticky notes provide similar functionality for electronic documents, but with the added flexibility to include many other types of content such as typed text, handwritten notes (for example, [!INCLUDE[TLA#tla_tpc](../../../../includes/tlasharptla-tpc-md.md)] "ink" strokes), or Web links.  
+ A typical sticky note contains information written on a small piece of colored paper that is then "stuck" to a document. Digital sticky notes provide similar functionality for electronic documents, but with the added flexibility to include many other types of content such as typed text, handwritten notes (for example, Tablet PC "ink" strokes), or Web links.  
   
  The following illustration shows some examples of highlight, text sticky note, and ink sticky note annotations.  
   

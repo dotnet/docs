@@ -20,7 +20,7 @@ The server-side components of this architecture all map easily to Azure services
 
 The application's container-hosted services, from ASP.NET Core MVC apps to individual Catalog and Ordering microservices, can be hosted and managed in Azure Kubernetes Service (AKS). The application can run locally on Docker and Kubernetes, and the same containers can then be deployed to staging and production environments hosted in AKS. This process can be automated as we'll see in the next section.
 
-AKS provides management services for individual clusters of containers. The application will deploy separate AKS clusters for each microservice shown in the architecture diagram above. This approach allows each individual service to each independently according to its resource demands. Each microservice can also be deployed independently, and ideally such deployments should incur zero system downtime.
+AKS provides management services for individual clusters of containers. The application will deploy separate AKS clusters for each microservice shown in the architecture diagram above. This approach allows each individual service to scale independently according to its resource demands. Each microservice can also be deployed independently, and ideally such deployments should incur zero system downtime.
 
 ## API Gateway
 

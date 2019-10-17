@@ -42,7 +42,7 @@ SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP
  Certain database behaviors depend on the compatibility level set to the database. If your `ProviderManifestToken` attribute is set to 2005 and your SQL Server version is 2005, but the compatibility level of a database is set to "80" (SQL Server 2000), the generated Transact-SQL will be targeting SQL Server 2005, but might not execute as expected due to the compatibility level setting. For example, you might lose ordering information if a column name in the ORDER BY list matches a column name in the selector.  
   
 ## Nested Queries in Projection  
- Nested queries in a projection clause might get translated into Cartesian product queries on the server. On some back-end servers, including SLQ Server, this can cause the TempDB table to get quite large. This can decrease server performance.  
+ Nested queries in a projection clause might get translated into Cartesian product queries on the server. On some back-end servers, including SQL Server, this can cause the TempDB table to get quite large. This can decrease server performance.  
   
  The following is an example of  a nested query in a projection clause:  
   

@@ -81,7 +81,7 @@ End Class
   
  This code produces the following output:  
   
-```  
+```console
 Attempting to validate, custOrdDoc validated  
 <Root>  
   <Order>  

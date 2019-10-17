@@ -47,7 +47,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Child2 Select="true">2</Child2>  
 <Child4 Select="true">4</Child4>  

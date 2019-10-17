@@ -1,4 +1,4 @@
-- name: Additional class libraries and APIs
+- name: Additional APIs
   href: index.md
   items:
   - name: Microsoft.SqlServer.Server
@@ -7,6 +7,12 @@
       items:
       - name: SmiOrderProperty.Item
         href: microsoft.sqlserver.server.smiorderproperty.item.md
+  - name: System
+    items:
+    - name: Exception Class
+      items:
+      - name: Exception.PrepForRemoting Method
+        href: system.exception.prepforremoting.md
   - name: System.Data.SqlTypes
     items:
     - name: SqlChars Class
@@ -82,6 +88,24 @@
       href: datamemberfieldeditor-class.md
     - name: DataMemberListEditor class
       href: datamemberlisteditor-class.md
+  - name: System.Windows.Xps
+    items:
+    - name: XpsDocumentWriter
+      items:
+      - name: raise__WritingCancelled Method
+        href: xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
+      - name: raise__WritingCompleted Method 
+        href: xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
+      - name: raise__WritingPrintTicketRequired Method
+        href: xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
+      - name: raise__WritingProgressChanged
+        href: xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps.md
+      - name: _WritingCancelled
+        href: xpsdocumentwriter-writingcancelled-event-system-windows-xps.md
+      - name: _WritingCompleted
+        href: xpsdocumentwriter-writingcompleted-event-system-windows-xps.md
+      - name: _WritingProgressChanged
+        href: xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
   - name: adodb Namespace
     items:
     - name: Connection Interface
@@ -110,5 +134,3 @@
       href: stdole.stdfont.md
     - name: StdPicture Interface
       href: stdole.stdpicture.md
-
-

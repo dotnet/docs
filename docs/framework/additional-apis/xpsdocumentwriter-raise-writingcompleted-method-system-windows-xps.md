@@ -25,10 +25,10 @@ public void raise__WritingCompleted (object value0,
 
 ## Parameters
 
-- `value0`
+- `value0` <xref:System.Object>
   The source of the event.
 
-- `value1`
+- `value1`  <xref:System.Windows.Documents.Serialization.WritingCompletedEventArgs>
   The event data.
 
 ## Requirements

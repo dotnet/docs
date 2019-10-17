@@ -29,7 +29,7 @@ internal static XmlReader CreateSqlReader(Stream input,
 - `settings` <xref:System.Xml.XmlReaderSettings>  
   The settings for the new <xref:System.Xml.XmlReader> instance. This value can be `null`.
 
-- `inputContext` 
+- `inputContext` <xref:System.Xml.XmlParserContext>  
   The context information required to parse the XML fragment. This value can be `null`.
 
 ## Returns

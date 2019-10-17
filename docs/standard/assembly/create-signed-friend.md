@@ -126,7 +126,7 @@ This example shows how to use friend assemblies with assemblies that have strong
 - [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
 - [How to: Create unsigned friend assemblies](create-unsigned-friend.md)
-- [/keyfile (C#)](../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)
+- [-keyfile (C#)](../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)
 - [-keyfile (Visual Basic)](../../visual-basic/reference/command-line-compiler/keyfile.md)
 - [Sn.exe (Strong Name tool)](../../framework/tools/sn-exe-strong-name-tool.md)
 - [Create and use strong-named assemblies](create-use-strong-named.md)

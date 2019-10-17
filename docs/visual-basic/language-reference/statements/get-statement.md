@@ -17,7 +17,7 @@ Declares a `Get` property procedure used to retrieve the value of a property.
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] Get()  
     [ statements ]  
 End Get  

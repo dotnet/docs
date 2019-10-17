@@ -23,7 +23,7 @@ Resumes execution after an error-handling routine is finished.
   
 ## Syntax  
   
-```  
+```vb  
 Resume [ Next | line ]  
 ```  
   

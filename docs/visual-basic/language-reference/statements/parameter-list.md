@@ -17,7 +17,7 @@ Specifies the parameters a procedure expects when it is called. Multiple paramet
 
 ## Syntax
 
-```
+```vb
 [ <attributelist> ] [ Optional ] [{ ByVal | ByRef }] [ ParamArray ]
 parametername[( )] [ As parametertype ] [ = defaultvalue ]
 ```

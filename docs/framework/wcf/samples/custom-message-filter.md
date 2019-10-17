@@ -30,7 +30,7 @@ class FilteringEndpointBehavior : IEndpointBehavior
 // Matches any message whose To address contains the letter 'e'  
 class MatchEAddressFilter : MessageFilter { }
 // Matches any message whose To address does not contain the letter 'e'  
-class MatchNoEAddressFilter : MessageFilter  
+class MatchNoEAddressFilter : MessageFilter { }  
 ```  
   
  The `FilteringEndpointBehavior` is made configurable and allows for two different variations.  

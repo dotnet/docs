@@ -1,12 +1,12 @@
 ---
-title: XpsDocumentWriter.\_WritingCancelled Event (System.Windows.Xps)
+title: XpsDocumentWriter._WritingCancelled Event (System.Windows.Xps)
 ms.date: 10/17/2017
 api_location:
 - system.printing.dll
 api_name:
-- System.Windows.Xps.XpsDocumentWriter.\_WritingCancelled
-- System.Windows.Xps.XpsDocumentWriter.add\_\_WritingCancelled
-- System.Windows.Xps.XpsDocumentWriter.remove\_\_WritingCancelled
+- System.Windows.Xps.XpsDocumentWriter._WritingCancelled
+- System.Windows.Xps.XpsDocumentWriter.add__WritingCancelled
+- System.Windows.Xps.XpsDocumentWriter.remove__WritingCancelled
 api_type:
 - Assembly
 topic_type:

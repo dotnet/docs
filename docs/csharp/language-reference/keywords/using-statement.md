@@ -30,7 +30,7 @@ The `using` statement ensures that <xref:System.IDisposable.Dispose%2A> is calle
 
 [!code-csharp[csrefKeywordsNamespace#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace.cs#5)]
 
-The newer `using` statement translates to very similar code. The `try` block opens where the variable is declared. The `finally` block is added at the close of the enclosing block, typically the method close.
+The newer `using` statement translates to very similar code. The `try` block opens where the variable is declared. The `finally` block is added at the close of the enclosing block, typically at the end of a method.
 
 For more information about the `try`-`finally` statement, see the [try-finally](try-finally.md) topic.
 
@@ -38,7 +38,7 @@ Multiple instances of a type can be declared in the `using` statement, as shown 
 
 [!code-csharp[csrefKeywordsNamespace#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace.cs#6)]
 
-You can combine multiple declarations of the same type using the new C# 8.0 syntax as well. This is shown in the following example:
+You can combine multiple declarations of the same type using the new syntax introduced with C# 8 as well. This is shown in the following example:
 
 [!code-csharp[csrefKeywordsNamespace#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace.cs#MultipleUsing)]
 

@@ -30,7 +30,7 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|filename|The path of the file to be activated. Can also be a [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)].|  
+|filename|The path of the file to be activated. Can also be a URI.|  
 |-debug|When activating an application, does not commit it to or run it from the store. This only works when a local file is activated.|  
 |-debugSecurityZoneURL \<url>|Used with a URL value to indicate to PresentationHost.exe that an application should be debugged as if it were deployed from the specified URL. This determines both the deployment zone and the site of origin.|  
 |-embedding|Required by OLE. If the `-event` or `-debug` parameter are specified, it is not necessary to specify the `-embedding` parameter, since that parameter is set internally.|  

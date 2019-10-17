@@ -159,3 +159,4 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 
 - [.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)
 - [Build a .NET Standard library](../core/tutorials/library-with-visual-studio.md)
+- [Cross-platform targeting](./library-guidance/cross-platform-targeting.md)

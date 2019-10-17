@@ -98,6 +98,14 @@ $ dotnet --list-sdks
 
 You can also see what runtimes are installed with the command `dotnet --list-runtimes`.
 
+## Standalone installers
+
+You can download a standalone installer for each OS from the following links:
+
+- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2).
+- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1).
+
 ## Dependencies
 
 Depending on the OS you're using, you may need to install additional dependencies.
@@ -197,8 +205,6 @@ To verify your Visual Studio version:
 
 .NET Core 3.0 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 
 
-For download links and more information, see [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
-
 .NET Core 3.0 is supported on the following Linux distributions/versions):
 
 > [!NOTE]
@@ -225,8 +231,6 @@ For more information about how to install .NET Core 3.0 on ARM64, see [Installin
 
 .NET Core 2.2 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
 
-For download links and more information, see [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2).
-
 .NET Core 2.2 is supported on the following Linux distributions/versions:
 
 > [!NOTE]
@@ -250,8 +254,6 @@ See [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 # [.NET Core 2.1](#tab/netcore21)
 
 .NET Core 2.1 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
-
-For download links and more information, see [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1).
 
 .NET Core 2.1 is supported on the following Linux distributions/versions:
 

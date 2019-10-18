@@ -1,6 +1,6 @@
 ---
 title: "Additional class libraries and APIs"
-ms.date: "10/09/2019"
+ms.date: "10/17/2019"
 helpviewer_keywords: 
   - "Additional class libraries"
   - "Additional managed libraries"
@@ -66,6 +66,7 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Windows.Diagnostics.VisualDiagnostics.s\_isDebuggerCheckDisabledForTestPurposes Field](s-isdebuggercheckdisabledfortestpurposes-field.md)
 * [System.Windows.Forms.Design.DataMemberFieldEditor Class](datamemberfieldeditor-class.md)
 * [System.Windows.Forms.Design.DataMemberListEditor Class](datamemberlisteditor-class.md)
+* [System.Xml.XmlReader.CreateSqlReader Method](system.xml.xmlreader.createsqlreader.md)
 * [adodb.Connection Interface](adodb.connection.md)
 * [adodb.EventReason Enum](adodb.eventreasonenum.md)
 * [adodb.EventStatus Enum](adodb.eventstatusenum.md)

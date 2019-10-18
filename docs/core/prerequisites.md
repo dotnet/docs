@@ -123,6 +123,8 @@ The following Windows operating systems are supported with .NET Core 3.0:
 | Windows Server                | 2012 R2 SP1+                   | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
+See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+
 # [.NET Core 2.2](#tab/netcore22)
 
 The following Windows operating systems are supported with .NET Core 2.2:
@@ -137,6 +139,8 @@ The following Windows operating systems are supported with .NET Core 2.2:
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
 | Nano Server                   | Version 1709+                  | x64, ARM32      |
 
+See [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+
 # [.NET Core 2.1](#tab/netcore21)
 
 The following Windows operating systems are supported with .NET Core 2.1:
@@ -150,13 +154,15 @@ The following Windows operating systems are supported with .NET Core 2.1:
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
 
+See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+
 ---
 
 <!-- markdownlint-disable MD001 -->
 
 ### Windows 7 / 8.1 / Server 2008 R2
 
-There are additional prerequisites if you're installing the .NET SDK or Runtime on the following Windows operating systems:
+Additional dependencies are required if you're installing the .NET SDK or Runtime on the following Windows operating systems:
 
 - Windows 7 SP1
 - Windows 8.1
@@ -200,7 +206,7 @@ To verify your Visual Studio version:
 
 .NET Core 3.0 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
 
-.NET Core 3.0 is supported on the following Linux distributions/versions):
+.NET Core 3.0 is supported on the following Linux distributions/versions:
 
 > [!NOTE]
 > A `+` symbol represents the minimum version.
@@ -280,25 +286,19 @@ See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 .NET Core 3.0 is supported on **macOS High Sierra (version 10.13)** and later versions. A **x64** CPU architecture is required.
 
-Download and install the .NET Core SDK from the [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0) page. [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
-
-For a list of known issues, see [.NET Core known issues](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-known-issues.md).
+See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 
 # [.NET Core 2.2](#tab/netcore22)
 
 .NET Core 2.2 is supported on **macOS Sierra (version 10.12)** and later versions. A **x64** CPU architecture is required.
 
-Download and install the .NET Core SDK from the [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2) page. [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
-
-For a list of known issues, see [.NET Core known issues](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-known-issues.md).
+See [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 
 # [.NET Core 2.1](#tab/netcore21)
 
 .NET Core 2.1 is supported on **macOS Sierra (version 10.12)** and later versions. A **x64** CPU architecture is required.
 
-Download and install the .NET Core SDK from the [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1) page. [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
-
-For a list of known issues, see [.NET Core known issues](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-known-issues.md).
+See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
 
 ---
 

@@ -24,9 +24,10 @@ In this tutorial, you learn how to:
 ## Pre-requisites
 
 - [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
-- [Microsoft.ML NuGet Package](https://www.nuget.org/packages/Microsoft.ML/)
-- [Microsoft.ML.ImageAnalytics NuGet Package](https://www.nuget.org/packages/Microsoft.ML.ImageAnalytics/)
-- [Microsoft.ML.OnnxTransformer NuGet Package](https://www.nuget.org/packages/Microsoft.ML.OnnxTransformer/)
+- [Microsoft.ML 1.4.0-preview2 NuGet Package](https://www.nuget.org/packages/Microsoft.ML/1.4.0-preview2)
+- [Microsoft.ML.Experimental 0.16.0-preview2 NuGet Package](https://www.nuget.org/packages/Microsoft.ML.Experimental/0.16.0-preview2)
+- [Microsoft.ML.TimeSeries 1.4.0-preview2 NuGet Package](https://www.nuget.org/packages/Microsoft.ML.TimeSeries/1.4.0-preview2)
+- [System.Data.SqlClient NuGet Package](https://www.nuget.org/packages/System.Data.SqlClient/)
 
 ## Understand the problem
 

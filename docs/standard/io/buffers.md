@@ -80,7 +80,7 @@ The preceding method searches each segment for a specific byte. If you need to k
 
 The combination of `SequencePosition` and `TryGet` acts like an enumerator. The position field is modified at the start of each iteration to be start of each segment within the `ReadOnlySequence<T>`.
 
-The preceding method exists as an extension method on `ReadOnlySequence<T>`. <xref:System.Buffers.BuffersExtensions.PositionOf*> can be used to simplify the preceding code:
+The preceding method exists as an extension method on `ReadOnlySequence<T>`. <xref:System.Buffers.BuffersExtensions.PositionOf%2A> can be used to simplify the preceding code:
 
 ```csharp
 SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data) => buffer.PositionOf(data);

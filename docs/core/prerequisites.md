@@ -11,7 +11,7 @@ zone_pivot_groups: operating-systems-set-one
 
 This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
 
-.NET Core is made up of two components, the runtime and the SDK. The **runtime** is required to run a .NET Core application that doesn't include the runtime. The **SDK** is required to build .NET Core applications. 
+.NET Core is made up of two components, the runtime and the SDK. The **runtime** is required to run a .NET Core application that doesn't include the runtime. The **SDK** is required to build .NET Core applications.
 
 There are a variety of ways to develop .NET Core apps:
 
@@ -69,7 +69,7 @@ dotnet --list-sdks
 ::: zone pivot="os-linux"
 
 ```bash
-$ dotnet --list-sdks
+dotnet --list-sdks
 
 2.1.500 [/home/user/dotnet/sdk]
 2.1.502 [/home/user/dotnet/sdk]
@@ -85,7 +85,7 @@ $ dotnet --list-sdks
 ::: zone pivot="os-macos"
 
 ```bash
-$ dotnet --list-sdks
+dotnet --list-sdks
 
 2.1.500 [/usr/local/share/dotnet/sdk]
 2.1.502 [/usr/local/share/dotnet/sdk]
@@ -107,6 +107,7 @@ Depending on the OS you're using, you may need to install additional dependencie
 ::: zone pivot="os-windows"
 
 <!-- markdownlint-disable MD025 -->
+<!-- markdownlint-disable MD024 -->
 
 # [.NET Core 3.0](#tab/netcore30)
 
@@ -151,6 +152,8 @@ The following Windows operating systems are supported with .NET Core 2.1:
 
 ---
 
+<!-- markdownlint-disable MD001 -->
+
 ### Windows 7 / 8.1 / Server 2008 R2
 
 There are additional prerequisites if you're installing the .NET SDK or Runtime on the following Windows operating systems:
@@ -193,11 +196,9 @@ To verify your Visual Studio version:
 
 ::: zone pivot="os-linux"
 
-<!-- markdownlint-disable MD025 -->
-
 # [.NET Core 3.0](#tab/netcore30)
 
-.NET Core 3.0 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions. 
+.NET Core 3.0 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
 
 .NET Core 3.0 is supported on the following Linux distributions/versions):
 
@@ -275,8 +276,6 @@ See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 ::: zone pivot="os-macos"
 
-<!-- markdownlint-disable MD025 -->
-
 # [.NET Core 3.0](#tab/netcore30)
 
 .NET Core 3.0 is supported on **macOS High Sierra (version 10.13)** and later versions. A **x64** CPU architecture is required.
@@ -313,7 +312,7 @@ Visual Studio installs the latest .NET Core SDK tools, and one or more runtimes 
 
 Selecting any of the managed workloads for **Web**, **Desktop**, or **Azure development**, will install the .NET Core development tools and runtime. Specifically choosing the **.NET Core** workload also installs .NET Core.
 
-[![Windows Visual Studio 2019 choose .NET Core workload](media/prerequisites/windows-install-visual-studio-2019.png)](media/prerequisites/windows-install-visual-studio-2019#lightbox)
+[![Windows Visual Studio 2019 choose .NET Core workload](media/prerequisites/windows-install-visual-studio-2019.png)](media/prerequisites/windows-install-visual-studio-2019.png#lightbox)
 
 After you've installed Visual Studio for Mac, create your first app by following the [Build a C# Hello World application with .NET Core](tutorials/with-visual-studio.md) tutorial. If you want to make an app with Visual Basic, follow the [Build a Visual Basic Hello World application with .NET Core](tutorials/vb-with-visual-studio.md).
 

@@ -278,6 +278,71 @@ For more information about .NET Core 2.1 supported OS, distributions, and lifecy
 
 ---
 
+## Linux distribution dependencies
+
+Based on your linux distribution, you may need to install additional dependencies.
+
+> [!IMPORTANT]
+> The exact versions and names may vary slightly on your Linux distribution of choice.
+
+### Ubuntu
+
+Ubuntu distributions require the following libraries installed:
+
+- liblttng-ust0
+- libcurl3 (for 14.x and 16.x)
+- libcurl4 (for 18.x)
+- libssl1.0.0
+- libkrb5-3
+- zlib1g
+- libicu52 (for 14.x)
+- libicu55 (for 16.x)
+- libicu57 (for 17.x)
+- libicu60 (for 18.x)
+
+For .NET Core 2.0, following dependencies are also required:
+
+- libunwind8
+- libuuid1
+
+For .NET Core applications that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+- libgdiplus (version 6.0.1 or later)
+
+> [!WARNING]
+> Most versions of Ubuntu include an earlier version of libgdiplus. You can install a recent version
+> of libgdiplus by adding the Mono repository to your system. For more information,
+> see <https://www.mono-project.com/download/stable/>.
+
+### CentOS and Fedora
+
+CentOS distributions require the following libraries installed:
+
+- lttng-ust
+- libcurl
+- openssl-libs
+- krb5-libs
+- libicu
+- zlib
+
+Fedora users: If your openssl's version >= 1.1, you'll need to install compat-openssl10.
+
+For .NET Core 2.0, following dependencies are also required:
+
+- libunwind
+- libuuid
+
+For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+
+For .NET Core applications that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
+
+- libgdiplus (version 6.0.1 or later)
+
+> [!WARNING]
+> Most versions of CentOS and Fedora include an earlier version of libgdiplus. You can install a recent version
+> of libgdiplus by adding the Mono repository to your system. For more information,
+> see <https://www.mono-project.com/download/stable/>.
+
 ::: zone-end
 
 ::: zone pivot="os-macos"
@@ -348,7 +413,7 @@ After you've installed .NET Core support for VS Code, create your first app by f
 
 The [dotnet-install scripts](./tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](tools/dotnet-install-script.md).
 
-The script defaults to installing the latest "LTS" version, which is currently .NET Core 2.1. To install the current release of .NET Core, which is 3.0, run the script with the following switch:
+The script defaults to installing the latest "LTS" version, which is currently .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
 
 ```powershell
 dotnet-install.ps1 -Channel LTS

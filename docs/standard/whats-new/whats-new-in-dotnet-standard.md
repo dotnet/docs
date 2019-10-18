@@ -11,7 +11,7 @@ ms.author: "ronpet"
 
 The .NET Standard is a formal specification that defines a versioned set of APIs that must be available on .NET implementations that comply with that version of the standard. The .NET Standard is targeted at library developers. A library that targets a .NET Standard version can be used on any .NET Framework, .NET Core, or Xamarin implementation that supports that version of the standard.
 
-The most recent version of the .NET Standard is 2.0. It is included with the .NET Core 2.0 SDK, as well as with Visual Studio 2017 Version 15.3 with the .NET Core workload installed.
+The most recent version of the .NET Standard is 2.0. It is included with the .NET Core 2.0 SDK, as well as with Visual Studio 2017 version 15.3 with the .NET Core workload installed.
 
 ## Supported .NET implementations
 
@@ -55,7 +55,7 @@ The single requirement is that the APIs called by the .NET Framework class libra
 
 ### Support for Visual Basic
 
-You can now develop .NET Standard libraries in Visual Basic. For Visual Basic developers using Visual Studio 2017 Version 15.3 or later with the .NET Core workload installed, Visual Studio now includes a .NET Standard Class Library template. For Visual Basic developers who use other development tools and environments, you can use the [dotnet new](../../core/tools/dotnet-new.md) command to create a .NET Standard Library project. For more information, see the [Tooling support for .NET Standard libraries](#tooling-support-for-net-standard-libraries).
+You can now develop .NET Standard libraries in Visual Basic. For Visual Basic developers using Visual Studio 2017 version 15.3 or later with the .NET Core workload installed, Visual Studio now includes a .NET Standard Class Library template. For Visual Basic developers who use other development tools and environments, you can use the [dotnet new](../../core/tools/dotnet-new.md) command to create a .NET Standard Library project. For more information, see the [Tooling support for .NET Standard libraries](#tooling-support-for-net-standard-libraries).
 
 ### Tooling support for .NET Standard libraries
 

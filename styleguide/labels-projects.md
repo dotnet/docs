@@ -12,7 +12,7 @@ If this is your first experience with [dotnet/docs](https://github.com/dotnet/do
 
 We use labels to classify issues in many different ways:
 
-- [.NET Guides](find-a-single-.net-guide) and [sections of a guide](#search-one-section-of-a-guide).
+- [.NET Guides](find-a-single-net-guide) and [sections of a guide](#search-one-section-of-a-guide).
 - [Target release](#releases)
 - [Priority](#priority)
 

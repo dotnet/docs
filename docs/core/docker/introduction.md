@@ -35,7 +35,7 @@ The Microsoft Container Registry (MCR) is the official source of Microsoft-provi
 
 ### Dockerfile
 
-A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. For the most part, when you rebuild the image only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate to create a new image in the same manner you created it. While this allows you to distribute the *instructions* on how to create the image, the main way to distribute your image is to publish it to a registry.
+A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. For the most part, when you rebuild the image only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate a new image in the same manner you created it. While this allows you to distribute the *instructions* on how to create the image, the main way to distribute your image is to publish it to a registry.
 
 ## .NET Core images
 

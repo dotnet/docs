@@ -38,15 +38,15 @@ There are a variety of ways to develop .NET Core apps:
 
 ::: zone-end
 
-The following articles have a complete list of .NET Core supported operating systems per version:
+You can download a standalone installer for each OS from the following links:
 
-- [.NET Core 3.0](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md)
-- [.NET Core 2.2](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)
-- [.NET Core 2.1](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)
+- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2).
+- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1).
 
-## Check what is installed
+## Is .NET Core installed
 
-Based on your environment, the .NET Core SDK may already be installed. If you use an IDE, such as Visual Studio, Visual Studio Code, or Visual Studio for Mac, the .NET Core SDK may already be installed on your system. You can check what is installed by opening a terminal and running the `dotnet --list-sdks` command:
+It is possible that the .NET Core SDK may already be installed on your OS. If you installed a development IDE, such as Visual Studio, Visual Studio Code, or Visual Studio for Mac, the .NET Core SDK may already be installed on your system. You can check what is installed by opening a terminal and running the `dotnet --list-sdks` command:
 
 ::: zone pivot="os-windows"
 
@@ -97,14 +97,6 @@ $ dotnet --list-sdks
 ::: zone-end
 
 You can also see what runtimes are installed with the command `dotnet --list-runtimes`.
-
-## Standalone installers
-
-You can download a standalone installer for each OS from the following links:
-
-- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
-- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2).
-- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1).
 
 ## Dependencies
 
@@ -317,8 +309,8 @@ For a list of known issues, see [.NET Core known issues](https://github.com/dotn
 
 On Linux, there are two installer package choices:
 
-* Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.
-* Using the packages themselves, DEB or RPM.
+- Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.
+- Using the packages themselves, DEB or RPM.
 
 ## Installer script for automation
 

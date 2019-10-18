@@ -1,7 +1,7 @@
 ---
 title: "How to: Configure Network Tracing"
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "formatting [.NET Framework], network tracing"
   - "network tracing, configuring"
   - "level attribute"
@@ -13,15 +13,16 @@ helpviewer_keywords:
 ms.assetid: 5ef9fe4b-8d3d-490e-9259-1d014b2181af
 ---
 # How to: Configure Network Tracing
-The application or computer configuration file holds the settings that determine the format and content of network traces. Before performing this procedure, be sure tracing is enabled. For information about enabling tracing, see [Enabling Network Tracing](enabling-network-tracing.md).  
-  
- The computer configuration file, machine.config, is stored in the %Windir%\Microsoft.NET\Framework folder in the directory where Windows was installed. There is a separate machine.config file in the folders under %Windir%\Microsoft.NET\Framework for each version of the .NET Framework installed on the computer (for example, C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\machine.config or C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\machine.config.).  
-  
- These settings can also be made in the configuration file for the application, which has precedence over the computer configuration file.  
-  
+
+The application or computer configuration file holds the settings that determine the format and content of network traces. Before performing this procedure, be sure tracing is enabled. For information about enabling tracing, see [Enabling Network Tracing](enabling-network-tracing.md).
+
+The computer configuration file, *machine.config*, is stored in the *%Windir%\Microsoft.NET\Framework* folder in the directory where Windows was installed. There is a separate *machine.config* file in the folders under *%Windir%\Microsoft.NET\Framework* for each version of the .NET Framework installed on the computer (for example, *C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\machine.config* or *C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Config\machine.config*.).
+
+These settings can also be made in the configuration file for the application, which has precedence over the computer configuration file.
+
 ### To configure network tracing  
-  
-- Add the following lines to the appropriate configuration file. The values and options for these settings are described in the tables below.  
+
+- Add the following lines to the appropriate configuration file. The values and options for these settings are described in the tables below.
   
     ```xml  
     <configuration>  
@@ -72,25 +73,25 @@ The application or computer configuration file holds the settings that determine
     </configuration>  
     ```  
   
- When you add a name to the `<switches>` block, the trace output includes information from some methods related to the name. The following table describes the output.  
+When you add a name to the `<switches>` block, the trace output includes information from some methods related to the name. The following table describes the output.
   
 |Name|Output from|  
 |----------|-----------------|  
-|`System.Net.Sockets`|Some public methods of the <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.TcpListener>, <xref:System.Net.Sockets.TcpClient>, and <xref:System.Net.Dns> classes|  
-|`System.Net`|Some public methods of the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpWebResponse>, <xref:System.Net.FtpWebRequest>, and <xref:System.Net.FtpWebResponse> classes, and SSL debug information (invalid certificates, missing issuers list, and client certificate errors.)|  
-|`System.Net.HttpListener`|Some public methods of the <xref:System.Net.HttpListener>, <xref:System.Net.HttpListenerRequest>, and <xref:System.Net.HttpListenerResponse> classes.|  
-|`System.Net.Cache`|Some private and internal methods in `System.Net.Cache`.|  
-|`System.Net.Http`|Some public methods of the  <xref:System.Net.Http.HttpClient>,  <xref:System.Net.Http.DelegatingHandler>,  <xref:System.Net.Http.HttpClientHandler>, <xref:System.Net.Http.HttpMessageHandler>,  <xref:System.Net.Http.MessageProcessingHandler>, and  <xref:System.Net.Http.WebRequestHandler> classes.|  
-|`System.Net.WebSockets.WebSocket`|Some public methods of the <xref:System.Net.WebSockets.ClientWebSocket> and <xref:System.Net.WebSockets.WebSocket> classes.|  
-  
- The attributes listed in the following table configure trace output.  
-  
+|<xref:System.Net.Sockets>|Some public methods of the <xref:System.Net.Sockets.Socket>, <xref:System.Net.Sockets.TcpListener>, <xref:System.Net.Sockets.TcpClient>, and <xref:System.Net.Dns> classes|  
+|<xref:System.Net>|Some public methods of the <xref:System.Net.HttpWebRequest>, <xref:System.Net.HttpWebResponse>, <xref:System.Net.FtpWebRequest>, and <xref:System.Net.FtpWebResponse> classes, and SSL debug information (invalid certificates, missing issuers list, and client certificate errors.)|  
+|<xref:System.Net.HttpListener>|Some public methods of the <xref:System.Net.HttpListener>, <xref:System.Net.HttpListenerRequest>, and <xref:System.Net.HttpListenerResponse> classes.|  
+|<xref:System.Net.Cache>|Some private and internal methods in `System.Net.Cache`.|  
+|<System.Net.Http>|Some public methods of the  <xref:System.Net.Http.HttpClient>,  <xref:System.Net.Http.DelegatingHandler>,  <xref:System.Net.Http.HttpClientHandler>, <xref:System.Net.Http.HttpMessageHandler>,  <xref:System.Net.Http.MessageProcessingHandler>, and  <xref:System.Net.Http.WebRequestHandler> classes.|  
+|<xref:System.Net.WebSockets.WebSocket>|Some public methods of the <xref:System.Net.WebSockets.ClientWebSocket> and <xref:System.Net.WebSockets.WebSocket> classes.|  
+
+The attributes listed in the following table configure trace output:
+
 |Attribute name|Attribute value|  
 |--------------------|---------------------|  
 |`Value`|Required <xref:System.String> attribute. Sets the verbosity of the output. Legitimate values are `Critical`, `Error`, `Verbose`, `Warning`, and `Information`.<br /><br /> This attribute must be set on the \<add name> element of the \<switches> element as shown in the example. An exception is thrown if this attribute is set on the \<source> element.|  
 |`maxdatasize`|Optional <xref:System.Int32> attribute. Sets the maximum number of bytes of network data included in each line trace. The default value is 1024.<br /><br /> This attribute must be set on the \<source> element as shown in the example. An exception is thrown if this attribute is set on an element under the \<switches> element.|  
 |`Tracemode`|Optional <xref:System.String> attribute. Set to `includehex` to show protocol traces in hexadecimal and text format. Set to `protocolonly` to show only text. The default value is `includehex`.<br /><br /> This attribute must be set on the \<switches> element as shown in the example. An exception is thrown if this attribute is set on an element under the \<source> element.|  
-  
+
 ## See also
 
 - [Interpreting Network Tracing](interpreting-network-tracing.md)

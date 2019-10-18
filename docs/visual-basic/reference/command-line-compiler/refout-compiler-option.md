@@ -1,9 +1,9 @@
 ---
 title: "-refout (Visual Basic)"
 ms.date: 03/16/2018
-f1_keywords: 
+f1_keywords:
   - "/refout"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "refout compiler option [Visual Basic]"
   - "/refout compiler option [Visual Basic]"
   - "-refout compiler option [Visual Basic]"
@@ -23,8 +23,8 @@ The **-refout** option specifies a file path where the reference assembly should
 
 ## Arguments
 
- `filepath`
-The path and filename of the reference assembly. It should generally be in a sub-folder of the primary assembly. The recommended convention (used by MSBuild) is to place the reference assembly in a "ref/" sub-folder relative to the primary assembly. All folders in `filepath` must exist; the compiler does not create them. 
+`filepath`  
+The path and filename of the reference assembly. It should generally be in a sub-folder of the primary assembly. The recommended convention (used by MSBuild) is to place the reference assembly in a "ref/" sub-folder relative to the primary assembly. All folders in `filepath` must exist; the compiler does not create them.
 
 ## Remarks
 

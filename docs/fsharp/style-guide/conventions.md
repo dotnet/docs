@@ -603,7 +603,7 @@ For example, here is the code that is run in [Ionide](http://ionide.io/) to prov
 
 Because there is no need for a class when interacting with the Visual Studio Code API, Object Expressions are an ideal tool for this. They are also valuable for unit testing, when you want to stub out an interface with test routines in an ad hoc manner.
 
-## Type Abbreviations
+## Consider Type Abbreviations to shorten signatures
 
 [Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to assign a label to another type, such as a function signature or a more complex type. For example, the following alias assigns a label to what's needed to define a computation with [CNTK](https://docs.microsoft.com/cognitive-toolkit/), a deep learning library:
 
@@ -641,3 +641,19 @@ module Networking =
 ```
 
 In summary, the pitfall with Type Abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besides what `int` already has.
+
+An alternative approach to using type abbreviations to represent a domain is to use single-case discriminated unions. The previous sample can be modeled as follows:
+
+```fsharp
+type BufferSize = BufferSize of int
+```
+
+If you write code that operats in terms of `BufferSize` and its underlying value, you need to construct one rather than pass in any arbitrary integer:
+
+```fsharp
+module Networking =
+    ...
+    let send data (BufferSize size) =
+    ...
+
+This reduces the likelihood that an arbitrary integer is mistakenly passed into the `send` function, because the caller must construct a `BufferSize` type to wrap a value before calling the function.

@@ -42,13 +42,13 @@ The algorithm used in this tutorial is [Single Spectrum Analysis](http://ssa.cf.
 ### Create Console Application
 
 1. Create a new .NET Core Console application
-1. Install `Microsoft.ML` NuGet Package
-    1. In Solution Explorer, right-click on your project and select Manage NuGet Packages.
-    1. Choose "nuget.org" as the Package source, select the Browse tab, search for Microsoft.ML.
-    1. Select the Install button.
-    1. Select the OK button on the Preview Changes dialog and then select the I Accept button on the License Acceptance dialog if you agree with the license terms for the packages listed.
-    1. Repeat these steps for Microsoft.ML.ImageAnalytics and Microsoft.ML.OnnxTransformer.
-    1. Do the same for `System.Data.SqlClient`, `Microsoft.ML.Experimental` and `Microsoft.ML.TimeSeries`.
+1. Install **Microsoft.ML** NuGet Package
+    1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
+    1. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**.
+    1. Check the **Include prerelease** checkbox.
+    1. Select the **Install** button.
+    1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
+    1. Repeat these steps for **System.Data.SqlClient**, **Microsoft.ML.Experimental** and **Microsoft.ML.TimeSeries**.
 
 ### Prepare and understand the data
 

@@ -2,7 +2,7 @@
 
 The .NET docs team makes extensive use of [GitHub labels](https://github.com/dotnet/docs/labels) to organize our work. By filtering on combinations of labels, we can quickly focus on sections of the [.NET docs website](https://docs.microsoft.com/dotnet) of interest. 
 
-We also use [GitHub projects](https://github.com/dotnet/docs/projects) to organize sprints and other goal oriented epics.
+We also use [GitHub projects](https://github.com/dotnet/docs/projects) to organize sprints and other goal-oriented epics.
 
 This roadmap explains how we use these organizational tools, and has links to handy filters we use to find areas of interest.
 
@@ -86,7 +86,7 @@ The .NET guides are large, so these labels further limit the scope by a section 
 
 ### Releases
 
-![:checkered_flag: Release: on dark dark yellow](./images/release.png "Prefix for release labels")
+![:checkered_flag: Release: on dark yellow](./images/release.png "Prefix for release labels")
 
 Issues tagged for a specific release are noted with the `:checkered_flag: Release:` prefix and have a dark yellow background. 
 
@@ -116,4 +116,3 @@ We also use projects in two other ways:
 
 - Month YYYY project types: These are scrum boards for each month's working plan.
 - Long-running epics: These are used to organize tasks toward a goal when the work will occur over several months.
-

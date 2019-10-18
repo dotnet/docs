@@ -35,7 +35,7 @@ In order to run an efficient operation, inventory management plays a key role. H
 
 The technique for analyzing data used in this tutorial is univariate time-series analysis. Univariate time-series analysis takes a look at a single numerical observation over a period of time at specific intervals such as montly sales. 
 
-The algorithm used in this tutorial is [Single Spectrum Analysis](http://ssa.cf.ac.uk/zhigljavsky/pdfs/SSA/SSA_encyclopedia.pdf)(SSA). SSA works by decomposing a time-series into a set of principal components that can be interpreted as the parts of a signal that correspond to trends, noise, seasonality and many other factors.
+The algorithm used in this tutorial is [Single Spectrum Analysis(SSA)](http://ssa.cf.ac.uk/zhigljavsky/pdfs/SSA/SSA_encyclopedia.pdf). SSA works by decomposing a time-series into a set of principal components that can be interpreted as the parts of a signal that correspond to trends, noise, seasonality and many other factors.
 
 ## Set up .NET Core Console Application
 

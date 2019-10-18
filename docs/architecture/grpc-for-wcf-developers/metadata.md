@@ -15,7 +15,7 @@ It's possible to add generic key/value headers to WCF messages using an <xref:Sy
 
 gRPC calls and responses can also include metadata similar to HTTP headers. These are mostly invisible to gRPC itself and are passed through to be processed by your application code or middleware. Metadata is represented as key/value pairs where the key is a string and the value is either a string or binary data. You don’t need to specify metadata in the `.proto` file.
 
-Metadata is handled using the `Metadata` class from the [Grpc.Core](https://www.nuget.org/packages/Grpc.Core/) NuGet package. This class can be used with collection initializer syntax.
+Metadata is handled using the `Metadata` class from the [Grpc.Core.Api](https://www.nuget.org/packages/Grpc.Core.Api/) NuGet package. This class can be used with collection initializer syntax.
 
 The following example shows how to add metadata to a call from a C# client:
 

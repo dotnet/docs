@@ -20,7 +20,7 @@ The computer configuration file, *machine.config*, is stored in the *%Windir%\Mi
 
 These settings can also be made in the configuration file for the application, which has precedence over the computer configuration file.
 
-### To configure network tracing  
+## To configure network tracing  
 
 - Add the following lines to the appropriate configuration file. The values and options for these settings are described in the tables below.
   

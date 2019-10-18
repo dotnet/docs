@@ -132,7 +132,7 @@ The following is a simple "Hello world" example that displays a message box cont
     vbc Example.vb -res:Greeting.resources
     ```
 
-6. Create a subdirectory in the main application directory for each localized culture supported by the application. You should create an *en-US*, an *fr-FR*, and a *ru-RU* subdirectory. Visual Studio creates these subdirectories automatically as part of the compilation process.
+6. Create a subdirectory in the main application directory for each localized culture supported by the application. You should create an *en-US*, an *fr-FR*, and an *ru-RU* subdirectory. Visual Studio creates these subdirectories automatically as part of the compilation process.
 
 7. Embed the individual culture-specific *.resources* files into satellite assemblies and save them to the appropriate directory. The command to do this for each *.resources* file is:
 
@@ -265,7 +265,7 @@ The following example uses a method in a .NET Framework class library to extract
     vbc -t:library -resource:Strings.resources -delaysign+ -keyfile:publickey.snk StringLibrary.vb
     ```
 
-8. Create a subdirectory in the main application directory for each localized culture supported by the application. You should create an *en-US*, an *fr-FR*, and a *ru-RU* subdirectory. Visual Studio creates these subdirectories automatically as part of the compilation process. Because all satellite assemblies have the same file name, the subdirectories are used to store individual culture-specific satellite assemblies until they are signed with a public/private key pair.
+8. Create a subdirectory in the main application directory for each localized culture supported by the application. You should create an *en-US*, an *fr-FR*, and an *ru-RU* subdirectory. Visual Studio creates these subdirectories automatically as part of the compilation process. Because all satellite assemblies have the same file name, the subdirectories are used to store individual culture-specific satellite assemblies until they are signed with a public/private key pair.
 
 9. Embed the individual culture-specific *.resources* files into delay signed satellite assemblies and save them to the appropriate directory. The command to do this for each *.resources* file is:
 

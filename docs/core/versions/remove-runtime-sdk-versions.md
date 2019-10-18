@@ -199,7 +199,7 @@ The parent directories for the SDK and runtime are listed in the output from the
 
 ## .NET Core Uninstall Tool
 
-The [.NET Core Uninstall Tool (`dotnet-core-uninstall`)](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) lets you clean-up .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled. 
+The [.NET Core Uninstall Tool](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) (`dotnet-core-uninstall`) lets you clean-up .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled.
 
 The documentation of the tool is available [here](../additional-tools/dotnet-core-uninstall.md).
 
@@ -217,13 +217,13 @@ Visual Studio installers prior to Visual Studio 2019 Update 16.3 call the standa
 
 ## Removing the NuGet Fallback Folder
 
-Prior to .NET Core SDK 3.0, the .NET Core SDK installers used the `NuGetFallbackFolder` to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The `NuGetFallbackFolder` is located at `C:\Program Files\dotnet\sdk` on Windows and at `/usr/local/share/dotnet/sdk` on macOS.
+Prior to .NET Core SDK 3.0, the .NET Core SDK installers used the `NuGetFallbackFolder` to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The `NuGetFallbackFolder` is located at *C:\Program Files\dotnet\sdk* on Windows and at */usr/local/share/dotnet/sdk* on macOS.
 
 In some cases you may want to remove this folder:
 
 * You are no longer doing .NET development with SDKs below .NET Core SDK 3.0.
 * You are doing development on lower SDKs, but you don't mind being on line and things being slower once.
 
-If you want to remove the NuGet Fallback folder, you can delete it, although you will need Admin privileges.
+If you want to remove the NuGet Fallback folder, you can delete it, although you will need admin privileges.
 
 It is generally undesirable to delete the `dotnet` folder. Doing so would remove any global tools you have installed. Also, on Windows, you will break Visual Studio 2019 Update 16.3 (run **Repair** to recover) and if there are SDK entries in the **Add/Remove Programs** dialog they will be orphaned.

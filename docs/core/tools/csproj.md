@@ -225,7 +225,7 @@ The following example specifies the fallbacks only for the `netcoreapp2.1` targe
 
 ## Build events
 
-The way that pre-build and post-build events are specified in the project file has changed. The properties PreBuildEvent and PostBuildEvent are not supported in the SDK-style project format. For example, the following property is not supported:
+The way that pre-build and post-build events are specified in the project file has changed. The properties PreBuildEvent and PostBuildEvent are not recommended in the SDK-style project format, because macros such as $(ProjectDir) will not be resolved. For example, the following code is no longer supported:
 
 ```xml
 <PropertyGroup>

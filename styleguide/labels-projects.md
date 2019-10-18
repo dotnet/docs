@@ -1,6 +1,6 @@
 # Labels and projects roadmap
 
-The .NET docs team makes extensive use of [GitHub labels](https://github.com/dotnet/docs/labels) to organize our work. By filtering on combinations of labels, we can quickly focus on sections of the [.NET docs website](https://docs.microsoft.com/dotnet) of interest. 
+The .NET docs team makes extensive use of [GitHub labels](https://github.com/dotnet/docs/labels) to organize our work. By filtering on combinations of labels, we can quickly focus on sections of interest on the [.NET docs website](https://docs.microsoft.com/dotnet). 
 
 We also use [GitHub projects](https://github.com/dotnet/docs/projects) to organize sprints and other goal-oriented epics.
 
@@ -8,7 +8,7 @@ This roadmap explains how we use these organizational tools, and has links to ha
 
 ## Labels
 
-If this is your first experience with [dotnet/docs](https://github.com/dotnet/docs), start with the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues. These are issues that have a more focused scope. They are a great way to make your first contribution. From the up-for-grabs view, you can further filter issues based on areas and priority.
+If this is your first experience contributing to [dotnet/docs](https://github.com/dotnet/docs), start with the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues. These are issues that have a more focused scope. They are a great way to make your first contribution. From the up-for-grabs view, you can further filter issues based on areas and priority.
 
 We use labels to classify issues in many different ways:
 
@@ -20,7 +20,7 @@ You can combine a label from each set (guide, release, priority) to create a nar
 
 ### Find a single .NET guide
 
-We use labels for each of the architecture guides, and for each .NET Guide. 
+We use labels for each of the architecture guides and for each .NET Guide. 
 
 ![:book: guide on light green background](./images/guide.png "Prefix for architecture guide labels")
 
@@ -59,7 +59,7 @@ Each .NET Guide is noted with the `:books: Area` prefix and has a dark blue back
 
 ![:card_file_box: Area on medium blue background](./images/technology.png "Prefix for .NET Guide sub-area labels")
 
-The .NET guides are large, so these labels further limit the scope by a section of a guide. Each .NET Guide is noted with the `:card_file_box: Technology` prefix and has a medium blue background. Many of these labels apply to multiple guides. You should add one of these labels after scoping your search to one of the areas described in the previous section.
+The .NET guides are large, so these labels further limit the scope by a section of a guide. Each .NET Guide subarea is noted with the `:card_file_box: Technology` prefix and has a medium blue background. Many of these labels apply to multiple guides. Add one of these labels to your filter after scoping your search to one of the areas described in the previous section.
 
 - AppCompat
 - Async Task
@@ -107,7 +107,7 @@ Priority labels are all `P` followed by a single digit. Lower numbers are higher
 
 ### What about the other labels?
 
-There are many other labels used by the content teams to manage different classifications of issues. The labels can be ignored outside of the content team.
+There are many other labels used by the content teams to manage different classifications of issues. If you're not on the content team, you can ignore these other labels.
 
 ## Projects
 

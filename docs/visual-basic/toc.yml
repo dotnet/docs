@@ -963,8 +963,8 @@
       href: language-reference/error-messages/bad-record-length.md
     - name: Because this call is not awaited, the current method continues to run before the call is completed
       href: language-reference/error-messages/because-this-call-is-not-awaited-the-current-method-continues-to-run.md
-    - name: Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field
-      href: language-reference/error-messages/cannot-convert-anonymous-type-to-expression-tree.md
+    - name: Cannot convert anonymous type to an expression tree because a property of the type is used to initialize another property
+      href: language-reference/error-messages/bc36548.md
     - name: Cannot create ActiveX Component
       href: language-reference/error-messages/cannot-create-activex-component.md
     - name: Cannot refer to '<name>' because it is a member of the value-typed field '<name>' of class '<classname>' which has 'System.MarshalByRefObject' as a base class

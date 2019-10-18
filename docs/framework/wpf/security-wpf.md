@@ -49,7 +49,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
 <a name="Application_Navigation_Security"></a>   
 ### Application Navigation Security  
- Application navigation is considered safe if it can be identified with a pack [!INCLUDE[TLA2#tla_uri](../../../includes/tla2sharptla-uri-md.md)], which supports four types of content:  
+ Application navigation is considered safe if it can be identified with a pack URI, which supports four types of content:  
   
 |Content Type|Description|URI Example|  
 |------------------|-----------------|-----------------|  
@@ -59,7 +59,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |Application code|XAML resources that have a compiled code-behind.<br /><br /> -or-<br /><br /> XAML files that are added to a project with a build type of **Page**.|`pack://application:,,,/MyResourceFile` `.xaml`|  
   
 > [!NOTE]
-> For more information about application data files and pack [!INCLUDE[TLA2#tla_uri#plural](../../../includes/tla2sharptla-urisharpplural-md.md)], see [WPF Application Resource, Content, and Data Files](./app-development/wpf-application-resource-content-and-data-files.md).  
+> For more information about application data files and pack URIs, see [WPF Application Resource, Content, and Data Files](./app-development/wpf-application-resource-content-and-data-files.md).  
   
  Files of these content types can be navigated to by either the user or programmatically:  
   

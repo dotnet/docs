@@ -14,7 +14,7 @@ Causes the current class or interface to inherit the attributes, variables, prop
   
 ## Syntax  
   
-```  
+```vb  
 Inherits basetypenames  
 ```  
   

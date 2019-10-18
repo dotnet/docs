@@ -70,7 +70,7 @@ You could also add instance-specific configuration in the registration to, for e
 ```csharp
 services.AddHttpClient<ICatalogService, CatalogService>(client =>
 {
-    client.BaseAddress = new Uri(Configuration["BaseUrl"])
+    client.BaseAddress = new Uri(Configuration["BaseUrl"]);
 })
     .AddPolicyHandler(GetRetryPolicy())
     .AddPolicyHandler(GetCircuitBreakerPolicy());

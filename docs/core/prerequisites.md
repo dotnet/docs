@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Windows, Linux, MacOS
 description: Supported Windows, Linux, MacOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications.
 author: leecow
 ms.author: leecow
-ms.date: 10/03/2019
+ms.date: 10/18/2019
 zone_pivot_groups: operating-systems-set-one
 ---
 
@@ -13,7 +13,7 @@ This article provides information on getting started with .NET Core. .NET Core c
 
 .NET Core is made up of two components, the runtime and the SDK. The **runtime** is required to run a .NET Core application that doesn't include the runtime. The **SDK** is required to build .NET Core applications.
 
-There are a variety of ways to develop .NET Core apps:
+There are different kinds of ways to develop .NET Core apps:
 
 ::: zone pivot="os-windows"
 
@@ -48,7 +48,7 @@ It's important to understand the [.NET Core support policy](https://dotnet.micro
 
 ## Is .NET Core installed
 
-It is possible that the .NET Core SDK may already be installed on your OS. If you installed a development IDE, such as Visual Studio, Visual Studio Code, or Visual Studio for Mac, the .NET Core SDK may already be installed on your system. You can check what is installed by opening a terminal and running the `dotnet --list-sdks` command:
+It's possible that the .NET Core SDK may already be installed on your OS. The .NET Core SDK might have been installed if you installed a development IDE, such as Visual Studio or Visual Studio for Mac. You can check what is installed by opening a terminal and running the `dotnet --list-sdks` command:
 
 ::: zone pivot="os-windows"
 
@@ -123,7 +123,7 @@ The following Windows operating systems are supported with .NET Core 3.0:
 | Windows Server                | 2012 R2 SP1+                   | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
-See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 3.0 supported OS, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
 
 # [.NET Core 2.2](#tab/netcore22)
 
@@ -139,7 +139,7 @@ The following Windows operating systems are supported with .NET Core 2.2:
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
 | Nano Server                   | Version 1709+                  | x64, ARM32      |
 
-See [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 2.2 supported OS, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
 
 # [.NET Core 2.1](#tab/netcore21)
 
@@ -154,7 +154,7 @@ The following Windows operating systems are supported with .NET Core 2.1:
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
 
-See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 2.1 supported OS, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 
 ---
 
@@ -174,7 +174,7 @@ Install the following:
 - [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=52685).
 - [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot)
 
-The requirements above are also required if you encounter one of the following errors:
+The requirements above are also required if you come across one of the following errors:
 
 > The program can't start because api-ms-win-crt-runtime-l1-1-0.dll is missing from your computer. Try reinstalling the program to fix this problem.
 >
@@ -204,7 +204,7 @@ To verify your Visual Studio version:
 
 # [.NET Core 3.0](#tab/netcore30)
 
-.NET Core 3.0 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
+.NET Core 3.0 treats Linux as a single operating system. There's a single Linux build (per chip architecture) for supported Linux distributions.
 
 .NET Core 3.0 is supported on the following Linux distributions/versions:
 
@@ -224,13 +224,13 @@ To verify your Visual Studio version:
 | SUSE Enterprise Linux (SLES)   | 12 SP2+               | x64 |
 | Alpine Linux                   | 3.8+                  | x64, ARM64 |
 
-See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 3.0 supported OS, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
 
 For more information about how to install .NET Core 3.0 on ARM64, see [Installing .NET Core 3.0 on Linux ARM64](https://gist.github.com/richlander/467813274cea8abc624553ee72b28213).
 
 # [.NET Core 2.2](#tab/netcore22)
 
-.NET Core 2.2 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
+.NET Core 2.2 treats Linux as a single operating system. There's a single Linux build (per chip architecture) for supported Linux distributions.
 
 .NET Core 2.2 is supported on the following Linux distributions/versions:
 
@@ -250,11 +250,11 @@ For more information about how to install .NET Core 3.0 on ARM64, see [Installin
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |
 | Alpine Linux                   |  3.7+                   | x64 |
 
-See [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 2.2 supported OS, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
 
 # [.NET Core 2.1](#tab/netcore21)
 
-.NET Core 2.1 treats Linux as a single operating system. There is a single Linux build (per chip architecture) for supported Linux distributions.
+.NET Core 2.1 treats Linux as a single operating system. There's a single Linux build (per chip architecture) for supported Linux distributions.
 
 .NET Core 2.1 is supported on the following Linux distributions/versions:
 
@@ -274,7 +274,7 @@ See [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |
 | Alpine Linux                   |  3.7+                   | x64 |
 
-See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 2.1 supported OS, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 
 ---
 
@@ -286,19 +286,19 @@ See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/ma
 
 .NET Core 3.0 is supported on **macOS High Sierra (version 10.13)** and later versions. A **x64** CPU architecture is required.
 
-See [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) for the complete list of .NET Core 3.0 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 3.0 supported OS, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
 
 # [.NET Core 2.2](#tab/netcore22)
 
 .NET Core 2.2 is supported on **macOS Sierra (version 10.12)** and later versions. A **x64** CPU architecture is required.
 
-See [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) for the complete list of .NET Core 2.2 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 2.2 supported OS, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
 
 # [.NET Core 2.1](#tab/netcore21)
 
 .NET Core 2.1 is supported on **macOS Sierra (version 10.12)** and later versions. A **x64** CPU architecture is required.
 
-See [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) for the complete list of .NET Core 2.1 supported operating systems, distributions and versions, out of support OS versions, and lifecycle policy links.
+For more information about .NET Core 2.1 supported OS, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 
 ---
 
@@ -312,9 +312,9 @@ Visual Studio installs the latest .NET Core SDK tools, and one or more runtimes 
 
 Selecting any of the managed workloads for **Web**, **Desktop**, or **Azure development**, will install the .NET Core development tools and runtime. Specifically choosing the **.NET Core** workload also installs .NET Core.
 
-[![Windows Visual Studio 2019 choose .NET Core workload](media/prerequisites/windows-install-visual-studio-2019.png)](media/prerequisites/windows-install-visual-studio-2019.png#lightbox)
+[![Windows Visual Studio 2019 with .NET Core workload](media/prerequisites/windows-install-visual-studio-2019.png)](media/prerequisites/windows-install-visual-studio-2019.png#lightbox)
 
-After you've installed Visual Studio for Mac, create your first app by following the [Build a C# Hello World application with .NET Core](tutorials/with-visual-studio.md) tutorial. If you want to make an app with Visual Basic, follow the [Build a Visual Basic Hello World application with .NET Core](tutorials/vb-with-visual-studio.md).
+After you've installed Visual Studio, create your first app by following the [C# Hello World tutorial](tutorials/with-visual-studio.md) or the [Visual Basic Hello World tutorial](tutorials/vb-with-visual-studio.md).
 
 ::: zone-end
 
@@ -322,11 +322,11 @@ After you've installed Visual Studio for Mac, create your first app by following
 
 ## Install with Visual Studio for Mac
 
-The latest release version of the .NET Core tools are installed when you install Visual Studio for Mac and select the **.NET Core workload**. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019).
+Visual Studio for Mac installs the .NET Core SDK when the **.NET Core workload** is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019).
 
-[![macOS Visual Studio 2019 for Mac choose .NET Core workload feature](media/prerequisites/mac-install-selection.png)](media/prerequisites/mac-install-selection.png#lightbox)
+[![macOS Visual Studio 2019 for Mac with .NET Core workload feature](media/prerequisites/mac-install-selection.png)](media/prerequisites/mac-install-selection.png#lightbox)
 
-After you've installed Visual Studio for Mac, create your first app by following the [Get started with .NET Core on macOS using Visual Studio for Mac](tutorials/using-on-mac-vs.md) tutorial.
+After you've installed Visual Studio for Mac, create your first app by following the [Get started on macOS](tutorials/using-on-mac-vs.md) tutorial.
 
 ::: zone-end
 
@@ -346,7 +346,7 @@ After you've installed .NET Core support for VS Code, create your first app by f
 
 ## Install with PowerShell automation
 
-The [dotnet-install scripts](./tools/dotnet-install-script.md) are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](tools/dotnet-install-script.md).
+The [dotnet-install scripts](./tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](tools/dotnet-install-script.md).
 
 The script defaults to installing the latest "LTS" version, which is currently .NET Core 2.1. To install the current release of .NET Core, which is 3.0, run the script with the following switch:
 
@@ -371,7 +371,7 @@ On Linux, there are two installer package choices:
 
 ## Install with bash automation
 
-The [dotnet-install scripts](./tools/dotnet-install-script.md) are used to perform a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](tools/dotnet-install-script.md).
+The [dotnet-install scripts](./tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](tools/dotnet-install-script.md).
 
 The script defaults to installing the latest "LTS" version, which is currently .NET Core 2.1. To install the current release of .NET Core, which is 3.0, run the script with the following switch:
 

@@ -20,7 +20,7 @@ For more information, see the [Prerequisites for .NET Core on Windows](../window
 
 Begin by creating a simple "Hello World" console application. Follow these steps:
 
-1. Launch Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
+1. Launch Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
 
    ![New Project dialog with Console App selected](./media/with-visual-studio/visual-studio-new-project.png)
 
@@ -53,7 +53,7 @@ Enhance your application to prompt the user for their name and display it along 
 
 1. Enter the following C# code in the code window immediately after the opening bracket that follows the `static void Main(string[] args)` line and before the first closing bracket:
 
-   [!code-csharp[GettingStarted#1](../../../samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
+   [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
 
    This code replaces the contents of the `Main` method.
 

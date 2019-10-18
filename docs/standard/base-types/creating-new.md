@@ -17,7 +17,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Creating New Strings in .NET
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] also provides several methods in the <xref:System.String?displayProperty=nameWithType> class that create new string objects by combining several strings, arrays of strings, or objects.  
+The .NET Framework allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. The .NET Framework also provides several methods in the <xref:System.String?displayProperty=nameWithType> class that create new string objects by combining several strings, arrays of strings, or objects.  
   
 ## Creating Strings Using Assignment  
  The easiest way to create a new <xref:System.String> object is simply to assign a string literal to a <xref:System.String> object.  

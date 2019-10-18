@@ -20,7 +20,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
 ### To add items  
   
-1.  Add the string or object to the list by using the `Add` method of the `ObjectCollection` class. The collection is referenced using the `Items` property:  
+1. Add the string or object to the list by using the `Add` method of the `ObjectCollection` class. The collection is referenced using the `Items` property:  
   
     ```vb  
     ComboBox1.Items.Add("Tokyo")  
@@ -36,7 +36,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
      - or -  
   
-2.  Insert the string or object at the desired point in the list with the `Insert` method:  
+2. Insert the string or object at the desired point in the list with the `Insert` method:  
   
     ```vb  
     CheckedListBox1.Items.Insert(0, "Copenhagen")  
@@ -52,7 +52,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
      - or -  
   
-3.  Assign an entire array to the `Items` collection:  
+3. Assign an entire array to the `Items` collection:  
   
     ```vb  
     Dim ItemObject(9) As System.Object  
@@ -83,7 +83,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
 ### To remove an item  
   
-1.  Call the `Remove` or `RemoveAt` method to delete items.  
+1. Call the `Remove` or `RemoveAt` method to delete items.  
   
      `Remove` has one argument that specifies the item to remove.`RemoveAt` removes the item with the specified index number.  
   
@@ -116,7 +116,7 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
 ### To remove all items  
   
-1.  Call the `Clear` method to remove all items from the collection:  
+1. Call the `Clear` method to remove all items from the collection:  
   
     ```vb  
     ListBox1.Items.Clear()  
@@ -131,9 +131,10 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ComboBox>
 - <xref:System.Windows.Forms.ListBox>
 - <xref:System.Windows.Forms.CheckedListBox>
-- [How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control](../../../../docs/framework/winforms/controls/sort-the-contents-of-a-wf-combobox-listbox-or-checkedlistbox-control.md)
-- [When to Use a Windows Forms ComboBox Instead of a ListBox](../../../../docs/framework/winforms/controls/when-to-use-a-windows-forms-combobox-instead-of-a-listbox.md)
-- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+- [How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control](sort-the-contents-of-a-wf-combobox-listbox-or-checkedlistbox-control.md)
+- [When to Use a Windows Forms ComboBox Instead of a ListBox](when-to-use-a-windows-forms-combobox-instead-of-a-listbox.md)
+- [Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)

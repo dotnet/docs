@@ -23,7 +23,7 @@ Determines whether two assemblies differ only by their strong name signatures.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameCompareAssemblies (  
     [in]  LPCWSTR   wszAssembly1,  
     [in]  LPCWSTR   wszAssembly2,  
@@ -31,7 +31,7 @@ HRESULT StrongNameCompareAssemblies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAssembly1`  
  [in] The path to the first assembly.  
   
@@ -41,11 +41,11 @@ HRESULT StrongNameCompareAssemblies (
  `pdwResult`  
  [out] One of the following values:  
   
--   `SN_CMP_DIFFERENT` (0) - Specifies that the assemblies contain different data.  
+- `SN_CMP_DIFFERENT` (0) - Specifies that the assemblies contain different data.  
   
--   `SN_CMP_IDENTICAL` (1) - Specifies that the assemblies are exactly the same, including their signatures and checksum.  
+- `SN_CMP_IDENTICAL` (1) - Specifies that the assemblies are exactly the same, including their signatures and checksum.  
   
--   `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
+- `SN_CMP_SIGONLY` (2) - Specifies that the assemblies differ only by signature and checksum.  
   
 ## Return Value  
  `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
@@ -63,4 +63,5 @@ HRESULT StrongNameCompareAssemblies (
  The strong name signature of an assembly consists of the assembly's text name, version, culture, and public key token.  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

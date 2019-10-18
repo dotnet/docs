@@ -23,13 +23,13 @@ Specifies which categories of managed types and members should be blocked from r
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetProtectedCategories (  
     [in] EApiCategories  categories  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `categories`  
  [in] A combination of [EApiCategories](../../../../docs/framework/unmanaged-api/hosting/eapicategories-enumeration.md) values, indicating which categories of managed types and members should be blocked from running in partially trusted code.  
   
@@ -57,6 +57,7 @@ HRESULT SetProtectedCategories (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Security.Permissions.HostProtectionAttribute>
 - <xref:System.Security.Permissions.HostProtectionResource>
 - [EApiCategories Enumeration](../../../../docs/framework/unmanaged-api/hosting/eapicategories-enumeration.md)

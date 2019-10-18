@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAppDomain Interface1"
+title: "ICorDebugAppDomain Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAppDomain"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugAppDomain Interface1
+# ICorDebugAppDomain Interface
+
 Provides methods for debugging application domains. This interface is a subclass of ICorDebugController.  
   
 ## Methods  
@@ -38,7 +39,7 @@ Provides methods for debugging application domains. This interface is a subclass
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -50,4 +51,5 @@ Provides methods for debugging application domains. This interface is a subclass
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

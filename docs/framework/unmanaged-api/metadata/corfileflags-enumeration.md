@@ -22,7 +22,7 @@ Contains values that describe the type of file defined in a call to [IMetaDataAs
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorFileFlags {  
   
     ffContainsMetaData      =   0x0000,  
@@ -46,4 +46,5 @@ typedef enum CorFileFlags {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

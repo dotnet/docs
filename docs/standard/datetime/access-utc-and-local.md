@@ -45,9 +45,7 @@ You should always access the local time zone through the <xref:System.TimeZoneIn
 
 This example requires:
 
-* That a reference to System.Core.dll be added to the project.
-
-* That the <xref:System> namespace be imported with the `using` statement (required in C# code).
+- That the <xref:System> namespace be imported with the `using` statement (required in C# code).
 
 ## See also
 

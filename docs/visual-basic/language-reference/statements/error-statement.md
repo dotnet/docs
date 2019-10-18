@@ -16,7 +16,7 @@ Simulates the occurrence of an error.
   
 ## Syntax  
   
-```  
+```vb  
 Error errornumber  
 ```  
   
@@ -41,12 +41,12 @@ Error errornumber
  If no error handler exists, or if none is enabled, an error message is created and displayed from the `Err` object properties.  
   
 > [!NOTE]
->  Some Visual Basic host applications cannot create objects. See your host application's documentation to determine whether it can create classes and objects.  
+> Some Visual Basic host applications cannot create objects. See your host application's documentation to determine whether it can create classes and objects.  
   
 ## Example  
  This example uses the `Error` statement to generate error number 11.  
   
-```  
+```vb  
 On Error Resume Next   ' Defer error handling.  
 Error 11   ' Simulate the "Division by zero" error.  
 ```  
@@ -57,6 +57,7 @@ Error 11   ' Simulate the "Division by zero" error.
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.ErrObject.Clear%2A>
 - <xref:Microsoft.VisualBasic.Information.Err%2A>
 - <xref:Microsoft.VisualBasic.ErrObject.Raise%2A>

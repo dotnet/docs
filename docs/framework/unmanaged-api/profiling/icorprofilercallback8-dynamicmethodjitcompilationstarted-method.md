@@ -18,7 +18,7 @@ Notifies the profiler whenever JIT compilation of a dynamic method has started.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DynamicMethodJITCompilationStarted(  
      [in]  FunctionID  functionId,   
      [in]  BOOL        fIsSafeToBlock,   
@@ -27,7 +27,7 @@ HRESULT DynamicMethodJITCompilationStarted(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
 [in] `functionId`  
 The identifier of the in-memory function for which JIT compilation is started.   
 
@@ -59,5 +59,6 @@ The `pILHeader` pointer is only valid during the callback.
  **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
   
 ## See also
+
 - [DynamicMethodJITCompilationFinished Method](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)
 - [ICorProfilerCallback8 Interface](icorprofilercallback8-interface.md)

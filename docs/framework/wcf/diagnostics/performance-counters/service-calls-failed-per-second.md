@@ -20,4 +20,5 @@ Counter Name: Calls Failed Per Second.
  This counter is incremented every time there is an unhandled exception in this service.  
   
 ## See also
-- [Specifying and Handling Faults in Contracts and Services](../../../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
+
+- [Specifying and Handling Faults in Contracts and Services](../../specifying-and-handling-faults-in-contracts-and-services.md)

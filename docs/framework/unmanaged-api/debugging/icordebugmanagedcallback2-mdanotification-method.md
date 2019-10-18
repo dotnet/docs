@@ -23,7 +23,7 @@ Provides notification that code execution has encountered a managed debugging as
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MDANotification(  
     [in] ICorDebugController  *pController,  
     [in] ICorDebugThread      *pThread,  
@@ -31,7 +31,7 @@ HRESULT MDANotification(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pController`  
  [in] A pointer to an ICorDebugController interface that exposes the process or application domain in which the MDA occurred.  
   
@@ -66,6 +66,7 @@ HRESULT MDANotification(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

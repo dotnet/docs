@@ -23,14 +23,14 @@ Creates an instance of the Assembly Linker and sets a pointer to the specified i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateALink (  
    REFIID riid,  
    IUnknown **ppInterface  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -41,4 +41,5 @@ HRESULT CreateALink (
  **Library**: alink.dll  
   
 ## See also
-- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+
+- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)

@@ -22,26 +22,25 @@ Set operations in LINQ refer to query operations that produce a result set that 
 ### Distinct  
  The following illustration depicts the behavior of the <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType> method on a sequence of characters. The returned sequence contains the unique elements from the input sequence.  
   
- ![Graphic showing the behavior of Distinct&#40;&#41;.](../../../../csharp/programming-guide/concepts/linq/media/distinct.png "Distinct")  
+ ![Graphic showing the behavior of Distinct&#40;&#41;.](./media/set-operations/distinct-method-behavior.png)  
   
 ### Except  
  The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType>. The returned sequence contains only the elements from the first input sequence that are not in the second input sequence.  
   
- ![Graphic showing the action of Except&#40;&#41;.](../../../../csharp/programming-guide/concepts/linq/media/except.png "Except")  
+ ![Graphic showing the action of Except&#40;&#41;.](./media/set-operations/except-behavior-graphic.png "Shows the behavior of Except.")  
   
 ### Intersect  
  The following illustration depicts the behavior of <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.  
   
- ![Graphic showing the intersection of two sequences.](../../../../csharp/programming-guide/concepts/linq/media/intersect.png "Intersect")  
-  
+ ![Graphic showing the intersection of two sequences.](./media/set-operations/intersection-two-sequences.png)  
+ 
 ### Union  
  The following illustration depicts a union operation on two sequences of characters. The returned sequence contains the unique elements from both input sequences.  
   
- ![Graphic showing the union of two sequences.](../../../../csharp/programming-guide/concepts/linq/media/union.png "Union")  
-  
+ ![Graphic showing the union of two sequences.](./media/set-operations/union-operation-two-sequences.png)  
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [How to: Combine and Compare String Collections (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)
-- [How to: Find the Set Difference Between Two Lists (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [How to: Combine and Compare String Collections (LINQ) (C#)](./how-to-combine-and-compare-string-collections-linq.md)
+- [How to: Find the Set Difference Between Two Lists (LINQ) (C#)](./how-to-find-the-set-difference-between-two-lists-linq.md)

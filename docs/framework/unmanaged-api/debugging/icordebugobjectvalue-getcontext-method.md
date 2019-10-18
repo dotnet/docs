@@ -23,7 +23,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContext (  
     [out] ICorDebugContext   **ppContext  
 );  
@@ -33,5 +33,3 @@ HRESULT GetContext (
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-
-

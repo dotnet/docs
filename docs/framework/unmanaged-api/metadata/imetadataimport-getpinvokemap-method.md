@@ -23,7 +23,7 @@ Gets a ModuleRef token to represent the target assembly of a PInvoke call.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPinvokeMap (  
    [in]  mdToken       tk,  
    [out] DWORD         *pdwMappingFlags,  
@@ -34,7 +34,7 @@ HRESULT GetPinvokeMap (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] A FieldDef or MethodDef token to get the PInvoke mapping metadata for.  
   
@@ -63,5 +63,6 @@ HRESULT GetPinvokeMap (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

@@ -23,7 +23,7 @@ Detaches the debugger from the process or application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Detach ();  
 ```  
   
@@ -42,4 +42,3 @@ HRESULT Detach ();
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

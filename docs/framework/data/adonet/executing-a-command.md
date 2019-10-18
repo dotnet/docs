@@ -31,9 +31,10 @@ Each .NET Framework data provider included with the .NET Framework has its own c
  [!code-vb[DataWorks SqlClient.StoredProcedure#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlClient.StoredProcedure/VB/source.vb#1)]  
   
 ### Troubleshooting Commands  
- The .NET Framework Data Provider for SQL Server adds performance counters to enable you to detect intermittent problems related to failed command executions. For more information see [Performance Counters](../../../../docs/framework/data/adonet/performance-counters.md).  
+ The .NET Framework Data Provider for SQL Server adds performance counters to enable you to detect intermittent problems related to failed command executions. For more information see [Performance Counters](performance-counters.md).  
   
 ## See also
-- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
-- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
+
+- [Commands and Parameters](commands-and-parameters.md)
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
 - [ADO.NET Overview](ado-net-overview.md)

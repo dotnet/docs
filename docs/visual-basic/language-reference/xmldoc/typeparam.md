@@ -15,7 +15,7 @@ Defines a type parameter name and description.
 <typeparam name="name">description</typeparam>  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  The name of the type parameter. Enclose the name in double quotation marks (" ").  
   
@@ -25,12 +25,13 @@ Defines a type parameter name and description.
 ## Remarks  
  Use the `<typeparam>` tag in the comment for a generic type or generic member declaration to describe one of the type parameters.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<typeparam>` tag to describe the `id` parameter.  
   
- [!code-vb[VbVbcnXmlDocComments#8](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/typeparam_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#8)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

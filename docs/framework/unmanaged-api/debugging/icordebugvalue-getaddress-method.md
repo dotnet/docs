@@ -23,13 +23,13 @@ Gets the address of this "ICorDebugValue" object, which is in the process of bei
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddress (  
     [out] CORDB_ADDRESS   *pAddress  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] Pointer to a `CORDB_ADDRESS` object that specifies the address of this value object.  
   
@@ -46,4 +46,3 @@ HRESULT GetAddress (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

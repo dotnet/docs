@@ -22,7 +22,7 @@ Contains values that indicate the type of task that is represented by either an 
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum ETaskType {  
     TT_DEBUGGERHELPER           = 0x1,  
     TT_GC                       = 0x2,  
@@ -64,4 +64,5 @@ typedef enum ETaskType {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

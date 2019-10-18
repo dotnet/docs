@@ -12,10 +12,10 @@ ms.assetid: 6e5def51-3646-4ef6-a7bd-c69151321bec
 # \<servicePointManager> Element (Network Settings)
 Configures connections to network resources.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<servicePointManager>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<servicePointManager>**  
   
 ## Syntax  
   
@@ -53,7 +53,7 @@ Configures connections to network resources.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[Settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+|[Settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
   
@@ -61,6 +61,7 @@ Configures connections to network resources.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## See also
+
 - <xref:System.Net.ServicePointManager>
 - <xref:System.Net.Security.EncryptionPolicy>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

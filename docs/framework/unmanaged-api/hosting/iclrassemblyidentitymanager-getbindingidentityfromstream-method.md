@@ -23,7 +23,7 @@ Gets the canonical assembly identity data for the assembly in the specified stre
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBindingIdentityFromStream (  
     [in] IStream    *pStream,  
     [in] DWORD       dwFlags,  
@@ -32,7 +32,7 @@ HRESULT GetBindingIdentityFromStream (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStream`  
  [in] The assembly stream to be evaluated.  
   
@@ -68,5 +68,6 @@ HRESULT GetBindingIdentityFromStream (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)

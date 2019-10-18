@@ -6,9 +6,10 @@ ms.assetid: 1d06a7e6-9633-4a12-8c5d-123adbbc19c5
 # \<messageLogging>
 This element defines the settings for the message-logging capabilities of Windows Communication Foundation (WCF).  
   
- \<system.ServiceModel>  
-\<diagnostic>  
-\<messageLogging>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<messageLogging>**  
   
 ## Syntax  
   
@@ -116,8 +117,9 @@ This element defines the settings for the message-logging capabilities of Window
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.DiagnosticSection>
 - <xref:System.ServiceModel.Diagnostics>
 - <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A>
 - <xref:System.ServiceModel.Configuration.MessageLoggingElement>
-- [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md)
+- [Configuring Message Logging](../../../wcf/diagnostics/configuring-message-logging.md)

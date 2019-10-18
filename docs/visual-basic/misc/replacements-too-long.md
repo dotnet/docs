@@ -10,7 +10,7 @@ You specified a replacement that exceeds the permitted length.
   
 ## To correct this error  
   
-1.  Consult the component documentation for the length restriction.  
+1. Consult the component documentation for the length restriction.  
   
 ## See also
 

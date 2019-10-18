@@ -23,7 +23,7 @@ Generates a strong name signature for the specified assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameSignatureGeneration (   
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  
@@ -34,7 +34,7 @@ HRESULT StrongNameSignatureGeneration (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the file that contains the manifest of the assembly for which the strong name signature will be generated.  
   
@@ -79,5 +79,6 @@ HRESULT StrongNameSignatureGeneration (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameSignatureGenerationEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturegenerationex-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

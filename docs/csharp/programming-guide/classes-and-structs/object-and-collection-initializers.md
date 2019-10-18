@@ -13,7 +13,7 @@ C# lets you instantiate an object or collection and perform member assignments i
 
 ## Object initializers
 
-Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements. The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax).  The following example shows how to use an object initializer with a named type, `Cat` and how to invoke the default constructor. Note the use of auto-implemented properties in the `Cat` class. For more information, see [Auto-Implemented Properties](auto-implemented-properties.md).  
+Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements. The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax).  The following example shows how to use an object initializer with a named type, `Cat` and how to invoke the parameterless constructor. Note the use of auto-implemented properties in the `Cat` class. For more information, see [Auto-Implemented Properties](auto-implemented-properties.md).  
   
 [!code-csharp[ObjectInitializer1](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#CatDeclaration)]  
 [!code-csharp[ObjectInitializer1a](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#ObjectPropertyInitialization)]  
@@ -36,7 +36,7 @@ var thing = new IndexersExample {
     [1] = '1',
     [2] = '4',
     [3] = '9',
-    Baz = Math.PI,
+    Size = Math.PI,
     ['C',4] = "Middle C"
 }
 ```
@@ -48,12 +48,11 @@ public string name;
 public double Size { set { ... }; }
 public char this[int i] { set { ... }; }
 public string this[char c, int i] {  set { ... }; }
-}
 ```
 
 ## Object Initializers with anonymous types
 
-Although object initializers can be used in any context, they are especially useful in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions. Query expressions make frequent use of [anonymous types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md), which can only be initialized by using an object initializer, as shown in the following declaration.  
+Although object initializers can be used in any context, they are especially useful in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions. Query expressions make frequent use of [anonymous types](./anonymous-types.md), which can only be initialized by using an object initializer, as shown in the following declaration.  
 
 ```csharp
 var pet = new { Age = 10, Name = "Fluffy" };  
@@ -108,15 +107,15 @@ This initializer example calls <xref:System.Collections.Generic.Dictionary%602.A
 
 The following example combines the concepts of object and collection initializers.
 
-[!code-csharp-interactive[InitializerExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullExample)]  
+[!code-csharp[InitializerExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullExample)]  
 
 The following example shows an object that implements <xref:System.Collections.IEnumerable> and contains an `Add` method with multiple parameters, It uses a collection initializer with multiple elements per item in the list that correspond to the signature of the `Add` method.
 
-[!code-csharp-interactive[InitializerListExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullListExample)]  
+[!code-csharp[InitializerListExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullListExample)]  
 
 `Add` methods can use the `params` keyword to take a variable number of arguments, as shown in the following example. This example also demonstrates the custom implementation of an indexer to initialize a collection using indexes.
 
-[!code-csharp-interactive[InitializerListExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullDictionaryInitializer)]  
+[!code-csharp[InitializerListExample](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/object-collection-initializers/BasicObjectInitializers.cs#FullDictionaryInitializer)]  
 
 ## See also
 

@@ -19,7 +19,7 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 1. In the **New ASP.NET Web Application** dialog, select **Empty** and then select **OK**.
 
-   ![ASP.NET web app type dialog in Visual Studio](media/create-an-ajax-wcf-asp-net-client/new-asp-net-web-app-type.png)
+   ![ASP.NET web app type dialog in Visual Studio](./media/create-an-ajax-wcf-asp-net-client/new-asp-net-web-app-type.png)
 
 ## Add a web form
 
@@ -45,7 +45,7 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 1. In the **Add New Item** dialog, expand the **Installed** > **Visual C#** > **Web** category, and then select the **WCF Service (AJAX-enabled)** template.
 
-   ![WCF Service (AJAX-enabled) item template in Visual Studio](media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
+   ![WCF Service (AJAX-enabled) item template in Visual Studio](./media/create-an-ajax-wcf-asp-net-client/add-wcf-service.png)
 
 1. Name the service **CostService** and then select **Add**.
 
@@ -71,15 +71,15 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 4. Back in the **Source** view, add the following code between the **\<ScriptManager>** tags to specify the path to the WCF service:
 
-    ```html
+    ```xml
     <Services>
        <asp:ServiceReference Path="~/CostService.svc" />
     </Services>
     ```
 
-1. Add the code for the Javascript function `Calculate()`. Place the following code in the **head** section of the web form:
+5. Add the code for the Javascript function `Calculate()`. Place the following code in the **head** section of the web form:
 
-    ```javascript
+    ```html
     <script type="text/javascript">
 
         function Calculate() {
@@ -98,11 +98,11 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 ## Run the program
 
-Make sure that *WebForm1.aspx* has focus, and then press **Start** button to launch the web client. The button has a green triangle and says something like **IIS Express (Microsoft Edge)**. Or, you can press **F5**. Click the **Price of 3 sandwiches** button to generate the expected output of "3.75".
+Make sure that *WebForm1.aspx* has focus, and then press **Start** button to launch the web client. The button has a green triangle and says something like **IIS Express (Microsoft Edge)**. Or, you can press <kbd>F5</kbd>. Click the **Price of 3 sandwiches** button to generate the expected output of "3.75".
 
-## Example code
+## Example
 
-Following is the full code in the *CostService.svc.cs* file :
+The following is the full code in the *CostService.svc.cs* file:
 
 ```csharp
 using System.ServiceModel;
@@ -123,7 +123,7 @@ namespace SandwichServices
 }
 ```
 
-Following is the full contents of the *WebForm1.aspx* page:
+The following is the full contents of the *WebForm1.aspx* page:
 
 ```aspx-csharp
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="SandwichServices.WebForm1" %>

@@ -12,11 +12,11 @@ ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
 # \<nameEntry> Element
 Maps a class name to a friendly algorithm name, which allows one class to have many friendly names.  
   
- \<configuration>  
-\<mscorlib>  
-\<cryptographySettings>  
-\<cryptoNameMapping>  
-\<nameEntry>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptoNameMapping>**](cryptonamemapping-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<nameEntry>**  
   
 ## Syntax  
   
@@ -32,7 +32,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 |Attribute|Description|  
 |---------------|-----------------|  
 |**name**|Required attribute.<br /><br /> Specifies the friendly name of the algorithm that the cryptography class implements.|  
-|**class**|Required attribute.<br /><br /> Specifies the value for the **name** attribute in the [\<cryptoClass>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptoclass-element.md) element.|  
+|**class**|Required attribute.<br /><br /> Specifies the value for the **name** attribute in the [\<cryptoClass>](cryptoclass-element.md) element.|  
   
 ### Child Elements  
  None.  
@@ -70,7 +70,8 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 ```  
   
 ## See also
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
-- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+
+- [Configuration File Schema](../index.md)
+- [Cryptography Settings Schema](index.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
+- [Configuring Cryptography Classes](../../configure-cryptography-classes.md)

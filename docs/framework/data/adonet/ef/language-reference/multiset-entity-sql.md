@@ -8,9 +8,9 @@ Creates an instance of a multiset from a list of values. All the values in the M
   
 ## Syntax  
   
-```  
+```sql  
 MULTISET ( expression [{, expression }] )  
-or  
+-- or  
 { expression [{, expression }] }  
 ```  
   
@@ -22,7 +22,7 @@ or
  A collection of type MULTISET\<T>.  
   
 ## Remarks  
- [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides three kinds of constructors: row constructors, object constructors, and multiset (or collection) constructors. For more information, see [Constructing Types](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md).  
+ [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides three kinds of constructors: row constructors, object constructors, and multiset (or collection) constructors. For more information, see [Constructing Types](constructing-types-entity-sql.md).  
   
  The multiset constructor creates an instance of a multiset from a list of values. All the values in the constructor must be of a compatible type.  
   
@@ -33,17 +33,18 @@ or
  `{1, 2, 3}`  
   
 > [!NOTE]
->  Nested multiset literals are only supported when a wrapping multiset has a single multiset element; for example, `{{1, 2, 3}}`. When the wrapping multiset has multiple multiset elements (for example, `{{1, 2}, {3, 4}}`), nested multiset literals are not supported.  
+> Nested multiset literals are only supported when a wrapping multiset has a single multiset element; for example, `{{1, 2, 3}}`. When the wrapping multiset has multiple multiset elements (for example, `{{1, 2}, {3, 4}}`), nested multiset literals are not supported.  
   
 ## Example  
  The following Entity SQL query uses the MULTISET operator to create an instance of a multiset from a list of values. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#MULTISET](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#multiset)]  
+ [!code-sql[DP EntityServices Concepts#MULTISET](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#multiset)]  
   
 ## See also
-- [Constructing Types](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md)
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+
+- [Constructing Types](constructing-types-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)

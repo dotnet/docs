@@ -10,7 +10,8 @@ The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not de
   
 ## To correct this error  
   
--   Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
+- Note the circumstances under which the error occurred, and call Microsoft Product Support Services.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>

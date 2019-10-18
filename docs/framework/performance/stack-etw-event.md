@@ -11,7 +11,7 @@ ms.author: "mairaw"
 # Stack ETW Event
 The stack event should be used in conjunction with other events to generate stack traces after an event is raised. It is logged when the runtime provider is enabled. This is a very high frequency event, because it is raised whenever another runtime event is raised. For this reason, we recommend that you use this event with caution.  
   
- The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+ The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -34,4 +34,5 @@ The stack event should be used in conjunction with other events to generate stac
 |Stack|win:Pointer|Columns of instruction pointers.|  
   
 ## See also
-- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+
+- [CLR ETW Events](clr-etw-events.md)

@@ -15,16 +15,16 @@ The `My.Computer.FileSystem.SpecialDirectories` object allows you to access spec
   
 #### To write new text files in the My Documents directory  
   
-1.  Use the `My.Computer.FileSystem.SpecialDirectories.MyDocuments` property to supply the path.  
+1. Use the `My.Computer.FileSystem.SpecialDirectories.MyDocuments` property to supply the path.  
   
-     [!code-vb[VbFileIOWrite#1](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-text-to-files-in-the-my-documents-directory_1.vb)]  
+     [!code-vb[VbFileIOWrite#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOWrite/VB/Class1.vb#1)]  
   
-2.  Use the `WriteAllText` method to write text to the specified file.  
+2. Use the `WriteAllText` method to write text to the specified file.  
   
-     [!code-vb[VbVbcnMyFileSystem#14](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-text-to-files-in-the-my-documents-directory_2.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#14)]  
   
 ## Example  
- [!code-vb[VbFileIOWrite#2](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-write-text-to-files-in-the-my-documents-directory_3.vb)]  
+ [!code-vb[VbFileIOWrite#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOWrite/VB/Class1.vb#2)]  
   
 ## Compiling the Code  
  Replace `test.txt` with the name of the file you want to write to.  
@@ -35,9 +35,10 @@ The `My.Computer.FileSystem.SpecialDirectories` object allows you to access spec
 ## .NET Framework Security  
  If you are running in a partial-trust context, the code might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).  
   
- This example creates a new file. If an application needs to create a file, that application needs Create permission for the folder. Permissions are set using access control lists. If the file already exists, the application needs only Write permission, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant Read privileges to a single file, rather than to grant Create privileges for a folder. Also, it is more secure to write data to user folders than to the root folder or the **Program Files** folder. For more information, see [ACL Technology Overview](https://msdn.microsoft.com/library/06fbf66d-6f02-4378-b863-b2f12e349045).  
+ This example creates a new file. If an application needs to create a file, that application needs Create permission for the folder. Permissions are set using access control lists. If the file already exists, the application needs only Write permission, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant Read privileges to a single file, rather than to grant Create privileges for a folder. Also, it is more secure to write data to user folders than to the root folder or the **Program Files** folder. For more information, see [ACL Technology Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229742(v=vs.100)).  
   
 ## See also
+
 - <xref:System.IO.Path.Combine%2A?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>

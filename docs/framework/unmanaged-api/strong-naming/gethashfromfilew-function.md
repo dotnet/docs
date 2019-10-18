@@ -20,11 +20,11 @@ ms.author: "ronpet"
 # GetHashFromFileW Function
 Generates a hash over the contents of the file specified by a Unicode string.  
   
- This function has been deprecated. Use the [ICLRStrongName::GetHashFromFileW](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfilew-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::GetHashFromFileW](../hosting/iclrstrongname-gethashfromfilew-method.md) method instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromFileW (   
     [in]  LPCWSTR   wszFilePath,  
     [in, out] unsigned int   *piHashAlg,  
@@ -34,7 +34,7 @@ HRESULT GetHashFromFileW (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The Unicode name of the file to hash.  
   
@@ -51,10 +51,10 @@ HRESULT GetHashFromFileW (
  [out] The size, in bytes, of `pbHash`.  
   
 ## Remarks  
- This function is the same as [GetHashFromFile](../../../../docs/framework/unmanaged-api/strong-naming/gethashfromfile-function.md), except that the file name specification is Unicode instead of ANSI.  
+ This function is the same as [GetHashFromFile](gethashfromfile-function.md), except that the file name specification is Unicode instead of ANSI.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -63,6 +63,7 @@ HRESULT GetHashFromFileW (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-- [GetHashFromFileW Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfilew-method.md)
-- [GetHashFromFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+
+- [GetHashFromFileW Method](../hosting/iclrstrongname-gethashfromfilew-method.md)
+- [GetHashFromFile Method](../hosting/iclrstrongname-gethashfromfile-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

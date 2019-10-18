@@ -23,7 +23,7 @@ Not implemented. Do not use.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFunctionReJIT(  
     [in] FunctionID functionId);  
 ```  
@@ -38,4 +38,5 @@ HRESULT SetFunctionReJIT(
  **.NET Framework Version:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

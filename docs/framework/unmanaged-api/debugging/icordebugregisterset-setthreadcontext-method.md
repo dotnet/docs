@@ -22,11 +22,11 @@ ms.author: "ronpet"
 `SetThreadContext` is not implemented in the .NET Framework version 2.0. Do not call this method.  
   
 > [!NOTE]
->  Use the higher-level operation [ICorDebugNativeFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md) to set the context of a thread.  
+> Use the higher-level operation [ICorDebugNativeFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md) to set the context of a thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetThreadContext (  
     [in] ULONG32 contextSize,  
     [in, length_is(contextSize),  
@@ -44,5 +44,6 @@ HRESULT SetThreadContext (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
+
 - [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
 - [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)

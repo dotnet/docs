@@ -16,9 +16,9 @@ This topic describes the essential elements of a Windows Forms application and p
 ## Simple Windows Forms Applications  
  At a minimum, a Windows Forms application consists of the following elements:  
   
--   One or more classes that derive from <xref:System.Windows.Forms.Form?displayProperty=nameWithType>.  
+- One or more classes that derive from <xref:System.Windows.Forms.Form?displayProperty=nameWithType>.  
   
--   A `Main` method that invokes the `static` (`shared` in Visual Basic) <xref:System.Windows.Forms.Application.Run%2A> method and passes a <xref:System.Windows.Forms.Form> instance to it. The <xref:System.Windows.Forms.Application.Run%2A> method processes messages from the operating system to the application.  
+- A `Main` method that invokes the `static` (`shared` in Visual Basic) <xref:System.Windows.Forms.Application.Run%2A> method and passes a <xref:System.Windows.Forms.Form> instance to it. The <xref:System.Windows.Forms.Application.Run%2A> method processes messages from the operating system to the application.  
   
  The following code example shows the essential elements of a Windows Forms application.  
   
@@ -218,5 +218,6 @@ public class MyForm : Form {
 ```  
   
 ## See also
-- [Developing Custom Windows Forms Controls with the .NET Framework](../../../../docs/framework/winforms/controls/developing-custom-windows-forms-controls.md)
-- [Windows Forms Control Development Basics](../../../../docs/framework/winforms/controls/windows-forms-control-development-basics.md)
+
+- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
+- [Windows Forms Control Development Basics](windows-forms-control-development-basics.md)

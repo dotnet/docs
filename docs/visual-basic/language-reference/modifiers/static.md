@@ -16,13 +16,13 @@ Specifies that one or more declared local variables are to continue to exist and
   
 ## Rules  
   
--   **Declaration Context.** You can use `Static` only on local variables. This means the declaration context for a `Static` variable must be a procedure or a block in a procedure, and it cannot be a source file, namespace, class, structure, or module.  
+- **Declaration Context.** You can use `Static` only on local variables. This means the declaration context for a `Static` variable must be a procedure or a block in a procedure, and it cannot be a source file, namespace, class, structure, or module.  
   
      You cannot use `Static` inside a structure procedure.  
   
--   The data types of `Static` local variables cannot be inferred. For more information, see [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).  
+- The data types of `Static` local variables cannot be inferred. For more information, see [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).  
   
--   **Combined Modifiers.** You cannot specify `Static` together with `ReadOnly`, `Shadows`, or `Shared` in the same declaration.  
+- **Combined Modifiers.** You cannot specify `Static` together with `ReadOnly`, `Shadows`, or `Shared` in the same declaration.  
   
 ## Behavior  
  When you declare a static variable in a `Shared` procedure, only one copy of the static variable is available for the whole application. You call a `Shared` procedure by using the class name, not a variable that points to an instance of the class.  
@@ -32,7 +32,7 @@ Specifies that one or more declared local variables are to continue to exist and
 ## Example  
  The following example demonstrates the use of `Static`.  
   
- [!code-vb[VbVbalrKeywords#5](../../../visual-basic/language-reference/codesnippet/VisualBasic/static_1.vb)]  
+ [!code-vb[VbVbalrKeywords#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#5)]  
   
  The `Static` variable `totalSales` is initialized to 0 only one time. Each time that you enter `updateSales`, `totalSales` still has the most recent value that you calculated for it.  
   
@@ -41,6 +41,7 @@ Specifies that one or more declared local variables are to continue to exist and
  [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
   
 ## See also
+
 - [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
 - [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
 - [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)

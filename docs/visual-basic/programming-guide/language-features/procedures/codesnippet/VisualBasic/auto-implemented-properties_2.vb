@@ -1,1 +1,0 @@
-        Property Prop2 As String = "Empty"

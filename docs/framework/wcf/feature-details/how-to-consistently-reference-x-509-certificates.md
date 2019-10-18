@@ -22,13 +22,14 @@ You can identify a certificate in several ways: by the hash of the certificate, 
 ## Compiling the Code  
  The following namespaces are required to compile the code:  
   
--   <xref:System>  
+- <xref:System>  
   
--   <xref:System.ServiceModel>  
+- <xref:System.ServiceModel>  
   
--   <xref:System.ServiceModel.Channels>  
+- <xref:System.ServiceModel.Channels>  
   
--   <xref:System.ServiceModel.Security.Tokens>  
+- <xref:System.ServiceModel.Security.Tokens>  
   
 ## See also
+
 - [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)

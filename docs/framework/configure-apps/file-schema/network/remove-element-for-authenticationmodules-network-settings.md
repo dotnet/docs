@@ -14,10 +14,10 @@ ms.assetid: abf79949-b05c-465a-b51c-bbeda9a74173
 # \<remove> Element for authenticationModules (Network Settings)
 Removes an authentication module from the application.  
   
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ Removes an authentication module from the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[authenticationModules](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
  The `remove` element removes authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
@@ -67,6 +67,7 @@ Removes an authentication module from the application.
 ```  
   
 ## See also
+
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

@@ -23,13 +23,13 @@ Gets the previous chain of frames for the thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPrevious (  
     [out] ICorDebugChain     **ppChain  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppChain`  
  [out] A pointer to the address of an ICorDebugChain object that represents the previous chain of frames for this thread. If this chain is the first chain, `ppChain` is null.  
   

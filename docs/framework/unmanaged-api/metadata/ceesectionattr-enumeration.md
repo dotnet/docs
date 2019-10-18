@@ -22,7 +22,7 @@ Provides values that specify attributes of a section for use by the [ICeeGen](..
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  {  
     sdNone      = 0,  
     sdReadOnly  = IMAGE_SCN_CNT_INITIALIZED_DATA |  
@@ -52,4 +52,5 @@ typedef enum  {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

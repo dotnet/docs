@@ -31,12 +31,12 @@ opportunities for innovation in areas such as meta-programming, code
 generation and transformation, interactive use of the C# and VB languages,
 and embedding of C# and VB in domain specific languages.
 
-The .NET Compiler Platform SDK enables you to build ***analyzers*** and 
+The .NET Compiler Platform SDK enables you to build ***analyzers*** and
 ***code fixes*** that find and correct coding mistakes. ***Analyzers***
 understand the syntax and structure of code and detect practices that
 should be corrected. ***Code fixes*** provide one or more suggested fixes
 for addressing coding mistakes found by analyzers. Typically, an analyzer
-and the associated code fixes are packaged together in a single project. 
+and the associated code fixes are packaged together in a single project.
 
 Analyzers and code fixes use static analysis to understand code. They
 do not run the code or provide other testing benefits. They can, however,
@@ -93,7 +93,7 @@ libraries.
 
 In addition to providing documentation, you can provide analyzers and
 code fixes that find and correct common mis-uses of your library. These
-immediate corrections will help developers succeed more quickly. 
+immediate corrections will help developers succeed more quickly.
 
 You can package analyzers and code fixes with your library on NuGet. In that
 scenario, every developer who installs your NuGet package will also install
@@ -108,7 +108,7 @@ work well and patterns that are best avoided. Several community members
 have created analyzers that enforce those recommended patterns. As we learn
 more, there is always room for new ideas.
 
-These analyzers can be uploaded to the 
+These analyzers can be uploaded to the
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) and downloaded
 by developers using Visual Studio. Newcomers to the language and the platform
 learn accepted practices quickly and become productive earlier in their .NET
@@ -124,12 +124,12 @@ found in the quickstarts, samples and tutorials sections.
 
 You can learn more about the concepts in the .NET Compiler Platform SDK in these five topics:
 
- - [Explore code with the syntax visualizer](syntax-visualizer.md)
- - [Understand the compiler API model](compiler-api-model.md)
- - [Work with syntax](work-with-syntax.md)
- - [Work with semantics](work-with-semantics.md)
- - [Work with a workspace](work-with-workspace.md)
- 
+- [Explore code with the syntax visualizer](syntax-visualizer.md)
+- [Understand the compiler API model](compiler-api-model.md)
+- [Work with syntax](work-with-syntax.md)
+- [Work with semantics](work-with-semantics.md)
+- [Work with a workspace](work-with-workspace.md)
+
 To get started, you'll need to install the **.NET Compiler Platform SDK**:
 
 [!INCLUDE[interactive-note](~/includes/roslyn-installation.md)]

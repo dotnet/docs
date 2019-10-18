@@ -23,7 +23,7 @@ Enumerates methods that have the specified name and that are defined by the type
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMethodsWithName (  
    [in, out] HCORENUM    *phEnum,  
    [in]  mdTypeDef       cl,  
@@ -34,7 +34,7 @@ HRESULT EnumMethodsWithName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be NULL for the first call of this method.  
   
@@ -73,5 +73,6 @@ HRESULT EnumMethodsWithName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

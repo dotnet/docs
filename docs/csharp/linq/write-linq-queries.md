@@ -4,7 +4,7 @@ description: Learn how to write LINQ queries in C#.
 ms.date: 12/01/2016
 ms.assetid: 30703f79-cf3a-4d02-b892-c95d58a1d9ed
 ---
-# Write LINQ queries in C# #
+# Write LINQ queries in C\#
 
 This article shows the three ways in which you can write a LINQ query in C#:
 

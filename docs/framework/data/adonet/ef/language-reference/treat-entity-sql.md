@@ -8,7 +8,7 @@ Treats an object of a particular base type as an object of the specified derived
   
 ## Syntax  
   
-```  
+```sql  
 TREAT ( expression as type)  
 ```  
   
@@ -17,13 +17,13 @@ TREAT ( expression as type)
  Any valid query expression that returns an entity.  
   
 > [!NOTE]
->  The type of the specified expression must be a subtype of the specified data type, or the data type must be a subtype of the type of expression.  
+> The type of the specified expression must be a subtype of the specified data type, or the data type must be a subtype of the type of expression.  
   
  `type`  
  An entity type. The type must be qualified by a namespace.  
   
 > [!NOTE]
->  The specified expression must be a subtype of the specified data type, or the data type must be a subtype of the expression.  
+> The specified expression must be a subtype of the specified data type, or the data type must be a subtype of the expression.  
   
 ## Return Value  
  A value of the specified data type.  
@@ -33,7 +33,7 @@ TREAT ( expression as type)
   
  TREAT is used in inheritance scenarios where you can do a query like the following:  
   
-```  
+```sql  
 SELECT TREAT(p AS NamespaceName.Employee)  
 FROM ContainerName.Person AS p  
 WHERE p IS OF (NamespaceName.Employee)   
@@ -42,7 +42,7 @@ WHERE p IS OF (NamespaceName.Employee)
  This query upcasts `Person` entities to the `Employee` type. If the value of p is not actually of type `Employee`, the expression yields the value `null`.  
   
 > [!NOTE]
->  The specified expression `Employee` must be a subtype of the specified data type `Person`, or the data type must be a subtype of the expression. Otherwise, the expression will result in a compile-time error.  
+> The specified expression `Employee` must be a subtype of the specified data type `Person`, or the data type must be a subtype of the expression. Otherwise, the expression will result in a compile-time error.  
   
  The following table shows the behavior of treat over some typical patterns and some less common patterns. All exceptions are thrown from the client side before the provider gets invoked:  
   
@@ -58,8 +58,9 @@ WHERE p IS OF (NamespaceName.Employee)
 ## Example  
  The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the TREAT operator to convert an object of the type Course to a collection of objects of the type OnsiteCourse. The query is based on the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)).  
   
- [!code-csharp[DP EntityServices Concepts 2#TREAT_ISOF](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#treat_isof)]  
+ [!code-sql[DP EntityServices Concepts#TREAT_ISOF](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#treat_isof)]  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Nullable Structured Types](../../../../../../docs/framework/data/adonet/ef/language-reference/nullable-structured-types-entity-sql.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Nullable Structured Types](nullable-structured-types-entity-sql.md)

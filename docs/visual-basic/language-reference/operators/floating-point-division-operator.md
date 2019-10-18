@@ -22,7 +22,7 @@ Divides two numbers and returns a floating-point result.
   
 ## Syntax  
   
-```  
+```vb  
 expression1 / expression2  
 ```  
   
@@ -65,16 +65,17 @@ expression1 / expression2
 |Integral (signed or unsigned)|Attempted conversion back to integral type throws <xref:System.OverflowException> because integral types cannot accept <xref:System.Double.PositiveInfinity>, <xref:System.Double.NegativeInfinity>, or <xref:System.Double.NaN>|  
   
 > [!NOTE]
->  The `/` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
+> The `/` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
  This example uses the `/` operator to perform floating-point division. The result is the quotient of the two operands.  
   
- [!code-vb[VbVbalrOperators#16](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/floating-point-division-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#16)]  
   
  The expressions in the preceding example return values of 2.5 and 3.333333. Note that the result is always floating-point (`Double`), even though both operands are integer constants.  
   
 ## See also
+
 - [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)
 - [\ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/integer-division-operator.md)
 - [Data Types of Operator Results](../../../visual-basic/language-reference/operators/data-types-of-operator-results.md)

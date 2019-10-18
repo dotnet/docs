@@ -16,4 +16,5 @@ Use the <xref:System.Linq.Queryable.Distinct%2A> operator to eliminate duplicate
  [!code-vb[DLinqQueryExamples#36](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#36)]  
   
 ## See also
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+
+- [Query Examples](query-examples.md)

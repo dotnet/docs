@@ -11,18 +11,18 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
   
  When an interface on a COM+ component is exposed as a Web service, the specification and contract of these services are determined by an automatic mapping that is performed at application initialization time. The following list shows the conceptual model for this mapping:  
   
--   One service is defined for each exposed COM class.  
+- One service is defined for each exposed COM class.  
   
--   The contract for the service is derived directly from the selected component's interface definition with the possibility of method exclusion defined in configuration.  
+- The contract for the service is derived directly from the selected component's interface definition with the possibility of method exclusion defined in configuration.  
   
--   The operations in that contract are derived directly from the methods on the component's interface definition.  
+- The operations in that contract are derived directly from the methods on the component's interface definition.  
   
--   The parameters for those operations are derived directly from the COM interoperability type that corresponds to the component's method parameters.  
+- The parameters for those operations are derived directly from the COM interoperability type that corresponds to the component's method parameters.  
   
  Default addresses and transport bindings for the service are provided in a service configuration file, but these can be reconfigured as required.  
   
 > [!NOTE]
->  The contracts for the exposed Web services remain constant as long as the COM+ interfaces and configuration remain unchanged. A modification to several interfaces does not automatically update the available services and requires re-running the COM+ Service Model Configuration tool (ComSvcConfig.exe).  
+> The contracts for the exposed Web services remain constant as long as the COM+ interfaces and configuration remain unchanged. A modification to several interfaces does not automatically update the available services and requires re-running the COM+ Service Model Configuration tool (ComSvcConfig.exe).  
   
  The authentication and authorization requirements of the COM+ application and its components continue to be enforced when used as a Web service.  
   
@@ -30,30 +30,30 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
   
  The following steps are required to expose a COM+ component's interface as a Web service without modifying the component:  
   
-1.  Determine whether the COM+ component's interface can be exposed as a Web service.  
+1. Determine whether the COM+ component's interface can be exposed as a Web service.  
   
-2.  Select an appropriate hosting mode.  
+2. Select an appropriate hosting mode.  
   
-3.  Use the COM+ Service Model Configuration tool (ComSvcConfig.exe) to add a Web service for the interface. For more information about how to use ComSvcConfig.exe, see [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md).  
+3. Use the COM+ Service Model Configuration tool (ComSvcConfig.exe) to add a Web service for the interface. For more information about how to use ComSvcConfig.exe, see [How to: Use the COM+ Service Model Configuration Tool](../../../../docs/framework/wcf/feature-details/how-to-use-the-com-service-model-configuration-tool.md).  
   
-4.  Configure any additional service settings in the application configuration file. For more information about how to configure a component, see [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md).  
+4. Configure any additional service settings in the application configuration file. For more information about how to configure a component, see [How to: Configure COM+ Service Settings](../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md).  
   
 ## Supported Interfaces  
  There are some restrictions on the type of interfaces that can be exposed as a Web service. The following types of interfaces are not supported:  
   
--   Interfaces that pass object references as parameters - the following limited object reference approach is described in the Limited Object Reference Support section.  
+- Interfaces that pass object references as parameters - the following limited object reference approach is described in the Limited Object Reference Support section.  
   
--   Interfaces that pass types that are not compatible with the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] COM interoperability conversions.  
+- Interfaces that pass types that are not compatible with the .NET Framework COM interoperability conversions.  
   
--   Interfaces for applications that have application pooling enabled when hosted by COM+.  
+- Interfaces for applications that have application pooling enabled when hosted by COM+.  
   
--   Interfaces of components that are marked as private to the application.  
+- Interfaces of components that are marked as private to the application.  
   
--   COM+ infrastructure interfaces.  
+- COM+ infrastructure interfaces.  
   
--   Interfaces from the system application.  
+- Interfaces from the system application.  
   
--   Interfaces from Enterprise Services components that have not been added to the global assembly cache.  
+- Interfaces from Enterprise Services components that have not been added to the global assembly cache.  
   
 ### Limited Object Reference Support  
  Because a number of deployed COM+ components do use objects by reference parameters, such as returning an ADO Recordset object, COM+ integration includes limited support for object reference parameters. The support is limited to objects that implement the `IPersistStream` COM interface. This includes ADO Recordset objects and can be implemented for application specific COM objects.  
@@ -65,20 +65,20 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
  Within a client application, the methods on the <xref:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper> object can be used to pass an object in to a service and similarly to retrieve an object.  
   
 > [!NOTE]
->  Due to the custom and platform-specific nature of the serialization approach, this is best suited for use between WCF clients and WCF services.  
+> Due to the custom and platform-specific nature of the serialization approach, this is best suited for use between WCF clients and WCF services.  
   
 ## Selecting the Hosting Mode  
  COM+ exposes Web services in one of the following hosting modes:  
   
--   COM+-hosted  
+- COM+-hosted  
   
      The Web service is hosted within the application's dedicated COM+ server process (Dllhost.exe). This mode requires the application to be explicitly started before it can receive Web service requests. The COM+ options "Run as an NT Service" or "Leave running when idle" can be used to prevent idle shutdown of the application and its services. This mode provides both Web service and DCOM access to the server application.  
   
--   Web-hosted  
+- Web-hosted  
   
      The Web service is hosted within a Web server worker process. This mode does not require COM+ to be active when the initial request is received. If the application is not active when this request is received, it is automatically activated prior to processing the request. This mode also provides both Web service and DCOM access to the server application, but causes a process hop for Web service requests. This typically requires the client to enable impersonation. In WCF, this can be done with the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class, which is accessed as a property of the generic <xref:System.ServiceModel.ChannelFactory%601> class, as well as the <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation> enumeration value.  
   
--   Web-hosted in-process  
+- Web-hosted in-process  
   
      The Web service and the COM+ application logic are hosted within the Web server worker process. This provides automatic activation of the Web-hosted mode without causing a process hop for Web service requests. The disadvantage is that the server application cannot be accessed through DCOM.  
   
@@ -96,4 +96,5 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
  The COM+ process recycling features cannot be used on integrated applications. If the application is configured to use process recycling and the components are running in a COM+ hosted process, the service fails to start. This requirement does not include services using the Web-hosted in-process mode because the process recycling settings are not applied.  
   
 ## See also
+
 - [Integrating with COM Applications Overview](../../../../docs/framework/wcf/feature-details/integrating-with-com-applications-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILFrame2 Interface1"
+title: "ICorDebugILFrame2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugILFrame2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugILFrame2 Interface1
+# ICorDebugILFrame2 Interface
+
 A logical extension of the ICorDebugILFrame interface.  
   
 ## Methods  
@@ -30,7 +31,7 @@ A logical extension of the ICorDebugILFrame interface.
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -42,4 +43,5 @@ A logical extension of the ICorDebugILFrame interface.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -23,12 +23,12 @@ Gets the count of sequence points within this method.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSequencePointCount(  
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the sequence points.  
   
@@ -39,4 +39,5 @@ HRESULT GetSequencePointCount(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

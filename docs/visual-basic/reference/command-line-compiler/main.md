@@ -12,7 +12,7 @@ Specifies the class or module that contains the `Sub Main` procedure.
   
 ## Syntax  
   
-```  
+```console  
 -main:location  
 ```  
   
@@ -27,17 +27,17 @@ Specifies the class or module that contains the `Sub Main` procedure.
   
  When `location` is a class that inherits from <xref:System.Windows.Forms.Form>, the compiler provides a default `Main` procedure that starts the application if the class has no `Main` procedure. This lets you compile code at the command line that was created in the development environment.  
   
- [!code-vb[VbVbalrCompiler#16](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/main_1.vb)]  
+ [!code-vb[VbVbalrCompiler#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/Class1.vb#16)]  
   
 ### To set -main in the Visual Studio integrated development environment  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.  
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.  
   
-2.  Click the **Application** tab.  
+2. Click the **Application** tab.  
   
-3.  Make sure the **Enable application framework** check box is not checked.  
+3. Make sure the **Enable application framework** check box is not checked.  
   
-4.  Modify the value in the **Startup object** box.  
+4. Modify the value in the **Startup object** box.  
   
 ## Example  
  The following code compiles `T2.vb` and `T3.vb`, specifying that the `Sub Main` procedure will be found in the `Test2` class.  
@@ -47,6 +47,7 @@ vbc t2.vb t3.vb -main:Test2
 ```  
   
 ## See also
+
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)
 - [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

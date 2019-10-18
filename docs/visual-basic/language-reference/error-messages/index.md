@@ -11,11 +11,11 @@ ms.assetid: f2dda05b-baef-41f5-8bb1-598bd7cf239f
 # Error Messages (Visual Basic)
 When you write, compile, or run a Visual Basic application, the following types of errors can occur:  
   
-1.  Design-time errors, which occur when you write an application in Visual Studio.  
+1. Design-time errors, which occur when you write an application in Visual Studio.  
   
-2.  Compile-time errors, which occur when you compile an application in Visual Studio or at a command prompt.  
+2. Compile-time errors, which occur when you compile an application in Visual Studio or at a command prompt.  
   
-3.  Run-time errors, which occur when you run an application in Visual Studio or as a stand-alone executable file.  
+3. Run-time errors, which occur when you run an application in Visual Studio or as a stand-alone executable file.  
   
  For information about how to troubleshoot a specific error, see [Additional Resources for Visual Basic Programmers](../../../visual-basic/getting-started/additional-resources.md).  
   

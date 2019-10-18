@@ -23,9 +23,9 @@ helpviewer_keywords:
 ms.assetid: bb707c72-eed2-4a82-8800-c9e68df2fd4f
 ---
 # Configuring Internet Applications
-The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md) configuration element contains network configuration information for applications. Using the [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md) element, you can set proxy servers, set connection management parameters, and include custom authentication and request modules in your application.  
+The [\<system.Net> Element (Network Settings)](../configure-apps/file-schema/network/system-net-element-network-settings.md) configuration element contains network configuration information for applications. Using the [\<system.Net> Element (Network Settings)](../configure-apps/file-schema/network/system-net-element-network-settings.md) element, you can set proxy servers, set connection management parameters, and include custom authentication and request modules in your application.  
   
- The [\<defaultProxy> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md) element defines the proxy server returned by the `GlobalProxySelection` class. Any <xref:System.Net.HttpWebRequest> that does not have its own <xref:System.Net.HttpWebRequest.Proxy%2A> property set to a specific value uses the default proxy. In addition to setting the proxy address, you can create a list of server addresses that will not use the proxy, and you can indicate that the proxy should not be used for local addresses.  
+ The [\<defaultProxy> Element (Network Settings)](../configure-apps/file-schema/network/defaultproxy-element-network-settings.md) element defines the proxy server returned by the `GlobalProxySelection` class. Any <xref:System.Net.HttpWebRequest> that does not have its own <xref:System.Net.HttpWebRequest.Proxy%2A> property set to a specific value uses the default proxy. In addition to setting the proxy address, you can create a list of server addresses that will not use the proxy, and you can indicate that the proxy should not be used for local addresses.  
   
  It is important to note that the Microsoft Internet Explorer settings are combined with the configuration settings, with the latter taking precedence.  
   
@@ -48,7 +48,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
 </configuration>  
 ```  
   
- Use the [\<connectionManagement> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) element to configure the number of persistent connections that can be made to a specific server or to all other servers. The following example configures the application to use two persistent connections to the server `www.contoso.com`, four persistent connections to the server with the IP address 192.168.1.2, and one persistent connection to all other servers.  
+ Use the [\<connectionManagement> Element (Network Settings)](../configure-apps/file-schema/network/connectionmanagement-element-network-settings.md) element to configure the number of persistent connections that can be made to a specific server or to all other servers. The following example configures the application to use two persistent connections to the server `www.contoso.com`, four persistent connections to the server with the IP address 192.168.1.2, and one persistent connection to all other servers.  
   
 ```xml  
 <configuration>  
@@ -62,7 +62,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
 </configuration>  
 ```  
   
- Custom authentication modules are configured with the [\<authenticationModules> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md) element. Custom authentication modules must implement the <xref:System.Net.IAuthenticationModule> interface.  
+ Custom authentication modules are configured with the [\<authenticationModules> Element (Network Settings)](../configure-apps/file-schema/network/authenticationmodules-element-network-settings.md) element. Custom authentication modules must implement the <xref:System.Net.IAuthenticationModule> interface.  
   
  The following example configures a custom authentication module.  
   
@@ -76,7 +76,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
 </configuration>  
 ```  
   
- You can use the [\<webRequestModules> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) element to configure your application to use custom protocol-specific modules to request information from Internet resources. The specified modules must implement the <xref:System.Net.IWebRequestCreate> interface. You can override the default HTTP, HTTPS, and file request modules by specifying your custom module in the configuration file, as in the following example.  
+ You can use the [\<webRequestModules> Element (Network Settings)](../configure-apps/file-schema/network/webrequestmodules-element-network-settings.md) element to configure your application to use custom protocol-specific modules to request information from Internet resources. The specified modules must implement the <xref:System.Net.IWebRequestCreate> interface. You can override the default HTTP, HTTPS, and file request modules by specifying your custom module in the configuration file, as in the following example.  
   
 ```xml  
 <configuration>  
@@ -92,6 +92,7 @@ The [\<system.Net> Element (Network Settings)](../../../docs/framework/configure
 ```  
   
 ## See also
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
-- [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)
-- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)
+
+- [Network Programming in the .NET Framework](index.md)
+- [Network Settings Schema](../configure-apps/file-schema/network/index.md)
+- [\<system.Net> Element (Network Settings)](../configure-apps/file-schema/network/system-net-element-network-settings.md)

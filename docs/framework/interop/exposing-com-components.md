@@ -16,23 +16,24 @@ This section summarizes the process needed to expose an existing COM component t
   
 #### To expose COM components to the .NET Framework  
   
-1.  [Import a type library as an assembly](importing-a-type-library-as-an-assembly.md).  
+1. [Import a type library as an assembly](importing-a-type-library-as-an-assembly.md).  
   
      The common language runtime requires metadata for all types, including COM types. There are several ways to obtain an assembly containing COM types imported as metadata.  
   
-2.  [Use COM types in managed Code](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)).  
+2. [Use COM types in managed Code](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100)).  
   
      You can inspect COM types, activate instances, and invoke methods on the COM object the same way you do for any managed type.  
   
-3.  [Compile an interop project](compiling-an-interop-project.md).  
+3. [Compile an interop project](compiling-an-interop-project.md).  
   
-     The [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)] provides compilers for several languages compliant with the Common Language Specification (CLS), including [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)], C#, and C++.  
+     The Windows SDK provides compilers for several languages compliant with the Common Language Specification (CLS), including Visual Basic, C#, and C++.  
   
-4.  [Deploy an interop application](deploying-an-interop-application.md).  
+4. [Deploy an interop application](deploying-an-interop-application.md).  
   
-     Interop applications are best deployed as [strong-named](../app-domains/strong-named-assemblies.md), signed assemblies in the global assembly cache.  
+     Interop applications are best deployed as [strong-named](../../standard/assembly/strong-named.md), signed assemblies in the global assembly cache.  
   
 ## See also
+
 - [Interoperating with Unmanaged Code](index.md)
 - [Design Considerations for Interoperation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))
 - [COM Interop Sample: .NET Client and COM Server](com-interop-sample-net-client-and-com-server.md)

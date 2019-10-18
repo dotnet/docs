@@ -17,9 +17,9 @@ ms.assetid: bea0ffe3-2708-4a16-ac7d-e586ed6b8e8d
 # Version tolerant serialization
 In version 1.0 and 1.1 of the .NET Framework, creating serializable types that would be reusable from one version of an application to the next was problematic. If a type was modified by adding extra fields, the following problems would occur:  
   
--   Older versions of an application would throw exceptions when asked to deserialize new versions of the old type.  
+- Older versions of an application would throw exceptions when asked to deserialize new versions of the old type.  
   
--   Newer versions of an application would throw exceptions when deserializing older versions of a type with missing data.  
+- Newer versions of an application would throw exceptions when deserializing older versions of a type with missing data.  
   
  Version Tolerant Serialization (VTS) is a set of features introduced in .NET Framework 2.0 that makes it easier, over time, to modify serializable types. Specifically, the VTS features are enabled for classes to which the <xref:System.SerializableAttribute> attribute has been applied, including generic types. VTS makes it possible to add new fields to those classes without breaking compatibility with other versions of the type. For a working sample application, see [Version Tolerant Serialization Technology Sample](../../../docs/standard/serialization/version-tolerant-serialization-technology-sample.md).  
   
@@ -30,11 +30,11 @@ In version 1.0 and 1.1 of the .NET Framework, creating serializable types that w
 ## Feature list  
  The set of features includes the following:  
   
--   Tolerance of extraneous or unexpected data. This enables newer versions of the type to send data to older versions.  
+- Tolerance of extraneous or unexpected data. This enables newer versions of the type to send data to older versions.  
   
--   Tolerance of missing optional data. This enables older versions to send data to newer versions.  
+- Tolerance of missing optional data. This enables older versions to send data to newer versions.  
   
--   Serialization callbacks. This enables intelligent default value setting in cases where data is missing.  
+- Serialization callbacks. This enables intelligent default value setting in cases where data is missing.  
   
  In addition, there is a feature for declaring when a new optional field has been added. This is the <xref:System.Runtime.Serialization.OptionalFieldAttribute.VersionAdded%2A> property of the <xref:System.Runtime.Serialization.OptionalFieldAttribute> attribute.  
   
@@ -256,23 +256,23 @@ End Class
 ## Best practices  
  To ensure proper versioning behavior, follow these rules when modifying a type from version to version:  
   
--   Never remove a serialized field.  
+- Never remove a serialized field.  
   
--   Never apply the <xref:System.NonSerializedAttribute> attribute to a field if the attribute was not applied to the field in the previous version.  
+- Never apply the <xref:System.NonSerializedAttribute> attribute to a field if the attribute was not applied to the field in the previous version.  
   
--   Never change the name or the type of a serialized field.  
+- Never change the name or the type of a serialized field.  
   
--   When adding a new serialized field, apply the **OptionalFieldAttribute** attribute.  
+- When adding a new serialized field, apply the **OptionalFieldAttribute** attribute.  
   
--   When removing a **NonSerializedAttribute** attribute from a field (that was not serializable in a previous version), apply the **OptionalFieldAttribute** attribute.  
+- When removing a **NonSerializedAttribute** attribute from a field (that was not serializable in a previous version), apply the **OptionalFieldAttribute** attribute.  
   
--   For all optional fields, set meaningful defaults using the serialization callbacks unless 0 or **null** as defaults are acceptable.  
+- For all optional fields, set meaningful defaults using the serialization callbacks unless 0 or **null** as defaults are acceptable.  
   
  To ensure that a type will be compatible with future serialization engines, follow these guidelines:  
   
--   Always set the **VersionAdded** property on the **OptionalFieldAttribute** attribute correctly.  
+- Always set the **VersionAdded** property on the **OptionalFieldAttribute** attribute correctly.  
   
--   Avoid branched versioning.  
+- Avoid branched versioning.  
   
 ## See also
 

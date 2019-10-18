@@ -19,13 +19,13 @@ ms.author: "ronpet"
 # Grouping Constructs in Regular Expressions
 Grouping constructs delineate the subexpressions of a regular expression and capture the substrings of an input string. You can use grouping constructs to do the following:  
   
--   Match a subexpression that is repeated in the input string.  
+- Match a subexpression that is repeated in the input string.  
   
--   Apply a quantifier to a subexpression that has multiple regular expression language elements. For more information about quantifiers, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md).  
+- Apply a quantifier to a subexpression that has multiple regular expression language elements. For more information about quantifiers, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md).  
   
--   Include a subexpression in the string that is returned by the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> methods.  
+- Include a subexpression in the string that is returned by the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> methods.  
   
--   Retrieve individual subexpressions from the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property and process them separately from the matched text as a whole.  
+- Retrieve individual subexpressions from the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property and process them separately from the matched text as a whole.  
   
  The following table lists the grouping constructs supported by the .NET regular expression engine and indicates whether they are capturing or non-capturing.  
   
@@ -53,17 +53,17 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  where *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from one. The capture that is numbered zero is the text matched by the entire regular expression pattern.  
   
 > [!NOTE]
->  By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the matched subexpression is not captured.  
+> By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the matched subexpression is not captured.  
   
  You can access captured groups in four ways:  
   
--   By using the backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\`*number*, where *number* is the ordinal number of the captured subexpression.  
+- By using the backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\`*number*, where *number* is the ordinal number of the captured subexpression.  
   
--   By using the named backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\k<`*name*`>`, where *name* is the name of a capturing group, or `\k<`*number*`>`, where *number* is the ordinal number of a capturing group. A capturing group has a default name that is identical to its ordinal number. For more information, see [Named matched subexpressions](#named_matched_subexpression) later in this topic.  
+- By using the named backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\k<`*name*`>`, where *name* is the name of a capturing group, or `\k<`*number*`>`, where *number* is the ordinal number of a capturing group. A capturing group has a default name that is identical to its ordinal number. For more information, see [Named matched subexpressions](#named_matched_subexpression) later in this topic.  
   
--   By using the `$`*number* replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *number* is the ordinal number of the captured subexpression.  
+- By using the `$`*number* replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *number* is the ordinal number of the captured subexpression.  
   
--   Programmatically, by using the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. For more information, see the [Grouping Constructs and Regular Expression Objects](#Objects) section.  
+- Programmatically, by using the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. For more information, see the [Grouping Constructs and Regular Expression Objects](#Objects) section.  
   
  The following example illustrates a regular expression that identifies duplicated words in text. The regular expression pattern's two capturing groups represent the two instances of the duplicated word. The second instance is captured to report its starting position in the input string.  
   
@@ -72,9 +72,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is the following:  
   
-```  
-(\w+)\s(\1)\W  
-```  
+`(\w+)\s(\1)\W`  
   
  The following table shows how the regular expression pattern is interpreted.  
   
@@ -89,34 +87,30 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Named Matched Subexpressions  
  The following grouping construct captures a matched subexpression and lets you access it by name or by number:  
   
-```  
-(?<name>subexpression)  
-```  
+`(?<name>subexpression)`  
   
  or:  
   
-```  
-(?'name'subexpression)  
-```  
+`(?'name'subexpression)`  
   
  where *name* is a valid group name, and *subexpression* is any valid regular expression pattern. *name* must not contain any punctuation characters and cannot begin with a number.  
   
 > [!NOTE]
->  If the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.  
+> If the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=nameWithType> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.  
   
  You can access named captured groups in the following ways:  
   
--   By using the named backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\k<`*name*`>`, where *name* is the name of the captured subexpression.  
+- By using the named backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\k<`*name*`>`, where *name* is the name of the captured subexpression.  
   
--   By using the backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\`*number*, where *number* is the ordinal number of the captured subexpression. Named matched subexpressions are numbered consecutively from left to right after matched subexpressions.  
+- By using the backreference construct within the regular expression. The matched subexpression is referenced in the same regular expression by using the syntax `\`*number*, where *number* is the ordinal number of the captured subexpression. Named matched subexpressions are numbered consecutively from left to right after matched subexpressions.  
   
--   By using the `${`*name*`}` replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *name* is the name of the captured subexpression.  
+- By using the `${`*name*`}` replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *name* is the name of the captured subexpression.  
   
--   By using the `$`*number* replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *number* is the ordinal number of the captured subexpression.  
+- By using the `$`*number* replacement sequence in a <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method call, where *number* is the ordinal number of the captured subexpression.  
   
--   Programmatically, by using the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. Named captured groups are stored in the collection after numbered captured groups.  
+- Programmatically, by using the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The member at position zero in the collection represents the entire regular expression match. Each subsequent member represents a matched subexpression. Named captured groups are stored in the collection after numbered captured groups.  
   
--   Programmatically, by providing the subexpression name to the <xref:System.Text.RegularExpressions.GroupCollection> object's indexer (in C#) or to its <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property (in Visual Basic).  
+- Programmatically, by providing the subexpression name to the <xref:System.Text.RegularExpressions.GroupCollection> object's indexer (in C#) or to its <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property (in Visual Basic).  
   
  A simple regular expression pattern illustrates how numbered (unnamed) and named groups can be referenced either programmatically or by using regular expression language syntax. The regular expression `((?<One>abc)\d+)?(?<Two>xyz)(.*)` produces the following capturing groups by number and by name. The first capturing group (number 0) always refers to the entire pattern.  
   
@@ -135,9 +129,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is as follows:  
   
-```  
-(?<duplicateWord>\w+)\s\k<duplicateWord>\W(?<nextWord>\w+)  
-```  
+`(?<duplicateWord>\w+)\s\k<duplicateWord>\W(?<nextWord>\w+)`  
   
  The following table shows how the regular expression is interpreted.  
   
@@ -169,22 +161,18 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Balancing Group Definitions  
  A balancing group definition deletes the definition of a previously defined group and stores, in the current group, the interval between the previously defined group and the current group. This grouping construct has the following format:  
   
-```  
-(?<name1-name2>subexpression)  
-```  
+`(?<name1-name2>subexpression)`  
   
  or:  
   
-```  
-(?'name1-name2' subexpression)  
-```  
+`(?'name1-name2' subexpression)`
   
  where *name1* is the current group (optional), *name2* is a previously defined group, and *subexpression* is any valid regular expression pattern. The balancing group definition deletes the definition of *name2* and stores the interval between *name2* and *name1* in *name1*. If no *name2* group is defined, the match backtracks. Because deleting the last definition of *name2* reveals the previous definition of *name2*, this construct lets you use the stack of captures for group *name2* as a counter for keeping track of nested constructs such as parentheses or opening and closing brackets.  
   
- The balancing group definition uses *name2* as a stack. The beginning character of each nested construct is placed in the group and in its <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection. When the closing character is matched, its corresponding opening character is removed from the group, and the <xref:System.Text.RegularExpressions.Group.Captures%2A> collection is decreased by one. After the opening and closing characters of all nested constructs have been matched, *name1* is empty.  
+ The balancing group definition uses *name2* as a stack. The beginning character of each nested construct is placed in the group and in its <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection. When the closing character is matched, its corresponding opening character is removed from the group, and the <xref:System.Text.RegularExpressions.Group.Captures%2A> collection is decreased by one. After the opening and closing characters of all nested constructs have been matched, *name2* is empty.  
   
 > [!NOTE]
->  After you modify the regular expression in the following example to use the appropriate opening and closing character of a nested construct, you can use it to handle most nested constructs, such as mathematical expressions or lines of program code that include multiple nested method calls.  
+> After you modify the regular expression in the following example to use the appropriate opening and closing character of a nested construct, you can use it to handle most nested constructs, such as mathematical expressions or lines of program code that include multiple nested method calls.  
   
  The following example uses a balancing group definition to match left and right angle brackets (<>) in an input string. The example defines two named groups, `Open` and `Close`, that are used like a stack to track matching pairs of angle brackets. Each captured left angle bracket is pushed into the capture collection of the `Open` group, and each captured right angle bracket is pushed into the capture collection of the `Close` group. The balancing group definition ensures that there is a matching right angle bracket for each left angle bracket. If there is not, the final subpattern, `(?(Open)(?!))`, is evaluated only if the `Open` group is not empty (and, therefore, if all nested constructs have not been closed). If the final subpattern is evaluated, the match fails, because the `(?!)` subpattern is a zero-width negative lookahead assertion that always fails.  
   
@@ -193,9 +181,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is:  
   
-```  
-^[^<>]*(((?'Open'<)[^<>]*)+((?'Close-Open'>)[^<>]*)+)*(?(Open)(?!))$  
-```  
+`^[^<>]*(((?'Open'<)[^<>]*)+((?'Close-Open'>)[^<>]*)+)*(?(Open)(?!))$`  
   
  The regular expression is interpreted as follows:  
   
@@ -205,7 +191,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`[^<>]*`|Match zero or more characters that are not left or right angle brackets.|  
 |`(?'Open'<)`|Match a left angle bracket and assign it to a group named `Open`.|  
 |`[^<>]*`|Match zero or more characters that are not left or right angle brackets.|  
-|`((?'Open'<)[^<>]*) +`|Match one or more occurrences of a left angle bracket followed by zero or more characters that are not left or right angle brackets. This is the second capturing group.|  
+|`((?'Open'<)[^<>]*)+`|Match one or more occurrences of a left angle bracket followed by zero or more characters that are not left or right angle brackets. This is the second capturing group.|  
 |`(?'Close-Open'>)`|Match a right angle bracket, assign the substring between the `Open` group and the current group to the `Close` group, and delete the definition of the `Open` group.|  
 |`[^<>]*`|Match zero or more occurrences of any character that is neither a left  nor a right angle bracket.|  
 |`((?'Close-Open'>)[^<>]*)+`|Match one or more occurrences of a right angle bracket, followed by zero or more occurrences of any character that is neither a left nor a right angle bracket. When matching the right angle bracket, assign the substring between the `Open` group and the current group to the `Close` group, and delete the definition of the `Open` group. This is the third capturing group.|  
@@ -228,13 +214,13 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |7|`[^<>]*`|Looks for non-angle bracket characters after the right angle bracket; finds no matches.|  
 |8|`)+`|The value of the third captured group is ">".<br /><br /> The next character in the input string is not a right angle bracket, so the regular expression engine does not loop back to the `((?'Close-Open'>)[^<>]*)` subpattern.|  
 |9|`)*`|The value of the first captured group is "\<abc>".<br /><br /> The next character in the input string is a left  angle bracket, so the regular expression engine loops back to the `(((?'Open'<)` subpattern.|  
-|10|`(((?'Open'<)`|Matches the left angle bracket in "\<mno>" and assigns it to the `Open` group. Its <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection now has a single value, "<".|  
+|10|`(((?'Open'<)`|Matches the left angle bracket in "\<mno" and assigns it to the `Open` group. Its <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection now has a single value, "<".|  
 |11|`[^<>]*`|Matches "mno".|  
 |12|`)+`|"<mno" is the value of the second captured group.<br /><br /> The next character in the input string is an left angle bracket, so the regular expression engine loops back to the `(?'Open'<)[^<>]*)` subpattern.|  
-|13|`(((?'Open'<)`|Matches the left angle bracket in "\<xyz>" and assigns it to the `Open` group. The <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection of the `Open` group now includes two captures: the left angle bracket from "\<mno>", and the left angle bracket from "\<xyz>".|  
+|13|`(((?'Open'<)`|Matches the left angle bracket in "\<xyz>" and assigns it to the `Open` group. The <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> collection of the `Open` group now includes two captures: the left angle bracket from "\<mno", and the left angle bracket from "\<xyz>".|  
 |14|`[^<>]*`|Matches "xyz".|  
 |15|`)+`|"<xyz" is the value of the second captured group.<br /><br /> The next character in the input string is not a left angle bracket, so the regular expression engine does not loop back to the `(?'Open'<)[^<>]*)` subpattern.|  
-|16|`((?'Close-Open'>)`|Matches the right angle bracket in "\<xyz>". "xyz", assigns the substring between the `Open` group and the right angle bracket to the `Close` group, and deletes the current value of the `Open` group. The value of the previous capture (the left angle bracket in "\<mno>") becomes the current value of the `Open` group. The <xref:System.Text.RegularExpressions.Group.Captures%2A> collection of the `Open` group now includes a single capture, the left angle bracket from "\<xyz>".|  
+|16|`((?'Close-Open'>)`|Matches the right angle bracket in "\<xyz>". "xyz", assigns the substring between the `Open` group and the right angle bracket to the `Close` group, and deletes the current value of the `Open` group. The value of the previous capture (the left angle bracket in "\<mno") becomes the current value of the `Open` group. The <xref:System.Text.RegularExpressions.Group.Captures%2A> collection of the `Open` group now includes a single capture, the left angle bracket from "\<xyz>".|  
 |17|`[^<>]*`|Looks for non-angle bracket characters; finds no matches.|  
 |18|`)+`|The value of the third captured group is ">".<br /><br /> The next character in the input string is a right angle bracket, so the regular expression engine loops back to the `((?'Close-Open'>)[^<>]*)` subpattern.|  
 |19|`((?'Close-Open'>)`|Matches the final right angle bracket in "xyz>>", assigns "mno\<xyz>" (the substring between the `Open` group and the right angle bracket) to the `Close` group, and deletes the current value of the `Open` group. The `Open` group is now empty.|  
@@ -248,14 +234,12 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Noncapturing Groups  
  The following grouping construct does not capture the substring that is matched by a subexpression:  
   
-```  
-(?:subexpression)  
-```  
+`(?:subexpression)`
   
  where *subexpression* is any valid regular expression pattern. The noncapturing group construct is typically used when a quantifier is applied to a group, but the substrings captured by the group are of no interest.  
   
 > [!NOTE]
->  If a regular expression includes nested grouping constructs, an outer noncapturing group construct does not apply to the inner nested group constructs.  
+> If a regular expression includes nested grouping constructs, an outer noncapturing group construct does not apply to the inner nested group constructs.  
   
  The following example illustrates a regular expression that includes noncapturing groups. Note that the output does not include any captured groups.  
   
@@ -281,7 +265,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  where *subexpression* is any valid regular expression pattern. For example, `(?i-s:)` turns on case insensitivity and disables single-line mode. For more information about the inline options you can specify, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
   
 > [!NOTE]
->  You can specify options that apply to an entire regular expression rather than a subexpression by using a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or a static method. You can also specify inline options that apply after a specific point in a regular expression by using the `(?imnsx-imnsx)` language construct.  
+> You can specify options that apply to an entire regular expression rather than a subexpression by using a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or a static method. You can also specify inline options that apply after a specific point in a regular expression by using the `(?imnsx-imnsx)` language construct.  
   
  The group options construct is not a capturing group. That is, although any portion of a string that is captured by *subexpression* is included in the match, it is not included in a captured group nor used to populate the <xref:System.Text.RegularExpressions.GroupCollection> object.  
   
@@ -390,7 +374,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  where *subexpression* is any regular expression pattern. For a match to be successful, *subexpression* must not occur at the input string to the left of the current position. However, any substring that does not match `subexpression` is not included in the match result.  
   
- Zero-width negative lookbehind assertions are typically used at the beginning of regular expressions. The pattern that they define precludes a match in the string that follows. They are also used to limit backtracking when the last character or characters in a captured group must not be one or more of the characters that match that group's regular expression pattern. For example, if a group captures all consecutive word characters, you can use a zero-width positive lookbehind assertion to require that the last character not be an underscore (_).  
+ Zero-width negative lookbehind assertions are typically used at the beginning of regular expressions. The pattern that they define precludes a match in the string that follows. They are also used to limit backtracking when the last character or characters in a captured group must not be one or more of the characters that match that group's regular expression pattern. For example, if a group captures all consecutive word characters, you can use a zero-width positive lookbehind assertion to require that the last character not be an underscore (\_).  
   
  The following example matches the date for any day of the week that is not a weekend (that is, that is neither Saturday nor Sunday).  
   
@@ -440,11 +424,11 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Grouping Constructs and Regular Expression Objects  
  Substrings that are matched by a regular expression capturing group are represented by <xref:System.Text.RegularExpressions.Group?displayProperty=nameWithType> objects, which can be retrieved from the <xref:System.Text.RegularExpressions.GroupCollection?displayProperty=nameWithType> object that is returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The <xref:System.Text.RegularExpressions.GroupCollection> object is populated as follows:  
   
--   The first <xref:System.Text.RegularExpressions.Group> object in the collection (the object at index zero) represents the entire match.  
+- The first <xref:System.Text.RegularExpressions.Group> object in the collection (the object at index zero) represents the entire match.  
   
--   The next set of <xref:System.Text.RegularExpressions.Group> objects represent unnamed (numbered) capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index values of these groups range from 1 to the number of unnamed capturing groups in the collection. (The index of a particular group is equivalent to its numbered backreference. For more information about backreferences, see [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).)  
+- The next set of <xref:System.Text.RegularExpressions.Group> objects represent unnamed (numbered) capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index values of these groups range from 1 to the number of unnamed capturing groups in the collection. (The index of a particular group is equivalent to its numbered backreference. For more information about backreferences, see [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).)  
   
--   The final set of <xref:System.Text.RegularExpressions.Group> objects represent named capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index value of the first named capturing group is one greater than the index of the last unnamed capturing group. If there are no unnamed capturing groups in the regular expression, the index value of the first named capturing group is one.  
+- The final set of <xref:System.Text.RegularExpressions.Group> objects represent named capturing groups. They appear in the order in which they are defined in the regular expression, from left to right. The index value of the first named capturing group is one greater than the index of the last unnamed capturing group. If there are no unnamed capturing groups in the regular expression, the index value of the first named capturing group is one.  
   
  If you apply a quantifier to a capturing group, the corresponding <xref:System.Text.RegularExpressions.Group> object's <xref:System.Text.RegularExpressions.Capture.Value%2A?displayProperty=nameWithType>, <xref:System.Text.RegularExpressions.Capture.Index%2A?displayProperty=nameWithType>, and <xref:System.Text.RegularExpressions.Capture.Length%2A?displayProperty=nameWithType> properties reflect the last substring that is captured by a capturing group. You can retrieve a complete set of substrings that are captured by groups that have quantifiers from the <xref:System.Text.RegularExpressions.CaptureCollection> object that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
   
@@ -453,16 +437,16 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  [!code-csharp[RegularExpressions.Language.Grouping#4](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.grouping/cs/objectmodel1.cs#4)]
  [!code-vb[RegularExpressions.Language.Grouping#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.grouping/vb/objectmodel1.vb#4)]  
   
- The regular expression pattern `\b(\w+)\W+)+` extracts individual words from a string. It is defined as shown in the following table.  
+ The regular expression pattern `(\b(\w+)\W+)+` extracts individual words from a string. It is defined as shown in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
 |`\b`|Begin the match at a word boundary.|  
 |`(\w+)`|Match one or more word characters. Together, these characters form a word. This is the second capturing group.|  
 |`\W+`|Match one or more non-word characters.|  
-|`(\w+)\W+)+`|Match the pattern of one or more word characters followed by one or more non-word characters one or more times. This is the first capturing group.|  
+|`(\b(\w+)\W+)`|Match the pattern of one or more word characters followed by one or more non-word characters one or more times. This is the first capturing group.|  
   
- The first capturing group matches each word of the sentence. The second capturing group matches each word along with the punctuation and white space that follow the word. The <xref:System.Text.RegularExpressions.Group> object whose index is 2 provides information about the text matched by the second capturing group. The complete set of words captured by the capturing group are available from the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
+ The second capturing group matches each word of the sentence. The first capturing group matches each word along with the punctuation and white space that follow the word. The <xref:System.Text.RegularExpressions.Group> object whose index is 2 provides information about the text matched by the second capturing group. The complete set of words captured by the capturing group are available from the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
   
 ## See also
 

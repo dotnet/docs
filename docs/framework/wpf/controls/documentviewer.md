@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: c21eb322-d6b3-474b-ab05-94527bd1b0fa
 ---
 # DocumentViewer
-The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:System.Windows.Documents.FixedDocument> content (such as [!INCLUDE[TLA#tla_metro](../../../../includes/tlasharptla-metro-md.md)] documents) in a paginated format.  
+The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:System.Windows.Documents.FixedDocument> content (such as XML Paper Specification (XPS) documents) in a paginated format.  
   
 ## Reference  
  <xref:System.Windows.Controls.DocumentViewer>  
@@ -17,6 +17,7 @@ The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:
  <xref:System.Windows.Documents.FixedDocument>  
   
 ## See also
-- [Documents](../../../../docs/framework/wpf/advanced/documents.md)
-- [Document Serialization and Storage](../../../../docs/framework/wpf/advanced/document-serialization-and-storage.md)
-- [Printing Overview](../../../../docs/framework/wpf/advanced/printing-overview.md)
+
+- [Documents](../advanced/documents.md)
+- [Document Serialization and Storage](../advanced/document-serialization-and-storage.md)
+- [Printing Overview](../advanced/printing-overview.md)

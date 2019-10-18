@@ -20,25 +20,25 @@ This topic describes security issues associated with LINQ to XML. In addition, i
   
  If you are operating in a less secure environment, there are a number of security issues that are associated with XML and the use of the classes in <xref:System.Xml?displayProperty=nameWithType>, <xref:System.Xml.Schema?displayProperty=nameWithType>, <xref:System.Xml.XPath?displayProperty=nameWithType>, and <xref:System.Xml.Xsl?displayProperty=nameWithType>. These issues include, but are not limited to, the following:  
   
--   XSD, XPath, and XSLT are string-based languages in which you can specify operations that consume a lot of time or memory. It is the responsibility of application programmers who take XSD, XPath, or XSLT strings from untrusted sources to validate that the strings are not malicious, or to monitor and mitigate the possibility that evaluating these strings will lead to excessive system resource consumption.  
+- XSD, XPath, and XSLT are string-based languages in which you can specify operations that consume a lot of time or memory. It is the responsibility of application programmers who take XSD, XPath, or XSLT strings from untrusted sources to validate that the strings are not malicious, or to monitor and mitigate the possibility that evaluating these strings will lead to excessive system resource consumption.  
   
--   XSD schemas (including inline schemas) are inherently vulnerable to denial of service attacks; you should not accept schemas from untrusted sources.  
+- XSD schemas (including inline schemas) are inherently vulnerable to denial of service attacks; you should not accept schemas from untrusted sources.  
   
--   XSD and XSLT can include references to other files, and such references can result in cross-zone and cross-domain attacks.  
+- XSD and XSLT can include references to other files, and such references can result in cross-zone and cross-domain attacks.  
   
--   External entities in DTDs can result in cross-zone and cross-domain attacks.  
+- External entities in DTDs can result in cross-zone and cross-domain attacks.  
   
--   DTDs are vulnerable to denial of service attacks.  
+- DTDs are vulnerable to denial of service attacks.  
   
--   Exceptionally deep XML documents can pose denial of service issues; you might want to limit the depth of XML documents.  
+- Exceptionally deep XML documents can pose denial of service issues; you might want to limit the depth of XML documents.  
   
--   Do not accept supporting components, such as <xref:System.Xml.NameTable>, <xref:System.Xml.XmlNamespaceManager>, and <xref:System.Xml.XmlResolver> objects, from untrusted assemblies.  
+- Do not accept supporting components, such as <xref:System.Xml.NameTable>, <xref:System.Xml.XmlNamespaceManager>, and <xref:System.Xml.XmlResolver> objects, from untrusted assemblies.  
   
--   Read data in chunks to mitigate large document attacks.  
+- Read data in chunks to mitigate large document attacks.  
   
--   Script blocks in XSLT style sheets can expose a number of attacks.  
+- Script blocks in XSLT style sheets can expose a number of attacks.  
   
--   Validate carefully before constructing dynamic XPath expressions.  
+- Validate carefully before constructing dynamic XPath expressions.  
   
 ## LINQ to XML Security Issues  
  The security issues in this topic are not presented in any particular order. All issues are important and should be addressed as appropriate.  
@@ -95,4 +95,4 @@ This topic describes security issues associated with LINQ to XML. In addition, i
   
 ## See also
 
-- [Programming Guide (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+- [Programming Guide (LINQ to XML) (C#)](./programming-guide-linq-to-xml.md)

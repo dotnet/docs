@@ -8,7 +8,7 @@ Determines if a query expression is null.
   
 ## Syntax  
   
-```  
+```sql  
 expression IS [ NOT ] NULL  
 ```  
   
@@ -25,7 +25,7 @@ expression IS [ NOT ] NULL
 ## Remarks  
  Use `IS NULL` to determine if the element of an outer join is null:  
   
-```  
+```sql  
 select c   
       from LOB.Customers as c left outer join LOB.Orders as o   
                               on c.ID = o.CustomerID    
@@ -34,7 +34,7 @@ select c
   
  Use `IS NULL` to determine if a member has an actual value:  
   
-```  
+```sql  
 select c from LOB.Customer as c where c.DOB is not null  
 ```  
   
@@ -53,11 +53,12 @@ select c from LOB.Customer as c where c.DOB is not null
 ## Example  
  The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the IS NOT NULL operator to determine if a query expression is not null. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#ISNULL](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#isnull)]  
+ [!code-sql[DP EntityServices Concepts#ISNULL](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#isnull)]  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)

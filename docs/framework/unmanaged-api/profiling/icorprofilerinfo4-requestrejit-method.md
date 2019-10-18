@@ -23,14 +23,14 @@ Requests a JIT recompilation of all instances of the specified functions.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestReJIT (  
    [in] ULONG    cFunctions,  
    [in, size_is(cFunctions)]  ModuleID    moduleIds[],  
    [in, size_is(cFunctions)]  mdMethodDef methodIds[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cFunctions`  
  [in] The number of functions to recompile.  
   
@@ -67,6 +67,7 @@ HRESULT RequestReJIT (
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

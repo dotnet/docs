@@ -7,22 +7,23 @@ helpviewer_keywords:
 ms.assetid: a602aef8-a8c8-4c36-9816-74e7bad96a68
 ---
 # Overview of Graphics
-[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is an application programming interface (API) that forms the subsystem of the Microsoft Windows operating system. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is responsible for displaying information on screens and printers. As its name suggests, [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] is the successor to [!INCLUDE[ndptecgdi](../../../../includes/ndptecgdi-md.md)], the Graphics Device Interface included with earlier versions of Windows.  
+GDI+ is an application programming interface (API) that forms the subsystem of the Microsoft Windows operating system. GDI+ is responsible for displaying information on screens and printers. As its name suggests, GDI+ is the successor to GDI, the Graphics Device Interface included with earlier versions of Windows.  
   
 ## Managed Class Interface  
- The [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] API is exposed through a set of classes deployed as managed code. This set of classes is called the *managed class interface* to [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)]. The following namespaces make up the managed class interface:  
+ The GDI+ API is exposed through a set of classes deployed as managed code. This set of classes is called the *managed class interface* to GDI+. The following namespaces make up the managed class interface:  
   
--   <xref:System.Drawing>  
+- <xref:System.Drawing>  
   
--   <xref:System.Drawing.Drawing2D>  
+- <xref:System.Drawing.Drawing2D>  
   
--   <xref:System.Drawing.Imaging>  
+- <xref:System.Drawing.Imaging>  
   
--   <xref:System.Drawing.Text>  
+- <xref:System.Drawing.Text>  
   
--   <xref:System.Drawing.Printing>  
+- <xref:System.Drawing.Printing>  
   
- With a Graphics Device Interface, such as [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)], you can display information on a screen or printer without having to be concerned about the details of a particular display device. The programmer makes calls to methods provided by [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] classes. Those methods, in turn, make the appropriate calls to specific device drivers. [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] insulates the application from the graphics hardware. It is this insulation that enables a programmer to create device-independent applications.  
+ With a Graphics Device Interface, such as GDI+, you can display information on a screen or printer without having to be concerned about the details of a particular display device. The programmer makes calls to methods provided by GDI+ classes. Those methods, in turn, make the appropriate calls to specific device drivers. GDI+ insulates the application from the graphics hardware. It is this insulation that enables a programmer to create device-independent applications.  
   
 ## See also
-- [Graphics Overview](../../../../docs/framework/winforms/advanced/graphics-overview-windows-forms.md)
+
+- [Graphics Overview](graphics-overview-windows-forms.md)

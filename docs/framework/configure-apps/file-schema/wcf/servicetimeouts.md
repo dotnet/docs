@@ -6,11 +6,12 @@ ms.assetid: ada536cf-97dc-4cd7-89ec-ed1466c1c557
 # \<serviceTimeouts>
 Specifies the timeout for a service.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<serviceTimeouts>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceTimeouts>**  
   
 ## Syntax  
   
@@ -37,7 +38,8 @@ Specifies the timeout for a service.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ServiceTimeoutsElement>

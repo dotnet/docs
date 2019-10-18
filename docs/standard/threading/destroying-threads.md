@@ -16,7 +16,7 @@ ms.author: "ronpet"
 The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method is used to stop a managed thread permanently. When you call <xref:System.Threading.Thread.Abort%2A>, the common language runtime throws a <xref:System.Threading.ThreadAbortException> in the target thread, which the target thread can catch. For more information, see <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>.  
   
 > [!NOTE]
->  If a thread is executing unmanaged code when its <xref:System.Threading.Thread.Abort%2A> method is called, the runtime marks it <xref:System.Threading.ThreadState.AbortRequested?displayProperty=nameWithType>. The exception is thrown when the thread returns to managed code.  
+> If a thread is executing unmanaged code when its <xref:System.Threading.Thread.Abort%2A> method is called, the runtime marks it <xref:System.Threading.ThreadState.AbortRequested?displayProperty=nameWithType>. The exception is thrown when the thread returns to managed code.  
   
  Once a thread is aborted, it cannot be restarted.  
   

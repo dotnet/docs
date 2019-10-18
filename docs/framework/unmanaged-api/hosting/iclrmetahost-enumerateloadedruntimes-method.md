@@ -23,14 +23,14 @@ Returns an enumeration that includes a valid [ICLRRuntimeInfo](../../../../docs/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateLoadedRuntimes (  
     [in] HANDLE hndProcess,  
     [out, retval] IEnumUnknown **ppEnumerator  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hndProcess`  
  [in] The handle of the process to inspect for loaded runtimes.  
   
@@ -58,5 +58,6 @@ HRESULT EnumerateLoadedRuntimes (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

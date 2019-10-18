@@ -22,17 +22,16 @@ Notifies the ICorDebug pipeline that the out of process debugger is continuing t
 
 ## Syntax
 
-```
+```cpp
 HRESULT ProcessStateChanged(
     [in] CorDebugStateChange change
 );
 ```
 
-#### Parameters
+## Parameters
 
- `eChange`
-
- [in] A member of the [CorDebugStateChange enumeration](cordebugstatechange-enumeration.md) describing a change in the process's execution state.
+ `eChange`\
+[in] A member of the [CorDebugStateChange enumeration](cordebugstatechange-enumeration.md) describing a change in the process's execution state.
 
 ## Remarks
 

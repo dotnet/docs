@@ -23,7 +23,7 @@ Returns the method that contains the breakpoint at the given position in a docum
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodFromDocumentPosition (  
     [in]  ISymUnmanagedDocument*  document,  
     [in]  ULONG32  line,  
@@ -31,7 +31,7 @@ HRESULT GetMethodFromDocumentPosition (
     [out, retval] ISymUnmanagedMethod**  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] The specified document.  
   
@@ -51,4 +51,5 @@ HRESULT GetMethodFromDocumentPosition (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

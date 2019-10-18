@@ -14,12 +14,12 @@ The common language runtime (CLR) is the heart of the Microsoft .NET Framework a
   
  **SQL Server Books Online**  
   
--   [Common Language Runtime (CLR) Integration Overview](https://go.microsoft.com/fwlink/?LinkId=115242)  
+- [Common Language Runtime (CLR) Integration Overview](https://go.microsoft.com/fwlink/?LinkId=115242)  
   
 ## Enabling CLR Integration  
  The common language runtime (CLR) integration feature is off by default in Microsoft SQL Server, and must be enabled in order to use objects that are implemented using CLR integration. To enable CLR integration using Transact-SQL, use the `clr enabled` option of the `sp_configure` stored procedure as shown:  
   
-```  
+```sql  
 sp_configure 'clr enabled', 1  
 GO  
 RECONFIGURE  
@@ -32,14 +32,14 @@ GO
   
  **SQL Server Books Online**  
   
--   [Enabling CLR Integration](https://go.microsoft.com/fwlink/?LinkId=115230)  
+- [Enabling CLR Integration](https://go.microsoft.com/fwlink/?LinkId=115230)  
   
 ## Deploying a CLR Assembly  
  Once the CLR methods have been tested and verified on the test server, they can be distributed to production servers using a deployment script. The deployment script can be generated manually, or by using SQL Server Management Studio. For more detailed information, see the version of SQL Server Books Online for the version of SQL Server you are using.  
   
  **SQL Server Books Online**  
   
-1.  [Deploying CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115232)  
+1. [Deploying CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115232)  
   
 ## CLR Integration Security  
  The security model of the Microsoft SQL Server integration with the Microsoft .NET Framework common language runtime (CLR) manages and secures access between different types of CLR and non-CLR objects running within SQL Server. These objects may be called by a Transact-SQL statement or another CLR object running in the server.  
@@ -48,7 +48,7 @@ GO
   
  **SQL Server Books Online**  
   
--   [CLR Integration Security](https://go.microsoft.com/fwlink/?LinkId=115234)  
+- [CLR Integration Security](https://go.microsoft.com/fwlink/?LinkId=115234)  
   
 ## Debugging a CLR Assembly  
  Microsoft SQL Server provides support for debugging Transact-SQL and common language runtime (CLR) objects in the database. Debugging works across languages: users can step seamlessly into CLR objects from Transact-SQL, and vice versa.  
@@ -57,8 +57,9 @@ GO
   
  **SQL Server Books Online**  
   
--   [Debugging CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115236)  
+- [Debugging CLR Database Objects](https://go.microsoft.com/fwlink/?LinkId=115236)  
   
 ## See also
-- [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Code Access Security and ADO.NET](../code-access-security.md)
+- [ADO.NET Overview](../ado-net-overview.md)

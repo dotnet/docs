@@ -10,7 +10,8 @@ Counter Name: Calls Duration
  The average duration of calls to this operation. The average duration is calculated based on this equation: (N1-N0)/(D1-D0).  
   
 > [!WARNING]
->  When used on an asynchronous WCF service the Calls Duration counter will always return -1.  
+> When used on an asynchronous WCF service the Calls Duration counter will always return -1.  
   
 ## See also
+
 - [PERF_AVERAGE_TIMER](https://go.microsoft.com/fwlink/?LinkId=95015)

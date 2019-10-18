@@ -25,13 +25,13 @@ Retrieves the number of locks that current thread holds.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LocksHeldByLogicalThread(  
     [out] DWORD *pCount  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCount`  
  [out] A pointer to the number of locks that the current thread holds.  
   
@@ -45,4 +45,5 @@ HRESULT LocksHeldByLogicalThread(
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

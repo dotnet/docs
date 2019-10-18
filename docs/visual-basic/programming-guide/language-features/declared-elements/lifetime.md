@@ -52,7 +52,7 @@ The *lifetime* of a declared element is the period of time during which it is av
  The following example declares a variable with the [Static](../../../../visual-basic/language-reference/modifiers/static.md) keyword. (Note that you do not need the `Dim` keyword when the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) uses a modifier such as `Static`.)  
   
 ### Code  
- [!code-vb[VbVbalrKeywords#13](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)]  
+ [!code-vb[VbVbalrKeywords#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class7.vb#13)]  
   
 ### Comments  
  In the preceding example, the variable `applesSold` continues to exist after the procedure `runningTotal` returns to the calling code. The next time `runningTotal` is called, `applesSold` retains its previously calculated value.  
@@ -66,6 +66,7 @@ The *lifetime* of a declared element is the period of time during which it is av
  In the preceding example, you can produce the same lifetime by declaring `applesSold` at module level. If you changed the scope of a variable this way, however, the procedure would no longer have exclusive access to it. Because other procedures could access `applesSold` and change its value, the running total could be unreliable and the code could be more difficult to maintain.  
   
 ## See also
+
 - [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)
 - [Nothing](../../../../visual-basic/language-reference/nothing.md)
 - [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)

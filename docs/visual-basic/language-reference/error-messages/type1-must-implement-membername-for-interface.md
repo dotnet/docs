@@ -17,18 +17,19 @@ ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
   
 ## To correct this error  
   
-1.  Declare a member with the same name and signature as defined in the interface. Be sure to include at least the `End Function`, `End Sub`, or `End Property` statement.  
+1. Declare a member with the same name and signature as defined in the interface. Be sure to include at least the `End Function`, `End Sub`, or `End Property` statement.  
   
-2.  Add an `Implements` clause to the end of the `Function`, `Sub`, `Property`, or `Event` statement. For example:  
+2. Add an `Implements` clause to the end of the `Function`, `Sub`, `Property`, or `Event` statement. For example:  
   
-    ```  
+    ```vb  
     Public Event ItHappened() Implements IBaseInterface.ItHappened  
     ```  
   
-3.  When implementing a property, make sure that `ReadOnly` or `WriteOnly` is used in the same way as in the interface definition.  
+3. When implementing a property, make sure that `ReadOnly` or `WriteOnly` is used in the same way as in the interface definition.  
   
-4.  When implementing a property, declare `Get` and `Set` procedures, as appropriate.  
+4. When implementing a property, declare `Get` and `Set` procedures, as appropriate.  
   
 ## See also
+
 - [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
 - [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

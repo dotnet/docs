@@ -6,10 +6,11 @@ ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
 # \<add> of \<transportConfigurationType>
 This element is a key/value pair, which identifies the type of a particular transport.  
   
- \<system.ServiceModel>  
-\<ServiceHostingEnvironment>  
-\<transportConfigurationTypes>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceHostingEnvironment>**](servicehostingenvironment.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<transportConfigurationTypes>**](transportconfigurationtypes.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
@@ -39,7 +40,7 @@ This element is a key/value pair, which identifies the type of a particular tran
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<transportConfigurationTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/transportconfigurationtypes.md)|A collection of types that implement the specific transport.|  
+|[\<transportConfigurationTypes>](transportconfigurationtypes.md)|A collection of types that implement the specific transport.|  
   
 ## Example  
   
@@ -53,7 +54,8 @@ This element is a key/value pair, which identifies the type of a particular tran
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
 - <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
 - <xref:System.ServiceModel.ServiceHostingEnvironment>
-- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

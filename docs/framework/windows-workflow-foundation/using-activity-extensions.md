@@ -8,17 +8,17 @@ Activities can interact with workflow application extensions that allow the host
 
 ### To use an activity extension to count executions
 
-1.  Open Visual Studio 2010. Select **New**, **Project**. Under the **Visual C#** node, select **Workflow**.  Select **Workflow Console Application** from the list of templates. Name the project `Extensions`. Click **OK** to create the project.
+1. Open Visual Studio 2010. Select **New**, **Project**. Under the **Visual C#** node, select **Workflow**.  Select **Workflow Console Application** from the list of templates. Name the project `Extensions`. Click **OK** to create the project.
 
-2.  Add a `using` statement in the Program.cs file for the **System.Collections.Generic** namespace.
+2. Add a `using` statement in the Program.cs file for the **System.Collections.Generic** namespace.
 
-    ```
+    ```csharp
     using System.Collections.Generic;
     ```
 
-3.  In the Program.cs file, create a new class named **ExecutionCountExtension**. The following code creates a workflow extension that tracks instance IDs when its **Register** method is called.
+3. In the Program.cs file, create a new class named **ExecutionCountExtension**. The following code creates a workflow extension that tracks instance IDs when its **Register** method is called.
 
-    ```
+    ```csharp
     // This extension collects a list of workflow Ids
     public class ExecutionCountExtension
     {
@@ -50,9 +50,9 @@ Activities can interact with workflow application extensions that allow the host
     }
     ```
 
-4.  Create an activity that consumes the **ExecutionCountExtension**. The following code defines an activity that retrieves the **ExecutionCountExtension** object from the runtime and calls its **Register** method when the activity executes.
+4. Create an activity that consumes the **ExecutionCountExtension**. The following code defines an activity that retrieves the **ExecutionCountExtension** object from the runtime and calls its **Register** method when the activity executes.
 
-    ```
+    ```csharp
     // Activity that consumes an extension provided by the host. If the extension is available
     // in the context, it will invoke (in this case, registers the Id of the executing workflow)
     public class MyActivity: CodeActivity
@@ -69,9 +69,9 @@ Activities can interact with workflow application extensions that allow the host
     }
     ```
 
-5.  Implement the activity in the **Main** method of the program.cs file. The following code contains methods to generate two different workflows, execute each workflow several times, and display the resulting data that is contained in the extension.
+5. Implement the activity in the **Main** method of the program.cs file. The following code contains methods to generate two different workflows, execute each workflow several times, and display the resulting data that is contained in the extension.
 
-    ```
+    ```csharp
     class Program
     {
         // Creates a workflow that uses the activity that consumes the extension

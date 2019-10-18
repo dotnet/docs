@@ -23,7 +23,7 @@ Returns metadata information for the <xref:System.Type> represented by the speci
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeDefProps (  
    [in]  mdTypeDef   td,  
    [out] LPWSTR      szTypeDef,  
@@ -34,7 +34,7 @@ HRESULT GetTypeDefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The TypeDef token that represents the type to return metadata for.  
   
@@ -63,5 +63,6 @@ HRESULT GetTypeDefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

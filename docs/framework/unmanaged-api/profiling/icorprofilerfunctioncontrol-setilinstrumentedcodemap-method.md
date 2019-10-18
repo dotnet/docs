@@ -23,13 +23,13 @@ Sets a code map for the specified function by using the specified Common Interme
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetILInstrumentedCodeMap(  
     [in]   ULONG      cILMapEntries,  
     [in, size_is(cILMapEntries)] COR_IL_MAP rgILMapEntries[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cILMapEntries`  
  [in] The number of entries in the map.  
   
@@ -49,4 +49,5 @@ HRESULT SetILInstrumentedCodeMap(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

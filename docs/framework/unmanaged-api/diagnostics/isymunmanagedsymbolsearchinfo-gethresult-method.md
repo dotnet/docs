@@ -23,12 +23,12 @@ Gets the HRESULT.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHRESULT(  
     [out] HRESULT *phr);  
 ```  
   
-#### Parameters  
+## Parameters  
  `phr`  
  [out] A pointer to the HRESULT.  
   
@@ -39,4 +39,5 @@ HRESULT GetHRESULT(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedSymbolSearchInfo Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedsymbolsearchinfo-interface.md)

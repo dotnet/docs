@@ -19,19 +19,19 @@ ms.assetid: aad5b16e-a29e-445e-bd0d-eea0b138d7b2
 <c>text</c>  
 ```  
   
-#### Parameters  
+## Parameters  
  `text`  
  The text you would like to indicate as code.  
   
 ## Remarks  
- The \<c> tag gives you a way to indicate that text within a description should be marked as code. Use [\<code>](../../../csharp/programming-guide/xmldoc/code.md) to indicate multiple lines as code.  
+ The \<c> tag gives you a way to indicate that text within a description should be marked as code. Use [\<code>](./code.md) to indicate multiple lines as code.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- [!code-csharp[csProgGuideDocComments#2](../../../csharp/programming-guide/xmldoc/codesnippet/CSharp/code-inline_1.cs)]  
+ [!code-csharp[csProgGuideDocComments#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#2)]  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [C# Programming Guide](../index.md)
+- [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md)

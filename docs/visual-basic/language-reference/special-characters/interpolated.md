@@ -13,5 +13,6 @@ The following example uses the `$` character to define an interpolated string.
 For more information on interpolated strings, see the [Interpolated Strings](../../programming-guide/language-features/strings/interpolated-strings.md) topic.
 
 ## See also
+
 - [Visual Basic Reference](../index.md)
 - [Visual Basic Special Characters](index.md)

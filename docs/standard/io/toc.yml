@@ -1,0 +1,68 @@
+- name: File and Stream I/O
+  href: index.md
+  items:
+  - name: File path formats on Windows systems
+    href: file-path-formats.md
+  - name: Common I/O Tasks
+    href: common-i-o-tasks.md
+    items:
+    - name: "How to: Copy Directories"
+      href: how-to-copy-directories.md
+    - name: "How to: Enumerate Directories and Files"
+      href: how-to-enumerate-directories-and-files.md
+    - name: "How to: Read and Write to a Newly Created Data File"
+      href: how-to-read-and-write-to-a-newly-created-data-file.md
+    - name: "How to: Open and Append to a Log File"
+      href: how-to-open-and-append-to-a-log-file.md
+    - name: "How to: Write Text to a File"
+      href: how-to-write-text-to-a-file.md
+    - name: "How to: Read Text from a File"
+      href: how-to-read-text-from-a-file.md
+    - name: "How to: Read Characters from a String"
+      href: how-to-read-characters-from-a-string.md
+    - name: "How to: Write Characters to a String"
+      href: how-to-write-characters-to-a-string.md
+    - name: "How to: Add or Remove Access Control List Entries"
+      href: how-to-add-or-remove-access-control-list-entries.md
+    - name: "How to: Compress and Extract Files"
+      href: how-to-compress-and-extract-files.md
+    - name: Composing Streams
+      href: composing-streams.md
+    - name: "How to: Convert Between .NET Framework Streams and Windows Runtime Streams"
+      href: how-to-convert-between-dotnet-streams-and-winrt-streams.md
+  - name: Asynchronous File I/O
+    href: asynchronous-file-i-o.md
+  - name: Handling I/O errors
+    href: handling-io-errors.md
+  - name: Isolated Storage
+    href: isolated-storage.md
+    items:
+    - name: Types of Isolation
+      href: types-of-isolation.md
+    - name: "How to: Obtain Stores for Isolated Storage"
+      href: how-to-obtain-stores-for-isolated-storage.md
+    - name: "How to: Enumerate Stores for Isolated Storage"
+      href: how-to-enumerate-stores-for-isolated-storage.md
+    - name: "How to: Delete Stores in Isolated Storage"
+      href: how-to-delete-stores-in-isolated-storage.md
+    - name: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
+      href: how-to-anticipate-out-of-space-conditions-with-isolated-storage.md
+    - name: "How to: Create Files and Directories in Isolated Storage"
+      href: how-to-create-files-and-directories-in-isolated-storage.md
+    - name: "How to: Find Existing Files and Directories in Isolated Storage"
+      href: how-to-find-existing-files-and-directories-in-isolated-storage.md
+    - name: "How to: Read and Write to Files in Isolated Storage"
+      href: how-to-read-and-write-to-files-in-isolated-storage.md
+    - name: "How to: Delete Files and Directories in Isolated Storage"
+      href: how-to-delete-files-and-directories-in-isolated-storage.md
+  - name: Pipes
+    href: pipe-operations.md
+    items:
+    - name: "How to: Use Anonymous Pipes for Local Interprocess Communication"
+      href: how-to-use-anonymous-pipes-for-local-interprocess-communication.md
+    - name: "How to: Use Named Pipes for Network Interprocess Communication"
+      href: how-to-use-named-pipes-for-network-interprocess-communication.md
+  - name: Pipelines
+    href: pipelines.md
+  - name: Memory-Mapped Files
+    href: memory-mapped-files.md

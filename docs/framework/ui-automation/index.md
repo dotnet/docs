@@ -6,26 +6,25 @@ f1_keywords:
 helpviewer_keywords: 
   - "UI Automation"
 ms.assetid: e7ec856e-41ee-47b1-9d57-b75a3dad088c
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Accessibility
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] is the new accessibility framework for [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)]. It addresses the needs of assistive technology products and automated test frameworks by providing programmatic access to information about the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. In addition, [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] enables control and application developers to make their products accessible.  
   
- This documentation describes the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] [!INCLUDE[TLA#tla_api](../../../includes/tlasharptla-api-md.md)] for managed code. For information on programming for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] in C++, see [UI Automation for Win32 Applications](/windows/desktop/winauto/windows-automation-api-portal).  
+ This documentation describes the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] API for managed code. For information on programming for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] in C++, see [UI Automation for Win32 Applications](/windows/desktop/winauto/windows-automation-api-portal).  
   
 ## In This Section  
- [Accessibility Best Practices](../../../docs/framework/ui-automation/accessibility-best-practices.md)  
- [UI Automation Fundamentals](../../../docs/framework/ui-automation/index.md)  
- [UI Automation Providers for Managed Code](../../../docs/framework/ui-automation/ui-automation-providers-for-managed-code.md)  
- [UI Automation Clients for Managed Code](../../../docs/framework/ui-automation/ui-automation-clients-for-managed-code.md)  
- [UI Automation Control Patterns](../../../docs/framework/ui-automation/ui-automation-control-patterns.md)  
- [UI Automation Text Pattern](../../../docs/framework/ui-automation/ui-automation-text-pattern.md)  
- [UI Automation Control Types](../../../docs/framework/ui-automation/ui-automation-control-types.md)  
- [UI Automation Specification and Community Promise](../../../docs/framework/ui-automation/ui-automation-specification-and-community-promise.md)  
+ [Accessibility Best Practices](accessibility-best-practices.md)  
+ [UI Automation Fundamentals](index.md)  
+ [UI Automation Providers for Managed Code](ui-automation-providers-for-managed-code.md)  
+ [UI Automation Clients for Managed Code](ui-automation-clients-for-managed-code.md)  
+ [UI Automation Control Patterns](ui-automation-control-patterns.md)  
+ [UI Automation Text Pattern](ui-automation-text-pattern.md)  
+ [UI Automation Control Types](ui-automation-control-types.md)  
+ [UI Automation Specification and Community Promise](ui-automation-specification-and-community-promise.md)  
   
 ## Related Sections  
+
 - [Accessibility Samples](https://github.com/Microsoft/WPF-Samples/tree/master/Accessibility) 

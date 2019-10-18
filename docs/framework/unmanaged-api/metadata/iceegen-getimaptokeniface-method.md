@@ -25,13 +25,13 @@ Gets the interface referenced by the specified token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIMapTokenIface (  
     [in, out] IUnknown   **pIMapToken  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIMapToken`  
  [in, out] The metadata token for the interface to be returned.  
   
@@ -45,4 +45,5 @@ HRESULT GetIMapTokenIface (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

@@ -14,37 +14,37 @@ ms.author: "mairaw"
   
  This category consists of the following events:  
   
--   [GCStart_V1 Event](#gcstart_v1_event)  
+- [GCStart_V1 Event](#gcstart_v1_event)  
   
--   [GCEnd_V1 Event](#gcend_v1_event)  
+- [GCEnd_V1 Event](#gcend_v1_event)  
   
--   [GCHeapStats_V1 Event](#gcheapstats_v1_event)  
+- [GCHeapStats_V1 Event](#gcheapstats_v1_event)  
   
--   [GCCreateSegment_V1 Event](#gccreatesegment_v1_event)  
+- [GCCreateSegment_V1 Event](#gccreatesegment_v1_event)  
   
--   [GCFreeSegment_V1 Event](#gcfreesegment_v1_event)  
+- [GCFreeSegment_V1 Event](#gcfreesegment_v1_event)  
   
--   [GCRestartEEBegin_V1 Event](#gcrestarteebegin_v1_event)  
+- [GCRestartEEBegin_V1 Event](#gcrestarteebegin_v1_event)  
   
--   [GCRestartEEEnd_V1 Event](#gcrestarteeend_v1_event)  
+- [GCRestartEEEnd_V1 Event](#gcrestarteeend_v1_event)  
   
--   [GCSuspendEE_V1 Event](#gcsuspendee_v1_event)  
+- [GCSuspendEE_V1 Event](#gcsuspendee_v1_event)  
   
--   [GCSuspendEEEnd_V1 Event](#gcsuspendeeend_v1_event)  
+- [GCSuspendEEEnd_V1 Event](#gcsuspendeeend_v1_event)  
   
--   [GCAllocationTick_V2 Event](#gcallocationtick_v2_event)  
+- [GCAllocationTick_V2 Event](#gcallocationtick_v2_event)  
   
--   [GCFinalizersBegin_V1 Event](#gcfinalizersbegin_v1_event)  
+- [GCFinalizersBegin_V1 Event](#gcfinalizersbegin_v1_event)  
   
--   [GCFinalizersEnd_V1 Event](#gcfinalizersend_v1_event)  
+- [GCFinalizersEnd_V1 Event](#gcfinalizersend_v1_event)  
   
--   [GCCreateConcurrentThread_V1 Event](#gccreateconcurrentthread_v1_event)  
+- [GCCreateConcurrentThread_V1 Event](#gccreateconcurrentthread_v1_event)  
   
--   [GCTerminateConcurrentThread_V1 Event](#gcterminateconcurrentthread_v1_event)  
+- [GCTerminateConcurrentThread_V1 Event](#gcterminateconcurrentthread_v1_event)  
   
 <a name="gcstart_v1_event"></a>   
 ## GCStart_V1 Event  
- The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+ The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -361,4 +361,5 @@ ms.author: "mairaw"
  No event data.  
   
 ## See also
-- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+
+- [CLR ETW Events](clr-etw-events.md)

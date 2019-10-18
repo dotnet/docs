@@ -24,15 +24,15 @@ Performs a request to populate the structure from the given runtime structure.
 
 ## Syntax
 
-```
+```cpp
 HRESULT Request(
     [in] IXCLRDataModule* pDataModule
 );
 ```
 
-### Parameters
+## Parameters
 
-`pDataModule`
+`pDataModule`\
 [in] A pointer to the seed data module.
 
 ## Remarks
@@ -40,7 +40,6 @@ HRESULT Request(
 This structure lives inside the runtime and is not exposed through any headers or library files. To use it, the easiest way is to mimic the implementation:
 
 - Return the value obtained from calling the `Request` method on the `IXCLRDataModule*` parameter with the following parameters: `((uint32) 0xf0000000, 0, 0, (uint32) sizeof(*this), (uint8*) this)`
-
 
 ## Requirements
 
@@ -51,5 +50,5 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [DacpGetModuleAddress Interface](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-structure.md)
+- [Debugging](index.md)
+- [DacpGetModuleAddress Interface](dacpgetmoduleaddress-structure.md)

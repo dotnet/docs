@@ -23,7 +23,7 @@ Creates an application domain. The caller receives an interface pointer, of type
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDomainEx (  
     [in] LPCWSTR     pwzFriendlyName,  
     [in] IUnknown*   pSetup,  
@@ -32,7 +32,7 @@ HRESULT CreateDomainEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFriendlyName`  
  [in] An optional parameter used to give a friendly name to the domain. This friendly name can be displayed in user interfaces such as debuggers to identify the domain.  
   
@@ -67,6 +67,7 @@ HRESULT CreateDomainEx (
  **.NET Framework Version:** 1.0, 1.1  
   
 ## See also
+
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
 - <xref:System.IAppDomainSetup?displayProperty=nameWithType>

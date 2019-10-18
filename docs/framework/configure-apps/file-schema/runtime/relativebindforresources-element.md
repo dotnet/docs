@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<relativeBindForResources> Element
 Optimizes the probe for satellite assemblies.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<relativeBindForResources> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<relativeBindForResources>**  
   
 ## Syntax  
   
@@ -49,23 +49,24 @@ Optimizes the probe for satellite assemblies.
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
- In general, Resource Manager probes for resources, as documented in the [Packaging and Deploying Resources](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) topic. This means that when Resource Manager probes for a particular localized version of a resource, it may look in the global assembly cache, look in a culture-specific folder in the application's code base, query Windows Installer for satellite assemblies, and raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event. The `<relativeBindForResources>` element optimizes the way in which Resource Manager probes for satellite assemblies. It can improve performance when probing for resources under the following conditions:  
+ In general, Resource Manager probes for resources, as documented in the [Packaging and Deploying Resources](../../../resources/packaging-and-deploying-resources-in-desktop-apps.md) topic. This means that when Resource Manager probes for a particular localized version of a resource, it may look in the global assembly cache, look in a culture-specific folder in the application's code base, query Windows Installer for satellite assemblies, and raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event. The `<relativeBindForResources>` element optimizes the way in which Resource Manager probes for satellite assemblies. It can improve performance when probing for resources under the following conditions:  
   
--   When the satellite assembly is deployed in the same location as the code assembly. In other words, if the code assembly is installed in the global assembly cache, the satellite assemblies must also be installed there. If the code assembly is installed in the application's code base, the satellite assemblies must also be installed in a culture-specific folder in the code base.  
+- When the satellite assembly is deployed in the same location as the code assembly. In other words, if the code assembly is installed in the global assembly cache, the satellite assemblies must also be installed there. If the code assembly is installed in the application's code base, the satellite assemblies must also be installed in a culture-specific folder in the code base.  
   
--   When Windows Installer is not used or is used only rarely for on-demand installation of satellite assemblies.  
+- When Windows Installer is not used or is used only rarely for on-demand installation of satellite assemblies.  
   
--   When application code does not handle the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
+- When application code does not handle the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
  Setting the `enabled` attribute of the `<relativeBindForResources>` element to `true` optimizes Resource Manager's probe for satellite assemblies as follows:  
   
--   It uses the location of the parent code assembly to probe for the satellite assembly.  
+- It uses the location of the parent code assembly to probe for the satellite assembly.  
   
--   It does not query Windows Installer for satellite assemblies.  
+- It does not query Windows Installer for satellite assemblies.  
   
--   It does not raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
+- It does not raise the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
 ## See also
-- [Packaging and Deploying Resources](../../../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md)
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+
+- [Packaging and Deploying Resources](../../../resources/packaging-and-deploying-resources-in-desktop-apps.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

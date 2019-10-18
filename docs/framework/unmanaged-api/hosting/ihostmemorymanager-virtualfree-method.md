@@ -23,7 +23,7 @@ Serves as a logical wrapper for the corresponding Win32 function. The Win32 impl
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT VirtualFree (  
     [in] LPVOID  lpAddress,  
     [in] SIZE_T  dwSize,  
@@ -31,7 +31,7 @@ HRESULT VirtualFree (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpAddress`  
  [in] A pointer to the base address of the virtual memory pages to be freed.  
   
@@ -68,5 +68,6 @@ HRESULT VirtualFree (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
 - [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)

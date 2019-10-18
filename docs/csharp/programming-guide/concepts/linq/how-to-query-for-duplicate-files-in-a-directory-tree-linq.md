@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 1ff5562b-0d30-46d1-b426-a04e8f78c840
 ---
 # How to: Query for Duplicate Files in a Directory Tree (LINQ) (C#)
-Sometimes files that have the same name may be located in more than one folder. For example, under the Visual Studio installation folder, several folders have a readme.htm file. This example shows how to query for such duplicate file names under a specified root folder. The second example shows how to query for files whose size and creation times also match.  
+Sometimes files that have the same name may be located in more than one folder. For example, under the Visual Studio installation folder, several folders have a readme.htm file. This example shows how to query for such duplicate file names under a specified root folder. The second example shows how to query for files whose size and LastWrite times also match.  
   
 ## Example  
   
@@ -55,25 +55,25 @@ class QueryDuplicateFileNames
     class PortableKey  
     {  
         public string Name { get; set; }  
-        public DateTime CreationTime { get; set; }  
+        public DateTime LastWriteTime { get; set; }  
         public long Length { get; set; }  
   
         public override bool Equals(object obj)  
         {  
             PortableKey other = (PortableKey)obj;  
-            return other.CreationTime == this.CreationTime &&  
+            return other.LastWriteTime == this.LastWriteTime &&  
                    other.Length == this.Length &&  
                    other.Name == this.Name;  
         }  
   
         public override int GetHashCode()  
         {  
-            string str = $"{this.CreationTime}{this.Length}{this.Name}";
+            string str = $"{this.LastWriteTime}{this.Length}{this.Name}";
             return str.GetHashCode();  
         }  
         public override string ToString()  
         {  
-            return $"{this.Name} {this.Length} {this.CreationTime}";
+            return $"{this.Name} {this.Length} {this.LastWriteTime}";
         }  
     }  
     static void QueryDuplicates2()  
@@ -97,7 +97,7 @@ class QueryDuplicateFileNames
         var queryDupFiles =  
             from file in fileList  
             group file.FullName.Substring(charsToSkip) by  
-                new PortableKey { Name = file.Name, CreationTime = file.CreationTime, Length = file.Length } into fileGroup  
+                new PortableKey { Name = file.Name, LastWriteTime = file.LastWriteTime, Length = file.Length } into fileGroup  
             where fileGroup.Count() > 1  
             select fileGroup;  
   
@@ -164,9 +164,9 @@ class QueryDuplicateFileNames
  The first query uses a simple key to determine a match; this finds files that have the same name but whose contents might be different. The second query uses a compound key to match against three properties of the <xref:System.IO.FileInfo> object. This query is much more likely to find files that have the same name and similar or identical content.  
   
 ## Compiling the Code  
- Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
+ Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
 ## See also
 
-- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ to Objects (C#)](./linq-to-objects.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

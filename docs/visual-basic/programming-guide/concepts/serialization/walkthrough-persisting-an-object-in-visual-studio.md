@@ -7,29 +7,29 @@ ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030
 Although you can set an object's properties to default values at design time, any values entered at run time are lost when the object is destroyed. You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.  
   
 > [!NOTE]
->  In Visual Basic, to store simple data, such as a name or number, you can use the `My.Settings` object. For more information, see [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md).  
+> In Visual Basic, to store simple data, such as a name or number, you can use the `My.Settings` object. For more information, see [My.Settings Object](../../../../visual-basic/language-reference/objects/my-settings-object.md).  
   
  In this walkthrough, you will create a simple `Loan` object and persist its data to a file. You will then retrieve the data from the file when you re-create the object.  
   
 > [!IMPORTANT]
->  This example creates a new file, if the file does not already exist. If an application must create a file, that application must `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it is more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
+> This example creates a new file, if the file does not already exist. If an application must create a file, that application must `Create` permission for the folder. Permissions are set by using access control lists. If the file already exists, the application needs only `Write` permission, a lesser permission. Where possible, it is more secure to create the file during deployment, and only grant `Read` permissions to a single file (instead of Create permissions for a folder). Also, it is more secure to write data to user folders than to the root folder or the Program Files folder.  
   
 > [!IMPORTANT]
->  This example stores data in a binary. These formats should not be used for sensitive data, such as passwords or credit-card information.  
+> This example stores data in a binary. These formats should not be used for sensitive data, such as passwords or credit-card information.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
+> The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Loan Object  
  The first step is to create a `Loan` class and a test application that uses the class.  
   
 ### To create the Loan class  
   
-1.  Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
+1. Create a new Class Library project and name it "LoanClass". For more information, see [Creating Solutions and Projects](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects).  
   
-2.  In **Solution Explorer**, open the shortcut menu for the Class1 file and choose **Rename**. Rename the file to `Loan` and press ENTER. Renaming the file will also rename the class to `Loan`.  
+2. In **Solution Explorer**, open the shortcut menu for the Class1 file and choose **Rename**. Rename the file to `Loan` and press ENTER. Renaming the file will also rename the class to `Loan`.  
   
-3.  Add the following public members to the class:  
+3. Add the following public members to the class:  
   
     ```vb  
     Public Class Loan  
@@ -71,21 +71,21 @@ Although you can set an object's properties to default values at design time, an
   
 ### To create a test application  
   
-1.  To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**,**New Project**.  
+1. To add a Windows Forms Application project to your solution, on the **File** menu, choose **Add**,**New Project**.  
   
-2.  In the **Add New Project** dialog box, choose **Windows Forms Application**, and enter `LoanApp` as the name of the project, and then click **OK** to close the dialog box.  
+2. In the **Add New Project** dialog box, choose **Windows Forms Application**, and enter `LoanApp` as the name of the project, and then click **OK** to close the dialog box.  
   
-3.  In **Solution Explorer**, choose the LoanApp project.  
+3. In **Solution Explorer**, choose the LoanApp project.  
   
-4.  On the **Project** menu, choose **Set as StartUp Project**.  
+4. On the **Project** menu, choose **Set as StartUp Project**.  
   
-5.  On the **Project** menu, choose **Add Reference**.  
+5. On the **Project** menu, choose **Add Reference**.  
   
-6.  In the **Add Reference** dialog box, choose the **Projects** tab and then choose the LoanClass project.  
+6. In the **Add Reference** dialog box, choose the **Projects** tab and then choose the LoanClass project.  
   
-7.  Click **OK** to close the dialog box.  
+7. Click **OK** to close the dialog box.  
   
-8.  In the designer, add four <xref:System.Windows.Forms.TextBox> controls to the form.  
+8. In the designer, add four <xref:System.Windows.Forms.TextBox> controls to the form.  
   
 9. In the Code Editor, add the following code:  
   
@@ -121,7 +121,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To mark a class as serializable  
   
--   Change the class declaration for the Loan class as follows:  
+- Change the class declaration for the Loan class as follows:  
   
     ```vb  
     <Serializable()>  
@@ -132,7 +132,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To prevent a member from being serialized  
   
--   Change the declaration for the `PropertyChanged` event as follows:  
+- Change the declaration for the `PropertyChanged` event as follows:  
   
     ```vb  
     <NonSerialized()>  
@@ -144,7 +144,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To add references to namespaces  
   
--   Add the following statements to the top of the `Form1` class:  
+- Add the following statements to the top of the `Form1` class:  
   
     ```vb  
     Imports System.IO  
@@ -157,13 +157,13 @@ Although you can set an object's properties to default values at design time, an
   
 ### To deserialize an object  
   
-1.  Add a constant to the class for the serialized data's file name.  
+1. Add a constant to the class for the serialized data's file name.  
   
     ```vb  
     Const FileName As String = "..\..\SavedLoan.bin"  
     ```  
   
-2.  Modify the code in the `Form1_Load` event procedure as follows:  
+2. Modify the code in the `Form1_Load` event procedure as follows:  
   
     ```vb  
     Private WithEvents TestLoan As New LoanClass.Loan(10000.0, 0.075, 36, "Neil Black")  
@@ -191,7 +191,7 @@ Although you can set an object's properties to default values at design time, an
   
 ### To save the data and serialize the class  
   
--   Add the following code to the `Form1_FormClosing` event procedure:  
+- Add the following code to the `Form1_FormClosing` event procedure:  
   
     ```vb  
     Private Sub Form1_FormClosing() Handles MyBase.FormClosing  
@@ -210,5 +210,6 @@ Although you can set an object's properties to default values at design time, an
  At this point, you can again build and run the application. Initially, the default values appear in the text boxes. Try to change the values and enter a name in the fourth text box. Close the application and then run it again. Note that the new values now appear in the text boxes.  
   
 ## See also
+
 - [Serialization (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/index.md)
 - [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)

@@ -5,7 +5,7 @@ title: [ARTICLE TITLE]
 description:
 author: [GITHUB USERNAME]
 ms.author: [MICROSOFT ALIAS OF INTERNAL OWNER]
-ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
+ms.date: [CREATION/UPDATE DATE - MM/dd/yyyy]
 ms.topic: [TOPIC TYPE]
 ms.prod: [PRODUCT VALUE]
 helpviewer_keywords: [OFFLINE BOOK INDEX ENTRIES]
@@ -39,6 +39,7 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - **ms.devlang** defines the language filter displayed for the topic. You can see a list of the supported values in the [Supported languages](#supported-languages) section. Only needs to be set when there's more than one programming language covered in the topic. Typically, we only use `csharp`, `vb`, `fsharp`, and `cpp` for this value in our content.
 - **ms.prod**: Product identification used for BI purposes. They're usually set at a global level, so they don't usually appear in the metadata block of each article.
 - **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary, so ask a member of the team for guidance.
+- **ms.date**: A date in the format MM/dd/yyyy. Displayed on the published page to indicate the last time the article was substantially edited or guaranteed "fresh" (that is, the article was reviewed and considered up-to-date).
 - **helpviewer_keywords**: Entries are used for the offline books index (functionality in Visual Studio).
 - **f1_keywords**: Connects the article to the F1 key (functionality in Visual Studio).
 
@@ -58,19 +59,16 @@ Markdown uses special characters such as \*, \`, and \# for formatting. If you w
 
 File names use the following rules:
 
-* Contain only lowercase letters, numbers, and hyphens.
-* No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
-* No small words - don't include a, and, the, in, or, etc.
-* Must be in Markdown and use the .md file extension.
-* Keep file names reasonably short. They are part of the URL for your articles.
+- Contain only lowercase letters, numbers, and hyphens.
+- No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
+- Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
+- No small words - don't include a, and, the, in, or, etc.
+- Must be in Markdown and use the .md file extension.
+- Keep file names reasonably short. They are part of the URL for your articles.
 
 ## Headings
 
-Use sentence-style capitalization. Always capitalize:
-
-- The first word of a heading.
-- The word following a colon in a title or heading (for example, "How to: Sort an array").
+Use sentence-style capitalization. Always capitalize the first word of a heading, but don't capitalize the word following a colon in a title or heading (for example, "How to: sort an array").
 
 Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above.
 
@@ -178,7 +176,6 @@ Examples:
 - System.Exception.\#ctor becomes `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) becomes  `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
 
-
 ## Lists
 
 ### Ordered lists
@@ -246,22 +243,22 @@ You can include the code using the following syntax:
 [!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-* `-<language>` (*optional* but *recommended*)
-  * Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
+- `-<language>` (*optional* but *recommended*)
+  - Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
 
-* `<name>` (*optional*)
-  * Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
+- `<name>` (*optional*)
+  - Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
 
-* `<pathToFile>` (*mandatory*)
-  * Relative path in the file system that indicates the code snippet file to reference.
+- `<pathToFile>` (*mandatory*)
+  - Relative path in the file system that indicates the code snippet file to reference.
 
-* `<queryoption>` and `<queryoptionvalue>` (*optional*)
-  * Used together to specify how the code should be retrieved from the file:
-    * `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
+- `<queryoption>` and `<queryoptionvalue>` (*optional*)
+  - Used together to specify how the code should be retrieved from the file:
+    - `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
     We discourage the use of line numbers because they are very brittle. Tag name is the preferred way of referencing code snippets.
-    * `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
-    * `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
-    * `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
+    - `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
+    - `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
+    - `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
 
 We recommend using the tag name option whenever possible. The tag name is the name of a region or of a code comment in the format of `Snippettagname` present in the source code. The following example shows how to refer to the tag name `1`:
 
@@ -283,27 +280,47 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 
 |Name|Markdown label|
 |-----|-------|
-|ASP.NET with C#|aspx-csharp|
-|ASP.NET with VB|aspx-vb|
+|.NET Console|dotnetcli|
+|ASP.NET (C#)|aspx-csharp|
+|ASP.NET (VB)|aspx-vb|
 |Azure CLI|azurecli|
 |AzCopy|azcopy|
+|Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
+|C++/CX|cppcx|
+|C++/WinRT|cppwinrt|
 |C#|csharp|
 |C# in browser|csharp-interactive|
 |Console|console|
+|CSHTML|cshtml|
+|DAX|dax|
+|Dockerfile|dockerfile|
 |F#|fsharp|
+|Go|go|
+|HTML|html|
+|HTTP|http|
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto Query Language|kusto|
+|Markdown|md|
 |NodeJS|nodejs|
 |Objective-C|objc|
+|OData|odata|
 |PHP|php|
+|PowerApps (dot decimal separator)|powerapps-dot|
+|PowerApps (comma decimal separator)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
+|Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
-|VB|vb|
+|TypeScript|typescript|
+|Visual Basic|vb|
+|VBScript|vbscript|
 |XAML|xaml|
 |XML|xml|
 
@@ -370,9 +387,17 @@ function fancyAlert(arg) {
 
 ### Static Image or Animated gif
 
+```markdown
+![this is the alt text](../images/Logo_DotNet.png)
+```
+
 ![this is the alt text](../images/Logo_DotNet.png)
 
 ### Linked Image
+
+```markdown
+[![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net)
+```
 
 [![alt text for linked image](../images/Logo_DotNet.png)](https://dot.net)
 
@@ -445,11 +470,12 @@ You can embed the Markdown of one file into another using an include.
 A custom style is available for lists. You can render lists with green check marks.
 
 > [!div class="checklist"]
-> * How to create a .NET Core app
-> * How to add a reference to the Microsoft.XmlSerializer.Generator package
-> * How to edit your MyApp.csproj to add dependencies
-> * How to add a class and an XmlSerializer
-> * How to build and run the application
+>
+> - How to create a .NET Core app
+> - How to add a reference to the Microsoft.XmlSerializer.Generator package
+> - How to edit your MyApp.csproj to add dependencies
+> - How to add a class and an XmlSerializer
+> - How to build and run the application
 
 You can see an example of checked lists in action in the [.NET Core docs](https://docs.microsoft.com/dotnet/core/additional-tools/xml-serializer-generator).
 
@@ -463,8 +489,9 @@ You can see an example of buttons in action in the [Visual Studio docs](https://
 ### Selectors
 
 > [!div class="op_single_selector"]
-- [macOS](../docs/core/tutorials/using-on-macos.md)
-- [Windows](../docs/core/tutorials/with-visual-studio.md)
+>
+> - [macOS](../docs/core/tutorials/using-on-macos.md)
+> - [Windows](../docs/core/tutorials/with-visual-studio.md)
 
 You can see an example of selectors in action at the [Azure docs](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
 

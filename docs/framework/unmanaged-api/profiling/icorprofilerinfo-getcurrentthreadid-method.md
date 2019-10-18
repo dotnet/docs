@@ -23,12 +23,12 @@ Gets the ID of the current thread, if it is a managed thread.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentThreadID(  
     [out] ThreadID *pThreadId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pThreadId`  
  [out] A pointer to the returned ID of the managed thread.  
   
@@ -45,4 +45,5 @@ HRESULT GetCurrentThreadID(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

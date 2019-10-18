@@ -133,9 +133,10 @@ End Module
   
  When run with the sample Open XML document described in [Creating the Source Office Open XML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md), this example produces the following output:  
   
-```  
+```console  
 New first paragraph: >PARSING WORDPROCESSINGML WITH LINQ TO XML<  
 ```  
   
 ## See also
+
 - [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

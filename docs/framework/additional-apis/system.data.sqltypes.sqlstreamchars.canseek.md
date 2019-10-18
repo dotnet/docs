@@ -3,8 +3,7 @@ title: SqlStreamChars.CanSeek Property (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein
 ms.date: 12/19/2018
-ms.technology:
-  - "dotnet-data"
+ms.technology: "dotnet-data"
 topic_type:
   - "apiref"
 api_name:
@@ -33,7 +32,7 @@ public abstract bool CanSeek { get; }
 > [!WARNING]
 > The `SqlStreamChars.CanSeek` property is private and is not meant to be used directly in your code.
 >
-> Microsoft does not support the use of this field in a production application under any circumstance.
+> Microsoft does not support the use of this property in a production application under any circumstance.
 
 ## Requirements
 

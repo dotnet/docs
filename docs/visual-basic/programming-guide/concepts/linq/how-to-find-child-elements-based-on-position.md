@@ -50,7 +50,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 <Test TestId="0002" TestType="CMD">  
   <Name>Find succeeding characters</Name>  
@@ -73,4 +73,5 @@ Results are identical
 ```  
   
 ## See also
+
 - [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

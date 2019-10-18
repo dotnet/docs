@@ -23,7 +23,7 @@ Gets the value of each register (on the computer that is currently executing cod
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisters (  
     [in] ULONG64       mask,   
     [in] ULONG32       regCount,  
@@ -32,7 +32,7 @@ HRESULT GetRegisters (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mask`  
  [in] A bit mask that specifies which register values are to be retrieved. Each bit corresponds to a register. If a bit is set to one, the register's value is retrieved; otherwise, the register's value is not retrieved.  
   
@@ -57,5 +57,6 @@ HRESULT GetRegisters (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
 - [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)

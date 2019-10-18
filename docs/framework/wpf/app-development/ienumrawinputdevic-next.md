@@ -10,14 +10,14 @@ Enumerates the next `celt` [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next(  
       [in] ULONG celt,  
       [out, size_is(celt), length_is(*pceltFetched)] RAWINPUTDEVICE *rgelt,  
       [out] ULONG *pceltFetched);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
   
  [in] Number of [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winuser-rawinputdevice) structures returned in `rgelt`.  

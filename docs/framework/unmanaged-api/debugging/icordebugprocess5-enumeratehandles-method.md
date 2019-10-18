@@ -23,12 +23,12 @@ Gets an enumerator for object handles in a process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateHandles(     [in] CorGCReferenceType types,  
     [out] ICorDebugGCReferenceEnum **ppEnum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `types`  
  [in] A bitwise combination of [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) values that specifies the type of handles to include in the collection.  
   
@@ -40,11 +40,11 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
   
  The `types` parameter specifies the handle types to include in the collection. `types` can be any of the following three members of the [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) enumeration:  
   
--   `CorHandleStrongOnly` (handles to strong references only).  
+- `CorHandleStrongOnly` (handles to strong references only).  
   
--   `CorHandleWeakOnly` (handles to weak references only).  
+- `CorHandleWeakOnly` (handles to weak references only).  
   
--   `CorHandleAll` (all handles).  
+- `CorHandleAll` (all handles).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -56,5 +56,6 @@ HRESULT EnumerateHandles(     [in] CorGCReferenceType types,
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

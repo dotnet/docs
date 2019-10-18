@@ -6,11 +6,12 @@ ms.assetid: ab677405-1ffe-457a-803f-00c1770e51e2
 # \<msmqIntegration>
 Specifies a MSMQ transport for custom binding.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<msmqIntegration>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<msmqIntegration>**  
   
 ## Syntax  
   
@@ -71,16 +72,17 @@ Specifies a MSMQ transport for custom binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.MsmqIntegrationElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
-- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Transports](../../../wcf/feature-details/transports.md)
+- [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)
+- [Choosing a Transport](../../../wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

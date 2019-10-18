@@ -23,12 +23,12 @@ Gets the method that contains this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethod(  
     [out, retval] ISymUnmanagedMethod** pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to the returned [ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md) interface.  
   
@@ -39,4 +39,5 @@ HRESULT GetMethod(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)

@@ -12,12 +12,10 @@ ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
 # Focus Overview
 In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] there are two main concepts that pertain to focus: keyboard focus and logical focus.  Keyboard focus refers to the element that receives keyboard input and logical focus refers to the element in a focus scope that has focus.  These concepts are discussed in detail in this overview.  Understanding the difference in these concepts is important for creating complex applications that have multiple regions where focus can be obtained.  
   
- The major classes that participate in focus management are the <xref:System.Windows.Input.Keyboard> class, the <xref:System.Windows.Input.FocusManager> class, and the base element classes, such as <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>.  For more information about the base elements, see the [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md).  
+ The major classes that participate in focus management are the <xref:System.Windows.Input.Keyboard> class, the <xref:System.Windows.Input.FocusManager> class, and the base element classes, such as <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>.  For more information about the base elements, see the [Base Elements Overview](base-elements-overview.md).  
   
  The <xref:System.Windows.Input.Keyboard> class is concerned primarily with keyboard focus and the <xref:System.Windows.Input.FocusManager> is concerned primarily with logical focus, but this is not an absolute distinction.  An element that has keyboard focus will also have logical focus, but an element that has logical focus does not necessarily have keyboard focus.  This is apparent when you use the <xref:System.Windows.Input.Keyboard> class to set the element that has keyboard focus, for it also sets logical focus on the element.  
-  
 
-  
 <a name="Keyboard_Focus"></a>   
 ## Keyboard Focus  
  Keyboard focus refers to the element that is currently receiving keyboard input.  There can be only one element on the whole desktop that has keyboard focus.  In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], the element that has keyboard focus will have <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  The static property <xref:System.Windows.Input.Keyboard.FocusedElement%2A> on the <xref:System.Windows.Input.Keyboard> class gets the element that currently has keyboard focus.  
@@ -28,8 +26,8 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
   
  The following example uses the <xref:System.Windows.Input.Keyboard.Focus%2A> method to set keyboard focus on a <xref:System.Windows.Controls.Button>.  
   
- [!code-csharp[focussample#FocusSampleSetFocus](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FocusSample/CSharp/Window1.xaml.cs#focussamplesetfocus)]
- [!code-vb[focussample#FocusSampleSetFocus](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSample/visualbasic/window1.xaml.vb#focussamplesetfocus)]  
+ [!code-csharp[focussample#FocusSampleSetFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSample/CSharp/Window1.xaml.cs#focussamplesetfocus)]
+ [!code-vb[focussample#FocusSampleSetFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSample/visualbasic/window1.xaml.vb#focussamplesetfocus)]  
   
  The <xref:System.Windows.UIElement.IsKeyboardFocused%2A> property on the base element classes gets a value indicating whether the element has keyboard focus.  The <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> property on the base element classes gets a value indicating whether the element or any one of its visual child elements has keyboard focus.  
   
@@ -47,10 +45,10 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
   
  The following example makes a <xref:System.Windows.Controls.StackPanel> into a focus scope by setting the <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> attached property.  
   
- [!code-xaml[MarkupSnippets#MarkupIsFocusScopeXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupisfocusscopexaml)]  
+ [!code-xaml[MarkupSnippets#MarkupIsFocusScopeXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupisfocusscopexaml)]  
   
- [!code-csharp[FocusSnippets#FocusSetIsFocusScope](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FocusSnippets/CSharp/Window1.xaml.cs#focussetisfocusscope)]
- [!code-vb[FocusSnippets#FocusSetIsFocusScope](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSnippets/visualbasic/window1.xaml.vb#focussetisfocusscope)]  
+ [!code-csharp[FocusSnippets#FocusSetIsFocusScope](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSnippets/CSharp/Window1.xaml.cs#focussetisfocusscope)]
+ [!code-vb[FocusSnippets#FocusSetIsFocusScope](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSnippets/visualbasic/window1.xaml.vb#focussetisfocusscope)]  
   
  <xref:System.Windows.Input.FocusManager.GetFocusScope%2A> returns the focus scope for the specified element.  
   
@@ -60,8 +58,8 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
   
  The following example sets the focused element on a focus scope and gets the focused element of a focus scope.  
   
- [!code-csharp[FocusSnippets#FocusGetSetFocusedElement](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FocusSnippets/CSharp/Window1.xaml.cs#focusgetsetfocusedelement)]
- [!code-vb[FocusSnippets#FocusGetSetFocusedElement](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSnippets/visualbasic/window1.xaml.vb#focusgetsetfocusedelement)]  
+ [!code-csharp[FocusSnippets#FocusGetSetFocusedElement](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSnippets/CSharp/Window1.xaml.cs#focusgetsetfocusedelement)]
+ [!code-vb[FocusSnippets#FocusGetSetFocusedElement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSnippets/visualbasic/window1.xaml.vb#focusgetsetfocusedelement)]  
   
 <a name="Keyboard_Navigation"></a>   
 ## Keyboard Navigation  
@@ -71,49 +69,50 @@ In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.
   
  The following example creates a <xref:System.Windows.Controls.Menu> with a number of <xref:System.Windows.Controls.MenuItem> objects.  The <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A> attached property is set to <xref:System.Windows.Input.KeyboardNavigationMode.Cycle> on the <xref:System.Windows.Controls.Menu>.  When focus is changed using the tab key within the <xref:System.Windows.Controls.Menu>, focus will move from each element and when the last element is reached focus will return to the first element.  
   
- [!code-xaml[MarkupSnippets#MarkupKeyboardNavigationTabNavigationXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupkeyboardnavigationtabnavigationxaml)]  
+ [!code-xaml[MarkupSnippets#MarkupKeyboardNavigationTabNavigationXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupkeyboardnavigationtabnavigationxaml)]  
   
- [!code-csharp[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](../../../../samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml.cs#markupkeyboardnavigationtabnavigationcode)]
- [!code-vb[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/MarkupSnippets/visualbasic/window1.xaml.vb#markupkeyboardnavigationtabnavigationcode)]  
+ [!code-csharp[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml.cs#markupkeyboardnavigationtabnavigationcode)]
+ [!code-vb[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarkupSnippets/visualbasic/window1.xaml.vb#markupkeyboardnavigationtabnavigationcode)]  
   
 <a name="Manipulating_Focus_Programmatically"></a>   
 ## Navigating Focus Programmatically  
- Additional [!INCLUDE[TLA#tla_api](../../../../includes/tlasharptla-api-md.md)] to work with focus are <xref:System.Windows.UIElement.MoveFocus%2A> and <xref:System.Windows.UIElement.PredictFocus%2A>.  
+ Additional API to work with focus are <xref:System.Windows.UIElement.MoveFocus%2A> and <xref:System.Windows.UIElement.PredictFocus%2A>.  
   
  <xref:System.Windows.FrameworkElement.MoveFocus%2A> changes focus to the next element in the application.  A <xref:System.Windows.Input.TraversalRequest> is used to specify the direction.   The <xref:System.Windows.Input.FocusNavigationDirection> passed to <xref:System.Windows.UIElement.MoveFocus%2A> specifies the different directions focus can be moved, such as <xref:System.Windows.Input.FocusNavigationDirection.First>, <xref:System.Windows.Input.FocusNavigationDirection.Last>, <xref:System.Windows.Input.FocusNavigationDirection.Up> and <xref:System.Windows.Input.FocusNavigationDirection.Down>.  
   
  The following example uses <xref:System.Windows.FrameworkElement.MoveFocus%2A> to change the focused element.  
   
- [!code-csharp[focussample#FocusSampleMoveFocus](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FocusSample/CSharp/Window1.xaml.cs#focussamplemovefocus)]
- [!code-vb[focussample#FocusSampleMoveFocus](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSample/visualbasic/window1.xaml.vb#focussamplemovefocus)]  
+ [!code-csharp[focussample#FocusSampleMoveFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/FocusSample/CSharp/Window1.xaml.cs#focussamplemovefocus)]
+ [!code-vb[focussample#FocusSampleMoveFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FocusSample/visualbasic/window1.xaml.vb#focussamplemovefocus)]  
   
  <xref:System.Windows.FrameworkElement.PredictFocus%2A> returns the object which would receive focus if focus were to be changed.  Currently, only <xref:System.Windows.Input.FocusNavigationDirection.Up>, <xref:System.Windows.Input.FocusNavigationDirection.Down>, <xref:System.Windows.Input.FocusNavigationDirection.Left>, and <xref:System.Windows.Input.FocusNavigationDirection.Right> are supported by <xref:System.Windows.FrameworkElement.PredictFocus%2A>.  
   
 <a name="Focus_Events"></a>   
 ## Focus Events  
- The events related to keyboard focus are <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus>, <xref:System.Windows.Input.Keyboard.GotKeyboardFocus> and <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus>, <xref:System.Windows.Input.Keyboard.LostKeyboardFocus>.  The events are defined as attached events on the <xref:System.Windows.Input.Keyboard> class, but are more readily accessible as equivalent routed events on the base element classes.  For more information about events, see the [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md).  
+ The events related to keyboard focus are <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus>, <xref:System.Windows.Input.Keyboard.GotKeyboardFocus> and <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus>, <xref:System.Windows.Input.Keyboard.LostKeyboardFocus>.  The events are defined as attached events on the <xref:System.Windows.Input.Keyboard> class, but are more readily accessible as equivalent routed events on the base element classes.  For more information about events, see the [Routed Events Overview](routed-events-overview.md).  
   
  <xref:System.Windows.Input.Keyboard.GotKeyboardFocus> is raised when the element obtains keyboard focus.  <xref:System.Windows.Input.Keyboard.LostKeyboardFocus> is raised when the element loses keyboard focus.  If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocusEvent> event is handled and <xref:System.Windows.RoutedEventArgs.Handled%2A> is set to `true`, then focus will not change.  
   
  The following example attaches <xref:System.Windows.UIElement.GotKeyboardFocus> and <xref:System.Windows.UIElement.LostKeyboardFocus> event handlers to a <xref:System.Windows.Controls.TextBox>.  
   
- [!code-xaml[keyboardsample#KeyboardSampleXAMLHandlerHookup](../../../../samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml#keyboardsamplexamlhandlerhookup)]  
+ [!code-xaml[keyboardsample#KeyboardSampleXAMLHandlerHookup](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml#keyboardsamplexamlhandlerhookup)]  
   
  When the <xref:System.Windows.Controls.TextBox> obtains keyboard focus, the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.TextBox> is changed to <xref:System.Windows.Media.Brushes.LightBlue%2A>.  
   
- [!code-csharp[keyboardsample#KeyboardSampleGotFocus](../../../../samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplegotfocus)]
- [!code-vb[keyboardsample#KeyboardSampleGotFocus](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplegotfocus)]  
+ [!code-csharp[keyboardsample#KeyboardSampleGotFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplegotfocus)]
+ [!code-vb[keyboardsample#KeyboardSampleGotFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplegotfocus)]  
   
  When the <xref:System.Windows.Controls.TextBox> loses keyboard focus, the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.TextBox> is changed back to white.  
   
- [!code-csharp[keyboardsample#KeyboardSampleLostFocus](../../../../samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplelostfocus)]
- [!code-vb[keyboardsample#KeyboardSampleLostFocus](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplelostfocus)]  
+ [!code-csharp[keyboardsample#KeyboardSampleLostFocus](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyboardSample/CSharp/Window1.xaml.cs#keyboardsamplelostfocus)]
+ [!code-vb[keyboardsample#KeyboardSampleLostFocus](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyboardSample/visualbasic/window1.xaml.vb#keyboardsamplelostfocus)]  
   
  The events related to logical focus are <xref:System.Windows.UIElement.GotFocus> and <xref:System.Windows.UIElement.LostFocus>.  These events are defined on the <xref:System.Windows.Input.FocusManager> as attached events, but the <xref:System.Windows.Input.FocusManager> does not expose CLR event wrappers.  <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> expose these events more conveniently.  
   
 ## See also
+
 - <xref:System.Windows.Input.FocusManager>
 - <xref:System.Windows.UIElement>
 - <xref:System.Windows.ContentElement>
-- [Input Overview](../../../../docs/framework/wpf/advanced/input-overview.md)
-- [Base Elements Overview](../../../../docs/framework/wpf/advanced/base-elements-overview.md)
+- [Input Overview](input-overview.md)
+- [Base Elements Overview](base-elements-overview.md)

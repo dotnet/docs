@@ -1,16 +1,15 @@
 ---
-title: Machine learning tasks - ML.NET
+title: Machine learning tasks
 description: Explore the different machine learning tasks and associated tasks that are supported in ML.NET.
 ms.custom: seodec18
-ms.date: 01/15/2019
-author: jralexander
+ms.date: 04/23/2019
+author: natke
 ---
 # Machine learning tasks in ML.NET
 
-When building a machine learning model, you first need to define what you are hoping to achieve with your data. Afterwards, you can pick the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
+When building a machine learning model, you first need to define what you are hoping to achieve with your data. This allows you to choose the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
 
-> [!NOTE]
-> ML.NET is currently in Preview. Not all machine learning tasks are currently supported. To submit a request for a certain task, open an issue in the [dotnet/machinelearning repository](https://github.com/dotnet/machinelearning/issues).
+Once you have decided which task works for your scenario, then you need to choose the best algorithm to train your model. The available algorithms are listed in the section for each task.
 
 ## Binary classification
 
@@ -23,30 +22,36 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 
 For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
 
-Recommended learners for binary classification:
+### Binary classification trainers
 
-* AveragedPerceptronTrainer
-* StochasticGradientDescentClassificationTrainer
-* LightGbmBinaryTrainer
-* FastTreeBinaryClassificationTrainer
-* SymSgdClassificationTrainer
+You can train a binary classification model using the following algorithms:
 
-### Binary Classification Learners
+* <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>
+* <xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer> 
+* <xref:Microsoft.ML.Trainers.PriorTrainer> 
+* <xref:Microsoft.ML.Trainers.LinearSvmTrainer>
 
-The following learners are available for binary classification tasks:
+### Binary classification inputs and outputs
 
-* [AveragedPerceptronTrainer](xref:Microsoft.ML.Trainers.Online.AveragedPerceptronTrainer)
-* [BinaryClassificationGamTrainer](xref:Microsoft.ML.Trainers.FastTree.BinaryClassificationGamTrainer)
-* [FastForestClassification](xref:Microsoft.ML.Trainers.FastTree.FastForestClassification)
-* [FastTreeBinaryClassificationTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryClassificationTrainer)
-* [FieldAwareFactorizationMachineTrainer](xref:Microsoft.ML.FactorizationMachine.FieldAwareFactorizationMachineTrainer)
-* [LightGbmBinaryTrainer](xref:Microsoft.ML.LightGBM.LightGbmBinaryTrainer)
-* [LinearSvmTrainer](xref:Microsoft.ML.Trainers.Online.LinearSvmTrainer)
-* [LogisticRegression](xref:Microsoft.ML.Learners.LogisticRegression)
-* [PriorTrainer](xref:Microsoft.ML.Trainers.PriorTrainer)
-* [RandomTrainer](xref:Microsoft.ML.Trainers.RandomTrainer)
-* [StochasticGradientDescentClassificationTrainer](xref:Microsoft.ML.Trainers.StochasticGradientDescentClassificationTrainer)
-* [SymSgdClassificationTrainer](xref:Microsoft.ML.Trainers.SymSgd.SymSgdClassificationTrainer)
+For best results with binary classification, the training data should be balanced (that is, equal numbers of positive and negative training data). Missing values should be handled before training.
+
+The input label column data must be <xref:System.Boolean>.
+The input features column data must be a fixed-size vector of <xref:System.Single>.
+
+These trainers outputs the following columns:
+
+| Output Column Name | Column Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The raw score that was calculated by the model|
+| `PredictedLabel` | <xref:System.Boolean> | The predicted label, based on the sign of the score. A negative score maps to `false` and a positive score maps to `true`.|
 
 ## Multiclass classification
 
@@ -58,26 +63,32 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 
 For more information, see the [Multiclass classification](https://en.wikipedia.org/wiki/Multiclass_classification) article on Wikipedia.
 
-Recommended learners for Multi-class:
-
-* OVA-AveragedPerceptronTrainer
-* SdcaMultiClassTrainer
-* LightGbmMulticlassTrainer
-* OVA-FastTreeBinaryClassificationTrainer
-
 >[!NOTE]
->OVA and PKPD upgrades any [binary classification learner](#binary-classification) to act on multiclass datasets. More information on [Wikipedia] (https://en.wikipedia.org/wiki/Multiclass_classification#One-vs.-rest).
+>One vs all upgrades any [binary classification learner](#binary-classification) to act on multiclass datasets. More information on [Wikipedia] (https://en.wikipedia.org/wiki/Multiclass_classification#One-vs.-rest).
 
-### Multiclass Classification Learners
+### Multiclass classification trainers
 
-The following learners are available for multiclass classification tasks:
+You can train a multiclass classification model using the following training algorithms:
 
-* [LightGbmMulticlassTrainer](xref:Microsoft.ML.LightGBM.LightGbmMulticlassTrainer)
-* [MetaMulticlassTrainer<TTransformer,TModel>](xref:Microsoft.ML.Learners.MetaMulticlassTrainer%602)
-* [MultiClassNaiveBayesTrainer](xref:Microsoft.ML.Trainers.MultiClassNaiveBayesTrainer)
-* [Ova](xref:Microsoft.ML.Trainers.Ova)
-* [Pkpd](xref:Microsoft.ML.Trainers.Pkpd)
-* [SdcaMultiClassTrainer](xref:Microsoft.ML.Trainers.SdcaMultiClassTrainer)
+* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer>
+* <xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer>
+* <xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer>
+* <xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer> 
+* <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer> 
+* <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
+* <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer> 
+
+### Multiclass classification inputs and outputs
+
+The input label column data must be [key](xref:Microsoft.ML.Data.KeyDataViewType) type.
+The feature column must be a fixed size vector of <xref:System.Single>.
+
+This trainer outputs the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | Vector of <xref:System.Single> | The scores of all classes. Higher value means higher probability to fall into the associated class. If the i-th element has the largest value, the predicted label index would be i. Note that i is zero-based index. |
+| `PredictedLabel` | [key](xref:Microsoft.ML.Data.KeyDataViewType) type | The predicted label's index. If its value is i, the actual label would be the i-th category in the key-valued input label type. |
 
 ## Regression
 
@@ -87,27 +98,29 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 * Predicting future stock prices based on historical data and current market trends.
 * Predicting sales of a product based on advertising budgets.
 
-Recommended learners for regression:
+### Regression trainers
 
-* FastTreeTweedieTrainer 
-* LightGbmRegressorTrainer 
-* SdcaRegressionTrainer 
-* FastTreeRegressionTrainer
+You can train a regression model using the following algorithms:
 
-### Regression Learners
+* <xref:Microsoft.ML.Trainers.LbfgsPoissonRegressionTrainer>
+* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer>
+* <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>
+* <xref:Microsoft.ML.Trainers.OlsTrainer>
+* <xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer> 
+* <xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer>
+* <xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer>
+* <xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>
+* <xref:Microsoft.ML.Trainers.FastTree.GamRegressionTrainer>
 
-The following learners are available for regression tasks:
+### Regression inputs and outputs
 
-* [FastTreeRegressionTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer)
-* [FastTreeTweedieTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer)
-* [LightGbmRegressorTrainer](xref:Microsoft.ML.LightGBM.LightGbmRegressorTrainer)
-* [OlsLinearRegressionTrainer](xref:Microsoft.ML.Trainers.HalLearners.OlsLinearRegressionTrainer)
-* [OnlineGradientDescentTrainer](xref:Microsoft.ML.Trainers.Online.OnlineGradientDescentTrainer)
-* [PoissonRegression](xref:Microsoft.ML.Trainers.PoissonRegression)
-* [RegressionGamTrainer](xref:Microsoft.ML.Trainers.FastTree.RegressionGamTrainer)
-* [SdcaRegressionTrainer](xref:Microsoft.ML.Trainers.SdcaRegressionTrainer)
-* [FastTree.SingleTrainer](xref:Microsoft.ML.Trainers.FastTree.SingleTrainer)
-* [LightGBM.SingleTrainer](xref:Microsoft.ML.LightGBM.SingleTrainer)
+The input label column data must be <xref:System.Single>.
+
+The trainers for this task output the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The raw score that was predicted by the model |
 
 ## Clustering
 
@@ -117,11 +130,22 @@ An [unsupervised machine learning](glossary.md#unsupervised-machine-learning) ta
 * Identifying customer segments and demographics to help build targeted advertising campaigns.
 * Categorizing inventory based on manufacturing metrics.
 
-### Clustering Learners
+### Clustering trainer
 
-The following learners are available for clustering tasks:
+You can train a clustering model using the following algorithm:
 
-* [KMeansPlusPlusTrainer](xref:Microsoft.ML.Trainers.KMeans.KMeansPlusPlusTrainer)
+* <xref:Microsoft.ML.Trainers.KMeansTrainer> 
+
+### Clustering inputs and outputs
+
+The input features data must be <xref:System.Single>. No labels are needed.
+
+This trainer outputs the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | vector of <xref:System.Single> | The distances of the given data point to all clusters' centriods |
+| `PredictedLabel` | [key](xref:Microsoft.ML.Data.KeyDataViewType) type | The closest cluster's index predicted by the model. |
 
 ## Anomaly detection
 
@@ -138,30 +162,57 @@ Anomaly detection encompasses many important tasks in machine learning:
 
 Because anomalies are rare events by definition, it can be difficult to collect a representative sample of data to use for modeling. The algorithms included in this category have been especially designed to address the core challenges of building and training models by using imbalanced data sets.
 
-### Anomaly detection learners
+### Anomaly detection trainer
 
-The following learners are available for anomaly detection tasks:
+You can train an anomaly detection model using the following algorithm:
 
-* [RandomizedPcaTrainer](xref:Microsoft.ML.Trainers.PCA.RandomizedPcaTrainer)
+* <xref:Microsoft.ML.Trainers.RandomizedPcaTrainer>
+
+### Anomaly detection inputs and outputs
+
+The input features must be a fixed-sized vector of <xref:System.Single>.
+
+This trainer outputs the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The non-negative, unbounded score that was calculated by the anomaly detection model |
 
 ## Ranking
 
 A ranking task constructs a ranker from a set of labeled examples. This example set consists of instance groups that can be scored with a given criteria. The ranking labels are { 0, 1, 2, 3, 4 } for each instance.  The ranker is trained to rank new instance groups with unknown scores for each instance. ML.NET ranking learners are [machine learned ranking](https://en.wikipedia.org/wiki/Learning_to_rank) based.
 
-### Ranking learners
+### Ranking training algorithms
 
-The following learners are available for ranking tasks:
+You can train a ranking model with the following algorithms:
 
-* [FastTreeRankingTrainer](xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer)
-* [LightGbmRankingTrainer](xref:Microsoft.ML.LightGBM.LightGbmRankingTrainer)
+* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>
+* <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer> 
+
+### Ranking input and outputs
+
+The input label data type must be [key](xref:Microsoft.ML.Data.KeyDataViewType)
+type or <xref:System.Single>. The value of the label determines relevance, where
+higher values indicate higher relevance. If the label is a
+[key](xref:Microsoft.ML.Data.KeyDataViewType) type, then the key index is the
+relevance value, where the smallest index is the least relevant. If the label is a
+<xref:System.Single>, larger values indicate higher relevance.
+
+The feature data must be a fixed size vector of <xref:System.Single> and input row group
+column must be [key](xref:Microsoft.ML.Data.KeyDataViewType) type.
+
+This trainer outputs the following:
+
+| Output Name | Type | Description|
+| -- | -- | -- |
+| `Score` | <xref:System.Single> | The unbounded score that was calculated by the model to determine the prediction |
 
 ## Recommendation
 
 A recommendation task enables producing a list of recommended products or services. ML.NET uses [Matrix factorization (MF)](https://en.wikipedia.org/wiki/Matrix_factorization_%28recommender_systems%29), a [collaborative filtering](https://en.wikipedia.org/wiki/Collaborative_filtering) algorithm for recommendations when you have historical product rating data in your catalog. For example, you have historical movie rating data for your users and want to recommend  other movies they are likely to watch next.
 
-### Recommendation learners
+### Recommendation training algorithms
 
-The following learners are available for recommendation tasks:
+You can train a recommendation model with the following algorithm:
 
-* [MatrixFactorizationTrainer](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer)
-* [MatrixFactorizationPredictionTransformer](xref:Microsoft.ML.Trainers.Recommender.MatrixFactorizationPredictionTransformer)
+* <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer>

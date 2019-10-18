@@ -23,7 +23,7 @@ Gets the namespaces defined at global scope within this symbol store.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNamespaces (  
     [in]  ULONG32  cNameSpaces,  
     [out] ULONG32  *pcNameSpaces,  
@@ -32,7 +32,7 @@ HRESULT GetNamespaces (
         ISymUnmanagedNamespace*  namespaces[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cNameSpaces`  
  [in] The size of the namespaces array.  
   
@@ -49,4 +49,5 @@ HRESULT GetNamespaces (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

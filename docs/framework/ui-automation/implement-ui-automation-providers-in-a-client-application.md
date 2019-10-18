@@ -8,12 +8,10 @@ helpviewer_keywords:
   - "client-side UI Automation provider, implementation within applications"
   - "UI Automation, implementing client-side provider within application"
 ms.assetid: f325f0d8-1715-41ea-85ca-45b82ffea8bc
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implement UI Automation Providers in a Client Application
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic contains example code that shows how to implement a client-side UI Automation provider within an application.  
   
@@ -26,7 +24,8 @@ ms.author: "mhopkins"
  [!code-vb[UIAClientSideProvider_snip#201](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClientSideProvider_snip/visualbasic/clientimplementationprogram.vb#201)]  
   
 ## See also
-- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
-- [Register a Client-Side Provider Assembly](../../../docs/framework/ui-automation/register-a-client-side-provider-assembly.md)
-- [Create a Client-Side UI Automation Provider](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)
-- [Client-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/client-side-ui-automation-provider-implementation.md)
+
+- [UI Automation Providers Overview](ui-automation-providers-overview.md)
+- [Register a Client-Side Provider Assembly](register-a-client-side-provider-assembly.md)
+- [Create a Client-Side UI Automation Provider](create-a-client-side-ui-automation-provider.md)
+- [Client-Side UI Automation Provider Implementation](client-side-ui-automation-provider-implementation.md)

@@ -13,11 +13,11 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
   
 ### To generate classes that conform to a specific schema  
   
-1.  Open a command prompt.  
+1. Open a command prompt.  
   
-2.  Pass the XML Schema as an argument to the XML Schema Definition tool, which creates a set of classes that are precisely matched to the XML Schema, for example:  
+2. Pass the XML Schema as an argument to the XML Schema Definition tool, which creates a set of classes that are precisely matched to the XML Schema, for example:  
   
-    ```  
+    ```console  
     xsd mySchema.xsd  
     ```  
   
@@ -28,19 +28,19 @@ The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema th
     <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
     ```  
   
-3.  Modify the classes with methods, properties, or fields, as necessary. For more information about modifying a class with attributes, see [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md) and [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
+3. Modify the classes with methods, properties, or fields, as necessary. For more information about modifying a class with attributes, see [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md) and [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md).  
   
  It is often useful to examine the schema of the XML stream that is generated when instances of a class (or classes) are serialized. For example, you might publish your schema for others to use, or you might compare it to a schema with which you are trying to achieve conformity.  
   
 #### To generate an XML Schema document from a set of classes  
   
-1.  Compile the class or classes into a DLL.  
+1. Compile the class or classes into a DLL.  
   
-2.  Open a command prompt.  
+2. Open a command prompt.  
   
-3.  Pass the DLL as an argument to Xsd.exe, for example:  
+3. Pass the DLL as an argument to Xsd.exe, for example:  
   
-    ```  
+    ```console  
     xsd MyFile.dll  
     ```  
   

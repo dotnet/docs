@@ -3,8 +3,7 @@ title: SqlStreamChars Constructor (System.Data.SqlTypes)
 author: stevestein
 ms.author: sstein
 ms.date: 12/20/2018
-ms.technology:
-  - "dotnet-data"
+ms.technology: "dotnet-data"
 topic_type:
   - "apiref"
 api_name:
@@ -27,7 +26,7 @@ protected SqlStreamChars ();
 > [!WARNING]
 > The `SqlStreamChars` constructor is protected and is not meant to be used directly in your code.
 >
-> Microsoft does not support the use of this field in a production application under any circumstance.
+> Microsoft does not support the use of this constructor in a production application under any circumstance.
 
 ## Requirements
 

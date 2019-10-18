@@ -7,18 +7,20 @@ helpviewer_keywords:
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
 ---
 # Customizing Which Objects are Available in My (Visual Basic)
+
 This topic describes how you can control which `My` objects are enabled by setting your project's `_MYTYPE` conditional-compilation constant. The Visual Studio Integrated Development Environment (IDE) keeps the `_MYTYPE` conditional-compilation constant for a project in sync with the project's type.  
   
-## Predefined _MYTYPE Values  
- You must use the `/define` compiler option to set the `_MYTYPE` conditional-compilation constant. When specifying your own value for the `_MYTYPE` constant, you must enclose the string value in backslash/quotation mark (\\") sequences. For example, you could use:  
+## Predefined \_MYTYPE Values  
+
+You must use the `/define` compiler option to set the `_MYTYPE` conditional-compilation constant. When specifying your own value for the `_MYTYPE` constant, you must enclose the string value in backslash/quotation mark (\\") sequences. For example, you could use:  
   
-```  
+```console  
 /define:_MYTYPE=\"WindowsForms\"  
 ```  
   
  This table shows what the `_MYTYPE` conditional-compilation constant is set to for several project types.  
   
-|Project type|_MYTYPE value|  
+|Project type|\_MYTYPE value|  
 |------------------|--------------------|  
 |Class Library|"Windows"|  
 |Console Application|"Console"|  
@@ -31,12 +33,13 @@ This topic describes how you can control which `My` objects are enabled by setti
 |Empty|"Empty"|  
   
 > [!NOTE]
->  All conditional-compilation string comparisons are case-sensitive, regardless of how the `Option Compare` statement is set.  
+> All conditional-compilation string comparisons are case-sensitive, regardless of how the `Option Compare` statement is set.  
   
-## Dependent _MY Compilation Constants  
- The `_MYTYPE` conditional-compilation constant, in turn, controls the values of several other `_MY` compilation constants:  
+## Dependent \_MY Compilation Constants  
+
+The `_MYTYPE` conditional-compilation constant, in turn, controls the values of several other `_MY` compilation constants:  
   
-|_MYTYPE|_MYAPPLICATIONTYPE|_MYCOMPUTERTYPE|_MYFORMS|_MYUSERTYPE|_MYWEBSERVICES|  
+|\_MYTYPE|\_MYAPPLICATIONTYPE|\_MYCOMPUTERTYPE|\_MYFORMS|\_MYUSERTYPE|\_MYWEBSERVICES|  
 |--------------|-------------------------|----------------------|---------------|------------------|---------------------|  
 |"Console"|"Console"|"Windows"|Undefined|"Windows"|TRUE|  
 |"Custom"|Undefined|Undefined|Undefined|Undefined|Undefined|  
@@ -50,7 +53,7 @@ This topic describes how you can control which `My` objects are enabled by setti
  By default, undefined conditional-compilation constants resolve to `FALSE`. You can specify values for the undefined constants when compiling your project to override the default behavior.  
   
 > [!NOTE]
->  When `_MYTYPE` is set to "Custom", the project contains the `My` namespace, but it contains no objects. However, setting `_MYTYPE` to "Empty" prevents the compiler from adding the `My` namespace and its objects.  
+> When `_MYTYPE` is set to "Custom", the project contains the `My` namespace, but it contains no objects. However, setting `_MYTYPE` to "Empty" prevents the compiler from adding the `My` namespace and its objects.  
   
  This table describes the effects of the predefined values of the `_MY` compilation constants.  
   
@@ -64,6 +67,7 @@ This topic describes how you can control which `My` objects are enabled by setti
 |`_MYTYPE`|Enables `My.Log`, `My.Request`, and `My.Response`, if the constant is "Web".|  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.Logging.Log>

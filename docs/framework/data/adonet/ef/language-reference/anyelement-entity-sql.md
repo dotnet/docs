@@ -29,12 +29,13 @@ ANYELEMENT(Customers)
 ## Example  
  The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the ANYELEMENT operator to extract an element from a multivalued collection. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
  [!code-csharp[DP EntityServices Concepts 2#ANYELEMENT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#anyelement)]  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Nullable Structured Types](../../../../../../docs/framework/data/adonet/ef/language-reference/nullable-structured-types-entity-sql.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Nullable Structured Types](nullable-structured-types-entity-sql.md)

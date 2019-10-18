@@ -13,46 +13,47 @@ The `DeleteFile` method of the `My.Computer.FileSystem` object allows you to del
   
 ### To delete a text file  
   
--   Use the `DeleteFile` method to delete the file. The following code demonstrates how to delete the file named `test.txt`.  
+- Use the `DeleteFile` method to delete the file. The following code demonstrates how to delete the file named `test.txt`.  
   
-     [!code-vb[VbVbcnMyFileSystem#22](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-delete-a-file_1.vb)]  
+     [!code-vb[VbVbcnMyFileSystem#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#22)]  
   
 ### To delete a text file and ask the user to confirm that the file should be deleted  
   
--   Use the `DeleteFile` method to delete the file, setting `showUI` to `AllDialogs`. The following code demonstrates how to delete the file named `test.txt` and allow the user to confirm that the file should be deleted.  
+- Use the `DeleteFile` method to delete the file, setting `showUI` to `AllDialogs`. The following code demonstrates how to delete the file named `test.txt` and allow the user to confirm that the file should be deleted.  
   
-     [!code-vb[VbFileIOMisc#9](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-delete-a-file_2.vb)]  
+     [!code-vb[VbFileIOMisc#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#9)]  
   
 ### To delete a text file and send it to the Recycle Bin  
   
--   Use the `DeleteFile` method to delete the file, specifying `SendToRecycleBin` for the `recycle` parameter. The following code demonstrates how to delete the file named `test.txt` and send it to the **Recycle Bin**.  
+- Use the `DeleteFile` method to delete the file, specifying `SendToRecycleBin` for the `recycle` parameter. The following code demonstrates how to delete the file named `test.txt` and send it to the **Recycle Bin**.  
   
-     [!code-vb[VbFileIOMisc#10](../../../../visual-basic/developing-apps/programming/drives-directories-files/codesnippet/VisualBasic/how-to-delete-a-file_3.vb)]  
+     [!code-vb[VbFileIOMisc#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#10)]  
   
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
+- The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  
   
--   The path is not valid because it is `Nothing` (<xref:System.ArgumentNullException>).  
+- The path is not valid because it is `Nothing` (<xref:System.ArgumentNullException>).  
   
--   The path exceeds the system-defined maximum length (<xref:System.IO.PathTooLongException>).  
+- The path exceeds the system-defined maximum length (<xref:System.IO.PathTooLongException>).  
   
--   A file or folder name in the path contains a colon (:) or is in an invalid format (<xref:System.NotSupportedException>).  
+- A file or folder name in the path contains a colon (:) or is in an invalid format (<xref:System.NotSupportedException>).  
   
--   The file is in use (<xref:System.IO.IOException>).  
+- The file is in use (<xref:System.IO.IOException>).  
   
--   The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
+- The user lacks necessary permissions to view the path (<xref:System.Security.SecurityException>).  
   
--   The file does not exist (<xref:System.IO.FileNotFoundException>).  
+- The file does not exist (<xref:System.IO.FileNotFoundException>).  
   
--   The user does not have permission to delete the file, or the file is read-only (<xref:System.UnauthorizedAccessException>).  
+- The user does not have permission to delete the file, or the file is read-only (<xref:System.UnauthorizedAccessException>).  
   
--   A partial-trust situation exists in which the user does not have sufficient permissions (<xref:System.Security.SecurityException>).  
+- A partial-trust situation exists in which the user does not have sufficient permissions (<xref:System.Security.SecurityException>).  
   
--   The user cancelled the operation and `onUserCancel` is set to `ThrowException` (<xref:System.OperationCanceledException>).  
+- The user cancelled the operation and `onUserCancel` is set to `ThrowException` (<xref:System.OperationCanceledException>).  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.FileIO.UICancelOption>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem>
 - <xref:Microsoft.VisualBasic.FileIO.UIOption>

@@ -23,7 +23,7 @@ Notifies the profiler about root references after a garbage collection has occur
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RootReferences2(  
     [in] ULONG  cRootRefs,  
     [in, size_is(cRootRefs)] ObjectID rootRefIds[],  
@@ -32,7 +32,7 @@ HRESULT RootReferences2(
     [in, size_is(cRootRefs)] UINT_PTR rootIds[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cRootRefs`  
  [in] The number of elements in the `rootRefIds`, `rootKinds`, `rootFlags`, and `rootIds` arrays.  
   
@@ -69,5 +69,6 @@ HRESULT RootReferences2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)

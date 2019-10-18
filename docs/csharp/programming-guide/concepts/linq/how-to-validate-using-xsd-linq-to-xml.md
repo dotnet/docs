@@ -60,7 +60,7 @@ Console.WriteLine("doc2 {0}", errors ? "did not validate" : "validated");
   
  This example produces the following output:  
   
-```  
+```output  
 Validating doc1  
 doc1 validated  
   
@@ -70,11 +70,11 @@ doc2 did not validate
 ```  
   
 ## Example  
- The following example validates that the XML document from [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md) is valid per the schema from [Sample XSD File: Customers and Orders](../../../../csharp/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders1.md). It then modifies the source XML document. It changes the `CustomerID` attribute on the first customer. After the change, orders will then refer to a customer that does not exist, so the XML document will no longer validate.  
+ The following example validates that the XML document from [Sample XML File: Customers and Orders (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md) is valid per the schema from [Sample XSD File: Customers and Orders](./sample-xsd-file-customers-and-orders1.md). It then modifies the source XML document. It changes the `CustomerID` attribute on the first customer. After the change, orders will then refer to a customer that does not exist, so the XML document will no longer validate.  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](./sample-xml-file-customers-and-orders-linq-to-xml-2.md).  
   
- This example uses the following XSD schema: [Sample XSD File: Customers and Orders](../../../../csharp/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders1.md).  
+ This example uses the following XSD schema: [Sample XSD File: Customers and Orders](./sample-xsd-file-customers-and-orders1.md).  
   
 ```csharp  
 XmlSchemaSet schemas = new XmlSchemaSet();  
@@ -105,7 +105,7 @@ Console.WriteLine("custOrdDoc {0}", errors ? "did not validate" : "validated");
   
  This example produces the following output:  
   
-```  
+```output  
 Attempting to validate  
 custOrdDoc validated  
   
@@ -117,4 +117,4 @@ custOrdDoc did not validate
 ## See also
 
 - <xref:System.Xml.Schema.Extensions.Validate%2A>
-- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Creating XML Trees (C#)](creating-xml-trees-linq-to-xml-2.md)

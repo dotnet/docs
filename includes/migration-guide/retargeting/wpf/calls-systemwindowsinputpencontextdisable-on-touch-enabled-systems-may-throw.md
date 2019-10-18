@@ -7,4 +7,3 @@
 |Scope|Edge|
 |Version|4.6.1|
 |Type|Retargeting|
-

@@ -13,13 +13,13 @@ ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
  The topics in this section describe the concepts and techniques that you can use to build <xref:System.Windows.Forms.ToolStripContainer> features into your applications.  
   
 ## In This Section  
- [ToolStripContainer Control Overview](../../../../docs/framework/winforms/controls/toolstripcontainer-control-overview.md)  
+ [ToolStripContainer Control Overview](toolstripcontainer-control-overview.md)  
  Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripContainer> control.  
   
- [How to: Add a ToolStripContainer to a Form](../../../../docs/framework/winforms/controls/how-to-add-a-toolstripcontainer-to-a-form.md)  
+ [How to: Add a ToolStripContainer to a Form](how-to-add-a-toolstripcontainer-to-a-form.md)  
  Demonstrates adding a <xref:System.Windows.Forms.ToolStripContainer> to an application and adding a control to a specific panel of the <xref:System.Windows.Forms.ToolStripContainer>.  
   
- [How to: Add a Control to a ToolStripContentPanel](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-toolstripcontentpanel.md)  
+ [How to: Add a Control to a ToolStripContentPanel](how-to-add-a-control-to-a-toolstripcontentpanel.md)  
  Demonstrates adding a control to the <xref:System.Windows.Forms.ToolStripContentPanel>.  
   
 ## Reference  
@@ -36,4 +36,5 @@ ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
  Provides reference documentation for the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
 ## See also
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

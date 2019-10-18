@@ -24,7 +24,7 @@ Resets an enumerator back to the beginning of the enumeration.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginEnumeration (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr, 
@@ -34,13 +34,13 @@ HRESULT BeginEnumeration (
 
 ## Parameters
 
-`vFunc`  
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`lEnumFlags`  
+`lEnumFlags`\
 [in] A bitwise combination of the flags or values described in the [Remarks](#remarks) section that controls the properties included in the enumeration.
 
 ## Return value
@@ -91,13 +91,13 @@ Constant  |Value  |Description  |
 | `WBEM_FLAG_LOCAL_ONLY` | 0x10 | Limit the enumeration to properties that are defined or modified in the class itself. |
 | `WBEM_FLAG_PROPAGATED_ONLY` |  0x20 | Limit the enumeration to properties that are inherited from base classes. |
 
-
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

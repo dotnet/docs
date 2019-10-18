@@ -21,11 +21,12 @@ ms.assetid: 712b543f-d8b2-4dcf-ba2c-f7921c61c6fd
 Transforms are used to rotate, scale, translate, or skew <xref:System.Windows.FrameworkElement> objects.  
   
 ## In This Section  
- [Transforms Overview](../../../../docs/framework/wpf/graphics-multimedia/transforms-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/transformations-how-to-topics.md)  
+ [Transforms Overview](transforms-overview.md)  
+ [How-to Topics](transformations-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Transform>
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
-- [WPF Graphics Rendering Overview](../../../../docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md)
-- [Layout](../../../../docs/framework/wpf/advanced/layout.md)
+- [Graphics and Multimedia](index.md)
+- [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)
+- [Layout](../advanced/layout.md)

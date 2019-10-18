@@ -23,12 +23,12 @@ Notifies the profiler that an assembly is being loaded.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AssemblyLoadStarted(  
     [in] AssemblyID assemblyId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `assemblyId`  
  [in] Identifies the assembly that is being loaded.  
   
@@ -45,4 +45,5 @@ HRESULT AssemblyLoadStarted(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

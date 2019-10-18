@@ -6,30 +6,28 @@ helpviewer_keywords:
   - "UI Automation, Window control pattern"
   - "Window control pattern"
 ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Implementing the UI Automation Window Control Pattern
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic introduces guidelines and conventions for implementing <xref:System.Windows.Automation.Provider.IWindowProvider>, including information about <xref:System.Windows.Automation.WindowPattern> properties, methods, and events. Links to additional references are listed at the end of the topic.  
   
- The <xref:System.Windows.Automation.WindowPattern> control pattern is used to support controls that provide fundamental window-based functionality within a traditional [!INCLUDE[TLA#tla_gui](../../../includes/tlasharptla-gui-md.md)]. Examples of controls that must implement this control pattern include top-level application windows, [!INCLUDE[TLA#tla_mdi](../../../includes/tlasharptla-mdi-md.md)] child windows, resizable split pane controls, modal dialogs and balloon help windows.  
+ The <xref:System.Windows.Automation.WindowPattern> control pattern is used to support controls that provide fundamental window-based functionality within a traditional graphical user interface (GUI). Examples of controls that must implement this control pattern include top-level application windows, multiple-document interface (MDI) child windows, resizable split pane controls, modal dialogs and balloon help windows.  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>   
 ## Implementation Guidelines and Conventions  
  When implementing the Window control pattern, note the following guidelines and conventions:  
   
--   To support the ability to modify both window size and screen position using UI Automation, a control must implement <xref:System.Windows.Automation.Provider.ITransformProvider> in addition to <xref:System.Windows.Automation.Provider.IWindowProvider>.  
+- To support the ability to modify both window size and screen position using UI Automation, a control must implement <xref:System.Windows.Automation.Provider.ITransformProvider> in addition to <xref:System.Windows.Automation.Provider.IWindowProvider>.  
   
--   Controls that contain title bars and title bar elements that enable the control to be moved, resized, maximized, minimized, or closed are typically required to implement <xref:System.Windows.Automation.Provider.IWindowProvider>.  
+- Controls that contain title bars and title bar elements that enable the control to be moved, resized, maximized, minimized, or closed are typically required to implement <xref:System.Windows.Automation.Provider.IWindowProvider>.  
   
--   Controls such as tooltip pop-ups and combo box or menu drop-downs do not typically implement <xref:System.Windows.Automation.Provider.IWindowProvider>.  
+- Controls such as tooltip pop-ups and combo box or menu drop-downs do not typically implement <xref:System.Windows.Automation.Provider.IWindowProvider>.  
   
--   Balloon help windows are differentiated from basic tooltip pop-ups by the provision of a window-like Close button.  
+- Balloon help windows are differentiated from basic tooltip pop-ups by the provision of a window-like Close button.  
   
--   Full-screen mode is not supported by IWindowProvider as it is feature-specific to an application and is not typical window behavior.  
+- Full-screen mode is not supported by IWindowProvider as it is feature-specific to an application and is not typical window behavior.  
   
 <a name="Required_Members_for_IWindowProvider"></a>   
 ## Required Members for IWindowProvider  
@@ -60,8 +58,9 @@ ms.author: "mhopkins"
 |<xref:System.ArgumentOutOfRangeException>|<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A><br /><br /> -   When the parameter is not a valid number.|  
   
 ## See also
-- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
-- [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
-- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
-- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+
+- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Support Control Patterns in a UI Automation Provider](support-control-patterns-in-a-ui-automation-provider.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)
+- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Use Caching in UI Automation](use-caching-in-ui-automation.md)

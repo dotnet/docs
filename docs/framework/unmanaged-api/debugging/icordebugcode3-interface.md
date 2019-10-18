@@ -29,7 +29,7 @@ Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide i
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -41,8 +41,6 @@ Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide i
  **.NET Framework Versions:** [!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
 ## See also
-
-
 
 - [ICorDebugILFrame3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

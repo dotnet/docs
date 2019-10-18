@@ -21,13 +21,13 @@ Indicates whether the runtime has been started (that is, whether the [ICLRRuntim
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsStarted(  
         [out] BOOL     *pbStarted,  
         [out] DWORD    *pdwStartupFlags);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbStarted`  
  [out] `true` if this runtime is started; otherwise, `false`.  
   
@@ -40,10 +40,10 @@ HRESULT IsStarted(
 |HRESULT|Description|  
 |-------------|-----------------|  
 |S_OK|The method completed successfully.|  
-|E_NOTIMPL|The common language runtime (CLR) version is earlier than the CLR version in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].|  
+|E_NOTIMPL|The common language runtime (CLR) version is earlier than the CLR version in the .NET Framework 4.|  
   
 ## Remarks  
- This method does not work with CLR versions earlier than the CLR version in the [!INCLUDE[net_v40_short](../../../../includes/net-v40-short-md.md)].  
+ This method does not work with CLR versions earlier than the CLR version in the .NET Framework 4.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -55,6 +55,7 @@ HRESULT IsStarted(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

@@ -23,13 +23,13 @@ Gets a pointer to the chain this frame is a part of.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetChain (  
     [out] ICorDebugChain     **ppChain  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppChain`  
  [out] A pointer to the address of an ICorDebugChain object that represents the chain containing this frame.  
   

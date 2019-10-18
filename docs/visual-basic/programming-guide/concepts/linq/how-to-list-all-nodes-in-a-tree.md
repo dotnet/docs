@@ -33,7 +33,7 @@ Sometimes it is helpful to list all nodes in a tree. This can be useful when lea
   
  The following is the list of nodes in the above XML tree, expressed as XPath expressions:  
   
-```  
+```console
 /processing-instruction()  
 /Root  
 /Root/@AttName  
@@ -258,4 +258,5 @@ End Module
 ```  
   
 ## See also
+
 - [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

@@ -23,13 +23,13 @@ Gets a value that indicates whether the specified thread has been suspended as a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsOSSuspended(  
     [in]  DWORD threadID,  
     [out] BOOL  *pbSuspended);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The ID of thread in question.  
   

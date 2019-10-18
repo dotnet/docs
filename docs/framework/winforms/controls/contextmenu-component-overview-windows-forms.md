@@ -11,7 +11,7 @@ ms.assetid: 49d6398f-d3c4-4679-84fa-1de07b68b05e
 ---
 # ContextMenu Component Overview (Windows Forms)
 > [!IMPORTANT]
->  Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
+> Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
   
  With the Windows Forms <xref:System.Windows.Forms.ContextMenu> component, you can provide users with an easily accessible shortcut menu of frequently used commands that are associated with the selected object. The items in a shortcut menu are frequently a subset of the items from main menus that appear elsewhere in the application. A user can typically access a shortcut menu by right-clicking the mouse. On Windows Forms, shortcut menus are associated with controls.  
   
@@ -21,6 +21,7 @@ ms.assetid: 49d6398f-d3c4-4679-84fa-1de07b68b05e
  The key property of the <xref:System.Windows.Forms.ContextMenu> component is the <xref:System.Windows.Forms.Menu.MenuItems%2A> property. You can add menu items by programmatically creating <xref:System.Windows.Forms.MenuItem> objects and adding them to the <xref:System.Windows.Forms.Menu.MenuItemCollection> of the shortcut menu. Because the items in a shortcut menu are usually drawn from other menus, you will most frequently add items to a shortcut menu by copying them.  
   
 ## See also
+
 - <xref:System.Windows.Forms.ContextMenu>
 - <xref:System.Windows.Forms.MenuStrip>
 - <xref:System.Windows.Forms.ContextMenuStrip>

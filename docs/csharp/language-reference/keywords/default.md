@@ -1,7 +1,6 @@
 ---
 title: "default - C# Reference"
 ms.custom: seodec18
-
 ms.date: 08/04/2017
 f1_keywords: 
   - "default"
@@ -13,11 +12,10 @@ ms.assetid: 14c48aaa-7d35-4058-a1a4-f53353050579
 
 # default (C# Reference)
 
-The `default` keyword can be used in the `switch` statement or in a default value expression:
+The `default` keyword can be used in two ways:
 
-- [The switch statement](switch.md): Specifies the default label.
-
-- [Default value expressions](../../programming-guide/statements-expressions-operators/default-value-expressions.md): Produces the default value of a type.
+- To specify the default label in the [`switch` statement](switch.md).
+- As the [default operator or literal](../operators/default.md) to produce the default value of a type.
 
 ## See also
 

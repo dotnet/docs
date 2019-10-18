@@ -14,7 +14,7 @@ Specifies the filtering condition for a query.
   
 ## Syntax  
   
-```  
+```vb  
 Where condition  
 ```  
   
@@ -32,14 +32,15 @@ Where condition
 ## Example  
  The following query expression uses a `From` clause to declare a range variable `cust` for each `Customer` object in the `customers` collection. The `Where` clause uses the range variable to restrict the output to customers from the specified region. The `For Each` loop displays the company name for each customer in the query result.  
   
- [!code-vb[VbSimpleQuerySamples#23](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/where-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#23)]  
   
 ## Example  
  The following example uses `And` and `Or` logical operators in the `Where` clause.  
   
- [!code-vb[VbSimpleQuerySamples#31](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/where-clause_2.vb)]  
+ [!code-vb[VbSimpleQuerySamples#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#31)]  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)

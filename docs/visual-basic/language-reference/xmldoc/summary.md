@@ -15,7 +15,7 @@ Specifies the summary of the member.
 <summary>description</summary>  
 ```  
   
-#### Parameters  
+## Parameters  
  `description`  
  A summary of the object.  
   
@@ -24,12 +24,13 @@ Specifies the summary of the member.
   
  The text for the `<summary>` tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser. For information about the Object Browser, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<summary>` tag to describe the `ResetCounter` method and `Counter` property.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/summary_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

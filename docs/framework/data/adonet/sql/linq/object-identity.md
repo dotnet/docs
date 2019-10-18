@@ -15,12 +15,12 @@ Objects in the runtime have unique identities. Two variables that refer to the s
   
  With objects you expect something very different. You expect that if you ask the <xref:System.Data.Linq.DataContext> for the same information repeatedly, it will in fact give you the same object instance. You expect this behavior because objects have special meaning for your application and you expect them to behave like objects. You designed them as hierarchies or graphs. You expect to retrieve them as such and not to receive multitudes of replicated instances just because you asked for the same thing more than one time.  
   
- In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the <xref:System.Data.Linq.DataContext> manages object identity. Whenever you retrieve a new row from the database, the row is logged in an identity table by its primary key, and a new object is created. Whenever you retrieve that same row, the original object instance is handed back to the application. In this manner the <xref:System.Data.Linq.DataContext> translates the concept of identity as seen by the database (that is, primary keys) into the concept of identity seen by the language (that is, instances). The application only sees the object in the state that it was first retrieved. The new data, if different, is discarded. For more information, see [Retrieving Objects from the Identity Cache](../../../../../../docs/framework/data/adonet/sql/linq/retrieving-objects-from-the-identity-cache.md).  
+ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the <xref:System.Data.Linq.DataContext> manages object identity. Whenever you retrieve a new row from the database, the row is logged in an identity table by its primary key, and a new object is created. Whenever you retrieve that same row, the original object instance is handed back to the application. In this manner the <xref:System.Data.Linq.DataContext> translates the concept of identity as seen by the database (that is, primary keys) into the concept of identity seen by the language (that is, instances). The application only sees the object in the state that it was first retrieved. The new data, if different, is discarded. For more information, see [Retrieving Objects from the Identity Cache](retrieving-objects-from-the-identity-cache.md).  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] uses this approach to manage the integrity of local objects in order to support optimistic updates. Because the only changes that occur after the object is at first created are those made by the application, the intent of the application is clear. If changes by an outside party have occurred in the interim, they are identified at the time `SubmitChanges()` is called.  
   
 > [!NOTE]
->  If the object requested by the query is easily identifiable as one already retrieved, no query is executed. The identity table acts as a cache of all previously retrieved objects.  
+> If the object requested by the query is easily identifiable as one already retrieved, no query is executed. The identity table acts as a cache of all previously retrieved objects.  
   
 ## Examples  
   
@@ -37,4 +37,5 @@ Objects in the runtime have unique identities. Two variables that refer to the s
  [!code-vb[DLinqObjectIdentity#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectIdentity/vb/Module1.vb#2)]  
   
 ## See also
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+
+- [Background Information](background-information.md)

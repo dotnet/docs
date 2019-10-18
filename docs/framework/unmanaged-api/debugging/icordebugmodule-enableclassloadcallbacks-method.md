@@ -23,13 +23,13 @@ Controls whether the [ICorDebugManagedCallback::LoadClass](../../../../docs/fram
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableClassLoadCallbacks(  
     [in] BOOL bClassLoadCallbacks  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bClassLoadCallbacks`  
  [in] Set this value to `true` to enable the common language runtime (CLR) to call the `ICorDebugManagedCallback::LoadClass` and `ICorDebugManagedCallback::UnloadClass` methods when their associated events occur.  
   
@@ -48,5 +48,3 @@ HRESULT EnableClassLoadCallbacks(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-
-

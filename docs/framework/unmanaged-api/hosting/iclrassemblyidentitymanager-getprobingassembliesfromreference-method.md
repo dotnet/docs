@@ -23,7 +23,7 @@ Gets an [ICLRProbingAssemblyEnum](../../../../docs/framework/unmanaged-api/hosti
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProbingAssembliesFromReference (  
     [in] DWORD   dwMachineType,  
     [in] DWORD   dwFlags,  
@@ -32,7 +32,7 @@ HRESULT GetProbingAssembliesFromReference (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMachineType`  
  [in] A valid value that specifies the processor architecture, as defined in WinNT.h.  
   
@@ -66,6 +66,7 @@ HRESULT GetProbingAssembliesFromReference (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
 - [ICLRProbingAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/hosting/iclrprobingassemblyenum-interface.md)

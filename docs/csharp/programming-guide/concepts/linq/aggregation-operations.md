@@ -8,7 +8,7 @@ An aggregation operation computes a single value from a collection of values. An
   
  The following illustration shows the results of two different aggregation operations on a sequence of numbers. The first operation sums the numbers. The second operation returns the maximum value in the sequence.  
   
- ![LINQ Aggregation Operations](../../../../csharp/programming-guide/concepts/linq/media/linq_aggregation.png "LINQ_Aggregation")  
+ ![Illustration that shows LINQ aggregation operations.](./media/aggregation-operations/linq-aggregation-operations.png)  
   
  The standard query operator methods that perform aggregation operations are listed in the following section.  
   
@@ -27,7 +27,7 @@ An aggregation operation computes a single value from a collection of values. An
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [How to: Compute Column Values in a CSV Text File (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md)
-- [How to: Query for the Largest File or Files in a Directory Tree (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md)
-- [How to: Query for the Total Number of Bytes in a Set of Folders (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [How to: Compute Column Values in a CSV Text File (LINQ) (C#)](./how-to-compute-column-values-in-a-csv-text-file-linq.md)
+- [How to: Query for the Largest File or Files in a Directory Tree (LINQ) (C#)](./how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md)
+- [How to: Query for the Total Number of Bytes in a Set of Folders (LINQ) (C#)](./how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md)

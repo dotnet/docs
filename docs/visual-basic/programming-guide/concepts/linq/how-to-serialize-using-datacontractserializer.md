@@ -68,7 +68,7 @@ End Class
   
  This example produces the following output:  
   
-```  
+```console  
 Testing for type: System.Xml.Linq.XElement  
   Deserialized type: System.Xml.Linq.XElement  
 Testing for type: XElementContainer  
@@ -78,4 +78,5 @@ Testing for type: XElementNullContainer
 ```  
   
 ## See also
+
 - [Serializing Object Graphs that Contain XElement Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-object-graphs-that-contain-xelement-objects.md)

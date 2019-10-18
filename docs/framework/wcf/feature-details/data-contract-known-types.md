@@ -15,13 +15,13 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
   
  Normally, when passing parameters and return values between a client and a service, both endpoints share all of the data contracts of the data to be transmitted. However, this is not the case in the following circumstances:  
   
--   The sent data contract is derived from the expected data contract. For more information, see the section about inheritance in [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)). In that case, the transmitted data does not have the same data contract as expected by the receiving endpoint.  
+- The sent data contract is derived from the expected data contract. For more information, see the section about inheritance in [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)). In that case, the transmitted data does not have the same data contract as expected by the receiving endpoint.  
   
--   The declared type for the information to be transmitted is an interface, as opposed to a class, structure, or enumeration. Therefore, it cannot be known in advance which type that implements the interface is actually sent and therefore, the receiving endpoint cannot determine in advance the data contract for the transmitted data.  
+- The declared type for the information to be transmitted is an interface, as opposed to a class, structure, or enumeration. Therefore, it cannot be known in advance which type that implements the interface is actually sent and therefore, the receiving endpoint cannot determine in advance the data contract for the transmitted data.  
   
--   The declared type for the information to be transmitted is <xref:System.Object>. Because every type inherits from <xref:System.Object>, and it cannot be known in advance which type is actually sent, the receiving endpoint cannot determine in advance the data contract for the transmitted data. This is a special case of the first item: Every data contract derives from the default, a blank data contract that is generated for <xref:System.Object>.  
+- The declared type for the information to be transmitted is <xref:System.Object>. Because every type inherits from <xref:System.Object>, and it cannot be known in advance which type is actually sent, the receiving endpoint cannot determine in advance the data contract for the transmitted data. This is a special case of the first item: Every data contract derives from the default, a blank data contract that is generated for <xref:System.Object>.  
   
--   Some types, which include [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types, have members that are in one of the preceding three categories. For example, <xref:System.Collections.Hashtable> uses <xref:System.Object> to store the actual objects in the hash table. When serializing these types, the receiving side cannot determine in advance the data contract for these members.  
+- Some types, which include .NET Framework types, have members that are in one of the preceding three categories. For example, <xref:System.Collections.Hashtable> uses <xref:System.Object> to store the actual objects in the hash table. When serializing these types, the receiving side cannot determine in advance the data contract for these members.  
   
 ## The KnownTypeAttribute Class  
  When data arrives at a receiving endpoint, the WCF runtime attempts to deserialize the data into an instance of a common language runtime (CLR) type. The type that is instantiated for deserialization is chosen by first inspecting the incoming message to determine the data contract to which the contents of the message conform. The deserialization engine then attempts to find a CLR type that implements a data contract compatible with the message contents. The set of candidate types that the deserialization engine allows for during this process is referred to as the deserializer's set of "known types."  
@@ -32,7 +32,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  Primitive types, as well as certain types treated as primitives (for example, <xref:System.DateTime> and <xref:System.Xml.XmlElement>) are always "known" and never have to be added through this mechanism. However, arrays of primitive types have to be added explicitly. Most collections are considered equivalent to arrays. (Non-generic collections are considered equivalent to arrays of <xref:System.Object>). For an example of the using primitives, primitive arrays, and primitive collections, see Example 4.  
   
 > [!NOTE]
->  Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types.  
+> Unlike other primitive types, the <xref:System.DateTimeOffset> structure is not a known type by default, so it must be manually added to the list of known types.  
   
 ## Examples  
  The following examples show the <xref:System.Runtime.Serialization.KnownTypeAttribute> class in use.  
@@ -71,7 +71,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  In the following example, a data contract stores a number and an operation to perform on the number. The `Numbers` data member can be an integer, an array of integers, or a <xref:System.Collections.Generic.List%601> that contains integers.  
   
 > [!CAUTION]
->  This will only work on the client side if SVCUTIL.EXE is used to generate a WCF proxy. SVCUTIL.EXE retrieves metadata from the service including any known types. Without this information a client will not be able to deserialize the types.  
+> This will only work on the client side if SVCUTIL.EXE is used to generate a WCF proxy. SVCUTIL.EXE retrieves metadata from the service including any known types. Without this information a client will not be able to deserialize the types.  
   
  [!code-csharp[C_KnownTypeAttribute#6](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_knowntypeattribute/cs/source.cs#6)]
  [!code-vb[C_KnownTypeAttribute#6](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_knowntypeattribute/vb/source.vb#6)]  
@@ -162,6 +162,7 @@ The <xref:System.Runtime.Serialization.KnownTypeAttribute> class allows you to s
  In the preceding configuration file a data contract type called `MyCompany.Library.Shape` is declared to have `MyCompany.Library.Circle` as a known type.  
   
 ## See also
+
 - <xref:System.Runtime.Serialization.KnownTypeAttribute>
 - <xref:System.Collections.Hashtable>
 - <xref:System.Object>

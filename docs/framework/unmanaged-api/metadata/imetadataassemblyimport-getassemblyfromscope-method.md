@@ -23,13 +23,13 @@ Gets a pointer to the assembly in the current scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyFromScope (  
     [out] mdAssembly  *ptkAssembly  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ptkAssembly`  
  [out] A pointer to the retrieved `mdAssembly` token that identifies the assembly.  
   
@@ -43,4 +43,5 @@ HRESULT GetAssemblyFromScope (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

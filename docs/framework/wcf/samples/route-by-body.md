@@ -9,7 +9,7 @@ This sample demonstrates how to implement a service that accepts message objects
  In this sample, the client is a console application (.exe) and the service is hosted in IIS.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample demonstrates message dispatch based on the body content. The built-in Windows Communication Foundation (WCF) service model message dispatch mechanism is based on message Actions. However, there are many existing Web services that define all of their operations with Action="". It is impossible to build a service based on WSDL that keeps dispatching request messages based on Action information. This sample demonstrates a service contract that is based on WSDL (the WSDL is contained in Service.wsdl that is included with the sample). The service contract is Calculator, similar to the one used in [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). However the `[OperationContract]` specifies `Action=""` for all operations.  
   
@@ -52,19 +52,17 @@ Press <ENTER> to terminate client.
   
 ### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Interop\RouteByBody`  
-  
-## See also
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Interop\RouteByBody`  

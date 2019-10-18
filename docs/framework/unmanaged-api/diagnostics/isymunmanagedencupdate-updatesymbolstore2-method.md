@@ -23,14 +23,14 @@ Allows a compiler to omit functions that have not been modified from the program
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateSymbolStore2(  
     [in]  IStream      *pIStream,  
     [in]  SYMLINEDELTA* pDeltaLines,  
     [in]  ULONG         cDeltaLines);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIStream`  
  [in] A pointer to an [IStream](/windows/desktop/api/objidl/nn-objidl-istream) that contains the line information.  
   
@@ -47,4 +47,5 @@ HRESULT UpdateSymbolStore2(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

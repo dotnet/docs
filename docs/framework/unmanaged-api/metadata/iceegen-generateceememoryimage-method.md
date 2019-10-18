@@ -25,13 +25,13 @@ Generates an image in memory for the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GenerateCeeMemoryImage (  
     [out] void    **ppImage  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppImage`  
  [out] A pointer to the generated image.  
   
@@ -45,4 +45,5 @@ HRESULT GenerateCeeMemoryImage (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

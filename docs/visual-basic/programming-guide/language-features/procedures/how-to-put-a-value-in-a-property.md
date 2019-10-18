@@ -16,19 +16,20 @@ You store a value in a property by putting the property name on the left side of
   
 ### To store a value in a property  
   
-1.  Use the property name on the left side of an assignment statement.  
+1. Use the property name on the left side of an assignment statement.  
   
      The following example sets the value of the Visual Basic `TimeOfDay` property to noon, implicitly calling its `Set` procedure.  
   
-     [!code-vb[VbVbcnProcedures#11](./codesnippet/VisualBasic/how-to-put-a-value-in-a-property_1.vb)]  
+     [!code-vb[VbVbcnProcedures#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#11)]  
   
-2.  If the property takes arguments, follow the property name with parentheses to enclose the argument list. If there are no arguments, you can optionally omit the parentheses.  
+2. If the property takes arguments, follow the property name with parentheses to enclose the argument list. If there are no arguments, you can optionally omit the parentheses.  
   
-3.  Place the arguments in the argument list within the parentheses, separated by commas. Be sure you supply the arguments in the same order that the property defines the corresponding parameters.  
+3. Place the arguments in the argument list within the parentheses, separated by commas. Be sure you supply the arguments in the same order that the property defines the corresponding parameters.  
   
-4.  The value generated on the right side of the assignment statement is stored in the property.  
+4. The value generated on the right side of the assignment statement is stored in the property.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>
 - [Property Procedures](./property-procedures.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)

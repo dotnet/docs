@@ -9,7 +9,8 @@ In many cases, it is important for an application to monitor specific details ab
  In the Peer Channel infrastructure, a client is considered to be online if it is connected to at least one other peer and offline otherwise. This can be particularly useful in both debugging a developing applications or displaying detailed information to the end user.  
   
 > [!NOTE]
->  An online event handler should first ensure that the node is open before sending any messages.  
+> An online event handler should first ensure that the node is open before sending any messages.  
   
 ## See also
+
 - [Building a Peer Channel Application](../../../../docs/framework/wcf/feature-details/building-a-peer-channel-application.md)

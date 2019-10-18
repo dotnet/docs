@@ -23,13 +23,13 @@ Gets an interface pointer to an ICorDebugValue object that represents an excepti
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentException (  
     [out] ICorDebugValue **ppExceptionObject  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppExceptionObject`  
  [out] A pointer to the address of an `ICorDebugValue` object that represents the exception that is currently being thrown by managed code.  
   

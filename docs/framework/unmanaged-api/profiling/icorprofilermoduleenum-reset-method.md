@@ -23,7 +23,7 @@ Moves this enumerator's cursor to the starting position of the sequence.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset();  
 ```  
   
@@ -39,5 +39,6 @@ HRESULT Reset();
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

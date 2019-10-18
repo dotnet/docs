@@ -22,18 +22,18 @@ ms.author: "ronpet"
 Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0.  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v45](../../../../includes/net-v45-md.md)], you can set segment size and maximum generation 0 size to values greater than `DWORD` by using the [ICLRGCManager2::SetGCStartupLimitsEx](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager2-setgcstartuplimitsex-method.md) method.  
+> Starting with the .NET Framework 4.5, you can set segment size and maximum generation 0 size to values greater than `DWORD` by using the [ICLRGCManager2::SetGCStartupLimitsEx](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager2-setgcstartuplimitsex-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCStartupLimits (  
     [in] DWORD SegmentSize,   
     [in] DWORD MaxGen0Size  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `SegmentSize`  
  [in] The specified size of a garbage collection segment.  
   
@@ -68,7 +68,8 @@ HRESULT SetGCStartupLimits (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
-- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+
+- [Automatic Memory Management](../../../standard/automatic-memory-management.md)
+- [Garbage Collection](../../../standard/garbage-collection/index.md)
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)

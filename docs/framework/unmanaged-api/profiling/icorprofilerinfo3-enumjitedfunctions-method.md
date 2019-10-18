@@ -23,11 +23,11 @@ Returns an enumerator for all functions that were previously JIT-compiled.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumJITedFunctions([out] ICorProfilerFunctionEnum** ppEnum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to the [ICorProfilerFunctionEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md) enumerator.  
   
@@ -35,7 +35,7 @@ HRESULT EnumJITedFunctions([out] ICorProfilerFunctionEnum** ppEnum);
  This method may overlap with `JITCompilation` callbacks such as the [ICorProfilerCallback::JITCompilationStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md) method. The enumerator returned by this method does not include functions that are loaded from native images generated with Ngen.exe.  
   
 > [!NOTE]
->  The returned enumeration includes only "0" for the value of the `COR_PRF_FUNCTION::reJitId` field.  If you require valid `COR_PRF_FUNCTION::reJitId` values, use the [ICorProfilerInfo4::EnumJITedFunctions2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-enumjitedfunctions2-method.md) method.  
+> The returned enumeration includes only "0" for the value of the `COR_PRF_FUNCTION::reJitId` field.  If you require valid `COR_PRF_FUNCTION::reJitId` values, use the [ICorProfilerInfo4::EnumJITedFunctions2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-enumjitedfunctions2-method.md) method.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -47,6 +47,7 @@ HRESULT EnumJITedFunctions([out] ICorProfilerFunctionEnum** ppEnum);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

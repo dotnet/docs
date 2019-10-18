@@ -23,13 +23,13 @@ Destroys the PInvoke mapping metadata for the object referenced by the specified
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeletePinvokeMap (   
     [in]  mdToken     tk   
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] An `mdFieldDef` or `mdMethodDef` token that represents the object for which to delete the PInvoke mapping metadata.  
   
@@ -43,5 +43,6 @@ HRESULT DeletePinvokeMap (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

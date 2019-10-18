@@ -18,7 +18,7 @@ Indicates a mapping between specific lines of source code and text external to t
   
 ## Syntax  
   
-```  
+```vb  
 #ExternalSource( StringLiteral , IntLiteral )  
     [ LogicalLine+ ]  
 #End ExternalSource  
@@ -45,4 +45,5 @@ Indicates a mapping between specific lines of source code and text external to t
  External source directives have no effect on compilation and cannot be nested. They are intended for internal use by the application only.  
   
 ## See also
+
 - [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)

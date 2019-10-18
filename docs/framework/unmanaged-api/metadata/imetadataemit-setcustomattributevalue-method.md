@@ -23,7 +23,7 @@ Sets or updates the value of a custom attribute defined by a prior call to [IMet
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCustomAttributeValue (   
     [in]  mdCustomAttribute       pcv,   
     [in]  void const              *pCustomAttribute,    
@@ -31,7 +31,7 @@ HRESULT SetCustomAttributeValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcv`  
  [in] The token of the target custom attribute.  
   
@@ -51,5 +51,6 @@ HRESULT SetCustomAttributeValue (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

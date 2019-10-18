@@ -23,7 +23,7 @@ Defines a single global variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineGlobalVariable(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  
@@ -35,7 +35,7 @@ HRESULT DefineGlobalVariable(
     [in] ULONG32      addr3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to a `WCHAR` that defines the global variable name.  
   
@@ -67,6 +67,7 @@ HRESULT DefineGlobalVariable(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)
 - [DefineGlobalVariable2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-defineglobalvariable2-method.md)

@@ -23,13 +23,13 @@ Gets the statistics for the current state of the garbage collection system.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStats (  
     [in, out] COR_GC_STATS *pStats  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStats`  
  [in, out] A pointer to a [COR_GC_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md) structure that contains the statistics for the current state of the garbage collection system.  
   
@@ -46,4 +46,5 @@ HRESULT GetStats (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)

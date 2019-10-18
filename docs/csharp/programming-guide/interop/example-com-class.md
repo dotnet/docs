@@ -12,13 +12,13 @@ The following is an example of a class that you would expose as a COM object. Af
   
  Exposing Visual C# objects to COM requires declaring a class interface, an events interface if it is required, and the class itself. Class members must follow these rules to be visible to COM:  
   
--   The class must be public.  
+- The class must be public.  
   
--   Properties, methods, and events must be public.  
+- Properties, methods, and events must be public.  
   
--   Properties and methods must be declared on the class interface.  
+- Properties and methods must be declared on the class interface.  
   
--   Events must be declared in the event interface.  
+- Events must be declared in the event interface.  
   
  Other public members in the class that are not declared in these interfaces will not be visible to COM, but they will be visible to other .NET Framework objects.  
   
@@ -29,10 +29,10 @@ The following is an example of a class that you would expose as a COM object. Af
  The class implements the class interface; it can implement more than one interface, but the first implementation will be the default class interface. Implement the methods and properties exposed to COM here. They must be marked public and must match the declarations in the class interface. Also, declare the events raised by the class here. They must be marked public and must match the declarations in the events interface.  
   
 ## Example  
- [!code-csharp[csProgGuideInterop#8](../../../csharp/programming-guide/interop/codesnippet/CSharp/example-com-class_1.cs)]  
+ [!code-csharp[csProgGuideInterop#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInterop/CS/ExampleCOM.cs#8)]  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Interoperability](../../../csharp/programming-guide/interop/index.md)
+- [C# Programming Guide](../index.md)
+- [Interoperability](./index.md)
 - [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)

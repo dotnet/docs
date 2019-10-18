@@ -23,14 +23,14 @@ Gets the specified version of the specified document. The document version start
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocumentVersion (  
     [in]  ISymUnmanagedDocument *pDoc,  
     [out] int* version,  
     [out] BOOL* pbCurrent);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pDoc`  
  [in] The specified document.  
   
@@ -47,4 +47,5 @@ HRESULT GetDocumentVersion (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

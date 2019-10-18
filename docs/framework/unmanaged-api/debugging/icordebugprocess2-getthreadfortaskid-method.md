@@ -23,14 +23,14 @@ Gets the thread on which the task with the specified identifier is executing.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadForTaskID (  
     [in]  TASKID            taskid,  
     [out] ICorDebugThread2  **ppThread  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `taskid`  
  [in] The identifier of the task.  
   

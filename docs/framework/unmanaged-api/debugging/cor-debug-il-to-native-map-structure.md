@@ -22,7 +22,7 @@ Contains the offsets that are used to map Microsoft intermediate language (MSIL)
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_DEBUG_IL_TO_NATIVE_MAP {  
     ULONG32  ilOffset;  
     ULONG32  nativeStartOffset;  
@@ -39,7 +39,7 @@ typedef struct COR_DEBUG_IL_TO_NATIVE_MAP {
 |`nativeEndOffset`|The offset of the end of the native code.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorDebug.idl  
   
@@ -48,7 +48,8 @@ typedef struct COR_DEBUG_IL_TO_NATIVE_MAP {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-- [GetILToNativeMapping Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getiltonativemapping-method.md)
-- [GetILToNativeMapping Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getiltonativemapping-method.md)
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+
+- [GetILToNativeMapping Method](../profiling/icorprofilerinfo-getiltonativemapping-method.md)
+- [GetILToNativeMapping Method](icordebugcode-getiltonativemapping-method.md)
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

@@ -23,13 +23,13 @@ Gets an interface pointer to the common language runtime (CLR) application domai
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject (  
     [out] ICorDebugValue   **ppObject  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppObject`  
  [out] A pointer to the address of an ICorDebugValue interface object that represents the CLR application domain.  
   

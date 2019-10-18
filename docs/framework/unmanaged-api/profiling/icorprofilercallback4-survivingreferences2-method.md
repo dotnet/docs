@@ -23,7 +23,7 @@ Reports the layout of objects in the heap as a result of a non-compacting garbag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SurvivingReferences2(  
     [in] ULONG  cSurvivingObjectIDRanges,  
     [in, size_is(cSurvivingObjectIDRanges)] ObjectID  
@@ -32,7 +32,7 @@ HRESULT SurvivingReferences2(
                 cObjectIDRangeLength[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cSurvivingObjectIDRanges`  
  [in] The number of blocks of contiguous objects that survived as the result of the non-compacting garbage collection. That is, the value of `cSurvivingObjectIDRanges` is the size of the `objectIDRangeStart` and `cObjectIDRangeLength` arrays, which store an `ObjectID` and a length, respectively, for each block of objects.  
   
@@ -73,6 +73,7 @@ HRESULT SurvivingReferences2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)
 - [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)

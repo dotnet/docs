@@ -8,17 +8,15 @@ helpviewer_keywords:
   - "UI Automation, custom user interface (UI) elements"
   - "providers, UI Automation"
 ms.assetid: 5f82f731-f1b5-4c8b-b47c-d11279a02574
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Providers for Managed Code
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This section contains overviews and how-to topics that describe how to write [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] providers for custom [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] elements.  
   
 ## In This Section  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [Client-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/client-side-ui-automation-provider-implementation.md)  
- [How-to Topics](../../../docs/framework/ui-automation/ui-automation-providers-for-managed-code-how-to-topics.md)
+ [Server-Side UI Automation Provider Implementation](server-side-ui-automation-provider-implementation.md)  
+ [UI Automation Providers Overview](ui-automation-providers-overview.md)  
+ [Client-Side UI Automation Provider Implementation](client-side-ui-automation-provider-implementation.md)  
+ [How-to Topics](ui-automation-providers-for-managed-code-how-to-topics.md)

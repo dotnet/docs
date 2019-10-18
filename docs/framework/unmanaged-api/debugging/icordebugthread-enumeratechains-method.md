@@ -23,24 +23,24 @@ Gets an interface pointer to an ICorDebugChainEnum enumerator that contains all 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateChains (  
     [out] ICorDebugChainEnum **ppChains  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppChains`  
  [out] A pointer to the address of an `ICorDebugChainEnum` object that allows enumeration of all the stack chains in this thread, starting at the active (that is, the most recent) chain.  
   
 ## Remarks  
  The stack chain represents the physical call stack for the thread. The following circumstances create a stack chain boundary:  
   
--   A managed-to-unmanaged or unmanaged-to-managed transition.  
+- A managed-to-unmanaged or unmanaged-to-managed transition.  
   
--   A context switch.  
+- A context switch.  
   
--   A debugger hijacking of a user thread.  
+- A debugger hijacking of a user thread.  
   
  In the simple case for a thread that is running purely managed code in a single context, a one-to-one correspondence will exist between threads and stack chains.  
   

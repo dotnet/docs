@@ -26,9 +26,9 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
 ## Service Development  
  WCF allows you to define service contracts by applying the <xref:System.ServiceModel.ServiceContractAttribute> either to interfaces or to classes. It is recommended to apply the attribute to an interface rather than to a class, because doing so creates a definition of a contract that can be variously implemented by any number of classes. ASP.NET 2.0 supports the option of applying the <xref:System.Web.Services.WebService> attribute to interfaces as well as classes. However, as mentioned already, there is a defect in ASP.NET 2.0, by which the Namespace parameter of the <xref:System.Web.Services.WebService> attribute has no effect when that attribute is applied to an interface rather than a class. Since it is generally advisable to modify the namespace of a service from the default value, `http://tempuri.org`, using the Namespace parameter of the <xref:System.Web.Services.WebService> attribute, one should continue defining ASP.NET Web Services by applying the <xref:System.ServiceModel.ServiceContractAttribute> attribute either to interfaces or to classes.  
   
--   Have as little code as possible in the methods by which those interfaces are defined. Have them delegate their work to other classes. New WCF service types could then also delegate their substantive work to those classes.  
+- Have as little code as possible in the methods by which those interfaces are defined. Have them delegate their work to other classes. New WCF service types could then also delegate their substantive work to those classes.  
   
--   Provide explicit names for the operations of a service using the `MessageName` parameter of the <xref:System.Web.Services.WebMethodAttribute>.  
+- Provide explicit names for the operations of a service using the `MessageName` parameter of the <xref:System.Web.Services.WebMethodAttribute>.  
   
     ```csharp  
     [WebMethod(MessageName="ExplicitName")]  
@@ -37,9 +37,9 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
   
      Doing so is important, because the default names for operations in ASP.NET are different from the default names supplied by WCF. By providing explicit names, you avoid relying on the default ones.  
   
--   Do not implement ASP.NET Web service operations with polymorphic methods, because WCF does not support implementing operations with polymorphic methods.  
+- Do not implement ASP.NET Web service operations with polymorphic methods, because WCF does not support implementing operations with polymorphic methods.  
   
--   Use the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to provide explicit values for the SOAPAction HTTP headers by which HTTP requests will be routed to methods.  
+- Use the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to provide explicit values for the SOAPAction HTTP headers by which HTTP requests will be routed to methods.  
   
     ```csharp  
     [WebMethod]  
@@ -49,7 +49,7 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
   
      Taking this approach will circumvent having to rely on the default SOAPAction values used by ASP.NET and WCF being the same.  
   
--   Avoid using SOAP extensions. If SOAP extensions are required, then determine whether the purpose for which they are being considered is a feature that is already provided by WCF. If that is indeed the case, then reconsider the choice to not adopt WCF right away.  
+- Avoid using SOAP extensions. If SOAP extensions are required, then determine whether the purpose for which they are being considered is a feature that is already provided by WCF. If that is indeed the case, then reconsider the choice to not adopt WCF right away.  
   
 ## State Management  
  Avoid having to maintain state in services. Not only does maintaining state tend to compromise the scalability of an application, but the state management mechanisms of ASP.NET and WCF are very different, although WCF does support the ASP.NET mechanisms in ASP.NET compatibility mode.  
@@ -59,20 +59,20 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
   
 ```csharp  
 [Serializable]  
-[XmlRoot(  
-     Namespace="ExplicitNamespace", IsNullable=true)]  
-    public partial class AnticipatedException {  
-  
-     private string anticipatedExceptionInformationField;  
-  
-     public string AnticipatedExceptionInformation {  
-      get {  
-          return this.anticipatedExceptionInformationField;  
-          }  
-      set {  
-          this.anticipatedExceptionInformationField = value;  
-          }  
-     }  
+[XmlRoot(Namespace="ExplicitNamespace", IsNullable=true)]  
+public partial class AnticipatedException 
+{ 
+    private string anticipatedExceptionInformationField;  
+
+    public string AnticipatedExceptionInformation 
+    {  
+        get {   
+            return this.anticipatedExceptionInformationField;  
+        }  
+        set {  
+            this.anticipatedExceptionInformationField = value;  
+        }  
+    }  
 }  
 ```  
   
@@ -98,7 +98,7 @@ public XmlNode ToXML()
  The classes can then be used to provide the details for explicitly thrown <xref:System.Web.Services.Protocols.SoapException> instances:  
   
 ```csharp  
-AnctipatedException exception = new AnticipatedException();  
+AnticipatedException exception = new AnticipatedException();  
 exception.AnticipatedExceptionInformation = "…";  
 throw new SoapException(  
      "Fault occurred",  
@@ -112,11 +112,12 @@ throw new SoapException(
 ## Security  
  The following are some security recommendations.  
   
--   Avoid using ASP.NET 2.0 Profiles, as using them would restrict the use of ASP.NET Integration Mode if the service was migrated to WCF.  
+- Avoid using ASP.NET 2.0 Profiles, as using them would restrict the use of ASP.NET Integration Mode if the service was migrated to WCF.  
   
--   Avoid using ACLs to control access to services, as ASP.NET Web services supports ACLs using Internet Information Services (IIS), WCF does not—because ASP.NET Web services depend on IIS for hosting, and WCF does not necessarily have to be hosted in IIS.  
+- Avoid using ACLs to control access to services, as ASP.NET Web services supports ACLs using Internet Information Services (IIS), WCF does not—because ASP.NET Web services depend on IIS for hosting, and WCF does not necessarily have to be hosted in IIS.  
   
--   Do consider using ASP.NET 2.0 Role Providers for authorizing access to the resources of a service.  
+- Do consider using ASP.NET 2.0 Role Providers for authorizing access to the resources of a service.  
   
 ## See also
+
 - [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)

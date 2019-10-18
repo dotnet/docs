@@ -10,12 +10,12 @@ ms.assetid: c29f8728-bfcb-4af7-9fbc-8169e180109f
 ---
 # Digital Ink How-to Topics
 ## In This Section  
- [Select Ink from a Custom Control](../../../../docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)  
-  [Add Custom Data to Ink Data](../../../../docs/framework/wpf/advanced/how-to-add-custom-data-to-ink-data.md)  
-  [Erase Ink on a Custom Control](../../../../docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md)  
-  [Recognize Application Gestures](../../../../docs/framework/wpf/advanced/how-to-recognize-application-gestures.md)  
-  [Drag and Drop Ink](../../../../docs/framework/wpf/advanced/how-to-drag-and-drop-ink.md)  
-  [Data Bind to an InkCanvas](../../../../docs/framework/wpf/advanced/how-to-data-bind-to-an-inkcanvas.md)  
-  [Analyze Ink with Analysis Hints](../../../../docs/framework/wpf/advanced/how-to-analyze-ink-with-analysis-hints.md)  
-  [Rotate Ink](../../../../docs/framework/wpf/advanced/how-to-rotate-ink.md)  
-  [Disable the RealTimeStylus for WPF Applications](../../../../docs/framework/wpf/advanced/disable-the-realtimestylus-for-wpf-applications.md)
+ [Select Ink from a Custom Control](how-to-select-ink-from-a-custom-control.md)  
+  [Add Custom Data to Ink Data](how-to-add-custom-data-to-ink-data.md)  
+  [Erase Ink on a Custom Control](how-to-erase-ink-on-a-custom-control.md)  
+  [Recognize Application Gestures](how-to-recognize-application-gestures.md)  
+  [Drag and Drop Ink](how-to-drag-and-drop-ink.md)  
+  [Data Bind to an InkCanvas](how-to-data-bind-to-an-inkcanvas.md)  
+  [Analyze Ink with Analysis Hints](how-to-analyze-ink-with-analysis-hints.md)  
+  [Rotate Ink](how-to-rotate-ink.md)  
+  [Disable the RealTimeStylus for WPF Applications](disable-the-realtimestylus-for-wpf-applications.md)

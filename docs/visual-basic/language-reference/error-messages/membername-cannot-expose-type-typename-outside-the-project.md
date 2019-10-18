@@ -13,7 +13,7 @@ A variable, procedure parameter, or function return is exposed outside its conta
   
  The following skeleton code shows a situation that generates this error.  
   
-```  
+```vb  
 Private Class privateClass  
 End Class  
 Public Class mainClass  
@@ -27,7 +27,8 @@ End Class
   
 ## To correct this error  
   
--   Change the access level of the variable, procedure parameter, or function return to be at least as restrictive as the access level of its data type.  
+- Change the access level of the variable, procedure parameter, or function return to be at least as restrictive as the access level of its data type.  
   
 ## See also
+
 - [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)

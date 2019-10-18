@@ -10,12 +10,10 @@ helpviewer_keywords:
   - "UI Automation, registering provider assemblies"
   - "provider assemblies, registering"
 ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Register a Client-Side Provider Assembly
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic shows how to register a DLL that contains client-side UI Automation providers.  
   
@@ -26,4 +24,5 @@ ms.author: "mhopkins"
  [!code-vb[UIAClientSideProvider_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClientSideProvider_snip/visualbasic/csclientprogram.vb#102)]  
   
 ## See also
-- [Create a Client-Side UI Automation Provider](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)
+
+- [Create a Client-Side UI Automation Provider](create-a-client-side-ui-automation-provider.md)

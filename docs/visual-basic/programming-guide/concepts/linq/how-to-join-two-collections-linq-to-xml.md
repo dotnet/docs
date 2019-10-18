@@ -81,7 +81,7 @@ End Class
   
  This code produces the following output:  
   
-```  
+```console
 Attempting to validate, custOrdDoc validated  
 <Root>  
   <Order>  
@@ -130,4 +130,5 @@ Attempting to validate, custOrdDoc validated
 ```  
   
 ## See also
+
 - [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

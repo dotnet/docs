@@ -23,7 +23,7 @@ Creates a strong name token from the specified assembly file, and returns the pu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameTokenFromAssemblyEx (  
     [in]  LPCWSTR   wszFilePath,  
     [out] BYTE      **ppbStrongNameToken,  
@@ -33,7 +33,7 @@ HRESULT StrongNameTokenFromAssemblyEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the portable executable (PE) file for the assembly.  
   
@@ -67,5 +67,6 @@ HRESULT StrongNameTokenFromAssemblyEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameTokenFromAssembly Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfromassembly-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

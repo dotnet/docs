@@ -27,21 +27,21 @@ ICalculatorChannel client1 = factory1.CreateChannel();
 
 #### To set up, build, and run the sample
 
-1.  Open Visual Studio 2012 with administrator privileges.
+1. Open Visual Studio 2012 with administrator privileges.
 
-2.  Right-click the ConfigurationChannelFactory solution (2 projects) and then select **Properties**.
+2. Right-click the ConfigurationChannelFactory solution (2 projects) and then select **Properties**.
 
-3.  In **Common Properties**, select **Startup Project**, and then click **Multiple startup projects**.
+3. In **Common Properties**, select **Startup Project**, and then click **Multiple startup projects**.
 
-4.  Move the **Service** project to the beginning of the list, with the **Action ‘Start’**, and then move the **Client** project after the **Service** project, also with the **Action ‘Start’**, so the **Client** project is executed after the **Service** project.
+4. Move the **Service** project to the beginning of the list, with the **Action ‘Start’**, and then move the **Client** project after the **Service** project, also with the **Action ‘Start’**, so the **Client** project is executed after the **Service** project.
 
-5.  Click **OK**, and then press F5 (or CTRL+F5) to run the sample.
+5. Click **OK**, and then press F5 (or CTRL+F5) to run the sample.
 
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigurationChannelFactory`
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\ConfigurationChannelFactory`

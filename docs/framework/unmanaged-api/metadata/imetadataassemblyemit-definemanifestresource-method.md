@@ -23,7 +23,7 @@ Creates a `ManifestResource` structure containing metadata for the specified man
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineManifestResource (  
     [in] LPCWSTR                szName,   
     [in] mdToken                tkImplementation,   
@@ -33,7 +33,7 @@ HRESULT DefineManifestResource (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the resource.  
   
@@ -62,4 +62,5 @@ HRESULT DefineManifestResource (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

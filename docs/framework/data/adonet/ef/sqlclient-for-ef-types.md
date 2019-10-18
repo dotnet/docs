@@ -6,7 +6,7 @@ ms.assetid: f2a95ead-c845-4e97-9fb3-04b444f7ed81
 # SqlClient for Entity FrameworkTypes
 The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest file includes the list of the provider primitive types, facets for each type, the mappings between the conceptual and storage model primitive types, and the promotion and conversion rules between the conceptual and storage model primitive types.  
   
- The following table describes types for SQL Server 2008, [!INCLUDE[ssVersion2005](../../../../../includes/ssversion2005-md.md)], and [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)] databases and how these types map to conceptual model types. Some new types were introduced in later versions of SQL Server are not supported in the older versions of SQL Server. These types are noted in the table below.  
+ The following table describes types for SQL Server 2008, SQL Server 2005, and SQL Server 2000 databases and how these types map to conceptual model types. Some new types were introduced in later versions of SQL Server are not supported in the older versions of SQL Server. These types are noted in the table below.  
   
 |Provider type<br /><br /> name|Provider type<br /><br /> attributes|`EDMSimpleType`<br /><br /> name|Facets|  
 |----------------------------|----------------------------------|------------------------------|------------|  
@@ -23,7 +23,7 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest fi
 |`money`|n/a|`Edm.Decimal`|Precision:<br /><br /> - Default: 19<br /><br /> - Constant: True<br /><br /> Scale:<br /><br /> - Default: 4<br /><br /> - Constant: True|  
 |`binary`|n/a|`Edm.Binary`|MaxLength:<br /><br /> - Minimum: 1<br /><br /> - Maximum: 8000<br /><br /> - Default: 8000<br /><br /> - Constant: False<br /><br /> FixedLength:<br /><br /> - Default: True<br /><br /> - Constant: True|  
 |`varbinary`|n/a|`Edm.Binary`|MaxLength:<br /><br /> - Minimum: 1<br /><br /> - Maximum: 8000<br /><br /> - Default: 8000<br /><br /> - Constant: False<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
-|`varbinary(max)`<br /><br /> Note: This type is not supported in [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)].|n/a|`Edm.Binary`|MaxLength:<br /><br /> - Default: 214748364780<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
+|`varbinary(max)`<br /><br /> Note: This type is not supported in SQL Server 2000.|n/a|`Edm.Binary`|MaxLength:<br /><br /> - Default: 214748364780<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
 |`image`|n/a|`Edm.Binary`|MaxLength:<br /><br /> - Default: 2147483647<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
 |`timestamp`|n/a|`Edm.Binary`|MaxLength:<br /><br /> - Default: 8<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: True<br /><br /> - Constant: True|  
 |`rowversion`|n/a|`Edm.Binary`|MaxLength:<br /><br /> - Default: 8<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: True<br /><br /> - Constant: True|  
@@ -33,8 +33,8 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest fi
 |`time`<br /><br /> Note: This type is not supported in SQL Server 2005 and SQL Server 2000.|n/a|`Edm.Time`|Precision:<br /><br /> - Default: 7<br /><br /> - Constant: False|  
 |`datetime2`<br /><br /> Note: This type is not supported in SQL Server 2005 and SQL Server 2000.|n/a|`Edm.DateTime`|Precision:<br /><br /> - Default: 7<br /><br /> - Constant: False|  
 |`datetimeoffset`<br /><br /> Note: This type is not supported in SQL Server 2005 and SQL Server 2000.|n/a|`Edm.DateTimeOffset`|Precision:<br /><br /> - Default: 7<br /><br /> - Constant: False|  
-|`nvarchar`<br /><br /> Note: This type is not supported in [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)].|n/a|`Edm.String`|MaxLength:<br /><br /> - Minimum: 1<br /><br /> - Maximum: 4000<br /><br /> - Default: 4000<br /><br /> - Constant: False<br /><br /> Unicode:<br /><br /> - Default: True<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
-|`varchar`<br /><br /> Note: This type is not supported in [!INCLUDE[ssVersion2000](../../../../../includes/ssversion2000-md.md)].|n/a|`Edm.String`|MaxLength:<br /><br /> - Minimum: 1<br /><br /> - Maximum: 8000<br /><br /> - Default: 8000<br /><br /> - Constant: False<br /><br /> Unicode:<br /><br /> - Default: False<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
+|`nvarchar`<br /><br /> Note: This type is not supported in SQL Server 2000.|n/a|`Edm.String`|MaxLength:<br /><br /> - Minimum: 1<br /><br /> - Maximum: 4000<br /><br /> - Default: 4000<br /><br /> - Constant: False<br /><br /> Unicode:<br /><br /> - Default: True<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
+|`varchar`<br /><br /> Note: This type is not supported in SQL Server 2000.|n/a|`Edm.String`|MaxLength:<br /><br /> - Minimum: 1<br /><br /> - Maximum: 8000<br /><br /> - Default: 8000<br /><br /> - Constant: False<br /><br /> Unicode:<br /><br /> - Default: False<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
 |`char`|n/a|`Edm.String`|MaxLength:<br /><br /> - Minimum: 1<br /><br /> - Maximum: 8000<br /><br /> - Default: 8000<br /><br /> - Constant: False<br /><br /> Unicode:<br /><br /> - Default: False<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: True<br /><br /> - Constant: True|  
 |`nchar`|n/a|`Edm.String`|MaxLength:<br /><br /> - Minimum: 1<br /><br /> - Maximum: 4000<br /><br /> - Default: 4000<br /><br /> - Constant: False<br /><br /> Unicode:<br /><br /> - Default: True<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: True<br /><br /> - Constant: True|  
 |`varchar`(`max`)|n/a|`Edm.String`|MaxLength:<br /><br /> - Default: 2147483647<br /><br /> - Constant: True<br /><br /> Unicode:<br /><br /> - Default: False<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
@@ -45,4 +45,5 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provider manifest fi
 |`xml`|Equal comparable: False<br /><br /> Order comparable: False|`Edm.String`|MaxLength:<br /><br /> - Default: 1073741823<br /><br /> - Constant: True<br /><br /> Unicode:<br /><br /> - Default: True<br /><br /> - Constant: True<br /><br /> FixedLength:<br /><br /> - Default: False<br /><br /> - Constant: True|  
   
 ## See also
-- [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+
+- [CSDL, SSDL, and MSL Specifications](./language-reference/csdl-ssdl-and-msl-specifications.md)

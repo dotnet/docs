@@ -14,8 +14,8 @@ ms.assetid: 2fe21d59-b444-4786-b68d-35d94e18ce0d
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides built-in support for multiple image formats, high fidelity image rendering, and codec extensibility.  
   
 ## In This Section  
- [Imaging Overview](../../../../docs/framework/wpf/graphics-multimedia/imaging-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/imaging-how-to-topics.md)  
+ [Imaging Overview](imaging-overview.md)  
+ [How-to Topics](imaging-how-to-topics.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Image>  
@@ -25,5 +25,6 @@ ms.assetid: 2fe21d59-b444-4786-b68d-35d94e18ce0d
  <xref:System.Windows.Media.Imaging.BitmapSource>  
   
 ## See also
-- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+
+- [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Graphics and Multimedia](index.md)

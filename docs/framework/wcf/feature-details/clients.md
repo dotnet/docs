@@ -20,4 +20,5 @@ The topics in this section cover the client architecture, how to access a Window
  Describes some security considerations for WCF clients.  
   
 ## See also
+
 - [Client Samples](../samples/client.md)

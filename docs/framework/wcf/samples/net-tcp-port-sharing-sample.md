@@ -7,13 +7,13 @@ ms.assetid: 03da5959-0574-4e91-8a53-05854b6c55dc
 The TCP/IP protocol uses a 16-bit number, called a port, to differentiate connections to multiple network applications running on the same machine. If an application is listening on a port, then all TCP traffic for that port goes to that application. Other applications cannot listen on that port at the same time.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\TCP\PortSharing`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\TCP\PortSharing`  
   
  Many protocols have a standard or default port number that they use. For example, the HTTP protocol typically uses TCP port 80. Internet Information Services (IIS) has a listener to share a port between multiple HTTP applications. IIS listens on the port directly and forwards messages to the appropriate application based on information inside the message stream. This allows multiple HTTP applications to use the same port number without having to compete to reserve the port for receiving messages.  
   
@@ -119,18 +119,16 @@ Press <ENTER> to terminate client.
   
 #### To set up, build, and run the sample  
   
-1.  Install [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install ASP.NET 4.0 using the following command.  
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3.  Enable the NetTcp Port Sharing Service as previously described in the introduction section.  
+3. Enable the NetTcp Port Sharing Service as previously described in the introduction section.  
   
-4.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+4. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-5.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md). Specific details for running this sample are included previously in the Running the Sample section.  
-  
-## See also
+5. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md). Specific details for running this sample are included previously in the Running the Sample section.  

@@ -14,7 +14,7 @@ The benefits of migrating WSE 3.0 Web services to Windows Communication Foundati
  Although there are many similar aspects between the WCF and ASP.NET or WSE 3.0 programming models, they are different. For details about the WCF programming model, see [Basic Programming Lifecycle](../../../../docs/framework/wcf/basic-programming-lifecycle.md).  
   
 > [!NOTE]
->  To migrate a WSE Web service to WCF the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool can be used to generate a client. That client however contains interfaces and classes that can be used as a starting point for a WCF service too. The interfaces that are generated have the <xref:System.ServiceModel.OperationContractAttribute> attribute applied to the members of the contract with the <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> property set to `*`. When a WSE client calls a Web service with this setting, the following exception is thrown: **Web.Services3.ResponseProcessingException: WSE910: An error happened during the processing of a response message, and you can find the error in the inner exception**. To mitigate this, set the <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> property of the <xref:System.ServiceModel.OperationContractAttribute> attribute to a non-`null` value, such as `http://Microsoft.WCF.Documentation/ResponseToOCAMethod`.  
+> To migrate a WSE Web service to WCF the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool can be used to generate a client. That client however contains interfaces and classes that can be used as a starting point for a WCF service too. The interfaces that are generated have the <xref:System.ServiceModel.OperationContractAttribute> attribute applied to the members of the contract with the <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> property set to `*`. When a WSE client calls a Web service with this setting, the following exception is thrown: **Web.Services3.ResponseProcessingException: WSE910: An error happened during the processing of a response message, and you can find the error in the inner exception**. To mitigate this, set the <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A> property of the <xref:System.ServiceModel.OperationContractAttribute> attribute to a non-`null` value, such as `http://Microsoft.WCF.Documentation/ResponseToOCAMethod`.  
   
 ## Security  
   
@@ -78,7 +78,7 @@ The benefits of migrating WSE 3.0 Web services to Windows Communication Foundati
  The programming model for creating a custom token manager is different in WCF than WSE 3.0. For details about how to create a custom token manager and the other components that are required for a custom security token, see [How to: Create a Custom Token](../../../../docs/framework/wcf/extending/how-to-create-a-custom-token.md).  
   
 > [!NOTE]
->  If you have created a custom `UsernameToken` security token manager, WCF provides an easier mechanism to specify the authentication logic than creating a custom security token manager. For more details, see [How to: Use a Custom User Name and Password Validator](../../../../docs/framework/wcf/feature-details/how-to-use-a-custom-user-name-and-password-validator.md).  
+> If you have created a custom `UsernameToken` security token manager, WCF provides an easier mechanism to specify the authentication logic than creating a custom security token manager. For more details, see [How to: Use a Custom User Name and Password Validator](../../../../docs/framework/wcf/feature-details/how-to-use-a-custom-user-name-and-password-validator.md).  
   
 ### WSE 3.0 Web services that use MTOM encoded SOAP messages  
  Like a WSE 3 application, a WCF application can specify the MTOM message encoding in configuration. To migrate this setting, add the [\<mtomMessageEncoding>](../../../../docs/framework/configure-apps/file-schema/wcf/mtommessageencoding.md) to the binding for the service. The following code example demonstrates how MTOM encoding is specified in WSE 3.0 for a service that is equivalent in WCF.  
@@ -117,6 +117,7 @@ The benefits of migrating WSE 3.0 Web services to Windows Communication Foundati
  The equivalent of a WSE 3.0 custom transport in WCF is a channel extension. For details about creating a channel extension, see [Extending the Channel Layer](../../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
   
 ## See also
+
 - [Basic Programming Lifecycle](../../../../docs/framework/wcf/basic-programming-lifecycle.md)
 - [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)
 - [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)

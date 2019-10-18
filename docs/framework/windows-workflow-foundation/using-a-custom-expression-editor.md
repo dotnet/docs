@@ -6,22 +6,22 @@ ms.assetid: 0901b58b-e037-44a8-8281-f6f54361cfca
 # Using a Custom Expression Editor
 A custom expression editor can be implemented to provide a richer or simpler expression editing experience. There are several scenarios in which you might want to use a custom expression editor:  
   
--   To provide support for IntelliSense and other rich editing features in a rehosted workflow designer. This functionality must be provided because the default Visual Studio expression editor cannot be used in rehosted applications.  
+- To provide support for IntelliSense and other rich editing features in a rehosted workflow designer. This functionality must be provided because the default Visual Studio expression editor cannot be used in rehosted applications.  
   
--   To simplify the expression editing experience for the business analyst users, so that they are not, for example, required to learn Visual Basic or deal with Visual Basic expressions.  
+- To simplify the expression editing experience for the business analyst users, so that they are not, for example, required to learn Visual Basic or deal with Visual Basic expressions.  
   
  Three basic steps are needed to implement a custom expression editor:  
   
-1.  Implement the <xref:System.Activities.Presentation.View.IExpressionEditorService> interface. This interface manages the creation and destruction of expression editors.  
+1. Implement the <xref:System.Activities.Presentation.View.IExpressionEditorService> interface. This interface manages the creation and destruction of expression editors.  
   
-2.  Implement the <xref:System.Activities.Presentation.View.IExpressionEditorInstance> interface. This interface implements the UI for expression editing UI.  
+2. Implement the <xref:System.Activities.Presentation.View.IExpressionEditorInstance> interface. This interface implements the UI for expression editing UI.  
   
-3.  Publish the <xref:System.Activities.Presentation.View.IExpressionEditorService> in your rehosted workflow application.  
+3. Publish the <xref:System.Activities.Presentation.View.IExpressionEditorService> in your rehosted workflow application.  
   
 ## Implementing a Custom Expression Editor in a Class Library  
  Here is a sample of code for a (proof of concept) `MyEditorService` class that implements the <xref:System.Activities.Presentation.View.IExpressionEditorService> interface is contained in a MyExpressionEditorService library project.  
   
-```  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Activities.Presentation.View;  
@@ -67,7 +67,7 @@ namespace MyExpressionEditorService
   
  Here is the code for a `MyExpressionEditorInstance` class that implements the <xref:System.Activities.Presentation.View.IExpressionEditorInstance> interface in a MyExpressionEditorService library project.  
   
-```  
+```csharp  
 using System;  
 using System.Activities.Presentation.View;  
 using System.Windows;  
@@ -216,9 +216,9 @@ namespace MyExpressionEditorService
 ```  
   
 ### Publishing a Custom Expression Editor in a WPF Project  
- Here is the code that shows how to rehost the designer in a [!INCLUDE[avalon2](../../../includes/avalon2-md.md)] application and how to create and publish the `MyEditorService` service. Before using this code, add a reference to the MyExpressionEditorService library project from the project that contains the avalon2 application.  
+ Here is the code that shows how to rehost the designer in a WPF application and how to create and publish the `MyEditorService` service. Before using this code, add a reference to the MyExpressionEditorService library project from the project that contains the avalon2 application.  
   
-```  
+```csharp  
 using System.Windows;  
 using System.Windows.Controls;  
 using System.Activities.Presentation;  
@@ -273,6 +273,7 @@ namespace WpfApplication1
  If you are using an **ExpressionTextBox** control in a custom activity designer, it is not necessary to create and destroy expression editors using the <xref:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor%2A> and <xref:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors%2A> methods of the <xref:System.Activities.Presentation.View.IExpressionEditorService> interface. The <xref:System.Activities.Presentation.View.ExpressionTextBox> class manages this for you.  
   
 ## See also
+
 - <xref:System.Activities.Presentation.View.IExpressionEditorService>
 - <xref:System.Activities.Presentation.View.IExpressionEditorInstance>
-- [Using the ExpressionTextBox in a Custom Activity Designer](../../../docs/framework/windows-workflow-foundation/samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)
+- [Using the ExpressionTextBox in a Custom Activity Designer](./samples/using-the-expressiontextbox-in-a-custom-activity-designer.md)

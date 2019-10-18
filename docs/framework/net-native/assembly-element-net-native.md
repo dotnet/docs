@@ -53,27 +53,27 @@ Applies runtime reflection policy to all the types in a specified assembly.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*policy_setting*|The setting to apply to this policy type for all types in the assembly. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md).|  
+|*policy_setting*|The setting to apply to this policy type for all types in the assembly. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Namespace>](../../../docs/framework/net-native/namespace-element-net-native.md)|Applies reflection policy to all types in a child namespace.|  
-|[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|Applies reflection policy to a type.|  
-|[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type.|  
+|[\<Namespace>](namespace-element-net-native.md)|Applies reflection policy to all types in a child namespace.|  
+|[\<Type>](type-element-net-native.md)|Applies reflection policy to a type.|  
+|[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Application>](../../../docs/framework/net-native/application-element-net-native.md)|Serves as a container for application-wide types and type members whose metadata is available for reflection at run time. The [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) element can have zero, one, or more `<Assembly>` elements.|  
-|[\<Library>](../../../docs/framework/net-native/library-element-net-native.md)|Defines the assembly that contains types and type members whose metadata is available for reflection at run time. The [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) element can have zero or one `<Assembly>` element.|  
+|[\<Application>](application-element-net-native.md)|Serves as a container for application-wide types and type members whose metadata is available for reflection at run time. The [\<Application>](application-element-net-native.md) element can have zero, one, or more `<Assembly>` elements.|  
+|[\<Library>](library-element-net-native.md)|Defines the assembly that contains types and type members whose metadata is available for reflection at run time. The [\<Library>](library-element-net-native.md) element can have zero or one `<Assembly>` element.|  
   
 ## Remarks  
- The `<Assembly>` element defines runtime policy for all the types in an assembly. It differs from the [\<Library>](../../../docs/framework/net-native/library-element-net-native.md) element, which specifies a library but depends on its child elements to define runtime reflection policy. The `<Assembly>` element applies to all the types in an assembly unless they are overridden by a child element.  
+ The `<Assembly>` element defines runtime policy for all the types in an assembly. It differs from the [\<Library>](library-element-net-native.md) element, which specifies a library but depends on its child elements to define runtime reflection policy. The `<Assembly>` element applies to all the types in an assembly unless they are overridden by a child element.  
   
- The following example shows how you can apply runtime policy to all the types in assemblies within your app package by assigning the `Name` attribute a value of "*Application\*". The `<Assembly>` element must be a child of the [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) element.  
+ The following example shows how you can apply runtime policy to all the types in assemblies within your app package by assigning the `Name` attribute a value of "*Application\*". The `<Assembly>` element must be a child of the [\<Application>](application-element-net-native.md) element.  
   
 ```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">   
@@ -86,6 +86,7 @@ Applies runtime reflection policy to all the types in a specified assembly.
  The `Activate`, `Browse`, `Dynamic`, and `Serialize` attributes are all optional. However, the `<Assembly>` element must contain at least one of these attributes.  
   
 ## See also
-- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
-- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+
+- [Runtime Directive Policy Settings](runtime-directive-policy-settings.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)

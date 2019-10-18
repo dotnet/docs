@@ -11,17 +11,17 @@ ms.author: "ronpet"
 # SignTool.exe (Sign Tool)
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 signtool [command] [options] [file_name | ...]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -33,10 +33,10 @@ signtool [command] [options] [file_name | ...]
   
 |Command|Description|  
 |-------------|-----------------|  
-|`catdb`|Adds a catalog file to, or removes it from, a catalog database. Catalog databases are used for automatic lookup of catalog files and are identified by GUID. For a list of the options supported by the `catdb` command, see [catdb Command Options](../../../docs/framework/tools/signtool-exe.md#catdb).|  
-|`sign`|Digitally signs files. Digital signatures protect files from tampering, and enable users to verify the signer based on a signing certificate. For a list of the options supported by the `sign` command, see [sign Command Options](../../../docs/framework/tools/signtool-exe.md#sign).|  
-|`Timestamp`|Time-stamps files. For a list of the options supported by the `TimeStamp` command, see [TimeStamp Command Options](../../../docs/framework/tools/signtool-exe.md#TimeStamp).|  
-|`Verify`|Verifies the digital signature of files by determining whether the signing certificate was issued by a trusted authority, whether the signing certificate has been revoked, and, optionally, whether the signing certificate is valid for a specific policy. For a list of the options supported by the `Verify` command, see [Verify Command Options](../../../docs/framework/tools/signtool-exe.md#Verify).|  
+|`catdb`|Adds a catalog file to, or removes it from, a catalog database. Catalog databases are used for automatic lookup of catalog files and are identified by GUID. For a list of the options supported by the `catdb` command, see [catdb Command Options](signtool-exe.md#catdb).|  
+|`sign`|Digitally signs files. Digital signatures protect files from tampering, and enable users to verify the signer based on a signing certificate. For a list of the options supported by the `sign` command, see [sign Command Options](signtool-exe.md#sign).|  
+|`Timestamp`|Time-stamps files. For a list of the options supported by the `TimeStamp` command, see [TimeStamp Command Options](signtool-exe.md#TimeStamp).|  
+|`Verify`|Verifies the digital signature of files by determining whether the signing certificate was issued by a trusted authority, whether the signing certificate has been revoked, and, optionally, whether the signing certificate is valid for a specific policy. For a list of the options supported by the `Verify` command, see [Verify Command Options](signtool-exe.md#Verify).|  
   
  The following options apply to all Sign Tool commands.  
   
@@ -145,64 +145,65 @@ signtool [command] [options] [file_name | ...]
 ## Examples  
  The following command adds the catalog file MyCatalogFileName.cat to the system component and driver database. The `/u` option generates a unique name if necessary to prevent replacing an existing catalog file named `MyCatalogFileName.cat`.  
   
-```  
+```console  
 signtool catdb /v /u MyCatalogFileName.cat  
 ```  
   
  The following command signs a file automatically by using the best certificate.  
   
-```  
+```console  
 signtool sign /a MyFile.exe  
 ```  
   
  The following command digitally signs a file by using a certificate stored in a password-protected PFX file.  
   
-```  
+```console  
 signtool sign /f MyCert.pfx /p MyPassword MyFile.exe  
 ```  
   
  The following command digitally signs and time-stamps a file. The certificate used to sign the file is stored in a PFX file.  
   
-```  
-signtool sign /f MyCert.pfx /t http://timestamp.verisign.com/scripts/timstamp.dll MyFile.exe  
+```console  
+signtool sign /f MyCert.pfx /t http://timestamp.digicert.com MyFile.exe  
 ```  
   
  The following command signs a file by using a certificate located in the `My` store that has a subject name of `My Company Certificate`.  
   
-```  
+```console  
 signtool sign /n "My Company Certificate" MyFile.exe  
 ```  
   
  The following command signs an ActiveX control and provides information that is displayed by Internet Explorer when the user is prompted to install the control.  
   
-```  
+```console  
 Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html MyControl.exe  
 ```  
   
  The following command time-stamps a file that has already been digitally signed.  
   
-```  
-signtool timestamp /t http://timestamp.verisign.com/scripts/timstamp.dll MyFile.exe  
+```console  
+signtool timestamp /t http://timestamp.digicert.com MyFile.exe  
 ```  
   
  The following command verifies that a file has been signed.  
   
-```  
+```console  
 signtool verify MyFile.exe  
 ```  
   
  The following command verifies a system file that may be signed in a catalog.  
   
-```  
+```console  
 signtool verify /a SystemFile.dll  
 ```  
   
  The following command verifies a system file that is signed in a catalog named `MyCatalog.cat`.  
   
-```  
+```console  
 signtool verify /c MyCatalog.cat SystemFile.dll  
 ```  
   
 ## See also
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

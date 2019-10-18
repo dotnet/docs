@@ -23,7 +23,7 @@ Creates a type definition for a common language runtime type, and gets a metadat
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineTypeDef (   
     [in]  LPCWSTR     szTypeDef,   
     [in]  DWORD       dwTypeDefFlags,   
@@ -33,7 +33,7 @@ HRESULT DefineTypeDef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szTypeDef`  
  [in] The name of the type in Unicode.  
   
@@ -66,5 +66,6 @@ HRESULT DefineTypeDef (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

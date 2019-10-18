@@ -2,29 +2,30 @@
 title: CreateClassEnumWmi function (Unmanaged API Reference)
 description: The CreateClassEnumWmi function returns an enumerator for all classes that satisfy specified criteria.
 ms.date: "11/06/2017"
-api_name: 
+api_name:
   - "CreateClassEnumWmi"
-api_location: 
+api_location:
   - "WMINet_Utils.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "CreateClassEnumWmi"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CreateClassEnumWmi function [.NET WMI and performance counters]"
-topic_type: 
+topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # CreateClassEnumWmi function
-Returns an enumerator for all classes that satisfy the specified selection criteria.  
+Returns an enumerator for all classes that satisfy the specified selection criteria.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-  
-## Syntax  
-  
-```  
+
+## Syntax
+
+```cpp
 HRESULT CreateClassEnumWmi (
    [in] BSTR                    strSuperclass,
    [in] long                    lFlags,
@@ -36,16 +37,16 @@ HRESULT CreateClassEnumWmi (
    [in] BSTR                    strUser,
    [in] BSTR                    strPassword,
    [in] BSTR                    strAuthority
-); 
-```  
+);
+```
 
 ## Parameters
 
-`strSuperclass`    
+`strSuperclass`\
 [in] If not `null` or blank, specifies the name of a parent class; the enumerator returns only subclasses of this class. If it is `null` or blank and `lFlags` is WBEM_FLAG_SHALLOW, returns only top-level classes (classes with no parent class). If it is `null` or blank and `lFlags` is `WBEM_FLAG_DEEP`, returns all classes in the namespace.
 
-`lFlags`   
-[in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code: 
+`lFlags`\
+[in] A combination of flags that affect the behavior of this function. The following values are defined in the *WbemCli.h* header file, or you can define them as constants in your code:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|
@@ -54,32 +55,32 @@ HRESULT CreateClassEnumWmi (
 | `WBEM_FLAG_SHALLOW` | 1 | The enumeration includes only pure instances of this class and excludes all instances of subclasses that supply properties not found in this class. |
 | `WBEM_FLAG_RETURN_IMMEDIATELY` | 0x10 | The flag causes a semisynchronous call. |
 | `WBEM_FLAG_FORWARD_ONLY` | 0x20 | The function returns a forward-only enumerator. Typically, forward-only enumerators are faster and use less memory than conventional enumerators, but they do not allow calls to [Clone](clone.md). |
-| `WBEM_FLAG_BIDIRECTIONAL` | 0 | WMI retains pointers to objects in the enumration until they are released. | 
+| `WBEM_FLAG_BIDIRECTIONAL` | 0 | WMI retains pointers to objects in the enumeration until they are released. |
 
 The recommended flags are `WBEM_FLAG_RETURN_IMMEDIATELY` and `WBEM_FLAG_FORWARD_ONLY` for best performance.
 
-`pCtx`  
-[in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that can be used by the provider that is providing the requested classes. 
+`pCtx`\
+[in] Typically, this value is `null`. Otherwise, it is a pointer to an [IWbemContext](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemcontext) instance that can be used by the provider that is providing the requested classes.
 
-`ppEnum`  
+`ppEnum`\
 [out] Receives the pointer to the enumerator.
 
-`authLevel`  
+`authLevel`\
 [in] The authorization level.
 
-`impLevel`
+`impLevel`\
 [in] The impersonation level.
 
-`pCurrentNamespace`   
+`pCurrentNamespace`\
 [in] A pointer to an [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object that represents the current namespace.
 
-`strUser`   
+`strUser`\
 [in] The user name. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strPassword`   
+`strPassword`\
 [in] The password. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`strAuthority`   
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
 ## Return value
@@ -96,19 +97,21 @@ The following values returned by this function are defined in the *WbemCli.h* he
 | `WBEM_E_SHUTTING_DOWN` | 0x80041033 | WMI was probably stopped and restarting. Call [ConnectServerWmi](connectserverwmi.md) again. |
 | `WBEM_E_TRANSPORT_FAILURE` | 0x80041015 | The remote procedure call (RPC) link between the current process and WMI has failed. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
-  
+
 ## Remarks
 
 This function wraps a call to the [IWbemServices::CreateClassEnum](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemservices-createclassenum) method.
 
 If the function call fails, you can obtain additional error information by calling the [GetErrorInfo](geterrorinfo.md) function.
 
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
+## Requirements
+
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+**Header:** WMINet_Utils.idl
+
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

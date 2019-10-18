@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <CompanyName>Great Lakes Food Market</CompanyName>  
 <ContactName>Howard Snyder</ContactName>  
@@ -50,4 +50,5 @@ Results are identical
 ```  
   
 ## See also
+
 - [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

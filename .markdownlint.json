@@ -1,0 +1,46 @@
+{
+    "default": true,
+    "MD001": false,
+    "MD004": false,
+    "MD009": false,
+    "MD013": false,
+    "MD022": false,
+    "MD024": false,
+    "MD025": {
+        "front_matter_title": ""
+    },
+    "MD026": false,
+    "MD028": false,
+    "MD033": {
+        "allowed_elements": [
+            "a",
+            "blockquote",
+            "br",
+            "code",
+            "em",
+            "h4",
+            "kbd",
+            "li",
+            "ol",
+            "p",
+            "pre",
+            "strong",
+            "sup",
+            "table",
+            "tbody",
+            "td",
+            "th",
+            "thead",
+            "tr",
+            "u",
+            "ul"
+        ]
+    },
+    "MD034": false,
+    "MD036": false,
+    "MD040": false,
+    "MD041": false,
+    "MD046": {
+        "style": "fenced"
+    }
+}

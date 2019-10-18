@@ -6,11 +6,12 @@ ms.assetid: 304c70fa-78d1-4d0f-b89f-0ca23d734c6f
 # \<workflowRuntime>
 Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<workflowRuntime>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowRuntime>**  
   
 ## Syntax  
   
@@ -52,7 +53,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
  For more information on using a configuration file to control the behavior of a <xref:System.Workflow.Runtime.WorkflowRuntime> object of a Windows Workflow Foundation host application, see [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).  
@@ -78,6 +79,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>
 - <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>
 - <xref:System.Workflow.Runtime.WorkflowRuntime>

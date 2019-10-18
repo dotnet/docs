@@ -23,13 +23,13 @@ Gets an interface pointer of type [ICLRControl Interface](../../../../docs/frame
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCLRControl(  
     [out] ICLRControl** pCLRControl  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCLRControl`  
  [out] An interface pointer of type [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md) that enables hosts to configure additional aspects of the CLR.  
   
@@ -58,5 +58,6 @@ HRESULT GetCLRControl(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)

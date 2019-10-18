@@ -15,35 +15,33 @@ Visual Studio generates an interop assembly containing metadata when you add a r
   
 ### To add a reference to a type library in Visual Studio  
   
-1.  Install the COM DLL or EXE file on your computer, unless a Windows Setup.exe file performs the installation for you.  
+1. Install the COM DLL or EXE file on your computer, unless a Windows Setup.exe file performs the installation for you.  
   
-2.  Choose **Project**, **Add Reference**.  
+2. Choose **Project**, **Add Reference**.  
   
-3.  In the Reference Manager, choose **COM**.  
+3. In the Reference Manager, choose **COM**.  
   
-4.  Select the type library from the list, or browse for the .tlb file.  
+4. Select the type library from the list, or browse for the .tlb file.  
   
-5.  Choose **OK**.  
+5. Choose **OK**.  
   
-6.  In Solution Explorer, open the shortcut menu for the reference you just added, and then choose **Properties**.  
+6. In Solution Explorer, open the shortcut menu for the reference you just added, and then choose **Properties**.  
   
-7.  In the **Properties** window, make sure that the **Embed Interop Types** property is set to **True**. This causes Visual Studio to embed type information for COM types in your executables, eliminating the need to deploy primary interop assemblies with your app.  
+7. In the **Properties** window, make sure that the **Embed Interop Types** property is set to **True**. This causes Visual Studio to embed type information for COM types in your executables, eliminating the need to deploy primary interop assemblies with your app.  
   
 > [!NOTE]
->  The menu and dialog box options may vary depending on the version of Visual Studio you're using.  
+> The menu and dialog box options may vary depending on the version of Visual Studio you're using.  
   
 ### To add a reference to a type library for command-line compilation  
   
-1.  Generate an interop assembly as described in [How to: Generate Interop Assemblies from Type Libraries](how-to-generate-interop-assemblies-from-type-libraries.md).  
+1. Generate an interop assembly as described in [How to: Generate Interop Assemblies from Type Libraries](how-to-generate-interop-assemblies-from-type-libraries.md).  
   
-2.  Use the [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md) or [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
+2. Use the [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md) or [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
   
 ## See also
+
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (C#)](../../csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies.md)
-- [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio (Visual Basic)](../../visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md)
-- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (C#)](/docs/csharp/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md) 
-- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio (Visual Basic)](/docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-vs.md)
-- [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
-- [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
+- [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](../../standard/assembly/embed-types-visual-studio.md) 
+- [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
+- [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)

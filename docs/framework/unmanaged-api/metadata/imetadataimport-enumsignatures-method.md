@@ -23,7 +23,7 @@ Enumerates Signature tokens representing stand-alone signatures in the current s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumSignatures (  
    [in, out] HCORENUM     *phEnum,  
    [out]     mdSignature  rSignatures[],  
@@ -32,7 +32,7 @@ HRESULT EnumSignatures (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be NULL for the first call of this method.  
   
@@ -65,5 +65,6 @@ HRESULT EnumSignatures (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

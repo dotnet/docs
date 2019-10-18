@@ -22,7 +22,7 @@ Specifies the properties of a module.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     COR_PRF_MODULE_DISK             = 0x00000001,  
@@ -60,4 +60,5 @@ typedef enum
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)

@@ -9,7 +9,7 @@ ms.author: "mairaw"
 # Result Tree Fragment in Transformations
 
 > [!NOTE]
-> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](migrating-from-the-xsltransform-class.md) for more information.
+> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](migrating-from-the-xsltransform-class.md) for more information.
 
  Result tree fragments, also known as result tree fragments, are nothing more than a special type of node set. You can perform any function on them that can be performed on a node set. Or, you can also convert a result tree fragment to a node set using the `node-set()` function and subsequently use it any place that a node set can be used.
 
@@ -188,7 +188,6 @@ The following is the result of transforming XML with this style sheet:
 
 ## See also
 
-- <xref:System.Xml.XPath.XPathNodeIterator>
 - <xref:System.Xml.XPath.XPathNodeIterator>
 - [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)
 - [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)

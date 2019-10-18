@@ -8,9 +8,10 @@ A registry key cannot be found.
   
 ## To correct this error  
   
-1.  Check the spelling of the key name.  
+1. Check the spelling of the key name.  
   
-2.  Make sure that you have sufficient security permissions to access the key.  
+2. Make sure that you have sufficient security permissions to access the key.  
   
 ## See also
+
 - [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)

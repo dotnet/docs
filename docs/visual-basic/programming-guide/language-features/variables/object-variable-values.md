@@ -31,7 +31,7 @@ A variable of the [Object Data Type](../../../../visual-basic/language-reference
   
  The following example uses `TypeOf` on object variables referring to value and reference types.  
   
-```  
+```vb  
 ' The following statement puts a value type (Integer) in an Object variable.  
 Dim num As Object = 10  
 ' The following statement puts a reference type (Form) in an Object variable.  
@@ -61,6 +61,7 @@ If TypeOf frm Is Object Then Debug.WriteLine("frm is Object")
  You can declare and use an array of `Object` variables. This is useful when you need to handle a variety of data types and object classes. All the elements in an array must have the same declared data type. Declaring this data type as `Object` allows you to store objects and class instances alongside other data types in the array.  
   
 ## See also
+
 - [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
 - [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)
 - [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)

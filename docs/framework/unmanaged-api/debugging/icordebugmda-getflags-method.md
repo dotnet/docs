@@ -23,13 +23,13 @@ Gets the flags associated with the managed debugging assistant (MDA) represented
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFlags (  
     [in] CorDebugMDAFlags *pFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFlags`  
  [in] A bitwise combination of the [CorDebugMDAFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugmdaflags-enumeration.md) enumeration values that specify the settings of the flags for this MDA.  
   
@@ -43,5 +43,6 @@ HRESULT GetFlags (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorDebugMDA Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmda-interface.md)
 - [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

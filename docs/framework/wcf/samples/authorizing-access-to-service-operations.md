@@ -13,7 +13,7 @@ This sample demonstrates how to use the [\<serviceAuthorization>](../../../../do
  In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The service configuration file uses the [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to set the `principalPermissionMode` attribute:  
   
@@ -51,10 +51,8 @@ public double Add(double n1, double n2)
   
 ### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
-  
-## See also
+3. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  

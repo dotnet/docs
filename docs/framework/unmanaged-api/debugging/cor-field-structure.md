@@ -22,7 +22,7 @@ Provides information about a field in an object.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_FIELD{  
     mdFieldDef token;  
     ULONG32 offset;  
@@ -37,13 +37,13 @@ typedef struct COR_FIELD{
 |------------|-----------------|  
 |`token`|An `mdFieldDef` token that can be used to get field information.|  
 |`offset`|The offset, in bytes, to the field data in the object.|  
-|`id`|A [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) value that identifies the type of this field.|  
+|`id`|A [COR_TYPEID](cor-typeid-structure.md) value that identifies the type of this field.|  
 |`fieldType`|A CorElementType enumeration value that indicates the type of the field.|  
   
 ## Remarks  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -52,5 +52,6 @@ typedef struct COR_FIELD{
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

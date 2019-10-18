@@ -5,6 +5,7 @@ api_name:
   - "CoInitializeCor"
 api_location: 
   - "mscoree.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -22,7 +23,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI CoInitializeCor (  
     DWORD fFlags  
 );  
@@ -35,4 +36,5 @@ STDAPI CoInitializeCor (
  **Header:** Cor.h  
   
 ## See also
+
 - [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)

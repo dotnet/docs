@@ -23,13 +23,13 @@ Notifies the profiler that an application domain has been unloaded from a proces
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AppDomainShutdownFinished(  
     [in] AppDomainID appDomainId,  
     [in] HRESULT     hrStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `appDomainId`  
  [in] Identifies the domain in which the application's assemblies are stored.  
   
@@ -51,4 +51,5 @@ HRESULT AppDomainShutdownFinished(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

@@ -23,7 +23,7 @@ Notifies the debugger that a step has completed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StepComplete (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugThread     *pThread,  
@@ -32,7 +32,7 @@ HRESULT StepComplete (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the thread in which the step has completed.  
   
@@ -58,4 +58,5 @@ HRESULT StepComplete (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

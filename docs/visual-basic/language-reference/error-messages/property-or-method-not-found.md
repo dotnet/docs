@@ -10,7 +10,8 @@ The referenced object method or object property is not defined.
   
 ## To correct this error  
   
--   You may have misspelled the name of the object. To see what properties and methods are defined for an object, display the Object Browser. Select the appropriate object library to view a list of available properties and methods.  
+- You may have misspelled the name of the object. To see what properties and methods are defined for an object, display the Object Browser. Select the appropriate object library to view a list of available properties and methods.  
   
 ## See also
+
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)

@@ -10,7 +10,8 @@ Either you tried to call the `Friend` procedure of a class, or you tried to acce
   
 ## To correct this error  
   
--   Ensure that you are calling or accessing the procedure from a module that is part of the project in which the class is defined.  
+- Ensure that you are calling or accessing the procedure from a module that is part of the project in which the class is defined.  
   
 ## See also
+
 - [Friend](../../visual-basic/language-reference/modifiers/friend.md)

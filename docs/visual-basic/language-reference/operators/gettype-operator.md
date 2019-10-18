@@ -13,11 +13,11 @@ Returns a <xref:System.Type> object for the specified type. The <xref:System.Typ
   
 ## Syntax  
   
-```  
+```vb  
 GetType(typename)  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---|---|  
@@ -26,32 +26,33 @@ GetType(typename)
 ## Remarks  
  The `GetType` operator returns the <xref:System.Type> object for the specified `typename`. You can pass the name of any defined type in `typename`. This includes the following:  
   
--   Any Visual Basic data type, such as `Boolean` or `Date`.  
+- Any Visual Basic data type, such as `Boolean` or `Date`.  
   
--   Any .NET Framework class, structure, module, or interface, such as <xref:System.ArgumentException?displayProperty=nameWithType> or <xref:System.Double?displayProperty=nameWithType>.  
+- Any .NET Framework class, structure, module, or interface, such as <xref:System.ArgumentException?displayProperty=nameWithType> or <xref:System.Double?displayProperty=nameWithType>.  
   
--   Any class, structure, module, or interface defined by your application.  
+- Any class, structure, module, or interface defined by your application.  
   
--   Any array defined by your application.  
+- Any array defined by your application.  
   
--   Any delegate defined by your application.  
+- Any delegate defined by your application.  
   
--   Any enumeration defined by Visual Basic, the .NET Framework, or your application.  
+- Any enumeration defined by Visual Basic, the .NET Framework, or your application.  
   
  If you want to get the type object of an object variable, use the <xref:System.Type.GetType%2A?displayProperty=nameWithType> method.  
   
  The `GetType` operator can be useful in the following circumstances:  
   
--   You must access the metadata for a type at run time. The <xref:System.Type> object supplies metadata such as type members and deployment information. You need this, for example, to reflect over an assembly. For more information, see <xref:System.Reflection?displayProperty=nameWithType>.  
+- You must access the metadata for a type at run time. The <xref:System.Type> object supplies metadata such as type members and deployment information. You need this, for example, to reflect over an assembly. For more information, see <xref:System.Reflection?displayProperty=nameWithType>.  
   
--   You want to compare two object references to see if they refer to instances of the same type. If they do, `GetType` returns references to the same <xref:System.Type> object.  
+- You want to compare two object references to see if they refer to instances of the same type. If they do, `GetType` returns references to the same <xref:System.Type> object.  
   
 ## Example  
  The following examples show the `GetType` operator in use.  
   
- [!code-vb[VbVbalrOperators#26](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/gettype-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#26)]  
   
 ## See also
+
 - [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)
 - [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)
 - [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)

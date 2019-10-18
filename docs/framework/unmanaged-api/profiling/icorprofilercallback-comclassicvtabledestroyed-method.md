@@ -22,19 +22,19 @@ ms.author: "mairaw"
 Notifies the profiler that a COM interop vtable is being destroyed.  
   
 > [!NOTE]
->  This callback is likely never to occur, because the destruction of vtables occurs very close to shutdown.  
+> This callback is likely never to occur, because the destruction of vtables occurs very close to shutdown.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT COMClassicVTableDestroyed(  
     [in] ClassID wrappedClassId,  
     [in] REFGUID implementedIID,  
     [in] void    *pVTable);  
 ```  
   
-#### Parameters  
- `wrappedClasId`  
+## Parameters  
+ `wrappedClassId`  
  [in] The ID of the class for which this vtable was created.  
   
  `implementedIID`  
@@ -58,5 +58,6 @@ HRESULT COMClassicVTableDestroyed(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [COMClassicVTableCreated Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-comclassicvtablecreated-method.md)

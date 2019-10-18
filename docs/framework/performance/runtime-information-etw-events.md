@@ -11,7 +11,7 @@ ms.author: "mairaw"
 # Runtime Information ETW Events
 These ETW events log information about the runtime, including the SKU, version number, the manner in which the runtime was activated, the command-line parameters it was started with, the GUID (if applicable), and other relevant information. If multiple runtimes are executing within a process, the information provided by these events (the ClrInstanceID) helps disambiguate the runtimes.  
   
- The following table shows the two runtime information events. The events can be raised under any keyword or mask. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+ The following table shows the two runtime information events. The events can be raised under any keyword or mask. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Event|Event ID|Provider|Description|  
 |-----------|--------------|--------------|-----------------|  
@@ -39,4 +39,5 @@ These ETW events log information about the runtime, including the SKU, version n
 |RuntimeDLLPath|win:UnicodeString|Path to the CLR .dll file that was loaded into the process.|  
   
 ## See also
-- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+
+- [CLR ETW Events](clr-etw-events.md)

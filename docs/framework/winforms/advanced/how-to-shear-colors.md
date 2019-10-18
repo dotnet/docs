@@ -15,9 +15,9 @@ Shearing increases or decreases a color component by an amount proportional to a
 ## Example  
  The following example constructs an <xref:System.Drawing.Image> object from the file ColorBars4.bmp. Then the code applies the shearing transformation described in the preceding paragraph to each pixel in the image.  
   
- The following illustration shows the original image on the left and the sheared image on the right.  
+ The following illustration shows the original image on the left and the sheared image on the right: 
   
- ![Shear Colors](../../../../docs/framework/winforms/advanced/media/colortrans6.png "colortrans6")  
+ ![Two squares with colored stripes side-by-side illustrating the original image and the sheared image.](./media/how-to-shear-colors/original-image-sheared-image.png)  
   
  The following table lists the color vectors for the four bars before and after the shearing transformation.  
   
@@ -28,14 +28,15 @@ Shearing increases or decreases a color component by an amount proportional to a
 |(1, 1, 0, 1)|(1, 1, 0, 1)|  
 |(0.4, 0.4, 0.4, 1)|(0.6, 0.4, 0.4, 1)|  
   
- [!code-csharp[System.Drawing.Misc3#9](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#9)]
- [!code-vb[System.Drawing.Misc3#9](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#9)]  
+ [!code-csharp[System.Drawing.Misc3#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Misc3/CS/Form1.cs#9)]
+ [!code-vb[System.Drawing.Misc3#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Misc3/VB/Form1.vb#9)]  
   
 ## Compiling the Code  
- The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `ColorBars.bmp` with an image name and path valid on your system.  
+ The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `ColorBars.bmp` with an image name and path valid on your system.  
   
 ## See also
+
 - <xref:System.Drawing.Imaging.ColorMatrix>
 - <xref:System.Drawing.Imaging.ImageAttributes>
-- [Graphics and Drawing in Windows Forms](../../../../docs/framework/winforms/advanced/graphics-and-drawing-in-windows-forms.md)
-- [Recoloring Images](../../../../docs/framework/winforms/advanced/recoloring-images.md)
+- [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)
+- [Recoloring Images](recoloring-images.md)

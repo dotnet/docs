@@ -29,16 +29,16 @@ Provides the [GetRequestedRuntime](../../../../docs/framework/unmanaged-api/host
 ## Remarks  
  You can get a reference to this interface by calling the [CLRCreateInstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md) function as shown in the following code:  
   
-```  
+```cpp  
 ICLRMetaHostPolicy *pMetaHostPolicy = NULL;  
 HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHostPolicy,  
                    IID_ICLRMetaHostPolicy, (LPVOID*)&pMetaHostPolicy);  
 ```  
   
 > [!NOTE]
->  This interface does not actually load or activate the CLR, but simply returns the preferred CLR version based on the available versions that are installed or loaded.  
+> This interface does not actually load or activate the CLR, but simply returns the preferred CLR version based on the available versions that are installed or loaded.  
   
- The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] hosting API consolidates policies so that hosts with specific needs may use basic functionality without incurring unintended penalties. For example, many of the MSCorEE.dll exports will bind to a specific CLR, although a method might not logically require it. The [METAHOST_POLICY_FLAGS](../../../../docs/framework/unmanaged-api/hosting/metahost-policy-flags-enumeration.md) enumeration provides binding policies that are common to the majority of hosts.  
+ The .NET Framework 4 hosting API consolidates policies so that hosts with specific needs may use basic functionality without incurring unintended penalties. For example, many of the MSCorEE.dll exports will bind to a specific CLR, although a method might not logically require it. The [METAHOST_POLICY_FLAGS](../../../../docs/framework/unmanaged-api/hosting/metahost-policy-flags-enumeration.md) enumeration provides binding policies that are common to the majority of hosts.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -50,6 +50,7 @@ HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHostPolicy,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

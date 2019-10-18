@@ -22,7 +22,7 @@ Contains information about an object that is to be garbage-collected.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_GC_REFERENCE {  
     ICorDebugAppDomain *domain;   
     ICorDebugValue *location;  
@@ -37,28 +37,28 @@ typedef struct _COR_GC_REFERENCE {
 |------------|-----------------|  
 |`domain`|A pointer to the application domain to which the handle or object belongs. Its value may be `null`.|  
 |`location`|Either an ICorDebugValue or an ICorDebugReferenceValue interface that corresponds to the object to be garbage-collected.|  
-|`type`|A [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) enumeration value that indicates where the root came from. For more information, see the Remarks section.|  
+|`type`|A [CorGCReferenceType](corgcreferencetype-enumeration.md) enumeration value that indicates where the root came from. For more information, see the Remarks section.|  
 |`extraData`|Additional data about the object to be garbage-collected. This information depends on the source of the object, as indicated by the `type` field. For more information, see the Remarks section.|  
   
 ## Remarks  
- The `type` field is a [CorGCReferenceType](../../../../docs/framework/unmanaged-api/debugging/corgcreferencetype-enumeration.md) enumeration value that indicates where the reference came from. A particular `COR_GC_REFERENCE` value can reflect any of the following kinds of managed objects:  
+ The `type` field is a [CorGCReferenceType](corgcreferencetype-enumeration.md) enumeration value that indicates where the reference came from. A particular `COR_GC_REFERENCE` value can reflect any of the following kinds of managed objects:  
   
--   Objects from all managed stacks (`CorGCReferenceType.CorReferenceStack`). This includes live references in managed code, as well as objects created by the common language runtime.  
+- Objects from all managed stacks (`CorGCReferenceType.CorReferenceStack`). This includes live references in managed code, as well as objects created by the common language runtime.  
   
--   Objects from the handle table (`CorGCReferenceType.CorHandle*`). This includes strong references (`HNDTYPE_STRONG` and `HNDTYPE_REFCOUNT`) and static variables in a module.  
+- Objects from the handle table (`CorGCReferenceType.CorHandle*`). This includes strong references (`HNDTYPE_STRONG` and `HNDTYPE_REFCOUNT`) and static variables in a module.  
   
--   Objects from the finalizer queue (`CorGCReferenceType.CorReferenceFinalizer`). The finalizer queue roots objects until the finalizer has run.  
+- Objects from the finalizer queue (`CorGCReferenceType.CorReferenceFinalizer`). The finalizer queue roots objects until the finalizer has run.  
   
  The `extraData` field contains extra data depending on the source (or type) of the reference. Possible values are:  
   
--   `DependentSource`. If the `type` is `CorGCREferenceType.CorHandleStrongDependent`, this field is the object that, if alive, roots the object to be garbage-collected at `COR_GC_REFERENCE.Location`.  
+- `DependentSource`. If the `type` is `CorGCREferenceType.CorHandleStrongDependent`, this field is the object that, if alive, roots the object to be garbage-collected at `COR_GC_REFERENCE.Location`.  
   
--   `RefCount`. If the `type` is `CorGCREferenceType.CorHandleStrongRefCount`, this field is the reference count of the handle.  
+- `RefCount`. If the `type` is `CorGCREferenceType.CorHandleStrongRefCount`, this field is the reference count of the handle.  
   
--   `Size`. If the `type` is `CorGCREferenceType.CorHandleStrongSizedByref`, this field is the last size of the object tree for which the garbage collector calculated the object roots. Note that this calculation is not necessarily up to date.  
+- `Size`. If the `type` is `CorGCREferenceType.CorHandleStrongSizedByref`, this field is the last size of the object tree for which the garbage collector calculated the object roots. Note that this calculation is not necessarily up to date.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -67,5 +67,6 @@ typedef struct _COR_GC_REFERENCE {
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

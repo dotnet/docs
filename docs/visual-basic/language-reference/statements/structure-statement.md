@@ -18,7 +18,7 @@ Declares the name of a structure and introduces the definition of the variables,
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Partial ] _  
 Structure name [ ( Of typelist ) ]  
     [ Implements interfacenames ]  
@@ -55,31 +55,31 @@ End Structure
   
 ## Rules  
   
--   **Nesting.** You can define one structure within another. The outer structure is called the *containing structure*, and the inner structure is called a *nested structure*. However, you cannot access a nested structure's members through the containing structure. Instead, you must declare a variable of the nested structure's data type.  
+- **Nesting.** You can define one structure within another. The outer structure is called the *containing structure*, and the inner structure is called a *nested structure*. However, you cannot access a nested structure's members through the containing structure. Instead, you must declare a variable of the nested structure's data type.  
   
--   **Member Declaration.** You must declare every member of a structure. A structure member cannot be [Protected](../../../visual-basic/language-reference/modifiers/protected.md) or `Protected Friend` because nothing can inherit from a structure. The structure itself, however, can be `Protected` or `Protected Friend`.  
+- **Member Declaration.** You must declare every member of a structure. A structure member cannot be [Protected](../../../visual-basic/language-reference/modifiers/protected.md) or `Protected Friend` because nothing can inherit from a structure. The structure itself, however, can be `Protected` or `Protected Friend`.  
   
      You can declare zero or more nonshared variables or nonshared, noncustom events in a structure. You cannot have only constants, properties, and procedures, even if some of them are nonshared.  
   
--   **Initialization.** You cannot initialize the value of any nonshared data member of a structure as part of its declaration. You must either initialize such a data member by means of a parameterized constructor on the structure, or assign a value to the member after you have created an instance of the structure.  
+- **Initialization.** You cannot initialize the value of any nonshared data member of a structure as part of its declaration. You must either initialize such a data member by means of a parameterized constructor on the structure, or assign a value to the member after you have created an instance of the structure.  
   
--   **Inheritance.** A structure cannot inherit from any type other than <xref:System.ValueType>, from which all structures inherit. In particular, one structure cannot inherit from another.  
+- **Inheritance.** A structure cannot inherit from any type other than <xref:System.ValueType>, from which all structures inherit. In particular, one structure cannot inherit from another.  
   
      You cannot use the [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md) in a structure definition, even to specify <xref:System.ValueType>.  
   
--   **Implementation.** If the structure uses the [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md), you must implement every member defined by every interface you specify in `interfacenames`.  
+- **Implementation.** If the structure uses the [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md), you must implement every member defined by every interface you specify in `interfacenames`.  
   
--   **Default Property.** A structure can specify at most one property as its *default property*, using the [Default](../../../visual-basic/language-reference/modifiers/default.md) modifier. For more information, see [Default](../../../visual-basic/language-reference/modifiers/default.md).  
+- **Default Property.** A structure can specify at most one property as its *default property*, using the [Default](../../../visual-basic/language-reference/modifiers/default.md) modifier. For more information, see [Default](../../../visual-basic/language-reference/modifiers/default.md).  
   
 ## Behavior  
   
--   **Access Level.** Within a structure, you can declare each member with its own access level. All structure members default to [Public](../../../visual-basic/language-reference/modifiers/public.md) access. Note that if the structure itself has a more restricted access level, this automatically restricts access to its members, even if you adjust their access levels with the access modifiers.  
+- **Access Level.** Within a structure, you can declare each member with its own access level. All structure members default to [Public](../../../visual-basic/language-reference/modifiers/public.md) access. Note that if the structure itself has a more restricted access level, this automatically restricts access to its members, even if you adjust their access levels with the access modifiers.  
   
--   **Scope.** A structure is in scope throughout its containing namespace, class, structure, or module.  
+- **Scope.** A structure is in scope throughout its containing namespace, class, structure, or module.  
   
      The scope of every structure member is the entire structure.  
   
--   **Lifetime.** A structure does not itself have a lifetime. Rather, each instance of that structure has a lifetime independent of all other instances.  
+- **Lifetime.** A structure does not itself have a lifetime. Rather, each instance of that structure has a lifetime independent of all other instances.  
   
      The lifetime of an instance begins when it is created by a [New Operator](../../../visual-basic/language-reference/operators/new-operator.md) clause. It ends when the lifetime of the variable that holds it ends.  
   
@@ -87,18 +87,19 @@ End Structure
   
      Structure members have lifetimes depending on how and where they are declared. For more information, see "Lifetime" in [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md).  
   
--   **Qualification.** Code outside a structure must qualify a member's name with the name of that structure.  
+- **Qualification.** Code outside a structure must qualify a member's name with the name of that structure.  
   
      If code inside a nested structure makes an unqualified reference to a programming element, Visual Basic searches for the element first in the nested structure, then in its containing structure, and so on out to the outermost containing element. For more information, see [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
   
--   **Memory Consumption.** As with all composite data types, you cannot safely calculate the total memory consumption of a structure by adding together the nominal storage allocations of its members. Furthermore, you cannot safely assume that the order of storage in memory is the same as your order of declaration. If you need to control the storage layout of a structure, you can apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to the `Structure` statement.  
+- **Memory Consumption.** As with all composite data types, you cannot safely calculate the total memory consumption of a structure by adding together the nominal storage allocations of its members. Furthermore, you cannot safely assume that the order of storage in memory is the same as your order of declaration. If you need to control the storage layout of a structure, you can apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to the `Structure` statement.  
   
 ## Example  
  The following example uses the `Structure` statement to define a set of related data for an employee. It shows the use of `Public`, `Friend`, and `Private` members to reflect the sensitivity of the data items. It also shows procedure, property, and event members.  
   
- [!code-vb[VbVbalrStatements#57](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/structure-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#57)]  
   
 ## See also
+
 - [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [Module Statement](../../../visual-basic/language-reference/statements/module-statement.md)

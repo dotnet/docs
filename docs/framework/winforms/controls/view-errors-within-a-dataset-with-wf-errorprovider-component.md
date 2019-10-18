@@ -14,11 +14,11 @@ ms.assetid: cbae023f-d651-4210-bdea-bcc5f037e321
 You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> component to view column errors within a dataset or other data source. For an <xref:System.Windows.Forms.ErrorProvider> component to display data errors on a form, it does not have to be directly associated with a control. Once it is bound to a data source, it can display an error icon next to any control that is bound to the same data source.  
   
 > [!NOTE]
->  If you change the error provider's <xref:System.Windows.Forms.ErrorProvider.DataSource%2A> and <xref:System.Windows.Forms.ErrorProvider.DataMember%2A> properties at run time, you should use the <xref:System.Windows.Forms.ErrorProvider.BindToDataAndErrors%2A> method to avoid conflicts.  
+> If you change the error provider's <xref:System.Windows.Forms.ErrorProvider.DataSource%2A> and <xref:System.Windows.Forms.ErrorProvider.DataMember%2A> properties at run time, you should use the <xref:System.Windows.Forms.ErrorProvider.BindToDataAndErrors%2A> method to avoid conflicts.  
   
 ### To display data errors  
   
-1.  Bind the component to a specific column within a data table.  
+1. Bind the component to a specific column within a data table.  
   
     ```vb  
     ' Assumes existence of DataSet1, DataTable1  
@@ -34,7 +34,7 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
     errorProvider1.DataMember = "Customers";  
     ```  
   
-2.  Set the <xref:System.Windows.Forms.ErrorProvider.ContainerControl%2A> property to the form.  
+2. Set the <xref:System.Windows.Forms.ErrorProvider.ContainerControl%2A> property to the form.  
   
     ```vb  
     ErrorProvider1.ContainerControl = Me  
@@ -44,7 +44,7 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
     errorProvider1.ContainerControl = this;  
     ```  
   
-3.  Set the position of the current record to a row that contains a column error.  
+3. Set the position of the current record to a row that contains a column error.  
   
     ```vb  
     DataTable1.Rows(5).SetColumnError("Name", "Bad data in this row.")  
@@ -57,5 +57,6 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
     ```  
   
 ## See also
-- [ErrorProvider Component Overview](../../../../docs/framework/winforms/controls/errorprovider-component-overview-windows-forms.md)
-- [How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](../../../../docs/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider.md)
+
+- [ErrorProvider Component Overview](errorprovider-component-overview-windows-forms.md)
+- [How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](display-error-icons-for-form-validation-with-wf-errorprovider.md)

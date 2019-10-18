@@ -23,13 +23,13 @@ Gets an object that allows the host to specify the callback configuration of the
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConfiguration(  
     [out] ICorConfiguration** pConfiguration  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pConfiguration`  
  [out] A pointer to the address of an [ICorConfiguration](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md) object that can be used to configure the CLR.  
   
@@ -46,4 +46,5 @@ HRESULT GetConfiguration(
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

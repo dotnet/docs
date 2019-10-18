@@ -23,13 +23,13 @@ Enters the critical section that is represented by the current [IHostCrst](../..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Enter (  
     [in] DWORD option  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `option`  
  [in] One of the [WAIT_OPTION](../../../../docs/framework/unmanaged-api/hosting/wait-option-enumeration.md) values, indicating what action the host should take if the operation blocks.  
   
@@ -48,7 +48,7 @@ HRESULT Enter (
  `Enter` mirrors the Win32 `EnterCriticalSection` function.  
   
 > [!NOTE]
->  This method does not return until the critical section is entered.  
+> This method does not return until the critical section is entered.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -60,6 +60,7 @@ HRESULT Enter (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

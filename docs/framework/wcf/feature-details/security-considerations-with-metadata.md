@@ -22,7 +22,7 @@ When using the metadata features in Windows Communication Foundation (WCF), cons
 ## Using Safe Techniques for Processing Metadata  
  Service metadata is frequently retrieved from a service over a network using standardized protocols such as WS-MetadataExchange (MEX). Many metadata formats include referencing mechanisms for pointing to additional metadata. The <xref:System.ServiceModel.Description.MetadataExchangeClient> type automatically processes references for you in Web Services Description Language (WSDL) documents, XML Schema, and MEX documents. The size of the <xref:System.ServiceModel.Description.MetadataSet> object created from the retrieved metadata is directly proportional to the <xref:System.ServiceModel.Description.MetadataExchangeClient.MaximumResolvedReferences%2A> value for the <xref:System.ServiceModel.Description.MetadataExchangeClient> instance that is used and the `MaxReceivedMessageSize` value for the binding being used by that <xref:System.ServiceModel.Description.MetadataExchangeClient> instance. Set these quotas to appropriate values as dictated by your scenario.  
   
- In WCF, service metadata is processed as XML. When processing XML documents, applications should protect themselves against malicious XML structures. Use the `XmlDictionaryReader` with appropriate quotas when processing XML and also set the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property to `Prohibit`.  
+ In WCF, service metadata is processed as XML. When processing XML documents, applications should protect themselves against malicious XML structures. Use the <xref:System.Xml.XmlDictionaryReader> with appropriate quotas when processing XML and also set the <xref:System.Xml.XmlTextReader.DtdProcessing%2A> property to <xref:System.Xml.DtdProcessing.Prohibit>.  
   
  The metadata system in WCF is extensible and metadata extensions can be registered in your application configuration file (see [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)). Metadata extensions can run arbitrary code, so you should protect your application configuration file with appropriate access control lists (ACLs) and register only trusted metadata extension implementations.  
   
@@ -33,5 +33,6 @@ When using the metadata features in Windows Communication Foundation (WCF), cons
  A service's application configuration file may control how and if metadata is published. It is a good idea to protect the application configuration file with appropriate access control lists (ACLs) to ensure an attacker cannot modify such settings.  
   
 ## See also
+
 - [How to: Secure Metadata Endpoints](../../../../docs/framework/wcf/feature-details/how-to-secure-metadata-endpoints.md)
 - [Security](../../../../docs/framework/wcf/feature-details/security.md)

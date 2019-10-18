@@ -12,13 +12,13 @@ Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number o
  Use the <xref:System.Linq.Queryable.Skip%2A> operator to skip over a given number of elements in a sequence and then return the remainder.  
   
 > [!NOTE]
->  <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).  
+> <xref:System.Linq.Enumerable.Take%2A> and <xref:System.Linq.Enumerable.Skip%2A> have certain limitations when they are used in queries against SQL Server 2000. For more information, see the "Skip and Take Exceptions in SQL Server 2000" entry in [Troubleshooting](troubleshooting.md).  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates <xref:System.Linq.Queryable.Skip%2A> by using a subquery with the SQL `NOT EXISTS` clause. This translation has the following limitations:  
   
--   The argument must be a set. Multisets are not supported, even if ordered.  
+- The argument must be a set. Multisets are not supported, even if ordered.  
   
--   The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip%2A> is applied. This complexity can cause decrease in performance or even a time-out.  
+- The generated query can be much more complex than the query generated for the base query on which <xref:System.Linq.Queryable.Skip%2A> is applied. This complexity can cause decrease in performance or even a time-out.  
   
 ## Example  
  The following example uses `Take` to select the first five `Employees` hired. Note that the collection is first sorted by `HireDate`.  
@@ -43,16 +43,16 @@ Use the <xref:System.Linq.Queryable.Take%2A> operator to return a given number o
  Because of the limitations on ordering in SQL, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] tries to move the ordering of the argument of the <xref:System.Linq.Queryable.Take%2A> or <xref:System.Linq.Queryable.Skip%2A> operator to the result of the operator.  
   
 > [!NOTE]
->  Translation is different for [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)] and [!INCLUDE[sqprsqlong](../../../../../../includes/sqprsqlong-md.md)]. If you plan to use <xref:System.Linq.Queryable.Skip%2A> with a query of any complexity, use [!INCLUDE[sqprsqlong](../../../../../../includes/sqprsqlong-md.md)].  
+> Translation is different for SQL Server 2000 and SQL Server 2005. If you plan to use <xref:System.Linq.Queryable.Skip%2A> with a query of any complexity, use SQL Server 2005.  
   
- Consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query for [!INCLUDE[ss2k](../../../../../../includes/ss2k-md.md)]:  
+ Consider the following [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] query for SQL Server 2000:  
   
  [!code-csharp[DLinqQueryExamples#19](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#19)]
  [!code-vb[DLinqQueryExamples#19](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#19)]  
   
  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] moves the ordering to the end in the SQL code, as follows:  
   
-```  
+```sql
 SELECT TOP 1 [t0].[CustomerID], [t0].[CompanyName],  
 FROM [Customers] AS [t0]  
 WHERE (NOT (EXISTS(  
@@ -73,5 +73,6 @@ ORDER BY [t0].[CustomerID]
  For non-negative, constant integral arguments based on the SQL specification, both <xref:System.Linq.Queryable.Take%2A> and <xref:System.Linq.Queryable.Skip%2A> are well-defined.  
   
 ## See also
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
-- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+
+- [Query Examples](query-examples.md)
+- [Standard Query Operator Translation](standard-query-operator-translation.md)

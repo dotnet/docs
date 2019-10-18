@@ -22,7 +22,7 @@ Specifies the reasons why a thread may become blocked on a given object.
   
 ## Syntax  
   
-```  
+```cpp  
 Typedef enum CorDebugBlockingReason  
 {  
    BLOCKING_NONE = 0  
@@ -40,10 +40,10 @@ Typedef enum CorDebugBlockingReason
 |`BLOCKING_MONITOR_EVENT`|A thread is waiting on the event that is associated with a monitor lock for an object. Typically, this occurs when you call one of the <xref:System.Threading.Monitor?displayProperty=nameWithType>`Wait` methods.|  
   
 ## Remarks  
- When the `BLOCKING_MONITOR_CRITICAL_SECTION` or `BLOCKING_MONITOR_EVENT` member is used in a [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structure, the `pBlockingObject` member of the structure points to an "ICorDebugValue" interface that represents the object that is being entered. It is also guaranteed to implement the [ICorDebugHeapValue3](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue3-interface.md) interface.  
+ When the `BLOCKING_MONITOR_CRITICAL_SECTION` or `BLOCKING_MONITOR_EVENT` member is used in a [CorDebugBlockingObject](cordebugblockingobject-structure.md) structure, the `pBlockingObject` member of the structure points to an "ICorDebugValue" interface that represents the object that is being entered. It is also guaranteed to implement the [ICorDebugHeapValue3](icordebugheapvalue3-interface.md) interface.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -52,5 +52,6 @@ Typedef enum CorDebugBlockingReason
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+
+- [Debugging Enumerations](debugging-enumerations.md)
+- [Debugging](index.md)

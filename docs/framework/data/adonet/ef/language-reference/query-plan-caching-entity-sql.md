@@ -16,31 +16,34 @@ Whenever an attempt to execute a query is made, the query pipeline looks up its 
 ## Recommended Practice  
  Dynamic queries should be avoided, in general. The following dynamic query example is vulnerable to SQL injection attacks, because it takes user input directly without any validation.  
   
- `"SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp WHERE sp.EmployeeID = " + employeeTextBox.Text;`  
-  
+ ```csharp
+ var query = "SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp WHERE sp.EmployeeID = " + employeeTextBox.Text;  
+ ```
+ 
  If you do use dynamically generated queries, consider disabling query plan caching to avoid unnecessary memory consumption for cache entries that are unlikely to be reused.  
   
  Query plan caching on static queries and parameterized queries can provide performance benefits. The following is an example of a static query:  
   
-```  
-"SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp";  
+```csharp
+var query = "SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp";  
 ```  
   
  For queries to be matched properly by the query plan cache, they should comply with the following requirements:  
   
--   Query text should be a constant pattern, preferably a constant string or a resource.  
+- Query text should be a constant pattern, preferably a constant string or a resource.  
   
--   <xref:System.Data.EntityClient.EntityParameter> or <xref:System.Data.Objects.ObjectParameter> should be used wherever a user-supplied value must be passed.  
+- <xref:System.Data.EntityClient.EntityParameter> or <xref:System.Data.Objects.ObjectParameter> should be used wherever a user-supplied value must be passed.  
   
  You should avoid the following query patterns, which unnecessarily consume slots in the query plan cache:  
   
--   Changes to letter case in the text.  
+- Changes to letter case in the text.  
   
--   Changes to white space.  
+- Changes to white space.  
   
--   Changes to literal values.  
+- Changes to literal values.  
   
--   Changes to text inside comments.  
+- Changes to text inside comments.  
   
 ## See also
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+
+- [Entity SQL Overview](entity-sql-overview.md)

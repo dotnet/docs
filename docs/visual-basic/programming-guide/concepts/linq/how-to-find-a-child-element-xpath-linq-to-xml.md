@@ -35,10 +35,11 @@ Console.WriteLine(el1)
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
 ```  
   
 ## See also
+
 - [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

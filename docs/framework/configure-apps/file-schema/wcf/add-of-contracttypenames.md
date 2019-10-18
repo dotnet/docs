@@ -6,8 +6,15 @@ ms.assetid: 03aff6be-5dfb-4a64-ada3-e36227cd43c7
 # \<add> of \<contractTypeNames>
 A configuration element that specifies the contract name of the services being searched for, and the criteria typically used when searching for a service. If more than one contract name is specified, only service endpoints matching ALL contracts will reply. Note that in Windows Communication Foundation (WCF), an endpoint can only support one contract.  
   
- \<system.ServiceModel>  
-\<standardEndpoints>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dynamicEndpoint>**](dynamicendpoint.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<standardEndpoint>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<discoveryClientSettings>**](discoveryclientsettings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<findCriteria>**](findcriteria.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<contractTypeNames>**](contracttypenames.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
@@ -52,9 +59,10 @@ A configuration element that specifies the contract name of the services being s
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<contractTypeNames>](../../../../../docs/framework/configure-apps/file-schema/wcf/contracttypenames.md)|A collection of contract type names.|  
+|[\<contractTypeNames>](contracttypenames.md)|A collection of contract type names.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Discovery.FindCriteria>
 - <xref:System.ServiceModel.Discovery.Configuration.FindCriteriaElement>
 - <xref:System.ServiceModel.Discovery.Configuration.ContractTypeNameElement>

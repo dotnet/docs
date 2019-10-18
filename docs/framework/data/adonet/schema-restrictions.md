@@ -22,10 +22,10 @@ The second optional parameter of the **GetSchema** method is the restrictions th
  To use one of the restrictions of the "Tables" schema collection, simply create an array of strings with four elements, then place a value in the element that matches the restriction number. For example, to restrict the tables returned by the **GetSchema** method to only those tables in the "Sales" schema, set the second element of the array to "Sales" before passing it to the **GetSchema** method.  
   
 > [!NOTE]
->  The restrictions collections for `SqlClient` and `OracleClient` have an additional `ParameterName` column. The restriction default column is still there for backwards compatibility, but is currently ignored. Parameterized queries rather than string replacement should be used to minimize the risk of an SQL injection attack when specifying restriction values.  
+> The restrictions collections for `SqlClient` and `OracleClient` have an additional `ParameterName` column. The restriction default column is still there for backwards compatibility, but is currently ignored. Parameterized queries rather than string replacement should be used to minimize the risk of an SQL injection attack when specifying restriction values.  
   
 > [!NOTE]
->  The number of elements in the array must be less than or equal to the number of restrictions supported for the specified schema collection else an <xref:System.ArgumentException> will be thrown. There can be fewer than the maximum number of restrictions. The missing restrictions are assumed to be null (unrestricted).  
+> The number of elements in the array must be less than or equal to the number of restrictions supported for the specified schema collection else an <xref:System.ArgumentException> will be thrown. There can be fewer than the maximum number of restrictions. The missing restrictions are assumed to be null (unrestricted).  
   
  You can query a .NET Framework managed provider to determine the list of supported restrictions by calling the **GetSchema** method with the name of the restrictions schema collection, which is "Restrictions". This will return a <xref:System.Data.DataTable> with a list of the collection names, the restriction names, the default restriction values, and the restriction numbers.  
   
@@ -256,4 +256,5 @@ class Program
 |Column|@Column|COLUMN_NAME|4|  
   
 ## See also
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [ADO.NET Overview](ado-net-overview.md)

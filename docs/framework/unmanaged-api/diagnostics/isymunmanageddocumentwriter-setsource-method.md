@@ -23,13 +23,13 @@ Sets embedded source for a document that is being written.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSource(  
     [in]  ULONG32  sourceSize,  
     [in, size_is(sourceSize)] BYTE  source[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `sourceSize`  
  [in] A `ULONG32` that contains the size of the `source` buffer.  
   
@@ -43,4 +43,5 @@ HRESULT SetSource(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedDocumentWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)

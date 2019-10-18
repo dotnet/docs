@@ -17,9 +17,10 @@ A `Sub New` procedure in a class or structure calls itself.
   
 ## To correct this error  
   
-1.  Check the parameter list of the constructor being called. It should be different from that of the constructor making the call.  
+1. Check the parameter list of the constructor being called. It should be different from that of the constructor making the call.  
   
-2.  If you do not intend to call a different constructor, remove the `Sub New` call entirely.  
+2. If you do not intend to call a different constructor, remove the `Sub New` call entirely.  
   
 ## See also
+
 - [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md)

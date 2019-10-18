@@ -22,7 +22,7 @@ Describes the policy actions the host can set for operations described by [EClrO
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eNoAction,  
     eThrowException,  
@@ -44,7 +44,7 @@ typedef enum {
 |`eAbortThread`|Specifies that the common language runtime (CLR) should abort the thread gracefully. A graceful abort includes attempts to run all `finally` blocks, any `catch` blocks related to thread aborts, and finalizers.|  
 |`eDisableRuntime`|Specifies that the CLR should enter a disabled state. No further managed code can be executed in the affected process, and threads are blocked from entering the CLR.|  
 |`eExitProcess`|Specifies that the CLR should attempt a graceful exit of the process, including running finalizers and performing cleanup and logging operations.|  
-|`eFastExitProcess`|Specifies that the CLR should exit the process immediately, without running finalizers or performing cleanup and logging operations. Nowever, notification is sent to the debugger.|  
+|`eFastExitProcess`|Specifies that the CLR should exit the process immediately, without running finalizers or performing cleanup and logging operations. However, notification is sent to the debugger.|  
 |`eNoAction`|Specifies that no action should be taken.|  
 |`eRudeAbortThread`|Specifies that the CLR should perform a rude thread abort. Only those `catch` and `finally` blocks marked with <xref:System.EnterpriseServices.MustRunInClientContextAttribute> are executed.|  
 |`eRudeExitProcess`|Specifies that the CLR should exit the process without running finalizers or logging operations.|  
@@ -65,6 +65,7 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [EClrFailure Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrfailure-enumeration.md)
 - [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)
 - [IHostPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostpolicymanager-interface.md)

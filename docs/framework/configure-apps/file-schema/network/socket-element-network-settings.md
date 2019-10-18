@@ -12,10 +12,10 @@ ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
 # \<socket> Element (Network Settings)
 Specifies whether socket operations use completion ports.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<socket>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<socket>**  
   
 ## Syntax  
   
@@ -45,7 +45,7 @@ Specifies whether socket operations use completion ports.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+|[settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
  The `alwaysUseCompletionPortsForAccept` and `alwaysUseCompletionPortsForConnect` attributes are used to specify the default behavior regarding the use of completion ports by the classes in the <xref:System.Net.Sockets?displayProperty=nameWithType>.namespace. Completion ports are recommended for high performance server applications.  
@@ -58,9 +58,9 @@ Specifies whether socket operations use completion ports.
   
  This `ipProtectionLevel` attribute setting affects only initial incoming traffic:  
   
--   A TCP server listening for incoming connections on a socket.  
+- A TCP server listening for incoming connections on a socket.  
   
--   A UDP application receiving a packet on a socket.  
+- A UDP application receiving a packet on a socket.  
   
  This configuration setting does not affect already established TCP connections (traffic is unrestricted in both directions) and does not affect an application sending UDP packets.  
   
@@ -98,9 +98,10 @@ Specifies whether socket operations use completion ports.
 ```  
   
 ## See also
+
 - <xref:System.Net?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.SocketElement?displayProperty=nameWithType>
 - <xref:System.Net.Sockets?displayProperty=nameWithType>
 - <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=nameWithType>
 - <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

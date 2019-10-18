@@ -4,26 +4,26 @@ ms.date: "03/30/2017"
 ms.assetid: b8256335-f1c2-419f-b862-9f220ccad84c
 ---
 # How to: Inspect or Modify Messages on the Client
-You can inspect or modify the incoming or outgoing messages across a WCF client by implementing a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> and inserting it into the client runtime. For more information, see [Extending Clients](../../../../docs/framework/wcf/extending/extending-clients.md). The equivalent feature on the service is the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>. For a complete code example see the [Message Inspectors](../../../../docs/framework/wcf/samples/message-inspectors.md) sample.  
+You can inspect or modify the incoming or outgoing messages across a WCF client by implementing a <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> and inserting it into the client runtime. For more information, see [Extending Clients](extending-clients.md). The equivalent feature on the service is the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>. For a complete code example see the [Message Inspectors](../samples/message-inspectors.md) sample.  
   
 ### To inspect or modify messages  
   
-1.  Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> interface.  
+1. Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType> interface.  
   
-2.  Implement a <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> depending upon the scope at which you want to insert the client message inspector. <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> allows you to change behavior at the endpoint level. <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> allows you to change behavior at the contract level.  
+2. Implement a <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> or <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> depending upon the scope at which you want to insert the client message inspector. <xref:System.ServiceModel.Description.IEndpointBehavior?displayProperty=nameWithType> allows you to change behavior at the endpoint level. <xref:System.ServiceModel.Description.IContractBehavior?displayProperty=nameWithType> allows you to change behavior at the contract level.  
   
-3.  Insert the behavior prior to calling the <xref:System.ServiceModel.ClientBase%601.Open%2A?displayProperty=nameWithType> or the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> method on the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>. For details, see [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
+3. Insert the behavior prior to calling the <xref:System.ServiceModel.ClientBase%601.Open%2A?displayProperty=nameWithType> or the <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> method on the <xref:System.ServiceModel.ChannelFactory%601?displayProperty=nameWithType>. For details, see [Configuring and Extending the Runtime with Behaviors](configuring-and-extending-the-runtime-with-behaviors.md).  
   
 ## Example  
  The following code examples show, in order:  
   
--   A client inspector implementation.  
+- A client inspector implementation.  
   
--   An endpoint behavior that inserts the inspector.  
+- An endpoint behavior that inserts the inspector.  
   
--   A <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>- derived class that allows you to add the behavior in a configuration file.  
+- A <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>- derived class that allows you to add the behavior in a configuration file.  
   
--   A configuration file that adds the endpoint behavior which inserts the client message inspector into the client runtime.  
+- A configuration file that adds the endpoint behavior which inserts the client message inspector into the client runtime.  
   
 ```csharp  
 // Client message inspector  
@@ -121,6 +121,7 @@ public class SimpleBehaviorExtensionElement : BehaviorExtensionElement
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Dispatcher.IClientMessageInspector?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector?displayProperty=nameWithType>
-- [Configuring and Extending the Runtime with Behaviors](../../../../docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md)
+- [Configuring and Extending the Runtime with Behaviors](configuring-and-extending-the-runtime-with-behaviors.md)

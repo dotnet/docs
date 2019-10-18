@@ -1,7 +1,7 @@
 ---
 title: "The large object heap on Windows systems"
 ms.date: "05/02/2018"
-helpviewer_keywords: 
+helpviewer_keywords:
   - large object heap (LOH)"
   - LOH
   - "garbage collection, large object heap"
@@ -9,6 +9,7 @@ helpviewer_keywords:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # The large object heap on Windows systems
 
 The .NET Garbage Collector (GC) divides objects up into small and large objects. When an object is large, some of its attributes become more significant than if the object is small. For instance, compacting it -- that is, copying it in memory elsewhere on the heap -- can be expensive. Because of this, the .NET Garbage Collector places large objects on the large object heap (LOH). In this topic, we'll look at the large object heap in depth. We'll discuss what qualifies an object as a large object, how these large objects are collected, and what kind of performance implications large objects impose.
@@ -41,12 +42,12 @@ When a garbage collection is triggered, the GC traces through the live objects a
 
 Figure 1 illustrates a scenario where the GC forms generation 1 after the first generation 0 GC where `Obj1` and `Obj3` are dead, and it forms generation 2 after the first generation 1 GC where `Obj2` and `Obj5` are dead. Note that this and the following figures are only for illustration purposes; they contain very few objects to better show what happens on the heap. In reality, many more objects are typically involved in a GC.
 
-![Figure 1: A gen 0 GC and a gen 1 GC](media/loh/loh-figure-1.jpg)  
+![Figure 1: A gen 0 GC and a gen 1 GC](media/loh/loh-figure-1.jpg)\
 Figure 1: A generation 0 and a generation 1 GC.
 
 Figure 2 shows that after a generation 2 GC which saw that `Obj1` and `Obj2` are dead, the GC forms contiguous free space out of memory that used to be occupied by `Obj1` and `Obj2`, which then was used to satisfy an allocation request for `Obj4`. The space after the last object, `Obj3`, to end of the segment can also be used to satisfy allocation requests.
 
-![Figure 2: After a gen 2 GC](media/loh/loh-figure-2.jpg)  
+![Figure 2: After a gen 2 GC](media/loh/loh-figure-2.jpg)\
 Figure 2: After a generation 2 GC
 
 If there isn't enough free space to accommodate the large object allocation requests, the GC first attempts to acquire more segments from the OS. If that fails, it triggers a generation 2 GC in the hope of freeing up some space.
@@ -55,7 +56,7 @@ During a generation 1 or generation 2 GC, the garbage collector releases segment
 
 Since the LOH is only collected during generation 2 GCs, the LOH segment can only be freed during such a GC. Figure 3 illustrates a scenario where the garbage collector releases one segment (segment 2) back to the OS and decommits more space on the remaining segments. If it needs to use the decommitted space at the end of the segment to satisfy large object allocation requests, it commits the memory again. (For an explanation of commit/decommit, see the documentation for [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc).
 
-![Figure 3: LOH after a gen 2 GC](media/loh/loh-figure-3.jpg)  
+![Figure 3: LOH after a gen 2 GC](media/loh/loh-figure-3.jpg)\
 Figure 3: The LOH after a generation 2 GC
 
 ## When is a large object collected?
@@ -126,7 +127,7 @@ Before you collect performance data for a specific area, you should already have
 
 2. Exhausted other areas that you know of without finding anything that could explain the performance problem you saw.
 
-See the blog [Understand the problem before you try to find a solution](https://blogs.msdn.microsoft.com/maoni/2006/09/01/understand-the-problem-before-you-try-to-find-a-solution/) for more information on the fundamentals of memory and the CPU.
+See the blog [Understand the problem before you try to find a solution](https://devblogs.microsoft.com/dotnet/understand-the-problem-before-you-try-to-find-a-solution/) for more information on the fundamentals of memory and the CPU.
 
 You can use the following tools to collect data on LOH performance:
 
@@ -148,9 +149,9 @@ These performance counters are usually a good first step in investigating perfor
 
    Displays the current size, in bytes, including free space, of the LOH. This counter is updated at the end of a garbage collection, not at each allocation.
 
-A common way to look at performance counters is with Performance Monitor (perfmon.exe). Use “Add Counters” to add the interesting counter for processes that you care about. You can save the performance counter data to a log file, as Figure 4 shows.
+A common way to look at performance counters is with Performance Monitor (perfmon.exe). Use “Add Counters” to add the interesting counter for processes that you care about. You can save the performance counter data to a log file, as Figure 4 shows:
 
-![Figure 4: Adding performance counters.](media/loh/perfcounter.png)  
+![Screenshow that shows adding performance counters.](media/large-object-heap/add-performance-counter.png)
 Figure 4: The LOH after a generation 2 GC
 
 Performance counters can also be queried programmatically. Many people collect them this way as part of their routine testing process. When they spot counters with values that are out of the ordinary, they use other means to get more detailed data to help with the investigation.
@@ -162,13 +163,13 @@ Performance counters can also be queried programmatically. Many people collect t
 
 The garbage collector provides a rich set of ETW events to help you understand what the heap is doing and why. The following blog posts show how to collect and understand GC events with ETW:
 
-- [GC ETW Events - 1](https://blogs.msdn.microsoft.com/maoni/2014/12/22/gc-etw-events-1/)
+- [GC ETW Events - 1](https://devblogs.microsoft.com/dotnet/gc-etw-events-1/)
 
-- [GC ETW Events - 2](https://blogs.msdn.microsoft.com/maoni/2014/12/25/gc-etw-events-2/)
+- [GC ETW Events - 2](https://devblogs.microsoft.com/dotnet/gc-etw-events-2/)
 
-- [GC ETW Events - 3](https://blogs.msdn.microsoft.com/maoni/2014/12/25/gc-etw-events-3/)
+- [GC ETW Events - 3](https://devblogs.microsoft.com/dotnet/gc-etw-events-3/)
 
-- [GC ETW Events - 4](https://blogs.msdn.microsoft.com/maoni/2014/12/30/gc-etw-events-4/)
+- [GC ETW Events - 4](https://devblogs.microsoft.com/dotnet/gc-etw-events-4/)
 
 To identify excessive generation 2 GCs caused by temporary LOH allocations, look at the Trigger Reason column for GCs. For a simple test that only allocates temporary large objects, you can collect information on ETW events with the following [PerfView](https://www.microsoft.com/download/details.aspx?id=28567) command line:
 
@@ -178,7 +179,7 @@ perfview /GCCollectOnly /AcceptEULA /nogui collect
 
 The result is something like this:
 
-![Figure 5: Examining ETW events using PerfView](media/loh/perfview.png)  
+![Screenshot that shows ETW events in PerfView.](media/large-object-heap/event-tracing-windows-perfview.png)
 Figure 5: ETW events shown using PerfView
 
 As you can see, all GCs are generation 2 GCs, and they are all triggered by AllocLarge, which means that allocating a large object triggered this GC. We know that these allocations are temporary because the **LOH Survival Rate %** column says 1%.
@@ -191,7 +192,7 @@ perfview /GCOnly /AcceptEULA /nogui collect
 
 collects an AllocationTick event which is fired approximately every 100k worth of allocations. In other words, an event is fired each time a large object is allocated. You can then look at one of the GC Heap Alloc views which show you the callstacks that allocated large objects:
 
-![Figure 6: A GC Heap Alloc view](media/loh/perfview2.png)  
+![Screenshot that shows a garbage collector heap view.](media/large-object-heap/garbage-collector-heap.png)
 Figure 6: A GC Heap Alloc view
 
 As you can see, this is a very simple test that just allocates large objects from its `Main` method.
@@ -205,7 +206,7 @@ If all you have is a memory dump and you need to look at what objects are actual
 
 The following shows sample output from analyzing the LOH:
 
-```
+```console
 0:003> .loadby sos mscorwks
 0:003> !eeheap -gc
 Number of GC Heaps: 1
@@ -238,7 +239,7 @@ The LOH heap size is (16,754,224 + 16,699,288 + 16,284,504) = 49,738,016 bytes. 
 
 Sometimes, the debugger shows that the total size of the LOH is less than 85,000 bytes. This happens because the runtime itself uses the LOH to allocate some objects that are smaller than a large object.
 
-Because the LOH is not compacted, sometimes the LOH is thoought to be the source of fragmentation. Fragmentation means:
+Because the LOH is not compacted, sometimes the LOH is thought to be the source of fragmentation. Fragmentation means:
 
 - Fragmentation of the managed heap, which is indicated by the amount of free space between managed objects. In SoS, the `!dumpheap –type Free` command displays the amount of free space between managed objects.
 
@@ -246,7 +247,7 @@ Because the LOH is not compacted, sometimes the LOH is thoought to be the source
 
    The following example shows fragmentation in the VM space:
 
-   ```
+   ```console
    0:000> !address
    00000000 : 00000000 - 00010000
    Type     00000000
@@ -304,7 +305,7 @@ bp kernel32!virtualalloc "j (dwo(@esp+8)>800000) 'kb';'g'"
 
 This command breaks into the debugger and shows the callstack only if [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) is called with an allocation size greater than 8MB (0x800000).
 
-CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarious where segments (including on the large and small object heaps) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called `STARTUP_HOARD_GC_VM` via the hosting API. Instead of releasing empty segments back to the OS, the CLR decommits the memory on these segments and puts them on a standby list. (Note that the CLR doesn't do this for segments that are too large.) The CLR later uses those segments to satisfy new segment requests. The next time that your app needs a new segment, the CLR uses one from this standby list if it can find one that’s big enough.
+CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarios where segments (including on the large and small object heaps) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called `STARTUP_HOARD_GC_VM` via the hosting API. Instead of releasing empty segments back to the OS, the CLR decommits the memory on these segments and puts them on a standby list. (Note that the CLR doesn't do this for segments that are too large.) The CLR later uses those segments to satisfy new segment requests. The next time that your app needs a new segment, the CLR uses one from this standby list if it can find one that’s big enough.
 
 VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out of memory exceptions.
 

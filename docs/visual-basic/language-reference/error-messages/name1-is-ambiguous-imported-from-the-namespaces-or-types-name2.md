@@ -15,11 +15,12 @@ You have provided a name that is ambiguous and therefore conflicts with another 
   
 ## To correct this error  
   
-1.  Disambiguate the name by removing namespace imports.  
+1. Disambiguate the name by removing namespace imports.  
   
-2.  Fully qualify the name.  
+2. Fully qualify the name.  
   
 ## See also
+
 - [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
 - [Namespaces in Visual Basic](../../../visual-basic/programming-guide/program-structure/namespaces.md)
 - [Namespace Statement](../../../visual-basic/language-reference/statements/namespace-statement.md)

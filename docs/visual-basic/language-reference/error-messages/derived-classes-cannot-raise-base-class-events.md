@@ -15,8 +15,9 @@ An event can be raised only from the declaration space in which it is declared. 
   
 ## To correct this error  
   
--   Move the `Event` statement or the `RaiseEvent` statement so they are in the same class.  
+- Move the `Event` statement or the `RaiseEvent` statement so they are in the same class.  
   
 ## See also
+
 - [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
 - [RaiseEvent Statement](../../../visual-basic/language-reference/statements/raiseevent-statement.md)

@@ -23,13 +23,13 @@ Gets an interface pointer to the application domain that contains this `ICorDebu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppDomain (  
     [out] ICorDebugAppDomain  **ppAppDomain  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAppDomain`  
  [out] A pointer to the address of an ICorDebugAppDomain interface that represents the application domain.  
   

@@ -24,19 +24,19 @@ Retrieves the pointer of the MethodDesc corresponding the method containing the 
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetMethodDescPtrFromIP(
     CLRDATA_ADDRESS ip,
     CLRDATA_ADDRESS * ppMD
 );
 ```
 
-### Parameters
+## Parameters
 
-`ip`
+`ip`\
 [in] An address within the method at runtime.
 
-`ppMD`
+`ppMD`\
 [out] The address of the `MethodDesc` for the particular method.
 
 ## Remarks
@@ -52,5 +52,5 @@ The provided method is part of the [`ISOSDacInterface` interface](isosdacinterfa
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [ISOSDacInterface Interface](../../../../docs/framework/unmanaged-api/debugging/isosdacinterface-interface.md)
+- [Debugging](index.md)
+- [ISOSDacInterface Interface](isosdacinterface-interface.md)

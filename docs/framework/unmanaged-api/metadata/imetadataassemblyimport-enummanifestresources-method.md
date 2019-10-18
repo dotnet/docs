@@ -23,7 +23,7 @@ Gets a pointer to an enumerator for the resources referenced in the current asse
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumManifestResources (  
     [in, out] HCORENUM         *phEnum,   
     [out] mdManifestResource   rManifestResources[],   
@@ -32,7 +32,7 @@ HRESULT EnumManifestResources (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be a null value when the `EnumManifestResources` method is called for the first time.  
   
@@ -62,4 +62,5 @@ HRESULT EnumManifestResources (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)

@@ -4,15 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 04bcb259-59d3-4fd7-894d-4f0dd0c68069
 ---
 # OLE DB Data Type Mappings
-The following table shows the inferred [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type for data types from the .NET Framework Data Provider for ADO and OLE DB (<xref:System.Data.OleDb>). The typed accessor methods for the <xref:System.Data.OleDb.OleDbDataReader> are also listed.  
+The following table shows the inferred .NET Framework type for data types from the .NET Framework Data Provider for ADO and OLE DB (<xref:System.Data.OleDb>). The typed accessor methods for the <xref:System.Data.OleDb.OleDbDataReader> are also listed.  
   
-|ADO type|OLE DB type|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type|[!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] typed accessor|  
+|ADO type|OLE DB type|.NET Framework type|.NET Framework typed accessor|  
 |--------------|-----------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------|  
 |adBigInt|DBTYPE_I8|Int64|GetInt64()|  
 |adBinary|DBTYPE_BYTES|Byte[]|GetBytes()|  
 |adBoolean|DBTYPE_BOOL|Boolean|GetBoolean()|  
 |adBSTR|DBTYPE_BSTR|String|GetString()|  
-|adChapter|DBTYPE_HCHAPTER|Supported through the `DataReader`. See [Retrieving Data Using a DataReader](../../../../docs/framework/data/adonet/retrieving-data-using-a-datareader.md).|GetValue()|  
+|adChapter|DBTYPE_HCHAPTER|Supported through the `DataReader`. See [Retrieving Data Using a DataReader](retrieving-data-using-a-datareader.md).|GetValue()|  
 |adChar|DBTYPE_STR|String|GetString()|  
 |adCurrency|DBTYPE_CY|Decimal|GetDecimal()|  
 |adDate|DBTYPE_DATE|DateTime|GetDateTime()|  
@@ -44,5 +44,6 @@ The following table shows the inferred [!INCLUDE[dnprdnshort](../../../../includ
  \* For the OLE DB types `DBTYPE_IUNKNOWN` and `DBTYPE_IDISPATCH`, the object reference is a marshaled representation of the pointer.  
   
 ## See also
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)
+- [ADO.NET Overview](ado-net-overview.md)

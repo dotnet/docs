@@ -15,7 +15,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
   
 ### To specify that a service uses secure sessions by using one of the system-provided bindings  
   
--   Configure a service to use a system-provided binding that supports message security.  
+- Configure a service to use a system-provided binding that supports message security.  
   
      With the exception of the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) binding, when the system-provided bindings are configured to use message security, WCF automatically uses secure sessions. The following table lists the system-provided bindings that support message security and whether message security is the default security mechanism.  
   
@@ -48,11 +48,11 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
      [!code-vb[c_CreateSecureSession#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#1)]  
   
     > [!NOTE]
-    >  Secure sessions can be turned off for the [<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) by setting the `establishSecurityContext` attribute to `false`. For the other system-provided bindings, secure sessions can only be turned off by creating a custom binding.  
+    > Secure sessions can be turned off for the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) by setting the `establishSecurityContext` attribute to `false`. For the other system-provided bindings, secure sessions can only be turned off by creating a custom binding.  
   
 ### To specify that a service uses secure sessions by using a custom binding  
   
--   Create a custom binding that specifies that SOAP messages are protected by a secure session.  
+- Create a custom binding that specifies that SOAP messages are protected by a secure session.  
   
      For more information about creating a custom binding, see [How to: Customize a System-Provided Binding](../../../../docs/framework/wcf/extending/how-to-customize-a-system-provided-binding.md).  
   
@@ -78,4 +78,5 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
      [!code-vb[c_CreateSecureSession#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#2)]  
   
 ## See also
+
 - [WCF Bindings Overview](../../../../docs/framework/wcf/bindings-overview.md)

@@ -7,33 +7,33 @@ helpviewer_keywords:
 ms.assetid: a9ea7a53-f31a-46eb-806e-898e465a4992
 ---
 # WCF Troubleshooting Quickstart
-This topic lists a number of known issues customers have run into while developing WCF clients and services. If the issue you are running into is not in this list, we recommend you configure tracing for your service. This will generate a trace file that you can view with the trace file viewer and get detailed information about exceptions that may be occurring within the service. For more information on configuring tracing, see: [Configuring Tracing](../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md). For more information on the trace file viewer, see: [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md).  
+This topic lists a number of known issues customers have run into while developing WCF clients and services. If the issue you are running into is not in this list, we recommend you configure tracing for your service. This will generate a trace file that you can view with the trace file viewer and get detailed information about exceptions that may be occurring within the service. For more information on configuring tracing, see: [Configuring Tracing](./diagnostics/tracing/configuring-tracing.md). For more information on the trace file viewer, see: [Service Trace Viewer Tool (SvcTraceViewer.exe)](service-trace-viewer-tool-svctraceviewer-exe.md).  
   
-1.  [After installing Windows 7 and IIS, when I attempt to browse to a WCF service I get the following error message: HTTP Error 404.3 – Not Found](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#bkmk_0)  
+1. [After installing Windows 7 and IIS, when I attempt to browse to a WCF service I get the following error message: HTTP Error 404.3 – Not Found](#bkmk_0)  
   
      HTTP Error 404.3 – Not FoundThe page you are requesting cannot be served because of the extension configuration. If the page is a script, add a handler. If the file should be downloaded, add a MIME map. Detailed Error InformationModule StaticFileModule.  
   
-2.  [Sometimes I receive a MessageSecurityException on the second request if my client is idle for a while after the first request. What is happening?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q1)  
+2. [Sometimes I receive a MessageSecurityException on the second request if my client is idle for a while after the first request. What is happening?](#BKMK_q1)  
   
-3.  [My service starts to reject new clients after about 10 clients are interacting with it. What is happening?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q2)  
+3. [My service starts to reject new clients after about 10 clients are interacting with it. What is happening?](#BKMK_q2)  
   
-4.  [Can I load my service configuration from somewhere other than the WCF application’s configuration file?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q3)  
+4. [Can I load my service configuration from somewhere other than the WCF application’s configuration file?](#BKMK_q3)  
   
-5.  [My service and client work great, but I can’t get them to work when the client is on another computer? What’s happening?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q4)  
+5. [My service and client work great, but I can’t get them to work when the client is on another computer? What’s happening?](#BKMK_q4)  
   
-6.  [When I throw a FaultException\<Exception> where the type is an exception, I always receive a general FaultException type on the client and not the generic type. What’s happening?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q5)  
+6. [When I throw a FaultException\<Exception> where the type is an exception, I always receive a general FaultException type on the client and not the generic type. What’s happening?](#BKMK_q5)  
   
-7.  [It seems like one-way and request-reply operations return at roughly the same speed when the reply contains no data. What's happening?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q6)  
+7. [It seems like one-way and request-reply operations return at roughly the same speed when the reply contains no data. What's happening?](#BKMK_q6)  
   
-8.  [I’m using an X.509 certificate with my service and I get a System.Security.Cryptography.CryptographicException. What’s happening?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q77)  
+8. [I’m using an X.509 certificate with my service and I get a System.Security.Cryptography.CryptographicException. What’s happening?](#BKMK_q77)  
   
-9. [I changed the first parameter of an operation from uppercase to lowercase; now my client throws an exception. What's happening?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q88)  
+9. [I changed the first parameter of an operation from uppercase to lowercase; now my client throws an exception. What's happening?](#BKMK_q88)  
   
-10. [I’m using one of my tracing tools and I get an EndpointNotFoundException. What’s happening?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q99)  
+10. [I’m using one of my tracing tools and I get an EndpointNotFoundException. What’s happening?](#BKMK_q99)  
   
-11. [When calling a WCF Web HTTP application from a WCF SOAP application the service returns the following error: 405 Method Not Allowed](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BK_MK99)  
+11. [When calling a WCF Web HTTP application from a WCF SOAP application the service returns the following error: 405 Method Not Allowed](#BK_MK99)  
   
- [What is the base address? How does it relate to an endpoint address?](../../../docs/framework/wcf/wcf-troubleshooting-quickstart.md#BKMK_q10)  
+ [What is the base address? How does it relate to an endpoint address?](#BKMK_q10)  
   
 <a name="bkmk_0"></a>   
 ## After installing Windows 7 and IIS, when I attempt to browse to a WCF service I get the following error message: HTTP Error 404.3 – Not Found  
@@ -45,11 +45,11 @@ This topic lists a number of known issues customers have run into while developi
   
 <a name="BKMK_q1"></a>   
 ## Sometimes I receive a MessageSecurityException on the second request if my client is idle for a while after the first request. What is happening?  
- The second request can fail primarily for two reasons: (1) the session has timed out or (2) the Web server that is hosting the service is recycled. In the first case, the session is valid until the service times out. When the service does not receive a request from the client within the period of time specified in the service's binding (<xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A>), the service terminates the security session. Subsequent client messages result in the <xref:System.ServiceModel.Security.MessageSecurityException>. The client must re-establish a secure session with the service to send future messages or use a stateful security context token. Stateful security context tokens also allow a secure session to survive a Web server being recycled. For more information about using stateful secure context tokens in a secure session, see [How to: Create a Security Context Token for a Secure Session](../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md). Alternatively, you can disable secure sessions. When you use the [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) binding, you can set the `establishSecurityContext` property to `false` to disable secure sessions. To disable secure sessions for other bindings, you must create a custom binding. For details about creating a custom binding, see [How to: Create a Custom Binding Using the SecurityBindingElement](../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md). Before you apply any of these options, you must understand your application's security requirements.  
+ The second request can fail primarily for two reasons: (1) the session has timed out or (2) the Web server that is hosting the service is recycled. In the first case, the session is valid until the service times out. When the service does not receive a request from the client within the period of time specified in the service's binding (<xref:System.ServiceModel.Channels.Binding.ReceiveTimeout%2A>), the service terminates the security session. Subsequent client messages result in the <xref:System.ServiceModel.Security.MessageSecurityException>. The client must re-establish a secure session with the service to send future messages or use a stateful security context token. Stateful security context tokens also allow a secure session to survive a Web server being recycled. For more information about using stateful secure context tokens in a secure session, see [How to: Create a Security Context Token for a Secure Session](./feature-details/how-to-create-a-security-context-token-for-a-secure-session.md). Alternatively, you can disable secure sessions. When you use the [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) binding, you can set the `establishSecurityContext` property to `false` to disable secure sessions. To disable secure sessions for other bindings, you must create a custom binding. For details about creating a custom binding, see [How to: Create a Custom Binding Using the SecurityBindingElement](./feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md). Before you apply any of these options, you must understand your application's security requirements.  
   
 <a name="BKMK_q2"></a>   
 ## My service starts to reject new clients after about 10 clients are interacting with it. What is happening?  
- By default, services can have only 10 concurrent sessions. Therefore, if the service bindings use sessions, the service accepts new client connections until it reaches that number, after which it refuses new client connections until one of the current sessions ends. You can support more clients in a number of ways. If your service does not require sessions, do not use a sessionful binding. (For more information, see [Using Sessions](../../../docs/framework/wcf/using-sessions.md).) Another option is to increase the session limit by changing the value of the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> property to the number appropriate to your circumstance.  
+ By default, services can have only 10 concurrent sessions. Therefore, if the service bindings use sessions, the service accepts new client connections until it reaches that number, after which it refuses new client connections until one of the current sessions ends. You can support more clients in a number of ways. If your service does not require sessions, do not use a sessionful binding. (For more information, see [Using Sessions](using-sessions.md).) Another option is to increase the session limit by changing the value of the <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions%2A> property to the number appropriate to your circumstance.  
   
 <a name="BKMK_q3"></a>   
 ## Can I load my service configuration from somewhere other than the WCF application’s configuration file?  
@@ -92,15 +92,15 @@ public class MyServiceHost : ServiceHost
 ## My service and client work great, but I can’t get them to work when the client is on another computer? What’s happening?  
  Depending upon the exception, there may be several issues:  
   
--   You might need to change the client endpoint addresses to the host name and not "localhost".  
+- You might need to change the client endpoint addresses to the host name and not "localhost".  
   
--   You might need to open the port to the application. For details, see [Firewall Instructions](../../../docs/framework/wcf/samples/firewall-instructions.md) from the SDK samples.  
+- You might need to open the port to the application. For details, see [Firewall Instructions](./samples/firewall-instructions.md) from the SDK samples.  
   
--   For other possible issues, see the samples topic [Running the Windows Communication Foundation Samples](./samples/running-the-samples.md).  
+- For other possible issues, see the samples topic [Running the Windows Communication Foundation Samples](./samples/running-the-samples.md).  
   
--   If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
+- If your client is using Windows credentials and the exception is a <xref:System.ServiceModel.Security.SecurityNegotiationException>, configure Kerberos as follows.  
   
-    1.  Add the identity credentials to the endpoint element in the client’s App.config file:  
+    1. Add the identity credentials to the endpoint element in the client’s App.config file:  
   
         ```xml
         <endpoint   
@@ -116,39 +116,39 @@ public class MyServiceHost : ServiceHost
         </endpoint>  
         ```  
   
-    2.  Run the self-hosted service under the System or NetworkService account. You can run this command to create a command window under the System account:  
+    2. Run the self-hosted service under the System or NetworkService account. You can run this command to create a command window under the System account:  
   
         ```console
         at 12:36 /interactive "cmd.exe"  
         ```  
   
-    3.  Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
+    3. Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
   
-    4.  Register a new SPN with the domain using SetSPN. Note that you will need to be a domain administrator in order to do this.  
+    4. Register a new SPN with the domain using SetSPN. Note that you will need to be a domain administrator in order to do this.  
   
- For more information about the Kerberos protocol, see [Security Concepts Used in WCF](../../../docs/framework/wcf/feature-details/security-concepts-used-in-wcf.md) and:  
+ For more information about the Kerberos protocol, see [Security Concepts Used in WCF](./feature-details/security-concepts-used-in-wcf.md) and:  
   
--   [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)  
+- [Debugging Windows Authentication Errors](./feature-details/debugging-windows-authentication-errors.md)  
   
--   [Registering Kerberos Service Principal Names by Using Http.sys](https://go.microsoft.com/fwlink/?LinkId=86943)  
+- [Registering Kerberos Service Principal Names by Using Http.sys](https://go.microsoft.com/fwlink/?LinkId=86943)  
   
--   [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkId=86946)  
+- [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkId=86946)  
   
 <a name="BKMK_q5"></a>   
 ## When I throw a FaultException\<Exception> where the type is an exception, I always receive a general FaultException type on the client and not the generic type. What’s happening?  
  It is highly recommended that you create your own custom error data type and declare that as the detail type in your fault contract. The reason is that using system-provided exception types:  
   
--   Creates a type dependency that removes one of the biggest strengths of service-oriented applications.  
+- Creates a type dependency that removes one of the biggest strengths of service-oriented applications.  
   
--   Cannot depend upon exceptions serializing in a standard way. Some—like <xref:System.Security.SecurityException>—may not be serializable at all.  
+- Cannot depend upon exceptions serializing in a standard way. Some—like <xref:System.Security.SecurityException>—may not be serializable at all.  
   
--   Exposes internal implementation details to clients. For more information, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+- Exposes internal implementation details to clients. For more information, see [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md).  
   
  If you are debugging an application, however, you can serialize exception information and return it to the client by using the <xref:System.ServiceModel.Description.ServiceDebugBehavior> class.  
   
 <a name="BKMK_q6"></a>   
 ## It seems like one-way and request-reply operations return at roughly the same speed when the reply contains no data. What's happening?  
- Specifying that an operation is one way means only that the operation contract accepts an input message and does not return an output message. In WCF, all client invocations return when the outbound data has been written to the wire or an exception is thrown. One-way operations work the same way, and they can throw if the service cannot be located or block if the service is not prepared to accept the data from the network. Typically in WCF, this results in one-way calls returning to the client more quickly than request-reply; but any condition that slows the sending of the outbound data over the network slows one-way operations as well as request-reply operations. For more information, see [One-Way Services](../../../docs/framework/wcf/feature-details/one-way-services.md) and [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
+ Specifying that an operation is one way means only that the operation contract accepts an input message and does not return an output message. In WCF, all client invocations return when the outbound data has been written to the wire or an exception is thrown. One-way operations work the same way, and they can throw if the service cannot be located or block if the service is not prepared to accept the data from the network. Typically in WCF, this results in one-way calls returning to the client more quickly than request-reply; but any condition that slows the sending of the outbound data over the network slows one-way operations as well as request-reply operations. For more information, see [One-Way Services](./feature-details/one-way-services.md) and [Accessing Services Using a WCF Client](./feature-details/accessing-services-using-a-client.md).  
   
 <a name="BKMK_q77"></a>   
 ## I’m using an X.509 certificate with my service and I get a System.Security.Cryptography.CryptographicException. What’s happening?  
@@ -156,7 +156,7 @@ public class MyServiceHost : ServiceHost
   
  If this is the case, you must give read access privileges to the process's account for the file containing the private key. For example, if the IIS worker process is running under the Bob account, then you will need to give Bob read access to the file containing the private key.  
   
- For more information about how to give the correct user account access to the file that contains the private key for a specific X.509 certificate, see [How to: Make X.509 Certificates Accessible to WCF](../../../docs/framework/wcf/feature-details/how-to-make-x-509-certificates-accessible-to-wcf.md).  
+ For more information about how to give the correct user account access to the file that contains the private key for a specific X.509 certificate, see [How to: Make X.509 Certificates Accessible to WCF](./feature-details/how-to-make-x-509-certificates-accessible-to-wcf.md).  
   
 <a name="BKMK_q88"></a>   
 ## I changed the first parameter of an operation from uppercase to lowercase; now my client throws an exception. What's happening?  
@@ -188,7 +188,7 @@ public class MyServiceHost : ServiceHost
   
 <a name="BKMK_q10"></a>   
 ## What is the base address? How does it relate to an endpoint address?  
- A base address is the root address for a <xref:System.ServiceModel.ServiceHost> class. By default, if you add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class into your service configuration, the Web Services Description Language (WSDL) for all endpoints the host publishes are retrieved from the HTTP base address, plus any relative address provided to the metadata behavior, plus "?wsdl". If you are familiar with [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] and IIS, the base address is equivalent to the virtual directory.  
+ A base address is the root address for a <xref:System.ServiceModel.ServiceHost> class. By default, if you add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class into your service configuration, the Web Services Description Language (WSDL) for all endpoints the host publishes are retrieved from the HTTP base address, plus any relative address provided to the metadata behavior, plus "?wsdl". If you are familiar with ASP.NET and IIS, the base address is equivalent to the virtual directory.  
   
 ## Sharing a port between a service endpoint and a mex endpoint using the NetTcpBinding  
  If you specify the base address for a service as net.tcp://MyServer:8080/MyService and add the following endpoints:  
@@ -244,4 +244,5 @@ public string Echo(string input)
 ```  
   
 ## See also
-- [Debugging Windows Authentication Errors](../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md)
+
+- [Debugging Windows Authentication Errors](./feature-details/debugging-windows-authentication-errors.md)

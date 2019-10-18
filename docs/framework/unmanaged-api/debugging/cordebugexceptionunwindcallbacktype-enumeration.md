@@ -22,7 +22,7 @@ Indicates the event that is being signaled by the callback during the unwind pha
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugExceptionUnwindCallbackType {  
     DEBUG_EXCEPTION_UNWIND_BEGIN = 1,  
     DEBUG_EXCEPTION_INTERCEPTED  = 2  
@@ -46,4 +46,5 @@ typedef enum CorDebugExceptionUnwindCallbackType {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

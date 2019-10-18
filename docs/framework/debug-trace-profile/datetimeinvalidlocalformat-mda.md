@@ -81,5 +81,6 @@ String serialized = XmlConvert.ToString(myDateTime,
 ```  
   
 ## See also
+
 - <xref:System.Globalization.DateTimeFormatInfo>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

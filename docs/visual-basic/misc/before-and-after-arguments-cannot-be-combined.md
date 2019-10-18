@@ -10,7 +10,8 @@ An argument list includes both the `Before` and `After` arguments, which are mut
   
 ## To correct this error  
   
-1.  Remove either the `Before` or `After` argument.  
+1. Remove either the `Before` or `After` argument.  
   
 ## See also
+
 - <xref:System.Xml.XmlNodeOrder>

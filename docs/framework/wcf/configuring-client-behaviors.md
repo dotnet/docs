@@ -46,4 +46,5 @@ Windows Communication Foundation (WCF) configures behaviors in two ways: either 
  [!code-vb[ChannelFactoryBehaviors#10](../../../samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
   
 ## See also
-- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
+
+- [\<behaviors>](../configure-apps/file-schema/wcf/behaviors.md)

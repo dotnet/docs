@@ -15,15 +15,16 @@ This example shows how to animate changes to the thickness of a border by using 
 ## Example  
  The following example animates the thickness of a border by using <xref:System.Windows.Media.Animation.ThicknessAnimation>. The example uses the <xref:System.Windows.Controls.Border.BorderThickness%2A> property of <xref:System.Windows.Controls.Border>.  
   
- [!code-csharp[BasicAnimations_snip#ThicknessAnimationWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/ThicknessAnimationExample.cs#thicknessanimationwholepage)]
- [!code-vb[BasicAnimations_snip#ThicknessAnimationWholePage](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/ThicknessAnimationExample.vb#thicknessanimationwholepage)]  
+ [!code-csharp[BasicAnimations_snip#ThicknessAnimationWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/ThicknessAnimationExample.cs#thicknessanimationwholepage)]
+ [!code-vb[BasicAnimations_snip#ThicknessAnimationWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/ThicknessAnimationExample.vb#thicknessanimationwholepage)]  
   
  For the complete sample, see [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).  
   
 ## See also
+
 - <xref:System.Windows.Media.Animation.ThicknessAnimation>
 - <xref:System.Windows.Controls.Border.BorderThickness%2A>
 - <xref:System.Windows.Controls.Border>
-- [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)
+- [Animation Overview](../graphics-multimedia/animation-overview.md)
 - [Animation and Timing How-to Topics](../graphics-multimedia/animation-and-timing-how-to-topics.md)
-- [Animate the Thickness of a Border by Using Key Frames](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-the-thickness-of-a-border-by-using-key-frames.md)
+- [Animate the Thickness of a Border by Using Key Frames](../graphics-multimedia/how-to-animate-the-thickness-of-a-border-by-using-key-frames.md)

@@ -19,20 +19,20 @@ You begin a structure declaration with the [Structure Statement](../../../../vis
   
 ### To declare a structure  
   
-1.  Create the beginning and ending statements for the structure.  
+1. Create the beginning and ending statements for the structure.  
   
      You can specify the access level of a structure using the [Public](../../../../visual-basic/language-reference/modifiers/public.md), [Protected](../../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../../visual-basic/language-reference/modifiers/friend.md), or [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword, or you can let it default to `Public`.  
   
-    ```  
+    ```vb  
     Private Structure employee  
     End Structure  
     ```  
   
-2.  Add elements to the body of the structure.  
+2. Add elements to the body of the structure.  
   
      A structure must have at least one element. You must declare every element and specify an access level for it. If you use the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) without any keywords, the accessibility defaults to `Public`.  
   
-    ```  
+    ```vb  
     Private Structure employee  
         Public givenName As String  
         Public familyName As String  
@@ -50,6 +50,7 @@ You begin a structure declaration with the [Structure Statement](../../../../vis
      In addition to variables, `Sub` procedures, and events, you can also define constants, `Function` procedures, and properties in a structure. You can designate at most one property as the *default property*, provided it takes at least one argument. You can handle an event with a [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)`Sub` procedure. For more information, see [How to: Declare and Call a Default Property in Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md).  
   
 ## See also
+
 - [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
 - [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)

@@ -22,11 +22,11 @@ The Type Library Importer converts the type definitions found within a COM type 
   
 ## Syntax  
   
-```  
+```console  
 tlbimp tlbFile [options]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Argument|Description|  
 |--------------|-----------------|  
@@ -37,7 +37,7 @@ tlbimp tlbFile [options]
 |**/asmversion:** *versionnumber*|Specifies the version number of the assembly to produce. Specify *versionnumber* in the format *major.minor.build.revision*.|  
 |**/company:** `companyinformation`|Adds company information to the output assembly.|  
 |**/copyright:** `copyrightinformation`|Adds copyright information to the output assembly. This information can be viewed in the **File Properties** dialog box for the assembly.|  
-|**/delaysign**|Specifies to Tlbimp.exe to sign the resulting assembly with a strong name using delayed signing. You must specify this option with either the **/keycontainer:**, **/keyfile:**, or **/publickey:** option. For more information on the delayed signing process, see [Delay Signing an Assembly](../app-domains/delay-sign-assembly.md).|  
+|**/delaysign**|Specifies to Tlbimp.exe to sign the resulting assembly with a strong name using delayed signing. You must specify this option with either the **/keycontainer:**, **/keyfile:**, or **/publickey:** option. For more information on the delayed signing process, see [Delay Signing an Assembly](../../standard/assembly/delay-sign.md).|  
 |**/help**|Displays command syntax and options for the tool.|  
 |**/keycontainer:** *containername*|Signs the resulting assembly with a strong name using the public/private key pair found in the key container specified by *containername*.|  
 |**/keyfile:** *filename*|Signs the resulting assembly with a strong name using the publisher's official public/private key pair found in *filename*.|  
@@ -46,7 +46,7 @@ tlbimp tlbFile [options]
 |**/noclassmembers**|Prevents Tlbimp.exe from adding members to classes. This avoids a potential <xref:System.TypeLoadException>.|  
 |**/nologo**|Suppresses the Microsoft startup banner display.|  
 |**/out:** *filename*|Specifies the name of the output file, assembly, and namespace in which to write the metadata definitions. The **/out** option has no effect on the assembly's namespace if the type library specifies the Interface Definition Language (IDL) custom attribute that explicitly controls the assembly's namespace. If you do not specify this option, Tlbimp.exe writes the metadata to a file with the same name as the actual type library defined within the input file and assigns it a .dll extension. If the output file is the same name as the input file, the tool generates an error to prevent overwriting the type library.|  
-|**/primary**|Produces a primary interop assembly for the specified type library. Information is added to the assembly indicating that the publisher of the type library produced the assembly. By specifying a primary interop assembly, you differentiate a publisher's assembly from any other assemblies that are created from the type library using Tlbimp.exe. You should only use the **/primary** option if you are the publisher of the type library that you are importing with Tlbimp.exe. Note that you must sign a primary interop assembly with a [strong name](../app-domains/strong-named-assemblies.md). For more information, see [Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).|  
+|**/primary**|Produces a primary interop assembly for the specified type library. Information is added to the assembly indicating that the publisher of the type library produced the assembly. By specifying a primary interop assembly, you differentiate a publisher's assembly from any other assemblies that are created from the type library using Tlbimp.exe. You should only use the **/primary** option if you are the publisher of the type library that you are importing with Tlbimp.exe. Note that you must sign a primary interop assembly with a [strong name](../../standard/assembly/strong-named.md). For more information, see [Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).|  
 |**/product:** `productinformation`|Adds product information to the output assembly. This information can be viewed in the **File Properties** dialog box for the assembly.|  
 |**/productversion:** `productversioninformation`|Adds product version information to the output assembly. There are no format restrictions. This information can be viewed in the **File Properties** dialog box for the assembly.|  
 |**/publickey:** *filename*|Specifies the file containing the public key to use to sign the resulting assembly. If you specify the **/keyfile:** or **/keycontainer:** option instead of **/publickey:**, Tlbimp.exe generates the public key from the public/private key pair supplied with **/keyfile:** or **/keycontainer:**. The **/publickey:** option supports test key and delay signing scenarios. The file is in the format generated by Sn.exe. For more information, see the **-p** option of Sn.exe in [Strong Name Tool (Sn.exe)](sn-exe-strong-name-tool.md).|  
@@ -65,45 +65,47 @@ tlbimp tlbFile [options]
 |**/?**|Displays command syntax and options for the tool.|  
   
 > [!NOTE]
->  The command-line options for Tlbimp.exe are case-insensitive and can be supplied in any order. You only need to specify enough of the option to uniquely identify it. Therefore, **/n** is equivalent to **/nologo** and **/ou:** *outfile.dll* is equivalent to **/out:** *outfile.dll*.  
+> The command-line options for Tlbimp.exe are case-insensitive and can be supplied in any order. You only need to specify enough of the option to uniquely identify it. Therefore, **/n** is equivalent to **/nologo** and **/ou:** *outfile.dll* is equivalent to **/out:** *outfile.dll*.  
   
 ## Remarks  
  Tlbimp.exe performs conversions on an entire type library at one time. You cannot use the tool to generate type information for a subset of the types defined within a single type library.  
   
- It is often useful or necessary to be able to assign [strong names](../app-domains/strong-named-assemblies.md) to assemblies. Therefore, Tlbimp.exe includes options for supplying the information necessary to generate strongly named assemblies. Both the **/keyfile:** and **/keycontainer:** options sign assemblies with strong names. Therefore, it is logical to supply only one of these options at a time.  
+ It is often useful or necessary to be able to assign [strong names](../../standard/assembly/strong-named.md) to assemblies. Therefore, Tlbimp.exe includes options for supplying the information necessary to generate strongly named assemblies. Both the **/keyfile:** and **/keycontainer:** options sign assemblies with strong names. Therefore, it is logical to supply only one of these options at a time.  
   
- You can specify multiple reference assemblies by using the **/reference** option multiple times.  
-  
+ You can specify multiple reference assemblies by using the **/reference** option multiple times.
+ 
+ Due to the way in which Tlbimp.exe generates assemblies, it is not possible to retarget an assembly to a different `mscorlib` version. For example, if you desire to generate an assembly that targets .NET Framework 2.0, the Tlbimp.exe shipped with the .NET Framework 2.0/3.0/3.5 SDK must be used. In order to target .NET Framework 4.x, the Tlbimp.exe shipped with a .NET Framework 4.x SDK should be used.
+ 
  A resource ID can optionally be appended to a type library file when importing a type library from a module containing multiple type libraries. Tlbimp.exe is able to locate this file only if it is in the current directory or if you specify the full path. See the example later in this topic.  
   
 ## Examples  
  The following command generates an assembly with the same name as the type library found in `myTest.tlb` and with the .dll extension.  
   
-```  
+```console  
 tlbimp myTest.tlb   
 ```  
   
  The following command generates an assembly with the name `myTest.dll`.  
   
-```  
+```console  
 tlbimp  myTest.tlb  /out:myTest.dll  
 ```  
   
  The following command generates an assembly with the same name as the type library specified by `MyModule.dll\1` and with the .dll extension. `MyModule.dll\1` must be located in the current directory.  
   
-```  
+```console  
 tlbimp MyModule.dll\1  
 ```  
   
  The following command generates an assembly with the name `myTestLib.dll` for the type library `TestLib.dll`. The **/transform:dispret** option transforms any [out, retval] parameters of methods on dispinterfaces in the type library into return values in the managed library.  
   
-```  
+```console  
 tlbimp TestLib.dll /transform:dispret /out:myTestLib.dll  
 ```  
   
  The type library `TestLib.dll`, in the preceding example, includes a dispinterface method named `SomeMethod` that returns void and has an [out, retval] parameter. The following code is the input type library method signature for `SomeMethod` in `TestLib.dll`.  
   
-```  
+```cpp  
 void SomeMethod([out, retval] VARIANT_BOOL*);  
 ```  
   
@@ -120,12 +122,13 @@ void SomeMethod(out bool x);
 ```  
   
 ## See also
+
 - [Tools](index.md)
 - [Tlbexp.exe (Type Library Exporter)](tlbexp-exe-type-library-exporter.md)
 - [Importing a Type Library as an Assembly](../interop/importing-a-type-library-as-an-assembly.md)
 - [Type Library to Assembly Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
 - [Ildasm.exe (IL Disassembler)](ildasm-exe-il-disassembler.md)
 - [Sn.exe (Strong Name Tool)](sn-exe-strong-name-tool.md)
-- [Strong-Named Assemblies](../app-domains/strong-named-assemblies.md)
+- [Strong-Named Assemblies](../../standard/assembly/strong-named.md)
 - [Attributes for Importing Type Libraries into Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/y6a7ak23(v=vs.100))
 - [Command Prompts](developer-command-prompt-for-vs.md)

@@ -23,14 +23,14 @@ Performs callbacks on events that have been registered by using a call to the [I
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnEvent (  
     [in] EClrEvent event,  
     [in] PVOID     data  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `event`  
  [in] One of the [EClrEvent](../../../../docs/framework/unmanaged-api/hosting/eclrevent-enumeration.md) values, which indicates the type of event.  
   
@@ -63,6 +63,7 @@ HRESULT OnEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [EClrEvent Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrevent-enumeration.md)
 - [IActionOnCLREvent Interface](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-interface.md)

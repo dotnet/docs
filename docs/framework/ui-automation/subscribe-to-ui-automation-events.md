@@ -10,12 +10,10 @@ helpviewer_keywords:
   - "events, subscribing to"
   - "listening for events"
 ms.assetid: b688effa-b3e8-4b05-944d-05ed89a245aa
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Subscribe to UI Automation Events
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic shows how to subscribe to events raised by UI Automation providers.  
   
@@ -32,7 +30,8 @@ ms.author: "mhopkins"
  [!code-vb[UIAClient_snip#102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#102)]  
   
 ## See also
+
 - <xref:System.Windows.Automation.Automation.AddAutomationEventHandler%2A>
 - <xref:System.Windows.Automation.Automation.RemoveAllEventHandlers%2A>
 - <xref:System.Windows.Automation.Automation.RemoveAutomationEventHandler%2A>
-- [UI Automation Events Overview](../../../docs/framework/ui-automation/ui-automation-events-overview.md)
+- [UI Automation Events Overview](ui-automation-events-overview.md)

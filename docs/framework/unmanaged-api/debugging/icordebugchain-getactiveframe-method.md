@@ -23,13 +23,13 @@ Gets the active (that is, most recent) frame on the chain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetActiveFrame (  
     [out] ICorDebugFrame   **ppFrame  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFrame`  
  [out] A pointer to the address of an ICorDebugFrame object that represents the active (that is, most recent) frame on the chain.  
   

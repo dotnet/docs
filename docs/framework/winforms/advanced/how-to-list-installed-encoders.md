@@ -15,16 +15,17 @@ You may want to list the image encoders available on a computer, to determine wh
 ## Example  
  The following code example outputs the list of installed encoders and their property values.  
   
- [!code-csharp[UsingImageEncodersDecoders#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#1)]
- [!code-vb[UsingImageEncodersDecoders#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#1)]  
+ [!code-csharp[UsingImageEncodersDecoders#1](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#1)]
+ [!code-vb[UsingImageEncodersDecoders#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
  This example requires:  
   
--   A Windows Forms application.  
+- A Windows Forms application.  
   
--   A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
+- A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also
-- [How to: List Installed Decoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-decoders.md)
-- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)
+
+- [How to: List Installed Decoders](how-to-list-installed-decoders.md)
+- [Using Image Encoders and Decoders in Managed GDI+](using-image-encoders-and-decoders-in-managed-gdi.md)

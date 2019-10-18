@@ -12,25 +12,25 @@ The types of nodes recognized in an XPath query are not the same node types foun
 ## W3C XPath Node Types  
  The types of nodes recognized in an XPath query are not the types of nodes found in the Document Object Model (DOM). The following are the XPath node types represented by the <xref:System.Xml.XPath.XPathNodeType> enumeration.  
   
--   <xref:System.Xml.XPath.XPathNodeType.All>  
+- <xref:System.Xml.XPath.XPathNodeType.All>  
   
--   <xref:System.Xml.XPath.XPathNodeType.Attribute>  
+- <xref:System.Xml.XPath.XPathNodeType.Attribute>  
   
--   <xref:System.Xml.XPath.XPathNodeType.Comment>  
+- <xref:System.Xml.XPath.XPathNodeType.Comment>  
   
--   <xref:System.Xml.XPath.XPathNodeType.Element>  
+- <xref:System.Xml.XPath.XPathNodeType.Element>  
   
--   <xref:System.Xml.XPath.XPathNodeType.Namespace>  
+- <xref:System.Xml.XPath.XPathNodeType.Namespace>  
   
--   <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>  
+- <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>  
   
--   <xref:System.Xml.XPath.XPathNodeType.Root>  
+- <xref:System.Xml.XPath.XPathNodeType.Root>  
   
--   <xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace>  
+- <xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace>  
   
--   <xref:System.Xml.XPath.XPathNodeType.Text>  
+- <xref:System.Xml.XPath.XPathNodeType.Text>  
   
--   <xref:System.Xml.XPath.XPathNodeType.Whitespace>  
+- <xref:System.Xml.XPath.XPathNodeType.Whitespace>  
   
  These node types are based on the XPath data model, where the nodes are derived from the XML Information Set. The <xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace> and <xref:System.Xml.XPath.XPathNodeType.Whitespace> node types are Microsoft .NET Framework extensions to the base node types described in the XPath data model.  
   

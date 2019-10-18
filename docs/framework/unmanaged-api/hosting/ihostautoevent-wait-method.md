@@ -23,14 +23,14 @@ Causes the current [IHostAutoEvent](../../../../docs/framework/unmanaged-api/hos
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Wait (  
     [in] DWORD dwMilliseconds,  
     [in] DWORD option  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMilliseconds`  
  [in] The number of milliseconds the current `IHostAutoEvent` instance should wait before returning, if no thread or fiber takes ownership.  
   
@@ -59,6 +59,7 @@ HRESULT Wait (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
 - [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)

@@ -21,15 +21,14 @@ The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace supports 
 ## Example  
  The following code example demonstrates how to use <xref:System.Windows.Forms.ToolStripPanel> controls with an MDI form. The form also supports menu merging with child menus.  
   
- [!code-csharp[System.Windows.Forms.ToolStrip.MdiForm#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.MdiForm/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.ToolStrip.MdiForm#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.MdiForm/VB/Form1.vb#1)]  
+ [!code-csharp[System.Windows.Forms.ToolStrip.MdiForm#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.MdiForm/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ToolStrip.MdiForm#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.MdiForm/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
  This code example requires:  
   
--   References to the System.Drawing and System.Windows.Forms assemblies.  
-  
- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
+- References to the System.Drawing and System.Windows.Forms assemblies.  
   
 ## See also
-- [ToolStrip Control](../../../../docs/framework/winforms/controls/toolstrip-control-windows-forms.md)
+
+- [ToolStrip Control](toolstrip-control-windows-forms.md)

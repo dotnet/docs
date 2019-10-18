@@ -23,13 +23,13 @@ Removes a previously set breakpoint at the given address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClearUnmanagedBreakpoint (  
     [in] CORDB_ADDRESS   address  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the address at which the breakpoint was set.  
   

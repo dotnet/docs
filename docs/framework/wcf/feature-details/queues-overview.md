@@ -30,9 +30,9 @@ This section introduces the general and core concepts behind queued communicatio
 ## Queues and Transactions  
  Transactions allow you to group a set of operations together so that if one operation fails, all of the operations fail. An example of how to use transactions is when a person uses an ATM to transfer $1,000 from his savings account to his checking account. This entails the following operations:  
   
--   Withdrawing $1,000 from the savings account.  
+- Withdrawing $1,000 from the savings account.  
   
--   Depositing $1,000 into the checking account.  
+- Depositing $1,000 into the checking account.  
   
  If the first operation succeeds and $1,000 is withdrawn from the savings account but the second operation fails, the $1,000 is lost because it has already been withdrawn from the savings account. To keep the accounts in a valid state, if one operation fails, both operations must fail.  
   
@@ -53,9 +53,9 @@ This section introduces the general and core concepts behind queued communicatio
   
  Any error, such as a message failing to reach the target queue or the Time-To-Live expiring, must be processed separately. It is not uncommon, therefore, for queued applications to write two sets of logic:  
   
--   The normal client and service logic of sending and receiving messages.  
+- The normal client and service logic of sending and receiving messages.  
   
--   Compensation logic to handle messages from the failed transmission or delivery.  
+- Compensation logic to handle messages from the failed transmission or delivery.  
   
  The following sections discuss these concepts.  
   
@@ -68,7 +68,7 @@ This section introduces the general and core concepts behind queued communicatio
  After a message makes it to the target queue, the service may repeatedly fail to process the message. For example, an application reading a message from the queue under a transaction and updating a database may find the database temporarily disconnected. In this case, the transaction is rolled back, a new transaction is created, and the message is reread from the queue. A second attempt may succeed or fail. In some cases, depending on the cause of the error, the message may repeatedly fail delivery to the application. In this case, the message is deemed as "poison." Such messages are moved to a poison queue that can be read by a poison-handling application.  
   
 ## See also
-- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
+
 - [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
 - [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
 - [Dead Letter Queues](../../../../docs/framework/wcf/samples/dead-letter-queues.md)

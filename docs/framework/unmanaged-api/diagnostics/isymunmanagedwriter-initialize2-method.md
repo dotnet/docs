@@ -23,7 +23,7 @@ Sets the metadata emitter interface with which this writer will be associated, a
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Initialize2(  
     [in] IUnknown     *emitter,  
     [in] const WCHAR  *tempfilename,  
@@ -32,7 +32,7 @@ HRESULT Initialize2(
     [in] const WCHAR  *finalfilename);  
 ```  
   
-#### Parameters  
+## Parameters  
  `emitter`  
  [in] A pointer to the metadata emitter interface.  
   
@@ -55,5 +55,6 @@ HRESULT Initialize2(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
 - [Initialize Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-initialize-method.md)

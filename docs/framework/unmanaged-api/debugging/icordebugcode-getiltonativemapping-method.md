@@ -23,7 +23,7 @@ Gets an array of "COR_DEBUG_IL_TO_NATIVE_MAP" instances that represent mappings 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILToNativeMapping (  
     [in]  ULONG32    cMap,  
     [out] ULONG32    *pcMap,  
@@ -32,7 +32,7 @@ HRESULT GetILToNativeMapping (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cMap`  
  [in] The size of the `map` array.  
   
@@ -57,4 +57,5 @@ HRESULT GetILToNativeMapping (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-- [ICorDebugCode Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)
+
+- [ICorDebugCode Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)

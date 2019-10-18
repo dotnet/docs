@@ -10,11 +10,11 @@ The version number for the current installed version of [!INCLUDE[TLA#tla_wincli
   
  To find the version number:  
   
-1.  On the **Start** menu, click **Run**.  
+1. On the **Start** menu, click **Run**.  
   
-2.  In **Open**, type **regedit.exe**.  
+2. In **Open**, type **regedit.exe**.  
   
-3.  Open the following key:  
+3. Open the following key:  
   
  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0\Setup\Windows Presentation Foundation`  
   

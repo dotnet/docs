@@ -39,7 +39,7 @@ Provides methods to support debugger exception handling and managed debugging as
  A debugger must implement `ICorDebugManagedCallback2` if it is debugging .NET Framework 2.0 applications. An instance of `ICorDebugManagedCallback` or `ICorDebugManagedCallback2` is passed as the callback object to [ICorDebug::SetManagedHandler](../../../../docs/framework/unmanaged-api/debugging/icordebug-setmanagedhandler-method.md).  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -51,6 +51,7 @@ Provides methods to support debugger exception handling and managed debugging as
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

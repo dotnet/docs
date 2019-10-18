@@ -23,7 +23,7 @@ Gets the value of the custom attribute, given its metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCustomAttributeProps (  
    [in]            mdCustomAttribute   cv,  
    [out, optional] mdToken             *ptkObj,  
@@ -33,7 +33,7 @@ HRESULT GetCustomAttributeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cv`  
  [in] A metadata token that represents the custom attribute to be retrieved.  
   
@@ -62,5 +62,6 @@ HRESULT GetCustomAttributeProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

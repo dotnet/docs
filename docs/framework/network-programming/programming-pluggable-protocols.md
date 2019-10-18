@@ -26,7 +26,8 @@ The abstract <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> clas
  To take advantage of pluggable protocols, your <xref:System.Net.WebRequest> descendants must provide a default request-and-response transaction that does not require protocol-specific properties to be set. For example, the <xref:System.Net.HttpWebRequest> class, which implements the <xref:System.Net.WebRequest> class for HTTP, provides a `GET` request by default and returns an <xref:System.Net.HttpWebResponse> that contains the stream returned from the Web server.  
   
 ## See also
-- [Deriving from WebRequest](../../../docs/framework/network-programming/deriving-from-webrequest.md)
-- [Deriving from WebResponse](../../../docs/framework/network-programming/deriving-from-webresponse.md)
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
-- [How to: Typecast a WebRequest to Access Protocol Specific Properties](../../../docs/framework/network-programming/how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md)
+
+- [Deriving from WebRequest](deriving-from-webrequest.md)
+- [Deriving from WebResponse](deriving-from-webresponse.md)
+- [Network Programming in the .NET Framework](index.md)
+- [How to: Typecast a WebRequest to Access Protocol Specific Properties](how-to-typecast-a-webrequest-to-access-protocol-specific-properties.md)

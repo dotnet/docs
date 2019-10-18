@@ -18,5 +18,6 @@ The <xref:System.Data.DataTableReader> obtains the contents of one or more <xref
  [!code-vb[DataWorks DataTableReader.NextResult#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTableReader.NextResult/VB/source.vb#1)]  
   
 ## See also
-- [DataTableReaders](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatablereaders.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [DataTableReaders](datatablereaders.md)
+- [ADO.NET Overview](../ado-net-overview.md)

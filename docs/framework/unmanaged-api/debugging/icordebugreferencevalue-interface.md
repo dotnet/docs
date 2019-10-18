@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugReferenceValue Interface1"
+title: "ICorDebugReferenceValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugReferenceValue"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugReferenceValue Interface1
+# ICorDebugReferenceValue Interface
 Provides methods that manage a value that is a reference to an object. (That is, this interface provides methods that manage a pointer.) This interface implements "ICorDebugValue".  
   
 ## Methods  
@@ -36,7 +36,7 @@ Provides methods that manage a value that is a reference to an object. (That is,
  The `ICorDebugReferenceValue` object may be implicitly invalidated after the debugged process has been continued. The derived "ICorDebugHandleValue" is not invalidated until it is explicitly released or exposed.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -48,6 +48,5 @@ Provides methods that manage a value that is a reference to an object. (That is,
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-
 
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

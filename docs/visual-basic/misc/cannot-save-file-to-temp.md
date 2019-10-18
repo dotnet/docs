@@ -10,9 +10,10 @@ Either a component cannot find a directory named TEMP, or the drive or partition
   
 ## To correct this error  
   
-1.  Create a directory named "TEMP" and set the TEMP environment variable equal to its path.  
+1. Create a directory named "TEMP" and set the TEMP environment variable equal to its path.  
   
-2.  Make space on the drive by erasing unnecessary files, or create a TEMP directory on another partition and set the TEMP environment variable equal to its path.  
+2. Make space on the drive by erasing unnecessary files, or create a TEMP directory on another partition and set the TEMP environment variable equal to its path.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

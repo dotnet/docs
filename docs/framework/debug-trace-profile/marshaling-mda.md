@@ -19,13 +19,13 @@ The `marshaling` managed debugging assistant (MDA) is activated when the CLR set
 ## Output  
  The MDA displays the type of the parameter or field in the managed and unmanaged contexts, and the structure or method containing the type.  The following is an example of the output for a field:  
   
-```  
+```output
 Marshaling from 'Char' to 'ANSI char'  
 name="assembly!Namespace.Class::myChar  
 ```  
   
 ## Configuration  
- The MDA configuration allows you to filter the reported marshaling information based on the involved field or method names.  The following example shows the use of the `methodFilter`, `fieldFilter`, and `match` elements to specify filters.  Setting the `name` attribute to an asterisk (*) will match everything.  
+ The MDA configuration allows you to filter the reported marshaling information based on the involved field or method names.  The following example shows the use of the `methodFilter`, `fieldFilter`, and `match` elements to specify filters.  Setting the `name` attribute to an asterisk (\*) will match everything.  
   
 ```xml  
 <mdaConfig>  
@@ -45,6 +45,7 @@ name="assembly!Namespace.Class::myChar
 ```  
   
 ## See also
+
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

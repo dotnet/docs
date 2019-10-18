@@ -32,7 +32,7 @@ Defines a list or table.
 </list>  
 ```  
   
-#### Parameters  
+## Parameters  
  `type`  
  The type of the list. Must be a "bullet" for a bulleted list, "number" for a numbered list, or "table" for a two-column table.  
   
@@ -49,12 +49,13 @@ Defines a list or table.
   
  A list or table can have as many `<item>` blocks as needed.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<list>` tag to define a bulleted list in the remarks section.  
   
- [!code-vb[VbVbcnXmlDocComments#5](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/list_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#5)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

@@ -23,7 +23,7 @@ Gets the namespaces that are being used within this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNamespaces(  
     [in]  ULONG32  cNameSpaces,  
     [out] ULONG32  *pcNameSpaces,  
@@ -32,7 +32,7 @@ HRESULT GetNamespaces(
         ISymUnmanagedNamespace* namespaces[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cNameSpaces`  
  [in] The size of the `namespaces` array.  
   
@@ -49,4 +49,5 @@ HRESULT GetNamespaces(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)

@@ -23,7 +23,7 @@ Modifies the specified `ManifestResource` metadata structure.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetManifestResourceProps (  
     [in] mdManifestResource  mr,  
     [in] mdToken             tkImplementation,   
@@ -32,7 +32,7 @@ HRESULT SetManifestResourceProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mr`  
  [in] The token that specifies the `ManifestResource` metadata structure to be modified.  
   
@@ -58,4 +58,5 @@ HRESULT SetManifestResourceProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

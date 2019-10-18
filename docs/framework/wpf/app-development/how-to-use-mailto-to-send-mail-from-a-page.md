@@ -8,12 +8,13 @@ helpviewer_keywords:
 ms.assetid: b64b9518-df17-4232-94f2-455a4f77ee48
 ---
 # How to: Use mailto: to Send Mail From a Page
-This example shows how to use <xref:System.Windows.Documents.Hyperlink> in conjunction with a **mailto:**[!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)].  
+This example shows how to use <xref:System.Windows.Documents.Hyperlink> in conjunction with a **mailto:** uniform resource identifier (URI).  
   
 ## Example  
- The following code shows how to use a **mailto:**[!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] to open a new mail window that contains an email address, and email address and a subject, and an email address, subject, and body.  
+ The following code shows how to use a **mailto:** uniform resource identifier (URI) to open a new mail window that contains an email address, and email address and a subject, and an email address, subject, and body.  
   
- [!code-xaml[HOWTONavigationMailToSnippet#MailToMARKUP](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationMailToSnippet/CS/HomePage.xaml#mailtomarkup)]  
+ [!code-xaml[HOWTONavigationMailToSnippet#MailToMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationMailToSnippet/CS/HomePage.xaml#mailtomarkup)]  
   
 ## See also
-- [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)
+
+- [Pack URIs in WPF](pack-uris-in-wpf.md)

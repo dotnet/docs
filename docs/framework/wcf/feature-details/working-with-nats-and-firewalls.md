@@ -31,19 +31,19 @@ The client and server of a network connection frequently do not have a direct an
 ## Choosing a Transport and Message Exchange Pattern  
  Selecting a transport and MEP is a three-step process:  
   
-1.  Analyze the addressability of the endpoint machines. Enterprise servers commonly have direct addressability, while end users commonly have their addressability blocked by NATs. If both endpoints are behind a NAT, such as in peer-to-peer scenarios between end users, then you might need a technology such as Teredo to provide addressability.  
+1. Analyze the addressability of the endpoint machines. Enterprise servers commonly have direct addressability, while end users commonly have their addressability blocked by NATs. If both endpoints are behind a NAT, such as in peer-to-peer scenarios between end users, then you might need a technology such as Teredo to provide addressability.  
   
-2.  Analyze the protocol and port restrictions of the endpoint machines. Enterprise servers are typically behind strong firewalls that block many ports. However, port 80 is frequently open to permit HTTP traffic, and port 443 is open to permit HTTPS traffic. End users are less likely to have port restrictions but might be behind a firewall that permits only outgoing connections. Some firewalls permit management by applications on the endpoint to selectively open connections.  
+2. Analyze the protocol and port restrictions of the endpoint machines. Enterprise servers are typically behind strong firewalls that block many ports. However, port 80 is frequently open to permit HTTP traffic, and port 443 is open to permit HTTPS traffic. End users are less likely to have port restrictions but might be behind a firewall that permits only outgoing connections. Some firewalls permit management by applications on the endpoint to selectively open connections.  
   
-3.  Compute the transports and MEPs that the addressability and port restrictions of the network permit.  
+3. Compute the transports and MEPs that the addressability and port restrictions of the network permit.  
   
  A common topology for client-server applications is to have clients that are behind a NAT without Teredo with an outbound-only firewall and a server that is directly addressable with a strong firewall. In this scenario, the TCP transport with a duplex MEP and an HTTP transport with a request-reply MEP work well. A common topology for peer-to-peer applications is to have both endpoints behind NATs and firewalls. In this scenario, and in scenarios where the network topology is unknown, consider the following recommendations:  
   
--   Do not use dual transports. A dual transport opens more connections, which reduces the chance of connecting successfully.  
+- Do not use dual transports. A dual transport opens more connections, which reduces the chance of connecting successfully.  
   
--   Support establishing back channels over the originating connection. Using back channels, such as in duplex TCP, opens fewer connections, which increases the chance of connecting successfully.  
+- Support establishing back channels over the originating connection. Using back channels, such as in duplex TCP, opens fewer connections, which increases the chance of connecting successfully.  
   
--   Employ a reachable service for either registering endpoints or relaying traffic. Using a globally reachable connection service, such as a Teredo server, greatly increases the chance of connecting successfully when the network topology is restrictive or unknown.  
+- Employ a reachable service for either registering endpoints or relaying traffic. Using a globally reachable connection service, such as a Teredo server, greatly increases the chance of connecting successfully when the network topology is restrictive or unknown.  
   
  The following tables examine the one-way, request-reply, and duplex MEPs, and the standard TCP, TCP with Teredo, and standard and dual HTTP transports in WCF.  
   

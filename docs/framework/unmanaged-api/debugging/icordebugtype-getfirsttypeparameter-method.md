@@ -23,13 +23,13 @@ Gets an interface pointer to an ICorDebugType that represents the first <xref:Sy
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFirstTypeParameter (  
     [out] ICorDebugType   **value  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `value`  
  [out] A pointer to the address of an `ICorDebugType` object that represents the first parameter.  
   

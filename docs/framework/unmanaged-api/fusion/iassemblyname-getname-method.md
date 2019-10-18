@@ -19,18 +19,18 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # IAssemblyName::GetName Method
-Gets the simple, unencrypted name of the assembly referenced by this [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) object.  
+Gets the simple, unencrypted name of the assembly referenced by this [IAssemblyName](iassemblyname-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName (  
     [in, out] LPDWORD lpcwBuffer,  
     [out]     WCHAR *pwzName  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpcwBuffer`  
  [in, out] The size of `pwzName` in wide characters, including the null terminator character.  
   
@@ -38,11 +38,12 @@ HRESULT GetName (
  [out] A buffer to hold the name of the referenced assembly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+
+- [IAssemblyName Interface](iassemblyname-interface.md)

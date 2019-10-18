@@ -22,16 +22,16 @@ When developing a secure service or client using Windows Communication Foundatio
 The following command creates a self-signed certificate with a subject name of "RootCA" in the Current User Personal store.
 
 ```powershell
-PS $rootCert = New-SelfSignedCertificate -CertStoreLocation cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("1.3.6.1.4.1.311.21.10={text}1.3.6.1.5.5.7.3.1,1.3.6.1.5.5.7.3.2")
+$rootcert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -DnsName "RootCA" -TextExtension @("2.5.29.19={text}CA=true") -KeyUsage CertSign,CrlSign,DigitalSignature
 ```
 
 We need to export the certificate to a PFX file so that it can be imported to where it's needed in a later step. When exporting a certificate with the private key, a password is needed to protect it. We save the password in a `SecureString` and use the [Export-PfxCertificate](/powershell/module/pkiclient/export-pfxcertificate) cmdlet to export the certificate with the associated private key to a PFX file. We also save just the public certificate into a CRT file using the [Export-Certificate](/powershell/module/pkiclient/export-certificate) cmdlet.
 
 ```powershell
-PS [System.Security.SecureString]$rootcertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
-PS [String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootcert.Thumbprint)"
-PS Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootcertPassword
-PS Export-Certificate -Cert $rootCertPath -FilePath 'RootCA.crt'
+[System.Security.SecureString]$rootcertPassword = ConvertTo-SecureString -String "password" -Force -AsPlainText
+[String]$rootCertPath = Join-Path -Path 'cert:\CurrentUser\My\' -ChildPath "$($rootcert.Thumbprint)"
+Export-PfxCertificate -Cert $rootCertPath -FilePath 'RootCA.pfx' -Password $rootcertPassword
+Export-Certificate -Cert $rootCertPath -FilePath 'RootCA.crt'
 ```
 
 ## To create a new certificate signed by a root authority certificate
@@ -39,15 +39,15 @@ PS Export-Certificate -Cert $rootCertPath -FilePath 'RootCA.crt'
 The following command creates a certificate signed by the `RootCA` with a subject name of "SignedByRootCA" using the private key of the issuer.
 
 ```powershell
-PS $testCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "SignedByRootCA" -KeyExportPolicy Exportable -KeyLength 2048 -KeyUsage DigitalSignature,KeyEncipherment -Signer $rootCert
+$testCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName "SignedByRootCA" -KeyExportPolicy Exportable -KeyLength 2048 -KeyUsage DigitalSignature,KeyEncipherment -Signer $rootCert
 ```
 
 Similarly, we save the signed certificate with private key into a PFX file and just the public key into a CRT file.
 
 ```powershell
-PS [String]$testCertPath = Join-Path -Path 'cert:\LocalMachine\My\' -ChildPath "$($testCert.Thumbprint)"
-PS Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootcertPassword
-PS Export-Certificate -Cert $testCertPath -FilePath testcert.crt
+[String]$testCertPath = Join-Path -Path 'cert:\LocalMachine\My\' -ChildPath "$($testCert.Thumbprint)"
+Export-PfxCertificate -Cert $testCertPath -FilePath testcert.pfx -Password $rootcertPassword
+Export-Certificate -Cert $testCertPath -FilePath testcert.crt
 ```
 
 ## Installing a Certificate in the Trusted Root Certification Authorities Store
@@ -72,7 +72,7 @@ Once you have set up the temporary certificates, you can use them to develop WCF
 
 ### To specify a certificate as the client credential type
 
-- In the configuration file for a service, use the following XML to set the security mode to message, and the client credential type to certificate.
+1. In the configuration file for a service, use the following XML to set the security mode to message, and the client credential type to certificate.
 
     ```xml
     <bindings>
@@ -86,19 +86,19 @@ Once you have set up the temporary certificates, you can use them to develop WCF
     </bindings>
     ```
 
-In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value "CohoWinery."
+2. In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value "CohoWinery."
 
-```xml
-<behaviors>
-  <endpointBehaviors>
-    <behavior name="CertForClient">
-      <clientCredentials>
-        <clientCertificate findValue="CohoWinery" x509FindType="FindBySubjectName" />
-       </clientCredentials>
-     </behavior>
-   </endpointBehaviors>
-</behaviors>
-```
+    ```xml
+    <behaviors>
+      <endpointBehaviors>
+        <behavior name="CertForClient">
+          <clientCredentials>
+            <clientCertificate findValue="CohoWinery" x509FindType="FindBySubjectName" />
+          </clientCredentials>
+        </behavior>
+      </endpointBehaviors>
+    </behaviors>
+    ```
 
 For more information about using certificates in WCF, see [Working with Certificates](working-with-certificates.md).
 

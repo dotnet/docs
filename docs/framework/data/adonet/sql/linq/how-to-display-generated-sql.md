@@ -14,7 +14,7 @@ You can view the SQL code generated for queries and change processing by using t
   
  The lines from the console window are what you see when you execute the Visual Basic or C# code that follows.  
   
-```  
+```console  
 SELECT [t0].[CustomerID], [t0].[CompanyName], [t0].[ContactName], [t0].[ContactT  
 itle], [t0].[Address], [t0].[City], [t0].[Region], [t0].[PostalCode], [t0].[Coun  
 try], [t0].[Phone], [t0].[Fax]  
@@ -24,7 +24,7 @@ WHERE [t0].[City] = @p0
 -- Context: SqlProvider(Sql2005) Model: AttributedMetaModel Build: 3.5.20810.0  
 ```  
   
-```  
+```console  
 AROUT  
 BSBEV  
 CONSH  
@@ -37,4 +37,5 @@ SEVES
  [!code-vb[DLinqDebuggingSupport#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqDebuggingSupport/vb/Module1.vb#1)]  
   
 ## See also
-- [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)
+
+- [Debugging Support](debugging-support.md)

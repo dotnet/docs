@@ -6,7 +6,7 @@ ms.assetid: cc74234a-0bac-4327-9c8c-5a2ead15b595
 # Creating XML trees in C# (LINQ to XML)
 This section provides information about creating XML trees in C#.  
   
- For information about using the results of LINQ queries as the content for an <xref:System.Xml.Linq.XElement>, see [Functional Construction (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/functional-construction-linq-to-xml.md).  
+ For information about using the results of LINQ queries as the content for an <xref:System.Xml.Linq.XElement>, see [Functional Construction (LINQ to XML) (C#)](./functional-construction-linq-to-xml.md).  
   
 ## Constructing elements
  The signatures of the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XAttribute> constructors let you pass the contents of the element or attribute as arguments to the constructor. Because one of the constructors takes a variable number of arguments, you can pass any number of child elements. Of course, each of those child elements can contain their own child elements. For any element, you can add any number of attributes.  
@@ -44,17 +44,17 @@ XElement contacts =
   
  The `content` parameter is extremely flexible. It supports any type of object that is a valid child of an <xref:System.Xml.Linq.XElement>. The following rules apply to different types of objects passed in this parameter:  
   
--   A string is added as text content.  
+- A string is added as text content.  
   
--   An <xref:System.Xml.Linq.XElement> is added as a child element.  
+- An <xref:System.Xml.Linq.XElement> is added as a child element.  
   
--   An <xref:System.Xml.Linq.XAttribute> is added as an attribute.  
+- An <xref:System.Xml.Linq.XAttribute> is added as an attribute.  
   
--   An <xref:System.Xml.Linq.XProcessingInstruction>, <xref:System.Xml.Linq.XComment>, or <xref:System.Xml.Linq.XText> is added as child content.  
+- An <xref:System.Xml.Linq.XProcessingInstruction>, <xref:System.Xml.Linq.XComment>, or <xref:System.Xml.Linq.XText> is added as child content.  
   
--   An <xref:System.Collections.IEnumerable> is enumerated, and these rules are applied recursively to the results.  
+- An <xref:System.Collections.IEnumerable> is enumerated, and these rules are applied recursively to the results.  
   
--   For any other type, its `ToString` method is called and the result is added as text content.  
+- For any other type, its `ToString` method is called and the result is added as text content.  
   
 ### Creating an XElement with content  
  You can create an <xref:System.Xml.Linq.XElement> that contains simple content with a single method call. To do this, specify the content as the second parameter, as follows:  
@@ -230,4 +230,4 @@ Console.WriteLine("Child2 was {0}",
 
 ## See also
 
-- [Creating XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/creating-xml-trees.md)
+- [Creating XML Trees (C#)](./linq-to-xml-overview.md)

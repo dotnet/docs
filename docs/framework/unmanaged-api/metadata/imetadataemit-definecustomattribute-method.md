@@ -23,7 +23,7 @@ Creates a definition for a custom attribute with the specified metadata signatur
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineCustomAttribute (   
     [in]  mdToken     tkObj,   
     [in]  mdToken     tkType,   
@@ -33,7 +33,7 @@ HRESULT DefineCustomAttribute (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkObj`  
  [in] The token for the owner item.  
   
@@ -59,5 +59,6 @@ HRESULT DefineCustomAttribute (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

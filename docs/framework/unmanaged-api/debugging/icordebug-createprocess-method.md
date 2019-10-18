@@ -23,7 +23,7 @@ Launches a process and its primary thread under the control of the debugger.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateProcess (  
     [in]  LPCWSTR                     lpApplicationName,  
     [in]  LPWSTR                      lpCommandLine,  
@@ -40,7 +40,7 @@ HRESULT CreateProcess (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lpApplicationName`  
  [in] Pointer to a null-terminated string that specifies the module to be executed by the launched process. The module is executed in the security context of the calling process.  
   
@@ -96,4 +96,5 @@ HRESULT CreateProcess (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)

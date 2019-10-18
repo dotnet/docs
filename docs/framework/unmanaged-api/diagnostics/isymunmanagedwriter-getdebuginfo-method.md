@@ -25,7 +25,7 @@ Returns the information necessary for a compiler to write the debug directory en
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDebugInfo(  
     [in, out] IMAGE_DEBUG_DIRECTORY *pIDD,  
     [in]  DWORD cData,  
@@ -34,7 +34,7 @@ HRESULT GetDebugInfo(
         length_is(*pcData)] BYTE data[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIDD`  
  [in, out] A pointer to an IMAGE_DEBUG_DIRECTORY that the symbol writer will fill out.  
   
@@ -54,4 +54,5 @@ HRESULT GetDebugInfo(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

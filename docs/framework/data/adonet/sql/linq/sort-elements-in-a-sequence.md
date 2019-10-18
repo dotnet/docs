@@ -10,7 +10,7 @@ ms.assetid: d59b93a9-50c8-4770-a114-d902f6a0ea76
 Use the <xref:System.Linq.Enumerable.OrderBy%2A> operator to sort a sequence according to one or more keys.  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is designed to support ordering by simple primitive types, such as `string`, `int`, and so on. It does not support ordering for complex multi-valued classes, such as anonymous types. It also does not support `byte` datatypes.  
+> [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is designed to support ordering by simple primitive types, such as `string`, `int`, and so on. It does not support ordering for complex multi-valued classes, such as anonymous types. It also does not support `byte` datatypes.  
   
 ## Example  
  The following example sorts `Employees` by date of hire.  
@@ -37,7 +37,7 @@ Use the <xref:System.Linq.Enumerable.OrderBy%2A> operator to sort a sequence acc
  [!code-vb[DLinqQueryExamples#24](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#24)]  
   
 ## Example  
- The following example sorts Orders from `EmployeeID 1` by ship-to country, and then by highest to lowest freight.  
+ The following example sorts Orders from `EmployeeID 1` by `ShipCountry`, and then by highest to lowest freight.  
   
  [!code-csharp[DLinqQueryExamples#25](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#25)]
  [!code-vb[DLinqQueryExamples#25](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#25)]  
@@ -83,5 +83,6 @@ Use the <xref:System.Linq.Enumerable.OrderBy%2A> operator to sort a sequence acc
  `Carnarvon Tigers`  
   
 ## See also
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
-- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+
+- [Query Examples](query-examples.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)

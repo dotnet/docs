@@ -23,7 +23,7 @@ Accepts an assembly ID, and returns the assembly's name and the ID of its manife
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyInfo(  
     [in]  AssemblyID  assemblyId,  
     [in]  ULONG       cchName,  
@@ -34,7 +34,7 @@ HRESULT GetAssemblyInfo(
     [out] ModuleID    *pModuleId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `assemblyId`  
  [in] The identifier of the assembly.  
   
@@ -68,6 +68,7 @@ HRESULT GetAssemblyInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

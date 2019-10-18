@@ -23,7 +23,7 @@ Generates a hash over the contents of the file specified by a Unicode string.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromFileW (   
     [in]  LPCWSTR   wszFilePath,  
     [in, out] unsigned int   *piHashAlg,  
@@ -33,7 +33,7 @@ HRESULT GetHashFromFileW (
 );   
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The Unicode name of the file to hash.  
   
@@ -65,5 +65,6 @@ HRESULT GetHashFromFileW (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [GetHashFromFile Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-gethashfromfile-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

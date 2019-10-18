@@ -67,7 +67,7 @@ The .NET Standard metapackage is:
 The key .NET Core metapackages are:
 
 - [Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) - Describes the libraries that are part of the .NET Core distribution. Establishes the [`.NETCoreApp` framework](https://github.com/dotnet/core-setup/blob/release/1.1.0/pkg/projects/Microsoft.NETCore.App/Microsoft.NETCore.App.pkgproj). Depends on the smaller `NETStandard.Library`.
-- [Microsoft.AspNetCore.App](https://www.nuget.org/packages/Microsoft.AspNetCore.App) - Includes all the supported packages from ASP.NET Core and Entity Framework Core except those that contain third-party dependencies. See [Microsoft.AspNetCore.App metapackage for ASP.NET Core](/aspnet/core/fundamentals/metapackage) for more information.
+- [Microsoft.AspNetCore.App](https://www.nuget.org/packages/Microsoft.AspNetCore.App) - Includes all the supported packages from ASP.NET Core and Entity Framework Core except those that contain third-party dependencies. See [Microsoft.AspNetCore.App metapackage for ASP.NET Core](/aspnet/core/fundamentals/metapackage-app) for more information.
 - [Microsoft.AspNetCore.All](https://www.nuget.org/packages/Microsoft.AspNetCore.All) - Includes all the supported packages from ASP.NET Core, Entity Framework Core, and internal and third-party dependencies used by ASP.NET Core and Entity Framework Core. See [Microsoft.AspNetCore.All metapackage for ASP.NET Core 2.x](/aspnet/core/fundamentals/metapackage) for more information.
 - [Microsoft.NETCore.Portable.Compatibility](https://www.nuget.org/packages/Microsoft.NETCore.Portable.Compatibility) - A set of compatibility facades that enable mscorlib-based Portable Class Libraries (PCLs) to run on .NET Core.
 
@@ -92,7 +92,6 @@ The `.NETStandard,Version=1.3` framework is a package-based framework. It relies
 There is a two-way relationship between frameworks and packages. The first part is defining the APIs available for a given framework, for example `netstandard1.3`. Packages that target `netstandard1.3` (or compatible frameworks, like `netstandard1.0`) define the APIs available for `netstandard1.3`. That may sound like a circular definition, but it isn't. By virtue of being "package-based", the API definition for the framework comes from packages. The framework itself doesn't define any APIs.
 
 The second part of the relationship is asset selection. Packages can contain assets for multiple frameworks. Given a reference to a set of packages and/or metapackages, the framework is needed to determine which asset should be selected, for example `net46` or `netstandard1.3`. It is important to select the correct asset. For example, a `net46` asset is not likely to be compatible with .NET Framework 4.0 or .NET Core 1.0.
-
 
 You can see this relationship in the following image. The *API* targets and defines the *framework*. The *framework* is used for *asset selection*. The *asset* gives you the API.
 

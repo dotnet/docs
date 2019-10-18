@@ -23,14 +23,14 @@ Gets the smallest start line and largest end line for the method in a specific d
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceExtentInDocument(  
     [in]  ISymUnmanagedDocument *document,  
     [out] ULONG32* pstartLine,  
     [out] ULONG32* pendLine);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] A pointer to the document.  
   
@@ -47,4 +47,5 @@ HRESULT GetSourceExtentInDocument(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)

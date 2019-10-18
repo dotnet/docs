@@ -23,7 +23,7 @@ Gets the specified number of application domains that currently exist in the pro
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG  celt,  
     [out, size_is(celt), length_is(*pceltFetched)]   
@@ -32,7 +32,7 @@ HRESULT Next (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of elements to be retrieved.  
   
@@ -52,4 +52,5 @@ HRESULT Next (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishAppDomainEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md)

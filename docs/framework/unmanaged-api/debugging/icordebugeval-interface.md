@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEval Interface1"
+title: "ICorDebugEval Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugEval"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugEval Interface1
+# ICorDebugEval Interface
+
 Provides methods to enable the debugger to execute code within the context of the code being debugged.  
   
 ## Methods  
@@ -45,7 +46,7 @@ Provides methods to enable the debugger to execute code within the context of th
  If a deadlocked or infinite looping situation arises, the user code may never complete. In such a case, you must call [ICorDebugEval::Abort](../../../../docs/framework/unmanaged-api/debugging/icordebugeval-abort-method.md) before resuming the program.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -57,7 +58,5 @@ Provides methods to enable the debugger to execute code within the context of th
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-
-
 
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

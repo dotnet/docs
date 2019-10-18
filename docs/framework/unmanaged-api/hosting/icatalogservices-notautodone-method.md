@@ -23,9 +23,10 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NotAutodone ( );  
 ```  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

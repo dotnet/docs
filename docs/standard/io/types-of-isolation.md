@@ -26,29 +26,28 @@ Access to isolated storage is always restricted to the user who created it. To i
   
  Access to isolated storage is also restricted according to the identity associated with the application's domain and assembly, or with the assembly alone. The runtime obtains these identities in the following ways:  
   
--   Domain identity represents the evidence of the application, which in the case of a web application might be the full URL. For shell-hosted code, the domain identity might be based on the application directory path. For example, if the executable runs from the path C:\Office\MyApp.exe, the domain identity would be C:\Office\MyApp.exe.  
+- Domain identity represents the evidence of the application, which in the case of a web application might be the full URL. For shell-hosted code, the domain identity might be based on the application directory path. For example, if the executable runs from the path C:\Office\MyApp.exe, the domain identity would be C:\Office\MyApp.exe.  
   
--   Assembly identity is the evidence of the assembly. This might come from a cryptographic digital signature, which can be the assembly's [strong name](../../../docs/framework/app-domains/strong-named-assemblies.md), the software publisher of the assembly, or its URL identity. If an assembly has both a strong name and a software publisher identity, then the software publisher identity is used. If the assembly comes from the Internet and is unsigned, the URL identity is used. For more information about assemblies and strong names, see [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md).  
+- Assembly identity is the evidence of the assembly. This might come from a cryptographic digital signature, which can be the assembly's [strong name](../assembly/strong-named.md), the software publisher of the assembly, or its URL identity. If an assembly has both a strong name and a software publisher identity, then the software publisher identity is used. If the assembly comes from the Internet and is unsigned, the URL identity is used. For more information about assemblies and strong names, see [Programming with Assemblies](../assembly/program.md).  
   
--   Roaming stores move with a user that has a roaming user profile. Files are written to a network directory and are downloaded to any computer the user logs into. For more information about roaming user profiles, see <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Roaming?displayProperty=nameWithType>.  
+- Roaming stores move with a user that has a roaming user profile. Files are written to a network directory and are downloaded to any computer the user logs into. For more information about roaming user profiles, see <xref:System.IO.IsolatedStorage.IsolatedStorageScope.Roaming?displayProperty=nameWithType>.  
   
  By combining the concepts of user, domain, and assembly identity, isolated storage can isolate data in the following ways, each of which has its own usage scenarios:  
   
--   [Isolation by user and assembly](#UserAssembly)  
+- [Isolation by user and assembly](#UserAssembly)  
   
--   [Isolation by user, domain, and assembly](#UserDomainAssembly)  
+- [Isolation by user, domain, and assembly](#UserDomainAssembly)  
   
  Either of these isolations can be combined with a roaming user profile. For more information, see the section [Isolated Storage and Roaming](#Roaming).  
   
- The following illustration demonstrates how stores are isolated in different scopes.  
+ The following illustration demonstrates how stores are isolated in different scopes:  
   
- ![Isolation by user and assembly](../../../docs/standard/io/media/typesofisolation.gif "typesofisolation")  
-Types of isolated storage  
+ ![Diagram that shows isolation by user and assembly.](./media/types-of-isolation/isolated-storage-types.gif)  
   
  Note that except for roaming stores, isolated storage is always implicitly isolated by computer because it uses the storage facilities that are local to a given computer.  
   
 > [!IMPORTANT]
->  Isolated storage is not available for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the [!INCLUDE[wrt](../../../includes/wrt-md.md)] API to store local data and files. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.  
+> Isolated storage is not available for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the Windows Runtime API to store local data and files. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.  
   
 <a name="UserAssembly"></a>   
 ## Isolation by User and Assembly  

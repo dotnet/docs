@@ -15,9 +15,10 @@ The `#Region` block must be declared at a class, module, or namespace level. A c
   
 ## To correct this error  
   
-1.  Ensure that the preceding procedure is properly terminated with an `End Function` or `End Sub` statement.  
+1. Ensure that the preceding procedure is properly terminated with an `End Function` or `End Sub` statement.  
   
-2.  Ensure that the `#Region` and `#End Region` directives are in the same code block.  
+2. Ensure that the `#Region` and `#End Region` directives are in the same code block.  
   
 ## See also
+
 - [#Region Directive](../../../visual-basic/language-reference/directives/region-directive.md)

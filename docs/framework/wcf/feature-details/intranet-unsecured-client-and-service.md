@@ -9,7 +9,7 @@ ms.assetid: f450f5d4-3547-47ec-9320-2809e6a12634
 # Intranet Unsecured Client and Service
 The following illustration depicts a simple Windows Communication Foundation (WCF) service developed to provide information on a secure private network to a WCF application. Security is not required because the data is of low importance, the network is expected to be inherently secure, or security is provided by a layer below the WCF infrastructure.  
   
- ![Intranet unsecured client and service scenario](../../../../docs/framework/wcf/feature-details/media/unsecuredwebservice.gif "UnsecuredWebService")  
+ ![Intranet unsecured client and service scenario.](./media/intranet-unsecured-client-and-service/unsecured-web-client-service.gif)  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -24,9 +24,9 @@ The following illustration depicts a simple Windows Communication Foundation (WC
 ## Service  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone service using the code with no configuration.  
+- Create a stand-alone service using the code with no configuration.  
   
--   Create a service using the supplied configuration, but do not define any endpoints.  
+- Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
  The following code shows how to create an endpoint with no security:  
@@ -67,9 +67,9 @@ The following illustration depicts a simple Windows Communication Foundation (WC
 ## Client  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone client using the code (and client code).  
+- Create a stand-alone client using the code (and client code).  
   
--   Create a client that does not define any endpoint addresses. Instead, use the client constructor that takes the configuration name as an argument. For example:  
+- Create a client that does not define any endpoint addresses. Instead, use the client constructor that takes the configuration name as an argument. For example:  
   
      [!code-csharp[C_SecurityScenarios#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_securityscenarios/cs/source.cs#0)]
      [!code-vb[C_SecurityScenarios#0](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#0)]  
@@ -107,6 +107,7 @@ The following illustration depicts a simple Windows Communication Foundation (WC
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.NetTcpBinding>
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

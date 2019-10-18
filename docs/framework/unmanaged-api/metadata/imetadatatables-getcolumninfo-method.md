@@ -23,7 +23,7 @@ Gets data about the specified column in the specified table.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetColumnInfo (   
     [in]  ULONG        ixTbl,  
     [in]  ULONG        ixCol,  
@@ -35,6 +35,7 @@ HRESULT GetColumnInfo (
 ```  
   
 ## Parameters
+=======
 
  `ixTbl`  
  [in] The index of the desired table.  
@@ -90,5 +91,6 @@ Values that are stored in the *heap* (that is, `IsHeapType == true`) can be read
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

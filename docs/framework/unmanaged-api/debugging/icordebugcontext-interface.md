@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugContext Interface1"
+title: "ICorDebugContext Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugContext"
@@ -17,13 +17,14 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugContext Interface1
+# ICorDebugContext Interface
+
 Represents a context object. This interface has not been implemented yet.  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -35,4 +36,5 @@ Represents a context object. This interface has not been implemented yet.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -9,14 +9,14 @@ The Supporting Tokens sample demonstrates how to add additional tokens to a mess
 ## Demonstrates
  The sample demonstrates:
 
--   How a client can pass additional security tokens to a service.
+- How a client can pass additional security tokens to a service.
 
--   How the server can access claims associated with additional security tokens.
+- How the server can access claims associated with additional security tokens.
 
--   How the server's X.509 certificate is used to protect the symmetric key used for message encryption and signature.
+- How the server's X.509 certificate is used to protect the symmetric key used for message encryption and signature.
 
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this topic.
 
 ## Client Authenticates with Username Token and Supporting X.509 Security Token
  The service exposes a single endpoint for communicating that is programmatically created using the `BindingHelper` and `EchoServiceHost` classes. The endpoint consists of an address, a binding, and a contract. The binding is configured with a custom binding using `SymmetricSecurityBindingElement` and `HttpTransportBindingElement`. This sample sets the `SymmetricSecurityBindingElement` to use a service X.509 certificate to protect the symmetric key during transmission and to pass a `UserNameToken` along with the supporting `X509SecurityToken` in a WS-Security message header. The symmetric key is used to encrypt the message body and the username security token. The supporting token is passed as an additional binary security token in the WS-Security message header. The authenticity of the supporting token is proved by signing part of the message with the private key associated with the supporting X.509 security token.
@@ -150,7 +150,7 @@ public class EchoService : IEchoService
             }
             else if (claimSet is X509CertificateClaimSet)
             {
-                // Try to find an X500DisinguishedName claim. This will
+                // Try to find an X500DistinguishedName claim. This will
                 // have been generated from the client certificate.
                 X500DistinguishedName tmpDistinguishedName;
                 if (TryGetClaimValue<X500DistinguishedName>(claimSet,
@@ -323,7 +323,7 @@ void GetCallerIdentities(ServiceSecurityContext callerSecurityContext, out strin
         }
         else if (claimSet is X509CertificateClaimSet)
          {
-            //Try to find an X500DisinguishedName claim.
+            //Try to find an X500DistinguishedName claim.
             //This will have been generated from the client
             //certificate.
             X500DistinguishedName tmpDistinguishedName;
@@ -408,40 +408,40 @@ iisreset
 
 ##### To set up, build, and run the sample
 
-1.  Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Be sure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
 
-3.  To run the sample in a single- or cross-machine configuration, use the following instructions.
+3. To run the sample in a single- or cross-machine configuration, use the following instructions.
 
 ##### To run the sample on the same machine
 
-1.  Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
+1. Run Setup.bat from the sample install folder inside a Visual Studio 2012 command prompt run with administrator privileges. This installs all the certificates required for running the sample.
 
     > [!NOTE]
-    >  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script. Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
+    > The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script. Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
   
-2.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
+2. Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-3.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+3. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 ##### To run the sample across machines  
   
-1.  Create a directory on the service machine. Create a virtual application named servicemodelsamples for this directory using the Internet Information Services (IIS) management tool.  
+1. Create a directory on the service machine. Create a virtual application named servicemodelsamples for this directory using the Internet Information Services (IIS) management tool.  
   
-2.  Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service machine. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service machine.  
+2. Copy the service program files from \inetpub\wwwroot\servicemodelsamples to the virtual directory on the service machine. Ensure that you copy the files in the \bin subdirectory. Also copy the Setup.bat, Cleanup.bat, and ImportClientCert.bat files to the service machine.  
   
-3.  Create a directory on the client machine for the client binaries.  
+3. Create a directory on the client machine for the client binaries.  
   
-4.  Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
+4. Copy the client program files to the client directory on the client machine. Also copy the Setup.bat, Cleanup.bat, and ImportServiceCert.bat files to the client.  
   
-5.  On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
+5. On the server, run `setup.bat service` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `service` argument creates a service certificate with the fully-qualified domain name of the machine and exports the service certificate to a file named Service.cer.  
   
-6.  Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the machine.  
+6. Edit Web.config to reflect the new certificate name (in the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md)) which is the same as the fully-qualified domain name of the machine.  
   
-7.  Copy the Service.cer file from the service directory to the client directory on the client machine.  
+7. Copy the Service.cer file from the service directory to the client directory on the client machine.  
   
-8.  On the client, run `setup.bat client` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
+8. On the client, run `setup.bat client` in a Developer Command Prompt for Visual Studio opened with administrator privileges. Running `setup.bat` with the `client` argument creates a client certificate named client.com and exports the client certificate to a file named Client.cer.  
   
 9. In the Client.exe.config file on the client machine, change the address value of the endpoint to match the new address of your service. Do this by replacing localhost with the fully-qualified domain name of the server.  
   
@@ -455,9 +455,7 @@ iisreset
   
 ##### To clean up after the sample  
   
--   Run Cleanup.bat in the samples folder once you have finished running the sample.  
+- Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
 > [!NOTE]
->  This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.
-
-## See also
+> This script does not remove service certificates on a client when running this sample across machines. If you have run WCF samples that use certificates across machines, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com`.

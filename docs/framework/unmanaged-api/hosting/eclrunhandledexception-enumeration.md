@@ -22,7 +22,7 @@ Describes the available options for managing exceptions that are unhandled in us
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eRuntimeDeterminedPolicy,  
     eHostDeterminedPolicy  
@@ -49,6 +49,7 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [EClrFailure Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrfailure-enumeration.md)
 - [EClrOperation Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md)
 - [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)

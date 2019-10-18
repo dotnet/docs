@@ -1,6 +1,6 @@
 ---
 title: "Additional class libraries and APIs"
-ms.date: "01/29/2018"
+ms.date: "10/17/2019"
 helpviewer_keywords: 
   - "Additional class libraries"
   - "Additional managed libraries"
@@ -37,24 +37,48 @@ In addition, some libraries target specific platforms or implementations of the 
 
 These APIs support the product infrastructure and are not intended/supported to be used directly from your code.  
   
-| API Name |
-| -------- |
-| [System.Net.Connection Class](../../../docs/framework/additional-apis/connection.md) |
-| [System.Net.Connection.m\_WriteList Field](../../../docs/framework/additional-apis/m_writelist.md) |
-| [System.Net.ConnectionGroup Class](../../../docs/framework/additional-apis/connectiongroup.md) |
-| [System.Net.ConnectionGroup.m\_ConnectionList Field](../../../docs/framework/additional-apis/m_connectionlist.md) |
-| [System.Net.CoreResponseData Class](../../../docs/framework/additional-apis/coreresponsedata.md) |
-| [System.Net.CoreResponseData.m\_ResponseHeaders Field](../../../docs/framework/additional-apis/coreresponsedata_m_responseheaders.md) |
-| [System.Net.CoreResponseData.m\_StatusCode Field](../../../docs/framework/additional-apis/coreresponsedata_m_statuscode.md) |
-| [System.Net.HttpWebRequest.\_AutoRedirects Field](../../../docs/framework/additional-apis/_autoredirects.md) |
-| [System.Net.HttpWebRequest.\_CoreResponse Field](../../../docs/framework/additional-apis/httpwebrequest__coreresponse.md) |
-| [System.Net.HttpWebRequest.\_HttpResponse Field](../../../docs/framework/additional-apis/_httpresponse.md) |
-| [System.Net.ServicePoint.m\_ConnectionGroupList Field](../../../docs/framework/additional-apis/m_connectiongrouplist.md) |
-| [System.Net.ServicePointManager.s\_ServicePointTable Field](../../../docs/framework/additional-apis/s_servicepointtable.md) |
-| [System.Windows.Diagnostics.VisualDiagnostics.s\_isDebuggerCheckDisabledForTestPurposes Field](../../../docs/framework/additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md) |
-| [System.Windows.Forms.Design.DataMemberFieldEditor Class](../../../docs/framework/additional-apis/datamemberfieldeditor-class.md) |
-| [System.Windows.Forms.Design.DataMemberListEditor Class](../../../docs/framework/additional-apis/datamemberlisteditor-class.md) |
+* [Microsoft.SqlServer.Server.SmiOrderProperty.Item Property](microsoft.sqlserver.server.smiorderproperty.item.md)
+* [System.Exception.PrepForRemoting Method](system.exception.prepforremoting.md)
+* [System.Data.SqlTypes.SqlChars.Stream Property](system.data.sqltypes.sqlchars.stream.md)
+* [System.Data.SqlTypes.SqlStreamChars Constructor](system.data.sqltypes.sqlstreamchars.-ctor.md)
+* [System.Data.SqlTypes.SqlStreamChars.CanSeek Property](system.data.sqltypes.sqlstreamchars.canseek.md)
+* [System.Data.SqlTypes.SqlStreamChars.IsNull Property](system.data.sqltypes.sqlstreamchars.isnull.md)
+* [System.Data.SqlTypes.SqlStreamChars.Length Property](system.data.sqltypes.sqlstreamchars.length.md)
+* [System.Data.SqlTypes.SqlStreamChars.Close Method](system.data.sqltypes.sqlstreamchars.close.md)
+* [System.Data.SqlTypes.SqlStreamChars.Dispose Method](system.data.sqltypes.sqlstreamchars.dispose.md)
+* [System.Data.SqlTypes.SqlStreamChars.Flush Method](system.data.sqltypes.sqlstreamchars.flush.md)
+* [System.Data.SqlTypes.SqlStreamChars.Read Method](system.data.sqltypes.sqlstreamchars.read.md)
+* [System.Data.SqlTypes.SqlStreamChars.Seek Method](system.data.sqltypes.sqlstreamchars.seek.md)
+* [System.Data.SqlTypes.SqlStreamChars.SetLength Method](system.data.sqltypes.sqlstreamchars.setlength.md)
+* [System.Data.SqlTypes.SqlStreamChars.Write Method](system.data.sqltypes.sqlstreamchars.write.md)
+* [System.Net.Connection Class](connection.md)
+* [System.Net.Connection.m\_WriteList Field](m_writelist.md)
+* [System.Net.ConnectionGroup Class](connectiongroup.md)
+* [System.Net.ConnectionGroup.m\_ConnectionList Field](m_connectionlist.md)
+* [System.Net.CoreResponseData Class](coreresponsedata.md)
+* [System.Net.CoreResponseData.m\_ResponseHeaders Field](coreresponsedata_m_responseheaders.md)
+* [System.Net.CoreResponseData.m\_StatusCode Field](coreresponsedata_m_statuscode.md)
+* [System.Net.HttpWebRequest.\_AutoRedirects Field](_autoredirects.md)
+* [System.Net.HttpWebRequest.\_CoreResponse Field](httpwebrequest__coreresponse.md)
+* [System.Net.HttpWebRequest.\_HttpResponse Field](_httpresponse.md)
+* [System.Net.ServicePoint.m\_ConnectionGroupList Field](m_connectiongrouplist.md)
+* [System.Net.ServicePointManager.s\_ServicePointTable Field](s_servicepointtable.md)
+* [System.Windows.Diagnostics.VisualDiagnostics.s\_isDebuggerCheckDisabledForTestPurposes Field](s-isdebuggercheckdisabledfortestpurposes-field.md)
+* [System.Windows.Forms.Design.DataMemberFieldEditor Class](datamemberfieldeditor-class.md)
+* [System.Windows.Forms.Design.DataMemberListEditor Class](datamemberlisteditor-class.md)
+* [System.Xml.XmlReader.CreateSqlReader Method](system.xml.xmlreader.createsqlreader.md)
+* [adodb.Connection Interface](adodb.connection.md)
+* [adodb.EventReason Enum](adodb.eventreasonenum.md)
+* [adodb.EventStatus Enum](adodb.eventstatusenum.md)
+* [stdole.DISPPARAMS Structure](stdole.dispparams.md)
+* [stdole.EXCEPINFO Structure](stdole.excepinfo.md)
+* [stdole.IFont.Name Property](stdole.ifont.name.md)
+* [stdole.IFontDisp Interface](stdole.ifontdisp.md)
+* [stdole.IPicture.Handle Property](stdole.ipicture.handle.md)
+* [stdole.IPictureDisp.Handle Property](stdole.ipicturedisp.handle.md)
+* [stdole.StdFont Interface](stdole.stdfont.md)
+* [stdole.StdPicture Interface](stdole.stdpicture.md)
   
 ## See also
 
-- [The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)
+* [The .NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md)

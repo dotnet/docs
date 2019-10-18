@@ -10,16 +10,16 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
   
  There are three parts to a creating a WCF AJAX service:  
   
--   Creating an AJAX endpoint that can be accessed from the browser.  
+- Creating an AJAX endpoint that can be accessed from the browser.  
   
--   Creating an AJAX-compatible service contract.  
+- Creating an AJAX-compatible service contract.  
   
--   Accessing WCF AJAX services.  
+- Accessing WCF AJAX services.  
   
 ## Creating an AJAX Endpoint  
  The most basic way to enable AJAX support in a WCF service is to use the <xref:System.ServiceModel.Activation.WebServiceHostFactory> in the .svc file associated with the service, as in the following example.  
   
-```  
+```text
 <%ServiceHost   
     language=c#  
     Debug="true"  
@@ -58,7 +58,7 @@ Windows Communication Foundation (WCF) AJAX services can be accessed from any Ja
 ## Creating an AJAX-Compatible Service Contract  
  By default, service contracts exposed over an AJAX endpoint return data in the XML format. Also, by default service operations are accessible through HTTP POST requests to URLs that include the endpoint address followed by the operation name, as shown in the following example.  
   
-```  
+```csharp
 [OperationContract]  
 string[] GetCities(string firstLetters);  
 ```  
@@ -71,13 +71,13 @@ string[] GetCities(string firstLetters);
   
  Normally, JSON requests and responses consist of just one item. For the preceding `GetCities` operation, the request resembles the following statement.  
   
-```  
+```json
 "na"  
 ```  
   
  The response to that request resembles the following statement.  
   
-```  
+```json
 ["Nairobi", "Naples", "Nashville"]  
 ```  
   
@@ -89,7 +89,7 @@ string[] GetCities(string firstLetters);
   
  The following contract accepts this message.  
   
-```  
+```csharp
 [WebInvoke(BodyStyle=WebMessageBodyStyle.WrappedRequest, ResponseFormat=WebMessageFormat.Json)]  
 [OperationContract]  
 string[] GetCities(string firstLetters, int maxNumber);  

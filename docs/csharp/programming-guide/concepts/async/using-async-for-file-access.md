@@ -8,15 +8,15 @@ You can use the async feature to access files. By using the async feature, you c
   
  You might consider the following reasons for adding asynchrony to file access calls:  
   
--   Asynchrony makes UI applications more responsive because the UI thread that launches the operation can perform other work. If the UI thread must execute code that takes a long time (for example, more than 50 milliseconds), the UI may freeze until the I/O is complete and the UI thread can again process keyboard and mouse input and other events.  
+- Asynchrony makes UI applications more responsive because the UI thread that launches the operation can perform other work. If the UI thread must execute code that takes a long time (for example, more than 50 milliseconds), the UI may freeze until the I/O is complete and the UI thread can again process keyboard and mouse input and other events.  
   
--   Asynchrony improves the scalability of ASP.NET and other server-based applications by reducing the need for threads. If the application uses a dedicated thread per response and a thousand requests are being handled simultaneously, a thousand threads are needed. Asynchronous operations often don’t need to use a thread during the wait. They use the existing I/O completion thread briefly at the end.  
+- Asynchrony improves the scalability of ASP.NET and other server-based applications by reducing the need for threads. If the application uses a dedicated thread per response and a thousand requests are being handled simultaneously, a thousand threads are needed. Asynchronous operations often don’t need to use a thread during the wait. They use the existing I/O completion thread briefly at the end.  
   
--   The latency of a file access operation might be very low under current conditions, but the latency may greatly increase in the future. For example, a file may be moved to a server that's across the world.  
+- The latency of a file access operation might be very low under current conditions, but the latency may greatly increase in the future. For example, a file may be moved to a server that's across the world.  
   
--   The added overhead of using the Async feature is small.  
+- The added overhead of using the Async feature is small.  
   
--   Asynchronous tasks can easily be run in parallel.  
+- Asynchronous tasks can easily be run in parallel.  
   
 ## Running the Examples  
  To run the examples in this topic, you can create a **WPF Application** or a **Windows Forms Application** and then add a **Button**. In the button's `Click` event, add a call to the first method in each example.  
@@ -41,7 +41,7 @@ using System.Threading.Tasks;
  The following example writes text to a file. At each await statement, the method immediately exits. When the file I/O is complete, the method resumes at the statement that follows the await statement. Note that the async modifier is in the definition of methods that use the await statement.  
   
 ```csharp  
-public async void ProcessWrite()  
+public async Task ProcessWriteAsync()  
 {  
     string filePath = @"temp2.txt";  
     string text = "Hello World\r\n";  
@@ -69,13 +69,13 @@ Task theTask = sourceStream.WriteAsync(encodedText, 0, encodedText.Length);
 await theTask;  
 ```  
   
- The first statement returns a task and causes file processing to start. The second statement with the await causes the method to immediately exit and return a different task. When the file processing later completes, execution returns to the statement that follows the await. For more information, see  [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md).  
+ The first statement returns a task and causes file processing to start. The second statement with the await causes the method to immediately exit and return a different task. When the file processing later completes, execution returns to the statement that follows the await. For more information, see  [Control Flow in Async Programs (C#)](./control-flow-in-async-programs.md).  
   
 ## Reading Text  
- The following example reads text from a file. The text is buffered and, in this case, placed into a <xref:System.Text.StringBuilder>. Unlike in the previous example, the evaluation of the await produces a value. The <xref:System.IO.Stream.ReadAsync%2A> method returns a <xref:System.Threading.Tasks.Task>\<<xref:System.Int32>>, so the evaluation of the await produces an `Int32` value (`numRead`) after the operation completes. For more information, see [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md).  
+ The following example reads text from a file. The text is buffered and, in this case, placed into a <xref:System.Text.StringBuilder>. Unlike in the previous example, the evaluation of the await produces a value. The <xref:System.IO.Stream.ReadAsync%2A> method returns a <xref:System.Threading.Tasks.Task>\<<xref:System.Int32>>, so the evaluation of the await produces an `Int32` value (`numRead`) after the operation completes. For more information, see [Async Return Types (C#)](./async-return-types.md).  
   
 ```csharp  
-public async void ProcessRead()  
+public async Task ProcessReadAsync()  
 {  
     string filePath = @"temp2.txt";  
   
@@ -126,7 +126,7 @@ private async Task<string> ReadTextAsync(string filePath)
  Note that any performance boost is almost entirely from the parallel processing and not the asynchronous processing. The advantages of asynchrony are that it doesn’t tie up multiple threads, and that it doesn’t tie up the user interface thread.  
   
 ```csharp  
-public async void ProcessWriteMult()  
+public async Task ProcessWriteMultAsync()  
 {  
     string folder = @"tempfolder\";  
     List<Task> tasks = new List<Task>();  
@@ -166,10 +166,10 @@ public async void ProcessWriteMult()
 }  
 ```  
   
- When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md) and [Cancellation in Managed Threads](../../../../standard/threading/cancellation-in-managed-threads.md).  
+ When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md) and [Cancellation in Managed Threads](../../../../standard/threading/cancellation-in-managed-threads.md).  
   
 ## See also
 
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
-- [Async Return Types (C#)](../../../../csharp/programming-guide/concepts/async/async-return-types.md)
-- [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
+- [Async Return Types (C#)](./async-return-types.md)
+- [Control Flow in Async Programs (C#)](./control-flow-in-async-programs.md)

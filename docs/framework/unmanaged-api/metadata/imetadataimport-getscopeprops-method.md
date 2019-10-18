@@ -23,7 +23,7 @@ Gets the name and optionally the version identifier of the assembly or module in
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetScopeProps (  
    [out] LPWSTR           szName,  
    [in]  ULONG            cchName,  
@@ -32,7 +32,7 @@ HRESULT GetScopeProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [out] A buffer for the assembly or module name.  
   
@@ -58,5 +58,6 @@ HRESULT GetScopeProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

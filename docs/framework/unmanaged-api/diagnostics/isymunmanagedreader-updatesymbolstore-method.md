@@ -22,17 +22,17 @@ ms.author: "mairaw"
 Updates the existing symbol store with a delta symbol store. This method is used in edit-and-continue scenarios to update the symbol store to match deltas to the original portable executable (PE) file.  
   
 > [!NOTE]
->  You need specify only one of the `filename` or `pIStream` parameters, not both. If `filename` is specified, the symbol store will be updated with the symbols in that file. If `pIStream` is specified, the store will be updated with the data from the <xref:System.Runtime.InteropServices.ComTypes.IStream>.  
+> You need specify only one of the `filename` or `pIStream` parameters, not both. If `filename` is specified, the symbol store will be updated with the symbols in that file. If `pIStream` is specified, the store will be updated with the data from the <xref:System.Runtime.InteropServices.ComTypes.IStream>.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateSymbolStore (  
     [in] const WCHAR *filename,  
     [in] IStream *pIStream);  
 ```  
   
-#### Parameters  
+## Parameters  
  `filename`  
  [in] The name of the file that contains the symbol store.  
   
@@ -46,4 +46,5 @@ HRESULT UpdateSymbolStore (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

@@ -23,13 +23,13 @@ Gets the size, in bytes, of this [ICorDebugValue3](../../../../docs/framework/un
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize64(  
     [out] ULONG64 *pSize  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  pSize  
  [out] A pointer to the size, in bytes, of this object.  
   
@@ -48,5 +48,6 @@ HRESULT GetSize64(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugValue3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

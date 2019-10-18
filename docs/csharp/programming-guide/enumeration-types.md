@@ -11,11 +11,11 @@ ms.assetid: 64a9b731-9e3c-4336-8a09-018db2aa10b7
 ---
 # Enumeration types (C# Programming Guide)
 
-An enumeration type (also named an enumeration or an enum) provides an efficient way to define a set of named integral constants that may be assigned to a variable. For example, assume that you have to define a variable whose value will represent a day of the week. There are only seven meaningful values which that variable will ever store. To define those values, you can use an enumeration type, which is declared by using the [enum](../../csharp/language-reference/keywords/enum.md) keyword.
+An enumeration type (also named an enumeration or an enum) provides an efficient way to define a set of named integral constants that may be assigned to a variable. For example, assume that you have to define a variable whose value will represent a day of the week. There are only seven meaningful values which that variable will ever store. To define those values, you can use an enumeration type, which is declared by using the [enum](../language-reference/keywords/enum.md) keyword.
 
 [!code-csharp[csProgGuideEnums#1](../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEnums/CS/Enums.cs#1)]
 
-By default the underlying type of each element in the enum is [int](../../csharp/language-reference/keywords/int.md). You can specify another integral numeric type by using a colon, as shown in the previous example. For a full list of possible types, see [enum (C# Reference)](../../csharp/language-reference/keywords/enum.md).
+By default the underlying type of each element in the enum is [int](../language-reference/builtin-types/integral-numeric-types.md). You can specify another integral numeric type by using a colon, as shown in the previous example. For a full list of possible types, see [enum (C# Reference)](../language-reference/keywords/enum.md).
 
 You can verify the underlying numeric values by casting  to the underlying type, as the following example shows.
 
@@ -80,10 +80,10 @@ All enums are instances of the <xref:System.Enum?displayProperty=nameWithType> t
 
 For more information, see <xref:System.Enum?displayProperty=nameWithType>.
 
-You can also create a new method for an enum by using an extension method. For more information, see [How to: Create a New Method for an Enumeration](../../csharp/programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
+You can also create a new method for an enum by using an extension method. For more information, see [How to: Create a New Method for an Enumeration](./classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
 ## See also
 
 - <xref:System.Enum?displayProperty=nameWithType>
-- [C# Programming Guide](../../csharp/programming-guide/index.md)
-- [enum](../../csharp/language-reference/keywords/enum.md)
+- [C# Programming Guide](./index.md)
+- [enum](../language-reference/keywords/enum.md)

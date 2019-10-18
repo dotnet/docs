@@ -24,7 +24,7 @@ Introduces an `Of` clause, which identifies a *type parameter* on a *generic* cl
 ## Using the Of Keyword  
  The following code example uses the `Of` keyword to define the outline of a class that takes two type parameters. It *constrains* the `keyType` parameter by the <xref:System.IComparable> interface, which means the consuming code must supply a type argument that implements <xref:System.IComparable>. This is necessary so that the `add` procedure can call the <xref:System.IComparable.CompareTo%2A?displayProperty=nameWithType> method. For more information on constraints, see [Type List](../../../visual-basic/language-reference/statements/type-list.md).  
   
-```  
+```vb  
 Public Class Dictionary(Of entryType, keyType As IComparable)  
     Public Sub add(ByVal e As entryType, ByVal k As keyType)  
         Dim dk As keyType  
@@ -40,7 +40,7 @@ End Class
   
  The following code example creates an object that holds `String` entries and associates an `Integer` key with each one. `Integer` implements <xref:System.IComparable> and therefore satisfies the constraint on `keyType`.  
   
-```  
+```vb  
 Dim d As New dictionary(Of String, Integer)  
 ```  
   
@@ -59,6 +59,7 @@ Dim d As New dictionary(Of String, Integer)
  [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See also
+
 - <xref:System.IComparable>
 - [Type List](../../../visual-basic/language-reference/statements/type-list.md)
 - [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)

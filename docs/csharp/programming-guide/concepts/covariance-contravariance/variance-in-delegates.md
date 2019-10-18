@@ -19,7 +19,7 @@ public delegate R SampleGenericDelegate<A, R>(A a);
   
 ```csharp  
 // Matching signature.  
-public static First ASecondRFirst(Second first)  
+public static First ASecondRFirst(Second second)  
 { return new First(); }  
   
 // The return type is more derived.  
@@ -56,7 +56,7 @@ SampleGenericDelegate<Second, First> dGeneric = ASecondRFirst;
 SampleGenericDelegate<Second, First> dGenericConversion = AFirstRSecond;  
 ```  
   
- For more examples, see [Using Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md) and [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md).  
+ For more examples, see [Using Variance in Delegates (C#)](./using-variance-in-delegates.md) and [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md).  
   
 ## Variance in Generic Type Parameters  
  In .NET Framework 4 or later you can enable implicit conversion between delegates, so that generic delegates that have different types specified by generic type parameters can be assigned to each other, if the types are inherited from each other as required by variance.  
@@ -106,17 +106,17 @@ public static void Test()
 ### Generic Delegates That Have Variant Type Parameters in the .NET Framework  
  .NET Framework 4 introduced variance support for generic type parameters in several existing generic delegates:  
   
--   `Action` delegates from the <xref:System> namespace, for example, <xref:System.Action%601> and <xref:System.Action%602>  
+- `Action` delegates from the <xref:System> namespace, for example, <xref:System.Action%601> and <xref:System.Action%602>  
   
--   `Func` delegates from the <xref:System> namespace, for example, <xref:System.Func%601> and <xref:System.Func%602>  
+- `Func` delegates from the <xref:System> namespace, for example, <xref:System.Func%601> and <xref:System.Func%602>  
   
--   The <xref:System.Predicate%601> delegate  
+- The <xref:System.Predicate%601> delegate  
   
--   The <xref:System.Comparison%601> delegate  
+- The <xref:System.Comparison%601> delegate  
   
--   The <xref:System.Converter%602> delegate  
+- The <xref:System.Converter%602> delegate  
   
- For more information and examples, see [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md).  
+ For more information and examples, see [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md).  
   
 ### Declaring Variant Type Parameters in Generic Delegates  
  If a generic delegate has covariant or contravariant generic type parameters, it can be referred to as a *variant generic delegate*.  
@@ -134,7 +134,7 @@ public delegate void DContravariant<in A>(A a);
 ```  
   
 > [!IMPORTANT]
->  `ref`, `in`, and `out` parameters in C# can't be marked as variant.  
+> `ref`, `in`, and `out` parameters in C# can't be marked as variant.  
   
  It is also possible to support both variance and covariance in the same delegate, but for different type parameters. This is shown in the following example.  
   
@@ -192,6 +192,6 @@ public static void Test()
   
 ## See also
 
-- [Generics](~/docs/standard/generics/index.md)
-- [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)
-- [How to: Combine Delegates (Multicast Delegates)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+- [Generics](../../../../standard/generics/index.md)
+- [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md)
+- [How to: Combine Delegates (Multicast Delegates)](../../delegates/how-to-combine-delegates-multicast-delegates.md)

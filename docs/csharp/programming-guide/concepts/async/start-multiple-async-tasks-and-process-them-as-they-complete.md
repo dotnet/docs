@@ -17,25 +17,25 @@ The following example uses a query to create a collection of tasks. Each task do
 You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
 
 > [!TIP]
-> If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic instead.
+> If you don't want to download the project, you can review the *MainWindow.xaml.cs* file at the end of this topic instead.
 
-1.  Extract the files that you downloaded from the .zip file, and then start Visual Studio.
+1. Extract the files that you downloaded from the *.zip* file, and then start Visual Studio.
 
-2.  On the menu bar, choose **File** > **Open** > **Project/Solution**.
+2. On the menu bar, choose **File** > **Open** > **Project/Solution**.
 
-3.  In the **Open Project** dialog box, open the folder that holds the sample code you downloaded, and then open the solution (.sln) file for AsyncFineTuningCS.
+3. In the **Open Project** dialog box, open the folder that holds the sample code you downloaded, and then open the solution (*.sln*) file for *AsyncFineTuningCS*/*AsyncFineTuningVB*.
 
-4.  In **Solution Explorer**, open the shortcut menu for the **ProcessTasksAsTheyFinish** project, and then choose **Set as StartUp Project**.
+4. In **Solution Explorer**, open the shortcut menu for the **ProcessTasksAsTheyFinish** project, and then choose **Set as StartUp Project**.
 
-5.  Choose the **F5** key to run the program (or, press **Ctrl**+**F5** keys to run the program without debugging it).
+5. Choose the <kbd>F5</kbd> key to run the program with debugging or, press <kbd>Ctrl</kbd>+<kbd>F5</kbd> keys to run the program without debugging it.
 
-6.  Run the project several times to verify that the downloaded lengths don't always appear in the same order.
+6. Run the project several times to verify that the downloaded lengths don't always appear in the same order.
 
 ## Create the program yourself
 
-This example adds to the code that’s developed in [Cancel Remaining Async Tasks after One Is Complete (C#)](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md), and it uses the same UI.
+This example adds to the code that’s developed in [Cancel Remaining Async Tasks after One Is Complete (C#)](cancel-remaining-async-tasks-after-one-is-complete.md), and it uses the same UI.
 
-To build the example yourself, step by step, follow the instructions in the [Downloading the Example](../../../../csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md#downloading-the-example) section, but set **CancelAfterOneTask** as the startup project. Add the changes in this topic to the `AccessTheWebAsync` method in that project. The changes are marked with asterisks.
+To build the example yourself, step by step, follow the instructions in the [Downloading the Example](cancel-remaining-async-tasks-after-one-is-complete.md#downloading-the-example) section, but set **CancelAfterOneTask** as the startup project. Add the changes in this topic to the `AccessTheWebAsync` method in that project. The changes are marked with asterisks.
 
 The **CancelAfterOneTask** project already includes a query that, when executed, creates a collection of tasks. Each call to `ProcessURLAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
 
@@ -43,29 +43,29 @@ The **CancelAfterOneTask** project already includes a query that, when executed,
 IEnumerable<Task<int>> downloadTasksQuery = from url in urlList select ProcessURL(url, client, ct);
 ```
 
-In the MainWindow.xaml.cs file of the project, make the following changes to the `AccessTheWebAsync` method.
+In the *MainWindow.xaml.cs* file of the project, make the following changes to the `AccessTheWebAsync` method:
 
--   Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> instead of <xref:System.Linq.Enumerable.ToArray%2A>.
+- Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> instead of <xref:System.Linq.Enumerable.ToArray%2A>.
 
     ```csharp
     List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
     ```
 
--   Add a `while` loop that performs the following steps for each task in the collection:
+- Add a `while` loop that performs the following steps for each task in the collection:
 
-    1.  Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.
+    1. Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.
 
         ```csharp
         Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
         ```
 
-    2.  Removes that task from the collection.
+    2. Removes that task from the collection.
 
         ```csharp
         downloadTasks.Remove(firstFinishedTask);
         ```
 
-    3.  Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows.
+    3. Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the `Result` property which would throw the `AggregateException`.
 
         ```csharp
         int length = await firstFinishedTask;
@@ -75,11 +75,11 @@ In the MainWindow.xaml.cs file of the project, make the following changes to the
 Run the program several times to verify that the downloaded lengths don't always appear in the same order.
 
 > [!CAUTION]
-> You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing tasks as they complete](https://blogs.msdn.microsoft.com/pfxteam/2012/08/02/processing-tasks-as-they-complete/).
+> You can use `WhenAny` in a loop, as described in the example, to solve problems that involve a small number of tasks. However, other approaches are more efficient if you have a large number of tasks to process. For more information and examples, see [Processing tasks as they complete](https://devblogs.microsoft.com/pfxteam/processing-tasks-as-they-complete/).
 
 ## Complete example
 
-The following code is the complete text of the MainWindow.xaml.cs file for the example. Asterisks mark the elements that were added for this example. Also, take note that you must add a reference for <xref:System.Net.Http>.
+The following code is the complete text of the *MainWindow.xaml.cs* file for the example. Asterisks mark the elements that were added for this example. Also, take note that you must add a reference for <xref:System.Net.Http>.
 
 You can download the project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
 
@@ -222,6 +222,6 @@ namespace ProcessTasksAsTheyFinish
 ## See also
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
-- [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
+- [Fine-Tuning Your Async Application (C#)](fine-tuning-your-async-application.md)
+- [Asynchronous Programming with async and await (C#)](index.md)
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

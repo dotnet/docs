@@ -22,7 +22,7 @@ Reserved for future extension of the [CustomDumpItem](../../../../docs/framework
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     DUMP_ITEM_None = 0  
 } ECustomDumpItemKind;  
@@ -44,5 +44,6 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

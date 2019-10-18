@@ -23,12 +23,12 @@ Notifies the profiler that the unwind phase of exception handling is entering a 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFinallyEnter(  
     [in] FunctionID functionId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that contains the `finally` clause.  
   
@@ -47,6 +47,7 @@ HRESULT ExceptionUnwindFinallyEnter(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [GetNotifiedExceptionClauseInfo Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md)
 - [ExceptionUnwindFinallyLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfinallyleave-method.md)

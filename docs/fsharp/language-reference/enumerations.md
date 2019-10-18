@@ -26,21 +26,21 @@ When you refer to the named values, you must use the name of the enumeration typ
 
 The following code shows the declaration and use of an enumeration.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2101.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2101.fs)]
 
 You can easily convert enumerations to the underlying type by using the appropriate operator, as shown in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2102.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2102.fs)]
 
 Enumerated types can have one of the following underlying types: `sbyte`, `byte`, `int16`, `uint16`, `int32`, `uint32`, `int64`, `uint16`, `uint64`, and `char`. Enumeration types are represented in the .NET Framework as types that are inherited from `System.Enum`, which in turn is inherited from `System.ValueType`. Thus, they are value types that are located on the stack or inline in the containing object, and any value of the underlying type is a valid value of the enumeration. This is significant when pattern matching on enumeration values, because you have to provide a pattern that catches the unnamed values.
 
 The `enum` function in the F# library can be used to generate an enumeration value, even a value other than one of the predefined, named values. You use the `enum` function as follows.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2103.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2103.fs)]
 
 The default `enum` function works with type `int32`. Therefore, it cannot be used with enumeration types that have other underlying types. Instead, use the following.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2104.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2104.fs)]
 
 Additionally, cases for enums are always emitted as `public`. This is so that they align with C# and the rest of the .NET platform.
 

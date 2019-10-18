@@ -23,14 +23,14 @@ Notifies the debugger that the specified connection has been terminated.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DestroyConnection (  
     [in] ICorDebugProcess     *pProcess,  
     [in] CONNID               dwConnectionId  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process containing the connection that was destroyed.  
   
@@ -50,5 +50,6 @@ HRESULT DestroyConnection (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

@@ -8,9 +8,9 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 
  Migrating an existing ASP.NET AJAX service to a WCF AJAX service gives you the following benefits:
 
--   You can expose your AJAX service as a SOAP service with minimal extra configuration.
+- You can expose your AJAX service as a SOAP service with minimal extra configuration.
 
--   You can benefit from WCF features such as tracing, and so on.
+- You can benefit from WCF features such as tracing, and so on.
 
  The following procedures assume that you are using Visual Studio 2012.
 
@@ -20,21 +20,21 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 
 ### To create and test the ASP.NET Web service application
 
-1.  Open Visual Studio 2012.
+1. Open Visual Studio 2012.
 
-2.  From the **File** menu, select **New**, then **Project**, then **Web**, and then select **ASP.NET Web Service Application**.
+2. From the **File** menu, select **New**, then **Project**, then **Web**, and then select **ASP.NET Web Service Application**.
 
-3.  Name the project `ASPHello` and click **OK**.
+3. Name the project `ASPHello` and click **OK**.
 
-4.  Uncomment the line in the Service1.asmx.cs file that contains `System.Web.Script.Services.ScriptService]` to enable AJAX for this service.
+4. Uncomment the line in the Service1.asmx.cs file that contains `System.Web.Script.Services.ScriptService]` to enable AJAX for this service.
 
-5.  From the **Build** menu, select **Build Solution**.
+5. From the **Build** menu, select **Build Solution**.
 
-6.  From the **Debug** menu, select **Start Without Debugging**.
+6. From the **Debug** menu, select **Start Without Debugging**.
 
-7.  On the Web page generated, select the `HelloWorld` operation.
+7. On the Web page generated, select the `HelloWorld` operation.
 
-8.  Click the **Invoke** button on the `HelloWorld` test page. You should receive the following XML response.
+8. Click the **Invoke** button on the `HelloWorld` test page. You should receive the following XML response.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -47,24 +47,24 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 
 ### To create an equivalent WCF AJAX service application
 
-1.  Right-click the **ASPHello** project and select **Add**, then **New Item**, and then **AJAX-enabled WCF Service**.
+1. Right-click the **ASPHello** project and select **Add**, then **New Item**, and then **AJAX-enabled WCF Service**.
 
-2.  Name the service `WCFHello` and click **Add**.
+2. Name the service `WCFHello` and click **Add**.
 
-3.  Open the WCFHello.svc.cs file.
+3. Open the WCFHello.svc.cs file.
 
-4.  From Service1.asmx.cs, copy the following implementation of the `HelloWorld` operation.
+4. From Service1.asmx.cs, copy the following implementation of the `HelloWorld` operation.
 
-    ```
+    ```csharp
     public string HelloWorld()
     {
          return "Hello World";
     }
     ```
 
-5.  Paste to copied implementation of the `HelloWorld` operation into the WCFHello.svc.cs file in place of the following code.
+5. Paste to copied implementation of the `HelloWorld` operation into the WCFHello.svc.cs file in place of the following code.
 
-    ```
+    ```csharp
     public void DoWork()
     {
           // Add your operation implementation here
@@ -72,18 +72,18 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
     }
     ```
 
-6.  Specify the `Namespace` attribute for <xref:System.ServiceModel.ServiceContractAttribute> as `WCFHello`.
+6. Specify the `Namespace` attribute for <xref:System.ServiceModel.ServiceContractAttribute> as `WCFHello`.
 
-    ```
+    ```csharp
     [ServiceContract(Namespace="WCFHello")]
     [AspNetCompatibilityRequirements(RequirementsMode=AspNetCompatibilityRequirementsMode.Required)]
     public class WCFHello
     { … }
     ```
 
-7.  Add the <xref:System.ServiceModel.Web.WebInvokeAttribute> to the `HelloWorld` operation and set the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to return <xref:System.ServiceModel.Web.WebMessageFormat.Xml>. Note that, if not set, the default return type is <xref:System.ServiceModel.Web.WebMessageFormat.Json>.
+7. Add the <xref:System.ServiceModel.Web.WebInvokeAttribute> to the `HelloWorld` operation and set the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to return <xref:System.ServiceModel.Web.WebMessageFormat.Xml>. Note that, if not set, the default return type is <xref:System.ServiceModel.Web.WebMessageFormat.Json>.
 
-    ```
+    ```csharp
     [OperationContract]
     [WebInvoke(ResponseFormat=WebMessageFormat.Xml)]
     public string HelloWorld()
@@ -92,7 +92,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
     }
     ```
 
-8.  From the **Build** menu, select **Build Solution**.
+8. From the **Build** menu, select **Build Solution**.
 
 9. Open the WCFHello.svc file and from the **Debug** menu, select **Start Without Debugging**.
 
@@ -107,7 +107,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 ## Example
  The code that results from the procedures outlined in this topic is provided in the following example.
 
-```
+```csharp
 //This is the ASP.NET code in the Service1.asmx.cs file.
 
 using System;
@@ -173,13 +173,13 @@ namespace ASPHello
 
  If ASMX Web services are being upgraded and migrated side-by-side to WCF services, avoid mapping two types to the same name on the client. This causes an exception in serializers if the same type is used in a <xref:System.Web.Services.WebMethodAttribute> and a <xref:System.ServiceModel.ServiceContractAttribute>:
 
--   If WCF service is added first, invoking the method on ASMX Web Service causes exception in <xref:System.Web.UI.ObjectConverter.ConvertValue%28System.Object%2CSystem.Type%2CSystem.String%29> because the WCF style definition of the order in the proxy takes precedence.
+- If WCF service is added first, invoking the method on ASMX Web Service causes exception in <xref:System.Web.UI.ObjectConverter.ConvertValue%28System.Object%2CSystem.Type%2CSystem.String%29> because the WCF style definition of the order in the proxy takes precedence.
 
--   If ASMX Web Service is added first, invoking method on WCF service causes exception in <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> because the Web Service style definition of the order in the proxy takes precedence.
+- If ASMX Web Service is added first, invoking method on WCF service causes exception in <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> because the Web Service style definition of the order in the proxy takes precedence.
 
  There are significant differences in behavior between the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> and the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>. For example, the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> represents a dictionary as an array of key/value pairs, whereas the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer> represents a dictionary as actual JSON objects. So the following is the dictionary represented in ASP.NET AJAX.
 
-```
+```csharp
 Dictionary<string, int> d = new Dictionary<string, int>();
 d.Add("one", 1);
 d.Add("two", 2);
@@ -187,9 +187,9 @@ d.Add("two", 2);
 
  This dictionary is represented in JSON objects as shown in the following list:
 
--   [{"Key":"one","Value":1},{"Key":"two","Value":2}] by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
+- [{"Key":"one","Value":1},{"Key":"two","Value":2}] by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>
 
--   {"one":1,"two":2} by the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>
+- {"one":1,"two":2} by the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>
 
  The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> is more powerful in the sense that it can handle dictionaries where the key type is not string, while the <xref:System.Web.Script.Serialization.JavaScriptSerializer> cannot. But the latter is more JSON-friendly.
 
@@ -207,4 +207,5 @@ d.Add("two", 2);
 |Escaped characters|Always with an escape forward slash (/); never allows un-escaped invalid JSON characters, such as "\n".|With an escape forward slash (/) for DateTime values.|
 
 ## See also
+
 - [How to: Use Configuration to Add an ASP.NET AJAX Endpoint](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md)

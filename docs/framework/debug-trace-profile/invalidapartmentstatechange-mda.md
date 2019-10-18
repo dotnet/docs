@@ -17,21 +17,21 @@ ms.author: "mairaw"
 # invalidApartmentStateChange MDA
 The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated by either of two problems:  
   
--   An attempt is made to change the COM apartment state of a thread that has already been initialized by COM to a different apartment state.  
+- An attempt is made to change the COM apartment state of a thread that has already been initialized by COM to a different apartment state.  
   
--   The COM apartment state of a thread changes unexpectedly.  
+- The COM apartment state of a thread changes unexpectedly.  
   
 ## Symptoms  
   
--   A thread's COM apartment state is not what was requested. This may cause proxies to be used for COM components that have a threading model different from the current one. This in turn may cause an <xref:System.InvalidCastException> to be thrown when calling the COM object through interfaces that are not set up for cross-apartment marshaling.  
+- A thread's COM apartment state is not what was requested. This may cause proxies to be used for COM components that have a threading model different from the current one. This in turn may cause an <xref:System.InvalidCastException> to be thrown when calling the COM object through interfaces that are not set up for cross-apartment marshaling.  
   
--   The COM apartment state of the thread is different than expected. This can cause a <xref:System.Runtime.InteropServices.COMException> with an HRESULT of RPC_E_WRONG_THREAD as well as a <xref:System.InvalidCastException> when making calls on a [Runtime Callable Wrapper](../../../docs/framework/interop/runtime-callable-wrapper.md) (RCW). This can also cause some single-threaded COM components to be accessed by multiple threads at the same time, which can lead to corruption or data loss.  
+- The COM apartment state of the thread is different than expected. This can cause a <xref:System.Runtime.InteropServices.COMException> with an HRESULT of RPC_E_WRONG_THREAD as well as a <xref:System.InvalidCastException> when making calls on a [Runtime Callable Wrapper](../../standard/native-interop/runtime-callable-wrapper.md) (RCW). This can also cause some single-threaded COM components to be accessed by multiple threads at the same time, which can lead to corruption or data loss.  
   
 ## Cause  
   
--   The thread was previously initialized to a different COM apartment state. Note that the apartment state of a thread can be set either explicitly or implicitly. The explicit operations include the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType> property and the <xref:System.Threading.Thread.SetApartmentState%2A> and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods. A thread created using the <xref:System.Threading.Thread.Start%2A> method is implicitly set to <xref:System.Threading.ApartmentState.MTA> unless <xref:System.Threading.Thread.SetApartmentState%2A> is called before the thread is started. The main thread of the application is also implicitly initialized to <xref:System.Threading.ApartmentState.MTA> unless the <xref:System.STAThreadAttribute> attribute is specified on the main method.  
+- The thread was previously initialized to a different COM apartment state. Note that the apartment state of a thread can be set either explicitly or implicitly. The explicit operations include the <xref:System.Threading.Thread.ApartmentState%2A?displayProperty=nameWithType> property and the <xref:System.Threading.Thread.SetApartmentState%2A> and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods. A thread created using the <xref:System.Threading.Thread.Start%2A> method is implicitly set to <xref:System.Threading.ApartmentState.MTA> unless <xref:System.Threading.Thread.SetApartmentState%2A> is called before the thread is started. The main thread of the application is also implicitly initialized to <xref:System.Threading.ApartmentState.MTA> unless the <xref:System.STAThreadAttribute> attribute is specified on the main method.  
   
--   The `CoUninitialize` method (or the `CoInitializeEx` method) with a different concurrency model is called on the thread.  
+- The `CoUninitialize` method (or the `CoInitializeEx` method) with a different concurrency model is called on the thread.  
   
 ## Resolution  
  Set the apartment state of the thread before it begins executing, or apply either the <xref:System.STAThreadAttribute> attribute or the <xref:System.MTAThreadAttribute> attribute to the main method of the application.  
@@ -72,6 +72,7 @@ namespace ApartmentStateMDA
 ```  
   
 ## See also
+
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

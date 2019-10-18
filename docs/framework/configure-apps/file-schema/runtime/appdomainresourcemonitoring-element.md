@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<appDomainResourceMonitoring> Element
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.  
   
- \<configuration>  
-\<runtime>  
-\<appDomainResourceMonitoring>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainResourceMonitoring>**  
   
 ## Syntax  
   
@@ -49,11 +49,11 @@ Instructs the runtime to collect statistics on all application domains in the pr
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
- Application domain resource monitoring is available through the managed application domain class, the hosting [ICLRAppDomainResourceMonitor](../../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) interface, and event tracing for Windows (ETW). When monitoring is enabled, statistics are collected for all application domains in the process for the life of the process.  
+ Application domain resource monitoring is available through the managed application domain class, the hosting [ICLRAppDomainResourceMonitor](../../../unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md) interface, and event tracing for Windows (ETW). When monitoring is enabled, statistics are collected for all application domains in the process for the life of the process.  
   
  To enable monitoring from managed code, use the <xref:System.AppDomain.MonitoringIsEnabled%2A> property.  
   
- This configuration element is available only in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] and later.  
+ This configuration element is available only in the .NET Framework 4 and later.  
   
 ## Example  
  The following example shows how to enable application domain resource monitoring.  
@@ -67,6 +67,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
 ```  
   
 ## See also
+
 - <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType>
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

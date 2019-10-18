@@ -41,12 +41,12 @@ Console.WriteLine(str);
   
  This code produces the following output:  
   
-```  
+```output  
 Some text that is broken up into multiple segments.  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
 ```csharp  
 XElement root = XElement.Parse(@"<root xmlns='http://www.adatum.com'>  
@@ -81,11 +81,10 @@ Console.WriteLine(str);
   
  This code produces the following output:  
   
-```  
+```output  
 Some text that is broken up into multiple segments.  
 ```  
   
 ## See also
 
 - <xref:System.Xml.Linq.XContainer.Descendants%2A>
-- [Basic Queries (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

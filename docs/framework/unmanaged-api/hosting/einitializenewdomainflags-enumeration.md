@@ -20,7 +20,7 @@ Enables the host to provide the runtime with information about the initializatio
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eInitializeNewDomainFlags_None              = 0x0000,  
     eInitializeNewDomainFlags_NoSecurityChanges = 0x0002  
@@ -47,5 +47,6 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
 - [SetAppDomainManagerType Method](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setappdomainmanagertype-method.md)

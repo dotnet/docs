@@ -15,13 +15,13 @@ This topic describes how to control the white space behavior of [!INCLUDE[sqltec
 ## Behavior of Methods that Populate XML Trees  
  The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes populate an XML tree. You can populate an XML tree from a file, a <xref:System.IO.TextReader>, an <xref:System.Xml.XmlReader>, or a string:  
   
--   <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.Linq.XDocument.Load%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.Linq.XDocument.Parse%2A?displayProperty=nameWithType>  
   
  If the method does not take <xref:System.Xml.Linq.LoadOptions> as an argument, the method will not preserve insignificant white space.  
   
@@ -32,4 +32,5 @@ This topic describes how to control the white space behavior of [!INCLUDE[sqltec
  You can create an XML tree by using an <xref:System.Xml.XmlWriter>. Nodes that are written to the <xref:System.Xml.XmlWriter> are populated in the tree. However, when you build an XML tree using this method, all nodes are preserved, regardless of whether the node is white space or not, or whether the white space is significant or not.  
   
 ## See also
+
 - [Parsing XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)

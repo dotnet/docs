@@ -34,10 +34,11 @@ Console.WriteLine(el1.Name)
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 PurchaseOrders  
 ```  
   
 ## See also
+
 - [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

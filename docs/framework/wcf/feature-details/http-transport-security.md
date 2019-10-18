@@ -25,21 +25,21 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
 ## Implementing SSL with WCF  
  HTTP transport security (or SSL) is provided externally to WCF. You can implement SSL in one of two ways; the deciding factor is how your application is hosted:  
   
--   If you are using Internet Information Services (IIS) as your WCF host, use the IIS infrastructure to set up an SSL service.  
+- If you are using Internet Information Services (IIS) as your WCF host, use the IIS infrastructure to set up an SSL service.  
   
--   If you are creating a self-hosted WCF application, you can bind an SSL certificate to the address using the HttpCfg.exe tool.  
+- If you are creating a self-hosted WCF application, you can bind an SSL certificate to the address using the HttpCfg.exe tool.  
   
 ### Using IIS for Transport Security  
   
 #### IIS 7.0  
- To set up [!INCLUDE[iisver](../../../../includes/iisver-md.md)] as a secure host (using SSL), see [IIS 7.0 Beta: Configuring Secure Sockets Layer in IIS 7.0](https://go.microsoft.com/fwlink/?LinkId=88600).  
+ To set up IIS 7.0 as a secure host (using SSL), see [Configuring Secure Sockets Layer in IIS 7.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771438(v=ws.10)).  
   
- To configure certificates for use with [!INCLUDE[iisver](../../../../includes/iisver-md.md)], see [IIS 7.0 Beta: Configuring Server Certificates in IIS 7.0](https://go.microsoft.com/fwlink/?LinkID=88595).  
+To configure certificates for use with IIS 7.0, see [Configuring Server Certificates in IIS 7.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732230(v=ws.10)).  
   
 #### IIS 6.0  
- To set up [!INCLUDE[iis601](../../../../includes/iis601-md.md)] as a secure host (using SSL), see [Configuring Secure Sockets Layer](https://go.microsoft.com/fwlink/?LinkId=88601).  
+ To set up IIS 6.0 as a secure host (using SSL), see [Configuring Secure Sockets Layer](https://go.microsoft.com/fwlink/?LinkId=88601).  
   
- To configure certificates for use with [!INCLUDE[iis601](../../../../includes/iis601-md.md)], see [Certificates_IIS_SP1_Ops](https://go.microsoft.com/fwlink/?LinkId=88602).  
+ To configure certificates for use with IIS 6.0, see [Certificates_IIS_SP1_Ops](https://go.microsoft.com/fwlink/?LinkId=88602).  
   
 ### Using HttpCfg for SSL  
  If you are creating a self-hosted WCF application, download the HttpCfg.exe tool, available at the [Windows XP Service Pack 2 Support Tools site](https://go.microsoft.com/fwlink/?LinkId=29002).  
@@ -47,5 +47,6 @@ When using HTTP as the transport, security is provided by a Secure Sockets Layer
  For more information about using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   
 ## See also
+
 - [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md)
 - [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)

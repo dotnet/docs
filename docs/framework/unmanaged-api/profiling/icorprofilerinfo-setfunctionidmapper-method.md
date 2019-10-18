@@ -23,12 +23,12 @@ Specifies the profiler-implemented function that will be called to map `Function
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFunctionIDMapper (  
     [in] FunctionIDMapper *pFunc);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFunc`  
  [in] A pointer to the [FunctionIDMapper](../../../../docs/framework/unmanaged-api/profiling/functionidmapper-function.md) implementation that will be called to map the `FunctionID` values to their alternative values.  
   
@@ -47,4 +47,5 @@ HRESULT SetFunctionIDMapper (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

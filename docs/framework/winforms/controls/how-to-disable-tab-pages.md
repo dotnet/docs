@@ -15,16 +15,16 @@ On some occasions, you will want to restrict access to data that is available wi
   
 ### To disable tab pages programmatically  
   
-1.  Write code to handle the tab control's <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event. This is the event that is raised when the user switches from one tab to the next.  
+1. Write code to handle the tab control's <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event. This is the event that is raised when the user switches from one tab to the next.  
   
-2.  Check credentials. Depending upon the information presented, you may want to check the user name the user has logged in with or some other form of credentials before allowing the user to view the tab.  
+2. Check credentials. Depending upon the information presented, you may want to check the user name the user has logged in with or some other form of credentials before allowing the user to view the tab.  
   
-3.  If the user has appropriate credentials, display the tab that was clicked. If the user does not have appropriate credentials, display a message box or some other user interface indicating that they do not have access, and return to the initial tab.  
+3. If the user has appropriate credentials, display the tab that was clicked. If the user does not have appropriate credentials, display a message box or some other user interface indicating that they do not have access, and return to the initial tab.  
   
     > [!NOTE]
-    >  When you implement this functionality in your production applications, you can perform this credential check during the form's <xref:System.Windows.Forms.Form.Load> event. This will allow you to hide the tab before any user interface is shown, which is a much cleaner approach to programming. The methodology used below (checking credentials and disabling the tab during the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event) is for illustrative purposes.  
+    > When you implement this functionality in your production applications, you can perform this credential check during the form's <xref:System.Windows.Forms.Form.Load> event. This will allow you to hide the tab before any user interface is shown, which is a much cleaner approach to programming. The methodology used below (checking credentials and disabling the tab during the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event) is for illustrative purposes.  
   
-4.  Optionally, if you have more than two tab pages, display a tab page different from the original.  
+4. Optionally, if you have more than two tab pages, display a tab page different from the original.  
   
      In the example below, a <xref:System.Windows.Forms.CheckBox> control is used in lieu of checking the credentials, as the criteria for access to the tab will vary by application. When the <xref:System.Windows.Forms.TabControl.SelectedIndexChanged> event is raised, if the credential check is true (that is, the check box is checked) and the selected tab is `TabPage2` (the tab with the confidential information, in this example), then `TabPage2` is displayed. Otherwise, `TabPage3` is displayed and a message box is shown to the user, indicating they did not have appropriate access privileges. The code below assumes a form with a <xref:System.Windows.Forms.CheckBox> control (`CredentialCheck`) and a <xref:System.Windows.Forms.TabControl> control with three tab pages.  
   
@@ -96,7 +96,8 @@ On some occasions, you will want to restrict access to data that is available wi
     ```  
   
 ## See also
-- [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)
-- [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)
-- [How to: Add and Remove Tabs with the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-add-and-remove-tabs-with-the-windows-forms-tabcontrol.md)
-- [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)
+
+- [TabControl Control Overview](tabcontrol-control-overview-windows-forms.md)
+- [How to: Add a Control to a Tab Page](how-to-add-a-control-to-a-tab-page.md)
+- [How to: Add and Remove Tabs with the Windows Forms TabControl](how-to-add-and-remove-tabs-with-the-windows-forms-tabcontrol.md)
+- [How to: Change the Appearance of the Windows Forms TabControl](how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)

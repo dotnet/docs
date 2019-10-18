@@ -128,7 +128,7 @@ Console.WriteLine(root.<Child>.Count())
   
  This example indicates that there are no `Child` elements. It produces the following output:  
   
-```  
+```console  
 0  
 ```  
   
@@ -150,7 +150,7 @@ End Module
   
  This example indicates that there is one `Child` element. It produces the following output:  
   
-```  
+```console  
 1  
 ```  
   
@@ -187,9 +187,10 @@ End Module
   
  This example produces the following output:  
   
-```  
+```console  
 http://www.adventure-works.com  
 ```  
   
 ## See also
-- [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+
+- [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md)

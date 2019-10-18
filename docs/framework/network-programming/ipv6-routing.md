@@ -9,24 +9,25 @@ A flexible routing mechanism is a benefit of IPv6. Due to the way in which IPv4 
 ## Neighbor Discovery  
  Some of the features provided by Neighbor Discovery are:  
   
--   Router discovery. This allows hosts to identify local routers.  
+- Router discovery. This allows hosts to identify local routers.  
   
--   Address resolution. This allows nodes to resolve a link-layer address for a corresponding next-hop address (a replacement for Address Resolution Protocol [ARP]).  
+- Address resolution. This allows nodes to resolve a link-layer address for a corresponding next-hop address (a replacement for Address Resolution Protocol [ARP]).  
   
--   Address auto-configuration. This allows hosts to automatically configure site-local and global addresses.  
+- Address auto-configuration. This allows hosts to automatically configure site-local and global addresses.  
   
  Neighbor Discovery uses Internet Control Message Protocol for IPv6 (ICMPv6) messages that include:  
   
--   Router advertisement. Sent by a router on a pseudo-periodic basis or in response to a router solicitation. IPv6 routers use router advertisements to advertise their availability, address prefixes, and other parameters.  
+- Router advertisement. Sent by a router on a pseudo-periodic basis or in response to a router solicitation. IPv6 routers use router advertisements to advertise their availability, address prefixes, and other parameters.  
   
--   Router solicitation. Sent by a host to request that routers on the link send a router advertisement immediately.  
+- Router solicitation. Sent by a host to request that routers on the link send a router advertisement immediately.  
   
--   Neighbor solicitation. Sent by nodes for address resolution, duplicate address detection, or to verify that a neighbor is still reachable.  
+- Neighbor solicitation. Sent by nodes for address resolution, duplicate address detection, or to verify that a neighbor is still reachable.  
   
--   Neighbor advertisement. Sent by nodes to respond to a neighbor solicitation or to notify neighbors of a change in link-layer address.  
+- Neighbor advertisement. Sent by nodes to respond to a neighbor solicitation or to notify neighbors of a change in link-layer address.  
   
--   Redirect. Sent by routers to indicate a better next-hop address to a particular destination for a sending node.  
+- Redirect. Sent by routers to indicate a better next-hop address to a particular destination for a sending node.  
   
 ## See also
-- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
-- [Sockets](../../../docs/framework/network-programming/sockets.md)
+
+- [Internet Protocol Version 6](internet-protocol-version-6.md)
+- [Sockets](sockets.md)

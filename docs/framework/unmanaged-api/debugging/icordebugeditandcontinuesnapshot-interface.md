@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEditAndContinueSnapshot Interface1"
+title: "ICorDebugEditAndContinueSnapshot Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugEditAndContinueSnapshot"
@@ -17,8 +17,10 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugEditAndContinueSnapshot Interface1
+# ICorDebugEditAndContinueSnapshot Interface
+
 `ICorDebugEditAndContinueSnapshot` is obsolete. Do not use this interface.  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

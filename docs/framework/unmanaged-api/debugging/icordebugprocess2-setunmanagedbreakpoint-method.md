@@ -23,7 +23,7 @@ Sets an unmanaged breakpoint at the specified native image offset.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnmanagedBreakpoint (  
     [in]  CORDB_ADDRESS    address,  
     [in]  ULONG32          bufsize,  
@@ -33,7 +33,7 @@ HRESULT SetUnmanagedBreakpoint (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` object that specifies the native image offset.  
   

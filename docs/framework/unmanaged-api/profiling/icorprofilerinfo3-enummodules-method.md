@@ -23,11 +23,11 @@ Returns an enumerator that provides methods to sequentially iterate through a co
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumModules([out] ICorProfilerModuleEnum** ppEnum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to an [ICorProfilerModuleEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md) interface.  
   
@@ -43,6 +43,7 @@ HRESULT EnumModules([out] ICorProfilerModuleEnum** ppEnum);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerFunctionEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)
 - [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

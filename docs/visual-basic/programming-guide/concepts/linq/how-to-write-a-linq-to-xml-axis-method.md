@@ -198,7 +198,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 /PurchaseOrders/PurchaseOrder[1]/@OrderDate  
 1999-10-20  
 /PurchaseOrders/PurchaseOrder[1]/Items/Item[2]/ShipDate  
@@ -210,4 +210,5 @@ End Module
 ```  
   
 ## See also
+
 - [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

@@ -6,7 +6,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # APIs That Rely on Reflection
-In some cases, the use of reflection in code isn't obvious, and so the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain doesn't preserve metadata that is needed at run time. This topic covers some common APIs or common programming patterns that aren't considered part of the reflection API but that rely on reflection to execute successfully. If you use them in your source code, you can add information about them to the runtime directives (.rd.xml) file so that calls to these APIs do not throw a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception or some other exception at run time.  
+In some cases, the use of reflection in code isn't obvious, and so the .NET Native tool chain doesn't preserve metadata that is needed at run time. This topic covers some common APIs or common programming patterns that aren't considered part of the reflection API but that rely on reflection to execute successfully. If you use them in your source code, you can add information about them to the runtime directives (.rd.xml) file so that calls to these APIs do not throw a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception or some other exception at run time.  
   
 ## Type.MakeGenericType method  
  You can dynamically instantiate a generic type `AppClass<T>` by calling the <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> method by using code like this:  
@@ -21,13 +21,11 @@ In some cases, the use of reflection in code isn't obvious, and so the [!INCLUDE
   
  This allows the <xref:System.Type.GetType%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> method call to succeed and return a valid <xref:System.Type> object.  
   
- But even when you add metadata for the uninstantiated generic type, calling the <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> method throws a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception:  
+ But even when you add metadata for the uninstantiated generic type, calling the <xref:System.Type.MakeGenericType%2A?displayProperty=nameWithType> method throws a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception:  
   
-```  
 This operation cannot be carried out as metadata for the following type was removed for performance reasons:  
   
-App1.AppClass`1<System.Int32>.  
-```  
+`App1.AppClass`1<System.Int32>`.  
   
  You can add the following run-time directive to the runtime directives file to add `Activate` metadata for the specific instantiation over `AppClass<T>` of <xref:System.Int32?displayProperty=nameWithType>:  
   
@@ -45,13 +43,13 @@ App1.AppClass`1<System.Int32>.
   
  To run successfully, this code requires several items of metadata:  
   
--   `Browse` metadata for the type whose method you want to call.  
+- `Browse` metadata for the type whose method you want to call.  
   
--   `Browse` metadata for the method you want to call.  If it is a public method, adding public `Browse` metadata for the containing type includes the method, too.  
+- `Browse` metadata for the method you want to call.  If it is a public method, adding public `Browse` metadata for the containing type includes the method, too.  
   
--   Dynamic metadata for the method you want to call, so that the reflection invocation delegate is not removed by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. If dynamic metadata is missing for the method, the following exception is thrown when the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> method is called:  
+- Dynamic metadata for the method you want to call, so that the reflection invocation delegate is not removed by the .NET Native tool chain. If dynamic metadata is missing for the method, the following exception is thrown when the <xref:System.Reflection.MethodInfo.MakeGenericMethod%2A?displayProperty=nameWithType> method is called:  
   
-    ```  
+    ```output
     MakeGenericMethod() cannot create this generic method instantiation because the instantiation was not metadata-enabled: 'App1.Class1.GenMethod<Int32>(Int32)'.  
     ```  
   
@@ -72,7 +70,7 @@ App1.AppClass`1<System.Int32>.
   
  If no array metadata is present, the following error results:  
   
-```  
+```output
 This operation cannot be carried out as metadata for the following type was removed for performance reasons:  
   
 App1.Class1[]  
@@ -87,5 +85,6 @@ Unfortunately, no further information is available.
 ```  
   
 ## See also
-- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+
+- [Getting Started](getting-started-with-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)

@@ -39,10 +39,11 @@ Console.WriteLine("Child2 was {0}", _
   
  This example produces the following output:  
   
-```  
+```console  
 Child1 was cloned  
 Child2 was attached  
 ```  
   
 ## See also
+
 - [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

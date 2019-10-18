@@ -30,7 +30,7 @@ ms.assetid: f8e241ae-b1ed-4886-9aa0-08c632154029
   
  For example, suppose you have the following procedure in a module.  
   
-```  
+```vb  
 Sub ChangeFormColor(FormName As Form)  
    Randomize()  
    FormName.BackColor = Color.FromArgb(Rnd() * 256, Rnd() * 256, Rnd() * 256)  
@@ -39,12 +39,12 @@ End Sub
   
  You can call this procedure and pass the current instance of the <xref:System.Windows.Forms.Form> class as an argument by using the following statement.  
   
-```  
+```vb  
 ChangeFormColor(Me)  
 ```  
   
 ## My  
- The `My` feature provides easy and intuitive access to a number of [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] classes, enabling the Visual Basic user to interact with the computer, application, settings, resources, and so on.  
+ The `My` feature provides easy and intuitive access to a number of .NET Framework classes, enabling the Visual Basic user to interact with the computer, application, settings, resources, and so on.  
   
 ## MyBase  
  The `MyBase` keyword behaves like an object variable referring to the base class of the current instance of a class. `MyBase` is commonly used to access base class members that are overridden or shadowed in a derived class. `MyBase.New` is used to explicitly call a base class constructor from a derived class constructor.  
@@ -53,4 +53,5 @@ ChangeFormColor(Me)
  The `MyClass` keyword behaves like an object variable referring to the current instance of a class as originally implemented. `MyClass` is similar to `Me`, but all method calls on it are treated as if the method were `NotOverridable`.  
   
 ## See also
+
 - [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)

@@ -9,15 +9,16 @@ helpviewer_keywords:
 ms.assetid: 50a66dbe-2c1e-41bf-96bc-369301c891ac
 ---
 # \<proceduresignature1> is not CLS-compliant because it overloads \<proceduresignature2> which differs from it only by array of array parameter types or by the rank of the array parameter types
-A procedure or property is marked as `<CLSCompliant(True)>` when it overrides another procedure or property and the only difference between their parameter lists is the nesting level of a jagged array or the rank of an array.  
+
+A procedure or property is marked as `<CLSCompliant(True)>` when it overrides another procedure or property and the only difference between their parameter lists is the nesting level of a jagged array or the rank of an array.
   
- In the following declarations, the second and third declarations generate this error.  
+ In the following declarations, the second and third declarations generate this error:
   
- `Overloads Sub processArray(ByVal arrayParam() As Integer)`  
+ `Overloads Sub ProcessArray(arrayParam() As Integer)`  
   
- `Overloads Sub processArray(ByVal arrayParam()() As Integer)`  
+ `Overloads Sub ProcessArray(arrayParam()() As Integer)`  
   
- `Overloads Sub processArray(ByVal arrayParam(,) As Integer)`  
+ `Overloads Sub ProcessArray(arrayParam(,) As Integer)`  
   
  The second declaration changes the original one-dimensional parameter `arrayParam` to an array of arrays. The third declaration changes `arrayParam` to a two-dimensional array (rank 2). While Visual Basic allows overloads to differ only by one of these changes, such overloading is not compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS).  
   
@@ -31,11 +32,10 @@ A procedure or property is marked as `<CLSCompliant(True)>` when it overrides an
   
 ## To correct this error  
   
--   If you require CLS compliance, define your overloads to differ from each other in more ways than only the changes cited on this Help page.  
-  
--   If you require that the overloads differ only by the changes cited on this Help page, remove the <xref:System.CLSCompliantAttribute> from their definitions or mark them as `<CLSCompliant(False)>`.  
+- If you require CLS compliance, define your overloads to differ from each other in more ways than only the changes cited on this Help page.
+- If you require that the overloads differ only by the changes cited on this Help page, remove the <xref:System.CLSCompliantAttribute> from their definitions or mark them as `<CLSCompliant(False)>`.
   
 ## See also
 
-- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
-- [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)
+- [Procedure Overloading](../../programming-guide/language-features/procedures/procedure-overloading.md)
+- [Overloads](../modifiers/overloads.md)

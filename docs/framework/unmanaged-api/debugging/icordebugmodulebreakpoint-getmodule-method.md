@@ -23,13 +23,13 @@ Gets an interface pointer to an "ICorDebugModule" that references the module in 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModule (  
     [out] ICorDebugModule   **ppModule  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppModule`  
  [out] A pointer to the address of an `ICorDebugModule` interface that references the module in which the breakpoint is set.  
   
@@ -43,4 +43,3 @@ HRESULT GetModule (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

@@ -23,7 +23,7 @@ Notifies the debugger that the common language runtime was unable to accurately 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BreakpointSetError (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugThread     *pThread,  
@@ -32,7 +32,7 @@ HRESULT BreakpointSetError (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain that contains the unbound breakpoint.  
   
@@ -58,4 +58,5 @@ HRESULT BreakpointSetError (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

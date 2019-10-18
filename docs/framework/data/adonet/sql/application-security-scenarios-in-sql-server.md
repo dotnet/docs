@@ -29,29 +29,30 @@ There is no single correct way to create a secure SQL Server client application.
  Always assign a strong password to the `sa` account, even when using Windows Authentication.  
   
 ## In This Section  
- [Managing Permissions with Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)  
+ [Managing Permissions with Stored Procedures in SQL Server](managing-permissions-with-stored-procedures-in-sql-server.md)  
  Describes how to use stored procedures to manage permissions and control data access. Using stored procedures is an effective way to respond to many security threats.  
   
- [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)  
+ [Writing Secure Dynamic SQL in SQL Server](writing-secure-dynamic-sql-in-sql-server.md)  
  Describes techniques for writing secure dynamic SQL using stored procedures.  
   
- [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)  
+ [Signing Stored Procedures in SQL Server](signing-stored-procedures-in-sql-server.md)  
  Describes how to sign a stored procedure with a certificate to enable users to work with data they do not have direct access to. This enables stored procedures to perform operations that the caller does not have permissions to perform directly.  
   
- [Customizing Permissions with Impersonation in SQL Server](../../../../../docs/framework/data/adonet/sql/customizing-permissions-with-impersonation-in-sql-server.md)  
+ [Customizing Permissions with Impersonation in SQL Server](customizing-permissions-with-impersonation-in-sql-server.md)  
  Describes how to use the EXECUTE AS clause to impersonate another user. Impersonation switches the execution context from the caller to the specified user.  
   
- [Granting Row-Level Permissions in SQL Server](../../../../../docs/framework/data/adonet/sql/granting-row-level-permissions-in-sql-server.md)  
+ [Granting Row-Level Permissions in SQL Server](granting-row-level-permissions-in-sql-server.md)  
  Describes how to implement row-level permissions to restrict data access.  
   
- [Creating Application Roles in SQL Server](../../../../../docs/framework/data/adonet/sql/creating-application-roles-in-sql-server.md)  
+ [Creating Application Roles in SQL Server](creating-application-roles-in-sql-server.md)  
  Describes features and functionality of application roles.  
   
- [Enabling Cross-Database Access in SQL Server](../../../../../docs/framework/data/adonet/sql/enabling-cross-database-access-in-sql-server.md)  
+ [Enabling Cross-Database Access in SQL Server](enabling-cross-database-access-in-sql-server.md)  
  Describes how to enable cross-database access without jeopardizing security.  
   
 ## See also
-- [SQL Server Security](../../../../../docs/framework/data/adonet/sql/sql-server-security.md)
-- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [SQL Server Security](sql-server-security.md)
+- [Overview of SQL Server Security](overview-of-sql-server-security.md)
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [ADO.NET Overview](../ado-net-overview.md)

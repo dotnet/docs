@@ -23,13 +23,13 @@ Gets the function that contains the code associated with this stack frame.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunction (  
     [out] ICorDebugFunction  **ppFunction  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFunction`  
  [out] A pointer to the address of an ICorDebugFunction object that represents the function containing the code associated with this stack frame.  
   

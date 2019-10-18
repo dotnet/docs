@@ -20,9 +20,9 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
 ### XContainer Class  
  <xref:System.Xml.Linq.XContainer> is an abstract base class for all nodes that can have child nodes. The following classes derive from the <xref:System.Xml.Linq.XContainer> class:  
   
--   <xref:System.Xml.Linq.XElement>  
+- <xref:System.Xml.Linq.XElement>  
   
--   <xref:System.Xml.Linq.XDocument>  
+- <xref:System.Xml.Linq.XDocument>  
   
 ### XDeclaration Class  
  <xref:System.Xml.Linq.XDeclaration> represents an XML declaration. An XML declaration is used to declare the XML version and the encoding of a document. In addition, an XML declaration specifies whether the XML document is stand-alone. If a document is stand-alone, there are no external markup declarations, either in an external DTD, or in an external parameter entity referenced from the internal subset.  
@@ -49,15 +49,15 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
 ### XNode Class  
  <xref:System.Xml.Linq.XNode> is an abstract class that represents the nodes of an XML tree. The following classes derive from the <xref:System.Xml.Linq.XNode> class:  
   
--   <xref:System.Xml.Linq.XText>  
+- <xref:System.Xml.Linq.XText>  
   
--   <xref:System.Xml.Linq.XContainer>  
+- <xref:System.Xml.Linq.XContainer>  
   
--   <xref:System.Xml.Linq.XComment>  
+- <xref:System.Xml.Linq.XComment>  
   
--   <xref:System.Xml.Linq.XProcessingInstruction>  
+- <xref:System.Xml.Linq.XProcessingInstruction>  
   
--   <xref:System.Xml.Linq.XDocumentType>  
+- <xref:System.Xml.Linq.XDocumentType>  
   
 ### XNodeDocumentOrderComparer Class  
  <xref:System.Xml.Linq.XNodeDocumentOrderComparer> provides functionality to compare nodes for their document order.  
@@ -81,4 +81,5 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-
  <xref:System.Xml.Linq.XText> represents a text node. In most cases, you do not have to use this class. This class is primarily used for mixed content.  
   
 ## See also
+
 - [LINQ to XML Programming Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-programming-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugTypeEnum Interface1"
+title: "ICorDebugTypeEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugTypeEnum"
@@ -17,7 +17,7 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugTypeEnum Interface1
+# ICorDebugTypeEnum Interface
 Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.  
   
 ## Methods  
@@ -29,7 +29,7 @@ Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -41,4 +41,5 @@ Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

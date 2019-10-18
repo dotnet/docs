@@ -26,25 +26,25 @@ This article provides tips for improving the performance of large .NET Framework
  Writing code that is more complex than it needs to be incurs maintenance, debugging, and polishing costs. Experienced programmers have an intuitive grasp of how to solve coding problems and write more efficient code. However, they sometimes prematurely optimize their code. For example, they use a hash table when a simple array would suffice, or use complicated caching that may leak memory instead of simply recomputing values. Even if you’re an experience programmer, you should test for performance and analyze your code when you find issues. 
   
 ### Fact 2: If you’re not measuring, you’re guessing  
- Profiles and measurements don’t lie. Profiles show you whether the CPU is fully loaded or whether you’re blocked on disk I/O. Profiles tell you what kind and how much memory you’re allocating and whether your CPU is spending a lot of time in [garbage collection](../../../docs/standard/garbage-collection/index.md) (GC). 
+ Profiles and measurements don’t lie. Profiles show you whether the CPU is fully loaded or whether you’re blocked on disk I/O. Profiles tell you what kind and how much memory you’re allocating and whether your CPU is spending a lot of time in [garbage collection](../../standard/garbage-collection/index.md) (GC). 
   
  You should set performance goals for key customer experiences or scenarios in your app and write tests to measure performance. Investigate failing tests by applying the scientific method: use profiles to guide you, hypothesize what the issue might be, and test your hypothesis with an experiment or code change. Establish baseline performance measurements over time with regular testing, so you can isolate changes that cause regressions in performance. By approaching performance work in a rigorous way, you’ll avoid wasting time with code updates you don’t need. 
   
 ### Fact 3: Good tools make all the difference  
  Good tools let you drill quickly into the biggest performance issues (CPU, memory, or disk) and help you locate the code that causes those bottlenecks. Microsoft ships a variety of performance tools such as [Visual Studio Profiler](/visualstudio/profiling/beginners-guide-to-performance-profiling) and [PerfView](https://www.microsoft.com/download/details.aspx?id=28567). 
   
- PerfView is a free and amazingly powerful tool that helps you focus on deep issues such as disk I/O, GC events, and memory. You can capture performance-related [Event Tracing for Windows](../../../docs/framework/wcf/samples/etw-tracing.md) (ETW) events and view easily per app, per process, per stack, and per thread information. PerfView shows you how much and what kind of memory your app allocates, and which functions or call stacks contribute how much to the memory allocations. For details, see the rich help topics, demos, and videos included with the tool (such as the [PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial) on Channel 9). 
+ PerfView is a free and amazingly powerful tool that helps you focus on deep issues such as disk I/O, GC events, and memory. You can capture performance-related [Event Tracing for Windows](../wcf/samples/etw-tracing.md) (ETW) events and view easily per app, per process, per stack, and per thread information. PerfView shows you how much and what kind of memory your app allocates, and which functions or call stacks contribute how much to the memory allocations. For details, see the rich help topics, demos, and videos included with the tool (such as the [PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial) on Channel 9). 
   
 ### Fact 4: It’s all about allocations  
  You might think that building a responsive .NET Framework app is all about algorithms, such as using quick sort instead of bubble sort, but that's not the case. The biggest factor in building a responsive app is allocating memory, especially when your app is very large or processes large amounts of data. 
   
- Almost all the work to build responsive IDE experiences with the new compiler APIs involved avoiding allocations and managing caching strategies. PerfView traces show that the performance of the new C# and Visual Basic compilers is rarely CPU bound. The compilers can be I/O bound when reading hundreds of thousands or millions of lines of code, reading metadata, or emitting generated code. The UI thread delays are nearly all due to garbage collection. The .NET Framework GC is highly tuned for performance and does much of its work concurrently while app code executes. However, a single allocation can trigger an expensive [gen2](../../../docs/standard/garbage-collection/fundamentals.md) collection, stopping all threads. 
+ Almost all the work to build responsive IDE experiences with the new compiler APIs involved avoiding allocations and managing caching strategies. PerfView traces show that the performance of the new C# and Visual Basic compilers is rarely CPU bound. The compilers can be I/O bound when reading hundreds of thousands or millions of lines of code, reading metadata, or emitting generated code. The UI thread delays are nearly all due to garbage collection. The .NET Framework GC is highly tuned for performance and does much of its work concurrently while app code executes. However, a single allocation can trigger an expensive [gen2](../../standard/garbage-collection/fundamentals.md) collection, stopping all threads. 
   
 ## Common allocations and examples  
  The example expressions in this section have hidden allocations that appear small. However, if a large app executes the expressions enough times, they can causes hundreds of megabytes, even gigabytes, of allocations. For example, one-minute tests that simulated a developer’s typing in the editor allocated gigabytes of memory and led the performance team to focus on typing scenarios. 
   
 ### Boxing  
- [Boxing](~/docs/csharp/programming-guide/types/boxing-and-unboxing.md) occurs when value types that normally live on the stack or in data structures are wrapped in an object. That is, you allocate an object to hold the data, and then return a pointer to the object. The .NET Framework sometimes boxes values due to the signature of a method or the type of a storage location. Wrapping a value type in an object causes memory allocation. Many boxing operations can contribute megabytes or gigabytes of allocations to your app, which means that your app will cause more GCs. The .NET Framework and the language compilers avoid boxing when possible, but sometimes it happens when you least expect it. 
+ [Boxing](../../csharp/programming-guide/types/boxing-and-unboxing.md) occurs when value types that normally live on the stack or in data structures are wrapped in an object. That is, you allocate an object to hold the data, and then return a pointer to the object. The .NET Framework sometimes boxes values due to the signature of a method or the type of a storage location. Wrapping a value type in an object causes memory allocation. Many boxing operations can contribute megabytes or gigabytes of allocations to your app, which means that your app will cause more GCs. The .NET Framework and the language compilers avoid boxing when possible, but sometimes it happens when you least expect it. 
   
  To see boxing in PerfView, open a trace and look at GC Heap Alloc Stacks under your app’s process name (remember, PerfView reports on all processes). If you see types like <xref:System.Int32?displayProperty=nameWithType> and <xref:System.Char?displayProperty=nameWithType> under allocations, you are boxing value types. Choosing one of these types will show the stacks and functions in which they are boxed. 
   
@@ -274,7 +274,7 @@ Language-Integrated Query (LINQ), in conjunction with lambda expressions, is an 
   
  **Example 5: Lambdas, List\<T>, and IEnumerable\<T>**  
   
- This example uses [LINQ and functional style code](https://blogs.msdn.com/b/charlie/archive/2007/01/26/anders-hejlsberg-on-linq-and-functional-programming.aspx) to find a symbol in the compiler’s model, given a name string:  
+ This example uses [LINQ and functional style code](https://blogs.msdn.microsoft.com/charlie/2007/01/27/anders-hejlsberg-on-linq-and-functional-programming/) to find a symbol in the compiler’s model, given a name string:  
   
 ```csharp  
 class Symbol {  
@@ -298,7 +298,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- In the first line, the [lambda expression](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](https://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) the local variable `name`. This means that in addition to allocating an object for the [delegate](~/docs/csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`. The compiler generates code like the following:  
+ In the first line, the [lambda expression](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](https://blogs.msdn.microsoft.com/ericlippert/2003/09/17/what-are-closures/) the local variable `name`. This means that in addition to allocating an object for the [delegate](../../csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`. The compiler generates code like the following:  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  
@@ -447,21 +447,20 @@ class Compilation { /*...*/
   
  In this article, we discussed how you should be aware of performance bottleneck symptoms that can affect your app's responsiveness, especially for large systems or systems that process a large amount of data. Common culprits include boxing, string manipulations, LINQ and lambda, caching in async methods, caching without a size limit or disposal policy, inappropriate use of dictionaries, and passing around structures. Keep in mind the four facts for tuning your apps:  
   
--   Don’t prematurely optimize – be productive and tune your app when you spot problems. 
+- Don’t prematurely optimize – be productive and tune your app when you spot problems. 
   
--   Profiles don’t lie – you’re guessing if you’re not measuring. 
+- Profiles don’t lie – you’re guessing if you’re not measuring. 
   
--   Good tools make all the difference – download PerfView and try it out. 
+- Good tools make all the difference – download PerfView and try it out. 
   
--   It's all about allocations – that is where the compiler platform team spent most of their time improving the performance of the new compilers. 
+- It's all about allocations – that is where the compiler platform team spent most of their time improving the performance of the new compilers. 
   
 ## See also
 
 - [Video of presentation of this topic](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)
 - [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)
-- [Performance](../../../docs/framework/performance/index.md)
+- [Performance](index.md)
 - [.NET Performance Tips](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973839(v%3dmsdn.10))
-- [Windows Phone Performance Analysis Tool](https://msdn.microsoft.com/magazine/hh781024.aspx)
 - [Channel 9 PerfView tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial)
 - [The .NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [dotnet/roslyn repo on GitHub](https://github.com/dotnet/roslyn)

@@ -14,5 +14,6 @@ Id: 165
  This event indicates that an error occurred while dispatching a duplicated socket. This handle is now leaked in the process. The event lists the Source, Exception, Process Name and Process ID.  
   
 ## See also
-- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
-- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+
+- [Event Logging](index.md)
+- [Events General Reference](events-general-reference.md)

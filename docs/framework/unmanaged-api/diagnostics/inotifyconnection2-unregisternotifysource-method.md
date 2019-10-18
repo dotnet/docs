@@ -23,14 +23,14 @@ Removes a specified notification source object from the connection.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnregisterNotifySource  
 (  
     [in]  INotifySource2*  in_pNotifySource  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `in_pNotifySource`  
  [in] Notification object to be unregistered.  
   
@@ -41,6 +41,7 @@ HRESULT UnregisterNotifySource
  **Header:** ProtocolNotify2.idl  
   
 ## See also
+
 - [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
 - [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
 - [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)

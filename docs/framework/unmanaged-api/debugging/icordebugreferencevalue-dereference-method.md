@@ -23,13 +23,13 @@ Gets the object that is referenced.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Dereference (  
     [out] ICorDebugValue  **ppValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppValue`  
  [out] A pointer to the address of an ICorDebugValue that represents the object to which this ICorDebugReferenceValue object points.  
   

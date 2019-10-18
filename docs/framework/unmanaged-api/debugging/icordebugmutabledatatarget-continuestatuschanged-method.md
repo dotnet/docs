@@ -10,13 +10,13 @@ Changes the continuation status for the outstanding debug event on the specified
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ContinueStatusChanged(  
    [in] DWORD dwThreadId,  
    [in] CORDB_CONTINUE_STATUS continueStatus);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwThreadId`  
  The operating system-defined thread identifier.  
   
@@ -36,5 +36,6 @@ HRESULT ContinueStatusChanged(
  **.NET Framework Versions:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
 ## See also
+
 - [ICorDebugMutableDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

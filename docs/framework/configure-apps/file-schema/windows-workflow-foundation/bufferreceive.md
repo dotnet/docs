@@ -7,11 +7,12 @@ ms.assetid: b23c3a54-10d4-4f13-ab6d-98b26b76f22a
 # \<bufferReceive>
 A service behavior that enables a service to use buffered receive processing, which enables a workflow service to process out-of-order messages.  
   
-\<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<bufferReceive>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<bufferReceive>**  
   
 ## Syntax  
   
@@ -41,8 +42,9 @@ A service behavior that enables a service to use buffered receive processing, wh
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
+|[\<behavior> of \<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Description.BufferedReceiveServiceBehavior>
 - <xref:System.ServiceModel.Activities.Configuration.BufferedReceiveElement>

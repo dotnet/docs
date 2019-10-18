@@ -15,9 +15,9 @@ A statement uses the `AddressOf` operator with an operand that represents a proc
   
 ## To correct this error  
   
--   Replace the procedure name in the `AddressOf` clause with an operand that is not a member of <xref:System.Nullable%601>.  
+- Replace the procedure name in the `AddressOf` clause with an operand that is not a member of <xref:System.Nullable%601>.  
   
--   Write a class that wraps the method of <xref:System.Nullable%601> that you want to use. In the following example, the `NullableWrapper` class defines a new method named `GetValueOrDefault`. Because this new method is not a member of <xref:System.Nullable%601>, it can be applied to `nullInstance`, an instance of a nullable type, to form an argument for `AddressOf`.  
+- Write a class that wraps the method of <xref:System.Nullable%601> that you want to use. In the following example, the `NullableWrapper` class defines a new method named `GetValueOrDefault`. Because this new method is not a member of <xref:System.Nullable%601>, it can be applied to `nullInstance`, an instance of a nullable type, to form an argument for `AddressOf`.  
   
 ```vb  
 Module Module1  
@@ -56,6 +56,7 @@ End Module
 ```  
   
 ## See also
+
 - <xref:System.Nullable%601>
 - [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
 - [Nullable Value Types](../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md)

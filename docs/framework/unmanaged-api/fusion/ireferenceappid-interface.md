@@ -31,13 +31,14 @@ Represents a reference to the unique identifier for the application in the curre
 |`IReferenceAppId::put_SubscriptionId`|Sets the token identifier for a subscription to this `IReferenceAppId` to the specified string value.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
-- [IEnumReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ienumreferenceidentity-interface.md)
-- [IReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)
+
+- [Fusion Interfaces](fusion-interfaces.md)
+- [IEnumReferenceIdentity Interface](ienumreferenceidentity-interface.md)
+- [IReferenceIdentity Interface](ireferenceidentity-interface.md)

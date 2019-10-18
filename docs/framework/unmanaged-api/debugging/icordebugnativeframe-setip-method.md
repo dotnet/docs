@@ -23,13 +23,13 @@ Sets the instruction pointer to the specified offset location in native code.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetIP (  
     [in] ULONG32 nOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nOffset`  
  [in] The offset location in the native code.  
   
@@ -50,4 +50,3 @@ HRESULT SetIP (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-

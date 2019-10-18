@@ -16,13 +16,14 @@ This example shows how to handle the <xref:System.Windows.FrameworkElement.Loade
 ## Example  
  The following example uses [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] together with a code-behind file.  
   
- [!code-xaml[FELoaded#XAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FELoaded/CSharp/default.xaml#xaml)]  
+ [!code-xaml[FELoaded#XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FELoaded/CSharp/default.xaml#xaml)]  
   
- [!code-csharp[FELoaded#Handler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FELoaded/CSharp/default.xaml.cs#handler)]
- [!code-vb[FELoaded#Handler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FELoaded/VisualBasic/default.xaml.vb#handler)]  
+ [!code-csharp[FELoaded#Handler](~/samples/snippets/csharp/VS_Snippets_Wpf/FELoaded/CSharp/default.xaml.cs#handler)]
+ [!code-vb[FELoaded#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FELoaded/VisualBasic/default.xaml.vb#handler)]  
   
 ## See also
+
 - <xref:System.Windows.FrameworkElement>
-- [Object Lifetime Events](../../../../docs/framework/wpf/advanced/object-lifetime-events.md)
-- [Routed Events Overview](../../../../docs/framework/wpf/advanced/routed-events-overview.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/base-elements-how-to-topics.md)
+- [Object Lifetime Events](object-lifetime-events.md)
+- [Routed Events Overview](routed-events-overview.md)
+- [How-to Topics](base-elements-how-to-topics.md)

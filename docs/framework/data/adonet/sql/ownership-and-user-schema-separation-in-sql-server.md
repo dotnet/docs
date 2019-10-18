@@ -11,7 +11,7 @@ A core concept of SQL Server security is that owners of objects have irrevocable
   
  The four-part naming syntax for referring to objects specifies the schema name.  
   
-```  
+```text
 Server.Database.DatabaseSchema.DatabaseObject  
 ```  
   
@@ -23,18 +23,18 @@ Server.Database.DatabaseSchema.DatabaseObject
 ### Built-In Schemas  
  SQL Server ships with ten pre-defined schemas that have the same names as the built-in database users and roles. These exist mainly for backward compatibility. You can drop the schemas that have the same names as the fixed database roles if you do not need them. You cannot drop the following schemas:  
   
--   `dbo`  
+- `dbo`  
   
--   `guest`  
+- `guest`  
   
--   `sys`  
+- `sys`  
   
--   `INFORMATION_SCHEMA`  
+- `INFORMATION_SCHEMA`  
   
  If you drop them from the model database, they will not appear in new databases.  
   
 > [!NOTE]
->  The `sys` and `INFORMATION_SCHEMA` schemas are reserved for system objects. You cannot create objects in these schemas and you cannot drop them.  
+> The `sys` and `INFORMATION_SCHEMA` schemas are reserved for system objects. You cannot create objects in these schemas and you cannot drop them.  
   
 #### The dbo Schema  
  The `dbo` schema is the default schema for a newly created database. The `dbo` schema is owned by the `dbo` user account. By default, users created with the CREATE USER Transact-SQL command have `dbo` as their default schema.  
@@ -42,7 +42,7 @@ Server.Database.DatabaseSchema.DatabaseObject
  Users who are assigned the `dbo` schema do not inherit the permissions of the `dbo` user account. No permissions are inherited from a schema by users; schema permissions are inherited by the database objects contained in the schema.  
   
 > [!NOTE]
->  When database objects are referenced by using a one-part name, SQL Server first looks in the user's default schema. If the object is not found there, SQL Server looks next in the `dbo` schema. If the object is not in the `dbo` schema, an error is returned.  
+> When database objects are referenced by using a one-part name, SQL Server first looks in the user's default schema. If the object is not found there, SQL Server looks next in the `dbo` schema. If the object is not in the `dbo` schema, an error is returned.  
   
 ## External Resources  
  For more information on object ownership and schemas, see the following resources.  
@@ -52,9 +52,10 @@ Server.Database.DatabaseSchema.DatabaseObject
 |[User-Schema Separation](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms190387(v=sql.105))|Describes the changes introduced by user-schema separation. Includes new behavior, its impact on ownership, catalog views, and permissions.|  
   
 ## See also
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
-- [Authentication in SQL Server](../../../../../docs/framework/data/adonet/sql/authentication-in-sql-server.md)
-- [Server and Database Roles in SQL Server](../../../../../docs/framework/data/adonet/sql/server-and-database-roles-in-sql-server.md)
-- [Authorization and Permissions in SQL Server](../../../../../docs/framework/data/adonet/sql/authorization-and-permissions-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)
+- [Authentication in SQL Server](authentication-in-sql-server.md)
+- [Server and Database Roles in SQL Server](server-and-database-roles-in-sql-server.md)
+- [Authorization and Permissions in SQL Server](authorization-and-permissions-in-sql-server.md)
+- [ADO.NET Overview](../ado-net-overview.md)

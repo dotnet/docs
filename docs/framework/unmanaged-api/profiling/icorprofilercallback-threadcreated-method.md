@@ -23,12 +23,12 @@ Notifies the profiler that a thread has been created.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadCreated(  
     [in] ThreadID threadId);   
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread that has been created.  
   
@@ -45,5 +45,6 @@ HRESULT ThreadCreated(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ThreadDestroyed Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-threaddestroyed-method.md)

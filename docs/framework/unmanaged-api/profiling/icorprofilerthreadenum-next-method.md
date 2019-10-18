@@ -23,7 +23,7 @@ Gets the specified number of contiguous threads from a sequential collection of 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (    [in]  ULONG      celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  
                     ThreadID ids[],  
@@ -31,7 +31,7 @@ HRESULT Next (    [in]  ULONG      celt,
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of threads to retrieve.  
   
@@ -59,5 +59,6 @@ HRESULT Next (    [in]  ULONG      celt,
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerThreadEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

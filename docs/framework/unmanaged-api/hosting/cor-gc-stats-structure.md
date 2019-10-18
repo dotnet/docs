@@ -22,7 +22,7 @@ Provides statistics about the garbage collection mechanism of the common languag
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_GC_STATS {  
     ULONG   Flags;   
     SIZE_T  ExplicitGCCount;  
@@ -65,7 +65,7 @@ typedef struct _COR_GC_STATS {
   
  An example of the usage is as follows:  
   
-```  
+```cpp  
 COR_GC_STATS GCStats;  
 GCStats.Flags = COR_GC_COUNTS | COR_GC_MEMORYUSAGE;  
 pCLRGCManager->GetStats(&GCStats);  
@@ -81,6 +81,7 @@ pCLRGCManager->GetStats(&GCStats);
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
-- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)
-- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+- [Automatic Memory Management](../../../standard/automatic-memory-management.md)
+- [Garbage Collection](../../../standard/garbage-collection/index.md)

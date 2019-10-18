@@ -10,14 +10,14 @@ Writes memory into the target process address space.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WriteVirtual(  
    [in] CORDB_ADDRESS address,  
    [in, size_is(bytesRequested)] const BYTE * pBuffer,  
    [in] ULONG32 bytesRequested);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] The address at which to write the contents of `pBuffer`.  
   
@@ -43,5 +43,6 @@ HRESULT WriteVirtual(
  **.NET Framework Versions:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
 ## See also
+
 - [ICorDebugMutableDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

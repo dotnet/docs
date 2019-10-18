@@ -23,7 +23,7 @@ Closes the symbol writer after committing the symbols to the symbol store.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Close();  
 ```  
   
@@ -37,4 +37,5 @@ HRESULT Close();
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

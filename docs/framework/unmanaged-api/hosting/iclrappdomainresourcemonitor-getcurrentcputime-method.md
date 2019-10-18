@@ -23,12 +23,12 @@ Gets the total processor time that has been used by all threads while executing 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,  
                           [out] ULONGLONG* pMilliseconds);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainId`  
  [in] The ID of the requested application domain.  
   
@@ -56,7 +56,8 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)
+- [Application Domain Resource Monitoring](../../../standard/garbage-collection/app-domain-resource-monitoring.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

@@ -23,13 +23,13 @@ Deletes the specified key container.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyDelete (  
     [in]  LPCWSTR   wszKeyContainer  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The name of the key container to delete.  
   
@@ -49,5 +49,6 @@ HRESULT StrongNameKeyDelete (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameKeyInstall Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeyinstall-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

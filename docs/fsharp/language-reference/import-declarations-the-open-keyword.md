@@ -1,7 +1,7 @@
 ---
 title: "Import Declarations: The open Keyword"
 description: Learn about F# import declarations and how they specify a module or namespace whose elements you can reference without using a fully qualified name.
-ms.date: 05/16/2016
+ms.date: 04/04/2019
 ---
 # Import Declarations: The `open` Keyword
 
@@ -28,7 +28,7 @@ When you use multiple import declarations, they should appear on separate lines.
 
 The following code shows the use of the `open` keyword to simplify code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet6801.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet6801.fs)]
 
 The F# compiler does not emit an error or warning when ambiguities occur when the same name occurs in more than one open module or namespace. When ambiguities occur, F# gives preference to the more recently opened module or namespace. For example, in the following code, `empty` means `Seq.empty`, even though `empty` is located in both the `List` and `Seq` modules.
 
@@ -62,6 +62,6 @@ Some modules, records, or union types may specify the `RequireQualifiedAccess` a
 
 ## See also
 
-- [# Language Reference](index.md)
+- [F# Language Reference](index.md)
 - [Namespaces](namespaces.md)
 - [Modules](modules.md)

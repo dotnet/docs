@@ -17,12 +17,12 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# _EFN_GetManagedObjectName Function
+# \_EFN\_GetManagedObjectName Function
 Gets the name of a type using the provided managed object pointer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _EFN_GetManagedObjectName(  
     [in]  PDEBUG_CLIENT  Client,  
     [in]  ULONG64        objAddr,  
@@ -31,7 +31,7 @@ HRESULT _EFN_GetManagedObjectName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] A pointer to the debug client.  
   
@@ -55,4 +55,5 @@ HRESULT _EFN_GetManagedObjectName(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

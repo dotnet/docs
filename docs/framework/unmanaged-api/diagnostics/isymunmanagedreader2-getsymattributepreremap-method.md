@@ -23,7 +23,7 @@ Gets a custom attribute based upon its name. Unlike metadata custom attributes, 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymAttributePreRemap(  
     [in]  mdToken  parent,  
     [in]  WCHAR    *name,  
@@ -33,7 +33,7 @@ HRESULT GetSymAttributePreRemap(
         length_is(*pcBuffer)] BYTE buffer[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The metadata token of the parent.  
   
@@ -56,4 +56,5 @@ HRESULT GetSymAttributePreRemap(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)

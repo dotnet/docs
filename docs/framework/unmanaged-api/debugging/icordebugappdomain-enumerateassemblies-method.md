@@ -23,13 +23,13 @@ Gets an enumerator for the assemblies in the application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateAssemblies (  
     [out] ICorDebugAssemblyEnum  **ppAssemblies  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssemblies`  
  [out] A pointer to the address of an ICorDebugAssemblyEnum object that is the enumerator for the assemblies in the application domain.  
   

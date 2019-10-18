@@ -23,13 +23,13 @@ Gets the minimum number of threads that the host provides for processing I/O req
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMinThreads (  
     [out] DWORD *pdwMinIOCompletionThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMinIOCompletionThreads`  
  [out] A pointer to the minimum number of threads that the host provides to process I/O requests.  
   
@@ -58,5 +58,6 @@ HRESULT GetMinThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

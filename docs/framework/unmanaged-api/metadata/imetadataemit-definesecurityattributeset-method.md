@@ -23,7 +23,7 @@ Creates a set of security permissions to attach to the object referenced by the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineSecurityAttributeSet (   
     [in]  mdToken       tkObj,   
     [in]  COR_SECATTR   rSecAttrs[],   
@@ -32,7 +32,7 @@ HRESULT DefineSecurityAttributeSet (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkObj`  
  [in] The token to which the security information is attached.  
   
@@ -55,5 +55,6 @@ HRESULT DefineSecurityAttributeSet (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

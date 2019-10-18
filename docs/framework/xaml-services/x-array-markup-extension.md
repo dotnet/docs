@@ -14,7 +14,7 @@ Provides general support for arrays of objects in XAML through a markup extensio
   
 ## XAML Object Element Usage  
   
-```  
+```xaml
 <x:Array Type="typeName">  
   arrayContents  
 </x:Array>  
@@ -40,29 +40,27 @@ Provides general support for arrays of objects in XAML through a markup extensio
   
  `x:Array` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. `x:Array` is partially an exception to that rule because instead of providing alternative attribute value handling, `x:Array` provides alternative handling of its inner text content. This behavior enables types that might not be supported by an existing content model to be grouped into an array and referenced later in code-behind by accessing the named array; you can call <xref:System.Array> methods to get individual array items.  
   
- All markup extensions in XAML use the braces ({,}`)` in their attribute syntax, which is the convention by which a XAML processor recognizes that a markup extension must process the attribute value. For more information about markup extensions in general, see [Type Converters and Markup Extensions for XAML](../../../docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md).  
+ All markup extensions in XAML use the braces ({,}`)` in their attribute syntax, which is the convention by which a XAML processor recognizes that a markup extension must process the attribute value. For more information about markup extensions in general, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).  
   
- In XAML 2009, `x:Array` is defined as a language primitive instead of a markup extension. For more information, see [Built-in Types for Common XAML Language Primitives](../../../docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md).  
+ In XAML 2009, `x:Array` is defined as a language primitive instead of a markup extension. For more information, see [Built-in Types for Common XAML Language Primitives](built-in-types-for-common-xaml-language-primitives.md).  
   
 ## WPF Usage Notes  
  Typically, the object elements that populate an `x:Array` are not elements that exist in the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] XAML namespace, and require a prefix mapping to a non-default XAML namespace.  
   
  For example, the following is a simple array of two strings, with the `sys` prefix (and also `x`) defined at the level of the array.  
   
- [xaml]  
+```xaml
+<x:Array Type="sys:String"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String>Hello</sys:String>
+    <sys:String>World</sys:String>
+</x:Array>
+```
   
- `<x:Array Type="sys:String" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"`  
-  
- `xmlns:sys="clr-namespace:System;assembly=mscorlib">`  
-  
- `<sys:String>Hello</sys:String>`  
-  
- `<sys:String>World</sys:String>`  
-  
- `</x:Array>`  
-  
- For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../../../docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
+ For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
   
 ## See also
-- [Markup Extensions and WPF XAML](../../../docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
-- [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
+
+- [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)

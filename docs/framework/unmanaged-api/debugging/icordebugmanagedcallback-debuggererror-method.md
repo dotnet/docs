@@ -23,7 +23,7 @@ Notifies the debugger that an error has occurred while attempting to handle an e
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebuggerError (  
     [in] ICorDebugProcess *pProcess,  
     [in] HRESULT           errorHR,  
@@ -31,7 +31,7 @@ HRESULT DebuggerError (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an "ICorDebugProcess" object that represents the process in which the event occurred.  
   
@@ -56,4 +56,5 @@ HRESULT DebuggerError (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

@@ -17,7 +17,7 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
 ## Assembly unification and default binding
  Bindings to .NET Framework assemblies are sometimes redirected through a process called *assembly unification*. The .NET Framework consists of a version of the common language runtime and about two dozen .NET Framework assemblies that make up the type library. These .NET Framework assemblies are treated by the runtime as a single unit. By default, when an app is launched, all references to types in code run by the runtime are directed to .NET Framework assemblies that have the same version number as the runtime that is loaded in a process. The redirections that occur with this model are the default behavior for the runtime.
 
- For example, if your app references types in the System.XML namespace and was built by using the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], it contains static references to the System.XML assembly that ships with runtime version 4.5. If you want to redirect the binding reference to point to the System.XML assembly that ship with the .NET Framework 4, you can put redirect information in the app configuration file. A binding redirection in a configuration file for a unified .NET Framework assembly cancels the unification for that assembly.
+ For example, if your app references types in the System.XML namespace and was built by using the .NET Framework 4.5, it contains static references to the System.XML assembly that ships with runtime version 4.5. If you want to redirect the binding reference to point to the System.XML assembly that ship with the .NET Framework 4, you can put redirect information in the app configuration file. A binding redirection in a configuration file for a unified .NET Framework assembly cancels the unification for that assembly.
 
  In addition, you may want to manually redirect assembly binding for third-party assemblies if there are multiple versions available.
 
@@ -49,7 +49,7 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
 
 ### Relying on automatic binding redirection
 
-When you create a desktop app in Visual Studio that targets the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] or a later version, the app uses automatic binding redirection. This means that if two components reference different versions of the same strong-named assembly, the runtime automatically adds a binding redirection to the newer version of the assembly in the output app configuration (app.config) file. This redirection overrides the assembly unification that might otherwise take place. The source app.config file is not modified. For example, let's say that your app directly references an out-of-band .NET Framework component but uses a third-party library that targets an older version of the same component. When you compile the app, the output app configuration file is modified to contain a binding redirection to the newer version of the component. If you create a web app, you receive a build warning regarding the binding conflict, which in turn, gives you the option to add the necessary binding redirect to the source web configuration file.
+When you create a desktop app in Visual Studio that targets the .NET Framework 4.5.1 or a later version, the app uses automatic binding redirection. This means that if two components reference different versions of the same strong-named assembly, the runtime automatically adds a binding redirection to the newer version of the assembly in the output app configuration (app.config) file. This redirection overrides the assembly unification that might otherwise take place. The source app.config file is not modified. For example, let's say that your app directly references an out-of-band .NET Framework component but uses a third-party library that targets an older version of the same component. When you compile the app, the output app configuration file is modified to contain a binding redirection to the newer version of the component. If you create a web app, you receive a build warning regarding the binding conflict, which in turn, gives you the option to add the necessary binding redirect to the source web configuration file.
 
 If you manually add binding redirects to the source app.config file, at compile time, Visual Studio tries to unify the assemblies based on the binding redirects you added. For example, let's say you insert the following binding redirect for an assembly:
 
@@ -59,11 +59,11 @@ If another project in your app references version 1.0.0.0 of the same assembly, 
 
 `<bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0" />`
 
-You can enable automatic binding redirection if your app targets older versions of the .NET Framework. You can override this default behavior by providing binding redirection information in the app.config file for any assembly, or by turning off the binding redirection feature. For information about how to turn this feature on or off, see [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md).
+You can enable automatic binding redirection if your app targets older versions of the .NET Framework. You can override this default behavior by providing binding redirection information in the app.config file for any assembly, or by turning off the binding redirection feature. For information about how to turn this feature on or off, see [How to: Enable and Disable Automatic Binding Redirection](how-to-enable-and-disable-automatic-binding-redirection.md).
 
 <a name="bypass_PP"></a>
 ### Bypassing publisher policy
- You can override publisher policy in the app configuration file if necessary. For example, new versions of assemblies that claim to be backward compatible can still break an app. If you want to bypass publisher policy, add a [\<publisherPolicy>](../../../docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md) element to the [\<dependentAssembly>](../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md) element in the app configuration file, and set the **apply** attribute to **no**, which overrides any previous **yes** settings.
+ You can override publisher policy in the app configuration file if necessary. For example, new versions of assemblies that claim to be backward compatible can still break an app. If you want to bypass publisher policy, add a [\<publisherPolicy>](./file-schema/runtime/publisherpolicy-element.md) element to the [\<dependentAssembly>](./file-schema/runtime/dependentassembly-element.md) element in the app configuration file, and set the **apply** attribute to **no**, which overrides any previous **yes** settings.
 
  `<publisherPolicy apply="no" />`
 
@@ -75,11 +75,11 @@ You can enable automatic binding redirection if your app targets older versions 
 
 <a name="BKMK_Specifyingassemblybindinginconfigurationfiles"></a>
 ## Specifying assembly binding in configuration files
- You use the same XML format to specify binding redirects whether it’s in the app configuration file, the machine configuration file, or the publisher policy file. To redirect one assembly version to another, use the [\<bindingRedirect>](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md) element. The **oldVersion** attribute can specify a single assembly version or a range of versions. The `newVersion` attribute should specify a single version.  For example, `<bindingRedirect oldVersion="1.1.0.0-1.2.0.0" newVersion="2.0.0.0"/>` specifies that the runtime should use version 2.0.0.0 instead of the assembly versions between 1.1.0.0 and 1.2.0.0.
+ You use the same XML format to specify binding redirects whether it’s in the app configuration file, the machine configuration file, or the publisher policy file. To redirect one assembly version to another, use the [\<bindingRedirect>](./file-schema/runtime/bindingredirect-element.md) element. The **oldVersion** attribute can specify a single assembly version or a range of versions. The `newVersion` attribute should specify a single version.  For example, `<bindingRedirect oldVersion="1.1.0.0-1.2.0.0" newVersion="2.0.0.0"/>` specifies that the runtime should use version 2.0.0.0 instead of the assembly versions between 1.1.0.0 and 1.2.0.0.
 
  The following code example demonstrates a variety of binding redirect scenarios. The example specifies a redirect for a range of versions for `myAssembly`, and a single binding redirect for `mySecondAssembly`. The example also specifies that publisher policy file will not override the binding redirects for `myThirdAssembly`.
 
- To bind an assembly, you must specify the string "urn:schemas-microsoft-com:asm.v1" with the **xmlns** attribute in the [\<assemblyBinding>](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) tag.
+ To bind an assembly, you must specify the string "urn:schemas-microsoft-com:asm.v1" with the **xmlns** attribute in the [\<assemblyBinding>](./file-schema/runtime/assemblybinding-element-for-runtime.md) tag.
 
 ```xml
 <configuration>
@@ -93,7 +93,7 @@ You can enable automatic binding redirection if your app targets older versions 
           publisher policy, or machine configuration files. -->
         <bindingRedirect oldVersion="1.0.0.0-2.0.0.0" newVersion="3.0.0.0" />
       </dependentAssembly>
-  <dependentAssembly>
+      <dependentAssembly>
         <assemblyIdentity name="mySecondAssembly"
           publicKeyToken="32ab4ba45e0a69a1"
           culture="en-us" />
@@ -113,7 +113,7 @@ You can enable automatic binding redirection if your app targets older versions 
 ```
 
 ### Limiting assembly  bindings to a specific version
- You can use the **appliesTo** attribute on the [\<assemblyBinding>](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) element in an app configuration file to redirect assembly binding references to a specific version of the .NET Framework. This optional attribute uses a .NET Framework version number to indicate what version it applies to. If no **appliesTo** attribute is specified, the [\<assemblyBinding>](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) element applies to all versions of the .NET Framework.
+ You can use the **appliesTo** attribute on the [\<assemblyBinding>](./file-schema/runtime/assemblybinding-element-for-runtime.md) element in an app configuration file to redirect assembly binding references to a specific version of the .NET Framework. This optional attribute uses a .NET Framework version number to indicate what version it applies to. If no **appliesTo** attribute is specified, the [\<assemblyBinding>](./file-schema/runtime/assemblybinding-element-for-runtime.md) element applies to all versions of the .NET Framework.
 
  For example, to redirect assembly binding for a .NET Framework 3.5 assembly, you would include the following XML code in your app configuration file.
 
@@ -148,13 +148,13 @@ You can enable automatic binding redirection if your app targets older versions 
 
 ## See also
 
-- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
-- [\<bindingRedirect> Element](../../../docs/framework/configure-apps/file-schema/runtime/bindingredirect-element.md)
-- [Assembly Binding Redirection Security Permission](../../../docs/framework/configure-apps/assembly-binding-redirection-security-permission.md)
-- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
-- [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)
-- [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Configuring Apps](../../../docs/framework/configure-apps/index.md)
-- [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)
-- [How to: Create a Publisher Policy](../../../docs/framework/configure-apps/how-to-create-a-publisher-policy.md)
+- [How to: Enable and Disable Automatic Binding Redirection](how-to-enable-and-disable-automatic-binding-redirection.md)
+- [\<bindingRedirect> Element](./file-schema/runtime/bindingredirect-element.md)
+- [Assembly Binding Redirection Security Permission](assembly-binding-redirection-security-permission.md)
+- [Assemblies in .NET](../../standard/assembly/index.md)
+- [Programming with Assemblies](../../standard/assembly/program.md)
+- [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
+- [Configuring Apps](index.md)
+- [Runtime Settings Schema](./file-schema/runtime/index.md)
+- [Configuration File Schema](./file-schema/index.md)
+- [How to: Create a Publisher Policy](how-to-create-a-publisher-policy.md)

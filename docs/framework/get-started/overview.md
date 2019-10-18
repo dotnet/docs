@@ -28,7 +28,7 @@ The .NET Framework is a technology that supports building and running the next g
 - To build all communication on industry standards to ensure that code based on the .NET Framework integrates with any other code.
 
 > [!NOTE]
-> For a general introduction to the .NET Framework for both users and developers, see [Getting Started](../../../docs/framework/get-started/index.md).
+> For a general introduction to the .NET Framework for both users and developers, see [Getting Started](index.md).
 
 The .NET Framework consists of the common language runtime (CLR) and the .NET Framework class library. The common language runtime is the foundation of the .NET Framework. Think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and remoting, while also enforcing strict type safety and other forms of code accuracy that promote security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that doesn't target the runtime is known as unmanaged code. The class library is a comprehensive, object-oriented collection of reusable types that you use to develop apps ranging from traditional command-line or graphical user interface (GUI) apps to apps based on the latest innovations provided by ASP.NET, such as Web Forms and XML Web services.
 
@@ -40,8 +40,7 @@ Internet Explorer is an example of an unmanaged app that hosts the runtime (in t
 
 The following illustration shows the relationship of the common language runtime and the class library to your apps and to the overall system. The illustration also shows how managed code operates within a larger architecture.
 
-![Managed code within a larger architecture](../../../docs/framework/get-started/media/circle.gif "circle")
-.NET Framework in context
+![Screenshot that shows how managed code operates within a larger architecture.](./media/overview/language-runtime-class-library-relationship.gif)
 
 The following sections describe the main features of the .NET Framework in greater detail.
 
@@ -71,17 +70,17 @@ For example, the .NET Framework collection classes implement a set of interfaces
 
 As you would expect from an object-oriented class library, the .NET Framework types enable you to accomplish a range of common programming tasks, including tasks such as string management, data collection, database connectivity, and file access. In addition to these common tasks, the class library includes types that support a variety of specialized development scenarios. Use the .NET Framework to develop the following types of apps and services:
 
-- Console apps. See [Building Console Applications](../../../docs/standard/building-console-apps.md).
+- Console apps. See [Building Console Applications](../../standard/building-console-apps.md).
 
-- Windows GUI apps (Windows Forms). See [Windows Forms](../../../docs/framework/winforms/index.md).
+- Windows GUI apps (Windows Forms). See [Windows Forms](../winforms/index.md).
 
-- Windows Presentation Foundation (WPF) apps. See [Windows Presentation Foundation](../../../docs/framework/wpf/index.md).
+- Windows Presentation Foundation (WPF) apps. See [Windows Presentation Foundation](../wpf/index.md).
 
-- ASP.NET apps. See [Web Applications with ASP.NET](../../../docs/framework/develop-web-apps-with-aspnet.md).
+- ASP.NET apps. See [Web Applications with ASP.NET](../develop-web-apps-with-aspnet.md).
 
-- Windows services. See [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md).
+- Windows services. See [Introduction to Windows Service Applications](../windows-services/introduction-to-windows-service-applications.md).
 
-- Service-oriented apps using Windows Communication Foundation (WCF). See [Service-Oriented Applications with WCF](../../../docs/framework/wcf/index.md).
+- Service-oriented apps using Windows Communication Foundation (WCF). See [Service-Oriented Applications with WCF](../wcf/index.md).
 
 - Workflow-enabled apps using Windows Workflow Foundation (WF). See [Windows Workflow Foundation](../windows-workflow-foundation/index.md).
 
@@ -89,9 +88,9 @@ The Windows Forms classes are a comprehensive set of reusable types that vastly 
 
 ## See also
 
-- [System Requirements](../../../docs/framework/get-started/system-requirements.md)
-- [Installation guide](../../../docs/framework/install/index.md)
-- [Development Guide](../../../docs/framework/development-guide.md)
-- [Tools](../../../docs/framework/tools/index.md)
+- [System Requirements](system-requirements.md)
+- [Installation guide](../install/index.md)
+- [Development Guide](../development-guide.md)
+- [Tools](../tools/index.md)
 - [.NET samples and tutorials](../../samples-and-tutorials/index.md)
 - [.NET Framework Class Library](https://go.microsoft.com/fwlink/?LinkID=227195)

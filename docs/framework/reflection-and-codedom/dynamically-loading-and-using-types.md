@@ -16,12 +16,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Dynamically Loading and Using Types
-Reflection provides infrastructure used by language compilers such as [!INCLUDE[vbprvbext](../../../includes/vbprvbext-md.md)] and JScript to implement implicit late binding. Binding is the process of locating the declaration (that is, the implementation) that corresponds to a uniquely specified type. When this process occurs at run time rather than at compile time, it is called late binding. [!INCLUDE[vbprvblong](../../../includes/vbprvblong-md.md)] allows you to use implicit late binding in your code; the Visual Basic compiler calls a helper method that uses reflection to obtain the object type. The arguments passed to the helper method cause the appropriate method to be invoked at run time. These arguments are the instance (an object) on which to invoke the method, the name of the invoked method (a string), and the arguments passed to the invoked method (an array of objects).  
+Reflection provides infrastructure used by language compilers to implement implicit late binding. Binding is the process of locating the declaration (that is, the implementation) that corresponds to a uniquely specified type. When this process occurs at run time rather than at compile time, it is called late binding. Visual Basic allows you to use implicit late binding in your code; the Visual Basic compiler calls a helper method that uses reflection to obtain the object type. The arguments passed to the helper method cause the appropriate method to be invoked at run time. These arguments are the instance (an object) on which to invoke the method, the name of the invoked method (a string), and the arguments passed to the invoked method (an array of objects).  
   
  In the following example, the Visual Basic compiler uses reflection implicitly to call a method on an object whose type is not known at compile time. A **HelloWorld** class has a **PrintHello** method that prints out "Hello World" concatenated with some text that is passed to the **PrintHello** method. The **PrintHello** method called in this example is actually a <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>; the Visual Basic code allows the **PrintHello** method to be invoked as if the type of the object (helloObj) were known at compile time (early binding) rather than at run time (late binding).  
   
-```  
-Imports System  
+```vb
 Module Hello  
     Sub Main()  
         ' Sets up the variable.  
@@ -38,7 +37,7 @@ End Module
 ## Custom Binding  
  In addition to being used implicitly by compilers for late binding, reflection can be used explicitly in code to accomplish late binding.  
   
- The [common language runtime](../../../docs/standard/clr.md) supports multiple programming languages, and the binding rules of these languages differ. In the early-bound case, code generators can completely control this binding. However, in late binding through reflection, binding must be controlled by customized binding. The <xref:System.Reflection.Binder> class provides custom control of member selection and invocation.  
+ The [common language runtime](../../standard/clr.md) supports multiple programming languages, and the binding rules of these languages differ. In the early-bound case, code generators can completely control this binding. However, in late binding through reflection, binding must be controlled by customized binding. The <xref:System.Reflection.Binder> class provides custom control of member selection and invocation.  
   
  Using custom binding, you can load an assembly at run time, obtain information about types in that assembly, specify the type that you want, and then invoke methods or access fields or properties on that type. This technique is useful if you do not know an object's type at compile time, such as when the object type is dependent on user input.  
   
@@ -73,7 +72,7 @@ End Module
   
  In Case 3 of the code example, an actual argument of type **String** with a value of "5.5" is passed to a method with a formal argument of type **Double**. For the invocation to succeed, the string value "5.5" must be converted to a double value. **ChangeType** performs this conversion.  
   
- **ChangeType** performs only lossless or [widening coercions](../../../docs/standard/base-types/type-conversion.md), as shown in the following table.  
+ **ChangeType** performs only lossless or [widening coercions](../../standard/base-types/type-conversion.md), as shown in the following table.  
   
 |Source type|Target type|  
 |-----------------|-----------------|  
@@ -94,7 +93,8 @@ End Module
  The <xref:System.Type> class has **Get** methods that use parameters of type **Binder** to resolve references to a particular member. <xref:System.Type.GetConstructor%2A?displayProperty=nameWithType>, <xref:System.Type.GetMethod%2A?displayProperty=nameWithType>, and <xref:System.Type.GetProperty%2A?displayProperty=nameWithType> search for a particular member of the current type by providing signature information for that member. <xref:System.Reflection.Binder.SelectMethod%2A?displayProperty=nameWithType> and <xref:System.Reflection.Binder.SelectProperty%2A?displayProperty=nameWithType> are called back on to select the given signature information of the appropriate methods.  
   
 ## See also
+
 - <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
-- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
-- [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)
+- [Viewing Type Information](viewing-type-information.md)
+- [Type Conversion in the .NET Framework](../../standard/base-types/type-conversion.md)

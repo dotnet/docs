@@ -2,11 +2,15 @@
 title: dotnet nuget delete command
 description: The dotnet-nuget-delete command deletes or unlists a package from the server.
 author: karann-msft
-ms.date: 12/04/2018
+ms.date: 06/26/2019
 ---
 # dotnet nuget delete
 
+**This topic applies to: ✓** .NET Core 1.x SDK and later versions
+
+<!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+-->
 
 ## Name
 
@@ -14,19 +18,11 @@ ms.date: 12/04/2018
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
-```
+```dotnetcli
 dotnet nuget delete [<PACKAGE_NAME> <PACKAGE_VERSION>] [--force-english-output] [--interactive] [-k|--api-key] [--no-service-endpoint]
     [--non-interactive] [-s|--source]
 dotnet nuget delete [-h|--help]
 ```
-# [.NET Core 1.x](#tab/netcore1x)
-```
-dotnet nuget delete [<PACKAGE_NAME> <PACKAGE_VERSION>] [--force-english-output] [-k|--api-key] [--non-interactive]
-    [-s|--source]
-dotnet nuget delete [-h|--help]
-```
----
 
 ## Description
 
@@ -43,8 +39,6 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
   Version of the package to delete.
 
 ## Options
-
-# [.NET Core 2.x](#tab/netcore2x)
 
 * **`--force-english-output`**
 
@@ -74,40 +68,16 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
   Specifies the server URL. Supported URLs for nuget.org include `https://www.nuget.org`, `https://www.nuget.org/api/v3`, and `https://www.nuget.org/api/v2/package`. For private feeds, replace the host name (for example, `%hostname%/api/v3`).
 
-# [.NET Core 1.x](#tab/netcore1x)
-
-* **`--force-english-output`**
-
-  Forces the application to run using an invariant, English-based culture.
-
-* **`-h|--help`**
-
-  Prints out a short help for the command.
-
-* **`-k|--api-key <API_KEY>`**
-
-  The API key for the server.
-
-* **`--non-interactive`**
-
-  Doesn't prompt for user input or confirmations.
-
-* **`-s|--source <SOURCE>`**
-
-  Specifies the server URL. Supported URLs for nuget.org include `https://www.nuget.org`, `https://www.nuget.org/api/v3`, and `https://www.nuget.org/api/v2/package`. For private feeds, replace the host name (for example, `%hostname%/api/v3`).
-
----
-
 ## Examples
 
 * Deletes version 1.0 of package `Microsoft.AspNetCore.Mvc`:
 
-  ```console
+  ```dotnetcli
   dotnet nuget delete Microsoft.AspNetCore.Mvc 1.0
   ```
 
 * Deletes version 1.0 of package `Microsoft.AspNetCore.Mvc`, not prompting user for credentials or other input:
 
-  ```console
+  ```dotnetcli
   dotnet nuget delete Microsoft.AspNetCore.Mvc 1.0 --non-interactive
   ```

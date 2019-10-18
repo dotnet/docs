@@ -23,7 +23,7 @@ Gets the specified number of [CorDebugExceptionObjectStackFrame](../../../../doc
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next(  
     [in] ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched)] CorDebugExceptionObjectStackFrame values[],  
@@ -31,7 +31,7 @@ HRESULT Next(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of [CorDebugExceptionObjectStackFrame](../../../../docs/framework/unmanaged-api/debugging/cordebugexceptionobjectstackframe-structure.md) instances to be retrieved.  
   
@@ -53,5 +53,6 @@ HRESULT Next(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugExceptionObjectCallStackEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectcallstackenum-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

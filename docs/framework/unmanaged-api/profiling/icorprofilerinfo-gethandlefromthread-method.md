@@ -23,13 +23,13 @@ Maps the ID of a thread to a Win32 thread handle.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandleFromThread(  
     [in]  ThreadID threadId,  
     [out] HANDLE  *phThread);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The thread ID to be mapped.  
   
@@ -49,4 +49,5 @@ HRESULT GetHandleFromThread(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

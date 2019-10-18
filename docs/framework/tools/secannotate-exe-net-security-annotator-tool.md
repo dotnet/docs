@@ -13,17 +13,17 @@ The .NET Security Annotator tool (SecAnnotate.exe) is a command-line application
   
  A Visual Studio extension, [Security Annotator](https://go.microsoft.com/fwlink/?LinkId=198007), provides a graphical user interface to SecAnnotate.exe and enables you to run the tool from Visual Studio.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following, where *parameters* are described in the following section, and *assemblies* consist of one or more assembly names separated by blanks:  
   
 ## Syntax  
   
-```  
+```console  
 SecAnnotate.exe [parameters] [assemblies]  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Option|Description|  
 |------------|-----------------|  

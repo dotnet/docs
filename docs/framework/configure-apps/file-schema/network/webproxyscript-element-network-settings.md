@@ -12,10 +12,10 @@ ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
 # \<webProxyScript> Element (Network Settings)
 Configures the characteristics of the script used to discover Web proxies.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<webProxyScript>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webProxyScript>**  
   
 ## Syntax  
   
@@ -41,7 +41,7 @@ Configures the characteristics of the script used to discover Web proxies.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+|[settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
   
@@ -49,4 +49,5 @@ Configures the characteristics of the script used to discover Web proxies.
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## See also
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+
+- [Network Settings Schema](index.md)

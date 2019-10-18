@@ -17,10 +17,10 @@ Authorization is the process of controlling access and rights to resources, such
  Shows the process of restricting access to a service with the <xref:System.Security.Permissions.PrincipalPermissionAttribute>.  
   
  [How to: Use the ASP.NET Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md)  
- Walks through the configuration of a service to enable it to use the role provider feature of [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)].  
+ Walks through the configuration of a service to enable it to use the role provider feature of ASP.NET.  
   
  [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md)  
- [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] can use the Authorization Manager to manage authorization for a Web site. WCF can similarly leverage the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)]/Authorization Manager combination for authorization of clients.  
+ ASP.NET can use the Authorization Manager to manage authorization for a Web site. WCF can similarly leverage the ASP.NET/Authorization Manager combination for authorization of clients.  
   
  [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)  
  Explains the basics of using the Identity Model infrastructure for claims-based authorization.  
@@ -41,5 +41,6 @@ Authorization is the process of controlling access and rights to resources, such
  [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)  
   
 ## See also
+
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

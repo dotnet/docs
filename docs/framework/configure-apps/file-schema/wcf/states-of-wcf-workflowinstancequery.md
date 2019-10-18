@@ -7,16 +7,17 @@ ms.assetid: d17f7525-8035-4e9e-85a0-4cddae59f85d
 
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  
   
-For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
+For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  
   
-\<system.serviceModel>
-\<tracking>  
-\<profiles>  
-\<trackingProfile>  
-\<workflow>  
-\<workflowInstanceQueries>  
-\<workflowInstanceQuery>  
-\<states>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<tracking>**](tracking-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<profiles>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<trackingProfile>**](trackingprofile-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflow>**](workflow-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflowInstanceQueries>**](workflowinstancequeries-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflowInstanceQuery>**](workflowinstancequery-of-wcf.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<states>**  
   
 ## Syntax  
   
@@ -56,7 +57,7 @@ None.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<workflowInstanceQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/workflowinstancequery.md)|A query that tracks workflow instance life cycle changes such as a started or completed event.|  
+|[\<workflowInstanceQuery>](../windows-workflow-foundation/workflowinstancequery.md)|A query that tracks workflow instance life cycle changes such as a started or completed event.|  
   
 ## Remarks
 
@@ -99,5 +100,5 @@ The following configuration subscribes to workflow instance-level tracking recor
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.WorkflowInstanceQueryElement?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection?displayProperty=nameWithType>
 - <xref:System.Activities.Tracking.WorkflowInstanceQuery?displayProperty=nameWithType>
-- [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md)
-- [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)
+- [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md)
+- [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)

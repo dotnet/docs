@@ -10,9 +10,10 @@ Certain properties, methods, and operations can only apply to `Collection` objec
   
 ## To correct this error  
   
-1.  Check the spelling of the object or property name, or verify that the object is a `Collection` object.  
+1. Check the spelling of the object or property name, or verify that the object is a `Collection` object.  
   
-2.  Look at the `Add` method used to add the object to the collection to be sure the syntax is correct and that any identifiers were spelled correctly.  
+2. Look at the `Add` method used to add the object to the collection to be sure the syntax is correct and that any identifiers were spelled correctly.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Collection>

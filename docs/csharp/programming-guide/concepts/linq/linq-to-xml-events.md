@@ -72,7 +72,7 @@ Console.WriteLine(root);
 ### Comments  
  This code produces the following output:  
   
-```  
+```output  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XText Remove  
@@ -91,6 +91,3 @@ Total:308
 </Root>  
 ```  
   
-## See also
-
-- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

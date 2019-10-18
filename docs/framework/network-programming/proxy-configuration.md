@@ -18,7 +18,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
 ## Adaptive Proxies  
  In the .NET Framework, proxies come in two varieties: adaptive and static. Adaptive proxies adjust their settings when the network configuration changes. For example, if a laptop user starts a dialup network connection, an adaptive proxy would recognize this change, discover and run its new configuration script, and adjust its settings appropriately.  
   
- Adaptive proxies are configured by a configuration script (see [Automatic Proxy Detection](../../../docs/framework/network-programming/automatic-proxy-detection.md)). The script generates a set of application protocols and a proxy for each protocol.  
+ Adaptive proxies are configured by a configuration script (see [Automatic Proxy Detection](automatic-proxy-detection.md)). The script generates a set of application protocols and a proxy for each protocol.  
   
  Changes in the network environment may require that the system use a new set of proxies. If a network connection goes down or a new network connection is initialized, the system must discover the appropriate source of the configuration script in the new environment and run the new script.  
   
@@ -39,11 +39,11 @@ A proxy server handles client requests for resources. A proxy can return a reque
   
  Several options control how a static proxy operates. You can specify the following:  
   
--   The address of the proxy.  
+- The address of the proxy.  
   
--   Whether the proxy should be bypassed for local addresses.  
+- Whether the proxy should be bypassed for local addresses.  
   
--   Whether the proxy should be bypassed for a set of addresses.  
+- Whether the proxy should be bypassed for a set of addresses.  
   
  The following table shows the configuration options for a static proxy.  
   
@@ -70,6 +70,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
 ```  
   
 ## See also
+
 - <xref:System.Net.WebProxy>
 - <xref:System.Net.GlobalProxySelection>
-- [Automatic Proxy Detection](../../../docs/framework/network-programming/automatic-proxy-detection.md)
+- [Automatic Proxy Detection](automatic-proxy-detection.md)

@@ -1,29 +1,30 @@
 ---
-title: Create a game match up list app with Infer.NET and probalistic programming
-description: Discover how to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
-ms.date: 10/04/2018
+title: Create a game match up list app with Infer.NET and probabilistic programming
+description: Discover how to use probabilistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
+ms.date: 05/06/2019
 ms.custom: mvc,how-to
-#Customer intent: As a developer, I want to use probalistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
+#Customer intent: As a developer, I want to use probabilistic programming with Infer.NET to create a game matchup list app based on a simplified version of TrueSkill.
 ---
+
 # Create a game match up list app with Infer.NET and probabilistic programming
 
 This how-to guide teaches you about probabilistic programming using Infer.NET. Probabilistic programming is a machine learning approach where custom models are expressed as computer programs. It allows for incorporating domain knowledge in the models and makes the machine learning system more interpretable. It also supports online inference – the process of learning as new data arrives. Infer.NET is used in various products at Microsoft in Azure, Xbox, and Bing.
 
 ## What is probabilistic programming?
 
-Probabilistic programming allows us to create statistical models of real-world processes. 
+Probabilistic programming allows you to create statistical models of real-world processes.
 
 ## Prerequisites
 
 - Local development environment setup
 
-  This how-to guide expects you to have a machine you can use for development. The .NET [Get Started in 10 minutes](https://www.microsoft.com/net/core) tutorial has instructions for setting up your local development environment on Mac, PC, or Linux.
+  This how-to guide expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on macOS, Windows, or Linux.
 
 ## Create your app
 
 1. Open a new command prompt and run the following commands:
 
-```console
+```dotnetcli
 dotnet new console -o myApp
 cd myApp
 ```
@@ -34,15 +35,15 @@ The `dotnet` command creates a `new` application of type `console`. The `-o` par
 
 To use Infer.NET, you need to install the `Microsoft.ML.Probabilistic.Compiler` package. In your command prompt, run the following command:
 
-```console
+```dotnetcli
 dotnet add package Microsoft.ML.Probabilistic.Compiler
 ```
 
 ## Design your model
 
-The example sample uses table tennis or foosball matches played in the office. We have the participants and outcome of each match.  We want to infer the player's skills from this data. We’ll assume that each player has a normally distributed latent skill and their performance in a given match is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
+The example sample uses table tennis or foosball matches played in the office. You have the participants and outcome of each match.  You want to infer the player's skills from this data. Assume that each player has a normally distributed latent skill and their given match performance is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
 
-We need to list the inferred player skills, alongside with their variance – the measure of uncertainty around the skills.
+You need to list the inferred player skills, alongside with their variance – the measure of uncertainty around the skills.
 
 *Game result sample data*
 
@@ -80,7 +81,7 @@ namespace myApp
             var winnerData = new[] { 0, 0, 0, 1, 3, 4 };
             var loserData = new[] { 1, 3, 4, 2, 1, 2 };
 
-            // Define the statistical model as a probabilistic program 
+            // Define the statistical model as a probabilistic program
             var game = new Range(winnerData.Length);
             var player = new Range(winnerData.Concat(loserData).Max() + 1);
             var playerSkills = Variable.Array<double>(player);
@@ -125,7 +126,7 @@ namespace myApp
 
 In your command prompt, run the following command:
 
-```console
+```dotnetcli
 dotnet run
 ```
 
@@ -133,7 +134,7 @@ dotnet run
 
 Your results should be similar to the following:
 
-```
+```console
 Compiling model...done.
 Iterating:
 .........|.........|.........|.........|.........| 50
@@ -144,7 +145,7 @@ Player 1 skill: Gaussian(4.955, 3.503)
 Player 2 skill: Gaussian(2.639, 4.288)
 ```
 
-In the results, notice that player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2. Player 0 is the overall champ!  
+In the results, notice that player 3 ranks slightly higher than player 4 according to our model. That’s because the victory of player 3 over player 1 is more significant than the victory of player 4 over player 2 – note that player 1 beats player 2. Player 0 is the overall champ!
 
 ## Keep learning
 

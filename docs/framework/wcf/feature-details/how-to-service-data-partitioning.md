@@ -11,11 +11,11 @@ This topic outlines the basic steps required to partition messages across multip
  The message sent from the client does not have any unique data that can be used to identify which service instance the message should be routed to. To allow each client to route data to a specific destination service we will implement two service endpoints that will be used to receive messages.  
   
 > [!NOTE]
->  While this example uses specific endpoints to partition data, this could also be accomplished using information contained within the message itself such as header or body data.  
+> While this example uses specific endpoints to partition data, this could also be accomplished using information contained within the message itself such as header or body data.  
   
 ### Implement Service Data Partitioning  
   
-1.  Create the basic Routing Service configuration by specifying the service endpoints exposed by the service. The following example defines two endpoints, which will be used to receive messages. It also defines the client endpoints, which are used to send messages to the regularCalc service instances.  
+1. Create the basic Routing Service configuration by specifying the service endpoints exposed by the service. The following example defines two endpoints, which will be used to receive messages. It also defines the client endpoints, which are used to send messages to the regularCalc service instances.  
   
     ```xml  
     <services>  
@@ -52,7 +52,7 @@ This topic outlines the basic steps required to partition messages across multip
      </client>  
     ```  
   
-2.  Define the filters used to route messages to the destination endpoints.  For this example, the EndpointName filter is used to determine which service endpoint received the message. The following example defines the necessary routing section and filters.  
+2. Define the filters used to route messages to the destination endpoints.  For this example, the EndpointName filter is used to determine which service endpoint received the message. The following example defines the necessary routing section and filters.  
   
     ```xml  
     <filters>  
@@ -65,7 +65,7 @@ This topic outlines the basic steps required to partition messages across multip
     </filters>  
     ```  
   
-3.  Define the filter table, which associates each filter with a client endpoint. In this example, the message will be routed based on the specific endpoint it was received over. Since the message can only match one of the two possible filters, there is no need for using filter priority to control to the order in which filters are evaluated.  
+3. Define the filter table, which associates each filter with a client endpoint. In this example, the message will be routed based on the specific endpoint it was received over. Since the message can only match one of the two possible filters, there is no need for using filter priority to control to the order in which filters are evaluated.  
   
      The following defines the filter table and adds the filters defined earlier.  
   
@@ -79,7 +79,7 @@ This topic outlines the basic steps required to partition messages across multip
     </filterTables>  
     ```  
   
-4.  To evaluate incoming messages against the filters contained in the table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoints:  
+4. To evaluate incoming messages against the filters contained in the table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoints:  
   
     ```xml  
     <behaviors>  
@@ -168,4 +168,5 @@ This topic outlines the basic steps required to partition messages across multip
 ```  
   
 ## See also
+
 - [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)

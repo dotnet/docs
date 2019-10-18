@@ -23,11 +23,11 @@ Advances the enumerator's cursor from its current position so that the specified
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip([in] ULONG celt);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of elements to be skipped.  
   
@@ -52,5 +52,6 @@ HRESULT Skip([in] ULONG celt);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

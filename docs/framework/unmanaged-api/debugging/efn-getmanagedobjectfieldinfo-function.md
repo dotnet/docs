@@ -17,12 +17,12 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# _EFN_GetManagedObjectFieldInfo Function
+# \_EFN\_GetManagedObjectFieldInfo Function
 Gets the offset from the start of an object to a field and the field's value, using the provided object pointer and field name.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _EFN_GetManagedObjectFieldInfo(  
     [in]  PDEBUG_CLIENT Client,  
     [in]  ULONG64       objAddr,  
@@ -32,7 +32,7 @@ HRESULT _EFN_GetManagedObjectFieldInfo(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] A pointer to the debug client.  
   
@@ -61,4 +61,5 @@ HRESULT _EFN_GetManagedObjectFieldInfo(
  **.NET Framework Version:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)

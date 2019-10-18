@@ -23,7 +23,7 @@ Gets an interface pointer to an ICorDebugValue object that contains the value of
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldValue (  
     [in]  mdFieldDef        fieldDef,  
     [in]  ICorDebugFrame    *pFrame,  
@@ -31,7 +31,7 @@ HRESULT GetStaticFieldValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fieldDef`  
  [in] An `mdFieldDef` token that specifies the static field.  
   

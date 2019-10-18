@@ -23,14 +23,14 @@ Saves changes from the current edit-and-continue session to memory.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SaveDeltaToMemory (  
     [out] void        *pbData,   
     [in]  ULONG       cbData  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbData`  
  [out] The address at which to begin writing the metadata delta.  
   
@@ -47,5 +47,6 @@ HRESULT SaveDeltaToMemory (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

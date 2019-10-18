@@ -11,24 +11,24 @@ helpviewer_keywords:
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
 ---
 # SqlMetal.exe (Code Generation Tool)
-The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
+The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbtecdlinq](../../../includes/vbtecdlinq-md.md)] component of the .NET Framework. By applying options that appear later in this topic, you can instruct SqlMetal to perform several different actions that include the following:  
   
--   From a database, generate source code and mapping attributes or a mapping file.  
+- From a database, generate source code and mapping attributes or a mapping file.  
   
--   From a database, generate an intermediate database markup language (.dbml) file for customization.  
+- From a database, generate an intermediate database markup language (.dbml) file for customization.  
   
--   From a .dbml file, generate code and mapping attributes or a mapping file.  
+- From a .dbml file, generate code and mapping attributes or a mapping file.  
   
  This tool is automatically installed with Visual Studio. By default, the file is located at `drive`:\Program Files\Microsoft SDKs\Windows\v`n.nn`\bin. If you do not install Visual Studio, you can also get the SQLMetal file by downloading the [Windows SDK](https://go.microsoft.com/fwlink/?LinkId=142225).  
   
 > [!NOTE]
->  Developers who use Visual Studio can also use the [!INCLUDE[vs_ordesigner_long](../../../includes/vs-ordesigner-long-md.md)] to generate entity classes. The command-line approach scales well for large databases. Because SqlMetal is a command-line tool, you can use it in a build process.  
+> Developers who use Visual Studio can also use the Object Relational Designer to generate entity classes. The command-line approach scales well for large databases. Because SqlMetal is a command-line tool, you can use it in a build process.  
   
- To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).At the command prompt, type the following:  
+ To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 sqlmetal [options] [<input file>]  
 ```  
   
@@ -71,20 +71,20 @@ sqlmetal [options] [<input file>]
 |**/context:** *\<type>*|Specifies name of data context class. Default value: Derived from database name.|  
 |**/entitybase:** *\<type>*|Specifies the base class of the entity classes in the generated code. Default value: Entities have no base class.|  
 |**/pluralize**|Automatically pluralizes or singularizes class and member names.<br /><br /> This option is available only in the U.S. English version.|  
-|**/serialization:** *\<option>*|Generates serializable classes.<br /><br /> Valid *\<option>*: None, Unidirectional. Default value: None.<br /><br /> For more information, see [Serialization](../../../docs/framework/data/adonet/sql/linq/serialization.md).|  
+|**/serialization:** *\<option>*|Generates serializable classes.<br /><br /> Valid *\<option>*: None, Unidirectional. Default value: None.<br /><br /> For more information, see [Serialization](../data/adonet/sql/linq/serialization.md).|  
   
  **Input File**  
   
 |Option|Description|  
 |------------|-----------------|  
-|**\<input file>**|Specifies a SQL Server Express .mdf file, a [!INCLUDE[ssEW](../../../includes/ssew-md.md)] .sdf file, or a .dbml intermediate file.|  
+|**\<input file>**|Specifies a SQL Server Express .mdf file, a SQL Server Compact 3.5 .sdf file, or a .dbml intermediate file.|  
   
 ## Remarks  
  SqlMetal functionality actually involves two steps:  
   
--   Extracting the metadata of the database into a .dbml file.  
+- Extracting the metadata of the database into a .dbml file.  
   
--   Generating a code output file.  
+- Generating a code output file.  
   
      By using the appropriate command-line options, you can produce Visual Basic or C# source code, or you can produce an XML mapping file.  
   
@@ -92,11 +92,11 @@ sqlmetal [options] [<input file>]
   
  If no **/server** is specified, **localhost/sqlexpress** is assumed.  
   
- [!INCLUDE[sqprsqext](../../../includes/sqprsqext-md.md)] throws an exception if one or more of the following conditions are true:  
+ Microsoft SQL Server 2005 throws an exception if one or more of the following conditions are true:  
   
--   SqlMetal tries to extract a stored procedure that calls itself.  
+- SqlMetal tries to extract a stored procedure that calls itself.  
   
--   The nesting level of a stored procedure, function, or view exceeds 32.  
+- The nesting level of a stored procedure, function, or view exceeds 32.  
   
      SqlMetal catches this exception and reports it as a warning.  
   
@@ -124,9 +124,10 @@ sqlmetal [options] [<input file>]
  **sqlmetal /server:myserver /database:northwind /namespace:nwind /code:nwind.cs /language:csharp**  
   
 > [!NOTE]
->  When you use the **/pluralize** option with the Northwind sample database, note the following behavior. When SqlMetal makes row-type names for tables, the table names are singular. When it makes <xref:System.Data.Linq.DataContext> properties for tables, the table names are plural. Coincidentally, the tables in the Northwind sample database are already plural. Therefore, you do not see that part working. Although it is common practice to name database tables singular, it is also a common practice in .NET to name collections plural.  
+> When you use the **/pluralize** option with the Northwind sample database, note the following behavior. When SqlMetal makes row-type names for tables, the table names are singular. When it makes <xref:System.Data.Linq.DataContext> properties for tables, the table names are plural. Coincidentally, the tables in the Northwind sample database are already plural. Therefore, you do not see that part working. Although it is common practice to name database tables singular, it is also a common practice in .NET to name collections plural.  
   
 ## See also
-- [How to: Generate the Object Model in Visual Basic or C#](../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)
-- [Code Generation in LINQ to SQL](../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
-- [External Mapping](../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+
+- [How to: Generate the Object Model in Visual Basic or C#](../data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)
+- [Code Generation in LINQ to SQL](../data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
+- [External Mapping](../data/adonet/sql/linq/external-mapping.md)

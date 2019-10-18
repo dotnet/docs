@@ -24,7 +24,7 @@ Defines the container for a module address request.
 
 ## Syntax
 
-```
+```cpp
 struct DacpGetModuleAddress
 {
     CLRDATA_ADDRESS ModulePtr;
@@ -54,5 +54,6 @@ This structure lives inside the runtime and is not exposed through any headers o
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
+
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
 - [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)

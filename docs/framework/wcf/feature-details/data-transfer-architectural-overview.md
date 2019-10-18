@@ -12,7 +12,7 @@ ms.assetid: 343c2ca2-af53-4936-a28c-c186b3524ee9
 Windows Communication Foundation (WCF) can be thought of as a messaging infrastructure. It can receive messages, process them, and dispatch them to user code for further action, or it can construct messages from data given by user code and deliver them to a destination. This topic, which is intended for advanced developers, describes the architecture for handling messages and the contained data. For a simpler, task-oriented view of how to send and receive data, see [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md).  
   
 > [!NOTE]
->  This topic discusses WCF implementation details that are not visible by examining the WCF object model. Two words of caution are in order with regard to documented implementation details. First, the descriptions are simplified; actual implementation may be more complex due to optimizations or other reasons. Second, you should never rely on specific implementation details, even documented ones, because these may change without notice from version to version or even in a servicing release.  
+> This topic discusses WCF implementation details that are not visible by examining the WCF object model. Two words of caution are in order with regard to documented implementation details. First, the descriptions are simplified; actual implementation may be more complex due to optimizations or other reasons. Second, you should never rely on specific implementation details, even documented ones, because these may change without notice from version to version or even in a servicing release.  
   
 ## Basic Architecture  
  At the core of WCF message-handling capabilities is the <xref:System.ServiceModel.Channels.Message> class, which is described in detail in [Using the Message Class](../../../../docs/framework/wcf/feature-details/using-the-message-class.md). The run-time components of WCF can be divided into two major parts: the channel stack and the service framework, with the <xref:System.ServiceModel.Channels.Message> class being the connection point.  
@@ -21,7 +21,7 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
   
  You can use WCF by using the <xref:System.ServiceModel.Channels.Message> class and the channel stack directly. However, doing so is difficult and time-consuming. Additionally, the <xref:System.ServiceModel.Channels.Message> object provides no metadata support, so you cannot generate strongly typed WCF clients if you use WCF in this manner.  
   
- Therefore, WCF includes a service framework that provides an easy-to-use programming model that you can use to construct and receive `Message` objects. The service framework maps services to [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types through the notion of service contracts, and dispatches messages to user operations that are simply [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] methods marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute (for more details, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)). These methods may have parameters and return values. On the service side, the service framework converts incoming <xref:System.ServiceModel.Channels.Message> instances into parameters and converts return values into outgoing <xref:System.ServiceModel.Channels.Message> instances. On the client side, it does the opposite. For example, consider the `FindAirfare` operation below.  
+ Therefore, WCF includes a service framework that provides an easy-to-use programming model that you can use to construct and receive `Message` objects. The service framework maps services to .NET Framework types through the notion of service contracts, and dispatches messages to user operations that are simply .NET Framework methods marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute (for more details, see [Designing Service Contracts](../../../../docs/framework/wcf/designing-service-contracts.md)). These methods may have parameters and return values. On the service side, the service framework converts incoming <xref:System.ServiceModel.Channels.Message> instances into parameters and converts return values into outgoing <xref:System.ServiceModel.Channels.Message> instances. On the client side, it does the opposite. For example, consider the `FindAirfare` operation below.  
   
  [!code-csharp[c_DataArchitecture#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_dataarchitecture/cs/source.cs#1)]
  [!code-vb[c_DataArchitecture#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_dataarchitecture/vb/source.vb#1)]  
@@ -60,9 +60,9 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
 ### Getting Data from a Message Body  
  You can extract the data stored in a message body in two main ways:  
   
--   You can get the entire message body at one time by calling the <xref:System.ServiceModel.Channels.Message.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> method and passing in an XML writer. The complete message body is written out to this writer. Getting the entire message body at one time is also called *writing a message*. Writing is done primarily by the channel stack when sending messages—some part of the channel stack will usually get access to the entire message body, encode it, and send it.  
+- You can get the entire message body at one time by calling the <xref:System.ServiceModel.Channels.Message.WriteBodyContents%28System.Xml.XmlDictionaryWriter%29> method and passing in an XML writer. The complete message body is written out to this writer. Getting the entire message body at one time is also called *writing a message*. Writing is done primarily by the channel stack when sending messages—some part of the channel stack will usually get access to the entire message body, encode it, and send it.  
   
--   Another way to get information out of the message body is to call <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents> and get an XML reader. The message body can then be accessed sequentially as needed by calling methods on the reader. Getting the message body piece-by-piece is also called *reading a message*. Reading the message is primarily used by the service framework when receiving messages. For example, when the <xref:System.Runtime.Serialization.DataContractSerializer> is in use, the service framework will get an XML reader over the body and pass it to the deserialization engine, which will then start reading the message element-by-element and constructing the corresponding object graph.  
+- Another way to get information out of the message body is to call <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents> and get an XML reader. The message body can then be accessed sequentially as needed by calling methods on the reader. Getting the message body piece-by-piece is also called *reading a message*. Reading the message is primarily used by the service framework when receiving messages. For example, when the <xref:System.Runtime.Serialization.DataContractSerializer> is in use, the service framework will get an XML reader over the body and pass it to the deserialization engine, which will then start reading the message element-by-element and constructing the corresponding object graph.  
   
  A message body can be retrieved only once. This makes it possible to work with forward-only streams. For example, you can write an <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> override that reads from a <xref:System.IO.FileStream> and returns the results as an XML Infoset. You will never need to "rewind" to the beginning of the file.  
   
@@ -88,7 +88,7 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
  For more information, see [Using the Message Class](../../../../docs/framework/wcf/feature-details/using-the-message-class.md).  
   
 ## Message Properties  
- A message may contain properties. A *property* is any [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] object that is associated with a string name. Properties are accessed through the `Properties` property on `Message`.  
+ A message may contain properties. A *property* is any .NET Framework object that is associated with a string name. Properties are accessed through the `Properties` property on `Message`.  
   
  Unlike the message body and message headers (which normally map to the SOAP body and SOAP headers, respectively), message properties are normally not sent or received along with the messages. Message properties exist primarily as a communication mechanism to pass data about the message between the various channels in the channel stack, and between the channel stack and the service model.  
   
@@ -101,15 +101,15 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
   
  For this to be possible, a mapping must be defined between the entire `Message` instance and an XML Infoset. Such a mapping, in fact, exists: WCF uses the SOAP standard to define this mapping. When a `Message` instance is written out as an XML Infoset, the resulting Infoset is the valid SOAP envelope that contains the message. Thus, `WriteMessage` would normally perform the following steps:  
   
-1.  Write the SOAP envelope element opening tag.  
+1. Write the SOAP envelope element opening tag.  
   
-2.  Write the SOAP header element opening tag, write out all of the headers, and close the header element.  
+2. Write the SOAP header element opening tag, write out all of the headers, and close the header element.  
   
-3.  Write the SOAP body element opening tag.  
+3. Write the SOAP body element opening tag.  
   
-4.  Call `WriteBodyContents` or an equivalent method to write out the body.  
+4. Call `WriteBodyContents` or an equivalent method to write out the body.  
   
-5.  Close the body and envelope elements.  
+5. Close the body and envelope elements.  
   
  The preceding steps are closely tied to the SOAP standard. This is complicated by the fact that multiple versions of SOAP exist, for example, it is impossible to write out the SOAP envelope element correctly without knowing the SOAP version in use. Also, in some cases, it may be desirable to turn off this complex SOAP-specific mapping completely.  
   
@@ -154,26 +154,26 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
 ### The IStreamProvider Interface  
  When writing an outgoing message that contains a streamed body to an XML writer, the <xref:System.ServiceModel.Channels.Message> uses a sequence of calls similar to the following in its <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> implementation:  
   
--   Write any necessary information preceding the stream (for example, the opening XML tag).  
+- Write any necessary information preceding the stream (for example, the opening XML tag).  
   
--   Write the stream.  
+- Write the stream.  
   
--   Write any information following the stream (for example, the closing XML tag).  
+- Write any information following the stream (for example, the closing XML tag).  
   
  This works well with encodings that are similar to the textual XML encoding. However, some encodings do not place XML Infoset information (for example, tags for starting and ending XML elements) together with the data contained within elements. For example, in the MTOM encoding, the message is split into multiple parts. One part contains the XML Infoset, which may contain references to other parts for actual element contents. The XML Infoset is normally small compared to the streamed contents, so it makes sense to buffer the Infoset, write it out, and then write the contents in a streamed way. This means that by the time the closing element tag is written, the stream should not have been written out yet.  
   
  For this purpose, the <xref:System.Xml.IStreamProvider> interface is used. The interface has a <xref:System.Xml.IStreamProvider.GetStream> method that returns the stream to be written. The correct way to write out a streamed message body in <xref:System.ServiceModel.Channels.Message.OnWriteBodyContents%28System.Xml.XmlDictionaryWriter%29> is as follows:  
   
-1.  Write any necessary information preceding the stream (for example, the opening XML tag).  
+1. Write any necessary information preceding the stream (for example, the opening XML tag).  
   
-2.  Call the `WriteValue` overload on the <xref:System.Xml.XmlDictionaryWriter> that takes an <xref:System.Xml.IStreamProvider>, with an `IStreamProvider` implementation that returns the stream to be written.  
+2. Call the `WriteValue` overload on the <xref:System.Xml.XmlDictionaryWriter> that takes an <xref:System.Xml.IStreamProvider>, with an `IStreamProvider` implementation that returns the stream to be written.  
   
-3.  Write any information following the stream (for example, the closing XML tag).  
+3. Write any information following the stream (for example, the closing XML tag).  
   
  With this approach, the XML writer has a choice of when to call <xref:System.Xml.IStreamProvider.GetStream> and write out the streamed data. For example, the textual and binary XML writers will call it immediately and write out the streamed contents in-between the start and end tags. The MTOM writer may decide to call <xref:System.Xml.IStreamProvider.GetStream> later, when it is ready to write the appropriate part of the message.  
   
 ## Representing Data in the Service Framework  
- As stated in the "Basic Architecture" section of this topic, the service framework is the part of WCF that, among other things, is responsible for converting between a user-friendly programming model for message data and actual `Message` instances. Normally, a message exchange is represented in the service framework as a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] method marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute. The method can take in some parameters and can return a return value or out parameters (or both). On the service side, the input parameters represent the incoming message, and the return value and out parameters represent the outgoing message. On the client side, the reverse is true. The programming model for describing messages using parameters and the return value is described in detail in [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md). However, this section will provide a brief overview.  
+ As stated in the "Basic Architecture" section of this topic, the service framework is the part of WCF that, among other things, is responsible for converting between a user-friendly programming model for message data and actual `Message` instances. Normally, a message exchange is represented in the service framework as a .NET Framework method marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute. The method can take in some parameters and can return a return value or out parameters (or both). On the service side, the input parameters represent the incoming message, and the return value and out parameters represent the outgoing message. On the client side, the reverse is true. The programming model for describing messages using parameters and the return value is described in detail in [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md). However, this section will provide a brief overview.  
   
 ## Programming Models  
  The WCF service framework supports five different programming models for describing messages:  
@@ -212,7 +212,7 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
  The Action="*" line effectively turns off message dispatching and ensures that all messages sent to the `IForwardingService` contract make their way to the `ForwardMessage` operation. (Normally, the dispatcher would examine the message’s "Action" header to determine which operation it is intended for. Action="\*" means "all possible values of the Action header".) The combination of Action="\*" and using Message as a parameter is known as the "universal contract" because it is able to receive all possible messages. To be able to send all possible messages, use Message as the return value and set `ReplyAction` to "\*". This will prevent the service framework from adding its own Action header, enabling you to control this header using the `Message` object you return.  
   
 ### 3. Message Contracts  
- WCF provides a declarative programming model for describing messages, called *message contracts*. This model is described in detail in [Using Message Contracts](../../../../docs/framework/wcf/feature-details/using-message-contracts.md). Essentially, the entire message is represented by a single [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] type that uses attributes like the <xref:System.ServiceModel.MessageBodyMemberAttribute> and <xref:System.ServiceModel.MessageHeaderAttribute> to describe which parts of the message contract class should map to which part of the message.  
+ WCF provides a declarative programming model for describing messages, called *message contracts*. This model is described in detail in [Using Message Contracts](../../../../docs/framework/wcf/feature-details/using-message-contracts.md). Essentially, the entire message is represented by a single .NET Framework type that uses attributes like the <xref:System.ServiceModel.MessageBodyMemberAttribute> and <xref:System.ServiceModel.MessageHeaderAttribute> to describe which parts of the message contract class should map to which part of the message.  
   
  Message contracts provide a lot of control over the resulting `Message` instances (although obviously not as much control as using the `Message` class directly). For example, message bodies are often composed of multiple pieces of information, each represented by its own XML element. These elements can either occur directly in the body (*bare* mode) or can be *wrapped* in an encompassing XML element. Using the message contract programming model enables you to make the bare-versus-wrapped decision and control the name of the wrapper name and namespace.  
   
@@ -258,13 +258,14 @@ Windows Communication Foundation (WCF) can be thought of as a messaging infrastr
 |<xref:System.ServiceModel.Dispatcher.IClientMessageFormatter>|<xref:System.ServiceModel.Dispatcher.IClientMessageFormatter.DeserializeReply%28System.ServiceModel.Channels.Message%2CSystem.Object%5B%5D%29>|Converts an incoming `Message` to a return value/out parameters|  
   
 ## Serialization  
- Whenever you use message contracts or parameters to describe message contents, you must use serialization to convert between [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types and XML Infoset representation. Serialization is used in other places in WCF, for example, <xref:System.ServiceModel.Channels.Message> has a Generic <xref:System.ServiceModel.Channels.Message.GetBody%2A> method that you can use to read the entire body of the message deserialized into an object.  
+ Whenever you use message contracts or parameters to describe message contents, you must use serialization to convert between .NET Framework types and XML Infoset representation. Serialization is used in other places in WCF, for example, <xref:System.ServiceModel.Channels.Message> has a Generic <xref:System.ServiceModel.Channels.Message.GetBody%2A> method that you can use to read the entire body of the message deserialized into an object.  
   
  WCF supports two serialization technologies "out of the box" for serializing and deserializing parameters and message parts: the <xref:System.Runtime.Serialization.DataContractSerializer> and the `XmlSerializer`. Additionally, you can write custom serializers. However, other parts of WCF (such as the Generic `GetBody` method or SOAP fault serialization) may be restricted to use only the <xref:System.Runtime.Serialization.XmlObjectSerializer> subclasses (<xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.NetDataContractSerializer>, but not the <xref:System.Xml.Serialization.XmlSerializer>), or may even be hard-coded to use only the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
- The `XmlSerializer` is the serialization engine used in [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web services. The `DataContractSerializer` is the new serialization engine that understands the new data contract programming model. `DataContractSerializer` is the default choice, and the choice to use the `XmlSerializer` can be made on a per-operation basis using the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractFormatAttribute%2A> attribute.  
+ The `XmlSerializer` is the serialization engine used in ASP.NET Web services. The `DataContractSerializer` is the new serialization engine that understands the new data contract programming model. `DataContractSerializer` is the default choice, and the choice to use the `XmlSerializer` can be made on a per-operation basis using the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior.DataContractFormatAttribute%2A> attribute.  
   
  <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> and <xref:System.ServiceModel.Description.XmlSerializerOperationBehavior> are the operation behaviors responsible for plugging in the message formatters for the `DataContractSerializer` and the `XmlSerializer`, respectively. The <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> behavior can actually operate with any serializer that derives from <xref:System.Runtime.Serialization.XmlObjectSerializer>, including the <xref:System.Runtime.Serialization.NetDataContractSerializer> (described in detail in Using Stand-Alone Serialization). The behavior calls one of the `CreateSerializer` virtual method overloads to obtain the serializer. To plug in a different serializer, create a new <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> subclass and override both `CreateSerializer` overloads.  
   
 ## See also
+
 - [Specifying Data Transfer in Service Contracts](../../../../docs/framework/wcf/feature-details/specifying-data-transfer-in-service-contracts.md)

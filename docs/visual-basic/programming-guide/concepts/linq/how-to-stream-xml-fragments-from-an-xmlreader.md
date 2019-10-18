@@ -132,7 +132,7 @@ End Class
   
  This example produces the following output:  
   
-```  
+```console  
 bbb  
 ccc  
 ```  
@@ -140,5 +140,6 @@ ccc
  In this example, the source document is very small. However, even if there were millions of `Child` elements, this example would still have a small memory footprint.  
   
 ## See also
+
 - [Walkthrough: Implementing IEnumerable(Of T) in Visual Basic](../../../../visual-basic/programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)
 - [Parsing XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/parsing-xml.md)

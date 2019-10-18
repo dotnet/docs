@@ -13,7 +13,7 @@ Transfers control immediately to the next iteration of a loop.
   
 ## Syntax  
   
-```  
+```vb  
 Continue { Do | For | While }  
 ```  
   
@@ -31,9 +31,10 @@ Continue { Do | For | While }
 ## Example  
  The following code example uses the `Continue While` statement to skip to the next column of an array if a divisor is zero. The `Continue While` is inside a `For` loop. It transfers to the `While col < lastcol` statement, which is the next iteration of the innermost `While` loop that contains the `For` loop.  
   
- [!code-vb[VbVbalrStatements#14](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/continue-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#14)]  
   
 ## See also
+
 - [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
 - [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)

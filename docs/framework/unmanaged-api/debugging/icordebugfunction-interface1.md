@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFunction Interface1"
+title: "ICorDebugFunction Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugFunction"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugFunction Interface1
+# ICorDebugFunction Interface
+
 Represents a managed function or method.  
   
 ## Methods  
@@ -38,12 +39,12 @@ Represents a managed function or method.
   
  The relationship between a method's metadata token, `mdMethodDef`, and a method's `ICorDebugFunction` object is dependent upon whether Edit and Continue is allowed on the function:  
   
--   If Edit and Continue is not allowed on the function, a one-to-one relationship exists between the `ICorDebugFunction` object and the `mdMethodDef` token. That is, the function has one `ICorDebugFunction` object and one `mdMethodDef` token.  
+- If Edit and Continue is not allowed on the function, a one-to-one relationship exists between the `ICorDebugFunction` object and the `mdMethodDef` token. That is, the function has one `ICorDebugFunction` object and one `mdMethodDef` token.  
   
--   If Edit and Continue is allowed on the function, a many-to-one relationship exists between the `ICorDebugFunction` object and the `mdMethodDef` token. That is, the function may have many instances of `ICorDebugFunction`, one for each version of the function, but only one `mdMethodDef` token.  
+- If Edit and Continue is allowed on the function, a many-to-one relationship exists between the `ICorDebugFunction` object and the `mdMethodDef` token. That is, the function may have many instances of `ICorDebugFunction`, one for each version of the function, but only one `mdMethodDef` token.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -55,4 +56,5 @@ Represents a managed function or method.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

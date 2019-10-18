@@ -48,20 +48,20 @@ w.w3.org/2001/XMLSchema" xmlns="">
   
  This document contains the following pieces of extension data:  
   
--   The `myAttribute` attribute of the `<feed>` element.  
+- The `myAttribute` attribute of the `<feed>` element.  
   
--   `<simpleString>` element.  
+- `<simpleString>` element.  
   
--   `<DataContractExtension>` element.  
+- `<DataContractExtension>` element.  
   
--   `<XmlSerializerExtension>` element.  
+- `<XmlSerializerExtension>` element.  
   
--   `<xElementExtension>` element.  
+- `<xElementExtension>` element.  
   
 ## Writing Extension Data  
  Attribute extensions are created by adding entries to the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> collection as shown in the following sample code.  
   
-```  
+```csharp  
 //Attribute extensions are stored in a dictionary indexed by   
 // XmlQualifiedName  
 feed.AttributeExtensions.Add(new XmlQualifiedName("myAttribute", ""), "someValue");  
@@ -71,7 +71,7 @@ feed.AttributeExtensions.Add(new XmlQualifiedName("myAttribute", ""), "someValue
   
  The following sample code creates an extension element named `simpleString`.  
   
-```  
+```csharp  
 feed.ElementExtensions.Add("simpleString", "", "hello, world!");  
 ```  
   
@@ -79,7 +79,7 @@ feed.ElementExtensions.Add("simpleString", "", "hello, world!");
   
  One way to create complex element extensions that consist of many nested elements is to use the .NET Framework APIs for serialization (both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Xml.Serialization.XmlSerializer> are supported) as shown in the following examples.  
   
-```  
+```csharp  
 feed.ElementExtensions.Add( new DataContractExtension() { Key = "X", Value = 4 } );  
 feed.ElementExtensions.Add( new XmlSerializerExtension { Key = "Y", Value = 8 }, new XmlSerializer( typeof( XmlSerializerExtension ) ) );  
 ```  
@@ -88,7 +88,7 @@ feed.ElementExtensions.Add( new XmlSerializerExtension { Key = "Y", Value = 8 },
   
  The <xref:System.ServiceModel.Syndication.SyndicationElementExtensionCollection> class can also be used to create element extensions from an <xref:System.Xml.XmlReader> instance. This allows for easy integration with XML processing APIs such as <xref:System.Xml.Linq.XElement> as shown in the following sample code.  
   
-```  
+```csharp  
 feed.ElementExtensions.Add(new XElement("xElementExtension",  
         new XElement("Key", new XAttribute("attr1", "someValue"), "Z"),  
         new XElement("Value", new XAttribute("attr1", "someValue"),   
@@ -98,13 +98,13 @@ feed.ElementExtensions.Add(new XElement("xElementExtension",
 ## Reading Extension Data  
  The values for attribute extensions can be obtained by looking up the attribute in the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> collection by its <xref:System.Xml.XmlQualifiedName> as shown in the following sample code.  
   
-```  
+```csharp  
 Console.WriteLine( feed.AttributeExtensions[ new XmlQualifiedName( "myAttribute", "" )]);  
 ```  
   
  Element extensions are accessed using the `ReadElementExtensions<T>` method.  
   
-```  
+```csharp  
 foreach( string s in feed2.ElementExtensions.ReadElementExtensions<string>("simpleString", ""))  
 {  
     Console.WriteLine(s);  
@@ -124,7 +124,7 @@ foreach (XmlSerializerExtension xse in feed2.ElementExtensions.ReadElementExtens
   
  It is also possible to obtain an `XmlReader` at individual element extensions by using the <xref:System.ServiceModel.Syndication.SyndicationElementExtension.GetReader> method.  
   
-```  
+```csharp  
 foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<SyndicationElementExtension>(x => x.OuterName == "xElementExtension"))  
 {  
     XNode xelement = XElement.ReadFrom(extension.GetReader());  
@@ -134,21 +134,22 @@ foreach (SyndicationElementExtension extension in feed2.ElementExtensions.Where<
   
 #### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Syndication\LooselyTypedExtensions`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Syndication\LooselyTypedExtensions`  
   
 ## See also
+
 - [Strongly-Typed Extensions](../../../../docs/framework/wcf/samples/strongly-typed-extensions-sample.md)
 - [WCF Syndication](../../../../docs/framework/wcf/feature-details/wcf-syndication.md)

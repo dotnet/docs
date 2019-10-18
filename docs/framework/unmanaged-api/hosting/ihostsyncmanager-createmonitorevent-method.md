@@ -23,14 +23,14 @@ Creates a monitored auto-reset event object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateMonitorEvent (  
     [in]  SIZE_T cookie,  
     [out] IHostAutoEvent **ppEvent  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cookie`  
  [in] A cookie to associate with the event object.  
   
@@ -64,6 +64,7 @@ HRESULT CreateMonitorEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
 - [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)
 - [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)

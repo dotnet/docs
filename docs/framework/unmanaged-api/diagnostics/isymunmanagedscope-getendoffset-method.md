@@ -23,12 +23,12 @@ Gets the end offset for this scope.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEndOffset(  
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the end offset.  
   
@@ -39,5 +39,6 @@ HRESULT GetEndOffset(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
 - [GetStartOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getstartoffset-method.md)

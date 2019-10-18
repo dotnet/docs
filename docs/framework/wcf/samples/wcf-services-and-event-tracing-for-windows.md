@@ -12,31 +12,31 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
 #### To use this sample
 
-1.  Using Visual Studio 2012, open the EtwAnalyticTraceSample.sln solution file.
+1. Using Visual Studio 2012, open the EtwAnalyticTraceSample.sln solution file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
-3.  To run the solution, press CTRL+F5.
+3. To run the solution, press CTRL+F5.
 
      In the Web browser, click **Calculator.svc**. The URI of the WSDL document for the service should appear in the browser. Copy that URI.
 
      By default, the service starts listening for requests on port 1378 `http://localhost:1378/Calculator.svc`.
 
-4.  Run the WCF test client (WcfTestClient.exe).
+4. Run the WCF test client (WcfTestClient.exe).
 
      The WCF test client (WcfTestClient.exe) is located at `\<Visual Studio 2012 Install Dir>\Common7\IDE\WcfTestClient.exe`.  The default Visual Studio 2012 install dir is `C:\Program Files\Microsoft Visual Studio 10.0`.
 
-5.  Within the WCF test client, add the service by selecting **File**, and then **Add Service**.
+5. Within the WCF test client, add the service by selecting **File**, and then **Add Service**.
 
      Add the endpoint address in the input box. The default is `http://localhost:1378/Calculator.svc`.
 
-6.  Open the Event Viewer application.
+6. Open the Event Viewer application.
 
      Before invoking the service, start Event Viewer and ensure that the event log is listening for tracking events emitted from the WCF service.
 
-7.  From the **Start** menu, select **Administrative Tools**, and then **Event Viewer**.  Enable the **Analytic** and **Debug** logs.
+7. From the **Start** menu, select **Administrative Tools**, and then **Event Viewer**.  Enable the **Analytic** and **Debug** logs.
 
-8.  In the tree view in Event Viewer, navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application Server-Applications**. Right-click **Application Server-Applications**, select **View**, and then **Show Analytic and Debug Logs**.
+8. In the tree view in Event Viewer, navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application Server-Applications**. Right-click **Application Server-Applications**, select **View**, and then **Show Analytic and Debug Logs**.
 
      Ensure that the **Show Analytic and Debug Logs** option is checked.
 
@@ -46,17 +46,17 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
 #### To test the service
 
-1.  Switch back to WCF test client and double-click `Divide` and keep the default values, which specify a denominator of 0.
+1. Switch back to WCF test client and double-click `Divide` and keep the default values, which specify a denominator of 0.
 
      If the denominator is 0, then the service throws a fault.
 
-2.  Observe the events emitted from the service.
+2. Observe the events emitted from the service.
 
      Switch back to Event Viewer and navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application Server-Applications**. Right-click **Analytic** and select **Refresh**.
 
      The WCF analytic trace events are displayed in the event viewer. Notice that because a fault was thrown by the service an error trace event is displayed in the event viewer.
 
-3.  Repeat steps 1 and 2, but with valid inputs. The value of the `N2` parameter can be any number other than 0.
+3. Repeat steps 1 and 2, but with valid inputs. The value of the `N2` parameter can be any number other than 0.
 
      Refresh the analytic channel to view the WCF events do not include any error events.
 
@@ -64,22 +64,23 @@ This sample demonstrates how to use the analytic tracing in Windows Communicatio
 
 #### To cleanup (Optional)
 
-1.  Open Event Viewer.
+1. Open Event Viewer.
 
-2.  Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application-Server-Applications**. Right-click **Analytic** and select **Disable Log**.
+2. Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application-Server-Applications**. Right-click **Analytic** and select **Disable Log**.
 
-3.  Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application-Server-Applications**. Right-click **Analytic** and select **Clear Log**.
+3. Navigate to **Event Viewer**, **Applications and Services Logs**, **Microsoft**, **Windows**, and then **Application-Server-Applications**. Right-click **Analytic** and select **Clear Log**.
 
-4.  Choose the **Clear** option to clear the events.
+4. Choose the **Clear** option to clear the events.
 
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTracing`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ETWTracing`  
   
 ## See also
+
 - [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)

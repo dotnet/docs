@@ -19,7 +19,7 @@ After ADO.NET has determined from an XML document which elements to infer as tab
  Ignores any inline schema and reads data into the existing <xref:System.Data.DataSet> schema.  
   
 ## Attributes  
- As defined in [Inferring Tables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-tables.md), an element with attributes will be inferred as a table. The attributes of that element will then be inferred as columns for the table. The **ColumnMapping** property of the columns will be set to **MappingType.Attribute**, to ensure that the column names will be written as attributes if the schema is written back to XML. The values of the attributes are stored in a row in the table. For example, consider the following XML:  
+ As defined in [Inferring Tables](inferring-tables.md), an element with attributes will be inferred as a table. The attributes of that element will then be inferred as columns for the table. The **ColumnMapping** property of the columns will be set to **MappingType.Attribute**, to ensure that the column names will be written as attributes if the schema is written back to XML. The values of the attributes are stored in a row in the table. For example, consider the following XML:  
   
 ```xml  
 <DocumentElement>  
@@ -60,9 +60,10 @@ After ADO.NET has determined from an XML document which elements to infer as tab
 |Text1|Text2|  
   
 ## See also
-- [Inferring DataSet Relational Structure from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)
-- [Loading a DataSet from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md)
-- [Loading DataSet Schema Information from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-dataset-schema-information-from-xml.md)
-- [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Inferring DataSet Relational Structure from XML](inferring-dataset-relational-structure-from-xml.md)
+- [Loading a DataSet from XML](loading-a-dataset-from-xml.md)
+- [Loading DataSet Schema Information from XML](loading-dataset-schema-information-from-xml.md)
+- [Using XML in a DataSet](using-xml-in-a-dataset.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

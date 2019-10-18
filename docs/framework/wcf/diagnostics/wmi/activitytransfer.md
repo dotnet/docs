@@ -24,17 +24,17 @@ class ActivityTransfer : WSAT_TraceEvent
   
 ### ActivityID  
   
--   Data type: object  
+- Data type: object  
     Access type: Read-only  
   
--   Activity ID  
+- Activity ID  
   
 ### RelatedActivityID  
   
--   Data type: object  
+- Data type: object  
     Access type: Read-only  
   
--   Related Activity ID  
+- Related Activity ID  
   
 ## Requirements  
   

@@ -23,7 +23,7 @@ Gets the name of the module referenced by the specified metadata token.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleRefProps (  
    [in]  mdModuleRef         mur,  
    [out] LPWSTR              szName,   
@@ -32,7 +32,7 @@ HRESULT GetModuleRefProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mur`  
  [in] The ModuleRef metadata token that references the module to get metadata information for.  
   
@@ -55,5 +55,6 @@ HRESULT GetModuleRefProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

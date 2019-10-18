@@ -12,7 +12,7 @@ metadata:
 items:
 - durationInMinutes: 1
   content: |
-    This tutorial teaches you C# interactively, using your browser to write C# code and see the results of compiling and running your code. It contains a series of lessons that create, modify and explore collections and arrays.
+    This tutorial teaches you C# interactively, using your browser to write C# code and see the results of compiling and running your code. It contains a series of lessons that create, modify, and explore collections and arrays.
 - title: Create lists
   durationInMinutes: 2
   content: |
@@ -26,7 +26,9 @@ items:
     }
     ```
 
-    You've just created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts
+    If you are running this on your environment, you should follow the instructions for the [local version](arrays-and-collections.md) instead.
+
+    You've created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts
     that you've learned in earlier tutorials to loop through the list.
 
     The code to display names makes use of the [string interpolation](../../language-reference/tokens/interpolated.md) feature. When you precede a `string` with the `$` character, you can embed C# code in the string declaration. The actual string replaces that C# code with the value it generates. In this example, it replaces the `{name.ToUpper()}` with each name, converted to capital letters, because you called the <xref:System.String.ToUpper%2A?displayProperty=nameWithType> method.
@@ -41,7 +43,7 @@ items:
   content: |
     The collection you created uses the <xref:System.Collections.Generic.List%601> type. This type stores sequences of elements. You specify the type of the elements between the angle brackets.
 
-    One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. Add the following code below the code you've already written:
+    One important aspect of this <xref:System.Collections.Generic.List%601> type is that it can grow or shrink, enabling you to add or remove elements. You can see the results by modifying the contents after you've displayed its contents. Add the following code below the code you've already written (below the loop that prints the contents):
 
     ```csharp
     Console.WriteLine();
@@ -54,7 +56,7 @@ items:
     }
     ```
 
-    You've added two more names to the end of the list. You've also removed one as well.
+    You've added two more names to the end of the list. You've also removed one as well. The output from this block of code shows the initial contents, then prints a blank line and the new contents.
 
     The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add the following code below what you've already written and try it:
 
@@ -77,7 +79,7 @@ items:
 - title: Search and sort lists
   durationInMinutes: 5
   content: |
-    Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Try this to see how it works.  Add the following code below what you've written so far:
+    Our samples use relatively small lists, but your applications may often create lists with many more elements, sometimes numbering in the thousands. To find elements in these larger collections, you need to search the list for different items. The <xref:System.Collections.Generic.List%601.IndexOf%2A> method searches for an item and returns the index of the item. Try it to see how it works.  Add the following code below what you've written so far:
 
     ```csharp
     var index = names.IndexOf("Felipe");
@@ -106,13 +108,13 @@ items:
 - title: Lists of other types
   durationInMinutes: 5
   content: |
-    You've been using the `string` type in lists so far. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Delete the code you wrote so far, and replace it with this:
+    You've been using the `string` type in lists so far. Let's make a <xref:System.Collections.Generic.List%601> using a different type. Let's build a set of numbers. Delete the code you wrote so far, and replace it with the following code:
 
     ```csharp
     var fibonacciNumbers = new List<int> {1, 1};
     ```
 
-    That creates a list of integers, and sets the first two integers to the value 1. These are the first two values of a *Fibonacci Sequence*, a sequence of numbers. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
+    That creates a list of integers, and sets the first two integers to the value 1. The *Fibonacci Sequence*, a sequence of numbers, starts with two 1s. Each next Fibonacci number is found by taking the sum of the previous two numbers. Add this code:
 
     ```csharp
     var previous = fibonacciNumbers[fibonacciNumbers.Count - 1];
@@ -162,9 +164,9 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
-    You've completed the list interactive tutorial. That's the final introduction to C# interactive tutorial. You can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials to build projects on your machine.
+    You've completed the list interactive tutorial. That's the final introduction to C# interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
-    You can learn more about [.NET collections](../../../standard/collections/index.md) in the following topics:
+    You can learn more about [.NET collections](../../../standard/collections/index.md) in the following articles:
     - [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)
     - [Commonly used collection types](../../../standard/collections/commonly-used-collection-types.md)
     - [When to use generic collections](../../../standard/collections/when-to-use-generic-collections.md)

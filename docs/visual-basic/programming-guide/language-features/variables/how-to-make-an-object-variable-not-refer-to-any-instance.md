@@ -11,9 +11,9 @@ You can disassociate an object variable from any object instance by setting it t
   
 ### To disassociate an object variable from any object instance  
   
--   Set the variable to `Nothing` in an assignment statement.  
+- Set the variable to `Nothing` in an assignment statement.  
   
-    ```  
+    ```vb  
     ' Assume account is a defined class  
     Dim currentAccount As account  
     currentAccount = Nothing  
@@ -26,6 +26,7 @@ You can disassociate an object variable from any object instance by setting it t
  If you use an object variable for objects that contain confidential or sensitive data, you can set the variable to `Nothing` when you are not actively dealing with one of those objects. This reduces the chance of malicious code gaining access to the data.  
   
 ## See also
+
 - <xref:System.NullReferenceException>
 - [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
 - [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)

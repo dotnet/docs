@@ -33,7 +33,7 @@ A major focus of .NET Core 2.1 is improving build-time performance, particularly
 
 - Use of long-running SDK build servers, which are processes that span across individual `dotnet build` invocations. They eliminate the need to JIT-compile large blocks of code every time `dotnet build` is run. Build server processes can be automatically terminated with the following command:
 
-   ```console
+   ```dotnetcli
    dotnet buildserver shutdown
    ```
 
@@ -43,13 +43,13 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 - `dotnet watch` provides a file system watcher that waits for a file to change before executing a designated set of commands. For example, the following command automatically rebuilds the current project and generates verbose output whenever a file in it changes:
 
-   ```console
+   ```dotnetcli
    dotnet watch -- --verbose build
    ```
 
    Note the `--` option that precedes the `--verbose` option. It delimits the options passed directly to the `dotnet watch` command from the arguments that are passed to the child `dotnet` process. Without it, the `--verbose` option applies to the `dotnet watch` command, not the `dotnet build` command.
   
-   For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch)
+   For more information, see [Develop ASP.NET Core apps using dotnet watch](/aspnet/core/tutorials/dotnet-watch).
 
 - `dotnet dev-certs` generates and manages certificates used during development in ASP.NET Core applications.
 
@@ -65,7 +65,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 To install a Global Tool, you use the [dotnet tool install](../tools/dotnet-tool-install.md) command. For example:
 
-```console
+```dotnetcli
 dotnet tool install -g dotnetsay
 ```
 
@@ -93,6 +93,7 @@ Starting with .NET Core 2.0, if the version of .NET Core that an application was
 > This roll-forward behavior doesn't apply to preview releases. By default, it also doesn't apply to major releases, but this can be changed with the settings below.
 
 You can modify this behavior by changing the setting for the roll-forward on no candidate shared framework. The available settings are:
+
 - `0` - disable minor version roll-forward behavior. With this setting, an application built for .NET Core 2.0.0 will roll forward to .NET Core 2.0.1, but not to .NET Core 2.2.0 or .NET Core 3.0.0.
 - `1` - enable minor version roll-forward behavior. This is the default value for the setting. With this setting, an application built for .NET Core 2.0.0 will roll forward to either .NET Core 2.0.1 or .NET Core 2.2.0, depending on which one is installed, but it will not roll forward to .NET Core 3.0.0.
 - `2` - enable minor and major version roll-forward behavior. If set, even different major versions are considered, so an application built for .NET Core 2.0.0 will roll forward to .NET Core 3.0.0.
@@ -101,7 +102,7 @@ You can modify this setting in any of three ways:
 
 - Set the `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` environment variable to the desired value.
 
-- Add the following line with the desired value to the `runtimeconfig.json` file:
+- Add the following line with the desired value to the *.runtimeconfig.json* file:
 
    ```json
    "rollForwardOnNoCandidateFx" : 0
@@ -109,7 +110,7 @@ You can modify this setting in any of three ways:
 
 - When using [.NET Core CLI tools](../tools/index.md), add the following option with the desired value to a .NET Core command such as `run`:
 
-   ```console
+   ```dotnetcli
    dotnet run --rollForwardOnNoCandidateFx=0
    ```
 
@@ -125,7 +126,7 @@ Self-contained publishing relies on runtime versions on NuGet.org. You do not ne
 
 Using the .NET Core 2.0 SDK, self-contained applications are published with the .NET Core 2.0.0 runtime unless a different version is specified via the `RuntimeFrameworkVersion` property. With this new behavior, you’ll no longer need to set this property to select a higher runtime version for a self-contained application. The easiest approach going forward is to always publish with .NET Core 2.1 SDK (v 2.1.300).
 
-For more information, see [Self-contained deploymnet runtime roll forward](../deploying/runtime-patch-selection.md).
+For more information, see [Self-contained deployment runtime roll forward](../deploying/runtime-patch-selection.md).
 ## Windows Compatibility Pack
 
 When you port existing code from the .NET Framework to .NET Core, you can use the [Windows Compatibility Pack](https://www.nuget.org/packages/Microsoft.Windows.Compatibility). It provides access to 20,000 more APIs than are available in .NET Core. These APIs include types in the <xref:System.Drawing?displayProperty=nameWithType> namespace, the <xref:System.Diagnostics.EventLog> class, WMI, Performance Counters, Windows Services, and the Windows registry types and members.
@@ -172,15 +173,17 @@ Without these types, when passing such items as a portion of an array or a secti
 
 The following example uses a <xref:System.Span%601> and <xref:System.Memory%601> instance to provide a virtual view of 10 elements of an array.
 
-[!CODE-csharp[Span\<T>](~/samples/core/whats-new/whats-new-in-21/cs/program.cs)]
+[!code-csharp[Span\<T>](~/samples/core/whats-new/whats-new-in-21/cs/program.cs)]
 
-[!CODE-vb[Memory\<T>](~/samples/core/whats-new/whats-new-in-21/vb/program.vb)]
+[!code-vb[Memory\<T>](~/samples/core/whats-new/whats-new-in-21/vb/program.vb)]
 
 ### Brotli compression
 
 .NET Core 2.1 adds support for Brotli compression and decompression. Brotli is a general-purpose lossless compression algorithm that is defined in [RFC 7932](https://www.ietf.org/rfc/rfc7932.txt) and is supported by most web browsers and major web servers. You can use the stream-based <xref:System.IO.Compression.BrotliStream?displayProperty=nameWithType> class or the high-performance span-based <xref:System.IO.Compression.BrotliEncoder?displayProperty=nameWithType> and <xref:System.IO.Compression.BrotliDecoder?displayProperty=nameWithType> classes. The following example illustrates compression with the <xref:System.IO.Compression.BrotliStream> class:
 
-[!CODE-csharp[Brotli compression](~/samples/core/whats-new/whats-new-in-21/cs/brotli.cs#1)]
+[!code-csharp[Brotli compression](~/samples/core/whats-new/whats-new-in-21/cs/brotli.cs#1)]
+
+[!code-vb[Brotli compression](~/samples/core/whats-new/whats-new-in-21/vb/brotli.vb#1)]
 
 The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:System.IO.Compression.DeflateStream> and <xref:System.IO.Compression.GZipStream>, which makes it easy to convert code that calls these APIs to <xref:System.IO.Compression.BrotliStream>.
 
@@ -204,7 +207,7 @@ The <xref:System.IO.Compression.BrotliStream> behavior is the same as <xref:Syst
 
 - The static <xref:System.Security.Cryptography.RandomNumberGenerator.Fill%2A?displayProperty=nameWithType> method fills a <xref:System.Span%601> with random values.
 
-- The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms?displayProperty=nameWithType> is now supported on Linux and maxOS.
+- The <xref:System.Security.Cryptography.Pkcs.EnvelopedCms?displayProperty=nameWithType> is now supported on Linux and macOS.
 
 - Elliptic-Curve Diffie-Hellman (ECDH) is now available in the <xref:System.Security.Cryptography.ECDiffieHellman?displayProperty=nameWithType> class family. The surface area is the same as in the .NET Framework.
 

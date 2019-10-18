@@ -9,15 +9,15 @@ ms.author: "mairaw"
 # Modifying Nodes, Content, and Values in an XML Document
 There are many ways you can modify the nodes and content in a document. You can:  
   
--   Change the value of nodes using the <xref:System.Xml.XmlNode.Value%2A> property.  
+- Change the value of nodes using the <xref:System.Xml.XmlNode.Value%2A> property.  
   
--   Modify an entire set of nodes by replacing the nodes with new nodes. This is done using the <xref:System.Xml.XmlNode.InnerXml%2A> property.  
+- Modify an entire set of nodes by replacing the nodes with new nodes. This is done using the <xref:System.Xml.XmlNode.InnerXml%2A> property.  
   
--   Replace existing nodes with new nodes using the <xref:System.Xml.XmlNode.RemoveChild%2A> method.  
+- Replace existing nodes with new nodes using the <xref:System.Xml.XmlNode.RemoveChild%2A> method.  
   
--   Add additional characters to nodes that inherit from the <xref:System.Xml.XmlCharacterData> class using the <xref:System.Xml.XmlCharacterData.AppendData%2A>, <xref:System.Xml.XmlCharacterData.InsertData%2A>, or <xref:System.Xml.XmlCharacterData.ReplaceData%2A> methods.  
+- Add additional characters to nodes that inherit from the <xref:System.Xml.XmlCharacterData> class using the <xref:System.Xml.XmlCharacterData.AppendData%2A>, <xref:System.Xml.XmlCharacterData.InsertData%2A>, or <xref:System.Xml.XmlCharacterData.ReplaceData%2A> methods.  
   
--   Modify the content by removing a range of characters using the <xref:System.Xml.XmlCharacterData.DeleteData%2A> method on node types that inherit from <xref:System.Xml.XmlCharacterData>.  
+- Modify the content by removing a range of characters using the <xref:System.Xml.XmlCharacterData.DeleteData%2A> method on node types that inherit from <xref:System.Xml.XmlCharacterData>.  
   
  A simple technique for changing the value of a node is to use `node.Value = "new value";`. The following table lists the node types that this single line of code works on and exactly what data for that node type is changed.  
   

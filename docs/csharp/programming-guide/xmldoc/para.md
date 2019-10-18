@@ -17,19 +17,19 @@ ms.assetid: c74b8705-29df-40b1-bff5-237492b0e978
 <para>content</para>  
 ```  
   
-#### Parameters  
+## Parameters  
  `content`  
  The text of the paragraph.  
   
 ## Remarks  
- The \<para> tag is for use inside a tag, such as [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md), [\<remarks>](../../../csharp/programming-guide/xmldoc/remarks.md), or [\<returns>](../../../csharp/programming-guide/xmldoc/returns.md), and lets you add structure to the text.  
+ The \<para> tag is for use inside a tag, such as [\<summary>](./summary.md), [\<remarks>](./remarks.md), or [\<returns>](./returns.md), and lets you add structure to the text.  
   
- Compile with [/doc](../../../csharp/language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
- See [\<summary>](../../../csharp/programming-guide/xmldoc/summary.md) for an example of using \<para>.  
+ See [\<summary>](./summary.md) for an example of using \<para>.  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Recommended Tags for Documentation Comments](../../../csharp/programming-guide/xmldoc/recommended-tags-for-documentation-comments.md)
+- [C# Programming Guide](../index.md)
+- [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md)

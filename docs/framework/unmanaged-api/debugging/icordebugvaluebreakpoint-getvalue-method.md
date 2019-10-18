@@ -23,13 +23,13 @@ Gets an interface pointer to an "ICorDebugValue" object that represents the valu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue (  
     [out] ICorDebugValue   **ppValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppValue`  
  [out] A pointer to the address of an `ICorDebugValue` object.  
   
@@ -43,4 +43,3 @@ HRESULT GetValue (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

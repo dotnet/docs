@@ -23,13 +23,13 @@ Gets the number of characters in the string referenced by this ICorDebugStringVa
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLength (  
     [out] ULONG32   *pcchString  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcchString`  
  [out] A pointer to a value that specifies the length of the string referenced by this `ICorDebugStringValue` object.  
   

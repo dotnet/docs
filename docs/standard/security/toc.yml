@@ -1,0 +1,72 @@
+- name: Security
+  href: index.md
+  items:
+  - name: Key Security Concepts
+    href: key-security-concepts.md
+  - name: Role-Based Security
+    href: role-based-security.md
+    items:
+    - name: Principal and Identity Objects
+      href: principal-and-identity-objects.md
+    - name: "How to: Create a WindowsPrincipal Object"
+      href: how-to-create-a-windowsprincipal-object.md
+    - name: "How to: Create GenericPrincipal and GenericIdentity Objects"
+      href: how-to-create-genericprincipal-and-genericidentity-objects.md
+    - name: Replacing a Principal Object
+      href: replacing-a-principal-object.md
+    - name: Impersonating and Reverting
+      href: impersonating-and-reverting.md
+  - name: Cryptography Model
+    href: cryptography-model.md
+    items:
+    - name: Cryptographic Services
+      href: cryptographic-services.md
+    - name: Generating Keys for Encryption and Decryption
+      href: generating-keys-for-encryption-and-decryption.md
+    - name: "How to: Store Asymmetric Keys in a Key Container"
+      href: how-to-store-asymmetric-keys-in-a-key-container.md
+    - name: Encrypting Data
+      href: encrypting-data.md
+    - name: Decrypting Data
+      href: decrypting-data.md
+    - name: Cryptographic Signatures
+      href: cryptographic-signatures.md
+    - name: Ensuring Data Integrity with Hash Codes
+      href: ensuring-data-integrity-with-hash-codes.md
+    - name: Creating a Cryptographic Scheme
+      href: creating-a-cryptographic-scheme.md
+    - name: "How to: Encrypt XML Elements with Symmetric Keys"
+      href: how-to-encrypt-xml-elements-with-symmetric-keys.md
+    - name: "How to: Decrypt XML Elements with Symmetric Keys"
+      href: how-to-decrypt-xml-elements-with-symmetric-keys.md
+    - name: "How to: Encrypt XML Elements with Asymmetric Keys"
+      href: how-to-encrypt-xml-elements-with-asymmetric-keys.md
+    - name: "How to: Decrypt XML Elements with Asymmetric Keys"
+      href: how-to-decrypt-xml-elements-with-asymmetric-keys.md
+    - name: "How to: Encrypt XML Elements with X.509 Certificates"
+      href: how-to-encrypt-xml-elements-with-x-509-certificates.md
+    - name: "How to: Decrypt XML Elements with X.509 Certificates"
+      href: how-to-decrypt-xml-elements-with-x-509-certificates.md
+    - name: "How to: Sign XML Documents with Digital Signatures"
+      href: how-to-sign-xml-documents-with-digital-signatures.md
+    - name: "How to: Verify the Digital Signatures of XML Documents"
+      href: how-to-verify-the-digital-signatures-of-xml-documents.md
+    - name: "How to: Use Data Protection"
+      href: how-to-use-data-protection.md
+    - name: "How to: Access Hardware Encryption Devices"
+      href: how-to-access-hardware-encryption-devices.md
+    - name: "Walkthrough: Creating a Cryptographic Application"
+      href: walkthrough-creating-a-cryptographic-application.md
+  - name: Secure Coding Guidelines
+    href: secure-coding-guidelines.md
+    items:
+    - name: Securing State Data
+      href: securing-state-data.md
+    - name: Security and User Input
+      href: security-and-user-input.md
+    - name: Security and Race Conditions
+      href: security-and-race-conditions.md
+    - name: Security and On-the-Fly Code Generation
+      href: security-and-on-the-fly-code-generation.md
+    - name: Timing vulnerabilities with CBC-mode symmetric decryption using padding
+      href: vulnerabilities-cbc-mode.md

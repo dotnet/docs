@@ -23,12 +23,12 @@ Specifies the user-defined method that is the entry point for this module. For e
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUserEntryPoint(  
     [in] mdMethodDef entryMethod);  
 ```  
   
-#### Parameters  
+## Parameters  
  `entryMethod`  
  [in] The metadata token for the method that is the user entry point.  
   
@@ -39,4 +39,5 @@ HRESULT SetUserEntryPoint(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

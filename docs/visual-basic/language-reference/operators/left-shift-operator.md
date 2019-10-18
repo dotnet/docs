@@ -14,7 +14,7 @@ Performs an arithmetic left shift on a bit pattern.
   
 ## Syntax  
   
-```  
+```vb  
 result = pattern << amount  
 ```  
   
@@ -45,28 +45,29 @@ result = pattern << amount
  Arithmetic shifts never generate overflow exceptions.  
   
 > [!NOTE]
->  The `<<` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure that you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
+> The `<<` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure that you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
  The following example uses the `<<` operator to perform arithmetic left shifts on integral values. The result always has the same data type as that of the expression being shifted.  
   
- [!code-vb[VbVbalrOperators#12](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/left-shift-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#12)]  
   
  The results of the previous example are as follows:  
   
--   `result1` is 192 (0000 0000 1100 0000).  
+- `result1` is 192 (0000 0000 1100 0000).  
   
--   `result2` is 3072 (0000 1100 0000 0000).  
+- `result2` is 3072 (0000 1100 0000 0000).  
   
--   `result3` is -32768 (1000 0000 0000 0000).  
+- `result3` is -32768 (1000 0000 0000 0000).  
   
--   `result4` is 384 (0000 0001 1000 0000).  
+- `result4` is 384 (0000 0001 1000 0000).  
   
--   `result5` is 0 (shifted 15 places to the left).  
+- `result5` is 0 (shifted 15 places to the left).  
   
  The shift amount for `result4` is calculated as 17 AND 15, which equals 1.  
   
 ## See also
+
 - [Bit Shift Operators](../../../visual-basic/language-reference/operators/bit-shift-operators.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)
 - [<<= Operator](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)

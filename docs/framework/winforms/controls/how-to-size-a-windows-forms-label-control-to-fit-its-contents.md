@@ -14,11 +14,12 @@ The Windows Forms <xref:System.Windows.Forms.Label> control can be single-line o
   
 ### To make a label control resize dynamically to fit its contents  
   
-1.  Set its <xref:System.Windows.Forms.Label.AutoSize%2A> property to `true`.  
+1. Set its <xref:System.Windows.Forms.Label.AutoSize%2A> property to `true`.  
   
  If <xref:System.Windows.Forms.Label.AutoSize%2A> is set to `false`, the words specified in the <xref:System.Windows.Forms.Label.Text%2A> property will wrap to the next line if possible, but the control will not grow.  
   
 ## See also
-- [How to: Create Access Keys with Windows Forms Label Controls](../../../../docs/framework/winforms/controls/how-to-create-access-keys-with-windows-forms-label-controls.md)
-- [Label Control Overview](../../../../docs/framework/winforms/controls/label-control-overview-windows-forms.md)
-- [Label Control](../../../../docs/framework/winforms/controls/label-control-windows-forms.md)
+
+- [How to: Create Access Keys with Windows Forms Label Controls](how-to-create-access-keys-with-windows-forms-label-controls.md)
+- [Label Control Overview](label-control-overview-windows-forms.md)
+- [Label Control](label-control-windows-forms.md)

@@ -23,11 +23,11 @@ Gets the operating system (OS) ID of the process.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetID([out] DWORD *pdwProcessId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwProcessId`  
  [out] The unique ID of the process.  
   

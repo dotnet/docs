@@ -14,7 +14,7 @@ ms.assetid: 00fc0a16-1078-4d55-9849-ffaf7da96531
 The <xref:System.Windows.Controls.Viewbox> control is used to stretch or scale a child element.  
   
 ## In This Section  
- [Apply Stretch Properties to the Contents of a Viewbox](../../../../docs/framework/wpf/controls/how-to-apply-stretch-properties-to-the-contents-of-a-viewbox.md)  
+ [Apply Stretch Properties to the Contents of a Viewbox](how-to-apply-stretch-properties-to-the-contents-of-a-viewbox.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Viewbox>  
@@ -22,4 +22,5 @@ The <xref:System.Windows.Controls.Viewbox> control is used to stretch or scale a
  <xref:System.Windows.Controls.Image>  
   
 ## See also
+
 - [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)

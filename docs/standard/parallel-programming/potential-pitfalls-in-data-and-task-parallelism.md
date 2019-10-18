@@ -25,11 +25,11 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
   
  The most common scenario in which over-parallelization can occur is in nested loops. In most cases, it is best to parallelize only the outer loop unless one or more of the following conditions apply:  
   
--   The inner loop is known to be very long.  
+- The inner loop is known to be very long.  
   
--   You are performing an expensive computation on each order. (The operation shown in the example is not expensive.)  
+- You are performing an expensive computation on each order. (The operation shown in the example is not expensive.)  
   
--   The target system is known to have enough processors to handle the number of threads that will be produced by parallelizing the query on `cust.Orders`.  
+- The target system is known to have enough processors to handle the number of threads that will be produced by parallelizing the query on `cust.Orders`.  
   
  In all cases, the best way to determine the optimum query shape is to test and measure.  
   
@@ -43,13 +43,13 @@ In many cases, <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=name
  Most static methods in the .NET Framework are thread-safe and can be called from multiple threads concurrently. However, even in these cases, the synchronization involved can lead to significant slowdown in the query.  
   
 > [!NOTE]
->  You can test for this yourself by inserting some calls to <xref:System.Console.WriteLine%2A> in your queries. Although this method is used in the documentation examples for demonstration purposes, do not use it in parallel loops unless necessary.  
+> You can test for this yourself by inserting some calls to <xref:System.Console.WriteLine%2A> in your queries. Although this method is used in the documentation examples for demonstration purposes, do not use it in parallel loops unless necessary.  
   
 ## Be Aware of Thread Affinity Issues  
- Some technologies, for example, COM interoperability for Single-Threaded Apartment (STA) components, Windows Forms, and Windows Presentation Foundation (WPF), impose thread affinity restrictions that require code to run on a specific thread. For example, in both Windows Forms and WPF, a control can only be accessed on the thread on which it was created. This means, for example, that you cannot update a list control from a parallel loop unless you configure the thread scheduler to schedule work only on the UI thread. For more information, see [How to: Schedule Work on the User Interface (UI) Thread](https://msdn.microsoft.com/library/32a846a5-d628-4933-907b-4888ff72c663).  
+ Some technologies, for example, COM interoperability for Single-Threaded Apartment (STA) components, Windows Forms, and Windows Presentation Foundation (WPF), impose thread affinity restrictions that require code to run on a specific thread. For example, in both Windows Forms and WPF, a control can only be accessed on the thread on which it was created. This means, for example, that you cannot update a list control from a parallel loop unless you configure the thread scheduler to schedule work only on the UI thread. For more information, see [Specifying a synchronization context](xref:System.Threading.Tasks.TaskScheduler#specifying-a-synchronization-context).  
   
 ## Use Caution When Waiting in Delegates That Are Called by Parallel.Invoke  
- In certain circumstances, the Task Parallel Library will inline a task, which means it runs on the task on the currently executing thread. (For more information, see [Task Schedulers](https://msdn.microsoft.com/library/638f8ea5-21db-47a2-a934-86e1e961bf65).) This performance optimization can lead to deadlock in certain cases. For example, two tasks might run the same delegate code, which signals when an event occurs, and then waits for the other task to signal. If the second task is inlined on the same thread as the first, and the first goes into a Wait state, the second task will never be able to signal its event. To avoid such an occurrence, you can specify a timeout on the Wait operation, or use explicit thread constructors to help ensure that one task cannot block the other.  
+ In certain circumstances, the Task Parallel Library will inline a task, which means it runs on the task on the currently executing thread. (For more information, see [Task Schedulers](xref:System.Threading.Tasks.TaskScheduler).) This performance optimization can lead to deadlock in certain cases. For example, two tasks might run the same delegate code, which signals when an event occurs, and then waits for the other task to signal. If the second task is inlined on the same thread as the first, and the first goes into a Wait state, the second task will never be able to signal its event. To avoid such an occurrence, you can specify a timeout on the Wait operation, or use explicit thread constructors to help ensure that one task cannot block the other.  
   
 ## Do Not Assume that Iterations of ForEach, For and ForAll Always Execute in Parallel  
  It is important to keep in mind that individual iterations in a <xref:System.Threading.Tasks.Parallel.For%2A>, <xref:System.Threading.Tasks.Parallel.ForEach%2A> or <xref:System.Linq.ParallelEnumerable.ForAll%2A> loop may but do not have to execute in parallel. Therefore, you should avoid writing any code that depends for correctness on parallel execution of iterations or on the execution of iterations in any particular order. For example, this code is likely to deadlock:  

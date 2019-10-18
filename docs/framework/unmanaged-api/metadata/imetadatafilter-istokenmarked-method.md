@@ -23,14 +23,14 @@ Gets a value indicating whether the specified metadata token has been marked as 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsTokenMarked (  
     [in]  mdToken  tk,   
     [out] BOOL     *pIsMarked  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token to examine for a processing mark.  
   
@@ -47,4 +47,5 @@ HRESULT IsTokenMarked (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataFilter Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-interface.md)

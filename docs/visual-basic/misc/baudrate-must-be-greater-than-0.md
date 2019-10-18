@@ -8,7 +8,8 @@ The `BaudRate` argument specified for the `My.Computer.Ports.OpenSerialPort` met
   
 ## To correct this error  
   
--   Change the value of the `BaudRate` argument to a positive number.  
+- Change the value of the `BaudRate` argument to a positive number.  
   
 ## See also
+
 - [My.Computer.Ports.OpenSerialPort](xref:Microsoft.VisualBasic.Devices.Ports.OpenSerialPort%2A)

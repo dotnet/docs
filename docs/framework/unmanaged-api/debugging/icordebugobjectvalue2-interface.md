@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue2 Interface1"
+title: "ICorDebugObjectValue2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugObjectValue2"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugObjectValue2 Interface1
+# ICorDebugObjectValue2 Interface
+
 Extends the "ICorDebugObjectValue" interface to support inheritance and overrides.  
   
 ## Methods  
@@ -29,7 +30,7 @@ Extends the "ICorDebugObjectValue" interface to support inheritance and override
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -41,5 +42,5 @@ Extends the "ICorDebugObjectValue" interface to support inheritance and override
  **NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 
+- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

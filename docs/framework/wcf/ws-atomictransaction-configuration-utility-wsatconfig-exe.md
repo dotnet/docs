@@ -13,7 +13,7 @@ wsatConfig [Options]
 ```  
   
 ## Remarks  
- This command line tool can be used to configure basic WS-AT settings in a local machine only. If you have to configure settings on both local and remote machines, you should use the MMC snap-in as described in [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md).  
+ This command line tool can be used to configure basic WS-AT settings in a local machine only. If you have to configure settings on both local and remote machines, you should use the MMC snap-in as described in [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md).  
   
  The command line tool can be found in the Windows SDK installation location, specifically,  
   
@@ -24,7 +24,7 @@ wsatConfig [Options]
  The following table shows the options that can be used with WS-AtomicTransaction Configuration Utility (wsatConfig.exe).  
   
 > [!NOTE]
->  When you set an SSL certificate for a selected port, you overwrite the original SSL certificate associated with that port if one exists.  
+> When you set an SSL certificate for a selected port, you overwrite the original SSL certificate associated with that port if one exists.  
   
 |Options|Description|  
 |-------------|-----------------|  
@@ -44,5 +44,6 @@ wsatConfig [Options]
 |-virtualServer:\<virtualServer>|Specifies the DTC resource cluster name.|  
   
 ## See also
-- [Using WS-AtomicTransaction](../../../docs/framework/wcf/feature-details/using-ws-atomictransaction.md)
-- [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)
+
+- [Using WS-AtomicTransaction](./feature-details/using-ws-atomictransaction.md)
+- [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md)

@@ -23,13 +23,13 @@ Sets the instruction pointer to the specified offset location in the Microsoft i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetIP (  
     [in] ULONG32 nOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nOffset`  
  The offset location in the MSIL code.  
   

@@ -23,13 +23,13 @@ Sets the callback interface to be used by the garbage collector to request the h
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCHostControl (  
     [in] IGCHostControl* pGCHostControl  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pGCHostControl`  
  [in] A pointer to an [IGCHostControl](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-interface.md) object that allows the garbage collector to request the host to change the limits of virtual memory.  
   
@@ -43,4 +43,5 @@ HRESULT SetGCHostControl (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorConfiguration Interface](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-interface.md)

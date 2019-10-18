@@ -23,13 +23,13 @@ Gets a value that indicates whether the current task, which is being switched ou
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NeedsPriorityScheduling (  
     [out] BOOL *pbNeedsPriorityScheduling  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbNeedsPriorityRescheduling`  
  [out] `true`, if the host should attempt to reschedule the current task instance as soon as possible; otherwise, `false`.  
   
@@ -57,6 +57,7 @@ HRESULT NeedsPriorityScheduling (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

@@ -14,11 +14,11 @@ This topic shows how to create the Office Open XML WordprocessingML document tha
   
 #### To create the WordprocessingML document  
   
-1.  Create a new Microsoft Word document.  
+1. Create a new Microsoft Word document.  
   
-2.  Paste the following text into the new document:  
+2. Paste the following text into the new document:  
   
-    ```  
+    ```text  
     Parsing WordprocessingML with LINQ to XML  
   
     The following example prints to the console.  
@@ -36,16 +36,17 @@ This topic shows how to create the Office Open XML WordprocessingML document tha
     Hello World  
     ```  
   
-3.  Format the first line with the style "Heading 1".  
+3. Format the first line with the style "Heading 1".  
   
-4.  Select the lines that contain the Visual Basic code. The first line starts with the `Imports` keyword. The last line is "End Class". Format the lines with the courier font. Format them with a new style, and name the new style "Code".  
+4. Select the lines that contain the Visual Basic code. The first line starts with the `Imports` keyword. The last line is "End Class". Format the lines with the courier font. Format them with a new style, and name the new style "Code".  
   
-5.  Finally, select the entire line that contains the output, and format it with the `Code` style.  
+5. Finally, select the entire line that contains the output, and format it with the `Code` style.  
   
-6.  Save the document, and name it SampleDoc.docx.  
+6. Save the document, and name it SampleDoc.docx.  
   
     > [!NOTE]
-    >  If you are using Microsoft Word 2003, select **Word 2007 Document** in the **Save as Type** drop-down list.  
+    > If you are using Microsoft Word 2003, select **Word 2007 Document** in the **Save as Type** drop-down list.  
   
 ## See also
+
 - [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)

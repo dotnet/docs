@@ -10,9 +10,10 @@ When uploading and downloading files with the [My.Computer.Network](xref:Microso
   
 ## To correct this error  
   
--   Supply a `connectionTimeout` that is greater than `0`.  
+- Supply a `connectionTimeout` that is greater than `0`.  
   
 ## See also
+
 - [My.Computer.Network.UploadFile](xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A)
 - [My.Computer.Network.DownloadFile](xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A)
 - [How to: Upload a File](../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)

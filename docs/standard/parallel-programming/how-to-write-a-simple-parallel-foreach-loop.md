@@ -26,7 +26,7 @@ This example assumes you have several .jpg files in a *C:\Users\Public\Pictures\
 [!code-csharp[TPL_Parallel#03](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/simpleforeach.cs#03)]
 [!code-vb[TPL_Parallel#03](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/simpleforeach.vb#03)]
 
-A <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop works like a <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> loop. The loop partitions the source collection and schedules the work on multiple threads based on the system environment. The more processors on the system, the faster the parallel method runs. For some source collections, a sequential loop may be faster, depending on the size of the source and the kind of work the loop performs. For more information about performance, see [Potential pitfalls in data and task parallelism](../../../docs/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism.md)
+A <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> loop works like a <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> loop. The loop partitions the source collection and schedules the work on multiple threads based on the system environment. The more processors on the system, the faster the parallel method runs. For some source collections, a sequential loop may be faster, depending on the size of the source and the kind of work the loop performs. For more information about performance, see [Potential pitfalls in data and task parallelism](potential-pitfalls-in-data-and-task-parallelism.md).
 
 For more information about parallel loops, see [How to: Write a simple Parallel.For loop](../../../docs/standard/parallel-programming/how-to-write-a-simple-parallel-for-loop.md).
 
@@ -45,7 +45,7 @@ In Visual Studio, there are Visual Basic and C# console application templates fo
 
 From the command line, you can use either .NET Core and its CLI tools (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
 
-For a .NET Core project, you must reference the **System.Drawing.Common** NuGet package. In Visual Studio, use the NuGet Package Manager to install the package. Alternatively, you can add a reference to the package in your *.*csproj* or *.*vbproj* file:
+For a .NET Core project, you must reference the **System.Drawing.Common** NuGet package. In Visual Studio, use the NuGet Package Manager to install the package. Alternatively, you can add a reference to the package in your \*.csproj or \*.vbproj file:
  
 ```xml
 <ItemGroup>

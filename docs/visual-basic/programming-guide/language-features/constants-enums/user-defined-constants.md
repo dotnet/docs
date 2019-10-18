@@ -18,38 +18,39 @@ A constant is a meaningful name that takes the place of a number or string that 
 ## Const Statement Usage  
  A `Const` statement can represent a mathematical or date/time quantity:  
   
- [!code-vb[VbEnumsTask#10](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_1.vb)]  
+ [!code-vb[VbEnumsTask#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#10)]  
   
  It also can define `String` constants:  
   
- [!code-vb[VbEnumsTask#13](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_2.vb)]  
+ [!code-vb[VbEnumsTask#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#13)]  
   
  The expression on the right side of the equal sign ( `=` ) is often a number or literal string, but it also can be an expression that results in a number or string (although that expression cannot contain calls to functions). You can even define constants in terms of previously defined constants:  
   
- [!code-vb[VbEnumsTask#15](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_3.vb)]  
+ [!code-vb[VbEnumsTask#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#15)]  
   
 ## Scope of User-Defined Constants  
  A `Const` statement's scope is the same as that of a variable declared in the same location. You can specify scope in any of the following ways:  
   
--   To create a constant that exists only within a procedure, declare it within that procedure.  
+- To create a constant that exists only within a procedure, declare it within that procedure.  
   
--   To create a constant available to all procedures within a class, but not to any code outside that module, declare it in the declarations section of the class.  
+- To create a constant available to all procedures within a class, but not to any code outside that module, declare it in the declarations section of the class.  
   
--   To create a constant that is available to all members of an assembly, but not to outside clients of the assembly, declare it using the `Friend` keyword in the declarations section of the class.  
+- To create a constant that is available to all members of an assembly, but not to outside clients of the assembly, declare it using the `Friend` keyword in the declarations section of the class.  
   
--   To create a constant available throughout the application, declare it using the `Public` keyword in the declarations section the class.  
+- To create a constant available throughout the application, declare it using the `Public` keyword in the declarations section the class.  
   
  For more information, see [How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md).  
   
 ### Avoiding Circular References  
  Because constants can be defined in terms of other constants, it is possible to inadvertently create a *cycle*, or circular reference, between two or more constants. A cycle occurs when you have two or more public constants, each of which is defined in terms of the other, as in the following example:  
   
- [!code-vb[VbEnumsTask#16](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_4.vb)]  
-[!code-vb[VbEnumsTask#17](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/user-defined-constants_5.vb)]  
+ [!code-vb[VbEnumsTask#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#16)]  
+[!code-vb[VbEnumsTask#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#17)]  
   
  If a cycle occurs, Visual Basic generates a compiler error.  
   
 ## See also
+
 - [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)
 - [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)
 - [Constants and Enumerations](../../../../visual-basic/programming-guide/language-features/constants-enums/index.md)

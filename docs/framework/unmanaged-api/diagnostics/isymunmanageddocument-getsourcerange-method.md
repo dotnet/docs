@@ -23,7 +23,7 @@ Returns the specified range of the embedded source into the given buffer. The bu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceRange(  
     [in]  ULONG32  startLine,  
     [in]  ULONG32  startColumn,  
@@ -35,7 +35,7 @@ HRESULT GetSourceRange(
         length_is(*pcSourceBytes)] BYTE source[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `startLine`  
  [in] The starting line in the current document.  
   
@@ -61,4 +61,5 @@ HRESULT GetSourceRange(
  S_OK if the method succeeds.  
   
 ## See also
+
 - [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)

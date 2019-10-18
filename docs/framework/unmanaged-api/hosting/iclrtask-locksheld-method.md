@@ -23,13 +23,13 @@ Gets the number of locks currently held on the task.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LocksHeld (  
     [out] SIZE_T *pLockCount  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pLockCount`  
  [out] The number of locks held on the task at the time of the method call.  
   
@@ -54,6 +54,7 @@ HRESULT LocksHeld (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
 - [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
 - [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)

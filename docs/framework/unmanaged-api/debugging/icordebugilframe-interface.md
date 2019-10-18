@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugILFrame Interface1"
+title: "ICorDebugILFrame Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugILFrame"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugILFrame Interface1
+# ICorDebugILFrame Interface
+
 Represents a stack frame of Microsoft intermediate language (MSIL) code. This interface is a subclass of the ICorDebugFrame interface.  
   
 ## Methods  
@@ -38,7 +39,7 @@ Represents a stack frame of Microsoft intermediate language (MSIL) code. This in
  The `ICorDebugILFrame` interface is a specialized ICorDebugFrame interface. It is used either for MSIL code frames or for just-in-time (JIT) compiled frames. The JIT-compiled frames implement both the `ICorDebugILFrame` interface and the ICorDebugNativeFrame interface.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -50,4 +51,5 @@ Represents a stack frame of Microsoft intermediate language (MSIL) code. This in
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

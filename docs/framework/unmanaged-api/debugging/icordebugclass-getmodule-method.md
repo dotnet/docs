@@ -23,13 +23,13 @@ Gets the module that defines this class.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModule (  
     [out] ICorDebugModule    **pModule  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pModule`  
  [out] A pointer to the address of an ICorDebugModule object that represents the module in which this class is defined.  
   

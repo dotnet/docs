@@ -15,7 +15,7 @@ Refers to another file that describes the types and members in your source code.
 <include file="filename" path="tagpath[@name='id']" />  
 ```  
   
-#### Parameters  
+## Parameters  
  `filename`  
  Required. The name of the file containing the documentation. The file name can be qualified with a path. Enclose `filename` in double quotation marks (" ").  
   
@@ -36,7 +36,7 @@ Refers to another file that describes the types and members in your source code.
 ## Example  
  This example uses the `<include>` tag to import member documentation comments from a file called `commentFile.xml`.  
   
- [!code-vb[VbVbcnXmlDocComments#4](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/include_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#4)]  
   
  The format of the `commentFile.xml` is as follows.  
   
@@ -54,4 +54,5 @@ Refers to another file that describes the types and members in your source code.
 ```  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

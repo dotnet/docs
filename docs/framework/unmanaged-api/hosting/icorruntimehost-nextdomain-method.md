@@ -23,14 +23,14 @@ Gets an interface pointer to the next domain in the enumeration.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NextDomain (  
     [in] HCORENUM hEnum,  
     [out] void** pAppDomain  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The enumerator that was obtained through a call to [EnumDomains](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-enumdomains-method.md).  
   
@@ -56,6 +56,7 @@ HRESULT NextDomain (
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - <xref:System._AppDomain>
 - <xref:System.AppDomain>
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

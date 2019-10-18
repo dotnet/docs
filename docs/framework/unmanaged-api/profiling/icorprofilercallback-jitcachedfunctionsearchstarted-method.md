@@ -23,13 +23,13 @@ Notifies the profiler that a search has started for a function that was compiled
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITCachedFunctionSearchStarted(  
     [in]  FunctionID functionId,  
     [out] BOOL *pbUseCachedFunction);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function for which the search is being performed.  
   
@@ -55,4 +55,5 @@ HRESULT JITCachedFunctionSearchStarted(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

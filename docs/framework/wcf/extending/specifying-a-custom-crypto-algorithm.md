@@ -6,11 +6,11 @@ ms.assetid: d662a305-8e09-451d-9a59-b0f12b012f1d
 # Specifying a Custom Crypto Algorithm
 WCF allows you to specify a custom crypto algorithm to use when encrypting data or computing digital signatures. This is done by the following steps:  
   
-1.  Derive a class from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>  
+1. Derive a class from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>  
   
-2.  Register the algorithm  
+2. Register the algorithm  
   
-3.  Configure the binding with the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>-derived class.  
+3. Configure the binding with the <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>-derived class.  
   
 ## Derive a class from SecurityAlgorithmSuite  
  The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> is an abstract base class that allows you to specify the algorithm to use when performing various security related operations. For example, computing a hash for a digital signature or encrypting a message. The following code shows how to derive a class from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>:  
@@ -103,7 +103,7 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
   
  To register the custom algorithm in code use the <xref:System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])> method. This method creates both mappings. The following example shows how to call this method:  
   
-```  
+```csharp
 // Register the custom URI string defined for the hashAlgorithm in MyCustomAlgorithmSuite class to create the   
 // SHA256CryptoServiceProvider hash algorithm object.  
 CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://constoso.com/CustomAlgorithms/CustomHashAlgorithm");  
@@ -117,10 +117,11 @@ WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Message.AlgorithmSuite = new MyCustomAlgorithmSuite();  
 ```  
   
- For a complete code example, see the [Cryptographic Agility in WCF Security](../../../../docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md) sample.  
+ For a complete code example, see the [Cryptographic Agility in WCF Security](../samples/cryptographic-agility-in-wcf-security.md) sample.  
   
 ## See also
-- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+
+- [Securing Services and Clients](../feature-details/securing-services-and-clients.md)
+- [Securing Services](../securing-services.md)
+- [Security Overview](../feature-details/security-overview.md)
+- [Security Concepts](../feature-details/security-concepts.md)

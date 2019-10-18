@@ -22,7 +22,7 @@ Console.WriteLine(doc.Root.Parent Is Nothing)
   
  This example produces the following output:  
   
-```  
+```console  
 True  
 True  
 ```  
@@ -47,7 +47,7 @@ Console.WriteLine(xmlTree.Nodes().OfType(Of XText)().Count())
   
  This example produces the following output:  
   
-```  
+```console  
 1  
 1  
 2  
@@ -69,7 +69,7 @@ Console.WriteLine(">>{0}<<", textNode2)
   
  This example produces the following output:  
   
-```  
+```console  
 >><<  
 ```  
   
@@ -111,7 +111,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console  
 xmlns="http://www.adventure-works.com"  IsNamespaceDeclaration:True  
 xmlns:fc="www.fourthcoffee.com"  IsNamespaceDeclaration:True  
 AnAttribute="abc"  IsNamespaceDeclaration:False  
@@ -137,7 +137,7 @@ Console.WriteLine(nodes.OfType(Of XText)().Count())
   
  This example produces the following output:  
   
-```  
+```console  
 3  
 0  
 ```  
@@ -166,4 +166,5 @@ Console.WriteLine(doc.Nodes().Count())
 ```  
   
 ## See also
+
 - [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

@@ -12,10 +12,10 @@ ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
 # \<cryptoNameMapping> Element
 Contains mappings of classes to friendly names.  
   
- \<configuration>  
-\<mscorlib>  
-\<cryptographySettings>  
-\<cryptoNameMapping>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptoNameMapping>**  
   
 ## Syntax  
   
@@ -69,7 +69,8 @@ Contains mappings of classes to friendly names.
 ```  
   
 ## See also
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
-- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)
+
+- [Configuration File Schema](../index.md)
+- [Cryptography Settings Schema](index.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
+- [Configuring Cryptography Classes](../../configure-cryptography-classes.md)

@@ -22,7 +22,7 @@ Represents one contiguous block of native code stored in memory.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_PRF_CODE_INFO {  
     UINT_PTR startAddress;  
     SIZE_T size;  
@@ -46,4 +46,5 @@ typedef struct _COR_PRF_CODE_INFO {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)

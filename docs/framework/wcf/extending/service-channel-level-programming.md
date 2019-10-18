@@ -12,15 +12,15 @@ This topic describes how to write a Windows Communication Foundation (WCF) servi
 ## Receiving Messages  
  To be ready to receive and process messages, the following steps are required:  
   
-1.  Create a binding.  
+1. Create a binding.  
   
-2.  Build a channel listener.  
+2. Build a channel listener.  
   
-3.  Open the channel listener.  
+3. Open the channel listener.  
   
-4.  Read the request and send a reply.  
+4. Read the request and send a reply.  
   
-5.  Close all channel objects.  
+5. Close all channel objects.  
   
 #### Creating a Binding  
  The first step in listening for and receiving messages is creating a binding. WCF ships with several built-in or system-provided bindings that can be used directly by instantiating one of them. In addition, you can also create your own custom binding by instantiating a CustomBinding class which is what the code in listing 1 does.  

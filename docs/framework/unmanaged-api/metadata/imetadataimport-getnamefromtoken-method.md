@@ -23,14 +23,14 @@ Gets the UTF-8 name of the object referenced by the specified metadata token. Th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNameFromToken (  
    [in] mdToken      tk,  
    [out] MDUTF8CSTR  *pszUtf8NamePtr  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token representing the object to return the name for.  
   
@@ -50,5 +50,6 @@ HRESULT GetNameFromToken (
  **.NET Framework Versions:** 1.0  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

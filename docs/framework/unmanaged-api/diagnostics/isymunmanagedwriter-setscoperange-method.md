@@ -23,14 +23,14 @@ Defines the offset range for the specified lexical scope. The scope becomes the 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScope(  
     [in] ULONG32  scopeID,  
     [in] ULONG32  startOffset,  
     [in] ULONG32  endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `scopeId`  
  [in] The scope identifier for the scope.  
   
@@ -50,4 +50,5 @@ HRESULT OpenScope(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

@@ -12,28 +12,28 @@ If you decide to declare COM types manually in managed source code, the best pla
   
 ### To simulate COM types from managed source  
   
-1.  Declare the types in a language that is compliant with the Common Language Specification (CLS) and compile the file.  
+1. Declare the types in a language that is compliant with the Common Language Specification (CLS) and compile the file.  
   
-2.  Export the assembly containing the types with the [Type Library Exporter (Tlbexp.exe)](../tools/tlbexp-exe-type-library-exporter.md).  
+2. Export the assembly containing the types with the [Type Library Exporter (Tlbexp.exe)](../tools/tlbexp-exe-type-library-exporter.md).  
   
-3.  Use the exported COM type library as a basis for declaring COM-oriented managed types.  
+3. Use the exported COM type library as a basis for declaring COM-oriented managed types.  
   
 ### To create a runtime callable wrapper (RCW)  
   
-1.  Assuming that you have an IDL file or type library file, decide which classes and interfaces you want to include in the custom RCW. You can exclude any types that you do not intend to use directly or indirectly in your application.  
+1. Assuming that you have an IDL file or type library file, decide which classes and interfaces you want to include in the custom RCW. You can exclude any types that you do not intend to use directly or indirectly in your application.  
   
-2.  Create a source file in a CLS-compliant language and declare the types. See [Type Library to Assembly Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100)) for a complete description of the import conversion process. Effectively, when you create a custom RCW, you are manually performing the type conversion activity provided by the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md). The example in the next section shows types in an IDL or type library file and their corresponding types in C# code.  
+2. Create a source file in a CLS-compliant language and declare the types. See [Type Library to Assembly Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100)) for a complete description of the import conversion process. Effectively, when you create a custom RCW, you are manually performing the type conversion activity provided by the [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md). The example in the next section shows types in an IDL or type library file and their corresponding types in C# code.  
   
-3.  When the declarations are complete, compile the file as you compile any other managed source code.  
+3. When the declarations are complete, compile the file as you compile any other managed source code.  
   
-4.  As with the types imported with Tlbimp.exe, some require additional information, which you can add directly to your code. For details, see [How to: Edit Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8zbc969t(v=vs.100)).  
+4. As with the types imported with Tlbimp.exe, some require additional information, which you can add directly to your code. For details, see [How to: Edit Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8zbc969t(v=vs.100)).  
   
 ## Example  
  The following code shows an example of the `ISATest` interface and `SATest` class in IDL and the corresponding types in C# source code.  
   
  **IDL or type library file**  
   
-```  
+```cpp
  [  
 object,  
 uuid(40A8C65D-2448-447A-B786-64682CBEF133),  
@@ -94,6 +94,7 @@ namespace SAServer
 ```  
   
 ## See also
+
 - [Customizing Runtime Callable Wrappers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e753eftz(v=vs.100))
 - [COM Data Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sak564ww(v=vs.100))
 - [How to: Edit Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8zbc969t(v=vs.100))

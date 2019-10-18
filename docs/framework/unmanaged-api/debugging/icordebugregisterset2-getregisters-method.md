@@ -23,7 +23,7 @@ Gets the value of each register (for the platform on which code is currently exe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegisters (  
     [in] ULONG32 maskCount,  
     [in, size_is(maskCount)] BYTE mask[],  
@@ -32,7 +32,7 @@ HRESULT GetRegisters (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `maskCount`  
  [in] The size, in bytes, of the `mask` array.  
   
@@ -64,5 +64,6 @@ HRESULT GetRegisters (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
 - [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)

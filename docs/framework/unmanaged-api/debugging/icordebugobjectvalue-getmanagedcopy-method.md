@@ -23,7 +23,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetManagedCopy (  
     [out] IUnknown           **ppObject  
 );  
@@ -33,5 +33,3 @@ HRESULT GetManagedCopy (
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-
-

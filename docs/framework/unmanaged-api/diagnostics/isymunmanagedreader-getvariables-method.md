@@ -23,7 +23,7 @@ Returns a non-local variable, given its parent and name.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVariables (  
     [in]  mdToken  parent,  
     [in]  ULONG32  cVars,  
@@ -32,7 +32,7 @@ HRESULT GetVariables (
         length_is (*pcVars)] ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The parent of the variable.  
   
@@ -52,4 +52,5 @@ HRESULT GetVariables (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

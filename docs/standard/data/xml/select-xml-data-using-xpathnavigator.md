@@ -18,9 +18,9 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used 
 ### Selecting Nodes Using XPath Expressions  
  To select a set of nodes using an XPath expression, use one of the following selection methods.  
   
--   <xref:System.Xml.XPath.XPathNavigator.Select%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.Select%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A>  
   
  When called, these methods return a set of nodes that you can navigate freely using an <xref:System.Xml.XPath.XPathNodeIterator> object or an <xref:System.Xml.XPath.XPathNavigator> object in the case of a single selected node.  
   

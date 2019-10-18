@@ -23,7 +23,7 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clear ( );  
 ```  
   
@@ -37,4 +37,5 @@ HRESULT Clear ( );
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

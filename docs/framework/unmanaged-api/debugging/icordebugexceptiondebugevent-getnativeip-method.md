@@ -10,13 +10,13 @@ Gets the native instruction pointer for this exception debug event.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNativeIP(  
    [out]CORDB_ADDRESS *pIP  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIP`  
  [out] A pointer to the instruction pointer for this exception debug event. See the Remarks section for more information.  
   
@@ -33,7 +33,7 @@ HRESULT GetNativeIP(
  The event type is available from the [ICorDebugDebugEvent::GetEventKind](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-geteventkind-method.md) method.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -45,5 +45,6 @@ HRESULT GetNativeIP(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugExceptionDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

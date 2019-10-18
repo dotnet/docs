@@ -18,12 +18,14 @@ potential fixes for a developer.)
 The concepts are similar, and the end result
 is a data structure that allows examination of the source code in a meaningful way. However, Expression
 Trees are based on a totally different set of classes and APIs than the Roslyn APIs.
-    
+
 Let's look at a simple example.
 Here's a line of code:
+
 ```csharp
 var sum = 1 + 2;
 ```
+
 If you were to analyze this as an expression tree, the tree contains several nodes.
 The outermost node is a variable declaration statement with assignment (`var sum = 1 + 2;`)
 That outermost node contains several child nodes: a variable declaration, an assignment operator, and an
@@ -40,17 +42,18 @@ Visually, the entire statement is a tree: You could start at the root node, and 
 each node in the tree to see the code that makes up the statement:
 
 - Variable declaration statement with assignment (`var sum = 1 + 2;`)
-    * Implicit variable type declaration (`var sum`)
-        - Implicit var keyword (`var`)
-        - Variable name declaration (`sum`)
-    * Assignment operator (`=`)
-    * Binary addition expression (`1 + 2`)
-        - Left operand (`1`)
-        - Addition operator (`+`)
-        - Right operand (`2`)
+  - Implicit variable type declaration (`var sum`)
+    - Implicit var keyword (`var`)
+    - Variable name declaration (`sum`)
+  - Assignment operator (`=`)
+  - Binary addition expression (`1 + 2`)
+    - Left operand (`1`)
+    - Addition operator (`+`)
+    - Right operand (`2`)
 
 This may look complicated, but it is very powerful. Following the same process, you can decompose
 much more complicated expressions. Consider this expression:
+
 ```csharp
 var finalAnswer = this.SecretSauceFunction(
     currentState.createInterimResult(), currentState.createSecondValue(1, 2),
@@ -66,7 +69,7 @@ receiver, one that does not. There are method calls using other receiver objects
 there are constant arguments of different types. And finally, there is a binary
 addition operator. Depending on the return type of `SecretSauceFunction()` or
 `MoreSecretSauce()`, that binary addition operator may be a method call to an
-overridden addition operator, resolving to a static method call to the binary 
+overridden addition operator, resolving to a static method call to the binary
 addition operator defined for a class.
 
 Despite this perceived complexity, the expression above creates a tree structure
@@ -107,6 +110,6 @@ control repeating the loop.
 
 The one thing you can't do is modify an expression tree.  Expression Trees are immutable
 data structures. If you want to mutate (change) an expression tree, you must create a new tree
-that is a copy of the original, but with your desired changes. 
+that is a copy of the original, but with your desired changes.
 
 [Next -- Framework Types Supporting Expression Trees](expression-classes.md)

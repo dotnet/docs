@@ -17,13 +17,13 @@ SQL Server has many features that support creating secure database applications.
  The topics in this section briefly describe the security features in SQL Server that are relevant for developers, with links to relevant topics in SQL Server Books Online and other resources that provide more detailed coverage.  
   
 ## In This Section  
- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)  
+ [Overview of SQL Server Security](overview-of-sql-server-security.md)  
  Describes the architecture and security features of SQL Server.  
   
- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)  
+ [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)  
  Contains topics discussing various application security scenarios for ADO.NET and SQL Server applications.  
   
- [SQL Server Express Security](../../../../../docs/framework/data/adonet/sql/sql-server-express-security.md)  
+ [SQL Server Express Security](sql-server-express-security.md)  
  Describes security considerations for SQL Server Express.  
   
 ## Related Sections  
@@ -34,5 +34,6 @@ Describes security considerations for SQL Server and Azure SQL Database.
 Describes security concerns to consider before installing SQL Server.
 
 ## See also
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)
+
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [SQL Server and ADO.NET](index.md)

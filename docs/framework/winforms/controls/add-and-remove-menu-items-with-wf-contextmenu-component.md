@@ -25,11 +25,11 @@ Explains how to add and remove shortcut menu items in Windows Forms.
  You can remove items from a shortcut menu permanently; however, at run time it may be more appropriate to hide or disable the items instead.  
   
 > [!IMPORTANT]
->  Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
+> Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
   
 ### To remove items from a shortcut menu  
   
-1.  Use the <xref:System.Windows.Forms.Menu.MenuItemCollection.Remove%2A> or <xref:System.Windows.Forms.Menu.MenuItemCollection.RemoveAt%2A> method of the <xref:System.Windows.Forms.Menu.MenuItems%2A> collection of the <xref:System.Windows.Forms.ContextMenu> component to remove a particular menu item.  
+1. Use the <xref:System.Windows.Forms.Menu.MenuItemCollection.Remove%2A> or <xref:System.Windows.Forms.Menu.MenuItemCollection.RemoveAt%2A> method of the <xref:System.Windows.Forms.Menu.MenuItems%2A> collection of the <xref:System.Windows.Forms.ContextMenu> component to remove a particular menu item.  
   
     ```vb  
     ' Removes the first item in the shortcut menu.  
@@ -54,7 +54,7 @@ Explains how to add and remove shortcut menu items in Windows Forms.
   
      -or-  
   
-2.  Use the `Clear` method of the `MenuItems` collection of the <xref:System.Windows.Forms.ContextMenu> component to remove all items from the menu.  
+2. Use the `Clear` method of the `MenuItems` collection of the <xref:System.Windows.Forms.ContextMenu> component to remove all items from the menu.  
   
     ```vb  
     ContextMenu1.MenuItems.Clear()  
@@ -69,6 +69,7 @@ Explains how to add and remove shortcut menu items in Windows Forms.
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.ContextMenu>
-- [ContextMenu Component](../../../../docs/framework/winforms/controls/contextmenu-component-windows-forms.md)
-- [ContextMenu Component Overview](../../../../docs/framework/winforms/controls/contextmenu-component-overview-windows-forms.md)
+- [ContextMenu Component](contextmenu-component-windows-forms.md)
+- [ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md)

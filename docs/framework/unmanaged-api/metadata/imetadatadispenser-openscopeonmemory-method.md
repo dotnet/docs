@@ -23,7 +23,7 @@ Opens an area of memory that contains existing metadata. That is, this method op
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScopeOnMemory (  
     [in]  LPCVOID     pData,   
     [in]  ULONG       cbData,   
@@ -33,7 +33,7 @@ HRESULT OpenScopeOnMemory (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pData`  
  [in] A pointer that specifies the starting address of the memory area.  
   
@@ -68,6 +68,7 @@ HRESULT OpenScopeOnMemory (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
 - [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

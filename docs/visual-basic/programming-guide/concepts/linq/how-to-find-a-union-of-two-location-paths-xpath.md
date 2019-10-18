@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Category>A</Category>  
 <Price>24.50</Price>  
@@ -60,4 +60,5 @@ Results are identical
 ```  
   
 ## See also
+
 - [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

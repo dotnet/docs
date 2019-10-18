@@ -23,13 +23,13 @@ Gets the unique identifier of the application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetID (  
     [out] ULONG32   *pId  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pId`  
  [out] The unique identifier of the application domain.  
   

@@ -23,13 +23,13 @@ Returns the size of a specified object. Replaces the [ICorProfilerInfo::GetObjec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectSize2(  
     [in]  ObjectID objectId,  
     [out] SIZE_T *pcSize);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object.  
   
@@ -49,4 +49,5 @@ HRESULT GetObjectSize2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)

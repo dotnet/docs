@@ -22,7 +22,7 @@ Specifies the statistics to be recorded for a garbage collection.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_GC_COUNTS                 = 0x00000001  
     COR_GC_MEMORYUSAGE            = 0x00000002  
@@ -47,5 +47,6 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [COR_GC_STATS Structure](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md)
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

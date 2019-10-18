@@ -23,14 +23,14 @@ Gets the specified number of [COR_HEAPOBJECT](../../../../docs/framework/unmanag
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next(  
     [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] COR_HEAPOBJECT  objects[],   
     [out] ULONG *pceltFetched  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  celt  
  [in] The number of objects to be retrieved.  
   
@@ -53,5 +53,6 @@ HRESULT Next(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorDebugHeapEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

@@ -19,7 +19,7 @@ Branches unconditionally to a specified line in a procedure.
   
 ## Syntax  
   
-```  
+```vb  
 GoTo line  
 ```  
   
@@ -31,7 +31,7 @@ GoTo line
  The `GoTo` statement can branch only to lines in the procedure in which it appears. The line must have a line label that `GoTo` can refer to. For more information, see [How to: Label Statements](../../../visual-basic/programming-guide/program-structure/how-to-label-statements.md).  
   
 > [!NOTE]
->  `GoTo` statements can make code difficult to read and maintain. Whenever possible, use a control structure instead. For more information, see [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/index.md).  
+> `GoTo` statements can make code difficult to read and maintain. Whenever possible, use a control structure instead. For more information, see [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/index.md).  
   
  You cannot use a `GoTo` statement to branch from outside a `For`...`Next`, `For Each`...`Next`, `SyncLock`...`End SyncLock`, `Try`...`Catch`...`Finally`, `With`...`End With`, or `Using`...`End Using` construction to a label inside.  
   
@@ -48,15 +48,15 @@ GoTo line
   
  The following illustration shows one `Try` construction nested within another. Various branches among the blocks of the two constructions are indicated as valid or invalid.  
   
- ![Graphic diagram of branching in Try constructions](../../../visual-basic/language-reference/statements/media/trybranching.gif "TryBranching")  
-Valid and invalid branches in Try constructions  
+ ![Graphic diagram of branching in Try constructions](./media/goto-statement/try-construction-branching.gif)  
   
 ## Example  
  The following example uses the `GoTo` statement to branch to line labels in a procedure.  
   
- [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/goto-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#31)]  
   
 ## See also
+
 - [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
 - [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)

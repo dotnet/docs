@@ -24,7 +24,7 @@ Creates a version string from a common language runtime (CLR) path in a target p
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateVersionStringFromModule (  
     [in]  DWORD      pidDebuggee,  
     [in]  LPCWSTR    szModuleName,  
@@ -35,7 +35,7 @@ HRESULT CreateVersionStringFromModule (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pidDebuggee`  
  [in] Identifier of the process in which the target CLR is loaded.  
   

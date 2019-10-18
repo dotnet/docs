@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <aw:PurchaseOrder PONumber="11223" Date="2000-01-15" xmlns:aw="http://www.adventure-works.com">  
     <aw:ShippingAddress>  
@@ -75,4 +75,5 @@ Results are identical
 ```  
   
 ## See also
+
 - [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

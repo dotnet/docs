@@ -14,7 +14,7 @@ ms.author: ronpet
 ---
 # How to: Bind data to the Windows Forms DataGridView control
 
-The <xref:System.Windows.Forms.DataGridView> control supports the standard Windows Forms data binding model, so it can bind to a variety of data sources. Usually, you bind to a <xref:System.Windows.Forms.BindingSource> that manages the interaction with the data source. The <xref:System.Windows.Forms.BindingSource> can be any Windows Forms data source, which gives you great flexibility when choosing or modifying your data's location. For more information about data sources the <xref:System.Windows.Forms.DataGridView> control supports, see the [DataGridView control overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md).  
+The <xref:System.Windows.Forms.DataGridView> control supports the standard Windows Forms data binding model, so it can bind to a variety of data sources. Usually, you bind to a <xref:System.Windows.Forms.BindingSource> that manages the interaction with the data source. The <xref:System.Windows.Forms.BindingSource> can be any Windows Forms data source, which gives you great flexibility when choosing or modifying your data's location. For more information about data sources the <xref:System.Windows.Forms.DataGridView> control supports, see the [DataGridView control overview](datagridview-control-overview-windows-forms.md).  
 
 Visual Studio has extensive support for data binding to the DataGridView control. For more information, see [How to: Bind data to the Windows Forms DataGridView control using the Designer](bind-data-to-the-datagrid-using-the-designer.md).  
 
@@ -38,10 +38,11 @@ To build and run this example, paste the code into the *Form1* code file in a ne
   
 Populate the `connectionString` variable in the example with the values for your Northwind SQL Server sample database connection. Windows Authentication, also called integrated security, is a more secure way to connect to the database than storing a password in the connection string. For more information about connection security, see [Protect connection information](../../data/adonet/protecting-connection-information.md).  
 
-[!code-csharp[System.Windows.Forms.DataGridViewBoundEditable](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/CS/datagridviewboundeditable.cs)]
-[!code-vb[System.Windows.Forms.DataGridViewBoundEditable](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/VB/datagridviewboundeditable.vb)]  
+[!code-csharp[System.Windows.Forms.DataGridViewBoundEditable](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/CS/datagridviewboundeditable.cs)]
+[!code-vb[System.Windows.Forms.DataGridViewBoundEditable](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/VB/datagridviewboundeditable.vb)]  
   
 ## See also
+
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.BindingSource>

@@ -12,9 +12,10 @@ The value of the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFil
   
 ## To correct this error  
   
--   Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A> property to a number greater than or equal to 1000.  
+- Set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A> property to a number greater than or equal to 1000.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.MaxFileSize%2A>
 - [My.Application.Log](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)
 - [My.Application.Info.DirectoryPath](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)

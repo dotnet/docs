@@ -1,0 +1,518 @@
+- name: Windows Communication Foundation Samples
+  href: index.md
+  items:
+  - name: Set-Up Instructions
+    href: set-up-instructions.md
+    items:
+    - name: One-Time Setup Procedure for the Windows Communication Foundation Samples
+      href: one-time-setup-procedure-for-the-wcf-samples.md
+      items:
+      - name: Firewall Instructions
+        href: firewall-instructions.md
+      - name: Internet Information Service Hosting Instructions
+        href: internet-information-service-hosting-instructions.md
+      - name: Internet Information Services (IIS) Server Certificate Installation Instructions
+        href: iis-server-certificate-installation-instructions.md
+      - name: Virtual Directory Setup Instructions
+        href: virtual-directory-setup-instructions.md
+      - name: Installing Message Queuing (MSMQ)
+        href: installing-message-queuing-msmq.md
+    - name: Building the Windows Communication Foundation Samples
+      href: building-the-samples.md
+    - name: Running the Windows Communication Foundation Samples
+      href: running-the-samples.md
+  - name: Basic
+    href: basic.md
+    items:
+    - name: Getting Started
+      href: getting-started-sample.md
+    - name: AJAX
+      href: ajax.md
+      items:
+      - name: JSONP
+        href: jsonp.md
+      - name: JSON Serialization
+        href: json-serialization.md
+      - name: Basic AJAX Service
+        href: basic-ajax-service.md
+      - name: AJAX Service Using HTTP POST
+        href: ajax-service-using-http-post.md
+      - name: AJAX Service Without Configuration
+        href: ajax-service-without-configuration.md
+      - name: AJAX Service Using Complex Types
+        href: ajax-service-using-complex-types-sample.md
+      - name: AJAX Service with JSON and XML
+        href: ajax-service-with-json-and-xml-sample.md
+    - name: Binding
+      href: binding.md
+      items:
+      - name: Basic Binding
+        href: basic-binding.md
+        items:
+        - name: Message Security Sample
+          href: message-security-sample.md
+        - name: BasicBinding with Transport Security
+          href: basicbinding-with-transport-security.md
+        - name: BasicBinding
+          href: basicbinding.md
+      - name: Custom Binding
+        href: custom-binding.md
+        items:
+        - name: Custom Binding Imperative
+          href: custom-binding-imperative.md
+        - name: Custom Binding Transport and Encoding
+          href: custom-binding-transport-and-encoding.md
+        - name: Custom Binding Reliable Session
+          href: custom-binding-reliable-session.md
+        - name: Custom Binding Reliable Session over HTTPS
+          href: custom-binding-reliable-session-over-https.md
+        - name: Custom Binding Security
+          href: custom-binding-security.md
+      - name: Net Binding
+        href: net-binding.md
+        items:
+        - name: Net MSMQ Binding
+          href: net-msmq-binding.md
+          items:
+          - name: Transacted MSMQ Binding
+            href: transacted-msmq-binding.md
+          - name: Volatile Queued Communication
+            href: volatile-queued-communication.md
+          - name: Dead Letter Queues
+            href: dead-letter-queues.md
+          - name: Poison Message Handling in MSMQ 4.0
+            href: poison-message-handling-in-msmq-4-0.md
+          - name: Sessions and Queues
+            href: sessions-and-queues.md
+          - name: Two-Way Communication
+            href: two-way-communication.md
+          - name: SRMP
+            href: srmp.md
+          - name: Message Security over Message Queuing
+            href: message-security-over-message-queuing.md
+        - name: Message Queueing Integration
+          href: message-queueing-integration.md
+          items:
+          - name: Message Queuing to Windows Communication Foundation
+            href: message-queuing-to-wcf.md
+          - name: Windows Communication Foundation to Message Queuing
+            href: wcf-to-message-queuing.md
+          - name: Message Correlation
+            href: message-correlation.md
+        - name: NetTCPBinding
+          href: nettcpbinding.md
+          items:
+          - name: Default NetTcpBinding
+            href: default-nettcpbinding.md
+          - name: Net.TCP Port Sharing Sample
+            href: net-tcp-port-sharing-sample.md
+        - name: NetNamedPipeBinding
+          href: netnamedpipebinding.md
+      - name: WS Binding
+        href: ws-binding.md
+        items:
+        - name: WS 2007 Federation HTTP Binding
+          href: ws-2007-federation-http-binding.md
+        - name: WS Dual Http
+          href: ws-dual-http.md
+        - name: MTOM Encoding
+          href: mtom-encoding.md
+        - name: WSHttpBinding
+          href: wshttpbinding.md
+        - name: WS Reliable Session
+          href: ws-reliable-session.md
+        - name: WS Transport Security
+          href: ws-transport-security.md
+        - name: Message Security Binding
+          href: message-security-binding.md
+          items:
+          - name: Message Security Anonymous
+            href: message-security-anonymous.md
+          - name: Message Security Certificate
+            href: message-security-certificate.md
+          - name: Message Security User Name
+            href: message-security-user-name.md
+          - name: Message Security Windows
+            href: message-security-windows.md
+        - name: WS Transport With Message Credential
+          href: ws-transport-with-message-credential.md
+        - name: WS Transaction Flow
+          href: ws-transaction-flow.md
+    - name: Client
+      href: client.md
+      items:
+      - name: Client Interoperability
+        href: client-interoperability.md
+        items:
+        - name: Interoperating with ASMX Web Services
+          href: interoperating-with-asmx-web-services.md
+        - name: XMLSerializer Sample
+          href: xmlserializer-sample.md
+      - name: Address Headers
+        href: address-headers.md
+      - name: Channel Factory
+        href: channel-factory.md
+      - name: Expected Exceptions
+        href: expected-exceptions.md
+      - name: Retrieve Metadata
+        href: retrieve-metadata.md
+      - name: Use Close and Abort to release WCF client resources
+        href: use-close-abort-release-wcf-client-resources.md
+      - name: Typed Client
+        href: typed-client.md
+    - name: Contract
+      href: contract.md
+      items:
+      - name: Data Contracts
+        href: data-contracts.md
+        items:
+        - name: Basic Data Contract
+          href: basic-data-contract.md
+        - name: DataContractSerializer Sample
+          href: datacontractserializer-sample.md
+        - name: Known Types
+          href: known-types.md
+        - name: Object References
+          href: object-references.md
+        - name: POCO Support
+          href: poco-support.md
+        - name: Usage of Serialization Binder
+          href: usage-of-serialization-binder.md
+      - name: Message Contracts
+        href: message-contracts.md
+        items:
+        - name: Default Message Contract
+          href: default-message-contract.md
+        - name: Untyped Request/Reply
+          href: untyped-request-reply.md
+        - name: Unwrapped Messages
+          href: unwrapped-messages.md
+        - name: Setting the Use and Style Properties
+          href: setting-the-use-and-style-properties.md
+        - name: XmlReader Sample
+          href: xmlreader-sample.md
+      - name: Service Contracts
+        href: service-contracts.md
+        items:
+        - name: Duplex
+          href: duplex.md
+        - name: Fault Contract
+          href: fault-contract.md
+        - name: One-Way
+          href: one-way.md
+        - name: Session
+          href: session.md
+        - name: Stream
+          href: stream.md
+        - name: XmlSerializer Faults
+          href: xmlserializer-faults.md
+      - name: DataContractResolver
+        href: datacontractresolver.md
+      - name: KnownAssemblyAttribute
+        href: knownassemblyattribute.md
+      - name: Using DataContractSerializer and DataContractResolver to Provide the Functionality of NetDataContractSerializer
+        href: datacontractserializer-datacontractresolver-netdatacontractserializer.md
+    - name: Discovery
+      href: discovery-samples.md
+      items:
+      - name: Announcements
+        href: announcements-sample.md
+      - name: Basic
+        href: basic-sample.md
+      - name: Configuration
+        href: configuration-sample.md
+      - name: Discovery with Scopes
+        href: discovery-with-scopes-sample.md
+      - name: Custom Find Criteria
+        href: custom-find-criteria.md
+      - name: Workflow Discovery Sample
+        href: workflow-discovery-sample.md
+      - name: Discovery Router Service
+        href: discovery-router-service.md
+    - name: Management
+      href: management.md
+      items:
+      - name: WCF Services and Event Tracing for Windows
+        href: wcf-services-and-event-tracing-for-windows.md
+      - name: WCF Analytic Tracing
+        href: wcf-analytic-tracing.md
+      - name: Circular Tracing
+        href: circular-tracing.md
+      - name: ETW Tracing
+        href: etw-tracing.md
+      - name: Extending Tracing
+        href: extending-tracing.md
+      - name: PII Security Lockdown
+        href: pii-security-lockdown.md
+      - name: Using Performance Counters
+        href: using-performance-counters.md
+      - name: Tracing and Message Logging
+        href: tracing-and-message-logging.md
+      - name: Security Validation
+        href: security-validation.md
+      - name: WMI Provider
+        href: wmi-provider.md
+    - name: Routing Services
+      href: routing-services.md
+      items:
+      - name: Hello World with the Routing Service
+        href: hello-world-with-the-routing-service.md
+    - name: Security
+      href: security-in-wcf.md
+      items:
+      - name: Cryptographic Agility in WCF Security
+        href: cryptographic-agility-in-wcf-security.md
+    - name: Services
+      href: services.md
+      items:
+      - name: Hosting
+        href: hosting.md
+        items:
+        - name: Windows Process Activation
+          href: windows-process-activation.md
+          items:
+          - name: NamedPipe Activation
+            href: namedpipe-activation.md
+          - name: TCP Activation
+            href: tcp-activation.md
+          - name: MSMQ Activation
+            href: msmq-activation.md
+        - name: SystemWebRouting Integration Sample
+          href: systemwebrouting-integration-sample.md
+        - name: ASP.NET Compatibility
+          href: aspnet-compatibility.md
+        - name: IIS Hosting Using Inline Code
+          href: iis-hosting-using-inline-code.md
+        - name: Windows Service Host
+          href: windows-service-host.md
+        - name: Self-Host
+          href: self-host.md
+      - name: Service Interoperability
+        href: service-interoperability.md
+        items:
+        - name: Using the WCF Moniker with COM Clients
+          href: using-the-wcf-moniker-with-com-clients.md
+        - name: ASMX Client with a WCF Service
+          href: asmx-client-with-a-wcf-service.md
+      - name: Behaviors
+        href: behaviors.md
+        items:
+        - name: Concurrency
+          href: concurrency.md
+        - name: Default Service Behavior
+          href: default-service-behavior.md
+        - name: Instancing
+          href: instancing.md
+        - name: Metadata Publishing Behavior
+          href: metadata-publishing-behavior.md
+        - name: Service Transaction Behavior
+          href: service-transaction-behavior.md
+        - name: Service Debug Behavior
+          href: service-debug-behavior.md
+        - name: Throttling
+          href: throttling.md
+        - name: Behavior Security
+          href: behavior-security.md
+          items:
+          - name: Service Auditing Behavior
+            href: service-auditing-behavior.md
+          - name: Membership and Role Provider
+            href: membership-and-role-provider.md
+          - name: Authorizing Access to Service Operations
+            href: authorizing-access-to-service-operations.md
+          - name: Impersonating the Client
+            href: impersonating-the-client.md
+      - name: Simplified Configuration for WCF Services
+        href: simplified-configuration-for-wcf-services.md
+      - name: Usage of Standard Endpoints
+        href: usage-of-standard-endpoints.md
+      - name: Extended Protection Policy
+        href: extended-protection-policy.md
+      - name: Configuration Channel Factory
+        href: configuration-channel-factory.md
+      - name: Addressing
+        href: addressing.md
+      - name: Imperative
+        href: imperative.md
+      - name: Multiple Contracts
+        href: multiple-contracts.md
+      - name: Multiple Endpoints
+        href: multiple-endpoints.md
+      - name: Multiple Endpoints at a Single ListenUri
+        href: multiple-endpoints-at-a-single-listenuri.md
+      - name: OperationContextScope
+        href: operationcontextscope.md
+      - name: Service Description
+        href: service-description.md
+      - name: ConcurrencyMode.Reentrant
+        href: concurrencymode-reentrant.md
+      - name: Service Security
+        href: service-security.md
+        items:
+        - name: Service Identity Sample
+          href: service-identity-sample.md
+    - name: Syndication
+      href: syndication.md
+      items:
+      - name: Stand-Alone Diagnostics Feed
+        href: stand-alone-diagnostics-feed-sample.md
+      - name: Loosely-Typed Extensions
+        href: loosely-typed-extensions-sample.md
+    - name: Web
+      href: web.md
+      items:
+      - name: Basic HTTP Service
+        href: basic-http-service.md
+      - name: SOAP and HTTP Endpoints
+        href: soap-and-http-endpoints.md
+      - name: ASP.NET Caching Integration
+        href: aspnet-caching-integration.md
+      - name: UriTemplate
+        href: uritemplate-sample.md
+      - name: UriTemplate Table
+        href: uritemplate-table-sample.md
+      - name: UriTemplate Table Dispatcher
+        href: uritemplate-table-dispatcher-sample.md
+  - name: Extensibility
+    href: extensibility.md
+    items:
+    - name: Binding Extensibility
+      href: binding-extensibility.md
+      items:
+      - name: WSStreamedHttpBinding
+        href: wsstreamedhttpbinding.md
+    - name: Channels Extensibility
+      href: channels-extensibility.md
+      items:
+      - name: Local Channel
+        href: local-channel.md
+      - name: Reliable Secure Profile
+        href: reliable-secure-profile.md
+      - name: Custom Channel Dispatcher
+        href: custom-channel-dispatcher.md
+      - name: Chunking Channel
+        href: chunking-channel.md
+      - name: HttpCookieSession
+        href: httpcookiesession.md
+      - name: Custom Message Interceptor
+        href: custom-message-interceptor.md
+    - name: Instancing Extensibility
+      href: instancing-extensibility.md
+      items:
+      - name: Durable Instance Context
+        href: durable-instance-context.md
+      - name: Custom Lifetime
+        href: custom-lifetime.md
+      - name: Instancing Initialization
+        href: instancing-initialization.md
+      - name: Pooling
+        href: pooling.md
+    - name: Interop Extensibility
+      href: interop-extensibility.md
+      items:
+      - name: Dispatch by Body Element
+        href: dispatch-by-body-element.md
+      - name: Route by Body
+        href: route-by-body.md
+    - name: Message Encoder Extensibility
+      href: message-encoder-extensibility.md
+      items:
+      - name: "Custom Message Encoder: Custom Text Encoder"
+        href: custom-message-encoder-custom-text-encoder.md
+      - name: "Custom Message Encoder: Compression Encoder"
+        href: custom-message-encoder-compression-encoder.md
+    - name: Metadata Extensibility
+      href: metadata-extensibility.md
+      items:
+      - name: Custom Secure Metadata Endpoint
+        href: custom-secure-metadata-endpoint.md
+      - name: Custom WSDL Publication
+        href: custom-wsdl-publication.md
+    - name: Security Extensibility
+      href: security-extensibility.md
+      items:
+      - name: Durable Issued Token Provider
+        href: durable-issued-token-provider.md
+      - name: SAML Token Provider
+        href: saml-token-provider.md
+      - name: Supporting Tokens
+        href: supporting-tokens.md
+      - name: Token Authenticator
+        href: token-authenticator.md
+      - name: Token Provider
+        href: token-provider.md
+      - name: User Name Password Validator
+        href: user-name-password-validator.md
+      - name: X.509 Certificate Validator
+        href: x-509-certificate-validator.md
+      - name: Authorization Policy
+        href: authorization-policy.md
+      - name: Custom Token
+        href: custom-token.md
+      - name: Client Validation
+        href: client-validation.md
+    - name: Syndication Extensibility Samples
+      href: syndication-extensibility-samples.md
+      items:
+      - name: Strongly-Typed Extensions
+        href: strongly-typed-extensions-sample.md
+      - name: Feed Formatter (JSON)
+        href: feed-formatter-json.md
+      - name: Streaming Feeds
+        href: streaming-feeds-sample.md
+    - name: Transport Extensibility
+      href: transport-extensibility.md
+      items:
+      - name: UDP Activation
+        href: udp-activation.md
+      - name: "Transport: Custom Transactions over UDP"
+        href: transport-custom-transactions-over-udp-sample.md
+      - name: "Transport: UDP"
+        href: transport-udp.md
+      - name: "Transport: WSE 3.0 TCP Interoperability"
+        href: transport-wse-3-0-tcp-interoperability.md
+    - name: Operation Formatter and Operation Selector
+      href: operation-formatter-and-operation-selector.md
+    - name: Custom Message Filter
+      href: custom-message-filter.md
+    - name: Custom Service Host
+      href: custom-service-host.md
+    - name: DataContract Surrogate
+      href: datacontract-surrogate.md
+    - name: Extending Control Over Error Handling and Reporting
+      href: extending-control-over-error-handling-and-reporting.md
+    - name: Message Inspectors
+      href: message-inspectors.md
+    - name: WebContentTypeMapper
+      href: webcontenttypemapper-sample.md
+  - name: Scenario
+    href: scenario.md
+    items:
+    - name: Data Binding Scenarios
+      href: data-binding-scenarios.md
+      items:
+      - name: Data Binding in a Windows Forms Client
+        href: data-binding-in-a-windows-forms-client.md
+      - name: Data Binding in an ASP.NET Client
+        href: data-binding-in-an-aspnet-client.md
+      - name: Data Binding in a Windows Presentation Foundation Client
+        href: data-binding-in-a-wpf-client.md
+    - name: Discovery Security Sample
+      href: discovery-security-sample.md
+    - name: Federation Sample
+      href: federation-sample.md
+    - name: Weakly-typed JSON Serialization (AJAX)
+      href: weakly-typed-json-serialization-sample.md
+    - name: Trusted Facade Service
+      href: trusted-facade-service.md
+    - name: "Design Patterns: List-Based Publish-Subscribe"
+      href: design-patterns-list-based-publish-subscribe.md
+  - name: Tool Samples
+    href: tool-samples.md
+    items:
+    - name: ConfigurationCodeGenerator
+      href: configurationcodegenerator.md
+    - name: CustomChannelsTester
+      href: customchannelstester.md
+    - name: FindPrivateKey
+      href: findprivatekey.md

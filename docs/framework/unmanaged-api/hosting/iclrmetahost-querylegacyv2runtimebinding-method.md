@@ -23,13 +23,13 @@ Returns an interface that represents a runtime to which legacy activation policy
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QueryLegacyV2RuntimeBinding (  
     [in] REFIID riid,  
     [out, iid_is(riid), retval] LPVOID *ppUnk);  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] Required.Currently the only valid value for this parameter is `IID_ICLRRuntimeInfo`.  
   
@@ -57,5 +57,6 @@ HRESULT QueryLegacyV2RuntimeBinding (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

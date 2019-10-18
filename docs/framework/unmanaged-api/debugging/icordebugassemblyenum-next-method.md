@@ -23,7 +23,7 @@ Gets the specified number of assemblies from the collection, starting at the cur
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  
@@ -32,7 +32,7 @@ HRESULT Next (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of assemblies to be retrieved.  
   

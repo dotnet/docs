@@ -9,14 +9,14 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # MissingInteropDataException Class (.NET Native)
-**.NET for Windows apps for Windows 10, [!INCLUDE[net_native](../../../includes/net-native-md.md)] only**  
+**.NET for Windows apps for Windows 10, .NET Native only**  
   
  The exception that is thrown when a manual marshaling method is called, but metadata for a type isn't found by static analysis or in a runtime directives file.  
   
  **Namespace:** System.Runtime.CompilerServices  
   
 > [!IMPORTANT]
->  The `MissingInteropDataException` class is intended solely for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.  
+> The `MissingInteropDataException` class is intended solely for internal use by the .NET Native tool chain. It is not intended for use in third-party code, nor should you handle the exception in your application code. Instead, you eliminate the exception by adding entries to your [runtime directives file](runtime-directives-rd-xml-configuration-file-reference.md). For more information, see the Remarks section.  
   
 ## Syntax  
  [!code-csharp[ProjectN#21](../../../samples/snippets/csharp/VS_Snippets_CLR/projectn/cs/missinginteropdataexception_syntax1.cs#21)]
@@ -28,7 +28,7 @@ ms.author: "ronpet"
   
 |Constructor|Description|  
 |-----------------|-----------------|  
-|`public MissingInteropDataException(String resourceId, Type pertinentType)`|Initializes a new instance of the `MissingInteropDataException` class by using the ID of a system-supplied message that describes the error and the type whose data is missing. This constructor is for internal use by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain only.|  
+|`public MissingInteropDataException(String resourceId, Type pertinentType)`|Initializes a new instance of the `MissingInteropDataException` class by using the ID of a system-supplied message that describes the error and the type whose data is missing. This constructor is for internal use by the .NET Native tool chain only.|  
   
 ## Properties  
   
@@ -66,14 +66,15 @@ ms.author: "ronpet"
 ## Usage Details  
  The `MissingInteropDataException` exception is thrown when a method call to a COM or Windows Runtime component cannot be made successfully because type information isn't available.  
   
- The metadata that is available to an app at run time is defined by the runtime directives (XML configuration) file, *.rd.xml. To prevent your app from throwing this exception, you must modify this file to define the metadata that must be present at run time. Most commonly, you address this error by adding a `MarshalObject`, `MarshalDelegate`, or `MarshalStructure` attribute to an appropriate program element in the runtime directives file. For information about the format of this file, see [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md).  
+ The metadata that is available to an app at run time is defined by the runtime directives (XML configuration) file, \*.rd.xml. To prevent your app from throwing this exception, you must modify this file to define the metadata that must be present at run time. Most commonly, you address this error by adding a `MarshalObject`, `MarshalDelegate`, or `MarshalStructure` attribute to an appropriate program element in the runtime directives file. For information about the format of this file, see [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md).  
   
 > [!IMPORTANT]
->  Because this exception indicates that metadata needed by your application isn’t available at run time, you shouldn’t handle this exception in a `try`/`catch` block. Instead, you should diagnose the cause of the exception and eliminate it by adding the appropriate entry to a runtime directives file.  
+> Because this exception indicates that metadata needed by your application isn’t available at run time, you shouldn’t handle this exception in a `try`/`catch` block. Instead, you should diagnose the cause of the exception and eliminate it by adding the appropriate entry to a runtime directives file.  
   
  The `MissingInteropDataException` class contains a single unique member, the `MissingType` property, that indicates the type whose metadata is needed for a successful method call. All remaining members are inherited from the base class, <xref:System.Exception?displayProperty=nameWithType>.  
   
 ## See also
+
 - <xref:System.Exception?displayProperty=nameWithType>
-- [MissingMetadataException Class](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md)
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
+- [MissingMetadataException Class](missingmetadataexception-class-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)

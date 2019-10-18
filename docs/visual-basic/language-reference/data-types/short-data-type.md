@@ -56,11 +56,11 @@ Dim number = &H_3264S
 
 ## Programming tips
 
--   **Widening.** The `Short` data type widens to `Integer`, `Long`, `Decimal`, `Single`, or `Double`. This means you can convert `Short` to any one of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.  
+- **Widening.** The `Short` data type widens to `Integer`, `Long`, `Decimal`, `Single`, or `Double`. This means you can convert `Short` to any one of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.  
   
--   **Type Characters.** Appending the literal type character `S` to a literal forces it to the `Short` data type. `Short` has no identifier type character.  
+- **Type Characters.** Appending the literal type character `S` to a literal forces it to the `Short` data type. `Short` has no identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Int16?displayProperty=nameWithType> structure.  
+- **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Int16?displayProperty=nameWithType> structure.  
   
 ## See also
 

@@ -23,12 +23,12 @@ Notifies the profiler that a thread has been destroyed.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadDestroyed(  
     [in] ThreadID threadId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread that has been destroyed.  
   
@@ -45,5 +45,6 @@ HRESULT ThreadDestroyed(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [ThreadCreated Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-threadcreated-method.md)

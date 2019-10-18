@@ -1,4 +1,4 @@
-﻿---
+---
 title: "<system.identityModel>"
 ms.date: "03/30/2017"
 ms.assetid: 210ce7e9-d07b-400c-800f-5f525dcf95e8
@@ -7,7 +7,8 @@ author: "BrucePerlerMS"
 # \<system.identityModel>
 Provides configuration for enabling Windows Identity Foundation (WIF) options in applications.  
   
- \<system.identityModel>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.identityModel>**  
   
 ## Syntax  
   
@@ -26,7 +27,7 @@ Provides configuration for enabling Windows Identity Foundation (WIF) options in
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)|Specifies service-level identity settings.|  
+|[\<identityConfiguration>](identityconfiguration.md)|Specifies service-level identity settings.|  
   
 ### Parent Elements  
   
@@ -70,4 +71,5 @@ Provides configuration for enabling Windows Identity Foundation (WIF) options in
 ```  
   
 ## See also
+
 - <xref:System.IdentityModel.Configuration.SystemIdentityModelSection>

@@ -15,11 +15,12 @@ Line statements are no longer supported. File I/O functionality is available as 
   
 ## To correct this error  
   
-1.  If performing file access, use `Microsoft.VisualBasic.FileSystem.LineInput`.  
+1. If performing file access, use `Microsoft.VisualBasic.FileSystem.LineInput`.  
   
-2.  If performing graphics, use `System.Drawing.Graphics.Drawline`.  
+2. If performing graphics, use `System.Drawing.Graphics.Drawline`.  
   
 ## See also
+
 - <xref:System.IO>
 - <xref:System.Drawing>
 - [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)

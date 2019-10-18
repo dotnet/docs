@@ -8,9 +8,9 @@ Serialization is the process of converting an object into a stream of bytes to s
 
 ## How serialization works
 
-This illustration shows the overall process of serialization.
+This illustration shows the overall process of serialization:
 
-![Serialization Graphic](./media/serialization.gif "serialization")
+![Serialization graphic](./media/index/serialization-process.gif)
 
 The object is serialized to a stream, which carries not just the data, but information about the object's type, such as its version, culture, and assembly name. From that stream, it can be stored in a database, a file, or memory.
 
@@ -62,7 +62,7 @@ If you want your object to be deserialized in a custom manner as well, you must 
 
 Designer serialization is a special form of serialization that involves the kind of object persistence associated with development tools. Designer serialization is the process of converting an object graph into a source file that can later be used to recover the object graph. A source file can contain code, markup, or even SQL table information.
 
-##  <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
+## <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
 [Walkthrough: Persisting an Object in Visual Studio (C#)](walkthrough-persisting-an-object-in-visual-studio.md)  
 Demonstrates how serialization can be used to persist an object's data between instances, allowing you to store values and retrieve them the next time the object is instantiated.
 

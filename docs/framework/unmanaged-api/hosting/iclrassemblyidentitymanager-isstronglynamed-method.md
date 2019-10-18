@@ -23,14 +23,14 @@ Gets a value that indicates whether the specified assembly is strongly named.
   
 ## Syntax  
   
-```  
+```cpp  
 RESULT IsStronglyNamed (  
     [in]  LPCWSTR  pwzAssemblyIdentity,  
     [out] BOOL    *pbIsStronglyNamed  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyIdentity`  
  [in] The opaque canonical assembly identity data of the assembly to be evaluated.  
   
@@ -58,4 +58,5 @@ RESULT IsStronglyNamed (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)

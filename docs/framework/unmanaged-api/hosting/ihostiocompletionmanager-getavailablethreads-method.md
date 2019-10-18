@@ -23,13 +23,13 @@ Gets the number of I/O completion threads, of the total number of threads manage
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAvailableThreads (  
     [out] DWORD *pdwAvailableIoCompletionThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwAvailableIoCompletionThreads`  
  [out] A pointer to the number of I/O completion threads managed by the host that are currently available to service requests.  
   
@@ -58,5 +58,6 @@ HRESULT GetAvailableThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

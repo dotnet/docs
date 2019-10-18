@@ -18,15 +18,15 @@ ms.author: "mairaw"
 # Best Practices for Assembly Loading
 This article discusses ways to avoid problems of type identity that can lead to <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, and other errors. The article discusses the following recommendations:  
   
--   [Understand the advantages and disadvantages of load contexts](#load_contexts)  
+- [Understand the advantages and disadvantages of load contexts](#load_contexts)  
   
--   [Avoid binding on partial assembly names](#avoid_partial_names)  
+- [Avoid binding on partial assembly names](#avoid_partial_names)  
   
--   [Avoid loading an assembly into multiple contexts](#avoid_loading_into_multiple_contexts)  
+- [Avoid loading an assembly into multiple contexts](#avoid_loading_into_multiple_contexts)  
   
--   [Avoid loading multiple versions of an assembly into the same context](#avoid_loading_multiple_versions)  
+- [Avoid loading multiple versions of an assembly into the same context](#avoid_loading_multiple_versions)  
   
--   [Consider switching to the default load context](#switch_to_default)  
+- [Consider switching to the default load context](#switch_to_default)  
   
  The first recommendation, [understand the advantages and disadvantages of load contexts](#load_contexts), provides background information for the other recommendations, because they all depend on a knowledge of load contexts.  
   
@@ -34,13 +34,13 @@ This article discusses ways to avoid problems of type identity that can lead to 
 ## Understand the Advantages and Disadvantages of Load Contexts  
  Within an application domain, assemblies can be loaded into one of three contexts, or they can be loaded without context:  
   
--   The default load context contains assemblies found by probing the global assembly cache, the host assembly store if the runtime is hosted (for example, in SQL Server), and the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> of the application domain. Most overloads of the <xref:System.Reflection.Assembly.Load%2A> method load assemblies into this context.  
+- The default load context contains assemblies found by probing the global assembly cache, the host assembly store if the runtime is hosted (for example, in SQL Server), and the <xref:System.AppDomainSetup.ApplicationBase%2A> and <xref:System.AppDomainSetup.PrivateBinPath%2A> of the application domain. Most overloads of the <xref:System.Reflection.Assembly.Load%2A> method load assemblies into this context.  
   
--   The load-from context contains assemblies that are loaded from locations that are not searched by the loader. For example, add-ins might be installed in a directory that is not under the application path. <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>, <xref:System.AppDomain.CreateInstanceFrom%2A?displayProperty=nameWithType>, and <xref:System.AppDomain.ExecuteAssembly%2A?displayProperty=nameWithType> are examples of methods that load by path.  
+- The load-from context contains assemblies that are loaded from locations that are not searched by the loader. For example, add-ins might be installed in a directory that is not under the application path. <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>, <xref:System.AppDomain.CreateInstanceFrom%2A?displayProperty=nameWithType>, and <xref:System.AppDomain.ExecuteAssembly%2A?displayProperty=nameWithType> are examples of methods that load by path.  
   
--   The reflection-only context contains assemblies loaded with the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods. Code in this context cannot be executed, so it is not discussed here. For more information, see [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
+- The reflection-only context contains assemblies loaded with the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A> and <xref:System.Reflection.Assembly.ReflectionOnlyLoadFrom%2A> methods. Code in this context cannot be executed, so it is not discussed here. For more information, see [How to: Load Assemblies into the Reflection-Only Context](../reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
   
--   If you generated a transient dynamic assembly by using reflection emit, the assembly is not in any context. In addition, most assemblies that are loaded by using the <xref:System.Reflection.Assembly.LoadFile%2A> method are loaded without context, and assemblies that are loaded from byte arrays are loaded without context unless their identity (after policy is applied) establishes that they are in the global assembly cache.  
+- If you generated a transient dynamic assembly by using reflection emit, the assembly is not in any context. In addition, most assemblies that are loaded by using the <xref:System.Reflection.Assembly.LoadFile%2A> method are loaded without context, and assemblies that are loaded from byte arrays are loaded without context unless their identity (after policy is applied) establishes that they are in the global assembly cache.  
   
  The execution contexts have advantages and disadvantages, as discussed in the following sections.  
   
@@ -49,28 +49,28 @@ This article discusses ways to avoid problems of type identity that can lead to 
   
  Using the default load context has the following disadvantages:  
   
--   Dependencies that are loaded into other contexts are not available.  
+- Dependencies that are loaded into other contexts are not available.  
   
--   You cannot load assemblies from locations outside the probing path into the default load context.  
+- You cannot load assemblies from locations outside the probing path into the default load context.  
   
 ### Load-From Context  
  The load-from context lets you load an assembly from a path that is not under the application path, and therefore is not included in probing. It enables dependencies to be located and loaded from that path, because the path information is maintained by the context. In addition, assemblies in this context can use dependencies that are loaded into the default load context.  
   
  Loading assemblies by using the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method, or one of the other methods that load by path, has the following disadvantages:  
   
--   If an assembly with the same identity is already loaded, <xref:System.Reflection.Assembly.LoadFrom%2A> returns the loaded assembly even if a different path was specified.  
+- If an assembly with the same identity is already loaded, <xref:System.Reflection.Assembly.LoadFrom%2A> returns the loaded assembly even if a different path was specified.  
   
--   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and later an assembly in the default load context tries to load the same assembly by display name, the load attempt fails. This can occur when an assembly is deserialized.  
+- If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and later an assembly in the default load context tries to load the same assembly by display name, the load attempt fails. This can occur when an assembly is deserialized.  
   
--   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but in a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
+- If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but in a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
+- <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=nameWithType> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=nameWithType>, or <xref:System.Net.WebPermission>, on the specified path.  
   
--   If a native image exists for the assembly, it is not used.  
+- If a native image exists for the assembly, it is not used.  
   
--   The assembly cannot be loaded as domain-neutral.  
+- The assembly cannot be loaded as domain-neutral.  
   
--   In the .NET Framework versions 1.0 and 1.1, policy is not applied.  
+- In the .NET Framework versions 1.0 and 1.1, policy is not applied.  
   
 ### No Context  
  Loading without context is the only option for transient assemblies that are generated with reflection emit. Loading without context is the only way to load multiple assemblies that have the same identity into one application domain. The cost of probing is avoided.  
@@ -79,17 +79,17 @@ This article discusses ways to avoid problems of type identity that can lead to 
   
  Loading assemblies without context has the following disadvantages:  
   
--   Other assemblies cannot bind to assemblies that are loaded without context, unless you handle the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
+- Other assemblies cannot bind to assemblies that are loaded without context, unless you handle the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
--   Dependencies are not loaded automatically. You can preload them without context, preload them into the default load context, or load them by handling the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
+- Dependencies are not loaded automatically. You can preload them without context, preload them into the default load context, or load them by handling the <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> event.  
   
--   Loading multiple assemblies with the same identity without context can cause type identity problems similar to those caused by loading assemblies with the same identity into multiple contexts. See [Avoid Loading an Assembly into Multiple Contexts](#avoid_loading_into_multiple_contexts).  
+- Loading multiple assemblies with the same identity without context can cause type identity problems similar to those caused by loading assemblies with the same identity into multiple contexts. See [Avoid Loading an Assembly into Multiple Contexts](#avoid_loading_into_multiple_contexts).  
   
--   If a native image exists for the assembly, it is not used.  
+- If a native image exists for the assembly, it is not used.  
   
--   The assembly cannot be loaded as domain-neutral.  
+- The assembly cannot be loaded as domain-neutral.  
   
--   In the .NET Framework versions 1.0 and 1.1, policy is not applied.  
+- In the .NET Framework versions 1.0 and 1.1, policy is not applied.  
   
 <a name="avoid_partial_names"></a>   
 ## Avoid Binding on Partial Assembly Names  
@@ -97,15 +97,15 @@ This article discusses ways to avoid problems of type identity that can lead to 
   
  Partial name binding can cause many problems, including the following:  
   
--   The <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType> method might load a different assembly with the same simple name. For example, two applications might install two completely different assemblies that both have the simple name `GraphicsLibrary` into the global assembly cache.  
+- The <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=nameWithType> method might load a different assembly with the same simple name. For example, two applications might install two completely different assemblies that both have the simple name `GraphicsLibrary` into the global assembly cache.  
   
--   The assembly that is actually loaded might not be backward-compatible. For example, not specifying the version might result in the loading of a much later version than the version your program was originally written to use. Changes in the later version might cause errors in your application.  
+- The assembly that is actually loaded might not be backward-compatible. For example, not specifying the version might result in the loading of a much later version than the version your program was originally written to use. Changes in the later version might cause errors in your application.  
   
--   The assembly that is actually loaded might not be forward-compatible. For example, you might have built and tested your application with the latest version of an assembly, but partial binding might load a much earlier version that lacks features your application uses.  
+- The assembly that is actually loaded might not be forward-compatible. For example, you might have built and tested your application with the latest version of an assembly, but partial binding might load a much earlier version that lacks features your application uses.  
   
--   Installing new applications can break existing applications. An application that uses the <xref:System.Reflection.Assembly.LoadWithPartialName%2A> method can be broken by installing a newer, incompatible version of a shared assembly.  
+- Installing new applications can break existing applications. An application that uses the <xref:System.Reflection.Assembly.LoadWithPartialName%2A> method can be broken by installing a newer, incompatible version of a shared assembly.  
   
--   Unexpected dependency loading can occur. It you load two assemblies that share a dependency, loading them with partial binding might result in one assembly using a component that it was not built or tested with.  
+- Unexpected dependency loading can occur. It you load two assemblies that share a dependency, loading them with partial binding might result in one assembly using a component that it was not built or tested with.  
   
  Because of the problems it can cause, the <xref:System.Reflection.Assembly.LoadWithPartialName%2A> method has been marked obsolete. We recommend that you use the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method instead, and specify full assembly display names. See [Understand the Advantages and Disadvantages of Load Contexts](#load_contexts) and [Consider Switching to the Default Load Context](#switch_to_default).  
   
@@ -148,7 +148,7 @@ This article discusses ways to avoid problems of type identity that can lead to 
  If it is not possible to put all your assemblies in the probing path, consider alternatives such as using the .NET Framework add-in model, placing assemblies into the global assembly cache, or creating application domains.  
   
 ### Consider Using the .NET Framework Add-In Model  
- If you are using the load-from context to implement add-ins, which typically are not installed in the application base, use the .NET Framework add-in model. This model provides isolation at the application domain or process level, without requiring you to manage application domains yourself. For information about the add-in model, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).  
+ If you are using the load-from context to implement add-ins, which typically are not installed in the application base, use the .NET Framework add-in model. This model provides isolation at the application domain or process level, without requiring you to manage application domains yourself. For information about the add-in model, see [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).  
   
 ### Consider Using the Global Assembly Cache  
  Place assemblies in the global assembly cache to get the benefit of a shared assembly path that is outside the application base, without losing the advantages of the default load context or taking on the disadvantages of the other contexts.  

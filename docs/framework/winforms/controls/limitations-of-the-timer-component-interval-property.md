@@ -16,13 +16,14 @@ The Windows Forms <xref:System.Windows.Forms.Timer> component has an <xref:Syste
 ## The Interval Property  
  The <xref:System.Windows.Forms.Timer.Interval%2A> property has a few limitations to consider when you are programming a <xref:System.Windows.Forms.Timer> component:  
   
--   If your application or another application is making heavy demands on the system — such as long loops, intensive calculations, or drive, network, or port access — your application may not get timer events as often as the <xref:System.Windows.Forms.Timer.Interval%2A> property specifies.  
+- If your application or another application is making heavy demands on the system — such as long loops, intensive calculations, or drive, network, or port access — your application may not get timer events as often as the <xref:System.Windows.Forms.Timer.Interval%2A> property specifies.  
   
--   The interval is not guaranteed to elapse exactly on time. To ensure accuracy, the timer should check the system clock as needed, rather than try to keep track of accumulated time internally.  
+- The interval is not guaranteed to elapse exactly on time. To ensure accuracy, the timer should check the system clock as needed, rather than try to keep track of accumulated time internally.  
   
--   The precision of the <xref:System.Windows.Forms.Timer.Interval%2A> property is in milliseconds. Some computers provide a high-resolution counter that has a resolution higher than milliseconds. The availability of such a counter depends on the processor hardware of your computer.
+- The precision of the <xref:System.Windows.Forms.Timer.Interval%2A> property is in milliseconds. Some computers provide a high-resolution counter that has a resolution higher than milliseconds. The availability of such a counter depends on the processor hardware of your computer.
   
 ## See also
+
 - <xref:System.Windows.Forms.Timer>
-- [Timer Component](../../../../docs/framework/winforms/controls/timer-component-windows-forms.md)
-- [Timer Component Overview](../../../../docs/framework/winforms/controls/timer-component-overview-windows-forms.md)
+- [Timer Component](timer-component-windows-forms.md)
+- [Timer Component Overview](timer-component-overview-windows-forms.md)

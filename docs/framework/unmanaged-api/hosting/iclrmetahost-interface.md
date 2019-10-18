@@ -35,7 +35,7 @@ Provides methods that return a specific version of the common language runtime (
 ## Remarks  
  The only way to get an instance of this interface is by calling the [CLRCreateInstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md) function as follows:  
   
-```  
+```cpp  
 ICLRMetaHost *pMetaHost = NULL;  
 HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHost,  
                    IID_ICLRMetaHost, (LPVOID*)&pMetaHost);  
@@ -51,5 +51,6 @@ HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHost,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

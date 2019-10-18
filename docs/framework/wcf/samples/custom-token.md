@@ -4,22 +4,24 @@ ms.date: "03/30/2017"
 ms.assetid: e7fd8b38-c370-454f-ba3e-19759019f03d
 ---
 # Custom Token
+
 This sample demonstrates how to add a custom token implementation into a Windows Communication Foundation (WCF) application. The example uses a `CreditCardToken` to securely pass information about client credit cards to the service. The token is passed in the WS-Security message header and is signed and encrypted using the symmetric security binding element along with message body and other message headers. This is useful in cases where the built-in tokens are not sufficient. This sample demonstrates how to provide a custom security token to a service instead of using one of the built-in tokens. The service implements a contract that defines a request-reply communication pattern.
 
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.
+> The setup procedure and build instructions for this sample are located at the end of this topic.
 
  To summarize, this sample demonstrates the following:
 
--   How a client can pass a custom security token to a service.
+- How a client can pass a custom security token to a service.
 
--   How the service can consume and validate a custom security token.
+- How the service can consume and validate a custom security token.
 
--   How the WCF service code can obtain the information about received security tokens including the custom security token.
+- How the WCF service code can obtain the information about received security tokens including the custom security token.
 
--   How the server's X.509 certificate is used to protect the symmetric key used for message encryption and signature.
+- How the server's X.509 certificate is used to protect the symmetric key used for message encryption and signature.
 
 ## Client Authentication Using a Custom Security Token
+
  The service exposes a single endpoint that is programmatically created using `BindingHelper` and `EchoServiceHost` classes. The endpoint consists of an address, a binding, and a contract. The binding is configured with a custom binding using `SymmetricSecurityBindingElement` and `HttpTransportBindingElement`. This sample sets the `SymmetricSecurityBindingElement` to use a service's X.509 certificate to protect the symmetric key during transmission and to pass a custom `CreditCardToken` in a WS-Security message header as a signed and encrypted security token. The behavior specifies the service credentials that are to be used for client authentication and also information about the service X.509 certificate.
 
 ```csharp
@@ -27,11 +29,11 @@ public static class BindingHelper
 {
     public static Binding CreateCreditCardBinding()
     {
-        HttpTransportBindingElement httpTransport = new HttpTransportBindingElement();
+        var httpTransport = new HttpTransportBindingElement();
 
         // The message security binding element will be configured to require a credit card.
         // The token that is encrypted with the service's certificate.
-        SymmetricSecurityBindingElement messageSecurity = new SymmetricSecurityBindingElement();
+        var messageSecurity = new SymmetricSecurityBindingElement();
         messageSecurity.EndpointSupportingTokenParameters.SignedEncrypted.Add(new CreditCardTokenParameters());
         X509SecurityTokenParameters x509ProtectionParameters = new X509SecurityTokenParameters();
         x509ProtectionParameters.InclusionMode = SecurityTokenInclusionMode.Never;
@@ -81,32 +83,33 @@ class EchoServiceHost : ServiceHost
 
 ```csharp
 Binding creditCardBinding = BindingHelper.CreateCreditCardBinding();
-EndpointAddress serviceAddress = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");
+var serviceAddress = new EndpointAddress("http://localhost/servicemodelsamples/service.svc");
 
-// Create a client with given client endpoint configuration
+// Create a client with given client endpoint configuration.
 channelFactory = new ChannelFactory<IEchoService>(creditCardBinding, serviceAddress);
 
-// configure the credit card credentials on the channel factory
-CreditCardClientCredentials credentials =
+// Configure the credit card credentials on the channel factory.
+var credentials =
       new CreditCardClientCredentials(
       new CreditCardInfo(creditCardNumber, issuer, expirationTime));
-// configure the service certificate on the credentials
+// Configure the service certificate on the credentials.
 credentials.ServiceCertificate.SetDefaultCertificate(
       "CN=localhost", StoreLocation.LocalMachine, StoreName.My);
 
-// replace ClientCredentials with CreditCardClientCredentials
+// Replace ClientCredentials with CreditCardClientCredentials.
 channelFactory.Endpoint.Behaviors.Remove(typeof(ClientCredentials));
 channelFactory.Endpoint.Behaviors.Add(credentials);
 
 client = channelFactory.CreateChannel();
 
-Console.WriteLine("Echo service returned: {0}", client.Echo());
+Console.WriteLine($"Echo service returned: {client.Echo()}");
 
 ((IChannel)client).Close();
 channelFactory.Close();
 ```
 
 ## Custom Security Token Implementation
+
  To enable a custom security token in WCF, create an object representation of the custom security token. The sample has this representation in the `CreditCardToken` class. The object representation is responsible for holding all relevant security token information and to provide a list of security keys contained in the security token. In this case, the credit card security token does not contain any security key.
 
  The next section describes what must be done to enable a custom token to be transmitted over the wire and consumed by a WCF endpoint.
@@ -124,10 +127,10 @@ class CreditCardToken : SecurityToken
     public CreditCardToken(CreditCardInfo cardInfo, string id)
     {
         if (cardInfo == null)
-            throw new ArgumentNullException("cardInfo");
+            throw new ArgumentNullException(nameof(cardInfo));
 
         if (id == null)
-            throw new ArgumentNullException("id");
+            throw new ArgumentNullException(nameof(id));
 
         this.cardInfo = cardInfo;
         this.id = id;
@@ -147,6 +150,7 @@ class CreditCardToken : SecurityToken
 ```
 
 ## Getting the Custom Credit Card Token to and from the Message
+
  Security token serializers in WCF are responsible for creating an object representation of security tokens from the XML in the message and creating a XML form of the security tokens. They are also responsible for other functionality such as reading and writing key identifiers pointing to security tokens, but this example uses only security token-related functionality. To enable a custom token you must implement your own security token serializer. This sample uses the `CreditCardSecurityTokenSerializer` class for this purpose.
 
  On the service, the custom serializer reads the XML form of the custom token and creates the custom token object representation from it.
@@ -162,7 +166,8 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
     {
         XmlDictionaryReader localReader = XmlDictionaryReader.CreateDictionaryReader(reader);
 
-        if (reader == null) throw new ArgumentNullException("reader");
+        if (reader == null)
+            throw new ArgumentNullException(nameof(reader));
 
         if (reader.IsStartElement(Constants.CreditCardTokenName, Constants.CreditCardTokenNamespace))
             return true;
@@ -172,7 +177,8 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
 
     protected override SecurityToken ReadTokenCore(XmlReader reader, SecurityTokenResolver tokenResolver)
     {
-        if (reader == null) throw new ArgumentNullException("reader");
+        if (reader == null)
+            throw new ArgumentNullException(nameof(reader));
 
         if (reader.IsStartElement(Constants.CreditCardTokenName, Constants.CreditCardTokenNamespace))
         {
@@ -191,7 +197,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
             string creditCardIssuer = reader.ReadElementString(Constants.CreditCardIssuerElementName, Constants.CreditCardTokenNamespace);
             reader.ReadEndElement();
 
-            CreditCardInfo cardInfo = new CreditCardInfo(creditCardNumber, creditCardIssuer, expirationTime);
+            var cardInfo = new CreditCardInfo(creditCardNumber, creditCardIssuer, expirationTime);
 
             return new CreditCardToken(cardInfo, id);
         }
@@ -205,15 +211,15 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
     {
         if (token is CreditCardToken)
             return true;
-
-        else
-            return base.CanWriteTokenCore(token);
+        return base.CanWriteTokenCore(token);
     }
 
     protected override void WriteTokenCore(XmlWriter writer, SecurityToken token)
     {
-        if (writer == null) { throw new ArgumentNullException("writer"); }
-        if (token == null) { throw new ArgumentNullException("token"); }
+        if (writer == null)
+            throw new ArgumentNullException(nameof(writer));
+        if (token == null)
+            throw new ArgumentNullException(nameof(token));
 
         CreditCardToken c = token as CreditCardToken;
         if (c != null)
@@ -235,6 +241,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
 ```
 
 ## How Token Provider and Token Authenticator Classes are Created
+
  Client and service credentials are responsible for providing the security token manager instance. The security token manager instance is used to get token providers, token authenticators and token serializers.
 
  The token provider creates an object representation of the token based on the information contained in the client or service credentials. The token object representation is then written to the message using the token serializer (discussed in the previous section).
@@ -245,7 +252,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
 
  In this sample, we use a token provider only on the client and a token authenticator only on the service, because we want to transmit a credit card token only in the client-to-service direction.
 
- The functionality on the client is located in the `CreditCardClientCrendentials`, `CreditCardClientCredentialsSecurityTokenManager` and `CreditCardTokenProvider` classes.
+ The functionality on the client is located in the `CreditCardClientCredentials`, `CreditCardClientCredentialsSecurityTokenManager` and `CreditCardTokenProvider` classes.
 
  On the service, the functionality resides in the `CreditCardServiceCredentials`, `CreditCardServiceCredentialsSecurityTokenManager`, `CreditCardTokenAuthenticator` and `CreditCardTokenAuthorizationPolicy` classes.
 
@@ -258,7 +265,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
             : base()
         {
             if (creditCardInfo == null)
-                throw new ArgumentNullException("creditCardInfo");
+                throw new ArgumentNullException(nameof(creditCardInfo));
 
             this.creditCardInfo = creditCardInfo;
         }
@@ -291,10 +298,10 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
 
         public override SecurityTokenProvider CreateSecurityTokenProvider(SecurityTokenRequirement tokenRequirement)
         {
-            // handle this token for Custom
+            // Handle this token for Custom.
             if (tokenRequirement.TokenType == Constants.CreditCardTokenType)
                 return new CreditCardTokenProvider(this.creditCardClientCredentials.CreditCardInfo);
-            // return server cert
+            // Return server cert.
             else if (tokenRequirement is InitiatorServiceModelSecurityTokenRequirement)
             {
                 if (tokenRequirement.TokenType == SecurityTokenTypes.X509Certificate)
@@ -321,9 +328,8 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
         public CreditCardTokenProvider(CreditCardInfo creditCardInfo) : base()
         {
             if (creditCardInfo == null)
-            {
-                throw new ArgumentNullException("creditCardInfo");
-            }
+                throw new ArgumentNullException(nameof(creditCardInfo));
+
             this.creditCardInfo = creditCardInfo;
         }
 
@@ -342,7 +348,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
             : base()
         {
             if (creditCardFile == null)
-                throw new ArgumentNullException("creditCardFile");
+                throw new ArgumentNullException(nameof(creditCardFile));
 
             this.creditCardFile = creditCardFile;
         }
@@ -408,16 +414,16 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
             CreditCardToken creditCardToken = token as CreditCardToken;
 
             if (creditCardToken.CardInfo.ExpirationDate < DateTime.UtcNow)
-                throw new SecurityTokenValidationException("The credit card has expired");
+                throw new SecurityTokenValidationException("The credit card has expired.");
             if (!IsCardNumberAndExpirationValid(creditCardToken.CardInfo))
-                throw new SecurityTokenValidationException("Unknown or invalid credit card");
+                throw new SecurityTokenValidationException("Unknown or invalid credit card.");
 
             // the credit card token has only 1 claim - the card number. The issuer for the claim is the
             // credit card issuer
 
-            DefaultClaimSet cardIssuerClaimSet = new DefaultClaimSet(new Claim(ClaimTypes.Name, creditCardToken.CardInfo.CardIssuer, Rights.PossessProperty));
-            DefaultClaimSet cardClaimSet = new DefaultClaimSet(cardIssuerClaimSet, new Claim(Constants.CreditCardNumberClaim, creditCardToken.CardInfo.CardNumber, Rights.PossessProperty));
-            List<IAuthorizationPolicy> policies = new List<IAuthorizationPolicy>(1);
+            var cardIssuerClaimSet = new DefaultClaimSet(new Claim(ClaimTypes.Name, creditCardToken.CardInfo.CardIssuer, Rights.PossessProperty));
+            var cardClaimSet = new DefaultClaimSet(cardIssuerClaimSet, new Claim(Constants.CreditCardNumberClaim, creditCardToken.CardInfo.CardNumber, Rights.PossessProperty));
+            var policies = new List<IAuthorizationPolicy>(1);
             policies.Add(new CreditCardTokenAuthorizationPolicy(cardClaimSet));
             return policies.AsReadOnly();
         }
@@ -429,7 +435,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
         {
             try
             {
-                using (StreamReader myStreamReader = new StreamReader(this.creditCardsFile))
+                using (var myStreamReader = new StreamReader(this.creditCardsFile))
                 {
                     string line = "";
                     while ((line = myStreamReader.ReadLine()) != null)
@@ -469,7 +475,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
         public CreditCardTokenAuthorizationPolicy(ClaimSet issuedClaims)
         {
             if (issuedClaims == null)
-                throw new ArgumentNullException("issuedClaims");
+                throw new ArgumentNullException(nameof(issuedClaims));
             this.issuer = issuedClaims.Issuer;
             this.issuedClaimSets = new ClaimSet[] { issuedClaims };
             this.id = Guid.NewGuid().ToString();
@@ -492,6 +498,7 @@ public class CreditCardSecurityTokenSerializer : WSSecurityTokenSerializer
 ```
 
 ## Displaying the Callers' Information
+
  To display the caller's information, use the `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` as shown in the following sample code. The `ServiceSecurityContext.Current.AuthorizationContext.ClaimSets` contains authorization claims associated with the current caller. The claims are supplied by the `CreditCardToken` class in its `AuthorizationPolicies` collection.
 
 ```csharp
@@ -533,17 +540,18 @@ string GetCallerCreditCardNumber()
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.
 
 ## Setup Batch File
+
  The Setup.bat batch file included with this sample allows you to configure the server with relevant certificates to run the IIS-hosted application that requires server certificate-based security. This batch file must be modified to work across computers or to work in a non-hosted case.
 
  The following provides a brief overview of the different sections of the batch files so that they can be modified to run in the appropriate configuration.
 
--   Creating the server certificate:
+- Creating the server certificate:
 
      The following lines from the `Setup.bat` batch file create the server certificate to be used. The `%SERVER_NAME%` variable specifies the server name. Change this variable to specify your own server name. The default in this batch file is localhost. If you change the `%SERVER_NAME%` variable, you must go through the Client.cs and Service.cs files and replace all instances of localhost with the server name that you use in the Setup.bat script.
 
      The certificate is stored in My (Personal) store under the `LocalMachine` store location. The certificate is stored in the LocalMachine store for the IIS-hosted services. For self-hosted services, you should modify the batch file to store the client certificate in the CurrentUser store location by replacing the string LocalMachine with CurrentUser.
 
-    ```
+    ```bat
     echo ************
     echo Server cert setup starting
     echo %SERVER_NAME%
@@ -553,20 +561,20 @@ string GetCallerCreditCardNumber()
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe
     ```
 
--   Installing the server certificate into client's trusted certificate store:
+- Installing the server certificate into client's trusted certificate store:
 
      The following lines in the Setup.bat batch file copy the server certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft issued certificate—this step of populating the client certificate store with the server certificate is not required.
 
-    ```
+    ```bat
     echo ************
     echo copying server cert to client's TrustedPeople store
     echo ************
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r CurrentUser -s TrustedPeople
     ```
 
--   To enable access to the certificate private key from the IIS-hosted service, the user account under which the IIS-hosted process is running must be granted appropriate permissions for the private key. This is accomplished by last steps in the Setup.bat script.
+- To enable access to the certificate private key from the IIS-hosted service, the user account under which the IIS-hosted process is running must be granted appropriate permissions for the private key. This is accomplished by last steps in the Setup.bat script.
 
-    ```
+    ```bat
     echo ************
     echo setting privileges on server certificates
     echo ************
@@ -578,42 +586,42 @@ string GetCallerCreditCardNumber()
     ```
 
 > [!NOTE]
->  The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
+> The Setup.bat batch file is designed to be run from a Visual Studio 2012 Command Prompt. The PATH environment variable set within the Visual Studio 2012 Command Prompt points to the directory that contains executables required by the Setup.bat script.
 
 #### To set up and build the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
 #### To run the sample on the same computer
 
-1.  Open a Visual Studio 2012 Command Prompt window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.Make sure that the path includes the folder where Makecert.exe is located.
+1. Open a Visual Studio 2012 Command Prompt window with administrator privileges and run Setup.bat from the sample install folder. This installs all the certificates required for running the sample.Make sure that the path includes the folder where Makecert.exe is located.
 
 > [!NOTE]
->  Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
+> Be sure to remove the certificates by running Cleanup.bat when finished with the sample. Other security samples use the same certificates.  
   
-1.  Launch Client.exe from client\bin directory. Client activity is displayed on the client console application.  
+1. Launch Client.exe from client\bin directory. Client activity is displayed on the client console application.  
   
-2.  If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
+2. If the client and service are not able to communicate, see [Troubleshooting Tips for WCF Samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751511(v=vs.90)).  
   
 #### To run the sample across computer  
   
-1.  Create a directory on the service computer for the service binaries.  
+1. Create a directory on the service computer for the service binaries.  
   
-2.  Copy the service program files into the service directory on the service computer. Do not forget to copy CreditCardFile.txt; otherwise the credit card authenticator cannot validate credit card information sent from the client. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
+2. Copy the service program files into the service directory on the service computer. Do not forget to copy CreditCardFile.txt; otherwise the credit card authenticator cannot validate credit card information sent from the client. Also copy the Setup.bat and Cleanup.bat files to the service computer.  
   
-3.  You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. You can create one using the Setup.bat if you change the `%SERVER_NAME%` variable to fully-qualified name of the computer where the service is hosted. Note that the Setup.bat file must be run in a Developer Command Prompt for Visual Studio opened with administrator privileges.  
+3. You must have a server certificate with the subject name that contains the fully-qualified domain name of the computer. You can create one using the Setup.bat if you change the `%SERVER_NAME%` variable to fully-qualified name of the computer where the service is hosted. Note that the Setup.bat file must be run in a Developer Command Prompt for Visual Studio opened with administrator privileges.  
   
-4.  Copy the server certificate into the CurrentUser-TrustedPeople store on the client. You must do this only if the server certificate is not issued by a trusted issuer.  
+4. Copy the server certificate into the CurrentUser-TrustedPeople store on the client. You must do this only if the server certificate is not issued by a trusted issuer.  
   
-5.  In the EchoServiceHost.cs file, change the value of the certificate subject name to specify a fully-qualified computer name instead of localhost.  
+5. In the EchoServiceHost.cs file, change the value of the certificate subject name to specify a fully-qualified computer name instead of localhost.  
   
-6.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
+6. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.  
   
-7.  In the Client.cs file, change the address value of the endpoint to match the new address of your service.  
+7. In the Client.cs file, change the address value of the endpoint to match the new address of your service.  
   
-8.  In the Client.cs file change the subject name of the service X.509 certificate to match the fully-qualified computer name of the remote host instead of localhost.  
+8. In the Client.cs file change the subject name of the service X.509 certificate to match the fully-qualified computer name of the remote host instead of localhost.  
   
 9. On the client computer, launch Client.exe from a command prompt window.  
   
@@ -621,6 +629,4 @@ string GetCallerCreditCardNumber()
   
 #### To clean up after the sample  
   
-1.  Run Cleanup.bat in the samples folder once you have finished running the sample.  
-  
-## See also
+1. Run Cleanup.bat in the samples folder once you have finished running the sample.  

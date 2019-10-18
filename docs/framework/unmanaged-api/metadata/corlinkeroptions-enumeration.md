@@ -22,7 +22,7 @@ Specifies flags to select options for the metadata linker.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorLinkerOptions {  
     MDAssembly          = 0x00000000,  
     MDNetModule         = 0x00000001,  
@@ -44,4 +44,5 @@ typedef enum CorLinkerOptions {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

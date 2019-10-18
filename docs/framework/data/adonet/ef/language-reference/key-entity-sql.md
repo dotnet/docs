@@ -8,7 +8,7 @@ Extracts the key of a reference or of an entity expression.
   
 ## Syntax  
   
-```  
+```sql  
 KEY(createref_expression)  
 ```  
   
@@ -17,7 +17,7 @@ KEY(createref_expression)
   
  In the following example, the key operator is passed a reference to the BadOrder entity, and returns the key portion of that reference. In this case, a record type with exactly one field corresponding to the `Id` property.  
   
-```  
+```sql  
 select Key( CreateRef(LOB.BadOrders, row(o.Id)) )   
 from LOB.Orders as o  
 ```  
@@ -25,14 +25,15 @@ from LOB.Orders as o
 ## Example  
  The following Entity SQL query uses the KEY operator to extract the key portion of an expression with type reference. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#KEY](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#key)]  
+ [!code-sql[DP EntityServices Concepts#KEY](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#key)]  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [CREATEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/createref-entity-sql.md)
-- [REF](../../../../../../docs/framework/data/adonet/ef/language-reference/ref-entity-sql.md)
-- [DEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/deref-entity-sql.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [CREATEREF](createref-entity-sql.md)
+- [REF](ref-entity-sql.md)
+- [DEREF](deref-entity-sql.md)

@@ -17,9 +17,9 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 ### To handle the PercentDone event of the Widget class  
   
-1.  Place the following code in `Form1`:  
+1. Place the following code in `Form1`:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#4](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_1.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#4)]  
   
      The `WithEvents` keyword specifies that the variable `mWidget` is used to handle an object's events. You specify the kind of object by supplying the name of the class from which the object will be created.  
   
@@ -32,22 +32,22 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 #### To handle an event  
   
-1.  Select `mWidget` from the left drop-down list in the **Code Editor**.  
+1. Select `mWidget` from the left drop-down list in the **Code Editor**.  
   
-2.  Select the `PercentDone` event from the right drop-down list. The **Code Editor** opens the `mWidget_PercentDone` event procedure.  
+2. Select the `PercentDone` event from the right drop-down list. The **Code Editor** opens the `mWidget_PercentDone` event procedure.  
   
     > [!NOTE]
-    >  The **Code Editor** is useful, but not required, for inserting new event handlers. In this walkthrough, it is more direct to just copy the event handlers directly into your code.  
+    > The **Code Editor** is useful, but not required, for inserting new event handlers. In this walkthrough, it is more direct to just copy the event handlers directly into your code.  
   
-3.  Add the following code to the `mWidget_PercentDone` event handler:  
+3. Add the following code to the `mWidget_PercentDone` event handler:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#5](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_2.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#5)]  
   
      Whenever the `PercentDone` event is raised, the event procedure displays the percent complete in a `Label` control. The `DoEvents` method allows the label to repaint, and also gives the user the opportunity to click the **Cancel** button.  
   
-4.  Add the following code for the `Button2_Click` event handler:  
+4. Add the following code for the `Button2_Click` event handler:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#6](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_3.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#6)]  
   
  If the user clicks the **Cancel** button while `LongTask` is running, the `Button2_Click` event is executed as soon as the `DoEvents` statement allows event processing to occur. The class-level variable `mblnCancel` is set to `True`, and the `mWidget_PercentDone` event then tests it and sets the `ByRef Cancel` argument to `True`.  
   
@@ -58,21 +58,21 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 #### To create an object and assign a reference to it  
   
-1.  Select **(Form1 Events)** from the left drop-down list in the **Code Editor**.  
+1. Select **(Form1 Events)** from the left drop-down list in the **Code Editor**.  
   
-2.  Select the `Load` event from the right drop-down list. The **Code Editor** opens the `Form1_Load` event procedure.  
+2. Select the `Load` event from the right drop-down list. The **Code Editor** opens the `Form1_Load` event procedure.  
   
-3.  Add the following code for the `Form1_Load` event procedure to create the `Widget`:  
+3. Add the following code for the `Form1_Load` event procedure to create the `Widget`:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#7](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_4.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#7)]  
   
  When this code executes, Visual Basic creates a `Widget` object and connects its events to the event procedures associated with `mWidget`. From that point on, whenever the `Widget` raises its `PercentDone` event, the `mWidget_PercentDone` event procedure is executed.  
   
 #### To call the LongTask method  
   
--   Add the following code to the `Button1_Click` event handler:  
+- Add the following code to the `Button1_Click` event handler:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#8](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_5.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#8)]  
   
  Before the `LongTask` method is called, the label that displays the percent complete must be initialized, and the class-level `Boolean` flag for canceling the method must be set to `False`.  
   
@@ -82,14 +82,14 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 #### To run the program  
   
-1.  Press F5 to put the project in run mode.  
+1. Press F5 to put the project in run mode.  
   
-2.  Click the **Start Task** button. Each time the `PercentDone` event is raised, the label is updated with the percentage of the task that is complete.  
+2. Click the **Start Task** button. Each time the `PercentDone` event is raised, the label is updated with the percentage of the task that is complete.  
   
-3.  Click the **Cancel** button to stop the task. Notice that the appearance of the **Cancel** button does not change immediately when you click it. The `Click` event cannot happen until the `My.Application.DoEvents` statement allows event processing.  
+3. Click the **Cancel** button to stop the task. Notice that the appearance of the **Cancel** button does not change immediately when you click it. The `Click` event cannot happen until the `My.Application.DoEvents` statement allows event processing.  
   
     > [!NOTE]
-    >  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. For example, in this walkthrough, you must click the **Cancel** button twice. To allow the form to handle the events directly, you can use multithreading. For more information, see [Managed Threading](../../../../standard/threading/index.md).
+    > The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. For example, in this walkthrough, you must click the **Cancel** button twice. To allow the form to handle the events directly, you can use multithreading. For more information, see [Managed Threading](../../../../standard/threading/index.md).
   
  You may find it instructive to run the program with F11 and step through the code a line at a time. You can clearly see how execution enters `LongTask`, and then briefly re-enters `Form1` each time the `PercentDone` event is raised.  
   
@@ -99,17 +99,18 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 #### To handle events for a different widget  
   
--   Add the following line of code to the `Button1_Click` procedure, immediately preceding the line that reads `mWidget.LongTask(12.2, 0.33)`:  
+- Add the following line of code to the `Button1_Click` procedure, immediately preceding the line that reads `mWidget.LongTask(12.2, 0.33)`:  
   
-     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#9](../../../../visual-basic/programming-guide/language-features/events/codesnippet/VisualBasic/walkthrough-handling-events_6.vb)]  
+     [!code-vb[VbVbcnWalkthroughDeclaringAndRaisingEvents#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnWalkthroughDeclaringAndRaisingEvents/VB/Form1.vb#9)]  
   
  The code above creates a new `Widget` each time the button is clicked. As soon as the `LongTask` method completes, the reference to the `Widget` is released, and the `Widget` is destroyed.  
   
  A `WithEvents` variable can contain only one object reference at a time, so if you assign a different `Widget` object to `mWidget`, the previous `Widget` object's events will no longer be handled. If `mWidget` is the only object variable containing a reference to the old `Widget`, the object is destroyed. If you want to handle events from several `Widget` objects, use the `AddHandler` statement to process events from each object separately.  
   
 > [!NOTE]
->  You can declare as many `WithEvents` variables as you need, but arrays of `WithEvents` variables are not supported.  
+> You can declare as many `WithEvents` variables as you need, but arrays of `WithEvents` variables are not supported.  
   
 ## See also
+
 - [Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)
 - [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)

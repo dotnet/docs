@@ -13,7 +13,7 @@ ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
 You can use structures in conjunction with arrays, objects, and procedures, as well as with each other. The interactions use the same syntax as these elements use individually.  
   
 > [!NOTE]
->  You cannot initialize any of the structure elements in the structure declaration. You can assign values only to elements of a variable that has been declared to be of a structure type.  
+> You cannot initialize any of the structure elements in the structure declaration. You can assign values only to elements of a variable that has been declared to be of a structure type.  
   
 ## Structures and Arrays  
  A structure can contain an array as one or more of its elements. The following example illustrates this.  
@@ -117,6 +117,7 @@ allSystems(1).diskDrives(0).type = "Floppy"
  Structures can contain other structures to an arbitrary depth.  
   
 ## See also
+
 - [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)
 - [Composite Data Types](../../../../visual-basic/programming-guide/language-features/data-types/composite-data-types.md)

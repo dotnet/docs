@@ -12,7 +12,7 @@ Declares the parameters and code that define a subroutine lambda expression.
   
 ## Syntax  
   
-```  
+```vb  
 Sub ( [ parameterlist ] ) statement  
 - or -  
 Sub ( [ parameterlist ] )  
@@ -34,24 +34,25 @@ End Sub
 ## Lambda Expression Syntax  
  The syntax of a lambda expression resembles that of a standard subroutine. The differences are as follows:  
   
--   A lambda expression does not have a name.  
+- A lambda expression does not have a name.  
   
--   A lambda expression cannot have a modifier, such as `Overloads` or `Overrides`.  
+- A lambda expression cannot have a modifier, such as `Overloads` or `Overrides`.  
   
--   The body of a single-line lambda expression must be a statement, not an expression. The body can consist of a call to a sub procedure, but not a call to a function procedure.  
+- The body of a single-line lambda expression must be a statement, not an expression. The body can consist of a call to a sub procedure, but not a call to a function procedure.  
   
--   In a lambda expression, either all parameters must have specified data types or all parameters must be inferred.  
+- In a lambda expression, either all parameters must have specified data types or all parameters must be inferred.  
   
--   Optional and `ParamArray` parameters are not permitted in lambda expressions.  
+- Optional and `ParamArray` parameters are not permitted in lambda expressions.  
   
--   Generic parameters are not permitted in lambda expressions.  
+- Generic parameters are not permitted in lambda expressions.  
   
 ## Example  
  Following is an example of a lambda expression that writes a value to the console. The example shows both the single-line and multiline lambda expression syntax for a subroutine. For more examples, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
- [!code-vb[VbVbalrLambdas#15](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/sub-expression_1.vb)]  
+ [!code-vb[VbVbalrLambdas#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#15)]  
   
 ## See also
+
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
 - [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Operators and Expressions](../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)

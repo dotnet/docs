@@ -21,7 +21,7 @@ Sets properties that will be used to initialize the default application domain.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPropertiesForDefaultAppDomain(  
     [in] DWORD nProperties,  
     [in] LPCWSTR *pwszPropertyNames,  
@@ -29,7 +29,7 @@ HRESULT SetPropertiesForDefaultAppDomain(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nProperties`  
  [in] The number of entries in `pwszPropertyNames` and `pwszPropertyValues`.  
   
@@ -60,5 +60,6 @@ HRESULT SetPropertiesForDefaultAppDomain(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
 - [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)

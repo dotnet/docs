@@ -23,7 +23,7 @@ Defines a source document. GUIDs are provided for known languages, vendors, and 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineDocument(  
     [in]  const WCHAR  *url,  
     [in]  const GUID   *language,  
@@ -32,7 +32,7 @@ HRESULT DefineDocument(
     [out, retval] ISymUnmanagedDocumentWriter**  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `url`  
  [in] A pointer to a `WCHAR` that defines the uniform resource locator (URL) that identifies the document.  
   
@@ -55,4 +55,5 @@ HRESULT DefineDocument(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)

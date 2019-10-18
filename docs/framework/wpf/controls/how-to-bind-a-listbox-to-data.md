@@ -13,10 +13,11 @@ An application developer can create <xref:System.Windows.Controls.ListBox> contr
  The following example shows how to create a <xref:System.Windows.Controls.ListBox> that populates the <xref:System.Windows.Controls.ListBoxItem> elements by data binding to a data source called *Colors*. In this case it is not necessary to use <xref:System.Windows.Controls.ListBoxItem> tags to specify the content of each item.  
   
 ## Example  
- [!code-xaml[ListBoxEvent#7](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#7)]  
-[!code-xaml[ListBoxEvent#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#3)]  
+ [!code-xaml[ListBoxEvent#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#7)]  
+[!code-xaml[ListBoxEvent#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#3)]  
   
 ## See also
+
 - <xref:System.Windows.Controls.ListBox>
 - <xref:System.Windows.Controls.ListBoxItem>
-- [Controls](../../../../docs/framework/wpf/advanced/optimizing-performance-controls.md)
+- [Controls](../advanced/optimizing-performance-controls.md)

@@ -31,4 +31,5 @@ Provides methods for writing to a document referenced by a symbol store.
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

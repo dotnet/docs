@@ -15,13 +15,13 @@ ms.assetid: aa47af39-1e71-40ee-bb75-2d2478f81bd0
  The topics in this section describe the concepts and techniques that you can use to build `ToolStripPanel` features into your applications.  
   
 ## In This Section  
- [ToolStripPanel Control Overview](../../../../docs/framework/winforms/controls/toolstrippanel-control-overview.md)  
+ [ToolStripPanel Control Overview](toolstrippanel-control-overview.md)  
  Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripContainer> control.  
   
- [How to: Join ToolStripPanels](../../../../docs/framework/winforms/controls/how-to-join-toolstrippanels.md)  
+ [How to: Join ToolStripPanels](how-to-join-toolstrippanels.md)  
  Demonstrates adding <xref:System.Windows.Forms.ToolStrip> controls to a `ToolStripPanel`.  
   
- [How to: Use ToolStripPanels for MDI](../../../../docs/framework/winforms/controls/how-to-use-toolstrippanels-for-mdi.md)  
+ [How to: Use ToolStripPanels for MDI](how-to-use-toolstrippanels-for-mdi.md)  
  Demonstrates the flexibility afforded by `ToolStripPanel` controls in a Multiple Document Interface application.  
   
 ## Reference  
@@ -29,4 +29,5 @@ ms.assetid: aa47af39-1e71-40ee-bb75-2d2478f81bd0
  Provides reference documentation for the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
 ## See also
-- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

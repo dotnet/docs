@@ -23,14 +23,14 @@ Gets the specified number of contiguous functions from a sequential collection o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next([in]  ULONG      celt,  
              [out, size_is(celt), length_is(*pceltFetched)]  
                     COR_PRF_FUNCTION ids[],  
              [out] ULONG *   pceltFetched);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of functions to retrieve.  
   
@@ -58,5 +58,6 @@ HRESULT Next([in]  ULONG      celt,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerFunctionEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

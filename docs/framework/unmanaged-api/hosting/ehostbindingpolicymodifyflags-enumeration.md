@@ -22,7 +22,7 @@ Allows the host to specify the type of redirection the common language runtime (
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _hostBindingPolicyModifyFlags {  
     HOST_BINDING_POLICY_MODIFY_DEFAULT  = 0,  
     HOST_BINDING_POLICY_MODIFY_CHAIN    = 1,  
@@ -53,5 +53,6 @@ typedef enum _hostBindingPolicyModifyFlags {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

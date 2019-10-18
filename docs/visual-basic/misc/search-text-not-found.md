@@ -10,7 +10,7 @@ The text you specified was not found.
   
 ## To correct this error  
   
-1.  Check that the specified text is spelled correctly.  
+1. Check that the specified text is spelled correctly.  
   
 ## See also
 

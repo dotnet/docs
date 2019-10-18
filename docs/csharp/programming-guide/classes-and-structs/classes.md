@@ -11,7 +11,7 @@ ms.assetid: e8848524-7273-429f-8aba-c658d5eff5ad
 # Classes (C# Programming Guide)
 
 ## Reference types  
-A type that is defined as a [class](../../../csharp/language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../../csharp/language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [new](../../../csharp/language-reference/keywords/new.md) operator, or assign it an object of a compatible type that may have been created elsewhere, as shown in the following example:
+A type that is defined as a [class](../../language-reference/keywords/class.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../language-reference/keywords/null.md) until you explicitly create an instance of the class by using the [new](../../language-reference/operators/new-operator.md) operator, or assign it an object of a compatible type that may have been created elsewhere, as shown in the following example:
 
 ```csharp
 //Declaring an object of type MyClass.
@@ -25,7 +25,7 @@ When the object is created, enough memory is allocated on the managed heap for t
   
 ## Declaring Classes
 
- Classes are declared by using the [class](../../../csharp/language-reference/keywords/class.md) keyword followed by a unique identifier, as shown in the following example:
+ Classes are declared by using the [class](../../language-reference/keywords/class.md) keyword followed by a unique identifier, as shown in the following example:
 
  ```csharp
 //[access modifier] - [class] - [identifier]
@@ -41,7 +41,7 @@ When the object is created, enough memory is allocated on the managed heap for t
 
 Although they are sometimes used interchangeably, a class and an object are different things. A class defines a type of object, but it is not an object itself. An object is a concrete entity based on a class, and is sometimes referred to as an instance of a class.  
   
- Objects can be created by using the [new](../../language-reference/keywords/new.md) keyword followed by the name of the class that the object will be based on, like this:  
+ Objects can be created by using the [new](../../language-reference/operators/new-operator.md) keyword followed by the name of the class that the object will be based on, like this:  
 
  ```csharp
  Customer object1 = new Customer();
@@ -64,7 +64,7 @@ Although they are sometimes used interchangeably, a class and an object are diff
   
 ## Class inheritance  
 
-Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other interface or class that is not defined as [sealed](../../../csharp/language-reference/keywords/sealed.md), and other classes can inherit from your class and override class virtual methods.
+Classes fully support *inheritance*, a fundamental characteristic of object-oriented programming. When you create a class, you can inherit from any other interface or class that is not defined as [sealed](../../language-reference/keywords/sealed.md), and other classes can inherit from your class and override class virtual methods.
 
 Inheritance is accomplished by using a *derivation*, which means a class is declared by using a *base class* from which it inherits data and behavior. A base class is specified by appending a colon and the name of the base class following the derived class name, like this:  
 

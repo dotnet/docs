@@ -1,4 +1,4 @@
-### List\<T>.ForEach can throw exception when modifying list item
+### List&lt;T&gt;.ForEach can throw exception when modifying list item
 
 |   |   |
 |---|---|
@@ -8,4 +8,3 @@
 |Version|4.5|
 |Type|Retargeting|
 |Affected APIs|<ul><li><xref:System.Collections.Generic.List%601.ForEach(System.Action{%600})?displayProperty=nameWithType></li></ul>|
-

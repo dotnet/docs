@@ -31,18 +31,18 @@ The **-baseaddress** option lets you specify the preferred base address at which
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Click the **Advanced** button.  
+3. Click the **Advanced** button.  
   
-4.  Modify the **DLL Base Address** property.  
+4. Modify the **DLL Base Address** property.  
   
      To set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.BaseAddress%2A>.  
   
 ## See also
 
 - <xref:System.Diagnostics.ProcessModule.BaseAddress%2A?displayProperty=nameWithType>
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

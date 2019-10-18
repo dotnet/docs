@@ -15,9 +15,10 @@ author: "ghogen"
 If your service application will not install correctly, check to make sure that the <xref:System.ServiceProcess.ServiceBase.ServiceName%2A> property for the service class is set to the same value as is shown in the installer for that service. The value must be the same in both instances in order for your service to install correctly.  
   
 > [!NOTE]
->  You can also look at the installation logs to get feedback on the installation process.  
+> You can also look at the installation logs to get feedback on the installation process.  
   
  You should also check to determine whether you have another service with the same name already installed. Service names must be unique for installation to succeed.  
   
 ## See also
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)

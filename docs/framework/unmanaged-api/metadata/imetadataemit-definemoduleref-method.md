@@ -23,14 +23,14 @@ Creates the metadata signature for a module with the specified name.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineModuleRef (     
     [in]  LPCWSTR           szName,   
     [out] mdModuleRef       *pmur   
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the other metadata file, typically a DLL. This is the file name only. Do not use a full path name.  
   
@@ -47,5 +47,6 @@ HRESULT DefineModuleRef (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

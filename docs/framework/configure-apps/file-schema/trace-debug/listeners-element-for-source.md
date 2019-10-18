@@ -11,11 +11,11 @@ ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
 # \<listeners> Element for \<source>
 Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A> collection for a <xref:System.Diagnostics.TraceSource>. A listener directs the tracing output to an appropriate target, such as a log, window, or text file.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
-\<source>  
-\<listeners> Element  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<listeners>**  
   
 ## Syntax  
   
@@ -37,9 +37,9 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-source.md)|Adds a listener to the `Listeners` collection.|  
-|[\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-source.md)|Removes a listener from the `Listeners` collection.|  
-|[\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)|Clears the `Listeners` collection for a trace source.|  
+|[\<add>](add-element-for-listeners-for-source.md)|Adds a listener to the `Listeners` collection.|  
+|[\<remove>](remove-element-for-listeners-for-source.md)|Removes a listener from the `Listeners` collection.|  
+|[\<clear>](clear-element-for-listeners-for-source.md)|Clears the `Listeners` collection for a trace source.|  
   
 ### Parent Elements  
   
@@ -82,6 +82,7 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
 ```  
   
 ## See also
+
 - <xref:System.Diagnostics.TraceListener>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
-- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

@@ -1,50 +1,52 @@
 ---
-title: GetPropertyOrigin function (Unmnaged API Reference)
+title: GetPropertyOrigin function (Unmanaged API Reference)
 description: The GetPropertyOrigin function determines the class in which a property is declared.
 ms.date: "11/06/2017"
-api_name: 
+api_name:
   - "GetPropertyOrigin"
-api_location: 
+api_location:
   - "WMINet_Utils.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "GetPropertyOrigin"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GetPropertyOrigin function [.NET WMI and performance counters]"
-topic_type: 
+topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # GetPropertyOrigin function
+
 Determines the class in which a property is declared.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
-## Syntax  
-  
-```  
+
+## Syntax
+
+```cpp
 HRESULT GetPropertyOrigin (
-   [in] int                 vFunc, 
-   [in] IWbemClassObject*   ptr, 
+   [in] int                 vFunc,
+   [in] IWbemClassObject*   ptr,
    [in] LPCWSTR             wszMethodName,
    [out] BSTR*              pstrClassName
-); 
-```  
+);
+```
 
 ## Parameters
 
-`vFunc`  
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`  
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`wszMethodName`  
-[in] The name of the property for the object whose owning class is being requested. 
+`wszMethodName`\
+[in] The name of the property for the object whose owning class is being requested.
 
-`pstrClassName`  
+`pstrClassName`\
 [out] Receives the name of the class that owns the property.
 
 ## Return value
@@ -58,7 +60,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 |`WBEM_E_INVALID_PARAMETER` | 0x80041008 | A parameter is not valid. |
 |`WBEM_E_OUT_OF_MEMORY` | 0x80041006 | Not enough memory is available to complete the operation. |
 |`WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
-  
+
 ## Remarks
 
 This function wraps a call to the [IWbemClassObject::GetPropertyOrigin](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getpropertyorigin) method.
@@ -67,12 +69,14 @@ Because a class can inherit properties from one or more base classes, developers
 
 The `pstrClassName` parameter must not point to a valid `BSTR` before the function is called because this is an `out` parameter; this pointer is not deallocated after the function returns.
 
-## Requirements  
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
+## Requirements
+
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+**Header:** WMINet_Utils.idl
+
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

@@ -25,13 +25,13 @@ Loads a .NET Framework library from the common language runtime (CLR) represente
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadLibrary(  
      [in]  LPCWSTR pwzDllName,  
      [out, retval] HMODULE *phndModule);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzDllName`  
  [in] The name of the assembly to be loaded.  
   
@@ -60,6 +60,7 @@ HRESULT LoadLibrary(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

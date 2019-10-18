@@ -16,7 +16,7 @@ Windows Presentation Foundation (WPF) has an ink feature that makes it easy to i
 
 ## Prerequisites
 
-To use the following examples, first [install Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017). It also helps to know how to write basic WPF apps. For help getting started with WPF, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).
+To use the following examples, first install [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). It also helps to know how to write basic WPF apps. For help getting started with WPF, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
 
 ## Quick Start
 
@@ -36,7 +36,7 @@ To create a WPF app that supports ink:
 
 3. Type `<InkCanvas/>` between the `<Grid>` tags.
 
-   ![XAML designer with InkCanvas tag](media/getting-started-with-ink/inkcanvas-xaml.png)
+   ![XAML designer with InkCanvas tag](./media/getting-started-with-ink/inkcanvas-xaml.png)
 
 4. Press **F5** to launch your application in the debugger.
 
@@ -64,7 +64,7 @@ Let’s take advantage of some features of the WPF. Replace everything between t
 
 This XAML creates a gradient brush background on your inking surface.
 
-![Gradient colors on inking surface in WPF app](media/getting-started-with-ink/gradient-colors.png)
+![Gradient colors on inking surface in WPF app](./media/getting-started-with-ink/gradient-colors.png)
 
 ### Add Some Code Behind the XAML
 
@@ -72,12 +72,12 @@ While XAML makes it very easy to design the user interface, any real-world appli
 
 1. Set the `MouseRightButtonUp` handler in your XAML:
 
-   [!code-xaml[DigitalInkTopics#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml#3)]
+   [!code-xaml[DigitalInkTopics#3](~/samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml#3)]
 
 1. In **Solution Explorer**, expand MainWindow.xaml and open the code-behind file (MainWindow.xaml.cs or MainWindow.xaml.vb). Add the following event handler code:
 
-   [!code-csharp[DigitalInkTopics#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml.cs#4)]
-   [!code-vb[DigitalInkTopics#4](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window2.xaml.vb#4)]
+   [!code-csharp[DigitalInkTopics#4](~/samples/snippets/csharp/VS_Snippets_Wpf/DigitalInkTopics/CSharp/Window2.xaml.cs#4)]
+   [!code-vb[DigitalInkTopics#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DigitalInkTopics/VisualBasic/Window2.xaml.vb#4)]
 
 1. Run the application. Add some ink, and then right-click with the mouse or perform a press-and-hold equivalent with a stylus.
 
@@ -93,18 +93,18 @@ You can access all WPF features from procedural code. Follow these steps to crea
 
 1. Paste the following code into the Program.cs or Program.vb file:
 
-   [!code-csharp[InkCanvasConsoleApp#1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasConsoleApp/CSharp/Program.cs#1)]
-   [!code-vb[InkCanvasConsoleApp#1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasConsoleApp/VisualBasic/Module1.vb#1)]
+   [!code-csharp[InkCanvasConsoleApp#1](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasConsoleApp/CSharp/Program.cs#1)]
+   [!code-vb[InkCanvasConsoleApp#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasConsoleApp/VisualBasic/Module1.vb#1)]
 
 1. Add references to the PresentationCore, PresentationFramework, and WindowsBase assemblies by right-clicking on **References** in **Solution Explorer** and choosing **Add Reference**.
 
-   ![Reference Manager showing PresentationCore and PresentationFramework](media/getting-started-with-ink/references.png)
+   ![Reference Manager showing PresentationCore and PresentationFramework](./media/getting-started-with-ink/reference-manager-presentationcore-presentationframework.png)
 
 1. Build the application by pressing **F5**.
 
 ## See also
 
-- [Digital Ink](../../../../docs/framework/wpf/advanced/digital-ink.md)
-- [Collecting Ink](../../../../docs/framework/wpf/advanced/collecting-ink.md)
-- [Handwriting Recognition](../../../../docs/framework/wpf/advanced/handwriting-recognition.md)
-- [Storing Ink](../../../../docs/framework/wpf/advanced/storing-ink.md)
+- [Digital Ink](digital-ink.md)
+- [Collecting Ink](collecting-ink.md)
+- [Handwriting Recognition](handwriting-recognition.md)
+- [Storing Ink](storing-ink.md)

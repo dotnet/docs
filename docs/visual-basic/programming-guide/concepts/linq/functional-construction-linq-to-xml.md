@@ -8,11 +8,11 @@ ms.assetid: feac4273-39ab-43ae-bab7-4059c807a785
   
  There are several key features of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] programming interface that enable functional construction:  
   
--   The <xref:System.Xml.Linq.XElement> constructor takes various types of arguments for content. For example, you can pass another <xref:System.Xml.Linq.XElement> object, which becomes a child element. You can pass an <xref:System.Xml.Linq.XAttribute> object, which becomes an attribute of the element. Or you can pass any other type of object, which is converted to a string and becomes the text content of the element.  
+- The <xref:System.Xml.Linq.XElement> constructor takes various types of arguments for content. For example, you can pass another <xref:System.Xml.Linq.XElement> object, which becomes a child element. You can pass an <xref:System.Xml.Linq.XAttribute> object, which becomes an attribute of the element. Or you can pass any other type of object, which is converted to a string and becomes the text content of the element.  
   
--   The <xref:System.Xml.Linq.XElement> constructor takes a `params` array of type <xref:System.Object>, so that you can pass any number of objects to the constructor. This enables you to create an element that has complex content.  
+- The <xref:System.Xml.Linq.XElement> constructor takes a `params` array of type <xref:System.Object>, so that you can pass any number of objects to the constructor. This enables you to create an element that has complex content.  
   
--   If an object implements <xref:System.Collections.Generic.IEnumerable%601>, the collection in the object is enumerated, and all items in the collection are added. If the collection contains <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> objects, each item in the collection is added separately. This is important because it lets you pass the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to the constructor.  
+- If an object implements <xref:System.Collections.Generic.IEnumerable%601>, the collection in the object is enumerated, and all items in the collection are added. If the collection contains <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> objects, each item in the collection is added separately. This is important because it lets you pass the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to the constructor.  
   
  The following is an example:  
   
@@ -51,4 +51,5 @@ Console.WriteLine(xmlTree)
 ```  
   
 ## See also
+
 - [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

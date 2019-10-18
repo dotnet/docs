@@ -23,7 +23,7 @@ Gets the start and end document positions for the source of this method. The fir
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceStartEnd(  
     [in]  ISymUnmanagedDocument  *docs[2],  
     [in]  ULONG32                lines[2],  
@@ -31,7 +31,7 @@ HRESULT GetSourceStartEnd(
     [out] BOOL                   *pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `docs`  
  [in] The starting and ending source documents.  
   
@@ -51,4 +51,5 @@ HRESULT GetSourceStartEnd(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)

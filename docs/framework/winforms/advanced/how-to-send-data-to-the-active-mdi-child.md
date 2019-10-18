@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 1047d2fe-1235-46db-aad9-563aea1d743b
 ---
 # How to: Send Data to the Active MDI Child
-Often, within the context of [Multiple-Document Interface (MDI) Applications](../../../../docs/framework/winforms/advanced/multiple-document-interface-mdi-applications.md), you will need to send data to the active child window, such as when the user pastes data from the Clipboard into an MDI application.  
+Often, within the context of [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md), you will need to send data to the active child window, such as when the user pastes data from the Clipboard into an MDI application.  
   
 > [!NOTE]
->  For information about verifying which child window has focus and sending its contents to the Clipboard, see [Determining the Active MDI Child](../../../../docs/framework/winforms/advanced/how-to-determine-the-active-mdi-child.md).  
+> For information about verifying which child window has focus and sending its contents to the Clipboard, see [Determining the Active MDI Child](how-to-determine-the-active-mdi-child.md).  
   
 ### To send data to the active MDI child window from the Clipboard  
   
-1.  Within a method, copy the text on the Clipboard to the active control of the active child form.  
+1. Within a method, copy the text on the Clipboard to the active control of the active child form.  
   
     > [!NOTE]
-    >  This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md).  
+    > This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](how-to-create-mdi-parent-forms.md).  
   
     ```vb  
     Public Sub mniPaste_Click(ByVal sender As Object, _  
@@ -86,8 +86,9 @@ Often, within the context of [Multiple-Document Interface (MDI) Applications](..
     ```  
   
 ## See also
-- [Multiple-Document Interface (MDI) Applications](../../../../docs/framework/winforms/advanced/multiple-document-interface-mdi-applications.md)
-- [How to: Create MDI Parent Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-parent-forms.md)
-- [How to: Create MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-create-mdi-child-forms.md)
-- [How to: Determine the Active MDI Child](../../../../docs/framework/winforms/advanced/how-to-determine-the-active-mdi-child.md)
-- [How to: Arrange MDI Child Forms](../../../../docs/framework/winforms/advanced/how-to-arrange-mdi-child-forms.md)
+
+- [Multiple-Document Interface (MDI) Applications](multiple-document-interface-mdi-applications.md)
+- [How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)
+- [How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md)
+- [How to: Determine the Active MDI Child](how-to-determine-the-active-mdi-child.md)
+- [How to: Arrange MDI Child Forms](how-to-arrange-mdi-child-forms.md)

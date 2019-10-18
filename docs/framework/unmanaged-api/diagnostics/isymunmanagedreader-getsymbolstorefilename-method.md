@@ -23,7 +23,7 @@ Provides the on-disk file name of the symbol store.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolStoreFileName (  
     [in]  ULONG32 cchName,  
     [out] ULONG32 *pcchName,  
@@ -31,7 +31,7 @@ HRESULT GetSymbolStoreFileName (
         length_is (*pcchName)] WCHAR szName[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the `szName` buffer.  
   
@@ -48,4 +48,5 @@ HRESULT GetSymbolStoreFileName (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

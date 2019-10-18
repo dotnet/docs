@@ -15,9 +15,10 @@ The evaluation of an expression did not complete in a timely manner.
   
 ## To correct this error  
   
-1.  Verify that the entered code is correct.  
+1. Verify that the entered code is correct.  
   
-2.  Simplify your expression so that it takes less time to execute.  
+2. Simplify your expression so that it takes less time to execute.  
   
 ## See also
+
 - [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)

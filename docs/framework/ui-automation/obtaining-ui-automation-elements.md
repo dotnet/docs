@@ -5,17 +5,15 @@ helpviewer_keywords:
   - "UI Automation, obtaining elements"
   - "elements, UI Automation, obtaining"
 ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Obtaining UI Automation Elements
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic describes the various ways of obtaining <xref:System.Windows.Automation.AutomationElement> objects for [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] elements.  
   
 > [!CAUTION]
->  If your client application might attempt to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread. For more information, see [UI Automation Threading Issues](../../../docs/framework/ui-automation/ui-automation-threading-issues.md).  
+> If your client application might attempt to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread. For more information, see [UI Automation Threading Issues](ui-automation-threading-issues.md).  
   
 <a name="The_Root_Element"></a>   
 ## Root Element  
@@ -24,7 +22,7 @@ ms.author: "mhopkins"
  The root element for the desktop, from which all elements are descended, is obtained from the static <xref:System.Windows.Automation.AutomationElement.RootElement%2A?displayProperty=nameWithType> property.  
   
 > [!CAUTION]
->  In general, you should try to obtain only direct children of the <xref:System.Windows.Automation.AutomationElement.RootElement%2A>. A search for descendants may iterate through hundreds or even thousands of elements, possibly resulting in a stack overflow. If you are attempting to obtain a specific element at a lower level, you should start your search from the application window or from a container at a lower level.  
+> In general, you should try to obtain only direct children of the <xref:System.Windows.Automation.AutomationElement.RootElement%2A>. A search for descendants may iterate through hundreds or even thousands of elements, possibly resulting in a stack overflow. If you are attempting to obtain a specific element at a lower level, you should start your search from the application window or from a container at a lower level.  
   
 <a name="Using_Conditions"></a>   
 ## Conditions  
@@ -81,7 +79,7 @@ ms.author: "mhopkins"
 ### From an Event  
  When your application receives a [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] event, the source object passed to your event handler is an <xref:System.Windows.Automation.AutomationElement>. For example, if you have subscribed to focus-changed events, the source passed to your <xref:System.Windows.Automation.AutomationFocusChangedEventHandler> is the element that received the focus.  
   
- For more information, see [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md).  
+ For more information, see [Subscribe to UI Automation Events](subscribe-to-ui-automation-events.md).  
   
 ### From a Point  
  If you have screen coordinates (for example, a cursor position), you can retrieve an <xref:System.Windows.Automation.AutomationElement> by using the static <xref:System.Windows.Automation.AutomationElement.FromPoint%2A> method.  
@@ -93,6 +91,7 @@ ms.author: "mhopkins"
  You can retrieve an <xref:System.Windows.Automation.AutomationElement> that represents the focused control from the static <xref:System.Windows.Automation.AutomationElement.FocusedElement%2A> property.  
   
 ## See also
-- [Find a UI Automation Element Based on a Property Condition](../../../docs/framework/ui-automation/find-a-ui-automation-element-based-on-a-property-condition.md)
-- [Navigate Among UI Automation Elements with TreeWalker](../../../docs/framework/ui-automation/navigate-among-ui-automation-elements-with-treewalker.md)
-- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
+
+- [Find a UI Automation Element Based on a Property Condition](find-a-ui-automation-element-based-on-a-property-condition.md)
+- [Navigate Among UI Automation Elements with TreeWalker](navigate-among-ui-automation-elements-with-treewalker.md)
+- [UI Automation Tree Overview](ui-automation-tree-overview.md)

@@ -23,14 +23,14 @@ Gets the amount of physical memory that is currently in use, and therefore unava
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMemoryLoad (  
     [out] DWORD*  pMemoryLoad,   
     [out] SIZE_T  *pAvailableBytes  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMemoryLoad`  
  [out] A pointer to the approximate percentage of total physical memory that is currently in use.  
   
@@ -63,5 +63,6 @@ HRESULT GetMemoryLoad (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.GC?displayProperty=nameWithType>
 - [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)

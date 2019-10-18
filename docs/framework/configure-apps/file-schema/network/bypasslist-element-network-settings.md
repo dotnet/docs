@@ -12,10 +12,10 @@ ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
 # \<bypasslist> Element (Network Settings)
 Provides a set of regular expressions that describe addresses that do not use a proxy.  
   
- \<configuration>  
-\<system.net>  
-\<defaultProxy>  
-\<bypasslist>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<bypasslist>**  
   
 ## Syntax  
   
@@ -34,22 +34,22 @@ Provides a set of regular expressions that describe addresses that do not use a 
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[add](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-bypasslist-network-settings.md)|Adds an IP address or DNS name to the proxy bypass list.|  
-|[clear](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-bypasslist-network-settings.md)|Clears the bypass list.|  
-|[remove](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-bypasslist-network-settings.md)|Removes an IP address or DNS name from the proxy bypass list.|  
+|[add](add-element-for-bypasslist-network-settings.md)|Adds an IP address or DNS name to the proxy bypass list.|  
+|[clear](clear-element-for-bypasslist-network-settings.md)|Clears the bypass list.|  
+|[remove](remove-element-for-bypasslist-network-settings.md)|Removes an IP address or DNS name from the proxy bypass list.|  
   
 ### Parent Elements  
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[defaultProxy](../../../../../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
+|[defaultProxy](defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
   
 ## Remarks  
  The bypass list contains regular expressions that describe URIs that <xref:System.Net.WebRequest> instances access directly instead of through the proxy server.  
   
  You should use caution when specifying a regular expression for this element. The regular expression "[a-z]+\\.contoso\\.com" matches any host in the contoso.com domain, but it also matches any host in the contoso.com.cpandl.com domain. To match only a host in the contoso.com domain, use an anchor ("$"): "[a-z]+\\.contoso\\.com$".  
   
- For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../../docs/standard/base-types/regular-expressions.md).  
+ For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../standard/base-types/regular-expressions.md).  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
@@ -71,5 +71,6 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ```  
   
 ## See also
+
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

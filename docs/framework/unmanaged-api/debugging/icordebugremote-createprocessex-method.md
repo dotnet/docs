@@ -23,7 +23,7 @@ Launches a process on a remote machine under the debugger.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateProcessEx (  
     [in]  ICorDebugRemoteTarget*      pRemoteTarget,  
     [in]  LPCWSTR                     lpApplicationName,  
@@ -41,7 +41,7 @@ HRESULT CreateProcessEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRemoteTarget`  
  [in] Pointer to an [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md). Used to determine the remote machine on which the process will be launched.  
   
@@ -101,6 +101,7 @@ HRESULT CreateProcessEx (
  **.NET Framework Versions:** 4.5, 4, 3.5 SP1  
   
 ## See also
+
 - [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
 - [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
 

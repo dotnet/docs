@@ -25,7 +25,7 @@ Adds a .reloc instruction to the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddSectionReloc (  
    [in] HCEESECTION            section,  
    [in] ULONG                  offset,  
@@ -34,7 +34,7 @@ HRESULT AddSectionReloc (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The section of in-memory code to which to add a .reloc instruction.  
   
@@ -57,4 +57,5 @@ HRESULT AddSectionReloc (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

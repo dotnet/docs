@@ -23,13 +23,13 @@ Gets the physical thread this call chain is part of.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread (  
     [out] ICorDebugThread    **ppThread  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppThread`  
  [out] A pointer to an ICorDebugThread object that represents the physical thread this call chain is part of.  
   

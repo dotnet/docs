@@ -11,16 +11,17 @@ helpviewer_keywords:
 ms.assetid: 47ad531d-a4da-4e99-b12e-1de710c32493
 ---
 # Geometries
-<xref:System.Windows.Media.Geometry> is a versatile class, used to render [!INCLUDE[TLA#tla_2d](../../../../includes/tlasharptla-2d-md.md)] graphics, hit-test objects, and define clipping regions  
+<xref:System.Windows.Media.Geometry> is a versatile class, used to render 2-D graphics, hit-test objects, and define clipping regions  
   
 ## In This Section  
- [Path Markup Syntax](../../../../docs/framework/wpf/graphics-multimedia/path-markup-syntax.md)  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)  
+ [Path Markup Syntax](path-markup-syntax.md)  
+ [Geometry Overview](geometry-overview.md)  
+ [How-to Topics](geometries-how-to-topics.md)  
   
 ## See also
+
 - <xref:System.Windows.Media.Brushes>
 - <xref:System.Windows.Shapes.Shape>
-- [2D Graphics and Imaging](../../../../docs/framework/wpf/advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)
-- [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)
+- [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
+- [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)
+- [Graphics and Multimedia](index.md)

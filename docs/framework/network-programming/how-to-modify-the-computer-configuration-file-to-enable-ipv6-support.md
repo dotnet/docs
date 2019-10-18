@@ -13,7 +13,7 @@ The following code example shows how to modify the computer configuration file, 
  For .NET Framework version 2.0 and later, if Windows supports IPv6, then all members of the <xref:System.Net.Dns?displayProperty=nameWithType> class (for example, the <xref:System.Net.Dns.GetHostEntry%2A?displayProperty=nameWithType> method), will return IPv6 addresses with one limitation. Obsolete members of the <xref:System.Net.Dns?displayProperty=nameWithType> class (for example, the <xref:System.Net.Dns.Resolve%2A?displayProperty=nameWithType> method) will read and recognize the value in the configuration file.  
   
 > [!NOTE]
->  For .NET Framework version 2.0 and later, IPv6 is enabled by default. For .NET Framework version 1.1 and earlier, IPv6 is disabled by default.  
+> For .NET Framework version 2.0 and later, IPv6 is enabled by default. For .NET Framework version 1.1 and earlier, IPv6 is disabled by default.  
   
 ## Example  
   
@@ -30,6 +30,7 @@ The following code example shows how to modify the computer configuration file, 
 ```  
   
 ## See also
-- [IPv6 Addressing](../../../docs/framework/network-programming/ipv6-addressing.md)
-- [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)
-- [\<ipv6> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)
+
+- [IPv6 Addressing](ipv6-addressing.md)
+- [Network Settings Schema](../configure-apps/file-schema/network/index.md)
+- [\<ipv6> Element (Network Settings)](../configure-apps/file-schema/network/ipv6-element-network-settings.md)

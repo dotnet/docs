@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
 ---
 # TypeOf Operator (Visual Basic)
-Compares an object reference variable to a data type.  
+Checks whether the runtime type of an expression's result is type-compatible with the specified type.
   
 ## Syntax  
   
-```  
+```vb  
 result = TypeOf objectexpression Is typename  
 ```  
   
-```  
+```vb  
 result = TypeOf objectexpression IsNot typename  
 ```  
   
@@ -52,11 +52,12 @@ result = TypeOf objectexpression IsNot typename
 ## Example  
  The following example uses `TypeOf`...`Is` expressions to test the type compatibility of two object reference variables with various data types.  
   
- [!code-vb[VbVbalrOperators#39](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/typeof-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#39](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#39)]  
   
  The variable `refInteger` has a run-time type of `Integer`. It is compatible with `Integer` but not with `Double`. The variable `refForm` has a run-time type of <xref:System.Windows.Forms.Form>. It is compatible with <xref:System.Windows.Forms.Form> because that is its type, with <xref:System.Windows.Forms.Control> because <xref:System.Windows.Forms.Form> inherits from <xref:System.Windows.Forms.Control>, and with <xref:System.ComponentModel.IComponent> because <xref:System.Windows.Forms.Form> inherits from <xref:System.ComponentModel.Component>, which implements <xref:System.ComponentModel.IComponent>. However, `refForm` is not compatible with <xref:System.Windows.Forms.Label>.  
   
 ## See also
+
 - [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)
 - [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)
 - [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)

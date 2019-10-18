@@ -23,7 +23,7 @@ Sets or changes features of a method parameter that was defined by a prior call 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetParamProps (   
     [in]  mdParamDef  pd,   
     [in]  LPCWSTR     szName,   
@@ -34,7 +34,7 @@ HRESULT SetParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pd`  
  [in] The token for the target parameter.  
   
@@ -63,5 +63,6 @@ HRESULT SetParamProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

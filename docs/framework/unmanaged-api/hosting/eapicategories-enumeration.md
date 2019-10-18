@@ -22,7 +22,7 @@ Describes the categories of capabilities that the host can block from running in
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eNoCategory               = 0,  
     eSynchronization          = 0x1,  
@@ -69,5 +69,6 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRHostProtectionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-interface.md)
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

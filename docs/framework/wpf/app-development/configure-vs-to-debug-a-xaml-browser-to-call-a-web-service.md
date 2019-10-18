@@ -15,15 +15,15 @@ ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
 ## Configuring Visual Studio
  To configure Visual Studio 2005 to debug an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] that calls a Web service:
 
-1.  With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.
+1. With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.
 
-2.  In the **Project Designer**, click the **Debug** tab.
+2. In the **Project Designer**, click the **Debug** tab.
 
-3.  In the **Start Action** section, select **Start external program** and enter the following:
+3. In the **Start Action** section, select **Start external program** and enter the following:
 
      `C:\WINDOWS\System32\PresentationHost.exe`
 
-4.  In the **Start Options** section, enter the following into the **Command line arguments** text box:
+4. In the **Start Options** section, enter the following into the **Command line arguments** text box:
 
      `-debug`  *filename*
 
@@ -32,23 +32,23 @@ ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
      `-debug c:\example.xbap`
 
 > [!NOTE]
->  This is the default configuration for solutions that are created with the Visual Studio 2005 [!INCLUDE[TLA#tla_wpfbrowserappproj](../../../../includes/tlasharptla-wpfbrowserappproj-md.md)] project template.
+> This is the default configuration for solutions that are created with the Visual Studio 2005 [!INCLUDE[TLA#tla_wpfbrowserappproj](../../../../includes/tlasharptla-wpfbrowserappproj-md.md)] project template.
 
-1.  With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.
+1. With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.
 
-2.  In the **Project Designer**, click the **Debug** tab.
+2. In the **Project Designer**, click the **Debug** tab.
 
-3.  In the **Start Options** section, add the following command-line parameter to the **Command line arguments** text box:
+3. In the **Start Options** section, add the following command-line parameter to the **Command line arguments** text box:
 
      `-debugSecurityZoneURL`  *URL*
 
-     The *URL* value for the **-debugSecurityZoneURL** parameter is the [!INCLUDE[TLA#tla_url](../../../../includes/tlasharptla-url-md.md)] for the location that you want to simulate as being the site of origin of your application.
+     The *URL* value for the **-debugSecurityZoneURL** parameter is the URL for the location that you want to simulate as being the site of origin of your application.
 
- As an example, consider a [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)] that uses a Web service with the following [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)]:
+ As an example, consider a [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)] that uses a Web service with the following URL:
 
  `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
- The site of origin [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)] for this Web service is:
+ The site of origin URL for this Web service is:
 
  `http://services.msdn.microsoft.com`
 
@@ -57,4 +57,5 @@ ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
  `-debugSecurityZoneURL http://services.msdn.microsoft.com`
 
 ## See also
-- [WPF Host (PresentationHost.exe)](../../../../docs/framework/wpf/app-development/wpf-host-presentationhost-exe.md)
+
+- [WPF Host (PresentationHost.exe)](wpf-host-presentationhost-exe.md)

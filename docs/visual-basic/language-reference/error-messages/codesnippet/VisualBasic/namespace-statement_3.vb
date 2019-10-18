@@ -1,1 +1,0 @@
-    Dim instance As New n1.n2.a

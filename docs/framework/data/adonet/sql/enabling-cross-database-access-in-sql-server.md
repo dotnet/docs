@@ -9,12 +9,12 @@ Cross-database ownership chaining occurs when a procedure in one database depend
 ## Off By Default  
  Ownership chaining across databases is turned off by default. Microsoft recommends that you disable cross-database ownership chaining because it exposes you to the following security risks:  
   
--   Database owners and members of the `db_ddladmin` or the `db_owners` database roles can create objects that are owned by other users. These objects can potentially target objects in other databases. This means that if you enable cross-database ownership chaining, you must fully trust these users with data in all databases.  
+- Database owners and members of the `db_ddladmin` or the `db_owners` database roles can create objects that are owned by other users. These objects can potentially target objects in other databases. This means that if you enable cross-database ownership chaining, you must fully trust these users with data in all databases.  
   
--   Users with CREATE DATABASE permission can create new databases and attach existing databases. If cross-database ownership chaining is enabled, these users can access objects in other databases that they might not have privileges in from the newly created or attached databases that they create.  
+- Users with CREATE DATABASE permission can create new databases and attach existing databases. If cross-database ownership chaining is enabled, these users can access objects in other databases that they might not have privileges in from the newly created or attached databases that they create.  
   
 ## Enabling Cross-database Ownership Chaining  
- Cross-database ownership chaining should only be enabled in environments where you can fully trust highly-privileged users. It can be configured during setup for all databases, or selectively for specific databases using the [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] commands `sp_configure` and `ALTER DATABASE`.  
+ Cross-database ownership chaining should only be enabled in environments where you can fully trust highly-privileged users. It can be configured during setup for all databases, or selectively for specific databases using the Transact-SQL commands `sp_configure` and `ALTER DATABASE`.  
   
  To selectively configure cross-database ownership chaining, use `sp_configure` to turn it off for the server. Then use the ALTER DATABASE command with SET DB_CHAINING ON to configure cross-database ownership chaining for only the databases that require it.  
   
@@ -45,9 +45,10 @@ ALTER DATABASE Database2 SET DB_CHAINING ON;
 |[Extending Database Impersonation by Using EXECUTE AS](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms188304(v=sql.105)) and [Cross DB Ownership Chaining Option](/sql/database-engine/configure-windows/cross-db-ownership-chaining-server-configuration-option).|Articles describe how to configure cross-database ownership chaining for an instance of SQL Server.|  
   
 ## See also
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
-- [Managing Permissions with Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)
-- [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)
-- [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [Overview of SQL Server Security](overview-of-sql-server-security.md)
+- [Managing Permissions with Stored Procedures in SQL Server](managing-permissions-with-stored-procedures-in-sql-server.md)
+- [Writing Secure Dynamic SQL in SQL Server](writing-secure-dynamic-sql-in-sql-server.md)
+- [Signing Stored Procedures in SQL Server](signing-stored-procedures-in-sql-server.md)
+- [ADO.NET Overview](../ado-net-overview.md)

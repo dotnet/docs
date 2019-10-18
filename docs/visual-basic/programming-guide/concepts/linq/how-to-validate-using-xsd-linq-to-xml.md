@@ -61,7 +61,7 @@ End Sub
   
  This example produces the following output:  
   
-```  
+```console  
 Validating doc1  
 doc1 validated  
   
@@ -107,7 +107,7 @@ End Sub
   
  This example produces the following output:  
   
-```  
+```console  
 Attempting to validate  
 custOrdDoc validated  
   
@@ -117,5 +117,6 @@ custOrdDoc did not validate
 ```  
   
 ## See also
+
 - <xref:System.Xml.Schema.Extensions.Validate%2A>
 - [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)

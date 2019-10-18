@@ -23,14 +23,14 @@ Allows updating the line information for a method that has not been recompiled, 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateMethodLines(  
     [in]  mdMethodDef  mdMethodToken,  
     [in, size_is(cDeltas)] INT32*  pDeltas,  
     [in]  ULONG        cDeltas);  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdMethodToken`  
  [in] The metadata of the method token.  
   
@@ -47,4 +47,5 @@ HRESULT UpdateMethodLines(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)

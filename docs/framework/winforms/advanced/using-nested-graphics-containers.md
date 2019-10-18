@@ -11,27 +11,27 @@ helpviewer_keywords:
 ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
 ---
 # Using Nested Graphics Containers
-[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides containers that you can use to temporarily replace or augment part of the state in a <xref:System.Drawing.Graphics> object. You create a container by calling the <xref:System.Drawing.Graphics.BeginContainer%2A> method of a <xref:System.Drawing.Graphics> object. You can call <xref:System.Drawing.Graphics.BeginContainer%2A> repeatedly to form nested containers. Each call to <xref:System.Drawing.Graphics.BeginContainer%2A> must be paired with a call to <xref:System.Drawing.Graphics.EndContainer%2A>.  
+GDI+ provides containers that you can use to temporarily replace or augment part of the state in a <xref:System.Drawing.Graphics> object. You create a container by calling the <xref:System.Drawing.Graphics.BeginContainer%2A> method of a <xref:System.Drawing.Graphics> object. You can call <xref:System.Drawing.Graphics.BeginContainer%2A> repeatedly to form nested containers. Each call to <xref:System.Drawing.Graphics.BeginContainer%2A> must be paired with a call to <xref:System.Drawing.Graphics.EndContainer%2A>.  
   
 ## Transformations in Nested Containers  
  The following example creates a <xref:System.Drawing.Graphics> object and a container within that <xref:System.Drawing.Graphics> object. The world transformation of the <xref:System.Drawing.Graphics> object is a translation 100 units in the x direction and 80 units in the y direction. The world transformation of the container is a 30-degree rotation. The code makes the call `DrawRectangle(pen, -60, -30, 120, 60)` twice. The first call to <xref:System.Drawing.Graphics.DrawRectangle%2A> is inside the container; that is, the call is in between the calls to <xref:System.Drawing.Graphics.BeginContainer%2A> and <xref:System.Drawing.Graphics.EndContainer%2A>. The second call to <xref:System.Drawing.Graphics.DrawRectangle%2A> is after the call to <xref:System.Drawing.Graphics.EndContainer%2A>.  
   
- [!code-csharp[System.Drawing.MiscLegacyTopics#61](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#61)]
- [!code-vb[System.Drawing.MiscLegacyTopics#61](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#61)]  
+ [!code-csharp[System.Drawing.MiscLegacyTopics#61](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#61)]
+ [!code-vb[System.Drawing.MiscLegacyTopics#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#61)]  
   
- In the preceding code, the rectangle drawn from inside the container is transformed first by the world transformation of the container (rotation) and then by the world transformation of the <xref:System.Drawing.Graphics> object (translation). The rectangle drawn from outside the container is transformed only by the world transformation of the <xref:System.Drawing.Graphics> object (translation). The following illustration shows the two rectangles.  
+ In the preceding code, the rectangle drawn from inside the container is transformed first by the world transformation of the container (rotation) and then by the world transformation of the <xref:System.Drawing.Graphics> object (translation). The rectangle drawn from outside the container is transformed only by the world transformation of the <xref:System.Drawing.Graphics> object (translation). The following illustration shows the two rectangles: 
   
- ![Nested Containers](../../../../docs/framework/winforms/advanced/media/csnestedcontainers1.png "csnestedcontainers1")  
+ ![Illustration that shows nested containers.](./media/using-nested-graphics-containers/nested-containers-illustration.png)  
   
 ## Clipping in Nested Containers  
  The following example demonstrates how nested containers handle clipping regions. The code creates a <xref:System.Drawing.Graphics> object and a container within that <xref:System.Drawing.Graphics> object. The clipping region of the <xref:System.Drawing.Graphics> object is a rectangle, and the clipping region of the container is an ellipse. The code makes two calls to the <xref:System.Drawing.Graphics.DrawLine%2A> method. The first call to <xref:System.Drawing.Graphics.DrawLine%2A> is inside the container, and the second call to <xref:System.Drawing.Graphics.DrawLine%2A> is outside the container (after the call to <xref:System.Drawing.Graphics.EndContainer%2A>). The first line is clipped by the intersection of the two clipping regions. The second line is clipped only by the rectangular clipping region of the <xref:System.Drawing.Graphics> object.  
   
- [!code-csharp[System.Drawing.MiscLegacyTopics#62](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#62)]
- [!code-vb[System.Drawing.MiscLegacyTopics#62](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#62)]  
+ [!code-csharp[System.Drawing.MiscLegacyTopics#62](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#62)]
+ [!code-vb[System.Drawing.MiscLegacyTopics#62](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#62)]  
   
- The following illustration shows the two clipped lines.  
+ The following illustration shows the two clipped lines:
   
- ![Nested Container](../../../../docs/framework/winforms/advanced/media/nestedcontainers2.png "nestedcontainers2")  
+ ![Illustration that shows a nested container with clipped lines.](./media/using-nested-graphics-containers/nested-container-clipped-lines.png)  
   
  As the two preceding examples show, transformations and clipping regions are cumulative in nested containers. If you set the world transformations of the container and the <xref:System.Drawing.Graphics> object, both transformations will apply to items drawn from inside the container. The transformation of the container will be applied first, and the transformation of the <xref:System.Drawing.Graphics> object will be applied second. If you set the clipping regions of the container and the <xref:System.Drawing.Graphics> object, items drawn from inside the container will be clipped by the intersection of the two clipping regions.  
   
@@ -43,13 +43,14 @@ ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
   
  The following example creates a <xref:System.Drawing.Graphics> object and sets its text rendering hint to <xref:System.Drawing.Drawing2D.SmoothingMode.AntiAlias>. The code creates two containers, one nested within the other. The text rendering hint of the outer container is set to <xref:System.Drawing.Text.TextRenderingHint.SingleBitPerPixel>, and the text rendering hint of the inner container is set to <xref:System.Drawing.Drawing2D.SmoothingMode.AntiAlias>. The code draws three strings: one from the inner container, one from the outer container, and one from the <xref:System.Drawing.Graphics> object itself.  
   
- [!code-csharp[System.Drawing.MiscLegacyTopics#63](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#63)]
- [!code-vb[System.Drawing.MiscLegacyTopics#63](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#63)]  
+ [!code-csharp[System.Drawing.MiscLegacyTopics#63](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#63)]
+ [!code-vb[System.Drawing.MiscLegacyTopics#63](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/VB/Class1.vb#63)]  
   
  The following illustration shows the three strings. The strings drawn from the inner container and from the <xref:System.Drawing.Graphics> object are smoothed by antialiasing. The string drawn from the outer container is not smoothed by antialiasing because the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property is set to <xref:System.Drawing.Text.TextRenderingHint.SingleBitPerPixel>.  
   
- ![Nested Containers](../../../../docs/framework/winforms/advanced/media/nestedcontainers3.png "nestedcontainers3")  
+ ![Illustration that shows the strings drawn from nested containers.](./media/using-nested-graphics-containers/nested-containers-three-strings.png)  
   
 ## See also
+
 - <xref:System.Drawing.Graphics>
-- [Managing the State of a Graphics Object](../../../../docs/framework/winforms/advanced/managing-the-state-of-a-graphics-object.md)
+- [Managing the State of a Graphics Object](managing-the-state-of-a-graphics-object.md)

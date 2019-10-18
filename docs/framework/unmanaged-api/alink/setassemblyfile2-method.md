@@ -22,7 +22,7 @@ Sets the name of and options for a new assembly. Do not call this method when yo
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyFile2(  
     LPCWSTR pszFilename,  
     IMetaDataEmit2* pEmitter,  
@@ -31,15 +31,15 @@ HRESULT SetAssemblyFile2(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Name of manifest file.  
   
  `pEmitter`  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md) interface for this file.  
+ [IMetaDataEmit2 Interface](../metadata/imetadataemit2-interface.md) interface for this file.  
   
  `afFlags`  
- Options represented by [AssemblyFlags Enumeration](../../../../docs/framework/unmanaged-api/metadata/assemblyflags-enumeration.md).  
+ Options represented by [AssemblyFlags Enumeration](../metadata/assemblyflags-enumeration.md).  
   
  `pAssemblyID`  
  Receives unique ID for the assembly being constructed.  
@@ -51,6 +51,7 @@ HRESULT SetAssemblyFile2(
  Requires alink.h.  
   
 ## See also
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink2 Interface](ialink2-interface.md)
+- [IALink Interface](ialink-interface.md)
+- [ALink API](index.md)

@@ -32,7 +32,7 @@ The following are current known issues with the optional `WM_POINTER`-based touc
 
   - Drag/Drop can no longer be initiated on touch/stylus events.
 
-      This can potentially hang the application until mouse input is detected. Instead, developers should initiate drag and drop from mouse events.
+      This can potentially cause the application to become unresponsive until mouse input is detected. Instead, developers should initiate drag and drop from mouse events.
 
 ## Opting in to WM_POINTER-based touch/stylus support
 
@@ -50,4 +50,4 @@ Removing this entry or setting its value to `false` turns this optional stack of
 
 ## See also
 
-- [Retargeting Changes in the .NET Framework 4.7](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md)
+- [Retargeting Changes in the .NET Framework 4.7](retargeting-changes-in-the-net-framework-4-7.md)

@@ -9,17 +9,17 @@ This section discusses schema collection support for the OLE DB providers for Mi
 ## Microsoft SQL Server OLE DB Provider  
  The Microsoft SQL Server OLE DB Driver supports the following specific schema collections in addition to the common schema collections:  
   
--   Tables  
+- Tables  
   
--   Columns  
+- Columns  
   
--   Procedures  
+- Procedures  
   
--   ProcedureParameters  
+- ProcedureParameters  
   
--   Catalog  
+- Catalog  
   
--   Indexes  
+- Indexes  
   
 ### Tables  
   
@@ -148,19 +148,19 @@ This section discusses schema collection support for the OLE DB providers for Mi
 ## Microsoft Oracle OLE DB Provider  
  The Microsoft Oracle OLE DB Driver supports the following specific schema collections in addition to the common schema collections:  
   
--   Tables  
+- Tables  
   
--   Columns  
+- Columns  
   
--   Procedures  
+- Procedures  
   
--   ProcedureColumns  
+- ProcedureColumns  
   
--   ProcedureParameters  
+- ProcedureParameters  
   
--   Views  
+- Views  
   
--   Indexes  
+- Indexes  
   
 ### Tables  
   
@@ -291,15 +291,15 @@ This section discusses schema collection support for the OLE DB providers for Mi
 ## Microsoft Jet OLE DB Provider  
  The Microsoft Jet OLE DB Driver supports the following specific schema collections in addition to the common schema collections:  
   
--   Tables  
+- Tables  
   
--   Columns  
+- Columns  
   
--   Procedures  
+- Procedures  
   
--   Views  
+- Views  
   
--   Indexes  
+- Indexes  
   
 ### Tables  
   
@@ -406,4 +406,5 @@ This section discusses schema collection support for the OLE DB providers for Mi
 |INTEGRATED|Boolean|  
   
 ## See also
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [ADO.NET Overview](ado-net-overview.md)

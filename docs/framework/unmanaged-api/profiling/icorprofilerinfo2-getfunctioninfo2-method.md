@@ -23,7 +23,7 @@ Gets the parent class, the metadata token, and the `ClassID` of each type argume
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionInfo2(  
     [in]  FunctionID funcId,  
     [in]  COR_PRF_FRAME_INFO frameInfo,  
@@ -35,7 +35,7 @@ HRESULT GetFunctionInfo2(
     [out] ClassID typeArgs[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcId`  
  [in] The ID of the function for which to get the parent class and other information.  
   
@@ -85,6 +85,7 @@ HRESULT GetFunctionInfo2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

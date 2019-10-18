@@ -32,15 +32,15 @@ xmlns="http://schemas.microsoft.com/2009/workflow">
 ## Activity Context  
  The <xref:System.Activities.ActivityContext> is the activity author's interface to the workflow runtime and provides access to the runtime's wealth of features. In the following example, an activity is defined that uses the execution context to create a bookmark (the mechanism that allows an activity to register a continuation point in its execution that can be resumed by a host passing data into the activity).  
   
- [!code-csharp[CFX_WorkflowApplicationExample#15](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
+ [!code-csharp[CFX_WorkflowApplicationExample#15](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
   
 ## Activity Life Cycle  
- An instance of an activity starts out in the <xref:System.Activities.ActivityInstanceState.Executing> state. Unless exceptions are encountered, it remains in this state until all child activities are finished executing and any other pending work (<xref:System.Activities.Bookmark> objects, for instance) is completed, at which point it transitions to the <xref:System.Activities.ActivityInstanceState.Closed> state. The parent of an activity instance can request a child to cancel; if the child is able to be canceled it completes in the <xref:System.Activities.ActivityInstanceState.Canceled> state. If an exception is thrown during execution, the runtime puts the activity into the <xref:System.Activities.ActivityInstanceState.Faulted> state and propagates the exception up the parent chain of activities. Following are the three completion states of an activity:  
+ An instance of an activity starts out in the <xref:System.Activities.ActivityInstanceState.Executing> state. Unless exceptions are encountered, it remains in this state until all child activities are finished executing and any other pending work (<xref:System.Activities.Bookmark> objects, for instance) is completed, at which point it transitions to the <xref:System.Activities.ActivityInstanceState.Closed> state. The parent of an activity instance can request a child to cancel; if the child is able to be canceled it completes in the <xref:System.Activities.ActivityInstanceState.Canceled> state. If an exception is thrown during execution, the runtime puts the activity into the <xref:System.Activities.ActivityInstanceState.Faulted> state and propagates the exception up the parent chain of activities. The following are the three completion states of an activity:
   
--   **Closed:** The activity has completed its work and exited.  
+- **Closed:** The activity has completed its work and exited.  
   
--   **Canceled:** The activity has gracefully abandoned its work and exited. Work is not explicitly rolled back when this state is entered.  
+- **Canceled:** The activity has gracefully abandoned its work and exited. Work is not explicitly rolled back when this state is entered.  
   
--   **Faulted:** The activity has encountered an error and has exited without completing its work.  
+- **Faulted:** The activity has encountered an error and has exited without completing its work.  
   
  Activities remain in the <xref:System.Activities.ActivityInstanceState.Executing> state when they are persisted or unloaded.

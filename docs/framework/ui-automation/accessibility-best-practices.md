@@ -5,14 +5,12 @@ helpviewer_keywords:
   - "best practices for accessibility"
   - "accessibility, best practices for"
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Accessibility Best Practices
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
- Implementing the following best practices in controls or applications will improve their accessibility for people who use [!INCLUDE[TLA#tla_at](../../../includes/tlasharptla-at-md.md)] devices. Many of these best practices focus on good [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] design. Each best practice includes implementation information for [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls or applications. In many cases, the work to meet these best practices is already included in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls.  
+ Implementing the following best practices in controls or applications will improve their accessibility for people who use assistive technology devices. Many of these best practices focus on good [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] design. Each best practice includes implementation information for [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls or applications. In many cases, the work to meet these best practices is already included in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls.  
   
 <a name="Programmatic_Access"></a>   
 ## Programmatic Access  
@@ -20,19 +18,19 @@ ms.author: "mhopkins"
   
 <a name="Enable_Programmatic_Access_to_all_UI_Elements_and_Text"></a>   
 ### Enable Programmatic Access to all UI Elements and Text  
- [!INCLUDE[TLA#tla_ui#initcap](../../../includes/tlasharptla-uisharpinitcap-md.md)] elements should enable programmatic access. If the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] is a standard [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] control, support for programmatic access is included in the control. If the control is a custom control – a control that has been subclassed from a common control or a control that has been subclassed from Control – then you must check the <xref:System.Windows.Automation.Peers.AutomationPeer> implementation for areas that may need modification.  
+ User interface (UI) elements should enable programmatic access. If the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] is a standard [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] control, support for programmatic access is included in the control. If the control is a custom control – a control that has been subclassed from a common control or a control that has been subclassed from Control – then you must check the <xref:System.Windows.Automation.Peers.AutomationPeer> implementation for areas that may need modification.  
   
- Following this best practice allows [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] vendors to identify and manipulate elements of your product's [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
+ Following this best practice allows assistive technology vendors to identify and manipulate elements of your product's [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
   
 <a name="Place_Names__Titles_and_Descriptions_on_UI_Objects_"></a>   
 ### Place Names, Titles, and Descriptions on UI Objects, Frames, and Pages  
- Assistive technologies, especially screen readers, use the title to understand the location of the frame, object, or page in the navigation scheme. Therefore, the title must be very descriptive. For example, a Web page title of "Microsoft Web Page" is useless if the user has navigated deeply into some particular area. A descriptive title is critical for users who are blind and depend on screen readers. Similarly, for [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls, <xref:System.Windows.Automation.AutomationProperties.NameProperty> and <xref:System.Windows.Automation.AutomationProperties.HelpTextProperty> are important for [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] devices.  
+ Assistive technologies, especially screen readers, use the title to understand the location of the frame, object, or page in the navigation scheme. Therefore, the title must be very descriptive. For example, a Web page title of "Microsoft Web Page" is useless if the user has navigated deeply into some particular area. A descriptive title is critical for users who are blind and depend on screen readers. Similarly, for [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls, <xref:System.Windows.Automation.AutomationProperties.NameProperty> and <xref:System.Windows.Automation.AutomationProperties.HelpTextProperty> are important for assistive technology devices.  
   
- Following this best practice allows [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)]s to identify and manipulate [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] in sample controls and applications.  
+ Following this best practice allows assistive technologys to identify and manipulate [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] in sample controls and applications.  
   
 <a name="Ensure_Programmatic_Events_are_Triggered_by_all_UI"></a>   
 ### Ensure Programmatic Events Are Triggered by All UI Activities  
- Following this best practice allows [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)]s to listen for changes in the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] and notify the user about these changes.  
+ Following this best practice allows assistive technologys to listen for changes in the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] and notify the user about these changes.  
   
 <a name="User_Settings"></a>   
 ## User Settings  
@@ -46,7 +44,7 @@ ms.author: "mhopkins"
   
 <a name="Visual_UI_Design"></a>   
 ## Visual UI Design  
- Best Practices in this section ensure that controls or applications use color and images effectively and are able to be used by [!INCLUDE[TLA2#tla_at#plural](../../../includes/tla2sharptla-atsharpplural-md.md)].  
+ Best Practices in this section ensure that controls or applications use color and images effectively and are able to be used by Assistive technologies.  
   
 <a name="Don_t_Hard_Code_Colors"></a>   
 ### Don't Hard-Code Colors  
@@ -62,7 +60,7 @@ ms.author: "mhopkins"
   
 <a name="Ensure_all_UI_Correctly_Scales_by_any_DPI_Setting"></a>   
 ### Ensure All UI Correctly Scales by Any DPI Setting  
- Ensure that all [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] can correctly scale by any [!INCLUDE[TLA#tla_dpi](../../../includes/tlasharptla-dpi-md.md)] setting. Also, ensure that [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements fit in a screen of 1024 x 768 with 120 [!INCLUDE[TLA#tla_dpi](../../../includes/tlasharptla-dpi-md.md)].  
+ Ensure that all [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] can correctly scale by any dots per inch (dpi) setting. Also, ensure that [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements fit in a screen of 1024 x 768 with 120 dots per inch (dpi).  
   
 <a name="Navigation"></a>   
 ## Navigation  
@@ -74,9 +72,9 @@ ms.author: "mhopkins"
   
  Applications should provide the following keyboard interfaces:  
   
--   tab stops for all controls that the user can interact with, such as buttons, links, or list boxes  
+- tab stops for all controls that the user can interact with, such as buttons, links, or list boxes  
   
--   logical tab order  
+- logical tab order  
   
 <a name="Show_the_Keyboard_Focus"></a>   
 ### Show the Keyboard Focus  
@@ -86,11 +84,11 @@ ms.author: "mhopkins"
   
  Applications should do the following with keyboard focus:  
   
--   one item should always have keyboard focus  
+- one item should always have keyboard focus  
   
--   keyboard focus should be visible and obvious  
+- keyboard focus should be visible and obvious  
   
--   selections and/or focused items should be visually highlighted  
+- selections and/or focused items should be visually highlighted  
   
 <a name="Support_Navigation_Standards_and_Powerful_Navigation"></a>   
 ### Support Navigation Standards and Powerful Navigation Schemes  
@@ -98,11 +96,11 @@ ms.author: "mhopkins"
   
  Applications should provide the following keyboard interfaces:  
   
--   shortcut keys and underlined access keys for all commands, menus and controls  
+- shortcut keys and underlined access keys for all commands, menus and controls  
   
--   keyboard shortcuts to important links  
+- keyboard shortcuts to important links  
   
--   all menu items have an access key; all buttons have accelerator keys, all commands have an accelerator key.  
+- all menu items have an access key; all buttons have accelerator keys, all commands have an accelerator key.  
   
 <a name="Do_not_let_Mouse_Location_Interfere_with_Keyboard"></a>   
 ### Do Not Let Mouse Location Interfere with Keyboard Navigation  
@@ -124,9 +122,10 @@ ms.author: "mhopkins"
   
 <a name="Use_Standard_Input_APIs_with_Devices_Independent"></a>   
 ### Use Standard Input APIs with Device-Independent Calls  
- Device-independent calls ensure keyboard and mouse feature equality, while providing [!INCLUDE[TLA2#tla_at](../../../includes/tla2sharptla-at-md.md)] with needed information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
+ Device-independent calls ensure keyboard and mouse feature equality, while providing assistive technology with needed information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
   
 ## See also
+
 - <xref:System.Windows.Automation.Peers>
 - [NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771573(v=vs.90))
 - [Guidelines for Keyboard User Interface Design](https://docs.microsoft.com/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)

@@ -1,9 +1,9 @@
 ---
 title: "-deterministic (C# Compiler Options)"
 ms.date: 04/12/2018
-f1_keywords: 
+f1_keywords:
   - "/deterministic"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "-deterministic compiler option [C#]"
   - "deterministic compiler option [C#]"
   - "/deterministic compiler option [C#]"
@@ -12,11 +12,11 @@ ms.author: "ronpet"
 ---
 # -deterministic
 
-Causes the compiler to produce an assembly whose byte-for-byte output is identical across compilations for identical inputs. 
+Causes the compiler to produce an assembly whose byte-for-byte output is identical across compilations for identical inputs.
 
 ## Syntax
 
-```
+```console
 -deterministic
 ```
 
@@ -31,24 +31,24 @@ The compiler considers the following inputs for the purpose of determinism:
 - The precise version of the compiler used, and its referenced assemblies.
 - The current directory path.
 - The binary contents of all files explicitly passed to the compiler either directly or indirectly, including:
-    - Source files
-    - Referenced assemblies
-    - Referenced modules
-    - Resources
-    - The strong name key file
-    - @ response files
-    - Analyzers
-    - Rulesets
-    - Additional files that may be used by analyzers
+  - Source files
+  - Referenced assemblies
+  - Referenced modules
+  - Resources
+  - The strong name key file
+  - @ response files
+  - Analyzers
+  - Rulesets
+  - Additional files that may be used by analyzers
 - The current culture (for the language in which diagnostics and exception messages are produced).
 - The default encoding (or the current code page) if the encoding is not specified.
 - The existence, non-existence, and contents of files on the compiler's search paths (specified, for example, by `/lib` or `/recurse`).
 - The CLR platform on which the compiler is run.
 - The value of `%LIBPATH%`, which can affect analyzer dependency loading.
 
-When sources are publicly available, deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. It can also be useful in a continuous build system for determining whether build steps that are dependent on changes to a binary need to be executed. 
+When sources are publicly available, deterministic compilation can be used for establishing whether a binary is compiled from a trusted source. It can also be useful in a continuous build system for determining whether build steps that are dependent on changes to a binary need to be executed.
 
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

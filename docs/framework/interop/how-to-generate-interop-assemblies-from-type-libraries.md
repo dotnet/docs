@@ -12,11 +12,11 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # How to: Generate Interop Assemblies from Type Libraries
-The [Type Library Importer (Tlbimp.exe)](../../../docs/framework/tools/tlbimp-exe-type-library-importer.md) is a command-line tool that converts the coclasses and interfaces contained in a COM type library to metadata. This tool creates an interop assembly and namespace for the type information automatically. After the metadata of a class is available, managed clients can create instances of the COM type and call its methods, just as if it were a .NET instance. Tlbimp.exe converts an entire type library to metadata at once and cannot generate type information for a subset of the types defined in a type library.  
+The [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-importer.md) is a command-line tool that converts the coclasses and interfaces contained in a COM type library to metadata. This tool creates an interop assembly and namespace for the type information automatically. After the metadata of a class is available, managed clients can create instances of the COM type and call its methods, just as if it were a .NET instance. Tlbimp.exe converts an entire type library to metadata at once and cannot generate type information for a subset of the types defined in a type library.  
   
 ### To generate an interop assembly from a type library  
   
-1.  Use the following command:  
+1. Use the following command:  
   
      **tlbimp** \<*type-library-file*>  
   
@@ -36,5 +36,6 @@ tlbimp LoanLib.tlb /out: LOANLib.dll
 ```  
   
 ## See also
-- [Importing a Type Library as an Assembly](../../../docs/framework/interop/importing-a-type-library-as-an-assembly.md)
-- [Exposing COM Components to the .NET Framework](../../../docs/framework/interop/exposing-com-components.md)
+
+- [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
+- [Exposing COM Components to the .NET Framework](exposing-com-components.md)

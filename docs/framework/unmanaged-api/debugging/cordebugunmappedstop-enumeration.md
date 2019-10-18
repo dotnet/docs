@@ -22,7 +22,7 @@ Specifies the type of unmapped code that can trigger a halt in code execution by
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugUnmappedStop {  
     STOP_NONE               = 0x0,  
     STOP_PROLOG             = 0x01,  
@@ -59,4 +59,5 @@ typedef enum CorDebugUnmappedStop {
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

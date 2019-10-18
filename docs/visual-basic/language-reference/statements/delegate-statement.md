@@ -13,7 +13,7 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
   
 ## Syntax  
   
-```  
+```vb  
 [ <attrlist> ] [ accessmodifier ] _  
 [ Shadows ] Delegate [ Sub | Function ] name [( Of typeparamlist )] [([ parameterlist ])] [ As type ]  
 ```  
@@ -56,9 +56,10 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
 ## Example  
  The following example uses the `Delegate` statement to declare a delegate for operating on two numbers and returning a number. The `DelegateTest` method takes an instance of a delegate of this type and uses it to operate on pairs of numbers.  
   
- [!code-vb[VbVbalrDelegates#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/delegate-statement_1.vb)]  
+ [!code-vb[VbVbalrDelegates#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#14)]  
   
 ## See also
+
 - [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
 - [Of](../../../visual-basic/language-reference/statements/of-clause.md)
 - [Delegates](../../../visual-basic/programming-guide/language-features/delegates/index.md)

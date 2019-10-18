@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: b0efcc88-e8aa-4df4-a00b-8bdef70b7673
 ---
 # -lib (C# Compiler Options)
-The **-lib** option specifies the location of assemblies referenced by means of the [-reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) option.  
+The **-lib** option specifies the location of assemblies referenced by means of the [-reference (C# Compiler Options)](./reference-compiler-option.md) option.  
   
 ## Syntax  
   
@@ -28,13 +28,13 @@ The **-lib** option specifies the location of assemblies referenced by means of 
 ## Remarks  
  The compiler searches for assembly references that are not fully qualified in the following order:  
   
-1.  Current working directory. This is the directory from which the compiler is invoked.  
+1. Current working directory. This is the directory from which the compiler is invoked.  
   
-2.  The common language runtime system directory.  
+2. The common language runtime system directory.  
   
-3.  Directories specified by **-lib**.  
+3. Directories specified by **-lib**.  
   
-4.  Directories specified by the LIB environment variable.  
+4. Directories specified by the LIB environment variable.  
   
  Use **-reference** to specify an assembly reference.  
   
@@ -46,11 +46,11 @@ The **-lib** option specifies the location of assemblies referenced by means of 
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Property Pages** dialog box.  
+1. Open the project's **Property Pages** dialog box.  
   
-2.  Click the **References Path** property page.  
+2. Click the **References Path** property page.  
   
-3.  Modify the contents of the list box.  
+3. Modify the contents of the list box.  
   
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.ReferencePath%2A>.  
   
@@ -63,5 +63,5 @@ csc -lib:c:\ -reference:t2.dll t2.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

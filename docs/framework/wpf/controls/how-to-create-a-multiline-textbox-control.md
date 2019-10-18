@@ -15,9 +15,10 @@ This example shows how to use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlash
   
  The <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> attribute adds a scroll bar to the <xref:System.Windows.Controls.TextBox>, so that the contents of the <xref:System.Windows.Controls.TextBox> can be scrolled through if the <xref:System.Windows.Controls.TextBox> expands beyond the size of the frame or window that encloses it.  
   
- [!code-xaml[TextBox_MiscCode#_MultilineTextBoxXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_multilinetextboxxaml)]  
+ [!code-xaml[TextBox_MiscCode#_MultilineTextBoxXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_multilinetextboxxaml)]  
   
 ## See also
+
 - <xref:System.Windows.TextWrapping>
-- [TextBox Overview](../../../../docs/framework/wpf/controls/textbox-overview.md)
-- [RichTextBox Overview](../../../../docs/framework/wpf/controls/richtextbox-overview.md)
+- [TextBox Overview](textbox-overview.md)
+- [RichTextBox Overview](richtextbox-overview.md)

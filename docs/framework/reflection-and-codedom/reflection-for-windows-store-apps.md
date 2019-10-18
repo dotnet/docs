@@ -12,7 +12,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Reflection in the .NET Framework for Windows Store Apps
-Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the .NET Framework includes a set of reflection types and members for use in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. These types and members are available in the full .NET Framework as well as in the [.NET for Windows Store apps](https://go.microsoft.com/fwlink/?LinkID=225700). This document explains the major differences between these and their counterparts in the .NET Framework 4 and earlier versions.  
+Starting with the .NET Framework 4.5, the .NET Framework includes a set of reflection types and members for use in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. These types and members are available in the full .NET Framework as well as in the [.NET for Windows Store apps](https://go.microsoft.com/fwlink/?LinkID=225700). This document explains the major differences between these and their counterparts in the .NET Framework 4 and earlier versions.  
   
  If you are creating a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app, you must use the reflection types and members in the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)]. These types and members are also available, but not required, for use in desktop apps, so you can use the same code for both types of apps.  
   
@@ -36,5 +36,6 @@ Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], the .NET
  [!code-vb[System.ReflectionWinStoreApp#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.reflectionwinstoreapp/vb/mainpage.xaml.vb#1)]  
   
 ## See also
-- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)
+
+- [Reflection](reflection.md)
 - [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/?LinkID=225700)

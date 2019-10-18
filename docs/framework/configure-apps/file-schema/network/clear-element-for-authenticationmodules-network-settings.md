@@ -14,10 +14,10 @@ ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
 # \<clear> Element for authenticationModules (Network Settings)
 Clears all authentication modules from the application.  
   
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-\<clear>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**  
   
 ## Syntax  
   
@@ -38,7 +38,7 @@ Clears all authentication modules from the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[authenticationModules](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
  The `clear` element removes all authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
@@ -60,6 +60,7 @@ Clears all authentication modules from the application.
 ```  
   
 ## See also
+
 - <xref:System.Net.IAuthenticationModule>
 - <xref:System.Net.AuthenticationManager>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

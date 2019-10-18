@@ -23,7 +23,7 @@ Enumerates ParamDef tokens representing the parameters of the method referenced 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumParams (  
    [in, out] HCORENUM    *phEnum,  
    [in]  mdMethodDef     mb,  
@@ -33,7 +33,7 @@ HRESULT EnumParams (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator. This must be NULL for the first call of this method.  
   
@@ -66,5 +66,6 @@ HRESULT EnumParams (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

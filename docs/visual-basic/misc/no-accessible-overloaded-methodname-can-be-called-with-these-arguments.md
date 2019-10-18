@@ -10,10 +10,11 @@ An overloaded method was called, but no method was matched with the list of prov
   
 ## To correct this error  
   
-1.  Specify `Option Strict Off`.  
+1. Specify `Option Strict Off`.  
   
-2.  Change the arguments to match one of the signatures of the overloaded method.  
+2. Change the arguments to match one of the signatures of the overloaded method.  
   
 ## See also
+
 - [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)
 - [Widening and Narrowing Conversions](../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)

@@ -2,7 +2,7 @@
 title: "Transport Security with Certificate Authentication"
 ms.date: "03/30/2017"
 dev_langs: 
-  - "vb"
+  - "csharp"
 ms.assetid: 3d726b71-4d8b-4581-a3bb-02b9af51d11b
 ---
 # Transport Security with Certificate Authentication
@@ -58,9 +58,9 @@ This topic discusses using X.509 certificates for server and client authenticati
 ## Configure the Client  
  The client can be configured in code or in an app.config file. The following example shows how to configure the client in code.  
   
-```vb  
+```csharp
 // Create the binding.  
-WSHttpBinding myBinding = new WSHttpBinding();  
+var myBinding = new WSHttpBinding();  
 myBinding.Security.Mode = SecurityMode.Transport;  
 myBinding.Security.Transport.ClientCredentialType =  
    HttpClientCredentialType.Certificate;  
@@ -68,13 +68,13 @@ myBinding.Security.Transport.ClientCredentialType =
 // Create the endpoint address. Note that the machine name   
 // must match the subject or DNS field of the X.509 certificate  
 // used to authenticate the service.   
-EndpointAddress ea = new  
+var ea = new  
    EndpointAddress("https://localhost/CalculatorService/service.svc");  
   
 // Create the client. The code for the calculator   
 // client is not shown here. See the sample applications  
 // for examples of the calculator code.  
-CalculatorClient cc =  
+var cc =  
    new CalculatorClient(myBinding, ea);  
   
 // The client must specify a certificate trusted by the server.  
@@ -132,5 +132,6 @@ cc.Close();
 ```  
   
 ## See also
+
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

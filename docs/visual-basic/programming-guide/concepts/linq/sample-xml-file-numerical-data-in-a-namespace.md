@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Numerical Data in a Namespace1"
+title: "Sample XML File: Numerical Data in a Namespace"
 ms.date: 07/20/2015
 ms.assetid: f01cc0a1-fb55-4b42-8380-16f4be47d6f4
 ---
@@ -50,4 +50,5 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
 ```  
   
 ## See also
+
 - [Sample XML Documents (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

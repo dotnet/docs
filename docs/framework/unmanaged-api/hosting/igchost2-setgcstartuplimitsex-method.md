@@ -23,14 +23,14 @@ Sets the segment size and the maximum size for generation 0.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCStartupLimitsEx (  
     [in] SIZE_T SegmentSize,  
     [in] SIZE_T MaxGen0Size  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `SegmentSize`  
  [in] The size of the segment used by the garbage collection system.  
   
@@ -50,4 +50,5 @@ HRESULT SetGCStartupLimitsEx (
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [IGCHost2 Interface](../../../../docs/framework/unmanaged-api/hosting/igchost2-interface.md)

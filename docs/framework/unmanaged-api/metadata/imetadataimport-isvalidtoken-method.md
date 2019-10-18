@@ -23,13 +23,13 @@ Gets a value indicating whether the specified token holds a valid reference to a
   
 ## Syntax  
   
-```  
+```cpp  
 BOOL IsValidToken (  
    [in] mdToken     tk  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token to check the reference validity for.  
   
@@ -46,5 +46,6 @@ BOOL IsValidToken (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
 - [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)

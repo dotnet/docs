@@ -89,7 +89,7 @@ End Module
 ### Comments  
  This code produces the following output:  
   
-```  
+```console  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XText Remove  
@@ -109,4 +109,5 @@ Total:308
 ```  
   
 ## See also
+
 - [Advanced LINQ to XML Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

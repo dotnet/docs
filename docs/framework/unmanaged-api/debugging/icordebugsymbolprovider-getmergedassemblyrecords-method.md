@@ -10,7 +10,7 @@ Gets the symbol records for all the merged assemblies.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMergedAssemblyRecords(  
    [in] ULONG32 cRequestedRecords,  
    [out] ULONG32 *pcFetchedRecords,  
@@ -18,7 +18,7 @@ HRESULT GetMergedAssemblyRecords(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cRequestedRecords`  
  [in] The number of symbol records requested.  
   
@@ -31,7 +31,7 @@ HRESULT GetMergedAssemblyRecords(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -43,5 +43,6 @@ HRESULT GetMergedAssemblyRecords(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

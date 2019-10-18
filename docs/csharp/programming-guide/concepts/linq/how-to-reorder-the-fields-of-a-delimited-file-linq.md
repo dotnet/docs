@@ -10,9 +10,9 @@ A comma-separated value (CSV) file is a text file that is often used to store sp
   
 ### To create the data file  
   
-1.  Copy the following lines into a plain text file that is named spreadsheet1.csv. Save the file in your project folder.  
+1. Copy the following lines into a plain text file that is named spreadsheet1.csv. Save the file in your project folder.  
   
-    ```  
+    ```csv  
     Adams,Terry,120  
     Fakhouri,Fadi,116  
     Feng,Hanying,117  
@@ -70,10 +70,10 @@ class CSVFiles
 ```  
   
 ## Compiling the Code  
- Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
+Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
   
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
-- [How to: Generate XML from CSV Files (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)
+- [How to: Generate XML from CSV Files (C#)](./how-to-generate-xml-from-csv-files.md)

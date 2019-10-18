@@ -23,7 +23,7 @@ Gets the line information associated with an offset. If the offset parameter (`d
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLineFromOffset(  
      [in]  ULONG32   dwOffset,  
      [out] ULONG32*  pline,  
@@ -33,7 +33,7 @@ HRESULT GetLineFromOffset(
      [out] ULONG32*  pdwStartOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwOffset`  
  [in] A `ULONG32` that contains the offset.  
   
@@ -59,4 +59,5 @@ HRESULT GetLineFromOffset(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)

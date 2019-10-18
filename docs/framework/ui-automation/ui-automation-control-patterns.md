@@ -7,31 +7,29 @@ helpviewer_keywords:
   - "control patterns, UI Automation"
   - "UI Automation, control patterns"
 ms.assetid: 1f8b5ab3-c193-4d0f-9e67-a0076225a1a5
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Control Patterns
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This section provides detailed information about how to use [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] control patterns.  
   
 ## In This Section  
- [Implementing the UI Automation Dock Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-dock-control-pattern.md)  
- [Implementing the UI Automation ExpandCollapse Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-expandcollapse-control-pattern.md)  
- [Implementing the UI Automation Grid Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-grid-control-pattern.md)  
- [Implementing the UI Automation GridItem Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-griditem-control-pattern.md)  
- [Implementing the UI Automation Invoke Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-invoke-control-pattern.md)  
- [Implementing the UI Automation MultipleView Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-multipleview-control-pattern.md)  
- [Implementing the UI Automation RangeValue Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-rangevalue-control-pattern.md)  
- [Implementing the UI Automation Scroll Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-scroll-control-pattern.md)  
- [Implementing the UI Automation ScrollItem Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-scrollitem-control-pattern.md)  
- [Implementing the UI Automation Selection Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-selection-control-pattern.md)  
- [Implementing the UI Automation SelectionItem Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-selectionitem-control-pattern.md)  
- [Implementing the UI Automation Table Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-table-control-pattern.md)  
- [Implementing the UI Automation TableItem Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-tableitem-control-pattern.md)  
- [Implementing the UI Automation Toggle Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-toggle-control-pattern.md)  
- [Implementing the UI Automation Transform Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-transform-control-pattern.md)  
- [Implementing the UI Automation Value Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-value-control-pattern.md)  
- [Implementing the UI Automation Window Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-window-control-pattern.md)  
- [How-to Topics](../../../docs/framework/ui-automation/ui-automation-control-patterns-how-to-topics.md)
+ [Implementing the UI Automation Dock Control Pattern](implementing-the-ui-automation-dock-control-pattern.md)  
+ [Implementing the UI Automation ExpandCollapse Control Pattern](implementing-the-ui-automation-expandcollapse-control-pattern.md)  
+ [Implementing the UI Automation Grid Control Pattern](implementing-the-ui-automation-grid-control-pattern.md)  
+ [Implementing the UI Automation GridItem Control Pattern](implementing-the-ui-automation-griditem-control-pattern.md)  
+ [Implementing the UI Automation Invoke Control Pattern](implementing-the-ui-automation-invoke-control-pattern.md)  
+ [Implementing the UI Automation MultipleView Control Pattern](implementing-the-ui-automation-multipleview-control-pattern.md)  
+ [Implementing the UI Automation RangeValue Control Pattern](implementing-the-ui-automation-rangevalue-control-pattern.md)  
+ [Implementing the UI Automation Scroll Control Pattern](implementing-the-ui-automation-scroll-control-pattern.md)  
+ [Implementing the UI Automation ScrollItem Control Pattern](implementing-the-ui-automation-scrollitem-control-pattern.md)  
+ [Implementing the UI Automation Selection Control Pattern](implementing-the-ui-automation-selection-control-pattern.md)  
+ [Implementing the UI Automation SelectionItem Control Pattern](implementing-the-ui-automation-selectionitem-control-pattern.md)  
+ [Implementing the UI Automation Table Control Pattern](implementing-the-ui-automation-table-control-pattern.md)  
+ [Implementing the UI Automation TableItem Control Pattern](implementing-the-ui-automation-tableitem-control-pattern.md)  
+ [Implementing the UI Automation Toggle Control Pattern](implementing-the-ui-automation-toggle-control-pattern.md)  
+ [Implementing the UI Automation Transform Control Pattern](implementing-the-ui-automation-transform-control-pattern.md)  
+ [Implementing the UI Automation Value Control Pattern](implementing-the-ui-automation-value-control-pattern.md)  
+ [Implementing the UI Automation Window Control Pattern](implementing-the-ui-automation-window-control-pattern.md)  
+ [How-to Topics](ui-automation-control-patterns-how-to-topics.md)

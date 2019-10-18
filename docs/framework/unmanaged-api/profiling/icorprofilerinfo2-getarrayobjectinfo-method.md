@@ -23,7 +23,7 @@ Gets detailed information about an array object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArrayObjectInfo(  
     [in] ObjectID objectId,  
     [in] ULONG32 cDimensions,  
@@ -32,7 +32,7 @@ HRESULT GetArrayObjectInfo(
     [out] BYTE **ppData);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of a valid array object.  
   
@@ -61,5 +61,6 @@ HRESULT GetArrayObjectInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

@@ -23,7 +23,7 @@ Gets the current execution context for the given thread in the target process. T
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext (  
     [in] ULONG32            threadID,  
     [in] ULONG32            contextFlags,  
@@ -33,7 +33,7 @@ HRESULT GetThreadContext (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The operating system identifier of a thread in the target process.  
   
@@ -61,4 +61,5 @@ HRESULT GetThreadContext (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

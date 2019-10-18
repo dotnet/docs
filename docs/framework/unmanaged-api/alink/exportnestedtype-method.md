@@ -19,11 +19,11 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # ExportNestedType Method
-Specifies nested types as exportable. The [ExportType Method](../../../../docs/framework/unmanaged-api/alink/exporttype-method.md) can also export nested types, but this method is faster.  
+Specifies nested types as exportable. The [ExportType Method](exporttype-method.md) can also export nested types, but this method is faster.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExportNestedType(  
     mdAssembly      AssemblyID,  
     mdToken         FileToken,  
@@ -35,7 +35,7 @@ HRESULT ExportNestedType(
 ) PURE;   
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of assembly to export from.  
   
@@ -52,7 +52,7 @@ HRESULT ExportNestedType(
  Fully qualified type name to export.  
   
  `dwFlags`  
- `ComType` flags such as `tdPublic` or `tdNested`. This value may be passed to [DefineExportedType Method](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineexportedtype-method.md).  
+ `ComType` flags such as `tdPublic` or `tdNested`. This value may be passed to [DefineExportedType Method](../metadata/imetadataassemblyemit-defineexportedtype-method.md).  
   
  `pType`  
  Receives token for exported type.  
@@ -64,6 +64,7 @@ HRESULT ExportNestedType(
  Requires alink.h  
   
 ## See also
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

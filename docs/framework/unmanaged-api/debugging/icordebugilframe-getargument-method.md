@@ -23,14 +23,14 @@ Gets the value of the specified argument in this Microsoft intermediate language
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArgument (  
     [in] DWORD                  dwIndex,  
     [out] ICorDebugValue        **ppValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwIndex`  
  [in] The index of the argument in this MSIL stack frame.  
   

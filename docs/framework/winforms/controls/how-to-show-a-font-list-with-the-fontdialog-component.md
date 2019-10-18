@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 35692c1b-0937-4b7a-9207-1ae6bdc244a0
 ---
 # How to: Show a Font List with the FontDialog Component
-The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-component-windows-forms.md) component allows users to select a font, as well as change its display aspects, such as its weight and size.  
+The [FontDialog](fontdialog-component-windows-forms.md) component allows users to select a font, as well as change its display aspects, such as its weight and size.  
   
  The font selected in the dialog box is returned in the <xref:System.Windows.Forms.FontDialog.Font%2A> property. Thus, taking advantage of the font selected by the user is as easy as reading a property.  
   
 ### To select font properties using the FontDialog Component  
   
-1.  Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
+1. Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.  
   
-2.  Use the <xref:System.Windows.Forms.DialogResult> property to determine how the dialog box was closed.  
+2. Use the <xref:System.Windows.Forms.DialogResult> property to determine how the dialog box was closed.  
   
-3.  Use the <xref:System.Windows.Forms.FontDialog.Font%2A> property to set the desired font.  
+3. Use the <xref:System.Windows.Forms.FontDialog.Font%2A> property to set the desired font.  
   
      In the example below, the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event handler opens a <xref:System.Windows.Forms.FontDialog> component. When a font is chosen and the user clicks **OK**, the <xref:System.Windows.Forms.FontDialog.Font%2A> property of a <xref:System.Windows.Forms.TextBox> control that is on the form is set to the chosen font. The example assumes your form has a <xref:System.Windows.Forms.Button> control, a  <xref:System.Windows.Forms.TextBox> control, and a <xref:System.Windows.Forms.FontDialog> component.  
   
@@ -60,7 +60,7 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
@@ -71,5 +71,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
     ```  
   
 ## See also
+
 - <xref:System.Windows.Forms.FontDialog>
-- [FontDialog Component](../../../../docs/framework/winforms/controls/fontdialog-component-windows-forms.md)
+- [FontDialog Component](fontdialog-component-windows-forms.md)

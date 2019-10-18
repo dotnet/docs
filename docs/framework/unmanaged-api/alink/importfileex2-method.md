@@ -18,11 +18,11 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # ImportFileEx2 Method
-Imports assemblies and unbound modules. This method is like [ImportFile Method](../../../../docs/framework/unmanaged-api/alink/importfile-method.md), but works even if the file being imported does not exist on disk.  
+Imports assemblies and unbound modules. This method is like [ImportFile Method](importfile-method.md), but works even if the file being imported does not exist on disk.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ImportFileEx2(  
     LPCWSTR pszFilename,  
     LPCWSTR pszTargetName,  
@@ -35,7 +35,7 @@ HRESULT ImportFileEx2(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Name of file to be imported.  
   
@@ -43,19 +43,19 @@ HRESULT ImportFileEx2(
  Optional name of target file.  
   
  `pAssemblyScopeIn`  
- Optional import scope [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md) interface.  
+ Optional import scope [IMetaDataAssemblyImport Interface](../metadata/imetadataassemblyimport-interface.md) interface.  
   
  `fSmartImport`  
  If TRUE, ImportTypes is used, otherwise importing must be performed manually.  
   
  `dwOpenFlags`  
- Flags to be passed along to [OpenScope Method](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-openscope-method.md).  
+ Flags to be passed along to [OpenScope Method](../metadata/imetadatadispenser-openscope-method.md).  
   
  `pImportToken`  
  Receives unique ID for the assembly or file.  
   
  `ppAssemblyScope`  
- Receives assembly import scope [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md) interface. Can be NULL if the file is not an assembly.  
+ Receives assembly import scope [IMetaDataAssemblyImport Interface](../metadata/imetadataassemblyimport-interface.md) interface. Can be NULL if the file is not an assembly.  
   
  `pdwCountOfScopes`  
  Receives the number of files and/or scopes imported.  
@@ -67,6 +67,7 @@ HRESULT ImportFileEx2(
  Requires alink.h.  
   
 ## See also
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink2 Interface](ialink2-interface.md)
+- [IALink Interface](ialink-interface.md)
+- [ALink API](index.md)

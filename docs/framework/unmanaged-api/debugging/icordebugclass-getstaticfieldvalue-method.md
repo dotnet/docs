@@ -23,7 +23,7 @@ Gets the value of the specified static field.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldValue (  
     [in]  mdFieldDef         fieldDef,  
     [in]  ICorDebugFrame     *pFrame,  
@@ -31,7 +31,7 @@ HRESULT GetStaticFieldValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fieldDef`  
  [in] A field `Def` token that references the field to be retrieved.  
   

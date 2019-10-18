@@ -58,11 +58,11 @@ The previous code specifies that the type `Option` is a discriminated union that
 
 The case identifiers can be used as constructors for the discriminated union type. For example, the following code is used to create values of the `option` type.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2001.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2001.fs)]
 
 The case identifiers are also used in pattern matching expressions. In a pattern matching expression, identifiers are provided for the values associated with the individual cases. For example, in the following code, `x` is the identifier given the value that is associated with the `Some` case of the `option` type.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2002.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2002.fs)]
 
 In pattern matching expressions, you can use named fields to specify discriminated union matches. For the Shape type that was declared previously, you can use the named fields as the following code shows to extract the values of the fields.
 
@@ -74,14 +74,14 @@ let getShapeHeight shape =
     | Prism(height = h) -> h
 ```
 
-Normally, the case identifiers can be used without qualifying them with the name of the union. If you want the name to always be qualified with the name of the union, you can apply the [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15) attribute to the union type definition.
+Normally, the case identifiers can be used without qualifying them with the name of the union. If you want the name to always be qualified with the name of the union, you can apply the [RequireQualifiedAccess](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.requirequalifiedaccessattribute-class-[fsharp]) attribute to the union type definition.
 
 ### Unwrapping Discriminated Unions
 
 In F# Discriminated Unions are often used in domain-modeling for wrapping a single type. It's easy to extract the underlying value via pattern matching as well. You don't need to use a match expression for a single case:
 
 ```fsharp
-let ([UnionCaseName] [values]) = [UnionValue]
+let ([UnionCaseIdentifier] [values]) = [UnionValue]
 ```
 
 The following example demonstrates this:
@@ -105,7 +105,7 @@ let someFunctionUsingShaderProgram (ShaderProgram id) =
 
 ## Struct Discriminated Unions
 
-Starting with F# 4.1, you can also represent Discriminated Unions as structs.  This is done with the `[<Struct>]` attribute.
+You can also represent Discriminated Unions as structs.  This is done with the `[<Struct>]` attribute.
 
 ```fsharp
 [<Struct>]
@@ -128,15 +128,15 @@ Because these are value types and not reference types, there are extra considera
 
 You can often use a discriminated union as a simpler alternative to a small object hierarchy. For example, the following discriminated union could be used instead of a `Shape` base class that has derived types for circle, square, and so on.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2003.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2003.fs)]
 
 Instead of a virtual method to compute an area or perimeter, as you would use in an object-oriented implementation, you can use pattern matching to branch to appropriate formulas to compute these quantities. In the following example, different formulas are used to compute the area, depending on the shape.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2004.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2004.fs)]
 
 The output is as follows:
 
-```
+```console
 Area of circle that has radius 15.000000: 706.858347
 Area of square that has side 10.000000: 100.000000
 Area of rectangle that has height 5.000000 and width 10.000000 is 50.000000
@@ -146,26 +146,58 @@ Area of rectangle that has height 5.000000 and width 10.000000 is 50.000000
 
 Discriminated unions can be recursive, meaning that the union itself can be included in the type of one or more cases. Recursive discriminated unions can be used to create tree structures, which are used to model expressions in programming languages. In the following code, a recursive discriminated union is used to create a binary tree data structure. The union consists of two cases, `Node`, which is a node with an integer value and left and right subtrees, and `Tip`, which terminates the tree.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2005.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2005.fs)]
 
 In the previous code, `resultSumTree` has the value 10. The following illustration shows the tree structure for `myTree`.
 
-![Tree structure for myTree](../media/TreeStructureDiagram.png)
+![Diagram that shows the tree structure for myTree.](../media/discriminated-unions/tree-structure-mytree.png)
 
 Discriminated unions work well if the nodes in the tree are heterogeneous. In the following code, the type `Expression` represents the abstract syntax tree of an expression in a simple programming language that supports addition and multiplication of numbers and variables. Some of the union cases are not recursive and represent either numbers (`Number`) or variables (`Variable`). Other cases are recursive, and represent operations (`Add` and `Multiply`), where the operands are also expressions. The `Evaluate` function uses a match expression to recursively process the syntax tree.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2006.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2006.fs)]
 
 When this code is executed, the value of `result` is 5.
 
-## Common Attributes
+## Members
+
+It is possible to define members on discriminated unions. The following example shows how to define a property and implement an interface:
+
+```fsharp
+open System
+
+type IPrintable =
+    abstract Print: unit -> unit
+
+type Shape =
+    | Circle of float
+    | EquilateralTriangle of float
+    | Square of float
+    | Rectangle of float * float
+
+    member this.Area =
+        match this with
+        | Circle r -> 2.0 * Math.PI * r
+        | EquilateralTriangle s -> s * s * sqrt 3.0 / 4.0
+        | Square s -> s * s
+        | Rectangle(l, w) -> l * w
+
+    interface IPrintable with
+        member this.Print () =
+            match this with
+            | Circle r -> printfn "Circle with radius %f" r
+            | EquilateralTriangle s -> printfn "Equilateral Triangle of side %f" s
+            | Square s -> printfn "Square with side %f" s
+            | Rectangle(l, w) -> printfn "Rectangle with length %f and width %f" l w
+```
+
+## Common attributes
 
 The following attributes are commonly seen in discriminated unions:
 
-* `[RequireQualifiedAccess]`
-* `[NoEquality]`
-* `[NoComparison]`
-* `[Struct]`
+- `[<RequireQualifiedAccess>]`
+- `[<NoEquality>]`
+- `[<NoComparison>]`
+- `[<Struct>]`
 
 ## See also
 

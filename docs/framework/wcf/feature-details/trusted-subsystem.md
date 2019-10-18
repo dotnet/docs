@@ -13,15 +13,15 @@ A client accesses one or more Web services that are distributed across a network
   
  The following steps describe the trusted subsystem process as illustrated:  
   
-1.  The client submits a request to the trusted subsystem, along with credentials.  
+1. The client submits a request to the trusted subsystem, along with credentials.  
   
-2.  The trusted subsystem authenticates and authorizes the user.  
+2. The trusted subsystem authenticates and authorizes the user.  
   
-3.  The trusted subsystem sends a request message to the remote resource. This request is accompanied by the credentials for the trusted subsystem (or the service account under which the trusted subsystem process is being executed).  
+3. The trusted subsystem sends a request message to the remote resource. This request is accompanied by the credentials for the trusted subsystem (or the service account under which the trusted subsystem process is being executed).  
   
-4.  The back-end resource authenticates and authorizes the trusted subsystem. It then processes the request and issues a response to the trusted subsystem.  
+4. The back-end resource authenticates and authorizes the trusted subsystem. It then processes the request and issues a response to the trusted subsystem.  
   
-5.  The trusted subsystem processes the response and issues its own response to the client.  
+5. The trusted subsystem processes the response and issues its own response to the client.  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -205,5 +205,6 @@ A client accesses one or more Web services that are distributed across a network
 ```  
   
 ## See also
+
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
 - [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)

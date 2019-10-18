@@ -23,7 +23,7 @@ Creates an `AssemblyRef` structure containing metadata for the assembly that thi
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineAssemblyRef (  
     [in]  void                *pbPublicKeyOrToken,  
     [in]  ULONG               cbPublicKeyOrToken,  
@@ -36,7 +36,7 @@ HRESULT DefineAssemblyRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbPublicKeyOrToken`  
  [in] The public key of the publisher of the referenced assembly. The helper function [StrongNameTokenFromAssembly](../../../../docs/framework/unmanaged-api/strong-naming/strongnametokenfromassembly-function.md) can be used to get the hash of the public key to pass as this parameter.  
   
@@ -76,4 +76,5 @@ HRESULT DefineAssemblyRef (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)

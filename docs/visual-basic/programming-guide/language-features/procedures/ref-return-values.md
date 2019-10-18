@@ -1,7 +1,7 @@
 ---
 title: "Ref Return Values (Visual Basic)"
 ms.date: 04/28/2017
-helpviewer_keywords: 
+helpviewer_keywords:
   - "variables [Visual Basic]"
   - "ref return values [Visual Basic]"
   - "ref returns [Visual Basic]"
@@ -15,9 +15,9 @@ Visual Basic does not allow you to author methods with reference return values, 
 
 ## Modifying the ref return value directly
 
-For methods that always succeed and have no `ByRef` parameters, you can modify the reference return value directly. You do this by assigning the new value to the expressions that returns the reference return value. 
+For methods that always succeed and have no `ByRef` parameters, you can modify the reference return value directly. You do this by assigning the new value to the expressions that returns the reference return value.
 
-The following C# example defines a `NumericValue.IncrementValue` method that increments an internal value and returns it as a reference return value. 
+The following C# example defines a `NumericValue.IncrementValue` method that increments an internal value and returns it as a reference return value.
 
 [!code-csharp[Ref-Return](../../../../../samples/snippets/visualbasic/programming-guide/language-features/procedures/ref-returns1.cs)]
 
@@ -43,5 +43,3 @@ The best way to handle this scenario is to pass the reference return value by re
 
 - [Passing arguments by value and by reference](passing-arguments-by-value-and-by-reference.md)
 - [Procedures in Visual Basic](index.md)
-
-

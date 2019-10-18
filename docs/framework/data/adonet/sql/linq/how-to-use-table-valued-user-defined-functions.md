@@ -12,7 +12,7 @@ A table-valued function returns a single rowset (unlike stored procedures, which
 ## Example  
  The following SQL function explicitly states that it returns a `TABLE`. Therefore, the returned rowset structure is implicitly defined.  
   
-```  
+```sql
 CREATE FUNCTION ProductsCostingMoreThan(@cost money)  
 RETURNS TABLE  
 AS  
@@ -30,7 +30,7 @@ RETURN
 ## Example  
  The following SQL code shows that you can join to the table that the function returns and otherwise treat it as you would any other table:  
   
-```  
+```sql
 SELECT p2.ProductName, p1.UnitPrice  
 FROM dbo.ProductsCostingMoreThan(80.50)  
 AS p1 INNER JOIN Products AS p2 ON p1.ProductID = p2.ProductID  
@@ -42,4 +42,5 @@ AS p1 INNER JOIN Products AS p2 ON p1.ProductID = p2.ProductID
  [!code-vb[DLinqUDFS#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqUDFS/vb/Module1.vb#2)]  
   
 ## See also
-- [User-Defined Functions](../../../../../../docs/framework/data/adonet/sql/linq/user-defined-functions.md)
+
+- [User-Defined Functions](user-defined-functions.md)

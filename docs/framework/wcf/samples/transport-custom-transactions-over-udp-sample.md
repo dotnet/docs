@@ -44,9 +44,9 @@ int bytesSent = this.socket.SendTo(txmsgBuffer, 0, txmsgBuffer.Length, SocketFla
   
  For custom transaction flow transport, the client implementation must know what service operations require transaction flow and to pass this information to WCF. There should also be a mechanism for transmitting the user transaction to the transport layer. This sample uses "WCF message inspectors" to obtain this information. The client message inspector implemented here, which is called `TransactionFlowInspector`, performs the following tasks:  
   
--   Determines whether a transaction must be flowed for a given message action (this takes place in `IsTxFlowRequiredForThisOperation()`).  
+- Determines whether a transaction must be flowed for a given message action (this takes place in `IsTxFlowRequiredForThisOperation()`).  
   
--   Attaches the current ambient transaction to the message using `TransactionFlowProperty`, if a transaction is required to be flowed (this is done in `BeforeSendRequest()`).  
+- Attaches the current ambient transaction to the message using `TransactionFlowProperty`, if a transaction is required to be flowed (this is done in `BeforeSendRequest()`).  
   
 ```  
 public class TransactionFlowInspector : IClientMessageInspector  
@@ -170,11 +170,11 @@ if (transaction != null)
   
 #### To set up, build, and run the sample  
   
-1.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+1. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
   
-2.  The current sample should be run similarly to the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. To run it, start the service with UdpTestService.exe. If you are running [!INCLUDE[windowsver](../../../../includes/windowsver-md.md)], you must start the service with elevated privileges. To do so, right-click UdpTestService.exe in [!INCLUDE[fileExplorer](../../../../includes/fileexplorer-md.md)] and click **Run as administrator**.  
+2. The current sample should be run similarly to the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample. To run it, start the service with UdpTestService.exe. If you are running [!INCLUDE[windowsver](../../../../includes/windowsver-md.md)], you must start the service with elevated privileges. To do so, right-click UdpTestService.exe in File Explorer and click **Run as administrator**.  
   
-3.  This produces the following output.  
+3. This produces the following output.  
   
     ```  
     Testing Udp From Code.  
@@ -182,7 +182,7 @@ if (transaction != null)
     Press <ENTER> to terminate the service and start service from config...  
     ```  
   
-4.  At this time, you can start the client by running UdpTestClient.exe. The output produced by the client is as follows.  
+4. At this time, you can start the client by running UdpTestClient.exe. The output produced by the client is as follows.  
   
     ```  
     0  
@@ -193,7 +193,7 @@ if (transaction != null)
     Press <ENTER> to complete test.  
     ```  
   
-5.  The service output is as follows.  
+5. The service output is as follows.  
   
     ```  
     Hello, world!  
@@ -213,9 +213,9 @@ if (transaction != null)
        adding 4 + 8  
     ```  
   
-6.  The service application displays the message `The client transaction has flowed to the service` if it can match the transaction identifier sent by the client, in the `clientTransactionId` parameter of the `CalculatorService.Add()` operation, to the identifier of the service transaction. A match is obtained only if the client transaction has flowed to the service.  
+6. The service application displays the message `The client transaction has flowed to the service` if it can match the transaction identifier sent by the client, in the `clientTransactionId` parameter of the `CalculatorService.Add()` operation, to the identifier of the service transaction. A match is obtained only if the client transaction has flowed to the service.  
   
-7.  To run the client application against endpoints published using configuration, press ENTER on the service application window and then run the test client again. You should see the following output on the service.  
+7. To run the client application against endpoints published using configuration, press ENTER on the service application window and then run the test client again. You should see the following output on the service.  
   
     ```  
     Testing Udp From Config.  
@@ -223,12 +223,12 @@ if (transaction != null)
     Press <ENTER> to terminate the service and exit...  
     ```  
   
-8.  Running the client against the service now produces similar output as before.  
+8. Running the client against the service now produces similar output as before.  
   
 9. To regenerate the client code and configuration using Svcutil.exe, start the service application and then run the following Svcutil.exe command from the root directory of the sample.  
   
     ```  
-    svcutil http://localhost:8000/udpsample/ /reference:UdpTranport\bin\UdpTransport.dll /svcutilConfig:svcutil.exe.config  
+    svcutil http://localhost:8000/udpsample/ /reference:UdpTransport\bin\UdpTransport.dll /svcutilConfig:svcutil.exe.config  
     ```  
   
 10. Note that Svcutil.exe does not generate the binding extension configuration for the `sampleProfileUdpBinding`; you must add it manually.  
@@ -248,13 +248,14 @@ if (transaction != null)
     ```  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transactions\TransactionMessagePropertyUDPTransport`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Transactions\TransactionMessagePropertyUDPTransport`  
   
 ## See also
+
 - [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)

@@ -16,13 +16,13 @@ ms.author: "ronpet"
 # Applying Attributes
 Use the following process to apply an attribute to an element of your code.  
   
-1.  Define a new attribute or use an existing attribute by importing its namespace from the .NET Framework.  
+1. Define a new attribute or use an existing attribute by importing its namespace from the .NET Framework.  
   
-2.  Apply the attribute to the code element by placing it immediately before the element.  
+2. Apply the attribute to the code element by placing it immediately before the element.  
   
      Each language has its own attribute syntax. In C++ and C#, the attribute is surrounded by square brackets and separated from the element by white space, which can include a line break. In Visual Basic, the attribute is surrounded by angle brackets and must be on the same logical line; the line continuation character can be used if a line break is desired.
   
-3.  Specify positional parameters and named parameters for the attribute.  
+3. Specify positional parameters and named parameters for the attribute.  
   
      Positional parameters are required and must come before any named parameters; they correspond to the parameters of one of the attribute's constructors. Named parameters are optional and correspond to read/write properties of the attribute. In C++, and C#, specify `name`=`value` for each optional parameter, where `name` is the name of the property. In Visual Basic, specify `name`:=`value`.  
   
@@ -51,4 +51,5 @@ Use the following process to apply an attribute to an element of your code.
 - [Attributes](../../../docs/standard/attributes/index.md)
 - [Retrieving Information Stored in Attributes](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)
 - [Concepts](/cpp/windows/attributed-programming-concepts)
-- [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+- [Attributes (C#)](../../csharp/programming-guide/concepts/attributes/index.md)
+- [Attributes overview (Visual Basic)](../../visual-basic/programming-guide/concepts/attributes/index.md)

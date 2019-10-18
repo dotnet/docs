@@ -5,7 +5,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "expliciting defining cache behavior"
+  - "explicitly defining cache behavior"
   - "location-based cache policies"
   - "local cache"
   - "request cache policies"
@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 683bb88e-3411-4f46-9686-3411b6ba511c
 ---
 # How to: Set a Location-Based Cache Policy for an Application
-Location-based cache policies allow an application to explicitly define caching behavior based on the location of the requested resource. This topic demonstrates setting the cache policy programmatically. For information on setting the policy for an application using the configuration files, see [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+Location-based cache policies allow an application to explicitly define caching behavior based on the location of the requested resource. This topic demonstrates setting the cache policy programmatically. For information on setting the policy for an application using the configuration files, see [\<requestCaching> Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
 ### To set a location-based cache policy for an application  
   
-1.  Create a <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> object.  
+1. Create a <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> object.  
   
-2.  Set the policy object as the default for the application domain.  
+2. Set the policy object as the default for the application domain.  
   
 ### To set a policy that takes requested resources from a cache  
   
--   Create a policy that takes requested resources from a cache if available, and otherwise, sends requests to the server, by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.CacheIfAvailable>. A request can be fulfilled by any cache between the client and server, including remote caches.  
+- Create a policy that takes requested resources from a cache if available, and otherwise, sends requests to the server, by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.CacheIfAvailable>. A request can be fulfilled by any cache between the client and server, including remote caches.  
   
     ```csharp  
     public static void UseCacheIfAvailable()  
@@ -44,7 +44,7 @@ Location-based cache policies allow an application to explicitly define caching 
   
 ### To set a policy that prevents any cache from supplying resources  
   
--   Create a policy that prevents any cache from supplying requested resources by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.NoCacheNoStore>. This policy level removes the resource from the local cache if it is present and indicates to remote caches that they should also remove the resource.  
+- Create a policy that prevents any cache from supplying requested resources by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.NoCacheNoStore>. This policy level removes the resource from the local cache if it is present and indicates to remote caches that they should also remove the resource.  
   
     ```csharp  
     public static void DoNotUseCache()  
@@ -65,7 +65,7 @@ Location-based cache policies allow an application to explicitly define caching 
   
 ### To set a policy that returns requested resources only if they are in the local cache  
   
--   Create a policy that returns requested resources only if they are in the local cache by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.CacheOnly>. If the requested resource is not in the cache, a <xref:System.Net.WebException> exception is thrown.  
+- Create a policy that returns requested resources only if they are in the local cache by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.CacheOnly>. If the requested resource is not in the cache, a <xref:System.Net.WebException> exception is thrown.  
   
     ```csharp  
     public static void OnlyUseCache()  
@@ -86,7 +86,7 @@ Location-based cache policies allow an application to explicitly define caching 
   
 ### To set a policy that prevents the local cache from supplying resources  
   
--   Create a policy that prevents the local cache from supplying requested resources by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.Refresh>. If the requested resource is in an intermediate cache and is successfully revalidated, the intermediate cache can supply the requested resource.  
+- Create a policy that prevents the local cache from supplying requested resources by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.Refresh>. If the requested resource is in an intermediate cache and is successfully revalidated, the intermediate cache can supply the requested resource.  
   
     ```csharp  
     public static void DoNotUseLocalCache()  
@@ -107,7 +107,7 @@ Location-based cache policies allow an application to explicitly define caching 
   
 ### To set a policy that prevents any cache from supplying requested resources  
   
--   Create a policy that prevents any cache from supplying requested resources by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.Reload>. The resource returned by the server can be stored in the cache.  
+- Create a policy that prevents any cache from supplying requested resources by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.Reload>. The resource returned by the server can be stored in the cache.  
   
     ```csharp  
     public static void SendToServer()  
@@ -128,7 +128,7 @@ Location-based cache policies allow an application to explicitly define caching 
   
 ### To set a policy that allows any cache to supply requested resources if the resource on the server is not newer than the cached copy  
   
--   Create a policy that allows any cache to supply requested resources if the resource on the server is not newer than the cached copy by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.Revalidate>.  
+- Create a policy that allows any cache to supply requested resources if the resource on the server is not newer than the cached copy by setting the cache level to <xref:System.Net.Cache.HttpRequestCacheLevel.Revalidate>.  
   
     ```csharp  
     public static void CheckServer()  
@@ -148,8 +148,9 @@ Location-based cache policies allow an application to explicitly define caching 
     ```  
   
 ## See also
-- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
-- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)
-- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)
-- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)
-- [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)
+
+- [Cache Management for Network Applications](cache-management-for-network-applications.md)
+- [Cache Policy](cache-policy.md)
+- [Location-Based Cache Policies](location-based-cache-policies.md)
+- [Time-Based Cache Policies](time-based-cache-policies.md)
+- [\<requestCaching> Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)

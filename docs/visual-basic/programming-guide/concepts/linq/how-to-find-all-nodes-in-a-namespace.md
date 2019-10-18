@@ -39,7 +39,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 Nodes in the http://www.adventure-works.com namespace  
 {http://www.adventure-works.com}Child3  
 {http://www.adventure-works.com}GrandChild2  
@@ -104,4 +104,5 @@ End Module
 ```  
   
 ## See also
+
 - [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

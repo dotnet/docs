@@ -23,12 +23,12 @@ Returns an enumeration that contains a valid [ICLRRuntimeInfo](../../../../docs/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateInstalledRuntimes (  
     [out, retval] IEnumUnknown **ppEnumerator);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnumerator`  
  [out] An enumeration of [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interfaces corresponding to each version of the CLR that is installed on the computer.  
   
@@ -50,5 +50,6 @@ HRESULT EnumerateInstalledRuntimes (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

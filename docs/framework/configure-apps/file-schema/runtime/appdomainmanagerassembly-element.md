@@ -11,9 +11,9 @@ ms.author: "ronpet"
 # \<appDomainManagerAssembly> Element
 Specifies the assembly that provides the application domain manager for the default application domain in the process.  
   
- \<configuration>  
-\<runtime>  
-\<appDomainManagerAssembly>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<appDomainManagerAssembly>**  
   
 ## Syntax  
   
@@ -42,9 +42,9 @@ Specifies the assembly that provides the application domain manager for the defa
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
- To specify the type of the application domain manager, you must specify both this element and the [\<appDomainManagerType>](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md) element. If either of these elements is not specified, the other is ignored.  
+ To specify the type of the application domain manager, you must specify both this element and the [\<appDomainManagerType>](appdomainmanagertype-element.md) element. If either of these elements is not specified, the other is ignored.  
   
- When the default application domain is loaded, <xref:System.TypeLoadException> is thrown if the specified assembly does not exist or if the assembly does not contain the type specified by the [\<appDomainManagerType>](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md) element; and the process fails to start. If the assembly is found but the version information does not match, a <xref:System.IO.FileLoadException> is thrown.  
+ When the default application domain is loaded, <xref:System.TypeLoadException> is thrown if the specified assembly does not exist or if the assembly does not contain the type specified by the [\<appDomainManagerType>](appdomainmanagertype-element.md) element; and the process fails to start. If the assembly is found but the version information does not match, a <xref:System.IO.FileLoadException> is thrown.  
   
  When you specify the application domain manager type for the default application domain, other application domains created from the default application domain inherit the application domain manager type. Use the <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType> and <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType> properties to specify a different application domain manager type for a new application domain.  
   
@@ -52,7 +52,7 @@ Specifies the assembly that provides the application domain manager for the defa
   
  For the format of the assembly display name, see the <xref:System.Reflection.Assembly.FullName%2A?displayProperty=nameWithType> property.  
   
- This configuration element is available only in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] and later.  
+ This configuration element is available only in the .NET Framework 4 and later.  
   
 ## Example  
  The following example shows how to specify that the application domain manager for the default application domain of a process is the `MyMgr` type in the `AdMgrExample` assembly.  
@@ -68,9 +68,10 @@ Specifies the assembly that provides the application domain manager for the defa
 ```  
   
 ## See also
+
 - <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=nameWithType>
 - <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=nameWithType>
-- [\<appDomainManagerType> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagertype-element.md)
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [SetAppDomainManagerType Method](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)
+- [\<appDomainManagerType> Element](appdomainmanagertype-element.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [SetAppDomainManagerType Method](../../../unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

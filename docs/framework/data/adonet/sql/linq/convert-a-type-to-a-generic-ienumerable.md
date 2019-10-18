@@ -18,4 +18,5 @@ Use <xref:System.Linq.Enumerable.AsEnumerable%2A> to return the argument typed a
  [!code-vb[DLinqQueryExamples#46](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#46)]  
   
 ## See also
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+
+- [Query Examples](query-examples.md)

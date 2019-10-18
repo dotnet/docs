@@ -27,4 +27,5 @@ Allows you to define optional async method information for each method symbol. A
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)

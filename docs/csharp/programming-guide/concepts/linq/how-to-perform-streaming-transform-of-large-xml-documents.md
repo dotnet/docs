@@ -8,12 +8,12 @@ Sometimes you have to transform large XML files, and write your application so t
   
  Streaming techniques are best applied in situations where you need to process the source document only once, and you can process the elements in document order. Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. Note that if you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint for your application.  
   
- Even if you use the technique described in [How to: Stream XML Fragments with Access to Header Information (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md), if you try to assemble an XML tree that contains the transformed document, memory usage will be too great.  
+ Even if you use the technique described in [How to: Stream XML Fragments with Access to Header Information (C#)](./how-to-stream-xml-fragments-with-access-to-header-information.md), if you try to assemble an XML tree that contains the transformed document, memory usage will be too great.  
   
  There are two main approaches. One approach is to use the deferred processing characteristics of <xref:System.Xml.Linq.XStreamingElement>. Another approach is to create an <xref:System.Xml.XmlWriter>, and use the capabilities of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to write elements to an <xref:System.Xml.XmlWriter>. This topic demonstrates both approaches.  
   
 ## Example  
- The following example builds on the example in [How to: Stream XML Fragments with Access to Header Information (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md).  
+ The following example builds on the example in [How to: Stream XML Fragments with Access to Header Information (C#)](./how-to-stream-xml-fragments-with-access-to-header-information.md).  
   
  This example uses the deferred execution capabilities of <xref:System.Xml.Linq.XStreamingElement> to stream the output. This example can transform a very large document while maintaining a small memory footprint.  
   
@@ -183,7 +183,7 @@ static void Main(string[] args)
 ```  
   
 ## Example  
- The following example also builds on the example in [How to: Stream XML Fragments with Access to Header Information (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md).  
+ The following example also builds on the example in [How to: Stream XML Fragments with Access to Header Information (C#)](./how-to-stream-xml-fragments-with-access-to-header-information.md).  
   
  This example uses the capability of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to write elements to an <xref:System.Xml.XmlWriter>. This example can transform a very large document while maintaining a small memory footprint.  
   
@@ -316,6 +316,3 @@ static void Main(string[] args)
 </Root>  
 ```  
   
-## See also
-
-- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

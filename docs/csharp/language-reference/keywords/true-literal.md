@@ -1,7 +1,6 @@
 ---
 title: "true literal - C# Reference"
 ms.custom: seodec18
-
 ms.date: 12/03/2018
 helpviewer_keywords: 
   - "true literal keyword [C#]"
@@ -18,6 +17,6 @@ Represents the [bool](bool.md) value `true`:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [false](false.md)
-- [true and false operators](true-false-operators.md)
-- [?: Operator](../operators/conditional-operator.md)
+- [false literal](false-literal.md)
+- [true and false operators](../operators/true-false-operators.md)
+- [?: operator](../operators/conditional-operator.md)

@@ -23,12 +23,12 @@ Provides a callback function that is guaranteed to be called when a common langu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestRuntimeLoadedNotification (  
     [in] RuntimeLoadedCallbackFnPtr pCallbackFunction);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCallbackFunction`  
  [in] The callback function that is invoked when a new runtime has been loaded.  
   
@@ -43,15 +43,15 @@ HRESULT RequestRuntimeLoadedNotification (
 ## Remarks  
  The callback works in the following way:  
   
--   The callback is invoked only when a runtime is loaded for the first time.  
+- The callback is invoked only when a runtime is loaded for the first time.  
   
--   The callback is not invoked for reentrant loads of the same runtime.  
+- The callback is not invoked for reentrant loads of the same runtime.  
   
--   For non-reentrant runtime loads, calls to the callback function are serialized.  
+- For non-reentrant runtime loads, calls to the callback function are serialized.  
   
  The callback function has the following prototype:  
   
-```  
+```cpp  
 typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(  
                      ICLRRuntimeInfo *pRuntimeInfo,  
                      CallbackThreadSetFnPtr pfnCallbackThreadSet,  
@@ -60,28 +60,28 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
   
  The callback function prototypes are as follows:  
   
--   `pfnCallbackThreadSet`:  
+- `pfnCallbackThreadSet`:  
   
-    ```  
+    ```cpp  
     typedef HRESULT (__stdcall *CallbackThreadSetFnPtr)();  
     ```  
   
--   `pfnCallbackThreadUnset`:  
+- `pfnCallbackThreadUnset`:  
   
-    ```  
+    ```cpp  
     typedef HRESULT (__stdcall *CallbackThreadUnsetFnPtr)();  
     ```  
   
  If the host intends to load or cause another runtime to be loaded in a reentrant manner, the `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` parameters that are provided in the callback function must be used in the following way:  
   
--   `pfnCallbackThreadSet` must be called by the thread that might cause a runtime load before such a load is attempted.  
+- `pfnCallbackThreadSet` must be called by the thread that might cause a runtime load before such a load is attempted.  
   
--   `pfnCallbackThreadUnset` must be called when the thread will no longer cause such a runtime load (and before returning from the initial callback).  
+- `pfnCallbackThreadUnset` must be called when the thread will no longer cause such a runtime load (and before returning from the initial callback).  
   
--   `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` are both non-reentrant.  
+- `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` are both non-reentrant.  
   
 > [!NOTE]
->  Host applications must not call `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` outside the scope of the `pCallbackFunction` parameter.  
+> Host applications must not call `pfnCallbackThreadSet` and `pfnCallbackThreadUnset` outside the scope of the `pCallbackFunction` parameter.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -93,5 +93,6 @@ typedef void (__stdcall *RuntimeLoadedCallbackFnPtr)(
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRMetaHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md)
 - [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)

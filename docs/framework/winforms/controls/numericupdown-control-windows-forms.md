@@ -14,13 +14,13 @@ ms.assetid: 32b0c20d-4f37-4aea-873d-faded741d2db
 The Windows Forms `NumericUpDown` control looks like a combination of a text box and a pair of arrows that the user can click to adjust a value. The control displays and sets a single numeric value from a list of choices. The user can increase and decrease the number by clicking up and down buttons, by pressing the UP and DOWN ARROW keys, or by typing a number. Clicking the UP ARROW key moves the value toward its maximum; clicking the DOWN ARROW key moves the position toward the minimum. An example where this kind of control might be useful is for a volume control on a music player. Numeric up-down controls are used in some Windows control panel applications.  
   
 ## In This Section  
- [NumericUpDown Control Overview](../../../../docs/framework/winforms/controls/numericupdown-control-overview-windows-forms.md)  
+ [NumericUpDown Control Overview](numericupdown-control-overview-windows-forms.md)  
  Introduces the general concepts of the `NumericUpDown` control, which allows users to browse through and select from a list of numeric values.  
   
- [How to: Set and Return Numeric Values with the Windows Forms NumericUpDown Control](../../../../docs/framework/winforms/controls/set-and-return-numeric-values-with-wf-numericupdown-control.md)  
+ [How to: Set and Return Numeric Values with the Windows Forms NumericUpDown Control](set-and-return-numeric-values-with-wf-numericupdown-control.md)  
  Describes how to test for the value of the control.  
   
- [How to: Set the Format for the Windows Forms NumericUpDown Control](../../../../docs/framework/winforms/controls/how-to-set-the-format-for-the-windows-forms-numericupdown-control.md)  
+ [How to: Set the Format for the Windows Forms NumericUpDown Control](how-to-set-the-format-for-the-windows-forms-numericupdown-control.md)  
  Describes how to configure how values are displayed in the control.  
   
 ## Reference  
@@ -28,8 +28,8 @@ The Windows Forms `NumericUpDown` control looks like a combination of a text box
  Provides reference information on the <xref:System.Windows.Forms.NumericUpDown> class and its members.  
   
 ## Related Sections  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)  
+ [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
- [DomainUpDown Control](../../../../docs/framework/winforms/controls/domainupdown-control-windows-forms.md)  
+ [DomainUpDown Control](domainupdown-control-windows-forms.md)  
  Introduces a control similar to <xref:System.Windows.Forms.NumericUpDown>, except that the <xref:System.Windows.Forms.DomainUpDown> control displays string instead of numeric values.

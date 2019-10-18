@@ -4,15 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: 2496fa06-3df4-4ecb-86c4-70a49ea08565
 ---
 # How to: Generate the Object Model as an External File
-As an alternative to attribute-based mapping, you can generate your object model as an external XML file by using the SQLMetal command-line tool. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md). By using an external XML mapping file, you reduce clutter in your code. You can also change behavior by modifying the external file without recompiling the binaries of your application. For more information, see [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md).  
+As an alternative to attribute-based mapping, you can generate your object model as an external XML file by using the SQLMetal command-line tool. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md). By using an external XML mapping file, you reduce clutter in your code. You can also change behavior by modifying the external file without recompiling the binaries of your application. For more information, see [External Mapping](external-mapping.md).  
   
 > [!NOTE]
->  The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] does not support generation of an external mapping file.  
+> The Object Relational Designer does not support generation of an external mapping file.  
   
 ## Example  
  The following command generates an external mapping file from the Northwind sample database.  
   
-```  
+```console  
 sqlmetal /server:myserver /database:northwind /map:externalfile.xml  
 ```  
   
@@ -43,6 +43,7 @@ sqlmetal /server:myserver /database:northwind /map:externalfile.xml
 ```  
   
 ## See also
-- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
-- [External Mapping](../../../../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
-- [How to: Generate the Object Model in Visual Basic or C#](../../../../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)
+
+- [Creating the Object Model](creating-the-object-model.md)
+- [External Mapping](external-mapping.md)
+- [How to: Generate the Object Model in Visual Basic or C#](how-to-generate-the-object-model-in-visual-basic-or-csharp.md)

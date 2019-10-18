@@ -1,228 +1,91 @@
 ---
-title: "C# operators"
-ms.date: 04/04/2018
+title: "C# operators - C# reference"
+ms.date: 08/20/2019
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
-  - "boolean operators [C#]"
-  - "expressions [C#], operators"
-  - "logical operators [C#]"
   - "operators [C#]"
-  - "Visual C#, operators"
-  - "indirection operators [C#]"
-  - "assignment operators [C#]"
-  - "shift operators [C#]"
-  - "relational operators [C#]"
-  - "bitwise operators [C#]"
-  - "address operators [C#]"
-  - "keywords [C#], operators"
-  - "arithmetic operators [C#]"
+  - "operator precedence [C#]"
+  - "operator associativity [C#]"
+  - "expressions [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
-# C# operators
+# C# operators (C# reference)
 
-C# provides many operators, which are symbols that specify which operations (math, indexing, function call, etc.) to perform in an expression. You can [overload](../../programming-guide/statements-expressions-operators/overloadable-operators.md) many operators to change their meaning when applied to a user-defined type.
+C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands. Certain operators can be [overloaded](operator-overloading.md). With operator overloading, you can specify the operator behavior for the operands of a user-defined type.
 
-Operations on integral types (such as `==`, `!=`, `<`, `>`, `&`, `|`) are generally allowed on enumeration (`enum`) types.
+In an [expression](../../programming-guide/statements-expressions-operators/expressions.md), operator precedence and associativity determine the order in which the operations are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
 
-The sections below list the C# operators starting with the highest precedence to the lowest. The operators within each section share the same precedence level.
+## Operator precedence
 
-## Primary operators
+In an expression with multiple operators, the operators with higher precedence are evaluated before the operators with lower precedence. In the following example, the multiplication is performed first because it has higher precedence than addition:
 
-These are the highest precedence operators.
+```csharp-interactive
+var a = 2 + 2 * 2;
+Console.WriteLine(a); //  output: 6
+```
 
-[x.y](member-access-operator.md) – member access.
+Use parentheses to change the order of evaluation imposed by operator precedence:
 
-[x?.y](null-conditional-operators.md) – null conditional member access. Returns `null` if the left-hand operand evaluates to `null`.
+```csharp-interactive
+var a = (2 + 2) * 2;
+Console.WriteLine(a); //  output: 8
+```
 
-[x?[y]](null-conditional-operators.md) - null conditional index access. Returns `null` if the left-hand operand evaluates to `null`.
+The following table lists the C# operators starting with the highest precedence to the lowest. The operators within each row have the same precedence.
 
-[f(x)](invocation-operator.md) – function invocation.
+| Operators | Category or name |
+| --------- | ---------------- |
+| [x.y](member-access-operators.md#member-access-operator-), [x?.y](member-access-operators.md#null-conditional-operators--and-), [x?[y]](member-access-operators.md#null-conditional-operators--and-), [f(x)](member-access-operators.md#invocation-operator-), [a&#91;i&#93;](member-access-operators.md#indexer-operator-), [x++](arithmetic-operators.md#increment-operator-), [x--](arithmetic-operators.md#decrement-operator---), [new](new-operator.md), [typeof](type-testing-and-cast.md#typeof-operator), [checked](../keywords/checked.md), [unchecked](../keywords/unchecked.md), [default](default.md), [nameof](nameof.md), [delegate](delegate-operator.md), [sizeof](sizeof.md), [stackalloc](stackalloc.md), [x->y](pointer-related-operators.md#pointer-member-access-operator--) | Primary |
+| [+x](arithmetic-operators.md#unary-plus-and-minus-operators), [-x](arithmetic-operators.md#unary-plus-and-minus-operators), [\!x](boolean-logical-operators.md#logical-negation-operator-), [~x](bitwise-and-shift-operators.md#bitwise-complement-operator-), [++x](arithmetic-operators.md#increment-operator-), [--x](arithmetic-operators.md#decrement-operator---), [^x](member-access-operators.md#index-from-end-operator-), [(T)x](type-testing-and-cast.md#cast-operator-), [await](await.md), [&x](pointer-related-operators.md#address-of-operator-), [*x](pointer-related-operators.md#pointer-indirection-operator-), [true and false](true-false-operators.md) | Unary |
+| [x..y](member-access-operators.md#range-operator-) | Range |
+| [x * y](arithmetic-operators.md#multiplication-operator-), [x / y](arithmetic-operators.md#division-operator-), [x % y](arithmetic-operators.md#remainder-operator-) | Multiplicative|
+| [x + y](arithmetic-operators.md#addition-operator-), [x – y](arithmetic-operators.md#subtraction-operator--) | Additive |
+| [x \<\<  y](bitwise-and-shift-operators.md#left-shift-operator-), [x >> y](bitwise-and-shift-operators.md#right-shift-operator-) | Shift |
+| [x \< y](comparison-operators.md#less-than-operator-), [x > y](comparison-operators.md#greater-than-operator-), [x \<= y](comparison-operators.md#less-than-or-equal-operator-), [x >= y](comparison-operators.md#greater-than-or-equal-operator-), [is](type-testing-and-cast.md#is-operator), [as](type-testing-and-cast.md#as-operator) | Relational and type-testing |
+| [x == y](equality-operators.md#equality-operator-), [x != y](equality-operators.md#inequality-operator-) | Equality |
+| `x & y` | [Boolean logical AND](boolean-logical-operators.md#logical-and-operator-) or [bitwise logical AND](bitwise-and-shift-operators.md#logical-and-operator-) |
+| `x ^ y` | [Boolean logical XOR](boolean-logical-operators.md#logical-exclusive-or-operator-) or [bitwise logical XOR](bitwise-and-shift-operators.md#logical-exclusive-or-operator-) |
+| <code>x &#124; y</code> | [Boolean logical OR](boolean-logical-operators.md#logical-or-operator-) or [bitwise logical OR](bitwise-and-shift-operators.md#logical-or-operator-) |
+| [x && y](boolean-logical-operators.md#conditional-logical-and-operator-) | Conditional AND |
+| [x &#124;&#124; y](boolean-logical-operators.md#conditional-logical-or-operator-) | Conditional OR |
+| [x ?? y](null-coalescing-operator.md) | Null-coalescing operator |
+| [c ? t : f](conditional-operator.md) | Conditional operator |
+| [x = y](assignment-operator.md), [x += y](arithmetic-operators.md#compound-assignment), [x -= y](arithmetic-operators.md#compound-assignment), [x *= y](arithmetic-operators.md#compound-assignment), [x /= y](arithmetic-operators.md#compound-assignment), [x %= y](arithmetic-operators.md#compound-assignment), [x &= y](boolean-logical-operators.md#compound-assignment), [x &#124;= y](boolean-logical-operators.md#compound-assignment), [x ^= y](boolean-logical-operators.md#compound-assignment), [x <<= y](bitwise-and-shift-operators.md#compound-assignment), [x >>= y](bitwise-and-shift-operators.md#compound-assignment), [x ??= y](null-coalescing-operator.md), [=>](lambda-operator.md) | Assignment and lambda declaration |
 
-[a&#91;x&#93;](index-operator.md) – aggregate object indexing.
+## Operator associativity
 
-[x++](increment-operator.md) – postfix increment. Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).
+When operators have the same precedence, associativity of the operators determines the order in which the operations are performed:
 
-[x--](decrement-operator.md) –  postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
+- *Left-associative* operators are evaluated in order from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operators](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
+- *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operators, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
 
-[new](../keywords/new-operator.md) – type instantiation.
+Use parentheses to change the order of evaluation imposed by operator associativity:
 
-[typeof](../keywords/typeof.md) – returns the <xref:System.Type> object representing the operand.
+```csharp-interactive
+int a = 13 / 5 / 2;
+int b = 13 / (5 / 2);
+Console.WriteLine($"a = {a}, b = {b}");  // output: a = 1, b = 6
+```
 
-[checked](../keywords/checked.md) – enables overflow checking for integer operations.
+## Operand evaluation
 
-[unchecked](../keywords/unchecked.md) – disables overflow checking for integer operations. This is the default compiler behavior.
+Unrelated to operator precedence and associativity, operands in an expression are evaluated from left to right. The following examples demonstrate the order in which operators and operands are evaluated:
 
-[default(T)](../../programming-guide/statements-expressions-operators/default-value-expressions.md) – produces the default value of type T.
+| Expression | Order of evaluation |
+| ---------- | ------------------- |
+|`a + b`|a, b, +|
+|`a + b * c`|a, b, c, *, +|
+|`a / b + c * d`|a, b, /, c, d, *, +|
+|`a / (b + c) * d`|a, b, c, +, /, d, *|
 
-[delegate](../../programming-guide/statements-expressions-operators/anonymous-methods.md) – declares and returns a delegate instance.
+Typically, all operator operands are evaluated. Some operators evaluate operands conditionally. That is, the value of the first operand of such an operator defines if (or which) other operands should be evaluated. These operators are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operators `??` and `??=`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md). See the description of each operator for more details.
 
-[sizeof](../keywords/sizeof.md) – returns the size in bytes of the type operand.
+## C# language specification
 
-[->](dereference-operator.md) – pointer dereferencing combined with member access.
-
-## Unary operators
-
-These operators have higher precedence than the next section and lower precedence than the previous section.
-
-[+x](addition-operator.md) – returns the value of x.
-
-[-x](subtraction-operator.md) – numeric negation.
-
-[\!x](logical-negation-operator.md) – logical negation.
-
-[~x](bitwise-complement-operator.md) – bitwise complement.
-
-[++x](increment-operator.md) – prefix increment. Returns the value of x after updating the storage location with the value of x that is one greater (typically adds the integer 1).
-
-[--x](decrement-operator.md) – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).
-
-[(T)x](invocation-operator.md) – type casting.
-
-[await](../keywords/await.md) – awaits a `Task`.
-
-[&x](and-operator.md) – address of.
-
-[*x](multiplication-operator.md) – dereferencing.
-
-## Multiplicative operators
-
-These operators have higher precedence than the next section and lower precedence than the previous section.
-
-[x * y](multiplication-operator.md) – multiplication.
-
-[x / y](division-operator.md) – division. If the operands are integers, the result is an integer truncated toward zero (for example, `-7 / 2 is -3`).
-
-[x % y](remainder-operator.md) – remainder. If the operands are integers, this returns the remainder of dividing x by y.  If `q = x / y` and `r = x % y`, then `x = q * y + r`.
-
-## Additive operators
-
-These operators have higher precedence than the next section and lower precedence than the previous section.
-
-[x + y](addition-operator.md) – addition.
-
-[x – y](subtraction-operator.md) – subtraction.
-
-## Shift operators
-
-These operators have higher precedence than the next section and lower precedence than the previous section.
-
-[x <\<  y](left-shift-operator.md) – shift bits left and fill with zero on the right.
-
-[x >> y](right-shift-operator.md) – shift bits right. If the left operand is `int` or `long`, then left bits are filled with the sign bit. If the left operand is `uint` or `ulong`, then left bits are filled with zero.
-
-## Relational and type-testing operators
-
-These operators have higher precedence than the next section and lower precedence than the previous section.
-
-[x \< y](less-than-operator.md) – less than (true if x is less than y).
-
-[x > y](greater-than-operator.md) – greater than (true if x is greater than y).
-
-[x \<= y](less-than-equal-operator.md) – less than or equal to.
-
-[x >= y](greater-than-equal-operator.md) – greater than or equal to.
-
-[is](../keywords/is.md) – type compatibility. Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).
-
-[as](../keywords/as.md) – type conversion. Returns the left operand cast to the type specified by the right operand (a static type), but `as` returns `null` where `(T)x` would throw an exception.
-
-## Equality operators
-
-These operators have higher precedence than the next section and lower precedence than the previous section.
-
-[x == y](equality-comparison-operator.md) – equality. By default, for reference types other than `string`, this returns reference equality (identity test). However, types can overload `==`, so if your intent is to test identity, it is best to use the `ReferenceEquals` method on `object`.
-
-[x != y](not-equal-operator.md) – not equal. See comment for `==`. If a type overloads `==`, then it must overload `!=`.
-
-## Logical AND operator
-
-This operator has higher precedence than the next section and lower precedence than the previous section.
-
-[x & y](and-operator.md) – logical or bitwise AND. You can generally use this with integer types and `enum` types.
-
-## Logical XOR operator
-
-This operator has higher precedence than the next section and lower precedence than the previous section.
-
-[x ^ y](xor-operator.md) – logical or bitwise XOR. You can generally use this with integer types and `enum` types.
-
-## Logical OR operator
-
-This operator has higher precedence than the next section and lower precedence than the previous section.
-
-[x &#124; y](or-operator.md) – logical or bitwise OR. You can generally use this with integer types and `enum` types.
-
-## Conditional AND operator
-
-This operator has higher precedence than the next section and lower precedence than the previous section.
-
-[x && y](conditional-and-operator.md) – logical AND. If the first operand evaluates to false, then C# does not evaluate the second operand.
-
-## Conditional OR operator
-
-This operator has higher precedence than the next section and lower precedence than the previous section.
-
-[x &#124;&#124; y](conditional-or-operator.md) – logical OR. If the first operand evaluates to true, then C# does not evaluate the second operand.
-
-## Null-coalescing operator
-
-This operator has higher precedence than the next section and lower precedence than the previous section.
-
-[x ?? y](null-coalescing-operator.md) – returns `x` if it is non-`null`; otherwise, returns `y`.
-
-## Conditional operator
-
-This operator has higher precedence than the next section and lower precedence than the previous section.
-
-[t ? x : y](conditional-operator.md) – if test `t` evaluates to true, then evaluate and return `x`; otherwise, evaluate and return `y`.
-
-## Assignment and Lambda operators
-
-These operators have higher precedence than the next section and lower precedence than the previous section.
-
-[x = y](assignment-operator.md) – assignment.
-
-[x += y](addition-assignment-operator.md) – increment. Add the value of `y` to the value of `x`, store the result in `x`, and return the new value. If `x` designates an `event`, then `y` must be an appropriate function that C# adds as an event handler.
-
-[x -= y](subtraction-assignment-operator.md) – decrement. Subtract the value of `y` from the value of `x`, store the result in `x`, and return the new value. If `x` designates an `event`, then `y` must be an appropriate function that C# removes as an event handler
-
-[x *= y](multiplication-assignment-operator.md) – multiplication assignment. Multiply the value of `y` to the value of `x`, store the result in `x`, and return the new value.
-
-[x /= y](division-assignment-operator.md) – division assignment. Divide the value of `x` by the value of `y`, store the result in `x`, and return the new value.
-
-[x %= y](remainder-assignment-operator.md) – remainder assignment. Divide the value of `x` by the value of `y`, store the remainder in `x`, and return the new value.
-
-[x &= y](and-assignment-operator.md) – AND assignment. AND the value of `y` with the value of `x`, store the result in `x`, and return the new value.
-
-[x &#124;= y](or-assignment-operator.md) – OR assignment. OR the value of `y` with the value of `x`, store the result in `x`, and return the new value.
-
-[x ^= y](xor-assignment-operator.md) – XOR assignment. XOR the value of `y` with the value of `x`, store the result in `x`, and return the new value.
-
-[x <<= y](left-shift-assignment-operator.md) – left-shift assignment. Shift the value of `x` left by `y` places, store the result in `x`, and return the new value.
-
-[x >>= y](right-shift-assignment-operator.md) – right-shift assignment. Shift the value of `x` right by `y` places, store the result in `x`, and return the new value.
-
-[=>](lambda-operator.md) – lambda declaration.
-
-## Arithmetic overflow
-
-The arithmetic operators ([+](addition-operator.md), [-](subtraction-operator.md), [*](multiplication-operator.md), [/](division-operator.md)) can produce results that are outside the range of possible values for the numeric type involved. You should refer to the section on a particular operator for details, but in general:
-
-- Integer arithmetic overflow either throws an <xref:System.OverflowException> or discards the most significant bits of the result. Integer division by zero always throws a <xref:System.DivideByZeroException>.
-
-   When integer overflow occurs, what happens depends on the execution context, which can be [checked or unchecked](../keywords/checked-and-unchecked.md). In a checked context, an <xref:System.OverflowException> is thrown. In an unchecked context, the most significant bits of the result are discarded and execution continues. Thus, C# gives you the choice of handling or ignoring overflow. By default, arithmetic operations occur in an *unchecked* context.
-
-   In addition to the arithmetic operations, integral-type to integral-type casts can cause overflow (such as when you cast a [long](../keywords/long.md) to an [int](../keywords/int.md)), and are subject to checked or unchecked execution. However, bitwise operators and shift operators never cause overflow.
-
-- Floating-point arithmetic overflow or division by zero never throws an exception, because floating-point types are based on IEEE 754 and so have provisions for representing infinity and NaN (Not a Number).
-
-- [Decimal](../keywords/decimal.md) arithmetic overflow always throws an <xref:System.OverflowException>. Decimal division by zero always throws a <xref:System.DivideByZeroException>.
+For more information, see the [Operators](~/_csharplang/spec/expressions.md#operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C#](../../index.md)
-- [Overloadable Operators](../../programming-guide/statements-expressions-operators/overloadable-operators.md)
-- [C# Keywords](../keywords/index.md)
+- [C# reference](../index.md)
+- [Expressions](../../programming-guide/statements-expressions-operators/expressions.md)

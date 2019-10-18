@@ -22,7 +22,7 @@ Describes the possible flags returned in the `pdwConfigFlags` parameter of the [
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     METAHOST_CONFIG_FLAGS_LEGACY_V2_ACTIVATION_POLICY_UNSET  = 0x00,  
     METAHOST_CONFIG_FLAGS_LEGACY_V2_ACTIVATION_POLICY_TRUE   = 0x01,  
@@ -52,6 +52,7 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
 - [GetRequestedRuntime Method](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md)
 - [\<startup> Element](../../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)

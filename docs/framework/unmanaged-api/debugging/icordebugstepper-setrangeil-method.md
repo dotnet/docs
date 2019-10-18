@@ -23,13 +23,13 @@ Sets a value that specifies whether calls to [ICorDebugStepper::StepRange](../..
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetRangeIL (  
     [in] BOOL    bIL  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bIL`  
  [in] Set to `true` to specify that the ranges are relative to the MSIL code. Set to `false` to specify that the ranges are relative to the native code. The default value is `true`.  
   

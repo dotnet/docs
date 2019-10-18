@@ -19,27 +19,28 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # GetAppIdAuthority Function
-Gets a pointer to an [IAppIdAuthority](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md) instance that manages keys for application identities and references.  
+Gets a pointer to an [IAppIdAuthority](iappidauthority-interface.md) instance that manages keys for application identities and references.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAppIdAuthority (  
     [out] IAppIdAuthority **ppIAppIdAuthority  
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppIAppIdAuthority`  
  [out] The returned `IAppIdAuthority` pointer.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [IAppIdAuthority Interface](../../../../docs/framework/unmanaged-api/fusion/iappidauthority-interface.md)
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+
+- [IAppIdAuthority Interface](iappidauthority-interface.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

@@ -35,7 +35,7 @@ else
   
  This example produces the following output:  
   
-```  
+```output  
 r1 and r2 have names that refer to the same instance.  
 The name of r1 and the name in 'n' refer to the same instance.  
 ```  
@@ -67,7 +67,3 @@ foreach (var z in query)
 <C1>1</C1>  
 <C1>1</C1>  
 ```  
-  
-## See also
-
-- [Performance (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/performance-linq-to-xml.md)

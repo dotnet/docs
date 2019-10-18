@@ -24,7 +24,7 @@ Fills the specified buffer with the binary representation of the executable file
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameGetBlob (  
     [in]  LPCWSTR    wszFilePath,  
     [in]  BYTE       *pbBlob,  
@@ -32,7 +32,7 @@ HRESULT StrongNameGetBlob (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] A valid path to the executable file to be loaded.  
   
@@ -55,5 +55,6 @@ HRESULT StrongNameGetBlob (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [StrongNameGetBlobFromImage Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetblobfromimage-method.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

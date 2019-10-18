@@ -25,11 +25,11 @@ References to other objects or collections of other objects in your class defini
   
  Now that you have relationships, you can write queries by referring to the relationship properties defined in your classes. These relationship references correspond to foreign-key relationships in the database. Operations that use these relationships translate to more complex joins in the equivalent SQL. As long as you have defined a relationship (using the <xref:System.Data.Linq.Mapping.AssociationAttribute> attribute), you do not have to code an explicit join in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
- To help maintain this illusion, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] implements a technique called *deferred loading*. For more information, see [Deferred versus Immediate Loading](../../../../../../docs/framework/data/adonet/sql/linq/deferred-versus-immediate-loading.md).  
+ To help maintain this illusion, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] implements a technique called *deferred loading*. For more information, see [Deferred versus Immediate Loading](deferred-versus-immediate-loading.md).  
   
  Consider the following SQL query to project a list of `CustomerID`-`OrderID` pairs:  
   
-```  
+```sql
 SELECT t0.CustomerID, t1.OrderID  
 FROM   Customers AS t0 INNER JOIN  
           Orders AS t1 ON t0.CustomerID = t1.CustomerID  
@@ -47,4 +47,5 @@ WHERE  (t0.City = @p0)
  [!code-vb[DLinqQueryConcepts#6](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb/Module1.vb#6)]  
   
 ## See also
-- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
+
+- [Query Concepts](query-concepts.md)

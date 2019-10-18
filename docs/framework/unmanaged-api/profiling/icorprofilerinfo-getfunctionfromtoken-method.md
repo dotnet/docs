@@ -23,7 +23,7 @@ Gets the ID of a function. This method is obsolete in the .NET Framework version
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromToken(  
     [in]  ModuleID   moduleId,  
     [in]  mdToken    token,  
@@ -43,4 +43,5 @@ HRESULT GetFunctionFromToken(
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

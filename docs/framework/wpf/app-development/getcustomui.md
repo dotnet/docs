@@ -10,18 +10,18 @@ Called by PresentationHost.exe to get custom progress and error messages from th
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCustomUI( [out] BSTR* pwzProgressAssemblyName, [out] BSTR* pwzProgressClassName, [out] BSTR* pwzErrorAssemblyName, [out] BSTR* pwzErrorClassName );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzProgressAssemblyName`  
   
  [out] A pointer to the assembly that contains the host-supplied progress user interface.  
   
  `pwzProgressClassName`  
   
- [out] The name of the class that is the host-supplied progress user interface, preferably a [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] file with <xref:System.Windows.Controls.Page> is its top-level element. This class resides in the assembly that is specified by `pwzProgressAssemblyName`.  
+ [out] The name of the class that is the host-supplied progress user interface, preferably a XAML file with <xref:System.Windows.Controls.Page> is its top-level element. This class resides in the assembly that is specified by `pwzProgressAssemblyName`.  
   
  `pwzErrorAssemblyName`  
   
@@ -35,9 +35,10 @@ HRESULT GetCustomUI( [out] BSTR* pwzProgressAssemblyName, [out] BSTR* pwzProgres
  HRESULT: Ignored.  
   
 ## Remarks  
- A host application may have a specific theme that PresentationHost.exe’s default user interfaces may not conform to. If this is the case, the host application can implement [GetCustomUI](../../../../docs/framework/wpf/app-development/getcustomui.md) to return progress and error user interfaces to PresentationHost.exe. PresentationHost.exe will always call [GetCustomUI](../../../../docs/framework/wpf/app-development/getcustomui.md) before using its default user interfaces.  
+ A host application may have a specific theme that PresentationHost.exe’s default user interfaces may not conform to. If this is the case, the host application can implement [GetCustomUI](getcustomui.md) to return progress and error user interfaces to PresentationHost.exe. PresentationHost.exe will always call [GetCustomUI](getcustomui.md) before using its default user interfaces.  
   
  This function is called once during PresentationHost’s initialization.  
   
 ## See also
-- [IWpfHostSupport](../../../../docs/framework/wpf/app-development/iwpfhostsupport.md)
+
+- [IWpfHostSupport](iwpfhostsupport.md)

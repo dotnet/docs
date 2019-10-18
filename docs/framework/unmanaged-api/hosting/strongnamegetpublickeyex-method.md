@@ -23,7 +23,7 @@ Gets the public key from a public/private key pair, and specifies a hash algorit
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameGetPublicKey (   
     [in]  LPCWSTR   pwzKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  
@@ -35,7 +35,7 @@ HRESULT StrongNameGetPublicKey (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzKeyContainer`  
  [in] The name of the key container that contains the public/private key pair. If `pbKeyBlob` is null, `szKeyContainer` must specify a valid container within the cryptographic service provider (CSP). In this case, the `StrongNameGetPublicKeyEx` method extracts the public key from the key pair stored in the container.  
   
@@ -88,6 +88,7 @@ HRESULT StrongNameGetPublicKey (
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [StrongNameTokenFromPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
 - [PublicKeyBlob Structure](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

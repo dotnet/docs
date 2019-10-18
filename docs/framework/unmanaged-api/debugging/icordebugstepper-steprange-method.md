@@ -23,7 +23,7 @@ Causes this ICorDebugStepper to single-step through its containing thread, and t
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StepRange (  
     [in] BOOL     bStepIn,  
     [in, size_is(cRangeCount)] COR_DEBUG_STEP_RANGE ranges[],  
@@ -31,7 +31,7 @@ HRESULT StepRange (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bStepIn`  
  [in] Set to `true` to step into a function that is called within the thread. Set to `false` to step over the function.  
   

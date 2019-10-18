@@ -12,11 +12,11 @@ ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
 # \<add> Element for \<listeners> for \<trace>
 Adds a listener to the **Listeners** collection.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<trace>  
-\<listeners>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<trace>**](trace-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-trace.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
@@ -33,7 +33,7 @@ Adds a listener to the **Listeners** collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|**type**|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|**type**|Required attribute.<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |**initializeData**|Optional attribute.<br /><br /> The string passed to the constructor for the specified class.|  
 |**name**|Optional attribute.<br /><br /> Specifies the name of the listener.|  
   
@@ -41,7 +41,7 @@ Adds a listener to the **Listeners** collection.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<filter>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-listeners-for-trace.md)|Adds a filter to a listener in the `Listeners` collection for a trace.|  
+|[\<filter>](filter-element-for-add-for-listeners-for-trace.md)|Adds a filter to a listener in the `Listeners` collection for a trace.|  
   
 ### Parent Elements  
   
@@ -58,12 +58,12 @@ Adds a listener to the **Listeners** collection.
  If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify unique names for each trace listener, which allows you to identify and manage individual trace listeners within the <xref:System.Diagnostics.Debug.Listeners%2A> and <xref:System.Diagnostics.Trace.Listeners%2A> collections.  
   
 > [!NOTE]
->  Adding more than one trace listener of the same type and with the same name results in only one trace listener of that type and name being added to the `Listeners` collection. However, you can programmatically add multiple identical listeners to the `Listeners` collection.  
+> Adding more than one trace listener of the same type and with the same name results in only one trace listener of that type and name being added to the `Listeners` collection. However, you can programmatically add multiple identical listeners to the `Listeners` collection.  
   
  The value for the **initializeData** attribute depends on the type of listener you create. Not all trace listeners require that you specify **initializeData**.  
   
 > [!NOTE]
->  When you use the `initializeData` attribute, you may get the compiler warning "The 'initializeData' attribute is not declared." This warning occurs because the configuration settings are validated against the abstract base class <xref:System.Diagnostics.TraceListener>, which does not recognize the `initializeData` attribute. Typically, you can ignore this warning for trace listener implementations that have a constructor that takes a parameter.  
+> When you use the `initializeData` attribute, you may get the compiler warning "The 'initializeData' attribute is not declared." This warning occurs because the configuration settings are validated against the abstract base class <xref:System.Diagnostics.TraceListener>, which does not recognize the `initializeData` attribute. Typically, you can ignore this warning for trace listener implementations that have a constructor that takes a parameter.  
   
  The following table shows the trace listeners that are included with the .NET Framework and describes the value of their **initializeData** attributes.  
   
@@ -96,10 +96,11 @@ Adds a listener to the **Listeners** collection.
 ```  
   
 ## See also
+
 - <xref:System.Diagnostics.Trace>
 - <xref:System.Diagnostics.Debug>
 - <xref:System.Diagnostics.EventLogTraceListener>
 - <xref:System.Diagnostics.ConsoleTraceListener>
 - <xref:System.Diagnostics.TextWriterTraceListener>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
-- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

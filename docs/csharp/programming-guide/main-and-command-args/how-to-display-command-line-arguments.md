@@ -16,17 +16,16 @@ Arguments provided to an executable on the command-line are accessible through a
 |**executable.exe "one two" three**|"one two"<br /><br /> "three"|  
   
 > [!NOTE]
->  When you are running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
+> When you are running an application in Visual Studio, you can specify command-line arguments in the [Debug Page, Project Designer](/visualstudio/ide/reference/debug-page-project-designer).  
   
 ## Example  
  This example displays the command line arguments passed to a command-line application. The output shown is for the first entry in the table above.  
   
- [!code-csharp[csProgGuideMain#9](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/how-to-display-command-line-arguments_1.cs)]  
+ [!code-csharp[csProgGuideMain#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#9)]  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
-- [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)
-- [How to: Access Command-Line Arguments Using foreach](../../../csharp/programming-guide/main-and-command-args/how-to-access-command-line-arguments-using-foreach.md)
-- [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)
+- [C# Programming Guide](../index.md)
+- [Command-line Building With csc.exe](../../language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [Main() and Command-Line Arguments](./index.md)
+- [Main() Return Values](./main-return-values.md)

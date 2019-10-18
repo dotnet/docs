@@ -22,7 +22,7 @@ Provides information to a debugger about a function that is being called. See th
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct tagCALL_ID  
 {  
     LPCOLESTR       szMachine;  
@@ -49,5 +49,6 @@ typedef struct tagCALL_ID
  **Header:** ProtocolNotify2.idl  
   
 ## See also
+
 - [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
 - [Diagnostics Symbol Store Structures](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)

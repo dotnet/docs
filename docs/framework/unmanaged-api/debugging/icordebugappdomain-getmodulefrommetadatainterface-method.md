@@ -23,14 +23,14 @@ Gets the module that corresponds to the given metadata interface.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleFromMetaDataInterface (  
     [in] IUnknown           *pIMetaData,  
     [out] ICorDebugModule  **ppModule  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIMetaData`  
  [in] A pointer to an object that is one of the [Metadata interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md).  
   

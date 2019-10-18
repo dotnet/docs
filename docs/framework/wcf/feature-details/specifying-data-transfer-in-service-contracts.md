@@ -490,7 +490,7 @@ For Each op As OperationDescription In factory.Endpoint.Contract.Operations
     Dim client As IDataService = factory.CreateChannel  
 ```  
   
- Following is the equivalent code on the service, in the self-hosted case.  
+The following is the equivalent code on the service, in the self-hosted case:
   
 ```csharp  
 ServiceHost serviceHost = new ServiceHost(typeof(IDataService))  
@@ -560,15 +560,16 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
   
  The previous three cases (.NET type preservation, object graph preservation, and completely custom `XmlObjectSerializer`-based serialization) all require a custom serializer be plugged in. To do this, perform the following steps:  
   
-1.  Write your own behavior deriving from the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>.  
+1. Write your own behavior deriving from the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>.  
   
-2.  Override the two `CreateSerializer` methods to return your own serializer (either the <xref:System.Runtime.Serialization.NetDataContractSerializer>, the <xref:System.Runtime.Serialization.DataContractSerializer> with `preserveObjectReferences` set to `true`, or your own custom <xref:System.Runtime.Serialization.XmlObjectSerializer>).  
+2. Override the two `CreateSerializer` methods to return your own serializer (either the <xref:System.Runtime.Serialization.NetDataContractSerializer>, the <xref:System.Runtime.Serialization.DataContractSerializer> with `preserveObjectReferences` set to `true`, or your own custom <xref:System.Runtime.Serialization.XmlObjectSerializer>).  
   
-3.  Before opening the service host or creating a client channel, remove the existing <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> behavior and plug in the custom derived class that you created in the previous steps.  
+3. Before opening the service host or creating a client channel, remove the existing <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> behavior and plug in the custom derived class that you created in the previous steps.  
   
  For more information about advanced serialization concepts, see [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).  
   
 ## See also
+
 - [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md)
 - [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)
 - [How to: Create a Basic Data Contract for a Class or Structure](../../../../docs/framework/wcf/feature-details/how-to-create-a-basic-data-contract-for-a-class-or-structure.md)

@@ -15,7 +15,7 @@ The Visual Basic compiler can process documentation comments in your code to an 
  XML comments are allowed on code constructs such as types and type members. For partial types, only one part of the type can have XML comments, although there is no restriction on commenting its members.  
   
 > [!NOTE]
->  Documentation comments cannot be applied to namespaces. The reason is that one namespace can span several assemblies, and not all assemblies have to be loaded at the same time.  
+> Documentation comments cannot be applied to namespaces. The reason is that one namespace can span several assemblies, and not all assemblies have to be loaded at the same time.  
   
  The compiler processes any tag that is valid XML. The following tags provide commonly used functionality in user documentation.  
   
@@ -31,9 +31,10 @@ The Visual Basic compiler can process documentation comments in your code to an 
  (<sup>1</sup> The compiler verifies syntax.)  
   
 > [!NOTE]
->  If you want angle brackets to appear in the text of a documentation comment, use `&lt;` and `&gt;`. For example, the string `"&lt;text in angle brackets&gt;"` will appear as `<text in angle brackets>`.  
+> If you want angle brackets to appear in the text of a documentation comment, use `&lt;` and `&gt;`. For example, the string `"&lt;text in angle brackets&gt;"` will appear as `<text in angle brackets>`.  
   
 ## See also
+
 - [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
-- [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)
+- [-doc](../../../visual-basic/reference/command-line-compiler/doc.md)
 - [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)

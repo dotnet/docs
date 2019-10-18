@@ -5,12 +5,10 @@ helpviewer_keywords:
   - "UI Automation caching in clients"
   - "caching, UI Automation clients"
 ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Caching in UI Automation Clients
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This topic introduces caching of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties and control patterns.  
   
@@ -60,9 +58,9 @@ ms.author: "mhopkins"
 ## Retrieving Cached Properties  
  You can retrieve the cached properties of an element through the following methods and properties.  
   
--   <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.Cached%2A>  
+- <xref:System.Windows.Automation.AutomationElement.Cached%2A>  
   
  An exception is raised if the requested property is not in the cache.  
   
@@ -72,9 +70,9 @@ ms.author: "mhopkins"
 ## Retrieving Cached Control Patterns  
  You can retrieve the cached control patterns of an element through the following methods.  
   
--   <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>  
+- <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A>  
   
--   <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A>  
+- <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A>  
   
  If the pattern is not in the cache, <xref:System.Windows.Automation.AutomationElement.GetCachedPattern%2A> raises an exception, and <xref:System.Windows.Automation.AutomationElement.TryGetCachedPattern%2A> returns `false`.  
   
@@ -87,7 +85,7 @@ ms.author: "mhopkins"
  If <xref:System.Windows.Automation.TreeScope.Element> was included in the scope of the cache request, the root element of the request is subsequently available from the <xref:System.Windows.Automation.AutomationElement.CachedParent%2A> property of any of the child elements.  
   
 > [!NOTE]
->  You cannot cache parents or ancestors of the root element of the request.  
+> You cannot cache parents or ancestors of the root element of the request.  
   
 <a name="Updating_the_Cache"></a>   
 ## Updating the Cache  
@@ -98,6 +96,7 @@ ms.author: "mhopkins"
  Updating the cache does not alter the properties of any existing <xref:System.Windows.Automation.AutomationElement> references.  
   
 ## See also
-- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
-- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+
+- [UI Automation Events for Clients](ui-automation-events-for-clients.md)
+- [Use Caching in UI Automation](use-caching-in-ui-automation.md)
 - [FetchTimer Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90))

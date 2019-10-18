@@ -16,11 +16,11 @@ ms.assetid: fceff7d2-a1b7-44c7-b9aa-8bd831d8a444
 # Array Conversions (Visual Basic)
 You can convert an array type to a different array type provided you meet the following conditions:  
   
--   **Equal Rank.** The ranks of the two arrays must be the same, that is, they must have the same number of dimensions. However, the lengths of the respective dimensions do not need to be the same.  
+- **Equal Rank.** The ranks of the two arrays must be the same, that is, they must have the same number of dimensions. However, the lengths of the respective dimensions do not need to be the same.  
   
--   **Element Data Type.** The data types of the elements of both arrays must be reference types. You cannot convert an `Integer` array to a `Long` array, or even to an `Object` array, because at least one value type is involved. For more information, see [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md).  
+- **Element Data Type.** The data types of the elements of both arrays must be reference types. You cannot convert an `Integer` array to a `Long` array, or even to an `Object` array, because at least one value type is involved. For more information, see [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md).  
   
--   **Convertibility.** A conversion, either widening or narrowing, must be possible between the element types of the two arrays. An example that fails this requirement is an attempted conversion between a `String` array and an array of a class derived from <xref:System.Attribute?displayProperty=nameWithType>. These two types have nothing in common, and no conversion of any kind exists between them.  
+- **Convertibility.** A conversion, either widening or narrowing, must be possible between the element types of the two arrays. An example that fails this requirement is an attempted conversion between a `String` array and an array of a class derived from <xref:System.Attribute?displayProperty=nameWithType>. These two types have nothing in common, and no conversion of any kind exists between them.  
   
  A conversion of one array type to another is widening or narrowing depending on whether the conversion of the respective elements is widening or narrowing. For more information, see [Widening and Narrowing Conversions](../../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
   
@@ -29,7 +29,7 @@ You can convert an array type to a different array type provided you meet the fo
   
  In the following example, no conversion exists between types `student` and `String`, but both derive from `Object`, so all assignments are valid.  
   
-```  
+```vb  
 ' Assume student has already been defined as a class.  
 Dim testArray() As Object  
 ' testArray is still an Object array at this point.  
@@ -45,7 +45,7 @@ testArray = names
   
  In the following example, `students` is a `student` array. Since no conversion exists between `String` and `student`, the last statement fails.  
   
-```  
+```vb  
 Dim students() As student  
 Dim names() As String = New String(3) {"Name0", "Name1", "Name2", "Name3"}  
 students = New Student(3) {}  
@@ -54,6 +54,7 @@ students = names
 ```  
   
 ## See also
+
 - [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)
 - [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
 - [Implicit and Explicit Conversions](../../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)

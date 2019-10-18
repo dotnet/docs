@@ -13,9 +13,9 @@ Class libraries are the [shared library](https://en.wikipedia.org/wiki/Library_%
 
 There are three types of class libraries that you can use:
 
-*   **Platform-specific** class libraries have access to all the APIs in a given platform (for example, .NET Framework, Xamarin iOS), but can only be used by apps and libraries that target that platform.
-*   **Portable** class libraries have access to a subset of APIs, and can be used by apps and libraries that target multiple platforms.
-*   **.NET Standard** class libraries are a merger of the platform-specific and portable library concept into a single model that provides the best of both.
+* **Platform-specific** class libraries have access to all the APIs in a given platform (for example, .NET Framework, Xamarin iOS), but can only be used by apps and libraries that target that platform.
+* **Portable** class libraries have access to a subset of APIs, and can be used by apps and libraries that target multiple platforms.
+* **.NET Standard** class libraries are a merger of the platform-specific and portable library concept into a single model that provides the best of both.
 
 ## Platform-specific class libraries
 

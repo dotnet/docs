@@ -44,14 +44,14 @@ When you overload a procedure, you must use a different *signature* for each ove
 #### When to Use Overloaded Versions  
  You can consider defining a series of overloaded versions in the following cases:  
   
--   The logic in the procedure code is significantly different depending on whether the calling code supplies an optional argument or not.  
+- The logic in the procedure code is significantly different depending on whether the calling code supplies an optional argument or not.  
   
--   The procedure code cannot reliably test whether the calling code has supplied an optional argument. This is the case, for example, if there is no possible candidate for a default value that the calling code could not be expected to supply.  
+- The procedure code cannot reliably test whether the calling code has supplied an optional argument. This is the case, for example, if there is no possible candidate for a default value that the calling code could not be expected to supply.  
   
 #### When to Use Optional Parameters  
  You might prefer one or more optional parameters in the following cases:  
   
--   The only required action when the calling code does not supply an optional argument is to set the parameter to a default value. In such a case, the procedure code can be less complicated if you define a single version with one or more `Optional` parameters.  
+- The only required action when the calling code does not supply an optional argument is to set the parameter to a default value. In such a case, the procedure code can be less complicated if you define a single version with one or more `Optional` parameters.  
   
  For more information, see [Optional Parameters](./optional-parameters.md).  
   
@@ -61,61 +61,62 @@ When you overload a procedure, you must use a different *signature* for each ove
 #### When to Use Overloaded Versions  
  You can consider defining a series of overloaded versions in the following cases:  
   
--   You know that the calling code never passes more than a small number of values to the parameter array.  
+- You know that the calling code never passes more than a small number of values to the parameter array.  
   
--   The logic in the procedure code is significantly different depending on how many values the calling code passes.  
+- The logic in the procedure code is significantly different depending on how many values the calling code passes.  
   
--   The calling code can pass values of different data types.  
+- The calling code can pass values of different data types.  
   
 #### When to Use a Parameter Array  
  You are better served by a `ParamArray` parameter in the following cases:  
   
--   You are not able to predict how many values the calling code can pass to the parameter array, and it could be a large number.  
+- You are not able to predict how many values the calling code can pass to the parameter array, and it could be a large number.  
   
--   The procedure logic lends itself to iterating through all the values the calling code passes, performing essentially the same operations on every value.  
+- The procedure logic lends itself to iterating through all the values the calling code passes, performing essentially the same operations on every value.  
   
  For more information, see [Parameter Arrays](./parameter-arrays.md).  
   
 ## Implicit Overloads for Optional Parameters  
  A procedure with an [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) parameter is equivalent to two overloaded procedures, one with the optional parameter and one without it. You cannot overload such a procedure with a parameter list corresponding to either of these. The following declarations illustrate this.  
   
- [!code-vb[VbVbcnProcedures#58](./codesnippet/VisualBasic/considerations-in-overloading-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#58](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#58)]  
   
- [!code-vb[VbVbcnProcedures#60](./codesnippet/VisualBasic/considerations-in-overloading-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#60](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#60)]  
   
- [!code-vb[VbVbcnProcedures#61](./codesnippet/VisualBasic/considerations-in-overloading-procedures_3.vb)]  
+ [!code-vb[VbVbcnProcedures#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#61)]  
   
  For a procedure with more than one optional parameter, there is a set of implicit overloads, arrived at by logic similar to that in the preceding example.  
   
 ## Implicit Overloads for a ParamArray Parameter  
  The compiler considers a procedure with a [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) parameter to have an infinite number of overloads, differing from each other in what the calling code passes to the parameter array, as follows:  
   
--   One overload for when the calling code does not supply an argument to the `ParamArray`  
+- One overload for when the calling code does not supply an argument to the `ParamArray`  
   
--   One overload for when the calling code supplies a one-dimensional array of the `ParamArray` element type  
+- One overload for when the calling code supplies a one-dimensional array of the `ParamArray` element type  
   
--   For every positive integer, one overload for when the calling code supplies that number of arguments, each of the `ParamArray` element type  
+- For every positive integer, one overload for when the calling code supplies that number of arguments, each of the `ParamArray` element type  
   
  The following declarations illustrate these implicit overloads.  
   
- [!code-vb[VbVbcnProcedures#68](./codesnippet/VisualBasic/considerations-in-overloading-procedures_4.vb)]  
+ [!code-vb[VbVbcnProcedures#68](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#68)]  
   
- [!code-vb[VbVbcnProcedures#70](./codesnippet/VisualBasic/considerations-in-overloading-procedures_5.vb)]  
+ [!code-vb[VbVbcnProcedures#70](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#70)]  
   
  You cannot overload such a procedure with a parameter list that takes a one-dimensional array for the parameter array. However, you can use the signatures of the other implicit overloads. The following declarations illustrate this.  
   
- [!code-vb[VbVbcnProcedures#71](./codesnippet/VisualBasic/considerations-in-overloading-procedures_6.vb)]  
+ [!code-vb[VbVbcnProcedures#71](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#71)]  
   
 ## Typeless Programming as an Alternative to Overloading  
  If you want to allow the calling code to pass different data types to a parameter, an alternative approach is typeless programming. You can set the type checking switch to `Off` with either the [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) or the [/optionstrict](../../../../visual-basic/reference/command-line-compiler/optionstrict.md) compiler option. Then you do not have to declare the parameter's data type. However, this approach has the following disadvantages compared to overloading:  
   
--   Typeless programming produces less efficient execution code.  
+- Typeless programming produces less efficient execution code.  
   
--   The procedure must test for every data type it anticipates being passed.  
+- The procedure must test for every data type it anticipates being passed.  
   
--   The compiler cannot signal an error if the calling code passes a data type that the procedure does not support.  
+- The compiler cannot signal an error if the calling code passes a data type that the procedure does not support.  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Procedure Parameters and Arguments](./procedure-parameters-and-arguments.md)
 - [Troubleshooting Procedures](./troubleshooting-procedures.md)

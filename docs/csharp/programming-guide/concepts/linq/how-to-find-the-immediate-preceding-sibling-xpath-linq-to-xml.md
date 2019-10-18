@@ -41,11 +41,7 @@ Console.WriteLine(el1);
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Child3 />  
 ```  
-  
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

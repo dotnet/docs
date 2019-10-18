@@ -40,7 +40,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 GREAL:Great Lakes Food Market:Howard Snyder  
 HUNGC:Hungry Coyote Import Store:Yoshi Latimer  
 LAZYK:Lazy K Kountry Store:John Steel  
@@ -48,4 +48,5 @@ LETSS:Let's Stop N Shop:Jaime Yorres
 ```  
   
 ## See also
+
 - [Projections and Transformations (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)

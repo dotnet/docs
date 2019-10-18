@@ -10,12 +10,12 @@ ms.assetid: 576079e4-debe-4ab5-9204-fcbe2ca7a5e2
 Multiple Active Result Sets (MARS) is a feature that works with SQL Server to allow the execution of multiple batches on a single connection. When MARS is enabled for use with SQL Server, each command object used adds a session to the connection.  
   
 > [!NOTE]
->  A single MARS session opens one logical connection for MARS to use and then one logical connection for each active command.  
+> A single MARS session opens one logical connection for MARS to use and then one logical connection for each active command.  
   
 ## Enabling and Disabling MARS in the Connection String  
   
 > [!NOTE]
->  The following connection strings use the sample **AdventureWorks** database included with SQL Server. The connection strings provided assume that the database is installed on a server named MSSQL1. Modify the connection string as necessary for your environment.  
+> The following connection strings use the sample **AdventureWorks** database included with SQL Server. The connection strings provided assume that the database is installed on a server named MSSQL1. Modify the connection string as necessary for your environment.  
   
  The MARS feature is disabled by default. It can be enabled by adding the "MultipleActiveResultSets=True" keyword pair to your connection string. "True" is the only valid value for enabling MARS. The following example demonstrates how to connect to an instance of SQL Server and how to specify that MARS should be enabled.  
   
@@ -62,22 +62,22 @@ string connectionString = "Data Source=MSSQL1;" +
  MARS operations are not thread-safe.  
   
 ### Connection Pooling  
- MARS-enabled connections are pooled like any other connection. If an application opens two connections, one with MARS enabled and one with MARS disabled, the two connections are in separate pools. For more information, see [SQL Server Connection Pooling (ADO.NET)](../../../../../docs/framework/data/adonet/sql-server-connection-pooling.md).  
+ MARS-enabled connections are pooled like any other connection. If an application opens two connections, one with MARS enabled and one with MARS disabled, the two connections are in separate pools. For more information, see [SQL Server Connection Pooling (ADO.NET)](../sql-server-connection-pooling.md).  
   
 ### SQL Server Batch Execution Environment  
  When a connection is opened, a default environment is defined. This environment is then copied into a logical MARS session.  
   
  The batch execution environment includes the following components:  
   
--   Set options (for example, ANSI_NULLS, DATE_FORMAT, LANGUAGE, TEXTSIZE)  
+- Set options (for example, ANSI_NULLS, DATE_FORMAT, LANGUAGE, TEXTSIZE)  
   
--   Security context (user/application role)  
+- Security context (user/application role)  
   
--   Database context (current database)  
+- Database context (current database)  
   
--   Execution state variables (for example, @@ERROR, @@ROWCOUNT, @@FETCH_STATUS @@IDENTITY)  
+- Execution state variables (for example, @@ERROR, @@ROWCOUNT, @@FETCH_STATUS @@IDENTITY)  
   
--   Top-level temporary tables  
+- Top-level temporary tables  
   
  With MARS, a default execution environment is associated to a connection. Every new batch that starts executing under a given connection receives a copy of the default environment. Whenever code is executed under a given batch, all changes made to the environment are scoped to the specific batch. Once execution finishes, the execution settings are copied into the default environment. In the case of a single batch issuing several commands to be executed sequentially under the same transaction, semantics are the same as those exposed by connections involving earlier clients or servers.  
   
@@ -88,7 +88,7 @@ string connectionString = "Data Source=MSSQL1;" +
   
  Message: Transaction context in use by another session.  
   
- Source: .Net SqlClient Data Provider  
+ Source: .NET SqlClient Data Provider  
   
  Expected: (null)  
   
@@ -96,15 +96,16 @@ string connectionString = "Data Source=MSSQL1;" +
   
  There are three options for handling this scenario:  
   
-1.  Start the transaction after the reader is created, so that it is not part of the transaction. Every update then becomes its own transaction.  
+1. Start the transaction after the reader is created, so that it is not part of the transaction. Every update then becomes its own transaction.  
   
-2.  Commit all work after the reader is closed. This has the potential for a substantial batch of updates.  
+2. Commit all work after the reader is closed. This has the potential for a substantial batch of updates.  
   
-3.  Don't use MARS; instead use a separate connection for each command object as you would have before MARS.  
+3. Don't use MARS; instead use a separate connection for each command object as you would have before MARS.  
   
 ### Detecting MARS Support  
  An application can check for MARS support by reading the `SqlConnection.ServerVersion` value. The major number should be 9 for SQL Server 2005 and 10 for SQL Server 2008.  
   
 ## See also
-- [Multiple Active Result Sets (MARS)](../../../../../docs/framework/data/adonet/sql/multiple-active-result-sets-mars.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Multiple Active Result Sets (MARS)](multiple-active-result-sets-mars.md)
+- [ADO.NET Overview](../ado-net-overview.md)

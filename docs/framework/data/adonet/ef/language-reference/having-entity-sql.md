@@ -8,7 +8,7 @@ Specifies a search condition for a group or an aggregate.
   
 ## Syntax  
   
-```  
+```sql  
 [ HAVING search_condition ]  
 ```  
   
@@ -20,11 +20,11 @@ Specifies a search condition for a group or an aggregate.
  The HAVING clause is used to specify an additional filtering condition on the result of a grouping. If no GROUP BY clause is specified in the query expression, an implicit single-set group is assumed.  
   
 > [!NOTE]
->  HAVING can be used only with the [SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md) statement. When [GROUP BY](../../../../../../docs/framework/data/adonet/ef/language-reference/group-by-entity-sql.md) is not used, HAVING behaves like a WHERE clause.  
+> HAVING can be used only with the [SELECT](select-entity-sql.md) statement. When [GROUP BY](group-by-entity-sql.md) is not used, HAVING behaves like a WHERE clause.  
   
- The HAVING clause works like the WHERE clause except that it is applied after the GROUP BY operation. This means that the HAVING clause can only make references to grouping aliases and aggregates, as illustrated in the following example.  
+The HAVING clause works like the WHERE clause except that it is applied after the GROUP BY operation. This means that the HAVING clause can only make references to grouping aliases and aggregates, as illustrated in the following example:
   
-```  
+```sql  
 SELECT Name, SUM(o.Price * o.Quantity) AS Total FROM orderLines AS o GROUP BY o.Product AS Name  
 HAVING SUM(o.Quantity) > 1  
 ```  
@@ -34,12 +34,13 @@ HAVING SUM(o.Quantity) > 1
 ## Example  
  The following Entity SQL query uses the HAVING and GROUP BY operators to specify a search condition for a group or an aggregate. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-primitivetype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#HAVING](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#having)]  
+ [!code-sql[DP EntityServices Concepts#HAVING](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#having)]  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Query Expressions](../../../../../../docs/framework/data/adonet/ef/language-reference/query-expressions-entity-sql.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Query Expressions](query-expressions-entity-sql.md)

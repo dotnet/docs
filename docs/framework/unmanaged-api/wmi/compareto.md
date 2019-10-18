@@ -2,51 +2,52 @@
 title: CompareTo function (Unmanaged API Reference)
 description: The CompareTo function compares an object to another WMI object.
 ms.date: "11/06/2017"
-api_name: 
+api_name:
   - "CompareTo"
-api_location: 
+api_location:
   - "WMINet_Utils.dll"
-api_type: 
+api_type:
   - "DLLExport"
-f1_keywords: 
+f1_keywords:
   - "CompareTo"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CompareTo function [.NET WMI and performance counters]"
-topic_type: 
+topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
+
 # CompareTo function
-Compares an object to another Windows management object.  
+
+Compares an object to another Windows management object.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
-## Syntax  
-  
-```
+
+## Syntax
+
+```cpp
 HRESULT CompareTo (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr, 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr,
    [in] LONG              flags,
-   [in] IWbemClassObject* pCompareTo 
-); 
-```  
+   [in] IWbemClassObject* pCompareTo
+);
+```
 
 ## Parameters
 
-`vFunc`  
+`vFunc`\
 [in] This parameter is unused.
 
-`ptr`  
+`ptr`\
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
-`flags`  
+`flags`\
 [in] A bitwise combination of the flags that specify the object characteristics to consider for the comparison. See the [Remarks](#remarks) section for more information.
 
-`pCompareTo`  
-
-[in] The object for comparison. `pcompareTo` must be a valid [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance; it cannot be `null`.
+`pCompareTo`\
+[in] The object for comparison. `pCompareTo` must be a valid [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance; it cannot be `null`.
 
 ## Return value
 
@@ -60,7 +61,7 @@ The following values returned by this function are defined in the *WbemCli.h* he
 | `WBEM_S_NO_ERROR` | 0 | The function call was successful.  |
 | `WBEM_S_DIFFERENT` | 0x40003 | The objects are different. |
 | `WBEM_S_SAME` | 0 | The objects are the same based on the comparison flags. |
-  
+
 ## Remarks
 
 This function wraps a call to the [IWbemClassObject::CompareTo](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-compareto) method.
@@ -74,7 +75,7 @@ The flags that can be passed as the `lEnumFlags` argument are defined in the *Wb
 | `WBEM_FLAG_IGNORE_DEFAULT_VALUES` | 4 | Ignore default values of properties. This flag only applies to comparison of classes. |
 | `WBEM_FLAG_IGNORE_FLAVOR` | 0x20 | Ignore qualifier flavors. This flag still takes qualifiers into account, but ignores flavor distinctions such as propagation rules and override restrictions. |
 | `WBEM_FLAG_IGNORE_CASE` | 0x10 | Ignore case in comparing string values. This applies both to strings and qualifier values. The comparison of property and qualifier names is always case-sensitive regardless of whether this flag is set. |
-| `WBEM_FLAG_IGNORE_CLASS` | 0x8 | Assume that the objects being compared are instanes of the same class. Consequently, this flag compares instance-related information only. Use this flags to optimize performance. If the objects are not of the same class, the results are undefined. |
+| `WBEM_FLAG_IGNORE_CLASS` | 0x8 | Assume that the objects being compared are instances of the same class. Consequently, this flag compares instance-related information only. Use this flags to optimize performance. If the objects are not of the same class, the results are undefined. |
 
 Or you can specify a single composite flag as follows:
 
@@ -82,12 +83,14 @@ Or you can specify a single composite flag as follows:
 |---------|---------|---------|
 |`WBEM_COMPARISON_INCLUDE_ALL` | 0 | Consider all features in the comparison. |
 
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
+## Requirements
+
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+**Header:** WMINet_Utils.idl
+
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

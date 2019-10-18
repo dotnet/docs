@@ -22,7 +22,7 @@ This enumeration is obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorD
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugJITCompilerFlagsDeprecated {  
     CORDEBUG_JIT_TRACK_DEBUG_INFO  = 0x1  
 } CorDebugJITCompilerFlagsDeprecated;  
@@ -44,4 +44,5 @@ typedef enum CorDebugJITCompilerFlagsDeprecated {
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

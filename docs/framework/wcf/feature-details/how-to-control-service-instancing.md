@@ -11,9 +11,9 @@ Setting the instance mode of a service enables you to specify when a <xref:Syste
   
 ### To control the service instance lifetime using code  
   
-1.  Apply the <xref:System.ServiceModel.ServiceBehaviorAttribute> to the service class.  
+1. Apply the <xref:System.ServiceModel.ServiceBehaviorAttribute> to the service class.  
   
-2.  Set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property to one of the following values: <xref:System.ServiceModel.InstanceContextMode.PerCall>, <xref:System.ServiceModel.InstanceContextMode.PerSession>, or <xref:System.ServiceModel.InstanceContextMode.Single>.  
+2. Set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property to one of the following values: <xref:System.ServiceModel.InstanceContextMode.PerCall>, <xref:System.ServiceModel.InstanceContextMode.PerSession>, or <xref:System.ServiceModel.InstanceContextMode.Single>.  
   
      [!code-csharp[C_ControlServiceInstancing#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_controlserviceinstancing/cs/source.cs#1)]
      [!code-vb[C_ControlServiceInstancing#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_controlserviceinstancing/vb/source.vb#1)]  
@@ -25,6 +25,7 @@ Setting the instance mode of a service enables you to specify when a <xref:Syste
  [!code-vb[c_ControlServiceInstancing#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_controlserviceinstancing/vb/source.vb#2)]  
   
 ## See also
+
 - <xref:System.ServiceModel.ServiceBehaviorAttribute>
 - <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A>
 - <xref:System.ServiceModel.InstanceContextMode>

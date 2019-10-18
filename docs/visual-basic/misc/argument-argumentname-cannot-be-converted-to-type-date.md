@@ -10,8 +10,9 @@ A conversion attempted to change a variable to type `Date`, but the value is not
   
 ## To correct this error  
   
--   Find a conversion that is meaningful.  
+- Find a conversion that is meaningful.  
   
 ## See also
+
 - [Type Conversions in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
 - [Date Data Type](../../visual-basic/language-reference/data-types/date-data-type.md)

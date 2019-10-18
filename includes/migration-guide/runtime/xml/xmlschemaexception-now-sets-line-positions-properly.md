@@ -8,4 +8,3 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Xml.Linq.LoadOptions.SetLineInfo?displayProperty=nameWithType></li></ul>|
-

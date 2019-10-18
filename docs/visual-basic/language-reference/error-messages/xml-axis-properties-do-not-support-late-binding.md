@@ -15,8 +15,9 @@ An XML axis property has been referenced for an untyped object.
   
 ## To correct this error  
   
--   Ensure that the object is a strong-typed <xref:System.Xml.Linq.XElement> object before referencing the XML axis property.  
+- Ensure that the object is a strong-typed <xref:System.Xml.Linq.XElement> object before referencing the XML axis property.  
   
 ## See also
+
 - [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
 - [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)

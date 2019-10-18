@@ -1,0 +1,28 @@
+- name: Migration Guide
+  href: index.md
+  items:
+  - name: Application Compatibility
+    href: application-compatibility.md
+    items:
+    - name: Runtime Changes
+      href: runtime/index.md
+    - name: Retargeting Changes
+      href: retargeting/index.md
+  - name: Version Compatibility
+    href: version-compatibility.md
+  - name: Versions and Dependencies
+    href: versions-and-dependencies.md
+    items:
+    - name: "How to: Determine Which .NET Framework Versions Are Installed"
+      href: how-to-determine-which-versions-are-installed.md
+      items:
+      - name: "Minimum values of the Release DWORD for .NET Framework versions"
+        href: minimum-release-dword.md
+    - name: "How to: Determine Which .NET Framework Updates Are Installed"
+      href: how-to-determine-which-net-framework-updates-are-installed.md
+  - name: "How to: Configure an app to support .NET Framework 4 or later versions"
+    href: how-to-configure-an-app-to-support-net-framework-4-or-4-5.md
+  - name: Migrating from the .NET Framework 1.1
+    href: migrating-from-the-net-framework-1-1.md
+  - name: .NET Framework 4 migration issues
+    href: net-framework-4-migration-issues.md

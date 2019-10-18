@@ -12,11 +12,12 @@ ms.assetid: a3d9930e-5597-470e-a636-dcf65eac500b
 This category covers the various base classes, interfaces and other elements and concepts used in creating a fully functional [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] control.  
   
 ## In This Section  
- [Control Authoring Overview](../../../../docs/framework/wpf/controls/control-authoring-overview.md)  
- [Guidelines for Designing Stylable Controls](../../../../docs/framework/wpf/controls/guidelines-for-designing-stylable-controls.md)  
- [Adorners](../../../../docs/framework/wpf/controls/adorners.md)  
- [Control Styles and Templates](../../../../docs/framework/wpf/controls/control-styles-and-templates.md)  
- [UI Automation of a WPF Custom Control](../../../../docs/framework/wpf/controls/ui-automation-of-a-wpf-custom-control.md)  
+ [Control Authoring Overview](control-authoring-overview.md)  
+ [Guidelines for Designing Stylable Controls](guidelines-for-designing-stylable-controls.md)  
+ [Adorners](adorners.md)  
+ [Control Styles and Templates](control-styles-and-templates.md)  
+ [UI Automation of a WPF Custom Control](ui-automation-of-a-wpf-custom-control.md)  
   
 ## See also
-- [Styling and Templating](../../../../docs/framework/wpf/controls/styling-and-templating.md)
+
+- [Styling and Templating](styling-and-templating.md)

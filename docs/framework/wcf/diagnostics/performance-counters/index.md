@@ -21,11 +21,11 @@ Windows Communication Foundation (WCF) includes a large set of performance count
   
  The `performanceCounters` attribute can be set to enable a specific type of performance counters. Valid values are  
   
--   All: All category counters (ServiceModelService, ServiceModelEndpoint and ServiceModelOperation) are enabled.  
+- All: All category counters (ServiceModelService, ServiceModelEndpoint and ServiceModelOperation) are enabled.  
   
--   ServiceOnly: Only ServiceModelService category counters are enabled. This is the default value.  
+- ServiceOnly: Only ServiceModelService category counters are enabled. This is the default value.  
   
--   Off: ServiceModel* performance counters are disabled.  
+- Off: ServiceModel* performance counters are disabled.  
   
  If you want to enable performance counters for all WCF applications, you can place the configuration settings in the Machine.config file.  Please see the **Increasing Memory Size for Performance Counters** section below for more information on configuring sufficient memory for performance counters on your machine.  
   
@@ -33,7 +33,7 @@ Windows Communication Foundation (WCF) includes a large set of performance count
   
  You can also enable performance counters in your code as follows,  
   
-```  
+```csharp
 using System.Configuration;  
 using System.ServiceModel.Configuration;  
 using System.ServiceModel.Diagnostics;  
@@ -48,7 +48,7 @@ config.Save();
  To view data captured by the performance counters, you can use the Performance Monitor (Perfmon.exe) that comes with Windows. You can launch this tool by going to **Start**, and click **Run** and type `perfmon.exe` in the dialog box.  
   
 > [!NOTE]
->  Performance counter instances may be released before the last messages have been processed by the endpoint dispatcher. This can result in performance data not being captured for a few messages.  
+> Performance counter instances may be released before the last messages have been processed by the endpoint dispatcher. This can result in performance data not being captured for a few messages.  
   
 ## Increasing Memory Size for Performance Counters  
  WCF uses separate shared memory for its performance counter categories.  
@@ -57,11 +57,11 @@ config.Save();
   
  You can change the amount of performance counter memory for WCF categories in the registry. To do so, you need to add a new DWORD value named `FileMappingSize` to the three following locations, and set it to the desired value in bytes. Reboot your machine so that these changes are taken into effect.  
   
--   HKLM\System\CurrentControlSet\Services\ServiceModelEndpoint 4.0.0.0\Performance  
+- HKLM\System\CurrentControlSet\Services\ServiceModelEndpoint 4.0.0.0\Performance  
   
--   HKLM\System\CurrentControlSet\Services\ServiceModelOperation 4.0.0.0\Performance  
+- HKLM\System\CurrentControlSet\Services\ServiceModelOperation 4.0.0.0\Performance  
   
--   HKLM\System\CurrentControlSet\Services\ServiceModelService 4.0.0.0\Performance  
+- HKLM\System\CurrentControlSet\Services\ServiceModelService 4.0.0.0\Performance  
   
  When a large number of objects (for example, ServiceHost) are disposed of but waiting to be garbage-collected, the `PrivateBytes` performance counter will register an unusually high number. To resolve this problem, you can either add your own application-specific counters, or use the `performanceCounters` attribute to enable only service-level counters.  
   
@@ -70,20 +70,18 @@ config.Save();
   
  You can use WMI to retrieve the name of a performance counter instance. For example,  
   
--   Service counter instance name can be obtained through WMI [Service](../../../../../docs/framework/wcf/diagnostics/wmi/service.md) instance's "CounterInstanceName" property.  
+- Service counter instance name can be obtained through WMI [Service](../wmi/service.md) instance's "CounterInstanceName" property.  
   
--   Endpoint counter instance name can be obtained through WMI [Endpoint](../../../../../docs/framework/wcf/diagnostics/wmi/endpoint.md) instance's "CounterInstanceName" property.  
+- Endpoint counter instance name can be obtained through WMI [Endpoint](../wmi/endpoint.md) instance's "CounterInstanceName" property.  
   
--   Operation counter instance name can be obtained through WMI [Endpoint](../../../../../docs/framework/wcf/diagnostics/wmi/endpoint.md) instance's "GetOperationCounterInstanceName" method.  
+- Operation counter instance name can be obtained through WMI [Endpoint](../wmi/endpoint.md) instance's "GetOperationCounterInstanceName" method.  
   
- For more information on WMI, see [Using Windows Management Instrumentation for Diagnostics](../../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
+ For more information on WMI, see [Using Windows Management Instrumentation for Diagnostics](../wmi/index.md).  
   
 ### Service performance counters  
  Service performance counters measure the service behavior as a whole and can be used to diagnose the performance of the whole service. They can be found under the `ServiceModelService 4.0.0.0` performance object when viewing with Performance Monitor. The instances are named using the following pattern:  
   
-```  
-ServiceName@ServiceBaseAddress  
-```  
+`ServiceName@ServiceBaseAddress`
   
  A counter in a service scope is aggregated from counter in a collection of endpoints.  
   
@@ -92,45 +90,39 @@ ServiceName@ServiceBaseAddress
 ### Endpoint performance counters  
  Endpoint performance counters enable you to look at data reflecting how an endpoint is accepting messages. They can be found under the `ServiceModelEndpoint 4.0.0.0` performance object when viewing using the Performance Monitor. The instances are named using the following pattern:  
   
-```  
-(ServiceName).(ContractName)@(endpoint listener address)  
-```  
+`(ServiceName).(ContractName)@(endpoint listener address)`
   
  The data is similar to what is collected for individual operations, but is only aggregated across the endpoint.  
   
  A counter in an endpoint scope is aggregated from counters in a collection of operations.  
   
 > [!NOTE]
->  If two endpoints have identical contract names and addresses, they are mapped to the same counter instance.  
+> If two endpoints have identical contract names and addresses, they are mapped to the same counter instance.  
   
 ### Operation performance counters  
  Operation performance counters are found under the `ServiceModelOperation 4.0.0.0` performance object when viewing with the Performance Monitor. Each operation has an individual instance. That is, if a given contract has 10 operations, 10 operation counter instances are associated with that contract. The object instances are named using the following pattern:  
   
-```  
-(ServiceName).(ContractName).(OperationName)@(first endpoint listener address)  
-```  
+`(ServiceName).(ContractName).(OperationName)@(first endpoint listener address)`
   
  This counter enables you to measure how the call is being used and how well the operation is performing.  
   
  When counters are visible at multiple scopes, data gathered from a higher scope are aggregated with data from lower scopes. For example, `Calls` at an endpoint represents the sum of all operation calls within the endpoint; `Calls` at a service represents the sum of all calls to all endpoints within the service.  
   
 > [!NOTE]
->  If you have duplicate operation names on a contract, you only get one counter instances for both operations.  
+> If you have duplicate operation names on a contract, you only get one counter instances for both operations.  
   
 ## Programming the WCF Performance Counters  
- Several files are installed in the SDK install folder so that you can access the WCF performance counters programmatically. These files are listed as follows.  
+
+Several files are installed in the SDK install folder so that you can access the WCF performance counters programmatically. These files are listed as follows:
   
--   _ServiceModelEndpointPerfCounters.vrg  
+- *\_ServiceModelEndpointPerfCounters.vrg*
+- *\_ServiceModelOperationPerfCounters.vrg*
+- *\_ServiceModelServicePerfCounters.vrg*  
+- *\_SMSvcHostPerfCounters.vrg*
+- *\_TransactionBridgePerfCounters.vrg*
   
--   _ServiceModelOperationPerfCounters.vrg  
-  
--   _ServiceModelServicePerfCounters.vrg  
-  
--   _SMSvcHostPerfCounters.vrg  
-  
--   _TransactionBridgePerfCounters.vrg  
-  
- For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://go.microsoft.com/fwlink/?LinkId=95179).  
+For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90)).
   
 ## See also
-- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+
+- [Administration and Diagnostics](../index.md)

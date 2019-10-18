@@ -14,11 +14,11 @@ ms.assetid: a0b86e28-86b4-4497-abe8-d5fd614c7926
 # \<add> Element for bypasslist (Network Settings)
 Adds an IP address or DNS name to the proxy bypass list.  
   
- \<configuration>  
-\<system.net>  
-\<defaultProxy>  
-\<bypasslist>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<bypasslist>**](bypasslist-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
@@ -44,7 +44,7 @@ Adds an IP address or DNS name to the proxy bypass list.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[bypasslist](../../../../../docs/framework/configure-apps/file-schema/network/bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|  
+|[bypasslist](bypasslist-element-network-settings.md)|Provides a set of regular expressions that describe addresses that do not use a proxy.|  
   
 ## Remarks  
  The `add` element inserts regular expressions describing IP addresses or DNS server names to the list of addresses that bypass a proxy server.  
@@ -53,7 +53,7 @@ Adds an IP address or DNS name to the proxy bypass list.
   
  You should use caution when specifying a regular expression for this element. The regular expression "[a-z]+\\.contoso\\.com" matches any host in the contoso.com domain, but it also matches any host in the contoso.com.cpandl.com domain. To match only a host in the contoso.com domain, use an anchor ("$"): "[a-z]+\\.contoso\\.com$".  
   
- For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../../docs/standard/base-types/regular-expressions.md).  
+ For more information about regular expressions, see .[.NET Framework Regular Expressions](../../../../standard/base-types/regular-expressions.md).  
   
 ## Configuration Files  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
@@ -75,5 +75,6 @@ Adds an IP address or DNS name to the proxy bypass list.
 ```  
   
 ## See also
+
 - <xref:System.Net.WebProxy?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

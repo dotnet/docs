@@ -21,11 +21,11 @@ Indicates that a type declaration is a partial definition of the type.
  You can divide the definition of a type among several declarations by using the `Partial` keyword. You can use as many partial declarations as you want, in as many different source files as you want. However, all the declarations must be in the same assembly and the same namespace.  
   
 > [!NOTE]
->  Visual Basic supports *partial methods*, which are typically implemented in partial classes. For more information, see [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md) and [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md).  
+> Visual Basic supports *partial methods*, which are typically implemented in partial classes. For more information, see [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md) and [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md).  
   
 ## Syntax  
   
-```  
+```vb  
 [ <attrlist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] _  
 Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]  
     [ Inherits classname ]  
@@ -62,15 +62,15 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
   
 ## Best Practices  
   
--   Under normal circumstances, you should not split the development of a single type across two or more declarations. Therefore, in most cases you do not need the `Partial` keyword.  
+- Under normal circumstances, you should not split the development of a single type across two or more declarations. Therefore, in most cases you do not need the `Partial` keyword.  
   
--   For readability, every partial declaration of a type should include the `Partial` keyword. The compiler allows at most one partial declaration to omit the keyword; if two or more omit it the compiler signals an error.  
+- For readability, every partial declaration of a type should include the `Partial` keyword. The compiler allows at most one partial declaration to omit the keyword; if two or more omit it the compiler signals an error.  
   
 ## Behavior  
   
--   **Union of Declarations.** The compiler treats the type as the union of all its partial declarations. Every modifier from every partial definition applies to the entire type, and every member from every partial definition is available to the entire type.  
+- **Union of Declarations.** The compiler treats the type as the union of all its partial declarations. Every modifier from every partial definition applies to the entire type, and every member from every partial definition is available to the entire type.  
   
--   **Type Promotion Not Allowed For Partial Types in Modules.** If a partial definition is inside a module, type promotion of that type is automatically defeated. In such a case, a set of partial definitions can cause unexpected results and even compiler errors. For more information, see [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md).  
+- **Type Promotion Not Allowed For Partial Types in Modules.** If a partial definition is inside a module, type promotion of that type is automatically defeated. In such a case, a set of partial definitions can cause unexpected results and even compiler errors. For more information, see [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md).  
   
      The compiler merges partial definitions only when their fully qualified paths are identical.  
   
@@ -83,11 +83,12 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
 ## Example  
  The following example splits the definition of class `sampleClass` into two declarations, each of which defines a different `Sub` procedure.  
   
- [!code-vb[VbVbalrKeywords#3](../../../visual-basic/language-reference/codesnippet/VisualBasic/partial_1.vb)]  
+ [!code-vb[VbVbalrKeywords#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#3)]  
   
  The two partial definitions in the preceding example could be in the same source file or in two different source files.  
   
 ## See also
+
 - [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
 - [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
 - [Type Promotion](../../../visual-basic/programming-guide/language-features/declared-elements/type-promotion.md)

@@ -18,7 +18,7 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
   
 ### To add a tab programmatically  
   
--   Use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
+- Use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
   
     ```vb  
     Dim myTabPage As New TabPage()  
@@ -41,11 +41,11 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
   
 ### To remove a tab programmatically  
   
--   To remove selected tabs, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Remove%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
+- To remove selected tabs, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Remove%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
   
      -or-  
   
--   To remove all tabs, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Clear%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
+- To remove all tabs, use the <xref:System.Windows.Forms.TabControl.TabPageCollection.Clear%2A> method of the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
   
     ```vb  
     ' Removes the selected tab:  
@@ -69,7 +69,8 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
     ```  
   
 ## See also
-- [TabControl Control Overview](../../../../docs/framework/winforms/controls/tabcontrol-control-overview-windows-forms.md)
-- [How to: Add a Control to a Tab Page](../../../../docs/framework/winforms/controls/how-to-add-a-control-to-a-tab-page.md)
-- [How to: Disable Tab Pages](../../../../docs/framework/winforms/controls/how-to-disable-tab-pages.md)
-- [How to: Change the Appearance of the Windows Forms TabControl](../../../../docs/framework/winforms/controls/how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)
+
+- [TabControl Control Overview](tabcontrol-control-overview-windows-forms.md)
+- [How to: Add a Control to a Tab Page](how-to-add-a-control-to-a-tab-page.md)
+- [How to: Disable Tab Pages](how-to-disable-tab-pages.md)
+- [How to: Change the Appearance of the Windows Forms TabControl](how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md)

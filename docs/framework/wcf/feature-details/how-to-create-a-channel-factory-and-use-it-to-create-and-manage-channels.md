@@ -12,4 +12,5 @@ The <xref:System.ServiceModel.DuplexChannelFactory%601> class provides the means
  [!code-csharp[S_CustomAuthentication#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_customauthentication/cs/instance.cs#1)]  
   
 ## See also
+
 - <xref:System.ServiceModel.DuplexChannelFactory%601>

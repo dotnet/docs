@@ -7,44 +7,44 @@ helpviewer_keywords:
 ms.assetid: 0e838ea1-4e7e-4334-b882-ab25df607b8b
 ---
 # Using Image Encoders and Decoders in Managed GDI+
-The <xref:System.Drawing> namespace provides the <xref:System.Drawing.Image> and <xref:System.Drawing.Bitmap> classes for storing and manipulating images. By using image encoders in [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)], you can write images from memory to disk. By using image decoders in [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)], you can load images from disk into memory. An encoder translates the data in an <xref:System.Drawing.Image> or <xref:System.Drawing.Bitmap> object into a designated disk file format. A decoder translates the data in a disk file to the format required by the <xref:System.Drawing.Image> and <xref:System.Drawing.Bitmap> objects.  
+The <xref:System.Drawing> namespace provides the <xref:System.Drawing.Image> and <xref:System.Drawing.Bitmap> classes for storing and manipulating images. By using image encoders in GDI+, you can write images from memory to disk. By using image decoders in GDI+, you can load images from disk into memory. An encoder translates the data in an <xref:System.Drawing.Image> or <xref:System.Drawing.Bitmap> object into a designated disk file format. A decoder translates the data in a disk file to the format required by the <xref:System.Drawing.Image> and <xref:System.Drawing.Bitmap> objects.  
   
- [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] has built-in encoders and decoders that support the following file types:  
+ GDI+ has built-in encoders and decoders that support the following file types:  
   
--   BMP  
+- BMP  
   
--   GIF  
+- GIF  
   
--   JPEG  
+- JPEG  
   
--   PNG  
+- PNG  
   
--   TIFF  
+- TIFF  
   
- [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] also has built-in decoders that support the following file types:  
+ GDI+ also has built-in decoders that support the following file types:  
   
--   WMF  
+- WMF  
   
--   EMF  
+- EMF  
   
--   ICON  
+- ICON  
   
  The following topics discuss encoders and decoders in more detail:  
   
 ## In This Section  
- [How to: List Installed Encoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-encoders.md)  
+ [How to: List Installed Encoders](how-to-list-installed-encoders.md)  
  Describes how to list the encoders available on a computer.  
   
- [How to: List Installed Decoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-decoders.md)  
+ [How to: List Installed Decoders](how-to-list-installed-decoders.md)  
  Describes how to list the decoders available on a computer.  
   
- [How to: Determine the Parameters Supported by an Encoder](../../../../docs/framework/winforms/advanced/how-to-determine-the-parameters-supported-by-an-encoder.md)  
+ [How to: Determine the Parameters Supported by an Encoder](how-to-determine-the-parameters-supported-by-an-encoder.md)  
  Describes how to list the <xref:System.Drawing.Imaging.EncoderParameters> supported by an encoder.  
   
- [How to: Convert a BMP image to a PNG image](../../../../docs/framework/winforms/advanced/how-to-convert-a-bmp-image-to-a-png-image.md)  
+ [How to: Convert a BMP image to a PNG image](how-to-convert-a-bmp-image-to-a-png-image.md)  
  Describes how to save a image in a different image format.  
   
- [How to: Set JPEG Compression Level](../../../../docs/framework/winforms/advanced/how-to-set-jpeg-compression-level.md)  
+ [How to: Set JPEG Compression Level](how-to-set-jpeg-compression-level.md)  
  Describes how to change the quality level of an image.  
   
 ## Reference  
@@ -59,6 +59,6 @@ The <xref:System.Drawing> namespace provides the <xref:System.Drawing.Image> and
  <xref:System.Drawing.Imaging.Encoder>  
   
 ## Related Sections  
- [About GDI+ Managed Code](../../../../docs/framework/winforms/advanced/about-gdi-managed-code.md)  
+ [About GDI+ Managed Code](about-gdi-managed-code.md)  
   
- [Images, Bitmaps, and Metafiles](../../../../docs/framework/winforms/advanced/images-bitmaps-and-metafiles.md)
+ [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)

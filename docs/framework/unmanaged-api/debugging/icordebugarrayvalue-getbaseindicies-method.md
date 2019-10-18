@@ -23,7 +23,7 @@ Gets the base index of each dimension in the array.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBaseIndicies (  
     [in] ULONG32          cdim,  
     [out, size_is(cdim), length_is(cdim)]   
@@ -31,7 +31,7 @@ HRESULT GetBaseIndicies (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cdim`  
  [in] The number of dimensions of this `ICorDebugArrayValue` object. This value is also the size of the `indicies` array because its size is equal to the number of dimensions of the `ICorDebugArrayValue` object.  
   

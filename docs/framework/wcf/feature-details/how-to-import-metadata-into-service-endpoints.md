@@ -8,29 +8,30 @@ This topic explains how to import metadata into a collection of service endpoint
   
 ### To import metadata into service endpoints  
   
-1.  Declare an <xref:System.ServiceModel.EndpointAddress> object and initialize it with the Uniform Resource Identifier (URI) for the metadata exchange (MEX) address of the service.  
+1. Declare an <xref:System.ServiceModel.EndpointAddress> object and initialize it with the Uniform Resource Identifier (URI) for the metadata exchange (MEX) address of the service.  
   
      [!code-csharp[UE_ImportMetadata#0](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#0)]  
   
-2.  Create a <xref:System.ServiceModel.Description.MetadataExchangeClient>, passing in the MEX address, and call <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A>. This retrieves the metadata from the service.  
+2. Create a <xref:System.ServiceModel.Description.MetadataExchangeClient>, passing in the MEX address, and call <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A>. This retrieves the metadata from the service.  
   
      [!code-csharp[UE_ImportMetadata#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#1)]  
   
-3.  Create a <xref:System.ServiceModel.Description.WsdlImporter>, passing in the metadata previously retrieved, and call <xref:System.ServiceModel.Description.WsdlImporter.ImportAllContracts%2A>. This generates a collection of <xref:System.ServiceModel.Description.ContractDescription> objects. You could also call <xref:System.ServiceModel.Description.WsdlImporter.ImportAllEndpoints%2A> or <xref:System.ServiceModel.Description.WsdlImporter.ImportAllBindings%2A>, depending upon your needs.  
+3. Create a <xref:System.ServiceModel.Description.WsdlImporter>, passing in the metadata previously retrieved, and call <xref:System.ServiceModel.Description.WsdlImporter.ImportAllContracts%2A>. This generates a collection of <xref:System.ServiceModel.Description.ContractDescription> objects. You could also call <xref:System.ServiceModel.Description.WsdlImporter.ImportAllEndpoints%2A> or <xref:System.ServiceModel.Description.WsdlImporter.ImportAllBindings%2A>, depending upon your needs.  
   
      [!code-csharp[UE_ImportMetadata#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#2)]  
   
     > [!NOTE]
-    >  After you have imported the metadata, you will not be able to create a client channel or export the metadata. This is because no type information is available at this point. Type information is required to actually interact with the service or export metadata. To generate the type information, you need to generate code, shown in steps 4 and 5. Alternatively, you could use the <xref:System.ServiceModel.Description.MetadataResolver> helper class. For more information, see [How to: Use MetadataResolver to Obtain Binding Metadata Dynamically](../../../../docs/framework/wcf/feature-details/how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically.md).  
+    > After you have imported the metadata, you will not be able to create a client channel or export the metadata. This is because no type information is available at this point. Type information is required to actually interact with the service or export metadata. To generate the type information, you need to generate code, shown in steps 4 and 5. Alternatively, you could use the <xref:System.ServiceModel.Description.MetadataResolver> helper class. For more information, see [How to: Use MetadataResolver to Obtain Binding Metadata Dynamically](../../../../docs/framework/wcf/feature-details/how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically.md).  
   
-4.  Generate type information for each contract.  
+4. Generate type information for each contract.  
   
      [!code-csharp[UE_ImportMetadata#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#3)]  
   
-5.  Now you can use this information. The following sample generates C# source code.  
+5. Now you can use this information. The following sample generates C# source code.  
   
      [!code-csharp[UE_ImportMetadata#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#4)]  
   
 ## See also
+
 - [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
 - [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)

@@ -17,11 +17,12 @@ This example shows how to register an attached property and provide public acces
   
  The provider class for an attached property (even if it is not registered as a dependency property) must provide static get and set accessors that follow the naming convention `Set`*[AttachedPropertyName]* and `Get`*[AttachedPropertyName]*. These accessors are required so that the acting [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] reader can recognize the property as an attribute in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and resolve the appropriate types.  
   
- [!code-csharp[WPFAquariumSln#RegisterAttachedBubbler](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerattachedbubbler)]
- [!code-vb[WPFAquariumSln#RegisterAttachedBubbler](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler)]  
+ [!code-csharp[WPFAquariumSln#RegisterAttachedBubbler](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerattachedbubbler)]
+ [!code-vb[WPFAquariumSln#RegisterAttachedBubbler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerattachedbubbler)]  
   
 ## See also
+
 - <xref:System.Windows.DependencyProperty>
-- [Dependency Properties Overview](../../../../docs/framework/wpf/advanced/dependency-properties-overview.md)
-- [Custom Dependency Properties](../../../../docs/framework/wpf/advanced/custom-dependency-properties.md)
-- [How-to Topics](../../../../docs/framework/wpf/advanced/properties-how-to-topics.md)
+- [Dependency Properties Overview](dependency-properties-overview.md)
+- [Custom Dependency Properties](custom-dependency-properties.md)
+- [How-to Topics](properties-how-to-topics.md)

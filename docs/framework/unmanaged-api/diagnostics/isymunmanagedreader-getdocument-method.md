@@ -23,7 +23,7 @@ Finds a document. The document language, vendor, and type are optional.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocument (  
     [in]  WCHAR  *url,  
     [in]  GUID   language,  
@@ -32,7 +32,7 @@ HRESULT GetDocument (
     [out, retval] ISymUnmanagedDocument** pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `url`  
  [in] The URL that identifies the document.  
   
@@ -55,4 +55,5 @@ HRESULT GetDocument (
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)

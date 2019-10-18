@@ -72,7 +72,8 @@ try {
 ```  
   
 ## See also
-- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)
-- [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)
-- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)
-- [Sockets](../../../docs/framework/network-programming/sockets.md)
+
+- [Using a Synchronous Client Socket](using-a-synchronous-client-socket.md)
+- [Using an Asynchronous Client Socket](using-an-asynchronous-client-socket.md)
+- [How to: Create a Socket](how-to-create-a-socket.md)
+- [Sockets](sockets.md)

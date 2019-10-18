@@ -15,7 +15,7 @@ Causes the compiler to report errors if variables are not declared before they a
   
 ## Syntax  
   
-```  
+```console  
 -optionexplicit[+ | -]  
 ```  
   
@@ -28,18 +28,19 @@ Causes the compiler to report errors if variables are not declared before they a
   
 ### To set -optionexplicit in the Visual Studio IDE  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
+1. Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.   
   
-2.  Click the **Compile** tab.  
+2. Click the **Compile** tab.  
   
-3.  Modify the value in the **Option Explicit** box.  
+3. Modify the value in the **Option Explicit** box.  
   
 ## Example  
  The following code compiles when `-optionexplicit-` is used.  
   
- [!code-vb[VbVbalrCompiler#5](../../../visual-basic/reference/command-line-compiler/codesnippet/VisualBasic/optionexplicit_1.vb)]  
+ [!code-vb[VbVbalrCompiler#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCompiler/VB/OptionExplicitOff.vb#5)]  
   
 ## See also
+
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
 - [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)

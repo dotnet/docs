@@ -23,7 +23,7 @@ Gets a pointer to a function that has a given signature.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionPointerType (  
     [in] ULONG32                             nTypeArgs,  
     [in, size_is(nTypeArgs)] ICorDebugType   *ppTypeArgs[],  
@@ -31,7 +31,7 @@ HRESULT GetFunctionPointerType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nTypeArgs`  
  [in] The number of type arguments for the function.  
   

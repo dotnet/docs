@@ -33,11 +33,11 @@ Provides an enumerator for objects that will be garbage-collected.
   
  The [COR_GC_REFERENCE](../../../../docs/framework/unmanaged-api/debugging/cor-gc-reference-structure.md) objects in the collection populated by this method represent three kinds of objects:  
   
--   Objects from all managed stacks. This includes live references in managed code as well as objects created by the common language runtime.  
+- Objects from all managed stacks. This includes live references in managed code as well as objects created by the common language runtime.  
   
--   Objects from the handle table. This includes strong references (`HNDTYPE_STRONG` and `HNDTYPE_REFCOUNT`) and static variables in a module.  
+- Objects from the handle table. This includes strong references (`HNDTYPE_STRONG` and `HNDTYPE_REFCOUNT`) and static variables in a module.  
   
--   Objects from the finalizer queue. The finalizer queue roots objects until the finalizer has run.  
+- Objects from the finalizer queue. The finalizer queue roots objects until the finalizer has run.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -49,4 +49,5 @@ Provides an enumerator for objects that will be garbage-collected.
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

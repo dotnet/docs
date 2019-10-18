@@ -16,7 +16,7 @@ This topic covers various aspects related to federated applications, trust bound
  WCF services use the value of the <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings.MaxClockSkew%2A> property on the [SecurityBindingElement](../../../../docs/framework/wcf/diagnostics/wmi/securitybindingelement.md) to allow for clock skew between the client and service. In federation, the `MaxClockSkew` setting applies to clock skews between both the client and the security token service from where the client obtained the issued token. Therefore, security token services need not make clock-skew allowances when setting the issued token's effective and expiration times.  
   
 > [!NOTE]
->  The importance of clock skew increases as the lifetime of the issued token shortens. In most cases, clock skew is not a significant issue if the token lifetime is 30 minutes or more. Scenarios with shorter lifetimes or where the exact validity time of the token is important should be designed to take clock skew into account.  
+> The importance of clock skew increases as the lifetime of the issued token shortens. In most cases, clock skew is not a significant issue if the token lifetime is 30 minutes or more. Scenarios with shorter lifetimes or where the exact validity time of the token is important should be designed to take clock skew into account.  
   
 ## Federated Endpoints and Time-Outs  
  When a client communicates with a federated endpoint, it must first acquire an appropriate token from a security token service. If the security token service exposes a federated endpoint, the client must first obtain a token from the issuer for that endpoint. Each token acquisition takes time, and that time is subject to the overall time-out for sending the actual message to the final endpoint.  
@@ -32,6 +32,7 @@ This topic covers various aspects related to federated applications, trust bound
  Whether an issued token is serialized in a message sent from a client to a federated endpoint or not is controlled by setting the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode%2A> property of the <xref:System.ServiceModel.Security.Tokens.SecurityTokenParameters> class. This property can be set to one of the <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode> enumeration values, but it is not useful in most federated scenarios. The `SecurityTokenInclusionMode.Never` and `SecurityTokenInclusionMode.AlwaysToInitiator` values cause the client to send a reference to the token issued by the security token service to the relying party. Unless the relying party possesses a copy of the issued token, authentication will fail because the token reference is not resolvable. WCF treats `SecurityTokenInclusionMode.Once` as equivalent to `SecurityTokenInclusionMode.AlwaysToRecipient`.  
   
 ## See also
+
 - <xref:System.ServiceModel.Security.Tokens.SecurityTokenInclusionMode>
 - [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
 - [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)

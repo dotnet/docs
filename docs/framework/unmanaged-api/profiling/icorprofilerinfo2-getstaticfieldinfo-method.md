@@ -23,14 +23,14 @@ Gets a value that indicates the kind of static that applies to the specified fie
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldInfo (  
     [in] ClassID               classId,  
     [in] mdFieldDef            fieldToken,  
     [out] COR_PRF_STATIC_TYPE  *pFieldInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class in which the static field is defined.  
   
@@ -55,5 +55,6 @@ HRESULT GetStaticFieldInfo (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

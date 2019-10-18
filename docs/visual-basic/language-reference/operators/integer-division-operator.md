@@ -23,7 +23,7 @@ Divides two numbers and returns an integer result.
   
 ## Syntax  
   
-```  
+```vb  
 expression1 \ expression2  
 ```  
   
@@ -53,16 +53,17 @@ expression1 \ expression2
  If `expression2` evaluates to zero, the `\` operator throws a <xref:System.DivideByZeroException> exception. This is true for all numeric data types of the operands.  
   
 > [!NOTE]
->  The `\` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
+> The `\` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
  The following example uses the `\` operator to perform integer division. The result is an integer that represents the integer quotient of the two operands, with the remainder discarded.  
   
- [!code-vb[VbVbalrOperators#18](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/integer-division-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#18)]  
   
  The expressions in the preceding example return values of 2, 3, 33, and -22, respectively.  
   
 ## See also
+
 - [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)
 - [/ Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-operator.md)
 - [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)

@@ -23,12 +23,12 @@ Checks whether the `this` internal frame is closer to the leaf than the specifie
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,  
                        [out] BOOL * pIsCloser);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrameToCompare`  
  [in] A pointer to the comparison `ICorDebugFrame` object.  
   
@@ -57,6 +57,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorDebugInternalFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

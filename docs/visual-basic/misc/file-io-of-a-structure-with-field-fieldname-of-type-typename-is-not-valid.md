@@ -10,8 +10,9 @@ The structure you are attempting to write to a file contains an unsupported type
   
 ## To correct this error  
   
--   Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
+- Check the structure to determine where the unsupported type occurs, and then change it to a valid type.  
   
 ## See also
+
 - [My.Computer.FileSystem.WriteAllBytes](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.WriteAllBytes%2A)
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

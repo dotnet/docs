@@ -39,7 +39,7 @@ System.Console.ReadLine();
 ## Robust Programming  
  The following conditions may cause an exception:  
   
--   The file may not exist.  
+- The file may not exist.  
   
 ## .NET Framework Security  
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `myFile.cs` may not be a C# source file.  
@@ -47,5 +47,5 @@ System.Console.ReadLine();
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+- [C# Programming Guide](../index.md)
+- [File System and the Registry (C# Programming Guide)](./index.md)

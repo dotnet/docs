@@ -11,6 +11,9 @@ ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
 ---
 # \<system.serviceModel>
 This configuration section contains all the Windows Communication Foundation (WCF) ServiceModel configuration elements.  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.serviceModel>**  
   
 ## Syntax  
   
@@ -55,19 +58,19 @@ This configuration section contains all the Windows Communication Foundation (WC
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behaviors>](../../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)|This section defines two child collections named `endpointBehaviors` and `serviceBehaviors`.  Each collection defines behavior elements consumed by endpoints and services respectively. Each behavior element is identified by its unique `name` attribute.|  
-|[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This section holds a collection of standard and custom bindings. Each entry is identified by its unique `name`. Services use bindings by linking them using the `name`.|  
-|[\<client>](../../../../../docs/framework/configure-apps/file-schema/wcf/client.md)|This section contains a list of endpoints a client uses to connect to a service.|  
-|[\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)|This section defines COM contracts enabled for WCF and COM interop.|  
-|[\<commonBehaviors>](../../../../../docs/framework/configure-apps/file-schema/wcf/commonbehaviors.md)|This section can only be defined in the machine.config file. It defines two child collections named `endpointBehaviors` and `serviceBehaviors`.  Each collection defines behavior elements consumed by all WCF endpoints and services on the machine respectively.  If a behavior is defined in both `<commonBehaviors>` and `<behaviors>` sections, the behavior in the \<behaviors> section is given preference.|  
-|[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|This section contains settings for the diagnostics features of WCF. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.|  
-|[\<extensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/extensions-section.md)|This section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.|  
-|[\<protocolMapping>](../../../../../docs/framework/configure-apps/file-schema/wcf/protocolmapping.md)|This section defines a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings.|  
-|[\<routing>](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md)|This section defines a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches.|  
-|[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|This section defines what type the service hosting environment instantiates for a particular transport. If this section is empty, the default type is used.|  
-|[\<services>](../../../../../docs/framework/configure-apps/file-schema/wcf/services.md)|The section contains a collection of services. For each service defined in the assembly, this element contains a `service` element specifying settings for the service.|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|This section defines a collection of standard endpoints, which are reusable preconfigured endpoints. A standard endpoint will have one or more of the address, binding and contract attributes set to a fixed value. For example, in the discovery endpoint the contract is fixed. You can also use standard endpoints to extend service endpoint with new properties similar to defining custom bindings.|
-|[\<tracking>](../../../../../docs/framework/configure-apps/file-schema/wcf/tracking-of-wcf.md)|This section defines tracking settings for a workflow service.|
+|[\<behaviors>](behaviors.md)|This section defines two child collections named `endpointBehaviors` and `serviceBehaviors`.  Each collection defines behavior elements consumed by endpoints and services respectively. Each behavior element is identified by its unique `name` attribute.|  
+|[\<bindings>](bindings.md)|This section holds a collection of standard and custom bindings. Each entry is identified by its unique `name`. Services use bindings by linking them using the `name`.|  
+|[\<client>](client.md)|This section contains a list of endpoints a client uses to connect to a service.|  
+|[\<comContracts>](comcontracts.md)|This section defines COM contracts enabled for WCF and COM interop.|  
+|[\<commonBehaviors>](commonbehaviors.md)|This section can only be defined in the machine.config file. It defines two child collections named `endpointBehaviors` and `serviceBehaviors`.  Each collection defines behavior elements consumed by all WCF endpoints and services on the machine respectively.  If a behavior is defined in both `<commonBehaviors>` and `<behaviors>` sections, the behavior in the \<behaviors> section is given preference.|  
+|[\<diagnostics>](diagnostics.md)|This section contains settings for the diagnostics features of WCF. The user can enable/disable tracing, performance counters, and the WMI provider, and can add custom message filters.|  
+|[\<extensions>](extensions-section.md)|This section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.|  
+|[\<protocolMapping>](protocolmapping.md)|This section defines a set of default protocol mapping between transport protocol schemes (e.g., http, net.tcp, net.pipe, etc.) and WCF bindings.|  
+|[\<routing>](routing.md)|This section defines a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches.|  
+|[\<serviceHostingEnvironment>](servicehostingenvironment.md)|This section defines what type the service hosting environment instantiates for a particular transport. If this section is empty, the default type is used.|  
+|[\<services>](services.md)|The section contains a collection of services. For each service defined in the assembly, this element contains a `service` element specifying settings for the service.|  
+|[\<standardEndpoints>](standardendpoints.md)|This section defines a collection of standard endpoints, which are reusable preconfigured endpoints. A standard endpoint will have one or more of the address, binding and contract attributes set to a fixed value. For example, in the discovery endpoint the contract is fixed. You can also use standard endpoints to extend service endpoint with new properties similar to defining custom bindings.|
+|[\<tracking>](tracking-of-wcf.md)|This section defines tracking settings for a workflow service.|
 
 ### Parent Elements  
   
@@ -122,4 +125,5 @@ This configuration section contains all the Windows Communication Foundation (WC
 ```  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.ServiceModelSectionGroup>

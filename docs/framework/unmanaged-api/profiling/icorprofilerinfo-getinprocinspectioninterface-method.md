@@ -23,12 +23,12 @@ Gets an object that can be queried for an "ICorDebugProcess" interface. This met
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInprocInspectionInterface(  
     [out] IUnknown **ppicd);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppicd`  
  [out](/cpp/atl/iunknown) object that can be queried for an `ICorDebugProcess` interface.  
   
@@ -45,4 +45,5 @@ HRESULT GetInprocInspectionInterface(
  **.NET Framework Version:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

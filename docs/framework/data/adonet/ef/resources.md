@@ -22,7 +22,8 @@ The following external resources provide information and support for creating En
  Wiki section containing frequently asked questions about the Entity Framework.  
   
 ## See also
-- [Entity Framework Overview](../../../../../docs/framework/data/adonet/ef/overview.md)
-- [Getting Started](../../../../../docs/framework/data/adonet/ef/getting-started.md)
-- [Entity Framework Terminology](../../../../../docs/framework/data/adonet/ef/terminology.md)
+
+- [Entity Framework Overview](overview.md)
+- [Getting Started](getting-started.md)
+- [Entity Framework Terminology](terminology.md)
 - [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))

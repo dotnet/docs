@@ -23,7 +23,7 @@ Called to report the new layout of objects in the heap as a result of a compacti
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MovedReferences2(  
     [in]  ULONG  cMovedObjectIDRanges,  
     [in, size_is(cMovedObjectIDRanges)] ObjectID oldObjectIDRangeStart[] ,  
@@ -31,7 +31,7 @@ HRESULT MovedReferences2(
     [in, size_is(cMovedObjectIDRanges)] SIZE_T    cObjectIDRangeLength[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cMovedObjectIDRanges`  
  [in] The number of blocks of contiguous objects that moved as the result of the compacting garbage collection. That is, the value of `cMovedObjectIDRanges` is the total size of the `oldObjectIDRangeStart`, `newObjectIDRangeStart`, and `cObjectIDRangeLength` arrays.  
   
@@ -81,6 +81,7 @@ HRESULT MovedReferences2(
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
 - [MovedReferences Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-movedreferences-method.md)
 - [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)

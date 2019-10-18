@@ -23,13 +23,13 @@ Frees memory that was allocated with a previous call to a strong name method suc
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameFreeBuffer (   
    [in] BYTE   *pbMemory  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbMemory`  
  [in] A pointer to the memory to free.  
   
@@ -46,4 +46,5 @@ HRESULT StrongNameFreeBuffer (
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)

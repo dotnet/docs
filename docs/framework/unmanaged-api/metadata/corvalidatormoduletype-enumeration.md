@@ -22,7 +22,7 @@ Specifies the type of a module.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     ValidatorModuleTypeInvalid  = 0x0,  
@@ -57,4 +57,5 @@ typedef enum
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)

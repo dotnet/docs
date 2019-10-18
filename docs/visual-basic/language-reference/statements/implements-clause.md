@@ -33,12 +33,14 @@ In a derived class, you can reimplement an interface member that the base class 
 - You can reimplement the member with a different name.
 
 The `Implements` keyword can be used in the following contexts:
+
 - [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
 - [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
 - [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
 - [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
   
 ## See also
+
 - [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
 - [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
 - [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)

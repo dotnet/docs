@@ -23,7 +23,7 @@ This article shows you how to find out which .NET Framework security updates and
 
 The installed security updates and hotfixes for each version of the .NET Framework installed on a computer are listed in the Windows registry. You can use the Registry Editor (*regedit.exe*) program to view this information.
 
-1. Open the program **regedit.exe**. In Windows 8 and later versions, right-click **Start** ![Windows logo](../get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo"), then select **Run**. In the **Open** box, enter **regedit** and select **OK**.
+1. Open the program **regedit.exe**. In Windows 8 and later versions, right-click **Start** ![Screenshot of the Windows key logo.](./media/how-to-determine-which-net-framework-updates-are-installed/windows-keyboard-logo.png "Windowskeyboardlogo"), then select **Run**. In the **Open** box, enter **regedit** and select **OK**.
 
 2. In the Registry Editor, open the following subkey:
 
@@ -31,7 +31,7 @@ The installed security updates and hotfixes for each version of the .NET Framewo
 
      The installed updates are listed under subkeys that identify the .NET Framework version they apply to. Each update is identified by a Knowledge Base (KB) number.
 
-In the Registry Editor, the .NET Framework versions and installed updates for each version are stored in different subkeys. For information about detecting the installed version numbers, see [How to: Determine which .NET Framework versions are installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md).
+In the Registry Editor, the .NET Framework versions and installed updates for each version are stored in different subkeys. For information about detecting the installed version numbers, see [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md).
 
 ## To find installed updates by querying the registry in code
 
@@ -102,6 +102,6 @@ KB2600217
 
 ## See also
 
-- [How to: Determine which .NET Framework versions are installed](../../../docs/framework/migration-guide/how-to-determine-which-versions-are-installed.md)
-- [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)
-- [Versions and dependencies](../../../docs/framework/migration-guide/versions-and-dependencies.md)
+- [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md)
+- [Install the .NET Framework for developers](../install/guide-for-developers.md)
+- [Versions and dependencies](versions-and-dependencies.md)

@@ -14,7 +14,7 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
   
 ### To copy the XML and XSLT files to your local computer  
   
--   Copy the XSLT file to your local computer and name it Transform.xsl.  
+- Copy the XSLT file to your local computer and name it Transform.xsl.  
   
     ```xml  
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
@@ -81,7 +81,7 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
     </xsl:stylesheet>  
     ```  
   
--   Copy the XML file to your local computer and name it `books.xml`.  
+- Copy the XML file to your local computer and name it `books.xml`.  
   
     ```xml  
     <?xml version="1.0"?>  
@@ -126,58 +126,58 @@ The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assemb
   
 ### To compile the style sheet with the script enabled.  
   
-1.  Executing the following command from the command line creates two assemblies named `Transform.dll` and `Transform_Script1.dll` (This is the default behavior. Unless otherwise specified, the name of the class and the assembly defaults to the name of the main style sheet):  
+1. Executing the following command from the command line creates two assemblies named `Transform.dll` and `Transform_Script1.dll` (This is the default behavior. Unless otherwise specified, the name of the class and the assembly defaults to the name of the main style sheet):  
   
-    ```  
+    ```console  
     xsltc /settings:script+ Transform.xsl  
+    ```
+  
+    The following command explicitly sets the class name to Transform:  
+  
+    ```console  
+    xsltc /settings:script+ /class:Transform Transform.xsl  
     ```  
-  
- The following command explicitly sets the class name to Transform:  
-  
-```  
-xsltc /settings:script+ /class:Transform Transform.xsl  
-```  
   
 ### To include the compiled assembly as a reference when you compile your code.  
   
-1.  You can include an assembly in Visual Studio by adding a reference in the Solution Explorer, or from the command line.  
+1. You can include an assembly in Visual Studio by adding a reference in the Solution Explorer, or from the command line.  
   
-2.  For the command line with C#, use the following:  
+2. For the command line with C#, use the following:  
   
-    ```  
+    ```console  
     csc myCode.cs /r:system.dll;system.xml.dll;Transform.dll  
     ```  
   
-3.  For the command line with Visual Basic, use the following  
+3. For the command line with Visual Basic, use the following  
   
-    ```  
+    ```console  
     vbc myCode.vb /r:system.dll;system.xml.dll;Transform.dll  
     ```  
   
 ### To use the compiled assembly in your code.  
   
-1.  The following example shows how to execute the XSLT transformation by using the compiled style sheet.  
+The following example shows how to execute the XSLT transformation by using the compiled style sheet.  
   
- [!code-csharp[XslTransform_XSLTC#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XslTransform_XSLTC/CS/XslTransform_XSLTC.cs#1)]
- [!code-vb[XslTransform_XSLTC#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XslTransform_XSLTC/VB/XslTransform_XSLTC.vb#1)]  
+[!code-csharp[XslTransform_XSLTC#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XslTransform_XSLTC/CS/XslTransform_XSLTC.cs#1)]
+[!code-vb[XslTransform_XSLTC#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XslTransform_XSLTC/VB/XslTransform_XSLTC.vb#1)]  
   
- To dynamically link to the compiled assembly, replace  
+To dynamically link to the compiled assembly, replace
   
-```  
-xslt.Load(typeof(Transform))  
-```  
-  
- with  
-  
-```  
-xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"))  
+```csharp  
+xslt.Load(typeof(Transform));  
 ```  
   
- in the example above. For more information on the Assembly.Load method, see <xref:System.Reflection.Assembly.Load%2A>  
+with  
+  
+```csharp 
+xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"));  
+``` 
+  
+in the example above. For more information on the Assembly.Load method, see <xref:System.Reflection.Assembly.Load%2A>.  
   
 ## See also
 
 - <xref:System.Xml.Xsl.XslCompiledTransform>
 - [XSLT Compiler (xsltc.exe)](../../../../docs/standard/data/xml/xslt-compiler-xsltc-exe.md)
 - [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
-- [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)

@@ -14,10 +14,10 @@ ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
 # \<remove> Element for webRequestModules (Network Settings)
 Removes a custom Web request module from the application.  
   
- \<configuration>  
-\<system.net>  
-\<webRequestModules>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<webRequestModules>**](webrequestmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ Removes a custom Web request module from the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[webRequestModules](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
+|[webRequestModules](webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
   
 ## Remarks  
  The `remove` element removes the registered Web request module for the specified URI prefix.  
@@ -72,5 +72,6 @@ The following example removes the existing Web request module for HTTP and then 
 ```  
   
 ## See also
+
 - <xref:System.Net.WebRequest>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

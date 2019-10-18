@@ -23,7 +23,7 @@ Gets a pointer to an exported type, given its name and enclosing type.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindExportedTypeByName (  
     [in]  LPCWSTR           szName,   
     [in]  mdToken           mdtExportedType,   
@@ -31,7 +31,7 @@ HRESULT FindExportedTypeByName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the exported type.  
   
@@ -54,5 +54,6 @@ HRESULT FindExportedTypeByName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataAssemblyImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyimport-interface.md)
 - [How the Runtime Locates Assemblies](../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)

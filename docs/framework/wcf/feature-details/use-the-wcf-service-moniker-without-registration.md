@@ -13,7 +13,7 @@ To connect to and communicate with a Windows Communication Foundation (WCF) serv
  This enables scenarios such as the distribution of an Excel spreadsheet where some of the cell values are calculated through Web service interactions. In this scenario, it might not be feasible to register the service contract assembly on all clients that might open the document. The `wsdl` parameter or the `mexAddress` parameter enables a self-contained solution.  
   
 > [!NOTE]
->  Mutual authentication must be used to protect against request and response tampering or spoofing. Specifically, it is important for clients to be assured that the Metadata Exchange endpoint that is responding is the intended trusted party.  
+> Mutual authentication must be used to protect against request and response tampering or spoofing. Specifically, it is important for clients to be assured that the Metadata Exchange endpoint that is responding is the intended trusted party.  
   
 ## Example  
  This example shows the use of the service moniker with a MEX contract. A service with the following contract is exposed with a wsHttpBinding.  
@@ -49,7 +49,8 @@ binding=WSHttpBinding_IAffiliate, bindingNamespace=http://tempuri.org/
  During the execution of the client application, the client performs a `WS-MetadataExchange` with the provided `mexAddress`. This might return the address, binding and contract details for a number of services. The `address`, `contract`, `contractNamespace`, `binding` and `bindingNamespace` parameters are used to identify the intended service. Once those parameters have been matched, the moniker constructs a WCF client with the appropriate contract definition and calls can then be made using the WCF client, as with the typed contract.  
   
 > [!NOTE]
->  If the moniker is malformed or if the service is unavailable, the call to `GetObject` returns an error saying "Invalid Syntax". If you receive this error, make sure the moniker you are using is correct and the service is available.  
+> If the moniker is malformed or if the service is unavailable, the call to `GetObject` returns an error saying "Invalid Syntax". If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
 ## See also
+
 - [How to: Register and Configure a Service Moniker](../../../../docs/framework/wcf/feature-details/how-to-register-and-configure-a-service-moniker.md)

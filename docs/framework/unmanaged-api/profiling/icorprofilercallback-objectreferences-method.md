@@ -23,7 +23,7 @@ Notifies the profiler about objects in memory that are being referenced by the s
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectReferences(  
     [in]  ObjectID objectId,  
     [in]  ClassID  classId,  
@@ -31,7 +31,7 @@ HRESULT ObjectReferences(
     [in, size_is(cObjectRefs)] ObjectID objectRefIds[] );  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object that is referencing objects.  
   
@@ -63,4 +63,5 @@ HRESULT ObjectReferences(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

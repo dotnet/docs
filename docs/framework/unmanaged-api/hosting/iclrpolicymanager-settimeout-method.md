@@ -23,24 +23,24 @@ Sets a timeout value for the specified operation.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetTimeout (  
     [in] EClrOperation operation,  
     [in] DWORD dsMilliseconds  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `operation`  
  [in] One of the [EClrOperation](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md) values, indicating the common language runtime (CLR) operation for which to set a timeout. The following values are supported:  
   
--   OPR_AppDomainUnload  
+- OPR_AppDomainUnload  
   
--   OPR_ProcessExit  
+- OPR_ProcessExit  
   
--   OPR_ThreadRudeAbortInCriticalRegion  
+- OPR_ThreadRudeAbortInCriticalRegion  
   
--   OPR_ThreadRudeAbortInNonCriticalRegion  
+- OPR_ThreadRudeAbortInNonCriticalRegion  
   
  `dwMilliseconds`  
  [in] The new timeout value, in milliseconds. A value of INFINITE causes the operation never to time out.  
@@ -67,6 +67,7 @@ HRESULT SetTimeout (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [EClrOperation Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclroperation-enumeration.md)
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)

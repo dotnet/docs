@@ -23,7 +23,7 @@ Gets a map from Microsoft intermediate language (MSIL) offsets to native offsets
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILToNativeMapping(  
     [in] FunctionID functionId,  
     [in] ULONG32 cMap,  
@@ -32,7 +32,7 @@ HRESULT GetILToNativeMapping(
         COR_DEBUG_IL_TO_NATIVE_MAP map[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function that contains the code.  
   
@@ -62,6 +62,7 @@ HRESULT GetILToNativeMapping(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [GetILToNativeMapping2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getiltonativemapping2-method.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)

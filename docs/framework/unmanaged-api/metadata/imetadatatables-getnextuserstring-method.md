@@ -23,14 +23,14 @@ Gets the index of the row that contains the next hard-coded string in the curren
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextUserString (  
     [in]  ULONG   ixUserString,  
     [out] ULONG   *pNext  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixUserString`  
  [in] An index value from the current string column.  
   
@@ -50,5 +50,6 @@ HRESULT GetNextUserString (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)
 - [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)

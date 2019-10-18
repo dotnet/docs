@@ -13,28 +13,29 @@ SQL Server Compact is the default database installed with Visual Studio. For mor
   
  Note the following characteristics:  
   
--   SQL Server Compact is packaged as a DLL that can be used against database files (.sdf extension) directly.  
+- SQL Server Compact is packaged as a DLL that can be used against database files (.sdf extension) directly.  
   
--   SQL Server Compact runs in the same process as the client application. The efficiency of communication with SQL Server Compact can therefore be significantly higher than communicating with SQL Server. On the other hand, SQL Server Compact does require interoperability between managed and unmanaged code with its attendant costs.  
+- SQL Server Compact runs in the same process as the client application. The efficiency of communication with SQL Server Compact can therefore be significantly higher than communicating with SQL Server. On the other hand, SQL Server Compact does require interoperability between managed and unmanaged code with its attendant costs.  
   
--   The size of the SQL Server Compact DLL is small. This feature reduces the overall application size.  
+- The size of the SQL Server Compact DLL is small. This feature reduces the overall application size.  
   
--   The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime and the SQLMetal command-line tool support SQL Server Compact.  
+- The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime and the SQLMetal command-line tool support SQL Server Compact.  
   
--   The [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] does not support SQL Server Compact.  
+- The Object Relational Designer does not support SQL Server Compact.  
   
 ## Feature Set  
  The SQL Server Compact feature set is much simpler than the feature set of SQL Server in the following ways that can affect [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications :  
   
--   SQL Server Compact does not support stored procedures or views.  
+- SQL Server Compact does not support stored procedures or views.  
   
--   SQL Server Compact supports only a subset of data types and SQL functions.  
+- SQL Server Compact supports only a subset of data types and SQL functions.  
   
--   SQL Server Compact supports only a subset of SQL constructs.  
+- SQL Server Compact supports only a subset of SQL constructs.  
   
--   SQL Server Compact provides only a minimal optimizer. It is possible that some queries might time out.  
+- SQL Server Compact provides only a minimal optimizer. It is possible that some queries might time out.  
   
--   SQL Server Compact does not support partial trust.  
+- SQL Server Compact does not support partial trust.  
   
 ## See also
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+
+- [Reference](reference.md)

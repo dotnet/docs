@@ -11,12 +11,12 @@ ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
 # \<remove> Element for \<listeners> for \<source>
 Removes a listener from the `Listeners` collection for a trace source.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
-\<source>  
-\<listeners>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   
@@ -74,8 +74,9 @@ Removes a listener from the `Listeners` collection for a trace source.
 ```  
   
 ## See also
+
 - <xref:System.Diagnostics.TraceSource.Listeners%2A>
 - <xref:System.Diagnostics.TraceSource>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
-- [\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)
-- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+- [Trace and Debug Settings Schema](index.md)
+- [\<clear>](clear-element-for-listeners-for-source.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

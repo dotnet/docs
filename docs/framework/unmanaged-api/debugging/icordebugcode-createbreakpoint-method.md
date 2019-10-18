@@ -23,14 +23,14 @@ Creates a breakpoint in this code segment at the specified offset.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateBreakpoint (  
     [in] ULONG32     offset,  
     [out] ICorDebugFunctionBreakpoint **ppBreakpoint  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `offset`  
  [in] The offset at which to create the breakpoint.  
   
@@ -49,7 +49,4 @@ HRESULT CreateBreakpoint (
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
-  
-## See also
-
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

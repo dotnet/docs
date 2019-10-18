@@ -23,14 +23,16 @@ Releases the resources used by internal iterators used during module enumeration
 [!INCLUDE[debugging-api-recommended-note](../../../../includes/debugging-api-recommended-note.md)]
 
 ## Syntax
-```
+
+```cpp
 HRESULT EndEnumModules(
     [in] CLRDATA_ENUM handle
 );
 ```
 
-### Parameters
-`handle`
+## Parameters
+
+`handle`\
 [out] A handle for enumerating the modules.
 
 ## Remarks
@@ -39,12 +41,12 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).   
-**Header:** None   
-**Library:** None   
-**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]   
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Header:** None
+**Library:** None
+**.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)
+- [Debugging](index.md)
+- [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)

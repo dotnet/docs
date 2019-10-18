@@ -25,15 +25,15 @@ The **-warnaserror+** option treats all warnings as errors
   
  Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors.  
   
- Use [-warn](../../../csharp/language-reference/compiler-options/warn-compiler-option.md) to specify the level of warnings that you want the compiler to display. Use [-nowarn](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md) to disable certain warnings.  
+ Use [-warn](./warn-compiler-option.md) to specify the level of warnings that you want the compiler to display. Use [-nowarn](./nowarn-compiler-option.md) to disable certain warnings.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Modify the **Treat Warnings As Errors** property.  
+3. Modify the **Treat Warnings As Errors** property.  
   
  To set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.TreatWarningsAsErrors>.  
   
@@ -47,5 +47,5 @@ csc -warnaserror:642,649,652 in.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

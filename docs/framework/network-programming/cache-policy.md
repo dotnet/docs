@@ -26,14 +26,15 @@ A cache policy defines rules that are used to determine whether a request can be
 |<xref:System.Net.Cache.HttpRequestCacheLevel>|Specifies values used to create location-based and time-based <xref:System.Net.Cache.HttpRequestCachePolicy> objects.|  
 |<xref:System.Net.Cache.RequestCacheLevel>|Specifies values used to create location-based or the <xref:System.Net.Cache.RequestCacheLevel.Default> time-based <xref:System.Net.Cache.RequestCachePolicy> objects.|  
   
- You can define a cache policy for all requests made by your application or for individual requests. When you specify both an application-level cache policy and a request-level cache policy, the request-level policy is used. You can specify an application-level cache policy programmatically or by using the application or machine configuration files. For more information, see [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+ You can define a cache policy for all requests made by your application or for individual requests. When you specify both an application-level cache policy and a request-level cache policy, the request-level policy is used. You can specify an application-level cache policy programmatically or by using the application or machine configuration files. For more information, see [\<requestCaching> Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
  To create a cache policy, you must create a policy object by creating an instance of the <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> class. To specify the policy on a request, set the request's <xref:System.Net.WebRequest.CachePolicy%2A> property to the policy object. When setting an application-level policy programmatically, set the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property to the policy object.  
   
- For code examples that demonstrate creating and using cache policies, see [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md).  
+ For code examples that demonstrate creating and using cache policies, see [Configuring Caching in Network Applications](configuring-caching-in-network-applications.md).  
   
 ## See also
-- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
-- [Location-Based Cache Policies](../../../docs/framework/network-programming/location-based-cache-policies.md)
-- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)
-- [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)
+
+- [Cache Management for Network Applications](cache-management-for-network-applications.md)
+- [Location-Based Cache Policies](location-based-cache-policies.md)
+- [Time-Based Cache Policies](time-based-cache-policies.md)
+- [Configuring Caching in Network Applications](configuring-caching-in-network-applications.md)

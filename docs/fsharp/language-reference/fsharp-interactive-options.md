@@ -13,7 +13,7 @@ This topic describes the command-line options supported by F# Interactive, `fsi.
 ## Using F# Interactive for Scripting
 F# Interactive, `fsi.exe`, can be launched interactively, or it can be launched from the command line to run a script. The command line syntax is
 
-```
+```console
 > fsi.exe [options] [ script-file [arguments] ]
 ```
 

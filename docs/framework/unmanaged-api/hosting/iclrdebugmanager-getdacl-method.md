@@ -23,13 +23,13 @@ This method is not implemented.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDacl (  
     [out] PACL* ppacl  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppacl`  
  [out] An interface pointer to the Access Control List (ACL).  
   
@@ -49,6 +49,7 @@ HRESULT GetDacl (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
 - [SetDacl Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setdacl-method.md)

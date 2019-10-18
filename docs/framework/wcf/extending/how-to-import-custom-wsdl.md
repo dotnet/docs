@@ -8,7 +8,7 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
   
 ### To import custom WSDL  
   
-1.  Implement <xref:System.ServiceModel.Description.IWsdlImportExtension>. Implement the <xref:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport%28System.Web.Services.Description.ServiceDescriptionCollection%2CSystem.Xml.Schema.XmlSchemaSet%2CSystem.Collections.Generic.ICollection%7BSystem.Xml.XmlElement%7D%29> method to modify the metadata before it is imported. Implement the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29> and <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> methods to modify contracts and endpoints imported from the metadata. To access the imported contract or endpoint, use the corresponding context object (<xref:System.ServiceModel.Description.WsdlContractConversionContext> or <xref:System.ServiceModel.Description.WsdlEndpointConversionContext>):  
+1. Implement <xref:System.ServiceModel.Description.IWsdlImportExtension>. Implement the <xref:System.ServiceModel.Description.IWsdlImportExtension.BeforeImport%28System.Web.Services.Description.ServiceDescriptionCollection%2CSystem.Xml.Schema.XmlSchemaSet%2CSystem.Collections.Generic.ICollection%7BSystem.Xml.XmlElement%7D%29> method to modify the metadata before it is imported. Implement the <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportEndpoint%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlEndpointConversionContext%29> and <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> methods to modify contracts and endpoints imported from the metadata. To access the imported contract or endpoint, use the corresponding context object (<xref:System.ServiceModel.Description.WsdlContractConversionContext> or <xref:System.ServiceModel.Description.WsdlEndpointConversionContext>):  
   
     ```  
     public class WsdlDocumentationImporter : IWsdlImportExtension  
@@ -46,7 +46,7 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
        }  
     ```  
   
-2.  Configure the client application to use the custom WSDL importer. Note that if you are using Svcutil.exe, you should add this configuration to the configuration file for Svcutil.exe (Svcutil.exe.config):  
+2. Configure the client application to use the custom WSDL importer. Note that if you are using Svcutil.exe, you should add this configuration to the configuration file for Svcutil.exe (Svcutil.exe.config):  
   
     ```xml  
     <system.serviceModel>  
@@ -65,13 +65,14 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
         </system.serviceModel>  
     ```  
   
-3.  Create a new <xref:System.ServiceModel.Description.WsdlImporter> instance (passing in the <xref:System.ServiceModel.Description.MetadataSet> instance that contains the WSDL documents that you want to import), and call <xref:System.ServiceModel.Description.WsdlImporter.ImportAllContracts%2A>:  
+3. Create a new <xref:System.ServiceModel.Description.WsdlImporter> instance (passing in the <xref:System.ServiceModel.Description.MetadataSet> instance that contains the WSDL documents that you want to import), and call <xref:System.ServiceModel.Description.WsdlImporter.ImportAllContracts%2A>:  
   
     ```  
     WsdlImporter importer = new WsdlImporter(metaDocs);          System.Collections.ObjectModel.Collection<ContractDescription> contracts  = importer.ImportAllContracts();  
     ```  
   
 ## See also
-- [Metadata](../../../../docs/framework/wcf/feature-details/metadata.md)
-- [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)
-- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)
+
+- [Metadata](../feature-details/metadata.md)
+- [Exporting and Importing Metadata](../feature-details/exporting-and-importing-metadata.md)
+- [Custom WSDL Publication](../samples/custom-wsdl-publication.md)

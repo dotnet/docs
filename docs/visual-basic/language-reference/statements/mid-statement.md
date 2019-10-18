@@ -16,7 +16,7 @@ Replaces a specified number of characters in a `String` variable with characters
   
 ## Syntax  
   
-```  
+```vb  
 Mid( _  
    ByRef Target As String, _  
    ByVal Start As Integer, _  
@@ -49,21 +49,22 @@ Mid( _
  Visual Basic has a <xref:Microsoft.VisualBasic.Strings.Mid%2A> function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see <xref:Microsoft.VisualBasic.Strings.Mid%2A>.  
   
 > [!NOTE]
->  The `MidB` statement of earlier versions of Visual Basic replaces a substring in bytes, rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
+> The `MidB` statement of earlier versions of Visual Basic replaces a substring in bytes, rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
   
 ## Example  
  This example uses the `Mid` statement to replace a specified number of characters in a string variable with characters from another string.  
   
- [!code-vb[VbVbalrStrings#5](../../../visual-basic/language-reference/functions/codesnippet/VisualBasic/mid-statement_1.vb)]  
+ [!code-vb[VbVbalrStrings#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#5)]  
   
 ## Requirements  
  **Namespace:** [Microsoft.VisualBasic](../../../visual-basic/language-reference/runtime-library-members.md)  
   
  **Module:** `Strings`  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.Strings.Mid%2A>
 - [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md)
 - [Introduction to Strings in Visual Basic](../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)

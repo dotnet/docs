@@ -9,12 +9,12 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Configuring Assembly Binding Redirection
-By default, applications use the set of .NET Framework assemblies that shipped with the runtime version used to compile the application. You can use the **appliesTo** attribute on the [\<assemblyBinding>](../../../docs/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) element in an application configuration file to redirect assembly binding references to a specific version of the .NET Framework assemblies. This optional attribute uses a .NET Framework version number to indicate which version it applies to. If no **appliesTo** attribute is specified, the **\<assemblyBinding>** element applies to all versions of the .NET Framework.  
+By default, applications use the set of .NET Framework assemblies that shipped with the runtime version used to compile the application. You can use the **appliesTo** attribute on the [\<assemblyBinding>](../configure-apps/file-schema/runtime/assemblybinding-element-for-runtime.md) element in an application configuration file to redirect assembly binding references to a specific version of the .NET Framework assemblies. This optional attribute uses a .NET Framework version number to indicate which version it applies to. If no **appliesTo** attribute is specified, the **\<assemblyBinding>** element applies to all versions of the .NET Framework.  
   
  The **appliesTo** attribute was introduced in the .NET Framework version 1.1; it is ignored by the .NET Framework version 1.0. This means that all **\<assemblyBinding>** elements are applied when using the .NET Framework version 1.0, even if an **appliesTo** attribute is specified.  
   
 > [!NOTE]
->  Use the **appliesTo** attribute to limit assembly binding redirection to a specific version of the runtime.  
+> Use the **appliesTo** attribute to limit assembly binding redirection to a specific version of the runtime.  
   
  For example, to redirect assembly binding for a .NET Framework version 1.0 assembly, you would include the following XML code in your application configuration file.  
   
@@ -49,7 +49,8 @@ By default, applications use the set of .NET Framework assemblies that shipped w
 ## Debugging Configuration File Errors  
  The runtime parses configuration files once when an application domain is created, and loads code into that application domain. The common language runtime handles errors in a configuration file by ignoring the entry. The runtime ignores the entire configuration file if it contains malformed XML. For invalid XML, only the invalid sections are ignored.  
   
- You can determine whether a configuration file is being used by determining whether assembly binding redirects are occurring. Use the [Assembly Binding Log Viewer (Fuslogvw.exe)](../../../docs/framework/tools/fuslogvw-exe-assembly-binding-log-viewer.md) to see which assemblies are being loaded. To see all assembly binds, you must set an entry for **ForceLog** in the registry.  
+ You can determine whether a configuration file is being used by determining whether assembly binding redirects are occurring. Use the [Assembly Binding Log Viewer (Fuslogvw.exe)](../tools/fuslogvw-exe-assembly-binding-log-viewer.md) to see which assemblies are being loaded. To see all assembly binds, you must set an entry for **ForceLog** in the registry.  
   
 ## See also
-- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
+
+- [How to: Enable and Disable Automatic Binding Redirection](../configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)

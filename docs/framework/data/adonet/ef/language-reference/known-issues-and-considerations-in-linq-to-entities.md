@@ -7,21 +7,21 @@ dev_langs:
 ms.assetid: acd71129-5ff0-4b4e-b266-c72cc0c53601
 ---
 # Known Issues and Considerations in LINQ to Entities
-This section provides information about known issues with [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] queries.  
+This section provides information about known issues with LINQ to Entities queries.  
   
--   [LINQ Queries That cannot be Cached](#LINQQueriesThatAreNotCached)  
+- [LINQ Queries That cannot be Cached](#LINQQueriesThatAreNotCached)  
   
--   [Ordering Information Lost](#OrderingInfoLost)  
+- [Ordering Information Lost](#OrderingInfoLost)  
   
--   [Unsigned Integers Not Supported](#UnsignedIntsUnsupported)  
+- [Unsigned Integers Not Supported](#UnsignedIntsUnsupported)  
   
--   [Type Conversion Errors](#TypeConversionErrors)  
+- [Type Conversion Errors](#TypeConversionErrors)  
   
--   [Referencing Non-Scalar Variables Not Supported](#RefNonScalarClosures)  
+- [Referencing Non-Scalar Variables Not Supported](#RefNonScalarClosures)  
   
--   [Nested Queries May Fail with SQL Server 2000](#NestedQueriesSQL2000)  
+- [Nested Queries May Fail with SQL Server 2000](#NestedQueriesSQL2000)  
   
--   [Projecting to an Anonymous Type](#ProjectToAnonymousType)  
+- [Projecting to an Anonymous Type](#ProjectToAnonymousType)  
   
 <a name="LINQQueriesThatAreNotCached"></a>   
 ## LINQ Queries That cannot be Cached  
@@ -29,14 +29,14 @@ This section provides information about known issues with [!INCLUDE[linq_entitie
   
 <a name="OrderingInfoLost"></a>   
 ## Ordering Information Lost  
- Projecting columns into an anonymous type will cause ordering information to be lost in some queries that are executed against a [!INCLUDE[ssVersion2005](../../../../../../includes/ssversion2005-md.md)] database set to a compatibility level of "80".  This occurs when a column name in the order-by list matches a column name in the selector, as shown in the following example:  
+ Projecting columns into an anonymous type will cause ordering information to be lost in some queries that are executed against a SQL Server 2005 database set to a compatibility level of "80".  This occurs when a column name in the order-by list matches a column name in the selector, as shown in the following example:  
   
  [!code-csharp[DP L2E Conceptual Examples#SBUDT543840](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#sbudt543840)]
  [!code-vb[DP L2E Conceptual Examples#SBUDT543840](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#sbudt543840)]  
   
 <a name="UnsignedIntsUnsupported"></a>   
 ## Unsigned Integers Not Supported  
- Specifying an unsigned integer type in a [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] query is not supported because the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] does not support unsigned integers. If you specify an unsigned integer, an <xref:System.ArgumentException> exception will be thrown during the query expression translation, as shown in the following example. This example queries for an order with ID 48000.  
+ Specifying an unsigned integer type in a LINQ to Entities query is not supported because the Entity Framework does not support unsigned integers. If you specify an unsigned integer, an <xref:System.ArgumentException> exception will be thrown during the query expression translation, as shown in the following example. This example queries for an order with ID 48000.  
   
  [!code-csharp[DP L2E Conceptual Examples#UIntAsQueryParam](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#uintasqueryparam)]
  [!code-vb[DP L2E Conceptual Examples#UIntAsQueryParam](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#uintasqueryparam)]  
@@ -52,7 +52,7 @@ This section provides information about known issues with [!INCLUDE[linq_entitie
  Referencing a non-scalar variables, such as an entity, in a query is not supported. When such a query executes, a <xref:System.NotSupportedException> exception is thrown with a message that states "Unable to create a constant value of type `EntityType`. Only primitive types ('such as Int32, String, and Guid') are supported in this context."  
   
 > [!NOTE]
->  Referencing a collection of scalar variables is supported.  
+> Referencing a collection of scalar variables is supported.  
   
  [!code-csharp[DP L2E Conceptual Examples#SBUDT555877](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#sbudt555877)]
  [!code-vb[DP L2E Conceptual Examples#SBUDT555877](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#sbudt555877)]  
@@ -74,4 +74,5 @@ This section provides information about known issues with [!INCLUDE[linq_entitie
  [!code-vb[DP L2E Conceptual Examples#ProjToAnonType2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#projtoanontype2)]  
   
 ## See also
-- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
+
+- [LINQ to Entities](linq-to-entities.md)

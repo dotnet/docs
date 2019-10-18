@@ -115,13 +115,13 @@ this doc.DocumentElement.FirstChild.SelectNodes(. . .);
  All <xref:System.Xml.XmlNodeList> objects are synchronized with the underlying document. Therefore, if you iterate through the node list and modify the value of a node, that node is also updated in the document it came from. Notice in the previous example that when a node is modified in the selected <xref:System.Xml.XmlNodeList> the underlying document is also modified.  
   
 > [!NOTE]
->  When the underlying document is modified, it is advisable to rerun the select. If the node modified is one that could cause the node to be added to the node list when it was not previously, or would now cause it to be removed from the node list, there is no guarantee that the node list is now accurate.  
+> When the underlying document is modified, it is advisable to rerun the select. If the node modified is one that could cause the node to be added to the node list when it was not previously, or would now cause it to be removed from the node list, there is no guarantee that the node list is now accurate.  
   
 ## Namespaces in XPath Expressions  
  XPath expressions can include namespaces. Namespace resolution is supported using the <xref:System.Xml.XmlNamespaceManager>. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the <xref:System.Xml.XmlNamespaceManager>, and the <xref:System.Xml.XmlNamespaceManager> is passed to the <xref:System.Xml.XmlNode.SelectNodes%28System.String%2CSystem.Xml.XmlNamespaceManager%29> or <xref:System.Xml.XmlNode.SelectSingleNode%28System.String%2CSystem.Xml.XmlNamespaceManager%29> method. Notice that the code examples above use the <xref:System.Xml.XmlNamespaceManager> to resolve the namespace of the bookstore.xml document.  
   
 > [!NOTE]
->  If the XPath expression does not include a prefix, it is assumed that the namespace Uniform Resource Identifier (URI) is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the <xref:System.Xml.XmlNamespaceManager>; otherwise, no nodes will be selected.  
+> If the XPath expression does not include a prefix, it is assumed that the namespace Uniform Resource Identifier (URI) is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the <xref:System.Xml.XmlNamespaceManager>; otherwise, no nodes will be selected.  
   
 #### Input File  
  The following is the bookstore.xml file that is used as the input file in the examples in this topic:  

@@ -23,7 +23,7 @@ Sets property values for the generic parameter definition referenced by the spec
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGenericParamProps (  
     [in] mdGenericParam   gp,   
     [in] DWORD            dwParamFlags,   
@@ -33,7 +33,7 @@ HRESULT SetGenericParamProps (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `gp`  
  [in] The token for the generic parameter definition for which to set values.  
   
@@ -59,5 +59,6 @@ HRESULT SetGenericParamProps (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)

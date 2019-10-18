@@ -19,14 +19,14 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInMemorySymbolsLength(  
         [in] ModuleID moduleId,  
         [out] DWORD* pCountSymbolBytes  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The identifier of the module containing the in-memory stream.  
   
@@ -42,7 +42,7 @@ HRESULT GetInMemorySymbolsLength(
  If the module has in-memory symbols, the length of the stream is placed in `pCountSymbolBytes`. If the module doesn't have in-memory     symbols, `*pCountSymbolBytes = 0`.  
   
 > [!NOTE]
->  The current implementation does not support Reflection.Emit. If the module was created by using Reflection.Emit, the method returns `CORPROF_E_MODULE_IS_DYNAMIC`.  
+> The current implementation does not support Reflection.Emit. If the module was created by using Reflection.Emit, the method returns `CORPROF_E_MODULE_IS_DYNAMIC`.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -54,4 +54,5 @@ HRESULT GetInMemorySymbolsLength(
  **.NET Framework Versions:** [!INCLUDE[net_current_v461plus](../../../../includes/net-current-v461plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md)

@@ -23,7 +23,7 @@ Returns an array of IDs that identify all JIT-recompiled versions of the specifi
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT GetReJITIDs (  
      [in]  FunctionID          functionId,  
      [in]  ULONG               cReJitIds,  
@@ -31,7 +31,7 @@ HRESULT GetReJITIDs (
      [out, size_is(cReJitIds), length_is(*pcReJitIds)]   ReJITID        reJitIds[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The `FunctionID` of the function instance for which to enumerate versions.  
   
@@ -57,6 +57,7 @@ HRESULT GetReJITIDs (
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

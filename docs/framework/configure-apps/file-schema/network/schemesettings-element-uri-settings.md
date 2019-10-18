@@ -6,9 +6,9 @@ ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
 # \<schemeSettings> Element (Uri Settings)
 Specifies how a <xref:System.Uri> will be parsed for specific schemes.  
   
- \<configuration>  
-\<uri>  
-\<schemeSettings>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<schemeSettings>**  
   
 ## Syntax  
   
@@ -27,15 +27,15 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[add](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-schemesettings-uri-settings.md)|Adds a scheme setting for a scheme name.|  
-|[clear](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-schemesettings-uri-settings.md)|Clears all existing scheme settings.|  
-|[remove](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-schemesettings-uri-settings.md)|Removes a scheme setting for a scheme name.|  
+|[add](add-element-for-schemesettings-uri-settings.md)|Adds a scheme setting for a scheme name.|  
+|[clear](clear-element-for-schemesettings-uri-settings.md)|Clears all existing scheme settings.|  
+|[remove](remove-element-for-schemesettings-uri-settings.md)|Removes a scheme setting for a scheme name.|  
   
 ### Parent Elements  
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[uri](../../../../../docs/framework/configure-apps/file-schema/network/uri-element-uri-settings.md)|Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).|  
+|[uri](uri-element-uri-settings.md)|Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).|  
   
 ## Remarks  
  By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
@@ -78,10 +78,11 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 |Can be Empty||  
   
 ## See also
+
 - <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
 - <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection?displayProperty=nameWithType>
 - <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
 - <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
 - <xref:System.Uri?displayProperty=nameWithType>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

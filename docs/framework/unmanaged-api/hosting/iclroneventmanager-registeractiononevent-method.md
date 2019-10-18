@@ -23,14 +23,14 @@ Registers a callback pointer for the specified event.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RegisterActionOnEvent (  
     [in] EClrEvent event,  
     [in] IActionOnCLREvent *pAction  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `event`  
  [in] One of the [EClrEvent](../../../../docs/framework/unmanaged-api/hosting/eclrevent-enumeration.md) values, indicating the event for which to register the callback pointer described by `pAction`.  
   
@@ -52,7 +52,7 @@ HRESULT RegisterActionOnEvent (
  The host can register callbacks for either or both of the two event types described by `EClrEvent`. The host gets the `ICLROnEventManager` interface by calling the [ICLRControl::GetCLRManager](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-getclrmanager-method.md) method.  
   
 > [!NOTE]
->  The events that `RegisterActionOnEvent` registers can be fired more than once and from different threads to signal an unload or the disabling of the CLR.  
+> The events that `RegisterActionOnEvent` registers can be fired more than once and from different threads to signal an unload or the disabling of the CLR.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -64,6 +64,7 @@ HRESULT RegisterActionOnEvent (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [EClrEvent Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrevent-enumeration.md)
 - [IActionOnCLREvent Interface](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-interface.md)
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)

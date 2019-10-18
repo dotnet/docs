@@ -15,7 +15,7 @@ You can add just one menu item or several items at a time to a <xref:System.Wind
   
 ### To add a single menu item to a ContextMenuStrip  
   
--   Use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method to add one menu item to a <xref:System.Windows.Forms.ContextMenuStrip>.  
+- Use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method to add one menu item to a <xref:System.Windows.Forms.ContextMenuStrip>.  
   
     ```vb  
     Me.contextMenuStrip1.Items.Add(Me.toolStripMenuItem1)  
@@ -27,7 +27,7 @@ You can add just one menu item or several items at a time to a <xref:System.Wind
   
 ### To add several menu items to a ContextMenuStrip  
   
--   Use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method to add several menu items to a <xref:System.Windows.Forms.ContextMenuStrip>.  
+- Use the <xref:System.Windows.Forms.ToolStripItemCollection.AddRange%2A> method to add several menu items to a <xref:System.Windows.Forms.ContextMenuStrip>.  
   
     ```vb  
     Me.contextMenuStrip1.Items.AddRange(New _  
@@ -42,4 +42,5 @@ You can add just one menu item or several items at a time to a <xref:System.Wind
     ```  
   
 ## See also
-- [ContextMenuStrip Control](../../../../docs/framework/winforms/controls/contextmenustrip-control.md)
+
+- [ContextMenuStrip Control](contextmenustrip-control.md)

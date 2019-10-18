@@ -44,14 +44,14 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 Child One Text  
 Child Two Text  
 Child Four Text  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
 ```vb  
 Imports <xmlns='http://www.adatum.com'>  
@@ -94,13 +94,14 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 Child One Text  
 Child Two Text  
 Child Four Text  
 ```  
   
 ## See also
+
 - <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>

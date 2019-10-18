@@ -13,7 +13,7 @@ There are numerous benefits to writing unit tests; they help with regression, pr
 
 In this guide, you'll learn some best practices when writing unit tests to keep your tests resilient and easy to understand.
 
-By [John Reese](https://reesespieces.io) with special thanks to [Roy Osherove](http://osherove.com/)
+By [John Reese](https://reese.dev) with special thanks to [Roy Osherove](https://osherove.com/)
 
 ## Why unit test?
 
@@ -38,11 +38,12 @@ When code is tightly coupled, it can be difficult to unit test. Without creating
 Writing tests for your code will naturally decouple your code, because it would be more difficult to test otherwise.
 
 ## Characteristics of a good unit test
+
 - **Fast**. It is not uncommon for mature projects to have thousands of unit tests. Unit tests should take very little time to run. Milliseconds.
 - **Isolated**. Unit tests are standalone, can be run in isolation, and have no dependencies on any outside factors such as a file system or database.
 - **Repeatable**. Running a unit test should be consistent with its results, that is, it always returns the same result if you do not change anything in between runs.
 - **Self-Checking**. The test should be able to automatically detect if it passed or failed without any human interaction.
-- **Timely**. A unit test should not take a disproportionally long time to write compared to the code being tested. If you find testing the code taking a large amount of time compared to writing the code, consider a design that is more testable.
+- **Timely**. A unit test should not take a disproportionately long time to write compared to the code being tested. If you find testing the code taking a large amount of time compared to writing the code, consider a design that is more testable.
 
 ## Let's speak the same language
 The term *mock* is unfortunately very misused when talking about testing. The following defines the most common types of *fakes* when writing unit tests:
@@ -101,11 +102,13 @@ The main thing to remember about mocks versus stubs is that mocks are just like 
 
 ### Naming your tests
 The name of your test should consist of three parts:
+
 - The name of the method being tested.
 - The scenario under which it's being tested.
 - The expected behavior when the scenario is invoked.
 
 #### Why?
+
 - Naming standards are important because they explicitly express the intent of the test.
 
 Tests are more than just making sure your code works, they also provide documentation. Just by looking at the suite of unit tests, you should be able to infer the behavior of your code without even looking at the code itself. Additionally, when tests fail, you can see exactly which scenarios do not meet your expectations.
@@ -118,11 +121,13 @@ Tests are more than just making sure your code works, they also provide document
 
 ### Arranging your tests
 **Arrange, Act, Assert** is a common pattern when unit testing. As the name implies, it consists of three main actions:
+
 - *Arrange* your objects, creating and setting them up as necessary.
 - *Act* on an object.
 - *Assert* that something is as expected.
 
 #### Why?
+
 - Clearly separates what is being tested from the *arrange* and *assert* steps.
 - Less chance to intermix assertions with "Act" code.
 
@@ -138,6 +143,7 @@ Readability is one of the most important aspects when writing a test. Separating
 The input to be used in a unit test should be the simplest possible in order to verify the behavior that you are currently testing.
 
 #### Why?
+
 - Tests become more resilient to future changes in the codebase.
 - Closer to testing behavior over implementation.
 
@@ -153,6 +159,7 @@ Tests that include more information than required to pass the test have a higher
 Naming variables in unit tests is as important, if not more important, than naming variables in production code. Unit tests should not contain magic strings.
 
 #### Why?
+
 - Prevents the need for the reader of the test to inspect the production code in order to figure out what makes the value special.
 - Explicitly shows what you're trying to *prove* rather than trying to *accomplish*.
 
@@ -171,6 +178,7 @@ Magic strings can cause confusion to the reader of your tests. If a string looks
 When writing your unit tests avoid manual string concatenation and logical conditions such as `if`, `while`, `for`, `switch`, etc.
 
 #### Why?
+
 - Less chance to introduce a bug inside of your tests.
 - Focus on the end result, rather than implementation details.
 
@@ -189,6 +197,7 @@ When you introduce logic into your test suite, the chance of introducing a bug i
 If you require a similar object or state for your tests, prefer a helper method than leveraging Setup and Teardown attributes if they exist.
 
 #### Why?
+
 - Less confusion when reading the tests since all of the code is visible from within each test.
 - Less chance of setting up too much or too little for the given test.
 - Less chance of sharing state between tests which creates unwanted dependencies between them.
@@ -218,10 +227,12 @@ In unit testing frameworks, `Setup` is called before each and every unit test wi
 
 ### Avoid multiple asserts
 When writing your tests, try to only include one Assert per test. Common approaches to using only one assert include:
+
 - Create a separate test for each assert.
 - Use parameterized tests.
 
 #### Why?
+
 - If one Assert fails, the subsequent Asserts will not be evaluated.
 - Ensures you are not asserting multiple cases in your tests.
 - Gives you the entire picture as to why your tests are failing. 
@@ -245,17 +256,17 @@ Consider the following case
 ```csharp
 public string ParseLogLine(string input)
 {
-    var sanitizedInput = trimInput(input);
+    var sanitizedInput = TrimInput(input);
     return sanitizedInput;
 }
 
-private string trimInput(string input)
+private string TrimInput(string input)
 {
     return input.Trim();
 }
 ```
 
-Your first reaction may be to start writing a test for `trimInput` because you want to make sure that the method is working as expected. However, it is entirely possible that `ParseLogLine` manipulates `sanitizedInput` in such a way that you do not expect, rendering a test against `trimInput` useless. 
+Your first reaction may be to start writing a test for `TrimInput` because you want to make sure that the method is working as expected. However, it is entirely possible that `ParseLogLine` manipulates `sanitizedInput` in such a way that you do not expect, rendering a test against `TrimInput` useless. 
 
 The real test should be done against the public facing method `ParseLogLine` because that is what you should ultimately care about. 
 
@@ -278,7 +289,7 @@ One of the principles of a unit test is that it must have full control of the sy
 ```csharp
 public int GetDiscountedPrice(int price)
 {
-    if(DateTime.Now == DayOfWeek.Tuesday) 
+    if(DateTime.Now.DayOfWeek == DayOfWeek.Tuesday) 
     {
         return price / 2;
     }

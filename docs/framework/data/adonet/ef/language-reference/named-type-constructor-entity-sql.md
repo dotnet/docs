@@ -8,13 +8,13 @@ Used to create instances of conceptual model nominal types such as Entity or Com
   
 ## Syntax  
   
-```  
+```sql  
 [{identifier. }] identifier( [expression [{, expression }]] )  
 ```  
   
 ## Arguments  
  `identifier`  
- Value that is a simple or quoted identifier. For more information see, [Identifiers](../../../../../../docs/framework/data/adonet/ef/language-reference/identifiers-entity-sql.md)  
+ Value that is a simple or quoted identifier. For more information see, [Identifiers](identifiers-entity-sql.md)  
   
  `expression`  
  Attributes of the type that are assumed to be in the same order as they appear in the declaration of the type.  
@@ -46,12 +46,13 @@ Used to create instances of conceptual model nominal types such as Entity or Com
 ## Example  
  The following Entity SQL query uses the named type constructor to create an instance of a conceptual model type. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1.  Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
-2.  Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
+2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#NAMED_TYPE_CONSTRUCTOR](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#named_type_constructor)]  
+ [!code-sql[DP EntityServices Concepts#NAMED_TYPE_CONSTRUCTOR](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#named_type_constructor)]  
   
 ## See also
-- [Constructing Types](../../../../../../docs/framework/data/adonet/ef/language-reference/constructing-types-entity-sql.md)
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+
+- [Constructing Types](constructing-types-entity-sql.md)
+- [Entity SQL Reference](entity-sql-reference.md)

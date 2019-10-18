@@ -103,7 +103,7 @@ This section demonstrates one step in the processing of a purchase order, using 
 </PurchaseOrder>  
 ```  
   
- One step in processing the purchase order information contained in the preceding XML document is for the order to be filled from the company's current inventory. The employee responsible for filling the order from the company's warehouse does not need to see the entire contents of the purchase order; they only need to see the product information for the order. To expose only the product information from the XML document, create a strongly typed **DataSet** with a schema, written as XML Schema definition language (XSD) schema, that maps to the products and quantities ordered. For more information about strongly typed **DataSet** objects, see [Typed DataSets](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/typed-datasets.md).  
+ One step in processing the purchase order information contained in the preceding XML document is for the order to be filled from the company's current inventory. The employee responsible for filling the order from the company's warehouse does not need to see the entire contents of the purchase order; they only need to see the product information for the order. To expose only the product information from the XML document, create a strongly typed **DataSet** with a schema, written as XML Schema definition language (XSD) schema, that maps to the products and quantities ordered. For more information about strongly typed **DataSet** objects, see [Typed DataSets](typed-datasets.md).  
   
  The following code shows the schema from which the strongly typed **DataSet** is generated for this sample.  
   
@@ -226,5 +226,6 @@ public class Sample
 ```  
   
 ## See also
-- [DataSet and XmlDataDocument Synchronization](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataset-and-xmldatadocument-synchronization.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [DataSet and XmlDataDocument Synchronization](dataset-and-xmldatadocument-synchronization.md)
+- [ADO.NET Overview](../ado-net-overview.md)

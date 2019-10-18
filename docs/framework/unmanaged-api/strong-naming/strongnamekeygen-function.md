@@ -20,11 +20,11 @@ ms.author: "ronpet"
 # StrongNameKeyGen Function
 Creates a new public/private key pair for strong name use.  
   
- This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyGen](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygen-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::StrongNameKeyGen](../hosting/iclrstrongname-strongnamekeygen-method.md) method instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameKeyGen (  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  DWORD     dwFlags,  
@@ -33,16 +33,16 @@ BOOLEAN StrongNameKeyGen (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszKeyContainer`  
  [in] The requested key container name. `wszKeyContainer` must be a non-empty string, or null to generate a temporary name.  
   
  `dwFlags`  
  [in] Specifies whether to leave the key registered. The following values are supported:  
   
--   0x00000000 - Used when `wszKeyContainer` is null to generate a temporary key container name.  
+- 0x00000000 - Used when `wszKeyContainer` is null to generate a temporary key container name.  
   
--   0x00000001 (`SN_LEAVE_KEY`) - Specifies that the key should be left registered.  
+- 0x00000001 (`SN_LEAVE_KEY`) - Specifies that the key should be left registered.  
   
  `ppbKeyBlob`  
  [out] The returned public/private key pair.  
@@ -54,12 +54,12 @@ BOOLEAN StrongNameKeyGen (
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
- The `StrongNameKeyGen` function creates a 1024-bit key. After the key is retrieved, you should call the [StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/strong-naming/strongnamefreebuffer-function.md) function to release the allocated memory.  
+ The `StrongNameKeyGen` function creates a 1024-bit key. After the key is retrieved, you should call the [StrongNameFreeBuffer](strongnamefreebuffer-function.md) function to release the allocated memory.  
   
- If the `StrongNameKeyGen` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
+ If the `StrongNameKeyGen` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -68,6 +68,7 @@ BOOLEAN StrongNameKeyGen (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-- [StrongNameKeyGen Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygen-method.md)
-- [StrongNameKeyGenEx Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamekeygenex-method.md)
-- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+
+- [StrongNameKeyGen Method](../hosting/iclrstrongname-strongnamekeygen-method.md)
+- [StrongNameKeyGenEx Method](../hosting/iclrstrongname-strongnamekeygenex-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

@@ -7,4 +7,3 @@
 |Scope|Edge|
 |Version|4.7|
 |Type|Runtime|
-

@@ -33,13 +33,13 @@ One of the basic design decisions every framework designer faces is whether to d
   
  **X AVOID** defining a struct unless the type has all of the following characteristics:  
   
--   It logically represents a single value, similar to primitive types (`int`, `double`, etc.).  
+- It logically represents a single value, similar to primitive types (`int`, `double`, etc.).  
   
--   It has an instance size under 16 bytes.  
+- It has an instance size under 16 bytes.  
   
--   It is immutable.  
+- It is immutable.  
   
--   It will not have to be boxed frequently.  
+- It will not have to be boxed frequently.  
   
  In all other cases, you should define your types as classes.  
   

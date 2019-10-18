@@ -23,13 +23,13 @@ Gets the containing process of this module.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess (  
     [out] ICorDebugProcess **ppProcess  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppProcess`  
  [out] A pointer to the address of an ICorDebugProcess object that represents the process containing this module.  
   

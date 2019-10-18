@@ -8,7 +8,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
 ### Define the Service  
   
-1.  Define a callback contract  
+1. Define a callback contract  
   
     ```csharp  
     [ServiceContract]  
@@ -21,7 +21,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
      This contract will be implemented by the client application to allow the service to send messages back to the client.  
   
-2.  Define the service contract and specify the `IStockQuoteCallback` interface as the callback contract.  
+2. Define the service contract and specify the `IStockQuoteCallback` interface as the callback contract.  
   
     ```csharp  
     [ServiceContract(CallbackContract = typeof(IStockQuoteCallback))]  
@@ -32,9 +32,9 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
         }  
     ```  
   
-3.  Implement the service contract.  
+3. Implement the service contract.  
   
-    ```  
+    ```csharp
     public class StockQuoteService : IStockQuoteService  
         {  
             public async Task StartSendingQuotes()  
@@ -55,7 +55,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
      The service operation `StartSendingQuotes` is implemented as an asynchronous call. We retrieve the callback channel using the `OperationContext` and if the channel is open, we make an async call on the callback channel.  
   
-4.  Configure the service  
+4. Configure the service  
   
     ```xml  
     <configuration>  
@@ -88,7 +88,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
 ### Define the Client  
   
-1.  Implement the callback contract.  
+1. Implement the callback contract.  
   
     ```csharp  
     private class CallbackHandler : StockQuoteServiceReference.IStockQuoteServiceCallback  
@@ -102,7 +102,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
      The callback contract operation is implemented as an asynchronous method.  
   
-    1.  Implement the client code.  
+    1. Implement the client code.  
   
         ```csharp  
         class Program  
@@ -127,7 +127,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
          The CallbackHandler is repeated here for clarity. The client application creates a new InstanceContext and specifies the implementation of the callback interface. Next it creates an instance of the proxy class sending a reference to the newly created InstanceContext. When the client calls the service, the service will call the client using the callback contract specified.  
   
-    2.  Configure the client  
+    2. Configure the client  
   
         ```xml  
         <?xml version="1.0" encoding="utf-8" ?>  
@@ -185,7 +185,7 @@ namespace Server
 }  
 ```  
   
-```  
+```csharp
 // StockQuoteService.svc.cs  
 using System;  
 using System.Collections.Generic;  
@@ -251,7 +251,7 @@ namespace Server
 </configuration>  
 ```  
   
-```  
+```
 <!-- StockQuoteService.svc -->  
 <%@ ServiceHost Language="C#" Debug="true" Service="Server.StockQuoteService" CodeBehind="StockQuoteService.svc.cs" %>  
 ```  
@@ -313,5 +313,6 @@ namespace Client
 ```  
   
 ## See also
+
 - [Synchronous and Asynchronous Operations](../../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md)
 - [Using the NetHttpBinding](../../../../docs/framework/wcf/feature-details/using-the-nethttpbinding.md)

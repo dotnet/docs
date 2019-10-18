@@ -23,12 +23,12 @@ Gets the kind of address of this variable.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddressKind(  
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the value. The possible values are defined in the [CorSymAddrKind](../../../../docs/framework/unmanaged-api/diagnostics/corsymaddrkind-enumeration.md) enumeration.  
   
@@ -39,4 +39,5 @@ HRESULT GetAddressKind(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymUnmanagedVariable Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)

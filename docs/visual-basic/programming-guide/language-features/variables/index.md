@@ -17,10 +17,10 @@ You often have to store values when you perform calculations with Visual Basic. 
 ## Assigning Values  
  You use assignment statements to perform calculations and assign the result to a variable, as the following example shows.  
   
- [!code-vb[VbVbalrVariables#1](../../../../visual-basic/programming-guide/language-features/variables/codesnippet/VisualBasic/index_1.vb)]  
+ [!code-vb[VbVbalrVariables#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrVariables/VB/Class1.vb#1)]  
   
 > [!NOTE]
->  The equal sign (`=`) in this example is an assignment operator, not an equality operator. The value is being assigned to the variable `applesSold`.  
+> The equal sign (`=`) in this example is an assignment operator, not an equality operator. The value is being assigned to the variable `applesSold`.  
   
  For more information, see [How to: Move Data Into and Out of a Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md).  
   
@@ -28,6 +28,7 @@ You often have to store values when you perform calculations with Visual Basic. 
  Like a variable, a *property* represents a value that you can access. However, it is more complex than a variable. A property uses code blocks that control how to set and retrieve its value. For more information, see [Differences Between Properties and Variables in Visual Basic](../../../../visual-basic/programming-guide/language-features/procedures/differences-between-properties-and-variables.md).  
   
 ## See also
+
 - [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
 - [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)
 - [Troubleshooting Variables](../../../../visual-basic/programming-guide/language-features/variables/troubleshooting-variables.md)

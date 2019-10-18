@@ -26,10 +26,10 @@ ms.author: "mairaw"
   
  The <xref:System.Security.CodeAccessPermission.Assert%2A>, <xref:System.Security.CodeAccessPermission.Deny%2A>, and <xref:System.Security.CodeAccessPermission.PermitOnly%2A> stack walk modifiers do not affect the evaluation of link demands.  Because link demands do not perform a stack walk, the stack walk modifiers have no effect on link demands.  
   
- If a method protected by a link demand is accessed through [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md), then a link demand checks the immediate caller of the code accessed through reflection. This is true both for method discovery and for method invocation performed using reflection. For example, suppose code uses reflection to return a <xref:System.Reflection.MethodInfo> object representing a method protected by a link demand and then passes that **MethodInfo** object to some other code that uses the object to invoke the original method. In this case the link demand check occurs twice: once for the code that returns the **MethodInfo** object and once for the code that invokes it.  
+ If a method protected by a link demand is accessed through [Reflection](../reflection-and-codedom/reflection.md), then a link demand checks the immediate caller of the code accessed through reflection. This is true both for method discovery and for method invocation performed using reflection. For example, suppose code uses reflection to return a <xref:System.Reflection.MethodInfo> object representing a method protected by a link demand and then passes that **MethodInfo** object to some other code that uses the object to invoke the original method. In this case the link demand check occurs twice: once for the code that returns the **MethodInfo** object and once for the code that invokes it.  
   
 > [!NOTE]
->  A link demand performed on a static class constructor does not protect the constructor because static constructors are called by the system, outside the application's code execution path. As a result, when a link demand is applied to an entire class, it cannot protect access to a static constructor, although it does protect the rest of the class.  
+> A link demand performed on a static class constructor does not protect the constructor because static constructors are called by the system, outside the application's code execution path. As a result, when a link demand is applied to an entire class, it cannot protect access to a static constructor, although it does protect the rest of the class.  
   
  The following code fragment declaratively specifies that any code linking to the `ReadData` method must have the `CustomPermission` permission. This permission is a hypothetical custom permission and does not exist in the .NET Framework. The demand is made by passing a **SecurityAction.LinkDemand** flag to the `CustomPermissionAttribute`.  
   
@@ -49,5 +49,6 @@ public static string ReadData()
 ```  
   
 ## See also
-- [Attributes](../../../docs/standard/attributes/index.md)
-- [Code Access Security](../../../docs/framework/misc/code-access-security.md)
+
+- [Attributes](../../standard/attributes/index.md)
+- [Code Access Security](code-access-security.md)

@@ -23,13 +23,13 @@ Returns the current binding display information.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentDisplay (  
     [out, retval] SAFEARRAY(struct BindingDisplayTabControl) *display  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `display`  
  [out, retval] A pointer to a safearray containing the binding display information.  
   
@@ -48,5 +48,6 @@ HRESULT GetCurrentDisplay (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [IBindingDisplay Interface](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-interface.md)
 - [InitializeForProcess Method](../../../../docs/framework/unmanaged-api/diagnostics/ibindingdisplay-initializeforprocess-method.md)

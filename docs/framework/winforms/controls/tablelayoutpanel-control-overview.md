@@ -27,17 +27,18 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
   
  You can merge cells in the <xref:System.Windows.Forms.TableLayoutPanel> control by setting the `ColumnSpan` or `RowSpan` properties on a child control.  
   
-1.  [How to: Align and Stretch a Control in a TableLayoutPanel Control](how-to-align-and-stretch-a-control-in-a-tablelayoutpanel-control.md)  
+1. [How to: Align and Stretch a Control in a TableLayoutPanel Control](how-to-align-and-stretch-a-control-in-a-tablelayoutpanel-control.md)  
   
-2.  [How to: Span Rows and Columns in a TableLayoutPanel Control](how-to-span-rows-and-columns-in-a-tablelayoutpanel-control.md)  
+2. [How to: Span Rows and Columns in a TableLayoutPanel Control](how-to-span-rows-and-columns-in-a-tablelayoutpanel-control.md)  
   
-3.  [How to: Edit Columns and Rows in a TableLayoutPanel Control](how-to-edit-columns-and-rows-in-a-tablelayoutpanel-control.md)  
+3. [How to: Edit Columns and Rows in a TableLayoutPanel Control](how-to-edit-columns-and-rows-in-a-tablelayoutpanel-control.md)  
   
-4.  [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  
+4. [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  
   
 ## See also
+
 - <xref:System.Windows.Forms.FlowLayoutPanel>
 - <xref:System.Windows.Forms.TableLayoutSettings>
-- [How to: Design a Windows Forms Layout that Responds Well to Localization](../../../../docs/framework/winforms/controls/how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)
-- [How to: Create a Resizable Windows Form for Data Entry](../../../../docs/framework/winforms/controls/how-to-create-a-resizable-windows-form-for-data-entry.md)
-- [Best Practices for the TableLayoutPanel Control](../../../../docs/framework/winforms/controls/best-practices-for-the-tablelayoutpanel-control.md)
+- [How to: Design a Windows Forms Layout that Responds Well to Localization](how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)
+- [How to: Create a Resizable Windows Form for Data Entry](how-to-create-a-resizable-windows-form-for-data-entry.md)
+- [Best Practices for the TableLayoutPanel Control](best-practices-for-the-tablelayoutpanel-control.md)

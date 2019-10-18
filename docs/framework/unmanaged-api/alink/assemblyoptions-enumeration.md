@@ -23,7 +23,7 @@ Enumerates the assembly options.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _AssemblyOptions {  
     optAssemTitle = 0,  
     optAssemDescription,  
@@ -79,4 +79,5 @@ typedef enum _AssemblyOptions {
  **Library**: alink.dll  
   
 ## See also
-- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+
+- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)

@@ -6,11 +6,12 @@ ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
 # \<httpsTransport>
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<httpsTransport>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<httpsTransport>**  
   
 ## Syntax  
   
@@ -48,7 +49,7 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
 |maxBufferSize|A positive integer that specifies the maximum size of the buffer. The default is 524288|  
 |maxReceivedMessageSize|A positive integer that specifies the maximum allowable message size that can be received. The default is 65536.|  
 |proxyAddress|A URI that specifies the address of the HTTP proxy. If `useSystemWebProxy` is `true`, this setting must be `null`. The default is `null`.|  
-|proxyAuthenticationScheme|Specifies the protocol used for authenticating client requests being processed by an HTTP proxy. Valid values include the following:<br /><br /> -   None: No authentication is performed.<br />-   Digest: Specifies digest authentication.<br />-   Negotiate: Negotiates with the client to determine the authentication scheme. If both client and server support Kerberos, it is used; otherwise, NTLM is used.<br />-   Ntlm: Specifies NTLM authentication.<br />-   Basic: Specifies basic authentication.<br />-   Anonymous: Specifies anonymous authentication.<br /><br /> The default is Anonymous. This attribute is of type <xref:System.Net.AuthenticationSchemes>. Note that `IntegratedWindowsAuthentication` is not supported.|  
+|proxyAuthenticationScheme|Specifies the protocol used for authenticating client requests being processed by an HTTP proxy. Valid values include the following:<br /><br /> -   None: No authentication is performed.<br />-   Digest: Specifies digest authentication.<br />-   Negotiate: Negotiates with the client to determine the authentication scheme. If both client and server support Kerberos, it is used; otherwise, NTLM is used.<br />-   Ntlm: Specifies NTLM authentication.<br />-   Basic: Specifies basic authentication.<br />-   Anonymous: Specifies anonymous authentication.<br /><br /> The default is Anonymous. This attribute is of type <xref:System.Net.AuthenticationSchemes>. Note that <xref:System.Net.AuthenticationSchemes.IntegratedWindowsAuthentication?displayProperty=nameWithType> is not supported.|  
 |realm|A string that specifies the realm to use on the proxy/server. The default is an empty string.<br /><br /> Servers use realms to partition protected resources. Each partition can have its own authentication scheme and/or authorization database. Realms are used only for basic and digest authentication. After a client successfully authenticates, the authentication is valid for all resources in a given realm. For a detailed description of realms, see RFC 2617 at the [IETF website](https://www.ietf.org).|  
 |requireClientCertificate|A Boolean value that specifies if the server requires the client to provide a client certificate as part of the HTTPS handshake. The default is `false`.|  
 |transferMode|Specifies whether messages are buffered or streamed or a request or response. Valid values include the following:<br /><br /> -   Buffered: The request and response messages are buffered.<br />-   Streamed: The request and response messages are streamed.<br />-   StreamedRequest: The request message is streamed and the response message is buffered.<br />-   StreamedResponse: The request message is buffered and the response message is streamed.<br /><br /> The default is Buffered. This attribute is of type <xref:System.ServiceModel.TransferMode>.|  
@@ -62,19 +63,20 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  The `httpsTransport` element is the starting point for creating a custom binding that implements the HTTPS transport protocol. HTTPS is the primary transport used for secure interoperability purposes. HTTPS is supported by the Windows Communication Foundation (WCF) to ensure interoperability with other Web services stacks.  
   
 ## See also
+
 - <xref:System.ServiceModel.Configuration.HttpsTransportElement>
 - <xref:System.ServiceModel.Channels.HttpsTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Transports](../../../wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

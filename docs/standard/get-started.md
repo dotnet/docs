@@ -25,6 +25,6 @@ There are a number of ways to get started with .NET. Because .NET is a massive p
 
 * The [.NET Core Tutorials](../core/tutorials/index.md) detail a number of ways you can get started with .NET Core using your operating system and tooling of choice.
 
-## Get started using Docker on .NET Framework
+## Get started using .NET Core on Docker
 
-[Docker on .NET Framework](../framework/docker/index.md) shows how you can use .NET Framework on Windows Docker containers.
+[Introduction to .NET and Docker](../core/docker/introduction.md) shows how you can use .NET Core on Windows Docker containers.

@@ -23,13 +23,13 @@ Gets an interface that provides a method to allocate memory to be used for swapp
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILFunctionBodyAllocator(  
     [in]  ModuleID      moduleId,  
     [out] IMethodMalloc **ppMalloc);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleId`  
  [in] The ID of the module in which the method resides.  
   
@@ -49,4 +49,5 @@ HRESULT GetILFunctionBodyAllocator(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)

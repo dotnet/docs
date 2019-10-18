@@ -23,7 +23,7 @@ Gets the `ClassID` of a type by using the specified metadata token and the `Clas
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassFromTokenAndTypeArgs(  
     [in] ModuleID moduleID,  
     [in] mdTypeDef typeDef,  
@@ -32,7 +32,7 @@ HRESULT GetClassFromTokenAndTypeArgs(
     [out] ClassID* pClassID);  
 ```  
   
-#### Parameters  
+## Parameters  
  `moduleID`  
  [in] The ID of the module in which the type resides.  
   
@@ -65,5 +65,6 @@ HRESULT GetClassFromTokenAndTypeArgs(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

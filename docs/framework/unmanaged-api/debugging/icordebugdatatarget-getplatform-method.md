@@ -23,11 +23,11 @@ Provides information about the platform, including processor architecture and op
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPlatform([out] CorDebugPlatform * pTargetPlatform);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pTargetPlatform`  
  [out] A pointer to a [CorDebugPlatformEnum](../../../../docs/framework/unmanaged-api/debugging/cordebugplatform-enumeration.md) enumeration that describes the target platform.  
   
@@ -38,9 +38,9 @@ HRESULT GetPlatform([out] CorDebugPlatform * pTargetPlatform);
   
  This method must succeed. If it fails, the target platform is unusable. The method may fail for the following reasons:  
   
--   The platform that is being emulated for the target is unusable.  
+- The platform that is being emulated for the target is unusable.  
   
--   The actual hardware on the target platform is unusable.  
+- The actual hardware on the target platform is unusable.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -52,6 +52,7 @@ HRESULT GetPlatform([out] CorDebugPlatform * pTargetPlatform);
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
+
 - [ICorDebugDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)

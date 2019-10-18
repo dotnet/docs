@@ -14,7 +14,7 @@ Returns a specified number of contiguous elements from the start of a collection
   
 ## Syntax  
   
-```  
+```vb  
 Take count  
 ```  
   
@@ -34,9 +34,10 @@ Take count
 ## Example  
  The following code example uses the `Take` clause together with the `Skip` clause to return data from a query in pages. The GetCustomers function uses the `Skip` clause to bypass the customers in the list until the supplied starting index value, and uses the `Take` clause to return a page of customers starting from that index value.  
   
- [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)

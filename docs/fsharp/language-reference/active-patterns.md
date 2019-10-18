@@ -10,10 +10,16 @@ ms.date: 05/16/2016
 ## Syntax
 
 ```fsharp
-// Complete active pattern definition.
-let (|identifer1|identifier2|...|) [ arguments ] = expression
+// Active pattern of one choice.
+let (|identifier|) [arguments] valueToMatch= expression
+
+// Active Pattern with multiple choices.
+// Uses a FSharp.Core.Choice<_,...,_> based on the number of case names. In F#, the limitation n <= 7 applies.
+let (|identifer1|identifier2|...|) valueToMatch = expression
+
 // Partial active pattern definition.
-let (|identifier|_|) [ arguments ] = expression
+// Uses a FSharp.Core.option<_> to represent if the type is satisfied at the call site.
+let (|identifier|_|) [arguments ] valueToMatch = expression
 ```
 
 ## Remarks
@@ -22,15 +28,15 @@ In the previous syntax, the identifiers are names for partitions of the input da
 
 As an example, consider the following active pattern with an argument.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5001.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5001.fs)]
 
 You can use the active pattern in a pattern matching expression, as in the following example.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5002.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5002.fs)]
 
 The output of this program is as follows:
 
-```
+```console
 7 is odd
 11 is odd
 32 is even
@@ -42,7 +48,7 @@ Another use of active patterns is to decompose data types in multiple ways, such
 
 The output of the above program is as follows:
 
-```
+```console
 Red
  Red: 255 Green: 0 Blue: 0
  Hue: 360.000000 Saturation: 1.000000 Brightness: 0.500000
@@ -72,7 +78,7 @@ Sometimes, you need to partition only part of the input space. In that case, you
 
 The output of the previous example is as follows:
 
-```
+```console
 1.100000 : Floating point
 0 : Integer
 0.000000 : Floating point
@@ -80,23 +86,23 @@ The output of the previous example is as follows:
 Something else : Not matched.
 ```
 
-When using partial active patterns, sometimes the individual choices can be disjoint or mutually exclusive, but they need not be. In the following example, the pattern Square and the pattern Cube are not disjoint, because some numbers are both squares and cubes, such as 64. The following program prints out all integers up to 1000000 that are both squares and cubes.
+When using partial active patterns, sometimes the individual choices can be disjoint or mutually exclusive, but they need not be. In the following example, the pattern Square and the pattern Cube are not disjoint, because some numbers are both squares and cubes, such as 64. The following program uses the AND pattern to combine the Square and Cube patterns. It print out all integers up to 1000 that are both squares and cubes, as well as those which are only cubes. 
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5005.fs)]
 
 The output is as follows:
 
-```
-1
-64
-729
-4096
-15625
-46656
-117649
-262144
-531441
-1000000
+```console
+1 is a cube and a square
+8 is a cube
+27 is a cube
+64 is a cube and a square
+125 is a cube
+216 is a cube
+343 is a cube
+512 is a cube
+729 is a cube and a square
+1000 is a cube
 ```
 
 ## Parameterized Active Patterns
@@ -107,7 +113,7 @@ Active patterns always take at least one argument for the item being matched, bu
 
 The output of the previous code is as follows:
 
-```
+```console
 12/22/2008 12:00:00 AM 1/1/2009 12:00:00 AM 1/15/2008 12:00:00 AM 12/28/1995 12:00:00 AM
 ```
 
@@ -117,7 +123,7 @@ Active patterns are not restricted only to pattern matching expressions, you can
 
 The output of the previous code is as follows:
 
-```
+```console
 Hello, random citizen!
 Hello, George!
 ```

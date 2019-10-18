@@ -8,19 +8,17 @@ helpviewer_keywords:
   - "TextPattern class"
   - "classes, TextPattern"
 ms.assetid: ca6ac045-7b21-4487-9379-59aa20909670
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # UI Automation Text Pattern-How-to Topics
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
   
  This section includes topics that explain how to use UI Automation text pattern.  
   
 ## In This Section  
- [Add Content to a Text Box Using UI Automation](../../../docs/framework/ui-automation/add-content-to-a-text-box-using-ui-automation.md)  
- [Find and Highlight Text Using UI Automation](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)  
- [Obtain Text Attributes Using UI Automation](../../../docs/framework/ui-automation/obtain-text-attributes-using-ui-automation.md)  
- [Obtain Mixed Text Attribute Details Using UI Automation](../../../docs/framework/ui-automation/obtain-mixed-text-attribute-details-using-ui-automation.md)  
- [Traverse Text Using UI Automation](../../../docs/framework/ui-automation/traverse-text-using-ui-automation.md)  
- [Access Embedded Objects Using UI Automation](../../../docs/framework/ui-automation/access-embedded-objects-using-ui-automation.md)
+ [Add Content to a Text Box Using UI Automation](add-content-to-a-text-box-using-ui-automation.md)  
+ [Find and Highlight Text Using UI Automation](find-and-highlight-text-using-ui-automation.md)  
+ [Obtain Text Attributes Using UI Automation](obtain-text-attributes-using-ui-automation.md)  
+ [Obtain Mixed Text Attribute Details Using UI Automation](obtain-mixed-text-attribute-details-using-ui-automation.md)  
+ [Traverse Text Using UI Automation](traverse-text-using-ui-automation.md)  
+ [Access Embedded Objects Using UI Automation](access-embedded-objects-using-ui-automation.md)

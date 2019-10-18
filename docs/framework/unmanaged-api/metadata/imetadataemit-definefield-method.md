@@ -23,7 +23,7 @@ Creates a definition for a field with the specified metadata signature, and gets
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineField (   
     [in]  mdTypeDef   td,   
     [in]  LPCWSTR     szName,   
@@ -37,7 +37,7 @@ HRESULT DefineField (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The `mdTypeDef` token for the enclosing class or interface.  
   
@@ -75,5 +75,6 @@ HRESULT DefineField (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

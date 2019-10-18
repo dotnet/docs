@@ -21,17 +21,17 @@ ms.author: "mairaw"
 Notifies the profiler that a function is about to return to the caller.  
   
 > [!NOTE]
->  The `FunctionLeave` function is deprecated in the .NET Framework 2.0. It will continue to work, but will incur a performance penalty. Use the [FunctionLeave2](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md) function instead.  
+> The `FunctionLeave` function is deprecated in the .NET Framework 2.0. It will continue to work, but will incur a performance penalty. Use the [FunctionLeave2](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md) function instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionLeave (  
     [in] FunctionID funcID  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `funcID`  
  [in] The identifier of the function that is returning.  
   
@@ -40,9 +40,9 @@ void __stdcall FunctionLeave (
   
  The execution engine does not save any registers before calling this function.  
   
--   On entry, you must save all registers that you use, including those in the floating-point unit (FPU).  
+- On entry, you must save all registers that you use, including those in the floating-point unit (FPU).  
   
--   On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
+- On exit, you must restore the stack by popping off all the parameters that were pushed by its caller.  
   
  The implementation of `FunctionLeave` should not block because it will delay garbage collection. The implementation should not attempt a garbage collection because the stack may not be in a garbage collection-friendly state. If a garbage collection is attempted, the runtime will block until `FunctionLeave` returns.  
   
@@ -58,6 +58,7 @@ void __stdcall FunctionLeave (
  **.NET Framework Versions:** 1.1, 1.0  
   
 ## See also
+
 - [FunctionEnter2 Function](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)
 - [FunctionLeave2 Function](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md)
 - [FunctionTailcall2 Function](../../../../docs/framework/unmanaged-api/profiling/functiontailcall2-function.md)

@@ -23,9 +23,9 @@ This topic summarizes information about the `DataGridView` control and the class
  `BindingSource`  
   
 ## Background  
- User interface (UI) designers frequently find it necessary to display tabular data to users. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] provides several ways to show data in a table or grid. The `DataGridView` control represents the latest evolution of this technology for Windows Forms applications.  
+ User interface (UI) designers frequently find it necessary to display tabular data to users. The .NET Framework provides several ways to show data in a table or grid. The `DataGridView` control represents the latest evolution of this technology for Windows Forms applications.  
   
- The `DataGridView` control can display rows of data from a data store. Many types of data stores are supported. The data store can hold simple, untyped data, such as a one-dimensional array, or it can hold typed data, such as a <xref:System.Data.DataSet>. For more information, see [How to: Bind Data to the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-bind-data-to-the-windows-forms-datagridview-control.md).  
+ The `DataGridView` control can display rows of data from a data store. Many types of data stores are supported. The data store can hold simple, untyped data, such as a one-dimensional array, or it can hold typed data, such as a <xref:System.Data.DataSet>. For more information, see [How to: Bind Data to the Windows Forms DataGridView Control](how-to-bind-data-to-the-windows-forms-datagridview-control.md).  
   
  The `DataGridView` control provides a powerful and flexible way to display data in a tabular format. You can use the control to show read-only or editable views of small to very large sets of data.  
   
@@ -38,7 +38,7 @@ This topic summarizes information about the `DataGridView` control and the class
   
  You can implement the `IDataGridViewEditingCell` interface in your derived cell class to create a cell type that has editing functionality but does not host a control in editing mode. To create a control that you can host in a cell in editing mode, you can implement the `IDataGridViewEditingControl` interface in a class derived from <xref:System.Windows.Forms.Control>.  
   
- For more information, see [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](../../../../docs/framework/winforms/controls/customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md) and [How to: Host Controls in Windows Forms DataGridView Cells](../../../../docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
+ For more information, see [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md) and [How to: Host Controls in Windows Forms DataGridView Cells](how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
 ## DataGridView Classes at a Glance  
  <xref:System.Windows.Forms>  
@@ -50,11 +50,12 @@ This topic summarizes information about the `DataGridView` control and the class
 |<xref:System.Windows.Forms.DataGridView> Extensibility|<xref:System.Windows.Forms.DataGridViewCell> and derived classes<br /><br /> <xref:System.Windows.Forms.DataGridViewColumn> and derived classes<br /><br /> <xref:System.Windows.Forms.IDataGridViewEditingCell><br /><br /> <xref:System.Windows.Forms.IDataGridViewEditingControl>|  
   
 ## What's New  
- The <xref:System.Windows.Forms.DataGridView> control is designed to be a complete solution for displaying tabular data with Windows Forms. You should consider using the <xref:System.Windows.Forms.DataGridView> control before other solutions, such as <xref:System.Windows.Forms.DataGrid>, when you are authoring a new application. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../../../../docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+ The <xref:System.Windows.Forms.DataGridView> control is designed to be a complete solution for displaying tabular data with Windows Forms. You should consider using the <xref:System.Windows.Forms.DataGridView> control before other solutions, such as <xref:System.Windows.Forms.DataGrid>, when you are authoring a new application. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  The <xref:System.Windows.Forms.DataGridView> control can work in close conjunction with the <xref:System.Windows.Forms.BindingSource> component. This component is designed to be the primary data source of a form. It can manage the interaction between a <xref:System.Windows.Forms.DataGridView> control and its data source, regardless of the data source type.  
   
 ## See also
-- [DataGridView Control Overview](../../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)
-- [DataGridView Control Architecture](../../../../docs/framework/winforms/controls/datagridview-control-architecture-windows-forms.md)
-- [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)
+
+- [DataGridView Control Overview](datagridview-control-overview-windows-forms.md)
+- [DataGridView Control Architecture](datagridview-control-architecture-windows-forms.md)
+- [Protecting Connection Information](../../data/adonet/protecting-connection-information.md)

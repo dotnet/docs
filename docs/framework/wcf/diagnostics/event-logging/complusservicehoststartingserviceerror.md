@@ -14,5 +14,6 @@ Id: 130
  This event indicates that an error occurred while starting the COM+ service. The event lists the AppID, ClsID, Surrogate, exception, process name and process ID.  
   
 ## See also
-- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
-- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+
+- [Event Logging](index.md)
+- [Events General Reference](events-general-reference.md)

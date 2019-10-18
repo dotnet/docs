@@ -12,12 +12,13 @@ ms.assetid: 36e9f98e-f968-42d8-adb6-9e78c814aec0
 This section provides examples that demonstrate how to accomplish common tasks using the <xref:System.Windows.Controls.RichTextBox> control.  
   
 ## In This Section  
- [Extract the Text Content from a RichTextBox](../../../../docs/framework/wpf/controls/how-to-extract-the-text-content-from-a-richtextbox.md)  
- [Change Selection in a RichTextBox Programmatically](../../../../docs/framework/wpf/controls/change-selection-in-a-richtextbox-programmatically.md)  
- [Save, Load, and Print RichTextBox Content](../../../../docs/framework/wpf/controls/how-to-save-load-and-print-richtextbox-content.md)  
- [Position a Custom Context Menu in a RichTextBox](../../../../docs/framework/wpf/controls/how-to-position-a-custom-context-menu-in-a-richtextbox.md)  
+ [Extract the Text Content from a RichTextBox](how-to-extract-the-text-content-from-a-richtextbox.md)  
+ [Change Selection in a RichTextBox Programmatically](change-selection-in-a-richtextbox-programmatically.md)  
+ [Save, Load, and Print RichTextBox Content](how-to-save-load-and-print-richtextbox-content.md)  
+ [Position a Custom Context Menu in a RichTextBox](how-to-position-a-custom-context-menu-in-a-richtextbox.md)  
   
 ## See also
+
 - <xref:System.Windows.Controls.TextBox>
-- [Documents in WPF](../../../../docs/framework/wpf/advanced/documents-in-wpf.md)
-- [Flow Document Overview](../../../../docs/framework/wpf/advanced/flow-document-overview.md)
+- [Documents in WPF](../advanced/documents-in-wpf.md)
+- [Flow Document Overview](../advanced/flow-document-overview.md)

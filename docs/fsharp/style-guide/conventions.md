@@ -53,7 +53,6 @@ module MyAPI =
         let helper1 x y z =
             ...
 
-
     let myFunction1 x =
         let y = ...
         let z = ...
@@ -373,7 +372,7 @@ type Transactor(ctx, currentBalance) =
         ...
 ```
 
-Unit testing `Transactions.doTransaction` in `ImplementationLogic.Tests.fspoj` is easy:
+Unit testing `Transactions.doTransaction` in `ImplementationLogic.Tests.fsproj` is easy:
 
 ```fsharp
 namespace TransactionsTestingUtil
@@ -606,7 +605,7 @@ Because there is no need for a class when interacting with the Visual Studio Cod
 
 ## Type Abbreviations
 
-[Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to assign a label to another type, such as a function signature or a more complex type. For example, the following alias assigns a label to what's needed to define a computation with [CNTK](https://www.microsoft.com/en-us/cognitive-toolkit/), a deep learning library:
+[Type Abbreviations](../language-reference/type-abbreviations.md) are a convenient way to assign a label to another type, such as a function signature or a more complex type. For example, the following alias assigns a label to what's needed to define a computation with [CNTK](https://docs.microsoft.com/cognitive-toolkit/), a deep learning library:
 
 ```fsharp
 open CNTK

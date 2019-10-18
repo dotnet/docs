@@ -11,11 +11,11 @@ The layout of WPF controls can change slightly.
 ## Impact  
  As a result of this change:  
   
--   The width or height of elements may grow or shrink by at most one pixel.  
+- The width or height of elements may grow or shrink by at most one pixel.  
   
--   The placement of an object can move by at most one pixel.  
+- The placement of an object can move by at most one pixel.  
   
--   Centered elements can be vertically or horizontally off center by at most one pixel.  
+- Centered elements can be vertically or horizontally off center by at most one pixel.  
   
  By default, this new layout is enabled only for apps that target the .NET Framework 4.6.  
   
@@ -33,4 +33,5 @@ The layout of WPF controls can change slightly.
 ```  
   
 ## See also
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)
+
+- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6.md)

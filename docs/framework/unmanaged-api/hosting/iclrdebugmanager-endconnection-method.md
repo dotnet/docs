@@ -23,13 +23,13 @@ Removes the association between a list of tasks and an identifier and a friendly
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndConnection (  
     [in] CONNID dwConnectionId  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwConnectionId`  
  [in] The host-specific identifier for the connection and the associated list of common language runtime (CLR) tasks.  
   
@@ -49,7 +49,7 @@ HRESULT EndConnection (
  [ICLRDebugManager](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md) provides three methods, `BeginConnection`, [SetConnectionTasks](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setconnectiontasks-method.md), and `EndConnection`, for associating task lists with identifiers and friendly names.  
   
 > [!IMPORTANT]
->  These three methods must be called in a specific order for each set of tasks. `BeginConnection` is called first to establish a new connection. `SetConnectionTasks` is called next to provide the set of tasks to be associated with that connection. `EndConnection` is called last to remove the association between the task list and the identifier and friendly name.However, calls for different connections can be nested.  
+> These three methods must be called in a specific order for each set of tasks. `BeginConnection` is called first to establish a new connection. `SetConnectionTasks` is called next to provide the set of tasks to be associated with that connection. `EndConnection` is called last to remove the association between the task list and the identifier and friendly name.However, calls for different connections can be nested.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -61,6 +61,7 @@ HRESULT EndConnection (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
 - [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
 - [BeginConnection Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-beginconnection-method.md)

@@ -35,25 +35,25 @@ and can be referenced from projects targeting .NET Core or .NET Standard.
 It provides about 20,000 APIs, including Windows-only as well as cross-platform
 APIs from the following technology areas:
 
-* Code Pages
-* CodeDom
-* Configuration
-* Directory Services
-* Drawing
-* ODBC
-* Permissions
-* Ports
-* Windows Access Control Lists (ACL)
-* Windows Communication Foundation (WCF)
-* Windows Cryptography
-* Windows EventLog
-* Windows Management Instrumentation (WMI)
-* Windows Performance Counters
-* Windows Registry
-* Windows Runtime Caching
-* Windows Services
+- Code Pages
+- CodeDom
+- Configuration
+- Directory Services
+- Drawing
+- ODBC
+- Permissions
+- Ports
+- Windows Access Control Lists (ACL)
+- Windows Communication Foundation (WCF)
+- Windows Cryptography
+- Windows EventLog
+- Windows Management Instrumentation (WMI)
+- Windows Performance Counters
+- Windows Registry
+- Windows Runtime Caching
+- Windows Services
 
-For more information, see the [spec of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/compat-pack/compat-pack.md).
+For more information, see the [specification of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/compat-pack/compat-pack.md).
 
 ## Get started
 
@@ -65,7 +65,7 @@ For more information, see the [spec of the compatibility pack](https://github.co
 3. If you want to stay on Windows, you're all set.
 
 4. If you want to run the .NET Core application or .NET Standard library on
-   Linux or macOS, use the [API Analyzer](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/)
+   Linux or macOS, use the [API Analyzer](../../standard/analyzers/api-analyzer.md)
    to find usage of APIs that won't work cross-platform.
 
 5. Either remove the usages of those APIs, replace them with cross-platform

@@ -23,13 +23,13 @@ Gets an enumerator for the modules contained in the `ICorDebugAssembly`.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateModules (  
     [out] ICorDebugModuleEnum **ppModules  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppModules`  
  [out] A pointer to the address of the ICorDebugModuleEnum interface that is the enumerator.  
   

@@ -23,7 +23,7 @@ Gets the value of an argument or local variable that is stored in the specified 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalMemoryValue (  
     [in]  CORDB_ADDRESS      address,  
     [in]  ULONG              cbSigBlob,  
@@ -32,7 +32,7 @@ HRESULT GetLocalMemoryValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the memory location containing the value.  
   
@@ -55,4 +55,3 @@ HRESULT GetLocalMemoryValue (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-

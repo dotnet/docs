@@ -8,16 +8,16 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
 |Specification/Document|Version|Link|  
 |-----------------------------|-------------|----------|  
-|WS-Coordination|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96104](https://go.microsoft.com/fwlink/?LinkId=96104)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
-|WS-AtomicTransaction|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> https://go.microsoft.com/fwlink/?LinkId=96081|  
+|WS-Coordination|1.0<br /><br /> 1.1|<https://go.microsoft.com/fwlink/?LinkId=96104><br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
+|WS-AtomicTransaction|1.0<br /><br /> 1.1|<https://go.microsoft.com/fwlink/?LinkId=96080><br /><br /> https://go.microsoft.com/fwlink/?LinkId=96081|  
   
  Interoperability on these protocol specifications is required at two levels: between applications and between transaction managers (see the following figure). Specifications describe in great detail the message formats and message exchange for both interoperability levels. Certain security, reliability, and encodings for application-to-application exchange apply as they do for regular application exchange. However, successful interoperability between transaction managers requires agreement on the particular binding, because it is usually not configured by the user.  
   
  This topic describes a composition of the WS-Atomic Transaction (WS-AT) specification with security and describes the secure binding used for communication between transaction managers. The approach described in this document has been successfully tested with other implementations of WS-AT and WS-Coordination including IBM, IONA, Sun Microsystems, and others.  
   
- The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2.  
+ The following figure depicts the interoperability between two transaction managers, Transaction Manager 1 and Transaction Manager 2, and two applications, Application 1 and Application 2:  
   
- ![Transaction Protocols](../../../../docs/framework/wcf/feature-details/media/transactionmanagers.gif "TransactionManagers")  
+ ![Screenshot that shows interaction between transaction managers.](./media/transaction-protocols/transaction-managers-flow.gif)  
   
  Consider a typical WS-Coordination/WS-Atomic Transaction scenario with one Initiator (I) and one Participant (P). Both Initiator and Participant have Transaction Managers, (ITM and PTM, respectively). Two-phase commit is referred to as 2PC in this topic.  
   
@@ -39,13 +39,13 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
  The figure and table illustrate four classes of messages from the viewpoint of security:  
   
--   Activation messages (CreateCoordinationContext and CreateCoordinationContextResponse).  
+- Activation messages (CreateCoordinationContext and CreateCoordinationContextResponse).  
   
--   Registration messages (Register and RegisterResponse)  
+- Registration messages (Register and RegisterResponse)  
   
--   Protocol messages (Prepare, Rollback, Commit, Aborted, and so on).  
+- Protocol messages (Prepare, Rollback, Commit, Aborted, and so on).  
   
--   Application messages.  
+- Application messages.  
   
  The first three message classes are considered Transaction Manager messages and their binding configuration is described in the "Application Message Exchange" later in this topic. The fourth class of message is application to application messages and is described in the "Message Examples" section later in this topic. This section describes the protocol bindings used for each of these classes by WCF.  
   
@@ -53,13 +53,13 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
 |Prefix|Version|Namespace URI|  
 |------------|-------------|-------------------|  
-|s11||[https://go.microsoft.com/fwlink/?LinkId=96014](https://go.microsoft.com/fwlink/?LinkId=96014)|  
-|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96022](https://go.microsoft.com/fwlink/?LinkId=96022)|  
-|wscoor|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96078](https://go.microsoft.com/fwlink/?LinkId=96078)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
-|wsat|1.0<br /><br /> 1.1|[https://go.microsoft.com/fwlink/?LinkId=96080](https://go.microsoft.com/fwlink/?LinkId=96080)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081)|  
-|t|Pre-1.3<br /><br /> 1.3|[https://go.microsoft.com/fwlink/?LinkId=96082](https://go.microsoft.com/fwlink/?LinkId=96082)<br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100)|  
-|o||[https://go.microsoft.com/fwlink/?LinkId=96101](https://go.microsoft.com/fwlink/?LinkId=96101)|  
-|xsd||[https://go.microsoft.com/fwlink/?LinkId=96102](https://go.microsoft.com/fwlink/?LinkId=96102)|  
+|s11||<https://go.microsoft.com/fwlink/?LinkId=96014>|  
+|wsa|Pre-1.0<br /><br /> 1.0|http://www.w3.org/2004/08/addressing<br /><br /> <https://go.microsoft.com/fwlink/?LinkId=96022>|  
+|wscoor|1.0<br /><br /> 1.1|<https://go.microsoft.com/fwlink/?LinkId=96078><br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96079](https://go.microsoft.com/fwlink/?LinkId=96079)|  
+|wsat|1.0<br /><br /> 1.1|<https://go.microsoft.com/fwlink/?LinkId=96080><br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96081](https://go.microsoft.com/fwlink/?LinkId=96081)|  
+|t|Pre-1.3<br /><br /> 1.3|<https://go.microsoft.com/fwlink/?LinkId=96082><br /><br /> [https://go.microsoft.com/fwlink/?LinkId=96100](https://go.microsoft.com/fwlink/?LinkId=96100)|  
+|o||<https://go.microsoft.com/fwlink/?LinkId=96101>|  
+|xsd||<https://go.microsoft.com/fwlink/?LinkId=96102>|  
   
 ## Transaction Manager Bindings  
  R1001: Transaction Managers participating in a WS-AT 1.0 transaction must use SOAP 1.1 and WS-Addressing 2004/08 for WS-Atomic Transaction and WS-Coordination message exchanges.  
@@ -74,9 +74,9 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 #### HTTPS Transport Configuration  
  X.509 certificates are used to establish Transaction Manager Identity. Client/server authentication is required, and client/server authorization is left as an implementation detail:  
   
--   R1111: X.509 certificates presented over the wire must have a subject name that matches the fully qualified domain name (FQDN) of the originating machine.  
+- R1111: X.509 certificates presented over the wire must have a subject name that matches the fully qualified domain name (FQDN) of the originating machine.  
   
--   B1112: DNS must be functional between each sender-receiver pair in the system for X.509 subject name checks to succeed.  
+- B1112: DNS must be functional between each sender-receiver pair in the system for X.509 subject name checks to succeed.  
   
 #### Activation and Registration Binding Configuration  
  WCF requires request/reply duplex binding with correlation over HTTPS. (For more information about correlation and descriptions of the request/reply message exchange patterns, see WS-Atomic Transaction, Section 8.)  
@@ -99,9 +99,9 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
   
  WS-Atomic Transaction specification, Section 8, describes further details about correlation and the message exchange patterns.  
   
--   R1222: Upon receiving a `CreateCoordinationContext`, the Coordinator must issue a `SecurityContextToken` with associated secret `STx`. This token is returned inside a `t:IssuedTokens` header following WS-Trust specification.  
+- R1222: Upon receiving a `CreateCoordinationContext`, the Coordinator must issue a `SecurityContextToken` with associated secret `STx`. This token is returned inside a `t:IssuedTokens` header following WS-Trust specification.  
   
--   R1223: If Activation occurs within an existing Coordination Context, the `t:IssuedTokens` header with the `SecurityContextToken` associated with existing Context must flow on the `CreateCoordinationContext` message.  
+- R1223: If Activation occurs within an existing Coordination Context, the `t:IssuedTokens` header with the `SecurityContextToken` associated with existing Context must flow on the `CreateCoordinationContext` message.  
   
  A new `t:IssuedTokens` header should be generated for attaching to the outgoing `wscoor:CreateCoordinationContextResponse` message.  
   
@@ -122,9 +122,9 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 ## Application Message Exchange  
  Applications are free to use any particular binding for application-to-application messages, as long as the binding meets the following security requirements:  
   
--   R2001: Application-to-application messages must flow the `t:IssuedTokens` header along with the `CoordinationContext` in the header of the message.  
+- R2001: Application-to-application messages must flow the `t:IssuedTokens` header along with the `CoordinationContext` in the header of the message.  
   
--   R2002: Integrity and confidentiality of `t:IssuedToken` must be provided.  
+- R2002: Integrity and confidentiality of `t:IssuedToken` must be provided.  
   
  The `CoordinationContext` header contains `wscoor:Identifier`. While the definition of `xsd:AnyURI` allows the use of both absolute and relative URIs, WCF supports only `wscoor:Identifiers`, which are absolute URIs.  
   

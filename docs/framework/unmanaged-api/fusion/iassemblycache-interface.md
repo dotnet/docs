@@ -24,19 +24,20 @@ Represents the global assembly cache for use by the fusion technology.
   
 |Method|Description|  
 |------------|-----------------|  
-|[CreateAssemblyCacheItem Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-createassemblycacheitem-method.md)|Gets a reference to a new [IAssemblyCacheItem](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-interface.md).|  
-|[CreateAssemblyScavenger Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-createassemblyscavenger-method.md)|Reserved for internal use by the fusion technology.|  
-|[InstallAssembly Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-installassembly-method.md)|Installs the specified assembly in the global assembly cache.|  
-|[QueryAssemblyInfo Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-queryassemblyinfo-method.md)|Gets the requested data about the specified assembly.|  
-|[UninstallAssembly Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-uninstallassembly-method.md)|Uninstalls the specified assembly from the global assembly cache.|  
+|[CreateAssemblyCacheItem Method](iassemblycache-createassemblycacheitem-method.md)|Gets a reference to a new [IAssemblyCacheItem](iassemblycacheitem-interface.md).|  
+|[CreateAssemblyScavenger Method](iassemblycache-createassemblyscavenger-method.md)|Reserved for internal use by the fusion technology.|  
+|[InstallAssembly Method](iassemblycache-installassembly-method.md)|Installs the specified assembly in the global assembly cache.|  
+|[QueryAssemblyInfo Method](iassemblycache-queryassemblyinfo-method.md)|Gets the requested data about the specified assembly.|  
+|[UninstallAssembly Method](iassemblycache-uninstallassembly-method.md)|Uninstalls the specified assembly from the global assembly cache.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
-- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)
+
+- [Fusion Interfaces](fusion-interfaces.md)
+- [Global Assembly Cache](../../app-domains/gac.md)

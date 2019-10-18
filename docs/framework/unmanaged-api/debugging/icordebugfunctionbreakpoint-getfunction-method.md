@@ -23,13 +23,13 @@ Gets an interface pointer to an ICorDebugFunction that references the function i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunction (  
     [out] ICorDebugFunction  **ppFunction  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFunction`  
  [out] A pointer to the address of the function in which the breakpoint is set.  
   

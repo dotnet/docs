@@ -1,5 +1,5 @@
 ---
-title: "AddFile Method1"
+title: "AddFile Method"
 ms.date: "03/30/2017"
 api_name: 
   - "IALink.AddFile"
@@ -18,12 +18,12 @@ topic_type:
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# AddFile Method1
+# AddFile Method
 Adds files to the assembly. Can also be used to create unbound modules.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddFile(  
     mdAssembly      AssemblyID,  
     LPCWSTR         pszFilename,  
@@ -33,7 +33,7 @@ HRESULT AddFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of the assembly to be augmented.  
   
@@ -41,10 +41,10 @@ HRESULT AddFile(
  Fully qualified name of file to be added.  
   
  `dwFlags`  
- COM+ FileDef flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md).  
+ COM+ FileDef flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../metadata/imetadataassemblyemit-definefile-method.md).  
   
  `pEmitter`  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md) interface to be used to emit metadata, if necessary.  
+ [IMetaDataEmit Interface](../metadata/imetadataemit-interface.md) interface to be used to emit metadata, if necessary.  
   
  `pFileToken`  
  Pointer to where the unique ID of the added file will be stored.  
@@ -56,6 +56,7 @@ HRESULT AddFile(
  Requires alink.h.  
   
 ## See also
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugArrayValue Interface1"
+title: "ICorDebugArrayValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugArrayValue"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugArrayValue Interface1
+# ICorDebugArrayValue Interface
+
 A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-dimensional array.  
   
 ## Methods  
@@ -37,7 +38,7 @@ A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-d
  `ICorDebugArrayValue` supports both single-dimensional and multi-dimensional arrays.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -49,4 +50,5 @@ A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-d
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

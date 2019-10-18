@@ -10,20 +10,20 @@ Gets the size of the memory buffer in bytes.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize(  
    [out] ULONG32 *pcbBufferLength  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbBufferLength`  
  [out] A pointer to the size of the memory buffer.  
   
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -35,5 +35,6 @@ HRESULT GetSize(
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
 ## See also
+
 - [ICorDebugMemoryBuffer Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

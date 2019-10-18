@@ -46,17 +46,6 @@ Although the TPL Dataflow Library provides several dataflow block types that ena
  [!code-csharp[TPLDataflow_SlidingWindowBlock#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_slidingwindowblock/cs/slidingwindowblock.cs#100)]
  [!code-vb[TPLDataflow_SlidingWindowBlock#100](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_slidingwindowblock/vb/slidingwindowblock.vb#100)]  
   
-## Compiling the Code  
- Copy the example code and paste it in a Visual Studio project, or paste it in a file that is named `SlidingWindowBlock.cs` (`SlidingWindowBlock.vb` for Visual Basic) and then run the following command in a Developer Command Prompt for Visual Studio window.  
-  
- Visual C#  
-  
- **csc.exe /r:System.Threading.Tasks.Dataflow.dll SlidingWindowBlock.cs**  
-  
- Visual Basic  
-  
- **vbc.exe /r:System.Threading.Tasks.Dataflow.dll SlidingWindowBlock.vb**  
-
 ## See also
 
 - [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

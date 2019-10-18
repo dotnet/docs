@@ -24,15 +24,15 @@ Releases the resources used by internal iterators used during instance enumerati
 
 ## Syntax
 
-```
+```cpp
 HRESULT EndEnumMethodInstancesByAddress(
     [in] CLRDATA_ENUM handle
 );
 ```
 
-### Parameters
+## Parameters
 
-`handle`
+`handle`\
 [out] A handle for enumerating the method instances.
 
 ## Remarks
@@ -48,6 +48,6 @@ The provided method is part of the `IXCLRDataProcess` interface and corresponds 
 
 ## See also
 
-- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataProcess Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-interface.md)
+- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
+- [Debugging](index.md)
+- [IXCLRDataProcess Interface](ixclrdataprocess-interface.md)

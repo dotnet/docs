@@ -22,11 +22,12 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 ID="1243"  
 Type="int"  
 ConvertableTo="double"  
 ```  
   
 ## See also
+
 - [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)

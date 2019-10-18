@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 056aee79-7cdd-434f-8174-dfc856cad343
 ---
 # x:Static Markup Extension
-References any static by-value code entity that is defined in a [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)]–compliant way. The static property that is referenced can be used to provide the value of a property in XAML.  
+References any static by-value code entity that is defined in a Common Language Specification (CLS)–compliant way. The static property that is referenced can be used to provide the value of a property in XAML.  
   
 ## XAML Attribute Usage  
   
@@ -32,10 +32,10 @@ References any static by-value code entity that is defined in a [!INCLUDE[TLA#tl
 
 The code entity that is referenced must be one of the following:  
   
--   A constant  
--   A static property  
--   A field  
--   An enumeration value
+- A constant  
+- A static property  
+- A field  
+- An enumeration value
 
 Specifying any other code entity, such as a nonstatic property, causes a compile-time error if the XAML is markup compiled, or a XAML load-time parse exception.  
 
@@ -49,13 +49,13 @@ Attribute syntax is the most common syntax used with this markup extension. The 
 
 There are two other XAML usages that are technically possible. However, these usages are less common because they are unnecessarily verbose:  
 
-1.  Object element syntax.
+1. Object element syntax.
 
     ```xaml
     <x:Static Member="prefix:typeName.staticMemberName" ... />
     ```
 
-2.  Attribute syntax with explicit Member property for initialization string.
+2. Attribute syntax with explicit Member property for initialization string.
 
     ```xaml
     <object property="{x:Static Member=prefix:typeName.staticMemberName}" ... />
@@ -63,19 +63,20 @@ There are two other XAML usages that are technically possible. However, these us
 
 In the .NET Framework XAML Services implementation, the handling for this markup extension is defined by the <xref:System.Windows.Markup.StaticExtension> class.  
 
-`x:Static` is a markup extension. All markup extensions in XAML use the `{` and `}` characters in their attribute syntax, which is the convention by which a XAML processor recognizes that a markup extension must provide a value. For more information about markup extensions, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+`x:Static` is a markup extension. All markup extensions in XAML use the `{` and `}` characters in their attribute syntax, which is the convention by which a XAML processor recognizes that a markup extension must provide a value. For more information about markup extensions, see [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md).  
   
 ## WPF Usage Notes  
  The default XAML namespace you use for WPF programming does not contain many useful static properties, and most of the useful static properties have support such as type converters that facilitate the usage without requiring `{x:Static}` . For static properties, you must map a prefix for a XAML namespace if one of the following is true:  
   
--   You are referencing a type that exists in WPF but is not part of the default XAML namespace for WPF ([!INCLUDE[TLA#tla_wpfxmlnsv1](../../../includes/tlasharptla-wpfxmlnsv1-md.md)]). This is a fairly common scenario for using `x:Static`. For example, you might use an `x:Static` reference with a XAML namespace mapping to the <xref:System> CLR namespace and mscorlib assembly in order to reference the static properties of the <xref:System.Environment> class.  
+- You are referencing a type that exists in WPF but is not part of the default XAML namespace for WPF ([!INCLUDE[TLA#tla_wpfxmlnsv1](../../../includes/tlasharptla-wpfxmlnsv1-md.md)]). This is a fairly common scenario for using `x:Static`. For example, you might use an `x:Static` reference with a XAML namespace mapping to the <xref:System> CLR namespace and mscorlib assembly in order to reference the static properties of the <xref:System.Environment> class.  
   
--   You are referencing a type from a custom assembly.  
+- You are referencing a type from a custom assembly.  
   
--   You are referencing a type that exists in a WPF assembly, but that type is within a CLR namespace that was not mapped to be part of the WPF default XAML namespace. The mapping of CLR namespaces into the default XAML namespace for WPF is performed by definitions in the various WPF assemblies (for more information about this concept, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)). Non-mapped CLR namespaces can exist if that CLR namespace is composed mostly of class definitions that are not typically intended for XAML, such as <xref:System.Windows.Threading>.  
+- You are referencing a type that exists in a WPF assembly, but that type is within a CLR namespace that was not mapped to be part of the WPF default XAML namespace. The mapping of CLR namespaces into the default XAML namespace for WPF is performed by definitions in the various WPF assemblies (for more information about this concept, see [XAML Namespaces and Namespace Mapping for WPF XAML](../wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)). Non-mapped CLR namespaces can exist if that CLR namespace is composed mostly of class definitions that are not typically intended for XAML, such as <xref:System.Windows.Threading>.  
   
- For more information on how to use prefixes and XAML namespaces for WPF, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../../docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+ For more information on how to use prefixes and XAML namespaces for WPF, see [XAML Namespaces and Namespace Mapping for WPF XAML](../wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 ## See also
-- [x:Type Markup Extension](../../../docs/framework/xaml-services/x-type-markup-extension.md)
-- [Types Migrated from WPF to System.Xaml](../../../docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md)
+
+- [x:Type Markup Extension](x-type-markup-extension.md)
+- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)

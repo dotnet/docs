@@ -8,9 +8,10 @@ An attempt has been made to read from a file, but the specified encoding is not 
   
 ## To correct this error  
   
--   Check to make sure you are supplying the correct file encoding.  
+- Check to make sure you are supplying the correct file encoding.  
   
 ## See also
+
 - [My.Computer.FileSystem.ReadAllText](xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A)
 - [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
 - [File Encodings](../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)

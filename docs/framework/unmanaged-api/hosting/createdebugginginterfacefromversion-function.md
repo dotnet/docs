@@ -21,11 +21,11 @@ ms.author: "ronpet"
 # CreateDebuggingInterfaceFromVersion Function
 Creates an [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) object based on the specified version information.  
   
- This function is obsolete in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. Instead, to get an interface for the common language runtime (CLR) 2.0, use the [ICLRRuntimeInfo::GetInterface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-getinterface-method.md) method and specify the class identifier CLSID_CLRDebuggingLegacy and the interface identifier IID_ICorDebug. To get an interface for CLR 4 or later, call the [CLRCreateInstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md) function and specify the class identifier CLSID_CLRDebugging and the interface identifier IID_ICLRDebugging.  
+ This function is obsolete in the .NET Framework 4. Instead, to get an interface for the common language runtime (CLR) 2.0, use the [ICLRRuntimeInfo::GetInterface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-getinterface-method.md) method and specify the class identifier CLSID_CLRDebuggingLegacy and the interface identifier IID_ICorDebug. To get an interface for CLR 4 or later, call the [CLRCreateInstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md) function and specify the class identifier CLSID_CLRDebugging and the interface identifier IID_ICLRDebugging.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDebuggingInterfaceFromVersion (  
     [in]  int      iDebuggerVersion,   
     [in]  LPCWSTR  szDebuggeeVersion,   
@@ -33,7 +33,7 @@ HRESULT CreateDebuggingInterfaceFromVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `iDebuggerVersion`  
  [in] The version of `ICorDebug` that is expected by the debugger. See the [CorDebugInterfaceVersion](../../../../docs/framework/unmanaged-api/debugging/cordebuginterfaceversion-enumeration.md) enumeration for valid values.  
   
@@ -64,4 +64,5 @@ HRESULT CreateDebuggingInterfaceFromVersion (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

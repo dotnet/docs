@@ -23,13 +23,13 @@ Provides the host with an opportunity to initialize any custom data to append to
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitializeHostOverlapped (  
     [in] void* pvOverlapped  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pvOverlapped`  
  [in] A pointer to the Win32 `OVERLAPPED` structure to be included with the I/O request.  
   
@@ -49,7 +49,7 @@ HRESULT InitializeHostOverlapped (
  The Windows Platform functions use the `OVERLAPPED` structure to store state for asynchronous I/O requests. The CLR calls the `InitializeHostOverlapped` method to give the host the opportunity to append custom data to an `OVERLAPPED` instance.  
   
 > [!IMPORTANT]
->  To get to the beginning of their custom data block, hosts must set the offset to the size of the `OVERLAPPED` structure (`sizeof(OVERLAPPED)`).  
+> To get to the beginning of their custom data block, hosts must set the offset to the size of the `OVERLAPPED` structure (`sizeof(OVERLAPPED)`).  
   
  A return value of E_OUTOFMEMORY indicates that the host has failed to initialize its custom data. In this case, the CLR reports an error and fails the call.  
   
@@ -63,6 +63,7 @@ HRESULT InitializeHostOverlapped (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)
 - [GetHostOverlappedSize Method](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-gethostoverlappedsize-method.md)
 - [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)

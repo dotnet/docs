@@ -24,7 +24,7 @@ Retrieves either a subset or all of the names of the properties of an object.
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNames (
    [in] int                 vFunc, 
    [in] IWbemClassObject*   ptr, 
@@ -74,7 +74,6 @@ The named returned are controlled by a combination of flags and parameters. For 
 
 The flag values in `lFlags` are bit fields
 
-
 The flags that can be passed as the `lEnumFlags` argument are bit fields that are defined in the *WbemCli.h* header file, or you can define them as constants in your code.  You can combine one flag from each group with any flag from any other group. However, flags from the same group are mutually exclusive. 
 
 | Group 1 flags |Value  |Description  |
@@ -99,11 +98,12 @@ The flags that can be passed as the `lEnumFlags` argument are bit fields that ar
 The function always allocates a new `SAFEARRAY` if it returns `WBEM_S_NO_ERROR`, and `pstrNames` is always set to point to it. The returned array can have 0 elements if no properties match the specified filters. If the function returns an value other than `WBM_S_NO_ERROR`, a new `SAFEARRAY` structure is not returned.
  
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
 ## See also
+
 - [WMI and Performance Counters (Unmanaged API Reference)](index.md)

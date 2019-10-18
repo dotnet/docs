@@ -15,7 +15,7 @@ Indicates that text within a description is code.
 <c>text</c>  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---|---|  
@@ -24,12 +24,13 @@ Indicates that text within a description is code.
 ## Remarks  
  The `<c>` tag gives you a way to indicate that text within a description should be marked as code. Use [\<code>](../../../visual-basic/language-reference/xmldoc/code.md) to indicate multiple lines as code.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<c>` tag in the summary section to indicate that `Counter` is code.  
   
- [!code-vb[VbVbcnXmlDocComments#1](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/c_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  
   
 ## See also
+
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)

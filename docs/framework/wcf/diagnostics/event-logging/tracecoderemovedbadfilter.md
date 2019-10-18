@@ -14,5 +14,6 @@ Id: 114
  This event indicates a bad message logging filter that was accessing the message body was removed. The event lists the XPath, process name and process ID.  
   
 ## See also
-- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)
-- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+
+- [Event Logging](index.md)
+- [Events General Reference](events-general-reference.md)

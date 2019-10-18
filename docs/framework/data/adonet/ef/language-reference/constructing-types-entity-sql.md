@@ -11,15 +11,15 @@ ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
   
  `ROW(1 AS a, "abc" AS b, a + 34 AS c)`  
   
- If you do not provide an alias for an expression in a row constructor, the Entity Framework will try to generate one. For more information, see the "Aliasing Rules" section in [Identifiers](../../../../../../docs/framework/data/adonet/ef/language-reference/identifiers-entity-sql.md).  
+ If you do not provide an alias for an expression in a row constructor, the Entity Framework will try to generate one. For more information, see the "Aliasing Rules" section in [Identifiers](identifiers-entity-sql.md).  
   
  The following rules apply to expression aliasing in a row constructor:  
   
--   Expressions in a row constructor cannot refer to other aliases in the same constructor.  
+- Expressions in a row constructor cannot refer to other aliases in the same constructor.  
   
--   Two expressions in the same row constructor cannot have the same alias.  
+- Two expressions in the same row constructor cannot have the same alias.  
   
- For more information about row constructors, see [ROW](../../../../../../docs/framework/data/adonet/ef/language-reference/row-entity-sql.md).  
+ For more information about row constructors, see [ROW](row-entity-sql.md).  
   
 ## Collection Constructors  
  You use collection constructors in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to create an instance of a multiset from a list of values. All the values in the constructor must be of mutually compatible type `T`, and the constructor produces a collection of type `Multiset<T>`. For example, the following expression creates a collection of integers:  
@@ -32,7 +32,7 @@ ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
   
  `multiset() {}`  
   
- For more information, see [MULTISET](../../../../../../docs/framework/data/adonet/ef/language-reference/multiset-entity-sql.md).  
+ For more information, see [MULTISET](multiset-entity-sql.md).  
   
 ## Named Type Constructors (NamedType Initializers)  
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] allows type constructors (initializers) to create instances of named complex types and entity types. For example, the following expression creates an instance of a `Person` type.  
@@ -55,9 +55,10 @@ ms.assetid: 41fa7bde-8d20-4a3f-a3d2-fb791e128010
   
  The arguments to the constructor are assumed to be in the same order as the declaration of the attributes of the type.  
   
- For more information, see [Named Type Constructor](../../../../../../docs/framework/data/adonet/ef/language-reference/named-type-constructor-entity-sql.md).  
+ For more information, see [Named Type Constructor](named-type-constructor-entity-sql.md).  
   
 ## See also
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
-- [Type System](../../../../../../docs/framework/data/adonet/ef/language-reference/type-system-entity-sql.md)
+
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Entity SQL Overview](entity-sql-overview.md)
+- [Type System](type-system-entity-sql.md)

@@ -18,9 +18,10 @@ ms.assetid: 13d291d3-e6bc-4719-b953-758b61a590b6
   
  Keywords, expressions, and punctuation can be any UTF-16 character that normalizes to Latin. For example, SELECT in a Japanese codepage is a valid keyword.  
   
- Keywords, expressions, and punctuation can only be Latin characters. `SELECT` in a Japanese codepage is not a keyword. +, -, *, /, =, (, ), ‘, [, ] and any other language construct not quoted here can only be Latin characters.  
+ Keywords, expressions, and punctuation can only be Latin characters. `SELECT` in a Japanese codepage is not a keyword. +, -, \*, /, =, (, ), ‘, [, ] and any other language construct not quoted here can only be Latin characters.  
   
- Simple identifiers can only be Latin characters. This avoids ambiguity during comparison, because original values are compared. For example, ABC would be different in in Japanese and Latin codepages.  
+ Simple identifiers can only be Latin characters. This avoids ambiguity during comparison, because original values are compared. For example, ABC would be different in Japanese and Latin codepages.  
   
 ## See also
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+
+- [Entity SQL Overview](entity-sql-overview.md)

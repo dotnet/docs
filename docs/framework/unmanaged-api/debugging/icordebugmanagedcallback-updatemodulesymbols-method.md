@@ -23,7 +23,7 @@ Notifies the debugger that the symbols for a common language runtime module have
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateModuleSymbols (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugModule    *pModule,  
@@ -31,7 +31,7 @@ HRESULT UpdateModuleSymbols (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain containing the module in which the symbols have changed.  
   
@@ -58,4 +58,5 @@ HRESULT UpdateModuleSymbols (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

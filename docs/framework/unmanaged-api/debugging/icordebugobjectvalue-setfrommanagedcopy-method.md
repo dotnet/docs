@@ -23,7 +23,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFromManagedCopy (  
     [in] IUnknown            *pObject  
 );  
@@ -33,5 +33,3 @@ HRESULT SetFromManagedCopy (
  **Header:** CorDebug.idl, CorDebug.h  
   
 ## See also
-
-

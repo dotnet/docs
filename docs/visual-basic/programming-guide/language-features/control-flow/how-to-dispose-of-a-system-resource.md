@@ -16,13 +16,13 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
   
 ### To dispose of a database connection when your code is finished with it  
   
-1.  Make sure you include the appropriate [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) for the database connection at the beginning of your source file (in this case, <xref:System.Data.SqlClient>).  
+1. Make sure you include the appropriate [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) for the database connection at the beginning of your source file (in this case, <xref:System.Data.SqlClient>).  
   
-2.  Create a `Using` block with the `Using` and `End Using` statements. Inside the block, put the code that deals with the database connection.  
+2. Create a `Using` block with the `Using` and `End Using` statements. Inside the block, put the code that deals with the database connection.  
   
-3.  Declare the connection and create an instance of it as part of the `Using` statement.  
+3. Declare the connection and create an instance of it as part of the `Using` statement.  
   
-    ```  
+    ```vb  
     ' Insert the following line at the beginning of your source file.  
     Imports System.Data.SqlClient  
     Public Sub AccessSql(ByVal s As String)  
@@ -39,6 +39,7 @@ You can use a `Using` block to guarantee that the system disposes of a resource 
      You can use this same technique on a system resource such as a file handle or a COM wrapper. You use a `Using` block when you want to be sure to leave the resource available for other components after you have exited the `Using` block.  
   
 ## See also
+
 - <xref:System.Data.SqlClient.SqlConnection>
 - [Control Flow](../../../../visual-basic/programming-guide/language-features/control-flow/index.md)
 - [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)

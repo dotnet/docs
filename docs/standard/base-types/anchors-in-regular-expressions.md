@@ -40,9 +40,9 @@ ms.custom: seodec18
   
  The following example uses the `^` anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The example calls two overloads of the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method:  
   
--   The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29> overload finds only the first substring in the input string that matches the regular expression pattern.  
+- The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29> overload finds only the first substring in the input string that matches the regular expression pattern.  
   
--   The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> overload with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> finds all five substrings.  
+- The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> overload with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> finds all five substrings.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/startofstring1.cs#1)]
  [!code-vb[Conceptual.RegEx.Language.Assertions#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/startofstring1.vb#1)]  
@@ -52,7 +52,7 @@ ms.custom: seodec18
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Begin the match at the beginning of the input string (or the beginning of the line if the method is called with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> option).|  
-|`((\w+(\s?)){2,}`|Match one or more word characters followed either by zero or by one space exactly two times. This is the first capturing group. This expression also defines a second and third capturing group: The second consists of the captured word, and the third consists of the captured spaces.|  
+|`((\w+(\s?)){2,}`|Match one or more word characters followed either by zero or by one space at least two times. This is the first capturing group. This expression also defines a second and third capturing group: The second consists of the captured word, and the third consists of the captured white space.|  
 |`,\s`|Match a comma followed by a white-space character.|  
 |`(\w+\s\w+)`|Match one or more word characters followed by a space, followed by one or more word characters. This is the fourth capturing group.|  
 |`,`|Match a comma.|  

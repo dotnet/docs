@@ -6,10 +6,10 @@ ms.assetid: 62f121fd-3f2e-4033-bb39-48ae996bfbd9
 # \<httpListener> Element (Network Settings)
 Customizes parameters used by the <xref:System.Net.HttpListener> class.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<httpListener>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<httpListener>**  
   
 ## Syntax  
   
@@ -37,7 +37,7 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+|[settings](settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
   
 ## Remarks  
  The **unescapeRequestUrl** attribute indicates if <xref:System.Net.HttpListener> uses the raw unescaped URI instead of the converted URI where any percent-encoded values are converted and other normalization steps are taken.  
@@ -46,9 +46,9 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
   
  The `http.sys` service exposes two request URI strings:  
   
--   Raw URI  
+- Raw URI  
   
--   Converted URI  
+- Converted URI  
   
  The raw URI is the <xref:System.Uri?displayProperty=nameWithType> provided in the request line of a HTTP request:  
   
@@ -66,11 +66,11 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
   
  The `http.sys` service combines the <xref:System.Uri.Host%2A?displayProperty=nameWithType> property value and the string in the request line to create a converted URI. In addition, `http.sys` and the <xref:System.Uri?displayProperty=nameWithType> class also does the following:  
   
--   Un-escapes all percent encoded values.  
+- Un-escapes all percent encoded values.  
   
--   Converts percent-encoded non-ASCII characters into a UTF-16 character representation. Note that UTF-8 and ANSI/DBCS characters are supported as well as Unicode characters (Unicode encoding using the %uXXXX format).  
+- Converts percent-encoded non-ASCII characters into a UTF-16 character representation. Note that UTF-8 and ANSI/DBCS characters are supported as well as Unicode characters (Unicode encoding using the %uXXXX format).  
   
--   Executes other normalization steps, like path compression.  
+- Executes other normalization steps, like path compression.  
   
  Since the request doesn't contain any information about the encoding used for percent-encoded values, it may not be possible to determine the correct encoding just by parsing the percent-encoded values.  
   
@@ -132,7 +132,8 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 |Can be Empty||  
   
 ## See also
+
 - <xref:System.Net.Configuration.HttpListenerElement>
 - <xref:System.Net.HttpListener>
 - <xref:System.Net.HttpListenerRequest.Url%2A>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

@@ -23,7 +23,7 @@ Gets a metadata token for the specified literal string.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineUserString (   
     [in]  LPCWSTR     szString,   
     [in]  ULONG       cchString,   
@@ -31,7 +31,7 @@ HRESULT DefineUserString (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szString`  
  [in] The user string to store.  
   
@@ -51,5 +51,6 @@ HRESULT DefineUserString (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
 - [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)

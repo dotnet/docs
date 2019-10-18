@@ -22,7 +22,7 @@ Contains values that influence the behavior of the managed just-in-time (JIT) co
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugJITCompilerFlags {  
   
     CORDEBUG_JIT_DEFAULT = 0x1,  
@@ -50,4 +50,5 @@ typedef enum CorDebugJITCompilerFlags {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)

@@ -6,11 +6,11 @@ ms.assetid: 4747f37a-a198-4df2-8efe-5b0731e0ea27
 # How to: Compute Column Values in a CSV Text File (LINQ) (C#)
 This example shows how to perform aggregate computations such as Sum, Average, Min, and Max on the columns of a .csv file. The example principles that are shown here can be applied to other types of structured text.  
   
-### To create the source file  
+## To create the source file  
   
-1.  Copy the following lines into a file that is named scores.csv and save it in your project folder. Assume that the first column represents a student ID, and subsequent columns represent scores from four exams.  
+1. Copy the following lines into a file that is named scores.csv and save it in your project folder. Assume that the first column represents a student ID, and subsequent columns represent scores from four exams.  
   
-    ```  
+    ```csv
     111, 97, 92, 81, 60  
     112, 75, 84, 91, 39  
     113, 88, 94, 65, 91  
@@ -153,9 +153,9 @@ class SumColumns
  The query works by using the <xref:System.String.Split%2A> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation. If your file is a tab-separated file, just update the argument in the `Split` method to `\t`.  
   
 ## Compiling the Code  
- Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
+ Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

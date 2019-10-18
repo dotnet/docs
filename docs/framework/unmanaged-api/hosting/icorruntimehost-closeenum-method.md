@@ -23,13 +23,13 @@ Resets a domain enumerator back to the beginning of the domain list.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseEnum (  
     [in] HCORENUM hEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The enumerator to reset.  
   
@@ -52,5 +52,6 @@ HRESULT CloseEnum (
  **.NET Framework Versions:** 1.0, 1.1  
   
 ## See also
+
 - [CorBindToRuntimeEx Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)
 - [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)

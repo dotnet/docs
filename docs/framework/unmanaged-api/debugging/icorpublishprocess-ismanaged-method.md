@@ -23,13 +23,13 @@ Gets a value that indicates whether the process referenced by this [ICorPublishP
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsManaged (  
     [out] BOOL   *pbManaged  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbManaged`  
  [out] A pointer to a Boolean value that indicates whether the process has managed code. The value is `true` if the process has managed code; otherwise, `false`.  
   
@@ -46,4 +46,5 @@ HRESULT IsManaged (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)

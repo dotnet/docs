@@ -23,14 +23,14 @@ Gets the documents that this method has lines in.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocumentsForMethod(  
     [in]  ULONG32  cDocs,  
     [out] ULONG32  *pcDocs,   
     [in, size_is(cDocs)] ISymUnmanagedDocument* documents[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cDocs`  
  [in] The length of the buffer pointed to by `pcDocs`.  
   
@@ -47,4 +47,5 @@ HRESULT GetDocumentsForMethod(
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
+
 - [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)

@@ -89,7 +89,8 @@ foreach (DataRow delRow in delRows)
 ```  
   
 ## See also
-- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [DataAdapters and DataReaders](../../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Manipulating Data in a DataTable](manipulating-data-in-a-datatable.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [DataAdapters and DataReaders](../dataadapters-and-datareaders.md)
+- [ADO.NET Overview](../ado-net-overview.md)

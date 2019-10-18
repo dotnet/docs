@@ -23,13 +23,13 @@ Gets a value that indicates whether this ICorDebugReferenceValue is a null value
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsNull (  
     [out] BOOL   *pbNull  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbNull`  
  [out] A pointer to a Boolean value that is `true` if this `ICorDebugReferenceValue` object is null; otherwise, `pbNull` is `false`.  
   

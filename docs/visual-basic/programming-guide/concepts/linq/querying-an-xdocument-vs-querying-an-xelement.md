@@ -32,7 +32,7 @@ Next
   
  As expected, this example produces the following output:  
   
-```  
+```console
 Querying tree loaded with XElement.Load  
 ----  
 <Child1>1</Child1>  
@@ -63,7 +63,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Querying tree loaded with XDocument.Load  
 ----  
 <Root>  
@@ -98,7 +98,7 @@ Next
   
  This query now performs in the same way as the query on the tree rooted in <xref:System.Xml.Linq.XElement>. The example produces the following output:  
   
-```  
+```console
 Querying tree loaded with XDocument.Load  
 ----  
 <Child1>1</Child1>  
@@ -107,4 +107,5 @@ Querying tree loaded with XDocument.Load
 ```  
   
 ## See also
+
 - [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)

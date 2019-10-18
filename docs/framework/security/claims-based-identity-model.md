@@ -9,21 +9,21 @@ When you build claims-aware applications, the user identity is represented in yo
   
  Under this model, single sign-on is much easier to achieve, and your application is no longer responsible for the following:  
   
--   Authenticating users.  
+- Authenticating users.  
   
--   Storing user accounts and passwords.  
+- Storing user accounts and passwords.  
   
--   Calling to enterprise directories to look up user identity details.  
+- Calling to enterprise directories to look up user identity details.  
   
--   Integrating with identity systems from other platforms or companies.  
+- Integrating with identity systems from other platforms or companies.  
   
  Under this model, your application makes identity-related decisions based on claims supplied by the system that authenticated your user. This could be anything from simple application personalization with the user’s first name, to authorizing the user to access higher valued features and resources in your application.  
   
  This topic provides the following information:  
   
--   [Introduction to Claims-Based Identity](../../../docs/framework/security/claims-based-identity-model.md#BKMK_1)  
+- [Introduction to Claims-Based Identity](claims-based-identity-model.md#BKMK_1)  
   
--   [Basic Scenario for a Claims-Based Identity Model](../../../docs/framework/security/claims-based-identity-model.md#BKMK_2)  
+- [Basic Scenario for a Claims-Based Identity Model](claims-based-identity-model.md#BKMK_2)  
   
 <a name="BKMK_1"></a>   
 ## Introduction to Claims-Based Identity  
@@ -52,7 +52,7 @@ When you build claims-aware applications, the user identity is represented in yo
  When you build an application that relies on claims, you are building a relying party (RP) application. Synonyms for an RP include "claims-aware application" and "claims-based application". Web applications and Web services can both be RPs. A RP application consumes the tokens issued by a STS and extracts the claims from tokens to use them for identity related tasks. WIF offers functionalities to help you build RP applications.  
   
 ### Standards  
- In order to make all of this interoperable, several WS-* standards are used in the previous scenario. Policy is retrieved using WS-MetadataExchange, and the policy itself is structured according to the WS-Policy specification. The STS exposes endpoints that implement the WS-Trust specification, which describes how to request and receive security tokens. Most STSs today issue tokens formatted with Security Assertion Markup Langauge (SAML). SAML is an industry-recognized XML vocabulary that can be used to represent claims in an interoperable way. Or, in a multi-platform situation, this allows you to communicate with an STS on an entirely different platform and achieve single sign-on across all of your applications, regardless of platform.  
+ In order to make all of this interoperable, several WS-* standards are used in the previous scenario. Policy is retrieved using WS-MetadataExchange, and the policy itself is structured according to the WS-Policy specification. The STS exposes endpoints that implement the WS-Trust specification, which describes how to request and receive security tokens. Most STSs today issue tokens formatted with Security Assertion Markup Language (SAML). SAML is an industry-recognized XML vocabulary that can be used to represent claims in an interoperable way. Or, in a multi-platform situation, this allows you to communicate with an STS on an entirely different platform and achieve single sign-on across all of your applications, regardless of platform.  
   
 ### Browser-Based Applications  
  Smart clients aren’t the only ones who can use the claims-based identity model. Browser-based applications (also referred to as passive clients) can use it as well. The following scenario describes how this works.  
@@ -63,14 +63,14 @@ When you build claims-aware applications, the user identity is represented in yo
 ## Basic Scenario for a Claims-Based Identity Model  
  The following is an example of a claims-based system.  
   
- ![Relying Partner Authentication Flow](../../../docs/framework/security/media/conc-relying-partner-processc.png "conc_relying_partner_processc")  
+ ![Relying Partner Authentication Flow](./media/conc-relying-partner-processc.png "conc_relying_partner_processc")  
   
  This diagram shows a Web site (the relying party application, RP) that has been configured to use WIF for authentication and a client, a web browser, that wants to use that site.  
   
-1.  When an unauthenticated user requests a page their browser is redirected to the identity provider (IP) pages.  
+1. When an unauthenticated user requests a page, their browser is redirected to the identity provider (IdP) pages.  
   
-2.  The IP requires the user to present their credentials, e.g. username/password, Kerberos, etc.  
+2. The IdP requires the user to present their credentials, such as username/password or Kerberos authentication.  
   
-3.  The IP issues a token back to that is returned to the browser.  
+3. The IdP issues a token back to that is returned to the browser.  
   
-4.  The browser is now redirected back to the originally requested page where WIF determines if the token satisfies the requirements to access the page. If so a cookie is issued to establish a session so the authentication only needs to occur once, and control is passed to the application.
+4. The browser is now redirected back to the originally requested page where WIF determines if the token satisfies the requirements to access the page. If so a cookie is issued to establish a session so the authentication only needs to occur once, and control is passed to the application.

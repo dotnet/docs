@@ -23,7 +23,7 @@ Gets the value of the specified field of the specified class for this object val
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFieldValue (  
     [in]  ICorDebugClass     *pClass,  
     [in]  mdFieldDef         fieldDef,  
@@ -31,7 +31,7 @@ HRESULT GetFieldValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClass`  
  [in] A pointer to an "ICorDebugClass" object that represents the class for which to get the field value.  
   
@@ -56,5 +56,3 @@ HRESULT GetFieldValue (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-
-

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 93312eaf-07e0-4a55-b4f7-4cdbbc4dee2d
 ---
 # State Machine Activities in WF
-[!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides several system-provided activities and activity designers for creating state machine workflows.  
+.NET Framework 4.5 provides several system-provided activities and activity designers for creating state machine workflows.  
   
 |||  
 |-|-|  
@@ -14,4 +14,5 @@ ms.assetid: 93312eaf-07e0-4a55-b4f7-4cdbbc4dee2d
 |<xref:System.Activities.Statements.Transition>|Represents the transition between two states. There is no **Toolbox** item for <xref:System.Activities.Statements.Transition>; transitions are created on the workflow designer by dragging and dropping a line between two states, or by dropping a state on the triangles that appear when one state is hovered over another. For more information, see [Transition Activity Designer](/visualstudio/workflow-designer/transition-activity-designer).|  
   
 ## See also
-- [Getting Started Tutorial](../../../docs/framework/windows-workflow-foundation/getting-started-tutorial.md)
+
+- [Getting Started Tutorial](getting-started-tutorial.md)

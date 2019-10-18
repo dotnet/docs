@@ -18,7 +18,7 @@ This example shows how to create a control that has an access key and supports t
   
  The <xref:System.Windows.Controls.Label> control does not support text wrapping. If you need a label that wraps across multiple lines, you can nest another element that does support text wrapping and put the element inside the label. The following example shows how to use a <xref:System.Windows.Controls.TextBlock> to make a label that wraps several lines of text.  
   
- [!code-xaml[LabelSnippet#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LabelSnippet/CS/Pane1.xaml#5)]  
+ [!code-xaml[LabelSnippet#5](~/samples/snippets/csharp/VS_Snippets_Wpf/LabelSnippet/CS/Pane1.xaml#5)]  
   
  **Add an Access Key and Text Wrapping to Your Label**  
   
@@ -28,7 +28,8 @@ This example shows how to create a control that has an access key and supports t
   
  The following example shows how to create a <xref:System.Windows.Controls.Label> that has an access key and supports text wrapping. To enable text wrapping, the example sets the <xref:System.Windows.Controls.AccessText.TextWrapping%2A> property and uses an underline character to specify the access key. (The character that immediately follows the underline character is the access key.)  
   
- [!code-xaml[LabelSnippet#4](../../../../samples/snippets/csharp/VS_Snippets_Wpf/LabelSnippet/CS/Pane1.xaml#4)]  
+ [!code-xaml[LabelSnippet#4](~/samples/snippets/csharp/VS_Snippets_Wpf/LabelSnippet/CS/Pane1.xaml#4)]  
   
 ## See also
+
 - [How to: Set the Target Property of a Label](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90))

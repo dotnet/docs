@@ -15,10 +15,11 @@ Use the <xref:System.Windows.Media.BitmapCache> class to improve rendering perfo
 ## Example  
  The following code example shows how to create a complex element and cache it as a bitmap, which improves performance when the element is animated. The element is a canvas that holds shape geometries with many vertices. A <xref:System.Windows.Media.BitmapCache> with default values is assigned to the <xref:System.Windows.UIElement.CacheMode%2A> of the canvas, and an animation shows the smooth scaling of the cached bitmap.  
   
- [!code-xaml[System.Windows.Media.BitmapCache#_BitmapCacheXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachexaml)]  
+ [!code-xaml[System.Windows.Media.BitmapCache#_BitmapCacheXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/system.windows.media.bitmapcache/cs/window1.xaml#_bitmapcachexaml)]  
   
 ## See also
+
 - <xref:System.Windows.Media.BitmapCache>
 - <xref:System.Windows.Media.BitmapCacheBrush>
 - <xref:System.Windows.UIElement.CacheMode%2A>
-- [How to: Use a Cached Element as a Brush](../../../../docs/framework/wpf/graphics-multimedia/how-to-use-a-cached-element-as-a-brush.md)
+- [How to: Use a Cached Element as a Brush](how-to-use-a-cached-element-as-a-brush.md)

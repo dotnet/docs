@@ -15,17 +15,18 @@ Oftentimes, you will want to convert from one image file format to another. You 
 ## Example  
  The following example loads a BMP image from a type, and saves the image in the PNG format.  
   
- [!code-csharp[UsingImageEncodersDecoders#4](../../../../samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#4)]
- [!code-vb[UsingImageEncodersDecoders#4](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#4)]  
+ [!code-csharp[UsingImageEncodersDecoders#4](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#4)]
+ [!code-vb[UsingImageEncodersDecoders#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#4)]  
   
 ## Compiling the Code  
  This example requires:  
   
--   A Windows Forms application.  
+- A Windows Forms application.  
   
--   A reference to the `System.Drawing.Imaging` namespace.  
+- A reference to the `System.Drawing.Imaging` namespace.  
   
 ## See also
-- [How to: List Installed Encoders](../../../../docs/framework/winforms/advanced/how-to-list-installed-encoders.md)
-- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)
-- [Types of Bitmaps](../../../../docs/framework/winforms/advanced/types-of-bitmaps.md)
+
+- [How to: List Installed Encoders](how-to-list-installed-encoders.md)
+- [Using Image Encoders and Decoders in Managed GDI+](using-image-encoders-and-decoders-in-managed-gdi.md)
+- [Types of Bitmaps](types-of-bitmaps.md)

@@ -23,13 +23,13 @@ Notifies the debugger when a process has been attached or started for the first 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateProcess (  
     [in] ICorDebugProcess *pProcess  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pProcess`  
  [in] A pointer to an ICorDebugProcess object that represents the process that has been attached or started.  
   
@@ -46,4 +46,5 @@ HRESULT CreateProcess (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)

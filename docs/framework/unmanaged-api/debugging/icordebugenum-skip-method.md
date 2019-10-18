@@ -23,13 +23,13 @@ Moves the cursor forward in the enumeration by the specified number of items.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip (  
     [in] ULONG celt  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of items by which to move the cursor forward.  
   
@@ -43,4 +43,5 @@ HRESULT Skip (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
-- [ICorDebugEnum Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-interface1.md)
+
+- [ICorDebugEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-interface1.md)

@@ -21,7 +21,7 @@ You can use Visual Basic to process drives, folders, and files with the `My.Comp
  Provides an overview of file I/O concepts in the .NET Framework, including streams, isolated storage, file events, file attributes, and file access.  
   
  [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- Demonstrates how to use the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to manipulate files and folders.  
+ Demonstrates how to use the .NET Framework to manipulate files and folders.  
   
  [Walkthrough: Manipulating Files and Directories in Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
  Demonstrates how to use the `My.Computer.FileSystem` object to manipulate files and folders.  

@@ -25,14 +25,14 @@ Gets the extent of native code associated with the specified function ID.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeInfo(  
     [in]  FunctionID functionId,  
     [out] LPCBYTE    *pStart,  
     [out] ULONG      *pcSize);  
 ```  
   
-#### Parameters  
+## Parameters  
  `functionId`  
  [in] The ID of the function with which the native code is associated.  
   
@@ -57,6 +57,7 @@ HRESULT GetCodeInfo(
  **.NET Framework Versions:** 1.0  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
 - [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)

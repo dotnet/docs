@@ -23,7 +23,7 @@ Gets an [ICLRReferenceAssemblyEnum](../../../../docs/framework/unmanaged-api/hos
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReferencedAssembliesFromFile (  
     [in]  LPCWSTR pwzFilePath,  
     [in]  DWORD   dwFlags,  
@@ -32,7 +32,7 @@ HRESULT GetReferencedAssembliesFromFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFilePath`  
  [in] The path to the assembly to be evaluated.  
   
@@ -69,6 +69,7 @@ HRESULT GetReferencedAssembliesFromFile (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
 - [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)
 - [ICLRReferenceAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/hosting/iclrreferenceassemblyenum-interface.md)

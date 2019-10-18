@@ -30,5 +30,6 @@ Identifies a property as the default property of its class, structure, or interf
  [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
   
 ## See also
+
 - [How to: Declare and Call a Default Property in Visual Basic](../../../visual-basic/programming-guide/language-features/procedures/how-to-declare-and-call-a-default-property.md)
 - [Keywords](../../../visual-basic/language-reference/keywords/index.md)

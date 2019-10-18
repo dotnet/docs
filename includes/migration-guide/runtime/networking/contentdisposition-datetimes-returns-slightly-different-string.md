@@ -8,4 +8,3 @@
 |Version|4.6|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=nameWithType></li><li><xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=nameWithType></li></ul>|
-

@@ -23,13 +23,13 @@ Sets a value that specifies the types of code that are stepped into.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetInterceptMask (  
     [in] CorDebugIntercept    mask  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mask`  
  [in] A combination of values of the CorDebugIntercept enumeration that specifies the types of code.  
   

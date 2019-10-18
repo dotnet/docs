@@ -10,7 +10,8 @@ The method or data member you have tried to access was not found.
   
 ## To correct this error  
   
--   Make sure you did not misspell the name of the method or data member.  
+- Make sure you did not misspell the name of the method or data member.  
   
 ## See also
+
 - [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)

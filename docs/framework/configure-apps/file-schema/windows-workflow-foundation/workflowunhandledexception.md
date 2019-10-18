@@ -7,11 +7,12 @@ ms.assetid: 57adeab5-f06a-44b2-916b-0e177cf0f4a6
 # \<workflowUnhandledException>
 A service behavior that enables you to specify the action to take when an unhandled exception occurs within a workflow service.  
   
-\<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<workflowUnhandledException>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowUnhandledException>**  
   
 ## Syntax  
   
@@ -41,8 +42,9 @@ A service behavior that enables you to specify the action to take when an unhand
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
+|[\<behavior> of \<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
 ## See also
+
 - <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionBehavior>
 - <xref:System.ServiceModel.Activities.Configuration.WorkflowUnhandledExceptionElement>

@@ -17,7 +17,7 @@ ms.author: "ronpet"
 After attributes have been associated with program elements, reflection can be used to query their existence and values. In the .NET Framework version 1.0 and 1.1, custom attributes are examined in the execution context. The .NET Framework version 2.0 provides a new load context, the reflection-only context, which can be used to examine code that cannot be loaded for execution.  
   
 ## The Reflection-Only Context  
- Code loaded into the reflection-only context cannot be executed. This means that instances of custom attributes cannot be created, because that would require executing their constructors. To load and examine custom attributes in the reflection-only context, use the <xref:System.Reflection.CustomAttributeData> class. You can obtain instances of this class by using the appropriate overload of the static <xref:System.Reflection.CustomAttributeData.GetCustomAttributes%2A?displayProperty=nameWithType> method. See [How to: Load Assemblies into the Reflection-Only Context](../../../docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).  
+ Code loaded into the reflection-only context cannot be executed. This means that instances of custom attributes cannot be created, because that would require executing their constructors. To load and examine custom attributes in the reflection-only context, use the <xref:System.Reflection.CustomAttributeData> class. You can obtain instances of this class by using the appropriate overload of the static <xref:System.Reflection.CustomAttributeData.GetCustomAttributes%2A?displayProperty=nameWithType> method. See [How to: Load Assemblies into the Reflection-Only Context](how-to-load-assemblies-into-the-reflection-only-context.md).  
   
 ## The Execution Context  
  The main reflection methods to query attributes in the execution context are <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType> and <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>.  
@@ -28,7 +28,7 @@ After attributes have been associated with program elements, reflection can be u
   
  The following C# example is a typical custom attribute design pattern. It illustrates the runtime custom attribute reflection model.  
   
-```  
+```csharp
 System.DLL  
 public class DescriptionAttribute : Attribute  
 {  
@@ -50,13 +50,13 @@ public class LocalizationExtenderProvider
   
  If the runtime is attempting to retrieve the custom attributes for the public custom attribute type <xref:System.ComponentModel.DescriptionAttribute> attached to the **GetLanguage** method, it performs the following actions:  
   
-1.  The runtime checks that the type argument **DescriptionAttribute** to **Type.GetCustomAttributes**(Type *type*) is public, and therefore is visible and accessible.  
+1. The runtime checks that the type argument **DescriptionAttribute** to **Type.GetCustomAttributes**(Type *type*) is public, and therefore is visible and accessible.  
   
-2.  The runtime checks that the user-defined type **MyDescriptionAttribute** that is derived from **DescriptionAttribute** is visible and accessible within the **System.Web.DLL** assembly, where it is attached to the method **GetLanguage**().  
+2. The runtime checks that the user-defined type **MyDescriptionAttribute** that is derived from **DescriptionAttribute** is visible and accessible within the **System.Web.DLL** assembly, where it is attached to the method **GetLanguage**().  
   
-3.  The runtime checks that the constructor of **MyDescriptionAttribute** is visible and accessible within the **System.Web.DLL** assembly.  
+3. The runtime checks that the constructor of **MyDescriptionAttribute** is visible and accessible within the **System.Web.DLL** assembly.  
   
-4.  The runtime calls the constructor of **MyDescriptionAttribute** with the custom attribute parameters and returns the new object to the caller.  
+4. The runtime calls the constructor of **MyDescriptionAttribute** with the custom attribute parameters and returns the new object to the caller.  
   
  The custom attribute reflection model could leak instances of user-defined types outside the assembly in which the type is defined. This is no different from the members in the runtime system library that return instances of user-defined types, such as <xref:System.Type.GetMethods%2A?displayProperty=nameWithType> returning an array of **RuntimeMethodInfo** objects. To prevent a client from discovering information about a user-defined custom attribute type, define the type's members to be nonpublic.  
   
@@ -67,7 +67,8 @@ public class LocalizationExtenderProvider
  [!code-vb[CustomAttributeData#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CustomAttributeData/VB/source2.vb#2)]  
   
 ## See also
+
 - <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A?displayProperty=nameWithType>
 - <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType>
-- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
-- [Security Considerations for Reflection](../../../docs/framework/reflection-and-codedom/security-considerations-for-reflection.md)
+- [Viewing Type Information](viewing-type-information.md)
+- [Security Considerations for Reflection](security-considerations-for-reflection.md)

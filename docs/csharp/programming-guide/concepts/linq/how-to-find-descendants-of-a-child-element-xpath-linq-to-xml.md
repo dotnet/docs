@@ -64,11 +64,8 @@ Console.WriteLine(str2);
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 This is the start of a sentence.  This is a second sentence.  
 ```  
   
-## See also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

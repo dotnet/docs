@@ -23,7 +23,7 @@ Gets the number of "ICorDebugModule" instances specified by `celt` from the enum
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in]  ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched)]  
@@ -32,7 +32,7 @@ HRESULT Next (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of `ICorDebugModule` instances to be retrieved.  
   
@@ -52,4 +52,3 @@ HRESULT Next (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-

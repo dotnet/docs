@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugFrame Interface1"
+title: "ICorDebugFrame Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugFrame"
@@ -17,7 +17,8 @@ topic_type:
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# ICorDebugFrame Interface1
+# ICorDebugFrame Interface
+
 Represents a frame on the current stack.  
   
 ## Methods  
@@ -36,7 +37,7 @@ Represents a frame on the current stack.
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -48,4 +49,5 @@ Represents a frame on the current stack.
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

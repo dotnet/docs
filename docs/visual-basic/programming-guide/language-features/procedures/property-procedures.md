@@ -19,9 +19,9 @@ A property procedure is a series of Visual Basic statements that manipulate a cu
   
  Visual Basic provides for the following property procedures:  
   
--   A `Get` procedure returns the value of a property. It is called when you access the property in an expression.  
+- A `Get` procedure returns the value of a property. It is called when you access the property in an expression.  
   
--   A `Set` procedure sets a property to a value, including an object reference. It is called when you assign a value to the property.  
+- A `Set` procedure sets a property to a value, including an object reference. It is called when you assign a value to the property.  
   
  You usually define property procedures in pairs, using the `Get` and `Set` statements, but you can define either procedure alone if the property is read-only ([Get Statement](../../../../visual-basic/language-reference/statements/get-statement.md)) or write-only ([Set Statement](../../../../visual-basic/language-reference/statements/set-statement.md)).  
   
@@ -36,7 +36,7 @@ A property procedure is a series of Visual Basic statements that manipulate a cu
   
  The syntax for declaring a property and its procedures is as follows:  
   
-```  
+```vb  
 [Default] [Modifiers] Property PropertyName[(ParameterList)] [As DataType]  
     [AccessLevel] Get  
         ' Statements of the Get procedure.  
@@ -93,13 +93,14 @@ End Property
 ### Illustration of Declaration and Call  
  The following property stores a full name as two constituent names, the first name and the last name. When the calling code reads `fullName`, the `Get` procedure combines the two constituent names and returns the full name. When the calling code assigns a new full name, the `Set` procedure attempts to break it into two constituent names. If it does not find a space, it stores it all as the first name.  
   
- [!code-vb[VbVbcnProcedures#8](./codesnippet/VisualBasic/property-procedures_1.vb)]  
+ [!code-vb[VbVbcnProcedures#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#8)]  
   
  The following example shows typical calls to the property procedures of `fullName`.  
   
- [!code-vb[VbVbcnProcedures#9](./codesnippet/VisualBasic/property-procedures_2.vb)]  
+ [!code-vb[VbVbcnProcedures#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#9)]  
   
 ## See also
+
 - [Procedures](./index.md)
 - [Function Procedures](./function-procedures.md)
 - [Operator Procedures](./operator-procedures.md)

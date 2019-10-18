@@ -21,7 +21,7 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
   
 ### To create a WindowsPrincipal object for repeated validation  
   
-1.  Call the <xref:System.AppDomain.SetPrincipalPolicy%2A> method on the <xref:System.AppDomain> object that is returned by the static <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> property, passing the method a <xref:System.Security.Principal.PrincipalPolicy> enumeration value that indicates what the new policy should be. Supported values are <xref:System.Security.Principal.PrincipalPolicy.NoPrincipal>, <xref:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal>, and <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>. The following code demonstrates this method call.  
+1. Call the <xref:System.AppDomain.SetPrincipalPolicy%2A> method on the <xref:System.AppDomain> object that is returned by the static <xref:System.AppDomain.CurrentDomain%2A?displayProperty=nameWithType> property, passing the method a <xref:System.Security.Principal.PrincipalPolicy> enumeration value that indicates what the new policy should be. Supported values are <xref:System.Security.Principal.PrincipalPolicy.NoPrincipal>, <xref:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal>, and <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>. The following code demonstrates this method call.  
   
     ```csharp  
     AppDomain.CurrentDomain.SetPrincipalPolicy(  
@@ -33,7 +33,7 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
         PrincipalPolicy.WindowsPrincipal)  
     ```  
   
-2.  With the policy set, use the static <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to retrieve the principal that encapsulates the current Windows user. Because the property return type is <xref:System.Security.Principal.IPrincipal>, you must cast the result to a <xref:System.Security.Principal.WindowsPrincipal> type. The following code initializes a new <xref:System.Security.Principal.WindowsPrincipal> object to the value of the principal associated with the current thread.  
+2. With the policy set, use the static <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property to retrieve the principal that encapsulates the current Windows user. Because the property return type is <xref:System.Security.Principal.IPrincipal>, you must cast the result to a <xref:System.Security.Principal.WindowsPrincipal> type. The following code initializes a new <xref:System.Security.Principal.WindowsPrincipal> object to the value of the principal associated with the current thread.  
   
     ```csharp  
     WindowsPrincipal myPrincipal =   
@@ -45,11 +45,11 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
         CType(Thread.CurrentPrincipal, WindowsPrincipal)   
     ```  
   
-3.  When the principal object has been created, you can use one of several methods to validate it.  
+3. When the principal object has been created, you can use one of several methods to validate it.  
   
 ### To create a WindowsPrincipal object for a single validation  
   
-1.  Initialize a new <xref:System.Security.Principal.WindowsIdentity> object by calling the static <xref:System.Security.Principal.WindowsIdentity.GetCurrent%2A?displayProperty=nameWithType> method, which queries the current Windows account and places information about that account into the newly created identity object. The following code creates a new <xref:System.Security.Principal.WindowsIdentity> object and initializes it to the current authenticated user.  
+1. Initialize a new <xref:System.Security.Principal.WindowsIdentity> object by calling the static <xref:System.Security.Principal.WindowsIdentity.GetCurrent%2A?displayProperty=nameWithType> method, which queries the current Windows account and places information about that account into the newly created identity object. The following code creates a new <xref:System.Security.Principal.WindowsIdentity> object and initializes it to the current authenticated user.  
   
     ```csharp  
     WindowsIdentity myIdentity = WindowsIdentity.GetCurrent();  
@@ -59,7 +59,7 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
     Dim myIdentity As WindowsIdentity = WindowsIdentity.GetCurrent()  
     ```  
   
-2.  Create a new <xref:System.Security.Principal.WindowsPrincipal> object and pass it the value of the <xref:System.Security.Principal.WindowsIdentity> object created in the preceding step.  
+2. Create a new <xref:System.Security.Principal.WindowsPrincipal> object and pass it the value of the <xref:System.Security.Principal.WindowsIdentity> object created in the preceding step.  
   
     ```csharp  
     WindowsPrincipal myPrincipal = new WindowsPrincipal(myIdentity);  
@@ -69,7 +69,7 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
     Dim myPrincipal As New WindowsPrincipal(myIdentity)  
     ```  
   
-3.  When the principal object has been created, you can use one of several methods to validate it.  
+3. When the principal object has been created, you can use one of several methods to validate it.  
   
 ## See also
 

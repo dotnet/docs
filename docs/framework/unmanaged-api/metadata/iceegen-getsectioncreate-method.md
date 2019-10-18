@@ -25,7 +25,7 @@ Generates and gets a code section using the specified name and flag values.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSectionCreate (  
     [in]  const char     *name,  
     [in]  DWORD          flags,  
@@ -33,7 +33,7 @@ HRESULT GetSectionCreate (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to a string that specifies the name of the section to be created.  
   
@@ -56,4 +56,5 @@ HRESULT GetSectionCreate (
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
 ## See also
+
 - [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)

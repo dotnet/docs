@@ -27,10 +27,7 @@ class MyDataContractResolver : DataContractResolver
     public override Type ResolveName(string typeName, string typeNamespace, DataContractResolver knownTypeResolver)
     {
         Type type = knownTypeResolver.ResolveName(typeName, typeNamespace, null);
-        if (type == null)
-        {
-            type = Type.GetType(typeName + ", " + typeNamespace);
-        }
+        type ??= Type.GetType(typeName + ", " + typeNamespace);
         return type;
     }
 
@@ -51,29 +48,27 @@ class MyDataContractResolver : DataContractResolver
 
 #### To use this sample
 
-1.  Using Visual Studio 2012, open the DCRSample.sln solution file.
+1. Using Visual Studio 2012, open the DCRSample.sln solution file.
 
-2.  Right-click the solution file and choose **Properties**.
+2. Right-click the solution file and choose **Properties**.
 
-3.  In the **Solution Property Pages** dialog, under **Common Properties**, **Startup Project**, select **Multiple startup projects:**.
+3. In the **Solution Property Pages** dialog, under **Common Properties**, **Startup Project**, select **Multiple startup projects:**.
 
-4.  Next to the **DCSwithDCR** project, select **Start** from the **Action** dropdown.
+4. Next to the **DCSwithDCR** project, select **Start** from the **Action** dropdown.
 
-5.  Next to the **NetDCS** project, select **Start** from the **Action** dropdown.
+5. Next to the **NetDCS** project, select **Start** from the **Action** dropdown.
 
-6.  Click **OK** to close the dialog.
+6. Click **OK** to close the dialog.
 
-7.  To build the solution, press CTRL+SHIFT+B.
+7. To build the solution, press CTRL+SHIFT+B.
 
-8.  To run the solution, press CTRL+F5.
+8. To run the solution, press CTRL+F5.
 
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\NetDcSasDcSwithDCR`  
-  
-## See also
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\NetDcSasDcSwithDCR`  

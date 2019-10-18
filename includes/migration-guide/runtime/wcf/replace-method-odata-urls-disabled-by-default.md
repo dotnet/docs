@@ -8,4 +8,3 @@
 |Version|4.5|
 |Type|Runtime|
 |Affected APIs|<ul><li><xref:System.Data.Services.DataService%601?displayProperty=nameWithType></li></ul>|
-

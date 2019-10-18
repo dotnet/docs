@@ -23,21 +23,21 @@ Notifies the profiler that the process has received a remote method invocation o
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingClientSendingMessage(  
     [in] GUID *pCookie,  
     [in] BOOL fIsAsync);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCookie`  
  [in] A value that will correspond with the value provided in [ICorProfilerCallback::RemotingClientSendingMessage](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-remotingclientsendingmessage-method.md) under these conditions:  
   
--   Remoting GUID cookies are active.  
+- Remoting GUID cookies are active.  
   
--   The channel succeeds in transmitting the message.  
+- The channel succeeds in transmitting the message.  
   
--   GUID cookies are active on the client-side process.  
+- GUID cookies are active on the client-side process.  
   
  This allows easy pairing of remoting calls and the creation of a logical call stack.  
   
@@ -57,4 +57,5 @@ HRESULT RemotingClientSendingMessage(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)

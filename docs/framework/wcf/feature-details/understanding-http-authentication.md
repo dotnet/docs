@@ -23,13 +23,14 @@ Authentication is the process of identifying whether a client is eligible to acc
 ## Choosing an Authentication Scheme  
  When selecting the potential authentication schemes for an HTTP server, a few items to consider include the following:  
   
--   Consider whether the resource needs to be protected. Using HTTP authentication requires transmitting more data and can limit interoperability with clients. Allow anonymous access to resources that do not need to be protected.  
+- Consider whether the resource needs to be protected. Using HTTP authentication requires transmitting more data and can limit interoperability with clients. Allow anonymous access to resources that do not need to be protected.  
   
--   If the resource needs to be protected, consider which authentication schemes provide the required level of security. The weakest standard authentication scheme discussed here is Basic authentication. Basic authentication does not protect the user's credentials. The strongest standard authentication scheme is Negotiate authentication, resulting in the Kerberos protocol.  
+- If the resource needs to be protected, consider which authentication schemes provide the required level of security. The weakest standard authentication scheme discussed here is Basic authentication. Basic authentication does not protect the user's credentials. The strongest standard authentication scheme is Negotiate authentication, resulting in the Kerberos protocol.  
   
--   A server should not present (in the WWW-Authentication headers) any scheme that it is not prepared to accept or that does not adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
+- A server should not present (in the WWW-Authentication headers) any scheme that it is not prepared to accept or that does not adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
   
 ## See also
+
 - [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)
 - [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)
 - [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)

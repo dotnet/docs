@@ -19,7 +19,7 @@ A channel listener receiving messages and delivering to the layer above through 
 
 The process can be conceptually modeled as a queue inside each channel although the implementation may not actually use a queue. The channel listener is responsible for receiving messages from the layer below or the network and putting them in the queue. The channel is responsible for getting messages from the queue and handing them to the layer above when that layer asks for a message, for example by calling `Receive` on the channel.
 
-WCF provides base class helpers for this process. (For a diagram of the channel helper classes discussed in this article, see [Channel Model Overview](channel-model-overview.md).)
+WCF provides base class helpers for this process. For a diagram of the channel helper classes discussed in this article, see [Channel Model Overview](channel-model-overview.md).
 
 - The <xref:System.ServiceModel.Channels.CommunicationObject> class implements <xref:System.ServiceModel.ICommunicationObject> and enforces the state machine described in step 2 of [Developing Channels](developing-channels.md).
 
@@ -29,7 +29,7 @@ WCF provides base class helpers for this process. (For a diagram of the channel 
 
 - The <xref:System.ServiceModel.Channels.ChannelListenerBase> class implements <xref:System.ServiceModel.Channels.IChannelListener>. It takes care of basic state management.
 
-The following discussion is based upon the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample.
+The following discussion is based upon the [Transport: UDP](../samples/transport-udp.md) sample.
 
 ## Creating a channel listener
 

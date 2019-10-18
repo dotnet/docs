@@ -19,15 +19,15 @@ An <xref:System.Xml.XPath.XPathExpression> object represents a compiled XPath qu
   
  Once compiled, the <xref:System.Xml.XPath.XPathExpression> object may be used as input to the following <xref:System.Xml.XPath.XPathNavigator> class methods depending on the type returned from the XPath query.  
   
--   <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A?displayProperty=nameWithType>  
+- <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A?displayProperty=nameWithType>  
   
--   <xref:System.Xml.XPath.XPathNavigator.Matches%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.Matches%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.Select%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.Select%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A>  
   
  The following table describes each of the W3C XPath return types, their Microsoft .NET Framework equivalencies, and what methods the <xref:System.Xml.XPath.XPathExpression> object may be used with based on its return type.  
   
@@ -39,26 +39,26 @@ An <xref:System.Xml.XPath.XPathExpression> object represents a compiled XPath qu
 |`String`|<xref:System.String>|A sequence of UCS characters.|<xref:System.Xml.XPath.XPathNavigator.Evaluate%2A>|  
   
 > [!NOTE]
->  The <xref:System.Xml.XPath.XPathNavigator.Matches%2A> method accepts an XPath expression as its parameter. The <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A> method returns an <xref:System.Xml.XPath.XPathNavigator> object, not one of the W3C XPath return types.  
+> The <xref:System.Xml.XPath.XPathNavigator.Matches%2A> method accepts an XPath expression as its parameter. The <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A> method returns an <xref:System.Xml.XPath.XPathNavigator> object, not one of the W3C XPath return types.  
   
 ### The ReturnType Property  
  After an XPath query has been compiled into an <xref:System.Xml.XPath.XPathExpression> object, you can use the <xref:System.Xml.XPath.XPathExpression.ReturnType%2A> property of the <xref:System.Xml.XPath.XPathExpression> object to determine what the XPath query returns.  
   
  The <xref:System.Xml.XPath.XPathExpression.ReturnType%2A> property returns one of the following <xref:System.Xml.XPath.XPathResultType> enumeration values representing the W3C XPath return types.  
   
--   <xref:System.Xml.XPath.XPathResultType.Any>  
+- <xref:System.Xml.XPath.XPathResultType.Any>  
   
--   <xref:System.Xml.XPath.XPathResultType.Boolean>  
+- <xref:System.Xml.XPath.XPathResultType.Boolean>  
   
--   <xref:System.Xml.XPath.XPathResultType.Error>  
+- <xref:System.Xml.XPath.XPathResultType.Error>  
   
--   <xref:System.Xml.XPath.XPathResultType.Navigator>  
+- <xref:System.Xml.XPath.XPathResultType.Navigator>  
   
--   <xref:System.Xml.XPath.XPathResultType.NodeSet>  
+- <xref:System.Xml.XPath.XPathResultType.NodeSet>  
   
--   <xref:System.Xml.XPath.XPathResultType.Number>  
+- <xref:System.Xml.XPath.XPathResultType.Number>  
   
--   <xref:System.Xml.XPath.XPathResultType.String>  
+- <xref:System.Xml.XPath.XPathResultType.String>  
   
  The following example uses the <xref:System.Xml.XPath.XPathExpression> object to return a number and a node set from the `books.xml` file. The <xref:System.Xml.XPath.XPathExpression.ReturnType%2A> property of each <xref:System.Xml.XPath.XPathExpression> object as well as the results from the <xref:System.Xml.XPath.XPathNavigator.Evaluate%2A> and <xref:System.Xml.XPath.XPathNavigator.Select%2A> methods are written to the console.  
   

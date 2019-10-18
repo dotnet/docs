@@ -15,8 +15,8 @@ A <xref:System.Drawing.Graphics> object provides methods such as <xref:System.Dr
  A <xref:System.Drawing.Graphics> object can be thought of as a container because it holds a set of properties that influence drawing and it is linked to device-specific information. You can create a secondary container within an existing <xref:System.Drawing.Graphics> object by calling the <xref:System.Drawing.Graphics.BeginContainer%2A> method of that <xref:System.Drawing.Graphics> object.  
   
 ## In This Section  
- [Managing the State of a Graphics Object](../../../../docs/framework/winforms/advanced/managing-the-state-of-a-graphics-object.md)  
+ [Managing the State of a Graphics Object](managing-the-state-of-a-graphics-object.md)  
  Describes how manage the quality settings, clipping area and transformations of a <xref:System.Drawing.Graphics> object.  
   
- [Using Nested Graphics Containers](../../../../docs/framework/winforms/advanced/using-nested-graphics-containers.md)  
+ [Using Nested Graphics Containers](using-nested-graphics-containers.md)  
  Shows how to use containers to control the state of the <xref:System.Drawing.Graphics> object.

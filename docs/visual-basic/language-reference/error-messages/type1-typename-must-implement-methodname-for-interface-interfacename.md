@@ -15,14 +15,15 @@ A class or structure claims to implement an interface but does not implement a p
   
 ## To correct this error  
   
-1.  Declare a procedure with the same name and signature as defined in the interface. Be sure to include at least the `End Function` or `End Sub` statement.  
+1. Declare a procedure with the same name and signature as defined in the interface. Be sure to include at least the `End Function` or `End Sub` statement.  
   
-2.  Add an `Implements` clause to the end of the `Function` or `Sub` statement. For example:  
+2. Add an `Implements` clause to the end of the `Function` or `Sub` statement. For example:  
   
-    ```  
+    ```vb  
     Public Sub DoSomething() Implements IBaseInterface.DoSomething  
     ```  
   
 ## See also
+
 - [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md)
 - [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)

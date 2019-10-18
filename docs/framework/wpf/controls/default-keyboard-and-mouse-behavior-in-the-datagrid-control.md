@@ -49,21 +49,21 @@ This topic describes how users can interact with the <xref:System.Windows.Contro
   
  The following selection keys modify multi-row selection.  
   
--   SHIFT+DOWN ARROW  
+- SHIFT+DOWN ARROW  
   
--   SHIFT+UP ARROW  
+- SHIFT+UP ARROW  
   
--   SHIFT+PAGE DOWN  
+- SHIFT+PAGE DOWN  
   
--   SHIFT+PAGE UP  
+- SHIFT+PAGE UP  
   
--   CTRL+SHIFT+DOWN ARROW  
+- CTRL+SHIFT+DOWN ARROW  
   
--   CTRL+SHIFT+UP ARROW  
+- CTRL+SHIFT+UP ARROW  
   
--   CTRL+SHIFT+HOME  
+- CTRL+SHIFT+HOME  
   
--   CTRL+SHIFT+END  
+- CTRL+SHIFT+END  
   
 ## Default Mouse Behavior  
  The following table lists the default mouse behavior for the <xref:System.Windows.Controls.DataGrid>.  
@@ -91,5 +91,6 @@ This topic describes how users can interact with the <xref:System.Windows.Contro
  CTRL+SHIFT can be combined to select non-adjacent ranges of adjacent rows. To do this, select the first range by using SHIFT+click as described earlier. After the first range of rows is selected, use CTRL+click to select the first row in the next range, and then click the last row in the next range while pressing CTRL+SHIFT.  
   
 ## See also
+
 - <xref:System.Windows.Controls.DataGrid>
 - <xref:System.Windows.Controls.DataGrid.SelectionMode%2A>

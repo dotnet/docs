@@ -12,10 +12,10 @@ ms.assetid: 15d58f1d-3db6-4cb5-88c7-8c45f19301e2
 The topics in this section describe how to use the <xref:System.Windows.Controls.ListBox> control to display selectable lists of items.  
   
 ## In This Section  
- [Bind a ListBox to Data](../../../../docs/framework/wpf/controls/how-to-bind-a-listbox-to-data.md)  
- [Get a ListBoxItem](../../../../docs/framework/wpf/controls/how-to-get-a-listboxitem.md)  
+ [Bind a ListBox to Data](how-to-bind-a-listbox-to-data.md)  
+ [Get a ListBoxItem](how-to-get-a-listboxitem.md)  
  [How to: Add Data to an ItemsControl](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms743602(v=vs.90))  
- [Improve the Scrolling Performance of a ListBox](../../../../docs/framework/wpf/controls/how-to-improve-the-scrolling-performance-of-a-listbox.md)  
+ [Improve the Scrolling Performance of a ListBox](how-to-improve-the-scrolling-performance-of-a-listbox.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.ListBox>  

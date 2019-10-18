@@ -40,13 +40,13 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
   
 ### To create a lookup table  
   
-1.  Add a <xref:System.Windows.Forms.ComboBox>, <xref:System.Windows.Forms.ListBox>, or <xref:System.Windows.Forms.CheckedListBox> control to the form.  
+1. Add a <xref:System.Windows.Forms.ComboBox>, <xref:System.Windows.Forms.ListBox>, or <xref:System.Windows.Forms.CheckedListBox> control to the form.  
   
-2.  Connect to your data source.  
+2. Connect to your data source.  
   
-3.  Establish a data relation between the two tables. See [Introduction to DataRelation Objects](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0k21zcyx(v=vs.120)).  
+3. Establish a data relation between the two tables. See [Introduction to DataRelation Objects](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0k21zcyx(v=vs.120)).  
   
-4.  Set the following properties. They can be set in code or in the designer.  
+4. Set the following properties. They can be set in code or in the designer.  
   
     |Property|Setting|  
     |--------------|-------------|  
@@ -54,7 +54,7 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
     |<xref:System.Windows.Forms.ListControl.DisplayMember%2A>|The column of the data source table that you want to display in the control. In the previous scenario, this is `"Name"` (to set in code, use quotation marks).|  
     |<xref:System.Windows.Forms.ListControl.ValueMember%2A>|The column of the data source table that contains the stored information. In the previous scenario, this is `"ID"` (to set in code, use quotation marks).|  
   
-5.  In a procedure, call the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method of the <xref:System.Windows.Forms.ControlBindingsCollection> class to bind the control's <xref:System.Windows.Forms.ListControl.SelectedValue%2A> property to the table recording the form input. You can also do this in the Designer instead of in code, by accessing the control's <xref:System.Windows.Forms.Control.DataBindings%2A> property in the **Properties** window. In the previous scenario, this is `OrderDetailsTable`, and the column is `"ItemID"`.  
+5. In a procedure, call the <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> method of the <xref:System.Windows.Forms.ControlBindingsCollection> class to bind the control's <xref:System.Windows.Forms.ListControl.SelectedValue%2A> property to the table recording the form input. You can also do this in the Designer instead of in code, by accessing the control's <xref:System.Windows.Forms.Control.DataBindings%2A> property in the **Properties** window. In the previous scenario, this is `OrderDetailsTable`, and the column is `"ItemID"`.  
   
     ```vb  
     ListBox1.DataBindings.Add("SelectedValue", OrderDetailsTable, "ItemID")  
@@ -65,8 +65,9 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
     ```  
   
 ## See also
-- [Data Binding and Windows Forms](../../../../docs/framework/winforms/data-binding-and-windows-forms.md)
-- [ListBox Control Overview](../../../../docs/framework/winforms/controls/listbox-control-overview-windows-forms.md)
-- [ComboBox Control Overview](../../../../docs/framework/winforms/controls/combobox-control-overview-windows-forms.md)
-- [CheckedListBox Control Overview](../../../../docs/framework/winforms/controls/checkedlistbox-control-overview-windows-forms.md)
-- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+
+- [Data Binding and Windows Forms](../data-binding-and-windows-forms.md)
+- [ListBox Control Overview](listbox-control-overview-windows-forms.md)
+- [ComboBox Control Overview](combobox-control-overview-windows-forms.md)
+- [CheckedListBox Control Overview](checkedlistbox-control-overview-windows-forms.md)
+- [Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)

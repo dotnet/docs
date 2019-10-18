@@ -22,7 +22,7 @@ Indicates the type of an assembly's identity.
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _CLRAssemblyIdentityFlags {  
     CLR_ASSEMBLY_IDENTITY_FLAGS_DEFAULT = 0  
 } ECLRAssemblyIdentityFlags;  
@@ -42,4 +42,5 @@ typedef enum _CLRAssemblyIdentityFlags {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

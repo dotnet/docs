@@ -35,7 +35,7 @@ Holds sequences of unsigned 16-bit (2-byte) code points that range in value from
 ## Format Requirements  
  You must enclose a `String` literal within quotation marks (`" "`). If you must include a quotation mark as one of the characters in the string, you use two contiguous quotation marks (`""`). The following example illustrates this.  
   
-```  
+```vb  
 Dim j As String = "Joe said ""Hello"" to me."  
 Dim h As String = "Hello"  
 ' The following messages all display the same thing:  
@@ -52,7 +52,7 @@ MsgBox("Joe said """ & h & """ to me.")
   
  You can manipulate the contents of a `String` variable by using a variety of string functions. The following example illustrates the <xref:Microsoft.VisualBasic.Strings.Left%2A> function  
   
-```  
+```vb  
 Dim S As String = "Database"  
 ' The following statement sets S to a new string containing "Data".  
 S = Microsoft.VisualBasic.Left(S, 4)  
@@ -64,15 +64,16 @@ S = Microsoft.VisualBasic.Left(S, 4)
   
 ## Programming Tips  
   
--   **Negative Numbers.** Remember that the characters held by `String` are unsigned and cannot represent negative values. In any case, you should not use `String` to hold numeric values.  
+- **Negative Numbers.** Remember that the characters held by `String` are unsigned and cannot represent negative values. In any case, you should not use `String` to hold numeric values.  
   
--   **Interop Considerations.** If you are interfacing with components not written for the .NET Framework, for example Automation or COM objects, remember that string characters have a different data width (8 bits) in other environments. If you are passing a string argument of 8-bit characters to such a component, declare it as `Byte()`, an array of `Byte` elements, instead of `String` in your new Visual Basic code.  
+- **Interop Considerations.** If you are interfacing with components not written for the .NET Framework, for example Automation or COM objects, remember that string characters have a different data width (8 bits) in other environments. If you are passing a string argument of 8-bit characters to such a component, declare it as `Byte()`, an array of `Byte` elements, instead of `String` in your new Visual Basic code.  
   
--   **Type Characters.** Appending the identifier type character `$` to any identifier forces it to the `String` data type. `String` has no literal type character. However, the compiler treats literals enclosed in quotation marks (`" "`) as `String`.  
+- **Type Characters.** Appending the identifier type character `$` to any identifier forces it to the `String` data type. `String` has no literal type character. However, the compiler treats literals enclosed in quotation marks (`" "`) as `String`.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.String?displayProperty=nameWithType> class.  
+- **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.String?displayProperty=nameWithType> class.  
   
 ## See also
+
 - <xref:System.String?displayProperty=nameWithType>
 - [Data Types](../../../visual-basic/language-reference/data-types/index.md)
 - [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)

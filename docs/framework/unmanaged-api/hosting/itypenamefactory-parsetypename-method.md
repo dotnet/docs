@@ -23,7 +23,7 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ParseTypeName (  
     [in]  LPCWSTR             szName,  
     [out] DWORD*              pError,  
@@ -41,4 +41,5 @@ HRESULT ParseTypeName (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)

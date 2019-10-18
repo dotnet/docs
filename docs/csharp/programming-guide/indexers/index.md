@@ -11,14 +11,14 @@ ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
 ---
 # Indexers (C# Programming Guide)
 
-Indexers allow instances of a class or struct to be indexed just like arrays. The indexed value can be set or retrieved without explicitly specifying a type or instance member. Indexers resemble [properties](../../../csharp/programming-guide/classes-and-structs/properties.md) except that their accessors take parameters.  
- 
- The following example defines a generic class with simple [get](../../../csharp/language-reference/keywords/get.md) and [set](../../../csharp/language-reference/keywords/set.md) accessor methods to assign and retrieve values. The `Program` class creates an instance of this class for storing strings.  
+Indexers allow instances of a class or struct to be indexed just like arrays. The indexed value can be set or retrieved without explicitly specifying a type or instance member. Indexers resemble [properties](../classes-and-structs/properties.md) except that their accessors take parameters.  
+
+ The following example defines a generic class with simple [get](../../language-reference/keywords/get.md) and [set](../../language-reference/keywords/set.md) accessor methods to assign and retrieve values. The `Program` class creates an instance of this class for storing strings.  
   
  [!code-csharp[indexers#1](../../../../samples/snippets/csharp/programming-guide/indexers/indexer-1.cs)]  
   
 > [!NOTE]
->  For more examples, see [Related Sections](../../../csharp/programming-guide/indexers/index.md#BKMK_RelatedSections).  
+> For more examples, see [Related Sections](./index.md#BKMK_RelatedSections).  
   
 ## Expression Body Definitions  
  
@@ -34,29 +34,29 @@ Starting with C# 7.0, both the get and set accessor can be an implemented as exp
   
 ## Indexers Overview  
   
--   Indexers enable objects to be indexed in a similar manner to arrays.  
+- Indexers enable objects to be indexed in a similar manner to arrays.  
   
--   A `get` accessor returns a value. A `set` accessor assigns a value.  
+- A `get` accessor returns a value. A `set` accessor assigns a value.  
   
--   The [this](../../../csharp/language-reference/keywords/this.md) keyword is used to define the indexer.  
+- The [this](../../language-reference/keywords/this.md) keyword is used to define the indexer.  
   
--   The [value](../../../csharp/language-reference/keywords/value.md) keyword is used to define the value being assigned by the `set` indexer.  
+- The [value](../../language-reference/keywords/value.md) keyword is used to define the value being assigned by the `set` indexer.  
   
--   Indexers do not have to be indexed by an integer value; it is up to you how to define the specific look-up mechanism.  
+- Indexers do not have to be indexed by an integer value; it is up to you how to define the specific look-up mechanism.  
   
--   Indexers can be overloaded.  
+- Indexers can be overloaded.  
   
--   Indexers can have more than one formal parameter, for example, when accessing a two-dimensional array.  
+- Indexers can have more than one formal parameter, for example, when accessing a two-dimensional array.  
   
-##  <a name="BKMK_RelatedSections"></a> Related Sections  
+## <a name="BKMK_RelatedSections"></a> Related Sections  
   
--   [Using Indexers](../../../csharp/programming-guide/indexers/using-indexers.md)  
+- [Using Indexers](./using-indexers.md)  
   
--   [Indexers in Interfaces](../../../csharp/programming-guide/indexers/indexers-in-interfaces.md)  
+- [Indexers in Interfaces](./indexers-in-interfaces.md)  
   
--   [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
+- [Comparison Between Properties and Indexers](./comparison-between-properties-and-indexers.md)  
   
--   [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
+- [Restricting Accessor Accessibility](../classes-and-structs/restricting-accessor-accessibility.md)  
   
 ## C# Language Specification  
 
@@ -64,5 +64,5 @@ For more information, see [Indexers](~/_csharplang/spec/classes.md#indexers) in 
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [C# Programming Guide](../index.md)
+- [Properties](../classes-and-structs/properties.md)

@@ -14,24 +14,24 @@ After you create a service, the next step is to create a WCF client proxy. A cli
 
  The basic steps for creating a WCF client include the following:
 
-1.  Compile the service code.
+1. Compile the service code.
 
-2.  Generate the WCF client proxy.
+2. Generate the WCF client proxy.
 
-3.  Instantiate the WCF client proxy.
+3. Instantiate the WCF client proxy.
 
-The WCF client proxy can be generated manually by using the Service Model Metadata Utility Tool (SvcUtil.exe) for more information see, [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). The WCF client proxy can also be generated within Visual Studio using the **Add Service Reference**  feature. To generate the WCF client proxy using either method the service must be running. If the service is self-hosted you must run the host. If the service is hosted in IIS/WAS you do not need to do anything else.
+The WCF client proxy can be generated manually by using the Service Model Metadata Utility Tool (SvcUtil.exe) for more information see, [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md). The WCF client proxy can also be generated within Visual Studio using the **Add Service Reference**  feature. To generate the WCF client proxy using either method the service must be running. If the service is self-hosted you must run the host. If the service is hosted in IIS/WAS you do not need to do anything else.
 
 ## ServiceModel Metadata Utility Tool
- The [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) is a command-line tool for generating code from metadata. The following use is an example of a basic Svcutil.exe command.
+ The [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) is a command-line tool for generating code from metadata. The following use is an example of a basic Svcutil.exe command.
 
-```
+```console
 Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
 ```
 
  Alternatively, you can use Svcutil.exe with Web Services Description Language (WSDL) and XML Schema definition language (XSD) files on the file system.
 
-```
+```console
 Svcutil.exe <list of WSDL and XSD files on file system>
 ```
 
@@ -39,11 +39,11 @@ Svcutil.exe <list of WSDL and XSD files on file system>
 
  You can also use the tool to generate configuration files.
 
-```
+```console
 Svcutil.exe <file1 [,file2]>
 ```
 
- If only one file name is given, that is the name of the output file. If two file names are given, then the first file is an input configuration file whose contents are merged with the generated configuration and written out into the second file. For more information about configuration, see [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md).
+ If only one file name is given, that is the name of the output file. If two file names are given, then the first file is an input configuration file whose contents are merged with the generated configuration and written out into the second file. For more information about configuration, see [Configuring Bindings for Services](configuring-bindings-for-wcf-services.md).
 
 > [!IMPORTANT]
 > Unsecured metadata requests pose certain risks in the same way that any unsecured network request does: If you are not certain that the endpoint you are communicating with is who it says it is, the information you retrieve might be metadata from a malicious service.
@@ -172,22 +172,22 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)
 
 Many exceptions thrown by a WCF client are caused by an exception on the service. Some examples of this are:
 
--   <xref:System.Net.Sockets.SocketException>: An existing connection was forcibly closed by the remote host.
+- <xref:System.Net.Sockets.SocketException>: An existing connection was forcibly closed by the remote host.
 
--   <xref:System.ServiceModel.CommunicationException>: The underlying connection was closed unexpectedly.
+- <xref:System.ServiceModel.CommunicationException>: The underlying connection was closed unexpectedly.
 
--   <xref:System.ServiceModel.CommunicationObjectAbortedException>: The socket connection was aborted. This could be caused by an error processing your message, a receive time-out being exceeded by the remote host, or an underlying network resource issue.
+- <xref:System.ServiceModel.CommunicationObjectAbortedException>: The socket connection was aborted. This could be caused by an error processing your message, a receive time-out being exceeded by the remote host, or an underlying network resource issue.
 
-When these types of exceptions occur, the best way to solve the problem is to turn on tracing on the service side and determine what exception occurred there. For more information about tracing, see [Tracing](../../../docs/framework/wcf/diagnostics/tracing/index.md) and [Using Tracing to Troubleshoot Your Application](../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).
+When these types of exceptions occur, the best way to solve the problem is to turn on tracing on the service side and determine what exception occurred there. For more information about tracing, see [Tracing](./diagnostics/tracing/index.md) and [Using Tracing to Troubleshoot Your Application](./diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md).
 
 ## See also
 
-- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
-- [How to: Access Services with a Duplex Contract](../../../docs/framework/wcf/feature-details/how-to-access-services-with-a-duplex-contract.md)
-- [How to: Call Service Operations Asynchronously](../../../docs/framework/wcf/feature-details/how-to-call-wcf-service-operations-asynchronously.md)
-- [How to: Access Services with One-Way and Request-Reply Contracts](../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
-- [How to: Access a WSE 3.0 Service](../../../docs/framework/wcf/feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
-- [Understanding Generated Client Code](../../../docs/framework/wcf/feature-details/understanding-generated-client-code.md)
-- [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](../../../docs/framework/wcf/feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
-- [Specifying Client Run-Time Behavior](../../../docs/framework/wcf/specifying-client-run-time-behavior.md)
-- [Configuring Client Behaviors](../../../docs/framework/wcf/configuring-client-behaviors.md)
+- [How to: Create a Client](how-to-create-a-wcf-client.md)
+- [How to: Access Services with a Duplex Contract](./feature-details/how-to-access-services-with-a-duplex-contract.md)
+- [How to: Call Service Operations Asynchronously](./feature-details/how-to-call-wcf-service-operations-asynchronously.md)
+- [How to: Access Services with One-Way and Request-Reply Contracts](./feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md)
+- [How to: Access a WSE 3.0 Service](./feature-details/how-to-access-a-wse-3-0-service-with-a-wcf-client.md)
+- [Understanding Generated Client Code](./feature-details/understanding-generated-client-code.md)
+- [How to: Improve the Startup Time of WCF Client Applications using the XmlSerializer](./feature-details/startup-time-of-wcf-client-applications-using-the-xmlserializer.md)
+- [Specifying Client Run-Time Behavior](specifying-client-run-time-behavior.md)
+- [Configuring Client Behaviors](configuring-client-behaviors.md)

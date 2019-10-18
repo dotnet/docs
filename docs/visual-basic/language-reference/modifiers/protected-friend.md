@@ -1,7 +1,7 @@
 ---
 title: "Protected Friend (Visual Basic)"
 ms.date: 05/10/2018
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Protected Friend keyword [Visual Basic]"
   - "Protected Friend keyword [Visual Basic], syntax"
 ---
@@ -14,8 +14,7 @@ The `Protected Friend` keyword combination is a member access modifier. It confe
 
 ## Rules
 
-- **Declaration Context.** You can use `Protected Friend` only at the class level. This means the declaration context for a `Protected` element must be a class, and cannot be a source file, namespace, interface, module, structure, or procedure. 
-
+**Declaration Context.** You can use `Protected Friend` only at the class level. This means the declaration context for a `Protected` element must be a class, and cannot be a source file, namespace, interface, module, structure, or procedure.
 
 ## See also
 

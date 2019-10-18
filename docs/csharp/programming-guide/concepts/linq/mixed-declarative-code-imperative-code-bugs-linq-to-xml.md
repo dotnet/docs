@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: fada62d0-0680-4e73-945a-2b00d7a507af
 ---
 # Mixed Declarative Code/Imperative Code Bugs (LINQ to XML) (C#)
-[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] contains various methods that allow you to modify an XML tree directly. You can add elements, delete elements, change the contents of an element, add attributes, and so on. This programming interface is described in [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md). If you are iterating through one of the axes, such as <xref:System.Xml.Linq.XContainer.Elements%2A>, and you are modifying the XML tree as you iterate through the axis, you can end up with some strange bugs.  
+[!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] contains various methods that allow you to modify an XML tree directly. You can add elements, delete elements, change the contents of an element, add attributes, and so on. This programming interface is described in [Modifying XML Trees (LINQ to XML) (C#)](./in-memory-xml-tree-modification-vs-functional-construction-linq-to-xml.md). If you are iterating through one of the axes, such as <xref:System.Xml.Linq.XContainer.Elements%2A>, and you are modifying the XML tree as you iterate through the axis, you can end up with some strange bugs.  
   
  This problem is sometimes known as "The Halloween Problem".  
   
@@ -161,7 +161,4 @@ XElement newRoot = new XElement("Root",
 );  
 Console.WriteLine(newRoot);  
 ```  
-  
-## See also
-
-- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)
+ 

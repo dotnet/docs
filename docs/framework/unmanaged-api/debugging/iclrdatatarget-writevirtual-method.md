@@ -23,7 +23,7 @@ Writes data from the specified buffer to the specified virtual memory address.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT WriteVirtual (  
     [in] CLRDATA_ADDRESS    address,  
     [in, size_is(bytesRequested)]   
@@ -33,7 +33,7 @@ HRESULT WriteVirtual (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A CLRDATA_ADDRESS that stores the virtual memory address.  
   
@@ -56,4 +56,5 @@ HRESULT WriteVirtual (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)

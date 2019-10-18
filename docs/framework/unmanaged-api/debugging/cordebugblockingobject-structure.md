@@ -22,7 +22,7 @@ Defines an object that is blocking a thread and the specific reason that the thr
   
 ## Syntax  
   
-```  
+```cpp  
 Typedef struct CorDebugBlockingObject  
 {  
 ICorDebugValue pBlockingObject;  
@@ -35,14 +35,14 @@ CorDebugBlockingReason blockingReason;
   
 |Member|Description|  
 |------------|-----------------|  
-|`pBlockingObject`|The object on which the thread is blocking. This object is valid only for the duration of the current synchronized state. If two threads are blocking on the same object within the same synchronized state, you may expect the [ICorDebugValue::GetAddress](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue-getaddress-method.md) method to return the same value. However, the interfaces may or may not be pointer equivalent.|  
+|`pBlockingObject`|The object on which the thread is blocking. This object is valid only for the duration of the current synchronized state. If two threads are blocking on the same object within the same synchronized state, you may expect the [ICorDebugValue::GetAddress](icordebugvalue-getaddress-method.md) method to return the same value. However, the interfaces may or may not be pointer equivalent.|  
 |`dwTimeout`|The number of milliseconds before the blocking operation will time out, or the value INFINITE, which indicates that it will not time out. The time-out value specifies the total length of time for the blocking operation, not the time that is still remaining.|  
 |`blockingReason`|The reason that the thread is blocked on this object.|  
   
 ## Remarks  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  
   
@@ -51,5 +51,6 @@ CorDebugBlockingReason blockingReason;
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
 ## See also
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

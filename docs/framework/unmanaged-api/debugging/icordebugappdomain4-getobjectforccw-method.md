@@ -10,14 +10,14 @@ Gets a managed object from a COM callable wrapper (CCW) pointer.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectForCCW(  
    [in]CORDB_ADDRESS ccwPointer,   
    [out]ICorDebugValue **ppManagedObject  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ccwPointer`  
  [in] A COM callable wrapper (CCW) pointer.  
   
@@ -36,5 +36,6 @@ HRESULT GetObjectForCCW(
  **.NET Framework Versions:** [!INCLUDE[net_current_v46plus](../../../../includes/net-current-v46plus-md.md)]  
   
 ## See also
+
 - [ICorDebugAppDomain4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain4-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

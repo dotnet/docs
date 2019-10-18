@@ -30,8 +30,9 @@ This page discusses the security implications of storing data in the registry.
  When you create a registry value, you need to decide what to do if that value already exists. Another process, perhaps a malicious one, may have already created the value and have access to it. When you put data in the registry value, the data is available to the other process. To prevent this, use the `GetValue` method. It returns `Nothing` if the key does not already exist.  
   
 > [!IMPORTANT]
->  When reading the registry from a Web application, the identity of current user depends on the authentication and impersonation implemented in the Web application.  
+> When reading the registry from a Web application, the identity of current user depends on the authentication and impersonation implemented in the Web application.  
   
 ## See also
+
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
 - [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)

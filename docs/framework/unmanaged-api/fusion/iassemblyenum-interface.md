@@ -24,17 +24,18 @@ Represents an enumerator for an array of `IAssemblyName` objects.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Clone Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-clone-method.md)|Creates a shallow copy of this `IAssemblyEnum` object.|  
-|[GetNextAssembly Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-getnextassembly-method.md)|Gets a pointer to the next `IAssemblyName` contained in this `IAssemblyEnum` object.|  
-|[Reset Method](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-reset-method.md)|Resets this `IAssemblyEnum` object to its starting position.|  
+|[Clone Method](iassemblyenum-clone-method.md)|Creates a shallow copy of this `IAssemblyEnum` object.|  
+|[GetNextAssembly Method](iassemblyenum-getnextassembly-method.md)|Gets a pointer to the next `IAssemblyName` contained in this `IAssemblyEnum` object.|  
+|[Reset Method](iassemblyenum-reset-method.md)|Resets this `IAssemblyEnum` object to its starting position.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
+
+- [Fusion Interfaces](fusion-interfaces.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)

@@ -26,7 +26,7 @@ Repeats a block of statements while a `Boolean` condition is `True` or until the
   
 ## Syntax  
   
-```  
+```vb  
 Do { While | Until } condition  
     [ statements ]  
     [ Continue Do ]  
@@ -34,7 +34,7 @@ Do { While | Until } condition
     [ Exit Do ]  
     [ statements ]  
 Loop  
--or-  
+' -or-  
 Do  
     [ statements ]  
     [ Continue Do ]  
@@ -69,7 +69,7 @@ Loop { While | Until } condition
  You can nest `Do` loops by putting one loop within another. You can also nest different kinds of control structures within each other. For more information, see [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md).  
   
 > [!NOTE]
->  The `Do...Loop` structure gives you more flexibility than the [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md) because it enables you to decide whether to end the loop when `condition` stops being `True` or when it first becomes `True`. It also enables you to test `condition` at either the start or the end of the loop.  
+> The `Do...Loop` structure gives you more flexibility than the [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md) because it enables you to decide whether to end the loop when `condition` stops being `True` or when it first becomes `True`. It also enables you to test `condition` at either the start or the end of the loop.  
   
 ## Exit Do  
  The [Exit Do](../../../visual-basic/language-reference/statements/exit-statement.md) statement can provide an alternative way to exit a `Do…Loop`. `Exit Do` transfers control immediately to the statement that follows the `Loop` statement.  
@@ -83,24 +83,25 @@ Loop { While | Until } condition
 ## Example  
  In the following example, the statements in the loop continue to run until the `index` variable is greater than 10. The `Until` clause is at the end of the loop.  
   
- [!code-vb[VbVbalrStatements#131](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#131](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#131)]  
   
 ## Example  
  The following example uses a `While` clause instead of an `Until` clause, and `condition` is tested at the start of the loop instead of at the end.  
   
- [!code-vb[VbVbalrStatements#132](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#132](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#132)]  
   
 ## Example  
  In the following example, `condition` stops the loop when the `index` variable is greater than 100. The `If` statement in the loop, however, causes the `Exit Do` statement to stop the loop when the index variable is greater than 10.  
   
- [!code-vb[VbVbalrStatements#133](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_3.vb)]  
+ [!code-vb[VbVbalrStatements#133](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#133)]  
   
 ## Example  
  The following example reads all lines in a text file. The <xref:System.IO.File.OpenText%2A> method opens the file and returns a <xref:System.IO.StreamReader> that reads the characters. In the `Do...Loop` condition, the <xref:System.IO.StreamReader.Peek%2A> method of the `StreamReader` determines whether there are any additional characters.  
   
- [!code-vb[VbVbalrStatements#134](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/do-loop-statement_4.vb)]  
+ [!code-vb[VbVbalrStatements#134](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class10.vb#134)]  
   
 ## See also
+
 - [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
 - [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
 - [Boolean Data Type](../../../visual-basic/language-reference/data-types/boolean-data-type.md)

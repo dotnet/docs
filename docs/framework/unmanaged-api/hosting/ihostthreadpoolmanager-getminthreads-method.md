@@ -23,13 +23,13 @@ Gets the minimum number of idle threads that the host maintains in the thread po
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMinThreads (  
     [out] DWORD *MinThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `MinThreads`  
  [out] A pointer to the minimum number of idle worker threads that the host currently maintains.  
   
@@ -58,6 +58,7 @@ HRESULT GetMinThreads (
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - <xref:System.Threading.ThreadPool.GetMinThreads%2A>
 - <xref:System.Threading.ThreadPool>
 - [GetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getmaxthreads-method.md)

@@ -11,7 +11,7 @@ The <xref:System.Data.SqlClient.SqlBulkCopy> class can be used to write data onl
  A few of the code samples demonstrate how to use one <xref:System.Data.SqlClient.SqlBulkCopy> class to write to multiple tables. For these samples, the **BulkCopyDemoOrderHeader** and **BulkCopyDemoOrderDetail** tables are used as the destination tables. These tables are based on the **Sales.SalesOrderHeader** and **Sales.SalesOrderDetail** tables in **AdventureWorks**.  
   
 > [!NOTE]
->  The **SqlBulkCopy** code samples are provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are located in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
+> The **SqlBulkCopy** code samples are provided to demonstrate the syntax for using **SqlBulkCopy** only. If the source and destination tables are located in the same SQL Server instance, it is easier and faster to use a Transact-SQL `INSERT … SELECT` statement to copy the data.  
   
 ## Table Setup  
  To create the tables necessary for the code samples to run correctly, you must run the following Transact-SQL statements in a SQL Server database.  
@@ -76,5 +76,6 @@ CREATE TABLE [dbo].[BulkCopyDemoOrderDetail]([SalesOrderID] [int] NOT NULL,
 ```  
   
 ## See also
-- [Bulk Copy Operations in SQL Server](../../../../../docs/framework/data/adonet/sql/bulk-copy-operations-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+- [Bulk Copy Operations in SQL Server](bulk-copy-operations-in-sql-server.md)
+- [ADO.NET Overview](../ado-net-overview.md)

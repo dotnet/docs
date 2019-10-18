@@ -16,7 +16,7 @@ Concatenates a `String` expression to a `String` variable or property and assign
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty &= expression  
 ```  
   
@@ -36,9 +36,10 @@ variableorproperty &= expression
 ## Example  
  The following example uses the `&=` operator to concatenate two `String` variables and assign the result to the first variable.  
   
- [!code-vb[VbVbalrOperators#3](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/and-assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#3)]  
   
 ## See also
+
 - [& Operator](../../../visual-basic/language-reference/operators/concatenation-operator.md)
 - [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)
 - [Assignment Operators](../../../visual-basic/language-reference/operators/assignment-operators.md)

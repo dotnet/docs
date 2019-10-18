@@ -14,10 +14,10 @@ ms.assetid: 94b81775-5a22-4975-8c47-8620c40c3f35
 # \<remove> Element for connectionManagement (Network Settings)
 Removes an IP address or DNS name from the connection management list.  
   
- \<configuration>  
-\<system.net>  
-\<connectionManagement>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ Removes an IP address or DNS name from the connection management list.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[connectionManagement](../../../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
+|[connectionManagement](connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
   
 ## Remarks  
  The `remove` element removes the connection management list entry for the specified server.  
@@ -69,6 +69,7 @@ Removes an IP address or DNS name from the connection management list.
 ```  
   
 ## See also
+
 - <xref:System.Net.ServicePoint>
 - <xref:System.Net.ServicePointManager>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

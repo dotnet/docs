@@ -1,0 +1,69 @@
+- name: Assemblies in .NET
+  href: index.md
+  items:
+  - name: Assembly contents
+    href: contents.md
+  - name: Assembly manifest
+    href: manifest.md
+  - name: Strong-named assemblies
+    href: strong-named.md
+  - name: Assembly security considerations
+    href: security-considerations.md
+  - name: Assembly versioning
+    href: versioning.md
+  - name: Assemblies and side-by-side execution
+    href: side-by-side-execution.md
+  - name: Assembly file format
+    href: file-format.md
+  - name: "How to: Use and debug assembly unloadability in .NET Core"
+    href: unloadability.md
+  - name: Reference assemblies
+    href: reference-assemblies.md
+  - name: Resolve assembly loads
+    href: resolve-loads.md
+  - name: Program with assemblies
+    href: program.md
+    items:
+    - name: Create assemblies
+      href: create.md
+    - name: Assembly names
+      href: names.md
+    - name: "How to: Find an assembly's fully qualified name"
+      href: find-fully-qualified-name.md
+    - name: Assembly location
+      href: location.md
+    - name: Set assembly attributes
+      href: set-attributes.md
+    - name: Create and use strong-named assemblies
+      href: create-use-strong-named.md
+      items:
+      - name: "How to: Create a public-private key pair"
+        href: create-public-private-key-pair.md
+      - name: "How to: Sign an assembly with a strong name"
+        href: sign-strong-name.md
+      - name: Enhanced strong naming
+        href: enhanced-strong-naming.md
+      - name: "How to: Reference a strong-named assembly"
+        href: reference-strong-named.md
+      - name: "How to: Disable the strong-name bypass feature"
+        href: disable-strong-name-bypass-feature.md
+    - name: Delay-sign an assembly
+      href: delay-sign.md
+    - name: "How to: View assembly contents"
+      href: view-contents.md
+    - name: Type forwarding in the common language runtime
+      href: type-forwarding.md
+    - name: Friend assemblies
+      href: friend.md
+      items:
+      - name: "How to: Create unsigned friend assemblies"
+        href: create-unsigned-friend.md
+      - name: "How to: Create signed friend assemblies"
+        href: create-signed-friend.md
+    - name: "How to: Determine if a file is an assembly"
+      href: identify.md
+    - name: "How to: Load and unload assemblies"
+      href: load-unload.md
+    - name: "Walkthrough: Embed types from managed assemblies in Visual Studio"
+      href: embed-types-visual-studio.md
+

@@ -1,3 +1,0 @@
-Jump:   FileOpen(1, "testFile", OpenMode.Input)
-        ' ...
-120:    FileClose(1)

@@ -23,12 +23,12 @@ Gets the native address and frame information for the exception clause (`catch`/
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNotifiedExceptionClauseInfo(  
     [out] COR_PRF_EX_CLAUSE_INFO *pinfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pinfo`  
  [out] A pointer to a [COR_PRF_EX_CLAUSE_INFO](../../../../docs/framework/unmanaged-api/profiling/cor-prf-ex-clause-info-structure.md) structure that describes the current exception clause instance and its associated frame.  
   
@@ -47,5 +47,6 @@ HRESULT GetNotifiedExceptionClauseInfo(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
 - [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)

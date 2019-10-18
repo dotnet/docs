@@ -13,46 +13,46 @@ This topic discusses token handlers in WIF and how they are used to process toke
 ## Built-In Security Token Handlers in WIF  
  WIF 4.5 includes nine security token handler classes that derive from the abstract base class <xref:System.IdentityModel.Tokens.SecurityTokenHandler>:  
   
--   <xref:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler>  
   
--   <xref:System.IdentityModel.Tokens.KerberosSecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.KerberosSecurityTokenHandler>  
   
--   <xref:System.IdentityModel.Tokens.RsaSecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.RsaSecurityTokenHandler>  
   
--   <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler>  
   
--   <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>  
   
--   <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler>  
   
--   <xref:System.IdentityModel.Tokens.UserNameSecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.UserNameSecurityTokenHandler>  
   
--   <xref:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler>  
   
--   <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler>  
+- <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler>  
   
 ## Adding a Custom Token Handler  
  Some token types, such as Simple Web Tokens (SWT) and JSON Web Tokens (JWT) do not have built-in token handlers provided by WIF. For these token types and for others that do not have a built-in handler, you need to perform the following steps to create a custom token handler.  
   
 #### Adding a custom token handler  
   
-1.  Create a new class that derives from <xref:System.IdentityModel.Tokens.SecurityTokenHandler>.  
+1. Create a new class that derives from <xref:System.IdentityModel.Tokens.SecurityTokenHandler>.  
   
-2.  Override the following methods and provide your own implementation:  
+2. Override the following methods and provide your own implementation:  
   
-    -   <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A>  
+    - <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanReadToken%2A>  
   
-    -   <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A>  
+    - <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ReadToken%2A>  
   
-    -   <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanWriteToken%2A>  
+    - <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanWriteToken%2A>  
   
-    -   <xref:System.IdentityModel.Tokens.SecurityTokenHandler.WriteToken%2A>  
+    - <xref:System.IdentityModel.Tokens.SecurityTokenHandler.WriteToken%2A>  
   
-    -   <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanValidateToken%2A>  
+    - <xref:System.IdentityModel.Tokens.SecurityTokenHandler.CanValidateToken%2A>  
   
-    -   <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A>  
+    - <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A>  
   
-3.  Add a reference to the new custom token handler in the *Web.config* or *App.config* file, within the **\<system.identityModel>** section that applies to WIF. For example, the following configuration markup specifies a new token handler named **MyCustomTokenHandler** that resides in the **CustomToken** namespace.  
+3. Add a reference to the new custom token handler in the *Web.config* or *App.config* file, within the **\<system.identityModel>** section that applies to WIF. For example, the following configuration markup specifies a new token handler named **MyCustomTokenHandler** that resides in the **CustomToken** namespace.  
   
     ```xml  
     <system.identityModel>  

@@ -51,4 +51,5 @@ class MsmqTransportBindingElement : MsmqBindingElementBase
 |Namespace|Defined in root\ServiceModel|  
   
 ## See also
+
 - <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>

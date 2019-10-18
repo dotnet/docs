@@ -18,7 +18,7 @@ The first five topics of this section are designed to help you determine when to
  The rest of the topics in this section cover advanced topics, including the interaction of managed threading with the Windows operating system.  
   
 > [!NOTE]
->  In the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the Task Parallel Library and PLINQ provide APIs for task and data parallelism in multi-threaded programs. For more information, see [Parallel Programming](../../../docs/standard/parallel-programming/index.md).  
+> In the .NET Framework 4, the Task Parallel Library and PLINQ provide APIs for task and data parallelism in multi-threaded programs. For more information, see [Parallel Programming](../../../docs/standard/parallel-programming/index.md).  
   
 ## In this section
 
@@ -37,14 +37,8 @@ The first five topics of this section are designed to help you determine when to
  [Managed and Unmanaged Threading in Windows](../../../docs/standard/threading/managed-and-unmanaged-threading-in-windows.md)  
  Discusses the relationship between managed and unmanaged threading, lists managed equivalents for Windows threading APIs, and discusses the interaction of COM apartments and managed threads.  
   
- [Thread.Suspend, Garbage Collection, and Safe Points](../../../docs/standard/threading/thread-suspend-garbage-collection-and-safe-points.md)  
- Describes thread suspension and garbage collection.  
-  
  [Thread Local Storage: Thread-Relative Static Fields and Data Slots](../../../docs/standard/threading/thread-local-storage-thread-relative-static-fields-and-data-slots.md)  
  Describes thread-relative storage mechanisms.  
-  
- [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)  
- Describes how asynchronous or long-running synchronous operations can be canceled by using a cancellation token.  
   
 ## Reference
 

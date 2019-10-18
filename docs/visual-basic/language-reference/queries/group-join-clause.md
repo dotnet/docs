@@ -17,7 +17,7 @@ Combines two collections into a single hierarchical collection. The join operati
   
 ## Syntax  
   
-```  
+```vb  
 Group Join element [As type] In collection _  
   On key1 Equals key2 [ And key3 Equals key4 [... ] ] _  
   Into expressionList  
@@ -47,9 +47,10 @@ Group Join element [As type] In collection _
 ## Example  
  The following code example joins two collections by using the `Group Join` clause.  
   
- [!code-vb[VbSimpleQuerySamples#14](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/group-join-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#14)]  
   
 ## See also
+
 - [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
 - [Queries](../../../visual-basic/language-reference/queries/index.md)
 - [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)

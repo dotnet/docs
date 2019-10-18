@@ -18,18 +18,17 @@ When you are building controls that interact with data, you will sometimes find 
 ## Example  
  The following code example demonstrates how to bind a <xref:System.Windows.Forms.DataGridView> control to a custom type by using a <xref:System.Windows.Forms.BindingSource> component. When you run the example, you'll notice the <xref:System.Windows.Forms.DataGridView> has labeled columns that reflect the properties of a `Customer` object, before the control is populated with data. The example has an Add Customer button to add data to the <xref:System.Windows.Forms.DataGridView> control. When you click the button, a new `Customer` object is added to the <xref:System.Windows.Forms.BindingSource>. In a real-world scenario, the data might be obtained by a call to a Web service or other data source.  
   
- [!code-csharp[System.Windows.Forms.DataConnector.BindingToType#1](../../../../samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.BindingToType/CS/form1.cs#1)]
- [!code-vb[System.Windows.Forms.DataConnector.BindingToType#1](../../../../samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.BindingToType/VB/form1.vb#1)]  
+ [!code-csharp[System.Windows.Forms.DataConnector.BindingToType#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.BindingToType/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.DataConnector.BindingToType#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.BindingToType/VB/form1.vb#1)]  
   
 ## Compiling the Code  
  This example requires:  
   
--   References to the System and System.Windows.Forms assemblies.  
-  
- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) or [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md). You can also build this example in Visual Studio by pasting the code into a new project.  
+- References to the System and System.Windows.Forms assemblies.  
   
 ## See also
+
 - <xref:System.Windows.Forms.BindingNavigator>
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.BindingSource>
-- [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)
+- [BindingSource Component](bindingsource-component.md)

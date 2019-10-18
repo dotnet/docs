@@ -1,0 +1,597 @@
+- name: Advanced WPF Areas
+  href: index.md
+  items:
+  - name: WPF Architecture
+    href: wpf-architecture.md
+  - name: XAML in WPF
+    href: xaml-in-wpf.md
+    items:
+    - name: XAML Overview (WPF)
+      href: xaml-overview-wpf.md
+    - name: XAML Syntax In Detail
+      href: xaml-syntax-in-detail.md
+    - name: Code-Behind and XAML in WPF
+      href: code-behind-and-xaml-in-wpf.md
+    - name: XAML and Custom Classes for WPF
+      href: xaml-and-custom-classes-for-wpf.md
+    - name: Markup Extensions and WPF XAML
+      href: markup-extensions-and-wpf-xaml.md
+    - name: XAML Namespaces and Namespace Mapping for WPF XAML
+      href: xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md
+    - name: WPF XAML Namescopes
+      href: wpf-xaml-namescopes.md
+    - name: Inline Styles and Templates
+      href: inline-styles-and-templates.md
+    - name: TypeConverters and XAML
+      href: typeconverters-and-xaml.md
+    - name: WPF XAML Extensions
+      href: wpf-xaml-extensions.md
+      items:
+      - name: Binding Markup Extension
+        href: binding-markup-extension.md
+      - name: ColorConvertedBitmap Markup Extension
+        href: colorconvertedbitmap-markup-extension.md
+      - name: ComponentResourceKey Markup Extension
+        href: componentresourcekey-markup-extension.md
+      - name: DateTime XAML Syntax
+        href: datetime-xaml-syntax.md
+      - name: DynamicResource Markup Extension
+        href: dynamicresource-markup-extension.md
+      - name: RelativeSource MarkupExtension
+        href: relativesource-markupextension.md
+      - name: StaticResource Markup Extension
+        href: staticresource-markup-extension.md
+      - name: TemplateBinding Markup Extension
+        href: templatebinding-markup-extension.md
+      - name: ThemeDictionary Markup Extension
+        href: themedictionary-markup-extension.md
+      - name: PropertyPath XAML Syntax
+        href: propertypath-xaml-syntax.md
+      - name: "PresentationOptions:Freeze Attribute"
+        href: presentationoptions-freeze-attribute.md
+    - name: "Markup Compatibility (mc:) Language Features"
+      href: markup-compatibility-mc-language-features.md
+      items:
+      - name: "mc:Ignorable Attribute"
+        href: mc-ignorable-attribute.md
+      - name: "mc:ProcessContent Attribute"
+        href: mc-processcontent-attribute.md
+  - name: Base Element Classes
+    href: base-elements.md
+    items:
+    - name: Base Elements Overview
+      href: base-elements-overview.md
+    - name: Freezable Objects Overview
+      href: freezable-objects-overview.md
+    - name: Alignment, Margins, and Padding Overview
+      href: alignment-margins-and-padding-overview.md
+    - name: How-to Topics
+      href: base-elements-how-to-topics.md
+      items:
+      - name: Make a UIElement Transparent or Semi-Transparent
+        href: how-to-make-a-uielement-transparent-or-semi-transparent.md
+      - name: Animate the Size of a FrameworkElement
+        href: how-to-animate-the-size-of-a-frameworkelement.md
+      - name: Determine Whether a Freezable Is Frozen
+        href: how-to-determine-whether-a-freezable-is-frozen.md
+      - name: Handle a Loaded Event
+        href: how-to-handle-a-loaded-event.md
+      - name: Set Margins of Elements and Controls
+        href: how-to-set-margins-of-elements-and-controls.md
+      - name: Make a Freezable Read-Only
+        href: how-to-make-a-freezable-read-only.md
+      - name: Obtain a Writable Copy of a Read-Only Freezable
+        href: how-to-obtain-a-writable-copy-of-a-read-only-freezable.md
+      - name: Flip a UIElement Horizontally or Vertically
+        href: how-to-flip-a-uielement-horizontally-or-vertically.md
+      - name: Use a ThicknessConverter Object
+        href: how-to-use-a-thicknessconverter-object.md
+      - name: Handle the ContextMenuOpening Event
+        href: how-to-handle-the-contextmenuopening-event.md
+  - name: Element Tree and Serialization
+    href: element-tree-and-serialization.md
+    items:
+    - name: Trees in WPF
+      href: trees-in-wpf.md
+    - name: Serialization Limitations of XamlWriter.Save
+      href: serialization-limitations-of-xamlwriter-save.md
+    - name: Initialization for Object Elements Not in an Object Tree
+      href: initialization-for-object-elements-not-in-an-object-tree.md
+    - name: How-to Topics
+      href: element-tree-and-serialization-how-to-topics.md
+      items:
+      - name: Find an Element by Its Name
+        href: how-to-find-an-element-by-its-name.md
+      - name: Override the Logical Tree
+        href: how-to-override-the-logical-tree.md
+  - name: WPF Property System
+    href: properties-wpf.md
+    items:
+    - name: Dependency Properties Overview
+      href: dependency-properties-overview.md
+    - name: Attached Properties Overview
+      href: attached-properties-overview.md
+    - name: Custom Dependency Properties
+      href: custom-dependency-properties.md
+    - name: Dependency Property Metadata
+      href: dependency-property-metadata.md
+    - name: Dependency Property Callbacks and Validation
+      href: dependency-property-callbacks-and-validation.md
+    - name: Framework Property Metadata
+      href: framework-property-metadata.md
+    - name: Dependency Property Value Precedence
+      href: dependency-property-value-precedence.md
+    - name: Read-Only Dependency Properties
+      href: read-only-dependency-properties.md
+    - name: Property Value Inheritance
+      href: property-value-inheritance.md
+    - name: Dependency Property Security
+      href: dependency-property-security.md
+    - name: Safe Constructor Patterns for DependencyObjects
+      href: safe-constructor-patterns-for-dependencyobjects.md
+    - name: Collection-Type Dependency Properties
+      href: collection-type-dependency-properties.md
+    - name: XAML Loading and Dependency Properties
+      href: xaml-loading-and-dependency-properties.md
+    - name: How-to Topics
+      href: properties-how-to-topics.md
+      items:
+      - name: Implement a Dependency Property
+        href: how-to-implement-a-dependency-property.md
+      - name: Add an Owner Type for a Dependency Property
+        href: how-to-add-an-owner-type-for-a-dependency-property.md
+      - name: Register an Attached Property
+        href: how-to-register-an-attached-property.md
+      - name: Override Metadata for a Dependency Property
+        href: how-to-override-metadata-for-a-dependency-property.md
+  - name: Events
+    href: events-wpf.md
+    items:
+    - name: Routed Events Overview
+      href: routed-events-overview.md
+    - name: Attached Events Overview
+      href: attached-events-overview.md
+    - name: Object Lifetime Events
+      href: object-lifetime-events.md
+    - name: Marking Routed Events as Handled, and Class Handling
+      href: marking-routed-events-as-handled-and-class-handling.md
+    - name: Preview Events
+      href: preview-events.md
+    - name: Property Change Events
+      href: property-change-events.md
+    - name: Visual Basic and WPF Event Handling
+      href: visual-basic-and-wpf-event-handling.md
+    - name: Weak Event Patterns
+      href: weak-event-patterns.md
+    - name: How-to Topics
+      href: events-how-to-topics.md
+      items:
+      - name: Add an Event Handler Using Code
+        href: how-to-add-an-event-handler-using-code.md
+      - name: Handle a Routed Event
+        href: how-to-handle-a-routed-event.md
+      - name: Create a Custom Routed Event
+        href: how-to-create-a-custom-routed-event.md
+      - name: Find the Source Element in an Event Handler
+        href: how-to-find-the-source-element-in-an-event-handler.md
+      - name: Add Class Handling for a Routed Event
+        href: how-to-add-class-handling-for-a-routed-event.md
+  - name: Input
+    href: input-wpf.md
+    items:
+    - name: Input Overview
+      href: input-overview.md
+    - name: Commanding Overview
+      href: commanding-overview.md
+    - name: Focus Overview
+      href: focus-overview.md
+    - name: Styling for Focus in Controls, and FocusVisualStyle
+      href: styling-for-focus-in-controls-and-focusvisualstyle.md
+    - name: "Walkthrough: Creating Your First Touch Application"
+      href: walkthrough-creating-your-first-touch-application.md
+    - name: How-to Topics
+      href: input-and-commands-how-to-topics.md
+      items:
+      - name: Enable a Command
+        href: how-to-enable-a-command.md
+      - name: Change the Cursor Type
+        href: how-to-change-the-cursor-type.md
+      - name: Change the Color of an Element Using Focus Events
+        href: how-to-change-the-color-of-an-element-using-focus-events.md
+      - name: Apply a FocusVisualStyle to a Control
+        href: how-to-apply-a-focusvisualstyle-to-a-control.md
+      - name: Detect When the Enter Key is Pressed
+        href: how-to-detect-when-the-enter-key-pressed.md
+      - name: Create a Rollover Effect Using Events
+        href: how-to-create-a-rollover-effect-using-events.md
+      - name: Make an Object Follow the Mouse Pointer
+        href: how-to-make-an-object-follow-the-mouse-pointer.md
+      - name: Create a RoutedCommand
+        href: how-to-create-a-routedcommand.md
+      - name: Implement ICommandSource
+        href: how-to-implement-icommandsource.md
+      - name: Hook Up a Command to a Control with No Command Support
+        href: how-to-hook-up-a-command-to-a-control-with-no-command-support.md
+      - name: Hook Up a Command to a Control with Command Support
+        href: how-to-hook-up-a-command-to-a-control-with-command-support.md
+    - name: Digital Ink
+      href: digital-ink.md
+      items:
+      - name: Overviews
+        href: digital-ink-overviews.md
+        items:
+        - name: Getting Started with Ink
+          href: getting-started-with-ink.md
+        - name: Collecting Ink
+          href: collecting-ink.md
+        - name: Handwriting Recognition
+          href: handwriting-recognition.md
+        - name: Storing Ink
+          href: storing-ink.md
+        - name: "The Ink Object Model: Windows Forms and COM versus WPF"
+          href: the-ink-object-model-windows-forms-and-com-versus-wpf.md
+        - name: Advanced Ink Handling
+          href: advanced-ink-handling.md
+          items:
+          - name: Custom Rendering Ink
+            href: custom-rendering-ink.md
+          - name: Intercepting Input from the Stylus
+            href: intercepting-input-from-the-stylus.md
+          - name: Creating an Ink Input Control
+            href: creating-an-ink-input-control.md
+          - name: The Ink Threading Model
+            href: the-ink-threading-model.md
+      - name: How-to Topics
+        href: digital-ink-how-to-topics.md
+        items:
+        - name: Select Ink from a Custom Control
+          href: how-to-select-ink-from-a-custom-control.md
+        - name: Add Custom Data to Ink Data
+          href: how-to-add-custom-data-to-ink-data.md
+        - name: Erase Ink on a Custom Control
+          href: how-to-erase-ink-on-a-custom-control.md
+        - name: Recognize Application Gestures
+          href: how-to-recognize-application-gestures.md
+        - name: Drag and Drop Ink
+          href: how-to-drag-and-drop-ink.md
+        - name: Data Bind to an InkCanvas
+          href: how-to-data-bind-to-an-inkcanvas.md
+        - name: Analyze Ink with Analysis Hints
+          href: how-to-analyze-ink-with-analysis-hints.md
+        - name: Rotate Ink
+          href: how-to-rotate-ink.md
+        - name: Disable the RealTimeStylus for WPF Applications
+          href: disable-the-realtimestylus-for-wpf-applications.md
+  - name: Drag and Drop
+    href: drag-and-drop.md
+    items:
+    - name: Drag and Drop Overview
+      href: drag-and-drop-overview.md
+    - name: Data and Data Objects
+      href: data-and-data-objects.md
+    - name: "Walkthrough: Enabling Drag and Drop on a User Control"
+      href: walkthrough-enabling-drag-and-drop-on-a-user-control.md
+    - name: How-to Topics
+      href: drag-and-drop-how-to-topics.md
+      items:
+      - name: Open a File That is Dropped on a RichTextBox Control
+        href: how-to-open-a-file-that-is-dropped-on-a-richtextbox-control.md
+      - name: Create a Data Object
+        href: how-to-create-a-data-object.md
+      - name: Determine if a Data Format is Present in a Data Object
+        href: how-to-determine-if-a-data-format-is-present-in-a-data-object.md
+      - name: List the Data Formats in a Data Object
+        href: how-to-list-the-data-formats-in-a-data-object.md
+      - name: Retrieve Data in a Particular Data Format
+        href: how-to-retrieve-data-in-a-particular-data-format.md
+      - name: Store Multiple Data Formats in a Data Object
+        href: how-to-store-multiple-data-formats-in-a-data-object.md
+  - name: Resources
+    href: resources-wpf.md
+    items:
+    - name: XAML Resources
+      href: xaml-resources.md
+      items:
+      - name: Resources and Code
+        href: resources-and-code.md
+      - name: Merged Resource Dictionaries
+        href: merged-resource-dictionaries.md
+      - name: How-to Topics
+        href: resources-how-to-topics.md
+        items:
+        - name: Define and Reference a Resource
+          href: how-to-define-and-reference-a-resource.md
+        - name: Use Application Resources
+          href: how-to-use-application-resources.md
+        - name: Use SystemFonts
+          href: how-to-use-systemfonts.md
+        - name: Use System Fonts Keys
+          href: how-to-use-system-fonts-keys.md
+        - name: Use SystemParameters
+          href: how-to-use-systemparameters.md
+        - name: Use System Parameters Keys
+          href: how-to-use-system-parameters-keys.md
+  - name: Documents
+    href: documents.md
+    items:
+    - name: Documents in WPF
+      href: documents-in-wpf.md
+    - name: Document Serialization and Storage
+      href: document-serialization-and-storage.md
+    - name: Annotations
+      href: annotations.md
+      items:
+      - name: Annotations Overview
+        href: annotations-overview.md
+      - name: Annotations Schema
+        href: annotations-schema.md
+    - name: Flow Content
+      href: flow-content.md
+      items:
+      - name: Flow Document Overview
+        href: flow-document-overview.md
+      - name: TextElement Content Model Overview
+        href: textelement-content-model-overview.md
+      - name: Table Overview
+        href: table-overview.md
+      - name: How-to Topics
+        href: flow-content-elements-how-to-topics.md
+        items:
+        - name: Adjust Spacing Between Paragraphs
+          href: how-to-adjust-spacing-between-paragraphs.md
+        - name: Build a Table Programmatically
+          href: how-to-build-a-table-programmatically.md
+        - name: Change the FlowDirection of Content Programmatically
+          href: how-to-change-the-flowdirection-of-content-programmatically.md
+        - name: Change the TextWrapping Property Programmatically
+          href: how-to-change-the-textwrapping-property-programmatically.md
+        - name: Define a Table with XAML
+          href: how-to-define-a-table-with-xaml.md
+        - name: Alter the Typography of Text
+          href: how-to-alter-the-typography-of-text.md
+        - name: Enable Text Trimming
+          href: how-to-enable-text-trimming.md
+        - name: Insert an Element Into Text Programmatically
+          href: how-to-insert-an-element-into-text-programmatically.md
+        - name: Manipulate Flow Content Elements through the Blocks Property
+          href: how-to-manipulate-flow-content-elements-through-the-blocks-property.md
+        - name: Manipulate Flow Content Elements through the Inlines Property
+          href: how-to-manipulate-flow-content-elements-through-the-inlines-property.md
+        - name: Manipulate a FlowDocument through the Blocks Property
+          href: how-to-manipulate-a-flowdocument-through-the-blocks-property.md
+        - name: Manipulate a Table's Columns through the Columns Property
+          href: how-to-manipulate-table-columns-through-the-columns-property.md
+        - name: Manipulate a Table's Row Groups through the RowGroups Property
+          href: how-to-manipulate-table-row-groups-through-the-rowgroups-property.md
+        - name: Use Flow Content Elements
+          href: how-to-use-flow-content-elements.md
+        - name: Use FlowDocument Column-Separating Attributes
+          href: how-to-use-flowdocument-column-separating-attributes.md
+    - name: Typography
+      href: typography.md
+      items:
+      - name: Typography in WPF
+        href: typography-in-wpf.md
+      - name: ClearType Overview
+        href: cleartype-overview.md
+      - name: ClearType Registry Settings
+        href: cleartype-registry-settings.md
+      - name: Drawing Formatted Text
+        href: drawing-formatted-text.md
+      - name: Advanced Text Formatting
+        href: advanced-text-formatting.md
+      - name: Fonts
+        href: fonts-wpf.md
+        items:
+        - name: OpenType Font Features
+          href: opentype-font-features.md
+        - name: Packaging Fonts with Applications
+          href: packaging-fonts-with-applications.md
+        - name: Sample OpenType Font Pack
+          href: sample-opentype-font-pack.md
+        - name: How-to Topics
+          href: fonts-how-to-topics.md
+          items:
+          - name: Enumerate System Fonts
+            href: how-to-enumerate-system-fonts.md
+          - name: Use the FontSizeConverter Class
+            href: how-to-use-the-fontsizeconverter-class.md
+      - name: Glyphs
+        href: glyphs.md
+        items:
+        - name: Introduction to the GlyphRun Object and Glyphs Element
+          href: introduction-to-the-glyphrun-object-and-glyphs-element.md
+        - name: "How to: Draw Text Using Glyphs"
+          href: draw-text-using-glyphs.md
+      - name: How-to Topics
+        href: typography-how-to-topics.md
+        items:
+        - name: Create a Text Decoration
+          href: how-to-create-a-text-decoration.md
+        - name: Specify Whether a Hyperlink is Underlined
+          href: how-to-specify-whether-a-hyperlink-is-underlined.md
+        - name: Apply Transforms to Text
+          href: how-to-apply-transforms-to-text.md
+        - name: Apply Animations to Text
+          href: how-to-apply-animations-to-text.md
+        - name: Create Text with a Shadow
+          href: how-to-create-text-with-a-shadow.md
+        - name: Create Outlined Text
+          href: how-to-create-outlined-text.md
+        - name: Draw Text to a Control's Background
+          href: how-to-draw-text-to-a-control-background.md
+        - name: Draw Text to a Visual
+          href: how-to-draw-text-to-a-visual.md
+        - name: Use Special Characters in XAML
+          href: how-to-use-special-characters-in-xaml.md
+    - name: Printing and Print System Management
+      href: printing-and-print-system-management.md
+      items:
+      - name: Printing Overview
+        href: printing-overview.md
+      - name: How-to Topics
+        href: printing-how-to-topics.md
+        items:
+        - name: Invoke a Print Dialog
+          href: how-to-invoke-a-print-dialog.md
+        - name: Clone a Printer
+          href: how-to-clone-a-printer.md
+        - name: Diagnose Problematic Print Job
+          href: how-to-diagnose-problematic-print-job.md
+        - name: Discover Whether a Print Job Can Be Printed At This Time of Day
+          href: how-to-discover-whether-a-print-job-can-be-printed-at-this-time-of-day.md
+        - name: Enumerate a Subset of Print Queues
+          href: how-to-enumerate-a-subset-of-print-queues.md
+        - name: Get Print System Object Properties Without Reflection
+          href: how-to-get-print-system-object-properties-without-reflection.md
+        - name: Programmatically Print XPS Files
+          href: how-to-programmatically-print-xps-files.md
+        - name: Remotely Survey the Status of Printers
+          href: how-to-remotely-survey-the-status-of-printers.md
+        - name: Validate and Merge PrintTickets
+          href: how-to-validate-and-merge-printtickets.md
+  - name: Globalization and Localization
+    href: globalization-and-localization.md
+    items:
+    - name: WPF Globalization and Localization Overview
+      href: wpf-globalization-and-localization-overview.md
+    - name: Globalization for WPF
+      href: globalization-for-wpf.md
+    - name: Use Automatic Layout Overview
+      href: use-automatic-layout-overview.md
+    - name: Localization Attributes and Comments
+      href: localization-attributes-and-comments.md
+    - name: Bidirectional Features in WPF Overview
+      href: bidirectional-features-in-wpf-overview.md
+    - name: How-to Topics
+      href: globalization-and-localization-how-to-topics.md
+      items:
+      - name: Localize an Application
+        href: how-to-localize-an-application.md
+      - name: Use Automatic Layout to Create a Button
+        href: how-to-use-automatic-layout-to-create-a-button.md
+      - name: Use a Grid for Automatic Layout
+        href: how-to-use-a-grid-for-automatic-layout.md
+      - name: Use a ResourceDictionary to Manage Localizable String Resources
+        href: how-to-use-a-resourcedictionary-to-manage-localizable-string-resources.md
+      - name: Use Resources in Localizable Applications
+        href: how-to-use-resources-in-localizable-applications.md
+  - name: Layout
+    href: layout.md
+  - name: Migration and Interoperability
+    href: migration-and-interoperability.md
+    items:
+    - name: WPF and Windows Forms Interoperation
+      href: wpf-and-windows-forms-interoperation.md
+      items:
+      - name: Windows Forms and WPF Interoperability Input Architecture
+        href: windows-forms-and-wpf-interoperability-input-architecture.md
+      - name: Layout Considerations for the WindowsFormsHost Element
+        href: layout-considerations-for-the-windowsformshost-element.md
+      - name: Windows Forms Controls and Equivalent WPF Controls
+        href: windows-forms-controls-and-equivalent-wpf-controls.md
+      - name: Windows Forms and WPF Property Mapping
+        href: windows-forms-and-wpf-property-mapping.md
+      - name: Troubleshooting Hybrid Applications
+        href: troubleshooting-hybrid-applications.md
+      - name: "Walkthrough: Hosting a Windows Forms Control in WPF"
+        href: walkthrough-hosting-a-windows-forms-control-in-wpf.md
+      - name: "Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML"
+        href: walkthrough-hosting-a-windows-forms-control-in-wpf-by-using-xaml.md
+      - name: "Walkthrough: Hosting a Windows Forms Composite Control in WPF"
+        href: walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md
+      - name: "Walkthrough: Hosting an ActiveX Control in WPF"
+        href: walkthrough-hosting-an-activex-control-in-wpf.md
+      - name: "How to: Enable Visual Styles in a Hybrid Application"
+        href: how-to-enable-visual-styles-in-a-hybrid-application.md
+      - name: "Walkthrough: Arranging Windows Forms Controls in WPF"
+        href: walkthrough-arranging-windows-forms-controls-in-wpf.md
+      - name: "Walkthrough: Binding to Data in Hybrid Applications"
+        href: walkthrough-binding-to-data-in-hybrid-applications.md
+      - name: "Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms"
+        href: walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md
+      - name: "Walkthrough: Hosting a WPF Composite Control in Windows Forms"
+        href: walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md
+      - name: "Walkthrough: Mapping Properties Using the ElementHost Control"
+        href: walkthrough-mapping-properties-using-the-elementhost-control.md
+      - name: "Walkthrough: Mapping Properties Using the WindowsFormsHost Element"
+        href: walkthrough-mapping-properties-using-the-windowsformshost-element.md
+      - name: "Walkthrough: Localizing a Hybrid Application"
+        href: walkthrough-localizing-a-hybrid-application.md
+    - name: WPF and Win32 Interoperation
+      href: wpf-and-win32-interoperation.md
+      items:
+      - name: Technology Regions Overview
+        href: technology-regions-overview.md
+      - name: Sharing Message Loops Between Win32 and WPF
+        href: sharing-message-loops-between-win32-and-wpf.md
+      - name: Hosting Win32 Content in WPF
+        href: hosting-win32-content-in-wpf.md
+      - name: "Walkthrough: Hosting a Win32 Control in WPF"
+        href: walkthrough-hosting-a-win32-control-in-wpf.md
+      - name: "Walkthrough: Hosting WPF Content in Win32"
+        href: walkthrough-hosting-wpf-content-in-win32.md
+      - name: "Walkthrough: Hosting a WPF Clock in Win32"
+        href: walkthrough-hosting-a-wpf-clock-in-win32.md
+    - name: WPF and Direct3D9 Interoperation
+      href: wpf-and-direct3d9-interoperation.md
+      items:
+      - name: Performance Considerations for Direct3D9 and WPF Interoperability
+        href: performance-considerations-for-direct3d9-and-wpf-interoperability.md
+      - name: "Walkthrough: Creating Direct3D9 Content for Hosting in WPF"
+        href: walkthrough-creating-direct3d9-content-for-hosting-in-wpf.md
+      - name: "Walkthrough: Hosting Direct3D9 Content in WPF"
+        href: walkthrough-hosting-direct3d9-content-in-wpf.md
+  - name: Performance
+    href: performance.md
+    items:
+    - name: Graphics Rendering Tiers
+      href: graphics-rendering-tiers.md
+    - name: Optimizing WPF Application Performance
+      href: optimizing-wpf-application-performance.md
+      items:
+      - name: Planning for Application Performance
+        href: planning-for-application-performance.md
+      - name: Taking Advantage of Hardware
+        href: optimizing-performance-taking-advantage-of-hardware.md
+      - name: Layout and Design
+        href: optimizing-performance-layout-and-design.md
+      - name: 2D Graphics and Imaging
+        href: optimizing-performance-2d-graphics-and-imaging.md
+      - name: Object Behavior
+        href: optimizing-performance-object-behavior.md
+      - name: Application Resources
+        href: optimizing-performance-application-resources.md
+      - name: Text
+        href: optimizing-performance-text.md
+      - name: Data Binding
+        href: optimizing-performance-data-binding.md
+      - name: Controls
+        href: optimizing-performance-controls.md
+      - name: Other Performance Recommendations
+        href: optimizing-performance-other-recommendations.md
+      - name: Application Startup Time
+        href: application-startup-time.md
+    - name: "Walkthrough: Caching Application Data in a WPF Application"
+      href: walkthrough-caching-application-data-in-a-wpf-application.md
+  - name: Threading Model
+    href: threading-model.md
+  - name: WPF Unmanaged API Reference
+    href: wpf-unmanaged-api-reference.md
+    items:
+    - name: Activate Function
+      href: activate-function-wpf-unmanaged-api-reference.md
+    - name: CreateIDispatchSTAForwarder Function
+      href: createidispatchstaforwarder-function-wpf-unmanaged-api-reference.md
+    - name: Deactivate Function
+      href: deactivate-function-wpf-unmanaged-api-reference.md
+    - name: ForwardTranslateAccelerator Function
+      href: forwardtranslateaccelerator-function-wpf-unmanaged-api-reference.md
+    - name: LoadFromHistory Function
+      href: loadfromhistory-function-wpf-unmanaged-api-reference.md
+    - name: ProcessUnhandledException Function
+      href: processunhandledexception-function-wpf-unmanaged-api-reference.md
+    - name: SaveToHistory Function
+      href: savetohistory-function-wpf-unmanaged-api-reference.md
+    - name: SetFakeActiveWindow Function
+      href: setfakeactivewindow-function-wpf-unmanaged-api-reference.md

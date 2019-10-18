@@ -35,19 +35,19 @@ Microsoft Windows services, formerly known as NT services, enable you to create 
 ## Service Applications vs. Other Visual Studio Applications  
  Service applications function differently from many other project types in several ways:  
   
--   The compiled executable file that a service application project creates must be installed on the server before the project can function in a meaningful way. You cannot debug or run a service application by pressing F5 or F11; you cannot immediately run a service or step into its code. Instead, you must install and start your service, and then attach a debugger to the service's process. For more information, see [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md).  
+- The compiled executable file that a service application project creates must be installed on the server before the project can function in a meaningful way. You cannot debug or run a service application by pressing F5 or F11; you cannot immediately run a service or step into its code. Instead, you must install and start your service, and then attach a debugger to the service's process. For more information, see [How to: Debug Windows Service Applications](how-to-debug-windows-service-applications.md).  
   
--   Unlike some types of projects, you must create installation components for service applications. The installation components install and register the service on the server and create an entry for your service with the Windows **Services Control Manager**. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
+- Unlike some types of projects, you must create installation components for service applications. The installation components install and register the service on the server and create an entry for your service with the Windows **Services Control Manager**. For more information, see [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md).  
   
--   The `Main` method for your service application must issue the Run command for the services your project contains. The `Run` method loads the services into the **Services Control Manager** on the appropriate server. If you use the **Windows Services** project template, this method is written for you automatically. Note that loading a service is not the same thing as starting the service. See "Service Lifetime" below for more information.  
+- The `Main` method for your service application must issue the Run command for the services your project contains. The `Run` method loads the services into the **Services Control Manager** on the appropriate server. If you use the **Windows Services** project template, this method is written for you automatically. Note that loading a service is not the same thing as starting the service. See "Service Lifetime" below for more information.  
   
--   Windows Service applications run in a different window station than the interactive station of the logged-on user. A window station is a secure object that contains a Clipboard, a set of global atoms, and a group of desktop objects. Because the station of the Windows service is not an interactive station, dialog boxes raised from within a Windows service application will not be seen and may cause your program to stop responding. Similarly, error messages should be logged in the Windows event log rather than raised in the user interface.  
+- Windows Service applications run in a different window station than the interactive station of the logged-on user. A window station is a secure object that contains a Clipboard, a set of global atoms, and a group of desktop objects. Because the station of the Windows service is not an interactive station, dialog boxes raised from within a Windows service application will not be seen and may cause your program to stop responding. Similarly, error messages should be logged in the Windows event log rather than raised in the user interface.  
   
      The Windows service classes supported by the .NET Framework do not support interaction with interactive stations, that is, the logged-on user. The .NET Framework also does not include classes that represent stations and desktops. If your Windows service must interact with other stations, you will need to access the unmanaged Windows API. For more information, see the Windows SDK documentation.  
   
      The interaction of the Windows service with the user or other stations must be carefully designed to include scenarios such as there being no logged on user, or the user having an unexpected set of desktop objects. In some cases, it may be more appropriate to write a Windows application that runs under the control of the user.  
   
--   Windows service applications run in their own security context and are started before the user logs into the Windows computer on which they are installed. You should plan carefully what user account to run the service within; a service running under the system account has more permissions and privileges than a user account.  
+- Windows service applications run in their own security context and are started before the user logs into the Windows computer on which they are installed. You should plan carefully what user account to run the service within; a service running under the system account has more permissions and privileges than a user account.  
   
 ## Service Lifetime  
  A service goes through several internal states in its lifetime. First, the service is installed onto the system on which it will run. This process executes the installers for the service project and loads the service into the **Services Control Manager** for that computer. The **Services Control Manager** is the central utility provided by Windows to administer services.  
@@ -70,16 +70,17 @@ Microsoft Windows services, formerly known as NT services, enable you to create 
   
 ## Requirements  
   
--   Services must be created in a **Windows Service** application project or another .NET Framework–enabled project that creates an .exe file when built and inherits from the <xref:System.ServiceProcess.ServiceBase> class.  
+- Services must be created in a **Windows Service** application project or another .NET Framework–enabled project that creates an .exe file when built and inherits from the <xref:System.ServiceProcess.ServiceBase> class.  
   
--   Projects containing Windows services must have installation components for the project and its services. This can be easily accomplished from the **Properties** window. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
+- Projects containing Windows services must have installation components for the project and its services. This can be easily accomplished from the **Properties** window. For more information, see [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md).  
   
 ## See also
-- [Windows Service Applications](../../../docs/framework/windows-services/index.md)
-- [Service Application Programming Architecture](../../../docs/framework/windows-services/service-application-programming-architecture.md)
-- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
-- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
-- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
-- [How to: Debug Windows Service Applications](../../../docs/framework/windows-services/how-to-debug-windows-service-applications.md)
-- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
-- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
+
+- [Windows Service Applications](index.md)
+- [Service Application Programming Architecture](service-application-programming-architecture.md)
+- [How to: Create Windows Services](how-to-create-windows-services.md)
+- [How to: Install and Uninstall Services](how-to-install-and-uninstall-services.md)
+- [How to: Start Services](how-to-start-services.md)
+- [How to: Debug Windows Service Applications](how-to-debug-windows-service-applications.md)
+- [Walkthrough: Creating a Windows Service Application in the Component Designer](walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
+- [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md)

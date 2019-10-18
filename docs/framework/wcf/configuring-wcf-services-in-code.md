@@ -73,7 +73,7 @@ public class Service1 : IService1
   
  The settings in the <`protocolMappings`> section are only used if no application endpoints are added to the <xref:System.ServiceModel.ServiceConfiguration> programmatically.You can optionally load the service configuration from the default application configuration file by calling <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> and then change the settings. The <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration> class also allows you to load configuration from a centralized configuration. The following code illustrates how to implement this:  
   
-```  
+```csharp
 public class Service1 : IService1   
 {   
     public void DoWork();   
@@ -85,17 +85,18 @@ public class Service1 : IService1
 ```  
   
 > [!IMPORTANT]
->  Note that <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> ignores <`host`> settings within the <`service`> tag of <`system.serviceModel`>. Conceptually, <`host`> is about host configuration, not service configuration, and it gets loaded before the Configure method executes.  
+> Note that <xref:System.ServiceModel.ServiceConfiguration.LoadFromConfiguration%2A> ignores <`host`> settings within the <`service`> tag of <`system.serviceModel`>. Conceptually, <`host`> is about host configuration, not service configuration, and it gets loaded before the Configure method executes.  
   
 ## See also
-- [Configuring Services Using Configuration Files](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)
-- [Configuring Client Behaviors](../../../docs/framework/wcf/configuring-client-behaviors.md)
-- [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)
-- [Configuration](../../../docs/framework/wcf/samples/configuration-sample.md)
-- [Configuration-Based Activation in IIS and WAS](../../../docs/framework/wcf/feature-details/configuration-based-activation-in-iis-and-was.md)
-- [Configuration and Metadata Support](../../../docs/framework/wcf/extending/configuration-and-metadata-support.md)
-- [Configuration](../../../docs/framework/wcf/diagnostics/exceptions-reference/configuration.md)
-- [How to: Specify a Service Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md)
-- [How to: Create a Service Endpoint in Configuration](../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md)
-- [How to: Publish Metadata for a Service Using a Configuration File](../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
-- [How to: Specify a Client Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-client-binding-in-configuration.md)
+
+- [Configuring Services Using Configuration Files](configuring-services-using-configuration-files.md)
+- [Configuring Client Behaviors](configuring-client-behaviors.md)
+- [Simplified Configuration](simplified-configuration.md)
+- [Configuration](./samples/configuration-sample.md)
+- [Configuration-Based Activation in IIS and WAS](./feature-details/configuration-based-activation-in-iis-and-was.md)
+- [Configuration and Metadata Support](./extending/configuration-and-metadata-support.md)
+- [Configuration](./diagnostics/exceptions-reference/configuration.md)
+- [How to: Specify a Service Binding in Configuration](how-to-specify-a-service-binding-in-configuration.md)
+- [How to: Create a Service Endpoint in Configuration](./feature-details/how-to-create-a-service-endpoint-in-configuration.md)
+- [How to: Publish Metadata for a Service Using a Configuration File](./feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md)
+- [How to: Specify a Client Binding in Configuration](how-to-specify-a-client-binding-in-configuration.md)

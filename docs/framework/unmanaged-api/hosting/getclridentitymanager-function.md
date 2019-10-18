@@ -20,18 +20,18 @@ ms.author: "ronpet"
 # GetCLRIdentityManager Function
 Gets a pointer to an interface that allows the common language runtime (CLR) to manage identities.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI GetCLRIdentityManager(  
     [in]  REFIID      riid,  
     [out] IUnknown  **ppManager  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] A `REFIID` (an interface identifier) that specifies which interface to get. This value must be either IID_ICLRAssemblyIdentityManager or IID_ICLRHostBindingPolicyManager.  
   
@@ -51,4 +51,5 @@ STDAPI GetCLRIdentityManager(
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)

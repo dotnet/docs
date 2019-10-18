@@ -22,7 +22,7 @@ Contains values that indicate which items to include in a custom subset of a hea
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     DUMP_FLAVOR_Mini            = 1,  
     DUMP_FLAVOR_NonHeapCLRState = 2  
@@ -49,6 +49,7 @@ typedef enum {
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
 ## See also
+
 - [ECustomDumpItemKind Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpitemkind-enumeration.md)
 - [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
 - [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)

@@ -44,7 +44,7 @@ End Module
 ### Comments  
  This example produces the following result:  
   
-```  
+```console  
 Result set follows:  
 End of result set  
 ```  
@@ -85,7 +85,7 @@ End Module
 ### Comments  
  This example produces the following result:  
   
-```  
+```console  
 Result set follows:  
 1  
 2  
@@ -94,4 +94,5 @@ End of result set
 ```  
   
 ## See also
-- [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+
+- [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md)

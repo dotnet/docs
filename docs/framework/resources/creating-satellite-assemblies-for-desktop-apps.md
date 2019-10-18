@@ -70,13 +70,13 @@ The following *Al.exe* command also creates a satellite assembly for the applica
 al -target:lib -embed:strings.de.resources -culture:de -out:Example.resources.dll -template:Example.dll
 ```  
   
-The following table describes the Al.exe options used in these commands in more detail:
+The following table describes the *Al.exe* options used in these commands in more detail:
   
 |Option|Description|
 |------------|-----------------|
 |**-target:** lib|Specifies that your satellite assembly is compiled to a library (.dll) file. Because a satellite assembly does not contain executable code and is not an application's main assembly, you must save satellite assemblies as DLLs.|
-|**-embed:** strings.de.resources|Specifies the name of the resource file to embed when Al.exe compiles the assembly. You can embed multiple .resources files in a satellite assembly, but if you are following the hub-and-spoke model, you must compile one satellite assembly for each culture. However, you can create separate .resources files for strings and objects.|
-|**-culture:** de|Specifies the culture of the resource to compile. The common language runtime uses this information when it searches for the resources for a specified culture. If you omit this option, Al.exe will still compile the resource, but the runtime will not be able to find it when a user requests it.|
+|**-embed:** strings.de.resources|Specifies the name of the resource file to embed when *Al.exe* compiles the assembly. You can embed multiple .resources files in a satellite assembly, but if you are following the hub-and-spoke model, you must compile one satellite assembly for each culture. However, you can create separate .resources files for strings and objects.|
+|**-culture:** de|Specifies the culture of the resource to compile. The common language runtime uses this information when it searches for the resources for a specified culture. If you omit this option, *Al.exe* will still compile the resource, but the runtime will not be able to find it when a user requests it.|
 |**-out:** Example.resources.dll|Specifies the name of the output file. The name must follow the naming standard *baseName*.resources.*extension*, where *baseName* is the name of the main assembly and *extension* is a valid file name extension (such as .dll). Note that the runtime is not able to determine the culture of a satellite assembly based on its output file name; you must use the **/culture** option to specify it.|
 |**-template:** Example.dll|Specifies an assembly from which the satellite assembly will inherit all assembly metadata except the culture field. This option affects satellite assemblies only if you specify an assembly that has a [strong name](../../standard/assembly/strong-named.md).|
   
@@ -202,7 +202,7 @@ The following *Gacutil.exe* command installs *StringLibrary.resources.dll** in t
 gacutil -i:StringLibrary.resources.dll
 ```
 
-The **/i** option specifies that Gacutil.exe should install the specified assembly into the global assembly cache. After the satellite assembly is installed in the cache, the resources it contains become available to all applications that are designed to use the satellite assembly.
+The **/i** option specifies that *Gacutil.exe* should install the specified assembly into the global assembly cache. After the satellite assembly is installed in the cache, the resources it contains become available to all applications that are designed to use the satellite assembly.
 
 ### Resources in the Global Assembly Cache: An Example
 

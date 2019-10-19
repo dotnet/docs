@@ -648,7 +648,7 @@ An alternative approach to using type abbreviations to represent a domain is to 
 type BufferSize = BufferSize of int
 ```
 
-If you write code that operats in terms of `BufferSize` and its underlying value, you need to construct one rather than pass in any arbitrary integer:
+If you write code that operates in terms of `BufferSize` and its underlying value, you need to construct one rather than pass in any arbitrary integer:
 
 ```fsharp
 module Networking =

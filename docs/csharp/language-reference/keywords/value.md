@@ -14,7 +14,7 @@ The contextual keyword `value` is used in the `set` accessor in [property](../..
 
 [!code-csharp[csrefKeywordsModifiers#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#26)]
 
-For more information, see the [Properties](../../programming-guide/classes-and-structs/properties.md) or [Indexeres](../../programming-guide/indexers/index.md) article.
+For more information, see the [Properties](../../programming-guide/classes-and-structs/properties.md) and [Indexeres](../../programming-guide/indexers/index.md) articles.
 
 ## C# language specification
 

@@ -961,8 +961,8 @@
       href: language-reference/error-messages/bad-file-name-or-number.md
     - name: Bad record length
       href: language-reference/error-messages/bad-record-length.md
-    - name: Because this call is not awaited, the current method continues to run before the call is completed
-      href: language-reference/error-messages/because-this-call-is-not-awaited-the-current-method-continues-to-run.md
+    - name: Because this call is not awaited, execution of the current method continues before the call is completed
+      href: language-reference/error-messages/bc42358.md
     - name: Cannot convert anonymous type to expression tree because it contains a field that is used in the initialization of another field
       href: language-reference/error-messages/cannot-convert-anonymous-type-to-expression-tree.md
     - name: Cannot create ActiveX Component

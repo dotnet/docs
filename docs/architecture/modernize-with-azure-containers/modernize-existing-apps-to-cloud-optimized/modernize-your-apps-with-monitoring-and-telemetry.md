@@ -13,7 +13,7 @@ Application Insights is an extensible Application Performance Management (APM) s
 
 Figure 4-10 shows an example of how Application Insights monitors your application and how it surfaces those insights to a dashboard.
 
-![Application Insights monitoring dashboard](./media/image10.png)
+![Screenshot of Application Insights monitoring dashboard.](./media/modernize-your-apps-with-monitoring-and-telemetry/application-insights-monitoring-dashboard.png)
 
 **Figure 4-10.** Application Insights monitoring dashboard
 
@@ -37,7 +37,7 @@ The [Container Monitoring solution](https://docs.microsoft.com/azure/log-analyti
 
 Figure 4-11 shows the relationships between various container hosts and agents and OMS.
 
-![Log Analytics Container Monitoring solution](./media/image11.png)
+![Screenshot of the Log Analytics Container Monitoring solution.](./media/modernize-your-apps-with-monitoring-and-telemetry/log-analytics-container-monitoring-solution.png)
 
 **Figure 4-11.** Log Analytics Container Monitoring solution
 
@@ -83,4 +83,4 @@ You can use the Log Analytics Container Monitoring solution to:
 
 >[!div class="step-by-step"]
 >[Previous](build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md)
->[Next](modernize-your-apps-lifecycle-with-ci-cd-pipelines-and-devops-tools-in-the-cloud.md)
+>[Next](life-cycle-ci-cd-pipelines-devops-tools.md)

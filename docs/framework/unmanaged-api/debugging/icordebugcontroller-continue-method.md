@@ -32,8 +32,8 @@ HRESULT Continue (
 
 ## Parameters
 
- `fIsOutOfBand`  
- [in] Set to `true` if continuing from an out-of-band event; otherwise, set to `false`.
+`fIsOutOfBand`  
+[in] Set to `true` if continuing from an out-of-band event; otherwise, set to `false`.
 
 ## Remarks
 
@@ -42,16 +42,15 @@ HRESULT Continue (
 When doing mixed-mode debugging, do not call `Continue` on the Win32 event thread unless you are continuing from an out-of-band event.
 
 An *in-band event* is either a managed event or a normal unmanaged event during which the debugger supports interaction with the managed state of the process. In this case, the debugger receives the [ICorDebugUnmanagedCallback::DebugEvent](icordebugunmanagedcallback-debugevent-method.md) callback with its `fOutOfBand` parameter set to `false`.
-  
+
 An *out-of-band event* is an unmanaged event during which interaction with the managed state of the process is impossible while the process is stopped due to the event. In this case, the debugger receives the `ICorDebugUnmanagedCallback::DebugEvent` callback with its `fOutOfBand` parameter set to `true`.
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
 
- **Header:** CorDebug.idl, CorDebug.h
+**Header:** CorDebug.idl, CorDebug.h
 
- **Library:** CorGuids.lib
+**Library:** CorGuids.lib
 
- **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]
- 
+**.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]

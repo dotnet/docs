@@ -1,7 +1,7 @@
 ---
 title: "Integral numeric types - C# reference"
 description: "Learn the range, storage size, and uses for each of the integral numeric types."
-ms.date: 06/25/2019
+ms.date: 10/18/2019
 f1_keywords:
   - "byte"
   - "byte_CSharpKeyword"
@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Integral numeric types  (C# reference)
 
-The **integral numeric types** are a subset of the **simple types** and can be initialized with [*literals*](#integral-literals). All integral types are also value types. All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison, and equality](../operators/equality-operators.md) operators.
+The **integral numeric types** are a subset of the **simple types** and can be initialized with [*literals*](#integer-literals). All integral types are also value types. All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison](../operators/comparison-operators.md), and [equality](../operators/equality-operators.md) operators.
 
 ## Characteristics of the integral types
 
@@ -63,9 +63,15 @@ The default value of each integral type is zero, `0`. Each of the integral types
 
 Use the <xref:System.Numerics.BigInteger?displayProperty=nameWithType> structure to represent a signed integer with no upper or lower bounds.
 
-## Integral literals
+## Integer literals
 
-Integral literals can be specified as *decimal literals*, *hexadecimal literals*, or *binary literals*. An example of each is shown below:
+Integer literals can be
+
+- *decimal*: without any prefix
+- *hexadecimal*: with the `0x` or `0X` prefix
+- *binary*: with the `0b` or `0B` prefix (available in C# 7.0 and later)
+
+The following code demonstrates an example of each:
 
 ```csharp
 var decimalLiteral = 42;
@@ -73,38 +79,35 @@ var hexLiteral = 0x2A;
 var binaryLiteral = 0b_0010_1010;
 ```
 
-Decimal literals don't require any prefix. The `x` or `X` prefix signifies a *hexadecimal literal*. The `b` or `B` prefix signifies a *binary literal*. The declaration of `binaryLiteral` demonstrates the use of `_` as a *digit separator*. The digit separator can be used with all numeric literals. Binary literals and the digit separator `_` are supported starting with C# 7.0.
+The preceding example also shows the use of `_` as a *digit separator*, which is supported starting with C# 7.0. You can use the digit separator with all kinds of numeric literals.
 
-### Literal suffixes
+The type of an integer literal is determined by its suffix as follows:
 
-The `l` or `L` suffix specifies that the integral literal should be of the `long` type. The `ul` or `UL` suffix specifies the `ulong` type. If the `L` suffix is used on a literal that is greater than 9,223,372,036,854,775,807 (the maximum value of `long`), the value is converted to the `ulong` type. If the value represented by an integral literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs. 
+- If the literal has no suffix, its type is the first of the following types in which its value can be represented: `int`, `uint`, `long`, `ulong`.
+- If the literal is suffixed by `U` or `u`, its type is the first of the following types in which its value can be represented: `uint`, `ulong`.
+- If the literal is suffixed by `L` or `l`, its type is the first of the following types in which its value can be represented: `long`, `ulong`.
 
-> [!NOTE]
-> You can use the lowercase letter "l" as a suffix. However, this generates a compiler warning because the letter "l" is easily confused with the digit "1." Use "L" for clarity.
+  > [!NOTE]
+  > You can use the lowercase letter `l` as a suffix. However, this generates a compiler warning because the letter `l` can be confused with the digit `1`. Use `L` for clarity.
 
-### Type of an integral literal
+- If the literal is suffixed by `UL`, `Ul`, `uL`, `ul`, `LU`, `Lu`, `lU`, or `lu`, its type is `ulong`.
 
-If an integral literal has no suffix, its type is the first of the following types in which its value can be represented:
+If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs.
 
-1. `int`
-1. `uint`
-1. `long`
-1. `ulong`
-
-You can convert an integral literal to a type with a smaller range than the default using either an assignment or a cast:
+The value represented by an integer literal can be implicitly converted to a type with a smaller range than the determined type of the literal. That's possible when the value is within the range of the destination type:
 
 ```csharp
-byte byteVariable = 42; // type is byte
-var signedByte = (sbyte)42; // type is sbyte.
+byte a = 17;
+byte b = 300;   // CS0031: Constant value '300' cannot be converted to a 'byte'
 ```
 
-You can convert an integral literal to a type with a larger range than the default using either assignment, a cast, or a suffix on the literal:
+As the preceding example shows, if the literal's value is not within the range of the destination type, a compiler error [CS0031](../../misc/cs0031.md) occurs.
+
+You also can use a cast to convert the value represented by an integer literal to the type other than the determined type of the literal:
 
 ```csharp
-var unsignedLong = 42UL;
-var longVariable = 42L;
-ulong anotherUnsignedLong = 42;
-var anotherLong = (long)42;
+var signedByte = (sbyte)42;
+var longVariable = (long)42;
 ```
 
 ## Conversions
@@ -113,9 +116,15 @@ There's an implicit conversion (called a *widening conversion*) between any two 
 
 You must use an explicit cast to convert one integral type to another integral type when an implicit conversion is not defined from the source type to the destination type. This is called a *narrowing conversion*. The explicit case is required because the conversion can result in data loss.
 
+## C# language specification
+
+For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+
+- [Integral types](~/_csharplang/spec/types.md#integral-types)
+- [Integer literals](~/_csharplang/spec/lexical-structure.md#integer-literals)
+
 ## See also
 
-- [C# language specification - Integral types](~/_csharplang/spec/types.md#integral-types)
 - [C# reference](../index.md)
 - [Floating-point types](floating-point-numeric-types.md)
 - [Default values table](../keywords/default-values-table.md)

@@ -8,7 +8,7 @@ ms.date: 09/20/2019
 C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](#readonly-members)
-- [Default interface members](#default-interface-members)
+- [Default interface methods](#default-interface-methods)
 - [Pattern matching enhancements](#more-patterns-in-more-places):
   - [Switch expressions](#switch-expressions)
   - [Property patterns](#property-patterns)
@@ -79,11 +79,11 @@ public readonly void Translate(int xOffset, int yOffset)
 
 This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
 
-## Default interface members
+## Default interface methods
 
-You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface members also enable scenarios similar to a "traits" language feature.
+You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface methods also enable scenarios similar to a "traits" language feature.
 
-Default interface members affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-members-versions.md). Other tutorials and reference updates are coming in time for general release.
+Default interface methods affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-methods-versions.md). Other tutorials and reference updates are coming in time for general release.
 
 ## More patterns in more places
 
@@ -255,25 +255,36 @@ You can explore pattern matching techniques in this [advanced tutorial on patter
 A **using declaration** is a variable declaration preceded by the `using` keyword. It tells the compiler that the variable being declared should be disposed at the end of the enclosing scope. For example, consider the following code that writes a text file:
 
 ```csharp
-static void WriteLinesToFile(IEnumerable<string> lines)
+static int WriteLinesToFile(IEnumerable<string> lines)
 {
     using var file = new System.IO.StreamWriter("WriteLines2.txt");
+    // Notice how we declare skippedLines after the using statement.
+    int skippedLines = 0;
     foreach (string line in lines)
     {
         if (!line.Contains("Second"))
         {
             file.WriteLine(line);
         }
+        else
+        {
+            skippedLines++;
+        }
     }
-// file is disposed here
+    // Notice how skippedLines is in scope here.
+    return skippedLines;
+    // file is disposed here
 }
 ```
 
 In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code that uses the classic [using statement](../language-reference/keywords/using-statement.md):
 
 ```csharp
-static void WriteLinesToFile(IEnumerable<string> lines)
+static int WriteLinesToFile(IEnumerable<string> lines)
 {
+    // We must declare the variable outside of the using block
+    // so that it is in scope to be returned.
+    int skippedLines = 0;
     using (var file = new System.IO.StreamWriter("WriteLines2.txt"))
     {
         foreach (string line in lines)
@@ -282,8 +293,13 @@ static void WriteLinesToFile(IEnumerable<string> lines)
             {
                 file.WriteLine(line);
             }
+            else
+            {
+                skippedLines++;
+            }
         }
     } // file is disposed here
+    return skippedLines;
 }
 ```
 

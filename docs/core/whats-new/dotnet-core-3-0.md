@@ -107,7 +107,7 @@ To publish a single-file executable, set the `PublishSingleFile` in your project
 -or-
 
 ```dotnetcli
-dotnet publish -r win10-x64 /p:PublishSingleFile=true
+dotnet publish -r win10-x64 -p:PublishSingleFile=true
 ```
 
 For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/single-file/design.md).

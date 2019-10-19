@@ -22,9 +22,9 @@ Enables type names to be referenced without namespace qualification.
   
 ## Syntax  
   
-```  
+```vb  
 Imports [ aliasname = ] namespace  
--or-  
+' -or-  
 Imports [ aliasname = ] namespace.element  
 ```  
   

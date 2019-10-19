@@ -32,7 +32,7 @@ You cannot use the `virtual` modifier with the `static`, `abstract`, `private`, 
 
 [!code-csharp[csrefKeywordsModifiers#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#26)]
 
-Virtual properties behave like abstract methods, except for the differences in declaration and invocation syntax.
+Virtual properties behave like virtual methods, except for the differences in declaration and invocation syntax.
 
 - It is an error to use the `virtual` modifier on a static property.
 

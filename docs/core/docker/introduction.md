@@ -47,27 +47,27 @@ Microsoft provides images that are tailored for specific scenarios. For example,
 
 Various Azure services support containers. You create a Docker image for your application and deploy it to one of the following services:
 
-* [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/)\
+- [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/)\
 Scale and orchestrate Linux containers using Kubernetes.
 
-* [Azure App Service](https://azure.microsoft.com/services/app-service/containers/)\
+- [Azure App Service](https://azure.microsoft.com/services/app-service/containers/)\
 Deploy web apps or APIs using Linux containers in a PaaS environment.
 
-* [Azure Container Instances](https://azure.microsoft.com/services/container-instances/)\
+- [Azure Container Instances](https://azure.microsoft.com/services/container-instances/)\
 Host your container in the cloud without any higher-level management services.
 
-* [Azure Batch](https://azure.microsoft.com/services/batch/)\
+ [Azure Batch](https://azure.microsoft.com/services/batch/)\
 Run repetitive compute jobs using containers.
 
-* [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)\
-Lift, shift, and modernize .NET applications to microservices using Windows Server containers
+- [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)\
+Lift, shift, and modernize .NET applications to microservices using Windows Server containers.
 
-* [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)\
+- [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)\
 Store and manage container images across all types of Azure deployments.
 
 ## Next steps
 
-* [Learn how to containerize a .NET Core application.](build-docker-netcore-container.md)
-* [Learn how to containerize an ASP.NET Core application.](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
-* [Try the Learn ASP.NET Core Microservice tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
-* [Learn about Container Tools in Visual Studio](/visualstudio/containers/overview)
+- [Learn how to containerize a .NET Core application.](build-docker-netcore-container.md)
+- [Learn how to containerize an ASP.NET Core application.](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
+- [Try the Learn ASP.NET Core Microservice tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
+- [Learn about Container Tools in Visual Studio](/visualstudio/containers/overview)

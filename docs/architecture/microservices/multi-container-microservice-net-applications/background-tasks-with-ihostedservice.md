@@ -39,7 +39,7 @@ SignalR is one example of an artifact using hosted services, but you can also us
 
 You can basically offload any of those actions to a background task based on IHostedService.
 
-The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the standard DI (dependency injection) in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost.
+The way you add one or multiple `IHostedServices` into your `WebHost` or `Host` is by registering them up through the <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionHostedServiceExtensions.AddHostedService%2A> extension method in an ASP.NET Core `WebHost` (or in a `Host` in .NET Core 2.1 and above). Basically, you have to register the hosted services within the familiar `ConfigureServices()` method of the `Startup` class, as in the following code from a typical ASP.NET WebHost.
 
 ```csharp
 public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -47,9 +47,9 @@ public IServiceProvider ConfigureServices(IServiceCollection services)
     //Other DI registrations;
 
     // Register Hosted Services
-    services.AddSingleton<IHostedService, GracePeriodManagerService>();
-    services.AddSingleton<IHostedService, MyHostedServiceB>();
-    services.AddSingleton<IHostedService, MyHostedServiceC>();
+    services.AddHostedService<GracePeriodManagerService>();
+    services.AddHostedService<MyHostedServiceB>();
+    services.AddHostedService<MyHostedServiceC>();
     //...
 }
 ```
@@ -216,7 +216,7 @@ WebHost.CreateDefaultBuilder(args)
 
 ### Summary class diagram
 
-The following image shows a visual summary of the classes and interfaced involved when implementing IHostedServices.
+The following image shows a visual summary of the classes and interfaces involved when implementing IHostedServices.
 
 ![Class diagram: IWebHost and IHost can host many services, which inherit from BackgroundService, which implements IHostedService.](./media/image27.png)
 

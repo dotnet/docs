@@ -1,0 +1,145 @@
+- name: .NET Standard Guide
+  href: index.md
+- name: Get Started with .NET
+  href: get-started.md
+- name: Tour of .NET
+  href: tour.md
+- name: .NET Architectural Components
+  href: components.md
+- name: .NET Standard
+  href: net-standard.md
+  items:
+  - name: What's new in the .NET Standard
+    href: whats-new/whats-new-in-dotnet-standard.md
+- name: Target Frameworks
+  href: frameworks.md
+- name: .NET Glossary
+  href: glossary.md
+- name: Open-source Library Guidance
+  href: library-guidance/
+- name: Choosing between .NET Core and .NET Framework for server apps
+  href: choosing-core-framework-server.md
+- name: What is "managed code"?
+  href: managed-code.md
+  items:
+  - name: Automatic Memory Management
+    href: automatic-memory-management.md
+- name: Common Language Runtime (CLR)
+  href: clr.md
+- name: Language Independence
+  href: language-independence.md
+  items:
+  - name: Language Independence and Language-Independent Components
+    href: language-independence-and-language-independent-components.md
+- name: Framework Libraries
+  href: framework-libraries.md
+  items:
+  - name: Class Library Overview
+    href: class-library-overview.md
+  - name: Base Types
+    href: base-types/
+- name: .NET Class libraries
+  href: class-libraries.md
+- name: Analyzers
+  href: analyzers/index.md
+  items:
+  - name: API Analyzer
+    href: analyzers/api-analyzer.md
+  - name: Portability Analyzer
+    href: analyzers/portability-analyzer.md
+  - name: Framework Analyzer
+    href: analyzers/framework-analyzer.md
+- name: Handling and throwing exceptions
+  href: exceptions/
+- name: Assemblies in .NET
+  href: assembly/
+- name: Garbage Collection
+  href: garbage-collection/
+- name: Generic types
+  href: generics.md
+- name: Delegates and lambdas
+  href: delegates-lambdas.md
+- name: LINQ
+  href: using-linq.md
+- name: Common Type System & Common Language Specification
+  href: common-type-system.md
+- name: Parallel Processing, Concurrency, and Async
+  href: parallel-processing-and-concurrency.md
+  items:
+  - name: Asynchronous programming
+    href: async.md
+    items:
+    - name: Asynchronous programming in depth
+      href: async-in-depth.md
+    - name: Asynchronous Programming Patterns
+      href: asynchronous-programming-patterns/
+  - name: Parallel Programming
+    href: parallel-programming/
+  - name: Threading
+    href: threading/
+- name: Memory and span-related types
+  href: memory-and-spans/index.md
+  items:
+  - name: Memory<T> and Span<T> usage guidelines
+    href: memory-and-spans/memory-t-usage-guidelines.md
+- name: Native interoperability
+  href: native-interop/index.md
+  items:
+  - name: P/Invoke
+    href: native-interop/pinvoke.md
+  - name: Type marshaling
+    href: native-interop/type-marshaling.md
+  - name: Customizing structure marshaling
+    href: native-interop/customize-struct-marshaling.md
+  - name: Customizing parameter marshaling
+    href: native-interop/customize-parameter-marshaling.md
+  - name: Interop guidance
+    href: native-interop/best-practices.md
+  - name: Charsets and marshaling
+    href: native-interop/charset.md
+  - name: COM Interop
+    href: native-interop/cominterop.md
+    items:
+      - name: COM Wrappers
+        href: native-interop/com-wrappers.md
+        items:
+          - name: Runtime Callable Wrapper
+            href: native-interop/runtime-callable-wrapper.md
+          - name: COM Callable Wrapper
+            href: native-interop/com-callable-wrapper.md
+      - name: Qualifying .NET types for COM interoperation
+        href: native-interop/qualify-net-types-for-interoperation.md
+  - name: Applying Interop Attributes
+    href: native-interop/apply-interop-attributes.md
+- name: Collections and Data Structures
+  href: collections/
+- name: Numerics in .NET
+  href: numerics.md
+- name: Dates, times, and time zones
+  href: datetime/
+- name: Events
+  href: events/
+- name: Managed Execution Process
+  href: managed-execution-process.md
+- name: Metadata and Self-Describing Components
+  href: metadata-and-self-describing-components.md
+- name: Building Console Applications
+  href: building-console-apps.md
+- name: Application Essentials
+  href: application-essentials.md
+- name: File and Stream I/O
+  href: io/index.md
+- name: Globalization and Localization
+  href: globalization-localization/
+- name: Attributes
+  href: attributes/
+- name: Framework Design Guidelines
+  href: design-guidelines/
+- name: XML Documents and Data
+  href: data/xml/
+- name: Security
+  href: security/
+- name: Serialization
+  href: serialization/
+- name: Developing for Multiple Platforms
+  href: cross-platform/

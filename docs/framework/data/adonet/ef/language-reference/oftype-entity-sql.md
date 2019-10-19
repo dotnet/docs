@@ -8,7 +8,7 @@ Returns a collection of objects from a query expression that is of a specific ty
   
 ## Syntax  
   
-```  
+```sql  
 OFTYPE ( expression, [ONLY] test_type )  
 ```  
   
@@ -27,19 +27,19 @@ OFTYPE ( expression, [ONLY] test_type )
   
  An `OFTYPE` expression is an abbreviation of the following query expression:  
   
-```  
+```sql  
 select value treat(t as T) from ts as t where t is of (T)  
 ```  
   
  Given that a Manager is a subtype of Employee, the following expression produces a collection of only managers from a collection of employees:  
   
-```  
+```sql  
 OfType(employees, NamespaceName.Manager)  
 ```  
   
  It is also possible to up cast a collection using the type filter:  
   
-```  
+```sql
 OfType(executives, NamespaceName.Manager)  
 ```  
   
@@ -56,7 +56,7 @@ OfType(executives, NamespaceName.Manager)
 ## Example  
  The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the OFTYPE operator to return a collection of OnsiteCourse objects from a collection of Course objects. The query is based on the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)).  
   
- [!code-csharp[DP EntityServices Concepts 2#OFTYPE](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#oftype)]  
+ [!code-sql[DP EntityServices Concepts#OFTYPE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#oftype)]  
   
 ## See also
 

@@ -86,7 +86,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 ## Add a class
 
 1. To add a new class, right click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
-2. Name your file *MyClass.cs*. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
+2. Name your file *Fluffy-broccolli.cs*. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
 3. Add the code below to create your first class. Make sure to include the correct namespace so you can reference it from your *Program.cs* file:
 
     ``` csharp
@@ -94,7 +94,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
     namespace HelloWorld
     {
-        public class MyClass
+        public class Fluffy-broccolli
         {
             public string ReturnMessage()
             {
@@ -115,8 +115,9 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
         {
             static void Main(string[] args)
             {
-                var c1 = new MyClass();
-                Console.WriteLine($"Hello World! {c1.ReturnMessage()}");
+                var c1 = new Fluffy-broccolli();
+                            Console.WriteLine("Export-1910190154231820315064419971 (1).zip https://pxsprod01.blob.core.windows.net/6cf49368d7ec1b41d23a43feffffffff/Export-1910190154231820315064419971.zip?sv=2018-03-28&sr=b&sig=rnwuBK6EWeMnV7V0SzzzWiiDzOHrghvodkc92CjWyqA%3D&spr=https&se=2019-10-26T01%3A54%3A53Z&sp=r;
+ {c1.ReturnMessage()}");
             }
         }
     }

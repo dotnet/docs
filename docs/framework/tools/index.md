@@ -125,7 +125,7 @@ Converts the type definitions found in a COM type library into equivalent defini
 Exports a .NET Framework assembly that is compiled as a *.winmdobj* file into a Windows Runtime component, which is packaged as a *.winmd* file that contains both Windows Runtime metadata and implementation information.
 
 [Winres.exe (Windows Forms Resource Editor)](winres-exe-windows-forms-resource-editor.md)  
-Helps you localize user interface (UI) resources (.resx or .resources files) that are used by Windows Forms. You can translate strings, and then size, move, and hide controls to accommodate the localized strings.
+Helps you localize user interface (UI) resources (*.resx* or *.resources* files) that are used by Windows Forms. You can translate strings, and then size, move, and hide controls to accommodate the localized strings.
 
 ## Related Sections
 

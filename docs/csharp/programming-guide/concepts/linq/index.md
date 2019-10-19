@@ -42,4 +42,3 @@ To learn more details about LINQ, start by becoming familiar with some basic con
 To gain a deeper understanding of LINQ in general, see [LINQ in C#](../../../linq/linq-in-csharp.md).
 
 To start working with LINQ in C#, see the tutorial [Working with LINQ](../../../tutorials/working-with-linq.md).
- 

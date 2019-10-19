@@ -62,10 +62,10 @@ Takes a portable executable (PE) file that contains intermediate language (IL) c
 Enables you to install and uninstall server resources by executing the installer components in a specified assembly. (Works with classes in the <xref:System.Configuration.Install> namespace.)
 
 [Lc.exe (License Compiler)](lc-exe-license-compiler.md)  
-Reads text files that contain licensing information and produces a .licenses file that can be embedded in a common language runtime executable as a resource.
+Reads text files that contain licensing information and produces a *.licenses* file that can be embedded in a common language runtime executable as a resource.
 
 [Mage.exe (Manifest Generation and Editing Tool)](mage-exe-manifest-generation-and-editing-tool.md)  
-Lets you create, edit, and sign application and deployment manifests. As a command-line tool, Mage.exe can be run from both batch scripts and other Windows-based applications, including ASP.NET applications.
+Lets you create, edit, and sign application and deployment manifests. As a command-line tool, *Mage.exe* can be run from both batch scripts and other Windows-based applications, including ASP.NET applications.
 
 [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)  
 Supports the same functionality as the command-line tool Mage.exe, but uses a Windows-based user interface (UI). Supports the same functionality as the command-line tool Mage.exe, but uses a Windows-based user interface (UI).
@@ -92,10 +92,10 @@ Reads the metadata within an assembly and adds the necessary entries to the regi
 Loads and registers an assembly, generates and installs a type library into a specified COM+ version 1.0 application, and configures services that you have added programmatically to a class.
 
 [Resgen.exe (Resource File Generator)](resgen-exe-resource-file-generator.md)  
-Converts text (.txt or .restext) files and XML-based resource format (.resx) files to common language runtime binary (.resources) files that can be embedded in a runtime binary executable or compiled into satellite assemblies.
+Converts text (*.txt* or *.restext*) files and XML-based resource format (*.resx*) files to common language runtime binary (*.resources*) files that can be embedded in a runtime binary executable or compiled into satellite assemblies.
 
 [SecAnnotate.exe (.NET Security Annotator Tool)](secannotate-exe-net-security-annotator-tool.md)  
-Identifies the SecurityCritical and SecuritySafeCritical portions of an assembly. Identifies the `SecurityCritical` and `SecuritySafeCritical` portions of an assembly.
+Identifies the `SecurityCritical` and `SecuritySafeCritical` portions of an assembly.
 
 [SignTool.exe (Sign Tool)](signtool-exe.md)  
 Digitally signs files, verifies signatures in files, and time-stamps files.
@@ -119,7 +119,7 @@ Generates a type library that describes the types that are defined in a common l
 Converts the type definitions found in a COM type library into equivalent definitions in a common language runtime assembly.
 
 [Winmdexp.exe (Windows Runtime Metadata Export Tool)](winmdexp-exe-windows-runtime-metadata-export-tool.md)  
-Exports a .NET Framework assembly that is compiled as a .winmdobj file into a Windows Runtime component, which is packaged as a .winmd file that contains both Windows Runtime metadata and implementation information.
+Exports a .NET Framework assembly that is compiled as a *.winmdobj* file into a Windows Runtime component, which is packaged as a *.winmd* file that contains both Windows Runtime metadata and implementation information.
 
 [Winres.exe (Windows Forms Resource Editor)](winres-exe-windows-forms-resource-editor.md)  
 Helps you localize user interface (UI) resources (.resx or .resources files) that are used by Windows Forms. You can translate strings, and then size, move, and hide controls to accommodate the localized strings.
@@ -131,4 +131,3 @@ Includes tools such as the isXPS Conformance tool (isXPS.exe) and performance pr
 
 [Windows Communication Foundation Tools](../wcf/tools.md)  
 Includes tools that make it easier for you to create, deploy, and manage Windows Communication Foundation (WCF) applications.
- 

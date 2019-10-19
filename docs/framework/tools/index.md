@@ -41,7 +41,10 @@ Creates a Software Publisher's Certificate (SPC) from one or more X.509 certific
 Manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
 
 [Clrver.exe (CLR Version Tool)](clrver-exe-clr-version-tool.md)  
-reports all the installed versions of the common language runtime (CLR) on the computer.
+Reports all the installed versions of the common language runtime (CLR) on the computer.
+
+[Command Prompts](developer-command-prompt-for-vs.md)  
+Enables you to use .NET Framework tools more easily. It is a command prompt that automatically sets specific environment variables.
 
 [CorFlags.exe (CorFlags Conversion Tool)](corflags-exe-corflags-conversion-tool.md)  
 Lets you configure the CorFlags section of the header of a portable executable (PE) image.

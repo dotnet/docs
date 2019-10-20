@@ -606,7 +606,7 @@ The following section provides the code to build the example as a WPF app.
 
      A simple window that contains a text box and a button appears in the **Design** view of MainWindow.xaml.
 
-8. In **Solution Explorer**, right-click on **References** and select **Add Reference...**.
+8. In **Solution Explorer**, right-click on **References** and select **Add Reference**.
 
      Add a reference for <xref:System.Net.Http>, if it is not selected already.
 

@@ -558,7 +558,7 @@ The following section provides the code to build the example as a WPF app.
 
 4. In the list of project types, choose **WPF Application**.
 
-5. Name the project `WebsiteDownloadWPF`, choose a .NET Framework version of `4.6+` and then the **OK** button.
+5. Name the project `WebsiteDownloadWPF`, choose .NET Framework version of 4.6 or higher and then click the **OK** button.
 
      The new project appears in **Solution Explorer**.
 

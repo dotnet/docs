@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 0ea7e0c8-2cb2-4bf5-a00d-7b6e3c08a3bc
 ---
 # How to: Rename a File in Visual Basic
+
 Use the `RenameFile` method of the `My.Computer.FileSystem` object to rename a file by supplying the current location, file name, and the new file name. This method cannot be used to move a file; use the `MoveFile` method to move and rename the file.  
   
 ### To rename a file  
@@ -18,6 +19,7 @@ Use the `RenameFile` method of the `My.Computer.FileSystem` object to rename a f
  This code example is also available as an IntelliSense code snippet. In the code snippet picker, the snippet is located in **File system - Processing Drives, Folders, and Files**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  

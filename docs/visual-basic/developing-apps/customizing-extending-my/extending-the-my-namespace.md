@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 808e8617-b01c-4135-8b21-babe87389e8e
 ---
 # Extending the My Namespace in Visual Basic
+
 The `My` namespace in Visual Basic exposes properties and methods that enable you to easily take advantage of the power of the .NET Framework. The `My` namespace simplifies common programming problems, often reducing a difficult task to a single line of code. Additionally, the `My` namespace is fully extensible so that you can customize the behavior of `My` and add new services to its hierarchy to adapt to specific application needs. This topic discusses both how to customize existing members of the `My` namespace and how to add your own custom classes to the `My` namespace.  
   
  **Topic Contents**  
@@ -31,6 +32,7 @@ The `My` namespace in Visual Basic exposes properties and methods that enable yo
 - [Packaging and Deploying Extensions](#packaging)  
   
 ## <a name="customizing"></a> Customizing Existing My Namespace Members  
+
  The `My` namespace in Visual Basic exposes frequently used information about your application, your computer, and more. For a complete list of the objects in the `My` namespace, see [My Reference](../../../visual-basic/language-reference/keywords/my-reference.md). You may have to customize existing members of the `My` namespace so that they better match the needs of your application. Any property of an object in the `My` namespace that is not read-only can be set to a custom value.  
   
  For example, assume that you frequently use the `My.User` object to access the current security context for the user running your application. However, your company uses a custom user object to expose additional information and capabilities for users within the company. In this scenario, you can replace the default value of the `My.User.CurrentPrincipal` property with an instance of your own custom principal object, as shown in the following example.  
@@ -40,6 +42,7 @@ The `My` namespace in Visual Basic exposes properties and methods that enable yo
  Setting the `CurrentPrincipal` property on the `My.User` object changes the identity under which the application runs. The `My.User` object, in turn, returns information about the newly specified user.  
   
 ## <a name="addingtoobjects"></a> Adding Members to My Objects  
+
  The types returned from `My.Application` and `My.Computer` are defined as `Partial` classes. Therefore, you can extend the `My.Application` and `My.Computer` objects by creating a `Partial` class named `MyApplication` or `MyComputer`. The class cannot be a `Private` class. If you specify the class as part of the `My` namespace, you can add properties and methods that will be included with the `My.Application` or `My.Computer` objects.  
   
  For example, the following example adds a property named `DnsServerIPAddresses` to the `My.Computer` object.  
@@ -47,9 +50,11 @@ The `My` namespace in Visual Basic exposes properties and methods that enable yo
  [!code-vb[VbVbcnExtendingMy#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnExtendingMy/VB/Class2.vb#2)]  
   
 ## <a name="addingcustom"></a> Adding Custom Objects to the My Namespace  
+
  Although the `My` namespace provides solutions for many common programming tasks, you may encounter tasks that the `My` namespace does not address. For example, your application might access custom directory services for user data, or your application might use assemblies that are not installed by default with Visual Basic. You can extend the `My` namespace to include custom solutions to common tasks that are specific to your environment. The `My` namespace can easily be extended to add new members to meet growing application needs. Additionally, you can deploy your `My` namespace extensions to other developers as a Visual Basic template.  
   
 ### <a name="addingtonamespace"></a> Adding Members to the My Namespace  
+
  Because `My` is a namespace like any other namespace, you can add top-level properties to it by just adding a module and specifying a `Namespace` of `My`. Annotate the module with the `HideModuleName` attribute as shown in the following example. The `HideModuleName` attribute ensures that IntelliSense will not display the module name when it displays the members of the `My` namespace.  
   
  [!code-vb[VbVbcnExtendingMy#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnExtendingMy/VB/Class1.vb#3)]  
@@ -59,6 +64,7 @@ The `My` namespace in Visual Basic exposes properties and methods that enable yo
  [!code-vb[VbVbcnExtendingMy#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnExtendingMy/VB/Class1.vb#4)]  
   
 ## <a name="addingevents"></a> Adding Events to Custom My Objects  
+
  You can use the `My.Application` object to expose events for your custom `My` objects by extending the `MyApplication` partial class in the `My` namespace. For Windows-based projects, you can double-click the **My Project** node in for your project in **Solution Explorer**. In the Visual Basic **Project Designer**, click the `Application` tab and then click the `View Application Events` button. A new file that is named ApplicationEvents.vb will be created. It contains the following code for extending the `MyApplication` class.  
   
  [!code-vb[VbVbcnExtendingMy#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnExtendingMy/VB/Class1.vb#5)]  
@@ -68,6 +74,7 @@ The `My` namespace in Visual Basic exposes properties and methods that enable yo
  [!code-vb[VbVbcnExtendingMy#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnExtendingMy/VB/Class1.vb#6)]  
   
 ## <a name="design"></a> Design Guidelines  
+
  When you develop extensions to the `My` namespace, use the following guidelines to help minimize the maintenance costs of your extension components.  
   
 - **Include only the extension logic.** The logic included in the `My` namespace extension should include only the code that is needed to expose the required functionality in the `My` namespace. Because your extension will reside in user projects as source code, updating the extension component incurs a high maintenance cost and should be avoided if possible.  
@@ -77,6 +84,7 @@ The `My` namespace in Visual Basic exposes properties and methods that enable yo
 - **Isolate the extension code.** Placing the code in a single file makes your extension easily deployable as a Visual Studio item template. For more information, see "Packaging and Deploying Extensions" later in this topic. Placing all the `My` namespace extension code in a single file or a separate folder in a project will also help users locate the `My` namespace extension.  
   
 ## <a name="designing"></a> Designing Class Libraries for My  
+
  As is the case with most object models, some design patterns work well in the `My` namespace and others do not. When designing an extension to the `My` namespace, consider the following principles:  
   
 - **Stateless methods.** Methods in the `My` namespace should provide a complete solution to a specific task. Ensure that the parameter values that are passed to the method provide all the input required to complete the particular task. Avoid creating methods that rely on prior state, such as open connections to resources.  
@@ -90,6 +98,7 @@ The `My` namespace in Visual Basic exposes properties and methods that enable yo
  These guidelines do not preclude general design principles for class libraries. Rather, they are recommendations that are optimized for developers who are using Visual Basic and the `My` namespace. For general design principles for creating class libraries, see [Framework Design Guidelines](../../../standard/design-guidelines/index.md).  
   
 ## <a name="packaging"></a> Packaging and Deploying Extensions  
+
  You can include `My` namespace extensions in a Visual Studio project template, or you can package your extensions and deploy them as a Visual Studio item template. When you package your `My` namespace extensions as a Visual Studio item template, you can take advantage of additional capabilities provided by Visual Basic. These capabilities enable you to include an extension when a project references a particular assembly, or enable users to explicitly add your `My` namespace extension by using the **My Extensions** page of the Visual Basic Project Designer.  
   
  For details about how to deploy `My` namespace extensions, see [Packaging and Deploying Custom My Extensions](../../../visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions.md).  

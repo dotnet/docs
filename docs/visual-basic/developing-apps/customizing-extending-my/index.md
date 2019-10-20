@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 06ca80b9-1192-4eb5-8537-8ef5edfb9be0
 ---
 # Customizing Projects and Extending My with Visual Basic
+
 You can customize project templates to provide additional `My` objects. This makes it easy for other developers to find and use your objects.  
   
 ## In This Section  
+
  [Extending the My Namespace in Visual Basic](../../../visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace.md)  
  Describes how to add custom members and values to the `My` namespace in Visual Basic.  
   
@@ -24,6 +26,7 @@ You can customize project templates to provide additional `My` objects. This mak
  Describes how to control which `My` objects are enabled by setting your project's \_MYTYPE conditional-compilation constant.  
   
 ## Related Sections  
+
  [Development with My](../../../visual-basic/developing-apps/development-with-my/index.md)  
  Describes which `My` objects are available in different project types by default.  
   

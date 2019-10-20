@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: a26c60e2-ae39-444a-aebb-33eccadc0eeb
 ---
 # How to: Log Exceptions in Visual Basic
+
 You can use the `My.Application.Log` and `My.Log` objects to log information about exceptions that occur in your application. These examples show how to use the `My.Application.Log.WriteException` method to log exceptions that you catch explicitly and exceptions that are unhandled.  
   
  For logging tracing information, use the `My.Application.Log.WriteEntry` method. For more information, see <xref:Microsoft.VisualBasic.Logging.Log.WriteEntry%2A>  

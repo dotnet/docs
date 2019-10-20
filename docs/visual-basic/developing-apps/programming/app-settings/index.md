@@ -7,14 +7,17 @@ helpviewer_keywords:
 ms.assetid: e38d0cc7-247a-46ca-ba04-f2913f0adb2e
 ---
 # Accessing application settings (Visual Basic)
+
 This section contains topics describing the `My.Settings` object and the tasks it enables you to accomplish.  
   
 ## My.Settings  
+
  The properties of the `My.Settings` object provide access to your application's settings. To add or remove settings, use the **Settings** pane of the **Project Designer**.  
   
  The methods of the `My.Settings` object allow you to save the current user settings or revert the user settings to the last saved values.  
   
 ## Tasks  
+
  The following table lists examples showing how to access an application's forms.  
   
 |To|See|  

@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
 ---
 # Visual Basic Language Reference
+
 This section provides reference information for various aspects of the Visual Basic language.  
   
 ## In This Section  
+
  [Typographic and Code Conventions](../../visual-basic/language-reference/typographic-and-code-conventions.md)  
  Summarizes the way that keywords, placeholders, and other elements of the language are formatted in the Visual Basic documentation.  
   
@@ -76,6 +78,7 @@ This section provides reference information for various aspects of the Visual Ba
  Provides a listing of Visual Basic compiler and run-time error messages and help on how to handle them.  
   
 ## Related Sections  
+
  [Visual Basic](../../visual-basic/index.md)  
  Provides comprehensive help on all areas of the Visual Basic language.  
   

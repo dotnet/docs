@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: b2fdda86-e666-42c2-9706-9527e9fa68ff
 ---
 # How to: Create a Copy of a File in the Same Directory in Visual Basic
+
 Use the `My.Computer.FileSystem.CopyFile` method to copy files. The parameters allow you to overwrite existing files, rename the file, show the progress of the operation, and allow the user to cancel the operation.  
   
 ### To create a copy of a file in the same folder  
@@ -26,6 +27,7 @@ Use the `My.Computer.FileSystem.CopyFile` method to copy files. The parameters a
      [!code-vb[VbVbcnMyFileSystem#52](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#52)]  
   
 ## Robust Programming  
+
  The following conditions may cause an exception to be thrown:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  

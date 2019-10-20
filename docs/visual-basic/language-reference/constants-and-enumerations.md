@@ -8,11 +8,13 @@ helpviewer_keywords:
 ms.assetid: 309c0ad5-83e4-4f96-99ea-83cd95107417
 ---
 # Constants and Enumerations (Visual Basic)
+
 Visual Basic supplies a number of predefined constants and enumerations for developers. Constants store values that remain constant throughout the execution of an application. Enumerations provide a convenient way to work with sets of related constants, and to associate constant values with names.  
   
 ## Constants  
   
 ### Conditional Compilation Constants  
+
  The following table lists the predefined constants available for conditional compilation.  
   
 |**Constant**|**Description**|  
@@ -24,6 +26,7 @@ Visual Basic supplies a number of predefined constants and enumerations for deve
 |`VBC_VER`|A number representing the Visual Basic version, in *major*.*minor* format.|  
   
 ### Print and Display Constants  
+
  When you call print and display functions, you can use the following constants in your code in place of the actual values.  
   
 |**Constant**|**Description**|  
@@ -41,6 +44,7 @@ Visual Basic supplies a number of predefined constants and enumerations for deve
 |`vbVerticalTab`|Not useful in Microsoft Windows.|  
   
 ## Enumerations  
+
  The following table lists and describes the enumerations provided by Visual Basic.  
   
 |Enumeration|Description|  

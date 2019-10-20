@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: b0bc737e-50d1-43d1-a6df-268db6e6f91c
 ---
 # How to: Create Property Grids for User Settings in Visual Basic
+
 You can create a property grid for user settings by populating a <xref:System.Windows.Forms.PropertyGrid> control with the user setting properties of the `My.Settings` object.  
   
 > [!NOTE]
@@ -41,6 +42,7 @@ You can create a property grid for user settings by populating a <xref:System.Wi
     > To show only the application-scope settings, use the <xref:System.Configuration.ApplicationScopedSettingAttribute> attribute instead of  <xref:System.Configuration.UserScopedSettingAttribute>.  
   
 ## Robust Programming  
+
  The application saves the user settings when the application shuts down. To save the settings immediately, call the `My.Settings.Save` method. For more information, see [How to: Persist User Settings in Visual Basic](../../../../visual-basic/developing-apps/programming/app-settings/how-to-persist-user-settings.md).  
   
 ## See also

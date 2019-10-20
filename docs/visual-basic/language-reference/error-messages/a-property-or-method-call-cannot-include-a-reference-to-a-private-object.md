@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 059b43e1-202d-4fa2-806b-7bad63c1e7ca
 ---
 # A property or method call cannot include a reference to a private object, either as an argument or as a return value
+
 Among the possible causes of this error are:  
   
 - A client invoked a property or method of an out-of-process component and attempted to pass a reference to a private object as one of the arguments.  

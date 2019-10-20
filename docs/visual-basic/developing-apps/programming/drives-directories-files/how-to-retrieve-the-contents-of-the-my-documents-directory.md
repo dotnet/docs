@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 26560d01-7dda-4457-8e95-21db23d71aea
 ---
 # How to: Retrieve the Contents of the My Documents Directory in Visual Basic
+
 The <xref:Microsoft.VisualBasic.FileIO.SpecialDirectories> object can be used to read from many of the **All Users** directories, such as **My Documents** or **Desktop**.  
   
 ### To read from the My Documents folder  

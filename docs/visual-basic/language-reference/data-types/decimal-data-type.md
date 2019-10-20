@@ -62,6 +62,7 @@ The default value of `Decimal` is 0.
 - **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Decimal?displayProperty=nameWithType> structure.
 
 ## Range
+
  You might need to use the `D` type character to assign a large value to a `Decimal` variable or constant. This requirement is because the compiler interprets a literal as `Long` unless a literal type character follows the literal, as the following example shows.
 
 ```vb

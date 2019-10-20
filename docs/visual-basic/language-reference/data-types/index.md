@@ -39,6 +39,7 @@ helpviewer_keywords:
 ms.assetid: e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0
 ---
 # Data Type Summary (Visual Basic)
+
 The following table shows the Visual Basic data types, their supporting common language runtime types, their nominal storage allocation, and their value ranges.  
   
 |Visual Basic type|Common language runtime type structure|Nominal storage allocation|Value range|  
@@ -69,6 +70,7 @@ The following table shows the Visual Basic data types, their supporting common l
  In addition to specifying a data type in a declaration statement, you can force the data type of some programming elements by using a type character. See [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md).  
   
 ## Memory Consumption  
+
  When you declare an elementary data type, it is not safe to assume that its memory consumption is the same as its nominal storage allocation. This is due to the following considerations:  
   
 - **Storage Assignment.** The common language runtime can assign storage based on the current characteristics of the platform on which your application is executing. If memory is nearly full, it might pack your declared elements as closely together as possible. In other cases it might align their memory addresses to natural hardware boundaries to optimize performance.  
@@ -76,6 +78,7 @@ The following table shows the Visual Basic data types, their supporting common l
 - **Platform Width.** Storage assignment on a 64-bit platform is different from assignment on a 32-bit platform.  
   
 ### Composite Data Types  
+
  The same considerations apply to each member of a composite data type, such as a structure or an array. You cannot rely on simply adding together the nominal storage allocations of the type's members. Furthermore, there are other considerations, such as the following:  
   
 - **Overhead.** Some composite types have additional memory requirements. For example, an array uses extra memory for the array itself and also for each dimension. On a 32-bit platform, this overhead is currently 12 bytes plus 8 bytes for each dimension. On a 64-bit platform this requirement is doubled.  
@@ -83,6 +86,7 @@ The following table shows the Visual Basic data types, their supporting common l
 - **Storage Layout.** You cannot safely assume that the order of storage in memory is the same as your order of declaration. You cannot even make assumptions about byte alignment, such as a 2-byte or 4-byte boundary. If you are defining a class or structure and you need to control the storage layout of its members, you can apply the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to the class or structure.  
   
 ### Object Overhead  
+
  An `Object` referring to any elementary or composite data type uses 4 bytes in addition to the data contained in the data type.  
   
 ## See also

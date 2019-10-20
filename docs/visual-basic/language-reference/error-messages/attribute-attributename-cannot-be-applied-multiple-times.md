@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3760e7ff-7238-40a1-8676-77d858a64fc0
 ---
 # Attribute '\<attributename>' cannot be applied multiple times
+
 The attribute can only be applied once. The `AttributeUsage` attribute determines whether an attribute can be applied more than once.  
   
  **Error ID:** BC30663  

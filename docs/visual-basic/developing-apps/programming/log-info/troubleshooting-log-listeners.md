@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: ac6eb760-3d5d-461e-aedd-40599ee22e49
 ---
 # Troubleshooting: Log Listeners (Visual Basic)
+
 You can use the `My.Application.Log` and `My.Log` objects to log information about events that occur in your application.  
   
  To determine which log listeners receive those messages, see [Walkthrough: Determining Where My.Application.Log Writes Information](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-determining-where-my-application-log-writes-information.md).  

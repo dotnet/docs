@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 0351a2ca-24d8-43b5-bb39-9b99e6401cff
 ---
 # How to: Create a Directory in Visual Basic
+
 Use the `CreateDirectory` method of the `My.Computer.FileSystem` object to create directories.  
   
  If the directory already exists, no exception is thrown.  
@@ -18,6 +19,7 @@ Use the `CreateDirectory` method of the `My.Computer.FileSystem` object to creat
      [!code-vb[VbVbcnMyFileSystem#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#2)]  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The directory name is malformed. For example, it contains illegal characters or is only white space (<xref:System.ArgumentException>).  

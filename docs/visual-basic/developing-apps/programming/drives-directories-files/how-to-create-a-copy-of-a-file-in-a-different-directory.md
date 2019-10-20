@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 88e2145c-d414-45a5-ad03-6f5d58ecca26
 ---
 # How to: Create a Copy of a File in a Different Directory in Visual Basic
+
 The `My.Computer.FileSystem.CopyFile` method allows you to copy files. Its parameters provide the ability to overwrite existing files, rename the file, show the progress of the operation, and allow the user to cancel the operation.  
   
 ### To copy a text file to another folder  
@@ -18,6 +19,7 @@ The `My.Computer.FileSystem.CopyFile` method allows you to copy files. Its param
      [!code-vb[VbFileIOMisc#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#24)]  
   
 ## Robust Programming  
+
  The following conditions may cause an exception to be thrown:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  

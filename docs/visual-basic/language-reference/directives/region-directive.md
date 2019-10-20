@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
 ---
 # #Region Directive
+
 Collapses and hides sections of code in Visual Basic files.  
   
 ## Syntax  
@@ -29,9 +30,11 @@ Collapses and hides sections of code in Visual Basic files.
 |`#End Region`|Terminates the `#Region` block.|  
   
 ## Remarks  
+
  Use the `#Region` directive to specify a block of code to expand or collapse when using the outlining feature of the Visual Studio Code Editor. You can place, or *nest*, regions within other regions to group similar regions together.  
   
 ## Example  
+
  This example uses the `#Region` directive.  
   
  [!code-vb[VbVbalrConditionalComp#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrConditionalComp/VB/Class1.vb#4)]  

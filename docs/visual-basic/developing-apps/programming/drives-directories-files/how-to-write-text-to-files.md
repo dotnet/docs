@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 304956eb-530d-4df7-b48f-9b4d1f2581a0
 ---
 # How to: Write Text to Files in Visual Basic
+
 The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> method can be used to write text to files. If the specified file does not exist, it is created.  
   
 ## Procedure  
@@ -28,6 +29,7 @@ The <xref:Microsoft.VisualBasic.FileIO.FileSystem.WriteAllText%2A> method can be
      [!code-vb[VbFileIOWrite#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOWrite/VB/Class1.vb#4)]  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  

@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 6685467b-28fa-4cde-9516-f0e00ad08911
 ---
 # Get started with Visual Basic
+
 This section of the documentation helps you get started with Visual Basic application development.  
   
 ## Get started with Visual Basic and .NET Core

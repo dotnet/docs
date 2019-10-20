@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: ad831a1b-7d01-4f07-a47b-799f3037df19
 ---
 # Reading from Files in Visual Basic
+
 This section explains how to perform tasks that are associated with reading from files.  
   
 ## In This Section  
+
  [How to: Read from Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)  
  Demonstrates how to read from a text file.  
   
@@ -32,6 +34,7 @@ This section explains how to perform tasks that are associated with reading from
  Demonstrates how to use a <xref:System.IO.StreamReader> to read from a file.  
   
 ## Reference  
+
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  Describes the `My.Computer.FileSystem` object and its members.  
   
@@ -48,6 +51,7 @@ This section explains how to perform tasks that are associated with reading from
  Describes the `OpenTextFileReader` method.  
   
 ## Related Sections  
+
  [Storing Data to and Reading from the Clipboard](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
  Explains how to perform tasks that are associated with `My.Computer.Clipboard`, such as reading data from or writing data to the Clipboard.  
   

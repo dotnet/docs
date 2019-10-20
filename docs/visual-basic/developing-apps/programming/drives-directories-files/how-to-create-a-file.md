@@ -7,15 +7,19 @@ helpviewer_keywords:
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
 ---
 # How to: Create a File in Visual Basic
+
 This example creates an empty text file at the specified path using the <xref:System.IO.File.Create%2A> method in the <xref:System.IO.File> class.  
   
 ## Example  
+
  [!code-vb[VbFileIOMisc#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/class2.vb#1)]  
   
 ## Compiling the Code  
+
  Use the `file` variable to write to the file.  
   
 ## Robust Programming  
+
  If the file already exists, it is replaced.  
   
  The following conditions may cause an exception:  
@@ -33,6 +37,7 @@ This example creates an empty text file at the specified path using the <xref:Sy
 - The path is only a colon ":" (<xref:System.NotSupportedException>).  
   
 ## .NET Framework Security  
+
  A <xref:System.Security.SecurityException> may be thrown in partial-trust environments.  
   
  The call to the <xref:System.IO.File.Create%2A> method requires <xref:System.Security.Permissions.FileIOPermission>.  

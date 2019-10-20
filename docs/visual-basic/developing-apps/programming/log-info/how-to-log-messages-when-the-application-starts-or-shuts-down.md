@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 67624d05-cddf-48b7-8c36-5c99baa4c621
 ---
 # How to: Log Messages When the Application Starts or Shuts Down (Visual Basic)
+
 You can use the `My.Application.Log` and `My.Log` objects to log information about events that occur in your application. This example shows how to use the `My.Application.Log.WriteEntry` method with the `Startup` and `Shutdown` events to write tracing information.  
   
 ### To access the application's event-handler code  
@@ -48,6 +49,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
      [!code-vb[VbVbalrMyApplicationLog#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/MyEventsFake.vb#2)]  
   
 ## Example  
+
  You can use the **Project Designer** to access the application events in the Code Editor. For more information, see [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
  [!code-vb[VbVbalrMyApplicationLog#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplicationLog/VB/MyEventsFake.vb#3)]  

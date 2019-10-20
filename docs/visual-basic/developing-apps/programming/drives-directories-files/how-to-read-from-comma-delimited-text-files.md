@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: a8413fe4-0dba-49c8-8692-44fb67a9ec4f
 ---
 # How to: read from comma-delimited text files in Visual Basic
+
 The `TextFieldParser` object provides a way to easily and efficiently parse structured text files, such as logs. The `TextFieldType` property defines whether it is a delimited file or one with fixed-width fields of text.  
   
 ### To parse a comma delimited text file  
@@ -30,11 +31,13 @@ The `TextFieldParser` object provides a way to easily and efficiently parse stru
      [!code-vb[VbFileIORead#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#18)]  
   
 ## Example  
+
  This example reads from the file `test.txt`.  
   
  [!code-vb[VbFileIORead#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#19)]  
   
 ## Robust programming  
+
  The following conditions may cause an exception:  
   
 - A row cannot be parsed using the specified format (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>). The exception message specifies the line causing the exception, while the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> property is assigned the text contained in the line.  

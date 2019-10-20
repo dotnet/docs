@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 775d0a57-68c9-464e-8949-9a39bd29cc64
 ---
 # How to: Read a Value from a Registry Key in Visual Basic
+
 The `GetValue` method of the `My.Computer.Registry` object can be used to read values in the Windows registry.  
   
  If the key, "Software\MyApp" in the following example, does not exist, an exception is thrown. If the `ValueName`,  "Name" in the following example, does not exist, `Nothing` is returned.  
@@ -33,6 +34,7 @@ The `GetValue` method of the `My.Computer.Registry` object can be used to read v
      [!code-vb[VbResourceTasks#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#12)]  
   
 ## Robust Programming  
+
  The registry holds top-level, or root, keys that are used to store data. For instance, the HKEY_LOCAL_MACHINE root key is used for storing machine-level settings used by all users, while HKEY_CURRENT_USER is used for storing data specific to an individual user.  
   
  The following conditions may cause an exception:  
@@ -44,6 +46,7 @@ The `GetValue` method of the `My.Computer.Registry` object can be used to read v
 - The key name exceeds the 255-character limit (<xref:System.ArgumentException>).  
   
 ## .NET Framework Security  
+
  To run this process, your assembly requires a privilege level granted by the <xref:System.Security.Permissions.RegistryPermission> class. If you are running in a partial-trust context, the process might throw an exception due to insufficient privileges. Similarly, the user must have the correct ACLs for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission. For more information, see [Code Access Security Basics](../../../../framework/misc/code-access-security-basics.md).  
   
 ## See also

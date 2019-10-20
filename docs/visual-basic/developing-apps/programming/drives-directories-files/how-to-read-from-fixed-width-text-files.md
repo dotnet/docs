@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
 ---
 # How to: read from fixed-width text files in Visual Basic
+
 The `TextFieldParser` object provides a way to easily and efficiently parse structured text files, such as logs.  
   
  The `TextFieldType` property defines whether the parsed file is a delimited file or one that has fixed-width fields of text. In a fixed-width text file, the field at the end can have a variable width. To specify that the field at the end has a variable width, define it to have a width less than or equal to zero.  
@@ -33,11 +34,13 @@ The `TextFieldParser` object provides a way to easily and efficiently parse stru
      [!code-vb[VbFileIORead#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#12)]  
   
 ## Example  
+
  This example reads from the file `test.log`.  
   
  [!code-vb[VbFileIORead#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIORead/VB/Class1.vb#13)]  
   
 ## Robust programming  
+
  The following conditions may cause an exception:  
   
 - A row cannot be parsed using the specified format (<xref:Microsoft.VisualBasic.FileIO.MalformedLineException>). The exception message specifies the line causing the exception, while the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser.ErrorLine%2A> property is assigned to the text contained in the line.  

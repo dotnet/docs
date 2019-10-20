@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 20d5fe65-490a-4c23-88c2-ee4f490ed762
 ---
 # Directives (Visual Basic)
+
 The topics in this section document the Visual Basic source code compiler directives.  
   
 ## In This Section  
+
  [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md) -- Define a compiler constant  
   
  [#ExternalSource Directive](../../../visual-basic/language-reference/directives/externalsource-directive.md) -- Indicate a mapping between source lines and text external to the source  
@@ -32,6 +34,7 @@ The topics in this section document the Visual Basic source code compiler direct
  You can disable and enable a comma-separated list of warning codes too.  
   
 ## Related Sections  
+
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
   
  [Visual Basic](../../../visual-basic/index.md)

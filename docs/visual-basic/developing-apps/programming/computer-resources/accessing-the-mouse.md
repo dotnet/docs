@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 6d31a3d2-d860-459d-9d13-3aa192d62ba2
 ---
 # Accessing the Mouse (Visual Basic)
+
 The `My.Computer.Mouse` object provides a way to find information about the computer's mouse, such as if a mouse exists, the number of mouse buttons, and details about the mouse wheel.  
   
 ## Remarks  
+
  This table lists tasks associated with the `My.Computer.Mouse` object and points to topics demonstrating how to accomplish each.  
   
 |To|See|  

@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
 ---
 # Accessing the Computer's Ports (Visual Basic)
+
 The `My.Computer.Ports` object provides a property and a method for accessing the computer's serial ports.  
   
 ## In This Section  
+
  [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)  
  Demonstrates how to show available serial ports.  
   
@@ -26,6 +28,7 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
  Describes how to use the .NET Framework when performing port operations.  
   
 ## Reference  
+
  <xref:Microsoft.VisualBasic.Devices.Ports>  
  Describes the `My.Computer.Ports` object and its members.  
   
@@ -36,5 +39,6 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
  Describes the `OpenSerialPort` method, which creates and opens a <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> object.  
   
 ## Related Sections  
+
  <xref:System.IO.Ports.SerialPort>  
  Describes the .NET Framework <xref:System.IO.Ports.SerialPort> class.

@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: a8b37924-c523-4fd3-b5ca-cb0074df29cd
 ---
 # How to: Upload a File in Visual Basic
+
 The <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method can be used to upload a file and store it to a remote location. If the `ShowUI` parameter is set to `True`, a dialog box is displayed that shows the progress of the upload and allows users to cancel the operation.  
   
 ### To upload a file  
@@ -31,6 +32,7 @@ The <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method can be use
      [!code-vb[VbResourceTasks#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#8)]  
   
 ## Robust Programming  
+
  The following conditions may throw an exception:  
   
 - The local file path is not valid (<xref:System.ArgumentException>).  

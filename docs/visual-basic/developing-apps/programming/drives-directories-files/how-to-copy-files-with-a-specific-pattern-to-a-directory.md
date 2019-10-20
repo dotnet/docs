@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: f205d2ad-bbe5-4d55-8a40-acda21aa82dd
 ---
 # How to: Copy Files with a Specific Pattern to a Directory in Visual Basic
+
 The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A> method returns a read-only collection of strings representing the path names for the files. You can use the `wildCards` parameter to specify a specific pattern.  
   
  An empty collection is returned if no matching files are found.  
@@ -30,11 +31,13 @@ The <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.GetFiles%2A> method r
      [!code-vb[VbVbcnMyFileSystem#89](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#89)]  
   
 ## Example  
+
  The following example, which presents the above snippets in complete form, copies all .rtf files in the specified directory to the directory named `testdirectory`.  
   
  [!code-vb[VbFileIOMisc#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#37)]  
   
 ## .NET Framework Security  
+
  The following conditions may cause an exception:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  

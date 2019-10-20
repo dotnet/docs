@@ -90,17 +90,19 @@ As a way to understand the differences between these types of databases, conside
 
 **Figure 5-9**. The CAP theorem
 
-The theorem states that distributed data systems will offer a trade-off between consistency, availability, and partition tolerance. And, that any database can only guarantee two of the three properties:
+The theorem states that distributed data systems will offer a trade-off between consistency, availability, and partition tolerance. And, that any database can only guarantee *two* of the three properties:
 
-- *Consistency.* Every node in the cluster will respond with the most recent data, even if the system must block the request until it updates all replicas.
+- *Consistency.* Every node in the cluster will respond with the most recent data, even if the system must block the request until all replicas are updated. If you query a "consistent system" for an item that is updating, you will wait for the response until all replicas successfully update. However, you will receive the most current data.
 
-- *Availability.* Every node will return a response in a reasonable amount of time, even if that response isn't the most recent data.
+- *Availability.* Every node will return a response in a reasonable amount of time, even if that response isn't the most recent data. If you query an "available system" for an item that is updating, you will get a timely response, even if the update has not replicated. 
 
-- *Partition Tolerance.* Guarantees that the system will continue operating if a node fails or loses connectivity with another.
+- *Partition Tolerance.* Guarantees that the system will continue operating if a replica node fails or loses connectivity with other replica nodes. 
 
-Generally speaking, relational databases typically provide consistency and availability, but not partition tolerance. Partitioning a relational database, such as sharding, is difficult and can impact performance.
+Generally speaking, relational databases typically provide consistency and availability, but not partition tolerance. Partitioning a relational database across multiple nodes, such as with sharding, is difficult and can impact performance.
 
-NoSQL databases typically support high availability and partition tolerance, implemented as horizontal scalability. As the CAP theorem specifies, you can only have two of the three principles, and with partition tolerance, you lose the consistency property.
+NoSQL databases typically support high availability and partition tolerance, implemented as horizontal scalability. As the CAP theorem specifies, you can only have two of the three properties, and with partition tolerance, you lose the consistency property. 
+
+If the system were consistent and replicas were to lose connectivity, you would not be able to write to the database. The consistent system would reject the write as it cannot replicate the change to all of the underlying replicas. Whereas an available system would allow the write and update each replica as it becomes available.
 
 > Care must be taken with these descriptions as some databases support configurations that can *"toggle"* these principles. For example, MySQL can be configured as either consistent and available or available and partition tolerant. 
 

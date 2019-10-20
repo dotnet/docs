@@ -1,7 +1,7 @@
 ---
 title: "Integral numeric types - C# reference"
 description: "Learn the range, storage size, and uses for each of the integral numeric types."
-ms.date: 10/18/2019
+ms.date: 10/22/2019
 f1_keywords:
   - "byte"
   - "byte_CSharpKeyword"
@@ -94,7 +94,7 @@ The type of an integer literal is determined by its suffix as follows:
 
 If the value represented by an integer literal exceeds <xref:System.UInt64.MaxValue?displayProperty=nameWithType>, a compiler error [CS1021](../../misc/cs1021.md) occurs.
 
-The value represented by an integer literal can be implicitly converted to a type with a smaller range than the determined type of the literal. That's possible when the value is within the range of the destination type:
+If the determined type of an integer literal is `int`, the value represented by the literal can be implicitly converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, or `ulong`. That's possible when the value is within the range of the destination type:
 
 ```csharp
 byte a = 17;
@@ -112,9 +112,7 @@ var longVariable = (long)42;
 
 ## Conversions
 
-There's an implicit conversion (called a *widening conversion*) between any two integral types where the destination type can store all values of the source type. For example, there's an implicit conversion from `int` to `long` because the range of `int` values is a proper subset of `long`. There are implicit conversions from a smaller unsigned integral type to a larger signed integral type. There's also an implicit conversion from any integral type to any floating-point type.  There's no implicit conversion from any signed integral type to any unsigned integral type.
-
-You must use an explicit cast to convert one integral type to another integral type when an implicit conversion is not defined from the source type to the destination type. This is called a *narrowing conversion*. The explicit case is required because the conversion can result in data loss.
+You can convert any integral numeric type to any other integral numeric type. If the destination type can store all values of the source type, the conversion is implicit. Otherwise, you need to use the [cast operator `()`](../operators/type-testing-and-cast.md#cast-operator-) to invoke an explicit conversion. For more information, see [Built-in numeric conversions](numeric-conversions.md).
 
 ## C# language specification
 
@@ -126,8 +124,7 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [C# reference](../index.md)
-- [Floating-point types](floating-point-numeric-types.md)
-- [Default values table](../keywords/default-values-table.md)
-- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Built-in types table](../keywords/built-in-types-table.md)
+- [Floating-point types](floating-point-numeric-types.md)
+- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Numerics in .NET](../../../standard/numerics.md)

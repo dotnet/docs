@@ -27,7 +27,7 @@ System.Convert.ToInt32("35");
   
 ## Overflows
 
- Numeric expressions may cause overflows if the value is larger than the maximum value of the value's type. For more information, see [Checked and Unchecked](../../language-reference/keywords/checked-and-unchecked.md) and [Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md).  
+ Numeric expressions may cause overflows if the value is larger than the maximum value of the value's type. For more information, see [Checked and Unchecked](../../language-reference/keywords/checked-and-unchecked.md) and the [Explicit numeric conversions](../../language-reference/builtin-types/numeric-conversions.md#explicit-numeric-conversions) section of the [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md) article.
   
 ## Operator precedence and associativity
 

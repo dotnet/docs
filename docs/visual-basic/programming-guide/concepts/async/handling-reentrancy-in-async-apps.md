@@ -555,7 +555,7 @@ The following section provides the code to build the example as a WPF app.
 
 4. In the list of project types, choose **WPF Application**.
 
-5. Name the project `WebsiteDownloadWPF`, and then choose the **OK** button.
+5. Name the project `WebsiteDownloadWPF`, choose a .NET Framework version of `4.6+` and then the **OK** button.
 
      The new project appears in **Solution Explorer**.
 
@@ -583,7 +583,9 @@ The following section provides the code to build the example as a WPF app.
 
      A simple window that contains a text box and a button appears in the **Design** view of MainWindow.xaml.
 
-8. Add a reference for <xref:System.Net.Http>.
+8. In **Solution Explorer**, right-click on **References** and select **Add Reference...**.
+
+     Add a reference for <xref:System.Net.Http>, if it is not selected already.
 
 9. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.vb, and then choose **View Code**.
 
@@ -597,6 +599,8 @@ The following section provides the code to build the example as a WPF app.
     Class MainWindow
 
         Private Async Sub StartButton_Click(sender As Object, e As RoutedEventArgs)
+            System.Net.ServicePointManager.SecurityProtocol = System.Net.ServicePointManager.SecurityProtocol Or System.Net.SecurityProtocolType.Tls12
+
             ' This line is commented out to make the results clearer in the output.
             'ResultsTextBox.Text = ""
 

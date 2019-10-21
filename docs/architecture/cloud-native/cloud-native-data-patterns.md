@@ -120,27 +120,21 @@ NoSQL databases can be categorized by the following four models:
 
 - *Graph stores* (neo4j, titan) - Store data as a graphical representation within a node along with edges that specify the relationship between the nodes.
 
-Based upon the specific data needs, a cloud-native-based microservice can either a relational or a NoSql datastore.
+Based upon specific data needs, a cloud-native-based microservice can either impelment a relational, or a NoSQL datastore or both.
 
-|  Consider a NoSQL datastore when: | 
-| :-------- |
-| Your workload requires large scale and high-concurrency |
-| You have large numbers of users |
-| Your data can be expressed simply without relationships | 
-| You need to geographically distribute your data | 
-| You don't need ACID guarantees | 
-| Will be deployed to commodity hardware, such as with public clouds |
+|  Consider a NoSQL datastore when: | Consider a relational database when: | 
+| :-------- | :-------- |
+| You have high volume workloads that require large scale | Your workload volume is consistent and requires medium to large scale |
+| Your workloads require ACID guarantees |  ACID guarantees aren't required |
+| You're developing in short sprints and your data is dynamic and frequently changes | Your data is predictable and highly stuctured |
+| Data can be expressed without relationships | Data is best expressed relationally |  
+| Data retrieval is simple and tends to be flat | You work with complex queries and reports|
+| Your data requires a wide geographic distribution | Your users are more centralized | 
+| Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware | 
+|||
 
-|  Consider a relational database when: | 
-| :-------- |
-| Your workloads require medium to large scale |
-| Concurrency isn't a major concern|
-| ACID guarantees are needed | 
-| Data is best expressed relationally | 
-| Your application will be deployed to large, high-end hardware | 
-
-Next, we look at data storage in the Azure cloud.
+Next, we look at how data storage requirements for cloud-natve systems can be implemented in the Azure cloud.
 
 >[!div class="step-by-step"]
 >[Previous](distributed-data.md)
-<[Next](azure-data-storage.md)
+>[Next](azure-data-storage.md)

@@ -15,7 +15,7 @@ Over the years, many Visual Studio developers have enjoyed the productivity that
 
 ## Prerequisites
 
-- [Visual Studio 2017 15.5](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) or later versions
+- [Visual Studio 2017 version 15.5](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) or later versions
 
 ## How to use the extension
 

@@ -288,9 +288,6 @@ The JWT bearer authentication middleware can also support more advanced scenario
 - **AspNet.Security.OAuth.Providers** (GitHub repo for ASP.NET OAuth providers) \
   <https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src>
 
-- **Danny Strockis. Integrating Azure AD into an ASP.NET Core web app** \
-  <https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/>
-
 - **IdentityServer4. Official documentation** \
   <https://identityserver4.readthedocs.io/en/latest/>
 

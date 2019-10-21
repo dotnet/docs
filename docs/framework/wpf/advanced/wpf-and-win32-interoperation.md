@@ -43,7 +43,7 @@ One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml
 Use whatever approach works best for you.
 
 > [!NOTE]
-> If you have not used C++/CLI before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in C++.  To learn more about the C++/CLI managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms) and [Hello, C++/CLI](https://go.microsoft.com/fwlink/?LinkId=98739).
+> If you have not used C++/CLI before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in C++.  To learn more about the C++/CLI managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms).
 
 <a name="hwnds"></a>
 

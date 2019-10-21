@@ -43,9 +43,11 @@ Also note that
 - A value of a constant expression of type `int` (for example, a value represented by an integer literal) can be implicitly converted to `sbyte`, `byte`, `short`, `ushort`, `uint`, or `ulong`, if it's within the range of the destination type:
 
   ```csharp
-  byte a = 13;    // Compiles
-  byte b = 300;   // CS0031: Constant value '300' cannot be converted to a 'byte'
+  byte a = 13;
+  byte b = 300;  // CS0031: Constant value '300' cannot be converted to a 'byte'
   ```
+
+  As the preceding example shows, if the constant value is not within the range of the destination type, a compiler error [CS0031](../../misc/cs0031.md) occurs.
 
 ## Explicit numeric conversions
 

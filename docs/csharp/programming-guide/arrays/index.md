@@ -9,7 +9,7 @@ ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
 ---
 # Arrays (C# Programming Guide)
 
-You can store multiple variables of the same type in an array data structure. You declare an array by specifying the type of its elements. If you want the array to store elements of different types, you can specify `object` as its type. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object>.
+You can store multiple variables of the same type in an array data structure. You declare an array by specifying the type of its elements. If you want the array to store elements of any type, you can specify `object` as its type. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object>.
 
 ```csharp
 type[] arrayName;

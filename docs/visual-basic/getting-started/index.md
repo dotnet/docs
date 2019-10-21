@@ -29,7 +29,7 @@ Provides a list of Web sites and newsgroups that can help you find answers to co
 
 ## See also
 
-- [Get Visual Basic](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)\
+- [Get Visual Basic](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)\
 Provides download links for Visual Studio versions that include Visual Basic support, including free versions.
 
 - [Object-Oriented Programming](../programming-guide/concepts/object-oriented-programming.md)\
@@ -41,7 +41,7 @@ Provides links to sample code in Visual Basic.
 - [Walkthroughs](../../visual-basic/walkthroughs.md)\
 Provides a list of Help pages that demonstrate aspects of the Visual Basic language.
 
-- [Talk to Us](/visualstudio/ide/talk-to-us)\
+- [Feedback options for Visual Studio](/visualstudio/ide/feedback-options)\
 Covers how to receive support and give feedback.
 
 - [Visual Studio](/visualstudio/)\

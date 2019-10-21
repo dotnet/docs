@@ -385,7 +385,7 @@ In the following diagram, you can also see how the aggregator services work with
 
 Zooming in further, on the “Shopping” business area in the following image, you can see that chattiness between the client apps and the microservices is reduced when using the aggregator services in the API Gateways.
 
-![eShopOnContainers architecture zoom in, showing aggregator services, that "assembles" a response "joining" the response from several microservices to reduce chattiness with the end client.](./media/image38.png)
+![eShopOnContainers architecture zoom in, showing aggregator services, which "assembles" a response "joining" the response from several microservices to reduce chattiness with the end client.](./media/image38.png)
 
 **Figure 6-38**. Zoom in vision of the Aggregator services
 

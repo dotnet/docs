@@ -24,54 +24,54 @@ These settings can also be made in the configuration file for the application, w
   
 Add the following lines to the appropriate configuration file. The values and options for these settings are described in the tables below.  
   
-    ```xml  
-    <configuration>  
-      <system.diagnostics>  
-        <sources>  
-          <source name="System.Net" tracemode="includehex" maxdatasize="1024">  
-            <listeners>  
-              <add name="System.Net"/>  
-            </listeners>  
-          </source>  
-          <source name="System.Net.Cache">  
-            <listeners>  
-              <add name="System.Net"/>  
-            </listeners>  
-          </source>  
-          <source name="System.Net.Http">  
-            <listeners>  
-              <add name="System.Net"/>  
-            </listeners>  
-          </source>  
-          <source name="System.Net.Sockets">  
-            <listeners>  
-              <add name="System.Net"/>  
-            </listeners>  
-          </source>  
-          <source name="System.Net.WebSockets">  
-            <listeners>  
-              <add name="System.Net"/>  
-            </listeners>  
-          </source>  
-        </sources>  
-        <switches>  
-          <add name="System.Net" value="Verbose"/>  
-          <add name="System.Net.Cache" value="Verbose"/>  
-          <add name="System.Net.Http" value="Verbose"/>  
-          <add name="System.Net.Sockets" value="Verbose"/>  
-          <add name="System.Net.WebSockets" value="Verbose"/>  
-        </switches>  
-        <sharedListeners>  
-          <add name="System.Net"  
-            type="System.Diagnostics.TextWriterTraceListener"  
-            initializeData="network.log"
-            traceOutputOptions="ProcessId, DateTime" 
-          />  
-        </sharedListeners>  
-        <trace autoflush="true"/>  
-      </system.diagnostics>  
-    </configuration>  
-    ```  
+```xml  
+<configuration>  
+  <system.diagnostics>  
+    <sources>  
+      <source name="System.Net" tracemode="includehex" maxdatasize="1024">  
+        <listeners>  
+          <add name="System.Net"/>  
+        </listeners>  
+      </source>  
+      <source name="System.Net.Cache">  
+        <listeners>  
+          <add name="System.Net"/>  
+        </listeners>  
+      </source>  
+      <source name="System.Net.Http">  
+        <listeners>  
+          <add name="System.Net"/>  
+        </listeners>  
+      </source>  
+      <source name="System.Net.Sockets">  
+        <listeners>  
+          <add name="System.Net"/>  
+        </listeners>  
+      </source>  
+      <source name="System.Net.WebSockets">  
+        <listeners>  
+          <add name="System.Net"/>  
+        </listeners>  
+      </source>  
+   </sources>  
+    <switches>  
+      <add name="System.Net" value="Verbose"/>  
+      <add name="System.Net.Cache" value="Verbose"/>  
+      <add name="System.Net.Http" value="Verbose"/>  
+      <add name="System.Net.Sockets" value="Verbose"/>  
+      <add name="System.Net.WebSockets" value="Verbose"/>  
+    </switches>  
+    <sharedListeners>  
+      <add name="System.Net"  
+        type="System.Diagnostics.TextWriterTraceListener"  
+        initializeData="network.log"
+        traceOutputOptions="ProcessId, DateTime" 
+      />  
+    </sharedListeners>  
+    <trace autoflush="true"/>  
+  </system.diagnostics>  
+</configuration>  
+```  
   
 When you add a name to the `<switches>` block, the trace output includes information from some methods related to the name. The following table describes the output:
   

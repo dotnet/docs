@@ -56,7 +56,7 @@ The basic mechanism for formatting is the default implementation of the <xref:Sy
      [!code-csharp[Conceptual.Formatting.Overview#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/specifier1.cs#3)]
      [!code-vb[Conceptual.Formatting.Overview#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/specifier1.vb#3)]
 
-     For more information about format specifiers, see the [ToString Method and Format Strings](#FormatStrings) section.
+     For more information about format specifiers, see the [ToString Method and Format Strings](#the-tostring-method-and-format-strings) section.
 
 - Using format providers to take advantage of the formatting conventions of a specific culture. For example, the following statement displays a currency value by using the formatting conventions of the en-US culture.
 
@@ -65,7 +65,7 @@ The basic mechanism for formatting is the default implementation of the <xref:Sy
 
      For more information about formatting with format providers, see the [Format Providers](#culture-sensitive-formatting-with-format-providers) section.
 
-- Implementing the <xref:System.IFormattable> interface to support both string conversion with the <xref:System.Convert> class and composite formatting. For more information, see the [IFormattable Interface](#iformattable-interface) section.
+- Implementing the <xref:System.IFormattable> interface to support both string conversion with the <xref:System.Convert> class and composite formatting. For more information, see the [IFormattable Interface](#the-iformattable-interface) section.
 
 - Using composite formatting to embed the string representation of a value in a larger string. For more information, see the [Composite Formatting](#composite-formatting) section.
 

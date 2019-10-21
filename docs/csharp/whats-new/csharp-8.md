@@ -22,7 +22,7 @@ C# 8.0 adds the following features and enhancements to the C# language:
 - [Indices and ranges](#indices-and-ranges)
 - [Null-coalescing assignment](#null-coalescing-assignment)
 - [Unmanaged constructed types](#unmanaged-constructed-types)
-- [stackalloc in nested expressions](#stackalloc-in-nested-expressions)
+- [Stackalloc in nested expressions](#stackalloc-in-nested-expressions)
 - [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
@@ -93,7 +93,7 @@ C# 8.0 expands this vocabulary so you can use more pattern expressions in more p
 
 In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. The result of any pattern expression is an expression. A recursive pattern is simply a pattern expression applied to the output of another pattern expression.
 
-### switch expressions
+### Switch expressions
 
 Often, a [`switch`](../language-reference/keywords/switch.md) statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case` and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
 
@@ -250,7 +250,7 @@ The discard pattern in the preceding switch matches when either `x` or `y` is 0,
 
 You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
 
-## using declarations
+## Using declarations
 
 A **using declaration** is a variable declaration preceded by the `using` keyword. It tells the compiler that the variable being declared should be disposed at the end of the enclosing scope. For example, consider the following code that writes a text file:
 
@@ -504,7 +504,7 @@ Span<Coords<int>> coordinates = stackalloc[]
 
 For more information, see [Unmanaged types](../language-reference/builtin-types/unmanaged-types.md).
 
-## stackalloc in nested expressions
+## Stackalloc in nested expressions
 
 Starting with C# 8.0, if the result of a [stackalloc](../language-reference/operators/stackalloc.md) expression is of the <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> type, you can use the `stackalloc` expression in other expressions:
 

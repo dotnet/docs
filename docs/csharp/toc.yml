@@ -1313,33 +1313,35 @@
       href: language-reference/keywords/index.md
     - name: Built-in types
       items:
-      - name: Value Types
+      - name: Value types
         items:
         - name: Features of value types
           href: language-reference/keywords/value-types.md
-        - name: bool
-          href: language-reference/keywords/bool.md
         - name: Integral numeric types
-          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer
+          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer, literal
           href: language-reference/builtin-types/integral-numeric-types.md
         - name: Floating-point numeric types
-          displayName: float, decimal, double, rational, real
+          displayName: float, decimal, double, rational, real, literal
           href: language-reference/builtin-types/floating-point-numeric-types.md
+        - name: Built-in numeric conversions
+          href: language-reference/builtin-types/numeric-conversions.md
+        - name: bool
+          href: language-reference/keywords/bool.md
         - name: char
           href: language-reference/keywords/char.md
         - name: enum
           href: language-reference/keywords/enum.md
         - name: struct
           href: language-reference/keywords/struct.md
-      - name: Reference Types
+      - name: Reference types
         items:
         - name: Features of reference types
           href: language-reference/keywords/reference-types.md
-        - name: class
-          href: language-reference/keywords/class.md
         - name: Built-in reference types
           displayName: object, delegate, dynamic, string
           href: language-reference/builtin-types/reference-types.md
+        - name: class
+          href: language-reference/keywords/class.md
         - name: interface
           href: language-reference/keywords/interface.md
       - name: void
@@ -1356,10 +1358,6 @@
           href: language-reference/keywords/value-types-table.md
         - name: Default values table
           href: language-reference/keywords/default-values-table.md
-        - name: Implicit numeric conversions table
-          href: language-reference/keywords/implicit-numeric-conversions-table.md
-        - name: Explicit numeric conversions table
-          href: language-reference/keywords/explicit-numeric-conversions-table.md
         - name: Formatting numeric results table
           href: language-reference/keywords/formatting-numeric-results-table.md
     - name: Modifiers

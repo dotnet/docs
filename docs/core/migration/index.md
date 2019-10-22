@@ -43,7 +43,7 @@ In the command-line scenario, you can use the [`dotnet migrate`](../tools/dotnet
 Files that were migrated (*project.json*, *global.json*, and *.xproj*) are moved to a *backup* folder.
 
 > [!NOTE]
-> If you are using Visual Studio Code, the `dotnet migrate` command will not modify Visual Studio Code-specific files such as *tasks.json*. These files need to be changed manually.
+> If you are using Visual Studio Code, the `dotnet migrate` command does not modify Visual Studio Code-specific files such as *tasks.json*. These files need to be changed manually.
 > This is also true if you are using an editor or Integrated Development Environment (IDE) other than Visual Studio.
 
 See [A mapping between project.json and csproj properties](../tools/project-json-to-csproj.md) for a comparison of *project.json* and *.csproj* formats.

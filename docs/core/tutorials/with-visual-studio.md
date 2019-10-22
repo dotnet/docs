@@ -8,13 +8,13 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Build a C# Hello World application with the .NET Core SDK in Visual Studio 2017
 
-This topic provides a step-by-step introduction to building, debugging, and publishing a simple .NET Core console application using C# in Visual Studio 2017. Visual Studio 2017 provides a full-featured development environment for building .NET Core applications. As long as the application doesn't have platform-specific dependencies, the application can run on any platform that .NET Core targets and on any system that has .NET Core installed.
+This article provides a step-by-step introduction to building, debugging, and publishing a simple .NET Core console application using C# in Visual Studio 2017. Visual Studio 2017 provides a full-featured development environment for building .NET Core applications. As long as the application doesn't have platform-specific dependencies, the application can run on any platform that .NET Core targets and on any system that has .NET Core installed.
 
 ## Prerequisites
 
 [Visual Studio 2017 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.1 or later versions.
 
-For more information, see the [Prerequisites for .NET Core on Windows](../windows-prerequisites.md) topic.
+For more information, see the [Prerequisites for .NET Core on Windows](../windows-prerequisites.md) article.
 
 ## A simple Hello World application
 
@@ -51,7 +51,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
 
 Enhance your application to prompt the user for their name and display it along with the date and time. To modify and test the program, do the following:
 
-1. Enter the following C# code in the code window immediately after the opening bracket that follows the `static void Main(string[] args)` line and before the first closing bracket:
+1. Enter the following C# code in the code window immediately after the opening bracket that follows the `static void Main(string[] args)` line and before the first closing curly bracket:
 
    [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
 
@@ -75,7 +75,7 @@ You've created and run your application. To develop a professional application, 
 
 - For information on developing and publishing a distributable version of your application, see [Publish your .NET Core Hello World application with Visual Studio 2017](publishing-with-visual-studio.md).
 
-## Related topics
+## Related articles
 
 Instead of a console application, you can also build a class library with .NET Core and Visual Studio 2017. For a step-by-step introduction, see [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md).
 

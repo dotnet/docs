@@ -18,8 +18,8 @@ Note that the Windows version of this tool can only uninstall .NET Core SDKs and
 2. Display installed .NET Core SDKs and Runtimes that can be removed by this tool using `dotnet-core-uninstall list`.
 3. Use `dotnet-core-uninstall dry-run` to ensure the right things will be uninstalled.
 4. Use `dotnet-core-uninstall remove` to uninstall .NET Core SDKs and Runtimes. This must be run with Admin privileges.
-4. Optional: delete the `NuGetFallbackFolder` if you no longer need it.
-5. Remove the `dotnet-core-uninstall`  tool.
+5. Optional: delete the `NuGetFallbackFolder` if you no longer need it.
+6. Remove the `dotnet-core-uninstall`  tool.
 
 Read the following sections for details.
 
@@ -218,6 +218,7 @@ The specified version to uninstall. You may list several versions. Response file
   Force removal of versions that might be used by Visual Studio.
 
 Notes:
+
 1. Exactly one of `--sdk`, `--runtime`, `--aspnet-runtime` and `--hosting-bundle` is required.
 2. `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor` and `[<VERSION>...]` are exclusive.
 3. If neither of `--x64` or `--x86` is specified, then both x64 and x86 will be removed.
@@ -275,6 +276,7 @@ Notes:
   Force removal of versions that might be used by Visual Studio or SDKs.
 
 Notes:
+
 1. Exactly one of `--sdk` and `--runtime` is required.
 2. `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor` and `[<VERSION>...]` are exclusive.
 
@@ -319,6 +321,7 @@ Notes:
   ```
 
   The content of *versions.rsp* is as follows:
+  
   ```text
   2.2.300
   2.1.700

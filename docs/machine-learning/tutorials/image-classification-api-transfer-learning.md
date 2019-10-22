@@ -42,11 +42,11 @@ This tutorial trains a custom image classification model to perform automated vi
 
 ## ML.NET Image Classification API
 
-ML.NET provides various ways of performing image classification. This tutorial focuses on performing transfer learning using the Image Classification API. The Image Classification API makes use of [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET), a low-level library that provides C# bindings for the TensorFlow C++ API.
+ML.NET provides various ways of performing image classification. This tutorial applies transfer learning using the Image Classification API. The Image Classification API makes use of [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET), a low-level library that provides C# bindings for the TensorFlow C++ API.
 
 ## What is transfer learning?
 
-Transfer learning is the process of using knowledge gained while solving one problem and applying it to a different but related problem.
+Transfer learning applies knowledge gained from solving one problem to another related problem.
 
 Training a deep learning model from scratch requires setting several parameters, a large amount of labeled training data and a vast amount of compute resources (hundreds of GPU hours). Using a pretrained model along with transfer learning allows you to shortcut the training process. 
 

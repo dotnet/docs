@@ -1,18 +1,12 @@
-- name: Data
-  href: index.md
-  items:
-  - name: Data Binding
-    href: data-binding-wpf.md
-    items:
-    - name: Data Binding Overview
-      href: data-binding-overview.md
-    - name: Binding Sources Overview
+    - name: Data binding
+      href: ../../desktop-wpf/data/data-binding-overview.md?toc=/framework/wpf/data/toc.json
+    - name: Binding sources
       href: binding-sources-overview.md
-    - name: Data Templating Overview
+    - name: Data templating
       href: data-templating-overview.md
-    - name: Binding Declarations Overview
+    - name: Binding declarations
       href: binding-declarations-overview.md
-    - name: How-to Topics
+    - name: How-to
       href: data-binding-how-to-topics.md
       items:
       - name: Create a Simple Binding
@@ -67,8 +61,10 @@
         href: how-to-implement-prioritybinding.md
       - name: Bind to XML Data Using an XMLDataProvider and XPath Queries
         href: how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md
-      - name: Bind to XDocument, XElement, or LINQ for XML Query Results
+      - name: Bind to Query Results
         href: how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md
+      - name: Bind to the Results of a LINQ Query
+        href: how-to-bind-to-the-results-of-a-linq-query.md
       - name: Use XML Namespaces in Data Binding
         href: how-to-use-xml-namespaces-in-data-binding.md
       - name: Bind to an ADO.NET Data Source
@@ -83,5 +79,40 @@
         href: how-to-find-datatemplate-generated-elements.md
       - name: Bind to a Web Service
         href: how-to-bind-to-a-web-service.md
-      - name: Bind to the Results of a LINQ Query
-        href: how-to-bind-to-the-results-of-a-linq-query.md
+    - name: Data binding with LINQ to XML
+      href: ../designers/wpf-data-binding-with-linq-to-xml-overview.md
+    - name: LINQ to XML dynamic properties
+      items:
+      - name: Overview
+        displayName: LINQ to XML dynamic properties
+        href: ../designers/linq-to-xml-dynamic-properties.md
+      - name: XAttribute class
+        items:
+        - name: Value (XAttribute dynamic property)
+          href: ../designers/value-xattribute-dynamic-property.md
+      - name: XElement class
+        items:
+        - name: Attribute (XElement dynamic property)
+          href: ../designers/attribute-xelement-dynamic-property.md
+        - name: Element (XElement dynamic property)
+          href: ../designers/element-xelement-dynamic-property.md
+        - name: Elements (XElement dynamic property)
+          href: ../designers/elements-xelement-dynamic-property.md
+        - name: Descendants (XElement dynamic property)
+          href: ../designers/descendants-xelement-dynamic-property.md
+        - name: Value (XElement dynamic property)
+          href: ../designers/value-xelement-dynamic-property.md
+        - name: Xml (XElement dynamic property)
+          href: ../designers/xml-xelement-dynamic-property.md
+      - name: Examples
+        items:
+        - name: WPF data binding using LINQ to XML
+          href: ../designers/wpf-data-binding-using-linq-to-xml-example.md
+        - name: Build and run the LinqToXmlDataBinding example
+          href: ../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md
+        - name: "Walkthrough: LINQ to XML data binding"
+          href: ../designers/walkthrough-linqtoxmldatabinding-example.md
+        - name: L2DBForm.xaml source code
+          href: ../designers/l2dbform-xaml-source-code.md
+        - name: L2DBForm.xaml.cs source code
+          href: ../designers/l2dbform-xaml-cs-source-code.md

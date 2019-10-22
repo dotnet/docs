@@ -108,9 +108,8 @@ task that can report the error by entering the faulted state. Because
 the method is async, the method can't simply throw the exception. (The
 calling method has continued execution because it is `async`.) The
 actual runtime behavior will be defined differently for different
-environments. It may terminate the thread, it may terminate the program,
-or it may leave the program in an undetermined state. None of those
-are good outcomes.
+environments. It may terminate the thread, the process that owns the thread,
+or leave the process in an indeterminate state. All of these potential outcomes are highly undesirable.
 
 That's why you should wrap the await statement for the async Task
 in your own try block. If it does cause a faulted task, you can

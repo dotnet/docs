@@ -120,7 +120,7 @@ The following Windows operating systems are supported with .NET Core 3.0:
 | ----------------------------- | ------------------------------ | --------------- |
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
-| Windows Server                | 2012 R2 SP1+                   | x64, x86        |
+| Windows Server                | 2012 R2+                       | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
 For more information about .NET Core 3.0 supported OS, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).

@@ -74,7 +74,7 @@ Headings should be done using atx-style, that is, use 1-6 hash characters (#) at
 
 There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
 
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.
+If your heading ends in a `#` character, you need to escape it for the title to render correctly. For example, `# Async programming in F\#`.
 
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 

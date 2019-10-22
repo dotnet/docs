@@ -15,7 +15,7 @@ ms.author: "mairaw"
 The Assembly Linker generates a file that has an assembly manifest from one or more files that are either modules or resource files. A module is an intermediate language (IL) file that does not have an assembly manifest.
 
 > [!NOTE]
-> Starting with Visual Studio 2008, both the C# and Visual Basic compilers automatically embed a Win32 manifest into the assembly. For more information, see [/win32manifest (C# Compiler Options)](../../csharp/language-reference/compiler-options/win32manifest-compiler-option.md).
+> Starting with Visual Studio 2008, both the C# and Visual Basic compilers automatically embed a Win32 manifest into the assembly. For more information, see [-win32manifest (C# Compiler Options)](../../csharp/language-reference/compiler-options/win32manifest-compiler-option.md).
 
 This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 

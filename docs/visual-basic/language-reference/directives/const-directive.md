@@ -44,7 +44,7 @@ Defines conditional compiler constants for Visual Basic.
   
 ## See also
 
-- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
+- [-define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
 - [#If...Then...#Else Directives](../../../visual-basic/language-reference/directives/if-then-else-directives.md)
 - [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
 - [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)

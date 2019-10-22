@@ -56,7 +56,7 @@ For additional information, see [Local Type Inference](../../../visual-basic/pro
 
 ## When an Option Infer Statement Is Not Present
 
-If the source code does not contain an `Option Infer` statement, the **Option Infer** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option is used.
+If the source code does not contain an `Option Infer` statement, the **Option Infer** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option is used.
 
 #### To set Option Infer in the IDE
 
@@ -70,7 +70,7 @@ When you create a new project, the **Option Infer** setting on the **Compile** t
 
 #### To set Option Infer on the command line
 
-Include the [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option in the **vbc** command.
+Include the [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md) compiler option in the **vbc** command.
 
 ## Default Data Types and Values
 
@@ -103,5 +103,5 @@ The following example demonstrates that the run-time type can differ when a vari
 - [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
 - [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
-- [/optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
+- [-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)
 - [Boxing and Unboxing](../../../csharp/programming-guide/types/boxing-and-unboxing.md)

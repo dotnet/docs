@@ -1,7 +1,7 @@
 ---
 title: F# coding conventions
 description: Learn general guidelines and idioms when writing F# code.
-ms.date: 05/14/2018
+ms.date: 10/22/2019
 ---
 # F# coding conventions
 
@@ -636,8 +636,7 @@ This can be confusing in multiple ways:
 ```fsharp
 module Networking =
     ...
-    let send data (bufferSize: int) =
-        ...
+    let send data (bufferSize: int) = ...
 ```
 
 In summary, the pitfall with Type Abbreviations is that they are **not** abstractions over the types they are abbreviating. In the previous example, `BufferSize` is just an `int` under the covers, with no additional data, nor any benefits from the type system besides what `int` already has.
@@ -655,5 +654,6 @@ module Networking =
     ...
     let send data (BufferSize size) =
     ...
+```
 
 This reduces the likelihood that an arbitrary integer is mistakenly passed into the `send` function, because the caller must construct a `BufferSize` type to wrap a value before calling the function.

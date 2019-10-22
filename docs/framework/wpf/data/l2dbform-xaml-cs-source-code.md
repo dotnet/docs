@@ -126,5 +126,5 @@ For the associated XAML source for these handlers, see [L2DBForm.xaml source cod
 
 ## See also
 
-- [Walkthrough: LinqToXmlDataBinding example](walkthrough-linqtoxmldatabinding-example.md)
+- [Walkthrough: LinqToXmlDataBinding example](linq-to-xml-data-binding-sample.md)
 - [L2DBForm.xaml source code](l2dbform-xaml-source-code.md)

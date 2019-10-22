@@ -88,6 +88,3 @@ To delete an existing book from the list, select it in the **Book List** section
 
 1. Edit the values using the keyboard. As soon as either <xref:System.Windows.Controls.TextBox> control loses focus, changes are automatically propagated to the XML source and book listings.
 
-## See also
-
-- [WPF data binding using LINQ to XML example](wpf-data-binding-using-linq-to-xml-example.md)

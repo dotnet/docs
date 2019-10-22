@@ -34,7 +34,7 @@ The remainder of this article briefly describes these features. Where in-depth a
 
 ## Readonly members
 
-You can apply the `readonly` modifier to any member of a struct. It indicates that the member does not modify state. It's more granular than applying the `readonly` modifier to a `struct` declaration.  Consider the following mutable struct:
+You can apply the `readonly` modifier to members of a struct. It indicates that the member does not modify state. It's more granular than applying the `readonly` modifier to a `struct` declaration.  Consider the following mutable struct:
 
 ```csharp
 public struct Point

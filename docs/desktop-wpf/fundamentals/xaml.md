@@ -334,7 +334,7 @@ If you have not already done this, try the exercises in the tutorial article [Wa
 
 WPF uses a particular application model that is based on the <xref:System.Windows.Application> class. For details, see [Application Management Overview](../app-development/application-management-overview.md).
 
-[Building a WPF Application](../app-development/building-a-wpf-application-wpf.md) gives you more details about how to build XAML inclusive applications from the command line and with [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)].
+[Building a WPF Application](../app-development/building-a-wpf-application-wpf.md) gives you more details about how to build XAML inclusive applications from the command line and with Microsoft Visual Studio.
 
 [Dependency Properties Overview](dependency-properties-overview.md) gives more information about the versatility of properties in WPF, and introduces the concept of dependency properties.
 

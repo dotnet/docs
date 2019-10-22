@@ -107,7 +107,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 <a name="Build_and_Deploy"></a>   
 ## Build and Deploy  
- Although simple [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications can be built from a command prompt using command-line compilers, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] integrates with [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] to provide additional support that simplified the development and build process. For more information, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
+ Although simple [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications can be built from a command prompt using command-line compilers, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] integrates with Microsoft Visual Studio to provide additional support that simplified the development and build process. For more information, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
  Depending on the type of application you build, there are one or more deployment options to choose from. For more information, see [Deploying a WPF Application](deploying-a-wpf-application-wpf.md).  
   

@@ -38,7 +38,7 @@ You need Visual Studio to complete this walkthrough.
 ### Creating the Project  
  To start the project:  
   
-1. Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch Microsoft Visual Studio, and open the **New Project** dialog box.  
   
 2. In the Window category, select the **Windows Forms Control Library** template.  
   

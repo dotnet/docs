@@ -34,7 +34,7 @@ You need Visual Studio to complete this walkthrough.
 ### Creating the Project  
  To start the project:  
   
-1. Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch Microsoft Visual Studio, and open the **New Project** dialog box.  
   
 2. In Visual C# and the Windows category, select the **WPF User Control Library** template.  
   

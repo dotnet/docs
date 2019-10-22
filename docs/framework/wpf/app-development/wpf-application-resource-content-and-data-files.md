@@ -62,7 +62,7 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ```  
   
 > [!NOTE]
-> In [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], you create a resource file by adding a file to a project and setting its `Build Action` to `Resource`.  
+> In Microsoft Visual Studio, you create a resource file by adding a file to a project and setting its `Build Action` to `Resource`.  
   
  When the project is built, MSBuild compiles the resource into the assembly.  
   

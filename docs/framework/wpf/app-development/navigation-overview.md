@@ -107,7 +107,7 @@ To allow a markup file and code-behind file to work together, the following conf
 - In code-behind, the <xref:System.Windows.Controls.Page> class must implement a constructor that calls the `InitializeComponent` method. `InitializeComponent` is implemented by the markup file's generated `partial` class to register events and set properties that are defined in markup.
 
 > [!NOTE]
-> When you add a new <xref:System.Windows.Controls.Page> to your project using [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], the <xref:System.Windows.Controls.Page> is implemented using both markup and code-behind, and it includes the necessary configuration to create the association between the markup and code-behind files as described here.
+> When you add a new <xref:System.Windows.Controls.Page> to your project using Microsoft Visual Studio, the <xref:System.Windows.Controls.Page> is implemented using both markup and code-behind, and it includes the necessary configuration to create the association between the markup and code-behind files as described here.
 
 Once you have a <xref:System.Windows.Controls.Page>, you can navigate to it. To specify the first <xref:System.Windows.Controls.Page> that an application navigates to, you need to configure the start <xref:System.Windows.Controls.Page>.
 

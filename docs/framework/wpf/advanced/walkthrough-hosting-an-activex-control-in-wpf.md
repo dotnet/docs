@@ -54,7 +54,7 @@ To enable improved interaction with browsers, you can use Microsoft ActiveX cont
 9. If you are prompted to rename all references, click **Yes**.
 
 ## Creating the ActiveX Control
- [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] automatically generates an <xref:System.Windows.Forms.AxHost> wrapper class for a Microsoft ActiveX control when the control is added to a design surface. The following procedure creates a managed assembly named AxInterop.WMPLib.dll.
+ Microsoft Visual Studio automatically generates an <xref:System.Windows.Forms.AxHost> wrapper class for a Microsoft ActiveX control when the control is added to a design surface. The following procedure creates a managed assembly named AxInterop.WMPLib.dll.
 
 ### To create the ActiveX control
 

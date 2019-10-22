@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: a57776d1-f353-4794-afa0-bfa3c712ed1c
 ---
 # How to: Use Special Characters in XAML
-Markup files that are created in [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] are automatically saved in the Unicode UTF-8 file format, which means that most special characters, such as accent marks, are encoded correctly. However, there is a set of commonly-used special characters that are handled differently. These special characters follow the [!INCLUDE[TLA#tla_w3c](../../../../includes/tlasharptla-w3c-md.md)] [!INCLUDE[TL A#tla_xml](../../../../includes/tlasharptla-xml-md.md)] standard for encoding.  
+Markup files that are created in Microsoft Visual Studio are automatically saved in the Unicode UTF-8 file format, which means that most special characters, such as accent marks, are encoded correctly. However, there is a set of commonly-used special characters that are handled differently. These special characters follow the [!INCLUDE[TLA#tla_w3c](../../../../includes/tlasharptla-w3c-md.md)] [!INCLUDE[TL A#tla_xml](../../../../includes/tlasharptla-xml-md.md)] standard for encoding.  
   
  The following table shows the syntax for encoding this set of special characters:  
   

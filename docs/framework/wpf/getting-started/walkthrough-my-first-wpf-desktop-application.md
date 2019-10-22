@@ -16,7 +16,7 @@ ms.custom: vs-dotnet
 ---
 # Tutorial: Create your first WPF application in Visual Studio 2019
 
-This article shows you how to develop a Windows Presentation Foundation (WPF) desktop application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles. To develop the application, you'll use Visual Studio. 
+This article shows you how to develop a Windows Presentation Foundation (WPF) desktop application that includes the elements that are common to most WPF applications: Extensible Application Markup Language (XAML) markup, code-behind, application definitions, controls, layout, data binding, and styles. To develop the application, you'll use Visual Studio.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -53,11 +53,11 @@ The first step is to create the application infrastructure, which includes an ap
       The **Create a new project** dialog opens.
 
    2. In the **Language** dropdown, select either **C#** or **Visual Basic**.
-      
-   3. Select the **WPF App (.NET Framework)** template and then select **Next**. 
-     
+
+   3. Select the **WPF App (.NET Framework)** template and then select **Next**.
+
       ![Create a new project dialog](./media/walkthrough-my-first-wpf-desktop-application/create-new-project-dialog.png)
-    
+
       The **Configure your new project** dialog opens.
 
    4. Enter the project name **`ExpenseIt`** and then select **Create**.
@@ -150,7 +150,7 @@ In this section, you'll add two pages and an image to the application.
 
 1. Add a <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property to the <xref:System.Windows.Navigation.NavigationWindow> element and set it to "`ExpenseItHome.xaml`".
 
-    This sets *`ExpenseItHome.xaml`* to be the first page opened when the application starts. 
+    This sets *`ExpenseItHome.xaml`* to be the first page opened when the application starts.
 
     Example XAML in Visual Basic:
 
@@ -177,7 +177,7 @@ In this section, you'll add two pages and an image to the application.
 
 1. Set the <xref:System.Windows.Controls.Page.Title%2A> to "`ExpenseIt - View Expense`".
 
-1. Set the `DesignHeight` to 350 pixels and the `DesignWidth` to 500 pixels. 
+1. Set the `DesignHeight` to 350 pixels and the `DesignWidth` to 500 pixels.
 
     *ExpenseReportPage.xaml* now looks like the following in Visual Basic:
 
@@ -444,7 +444,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 1. Open *ExpenseReportPage.xaml*.
 
-2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../data/data-binding-overview.md).
+2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../../../desktop-wpf/data/data-binding-overview.md).
 
     [!code-xaml[ExpenseIt#31](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseReportPage.xaml#31)]
 
@@ -485,7 +485,7 @@ For more information about creating applications, see the following topics:
 
 - [Application development](../app-development/index.md)
 - [Controls](../controls/index.md)
-- [Data binding overview](../data/data-binding-overview.md)
+- [Data binding overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Graphics and multimedia](../graphics-multimedia/index.md)
 - [Documents in WPF](../advanced/documents-in-wpf.md)
 

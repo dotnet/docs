@@ -177,7 +177,7 @@ The following example uses binding to accomplish the same thing.
 
 [!code-xaml[UserControlNumericUpDown#Binding](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#binding)]
 
-For more information about data binding, see [Data Binding Overview](../data/data-binding-overview.md).
+For more information about data binding, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 ### Design for Designers
 
@@ -258,7 +258,7 @@ Resources that are specific to a theme are kept in a resource dictionary with a 
 
 You do not need to define a resource for every theme. If a resource is not defined for a specific theme, then the control checks `Classic.xaml` for the resource. If the resource is not defined in the file that corresponds to the current theme or in `Classic.xaml`, the control uses the generic resource, which is in a resource dictionary file named `generic.xaml`.  The `generic.xaml` file is located in the same folder as the theme-specific resource dictionary files. Although `generic.xaml` does not correspond to a specific Windows theme, it is still a theme-level dictionary.
 
-The [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown custom control with theme and UI automation support sample contains two resource dictionaries for the `NumericUpDown` control: one is in generic.xaml, and the other is in Luna.NormalColor.xaml. 
+The [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown custom control with theme and UI automation support sample contains two resource dictionaries for the `NumericUpDown` control: one is in generic.xaml, and the other is in Luna.NormalColor.xaml.
 
 When you put a <xref:System.Windows.Controls.ControlTemplate> in any of the theme-specific resource dictionary files, you must create a static constructor for your control and call the <xref:System.Windows.DependencyProperty.OverrideMetadata%28System.Type%2CSystem.Windows.PropertyMetadata%29> method on the <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A>, as shown in the following example.
 

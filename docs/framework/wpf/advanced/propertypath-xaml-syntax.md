@@ -88,7 +88,7 @@ For use as storyboard target, the property specified as `propertyName` must be a
 <object Path="propertyName/propertyNameX" .../>
 ```
 
-The / in this syntax is used to navigate within a hierarchical data source object, and multiple steps into the hierarchy with successive / characters are supported. The source traversal accounts for the current record pointer position, which is determined by synchronizing the data with the UI of its view. For details on binding with hierarchical data source objects, and the concept of current record pointer in data binding, see [Use the Master-Detail Pattern with Hierarchical Data](../data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md) or [Data Binding Overview](../data/data-binding-overview.md).
+The / in this syntax is used to navigate within a hierarchical data source object, and multiple steps into the hierarchy with successive / characters are supported. The source traversal accounts for the current record pointer position, which is determined by synchronizing the data with the UI of its view. For details on binding with hierarchical data source objects, and the concept of current record pointer in data binding, see [Use the Master-Detail Pattern with Hierarchical Data](../data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md) or [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 > [!NOTE]
 > Superficially, this syntax resembles [!INCLUDE[TLA2#tla_xpath](../../../../includes/tla2sharptla-xpath-md.md)]. A true [!INCLUDE[TLA2#tla_xpath](../../../../includes/tla2sharptla-xpath-md.md)] expression for binding to an [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data source is not used as a <xref:System.Windows.Data.Binding.Path%2A> value and should instead be used for the mutually exclusive <xref:System.Windows.Data.Binding.XPath%2A> property.
@@ -221,5 +221,5 @@ In general, <xref:System.Windows.PropertyPath> is designed to use two different 
 ## See also
 
 - <xref:System.Windows.PropertyPath>
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Storyboards Overview](../graphics-multimedia/storyboards-overview.md)

@@ -1,154 +1,140 @@
 ---
 title: Cloud-native data patterns
-description: Architecting Cloud Native .NET Apps for Azure | Cloud Native Data Patterns
-ms.date: 06/30/2019
+description: Learn about common data patterns found in cloud-native applications
+author: robvet
+ms.date: 10/21/2019
 ---
 # Cloud-native data patterns
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
-While decentralized data can lead to improved performance, scalability, and cost savings, it also presents many challenges. Querying for data across microservices is complex. A transaction that spans microservices must be managed programmatically as distributed transactions aren't supported in cloud-native applications. You  move from a world of *immediate consistency* to *eventual consistency*.
-
-We discuss these challenges now.
+As discussed in chapter 1, a key pillar of a cloud-native system is a microservice-based architecture. Microservices favor small, independent data stores scoped to each service. While isolating data can increase agility, performance, and scalability, it also presents many challenges. In this section, we discuss these challenges and present patterns and best practices to help overcome them.  
 
 ## Cross-service queries
 
-How does an application query data that is spread across many independent microservices?
+While microservices are independent and focus on specific functional capabilities, like inventory, shipping, or ordering, they often require integration with other microservices to execute user operations. Typically what is needed from other services is data. In these scenarios, how does a microservice *query* data that is owned by another microservice?
 
-Figure 5-4 shows this scenario.
+Figure 5-4 shows the scenario.
 
 ![Querying across microservices](./media/cross-service-query.png)
 
 **Figure 5-4**. Querying across microservices
 
-Note how in the previous figure we see a shopping basket microservice that adds an item to a user's shopping cart. While the shopping basket's data store contains a basket and lineItem table, it doesn't contain product or pricing data as those items are found in the product and price microservices. To add an item, the shopping basket microservice needs product data and pricing data. What are options to obtain the product and pricing data?
+In the preceding figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains basket and lineItem data, it doesn't contain product or pricing data. Instead, those data items are found in the catalog and pricing microservices. This presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database? 
 
-Figure 5-5 shows the shopping basket microservice making a direct HTTP call to both the product catalog and pricing microservices.
+One option discussed in Chapter 4 is a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said direct HTTP calls couple microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages back and forth across microservices, but that could block an operation that needs a data response to complete.
 
-![Direct http communication](./media/direct-http-communication.png)
-
-**Figure 5-5**. Direct HTTP communication
-
-While feasible to implement, in chapter 4 we discussed how direct HTTP calls across microservices couple the system and aren't considered a good practice.
-
-We could implement an aggregator microservice shown in Figure 5-6.
-
-![Aggregator microservice](./media/aggregator-microservice.png)
-
-**Figure 5-6.** Aggregator microservice
-
-While this approach encapsulates the business operation workflow in an individual microservice, it adds complexity and still results in direct HTTP calls.
-
-A common approach for executing cross-service queries uses the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-7.
+As you can see, querying data across microservices is complex. A common approach to this problem that removes cross-service dependencies is the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
 
 ![Materialized view pattern](./media/materialized-view-pattern.png)
 
-**Figure5-7**. Materialized View Pattern
+**Figure5-5**. Materialized View Pattern
 
-With this pattern, you directly place a local table (known as a *read model*) in the shopping basket service that contains a denormalized copy of the data that is needed from the product and pricing microservices. Placing that data inside the shopping basket microservice eliminates the need for invoking expensive cross-service calls. With the data local to the service, you improve response time and reliability.
+With this pattern, you place a local data table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data needed from the product and pricing microservices. Copying the data into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve service response time and reliability. Additionally, you make the system more resilient by separating data across multiple services. If one service should become unavailable, it will not directly impact other services. Other services can continue operating with data from their own store. 
 
-The catch with this approach is you now have duplicate data in your system. In cloud-native systems, duplicate data isn't considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is commonly implemented in cloud-native systems. However, one and only one system can be the owner of any dataset, and you'll need to implement a synchronization mechanism for the system of record to update all of the associated read models, whenever a change to its underlying data occurs.
+The catch with this approach is you now have duplicate data in your system. In cloud-native systems, duplicate data isn't considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is a widely accepted practice. However, one and only one system can be the owner of a dataset.  You'll need to synchronize the read models when the system of record is updated. This is typically done by implementing asynchronous messaging with a publish/subscribe pattern.
 
 ## Transactional support
 
-While queries across microservices are challenging, implementing a transaction across microservices can be complex. The inherent challenge of maintaining data consistency across data sources that reside in different microservices can't be understated. Figure 5-8 shows the problem.
+While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency for independent data sources in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage cross-service transactions programmatically. You move from a world of *immediate consistency* to that of *eventual consistency*. 
+
+Figure 5-6 shows the problem.
 
 ![Transaction in saga pattern](./media/saga-transaction-operation.png)
 
-**Figure 5-8**. Implementing a transaction across microservices
+**Figure 5-6**. Implementing a transaction across microservices
 
-Note how in the previous figure five independent microservices all participate in a distributed *Create Order* transaction. However, the transaction for each of the five individual microservices must succeed, or all must abort and roll-back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
+In the preceding figure, five independent microservices participate in a distributed transaction that creates an order. Each microservice maintains its own data store and implements a local transaction for its store. The local transaction for each individual microservice must succeed, or all must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
 
-Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to programmatically construct a distributed transaction.
+Since transactional support is essential to keep the data consistent in each of the microservices, you must construct a distributed transaction *programmatically*.
 
-A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-9 shows a failed transaction with the Saga pattern.
+A popular pattern for adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If any of the local transactions fail, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions and restore data consistency. Figure 5-7 shows a failed transaction with the Saga pattern.
 
-![Rollback in saga pattern](./media/saga-rollback-operation.png)
+![Roll back in saga pattern](./media/saga-rollback-operation.png)
 
-**Figure 5-9**. Rolling back a transaction
+**Figure 5-7**. Rolling back a transaction
 
-Note how in the previous figure the *GenerateContent* operation has failed in the music microservice. The Saga invokes compensating transactions (in red) to remove the content, cancel the payment, and cancel the order, returning the data for each microservice back to a consistent state.
+In the above figure, the *GenerateContent* operation has failed in the music microservice. The Saga invokes compensating transactions (in red) to remove the content, cancel the payment and the order, and return the data for each microservice back to a consistent state.
 
-Saga patterns are typically choreographed as a series of related events or orchestrated as a set of related commands.
+Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands.
 
 ## CQRS pattern
 
-CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from those that write data. This pattern can help maximize performance, scalability, and security.
+Cloud-native applications often support high-volume data requirements. In these secanairos, traditional data storage techniques can cause performance bottlenecks. CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separate operations that read data from operations that write data. 
 
-In normal data access scenarios, you implement a single model (entity and repository object) that perform *both* read and write data operations.
+For normal scenarios, you implement a single model (entity and data repository object) that performs *both* read and write data operations.
 
-However, a more advanced data access scenario might benefit from separate models and data tables for reads and writes. To improve performance, the read operation, known as a *query*, might query against a highly denormalized representation of the data to avoid expensive repetitive table joins. Whereas the *write* operation, known as a *command*, might update against a fully normalized representation of the data. You would then need to implement a mechanism to keep both representations in sync. Typically, whenever the write table is modified, it raises an event that replicates the data modification to the read table.
+However, a high volume data scenario might benefit from separate models and data tables for reads and writes. To improve performance, the read operation might query against a highly denormalized representation of the data to avoid expensive repetitive table joins. The *write* operation, known as a *command*, might update against a fully normalized representation of the data. You would then need to implement a mechanism to keep both representations in sync. Typically, whenever the write table is modified, it publishes an event that replicates the data modification to the read table.
 
-Figure 5-10 shows an implementation of the CQRS pattern.
+Figure 5-8 shows an implementation of the CQRS pattern.
 
 ![CQRS implementation](./media/cqrs-implementation.png)
 
-**Figure 5-10**. CQRS implementation
+**Figure 5-8**. CQRS implementation
 
-Note how in the previous figure separate command and query models are implemented. Moreover, each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the propagation process operates on the principle of [eventual consistency](https://www.cloudcomputingpatterns.org/eventual_consistency/), whereas the read model eventually synchronizes with the write model, but there may be some lag in the process.
+Note in the previous figure how separate command and query models are implemented. Each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the data propagation process operates on the principle of [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/). The read model eventually synchronizes with the write model, but there may be some lag in the process.
 
-By implementing separation, you have the ability to scale reads and writes separately. As well, you might impose tighter security on write operations than those concerning reads.
+By implementing separation, reads and writes scale independently. Read operations use a schema optimized for queries, while the writes use a schema optimized for updates. Read queries go against denormalized data, while complex business logic can be applied to the write model. As well, you might impose tighter security on write operations than those concerning reads.
 
-Typically, CQRS patterns are applied to limited sections of your system based upon specific needs.
+Implementing CQRS can improve application performance for cloud-native services. However, it does result in a more complex design. Apply this principle sparingly to those sections of your application that will most benefit from it.
 
 ## Relational vs NoSQL
 
-The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies can't be overstated, especially for distributed cloud-native systems. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
+The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies for distributed cloud-native systems can't be overstated. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
-On the one side, relational databases have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, expertise and tooling abounds. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data and have [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) (also known as Atomicity, Consistency, Isolation, and Durability) guarantees.
+Relational databases have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, tooling, and expertise abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and support [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees. 
 
-No-SQL databases, on the other side, refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. They don't offer [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
+No-SQL databases refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. No-SQL databases typically don't provide [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees beyond the scope of a single database partition.
 
-A way to understand the differences between these types of databases can be found in the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles that can be applied to distributed systems that store state. Figure 5-11 shows the three properties of the CAP theorem.
+As a way to understand the differences between these types of databases, consider the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles applied to distributed systems that store state. Figure 5-9 shows the three properties of the CAP theorem.
 
 ![CAP theorem](./media/cap-theorem.png)
 
-**Figure 5-11**. The CAP theorem
+**Figure 5-9**. The CAP theorem
 
-The theorem states that any distributed data system will offer a trade-off between consistency, availability, and partition tolerance, and that any database can only guarantee two of the three properties:
+The theorem states that distributed data systems will offer a trade-off between consistency, availability, and partition tolerance. And, that any database can only guarantee *two* of the three properties:
 
-- *Consistency*: every node in the cluster will respond with the most recent data, even if it requires blocking a request until all replicas are correctly updated.
+- *Consistency.* Every node in the cluster will respond with the most recent data, even if the system must block the request until all replicas are updated. If you query a "consistent system" for an item that is updating, you will wait for that response until all replicas successfully update. However, you'll receive the most current data.
 
-- *Availability*: every node will return a response in a reasonable amount of time, even if that response isn't the most recent data.
+- *Availability.* Every node will return a response in a reasonable amount of time, even if that response isn't the most recent data. If you query an "available system" for an item that is updating, you'll get a timely response, even if the update hasn't replicated. 
 
-- *Partition Tolerance*: guarantees that the system will continue operating if a node fails or loses connectivity with another.
+- *Partition Tolerance.* Guarantees that the system will continue operating if a replica node fails or loses connectivity with other replica nodes. 
 
-Relational databases exhibit consistency and availability, but not partition tolerance. Partitioning a relational database, such as sharding, is difficult and can impact performance.
+Generally speaking, relational databases typically provide consistency and availability, but not partition tolerance. Partitioning a relational database across multiple nodes, such as with sharding, is difficult and can impact performance.
 
-On the other hand, NoSQL databases typically exhibit partition tolerance, known as horizontal scalability, and high availability. As the CAP theorem specifies, you can only have two of the three principles, and you lose the  consistency property.
+NoSQL databases typically support high availability and partition tolerance, implemented as horizontal scalability. As the CAP theorem specifies, you can only have two of the three properties, and with partition tolerance, you lose the consistency property. 
 
-NoSQL databases are distributed and commonly scaled out across commodity servers. Doing so can provide great availability, both within and across geographical regions at a reduced cost. Data can be partitioned and replicated across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query, even if the data that it is presenting is stale and has not been updated yet.
+If replicas were to lose connectivity in a "highly consistent" database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it cannot replicate the change to all of the underlying replicas. Whereas a "highly available" database cluster would allow the write operation and update each replica as it becomes available.
 
-This is known [eventual consistency](https://www.cloudcomputingpatterns.org/eventual_consistency/), a characteristic of distributed data systems where ACID transactions aren't supported. It's a brief delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. If you update a product item in a NoSQL database in the United States, but at same time query that same data item from a replica node in Europe, you might retrieve the earlier product information - until the European node has been updated with product change. The trade-off is that by giving up [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency),  waiting for all replica nodes to update before returning a query result, you can support enormous scale and traffic volume, but with the possibility of presenting older data.
+> Care must be taken with these descriptions as some databases support configurations that can *"toggle"* these principles. For example, MySQL can be configured as either consistent and available or available and partition tolerant. 
 
-NoSQL databases can be categorized by the following four models: 
+NoSQL databases are distributed and scale out across commodity servers. This approach provides great availability, both within and across geographical regions at a reduced cost. You partition and replicate data across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query - even if the data that is presented is stale and hasn't updated yet.
 
-- *Document Store* (MongoDB, CouchDB, Couchbase): data (and corresponding metadata) is stored non-relationally in denormalized JSON-based documents inside the database.
+This kind of result is known as [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/), a characteristic of distributed data systems where ACID transactions aren't supported. It's a brief delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. Under normal conditions, the lag is typically short, but can increase when problems arise. For example, what if you were to update a product item in a NoSQL database in the United States, but query that same data item from a replica node in Europe? You would receive the earlier product information, until the European node has updated the product change. By immediately returning a query result and not waiting for all replica nodes to update, you gain enormous scale and volume, but with the possibility of presenting older data.
 
-- *Key/Value Store* (Redis, Riak, memcached): data is stored in simple key-value pairs with system operations performed against a unique access key that is mapped to a value of user data.
+The are four basic types of NoSQL databases: 
 
-- *Wide-Column Store* (HBase, Cassandra): related Data is stored in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together.
+- *Document Store* (mongodb, couchdb, couchbase) - Store data and corresponding metadata non-relationally in denormalized JSON-based documents inside the database.
 
-- *Graph stores* (neo4j, titan): data is stored as a graphical representation within a node along with edges that specify the relationship between the nodes.
+- *Key/Value Store* (redis, riak, memcached) - Store data in simple key-value pairs. System operations are performed against a unique access key that maps to a value of user data.
 
-NoSQL databases can be optimized to deal with large-scale data, especially when the data is relatively simple. Consider a NoSQL database when:
+- *Wide-Column Store* (hbase, Cassandra) - Store related data in a columnar format as a set of nested-key/value pairs within a single column with data typically retrieved as a single unit without having to join multiple tables together.
 
-- Your workload requires large-scale and high-concurrency.
-- You have large numbers of users.
-- Your data can be expressed simply without relationships.
-- You need to geographically distribute your data.
-- You don't need ACID guarantees.
-- Will be deployed to commodity hardware.
+- *Graph stores* (neo4j, titan) - Store data as a graphical representation within a node along with edges that specify the relationship between the nodes.
 
-Then, consider a relational database when:
+Based upon specific data needs, a cloud-native-based microservice can either implement a relational, or a NoSQL datastore or both.
 
-- Your workloads require medium to large scale.
-- Concurrency isn't a major concern.
-- ACID guarantees are needed.
-- Data is best expressed relationally.
-- Your application will be deployed to large, high-end hardware.
+|  Consider a NoSQL datastore when: | Consider a relational database when: | 
+| :-------- | :-------- |
+| You have high volume workloads that require large scale | Your workload volume is consistent and requires medium to large scale |
+| Your workloads do not require ACID guarantees |  ACID guarantees are required |
+| Your data is dynamic and frequently changes | Your data is predictable and highly structured |
+| Data can be expressed without relationships | Data is best expressed relationally |  
+| You need fast writes and write saftey is not critical | Write safety is a requirement |  
+| Data retrieval is simple and tends to be flat | You work with complex queries and reports|
+| Your data requires a wide geographic distribution | Your users are more centralized | 
+| Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware | 
+|||
 
-Next, we look at data storage in the Azure cloud.
+Next, we look at how data storage requirements for cloud-natve systems can be implemented in the Azure cloud.
 
 >[!div class="step-by-step"]
 >[Previous](distributed-data.md)

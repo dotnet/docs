@@ -282,6 +282,7 @@ The `<operator>` describes the relationship between the property and the value:
 | `=`      | Exact match     |
 | `!=`     | Not exact match |
 | `~`      | Contains        |
+| `!~`     | Not contains    |
 
 `<value>` is a string. All the lookups are case insensitive.
 

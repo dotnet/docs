@@ -17,13 +17,11 @@ WCF's NetTCP binding allows for persistent connections, small messages, and two-
 
 ## HTTP
 
-WCF's BasicHttpBinding is generally text based, using SOAP as the wire format, and is very slow by the standards of modern networked applications. It's only really used to provide cross-platform interoperability, or connection over internet infrastructure. The equivalent in gRPC—because it uses HTTP/2 as the underlying transport layer with the binary Protobuf wire format for messages—can offer NetTCP service level performance but with full cross-platform interoperability with all modern programming languages and frameworks.
+WCF's BasicHttpBinding is usually text based, using SOAP as the wire format, and is slow compared to the NetTCP binding. It's generally used to provide cross-platform interoperability, or connection over internet infrastructure. The equivalent in gRPC—because it uses HTTP/2 as the underlying transport layer with the binary Protobuf wire format for messages—can offer NetTCP service level performance but with full cross-platform interoperability with all modern programming languages and frameworks.
 
 ## Named Pipes
 
-WCF provided a Named Pipes binding for communication between processes on the same physical machine. Named Pipes are not supported by the first release of ASP.NET Core gRPC.
-
-Outside Windows, the functionality provided by Named Pipes is instead generally provided by Unix Domain Sockets. These sockets are regular TCP-like sockets represented with file-system addresses, such as `/var/run/docker.sock`, which gRPC can work with as both client and server. If you need to use Named Pipes style functionality on Windows, the next update to Windows 10 and Windows Server, in 2019 Q4, adds Domain Sockets as a fully supported native feature within Windows. So, gRPC services running on these and later versions of Windows (or on Linux) can use Domain Sockets instead of Named Pipes. However, if your team is unable to update to the latest version of Windows, then you'll need to use localhost TCP sockets. Security concerns about using local TCP sockets can be addressed with the use of certificate authentication between client and server.
+WCF provided a Named Pipes binding for communication between processes on the same physical machine. Named pipes are not supported by the first release of ASP.NET Core gRPC. Adding client and server support for named pipes (and Unix domain sockets) is a goal for a future release.
 
 ## MSMQ
 

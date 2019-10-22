@@ -54,5 +54,5 @@ vbc -debug -out:app.exe test.vb
 ## See also
 
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [/bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)
+- [-bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md)
 - [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)

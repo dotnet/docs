@@ -95,6 +95,4 @@ If you remove `Flags`, the example displays the following values:
 - [C# Keywords](index.md)
 - [Integral types](../builtin-types/integral-numeric-types.md)
 - [Built-In Types Table](built-in-types-table.md)
-- [Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)
-- [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)
 - [Enum Naming Conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)

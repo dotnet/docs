@@ -60,7 +60,7 @@ So that you can focus on the architecture and technologies instead of thinking a
 
 The application consists of multiple subsystems, including several store UI front ends (a Web application and a native mobile app), along with the back-end microservices and containers for all the required server-side operations with several API Gateways as consolidated entry points to the internal microservices. Figure 6-1 shows the architecture of the reference application.
 
-![Mobile and SPA clients communicate to single API gateway endpoints, that then communicate to microservices. Traditional web clients communicate to MVC microservice, that communicates to microservices](./media/image1.png)
+![Mobile and SPA clients communicate to single API gateway endpoints that then communicate to microservices. Traditional web clients communicate to MVC microservice, which communicates to microservices](./media/image1.png)
 
 **Figure 6-1**. The eShopOnContainers reference application architecture for development environment
 

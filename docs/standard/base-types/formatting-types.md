@@ -28,88 +28,52 @@ ms.assetid: 0d1364da-5b30-4d42-8e6b-03378343343f
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
-# Formatting types in .NET
+# Format types in .NET
 
 Formatting is the process of converting an instance of a class, structure, or enumeration value to its string representation, often so that the resulting string can be displayed to users or deserialized to restore the original data type. This conversion can pose a number of challenges:
 
-- The way that values are stored internally does not necessarily reflect the way that users want to view them. For example, a telephone number might be stored in the form 8009999999, which is not user-friendly. It should instead be displayed as 800-999-9999. See the [Custom Format Strings](#customStrings) section for an example that formats a number in this way.
+- The way that values are stored internally does not necessarily reflect the way that users want to view them. For example, a telephone number might be stored in the form 8009999999, which is not user-friendly. It should instead be displayed as 800-999-9999. See the [Custom Format Strings](#custom-format-strings) section for an example that formats a number in this way.
 
-- Sometimes the conversion of an object to its string representation is not intuitive. For example, it is not clear how the string representation of a Temperature object or a Person object should appear. For an example that formats a Temperature object in a variety of ways, see the [Standard Format Strings](#standardStrings) section.
+- Sometimes the conversion of an object to its string representation is not intuitive. For example, it is not clear how the string representation of a Temperature object or a Person object should appear. For an example that formats a Temperature object in a variety of ways, see the [Standard Format Strings](#standard-format-strings) section.
 
-- Values often require culture-sensitive formatting. For example, in an application that uses numbers to reflect monetary values, numeric strings should include the current culture’s currency symbol, group separator (which, in most cultures, is the thousands separator), and decimal symbol. For an example, see the [Culture-Sensitive Formatting with Format Providers and the IFormatProvider Interface](#FormatProviders) section.
+- Values often require culture-sensitive formatting. For example, in an application that uses numbers to reflect monetary values, numeric strings should include the current culture’s currency symbol, group separator (which, in most cultures, is the thousands separator), and decimal symbol. For an example, see the [Culture-sensitive formatting with format providers](#culture-sensitive-formatting-with-format-providers) section.
 
-- An application may have to display the same value in different ways. For example, an application may represent an enumeration member by displaying a string representation of its name or by displaying its underlying value. For an example that formats a member of the <xref:System.DayOfWeek> enumeration in different ways, see the [Standard Format Strings](#standardStrings) section.
+- An application may have to display the same value in different ways. For example, an application may represent an enumeration member by displaying a string representation of its name or by displaying its underlying value. For an example that formats a member of the <xref:System.DayOfWeek> enumeration in different ways, see the [Standard Format Strings](#standard-format-strings) section.
 
 > [!NOTE]
 > Formatting converts the value of a type into a string representation. Parsing is the inverse of formatting. A parsing operation creates an instance of a data type from its string representation. For information about converting strings to other data types, see [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md).
 
 .NET provides rich formatting support that enables developers to address these requirements.
 
-This overview contains the following sections:
-
-- [Formatting in .NET](#NetFormatting)
-
-- [Default Formatting Using the ToString Method](#DefaultToString)
-
-- [Overriding the ToString Method](#OverrideToString)
-
-- [The ToString Method and Format Strings](#FormatStrings)
-
-  - [Standard Format Strings](#standardStrings)
-
-  - [Custom Format Strings](#customStrings)
-
-  - [Format Strings and .NET Class Library Types](#stringRef)
-
-- [Culture-Sensitive Formatting with Format Providers and the IFormatProvider Interface](#FormatProviders)
-
-  - [Culture-Sensitive Formatting of Numeric Values](#numericCulture)
-
-  - [Culture-Sensitive Formatting of Date and Time Values](#dateCulture)
-
-- [The IFormattable Interface](#IFormattable)
-
-- [Composite Formatting](#CompositeFormatting)
-
-- [Custom Formatting with ICustomFormatter](#Custom)
-
-- [Related Topics](#RelatedTopics)
-
-- [Reference](#Reference)
-
-<a name="NetFormatting"></a>
-
 ## Formatting in .NET
 
-The basic mechanism for formatting is the default implementation of the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method, which is discussed in the [Default Formatting Using the ToString Method](#DefaultToString) section later in this topic. However, .NET provides several ways to modify and extend its default formatting support. These include the following:
+The basic mechanism for formatting is the default implementation of the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method, which is discussed in the [Default Formatting Using the ToString Method](#default-formatting-using-the-tostring-method) section later in this topic. However, .NET provides several ways to modify and extend its default formatting support. These include the following:
 
-- Overriding the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to define a custom string representation of an object’s value. For more information, see the [Overriding the ToString Method](#OverrideToString) section later in this topic.
+- Overriding the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to define a custom string representation of an object’s value. For more information, see the [Override the ToString Method](#override-the-tostring-method) section later in this topic.
 
 - Defining format specifiers that enable the string representation of an object’s value to take multiple forms. For example, the "X" format specifier in the following statement converts an integer to the string representation of a hexadecimal value.
 
      [!code-csharp[Conceptual.Formatting.Overview#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/specifier1.cs#3)]
      [!code-vb[Conceptual.Formatting.Overview#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/specifier1.vb#3)]
 
-     For more information about format specifiers, see the [ToString Method and Format Strings](#FormatStrings) section.
+     For more information about format specifiers, see the [ToString Method and Format Strings](#the-tostring-method-and-format-strings) section.
 
 - Using format providers to take advantage of the formatting conventions of a specific culture. For example, the following statement displays a currency value by using the formatting conventions of the en-US culture.
 
      [!code-csharp[Conceptual.Formatting.Overview#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/specifier1.cs#10)]
      [!code-vb[Conceptual.Formatting.Overview#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/specifier1.vb#10)]
 
-     For more information about formatting with format providers, see the [Format Providers and the IFormatProvider Interface](#FormatProviders) section.
+     For more information about formatting with format providers, see the [Format Providers](#culture-sensitive-formatting-with-format-providers) section.
 
-- Implementing the <xref:System.IFormattable> interface to support both string conversion with the <xref:System.Convert> class and composite formatting. For more information, see the [IFormattable Interface](#IFormattable) section.
+- Implementing the <xref:System.IFormattable> interface to support both string conversion with the <xref:System.Convert> class and composite formatting. For more information, see the [IFormattable Interface](#the-iformattable-interface) section.
 
-- Using composite formatting to embed the string representation of a value in a larger string. For more information, see the [Composite Formatting](#CompositeFormatting) section.
+- Using composite formatting to embed the string representation of a value in a larger string. For more information, see the [Composite Formatting](#composite-formatting) section.
 
-- Implementing <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> to provide a complete custom formatting solution. For more information, see the [Custom Formatting with ICustomFormatter](#Custom) section.
+- Implementing <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> to provide a complete custom formatting solution. For more information, see the [Custom Formatting with ICustomFormatter](#custom-formatting-with-icustomformatter) section.
 
 The following sections examine these methods for converting an object to its string representation.
 
-<a name="DefaultToString"></a>
-
-## Default Formatting Using the ToString Method
+## Default formatting using the ToString method
 
 Every type that is derived from <xref:System.Object?displayProperty=nameWithType> automatically inherits a parameterless `ToString` method, which returns the name of the type by default. The following example illustrates the default `ToString` method. It defines a class named `Automobile` that has no implementation. When the class is instantiated and its `ToString` method is called, it displays its type name. Note that the `ToString` method is not explicitly called in the example. The <xref:System.Console.WriteLine%28System.Object%29?displayProperty=nameWithType> method implicitly calls the `ToString` method of the object passed to it as an argument.
 
@@ -124,9 +88,7 @@ Because all types other than interfaces are derived from <xref:System.Object>, t
 > [!NOTE]
 > Structures inherit from <xref:System.ValueType>, which in turn is derived from <xref:System.Object>. Although <xref:System.ValueType> overrides <xref:System.Object.ToString%2A?displayProperty=nameWithType>, its implementation is identical.
 
-<a name="OverrideToString"></a>
-
-## Overriding the ToString Method
+## Override the ToString method
 
 Displaying the name of a type is often of limited use and does not allow consumers of your types to differentiate one instance from another. However, you can override the `ToString` method to provide a more useful representation of an object’s value. The following example defines a `Temperature` object and overrides its `ToString` method to display the temperature in degrees Celsius.
 
@@ -152,9 +114,7 @@ In .NET, the `ToString` method of each primitive value type has been overridden 
 |<xref:System.UInt32>|Calls `UInt32.ToString("G", NumberFormatInfo.CurrentInfo)` to format the <xref:System.UInt32> value for the current culture.|
 |<xref:System.UInt64>|Calls `UInt64.ToString("G", NumberFormatInfo.CurrentInfo)` to format the <xref:System.UInt64> value for the current culture.|
 
-<a name="FormatStrings"></a>
-
-## The ToString Method and Format Strings
+## The ToString method and format strings
 
 Relying on the default `ToString` method or overriding `ToString` is appropriate when an object has a single string representation. However, the value of an object often has multiple representations. For example, a temperature can be expressed in degrees Fahrenheit, degrees Celsius, or kelvins. Similarly, the integer value 10 can be represented in numerous ways, including 10, 10.0, 1.0e01, or $10.00.
 
@@ -162,9 +122,7 @@ To enable a single value to have multiple string representations, .NET uses form
 
 All numeric types, date and time types, and enumeration types in .NET support a predefined set of format specifiers. You can also use format strings to define multiple string representations of your application-defined data types.
 
-<a name="standardStrings"></a>
-
-### Standard Format Strings
+### Standard format strings
 
 A standard format string contains a single format specifier, which is an alphabetic character that defines the string representation of the object to which it is applied, along with an optional precision specifier that affects how many digits are displayed in the result string. If the precision specifier is omitted or is not supported, a standard format specifier is equivalent to a standard format string.
 
@@ -206,7 +164,7 @@ In addition, numeric format strings may include a precision specifier. The meani
 
 For more information about standard numeric formatting strings, see [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md).
 
-Standard format strings for date and time values are aliases for custom format strings stored by a particular <xref:System.Globalization.DateTimeFormatInfo> property. For example, calling the `ToString` method of a date and time value with the "D" format specifier displays the date and time by using the custom format string stored in the current culture’s <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType> property. (For more information about custom format strings, see the [next section](#customStrings).) The following example illustrates this relationship.
+Standard format strings for date and time values are aliases for custom format strings stored by a particular <xref:System.Globalization.DateTimeFormatInfo> property. For example, calling the `ToString` method of a date and time value with the "D" format specifier displays the date and time by using the custom format string stored in the current culture’s <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType> property. (For more information about custom format strings, see the [next section](#custom-format-strings).) The following example illustrates this relationship.
 
 [!code-csharp[Conceptual.Formatting.Overview#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/alias1.cs#5)]
 [!code-vb[Conceptual.Formatting.Overview#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/alias1.vb#5)]
@@ -224,9 +182,7 @@ For example, a `Temperature` class can internally store the temperature in degre
 [!code-csharp[Conceptual.Formatting.Overview#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/appstandard1.cs#7)]
 [!code-vb[Conceptual.Formatting.Overview#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/appstandard1.vb#7)]
 
-<a name="customStrings"></a>
-
-### Custom Format Strings
+### Custom format strings
 
 In addition to the standard format strings, .NET defines custom format strings for both numeric values and date and time values. A custom format string consists of one or more custom format specifiers that define the string representation of a value. For example, the custom date and time format string "yyyy/mm/dd hh:mm:ss.ffff t zzz" converts a date to its string representation in the form "2008/11/15 07:45:00.0000 P -08:00" for the en-US culture. Similarly, the custom format string "0000" converts the integer value 12 to "0012". For a complete list of custom format strings, see [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md) and [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md).
 
@@ -247,9 +203,7 @@ The following example defines a custom format string that displays an <xref:Syst
 
 Although standard format strings can generally handle most of the formatting needs for your application-defined types, you may also define custom format specifiers to format your types.
 
-<a name="stringRef"></a>
-
-### Format Strings and .NET Types
+### Format strings and .NET types
 
 All numeric types (that is, the <xref:System.Byte>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.Numerics.BigInteger> types), as well as the <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.Guid>, and all enumeration types, support formatting with format strings. For information on the specific format strings supported by each type, see the following topics:
 
@@ -264,9 +218,7 @@ All numeric types (that is, the <xref:System.Byte>, <xref:System.Decimal>, <xref
 |[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|Describes standard format strings that are used to create string representations of enumeration values.|
 |<xref:System.Guid.ToString%28System.String%29?displayProperty=nameWithType>|Describes standard format strings for <xref:System.Guid> values.|
 
-<a name="FormatProviders"></a>
-
-## Culture-Sensitive Formatting with Format Providers and the IFormatProvider Interface
+## Culture-sensitive formatting with format providers
 
 Although format specifiers let you customize the formatting of objects, producing a meaningful string representation of objects often requires additional formatting information. For example, formatting a number as a currency value by using either the "C" standard format string or a custom format string such as "$ #,#.00" requires, at a minimum, information about the correct currency symbol, group separator, and decimal separator to be available to include in the formatted string. In .NET, this additional formatting information is made available through the <xref:System.IFormatProvider> interface, which is provided as a parameter to one or more overloads of the `ToString` method of numeric types and date and time types. <xref:System.IFormatProvider> implementations are used in .NET to support culture-specific formatting. The following example illustrates how the string representation of an object changes when it is formatted with three <xref:System.IFormatProvider> objects that represent different cultures.
 
@@ -299,9 +251,7 @@ A number of formatting or string conversion methods include a parameter of type 
 
 You can also implement your own format provider to replace any one of these classes. However, your implementation’s <xref:System.IFormatProvider.GetFormat%2A> method must return an object of the type listed in the previous table if it has to provide formatting information to the `ToString` method.
 
-<a name="numericCulture"></a>
-
-### Culture-Sensitive Formatting of Numeric Values
+### Culture-sensitive formatting of numeric values
 
 By default, the formatting of numeric values is culture-sensitive. If you do not specify a culture when you call a formatting method, the formatting conventions of the current thread culture are used. This is illustrated in the following example, which changes the current thread culture four times and then calls the <xref:System.Decimal.ToString%28System.String%29?displayProperty=nameWithType> method. In each case, the result string reflects the formatting conventions of the current culture. This is because the `ToString` and `ToString(String)` methods wrap calls to each numeric type's `ToString(String, IFormatProvider)` method.
 
@@ -319,9 +269,7 @@ The following example uses <xref:System.Globalization.NumberFormatInfo> objects 
 [!code-csharp[Conceptual.Formatting.Overview#20](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/culturespecific4.cs#20)]
 [!code-vb[Conceptual.Formatting.Overview#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/culturespecific4.vb#20)]
 
-<a name="dateCulture"></a>
-
-### Culture-Sensitive Formatting of Date and Time Values
+### Culture-sensitive formatting of date and time values
 
 By default, the formatting of date and time values is culture-sensitive. If you do not specify a culture when you call a formatting method, the formatting conventions of the current thread culture are used. This is illustrated in the following example, which changes the current thread culture four times and then calls the <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> method. In each case, the result string reflects the formatting conventions of the current culture. This is because the <xref:System.DateTime.ToString?displayProperty=nameWithType>, <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ToString?displayProperty=nameWithType>, and <xref:System.DateTimeOffset.ToString%28System.String%29?displayProperty=nameWithType> methods wrap calls to the <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> and <xref:System.DateTimeOffset.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> methods.
 
@@ -339,9 +287,7 @@ The following example uses <xref:System.Globalization.DateTimeFormatInfo> object
 [!code-csharp[Conceptual.Formatting.Overview#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/culturespecific2.cs#18)]
 [!code-vb[Conceptual.Formatting.Overview#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/culturespecific2.vb#18)]
 
-<a name="IFormattable"></a>
-
-## The IFormattable Interface
+## The IFormattable interface
 
 Typically, types that overload the `ToString` method with a format string and an <xref:System.IFormatProvider> parameter also implement the <xref:System.IFormattable> interface. This interface has a single member, <xref:System.IFormattable.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>, that includes both a format string and a format provider as parameters.
 
@@ -349,7 +295,7 @@ Implementing the <xref:System.IFormattable> interface for your application-defin
 
 - Support for string conversion by the <xref:System.Convert> class. Calls to the <xref:System.Convert.ToString%28System.Object%29?displayProperty=nameWithType> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=nameWithType> methods call your <xref:System.IFormattable> implementation automatically.
 
-- Support for composite formatting. If a format item that includes a format string is used to format your custom type, the common language runtime automatically calls your <xref:System.IFormattable> implementation and passes it the format string. For more information about composite formatting with methods such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, see the [Composite Formatting](#CompositeFormatting) section.
+- Support for composite formatting. If a format item that includes a format string is used to format your custom type, the common language runtime automatically calls your <xref:System.IFormattable> implementation and passes it the format string. For more information about composite formatting with methods such as <xref:System.String.Format%2A?displayProperty=nameWithType> or <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, see the [Composite Formatting](#composite-formatting) section.
 
 The following example defines a `Temperature` class that implements the <xref:System.IFormattable> interface. It supports the "C" or "G" format specifiers to display the temperature in Celsius, the "F" format specifier to display the temperature in Fahrenheit, and the "K" format specifier to display the temperature in Kelvin.
 
@@ -361,9 +307,7 @@ The following example instantiates a `Temperature` object. It then calls the <xr
 [!code-csharp[Conceptual.Formatting.Overview#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/iformattable.cs#13)]
 [!code-vb[Conceptual.Formatting.Overview#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/iformattable.vb#13)]
 
-<a name="CompositeFormatting"></a>
-
-## Composite Formatting
+## Composite formatting
 
 Some methods, such as <xref:System.String.Format%2A?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, support composite formatting. A composite format string is a kind of template that returns a single string that incorporates the string representation of zero, one, or more objects. Each object is represented in the composite format string by an indexed format item. The index of the format item corresponds to the position of the object that it represents in the method's parameter list. Indexes are zero-based. For example, in the following call to the <xref:System.String.Format%2A?displayProperty=nameWithType> method, the first format item, `{0:D}`, is replaced by the string representation of `thatDate`; the second format item, `{1}`, is replaced by the string representation of `item1`; and the third format item, `{2:C2}`, is replaced by the string representation of `item1.Value`.
 
@@ -383,9 +327,7 @@ In addition to replacing a format item with the string representation of its cor
 
 For more information about composite formatting, see [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md).
 
-<a name="Custom"></a>
-
-## Custom Formatting with ICustomFormatter
+## Custom formatting with ICustomFormatter
 
 Two composite formatting methods, <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a <xref:System.Type> object that represents an <xref:System.ICustomFormatter> interface to the format provider’s <xref:System.IFormatProvider.GetFormat%2A> method. The <xref:System.IFormatProvider.GetFormat%2A> method is then responsible for returning the <xref:System.ICustomFormatter> implementation that provides custom formatting.
 
@@ -401,9 +343,7 @@ The following example uses the `ByteByByteFormatter` class to format integer val
 [!code-csharp[Conceptual.Formatting.Overview#16](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/icustomformatter1.cs#16)]
 [!code-vb[Conceptual.Formatting.Overview#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/icustomformatter1.vb#16)]
 
-<a name="RelatedTopics"></a>
-
-## Related Topics
+## Related topics
 
 |Title|Definition|
 |-----------|----------------|
@@ -417,8 +357,6 @@ The following example uses the `ByteByByteFormatter` class to format integer val
 |[Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)|Describes how to embed one or more formatted values in a string. The string can subsequently be displayed on the console or written to a stream.|
 |[Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)|Lists topics that provide step-by-step instructions for performing specific formatting operations.|
 |[Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)|Describes how to initialize objects to the values described by string representations of those objects. Parsing is the inverse operation of formatting.|
-
-<a name="Reference"></a>
 
 ## Reference
 

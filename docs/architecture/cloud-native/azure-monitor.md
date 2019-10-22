@@ -58,11 +58,11 @@ These charts can then be embedded in the Azure portal proper through use of the 
 
 Sometimes, having data dashboards is insufficient. If nobody is awake to watch the dashboards, then it can still be many hours before a problem is addressed, or even detected. To this end, Azure Monitor also provides a top notch [alerting solution](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview). Alerts can be triggered by a wide range of conditions including:
 
-* Metric values
-* Log search queries
-* Activity Log events
-* Health of the underlying Azure platform
-* Tests for web site availability
+- Metric values
+- Log search queries
+- Activity Log events
+- Health of the underlying Azure platform
+- Tests for web site availability
 
 When triggered, the alerts can perform a wide variety of tasks. On the simple side, the alerts may just send an e-mail notification to a mailing list or a text message to an individual. More involved alerts might trigger a workflow in a tool such as PagerDuty, which is aware of who is on call for a particular application. Alerts can trigger actions in [Microsoft Flow](https://flow.microsoft.com/) unlocking near limitless possibilities for workflows.
 

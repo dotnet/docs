@@ -35,23 +35,23 @@ and can be referenced from projects targeting .NET Core or .NET Standard.
 It provides about 20,000 APIs, including Windows-only as well as cross-platform
 APIs from the following technology areas:
 
-* Code Pages
-* CodeDom
-* Configuration
-* Directory Services
-* Drawing
-* ODBC
-* Permissions
-* Ports
-* Windows Access Control Lists (ACL)
-* Windows Communication Foundation (WCF)
-* Windows Cryptography
-* Windows EventLog
-* Windows Management Instrumentation (WMI)
-* Windows Performance Counters
-* Windows Registry
-* Windows Runtime Caching
-* Windows Services
+- Code Pages
+- CodeDom
+- Configuration
+- Directory Services
+- Drawing
+- ODBC
+- Permissions
+- Ports
+- Windows Access Control Lists (ACL)
+- Windows Communication Foundation (WCF)
+- Windows Cryptography
+- Windows EventLog
+- Windows Management Instrumentation (WMI)
+- Windows Performance Counters
+- Windows Registry
+- Windows Runtime Caching
+- Windows Services
 
 For more information, see the [specification of the compatibility pack](https://github.com/dotnet/designs/blob/master/accepted/compat-pack/compat-pack.md).
 

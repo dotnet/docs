@@ -71,16 +71,16 @@ An API gateway provides a single point of entry for clients and then intelligent
 
 ## Recommended resources
 
-* [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview)
-* [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub)
-* [Challenges and solutions for distributed data management](../microservices/architect-microservice-container-applications/distributed-data-management.md)
-* [Designing microservices: identifying microservice boundaries](https://docs.microsoft.com/azure/architecture/microservices/microservice-boundaries)
-* [Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs)
-* [Event Sourcing pattern](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
-* [Implementing the Circuit Breaker pattern](../microservices/implement-resilient-applications/implement-circuit-breaker-pattern.md)
-* [IoT Hub](https://docs.microsoft.com/azure/iot-hub)
-* [Service Bus](https://docs.microsoft.com/azure/service-bus)
-* [Working with the change feed support in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
+- [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview)
+- [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub)
+- [Challenges and solutions for distributed data management](../microservices/architect-microservice-container-applications/distributed-data-management.md)
+- [Designing microservices: identifying microservice boundaries](https://docs.microsoft.com/azure/architecture/microservices/microservice-boundaries)
+- [Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-what-is-event-hubs)
+- [Event Sourcing pattern](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
+- [Implementing the Circuit Breaker pattern](../microservices/implement-resilient-applications/implement-circuit-breaker-pattern.md)
+- [IoT Hub](https://docs.microsoft.com/azure/iot-hub)
+- [Service Bus](https://docs.microsoft.com/azure/service-bus)
+- [Working with the change feed support in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/change-feed)
 
 >[!div class="step-by-step"]
 >[Previous](serverless-architecture-considerations.md)

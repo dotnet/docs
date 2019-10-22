@@ -88,6 +88,30 @@
       href: datamemberfieldeditor-class.md
     - name: DataMemberListEditor class
       href: datamemberlisteditor-class.md
+  - name: System.Windows.Xps
+    items:
+    - name: XpsDocumentWriter
+      items:
+      - name: raise__WritingCancelled Method
+        href: xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
+      - name: raise__WritingCompleted Method 
+        href: xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
+      - name: raise__WritingPrintTicketRequired Method
+        href: xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
+      - name: raise__WritingProgressChanged
+        href: xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps.md
+      - name: _WritingCancelled
+        href: xpsdocumentwriter-writingcancelled-event-system-windows-xps.md
+      - name: _WritingCompleted
+        href: xpsdocumentwriter-writingcompleted-event-system-windows-xps.md
+      - name: _WritingProgressChanged
+        href: xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
+  - name: System.Xml
+    items:
+    - name: XmlReader Class
+      items:
+      - name: XmlReader.CreateSqlReader Method
+        href: system.xml.xmlreader.createsqlreader.md
   - name: adodb Namespace
     items:
     - name: Connection Interface
@@ -116,5 +140,3 @@
       href: stdole.stdfont.md
     - name: StdPicture Interface
       href: stdole.stdpicture.md
-
-

@@ -21,7 +21,7 @@ In microservice scenarios, authentication is typically handled centrally. If you
 
 If services can be accessed directly, an authentication service like Azure Active Directory or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. (These tokens can be shared between ASP.NET Core applications, if needed, by implementing [cookie sharing](/aspnet/core/security/cookie-sharing).) This pattern is illustrated in Figure 9-2.
 
-![When microservices are accessed directly, trust, that includes authentication and authorization, is handled by a security token issued by a dedicated microservice, shared between microservices.](./media/image2.png)
+![When microservices are accessed directly, trust, which includes authentication and authorization, is handled by a security token issued by a dedicated microservice, shared between microservices.](./media/image2.png)
 
 **Figure 9-2**. Authentication by identity microservice; trust is shared using an authorization token
 
@@ -287,9 +287,6 @@ The JWT bearer authentication middleware can also support more advanced scenario
 
 - **AspNet.Security.OAuth.Providers** (GitHub repo for ASP.NET OAuth providers) \
   <https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src>
-
-- **Danny Strockis. Integrating Azure AD into an ASP.NET Core web app** \
-  <https://azure.microsoft.com/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/>
 
 - **IdentityServer4. Official documentation** \
   <https://identityserver4.readthedocs.io/en/latest/>

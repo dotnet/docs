@@ -1,14 +1,11 @@
 ---
 title: ASP.NET Core breaking changes - .NET Core
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: "10/15/2019"
+ms.date: "10/17/2019"
 author: "scottaddie"
 ms.author: "scaddie"
 ---
 # ASP.NET Core breaking changes
-
-> [!IMPORTANT]
-> This article is under construction. This is not a complete list of ASP.NET Core breaking changes. For more information on ASP.NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repository on GitHub.
 
 The following is a list of ASP.NET Core breaking changes by ASP.NET Core version. ASP.NET Core provides the web app development features used by .NET Core.
 
@@ -87,6 +84,10 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 ***
 
 [!INCLUDE[HTTP: Synchronous IO disabled by default](~/includes/core-changes/aspnetcore/3.0/http-synchronous-io-disabled.md)]
+
+***
+
+[!INCLUDE[Identity: AddDefaultUI method overload removed](~/includes/core-changes/aspnetcore/3.0/identity-ui-adddefaultui-overload-removed.md)]
 
 ***
 

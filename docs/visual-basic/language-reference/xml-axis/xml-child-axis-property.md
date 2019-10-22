@@ -16,7 +16,7 @@ Provides access to the children of one of the following: an <xref:System.Xml.Lin
   
 ## Syntax  
   
-```  
+```vb  
 object.<child>  
 ```  
   

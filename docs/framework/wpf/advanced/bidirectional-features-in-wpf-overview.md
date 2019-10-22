@@ -130,7 +130,7 @@ There are a few cases where <xref:System.Windows.FlowDirection> does not behave 
 
 **Image**
 
-An <xref:System.Windows.Controls.Image> represents a control that displays an image. In XAML it can be used with a <xref:System.Windows.Controls.Image.Source%2A> property that defines the [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] of the <xref:System.Windows.Controls.Image> to display.
+An <xref:System.Windows.Controls.Image> represents a control that displays an image. In XAML it can be used with a <xref:System.Windows.Controls.Image.Source%2A> property that defines the uniform resource identifier (URI) of the <xref:System.Windows.Controls.Image> to display.
 
 Unlike other [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements, an <xref:System.Windows.Controls.Image> does not inherit the <xref:System.Windows.FlowDirection> from the container. However, if the <xref:System.Windows.FlowDirection> is set explicitly to <xref:System.Windows.FlowDirection.RightToLeft>, an <xref:System.Windows.Controls.Image> is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because in some cases, horizontally flipping the image produces the desired effect.
 

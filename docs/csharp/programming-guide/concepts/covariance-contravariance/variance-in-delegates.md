@@ -19,7 +19,7 @@ public delegate R SampleGenericDelegate<A, R>(A a);
   
 ```csharp  
 // Matching signature.  
-public static First ASecondRFirst(Second first)  
+public static First ASecondRFirst(Second second)  
 { return new First(); }  
   
 // The return type is more derived.  

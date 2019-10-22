@@ -45,7 +45,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
 
  `PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");`
   
- However, out-of-order named arguments are invalid if they're followed by positional arguments.
+ Positional arguments that follow any out-of-order named arguments are invalid.
 
  ```csharp
  // This generates CS1738: Named argument specifications must appear after all fixed arguments have been specified.

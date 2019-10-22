@@ -32,7 +32,7 @@ or
 |`fileList`|Required. Comma-delimited list of assembly file names. If the file name contains a space, enclose the name in quotation marks.|  
   
 ## Remarks  
- The file(s) you import must contain assembly metadata. Only public types are visible outside the assembly. The [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md) option imports metadata from a module.  
+ The file(s) you import must contain assembly metadata. Only public types are visible outside the assembly. The [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md) option imports metadata from a module.  
   
  If you reference an assembly (Assembly A) which itself references another assembly (Assembly B), you need to reference Assembly B if:  
   

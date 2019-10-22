@@ -9,8 +9,8 @@ ms.date: 10/11/2019
 
 This article shows the dependencies needed to develop .NET Core applications on Linux. The supported Linux distributions/versions, and dependencies that follow apply to the two ways of developing .NET Core apps on Linux:
 
-* [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
-* [Visual Studio Code](https://code.visualstudio.com/)
+- [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 > [!NOTE]
 > The .NET Core SDK package is not required for production servers/environments. Only the .NET Core runtime package is needed for apps deployed to production environments. The .NET Core runtime is deployed with apps as part of a self-contained deployment, however, it must be deployed for Framework-dependent deployed apps separately. For more information about framework-dependent and self-contained deployment types, see [.NET Core application deployment](./deploying/index.md). Also see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md) for specific guidelines.
@@ -106,21 +106,21 @@ The following are intended to be examples. The exact versions and names may vary
 
 Ubuntu distributions require the following libraries installed:
 
-* liblttng-ust0
-* libcurl3 (for 14.x and 16.x)
-* libcurl4 (for 18.x)
-* libssl1.0.0
-* libkrb5-3
-* zlib1g
-* libicu52 (for 14.x)
-* libicu55 (for 16.x)
-* libicu57 (for 17.x)
-* libicu60 (for 18.x)
+- liblttng-ust0
+- libcurl3 (for 14.x and 16.x)
+- libcurl4 (for 18.x)
+- libssl1.0.0
+- libkrb5-3
+- zlib1g
+- libicu52 (for 14.x)
+- libicu55 (for 16.x)
+- libicu57 (for 17.x)
+- libicu60 (for 18.x)
 
 For versions earlier than .NET Core 2.1, following dependencies are also required:
 
-* libunwind8
-* libuuid1
+- libunwind8
+- libuuid1
 
 For .NET Core applications that use the *System.Drawing.Common* assembly, you also need the following dependency:
 
@@ -135,19 +135,19 @@ For .NET Core applications that use the *System.Drawing.Common* assembly, you al
 
 CentOS distributions require the following libraries installed:
 
-* lttng-ust
-* libcurl
-* openssl-libs
-* krb5-libs
-* libicu
-* zlib
+- lttng-ust
+- libcurl
+- openssl-libs
+- krb5-libs
+- libicu
+- zlib
 
 Fedora users: If your openssl's version >= 1.1, you'll need to install compat-openssl10.
 
 For versions earlier than .NET Core 2.1, following dependencies are also required:
 
-* libunwind
-* libuuid
+- libunwind
+- libuuid
 
 For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 
@@ -166,8 +166,8 @@ For .NET Core applications that use the *System.Drawing.Common* assembly, you'll
 
 On Linux, there are two installer package choices:
 
-* Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.
-* Using the packages themselves, DEB or RPM.
+- Using a feed-based package manager, such as apt-get for Ubuntu, or yum for CentOS/RHEL.
+- Using the packages themselves, DEB or RPM.
 
 ### Scripting Installs with the .NET Core installer script
 
@@ -185,8 +185,8 @@ The installer bash script is used in automation scenarios and non-admin installa
 
 If you have problems with a .NET Core installation on a supported Linux distribution/version, consult the following topics for your installed distributions/versions:
 
-* [.NET Core 3.0 known issues](https://github.com/dotnet/core/tree/master/release-notes/3.0)
-* [.NET Core 2.2 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.2)
-* [.NET Core 2.1 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.1)
-* [.NET Core 1.1 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.1)
-* [.NET Core 1.0 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.0)
+- [.NET Core 3.0 known issues](https://github.com/dotnet/core/tree/master/release-notes/3.0)
+- [.NET Core 2.2 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.2)
+- [.NET Core 2.1 known issues](https://github.com/dotnet/core/tree/master/release-notes/2.1)
+- [.NET Core 1.1 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.1)
+- [.NET Core 1.0 known issues](https://github.com/dotnet/core/blob/master/release-notes/1.0)

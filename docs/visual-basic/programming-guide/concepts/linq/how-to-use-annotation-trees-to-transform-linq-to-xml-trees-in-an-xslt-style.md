@@ -79,7 +79,7 @@ End Module
 
 ## A more complicated transform
 
- The following example queries the tree and calculates the average and sum of the `Data` elements, and adds them as new elements to the tree.
+The following example queries the tree and calculates the average and sum of the `Data` elements, and adds them as new elements to the tree.
 
 ```vb
 Imports <xmlns:xf="http://www.microsoft.com/LinqToXmlTransform/2007">
@@ -127,10 +127,10 @@ Module Module1
         Console.WriteLine("----------------")
         Console.WriteLine(newData)
     End Sub
-End Module 
+End Module
 ```
 
- This example produces the following output:
+This example produces the following output:
 
 ```console
 Before Transform
@@ -159,7 +159,7 @@ A small function, `XForm`, creates a new transformed tree from the original, ann
 The pseudo code for the function is quite simple:
 
 > The function takes an XElement as an argument and returns an XElement.
-> 
+>
 > If an element has an XElement annotation, then return a new XElement:
 >
 > - The name of the new XElement is the annotation element's name.
@@ -332,7 +332,7 @@ Module Module1
         Console.WriteLine("----------------")
         Console.WriteLine(newRoot)
     End Sub
-End Module 
+End Module
 ```
 
 This example produces the following output:

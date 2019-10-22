@@ -22,7 +22,7 @@ Specifies an example for the member.
 ## Remarks  
  The `<example>` tag lets you specify an example of how to use a method or other library member. This commonly involves using the [\<code>](../../../visual-basic/language-reference/xmldoc/code.md) tag.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<example>` tag to include an example for using the `ID` field.  

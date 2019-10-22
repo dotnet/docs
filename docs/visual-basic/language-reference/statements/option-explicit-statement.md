@@ -17,7 +17,7 @@ Forces explicit declaration of all variables in a file, or allows implicit decla
   
 ## Syntax  
   
-```  
+```vb  
 Option Explicit { On | Off }  
 ```  
   
@@ -37,7 +37,7 @@ Option Explicit { On | Off }
 > Setting `Option Explicit` to `Off` is generally not a good practice. You could misspell a variable name in one or more locations, which would cause unexpected results when the program is run.  
   
 ## When an Option Explicit Statement Is Not Present  
- If the source code does not contain an `Option Explicit` statement, the **Option Explicit** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md) compiler option is used.  
+ If the source code does not contain an `Option Explicit` statement, the **Option Explicit** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md) compiler option is used.  
   
 #### To set Option Explicit in the IDE  
   
@@ -51,7 +51,7 @@ Option Explicit { On | Off }
   
 #### To set Option Explicit on the command line  
   
-- Include the [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md) compiler option in the **vbc** command.  
+- Include the [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md) compiler option in the **vbc** command.  
   
 ## Example  
  The following example uses the `Option Explicit` statement to force explicit declaration of all variables. Attempting to use an undeclared variable causes an error at compile time.  
@@ -66,7 +66,7 @@ Option Explicit { On | Off }
 - [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
 - [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)
 - [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
-- [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
-- [/optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
-- [/optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
+- [-optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)
+- [-optionexplicit](../../../visual-basic/reference/command-line-compiler/optionexplicit.md)
+- [-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)

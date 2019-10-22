@@ -17,7 +17,7 @@ assert condition
 
 The `assert` expression has type `bool -> unit`.
 
-The `assert` function resolves to <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType>. This means that behavior is identical to having called <xref:System.Diagnostics.Debug.Assert*?displayProperty=nameWithType> directly.
+The `assert` function resolves to <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>. This means its behavior is identical to having called <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> directly.
 
 Assertion checking is enabled only when you compile in Debug mode; that is, if the constant `DEBUG` is defined. In the project system, by default, the `DEBUG` constant is defined in the Debug configuration but not in the Release configuration.
 

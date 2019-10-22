@@ -24,7 +24,7 @@ internal Connection Connection { get; }
 
 ## Property value
 
-`System.Net.Connection`
+`System.Net.Connection`  
 The connection object.
 
 ## Remarks

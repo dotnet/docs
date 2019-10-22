@@ -24,7 +24,7 @@ internal SslProtocols SslProtocol { get; }
 
 ## Property value
 
-<xref:System.Security.Authentication.SslProtocols>
+<xref:System.Security.Authentication.SslProtocols>  
 A bitwise combination of the enumeration values that specify the SSL protocol versions.
 
 ## Remarks

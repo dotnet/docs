@@ -23,7 +23,7 @@ private SslState m_Worker;
 
 ## Field value
 
-`System.Net.Security.SslState`
+`System.Net.Security.SslState`  
 The state of the SSL stream.
 
 ## Remarks

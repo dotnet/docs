@@ -441,4 +441,4 @@ If you're not satisfied with the results of your model, you can try to improve i
 
 ### Additional Resources
 
-- [Deep Learning vs Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/concept-deep-learning-vs-machine-learning).
+- [Deep Learning vs Machine Learning](/azure/machine-learning/service/concept-deep-learning-vs-machine-learning).

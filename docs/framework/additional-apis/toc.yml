@@ -55,6 +55,10 @@
       items:
       - name: m_ConnectionList Field
         href: m_connectionlist.md
+    - name: ConnectStream Class
+      items:
+      - name: Connection Property
+        href: system.net.connectstream.connection.md
     - name: CoreResponseData Class
       href: coreresponsedata.md
       items:
@@ -76,6 +80,16 @@
         href: m_connectiongrouplist.md
       - name: s_ServicePointTable Field
         href: s_servicepointtable.md
+    - name: TlsStream Class
+      items:
+      - name: m_Worker Field
+        href: system.net.tlsstream.m_worker.md
+  - name: System.Net.Security
+    items:
+    - name: SslState Class
+      items:
+      - name: SslProtocol Property
+        href: system.net.security.sslstate.sslprotocol.md
   - name: System.Windows.Diagnostics
     items:
     - name: VisualDiagnostics Class

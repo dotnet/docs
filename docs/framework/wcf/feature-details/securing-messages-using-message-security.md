@@ -46,7 +46,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
   
  Note that when using this credential type, the service must be running under the SERVICE account.  
   
- The Kerberos protocol is used by default when choosing message credential. For more information, see [Exploring Kerberos, the Protocol for Distributed Security in Windows 2000](https://go.microsoft.com/fwlink/?LinkId=87790).  
+ The Kerberos protocol is used by default when choosing message credential.
   
 ### Username Password  
  Using this property, the client can authenticate to the server using a username password in the security header of the message.  

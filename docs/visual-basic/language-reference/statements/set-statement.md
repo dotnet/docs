@@ -16,7 +16,7 @@ Declares a `Set` property procedure used to assign a value to a property.
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] Set (ByVal value [ As datatype ])  
     [ statements ]  
 End Set  

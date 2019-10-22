@@ -133,7 +133,7 @@ names `Item1`, whose value is `42` and `stringContent`, whose value is "The answ
 
 There are two conditions where candidate field names are not projected onto the tuple field:
 
-1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString`. or `Rest`.
+1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString`, or `Rest`.
 1. When the candidate name is a duplicate of another tuple field name, either explicit or implicit.
 
 These conditions avoid ambiguity. These names would cause an ambiguity
@@ -425,6 +425,20 @@ if (("Althea", "Goodwin") == p)
 ```
 
 The `Deconstruct` method could convert the `Person` object `p` to a tuple containing two strings, but it is not applicable in the context of equality tests.
+
+## Tuples as out parameters
+
+Tuples can be used as out parameters *themselves*. Not to be confused with any ambiguity previously mentioned in the [Deconstruction](#deconstruction) section. In a method call, you need only describe the tuple's shape:
+
+[!code-csharp[TuplesAsOutParameters](~/samples/snippets/csharp/tuples/program.cs#01_TupleAsOutVariable "Tuples as out parameters")]
+
+Alternatively, you could use an [_unnamed_](#named-and-unnamed-tuples) tuple and refer to its fields as `Item1` and `Item2`:
+
+```csharp
+dict.TryGetValue(2, out (int, string) pair);
+// ...
+Console.WriteLine($"{pair.Item1}: {pair.Item2}");
+```
 
 ## Conclusion 
 

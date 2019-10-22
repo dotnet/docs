@@ -153,8 +153,8 @@ In ASP.NET Web Forms apps, common page layout is handled using master pages (*Si
 
 To bootstrap Blazor, the app must:
 
-* Specify where on the page the root component (*App.Razor*) should be rendered.
-* Add the corresponding Blazor framework script.
+- Specify where on the page the root component (*App.Razor*) should be rendered.
+- Add the corresponding Blazor framework script.
 
 In the Blazor Server app, the root component's host page is defined in the *_Host.cshtml* file. This file defines a Razor Page, not a component. Razor Pages use Razor syntax to define a server-addressable page, very much like an *.aspx* page. The `Html.RenderComponentAsync<TComponent>(RenderMode)` method is used to define where a root-level component should be rendered. The `RenderMode` option indicates the manner in which the component should be rendered. The following table outlines the supported `RenderMode` options.
 
@@ -238,8 +238,8 @@ To run the Blazor Server app, press `F5` in Visual Studio. Blazor apps don't sup
 
 To run the Blazor WebAssembly app, choose one of the following approaches:
 
-* Run the client project directly using the development server.
-* Run the server project when hosting the app with ASP.NET Core.
+- Run the client project directly using the development server.
+- Run the server project when hosting the app with ASP.NET Core.
 
 Blazor WebAssembly apps don't support debugging using Visual Studio. To run the app, use `Ctrl+F5` instead of `F5`. You can instead debug Blazor WebAssembly apps directly in the browser. See [Debug ASP.NET Core Blazor](/aspnet/core/blazor/debug) for details.
 

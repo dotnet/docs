@@ -28,11 +28,11 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 
 Since `Microsoft.NETCore.App` or `NETStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:
 
-* When targeting .NET Core or .NET Standard, never have an explicit reference to the `Microsoft.NETCore.App` or `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file.
-* If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
-  * This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
-* If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
-* Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NETStandard.Library` metapackage in .NET Framework projects. If any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
+- When targeting .NET Core or .NET Standard, never have an explicit reference to the `Microsoft.NETCore.App` or `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file.
+- If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
+  - This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
+- If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
+- Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NETStandard.Library` metapackage in .NET Framework projects. If any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
 
 ## Implicit version for some package references
 
@@ -54,8 +54,8 @@ These references to ASP.NET Core metapackages have a slightly different behavior
 
 If a version *is* specified, it's treated as the *minimum* version of ASP.NET Core shared framework for framework-dependent deployments and as an *exact* version for self-contained deployments. This can have the following consequences:
 
-* If the version of ASP.NET Core installed on the server is less than the version specified on the PackageReference, the .NET Core process fails to launch. Updates to the metapackage are often available on NuGet.org before updates have been made available in hosting environments such as Azure. Updating the version on the PackageReference to ASP.NET Core could cause a deployed application to fail.
-* If the application is deployed as a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd), the application may not contain the latest security updates to .NET Core. When a version isn't specified, the SDK can automatically include the newest version of ASP.NET Core in the self-contained deployment.
+- If the version of ASP.NET Core installed on the server is less than the version specified on the PackageReference, the .NET Core process fails to launch. Updates to the metapackage are often available on NuGet.org before updates have been made available in hosting environments such as Azure. Updating the version on the PackageReference to ASP.NET Core could cause a deployed application to fail.
+- If the application is deployed as a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd), the application may not contain the latest security updates to .NET Core. When a version isn't specified, the SDK can automatically include the newest version of ASP.NET Core in the self-contained deployment.
 
 ## Default compilation includes in .NET Core projects
 
@@ -160,21 +160,21 @@ when this attribute is not present.
 These attributes can contain one or more of the following items, separated by the semicolon `;` character if more than
 one is listed:
 
-* `Compile` – the contents of the lib folder are available to compile against.
-* `Runtime` – the contents of the runtime folder are distributed.
-* `ContentFiles` – the contents of the *contentfiles* folder are used.
-* `Build` – the props/targets in the build folder are used.
-* `Native` – the contents from native assets are copied to the output folder for runtime.
-* `Analyzers` – the analyzers are used.
+- `Compile` – the contents of the *lib* folder are available to compile against.
+- `Runtime` – the contents of the *runtime* folder are distributed.
+- `ContentFiles` – the contents of the *contentfiles* folder are used.
+- `Build` – the props/targets in the *build* folder are used.
+- `Native` – the contents from native assets are copied to the *output* folder for runtime.
+- `Analyzers` – the analyzers are used.
 
 Alternatively, the attribute can contain:
 
-* `None` – none of the assets are used.
-* `All` – all assets are used.
+- `None` – none of the assets are used.
+- `All` – all assets are used.
 
 ### DotNetCliToolReference
-A `<DotNetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's
-a replacement for the `tools` node in *project.json*.
+
+A `<DotNetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's a replacement for the `tools` node in *project.json*.
 
 ```xml
 <DotNetCliToolReference Include="<package-id>" Version="" />
@@ -225,7 +225,7 @@ The following example specifies the fallbacks only for the `netcoreapp2.1` targe
 
 ## NuGet metadata properties
 
-With the move to MSBuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK.
+With the move to MSBuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK:
 
 ### IsPackable
 
@@ -417,11 +417,11 @@ Each attribute has a property that control its content and another to disable it
 
 Notes:
 
-* `AssemblyVersion` and `FileVersion` default is to take the value of `$(Version)` without suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
-* `InformationalVersion` defaults to the value of `$(Version)`.
-* `InformationalVersion` has `$(SourceRevisionId)` appended if the property is present. It can be disabled using `IncludeSourceRevisionInInformationalVersion`.
-* `Copyright` and `Description` properties are also used for NuGet metadata.
-* `Configuration` is shared with all the build process and set via the `--configuration` parameter of `dotnet` commands.
+- `AssemblyVersion` and `FileVersion` default is to take the value of `$(Version)` without suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
+- `InformationalVersion` defaults to the value of `$(Version)`.
+- `InformationalVersion` has `$(SourceRevisionId)` appended if the property is present. It can be disabled using `IncludeSourceRevisionInInformationalVersion`.
+- `Copyright` and `Description` properties are also used for NuGet metadata.
+- `Configuration` is shared with all the build process and set via the `--configuration` parameter of `dotnet` commands.
 
 ### GenerateAssemblyInfo
 

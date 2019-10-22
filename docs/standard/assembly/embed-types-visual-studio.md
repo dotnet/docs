@@ -318,8 +318,8 @@ Go to the build output folder location and run *TypeEquivalenceClient.exe*. Note
 
 ## See also
 
-- [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
-- [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
+- [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
+- [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
 - [C# programming guide](../../csharp/programming-guide/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
 - [Program with assemblies](program.md)

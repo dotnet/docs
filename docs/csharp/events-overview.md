@@ -65,7 +65,7 @@ The type of the event (`EventHandler<FileListArgs>` in this example) must be a
 delegate type. There are a number of conventions that you should follow
 when declaring an event. Typically, the event delegate type has a void return.
 Event declarations should be a verb, or a verb phrase.
-Use past tense (as in this example) when
+Use past tense when
 the event reports something that has happened. Use a present tense verb (for
 example, `Closing`) to report something that is about to happen. Often, using
 present tense indicates that your class supports some kind of customization

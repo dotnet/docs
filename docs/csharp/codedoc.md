@@ -28,7 +28,7 @@ You can generate the XML file at compile time by doing one of the following:
 
 - If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file**. You can also change the location to which the compiler writes the file.
 
-- If you are compiling a .NET Framework application from the command line, add the [/doc compiler option](language-reference/compiler-options/doc-compiler-option.md) when compiling.  
+- If you are compiling a .NET Framework application from the command line, add the [-doc compiler option](language-reference/compiler-options/doc-compiler-option.md) when compiling.  
 
 XML documentation comments use triple forward slashes (`///`) and an XML formatted comment body. For example:
 

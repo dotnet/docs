@@ -31,7 +31,7 @@ Figure 2-3 shows a comparison between VMs and Docker containers.
 
 | Virtual Machines | Docker Containers |
 | -----------------| ------------------|
-|![For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries.](./media/image3.png)|![For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, that keeps container isolated but sharing the base OS services.](./media/image4.png)|
+|![For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries.](./media/image3.png)|![For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, which keeps container isolated but sharing the base OS services.](./media/image4.png)|
 |Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization. | Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.) |
 
 **Figure 2-3**. Comparison of traditional virtual machines to Docker containers

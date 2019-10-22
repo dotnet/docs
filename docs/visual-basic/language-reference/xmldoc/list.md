@@ -49,7 +49,7 @@ Defines a list or table.
   
  A list or table can have as many `<item>` blocks as needed.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<list>` tag to define a bulleted list in the remarks section.  

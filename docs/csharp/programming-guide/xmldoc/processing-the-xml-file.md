@@ -80,5 +80,5 @@ The following examples show how the ID strings for a class and its members would
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [/doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [-doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
 - [XML Documentation Comments](./index.md)

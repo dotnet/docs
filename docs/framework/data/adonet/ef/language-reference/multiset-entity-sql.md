@@ -8,9 +8,9 @@ Creates an instance of a multiset from a list of values. All the values in the M
   
 ## Syntax  
   
-```  
+```sql  
 MULTISET ( expression [{, expression }] )  
-or  
+-- or  
 { expression [{, expression }] }  
 ```  
   
@@ -42,7 +42,7 @@ or
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#MULTISET](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#multiset)]  
+ [!code-sql[DP EntityServices Concepts#MULTISET](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#multiset)]  
   
 ## See also
 

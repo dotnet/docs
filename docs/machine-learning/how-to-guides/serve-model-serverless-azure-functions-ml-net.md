@@ -17,7 +17,7 @@ Learn how to deploy a pre-trained ML.NET machine learning model for predictions 
 
 ## Prerequisites
 
-- [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed.
+- [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload and "Azure development" installed.
 - Microsoft.NET.Sdk.Functions NuGet Package version 1.0.28+.
 - [Azure Functions Tools](/azure/azure-functions/functions-develop-vs#check-your-tools-version)
 - Powershell
@@ -71,7 +71,7 @@ Create a class to predict sentiment. Add a new class to your project:
     ```csharp
     public class AnalyzeSentiment
     {
-    
+
     }
     ```
 
@@ -82,7 +82,7 @@ You need to create some classes for your input data and predictions. Add a new c
 1. Create a directory named *DataModels* in your project to save your data models:
     In Solution Explorer, right-click on your project and select **Add > New Folder**. Type "DataModels" and hit Enter.
 2. In Solution Explorer, right-click the *DataModels* directory, and then select **Add > New Item**.
-3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button. 
+3. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *SentimentData.cs*. Then, select the **Add** button.
 
     The *SentimentData.cs* file opens in the code editor. Add the following using statement to the top of *SentimentData.cs*:
 
@@ -110,7 +110,7 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 The following link provides more information if you want to learn more about [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection).
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
-1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select the **Add** button. 
+1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select the **Add** button.
 
     The *Startup.cs* file opens in the code editor. Add the following using statement to the top of *Startup.cs*:
 
@@ -138,22 +138,22 @@ The following link provides more information if you want to learn more about [de
     }
     ```
 
-At a high level, this code initializes the objects and services automatically for later use when requested by the application instead of having to manually do it. 
+At a high level, this code initializes the objects and services automatically for later use when requested by the application instead of having to manually do it.
 
-Machine learning models are not static. As new training data becomes available, the model is retrained and redeployed. One way to get the latest version of the model into your application is to redeploy the entire application. However, this introduces application downtime. The `PredictionEnginePool` service provides a mechanism to reload an updated model without taking your application down. 
+Machine learning models are not static. As new training data becomes available, the model is retrained and redeployed. One way to get the latest version of the model into your application is to redeploy the entire application. However, this introduces application downtime. The `PredictionEnginePool` service provides a mechanism to reload an updated model without taking your application down.
 
 Set the `watchForChanges` parameter to `true`, and the `PredictionEnginePool` starts a [`FileSystemWatcher`](xref:System.IO.FileSystemWatcher) that listens to the file system change notifications and raises events when there is a change to the file. This prompts the `PredictionEnginePool` to automatically reload the model.
 
-The model is identified by the `modelName` parameter so that more than one model per application can be reloaded upon change. 
+The model is identified by the `modelName` parameter so that more than one model per application can be reloaded upon change.
 
 > [!TIP]
 > Alternatively, you can use the `FromUri` method when working with models stored remotely. Rather than watching for file changed events, `FromUri` polls the remote location for changes. The polling interval defaults to 5 minutes. You can increase or decrease the polling interval based on your application's requirements. In the code sample below, the `PredictionEnginePool` polls the model stored at the specified URI every minute.
->    
+>
 >```csharp
 >builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
 >   .FromUri(
->       modelName: "SentimentAnalysisModel", 
->       uri:"https://github.com/dotnet/samples/raw/master/machine-learning/models/sentimentanalysis/sentiment_model.zip", 
+>       modelName: "SentimentAnalysisModel",
+>       uri:"https://github.com/dotnet/samples/raw/master/machine-learning/models/sentimentanalysis/sentiment_model.zip",
 >       period: TimeSpan.FromMinutes(1));
 >```
 
@@ -192,7 +192,7 @@ ILogger log)
 }
 ```
 
-When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the `PredictionEnginePool`. The `Predict` method is then called to to make predictions using the `SentimentAnalysisModel` registered in the `Startup` class and returns the results back to the user if successful.
+When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the `PredictionEnginePool`. The `Predict` method is then called to make predictions using the `SentimentAnalysisModel` registered in the `Startup` class and returns the results back to the user if successful.
 
 ## Test locally
 
@@ -206,7 +206,7 @@ Now that everything is set up, it's time to test the application:
     ```
 
     If successful, the output should look similar to the text below:
-    
+
     ```powershell
     Negative
     ```

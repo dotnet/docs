@@ -49,7 +49,7 @@ The unary prefix `!` operator computes logical negation of its operand. That is,
 
 [!code-csharp-interactive[logical negation](~/samples/csharp/language-reference/operators/BooleanLogicalOperators.cs#Negation)]
 
-Starting with C# 8.0, the unary postfix `!` operator is a [null-forgiving operator](null-forgiving.md).
+Starting with C# 8.0, the unary postfix `!` operator is the [null-forgiving operator](null-forgiving.md).
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 

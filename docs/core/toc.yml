@@ -73,11 +73,11 @@
 - name: Runtime configuration
   items:
   - name: Runtime configuration settings
-    href: core/runtime-config/index.md
+    href: runtime-config/index.md
   - name: Runtime configuration with runtimeconfig.json
-    href: core/runtime-config/runtimeconfig.md
+    href: runtime-config/runtimeconfig.md
   - name: Runtime configuration with environment variables
-    href: core/runtime-config/envvars.md
+    href: runtime-config/envvars.md
 - name: Native Interoperability
   items:
   - name: Exposing .NET Core Components to COM

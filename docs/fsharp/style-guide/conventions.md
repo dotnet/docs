@@ -656,4 +656,4 @@ module Networking =
     ...
 ```
 
-This reduces the likelihood that an arbitrary integer is mistakenly passed into the `send` function, because the caller must construct a `BufferSize` type to wrap a value before calling the function.
+This reduces the likelihood of mistakenly passing an arbitrary integer into the `send` function, because the caller must construct a `BufferSize` type to wrap a value before calling the function.

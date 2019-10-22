@@ -56,9 +56,9 @@ To configure network tracing, add the following lines to the appropriate configu
           <add name="System.Net"/>  
         </listeners>  
       </source>  
-   </sources>  
-    <switches>  
-<br/><br/>Example: `<source name="System.Net" tracemode="includehex" maxdatasize="1024">`      <add name="System.Net" value="Verbose"/>  
+   </sources> 
+    <switches>
+      <add name="System.Net" value="Verbose"/>
       <add name="System.Net.Cache" value="Verbose"/>  
       <add name="System.Net.Http" value="Verbose"/>  
       <add name="System.Net.Sockets" value="Verbose"/>  

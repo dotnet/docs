@@ -25,7 +25,7 @@ First, upgrade your packages to the latest version that you can. This can be don
 
 If you haven't already verified that your converted and upgraded package dependencies work on .NET Core, there are a few ways that you can achieve that:
 
-* Analyze NuGet packages using nuget.org
+### Analyze NuGet packages using nuget.org
 
 You can see the Target Framework Monikers (TFMs) that each package supports on [nuget.org](https://www.nuget.org/) under the **Dependencies** section of the package page.
 
@@ -43,7 +43,7 @@ The easiest way to inspect NuGet Package folders is to use the [NuGet Package Ex
 4. Select the package name from the search results and click **open**.
 5. Expand the *lib* folder on the right-hand side and look at folder names.
 
-Look for a folder with any of the following names: `netstandardX.Y` or `netcoreappX.Y`.
+Look for a folder with names using one the following patterns: `netstandardX.Y` or `netcoreappX.Y`.
 
 These values are the [Target Framework Monikers (TFMs)](../../standard/frameworks.md) that map to versions of the [.NET Standard](../../standard/net-standard.md), .NET Core, and traditional Portable Class Library (PCL) profiles that are compatible with .NET Core.
 

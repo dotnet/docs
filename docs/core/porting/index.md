@@ -38,7 +38,7 @@ We recommend you to use the following process when porting your project to .NET 
 
 6. Port your test code.
 
-   Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to get your tests ported, so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all run very well on .NET Core.
+   Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to get your tests ported, so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core.
 
 Additionally, you can attempt to port smaller solutions or individual projects to the .NET Core project file format with the [dotnet try-convert](https://github.com/dotnet/try-convert) tool in one operation. `dotnet try-convert` is not guaranteedto work for all your projects, and it may cause subtle changes in behavior that you may find that you depended on. It should be used as a _starting point_ that automates the basic things that can be automated. It isn't a guaranteed solution to migrating a project.
 

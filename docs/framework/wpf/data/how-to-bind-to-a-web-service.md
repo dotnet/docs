@@ -18,7 +18,7 @@ This example shows how to bind to objects returned by Web service method calls.
   
  Before you call a Web service, you need to create a reference to it. To create a Web reference to the MTPS service using Microsoft Visual Studio, follow the following steps:  
   
-1. Open your project in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)].  
+1. Open your project in Visual Studio.  
   
 2. From the **Project** menu, click **Add Web Reference**.  
   

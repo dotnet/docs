@@ -177,7 +177,7 @@ These tasks are described in detail in the following subsections.
 
 ### Configuring the Pipeline and Add-In for ClickOnce Deployment
 
-[!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are downloaded to and run from a safe folder in the ClickOnce deployment cache. In order for an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] to host an add-in, the pipeline and add-in assembly must also be downloaded to the safe folder. To achieve this, you need to configure the application manifest to include both the pipeline and add-in assembly for download. This is most easily done in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], although the pipeline and add-in assembly needs to be in the host [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project's root folder in order for [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] to detect the pipeline assemblies.
+[!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are downloaded to and run from a safe folder in the ClickOnce deployment cache. In order for an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] to host an add-in, the pipeline and add-in assembly must also be downloaded to the safe folder. To achieve this, you need to configure the application manifest to include both the pipeline and add-in assembly for download. This is most easily done in Visual Studio, although the pipeline and add-in assembly needs to be in the host [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project's root folder in order for Visual Studio to detect the pipeline assemblies.
 
 Consequently, the first step is to build the pipeline and add-in assembly to the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project's root by setting the build output of each pipeline assembly and add-in assembly projects. The following table shows the build output paths for pipeline assembly projects and add-in assembly project that are in the same solution and root folder as the host [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project.
 
@@ -191,13 +191,13 @@ Table 1: Build Output Paths for the Pipeline Assemblies That Are Hosted by an XB
 |Host-Side Adapter|`..\HostXBAP\HostSideAdapters\`|
 |Add-In|`..\HostXBAP\AddIns\WPFAddIn1`|
 
-The next step is to specify the pipeline assemblies and add-in assembly as the [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] content files in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] by doing the following:
+The next step is to specify the pipeline assemblies and add-in assembly as the [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] content files in Visual Studio by doing the following:
 
 1. Including the pipeline and add-in assembly in the project by right-clicking each pipeline folder in Solution Explorer and choosing **Include In Project**.
 
 2. Setting the **Build Action** of each pipeline assembly and add-in assembly to **Content** from the **Properties** window.
 
-The final step is to configure the application manifest to include the pipeline assembly files and add-in assembly file for download. The files should be located in folders at the root of the folder in the ClickOnce cache that the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] application occupies. The configuration can be achieved in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] by doing the following:
+The final step is to configure the application manifest to include the pipeline assembly files and add-in assembly file for download. The files should be located in folders at the root of the folder in the ClickOnce cache that the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] application occupies. The configuration can be achieved in Visual Studio by doing the following:
 
 1. Right-click the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project, click **Properties**, click **Publish**, and then click the **Application Files** button.
 

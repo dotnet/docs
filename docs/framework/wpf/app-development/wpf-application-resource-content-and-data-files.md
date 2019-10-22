@@ -103,7 +103,7 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ```  
   
 > [!NOTE]
-> In [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], you add a new <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Documents.FlowDocument>, or <xref:System.Windows.ResourceDictionary> to a project, the `Build Action` for the markup file will default to `Page`.  
+> In Visual Studio, you add a new <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Documents.FlowDocument>, or <xref:System.Windows.ResourceDictionary> to a project, the `Build Action` for the markup file will default to `Page`.  
   
  When a project with `Page` items is compiled, the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] items are converted to binary format and compiled into the associated assembly. Consequently, these files can be used in the same way as typical resource files.  
   
@@ -134,7 +134,7 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ```  
   
 > [!NOTE]
-> In [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], you create a content file by adding a file to a project and setting its `Build Action` to `Content`, and set its `Copy to Output Directory` to `Copy always` (same as `Always`) and `Copy if newer` (same as `PreserveNewest`).  
+> In Visual Studio, you create a content file by adding a file to a project and setting its `Build Action` to `Content`, and set its `Copy to Output Directory` to `Copy always` (same as `Always`) and `Copy if newer` (same as `PreserveNewest`).  
   
  When the project is built, an <xref:System.Windows.Resources.AssemblyAssociatedContentFileAttribute> attribute is compiled into the metadata of the assembly for each content file.  
   
@@ -204,7 +204,7 @@ ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ```  
   
 > [!NOTE]
-> In [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], you create a site of origin file by adding a file to a project and setting its `Build Action` to `None`.  
+> In Visual Studio, you create a site of origin file by adding a file to a project and setting its `Build Action` to `None`.  
   
  When the project is built, MSBuild copies the specified files to the build output folder.  
   

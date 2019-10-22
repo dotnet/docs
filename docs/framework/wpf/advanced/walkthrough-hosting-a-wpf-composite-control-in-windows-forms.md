@@ -183,7 +183,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
 ### Creating the Project  
  To start the project:  
   
-1. Launch [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch Visual Studio, and open the **New Project** dialog box.  
   
 2. In Visual C# and the Windows category, select  the **Windows Forms Application** template.  
   

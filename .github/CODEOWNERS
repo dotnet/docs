@@ -14,15 +14,20 @@
 # . .NET Core sections are next
 # . .NET Framework sections
 # . .NET Standard 
-# . samples
+# . Architecture e-books
 
 # In each subsection folders are order first by depth, then alphabetically.
 # This should make it easy to add new rules without breaking existing ones.
 
-
 ############  GUIDES  ################
 # .NET Core
 /docs/core/** @mairaw
+
+# .NET Framework
+/docs/framework/** @mairaw
+
+# .NET Standard
+/docs/standard/** @gewarren
 
 # The C# Guide:
 /docs/csharp/** @BillWagner
@@ -47,21 +52,47 @@
 
 ############### .NET Core ########################
 # What's New
-/docs/core/whats-new/** @rpetrusha
+/docs/core/whats-new/** @Thraka
 # Deployment
-/docs/core/deploying/** @rpetrusha
+/docs/core/deploying/** @Thraka
 # Breaking changes
-/docs/core/compatibility/** @rpetrusha
+/docs/core/compatibility/** @gewarren
+# Tools
+/docs/core/tools/** @tdykstra
+# Tools - CLI ref
+/docs/core/tools/dotnet-** @mairaw
+# Tutorials
+/docs/core/tools/dotnet-** @gewarren
 
 ################### .NET FRAMEWORK ##################
-# .NET Framework migration guide
-/docs/framework/migration-guide/** @rpetrusha
-# .NET Framework Security
+# App domains
+/docs/framework/app-domains/** @gewarren
+# Config - WinForms
+/docs/framework/configure-apps/file-schema/winforms/** @Thraka
+# Deployment
+/docs/framework/deployment/** @Thraka
+# Installation
+/docs/framework/install/** @Thraka
+# Migration guide
+/docs/framework/migration-guide/** @gewarren
+# Reflection
+/docs/framework/reflection-and-codedom/** @Thraka
+# Resources
+/docs/framework/resources/** @Thraka
+# Security
 /docs/framework/security/** @mairaw
-# .NET Framework unmanaged API
-/docs/framework/unmanaged-api/** @rpetrusha
+# Tools
+/docs/framework/tools/** @tdykstra
+# UI Automation
+/docs/framework/ui-automation/** @Thraka
 # What's New
-/docs/framework/whats-new/** @rpetrusha
+/docs/framework/whats-new/** @gewarren
+# WPF
+/docs/framework/wpf/** @Thraka
+# Winforms
+/docs/framework/winforms/** @Thraka
+# XAML Services
+/docs/framework/xaml-services/** @Thraka
 # ADO.NET
 /docs/framework/data/adonet/** @stevestein
 # NCL
@@ -71,22 +102,52 @@
 /docs/framework/configure-apps/file-schema/wcf/** @HongGit
 /docs/framework/data/wcf/** @HongGit
 /docs/framework/wcf/** @HongGit
-# WPF
-/docs/framework/wpf/** @Thraka
-# Winforms
-/docs/framework/winforms/** @Thraka
 
 ################## .NET STANDARD ##################
-# Analyzers:
-/docs/standard/analyzers/** @BillWagner
+# Analyzers
+/docs/standard/analyzers/** @mairaw
+# Assembly
+/docs/standard/assembly/** @gewarren
+# Asynchronous Programming Patterns
+/docs/standard/asynchronous-programming-patterns/** @gewarren
+# Attributes
+/docs/standard/attributes/** @tdykstra
+# Base types
+/docs/standard/base-types/** @Thraka
+# Collections
+/docs/standard/base-types/** @BillWagner
+# Base types
+/docs/standard/base-types/** @Thraka
+# Data XML
+/docs/standard/data-xml/** @gewarren
+# Datetime
+/docs/standard/datetime/** @Thraka
+# Events
+/docs/standard/exceptions/** @gewarren
+# Exceptions
+/docs/standard/exceptions/** @tdykstra
+# GC
+/docs/standard/garbage-collection/** @BillWagner
+# Generics
+/docs/standard/generics/** @Thraka
+# Globalization
+/docs/standard/globalization-localization/** @mairaw
+# I/O
+/docs/standard/io/** @Thraka
+# LINQ
+/docs/standard/linq/** @mairaw
+# Memory and spans
+/docs/standard/memory-and-spans/** @tdykstra
+# Parallel programming
+/docs/standard/parallel-programming/** @BillWagner
+# Security
+/docs/standard/security/** @gewarren
+# Serialization
+/docs/standard/Serialization/** @tdykstra
+# Threading
+/docs/standard/threading/** @BillWagner
 # What's New
-/docs/standard/whats-new/** @rpetrusha
-# .NET I/O
-/docs/standard/io/** @mairaw
-# .NET base types - Formatting
-/docs/standard/base-types/formatting-types/** @rpetrusha
-# .NET threading
-/docs/standard/threading/** @rpetrusha
+/docs/standard/whats-new/** @mairaw
 
 ################## E-BOOKS ##################
 # Blazor:

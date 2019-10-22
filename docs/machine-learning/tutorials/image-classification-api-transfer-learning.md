@@ -3,7 +3,7 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/16/2019
+ms.date: 10/22/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use transfer learning in an image classification scenario to classify images using a pretrained TensorFlow model and ML.NET's Image Classification API.
@@ -11,7 +11,7 @@ ms.custom: mvc
 
 # Tutorial: Automated visual inspection using transfer learning with ML.NET's Image Classification API
 
-Learn how to train a custom deep learning model using transfer learning and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
+Learn how to train a custom deep learning model using transfer learning, a pretrained TensorFlow model and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
 
 > [!NOTE]
 > The ML.NET Image Classification API is currently in preview.
@@ -27,7 +27,7 @@ In this tutorial, you learn how to:
 
 ## Image Classification Transfer Learning Sample Overview
 
-This sample is a .NET Core console application that classifies images using a pre-trained deep learning TensorFlow model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples) on GitHub.
+This sample is a .NET Core console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples) on GitHub.
 
 ## Understand the problem
 
@@ -42,48 +42,46 @@ This tutorial trains a custom image classification model to perform automated vi
 
 ## ML.NET Image Classification API
 
-ML.NET provides various ways of performing image classification. This tutorial focuses on the Image Classification API. The Image Classification API makes use of [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET), a low-level library that provides C# bindings for the TensorFlow C++ API.
+ML.NET provides various ways of performing image classification. This tutorial focuses on performing transfer learning using the Image Classification API. The Image Classification API makes use of [TensorFlow.NET](https://github.com/SciSharp/TensorFlow.NET), a low-level library that provides C# bindings for the TensorFlow C++ API.
 
-![ML.NET Image Classification API Architecture](./media/image-classification-api-transfer-learning/architecture.png)
-
-### What is transfer learning?
+## What is transfer learning?
 
 Transfer learning is the process of using knowledge gained while solving one problem and applying it to a different but related problem.
 
-Training a deep learning model from scratch requires setting several parameters, a large amount of labeled training data and a vast amount of compute resources (hundreds of GPU hours). Using a pre-trained model along with transfer learning allows you to shortcut the training process. 
+Training a deep learning model from scratch requires setting several parameters, a large amount of labeled training data and a vast amount of compute resources (hundreds of GPU hours). Using a pretrained model along with transfer learning allows you to shortcut the training process. 
 
-### Training process
+## Training process
 
-The Image Classification API starts the training process by loading a pre-trained TensorFlow model. The training process consists of two steps:
+The Image Classification API starts the training process by loading a pretrained TensorFlow model. The training process consists of two steps:
 
 1. Bottleneck phase
 2. Training phase
 
 ![Training Steps](./media/image-classification-api-transfer-learning/training.png)
 
-#### Bottleneck phase
+### Bottleneck phase
 
-During the bottleneck phase, the set of training images are loaded and the pixel values are used as as input, or features, for the frozen layers of the pre-trained model. The frozen layers include all of the layers in the neural network up to the penultimate layer, informally known as the bottleneck layer. These layers are referred to as frozen because no training will occur on these layers and operations are pass-through. It's at these frozen layers that the lower-level patterns that help a model differentiate between the different classes are computed. The larger the number of layers, the more computationally intensive this step is. Fortunately, since this is a one-time calculation, the results can be cached and used in later runs when experimenting with different parameters.
+During the bottleneck phase, the set of training images are loaded and the pixel values are used as as input, or features, for the frozen layers of the pretrained model. The frozen layers include all of the layers in the neural network up to the penultimate layer, informally known as the bottleneck layer. These layers are referred to as frozen because no training will occur on these layers and operations are pass-through. It's at these frozen layers that the lower-level patterns that help a model differentiate between the different classes are computed. The larger the number of layers, the more computationally intensive this step is. Fortunately, since this is a one-time calculation, the results can be cached and used in later runs when experimenting with different parameters.
 
-#### Training phase
+### Training phase
 
-Once the output values from the bottleneck phase are computed, they are used as input to retrain the final layer of the model. This process is iterative and runs for the number of times specified by model parameters. During each run, the loss and accuracy are evaluated and the appropriate adjustments are made to improve the model with the goal of minimizing the loss and maximizing the accuracy. Once training is finished, two model formats are output. One of them is the `.pb` version of the model and the other is the `.zip` ML.NET serialized version of the model. When working in environemnts supported by ML.NET, it is recommended to use the `.zip` version of the model. However, in environemnts where ML.NET is not supported, you have the option of using the `.pb` version.
+Once the output values from the bottleneck phase are computed, they are used as input to retrain the final layer of the model. This process is iterative and runs for the number of times specified by model parameters. During each run, the loss and accuracy are evaluated and the appropriate adjustments are made to improve the model with the goal of minimizing the loss and maximizing the accuracy. Once training is finished, two model formats are output. One of them is the `.pb` version of the model and the other is the `.zip` ML.NET serialized version of the model. When working in environments supported by ML.NET, it is recommended to use the `.zip` version of the model. However, in environments where ML.NET is not supported, you have the option of using the `.pb` version.
 
 ## Understand the pretrained model
 
-The pre-trained model used in this tutorial is the 101-layer variant of the Residual Network (ResNet) v2 model. The original model is trained to classify images into a thousand categories. The model takes as input an image of size 224 x 224 and outputs the class probabilities for each of the classes it's trained on. Part of this model is used to train a new model using custom images to make predictions between two classes. 
+The pretrained model used in this tutorial is the 101-layer variant of the Residual Network (ResNet) v2 model. The original model is trained to classify images into a thousand categories. The model takes as input an image of size 224 x 224 and outputs the class probabilities for each of the classes it's trained on. Part of this model is used to train a new model using custom images to make predictions between two classes. 
 
 ## Create console application
 
-Now that you have a general understanding of transfer learning and the Image Classification API, it's time to build the application
+Now that you have a general understanding of transfer learning and the Image Classification API, it's time to build the application.
 
-1. Create a **.NET Core Console Application** called "DeepLearning_ImageClassification_API"
+1. Create a **.NET Core Console Application** called "DeepLearning_ImageClassification_Binary".
 1. Install the **Microsoft.ML 1.4.0-preview2** NuGet Package:
     1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source.
     1. Select the **Browse** tab.
     1. Check the **Include prerelease** checkbox.
-    1. search for **Microsoft.ML**.
+    1. Search for **Microsoft.ML**.
     1. Select the **Install** button.
     1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
     1. Repeat these steps for **Microsoft.ML.Dnn 0.16.0-preview2** and **Microsoft.ML.ImageAnalytics 1.4.0-preview2**.
@@ -97,13 +95,13 @@ SDNET2018 is an image dataset that contains annotations for cracked and non-crac
 
 ![SDNET2018 dataset bridge deck samples](./media/image-classification-api-transfer-learning/sdnet2018decksamples.png)
 
-The data is organized in three sub-directories:
+The data is organized in three subdirectories:
 
 - D contains bridge deck images
 - P contains pavement images
 - W contains wall images
 
-Each of these subdirectories contains two additional pre-fixed sub-directories:
+Each of these subdirectories contains two additional pre-fixed subdirectories:
 
 - C is the prefix used for cracked surfaces
 - U is the prefix used for uncracked surfaces
@@ -112,11 +110,11 @@ In this tutorial, only bridge deck images are used.
 
 1. Download the [SDNET2018](https://digitalcommons.usu.edu/cgi/viewcontent.cgi?filename=2&article=1047&context=all_datasets&type=additional) dataset and unzip.
 1. Create a directory named "assets" in your project to save your dataset files.
-1. Copy all the sub-directories inside the *D* sub-directory of the recently unzipped *SDNET2018* directory.
+1. Copy all the subdirectories inside the *D* subdirectory of the recently unzipped *SDNET2018* directory.
 
-### Create inut and output classes
+### Create input and output classes
 
-1. Open the *Program.cs* file and add the following additional using statements to the top of the file:
+1. Open the *Program.cs* file and add the following additional `using` statements to the top of the file:
 
     ```csharp
     using System;
@@ -163,7 +161,7 @@ In this tutorial, only bridge deck images are used.
 
     - `ImagePath` is the fully-qualified path where the image is stored.
     - `Label` is the original category the image belongs to. This is the value to predict. 
-    - `PredictedLabel` is the index of the predicted label. The pre-trained model returns a list of class probabilities and the `PredictedLabel` is the index of the class with the highest probability. 
+    - `PredictedLabel` is the index of the predicted label. The pretrained model returns a list of class probabilities and the `PredictedLabel` is the index of the class with the highest probability. 
 
 ### Define paths and initialize variables
 
@@ -186,7 +184,7 @@ The [MLContext](xref:Microsoft.ML.MLContext) class is a starting point for all M
 
 ### Create data loading utility method
 
-The images are stored in two sub-directories. Before loading the data, it needs to be format into a list if `ImageInput` objects. To do so, create the `LoadImagesFromDirectory` method below the `Main` method.
+The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageInput` objects. To do so, create the `LoadImagesFromDirectory` method below the `Main` method.
 
 ```csharp
 public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)
@@ -195,14 +193,14 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
 }
 ```
 
-1. Inside the `LoadImagesDirectory` add the following code to get all of the file paths from the sub-directories.
+1. Inside the `LoadImagesDirectory` add the following code to get all of the file paths from the subdirectories:
 
     ```csharp
     var files = Directory.GetFiles(folder, "*",
         searchOption: SearchOption.AllDirectories);
     ```
 
-1. Then, iterate through each of the files using a `foreach` statement
+1. Then, iterate through each of the files using a `foreach` statement.
 
     ```csharp
     foreach (var file in files)
@@ -237,7 +235,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
     }
     ```
 
-1. Finally, create a new instance of `ModelInput`
+1. Finally, create a new instance of `ModelInput`.
 
     ```csharp
     yield return new ModelInput()
@@ -255,19 +253,19 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
     IEnumerable<ModelInput> images = LoadImagesFromDirectory(folder: assetsRelativePath, useFolderNameAsLabel: true);
     ```
 
-1. Then, load the images into an [`IDataView`](xref:Microsoft.ML.IDataView) using the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) method,
+1. Then, load the images into an [`IDataView`](xref:Microsoft.ML.IDataView) using the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) method.
 
     ```csharp
     IDataView imageData = mlContext.Data.LoadFromEnumerable(images);
     ```
 
-1. The way in which the data is loaded is in the order it was read from the directories. To balance the data, shuffle it using the [`ShuffleRows`](xref:Microsoft.ML.DataOperationsCatalog.ShuffleRows*) method.
+1. The data is loaded in the order it was read from the directories. To balance the data, shuffle it using the [`ShuffleRows`](xref:Microsoft.ML.DataOperationsCatalog.ShuffleRows*) method.
 
     ```csharp
     IDataView shuffledData = mlContext.Data.ShuffleRows(imageData);
     ```
 
-1. Machine learning models expect input to be in numerical format. Therefore, some pre-processing needs to be done on the data prior to training. Create an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) made up of the [`MapValueToKey`](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey*) and [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*) transforms. The `MapValueToKey` transform takes the categorical value in the `Label` column, converts it to a numerical `KeyType` value and stores it in a new column called `LabelAsKey`. The `LoadImages` takes the values from the `ImagePath` column along with the `imageFolder` parameter to load images for training. Setting the `useImageType` to `false` converts the images into a `byte[]`. 
+1. Machine learning models expect input to be in numerical format. Therefore, some preprocessing needs to be done on the data prior to training. Create an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) made up of the [`MapValueToKey`](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey*) and [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*) transforms. The `MapValueToKey` transform takes the categorical value in the `Label` column, converts it to a numerical `KeyType` value and stores it in a new column called `LabelAsKey`. The `LoadImages` takes the values from the `ImagePath` column along with the `imageFolder` parameter to load images for training. Setting the `useImageType` to `false` converts the images into a `byte[]`. 
 
     ```csharp
     var preprocessingPipeline = mlContext.Transforms.Conversion.MapValueToKey(
@@ -307,7 +305,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
     IDataView testSet = validationTestSplit.TestSet;
     ```
 
-### Define the training pipeline
+## Define the training pipeline
 
 Model training consist of a couple of steps. First, Image Classification API is used to train the model. Then, the encoded labels in the `PredictedLabel` column are converted back to their original categorical value using the `MapKeyToValue` transform. 
 
@@ -333,8 +331,8 @@ Model training consist of a couple of steps. First, Image Classification API is 
 
     - `featuresColumnName` is the column that is used as input for the model.
     - `labelColumnName` is the column for the value to predict.
-    - `arch` defines which of the pre-trained model architectures to use. This tutorial uses the 101-layer variant of the ResNetv2 model.
-    - `epoch` specifies the maximum number of iterations over the entire dataset throughout the training process. The higher the number, the longer the model trains for an potentially the better model that is produced.
+    - `arch` defines which of the pretrained model architectures to use. This tutorial uses the 101-layer variant of the ResNetv2 model.
+    - `epoch` specifies the maximum number of iterations over the entire dataset throughout the training process. The higher the number, the longer the model trains for and potentially the better model that is produced.
     - `batchSize` is the number of samples to use at a time for training. During one epoch, multiple batches equal to the batchSize are used to train and update the model. The lower the number, the less memory required when each batch is processed.
     - `testOnTrainSet` tells the model to measure performance against the training set when no validation set is present.
     - `metricsCallback` binds a function to track the progress during training.
@@ -351,20 +349,18 @@ Model training consist of a couple of steps. First, Image Classification API is 
 
 ## Use the model
 
-Now that you have trained your model, it's time to use it.
+Now that you have trained your model, it's time to use it to classify images.
 
-### Classify images
+1. Add a new method called `ClassifyImages` below the `Main` method to make and output image predictions.
 
-Create a new method called `ClassifyImages` below the `Main` method to make and output image predictions.
+    ```csharp
+    public static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
+    {
 
-```csharp
-public static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
-{
+    }
+    ```
 
-}
-```
-
-1. Start off by generating an [`IDataView`](xref:Microsoft.ML.IDataView) containing the predictions by using the [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) method. Add the following code inside the `ClassifyImages` method.
+1. Create an [`IDataView`](xref:Microsoft.ML.IDataView) containing the predictions by using the [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) method. Add the following code inside the `ClassifyImages` method.
 
     ```csharp
     IDataView predictionData = trainedModel.Transform(data);
@@ -431,14 +427,7 @@ Congratulations! You've now successfully built a deep learning model for classif
 
 ## Next steps
 
-In this tutorial, you learned how to:
-> [!div class="checklist"]
->
-> - Understand the problem
-> - Learn about ML.NET Image Classification API
-> - Understand the pretrained model
-> - Use transfer learning to train a custom TensorFlow image classification model
-> - Classify images with the custom model
+In this tutorial, you learned how to build a custom deep learning model using transfer learning, a pretrained image classification TensorFlow model and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
 
 ### Improve the model
 
@@ -449,3 +438,7 @@ If you're not satisfied with the results of your model, you can try to improve i
 - **Train for a longer time**: The longer you train, the more tuned the model will be. Increasing the number of epochs may improve the performance of your model.
 - **Experiment with the hyper-parameters**: In addition to the parameters used in this tutorial, other parameters can be tuned to potentially improve performance. Changing the learning rate, which determines the magnitude of updates made to the model after each epoch may improve performance.
 - **Use a different model architecture**: Depending on what your data looks like, the model that can best learn its features may differ. If you're not satisfied with the performance of your model, try changing the architecture.
+
+### Additional Resources
+
+- [Deep Learning vs Machine Learning](https://docs.microsoft.com/en-us/azure/machine-learning/service/concept-deep-learning-vs-machine-learning).

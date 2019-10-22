@@ -34,7 +34,7 @@ Visual Studio migrates the selected projects automatically. When migrating a sol
 Files that were migrated (*project.json*, *global.json*, *.xproj*, and solution file) are moved to a *Backup* folder. The migrated solution file is upgraded to Visual Studio 2017 or Visual Studio 2019 and you won't be able to open that solution file in Visual Studio 2015 or earlier versions. A file named *UpgradeLog.htm* that contains a migration report is also saved and opened automatically.
 
 > [!IMPORTANT]
-> The above tooling is only available between Visual Studio 2017 (version 15.0) and Visual Studio 2019 (version 16.2). If you are using a version of Visual Studio outside of that range, you should either install a suitable version of Visual Studio or use the command line migration tool described below.
+> In Visual Studio 2019 version 16.3 and later, you cannot load or migrate an *.xproj* file. Additionally, Visual Studio 2015 doesn't provide the ability to migrate an *.xproj* file. If you're using one of these Visual Studio versions, either install a suitable version of Visual Studio, or use the command line migration tool that's described next.
 
 ### dotnet migrate
 

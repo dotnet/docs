@@ -16,7 +16,7 @@ The .NET Framework tools make it easier for you to create, deploy, and manage ap
 
 Most of the .NET Framework tools described in this section are automatically installed with Visual Studio. To download Visual Studio, visit the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) page.
 
-You can run all the tools from the command-line with the exception of the Assembly Cache Viewer (*Shfusion.dll*). You must access *Shfusion.dll* from File Explorer.
+You can run all the tools from the command line with the exception of the Assembly Cache Viewer (*Shfusion.dll*). You must access *Shfusion.dll* from File Explorer.
   
 The best way to run the command-line tools is by using the Developer Command Prompt for Visual Studio. These utilities enable you to run the tools easily, without navigating to the installation folder. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 

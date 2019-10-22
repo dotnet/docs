@@ -12,7 +12,7 @@ This topic provides a step-by-step introduction to building, debugging, and publ
 
 ## Prerequisites
 
-[Visual Studio 2017 or later](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.1 or later versions.
+[Visual Studio 2017 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.1 or later versions.
 
 For more information, see the [Prerequisites for .NET Core on Windows](../windows-prerequisites.md) topic.
 
@@ -20,7 +20,7 @@ For more information, see the [Prerequisites for .NET Core on Windows](../window
 
 Begin by creating a simple "Hello World" console application. Follow these steps:
 
-1. Launch Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
+1. Launch Visual Studio. Select **File** > **New** > **Project** from the menu bar. In the **New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
 
    ![New Project dialog with Console App selected](./media/with-visual-studio/visual-studio-new-project.png)
 

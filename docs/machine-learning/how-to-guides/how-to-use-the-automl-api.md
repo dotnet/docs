@@ -123,7 +123,7 @@ The optimizing metric, as shown in the example above, determines the metric to b
 ## Data pre-processing and featurization
 
 > [!NOTE]
-> The feature column only supported types of [`Boolean`](xref:System.Boolean), [`Single`](xref:System.Single), and [`String`](xref:System.String).
+> The feature column only supported types of <xref:System.Boolean>, <xref:System.Single>, and <xref:System.String>.
 
 Data pre-processing happens by default and the following steps are performed automatically for you:
 

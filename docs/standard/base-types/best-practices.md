@@ -16,7 +16,6 @@ ms.custom: seodec18
 ---
 # Best practices for regular expressions in .NET
 
-<a name="top"></a>
 The regular expression engine in .NET is a powerful, full-featured tool that processes text based on pattern matches rather than on comparing and matching literal text. In most cases, it performs pattern matching rapidly and efficiently. However, in some cases, the regular expression engine can appear to be very slow. In extreme cases, it can even appear to stop responding as it processes a relatively small input over the course of hours or even days.
 
 This topic outlines some of the best practices that developers can adopt to ensure that their regular expressions achieve optimal performance.
@@ -54,8 +53,6 @@ To solve this problem, you can do the following:
 - When developing a pattern, you should consider how backtracking might affect the performance of the regular expression engine, particularly if your regular expression is designed to process unconstrained input. For more information, see the [Take Charge of Backtracking](#take-charge-of-backtracking) section.
 
 - Thoroughly test your regular expression using invalid and near-valid input as well as valid input. To generate input for a particular regular expression randomly, you can use [Rex](https://www.microsoft.com/research/project/rex-regular-expression-exploration/), which is a regular expression exploration tool from Microsoft Research.
-
-[Back to top](#top)
 
 ## Handle object instantiation appropriately
 
@@ -156,8 +153,6 @@ When the example is compiled to an executable and run, it creates an assembly na
 [!code-csharp[Conceptual.RegularExpressions.BestPractices#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/compile2.cs#7)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/compile2.vb#7)]
 
-[Back to top](#top)
-
 ## Take charge of backtracking
 
 Ordinarily, the regular expression engine uses linear progression to move through an input string and compare it to a regular expression pattern. However, when indeterminate quantifiers such as `*`, `+`, and `?` are used in a regular expression pattern, the regular expression engine may give up a portion of successful partial matches and return to a previously saved state in order to search for a successful match for the entire pattern. This process is known as backtracking.
@@ -215,8 +210,6 @@ The regular expression language in .NET includes the following language elements
 |`(?<=` `subexpression` `)`|Zero-width positive lookbehind. Look behind the current position to determine whether `subexpression` matches the input string.|
 |`(?<!` `subexpression` `)`|Zero-width negative lookbehind. Look behind the current position to determine whether `subexpression` does not match the input string.|
 
- [Back to top](#top)
-
 ## Use time-out values
 
 If your regular expressions processes input that nearly matches the regular expression pattern, it can often rely on excessive backtracking, which impacts its performance significantly. In addition to carefully considering your use of backtracking and testing the regular expression against near-matching input, you should always set a time-out value to ensure that the impact of excessive backtracking, if it occurs, is minimized.
@@ -235,8 +228,6 @@ The following example defines a `GetWordData` method that instantiates a regular
 
 [!code-csharp[Conceptual.RegularExpressions.BestPractices#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/timeout1.cs#12)]
 [!code-vb[Conceptual.RegularExpressions.BestPractices#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/timeout1.vb#12)]
-
-[Back to top](#top)
 
 ## Capture only when necessary
 
@@ -274,8 +265,6 @@ You can disable captures in one of the following ways:
 - Use the `n` option in the `(?imnsx)` language element. This option disables all unnamed or implicit captures from the point in the regular expression pattern at which the element appears. Captures are disabled either until the end of the pattern or until the `(-n)` option enables unnamed or implicit captures. For more information, see [Miscellaneous Constructs](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md).
 
 - Use the `n` option in the `(?imnsx:subexpression)` language element. This option disables all unnamed or implicit captures in `subexpression`. Captures by any unnamed or implicit nested capturing groups are disabled as well.
-
-[Back to top](#top)
 
 ## Related topics
 

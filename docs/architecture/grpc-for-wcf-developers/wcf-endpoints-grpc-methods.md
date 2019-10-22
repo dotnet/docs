@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # WCF endpoints and gRPC methods
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 In WCF, when you're writing your application code, you use one of the following methods:
 
 - You write the application code in a class and decorate methods with the [OperationContract](xref:System.ServiceModel.OperationContractAttribute) attribute.

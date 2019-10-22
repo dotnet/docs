@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # Channel credentials
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 As the name implies, channel credentials are attached to the underlying gRPC channel. The standard form of channel credentials uses Client Certificate authentication, where the client provides a TLS certificate when it's making the connection, which is verified by the server before allowing any calls to be made.
 
 Channel credentials can be combined with call credentials to provide comprehensive security for a gRPC service. The channel credentials prove that the client application is allowed to access the service, and the call credentials provide information about the person using the client application.

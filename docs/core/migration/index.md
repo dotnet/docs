@@ -53,7 +53,7 @@ If you get an error:
 > No executable found matching command dotnet-migrate
 
 Run `dotnet --version` to see which version you are using. [`dotnet migrate`](../tools/dotnet-migrate.md) was introduced in .NET Core SDK 1.0.0 and removed in version 3.0.100.
-You'll get this error if you have a *global.json* file in the current or parent directory and the `sdk` version is set to a version outside this range.
+You'll get this error if you have a *global.json* file in the current or parent directory, and the `sdk` version it specifies is outside this range.
 
 ## Migration from DNX to csproj
 

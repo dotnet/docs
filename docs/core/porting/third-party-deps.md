@@ -2,14 +2,14 @@
 title: Analyze dependencies to port code to .NET Core
 description: Learn how to analyze external dependencies in order to port your project from .NET Framework to .NET Core.
 author: cartermp
-ms.date: 09/23/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ---
 # Analyze your dependencies to port code to .NET Core
 
-To port your code to .NET Core or .NET Standard, you must understand your dependencies. External dependencies are the [NuGet packages](#analyze-referenced-nuget-packages-in-your-projects) or [DLLs](#analyze-dependencies-that-arent-nuget-packages) you reference in your project, but that you don't build yourself.
+To port your code to .NET Core or .NET Standard, you must understand your dependencies. External dependencies are the NuGet packages or `.dll`s you reference in your project, but that you don't build yourself.
 
-## Migrate your packages to `PackageReference`
+## Migrate your NuGet packages to `PackageReference`
 
 .NET Core uses [PackageReference](/nuget/consume-packages/package-references-in-project-files) to specify package dependencies. If you're using [packages.config](/nuget/reference/packages-config) to specify your packages in your project, you need to convert it to the `PackageReference` format because `packages.config` isn't supported in .NET Core.
 
@@ -51,9 +51,9 @@ These values are the [Target Framework Monikers (TFMs)](../../standard/framework
 > When looking at the TFMs that a package supports, note that `netcoreapp*`, while compatible, is for .NET Core projects only and not for .NET Standard projects.
 > A library that only targets `netcoreapp*` and not `netstandard*` can only be consumed by other .NET Core apps.
 
-### .NET Framework compatibility mode
+## .NET Framework compatibility mode
 
-After analyzing the NuGet packages, you might find that they only target the .NET Framework, as most NuGet packages do.
+After analyzing the NuGet packages, you might find that they only target the .NET Framework.
 
 Starting with .NET Standard 2.0, the .NET Framework compatibility mode was introduced. This compatibility mode allows .NET Standard and .NET Core projects to reference .NET Framework libraries. Referencing .NET Framework libraries doesn't work for all projects, such as if the library uses Windows Presentation Foundation (WPF) APIs, but it does unblock many porting scenarios.
 

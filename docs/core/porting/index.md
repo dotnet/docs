@@ -2,7 +2,7 @@
 title: Port from .NET Framework to .NET Core
 description: Understand the porting process and discover tools you may find helpful when porting a .NET Framework project to .NET Core.
 author: cartermp
-ms.date: 09/23/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ---
 # Overview of the porting process from .NET Framework to .NET Core
@@ -14,7 +14,7 @@ You might have code that currently runs on the .NET Framework that you're intere
 
 ## Overview of the porting process
 
-We recommend you to use the following process when porting your project to .NET Core. Each step of the process is covered in more detail in further articles.
+We recommend you to use the following process when porting your project to .NET Core:
 
 1. Retarget all projects you wish to port to target the .NET Framework 4.7.2 or higher.
 

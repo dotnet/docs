@@ -8,7 +8,7 @@ ms.author: "ronpet"
 # CoreFx breaking changes
 
 > [!IMPORTANT]
-> This article is under construction. This is not a complete list of .NET Core breaking changes. For more information on .NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repository on GitHub. 
+> This article is under construction. This is not a complete list of .NET Core breaking changes. For more information on .NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repository on GitHub.
 
 The following is a list of CoreFx breaking changes by .NET Core version. CoreFx provides the primitives and other general types used by .NET Core.
 
@@ -46,6 +46,10 @@ The following is a list of CoreFx breaking changes by .NET Core version. CoreFx 
 
 ***
 
+[!INCLUDE[Floating-point parsing operations no longer fail or throw an OverflowException](~/includes/core-changes/corefx/floating-point-parsing-does-not-overflow.md)]
+
+***
+
 [!INCLUDE[InvalidAsynchronousStateException moved to another assembly](~/includes/core-changes/corefx/move-invalidasynchronousstateexception.md)]
 
 ***
@@ -59,4 +63,3 @@ The following is a list of CoreFx breaking changes by .NET Core version. CoreFx 
 ***
 
 [!INCLUDE[ZipArchiveEntry no longer handles archives with inconsistent entry sizes](~/includes/core-changes/corefx/ziparchiveentry-and-inconsistent-entry-sizes.md)]
-

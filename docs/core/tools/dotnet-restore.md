@@ -131,7 +131,7 @@ Specifies a NuGet package source to use during the restore operation. This setti
 
 `--verbosity <LEVEL>`
 
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `minimal`.
 
 `--interactive`
 
@@ -177,7 +177,7 @@ Specifies a NuGet package source to use during the restore operation. This overr
 
 `--verbosity <LEVEL>`
 
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`.
 
 ---
 
@@ -199,6 +199,6 @@ Restore the dependencies and tools for the project in the current directory usin
 
 `dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages`
 
-Restore dependencies and tools for the project in the current directory and shows only minimal output:
+Restore dependencies and tools for the project in the current directory showing detailed output:
 
-`dotnet restore --verbosity minimal`
+`dotnet restore --verbosity detailed`

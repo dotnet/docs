@@ -48,7 +48,7 @@ You declare a variable to specify its name and characteristics. The declaration 
   
  You can declare several variables in one statement without having to repeat the data type. In the following statements, the variables `i`, `j`, and `k` are declared as type `Integer`, `l` and `m` as `Long`, and `x` and `y` as `Single`:  
   
-```  
+```vb  
 Dim i, j, k As Integer  
 ' All three variables in the preceding statement are declared as Integer.  
 Dim l, m As Long, x, y As Single  

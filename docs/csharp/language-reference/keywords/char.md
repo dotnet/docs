@@ -1,50 +1,42 @@
 ---
-title: "char keyword - C# Reference"
+title: "char keyword - C# reference"
 ms.custom: seodec18
-
-ms.date: 07/20/2015
-f1_keywords: 
+ms.date: 10/22/2019
+f1_keywords:
   - "char"
   - "char_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "char data type [C#]"
 ms.assetid: b51cf4fb-124c-4067-af48-afbac122b228
 ---
-# char (C# Reference)
+# char (C# reference)
 
-The `char` keyword is used to declare an instance of the <xref:System.Char?displayProperty=nameWithType> structure that the .NET Framework uses to represent a Unicode character. The value of a `Char` object is a 16-bit numeric (ordinal) value.
-
- Unicode characters are used to represent most of the written languages throughout the world.
+The `char` type keyword is an alias for the .NET <xref:System.Char?displayProperty=nameWithType> structure type that represents a Unicode UTF-16 character:
 
 |Type|Range|Size|.NET type|
 |----------|-----------|----------|-------------------------|
-|`char`|U+0000 to U+FFFF|Unicode 16-bit character|<xref:System.Char?displayProperty=nameWithType>|
+|`char`|U+0000 to U+FFFF|16 bit|<xref:System.Char?displayProperty=nameWithType>|
 
 ## Literals
 
-Constants of the `char` type can be written as character literals, hexadecimal escape sequence, or Unicode representation. You can also cast the integral character codes. In the following example four `char` variables are initialized with the same character `X`:
+Constants of the `char` type can be written as character literals, hexadecimal escape sequence, or Unicode representation. You can also cast an integral character code into the corresponding `char` value. In the following example, the four elements of an array of `char` are initialized with the same character `X`:
 
 [!code-csharp[csrefKeywordsTypes#19](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#19)]
 
 ## Conversions
 
-A `char` can be implicitly converted to [ushort](../builtin-types/integral-numeric-types.md), [int](../builtin-types/integral-numeric-types.md), [uint](../builtin-types/integral-numeric-types.md), [double](../builtin-types/floating-point-numeric-types.md), or [decimal](../builtin-types/floating-point-numeric-types.md). However, there are no implicit conversions from other types to the `char` type.
+The `char` type is implicitly convertible to the following [integral](../builtin-types/integral-numeric-types.md) types: `ushort`, `int`, `uint`, `long`, and `ulong`. It's also implicitly convertible to the built-in [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types: `float`, `double`, and `decimal`. It's explicitly convertible to `sbyte`, `byte`, and `short` integral types.
 
-The <xref:System.Char?displayProperty=nameWithType> type provides several static methods for working with `char` values.
+There are no implicit conversions from other types to the `char` type. However, any [integral](../builtin-types/integral-numeric-types.md) or [floating-point](../builtin-types/floating-point-numeric-types.md) numeric type is explicitly convertible to `char`.
 
-## C# language specification  
+## C# language specification
 
-For more information, see [Integral types](~/_csharplang/spec/types.md#integral-types) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see the [Integral types](~/_csharplang/spec/types.md#integral-types) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
-- <xref:System.Char>
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](./index.md)
-- [Integral types](../builtin-types/integral-numeric-types.md)
-- [Built-In Types Table](./built-in-types-table.md)
-- [Implicit Numeric Conversions Table](./implicit-numeric-conversions-table.md)
-- [Explicit Numeric Conversions Table](./explicit-numeric-conversions-table.md)
-- [Nullable Types](../../programming-guide/nullable-types/index.md)
+- [C# reference](../index.md)
+- [C# keywords](./index.md)
+- [Built-in types table](./built-in-types-table.md)
 - [Strings](../../programming-guide/strings/index.md)
+- <xref:System.Char?displayProperty=nameWithType>

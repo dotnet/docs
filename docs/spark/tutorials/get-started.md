@@ -40,9 +40,9 @@ Before you begin, make sure you can run `dotnet`, `java`, `mvn`, `spark-shell` f
     * Use the PowerShell command `java -version` to verify the installation.
 
 4. Install [Apache Maven 3.6.0+](https://maven.apache.org/download.cgi).
-    * Download [Apache Maven 3.6.0](http://mirror.metrocast.net/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip).
-    * Extract to a local directory. For example, `c:\bin\apache-maven-3.6.0\`.
-    * Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). If you extracted to `c:\bin\apache-maven-3.6.0\`, you would add `c:\bin\apache-maven-3.6.0\bin` to your PATH.
+    * Download [Apache Maven 3.6.2](http://mirror.metrocast.net/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.zip).
+    * Extract to a local directory. For example, `c:\bin\apache-maven-3.6.2\`.
+    * Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). If you extracted to `c:\bin\apache-maven-3.6.2\`, you would add `c:\bin\apache-maven-3.6.2\bin` to your PATH.
     * Use the PowerShell command `mvn -version` to verify the installation.
 
 5. Install [Apache Spark 2.3+](https://spark.apache.org/downloads.html). Apache Spark 2.4+ isn't supported.
@@ -63,7 +63,7 @@ Double check that you can run `dotnet`, `java`, `mvn`, `spark-shell` from your c
 
 1. Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub Releases page to your local machine. For example, you might download it to the path, `c:\bin\Microsoft.Spark.Worker\`.
 
-2. Create a [new environment variable](https://www.java.com/en/download/help/path.xml) called `DotnetWorkerPath` and set it to the directory where you downloaded and extracted the **Microsoft.Spark.Worker**. For example, `c:\bin\Microsoft.Spark.Worker`.
+2. Create a [new environment variable](https://www.java.com/en/download/help/path.xml) called `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the **Microsoft.Spark.Worker**. For example, `c:\bin\Microsoft.Spark.Worker`.
 
 ## Clone the .NET for Apache Spark GitHub repo
 

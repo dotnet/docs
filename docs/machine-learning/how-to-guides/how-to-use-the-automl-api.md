@@ -84,7 +84,7 @@ Some examples include:
     ```
 
 1. The `CacheDirectory` setting is a pointer to a directory where all models trained during the AutoML task will be saved. If `CacheDirectory` is set to null, models will be kept in memory instead of written to disk.
- 
+
     ```csharp
     experimentSettings.CacheDirectory = null;
     ```
@@ -122,6 +122,9 @@ The optimizing metric, as shown in the example above, determines the metric to b
 
 ## Data pre-processing and featurization
 
+> [!NOTE]
+> The feature column only supported types of <xref:System.Boolean>, <xref:System.Single>, and <xref:System.String>.
+
 Data pre-processing happens by default and the following steps are performed automatically for you:
 
 1. Drop features with no useful information
@@ -133,9 +136,9 @@ Data pre-processing happens by default and the following steps are performed aut
     Fill missing value cells with the default value for the datatype. Append indicator features with the same number of slots as the input column. The value in the appended indicator features is `1` if the value in the input column is missing and `0` otherwise.
 
 1. Generate additional features
-    
+
     For text features: Bag-of-word features using unigrams and tri-character-grams.
-    
+
     For categorical features: One-hot encoding for low cardinality features, and one-hot-hash encoding for high cardinality categorical features.
 
 1. Transformations and encodings
@@ -183,7 +186,7 @@ Explore other overloads for `Execute()` if you want to pass in validation data, 
 AutoML provides an overloaded experiment execute method which allows you to provide training data. Internally, automated ML divides the data into train-validate splits.
 
 ```csharp
-experiment.Execute(trainDataView);   
+experiment.Execute(trainDataView);
 ```
 
 ### Custom validation dataset
@@ -191,7 +194,7 @@ experiment.Execute(trainDataView);
 Use custom validation dataset if random split is not acceptable, as is usually the case with time series data. You can specify your own validation dataset. The model will be evaluated against the validation dataset specified instead of one or more random datasets.
 
 ```csharp
-experiment.Execute(trainDataView, validationDataView);   
+experiment.Execute(trainDataView, validationDataView);
 ```
 
 ## Explore model metrics

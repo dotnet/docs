@@ -44,7 +44,7 @@ There are two kinds of types in Visual Basic: reference types and value types. V
   
  Since every reference type represents an underlying .NET Framework class, you must use the [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) keyword when you initialize it. The following statement initializes an array.  
   
-```  
+```vb  
 Dim totals() As Single = New Single(8) {}  
 ```  
   

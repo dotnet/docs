@@ -12,7 +12,7 @@ Causes the compiler to accept only syntax that is included in the specified Visu
   
 ## Syntax  
   
-```  
+```console  
 -langversion:version  
 ```  
   

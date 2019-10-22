@@ -15,9 +15,9 @@ Serverless functions, as with microservices in general, are stateless by default
 
 There are several solutions to adopt state without compromising the benefits of serverless. Some of the more popular solutions include:
 
-* Use a temporary data store or distributed cache, like Redis
-* Store state in a database, like SQL or CosmosDB
-* Handle state through a workflow engine like durable functions
+- Use a temporary data store or distributed cache, like Redis
+- Store state in a database, like SQL or CosmosDB
+- Handle state through a workflow engine like durable functions
 
 The bottom line is that you should be aware of the need for any state management within processes you're considering to implement with serverless.
 
@@ -31,9 +31,9 @@ There are a few exceptions and solutions. One solution may be to break your proc
 
 One potential concern with serverless implementations is startup time. To conserve resources, many serverless providers create infrastructure "on demand." When a serverless function is triggered after a period of time, the resources to host the function may need to be created or restarted. In some situations, cold starts may result in delays of several seconds. Startup time varies across providers and service levels. There are a few approaches to address startup time if it's important to minimize for the success of the app.
 
-* Some providers allow users to pay for service levels that guarantee infrastructure is "always on".
-* Implement a keep-alive mechanism (ping the endpoint to keep it "awake").
-* Use orchestration like Kubernetes with a containerized function approach (the host is already running so spinning up new instances is extremely fast).
+- Some providers allow users to pay for service levels that guarantee infrastructure is "always on".
+- Implement a keep-alive mechanism (ping the endpoint to keep it "awake").
+- Use orchestration like Kubernetes with a containerized function approach (the host is already running so spinning up new instances is extremely fast).
 
 ## Database updates and migrations
 

@@ -62,13 +62,13 @@ If you choose to deploy your application to local IIS, you may encounter errors 
 - Settings in the `<diagnostics>` element are excluded to preserve the tracing settings of the target platform.
 
 ## Publishing WCF services with non-HTTP Bindings to IIS
- If you are using IIS7.0 or later, you can publish WCF services with non-HTTP bindings to IIS. You need to do some pre-configurations. For more information, please see the topics at  [Hosting in Windows Process Activation Service](../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md).
+ If you are using IIS7.0 or later, you can publish WCF services with non-HTTP bindings to IIS. You need to do some pre-configurations. For more information, please see the topics at  [Hosting in Windows Process Activation Service](./feature-details/hosting-in-windows-process-activation-service.md).
 
 ## Security
  Publishing to local IIS requires administrator privilege, because IIS requires running in Administrator account. If a user without administrator privilege opens WCF Service Publishing, IIS is not available as a target location. Publishing to File System, or FTP Site works without administrator privilege.
 
 ## See also
 
-- [WCF Visual Studio Templates](../../../docs/framework/wcf/wcf-vs-templates.md)
-- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
-- [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)
+- [WCF Visual Studio Templates](wcf-vs-templates.md)
+- [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md)
+- [WCF Test Client (WcfTestClient.exe)](wcf-test-client-wcftestclient-exe.md)

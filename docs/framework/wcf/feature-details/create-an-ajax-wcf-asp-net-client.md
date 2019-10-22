@@ -98,11 +98,11 @@ This topic shows how to use Visual Studio to create an AJAX-enabled Windows Comm
 
 ## Run the program
 
-Make sure that *WebForm1.aspx* has focus, and then press **Start** button to launch the web client. The button has a green triangle and says something like **IIS Express (Microsoft Edge)**. Or, you can press **F5**. Click the **Price of 3 sandwiches** button to generate the expected output of "3.75".
+Make sure that *WebForm1.aspx* has focus, and then press **Start** button to launch the web client. The button has a green triangle and says something like **IIS Express (Microsoft Edge)**. Or, you can press <kbd>F5</kbd>. Click the **Price of 3 sandwiches** button to generate the expected output of "3.75".
 
-## Example code
+## Example
 
-Following is the full code in the *CostService.svc.cs* file :
+The following is the full code in the *CostService.svc.cs* file:
 
 ```csharp
 using System.ServiceModel;
@@ -123,7 +123,7 @@ namespace SandwichServices
 }
 ```
 
-Following is the full contents of the *WebForm1.aspx* page:
+The following is the full contents of the *WebForm1.aspx* page:
 
 ```aspx-csharp
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="SandwichServices.WebForm1" %>

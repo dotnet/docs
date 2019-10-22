@@ -1,7 +1,7 @@
 ---
 title: Prerequisites for .NET Core on Windows
 description: Learn what dependencies you need on your Windows machine to develop and run .NET Core applications.
-f1_keywords: 
+f1_keywords:
   - "NETSDK1045"
 ms.custom: "updateeachvsrelease"
 ms.date: 09/20/2019
@@ -24,13 +24,10 @@ The following articles have a complete list of .NET Core supported operating sys
 * [.NET Core 3.0](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md)
 * [.NET Core 2.2](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md)
 * [.NET Core 2.1](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md)
-* [.NET Core 1.0](https://github.com/dotnet/core/blob/master/release-notes/1.0/1.0-supported-os.md)
 
 For download links and more information, see [.NET downloads](https://dotnet.microsoft.com/download) to download the latest version or [.NET downloads archive](https://dotnet.microsoft.com/download/archives#dotnet-core) for older versions.
 
 ## .NET Core dependencies
-
-.NET Core 1.1 and earlier versions require the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed by the .NET Core installer.
 
 [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=52685) must be manually installed when:
 
@@ -49,7 +46,7 @@ For download links and more information, see [.NET downloads](https://dotnet.mic
 > In addition to KB2999226, make sure you also have [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot) installed. If you don't have this update installed, you'll see an error similar to the following when you launch a .NET Core application: `The library hostfxr.dll was found, but loading it from C:\<path_to_app>\hostfxr.dll failed`.
 
 ## Prerequisites to develop .NET Core apps with Visual Studio
-    
+
 Even though you can use any editor to develop .NET Core applications using the .NET Core SDK, Visual Studio 2017 and later versions provide an integrated development environment for .NET Core apps on Windows.
 
 <a name="vs-mapping"></a>
@@ -84,7 +81,7 @@ The following image shows the **.NET Core cross-platform development** workload 
 
 ![Screenshot of Visual Studio 2019 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs-2019-workloads.jpg)
 
-Visual Studio 2019 16.3 uses .NET Core 3.0 SDK by default after any of these workloads are installed.
+Visual Studio 2019 version 16.3 uses .NET Core 3.0 SDK by default after any of these workloads are installed.
 
 If you want your existing projects to use the latest .NET Core runtime, retarget each existing .NET Core project to .NET Core 3.0 using the following instructions:
 
@@ -103,12 +100,13 @@ Once you have Visual Studio configured with .NET Core 3.0 SDK, you can do the fo
 
 To develop .NET Core apps in Visual Studio 2017 using the .NET Core 2.2 SDK:
 
+* [Download and install Visual Studio 2019 version 16.3 or higher](/visualstudio/install/install-visual-studio) with the **.NET Core cross-platform development** workload (in the **Other Toolsets** section) selected.
 * [Download and install Visual Studio 2017 version 15.9.0 or higher](/visualstudio/install/install-visual-studio) with the **.NET Core cross-platform development** workload (in the **Other Toolsets** section) selected.
 
 ![Screenshot of Visual Studio 2017 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs-2017-workloads.jpg)
 
 After the **.NET Core cross-platform development** toolset is installed, Visual Studio usually installs a previous version of the .NET Core SDK.
-For example, Visual Studio 2017 15.9 uses .NET Core 2.1 SDK by default after the workload is installed.
+For example, Visual Studio 2017 version 15.9 uses .NET Core 2.1 SDK by default after the workload is installed.
 
 To update Visual Studio to use .NET Core 2.2 SDK:
 
@@ -126,19 +124,5 @@ Once you have Visual Studio configured with .NET Core 2.2 SDK, you can do the fo
 * Open, build, and run existing .NET Core 1.x and 2.x projects.
 * Retarget .NET Core 1.x and 2.x projects to .NET Core 2.2, build, and run.
 * Create new .NET Core 2.2 projects.
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-To develop .NET Core 1.x apps in Visual Studio, [download and install Visual Studio 2017](/visualstudio/install/install-visual-studio) with the **".NET Core cross-platform development"** workload (in the **Other Toolsets** section) selected.
-
-![Screenshot of Visual Studio 2017 installation with the ".NET Core cross-platform development" workload selected](./media/windows-prerequisites/vs-workloads.jpg)
-
-> [!IMPORTANT]
-> It's possible to use Visual Studio 2015 for .NET Core 1.x development, but it's not recommended for the following reasons:
->
-> * The .NET Core tooling is a preview version, which is not supported.
-> * The projects are project.json-based, which is deprecated.
->
-> For more information about the project format changes, see [High-level overview of changes](./tools/cli-msbuild-architecture.md).
 
 ---

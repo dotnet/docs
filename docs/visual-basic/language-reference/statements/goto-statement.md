@@ -19,7 +19,7 @@ Branches unconditionally to a specified line in a procedure.
   
 ## Syntax  
   
-```  
+```vb  
 GoTo line  
 ```  
   

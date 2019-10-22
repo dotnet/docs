@@ -12,7 +12,7 @@ Causes the compiler to make all type information from the specified file(s) avai
   
 ## Syntax  
   
-```  
+```console  
 -addmodule:fileList  
 ```  
   
@@ -27,7 +27,7 @@ Causes the compiler to make all type information from the specified file(s) avai
   
  If you specify (implicitly or explicitly) any[-target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md) option other than `-target:module` with `-addmodule`, the files you pass to `-addmodule` become part of the project's assembly. An assembly is required to run an output file that has one or more files added with `-addmodule`.  
   
- Use [/reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md) to import metadata from a file that contains an assembly.  
+ Use [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md) to import metadata from a file that contains an assembly.  
   
 > [!NOTE]
 > The `-addmodule` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  

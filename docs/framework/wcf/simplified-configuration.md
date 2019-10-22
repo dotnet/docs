@@ -109,9 +109,9 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
   
 ## See also
 
-- [Configuring Services Using Configuration Files](../../../docs/framework/wcf/configuring-services-using-configuration-files.md)
-- [Configuring Bindings for Services](../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)
-- [Configuring System-Provided Bindings](../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Configuring Services](../../../docs/framework/wcf/configuring-services.md)
+- [Configuring Services Using Configuration Files](configuring-services-using-configuration-files.md)
+- [Configuring Bindings for Services](configuring-bindings-for-wcf-services.md)
+- [Configuring System-Provided Bindings](./feature-details/configuring-system-provided-bindings.md)
+- [Configuring Services](configuring-services.md)
 - [Configuring WCF services](configuring-services.md)
-- [Configuring WCF Services in Code](../../../docs/framework/wcf/configuring-wcf-services-in-code.md)
+- [Configuring WCF Services in Code](configuring-wcf-services-in-code.md)

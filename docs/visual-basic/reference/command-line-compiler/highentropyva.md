@@ -11,7 +11,7 @@ Indicates whether a 64-bit executable or an executable that's marked by the [/pl
   
 ## Syntax  
   
-```  
+```console  
 -highentropyva[+ | -]  
 ```  
   

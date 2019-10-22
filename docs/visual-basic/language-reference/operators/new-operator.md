@@ -39,7 +39,7 @@ The `New` keyword can be used in these contexts:
 
 - [Dim Statement](../statements/dim-statement.md)
 - [Of](../statements/of-clause.md)
-- [Sub Statement](../sub-statement.md)
+- [Sub Statement](../statements/sub-statement.md)
 
 ## See also
 

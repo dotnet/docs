@@ -37,7 +37,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 ## Prerequisites
  In order to complete this walkthrough, you will need:
 
-- Microsoft Visual Studio 2010.
+- Visual Studio 2010.
 
 - A text file that contains a small amount of text. (You will display the contents of the text file in a message box.) The code illustrated in the walkthrough assumes that you are working with the following file:
 

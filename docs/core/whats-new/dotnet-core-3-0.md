@@ -23,16 +23,16 @@ For more information about the release, see the [.NET Core 3.0 announcement](htt
 
 ## Language improvements C# 8.0
 
-C# 8.0 is also part of this release, which includes the nullable reference types feature, async streams, and more patterns. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
+C# 8.0 is also part of this release, which includes the [nullable reference types](../../csharp/tutorials/nullable-reference-types.md) feature, [async streams](../../csharp/tutorials/generate-consume-asynchronous-stream.md), and [more patterns](../../csharp/tutorials/pattern-matching.md). For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
 
-Language enhancements were added to support the following features detailed below:
+Language enhancements were added to support the following API features detailed below:
 
 - [Ranges and indices](#ranges-and-indices)
 - [Async streams](#async-streams)
 
 ## .NET Standard 2.1
 
-Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet new classlib` template generates a project that still targets **.NET Standard 2.0**. To target **.NET Standard 2.1**, edit your project file and change the `TargetFramework` property to `netstandard2.1`:
+.NET Core 3.0 implements **.NET Standard 2.1**. However, the default `dotnet new classlib` template generates a project that still targets **.NET Standard 2.0**. To target **.NET Standard 2.1**, edit your project file and change the `TargetFramework` property to `netstandard2.1`:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -45,45 +45,6 @@ Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet ne
 ```
 
 If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), as Visual Studio 2017 doesn't support **.NET Standard 2.1** or **.NET Core 3.0**.
-
-### Ranges and indices
-
-The new <xref:System.Index?displayProperty=nameWithType> type can be used for indexing. You can create one from an `int` that counts from the beginning, or with a prefix `^` operator (C#) that counts from the end:
-
-```csharp
-Index i1 = 3;  // number 3 from beginning
-Index i2 = ^4; // number 4 from end
-int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
-```
-
-There's also the <xref:System.Range?displayProperty=nameWithType> type, which consists of two `Index` values, one for the start and one for the end, and can be written with a `x..y` range expression (C#). You can then index with a `Range`, which produces a slice:
-
-```csharp
-var slice = a[i1..i2]; // { 3, 4, 5 }
-```
-
-For more information, see the [ranges and indices tutorial](../../csharp/tutorials/ranges-indexes.md).
-
-### Async streams
-
-The <xref:System.Collections.Generic.IAsyncEnumerable%601> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable%601>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
-
-The following example demonstrates both production and consumption of async streams. The `foreach` statement is async and itself uses `yield return` to produce an async stream for callers. This pattern (using `yield return`) is the recommended model for producing async streams.
-
-```csharp
-async IAsyncEnumerable<int> GetBigResultsAsync()
-{
-    await foreach (var result in GetResultsAsync())
-    {
-        if (result > 20) yield return result;
-    }
-}
-```
-
-In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
-
-For more information, see the [async streams tutorial](../../csharp/tutorials/generate-consume-asynchronous-stream.md).
 
 ## Compile/Deploy
 
@@ -224,41 +185,6 @@ Roll forward to highest major and highest minor version, even if requested major
 Don't roll forward. Only bind to specified version. This policy isn't recommended for general use because it disables the ability to roll forward to the latest patches. This value is only recommended for testing.
 
 Besides the **Disable** setting, all settings will use the highest available patch version.
-
-### Improved .NET Core Version APIs
-
-Starting with .NET Core 3.0, the version APIs provided with .NET Core now return the information you expect. For example:
-
-```csharp
-System.Console.WriteLine($"Environment.Version: {System.Environment.Version}");
-
-// Old result
-//   Environment.Version: 4.0.30319.42000
-//
-// New result
-//   Environment.Version: 3.0.0
-```
-
-```csharp
-System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription}");
-
-// Old result
-//   RuntimeInformation.FrameworkDescription: .NET Core 4.6.27415.71
-//
-// New result
-//   RuntimeInformation.FrameworkDescription: .NET Core 3.0.0-preview4-27615-11
-```
-
-> [!WARNING]
-> Breaking change. This is technically a breaking change because the versioning scheme has changed.
-
-### .NET Platform-Dependent Intrinsics
-
-APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel.
-
-Where appropriate, the .NET libraries have begun using these instructions to improve performance.
-
-For more information, see [.NET Platform Dependent Intrinsics](https://github.com/dotnet/designs/blob/master/accepted/platform-intrinsics.md).
 
 ### Build copies dependencies
 
@@ -443,7 +369,46 @@ The export methods produce DER-encoded binary data, and the import methods expec
 
 **PKCS#8** files can be inspected with <xref:System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo?displayProperty=nameWithType> and **PFX/PKCS#12** files can be inspected with <xref:System.Security.Cryptography.Pkcs.Pkcs12Info?displayProperty=nameWithType>. **PFX/PKCS#12** files can be manipulated with <xref:System.Security.Cryptography.Pkcs.Pkcs12Builder?displayProperty=nameWithType>.
 
-## .NET Core 3.0 API improvements
+## .NET Core 3.0 API changes
+
+### Ranges and indices
+
+The new <xref:System.Index?displayProperty=nameWithType> type can be used for indexing. You can create one from an `int` that counts from the beginning, or with a prefix `^` operator (C#) that counts from the end:
+
+```csharp
+Index i1 = 3;  // number 3 from beginning
+Index i2 = ^4; // number 4 from end
+int[] a = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+Console.WriteLine($"{a[i1]}, {a[i2]}"); // "3, 6"
+```
+
+There's also the <xref:System.Range?displayProperty=nameWithType> type, which consists of two `Index` values, one for the start and one for the end, and can be written with a `x..y` range expression (C#). You can then index with a `Range`, which produces a slice:
+
+```csharp
+var slice = a[i1..i2]; // { 3, 4, 5 }
+```
+
+For more information, see the [ranges and indices tutorial](../../csharp/tutorials/ranges-indexes.md).
+
+### Async streams
+
+The <xref:System.Collections.Generic.IAsyncEnumerable%601> type is a new asynchronous version of <xref:System.Collections.Generic.IEnumerable%601>. The language lets you `await foreach` over `IAsyncEnumerable<T>` to consume their elements, and use `yield return` to them to produce elements.
+
+The following example demonstrates both production and consumption of async streams. The `foreach` statement is async and itself uses `yield return` to produce an async stream for callers. This pattern (using `yield return`) is the recommended model for producing async streams.
+
+```csharp
+async IAsyncEnumerable<int> GetBigResultsAsync()
+{
+    await foreach (var result in GetResultsAsync())
+    {
+        if (result > 20) yield return result;
+    }
+}
+```
+
+In addition to being able to `await foreach`, you can also create async iterators, for example, an iterator that returns an `IAsyncEnumerable/IAsyncEnumerator` that you can both `await` and `yield` in. For objects that need to be disposed, you can use `IAsyncDisposable`, which various BCL types implement, such as `Stream` and `Timer`.
+
+For more information, see the [async streams tutorial](../../csharp/tutorials/generate-consume-asynchronous-stream.md).
 
 ### IEEE Floating-point
 
@@ -478,49 +443,46 @@ Corresponds to the `fma` IEEE operation, it performs a fused multiply add. That 
 - <xref:System.Math.CopySign(System.Double,System.Double)>\
 Corresponds to the `copySign` IEEE operation, it returns the value of `x`, but with the sign of `y`.
 
+### .NET Platform-Dependent Intrinsics
+
+APIs have been added that allow access to certain perf-oriented CPU instructions, such as the **SIMD** or **Bit Manipulation instruction** sets. These instructions can help achieve significant performance improvements in certain scenarios, such as processing data efficiently in parallel.
+
+Where appropriate, the .NET libraries have begun using these instructions to improve performance.
+
+For more information, see [.NET Platform Dependent Intrinsics](https://github.com/dotnet/designs/blob/master/accepted/platform-intrinsics.md).
+
+### Improved .NET Core Version APIs
+
+Starting with .NET Core 3.0, the version APIs provided with .NET Core now return the information you expect. For example:
+
+```csharp
+System.Console.WriteLine($"Environment.Version: {System.Environment.Version}");
+
+// Old result
+//   Environment.Version: 4.0.30319.42000
+//
+// New result
+//   Environment.Version: 3.0.0
+```
+
+```csharp
+System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription}");
+
+// Old result
+//   RuntimeInformation.FrameworkDescription: .NET Core 4.6.27415.71
+//
+// New result (notice the value includes any preview release information)
+//   RuntimeInformation.FrameworkDescription: .NET Core 3.0.0-preview4-27615-11
+```
+
+> [!WARNING]
+> Breaking change. This is technically a breaking change because the versioning scheme has changed.
+
 ### Fast built-in JSON support
 
 .NET users have largely relied on [**Json.NET**](https://www.newtonsoft.com/json) and other popular JSON libraries, which continue to be good choices. **Json.NET** uses .NET strings as its base datatype, which is UTF-16 under the hood.
 
-The new built-in JSON support is high-performance, low allocation, and based on `Span<byte>`. Three new main JSON-related types have been added to .NET Core 3.0 the <xref:System.Text.Json?displayProperty=nameWithType> namespace. These types don't *yet* support plain old CLR object (POCO) serialization and deserialization.
-
-#### Utf8JsonReader
-
-<xref:System.Text.Json.Utf8JsonReader?displayProperty=nameWithType> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a foundational, low-level type, that can be used to build custom parsers and deserializers. Reading through a JSON payload using the new `Utf8JsonReader` is 2x faster than using the reader from **Json.NET**. It doesn't allocate until you need to actualize JSON tokens as (UTF-16) strings.
-
-Here is an example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/snippets/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
-
-[!CODE-csharp[Utf8JsonReader](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#PrintJson)]
-
-[!CODE-csharp[Utf8JsonReader](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#PrintJsonCall)]
-
-#### Utf8JsonWriter
-
-<xref:System.Text.Json.Utf8JsonWriter?displayProperty=nameWithType> provides a high-performance, non-cached, forward-only way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. Like the reader, the writer is a foundational, low-level type, that can be used to build custom serializers. Writing a JSON payload using the new `Utf8JsonWriter` is 30-80% faster than using the writer from **Json.NET** and doesn't allocate.
-
-#### JsonDocument
-
-<xref:System.Text.Json.JsonDocument?displayProperty=nameWithType> is built on top of the `Utf8JsonReader`. The `JsonDocument` provides the ability to parse JSON data and build a read-only Document Object Model (DOM) that can be queried to support random access and enumeration. The JSON elements that compose the data can be accessed via the <xref:System.Text.Json.JsonElement> type that is exposed by the `JsonDocument` as a property called `RootElement`. The `JsonElement` contains the JSON array and object enumerators along with APIs to convert JSON text to common .NET types. Parsing a typical JSON payload and accessing all its members using the `JsonDocument` is 2-3x faster than **Json.NET** with little allocations for data that is reasonably sized (that is, < 1 MB).
-
-Here is a sample usage of the `JsonDocument` and `JsonElement` that can be used as a starting point:
-
-[!CODE-csharp[JsonDocument](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#ReadJson)]
-
-Here is a C# 8.0 example of reading through the [**launch.json**](https://github.com/dotnet/samples/blob/master/snippets/core/whats-new/whats-new-in-30/cs/launch.json) file created by Visual Studio Code:
-
-[!CODE-csharp[JsonDocument](~/samples/snippets/core/whats-new/whats-new-in-30/cs/program.cs#ReadJsonCall)]
-
-#### JsonSerializer
-
-<xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> is built on top of <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> to provide a fast, low-memory serialization option when working with JSON documents and fragments.
-
-Here is an example of serializing an object to JSON:
-
-[!CODE-csharp[JsonSerializer](~/samples/snippets/core/whats-new/whats-new-in-30/cs/JSON.cs#JsonSerialize)]
-
-Here is an example of deserializing a JSON string to an object. You can use the JSON string produced by the previous example:
-
-[!CODE-csharp[JsonDeserializer](~/samples/snippets/core/whats-new/whats-new-in-30/cs/JSON.cs#JsonDeserialize)]
+The new built-in JSON support is high-performance, low allocation, and based on `Span<byte>`. For more information about the <xref:System.Text.Json> namespace and types, see [JSON serialization in .NET - overview](../../standard/serialization/system-text-json-overview.md). For tutorials on common JSON serialization scenarios, see [How to serialize and deserialize JSON in .NET](../../standard/serialization/system-text-json-how-to.md).
 
 ### HTTP/2 support
 

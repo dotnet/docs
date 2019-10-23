@@ -95,7 +95,7 @@ HousingData[] housingData = new HousingData[]
     new HousingData
     {
         Size = 850f,
-        HistoricalPrices = new float[] { 150000f,175000f,210000f }
+        HistoricalPrices = new float[] { 150000f, 175000f, 210000f }
     },
     new HousingData
     {

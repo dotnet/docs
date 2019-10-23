@@ -29,7 +29,7 @@ CorFlags.exe assembly [options]
 |`assembly`|The name of the assembly for which to configure the CorFlags.|  
   
 |Option|Description|  
-|------------|-----------------|  
+|:------------|-----------------|  
 |`-32BIT[REQ]+`|Sets the 32BITREQUIRED flag.|  
 |`-32BIT[REQ]-`|Clears the 32BITREQUIRED flag.|  
 |`-32BITPREF+`|Sets the 32BITPREFERRED flag. The app runs as a 32-bit process even on 64-bit platforms. Set this flag only on EXE files. If the flag is set on a DLL, the DLL fails to load in 64-bit processes, and a <xref:System.BadImageFormatException> exception is thrown. An EXE file with this flag can be loaded into a 64-bit process.<br /><br /> New in the .NET Framework 4.5.|  

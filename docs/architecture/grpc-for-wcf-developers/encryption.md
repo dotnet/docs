@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # Encryption and network security
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 WCF's network security model is extensive and complex, including transport-level security using HTTPS or TLS-over-TCP, and message-level security using the WS-Security specification to encrypt individual messages.
 
 gRPC leaves secure networking to the underlying HTTP/2 protocol, which can be secured using regular TLS certificates.

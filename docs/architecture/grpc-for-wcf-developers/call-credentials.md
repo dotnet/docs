@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # Call credentials
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Call credentials are all based on some kind of token passed in metadata with each request.
 
 ## WS-Federation

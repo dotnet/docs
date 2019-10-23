@@ -87,4 +87,3 @@ To delete an existing book from the list, select it in the **Book List** section
    Its current values are displayed in the **Edit Selected Book** section.
 
 1. Edit the values using the keyboard. As soon as either <xref:System.Windows.Controls.TextBox> control loses focus, changes are automatically propagated to the XML source and book listings.
-

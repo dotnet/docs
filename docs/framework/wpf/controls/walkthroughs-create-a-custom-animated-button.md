@@ -12,7 +12,7 @@ As its name suggests, Windows Presentation Foundation (WPF) is great for making 
 
  ![The customized button that you will create](./media/custom-button-blend-intro.jpg "custom_button_blend_Intro")
 
- The vector graphics that make up the appearance of the button are created by using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is similar to HTML except it is more powerful and extensible. [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] can be typed in manually using Visual Studio or Notepad, or you can use a visual design tool such as Microsoft Expression Blend. Expression Blend works by creating underlying [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] code, so both methods create the same graphics.
+ The vector graphics that make up the appearance of the button are created by using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is similar to HTML except it is more powerful and extensible. [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] can be typed in manually using Visual Studio or Notepad, or you can use a visual design tool such as Blend for Visual Studio. Blend works by creating underlying XAML code, so both methods create the same graphics.
 
 ## In This Section
  [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md)

@@ -3,7 +3,7 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/22/2019
+ms.date: 10/23/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use transfer learning in an image classification scenario to classify images using a pretrained TensorFlow model and ML.NET's Image Classification API.
@@ -61,11 +61,11 @@ The Image Classification API starts the training process by loading a pretrained
 
 ### Bottleneck phase
 
-During the bottleneck phase, the set of training images are loaded and the pixel values are used as as input, or features, for the frozen layers of the pretrained model. The frozen layers include all of the layers in the neural network up to the penultimate layer, informally known as the bottleneck layer. These layers are referred to as frozen because no training will occur on these layers and operations are pass-through. It's at these frozen layers that the lower-level patterns that help a model differentiate between the different classes are computed. The larger the number of layers, the more computationally intensive this step is. Fortunately, since this is a one-time calculation, the results can be cached and used in later runs when experimenting with different parameters.
+During the bottleneck phase, the set of training images is loaded and the pixel values are used as input, or features, for the frozen layers of the pretrained model. The frozen layers include all of the layers in the neural network up to the penultimate layer, informally known as the bottleneck layer. These layers are referred to as frozen because no training will occur on these layers and operations are pass-through. It's at these frozen layers where the lower-level patterns that help a model differentiate between the different classes are computed. The larger the number of layers, the more computationally intensive this step is. Fortunately, since this is a one-time calculation, the results can be cached and used in later runs when experimenting with different parameters.
 
 ### Training phase
 
-Once the output values from the bottleneck phase are computed, they are used as input to retrain the final layer of the model. This process is iterative and runs for the number of times specified by model parameters. During each run, the loss and accuracy are evaluated and the appropriate adjustments are made to improve the model with the goal of minimizing the loss and maximizing the accuracy. Once training is finished, two model formats are output. One of them is the `.pb` version of the model and the other is the `.zip` ML.NET serialized version of the model. When working in environments supported by ML.NET, it is recommended to use the `.zip` version of the model. However, in environments where ML.NET is not supported, you have the option of using the `.pb` version.
+Once the output values from the bottleneck phase are computed, they are used as input to retrain the final layer of the model. This process is iterative and runs for the number of times specified by model parameters. During each run, the loss and accuracy are evaluated. Then, the appropriate adjustments are made to improve the model with the goal of minimizing the loss and maximizing the accuracy. Once training is finished, two model formats are output. One of them is the `.pb` version of the model and the other is the `.zip` ML.NET serialized version of the model. When working in environments supported by ML.NET, it is recommended to use the `.zip` version of the model. However, in environments where ML.NET is not supported, you have the option of using the `.pb` version.
 
 ## Understand the pretrained model
 
@@ -108,13 +108,13 @@ Each of these subdirectories contains two additional pre-fixed subdirectories:
 
 In this tutorial, only bridge deck images are used.
 
-1. Download the [SDNET2018](https://digitalcommons.usu.edu/cgi/viewcontent.cgi?filename=2&article=1047&context=all_datasets&type=additional) dataset and unzip.
+1. Download the [dataset](https://digitalcommons.usu.edu/cgi/viewcontent.cgi?filename=2&article=1047&context=all_datasets&type=additional) and unzip.
 1. Create a directory named "assets" in your project to save your dataset files.
-1. Copy all the subdirectories inside the *D* subdirectory of the recently unzipped *SDNET2018* directory.
+1. Copy all the subdirectories inside the recently unzipped directory to the *assets* directory.
 
 ### Create input and output classes
 
-1. Open the *Program.cs* file and add the following additional `using` statements to the top of the file:
+1. Open the *Program.cs* file and replace the existing `using` statements at the top of the file with the following:
 
     ```csharp
     using System;
@@ -126,13 +126,33 @@ In this tutorial, only bridge deck images are used.
     using Microsoft.ML.Transforms;
     ```
 
+1. Below the `Program` class in *Program.cs*, create a class called `ImageData`. This class is used to represent the initially loaded data. 
+
+    ```csharp
+    class ImageData
+    {
+        public string ImagePath { get; set; }
+
+        public string Label { get; set; }
+    }
+    ```
+
+    `ImageData` contains the following properties:
+
+    - `ImagePath` is the fully qualified path where the image is stored.
+    - `Label` is the category the image belongs to. This is the value to predict.
+
 1. Create classes for your input and output data
 
-    1. Below the `Program` class in *Program.cs*, define the schema of your input data in a new class called `ModelInput`.
+    1. Below the `ImageData` class, define the schema of your input data in a new class called `ModelInput`.
 
         ```csharp
         class ModelInput
         {
+            public byte[] Image { get; set; }
+            
+            public UInt32 LabelAsKey { get; set; }
+
             public string ImagePath { get; set; }
 
             public string Label { get; set; }
@@ -141,8 +161,13 @@ In this tutorial, only bridge deck images are used.
 
     `ModelInput` contains the following properties:
 
-    - `ImagePath` is the fully-qualified path where the image is stored.
+
+    - `ImagePath` is the fully qualified path where the image is stored. 
     - `Label` is the category the image belongs to. This is the value to predict.
+    - `Image` is the `byte[]` representation of the image. The model expects image data to be of this type for training.
+    - `LabelAsKey` is the numerical representation of the `Label`. 
+
+    Only `Image` and `LabelAsKey` are used to train the model and make predictions. The `ImagePath` and `Label` properties are kept for convenience to access the original image file name and category.
 
     1. Then, below the `ModelInput` class, define the schema of your output data in a new class called `ModelOutput`. 
 
@@ -159,9 +184,11 @@ In this tutorial, only bridge deck images are used.
 
     `ModelOutput` contains the following properties:
 
-    - `ImagePath` is the fully-qualified path where the image is stored.
+    - `ImagePath` is the fully qualified path where the image is stored.
     - `Label` is the original category the image belongs to. This is the value to predict. 
-    - `PredictedLabel` is the index of the predicted label. The pretrained model returns a list of class probabilities and the `PredictedLabel` is the index of the class with the highest probability. 
+    - `PredictedLabel` is the value predicted by the model.
+
+    Similar to `ModelInput`, only the `PredictedLabel` is required to make predictions since it contains the prediction made by the model. The `ImagePath` and `Label` properties are retained for convenience to access the original image file name and category.
 
 ### Define paths and initialize variables
 
@@ -184,10 +211,10 @@ The [MLContext](xref:Microsoft.ML.MLContext) class is a starting point for all M
 
 ### Create data loading utility method
 
-The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageInput` objects. To do so, create the `LoadImagesFromDirectory` method below the `Main` method.
+The images are stored in two subdirectories. Before loading the data, it needs to be formatted into a list of `ImageData` objects. To do so, create the `LoadImagesFromDirectory` method below the `Main` method.
 
 ```csharp
-public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)
+public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool useFolderNameAsLabel = true)
 {
 
 }
@@ -238,7 +265,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
 1. Finally, create a new instance of `ModelInput`.
 
     ```csharp
-    yield return new ModelInput()
+    yield return new ImageData()
     {
         ImagePath = file,
         Label = label
@@ -250,7 +277,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
 1. Back in the `Main` method, use the `LoadFromDirectory` utility method to get the list of images used for training.
 
     ```csharp
-    IEnumerable<ModelInput> images = LoadImagesFromDirectory(folder: assetsRelativePath, useFolderNameAsLabel: true);
+    IEnumerable<ImageData> images = LoadImagesFromDirectory(folder: assetsRelativePath, useFolderNameAsLabel: true);
     ```
 
 1. Then, load the images into an [`IDataView`](xref:Microsoft.ML.IDataView) using the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) method.
@@ -278,7 +305,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
             inputColumnName:"ImagePath"));
     ```
 
-1. Use the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit*) method to apply the data to the `preprocessingPipeline` [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) followed by the [`Transform`](xref:Microsoft.ML.Data.TransformerChain`1.Transform*) method which returns an [`IDataView`](xref:Microsoft.ML.IDataView) containing the pre-processed data.
+1. Use the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit*) method to apply the data to the `preprocessingPipeline` [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) followed by the [`Transform`](xref:Microsoft.ML.Data.TransformerChain`1.Transform*) method, which returns an [`IDataView`](xref:Microsoft.ML.IDataView) containing the pre-processed data.
 
     ```csharp
     IDataView preProcessedData = preprocessingPipeline
@@ -295,7 +322,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
 
     The code sample above performs two splits. First, the pre-processed data is split and 70% is used for training while the remaining 30% is used for validation. Then, the 30% validation set is further split into validation and test sets where 90% is used for validation and 10% is used for testing. 
 
-    A way to think about the purpose of these data partitions is taking an exam. When studying for an exam, you review your notes, books or other resources to get get a grasp on the concepts that are on the exam. This is what the train set is for. Then, you might take a mock exam to validate your knowledge. This is where the validation set comes in handy. You want to check whether you have a good grasp of the concepts before taking the actual exam. Based on those results, you take note of what you got wrong or didn't understand well and incorporate your changes as you review for the real exam. Finally, you take the exam. This is what the test set is used for. You've never seen the questions that are on the exam and now use what you learned from training and validation to apply your knowledge to the task at hand. 
+    A way to think about the purpose of these data partitions is taking an exam. When studying for an exam, you review your notes, books or other resources to get a grasp on the concepts that are on the exam. This is what the train set is for. Then, you might take a mock exam to validate your knowledge. This is where the validation set comes in handy. You want to check whether you have a good grasp of the concepts before taking the actual exam. Based on those results, you take note of what you got wrong or didn't understand well and incorporate your changes as you review for the real exam. Finally, you take the exam. This is what the test set is used for. You've never seen the questions that are on the exam and now use what you learned from training and validation to apply your knowledge to the task at hand. 
 
 1. Assign the partitions their respective values for the train, validation and test data.
 
@@ -307,7 +334,7 @@ public static IEnumerable<ModelInput> LoadImagesFromDirectory(string folder, boo
 
 ## Define the training pipeline
 
-Model training consist of a couple of steps. First, Image Classification API is used to train the model. Then, the encoded labels in the `PredictedLabel` column are converted back to their original categorical value using the `MapKeyToValue` transform. 
+Model training consists of a couple of steps. First, Image Classification API is used to train the model. Then, the encoded labels in the `PredictedLabel` column are converted back to their original categorical value using the `MapKeyToValue` transform. 
 
 1. Define the training [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) pipeline that consists of both the `mapLabelEstimator` and the `ImageClassification` transforms.
 
@@ -339,7 +366,7 @@ Model training consist of a couple of steps. First, Image Classification API is 
     - `validationSet` is the [`IDataView`](xref:Microsoft.ML.IDataView) containing the validation data.
     - `reuseTrainSetBottleneckCachedValues` tells the model whether to use the cached values from the bottleneck phase in subsequent runs. The bottleneck phase is a one-time pass-through computation that is computationally intensive the first time it is performed. If the training data does not change and you want to experiment using a different number of epochs or batch size, using the cached values significantly reduces the amount of time required to train a model.
     - `reuseValidationSetBottleneckCachedValues` is similar to `reuseTrainSetBottleneckCachedValues` only that in this case it's for the validation dataset.
-    - `disableEarlyStopping` tells the Image Classification whether to employ an early stopping strategy. As the model searches for the optimal values that will help it make accurate predictions during training, performance may increase or decrease. Ultimately, if the model reaches the last epoch, it may be the case that the patterns it learned from training are sub-optimal. Early stopping monitors training for these drops in performance and stops the training process in an effort to preserve an optimal version of the model.
+    - `disableEarlyStopping` tells the Image Classification whether to employ an early stopping strategy. As the model searches for the optimal values that will help it make accurate predictions during training, performance may increase or decrease. Ultimately, if the model reaches the last epoch, it may be the case that the patterns it learned from training are suboptimal. Early stopping monitors training for these drops in performance and stops the training process in an effort to preserve an optimal version of the model.
 
 1. Use the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit*) method to train your model.
 
@@ -351,7 +378,61 @@ Model training consist of a couple of steps. First, Image Classification API is 
 
 Now that you have trained your model, it's time to use it to classify images.
 
-1. Add a new method called `ClassifyImages` below the `Main` method to make and output image predictions.
+Below the `Main` method, create a new utility method called `OutputPrediction` to display prediction information in the console.
+
+```csharp
+private static void OutputPrediction(ModelOutput prediction)
+{
+    string imageName = Path.GetFileName(prediction.ImagePath);
+    Console.WriteLine($"Image: {imageName} | Actual Value: {prediction.Label} | Predicted Value: {prediction.PredictedLabel}");
+}
+```
+
+### Classify a single image
+
+1. Add a new method called `ClassifySingleImage` below the `Main` method to make and output a single image prediction.
+
+    ```csharp
+    public static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
+    {
+
+    }
+    ```
+
+1. Create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) inside the `ClassifySingleImage` method. The [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data.
+
+    ```csharp
+    PredictionEngine<ModelInput, ModelOutput> predictionEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(trainedModel);
+    ```
+
+1. To access a single `ModelInput` instance, convert the `data` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:xref:System.Collections.Generic.IEnumerable%601) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method and then get the first observation. 
+
+    ```csharp
+    ModelInput image = mlContext.Data.CreateEnumerable<ModelInput>(data,reuseRowObject:true).First();
+    ```
+
+1. Use the [`Predict`] method to classify the image.
+
+    ```csharp
+    ModelOutput prediction = predictionEngine.Predict(image);
+    ```
+
+1. Output the prediction to the console with the `OutputPrediction` method.
+
+    ```csharp
+    Console.WriteLine("Classifying single image");
+    OutputPrediction(prediction);
+    ```
+
+1. Inside the `Main` method, call `ClassifySingleImage` using the test set of images.
+
+    ```csharp
+    ClassifySingleImage(mlContext, testSet, trainedModel);
+    ```
+
+### Classify multiple images
+
+1. Add a new method called `ClassifyImages` below the `ClassifySingleImage` method to make and output multiple image predictions.
 
     ```csharp
     public static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
@@ -366,7 +447,7 @@ Now that you have trained your model, it's time to use it to classify images.
     IDataView predictionData = trainedModel.Transform(data);
     ```
 
-1. In order to iterate over the predictions, convert the `predictionData` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method and then get the first ten observations.
+1. In order to iterate over the predictions, convert the `predictionData` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method and then get the first 10 observations.
 
     ```csharp
     IEnumerable<ModelOutput> predictions = mlContext.Data.CreateEnumerable<ModelOutput>(predictionData, reuseRowObject: true).Take(10);
@@ -375,6 +456,7 @@ Now that you have trained your model, it's time to use it to classify images.
 1. Iterate and output the original and predicted labels for the predictions.
 
     ```csharp
+    Console.WriteLine("Classifying multiple images");
     foreach (var prediction in predictions)
     {
         string imageName = Path.GetFileName(prediction.ImagePath); 
@@ -414,9 +496,13 @@ Phase: Training, Dataset used: Validation, Batch Processed Count:   6, Epoch:  2
 **Classify images output**
 
 ```text
+Classifying single image
 Image: 7001-220.jpg | Actual Value: UD | Predicted Value: UD
-Image: 7001-49.jpg | Actual Value: UD | Predicted Value: UD
-Image: 7004-167.jpg | Actual Value: CD | Predicted Value: UD
+
+Classifying multiple images
+Image: 7001-220.jpg | Actual Value: UD | Predicted Value: UD
+Image: 7001-163.jpg | Actual Value: UD | Predicted Value: UD
+Image: 7001-210.jpg | Actual Value: UD | Predicted Value: UD
 ```
 
 Upon inspection of the *7001-220.jpg* image, you can see that it in fact is not cracked. 
@@ -433,7 +519,7 @@ In this tutorial, you learned how to build a custom deep learning model using tr
 
 If you're not satisfied with the results of your model, you can try to improve its performance by trying some of the following approaches:
 
-- **More Data**: The more examples a model learns from, the better it performs. 
+- **More Data**: The more examples a model learns from, the better it performs. Download the full [SDNET2018 dataset](https://digitalcommons.usu.edu/cgi/viewcontent.cgi?filename=2&article=1047&context=all_datasets&type=additional) and use it to train. 
 - **Augment the data**: A common technique to add variety to the data is to augment the data by taking an image and applying different transforms (rotate, flip, shift, crop). This adds more varied examples for the model to learn from. 
 - **Train for a longer time**: The longer you train, the more tuned the model will be. Increasing the number of epochs may improve the performance of your model.
 - **Experiment with the hyper-parameters**: In addition to the parameters used in this tutorial, other parameters can be tuned to potentially improve performance. Changing the learning rate, which determines the magnitude of updates made to the model after each epoch may improve performance.

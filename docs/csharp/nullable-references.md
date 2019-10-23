@@ -57,7 +57,7 @@ The nullable annotation context and nullable warning context can be set for a pr
 - `warnings`: The nullable annotation context is **disabled**. The nullable warning context is **enabled**.
   - Variables of a reference type are oblivious. All nullability warnings are enabled.
 - `annotations`: The nullable annotation context is **enabled**. The nullable warning context is **disabled**.
-  - Variables of a reference type are oblivious. All nullability warnings are disabled.
+  - Variables of a reference type, string for example, are non-nullable. All nullability warnings are disabled.
 - `disable`: The nullable annotation context is **disabled**. The nullable warning context is **disabled**.
   - Variables of a reference type are oblivious, just like earlier versions of C#. All nullability warnings are disabled.
 

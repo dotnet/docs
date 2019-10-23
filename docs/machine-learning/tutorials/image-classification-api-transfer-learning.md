@@ -161,7 +161,6 @@ In this tutorial, only bridge deck images are used.
 
     `ModelInput` contains the following properties:
 
-
     - `ImagePath` is the fully qualified path where the image is stored. 
     - `Label` is the category the image belongs to. This is the value to predict.
     - `Image` is the `byte[]` representation of the image. The model expects image data to be of this type for training.

@@ -1,0 +1,54 @@
+### YamlMime:Landing
+
+title: Data binding in WPF
+summary: Windows Presentation Foundation (WPF) data binding provides a simple and consistent way for applications to present and interact with data. You can bind elements to data from a variety of sources.
+
+metadata:
+  title: Data binding in WPF
+  description: Provides links to various topics for data binding in WPF.
+  ms.topic: landing-page
+  ms.collection: collection
+  ms.date: 10/22/2019
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card
+  - title: About data binding in WPF
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Data binding in WPF
+            url: ../../../desktop-wpf/data/data-binding-overview.md?toc=/framework/wpf/data/toc.json
+          - text: Binding sources
+            url: binding-sources-overview.md
+          - text: Data templating
+            url: data-templating-overview.md
+          - text: Binding declarations
+            url: binding-declarations-overview.md
+          - text: Data binding with LINQ to XML
+            url: wpf-data-binding-with-linq-to-xml-overview.md
+
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create a simple binding
+            url: how-to-create-a-simple-binding.md
+          - text: Specify the binding source
+            url: how-to-specify-the-binding-source.md
+          - text: Bind to query results
+            url: how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md
+          - text: Bind to an ADO.NET data source
+            url: how-to-bind-to-an-ado-net-data-source.md
+
+  # Card
+  - title: Create an app
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: LINQ to XML data binding sample
+            url: linq-to-xml-data-binding-sample.md

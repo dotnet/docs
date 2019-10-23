@@ -92,6 +92,5 @@ In data binding, the binding source object refers to the object you obtain data 
 - <xref:System.Windows.Data.XmlDataProvider>
 - [Specify the Binding Source](how-to-specify-the-binding-source.md)
 - [Data Binding Overview](data-binding-overview.md)
-- [How-to Topics](data-binding-how-to-topics.md)
 - [WPF Data Binding with LINQ to XML Overview](wpf-data-binding-with-linq-to-xml-overview.md)
-- [Data Binding](../advanced/optimizing-performance-data-binding.md)
+- [Optimize data binding performance](../advanced/optimizing-performance-data-binding.md)

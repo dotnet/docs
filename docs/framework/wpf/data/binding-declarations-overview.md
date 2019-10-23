@@ -137,6 +137,5 @@ The default behavior is as follows if not specified in the declaration.
 ## See also
 
 - [Data Binding Overview](data-binding-overview.md)
-- [How-to Topics](data-binding-how-to-topics.md)
 - [Data Binding](../advanced/optimizing-performance-data-binding.md)
 - [PropertyPath XAML Syntax](../advanced/propertypath-xaml-syntax.md)

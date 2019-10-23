@@ -11,7 +11,7 @@ This page contains and describes the XAML source file for the [WPF data binding 
 
 As is typical for a WPF project, this file contains one parent element, a <xref:System.Windows.Window> XML element that's associated with the derived class `L2XDBFrom` in the `LinqToXmlDataBinding` namespace.
 
-The client area is contained within a <xref:System.Windows.Controls.StackPanel> that's given a light blue background. This panel contains four <xref:System.Windows.Controls.DockPanel> UI sections separated by <xref:System.Windows.Controls.Separator> bars. The purpose of these sections is described [here](linq-to-xml-data-binding-sample.md#remarks).
+The client area is contained within a <xref:System.Windows.Controls.StackPanel> that's given a light blue background. This panel contains four <xref:System.Windows.Controls.DockPanel> UI sections separated by <xref:System.Windows.Controls.Separator> bars. The purpose of these sections is described [here](linq-to-xml-data-binding-sample.md#overview).
 
 Each section contains a label that identifies it. In the first two sections, this label is rotated 90 degrees through the use of a <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. The rest of the section contains UI elements appropriate to the purpose of that section, for example, text blocks, text boxes, and buttons. Sometimes a child <xref:System.Windows.Controls.StackPanel> is used to align these child controls.
 

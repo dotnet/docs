@@ -39,5 +39,5 @@ The dynamic properties that map to <xref:System.Xml.Linq.XContainer.Element%2A> 
 
 - [Binding Sources Overview](binding-sources-overview.md)
 - [WPF Data Binding with LINQ to XML Overview](wpf-data-binding-with-linq-to-xml-overview.md)
-- [WPF Data Binding Using LINQ to XML Example](wpf-data-binding-using-linq-to-xml-example.md)
+- [WPF Data Binding Using LINQ to XML Example](linq-to-xml-data-binding-sample.md)
 - [LINQ to XML Dynamic Properties](linq-to-xml-dynamic-properties.md)

@@ -30,7 +30,7 @@ Language enhancements were added to support the following features detailed belo
 - [Ranges and indices](#ranges-and-indices)
 - [Async streams](#async-streams)
 
-## Standard 2.1
+## .NET Standard 2.1
 
 Even though .NET Core 3.0 supports **.NET Standard 2.1**, the default `dotnet new classlib` template generates a project that still targets **.NET Standard 2.0**. To target **.NET Standard 2.1**, edit your project file and change the `TargetFramework` property to `netstandard2.1`:
 
@@ -85,7 +85,7 @@ In addition to being able to `await foreach`, you can also create async iterator
 
 For more information, see the [async streams tutorial](../../csharp/tutorials/generate-consume-asynchronous-stream.md).
 
-## Compile/Publish
+## Compile/Deploy
 
 ### Default executables
 

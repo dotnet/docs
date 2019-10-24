@@ -3,7 +3,7 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/23/2019
+ms.date: 10/24/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use transfer learning in an image classification scenario to classify images using a pretrained TensorFlow model and ML.NET's Image Classification API.
@@ -14,7 +14,7 @@ ms.custom: mvc
 Learn how to train a custom deep learning model using transfer learning, a pretrained TensorFlow model and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
 
 > [!NOTE]
-> The ML.NET Image Classification API is currently in preview.
+> This tutorial uses a preview version of the ML.NET Image Classification API.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -27,7 +27,7 @@ In this tutorial, you learn how to:
 
 ## Image classification transfer learning sample overview
 
-This sample is a .NET Core console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples) on GitHub.
+This sample is a .NET Core console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary) on GitHub.
 
 ## Understand the problem
 
@@ -108,7 +108,7 @@ Each of these subdirectories contains two additional prefixed subdirectories:
 
 In this tutorial, only bridge deck images are used.
 
-1. Download the [dataset](https://digitalcommons.usu.edu/cgi/viewcontent.cgi?filename=2&article=1047&context=all_datasets&type=additional) and unzip.
+1. Download the [dataset](https://github.com/dotnet/machinelearning-samples/raw/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/assets.zip) and unzip.
 1. Create a directory named "assets" in your project to save your dataset files.
 1. Copy all the subdirectories inside the recently unzipped directory to the *assets* directory.
 

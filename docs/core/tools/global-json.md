@@ -1,12 +1,16 @@
 ---
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET Core SDK version when running .NET Core CLI commands.
-ms.date: 12/03/2018
+ms.date: 10/24/2019
 ms.custom: "updateeachrelease, seodec18"
 ---
 # global.json overview
 
+**This article applies to: ✓** .NET Core 1.x SDK and later versions
+
+<!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+-->
 
 The *global.json* file allows you to define which .NET Core SDK version is used when you run .NET Core CLI commands. Selecting the .NET Core SDK is independent from specifying the runtime your project targets. The .NET Core SDK version indicates which versions of the .NET Core CLI tools are used. In general, you want to use the latest version of the tools, so no *global.json* file is needed.
 
@@ -18,13 +22,15 @@ For more information about specifying the runtime instead, see [Target framework
 
 ### sdk
 
-Type: Object
+Type: `object`
 
 Specifies information about the .NET Core SDK to select.
 
 #### version
 
-Type: String
+- Type: `string`
+
+- Available since: .NET Core 1.0 SDK.
 
 The version of the .NET Core SDK to use.
 
@@ -33,12 +39,56 @@ Note that this field:
 - Doesn't have globbing support, that is, the full version number has to be specified.
 - Doesn't support version ranges.
 
-The following example shows the contents of a *global.json* file:
+#### allowPrerelease
+
+- Type: `boolean`
+
+- Available since: .NET Core 3.0 SDK.
+
+Indicates whether the SDK resolver should consider prerelease versions when selecting the SDK version to use.
+
+The default value depends whether you're running from Visual Studio:
+
+- If you're **not** in Visual Studio, the default value is `true`.
+- If you are in Visual Studio, it uses the prerelease status requested. That is, if you're using a Preview version of Visual Studio or you set the **Use previews of the .NET Core SDK** option (under **Tools** > **Options** > **Environment** > **Preview Features**), the default value is `true`; otherwise, `false`.
+
+#### rollForward
+
+- Type: `string`
+
+- Available since: .NET Core 3.0 SDK.
+
+The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a later version.
+
+To understand the available policies and their behavior, consider the following definitions for a SDK version in the format `x.y.znn`:
+
+- `x` is the major version.
+- `y` is the minor version.
+- `z` is the feature band.
+- `nn` is the patch version.
+
+The following table shows the possible values for the `rollForward` key:
+
+| Value | Definition |
+| ----- | ---------- |
+| `patch` | If the requested SDK is installed, use it. Otherwise, use the latest installed patch level that matches the requested major, minor, and feature band. This is the legacy behavior.
+| `feature` | If the requested major, minor, and feature band is installed, use the latest patch level for the specified feature band. Otherwise, roll forward to the next available feature band and use the latest patch level for that feature band.
+| `minor` | If the requested major, minor, and feature band is installed, use the latest patch level for the specified feature band. Otherwise, roll forward to the next available feature band available for the same major version and use the latest patch level for that feature band.
+| `major` | If the requested major, minor, and feature band is installed, use the latest patch level for the specified feature band. Otherwise, roll-forward to the next available feature band available without restriction and use the latest patch level for that feature band.
+| `latestPatch` | Use the latest installed patch level that matches the requested major, minor, and feature band.
+| `latestFeature` | Use the latest installed patch level for the latest installed feature band that matches the requested major and minor version.
+| `latestMinor` | Use the latest installed patch level for the latest installed feature band for the latest installed minor version that matches the requested major version.
+| `latestMajor` | Use the latest .NET Core SDK available.
+
+## Examples
+
+The following example shows how to pin the SDK version and not consider prerelease versions:
 
 ```json
 {
   "sdk": {
-    "version": "2.2.100"
+    "version": "3.0.100",
+    "allowPrerelease": false
   }
 }
 ```

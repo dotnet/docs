@@ -31,7 +31,7 @@ WPF lets you develop an application using both *markup* and *code-behind*, an ex
 
 - Development is more efficient because designers can implement an application's appearance simultaneously with developers who are implementing the application's behavior.
 
-- [Globalization and localization](wpf-globalization-and-localization-overview.md) for WPF applications is simplified.
+- [Globalization and localization](advanced/wpf-globalization-and-localization-overview.md) for WPF applications is simplified.
 
 ### Markup
 

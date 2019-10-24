@@ -69,16 +69,17 @@ To understand the available policies and their behavior, consider the following 
 
 The following table shows the possible values for the `rollForward` key:
 
-| Value | Definition |
-| ----- | ---------- |
-| `patch` | If the requested SDK is installed, use it. Otherwise, use the latest installed patch level that matches the requested major, minor, and feature band. This is the legacy behavior.
-| `feature` | If the requested major, minor, and feature band is installed, use the latest patch level for the specified feature band. Otherwise, roll forward to the next available feature band and use the latest patch level for that feature band.
-| `minor` | If the requested major, minor, and feature band is installed, use the latest patch level for the specified feature band. Otherwise, roll forward to the next available feature band available for the same major version and use the latest patch level for that feature band.
-| `major` | If the requested major, minor, and feature band is installed, use the latest patch level for the specified feature band. Otherwise, roll-forward to the next available feature band available without restriction and use the latest patch level for that feature band.
-| `latestPatch` | Use the latest installed patch level that matches the requested major, minor, and feature band.
-| `latestFeature` | Use the latest installed patch level for the latest installed feature band that matches the requested major and minor version.
-| `latestMinor` | Use the latest installed patch level for the latest installed feature band for the latest installed minor version that matches the requested major version.
-| `latestMajor` | Use the latest .NET Core SDK available.
+| Value         | Behavior |
+| ------------- | ---------- |
+| `patch`       | Uses the specified version. <br> If not found, rolls forward to the latest patch level. <br> If not found, fails. <br><br> This is the legacy behavior from the earlier versions of the SDK. |
+| `feature`     | Uses the latest patch level for the the specified major, minor, and feature band. <br> If not found, rolls forward to the next available feature band within the same major/minor and uses the latest patch level for that feature band. <br> If not found, fails. |
+| `minor`       | Uses the latest patch level for the the specified major, minor, and feature band. <br> If not found, rolls forward to the next available feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next available minor and feature within the same major and uses the latest patch level for that feature band. <br> If not found, fails. |
+| `major`       | Uses the latest patch level for the the specified major, minor, and feature band. <br> If not found, rolls forward to the next available feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next available minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next available major, minor, and feature and uses the latest patch level for that feature band. <br> If not found, fails. |
+| `latestPatch` | Uses the latest installed patch level that matches the requested major, minor, and feature band with a patch level and that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestFeature` | Uses the latest installed feature band and patch level that matches the requested major and minor with a feature band that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestMinor` | Uses the latest installed minor, feature band, and patch level that matches the requested major with a minor that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestMajor` | Uses the latest .NET Core SDK available with a major that is greater or equal than the specified value. <br> If not found, fail. |
+| `disable`     | Doesn't roll forward. Exact match required. |
 
 ## Examples
 

@@ -101,7 +101,7 @@ The data is organized in three subdirectories:
 - P contains pavement images
 - W contains wall images
 
-Each of these subdirectories contains two additional pre-fixed subdirectories:
+Each of these subdirectories contains two additional prefixed subdirectories:
 
 - C is the prefix used for cracked surfaces
 - U is the prefix used for uncracked surfaces

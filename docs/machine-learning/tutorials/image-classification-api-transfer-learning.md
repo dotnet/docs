@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 > - Use transfer learning to train a custom TensorFlow image classification model
 > - Classify images with the custom model
 
-## Image Classification Transfer Learning Sample Overview
+## Image classification transfer learning sample overview
 
 This sample is a .NET Core console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples) on GitHub.
 

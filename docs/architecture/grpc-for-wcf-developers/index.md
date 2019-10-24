@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # ASP.NET Core gRPC for WCF Developers
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 ![cover image](./media/cover.png)
 
 PUBLISHED BY

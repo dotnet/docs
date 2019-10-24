@@ -62,6 +62,7 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Net.HttpWebRequest.\_AutoRedirects Field](_autoredirects.md)
 * [System.Net.HttpWebRequest.\_CoreResponse Field](httpwebrequest__coreresponse.md)
 * [System.Net.HttpWebRequest.\_HttpResponse Field](_httpresponse.md)
+* [System.Net.PooledStream.NetworkStream Property](system.net.pooledstream.networkstream.md)
 * [System.Net.ServicePoint.m\_ConnectionGroupList Field](m_connectiongrouplist.md)
 * [System.Net.ServicePointManager.s\_ServicePointTable Field](s_servicepointtable.md)
 * [System.Net.TlsStream.m_Worker Field](system.net.tlsstream.m_worker.md)

@@ -23,7 +23,7 @@ Windows Presentation Foundation (WPF) provides developers with a unified program
 - [Getting Started](getting-started/index.md)
 - [Application Development](app-development/index.md)
 - [Advanced](advanced/index.md)
-- [Controls](controls/index.md
+- [Controls](controls/index.md)
 - [Data](data/index.md)
 - [Graphics and Multimedia](graphics-multimedia/index.md)
 - [Security](security-wpf.md)

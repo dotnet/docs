@@ -33,7 +33,7 @@ This sample is a .NET Core console application that classifies images using a pr
 
 Image classification is a computer vision problem. Image classification takes an image as input and categorizes it into a prescribed class. Some scenarios where image classification is useful include:
 
-- Facial Recognition
+- Facial recognition
 - Emotion detection
 - Medical diagnosis
 - Landmark detection

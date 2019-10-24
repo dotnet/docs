@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # Migrate WCF duplex services to gRPC
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Now that the basic concepts are in place, this section will look at the more complicated *streaming* gRPC services.
 
 There are multiple ways to use duplex services in Windows Communication Foundation (WCF). Some services are initiated by the client and then they stream data from the server. Other full-duplex services might involve more ongoing two-way communication like the classic "Calculator" example from the WCF documentation. This chapter will take two possible WCF "Stock Ticker" implementations and migrate them to gRPC: one using a server streaming RPC, and the other one using a bidirectional streaming RPC.

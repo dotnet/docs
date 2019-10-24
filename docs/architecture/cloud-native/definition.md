@@ -89,7 +89,7 @@ In the book, [Beyond the Twelve-Factor App](https://content.pivotal.io/blog/bey
 
 |    |  New Factor | Explanation  |
 | :-------- | :-------- | :-------- |
-| 13 | API First | Make everything a service. Assume your code will be consumed by a front-end client. gateway or another service. |
+| 13 | API First | Make everything a service. Assume your code will be consumed by a front-end client, gateway, or another service. |
 | 14 | Telemetry | On a workstation, you have deep visibility into your application and its behavior. In the cloud, you don't. Make sure your design includes the collection of monitoring, domain-specific, and health/system data. |
 | 15 | Authentication/ Authorization  | Implement identity from the start. Consider [RBAC (role-based access control)](https://docs.microsoft.com/azure/role-based-access-control/overview) features available in public clouds.  |
 

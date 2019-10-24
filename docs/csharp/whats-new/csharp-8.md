@@ -79,7 +79,7 @@ public readonly void Translate(int xOffset, int yOffset)
 }
 ```
 
-This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
+This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent. You can learn more about readonly members in the language reference article on [`readonly`](../language-reference/keywords/readonly.md#readonly-member-examples).
 
 ## Default interface methods
 

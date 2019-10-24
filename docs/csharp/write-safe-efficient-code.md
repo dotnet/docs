@@ -105,7 +105,9 @@ public struct Point3D
 }
 ```
 
-The preceding sample shows many of the different locations where you can apply the `readonly` modifier: methods, properties, and property accessors. If you use auto-implemented properties, the compiler adds the `readonly` modifier to the `get` accessor for read-write properties. The compiler adds the `readonly` modifier to the property declaration for properties with only a `get` accessor.
+The preceding sample shows many of the locations where you can apply the `readonly` modifier: methods, properties, and property accessors. If you use auto-implemented properties, the compiler adds the `readonly` modifier to the `get` accessor for read-write properties. The compiler adds the `readonly` modifier to the auto-implemented property declarations for properties with only a `get` accessor.
+
+Adding the `readonly` modifier to members that do not mutate state provides two related benefits. First, the compiler enforces your intent. That member cannot mutate the struct's state, nor can it access a member that is not also marked `readonly`. Second, the compiler will not create defensive copies of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
 
 ## Use `ref readonly return` statements for large structures when possible
 

@@ -6,11 +6,11 @@ ms.date: 10/21/2019
 ---
 # Cloud-native data patterns
 
-As discussed in chapter 1, a key pillar of a cloud-native system is a microservice-based architecture. Microservices favor small, independent data stores scoped to each service. While isolating data can increase agility, performance, and scalability, it also presents many challenges. In this section, we discuss these challenges and present patterns and best practices to help overcome them.  
+As we've seen, a key pillar of a cloud-native system is a microservice-based architecture. Microservices favor small, independent data stores scoped to each service. While isolating data can increase agility, performance, and scalability, it also presents many challenges. In this section, we discuss these challenges and present patterns and best practices to help overcome them.  
 
 ## Cross-service queries
 
-While microservices are independent and focus on specific functional capabilities, like inventory, shipping, or ordering, they often require integration with other microservices to execute user operations. Typically what is needed from other services is data. In these scenarios, how does a microservice *query* data that is owned by another microservice?
+While microservices are independent and focus on specific functional capabilities, like inventory, shipping, or ordering, they often require integration with other microservices to execute user operations. Typically the integration involves one microservice *querying* another for data. For these scenarios, how does a microservice *query* data that is owned by another microservice?
 
 Figure 5-4 shows the scenario.
 
@@ -18,9 +18,9 @@ Figure 5-4 shows the scenario.
 
 **Figure 5-4**. Querying across microservices
 
-In the preceding figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains basket and lineItem data, it doesn't contain product or pricing data. Instead, those data items are found in the catalog and pricing microservices. This presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database? 
+In the preceding figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains basket and lineItem data, it doesn't maintain product or pricing data. Instead, those data items are found in the catalog and pricing microservices. This presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database? 
 
-One option discussed in Chapter 4 is a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said direct HTTP calls couple microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages back and forth across microservices, but that could block an operation that needs a data response to complete.
+One option discussed in Chapter 4 is a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said direct HTTP calls couple microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages back and forth across microservices, but doing so could block an operation that needs a data query response to complete.
 
 As you can see, querying data across microservices is complex. A common approach to this problem that removes cross-service dependencies is the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
 
@@ -34,7 +34,7 @@ The catch with this approach is you now have duplicate data in your system. In c
 
 ## Transactional support
 
-While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency for independent data sources in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage cross-service transactions programmatically. You move from a world of *immediate consistency* to that of *eventual consistency*. 
+While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency across independent data sources in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage cross-service transactions programmatically. You move from a world of *immediate consistency* to that of *eventual consistency*. 
 
 Figure 5-6 shows the problem.
 
@@ -60,7 +60,7 @@ Saga patterns are typically choreographed as a series of related events, or orch
 
 Cloud-native applications often support high-volume data requirements. In these secanairos, traditional data storage techniques can cause performance bottlenecks. CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separate operations that read data from operations that write data. 
 
-For normal scenarios, you implement a single model (entity and data repository object) that performs *both* read and write data operations.
+For normal scenarios, you implement a single model (entity and data repository object) that performs *both* read and w data operations.
 
 However, a high volume data scenario might benefit from separate models and data tables for reads and writes. To improve performance, the read operation might query against a highly denormalized representation of the data to avoid expensive repetitive table joins. The *write* operation, known as a *command*, might update against a fully normalized representation of the data. You would then need to implement a mechanism to keep both representations in sync. Typically, whenever the write table is modified, it publishes an event that replicates the data modification to the read table.
 
@@ -82,7 +82,7 @@ The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) tech
 
 Relational databases have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, tooling, and expertise abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and support [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees. 
 
-No-SQL databases refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. No-SQL databases typically don't provide [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees beyond the scope of a single database partition.
+No-SQL databases refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. No-SQL databases typically don't provide [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees beyond the scope of a single database partition. But, as [Martin Fowler](https://martinfowler.com/bliki/OrmHate.html) says, this "only works when the fit between the application model and the NoSQL data model is good."
 
 As a way to understand the differences between these types of databases, consider the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles applied to distributed systems that store state. Figure 5-9 shows the three properties of the CAP theorem.
 
@@ -102,7 +102,7 @@ Generally speaking, relational databases typically provide consistency and avail
 
 NoSQL databases typically support high availability and partition tolerance, implemented as horizontal scalability. As the CAP theorem specifies, you can only have two of the three properties, and with partition tolerance, you lose the consistency property. 
 
-If replicas were to lose connectivity in a "highly consistent" database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it cannot replicate the change to all of the underlying replicas. Whereas a "highly available" database cluster would allow the write operation and update each replica as it becomes available.
+If replicas were to lose connectivity in a "highly consistent" database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it cannot replicate that change to every underlying replica. Every copy of the data has to match before the transaction can complete. Whereas a "highly available" database cluster would allow the write operation and update each replica as it becomes available.
 
 > Care must be taken with these descriptions as some databases support configurations that can *"toggle"* these principles. For example, MySQL can be configured as either consistent and available or available and partition tolerant. 
 
@@ -110,7 +110,7 @@ NoSQL databases are distributed and scale out across commodity servers. This app
 
 This kind of result is known as [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/), a characteristic of distributed data systems where ACID transactions aren't supported. It's a brief delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. Under normal conditions, the lag is typically short, but can increase when problems arise. For example, what if you were to update a product item in a NoSQL database in the United States, but query that same data item from a replica node in Europe? You would receive the earlier product information, until the European node has updated the product change. By immediately returning a query result and not waiting for all replica nodes to update, you gain enormous scale and volume, but with the possibility of presenting older data.
 
-The are four basic types of NoSQL databases: 
+The are four basic types of NoSQL databases:
 
 - *Document Store* (mongodb, couchdb, couchbase) - Store data and corresponding metadata non-relationally in denormalized JSON-based documents inside the database.
 

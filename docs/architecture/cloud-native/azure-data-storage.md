@@ -6,15 +6,17 @@ ms.date: 10/21/2019
 ---
 # Data storage in Azure
 
-As we've seen in this book, the cloud has changed the way applications are designed, deployed, and managed. When constructing cloud-native systems, how can the Azure cloud help you store and manage data? Fortunately, Azure offers many options.
+As we've seen in this book, the cloud changes how you design, deploy, and manage applications - especially when it comes to data. In this chapter, we'll explore how the Azure cloud help you store and manage data in your cloud-native applications.
 
-To start, you could easily provision an Azure virtual machine and install your database of choice. But, you'd forgo many cloud features and would be responsible for managing both that virtual machine and database.
+To start, you could easily provision an Azure virtual machine and install your database of choice. While you'd have full control, you'd forgo many cloud features and would be responsible for managing both that virtual machine and database.
 
-Instead, a fully managed [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/) is often a better option. You get many built-in clouds features such as scalability and monitoring. The cluster can be configured across multiple availability zones and regions to achieve high availability. The hosting, maintenance, and licensing are managed by the vendor, Microsoft. Azure features different kinds of managed data storage options, each with specific benefits. They all support just-in-time capacity and a pay-as-you-go model.
+Instead, a fully managed [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/) is often a better option. You get many built-in clouds features including security, scalability, and monitoring. The data store can be configured across multiple availability zones and regions to achieve high availability. The hosting, maintenance, and licensing are managed by the vendor, Microsoft. Azure features different kinds of managed data storage options, each with specific benefits. They all support just-in-time capacity and a pay-as-you-go model.
 
-We'll next look at relational DBaaS options available in Azure. You'll see that Microsoft's flagship SQL Server database is available along with several open-source options. Then, we'll talk about the NoSQL data in Azure.
+We'll first look at relational DBaaS options available in Azure. You'll see that Microsoft's flagship SQL Server database is available along with several open-source options. Then, we'll talk about the NoSQL data in Azure.
 
 ## Azure SQL Database
+
+Many microservices found in cloud-native systems have application models that require a relational database.
 
 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is a feature-rich, general-purpose relational database-as-a-service (DBaaS) based on the Microsoft SQL Server Database Engine. It's fully managed by Microsoft and is a high-performance, reliable, and secure cloud database. The service shares many of the features found in the on-premises version of SQL Server. 
 
@@ -26,7 +28,7 @@ Figure 5-12 shows the deployment options for Azure SQL Database.
 
 **Figure 5-12**. Azure SQL deployment options
 
-In the previous figure, we see three ways to deploy Azure SQL Database:
+From the previous figure, we see three ways to deploy Azure SQL Database:
 
 - A [Single Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database) represents a fully managed, isolated database with its own set of resources, managed by a [SQL Database server](https://docs.microsoft.com/azure/sql-database/sql-database-servers). A single database is similar to a [contained database](https://docs.microsoft.com/sql/relational-databases/databases/contained-databases) in an on-premises SQL Server deployment.
 
@@ -34,13 +36,13 @@ In the previous figure, we see three ways to deploy Azure SQL Database:
 
 - A [Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) is a fully managed instance of the Microsoft SQL Server Database Engine and can contain a set of databases. This option provides near-100% compatibility with an on-premises SQL Server. This option supports larger databases, up to 35 TB and is placed in an [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) for better isolation.
 
-Azure SQL Database Server is a fully managed Platform as a Service (PaaS) Database Engine. The service manages tasks such as upgrades, patching, backups, and monitoring without user involvement. It runs the latest stable version of the SQL Server Database Engine and patched OS and guarantees 99.99% availability. 
+The Azure SQL Database Server engine is a fully managed Platform as a Service (PaaS). It manages tasks such as upgrades, patching, backups, and monitoring without user involvement. The service runs the latest stable version of the SQL Server Database Engine and patched OS and guarantees 99.99% availability. 
 
-The [active geo-replication](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication) feature lets you create readable secondary databases in the same or a different Azure data center. A failover to a secondary database can be started if a failure should take place. At that point, the other secondaries automatically link to the new primary. Up to four secondary replicas are supported in either the same or in different regions, and these secondaries can also be used for read-only access queries.
+The [active geo-replication](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication) feature lets you create readable secondary databases in the same or a different Azure data center. A failover to a secondary database can be started if a failure should take place. At that point, the other secondaries automatically link to the new primary. Up to four secondary replicas are supported in either the same or in different regions. These secondaries can be used for read-only access queries to distribute read operations for your services across multiple replicas.
 
 Azure SQL Database includes [built-in monitoring and intelligent tuning](https://docs.microsoft.com/azure/sql-database/sql-database-monitoring-tuning-index). These features can help you maximize performance and reduce operational costs. The [Automatic Tuning](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning) feature provides continuous performance adjustments based on AI and machine learning. The service learns from your running workloads and can apply tuning recommendations. The longer an Azure SQL Database runs with automatic tuning enabled, the better it performs.
 
-[Azure SQL Database serverless](https://docs.microsoft.com/azure/sql-database/sql-database-serverless) (available for preview at time of the writing of this book) is a compute tier for single databases that automatically scales based on workload demand and bills for the amount of compute used per second. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns. 
+[Azure SQL Database serverless](https://docs.microsoft.com/azure/sql-database/sql-database-serverless) (available for preview at time of the writing of this book) is a compute tier for single databases that automatically scales based on workload demand and bills for the amount of compute used per second. It's well suited for workloads with intermittent, unpredictable usage patterns, interspersed with periods of inactivity. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns. 
 
 Finally, there's the new [Azure SQL Database Hyperscale](https://azure.microsoft.com/services/sql-database/) pricing tier. It's powered by a highly scalable storage architecture and enables your database to grow as needed, eliminating the need to pre-provision storage resources. You can scale compute and storage resources independently, providing the flexibility to optimize performance for each workload. Azure SQL Database Hyperscale is optimized for [OLTP](https://en.wikipedia.org/wiki/Online_transaction_processing) processing and high throughput analytic workloads with storage up to 100 TB.  With read-intensive workloads, Hyperscale provides rapid scale-out by provisioning additional read replicas as needed for offloading read workloads. 
 
@@ -48,13 +50,11 @@ Beyond the traditional Microsoft SQL Server stack, Azure also features managed v
 
 ## Open-source databases in Azure
 
-Open-source relational databases have become a popular choice for cloud-native applications. Many enterprises favor them over commercial products, especially for cost savings. Many development teams favor them for their flexibility, community-backed development, and ecosystem of tools and extensions. Open-source databases can be deployed across multiple cloud providers, helping minimize "vendor lock-in."
+Open-source relational databases have become a popular choice for cloud-native applications. Many enterprises favor them over commercial products, especially for cost savings. Many development teams favor them for their flexibility, community-backed development, and ecosystem of tools and extensions. Open-source databases can be deployed across multiple cloud providers, helping minimize the concern of "vendor lock-in."
 
-Microsoft continues its commitment to keeping Azure an “open platform” by offering several popular open-source databases.
-  
 Developers can easily self-host any open-source database on an Azure VM. While providing full control, this approach puts you on the hook for the management, monitoring, and maintenance of the database and VM.
 
-Instead, Azure offers managed DBaaS services for several open-source relational databases. They're built upon the same proven fabric and infrastructure of Azure SQL Db and provide many key Platforms as a Service (PaaS) capabilities at no additional cost:
+Microsoft continues its commitment to keeping Azure an “open platform” by offering several popular open-source databases as fully managed DBaaS services. They're built upon the same proven fabric and infrastructure of Azure SQL Db and provide many key Platforms as a Service (PaaS) capabilities at no additional cost:
 
 - Built-in [high availability](https://docs.microsoft.com/azure/mysql/concepts-high-availability).
 
@@ -68,15 +68,17 @@ Instead, Azure offers managed DBaaS services for several open-source relational 
 
 - Enterprise-grade security to protect sensitive data at-rest and in-motion.
 
-These built-in features are especially important to organizations who have large numbers of databases and limited resources for administering them. 
+These built-in features are especially important to organizations who provision large numbers of databases, but have limited resources to administer them.
 
-You can provision an open-source database server in one of three different pricing tiers: Basic, General Purpose, and Memory Optimized. The tiers are differentiated by the amount of processing cores, memory, and underlying storage technology. All resources are provisioned at the database server level. A server can have one to many databases.
+You can create an open-source database server in one of three different pricing tiers: Basic, General Purpose, and Memory Optimized. The tiers are differentiated by the amount of processing cores, memory, and underlying storage technology. All resources are provisioned at the database server level. A server can have one to many databases.
 
 | Pricing tier | Target workloads  |
 | :-------- | :-------- |
 | Basic | Workloads that require light compute and I/O performance. Examples include servers used for development or testing or small-scale infrequently used applications. |
 | General Purpose | Most business workloads that require balanced compute and memory with scalable I/O throughput. Examples include servers for hosting web and mobile apps and other enterprise applications. |
 | Memory Optimized | High-performance database workloads that require in-memory performance for faster transaction processing and higher concurrency. Examples include servers for processing real-time data and high-performance transactional or analytical apps. |
+
+After you create your server, you can independently change the vCores, the hardware generation, the pricing tier (except to and from Basic), the amount of storage, and the backup retention period. While changing the number of vCores requires approximately a minute of interruption, scaling storage and changing the backup retention period are true online operations. There's no downtime, and your application isn't affected.
 
 ### Azure Database for MySQL
 
@@ -122,7 +124,9 @@ The service provides recommendations to guide you through the changes required t
 
 ## Cosmos DB
 
-Azure Cosmos DB is a fully managed, globally distributed NoSQL database service. It's designed to provide low latency, elastic scalability, managed data consistency, and high availability. If your application requires fast response time anywhere in the world, high availability, and elastic scalability for throughput and storage, Cosmos DB is a great choice. Figure 5-13 shows a high-level overview of Cosmos DB.
+In the prior section, we said that the impact of NoSQL data technologies for distributed cloud-native systems can't be overstated
+
+Cosmos DB is a fully managed, globally distributed NoSQL database service in the Azure cloud. It's designed to provide low latency, elastic scalability, managed data consistency, and high availability. If your application requires fast response time anywhere in the world, high availability, and elastic scalability for throughput and storage, Cosmos DB is a great choice. Figure 5-13 shows a high-level overview of Cosmos DB.
 
 ![Overview of Cosmos DB](./media/cosmos-db-overview.png)
 
@@ -131,6 +135,8 @@ Azure Cosmos DB is a fully managed, globally distributed NoSQL database service.
 Figure 5-13 highlights many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we’ll take a closer look at them.
 
 ### Global Support
+
+Cloud-native applications often have a global audience and require global scale.
 
 You can globally distribute Cosmos databases across regions around the world, placing data close to your users, improving response time, and reducing latency. You can add or remove a database from a region without pausing or redeploying your application. In the background, Cosmos DB transparently replicates the data to all of the configured regions.
 
@@ -150,7 +156,9 @@ With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-d
 
 ### Multi-Model Support
 
-Cosmos DB is a *multi-model data platform* that enables you to interact with data using different kinds of NoSQL models. These include documents, key-value pairs, wide-column, and graph representations. Internally, data is stored in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types, including strings, booleans, and numbers. For each request, the database engine translates data into the model representation you've selected. You can choose from a proprietary Cosmos DB SQL-based API or any of the [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB) shown in Figure 5-14.
+Development teams often *replatform* legacy applications that use a variety of open-source NoSQL data stores. These include documents, key-value pairs, wide-column, and graph representations.
+
+Cosmos DB is a *multi-model data platform* that enables you to interact with data using different kinds of NoSQL models, including dialects of many popular NoSQL databases. Internally, Cosmos stores data in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types, including strings, booleans, and numbers. For each request, the database engine translates data into the model representation you've selected. You can choose from a proprietary Cosmos DB SQL-based API or any of the [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB) shown in Figure 5-14.
 
 ![Cosmos DB providers](./media/cosmos-db-providers.png)
 
@@ -172,7 +180,7 @@ Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data
 
 Most distributed databases allow developers to choose between two consistency models: [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query will always return the most current data - even if the system must incur latency waiting for an update to replicate across all database copies. While a system configured for *eventual consistency* will return data immediately, even if that data isn't the most current copy. This option enables higher availability, greater scale, and increased performance.
 
-Azure Cosmos DB offers a spectrum of [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-16. These options enable you to make precise choices and granular tradeoffs with respect to availability and performance for your application. These models are well-defined, intuitive, and backed by the service level agreements (SLAs). 
+Azure Cosmos DB offers a spectrum of [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-16. These options enable you to make precise choices and granular tradeoffs with respect to availability and performance for your application. These models are well-defined, intuitive, and backed by the service level agreements (SLAs). In his article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Cloud Developer Evangelist Jeremy Likeness provides an excellent explanation of the five models.
 
 ![Cosmos DB consistency levels](./media/cosmos-db-consistency-levels.png)
 
@@ -224,6 +232,8 @@ In this module, we took a detailed look at data in cloud-native systems. We cont
 
 - [Compensating Transaction pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction)
 
->[!div class="step-by-step"]
+- [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/)
+
+tep-by-step"]
 >[Previous](data-patterns.md)
 >[Next](resiliency.md) <!-- Next Chapter -->

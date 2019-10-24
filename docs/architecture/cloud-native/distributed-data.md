@@ -26,7 +26,7 @@ For these reasons, cloud-native systems favor a distributed data architecture sh
 
 **Figure 5-2**. Distributed data storage across microservices
 
- Note in the figure above how each microservice owns and encapsulates its own data store. The service only exposes data to the outside world through its public API.
+Note in the figure above how each microservice owns and encapsulates its own data store. The service only exposes data to the outside world through its public API.
  
 This distributed data model also provides many benefits. It enables each microservice to develop independently without having to coordinate data schema changes with other microservices. Each microservice is free to implement the data store that best matches its needs for storage, read, and write patterns. These datastore types can include relational, document, key-value, and even graph-based data stores. At runtime, each microservice can scale its data store accordingly. Figure 5-3 presents the principle of polyglot persistence in a cloud-native system. 
 

@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "SendKeys.SendWait examples"
 ms.assetid: f1303184-fce4-44fb-88b4-aac5f42d5d77
 ---
-# How to: Start an Application and Send it Keystrokes (Visual Basic)
+# How to: start an application and send it keystrokes (Visual Basic)
 
 This example uses the `Shell` function to start the Notepad application and then prints a sentence by sending keystrokes using the `My.Computer.Keyboard.SendKeys` method.
 
@@ -16,9 +16,9 @@ This example uses the `Shell` function to start the Notepad application and then
 
 [!code-vb[VbVbalrMyComputer#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#25)]
 
-## Robust Programming
+## Robust programming
 
-A <xref:System.ArgumentException> exception is raised if an application with the requested process identifier cannot be found.  
+An <xref:System.ArgumentException> exception is raised if an application with the requested process identifier cannot be found.  
   
 ## .NET Framework Security
 

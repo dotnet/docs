@@ -191,4 +191,3 @@ to learn about more complex storage tasks and the Azure Cosmos DB Table API.
 - [Azure Storage Type Provider](https://fsprojects.github.io/AzureStorageTypeProvider/)
 - [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Configuring Connection Strings](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
-- [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/)

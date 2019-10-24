@@ -263,4 +263,4 @@ There are four major groups of configuration settings used in discovery. This to
 </system.ServiceModel>  
 ```  
   
- For more information about standard endpoints see [Standard Endpoints](../../../../docs/framework/wcf/feature-details/standard-endpoints.md)
+ For more information about standard endpoints see [Standard Endpoints](standard-endpoints.md).

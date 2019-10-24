@@ -13,10 +13,10 @@ One of the beautiful things about ASP.NET Web Forms is how it enables encapsulat
 
 Blazor also supports UI encapsulation through *components*. A component:
 
-* Is a self-contained chunk of UI.
-* Maintains its own state and rendering logic.
-* Can define UI event handlers, bind to input data, and manage its own lifecycle.
-* Is typically defined in a *.razor* file using Razor syntax.
+- Is a self-contained chunk of UI.
+- Maintains its own state and rendering logic.
+- Can define UI event handlers, bind to input data, and manage its own lifecycle.
+- Is typically defined in a *.razor* file using Razor syntax.
 
 ## An introduction to Razor
 
@@ -56,12 +56,12 @@ Or you can generate a list of items using a normal C# `foreach` loop like this:
 
 Razor directives, like directives in ASP.NET Web Forms, control many aspects of how a Razor component is compiled. Examples include the component's:
 
-* Namespace
-* Base class
-* Implemented interfaces
-* Generic parameters
-* Imported namespaces
-* Routes
+- Namespace
+- Base class
+- Implemented interfaces
+- Generic parameters
+- Imported namespaces
+- Routes
 
 Razor directives start with the `@` character and are typically used at the start of a new line at the start of the file. For example, the `@namespace` directive defines the component's namespace:
 
@@ -139,8 +139,8 @@ Aside from normal HTML, components can also use other components as part of thei
 
 Unlike ASP.NET Web Forms, components in Blazor:
 
-* Don't use an element prefix (for example, `asp:`).
-* Don't require registration on the page or in the *web.config*.
+- Don't use an element prefix (for example, `asp:`).
+- Don't require registration on the page or in the *web.config*.
 
 Think of Razor components like you would .NET types, because that's exactly what they are. If the assembly containing the component is referenced, then the component is available for use. To bring the component's namespace into scope, apply the `@using` directive:
 
@@ -560,7 +560,7 @@ A templated Blazor component can also define multiple component parameters of ty
 @Heading
 
 <ul>
-@foreach (var item in items)
+@foreach (var item in Items)
 {
     <li>@ItemTemplate(item)</li>
 }

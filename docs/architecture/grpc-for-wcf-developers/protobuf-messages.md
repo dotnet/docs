@@ -44,8 +44,8 @@ message Stock {
 
     int32 id = 1;
     string symbol = 2;
-    string displayName = 3;
-    int32 marketId = 4;
+    string display_name = 3;
+    int32 market_id = 4;
 
 }  
 ```
@@ -87,7 +87,7 @@ The actual code that is generated is far more complicated than this, because eac
 
 ### Property names
 
-Note that the Protobuf compiler applied `PascalCase` to the property names although they were `camelCase` in the `.proto` file. It's best to use `camelCase` in the message definition so that the code generation for other platforms produces the expected case for their conventions.
+Note that the Protobuf compiler applied `PascalCase` to the property names although they were `snake_case` in the `.proto` file. The [Protobuf style guide](https://developers.google.com/protocol-buffers/docs/style) recommends using `snake_case` in your message definitions so that the code generation for other platforms produces the expected case for their conventions.
 
 >[!div class="step-by-step"]
 >[Previous](protocol-buffers.md)

@@ -89,7 +89,7 @@ End Module
 ### Comments  
  This code produces the following output:  
   
-```  
+```console  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XText Remove  

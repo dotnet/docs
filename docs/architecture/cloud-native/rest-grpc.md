@@ -18,12 +18,12 @@ gRPC is an open-source communication that originates from Google. It's built upo
 gRPC is a modern RPC framework that is lightweight and highly performant. It uses HTTP/2 for its transport protocol. While compatible with HTTP 1.1, HTTP/2 features many advanced capabilities:
 
 - While HTTP 1.1 sends data as clear text, HTTP/2 is a binary protocol. It parses data faster using less memory, reduces network latency with the related improvements to speed, and manages network resources more efficiently.
-- While HTTP 1.1 is limited to processing one round-trip request/response at a time, HTTP /2 supports multiplexing, or multiple parallel requests over the same connection.
+- While HTTP 1.1 is limited to processing one round-trip request/response at a time, HTTP/2 supports multiplexing, or multiple parallel requests over the same connection.
 - HTTP/2 supports full-duplex, or bidirectional communication, where both client and server and can communicate at the same time. The client can be uploading request data at the same time the server is sending back response data.
 - Streaming is built into HTTP/2 meaning that both requests and responses can asynchronously stream large data sets.
 - Combining gRPC and HTTP/2, performance dramatically increases. In [Windows Communication Foundation (WCF)](https://docs.microsoft.com/dotnet/framework/wcf/whats-wcf) parlance, gPRC performance meets and exceeds the speed and efficiency of [NetTCP bindings](https://docs.microsoft.com/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). However, unlike NetTCP, gRPC isn't constrained to Microsoft languages such as C# or VB.NET.
 
-gRPC is supported across most popular platforms, including Java, C#, Golang and NodeJS. 
+gRPC is supported across most popular platforms, including Java, C#, Golang, and NodeJS. 
 
 ## Protocol Buffers
 
@@ -33,7 +33,7 @@ Many object serialization techniques reflect across the structure of data object
 
 ## gRPC support in .NET
 
-The Microsoft .NET Core framework 3.0 includes tooling and native support for gRPC. Figure 4-20 shows the Visual Studio 2019 template that scaffolds a gRPC skeleton project for a gRPC service. Note how .NET Core supports the Windows, Linux, macOS platforms.
+The Microsoft .NET Core framework 3.0 includes tooling and native support for gRPC. Figure 4-20 shows the Visual Studio 2019 template that scaffolds a gRPC skeleton project for a gRPC service. Note how .NET Core supports the Windows, Linux, and macOS platforms.
 
 ![gRPC Support in Visual Studio 2019](./media/visual-studio-2019-grpc-template.png)
 
@@ -56,7 +56,7 @@ gRPC is well suited for the following scenarios:
 - Polyglot environments – gRPC tooling supports most popular development languages, making it a good choice for multi-language environments.
 - Network constrained environments – gRPC messages are serialized with Protobuf, a lightweight message format. A gRPC message is always smaller than an equivalent JSON message.
 
-At of the writing of this book, most browsers have limited support for gRPC. gRPC heavily uses HTTP/2 features and no browser provides the level of control required over web requests to support a gRPC client. gRPC is typically used for internal microservice to microservice communication. Figure 4-22 shows a simple, but common usage pattern.
+At the time of writing of this book, most browsers have limited support for gRPC. gRPC heavily uses HTTP/2 features and no browser provides the level of control required over web requests to support a gRPC client. gRPC is typically used for internal microservice to microservice communication. Figure 4-22 shows a simple, but common usage pattern.
 
 ![gRPC Usage Patterns](./media/grpc-usage.png)
 

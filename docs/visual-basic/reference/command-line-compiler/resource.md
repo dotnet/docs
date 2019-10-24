@@ -15,9 +15,13 @@ Embeds a managed resource in an assembly.
   
 ## Syntax  
   
-```  
+```console  
 -resource:filename[,identifier[,public|private]]  
-' -or-  
+```
+
+or  
+
+```console
 -res:filename[,identifier[,public|private]]  
 ```  
   

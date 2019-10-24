@@ -1,6 +1,6 @@
 ---
 title: "IMetaDataTables::GetColumnInfo Method"
-ms.date: "03/30/2017"
+ms.date: "10/10/2019"
 api_name: 
   - "IMetaDataTables.GetColumnInfo"
 api_location: 
@@ -34,7 +34,9 @@ HRESULT GetColumnInfo (
 );  
 ```  
   
-## Parameters  
+## Parameters
+=======
+
  `ixTbl`  
  [in] The index of the desired table.  
   
@@ -52,7 +54,33 @@ HRESULT GetColumnInfo (
   
  `ppName`  
  [out] A pointer to a pointer to the column name.  
-  
+ 
+## Remarks
+
+The returned column type falls within a range of values:
+
+| pType                    | Description   | Helper function                   |
+|--------------------------|---------------|-----------------------------------|
+| `0`..`iRidMax`<br>(0..63)   | Rid           | **IsRidType**<br>**IsRidOrToken** |
+| `iCodedToken`..`iCodedTokenMax`<br>(64..95) | Coded token | **IsCodedTokenType** <br>**IsRidOrToken** |
+| `iSHORT` (96)            | Int16         | **IsFixedType**                   |
+| `iUSHORT` (97)           | UInt16        | **IsFixedType**                   |
+| `iLONG` (98)             | Int32         | **IsFixedType**                   |
+| `iULONG` (99)            | UInt32        | **IsFixedType**                   |
+| `iBYTE` (100)            | Byte          | **IsFixedType**                   |
+| `iSTRING` (101)          | String        | **IsHeapType**                    |
+| `iGUID` (102)            | Guid          | **IsHeapType**                    |
+| `iBLOB` (103)            | Blob          | **IsHeapType**                    |
+
+Values that are stored in the *heap* (that is, `IsHeapType == true`) can be read using:
+
+- `iSTRING`: **IMetadataTables.GetString**
+- `iGUID`: **IMetadataTables.GetGUID**
+- `iBLOB`: **IMetadataTables.GetBlob**
+
+> [!IMPORTANT]
+> To use the constants defined in the table above, include the directive `#define _DEFINE_META_DATA_META_CONSTANTS` provided by the *cor.h* header file.
+
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   

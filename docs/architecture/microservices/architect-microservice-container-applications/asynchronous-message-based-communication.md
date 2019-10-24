@@ -26,7 +26,7 @@ Single-receiver message-based communication is especially well suited for sendin
 
 Once you start sending message-based communication (either with commands or events), you should avoid mixing message-based communication with synchronous HTTP communication.
 
-![A single microservice receiving an asynchronous message](./media/image18.png)
+![A single microservice receiving an asynchronous message](./media/asynchronous-message-based-communication/single-receiver-message-based-communication.png)
 
 **Figure 4-18**. A single microservice receiving an asynchronous message
 
@@ -48,11 +48,11 @@ As noted earlier in the [Challenges and solutions for distributed data managemen
 
 An important point is that you might want to communicate to multiple microservices that are subscribed to the same event. To do so, you can use publish/subscribe messaging based on event-driven communication, as shown in Figure 4-19. This publish/subscribe mechanism isn't exclusive to the microservice architecture. It's similar to the way [Bounded Contexts](https://martinfowler.com/bliki/BoundedContext.html) in DDD should communicate, or to the way you propagate updates from the write database to the read database in the [Command and Query Responsibility Segregation (CQRS)](https://martinfowler.com/bliki/CQRS.html) architecture pattern. The goal is to have eventual consistency between multiple data sources across your distributed system.
 
-![In asynchronous event-driven communication one microservice publishes events to an event bus and many microservices can subscribe to it, to get notified and act on it.](./media/image19.png)
+![Diagram showing asynchronous event-driven communications.](./media/asynchronous-message-based-communication/asynchronous-event-driven-communication.png)
 
 **Figure 4-19**. Asynchronous event-driven message communication
 
-Your implementation will determine what protocol to use for event-driven, message-based communications. [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) can help achieve reliable queued communication.
+In asynchronous event-driven communication one microservice publishes events to an event bus and many microservices can subscribe to it, to get notified and act on it. Your implementation will determine what protocol to use for event-driven, message-based communications. [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) can help achieve reliable queued communication.
 
 When you use an event bus, you might want to use an abstraction level (like an event bus interface) based on a related implementation in classes with code using the API from a message broker like [RabbitMQ](https://www.rabbitmq.com/) or a service bus like [Azure Service Bus with Topics](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). Alternatively, you might want to use a higher-level service bus like NServiceBus, MassTransit, or Brighter to articulate your event bus and publish/subscribe system.
 
@@ -72,14 +72,14 @@ A challenge when implementing an event-driven architecture across multiple micro
 
 - Using full [Event Sourcing](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing) pattern.
 
-- Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
+- Using the [Outbox pattern](http://www.kamilgrzybek.com/design/the-outbox-pattern/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
 
 Additional topics to consider when using asynchronous communication are message idempotence and message deduplication. These topics are covered in the section [Implementing event-based communication between microservices (integration events)](../multi-container-microservice-net-applications/integration-event-based-microservice-communications.md) later in this guide.
 
 ## Additional resources
 
 - **Event Driven Messaging** \
-  <http://soapatterns.org/design_patterns/event_driven_messaging>
+  <https://soapatterns.org/design_patterns/event_driven_messaging>
 
 - **Publish/Subscribe Channel** \
   <https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html>

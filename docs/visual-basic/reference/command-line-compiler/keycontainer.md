@@ -12,7 +12,7 @@ Specifies a key container name for a key pair to give an assembly a strong name.
   
 ## Syntax  
   
-```  
+```console  
 -keycontainer:container  
 ```  
   
@@ -39,7 +39,7 @@ Specifies a key container name for a key pair to give an assembly a strong name.
 ## Example  
  The following code compiles source file `Input.vb` and specifies a key container.  
   
-```  
+```console  
 vbc -keycontainer:key1 input.vb  
 ```  
   

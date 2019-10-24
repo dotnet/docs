@@ -8,7 +8,7 @@ Specifies the sort order used on objects returned in a SELECT statement.
   
 ## Syntax  
   
-```  
+```sql  
 [ ORDER BY   
    {  
       order_by_expression [SKIP n] [LIMIT n]  
@@ -46,16 +46,18 @@ Specifies the sort order used on objects returned in a SELECT statement.
  Each expression in the ORDER BY clause must evaluate to some type that can be compared for ordered inequality (less than or greater than, and so on). These types are generally scalar primitives such as numbers, strings, and dates. RowTypes of comparable types are also order comparable.  
   
  If your code iterates over an ordered set, other than for a top-level projection, the output is not guaranteed to have its order preserved.  
-  
-```  
--- In the following sample, order is guaranteed to be preserved:  
+
+In the following sample, order is guaranteed to be preserved:
+
+```sql  
 SELECT C1.FirstName, C1.LastName  
         FROM AdventureWorks.Contact as C1  
         ORDER BY C1.LastName  
 ```  
-  
-```  
--- In the following query ordering of the nested query is ignored.  
+
+In the following query, ordering of the nested query is ignored:  
+
+```sql  
 SELECT C2.FirstName, C2.LastName  
     FROM (SELECT C1.FirstName, C1.LastName  
         FROM AdventureWorks.Contact as C1  
@@ -64,7 +66,7 @@ SELECT C2.FirstName, C2.LastName
   
  To have an ordered UNION, UNION ALL, EXCEPT, or INTERSECT operation, use the following pattern:  
   
-```  
+```sql  
 SELECT ...  
 FROM ( UNION/EXCEPT/INTERSECT operation )  
 ORDER BY ...  
@@ -93,16 +95,18 @@ ORDER BY ...
   
 ## Ordering Nested Queries  
  In the Entity Framework, a nested expression can be placed anywhere in the query; the order of a nested query is not preserved.  
-  
-```  
--- The following query will order the results by the last name.  
+
+The following query will order the results by the last name:  
+
+```sql  
 SELECT C1.FirstName, C1.LastName  
         FROM AdventureWorks.Contact as C1  
         ORDER BY C1.LastName  
 ```  
-  
-```  
--- In the following query, ordering of the nested query is ignored.  
+
+In the following query, ordering of the nested query is ignored:  
+
+```sql  
 SELECT C2.FirstName, C2.LastName  
     FROM (SELECT C1.FirstName, C1.LastName  
         FROM AdventureWorks.Contact as C1  
@@ -116,7 +120,7 @@ SELECT C2.FirstName, C2.LastName
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#ORDERBY](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#orderby)]  
+ [!code-sql[DP EntityServices Concepts#ORDERBY](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#orderby)]  
   
 ## See also
 

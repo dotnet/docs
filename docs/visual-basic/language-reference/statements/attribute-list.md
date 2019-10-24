@@ -11,7 +11,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
   
 ## Syntax  
   
-```  
+```vb  
 [ attributemodifier ] attributename [ ( attributearguments | attributeinitializer ) ]  
 ```  
   

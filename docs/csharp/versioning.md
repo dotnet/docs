@@ -108,5 +108,4 @@ Derived Method One: Derived Method One
 
 The `override` modifier is evaluated at compile time and the compiler will throw an error if it doesn't find a virtual member to override.
 
-Your knowledge of the discussed techniques as well as your understanding of what situations to use them will go a long way to boost the ease of transition between versions of a library.
- 
+Your knowledge of the discussed techniques and your understanding of the situations in which to use them, will go a long way towards easing the transition between versions of a library.

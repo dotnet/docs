@@ -13,7 +13,7 @@ Enables or disables compiler optimizations.
   
 ## Syntax  
   
-```  
+```console  
 -optimize[ + | - ]  
 ```  
   

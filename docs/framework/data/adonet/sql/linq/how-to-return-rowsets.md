@@ -14,7 +14,7 @@ This example returns a rowset from the database, and includes an input parameter
 ## Example  
  The following example represents a stored procedure that returns rows of customers and uses an input parameter to return only those rows that list "London" as the customer city. The example assumes an enumerable `CustomersByCityResult` class.  
   
-```  
+```sql  
 CREATE PROCEDURE [dbo].[Customers By City]  
     (@param1 NVARCHAR(20))  
 AS  

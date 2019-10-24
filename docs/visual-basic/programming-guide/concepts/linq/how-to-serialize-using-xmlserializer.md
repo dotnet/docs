@@ -65,7 +65,7 @@ End Class
   
  This example produces the following output:  
   
-```  
+```console  
 Testing for type: XElementNullContainer  
   Deserialized type: XElementNullContainer  
 Testing for type: System.Xml.Linq.XElement  

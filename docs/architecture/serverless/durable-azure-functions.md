@@ -90,9 +90,9 @@ public static bool CheckAndReserveInventory([ActivityTrigger] DurableActivityCon
 
 ## Recommended resources
 
-* [Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview)
-* [Bindings for Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings)
-* [Manage instances in Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-instance-management)
+- [Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-overview)
+- [Bindings for Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-bindings)
+- [Manage instances in Durable Functions](https://docs.microsoft.com/azure/azure-functions/durable-functions-instance-management)
 
 >[!div class="step-by-step"]
 >[Previous](event-grid.md)

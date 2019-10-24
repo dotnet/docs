@@ -32,7 +32,7 @@ Reallocates storage space for an array variable.
   
 ## Syntax  
   
-```  
+```vb  
 ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]  
 ```  
   

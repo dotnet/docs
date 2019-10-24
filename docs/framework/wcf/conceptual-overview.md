@@ -10,27 +10,27 @@ ms.assetid: 503fae4b-014c-44df-a9c7-c76ec4ed4229
 This topic summarizes information about the Windows Communication Foundation (WCF) messaging system and the classes that support its use.  
   
 ## In This Section  
- [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
+ [What Is Windows Communication Foundation](whats-wcf.md)  
  A brief overview of WCF.  
   
- [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)  
+ [Fundamental Windows Communication Foundation Concepts](fundamental-concepts.md)  
  An outline of the major concepts of the WCF programming model.  
   
- [Windows Communication Foundation Architecture](../../../docs/framework/wcf/architecture.md)  
+ [Windows Communication Foundation Architecture](architecture.md)  
  A graphical representation of the WCF architecture.  
   
 ## Reference  
  <xref:System.ServiceModel>  
   
 ## Related Sections  
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
+ [Basic WCF Programming](basic-wcf-programming.md)  
   
- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)  
+ [Guidelines and Best Practices](guidelines-and-best-practices.md)  
   
- [Windows Communication Foundation Samples](../../../docs/framework/wcf/samples/index.md)  
+ [Windows Communication Foundation Samples](./samples/index.md)  
   
- [Tools](../../../docs/framework/wcf/diagnostics/exceptions-reference/tools.md)  
+ [Tools](./diagnostics/exceptions-reference/tools.md)  
   
- [System Requirements](../../../docs/framework/wcf/wcf-system-requirements.md)  
+ [System Requirements](wcf-system-requirements.md)  
   
- [General Reference](../../../docs/framework/wcf/general-reference.md)
+ [General Reference](general-reference.md)

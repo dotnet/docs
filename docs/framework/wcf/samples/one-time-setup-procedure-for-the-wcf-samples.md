@@ -37,7 +37,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 6. Check for the following default directory: \<InstallDrive>:**\WF_WCF_Samples**. If the samples were previously installed, this is the default directory.
 
-7. If the samples are not installed, install them from the samples download location for [Visual C#](https://go.microsoft.com/fwlink/?LinkId=190939) or [Visual Basic](https://go.microsoft.com/fwlink/?LinkID=193373).
+7. If the samples are not installed, install them from the samples download location for [C#](https://go.microsoft.com/fwlink/?LinkId=190939).
 
 8. After installing the samples, go to : \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**
 

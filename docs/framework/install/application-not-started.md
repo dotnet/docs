@@ -31,7 +31,7 @@ To address this issue so that you can run your application, do the following:
 
 1. If your application runs successfully, select the **Finish** button. Otherwise, select the **Next** button.
 
-1. If you selected the **Next** button, the .NET Framework Repair Tool displays a a dialog box like the following. Select the **Finish** button to send diagnostic information to Microsoft.
+1. If you selected the **Next** button, the .NET Framework Repair Tool displays a dialog box like the following. Select the **Finish** button to send diagnostic information to Microsoft.
 
    ![Unable to resolve the problem](media/application-not-started/repair-tool-no-resolution.png)
 
@@ -47,7 +47,7 @@ To address this issue so that you can run your application, do the following:
    |Windows Vista SP2|[.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130)|
 
    > [!NOTE]
-   >  .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update.
+   > .NET Framework 4.8 is preinstalled on Windows 10 May 2019 Update.
 
 1. Attempt to launch the application.
 

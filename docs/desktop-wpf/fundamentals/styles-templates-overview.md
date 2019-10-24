@@ -15,7 +15,7 @@ Windows Presentation Foundation (WPF) styling and templating refer to a suite of
 
 Another feature of the WPF styling model is the separation of presentation and logic. Designers can work on the appearance of an application by using only XAML at the same time that developers work on the programming logic by using C# or Visual Basic.
 
-This overview focuses on the styling and templating aspects of the application and does not discuss any data binding concepts. For information about data binding, see [Data Binding Overview](../../framework/wpf/data/data-binding-overview.md).
+This overview focuses on the styling and templating aspects of the application and does not discuss any data binding concepts. For information about data binding, see [Data Binding Overview](../data/data-binding-overview.md).
 
 It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](xaml-resources-define.md).
 
@@ -51,9 +51,52 @@ For more information, see [Create a style for a control](styles-templates-create
 
 ## ControlTemplates
 
-In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> for the control. In many cases, this gives you enough flexibility so that you do not have to write your own custom controls.
+In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> and assigning it to a control. In many cases, templates give you enough flexibility so that you do not have to write your own custom controls.
 
-<!--For more information, see [Create a template for a control](styles-templates-create-apply-template.md).-->
+Each control has a default template assigned to the [Control.Template](xref:System.Windows.Controls.Control.Template) property. The template connects the visual presentation of the control with the control's capabilities. Because you define a template in XAML, you can change the control's appearance without writing any code. Each template is designed for a specific control, such as a <xref:System.Windows.Controls.Button>.
+
+Commonly you declare a template as a resource on the `Resources` section of a XAML file. As with all resources, scoping rules apply.
+
+Control templates are a lot more involved than a style. This is more involved because the control template rewrites the visual appearance of the entire control. A style simply applies property changes to the existing control. However, since the template of a control is applied by setting the [Control.Template](xref:System.Windows.Controls.Control.Template) property, you can use a style to define or set a template.
+
+Designers generally allow you to create a copy of an existing template and modify it. For example, in the Visual Studio WPF designer, select a `CheckBox` control, **right-click** > **Edit template** > **Create a copy...**. This command generates a *style that defines a template*.
+
+```xaml
+<Style x:Key="CheckBoxStyle1" TargetType="{x:Type CheckBox}">
+    <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual1}"/>
+    <Setter Property="Background" Value="{StaticResource OptionMark.Static.Background1}"/>
+    <Setter Property="BorderBrush" Value="{StaticResource OptionMark.Static.Border1}"/>
+    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="Template">
+        <Setter.Value>
+            <ControlTemplate TargetType="{x:Type CheckBox}">
+                <Grid x:Name="templateRoot" Background="Transparent" SnapsToDevicePixels="True">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border x:Name="checkBoxBorder" Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="1" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                        <Grid x:Name="markGrid">
+                            <Path x:Name="optionMark" Data="F1 M 9.97498,1.22334L 4.6983,9.09834L 4.52164,9.09834L 0,5.19331L 1.27664,3.52165L 4.255,6.08833L 8.33331,1.52588e-005L 9.97498,1.22334 Z " Fill="{StaticResource OptionMark.Static.Glyph1}" Margin="1" Opacity="0" Stretch="None"/>
+                            <Rectangle x:Name="indeterminateMark" Fill="{StaticResource OptionMark.Static.Glyph1}" Margin="2" Opacity="0"/>
+                        </Grid>
+                    </Border>
+                    <ContentPresenter x:Name="contentPresenter" Grid.Column="1" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                </Grid>
+                <ControlTemplate.Triggers>
+                    <Trigger Property="HasContent" Value="true">
+                        <Setter Property="FocusVisualStyle" Value="{StaticResource OptionMarkFocusVisual1}"/>
+                        <Setter Property="Padding" Value="4,-1,0,0"/>
+
+... content removed to save space ...
+```
+
+Editing a copy of a template is a great way to learn how templates work. Instead of creating a new blank template, it's easier to edit a copy and change a few aspects of the visual presentation.
+
+You may have noticed that the template resource defined above uses the [TemplateBinding Markup Extension](../../framework/wpf/advanced/templatebinding-markup-extension.md). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`.
+
+For more information, see [Create a template for a control](styles-templates-create-apply-template.md).
 
 ## DataTemplates
 

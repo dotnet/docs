@@ -1,5 +1,5 @@
 ---
-title: "How to: Start an Application and Send it Keystrokes - Visual Basic"
+title: "How to: start an Application and send it Keystrokes - Visual Basic"
 ms.date: 10/23/2019
 helpviewer_keywords: 
   - "keystrokes, sending"
@@ -10,7 +10,7 @@ ms.assetid: f1303184-fce4-44fb-88b4-aac5f42d5d77
 ---
 # How to: start an application and send it keystrokes (Visual Basic)
 
-This example uses the `Shell` function to start the Notepad application and then prints a sentence by sending keystrokes using the `My.Computer.Keyboard.SendKeys` method.
+This example uses the <xref:Microsoft.VisualBasic.Interaction.Shell%2A> method to start the Notepad application and then prints a sentence by sending keystrokes using the [My.Computer.Keyboard.SendKeys](xref:Microsoft.VisualBasic.Devices.Keyboard.SendKeys%2A) method.
 
 ## Example
 

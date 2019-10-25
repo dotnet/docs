@@ -14,7 +14,10 @@ This tutorial teaches you how to deploy your app to the cloud through Azure Data
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
->
+> Create an Azure Databricks workspace.
+> Publish your .NET for Apache Spark app.
+> Create a Spark job and Spark cluster.
+> Run your app on the Spark cluster.
 
 Before you start, do the following tasks:
 
@@ -70,7 +73,7 @@ You can use the **Databricks CLI** to connect to Azure Databricks clusters and u
    pip3 install databricks-cli
    ```
 
-3. Once you've installed the Databricks CLI, open a new command prompt and run the command `databricks`. If you receive a **'databricks' is not recognized** as an internal or external command error, make sure you opened a new command prompt.
+3. Once you've installed the Databricks CLI, open a new command prompt and run the command `databricks`. If you receive a **'databricks' is not recognized as an internal or external command error**, make sure you opened a new command prompt.
 
 ## Set up Azure Databricks
 
@@ -98,24 +101,24 @@ You should now be able to access any Azure Databricks clusters you create and up
 
 1. Microsoft.Spark.Worker helps Apache Spark execute your app, such as any user-defined functions (UDFs) you may have written. Download [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases/download/v0.6.0/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz).
 
-2. The install-worker.sh is a script that lets you copy .NET for Apache Spark dependent files into the nodes of your cluster. 
+2. The *install-worker.sh* is a script that lets you copy .NET for Apache Spark dependent files into the nodes of your cluster. 
 
-   Create a new file named **install-worker.sh** on your local computer, and paste the [install-worker.sh contents located on GitHub](https://raw.githubusercontent.com/dotnet/spark/master/deployment/install-worker.sh). 
+   Create a new file named **install-worker.sh** on your local computer, and paste the [install-worker.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/install-worker.sh) located on GitHub. 
 
-3. The db-init.sh is a script that installs dependencies onto your Databricks Spark cluster.
+3. The *db-init.sh* is a script that installs dependencies onto your Databricks Spark cluster.
 
-   Create a new file named **db-init.sh** on your local computer, and paste the [db-init.sh contents located on GitHub](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh). 
+   Create a new file named **db-init.sh** on your local computer, and paste the [db-init.sh contents](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) located on GitHub. 
    
-   In the file you just created, set the DOTNET_SPARK_RELEASE variable to `https://github.com/dotnet/spark/releases/download/v0.6.0/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz`. Leave the rest of the db-init.sh file as-is.
+   In the file you just created, set the `DOTNET_SPARK_RELEASE` variable to `https://github.com/dotnet/spark/releases/download/v0.6.0/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz`. Leave the rest of the *db-init.sh* file as-is.
 
 > [!Note]
-> If you are using Windows, verify that the line-endings in your **install-worker.sh** and **db-init.sh** scripts are Unix-style (LF). You can change line endings through text editors like Notepad++ and Atom.
+> If you are using Windows, verify that the line-endings in your *install-worker.sh* and *db-init.sh* scripts are Unix-style (LF). You can change line endings through text editors like Notepad++ and Atom.
 
 ## Publish your app
 
 Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get Started in 10-Minutes](https://dotnet.microsoft.com/learn/data/spark-tutorial/intro) tutorial to ensure your Spark cluster has access to all the files it needs to run your app. 
 
-1. Run the following commands to publish the *mySparkApp*.
+1. Run the following commands to publish the *mySparkApp*:
 
    **On Windows:**
 
@@ -128,7 +131,7 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
 
    ```bash
    cd mySparkApp
-   foo@bar:~/path/to/app$ dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
+   dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
    ```
 
 2. Do the following tasks to zip your published app files so that you can easily upload them to your Databricks Spark cluster.
@@ -140,14 +143,14 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
    **On Linux, run the following command:**
 
    ```bash
-   foo@bar:~/
+   zip -r publish.zip .
    ```
 
 ## Upload files
 
 In this section, you upload several files to DBFS so that your cluster has everything it needs to run your app in the cloud. Each time you upload a file to the DBFS, make sure you are in the directory where that file is located on your computer.
 
-1. Run the following commands to upload the **db-init.sh**, **install-worker.sh**, and **Microsoft.Spark.Worker** to DBFS:
+1. Run the following commands to upload the *db-init.sh*, *install-worker.sh*, and *Microsoft.Spark.Worker* to DBFS:
 
    ```console
    databricks fs cp db-init.sh dbfs:/spark-dotnet/db-init.sh
@@ -155,7 +158,7 @@ In this section, you upload several files to DBFS so that your cluster has every
    databricks fs cp Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz dbfs:/spark-dotnet/   Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz
    ```
 
-2. Run the following commands to upload the remaining files your cluster will need to run your app: the zipped publish folder, **input.txt**, and **microsoft-spark-2.4.x-0.3.0.jar**. 
+2. Run the following commands to upload the remaining files your cluster will need to run your app: the zipped publish folder, *input.txt*, and *microsoft-spark-2.4.x-0.3.0.jar*. 
 
    ```console
    cd mySparkApp 

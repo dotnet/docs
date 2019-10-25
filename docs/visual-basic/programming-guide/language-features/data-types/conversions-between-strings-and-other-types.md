@@ -22,7 +22,7 @@ You can convert a numeric, `Boolean`, or date/time value to a `String`. You can 
   
  Note that the concatenation (`&`) operator can convert a number to a string implicitly, as the following example shows.  
   
-```  
+```vb  
 ' The following statement converts count to a String value.  
 Str = "The total count is " & count  
 ```  

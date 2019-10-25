@@ -13,14 +13,14 @@ Windows Communication Foundation (WCF) is a communication infrastructure that is
 
 WCF is installed by default on [!INCLUDE[wv](../../../includes/wv-md.md)].
 
-WCF can also be installed on [!INCLUDE[wxpsp2](../../../includes/wxpsp2-md.md)], [!INCLUDE[ws2003r2](../../../includes/ws2003r2-md.md)], or [!INCLUDE[ws2003sp1](../../../includes/ws2003sp1-md.md)].
+WCF can also be installed on [!INCLUDE[wxpsp2](../../../includes/wxpsp2-md.md)], Windows Server 2003 R2, or [!INCLUDE[ws2003sp1](../../../includes/ws2003sp1-md.md)].
 
 > [!NOTE]
-> The Message Queuing (MSMQ) functionality of WCF is supported only on [!INCLUDE[wv](../../../includes/wv-md.md)], [!INCLUDE[ws2003r2](../../../includes/ws2003r2-md.md)], [!INCLUDE[ws2003sp1](../../../includes/ws2003sp1-md.md)], and [!INCLUDE[wxppro](../../../includes/wxppro-md.md)].
+> The Message Queuing (MSMQ) functionality of WCF is supported only on [!INCLUDE[wv](../../../includes/wv-md.md)], Windows Server 2003 R2, [!INCLUDE[ws2003sp1](../../../includes/ws2003sp1-md.md)], and Windows XP Professional.
 
 ## See also
 
-- [Conceptual Overview](../../../docs/framework/wcf/conceptual-overview.md)
-- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)
-- [WCF Feature Details](../../../docs/framework/wcf/feature-details/index.md)
-- [Guidelines and Best Practices](../../../docs/framework/wcf/guidelines-and-best-practices.md)
+- [Conceptual Overview](conceptual-overview.md)
+- [Basic WCF Programming](basic-wcf-programming.md)
+- [WCF Feature Details](./feature-details/index.md)
+- [Guidelines and Best Practices](guidelines-and-best-practices.md)

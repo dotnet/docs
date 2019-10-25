@@ -11,8 +11,8 @@ ms.date: 09/11/2019
 
 Blazor apps can be hosted in IIS just like ASP.NET Web Forms apps. Blazor apps can also be hosted in one of the following ways:
 
-* Client-side in the browser on WebAssembly.
-* Server-side in an ASP.NET Core app. 
+- Client-side in the browser on WebAssembly.
+- Server-side in an ASP.NET Core app. 
 
 ## Blazor WebAssembly apps
 
@@ -44,32 +44,32 @@ As described in the [Blazor hosting model docs](https://docs.microsoft.com/aspne
 
 The Blazor WebAssembly hosting model has the following benefits:
 
-* There's no .NET server-side dependency. The app is fully functioning after downloaded to the client.
-* Client resources and capabilities are fully leveraged.
-* Work is offloaded from the server to the client.
-* An ASP.NET Core web server isn't required to host the app. Serverless deployment scenarios are possible (for example, serving the app from a CDN).
+- There's no .NET server-side dependency. The app is fully functioning after downloaded to the client.
+- Client resources and capabilities are fully leveraged.
+- Work is offloaded from the server to the client.
+- An ASP.NET Core web server isn't required to host the app. Serverless deployment scenarios are possible (for example, serving the app from a CDN).
 
 The downsides of the Blazor WebAssembly hosting model are:
 
-* Browser capabilities restrict the app.
-* Capable client hardware and software (for example, WebAssembly support) is required.
-* Download size is larger, and apps take longer to load.
-* .NET runtime and tooling support is less mature. For example, there are limitations in [.NET Standard](../../standard/net-standard.md) support and debugging.
+- Browser capabilities restrict the app.
+- Capable client hardware and software (for example, WebAssembly support) is required.
+- Download size is larger, and apps take longer to load.
+- .NET runtime and tooling support is less mature. For example, there are limitations in [.NET Standard](../../standard/net-standard.md) support and debugging.
 
 Conversely, the Blazor Server hosting model offers the following benefits:
 
-* Download size is much smaller than a client-side app, and the app loads much faster.
-* The app takes full advantage of server capabilities, including use of any .NET Core-compatible APIs.
-* .NET Core on the server is used to run the app, so existing .NET tooling, such as debugging, works as expected.
-* Thin clients are supported. For example, server-side apps work with browsers that don't support WebAssembly and on resource-constrained devices.
-* The app's .NET/C# code base, including the app's component code, isn't served to clients.
+- Download size is much smaller than a client-side app, and the app loads much faster.
+- The app takes full advantage of server capabilities, including use of any .NET Core-compatible APIs.
+- .NET Core on the server is used to run the app, so existing .NET tooling, such as debugging, works as expected.
+- Thin clients are supported. For example, server-side apps work with browsers that don't support WebAssembly and on resource-constrained devices.
+- The app's .NET/C# code base, including the app's component code, isn't served to clients.
 
 The downsides to the Blazor Server hosting model are:
 
-* Higher UI latency. Every user interaction involves a network hop.
-* There's no offline support. If the client connection fails, the app stops working.
-* Scalability is challenging for apps with many users. The server must manage multiple client connections and handle client state.
-* An ASP.NET Core server is required to serve the app. Serverless deployment scenarios aren't possible. For example, you can't serve the app from a CDN.
+- Higher UI latency. Every user interaction involves a network hop.
+- There's no offline support. If the client connection fails, the app stops working.
+- Scalability is challenging for apps with many users. The server must manage multiple client connections and handle client state.
+- An ASP.NET Core server is required to serve the app. Serverless deployment scenarios aren't possible. For example, you can't serve the app from a CDN.
 
 The preceding list of trade-offs may be intimidating, but your hosting model can be changed later. Regardless of the Blazor hosting model selected, the component model is *the same*. In principle, the same components can be used with either hosting model. Your app code doesn't change; however, it's a good practice to introduce abstractions so that your components stay hosting model-agnostic. The abstractions allow your app to more easily adopt a different hosting model.
 
@@ -77,8 +77,8 @@ The preceding list of trade-offs may be intimidating, but your hosting model can
 
 ASP.NET Web Forms apps are typically hosted on IIS on a Windows Server machine or cluster. Blazor apps can also:
 
-* Be hosted on IIS, either as static files or as an ASP.NET Core app.
-* Leverage ASP.NET Core's flexibility to be hosted on various platforms and server infrastructures. For example, you can host a Blazor App using [Nginx](/aspnet/core/host-and-deploy/linux-nginx) or [Apache](/aspnet/core/host-and-deploy/linux-apache) on Linux. For more information about how to publish and deploy Blazor apps, see the Blazor [Hosting and deployment](/aspnet/core/host-and-deploy/blazor/) documentation.
+- Be hosted on IIS, either as static files or as an ASP.NET Core app.
+- Leverage ASP.NET Core's flexibility to be hosted on various platforms and server infrastructures. For example, you can host a Blazor App using [Nginx](/aspnet/core/host-and-deploy/linux-nginx) or [Apache](/aspnet/core/host-and-deploy/linux-apache) on Linux. For more information about how to publish and deploy Blazor apps, see the Blazor [Hosting and deployment](/aspnet/core/host-and-deploy/blazor/) documentation.
 
 In the next section, we'll look at how the projects for Blazor WebAssembly and Blazor Server apps are set up.
 

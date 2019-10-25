@@ -16,7 +16,7 @@ Specifies one or more range variables and a collection to query.
   
 ## Syntax  
   
-```  
+```vb  
 From element [ As type ] In collection [ _ ]  
   [, element2 [ As type2 ] In collection2 [, ... ] ]  
 ```  

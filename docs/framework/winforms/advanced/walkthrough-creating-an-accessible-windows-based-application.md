@@ -40,7 +40,7 @@ The emphasis of this walkthrough is not the code for a retail order system, but 
 
 #### To begin making the application
 
-- Create a new Windows Application in Visual Basic or Visual C#. Name the project **PizzaOrder**. (For details see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).)
+- Create a new Windows Application in Visual Basic or Visual C#. Name the project **PizzaOrder**. For details, see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).
 
 ## Adding the Controls to the Form
 

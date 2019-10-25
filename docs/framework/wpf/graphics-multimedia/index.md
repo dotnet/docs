@@ -151,7 +151,7 @@ A core feature of the graphics capabilities of [!INCLUDE[TLA2#tla_wpf](../../../
 <MediaElement Source="media\numbers.wmv" Width="450" Height="250" />
 ```
 
-<xref:System.Windows.Controls.MediaElement> is capable of playing both video and audio, and is extensible enough to allow the easy creation of custom [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)].
+<xref:System.Windows.Controls.MediaElement> is capable of playing both video and audio, and is extensible enough to allow the easy creation of custom UIs.
 
 For more information, see the [Multimedia Overview](multimedia-overview.md).
 

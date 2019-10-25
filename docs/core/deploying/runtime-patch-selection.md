@@ -22,8 +22,8 @@ ms.custom: seodec18
 
 Running `restore` as part of the `publish` operation may be undesirable for your scenario. To avoid `restore` during `publish` while creating self-contained applications, do the following:
 
-* Set the `RuntimeIdentifiers` property to a semicolon-separated list of all the [RIDs](../rid-catalog.md) to be published.
-* Set the `TargetLatestRuntimePatch` property to `true`.
+- Set the `RuntimeIdentifiers` property to a semicolon-separated list of all the [RIDs](../rid-catalog.md) to be published.
+- Set the `TargetLatestRuntimePatch` property to `true`.
 
 ## No-restore argument with dotnet publish options
 

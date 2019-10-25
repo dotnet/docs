@@ -66,7 +66,7 @@ Follow this recommendation whenever your design intent is to create an immutable
 
 ## Declare readonly members when a struct can't be immutable
 
-When a struct type is mutable, you should declare members that don't cause mutation to be `readonly`. For example, the following is a mutable variation of the 3D point structure:
+In C# 8.0 and later, when a struct type is mutable, you should declare members that don't cause mutation to be `readonly`. For example, the following is a mutable variation of the 3D point structure:
 
 ```csharp
 public struct Point3D

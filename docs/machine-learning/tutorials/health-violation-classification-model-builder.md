@@ -160,7 +160,7 @@ If you need to reference the generated projects at a later time inside of anothe
 
 Congratulations! You've now successfully built a machine learning model to categorize the risk of health violations using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.
 
-## Additional Resources
+## Additional resources
 
 To learn more about topics mentioned in this tutorial, visit the following resources:
 

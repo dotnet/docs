@@ -16,7 +16,7 @@ This article focuses on techniques for efficient resource management. One advant
 This article focuses on the following resource management techniques:
 
 - Declare a [`readonly struct`](language-reference/keywords/readonly.md#readonly-struct-example) to express that a type is **immutable** and enables the compiler to save copies when using [`in`](language-reference/keywords/in-parameter-modifier.md) parameters.
-- If a type cannot be immutable, declare `struct` members `readonly` to indicate that the member does not modify state.
+- If a type can't be immutable, declare `struct` members `readonly` to indicate that the member doesn't modify state.
 - Use a [`ref readonly`](language-reference/keywords/ref.md#reference-return-values) return when the return value is a `struct` larger than <xref:System.IntPtr.Size?displayProperty=nameWithType> and the storage lifetime is greater than the method returning the value.
 - When the size of a `readonly struct` is bigger than <xref:System.IntPtr.Size?displayProperty=nameWithType>, you should pass it as an `in` parameter for performance reasons.
 - Never pass a `struct` as an `in` parameter unless it's declared with the `readonly` modifier or the method calls only `readonly` members of the struct. Violating this guidance may negatively affect performance and could lead to an obscure behavior.
@@ -107,7 +107,7 @@ public struct Point3D
 
 The preceding sample shows many of the locations where you can apply the `readonly` modifier: methods, properties, and property accessors. If you use auto-implemented properties, the compiler adds the `readonly` modifier to the `get` accessor for read-write properties. The compiler adds the `readonly` modifier to the auto-implemented property declarations for properties with only a `get` accessor.
 
-Adding the `readonly` modifier to members that do not mutate state provides two related benefits. First, the compiler enforces your intent. That member cannot mutate the struct's state, nor can it access a member that is not also marked `readonly`. Second, the compiler will not create defensive copies of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
+Adding the `readonly` modifier to members that don't mutate state provides two related benefits. First, the compiler enforces your intent. That member can't mutate the struct's state, nor can it access a member that isn't also marked `readonly`. Second, the compiler won't create defensive copies of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
 
 ## Use `ref readonly return` statements for large structures when possible
 
@@ -270,7 +270,7 @@ The techniques described above explain how to avoid copies by returning referenc
 
 The `Point3D` structure is *not* a readonly struct. There are six different property access calls in the body of this method. On first examination, you may have thought these accesses were safe. After all, a `get` accessor shouldn't modify the state of the object. But there's no language rule that enforces that. It's only a common convention. Any type could implement a `get` accessor that modified the internal state. Without some language guarantee, the compiler must create a temporary copy of the argument before calling any member. The temporary storage is created on the stack, the values of the argument are copied to the temporary storage, and the value is copied to the stack for each member access as the `this` argument. In many situations, these copies harm performance enough that pass-by-value is faster than pass-by-readonly-reference when the argument type isn't a `readonly struct`.
 
-Instead, if the distance calculation uses the immutable struct, `ReadonlyPoint3D`, temporary objects are not needed:
+Instead, if the distance calculation uses the immutable struct, `ReadonlyPoint3D`, temporary objects aren't needed:
 
 [!code-csharp[readonlyInArgument](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ReadOnlyInArgument "Specifying a readonly in argument")]
 
@@ -279,7 +279,7 @@ The compiler generates more efficient code when you call members of a
 is always an `in` parameter passed by reference to the member method. This optimization
 saves copying when you use a `readonly struct` as an `in` argument.
 
-You should not pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type is not declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
+You shouldn't pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type isn't declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
 
 You can see an example program that demonstrates the performance differences using [Benchmark.net](https://www.nuget.org/packages/BenchmarkDotNet/) in our [samples repository](https://github.com/dotnet/samples/tree/master/csharp/safe-efficient-code/benchmark) on GitHub. It compares passing a mutable struct by value and by reference with passing an immutable struct by value and by reference. The use of the immutable struct and pass by reference is fastest.
 

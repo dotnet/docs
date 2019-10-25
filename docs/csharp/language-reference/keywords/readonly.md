@@ -148,7 +148,7 @@ The type returned doesn't need to be a `readonly struct`. Any type that can be r
 You can also see the language specification proposals:
 
 - [readonly ref and readonly struct](~/_csharplang/proposals/csharp-7.2/readonly-ref.md)
-- [readonly struct members](~/csharplang/proposals/csharp-8.0/readonly-instance-members.md)
+- [readonly struct members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
 
 ## See also
 

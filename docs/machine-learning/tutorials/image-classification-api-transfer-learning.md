@@ -133,26 +133,26 @@ In this tutorial, only bridge deck images are used.
 
         [!code-csharp [ModelInputClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L142-L151)]
 
-    `ModelInput` contains the following properties:
+        `ModelInput` contains the following properties:
 
-    - `ImagePath` is the fully qualified path where the image is stored. 
-    - `Label` is the category the image belongs to. This is the value to predict.
-    - `Image` is the `byte[]` representation of the image. The model expects image data to be of this type for training.
-    - `LabelAsKey` is the numerical representation of the `Label`. 
+        - `ImagePath` is the fully qualified path where the image is stored. 
+        - `Label` is the category the image belongs to. This is the value to predict.
+        - `Image` is the `byte[]` representation of the image. The model expects image data to be of this type for training.
+        - `LabelAsKey` is the numerical representation of the `Label`. 
 
-    Only `Image` and `LabelAsKey` are used to train the model and make predictions. The `ImagePath` and `Label` properties are kept for convenience to access the original image file name and category.
+        Only `Image` and `LabelAsKey` are used to train the model and make predictions. The `ImagePath` and `Label` properties are kept for convenience to access the original image file name and category.
 
     1. Then, below the `ModelInput` class, define the schema of your output data in a new class called `ModelOutput`. 
 
         [!code-csharp [ModelOutputClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L153-L160)]
 
-    `ModelOutput` contains the following properties:
+        `ModelOutput` contains the following properties:
 
-    - `ImagePath` is the fully qualified path where the image is stored.
-    - `Label` is the original category the image belongs to. This is the value to predict. 
-    - `PredictedLabel` is the value predicted by the model.
+        - `ImagePath` is the fully qualified path where the image is stored.
+        - `Label` is the original category the image belongs to. This is the value to predict. 
+        - `PredictedLabel` is the value predicted by the model.
 
-    Similar to `ModelInput`, only the `PredictedLabel` is required to make predictions since it contains the prediction made by the model. The `ImagePath` and `Label` properties are retained for convenience to access the original image file name and category.
+        Similar to `ModelInput`, only the `PredictedLabel` is required to make predictions since it contains the prediction made by the model. The `ImagePath` and `Label` properties are retained for convenience to access the original image file name and category.
 
 ### Define paths and initialize variables
 

@@ -33,7 +33,7 @@ As shown in the following example, the <xref:System.Windows.Controls.ToolTip> th
 
 [!code-xaml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]
 
-For the complete example, see [Bind Validation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Data%20Binding/BindValidation).
+For the complete example, see [Bind Validation sample](https://github.com/Microsoft/WPF-Samples/tree/master/Data%20Binding/BindValidation).
   
 Note that if you do not provide a custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> the default error template appears to provide visual feedback to the user when there is a validation error. See "Data Validation" in [Data Binding Overview](data-binding-overview.md) for more information. Also, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a built-in validation rule that catches exceptions that are thrown during the update of the binding source property. For more information, see <xref:System.Windows.Controls.ExceptionValidationRule>.
 

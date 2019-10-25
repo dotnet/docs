@@ -9,7 +9,7 @@ When hosting a Windows Communication Foundation (WCF) service in Internet Inform
 ## Using System.Web.Routing Integration  
  To use the <xref:System.Web.Routing> integration feature, you use the <xref:System.ServiceModel.Activation.ServiceRoute> class to create one or more routes and add them to the <xref:System.Web.Routing.RouteTable> in a Global.asax file. These routes specify the relative URIs that the service responds to. The following example shows how to do this.  
   
-```javascript  
+```aspx-csharp  
 <%@ Application Language="C#" %>  
 <%@ Import Namespace="System.Web.Routing" %>  
 <%@ Import Namespace="System.ServiceModel.Activation" %>  

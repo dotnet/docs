@@ -277,7 +277,7 @@ Below the `Main` method, create a new utility method called `OutputPrediction` t
 1. Add a new method called `ClassifySingleImage` below the `Main` method to make and output a single image prediction.
 
     ```csharp
-    public static void ClassifyImages(MLContext mlContext, IDataView data, ITransformer trainedModel)
+    public static void ClassifySingleImage(MLContext mlContext, IDataView data, ITransformer trainedModel)
     {
 
     }

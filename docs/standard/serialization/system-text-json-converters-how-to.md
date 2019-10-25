@@ -285,7 +285,7 @@ The JSON to deserialize contains a Boolean value for the `Rain` property:
 
 Without the custom converter, deserialization puts a `JsonElement` in the `Rain` property. With the custom converter the `Rain` property gets a Boolean value.
 
-The preceding converter sample is from [CustomConverterTests.Object.cs](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/CustomConverterTests.Object.cs) in the `System.Text.Json.Serialization` source code for unit tests. The same file has other examples of custom converters that handle deserialization to Object properties.
+The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` has more examples of custom converters that handle deserialization to Object properties.
 
 ### Support Dictionary with non-string key
 
@@ -382,7 +382,7 @@ The JSON looks like the following example:
 }
 ```
 
-The preceding converter sample is from [CustomConverterTests.DictionaryInt32StringConverter.cs](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/CustomConverterTests.DictionaryInt32StringConverter.cs) in the `System.Text.Json.Serialization` source code for unit tests. The same [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) has more examples of custom converters that handle non-string-key dictionaries.
+The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` has more examples of custom converters that handle non-string-key dictionaries.
 
 ### Support polymorphic deserialization
 
@@ -549,11 +549,9 @@ With the converter, you can deserialize JSON that contains Customer and Employee
 ]
 ```
 
-The preceding converter sample is from [CustomConverterTests.Polymorphic.cs](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/CustomConverterTests.Polymorphic.cs) in the `System.Text.Json.Serialization` source code for unit tests.
-
 ## Other custom converter samples
 
-The `System.Text.Json.Serialization` [source code for unit tests](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) includes other custom converter samples, such as:
+The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 
 * `Int32` converter that converts null to 0 on deserialize
 * `Int32` converter that allows both string and number values on deserialize

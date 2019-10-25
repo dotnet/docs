@@ -201,7 +201,7 @@ Your app runs on Azure Databricks through a job that runs **spark-submit**, whic
 
 1. Navigate to your job and select **Run Now** to run your job on your newly configured Spark cluster.
 
-2. It takes a few minutes for the job's cluster to create. Once it is created, your job will be submitted and you can view the output.
+2. It takes a few minutes for the job's cluster to create. Once it is created, your job will be submitted, and you can view the output.
 
 3. Select **Clusters** from the left menu, and then the name and run of your job. 
 

@@ -371,10 +371,6 @@ Upon inspection of the *7001-220.jpg* image, you can see that it in fact is not 
 
 Congratulations! You've now successfully built a deep learning model for classifying images.
 
-## Next steps
-
-In this tutorial, you learned how to build a custom deep learning model using transfer learning, a pretrained image classification TensorFlow model and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
-
 ### Improve the model
 
 If you're not satisfied with the results of your model, you can try to improve its performance by trying some of the following approaches:
@@ -388,3 +384,10 @@ If you're not satisfied with the results of your model, you can try to improve i
 ### Additional Resources
 
 - [Deep Learning vs Machine Learning](/azure/machine-learning/service/concept-deep-learning-vs-machine-learning).
+
+## Next steps
+
+In this tutorial, you learned how to build a custom deep learning model using transfer learning, a pretrained image classification TensorFlow model and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
+
+> [!div class="nextstepaction"]
+> [Object Detection](object-detection-onnx.md)

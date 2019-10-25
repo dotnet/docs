@@ -1,6 +1,9 @@
 ---
 title: "How to: Implement Binding Validation"
 ms.date: 03/30/2017
+dev_langs:
+ - CSharp
+ - VB
 helpviewer_keywords: 
   - "validation of binding [WPF]"
   - "data binding [WPF], validation of binding"
@@ -15,7 +18,7 @@ This example shows how to use an <xref:System.Windows.Controls.Validation.ErrorT
 
  [!code-xaml[BindValidation#2](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#2)]
 
- The following example shows the implementation of `AgeRangeRule`, which inherits from <xref:System.Windows.Controls.ValidationRule> and overrides the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method. The Int32.Parse() method is called on the value to make sure that it does not contain any invalid characters. The <xref:System.Windows.Controls.ValidationRule.Validate%2A> method returns a <xref:System.Windows.Controls.ValidationResult> that indicates if the value is valid based on whether an exception is caught during the parsing and whether the age value is outside of the lower and upper bounds.
+ The following example shows the implementation of `AgeRangeRule`, which inherits from <xref:System.Windows.Controls.ValidationRule> and overrides the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method. The `Int32.Parse` method is called on the value to make sure that it does not contain any invalid characters. The <xref:System.Windows.Controls.ValidationRule.Validate%2A> method returns a <xref:System.Windows.Controls.ValidationResult> that indicates if the value is valid based on whether an exception is caught during the parsing and whether the age value is outside of the lower and upper bounds.
 
  [!code-csharp[BindValidation#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/AgeRangeRule.cs#3)]
  [!code-vb[BindValidation#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BindValidation/VisualBasic/AgeRangeRule.vb#3)]

@@ -91,7 +91,7 @@ Now that you have the Databricks CLI installed, you need to set up authenticatio
 
    ![User settings in Azure Databricks workspace](./media/databricks-deployment/databricks-user-settings.png)
 
-5. On the User Settings page, you are able to generate a new token. Copy the generated token and paste it back into your command prompt.
+5. On the User Settings page, you can generate a new token. Copy the generated token and paste it back into your command prompt.
 
    ![Generate new access token in Azure Databricks workspace](./media/databricks-deployment/generate-token.png)
 

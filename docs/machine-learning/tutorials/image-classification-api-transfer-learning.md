@@ -27,7 +27,7 @@ In this tutorial, you learn how to:
 
 ## Image classification transfer learning sample overview
 
-This sample is a .NET Core console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary) on GitHub.
+This sample is a C# .NET Core console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary) on GitHub.
 
 ## Understand the problem
 
@@ -75,7 +75,7 @@ The pretrained model used in this tutorial is the 101-layer variant of the Resid
 
 Now that you have a general understanding of transfer learning and the Image Classification API, it's time to build the application.
 
-1. Create a **.NET Core Console Application** called "DeepLearning_ImageClassification_Binary".
+1. Create a **C# .NET Core Console Application** called "DeepLearning_ImageClassification_Binary".
 1. Install the **Microsoft.ML 1.4.0-preview2** NuGet Package:
     1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source.

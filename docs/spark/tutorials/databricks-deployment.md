@@ -7,7 +7,7 @@ ms.custom: mvc
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to Databricks.
 ---
 
-# Deploy a .NET for Apache Spark application to Databricks
+# Tutorial: Deploy a .NET for Apache Spark application to Databricks
 
 This tutorial teaches you how to deploy your app to the cloud through Azure Databricks, an Apache Spark-based analytics platform with one-click setup, streamlined workflows, and interactive workspace that enables collaboration.
 
@@ -18,6 +18,8 @@ In this tutorial, you learn how to:
 > Publish your .NET for Apache Spark app.
 > Create a Spark job and Spark cluster.
 > Run your app on the Spark cluster.
+
+## Prerequisites
 
 Before you start, do the following tasks:
 

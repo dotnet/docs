@@ -91,7 +91,7 @@ Adding a field not marked `readonly` generates compiler error `CS8340`: "Instanc
 
 ## Readonly member examples
 
-Other times, you may create a struct that supports mutation. In those cases, several of the instance members likely won't modify the internal state of the struct. You can declare those instance members with the `readonly` modifier. The compiler enforces your intent. If that member modifies state directly, or accesses a member that isn't also declared with the `readonly` modifier, the result is a compile-time error. The `readonly` modifier is valid on `struct` members, not `class` or `interface` member declarations.
+Other times, you may create a struct that supports mutation. In those cases, several of the instance members likely won't modify the internal state of the struct. You can declare those instance members with the `readonly` modifier. The compiler enforces your intent. If that member modifies state directly or accesses a member that isn't also declared with the `readonly` modifier, the result is a compile-time error. The `readonly` modifier is valid on `struct` members, not `class` or `interface` member declarations.
 
 You gain two advantages by applying the `readonly` modifier to applicable `struct` methods. Most importantly, the compiler enforces your intent. Code that modifies state isn't valid in a `readonly` method. The compiler may also make use of the `readonly` modifier to enable performance optimizations. When large `struct` types are passed by `in` reference, the compiler must generate a defensive copy if the state of the struct might be modified. If only `readonly` members are accessed, the compiler may not create the defensive copy.
 

@@ -267,7 +267,7 @@ WPF provides a library of common vector-drawn 2D shapes, such as the rectangles 
 
 ![Ellipses and rectangles](media/introduction-to-wpf/wpfintrofigure4.PNG)
 
-An interesting capability of shapes is that they are not just for display; shapes implement many of the features that you expect from controls, including keyboard and mouse input. The following example shows the <xref:System.Windows.UIElement.MouseUp> event of an <xref:System.Windows.Shapes.Ellipse> being handled.
+An interesting capability of shapes is that they are not just for display; shapes implement many of the features that you expect from controls, including keyboard and mouse input. The following example shows the <xref:System.Windows.UIElement.MouseUp> event of an <xref:System.Windows.Shapes.Ellipse> being handled:
 
 [!code-xaml[IntroToWPFSnippets#HandleEllipseMouseUpEventMARKUP](~/samples/snippets/xaml/wpf/introduction-to-wpf/introduction-to-wpf_7.xaml)]
 
@@ -302,7 +302,7 @@ For more information, see [WPF brushes overview](graphics-multimedia/wpf-brushes
 
 ### 3D rendering
 
-WPF also includes 3D rendering capabilities that integrate with 2-d graphics to allow the creation of more exciting and interesting user interfaces. For example, the following figure shows 2D images rendered onto 3D shapes.
+WPF also includes 3D rendering capabilities that integrate with 2-d graphics to allow the creation of more exciting and interesting user interfaces. For example, the following figure shows 2D images rendered onto 3D shapes:
 
 ![Visual3D sample screen shot](media/introduction-to-wpf/wpfintrofigure13.png)
 
@@ -354,7 +354,7 @@ To facilitate high-quality text rendering, WPF offers the following features:
 
 - International font support and fallback mechanisms.
 
-As a demonstration of text integration with graphics, the following figure shows the application of text decorations.
+As a demonstration of text integration with graphics, the following figure shows the application of text decorations:
 
 ![Text with various text decorations](media/introduction-to-wpf/wpfintrofigure23.png)
 
@@ -370,7 +370,7 @@ For this reason, WPF provides a variety of mechanisms for creating unique user e
 
 ### Content model
 
-The main purpose of a majority of the WPF controls is to display content. In WPF, the type and number of items that can constitute the content of a control is referred to as the control's *content model*. Some controls can contain a single item and type of content; for example, the content of a <xref:System.Windows.Controls.TextBox> is a string value that is assigned to the <xref:System.Windows.Controls.TextBox.Text%2A> property. The following example sets the content of a <xref:System.Windows.Controls.TextBox>.
+The main purpose of a majority of the WPF controls is to display content. In WPF, the type and number of items that can constitute the content of a control is referred to as the control's *content model*. Some controls can contain a single item and type of content; for example, the content of a <xref:System.Windows.Controls.TextBox> is a string value that is assigned to the <xref:System.Windows.Controls.TextBox.Text%2A> property. The following example sets the content of a <xref:System.Windows.Controls.TextBox>:
 
 ```xaml
 <Window
@@ -387,7 +387,7 @@ The following figure shows the result:
 
 ![A TextBox control that contains text](media/introduction-to-wpf/wpfintrofigure21.png)
 
-Other controls, however, can contain multiple items of different types of content; the content of a <xref:System.Windows.Controls.Button>, specified by the <xref:System.Windows.Controls.ContentControl.Content%2A> property, can contain a variety of items including layout controls, text, images, and shapes. The following example shows a <xref:System.Windows.Controls.Button> with content that includes a <xref:System.Windows.Controls.DockPanel>, a <xref:System.Windows.Controls.Label>, a <xref:System.Windows.Controls.Border>, and a <xref:System.Windows.Controls.MediaElement>.
+Other controls, however, can contain multiple items of different types of content; the content of a <xref:System.Windows.Controls.Button>, specified by the <xref:System.Windows.Controls.ContentControl.Content%2A> property, can contain a variety of items including layout controls, text, images, and shapes. The following example shows a <xref:System.Windows.Controls.Button> with content that includes a <xref:System.Windows.Controls.DockPanel>, a <xref:System.Windows.Controls.Label>, a <xref:System.Windows.Controls.Border>, and a <xref:System.Windows.Controls.MediaElement>:
 
 ```xaml
 <Window
@@ -425,7 +425,7 @@ The default user interfaces for WPF controls are typically constructed from othe
 
 Sometimes the default appearance of a control may be incongruent with the overall appearance of an application. In this case, you can use a <xref:System.Windows.Controls.ControlTemplate> to change the appearance of the control's user interface without changing its content and behavior.
 
-For example, the following example shows how to change the appearance of a <xref:System.Windows.Controls.Button> by using a <xref:System.Windows.Controls.ControlTemplate>.
+The following example shows how to change the appearance of a <xref:System.Windows.Controls.Button> by using a <xref:System.Windows.Controls.ControlTemplate>:
 
 [!code-xaml[IntroToWPFSnippets#ButtonControlTemplateWindowMARKUP](~/samples/snippets/xaml/wpf/introduction-to-wpf/introduction-to-wpf_16.xaml)]
 
@@ -438,11 +438,11 @@ In this example, the default button user interface has been replaced with an <xr
 
 ### Data templates
 
-Whereas a control template lets you specify the appearance of a control, a data template lets you specify the appearance of a control's content. Data templates are frequently used to enhance how bound data is displayed. The following figure shows the default appearance for a <xref:System.Windows.Controls.ListBox> that is bound to a collection of `Task` objects, where each task has a name, description, and priority.
+Whereas a control template lets you specify the appearance of a control, a data template lets you specify the appearance of a control's content. Data templates are frequently used to enhance how bound data is displayed. The following figure shows the default appearance for a <xref:System.Windows.Controls.ListBox> that is bound to a collection of `Task` objects, where each task has a name, description, and priority:
 
 ![A list box with the default appearance](media/introduction-to-wpf/wpfintrofigure18.png)
 
-The default appearance is what you would expect from a <xref:System.Windows.Controls.ListBox>. However, the default appearance of each task contains only the task name. To show the task name, description, and priority, the default appearance of the <xref:System.Windows.Controls.ListBox> control's bound list items must be changed by using a <xref:System.Windows.DataTemplate>. The following XAML defines such a <xref:System.Windows.DataTemplate>, which is applied to each task by using the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> attribute.
+The default appearance is what you would expect from a <xref:System.Windows.Controls.ListBox>. However, the default appearance of each task contains only the task name. To show the task name, description, and priority, the default appearance of the <xref:System.Windows.Controls.ListBox> control's bound list items must be changed by using a <xref:System.Windows.DataTemplate>. The following XAML defines such a <xref:System.Windows.DataTemplate>, which is applied to each task by using the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> attribute:
 
 ```xaml
 <Window
@@ -493,7 +493,7 @@ The default appearance is what you would expect from a <xref:System.Windows.Cont
 </Window>
 ```
 
-The following figure shows the effect of this code.
+The following figure shows the effect of this code:
 
 ![List box that uses a data template](media/introduction-to-wpf/wpfintrofigure19.png)
 
@@ -503,7 +503,7 @@ For more information, see [Data templating overview](data/data-templating-overvi
 
 ### Styles
 
-Styles enable developers and designers to standardize on a particular appearance for their product. WPF provides a strong style model, the foundation of which is the <xref:System.Windows.Style> element. The following example creates a style that sets the background color for every <xref:System.Windows.Controls.Button> on a window to `Orange`.
+Styles enable developers and designers to standardize on a particular appearance for their product. WPF provides a strong style model, the foundation of which is the <xref:System.Windows.Style> element. The following example creates a style that sets the background color for every <xref:System.Windows.Controls.Button> on a window to `Orange`:
 
 ```xaml
 <Window
@@ -540,7 +540,7 @@ For more information, see [Styles and templates](../../desktop-wpf/fundamentals/
 
 Controls in an application should share the same appearance, which can include anything from fonts and background colors to control templates, data templates, and styles. You can use WPF's support for user interface resources to encapsulate these resources in a single location for reuse.
 
-The following example defines a common background color that is shared by a <xref:System.Windows.Controls.Button> and a <xref:System.Windows.Controls.Label>.
+The following example defines a common background color that is shared by a <xref:System.Windows.Controls.Button> and a <xref:System.Windows.Controls.Label>:
 
 ```xaml
 <Window
@@ -572,7 +572,7 @@ This example implements a background color resource by using the `Window.Resourc
 
 The variety of scopes gives you flexibility with respect to the way in which you define and share your resources.
 
-As an alternative to directly associating your resources with a particular scope, you can package one or more resources by using a separate <xref:System.Windows.ResourceDictionary> that can be referenced in other parts of an application. For example, the following example defines a default background color in a resource dictionary.
+As an alternative to directly associating your resources with a particular scope, you can package one or more resources by using a separate <xref:System.Windows.ResourceDictionary> that can be referenced in other parts of an application. For example, the following example defines a default background color in a resource dictionary:
 
 ```xaml
 <ResourceDictionary
@@ -586,7 +586,7 @@ As an alternative to directly associating your resources with a particular scope
 </ResourceDictionary>
 ```
 
-The following example references the resource dictionary defined in the previous example so that it is shared across an application.
+The following example references the resource dictionary defined in the previous example so that it is shared across an application:
 
 ```xaml
 <Application
@@ -624,18 +624,18 @@ At this point, however, you can take advantage of one of three WPF models to cre
 
 - **Framework Element Model**. A custom control derives from <xref:System.Windows.FrameworkElement> when its appearance is defined by custom rendering logic (not templates).
 
-The following example shows a custom numeric up/down control that derives from <xref:System.Windows.Controls.UserControl>.
+The following example shows a custom numeric up/down control that derives from <xref:System.Windows.Controls.UserControl>:
 
 [!code-xaml[IntroToWPFSnippets#UserControlMARKUP](~/samples/snippets/xaml/wpf/introduction-to-wpf/introduction-to-wpf_33.xaml)]
 
 [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](~/samples/snippets/csharp/wpf/introduction-to-wpf/introduction-to-wpf_34.cs)]
 [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](~/samples/snippets/visualbasic/wpf/introduction-to-wpf/introduction-to-wpf_34.vb)]
 
-The next example illustrates the XAML that is required to incorporate the user control into a <xref:System.Windows.Window>.
+The following example illustrates the XAML that is required to incorporate the user control into a <xref:System.Windows.Window>:
 
 [!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](~/samples/snippets/xaml/wpf/introduction-to-wpf/introduction-to-wpf_37.xaml)]
 
-The following figure shows the `NumericUpDown` control hosted in a <xref:System.Windows.Window>.
+The following figure shows the `NumericUpDown` control hosted in a <xref:System.Windows.Window>:
 
 ![A custom UserControl](media/introduction-to-wpf/wpfintrofigure3.png)
 

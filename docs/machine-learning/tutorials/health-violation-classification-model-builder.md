@@ -75,7 +75,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 1. In the data step of the Model Builder tool, select **SQL Server** from the data source dropdown.
 1. Select the button next to the **Connect to SQL Server database** text box.
     1. In the **Choose Data** dialog, select **Microsoft SQL Server Database File**. 
-    1. Uncheck the *Always use this selection* checkbox and select **Continue**
+    1. Uncheck the **Always use this selection** checkbox and select **Continue**
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded *RestaurantScores.mdf* file.
     1. Select **OK**
 1. Choose **Violations** from the **Table Name** dropdown.

@@ -14,7 +14,7 @@ ms.author: "ronpet"
 ---
 # How to: Determine which .NET Framework versions are installed
 
-Users can [install](../install/) and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer.
+Users can [install](../install/index.md) and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer.
 
 The .NET Framework consists of two main components, which are versioned separately:
 

@@ -25,6 +25,10 @@ In this tutorial, you learn how to:
 > - Use transfer learning to train a custom TensorFlow image classification model
 > - Classify images with the custom model
 
+## Prerequisites
+
+- [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+
 ## Image classification transfer learning sample overview
 
 This sample is a C# .NET Core console application that classifies images using a pretrained deep learning TensorFlow model. The code for this sample can be found on the [dotnet/machinelearning-samples repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary) on GitHub.

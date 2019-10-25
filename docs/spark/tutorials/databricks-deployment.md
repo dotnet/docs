@@ -85,7 +85,7 @@ Now that you have the Databricks CLI installed, you need to set up authenticatio
 
 3. After entering your host, you are prompted to enter a token. In the Azure portal, select **Launch Workspace** to launch your Azure Databricks workspace.
 
-   ![Launch Azure Databricks Workspace](./media/datbricks-deployment/launch-databricks-workspace.png)
+   ![Launch Azure Databricks Workspace](./media/databricks-deployment/launch-databricks-workspace.png)
 
 4. On the home page of your workspace, select **User Settings**.
 

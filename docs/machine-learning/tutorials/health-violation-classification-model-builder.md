@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Classify restaurant violations with Model Builder'
-description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant violation severity in San Francisco.
+title: 'Tutorial: Classify health violations with Model Builder'
+description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant health violation severity in San Francisco.
 author: luisquintanilla
 ms.author: luquinta
 ms.date: 10/25/2019
@@ -9,7 +9,7 @@ ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
 ---
 
-# Tutorial: Classify the severity of restaurant violations with Model Builder
+# Tutorial: Classify the severity of restaurant health violations with Model Builder
 
 Learn how to build a machine learning model using Model Builder to categorize the risk level of restaurant violations found during health inspections.
 
@@ -167,6 +167,3 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Multiclass Classification](../resources/glossary.md#multiclass-classification)
 - [Multiclass Classification Model Metrics](../resources/metrics.md#metrics-for-multi-class-classification)
-
-
-

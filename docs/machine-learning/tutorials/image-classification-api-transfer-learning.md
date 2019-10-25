@@ -116,28 +116,9 @@ In this tutorial, only bridge deck images are used.
 
 1. Open the *Program.cs* file and replace the existing `using` statements at the top of the file with the following:
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.IO;
-    using Microsoft.ML;
-    using static Microsoft.ML.DataOperationsCatalog;
-    using Microsoft.ML.Transforms;
-    ```
-
     [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L1-L7)]
 
 1. Below the `Program` class in *Program.cs*, create a class called `ImageData`. This class is used to represent the initially loaded data. 
-
-    ```csharp
-    class ImageData
-    {
-        public string ImagePath { get; set; }
-
-        public string Label { get; set; }
-    }
-    ```
 
     [!code-csharp [ImageDataClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L135-L140)]
 
@@ -149,19 +130,6 @@ In this tutorial, only bridge deck images are used.
 1. Create classes for your input and output data
 
     1. Below the `ImageData` class, define the schema of your input data in a new class called `ModelInput`.
-
-        ```csharp
-        class ModelInput
-        {
-            public byte[] Image { get; set; }
-            
-            public UInt32 LabelAsKey { get; set; }
-
-            public string ImagePath { get; set; }
-
-            public string Label { get; set; }
-        }
-        ```
 
         [!code-csharp [ModelInputClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L142-L151)]
 
@@ -175,17 +143,6 @@ In this tutorial, only bridge deck images are used.
     Only `Image` and `LabelAsKey` are used to train the model and make predictions. The `ImagePath` and `Label` properties are kept for convenience to access the original image file name and category.
 
     1. Then, below the `ModelInput` class, define the schema of your output data in a new class called `ModelOutput`. 
-
-        ```csharp
-        class ModelOutput
-        {
-            public string ImagePath { get; set; }
-
-            public string Label { get; set; }
-
-            public string PredictedLabel { get; set; }
-        }
-        ```
 
         [!code-csharp [ModelOutputClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L153-L160)]
 
@@ -201,18 +158,9 @@ In this tutorial, only bridge deck images are used.
 
 1. Inside the `Main` method, define the location of your assets.
 
-    ```csharp
-    var projectDirectory = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "../../../"));
-    var assetsRelativePath = Path.Combine(projectDirectory, "assets");
-    ```
-
     [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L15-L16)]
 
 1. Then, initialize the `mlContext` variable with a new instance of [MLContext](xref:Microsoft.ML.MLContext).
-
-    ```csharp
-    MLContext mlContext = new MLContext();
-    ```
 
     [!code-csharp [MLContext](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L18)]
 
@@ -233,11 +181,6 @@ public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool
 
 1. Inside the `LoadImagesDirectory` add the following code to get all of the file paths from the subdirectories:
 
-    ```csharp
-    var files = Directory.GetFiles(folder, "*",
-        searchOption: SearchOption.AllDirectories);
-    ```
-
     [!code-csharp [GetFiles](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L102-L103)]
 
 1. Then, iterate through each of the files using a `foreach` statement.
@@ -251,43 +194,13 @@ public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool
 
 1. Inside the `foreach` statement, check that the file extensions are supported. The Image Classification API supports JPEG and PNG formats.
 
-    ```csharp
-    if ((Path.GetExtension(file) != ".jpg") && (Path.GetExtension(file) != ".png"))
-        continue;
-    ```
-
     [!code-csharp [CheckExtension](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L107-L108)]
 
 1. Then, get the label for the file. If the `useFolderNameAsLabel` parameter is set to `true`, then the parent directory where the file is saved is used as the label. Otherwise, it expects the label to be a prefix of the file name or the file name itself.
 
-    ```csharp
-    var label = Path.GetFileName(file);
-    if (useFolderNameAsLabel)
-        label = Directory.GetParent(file).Name;
-    else
-    {
-        for (int index = 0; index < label.Length; index++)
-        {
-            if (!char.IsLetter(label[index]))
-            {
-                label = label.Substring(0, index);
-                break;
-            }
-        }
-    }
-    ```
-
     [!code-csharp [GetLabel](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L110-L124)]
 
 1. Finally, create a new instance of `ModelInput`.
-
-    ```csharp
-    yield return new ImageData()
-    {
-        ImagePath = file,
-        Label = label
-    };
-    ```
 
     [!code-csharp [CreateImageData](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L126-L130)]
 
@@ -295,59 +208,25 @@ public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool
 
 1. Back in the `Main` method, use the `LoadFromDirectory` utility method to get the list of images used for training.
 
-    ```csharp
-    IEnumerable<ImageData> images = LoadImagesFromDirectory(folder: assetsRelativePath, useFolderNameAsLabel: true);
-    ```
-
     [!code-csharp [LoadImages](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L20)]
 
 1. Then, load the images into an [`IDataView`](xref:Microsoft.ML.IDataView) using the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) method.
-
-    ```csharp
-    IDataView imageData = mlContext.Data.LoadFromEnumerable(images);
-    ```
 
     [!code-csharp [CreateIDataView](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L22)]    
 
 1. The data is loaded in the order it was read from the directories. To balance the data, shuffle it using the [`ShuffleRows`](xref:Microsoft.ML.DataOperationsCatalog.ShuffleRows*) method.
 
-    ```csharp
-    IDataView shuffledData = mlContext.Data.ShuffleRows(imageData);
-    ```
-
     [!code-csharp [ShuffleRows](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L24)]
 
 1. Machine learning models expect input to be in numerical format. Therefore, some preprocessing needs to be done on the data prior to training. Create an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) made up of the [`MapValueToKey`](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey*) and [`LoadImages`](xref:Microsoft.ML.ImageEstimatorsCatalog.LoadImages*) transforms. The `MapValueToKey` transform takes the categorical value in the `Label` column, converts it to a numerical `KeyType` value and stores it in a new column called `LabelAsKey`. The `LoadImages` takes the values from the `ImagePath` column along with the `imageFolder` parameter to load images for training. Setting the `useImageType` to `false` converts the images into a `byte[]`. 
-
-    ```csharp
-    var preprocessingPipeline = mlContext.Transforms.Conversion.MapValueToKey(
-            inputColumnName:"Label",
-            outputColumnName:"LabelAsKey")
-        .Append(mlContext.Transforms.LoadImages(
-            outputColumnName:"Image", 
-            imageFolder: assetsRelativePath,
-            useImageType: false,
-            inputColumnName:"ImagePath"));
-    ```
 
     [!code-csharp [DefinePreprocessingPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L26-L33)]
 
 1. Use the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit*) method to apply the data to the `preprocessingPipeline` [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) followed by the [`Transform`](xref:Microsoft.ML.Data.TransformerChain`1.Transform*) method, which returns an [`IDataView`](xref:Microsoft.ML.IDataView) containing the pre-processed data.
 
-    ```csharp
-    IDataView preProcessedData = preprocessingPipeline
-                                    .Fit(shuffledData)
-                                    .Transform(shuffledData);
-    ```
-
     [!code-csharp [PreprocessData](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L35-L37)]
 
 1. To train a model, it's important to have a training dataset as well as a validation dataset. The model is trained on the training set. How well it makes predictions on unseen data is measured by the performance against the validation set. Based on the results of that performance, the model makes adjustments to what it has learned in an effort to improve. The validation set can come from either splitting your original dataset or from another source that has already been set aside for this purpose. In this case, the pre-processed dataset is split into training, validation and test sets.
-
-    ```csharp
-    TrainTestData trainSplit = mlContext.Data.TrainTestSplit(data: preProcessedData, testFraction:0.3);
-    TrainTestData validationTestSplit = mlContext.Data.TrainTestSplit(trainSplit.TestSet);
-    ```
 
     [!code-csharp [CreateDataSplits](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L39-L40)]
 
@@ -357,12 +236,6 @@ public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool
 
 1. Assign the partitions their respective values for the train, validation and test data.
 
-    ```csharp
-    IDataView trainSet = trainSplit.TrainSet;
-    IDataView validationSet = validationTestSplit.TrainSet;
-    IDataView testSet = validationTestSplit.TestSet;
-    ```
-
     [!code-csharp [CreateDatasets](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L42-L44)]
 
 ## Define the training pipeline
@@ -370,22 +243,6 @@ public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool
 Model training consists of a couple of steps. First, Image Classification API is used to train the model. Then, the encoded labels in the `PredictedLabel` column are converted back to their original categorical value using the `MapKeyToValue` transform. 
 
 1. Define the training [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) pipeline that consists of both the `mapLabelEstimator` and the `ImageClassification` transforms.
-
-    ```csharp
-    var trainingPipeline = mlContext.Model.ImageClassification(
-            featuresColumnName: "Image",
-            labelColumnName: "LabelAsKey",
-            arch: ImageClassificationEstimator.Architecture.ResnetV2101,
-            epoch: 100,
-            batchSize: 20,
-            testOnTrainSet: false,
-            metricsCallback: (metrics) => Console.WriteLine(metrics),
-            validationSet: validationSet,
-            reuseTrainSetBottleneckCachedValues: true,
-            reuseValidationSetBottleneckCachedValues: true,
-            disableEarlyStopping:false)
-        .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
-    ```
 
     [!code-csharp [DefineTrainingPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L46-L58)]    
 
@@ -405,10 +262,6 @@ Model training consists of a couple of steps. First, Image Classification API is
 
 1. Use the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit*) method to train your model.
 
-    ```csharp
-    ITransformer trainedModel = trainingPipeline.Fit(trainSet);
-    ```
-
     [!code-csharp [TrainModel](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L60)]
 
 ## Use the model
@@ -416,14 +269,6 @@ Model training consists of a couple of steps. First, Image Classification API is
 Now that you have trained your model, it's time to use it to classify images.
 
 Below the `Main` method, create a new utility method called `OutputPrediction` to display prediction information in the console.
-
-```csharp
-private static void OutputPrediction(ModelOutput prediction)
-{
-    string imageName = Path.GetFileName(prediction.ImagePath);
-    Console.WriteLine($"Image: {imageName} | Actual Value: {prediction.Label} | Predicted Value: {prediction.PredictedLabel}");
-}
-```
 
 [!code-csharp [OuputPredictionMethod](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L94-L98)]
 
@@ -440,42 +285,21 @@ private static void OutputPrediction(ModelOutput prediction)
 
 1. Create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) inside the `ClassifySingleImage` method. The [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass in and then perform a prediction on a single instance of data.
 
-    ```csharp
-    PredictionEngine<ModelInput, ModelOutput> predictionEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(trainedModel);
-    ```
-
     [!code-csharp [CreatePredictionEngine](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L71)]    
 
 1. To access a single `ModelInput` instance, convert the `data` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method and then get the first observation. 
-
-    ```csharp
-    ModelInput image = mlContext.Data.CreateEnumerable<ModelInput>(data,reuseRowObject:true).First();
-    ```
 
     [!code-csharp [GetTestInputData](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L73)]
 
 1. Use the [`Predict`] method to classify the image.
 
-    ```csharp
-    ModelOutput prediction = predictionEngine.Predict(image);
-    ```
-
     [!code-csharp [MakeSinglePrediction](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L75)]
 
 1. Output the prediction to the console with the `OutputPrediction` method.
 
-    ```csharp
-    Console.WriteLine("Classifying single image");
-    OutputPrediction(prediction);
-    ```
-
     [!code-csharp [OuputSinglePrediction](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L77-L78)]
 
 1. Inside the `Main` method, call `ClassifySingleImage` using the test set of images.
-
-    ```csharp
-    ClassifySingleImage(mlContext, testSet, trainedModel);
-    ```
 
     [!code-csharp [ClassifySingleImage](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L62)]
 
@@ -492,38 +316,17 @@ private static void OutputPrediction(ModelOutput prediction)
 
 1. Create an [`IDataView`](xref:Microsoft.ML.IDataView) containing the predictions by using the [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) method. Add the following code inside the `ClassifyImages` method.
 
-    ```csharp
-    IDataView predictionData = trainedModel.Transform(data);
-    ```
-
     [!code-csharp [MakeMultiplePredictions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L83)]
 
 1. In order to iterate over the predictions, convert the `predictionData` [`IDataView`](xref:Microsoft.ML.IDataView) into an [`IEnumerable`](xref:System.Collections.Generic.IEnumerable%601) using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method and then get the first 10 observations.
-
-    ```csharp
-    IEnumerable<ModelOutput> predictions = mlContext.Data.CreateEnumerable<ModelOutput>(predictionData, reuseRowObject: true).Take(10);
-    ```
 
     [!code-csharp [IEnumerablePredictions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L85)]
 
 1. Iterate and output the original and predicted labels for the predictions.
 
-    ```csharp
-    Console.WriteLine("Classifying multiple images");
-    foreach (var prediction in predictions)
-    {
-        string imageName = Path.GetFileName(prediction.ImagePath); 
-        Console.WriteLine($"Image: {imageName} | Actual Value: {prediction.Label} | Predicted Value: {prediction.PredictedLabel}");
-    }
-    ```
-
     [!code-csharp [OutputMultiplePredictions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L87-L91)]
 
 1. Finally, inside the `Main` method, call `ClassifyImages` using the test set of images.
-
-    ```csharp
-    ClassifyImages(mlContext, testSet, trainedModel);
-    ```
 
     [!code-csharp [ClassifyImages](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L64)]
 

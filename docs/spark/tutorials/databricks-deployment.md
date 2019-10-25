@@ -189,7 +189,7 @@ Your app runs on Azure Databricks through a job that runs **spark-submit**, whic
 
 ## Create a cluster
 
-1. Navigate to your job, and select **Edit** to configure your job's cluster.
+1. Navigate to your job and select **Edit** to configure your job's cluster.
 
 2. Set your cluster to **Spark 2.4.1**. Then, select **Advanced Options** > **Init Scripts**. Set Init Script Path as `dbfs:/spark-dotnet/db-init.sh`. 
 

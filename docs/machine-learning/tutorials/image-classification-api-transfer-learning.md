@@ -389,5 +389,7 @@ If you're not satisfied with the results of your model, you can try to improve i
 
 In this tutorial, you learned how to build a custom deep learning model using transfer learning, a pretrained image classification TensorFlow model and the ML.NET Image Classification API to classify images of concrete surfaces as cracked or uncracked.
 
+Advance to the next tutorial to learn more.
+
 > [!div class="nextstepaction"]
 > [Object Detection](object-detection-onnx.md)

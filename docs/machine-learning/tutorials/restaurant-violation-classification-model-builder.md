@@ -1,22 +1,25 @@
 ---
-title: 'Tutorial: Classifiy restaurant violations with Model Builder'
-description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify resturant violation severity in San Francisco.
+title: 'Tutorial: Classify restaurant violations with Model Builder'
+description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant violation severity in San Francisco.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/08/2019
+ms.date: 10/25/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
 ---
 
-# Tutorial: Classify severity of restaurant violations with Model Builder
+# Tutorial: Classify the severity of restaurant violations with Model Builder
+
+Learn how to build a machine learning model using Model Builder to categorize the risk level of restaurant violations found during health inspections.
 
 In this tutorial, you learn how to:
+
 > [!div class="checklist"]
 >
 > - Prepare and understand the data
 > - Choose a scenario
-> - Load the data
+> - Load data from a database
 > - Train the model
 > - Evaluate the model
 > - Use the model for predictions
@@ -28,29 +31,33 @@ In this tutorial, you learn how to:
 
 For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 
+## Model Builder multiclass classification overview 
+
+This sample creates a C# .NET Core console application that categorize the risk of health violations using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.
+
 ## Create a console application
 
-1. Create a **.NET Core Console Application** called "RestaurantViolationClassification".
+1. Create a **C# .NET Core Console Application** called "RestaurantViolations".
 
 ## Prepare and understand the data
 
-The data set used to train and evaluate the machine learning model is originally from the [San Francisco Department of Public Health Restaurant Safety Scores](https://www.sfdph.org/dph/EH/Food/score/default.asp).
+> The data set used to train and evaluate the machine learning model is originally from the [San Francisco Department of Public Health Restaurant Safety Scores](https://www.sfdph.org/dph/EH/Food/score/default.asp). For convenience, the dataset has been condensed to only include the columns relevant to train the model and make predictions. Visit the following website to learn more about the [dataset](https://data.sfgov.org/Health-and-Social-Services/Restaurant-Scores-LIVES-Standard/pyih-qa8i?row_index=0).
 
-1. Download the [dataset](https://data.sfgov.org/api/views/pyih-qa8i/rows.csv?accessType=DOWNLOAD) and save it anywhere on your computer.
+Download the [dataset](https://github.com/luisquintanilla/machinelearning-samples/raw/AB1608219/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantScores.zip) and unzip it.
 
-1. Open the **Restaurant_Scores_-_LIVES_Standard.csv** data set
+Each row in the dataset contains information regarding violations observed during an inspection from the Health Department and a risk assessment of the threat those violations present to public health and safety.
 
-    The provided data set contains several prefixed columns.
-    
-    The columns with the *business* prefix contain information about the business such as the address and phone number. These set of columns are not relevant for training a model. To make it more concrete, the phone number or zip code of an establishment does not determine what the severity of a violation is. 
+| InspectionType | ViolationDescription | RiskCategory |
+| --- | --- | --- |
+| Routine - Unscheduled | Inadequately cleaned or sanitized food contact surfaces | Moderate Risk |
+| New Ownership | High risk vermin infestation | High Risk |
+| Routine - Unscheduled | Wiping cloths not clean or properly stored or inadequate sanitizer | Low Risk |
 
-    The columns with the *inspection* prefix contain formation about individual inspections conducted on the business. A subset of these columns is relevant for building the model. The columns of interest are:
+- **InspectionType**: the type of inspection. This can either be a first-time inspection for a new establishment, a routine inspection, a complaint inspection, and many other types.
+- **ViolationDescription**: a description of the violation found during inspection. 
+- **RiskCategory**: the risk severity a violation poses to public health and safety.
 
-    - **inspection_id** the unique ID associated with a specific violation
-    - **inspection_type** the type of inspection. This can either be a first-time inspection for a new establishment, a routine inspection, a complaint inspection, and many other types.
-    - **violation_description** a description of the violation encountered. This description corresponds to the **inspection_id**.
-
-The `label` is the column you want to predict. When performing a classification task, the goal is to assign a category (text or numerical). In this classification scenario, the severity of violation is assigned the value of low, medium or high risk. Therefore, the **risk_category** is the label. The identified `features` are the inputs you give the model to predict the `label`. In this case, the **inspection_id**, **inspection_type** and **violation_description** are used as features or inputs to predict the **risk_category**.
+The `label` is the column you want to predict. When performing a classification task, the goal is to assign a category (text or numerical). In this classification scenario, the severity of violation is assigned the value of low, medium, or high risk. Therefore, the **RiskCategory** is the label. The `features` are the inputs you give the model to predict the `label`. In this case, the **InspectionType** and **ViolationDescription** are used as features or inputs to predict the **RiskCategory**.
 
 ## Choose a scenario
 
@@ -58,24 +65,29 @@ The `label` is the column you want to predict. When performing a classification 
 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Issue Classification`.
 
-1. In **Solution Explorer**, right-click the *RestaurantViolationClassification* project, and select **Add** > **Machine Learning**.
+1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning**.
 1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Issue Classification** scenario.
 
 ## Load the data
 
 Model Builder accepts data from two sources, a SQL Server database or a local file in `csv` or `tsv` format.
 
-1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
-1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the *Restaurant_Scores_-_LIVES_Standard.csv* file.
-1. Choose **risk_category** in the **Column to Predict (Label)** dropdown.
-1. Expand the *Input Columns (Features)* dropdown and uncheck all of the columns except for the **inspection_id**, **inspection_type** and **violation_description** columns.
+1. In the data step of the Model Builder tool, select **SQL Server** from the data source dropdown.
+1. Select the button next to the **Connect to SQL Server database** text box.
+    1. In the **Choose Data** dialog, select **Microsoft SQL Server Database File**. 
+    1. Uncheck the *Always use this selection* checkbox and select **Continue**
+    1. In the **Connection Properties** dialog, select **Browse** and select the downloaded *RestaurantScores.mdf* file.
+    1. Select **OK**
+1. Choose **Violations** from the **Table Name** dropdown.
+1. Choose **RiskCategory** in the **Column to Predict (Label)** dropdown.
+1. Leave the default column selections, **InspectionType** and **ViolationDescription**, checked in the **Input Columns (Features)** dropdown.
 1. Select the **Train** link to move to the next step in the Model Builder tool.
 
 ## Train the model
 
 The machine learning task used to train the issue classification model in this tutorial is multiclass classification. During the model training process, Model Builder trains separate models using different multiclass classification algorithms and settings to find the best performing model for your dataset.
 
-The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
+The time required for the model to train is proportional to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 
 1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 30 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
 1. Select **Start Training**.
@@ -91,35 +103,33 @@ The time required for the model to train is proportionate to the amount of data.
 
 ## Evaluate the model
 
-The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the **Best Model** entry along with metrics in **Best Model Accuracy**. Additionally, a summary table containing top five models and their metrics.
+The result of the training step will be one model, which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the **Best Model** entry along with metrics in **Best Model Accuracy**. Additionally, a summary table containing top five models and their metrics.
 
-If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **code** link to move to the final step in the Model Builder tool.
+If you're not satisfied with your accuracy metrics, some easy ways to try to improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the **code** link to move to the final step in the Model Builder tool.
 
 ## Add the code to make predictions
 
 Two projects will be created as a result of the training process.
 
-- RestaurantViolationClassificationML.ConsoleApp: A .NET Core Console application that contains the model training and sample consumption code.
-- RestaurantViolationClassificationML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data, the saved version of the best performing model during training and a helper class called `ConsumeModel` to make predictions.
+- RestaurantViolationsML.ConsoleApp: A C# .NET Core Console application that contains the model training and sample consumption code.
+- RestaurantViolationsML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data, the saved version of the best performing model during training and a helper class called `ConsumeModel` to make predictions.
 
-1. In the code step of the Model Builder tool, select **Add Projects** to add the auto-generated projects to the solution.
-1. Open the *Program.cs* file in the *RestaurantViolationClassification* project.
-1. Add the following using statement to reference the *RestaurantViolationClassificationML.Model* project:
+1. In the code step of the Model Builder tool, select **Add Projects** to add the autogenerated projects to the solution.
+1. Open the *Program.cs* file in the *RestaurantViolations* project.
+1. Add the following using statement to reference the *RestaurantViolationsML.Model* project:
 
     ```csharp
     using System;
-    using RestaurantViolationClassificationML.Model;
+    using RestaurantViolationsML.Model;
     ```
 
 1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the fare amount is not part of the input. This is because the model will generate the prediction for it. 
 
     ```csharp
-    // Create sample data
     ModelInput input = new ModelInput
     {
-        Inspection_id= "80137_20161005_103149",
-        Inspection_type ="Routine - Unscheduled",
-        Violation_description= "Wiping cloths not clean or properly stored or inadequate sanitizer"
+        InspectionType = "Complaint",
+        ViolationDescription = "Inadequate sewage or wastewater disposal"
     };
     ```
 
@@ -130,7 +140,9 @@ Two projects will be created as a result of the training process.
     ModelOutput result = ConsumeModel.Predict(input);
 
     // Print Prediction
-    Console.WriteLine($"Risk Category: {result.Prediction}");
+    Console.WriteLine($"Inspection type: {input.InspectionType}");
+    Console.WriteLine($"Violation description: {input.ViolationDescription}");
+    Console.WriteLine($"Predicted risk category: {result.Prediction}");
     Console.ReadKey();
     ```
 
@@ -139,24 +151,16 @@ Two projects will be created as a result of the training process.
     The output generated by the program should look similar to the snippet below:
 
     ```bash
-    Risk Category: Low Risk
+    Inspection Type: Complaint
+    Violation Description: Inadequate sewage or wastewater disposal
+    Risk Category: Moderate Risk
     ```
 
 If you need to reference the generated projects at a later time inside of another solution, you can find them inside the `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
 
-## Next Steps
+Congratulations! You've now successfully built a machine learning model to categorize the risk of health violations using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.
 
-In this tutorial, you learned how to:
-> [!div class="checklist"]
->
-> - Prepare and understand the data
-> - Choose a scenario
-> - Load the data
-> - Train the model
-> - Evaluate the model
-> - Use the model for predictions
-
-### Additional Resources
+## Additional Resources
 
 To learn more about topics mentioned in this tutorial, visit the following resources:
 

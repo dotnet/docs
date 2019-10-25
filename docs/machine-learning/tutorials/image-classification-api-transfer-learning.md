@@ -126,7 +126,7 @@ In this tutorial, only bridge deck images are used.
     using Microsoft.ML.Transforms;
     ```
 
-    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L1-L7)]
+    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L1-L7)]
 
 1. Below the `Program` class in *Program.cs*, create a class called `ImageData`. This class is used to represent the initially loaded data. 
 

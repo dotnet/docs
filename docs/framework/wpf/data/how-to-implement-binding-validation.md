@@ -2,8 +2,8 @@
 title: "How to: Implement Binding Validation"
 ms.date: 03/30/2017
 dev_langs:
- - CSharp
- - VB
+ - csharp
+ - vb
 helpviewer_keywords: 
   - "validation of binding [WPF]"
   - "data binding [WPF], validation of binding"

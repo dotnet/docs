@@ -37,7 +37,7 @@ WPF lets you develop an application using both *markup* and *code-behind*, an ex
 
 XAML is an XML-based markup language that implements an application's appearance declaratively. You typically use it to create windows, dialog boxes, pages, and user controls, and to fill them with controls, shapes, and graphics.
 
-The following example uses XAML to implement the appearance of a window that contains a single button.
+The following example uses XAML to implement the appearance of a window that contains a single button:
 
 ```xaml
 <Window
@@ -53,7 +53,7 @@ The following example uses XAML to implement the appearance of a window that con
 
 Specifically, this XAML defines a window and a button by using the `Window` and `Button` elements, respectively. Each element is configured with attributes, such as the `Window` element's `Title` attribute to specify the window's title-bar text. At run time, WPF converts the elements and attributes that are defined in markup to instances of WPF classes. For example, the `Window` element is converted to an instance of the <xref:System.Windows.Window> class whose <xref:System.Windows.Window.Title%2A> property is the value of the `Title` attribute.
 
-The following figure shows the user interface (UI) that is defined by the XAML in the previous example.
+The following figure shows the user interface (UI) that is defined by the XAML in the previous example:
 
 ![A window that contains a button](media/introduction-to-wpf/wpfintrofigure10.png)
 
@@ -61,7 +61,7 @@ Since XAML is XML-based, the UI that you compose with it is assembled in a hiera
 
 ### Code-behind
 
-The main behavior of an application is to implement the functionality that responds to user interactions, including handling events (for example, clicking a menu, tool bar, or button) and calling business logic and data access logic in response. In WPF, this behavior is implemented in code that is associated with markup. This type of code is known as code-behind. The following example shows the updated markup from the previous example and the code-behind.
+The main behavior of an application is to implement the functionality that responds to user interactions, including handling events (for example, clicking a menu, tool bar, or button) and calling business logic and data access logic in response. In WPF, this behavior is implemented in code that is associated with markup. This type of code is known as code-behind. The following example shows the updated markup from the previous example and the code-behind:
 
 ```xaml
 <Window
@@ -94,7 +94,7 @@ namespace SDKSample
 
         void button_Click(object sender, RoutedEventArgs e)
         {
-            // Show message box when button is clicked
+            // Show message box when button is clicked.
             MessageBox.Show("Hello, Windows Presentation Foundation!");
         }
     }
@@ -118,7 +118,7 @@ Namespace SDKSample
 
         Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-            ' Show message box when button is clicked
+            ' Show message box when button is clicked.
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
         End Sub 
@@ -130,7 +130,7 @@ End Namespace
 
 In this example, the code-behind implements a class that derives from the <xref:System.Windows.Window> class. The `x:Class` attribute is used to associate the markup with the code-behind class. `InitializeComponent` is called from the code-behind class's constructor to merge the UI that is defined in markup with the code-behind class. (`InitializeComponent` is generated for you when your application is built, which is why you don't need to implement it manually.) The combination of `x:Class` and `InitializeComponent` ensure that your implementation is correctly initialized whenever it is created. The code-behind class also implements an event handler for the button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. When the button is clicked, the event handler shows a message box by calling the <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> method.
 
-The following figure shows the result when the button is clicked.
+The following figure shows the result when the button is clicked:
 
 ![A MessageBox](media/introduction-to-wpf/wpfintrofigure25.png)
 
@@ -142,11 +142,11 @@ For more information, see [Controls](controls/index.md).
 
 ### WPF controls by function
 
-The built-in WPF controls are listed here.
+The built-in WPF controls are listed here:
 
 - **Buttons**: <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.Primitives.RepeatButton>.
 
-- **Data Display**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>,and <xref:System.Windows.Controls.TreeView>.
+- **Data Display**: <xref:System.Windows.Controls.DataGrid>, <xref:System.Windows.Controls.ListView>, and <xref:System.Windows.Controls.TreeView>.
 
 - **Date Display and Selection**: <xref:System.Windows.Controls.Calendar> and <xref:System.Windows.Controls.DatePicker>.
 
@@ -196,7 +196,7 @@ The layout system is exposed to child controls through base WPF classes. For com
 
 - <xref:System.Windows.Controls.WrapPanel>: Child controls are positioned in left-to-right order and wrapped to the next line when there are more controls on the current line than space allows.
 
-The following example uses a <xref:System.Windows.Controls.DockPanel> to lay out several <xref:System.Windows.Controls.TextBox> controls.
+The following example uses a <xref:System.Windows.Controls.DockPanel> to lay out several <xref:System.Windows.Controls.TextBox> controls:
 
 [!code-xaml[IntroToWPFSnippets#LayoutMARKUP](~/samples/snippets/xaml/introduction-to-wpf/introduction-to-wpf_1.xaml)]
 
@@ -205,7 +205,7 @@ The <xref:System.Windows.Controls.DockPanel> allows the child <xref:System.Windo
 > [!NOTE]
 > A property that's implemented by a parent control for use by child controls is a WPF construct called an [attached property](advanced/attached-properties-overview.md).
 
-The following figure shows the result of the XAML markup in the preceding example.
+The following figure shows the result of the XAML markup in the preceding example:
 
 ![DockPanel page](media/introduction-to-wpf/wpfintrofigure11.png)
 
@@ -226,7 +226,7 @@ The next example demonstrates how to bind a <xref:System.Windows.Controls.TextBo
 [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](~/samples/snippets/visualbasic/introduction-to-wpf/introduction-to-wpf_2.vb)]
 [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](~/samples/snippets/csharp/introduction-to-wpf/introduction-to-wpf_2.cs)]
 
-The following markup binds the <xref:System.Windows.Controls.TextBox> to an instance of a custom `Person` object.
+The following markup binds the <xref:System.Windows.Controls.TextBox> to an instance of a custom `Person` object:
 
 ```xaml
  <Window
@@ -274,7 +274,7 @@ An interesting capability of shapes is that they are not just for display; shape
 [!code-vb[IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](~/samples/snippets/visualbasic/introduction-to-wpf/introduction-to-wpf_8.vb)]
 [!code-csharp[IntroToWPFSnippets#HandleEllipseMouseUpEventCODEBEHIND](~/samples/snippets/csharp/introduction-to-wpf/introduction-to-wpf_8.cs)]
 
-The following figure shows what is produced by the preceding code.
+The following figure shows what is produced by the preceding code:
 
 ![A window with the text "you clicked the ellipse&#33;"](media/introduction-to-wpf/wpfintrofigure12.png)
 
@@ -294,7 +294,7 @@ For more information, see [Geometry overview](graphics-multimedia/geometry-overv
 
 ### 2D effects
 
-A subset of WPF 2D capabilities includes visual effects, such as gradients, bitmaps, drawings, painting with videos, rotation, scaling, and skewing. These are all achieved with brushes; the following figure shows some examples.
+A subset of WPF 2D capabilities includes visual effects, such as gradients, bitmaps, drawings, painting with videos, rotation, scaling, and skewing. These are all achieved with brushes; the following figure shows some examples:
 
 ![Illustration of different brushes](media/introduction-to-wpf/wpfintrofigure6.png)
 
@@ -310,7 +310,7 @@ For more information, see [3D graphics overview](graphics-multimedia/3-d-graphic
 
 ## Animation
 
-WPF animation support lets you make controls grow, shake, spin, and fade, to create interesting page transitions, and more. You can animate most WPF classes, even custom classes. The following figure shows a simple animation in action.
+WPF animation support lets you make controls grow, shake, spin, and fade, to create interesting page transitions, and more. You can animate most WPF classes, even custom classes. The following figure shows a simple animation in action:
 
 ![Images of an animated cube](media/introduction-to-wpf/wpfintrofigure7.png)
 
@@ -330,11 +330,11 @@ For more information, see [Imaging overview](graphics-multimedia/imaging-overvie
 
 ### Video and audio
 
-The <xref:System.Windows.Controls.MediaElement> control is capable of playing both video and audio, and it is flexible enough to be the basis for a custom media player. The following XAML markup implements a media player.
+The <xref:System.Windows.Controls.MediaElement> control is capable of playing both video and audio, and it is flexible enough to be the basis for a custom media player. The following XAML markup implements a media player:
 
 [!code-xaml[IntroToWPFSnippets#MediaElementMARKUP](~/samples/snippets/xaml/introduction-to-wpf/introduction-to-wpf_9.xaml)]
 
-The window in the following figure shows the <xref:System.Windows.Controls.MediaElement> control in action.
+The window in the following figure shows the <xref:System.Windows.Controls.MediaElement> control in action:
 
 ![A MediaElement control with audio and video](media/introduction-to-wpf/wpfintrofigure1.png)
 
@@ -383,7 +383,7 @@ The main purpose of a majority of the WPF controls is to display content. In WPF
 </Window>
 ```
 
-The following figure shows the result.
+The following figure shows the result:
 
 ![A TextBox control that contains text](media/introduction-to-wpf/wpfintrofigure21.png)
 
@@ -409,7 +409,7 @@ Other controls, however, can contain multiple items of different types of conten
 </Window>
 ```
 
-The following figure shows the content of this button.
+The following figure shows the content of this button:
 
 ![A button that contains multiple types of content](media/introduction-to-wpf/wpfintrofigure22.png)
 

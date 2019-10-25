@@ -291,7 +291,7 @@ Below the `Main` method, create a new utility method called `OutputPrediction` t
 
     [!code-csharp [GetTestInputData](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L73)]
 
-1. Use the [`Predict`] method to classify the image.
+1. Use the [`Predict`](xref:Microsoft.ML.PredictionEngine%602.Predict*) method to classify the image.
 
     [!code-csharp [MakeSinglePrediction](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L75)]
 

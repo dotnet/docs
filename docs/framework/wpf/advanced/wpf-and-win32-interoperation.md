@@ -28,7 +28,7 @@ Each of these techniques is conceptually introduced in this topic. For a more co
 
 ## WPF Interoperation Projects
 
-[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] APIs are managed code, but most existing [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programs are written in unmanaged C++.  You cannot call [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] APIs from a true unmanaged program. However, by using the `/clr` option with the [!INCLUDE[TLA#tla_visualcpp](../../../../includes/tlasharptla-visualcpp-md.md)] compiler, you can create a mixed managed-unmanaged program where you can seamlessly mix managed and unmanaged API calls.
+[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] APIs are managed code, but most existing [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programs are written in unmanaged C++.  You cannot call [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] APIs from a true unmanaged program. However, by using the `/clr` option with the Microsoft Visual C++ compiler, you can create a mixed managed-unmanaged program where you can seamlessly mix managed and unmanaged API calls.
 
 One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files into a C++ project.  There are several project division techniques to compensate for this.
 
@@ -43,7 +43,7 @@ One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml
 Use whatever approach works best for you.
 
 > [!NOTE]
-> If you have not used C++/CLI before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in C++.  To learn more about the C++/CLI managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms) and [Hello, C++/CLI](https://go.microsoft.com/fwlink/?LinkId=98739).
+> If you have not used C++/CLI before, you might notice some "new" keywords such as `gcnew` and `nullptr` in the interoperation code examples. These keywords supersede the older double-underscore syntax (`__gc`) and provide a more natural syntax for managed code in C++.  To learn more about the C++/CLI managed features, see [Component Extensions for Runtime Platforms](/cpp/windows/component-extensions-for-runtime-platforms).
 
 <a name="hwnds"></a>
 

@@ -61,7 +61,7 @@ The nullable annotation context and nullable warning context can be set for a pr
 - `disable`: The nullable annotation context is **disabled**. The nullable warning context is **disabled**.
   - Variables of a reference type are oblivious, just like earlier versions of C#. All nullability warnings are disabled.
 
-## Example:
+**Example**:
 ```
 <Nullable>enable</Nullable>
 ```

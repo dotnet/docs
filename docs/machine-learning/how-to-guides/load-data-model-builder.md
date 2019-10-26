@@ -12,11 +12,14 @@ ms.custom: mvc, how-to
 
 Learn how to set up and load your datasets from SQL Server or a file for use in one of the Model Builder scenarios for ML.NET. For each Model Builder scenario, the data must be prepared and ready to use for model training and validation. 
 
-## Limitations
+## Data set limitations in Model Builder
 
-Training dataset limit is 1GB.
-SQL Server data has a limit of 100,000 rows.
+Model limits the amount of data you can use for training models:
 
+- Training dataset limit: 1GB
+- SQL Server data: 100,000 rows 
+
+Question: Clarify the limits. Is the SQL Server data limit an absolute limit or for training only? The training dataset  -- is this a limit for text or numerical data from files?
 
 ## Model Builder scenarios 
 
@@ -25,26 +28,36 @@ Model Builder helps you create models for the following machine learning scenari
 - Sentiment analysis (binary classification): Classify data into two categories.
 - Issue classification (multiclass classification): Classify data into 3 or more categories.
 - Price prediction (regression): Predict a numeric value from your data.
-- Image classification (algo type????): Deep learning??
+- Image classification (deep learning): Categorize images based on characteristics.
 - Custom scenario: Build custom scenarios from your data using regression, classification, and other tasks.
 
-This article covers regression and image classification scenarios. 
+This article covers classification and regression scenarios with textual or numerical data, and image classification scenarios. 
 
+## Load textual or numerical data from a file  
 
-## Load data from a file
+You can load comma-delimited or tab-delimited textual or numerical data from a file into Model Builder. It accepts `csv` or `tsv` file formats. 
 
-Model builder supports loading data from a file in comma-delimited and tab-demlimited formats.
+1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
+2. Select the button next to the **Select a file** text box, and use File Explorer to browse and select the data file.
+3. Choose a category in the **Column to Predict (Label)** dropdown.
+4. Expand the **Input Columns (Features)** dropdown and uncheck the columns you won't use in your model.
 
-## Load data from a database
+You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in the Model Builder tool.
 
-Model Builder supports loading data from local and remote databases. 
+## Load data from a SQL Server database
 
-## Load image data
+Model Builder supports loading data from local and remote SQL Server databases. 
+
+## Set up image data files
 
 Model Builder expects image data to be in a specific format.
 
-To load images into Model Builder, you need to provide it with the path to a single top-level directory. This top-level directory contains subfolders of a number equal to each of the categories to predict. Each subfolder contains the image files belonging to the respective category.  
-In the folder structure illustrated below, the top-level directory is *flower_photos*. There are five subdirectories corresponsing to the categories to predict: daisy, dandelion, roses, sunflowers and tulips. Each of these subdirectories contains images belonging to their respective category. 
+To load images into Model Builder, provide the path to a single top-level directory:
+
+ - This top-level directory contains one subfolder for each of the categories to predict. 
+ - Each subfolder contains the image files belonging to its category. 
+ 
+In the folder structure illustrated below, the top-level directory is *flower_photos*. There are five subdirectories corresponding to the categories you want to predict: daisy, dandelion, roses, sunflowers, and tulips. Each of these subdirectories contains images belonging to its respective category. 
 
 ```text
 \---flower_photos
@@ -73,22 +86,6 @@ In the folder structure illustrated below, the top-level directory is *flower_ph
             107693873_86021ac4ea_n.jpg
             10791227_7168491604.jpg  
 ```
-
-## Load textual or numerical data for regression or classification model
-
-You can load numerical data or text data for a classification model or load numerical data for a regression model into Model Builder from a SQL database or a local file in `csv` or `tsv` format.
-
-1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
-1. Select the button next to the **Select a file** text box, and use File Explorer to browse and select the data file.
-1. Choose a category in the **Column to Predict (Label)** dropdown.
-1. Expand the **Input Columns (Features)** dropdown and uncheck the columns you won't use in your model.
-
-You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in the Model Builder tool.
-
-
-## Set up and load data for an image classification model
-
-
 
 ## Next steps
 Use Model Builder to build machine learning solutions. Try these tutorials:

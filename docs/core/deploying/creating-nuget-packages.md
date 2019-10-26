@@ -31,11 +31,10 @@ Then it's just a single command from the command line:
 dotnet pack
 ```
 
-Your `/bin/Debug` folder will now look like this:
+Your */bin/Debug* folder will now look like this:
 
 ```console
 $ ls bin/Debug
-
 netstandard1.0/
 SuperAwesomeLibrary.1.0.0.nupkg
 SuperAwesomeLibrary.1.0.0.symbols.nupkg
@@ -47,11 +46,10 @@ Note that this will produce a package which is capable of being debugged. If you
 dotnet pack --configuration release
 ```
 
-Your `/bin` folder will now have a `release` folder containing your NuGet package with release binaries:
+Your */bin* folder will now have a *release* folder containing your NuGet package with release binaries:
 
 ```console
 $ ls bin/release
-
 netstandard1.0/
 SuperAwesomeLibrary.1.0.0.nupkg
 SuperAwesomeLibrary.1.0.0.symbols.nupkg

@@ -15,7 +15,7 @@ Provides access to individual elements in a collection.
   
 ## Syntax  
   
-```  
+```vb  
 object(index)  
 ```  
   

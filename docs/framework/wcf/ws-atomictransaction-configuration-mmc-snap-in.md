@@ -19,15 +19,15 @@ The WS-AtomicTransaction Configuration MMC Snap-in is used to configure a portio
   
  The registration can be done by the following command.  
   
-```Output  
+```console
 regasm.exe /codebase WsatUI.dll  
 ```  
   
  You can use this tool to modify the basic WS-AtomicTransaction settings. For example, you can enable and disable the WS-AtomicTransaction protocol support, configure the HTTP ports for WS-AT, bind an SSL Certificate to the HTTP port, configure certificates by specifying certificate subject names, select the Tracing mode and set default and maximum timeouts.  
   
- If you must configure WS-AtomicTransaction support on the local machine only, you can use the command line version of this tool. For more information about the command line tool, see the [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md) topic.  
+ If you must configure WS-AtomicTransaction support on the local machine only, you can use the command line version of this tool. For more information about the command line tool, see the [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](ws-atomictransaction-configuration-utility-wsatconfig-exe.md) topic.  
   
- You should be aware that both the MMC Snap-in and the command-line tool do not support configuring all WS-AT settings. These settings can be edited only by modifying the registry directly. For more information about these registry settings, see [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md).  
+ You should be aware that both the MMC Snap-in and the command-line tool do not support configuring all WS-AT settings. These settings can be edited only by modifying the registry directly. For more information about these registry settings, see [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md).  
   
 ### User Interface Description  
  **Enable WS-Atomic Transaction Network Support**:  
@@ -78,10 +78,10 @@ regasm.exe /codebase WsatUI.dll
 > [!NOTE]
 > When another trace consumer is using the WS-AT trace provider, you cannot create a new logging session for trace events. Any attempt to configure logging during this time results in the error message "Failed to enable provider. Error code: 1".  
   
- For more information about tracing and logging, see [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md).  
+ For more information about tracing and logging, see [Administration and Diagnostics](./diagnostics/index.md).  
   
 ## See also
 
-- [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)
-- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](../../../docs/framework/wcf/ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
-- [Administration and Diagnostics](../../../docs/framework/wcf/diagnostics/index.md)
+- [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md)
+- [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](ws-atomictransaction-configuration-utility-wsatconfig-exe.md)
+- [Administration and Diagnostics](./diagnostics/index.md)

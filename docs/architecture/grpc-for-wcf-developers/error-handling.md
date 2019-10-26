@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # Error handling
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 WCF uses `FaultException<T>` and `FaultContract` to provide detailed error information, including supporting the SOAP Fault standard.
 
 Unfortunately, the current version of gRPC lacks the sophistication found with WCF and only has limited built-in error handling based on simple status codes and metadata. The following table is a quick guide to the most commonly used status codes:

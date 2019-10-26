@@ -16,7 +16,7 @@ Sets the compiler to target the .NET Compact Framework.
 
 ## Syntax
 
-```
+```console
 -netcf
 ```
 

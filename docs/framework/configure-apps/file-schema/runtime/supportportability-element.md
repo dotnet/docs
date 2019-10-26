@@ -78,5 +78,5 @@ The following example enables an application to have references to both the .NET
   
 ## See also
 
-- [/appconfig (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/appconfig-compiler-option.md)
+- [-appconfig (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/appconfig-compiler-option.md)
 - [.NET Framework Assembly Unification Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/db7849ey(v=vs.100))

@@ -1,5 +1,5 @@
 ---
-title: "C# Reference"
+title: "C# reference"
 ms.date: 02/14/2017
 helpviewer_keywords: 
   - "Visual C#, language reference"
@@ -9,10 +9,12 @@ helpviewer_keywords:
   - "reference, C# language"
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
 ---
-# C# Reference
+# C# reference
+
 This section provides reference material about C# keywords, operators, special characters, preprocessor directives, compiler options, and compiler errors and warnings.  
   
-## In This Section  
+## In this section
+
  [C# Keywords](./keywords/index.md)  
  Provides links to information about C# keywords and syntax.  
   
@@ -49,7 +51,7 @@ The features that have been implemented in C# versions after 6.0 are represented
  C# 7.3 is another point release that includes several small updates. You can use new constraints on generic type parameters. Other changes make it easier to work with `fixed` fields, including using [`stackalloc`](./operators/stackalloc.md) allocations. Local variables declared with the `ref` keyword may be reasssigned to refer to new storage. You can place attributes on auto-implemented properties that target the compiler-generated backing field. Expression variables can be used in initializers. Tuples can be compared for equality (or inequality). There have also been some improvements to overload resolution.
   
  [C# 8.0 Specification Proposals](../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md)  
- C# 8.0 is available with .NET Core 3.0. The features include nullable reference types, recursive pattern matching, default interface members, async streams, ranges and indexes, pattern based using and using declarations, null coalescing assignment, and readonly instance members.
+ C# 8.0 is available with .NET Core 3.0. The features include nullable reference types, recursive pattern matching, default interface methods, async streams, ranges and indexes, pattern based using and using declarations, null coalescing assignment, and readonly instance members.
   
 ## Related Sections  
 

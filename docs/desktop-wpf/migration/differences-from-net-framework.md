@@ -49,9 +49,6 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 > - `PrivateAccessToTypeName`
 > - `AssemblyNameString`
 
-
-
 ## Next steps
 
 - [Learn how to port a .NET Framework WPF app to .NET Core.](convert-project-from-net-framework.md)
-

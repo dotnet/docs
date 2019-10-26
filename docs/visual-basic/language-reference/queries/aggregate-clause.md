@@ -16,7 +16,7 @@ Applies one or more aggregate functions to a collection.
   
 ## Syntax  
   
-```  
+```vb  
 Aggregate element [As type] In collection _  
   [, element2 [As type2] In collection2, [...]]  
   [ clause ]  

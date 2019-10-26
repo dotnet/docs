@@ -46,6 +46,10 @@ The following is a list of CoreFx breaking changes by .NET Core version. CoreFx 
 
 ***
 
+[!INCLUDE[Floating-point parsing operations no longer fail or throw an OverflowException](~/includes/core-changes/corefx/floating-point-parsing-does-not-overflow.md)]
+
+***
+
 [!INCLUDE[InvalidAsynchronousStateException moved to another assembly](~/includes/core-changes/corefx/move-invalidasynchronousstateexception.md)]
 
 ***

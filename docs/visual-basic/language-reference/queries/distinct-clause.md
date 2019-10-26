@@ -14,7 +14,7 @@ Restricts the values of the current range variable to eliminate duplicate values
   
 ## Syntax  
   
-```  
+```vb  
 Distinct  
 ```  
   

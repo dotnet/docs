@@ -11,15 +11,15 @@ ms.assetid: e5b31571-6867-406f-b8e7-a3f9aae4723a
 ---
 # Call Statement (Visual Basic)
 
-Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedure.
-
-## Syntax
-
-```vb
-[ Call ] procedureName [ (argumentList) ]
-```
-
-## Parts
+Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedure.  
+  
+## Syntax  
+  
+```vb  
+[ Call ] procedureName [ (argumentList) ]  
+```  
+  
+## Parts  
 
 |||
 |---|---|

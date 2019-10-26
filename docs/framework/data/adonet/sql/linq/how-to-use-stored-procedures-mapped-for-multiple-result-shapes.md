@@ -16,7 +16,7 @@ When a stored procedure can return multiple result shapes, the return type canno
 ## Example  
  In the following SQL code example, the result shape depends on the input (`shape =1` or `shape = 2`). You do not know which projection will be returned first.  
   
-```  
+``` sql
 CREATE PROCEDURE VariableResultShapes(@shape int)  
 AS  
 if(@shape = 1)  

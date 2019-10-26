@@ -152,7 +152,7 @@ For the complete list of C# operators ordered by precedence level, see [C# opera
 
 ## Shift count of the shift operators
 
-For the shift operators `<<` and `>>`, the type of the right-hand operand must be [int](../builtin-types/integral-numeric-types.md) or a type that has a [predefined implicit numeric conversion](../keywords/implicit-numeric-conversions-table.md) to `int`.
+For the shift operators `<<` and `>>`, the type of the right-hand operand must be [int](../builtin-types/integral-numeric-types.md) or a type that has a [predefined implicit numeric conversion](../builtin-types/numeric-conversions.md#implicit-numeric-conversions) to `int`.
 
 For the `x << count` and `x >> count` expressions, the actual shift count depends on the type of `x` as follows:
 

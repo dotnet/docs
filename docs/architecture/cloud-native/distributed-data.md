@@ -6,6 +6,8 @@ ms.date: 10/21/2019
 ---
 # Cloud-native data
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 When architecting cloud-native systems, the way you think about data and data storage dramatically changes.
 
 Traditional monolithic applications typically favor a centralized relational database, shown in Figure 5-1. 

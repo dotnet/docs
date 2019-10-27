@@ -1,7 +1,7 @@
 ---
 title: "Adorners Overview"
 ms.date: "03/30/2017"
-dev_langs
+dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:

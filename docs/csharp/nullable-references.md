@@ -62,6 +62,7 @@ The nullable annotation context and nullable warning context can be set for a pr
   - Variables of a reference type are oblivious, just like earlier versions of C#. All nullability warnings are disabled.
 
 **Example**:
+
 ```xml
 <Nullable>enable</Nullable>
 ```

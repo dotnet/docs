@@ -43,3 +43,4 @@ We'll explore these different types of data stores and some common cloud-native 
 >[!div class="step-by-step"]
 >[Previous](service-mesh-communication-infrastructure.md)
 >[Next](data-patterns.md)
+

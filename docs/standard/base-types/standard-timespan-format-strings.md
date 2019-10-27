@@ -21,7 +21,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Standard TimeSpan Format Strings
-<a name="Top"></a> A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md) .  
+A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md) .  
   
  The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType> method, as well as by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=nameWithType>. For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md) and [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example illustrates the use of standard format strings in formatting operations.  
   
@@ -33,7 +33,7 @@ ms.author: "ronpet"
  [!code-csharp[Conceptual.TimeSpan.Standard#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/parseexample1.cs#3)]
  [!code-vb[Conceptual.TimeSpan.Standard#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/parseexample1.vb#3)]  
   
-<a name="top"></a> The following table lists the standard time interval format specifiers.  
+The following table lists the standard time interval format specifiers.  
   
 |Format specifier|Name|Description|Examples|  
 |----------------------|----------|-----------------|--------------|  

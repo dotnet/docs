@@ -9,7 +9,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Loader ETW Events
-<a name="top"></a> These events collect information relating to loading and unloading application domains, assemblies, and modules.  
+These events collect information relating to loading and unloading application domains, assemblies, and modules.  
   
  All loader events are raised under the `LoaderKeyword` (0x8) keyword. The `DCStart` and the `DCEnd` events are raised under `LoaderRundownKeyword` (0x8) with `StartRundown`/`EndRundown` enabled. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   

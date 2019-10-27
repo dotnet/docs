@@ -10,7 +10,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Interop Marshaling
-<a name="top"></a> Interop marshaling governs how data is passed in method arguments and return values between managed and unmanaged memory during calls. Interop marshaling is a run-time activity performed by the common language runtime's marshaling service.  
+Interop marshaling governs how data is passed in method arguments and return values between managed and unmanaged memory during calls. Interop marshaling is a run-time activity performed by the common language runtime's marshaling service.  
   
  Most data types have common representations in both managed and unmanaged memory. The interop marshaler handles these types for you. Other types can be ambiguous or not represented at all in managed memory.  
   

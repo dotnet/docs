@@ -19,7 +19,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Reflection and Generic Types
-<a name="top"></a> From the point of view of reflection, the difference between a generic type and an ordinary type is that a generic type has associated with it a set of type parameters (if it is a generic type definition) or type arguments (if it is a constructed type). A generic method differs from an ordinary method in the same way.  
+From the point of view of reflection, the difference between a generic type and an ordinary type is that a generic type has associated with it a set of type parameters (if it is a generic type definition) or type arguments (if it is a constructed type). A generic method differs from an ordinary method in the same way.  
   
  There are two keys to understanding how reflection handles generic types and methods:  
   

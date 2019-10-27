@@ -31,7 +31,7 @@ ms.author: "mairaw"
 ---
 # Generics in .NET
 
-<a name="top"></a> Generics let you tailor a method, class, structure, or interface to the precise data type it acts upon. For example, instead of using the <xref:System.Collections.Hashtable> class, which allows keys and values to be of any type, you can use the <xref:System.Collections.Generic.Dictionary%602> generic class and specify the type allowed for the key and the type allowed for the value. Among the benefits of generics are increased code reusability and type safety.  
+Generics let you tailor a method, class, structure, or interface to the precise data type it acts upon. For example, instead of using the <xref:System.Collections.Hashtable> class, which allows keys and values to be of any type, you can use the <xref:System.Collections.Generic.Dictionary%602> generic class and specify the type allowed for the key and the type allowed for the value. Among the benefits of generics are increased code reusability and type safety.  
   
  This topic provides an overview of generics in .NET and a summary of generic types or methods. It contains the following sections:  
   

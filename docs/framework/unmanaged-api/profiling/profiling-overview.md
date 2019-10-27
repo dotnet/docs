@@ -32,7 +32,7 @@ ms.author: "mairaw"
 ---
 # Profiling Overview
 
-<a name="top"></a> A profiler is a tool that monitors the execution of another application. A common language runtime (CLR) profiler is a dynamic link library (DLL) that consists of functions that receive messages from, and send messages to, the CLR by using the profiling API. The profiler DLL is loaded by the CLR at run time.
+A profiler is a tool that monitors the execution of another application. A common language runtime (CLR) profiler is a dynamic link library (DLL) that consists of functions that receive messages from, and send messages to, the CLR by using the profiling API. The profiler DLL is loaded by the CLR at run time.
 
 Traditional profiling tools focus on measuring the execution of the application. That is, they measure the time that is spent in each function or the memory usage of the application over time. The profiling API targets a broader class of diagnostic tools such as code-coverage utilities and even advanced debugging aids. These uses are all diagnostic in nature. The profiling API not only measures but also monitors the execution of an application. For this reason, the profiling API should never be used by the application itself, and the application’s execution should not depend on (or be affected by) the profiler.
 

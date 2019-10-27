@@ -17,7 +17,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Substitutions in Regular Expressions
-<a name="Top"></a> Substitutions are language elements that are recognized only within replacement patterns. They use a regular expression pattern to define all or part of the text that is to replace matched text in the input string. The replacement pattern can consist of one or more substitutions along with literal characters. Replacement patterns are provided to overloads of the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method that have a `replacement` parameter and to the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method. The methods replace the matched pattern with the pattern that is defined by the `replacement` parameter.  
+Substitutions are language elements that are recognized only within replacement patterns. They use a regular expression pattern to define all or part of the text that is to replace matched text in the input string. The replacement pattern can consist of one or more substitutions along with literal characters. Replacement patterns are provided to overloads of the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method that have a `replacement` parameter and to the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method. The methods replace the matched pattern with the pattern that is defined by the `replacement` parameter.  
   
  The .NET Framework defines the substitution elements listed in the following table.  
   

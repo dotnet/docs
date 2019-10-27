@@ -9,7 +9,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Application Domain Resource Monitoring (ARM) ETW Events
-<a name="top"></a> These events provide detailed diagnostic information about the state of an application domain. You can use these events or use the application domain resource monitoring (ARM) feature to obtain the same information.  
+These events provide detailed diagnostic information about the state of an application domain. You can use these events or use the application domain resource monitoring (ARM) feature to obtain the same information.  
   
  This category consists of the following events:  
   

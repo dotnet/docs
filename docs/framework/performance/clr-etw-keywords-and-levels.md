@@ -11,7 +11,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # CLR ETW Keywords and Levels
-<a name="top"></a> Event tracing for Windows (ETW) events can be filtered by category and level. Event [CLR ETW Keywords](#keywords) enable the filtering of events by category; they are used in combinations for the runtime and rundown providers. The [event levels](#levels) are identified by flags.  
+Event tracing for Windows (ETW) events can be filtered by category and level. Event [CLR ETW Keywords](#keywords) enable the filtering of events by category; they are used in combinations for the runtime and rundown providers. The [event levels](#levels) are identified by flags.  
   
 <a name="keywords"></a>   
 ## CLR ETW Keywords  

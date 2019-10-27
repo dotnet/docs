@@ -9,7 +9,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Thread Pool ETW Events
-<a name="top"></a> These events collect information about worker and I/O threads.  
+These events collect information about worker and I/O threads.  
   
  There are two groups of thread pool events:  
   

@@ -9,13 +9,19 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Interop ETW Events
-<a name="top"></a> Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.  
+Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.  
   
  This category consists of the following events:  
   
-- [ILStubGenerated Event](#ilstubgenerated_event)  
+- [Interop ETW Events](#interop-etw-events)
+  - [ILStubGenerated Event](#ilstubgenerated-event)
+  - [ILStubCacheHit Event](#ilstubcachehit-event)
+  - [See also](#see-also)
   
-- [ILStubCacheHit Event](#ilstubcachehit_event)  
+- [Interop ETW Events](#interop-etw-events)
+  - [ILStubGenerated Event](#ilstubgenerated-event)
+  - [ILStubCacheHit Event](#ilstubcachehit-event)
+  - [See also](#see-also)
   
 <a name="ilstubgenerated_event"></a>   
 ## ILStubGenerated Event  

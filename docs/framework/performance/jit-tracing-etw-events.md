@@ -9,7 +9,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # JIT Tracing ETW Events
-<a name="top"></a> These events collect information relating to the success or failure of just-in-time (JIT) inlining and JIT tail calls.  
+These events collect information relating to the success or failure of just-in-time (JIT) inlining and JIT tail calls.  
   
  JIT tracing events consist of the following two categories:  
   

@@ -11,7 +11,7 @@ ms.author: "ronpet"
 ---
 # Garbage Collection and Performance
 
-<a name="top"></a> This topic describes issues related to garbage collection and memory usage. It addresses issues that pertain to the managed heap and explains how to minimize the effect of garbage collection on your applications. Each issue has links to procedures that you can use to investigate problems.
+This topic describes issues related to garbage collection and memory usage. It addresses issues that pertain to the managed heap and explains how to minimize the effect of garbage collection on your applications. Each issue has links to procedures that you can use to investigate problems.
 
 This topic contains the following sections:
 

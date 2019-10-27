@@ -5,7 +5,7 @@ author: thraka
 ms.date: 08/08/2019
 ms.author: adegeo
 dev_langs: ["csharp", "vb"]
-helpviewer_keywords: 
+helpviewer_keywords:
   - "user interfaces [XAML]"
   - "classes [XAML]"
   - "root element [XAML]"
@@ -31,7 +31,7 @@ This article describes the features of the XAML language and demonstrates how yo
 
 XAML is a declarative markup language. As applied to the .NET Core programming model, XAML simplifies creating a UI for a .NET Core application. You can create visible UI elements in the declarative XAML markup, and then separate the UI definition from the run-time logic by using code-behind files that are joined to the markup through partial class definitions. XAML directly represents the instantiation of objects in a specific set of backing types defined in assemblies. This is unlike most other markup languages, which are typically an interpreted language without such a direct tie to a backing type system. XAML enables a workflow where separate parties can work on the UI and the logic of an application, using potentially different tools.
 
-When represented as text, XAML files are XML files that generally have the `.xaml` extension. The files can be encoded by any XML encoding, but encoding as UTF-8 is typical.
+When represented as text, XAML files are XML files that generally have the *.xaml* extension. The files can be encoded by any XML encoding, but encoding as UTF-8 is typical.
 
 The following example shows how you might create a button as part of a UI. This example is intended to give you a flavor of how XAML represents common UI programming metaphors (it is not a complete sample).
 
@@ -39,7 +39,7 @@ The following example shows how you might create a button as part of a UI. This 
 
 ## XAML syntax in brief
 
-The following sections explain the basic forms of XAML syntax, and give a short markup example. These sections are not intended to provide complete information about each syntax form, such as how these are represented in the backing type system. <!--TODO For more information about the specifics of XAML syntax for each of the syntax forms introduced in this article, see [XAML Syntax In Detail](xaml-syntax-in-detail.md).-->
+The following sections explain the basic forms of XAML syntax, and give a short markup example. These sections are not intended to provide complete information about each syntax form, such as how these are represented in the backing type system. For more information about the specifics of XAML syntax for each of the syntax forms introduced in this article, see [XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md).
 
 Much of the material in the next few sections will be elementary to you if you have previous familiarity with the XML language. This is a consequence of one of the basic design principles of XAML. The XAML language defines concepts of its own, but these concepts work within the XML language and markup form.
 
@@ -113,7 +113,7 @@ As a rule of the XAML language, the value of a XAML content property must be giv
   blue button</Button>
 ```
 
-<!-- TODO For more information about this restriction on XAML content properties, see the "XAML Content Properties" section of [XAML Syntax In Detail](xaml-syntax-in-detail.md).-->
+For more information about this restriction on XAML content properties, see the "XAML Content Properties" section of [XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md#xaml-content-properties).
 
 ### Text content
 
@@ -166,7 +166,7 @@ There is more to events and XAML in WPF than just this example of the attribute 
 In general, XAML is case-sensitive. For purposes of resolving backing types, WPF XAML is case-sensitive by the same rules that the CLR is case-sensitive. Object elements, property elements, and attribute names must all be specified by using the sensitive casing when compared by name to the underlying type in the assembly, or to a member of a type. XAML language keywords and primitives are also case-sensitive. Values are not always case-sensitive. Case sensitivity for values will depend on the type converter behavior associated with the property that takes the value, or the property value type. For example, properties that take the <xref:System.Boolean> type can take either `true` or `True` as equivalent values, but only because the native WPF XAML parser type conversion for string to <xref:System.Boolean> already permits these as equivalents.
 
 WPF XAML processors and serializers will ignore or drop all nonsignificant white space, and will normalize any significant white space. This is consistent with the default white-space behavior recommendations of the XAML specification. This behavior is only of consequence when you specify strings within XAML content properties. In simplest terms, XAML converts space, linefeed and tab characters into spaces, and then preserves one space if found at either end of a contiguous string. The full explanation of XAML white-space handling is not covered in this article.
-<!--TODO For details, see [White space processing in XAML](../../framework/xaml-services/whitespace-processing-in-xaml.md).-->
+For details, see [White space processing in XAML](../../framework/xaml-services/whitespace-processing-in-xaml.md).
 
 ## Markup extensions
 
@@ -182,8 +182,7 @@ For example, the following markup sets the value of the <xref:System.Windows.Fra
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources2](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources2)]
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources3](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources3)]
 
-<!-- TODO 
-For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../../framework/xaml-services/xaml-namespace-x-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). -->
+For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](../../framework/wpf/advanced/wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../../framework/xaml-services/xaml-namespace-x-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).
 
 ## Type converters
 
@@ -200,7 +199,7 @@ The previous attribute syntax example is equivalent to the following more verbos
 > [!NOTE]
 > There are also a limited number of objects where the type conversion is the only public way to set a property to that type without involving a subclass, because the type itself does not have a parameterless constructor. An example is <xref:System.Windows.Input.Cursor>.
 
-<!-- TODO For more information on how type conversion and its use for attribute syntax is supported, see [TypeConverters and XAML](typeconverters-and-xaml.md). -->
+For more information on how type conversion and its use for attribute syntax is supported, see [TypeConverters and XAML](../../framework/wpf/advanced/typeconverters-and-xaml.md).
 
 ## XAML root elements and XAML namespaces
 
@@ -252,9 +251,9 @@ The following is a basic example of how custom prefixes work in XAML markup. The
 </Page>
 ```
 
-<!-- TODO For more information about custom types in XAML, see [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md).
+For more information about custom types in XAML, see [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).
 
-For more information about how XML namespaces and the namespaces of the backing code in assemblies are related, see [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).-->
+For more information about how XML namespaces and the namespaces of the backing code in assemblies are related, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
 
 ## Events and XAML code-behind
 
@@ -269,13 +268,13 @@ In the examples so far, you have seen several buttons, but none of these buttons
 
 Notice that the code-behind file uses the CLR namespace `ExampleNamespace` and declares `ExamplePage` as a partial class within that namespace. This parallels the `x:Class` attribute value of `ExampleNamespace`.`ExamplePage` that was provided in the markup root. The WPF markup compiler will create a partial class for any compiled XAML file, by deriving a class from the root element type. When you provide code-behind that also defines the same partial class, the resulting code is combined within the same namespace and class of the compiled application.
 
-<!-- TODO For more information about requirements for code-behind programming in WPF, see the "Code-behind, Event Handler, and Partial Class Requirements" section of [Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md). -->
+For more information about requirements for code-behind programming in WPF, see the "Code-behind, Event Handler, and Partial Class Requirements" section of [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
 
-If you do not want to create a separate code-behind file, you can also inline your code in a XAML file. However, inline code is a less versatile technique that has substantial limitations. <!-- TODO For details, see [Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md).-->
+If you do not want to create a separate code-behind file, you can also inline your code in a XAML file. However, inline code is a less versatile technique that has substantial limitations. For details, see [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
 
 ### Routed events
 
-A particular event feature that is fundamental to WPF is a routed event. Routed events enable an element to handle an event that was raised by a different element, as long as the elements are connected through a tree relationship. When specifying event handling with a XAML attribute, the routed event can be listened for and handled on any element, including elements that do not list that particular event in the class members table. This is accomplished by qualifying the event name attribute with the owning class name. For instance, the parent `StackPanel` in the ongoing `StackPanel` / `Button` example could register a handler for the child element button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by specifying the attribute `Button.Click` on the `StackPanel` object element, with your handler name as the attribute value. <!-- TODO For more information about how routed events work, see [Routed Events Overview](routed-events-overview.md).-->
+A particular event feature that is fundamental to WPF is a routed event. Routed events enable an element to handle an event that was raised by a different element, as long as the elements are connected through a tree relationship. When specifying event handling with a XAML attribute, the routed event can be listened for and handled on any element, including elements that do not list that particular event in the class members table. This is accomplished by qualifying the event name attribute with the owning class name. For instance, the parent `StackPanel` in the ongoing `StackPanel` / `Button` example could register a handler for the child element button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by specifying the attribute `Button.Click` on the `StackPanel` object element, with your handler name as the attribute value. For more information about how routed events work, see [Routed Events Overview](../../framework/wpf/advanced/routed-events-overview.md).
 
 ## XAML named elements
 

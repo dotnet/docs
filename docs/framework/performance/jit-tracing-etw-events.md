@@ -78,8 +78,6 @@ ms.author: "mairaw"
 |InlineeNameSignature|win:UnicodeString|The signature for the inlinee.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
 <a name="jit_tail_call_events"></a>   
 ## JIT Tail Call Events  
   

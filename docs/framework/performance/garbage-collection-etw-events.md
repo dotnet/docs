@@ -66,8 +66,6 @@ ms.author: "mairaw"
 |Type|win:UInt32|0x0 - Blocking garbage collection occurred outside background garbage collection.<br /><br /> 0x1 - Background garbage collection.<br /><br /> 0x2 - Blocking garbage collection occurred during background garbage collection.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
 <a name="gcend_v1_event"></a>   
 ## GCEnd_V1 Event  
  The following table shows the keyword and level.  
@@ -88,9 +86,7 @@ ms.author: "mairaw"
 |----------------|---------------|-----------------|  
 |Count|win:UInt32|The *n*th garbage collection.|  
 |Depth|win:UInt32|The generation that was collected.|  
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|   
   
 <a name="gcheapstats_v1_event"></a>   
 ## GCHeapStats_V1 Event  
@@ -123,9 +119,7 @@ ms.author: "mairaw"
 |PinnedObjectCount|win:UInt32|The number of pinned (unmovable) objects.|  
 |SinkBlockCount|win:UInt32|The number of synchronization blocks in use.|  
 |GCHandleCount|win:UInt32|The number of garbage collection handles in use.|  
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|   
   
 <a name="gccreatesegment_v1_event"></a>   
 ## GCCreateSegment_V1 Event  
@@ -150,9 +144,7 @@ ms.author: "mairaw"
 |Type|win:UInt32|0x0 - Small object heap.<br /><br /> 0x1 - Large object heap.<br /><br /> 0x2 - Read-only heap.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- Note that the size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.  
-  
- [Back to top](#top)  
+ Note that the size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.    
   
 <a name="gcfreesegment_v1_event"></a>   
 ## GCFreeSegment_V1 Event  
@@ -173,9 +165,7 @@ ms.author: "mairaw"
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  
 |Address|win:UInt64|The address of the segment.|  
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|   
   
 <a name="gcrestarteebegin_v1_event"></a>   
 ## GCRestartEEBegin_V1 Event  
@@ -193,8 +183,6 @@ ms.author: "mairaw"
   
  No event data.  
   
- [Back to top](#top)  
-  
 <a name="gcrestarteeend_v1_event"></a>   
 ## GCRestartEEEnd_V1 Event  
  The following table shows the keyword and level.  
@@ -210,8 +198,6 @@ ms.author: "mairaw"
 |`GCRestartEEEnd_V1`|3|Resumption from common language runtime suspension has ended.|  
   
  No event data.  
-  
- [Back to top](#top)  
   
 <a name="gcsuspendee_v1_event"></a>   
 ## GCSuspendEE_V1 Event  
@@ -235,8 +221,6 @@ ms.author: "mairaw"
 |Count|win:UInt32|The GC count at the time. Usually, you would see a subsequent GC Start event after this, and its Count would be this Count + 1 as we increase the GC index during a garbage collection.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
 <a name="gcsuspendeeend_v1_event"></a>   
 ## GCSuspendEEEnd_V1 Event  
  The following table shows the keyword and level:  
@@ -251,9 +235,7 @@ ms.author: "mairaw"
 |-----------|--------------|-----------------|  
 |`GCSuspendEEEnd_V1`|8|End of suspension of the execution engine for garbage collection.|  
   
- No event data.  
-  
- [Back to top](#top)  
+ No event data.   
   
 <a name="gcallocationtick_v2_event"></a>   
 ## GCAllocationTick_V2 Event  
@@ -281,7 +263,7 @@ ms.author: "mairaw"
 |TypeName|win:UnicodeString|The name of the type that was allocated. When there are several types of objects that were allocated during this event, this is the type of the last object allocated (the object that caused the 100 KB threshold to be exceeded).|  
 |HeapIndex|win:UInt32|The heap where the object was allocated. This value is 0 (zero) when running with workstation garbage collection.|  
   
- [Back to top](#top)  
+   
   
 <a name="gcfinalizersbegin_v1_event"></a>   
 ## GCFinalizersBegin_V1 Event  
@@ -298,8 +280,6 @@ ms.author: "mairaw"
 |`GCFinalizersBegin_V1`|14|The start of running finalizers.|  
   
  No event data.  
-  
- [Back to top](#top)  
   
 <a name="gcfinalizersend_v1_event"></a>   
 ## GCFinalizersEnd_V1 Event  
@@ -320,9 +300,7 @@ ms.author: "mairaw"
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  
 |Count|win:UInt32|The number of finalizers that were run.|  
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|   
   
 <a name="gccreateconcurrentthread_v1_event"></a>   
 ## GCCreateConcurrentThread_V1 Event  
@@ -340,8 +318,6 @@ ms.author: "mairaw"
 |`GCCreateConcurrentThread_V1`|11|Concurrent garbage collection thread was created.|  
   
  No event data.  
-  
- [Back to top](#top)  
   
 <a name="gcterminateconcurrentthread_v1_event"></a>   
 ## GCTerminateConcurrentThread_V1 Event  

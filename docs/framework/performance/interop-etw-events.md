@@ -47,8 +47,6 @@ ms.author: "mairaw"
 |StubMethodILCode|win:UnicodeString|The MSIL code for the stub method.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
 <a name="ilstubcachehit_event"></a>   
 ## ILStubCacheHit Event  
  The following table shows the keyword and level.  
@@ -74,8 +72,6 @@ ms.author: "mairaw"
 |ManagedInteropMethodName|win:UnicodeString|The name of the managed interop method.|  
 |ManagedInteropMethodSignature|win:UnicodeString|The signature of the managed interop method.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
   
 ## See also
 

@@ -51,8 +51,6 @@ ms.author: "mairaw"
 |OSThreadID|win:UInt32|Operating system ID of the thread that was created.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
 <a name="appdomainmemallocated_event"></a>   
 ## AppDomainMemAllocated Event  
  The following table shows the keyword and level.  
@@ -74,8 +72,6 @@ ms.author: "mairaw"
 |AppDomainID|win:UInt64|Identifier of the application domain for which resource usage is being reported.|  
 |Allocated|win:UInt64|The total number of bytes allocated in this application domain since the application domain was created (the amount of freed memory is not subtracted).|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
   
 <a name="appdomainmemsurvived_event"></a>   
 ## AppDomainMemSurvived Event  
@@ -100,8 +96,6 @@ ms.author: "mairaw"
 |ProcessSurvived|win:UInt64|The total bytes that survived from the last collection. After a full collection, this number represents the number of bytes being held live in managed heaps. After an ephemeral collection, this number represents the number of bytes held live in ephemeral generations.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
 <a name="threadappdomainenter_event"></a>   
 ## ThreadAppDomainEnter Event  
  The following table shows the keyword and level.  
@@ -124,8 +118,6 @@ ms.author: "mairaw"
 |ThreadID|win:UInt64|The thread identifier.|  
 |AppDomainID|win:UInt64|The application domain identifier.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
   
 <a name="threadterminated_event"></a>   
 ## ThreadTerminated Event  

@@ -119,8 +119,6 @@ ms.author: "mairaw"
 |NewThreadWaveMagnitude|Win:UInt16|The magnitude of future variations in active thread count.|  
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
 <a name="io"></a>   
 ## I/O Thread Events  
  These thread pool events occur for threads in the I/O thread pool (completion ports), which is asynchronous.  

@@ -132,8 +132,6 @@ The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameW
 
 Because the <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> option represents the default behavior of the regular expression engine, it is rarely explicitly specified in a method call. A constructor or static pattern-matching method without an `options` parameter is called instead.
 
-[Back to Top](#Top)
-
 <a name="Case"></a>
 
 ## Case-Insensitive Matching
@@ -149,8 +147,6 @@ The following example modifies the regular expression pattern from the previous 
 
 [!code-csharp[Conceptual.Regex.Language.Options#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/case2.cs#2)]
 [!code-vb[Conceptual.Regex.Language.Options#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/case2.vb#2)]
-
-[Back to Top](#Top)
 
 <a name="Multiline"></a>
 
@@ -181,8 +177,6 @@ The following example is equivalent to the previous one, except that it uses the
 [!code-csharp[Conceptual.Regex.Language.Options#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/multiline2.cs#4)]
 [!code-vb[Conceptual.Regex.Language.Options#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/multiline2.vb#4)]
 
-[Back to Top](#Top)
-
 <a name="Singleline"></a>
 
 ## Single-line Mode
@@ -198,8 +192,6 @@ The following example is equivalent to the previous one, except that it uses the
 
 [!code-csharp[Conceptual.Regex.Language.Options#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/singleline1.cs#5)]
 [!code-vb[Conceptual.Regex.Language.Options#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/singleline1.vb#5)]
-
-[Back to Top](#Top)
 
 <a name="Explicit"></a>
 
@@ -241,8 +233,6 @@ Finally, you can use the inline group element `(?n:)` to suppress automatic capt
 [!code-csharp[Conceptual.Regex.Language.Options#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/explicit3.cs#11)]
 [!code-vb[Conceptual.Regex.Language.Options#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/explicit3.vb#11)]
 
-[Back to Top](#Top)
-
 <a name="Compiled"></a>
 
 ## Compiled Regular Expressions
@@ -266,8 +256,6 @@ However, this improvement in performance occurs only under the following conditi
 
 > [!NOTE]
 > The <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is unrelated to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, which creates a special-purpose assembly that contains predefined compiled regular expressions.
-
-[Back to Top](#Top)
 
 <a name="Whitespace"></a>
 
@@ -309,8 +297,6 @@ The following example uses the inline option `(?x)` to ignore pattern white spac
 [!code-csharp[Conceptual.Regex.Language.Options#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/whitespace2.cs#13)]
 [!code-vb[Conceptual.Regex.Language.Options#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/whitespace2.vb#13)]
 
-[Back to Top](#Top)
-
 <a name="RightToLeft"></a>
 
 ## Right-to-Left Mode
@@ -339,8 +325,6 @@ The regular expression pattern is defined as shown in the following table.
 |`,?`|Match zero or one comma characters.|
 |`\s`|Match a white-space character.|
 |`\d{4}`|Match four decimal digits.|
-
-[Back to Top](#Top)
 
 <a name="ECMAScript"></a>
 
@@ -383,8 +367,6 @@ The behavior of ECMAScript and canonical regular expressions differs in three ar
   |`\0` followed by 0 to 2 octal digits|Interpret as an octal. For example, `\044` is always interpreted as an octal value and means "$".|Same behavior.|
   |`\` followed by a digit from 1 to 9, followed by no additional decimal digits,|Interpret as a backreference. For example, `\9` always means backreference 9, even if a ninth capturing group does not exist. If the capturing group does not exist, the regular expression parser throws an <xref:System.ArgumentException>.|If a single decimal digit capturing group exists, backreference to that digit. Otherwise, interpret the value as a literal.|
   |`\` followed by a digit from 1 to 9, followed by additional decimal digits|Interpret the digits as a decimal value. If that capturing group exists, interpret the expression as a backreference.<br /><br /> Otherwise, interpret the leading octal digits up to octal 377; that is, consider only the low 8 bits of the value. Interpret the remaining digits as literals. For example, in the expression `\3000`, if capturing group 300 exists, interpret as backreference 300; if capturing group 300 does not exist, interpret as octal 300 followed by 0.|Interpret as a backreference by converting as many digits as possible to a decimal value that can refer to a capture. If no digits can be converted, interpret as an octal by using the leading octal digits up to octal 377; interpret the remaining digits as literals.|
-
-[Back to Top](#Top)
 
 <a name="Invariant"></a>
 

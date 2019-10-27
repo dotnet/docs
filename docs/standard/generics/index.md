@@ -91,8 +91,6 @@ ms.author: "mairaw"
  [!code-csharp[Conceptual.Generics.Overview#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.generics.overview/cs/source.cs#5)]
  [!code-vb[Conceptual.Generics.Overview#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.generics.overview/vb/source.vb#5)]  
   
- [Back to top](#top)  
-  
 <a name="advantages_limitations"></a>   
 ## Advantages and disadvantages of generics  
  There are many advantages to using generic collections and delegates:  
@@ -126,8 +124,6 @@ ms.author: "mairaw"
   
      For more information, see "Nested Types" in <xref:System.Type.MakeGenericType%2A>.  
   
- [Back to top](#top)  
-  
 <a name="class_library_and_language_support"></a>   
 ## Class Library and Language Support  
  .NET provides a number of generic collection classes in the following namespaces:  
@@ -142,15 +138,11 @@ ms.author: "mairaw"
   
  The common language runtime provides new opcodes and prefixes to support generic types in Microsoft intermediate language (MSIL), including <xref:System.Reflection.Emit.OpCodes.Stelem>, <xref:System.Reflection.Emit.OpCodes.Ldelem>, <xref:System.Reflection.Emit.OpCodes.Unbox_Any>, <xref:System.Reflection.Emit.OpCodes.Constrained>, and <xref:System.Reflection.Emit.OpCodes.Readonly>.  
   
- Visual C++, C#, and Visual Basic all provide full support for defining and using generics. For more information about language support, see [Generic Types in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/generic-types.md), [Introduction to Generics](../../csharp/programming-guide/generics/index.md), and [Overview of Generics in Visual C++](/cpp/windows/overview-of-generics-in-visual-cpp).  
-  
- [Back to top](#top)  
+ Visual C++, C#, and Visual Basic all provide full support for defining and using generics. For more information about language support, see [Generic Types in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/generic-types.md), [Introduction to Generics](../../csharp/programming-guide/generics/index.md), and [Overview of Generics in Visual C++](/cpp/windows/overview-of-generics-in-visual-cpp). 
   
 <a name="nested_types_and_generics"></a>   
 ## Nested Types and Generics  
  A type that is nested in a generic type can depend on the type parameters of the enclosing generic type. The common language runtime considers nested types to be generic, even if they do not have generic type parameters of their own. When you create an instance of a nested type, you must specify type arguments for all enclosing generic types.  
-  
- [Back to top](#top)  
   
 <a name="related_topics"></a>   
 ## Related Topics  
@@ -176,4 +168,4 @@ ms.author: "mairaw"
   
  <xref:System.Reflection.Emit.OpCodes?displayProperty=nameWithType>  
   
- [Back to top](#top)
+ 

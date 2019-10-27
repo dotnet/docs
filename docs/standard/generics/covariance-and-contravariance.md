@@ -82,8 +82,6 @@ ms.author: "mairaw"
  [!code-csharp[CoContravarianceInClrGenericI#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontravarianceinclrgenerici/cs/example.cs#1)]
  [!code-vb[CoContravarianceInClrGenericI#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontravarianceinclrgenerici/vb/example.vb#1)]  
   
- [Back to top](#top)  
-  
 <a name="InterfaceContravariantTypeParameters"></a>   
 ## Generic Interfaces with Contravariant Generic Type Parameters  
  Starting with the .NET Framework 4, several generic interfaces have contravariant type parameters; for example: <xref:System.Collections.Generic.IComparer%601>, <xref:System.IComparable%601>, and <xref:System.Collections.Generic.IEqualityComparer%601>. These interfaces have only contravariant type parameters, so the type parameters are used only as parameter types in the members of the interfaces.  
@@ -96,8 +94,6 @@ ms.author: "mairaw"
   
  [!code-csharp[CoContravarianceInClrGenericI2#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontravarianceinclrgenerici2/cs/example.cs#1)]
  [!code-vb[CoContravarianceInClrGenericI2#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontravarianceinclrgenerici2/vb/example.vb#1)]  
-  
- [Back to top](#top)  
   
 <a name="DelegateVariantTypeParameters"></a>   
 ## Generic Delegates with Variant Type Parameters  
@@ -136,8 +132,6 @@ ms.author: "mairaw"
  [!code-csharp[CoContravarianceDelegatesGenRelaxed#1](../../../samples/snippets/csharp/VS_Snippets_CLR/cocontravariancedelegatesgenrelaxed/cs/example.cs#1)]
  [!code-vb[CoContravarianceDelegatesGenRelaxed#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/cocontravariancedelegatesgenrelaxed/vb/example.vb#1)]  
   
- [Back to top](#top)  
-  
 <a name="DefiningVariantTypeParameters"></a>   
 ## Defining Variant Generic Interfaces and Delegates  
  Starting with the .NET Framework 4, Visual Basic and C# have keywords that enable you to mark the generic type parameters of interfaces and delegates as covariant or contravariant.  
@@ -157,8 +151,6 @@ ms.author: "mairaw"
  Visual Basic and C# do not allow you to violate the rules for using covariant and contravariant type parameters, or to add covariance and contravariance annotations to the type parameters of types other than interfaces and delegates. The [MSIL Assembler](../../../docs/framework/tools/ilasm-exe-il-assembler.md) does not perform such checks, but a <xref:System.TypeLoadException> is thrown if you try to load a type that violates the rules.  
   
  For information and example code, see [Variance in Generic Interfaces (C#)](../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md) and [Variance in Generic Interfaces (Visual Basic)](../../visual-basic/programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md).  
-  
- [Back to top](#top)  
   
 <a name="VariantList"></a>   
 ## List of Variant Generic Interface and Delegate Types  

@@ -108,8 +108,6 @@ The .NET Framework provides the <xref:System.Security.Cryptography.Xml> namespac
 
 The classes in this namespace follow the [XML-Signature Syntax and Processing recommendation](https://www.w3.org/TR/xmldsig-core/) from the World Wide Web Consortium.
 
-[Back to top](#top)
-
 <a name="verify"></a>
 
 ## Verifying Signatures

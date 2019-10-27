@@ -62,8 +62,6 @@ The following table shows the event data:
 |MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
-[Back to top](#top)
-
 <a name="clr_method_marker_events"></a>
 
 ## CLR Method Marker Events
@@ -92,8 +90,6 @@ The following table shows the event data:
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-
-[Back to top](#top)
 
 <a name="clr_method_verbose_events"></a>
 
@@ -131,8 +127,6 @@ The following table shows the event data:
 |MethodName|win:UnicodeString|Full class name associated with the method.|
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-
-[Back to top](#top)
 
 <a name="methodjittingstarted_event"></a>
 

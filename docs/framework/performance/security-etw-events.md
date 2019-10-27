@@ -41,8 +41,6 @@ ms.author: "mairaw"
 |FullyQualifiedAssemblyName|win:UnicodeString|The fully qualified assembly name.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
 <a name="authenticodeverificationstart_v1_and_authenticodeverificationstop_v1_events"></a>   
 ## AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events  
  The following table shows the keyword and level.  

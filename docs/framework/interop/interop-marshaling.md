@@ -42,8 +42,6 @@ ms.author: "ronpet"
   
  At the lowest level, both mechanisms use the same interop marshaling service; however, certain data types are supported exclusively by COM interop or platform invoke. For details, see [Default Marshaling Behavior](default-marshaling-behavior.md).  
   
- [Back to top](#top)  
-  
 <a name="marshaling_and_com_apartments"></a>   
 ## Marshaling and COM Apartments  
  The interop marshaler marshals data between the common language runtime heap and the unmanaged heap. Marshaling occurs whenever the caller and callee cannot operate on the same instance of data. The interop marshaler makes it possible for the caller and callee to appear to be operating on the same data even if they have their own copy of the data.  
@@ -89,8 +87,6 @@ ms.author: "ronpet"
   
  For instructions on explicitly selecting an apartment model, see [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100)).  
   
- [Back to top](#top)  
-  
 <a name="marshaling_remote_calls"></a>   
 ## Marshaling Remote Calls  
  As with cross-apartment marshaling, COM marshaling is involved in each call between managed and unmanaged code whenever the objects reside in separate processes. For example:  
@@ -127,8 +123,6 @@ Remote calls across firewalls using SOAP or the TcpChannel class
   
  Some unmanaged calls can be channeled through SOAP, such as the calls between serviced components and COM.  
   
- [Back to top](#top)  
-  
 <a name="related_topics"></a>   
 ## Related Topics  
   
@@ -144,10 +138,6 @@ Remote calls across firewalls using SOAP or the TcpChannel class
 |[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Provides links to more information about incorporating COM components into your .NET Framework application.|  
 |[Design Considerations for Interoperation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100))|Provides tips for writing integrated COM components.|  
   
- [Back to top](#top)  
-  
 <a name="reference"></a>   
 ## Reference  
  <xref:System.Runtime.InteropServices?displayProperty=nameWithType>  
-  
- [Back to top](#top)

@@ -83,8 +83,6 @@ To achieve these goals, you can use a combination of algorithms and practices kn
 |Cryptographic signing|Helps verify that data originates from a specific party by creating a digital signature that is unique to that party. This process also uses hash functions.|
 |Cryptographic hashes|Maps data from any length to a fixed-length byte sequence. Hashes are statistically unique; a different two-byte sequence will not hash to the same value.|
 
-[Back to top](#top)
-
 <a name="secret_key"></a>
 
 ## Secret-Key Encryption
@@ -120,8 +118,6 @@ The .NET Framework provides the following classes that implement secret-key encr
 - <xref:System.Security.Cryptography.RijndaelManaged>.
 
 - <xref:System.Security.Cryptography.TripleDESCryptoServiceProvider>.
-
-[Back to top](#top)
 
 <a name="public_key"></a>
 
@@ -167,8 +163,6 @@ The .NET Framework provides the following classes that implement public-key encr
 
 RSA allows both encryption and signing, but DSA can be used only for signing, and Diffie-Hellman can be used only for key generation. In general, public-key algorithms are more limited in their uses than private-key algorithms.
 
-[Back to top](#top)
-
 <a name="digital_signatures"></a>
 
 ## Digital Signatures
@@ -189,8 +183,6 @@ The .NET Framework provides the following classes that implement digital signatu
 - <xref:System.Security.Cryptography.ECDsa> (base class)
 
 - <xref:System.Security.Cryptography.ECDsaCng>
-
- [Back to top](#top)
 
 <a name="hash_values"></a>
 
@@ -245,7 +237,7 @@ The .NET Framework provides the following classes that implement hashing algorit
 > [!NOTE]
 > MD5 design flaws were discovered in 1996, and SHA-1 was recommended instead. In 2004, additional flaws were discovered, and the MD5 algorithm is no longer considered secure. The SHA-1 algorithm has also been found to be insecure, and SHA-2 is now recommended instead.
 
-[Back to top](#top)
+
 
 <a name="random_numbers"></a>
 
@@ -254,8 +246,6 @@ The .NET Framework provides the following classes that implement hashing algorit
 Random number generation is integral to many cryptographic operations. For example, cryptographic keys need to be as random as possible so that it is infeasible to reproduce them. Cryptographic random number generators must generate output that is computationally infeasible to predict with a probability that is better than one half. Therefore, any method of predicting the next output bit must not perform better than random guessing. The classes in the .NET Framework use random number generators to generate cryptographic keys.
 
 The <xref:System.Security.Cryptography.RNGCryptoServiceProvider> class is an implementation of a random number generator algorithm.
-
-[Back to top](#top)
 
 <a name="clickonce"></a>
 
@@ -279,8 +269,6 @@ In the .NET Framework 3.5, the following cryptography classes let you obtain and
 
 - <xref:System.Security.Cryptography.X509Certificates.TrustStatus> provides a simple way to check whether an Authenticode signature is trusted.
 
-[Back to top](#top)
-
 <a name="suite_b"></a>
 
 ## Suite B Support
@@ -299,8 +287,6 @@ The following algorithms are included:
 
 Managed code wrappers for the Federal Information Processing Standard (FIPS) certified implementations of the AES, SHA-256, SHA-384, and SHA-512 implementations are available in the new <xref:System.Security.Cryptography.AesCryptoServiceProvider>, <xref:System.Security.Cryptography.SHA256CryptoServiceProvider>, <xref:System.Security.Cryptography.SHA384CryptoServiceProvider>, and <xref:System.Security.Cryptography.SHA512CryptoServiceProvider> classes.
 
-[Back to top](#top)
-
 <a name="cng"></a>
 
 ## Cryptography Next Generation (CNG) Classes
@@ -316,8 +302,6 @@ The .NET Framework 3.5 also includes a variety of supporting CNG classes, such a
 - <xref:System.Security.Cryptography.CngAlgorithm> maintains a CNG algorithm.
 
 - <xref:System.Security.Cryptography.CngProperty> maintains frequently used key properties.
-
-[Back to top](#top)
 
 <a name="related_topics"></a>
 

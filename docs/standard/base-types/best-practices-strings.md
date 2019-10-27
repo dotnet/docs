@@ -73,9 +73,7 @@ ms.custom: seodec18
   
 - Do not use an overload of the <xref:System.String.Compare%2A?displayProperty=nameWithType> or <xref:System.String.CompareTo%2A> method and test for a return value of zero to determine whether two strings are equal.  
   
-- Do not use culture-sensitive formatting to persist numeric data or date and time data in string form.  
-  
- [Back to top](#top)  
+- Do not use culture-sensitive formatting to persist numeric data or date and time data in string form.    
   
 <a name="specifying_string_comparisons_explicitly"></a>   
 ## Specifying String Comparisons Explicitly  
@@ -111,8 +109,6 @@ ms.custom: seodec18
   
  [!code-csharp[Conceptual.Strings.BestPractices#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/explicitargs1.cs#2)]
  [!code-vb[Conceptual.Strings.BestPractices#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/explicitargs1.vb#2)]  
-  
- [Back to top](#top)  
   
 <a name="the_details_of_string_comparison"></a>   
 ## The Details of String Comparison  
@@ -226,9 +222,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
   
  When interpreting file names, cookies, or anything else where a combination such as "å" can appear, ordinal comparisons still offer the most transparent and fitting behavior.  
   
- On balance, the invariant culture has very few properties that make it useful for comparison. It does comparison in a linguistically relevant manner, which prevents it from guaranteeing full symbolic equivalence, but it is not the choice for display in any culture. One of the few reasons to use <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> for comparison is to persist ordered data for a cross-culturally identical display. For example, if a large data file that contains a list of sorted identifiers for display accompanies an application, adding to this list would require an insertion with invariant-style sorting.  
-  
- [Back to top](#top)  
+ On balance, the invariant culture has very few properties that make it useful for comparison. It does comparison in a linguistically relevant manner, which prevents it from guaranteeing full symbolic equivalence, but it is not the choice for display in any culture. One of the few reasons to use <xref:System.StringComparison.InvariantCulture?displayProperty=nameWithType> for comparison is to persist ordered data for a cross-culturally identical display. For example, if a large data file that contains a list of sorted identifiers for display accompanies an application, adding to this list would require an insertion with invariant-style sorting.    
   
 <a name="choosing_a_stringcomparison_member_for_your_method_call"></a>   
 ## Choosing a StringComparison Member for Your Method Call  
@@ -239,9 +233,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
 |Case-sensitive internal identifiers.<br /><br /> Case-sensitive identifiers in standards such as XML and HTTP.<br /><br /> Case-sensitive security-related settings.|A non-linguistic identifier, where bytes match exactly.|<xref:System.StringComparison.Ordinal>|  
 |Case-insensitive internal identifiers.<br /><br /> Case-insensitive identifiers in standards such as XML and HTTP.<br /><br /> File paths.<br /><br /> Registry keys and values.<br /><br /> Environment variables.<br /><br /> Resource identifiers (for example, handle names).<br /><br /> Case-insensitive security-related settings.|A non-linguistic identifier, where case is irrelevant; especially data stored in most Windows system services.|<xref:System.StringComparison.OrdinalIgnoreCase>|  
 |Some persisted, linguistically relevant data.<br /><br /> Display of linguistic data that requires a fixed sort order.|Culturally agnostic data that still is linguistically relevant.|<xref:System.StringComparison.InvariantCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.InvariantCultureIgnoreCase>|  
-|Data displayed to the user.<br /><br /> Most user input.|Data that requires local linguistic customs.|<xref:System.StringComparison.CurrentCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.CurrentCultureIgnoreCase>|  
-  
- [Back to top](#top)  
+|Data displayed to the user.<br /><br /> Most user input.|Data that requires local linguistic customs.|<xref:System.StringComparison.CurrentCulture><br /><br /> -or-<br /><br /> <xref:System.StringComparison.CurrentCultureIgnoreCase>|   
   
 <a name="common_string_comparison_methods_in_the_net_framework"></a>   
 ## Common String Comparison Methods in .NET  
@@ -293,9 +285,7 @@ In addition, string comparisons using different versions of .NET or using .NET o
   
  There is a lack of consistency in how the default overloads of these methods perform comparisons. All <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> methods that include a <xref:System.Char> parameter perform an ordinal comparison, but the default <xref:System.String.IndexOf%2A?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%2A?displayProperty=nameWithType> methods that include a <xref:System.String> parameter perform a culture-sensitive comparison.  
   
- If you call the <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> or <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> method and pass it a string to locate in the current instance, we recommend that you call an overload that explicitly specifies the <xref:System.StringComparison> type. The overloads that include a <xref:System.Char> argument do not allow you to specify a <xref:System.StringComparison> type.  
-  
- [Back to top](#top)  
+ If you call the <xref:System.String.IndexOf%28System.String%29?displayProperty=nameWithType> or <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> method and pass it a string to locate in the current instance, we recommend that you call an overload that explicitly specifies the <xref:System.StringComparison> type. The overloads that include a <xref:System.Char> argument do not allow you to specify a <xref:System.StringComparison> type.   
   
 <a name="methods_that_perform_string_comparison_indirectly"></a>   
 ## Methods that Perform String Comparison Indirectly  
@@ -338,8 +328,6 @@ In addition, string comparisons using different versions of .NET or using .NET o
   
  [!code-csharp[Conceptual.Strings.BestPractices#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/indirect2.cs#10)]
  [!code-vb[Conceptual.Strings.BestPractices#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/indirect2.vb#10)]  
-  
- [Back to top](#top)  
   
 <a name="Formatted"></a>   
 ## Displaying and Persisting Formatted Data

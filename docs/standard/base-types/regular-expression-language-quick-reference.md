@@ -46,8 +46,6 @@ ms.author: "ronpet"
 |`\u` *nnnn*|Matches a Unicode character by using hexadecimal representation (exactly four digits, as represented by *nnnn*).|`\w\u0020\w`|`"a b"`, `"c d"` in `"a bc d"`|  
 |`\`|When followed by a character that is not recognized as an escaped character in this and other tables in this topic, matches that character. For example, `\*` is the same as `\x2A`, and `\.` is the same as `\x2E`. This allows the regular expression engine to disambiguate language elements (such as \* or ?) and character literals (represented by `\*` or `\?`).|`\d+[\+-x\*]\d+`|`"2+2"` and `"3*9"` in `"(2+2) * 3*9"`|  
   
- [Back to top](#top)  
-  
 ## Character Classes  
  A character class matches any one of a set of characters. Character classes include the language elements listed in the following table. For more information, see [Character Classes](../../../docs/standard/base-types/character-classes-in-regular-expressions.md).  
   
@@ -66,8 +64,6 @@ ms.author: "ronpet"
 |`\d`|Matches any decimal digit.|`\d`|`"4"` in `"4 = IV"`|  
 |`\D`|Matches any character other than a decimal digit.|`\D`|`" "`, `"="`, `" "`, `"I"`, `"V"` in `"4 = IV"`|  
   
- [Back to top](#top)  
-  
 ## Anchors  
  Anchors, or atomic zero-width assertions, cause a match to succeed or fail depending on the current position in the string, but they do not cause the engine to advance through the string or consume characters. The metacharacters listed in the following table are anchors. For more information, see [Anchors](../../../docs/standard/base-types/anchors-in-regular-expressions.md).  
   
@@ -81,8 +77,6 @@ ms.author: "ronpet"
 |`\G`|The match must occur at the point where the previous match ended.|`\G\(\d\)`|`"(1)"`, `"(3)"`, `"(5)"` in `"(1)(3)(5)[7](9)"`|  
 |`\b`|The match must occur on a boundary between a `\w` (alphanumeric) and a `\W` (nonalphanumeric) character.|`\b\w+\s\w+\b`|`"them theme"`, `"them them"` in `"them theme them them"`|  
 |`\B`|The match must not occur on a `\b` boundary.|`\Bend\w*\b`|`"ends"`, `"ender"` in `"end sends endure lender"`|  
-  
- [Back to top](#top)  
   
 ## Grouping Constructs  
  Grouping constructs delineate subexpressions of a regular expression and typically capture substrings of an input string. Grouping constructs include the language elements listed in the following table. For more information, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).  
@@ -100,8 +94,6 @@ ms.author: "ronpet"
 |`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`(?<!19)\d{2}\b`|`"51"`, `"03"` in `"1851 1999 1950 1905 2003"`|  
 |`(?>` *subexpression* `)`|Nonbacktracking (or "greedy") subexpression.|`[13579](?>A+B+)`|`"1ABB"`, `"3ABB"`, and `"5AB"` in `"1ABB 3ABBC 5AB 5AC"`|  
   
- [Back to top](#top)  
-  
 ## Quantifiers  
  A quantifier specifies how many instances of the previous element (which can be a character, a group, or a character class) must be present in the input string for a match to occur. Quantifiers include the language elements listed in the following table. For more information, see [Quantifiers](quantifiers-in-regular-expressions.md).  
   
@@ -118,9 +110,7 @@ ms.author: "ronpet"
 |`??`|Matches the previous element zero or one time, but as few times as possible.|`"rai??n"`|`"ran"`, `"rain"`|  
 |`{` *n* `}?`|Matches the preceding element exactly *n* times.|`",\d{3}?"`|`",043"` in `"1,043.6"`, `",876"`, `",543"`, and `",210"` in `"9,876,543,210"`|  
 |`{` *n* `,}?`|Matches the previous element at least *n* times, but as few times as possible.|`"\d{2,}?"`|`"166"`, `"29"`, `"1930"`|  
-|`{` *n* `,` *m* `}?`|Matches the previous element between *n* and *m* times, but as few times as possible.|`"\d{3,5}?"`|`"166"`, `"17668"`<br /><br /> `"193"`, `"024"` in `"193024"`|  
-  
- [Back to top](#top)  
+|`{` *n* `,` *m* `}?`|Matches the previous element between *n* and *m* times, but as few times as possible.|`"\d{3,5}?"`|`"166"`, `"17668"`<br /><br /> `"193"`, `"024"` in `"193024"`| 
   
 ## Backreference Constructs  
  A backreference allows a previously matched subexpression to be identified subsequently in the same regular expression. The following table lists the backreference constructs supported by regular expressions in .NET. For more information, see [Backreference Constructs](backreference-constructs-in-regular-expressions.md).  
@@ -130,8 +120,6 @@ ms.author: "ronpet"
 |`\` *number*|Backreference. Matches the value of a numbered subexpression.|`(\w)\1`|`"ee"` in `"seek"`|  
 |`\k<` *name* `>`|Named backreference. Matches the value of a named expression.|`(?<char>\w)\k<char>`|`"ee"` in `"seek"`|  
   
- [Back to top](#top)  
-  
 ## Alternation Constructs  
  Alternation constructs modify a regular expression to enable either/or matching. These constructs include the language elements listed in the following table. For more information, see [Alternation Constructs](alternation-constructs-in-regular-expressions.md).  
   
@@ -140,8 +128,6 @@ ms.author: "ronpet"
 |<code>&#124;</code>|Matches any one element separated by the vertical bar (<code>&#124;</code>) character.|<code>th(e&#124;is&#124;at)</code>|`"the"`, `"this"` in `"this is the day."`|  
 |`(?(` *expression* `)` *yes* <code>&#124;</code> *no* `)`|Matches *yes* if the regular expression pattern designated by *expression* matches; otherwise, matches the optional *no* part. *expression* is interpreted as a zero-width assertion.|<code>(?(A)A\d{2}\b&#124;\b\d{3}\b)</code>|`"A10"`, `"910"` in `"A10 C103 910"`|  
 |`(?(` *name* `)` *yes* <code>&#124;</code> *no* `)`|Matches *yes* if *name*, a named or numbered capturing group, has a match; otherwise, matches the optional *no*.|<code>(?&lt;quoted&gt;&quot;)?(?(quoted).+?&quot;&#124;\S+\s)</code>|`"Dogs.jpg "`, `"\"Yiska playing.jpg\""` in `"Dogs.jpg \"Yiska playing.jpg\""`|  
-  
- [Back to top](#top)  
   
 ## Substitutions  
  Substitutions are regular expression language elements that are supported in replacement patterns. For more information, see [Substitutions](substitutions-in-regular-expressions.md). The metacharacters listed in the following table are atomic zero-width assertions.  
@@ -156,8 +142,6 @@ ms.author: "ronpet"
 |`$'`|Substitutes all the text of the input string after the match.|`B+`|`$'`|`"AABBCC"`|`"AACCCC"`|  
 |`$+`|Substitutes the last group that was captured.|`B+(C+)`|`$+`|`"AABBCCDD"`|`"AACCDD"`|  
 |`$_`|Substitutes the entire input string.|`B+`|`$_`|`"AABBCC"`|`"AAAABBCCCC"`|  
-  
- [Back to top](#top)  
   
 ## Regular Expression Options  
  You can specify options that control how the regular expression engine interprets a regular expression pattern. Many of these options can be specified either inline (in the regular expression pattern) or as one or more <xref:System.Text.RegularExpressions.RegexOptions> constants. This quick reference lists only inline options. For more information about inline and <xref:System.Text.RegularExpressions.RegexOptions> options, see the article [Regular Expression Options](regular-expression-options.md).  
@@ -177,8 +161,6 @@ ms.author: "ronpet"
 |`n`|Do not capture unnamed groups.|For an example, see the "Explicit Captures Only" section in [Regular Expression Options](regular-expression-options.md).||  
 |`s`|Use single-line mode.|For an example, see the "Single-line Mode" section in [Regular Expression Options](regular-expression-options.md).||  
 |`x`|Ignore unescaped white space in the regular expression pattern.|`\b(?x) \d+ \s \w+`|`"1 aardvark"`, `"2 cats"` in `"1 aardvark 2 cats IV centurions"`|  
-  
- [Back to top](#top)  
   
 ## Miscellaneous Constructs  
  Miscellaneous constructs either modify a regular expression pattern or provide information about it. The following table lists the miscellaneous constructs supported by .NET. For more information, see [Miscellaneous Constructs](miscellaneous-constructs-in-regular-expressions.md).  

@@ -1,7 +1,7 @@
 ---
 title: Pattern Matching
 description: Learn how patterns are used in F# to compare data with logical structures, decompose data into constituent parts, or extract information from data.
-ms.date: 05/16/2016
+ms.date: 10/27/2019
 ---
 # Pattern Matching
 

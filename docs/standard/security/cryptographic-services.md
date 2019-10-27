@@ -237,8 +237,6 @@ The .NET Framework provides the following classes that implement hashing algorit
 > [!NOTE]
 > MD5 design flaws were discovered in 1996, and SHA-1 was recommended instead. In 2004, additional flaws were discovered, and the MD5 algorithm is no longer considered secure. The SHA-1 algorithm has also been found to be insecure, and SHA-2 is now recommended instead.
 
-
-
 <a name="random_numbers"></a>
 
 ## Random Number Generation

@@ -263,8 +263,6 @@ ms.author: "mairaw"
 |TypeName|win:UnicodeString|The name of the type that was allocated. When there are several types of objects that were allocated during this event, this is the type of the last object allocated (the object that caused the 100 KB threshold to be exceeded).|  
 |HeapIndex|win:UInt32|The heap where the object was allocated. This value is 0 (zero) when running with workstation garbage collection.|  
   
-   
-  
 <a name="gcfinalizersbegin_v1_event"></a>   
 ## GCFinalizersBegin_V1 Event  
  The following table shows the keyword and level.  

@@ -42,6 +42,8 @@ Public Property Name As String
 End Property
 ```
 
+The `NameOf` operator is available in Visual Basic 14 and later.
+
 ## See also
 
 - [Visual Basic Language Reference](../index.md)

@@ -58,7 +58,7 @@ To load data from a SQL Server database into Module Builder:
     1. Select **OK**
 1. Choose the data set name from the **Table Name** dropdown.
 1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
-2. From the **Input Columns (Features)** dropdown, confirm the columns you want to include are checked. 
+1. From the **Input Columns (Features)** dropdown, confirm the columns you want to include are checked. 
 
 You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in the Model Builder tool.
 
@@ -68,8 +68,8 @@ Model Builder expects image data to be JPG files organized in folders that corre
 
 To load images into Model Builder, provide the path to a single top-level directory:
 
- - This top-level directory contains one subfolder for each of the categories to predict. 
- - Each subfolder contains the image files belonging to its category. 
+- This top-level directory contains one subfolder for each of the categories to predict. 
+- Each subfolder contains the image files belonging to its category. 
  
 In the folder structure illustrated below, the top-level directory is *flower_photos*. There are five subdirectories corresponding to the categories you want to predict: daisy, dandelion, roses, sunflowers, and tulips. Each of these subdirectories contains images belonging to its respective category. 
 

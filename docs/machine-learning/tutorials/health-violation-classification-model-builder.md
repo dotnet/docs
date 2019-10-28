@@ -27,7 +27,7 @@ In this tutorial, you learn how to:
 > [!NOTE]
 > Model Builder is currently in Preview.
 
-## Pre-requisites
+## Prerequisites
 
 For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 

@@ -57,8 +57,8 @@ The topics in this section describe event tracing for Windows (ETW) events. Each
   
 ## See also
 
-- [Improve Debugging And Performance Tuning With ETW](https://go.microsoft.com/fwlink/?LinkId=179696)
-- [Windows Performance Blog](https://go.microsoft.com/fwlink/?LinkId=179509)
+- [Improve Debugging And Performance Tuning With ETW](https://msdn.microsoft.com/magazine/cc163437.aspx)
+- [Windows Performance Blog](https://blogs.msdn.microsoft.com/pigscanfly/tag/xperf/)
 - [Controlling .NET Framework Logging](controlling-logging.md)
 - [CLR ETW Providers](clr-etw-providers.md)
 - [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md)

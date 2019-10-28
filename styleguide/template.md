@@ -309,6 +309,7 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
+|protobuf|protobuf|
 |PowerApps (dot decimal separator)|powerapps-dot|
 |PowerApps (comma decimal separator)|powerapps-comma|
 |PowerShell|powershell|

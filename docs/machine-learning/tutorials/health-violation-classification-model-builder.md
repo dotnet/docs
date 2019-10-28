@@ -158,7 +158,7 @@ Two projects are created as a result of the training process.
 
 If you need to reference the generated projects at a later time inside of another solution, you can find them inside the `C:\Users\%USERNAME%\AppData\Local\Temp\MLVSTools` directory.
 
-Congratulations! You've now successfully built a machine learning model to categorize the risk of health violations using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.
+Congratulations! You've successfully built a machine learning model to categorize the risk of health violations using Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.
 
 ## Additional resources
 

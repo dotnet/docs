@@ -81,7 +81,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 1. Choose **Violations** from the **Table Name** dropdown.
 1. Choose **RiskCategory** in the **Column to Predict (Label)** dropdown.
 1. Leave the default column selections, **InspectionType** and **ViolationDescription**, checked in the **Input Columns (Features)** dropdown.
-1. Select the **Train** link to move to the next step in the Model Builder tool.
+1. Select the **Train** link to move to the next step in Model Builder.
 
 ## Train the model
 

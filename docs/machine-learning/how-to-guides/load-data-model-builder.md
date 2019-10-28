@@ -37,7 +37,7 @@ This article covers classification and regression scenarios with textual or nume
 
 You can load text or numeric data from a file into Model Builder. It accepts comma-delimited (CSV) or tab-delimited (TSV) file formats. 
 
-1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
+1. In the data step of Model Builder, select **File** from the data source dropdown.
 2. Select the button next to the **Select a file** text box, and use File Explorer to browse and select the data file.
 3. Choose a category in the **Column to Predict (Label)** dropdown.
 4. From the **Input Columns (Features)** dropdown, confirm the data columns you want to include are checked.

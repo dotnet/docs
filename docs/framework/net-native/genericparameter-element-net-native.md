@@ -21,7 +21,7 @@ Applies policy to the parameter type of a generic type or method.
                   XmlSerializer="policy_type"  
                   MarshalObject="policy_type"  
                   MarshalDelegate="policy_type"  
-                  MarshalStructure="policy_type"  
+                  MarshalStructure="policy_type" />
 ```  
   
 ## Attributes and Elements  

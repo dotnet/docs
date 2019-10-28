@@ -8,7 +8,7 @@ ms.assetid: 5d9de735-2099-47f1-b7e7-60856f494924
   
 ## Syntax  
   
-```  
+```csharp  
 -- text_of_comment  
 ```  
   

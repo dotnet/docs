@@ -229,7 +229,7 @@ For the operands of the `decimal` type, arithmetic overflow always throws an <xr
 
 ## Round-off errors
 
-Because of general limitations of the floating-point representation of real numbers and the floating-point arithmetic, the round-off errors might occur in calculations with floating-point types. That is, the produced result of an expression might differ from the expected mathematical result. The following example demonstrates several such cases:
+Because of general limitations of the floating-point representation of real numbers and floating-point arithmetic, round-off errors might occur in calculations with floating-point types. That is, the produced result of an expression might differ from the expected mathematical result. The following example demonstrates several such cases:
 
 [!code-csharp-interactive[round-off errors](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#RoundOffErrors)]
 

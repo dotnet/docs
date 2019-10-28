@@ -23,7 +23,7 @@ condition ? consequent : alternative
 
 The `condition` expression must evaluate to `true` or `false`. If `condition` evaluates to `true`, the `consequent` expression is evaluated, and its result becomes the result of the operation. If `condition` evaluates to `false`, the `alternative` expression is evaluated, and its result becomes the result of the operation. Only `consequent` or `alternative` is evaluated.
 
-The type of `consequent` and `alternative` must be the same, or there must be an implicit conversion from one type to another.
+The type of `consequent` and `alternative` must be the same, or there must be an implicit conversion from one type to the other.
 
 The conditional operator is right-associative, that is, an expression of the form
 

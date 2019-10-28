@@ -187,7 +187,7 @@ The following example demonstrates the type test pattern.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4816.fs)]
 
-The `as identifier` part of the pattern is not necessary if you are only checking if an identifier is of a particular derived type.
+If you're only checking if an identifier is of a particular derived type, you don't need the `as identifier` part of the pattern, as shown in the following example:
 
 ```fsharp
 type A() = class end

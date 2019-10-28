@@ -57,5 +57,5 @@ This section provides information about the GDI+ API for programmers using manag
 
 ## Related sections
 
-[Using Managed Graphics Classes](using-managed-graphics-classes.md)  
- Contains links to topics that demonstrate how to use the `Graphics` programming interface.
+[Using Managed Graphics Classes](using-managed-graphics-classes.md)\
+Contains links to topics that demonstrate how to use the `Graphics` programming interface.

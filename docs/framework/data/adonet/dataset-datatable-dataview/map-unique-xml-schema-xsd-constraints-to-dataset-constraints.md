@@ -44,13 +44,13 @@ In an XML Schema definition language (XSD) schema, the **unique** element specif
   
  The **unique** element in the schema specifies that for all **Customers** elements in a document instance, the value of the **CustomerID** child element must be unique. In building the **DataSet**, the mapping process reads this schema and generates the following table:  
   
-```  
+```text  
 Customers (CustomerID, CompanyName, Phone)  
 ```  
   
  The mapping process also creates a unique constraint on the **CustomerID** column, as shown in the following **DataSet**. (For simplicity, only relevant properties are shown.)  
   
-```  
+```text  
       DataSetName: MyDataSet  
 TableName: Customers  
   ColumnName: CustomerID  
@@ -58,7 +58,7 @@ TableName: Customers
       Unique: True  
   ConstraintName: UcustID       Type: UniqueConstraint  
       Table: Customers  
-      Columns: CustomerID   
+      Columns: CustomerID
       IsPrimaryKey: False  
 ```  
   
@@ -80,10 +80,10 @@ TableName: Customers
   
  This is the constraint that is created in the resulting **DataSet**.  
   
-```  
+```text  
 ConstraintName: SomeName  
   Table: Customers  
-  Columns: CustomerID CompanyName   
+  Columns: CustomerID CompanyName
   IsPrimaryKey: False  
 ```  
   

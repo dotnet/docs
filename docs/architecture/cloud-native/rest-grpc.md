@@ -9,7 +9,7 @@ ms.date: 09/08/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. REST is an architectural style that promotes interoperability between distributed computer systems. It uses a request/response model where every response from the server is to a request from the client. While widely popular, REST isn't a perfect fit for every problem. A newer communication technology, entitled gRPC, is rapidly gaining popularity and making its way into the cloud-native world.
+So far in this book, we’ve focused on [REST-based](/azure/architecture/best-practices/api-design) communication. REST is an architectural style that promotes interoperability between distributed computer systems. It uses a request/response model where every response from the server is to a request from the client. While widely popular, REST isn't a perfect fit for every problem. A newer communication technology, entitled gRPC, is rapidly gaining popularity and making its way into the cloud-native world.
 
 ## gRPC
 
@@ -21,13 +21,13 @@ gRPC is a modern RPC framework that is lightweight and highly performant. It use
 - While HTTP 1.1 is limited to processing one round-trip request/response at a time, HTTP/2 supports multiplexing, or multiple parallel requests over the same connection.
 - HTTP/2 supports full-duplex, or bidirectional communication, where both client and server and can communicate at the same time. The client can be uploading request data at the same time the server is sending back response data.
 - Streaming is built into HTTP/2 meaning that both requests and responses can asynchronously stream large data sets.
-- Combining gRPC and HTTP/2, performance dramatically increases. In [Windows Communication Foundation (WCF)](https://docs.microsoft.com/dotnet/framework/wcf/whats-wcf) parlance, gPRC performance meets and exceeds the speed and efficiency of [NetTCP bindings](https://docs.microsoft.com/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). However, unlike NetTCP, gRPC isn't constrained to Microsoft languages such as C# or VB.NET.
+- Combining gRPC and HTTP/2, performance dramatically increases. In [Windows Communication Foundation (WCF)](/dotnet/framework/wcf/whats-wcf) parlance, gPRC performance meets and exceeds the speed and efficiency of [NetTCP bindings](/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). However, unlike NetTCP, gRPC isn't constrained to Microsoft languages such as C# or VB.NET.
 
 gRPC is supported across most popular platforms, including Java, C#, Golang, and NodeJS. 
 
 ## Protocol Buffers
 
-gRPC embraces another open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) or Protobuf messages to send and receive data. Similar to a [WCF Data Contract](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/using-data-contracts), Protobuf serializes structured data for systems to read and write. It reduces the overhead that human-readable formats like XML or JSON incur.
+gRPC embraces another open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview) or Protobuf messages to send and receive data. Similar to a [WCF Data Contract](/dotnet/framework/wcf/feature-details/using-data-contracts), Protobuf serializes structured data for systems to read and write. It reduces the overhead that human-readable formats like XML or JSON incur.
 
 Many object serialization techniques reflect across the structure of data objects at run-time. Protobuf requires you to define the structure up front with a platform-agnostic language (Protocol Buffer Language). Each definition is stored in a ".proto" file. Then using Protobuf compiler, "Proton," you generate client and server code for any of the supported platforms. The generated code is optimized for fast serialization/deserialization of data. At runtime, each message is wrapped in the strongly-typed service contract and serialized in a standard Protobuf representation.
 

@@ -31,9 +31,9 @@ Many companies employ dozens of staff members and allocate large budgets to supp
 
 Serverless uses individual short-running functions that are called in response to some trigger. This makes them ideal for processing background tasks.
 
-For example, an application might need to send an email as part of processing a request. Instead of sending the email as part of handling the web request, the details of the email could be placed onto a queue and an Azure Function could be used to pick up the message and send the email. Many different parts of the application, or even many applications, could leverage this same Azure Function, providing improved performance and scalability for the applications and using [queue-based load leveling](https://docs.microsoft.com/azure/architecture/patterns/queue-based-load-leveling) to avoid bottlenecks related to sending the emails.
+For example, an application might need to send an email as part of processing a request. Instead of sending the email as part of handling the web request, the details of the email could be placed onto a queue and an Azure Function could be used to pick up the message and send the email. Many different parts of the application, or even many applications, could leverage this same Azure Function, providing improved performance and scalability for the applications and using [queue-based load leveling](/azure/architecture/patterns/queue-based-load-leveling) to avoid bottlenecks related to sending the emails.
 
-Although a [Publisher/Subscriber pattern](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber) between applications and Azure Functions is the most common pattern, other patterns are possible. Azure Functions can be triggered by other events, such as changes to Azure Blob Storage. An application that supported image uploads could have an Azure Function responsible for creating thumbnail images, or resizing uploaded images to consistent dimensions, or optimizing image size. All of this functionality could be triggered directly by inserts to Azure Blob Storage, keeping the complexity and the workload out of the application itself.
+Although a [Publisher/Subscriber pattern](/azure/architecture/patterns/publisher-subscriber) between applications and Azure Functions is the most common pattern, other patterns are possible. Azure Functions can be triggered by other events, such as changes to Azure Blob Storage. An application that supported image uploads could have an Azure Function responsible for creating thumbnail images, or resizing uploaded images to consistent dimensions, or optimizing image size. All of this functionality could be triggered directly by inserts to Azure Blob Storage, keeping the complexity and the workload out of the application itself.
 
 Many applications have long-running processes as part of their workflows. Often these tasks are done as part of the user's interaction with the application, forcing the user to wait and negatively impacting their experience. Serverless computing provides a great way to perform slower tasks outside of the user interaction loop, and these tasks can easily scale with demand without requiring the entire application to scale.
 
@@ -44,7 +44,7 @@ Serverless computing is best-used for tasks that don't block the user interface.
 ![Cold versus warm start](./media/cold-start-warm-start.png)
 **Figure 3-10**. Cold start versus warm start.
 
-If you need to avoid cold starts entirely, you can choose to switch from a [consumption plan to a dedicated plan](https://azure.microsoft.com/blog/understanding-serverless-cold-start/). You can also [configure one or more pre-warmed instances](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances) with the premium plan so when you need to add another instance, it's already up and ready to go. These options can mitigate one of the key concerns associated with serverless computing.
+If you need to avoid cold starts entirely, you can choose to switch from a [consumption plan to a dedicated plan](https://azure.microsoft.com/blog/understanding-serverless-cold-start/). You can also [configure one or more pre-warmed instances](/azure/azure-functions/functions-premium-plan#pre-warmed-instances) with the premium plan so when you need to add another instance, it's already up and ready to go. These options can mitigate one of the key concerns associated with serverless computing.
 
 You should also typically avoid serverless for long-running tasks. They're best for small pieces of work that can be completed quickly. Most serverless platforms require individual functions to complete within a few minutes. Azure Functions defaults to a 5-minute time-out duration (can be configured up to 10 minutes). The Azure Functions premium plan can mitigate this issue as well, defaulting time outs to 30 minutes and allowing an unbounded higher limit to be configured.
 
@@ -53,8 +53,8 @@ Finally, leveraging serverless for certain tasks within your application adds co
 ## References
 
 - [Understanding serverless cold start](https://azure.microsoft.com/blog/understanding-serverless-cold-start/)
-- [Pre-warmed Azure Functions instances](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
-- [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Pre-warmed Azure Functions instances](/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
+- [Create a function on Linux using a custom image](/azure/azure-functions/functions-create-function-linux-custom-image)
 
 >[!div class="step-by-step"]
 >[Previous](leverage-containers-orchestrators.md)

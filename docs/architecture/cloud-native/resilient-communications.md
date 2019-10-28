@@ -20,7 +20,7 @@ While these concerns can be addressed with various libraries and frameworks, imp
 
 ## Service mesh
 
-A better approach is to consider a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and many of the challenges mentioned above. It decouples these concerns from your business code and moves them into a service proxy, an instance of which accompanies each of your services. Often referred to as the [Sidecar pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar), the service mesh proxy is deployed into a separate process to provide isolation and encapsulation from your business code. However, the proxy is closely linked to the service being created along with it and sharing its lifecycle. Figure 6-9 shows this scenario.
+A better approach is to consider a new and rapidly evolving technology entitled *Service Mesh*. A [service mesh](https://www.nginx.com/blog/what-is-a-service-mesh/) is a configurable infrastructure layer with built-in capabilities to handle service communication and many of the challenges mentioned above. It decouples these concerns from your business code and moves them into a service proxy, an instance of which accompanies each of your services. Often referred to as the [Sidecar pattern](/azure/architecture/patterns/sidecar), the service mesh proxy is deployed into a separate process to provide isolation and encapsulation from your business code. However, the proxy is closely linked to the service being created along with it and sharing its lifecycle. Figure 6-9 shows this scenario.
 
 ![Service mesh with a side car](./media/service-mesh-with-side-car.png)
 
@@ -64,8 +64,8 @@ As previously discussed, Envoy is deployed as a sidecar to each microservice in 
 
 The Azure cloud embraces Istio and provides direct support for it within Azure Kubernetes Services. The following links can help you get started:
 
-- [Installing Istio in AKS](https://docs.microsoft.com/azure/aks/istio-install)
-- [Using AKS and Istio](https://docs.microsoft.com/azure/aks/istio-scenario-routing)
+- [Installing Istio in AKS](/azure/aks/istio-install)
+- [Using AKS and Istio](/azure/aks/istio-scenario-routing)
 
 >[!div class="step-by-step"]
 >[Previous](infrastructure-resiliency-azure.md)

@@ -20,7 +20,7 @@ In the previous figure, note how each client, microservice, and cloud-based [bac
 So, what could go wrong?
 
 - Unexpected [network latency](https://www.techopedia.com/definition/8553/network-latency).
-- [Transient faults](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)
+- [Transient faults](/azure/architecture/best-practices/transient-faults)
     (temporary network connectivity errors).
 - Blocking by a long-running synchronous operation.
 - A host process that has crashed and is being restarted or moved.

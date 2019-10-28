@@ -30,7 +30,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 
 Now publish your application, either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the .NET Core CLI.
 
-When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, refer to the [.NET Core application deployment](https://docs.microsoft.com/dotnet/core/deploying/) documentation.
+When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, refer to the [.NET Core application deployment](/dotnet/core/deploying/) documentation.
 
 To publish a self-contained build of the application that does not require the .NET Core 3.0 runtime to be installed on the host, specify the runtime to be included with the application using the `-r` (or `--runtime`) flag.
 
@@ -44,7 +44,7 @@ To publish a framework-dependent build, omit the `-r` flag.
 dotnet publish -c Release -o ./publish
 ```
 
-Copy the complete contents of the `publish` directory to an installation folder, and use the [sc utility](https://docs.microsoft.com/windows/desktop/services/controlling-a-service-using-sc) to create a Windows service for the executable.
+Copy the complete contents of the `publish` directory to an installation folder, and use the [sc utility](/windows/desktop/services/controlling-a-service-using-sc) to create a Windows service for the executable.
 
 ```console
 sc create MyService binPath=C:\MyService\MyService.exe
@@ -52,7 +52,7 @@ sc create MyService binPath=C:\MyService\MyService.exe
 
 ### Log to Windows Event Log
 
-The `UseWindowsService` method automatically adds a [Logging](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0) provider that writes log messages to the Windows Event Log. You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or other configuration source. The source name used in Event Log can be overridden by setting a `SourceName` property in these settings; if you don't specify a name, the default application name (normally the executable assembly name) will be used.
+The `UseWindowsService` method automatically adds a [Logging](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0) provider that writes log messages to the Windows Event Log. You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or other configuration source. The source name used in Event Log can be overridden by setting a `SourceName` property in these settings; if you don't specify a name, the default application name (normally the executable assembly name) will be used.
 
 More information on logging is at the end of this chapter.
 
@@ -146,9 +146,9 @@ To learn more about querying the systemd journal from the command line with `jou
 
 When running a gRPC application in production, you should use a TLS certificate from a trusted Certificate Authority (CA). This CA could be a public CA, or an internal one for your organization.
 
-On Windows hosts, the certificate may be loaded from a secure [Certificate Store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). The `X509Store` class can also be used with the OpenSSL key-store on some Linux hosts.
+On Windows hosts, the certificate may be loaded from a secure [Certificate Store](/windows/win32/seccrypto/managing-certificates-with-certificate-stores) using the [X509Store class](/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). The `X509Store` class can also be used with the OpenSSL key-store on some Linux hosts.
 
-Certificates may also be created using one of the [X509Certificate2 constructors](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), either from a file (for example a `.pfx` file protected by a strong password), or from binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
+Certificates may also be created using one of the [X509Certificate2 constructors](/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), either from a file (for example a `.pfx` file protected by a strong password), or from binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 
 Kestrel can be configured to use a certificate in two ways: from configuration, or in code.
 

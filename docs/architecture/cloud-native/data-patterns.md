@@ -39,7 +39,7 @@ We could implement an aggregator microservice shown in Figure 5-6.
 
 While this approach encapsulates the business operation workflow in an individual microservice, it adds complexity and still results in direct HTTP calls.
 
-A common approach for executing cross-service queries uses the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-7.
+A common approach for executing cross-service queries uses the [Materialized View Pattern](/azure/architecture/patterns/materialized-view), shown in Figure 5-7.
 
 ![Materialized view pattern](./media/materialized-view-pattern.png)
 
@@ -61,7 +61,7 @@ Note how in the previous figure five independent microservices all participate i
 
 Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to programmatically construct a distributed transaction.
 
-A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-9 shows a failed transaction with the Saga pattern.
+A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-9 shows a failed transaction with the Saga pattern.
 
 ![Rollback in saga pattern](./media/saga-rollback-operation.png)
 
@@ -73,7 +73,7 @@ Saga patterns are typically choreographed as a series of related events or orche
 
 ## CQRS pattern
 
-CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from those that write data. This pattern can help maximize performance, scalability, and security.
+CQRS, or [Command and Query Responsibility Segregation](/azure/architecture/patterns/cqrs), is an architectural pattern that separate operations that read data from those that write data. This pattern can help maximize performance, scalability, and security.
 
 In normal data access scenarios, you implement a single model (entity and repository object) that perform *both* read and write data operations.
 

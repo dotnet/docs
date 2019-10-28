@@ -186,7 +186,7 @@ The default behavior when the app runs is configured to use Docker as well. Figu
 
 **Figure 3-7**. Visual Studio Docker Run Options
 
-In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
+In addition to local development, [Azure Dev Spaces](/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
 
 If you don't add Docker support to your ASP.NET Core application when you create it, you can always add it later. From the Visual Studio Solution Explorer, right click on the project and select **Add** > **Docker Support**, as shown in Figure 3-8.
 
@@ -205,7 +205,7 @@ In addition to Docker support, you can also add Container Orchestration Support,
 - [What is Kubernetes?](https://blog.newrelic.com/engineering/what-is-kubernetes/)
 - [Installing Kubernetes with Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
 - [MiniKube vs Docker Desktop](https://medium.com/containers-101/local-kubernetes-for-windows-minikube-vs-docker-desktop-25a1c6d3b766)
-- [Visual Studio Tools for Docker](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
+- [Visual Studio Tools for Docker](/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
 
 >[!div class="step-by-step"]
 >[Previous](scale-applications.md)

@@ -23,7 +23,7 @@ To run [Windows Containers](/virtualization/windowscontainers/about/), there are
 
 - **Hyper-V Containers** expand on the isolation provided by Windows Server Containers by running each container in a highly optimized virtual machine. In this configuration, the kernel of the container host isn't shared with the Hyper-V Containers, providing better isolation.
 
-The images for these containers are created and work just the same way. The difference is in how the container is created from the image—running a Hyper-V Container requires an extra parameter. For details, see [Hyper-V Containers](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container).
+The images for these containers are created and work just the same way. The difference is in how the container is created from the image—running a Hyper-V Container requires an extra parameter. For details, see [Hyper-V Containers](/virtualization/windowscontainers/manage-containers/hyperv-container).
 
 ## Comparing Docker containers with virtual machines
 

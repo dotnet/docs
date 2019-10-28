@@ -9,15 +9,15 @@ There are two typical ways to scale an application: scaling up and scaling out. 
 
 ## The simple solution: scaling up
 
-The process of upgrading existing servers to give them more resources (CPU, memory, disk I/O speed, network I/O speed) is known as *scaling up*. In cloud-native applications, scaling up doesn't typically refer to purchasing and installing actual hardware on physical machines so much as choosing a more capable plan from a list of options available. Cloud-native apps typically scale up by modifying the virtual machine (VM) size used to host the individual nodes in their Kubernetes node pool. Kubernetes concepts like nodes, clusters, and pods are described further in [the next section](leverage-containers-orchestrators.md). Azure supports a wide variety of VM sizes running both [Windows](https://docs.microsoft.com/azure/virtual-machines/windows/sizes?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json) and [Linux](https://docs.microsoft.com/azure/virtual-machines/linux/sizes). To vertically scale your application, create a new node pool with a larger node VM size and then migrate workloads to the new pool. This requires [multiple node pools for your AKS cluster](https://docs.microsoft.com/azure/aks/use-multiple-node-pools), a feature that is currently in preview. Serverless apps scale up by choosing a [premium plan](https://docs.microsoft.com/azure/azure-functions/functions-scale) and premium instance sizes or by choosing a different dedicated app service plan.
+The process of upgrading existing servers to give them more resources (CPU, memory, disk I/O speed, network I/O speed) is known as *scaling up*. In cloud-native applications, scaling up doesn't typically refer to purchasing and installing actual hardware on physical machines so much as choosing a more capable plan from a list of options available. Cloud-native apps typically scale up by modifying the virtual machine (VM) size used to host the individual nodes in their Kubernetes node pool. Kubernetes concepts like nodes, clusters, and pods are described further in [the next section](leverage-containers-orchestrators.md). Azure supports a wide variety of VM sizes running both [Windows](/azure/virtual-machines/windows/sizes?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json) and [Linux](/azure/virtual-machines/linux/sizes). To vertically scale your application, create a new node pool with a larger node VM size and then migrate workloads to the new pool. This requires [multiple node pools for your AKS cluster](/azure/aks/use-multiple-node-pools), a feature that is currently in preview. Serverless apps scale up by choosing a [premium plan](/azure/azure-functions/functions-scale) and premium instance sizes or by choosing a different dedicated app service plan.
 
 ## Scaling out cloud-native apps
 
-Cloud-native apps support scaling out by adding additional nodes or pods to service requests. This can be accomplished manually by adjusting configuration settings for the app (for example, [scaling a node pool](https://docs.microsoft.com/azure/aks/use-multiple-node-pools#scale-a-node-pool-manually)), or through *autoscaling*. Autoscaling adjusts the resources used by an app in order to respond to demand, similar to how a thermostat responds to temperature by calling for additional heating or cooling. When using autoscaling, manual scaling is disabled.
+Cloud-native apps support scaling out by adding additional nodes or pods to service requests. This can be accomplished manually by adjusting configuration settings for the app (for example, [scaling a node pool](/azure/aks/use-multiple-node-pools#scale-a-node-pool-manually)), or through *autoscaling*. Autoscaling adjusts the resources used by an app in order to respond to demand, similar to how a thermostat responds to temperature by calling for additional heating or cooling. When using autoscaling, manual scaling is disabled.
 
 AKS clusters can scale in one of two ways:
 
-- The [cluster autoscaler](https://docs.microsoft.com/azure/aks/cluster-autoscaler) watches for pods that can't be scheduled on nodes because of resource constraints. It adds additional nodes as required.
+- The [cluster autoscaler](/azure/aks/cluster-autoscaler) watches for pods that can't be scheduled on nodes because of resource constraints. It adds additional nodes as required.
 - The **horizontal pod autoscaler** uses the Metrics Server in a Kubernetes cluster to monitor the resource demands of pods. If a service needs more resources, the autoscaler increases the number of pods.
 
 Figure 3-13 shows the relationship between these two scaling services.
@@ -34,10 +34,10 @@ Azure Functions automatically supports scaling out. The default consumption plan
 
 ## References
 
-- [AKS Multiple Node Pools](https://docs.microsoft.com/azure/aks/use-multiple-node-pools)
-- [AKS Cluster Autoscaler](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
-- [Tutorial: Scale applications in AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale)
-- [Azure Functions scale and hosting](https://docs.microsoft.com/azure/azure-functions/functions-scale)
+- [AKS Multiple Node Pools](/azure/aks/use-multiple-node-pools)
+- [AKS Cluster Autoscaler](/azure/aks/cluster-autoscaler)
+- [Tutorial: Scale applications in AKS](/azure/aks/tutorial-kubernetes-scale)
+- [Azure Functions scale and hosting](/azure/azure-functions/functions-scale)
 
 >[!div class="step-by-step"]
 >[Previous](deploy-containers-azure.md)

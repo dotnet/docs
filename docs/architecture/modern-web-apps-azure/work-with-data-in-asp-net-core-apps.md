@@ -196,11 +196,11 @@ private void ConfigureOrder(EntityTypeBuilder<Order> builder)
 
 In this example, the `ShipToAddress` property is of type `Address`. `Address` is a value object with several properties such as `Street` and `City`. EF Core maps the `Order` object to its table with one column per `Address` property, prefixing each column name with the name of the property. In this example, the `Order` table would include columns such as `ShipToAddress_Street` and `ShipToAddress_City`.
 
-[EF Core 2.2 introduces support for collections of owned entities](https://docs.microsoft.com/ef/core/what-is-new/ef-core-2.2#collections-of-owned-entities)
+[EF Core 2.2 introduces support for collections of owned entities](/ef/core/what-is-new/ef-core-2.2#collections-of-owned-entities)
 
 ### Resilient connections
 
-External resources like SQL databases may occasionally be unavailable. In cases of temporary unavailability, applications can use retry logic to avoid raising an exception. This technique is commonly referred to as _connection resiliency_. You can implement your [own retry with exponential backoff](https://docs.microsoft.com/azure/architecture/patterns/retry) technique by attempting to retry with an exponentially increasing wait time, until a maximum retry count has been reached. This technique embraces the fact that cloud resources might intermittently be unavailable for short periods of time, resulting in failure of some requests.
+External resources like SQL databases may occasionally be unavailable. In cases of temporary unavailability, applications can use retry logic to avoid raising an exception. This technique is commonly referred to as _connection resiliency_. You can implement your [own retry with exponential backoff](/azure/architecture/patterns/retry) technique by attempting to retry with an exponentially increasing wait time, until a maximum retry count has been reached. This technique embraces the fact that cloud resources might intermittently be unavailable for short periods of time, resulting in failure of some requests.
 
 For Azure SQL DB, Entity Framework Core already provides internal database connection resiliency and retry logic. But you need to enable the Entity Framework execution strategy for each DbContext connection if you want to have resilient EF Core connections.
 

@@ -11,7 +11,7 @@ Regardless of the architecture approach used to design a business application, t
 
 ## N-Tier applications
 
-The [N-Tier architecture pattern](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier) is a mature architecture and simply refers to applications that separate various logical layers into separate physical tiers. N-Tier architecture is a physical implementation of N-Layer architecture. The most common implementation of this architecture includes:
+The [N-Tier architecture pattern](/azure/architecture/guide/architecture-styles/n-tier) is a mature architecture and simply refers to applications that separate various logical layers into separate physical tiers. N-Tier architecture is a physical implementation of N-Layer architecture. The most common implementation of this architecture includes:
 
 - A presentation tier, for example a web app.
 - An API or data access tier, such as a REST API.
@@ -50,11 +50,11 @@ The traditional approach to hosting applications requires buying hardware and ma
 
 Virtualization of hardware, via "virtual machines" enables Infrastructure as a Service (IaaS). Host machines are effectively partitioned to provide resources to instances with allocations for their own memory, CPU, and storage. The team provisions the necessary VMs and configures the associated networks and access to storage.
 
-For more information, see [virtual machine N-tier reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/n-tier).
+For more information, see [virtual machine N-tier reference architecture](/azure/architecture/reference-architectures/virtual-machines-windows/n-tier).
 
 Although virtualization and Infrastructure as a Service (IaaS) address many concerns, it still leaves much responsibility in the hands of the infrastructure team. The team maintains operating system versions, applies security patches, and installs third-party dependencies on the target machines. Apps often behave differently on production machines compared to the test environment. Issues arise due to different dependency versions and/or OS SKU levels. Although many organizations deploy N-Tier applications to these targets, many companies benefit from deploying to a more cloud native model such as [Platform as a Service](#platform-as-a-service-paas). Architectures with microservices are more challenging because of the requirements to scale out for elasticity and resiliency.
 
-For more information, see [virtual machines](https://docs.microsoft.com/azure/virtual-machines/).
+For more information, see [virtual machines](/azure/virtual-machines/).
 
 ## Platform as a Service (PaaS)
 
@@ -75,7 +75,7 @@ The main disadvantage of PaaS traditionally has been vendor lock-in. For example
 
 Software as a Service or SaaS is centrally hosted and available without local installation or provisioning. SaaS often is hosted on top of PaaS as a platform for deploying software. SaaS provides services to run and connect with existing software. SaaS is often industry and vertical specific. SaaS is often licensed and typically provides a client/server model. Most modern SaaS offerings use web-based apps for the client. Companies typically consider SaaS as a business solution to license offerings. It isn't often implemented as architecture consideration for scalability and maintainability of an application. Indeed, most SaaS solutions are built on IaaS, PaaS, and/or serverless back ends.
 
-Learn more about SaaS through a [sample application](https://docs.microsoft.com/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app).
+Learn more about SaaS through a [sample application](/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app).
 
 ## Containers and Functions as a Service (FaaS)
 
@@ -99,7 +99,7 @@ The following image illustrates an example Kubernetes installation. Nodes in the
 
 ![Kubernetes](./media/kubernetes-example.png)
 
-For more information about orchestration, see [Kubernetes on Azure](https://docs.microsoft.com/azure/aks/intro-kubernetes).
+For more information about orchestration, see [Kubernetes on Azure](/azure/aks/intro-kubernetes).
 
 Functions as a Service (FaaS) is a specialized container service that is similar to serverless. A specific implementation of FaaS, called [OpenFaaS](https://github.com/openfaas/faas), sits on top of containers to provide serverless capabilities. OpenFaaS provides templates that package all of the container dependencies necessary to run a piece of code. Using templates simplifies the process of deploying code as a functional unit. OpenFaaS targets architectures that already include containers and orchestrators because it can use the existing infrastructure. Although it provides serverless functionality, it specifically requires you to use Docker and an orchestrator.
 
@@ -124,7 +124,7 @@ The advantages of serverless include:
 - **Instant scale.** Serverless can scale to match workloads automatically and quickly.
 - **Faster time to market.** Developers focus on code and deploy directly to the serverless platform. Components can be released independently of each other.
 
-Serverless is most often discussed in the context of compute, but can also apply to data. For example, [Azure SQL](https://docs.microsoft.com/azure/sql-database) and [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) both provide cloud databases that don't require you to configure host machines or clusters. This book focuses on serverless compute.
+Serverless is most often discussed in the context of compute, but can also apply to data. For example, [Azure SQL](/azure/sql-database) and [Cosmos DB](/azure/cosmos-db) both provide cloud databases that don't require you to configure host machines or clusters. This book focuses on serverless compute.
 
 ## Summary
 
@@ -148,16 +148,16 @@ The next chapter will focus on serverless architecture, use cases, and design pa
 
 ## Recommended resources
 
-- [Azure application architecture guide](https://docs.microsoft.com/azure/architecture/guide/)
-- [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
-- [Azure SQL](https://docs.microsoft.com/azure/sql-database)
-- [N-Tier architecture pattern](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/n-tier)
-- [Kubernetes on Azure](https://docs.microsoft.com/azure/aks/intro-kubernetes)
-- [Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)
-- [Virtual machine N-tier reference architecture](https://docs.microsoft.com/azure/architecture/reference-architectures/virtual-machines-windows/n-tier)
-- [Virtual machines](https://docs.microsoft.com/azure/virtual-machines/)
+- [Azure application architecture guide](/azure/architecture/guide/)
+- [Azure Cosmos DB](/azure/cosmos-db)
+- [Azure SQL](/azure/sql-database)
+- [N-Tier architecture pattern](/azure/architecture/guide/architecture-styles/n-tier)
+- [Kubernetes on Azure](/azure/aks/intro-kubernetes)
+- [Microservices](/azure/architecture/guide/architecture-styles/microservices)
+- [Virtual machine N-tier reference architecture](/azure/architecture/reference-architectures/virtual-machines-windows/n-tier)
+- [Virtual machines](/azure/virtual-machines/)
 - [What is Docker?](../microservices/container-docker-introduction/docker-defined.md)
-- [Wingtip Tickets SaaS application](https://docs.microsoft.com/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
+- [Wingtip Tickets SaaS application](/azure/sql-database/saas-tenancy-welcome-wingtip-tickets-app)
 
 >[!div class="step-by-step"]
 >[Previous](architecture-approaches.md)

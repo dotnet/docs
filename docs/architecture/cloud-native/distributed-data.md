@@ -17,7 +17,7 @@ Traditional monolithic applications favor a centralized data store shown in Figu
 
 Note in the previous figure how all of the application components consume a single relational database.
 
-There are many benefits to this approach. It's straightforward to query data spread across  multiple tables, and it's straightforward to implement [ACID transactions](https://docs.microsoft.com/windows/desktop/cossdk/acid-properties) that ensure data consistency. You always end up with *immediate consistency*: either all your data updates or none of it does.
+There are many benefits to this approach. It's straightforward to query data spread across  multiple tables, and it's straightforward to implement [ACID transactions](/windows/desktop/cossdk/acid-properties) that ensure data consistency. You always end up with *immediate consistency*: either all your data updates or none of it does.
 
 Cloud-native systems favor a data architecture shown in Figure 5-2 in which each microservice owns and encapsulates its own data.
 

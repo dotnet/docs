@@ -23,7 +23,7 @@ Metrics refers to numeric data that is designed to be aggregated and presented u
 
 ## Logging in ASP.NET Core gRPC
 
-ASP.NET Core provides built-in support for logging, in the form of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet package. The core parts of this library are included with the Web SDK, so there's no need to install it manually. By default, log messages are written to the standard output (the "console") and to any attached debugger. To write logs to persistent external data stores, you may need to import [optional logging sink packages](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
+ASP.NET Core provides built-in support for logging, in the form of the [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) NuGet package. The core parts of this library are included with the Web SDK, so there's no need to install it manually. By default, log messages are written to the standard output (the "console") and to any attached debugger. To write logs to persistent external data stores, you may need to import [optional logging sink packages](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0#third-party-logging-providers).
 
 The ASP.NET Core gRPC framework writes detailed diagnostic logging messages to this logging framework so they can be processed/stored along with your application's own messages.
 
@@ -45,13 +45,13 @@ public class StockData : Stocks.StocksBase
 
 Many log messages around requests, exceptions, and so on, are provided by the ASP.NET Core and gRPC framework components. Add your own log messages to provide detail and context about application logic rather than lower-level concerns.
 
-For more information about writing log messages and available logging sinks and targets, see the [Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0) article.
+For more information about writing log messages and available logging sinks and targets, see the [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0) article.
 
 ## Metrics in ASP.NET Core gRPC
 
 The .NET Core runtime provides a set of components for emitting and observing metrics that includes APIs such as the <xref:System.Diagnostics.Tracing.EventSource> and <xref:System.Diagnostics.Tracing.EventCounter> classes. These APIs can be used to emit basic numeric data that can be consumed by external processes like the [dotnet-counters global tool](https://github.com/dotnet/diagnostics/blob/master/documentation/dotnet-counters-instructions.md), or Event Tracing for Windows. For more information about using `EventCounter` in your own code, see the [EventCounter Introduction](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md) tutorial.
 
-For more advanced metrics and for writing metric data to a wider range of data stores, there's an excellent open-source project called [App Metrics](https://www.app-metrics.io). This suite of libraries provides an extensive set of types to instrument your code. It also offers packages to write metrics to different kinds of targets that include time-series databases, such as Prometheus and InfluxDB, [Azure Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview), and more. The [App.Metrics.AspNetCore.Mvc](https://www.nuget.org/packages/App.Metrics.AspNetCore.Mvc/) NuGet package even adds a comprehensive set of basic metrics that are automatically generated via integration with the ASP.NET Core framework, and the web site provides [templates](https://www.app-metrics.io/samples/grafana/) for displaying those metrics with the [Grafana](https://grafana.com/) visualization platform.
+For more advanced metrics and for writing metric data to a wider range of data stores, there's an excellent open-source project called [App Metrics](https://www.app-metrics.io). This suite of libraries provides an extensive set of types to instrument your code. It also offers packages to write metrics to different kinds of targets that include time-series databases, such as Prometheus and InfluxDB, [Azure Application Insights](/azure/azure-monitor/app/app-insights-overview), and more. The [App.Metrics.AspNetCore.Mvc](https://www.nuget.org/packages/App.Metrics.AspNetCore.Mvc/) NuGet package even adds a comprehensive set of basic metrics that are automatically generated via integration with the ASP.NET Core framework, and the web site provides [templates](https://www.app-metrics.io/samples/grafana/) for displaying those metrics with the [Grafana](https://grafana.com/) visualization platform.
 
 For more information and documentation about App Metrics, see the [app-metrics.io](https://app-metrics.io) website.
 
@@ -98,7 +98,7 @@ public class StockData : Stocks.StocksBase
 
 ### Store and visualize metrics data
 
-The best way to store metrics data is in a *time-series database*, a specialized data store designed to record numerical data series marked with timestamps. The most popular of these databases are [Prometheus](https://prometheus.io/) and [InfluxDB](https://www.influxdata.com/products/influxdb-overview/). Microsoft Azure also provides dedicated metrics storage through the [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) service.
+The best way to store metrics data is in a *time-series database*, a specialized data store designed to record numerical data series marked with timestamps. The most popular of these databases are [Prometheus](https://prometheus.io/) and [InfluxDB](https://www.influxdata.com/products/influxdb-overview/). Microsoft Azure also provides dedicated metrics storage through the [Azure Monitor](/azure/azure-monitor/overview) service.
 
 The current go-to solution for visualizing metrics data is [Grafana](https://grafana.com), which works with a wide range of storage providers including Azure Monitor, InfluxDB and Prometheus. The following image shows an example Grafana dashboard that displays metrics from the Linkerd service mesh running the StockData sample:
 
@@ -110,7 +110,7 @@ The numerical nature of metrics data means that it's ideally suited to drive ale
 
 ## Distributed tracing
 
-*Distributed tracing* is a relatively recent development in monitoring, which has arisen from the increasing use of microservices and distributed architectures. A single request from a client browser, application, or device may be broken down into many steps and sub-requests, and involve the use of many services across a network. This makes it difficult to correlate log messages and metrics with the specific request that triggered them. Distributed tracing applies identifiers to requests that allow logs and metrics to be correlated with a particular operation. This is similar to [WCF's end-to-end tracing](https://docs.microsoft.com/dotnet/framework/wcf/diagnostics/tracing/end-to-end-tracing), but applied across multiple platforms.
+*Distributed tracing* is a relatively recent development in monitoring, which has arisen from the increasing use of microservices and distributed architectures. A single request from a client browser, application, or device may be broken down into many steps and sub-requests, and involve the use of many services across a network. This makes it difficult to correlate log messages and metrics with the specific request that triggered them. Distributed tracing applies identifiers to requests that allow logs and metrics to be correlated with a particular operation. This is similar to [WCF's end-to-end tracing](/dotnet/framework/wcf/diagnostics/tracing/end-to-end-tracing), but applied across multiple platforms.
 
 Although it's still a nascent technology area, distributed tracing has grown quickly in popularity and is now going through a standardization process. The Cloud Native Computing Foundation created the [the Open Tracing standard](https://opentracing.io), attempting to provide vendor-neutral libraries for working with backends like [Jaeger](https://www.jaegertracing.io/) and [Elastic APM](https://www.elastic.co/products/apm). At the same time, Google created the [OpenCensus project](https://opencensus.io/) to address the same set of problems. These two projects are now being merged into a new project, [OpenTelemetry](https://opentelemetry.io), which aims to be the future industry standard.
 

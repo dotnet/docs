@@ -31,17 +31,17 @@ Choose which worker runtime you want from the following options:
 - `node` (JavaScript)
 - `python`
 
-When the project is created, it will include a Dockerfile. Now, you can create and test your function locally. Build and run it using the  `docker build` and `docker run` commands. For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
+When the project is created, it will include a Dockerfile. Now, you can create and test your function locally. Build and run it using the  `docker build` and `docker run` commands. For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
 
 ## How to combine serverless and Kubernetes with KEDA
 
-Azure functions scale automatically to meet demand based on the rate of events that are targeting a given function. Additionally, you can leverage Kubernetes to host your functions and use Kubernetes-based Event Driven Autoscaling, or KEDA. When no events are occurring, KEDA can scale down to 0 instances, and then in response to events it can scale up the number of containers to meet the demand using its horizontal pod autoscaler. [Learn more about scaling Azure functions with KEDA](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda).
+Azure functions scale automatically to meet demand based on the rate of events that are targeting a given function. Additionally, you can leverage Kubernetes to host your functions and use Kubernetes-based Event Driven Autoscaling, or KEDA. When no events are occurring, KEDA can scale down to 0 instances, and then in response to events it can scale up the number of containers to meet the demand using its horizontal pod autoscaler. [Learn more about scaling Azure functions with KEDA](/azure/azure-functions/functions-kubernetes-keda).
 
 ## References
 
 - [Run Azure Functions in a Docker Container](https://markheath.net/post/azure-functions-docker)
-- [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
-- [Azure Functions with Kubernetes Event Driven Autoscaling](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda)
+- [Create a function on Linux using a custom image](/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Azure Functions with Kubernetes Event Driven Autoscaling](/azure/azure-functions/functions-kubernetes-keda)
 
 >[!div class="step-by-step"]
 >[Previous](leverage-serverless-functions.md)

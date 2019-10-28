@@ -38,7 +38,7 @@ At the same time, developer John is customizing the Reservations microservice an
 ![eShopOnContainers Architecture](./media/azure-devspaces-two.png)
 **Figure 2-8**. Developer John deploys his own version of the Reservations microservice and tests it without conflicting with other developers.
 
-Using Azure Dev Spaces, teams can work directly with AKS while independently changing, deploying, and testing their changes. This approach reduces the need for separate dedicated hosted environments since every developer effectively has their own AKS environment. Developers can work with Azure Dev Spaces using its CLI or launch their application to Azure Dev Spaces directly from Visual Studio. [Learn more about how Azure Dev Spaces works and is configured.](https://docs.microsoft.com/azure/dev-spaces/how-dev-spaces-works)
+Using Azure Dev Spaces, teams can work directly with AKS while independently changing, deploying, and testing their changes. This approach reduces the need for separate dedicated hosted environments since every developer effectively has their own AKS environment. Developers can work with Azure Dev Spaces using its CLI or launch their application to Azure Dev Spaces directly from Visual Studio. [Learn more about how Azure Dev Spaces works and is configured.](/azure/dev-spaces/how-dev-spaces-works)
 
 ## Azure Functions and Logic Apps (Serverless)
 
@@ -48,7 +48,7 @@ The eShopOnContainers sample includes support for tracking online marketing camp
 
 - [eShopOnContainers: Create Kubernetes cluster in AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)#create-kubernetes-cluster-in-aks)
 - [eShopOnContainers: Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces)
-- [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/about)
+- [Azure Dev Spaces](/azure/dev-spaces/about)
 
 >[!div class="step-by-step"]
 >[Previous](map-eshoponcontainers-azure-services.md)

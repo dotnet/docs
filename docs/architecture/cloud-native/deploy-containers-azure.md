@@ -13,7 +13,7 @@ Containers provide many benefits, one of which is portability. You can easily ta
 
 Azure Container Registry (ACR) lets you build, store, and manage images for all of your container deployments. There are other container registries, both public and private, to which you can deploy containers. The benefit of ACR over other options is that you can keep your images close to your production environment, improving build and deployment times. You can also secure them using the same security procedures you use for the rest of your Azure resources, improving security and reducing asset management effort.
 
-You [create a container registry using the Azure Portal](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-portal) or [using the Azure CLI](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-azure-cli) or [PowerShell tools](https://docs.microsoft.com/azure/container-registry/container-registry-get-started-powershell). Creating a new container registry just requires an Azure subscription, a resource group, and a unique name. Figure 3-11 shows the basic options for creating a registry, which will be hosted at *registryname*.azurecr.io.
+You [create a container registry using the Azure Portal](/azure/container-registry/container-registry-get-started-portal) or [using the Azure CLI](/azure/container-registry/container-registry-get-started-azure-cli) or [PowerShell tools](/azure/container-registry/container-registry-get-started-powershell). Creating a new container registry just requires an Azure subscription, a resource group, and a unique name. Figure 3-11 shows the basic options for creating a registry, which will be hosted at *registryname*.azurecr.io.
 
 ![Create container registry](./media/create-container-registry.png)
 **Figure 3-11**. Create container registry
@@ -67,7 +67,7 @@ This information is sufficient to get started. As part of the creation process i
 - Monitoring
 - Tags
 
-This [quickstart walks through deploying an AKS cluster using the Azure portal](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
+This [quickstart walks through deploying an AKS cluster using the Azure portal](/azure/aks/kubernetes-walkthrough-portal).
 
 ## Azure Dev Spaces
 
@@ -100,8 +100,8 @@ Next, you can use the `azds prep` command to generate the necessary Docker and H
 ## References
 
 - [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
-- [Azure Dev Spaces with VS Code](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore)
-- [Azure Dev Spaces with Visual Studio](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio)
+- [Azure Dev Spaces with VS Code](/azure/dev-spaces/quickstart-netcore)
+- [Azure Dev Spaces with Visual Studio](/azure/dev-spaces/quickstart-netcore-visualstudio)
 
 >[!div class="step-by-step"]
 >[Previous](combine-containers-serverless-approaches.md)

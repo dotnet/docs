@@ -413,7 +413,7 @@ When using the Visual Studio **Add Connected Service** feature, the `portfolios.
 ```
 
 > [!TIP]
-> If you are not using Visual Studio or prefer to work from the command line, you can use the **dotnet-grpc** global tool to manage Protobuf references within a .NET gRPC project. [Refer to the **dotnet-grpc** documentation for more information](https://docs.microsoft.com/aspnet/core/grpc/dotnet-grpc).
+> If you are not using Visual Studio or prefer to work from the command line, you can use the **dotnet-grpc** global tool to manage Protobuf references within a .NET gRPC project. [Refer to the **dotnet-grpc** documentation for more information](/aspnet/core/grpc/dotnet-grpc).
 
 ### Use the Portfolios service from a client application
 

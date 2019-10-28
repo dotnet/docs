@@ -36,7 +36,7 @@ The ASP.NET Core implementation of gRPC supports authentication and authorizatio
 
 The call authentication methods are all based on *tokens*. The only real difference is how the token is generated and the libraries that are used to validate the tokens in the ASP.NET Core service.
 
-For more information, see the [Authentication and authorization documentation on Microsoft Docs](https://docs.microsoft.com/aspnet/core/grpc/authn-and-authz?view=aspnetcore-3.0).
+For more information, see the [Authentication and authorization documentation on Microsoft Docs](/aspnet/core/grpc/authn-and-authz?view=aspnetcore-3.0).
 
 > [!NOTE]
 > When using gRPC over a TLS-encrypted HTTP/2 connection, all traffic between clients and servers is encrypted, even if you don't use channel-level authentication.

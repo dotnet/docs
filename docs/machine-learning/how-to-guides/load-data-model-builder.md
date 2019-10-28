@@ -41,7 +41,7 @@ You can load text or numeric data from a file into Model Builder. It accepts com
 3. Choose a category in the **Column to Predict (Label)** dropdown.
 4. From the **Input Columns (Features)** dropdown, confirm the data columns you want to include are checked.
 
-You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in the Model Builder tool.
+You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in Model Builder.
 
 ## Load data from a SQL Server database
 

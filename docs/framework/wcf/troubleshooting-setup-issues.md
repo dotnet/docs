@@ -46,7 +46,7 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
   
  The following steps must be followed to resolve the problem described previously.  
   
-1. Run [the WMI Diagnosis Utility, version 2.0](https://go.microsoft.com/fwlink/?LinkId=94685) to repair the WMI service. For more information about using this tool, see the [WMI Diagnosis Utility](https://go.microsoft.com/fwlink/?LinkId=94686) topic.  
+1. Run [the WMI Diagnosis Utility, version 2.0](https://www.microsoft.com/downloads/details.aspx?familyid=D7BA3CD6-18D1-4D05-B11E-4C64192AE97D&displaylang=en) to repair the WMI service. For more information about using this tool, see the [WMI Diagnosis Utility](https://docs.microsoft.com/) topic.  
   
  Repair the .NET Framework 3.0 installation by using the **Add/Remove Programs** applet located in **Control Panel**, or uninstall/reinstall the .NET Framework 3.0.  
   

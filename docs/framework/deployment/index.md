@@ -54,13 +54,13 @@ Use the following links to other MSDN topics for specific information about depl
 
 - Deploying the .NET Framework (for OEMs and administrators):
 
-  - [Windows Assessment and Deployment Kit (ADK)](https://go.microsoft.com/fwlink/p/?LinkId=254976)
+  - [Windows Assessment and Deployment Kit (ADK)](https://www.microsoft.com/download/details.aspx?id=30652)
 
   - [Administrator's guide](guide-for-administrators.md)
 
 **Servicing**
 
-- For general information, see the [.NET Framework blog](https://go.microsoft.com/fwlink/p/?LinkId=254977)
+- For general information, see the [.NET Framework blog](https://devblogs.microsoft.com/dotnet/)
 
 - [Detecting versions](../migration-guide/how-to-determine-which-versions-are-installed.md)
 

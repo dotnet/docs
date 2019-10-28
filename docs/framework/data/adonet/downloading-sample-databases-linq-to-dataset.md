@@ -63,7 +63,7 @@ The samples and walkthroughs in the LINQ to DataSet documentation use the Advent
   
 1. Start Internet Explorer.  
   
-2. Go to the  [Microsoft SQL Server 2005 Express Edition](https://www.microsoft.com/downloads/details.aspx?familyid=220549B5-0B07-4448-8848-DCC397514B41&displaylang=en) download page.  
+2. Go to the  [Microsoft SQL Server 2005 Express Edition](https://www.microsoft.com/download/details.aspx?id=21844) download page.
   
 3. Follow the installation instructions on the Web site.  
   

@@ -77,7 +77,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
     1. In the **Choose Data** dialog, select **Microsoft SQL Server Database File**. 
     1. Uncheck the **Always use this selection** checkbox and select **Continue**.
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded *RestaurantScores.mdf* file.
-    1. Select **OK**
+    1. Select **OK**.
 1. Choose **Violations** from the **Table Name** dropdown.
 1. Choose **RiskCategory** in the **Column to Predict (Label)** dropdown.
 1. Leave the default column selections, **InspectionType** and **ViolationDescription**, checked in the **Input Columns (Features)** dropdown.

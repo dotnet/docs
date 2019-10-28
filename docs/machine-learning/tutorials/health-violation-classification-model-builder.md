@@ -11,7 +11,7 @@ ms.custom: mvc
 
 # Tutorial: Classify the severity of restaurant health violations with Model Builder
 
-Learn how to build a machine learning model using Model Builder to categorize the risk level of restaurant violations found during health inspections.
+Learn how to build a multiclass classification model using Model Builder to categorize the risk level of restaurant violations found during health inspections.
 
 In this tutorial, you learn how to:
 

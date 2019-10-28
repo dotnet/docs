@@ -41,7 +41,7 @@ You can work around this issue so that a WCF client can connect to a WCF server 
                   </binding>
               </netTcpBinding>
           </bindings>
-      </system.ServiceModel>
+      </system.serviceModel>
   </configuration>
   ```
 

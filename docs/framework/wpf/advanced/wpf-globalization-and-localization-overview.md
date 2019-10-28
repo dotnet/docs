@@ -110,7 +110,7 @@ The following graphics show the output of the **Run** dialog box sample.
 
 **Designing a Global Run Dialog Box**
 
-This example produces a **Run** dialog box by using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. This dialog box is equivalent to the **Run** dialog box that is available from the [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] Start menu.
+This example produces a **Run** dialog box by using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. This dialog box is equivalent to the **Run** dialog box that is available from the Microsoft Windows Start menu.
 
 Some highlights for making global dialog boxes are:
 

@@ -71,7 +71,7 @@ docs
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`, `dotnet/dotnet-api-docs/master`, or `dotnet/samples/master`.
 
-Your PR should *always* target the master branch. You should *never* open a PR that targets the live branch.
+Your PR should *always* target the default branch of the repository (unless you're working on a release branch). For dotnet/docs, master branch is the default branch. For the localized repositories, live branch is the default one. You should *never* open a PR that targets the live branch on dotnet/docs.
 
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 
@@ -136,14 +136,14 @@ or corresponding text should include information about the output.
 
 The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:
 
-- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time.
+- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files).
 - **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
 - **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
 - **DO** create a separate branch on your fork before working on the articles.
 - **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).
 - **DO** blog and tweet (or whatever) about your contributions, frequently!
 
-> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal.
+> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
 
 ## Contributor License Agreement
 

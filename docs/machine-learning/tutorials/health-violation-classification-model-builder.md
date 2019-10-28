@@ -96,7 +96,7 @@ The time required for the model to train is proportional to the amount of data. 
 
     - **Status** displays the completion status of the training process.
     - **Best accuracy** displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data.
-    - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
+    - **Best algorithm** displays the name of the best performing algorithm performed found by Model Builder so far.
     - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
 
 1. Once training is complete, select the **evaluate** link to move to the next step.

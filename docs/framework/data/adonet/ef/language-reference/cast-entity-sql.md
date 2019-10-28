@@ -8,7 +8,7 @@ Converts an expression of one data type to another.
   
 ## Syntax  
   
-```  
+```csharp
 CAST ( expression AS data_type )  
 ```  
   
@@ -25,7 +25,7 @@ CAST ( expression AS data_type )
 ## Remarks  
  The cast expression has similar semantics to the Transact-SQL CONVERT expression. The cast expression is used to convert a value of one type into a value of another type.  
   
-```  
+```csharp
 CAST( e as T )  
 ```  
   

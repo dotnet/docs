@@ -123,7 +123,7 @@ Two projects are created as a result of the training process.
     using RestaurantViolationsML.Model;
     ```
 
-1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the fare amount is not part of the input. This is because the model will generate the prediction for it. 
+1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the fare amount is not part of the input. This is because the model generates the prediction for it. 
 
     ```csharp
     ModelInput input = new ModelInput

@@ -12,7 +12,7 @@ The samples and walkthroughs in the LINQ to DataSet documentation use the Advent
   
 1. Open Internet Explorer.  
   
-2. Go to the [SQL Server 2005 Samples and Sample Databases](https://www.microsoft.com/downloads/details.aspx?FamilyId=E719ECF7-9F46-4312-AF89-6AD8702E4E6E&displaylang=en) Web site.  
+2. Go to the [SQL Server 2005 Samples and Sample Databases](https://www.microsoft.com/download/details.aspx?id=10679) Web site.
   
 3. Follow the instructions for downloading the AdventureWorks sample database for your processor type (such as AdventureWorksDB.msi), and save the .MSI file to your local computer.  
   

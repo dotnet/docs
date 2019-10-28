@@ -206,3 +206,7 @@ MLContext mlContext = new MLContext();
 //Load Data
 IDataView data = mlContext.Data.LoadFromEnumerable<HousingData>(inMemoryCollection);
 ```
+
+## Next steps
+
+If you're using Model Builder to train the machine learning model, see [Load training data into Model Builder](load-data-model-builder.md).

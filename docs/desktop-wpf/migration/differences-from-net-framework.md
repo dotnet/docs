@@ -23,13 +23,13 @@ There are a few features of .NET Framework that .NET Core doesn't support. For m
 If your .NET Framework app lists its NuGet dependencies in a *packages.config* file, migrate to the [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) format:
 
 1. In Visual Studio, open the **Solution Explorer** pane.
-1. In your WPF project, select *packages.config* > **Migrate packages.config to PackageReference**.
+1. In your WPF project, right-click **packages.config** > **Migrate packages.config to PackageReference**.
 
 ![Upgrading to PackageReference](media/differences-from-net-framework/package-reference-migration.png)
 
 A dialog will appear showing calculated top-level NuGet dependencies and asking which other NuGet packages should be promoted to top level. Select **OK** and the *packages.config* file will be removed from the project and `<PackageReference>` elements will be added to the project file.
 
-When your project uses `<PackageReference>`, packages aren't stored locally in a Packages folder, they're stored globally. Open the project file and remove any `<Analyzer>` elements that referred to the Packages folder. These analyzers are automatically included with the NuGet package references.
+When your project uses `<PackageReference>`, packages aren't stored locally in a *Packages* folder, they're stored globally. Open the project file and remove any `<Analyzer>` elements that referred to the *Packages* folder. These analyzers are automatically included with the NuGet package references.
 
 ## Code Access Security
 

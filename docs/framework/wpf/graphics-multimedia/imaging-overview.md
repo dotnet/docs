@@ -26,13 +26,13 @@ ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 This topic provides an introduction to the Microsoft Windows Presentation Foundation Imaging Component. WPF Imaging enables developers to display, transform, and format images.  
 
 ## WPF Imaging Component  
- WPF Imaging provides significant enhancements in imaging capabilities within [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)]. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ libraries. These API provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. WPF Imaging is designed to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
+ WPF Imaging provides significant enhancements in imaging capabilities within Microsoft Windows. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ libraries. These API provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. WPF Imaging is designed to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
   
  There are two ways to access the WPF Imaging API, a managed component and an unmanaged component. The unmanaged component provides the following features.  
   
 - Extensibility model for new or proprietary image formats.  
   
-- Improved performance and security on native image formats including bitmap (BMP), Joint Photographics Experts Group (JPEG), Portable Network Graphics (PNG), Tagged Image File Format (TIFF), [!INCLUDE[TLA#tla_wdp](../../../../includes/tlasharptla-wdp-md.md)], Graphics Interchange Format (GIF), and icon (.ico).  
+- Improved performance and security on native image formats including bitmap (BMP), Joint Photographics Experts Group (JPEG), Portable Network Graphics (PNG), Tagged Image File Format (TIFF), Microsoft Windows Media Photo, Graphics Interchange Format (GIF), and icon (.ico).  
   
 - Preservation of high bit-depth image data up to 8 bits per channel (32 bits per pixel).  
   
@@ -50,7 +50,8 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
   
 <a name="_imageformats"></a>   
 ## WPF Image Formats  
- A codec is used to decode or encode a specific media format. WPF Imaging includes a codec  for BMP, JPEG, PNG, TIFF, [!INCLUDE[TLA2#tla_wdp](../../../../includes/tla2sharptla-wdp-md.md)], GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
+
+ A codec is used to decode or encode a specific media format. WPF Imaging includes a codec  for BMP, JPEG, PNG, TIFF, Windows Media Photo, GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
   
  <xref:System.Windows.Media.Imaging.BitmapSource> is an important class used in the decoding and encoding of images. It is the basic building block of the WPF Imaging pipeline and represents a single, constant set of pixels at a certain size and resolution. A <xref:System.Windows.Media.Imaging.BitmapSource> can be an individual frame of a multiple frame image, or it can be the result of a transform performed on a <xref:System.Windows.Media.Imaging.BitmapSource>. It is the parent of many of the primary classes used in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] imaging such as <xref:System.Windows.Media.Imaging.BitmapFrame>.  
   

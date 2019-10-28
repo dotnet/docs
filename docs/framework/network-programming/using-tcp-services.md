@@ -104,6 +104,7 @@ public class TcpTimeClient
 The following example demonstrates creating a network time server using a **TcpListener** to monitor TCP port 13. When an incoming connection request is accepted, the time server responds with the current date and time from the host server.
 
 ```vb
+Imports System.Net
 Imports System.Net.Sockets
 Imports System.Text
 
@@ -120,7 +121,7 @@ Public Class TcpTimeServer
     Overloads Public Shared Function Main(args As String()) As Integer
         Dim done As Boolean = False
 
-        Dim listener As New TcpListener(portNum)
+        Dim listener As New TcpListener(IPAddress.Any, portNum)
 
         listener.Start()
 
@@ -152,6 +153,7 @@ End Class
 
 ```csharp
 using System;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
@@ -164,7 +166,7 @@ public class TcpTimeServer
     {
         bool done = false;
 
-        var listener = new TcpListener(portNum);
+        var listener = new TcpListener(IPAddress.Any, portNum);
 
         listener.Start();
 

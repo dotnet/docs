@@ -425,7 +425,7 @@ You can add SameSite for <xref:System.Web.Security.FormsAuthentication> and <xre
          <!-- ...   -->
       </forms>
    <authentication />
-   <sessionSate cookieSameSite="Lax"></sessionState>
+   <sessionState cookieSameSite="Lax"></sessionState>
 </system.web>
 ```
 

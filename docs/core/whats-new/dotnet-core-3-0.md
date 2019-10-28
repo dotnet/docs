@@ -134,7 +134,7 @@ R2R binaries improve startup performance by reducing the amount of work the just
 
 To compile your project as ReadyToRun, do the following:
 
-01. Add the `<PublishReadyToRun>` setting to your project
+01. Add the `<PublishReadyToRun>` setting to your project:
 
     ```xml
     <PropertyGroup>
@@ -145,7 +145,7 @@ To compile your project as ReadyToRun, do the following:
 01. Publish a self-contained app. For example, this command creates a self-contained app for the 64-bit version of Windows:
 
     ```dotnetcli
-    dotnet publish -c Release -r win-x64 --self-contained true
+    dotnet publish -c Release -r win-x64 --self-contained
     ```
 
 #### Cross platform/architecture restrictions

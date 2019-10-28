@@ -50,7 +50,7 @@ Model Builder supports loading data from local and remote SQL Server databases. 
 
 To load data from a SQL Server database into Module Builder:
 
-1. In the data step of the Model Builder tool, select **SQL Server** from the data source dropdown.
+1. In the data step of Model Builder, select **SQL Server** from the data source dropdown.
 1. Select the button next to the **Connect to SQL Server database** text box.
     1. In the **Choose Data** dialog, select **Microsoft SQL Server Database File**. 
     1. Uncheck the **Always use this selection** checkbox and select **Continue**

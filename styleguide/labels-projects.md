@@ -8,7 +8,7 @@ This roadmap explains how we use these organizational tools and has links to han
 
 ## Labels
 
-If this is your first experience contributing to [dotnet/docs](https://github.com/dotnet/docs), start with the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues. These are issues that have a more focused scope. They are a great way to make your first contribution. From the up-for-grabs view, you can further filter issues based on areas and priority.
+If this is your first experience contributing to [dotnet/docs](https://github.com/dotnet/docs), start with the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues. These are issues that have a more focused scope. They are a great way to make your first contribution. From the up-for-grabs view, you can further filter issues based on areas and priority. We've identified good issues for beginners with the [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) if you want to try a smaller first contribution.
 
 We use labels to classify issues in many different ways:
 
@@ -59,7 +59,7 @@ Each .NET Guide is noted with the `:books: Area` prefix and has a dark blue back
 
 ![:card_file_box: Area on medium blue background](./images/technology.png "Prefix for .NET Guide sub-area labels")
 
-The .NET guides are large, so these labels further limit the scope by a section of a guide. Each .NET Guide subarea is noted with the `:card_file_box: Technology` prefix and has a medium blue background. Many of these labels apply to multiple guides. Add one of these labels to your filter after scoping your search to one of the areas described in the previous section.
+The .NET guides are large, so these labels further limit the scope by a section of a guide. Each .NET Guide subarea is noted with the `:card_file_box: Technology` prefix and has a medium blue background. Many of these labels apply to multiple guides, while others are in only one guide. After filtering on an area, add one of these labels to further limit the scope of issues.
 
 - AppCompat
 - Async Task
@@ -91,11 +91,8 @@ The .NET guides are large, so these labels further limit the scope by a section 
 
 Issues tagged for a specific release are noted with the `:checkered_flag: Release:` prefix and have a dark yellow background. 
 
-- .NET Core 2.1
 - .NET Core 2.2
 - .NET Core 3.0
-- .NET Framework 4.7.2
-- .NET Framework 4.8
 
 ### Priority
 

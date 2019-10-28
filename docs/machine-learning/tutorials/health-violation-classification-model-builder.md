@@ -109,7 +109,7 @@ If you're not satisfied with your accuracy metrics, some easy ways to try to imp
 
 ## Add the code to make predictions
 
-Two projects will be created as a result of the training process.
+Two projects are created as a result of the training process.
 
 - RestaurantViolationsML.ConsoleApp: A C# .NET Core Console application that contains the model training and sample consumption code.
 - RestaurantViolationsML.Model: A .NET Standard class library containing the data models that define the schema of input and output model data, the saved version of the best performing model during training and a helper class called `ConsumeModel` to make predictions.

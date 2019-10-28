@@ -1,24 +1,24 @@
 ---
-title: Set up & load data for Model Builder
-description: Learn how to set up and load data from a SQL Server database or a file for use in one of the Model Builder scenarios for ML.NET.
-ms.date: 10/31/2019
+title: Load training data for Model Builder
+description: Learn how to load training data from a SQL Server database or a file for use in one of the Model Builder scenarios for ML.NET.
+ms.date: 10/29/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
 #Customer intent: As a developer, I want to load data in Model Builder
 ---
 
-# Load data in Model Builder
+# Load training data into Model Builder
 
-Learn how to set up and load your data sets from a file or a SQL Server database for use in one of the Model Builder scenarios for ML.NET. Model Builder scenarios can use SQL Server databases, image files, and CSV or TSV file formats.
+Learn how to load your training datasets from a file or a SQL Server database for use in one of the Model Builder scenarios for ML.NET. Model Builder scenarios can use SQL Server databases, image files, and CSV or TSV file formats as training data.
 
-## Data set limitations in Model Builder
+## Training dataset limitations in Model Builder
 
-Model Builder limits the amount of data you can use for training models:
+Model Builder limits the amount and type of data you can use for training models:
 
 - SQL Server data: 100,000 rows 
-
-[Question: Clarify the limits. Is the SQL Server data limit an absolute limit or for training only? The training dataset  -- is this a limit for text or numerical data from files?]
+- CSV and TSV files: No size limit
+- Images: PNG and JPG only.
 
 ## Model Builder scenarios 
 
@@ -55,7 +55,7 @@ To load data from a SQL Server database into Module Builder:
     1. Uncheck the **Always use this selection** checkbox and select **Continue**
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded .MDF file.
     1. Select **OK**
-1. Choose the data set name from the **Table Name** dropdown.
+1. Choose the dataset name from the **Table Name** dropdown.
 1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
 1. From the **Input Columns (Features)** dropdown, confirm the columns you want to include are checked. 
 

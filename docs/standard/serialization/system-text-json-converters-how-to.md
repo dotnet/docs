@@ -16,9 +16,9 @@ helpviewer_keywords:
 > [!IMPORTANT]
 > The JSON serialization documentation is under construction. This article doesn't cover all scenarios. For more information, examine [System.Text.Json issues](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) in the dotnet/corefx repository on GitHub, especially those labeled [json-functionality-doc](https://github.com/dotnet/corefx/labels/json-functionality-doc).
 
-This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json> namespace. For an introduction to using `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](system-text-json-how-to.md).
+This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](system-text-json-how-to.md).
 
-A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters for two common scenarios:
+A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters:
 
 * To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format instead of the default  ISO 8601-1:2019 format.
 * To support a custom data type. For example, a `PhoneNumber` struct.
@@ -34,8 +34,8 @@ You can also write custom converters to extend `System.Text.Json` with functiona
 To create a custom converter:
 
 * Create a class that derives from `JsonConverter<T>` where `T` is the type to be serialized and deserialized.
-* Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the `Utf8JsonReader` that is passed to the method to get the JSON.
-* Override the `Write` method to serialize the object of type `T`. Use the `Utf8JsonWriter` that is passed to the method to write the JSON.
+* Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the `Utf8JsonReader` that is passed to the method to read the JSON.
+* Override the `Write` method to serialize the incoming object of type `T`. Use the `Utf8JsonWriter` that is passed to the method to write the JSON.
 * Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
 
 ### Sample converter
@@ -67,21 +67,21 @@ private class ExampleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
 
 ## Register a custom converter
 
-To register a custom converter (make the `Serialize` and `Deserialize` methods use it), choose one of the following approaches:
+*Register* a custom converter to make the `Serialize` and `Deserialize` methods use it. Choose one of the following approaches:
 
 * Add an instance of the converter class to the <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> collection.
 * Apply the [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute) attribute to the properties that require the custom converter.
-* Apply the `[JsonConverter]` attribute to a class or struct that represents a custom data type.
+* Apply the [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute) attribute to a class or struct that represents a custom data type.
 
 ### Converter registration precedence
 
-`JsonSerializer` chooses a converter for each JSON element based on the following order of priority, listed from highest to lowest:
+During serialization or deserialization, a converter is chosen for each JSON element in the following order, listed from highest priority to lowest:
 
-* [JsonConverter] applied to a property.
+* `[JsonConverter]` applied to a property.
 * A converter added to the `Converters` collection.
-* [JsonConverter] applied to a custom data type or POCO.
+* `[JsonConverter]` applied to a custom data type or POCO.
 
-If multiple converters for a type are registered in the Converters collection, the first converter that returns true to `CanConvert` is used.
+If multiple custom converters for a type are registered in the `Converters` collection, the first converter that returns true to `CanConvert` is used.
 
 A built-in converter is chosen only if no applicable custom converter is registered.
 
@@ -96,7 +96,7 @@ options.Converters.Add(new ExampleDateTimeOffsetConverter());
 string json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-With this code, you can serialize the following type:
+Suppose you serialize the following type:
 
 ```csharp
 class WeatherForecast
@@ -107,7 +107,7 @@ class WeatherForecast
 }
 ```
 
-And get the following JSON:
+Here's an example of JSON output that shows the custom converter was used:
 
 ```json
 {
@@ -194,7 +194,7 @@ public class TemperatureConverter : JsonConverter<Temperature>
 }
 ```
 
-The `[JsonConvert]` attribute on the struct registers the custom converter as the default for fields of type `Temperature`. The converter is automatically used on the `TemperatureC` field of the following type when you serialize or deserialize it with `JsonSerializer`:
+The `[JsonConvert]` attribute on the struct registers the custom converter as the default for properties of type `Temperature`. The converter is automatically used on the `TemperatureC` property of the following type when you serialize or deserialize it:
 
 ```csharp
 class WeatherForecastWithTemperatureStruct
@@ -272,14 +272,14 @@ class WeatherForecast
 }
 ```
 
-The JSON to deserialize contains a Boolean value for the `Rain` property:
+The following example of JSON to deserialize contains a Boolean value for the `Rain` property:
 
 ```json
 {
-  "Rain": true,
   "Date": "2019-08-01T00:00:00-07:00",
   "TemperatureC": 25,
-  "Summary": "Hot and windy"
+  "Summary": "Hot and windy",
+  "Rain": true
 }
 ```
 
@@ -289,7 +289,7 @@ The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.
 
 ### Support Dictionary with non-string key
 
-The built-in support for dictionary collections is for `Dictionary<string, TValue>` only. That is, the key must be a string. If you need to support a dictionary with an integer or some other type as the key, a custom converter is required.
+The built-in support for dictionary collections is for `Dictionary<string, TValue>`. That is, the key must be a string. If you need to support a dictionary with an integer or some other type as the key, a custom converter is required.
 
 The following code shows a custom converter that works with `Dictionary<int,string>`:
 
@@ -368,7 +368,7 @@ class WeatherForecastDictIntString
 }
 ```
 
-The JSON looks like the following example:
+The JSON output from serialization looks like the following example:
 
 ```json
 {
@@ -386,11 +386,11 @@ The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.
 
 ### Support polymorphic deserialization
 
-The serializer supports [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes), but a custom converter is required for deserialization.
+[Polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) is supported, but a custom converter is required for deserialization.
 
-Suppose, for example, you have a Person abstract base class, with Employee and Customer derived classes. Polymorphic deserialization means at design time you specify Person as the deserialization target, but Customer or Employee objects in the JSON are correctly deserialized at runtime.  To do that, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. (Some serialization frameworks include attributes that can automate some polymorphic deserialization scenarios, but `System.Text.Json` does not.)
+Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at runtime. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 
-The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization.
+The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
 
 ```csharp
 public class Person
@@ -532,7 +532,7 @@ options = new JsonSerializerOptions();
 options.Converters.Add(new PersonConverterWithTypeDiscriminator());
 ```
 
-With the converter, you can deserialize JSON that contains Customer and Employee objects, like the following example:
+The converter can deserialize JSON that was created by using the same converter to serialize, for example:
 
 ```json
 [

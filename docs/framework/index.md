@@ -15,7 +15,7 @@ ms.author: "ronpet"
 # .NET Framework Guide
 
 > [!NOTE]
-> This .NET Framework content set includes information for .NET Framework versions 4.5 through 4.8. To download the .NET Framework, see [Installing the .NET Framework](./install/guide-for-developers.md). For a list of new features and changes in the NET Framework, see [What's New in the .NET Framework](./whats-new/index.md). For a list of supported platforms, see [.NET Framework System Requirements](./get-started/system-requirements.md). For documentation about older versions of the .NET Framework, see [.NET previous versions documentation](https://docs.microsoft.com/previous-versions/dotnet/).
+> This .NET Framework content set includes information for .NET Framework versions 4.5 through 4.8. To download the .NET Framework, see [Installing the .NET Framework](./install/guide-for-developers.md). For a list of new features and changes in the NET Framework, see [What's New in the .NET Framework](./whats-new/index.md). For a list of supported platforms, see [.NET Framework System Requirements](./get-started/system-requirements.md). For documentation about older versions of the .NET Framework, see [.NET previous versions documentation](/previous-versions/dotnet/).
 
 The .NET Framework is a development platform for building apps for web, Windows, Windows Phone, Windows Server, and Microsoft Azure. It consists of the common language runtime (CLR) and the .NET Framework class library, which includes a broad range of functionality and support for many industry standards.
 

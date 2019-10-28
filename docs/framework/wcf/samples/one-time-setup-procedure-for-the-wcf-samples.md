@@ -18,7 +18,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 2. Ensure that [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
 
-3. If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).
+3. If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://support.microsoft.com/help/4343220/this-hotfix-is-no-longer-available).
 
 4. Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752252(v=vs.90)).
 
@@ -37,7 +37,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 6. Check for the following default directory: \<InstallDrive>:**\WF_WCF_Samples**. If the samples were previously installed, this is the default directory.
 
-7. If the samples are not installed, install them from the samples download location for [C#](https://go.microsoft.com/fwlink/?LinkId=190939).
+7. If the samples are not installed, install them from the samples download location for [C#](https://www.microsoft.com/download/details.aspx?id=21459).
 
 8. After installing the samples, go to : \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**
 

@@ -59,9 +59,9 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Security Considerations and Guidance for Access 2007](https://go.microsoft.com/fwlink/?LinkId=98354)|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
+|[Security Considerations and Guidance for Access 2007](/previous-versions/office/developer/office-2007/bb421308(v=office.12))|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
 |[Understanding the Role of Workgroup Information Files in Access Security](https://support.microsoft.com/kb/305542)|Explains the role and relationship of the workgroup information file in Access 2003 security.|  
-|[Frequently Asked Questions About Microsoft Access Security for Microsoft Access versions 2.0 through 2000](https://go.microsoft.com/fwlink/?LinkId=47698)|Downloadable version of the Microsoft Access Security FAQ.|  
+|[Frequently Asked Questions About Microsoft Access Security for Microsoft Access versions 2.0 through 2000](https://support.microsoft.com/help/207793/microsoft-access-security-faq-available-in-the-download-center)|Downloadable version of the Microsoft Access Security FAQ.|  
 ## Enterprise Services  
  COM+ contains its own security model that relies on Windows NT accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
   

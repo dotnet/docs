@@ -13,7 +13,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [ADO.NET Overview](ado-net-overview.md)  
  Provides an introduction to the design and components of ADO.NET.  
   
- [Entity Framework](https://go.microsoft.com/fwlink/?LinkID=213876)  
+ [Entity Framework](/ef/ef6/index)  
  Describes how to create applications using the Entity Framework.  
   
  [Securing ADO.NET Applications](securing-ado-net-applications.md)  

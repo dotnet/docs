@@ -335,7 +335,7 @@ Although a clock is also created for the <xref:System.Windows.Media.Animation.St
 
 For an animation to reflect data binding or animation changes, its clock must be regenerated. Clocks are not regenerated for you automatically. To make an animation reflect changes, reapply its storyboard by using a <xref:System.Windows.Media.Animation.BeginStoryboard> or the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method. When you use either of these methods, the animation restarts. In code, you can use the <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method to shift the storyboard back to its previous position.
 
-For an example of a data bound animation, see [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011). For more information about how the animation and timing system works, see [Animation and Timing System Overview](animation-and-timing-system-overview.md).
+For an example of a data bound animation, see [Key Spline Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/KeySplineAnimations). For more information about how the animation and timing system works, see [Animation and Timing System Overview](animation-and-timing-system-overview.md).
 
 <a name="otherWaysToAnimateSection"></a>
 
@@ -349,11 +349,11 @@ The examples in this overview show how to animate by using storyboards. When you
 
 The following samples can help you start adding animation to your applications.
 
-- [From, To, and By Animation Target Values Sample](https://go.microsoft.com/fwlink/?LinkID=159988)
+- [From, To, and By Animation Target Values Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/TargetValues)
 
   Demonstrates different From/To/By settings.
 
-- [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)
+- [Animation Timing Behavior Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationTiming)
 
   Demonstrates the different ways you can control the timing behavior of an animation. This sample also shows how to data bind the destination value of an animation.
 

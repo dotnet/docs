@@ -9,7 +9,7 @@ ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
 
 # WCF Data Services 4.5
 
-WCF Data Services (formerly known as "ADO.NET Data Services") is a component of the .NET Framework that enables you to create services that use the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to expose and consume data over the Web or intranet by using the semantics of [representational state transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919). OData exposes data as resources that are addressable by URIs. Data is accessed and changed by using standard HTTP verbs of GET, PUT, POST, and DELETE. OData uses the entity-relationship conventions of the [Entity Data Model](../adonet/entity-data-model.md) to expose resources as sets of entities that are related by associations.
+WCF Data Services (formerly known as "ADO.NET Data Services") is a component of the .NET Framework that enables you to create services that use the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to expose and consume data over the Web or intranet by using the semantics of [representational state transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm). OData exposes data as resources that are addressable by URIs. Data is accessed and changed by using standard HTTP verbs of GET, PUT, POST, and DELETE. OData uses the entity-relationship conventions of the [Entity Data Model](../adonet/entity-data-model.md) to expose resources as sets of entities that are related by associations.
 
 WCF Data Services uses the OData protocol for addressing and updating resources. In this way, you can access these services from any client that supports OData. OData enables you to request and write data to resources by using well-known transfer formats: Atom, a set of standards for exchanging and updating data as XML, and JavaScript Object Notation (JSON), a text-based data exchange format used extensively in AJAX applications.
 
@@ -27,9 +27,9 @@ I want to jump right in...
 
 - [Getting Started](getting-started-with-wcf-data-services.md)
 
-- [Silverlight Quickstart](https://go.microsoft.com/fwlink/?LinkID=192782)
+- [Silverlight Quickstart](http://www.silverlight.net/learn/quickstarts/consuming-odata-feeds/)
 
-- [Silverlight Quickstart for Windows Phone Development](https://go.microsoft.com/fwlink/?LinkID=214535)
+- [Silverlight Quickstart for Windows Phone Development](http://create.msdn.com/en-US/education/quickstarts/odataservice)
 
 Just show me some code...
 
@@ -41,29 +41,29 @@ Just show me some code...
 
 I want to know more about OData...
 
-- [Whitepaper: Introducing OData](https://go.microsoft.com/fwlink/?LinkId=220867)
+- [Whitepaper: Introducing OData](/dotnet/framework/wcf/index)
 
-- [Open Data Protocol Web site](https://go.microsoft.com/fwlink/?LinkID=184554)
+- [Open Data Protocol Web site](https://www.odata.org/developers/protocols/)
 
-- [OData: SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
+- [OData: SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip)
 
-- [OData: Frequently Asked Questions](https://go.microsoft.com/fwlink/?LinkId=185867)
+- [OData: Frequently Asked Questions](https://www.odata.org/faq)
 
 I want to watch some videos...
 
-- [Beginner's Guide to WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=220864)
+- [Beginner's Guide to WCF Data Services](/dotnet/framework/wcf/index)
 
-- [WCF Data Services Developer Videos](https://go.microsoft.com/fwlink/?LinkId=220861)
+- [WCF Data Services Developer Videos](/sql/connect/sql-data-developer&view=sql-server-ver15#dataservices)
 
-- [OData: Developers Web site](https://go.microsoft.com/fwlink/?LinkId=185866)
+- [OData: Developers Web site](https://www.odata.org/developers/articles/)
 
 I want to see end-to-end samples...
 
-- [WCF Data Services Documentation Samples on MSDN Samples Gallery](https://go.microsoft.com/fwlink/?LinkID=220865)
+- [WCF Data Services Documentation Samples on MSDN Samples Gallery](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=Glenn%20Gailey%20%5BMSFT%5D)
 
-- [Other WCF Data Services Samples on MSDN Samples Gallery](https://go.microsoft.com/fwlink/?LinkId=220866)
+- [Other WCF Data Services Samples on MSDN Samples Gallery](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=Technology&f%5B0%5D.Value=WCF%20Data%20Services&f%5B0%5D.Text=WCF%20Data%20Services)
 
-- [OData: SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
+- [OData: SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip)
 
 How does it integrate with Visual Studio?
 
@@ -77,17 +77,17 @@ What can I do with it?
 
 - [Overview](wcf-data-services-overview.md)
 
-- [Whitepaper: Introducing OData](https://go.microsoft.com/fwlink/?LinkId=220867)
+- [Whitepaper: Introducing OData](/dotnet/framework/wcf/index)
 
 - [Application Scenarios](application-scenarios-wcf-data-services.md)
 
 I want to use Silverlight...
 
-- [Silverlight Quickstart](https://go.microsoft.com/fwlink/?LinkID=192782)
+- [Silverlight Quickstart](http://www.silverlight.net/learn/quickstarts/consuming-odata-feeds/)
 
-- [WCF Data Services (Silverlight)](https://go.microsoft.com/fwlink/?LinkID=143149)
+- [WCF Data Services (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
 
-- [Getting Started with Silverlight](https://go.microsoft.com/fwlink/?LinkId=148366)
+- [Getting Started with Silverlight](/previous-versions/windows/silverlight/dotnet-windows-silverlight/bb404703(v=vs.95))
 
 I want to use LINQ...
 
@@ -99,13 +99,13 @@ I want to use LINQ...
 
 I still need some more information...
 
-- [WCF Data Services Team Blog](https://go.microsoft.com/fwlink/?LinkID=150511)
+- [WCF Data Services Team Blog](https://blogs.msdn.microsoft.com/astoriateam/)
 
 - [Resources](wcf-data-services-resources.md)
 
-- [WCF Data Services Developer Center](https://go.microsoft.com/fwlink/?LinkId=220868)
+- [WCF Data Services Developer Center](/dotnet/framework/wcf/index)
 
-- [Open Data Protocol Web site](https://go.microsoft.com/fwlink/?LinkID=184554)
+- [Open Data Protocol Web site](https://www.odata.org/developers/protocols/)
 
 ## In This Section
 
@@ -131,4 +131,4 @@ Describes how to use client libraries to consume OData feeds from a .NET Framewo
 
 ## See also
 
-- [Representational State Transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)
+- [Representational State Transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)

@@ -47,9 +47,9 @@ Consume an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] fee
 
 - [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md)
 
-- [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=185564)
+- [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
 
-- [OData: JavaScript Object Notation (JSON) Format](https://go.microsoft.com/fwlink/?LinkId=185790)
+- [OData: JavaScript Object Notation (JSON) Format](https://www.odata.org/developers/protocols/json-format/)
 
 Create an end-to-end data solution that uses [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] to transfer data between client and server.
 

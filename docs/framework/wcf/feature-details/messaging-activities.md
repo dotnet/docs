@@ -107,5 +107,5 @@ When a call is made to a workflow service you may want to flow a transaction to 
 
 ## See also
 
-- [How to Send and Receive Faults in Workflow Services](https://go.microsoft.com/fwlink/?LinkId=189151)
+- [How to Send and Receive Faults in Workflow Services](https://www.microsoft.com/download/details.aspx?id=4486)
 - [Creating a Long-running Workflow Service](creating-a-long-running-workflow-service.md)

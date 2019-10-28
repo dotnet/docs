@@ -151,4 +151,4 @@ Text with ClearType y-direction antialiasing
 - [Drawing Formatted Text](drawing-formatted-text.md)
 - [Advanced Text Formatting](advanced-text-formatting.md)
 - [Text](optimizing-performance-text.md)
-- [Microsoft Typography](https://docs.microsoft.com/typography/)
+- [Microsoft Typography](/typography/)

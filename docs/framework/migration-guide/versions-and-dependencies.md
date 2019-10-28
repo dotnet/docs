@@ -58,7 +58,7 @@ Each version of the .NET Framework contains the common language runtime (CLR), t
   
      .NET Framework 4.5.1 and .NET Framework 4.5 are used here only as examples. This principle applies to any app that targets a later version of the .NET Framework than the one installed on the system on which it is running.  
   
- Some changes in the .NET Framework may require changes to your app code; see [Application Compatibility](application-compatibility.md) before you run your existing apps with .NET Framework 4.5 or later versions. For more information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607) on the Microsoft Support website.  
+ Some changes in the .NET Framework may require changes to your app code; see [Application Compatibility](application-compatibility.md) before you run your existing apps with .NET Framework 4.5 or later versions. For more information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [Microsoft .NET Framework Support Lifecycle Policy](https://support.microsoft.com/help/17455/lifecycle-faq-net-framework) on the Microsoft Support website.  
   
 ## Targeting and running apps for older versions  
 
@@ -79,5 +79,5 @@ Each version of the .NET Framework contains the common language runtime (CLR), t
 ## See also
 
 - [Version Compatibility](version-compatibility.md)
-- [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607)
+- [Microsoft .NET Framework Support Lifecycle Policy](https://support.microsoft.com/help/17455/lifecycle-faq-net-framework)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)

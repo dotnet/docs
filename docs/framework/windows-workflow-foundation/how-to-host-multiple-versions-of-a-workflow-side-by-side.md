@@ -11,7 +11,7 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
 `WorkflowIdentity` provides a way for workflow application developers to associate a name and a version with a workflow definition, and for this information to be associated with a persisted workflow instance. This identity information can be used by workflow application developers to enable scenarios such as side-by-side execution of multiple versions of a workflow definition, and provides the cornerstone for other functionality such as dynamic update. This step in the tutorial demonstrates how to use `WorkflowIdentity` to host multiple versions of a workflow at the same time.
 
 > [!NOTE]
-> To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
+> To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://code.msdn.microsoft.com/Windows-Workflow-deed2cd5).
 
 ## In this topic
 
@@ -35,7 +35,7 @@ In this step of the tutorial, the `WriteLine` activities in the workflow are mod
 > Before following the steps in this topic, run the application, start several workflows of each type, and making one or two guesses for each one. These persisted workflows are used in this step and the following step, [How to: Update the Definition of a Running Workflow Instance](how-to-update-the-definition-of-a-running-workflow-instance.md).
 
 > [!NOTE]
-> Each step in the Getting Started tutorial depends on the previous steps. If you did not complete the previous steps you can download a completed version of the tutorial from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
+> Each step in the Getting Started tutorial depends on the previous steps. If you did not complete the previous steps you can download a completed version of the tutorial from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://code.msdn.microsoft.com/Windows-Workflow-deed2cd5).
 
 ### <a name="BKMK_BackupCopy"></a> To make a copy of the NumberGuessWorkflowActivities project
 

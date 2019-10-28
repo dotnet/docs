@@ -15,7 +15,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
  To configure a port, the tool you use depends on the operating system that is running on your machine.  
   
- If you are running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. With [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] this tool is installed. With [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](https://go.microsoft.com/fwlink/?LinkId=88606). For more information, see [Httpcfg Overview](https://go.microsoft.com/fwlink/?LinkId=88605). The [Windows Support Tools documentation](https://go.microsoft.com/fwlink/?LinkId=94840) explains the syntax for the Httpcfg.exe tool.  
+ If you are running [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool. With [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] this tool is installed. With [!INCLUDE[wxp](../../../../includes/wxp-md.md)], you can download the tool at [Windows XP Service Pack 2 Support Tools](https://www.microsoft.com/downloads/details.aspx?amp;displaylang=en&familyid=49ae8576-9bb9-4126-9761-ba8011fabf38&displaylang=en). For more information, see [Httpcfg Overview](/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). The [Windows Support Tools documentation](/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) explains the syntax for the Httpcfg.exe tool.  
   
  If you are running [!INCLUDE[wv](../../../../includes/wv-md.md)], use the Netsh.exe tool that is already installed.  
   

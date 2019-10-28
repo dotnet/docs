@@ -176,7 +176,7 @@ Image brushes can fill shapes, controls, text, and more
 ## Codec Extensibility  
  A core feature of WPF Imaging is the extensibility model for new image codecs. These unmanaged interfaces enable codec developers to integrate codecs with [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] so new image formats can automatically be used by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
- For a sample of the extensibility API, see the [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
+ For a sample of the extensibility API, see the [Win32 Sample Codec](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=wpfsamples&DownloadId=7728). This sample demonstrates how to create a decoder and encoder for a custom image format.  
   
 > [!NOTE]
 > The codec must be digitally signed for the system to recognize it.  
@@ -188,4 +188,4 @@ Image brushes can fill shapes, controls, text, and more
 - <xref:System.Windows.Controls.Image>
 - <xref:System.Windows.Media.Imaging.BitmapMetadata>
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052)
+- [Win32 Sample Codec](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=wpfsamples&DownloadId=7728)

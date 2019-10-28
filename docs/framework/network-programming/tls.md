@@ -294,9 +294,9 @@ If you are using [Azure Cloud Services](https://azure.microsoft.com/services/clo
 
 ### .NET Framework 4.7 is not installed on Azure Guest OS by default
 
-The latest version installed in the latest Azure Guest OS Family 5 release (Windows Server 2016) is 4.6.2. To see which versions of .NET Framework are installed on each Azure Guest OS, see the [Azure Guest OS releases and SDK compatibility matrix](https://docs.microsoft.com/azure/cloud-services/cloud-services-guestos-update-matrix).
+The latest version installed in the latest Azure Guest OS Family 5 release (Windows Server 2016) is 4.6.2. To see which versions of .NET Framework are installed on each Azure Guest OS, see the [Azure Guest OS releases and SDK compatibility matrix](/azure/cloud-services/cloud-services-guestos-update-matrix).
 
-If your app targets a .NET Framework version that is not available on the Azure Guest OS version, then you need to install it yourself. See [Install .NET on Azure Cloud Service Roles](https://docs.microsoft.com/azure/cloud-services/cloud-services-dotnet-install-dotnet). If the framework installation requires a restart, the service roles might also restart before entering the Ready state.
+If your app targets a .NET Framework version that is not available on the Azure Guest OS version, then you need to install it yourself. See [Install .NET on Azure Cloud Service Roles](/azure/cloud-services/cloud-services-dotnet-install-dotnet). If the framework installation requires a restart, the service roles might also restart before entering the Ready state.
 
 ### Azure Guest OS registry settings
 

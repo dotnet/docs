@@ -91,7 +91,7 @@ The following illustration shows the output for the preceding [!INCLUDE[TLA2#tla
 
 ![A message box saying "You clicked the ellipse!"](./media/index/messagebox-text-output.png)
 
-For more information, see [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md). For an introductory sample, see [Shape Elements Sample](https://go.microsoft.com/fwlink/?LinkID=160037).
+For more information, see [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md). For an introductory sample, see [Shape Elements Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/ShapeElements).
 
 ### 2-D Geometries
 
@@ -99,7 +99,7 @@ When the 2-D shapes that [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharpt
 
 ![Screenshot showing how you can use geometries to create shapes.](./media/index/use-geometries-create-shapes.png)
 
-For more information, see [Geometry Overview](geometry-overview.md). For an introductory sample, see [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).
+For more information, see [Geometry Overview](geometry-overview.md). For an introductory sample, see [Geometries Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Geometery).
 
 ### 2-D Effects
 
@@ -107,7 +107,7 @@ For more information, see [Geometry Overview](geometry-overview.md). For an intr
 
 ![Illustration showing the different WPF brushes and paint elements.](./media/index/brushes-paint-elements.png)
 
-For more information, see [WPF Brushes Overview](wpf-brushes-overview.md). For an introductory sample, see [Brushes Sample](https://go.microsoft.com/fwlink/?LinkID=159973).
+For more information, see [WPF Brushes Overview](wpf-brushes-overview.md). For an introductory sample, see [Brushes Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Brushes).
 
 <a name="rendering"></a>
 
@@ -117,7 +117,7 @@ For more information, see [WPF Brushes Overview](wpf-brushes-overview.md). For a
 
 ![Screenshot of a sample showing 3-D shapes with different textures.](./media/index/visual-three-dimensional-shape.png)
 
-For more information, see [3-D Graphics Overview](3-d-graphics-overview.md). For an introductory sample, see [3-D Solids Sample](https://go.microsoft.com/fwlink/?LinkID=159964).
+For more information, see [3-D Graphics Overview](3-d-graphics-overview.md). For an introductory sample, see [3-D Solids Sample](https://archive.msdn.microsoft.com/Project/Download/FileDownload.aspx?ProjectName=wpfsamples&DownloadId=7726).
 
 <a name="animation"></a>
 
@@ -127,7 +127,7 @@ Use animation to make controls and elements grow, shake, spin, and fade; and to 
 
 ![Screenshot of an animated cube.](./media/index/animate-custom-objects.png)
 
-For more information, see [Animation Overview](animation-overview.md). For an introductory sample, see [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).
+For more information, see [Animation Overview](animation-overview.md). For an introductory sample, see [Animation Example Gallery](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationExamples).
 
 <a name="media"></a>
 

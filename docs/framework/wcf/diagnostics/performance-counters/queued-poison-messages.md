@@ -9,4 +9,4 @@ Counter Name: Queued Poison Messages.
 ## Description  
  Number of messages that are marked poisoned by the queued transport at this service.  
   
- See [Poison-Message Handling](https://go.microsoft.com/fwlink/?LinkID=96233) for more information on when messages are marked poisoned.
+ See [Poison-Message Handling](/dotnet/framework/wcf/feature-details/poison-message-handling) for more information on when messages are marked poisoned.

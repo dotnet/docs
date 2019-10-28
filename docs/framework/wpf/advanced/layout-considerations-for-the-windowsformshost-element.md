@@ -97,6 +97,6 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Walkthrough: Arranging Windows Forms Controls in WPF](walkthrough-arranging-windows-forms-controls-in-wpf.md)
-- [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971)
+- [Arranging Windows Forms Controls in WPF Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WpfLayoutHostingWfWithXaml)
 - [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md)
 - [Migration and Interoperability](migration-and-interoperability.md)

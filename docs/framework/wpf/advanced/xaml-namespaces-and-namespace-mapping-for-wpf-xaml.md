@@ -131,5 +131,5 @@ End Namespace
   
 ## See also
 
-- [Understanding XML Namespaces](https://go.microsoft.com/fwlink/?LinkId=98069)
+- [Understanding XML Namespaces](/previous-versions/aa468565(v=msdn.10))
 - [XAML Overview (WPF)](xaml-overview-wpf.md)

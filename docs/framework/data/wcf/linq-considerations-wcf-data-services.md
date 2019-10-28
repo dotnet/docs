@@ -209,4 +209,4 @@ http://localhost:12345/Northwind.svc/Orders?Orderby=ShippedDate&?filter=Freight 
 - [Querying the Data Service](querying-the-data-service-wcf-data-services.md)
 - [Query Projections](query-projections-wcf-data-services.md)
 - [Object Materialization](object-materialization-wcf-data-services.md)
-- [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkID=185564)
+- [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)

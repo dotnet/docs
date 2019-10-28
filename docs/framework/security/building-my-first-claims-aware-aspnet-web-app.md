@@ -27,11 +27,11 @@ author: "BrucePerlerMS"
   
  STS is a service that issues tokens upon successful authentication. Microsoft offers two industry standard STS’s:  
   
-- [Active Directory Federation Services (AD FS) 2.0](https://go.microsoft.com/fwlink/?LinkID=247516)
+- [Active Directory Federation Services (AD FS) 2.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd727958(v=ws.10))
   
-- [Windows Azure Access Control Service (ACS)](https://go.microsoft.com/fwlink/?LinkID=247517)
+- [Windows Azure Access Control Service (ACS)](https://msdn.microsoft.com/library/gg429786.aspx)
   
- AD FS 2.0 is part of the Windows Server R2 and can be used as an STS for on-premise scenarios. ACS is a cloud service, offered as part of the Windows Azure Platform. For testing or educational purposes, you can also use other STS’s in order to build your claims-aware applications. For example, you can use the Local Development STS that is part of the [Identity and Access Tool for Visual Studio](https://go.microsoft.com/fwlink/?LinkID=245849) which is freely available online.  
+ AD FS 2.0 is part of the Windows Server R2 and can be used as an STS for on-premise scenarios. ACS is a cloud service, offered as part of the Windows Azure Platform. For testing or educational purposes, you can also use other STS’s in order to build your claims-aware applications. For example, you can use the Local Development STS that is part of the [Identity and Access Tool for Visual Studio](https://marketplace.visualstudio.com/items?itemName=AzureADDeveloperExperienceTeam.IdentityandAccessTool) which is freely available online.  
   
  To build your first claims-aware ASP.NET application using WIF, follow the instructions in one of the following:  
   

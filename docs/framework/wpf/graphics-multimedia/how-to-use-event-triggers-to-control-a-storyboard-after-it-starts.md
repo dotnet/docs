@@ -34,7 +34,7 @@ The following example uses controllable storyboard actions to interactively cont
 
 [!code-xaml[timingbehaviors_snip#ControlStoryboardExampleUsingWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/ControlStoryboardExample.xaml#controlstoryboardexampleusingwholepage)]
 
-For additional examples, see the [Animation Example Gallery](https://go.microsoft.com/fwlink/?LinkID=159969).
+For additional examples, see the [Animation Example Gallery](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationExamples).
 
 ## See also
 

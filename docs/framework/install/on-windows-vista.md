@@ -23,7 +23,7 @@ The [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=4813
 
 ## .NET Framework 3.5
 
-You can install the [.NET Framework 3.5](https://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows Vista.
+You can install the [.NET Framework 3.5](https://www.microsoft.com/downloads/details.aspx?FamilyID=9cfb2d51-5ff4-4491-b0e5-b386f32c0992&dotnetdocs=) on Windows Vista.
 
 The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 

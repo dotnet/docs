@@ -10,7 +10,7 @@ There are four main functional extensions to ADO.NET, found in the <xref:Microso
   
  **SQL Server Books Online**  
   
-1. [SQL Server In-Process Specific Extensions to ADO.NET](https://go.microsoft.com/fwlink/?LinkId=115403)  
+1. [SQL Server In-Process Specific Extensions to ADO.NET](/previous-versions/sql/sql-server-2008/ms131070(v=sql.100))  
   
 ## See also
 

@@ -111,7 +111,7 @@ A reflected Visual object
  [!code-vb[visualbrush_markup_snip#GraphicsMMVisualBrushReflectionExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/visualbrush_markup_snip/visualbasic/reflectionexample.vb#graphicsmmvisualbrushreflectionexamplewholepage)]
  [!code-xaml[visualbrush_markup_snip#GraphicsMMVisualBrushReflectionExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/visualbrush_markup_snip/XAML/ReflectionExample.xaml#graphicsmmvisualbrushreflectionexamplewholepage)]  
   
- For additional examples that show how to magnify portions of the screen and how to create reflections, see the [VisualBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160049).  
+ For additional examples that show how to magnify portions of the screen and how to create reflections, see the [VisualBrush Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/VisualBrush).  
   
 <a name="tilebrush"></a>   
 ## TileBrush Features  
@@ -139,5 +139,5 @@ Components of a TileBrush with multiple tiles
 - [Drawing Objects Overview](drawing-objects-overview.md)
 - [Opacity Masks Overview](opacity-masks-overview.md)
 - [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)
-- [ImageBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160005)
-- [VisualBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160049)
+- [ImageBrush Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/ImageBrush)
+- [VisualBrush Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/VisualBrush)

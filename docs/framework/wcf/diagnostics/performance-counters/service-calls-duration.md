@@ -11,4 +11,4 @@ Counter Name: Calls Duration
   
 ## See also
 
-- [PERF_AVERAGE_TIMER](https://go.microsoft.com/fwlink/?LinkID=95015)
+- [PERF_AVERAGE_TIMER](/?mfr=true)

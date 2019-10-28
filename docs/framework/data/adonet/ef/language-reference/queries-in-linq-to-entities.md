@@ -64,4 +64,4 @@ A query is an expression that retrieves data from a data source. Queries are usu
 - [LINQ to Entities](linq-to-entities.md)
 - [Getting Started with LINQ in C#](../../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
 - [Getting Started with LINQ in Visual Basic](../../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)
-- [Entity Framework Merge Options and Compiled Queries](https://go.microsoft.com/fwlink/?LinkId=199591)
+- [Entity Framework Merge Options and Compiled Queries](https://blogs.msdn.microsoft.com/dsimmons/2010/01/12/ef-merge-options-and-compiled-queries/)

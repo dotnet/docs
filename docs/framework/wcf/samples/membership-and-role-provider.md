@@ -114,7 +114,7 @@ The Membership and Role Provider sample demonstrates how a service can use the A
   
 1. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
-2. Ensure that you have configured the [ASP.NET Application Services Database](https://go.microsoft.com/fwlink/?LinkId=94997).  
+2. Ensure that you have configured the [ASP.NET Application Services Database](https://www.microsoft.com/download/details.aspx?id=55984).  
   
     > [!NOTE]
     > If you are running SQL Server Express Edition, your server name is .\SQLEXPRESS. This server should be used when configuring the ASP.NET Application Services Database as well as in the Web.config connection string.  

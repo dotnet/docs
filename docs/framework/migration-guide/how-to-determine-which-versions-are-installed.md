@@ -14,7 +14,7 @@ ms.author: "ronpet"
 ---
 # How to: Determine which .NET Framework versions are installed
 
-Users can [install](https://docs.microsoft.com/dotnet/framework/install) and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer.
+Users can [install](/dotnet/framework/install) and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer.
 
 The .NET Framework consists of two main components, which are versioned separately:
 
@@ -172,7 +172,7 @@ The following example finds the .NET Framework 1&#8211;4 versions that are insta
 
 Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md) to determine which versions of the CLR are installed on a computer:
 
-- From a [Developer Command Prompt for Visual Studio](https://docs.microsoft.com/dotnet/framework/tools/developer-command-prompt-for-vs), enter `clrver`.
+- From a [Developer Command Prompt for Visual Studio](/dotnet/framework/tools/developer-command-prompt-for-vs), enter `clrver`.
 
     Sample output:
 

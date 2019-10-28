@@ -27,5 +27,5 @@ The Windows Forms <xref:System.Windows.Forms.OpenFileDialog> component is a pre-
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
- [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575)  
+ [Essential Code for Windows Forms Dialog Boxes](https://www.microsoft.com/download/details.aspx?id=55979)  
  Discusses the Windows Forms dialog box controls and components and the code necessary for executing their basic functions. (MSDN Online Library technical article)

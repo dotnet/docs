@@ -122,4 +122,4 @@ This topic describes the timing behaviors of animations and other <xref:System.W
 - [Animation and Timing System Overview](animation-and-timing-system-overview.md)
 - [Timing Events Overview](timing-events-overview.md)
 - [How-to Topics](animation-and-timing-how-to-topics.md)
-- [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)
+- [Animation Timing Behavior Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationTiming)

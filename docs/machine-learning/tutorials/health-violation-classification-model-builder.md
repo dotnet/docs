@@ -33,7 +33,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Model Builder multiclass classification overview 
 
-This sample creates a C# .NET Core console application that categorize the risk of health violations using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.
+This sample creates a C# .NET Core console application that categorizes the risk of health violations using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) GitHub repository.
 
 ## Create a console application
 

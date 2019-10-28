@@ -71,7 +71,7 @@ docs
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`, `dotnet/dotnet-api-docs/master`, or `dotnet/samples/master`.
 
-Your PR should *always* target the master branch. You should *never* open a PR that targets the live branch.
+Your PR should *always* target the default branch of the repository (unless you're working on a release branch). For dotnet/docs, master branch is the default branch. For the localized repositories, live branch is the default one. You should *never* open a PR that targets the live branch on dotnet/docs.
 
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 

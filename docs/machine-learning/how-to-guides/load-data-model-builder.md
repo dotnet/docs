@@ -10,7 +10,7 @@ ms.custom: mvc, how-to
 
 # Load data in Model Builder
 
-Learn how to set up and load your data sets from a SQL Server or a file database for use in one of the Model Builder scenarios for ML.NET. Model Builder scenarios can use SQL files, image files, and CSV or TSV file formats.
+Learn how to set up and load your data sets from a file or a SQL Server database for use in one of the Model Builder scenarios for ML.NET. Model Builder scenarios can use SQL Server databases, image files, and CSV or TSV file formats.
 
 ## Data set limitations in Model Builder
 

@@ -133,7 +133,7 @@ names `Item1`, whose value is `42` and `stringContent`, whose value is "The answ
 
 There are two conditions where candidate field names are not projected onto the tuple field:
 
-1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString`. or `Rest`.
+1. When the candidate name is a reserved tuple name. Examples include `Item3`, `ToString`, or `Rest`.
 1. When the candidate name is a duplicate of another tuple field name, either explicit or implicit.
 
 These conditions avoid ambiguity. These names would cause an ambiguity

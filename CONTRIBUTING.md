@@ -73,8 +73,6 @@ docs
 
 Your PR should *always* target the default branch of the repository (unless you're working on a release branch). For dotnet/docs, master branch is the default branch. For the localized repositories, live branch is the default one. You should *never* open a PR that targets the live branch on dotnet/docs.
 
-For the localized repositories, you should target the live branch.
-
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 
 If your PR is addressing an existing issue, add the `Fixes #Issue_Number` keyword to the commit message or PR description. That way, the issue is automatically closed when the PR is merged. For more information, see [Closing issues via commit messages](https://help.github.com/articles/closing-issues-via-commit-messages/).

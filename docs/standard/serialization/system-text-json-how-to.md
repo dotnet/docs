@@ -19,7 +19,7 @@ This article shows how to use the <xref:System.Text.Json> namespace to serialize
 
 ## Namespaces
 
-The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. Therefore, the code examples shown in this article require one or both of the following `using` directives:
+The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. The code examples shown in this article require `using` directives for one or both of these namespaces:
 
 ```csharp
 using System.Text.Json;
@@ -53,7 +53,7 @@ using (FileStream fs = File.Create(outputFileName))
 }
 ```
 
-The preceding examples use type inference for the type being serialized. You can specify a generic type parameter with `Serialize()`:
+The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:
 
 ```csharp
 string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
@@ -61,7 +61,7 @@ string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
 
 ### Serialization example
 
-Here's an example type to be serialized, which contains collections and nested classes:
+Here's an example type that contains collections and nested classes:
 
 ```csharp
 public class WeatherForecast
@@ -86,7 +86,7 @@ public class Temperature
 }
 ```
 
-The JSON output is minified by default: 
+The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified by default: 
 
 ```json
 {"Date":"2019-08-01T00:00:00-07:00","TemperatureC":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":{"DegreesCelsius":20},"Low":{"DegreesCelsius":-10}},"Hot":{"High":{"DegreesCelsius":60},"Low":{"DegreesCelsius":20}}},"SummaryWords":["Cool","Windy","Humid"]}
@@ -137,7 +137,7 @@ To serialize to UTF-8, call the <xref:System.Text.Json.JsonSerializer.SerializeT
 byte[] jsonUtf8Bytes = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
 ```
 
-As an alternative, a <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is available.
+A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is also available.
 
 Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
 
@@ -161,7 +161,7 @@ Supported types include:
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
 
-You can [implement custom converters](system-text-json-converters-how-to.md) to handle additional types.
+You can [implement custom converters](system-text-json-converters-how-to.md) to handle additional types or provide functionality that isn't supported by the built-in converters.
 
 ## How to read JSON into .NET objects (deserialize)
 
@@ -211,10 +211,12 @@ weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(ref utf8Reader)
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Deserialization to reference types without a parameterless constructor isn't supported.
 * Deserialization to immutable objects or read-only properties isn't supported. For more information, see the GitHub [issue on immutable object support](https://github.com/dotnet/corefx/issues/38569) and the [issue on read-only property support](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx repository on GitHub.
-* By default, enums are supported as numbers.
+* By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
 * Fields aren't supported.
-* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas) if needed.
+* By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
+
+You can [implement custom converters](system-text-json-converters-how-to.md) to provide functionality that isn't supported by the built-in converters.
 
 ## Serialize to formatted JSON
 
@@ -228,7 +230,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Here's an example type to be serialized and JSON output:
+Here's an example type to be serialized and pretty-printed JSON output:
 
 ```csharp
 class WeatherForecast
@@ -392,14 +394,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Here's an example object to serialize and JSON output:
-
-|Property |Value  |
-|---------|---------|
-| Date    | 8/1/2019 12:00:00 AM -07:00|
-| TemperatureC| 25 |
-| Summary| Hot|
-| TemperatureRanges | Cold, 20<br>Hot, 40|
+Serializing an object with a dictionary named `TemperatureRanges` that has key-value pairs `"Cold", 20` and `"Hot", 40` would result in JSON output like the following example:
 
 ```json
 {
@@ -422,16 +417,16 @@ By default, enums are serialized as numbers. To serialize enum names as strings,
 For example, suppose you need to serialize the following class that has an enum:
 
 ```csharp
-public enum Summary
-{
-    Cold, Cool, Warm, Hot
-}
-
 class WeatherForecastWithEnum
 {
     public DateTimeOffset Date { get; set; }
     public int TemperatureC { get; set; }
     public Summary Summary { get; set; }
+}
+
+public enum Summary
+{
+    Cold, Cool, Warm, Hot
 }
 ```
 
@@ -506,7 +501,7 @@ class WeatherForecast
 
 ### Exclude all read-only properties
 
-To exclude all read-only properties, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> to `true`, as shown in the following example:
+A property is read-only if it contains a public getter but not a public setter. To exclude all read-only properties, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> to `true`, as shown in the following example:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -536,7 +531,7 @@ class WeatherForecast
 }
 ```
 
-This option applies only to serialization. During deserialization, read-only properties are ignored by default. A property is read-only if it contains a public getter but not a public setter.
+This option applies only to serialization. During deserialization, read-only properties are ignored by default.
 
 ### Exclude all null value properties
 
@@ -569,7 +564,7 @@ This setting applies to serialization and deserialization. For information about
 
 ## Customize character encoding
 
-By default, the serializer escapes all non-ASCII characters.  That is, it replaces them with `\uxxxx` where `xxxxx` is the Unicode code of the character.  For example, if the Summary property is set to Cyrillic жарко the WeatherForecast object is serialized as shown in this example:
+By default, the serializer escapes all non-ASCII characters.  That is, it replaces them with `\uxxxx` where `xxxxx` is the Unicode code of the character.  For example, if the `Summary` property is set to Cyrillic жарко, the `WeatherForecast` object is serialized as shown in this example:
 
 ```json
 {
@@ -597,7 +592,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-This code serializes the Cyrillic characters, as shown in the following example:
+This code serializes Cyrillic and Greek characters. Cyrillic characters are shown in the following example:
 
 ```json
 {
@@ -607,7 +602,7 @@ This code serializes the Cyrillic characters, as shown in the following example:
 }
 ```
 
-To specify all languages, use <xref:System.Text.Unicode.UnicodeRanges.All>.
+To specify all languages, use <xref:System.Text.Unicode.UnicodeRanges.All?displayProperty=nameWithType>.
 
 ### Serialize specific characters
 
@@ -629,7 +624,7 @@ options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Here's an example JSON produced by the preceding code:
+Here's an example of JSON produced by the preceding code:
 
 ```json
 {
@@ -657,13 +652,13 @@ json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
 > [!CAUTION]
-> Unlike the default encoder, `UnsafeRelaxedJsonEscaping`:
+> Unlike the default encoder, the `UnsafeRelaxedJsonEscaping` encoder:
 >
 > * Doesn't escape HTML-sensitive characters such as `<`, `>`, and `&`. 
 > * Doesn't escape some other characters, such as the quotation mark (`"`) and the plus sign (`+`).
 > * Specifies `UnicodeRanges.All`.
 >
-> Therefore, it must be used cautiously. It can be used if the output data is within a response whose content-type is known with a charset set to UTF-8.
+> Use the unsafe encoder only if the output data is within a response whose content-type is known with a charset set to UTF-8.
 
 ## Serialize properties of derived classes
 
@@ -729,7 +724,7 @@ For information about polymorphic deserialization, see [Support polymorphic dese
 
 ## Allow comments and trailing commas
 
-By default comments and trailing commas are not allowed in JSON. To allow comments in the JSON, set the <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling?displayProperty=nameWithType> property to `JsonCommentHandling.Skip`. And to allow trailing commas, set the <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas?displayProperty=nameWithType> property to `true`. The following example shows how to allow both:
+By default, comments and trailing commas are not allowed in JSON. To allow comments in the JSON, set the <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling?displayProperty=nameWithType> property to `JsonCommentHandling.Skip`. And to allow trailing commas, set the <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas?displayProperty=nameWithType> property to `true`. The following example shows how to allow both:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -890,7 +885,7 @@ And suppose the following JSON is deserialized:
 
 After deserialization, the `Summary` property of the `WeatherForecastWithDefault` object is null.
 
-To change this behavior, set `IgnoreNullValues` to `true`, as shown in the following example:
+To change this behavior, set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType> to `true`, as shown in the following example:
 
 ```csharp
 var options = new JsonSerializerOptions
@@ -1029,15 +1024,13 @@ The preceding code:
 * Uses <xref:System.Text.Json.JsonDocumentOptions> to specify that comments in the input JSON are allowed but ignored.
 * When finished, calls <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> on the writer. An alternative is to let the writer autoflush when it's disposed. 
 
-Here are samples of input and output JSON files processed by the example code.
-
-Input file with minified JSON:
+Here's an example of JSON input to be processed by the example code:
 
 ```json
 {"Class Name": "Science","Teacher's Name": "Jane","Semester": "2019-01-01","Students": [{"Name": "John","Grade": 94.3},{"Name": "James","Grade": 81.0},{"Name": "Julia","Grade": 91.9},{"Name": "Jessica","Grade": 72.4},{"Name": "Johnathan"}],"Final": true}
 ```
 
-Output file with pretty-printed JSON:
+The result is the following pretty-printed JSON output:
 
 ```json
 {
@@ -1199,7 +1192,7 @@ The preceding code:
 * Assumes the JSON contains an array of objects and each object may contain a "name" property of type string.
 * Counts objects and `name` property values that end with "University".
 
-Here's a JSON sample that the preceding code can read. The result is "2 out of 4 have names that end with 'University'":
+Here's a JSON sample that the preceding code can read. The resulting summary message is "2 out of 4 have names that end with 'University'":
 
 ```json
 [

@@ -27,7 +27,7 @@ When one or both operands are of type [string](../builtin-types/reference-types.
 
 [!code-csharp-interactive[string concatenation](~/samples/csharp/language-reference/operators/AdditionOperator.cs#AddStrings)]
 
-Starting with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
+Beginning with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
 
 [!code-csharp-interactive[string interpolation](~/samples/csharp/language-reference/operators/AdditionOperator.cs#UseStringInterpolation)]
 

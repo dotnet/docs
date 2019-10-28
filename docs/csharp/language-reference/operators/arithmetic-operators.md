@@ -30,7 +30,7 @@ helpviewer_keywords:
 ---
 # Arithmetic operators (C# reference)
 
-The following operators perform arithmetic operations with the operands of numeric types:
+The following operators perform arithmetic operations with operands of numeric types:
 
 - Unary [`++` (increment)](#increment-operator-), [`--` (decrement)](#decrement-operator---), [`+` (plus)](#unary-plus-and-minus-operators), and [`-` (minus)](#unary-plus-and-minus-operators) operators
 - Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators

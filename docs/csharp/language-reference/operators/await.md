@@ -17,7 +17,7 @@ In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync
 
 [!code-csharp[await example](~/samples/csharp/language-reference/operators/AwaitOperator.cs)]
 
-The preceding example uses the [async `Main` method](../../programming-guide/main-and-command-args/index.md), which is possible starting with C# 7.1. For more information, see the [await operator in the Main method](#await-operator-in-the-main-method) section.
+The preceding example uses the [async `Main` method](../../programming-guide/main-and-command-args/index.md), which is possible beginning with C# 7.1. For more information, see the [await operator in the Main method](#await-operator-in-the-main-method) section.
 
 > [!NOTE]
 > For an introduction to asynchronous programming, see [Asynchronous programming with async and await](../../programming-guide/concepts/async/index.md). Asynchronous programming with `async` and `await` follows the [task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
@@ -28,11 +28,11 @@ The operand of the `await` operator is usually of one of the following .NET type
 
 The type of expression `await t` is `TResult` if the type of expression `t` is <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>. If the type of `t` is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, the type of `await t` is `void`. In both cases, if `t` throws an exception, `await t` rethrows the exception. For more information about exception handling, see the [Exceptions in async methods](../keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch statement](../keywords/try-catch.md) article.
 
-The `async` and `await` keywords are available starting with C# 5.
+The `async` and `await` keywords are available in C# 5 and later.
 
 ## await operator in the Main method
 
-Starting with C# 7.1, the [`Main` method](../../programming-guide/main-and-command-args/index.md), which is the application entry point, can return `Task` or `Task<int>`, enabling it to be async so you can use the `await` operator in its body. In earlier C# versions, to ensure that the `Main` method waits for the completion of an asynchronous operation, you can retrieve the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property of the <xref:System.Threading.Tasks.Task%601> instance that is returned by the corresponding async method. For asynchronous operations that don't produce a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [C# language versioning](../configure-language-version.md).
+Beginning with C# 7.1, the [`Main` method](../../programming-guide/main-and-command-args/index.md), which is the application entry point, can return `Task` or `Task<int>`, enabling it to be async so you can use the `await` operator in its body. In earlier C# versions, to ensure that the `Main` method waits for the completion of an asynchronous operation, you can retrieve the value of the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property of the <xref:System.Threading.Tasks.Task%601> instance that is returned by the corresponding async method. For asynchronous operations that don't produce a value, you can call the <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> method. For information about how to select the language version, see [C# language versioning](../configure-language-version.md).
 
 ## C# language specification
 

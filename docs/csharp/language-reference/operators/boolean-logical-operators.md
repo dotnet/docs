@@ -35,13 +35,13 @@ helpviewer_keywords:
 ---
 # Boolean logical operators (C# reference)
 
-The following operators perform logical operations with the [bool](../keywords/bool.md) operands:
+The following operators perform logical operations with [bool](../keywords/bool.md) operands:
 
 - Unary [`!` (logical negation)](#logical-negation-operator-) operator.
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators. Those operators always evaluate both operands.
 - Binary [`&&` (conditional logical AND)](#conditional-logical-and-operator-) and [`||` (conditional logical OR)](#conditional-logical-or-operator-) operators. Those operators evaluate the right-hand operand only if it's necessary.
 
-For the operands of [integral numeric types](../builtin-types/integral-numeric-types.md), the `&`, `|`, and `^` operators perform bitwise logical operations. For more information, see [Bitwise and shift operators](bitwise-and-shift-operators.md).
+For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `&`, `|`, and `^` operators perform bitwise logical operations. For more information, see [Bitwise and shift operators](bitwise-and-shift-operators.md).
 
 ## Logical negation operator !
 
@@ -49,7 +49,7 @@ The unary prefix `!` operator computes logical negation of its operand. That is,
 
 [!code-csharp-interactive[logical negation](~/samples/csharp/language-reference/operators/BooleanLogicalOperators.cs#Negation)]
 
-Starting with C# 8.0, the unary postfix `!` operator is the [null-forgiving operator](null-forgiving.md).
+Beginning with C# 8.0, the unary postfix `!` operator is the [null-forgiving operator](null-forgiving.md).
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
@@ -63,7 +63,7 @@ In the following example, the right-hand operand of the `&` operator is a method
 
 The [conditional logical AND operator](#conditional-logical-and-operator-) `&&` also computes the logical AND of its operands, but doesn't evaluate the right-hand operand if the left-hand operand evaluates to `false`.
 
-For operands of [integral numeric types](../builtin-types/integral-numeric-types.md), the `&` operator computes the [bitwise logical AND](bitwise-and-shift-operators.md#logical-and-operator-) of its operands. The unary `&` operator is the [address-of operator](pointer-related-operators.md#address-of-operator-).
+For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `&` operator computes the [bitwise logical AND](bitwise-and-shift-operators.md#logical-and-operator-) of its operands. The unary `&` operator is the [address-of operator](pointer-related-operators.md#address-of-operator-).
 
 ## Logical exclusive OR operator ^
 
@@ -71,7 +71,7 @@ The `^` operator computes the logical exclusive OR, also known as the logical XO
 
 [!code-csharp-interactive[logical exclusive OR](~/samples/csharp/language-reference/operators/BooleanLogicalOperators.cs#Xor)]
 
-For operands of [integral numeric types](../builtin-types/integral-numeric-types.md), the `^` operator computes the [bitwise logical exclusive OR](bitwise-and-shift-operators.md#logical-exclusive-or-operator-) of its operands.
+For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `^` operator computes the [bitwise logical exclusive OR](bitwise-and-shift-operators.md#logical-exclusive-or-operator-) of its operands.
 
 ## Logical OR operator |
 
@@ -85,7 +85,7 @@ In the following example, the right-hand operand of the `|` operator is a method
 
 The [conditional logical OR operator](#conditional-logical-or-operator-) `||` also computes the logical OR of its operands, but doesn't evaluate the right-hand operand if the left-hand operand evaluates to `true`.
 
-For operands of [integral numeric types](../builtin-types/integral-numeric-types.md), the `|` operator computes the [bitwise logical OR](bitwise-and-shift-operators.md#logical-or-operator-) of its operands.
+For operands of the [integral numeric types](../builtin-types/integral-numeric-types.md), the `|` operator computes the [bitwise logical OR](bitwise-and-shift-operators.md#logical-or-operator-) of its operands.
 
 ## <a name="conditional-logical-and-operator-"></a> Conditional logical AND operator &amp;&amp;
 
@@ -109,7 +109,7 @@ The [logical OR operator](#logical-or-operator-) `|` also computes the logical O
 
 ## Nullable Boolean logical operators
 
-For the `bool?` operands, the `&` and `|` operators support the three-valued logic. The semantics of these operators is defined by the following table:  
+For `bool?` operands, the `&` and `|` operators support the three-valued logic. The semantics of these operators is defined by the following table:  
   
 |x|y|x&y|x&#124;y|  
 |----|----|----|----|  
@@ -125,11 +125,11 @@ For the `bool?` operands, the `&` and `|` operators support the three-valued log
 
 The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator which is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands evaluates to `null`. However, the `&` and `|` operators can produce non-null even if one of the operands evaluates to `null`. For more information about the operator behavior with nullable value types, see the [Operators](../../programming-guide/nullable-types/using-nullable-types.md#operators) section of the [Using nullable value types](../../programming-guide/nullable-types/using-nullable-types.md) article.
 
-You can also use the `!` and `^` operators with the `bool?` operands, as the following example shows:
+You can also use the `!` and `^` operators with `bool?` operands, as the following example shows:
 
 [!code-csharp-interactive[lifted negation and xor](~/samples/csharp/language-reference/operators/BooleanLogicalOperators.cs#WithNullableBoolean)]
 
-The conditional logical operators `&&` and `||` don't support the `bool?` operands.
+The conditional logical operators `&&` and `||` don't support `bool?` operands.
 
 ## Compound assignment
 

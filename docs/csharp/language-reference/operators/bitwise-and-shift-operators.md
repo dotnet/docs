@@ -40,7 +40,7 @@ The following operators perform bitwise or shift operations with operands of the
 
 Those operators are defined for the `int`, `uint`, `long`, and `ulong` types. When both operands are of other integral types (`sbyte`, `byte`, `short`, `ushort`, or `char`), their values are converted to the `int` type, which is also the result type of an operation. When operands are of different integral types, their values are converted to the closest containing integral type. For more information, see the [Numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
-The `&`, `|`, and `^` operators are also defined for the operands of the `bool` type. For more information, see [Boolean logical operators](boolean-logical-operators.md).
+The `&`, `|`, and `^` operators are also defined for operands of the `bool` type. For more information, see [Boolean logical operators](boolean-logical-operators.md).
 
 Bitwise and shift operations never cause overflow and produce the same results in [checked and unchecked](../keywords/checked-and-unchecked.md) contexts.
 

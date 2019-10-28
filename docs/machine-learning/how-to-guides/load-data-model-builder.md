@@ -64,7 +64,7 @@ You're done setting up your data source file for Model Builder. Select the **Tra
 
 ## Set up image data files
 
-Model Builder expects image data to be JPG files organized in folders that correspond to the categories of the classification. 
+Model Builder expects image data to be JPG or PNG files organized in folders that correspond to the categories of the classification. 
 
 To load images into Model Builder, provide the path to a single top-level directory:
 

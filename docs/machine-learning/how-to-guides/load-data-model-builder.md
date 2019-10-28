@@ -16,7 +16,6 @@ Learn how to set up and load your data sets from a file or a SQL Server database
 
 Model Builder limits the amount of data you can use for training models:
 
-- Training data set limit: 1GB
 - SQL Server data: 100,000 rows 
 
 [Question: Clarify the limits. Is the SQL Server data limit an absolute limit or for training only? The training dataset  -- is this a limit for text or numerical data from files?]

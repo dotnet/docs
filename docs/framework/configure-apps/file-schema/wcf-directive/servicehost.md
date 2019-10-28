@@ -11,11 +11,11 @@ Associates the factory used to produce the service host with the service to be h
 ```xml  
 <% @ServiceHost
 Service = "Service, ServiceNamespace"
-Factory = "Factory, FactoryNamespace"  
-Debug = "Debug"  
+Factory = "Factory, FactoryNamespace"
+Debug = "Debug"
 Language = "Language"
 CodeBehind = "CodeBehind"
-%>  
+%>
 ```  
   
 ## Attributes  

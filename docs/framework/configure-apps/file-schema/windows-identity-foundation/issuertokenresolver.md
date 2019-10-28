@@ -67,7 +67,7 @@ Registers the issuer token resolver that is used by handlers in the token handle
 ## Example
   
 ```csharp  
-public override void LoadCustomConfiguration(System.Xml.XmlNodeList nodelist)  
+public override void LoadCustomConfiguration(XmlNodeList nodelist)
 {  
     foreach (XmlNode node in nodelist)  
     {  

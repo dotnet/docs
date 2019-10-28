@@ -52,7 +52,6 @@ Represents a collection of parameters that are used globally across multiple ser
 ```xml  
 <add
 type="System.Workflow.Runtime.Tracking.SqlTrackingService, System.Workflow.Runtime, Version=3.0.00000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" 
-
 ConnectionString="Data Source=localhost;Initial Catalog=Partner20WFTP;Integrated Security=True;" />
 ```  
   
@@ -77,12 +76,12 @@ ConnectionString="Data Source=localhost;Initial Catalog=Partner20WFTP;Integrated
   
  Notice that the `EnableRetries` parameter can be set either at a global level (as shown in the *CommonParameters* section) or for individual services that support `EnableRetries` (as shown in the *Services* section).  
   
- The following sample code shows how to change the common parameters programmatically.  
+ The following sample code shows how to change the common parameters programmatically:
   
 ```csharp  
-Configuration config=WebConfigurationManager.OpenWebConfiguration("/Workflow", "Default Web Site", null, "localhost");  
-WorkflowRuntimeSection wfruntime=config.GetSection("WorkflowRuntime") as WorkflowRuntimeSection;  
-NameValueConfigurationCollection commonParameters=wfruntime.CommonParameters;  
+Configuration config = WebConfigurationManager.OpenWebConfiguration("/Workflow", "Default Web Site", null, "localhost");
+var wfruntime = config.GetSection("WorkflowRuntime") as WorkflowRuntimeSection;  
+NameValueConfigurationCollection commonParameters = wfruntime.CommonParameters;
 commonParameters["ConnectionString"].Value="another connection string";  
 config.Save();  
 ```  

@@ -117,4 +117,4 @@ For more information on netsh.exe, see "[How to Use the Netsh.exe Tool and Comma
 
 ## See also
 
-- [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)
+- [WCF Test Client (WcfTestClient.exe)](wcf-test-client-wcftestclient-exe.md)

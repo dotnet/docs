@@ -53,7 +53,7 @@ The default value of `Decimal` is 0.
 
   The output of `MsgBox` in the preceding example is as follows:
 
-  ```
+  ```console
   d1 = 2.375, d2 = 1.625, d3 = 4.000, d4 = 4
   ```
 

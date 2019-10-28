@@ -11,7 +11,7 @@ In this example, an `ICalculator` contract is defined for a calculator service, 
   
  It is usually the best practice to specify the binding and address information declaratively in configuration rather than imperatively in code. Defining endpoints in code is usually not practical because the bindings and addresses for a deployed service are typically different from those used while the service is being developed. More generally, keeping the binding and addressing information out of the code allows them to change without having to recompile or redeploy the application.  
   
- For a description of how to configure this service using configuration elements instead of code, see [How to: Specify a Service Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
+ For a description of how to configure this service using configuration elements instead of code, see [How to: Specify a Service Binding in Configuration](how-to-specify-a-service-binding-in-configuration.md).  
   
 ### To specify in code to use the BasicHttpBinding for the service  
   
@@ -44,5 +44,5 @@ In this example, an `ICalculator` contract is defined for a calculator service, 
   
 ## See also
 
-- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [Specifying an Endpoint Address](../../../docs/framework/wcf/specifying-an-endpoint-address.md)
+- [Using Bindings to Configure Services and Clients](using-bindings-to-configure-services-and-clients.md)
+- [Specifying an Endpoint Address](specifying-an-endpoint-address.md)

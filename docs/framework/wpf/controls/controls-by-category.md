@@ -165,7 +165,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.SoundPlayerAction>  
   
 ## Digital Ink  
- Digital ink controls provide integrated support for [!INCLUDE[TLA#tla_tpc](../../../../includes/tlasharptla-tpc-md.md)] features, such as ink viewing and ink input.  
+ Digital ink controls provide integrated support for Tablet PC features, such as ink viewing and ink input.  
   
 - <xref:System.Windows.Controls.InkCanvas>  
   

@@ -17,7 +17,7 @@ Returns the result of explicitly converting an expression to a specified data ty
 
 ## Syntax
 
-```
+```vb
 CType(expression, typename)
 ```
 

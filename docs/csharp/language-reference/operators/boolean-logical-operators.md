@@ -1,7 +1,7 @@
 ---
 title: "Boolean logical operators - C# reference"
 description: "Learn about C# operators that perform logical negation, conjunction (AND), and inclusive and exclusive disjunction (OR) operations with Boolean operands."
-ms.date: 04/08/2019
+ms.date: 09/27/2019
 author: pkulikov
 f1_keywords: 
   - "!_CSharpKeyword"
@@ -45,9 +45,11 @@ For the operands of the [integral](../builtin-types/integral-numeric-types.md) t
 
 ## Logical negation operator !
 
-The `!` operator computes logical negation of its operand. That is, it produces `true`, if the operand evaluates to `false`, and `false`, if the operand evaluates to `true`:
+The unary prefix `!` operator computes logical negation of its operand. That is, it produces `true`, if the operand evaluates to `false`, and `false`, if the operand evaluates to `true`:
 
 [!code-csharp-interactive[logical negation](~/samples/csharp/language-reference/operators/BooleanLogicalOperators.cs#Negation)]
+
+Starting with C# 8.0, the unary postfix `!` operator is the [null-forgiving operator](null-forgiving.md).
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
@@ -121,7 +123,7 @@ For the `bool?` operands, the `&` and `|` operators support the three-valued log
 |null|false|false|null|  
 |null|null|null|null|  
 
-The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator which is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands is `null`. However, the `&` and `|` operators can produce non-null even if one of the operands is `null`. For more information about the operator behavior with nullable value types, see the [Operators](../../programming-guide/nullable-types/using-nullable-types.md#operators) section of the [Using nullable types](../../programming-guide/nullable-types/using-nullable-types.md) article.
+The behavior of those operators differs from the typical operator behavior with nullable value types. Typically, an operator which is defined for operands of a value type can be also used with operands of the corresponding nullable value type. Such an operator produces `null` if any of its operands is `null`. However, the `&` and `|` operators can produce non-null even if one of the operands is `null`. For more information about the operator behavior with nullable value types, see the [Operators](../../programming-guide/nullable-types/using-nullable-types.md#operators) section of the [Using nullable value types](../../programming-guide/nullable-types/using-nullable-types.md) article.
 
 You can also use the `!` and `^` operators with the `bool?` operands, as the following example shows:
 

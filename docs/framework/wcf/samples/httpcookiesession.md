@@ -49,10 +49,7 @@ This sample demonstrates how to build a custom protocol channel to use HTTP cook
     if (result != null && result.CompletedSynchronously)  
     {  
        // do not block the user thread  
-       if (this.completeReceiveCallback == null)  
-       {  
-          this.completeReceiveCallback = new WaitCallback(CompleteReceiveCallback);  
-       }  
+       this.completeReceiveCallback ??= new WaitCallback(CompleteReceiveCallback);
        ThreadPool.QueueUserWorkItem(this.completeReceiveCallback, result);  
     }  
     ```  

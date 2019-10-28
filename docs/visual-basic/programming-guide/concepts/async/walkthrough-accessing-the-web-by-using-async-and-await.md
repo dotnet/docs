@@ -209,9 +209,9 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
 1. Choose the F5 key to run the program, and then choose the **Start** button.
 
-    Output that resembles the following list should appear.
+    Output that resembles the following list should appear:
 
-    ```
+    ```console
     msdn.microsoft.com/library/windows/apps/br211380.aspx        383832
     msdn.microsoft.com                                            33964
     msdn.microsoft.com/library/hh290136.aspx               225793

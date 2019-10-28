@@ -291,11 +291,7 @@ public object GetInstance(InstanceContext instanceContext, Message message)
 
     instance = storageManager.GetInstance(contextId, serviceType);
 
-    if (instance == null)
-    {
-        instance = Activator.CreateInstance(serviceType);
-    }
-
+    instance ??= Activator.CreateInstance(serviceType);
     return instance;
 }
 ```

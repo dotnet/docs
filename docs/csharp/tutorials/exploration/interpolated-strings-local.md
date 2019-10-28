@@ -9,11 +9,11 @@ ms.date: 10/23/2018
 
 This tutorial teaches you how to use C# [string interpolation](../../language-reference/tokens/interpolated.md) to insert values into a single result string. You write C# code and see the results of compiling and running it. The tutorial contains a series of lessons that show you how to insert values into a string and format those values in different ways.
 
-This tutorial expects that you have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Mac, PC or Linux. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
+This tutorial expects that you have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Windows, Linux, or macOS. You also can complete the [interactive version](interpolated-strings.yml) of this tutorial in your browser.
 
 ## Create an interpolated string
 
-Create a directory named **interpolated**. Make it the current directory and run the following command from a console window:
+Create a directory named *interpolated*. Make it the current directory and run the following command from a console window:
 
 ```dotnetcli
 dotnet new console
@@ -21,7 +21,7 @@ dotnet new console
 
 This command creates a new .NET Core console application in the current directory.
 
-Open **Program.cs** in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code, where you replace `<name>` with your name:
+Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code, where you replace `<name>` with your name:
 
 ```csharp
 var name = "<name>";
@@ -62,9 +62,9 @@ using System;
 public class Vegetable
 {
    public Vegetable(string name) => Name = name;
-   
+
    public string Name { get; }
-   
+
    public override string ToString() => Name;
 }
 
@@ -101,7 +101,7 @@ Console.WriteLine($"On {date:d}, the price of {item} was {price:C2} per {unit}."
 
 You specify a format string by following the interpolation expression with a colon (":") and the format string. "d" is a [standard date and time format string](../../../standard/base-types/standard-date-and-time-format-strings.md#the-short-date-d-format-specifier) that represents the short date format. "C2" is a  [standard numeric format string](../../../standard/base-types/standard-numeric-format-strings.md#the-currency-c-format-specifier) that represents a number as a currency value with two digits after the decimal point.
 
-A number of types in the .NET libraries support a predefined set of format strings. These include all the numeric types and the date and time types. For a complete list of types that support format strings, see [Format Strings and .NET Class Library Types](../../../standard/base-types/formatting-types.md#stringRef) in the [Formatting Types in .NET](../../../standard/base-types/formatting-types.md) article.
+A number of types in the .NET libraries support a predefined set of format strings. These include all the numeric types and the date and time types. For a complete list of types that support format strings, see [Format Strings and .NET Class Library Types](../../../standard/base-types/formatting-types.md#format-strings-and-net-types) in the [Formatting Types in .NET](../../../standard/base-types/formatting-types.md) article.
 
 Try modifying the format strings in your text editor and, each time you make a change, rerun the program to see how the changes affect the formatting of the date and time and the numeric value. Change the "d" in `{date:d}` to "t" (to display the short time format), "y" (to display the year and month), and "yyyy" (to display the year as a four-digit number). Change the "C2" in `{price:C2}` to "e" (for exponential notation) and "F3" (for a numeric value with three digits after the decimal point).
 

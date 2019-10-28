@@ -6,9 +6,9 @@ ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
 # \<schemeSettings> Element (Uri Settings)
 Specifies how a <xref:System.Uri> will be parsed for specific schemes.  
   
- \<configuration>  
-\<uri>  
-\<schemeSettings>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<schemeSettings>**  
   
 ## Syntax  
   

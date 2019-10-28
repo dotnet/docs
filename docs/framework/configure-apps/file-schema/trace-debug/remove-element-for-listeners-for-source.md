@@ -11,12 +11,12 @@ ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
 # \<remove> Element for \<listeners> for \<source>
 Removes a listener from the `Listeners` collection for a trace source.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
-\<source>  
-\<listeners>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   

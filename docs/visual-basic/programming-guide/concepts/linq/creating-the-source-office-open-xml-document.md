@@ -18,7 +18,7 @@ This topic shows how to create the Office Open XML WordprocessingML document tha
   
 2. Paste the following text into the new document:  
   
-    ```  
+    ```text  
     Parsing WordprocessingML with LINQ to XML  
   
     The following example prints to the console.  

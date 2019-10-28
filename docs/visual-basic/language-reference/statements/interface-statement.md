@@ -13,7 +13,7 @@ Declares the name of an interface and introduces the definitions of the members 
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] _  
 Interface name [ ( Of typelist ) ]  
     [ Inherits interfacenames ]  

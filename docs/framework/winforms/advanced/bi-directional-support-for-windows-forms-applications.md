@@ -73,7 +73,7 @@ You can use Visual Studio to create Windows-based applications that support bi-d
 |<xref:System.Windows.Forms.VScrollBar>|Displayed on the left side instead of right side of scrollable controls|No effect|No|
 
 ## Encoding
- Windows Forms support Unicode, so you can include any character set when you create your bi-directional applications. However, not all Windows Forms controls support Unicode on all platforms. For more information, see [Encoding and Windows Forms Globalization](encoding-and-windows-forms-globalization.md).
+ Windows Forms support Unicode, so you can include any character set when you create your bi-directional applications. However, not all Windows Forms controls support Unicode on all platforms.
 
 ## GDI+
  You can use GDI+ to draw text with right-to-left reading order. The <xref:System.Drawing.Graphics.DrawString%2A> method, which is used to draw text, supports a `StringFormat` parameter that you can set to the <xref:System.Drawing.StringFormatFlags.DirectionRightToLeft> member of the <xref:System.Drawing.StringFormatFlags> enumeration in order to reverse the point of origin for the text.
@@ -114,4 +114,3 @@ You can use Visual Studio to create Windows-based applications that support bi-d
 ## See also
 
 - [Bidirectional Support for ASP.NET Web Applications](https://docs.microsoft.com/previous-versions/aspnet/6eedwbtt(v=vs.100))
-- [Globalizing Windows Forms applications](globalizing-windows-forms.md)

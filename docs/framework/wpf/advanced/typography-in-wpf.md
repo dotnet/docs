@@ -23,7 +23,7 @@ Text with ClearType y-direction antialiasing
   
 <a name="Rich_Typography"></a>   
 ## Rich Typography  
- The OpenType font format is an extension of the [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] font format. The OpenType font format was developed jointly by Microsoft and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of OpenType fonts, such as stylistic alternates and swashes. The Windows SDK provides a set of sample OpenType fonts that are designed with rich features, such as the Pericles and Pescadero fonts. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
+ The OpenType font format is an extension of the TrueType® font format. The OpenType font format was developed jointly by Microsoft and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of OpenType fonts, such as stylistic alternates and swashes. The Windows SDK provides a set of sample OpenType fonts that are designed with rich features, such as the Pericles and Pescadero fonts. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
  The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
   

@@ -35,7 +35,7 @@ ms.assetid: 818a505b-a196-41dd-aaac-2ccd5f7a2f1a
   
  You can navigate through a reference by using the member access (dot) operator(`.`). The following snippet extracts the Id property (of Order) by navigating through the r (reference) property.  
   
-```  
+```sql  
 select o2.r.Id   
 from (select ref(o) as r from LOB.Orders as o) as o2   
 ```  

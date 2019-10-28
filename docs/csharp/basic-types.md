@@ -68,7 +68,7 @@ As stated previously, you can implicitly type a local variable (but not class me
   
 In some cases, it is inconvenient to create a named type for simple sets of related values that you do not intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous types](programming-guide/classes-and-structs/anonymous-types.md).
 
-It's common to want to return more than one value from a method. You can create *tuple types* that return multiple values in a single method call. For more information, see [Tuples](tuples.md)
+It's common to want to return more than one value from a method. You can create *tuple types* that return multiple values in a single method call. For more information, see [Tuples](tuples.md).
 
 ## The Common type system
 

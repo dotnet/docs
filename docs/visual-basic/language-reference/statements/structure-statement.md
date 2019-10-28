@@ -18,7 +18,7 @@ Declares the name of a structure and introduces the definition of the variables,
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Partial ] _  
 Structure name [ ( Of typelist ) ]  
     [ Implements interfacenames ]  

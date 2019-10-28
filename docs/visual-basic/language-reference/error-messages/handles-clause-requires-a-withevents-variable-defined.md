@@ -1,22 +1,23 @@
 ---
 title: "Handles clause requires a WithEvents variable defined in the containing type or one of its base types"
 ms.date: 07/20/2015
-f1_keywords: 
+f1_keywords:
   - "vbc30506"
   - "bc30506"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "BC30506"
 ms.assetid: 5b66f6a8-f050-4e03-a57f-a64e85f80cb5
 ---
 # Handles clause requires a WithEvents variable defined in the containing type or one of its base types
+
 You did not supply a `WithEvents` variable in your `Handles` clause. The `Handles` keyword at the end of a procedure declaration causes it to handle events raised by an object variable declared using the `WithEvents` keyword.
-  
- **Error ID:** BC30506
+
+**Error ID:** BC30506
 
 ## To correct this error
-  
-- Supply the necessary `WithEvents` variable.
-  
+
+Supply the necessary `WithEvents` variable.
+
 ## Example
 
 In the following example, Visual Basic generates compiler error `BC30506` because the [WithEvents](../modifiers/withevents.md) keyword is not used in the definition of the <xref:System.Timers.Timer?displayProperty=nameWithType> instance.
@@ -26,7 +27,7 @@ Imports System.Timers
 
 Module Module1
     Private _timer1 As New Timer() With {.Interval = 1000, .Enabled = True}
-    
+
     Sub Main()
         Console.WriteLine("Press any key to start the timer...")
         Console.ReadKey()

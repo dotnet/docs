@@ -50,7 +50,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 <Test TestId="0002" TestType="CMD">  
   <Name>Find succeeding characters</Name>  

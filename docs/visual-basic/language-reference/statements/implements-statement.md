@@ -15,9 +15,9 @@ Specifies one or more interfaces, or interface members, that must be implemented
   
 ## Syntax  
   
-```  
+```vb  
 Implements interfacename [, ...]  
--or-  
+' -or-  
 Implements interfacename.interfacemember [, ...]  
 ```  
   

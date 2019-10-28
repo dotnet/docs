@@ -22,7 +22,7 @@ Types are made of members: methods, properties, events, constructors, and fields
   
  **✓ DO** give methods names that are verbs or verb phrases.  
   
-```  
+```csharp  
 public class String {  
     public int CompareTo(...);  
     public string[] Split(...);  
@@ -50,7 +50,7 @@ public class String {
   
  For example, the following property correctly gets and sets an enum value named `Color`, so the property is named `Color`:  
   
-```  
+```csharp  
 public enum Color {...}  
 public class Control {  
     public Color Color { get {...} set {...} }  

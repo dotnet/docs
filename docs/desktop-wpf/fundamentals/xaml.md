@@ -1,9 +1,10 @@
 ---
-title: XAML overview (WPF) - .NET Desktop
+title: XAML overview - WPF
 description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET Core.
 author: thraka
 ms.date: 08/08/2019
 ms.author: adegeo
+dev_langs: ["csharp", "vb"]
 helpviewer_keywords: 
   - "user interfaces [XAML]"
   - "classes [XAML]"
@@ -20,7 +21,7 @@ helpviewer_keywords:
   - "attribute syntax [XAML]"
 ---
 
-# XAML overview (WPF & .NET Core)
+# XAML overview in WPF
 
 This article describes the features of the XAML language and demonstrates how you can use XAML to write Windows Presentation Foundation (WPF) applications. This article specifically describes XAML as implemented by WPF. XAML itself is a larger language concept than WPF.
 
@@ -333,7 +334,7 @@ If you have not already done this, try the exercises in the tutorial article [Wa
 
 WPF uses a particular application model that is based on the <xref:System.Windows.Application> class. For details, see [Application Management Overview](../app-development/application-management-overview.md).
 
-[Building a WPF Application](../app-development/building-a-wpf-application-wpf.md) gives you more details about how to build XAML inclusive applications from the command line and with [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)].
+[Building a WPF Application](../app-development/building-a-wpf-application-wpf.md) gives you more details about how to build XAML inclusive applications from the command line and with Visual Studio.
 
 [Dependency Properties Overview](dependency-properties-overview.md) gives more information about the versatility of properties in WPF, and introduces the concept of dependency properties.
 

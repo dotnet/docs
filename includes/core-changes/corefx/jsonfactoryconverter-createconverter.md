@@ -2,7 +2,7 @@
 
 To facilitate the composition of <xref:System.Text.Json.Serialization.JsonConverterFactory> classes, the <xref:System.Text.Json.Serialization.JsonConverterFactory.CreateConverter%2A> method has been made public and given a second argument of type <xref:System.Text.Json.JsonSerializerOptions>.
 
-#### Details
+#### Change description
 
 The signature of the `CreateConverter` method in .NET Core prior to version 3.0 Preview 8 was: 
 

@@ -19,9 +19,7 @@ Regular expressions in .NET include three miscellaneous language constructs. One
 ## Inline Options  
  You can set or disable specific pattern matching options for part of a regular expression by using the syntax  
   
-```  
-(?imnsx-imnsx)  
-```  
+`(?imnsx-imnsx)`  
   
  You list the options you want to enable after the question mark, and the options you want to disable after the minus sign. The following table describes each option. For more information about each option, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
   

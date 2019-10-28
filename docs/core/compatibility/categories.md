@@ -43,4 +43,4 @@ Maintaining forward compatibility is not a goal of .NET Core.
 
 ## See also
 
-[Evaluate breaking changes in .NET Core](index.md)
+- [Evaluate breaking changes in .NET Core](index.md)

@@ -116,7 +116,7 @@ A memory-mapped file contains the contents of a file in virtual memory. This map
   
  The output of `Process A` is as follows:  
   
-```  
+```console  
 Start Process B and press ENTER to continue.  
 Start Process C and press ENTER to continue.  
 Process A says: True  

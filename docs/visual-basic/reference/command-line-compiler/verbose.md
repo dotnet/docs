@@ -12,7 +12,7 @@ Causes the compiler to produce verbose status and error messages.
   
 ## Syntax  
   
-```  
+```console  
 -verbose[+ | -]  
 ```  
   

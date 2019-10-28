@@ -17,7 +17,7 @@ Combines two collections into a single hierarchical collection. The join operati
   
 ## Syntax  
   
-```  
+```vb  
 Group Join element [As type] In collection _  
   On key1 Equals key2 [ And key3 Equals key4 [... ] ] _  
   Into expressionList  

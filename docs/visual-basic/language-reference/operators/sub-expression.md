@@ -12,7 +12,7 @@ Declares the parameters and code that define a subroutine lambda expression.
   
 ## Syntax  
   
-```  
+```vb  
 Sub ( [ parameterlist ] ) statement  
 - or -  
 Sub ( [ parameterlist ] )  

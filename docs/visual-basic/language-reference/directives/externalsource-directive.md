@@ -18,7 +18,7 @@ Indicates a mapping between specific lines of source code and text external to t
   
 ## Syntax  
   
-```  
+```vb  
 #ExternalSource( StringLiteral , IntLiteral )  
     [ LogicalLine+ ]  
 #End ExternalSource  

@@ -61,7 +61,7 @@ End Sub
   
  This example produces the following output:  
   
-```  
+```console  
 Validating doc1  
 doc1 validated  
   
@@ -107,7 +107,7 @@ End Sub
   
  This example produces the following output:  
   
-```  
+```console  
 Attempting to validate  
 custOrdDoc validated  
   

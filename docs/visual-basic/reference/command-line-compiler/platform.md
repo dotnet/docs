@@ -12,7 +12,7 @@ Specifies which platform version of common language runtime (CLR) can run the ou
   
 ## Syntax  
   
-```  
+```console  
 -platform:{ x86 | x64 | Itanium | arm | anycpu | anycpu32bitpreferred }  
 ```  
   
@@ -77,6 +77,6 @@ vbc -platform:x86 myFile.vb
   
 ## See also
 
-- [/target (Visual Basic)](target.md)
+- [-target (Visual Basic)](target.md)
 - [Visual Basic Command-Line Compiler](index.md)
 - [Sample Compilation Command Lines](sample-compilation-command-lines.md)

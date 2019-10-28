@@ -12,11 +12,11 @@ ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
 # \<oidEntry> Element
 Maps an ASN.1 object identifier (OID) to a friendly name.  
   
- \<configuration>  
-\<mscorlib>  
-\<cryptographySettings>  
-\<oidMap>  
-\<oidEntry>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<oidMap>**](oidmap-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<oidEntry>**  
   
 ## Syntax  
   

@@ -4,8 +4,8 @@ description: Learn about the struct type and how you create them
 ms.date: 10/12/2016
 ms.assetid: a7094b8c-7229-4b6f-82fc-824d0ea0ec40
 ---
-
 # Structs
+
 A *struct* is a value type. When a struct is created, the variable to which the struct is assigned holds the struct's actual data. When the struct is assigned to a new variable, it is copied. The new variable and the original variable therefore contain two separate copies of the same data. Changes made to one copy do not affect the other copy.
 
 Value type variables directly contain their values, which means that the memory is allocated inline in whatever context the variable is declared. There is no separate heap allocation or garbage collection overhead for value-type variables.  
@@ -46,7 +46,8 @@ Structs share most of the same syntax as classes, although structs are more limi
   
 - A struct can implement interfaces.
 
-## Literal values  
+## Literal values
+
 In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer the `double` type for the literal. For more information about which types can be specified with letter suffixes, see the reference pages for individual types in [Value Types](./language-reference/keywords/value-types.md).  
   
 Because literals are typed, and all types derive ultimately from <xref:System.Object>, you can write and compile code such as the following:  
@@ -57,8 +58,9 @@ The last two examples demonstrate language features introduced in C# 7.0. The fi
 
 The second demonstrates *binary literals*, which allow you to specify bit patterns directly instead of using hexadecimal notation.
 
-## Nullable types  
-Ordinary value types cannot have a value of [null](./language-reference/keywords/null.md). However, you can create nullable value types by affixing a **?** after the type. For example, **int?** is an **int** type that can also have the value [null](./language-reference/keywords/null.md). In the CTS, nullable types are instances of the generic struct type <xref:System.Nullable%601>. Nullable types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable Types (C# Programming Guide)](./programming-guide/nullable-types/index.md).
+## Nullable value types
+
+Ordinary value types cannot have a value of [null](language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](./language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null or undefined. For more information, see [Nullable value types](programming-guide/nullable-types/index.md).
 
 ## See also
 

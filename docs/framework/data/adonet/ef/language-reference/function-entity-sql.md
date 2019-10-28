@@ -8,7 +8,7 @@ Defines a function in the scope of an Entity SQL query command.
   
 ## Syntax  
   
-```  
+```sql  
 FUNCTION function-name  
 ( [ { parameter_name <type_definition>   
         [ ,...n ]  
@@ -62,12 +62,12 @@ FUNCTION function-name
 ## Example  
  The following Entity SQL command defines a function `Products` that takes an integer value to filter the returned products.  
   
- [!code-csharp[DP EntityServices Concepts 2#FUNCTION1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#function1)]  
+ [!code-sql[DP EntityServices Concepts#FUNCTION1](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#function1)]  
   
 ## Example  
  The following Entity SQL command defines a function `StringReturnsCollection` that takes a collection of strings to filter the returned contacts.  
   
- [!code-csharp[DP EntityServices Concepts 2#FUNCTION2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#function2)]  
+ [!code-sql[DP EntityServices Concepts#FUNCTION2](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#function2)]  
   
 ## See also
 

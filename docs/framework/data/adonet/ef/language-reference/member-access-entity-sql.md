@@ -8,7 +8,7 @@ The dot operator (.) is the [!INCLUDE[esql](../../../../../../includes/esql-md.m
   
 ## Syntax  
   
-```  
+```sql  
 expression.identifier  
 ```  
   

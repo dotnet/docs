@@ -25,7 +25,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 - The application is self-contained. It does not need to update the client to run.  
   
-- Application files must be moved from one location to another, such as from a build location (local disk, [!INCLUDE[TLA2#tla_unc](../../../../includes/tla2sharptla-unc-md.md)] file share, and so on) to a publish location (Web site, [!INCLUDE[TLA2#tla_unc](../../../../includes/tla2sharptla-unc-md.md)] file share, and so on).  
+- Application files must be moved from one location to another, such as from a build location (local disk, UNC file share, and so on) to a publish location (Web site, UNC file share, and so on).  
   
 - The application does not require shell integration (Start menu shortcut, desktop icon, and so on).  
   

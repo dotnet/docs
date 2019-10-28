@@ -9,22 +9,22 @@ ms.custom: seodec18
 
 Learn how to create a solution that compiles for both .NET Framework and .NET Core side-by-side. See several options to organize projects to help you achieve this goal. Here are some typical scenarios to consider when you're deciding how to setup your project layout with .NET Core. The list may not cover everything you want; prioritize based on your project's needs.
 
-* [**Combine existing projects and .NET Core projects into single projects**](#replace-existing-projects-with-a-multi-targeted-net-core-project)
+- [**Combine existing projects and .NET Core projects into single projects**](#replace-existing-projects-with-a-multi-targeted-net-core-project)
 
   *What this is good for:*
-  * Simplifying your build process by compiling a single project rather than compiling multiple projects, each targeting a different .NET Framework version or platform.
-  * Simplifying source file management for multi-targeted projects because you must manage a single project file. When adding/removing source files, the alternatives require you to manually sync these with your other projects.
-  * Easily generating a NuGet package for consumption.
-  * Allows you to write code for a specific .NET Framework version in your libraries through the use of compiler directives.
+  - Simplifying your build process by compiling a single project rather than compiling multiple projects, each targeting a different .NET Framework version or platform.
+  - Simplifying source file management for multi-targeted projects because you must manage a single project file. When adding/removing source files, the alternatives require you to manually sync these with your other projects.
+  - Easily generating a NuGet package for consumption.
+  - Allows you to write code for a specific .NET Framework version in your libraries through the use of compiler directives.
 
   *Unsupported scenarios:*
-  * Requires developers to use Visual Studio 2017 to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
+  - Requires developers to use Visual Studio 2017 to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
 
-* <a name="support-vs"></a>[**Keep existing projects and new .NET Core projects separate**](#keep-existing-projects-and-create-a-net-core-project)
+- <a name="support-vs"></a>[**Keep existing projects and new .NET Core projects separate**](#keep-existing-projects-and-create-a-net-core-project)
 
   *What this is good for:*
-  * Continuing to support development on existing projects without having to upgrade for developers/contributors who may not have Visual Studio 2017.
-  * Decreasing the possibility of creating new bugs in existing projects because no code churn is required in those projects.
+  - Continuing to support development on existing projects without having to upgrade for developers/contributors who may not have Visual Studio 2017.
+  - Decreasing the possibility of creating new bugs in existing projects because no code churn is required in those projects.
 
 ## Example
 
@@ -46,7 +46,7 @@ Reorganize the repository so that any existing *\*.csproj* files are removed and
 
 Changes to note are:
 
-* Replacement of *packages.config* and *\*.csproj* with a new [.NET Core *\*.csproj*](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/src/Car/Car.csproj). NuGet packages are specified with `<PackageReference> ItemGroup`.
+- Replacement of *packages.config* and *\*.csproj* with a new [.NET Core *\*.csproj*](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/src/Car/Car.csproj). NuGet packages are specified with `<PackageReference> ItemGroup`.
 
 ## Keep existing projects and create a .NET Core project
 
@@ -58,9 +58,9 @@ If there are existing projects that target older frameworks, you may want to lea
 
 Changes to note are:
 
-* The .NET Core and existing projects are kept in separate folders.
-  * Keeping projects in separate folders avoids forcing you to have Visual Studio 2017. You can create a separate solution that only opens the old projects.
+- The .NET Core and existing projects are kept in separate folders.
+  - Keeping projects in separate folders avoids forcing you to have Visual Studio 2017 or later versions. You can create a separate solution that only opens the old projects.
 
 ## See also
 
-Please see the [.NET Core porting documentation](index.md) for more guidance on migrating to .NET Core.
+- [.NET Core porting documentation](index.md)

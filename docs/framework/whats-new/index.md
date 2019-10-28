@@ -106,10 +106,7 @@ There are two ways to expose the health endpoint and publish WCF service health 
                      new Uri("http://contoso:81/Service1"));
   ServiceHealthBehavior healthBehavior =
       host.Description.Behaviors.Find<ServiceHealthBehavior>();
-  if (healthBehavior == null)
-  {
-     healthBehavior = new ServiceHealthBehavior();
-  }
+  healthBehavior ??= new ServiceHealthBehavior();
   host.Description.Behaviors.Add(healthBehavior);
   ```
 
@@ -540,7 +537,7 @@ public static event EventHandler<StaticResourceResolvedEventArgs> StaticResource
 ```
 
 ```vb
-Public Shared Event StaticResourceResolved As EventHandler(Of StaticResourceResolvedEventArgs)
+Public Shared Event StaticResourceResolved As EventHandler(Of StaticResourceResolvedEventArgs)
 ```
 
 This event is raised whenever the runtime resolves a [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference. The <xref:System.Windows.Diagnostics.StaticResourceResolvedEventArgs> arguments describe the resolution, and indicate the object and property that host the [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference and the <xref:Windows.UI.Xaml.ResourceDictionary> and key used for the resolution:

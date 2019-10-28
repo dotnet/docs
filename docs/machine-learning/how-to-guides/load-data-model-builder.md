@@ -45,7 +45,7 @@ You're done setting up your data source file for Model Builder. Select the **Tra
 
 ## Load data from a SQL Server database
 
-Model Builder supports loading data from local and remote SQL Server databases. To use data from SQL Server, you'll first download it to a file. [QUESTION: Is this true? It's confusing -- connect to the database or download??]
+Model Builder supports loading data from local and remote SQL Server databases.
 
 To load data from a SQL Server database into Module Builder:
 

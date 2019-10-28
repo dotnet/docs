@@ -37,7 +37,7 @@ This sample creates a C# .NET Core console application that categorizes the risk
 
 ## Create a console application
 
-1. Create a **C# .NET Core Console Application** called "RestaurantViolations".
+1. Create a **C# .NET Core console application** called "RestaurantViolations".
 
 ## Prepare and understand the data
 

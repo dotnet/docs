@@ -26,7 +26,7 @@ ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 This topic provides an introduction to the Microsoft Windows Presentation Foundation Imaging Component. WPF Imaging enables developers to display, transform, and format images.  
 
 ## WPF Imaging Component  
- WPF Imaging provides significant enhancements in imaging capabilities within [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)]. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ libraries. These API provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. WPF Imaging is designed to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
+ WPF Imaging provides significant enhancements in imaging capabilities within Microsoft Windows. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ libraries. These API provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. WPF Imaging is designed to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
   
  There are two ways to access the WPF Imaging API, a managed component and an unmanaged component. The unmanaged component provides the following features.  
   

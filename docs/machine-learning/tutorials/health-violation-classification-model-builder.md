@@ -133,7 +133,7 @@ Two projects are created as a result of the training process.
     };
     ```
 
-1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model and uses it to make predictions on new data. 
+1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, creates a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model, and uses it to make predictions on new data. 
 
     ```csharp
     // Make prediction

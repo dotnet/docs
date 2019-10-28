@@ -106,3 +106,5 @@ Follow these tutorials to build machine learning apps with Model Builder:
 
 - [Predict prices using regression](/machine-learning/tutorials/predict-prices-with-model-builder.md)
 - [Categorize images using image classification](/machine-learning/tutorials/image-classification-api-transfer-learning.md )
+
+If you're training a model using code, [learn how to load data using the ML.NET API](load-data-ml-net.md).

@@ -66,7 +66,7 @@ The `label` is the column you want to predict. When performing a classification 
 To train your model, select from the list of available machine learning scenarios provided by Model Builder. In this case, the scenario is `Issue Classification`.
 
 1. In **Solution Explorer**, right-click the *RestaurantViolations* project, and select **Add** > **Machine Learning**.
-1. For this sample, the scenario is sentiment analysis. In the *scenario* step of the Model Builder tool, select the **Issue Classification** scenario.
+1. For this sample, the scenario is sentiment analysis. In the *scenario* step of Model Builder, select the **Issue Classification** scenario.
 
 ## Load the data
 

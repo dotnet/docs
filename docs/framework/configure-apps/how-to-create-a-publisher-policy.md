@@ -49,7 +49,7 @@ Use the [Assembly Linker (Al.exe)](../tools/al-exe-assembly-linker.md) to create
 
 Type the following command at the command prompt:
 
-```
+```console
 al /link:publisherPolicyFile /out:publisherPolicyAssemblyFile /keyfile:keyPairFile /platform:processorArchitecture
 ```
 
@@ -70,7 +70,7 @@ In this command:
 
 The ability to target a specific processor architecture is available starting with .NET Framework 2.0. The following command creates a publisher policy assembly called `policy.1.0.myAssembly` from a publisher policy file called `pub.config`, assigns a strong name to the assembly using the key pair in the `sgKey.snk` file, and specifies that the assembly targets the x86 processor architecture.
 
-```
+```console
 al /link:pub.config /out:policy.1.0.myAssembly.dll /keyfile:sgKey.snk /platform:x86
 ```
 
@@ -88,13 +88,13 @@ Use the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool
 
 Type the following command at the command prompt:
 
-```
+```console
 gacutil /i publisherPolicyAssemblyFile
 ```
 
 The following command adds `policy.1.0.myAssembly.dll` to the global assembly cache.
 
-```
+```console
 gacutil /i policy.1.0.myAssembly.dll
 ```
 

@@ -57,7 +57,7 @@ Each row in the dataset contains information regarding violations observed durin
 - **ViolationDescription**: a description of the violation found during inspection. 
 - **RiskCategory**: the risk severity a violation poses to public health and safety.
 
-The `label` is the column you want to predict. When performing a classification task, the goal is to assign a category (text or numerical). In this classification scenario, the severity of violation is assigned the value of low, medium, or high risk. Therefore, the **RiskCategory** is the label. The `features` are the inputs you give the model to predict the `label`. In this case, the **InspectionType** and **ViolationDescription** are used as features or inputs to predict the **RiskCategory**.
+The `label` is the column you want to predict. When performing a classification task, the goal is to assign a category (text or numerical). In this classification scenario, the severity of the violation is assigned the value of low, medium, or high risk. Therefore, the **RiskCategory** is the label. The `features` are the inputs you give the model to predict the `label`. In this case, the **InspectionType** and **ViolationDescription** are used as features or inputs to predict the **RiskCategory**.
 
 ## Choose a scenario
 

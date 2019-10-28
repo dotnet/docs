@@ -4,7 +4,7 @@ The .NET docs team makes extensive use of [GitHub labels](https://github.com/dot
 
 We also use [GitHub projects](https://github.com/dotnet/docs/projects) to organize sprints and other goal-oriented epics.
 
-This roadmap explains how we use these organizational tools, and has links to handy filters we use to find areas of interest.
+This roadmap explains how we use these organizational tools and has links to handy filters we use to find areas of interest.
 
 ## Labels
 
@@ -20,11 +20,11 @@ You can combine a label from each set (guide, release, priority) to create a nar
 
 ### Find a single .NET guide
 
-We use labels for each of the architecture guides and for each .NET Guide. 
+We use labels for each of the architecture e-books and for each .NET Guide. 
 
 ![:book: guide on light green background](./images/guide.png "Prefix for architecture guide labels")
 
-Architecture guides are noted with the `:book: guide` prefix and have a light green background. These are the long-form areas that cover recommended architecture. Here are current issues filtered for each of the .NET architecture guides.
+Architecture e-books are noted with the `:book: guide` prefix and have a light green background. These are the long-form areas that cover recommended architecture. Here are current issues filtered for each of the .NET architecture guides.
 
 - [ASP.NET Core web apps](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20ASP.NET%20Core%20web%20apps)
 - [Blazor](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Blazor)

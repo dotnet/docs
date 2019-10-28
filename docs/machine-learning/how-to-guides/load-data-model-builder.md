@@ -27,7 +27,7 @@ Model Builder helps you create models for the following machine learning scenari
 
 - Sentiment analysis (binary classification): Classify textual data into two categories.
 - Issue classification (multiclass classification): Classify textual data into 3 or more categories.
-- Price prediction (regression): Predict a value from numeric data.
+- Price prediction (regression): Predict a numeric value.
 - Image classification (deep learning): Categorize images based on characteristics.
 - Custom scenario: Build custom scenarios from your data using regression, classification, and other tasks.
 

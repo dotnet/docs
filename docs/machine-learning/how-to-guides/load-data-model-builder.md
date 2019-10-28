@@ -1,6 +1,6 @@
 ---
 title: Set up & load data for Model Builder
-description: Learn how to set up and load data for SQL Server or a file for use in one of the Model Builder scenarios for ML.NET.
+description: Learn how to set up and load data from a SQL Server database or a file for use in one of the Model Builder scenarios for ML.NET.
 ms.date: 10/31/2019
 author: luisquintanilla
 ms.author: luquinta
@@ -10,47 +10,61 @@ ms.custom: mvc, how-to
 
 # Load data in Model Builder
 
-Learn how to set up and load your datasets from SQL Server or a file for use in one of the Model Builder scenarios for ML.NET. For each Model Builder scenario, the data must be prepared and ready to use for model training and validation. 
+Learn how to set up and load your data sets from a SQL Server or a file database for use in one of the Model Builder scenarios for ML.NET. Model Builder scenarios can use SQL files, image files, and CSV or TSV file formats.
 
 ## Data set limitations in Model Builder
 
-Model limits the amount of data you can use for training models:
+Model Builder limits the amount of data you can use for training models:
 
-- Training dataset limit: 1GB
+- Training data set limit: 1GB
 - SQL Server data: 100,000 rows 
 
-Question: Clarify the limits. Is the SQL Server data limit an absolute limit or for training only? The training dataset  -- is this a limit for text or numerical data from files?
+[Question: Clarify the limits. Is the SQL Server data limit an absolute limit or for training only? The training dataset  -- is this a limit for text or numerical data from files?]
 
 ## Model Builder scenarios 
 
 Model Builder helps you create models for the following machine learning scenarios:
 
-- Sentiment analysis (binary classification): Classify data into two categories.
-- Issue classification (multiclass classification): Classify data into 3 or more categories.
-- Price prediction (regression): Predict a numeric value from your data.
+- Sentiment analysis (binary classification): Classify textual data into two categories.
+- Issue classification (multiclass classification): Classify textual data into 3 or more categories.
+- Price prediction (regression): Predict a value from numeric data.
 - Image classification (deep learning): Categorize images based on characteristics.
 - Custom scenario: Build custom scenarios from your data using regression, classification, and other tasks.
 
 This article covers classification and regression scenarios with textual or numerical data, and image classification scenarios. 
 
-## Load textual or numerical data from a file  
+## Load text or numeric data from a file  
 
-You can load comma-delimited or tab-delimited textual or numerical data from a file into Model Builder. It accepts `csv` or `tsv` file formats. 
+You can load text or numeric data from a file into Model Builder. It accepts comma-delimited (CSV) or tab-delimited (TSV) file formats. 
 
 1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
 2. Select the button next to the **Select a file** text box, and use File Explorer to browse and select the data file.
 3. Choose a category in the **Column to Predict (Label)** dropdown.
-4. Expand the **Input Columns (Features)** dropdown and uncheck the columns you won't use in your model.
+4. From the **Input Columns (Features)** dropdown, confirm the data columns you want to include are checked.
 
 You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in the Model Builder tool.
 
 ## Load data from a SQL Server database
 
-Model Builder supports loading data from local and remote SQL Server databases. 
+Model Builder supports loading data from local and remote SQL Server databases. To use data from SQL Server, you'll first download it to a file. [QUESTION: Is this true? It's confusing -- connect to the database or download??]
+
+To load data from a SQL Server database into Module Builder:
+
+1. In the data step of the Model Builder tool, select **SQL Server** from the data source dropdown.
+1. Select the button next to the **Connect to SQL Server database** text box.
+    1. In the **Choose Data** dialog, select **Microsoft SQL Server Database File**. 
+    1. Uncheck the **Always use this selection** checkbox and select **Continue**
+    1. In the **Connection Properties** dialog, select **Browse** and select the downloaded .MDF file.
+    1. Select **OK**
+1. Choose the data set name from the **Table Name** dropdown.
+1. From the **Column to Predict (Label)** dropdown, choose the data category on which you want to make a prediction.
+2. From the **Input Columns (Features)** dropdown, confirm the columns you want to include are checked. 
+
+You're done setting up your data source file for Model Builder. Select the **Train** link to move to the next step in the Model Builder tool.
 
 ## Set up image data files
 
-Model Builder expects image data to be in a specific format.
+Model Builder expects image data to be JPG files organized in folders that correspond to the categories of the classification. 
 
 To load images into Model Builder, provide the path to a single top-level directory:
 
@@ -88,8 +102,7 @@ In the folder structure illustrated below, the top-level directory is *flower_ph
 ```
 
 ## Next steps
-Use Model Builder to build machine learning solutions. Try these tutorials:
+Follow these tutorials to build machine learning apps with Model Builder:
 
-multiclass /tutorials/restaurant-violation-classification-model-builder.md
-Image class tutorial
-Regression tutorial
+- [Predict prices using regression](/machine-learning/tutorials/predict-prices-with-model-builder.md)
+- [Categorize images using image classification](/machine-learning/tutorials/image-classification-api-transfer-learning.md )

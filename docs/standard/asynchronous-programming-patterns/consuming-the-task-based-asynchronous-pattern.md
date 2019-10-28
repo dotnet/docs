@@ -627,7 +627,7 @@ double currentPrice = await NeedOnlyOne(
 ```
 
 ### Interleaved Operations
- There is a potential performance problem with using the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to support an interleaving scenario when you're working with very large sets of tasks.  Every call to <xref:System.Threading.Tasks.Task.WhenAny%2A> results in a continuation being registered with each task. For N number of tasks, this results in O(N2) continuations created over the lifetime of the interleaving operation.  If you're working with a large set of tasks, you can use a combinator  (`Interleaved` in the following example) to address the performance issue:
+ There is a potential performance problem with using the <xref:System.Threading.Tasks.Task.WhenAny%2A> method to support an interleaving scenario when you're working with very large sets of tasks. Every call to <xref:System.Threading.Tasks.Task.WhenAny%2A> results in a continuation being registered with each task. For N number of tasks, this results in O(N<sup>2</sup>) continuations created over the lifetime of the interleaving operation. If you're working with a large set of tasks, you can use a combinator (`Interleaved` in the following example) to address the performance issue:
 
 ```csharp
 static IEnumerable<Task<T>> Interleaved<T>(IEnumerable<Task<T>> tasks)

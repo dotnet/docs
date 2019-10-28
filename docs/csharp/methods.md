@@ -14,22 +14,6 @@ A method is a code block that contains a series of statements. A program causes 
 > [!NOTE]
 > This topic discusses named methods. For information about anonymous functions, see [Anonymous Functions](programming-guide/statements-expressions-operators/anonymous-functions.md).
 
-This topic contains the following sections:
-
-- [Method signatures](#signatures)
-- [Method invocation](#invocation)
-- [Inherited and overridden methods](#inherited)
-- [Passing parameters](#passing)
-  - [Passing parameters by value](#byval)
-  - [Passing parameters by reference](#byref)
-  - [Parameter arrays](#paramarray)
-- [Optional parameters and arguments](#optional)
-- [Return values](#return)
-- [Extension methods](#extension)
-- [Async Methods](#async)
-- [Expression-bodied members](#expr)
-- [Iterators](#iterators)
-
 <a name="signatures"></a>
 
 ## Method signatures
@@ -152,7 +136,7 @@ A method definition can specify that its parameters are required or that they ar
 The parameter's default value must be assigned by one of the following kinds of expressions:
 
 - A constant, such as a literal string or number.
-- An expression of the form `new ValType`, where `ValType` is a value type. Note that this invokes the value type's implicit parameterless constructor, which is not an actual member of the type.
+- An expression of the form `new ValType()`, where `ValType` is a value type. Note that this invokes the value type's implicit parameterless constructor, which is not an actual member of the type.
 - An expression of the form `default(ValType)`, where `ValType` is a value type.
 
 If a method includes both required and optional parameters, optional parameters are defined at the end of the parameter list, after all required parameters.

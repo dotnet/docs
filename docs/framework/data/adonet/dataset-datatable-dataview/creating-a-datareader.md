@@ -17,7 +17,7 @@ The <xref:System.Data.DataTable> and <xref:System.Data.DataSet> classes have a <
   
  The example displays the following output in the console window:  
   
-```  
+```output  
 1 Mary  
 2 Andy  
 3 Peter  

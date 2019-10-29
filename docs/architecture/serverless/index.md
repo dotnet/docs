@@ -38,17 +38,17 @@ All other marks and logos are property of their respective owners.
 
 Author:
 
-> **[Jeremy Likness](https://twitter.com/jeremylikness)**, Sr. Cloud Developer Advocate, APEX, Microsoft Corp.
+> **[Jeremy Likness](https://twitter.com/jeremylikness)**, Senior Cloud Advocate, Microsoft Corp.
 
 Contributor:
 
-> **[Cecil Phillip](https://twitter.com/cecilphillip)**, Cloud Developer Advocate II, APEX, Microsoft Corp.
+> **[Cecil Phillip](https://twitter.com/cecilphillip)**, Senior Cloud Advocate, Microsoft Corp.
 
 Editors:
 
-> **[Bill Wagner](https://twitter.com/billwagner)**, Senior Content Developer, APEX, Microsoft Corp.
+> **[Bill Wagner](https://twitter.com/billwagner)**, Senior Content Developer, Microsoft Corp.
 
-> **[Maira Wenzel](https://twitter.com/mairacw)**, Senior Content Developer, APEX, Microsoft Corp.
+> **[Maira Wenzel](https://twitter.com/mairacw)**, Senior Content Developer, Microsoft Corp.
 
 Participants and reviewers:
 

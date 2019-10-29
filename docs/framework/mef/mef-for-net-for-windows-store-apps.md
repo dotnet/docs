@@ -16,10 +16,10 @@ ms.assetid: 7667770e-d163-4ad6-a303-085cf73db2f2
   
 - <xref:System.Composition.Hosting.Core?displayProperty=nameWithType> provides MEF types used internally by the composition engine.  
   
- For more information about [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] and a list of namespaces and types that it contains, see [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312) in the Windows Dev Center.  
+ For more information about [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] and a list of namespaces and types that it contains, see [.NET for Windows Store apps overview](https://docs.microsoft.com/previous-versions/br230302(v=vs.110)) in the Windows Dev Center.  
   
 ## See also
 
-- [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312)
-- [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/p/?LinkID=247912)
+- [.NET for Windows Store apps overview](https://docs.microsoft.com/previous-versions/br230302(v=vs.110))
+- [.NET for Windows Store apps – supported APIs](https://docs.microsoft.com/previous-versions/br230232(v=vs.110))
 - [Managed Extensibility Framework (MEF)](index.md)

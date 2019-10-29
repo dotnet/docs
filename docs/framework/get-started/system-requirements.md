@@ -72,7 +72,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 - .NET Framework 4 also supports the IA64 platform.
 
-- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and install critical updates available from the [Windows Update website](http://www.update.microsoft.com/windowsupdate/v6/default.aspx?ln=en) to ensure the best compatibility and security.
+- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and install critical updates available from the [Windows Update](https://support.microsoft.com/help/12373/windows-update-faq) to ensure the best compatibility and security.
 
 - On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and| native 64-bit processing.
 

@@ -3,7 +3,7 @@ title: 'Tutorial: Classify health violations with Model Builder'
 description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant health violation severity in San Francisco.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/29/2019
+ms.date: 10/30/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
@@ -118,40 +118,16 @@ Two projects are created as a result of the training process.
 1. Open the *Program.cs* file in the *RestaurantViolations* project.
 1. Add the following using statement to reference the *RestaurantViolationsML.Model* project:
 
-    ```csharp
-    using RestaurantViolationsML.Model;
-    ```
-
-    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L1)]
+    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L2)]
 
 1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the risk category is not part of the input. This is because the model generates the prediction for it. 
-
-    ```csharp
-    ModelInput input = new ModelInput
-    {
-        InspectionType = "Complaint",
-        ViolationDescription = "Inadequate sewage or wastewater disposal"
-    };
-    ```
 
     [!code-csharp [TestData](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L11-L15)]
 
 
 1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, creates a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model, and uses it to make predictions on new data. 
 
-    ```csharp
-    // Make prediction
-    ModelOutput result = ConsumeModel.Predict(input);
-
-    // Print Prediction
-    Console.WriteLine($"Inspection type: {input.InspectionType}");
-    Console.WriteLine($"Violation description: {input.ViolationDescription}");
-    Console.WriteLine($"Predicted risk category: {result.Prediction}");
-    Console.ReadKey();
-    ```
-
     [!code-csharp [Prediction](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L17-L24)]
-
 
 1. Run the application.
 

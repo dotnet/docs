@@ -31,11 +31,11 @@ The example defines an `IsValidEmail` method, which returns `true` if the string
 
 To verify that the email address is valid, the `IsValidEmail` method calls the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%29?displayProperty=nameWithType> method with the `(@)(.+)$` regular expression pattern to separate the domain name from the email address. The third parameter is a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate that represents the method that processes and replaces the matched text. The regular expression pattern is interpreted as follows.
 
-|Pattern|Description|  
-|-------------|-----------------|  
-|`(@)`|Match the @ character. This is the first capturing group.|  
-|`(.+)`|Match one or more occurrences of any character. This is the second capturing group.|  
-|`$`|End the match at the end of the string.|  
+|Pattern|Description|
+|-------------|-----------------|
+|`(@)`|Match the @ character. This is the first capturing group.|
+|`(.+)`|Match one or more occurrences of any character. This is the second capturing group.|
+|`$`|End the match at the end of the string.|
 
 The domain name along with the @ character is passed to the `DomainMapper` method, which uses the <xref:System.Globalization.IdnMapping> class to translate Unicode characters that are outside the US-ASCII character range to Punycode. The method also sets the `invalid` flag to `True` if the <xref:System.Globalization.IdnMapping.GetAscii%2A?displayProperty=nameWithType> method detects any invalid characters in the domain name. The method returns the Punycode domain name preceded by the @ symbol to the `IsValidEmail` method.
 

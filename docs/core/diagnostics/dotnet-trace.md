@@ -13,13 +13,13 @@ ms.date: 10/28/2019
 
 Install `dotnet-trace` [NuGet package](https://www.nuget.org/packages/dotnet-trace) with the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
-```dotnetcli
+```console
 dotnet tool install --global dotnet-trace
 ```
 
 ## Synopsis
 
-```dotnetcli
+```console
 dotnet-trace [-h, --help] [--version] <command>
 ```
 
@@ -59,7 +59,7 @@ Collects a diagnostic trace from a running process.
 
 ### Synopsis
 
-```dotnetcli
+```console
 dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--output]
     [--providers] [--profile <profile-name>] [--format]
 ```
@@ -102,7 +102,7 @@ Converts `nettrace` traces to alternate formats for use with alternate trace ana
 
 ### Synopsis
 
-```dotnetcli
+```console
 dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 ```
 
@@ -128,7 +128,7 @@ Lists dotnet processes that can be traced.
 
 ### Synopsis
 
-```dotnetcli
+```console
 dotnet-trace list-processes [-h|--help]
 ```
 
@@ -138,7 +138,7 @@ Lists pre-built tracing profiles with a description of what providers and filter
 
 ### Synopsis
 
-```dotnetcli
+```console
 dotnet-trace list-profiles [-h|--help]
 ```
 
@@ -154,13 +154,13 @@ To collect traces using `dotnet-trace`:
 
 - Run the following command:
 
-  ```dotnetcli
+  ```console
     dotnet-trace collect --process-id <PID>
   ```
 
   The preceding command generates output similar to the following:
 
-  ```dotnetcli
+  ```console
   Press <Enter> to exit...
   Connecting to process: <Full-Path-To-Process-Being-Profiled>/dotnet.exe
   Collecting to file: <Full-Path-To-Trace>/trace.nettrace
@@ -188,7 +188,7 @@ On Linux, the trace can be viewed by changing the output format of `dotnet-trace
 
 For example, to collect runtime performance counter values, use the following command:
 
-```dotnetcli
+```console
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1
 ```
 
@@ -196,7 +196,7 @@ The preceding command tells the runtime counters to report once every second for
 
 The following command reduces overhead and trace size more than the preceding one:
 
-```dotnetcli
+```console
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1
 ```
 

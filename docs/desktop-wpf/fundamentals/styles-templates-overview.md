@@ -94,9 +94,15 @@ Designers generally allow you to create a copy of an existing template and modif
 
 Editing a copy of a template is a great way to learn how templates work. Instead of creating a new blank template, it's easier to edit a copy and change a few aspects of the visual presentation.
 
-You may have noticed that the template resource defined above uses the [TemplateBinding Markup Extension](../../framework/wpf/advanced/templatebinding-markup-extension.md). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`.
+For an example, see [Create a template for a control](styles-templates-create-apply-template.md).
 
-For more information, see [Create a template for a control](styles-templates-create-apply-template.md).
+### TemplateBinding
+
+You may have noticed that the template resource defined above uses the [TemplateBinding Markup Extension](../../framework/wpf/advanced/templatebinding-markup-extension.md). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` is useful for binding parts of the template to properties of the control. For example, each control has a <xref:System.Windows.Controls.Control.BorderThickness> property. Use a `TemplateBinding` to manage which element in the template is affected by this control setting.
+
+### ContentControl and ItemsControl
+
+If a <xref:System.Windows.Controls.ContentPresenter> is declared in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.ContentPresenter> will automatically bind to the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.Content%2A> properties. Likewise, an <xref:System.Windows.Controls.ItemsPresenter> that is in the <xref:System.Windows.Controls.ControlTemplate> of an <xref:System.Windows.Controls.ItemsControl> will automatically bind to the <xref:System.Windows.Controls.ItemsControl.Items%2A> and <xref:System.Windows.Controls.ItemsPresenter> properties.
 
 ## DataTemplates
 
@@ -160,6 +166,48 @@ In the following illustration, the mouse is pointing to the third item:
 ### MultiTriggers, DataTriggers, and MultiDataTriggers
 
 In addition to <xref:System.Windows.Trigger> and <xref:System.Windows.EventTrigger>, there are other types of triggers. <xref:System.Windows.MultiTrigger> allows you to set property values based on multiple conditions. You use <xref:System.Windows.DataTrigger> and <xref:System.Windows.MultiDataTrigger> when the property of your condition is data-bound.
+
+## Visual States
+
+Control are always in a specific **state**. For example, when the mouse moves over the surface of a control, the control is considered to be in a common state of `MouseOver`. A control without a specific state is considered to be in the common `Normal` state. States are borken into groups, and the previously mentioned states are part of the state group `CommonStates`. Most controls have two state groups: `CommonStates` and `FocusStates`. Of each state group applied to a control, a control is always in one state of each group, such as `CommonStates.MouseOver` and `FocusStates.Unfocused`. However, a control can't be in two different states within the same group, such as `CommonStates.Normal` and `CommonStates.Disabled`. Here is a table of states most controls recognize and use.
+
+| VisualState Name | VisualStateGroup Name | Description |
+| ---------------- | --------------------- | ----------- |
+| Normal           | CommonStates          | The default state. |
+| MouseOver        | CommonStates          | The mouse pointer is positioned over the control. |
+| Pressed          | CommonStates          | The control is pressed. |
+| Disabled         | CommonStates          | The control is disabled. |
+| Focused          | FocusStates           | The control has focus. |
+| Unfocused        | FocusStates           | The control does not have focus. |
+
+By defining a <xref:System.Windows.VisualStateManager?displayProperty=fullName> on the root element of a control template, you can trigger animations when a control enters a specific state. The `VisualStateManager` declares which combinations of <xref:System.Windows.VisualStateGroup> and <xref:System.Windows.VisualState> to watch. When the control enters a watched state, the animation defined by the `VisaulStateManager` is started.
+
+For example, the following XAML code watches the `CommonStates.MouseOver` state to animate the fill color of the element named `backgroundElement`. When the control returns to the `CommonStates.Normal` state, the fill color of the element named `backgroundElement` is restored.
+
+```xaml
+<ControlTemplate x:Key="roundbutton" TargetType="Button">
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup Name="CommonStates">
+                <VisualState Name="Normal">
+                    <ColorAnimation Storyboard.TargetName="backgroundElement" 
+                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+                                    To="{TemplateBinding Background}"
+                                    Duration="0:0:0.3"/>
+                </VisualState>
+                <VisualState Name="MouseOver">
+                    <ColorAnimation Storyboard.TargetName="backgroundElement" 
+                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" 
+                                    To="Yellow" 
+                                    Duration="0:0:0.3"/>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        ...
+```
+
+For more information about storyboards, see [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
 
 ## Shared resources and themes
 

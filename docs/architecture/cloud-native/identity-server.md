@@ -49,10 +49,10 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddMvc();
-        
+
         // some details omitted
         services.AddIdentityServer();
-        
+
           services.AddAuthentication()
             .AddGoogle("Google", options =>
             {

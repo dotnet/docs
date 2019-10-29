@@ -546,7 +546,7 @@ In Blazor, the equivalent markup is provided in a *Create.razor* file:
             <ValidationMessage For="(() => _item.Name)" />
         </div>
     </div>
-    
+
     ...
 </EditForm>
 ```

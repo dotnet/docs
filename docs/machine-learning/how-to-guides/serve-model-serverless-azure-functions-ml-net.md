@@ -1,7 +1,7 @@
 ---
 title: Deploy a model to Azure Functions
 description: Serve ML.NET sentiment analysis machine learning model for prediction over the internet using Azure Functions
-ms.date: 09/12/2019
+ms.date: 10/30/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
@@ -111,32 +111,71 @@ The following link provides more information if you want to learn more about [de
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select the **Add** button.
+1. Add the following using statement to the top of *Startup.cs*:
 
-    The *Startup.cs* file opens in the code editor. Add the following using statement to the top of *Startup.cs*:
+```csharp
+using Microsoft.Azure.Functions.Extensions.DependencyInjection;
+using Microsoft.Extensions.ML;
+using SentimentAnalysisFunctionsApp;
+using SentimentAnalysisFunctionsApp.DataModels;
+```
 
-    ```csharp
-    using Microsoft.Azure.Functions.Extensions.DependencyInjection;
-    using Microsoft.Extensions.ML;
-    using SentimentAnalysisFunctionsApp;
-    using SentimentAnalysisFunctionsApp.DataModels;
-    ```
+[!code-csharp [StartupUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L1-L6)]
 
-    Remove the existing code below the using statements and add the following code to the *Startup.cs* file:
+1. Remove the existing code below the using statements and add the following code to the *Startup.cs* file:
 
-    ```csharp
-    [assembly: FunctionsStartup(typeof(Startup))]
-    namespace SentimentAnalysisFunctionsApp
+```csharp
+[assembly: FunctionsStartup(typeof(Startup))]
+namespace SentimentAnalysisFunctionsApp
+{
+    public class Startup : FunctionsStartup
     {
-        public class Startup : FunctionsStartup
-        {
-            public override void Configure(IFunctionsHostBuilder builder)
-            {
-                builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
-                    .FromFile(modelName: "SentimentAnalysisModel", filePath:"MLModels/sentiment_model.zip", watchForChanges: true);
-            }
-        }
+
     }
-    ```
+}
+```
+
+1. Define two variables for the environment the app is running in and the file path where the model is stored inside the `Startup` class
+
+```csharp
+private readonly string _environment;
+private readonly string _modelPath;
+```
+
+[!code-csharp [DefineStartupVars](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L13-L14)]
+
+1. Below that, create a constructor to set the values of the `_environment` and `_modelPath` parameters. When the application is running locally, the default environment is *Development*.
+
+```csharp
+public Startup()
+{
+    _environment = Environment.GetEnvironmentVariable("AZURE_FUNCTIONS_ENVIRONMENT");
+
+    if (_environment == "Development")
+    {
+        _modelPath = Path.Combine("MLModels", "sentiment_model.zip");
+    }
+    else
+    {
+        string deploymentPath = @"D:\home\site\wwwroot\";
+        _modelPath = Path.Combine(deploymentPath, "MLModels", "sentiment_model.zip");
+    }
+}
+```
+
+[!code-csharp [StartupCtor](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L16-L29)]
+
+1. Then, add a new method called `Configure` to registed the `PredictionEnginePool` service below the constructor.
+
+```csharp
+public override void Configure(IFunctionsHostBuilder builder)
+{
+    builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
+        .FromFile(modelName: "SentimentAnalysisModel", filePath: _modelPath, watchForChanges: true);
+}
+```
+
+[!code-csharp [ConfigureServices](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L31-L35)]
 
 At a high level, this code initializes the objects and services automatically for later use when requested by the application instead of having to manually do it.
 
@@ -191,6 +230,8 @@ ILogger log)
     return (ActionResult)new OkObjectResult(sentiment);
 }
 ```
+
+[!code-csharp [AnalyzeRunMethod](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/AnalyzeSentiment.cs#L26-L45)]
 
 When the `Run` method executes, the incoming data from the HTTP request is deserialized and used as input for the `PredictionEnginePool`. The `Predict` method is then called to make predictions using the `SentimentAnalysisModel` registered in the `Startup` class and returns the results back to the user if successful.
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_Delete function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # QualifierSet_Delete function
 Deletes a specified qualifier by name.  

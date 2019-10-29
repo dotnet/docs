@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 46842618-0fe4-480b-871c-82fba82d23d9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode::CreateBreakpoint Method
 Creates a breakpoint in this code segment at the specified offset.  

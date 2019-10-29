@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "VerifyClientKey function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # VerifyClientKey function
 Ensures that the client key has the correct security.  

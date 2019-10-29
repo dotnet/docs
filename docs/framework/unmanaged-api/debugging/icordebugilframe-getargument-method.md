@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4e2fd423-f643-4c27-ba5f-41b5ebc3b416
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::GetArgument Method
 Gets the value of the specified argument in this Microsoft intermediate language (MSIL) stack frame.  

@@ -2,6 +2,7 @@
 title: Structs - C# Guide
 description: Learn about the struct type and how you create them
 ms.date: 10/12/2016
+ms.technology: csharp-fundamentals
 ms.assetid: a7094b8c-7229-4b6f-82fc-824d0ea0ec40
 ---
 # Structs

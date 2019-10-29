@@ -7,10 +7,9 @@ helpviewer_keywords:
   - "Windows Forms, app settings schema"
   - "configuration schema [.NET Framework], app settings"
 ms.assetid: 99347d62-3ea5-40b6-bfec-c31431011422
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # App Settings schema
 
 Contains custom application settings, such as file paths, XML Web service URLs, or any other custom configuration information for an application.

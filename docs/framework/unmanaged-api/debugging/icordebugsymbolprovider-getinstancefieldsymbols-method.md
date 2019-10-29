@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetInstanceFieldSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: a29b9233-ee67-4b53-b8bc-c00b281e7edb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetInstanceFieldSymbols Method
 Gets the instance field symbols that correspond to a typespec signature.  

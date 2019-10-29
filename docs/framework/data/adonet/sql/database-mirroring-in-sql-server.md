@@ -20,7 +20,7 @@ Database mirroring in SQL Server allows you to keep a copy, or mirror, of a SQL 
 ## Specifying the Failover Partner in the Connection String  
  If you supply the name of a failover partner server in the connection string, the client will transparently attempt a connection with the failover partner if the principal database is unavailable when the client application first connects.  
   
-```  
+```csharp
 ";Failover Partner=PartnerServerName"  
 ```  
   

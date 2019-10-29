@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a3fdf523-274a-449c-920b-9fcb0aed1d97
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode4 Interface
 Provides a method that enables a debugger to enumerate the local variables and arguments in a function.  

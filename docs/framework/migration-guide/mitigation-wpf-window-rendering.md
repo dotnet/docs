@@ -2,8 +2,6 @@
 title: "Mitigation: WPF Window Rendering"
 ms.date: "03/30/2017"
 ms.assetid: 28ed6bf8-141b-4b73-a4e3-44a99fae5084
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: WPF Window Rendering
 

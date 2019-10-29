@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 115bc6de-f5e2-4e8e-bb38-c7cf54045434
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode::GetSize Method
 

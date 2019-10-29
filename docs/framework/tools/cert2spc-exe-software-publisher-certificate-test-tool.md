@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "Cert2spc.exe"
   - "certificates, Software Publisher's Certificate"
 ms.assetid: be434d7d-9c0d-46e7-8392-58a9b542d11d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Cert2spc.exe (Software Publisher Certificate Test Tool)
 The Software Publisher Certificate Test tool creates a Software Publisher's Certificate (SPC) from one or more X.509 certificates. Cert2spc.exe is for test purposes only. You can obtain a valid SPC from a Certification Authority such as VeriSign or Thawte. For more information about creating X.509 certificates, see [Makecert.exe (Certificate Creation Tool)](/windows/desktop/SecCrypto/makecert).  

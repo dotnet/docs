@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "gcServer element"
   - "<gcServer> element"
 ms.assetid: 8d25b80e-2581-4803-bd87-a59528e3cb03
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<gcServer> Element
 Specifies whether the common language runtime runs server garbage collection.  

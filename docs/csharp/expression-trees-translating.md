@@ -2,6 +2,7 @@
 title: Translating Expression Trees
 description: Learn how to visit each node in an expression tree while building a modified copy of that expression tree.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 ---
 

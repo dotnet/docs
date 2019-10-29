@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: bdd98146-ff4d-4150-a264-a4c1a32d31f3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugManager::BeginConnection Method
 Establishes a new connection between the host and the debugger to associate a list of tasks with an identifier and a friendly name.  

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "64-bit applications [C++]"
   - "64-bit programming [C++]"
 ms.assetid: fd4026bc-2c3d-4b27-86dc-ec5e96018181
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # 64-bit Applications
 When you compile an application, you can specify that it should run on a Windows 64-bit operating system either as a native application or under WOW64 (Windows 32-bit on Windows 64-bit). WOW64 is a compatibility environment that enables a 32-bit application to run on a 64-bit system. WOW64 is included in all 64-bit versions of the Windows operating system.  

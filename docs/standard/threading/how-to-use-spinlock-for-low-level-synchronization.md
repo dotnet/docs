@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "SpinLock, how to use"
 ms.assetid: a9ed3e4e-4f29-4207-b730-ed0a51ecbc19
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: use SpinLock for low-level synchronization
 

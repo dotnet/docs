@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bfb2cd39-3e0b-4d51-ba0c-f009755c1456
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_HEAPINFO Structure
 Provides general information about the garbage collection heap, including whether it is enumerable.  

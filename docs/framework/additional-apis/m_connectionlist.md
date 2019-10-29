@@ -10,10 +10,9 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 186083cf-8dff-4600-a2ab-6fed4b4de6af
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # ConnectionGroup.m\_ConnectionList Field
 
 `ConnectionGroup.m_ConnectionList` is an <xref:System.Collections.ArrayList> of connection objects that serves the same URI and share the same values for some other properties like expiration and authentication.

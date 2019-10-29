@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetStaticFieldSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: b178367f-a6e4-413c-b06f-daf3804b456b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetStaticFieldSymbols Method
 Gets the static field symbols that correspond to a typespec signature.  

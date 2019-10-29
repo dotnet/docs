@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "managed execution process"
   - "common language runtime, managed execution process"
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Managed Execution Process
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:  

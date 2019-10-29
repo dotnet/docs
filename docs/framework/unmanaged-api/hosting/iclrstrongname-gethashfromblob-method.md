@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f91d0f89-f356-49ac-aafb-50fad963c13d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::GetHashFromBlob Method
 Gets a hash of the assembly at the specified memory address, using the specified hash algorithm.  

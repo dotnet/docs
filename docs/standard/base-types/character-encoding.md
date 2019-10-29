@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "encoding, choosing"
   - "encoding, fallback strategy"
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
-author: "rpetrusha"
-ms.author: "ronpet"
 ms.custom: seodec18
 ---
 # Character Encoding in .NET

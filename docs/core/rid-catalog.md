@@ -106,7 +106,7 @@ See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more 
 
 ## Linux RIDs
 
-Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo. Devices running a distribution not listed below may work with one of the Portable RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
+Only common values are listed. For the latest and complete version, see the [runtime.json](https://github.com/dotnet/corefx/blob/master/src/pkg/Microsoft.NETCore.Platforms/runtime.json) file on CoreFX repo. Devices running a distribution not listed below may work with one of the Portable RIDs. For example, Raspberry Pi devices running a Linux distribution not listed can be targeted with `linux-arm`.
 
 - Portable (.NET Core 2.0 or later versions)
   - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu and derivatives)
@@ -143,4 +143,4 @@ See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more info
 
 ## See also
 
-- [Runtime IDs](https://github.com/dotnet/corefx/blob/master/pkg/Microsoft.NETCore.Platforms/readme.md)
+- [Runtime IDs](https://github.com/dotnet/corefx/blob/master/src/pkg/Microsoft.NETCore.Platforms/readme.md)

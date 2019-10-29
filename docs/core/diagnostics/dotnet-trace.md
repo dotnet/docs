@@ -3,7 +3,7 @@ title: dotnet-trace - .NET Core
 description: Installing and using the dotnet-trace command-line tool.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 10/14/2019
+ms.date: 10/28/2019
 ---
 # dotnet-trace performance analysis utility
 
@@ -28,21 +28,21 @@ dotnet-trace [-h, --help] [--version] <command>
 The `dotnet-trace` tool:
 
 * Is a cross-platform CLI global tool.
-* Enables the collection of .NET Core traces of a running process without a native profiler .
+* Enables the collection of .NET Core traces of a running process without a native profiler.
 * Is built around the cross-platform `EventPipe` technology of the .NET Core runtime.
+
 <!--  Let's delete this. We could say the same on any donet tool.
 * Delivers the same experience on Windows, Linux, or macOS.
 -->
 
 ## Options
 
-- **`--version`**
-
-Displays the version of the dotnet-counters utility.
+- **`--version`**  
+  Displays the version of the dotnet-counters utility.
 
 - **`-h|--help`**
 
-Shows command-line help.
+  Shows command-line help.
 
 ## Commands
 
@@ -80,7 +80,7 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
 
 - **`--providers <list-of-comma-separated-providers>`**
 
-  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, the configuration takes precedence over the implicit configuration from the profile.
+  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, this configuration takes precedence over the implicit configuration from the profile.
 
   This list of providers is in the form:
 
@@ -174,7 +174,7 @@ To collect traces using `dotnet-trace`:
 
 On Windows, `.nettrace` files can be viewed on [PerfView](https://github.com/microsoft/perfview) for analysis: For traces collected on other platforms, the trace file can be moved to a Windows machine to be viewed on PerfView.
 
-The trace can be viewed on a Linux machine by changing the output format of `dotnet-trace` to `speedscope`. The output file format can be changed using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. You can choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at <https://www.speedscope.app>.
+On Linux, the trace can be viewed by changing the output format of `dotnet-trace` to `speedscope`. The output file format can be changed using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. You can choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at <https://www.speedscope.app>.
 
 > [!NOTE]
 > The .NET Core runtime generates traces in the `nettrace` format. The traces are converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
@@ -194,7 +194,7 @@ dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCoun
 
 The preceding command tells the runtime counters to report once every second for lightweight health monitoring. Replacing `EventCounterIntervalSec=1` with a higher value (for example, 60) allows collection of a smaller trace with less granularity in the counter data.
 
-The following reduces overhead and trace size more than the preceding command:
+The following command reduces overhead and trace size more than the preceding one:
 
 ```dotnetcli
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1

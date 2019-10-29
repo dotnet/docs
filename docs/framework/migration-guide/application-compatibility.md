@@ -46,7 +46,7 @@ The version of the .NET Framework that an application targets is determined by t
 
 To see a list of runtime changes that apply to your environment, select the .NET Framework version you're currently targeting and then the version you wish to migrate to:
 
-[!INCLUDE[versionselector](../../../../includes/migration-guide/runtime/versionselector.md)]
+[!INCLUDE[versionselector](../../../includes/migration-guide/runtime/versionselector.md)]
 
 ## Retargeting changes
 
@@ -54,7 +54,7 @@ Retargeting changes are those that arise when an assembly is recompiled to targe
 
 To see a list of retargeting changes that apply to your environment, select the .NET Framework version you're currently targeting and then the version you wish to migrate to:
 
-[!INCLUDE[versionselector](../../../../includes/migration-guide/retargeting/versionselector.md)]
+[!INCLUDE[versionselector](../../../includes/migration-guide/retargeting/versionselector.md)]
 
 ## See also
 

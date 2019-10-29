@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Generate an ML.NET image classification model from a pre-trained TensorFlow model'
 description: Learn how to transfer the knowledge from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
-ms.date: 09/30/2019
+ms.date: 10/30/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 author: natke
@@ -141,7 +141,7 @@ The training and testing images are located in the assets folders that you'll do
 
 1. Download the [Inception model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip), and unzip.
 
-1. Copy the contents of the `inception5h` directory just unzipped into your *TransferLearningTF* project `assets/inputs-train/inception` directory. This directory contains the model and additional support files needed for this tutorial, as shown in the following image:
+1. Copy the contents of the `inception5h` directory just unzipped into your *TransferLearningTF* project `assets/inception` directory. This directory contains the model and additional support files needed for this tutorial, as shown in the following image:
 
    ![Inception directory contents](./media/image-classification/inception-files.png)
 

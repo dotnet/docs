@@ -41,12 +41,14 @@
       href: tutorials/text-classification-tf.md
   - name: Tools
     items:
-    - name: Predict prices with Model Builder
+    - name: Predict prices with Model Builder (regression)
       href: tutorials/predict-prices-with-model-builder.md
     - name: Analyze sentiment using the ML.NET CLI
       href: tutorials/mlnet-cli.md
-    - name: Analyze sentiment using Model Builder and Razor Pages
+    - name: Analyze sentiment using Model Builder and Razor Pages (binary classification)
       href: tutorials/sentiment-analysis-model-builder.md
+    - name: Categorize health violations with Model Builder (multiclass classification)
+      href: tutorials/health-violation-classifiction-model-builder.md
   - name: Infer.NET
     items:
     - name: Probabilistic programming with Infer.NET

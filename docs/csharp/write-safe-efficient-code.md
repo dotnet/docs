@@ -2,6 +2,7 @@
 title: Write safe and efficient C# code
 description: Recent enhancements to the C# language enable you to write verifiable safe code that the performance previously associated with unsafe code. 
 ms.date: 10/23/2018
+ms.technology: csharp-advanced-concepts
 ms.custom: mvc
 ---
 # Write safe and efficient C# code

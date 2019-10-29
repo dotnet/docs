@@ -39,7 +39,6 @@ When you compile an application, you can specify that it should run on a Windows
   
 - In the Windows SDK documentation, see [Programming Guide for 64-bit Windows](/windows/win32/winprog64/programming-guide-for-64-bit-windows).  
   
-- For information about how to download a 64-bit version of the CLR, see [.NET Framework Developer Center Downloads](https://dotnet.microsoft.com/) on the MSDN website.  
   
 - For information about Visual Studio support for creating 64-bit applications, see [Visual Studio IDE 64-Bit Support](/visualstudio/ide/visual-studio-ide-64-bit-support).  
   

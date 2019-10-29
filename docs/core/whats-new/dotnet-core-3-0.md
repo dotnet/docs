@@ -499,3 +499,8 @@ Second, you can change <xref:System.Net.Http.HttpClient> to use HTTP/2 by defaul
 Many times when you're developing an application, you want to use an unencrypted connection. If you know the target endpoint will be using HTTP/2, you can turn on unencrypted connections for HTTP/2. You can turn it on by setting the `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2UNENCRYPTEDSUPPORT` environment variable to `1` or by enabling it in the app context:
 
 [!CODE-csharp[Http2Context](~/samples/snippets/core/whats-new/whats-new-in-30/cs/http.cs#AppContext)]
+
+## Next steps
+
+- [Review the breaking changes between .NET Core 2.2 and 3.0.](../compatibility/2.2-3.0.md)
+- [Review the breaking changes between .NET Framework and .NET Core 3.0.](../compatibility/framework-core.md)

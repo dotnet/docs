@@ -4,7 +4,8 @@ ms.date: "06/19/2017"
 ms.assetid: 1da7f5ff-5a67-44ba-b165-f3e5de008e4a
 author: "mairaw"
 ms.author: "mairaw"
----# Windows Workflow Foundation (WF) Migration Guidance
+---
+# Windows Workflow Foundation (WF) Migration Guidance
 
 This section contains topics that deal with migrating workflows from previous versions of Windows Workflow Foundation (WF).
 

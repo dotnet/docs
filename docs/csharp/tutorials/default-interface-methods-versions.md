@@ -2,6 +2,7 @@
 title: Safely update interfaces using default interface methods in C#
 description: This advanced tutorial explores how you can safely add new capabilities to existing interface definitions without breaking all classes and structs that implement that interface.
 ms.date: 05/06/2019
+ms.technlogy: csharp-advanced-concepts
 ms.custom: mvc
 ---
 # Tutorial: Update interfaces with default interface methods in C# 8.0

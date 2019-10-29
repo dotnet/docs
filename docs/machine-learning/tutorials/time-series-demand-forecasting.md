@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial: Forecast bike rental demand'
-description: This tutorial shows you how to use forecast demand for a bike rental service using univariate time-series analysis.
+title: 'Tutorial: Forecast bike rental demand - time series'
+description: This tutorial shows you how to forecast demand for a bike rental service using univariate time-series analysis and ML.NET.
 ms.date: 10/18/2019
 ms.topic: tutorial
 ms.custom: mvc
@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 > * Create a time-series model
 > * Use a time-series model for forecasting
 
-## Pre-requisites
+## Prerequisites
 
 - [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 - [Microsoft.ML 1.4.0-preview2 NuGet Package](https://www.nuget.org/packages/Microsoft.ML/1.4.0-preview2)
@@ -31,17 +31,17 @@ In this tutorial, you learn how to:
 
 ## Understand the problem
 
-In order to run an efficient operation, inventory management plays a key role. Having too much of a product in stock means unsold products sitting on the shelves not generating any revenue. Having too little product leads to lost sales and customers purchasing from competitors. Therefore, the constant question is, what is the optimal amount of inventory to keep on hand? Time-series analysis helps provide an answer to this questions by looking at historical data, identifying patterns and using this information to forecast values some time in the future. 
+In order to run an efficient operation, inventory management plays a key role. Having too much of a product in stock means unsold products sitting on the shelves not generating any revenue. Having too little product leads to lost sales and customers purchasing from competitors. Therefore, the constant question is, what is the optimal amount of inventory to keep on hand? Time-series analysis helps provide an answer to this questions by looking at historical data, identifying patterns, and using this information to forecast values some time in the future. 
 
 The technique for analyzing data used in this tutorial is univariate time-series analysis. Univariate time-series analysis takes a look at a single numerical observation over a period of time at specific intervals such as montly sales. 
 
-The algorithm used in this tutorial is [Single Spectrum Analysis(SSA)](http://ssa.cf.ac.uk/zhigljavsky/pdfs/SSA/SSA_encyclopedia.pdf). SSA works by decomposing a time-series into a set of principal components that can be interpreted as the parts of a signal that correspond to trends, noise, seasonality and many other factors.
+The algorithm used in this tutorial is [Single Spectrum Analysis(SSA)](http://ssa.cf.ac.uk/zhigljavsky/pdfs/SSA/SSA_encyclopedia.pdf). SSA works by decomposing a time-series into a set of principal components that can be interpreted as the parts of a signal that correspond to trends, noise, seasonality, and many other factors.
 
-## Set up .NET Core Console Application
+## Set up .NET Core console application
 
-### Create Console Application
+### Create console application
 
-1. Create a new .NET Core Console application
+1. Create a new .NET Core console application
 1. Install **Microsoft.ML** NuGet Package
     1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**.
@@ -56,13 +56,14 @@ The algorithm used in this tutorial is [Single Spectrum Analysis(SSA)](http://ss
 1. Download the *DailyDemand.mdf* file and save it into the *Data* directory.
 1. In Solution Explorer, right-click the *DailyDemand.mdf* file and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-The data used in this tutorial comes from the [UCI Bike Sharing Dataset](https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset). Fanaee-T, Hadi, and Gama, Joao, 'Event labeling combining ensemble detectors and background knowledge', Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, [Web Link](https://link.springer.com/article/10.1007%2Fs13748-013-0040-3).
+> [!NOTE]
+> The data used in this tutorial comes from the [UCI Bike Sharing Dataset](https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset). Fanaee-T, Hadi, and Gama, Joao, 'Event labeling combining ensemble detectors and background knowledge', Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, [Web Link](https://link.springer.com/article/10.1007%2Fs13748-013-0040-3).
 
 The original dataset contains several columns corresponding to seasonality and weather. For brevity and because the technique used in this tutorial only requires the values from a single numerical column, the original dataset has been enhanced to include only the following columns:  
 
-- **dteday** the date of the observation.
-- **year** the encoded year of the observation (0=2011, 1=2012).
-- **cnt** the total number of bike rentals for that day.
+- **dteday**: The date of the observation.
+- **year**: The encoded year of the observation (0=2011, 1=2012).
+- **cnt**: The total number of bike rentals for that day.
 
 The original dataset is mapped to a database table with the following schema in a SQL Server database.
 

@@ -8,7 +8,7 @@ ms.date: 06/26/2018
 
 # Serverless apps: Architecture, patterns, and Azure implementation
 
-![Screenshot that shows the Serverless Apps ebook cover.](./media/index/serverless-apps-cover.jpg)
+![Screenshot that shows the Serverless Apps e-book cover.](./media/index/serverless-apps-cover.jpg)
 
 > DOWNLOAD available at: <https://aka.ms/serverless-ebook>
 

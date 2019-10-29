@@ -1,7 +1,7 @@
 ---
 title: "How to: Determine which .NET Framework versions are installed"
 ms.date: "04/18/2019"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "updateeachrelease"
@@ -91,7 +91,7 @@ You can use these values as follows:
 
 - To determine whether a specific version of the .NET Framework is installed on a particular version of the Windows operating system, test whether the **Release** DWORD value is *equal to* the value listed in the table. For example, to determine whether .NET Framework 4.6 is present on a Windows 10 system, test for the a **Release** value that is *equal to* 393295.
 
-- To determine whether a minimum version of the .NET Framework is present, use the smaller **RELEASE** DWORD value for that version. For example, if your application runs under .NET Framework 4.6 or a later version, test for a **RELEASE** DWORD value that is *greater than or equal to* 393295. For a table that lists only the minimum **RELEASE** DWORD value for each .NET Framework version, see [The minimum values of the Release DWORD for .NET Framework 4.5 and later versions](minimum-release-dword.md).
+- To determine whether a minimum version of the .NET Framework is present, use the smaller **RELEASE** DWORD value for that version. For example, if your application runs under .NET Framework 4.8 or a later version, test for a **RELEASE** DWORD value that is *greater than or equal to* 528040. For a table that lists only the minimum **RELEASE** DWORD value for each .NET Framework version, see [The minimum values of the Release DWORD for .NET Framework 4.5 and later versions](minimum-release-dword.md).
 
 - To test for multiple versions, begin by testing for a value that is *greater than or equal to* the smaller DWORD value for the latest .NET Framework version, and then compare the value with the smaller DWORD value for each successive earlier version. For example, if your application requires .NET Framework 4.7 or later and you want to determine the specific version of .NET Framework present, start by testing for a **RELEASE** DWORD value that is *great than or equal to* to 461808 (the smaller DWORD value for .NET Framework 4.7.2). Then compare the **RELEASE** DWORD value with the smaller value for each later .NET Framework version. For a table that lists only the minimum **RELEASE** DWORD value for each .NET Framework version, see [The minimum values of the Release DWORD for .NET Framework 4.5 and later versions](minimum-release-dword.md).
 

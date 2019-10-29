@@ -2,6 +2,7 @@
 title: Tuple types - C# Guide
 description: Learn about unnamed and named tuple types in C#
 ms.date: 05/15/2018
+ms.technology: csharp-fundamentals
 ms.assetid: ee8bf7c3-aa3e-4c9e-a5c6-e05cc6138baa
 ---
 # C# tuple types

@@ -79,5 +79,5 @@ Each version of the .NET Framework contains the common language runtime (CLR), t
 ## See also
 
 - [Version Compatibility](version-compatibility.md)
-- [Microsoft .NET Framework Support Lifecycle Policy](https://support.microsoft.com/help/17455/lifecycle-faq-net-framework)
+- [.NET Framework Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)

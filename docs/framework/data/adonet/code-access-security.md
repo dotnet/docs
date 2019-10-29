@@ -169,7 +169,7 @@ AllowBlankPassword="False">
   
  You should see this output in the Console window:  
   
-```  
+```output  
 Failed, as expected: <IPermission class="System.Data.SqlClient.  
 SqlClientPermission, System.Data, Version=2.0.0.0,   
   Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1"  

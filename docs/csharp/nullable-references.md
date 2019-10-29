@@ -1,6 +1,7 @@
 ---
 title: Nullable reference types
 description: This article provides an overview of nullable reference types, added in C# 8.0. You'll learn how the feature provides safety against null reference exceptions, for new and existing projects.
+ms.technology: csharp-null-safety
 ms.date: 02/19/2019
 ---
 # Nullable reference types
@@ -60,6 +61,12 @@ The nullable annotation context and nullable warning context can be set for a pr
   - Variables of a reference type, string for example, are non-nullable. All nullability warnings are disabled.
 - `disable`: The nullable annotation context is **disabled**. The nullable warning context is **disabled**.
   - Variables of a reference type are oblivious, just like earlier versions of C#. All nullability warnings are disabled.
+
+**Example**:
+
+```xml
+<Nullable>enable</Nullable>
+```
 
 You can also use directives to set these same contexts anywhere in your project:
 

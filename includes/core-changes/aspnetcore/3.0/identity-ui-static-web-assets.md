@@ -15,11 +15,11 @@ As a result of Identity UI adopting the static web assets feature:
 
 #### Old behavior
 
-The default UI framework for Identity UI was **Bootstrap 3**. The UI framework could be configured using a parameter to the `AddIdentityUI` method call in `Startup.ConfigureServices`.
+The default UI framework for Identity UI was **Bootstrap 3**. The UI framework could be configured using a parameter to the `AddDefaultUI` method call in `Startup.ConfigureServices`.
 
 #### New behavior
 
-The default UI framework for Identity UI is **Bootstrap 4**. The UI framework must be configured in your project file, instead of in the `AddIdentityUI` method call.
+The default UI framework for Identity UI is **Bootstrap 4**. The UI framework must be configured in your project file, instead of in the `AddDefaultUI` method call.
 
 #### Reason for change
 
@@ -39,12 +39,12 @@ ASP.NET Core
 
 #### Affected APIs
 
-<xref:Microsoft.AspNetCore.Identity.IdentityBuilderUIExtensions.AddDefaultUI(Microsoft.AspNetCore.Identity.IdentityBuilder)?displayProperty=nameWithType>
+<xref:Microsoft.AspNetCore.Identity.IdentityBuilderUIExtensions.AddDefaultUI(Microsoft.AspNetCore.Identity.IdentityBuilder,Microsoft.AspNetCore.Identity.UI.UIFramework)?displayProperty=nameWithType>
 
 <!-- 
 
 #### Affected APIs
 
-`M:Microsoft.AspNetCore.Identity.IdentityBuilderUIExtensions.AddDefaultUI(Microsoft.AspNetCore.Identity.IdentityBuilder)`
+`M:Microsoft.AspNetCore.Identity.IdentityBuilderUIExtensions.AddDefaultUI(Microsoft.AspNetCore.Identity.IdentityBuilder,Microsoft.AspNetCore.Identity.UI.UIFramework)`
 
 -->

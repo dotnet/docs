@@ -99,7 +99,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 <Type Name="MyType">  
     <Method Name="MakeEnumerable{T}" Signature="(System.String, T)" Dynamic="Included">  
         <ImpliesType Name="T[]" Dynamic="Public" />  
-        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public">  
+        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public" />  
     </Method>  
 </Type>  
 ```  

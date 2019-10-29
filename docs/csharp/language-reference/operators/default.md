@@ -1,7 +1,7 @@
 ---
 title: "default operator - C# reference"
 ms.custom: seodec18
-description: "Use default operator to produce the default value of a type"
+description: "Use the default operator to produce the default value of a type"
 ms.date: 08/01/2019
 helpviewer_keywords: 
   - "default keyword [C#]"
@@ -14,16 +14,16 @@ The following example shows the usage of the `default` operator:
 
 [!code-csharp-interactive[default of T](~/samples/csharp/language-reference/operators/DefaultOperator.cs#WithOperand)]
 
-You also use the `default` keyword as the default case label within the [`switch` statement](../keywords/switch.md).
+You also use the `default` keyword as the default case label within a [`switch` statement](../keywords/switch.md).
 
 ## default literal
 
 Beginning with C# 7.1, you can use the `default` literal to produce the default value of a type when the compiler can infer the expression type. The `default` literal expression produces the same value as the `default(T)` expression where `T` is the inferred type. You can use the `default` literal in any of the following cases:
 
 - In the assignment or initialization of a variable.
-- In the declaration of the default value for an optional method parameter.
+- In the declaration of the default value for an [optional method parameter](../../methods.md#optional-parameters-and-arguments).
 - In a method call to provide an argument value.
-- In a `return` statement or as an expression in an expression-bodied member.
+- In a [`return` statement](../keywords/return.md) or as an expression in an [expression-bodied member](../../programming-guide/statements-expressions-operators/expression-bodied-members.md).
 
 The following example shows the usage of the `default` literal:
 
@@ -40,3 +40,4 @@ For more information about the `default` literal, see the [feature proposal note
 - [C# reference](../index.md)
 - [C# operators](index.md)
 - [Default values table](../keywords/default-values-table.md)
+- [Generics in .NET](../../../standard/generics/index.md)

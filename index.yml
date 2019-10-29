@@ -20,7 +20,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: "C# introduction. A quick interactive start."
+    - title: "C# introduction. A quick interactive start"
       itemType: get-started
       url: docs/csharp/tutorials/intro-to-csharp/hello-world.yml
     # Card
@@ -32,7 +32,7 @@ highlightedContent:
       itemType: get-started
       url: docs/core/get-started.md
     # Card
-    - title: "Build your first web app. Learn how to build your first ASP.NET Core web app."
+    - title: "Build your first web app. Learn how to build your first ASP.NET Core web app"
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
 
@@ -45,7 +45,7 @@ highlightedContent:
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   title: ".NET: Free. Cross-platform. Open source" # < 60 chars (optional)
-  summary: A developer platform for building web, mobile, desktop, gaming, IoT, all your apps. Supported on Windows, Linux, and macOS. # < 160 chars (optional)
+  summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
     - title: .NET Guide
@@ -118,15 +118,15 @@ tools:
   title: Languages # < 60 chars (optional)
   items:
     # Card
-    - title: "C#"
+    - title: "C#: a modern object-oriented, and type-safe programming language in the C family."
       imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
       url: docs/csharp/index.md
     # Card
-    - title: Visual Basic
+    - title: "Visual Basic:  an approachable language with a simple syntax for building type-safe, object-oriented apps."
       imageSrc: https://docs.microsoft.com/media/logos/logo_VB.svg
       url: docs/visual-basic/index.md
     # Card
-    - title: "F#"
+    - title: "F#: a functional programming language for .NET, with object-oriented and imperative constructs."
       imageSrc: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
       url: docs/fsharp/index.md
 
@@ -136,7 +136,7 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: .NET Workloads` # < 60 chars (optional)
+    - title: .NET Workloads # < 60 chars (optional)
       items:
         # Card
         - title: Web
@@ -231,5 +231,5 @@ additionalContent:
         summary: F# language reference
         url: docs/fsharp/language-reference/index.md
   # footer (optional)
-  footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
+  footer: "Contribute to .NET docs. Read our [contributor guide]](https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md)"
 

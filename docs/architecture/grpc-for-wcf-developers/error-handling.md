@@ -54,7 +54,7 @@ catch (RpcException ex) when (ex.StatusCode == StatusCode.PermissionDenied)
     var userEntry = ex.Trailers.FirstOrDefault(e => e.Key == "User");
     Console.WriteLine($"User '{userEntry.Value}' does not have permission to view this portfolio.");
 }
-catch (RpcException) 
+catch (RpcException)
 {
     // Handle any other error type ...
 }

@@ -9,16 +9,16 @@ ms.date: 01/07/2019
 
 **EDITION v2.2** - Updated to ASP.NET Core 2.2
 
-This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers. 
+This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.
 
 To make it easier to get started, the guide focuses on a reference containerized and microservice-based application that you can explore. The reference application is available at the [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) GitHub repo.
 
 ## Action links
 
-- Download this eBook in your format of choice: | [PDF](https://aka.ms/microservicesebook) | [MOBI](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook-mobi) | [EPUB](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook-epub) |
+- Download this e-book in your format of choice (English version only): | [PDF](https://aka.ms/microservicesebook) | [MOBI](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook-mobi) | [EPUB](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook-epub) |
 
 - Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
- 
+
 - Watch the [introductory video on Channel 9](https://aka.ms/microservices-video)
 
 - Get to know the [Microservices Architecture](https://aka.ms/MicroservicesArchitecture) right away
@@ -41,7 +41,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET Core 2.2** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 2.2. That’s why the book version has also been updated to version **2.2**. 
+This guide has been revised to cover **.NET Core 2.2** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 2.2. That’s why the book version has also been updated to version **2.2**.
 
 ## What this guide does not cover
 
@@ -66,7 +66,7 @@ The second part of the guide starts with the [Development process for Docker bas
 
 ## Related microservice and container-based reference application: eShopOnContainers
 
-The eShopOnContainers application is an open-source reference app for .NET Core and microservices that is designed to be deployed using Docker containers. The application consists of multiple subsystems, including several e-store UI front ends (a Web MVC app, a Web SPA, and a native mobile app). It also includes the back-end microservices and containers for all required server-side operations. 
+The eShopOnContainers application is an open-source reference app for .NET Core and microservices that is designed to be deployed using Docker containers. The application consists of multiple subsystems, including several e-store UI front ends (a Web MVC app, a Web SPA, and a native mobile app). It also includes the back-end microservices and containers for all required server-side operations.
 
 The purpose of the application is to showcase architectural patterns. **IT IS NOT A PRODUCTION-READY TEMPLATE** to start real-world applications. In fact, the application is in a permanent beta state, as it’s also used to test new potentially interesting technologies as they show up.
 

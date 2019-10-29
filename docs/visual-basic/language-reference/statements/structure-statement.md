@@ -101,7 +101,7 @@ The following example uses the `Structure` statement to define a set of related 
 
 [!code-vb[VbVbalrStatements#57](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#57)]
 
-For more information on how to use `Structure`s, see [Structure Variable](../../programming-guide/language-features/data-types/structure-variables).
+For more information on how to use `Structure`s, see [Structure Variable](../../programming-guide/language-features/data-types/structure-variables.md).
 
 ## See also
 

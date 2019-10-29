@@ -12,13 +12,13 @@ ms.date: 09/11/2019
 Blazor apps can be hosted in IIS just like ASP.NET Web Forms apps. Blazor apps can also be hosted in one of the following ways:
 
 - Client-side in the browser on WebAssembly.
-- Server-side in an ASP.NET Core app. 
+- Server-side in an ASP.NET Core app.
 
 ## Blazor WebAssembly apps
 
-Blazor WebAssembly apps execute directly in the browser on a WebAssembly-based .NET runtime. Blazor WebAssembly apps function in a similar way to front-end JavaScript frameworks like Angular or React. However, instead of writing JavaScript you write C#. The .NET runtime is downloaded with the app along with the app assembly and any required dependencies. No browser plugins or extensions are required. 
+Blazor WebAssembly apps execute directly in the browser on a WebAssembly-based .NET runtime. Blazor WebAssembly apps function in a similar way to front-end JavaScript frameworks like Angular or React. However, instead of writing JavaScript you write C#. The .NET runtime is downloaded with the app along with the app assembly and any required dependencies. No browser plugins or extensions are required.
 
-The downloaded assemblies are normal .NET assemblies, like you would use in any other .NET app. Because the runtime supports .NET Standard, you can use existing .NET Standard libraries with your Blazor WebAssembly app. However, these assemblies will still execute in the browser security sandbox. Some functionality may throw a <xref:System.PlatformNotSupportedException>, like trying to access the file system or opening arbitrary network connections. 
+The downloaded assemblies are normal .NET assemblies, like you would use in any other .NET app. Because the runtime supports .NET Standard, you can use existing .NET Standard libraries with your Blazor WebAssembly app. However, these assemblies will still execute in the browser security sandbox. Some functionality may throw a <xref:System.PlatformNotSupportedException>, like trying to access the file system or opening arbitrary network connections.
 
 When the app loads, the .NET runtime is started and pointed at the app assembly. The app startup logic runs, and the root components are rendered. Blazor calculates the UI updates based on the rendered output from the components. The DOM updates are then applied.
 

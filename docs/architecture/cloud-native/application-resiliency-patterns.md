@@ -7,7 +7,7 @@ ms.date: 06/30/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-The first line of defense is software-enabled application resiliency. 
+The first line of defense is software-enabled application resiliency.
 
 While you could invest considerable time writing your own resiliency framework, such products already exist. For example, [Polly](http://www.thepollyproject.org/) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications built with either the full .NET Framework or .NET Core. Figure 6-2 shows the resiliency policies (that is, functionality) available from the Polly Library. These policies can be applied individually or combined together.
 

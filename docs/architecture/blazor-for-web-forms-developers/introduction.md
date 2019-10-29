@@ -15,7 +15,7 @@ Over the years, Microsoft has introduced new ASP.NET-based web frameworks to add
 
 At the time of writing, almost half a million web developers use ASP.NET Web Forms every month. The ASP.NET Web Forms framework is stable to the point that docs, samples, books, and blog posts from a decade ago remain useful and relevant. For many .NET web developers, "ASP.NET" is still synonymous with "ASP.NET Web Forms" as it was when .NET was first conceived. Arguments on the pros and cons of ASP.NET Web Forms compared to the other new .NET web frameworks may rage on. ASP.NET Web Forms remains a popular framework for creating web apps.
 
-Even so, innovations in software development aren't slowing. All software developers need to stay abreast of new technologies and trends. Two trends in particular are worth considering: 
+Even so, innovations in software development aren't slowing. All software developers need to stay abreast of new technologies and trends. Two trends in particular are worth considering:
 
 1. The shift to open-source and cross-platform
 2. The shift of app logic to the client

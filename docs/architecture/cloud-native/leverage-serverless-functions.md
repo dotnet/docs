@@ -7,7 +7,7 @@ ms.date: 06/30/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-In the spectrum of managing full machines and operating systems to leveraging cloud capabilities, serverless lives at the extreme end where the only thing you're responsible for is your code, and you only pay when your code runs. Azure Functions provides a way to build serverless capabilities into your applications. 
+In the spectrum of managing full machines and operating systems to leveraging cloud capabilities, serverless lives at the extreme end where the only thing you're responsible for is your code, and you only pay when your code runs. Azure Functions provides a way to build serverless capabilities into your applications.
 
 ## What is serverless?
 

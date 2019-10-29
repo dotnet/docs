@@ -37,7 +37,6 @@ When you compile an application, you can specify that it should run on a Windows
 ## General 64-Bit Programming Information  
  For general information about 64-bit programming, see the following documents:  
   
-- For more information about the 64-bit version of the CLR on a 64-bit Windows computer, see the [.NET Framework Developer Center](https://dotnet.microsoft.com/) on the MSDN website.  
   
 - In the Windows SDK documentation, see [Programming Guide for 64-bit Windows](https://docs.microsoft.com/windows/win32/winprog64/programming-guide-for-64-bit-windows).  
   

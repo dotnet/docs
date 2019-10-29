@@ -5,13 +5,13 @@ author: sdmaclea
 ms.author: stmaclea
 ms.date: 10/14/2019
 ---
-# Trace for performance analysis utility (`dotnet-trace`)
+# dotnet-trace performance analysis utility
 
 **This article applies to:** .NET Core 3.0 SDK and later versions
 
-## Installing `dotnet-trace`
+## Install dotnet-trace
 
-To install the latest release version of the `dotnet-trace` [NuGet package](https://www.nuget.org/packages/dotnet-trace), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
+Install `dotnet-trace` [NuGet package](https://www.nuget.org/packages/dotnet-trace) with the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
 ```dotnetcli
 dotnet tool install --global dotnet-trace
@@ -19,23 +19,30 @@ dotnet tool install --global dotnet-trace
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet-trace [-h, --help] [--version] <command>
 ```
 
 ## Description
 
-The `dotnet-trace` tool is a cross-platform CLI global tool that enables the collection of .NET Core traces of a running process without any native profiler involved. It's built around the cross-platform `EventPipe` technology of the .NET Core runtime. `dotnet-trace` delivers the same experience on Windows, Linux, or macOS.
+The `dotnet-trace` tool:
+
+* Is a cross-platform CLI global tool.
+* Enables the collection of .NET Core traces of a running process without a native profiler .
+* Is built around the cross-platform `EventPipe` technology of the .NET Core runtime.
+<!--  Let's delete this. We could say the same on any donet tool.
+* Delivers the same experience on Windows, Linux, or macOS.
+-->
 
 ## Options
 
 - **`--version`**
 
-Display the version of the dotnet-counters utility.
+Displays the version of the dotnet-counters utility.
 
 - **`-h|--help`**
 
-Show command-line help.
+Shows command-line help.
 
 ## Commands
 
@@ -52,7 +59,7 @@ Collects a diagnostic trace from a running process.
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--output]
     [--providers] [--profile <profile-name>] [--format]
 ```
@@ -73,7 +80,7 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
 
 - **`--providers <list-of-comma-separated-providers>`**
 
-  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, the configuration here takes precedence over the implicit configuration from the profile.
+  A comma-separated list of `EventPipe` providers to be enabled. These providers supplement any providers implied by `--profile <profile-name>`. If there's any inconsistency for a particular provider, the configuration takes precedence over the implicit configuration from the profile.
 
   This list of providers is in the form:
 
@@ -95,7 +102,7 @@ Converts `nettrace` traces to alternate formats for use with alternate trace ana
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 ```
 
@@ -121,7 +128,7 @@ Lists dotnet processes that can be traced.
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace list-processes [-h|--help]
 ```
 
@@ -131,59 +138,69 @@ Lists pre-built tracing profiles with a description of what providers and filter
 
 ### Synopsis
 
-```console
+```dotnetcli
 dotnet-trace list-profiles [-h|--help]
 ```
 
-## Collect a trace with `dotnet-trace`
+## Collect a trace with dotnet-trace
 
-- To collect traces using `dotnet-trace`, you'll need to first, find out the process identifier (PID) of the .NET Core application to collect traces from.
+To collect traces using `dotnet-trace`:
 
-  - On Windows, there are options such as using the task manager or the `tasklist` command.
-  - On Linux, the trivial option could be using `ps` command.
+- Get the process identifier (PID) of the .NET Core application to collect traces from.
 
-You may also use the [dotnet-trace list-processes](#dotnet-trace-list-processes) command to find out what .NET Core processes are running, along with their PIDs.
+  - On Windows, for example, Task Manager or the `tasklist` command.
+  - On Linux, for example, the `ps` command.
+  - [dotnet-trace list-processes](#dotnet-trace-list-processes)
 
-- Then, run the following command:
+- Run the following command:
 
-```console
-> dotnet-trace collect --process-id <PID>
+  ```dotnetcli
+    dotnet-trace collect --process-id <PID>
+  ```
 
-Press <Enter> to exit...
-Connecting to process: <Full-Path-To-Process-Being-Profiled>/dotnet.exe
-Collecting to file: <Full-Path-To-Trace>/trace.nettrace
+  The preceding command generates output similar to the following:
+
+  ```dotnetcli
+  Press <Enter> to exit...
+  Connecting to process: <Full-Path-To-Process-Being-Profiled>/dotnet.exe
+  Collecting to file: <Full-Path-To-Trace>/trace.nettrace
   Session Id: <SessionId>
   Recording trace 721.025 (KB)
-```
+  ```
 
-- Finally, stop collection by pressing the `<Enter>` key, and `dotnet-trace` will finish logging events to `trace.nettrace` file.
+- Stop collection by pressing the `<Enter>` key. `dotnet-trace` will finish logging events to `trace.nettrace` file.
 
-## Viewing the trace captured from `dotnet-trace`
+## View the trace captured from dotnet-trace
 
-On Windows, `.nettrace` files can be viewed on [PerfView](https://github.com/microsoft/perfview) for analysis, just like traces collected with ETW or LTTng. For traces collected on Linux, you can move the trace to a Windows machine to be viewed on PerfView.
+On Windows, `.nettrace` files can be viewed on [PerfView](https://github.com/microsoft/perfview) for analysis: For traces collected on other platforms, the trace file can be moved to a Windows machine to be viewed on PerfView.
 
-You may also view the trace on a Linux machine by changing the output format of `dotnet-trace` to `speedscope`. You can change the output file format using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` to produce a `speedscope` file. You can currently choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at <https://www.speedscope.app>.
+The trace can be viewed on a Linux machine by changing the output format of `dotnet-trace` to `speedscope`. The output file format can be changed using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. You can choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at <https://www.speedscope.app>.
 
 > [!NOTE]
-> The .NET Core runtime generates traces in the `nettrace` format, and they're converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
+> The .NET Core runtime generates traces in the `nettrace` format. The traces are converted to speedscope (if specified) after the trace is completed. Since some conversions may result in loss of data, the original `nettrace` file is preserved next to the converted file.
 
-## Using `dotnet-trace` to collect counter values over time
+## Use dotnet-trace to collect counter values over time
 
-If you're trying to use `EventCounter` for basic health monitoring in  performance-sensitive settings like production environments and you want to collect traces instead of watching them in real time, you can do that with `dotnet-trace` as well.
+`dotnet-trace` can:
 
-For example, if you want to collect runtime performance counter values, you can use the following command:
+* Use `EventCounter` for basic health monitoring in performance-sensitive environments. For example, in production.
+* Collect traces so they don't need to be viewed in real time.
 
-```console
+For example, to collect runtime performance counter values, use the following command:
+
+```dotnetcli
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1
 ```
 
-This command tells the runtime counters to be reported once every second for lightweight health monitoring. Replacing `EventCounterIntervalSec=1` with a higher value (for example, 60) allows you to collect a smaller trace with less granularity in the counter data.
+The preceding command tells the runtime counters to report once every second for lightweight health monitoring. Replacing `EventCounterIntervalSec=1` with a higher value (for example, 60) allows collection of a smaller trace with less granularity in the counter data.
 
-If you want to disable runtime events to reduce the overhead (and trace size) even further, you can use the following command to disable runtime events and managed stack profiler.
+The following reduces overhead and trace size more than the preceding command:
 
-```console
+```dotnetcli
 dotnet-trace collect --process-id <PID> --providers System.Runtime:0:1:EventCounterIntervalSec=1,Microsoft-Windows-DotNETRuntime:0:1,Microsoft-DotNETCore-SampleProfiler:0:1
 ```
+
+The preceding command disables runtime events and the managed stack profiler.
 
 ## .NET Providers
 

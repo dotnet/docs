@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetTypeLibInfo Function
 Returns information about the specified type library by examining its [TLIBATTR](https://docs.microsoft.com/windows/win32/api/oaidl/ns-oaidl-tlibattr) structure.  

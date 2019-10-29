@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 29e7a14b-d50e-4852-bfda-011b76c0c9ee
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::NewString Method
 Allocates a new string instance with the specified contents.  

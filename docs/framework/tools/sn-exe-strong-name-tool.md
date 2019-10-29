@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "strong-named assemblies, signing files"
   - "key pairs for signing files"
 ms.assetid: c1d2b532-1b8e-4c7a-8ac5-53b801135ec6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Sn.exe (Strong Name Tool)
 The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../standard/assembly/strong-named.md). Sn.exe provides options for key management, signature generation, and signature verification.  

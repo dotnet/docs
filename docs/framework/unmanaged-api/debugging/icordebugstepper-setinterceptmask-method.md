@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6245e2ae-5cc2-43ff-8cc1-71953d12113a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStepper::SetInterceptMask Method
 Sets a value that specifies the types of code that are stepped into.  

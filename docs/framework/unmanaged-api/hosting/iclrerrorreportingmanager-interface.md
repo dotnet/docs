@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ea8af0d5-4133-4472-8a1f-50570d7e85fa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRErrorReportingManager Interface
 Provides methods that allow the host to configure custom stack dumps for error reporting.  

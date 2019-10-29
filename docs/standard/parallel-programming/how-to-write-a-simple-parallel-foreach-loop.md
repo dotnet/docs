@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "foreach, parallel version"
   - "parallel programming, foreach"
 ms.assetid: cb5fab92-1c19-499e-ae91-8b7525dd875f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Write a simple Parallel.ForEach loop
 

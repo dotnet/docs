@@ -4,8 +4,6 @@ ms.custom: seodec18
 ms.date: 06/14/2017
 helpviewer_keywords: 
   - "local functions [C#]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Local functions (C# Programming Guide)
 

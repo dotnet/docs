@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0d5ccc4d-0193-41f5-af54-45d7b70d5321
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetaHost::RequestRuntimeLoadedNotification Method
 Provides a callback function that is guaranteed to be called when a common language runtime (CLR) version is first loaded, but not yet started. This method supersedes the [LockClrVersion](../../../../docs/framework/unmanaged-api/hosting/lockclrversion-function.md) function.  

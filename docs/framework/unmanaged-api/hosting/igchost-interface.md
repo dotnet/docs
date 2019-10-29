@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9ad70ffd-6963-4ab2-8c84-3d86c3fb8deb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost Interface
 Provides methods for obtaining information about the garbage collection system and for controlling some aspects of garbage collection.  

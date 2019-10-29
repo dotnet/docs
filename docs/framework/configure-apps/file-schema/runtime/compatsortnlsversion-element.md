@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<CompatSortNLSVersion> element"
   - "CompatSortNLSVersion element"
 ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<CompatSortNLSVersion> Element
 Specifies that the runtime should use legacy sort orders when performing string comparisons.  

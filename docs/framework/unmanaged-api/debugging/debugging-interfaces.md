@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "debugging interfaces [.NET Framework]"
   - "interfaces [.NET Framework debugging]"
 ms.assetid: b6297c26-7624-4431-8af4-14112d07bcd5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Debugging Interfaces
 This section describes the unmanaged interfaces that handle the debugging of a program that is executing in the common language runtime (CLR).  

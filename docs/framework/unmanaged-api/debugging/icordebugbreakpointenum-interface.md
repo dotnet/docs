@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 4c6f4f6e-52cc-402e-881b-7b8526544c90
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugBreakpointEnum Interface
 

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "interop marshaling"
   - "interop marshaling, about interop marshaling"
 ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Interop Marshaling
 

@@ -2,8 +2,6 @@
 title: "ICorDebugStaticFieldSymbol Interface"
 ms.date: "03/30/2017"
 ms.assetid: c0b93609-631e-4b15-878a-189ede922631
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStaticFieldSymbol Interface
 Represents the debug symbol information for a static field.  

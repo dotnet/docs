@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4ee8d058-ffc8-4967-9133-a5adfef4e518
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInternalFrame2::GetFrameAddress Method
 Returns the stack address of the internal frame.  

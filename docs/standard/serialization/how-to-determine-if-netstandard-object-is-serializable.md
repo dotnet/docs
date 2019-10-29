@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "serializing objects"
   - "objects, serializing steps"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to determine if a .NET Standard object is serializable
 

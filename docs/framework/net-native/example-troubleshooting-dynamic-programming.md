@@ -2,8 +2,6 @@
 title: "Example: Troubleshooting Dynamic Programming"
 ms.date: "03/30/2017"
 ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Example: Troubleshooting Dynamic Programming
 > [!NOTE]

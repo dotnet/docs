@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: fc834580-3a90-4315-95d2-349b6bb7d059
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2::GetDesiredNGENCompilerFlags Method
 Gets the current compiler flag settings that the common language runtime (CLR) uses to select the correct precompiled (that is, native) image to be loaded into this process.  

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "tasks, cancellation"
   - "asynchronous task cancellation"
 ms.assetid: 3ecf1ea9-e399-4a6a-a0d6-8475f48dcb28
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Task Cancellation
 The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> classes support cancellation through the use of cancellation tokens in the .NET Framework. For more information, see [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md). In the Task classes, cancellation involves cooperation between the user delegate, which represents a cancelable operation and the code that requested the cancellation.  A successful cancellation involves the requesting code calling the <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> method, and the user delegate terminating the operation in a timely manner. You can terminate the operation by using one of these options:  

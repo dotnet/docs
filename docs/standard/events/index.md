@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "events [.NET Core]"
   - "events [.NET Framework]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Handling and raising events
 

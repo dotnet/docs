@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "debugging API [Silverlight]"
   - "Silverlight, debugging"
 ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateDebuggingInterfaceFromVersion Function for Silverlight
 Accepts a common language runtime (CLR) version string that is returned from the [CreateVersionStringFromModule function](../../../../docs/framework/unmanaged-api/debugging/createversionstringfrommodule-function.md), and returns a corresponding debugger interface (typically, [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)).  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 15d09166-be00-4696-913f-2c1fbc7ac2e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameGetBlob Function
 Fills the specified buffer with the binary representation of the executable file at the specified address.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0aba6096-5b38-435c-a72a-86d35db4daef
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain2::GetFunctionPointerType Method
 Gets a pointer to a function that has a given signature.  

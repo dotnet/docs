@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 933758dd-231e-4382-8819-242c0a13a4b7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameSignatureVerification Function
 Gets a value indicating whether the assembly manifest at the supplied path contains a strong name signature, which is verified according to the specified flags.  

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "alwaysFlowImpersonationPolicy element"
   - "<alwaysFlowImpersonationPolicy> element"
 ms.assetid: ee622801-9e46-470b-85ab-88c4b1dd2ee1
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<alwaysFlowImpersonationPolicy> Element
 Specifies that the Windows identity always flows across asynchronous points, regardless of how impersonation was performed.  

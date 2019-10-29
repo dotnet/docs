@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 532e9dfd-d114-4c75-b952-1accce102643
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode2::GetCompilerFlags Method
 

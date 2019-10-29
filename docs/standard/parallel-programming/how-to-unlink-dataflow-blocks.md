@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library, unlinking dataflow blocks"
 ms.assetid: 40f0208d-4618-47f7-85cf-4913d07d2d7d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Unlink Dataflow Blocks
 This document describes how to unlink a target dataflow block from its source.

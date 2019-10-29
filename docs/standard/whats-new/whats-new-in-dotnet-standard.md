@@ -4,8 +4,6 @@ description: This article summarizes new features and enhancements found in each
 ms.custom: "updateeachrelease"
 ms.date: "04/12/2018"
 ms.technology: dotnet-standard
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # What's new in the .NET Standard
 

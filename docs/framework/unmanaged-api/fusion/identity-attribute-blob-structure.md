@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: af14ae5f-d226-47dd-ba90-8fc6e6605d4d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDENTITY_ATTRIBUTE_BLOB Structure
 Contains information about a single attribute in an assembly, and consists of three `DWORD`s. Each `DWORD` is an offset into a character buffer produced by the `CurrentIntoBuffer` method of the [IEnumIDENTITY_ATTRIBUTE](ienumidentity-attribute-interface.md) interface  

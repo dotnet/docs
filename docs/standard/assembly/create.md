@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], creating"
   - "multifile assemblies"
 ms.assetid: 54832ee9-dca8-4c8b-913c-c0b9d265e9a4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Create assemblies
 

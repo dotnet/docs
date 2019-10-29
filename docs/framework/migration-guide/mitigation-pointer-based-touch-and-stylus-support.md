@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "WPF retargeting changes"
   - "WPF pointer-based touch and stylus stack"
 ms.assetid: f99126b5-c396-48f9-8233-8f36b4c9e717
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Pointer-based Touch and Stylus Support
 

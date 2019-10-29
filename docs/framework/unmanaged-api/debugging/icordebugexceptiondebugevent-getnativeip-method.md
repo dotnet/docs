@@ -2,8 +2,6 @@
 title: "ICorDebugExceptionDebugEvent::GetNativeIP Method"
 ms.date: "03/30/2017"
 ms.assetid: 12e6a262-d9ac-49b8-9b80-1e653a2a3819
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionDebugEvent::GetNativeIP Method
 Gets the native instruction pointer for this exception debug event.  

@@ -2,8 +2,6 @@
 title: "ICorDebugExceptionDebugEvent::GetStackPointer Method"
 ms.date: "03/30/2017"
 ms.assetid: d8f66a1c-16be-4264-afc5-bc2dfbb4a682
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionDebugEvent::GetStackPointer Method
 Gets the stack pointer for this exception debug event.  

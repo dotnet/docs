@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, samples"
   - "COM interop, samples"
 ms.assetid: a3f752bb-8945-4e1b-8163-71def6e9f137
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COM Interop Sample: .NET Client and COM Server
 This sample demonstrates how a [.NET client](#cpconcominteropsamplenetclientcomserveranchor1), built to access a [COM server](#cpconcominteropsamplenetclientcomserveranchor2), creates an instance of a COM coclass and calls class members to perform mortgage calculations.  

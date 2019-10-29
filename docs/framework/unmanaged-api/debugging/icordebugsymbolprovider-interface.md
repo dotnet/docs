@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider Interface"
 ms.date: "03/30/2017"
 ms.assetid: 85b24196-b6c6-4bda-9de3-47180bd6ff96
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider Interface
 Provides methods that can be used to retrieve debug symbol information.  

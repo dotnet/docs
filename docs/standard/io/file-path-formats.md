@@ -12,8 +12,6 @@ helpviewer_keywords:
 dev_langs: 
   - "csharp"
   - "vb"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # File path formats on Windows systems
 

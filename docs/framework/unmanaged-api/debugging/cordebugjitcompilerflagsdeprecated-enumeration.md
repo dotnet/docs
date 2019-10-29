@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: af15e2ca-6be1-472b-bd36-03644a1e3ddd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugJITCompilerFlagsDeprecated Enumeration
 This enumeration is obsolete. Use the `CORDEBUG_JIT_DEFAULT` member of the [CorDebugJITCompilerFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugjitcompilerflags-enumeration.md) enumeration instead.  

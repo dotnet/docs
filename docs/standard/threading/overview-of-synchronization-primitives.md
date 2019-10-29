@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "threading [.NET],synchronizing threads"
   - "managed threading"
 ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Overview of synchronization primitives
 

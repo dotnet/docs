@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "COM,wrappers creating"
   - "COM,wrappers Visual Studio"
 ms.assetid: bdf89bea-1623-45ee-a57b-cf7c90395efa
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create COM Wrappers
 

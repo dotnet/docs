@@ -6,8 +6,6 @@ helpviewer_keywords:
   - ".NET Framework application compatibility"
   - ".NET Framework changes"
 ms.assetid: c4ba3ff2-fe59-4c5d-9e0b-86bba3cd865c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Application Compatibility in the .NET Framework

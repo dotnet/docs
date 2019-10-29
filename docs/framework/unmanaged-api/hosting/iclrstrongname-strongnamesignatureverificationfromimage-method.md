@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: da91c138-ee30-4fd4-a040-464d97d7e41a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameSignatureVerificationFromImage Method
 Verifies that an assembly that has already been mapped to memory is valid for the associated public key.  

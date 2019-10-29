@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "Sign tool"
   - "SignTool.exe"
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # SignTool.exe (Sign Tool)
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  

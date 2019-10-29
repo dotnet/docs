@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "types, obsolete in .NET Framework 4.5"
   - "obsolete types [.NET Framework]"
 ms.assetid: e636d024-0fac-45eb-b721-25a8c0ceca8f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Obsolete Types in the .NET Framework
 

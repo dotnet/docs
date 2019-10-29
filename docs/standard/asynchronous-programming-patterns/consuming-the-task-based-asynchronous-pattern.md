@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "Task-based Asynchronous Pattern, .NET Framework support for"
   - ".NET Framework, asynchronous design patterns"
 ms.assetid: 033cf871-ae24-433d-8939-7a3793e547bf
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Consuming the Task-based Asynchronous Pattern
 

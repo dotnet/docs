@@ -2,8 +2,6 @@
 title: "ICorDebugMemoryBuffer Interface"
 ms.date: "03/30/2017"
 ms.assetid: 85dc2d65-3657-4b93-9f23-9feaa95d37ff
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMemoryBuffer Interface
 Represents an in-memory buffer.  

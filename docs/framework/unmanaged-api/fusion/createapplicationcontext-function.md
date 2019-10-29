@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7bf8a141-b2c0-4058-9885-1cef7dcaa811
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateApplicationContext Function
 This function supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

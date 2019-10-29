@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "FormatFromRawValue function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # FormatFromRawValue function
 Converts one raw performance data value to the specified format, or two raw performance data values if the format conversion is time-based. 

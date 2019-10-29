@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d2ca20db-df22-4528-a0dd-a09ea62c8998
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame2::IsMatchingParentFrame Method
 Determines whether the specified frame is the parent of the current frame.  

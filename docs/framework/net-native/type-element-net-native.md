@@ -2,8 +2,6 @@
 title: "<Type> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<Type> Element (.NET Native)
 

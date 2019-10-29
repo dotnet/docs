@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 89dc7363-2f29-4eb2-8f23-fccdda6a76a6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugManager::EndConnection Method
 Removes the association between a list of tasks and an identifier and a friendly name.  

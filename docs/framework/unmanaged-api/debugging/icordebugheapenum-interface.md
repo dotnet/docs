@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 99cbc1eb-d539-4f76-a0d8-b93348112f14
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapEnum Interface
 Provides an enumerator for objects on the managed heap. This interface is a subclass of the ICorDebugEnum interface.  

@@ -3,7 +3,6 @@ title: Retargeting Changes in the .NET Framework
 ms.date: "05/19/2017"
 ms.assetid: f8365847-6e39-4fd1-81d7-73bf02ddd79d
 author: "conniey"
-ms.author: "ronpet"
 ---
 
 # Retargeting Changes in the .NET Framework

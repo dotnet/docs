@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 71f362a9-8fe2-47ce-9302-05a645cf3d7d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorLaunchApplication Function
 Starts the application at the specified network path, using the specified manifests and other application data.  

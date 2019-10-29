@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e2a3637b-d1e9-4d93-9e9b-0555fbff793d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeName::GetNames Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

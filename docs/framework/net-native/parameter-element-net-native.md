@@ -2,8 +2,6 @@
 title: "<Parameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 22aaa1f3-596f-4733-93db-f4bcabcb5240
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<Parameter> Element (.NET Native)
 Applies reflection policy to the type of the argument passed to a method.  

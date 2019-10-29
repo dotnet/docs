@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f6a449c8-a941-43ba-9a90-c98b29ae3c36
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame2::GetStackParameterSize Method
 Returns the cumulative size of the parameters on the stack on x86 operating systems.  

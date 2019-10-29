@@ -4,8 +4,6 @@ description: Learn about the new features found in .NET Core 2.1.
 dev_langs: 
   - "csharp"
   - "vb"
-author: rpetrusha
-ms.author: ronpet
 ms.date: 10/10/2018
 ---
 # What's new in .NET Core 2.1

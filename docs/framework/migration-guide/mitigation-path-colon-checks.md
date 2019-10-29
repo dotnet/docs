@@ -2,8 +2,6 @@
 title: "Mitigation: Path Colon Checks"
 ms.date: "03/30/2017"
 ms.assetid: a0bb52de-d279-419d-8f23-4b12d1a3f36e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Path Colon Checks
 Starting with apps that target the .NET Framework 4.6.2, a number of changes were made to support previously unsupported paths (both in terms of length and format). In particular, checks for the proper drive separator syntax (the colon) were made more correct.  

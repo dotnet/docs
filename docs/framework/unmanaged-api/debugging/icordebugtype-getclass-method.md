@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2644f48b-db3c-429f-ae62-76f1c98a1af5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType::GetClass Method
 Gets an interface pointer to an ICorDebugClass that represents the uninstantiated generic type.  

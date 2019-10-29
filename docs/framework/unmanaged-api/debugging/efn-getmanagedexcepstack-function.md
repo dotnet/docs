@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 21ceed9e-62b2-4024-b027-6d095109955a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \_EFN\_GetManagedExcepStack Function
 Given a managed exception object address, returns a string version of the stack trace contained inside.  

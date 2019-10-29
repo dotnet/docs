@@ -5,8 +5,6 @@ ms.date: "04/18/2019"
 helpviewer_keywords: 
   - "versions, .NET Framework"
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework versions and dependencies
 Each version of the .NET Framework contains the common language runtime (CLR), the base class libraries, and other managed libraries. This topic describes the key features of the .NET Framework by version, provides information about the underlying CLR versions and associated development environments, and identifies the versions that are installed by the Windows operating system.  

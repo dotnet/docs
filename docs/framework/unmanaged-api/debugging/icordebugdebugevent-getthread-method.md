@@ -2,8 +2,6 @@
 title: "ICorDebugDebugEvent::GetThread Method"
 ms.date: "03/30/2017"
 ms.assetid: 4f2e9a2c-8369-4a07-a881-ad5422626353
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDebugEvent::GetThread Method
 Gets the thread on which the event occurred.  

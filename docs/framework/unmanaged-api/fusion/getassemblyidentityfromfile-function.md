@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: 2c32da53-76c7-4048-84d0-d05207333004
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetAssemblyIdentityFromFile Function
 Gets a pointer to an `IUnknown` object with the specified `IID` in the assembly at the specified file path.  

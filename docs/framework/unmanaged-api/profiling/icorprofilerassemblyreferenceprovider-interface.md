@@ -10,8 +10,6 @@ api_type:
 ms.assetid: 17205116-66e1-4acc-8f01-532fb3867028
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerAssemblyReferenceProvider Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

@@ -2,8 +2,6 @@
 title: Cryptography breaking changes, version 2.2 to 3.0 - .NET Core
 description: Lists the breaking changes from version 2.2 to version 3.0 of .NET Core, ASP.NET Core, and EF Core.
 ms.date: "09/10/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Breaking changes for migration from Version 2.2 to 3.0
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: fbc418e8-fa22-420d-84ec-e0e1800db041
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue2::CreateHandle Method
 Creates a handle of the specified type for the heap value represented by this ICorDebugHeapValue2 object.  

@@ -2,8 +2,6 @@
 title: "Migrating Your Windows Store App to .NET Native"
 ms.date: "03/30/2017"
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Migrating Your Windows Store App to .NET Native
 

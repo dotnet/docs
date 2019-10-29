@@ -5,8 +5,6 @@ ms.date: 02/06/2019
 helpviewer_keywords: 
   - "expression-bodied members[C#]"
   - "C# language, expresion-bodied members"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Expression-bodied members (C# programming guide)
 

@@ -30,10 +30,7 @@ The `dotnet-trace` tool:
 * Is a cross-platform CLI global tool.
 * Enables the collection of .NET Core traces of a running process without a native profiler.
 * Is built around the cross-platform `EventPipe` technology of the .NET Core runtime.
-
-<!--  Let's delete this. We could say the same on any donet tool.
 * Delivers the same experience on Windows, Linux, or macOS.
--->
 
 ## Options
 

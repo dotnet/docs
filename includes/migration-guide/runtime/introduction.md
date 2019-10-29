@@ -1,6 +1,6 @@
 ## Introduction
 
-Runtime changes affect all apps that are running under a .NET Framework version that they were not compiled against and that use a particular feature.
+Runtime changes affect all apps that are running under a .NET Framework version that they weren't compiled against and that use a particular feature.
 
 In the topics that describe runtime changes, individual items are classified by their expected impact, as follows:
 

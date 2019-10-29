@@ -4,9 +4,231 @@
   href: application-compatibility.md
   items:
   - name: Runtime changes
-    href: runtime/index.md
+    items:
+    - name: Interactive
+      href: runtime/index.md
+    - name: Version 4.0 to version 4.5
+      href: runtime/4.0-4.5.md
+    - name: Version 4.0 to version 4.5.1
+      href: runtime/4.0-4.5.1.md
+    - name: Version 4.0 to version 4.5.2
+      href: runtime/4.0-4.5.2.md
+    - name: Version 4.0 to version 4.6
+      href: runtime/4.0-4.6.md
+    - name: Version 4.0 to version 4.6.1
+      href: runtime/4.0-4.6.1.md
+    - name: Version 4.0 to version 4.6.2
+      href: runtime/4.0-4.6.2.md
+    - name: Version 4.0 to version 4.7
+      href: runtime/4.0-4.7.md
+    - name: Version 4.0 to version 4.7.1
+      href: runtime/4.0-4.7.1.md
+    - name: Version 4.0 to version 4.7.2
+      href: runtime/4.0-4.7.2.md
+    - name: Version 4.0 to version 4.8
+      href: runtime/4.0-4.8.md
+    - name: Version 4.5 to version 4.5.1
+      href: runtime/4.5-4.5.1.md
+    - name: Version 4.5 to version 4.5.2
+      href: runtime/4.5-4.5.2.md
+    - name: Version 4.5 to version 4.6
+      href: runtime/4.5-4.6.md
+    - name: Version 4.5 to version 4.6.1
+      href: runtime/4.5-4.6.1.md
+    - name: Version 4.5 to version 4.6.2
+      href: runtime/4.5-4.6.2.md
+    - name: Version 4.5 to version 4.7
+      href: runtime/4.5-4.7.md
+    - name: Version 4.5 to version 4.7.1
+      href: runtime/4.5-4.7.1.md
+    - name: Version 4.5 to version 4.7.2
+      href: runtime/4.5-4.7.2.md
+    - name: Version 4.5 to version 4.8
+      href: runtime/4.5-4.8.md
+    - name: Version 4.5.1 to version 4.5.2
+      href: runtime/4.5.1-4.5.2.md
+    - name: Version 4.5.1 to version 4.6
+      href: runtime/4.5.1-4.6.md
+    - name: Version 4.5.1 to version 4.6.1
+      href: runtime/4.5.1-4.6.1.md
+    - name: Version 4.5.1 to version 4.6.2
+      href: runtime/4.5.1-4.6.2.md
+    - name: Version 4.5.1 to version 4.7
+      href: runtime/4.5.1-4.7.md
+    - name: Version 4.5.1 to version 4.7.1
+      href: runtime/4.5.1-4.7.1.md
+    - name: Version 4.5.1 to version 4.7.2
+      href: runtime/4.5.1-4.7.2.md
+    - name: Version 4.5.1 to version 4.8
+      href: runtime/4.5.1-4.8.md
+    - name: Version 4.5.2 to version 4.6
+      href: runtime/4.5.2-4.6.md
+    - name: Version 4.5.2 to version 4.6.1
+      href: runtime/4.5.2-4.6.1.md
+    - name: Version 4.5.2 to version 4.6.2
+      href: runtime/4.5.2-4.6.2.md
+    - name: Version 4.5.2 to version 4.7
+      href: runtime/4.5.2-4.7.md
+    - name: Version 4.5.2 to version 4.7.1
+      href: runtime/4.5.2-4.7.1.md
+    - name: Version 4.5.2 to version 4.7.2
+      href: runtime/4.5.2-4.7.2.md
+    - name: Version 4.5.2 to version 4.8
+      href: runtime/4.5.2-4.8.md
+    - name: Version 4.6 to version 4.6.1
+      href: runtime/4.6-4.6.1.md
+    - name: Version 4.6 to version 4.6.2
+      href: runtime/4.6-4.6.2.md
+    - name: Version 4.6 to version 4.7
+      href: runtime/4.6-4.7.md
+    - name: Version 4.6 to version 4.7.1
+      href: runtime/4.6-4.7.1.md
+    - name: Version 4.6 to version 4.7.2
+      href: runtime/4.6-4.7.2.md
+    - name: Version 4.6 to version 4.8
+      href: runtime/4.6-4.8.md
+    - name: Version 4.6.1 to version 4.6.2
+      href: runtime/4.6.1-4.6.2.md
+    - name: Version 4.6.1 to version 4.7
+      href: runtime/4.6.1-4.7.md
+    - name: Version 4.6.1 to version 4.7.1
+      href: runtime/4.6.1-4.7.1.md
+    - name: Version 4.6.1 to version 4.7.2
+      href: runtime/4.6.1-4.7.2.md
+    - name: Version 4.6.1 to version 4.8
+      href: runtime/4.6.1-4.8.md
+    - name: Version 4.6.2 to version 4.7
+      href: runtime/4.6.2-4.7.md
+    - name: Version 4.6.2 to version 4.7.1
+      href: runtime/4.6.2-4.7.1.md
+    - name: Version 4.6.2 to version 4.7.2
+      href: runtime/4.6.2-4.7.2.md
+    - name: Version 4.6.2 to version 4.8
+      href: runtime/4.6.2-4.8.md
+    - name: Version 4.7 to version 4.7.1
+      href: runtime/4.7-4.7.1.md
+    - name: Version 4.7 to version 4.7.2
+      href: runtime/4.7-4.7.2.md
+    - name: Version 4.7 to version 4.8
+      href: runtime/4.7-4.8.md
+    - name: Version 4.7.1 to version 4.7.2
+      href: runtime/4.7.1-4.7.2.md
+    - name: Version 4.7.1 to version 4.8
+      href: runtime/4.7.1-4.8.md
+    - name: Version 4.7.2 to version 4.8
+      href: runtime/4.7.2-4.8.md
   - name: Retargeting changes
-    href: retargeting/index.md
+    items:
+    - name: Interactive
+      href: retargeting/index.md
+    - name: Version 4.0 to version 4.5
+      href: retargeting/4.0-4.5.md
+    - name: Version 4.0 to version 4.5.1
+      href: retargeting/4.0-4.5.1.md
+    - name: Version 4.0 to version 4.5.2
+      href: retargeting/4.0-4.5.2.md
+    - name: Version 4.0 to version 4.6
+      href: retargeting/4.0-4.6.md
+    - name: Version 4.0 to version 4.6.1
+      href: retargeting/4.0-4.6.1.md
+    - name: Version 4.0 to version 4.6.2
+      href: retargeting/4.0-4.6.2.md
+    - name: Version 4.0 to version 4.7
+      href: retargeting/4.0-4.7.md
+    - name: Version 4.0 to version 4.7.1
+      href: retargeting/4.0-4.7.1.md
+    - name: Version 4.0 to version 4.7.2
+      href: retargeting/4.0-4.7.2.md
+    - name: Version 4.0 to version 4.8
+      href: retargeting/4.0-4.8.md
+    - name: Version 4.5 to version 4.5.1
+      href: retargeting/4.5-4.5.1.md
+    - name: Version 4.5 to version 4.5.2
+      href: retargeting/4.5-4.5.2.md
+    - name: Version 4.5 to version 4.6
+      href: retargeting/4.5-4.6.md
+    - name: Version 4.5 to version 4.6.1
+      href: retargeting/4.5-4.6.1.md
+    - name: Version 4.5 to version 4.6.2
+      href: retargeting/4.5-4.6.2.md
+    - name: Version 4.5 to version 4.7
+      href: retargeting/4.5-4.7.md
+    - name: Version 4.5 to version 4.7.1
+      href: retargeting/4.5-4.7.1.md
+    - name: Version 4.5 to version 4.7.2
+      href: retargeting/4.5-4.7.2.md
+    - name: Version 4.5 to version 4.8
+      href: retargeting/4.5-4.8.md
+    - name: Version 4.5.1 to version 4.5.2
+      href: retargeting/4.5.1-4.5.2.md
+    - name: Version 4.5.1 to version 4.6
+      href: retargeting/4.5.1-4.6.md
+    - name: Version 4.5.1 to version 4.6.1
+      href: retargeting/4.5.1-4.6.1.md
+    - name: Version 4.5.1 to version 4.6.2
+      href: retargeting/4.5.1-4.6.2.md
+    - name: Version 4.5.1 to version 4.7
+      href: retargeting/4.5.1-4.7.md
+    - name: Version 4.5.1 to version 4.7.1
+      href: retargeting/4.5.1-4.7.1.md
+    - name: Version 4.5.1 to version 4.7.2
+      href: retargeting/4.5.1-4.7.2.md
+    - name: Version 4.5.2 to version 4.6
+      href: retargeting/4.5.2-4.6.md
+    - name: Version 4.5.2 to version 4.6.1
+      href: retargeting/4.5.2-4.6.1.md
+    - name: Version 4.5.2 to version 4.6.2
+      href: retargeting/4.5.2-4.6.2.md
+    - name: Version 4.5.2 to version 4.7
+      href: retargeting/4.5.2-4.7.md
+    - name: Version 4.5.2 to version 4.7.1
+      href: retargeting/4.5.2-4.7.1.md
+    - name: Version 4.5.2 to version 4.7.2
+      href: retargeting/4.5.2-4.7.2.md
+    - name: Version 4.5.2 to version 4.8
+      href: retargeting/4.5.2-4.8.md
+    - name: Version 4.6 to version 4.6.1
+      href: retargeting/4.6-4.6.1.md
+    - name: Version 4.6 to version 4.6.2
+      href: retargeting/4.6-4.6.2.md
+    - name: Version 4.6 to version 4.7
+      href: retargeting/4.6-4.7.md
+    - name: Version 4.6 to version 4.7.1
+      href: retargeting/4.6-4.7.1.md
+    - name: Version 4.6 to version 4.7.2
+      href: retargeting/4.6-4.7.2.md
+    - name: Version 4.6 to version 4.8
+      href: retargeting/4.6-4.8.md
+    - name: Version 4.6.1 to version 4.6.2
+      href: retargeting/4.6.1-4.6.2.md
+    - name: Version 4.6.1 to version 4.7
+      href: retargeting/4.6.1-4.7.md
+    - name: Version 4.6.1 to version 4.7.1
+      href: retargeting/4.6.1-4.7.1.md
+    - name: Version 4.6.1 to version 4.7.2
+      href: retargeting/4.6.1-4.7.2.md
+    - name: Version 4.6.1 to version 4.8
+      href: retargeting/4.6.1-4.8.md
+    - name: Version 4.6.2 to version 4.7
+      href: retargeting/4.6.2-4.7.md
+    - name: Version 4.6.2 to version 4.7.1
+      href: retargeting/4.6.2-4.7.1.md
+    - name: Version 4.6.2 to version 4.7.2
+      href: retargeting/4.6.2-4.7.2.md
+    - name: Version 4.6.2 to version 4.8
+      href: retargeting/4.6.2-4.8.md
+    - name: Version 4.7 to version 4.7.1
+      href: retargeting/4.7-4.7.1.md
+    - name: Version 4.7 to version 4.7.2
+      href: retargeting/4.7-4.7.2.md
+    - name: Version 4.7 to version 4.8
+      href: retargeting/4.7-4.8.md
+    - name: Version 4.7.1 to version 4.7.2
+      href: retargeting/4.7.1-4.7.2.md
+    - name: Version 4.7.1 to version 4.8
+      href: retargeting/4.7.1-4.8.md
+    - name: Version 4.7.2 to version 4.8
+      href: retargeting/4.7.2-4.8.md
 - name: Version compatibility
   href: version-compatibility.md
 - name: Versions
@@ -16,7 +238,7 @@
   - name: Determine which .NET Framework versions are installed
     href: how-to-determine-which-versions-are-installed.md
     items:
-    - name: "Minimum values of the Release DWORD for .NET Framework versions"
+    - name: Minimum values of the Release DWORD for .NET Framework versions
       href: minimum-release-dword.md
   - name: Determine which .NET Framework updates are installed
     href: how-to-determine-which-net-framework-updates-are-installed.md

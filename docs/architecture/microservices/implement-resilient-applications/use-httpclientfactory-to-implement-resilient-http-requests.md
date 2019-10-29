@@ -15,7 +15,7 @@ As a first issue, while this class is disposable, using it with the `using` stat
 
 Therefore, `HttpClient` is intended to be instantiated once and reused throughout the life of an application. Instantiating an `HttpClient` class for every request will exhaust the number of sockets available under heavy loads. That issue will result in `SocketException` errors. Possible approaches to solve that problem are based on the creation of the `HttpClient` object as singleton or static, as explained in this [Microsoft article on HttpClient usage](../../../csharp/tutorials/console-webapiclient.md).
 
-But there’s a second issue with `HttpClient` that you can have when you use it as singleton or static object. In this case, a singleton or static `HttpClient` doesn't respect DNS changes, as explained in this [issue](https://github.com/dotnet/corefx/issues/11224) at the dotnet/corefx GitHub repository. 
+But there’s a second issue with `HttpClient` that you can have when you use it as singleton or static object. In this case, a singleton or static `HttpClient` doesn't respect DNS changes, as explained in this [issue](https://github.com/dotnet/corefx/issues/11224) at the dotnet/corefx GitHub repository.
 
 To address those mentioned issues and make the management of `HttpClient` instances easier, .NET Core 2.1 introduced a new `HttpClientFactory` that can also be used to implement resilient HTTP calls by integrating Polly with it.
 
@@ -57,7 +57,7 @@ In the next code, you can see how `AddHttpClient()` can be used to register Type
 
 ```csharp
 // Startup.cs
-//Add http client services at ConfigureServices(IServiceCollection services) 
+//Add http client services at ConfigureServices(IServiceCollection services)
 services.AddHttpClient<ICatalogService, CatalogService>();
 services.AddHttpClient<IBasketService, BasketService>();
 services.AddHttpClient<IOrderingService, OrderingService>();
@@ -70,7 +70,7 @@ You could also add instance-specific configuration in the registration to, for e
 ```csharp
 services.AddHttpClient<ICatalogService, CatalogService>(client =>
 {
-    client.BaseAddress = new Uri(Configuration["BaseUrl"])
+    client.BaseAddress = new Uri(Configuration["BaseUrl"]);
 })
     .AddPolicyHandler(GetRetryPolicy())
     .AddPolicyHandler(GetCircuitBreakerPolicy());
@@ -99,7 +99,7 @@ Pooling of handlers is desirable as each handler typically manages its own under
 The `HttpMessageHandler` objects in the pool have a lifetime that's the length of time that an `HttpMessageHandler` instance in the pool can be reused. The default value is two minutes, but it can be overridden per Typed Client. To override it, call `SetHandlerLifetime()` on the `IHttpClientBuilder` that's returned when creating the client, as shown in the following code:
 
 ```csharp
-//Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client 
+//Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client
 services.AddHttpClient<ICatalogService, CatalogService>()
     .SetHandlerLifetime(TimeSpan.FromMinutes(5));
 ```
@@ -121,10 +121,10 @@ public class CatalogService : ICatalogService
         _httpClient = httpClient;
     }
 
-    public async Task<Catalog> GetCatalogItems(int page, int take, 
+    public async Task<Catalog> GetCatalogItems(int page, int take,
                                                int? brand, int? type)
     {
-        var uri = API.Catalog.GetAllCatalogItems(_remoteServiceBaseUrl, 
+        var uri = API.Catalog.GetAllCatalogItems(_remoteServiceBaseUrl,
                                                  page, take, brand, type);
 
         var responseString = await _httpClient.GetStringAsync(uri);

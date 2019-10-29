@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 09/30/2019
+ms.date: 10/08/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
@@ -81,7 +81,7 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 ## Train the model
 
-The machine learning task used to train the price prediction model in this tutorial is binary classification. During the model training process, Model Builder trains separate models using different binary classification algorithms and settings to find the best performing model for your dataset.
+The machine learning task used to train the sentiment analysis model in this tutorial is binary classification. During the model training process, Model Builder trains separate models using different binary classification algorithms and settings to find the best performing model for your dataset.
 
 The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for **Time to train (seconds)** based on the size of your data source.
 

@@ -47,3 +47,7 @@ The root `Contacts` node has two `Contact` nodes. To access some specific data i
 List<XElement> contactNodes = contacts.Elements("Contact").ToList();
 Console.WriteLine(contactNodes[0]);
 ```
+
+## See also
+
+- [How to: Find an Element with a Specific Attribute (C#)](how-to-find-an-element-with-a-specific-attribute.md)

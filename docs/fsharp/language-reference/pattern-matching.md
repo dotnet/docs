@@ -1,7 +1,7 @@
 ---
 title: Pattern Matching
 description: Learn how patterns are used in F# to compare data with logical structures, decompose data into constituent parts, or extract information from data.
-ms.date: 05/16/2016
+ms.date: 10/27/2019
 ---
 # Pattern Matching
 
@@ -186,6 +186,20 @@ The type test pattern is used to match the input against a type. If the input ty
 The following example demonstrates the type test pattern.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4816.fs)]
+
+If you're only checking if an identifier is of a particular derived type, you don't need the `as identifier` part of the pattern, as shown in the following example:
+
+```fsharp
+type A() = class end
+type B() = inherit A()
+type C() = inherit A()
+
+let m (a: A) =
+    match a with
+    | :? B -> printfn "It's a B"
+    | :? C -> printfn "It's a C"
+    | _ -> ()
+```
 
 ## Null Pattern
 

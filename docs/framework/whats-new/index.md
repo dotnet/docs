@@ -425,7 +425,7 @@ You can add SameSite for <xref:System.Web.Security.FormsAuthentication> and <xre
          <!-- ...   -->
       </forms>
    <authentication />
-   <sessionSate cookieSameSite="Lax"></sessionState>
+   <sessionState cookieSameSite="Lax"></sessionState>
 </system.web>
 ```
 
@@ -537,7 +537,7 @@ public static event EventHandler<StaticResourceResolvedEventArgs> StaticResource
 ```
 
 ```vb
-Public Shared Event StaticResourceResolved As EventHandler(Of StaticResourceResolvedEventArgs)
+Public Shared Event StaticResourceResolved As EventHandler(Of StaticResourceResolvedEventArgs)
 ```
 
 This event is raised whenever the runtime resolves a [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference. The <xref:System.Windows.Diagnostics.StaticResourceResolvedEventArgs> arguments describe the resolution, and indicate the object and property that host the [StaticResource](../wpf/advanced/staticresource-markup-extension.md) reference and the <xref:Windows.UI.Xaml.ResourceDictionary> and key used for the resolution:

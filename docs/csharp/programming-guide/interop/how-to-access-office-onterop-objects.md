@@ -89,7 +89,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
      [!code-csharp[csProgGuideOfficeHowTo#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#14)]
 
-     C# 4, and later versions, converts the returned `Object` to `dynamic` automatically if the assembly is referenced by the [/link](../../language-reference/compiler-options/link-compiler-option.md) compiler option or, equivalently, if the Excel **Embed Interop Types** property is set to true. True is the default value for this property.
+     C# 4, and later versions, converts the returned `Object` to `dynamic` automatically if the assembly is referenced by the [-link](../../language-reference/compiler-options/link-compiler-option.md) compiler option or, equivalently, if the Excel **Embed Interop Types** property is set to true. True is the default value for this property.
 
 ## To run the project
 
@@ -143,7 +143,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 3. If you cannot see the **Properties** window, press **F4**.
 
-4. Find **Embed Interop Types** in the list of properties, and change its value to **False**. Equivalently, you can compile by using the [/reference](../../language-reference/compiler-options/reference-compiler-option.md) compiler option instead of [/link](../../language-reference/compiler-options/link-compiler-option.md) at a command prompt.
+4. Find **Embed Interop Types** in the list of properties, and change its value to **False**. Equivalently, you can compile by using the [-reference](../../language-reference/compiler-options/reference-compiler-option.md) compiler option instead of [-link](../../language-reference/compiler-options/link-compiler-option.md) at a command prompt.
 
 ## To add additional formatting to the table
 

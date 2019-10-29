@@ -1,4 +1,4 @@
-- name: Additional class libraries and APIs
+- name: Additional APIs
   href: index.md
   items:
   - name: Microsoft.SqlServer.Server
@@ -7,6 +7,12 @@
       items:
       - name: SmiOrderProperty.Item
         href: microsoft.sqlserver.server.smiorderproperty.item.md
+  - name: System
+    items:
+    - name: Exception Class
+      items:
+      - name: Exception.PrepForRemoting Method
+        href: system.exception.prepforremoting.md
   - name: System.Data.SqlTypes
     items:
     - name: SqlChars Class
@@ -49,6 +55,10 @@
       items:
       - name: m_ConnectionList Field
         href: m_connectionlist.md
+    - name: ConnectStream Class
+      items:
+      - name: Connection Property
+        href: system.net.connectstream.connection.md
     - name: CoreResponseData Class
       href: coreresponsedata.md
       items:
@@ -64,12 +74,26 @@
         href: httpwebrequest__coreresponse.md
       - name: _HttpResponse Field
         href: _httpresponse.md
+    - name: PooledStream Class
+      items:
+      - name: NetworkStream Property
+        href: system.net.pooledstream.networkstream.md
     - name: ServicePoint Class
       items:
       - name: m_ConnectionGroupList Field
         href: m_connectiongrouplist.md
       - name: s_ServicePointTable Field
         href: s_servicepointtable.md
+    - name: TlsStream Class
+      items:
+      - name: m_Worker Field
+        href: system.net.tlsstream.m_worker.md
+  - name: System.Net.Security
+    items:
+    - name: SslState Class
+      items:
+      - name: SslProtocol Property
+        href: system.net.security.sslstate.sslprotocol.md
   - name: System.Windows.Diagnostics
     items:
     - name: VisualDiagnostics Class
@@ -82,6 +106,30 @@
       href: datamemberfieldeditor-class.md
     - name: DataMemberListEditor class
       href: datamemberlisteditor-class.md
+  - name: System.Windows.Xps
+    items:
+    - name: XpsDocumentWriter
+      items:
+      - name: raise__WritingCancelled Method
+        href: xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
+      - name: raise__WritingCompleted Method 
+        href: xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
+      - name: raise__WritingPrintTicketRequired Method
+        href: xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
+      - name: raise__WritingProgressChanged
+        href: xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps.md
+      - name: _WritingCancelled
+        href: xpsdocumentwriter-writingcancelled-event-system-windows-xps.md
+      - name: _WritingCompleted
+        href: xpsdocumentwriter-writingcompleted-event-system-windows-xps.md
+      - name: _WritingProgressChanged
+        href: xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
+  - name: System.Xml
+    items:
+    - name: XmlReader Class
+      items:
+      - name: XmlReader.CreateSqlReader Method
+        href: system.xml.xmlreader.createsqlreader.md
   - name: adodb Namespace
     items:
     - name: Connection Interface
@@ -110,5 +158,3 @@
       href: stdole.stdfont.md
     - name: StdPicture Interface
       href: stdole.stdpicture.md
-
-

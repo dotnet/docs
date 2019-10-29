@@ -18,6 +18,6 @@ If analytic tracing is enabled in a Windows Communication Foundation (WCF) appli
   
 5. In Event Viewer, refresh the Analytic log and sort the events by Event ID.  Look for events with Event ID [214 - OperationCompleted](214-operationcompleted.md).  These events will show which operations have completed, and what the duration of the operation was.  The following event shows the duration of an Add operation.  
   
-    ```Output  
+    ```output  
     An OperationInvoker completed the call to the 'Add' method.  The method call duration was '3' ms.  
     ```

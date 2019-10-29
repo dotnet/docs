@@ -12,7 +12,7 @@ Causes the compiler to produce an assembly whose byte-for-byte output is identic
 
 ## Syntax
 
-```
+```console
 -deterministic
 ```
 

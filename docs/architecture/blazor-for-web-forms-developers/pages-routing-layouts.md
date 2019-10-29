@@ -60,9 +60,9 @@ The equivalent page in a Blazor app would look like this:
     <button @onclick="OnClick">Submit</button>
 </div>
 <div>
-    if (name != null)
+    @if (name != null)
     {
-        Hello @name
+        @:Hello @name
     }
 </div>
 
@@ -152,10 +152,10 @@ Returning a redirect response isn't typically possible in Blazor. Blazor doesn't
 
 Blazor provides a `NavigationManager` service that can be used to:
 
-* Get the current browser address
-* Get the base address
-* Trigger navigations
-* Get notified when the address changes
+- Get the current browser address
+- Get the base address
+- Trigger navigations
+- Get notified when the address changes
 
 To navigate to a different address, use the `NavigateTo` method:
 

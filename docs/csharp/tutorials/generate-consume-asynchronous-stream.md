@@ -2,6 +2,7 @@
 title: Generate and consume async streams
 description: This advanced tutorial illustrates scenarios where generating and consuming async streams provides a more natural way to work with sequences of data that may be generated asynchronously.
 ms.date: 02/10/2019
+ms.technology: csharp-async
 ms.custom: mvc
 ---
 # Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0
@@ -129,7 +130,7 @@ You can get the code for the finished tutorial from the [dotnet/samples](https:/
 
 ## Run the finished application
 
-Run the application again. Contrast its behavior with the behavior of the starter application. The first page of results is enumerated as soon as it's available. There's an observable pause as each new page is requested and retrieved, then the next page's results are quickly enumerated. The `try` / `catch` block isn't needed to handle cancellation: the caller can stop enumerating the collection. Progress is clearly reported because the async stream generates results as each page is downloaded.
+Run the application again. Contrast its behavior with the behavior of the starter application. The first page of results is enumerated as soon as it's available. There's an observable pause as each new page is requested and retrieved, then the next page's results are quickly enumerated. The `try` / `catch` block isn't needed to handle cancellation: the caller can stop enumerating the collection. Progress is clearly reported because the async stream generates results as each page is downloaded. The status for each issue returned is seamlessly included in the `await foreach` loop. You don't need a callback object to track progress.
 
 You can see improvements in memory use by examining the code. You no longer need to allocate a collection to store all the results before they're enumerated. The caller can determine how to consume the results and if a storage collection is needed.
 

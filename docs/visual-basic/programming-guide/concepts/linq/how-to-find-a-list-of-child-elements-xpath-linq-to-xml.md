@@ -36,7 +36,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Name>Ellen Adams</Name>  
 <Street>123 Maple Street</Street>  

@@ -176,7 +176,7 @@ The Command pattern is intrinsically related to the CQRS pattern that was introd
 
 As shown in Figure 7-24, the pattern is based on accepting commands from the client side, processing them based on the domain model rules, and finally persisting the states with transactions.
 
-![The high level view of the writes-side in CQRS: UI app sends a command through the API that gets to a CommandHandler, that depends on the Domain model and the Infrastructure to update the database.](./media/image21.png)
+![The high level view of the writes-side in CQRS: UI app sends a command through the API that gets to a CommandHandler, which depends on the Domain model and the Infrastructure to update the database.](./media/image21.png)
 
 **Figure 7-24**. High-level view of the commands or “transactional side” in a CQRS pattern
 
@@ -497,7 +497,7 @@ public async Task<IActionResult> ExecuteBusinessOperation([FromBody]RunOpCommand
 
 ### Implement idempotent Commands
 
-In **eShopOnContainers**, a more advanced example than the above is submitting a CreateOrderCommand object from the Ordering microservice. But since the Ordering business process is a bit more complex and, in our case, it actually starts in the Basket microservice, this action of submitting the CreateOrderCommand object is performed from an integration-event handler named >UserCheckoutAcceptedIntegrationEvent.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) instead of a simple WebAPI controller called from the client App as in the previous simpler example.
+In **eShopOnContainers**, a more advanced example than the above is submitting a CreateOrderCommand object from the Ordering microservice. But since the Ordering business process is a bit more complex and, in our case, it actually starts in the Basket microservice, this action of submitting the CreateOrderCommand object is performed from an integration-event handler named [UserCheckoutAcceptedIntegrationEventHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) instead of a simple WebAPI controller called from the client App as in the previous simpler example.
 
 Nevertheless, the action of submitting the Command to MediatR is pretty similar, as shown in the following code.
 

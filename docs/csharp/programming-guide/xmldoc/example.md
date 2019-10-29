@@ -24,7 +24,7 @@ ms.assetid: 32d6e73b-2554-4abb-83ee-a1e321334fd2
 ## Remarks  
  The \<example> tag lets you specify an example of how to use a method or other library member. This commonly involves using the [\<code>](./code.md) tag.  
   
- Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
  [!code-csharp[csProgGuideDocComments#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#3)]  

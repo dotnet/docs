@@ -40,7 +40,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 - If **Pretty listing (reformatting) of code** doesn't format continuation lines automatically, manually indent continuation lines one tab stop. However, always left-align items in a list.  
   
-    ```  
+    ```vb  
     a As Integer,  
     b As Integer  
     ```  

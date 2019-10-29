@@ -10,18 +10,18 @@ As you have noticed after reading the previous sections, Azure is an open cloud 
 As a *by-default* recommendation, the following is the main criteria recommended in this guidance:
 
 - **Single monolithic app:** Choose Azure App Service
-- **N-Tier app:** Choose orchestrators such as Azure Kubernetes Service (AKS)or App Service if you have a single or few back-end services
+- **N-Tier app:** Choose orchestrators such as Azure Kubernetes Service (AKS) or App Service if you have a single or a few back-end services
 - **Microservices:** Choose AKS or Azure Web Apps for Containers
 - **Serverless functions & event handlers:** Choose Azure Functions
 - **Large-scale Batch:** Choose Azure Batch
 
-However, this recommendation should be taken with a pinch of salt, as the product’s selection will depend on your specific application’s needs and characteristics. Not all applications are the same even when initially they might look similar types.
+However, this recommendation should be taken with a pinch of salt, as the product's selection will depend on your specific application’s needs and characteristics. Not all applications are the same even when initially they might look similar types.
 
 After a deeper analysis of the application’s needs, the product selected could be different. But, as a starting point, it is good to have initial guidance from where you can start evaluating and testing based on certain priority.
 
-In the next figure, you can see a breakdown of different kinds of apps and their ideal Azure hosting scenarios.
+In Figure 1, you can see a breakdown of different kinds of apps and their ideal Azure hosting scenarios.
 
-![](./media/image8.5.png)
+![Figure 1](./media/image8.5.png)
 
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

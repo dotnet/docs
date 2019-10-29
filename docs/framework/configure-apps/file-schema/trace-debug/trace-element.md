@@ -14,9 +14,9 @@ ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
 # \<trace> Element
 Contains listeners that collect, store, and route tracing messages.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<trace>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<trace>**  
   
 ## Syntax  
   

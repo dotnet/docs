@@ -19,7 +19,7 @@ Performs a logical conjunction on two `Boolean` expressions, or a bitwise conjun
   
 ## Syntax  
   
-```  
+```vb  
 result = expression1 And expression2  
 ```  
   

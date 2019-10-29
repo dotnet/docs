@@ -21,12 +21,12 @@ There are some restrictions on the expression that a method can return as a refe
 
 - The return value cannot be the literal `null`. Returning `null` generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
-   A method with a ref return can return an alias to a variable whose value is currently the null (uninstantiated) value or a [nullable type](../nullable-types/index.md) for a value type.
- 
+   A method with a ref return can return an alias to a variable whose value is currently the null (uninstantiated) value or a [nullable value type](../nullable-types/index.md) for a value type.
+
 - The return value cannot be a constant, an enumeration member, the by-value return value from a property, or a method of a `class` or `struct`. Violating this rule generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
 In addition, reference return values are not allowed on async methods. An asynchronous method may return before it has finished execution, while its return value is still unknown.
- 
+
 ## Defining a ref return value
 
 A method that returns a *reference return value* must satisfy the following two conditions:

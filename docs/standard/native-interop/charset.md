@@ -8,7 +8,7 @@ ms.date: 01/18/2019
 
 # Charsets and marshaling
 
-The way `char` values, `string` objects, and `System.Text.StringBuilder` objects are marshaled depends on the value of the `CharSet` field on either the P/Invoke or structure. You can set the `CharSet` of a P/Invoke by setting the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field when declaring your P/Invoke. To set the `CharSet` for a structure, set the <xref:System.Runtime.InteropServices.StructLayoutAttribute.CharSet?displayProperty=nameWithType> field on your struct declaration. When these attribute fields are not set, it is up to the language compiler to determine which `CharSet` to use. C# and VB use the <xref:System.Runtime.InteropServices.CharSet.Ansi> charset by default.
+The way `char` values, `string` objects, and `System.Text.StringBuilder` objects are marshaled depends on the value of the `CharSet` field on either the P/Invoke or structure. You can set the `CharSet` of a P/Invoke by setting the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field when declaring your P/Invoke. To set the `CharSet` for a type, set the <xref:System.Runtime.InteropServices.StructLayoutAttribute.CharSet?displayProperty=nameWithType> field on your class or struct declaration. When these attribute fields are not set, it is up to the language compiler to determine which `CharSet` to use. C# and VB use the <xref:System.Runtime.InteropServices.CharSet.Ansi> charset by default.
 
 The following table shows a mapping between each charset and how a character or string is represented when marshaled with that charset:
 

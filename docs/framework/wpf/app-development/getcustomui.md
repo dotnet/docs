@@ -21,7 +21,7 @@ HRESULT GetCustomUI( [out] BSTR* pwzProgressAssemblyName, [out] BSTR* pwzProgres
   
  `pwzProgressClassName`  
   
- [out] The name of the class that is the host-supplied progress user interface, preferably a [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] file with <xref:System.Windows.Controls.Page> is its top-level element. This class resides in the assembly that is specified by `pwzProgressAssemblyName`.  
+ [out] The name of the class that is the host-supplied progress user interface, preferably a XAML file with <xref:System.Windows.Controls.Page> is its top-level element. This class resides in the assembly that is specified by `pwzProgressAssemblyName`.  
   
  `pwzErrorAssemblyName`  
   

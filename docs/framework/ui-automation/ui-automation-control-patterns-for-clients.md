@@ -34,7 +34,7 @@ ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
   
 <a name="uiautomation_with_variable_patterns"></a>   
 ## Controls with Variable Patterns  
- Some control types support different patterns depending on their state or the manner in which the control is being used. Examples of controls that can have variable patterns are list views (thumbnails, tiles, icons, list, details), [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] Charts (Pie, Line, Bar, Cell Value with a formula), [!INCLUDE[TLA#tla_word](../../../includes/tlasharptla-word-md.md)]'s document area (Normal, Web Layout, Outline, Print Layout, Print Preview), and [!INCLUDE[TLA#tla_wmp](../../../includes/tlasharptla-wmp-md.md)] skins.  
+ Some control types support different patterns depending on their state or the manner in which the control is being used. Examples of controls that can have variable patterns are list views (thumbnails, tiles, icons, list, details), [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] Charts (Pie, Line, Bar, Cell Value with a formula), [!INCLUDE[TLA#tla_word](../../../includes/tlasharptla-word-md.md)]'s document area (Normal, Web Layout, Outline, Print Layout, Print Preview), and Microsoft Windows Media Player skins.  
   
  Controls implementing custom control types can have any set of control patterns that are needed to represent their functionality.  
   

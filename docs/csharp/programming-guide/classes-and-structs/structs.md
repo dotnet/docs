@@ -23,14 +23,14 @@ Structs share most of the same syntax as classes. The name of the struct must be
 - Structs can declare constructors that have parameters.
 - A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from <xref:System.ValueType>, which inherits from <xref:System.Object>.  
 - A struct can implement interfaces.
-- A struct cannot be `null`, and a struct variable cannot be assigned `null` unless the variable is declared as a nullable type.
+- A struct cannot be `null`, and a struct variable cannot be assigned `null` unless the variable is declared as a nullable value type.
   
 ## See also
 
 - [C# Programming Guide](../index.md)
 - [Classes and Structs](index.md)
 - [Classes](classes.md)
-- [Nullable Types](../nullable-types/index.md)
+- [Nullable value types](../nullable-types/index.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
 - [Using Structs](using-structs.md)
 - [How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method](how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md)

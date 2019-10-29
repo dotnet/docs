@@ -21,7 +21,7 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
 - Application configuration file (App.config). The configuration file provides the basic elements of a WCF service model with a secure HTTP binding. It also includes an endpoint for the service and enables metadata exchange.  
   
 > [!NOTE]
-> Visual Studio is configured to recognize the App.config file as the configuration file for the project when it is run using the [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md), which is the default configuration. If you host the service library in an executable, you have to move the configuration code to the configuration file of the executable, as configuration files for DLLs are not valid.  
+> Visual Studio is configured to recognize the App.config file as the configuration file for the project when it is run using the [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md), which is the default configuration. If you host the service library in an executable, you have to move the configuration code to the configuration file of the executable, as configuration files for DLLs are not valid.  
   
 ### WCF Service Application Template  
  The WCF Service Application template is available in the New Project dialog box under **Visual C#\WCF** and **Visual Basic\WCF**.  
@@ -58,7 +58,7 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
  Visual Studio designer is more responsive when XOML type workflows are used instead of code based ones. XOML workflow is the default workflow type to be created.  
   
 ### WCF Syndication Service Library Template  
- This template enables you to expose your feed in the RSS or ATOM format as a WCF service. For more information, see [WCF Syndication](../../../docs/framework/wcf/feature-details/wcf-syndication.md).  
+ This template enables you to expose your feed in the RSS or ATOM format as a WCF service. For more information, see [WCF Syndication](./feature-details/wcf-syndication.md).  
   
 #### Changing the Address of the Feed  
  The syndication template uses Internet Explorer during execution. When you right-click your project in **Solutions Explorer** in Visual Studio, select **Properties**, then select the **Debug** tab and you can see the default address of the template. Internet Explorer attempts to open the feed at this address.  
@@ -78,5 +78,5 @@ Windows Communication Foundation (WCF) Visual Studio templates are predefined pr
   
 ## See also
 
-- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
-- [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)
+- [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md)
+- [WCF Test Client (WcfTestClient.exe)](wcf-test-client-wcftestclient-exe.md)

@@ -36,7 +36,7 @@ Windows Forms
 
 - <xref:System.Windows.Forms.FolderBrowserDialog>
 
-<!-- 
+<!--
 
 ### Affected APIs
 

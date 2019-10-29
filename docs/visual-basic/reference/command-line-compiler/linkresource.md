@@ -15,9 +15,13 @@ Creates a link to a managed resource.
   
 ## Syntax  
   
-```  
+```console  
 -linkresource:filename[,identifier[,public|private]]  
-' -or-  
+```
+
+or  
+
+```console
 -linkres:filename[,identifier[,public|private]]  
 ```  
   

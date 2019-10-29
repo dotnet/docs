@@ -19,7 +19,7 @@ Therefore, a business microservice or Bounded Context is a logical architecture 
 
 As Figure 4-8 shows, the catalog business microservice could be composed of several services or processes. These could be multiple ASP.NET Web API services or any other kind of services using HTTP or any other protocol. More importantly, the services could share the same data, as long as these services are cohesive with respect to the same business domain.
 
-![Diagram of the Catalog business microservice, that contains an API service a search service and an SQL Server Database.](./media/image8.png)
+![Diagram of the Catalog business microservice with physical servers.](./media/logical-versus-physical-architecture/multiple-physical-services.png)
 
 **Figure 4-8**. Business microservice with several physical services
 

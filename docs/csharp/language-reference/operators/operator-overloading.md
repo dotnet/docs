@@ -10,18 +10,18 @@ helpviewer_keywords:
 ---
 # Operator overloading (C# reference)
 
-A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation when one or both of the operands are of that type. The [Overloadable operators](#overloadable-operators) section shows which C# operators can be overloaded.
+A user-defined type can overload a predefined C# operator. That is, a type can provide the custom implementation of an operation in case one or both of the operands are of that type. The [Overloadable operators](#overloadable-operators) section shows which C# operators can be overloaded.
 
 Use the `operator` keyword to declare an operator. An operator declaration must satisfy the following rules:
 
 - It includes both a `public` and a `static` modifier.
-- A unary operator takes one parameter. A binary operator takes two parameters. In each case, at least one parameter must have type `T` or `T?` where `T` is the type that contains the operator declaration.
+- A unary operator has one input parameter. A binary operator has two input parameters. In each case, at least one parameter must have type `T` or `T?` where `T` is the type that contains the operator declaration.
 
 The following example defines a simplified structure to represent a rational number. The structure overloads some of the [arithmetic operators](arithmetic-operators.md):
 
 [!code-csharp[fraction example](~/samples/csharp/language-reference/operators/OperatorOverloading.cs)]
 
-You could extend the preceding example by defining an implicit conversion from `int` to `Fraction`. Then, overloaded operators would support arguments of those two types. That is, it would become possible to add an integer to a fraction and obtain a fraction as a result.
+You could extend the preceding example by [defining an implicit conversion](user-defined-conversion-operators.md) from `int` to `Fraction`. Then, overloaded operators would support arguments of those two types. That is, it would become possible to add an integer to a fraction and obtain a fraction as a result.
 
 You also use the `operator` keyword to define a custom type conversion. For more information, see [User-defined conversion operators](user-defined-conversion-operators.md).
 

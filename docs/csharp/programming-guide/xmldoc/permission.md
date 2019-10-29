@@ -29,7 +29,7 @@ ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
 ## Remarks  
  The \<permission> tag lets you document the access of a member. The <xref:System.Security.PermissionSet> class lets you specify access to a member.  
   
- Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
  [!code-csharp[csProgGuideDocComments#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#8)]  

@@ -16,7 +16,7 @@ Performs an arithmetic right shift on a bit pattern.
   
 ## Syntax  
   
-```  
+```vb  
 result = pattern >> amount  
 ```  
   

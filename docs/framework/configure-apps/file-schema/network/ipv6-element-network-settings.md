@@ -12,10 +12,10 @@ ms.assetid: 10b79aef-327b-4718-a892-e11f55e4d169
 # \<ipv6> Element (Network Settings)
 Enables Internet Protocol version 6 (IPv6) responses from obsolete members of the <xref:System.Net.Dns> class.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<ipv6>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<ipv6>**  
   
 ## Syntax  
   

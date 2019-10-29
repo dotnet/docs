@@ -177,7 +177,7 @@ The following example illustrates this problem. It saves a single local date and
 
 When the data is restored on a system in the same time zone as the system on which it was serialized, the deserialized date and time values accurately reflect the original value, as the output shows:
 
-```
+```console
 '3/30/2013 6:00:00 PM' --> 3/30/2013 6:00:00 PM Unspecified
 '2013-03-30T18:00:00' --> 3/30/2013 6:00:00 PM Unspecified
 '2013-03-30T18:00:00.0000000-07:00' --> 3/30/2013 6:00:00 PM Local
@@ -187,7 +187,7 @@ When the data is restored on a system in the same time zone as the system on whi
 
 However, if you restore the data on a system in a different time zone, only the date and time value that was formatted with the "o" (round-trip) standard format string preserves time zone information and therefore represents the same instant in time. Here's the output when the date and time data is restored on a system in the Romance Standard Time zone:
 
-```
+```console
 '3/30/2013 6:00:00 PM' --> 3/30/2013 6:00:00 PM Unspecified
 '2013-03-30T18:00:00' --> 3/30/2013 6:00:00 PM Unspecified
 '2013-03-30T18:00:00.0000000-07:00' --> 3/31/2013 3:00:00 AM Local
@@ -212,7 +212,7 @@ The following example illustrates each technique.
 
 When the data is serialized on a system in the Pacific Standard Time zone and deserialized on a system in the Romance Standard Time zone, the example displays the following output:
 
-```
+```console
 '2013-03-30T18:00:00.0000000-07:00' --> 3/31/2013 3:00:00 AM Local
 'Sun, 31 Mar 2013 01:00:00 GMT' --> 3/31/2013 3:00:00 AM Local
 '2013-03-31 01:00:00Z' --> 3/31/2013 3:00:00 AM Local

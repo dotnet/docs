@@ -12,7 +12,7 @@ Specifies the code page to use for all source-code files in the compilation.
   
 ## Syntax  
   
-```  
+```console  
 -codepage:id  
 ```  
   

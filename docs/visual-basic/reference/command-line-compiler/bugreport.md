@@ -50,7 +50,7 @@ Creates a file that you can use when you file a bug report.
 ## Example  
  The following example compiles `T2.vb` and puts all bug-reporting information in the file `Problem.txt`.  
   
-```  
+```console  
 vbc -bugreport:problem.txt t2.vb  
 ```  
   

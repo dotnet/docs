@@ -37,7 +37,7 @@ Currently, the ML Tasks supported by the ML.NET CLI are:
 Example of usage:
 
 ```console
-> mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
+mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
 ```
 
 ![image](media/automate-training-with-cli/cli-model-generation.gif)

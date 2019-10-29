@@ -1,4 +1,4 @@
-### `Control.DefaultFont` changed to `Segoe UI 9pt` 
+### `Control.DefaultFont` changed to `Segoe UI 9pt`
 
 #### Change description
 

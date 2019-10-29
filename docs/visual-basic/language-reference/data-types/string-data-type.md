@@ -35,7 +35,7 @@ Holds sequences of unsigned 16-bit (2-byte) code points that range in value from
 ## Format Requirements  
  You must enclose a `String` literal within quotation marks (`" "`). If you must include a quotation mark as one of the characters in the string, you use two contiguous quotation marks (`""`). The following example illustrates this.  
   
-```  
+```vb  
 Dim j As String = "Joe said ""Hello"" to me."  
 Dim h As String = "Hello"  
 ' The following messages all display the same thing:  
@@ -52,7 +52,7 @@ MsgBox("Joe said """ & h & """ to me.")
   
  You can manipulate the contents of a `String` variable by using a variety of string functions. The following example illustrates the <xref:Microsoft.VisualBasic.Strings.Left%2A> function  
   
-```  
+```vb  
 Dim S As String = "Database"  
 ' The following statement sets S to a new string containing "Data".  
 S = Microsoft.VisualBasic.Left(S, 4)  

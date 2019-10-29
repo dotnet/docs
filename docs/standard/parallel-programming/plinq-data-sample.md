@@ -29,7 +29,7 @@ This sample contains example data in .csv format, together with methods that tra
   
 4. Press F5 to verify that the project builds and runs correctly. The following output should be displayed in the console window.  
   
-    ```  
+    ```console  
     Customer count: 50  
     Product count: 77  
     Order count: 190  
@@ -42,7 +42,7 @@ This sample contains example data in .csv format, together with methods that tra
   
 ## Data  
   
-```  
+```console  
 CUSTOMERS  
 ALFKI,Alfreds Futterkiste,Obere Str. 57,Berlin,12209  
 ANATR,Ana Trujillo Emparedados y helados,Avda. de la Constitución 2222,México D.F.,05021  

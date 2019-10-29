@@ -58,7 +58,7 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
   
      The following is an example of a nested query in a projection clause:  
   
-    ```  
+    ```sql  
     SELECT c, (SELECT c, (SELECT c FROM AdventureWorksModel.Vendor AS c  ) As Inner2   
         FROM AdventureWorksModel.JobCandidate AS c  ) As Inner1   
         FROM AdventureWorksModel.EmployeeDepartmentHistory AS c  

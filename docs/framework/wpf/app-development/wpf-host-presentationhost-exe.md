@@ -30,9 +30,9 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
   
 |Parameter|Description|  
 |---------------|-----------------|  
-|filename|The path of the file to be activated. Can also be a [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)].|  
+|filename|The path of the file to be activated. Can also be a URI.|  
 |-debug|When activating an application, does not commit it to or run it from the store. This only works when a local file is activated.|  
-|-debugSecurityZoneURL \<url>|Used with a [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)] value to indicate to PresentationHost.exe that an application should be debugged as if it were deployed from the specified [!INCLUDE[TLA2#tla_url](../../../../includes/tla2sharptla-url-md.md)]. This determines both the deployment zone and the site of origin.|  
+|-debugSecurityZoneURL \<url>|Used with a URL value to indicate to PresentationHost.exe that an application should be debugged as if it were deployed from the specified URL. This determines both the deployment zone and the site of origin.|  
 |-embedding|Required by OLE. If the `-event` or `-debug` parameter are specified, it is not necessary to specify the `-embedding` parameter, since that parameter is set internally.|  
 |-event \<eventname>|Open the event with this name and signal it when PresentationHost.exe is initialized and ready to host [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] content. PresentationHost.exe will terminate if there was an error opening the event, such as if it has not already been created.|  
 |-launchApplication \<url>|Launches a standalone ClickOnce application from the specified URL. Internet Explorer and WinINet security policy concerning .NET applications are applied.|  

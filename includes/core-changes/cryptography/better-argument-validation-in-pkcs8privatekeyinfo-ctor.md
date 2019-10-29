@@ -1,6 +1,6 @@
 ### Better argument validation in the Pkcs8PrivateKeyInfo constructor
 
-Starting with .NET Core 3.0 Preview 9, the `Pkcs8PrivateKeyInfo` constructor validates the `algorithmParameters` parameter as a single BER-encoded value. 
+Starting with .NET Core 3.0 Preview 9, the `Pkcs8PrivateKeyInfo` constructor validates the `algorithmParameters` parameter as a single BER-encoded value.
 
 #### Change description
 

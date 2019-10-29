@@ -14,13 +14,13 @@ ms.author: "ronpet"
 ---
 # How to: Determine which .NET Framework versions are installed
 
-Users can [install](https://docs.microsoft.com/dotnet/framework/install) and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer.
+Users can [install](../install/index.md) and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer.
 
 The .NET Framework consists of two main components, which are versioned separately:
 
 - A set of assemblies, which are collections of types and resources that provide the functionality for your apps. The .NET Framework and assemblies share the same version number.
 
-- The common language runtime (CLR), which manages and executes your app's code. The CLR is identified by its own version number (see [Versions and Dependencies](versions-and-dependencies.md)).
+- The common language runtime (CLR), which manages and executes your app's code. The CLR is identified by its own version number (see [Versions and dependencies](versions-and-dependencies.md)).
 
 > [!NOTE]
 > Each new version of the .NET Framework retains features from the previous versions and adds new features. You can load multiple versions of the .NET Framework on a single computer at the same time, which means that you can install the .NET Framework without having to uninstall previous versions. In general, you shouldn't uninstall previous versions of the .NET Framework, because an application you use may depend on a specific version and may break if that version is removed.
@@ -28,7 +28,7 @@ The .NET Framework consists of two main components, which are versioned separate
 > There is a difference between the .NET Framework version and the CLR version:
 >
 > - The .NET Framework version is based on the set of assemblies that form the .NET Framework class library. For example, .NET Framework versions include 4.5, 4.6.1, and 4.7.2.
->- The CLR version is based on the runtime on which .NET Framework applications execute. A single CLR version typically supports multiple .NET Framework versions. For example, CLR version 4.0.30319.*xxxxx* supports .NET Framework versions 4 through 4.5.2, where *xxxxx* is less than 42000, and CLR version 4.0.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6.
+> - The CLR version is based on the runtime on which .NET Framework applications execute. A single CLR version typically supports multiple .NET Framework versions. For example, CLR version 4.0.30319.*xxxxx* supports .NET Framework versions 4 through 4.5.2, where *xxxxx* is less than 42000, and CLR version 4.0.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6.
 >
 > For more information about versions, see [.NET Framework versions and dependencies](versions-and-dependencies.md).
 
@@ -85,7 +85,7 @@ The following table lists the value of the **Release** DWORD on individual opera
 |.NET Framework 4.7|On Windows 10 Creators Update: 460798<br />On all other Windows operating systems (including other Windows 10 operating systems): 460805|
 |.NET Framework 4.7.1|On Windows 10 Fall Creators Update and Windows Server, version 1709: 461308<br/>On all other Windows operating systems (including other Windows 10 operating systems): 461310|
 |.NET Framework 4.7.2|On Windows 10 April 2018 Update and Windows Server, version 1803: 461808<br/>On all Windows operating systems other than Windows 10 April 2018 Update and Windows Server, version 1803: 461814|
-|.NET Framework 4.8|On Windows 10 May 2019 Update: 528040<br/>On all others Windows operating systems (including other Windows 10 operating systems): 528049|
+|.NET Framework 4.8|On Windows 10 May 2019 Update and Windows 10 November 2019 Update: 528040<br/>On all other Windows operating systems (including other Windows 10 operating systems): 528049|
 
 You can use these values as follows:
 
@@ -125,12 +125,6 @@ This example follows the recommended practice for version checking:
 The following examples check the value of the **Release** entry to determine whether the .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
 
 ```PowerShell
-# PowerShell 5
- Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\' |  Get-ItemPropertyValue -Name Release | Foreach-Object { $_ -ge 394802 }
- ```
-
-```PowerShell
-# PowerShell 4
 (Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -ge 394802
 ```
 
@@ -178,7 +172,7 @@ The following example finds the .NET Framework 1&#8211;4 versions that are insta
 
 Use the [CLR Version tool (Clrver.exe)](../tools/clrver-exe-clr-version-tool.md) to determine which versions of the CLR are installed on a computer:
 
-- From a [Developer Command Prompt for Visual Studio](https://docs.microsoft.com/dotnet/framework/tools/developer-command-prompt-for-vs), enter `clrver`.
+- From a [Developer Command Prompt for Visual Studio](../tools/developer-command-prompt-for-vs.md), enter `clrver`.
 
     Sample output:
 

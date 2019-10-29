@@ -6,10 +6,10 @@ ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
 # \<add> Element for schemeSettings (Uri Settings)
 Adds a scheme setting for a scheme name.  
   
- \<configuration>  
-\<uri>  
-\<schemeSettings>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   

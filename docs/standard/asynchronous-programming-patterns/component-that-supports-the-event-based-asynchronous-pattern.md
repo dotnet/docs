@@ -85,7 +85,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
      You will receive two compiler warnings:  
   
-    ```  
+    ```console  
     warning CS0067: The event 'AsynchronousPatternExample.PrimeNumberCalculator.ProgressChanged' is never used  
     warning CS0067: The event 'AsynchronousPatternExample.PrimeNumberCalculator.CalculatePrimeCompleted' is never used  
     ```  
@@ -156,7 +156,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
      You will receive one compiler warning:  
   
-    ```  
+    ```console  
     warning CS0169: The private field 'AsynchronousPatternExample.PrimeNumberCalculator.workerDelegate' is never used  
     ```  
   

@@ -13,9 +13,9 @@ ms.assetid: c727b2e2-423a-4463-a223-013f40ff16a3
 # \<sources> Element
 Specifies trace sources that initiate tracing messages.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<sources>**  
   
 ## Syntax  
   

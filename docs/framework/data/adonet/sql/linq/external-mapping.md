@@ -31,8 +31,8 @@ ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
 > [!NOTE]
 > Visual Studio users will also find this XSD file in the XML Schemas dialog box as "LinqToSqlMapping.xsd". To use this file correctly for validating an external mapping file, see [How to: Validate DBML and External Mapping Files](how-to-validate-dbml-and-external-mapping-files.md).  
   
-```  
-?<?xml version="1.0" encoding="utf-16"?>  
+```xml  
+<?xml version="1.0" encoding="utf-16"?>  
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.microsoft.com/linqtosql/mapping/2007" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007"  
 elementFormDefault="qualified" >  
   <xs:element name="Database" type="Database" />  

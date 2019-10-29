@@ -20,7 +20,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # CloseCLREnumeration Function
-Closes any valid common language runtime (CLR) continue-startup events located in an array of handles returned by the [EnumerateCLRs function](../../../../docs/framework/unmanaged-api/debugging/enumerateclrs-function.md), and frees the memory for the handle and string path arrays.  
+Closes any valid common language runtime (CLR) continue-startup events located in an array of handles returned by the [EnumerateCLRs function](enumerateclrs-function.md), and frees the memory for the handle and string path arrays.  
   
 ## Syntax  
   
@@ -34,17 +34,17 @@ HRESULT CloseCLREnumeration (
   
 ## Parameters  
  `pHandleArray`  
- [in] Pointer to the array of event handles returned from the [EnumerateCLRs function](../../../../docs/framework/unmanaged-api/debugging/enumerateclrs-function.md).  
+ [in] Pointer to the array of event handles returned from the [EnumerateCLRs function](enumerateclrs-function.md).  
   
  `pStringArray`  
- [in] Pointer to the array of CLR string paths returned from the [EnumerateCLRs function](../../../../docs/framework/unmanaged-api/debugging/enumerateclrs-function.md).  
+ [in] Pointer to the array of CLR string paths returned from the [EnumerateCLRs function](enumerateclrs-function.md).  
   
  `dwArrayLength`  
  [in] DWORD that contains the size (length) of either `pHandleArray` or `pStringArray` (they are the same).  
   
 ## Return Value  
  S_OK  
- Handles opened by the [EnumerateCLRs function](../../../../docs/framework/unmanaged-api/debugging/enumerateclrs-function.md) are closed, and memory allocated for the handle and string arrays is freed.  
+ Handles opened by the [EnumerateCLRs function](enumerateclrs-function.md) are closed, and memory allocated for the handle and string arrays is freed.  
   
  E_INVALIDARG  
  The length of `pHandleArray` does not match the length that is passed in `dwArrayLength`.  
@@ -53,7 +53,7 @@ HRESULT CloseCLREnumeration (
  The function is unable to free the memory for `pHandleArray` and `pStringArray`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  
   

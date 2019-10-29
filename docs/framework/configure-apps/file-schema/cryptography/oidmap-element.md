@@ -12,10 +12,10 @@ ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
 # \<oidMap> Element
 Contains ASN.1 object identifier (OID) mappings to classes.  
   
- \<configuration>  
-\<mscorlib>  
-\<cryptographySettings>  
-\<oidMap>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<oidMap>**  
   
 ## Syntax  
   

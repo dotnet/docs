@@ -17,7 +17,7 @@ helpviewer_keywords:
 # DateTime and DateTimeOffset support in System.Text.Json
 
 The System.Text.Json library parses and writes <xref:System.DateTime> and <xref:System.DateTimeOffset> values according to the ISO 8601:-2019 extended profile.
-[Converters](https://docs.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1?view=netcore-3.0) provide custom support for serializing and deserializing with <xref:System.Text.Json.JsonSerializer>.
+[Converters](xref:System.Text.Json.Serialization.JsonConverter%601) provide custom support for serializing and deserializing with <xref:System.Text.Json.JsonSerializer>.
 Custom support can also be implemented when using <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter>.
 
 ## Support for the ISO 8601-1:2019 format
@@ -67,7 +67,7 @@ Attempting to read non-compliant formats with <xref:System.Text.Json.Utf8JsonRea
 ### When using <xref:System.Text.Json.JsonSerializer>
 
 If you want the serializer to perform custom parsing or formatting, you can implement
-[custom converters](https://docs.microsoft.com/dotnet/api/system.text.json.serialization.jsonconverter-1?view=netcore-3.0).
+[custom converters](xref:System.Text.Json.Serialization.JsonConverter%601).
 Here are a few examples:
 
 #### Using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`

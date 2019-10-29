@@ -12,10 +12,10 @@ ms.assetid: 6e5def51-3646-4ef6-a7bd-c69151321bec
 # \<servicePointManager> Element (Network Settings)
 Configures connections to network resources.  
   
- \<configuration>  
-\<system.net>  
-\<settings>  
-\<servicePointManager>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<settings>**](settings-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<servicePointManager>**  
   
 ## Syntax  
   

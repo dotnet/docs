@@ -12,10 +12,10 @@ ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
 # \<defaultHttpCachePolicy> Element (Network Settings)
 Describes whether HTTP caching is active and describes the default caching policy.  
   
- \<configuration>  
-\<system.net>  
-\<requestCaching>  
-\<defaultHttpCachePolicy>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<requestCaching>**](requestcaching-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultHttpCachePolicy>**  
   
 ## Syntax  
   

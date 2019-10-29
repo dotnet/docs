@@ -1,5 +1,5 @@
 ---
-title: Application Compatibility in the .NET Framework
+title: Runtime and retargeting changes - .NET Framework
 ms.date: 10/29/2019
 helpviewer_keywords:
   - "application compatibility"
@@ -17,26 +17,10 @@ Each app targets a specific version of the .NET Framework by:
 - Specifying the target framework in a project file.
 - Applying a <xref:System.Runtime.Versioning.TargetFrameworkAttribute> to the source code.
 
-The .NET Framework recognizes two types of changes:
+When migrating from one version of the .NET Framework to another, there are two types of changes to consider:
 
 - [Runtime changes](#runtime-changes)
 - [Retargeting changes](#retargeting-changes)
-
-## Impact classification
-
-In the topics that describe runtime and retargeting changes, for example, [Retargeting changes for migrating from 4.7.2 to 4.8](retargeting/4.7.2-4.8.md), individual items are classified by their expected impact as follows:
-
-**Major**\
-A significant change that affects a large number of apps or that requires substantial modification of code.
-
-**Minor**\
-A change that affects a small number of apps or that requires minor modification of code.
-
-**Edge case**\
-A change that affects apps under very specific scenarios that are not common.
-
-**Transparent**\
-A change that has no noticeable effect on the app's developer or user. The app should not require modification because of this change.
 
 ## Runtime changes
 
@@ -55,6 +39,22 @@ Retargeting changes are those that arise when an assembly is recompiled to targe
 To see a list of retargeting changes that apply to your environment, select the .NET Framework version you're currently targeting and then the version you wish to migrate to:
 
 [!INCLUDE[versionselector](../../../includes/migration-guide/retargeting/versionselector.md)]
+
+## Impact classification
+
+In the topics that describe runtime and retargeting changes, for example, [Retargeting changes for migrating from 4.7.2 to 4.8](retargeting/4.7.2-4.8.md), individual items are classified by their expected impact as follows:
+
+**Major**\
+A significant change that affects a large number of apps or that requires substantial modification of code.
+
+**Minor**\
+A change that affects a small number of apps or that requires minor modification of code.
+
+**Edge case**\
+A change that affects apps under very specific scenarios that are not common.
+
+**Transparent**\
+A change that has no noticeable effect on the app's developer or user. The app should not require modification because of this change.
 
 ## See also
 

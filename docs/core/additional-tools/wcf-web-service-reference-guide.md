@@ -1,8 +1,8 @@
 ---
 title: Add WCF Web Service Reference
 description: An overview of the Microsoft WCF Web Service Reference Provider Tool that adds functionality for .NET Core and ASP.NET Core projects, similar to Add Service Reference for .NET Framework projects.
-author: mlacouture
-ms.date: 04/19/2018
+author: dasetser
+ms.date: 10/29/2019
 ms.custom: "mvc, seodec18"
 ---
 
@@ -73,9 +73,15 @@ When these processes complete, you can create an instance of the generated WCF c
 
 ## Next steps
 
+### See also
+
+- [Get started with Windows Communication Foundation applications](https://docs.microsoft.com/en-us/dotnet/framework/wcf/getting-started-tutorial)
+- [Windows Communication Foundation Services and WCF data services in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)
+- [WCF Supported features on .NET Core](https://github.com/dotnet/wcf/blob/master/release-notes/SupportedFeatures-v2.1.0.md)
+
 ### Feedback & questions
 
-If you have any questions or feedback, [open an issue on GitHub](https://github.com/dotnet/wcf/issues/new). You can also review any existing questions or issues [at the WCF repo on GitHub](https://github.com/dotnet/wcf/issues?utf8=%E2%9C%93&q=is:issue%20label:tooling).
+If you have any questions or feedback, report it at [Visual Studio's developer community](https://developercommunity.visualstudio.com/).
 
 ### Release notes
 

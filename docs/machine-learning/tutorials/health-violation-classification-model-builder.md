@@ -70,7 +70,7 @@ To train your model, select from the list of available machine learning scenario
 
 ## Load the data
 
-Model Builder accepts data from two sources, a SQL Server database or a local file in `csv` or `tsv` format.
+Model Builder accepts data from a SQL Server database or a local file in `csv` or `tsv` format.
 
 1. In the data step of the Model Builder tool, select **SQL Server** from the data source dropdown.
 1. Select the button next to the **Connect to SQL Server database** text box.

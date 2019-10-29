@@ -1,6 +1,7 @@
 ---
 title: Upgrade APIs with attributes to define null expectations
 description: This article explains the motivations and techniques for adding descriptive attributes to describe the null state of arguments and return values from APIs
+ms.technology: csharp-null-safety
 ms.date: 07/31/2019
 ---
 # Update libraries to use nullable reference types and communicate nullable rules to callers

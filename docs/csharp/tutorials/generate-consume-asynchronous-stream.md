@@ -2,6 +2,7 @@
 title: Generate and consume async streams
 description: This advanced tutorial illustrates scenarios where generating and consuming async streams provides a more natural way to work with sequences of data that may be generated asynchronously.
 ms.date: 02/10/2019
+ms.technology: csharp-async
 ms.custom: mvc
 ---
 # Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0

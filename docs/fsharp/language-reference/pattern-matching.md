@@ -197,7 +197,7 @@ type C() = inherit A()
 let m (a: A) =
     match a with
     | :? B -> printfn "It's a B"
-    | :? C -> printfn "It's a B"
+    | :? C -> printfn "It's a C"
     | _ -> ()
 ```
 

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework deployment guide for developers
 This topic provides information for developers who want to install any version of the .NET Framework from .NET Framework 4.5 to [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.

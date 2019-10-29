@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: eab4bcf8-9f5f-4731-87d8-842748a6062a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # MissingInteropDataException Class (.NET Native)
 **.NET for Windows apps for Windows 10, .NET Native only**  

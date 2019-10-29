@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: fac2b1c6-6fa3-4818-805b-b63972024c86
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # NukeDownloadedCache Function
 Deletes the common language runtime (CLR) download cache.  

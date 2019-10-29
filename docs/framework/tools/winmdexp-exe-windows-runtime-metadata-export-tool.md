@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "Windows Runtime Metadata Export Tool"
   - "Winmdexp.exe"
 ms.assetid: d2ce0683-343d-403e-bb8d-209186f7a19d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Winmdexp.exe (Windows Runtime Metadata Export Tool)
 The Windows Runtime Metadata Export Tool (Winmdexp.exe) transforms a .NET Framework module into a file that contains Windows Runtime metadata. Although .NET Framework assemblies and Windows Runtime metadata files use the same physical format, there are differences in the content of the metadata tables, which means that .NET Framework assemblies are not automatically usable as Windows Runtime Components. The process of turning a .NET Framework module into a Windows Runtime component is referred to as *exporting*. In the .NET Framework 4.5 and .NET Framework 4.5.1, the resulting Windows metadata (.winmd) file contains both metadata and implementation.  

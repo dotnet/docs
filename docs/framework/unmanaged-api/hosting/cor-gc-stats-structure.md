@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8d4ff73e-739b-40f6-9349-359fbc99c2f9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_GC_STATS Structure
 Provides statistics about the garbage collection mechanism of the common language runtime (CLR).  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a71dbbd5-64b8-47eb-9f03-8e8c85fbe2bc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTask Interface
 Provides methods that allow the common language runtime (CLR) to communicate with the host to manage tasks.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 14a4e5a3-3eaf-4f53-9dd1-762726963a23
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::EnableLogMessages Method
 Enables and disables the transmission of log messages to the debugger.  

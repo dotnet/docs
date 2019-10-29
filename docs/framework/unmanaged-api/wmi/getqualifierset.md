@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetQualifierSet function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetQualifierSet function
 Retrieves the qualifier set for a class instance or a class definition.

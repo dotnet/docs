@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetNames function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetNames function
 Retrieves either a subset or all of the names of the properties of an object. 

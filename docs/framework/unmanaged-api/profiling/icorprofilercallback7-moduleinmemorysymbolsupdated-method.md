@@ -9,8 +9,6 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback7::ModuleInMemorySymbolsUpdated Method
 [Supported in the .NET Framework 4.6.1 and later versions]  

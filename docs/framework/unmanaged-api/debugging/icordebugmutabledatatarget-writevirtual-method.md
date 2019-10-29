@@ -2,8 +2,6 @@
 title: "ICorDebugMutableDataTarget::WriteVirtual Method"
 ms.date: "03/30/2017"
 ms.assetid: 80833648-58a7-491a-8dc8-9a48e9bb3adc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMutableDataTarget::WriteVirtual Method
 Writes memory into the target process address space.  

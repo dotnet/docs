@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b712d862-f2d0-4b55-87d4-65bbeadef982
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # GetHashFromBlob Function

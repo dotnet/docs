@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "JIT compilation, 64-bit"
   - "RyuJIT compiler"
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: New 64-bit JIT Compiler
 Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT compiler for just-in-time compilation. This change does not affect compilation with the  32-bit JIT compiler.  

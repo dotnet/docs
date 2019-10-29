@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8a4d9c86-b5ef-460a-9731-1d8c91b93a0b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishEnum::Reset Method
 Moves the cursor of to the beginning of the enumeration.  

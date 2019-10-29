@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5bbb8d1b-bbc4-47b0-b1b1-2d54cc0be291
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LogSwitchCallReason Enumeration
 Indicates the operation that was performed on a debugging/tracing switch.  

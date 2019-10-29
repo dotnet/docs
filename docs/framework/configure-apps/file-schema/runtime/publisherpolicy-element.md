@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "container tags, <publisherPolicy> element"
   - "<publisherPolicy> element"
 ms.assetid: 4613407e-d0a8-4ef2-9f81-a6acb9fdc7d4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<publisherPolicy> Element
 Specifies whether the runtime applies publisher policy.  

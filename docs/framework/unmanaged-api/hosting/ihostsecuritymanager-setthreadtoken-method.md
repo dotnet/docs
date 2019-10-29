@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e951c345-8a86-4587-911b-a1a57bc6428a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::SetThreadToken Method
 Sets a handle for the currently executing thread.  

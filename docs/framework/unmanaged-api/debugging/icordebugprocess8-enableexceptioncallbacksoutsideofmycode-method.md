@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode Method
 [Supported in the .NET Framework 4.6 and later versions]  

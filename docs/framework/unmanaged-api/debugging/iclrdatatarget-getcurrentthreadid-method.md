@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: dc9a0a6c-d592-4fb7-86ed-62684da3b0e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetCurrentThreadID Method
 Gets the operating system identifier for the current thread.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 52a80838-af36-4399-bc97-d8a4c6d76df2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame2 Interface
 Provides methods that test for child and parent frame relationships.  

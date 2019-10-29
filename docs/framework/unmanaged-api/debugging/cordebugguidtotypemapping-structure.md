@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: 57dbccd9-b16d-4da3-ae25-7a2cf9adf679
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugGuidToTypeMapping Structure
 Maps a Windows Runtime GUID to its corresponding ICorDebugType object.  

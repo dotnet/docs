@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0014bb66-590c-486c-9ade-f2133905cd99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyEnum::Clone Method
 Creates a shallow copy of this [IAssemblyEnum](iassemblyenum-interface.md) object.  

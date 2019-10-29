@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: e36e1fd8-8456-4359-bdc3-3ec1765f041f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateICeeFileGen Function
 Creates an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) object.  

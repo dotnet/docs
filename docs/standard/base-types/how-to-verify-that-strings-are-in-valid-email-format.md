@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "email [.NET Framework], validating"
   - "IsMatch method"
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Verify that strings are in valid email format
 

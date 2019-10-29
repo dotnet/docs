@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: acd74cb5-7e22-4a07-83c3-82288e1abd9f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::Bind Method
 Binds the specified handle to an I/O completion port that has been created by an earlier call to [CreateIoCompletionPort](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-createiocompletionport-method.md).  

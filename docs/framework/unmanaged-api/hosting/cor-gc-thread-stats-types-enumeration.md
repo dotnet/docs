@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: aa227704-0ab1-4b08-aee2-1f439762162e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_GC_THREAD_STATS_TYPES Enumeration
 Indicates the garbage collection statistics for a thread.  

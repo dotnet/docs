@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 24a8fcce-317e-48ff-aefc-d86123ada935
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::EditAndContinueRemap Method
 This method has been deprecated. It notifies the debugger that a remap event has been sent to the integrated development environment (IDE).  

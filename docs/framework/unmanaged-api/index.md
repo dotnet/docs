@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework]"
   - "unmanaged API reference [.NET Framework]"
 ms.assetid: 9aa000ee-c04c-492c-ae4f-83ecdf4fdbbe
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Unmanaged API Reference
 This section includes information on unmanaged APIs that can be used by managed-code-related applications, such as runtime hosts, compilers, disassemblers, obfuscators, debuggers, and profilers.  

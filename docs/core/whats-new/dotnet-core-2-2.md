@@ -4,8 +4,6 @@ description: Learn about the new features found in .NET Core 2.2.
 dev_langs:
   - "csharp"
   - "vb"
-author: rpetrusha
-ms.author: ronpet
 ms.date: 12/04/2018
 ---
 

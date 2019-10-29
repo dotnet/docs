@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "Type Library Exporter"
   - "type libraries [.NET Framework], exporting"
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Tlbexp.exe (Type Library Exporter)
 The Type Library Exporter generates a type library that describes the types defined in a common language runtime assembly.  

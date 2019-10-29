@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "cheat sheet"
   - ".NET Framework regular expressions, language elements"
 ms.assetid: 930653a6-95d2-4697-9d5a-52d11bb6fd4c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Regular Expression Language - Quick Reference
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 678f89f9-cce7-46d1-af87-5e989abaa93c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread2 Interface
 Serves as a logical extension to the ICorDebugThread interface.  

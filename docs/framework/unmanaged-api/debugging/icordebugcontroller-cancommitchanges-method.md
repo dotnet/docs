@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7050e94b-f197-4ffd-88fa-ed2ecdf19663
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::CanCommitChanges Method
 

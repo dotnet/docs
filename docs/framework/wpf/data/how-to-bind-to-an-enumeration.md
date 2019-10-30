@@ -18,5 +18,5 @@ This example shows how to bind to an enumeration by binding to the enumeration's
 ## See also
 
 - [Bind to a Method](how-to-bind-to-a-method.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
 - [How-to Topics](data-binding-how-to-topics.md)

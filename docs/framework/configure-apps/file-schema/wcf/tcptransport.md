@@ -67,7 +67,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  This transport uses URIs of the form "net.tcp://hostname:port/path". Other URI components are optional.  

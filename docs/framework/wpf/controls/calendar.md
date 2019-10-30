@@ -48,4 +48,4 @@ Calendar controls
 ## See also
 
 - [Controls](index.md)
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)

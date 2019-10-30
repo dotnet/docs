@@ -102,6 +102,6 @@ Defines a binding for peer channel specific TCP messaging.
 - [Bindings](../../../wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)
 - [Net Peer TCP](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751426(v=vs.90))
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)

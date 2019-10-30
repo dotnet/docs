@@ -29,4 +29,4 @@ The second list box binds to that collection because its <xref:System.Windows.Co
 - [Make Data Available for Binding in XAML](how-to-make-data-available-for-binding-in-xaml.md)
 - [Bind to a Collection and Display Information Based on Selection](how-to-bind-to-a-collection-and-display-information-based-on-selection.md)
 - [What's New in WPF Version 4.5](../getting-started/whats-new.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)

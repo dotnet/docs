@@ -141,7 +141,7 @@ To test this example, you will need to adjust the DGGroupSortFilterExample name 
 
 ## See also
 
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
 - [Create and Bind to an ObservableCollection](../data/how-to-create-and-bind-to-an-observablecollection.md)
 - [Filter Data in a View](../data/how-to-filter-data-in-a-view.md)
 - [Sort Data in a View](../data/how-to-sort-data-in-a-view.md)

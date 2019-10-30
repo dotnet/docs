@@ -44,4 +44,4 @@ To run this code, copy and paste the class into a C# console application  with a
 
 - [C# Programming Guide](../index.md)
 - [Anonymous Types](./anonymous-types.md)
-- [LINQ Query Expressions](../linq-query-expressions/index.md)
+- [LINQ Query Expressions](/dotnet/csharp/linq/index)

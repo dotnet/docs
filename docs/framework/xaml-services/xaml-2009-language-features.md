@@ -28,4 +28,4 @@ XAML 2009 is the shorthand term for new XAML language features that extend the e
   
 ## See also
 
-- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)
+- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)

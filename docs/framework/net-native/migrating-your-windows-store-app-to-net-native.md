@@ -47,7 +47,7 @@ ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
 
 For example, data binding requires an app to be able to map property names to functions. In .NET for Windows Store apps, the common language runtime automatically uses reflection to provide this capability for managed types and publicly available native types. In .NET Native, the compiler automatically includes metadata for types to which you bind data.
 
-The .NET Native compiler can also handle commonly used generic types such as <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602>, which work without requiring any hints or directives. The [dynamic](../../csharp/language-reference/keywords/dynamic.md) keyword is also supported within certain limits.
+The .NET Native compiler can also handle commonly used generic types such as <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602>, which work without requiring any hints or directives. The [dynamic](/dotnet/csharp/language-reference/builtin-types/reference-types) keyword is also supported within certain limits.
 
 > [!NOTE]
 > You should test all dynamic code paths thoroughly when porting your app to .NET Native.

@@ -47,4 +47,4 @@ Console.WriteLine(e);
   
 ## See also
 
-- [Parsing XML (C#)](./parsing-xml.md)
+- [Parsing XML (C#)](/dotnet/csharp/programming-guide/concepts/linq/how-to-parse-a-string)

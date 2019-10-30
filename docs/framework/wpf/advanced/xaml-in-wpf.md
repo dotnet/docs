@@ -38,5 +38,5 @@ ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
 [Events](events-wpf.md)  
 [Input](input-wpf.md)  
 [Resources](resources-wpf.md)  
-[Styling and Templating](../controls/styling-and-templating.md)  
+[Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)  
 [Threading Model](threading-model.md)

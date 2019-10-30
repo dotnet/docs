@@ -30,7 +30,7 @@ Nested types in the same body can also access those private members.
 
 It is a compile-time error to reference a private member outside the class or the struct in which it is declared.
 
-For a comparison of `private` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md) and [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
+For a comparison of `private` with the other access modifiers, see [Accessibility Levels](accessibility-levels.md) and [Access Modifiers](../../programming-guide/classes-and-structs/access-/dotnet/csharp/language-reference/keywords).
 
 ## Example
 
@@ -47,9 +47,9 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Access Modifiers](access-modifiers.md)
+- [Access Modifiers](access-/dotnet/csharp/language-reference/keywords)
 - [Accessibility Levels](accessibility-levels.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](/dotnet/csharp/language-reference/keywords)
 - [public](public.md)
 - [protected](protected.md)
 - [internal](internal.md)

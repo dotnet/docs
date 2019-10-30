@@ -48,6 +48,6 @@ ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 ## See also
 
 - <xref:System.Windows.ResourceDictionary>
-- [XAML Resources](xaml-resources.md)
+- [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
 - [Resources and Code](resources-and-code.md)
 - [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)

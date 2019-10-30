@@ -28,7 +28,7 @@ The BCL provides the most foundational types and utility functionality and are t
 * <xref:System.Byte?displayProperty=nameWithType> ([byte](../csharp/language-reference/builtin-types/integral-numeric-types.md)) - An unsigned 8-bit integer that represents a byte of memory.
 * <xref:System.Boolean?displayProperty=nameWithType> ([bool](../csharp/language-reference/keywords/bool.md)) - A boolean type that represents `true` or `false`.
 * <xref:System.Char?displayProperty=nameWithType> ([char](../csharp/language-reference/keywords/char.md)) - A 16-bit numeric type that represents a Unicode character.
-* <xref:System.String?displayProperty=nameWithType> ([string](../csharp/language-reference/keywords/string.md)) - Represents a series of characters. Different than a `char[]`, but enables indexing into each individual `char` in the `string`.
+* <xref:System.String?displayProperty=nameWithType> ([string](/dotnet/csharp/language-reference/builtin-types/reference-types)) - Represents a series of characters. Different than a `char[]`, but enables indexing into each individual `char` in the `string`.
 
 ## Data Structures
 

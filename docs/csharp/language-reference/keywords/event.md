@@ -47,5 +47,5 @@ The `event` keyword is used to declare an event in a publisher class.
 - [C# Keywords](./index.md)
 - [add](./add.md)
 - [remove](./remove.md)
-- [Modifiers](./modifiers.md)
+- [Modifiers](/dotnet/csharp/language-reference/keywords)
 - [How to: Combine Delegates (Multicast Delegates)](../../programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

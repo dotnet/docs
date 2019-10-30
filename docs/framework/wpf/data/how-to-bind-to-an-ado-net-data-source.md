@@ -35,5 +35,5 @@ The `IntColorConverter` converts an `int` to a color. With the use of this conve
 ## See also
 
 - <xref:System.Windows.Data.BindingListCollectionView>
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
 - [How-to Topics](data-binding-how-to-topics.md)

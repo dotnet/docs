@@ -21,7 +21,7 @@ ms.assetid: a7ea3421-1cf4-4df7-832a-aa22fe6379e9
 # Basic LINQ Query Operations (C#)
 This topic gives a brief introduction to [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions and some of the typical kinds of operations that you perform in a query. More detailed information is in the following topics:  
   
- [LINQ Query Expressions](../../linq-query-expressions/index.md)  
+ [LINQ Query Expressions](/dotnet/csharp/linq/index)  
   
  [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)  
   
@@ -95,7 +95,7 @@ from order in Customer.Orders...
   
 ## See also
 
-- [LINQ Query Expressions](../../linq-query-expressions/index.md)
+- [LINQ Query Expressions](/dotnet/csharp/linq/index)
 - [Walkthrough: Writing Queries in C#](./walkthrough-writing-queries-linq.md)
 - [Query Keywords (LINQ)](../../../language-reference/keywords/query-keywords.md)
 - [Anonymous Types](../../classes-and-structs/anonymous-types.md)

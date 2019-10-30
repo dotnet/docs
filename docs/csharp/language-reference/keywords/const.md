@@ -63,5 +63,5 @@ This example demonstrates how to use constants as local variables.
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
-- [Modifiers](./modifiers.md)
+- [Modifiers](/dotnet/csharp/language-reference/keywords)
 - [readonly](./readonly.md)

@@ -444,7 +444,7 @@ For more information, see:
 
 - [Delegates](../delegates/index.md)
 
-- [delegate](../../language-reference/keywords/delegate.md)
+- [delegate](/dotnet/csharp/language-reference/builtin-types/reference-types)
 
 ## See also
 

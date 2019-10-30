@@ -8,7 +8,7 @@ ms.date: 05/16/2016
 This topic describes the types that are used in F# and how F# types are named and described.
 
 ## Summary of F# Types
-Some types are considered *primitive types*, such as the Boolean type `bool` and integral and floating point types of various sizes, which include types for bytes and characters. These types are described in [Primitive Types](primitive-types.md).
+Some types are considered *primitive types*, such as the Boolean type `bool` and integral and floating point types of various sizes, which include types for bytes and characters. These types are described in [Primitive Types](/dotnet/fsharp/language-reference/basic-types).
 
 Other types that are built into the language include tuples, lists, arrays, sequences, records, and discriminated unions. If you have experience with other .NET languages and are learning F#, you should read the topics for each of these types. Links to more information about these types are included in the [Related Topics](https://msdn.microsoft.com/library/#rel) section of this topic. These F#-specific types support styles of programming that are common to functional programming languages. Many of these types have associated modules in the F# library that support common operations on these types.
 
@@ -47,7 +47,7 @@ The following table shows aspects of the type syntax for F# types.
 
 |Topic|Description|
 |-----|-----------|
-|[Primitive Types](primitive-types.md)|Describes built-in simple types such as integral types, the Boolean type, and character types.|
+|[Primitive Types](/dotnet/fsharp/language-reference/basic-types)|Describes built-in simple types such as integral types, the Boolean type, and character types.|
 |[Unit Type](unit-type.md)|Describes the `unit` type, a type that has one value and that is indicated by (); equivalent to `void` in C# and `Nothing` in Visual Basic.|
 |[Tuples](tuples.md)|Describes the tuple type, a type that consists of associated values of any type grouped in pairs, triples, quadruples, and so on.|
 |[Options](options.md)|Describes the option type, a type that may either have a value or be empty.|

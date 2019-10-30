@@ -25,5 +25,5 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   <xref:System.Windows.Controls.GridView>  
   
 ## Related Sections  
- [Data Binding Overview](../data/data-binding-overview.md)  
+ [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)  
   [Data Templating Overview](../data/data-templating-overview.md)

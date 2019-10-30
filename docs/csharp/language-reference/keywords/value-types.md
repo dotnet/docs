@@ -34,11 +34,11 @@ Each value type has an implicit parameterless constructor that initializes the d
 
 The *simple types* are a set of predefined struct types provided by C# and comprise the following types:
 
-- [Integral types](../builtin-types/integral-numeric-types.md): integer numeric types and the [char](char.md) type
-- [Floating-point types](../builtin-types/floating-point-numeric-types.md)
+- [Integral types](../builtin-types/integral-numeric-/dotnet/csharp/language-reference/keywords): integer numeric types and the [char](char.md) type
+- [Floating-point types](../builtin-types/floating-point-numeric-/dotnet/csharp/language-reference/keywords)
 - [bool](bool.md)
 
-The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](../builtin-types/integral-numeric-types.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
+The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](../builtin-types/integral-numeric-/dotnet/csharp/language-reference/keywords) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
 
 The simple types differ from other struct types in that they permit certain additional operations:
 
@@ -48,7 +48,7 @@ The simple types differ from other struct types in that they permit certain addi
 
 - Constant expressions, whose operands are all simple type constants, are evaluated at compile time.
 
-For more information, see the [Simple types](~/_csharplang/spec/types.md#simple-types) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Simple types](~/_csharplang/spec//dotnet/csharp/language-reference/keywords#simple-types) section of the [C# language specification](../language-specification/index.md).
 
 ## Initializing value types
 
@@ -101,6 +101,6 @@ For information about formatting the output of numeric types, see [Formatting nu
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Types](types.md)
-- [Reference types](reference-types.md)
+- [Types](/dotnet/csharp/language-reference/keywords)
+- [Reference types](reference-/dotnet/csharp/language-reference/keywords)
 - [Nullable value types](../../programming-guide/nullable-types/index.md)

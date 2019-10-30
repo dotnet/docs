@@ -17,7 +17,7 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
  [!code-csharp[csProgGuideDelegates#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#32)]  
   
- In C# 2.0 and later, it is also possible to use an anonymous method to declare and initialize a [delegate](../../language-reference/keywords/delegate.md), as shown in the following example.  
+ In C# 2.0 and later, it is also possible to use an anonymous method to declare and initialize a [delegate](/dotnet/csharp/language-reference/builtin-types/reference-types), as shown in the following example.  
   
  [!code-csharp[csProgGuideDelegates#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#15)]  
   

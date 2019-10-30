@@ -23,7 +23,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 <a name="Prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you have read the [XAML Overview (WPF)](xaml-overview-wpf.md) and have some basic knowledge of the CLR and object-oriented programming.  
+ This topic assumes that you have read the [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml) and have some basic knowledge of the CLR and object-oriented programming.  
   
 <a name="codebehind_and_the_xaml_language"></a>   
 ## Code-Behind and the XAML Language  
@@ -54,7 +54,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 ## See also
 
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
 - [x:Code Intrinsic XAML Type](../../xaml-services/x-code-intrinsic-xaml-type.md)
 - [Building a WPF Application](../app-development/building-a-wpf-application-wpf.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)

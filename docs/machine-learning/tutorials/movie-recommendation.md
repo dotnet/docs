@@ -98,7 +98,7 @@ You want to predict movie ratings, so the rating column is the `Label`. The othe
 | `movieId`      |               |
 | `timestamp`     |               |
 
-It's up to you to decide which `Features` are used to predict the `Label`. You can also use methods like [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md) to help with selecting the best `Features`.
+It's up to you to decide which `Features` are used to predict the `Label`. You can also use methods like [Feature Permutation Importance](/dotnet/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net) to help with selecting the best `Features`.
 
 In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction:
 
@@ -424,7 +424,7 @@ In this tutorial, you only use the three `Features` (`user id`, `movie id`, and 
 
 While this is a good start, in reality you might want to add other attributes or `Features` (for example, age, gender, geo-location, etc.) if they are included in the dataset. Adding more relevant `Features` can help improve the performance of your recommendation model.
 
-If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md), which ML.NET provides to discover the most influential `Features`.
+If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [Feature Permutation Importance](/dotnet/machine-learning/how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net), which ML.NET provides to discover the most influential `Features`.
 
 ### Algorithm hyperparameters
 

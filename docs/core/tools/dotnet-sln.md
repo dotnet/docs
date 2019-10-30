@@ -64,7 +64,7 @@ dotnet sln add [-h|--help]
 
 - **`PROJECT_PATH`**
 
-  The path to the project to add to the solution. Add multiple projects by adding one after the other separated by spaces. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are also supported on Unix/Linux-based terminals.
+  The path to the project to add to the solution. Add multiple projects by adding one after the other separated by spaces. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 
@@ -99,7 +99,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`PROJECT_PATH`**
 
-  The path to the project to remove from the solution. Remove multiple projects by adding one after the other separated by spaces. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are also supported on Unix/Linux-based terminals.
+  The path to the project to remove from the solution. Remove multiple projects by adding one after the other separated by spaces. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 
@@ -155,17 +155,14 @@ Remove multiple C# projects from a solution:
 dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj
 ```
 
-Add multiple C# projects to a solution using a globbing pattern:
+Add multiple C# projects to a solution using a globbing pattern (Unix/Linux only):
 
 ```dotnetcli
 dotnet sln todo.sln add **/*.csproj
 ```
 
-Remove multiple C# projects from a solution using a globbing pattern:
+Remove multiple C# projects from a solution using a globbing pattern (Unix/Linux only):
 
 ```dotnetcli
 dotnet sln todo.sln remove **/*.csproj
 ```
-
-> [!NOTE]
-> Globbing is not a CLI feature but rather a feature of the command shell. To successfully expand the files, you must use a shell that supports globbing. For more information about globbing, see [Wikipedia](https://en.wikipedia.org/wiki/Glob_(programming)).

@@ -102,7 +102,7 @@ If you receive a `'spark-submit' is not recognized as an internal or external co
 
 **Note:** If you are using a different version of Hadoop (which is annotated at the end of your Spark install folder name), you'll need to [select a version of WinUitls](https://github.com/steveloughran/winutils) compatible with your version of Hadoop. 
 
-### 7. Set DOTNET_WORKER_DIR & Check Dependencies
+### 7. Set DOTNET_WORKER_DIR and check dependencies
 
 Run the following command to set the `DOTNET_WORKER_DIR` Environment Variable. This is used by .NET apps to locate .NET for Apache Spark:
 
@@ -112,7 +112,7 @@ Finally, double-check that you can run `dotnet`, `java`, `mvn`, `spark-shell` fr
 
 ## Write a .NET for Apache Spark app
 
-### 1. Create a Console App
+### 1. Create a console app
 
 In your command prompt, run the following commands to create a new console application:
 
@@ -123,13 +123,13 @@ cd mySparkApp
 
 The `dotnet` command creates a `new` application of type `console` for you. The `-o` parameter creates a directory named mySparkApp where your app is stored, and populates it with the required files. The `cd mySparkApp` command puts you into the newly created app directory.
 
-### 2. Install NuGet Package
+### 2. Install NuGet package
 
 To use .NET for Apache Spark in an app, you need to install the Microsoft.Spark package. In your command prompt, run the following command:
 
 `dotnet add package Microsoft.Spark --version 0.6.0`
 
-### 3. Code Your App
+### 3. Code your app
 
 Open `Program.cs` in Visual Studio or any text editor and replace all of the code with the following:
 
@@ -170,7 +170,7 @@ namespace MySparkApp
 }
 ```
 
-### 4. Add Data File
+### 4. Add data file
 
 Your app will be processing a file containing lines of text. Create an `input.txt` file in your `mySparkApp` directory, containing the following text:
 

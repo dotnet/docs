@@ -104,14 +104,6 @@ Run the following command to set the `DOTNET_WORKER_DIR` Environment Variable. T
 
 Finally, double-check that you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line before you move to the next section.
 
-## Clone the .NET for Apache Spark GitHub repo
-
-Use the following [GitBash](https://gitforwindows.org/) command to clone the .NET for Apache Spark repo to your machine.
-
-```bash
-git clone https://github.com/dotnet/spark.git c:\github\dotnet-spark
-```
-
 ## Write a .NET for Apache Spark app
 
 1. Open **Visual Studio** and navigate to **File > Create New Project > Console App (.NET Core)**. Name the application **HelloSpark**.

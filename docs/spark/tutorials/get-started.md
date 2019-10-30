@@ -25,7 +25,13 @@ Before you begin writing your app, you need to setup some prerequisite dependenc
 
 ### 1. Install .NET
 
-Download and install the [.NET Core 3.0x SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0). Installing the SDK adds the `dotnet` toolchain to your PATH. Use the PowerShell command `dotnet --version` to verify the installation.
+To start building .NET apps, you just need to download and install the .NET SDK (Software Development Kit).
+
+Download and install the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0). Installing the SDK adds the `dotnet` toolchain to your PATH. 
+
+Once you've installed, open a new command prompt and run `dotnet`.
+
+If the command runs, printing out information about how to use dotnet, you're good to go. If you receive a `'dotnet' is not recognized as an internal or external command` error, make sure you opened a **new** command prompt. 
 
 ### 2. Install Java
 
@@ -35,7 +41,7 @@ Install [Java 8.1](https://www.oracle.com/technetwork/java/javase/downloads/jdk8
     
    ![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png?v=6BbJHoNyDO-PyYVciImr5wzh2AW_YHNcyb3p093AwPA)
     
-   * Use the PowerShell command `java -version` to verify the installation.
+   * Use the command `java` to verify the installation.
 
 ### 3. Install 7-zip
 

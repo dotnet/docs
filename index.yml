@@ -36,6 +36,85 @@ highlightedContent:
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
 
+# productDirectory section (optional)
+productDirectory:
+  title: Build your application # < 60 chars (optional)
+  summary: "You can choose web, mobile, desktop, gaming, IoT, and more." # < 160 chars (optional)
+  items:
+    # Card
+    - title: Web
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./images/Logo_DotNet.png
+      links:
+        - url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
+          text: Build your first web app
+        - url: /aspnet/core/tutorials
+          text: ASP.NET Core tutorials
+        - url: /aspnet/core
+          text: What is ASP.NET Core?
+        - url: /aspnet/core/tutorials/first-mvc-app/start-mvc
+          text: ASP.NET Core in Visual Studio
+        - url: /aspnet/mvc/overview/deployment/docker-aspnetmvc
+          text: ASP.NET MVC apps in Windows containers
+    # Card
+    - title: Cloud
+      imageSrc: ./images/Logo_DotNet.png
+      links:
+        - url: /dotnet/azure/
+          text: Azure for .NET documentation
+        - url: /azure/storage
+          text: Storage
+        - url: /dotnet/fsharp/using-fsharp-on-azure/
+          text: Using F# on Azure
+    # Card
+    - title: Mobile
+      imageSrc: ./images/Logo_DotNet.png
+      links:
+        - url: /xamarin/ios/
+          text: Xamarin.iOS
+        - url: /xamarin/android
+          text: Xamarin.Android
+        - url: /xamarin/xamarin-forms
+          text: Xamarin.Forms
+    # Card
+    - title: Desktop
+      imageSrc: ./images/Logo_DotNet.png
+      links:
+        - url: /uwp
+          text: Universal Windows apps
+        - url: /docs/desktop-wpf/index.md
+          text: Windows Presentation Foundation (.NET Core)
+        - url: /docs/framework/wpf/index.md
+          text: Windows Presentation Foundation (.NET Framework)
+        - url: /docs/framework/winforms/index.md
+          text: Windows Forms
+        - url: /xamarin/mac
+          text: Xamarin for macOS
+    # Card
+    - title: Gaming
+      imageSrc: ./images/Logo_DotNet.png
+      links:
+        - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
+          text: Game Development with Visual Studio
+        - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
+          text: Learn how to use CRYENGINE to build games with C#
+        - url: http://www.monogame.net/documentation/?page=main
+          text: Build games with C# using the MonoGame library
+        - url: https://docs.unity3d.com/Manual/index.html
+          text: Learn how to use Unity to build 2D and 3D games with C#
+    # Card
+    - title: Machine learning and AI
+      imageSrc: ./images/Logo_DotNet.png
+      links:
+        - url: docs/machine-learning/index.yml
+          text: Build custom AI solutions with ML.NET
+        - url: /azure/cognitive-services/
+          text: Azure Cognitive Services
+        - url: /azure/machine-learning
+          text: Azure machine learning
+        - url: docs/spark/index.yml
+          text: .NET for Apache Spark
+
 # conceptualContent section (optional)
 ## Sections:
 ## .NET Guide
@@ -137,70 +216,6 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections: 
-    - title: .NET Workloads # < 60 chars (optional)
-      summary: Learn about the different applications you can build using the .NET platform.
-      items:
-        # Card
-        - title: Web
-          links:
-            - text: Build your first web app
-              url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
-            - text: ASP.NET Core tutorials
-              url: /aspnet/core/tutorials
-            - text: What is ASP.NET Core?
-              url: /aspnet/core
-            - text: ASP.NET Core in Visual Studio
-              url: /aspnet/core/tutorials/first-mvc-app/start-mvc
-            - text: ASP.NET MVC apps in Windows containers
-              url: /aspnet/mvc/overview/deployment/docker-aspnetmvc
-        - title: Cloud
-          links:
-            - text: Azure for .NET documentation
-              url: /dotnet/azure/
-            - text: Storage
-              url: /azure/storage
-            - text: Using F# on Azure
-              url: /dotnet/fsharp/using-fsharp-on-azure/
-        - title: Mobile
-          links:
-            - text: Xamarin.iOS
-              url: /xamarin/ios/
-            - text: Xamarin.Android
-              url: /xamarin/android
-            - text: Xamarin.Forms
-              url: /xamarin/xamarin-forms
-        - title: Desktop
-          links:
-            - text: Universal Windows apps
-              url: /uwp
-            - text: Windows Presentation Foundation (.NET Core)
-              url: /docs/desktop-wpf/index.md
-            - text: Windows Presentation Foundation (.NET Framework)
-              url: /docs/framework/wpf/index.md
-            - text: Windows Forms
-              url: /docs/framework/winforms/index.md
-            - text: Xamarin for macOS
-              url: /xamarin/mac
-        - title: Gaming
-          links:
-            - text: Game Development with Visual Studio
-              url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
-            - text: Learn how to use CRYENGINE to build games with C#
-              url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
-            - text: Build games with C# using the MonoGame library
-              url: http://www.monogame.net/documentation/?page=main
-            - text: Learn how to use Unity to build 2D and 3D games with C#
-              url: https://docs.unity3d.com/Manual/index.html
-        - title: Machine learning and AI
-          links:
-            - text: Build custom AI solutions with ML.NET
-              url: docs/machine-learning/index.yml
-            - text: Azure Cognitive Services
-              url: /azure/cognitive-services/
-            - text: Azure machine learning
-              url: /azure/machine-learning
-            - text: .NET for Apache Spark
-              url: docs/spark/index.yml
     - title: API Reference sections # < 60 chars (optional)
       summary: Search the .NET API reference documentation, scoped to your interest. # < 160 chars (optional)
       items:

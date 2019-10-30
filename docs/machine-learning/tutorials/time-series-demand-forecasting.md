@@ -69,7 +69,7 @@ The original dataset contains several columns corresponding to seasonality and w
 
 The original dataset is mapped to a database table with the following schema in a SQL Server database.
 
-```sql
+```SQL
 CREATE TABLE [Rentals] (
 	[RentalDate] DATE NOT NULL,
 	[Year] INT NOT NULL,
@@ -440,7 +440,6 @@ If you're satisfied with your model, save it for later use in other applications
     Forecast: 2360.861
     Upper Estimate: 3573.309
     ```
-
 
 Inspection of the actual and forecasted values shows the following relationships:
 

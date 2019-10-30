@@ -4,8 +4,10 @@ description: Learn how the XAML language is structured and implemented by Window
 author: thraka
 ms.date: 08/08/2019
 ms.author: adegeo
-dev_langs: ["csharp", "vb"]
-helpviewer_keywords: 
+dev_langs:
+  - "csharp"
+  - "vb"
+helpviewer_keywords:
   - "user interfaces [XAML]"
   - "classes [XAML]"
   - "root element [XAML]"
@@ -108,7 +110,7 @@ For example, <xref:System.Windows.Controls.Border> specifies a _content_ propert
 As a rule of the XAML language, the value of a XAML content property must be given either entirely before or entirely after any other property elements on that object element. For instance, the following markup does not compile.
 
 ```xaml
-<Button>I am a 
+<Button>I am a
   <Button.Background>Blue</Button.Background>
   blue button</Button>
 ```
@@ -347,4 +349,4 @@ WPF uses a particular application model that is based on the <xref:System.Window
 - [Base Elements Overview](base-elements-overview.md)
 - [Trees in WPF](trees-in-wpf.md)
 
---> 
+-->

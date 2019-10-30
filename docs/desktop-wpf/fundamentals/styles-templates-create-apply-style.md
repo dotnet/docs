@@ -4,7 +4,9 @@ description: Learn how to create and reference a control style in Windows Presen
 author: thraka
 ms.author: adegeo
 ms.date: 09/12/2019
-dev_langs: ["csharp", "vb"]
+dev_langs:
+  - "csharp"
+  - "vb"
 #no-loc: [TextBlock, Setter]
 ---
 

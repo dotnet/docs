@@ -44,7 +44,7 @@ productDirectory:
     # Card
     - title: Web
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./images/Logo_DotNet.png
+      imageSrc: ./media/hub/net_small_purple.png
       links:
         - url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
           text: Build your first web app
@@ -58,7 +58,7 @@ productDirectory:
           text: ASP.NET MVC apps in Windows containers
     # Card
     - title: Cloud
-      imageSrc: ./images/Logo_DotNet.png
+      imageSrc: ./media/hub/net_small_purple.png
       links:
         - url: /dotnet/azure/
           text: Azure for .NET documentation
@@ -68,7 +68,7 @@ productDirectory:
           text: Using F# on Azure
     # Card
     - title: Mobile
-      imageSrc: ./images/Logo_DotNet.png
+      imageSrc: ./media/hub/net_small_purple.png
       links:
         - url: /xamarin/ios/
           text: Xamarin.iOS
@@ -78,7 +78,7 @@ productDirectory:
           text: Xamarin.Forms
     # Card
     - title: Desktop
-      imageSrc: ./images/Logo_DotNet.png
+      imageSrc: ./media/hub/net_small_purple.png
       links:
         - url: /uwp
           text: Universal Windows apps
@@ -92,7 +92,7 @@ productDirectory:
           text: Xamarin for macOS
     # Card
     - title: Gaming
-      imageSrc: ./images/Logo_DotNet.png
+      imageSrc: ./media/hub/net_small_purple.png
       links:
         - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
           text: Game Development with Visual Studio
@@ -104,7 +104,7 @@ productDirectory:
           text: Learn how to use Unity to build 2D and 3D games with C#
     # Card
     - title: Machine learning and AI
-      imageSrc: ./images/Logo_DotNet.png
+      imageSrc: ./media/hub/net_small_purple.png
       links:
         - url: docs/machine-learning/index.yml
           text: Build custom AI solutions with ML.NET

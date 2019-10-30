@@ -75,13 +75,13 @@ When these processes complete, you can create an instance of the generated WCF c
 
 ### See also
 
-- [Get started with Windows Communication Foundation applications](https://docs.microsoft.com/en-us/dotnet/framework/wcf/getting-started-tutorial)
-- [Windows Communication Foundation Services and WCF data services in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)
-- [WCF Supported features on .NET Core](https://github.com/dotnet/wcf/blob/master/release-notes/SupportedFeatures-v2.1.0.md)
+- [Get started with Windows Communication Foundation applications](../../../framework/wcf/getting-started-tutorial.md)
+- [Windows Communication Foundation services and WCF data services in Visual Studio](/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio)
+- [WCF supported features on .NET Core](https://github.com/dotnet/wcf/blob/master/release-notes/SupportedFeatures-v2.1.0.md)
 
 ### Feedback & questions
 
-If you have any questions or feedback, report it at [Visual Studio's developer community](https://developercommunity.visualstudio.com/).
+If you have any questions or feedback, report it at [Developer Community](https://developercommunity.visualstudio.com/) using the [Report a problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio) tool.
 
 ### Release notes
 

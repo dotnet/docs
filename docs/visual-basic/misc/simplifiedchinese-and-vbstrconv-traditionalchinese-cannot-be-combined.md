@@ -16,4 +16,4 @@ Your application is attempting to combine the `VbStrConv` enumeration members `S
 
 - <xref:System.Globalization>
 
-- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/globalizing-and-localizing-applications)
+- [Develop globalized and localized apps](/visualstudio/ide/globalizing-and-localizing-applications)

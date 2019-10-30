@@ -16,4 +16,4 @@ You are attempting to use the `VbStrConv.Japanese` enumeration member, but your 
 
 - <xref:System.Globalization>
 
-- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/globalizing-and-localizing-applications)
+- [Develop globalized and localized apps](/visualstudio/ide/globalizing-and-localizing-applications)

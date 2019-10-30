@@ -16,4 +16,4 @@ You attempted to use the `VbStrConv.TraditionalChinese` enumeration member, but 
 
 - <xref:System.Globalization>
 
-- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/globalizing-and-localizing-applications)
+- [Develop globalized and localized apps](/visualstudio/ide/globalizing-and-localizing-applications)

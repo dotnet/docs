@@ -23,21 +23,29 @@ In this tutorial, you learn how to:
 
 Before you begin, make sure you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line. If your environment is already prepared, you can skip to the next section. If you cannot run any or all of the commands, follow the steps below.
 
-1. Download and install the [.NET Core 2.1x SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1). Installing the SDK adds the `dotnet` toolchain to your PATH. Use the PowerShell command `dotnet --version` to verify the installation.
+### 1. Install .NET
 
-2. Install [Visual Studio 2017](https://www.visualstudio.com/downloads/) or [Visual Studio 2019](https://visualstudio.microsoft.com/vs/preview/) with the latest updates. You can use Community, Professional, or Enterprise. The Community version is free.
+Download and install the [.NET Core 3.0x SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0). Installing the SDK adds the `dotnet` toolchain to your PATH. Use the PowerShell command `dotnet --version` to verify the installation.
 
-   Choose the following workloads during installation:
-      * .NET desktop development
-          * All required components
-          * .NET Framework 4.6.1 Development Tools
-      * .NET Core cross-platform development
-          * All required components
+### 2. Install Java
 
-3. Install [Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+Install [Java 8.1](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
-    * Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine.
-    * Use the PowerShell command `java -version` to verify the installation.
+   * Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine.
+    
+   ![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png?v=6BbJHoNyDO-PyYVciImr5wzh2AW_YHNcyb3p093AwPA)
+    
+   * Use the PowerShell command `java -version` to verify the installation.
+
+### 3. Install 7-zip
+
+Apache Spark is downloaded as a compressed .tgz file. You'll need 7-zip to extract the file. If you already have an alternative extraction program installed, you can use that instead.
+
+   * Visit [7-Zip downloads](https://www.7-zip.org/).
+   * In the first table on the page, select either the 32-bit x86 or 64-bit x64 download, depending on your operating system.
+   * When the download completes, run the installer.
+    
+   ![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png?v=W6qWtFC1tTMKv3YGXz7lBa9F3M22uWyTvkMmunyroNk)
 
 4. Install [Apache Maven 3.6.0+](https://maven.apache.org/download.cgi).
     * Download [Apache Maven 3.6.0](http://mirror.metrocast.net/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip).

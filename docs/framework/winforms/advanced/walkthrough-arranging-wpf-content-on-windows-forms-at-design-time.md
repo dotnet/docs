@@ -131,4 +131,4 @@ A WPF control hosted on a form has the same anchoring and docking behavior as ot
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
 - [Using WPF Controls](using-wpf-controls.md)
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

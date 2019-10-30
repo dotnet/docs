@@ -40,7 +40,7 @@ This change doesn't affect names specified using the `[ActionName]` attribute. T
 ```csharp
 services.AddMvc(options =>
 {
-   options.SuppressAsyncSuffixInActionNames = false; 
+   options.SuppressAsyncSuffixInActionNames = false;
 });
 ```
 
@@ -58,7 +58,7 @@ If your app depends on MVC actions preserving the name's `Async` suffix, choose 
 ```csharp
 services.AddMvc(options =>
 {
-   options.SuppressAsyncSuffixInActionNames = false; 
+   options.SuppressAsyncSuffixInActionNames = false;
 });
 ```
 

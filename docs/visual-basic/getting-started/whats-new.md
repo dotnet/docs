@@ -285,4 +285,4 @@ Now the compiler will use normal overload resolution rules to choose the most ap
 
 ## See also
 
-- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)
+- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017)

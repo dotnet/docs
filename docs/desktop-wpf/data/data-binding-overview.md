@@ -4,7 +4,9 @@ description: Learn about the different data sources you can add to your project 
 author: thraka
 ms.date: 09/19/2019
 ms.author: adegeo
-dev_langs: ["csharp", "vb"]
+dev_langs:
+  - "csharp"
+  - "vb"
 ---
 
 # Data Binding Overview in WPF
@@ -92,11 +94,11 @@ You may want your application to enable users to change the data and propagate i
 
 To detect source changes (applicable to <xref:System.Windows.Data.BindingMode.OneWay> and <xref:System.Windows.Data.BindingMode.TwoWay> bindings), the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. See [How to: Implement Property Change Notification](../../framework/wpf/data/how-to-implement-property-change-notification.md) for an example of an <xref:System.ComponentModel.INotifyPropertyChanged> implementation.
 
-The <xref:System.Windows.Data.Binding.Mode?displayProperty=nameWithtype> property provides more information about binding modes and an example of how to specify the direction of a binding.
+The <xref:System.Windows.Data.Binding.Mode?displayProperty=nameWithType> property provides more information about binding modes and an example of how to specify the direction of a binding.
 
 ### What triggers source updates
 
-Bindings that are <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> listen for changes in the target property and propagate them back to the source, known as updating the source. For example, you may edit the text of a TextBox to change the underlying source value. 
+Bindings that are <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> listen for changes in the target property and propagate them back to the source, known as updating the source. For example, you may edit the text of a TextBox to change the underlying source value.
 
 However, is your source value updated while you are editing the text or after you finish editing the text and the control loses focus? The <xref:System.Windows.Data.Binding.UpdateSourceTrigger?displayProperty=nameWithType> property determines what triggers the update of the source. The dots of the right arrows in the following figure illustrate the role of the <xref:System.Windows.Data.Binding.UpdateSourceTrigger?displayProperty=nameWithType> property:
 
@@ -104,7 +106,7 @@ However, is your source value updated while you are editing the text or after yo
 
 If the `UpdateSourceTrigger` value is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged?displayProperty=nameWithType>, then the value pointed to by the right arrow of <xref:System.Windows.Data.BindingMode.TwoWay> or the <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings is updated as soon as the target property changes. However, if the `UpdateSourceTrigger` value is <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>, then that value only is updated with the new value when the target property loses focus.
 
-Similar to the <xref:System.Windows.Data.Binding.Mode%2A> property, different dependency properties have different default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> values. The default value for most dependency properties is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, while the `TextBox.Text` property has a default value of <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>. `PropertyChanged` means the source updates usually happen whenever the target property changes. Instant changes are fine for CheckBoxes and other simple controls. However, for text fields, updating after every keystroke can diminish performance and denies the user the usual opportunity to backspace and fix typing errors before committing to the new value. 
+Similar to the <xref:System.Windows.Data.Binding.Mode%2A> property, different dependency properties have different default <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> values. The default value for most dependency properties is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, while the `TextBox.Text` property has a default value of <xref:System.Windows.Data.UpdateSourceTrigger.LostFocus>. `PropertyChanged` means the source updates usually happen whenever the target property changes. Instant changes are fine for CheckBoxes and other simple controls. However, for text fields, updating after every keystroke can diminish performance and denies the user the usual opportunity to backspace and fix typing errors before committing to the new value.
 
 See the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property page for information about how to find the default value of a dependency property.
 

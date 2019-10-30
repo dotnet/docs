@@ -695,4 +695,4 @@ Provides a QA website for questions about and issues with Visual C#.
 
 - [C# Programming Guide](../programming-guide/index.md)
 - [C# Reference](../language-reference/index.md)
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

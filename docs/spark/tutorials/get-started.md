@@ -61,6 +61,8 @@ Apache Spark is downloaded as a compressed .tgz file. You'll need 7-zip to extra
       * Click **OK**.
       * The Apache Spark files are extracted to **C:\bin\spark-2.4.1-bin-hadoop2.7\**
       
+![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
+      
 You need to run a few commands to set environment variables used to locate Apache Spark:
 
 `setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
@@ -73,6 +75,17 @@ Once you've installed everything and set your environment variables, open a **ne
 If the command runs, printing out version information, you're good to go.
 
 If you receive a `'spark-submit' is not recognized as an internal or external command` error, make sure you opened a **new** command prompt.
+
+### 5. Install .NET for Apache Spark
+
+  * Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub. For example if you're on a Windows machine and planning to use .NET Core, [download the Windows x64 netcoreapp2.1 release](https://github.com/dotnet/spark/releases/download/v0.5.0/Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip).
+  * Locate the **Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip** file that you downloaded.
+  * Right click and select **7-Zip -> Extract files...**
+  * Enter **C:\bin** in the **Extract to** field.
+  * Uncheck the checkbox below the **Extract to** field.
+  * Click **OK**.
+  
+![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png?v=jwCyum9mL0mGIi4V5zC7yuvLfcj1_nL-QFFD8TClhZk)
 
 Install [Apache Maven 3.6.0+](https://maven.apache.org/download.cgi).
     * Download [Apache Maven 3.6.0](http://mirror.metrocast.net/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip).

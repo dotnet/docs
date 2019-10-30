@@ -47,7 +47,34 @@ Apache Spark is downloaded as a compressed .tgz file. You'll need 7-zip to extra
     
    ![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png?v=W6qWtFC1tTMKv3YGXz7lBa9F3M22uWyTvkMmunyroNk)
 
-4. Install [Apache Maven 3.6.0+](https://maven.apache.org/download.cgi).
+### 4. Install Apache Spark
+
+   * [Download and install Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz).
+   * Extract the nested **.tar** file:
+      * Locate the **spark-2.4.1-bin-hadoop2.7.tgz** file that you downloaded.
+      * Right click on the file and select **7-Zip -> Extract here**.
+      * **spark-2.4.1-bin-hadoop2.7.tar** is created alongside the **.tgz** file you downloaded.
+   * Extract Apache Spark files:
+      * Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip -> Extract files...**
+      * Enter **C:\bin** in the **Extract to** field.
+      * Uncheck the checkbox below the **Extract to** field.
+      * Click **OK**.
+      * The Apache Spark files are extracted to **C:\bin\spark-2.4.1-bin-hadoop2.7\**
+      
+You need to run a few commands to set environment variables used to locate Apache Spark:
+
+`setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
+setx SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\`
+
+Once you've installed everything and set your environment variables, open a **new** command prompt and run the following command:
+
+`%SPARK_HOME%\bin\spark-submit --version`
+
+If the command runs, printing out version information, you're good to go.
+
+If you receive a `'spark-submit' is not recognized as an internal or external command` error, make sure you opened a **new** command prompt.
+
+Install [Apache Maven 3.6.0+](https://maven.apache.org/download.cgi).
     * Download [Apache Maven 3.6.0](http://mirror.metrocast.net/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip).
     * Extract to a local directory. For example, `c:\bin\apache-maven-3.6.0\`.
     * Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). If you extracted to `c:\bin\apache-maven-3.6.0\`, you would add `c:\bin\apache-maven-3.6.0\bin` to your PATH.

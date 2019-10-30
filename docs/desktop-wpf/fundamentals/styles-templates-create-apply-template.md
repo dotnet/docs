@@ -311,3 +311,9 @@ The `<ControlTemplate>` should now look like the following.
 Run the project. Notice that when you move the mouse over the button, the color of the `<Ellipse>` animates.
 
 ![mouse moves over WPF button to change the fill color](media/create-apply-template/mouse-move-over-button-visualstate.gif)
+
+## Next steps
+
+- [Create a style for a control in WPF](styles-templates-create-apply-style.md)
+- [Styles and templates in WPF](styles-templates-overview.md)
+- [Overview of XAML Resources](xaml-resources-define.md)

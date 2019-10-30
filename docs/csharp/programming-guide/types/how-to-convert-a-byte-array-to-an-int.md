@@ -29,7 +29,7 @@ This example shows you how to use the <xref:System.BitConverter> class to conver
 This example initializes an array of bytes, reverses the array if the computer architecture is little-endian (that is, the least significant byte is stored first), and then calls the [ToInt32(Byte\[\], Int32)](xref:System.BitConverter.ToInt32(System.Byte[],System.Int32)) method to convert four bytes in the array to an `int`. The second argument to [ToInt32(Byte\[\], Int32)](xref:System.BitConverter.ToInt32(System.Byte[],System.Int32)) specifies the start index of the array of bytes.
 
 > [!NOTE]
-> The output may differ depending on the endianess of your computer's architecture.
+> The output may differ depending on the endianness of your computer's architecture.
 
 [!code-csharp[csProgGuideTypes#22](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#22)]
 
@@ -38,7 +38,7 @@ This example initializes an array of bytes, reverses the array if the computer a
 In this example, the <xref:System.BitConverter.GetBytes%28System.Int32%29> method of the <xref:System.BitConverter> class is called to convert an `int` to an array of bytes.
 
 > [!NOTE]
-> The output may differ depending on the endianess of your computer's architecture.
+> The output may differ depending on the endianness of your computer's architecture.
 
 [!code-csharp[csProgGuideTypes#23](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#23)]
 

@@ -41,7 +41,7 @@ The `EnumerateObjectReferences` method is similar to [ObjectReferences](../../..
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).
+**Platforms:** See [.NET Core supported operating systems](../../../core/setup/index.md).
 
 **Header:** CorProf.idl, CorProf.h
 

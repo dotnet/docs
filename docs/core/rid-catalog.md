@@ -102,7 +102,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `win10-arm`
   - `win10-arm64`
 
-See [Prerequisites for .NET Core on Windows](windows-prerequisites.md) for more information.
+See [Prerequisites for .NET Core on Windows](setup/index.md) for more information.
 
 ## Linux RIDs
 
@@ -120,7 +120,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `tizen.4.0.0`
   - `tizen.5.0.0`
 
-See [Prerequisites for .NET Core on Linux](linux-prerequisites.md) for more information.
+See [Prerequisites for .NET Core on Linux](setup/index.md) for more information.
 
 ## macOS RIDs
 
@@ -139,7 +139,7 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 - macOS 10.14 Mojave (.NET Core 1.1 or later versions)
   - `osx.10.14-x64`
 
-See [Prerequisites for .NET Core on macOS](macos-prerequisites.md) for more information.
+See [Prerequisites for .NET Core on macOS](setup/index.md) for more information.
 
 ## See also
 

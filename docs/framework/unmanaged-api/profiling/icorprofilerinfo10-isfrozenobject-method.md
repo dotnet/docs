@@ -33,7 +33,7 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).
+**Platforms:** See [.NET Core supported operating systems](../../../core/setup/index.md).
 
 **Header:** CorProf.idl, CorProf.h
 

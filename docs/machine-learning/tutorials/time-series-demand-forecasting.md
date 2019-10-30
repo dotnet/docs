@@ -56,7 +56,7 @@ The algorithm used in this tutorial is [Single Spectrum Analysis(SSA)](http://ss
 ### Prepare and understand the data
 
 1. Create a directory called *Data*.
-1. Download the *DailyDemand.mdf* file and save it to the *Data* directory.
+1. Download the [*DailyDemand.mdf* database file](https://github.com/dotnet/machinelearning-samples/raw/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Data/DailyDemand.mdf) and save it to the *Data* directory.
 
 > [!NOTE]
 > The data used in this tutorial comes from the [UCI Bike Sharing Dataset](https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset). Fanaee-T, Hadi, and Gama, Joao, 'Event labeling combining ensemble detectors and background knowledge', Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, [Web Link](https://link.springer.com/article/10.1007%2Fs13748-013-0040-3).

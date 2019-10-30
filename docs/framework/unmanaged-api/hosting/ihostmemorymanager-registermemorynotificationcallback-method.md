@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 65d301f6-4dbb-4b5f-8eff-82540e2b6465
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::RegisterMemoryNotificationCallback Method
 Registers a pointer to a callback function that the host invokes to notify the common language runtime (CLR) of the current memory load on the computer.  

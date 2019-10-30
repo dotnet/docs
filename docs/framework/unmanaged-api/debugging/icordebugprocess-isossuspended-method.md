@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 83406cb2-5797-4402-872d-89c9516aefec
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::IsOSSuspended Method
 Gets a value that indicates whether the specified thread has been suspended as a result of the debugger stopping this process.  

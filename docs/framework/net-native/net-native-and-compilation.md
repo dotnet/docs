@@ -2,8 +2,6 @@
 title: ".NET Native and Compilation"
 ms.date: "03/30/2017"
 ms.assetid: e38ae4f3-3e3d-42c3-a4b8-db1aa9d84f85
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Native and Compilation
 

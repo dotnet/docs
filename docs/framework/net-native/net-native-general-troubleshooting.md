@@ -2,8 +2,6 @@
 title: ".NET Native General Troubleshooting"
 ms.date: "03/30/2017"
 ms.assetid: ee8c5e17-35ea-48a1-8767-83298caac1e8
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Native General Troubleshooting
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b9538ceb-230a-4079-9cb2-903dbf5c1848
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::GetGCHeapInformation Method
 Provides general information about the garbage collection heap, including whether it is currently enumerable.  

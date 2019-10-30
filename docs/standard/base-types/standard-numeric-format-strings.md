@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "standard numeric format strings"
   - "formatting numbers [.NET Framework]"
   - "format specifiers, standard numeric format strings"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Standard Numeric Format Strings
 

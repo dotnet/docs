@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 392e9009-40ef-40e3-ad4d-7ce93a989e78
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAppDomainResourceMonitor::GetCurrentSurvived Method
 Gets the number of bytes that survived the last full, blocking garbage collection and that are referenced by the current application domain.  

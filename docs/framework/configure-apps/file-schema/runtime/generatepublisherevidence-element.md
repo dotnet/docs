@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "generatePublisherEvidence element"
   - "<generatePublisherEvidence> element"
 ms.assetid: 7d208f50-e8d5-4a42-bc1a-1cf3590706a8
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<generatePublisherEvidence> Element
 Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> evidence for code access security (CAS).  

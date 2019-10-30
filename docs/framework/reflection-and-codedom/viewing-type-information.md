@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "viewing type information"
   - "reflection, viewing type information"
 ms.assetid: 7e7303a9-4064-4738-b4e7-b75974ed70d2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Viewing Type Information
 The <xref:System.Type?displayProperty=nameWithType> class is central to reflection. The common language runtime creates the **Type** for a loaded type when reflection requests it. You can use a **Type** object's methods, fields, properties, and nested classes to find out everything about that type.  

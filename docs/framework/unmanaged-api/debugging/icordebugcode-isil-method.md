@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 132ef8cc-d938-43f3-b8f2-e3b97c0ceb33
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode::IsIL Method
 

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "progress information for installation"
   - "reporting installation progress"
 ms.assetid: 3f9d0533-f895-4897-b4ea-528284e0241d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Installutil.exe (Installer Tool)

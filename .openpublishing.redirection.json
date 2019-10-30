@@ -1801,7 +1801,7 @@
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"   
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md",
@@ -1814,6 +1814,10 @@
         {
             "source_path": "docs/framework/misc/binding.md",
             "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
+        },
+        {
+            "source_path": "docs/framework/network-programming/httplistener.md",
+            "redirect_url": "/dotnet/api/system.net.httplistener"
         },
         {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",

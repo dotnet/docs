@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d079131b-685b-4869-95be-826b88d28bd2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug::SetManagedHandler Method
 Specifies the event handler object for managed events.  

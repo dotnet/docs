@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4ba08ffa-55a2-4662-9d6d-4738f1db60c9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet::GetRegistersAvailable Method
 Gets a bit mask indicating which registers in this [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) are currently available.  

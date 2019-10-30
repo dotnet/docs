@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 0f482454-8517-48de-ba7a-d7aedab13bb5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CodeChunkInfo Structure
 

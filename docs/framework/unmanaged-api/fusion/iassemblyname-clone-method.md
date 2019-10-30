@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7b345e08-5e16-4e3d-a044-4e19d0892943
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyName::Clone Method
 Creates a shallow copy of this [IAssemblyName](iassemblyname-interface.md) object.  

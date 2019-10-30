@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a3ccdf18-4ec6-494d-9024-48e5c8c724f5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugThreadState Enumeration
 Specifies the state of a thread for debugging.  

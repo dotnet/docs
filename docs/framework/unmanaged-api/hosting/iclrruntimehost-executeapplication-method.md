@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5f28cc4e-7176-4e00-aa1f-58ae6ee52fe4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::ExecuteApplication Method
 Used in manifest-based ClickOnce deployment scenarios to specify the application to be activated in a new domain. For more information about these scenarios, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  

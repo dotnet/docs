@@ -68,7 +68,9 @@ File names use the following rules:
 
 ## Headings
 
-Use sentence-style capitalization. Always capitalize the first word of a heading, but don't capitalize the word following a colon in a title or heading (for example, "How to: sort an array").
+Use sentence-style capitalization. Capitalize the first letter of the first word of a heading, proper nouns, and the first letter following a colon (for example, "Tutorial: Predict prices using regression with ML.NET").
+
+Don't add a colon after "How to" (for example, "How to sort an array" and not "How to: Sort an array").
 
 Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above.
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: be86f4b5-418a-4c5c-a67c-97148c65ed8c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess Interface
 Represents a process that is executing managed code. This interface is a subclass of ICorDebugController.  

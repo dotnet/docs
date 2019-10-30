@@ -12,8 +12,6 @@ api_type:
 ms.assetid: b91765e4-82db-46f9-a6dc-6b80610276af
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ILCodeKind Enumeration
 [Supported in the .NET Framework 4.5.2 and later versions]  

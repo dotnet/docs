@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "localization [Windows Forms], bi-directional support in Windows"
   - "bi-directional language support [Windows Forms], Windows applications"
   - "Windows Forms, bi-directional support"
-author: rpetrusha
-ms.author: ronpet
 ---
 # Bi-Directional Support for Windows Forms Applications
 You can use Visual Studio to create Windows-based applications that support bi-directional (right-to-left) languages such as Arabic and Hebrew. This includes standard forms, dialog boxes, MDI forms, and all the controls you can work with in these forms—that is, all the objects in the <xref:System.Windows.Forms.Control> namespace.

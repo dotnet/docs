@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "dependentAssembly element"
   - "<dependentAssembly> element"
 ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<dependentAssembly> Element
 Encapsulates binding policy and assembly location for each assembly. Use one `dependentAssembly` element for each assembly.  

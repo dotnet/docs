@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9a1c0b47-6f10-4fcb-844a-4ab2d7990140
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::CreateValue Method
 Creates a value of the specified type, with an initial value of zero or null.  

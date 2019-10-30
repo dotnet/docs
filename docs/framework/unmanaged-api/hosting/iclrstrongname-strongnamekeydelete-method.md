@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0163412f-f617-4428-89e0-03992fec31e8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameKeyDelete Method
 Deletes the specified key container.  

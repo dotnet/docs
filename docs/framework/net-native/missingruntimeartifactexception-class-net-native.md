@@ -2,8 +2,6 @@
 title: "MissingRuntimeArtifactException Class (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: d5b3d13e-689f-4584-8ba6-44f5167a8590
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # MissingRuntimeArtifactException Class (.NET Native)
 **.NET for Windows apps for Windows 10, .NET Native only**  

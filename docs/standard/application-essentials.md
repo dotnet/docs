@@ -5,8 +5,6 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - ".NET Framework development"
 ms.assetid: 653da4ba-3752-4d1f-a08a-de017dc86ecc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework Application Essentials
 This section of the .NET Framework documentation provides information about basic application development tasks in the .NET Framework.  

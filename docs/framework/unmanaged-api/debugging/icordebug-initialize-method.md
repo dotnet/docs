@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6fae3b23-5c9f-47c0-85d8-6bb75e050786
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug::Initialize Method
 Initializes the `ICorDebug` object.  

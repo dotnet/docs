@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6639335c-48e1-4e74-a4f3-70a6a0f54af1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugChainEnum Interface
 

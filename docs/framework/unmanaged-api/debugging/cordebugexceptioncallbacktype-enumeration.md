@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 4d946ad4-3c19-42cb-bec9-8633325ba769
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugExceptionCallbackType Enumeration
 Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-exception-method.md) event.  

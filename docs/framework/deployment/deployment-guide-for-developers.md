@@ -2,19 +2,17 @@
 title: ".NET Framework deployment guide for developers"
 ms.custom: "updateeachrelease"
 ms.date: "04/18/2019"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework deployment guide for developers
 This topic provides information for developers who want to install any version of the .NET Framework from .NET Framework 4.5 to [!INCLUDE[net_current](../../../includes/net-current-version.md)] with their apps.
 
 For download links, see the section [Redistributable Packages](#redistributable-packages). You can also download the redistributable packages and language packs from these Microsoft Download Center pages:
 
-- .NET Framework 4.8 for all operating systems ([web installer](http://go.microsoft.com/fwlink/?LinkId=2085155) or [offline installer](https://go.microsoft.com/fwlink/?linkid=2088631))
+- .NET Framework 4.8 for all operating systems ([web installer](https://go.microsoft.com/fwlink/?LinkId=2085155) or [offline installer](https://go.microsoft.com/fwlink/?linkid=2088631))
 
 - .NET Framework 4.7.2 for all operating systems ([web installer](https://go.microsoft.com/fwlink/?LinkId=863262) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=863265))
 

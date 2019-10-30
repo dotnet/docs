@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 23f38dc1-85e4-4263-9235-2d05bbb6a833
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::SetIP Method
 Sets the instruction pointer to the specified offset location in the Microsoft intermediate language (MSIL) code.  

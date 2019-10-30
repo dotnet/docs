@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 66a89acf-8c32-44c0-8787-960c99c7b3ec
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateHistoryReader Function
 Creates a history reader for the specified file.  

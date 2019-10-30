@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "UseRandomizedStringHashAlgorithm element"
   - "<UseRandomizedStringHashAlgorithm> element"
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<UseRandomizedStringHashAlgorithm> Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  

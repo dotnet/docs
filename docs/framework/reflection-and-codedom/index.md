@@ -5,8 +5,6 @@ helpviewer_keywords:
   - ".NET Framework, dynamic programming"
   - "dynamic programming [.NET Framework]"
 ms.assetid: f78ec137-df0e-48c9-a7a0-5f6a1055f011
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Dynamic Programming in the .NET Framework
 This section of the documentation provides information about dynamic programming in the .NET Framework.  

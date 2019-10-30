@@ -22,7 +22,7 @@ highlightedContent:
     # Card
     - title: "C# introduction. A quick interactive start"
       itemType: get-started
-      url: docs/csharp/tutorials/intro-to-csharp/hello-world.yml
+      url: csharp/tutorials/intro-to-csharp/hello-world.yml
     # Card
     - title: "Download the .NET SDK"
       itemType: download
@@ -30,7 +30,7 @@ highlightedContent:
     # Card
     - title: "Build your first .NET Core app. Learn how to build a .NET core console app"
       itemType: get-started
-      url: docs/core/get-started.md
+      url: core/get-started.md
     # Card
     - title: "Build your first web app. Learn how to build your first ASP.NET Core web app"
       itemType: learn
@@ -82,11 +82,11 @@ productDirectory:
       links:
         - url: /uwp
           text: Universal Windows apps
-        - url: /docs/desktop-wpf/index.md
+        - url: /desktop-wpf/index.md
           text: Windows Presentation Foundation (.NET Core)
-        - url: /docs/framework/wpf/index.md
+        - url: /framework/wpf/index.md
           text: Windows Presentation Foundation (.NET Framework)
-        - url: /docs/framework/winforms/index.md
+        - url: /framework/winforms/index.md
           text: Windows Forms
         - url: /xamarin/mac
           text: Xamarin for macOS
@@ -106,13 +106,13 @@ productDirectory:
     - title: Machine learning and AI
       imageSrc: ./media/hub/net_small_purple.png
       links:
-        - url: docs/machine-learning/index.yml
+        - url: machine-learning/index.yml
           text: Build custom AI solutions with ML.NET
         - url: /azure/cognitive-services/
           text: Azure Cognitive Services
         - url: /azure/machine-learning
           text: Azure machine learning
-        - url: docs/spark/index.yml
+        - url: spark/index.yml
           text: .NET for Apache Spark
 
 # conceptualContent section (optional)
@@ -129,66 +129,66 @@ conceptualContent:
     # Card
     - title: .NET Guide
       links:
-        - url: docs/standard/get-started.md
+        - url: standard/get-started.md
           itemType: get-started
           text: Get started
-        - url: docs/standard/tour.md
+        - url: standard/tour.md
           itemType: overview
           text: Tour of .NET
-        - url: docs/standard/components.md
+        - url: standard/components.md
           itemType: concept
           text: .NET Architectural Components
       # footerLink (optional)
       footerLink:
-        url: docs/standard/index.md
+        url: standard/index.md
         text: See more
     # Card
     - title: .NET Core Guide
       links:
-        - url: docs/core/get-started.md
+        - url: core/get-started.md
           itemType: get-started
           text: Get started
-        - url: docs/core/tutorials/index.md
+        - url: core/tutorials/index.md
           itemType: tutorial
           text: Tutorials
-        - url: docs/core/porting/index.md
+        - url: core/porting/index.md
           itemType: how-to-guide
           text: Porting your apps from .NET Framework
       # footerLink (optional)
       footerLink:
-        url: docs/core/index.md
+        url: core/index.md
         text: See more
     # Card
     - title: .NET Framework guide
       links:
-        - url: docs/framework/get-started/index.md
+        - url: framework/get-started/index.md
           itemType: get-started
           text: Get started
-        - url: docs/framework/development-guide.md
+        - url: framework/development-guide.md
           itemType: overview
           text: Development Guide
-        - url: docs/framework/develop-client-apps.md
+        - url: framework/develop-client-apps.md
           itemType: concept
           text: Develop Client Apps
       # footerLink (optional)
       footerLink:
-        url: docs/framework/index.md
+        url: framework/index.md
         text: See more
     # Card
     - title: .NET Architectural guides
       links:
-        - url: docs/architecture/microservices/index.md
+        - url: architecture/microservices/index.md
           itemType: architecture
           text: ".NET Microservices: Architecture for Containerized .NET Applications"
-        - url: docs/architecture/containerized-lifecycle/index.md
+        - url: architecture/containerized-lifecycle/index.md
           itemType: architecture
           text: "Containerized Docker Application Lifecycle with Microsoft Platform and Tools"
-        - url: docs/architecture/modernize-with-azure-containers/index.md
+        - url: architecture/modernize-with-azure-containers/index.md
           itemType: architecture
           text: "Modernize existing .NET applications with Azure cloud and Windows Containers"
       # footerLink (optional)
       footerLink:
-        url: docs/architecture/index.yml
+        url: architecture/index.yml
         text: See more
 
 # tools section (optional)
@@ -200,15 +200,15 @@ tools:
     # Card
     - title: "A modern object-oriented, type-safe member of the C family"
       imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
-      url: docs/csharp/index.md
+      url: csharp/index.md
     # Card
     - title: "A functional programming language for .NET"
       imageSrc: https://docs.microsoft.com/media/logos/logo_Fsharp.svg
-      url: docs/fsharp/index.md
+      url: fsharp/index.md
     # Card
     - title: "An approachable language with readable syntax"
       imageSrc: https://docs.microsoft.com/media/logos/logo_VB.svg
-      url: docs/visual-basic/index.md
+      url: visual-basic/index.md
 
 # additionalContent section (optional)
 # Card with summary style
@@ -238,15 +238,15 @@ additionalContent:
       # Card
       - title: "C# language reference"
         summary: C# language reference and specification
-        url: docs/csharp/language-reference/index.md
+        url: csharp/language-reference/index.md
       # Card
       - title: "F# language reference"
         summary: F# language reference
-        url: docs/fsharp/language-reference/index.md
+        url: fsharp/language-reference/index.md
       # Card
       - title: "Visual Basic language reference"
         summary: Visual Basic language reference and specification
-        url: docs/visual-basic/language-reference/index.md
+        url: visual-basic/language-reference/index.md
   # footer (optional)
   footer: "Contribute to .NET docs. Read our [contributor guide](https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md)."
 

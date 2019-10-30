@@ -133,7 +133,7 @@ The following is a sample of the data:
 
     [!code-csharp [DefineSQLQuery](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L25)]
 
-    ML.NET algorithms expect data to be of type [`Single`](xref:System.Single). Therefore, numerical values coming from the database that are not of type [`Real`](xref:System.Data.SqlDbType), a single-precision floating-point value, have to be case to [`Real`](xref:System.Data.SqlDbType). 
+    ML.NET algorithms expect data to be of type [`Single`](xref:System.Single). Therefore, numerical values coming from the database that are not of type [`Real`](xref:System.Data.SqlDbType), a single-precision floating-point value, have to be converted to [`Real`](xref:System.Data.SqlDbType). 
 
     The `Year` and `TotalRental` columns are both integer types in the database. Using the `CAST` built-in function, they are both cast to `Real`.
 

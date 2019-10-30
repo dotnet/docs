@@ -101,6 +101,6 @@ For information about formatting the output of numeric types, see [Formatting nu
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Types](types.md)
+- [Types](/dotnet/csharp/language-reference/keywords)
 - [Reference types](reference-types.md)
 - [Nullable value types](../../programming-guide/nullable-types/index.md)

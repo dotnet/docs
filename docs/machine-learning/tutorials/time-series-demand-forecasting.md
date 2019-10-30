@@ -168,7 +168,7 @@ The following is a sample of the data:
 
 Evaluate how well the model performs by forecasting next year's data and comparing it against the actual values.
 
-1. Below the `Main` method, create a new method called `Evaluate`.
+1. Below the `Main` method, create a new utility method called `Evaluate`.
 
     ```csharp
     static void Evaluate(IDataView testData, ITransformer model, MLContext mlContext)
@@ -177,7 +177,7 @@ Evaluate how well the model performs by forecasting next year's data and compari
     }
     ```
 
-1. Inside the `Evaluate` method, forecast the second year's data by using the [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) with the trained model.
+1. Inside the `Evaluate` method, forecast the second year's data by using the [`Transform`](xref:Microsoft.ML.ITransformer.Transform*) method with the trained model.
 
     [!code-csharp [EvaluateForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L62)]
 
@@ -224,7 +224,7 @@ If you're satisfied with your model, save it for later use in other applications
 
 ## Use the model to forecast demand
 
-1. Below the `Evaluate` method, create a new method called `Forecast`.
+1. Below the `Evaluate` method, create a new utility method called `Forecast`.
 
     ```csharp
     static void Forecast(IDataView testData, int horizon, TimeSeriesPredictionEngine<ModelInput, ModelOutput> forecaster, MLContext mlContext)

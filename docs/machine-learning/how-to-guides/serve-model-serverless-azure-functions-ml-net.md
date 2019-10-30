@@ -111,7 +111,7 @@ The following link provides more information if you want to learn more about [de
 
 1. In **Solution Explorer**, right-click the project, and then select **Add** > **New Item**.
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select the **Add** button.
-1. Add the following using statement to the top of *Startup.cs*:
+1. Add the following using statements to the top of *Startup.cs*:
 
     [!code-csharp [StartupUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L1-L6)]
 

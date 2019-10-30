@@ -213,9 +213,9 @@ To verify your Visual Studio version:
 
 | OS                             | Version               | Architectures    |
 | ------------------------------ | --------------------- | ---------------- |
-| Red Hat Enterprise Linux       | 6+, 7                 | x64 |
-| CentOS                         | 7, 8                  | x64 |
-| Oracle Linux                   | 7, 8                  | x64 |
+| Red Hat Enterprise Linux       | 6, 7, 8               | x64 |
+| CentOS                         | 7+                    | x64 |
+| Oracle Linux                   | 7+                    | x64 |
 | Fedora                         | 29+                   | x64 |
 | Debian                         | 9+                    | x64, ARM32, ARM64 |
 | Ubuntu                         | 16.04+                | x64, ARM32, ARM64 |
@@ -244,7 +244,7 @@ For more information about how to install .NET Core 3.0 on ARM64, see [Installin
 | Oracle Linux                   |  7                      | x64 |
 | Fedora                         |  29, 30                 | x64 |
 | Debian                         |  9                      | x64, ARM32 |
-| Ubuntu                         |  16.04, 18.04, 18.10    | x64, ARM32 |
+| Ubuntu                         |  16.04, 18.04, 18.10, 19.04    | x64, ARM32 |
 | Linux Mint                     |  17, 18                 | x64 |
 | openSUSE                       |  15+                    | x64 |
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |
@@ -264,12 +264,12 @@ For more information about .NET Core 2.2 supported OS, distributions, and lifecy
 | OS                             |  Version                |  Architectures   |
 | ------------------------------ | ----------------------- | ---------------- |
 | Red Hat Enterprise Linux       |  6, 7, 8                | x64 |
-| CentOS                         |  7                      | x64 |
-| Oracle Linux                   |  7                      | x64 |
-| Fedora                         |  29, 30                 | x64 |
+| CentOS                         |  7+                     | x64 |
+| Oracle Linux                   |  7+                     | x64 |
+| Fedora                         |  29+                    | x64 |
 | Debian                         |  9                      | x64, ARM32 |
-| Ubuntu                         |  16.04, 18.04, 19.04    | x64, ARM32 |
-| Linux Mint                     |  17, 18                 | x64 |
+| Ubuntu                         |  16.04, 18.04, 19.04, 19.10    | x64, ARM32 |
+| Linux Mint                     |  17+                    | x64 |
 | openSUSE                       |  15+                    | x64 |
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |
 | Alpine Linux                   |  3.7+                   | x64 |

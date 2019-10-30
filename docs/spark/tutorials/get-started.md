@@ -87,25 +87,22 @@ If you receive a `'spark-submit' is not recognized as an internal or external co
   
 ![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png?v=jwCyum9mL0mGIi4V5zC7yuvLfcj1_nL-QFFD8TClhZk)
 
-Install [Apache Maven 3.6.0+](https://maven.apache.org/download.cgi).
-    * Download [Apache Maven 3.6.0](http://mirror.metrocast.net/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip).
-    * Extract to a local directory. For example, `c:\bin\apache-maven-3.6.0\`.
-    * Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). If you extracted to `c:\bin\apache-maven-3.6.0\`, you would add `c:\bin\apache-maven-3.6.0\bin` to your PATH.
-    * Use the PowerShell command `mvn -version` to verify the installation.
+### 6. Install WinUtils
 
-5. Install [Apache Spark 2.3+](https://spark.apache.org/downloads.html). Apache Spark 2.4+ isn't supported.
-    * Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder using a tool like [7-zip](https://www.7-zip.org/) or [WinZip](https://www.winzip.com/). For example, you might extract it to `c:\bin\spark-2.3.2-bin-hadoop2.7\`.
-    * Add Apache Spark to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). If you extracted to `c:\bin\spark-2.3.2-bin-hadoop2.7\`, you would add `c:\bin\spark-2.3.2-bin-hadoop2.7\bin` to your PATH.
-    * Add a [new environment variable](https://www.java.com/en/download/help/path.xml) called `SPARK_HOME`. If you extracted to `C:\bin\spark-2.3.2-bin-hadoop2.7\`, use  `C:\bin\spark-2.3.2-bin-hadoop2.7\` for the **Variable value**.
-    * Verify you are able to run `spark-shell` from your command line.
+.NET for Apache Spark requires WinUtils to be installed alongside Apache Spark.
 
-6. Set up [WinUtils](https://github.com/steveloughran/winutils).
-    * Download the **winutils.exe** binary from [WinUtils repository](https://github.com/steveloughran/winutils). Select the version of Hadoop the Spark distribution was compiled with. For example, you use **hadoop-2.7.1** for **Spark 2.3.2**. The Hadoop version is annotated at the end of your Spark install folder name.
-    * Save the **winutils.exe** binary to a directory of your choice. For example, `c:\hadoop\bin`.
-    * Set `HADOOP_HOME` to reflect the directory with **winutils.exe** without `bin`. For example, `c:\hadoop`.
-    * Set the PATH environment variable to include `%HADOOP_HOME%\bin`.
+  * [Download winutils.exe](https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe)
+  * Once **winutils.exe** downloads, copy it into **C:\bin\spark-2.4.1-bin-hadoop2.7\bin**.
 
-Double check that you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line before you move to the next section.
+**Note:** If you are using a different version of Hadoop (which is annotated at the end of your Spark install folder name), you'll need to [select a version of WinUitls](https://github.com/steveloughran/winutils) compatible with your version of Hadoop. 
+
+### 7. Set DOTNET_WORKER_DIR & Check Dependencies
+
+Run the following command to set the `DOTNET_WORKER_DIR` Environment Variable. This is used by .NET apps to locate .NET for Apache Spark.
+
+`setx DOTNET_WORKER_DIR "C:\bin\Microsoft.Spark.Worker-0.6.0"`
+
+Finally, double-check that you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line before you move to the next section.
 
 ## Download the Microsoft.Spark.Worker release
 

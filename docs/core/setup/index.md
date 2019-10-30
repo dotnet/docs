@@ -1,13 +1,13 @@
 ---
-title: Prerequisites for .NET Core on Windows, Linux, and macOS
-description: Supported Windows, Linux, and macOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications.
+title: Install .NET Core on Windows, Linux, and macOS
+description: Learn where and what to install for .NET Core on Windows, Linux, and macOS versions. Discover the dependencies required to develop, deploy, and run .NET Core applications.
 author: leecow
 ms.author: leecow
 ms.date: 10/30/2019
 zone_pivot_groups: operating-systems-set-one
 ---
 
-# Prerequisites for .NET Core
+# Install for .NET Core
 
 This article provides information on what is required to install .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
 
@@ -17,24 +17,24 @@ There are different kinds of ways to develop .NET Core apps:
 
 ::: zone pivot="os-windows"
 
-- [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
 - [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Command-line with your favorite editor](../tutorials/using-with-xplat-cli.md)
 
 ::: zone-end
 
 ::: zone pivot="os-linux"
 
-- [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Command-line with your favorite editor](../tutorials/using-with-xplat-cli.md)
 
 ::: zone-end
 
 ::: zone pivot="os-macos"
 
-- [Command-line with your favorite editor](tutorials/using-with-xplat-cli.md)
 - [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link).
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [Command-line with your favorite editor](../tutorials/using-with-xplat-cli.md)
 
 ::: zone-end
 
@@ -377,9 +377,9 @@ Visual Studio installs the latest .NET Core SDK tools, and one or more runtimes 
 
 Selecting any of the managed workloads for **Web**, **Desktop**, or **Azure development**, will install the .NET Core development tools and runtime. Specifically choosing the **.NET Core** workload also installs .NET Core.
 
-[![Windows Visual Studio 2019 with .NET Core workload](media/prerequisites/windows-install-visual-studio-2019.png)](media/prerequisites/windows-install-visual-studio-2019.png#lightbox)
+[![Windows Visual Studio 2019 with .NET Core workload](media/index/windows-install-visual-studio-2019.png)](media/index/windows-install-visual-studio-2019.png#lightbox)
 
-After you've installed Visual Studio, create your first app by following the [C# Hello World tutorial](tutorials/with-visual-studio.md) or the [Visual Basic Hello World tutorial](tutorials/vb-with-visual-studio.md).
+After you've installed Visual Studio, create your first app by following the [C# Hello World tutorial](../tutorials/with-visual-studio.md) or the [Visual Basic Hello World tutorial](tutorials/vb-with-visual-studio.md).
 
 ::: zone-end
 
@@ -389,9 +389,9 @@ After you've installed Visual Studio, create your first app by following the [C#
 
 Visual Studio for Mac installs the .NET Core SDK when the **.NET Core workload** is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](https://docs.microsoft.com/visualstudio/mac/installation?view=vsmac-2019).
 
-[![macOS Visual Studio 2019 for Mac with .NET Core workload feature](media/prerequisites/mac-install-selection.png)](media/prerequisites/mac-install-selection.png#lightbox)
+[![macOS Visual Studio 2019 for Mac with .NET Core workload feature](media/index/mac-install-selection.png)](media/index/mac-install-selection.png#lightbox)
 
-After you've installed Visual Studio for Mac, create your first app by following the [Get started on macOS](tutorials/using-on-mac-vs.md) tutorial.
+After you've installed Visual Studio for Mac, create your first app by following the [Get started on macOS](../tutorials/using-on-mac-vs.md) tutorial.
 
 ::: zone-end
 
@@ -411,7 +411,7 @@ After you've installed .NET Core support for VS Code, create your first app by f
 
 ## Install with PowerShell automation
 
-The [dotnet-install scripts](./tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](tools/dotnet-install-script.md).
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
 The script defaults to installing the latest "LTS" version, which is currently .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
 
@@ -436,7 +436,7 @@ On Linux, there are two installer package choices:
 
 ## Install with bash automation
 
-The [dotnet-install scripts](./tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](tools/dotnet-install-script.md).
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
 The script defaults to installing the latest "LTS" version, which is currently .NET Core 2.1. To install the current release of .NET Core, which is 3.0, run the script with the following switch:
 
@@ -450,4 +450,4 @@ The installer bash script is used in automation scenarios and non-admin installa
 
 ## Next steps
 
-- [Get started with .NET Core](get-started.md)
+- [Get started with .NET Core](../get-started.md)

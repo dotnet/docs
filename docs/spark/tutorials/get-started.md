@@ -16,12 +16,12 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Prepare your Windows environment for .NET for Apache Spark
-> * Write your first .NET for Apache Spark
+> * Write your first .NET for Apache Spark application
 > * Build and run your simple .NET for Apache Spark application
 
 ## Prepare your environment
 
-Before you begin, make sure you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line. If your environment is already prepared, you can skip to the next section. If you cannot run any or all of the commands, follow the steps below.
+Before you begin writing your app, you need to setup some prerequisite dependencies. If you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, follow the steps below.
 
 ### 1. Install .NET
 
@@ -196,7 +196,7 @@ In this tutorial, you learned how to:
 > [!div class="checklist"]
 >
 > * Prepare your Windows environment for .NET for Apache Spark
-> * Write your first .NET for Apache Spark
+> * Write your first .NET for Apache Spark application
 > * Build and run your simple .NET for Apache Spark application
 
 Check out the resources page to learn more.

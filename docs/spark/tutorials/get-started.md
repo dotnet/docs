@@ -65,7 +65,7 @@ Apache Spark is downloaded as a compressed .tgz file. You'll need 7-zip to extra
       * Enter **C:\bin** in the **Extract to** field.
       * Uncheck the checkbox below the **Extract to** field.
       * Click **OK**.
-      * The Apache Spark files are extracted to **C:\bin\spark-2.4.1-bin-hadoop2.7\**
+      * The Apache Spark files are extracted to C:\bin\spark-2.4.1-bin-hadoop2.7\
       
 ![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
       
@@ -116,8 +116,10 @@ Finally, double-check that you can run `dotnet`, `java`, `mvn`, `spark-shell` fr
 
 In your command prompt, run the following commands to create a new console application:
 
-`dotnet new console -o mySparkApp
-cd mySparkApp`
+```
+dotnet new console -o mySparkApp
+cd mySparkApp
+```
 
 The `dotnet` command creates a `new` application of type `console` for you. The `-o` parameter creates a directory named mySparkApp where your app is stored, and populates it with the required files. The `cd mySparkApp` command puts you into the newly created app directory.
 

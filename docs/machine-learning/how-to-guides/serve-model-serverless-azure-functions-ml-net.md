@@ -113,13 +113,6 @@ The following link provides more information if you want to learn more about [de
 1. In the **Add New Item** dialog box, select **Class** and change the **Name** field to *Startup.cs*. Then, select the **Add** button.
 1. Add the following using statement to the top of *Startup.cs*:
 
-```csharp
-using Microsoft.Azure.Functions.Extensions.DependencyInjection;
-using Microsoft.Extensions.ML;
-using SentimentAnalysisFunctionsApp;
-using SentimentAnalysisFunctionsApp.DataModels;
-```
-
 [!code-csharp [StartupUsings](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L1-L6)]
 
 1. Remove the existing code below the using statements and add the following code to the *Startup.cs* file:
@@ -137,43 +130,13 @@ namespace SentimentAnalysisFunctionsApp
 
 1. Define two variables for the environment the app is running in and the file path where the model is stored inside the `Startup` class
 
-```csharp
-private readonly string _environment;
-private readonly string _modelPath;
-```
-
 [!code-csharp [DefineStartupVars](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L13-L14)]
 
 1. Below that, create a constructor to set the values of the `_environment` and `_modelPath` parameters. When the application is running locally, the default environment is *Development*.
 
-```csharp
-public Startup()
-{
-    _environment = Environment.GetEnvironmentVariable("AZURE_FUNCTIONS_ENVIRONMENT");
-
-    if (_environment == "Development")
-    {
-        _modelPath = Path.Combine("MLModels", "sentiment_model.zip");
-    }
-    else
-    {
-        string deploymentPath = @"D:\home\site\wwwroot\";
-        _modelPath = Path.Combine(deploymentPath, "MLModels", "sentiment_model.zip");
-    }
-}
-```
-
 [!code-csharp [StartupCtor](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L16-L29)]
 
 1. Then, add a new method called `Configure` to registed the `PredictionEnginePool` service below the constructor.
-
-```csharp
-public override void Configure(IFunctionsHostBuilder builder)
-{
-    builder.Services.AddPredictionEnginePool<SentimentData, SentimentPrediction>()
-        .FromFile(modelName: "SentimentAnalysisModel", filePath: _modelPath, watchForChanges: true);
-}
-```
 
 [!code-csharp [ConfigureServices](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/Startup.cs#L31-L35)]
 
@@ -207,29 +170,6 @@ This code assigns the `PredictionEnginePool` by passing it to the function's con
 ## Use the model to make predictions
 
 Replace the existing implementation of *Run* method in *AnalyzeSentiment* class with the following code:
-
-```csharp
-[FunctionName("AnalyzeSentiment")]
-public async Task<IActionResult> Run(
-[HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
-ILogger log)
-{
-    log.LogInformation("C# HTTP trigger function processed a request.");
-
-    //Parse HTTP Request Body
-    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-    SentimentData data = JsonConvert.DeserializeObject<SentimentData>(requestBody);
-
-    //Make Prediction
-    SentimentPrediction prediction = _predictionEnginePool.Predict(modelName: "SentimentAnalysisModel", example: data);
-
-    //Convert prediction to string
-    string sentiment = Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative";
-
-    //Return Prediction
-    return (ActionResult)new OkObjectResult(sentiment);
-}
-```
 
 [!code-csharp [AnalyzeRunMethod](~/machinelearning-samples/samples/csharp/end-to-end-apps/ScalableMLModelOnAzureFunction/SentimentAnalysisFunctionsApp/AnalyzeSentiment.cs#L26-L45)]
 

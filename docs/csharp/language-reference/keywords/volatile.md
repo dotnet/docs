@@ -49,6 +49,6 @@ With the `volatile` modifier added to the declaration of `_shouldStop` in place,
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](/dotnet/csharp/language-reference/keywords)
 - [lock statement](lock-statement.md)
 - <xref:System.Threading.Interlocked>

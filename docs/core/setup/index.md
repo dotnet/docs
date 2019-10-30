@@ -379,7 +379,7 @@ Selecting any of the managed workloads for **Web**, **Desktop**, or **Azure deve
 
 [![Windows Visual Studio 2019 with .NET Core workload](media/index/windows-install-visual-studio-2019.png)](media/index/windows-install-visual-studio-2019.png#lightbox)
 
-After you've installed Visual Studio, create your first app by following the [C# Hello World tutorial](../tutorials/with-visual-studio.md) or the [Visual Basic Hello World tutorial](tutorials/vb-with-visual-studio.md).
+After you've installed Visual Studio, create your first app by following the [C# Hello World tutorial](../tutorials/with-visual-studio.md) or the [Visual Basic Hello World tutorial](../tutorials/vb-with-visual-studio.md).
 
 ::: zone-end
 

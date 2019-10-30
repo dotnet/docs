@@ -45,34 +45,11 @@ Create a new WPF application and in *MainWindow.xaml* (or another window of your
 
 Set the content of the `<Window>` element to the following XAML:
 
-```xaml
-<StackPanel Margin="10">
-    <Label>Unstyled Button</Label>
-    <Button>Button 1</Button>
-    <Label>Rounded Button</Label>
-    <Button>Button 2</Button>
-</StackPanel>
-```
+[!code-xaml[Initial](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window1.xaml#Initial)]
 
 In the end, the *MainWindow.xaml* file should look similar to the following:
 
-```xaml
-<Window x:Class="IntroToStylingAndTemplating.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:IntroToStylingAndTemplating"
-        mc:Ignorable="d"
-        Title="Template Intro Sample" SizeToContent="WidthAndHeight" MinWidth="250">
-    <StackPanel Margin="10">
-        <Label>Unstyled Button</Label>
-        <Button>Button 1</Button>
-        <Label>Rounded Button</Label>
-        <Button>Button 2</Button>
-    </StackPanel>
-</Window>
-```
+[!code-xaml[InitialWhole](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window1.xaml#InitialWhole)]
 
 If you run the application, it looks like the following:
 
@@ -84,26 +61,7 @@ The most common way to declare a <xref:System.Windows.Controls.ControlTemplate> 
 
 To start with, add a `Window.Resources` element to your *MainWindow.xaml* file:
 
-```xaml
-<Window x:Class="IntroToStylingAndTemplating.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:IntroToStylingAndTemplating"
-        mc:Ignorable="d"
-        Title="Template Intro Sample" SizeToContent="WidthAndHeight" MinWidth="250">
-    <Window.Resources>
-
-    </Window.Resources>
-    <StackPanel Margin="10">
-        <Label>Unstyled Button</Label>
-        <Button>Button 1</Button>
-        <Label>Rounded Button</Label>
-        <Button>Button 2</Button>
-    </StackPanel>
-</Window>
-```
+[!code-xaml[WindowResStart](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window2.xaml#WindowResStart)]
 
 Create a new `<ControlTemplate>` with the following properties set:
 
@@ -113,6 +71,8 @@ Create a new `<ControlTemplate>` with the following properties set:
 | **TargetType**    | `Button` |
 
 This control template will be simple. A root element for the control, a <xref:System.Windows.Controls.Grid>. An <xref:System.Windows.Shapes.Ellipse> to draw the rounded appearance of the button. And a <xref:System.Windows.Controls.ContentPresenter> to display the user-specified button content.
+
+[!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window3.xaml#ControlTemplate)]
 
 ```xaml
 <ControlTemplate x:Key="roundbutton" TargetType="Button">

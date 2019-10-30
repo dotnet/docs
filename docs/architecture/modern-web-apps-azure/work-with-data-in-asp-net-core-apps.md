@@ -336,20 +336,20 @@ It's possible in NoSQL databases to store multiple versions of objects, somethin
 
 NoSQL databases typically do not enforce [ACID](https://en.wikipedia.org/wiki/ACID), which means they have both performance and scalability benefits over relational databases. They're well-suited to extremely large datasets and objects that are not well-suited to storage in normalized table structures. There is no reason why a single application cannot take advantage of both relational and NoSQL databases, using each where it is best suited.
 
-## Azure DocumentDB
+## Azure Cosmos DB
 
-Azure DocumentDB is a fully managed NoSQL database service that offers cloud-based schema-free data storage. DocumentDB is built for fast and predictable performance, high availability, elastic scaling, and global distribution. Despite being a NoSQL database, developers can use rich and familiar SQL query capabilities on JSON data. All resources in DocumentDB are stored as JSON documents. Resources are managed as _items_, which are documents containing metadata, and _feeds_, which are collections of items. Figure 8-2 shows the relationship between different DocumentDB resources.
+Azure Cosmos DB is a fully managed NoSQL database service that offers cloud-based schema-free data storage. Cosmos DB is built for fast and predictable performance, high availability, elastic scaling, and global distribution. Despite being a NoSQL database, developers can use rich and familiar SQL query capabilities on JSON data. All resources in Cosmos DB are stored as JSON documents. Resources are managed as _items_, which are documents containing metadata, and _feeds_, which are collections of items. Figure 8-2 shows the relationship between different Cosmos DB resources.
 
-![The hierarchical relationship between resources in DocumentDB, a NoSQL JSON database](./media/image8-2.png)
+![The hierarchical relationship between resources in Cosmos DB, a NoSQL JSON database](./media/image8-2.png)
 
-**Figure 8-2.** DocumentDB resource organization.
+**Figure 8-2.** Cosmos DB resource organization.
 
-The DocumentDB query language is a simple yet powerful interface for querying JSON documents. The language supports a subset of ANSI SQL grammar and adds deep integration of JavaScript object, arrays, object construction, and function invocation.
+The Cosmos DB query language is a simple yet powerful interface for querying JSON documents. The language supports a subset of ANSI SQL grammar and adds deep integration of JavaScript object, arrays, object construction, and function invocation.
 
-**References – DocumentDB**
+**References – Cosmos DB**
 
-- DocumentDB Introduction  
-  <https://docs.microsoft.com/azure/documentdb/documentdb-introduction>
+- Cosmos DB Introduction  
+  <https://docs.microsoft.com/azure/cosmos-db/introduction>
 
 ## Other persistence options
 

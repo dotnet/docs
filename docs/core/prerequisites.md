@@ -397,7 +397,7 @@ After you've installed Visual Studio for Mac, create your first app by following
 
 ## Install with Visual Studio Code
 
-Visual Studio Code (VS Code) is a powerful and lightweight source code editor that runs on your desktop. VS Code is available for Windows, macOS, and Linux.
+Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. VS Code is available for Windows, macOS, and Linux.
 
 While VS Code doesn't come with .NET Core support, adding .NET Core support is simple.
 

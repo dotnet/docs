@@ -27,4 +27,4 @@ The connection pool blocking period has been removed for connections to Azure SQ
   
 ## See also
 
-- [Runtime Changes](/dotnet/framework/migration-guide/runtime/index)
+- [Runtime Changes](runtime/index.md)

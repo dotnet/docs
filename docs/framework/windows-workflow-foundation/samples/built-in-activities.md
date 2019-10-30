@@ -13,7 +13,7 @@ This section contains samples that demonstrate built-in Windows Workflow Foundat
  [Load From XAML](load-from-xaml.md)  
  Demonstrates how to dynamically load a XAML workflow without having to run the XamlBuildTask tool.
   
- [Using the InvokeMethod Activity](/dotnet/framework/windows-workflow-foundation/samples/built-in-activities)  
+ [Using the InvokeMethod Activity](built-in-activities.md)  
  Demonstrates how to use the <xref:System.Activities.Statements.InvokeMethod> activity to invoke public methods in public classes.  
   
  [Using the Pick Activity](using-the-pick-activity.md)  

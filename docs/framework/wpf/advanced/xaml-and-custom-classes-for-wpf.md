@@ -106,7 +106,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
 ## See also
 
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Control Authoring Overview](../controls/control-authoring-overview.md)
 - [Base Elements Overview](base-elements-overview.md)

@@ -64,4 +64,4 @@ Console.WriteLine(doubleType.FullName);
 - [Value types](value-types.md)
 - [Reference types](reference-types.md)
 - [Default values table](default-values-table.md)
-- [dynamic](/dotnet/csharp/language-reference/builtin-types/reference-types)
+- [dynamic](../builtin-types/reference-types.md)

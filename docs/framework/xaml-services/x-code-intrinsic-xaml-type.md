@@ -46,4 +46,4 @@ Allows placement of code within a XAML production. Such code can either be compi
 
 - [x:Class Directive](x-class-directive.md)
 - [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML Overview (WPF)](../../desktop-wpf/fundamentals/xaml.md)

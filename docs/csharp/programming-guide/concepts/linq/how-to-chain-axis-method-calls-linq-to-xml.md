@@ -112,4 +112,4 @@ foreach (XElement e in names)
   
 ## See also
 
-- [LINQ to XML Axes (C#)](/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml-axes-overview)
+- [LINQ to XML Axes (C#)](linq-to-xml-axes-overview.md)

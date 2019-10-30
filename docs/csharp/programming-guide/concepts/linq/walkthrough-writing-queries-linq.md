@@ -179,4 +179,4 @@ This walkthrough demonstrates the C# language features that are used to write LI
 ## See also
 
 - [Language-Integrated Query (LINQ) (C#)](./index.md)
-- [LINQ Query Expressions](/dotnet/csharp/linq/index)
+- [LINQ Query Expressions](../../../linq/index.md)

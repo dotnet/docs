@@ -12,7 +12,7 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
   
 3. Ensure that any network-specific exceptions are normalized to the appropriate derived class of <xref:System.ServiceModel.CommunicationException>.  
   
-4. Add a [\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings) element that adds the custom transport to a channel stack. For more information, see [Adding a Binding Element](#AddingABindingElement).  
+4. Add a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element that adds the custom transport to a channel stack. For more information, see [Adding a Binding Element](#AddingABindingElement).  
   
 5. Add a binding element extension section to expose the new binding element to the configuration system.  
   
@@ -116,7 +116,7 @@ message = MessageEncoderFactory.Encoder.ReadMessage(new ArraySegment<byte>(buffe
   
 <a name="AddingABindingElement"></a>   
 ## Adding a Binding Element  
- Now that the factories and channels are built, we must expose them to the ServiceModel runtime through a binding. A binding is a collection of binding elements that represents the communication stack associated with a service address. Each element in the stack is represented by a [\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings) element.  
+ Now that the factories and channels are built, we must expose them to the ServiceModel runtime through a binding. A binding is a collection of binding elements that represents the communication stack associated with a service address. Each element in the stack is represented by a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element.  
   
  In the sample, the binding element is `UdpTransportBindingElement`, which derives from <xref:System.ServiceModel.Channels.TransportBindingElement>. It overrides the following methods to build the factories associated with our binding.  
   

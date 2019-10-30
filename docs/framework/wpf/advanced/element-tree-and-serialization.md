@@ -33,5 +33,5 @@ WPF programming elements often exist in some form of tree relationship to each o
   [Events](events-wpf.md)  
   [Input](input-wpf.md)  
   [Resources](resources-wpf.md)  
-  [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)  
+  [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
   [Threading Model](threading-model.md)

@@ -383,4 +383,4 @@ In this tutorial, you learned how to:
 
 Advance to the next tutorial to learn more
 > [!div class="nextstepaction"]
-> [Taxi Fare Predictor](/dotnet/machine-learning/tutorials/predict-prices)
+> [Taxi Fare Predictor](predict-prices.md)

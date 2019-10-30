@@ -298,7 +298,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- In the first line, the [lambda expression](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](https://blogs.msdn.microsoft.com/ericlippert/2003/09/17/what-are-closures/) the local variable `name`. This means that in addition to allocating an object for the [delegate](/dotnet/csharp/language-reference/builtin-types/reference-types) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`. The compiler generates code like the following:  
+ In the first line, the [lambda expression](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](https://blogs.msdn.microsoft.com/ericlippert/2003/09/17/what-are-closures/) the local variable `name`. This means that in addition to allocating an object for the [delegate](../../csharp/language-reference/builtin-types/reference-types.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`. The compiler generates code like the following:  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  

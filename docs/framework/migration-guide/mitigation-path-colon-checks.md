@@ -26,4 +26,4 @@ Starting with apps that target the .NET Framework 4.6.2, a number of changes wer
   
 ## See also
 
-- [Retargeting Changes](/dotnet/framework/migration-guide/retargeting/index)
+- [Retargeting Changes](retargeting/index.md)

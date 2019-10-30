@@ -103,4 +103,4 @@ foreach (string company in results)
 
 - [Expression Trees (C#)](./index.md)
 - [How to: Execute Expression Trees (C#)](./how-to-execute-expression-trees.md)
-- [How to: Dynamically Specify Predicate Filters at Runtime](/dotnet/csharp/linq/dynamically-specify-predicate-filters-at-runtime)
+- [How to: Dynamically Specify Predicate Filters at Runtime](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)

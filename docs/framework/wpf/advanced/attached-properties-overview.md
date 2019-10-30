@@ -140,5 +140,5 @@ WPF defines several [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includ
 - <xref:System.Windows.DependencyProperty>
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Register an Attached Property](how-to-register-an-attached-property.md)

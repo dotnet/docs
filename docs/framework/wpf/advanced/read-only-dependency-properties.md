@@ -39,4 +39,4 @@ This topic describes read-only dependency properties, including existing read-on
 
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

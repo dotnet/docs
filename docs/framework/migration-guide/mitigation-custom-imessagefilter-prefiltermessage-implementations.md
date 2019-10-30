@@ -41,4 +41,4 @@ In addition, apps that target previous versions of the .NET Framework but are ru
 
 ## See also
 
-- [Retargeting Changes](/dotnet/framework/migration-guide/retargeting/index)
+- [Retargeting Changes](retargeting/index.md)

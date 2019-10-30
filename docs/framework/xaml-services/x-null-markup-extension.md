@@ -41,5 +41,5 @@ Specifies `null` as a value for a XAML member.
 ## See also
 
 - <xref:System.Windows.DependencyProperty.UnsetValue>
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML Overview (WPF)](../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)

@@ -41,6 +41,6 @@ This example shows how to bind to objects returned by Web service method calls.
   
 ## See also
 
-- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Binding Sources Overview](binding-sources-overview.md)
 - [Make Data Available for Binding in XAML](how-to-make-data-available-for-binding-in-xaml.md)

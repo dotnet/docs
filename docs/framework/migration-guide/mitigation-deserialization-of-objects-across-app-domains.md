@@ -42,4 +42,4 @@ In some cases, when an app uses two or more app domains with different applicati
   
 ## See also
 
-- [Runtime Changes](/dotnet/framework/migration-guide/runtime/index)
+- [Runtime Changes](runtime/index.md)

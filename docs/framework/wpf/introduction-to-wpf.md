@@ -606,7 +606,7 @@ The following example references the resource dictionary defined in the previous
 
 Resources and resource dictionaries are the foundation of WPF support for themes and skins.
 
-For more information, see [Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).
+For more information, see [Resources](../../desktop-wpf/fundamentals/xaml-resources-define.md).
 
 ### Custom controls
 

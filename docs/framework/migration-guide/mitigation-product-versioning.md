@@ -36,4 +36,4 @@ In general, applications should depend on the recommended techniques for detecti
 
 ## See also
 
-- [Runtime Changes](/dotnet/framework/migration-guide/runtime/index)
+- [Runtime Changes](runtime/index.md)

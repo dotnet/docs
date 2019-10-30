@@ -35,7 +35,7 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Example  
   

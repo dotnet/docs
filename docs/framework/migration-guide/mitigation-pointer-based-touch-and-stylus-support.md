@@ -48,4 +48,4 @@ Removing this entry or setting its value to `false` turns this optional stack of
 
 ## See also
 
-- [Retargeting Changes in the .NET Framework 4.7](/dotnet/framework/migration-guide/retargeting/index)
+- [Retargeting Changes in the .NET Framework 4.7](retargeting/index.md)

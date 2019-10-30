@@ -36,4 +36,4 @@ The <xref:System.Windows.Controls.ToolBar> defines <xref:System.Windows.Resource
   
 ## See also
 
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

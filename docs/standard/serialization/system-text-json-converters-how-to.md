@@ -213,18 +213,22 @@ The following sections provide converter samples that address some common scenar
 
 When deserializing to a property of type `Object`, a `JsonElement` object is created. The reason is that the deserializer doesn't know what CLR type to create, and it doesn't try to guess. For example, if a JSON element has "true", the deserializer doesn't infer that the value is a `Boolean`, and if an element has "01/01/2019", the deserializer doesn't infer that it's a `DateTime`. You can implement type inference in a custom converter.
 
-The following code shows a converter that converts `true` or `false` values in JSON to a Boolean value in an Object property. For other values, the code falls back to `JsonElement`.
+The following code shows a converter that converts `true` or `false` values in JSON to Boolean in an Object property, numbers to `long`, dates to `DateTime`, and strings to `string`. For other values, the code falls back to `JsonElement`.
 
 ```csharp
 using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace SystemTextJsonConverters
+namespace SystemTextJsonSamples
 {
-    public class ObjectToBoolConverter : JsonConverter<object>
+    public class ConverterInferredTypesToObject
+        : JsonConverter<object>
     {
-        public override object Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override object Read(
+            ref Utf8JsonReader reader,
+            Type typeToConvert,
+            JsonSerializerOptions options)
         {
             if (reader.TokenType == JsonTokenType.True)
             {
@@ -236,18 +240,40 @@ namespace SystemTextJsonConverters
                 return false;
             }
 
-            // Use JsonElement as fallback.
-            var converter = options.GetConverter(typeof(JsonElement)) as JsonConverter<JsonElement>;
-            if (converter != null)
+            if (reader.TokenType == JsonTokenType.Number)
             {
-                return converter.Read(ref reader, typeToConvert, options);
+                if (reader.TryGetInt64(out long l))
+                {
+                    return l;
+                }
+
+                return reader.GetDouble();
             }
-            throw new JsonException();
+
+            if (reader.TokenType == JsonTokenType.String)
+            {
+                if (reader.TryGetDateTime(out DateTime datetime))
+                {
+                    return datetime;
+                }
+
+                return reader.GetString();
+            }
+
+            // Use JsonElement as fallback.
+            // Newtonsoft uses JArray or JObject.
+            using (JsonDocument document = JsonDocument.ParseValue(ref reader))
+            {
+                return document.RootElement.Clone();
+            }
         }
 
-        public override void Write(Utf8JsonWriter writer, object value, JsonSerializerOptions options)
+        public override void Write(
+            Utf8JsonWriter writer,
+            object value,
+            JsonSerializerOptions options)
         {
-            throw new InvalidOperationException("Directly writing object not supported");
+            throw new InvalidOperationException("Should not get here.");
         }
     }
 }
@@ -257,39 +283,37 @@ The following code registers the converter:
 
 ```csharp
 options = new JsonSerializerOptions();
-options.Converters.Add(new ObjectToBoolConverter());
+options.Converters.Add(new ConverterInferredTypesToObject());
 ```
 
 Here's an example type with an Object property:
 
 ```csharp
-class WeatherForecast
+public class WeatherForecastWithObjectProperties
 {
-    public DateTimeOffset Date { get; set; }
-    public int TemperatureC { get; set; }
-    public string Summary { get; set; }
-    public object Rain { get; set; }
+    public object Date { get; set; }
+    public object TemperatureC { get; set; }
+    public object Summary { get; set; }
 }
 ```
 
-The following example of JSON to deserialize contains a Boolean value for the `Rain` property:
+The following example of JSON to deserialize contains values that will be deserialized as `DateTime`, `long`, and `string`:
 
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
   "TemperatureC": 25,
-  "Summary": "Hot and windy",
-  "Rain": true
+  "Summary": "Hot",
 }
 ```
 
-Without the custom converter, deserialization puts a `JsonElement` in the `Rain` property. With the custom converter the `Rain` property gets a Boolean value.
+Without the custom converter, deserialization puts a `JsonElement` in each property.
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` has more examples of custom converters that handle deserialization to Object properties.
+The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
 
 ### Support Dictionary with non-string key
 
-The built-in support for dictionary collections is for `Dictionary<string, TValue>`. That is, the key must be a string. If you need to support a dictionary with an integer or some other type as the key, a custom converter is required.
+The built-in support for dictionary collections is for `Dictionary<string, TValue>`. That is, the key must be a string. To support a dictionary with an integer or some other type as the key, a custom converter is required.
 
 The following code shows a custom converter that works with `Dictionary<int,string>`:
 
@@ -382,7 +406,7 @@ The JSON output from serialization looks like the following example:
 }
 ```
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` has more examples of custom converters that handle non-string-key dictionaries.
+The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
 
 ### Support polymorphic deserialization
 

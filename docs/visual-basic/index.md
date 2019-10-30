@@ -44,7 +44,7 @@ If you don't already have Visual Basic, you can download a free version of Visua
 
 ## Related Sections
 
-- [Get Started Developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio)  
+- [Get Started Developing with Visual Studio](/visualstudio/ide/visual-studio-ide)  
   Provides links to topics that help you learn about the basics of Visual Studio.
 
 - [.NET API Browser](../../api/index.md)  

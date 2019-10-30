@@ -100,6 +100,8 @@ The following is a sample of the data:
     using Microsoft.ML.Transforms.TimeSeries;
     ```
 
+    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L1-L8)]
+
 1. Create `ModelInput` class. Below the `Program` class, add the following code.
 
     ```csharp
@@ -112,6 +114,8 @@ The following is a sample of the data:
         public float TotalRentals { get; set; }
     }
     ```
+
+    [!code-csharp [ModelInputClass](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L120-L127)]    
 
     The `ModelInput` class contains the following columns:
 
@@ -132,6 +136,8 @@ The following is a sample of the data:
     }
     ```
 
+    [!code-csharp [ModelOutputClass](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L129-L137)]
+
     The `ModelOutput` class contains the following columns:
 
     - **ForecastedRentals**: The predicted values for the forecasted period.
@@ -149,11 +155,15 @@ The following is a sample of the data:
     var connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename={dbFilePath};Integrated Security=True;Connect Timeout=30;";
     ```
 
+    [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L16-L19)]
+
 1. Initialize the `mlContext` variable with a new instance of [`MLContext`](xref:Microsoft.ML.MLContext) by adding the following line to the `Main` method.
 
     ```csharp
     MLContext mlContext = new MLContext();
     ```
+
+    [!code-csharp [MLContext](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L21)]
 
     The [`MLContext`](xref:Microsoft.ML.MLContext) class is a starting point for all ML.NET operations, and initializing mlContext creates a new ML.NET environment that can be shared across the model creation workflow objects. It's similar, conceptually, to `DBContext` in Entity Framework.
 
@@ -165,11 +175,15 @@ The following is a sample of the data:
     DatabaseLoader loader = mlContext.Data.CreateDatabaseLoader<ModelInput>();
     ```
 
+    [!code-csharp [CreateDBLoader](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L23)]
+
 1. Define the query to load the data from the database.
 
      ```csharp
     string query = "SELECT RentalDate, CAST(Year as REAL) as Year, CAST(TotalRentals as REAL) as TotalRentals FROM Rentals";
     ```
+
+    [!code-csharp [DefineSQLQuery](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L25)]
 
     ML.NET algorithms expect data to be of type [`Single`](xref:System.Single). Therefore, numerical values coming from the database that are not of type [`Real`](xref:System.Data.SqlDbType), a single-precision floating-point value, have to be case to [`Real`](xref:System.Data.SqlDbType). 
 
@@ -183,11 +197,15 @@ The following is a sample of the data:
                                     query);
     ```
 
+    [!code-csharp [CreateDBSource](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L27-L29)]
+
 1. Load the data into an `IDataView`.
 
     ```csharp
     IDataView dataView = loader.Load(dbSource);
     ```
+
+    [!code-csharp [LoadData](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L31)]
 
 1. The dataset contains two years worth of data. Only data from the first year is used for training, the second year is held out to compare the actual values against the forecast produced by the model. Filter the data using the [`FilterRowsByColumn`](xref:Microsoft.ML.DataOperationsCatalog.FilterRowsByColumn*) transform. 
 
@@ -196,9 +214,11 @@ The following is a sample of the data:
     IDataView secondYearData = mlContext.Data.FilterRowsByColumn(dataView, "Year", lowerBound: 1);
     ```
 
+    [!code-csharp [SplitData](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L33-L34)]
+
     For the first year, only the values in the `Year` column less than 1 are selected by setting the `upperBound` parameter to 1. Conversely, for the second year, values greater than or equal to 1 are selected by setting the `lowerBound` parameter to 1.
 
-## Define time-series analysis pipeline
+## Define time series analysis pipeline
 
 1. Define a pipeline that uses the [SsaForecastingEstimator](xref:Microsoft.ML.Transforms.TimeSeries.SsaForecastingEstimator) to forecast values in a time-series dataset.
 
@@ -214,15 +234,19 @@ The following is a sample of the data:
         confidenceLowerBoundColumn: "LowerBoundRentals",
         confidenceUpperBoundColumn: "UpperBoundRentals");
     ```
-    
+
+    [!code-csharp [DefinePipeline](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L36-L45)]
+
     The `forecastingPipeline` takes 365 data points for the first year
     and samples or splits the time-series dataset into 30-day (monthly) intervals as specified by the `seriesLength` parameter. Each of these samples is analyzed through weekly or 7-day window. When determining what the forecasted value for the next period(s) is, the values from previous seven days are used to make a prediction. The model is set to forecast seven periods into the future as defined by the `horizon` parameter. Because a forecast is an informed guess, it's not always 100% accurate. Therefore, it's good to know the range of values in the best and worst-case scenarios as defined by the upper and lower bounds. In this case, the level of confidence for the lower and upper bounds is set to 95%. The confidence level can be increased or decreased accordingly. The higher the value, the wider the range is between the upper and lower bounds to achieve the desired level of confidence. 
 
-1. Fit the data from the first year to the pipeline.
+1. Use the [`Fit`](xref:Microsoft.ML.Transforms.TimeSeries.SsaForecastingEstimator.Fit*) method to train the model and fit the data to the previously defined `forecastingPipeline`.
 
     ```csharp
     SsaForecastingTransformer forecaster = forecastingPipeline.Fit(firstYearData);
     ```
+
+    [!code-csharp [TrainModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L47)]
 
 ## Evaluate the model
 
@@ -243,6 +267,8 @@ Evaluate how well the model performs by forecasting next year's data and compari
     IDataView predictions = model.Transform(testData);
     ```
 
+    [!code-csharp [EvaluateForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L62)]
+
 1. Get the actual values from the data by using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method.
 
     ```csharp
@@ -250,6 +276,8 @@ Evaluate how well the model performs by forecasting next year's data and compari
                     mlContext.Data.CreateEnumerable<ModelInput>(testData, true)
                         .Select(observed => observed.TotalRentals);
     ```
+
+    [!code-csharp [GetActualRentals](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L65-L67)]
 
 1. Get the forecast values by using the [`CreateEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.CreateEnumerable*) method.
 
@@ -259,11 +287,15 @@ Evaluate how well the model performs by forecasting next year's data and compari
             .Select(prediction => prediction.ForecastedRentals[0]);
     ```
 
+    [!code-csharp [GetForecastRentals](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L70-L72)]
+
 1. Calculate the difference between the actual and forecast values, commonly referred to as the error.
 
     ```csharp
     var metrics = actual.Zip(forecast, (actualValue, forecastValue) => actualValue - forecastValue);
     ```
+
+    [!code-csharp [CalculateError](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L75)]
 
 1. Measure performance by computing the Mean Absolute Error and Root Mean Squared Error values.
 
@@ -271,6 +303,8 @@ Evaluate how well the model performs by forecasting next year's data and compari
     var MAE = metrics.Average(error => Math.Abs(error)); // Mean Absolute Error
     var RMSE = Math.Sqrt(metrics.Average(error => Math.Pow(error, 2))); // Root Mean Squared Error
     ```
+
+    [!code-csharp [CalculateMetrics](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L78-L79)]
 
     To evaluate performance, the following metrics are used:
 
@@ -286,24 +320,36 @@ Evaluate how well the model performs by forecasting next year's data and compari
     Console.WriteLine($"Root Mean Squared Error: {RMSE:F3}\n");
     ```
 
+    [!code-csharp [OutputMetrics](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L82-L85)]
+
+1. Use the `Evaluate` method inside the `Main` method.
+
+    ```csharp
+    Evaluate(secondYearData, forecaster, mlContext);
+    ```
+
+    [!code-csharp [EvaluateModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L49)]
+
 ## Save the model
 
 If you're satisfied with your model, save it for later use in other applications.
 
-1. In the `Main` method, create a [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602). 
+1. In the `Main` method, create a [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602). [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602) is a convenience method to make single predictions.
 
     ```csharp
     var forecastEngine = forecaster.CreateTimeSeriesEngine<ModelInput, ModelOutput>(mlContext);
     ```
 
-    The [`TimeSeriesPredictionEngine`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602) is a convenience method to make single predictions.
+    [!code-csharp [CreateTimeSeriesEngine](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L51)]
 
 1. Save the model to a file called `MLModel.zip` as specified by the previously defined `modelPath` variable. Use the [`Checkpoint`](xref:Microsoft.ML.Transforms.TimeSeries.TimeSeriesPredictionEngine%602.CheckPoint*) method to save the model.
 
 
-```csharp
-forecastEngine.CheckPoint(mlContext, modelPath);
-```
+    ```csharp
+    forecastEngine.CheckPoint(mlContext, modelPath);
+    ```
+
+    [!code-csharp [SaveModel](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L52)]
 
 ## Use the model to forecast demand
 
@@ -321,6 +367,8 @@ forecastEngine.CheckPoint(mlContext, modelPath);
     ```csharp
     ModelOutput forecast = forecaster.Predict();
     ```
+
+    [!code-csharp [SingleForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L91)]
 
 1. Align the actual and forecast values for seven periods.
 
@@ -343,6 +391,8 @@ forecastEngine.CheckPoint(mlContext, modelPath);
             });
     ```
 
+    [!code-csharp [GetForecastOutput](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L93-L108)]
+
 1. Iterate through the forecast output and display it on the console.
 
     ```csharp
@@ -356,6 +406,8 @@ forecastEngine.CheckPoint(mlContext, modelPath);
     }
     ```
 
+    [!code-csharp [DisplayForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L111-L116)]
+
 ## Run the application
 
 1. Inside the `Main` method, call the `Forecast` method.
@@ -363,6 +415,8 @@ forecastEngine.CheckPoint(mlContext, modelPath);
     ```csharp
     Forecast(secondYearData, 7, forecaster, mlContext);
     ```
+
+    [!code-csharp [BuildForecast](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L54)]
 
 1. Run the application. Output similar to that below should appear on the console. For brevity, the output has been condensed.
 
@@ -392,7 +446,7 @@ Inspection of the actual and forecasted values shows the following relationships
 
 ![](./media/time-series-demand-forecasting/forecast.png)
 
-While the forecasted values are not exactly predicting the exact number of rentals, they provide a more narrow range of values that allows an operation to optimize their use of resources. 
+While the forecasted values are not predicting the exact number of rentals, they provide a more narrow range of values that allows an operation to optimize their use of resources. 
 
 Congratulations! You've now successfully built a time-series machine learning model for forecasting bike rental demand.
 

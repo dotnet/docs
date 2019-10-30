@@ -214,8 +214,8 @@ To verify your Visual Studio version:
 | OS                             | Version               | Architectures    |
 | ------------------------------ | --------------------- | ---------------- |
 | Red Hat Enterprise Linux       | 6+, 7                 | x64 |
-| Oracle Linux                   | 7                     | x64 |
-| CentOS                         | 7                     | x64 |
+| CentOS                         | 7, 8                  | x64 |
+| Oracle Linux                   | 7, 8                  | x64 |
 | Fedora                         | 29+                   | x64 |
 | Debian                         | 9+                    | x64, ARM32, ARM64 |
 | Ubuntu                         | 16.04+                | x64, ARM32, ARM64 |
@@ -240,8 +240,8 @@ For more information about how to install .NET Core 3.0 on ARM64, see [Installin
 | OS                             |  Version                |  Architectures   |
 | ------------------------------ | ----------------------- | ---------------- |
 | Red Hat Enterprise Linux       |  6, 7                   | x64 |
-| Oracle Linux                   |  7                      | x64 |
 | CentOS                         |  7                      | x64 |
+| Oracle Linux                   |  7                      | x64 |
 | Fedora                         |  29, 30                 | x64 |
 | Debian                         |  9                      | x64, ARM32 |
 | Ubuntu                         |  16.04, 18.04, 18.10    | x64, ARM32 |
@@ -264,13 +264,13 @@ For more information about .NET Core 2.2 supported OS, distributions, and lifecy
 | OS                             |  Version                |  Architectures   |
 | ------------------------------ | ----------------------- | ---------------- |
 | Red Hat Enterprise Linux       |  6, 7, 8                | x64 |
-| Oracle Linux                   |  7                      | x64 |
 | CentOS                         |  7                      | x64 |
+| Oracle Linux                   |  7                      | x64 |
 | Fedora                         |  29, 30                 | x64 |
 | Debian                         |  9                      | x64, ARM32 |
 | Ubuntu                         |  16.04, 18.04, 19.04    | x64, ARM32 |
 | Linux Mint                     |  17, 18                 | x64 |
-| openSUSE                       |  42.3+                  | x64 |
+| openSUSE                       |  15+                    | x64 |
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |
 | Alpine Linux                   |  3.7+                   | x64 |
 
@@ -349,19 +349,19 @@ For .NET Core applications that use the *System.Drawing.Common* assembly, you'll
 
 # [.NET Core 3.0](#tab/netcore30)
 
-.NET Core 3.0 is supported on **macOS High Sierra (version 10.13)** and later versions. A **x64** CPU architecture is required.
+.NET Core 3.0 is supported on **macOS High Sierra (version 10.13)** and later versions. An **x64** CPU architecture is required.
 
 For more information about .NET Core 3.0 supported OS, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
 
 # [.NET Core 2.2](#tab/netcore22)
 
-.NET Core 2.2 is supported on **macOS Sierra (version 10.12)** and later versions. A **x64** CPU architecture is required.
+.NET Core 2.2 is supported on **macOS Sierra (version 10.12)** and later versions. An **x64** CPU architecture is required.
 
 For more information about .NET Core 2.2 supported OS, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
 
 # [.NET Core 2.1](#tab/netcore21)
 
-.NET Core 2.1 is supported on **macOS Sierra (version 10.12)** and later versions. A **x64** CPU architecture is required.
+.NET Core 2.1 is supported on **macOS Sierra (version 10.12)** and later versions. An **x64** CPU architecture is required.
 
 For more information about .NET Core 2.1 supported OS, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 

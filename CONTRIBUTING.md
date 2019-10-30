@@ -25,15 +25,19 @@ This repository contains the conceptual documentation for .NET. The .NET documen
 
 The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:
 
-- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files).
-- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
-- **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
+- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files). This guideline is strongly recommended if your PR doesn't follow the following guidelines.
+- **DO** look at the current [up for grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues for suggestions on tasks.
+- **DO** create one PR for each task. PRs that include multiple unrelated changes are much harder to review. That delays reviews and merging PRs. This guideline applies to reviews as well: we try not to suggest unrelated changes in reviews; we ask that community reviews adhere to this guideline.
+- **DO** provide a clear description of the work in your PR. Tell us what changed and why. The default description of "update article.md" isn't helpful for reviewers.
+- **DON'T** submit PRs for style-only changes without prior discussion. These PRs take extra time to review for accuracy, and merging them often causes merge conflicts with other important updates. We are working toward following a consistent style, but we are balancing that work with other tasks. Articles are brought into style conformance when we make major updates for other reasons. 
+- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines. New additions should follow these guidelines.
 - **DO** create a separate branch on your fork before working on the articles.
 - **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).
 - **DO** blog and tweet (or whatever) about your contributions, frequently!
 
-> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
+These guidelines help us respect everyone's time. Many people contribute to these repositories. Following these guidelines make it easier for us to review and merge your PR in a timely fashion. These practices minimize conflicts with PRs from other community members and our team. Because PRs that don't follow these guidelines often cause extra work for us and community members, those PRs may be rejected. If you want an exception, start by creating an issue.
 
+> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
 
 ## Process for contributing
 

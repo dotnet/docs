@@ -15,7 +15,7 @@ You can use Windows Presentation Foundation (WPF) controls in Windows Forms-base
 
 The Windows Forms Designer in Visual Studio provides a visual design environment for hosting Windows Presentation Foundation controls. A WPF control is hosted by a special Windows Forms control that's named <xref:System.Windows.Forms.Integration.ElementHost>. This control enables the WPF control to participate in the form's layout and to receive keyboard and mouse messages. At design time, you can arrange the <xref:System.Windows.Forms.Integration.ElementHost> control just as you would any Windows Forms control.
 
-You can also use Windows Forms controls in WPF-based applications. For more information, see [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).
+You can also use Windows Forms controls in WPF-based applications. For more information, see [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio).
 
 ## See also
 

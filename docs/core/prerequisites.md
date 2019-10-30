@@ -448,6 +448,7 @@ The installer bash script is used in automation scenarios and non-admin installa
 
 ::: zone-end
 
+
 ## Next steps
 
 - [Get started with .NET Core](get-started.md)

@@ -16,8 +16,8 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Prepare your Windows environment for .NET for Apache Spark
-> * Download the **Microsoft.Spark.Worker**
-> * Build and run a simple .NET for Apache Spark application
+> * Write your first .NET for Apache Spark
+> * Build and run your simple .NET for Apache Spark application
 
 ## Prepare your environment
 
@@ -183,7 +183,7 @@ This .NET app counts words with Apache Spark
 2. Run the following command to submit your application to run on Apache Spark:
 
    ```powershell
-   %SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local bin\Debug\netcoreapp3.0\microsoft-spark-2.4.x-0.5.0.jar dotnet bin\Debug\netcoreapp3.0\mySparkApp.dll
+   %SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local bin\Debug\netcoreapp3.0\microsoft-spark-2.4.x-0.6.0.jar dotnet bin\Debug\netcoreapp3.0\mySparkApp.dll
    ```
 
 3. When your app runs, you will see the word count data written to the console.
@@ -196,8 +196,8 @@ In this tutorial, you learned how to:
 > [!div class="checklist"]
 >
 > * Prepare your Windows environment for .NET for Apache Spark
-> * Download the **Microsoft.Spark.Worker**
-> * Build and run a simple .NET for Apache Spark application
+> * Write your first .NET for Apache Spark
+> * Build and run your simple .NET for Apache Spark application
 
 Check out the resources page to learn more.
 > [!div class="nextstepaction"]

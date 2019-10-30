@@ -1,5 +1,5 @@
 ---
-title: "How to: Verify that Strings Are in Valid Email Format"
+title: "How to verify that strings are in valid email format"
 ms.date: "12/10/2018"
 ms.technology: dotnet-standard
 dev_langs:
@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "IsMatch method"
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
 ---
-# How to: verify that strings are in valid email format
+# How to verify that strings are in valid email format
 
 The following example uses a regular expression to verify that a string is in valid email format.
 

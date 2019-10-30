@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "source code in multiple languages"
   - "languages, multiple language support by CodeDOM"
 ms.assetid: d077a3e8-bd81-4bdf-b6a3-323857ea30fb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Dynamic Source Code Generation and Compilation
 The .NET Framework includes a mechanism called the Code Document Object Model (CodeDOM) that enables developers of programs that emit source code to generate source code in multiple programming languages at run time, based on a single model that represents the code to render.  

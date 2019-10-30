@@ -32,7 +32,7 @@ CLR method events are further subdivided into the following:
 
 ## CLR Method Events
 
-The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)
+The following table shows the keyword and level. For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -41,7 +41,7 @@ The following table shows the keyword and level. (For more information, see [CLR
 |`JitRundownKeyword` (0x10) rundown provider|Informational (4)|
 |`NGENRundownKeyword` (0x20) rundown provider|Informational (4)|
 
-The following table shows the event information.
+The following table shows the event information:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
@@ -50,7 +50,7 @@ The following table shows the event information.
 |`MethodDCStart_V1`|137|Enumerates methods during a start rundown.|
 |`MethodDCEnd_V1`|138|Enumerates methods during an end rundown.|
 
-The following table shows the event data.
+The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -70,7 +70,7 @@ The following table shows the event data.
 
 These events are raised only under the rundown provider. They signify the end of method enumeration during a start or end rundown. (That is, they are raised when the `NGENRundownKeyword`, `JitRundownKeyword`, `LoaderRundownKeyword`, or `AppDomainResourceManagementRundownKeyword` keyword is enabled.)
 
-The following table shows the keyword and level.
+The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -78,7 +78,7 @@ The following table shows the keyword and level.
 |`JitRundownKeyword` (0x10) rundown provider|Informational (4)|
 |`NGENRundownKeyword` (0x20) rundown provider|Informational (4)|
 
-The following table shows the event information.
+The following table shows the event information:
 
 |Event|Event ID|Description|
 |-----------|--------------|----------------|
@@ -87,7 +87,7 @@ The following table shows the event information.
 |`DCEndInit_V1`|148|Sent before the start of the enumeration during an end rundown.|
 |`DCEndComplete_V1`|146|Sent at the end of the enumeration during an end rundown.|
 
-The following table shows the event data.
+The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -99,7 +99,7 @@ The following table shows the event data.
 
 ## CLR Method Verbose Events
 
-The following table shows the keyword and level.
+The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -108,7 +108,7 @@ The following table shows the keyword and level.
 |`JitRundownKeyword` (0x10) rundown provider|Verbose (5)|
 |`NGENRundownKeyword` (0x20) rundown provider|Verbose (5)|
 
-The following table shows the event information.
+The following table shows the event information:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
@@ -117,7 +117,7 @@ The following table shows the event information.
 |`MethodDCStartVerbose_V1`|141|Enumerates methods during a start rundown.|
 |`MethodDCEndVerbose_V1`|142|Enumerates methods during an end rundown.|
 
-The following table shows the event data.
+The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -138,7 +138,7 @@ The following table shows the event data.
 
 ## MethodJittingStarted Event
 
-The following table shows the keyword and level.
+The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -147,13 +147,13 @@ The following table shows the keyword and level.
 |`JitRundownKeyword` (0x10) rundown provider|Verbose (5)|
 |`NGENRundownKeyword` (0x20) rundown provider|Verbose (5)|
 
-The following table shows the event information.
+The following table shows the event information:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
 |`MethodJittingStarted`|145|Raised when a method is being JIT-compiled.|
 
-The following table shows the event data.
+The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|

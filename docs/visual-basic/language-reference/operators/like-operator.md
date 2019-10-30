@@ -31,7 +31,7 @@ Compares a string against a pattern.
 
 ## Syntax  
   
-```  
+```vb  
 result = string Like pattern  
 ```  
   

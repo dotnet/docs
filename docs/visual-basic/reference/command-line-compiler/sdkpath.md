@@ -15,7 +15,7 @@ Specifies the location of mscorlib.dll and Microsoft.VisualBasic.dll.
   
 ## Syntax  
   
-```  
+```console  
 -sdkpath:path  
 ```  
   

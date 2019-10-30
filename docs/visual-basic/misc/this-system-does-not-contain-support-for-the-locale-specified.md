@@ -16,4 +16,4 @@ You are attempting to use the `VbStrConv` enumeration, but your system does not 
 
 - <xref:System.Globalization>
 
-- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+- [Develop globalized and localized apps](/visualstudio/ide/globalizing-and-localizing-applications)

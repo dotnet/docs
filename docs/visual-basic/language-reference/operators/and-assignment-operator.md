@@ -16,7 +16,7 @@ Concatenates a `String` expression to a `String` variable or property and assign
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty &= expression  
 ```  
   

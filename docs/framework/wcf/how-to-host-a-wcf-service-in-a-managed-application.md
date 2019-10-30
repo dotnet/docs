@@ -12,9 +12,9 @@ To host a service inside a managed application, embed the code for the service i
 
 To start receiving messages, call <xref:System.ServiceModel.ICommunicationObject.Open%2A> on <xref:System.ServiceModel.ServiceHost>. This creates and opens the listener for the service. Hosting a service in this way is often referred to as "self-hosting" because the managed application is doing the hosting work itself. To close the service, call <xref:System.ServiceModel.Channels.CommunicationObject.Close%2A?displayProperty=nameWithType> on <xref:System.ServiceModel.ServiceHost>.
 
-A service can also be hosted in a managed Windows service, in Internet Information Services (IIS), or in Windows Process Activation Service (WAS). For more information about hosting options for a service, see [Hosting Services](../../../docs/framework/wcf/hosting-services.md).
+A service can also be hosted in a managed Windows service, in Internet Information Services (IIS), or in Windows Process Activation Service (WAS). For more information about hosting options for a service, see [Hosting Services](hosting-services.md).
 
-Hosting a service in a managed application is the most flexible option because it requires the least infrastructure to deploy. For more information about hosting services in managed applications, see [Hosting in a Managed Application](../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md).
+Hosting a service in a managed application is the most flexible option because it requires the least infrastructure to deploy. For more information about hosting services in managed applications, see [Hosting in a Managed Application](./feature-details/hosting-in-a-managed-application.md).
 
 The following procedure demonstrates how to implement a self-hosted service in a console application.
 
@@ -44,7 +44,7 @@ The following procedure demonstrates how to implement a self-hosted service in a
      [!code-vb[CFX_SelfHost4#2](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#2)]
 
     > [!NOTE]
-    > For more information about how to define and implement a service interface, see [How to: Define a Service Contract](../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md) and [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md).
+    > For more information about how to define and implement a service interface, see [How to: Define a Service Contract](how-to-define-a-wcf-service-contract.md) and [How to: Implement a Service Contract](how-to-implement-a-wcf-contract.md).
 
 5. At the top of the `Main` method, create an instance of the <xref:System.Uri> class with the base address for the service.
 
@@ -57,7 +57,7 @@ The following procedure demonstrates how to implement a self-hosted service in a
      [!code-vb[CFX_SelfHost4#4](../../../samples/snippets/visualbasic/VS_Snippets_CFX/cfx_selfhost4/vb/module1.vb#4)]
 
     > [!NOTE]
-    > This example uses default endpoints, and no configuration file is required for this service. If no endpoints are configured, then the runtime creates one endpoint for each base address for each service contract implemented by the service. For more information about default endpoints, see [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).
+    > This example uses default endpoints, and no configuration file is required for this service. If no endpoints are configured, then the runtime creates one endpoint for each base address for each service contract implemented by the service. For more information about default endpoints, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).
 
 7. Press **Ctrl**+**Shift**+**B** to build the solution.
 
@@ -93,11 +93,11 @@ The following example creates a <xref:System.ServiceModel.ServiceHost> object to
 - <xref:System.Uri>
 - <xref:System.Configuration.ConfigurationManager.AppSettings%2A>
 - <xref:System.Configuration.ConfigurationManager>
-- [How to: Host a WCF Service in IIS](../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)
-- [Self-Host](../../../docs/framework/wcf/samples/self-host.md)
-- [Hosting Services](../../../docs/framework/wcf/hosting-services.md)
-- [How to: Define a Service Contract](../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)
-- [How to: Implement a Service Contract](../../../docs/framework/wcf/how-to-implement-a-wcf-contract.md)
-- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
-- [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)
+- [How to: Host a WCF Service in IIS](./feature-details/how-to-host-a-wcf-service-in-iis.md)
+- [Self-Host](./samples/self-host.md)
+- [Hosting Services](hosting-services.md)
+- [How to: Define a Service Contract](how-to-define-a-wcf-service-contract.md)
+- [How to: Implement a Service Contract](how-to-implement-a-wcf-contract.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Using Bindings to Configure Services and Clients](using-bindings-to-configure-services-and-clients.md)
+- [System-Provided Bindings](system-provided-bindings.md)

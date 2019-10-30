@@ -10,10 +10,9 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: bd58e91c-4e35-4866-9d55-75ff58c3ed73
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # HttpWebRequest.\_AutoRedirects Field
 
 `HttpWebRequest._AutoRedirects` is an <xref:System.Int32> that reflects the number of redirects made for this <xref:System.Net.HttpWebRequest>.

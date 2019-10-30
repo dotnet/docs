@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 06f3b504-085f-4142-934a-25381fe23d4c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_DEBUG_IL_TO_NATIVE_MAP Structure
 Contains the offsets that are used to map Microsoft intermediate language (MSIL) code to native code.  

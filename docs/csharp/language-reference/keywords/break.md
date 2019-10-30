@@ -22,12 +22,6 @@ In this example, the conditional statement contains a counter that is supposed t
 
 ## Example
 
-In this example, the `break` statement is used to break out of an inner nested loop, and return control to the outer loop.
-
-[!code-csharp[csrefKeywordsJump#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#7)]
-
-## Example
-
 This example demonstrates the use of `break` in a [switch](./switch.md) statement.
 
 [!code-csharp[csrefKeywordsJump#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#2)]
@@ -38,6 +32,18 @@ If you entered `4`, the output would be:
 Enter your selection (1, 2, or 3): 4
 Sorry, invalid selection.
 ```
+
+## Example
+
+In this example, the `break` statement is used to break out of an inner nested loop, and return control to the outer loop. Control is _only_ returned one level up in the nested loops.
+
+[!code-csharp[csrefKeywordsJump#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#7)]
+
+## Example
+
+In this example, the `break` statement is only used to break out of the current branch during each iteration of the loop. The loop itself is unaffected by the instances of `break` that belong to the nested [switch](./switch.md) statement.
+
+[!code-csharp[csrefKeywordsJump#8](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsJump/CS/csrefKeywordsJump.cs#8)]
 
 ## C# language specification
 

@@ -15,7 +15,7 @@ Runs a series of statements as long as a given condition is `True`.
   
 ## Syntax  
   
-```  
+```vb  
 While condition  
     [ statements ]  
     [ Continue While ]  

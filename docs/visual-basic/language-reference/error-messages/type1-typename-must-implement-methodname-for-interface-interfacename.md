@@ -19,7 +19,7 @@ A class or structure claims to implement an interface but does not implement a p
   
 2. Add an `Implements` clause to the end of the `Function` or `Sub` statement. For example:  
   
-    ```  
+    ```vb  
     Public Sub DoSomething() Implements IBaseInterface.DoSomething  
     ```  
   

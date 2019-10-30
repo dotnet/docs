@@ -2,8 +2,6 @@
 title: "ICorDebugInstanceFieldSymbol::GetSize Method"
 ms.date: "03/30/2017"
 ms.assetid: a4af1e3b-6a9f-4855-95ba-5317565c8e2b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInstanceFieldSymbol::GetSize Method
 Gets the size in bytes of the instance field.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5fb645d9-b818-401c-8c2c-c30d86de58ba
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LPOVERLAPPED_COMPLETION_ROUTINE Function Pointer
 Points to a function that notifies the host when an overlapped (that is, asynchronous) I/O to a device has completed.  

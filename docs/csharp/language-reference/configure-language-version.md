@@ -18,7 +18,9 @@ The compiler determines a default based on these rules:
 |----------------|-------|---------------------------|
 |.NET Core|3.x|C# 8.0|
 |.NET Core|2.x|C# 7.3|
-|.NET Standard|all|C# 7.3|
+|.NET Standard|2.1|C# 8.0|
+|.NET Standard|2.0|C# 7.3|
+|.NET Standard|1.x|C# 7.3|
 |.NET Framework|all|C# 7.3|
 
 ## Default for previews

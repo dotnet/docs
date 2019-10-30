@@ -31,7 +31,7 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
 
 ## Syntax
 
-```
+```vb
 [genericmodifier] typename [ As constraintlist ]
 ```
 

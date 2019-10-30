@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6b546be4-f86d-4536-8cfc-1d08e5066eb6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug::SetUnmanagedHandler Method
 Specifies the event handler object for unmanaged events.  

@@ -56,7 +56,7 @@ This section provides detailed information on key C# language features and featu
   
  [Namespaces](./namespaces/index.md)  
   
- [Nullable Types](./nullable-types/index.md)  
+ [Nullable value types](./nullable-types/index.md)  
   
  [Unsafe Code and Pointers](./unsafe-code-pointers/index.md)  
   

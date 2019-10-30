@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "base types, parsing strings"
   - "DateTime object"
   - "time strings"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Parsing Date and Time Strings in .NET
 

@@ -15,9 +15,9 @@ ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
 # \<sharedListeners> Element
 Contains listeners that any source or trace element can reference.  These listeners do not receive any traces by default, and it is not possible to retrieve these listeners at run time. Listeners identified as shared listeners can be added to sources or traces by name.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<sharedListeners>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<sharedListeners>**  
   
 ## Syntax  
   

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 2eb56ea9-8b7e-452b-a209-3d2be719fca6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHostControl Interface
 Provides a method that allows the garbage collector to request the host to change the limits of virtual memory.  

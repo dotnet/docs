@@ -17,10 +17,10 @@ The ASP.NET Web Forms framework is based on a page-centric architecture. Each HT
 
 Pages consist of the following components:
 
-* HTML markup
-* C# or Visual Basic code
-* A code-behind class containing logic and event-handling capabilities
-* Controls
+- HTML markup
+- C# or Visual Basic code
+- A code-behind class containing logic and event-handling capabilities
+- Controls
 
 Controls are reusable units of web UI that can be programmatically placed and interacted with on a page. Pages are composed of files that end with *.aspx* containing markup, controls, and some code. The code-behind classes are in files with the same base name and an *.aspx.cs* or *.aspx.vb* extension, depending on the programming language used. Interestingly, the web server interprets contents of the *.aspx* files and compiles them whenever they change. This recompilation occurs even if the web server is already running.
 

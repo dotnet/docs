@@ -1,4 +1,5 @@
 ## Introduction
+
 Retargeting changes affect apps that are recompiled to target a different .NET Framework. They include:
 
 * Changes in the design-time environment. For example, build tools may emit warnings when previously they did not.

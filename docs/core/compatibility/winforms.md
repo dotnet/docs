@@ -2,8 +2,6 @@
 title: Windows Forms breaking changes - .NET Core
 description: Lists the breaking changes in Windows Forms for .NET Core.
 ms.date: "09/20/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Breaking changes in Windows Forms
 
@@ -47,6 +45,14 @@ The following is a list of breaking changes in Windows Forms by .NET Core versio
 ***
 
 [!INCLUDE[SerializableAttribute removed from some Windows Forms types](~/includes/core-changes/windowsforms/remove-serializationattribute.md)]
+
+## .NET Core 3.0 RC1
+
+[!INCLUDE[Change of access for AccessibleObject.RuntimeIDFirstItem](~/includes/core-changes/windowsforms/changed-access-for-runtimeidfirstitem.md)]
+
+***
+
+[!INCLUDE[Duplicated APIs removed from Windows Forms](~/includes/core-changes/windowsforms/remove-duplicated-apis.md)]
 
 ## .NET Core 3.0
 

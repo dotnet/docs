@@ -1,7 +1,7 @@
 ---
 title: "Tuples in Visual Basic"
 ms.date: 04/23/2017
-helpviewer_keywords: 
+helpviewer_keywords:
   - "tuples [Visual Basic]"
 ms.assetid: 3e66cd1b-3432-4e1d-8c37-5ebacae8f53f
 ---
@@ -34,22 +34,22 @@ Rather than using default names for a tuple's fields, you can instantiate a *nam
 
 ## Inferred tuple element names
 
-Starting with Visual Basic 15.3, Visual Basic can infer the names of tuple elements; you do not have to assign them explicitly. Inferred tuple names are useful when you initialize a tuple from a set of variables, and you want the tuple element name to be the same as the variable name. 
+Starting with Visual Basic 15.3, Visual Basic can infer the names of tuple elements; you do not have to assign them explicitly. Inferred tuple names are useful when you initialize a tuple from a set of variables, and you want the tuple element name to be the same as the variable name.
 
 The following example creates a `stateInfo` tuple that contains three explicitly named elements, `state`, `stateName`, and `capital`. Note that, in naming the elements, the tuple initialization statement simply assigns the named elements the values of the identically named variables.
 
 [!code-vb[ExplicitlyNamed](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#1)]
- 
+
 Because elements and variables have the same name, the Visual Basic compiler can infer the names of the fields, as the following example shows.
 
 [!code-vb[ExplicitlyNamed](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#2)]
 
-To enable inferred tuple element names, you must define the version of the Visual Basic compiler to use in your Visual Basic project (\*.vbproj) file: 
+To enable inferred tuple element names, you must define the version of the Visual Basic compiler to use in your Visual Basic project (\*.vbproj) file:
 
-```xml 
-<PropertyGroup> 
-  <LangVersion>15.3</LangVersion> 
-</PropertyGroup> 
+```xml
+<PropertyGroup>
+  <LangVersion>15.3</LangVersion>
+</PropertyGroup>
 ```
 
 The version number can be any version of the Visual Basic compiler starting with 15.3. Rather than hard-coding a specific compiler version, you can also specify "Latest" as the value of `LangVersion` to compile with the most recent version of the Visual Basic compiler installed on your system.
@@ -61,9 +61,9 @@ In some cases, the Visual Basic compiler cannot infer the tuple element name fro
 - The candidate name is the same as the name of a tuple member, such as `Item3`, `Rest`, or `ToString`.
 
 - The candidate name is duplicated in the tuple.
- 
-When field name inference fails, Visual Basic does not generate a compiler error, nor is an exception thrown at runtime. Instead, tuple fields must be referenced by their predefined names, such as `Item1` and `Item2`. 
-  
+
+When field name inference fails, Visual Basic does not generate a compiler error, nor is an exception thrown at runtime. Instead, tuple fields must be referenced by their predefined names, such as `Item1` and `Item2`.
+
 ## Tuples versus structures
 
 A Visual Basic tuple is a value type that is an instance of one of the a **System.ValueTuple** generic types. For example, the `holiday` tuple defined in the previous example is an instance of the <xref:System.ValueTuple%603> structure. It is designed to be a lightweight container for data. Since the tuple aims to make it easy to create an object with multiple data items, it lacks some of the features that a custom structure might have. These include:
@@ -93,7 +93,7 @@ Visual Basic supports assignment between tuple types that have the same number o
 
 - The source and target field are of the same type.
 
-- A widening (or implicit) conversion of the source type to the target type is defined. 
+- A widening (or implicit) conversion of the source type to the target type is defined.
 
 - `Option Strict` is `On`, and a narrowing (or explicit) conversion of the source type to the target type is defined. This conversion can throw an exception if the source value is outside the range of the target type.
 
@@ -139,7 +139,7 @@ For example, the **TryParse** methods in .NET return a `Boolean` value that indi
 
 [!code-vb[Return](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#1)]
 
-We can return a tuple from the parsing operation if we wrap the call to the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method in our own method. In the following example, `NumericLibrary.ParseInteger` calls the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method and returns a named tuple with two elements. 
+We can return a tuple from the parsing operation if we wrap the call to the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method in our own method. In the following example, `NumericLibrary.ParseInteger` calls the <xref:System.Int32.TryParse%2A?displayProperty=nameWithType> method and returns a named tuple with two elements.
 
 [!code-vb[Return](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#2)]
 

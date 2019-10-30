@@ -60,4 +60,4 @@ When you specify `testObj(1)`, the compiler tries to resolve it to the default p
 
 ## See also
 
-- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+- [Interfaces](../../programming-guide/language-features/interfaces/index.md)

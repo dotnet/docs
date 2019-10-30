@@ -14,7 +14,7 @@ Bypasses a specified number of elements in a collection and then returns the rem
   
 ## Syntax  
   
-```  
+```vb  
 Skip count  
 ```  
   

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 60454f91-d855-4ddf-bb6d-60a02f5eabab
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRPolicyManager::SetTimeoutAndAction Method
 Sets a timeout value for the specified operation, and specifies the policy action the common language runtime (CLR) should take when the operation occurs.  

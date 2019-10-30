@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "names [.NET Framework], assemblies"
   - "assemblies [.NET Framework], names"
 ms.assetid: 8f8c2c90-f15d-400e-87e7-a757e4f04d0e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Assembly names
 An assembly's name is stored in metadata and has a significant impact on the assembly's scope and use by an application. A strong-named assembly has a fully qualified name that includes the assembly's name, culture, public key, and version number. This is frequently referred to as the display name, and for loaded assemblies can be obtained by using the <xref:System.Reflection.Assembly.FullName%2A> property.  
@@ -24,7 +22,7 @@ myTypes, Version=1.0.1234.0, Culture=en-US, PublicKeyToken=b77a5c561934e089c, Pr
   
  Code that requests types in an assembly must use a fully qualified assembly name. This is called fully qualified binding. Partial binding, which specifies only an assembly name, is not permitted when referencing assemblies in the .NET Framework.  
   
- All assembly references to assemblies that make up the .NET Framework also must contain a fully qualified name of the assembly. For example, to reference the System.Data .NET Framework assembly for version 1.0 would include:  
+ All assembly references to assemblies that make up the .NET Framework must also contain the fully qualified name of the assembly. For example, a reference to the System.Data .NET Framework assembly for version 1.0 would include:  
   
 ```  
 System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089  

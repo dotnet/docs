@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 00c64533-15dd-47f4-bb97-fe80a1ebadef
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionObjectValue::EnumerateExceptionCallStack Method
 Gets an enumerator to the call stack embedded in an exception object.  

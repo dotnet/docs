@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8eb9e565-f358-43ce-900e-a8f8a5aa6cfb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IReferenceAppId Interface
 Represents a reference to the unique identifier for the application in the current scope.  

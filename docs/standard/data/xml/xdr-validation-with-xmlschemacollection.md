@@ -18,8 +18,12 @@ If the XML-Data Reduced (XDR) schema you are validating against is stored in the
 
 For example, if the root element of the XML document is `<bookstore xmlns="urn:newbooks-schema">`, when the schema is added to the **XmlSchemaCollection** it references the same namespace, as follows:
 
-```
+```vb
 xsc.Add("urn:newbooks-schema", "newbooks.xdr")
+```
+
+```csharp
+xsc.Add("urn:newbooks-schema", "newbooks.xdr");
 ```
 
 The following code example creates an **XmlValidatingReader** that takes an **XmlTextReader** and adds an XDR schema, HeadCount.xdr, to the **XmlSchemaCollection**:

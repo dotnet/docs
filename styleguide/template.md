@@ -68,13 +68,15 @@ File names use the following rules:
 
 ## Headings
 
-Use sentence-style capitalization. Always capitalize the first word of a heading, but don't capitalize the word following a colon in a title or heading (for example, "How to: sort an array").
+Use sentence-style capitalization. Capitalize the first letter of the first word of a heading, proper nouns, and the first letter following a colon (for example, "Tutorial: Predict prices using regression with ML.NET").
+
+Don't add a colon after "How to" (for example, "How to sort an array" and not "How to: Sort an array").
 
 Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above.
 
 There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
 
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.
+If your heading ends in a `#` character, you need to escape it for the title to render correctly. For example, `# Async programming in F\#`.
 
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 
@@ -309,6 +311,7 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
+|protobuf|protobuf|
 |PowerApps (dot decimal separator)|powerapps-dot|
 |PowerApps (comma decimal separator)|powerapps-comma|
 |PowerShell|powershell|

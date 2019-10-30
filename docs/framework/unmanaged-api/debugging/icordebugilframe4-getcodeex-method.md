@@ -12,8 +12,6 @@ api_type:
 ms.assetid: aeda0e42-29ee-4ca8-9f21-ac4641677a62
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame4::GetCodeEx Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

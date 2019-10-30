@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "asynchronous programming, blocking applications"
   - "blocking application execution"
 ms.assetid: cc5e2834-a65b-4df8-b750-7bdb79997fee
-author: "rpetrusha"
-ms.author: "ronpet"
 dev_langs: 
   - "csharp"
   - "vb"

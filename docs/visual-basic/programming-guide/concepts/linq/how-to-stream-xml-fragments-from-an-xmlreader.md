@@ -132,7 +132,7 @@ End Class
   
  This example produces the following output:  
   
-```  
+```console  
 bbb  
 ccc  
 ```  

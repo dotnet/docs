@@ -21,4 +21,4 @@ A reference was made to a class that is not available.
   
 ## See also
 
-- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
+- [Debugging in Visual Studio](/visualstudio/debugger/debugger-feature-tour)

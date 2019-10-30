@@ -1,8 +1,6 @@
 ---
 title: Breaking change categories - .NET Core
 description: Learn about the ways in which breaking changes are categorized in .NET Core.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 06/10/2019
 ---
 # Breaking change categories
@@ -43,4 +41,4 @@ Maintaining forward compatibility is not a goal of .NET Core.
 
 ## See also
 
-[Evaluate breaking changes in .NET Core](index.md)
+- [Evaluate breaking changes in .NET Core](index.md)

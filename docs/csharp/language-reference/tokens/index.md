@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "@ character (C#)"
   - "$ character (C#)"
 ms.assetid: 4c5c0539-2e37-40b7-91ce-75af5aabd3f9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # C# Special Characters

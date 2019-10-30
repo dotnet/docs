@@ -2,8 +2,6 @@
 title: "ICorDebugModuleDebugEvent Interface"
 ms.date: "03/30/2017"
 ms.assetid: 41950c52-1ac8-4212-b814-c77e20879f91
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModuleDebugEvent Interface
 Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) interface to support module-level events.  

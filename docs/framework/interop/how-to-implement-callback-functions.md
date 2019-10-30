@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "callback function, implementing"
 ms.assetid: e55b3712-b9ea-4453-bd9a-ad5cfa2f6bfa
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Implement Callback Functions
 The following procedure and example demonstrate how a managed application, using platform invoke, can print the handle value for each window on the local computer. Specifically, the procedure and example use the **EnumWindows** function to step through the list of windows and a managed callback function (named CallBack) to print the value of the window handle.  

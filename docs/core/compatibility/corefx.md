@@ -2,8 +2,6 @@
 title: CoreFx breaking changes - .NET Core
 description: Lists the breaking changes in .NET CoreFx, the base class library.
 ms.date: "09/20/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoreFx breaking changes
 
@@ -43,6 +41,10 @@ The following is a list of CoreFx breaking changes by .NET Core version. CoreFx 
 ***
 
 [!INCLUDE[Floating point formatting and parsing behavior changes](~/includes/core-changes/corefx/floating-point-changes.md)]
+
+***
+
+[!INCLUDE[Floating-point parsing operations no longer fail or throw an OverflowException](~/includes/core-changes/corefx/floating-point-parsing-does-not-overflow.md)]
 
 ***
 

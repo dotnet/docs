@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 44cd98cf-2127-4d46-8c6a-da4e857bb6b0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugArrayValue::GetCount Method
 Gets the total number of elements in the array.  

@@ -13,10 +13,10 @@ One of the beautiful things about ASP.NET Web Forms is how it enables encapsulat
 
 Blazor also supports UI encapsulation through *components*. A component:
 
-* Is a self-contained chunk of UI.
-* Maintains its own state and rendering logic.
-* Can define UI event handlers, bind to input data, and manage its own lifecycle.
-* Is typically defined in a *.razor* file using Razor syntax.
+- Is a self-contained chunk of UI.
+- Maintains its own state and rendering logic.
+- Can define UI event handlers, bind to input data, and manage its own lifecycle.
+- Is typically defined in a *.razor* file using Razor syntax.
 
 ## An introduction to Razor
 
@@ -56,12 +56,12 @@ Or you can generate a list of items using a normal C# `foreach` loop like this:
 
 Razor directives, like directives in ASP.NET Web Forms, control many aspects of how a Razor component is compiled. Examples include the component's:
 
-* Namespace
-* Base class
-* Implemented interfaces
-* Generic parameters
-* Imported namespaces
-* Routes
+- Namespace
+- Base class
+- Implemented interfaces
+- Generic parameters
+- Imported namespaces
+- Routes
 
 Razor directives start with the `@` character and are typically used at the start of a new line at the start of the file. For example, the `@namespace` directive defines the component's namespace:
 
@@ -139,8 +139,8 @@ Aside from normal HTML, components can also use other components as part of thei
 
 Unlike ASP.NET Web Forms, components in Blazor:
 
-* Don't use an element prefix (for example, `asp:`).
-* Don't require registration on the page or in the *web.config*.
+- Don't use an element prefix (for example, `asp:`).
+- Don't require registration on the page or in the *web.config*.
 
 Think of Razor components like you would .NET types, because that's exactly what they are. If the assembly containing the component is referenced, then the component is available for use. To bring the component's namespace into scope, apply the `@using` directive:
 
@@ -231,7 +231,7 @@ Event handlers can accept an optional, event-specific argument to provide more i
 <button @onclick="OnClick">Click me!</button>
 
 @code {
-    void OnClick(MouseEventArgs e) 
+    void OnClick(MouseEventArgs e)
     {
         Console.WriteLine($"Mouse clicked at {e.ScreenX}, {e.ScreenY}.");
     }
@@ -253,7 +253,7 @@ Event handlers can execute synchronously or asynchronously. For example, the fol
 <button @onclick="OnClick">Click me!</button>
 
 @code {
-    async Task OnClick() 
+    async Task OnClick()
     {
         var result = await Http.GetAsync("api/values");
     }
@@ -277,7 +277,7 @@ After an event is handled, the component is rendered to account for any componen
     }
 }
 
-@code 
+@code
 {
     bool showMessage = false;
     string message;
@@ -337,9 +337,9 @@ Components can also support data binding to their parameters. To data bind, defi
 *PasswordBox.razor*
 
 ```razor
-Password: <input 
-    value="@Password" 
-    @oninput="OnPasswordChanged" 
+Password: <input
+    value="@Password"
+    @oninput="OnPasswordChanged"
     type="@(showPassword ? "text" : "password")" />
 
 <label><input type="checkbox" @bind="showPassword" />Show password</label>
@@ -425,7 +425,7 @@ public partial class Counter : System.Web.UI.UserControl
 }
 ```
 
-Blazor components also have a well-defined lifecycle. A component's lifecycle can be used to initialize component state and implement advanced component behaviors. 
+Blazor components also have a well-defined lifecycle. A component's lifecycle can be used to initialize component state and implement advanced component behaviors.
 
 All of Blazor's component lifecycle methods have both synchronous and asynchronous versions. Component rendering is synchronous. You can't run asynchronous logic as part of the component rendering. All asynchronous logic must execute as part of an `async` lifecycle method.
 
@@ -449,7 +449,7 @@ protected override async Task OnParametersSetAsync() { await ... }
 
 ### OnAfterRender
 
-The `OnAfterRender` and `OnAfterRenderAsync` methods are called after a component has finished rendering. Element and component references are populated at this point (more on these concepts below). Interactivity with the browser is enabled at this point. Interactions with the DOM and JavaScript execution can safely take place. 
+The `OnAfterRender` and `OnAfterRenderAsync` methods are called after a component has finished rendering. Element and component references are populated at this point (more on these concepts below). Interactivity with the browser is enabled at this point. Interactions with the DOM and JavaScript execution can safely take place.
 
 ```csharp
 protected override void OnAfterRender(bool firstRender)
@@ -519,7 +519,7 @@ Blazor components can capture references to an element. Unlike HTML server contr
 
 ## Templated components
 
-In ASP.NET Web Forms, you can create *templated controls*. Templated controls enable the developer to specify a portion of the HTML used to render a container control. The mechanics of building templated server controls are complex, but they enable powerful scenarios for rendering data in a user customizable way. Examples of templated controls include `Repeater` and `DataList`. 
+In ASP.NET Web Forms, you can create *templated controls*. Templated controls enable the developer to specify a portion of the HTML used to render a container control. The mechanics of building templated server controls are complex, but they enable powerful scenarios for rendering data in a user customizable way. Examples of templated controls include `Repeater` and `DataList`.
 
 Blazor components can also be templated by defining component parameters of type `RenderFragment` or `RenderFragment<T>`. A `RenderFragment` represents a chunk of Razor markup that can then be rendered by the component. A `RenderFragment<T>` is a chunk of Razor markup that takes a parameter that can be specified when the render fragment is rendered.
 
@@ -560,7 +560,7 @@ A templated Blazor component can also define multiple component parameters of ty
 @Heading
 
 <ul>
-@foreach (var item in items)
+@foreach (var item in Items)
 {
     <li>@ItemTemplate(item)</li>
 }
@@ -620,7 +620,7 @@ A Blazor component is typically authored in a single *.razor* file. However, it'
 *Counter.razor.cs*
 
 ```csharp
-public class CounterBase : ComponentBase 
+public class CounterBase : ComponentBase
 {
     protected int currentCount = 0;
 

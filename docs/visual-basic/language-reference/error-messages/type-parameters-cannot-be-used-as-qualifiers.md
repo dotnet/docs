@@ -9,18 +9,19 @@ helpviewer_keywords:
 ms.assetid: bab05325-dde8-4621-a5f6-368b5b7b2d76
 ---
 # Type parameters cannot be used as qualifiers
-A programming element is qualified with a qualification string that includes a type parameter.  
-  
- A type parameter represents a requirement for a type that is to be supplied when the generic type is constructed. It does not represent a specific defined type. A qualification string must include only elements that are defined at compile time.  
-  
- The following statements can generate this error.  
-  
-```  
-Public Function checkText(Of c As System.Windows.Forms.Control)(  
-    ByVal badText As String) As Boolean  
+
+A programming element is qualified with a qualification string that includes a type parameter.
+
+A type parameter represents a requirement for a type that is to be supplied when the generic type is constructed. It does not represent a specific defined type. A qualification string must include only elements that are defined at compile time.
+
+The following code can generate this error:
+
+```vb  
+Public Function CheckText(Of c As System.Windows.Forms.Control)(
+    badText As String) As Boolean
   
     Dim saveText As c.Text  
-    ' Insert code to look for badText within saveText.  
+    ' Insert code to look for badText within saveText.
 End Function  
 ```  
   
@@ -34,6 +35,6 @@ End Function
   
 ## See also
 
-- [References to Declared Elements](../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
-- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [Type List](../../../visual-basic/language-reference/statements/type-list.md)
+- [References to Declared Elements](../../programming-guide/language-features/declared-elements/references-to-declared-elements.md)
+- [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
+- [Type List](../statements/type-list.md)

@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "what's new [.NET Framework]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # What's new in accessibility in the .NET Framework
@@ -624,7 +622,7 @@ Starting with .NET Framework 4.7.1, Windows Forms includes:
 
 ### ASP.NET web controls
 
-Starting with .NET Framework 4.7.1 and Visual Studio 2017 15.3, ASP.NET improves how ASP.NET web controls work with accessibility technology in Visual Studio. Changes include the following:
+Starting with .NET Framework 4.7.1 and Visual Studio 2017 version 15.3, ASP.NET improves how ASP.NET web controls work with accessibility technology in Visual Studio. Changes include the following:
 
 - Changes to implement missing UI accessibility patterns in controls, like the **Add Field** dialog in the **Details View** wizard, or the **Configure ListView** dialog of the **ListView** wizard.
 

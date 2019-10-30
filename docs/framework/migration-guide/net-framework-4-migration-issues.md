@@ -5,8 +5,6 @@ helpviewer_keywords:
   - ".NET Framework 4, migration"
   - "application compatibility"
 ms.assetid: df478548-8c05-4de2-8ba7-adcdbe1c2a60
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework 4 migration issues
 
@@ -310,17 +308,9 @@ Namespaces: <xref:System.Xml.Linq>; <xref:System.Xml.Schema>, <xref:System.Xml.X
 
 ## See also
 
-### Reference
-
 - [New Types and Members in the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ff641764%28v=vs.100%29)
-
-### Concepts
-
 - [Migration Guide to the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ff657133%28v=vs.100%29)
 - [What's New in the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms171868%28v=vs.100%29)
 - [Version Compatibility in the .NET Framework](version-compatibility.md)
 - [Migrating Office Solutions to the .NET Framework 4](/visualstudio/vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later)
-
-### Other resources
-
 - [What's Obsolete in the .NET Framework Class Library](../whats-new/whats-obsolete.md)

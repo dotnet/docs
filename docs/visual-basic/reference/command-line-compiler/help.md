@@ -15,9 +15,13 @@ Displays the compiler options.
   
 ## Syntax  
   
-```  
+```console  
 -help  
-' -or-  
+```
+
+or  
+
+```console
 -?  
 ```  
   
@@ -30,7 +34,7 @@ Displays the compiler options.
 ## Example  
  The following code displays help from the command line.  
   
-```  
+```console  
 vbc -help  
 ```  
   

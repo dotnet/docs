@@ -50,7 +50,7 @@ You can ask questions about this document in the GitHub issue [Transport Layer S
 
 For ASP.NET applications, inspect the `<system.web><httpRuntime targetFramework>` element of _web.config_ to verify you're using the intended version of the .NET Framework.
 
-For Windows Forms and other applications, see [How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).
+For Windows Forms and other applications, see [How to: Target a Version of the .NET Framework](/visualstudio/ide/visual-studio-multi-targeting-overview).
 
 Use the following sections to verify you're not using a specific TLS or SSL version.
 

@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "strong-named assemblies"
   - "strong naming [.NET Framework], enhanced"
 ms.assetid: 6cf17a82-62a1-4f6d-8d5a-d7d06dec2bb5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Enhanced strong naming
 A strong name signature is an identity mechanism in the .NET Framework for identifying assemblies. It is a public-key digital signature that is typically used to verify the integrity of data being passed from an originator (signer) to a recipient (verifier). This signature is used as a unique identity for an assembly and ensures that references to the assembly are not ambiguous. The assembly is signed as part of the build process and then verified when it is loaded.  
@@ -37,25 +35,25 @@ A strong name signature is an identity mechanism in the .NET Framework for ident
   
 1. Generate the new identity key (if necessary).  
   
-    ```  
+    ```console  
     sn -k IdentityKey.snk  
     ```  
   
 2. Extract the identity public key, and specify that a SHA-2 algorithm should be used when signing with this key.  
   
-    ```  
+    ```console  
     sn -p IdentityKey.snk IdentityPubKey.snk sha256  
     ```  
   
 3. Delay-sign the assembly with the identity public key file.  
   
-    ```  
+    ```console  
     csc MyAssembly.cs /keyfile:IdentityPubKey.snk /delaySign+  
     ```  
   
 4. Re-sign the assembly with the full identity key pair.  
   
-    ```  
+    ```console  
     sn -Ra MyAssembly.exe IdentityKey.snk  
     ```  
   
@@ -64,32 +62,32 @@ A strong name signature is an identity mechanism in the .NET Framework for ident
   
 1. Generate an identity and signature key pair (if necessary).  
   
-    ```  
+    ```console  
     sn -k IdentityKey.snk  
     sn -k SignatureKey.snk  
     ```  
   
 2. Extract the signature public key, and specify that a SHA-2 algorithm should be used when signing with this key.  
   
-    ```  
+    ```console  
     sn -p SignatureKey.snk SignaturePubKey.snk sha256  
     ```  
   
 3. Extract the identity public key, which determines the hash algorithm that generates a counter-signature.  
   
-    ```  
+    ```console  
     sn -p IdentityKey.snk IdentityPubKey.snk  
     ```  
   
 4. Generate the parameters for a <xref:System.Reflection.AssemblySignatureKeyAttribute> attribute, and attach the attribute to the assembly.  
   
-    ```  
+    ```console  
     sn -a IdentityPubKey.snk IdentityKey.snk SignaturePubKey.snk  
     ```  
 
     This produces output similar to the following.
 
-    ```
+    ```output
     Information for key migration attribute.
     (System.Reflection.AssemblySignatureKeyAttribute):
     publicKey=
@@ -117,13 +115,13 @@ A strong name signature is an identity mechanism in the .NET Framework for ident
   
 5. Delay-sign the assembly with the identity public key.  
   
-    ```  
+    ```console  
     csc MyAssembly.cs /keyfile:IdentityPubKey.snk /delaySign+  
     ```  
   
 6. Fully sign the assembly with the signature key pair.  
   
-    ```  
+    ```console  
     sn -Ra MyAssembly.exe SignatureKey.snk  
     ```  
   

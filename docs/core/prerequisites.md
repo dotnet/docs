@@ -1,6 +1,6 @@
 ---
-title: Prerequisites for .NET Core on Windows, Linux, MacOS
-description: Supported Windows, Linux, MacOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications.
+title: Prerequisites for .NET Core on Windows, Linux, and macOS
+description: Supported Windows, Linux, and macOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications.
 author: leecow
 ms.author: leecow
 ms.date: 10/30/2019
@@ -195,7 +195,7 @@ If you're using Visual Studio to develop .NET Core applications, the following t
 To verify your Visual Studio version:
 
 01. Open Visual Studio.
-01. Press the **Help** > **About Microsoft Visual Studio** menu.
+01. Select the **Help** menu > **About Microsoft Visual Studio**.
 01. Read the version number from the **About** dialog.
 
 ::: zone-end
@@ -401,9 +401,9 @@ Visual Studio Code (VS Code) is a powerful and lightweight source code editor th
 
 While VS Code doesn't come with .NET Core support, adding .NET Core support is simple.
 
-01. [Download and install Visual Studio Code.](https://code.visualstudio.com/Download)
-01. [Download and install the .NET Core SDK.](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-01. [Install the C# extension from the VS Code marketplace.](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
+01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+01. [Install the C# extension from the VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
 
 After you've installed .NET Core support for VS Code, create your first app by following the [Using .NET Core in Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet) tutorial.
 

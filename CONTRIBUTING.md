@@ -7,9 +7,9 @@ Thank you for your interest in contributing to the .NET documentation!
 
 The document covers the process for contributing to the articles and code samples that are hosted on the [.NET documentation site](https://docs.microsoft.com/dotnet). Contributions may be as simple as typo corrections or as complex as new articles.
 
+- [DOs and DON'Ts](#dos-and-donts)
 - [Process for contributing](#process-for-contributing)
 - [The C# interactive experience](#the-c-interactive-experience)
-- [DOs and DON'Ts](#dos-and-donts)
 - [Contributor License Agreement](#contributor-license-agreement)
 
 This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
@@ -20,6 +20,20 @@ This repository contains the conceptual documentation for .NET. The .NET documen
     Issues and tasks for this repository are tracked in [dotnet/dotnet-api-docs/issues](https://github.com/dotnet/dotnet-api-docs/issues).
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)  
     Issues and taks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
+
+## DOs and DON'Ts
+
+The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:
+
+- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files).
+- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
+- **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
+- **DO** create a separate branch on your fork before working on the articles.
+- **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).
+- **DO** blog and tweet (or whatever) about your contributions, frequently!
+
+> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
+
 
 ## Process for contributing
 
@@ -131,19 +145,6 @@ or corresponding text should include information about the output.
 
 - Articles where the sample generates a larger output should not include that in comments. It obscures the code once the sample has been run.
 - Articles where the sample demonstrates a topic, but the output isn't integral to understanding it. For example, code that runs a LINQ query to explain query syntax and then display every item in the output collection.
-
-## DOs and DON'Ts
-
-The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:
-
-- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files).
-- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
-- **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
-- **DO** create a separate branch on your fork before working on the articles.
-- **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).
-- **DO** blog and tweet (or whatever) about your contributions, frequently!
-
-> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
 
 ## Contributor License Agreement
 

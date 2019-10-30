@@ -31,7 +31,7 @@ helpviewer_keywords:
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 ---
 # XAML Syntax In Detail
-This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml).  
+This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md).  
 
 <a name="the_xaml_language_specification"></a>   
 ## The XAML Language Specification  
@@ -309,7 +309,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 ## See also
 
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)

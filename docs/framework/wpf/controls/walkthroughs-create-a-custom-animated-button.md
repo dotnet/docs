@@ -22,7 +22,7 @@ As its name suggests, Windows Presentation Foundation (WPF) is great for making 
  Demonstrates how to create buttons with custom behavior by using [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and Visual Studio.
 
 ## Related Sections
- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
+ [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
  Describes how styles and templates can be used to determine the appearance and behavior of controls.
 
  [Animation Overview](../graphics-multimedia/animation-overview.md)

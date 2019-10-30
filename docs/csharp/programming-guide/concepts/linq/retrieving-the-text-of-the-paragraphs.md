@@ -138,5 +138,5 @@ StyleName:Code >Hello World<
   
 ## See also
 
-- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](/dotnet/csharp/programming-guide/concepts/linq/shape-of-wordprocessingml-documents)
+- [Tutorial: Manipulating Content in a WordprocessingML Document (C#)](shape-of-wordprocessingml-documents.md)
 - [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](./deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)

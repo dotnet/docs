@@ -16,7 +16,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
 <a name="Prerequisites"></a>   
 ## Prerequisites  
- This topic focuses on data templating features and is not an introduction of data binding concepts. For information about basic data binding concepts, see the [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview).  
+ This topic focuses on data templating features and is not an introduction of data binding concepts. For information about basic data binding concepts, see the [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).  
   
  <xref:System.Windows.DataTemplate> is about the presentation of data and is one of the many features provided by the WPF styling and templating model. For an introduction of the WPF styling and templating model, such as how to use a <xref:System.Windows.Style> to set properties on controls, see the [Styling and Templating](../controls/styling-and-templating.md) topic.  
   
@@ -192,5 +192,5 @@ This concludes our discussion of this example. For the complete sample, see [Int
 - [Data Binding](../advanced/optimizing-performance-data-binding.md)
 - [Find DataTemplate-Generated Elements](how-to-find-datatemplate-generated-elements.md)
 - [Styling and Templating](../controls/styling-and-templating.md)
-- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [GridView Column Header Styles and Templates Overview](../controls/gridview-column-header-styles-and-templates-overview.md)

@@ -35,7 +35,7 @@ The following illustration from Visual Studio shows a partially-completed LINQ q
 
 To learn more details about LINQ, start by becoming familiar with some basic concepts in [Query expression basics](../../../linq/query-expression-basics.md), and then read the documentation for the LINQ technology in which you are interested:
 
-- XML documents: [LINQ to XML](/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml-overview)  
+- XML documents: [LINQ to XML](linq-to-xml-overview.md)  
 - ADO.NET Entity Framework: [LINQ to entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md)
 - .NET collections, files, strings and so on: [LINQ to objects](linq-to-objects.md)
 

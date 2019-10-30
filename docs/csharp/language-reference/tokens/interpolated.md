@@ -52,7 +52,7 @@ The following example shows how to include a brace in a result string and how to
 
 [!code-csharp-interactive[example with ternary conditional operator](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#3)]
 
-An interpolated verbatim string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](/dotnet/csharp/language-reference/builtin-types/reference-types) and [verbatim identifier](verbatim.md) topics.
+An interpolated verbatim string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) topics.
 
 > [!NOTE]
 > Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.

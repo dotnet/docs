@@ -177,7 +177,7 @@ The following example uses binding to accomplish the same thing.
 
 [!code-xaml[UserControlNumericUpDown#Binding](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#binding)]
 
-For more information about data binding, see [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview).
+For more information about data binding, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 ### Design for Designers
 

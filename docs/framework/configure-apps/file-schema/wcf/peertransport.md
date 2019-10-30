@@ -47,7 +47,7 @@ Defines a peer transport for a custom binding.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  This transport cannot be used with contracts that have request/reply operations.  

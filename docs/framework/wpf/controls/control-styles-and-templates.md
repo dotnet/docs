@@ -69,4 +69,4 @@ Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Co
 ## Related Sections  
  [Control Authoring Overview](control-authoring-overview.md)  
   
- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
+ [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

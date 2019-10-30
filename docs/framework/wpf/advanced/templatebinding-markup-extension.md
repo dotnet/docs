@@ -60,7 +60,7 @@ Links the value of a property in a control template to be the value of another p
 - <xref:System.Windows.Style>
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Styling and Templating](../controls/styling-and-templating.md)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [RelativeSource MarkupExtension](relativesource-markupextension.md)
 - [Binding Markup Extension](binding-markup-extension.md)

@@ -77,5 +77,5 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
 
 - <xref:System.Windows.Style>
 - [Styling and Templating](../wpf/controls/styling-and-templating.md)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML Overview (WPF)](../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)

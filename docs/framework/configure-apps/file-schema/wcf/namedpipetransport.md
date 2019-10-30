@@ -60,7 +60,7 @@ None.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
 This transport uses URIs of the form "net.pipe://hostname/path". Other URI components are optional.  

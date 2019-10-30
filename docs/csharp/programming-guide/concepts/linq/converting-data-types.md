@@ -73,5 +73,5 @@ static void Cast()
 - <xref:System.Linq>
 - [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
 - [from clause](../../../language-reference/keywords/from-clause.md)
-- [LINQ Query Expressions](/dotnet/csharp/linq/index)
+- [LINQ Query Expressions](../../../linq/index.md)
 - [How to: Query an ArrayList with LINQ (C#)](./how-to-query-an-arraylist-with-linq.md)

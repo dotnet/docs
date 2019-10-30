@@ -206,7 +206,7 @@ You can get the unqualified string name of a type or member for use in an error 
 
 [String interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
 
-You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](/dotnet/standard/base-types/composite-formatting).
+You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-formatting.md).
 
 [Null-conditional member access and indexing](../language-reference/operators/null-conditional-operators.md)
 

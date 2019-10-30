@@ -705,4 +705,4 @@ Accessibility changes in the Workflow Designer include the following:
 
 ## See also
 
-- [What's new in the .NET Framework](/dotnet/framework/whats-new/index)
+- [What's new in the .NET Framework](index.md)

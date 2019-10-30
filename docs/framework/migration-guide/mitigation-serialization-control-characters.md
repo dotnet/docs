@@ -34,4 +34,4 @@ If this behavior is not desirable, you can opt out of this feature by adding the
  
 ## See also
 
-- [Retargeting Changes in the .NET Framework 4.7](/dotnet/framework/migration-guide/retargeting/index)
+- [Retargeting Changes in the .NET Framework 4.7](retargeting/index.md)

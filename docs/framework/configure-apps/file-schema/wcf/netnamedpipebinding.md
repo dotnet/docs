@@ -142,7 +142,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 
 - <xref:System.ServiceModel.Configuration.NetNamedPipeBindingElement>
 - <xref:System.ServiceModel.NetNamedPipeBinding>
-- [\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)
+- [\<binding>](bindings.md)
 - [Bindings](../../../wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)

@@ -249,7 +249,7 @@ In conclusion, in the process of customizing a button template you have learned 
 ## See also
 
 - [Create a Button by Using XAML](walkthrough-create-a-button-by-using-xaml.md)
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Animation Overview](../graphics-multimedia/animation-overview.md)
 - [Painting with Solid Colors and Gradients Overview](../graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
 - [Bitmap Effects Overview](../graphics-multimedia/bitmap-effects-overview.md)

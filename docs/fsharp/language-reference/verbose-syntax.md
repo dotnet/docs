@@ -348,4 +348,4 @@ module <module-name> =
 
 - [F# Language Reference](index.md)
 - [Compiler Directives](compiler-directives.md)
-- [Code Formatting Guidelines](/dotnet/fsharp/style-guide/formatting)
+- [Code Formatting Guidelines](../style-guide/formatting.md)

@@ -63,5 +63,5 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
   
 ## See also
 
-- [Runtime Changes](/dotnet/framework/migration-guide/runtime/index)
+- [Runtime Changes](runtime/index.md)
 - [\<useLegacyJit> Element](../configure-apps/file-schema/runtime/uselegacyjit-element.md)

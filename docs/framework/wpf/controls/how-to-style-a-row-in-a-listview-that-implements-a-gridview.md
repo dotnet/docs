@@ -33,4 +33,4 @@ This example shows how to style a row in a <xref:System.Windows.Controls.ListVie
 - <xref:System.Windows.Controls.GridView>
 - [How-to Topics](listview-how-to-topics.md)
 - [ListView Overview](listview-overview.md)
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

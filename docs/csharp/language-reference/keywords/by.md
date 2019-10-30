@@ -22,4 +22,4 @@ The following example shows the use of the `by` contextual keyword in a `group` 
 
 ## See also
 
-- [LINQ Query Expressions](/dotnet/csharp/linq/index)
+- [LINQ Query Expressions](../../linq/index.md)

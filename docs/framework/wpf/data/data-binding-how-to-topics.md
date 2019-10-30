@@ -59,5 +59,5 @@ The topics in this section describe how to use data binding to bind elements to 
 
 ## Related sections
 
-- [Data binding in WPF](/dotnet/desktop-wpf/data/data-binding-overview)
+- [Data binding in WPF](../../../desktop-wpf/data/data-binding-overview.md)
 - [Data binding performance](../advanced/optimizing-performance-data-binding.md)

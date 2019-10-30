@@ -37,7 +37,7 @@ Represents a custom binding element that supports channel security using an SSL 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## See also
 

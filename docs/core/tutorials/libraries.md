@@ -7,7 +7,7 @@ ms.custom: seodec18
 ---
 # Developing Libraries with Cross Platform Tools
 
-This article covers how to write libraries for .NET using cross-platform CLI tools. The CLI provides an efficient and low-level experience that works across any supported OS. You can still build libraries with Visual Studio, and if that is your preferred experience [refer to the Visual Studio guide](/dotnet/core/tutorials/library-with-visual-studio).
+This article covers how to write libraries for .NET using cross-platform CLI tools. The CLI provides an efficient and low-level experience that works across any supported OS. You can still build libraries with Visual Studio, and if that is your preferred experience [refer to the Visual Studio guide](library-with-visual-studio.md).
 
 ## Prerequisites
 

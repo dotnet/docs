@@ -280,6 +280,6 @@ Inspection of the actual and forecasted values shows the following relationships
 
 While the forecasted values are not predicting the exact number of rentals, they provide a more narrow range of values that allows an operation to optimize their use of resources. 
 
-Congratulations! You've now successfully built a time-series machine learning model for forecasting bike rental demand.
+Congratulations! You've now successfully built a time series machine learning model to forecast bike rental demand.
 
 You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand) repository.

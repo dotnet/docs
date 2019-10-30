@@ -3,7 +3,7 @@ title: Prerequisites for .NET Core on Windows, Linux, MacOS
 description: Supported Windows, Linux, MacOS versions and .NET Core dependencies to develop, deploy, and run .NET Core applications.
 author: leecow
 ms.author: leecow
-ms.date: 10/18/2019
+ms.date: 10/30/2019
 zone_pivot_groups: operating-systems-set-one
 ---
 

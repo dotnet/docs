@@ -207,6 +207,8 @@ In this tutorial, you learned how to:
 > * Write your first .NET for Apache Spark application
 > * Build and run your simple .NET for Apache Spark application
 
+To see a video explaining the steps above, checkout the [.NET for Apache Spark 101 video series](https://channel9.msdn.com/Series/NET-for-Apache-Spark-101/Run-Your-First-NET-for-Apache-Spark-App).
+
 Check out the resources page to learn more.
 > [!div class="nextstepaction"]
 > [.NET for Apache Spark Resources](../resources/index.md)

@@ -19,4 +19,4 @@ You can also use Windows Forms controls in WPF-based applications. For more info
 
 ## See also
 
-- [WPF and Windows Forms interoperation](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
+- [WPF and Windows Forms interoperation](../../wpf/advanced/wpf-and-windows-forms-interoperation.md)

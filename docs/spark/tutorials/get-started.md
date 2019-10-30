@@ -174,29 +174,19 @@ This .NET app counts words with Apache Spark
 
 ## Run your .NET for Apache Spark app
 
-1. Open **PowerShell** and change the directory to the folder where your app is stored.
+1. Run the following command to build your application:
 
    ```powershell
-   cd <your-app-output-directory>
+   dotnet build
    ```
 
-2. Create a file called **people.json** with the following content:
-
-   ```json
-   {"name":"Michael"}
-   {"name":"Andy", "age":30}
-   {"name":"Justin", "age":19}
-   ```
-
-3. Use the following PowerShell command to run your app:
+2. Run the following command to submit your application to run on Apache Spark:
 
    ```powershell
-    spark-submit `
-    --class org.apache.spark.deploy.dotnet.DotnetRunner `
-    --master local `
-    microsoft-spark-2.4.x-<version>.jar `
-    dotnet HelloSpark.dll
-    ```
+   %SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local bin\Debug\netcoreapp3.0\microsoft-spark-2.4.x-0.5.0.jar dotnet bin\Debug\netcoreapp3.0\mySparkApp.dll
+   ```
+
+3. When your app runs, you will see the word count data written to the console.
 
 Congratulations! You successfully authored and ran a .NET for Apache Spark app.
 

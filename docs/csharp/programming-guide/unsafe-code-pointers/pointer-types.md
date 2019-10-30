@@ -81,5 +81,5 @@ For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#
 - [C# Programming Guide](../index.md)
 - [Unsafe Code and Pointers](index.md)
 - [Pointer Conversions](pointer-conversions.md)
-- [Types](../../language-reference/keywords/types.md)
+- [Types](/dotnet/csharp/language-reference/keywords)
 - [unsafe](../../language-reference/keywords/unsafe.md)

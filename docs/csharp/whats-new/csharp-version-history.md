@@ -99,7 +99,7 @@ C# version 4.0, released with Visual Studio 2010, would have had a difficult tim
 
 The next version did introduce some interesting new features:
 
-- [Dynamic binding](../language-reference/keywords/dynamic.md)
+- [Dynamic binding](/dotnet/csharp/language-reference/builtin-types/reference-types)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
 - [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)

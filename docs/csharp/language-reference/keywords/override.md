@@ -23,7 +23,7 @@ An `override` method provides a new implementation of a member that is inherited
 
 You cannot override a non-virtual or static method. The overridden base method must be `virtual`, `abstract`, or `override`.
 
-An `override` declaration cannot change the accessibility of the `virtual` method. Both the `override` method and the `virtual` method must have the same [access level modifier](access-modifiers.md).
+An `override` declaration cannot change the accessibility of the `virtual` method. Both the `override` method and the `virtual` method must have the same [access level modifier](access-/dotnet/csharp/language-reference/keywords).
 
 You cannot use the `new`, `static`, or `virtual` modifiers to modify an `override` method.
 
@@ -47,7 +47,7 @@ This example defines a base class named `Employee`, and a derived class named `S
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Inheritance](../../programming-guide/classes-and-structs/inheritance.md)
 - [C# Keywords](index.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](/dotnet/csharp/language-reference/keywords)
 - [abstract](abstract.md)
 - [virtual](virtual.md)
 - [new (modifier)](new-modifier.md)

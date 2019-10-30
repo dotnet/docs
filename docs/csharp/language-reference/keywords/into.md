@@ -27,5 +27,5 @@ For an example of the use of `into` in a `join` clause, see [join clause](join-c
 ## See also
 
 - [Query Keywords (LINQ)](query-keywords.md)
-- [LINQ Query Expressions](../../programming-guide/linq-query-expressions/index.md)
+- [LINQ Query Expressions](/dotnet/csharp/linq/index)
 - [group clause](group-clause.md)

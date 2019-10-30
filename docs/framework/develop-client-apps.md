@@ -32,7 +32,7 @@ Provides information about developing applications by using WPF.
 [Windows Forms](./winforms/index.md)  
 Provides information about developing applications by using Windows Forms.
 
-[Common Client Technologies](./common-client-technologies/index.md)  
+[Common Client Technologies](/dotnet/framework/develop-client-apps)  
 Provides information about additional technologies that can be used when developing client applications.
 
 ## Related sections

@@ -40,7 +40,7 @@ Represents a configuration element that specifies a privacy notice used in `wsFe
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)|Defines all binding capabilities of the custom binding.|  
   
 ## See also
 

@@ -52,7 +52,7 @@ to common questions. In some cases, articles may be listed in multiple sections 
 
 * [Operationalize a trained machine learning model in apps.](consuming-model-ml-net.md)
 
-* [Use the PredictionFunction to make one prediction at a time.](single-predict-model-ml-net.md)
+* [Use the PredictionFunction to make one prediction at a time.](/dotnet/machine-learning/how-to-guides/machine-learning-model-predictions-ml-net)
 
 ## Probabilistic (Infer.NET)
 

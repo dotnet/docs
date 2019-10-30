@@ -45,5 +45,5 @@ ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
 - [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)

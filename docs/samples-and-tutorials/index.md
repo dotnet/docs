@@ -96,7 +96,7 @@ This tutorial shows you how to build a simple application on .NET Core that supp
 
 This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Windows Docker Container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
 
-**[Running .NET Framework Console Applications in Windows Containers](../framework/docker/console.md)**
+**[Running .NET Framework Console Applications in Windows Containers](/dotnet/framework)**
 
 This tutorial demonstrates how to deploy an existing console app in a Windows container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
 

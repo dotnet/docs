@@ -163,5 +163,5 @@ End Try
   
 ## See also
 
-- [Exception Handling Fundamentals](../../standard/exceptions/exception-handling-fundamentals.md)
+- [Exception Handling Fundamentals](/dotnet/standard/exceptions/)
 - [Requesting Data](requesting-data.md)

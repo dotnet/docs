@@ -45,6 +45,6 @@ This example shows how to filter data in a view.
 
 - <xref:System.Windows.Data.CollectionView.CanFilter%2A>
 - <xref:System.Windows.Data.BindingListCollectionView.CustomFilter%2A>
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
 - [Sort Data in a View](how-to-sort-data-in-a-view.md)
 - [How-to Topics](data-binding-how-to-topics.md)

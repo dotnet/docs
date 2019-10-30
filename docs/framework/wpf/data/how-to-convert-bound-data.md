@@ -34,5 +34,5 @@ This example shows how to apply conversion to data that is used in bindings.
 ## See also
 
 - [Implement Binding Validation](how-to-implement-binding-validation.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
 - [How-to Topics](data-binding-how-to-topics.md)

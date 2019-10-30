@@ -34,5 +34,5 @@ A *join* of two data sources is the association of objects in one data source wi
 - [How to: Perform Custom Join Operations](../../linq-query-expressions/how-to-perform-custom-join-operations.md)
 - [How to: Perform Grouped Joins](../../linq-query-expressions/how-to-perform-grouped-joins.md)
 - [How to: Perform Inner Joins](../../linq-query-expressions/how-to-perform-inner-joins.md)
-- [How to: Perform Left Outer Joins](../../linq-query-expressions/how-to-perform-left-outer-joins.md)
+- [How to: Perform Left Outer Joins](/dotnet/csharp/linq/perform-left-outer-joins)
 - [How to: Populate Object Collections from Multiple Sources (LINQ) (C#)](./how-to-populate-object-collections-from-multiple-sources-linq.md)

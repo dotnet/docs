@@ -12,7 +12,7 @@ ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
 # How to: Convert Between Hexadecimal Strings and Numeric Types (C# Programming Guide)
 These examples show you how to perform the following tasks:  
   
-- Obtain the hexadecimal value of each character in a [string](../../language-reference/keywords/string.md).  
+- Obtain the hexadecimal value of each character in a [string](/dotnet/csharp/language-reference/builtin-types/reference-types).  
   
 - Obtain the [char](../../language-reference/keywords/char.md) that corresponds to each value in a hexadecimal string.  
   

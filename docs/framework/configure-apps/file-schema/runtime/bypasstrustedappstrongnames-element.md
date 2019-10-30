@@ -66,7 +66,7 @@ The bypass feature applies to any assembly that is signed with a strong name and
 - Not delay-signed.
 
 > [!NOTE]
-> If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](../../../app-domains/how-to-disable-the-strong-name-bypass-feature.md).
+> If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](/dotnet/standard/assembly/disable-strong-name-bypass-feature).
 
 ## Example
 

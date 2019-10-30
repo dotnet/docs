@@ -30,5 +30,5 @@ This warning is a characteristic of functional programming; it does not appear i
 
 ## See also
 
-- [Primitive](primitive-types.md)
+- [Primitive](/dotnet/fsharp/language-reference/basic-types)
 - [F# Language Reference](index.md)

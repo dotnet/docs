@@ -21,7 +21,7 @@ class SampleClass
 }
 ```
 
-See [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md) and [Accessibility Levels](accessibility-levels.md) for more information.
+See [Access Modifiers](../../programming-guide/classes-and-structs/access-/dotnet/csharp/language-reference/keywords) and [Accessibility Levels](accessibility-levels.md) for more information.
 
 ## Example
 
@@ -41,11 +41,11 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
+- [Access Modifiers](../../programming-guide/classes-and-structs/access-/dotnet/csharp/language-reference/keywords)
 - [C# Keywords](index.md)
-- [Access Modifiers](access-modifiers.md)
+- [Access Modifiers](access-/dotnet/csharp/language-reference/keywords)
 - [Accessibility Levels](accessibility-levels.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](/dotnet/csharp/language-reference/keywords)
 - [private](private.md)
 - [protected](protected.md)
 - [internal](internal.md)

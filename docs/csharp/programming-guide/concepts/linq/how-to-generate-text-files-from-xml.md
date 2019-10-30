@@ -49,4 +49,4 @@ LETSS,Let's Stop N Shop,Jaime Yorres,Owner,(415) 555-5938,87 Polk St. Suite 5,Sa
   
 ## See also
 
-- [Projections and Transformations (LINQ to XML) (C#)](./projections-and-transformations-linq-to-xml.md)
+- [Projections and Transformations (LINQ to XML) (C#)](/dotnet/csharp/programming-guide/concepts/linq/how-to-work-with-dictionaries-using-linq-to-xml)

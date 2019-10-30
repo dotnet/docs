@@ -136,7 +136,7 @@ Defines a queued binding suitable for cross-machine communication.
 
 - <xref:System.ServiceModel.NetMsmqBinding>
 - <xref:System.ServiceModel.Configuration.NetMsmqBindingElement>
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)
 - [Bindings](../../../wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)

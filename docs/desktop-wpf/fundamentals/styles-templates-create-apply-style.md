@@ -22,7 +22,7 @@ The most common way to declare a style is as a resource in the `Resources` secti
 
 [!code-xaml[AppResources](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/App.xaml#AppResources)]
 
-If you declare the style in one of the application's XAML files, the style can be used only in that XAML file. For more information about scoping rules for resources, see [XAML Resources](../../framework/wpf/advanced/xaml-resources.md).
+If you declare the style in one of the application's XAML files, the style can be used only in that XAML file. For more information about scoping rules for resources, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).
 
 [!code-xaml[AppResources](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowSingleResource.xaml#WindowResources)]
 

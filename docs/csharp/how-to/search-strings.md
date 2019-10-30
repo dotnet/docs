@@ -14,7 +14,7 @@ You can use two main strategies to search for text in strings. Methods of the <x
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
-The [string](../language-reference/keywords/string.md) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides a number of useful methods for searching the contents of a string. Among them are <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides a rich vocabulary to search for patterns in text. In this article, you learn these techniques and how to choose the best method for your needs.
+The [string](/dotnet/csharp/language-reference/builtin-types/reference-types) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides a number of useful methods for searching the contents of a string. Among them are <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides a rich vocabulary to search for patterns in text. In this article, you learn these techniques and how to choose the best method for your needs.
 
 ## Does a string contain text?
 

@@ -50,7 +50,7 @@ This section provides detailed information on key C# language features and featu
   
  [Iterators](./concepts/iterators.md)
   
- [LINQ Query Expressions](./linq-query-expressions/index.md)  
+ [LINQ Query Expressions](/dotnet/csharp/linq/index)  
   
  [Lambda Expressions](./statements-expressions-operators/lambda-expressions.md)  
   

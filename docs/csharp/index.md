@@ -55,7 +55,7 @@ There are several sections in the C# Guide. You can read them in order, or jump 
 - [Language Reference](language-reference/index.md)
   - This section contains the reference material on the C# language. This material helps you understand the syntax and semantics of C#. It also includes reference material on types, operators, attributes, preprocessor directives, compiler switches, compiler errors, and compiler warnings.
 
-- [C# Language Specification](./language-reference/language-specification/index.md)
+- [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction)
   - Links to the latest versions of the C# language specification.
 
 ## See also

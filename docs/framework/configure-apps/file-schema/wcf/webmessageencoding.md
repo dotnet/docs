@@ -42,7 +42,7 @@ Enables plain-text XML, JavaScript Object Notation (JSON) message encodings and 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](/dotnet/framework/configure-apps/file-schema/wcf/bindings)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. These processes require the specification of a character encoding.  

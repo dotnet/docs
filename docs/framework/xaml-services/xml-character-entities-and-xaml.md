@@ -58,7 +58,7 @@ XAML uses character entities defined in XML for special characters. This topic d
   
 ## See also
 
-- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)
+- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
 - [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)
 - [XamlName Grammar](xamlname-grammar.md)
 - [White-space processing in XAML](whitespace-processing-in-xaml.md)

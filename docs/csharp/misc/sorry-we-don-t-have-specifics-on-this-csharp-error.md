@@ -689,7 +689,7 @@ We're sorry, but we don’t have any specific information about this error. You 
 Provides a QA website for questions about and issues with Visual C#.  
 
  Also see:  
- [Additional Resources for Visual C# Programmers](../getting-started/additional-resources.md)  
+ [Additional Resources for Visual C# Programmers](/dotnet/csharp/getting-started/index)  
   
 ## See also
 

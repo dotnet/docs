@@ -49,7 +49,7 @@ When you implement a property on a class, so long as your class derives from <xr
 
 - You want your property to support data binding. For more information about data binding dependency properties, see [Bind the Properties of Two Controls](../data/how-to-bind-the-properties-of-two-controls.md).
 
-- You want your property to be settable with a dynamic resource reference. For more information, see [XAML Resources](xaml-resources.md).
+- You want your property to be settable with a dynamic resource reference. For more information, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).
 
 - You want to inherit a property value automatically from a parent element in the element tree. In this case, register with the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method, even if you also create a property wrapper for CLR access. For more information, see [Property Value Inheritance](property-value-inheritance.md).
 

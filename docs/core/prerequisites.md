@@ -9,7 +9,7 @@ zone_pivot_groups: operating-systems-set-one
 
 # Prerequisites for .NET Core
 
-This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
+This article provides information on what is required to install .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
 
 .NET Core is made up of two components, the runtime and the SDK. The **runtime** is required to run a .NET Core application that doesn't include the runtime. The **SDK** is required to build .NET Core applications.
 
@@ -46,7 +46,7 @@ You can download a standalone installer for each OS from the following links:
 
 It's important to understand the [.NET Core support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) when choosing which version of .NET Core to develop apps for.
 
-## Is .NET Core installed
+## Check if .NET Core installed
 
 It's possible that the .NET Core SDK may already be installed on your OS. The .NET Core SDK might have been installed if you installed a development IDE, such as Visual Studio or Visual Studio for Mac. You can check what is installed by opening a terminal and running the `dotnet --list-sdks` command:
 

@@ -24,7 +24,7 @@ public struct Book
 
 ## Remarks
 
-Structs can also contain [constructors](../../programming-guide/classes-and-structs/constructors.md), [constants](../../programming-guide/classes-and-structs/constants.md), [fields](../../programming-guide/classes-and-structs/fields.md), [methods](../../programming-guide/classes-and-structs/methods.md), [properties](../../programming-guide/classes-and-structs/properties.md), [indexers](../../programming-guide/indexers/index.md), [operators](../operators/index.md), [events](../../programming-guide/events/index.md), and [nested types](../../programming-guide/classes-and-structs/nested-/dotnet/csharp/language-reference/keywords), although if several such members are required, you should consider making your type a class instead.
+Structs can also contain [constructors](../../programming-guide/classes-and-structs/constructors.md), [constants](../../programming-guide/classes-and-structs/constants.md), [fields](../../programming-guide/classes-and-structs/fields.md), [methods](../../programming-guide/classes-and-structs/methods.md), [properties](../../programming-guide/classes-and-structs/properties.md), [indexers](../../programming-guide/indexers/index.md), [operators](../operators/index.md), [events](../../programming-guide/events/index.md), and [nested types](../../programming-guide/classes-and-structs/nested-types.md), although if several such members are required, you should consider making your type a class instead.
 
 For examples, see [Using Structs](../../programming-guide/classes-and-structs/using-structs.md).
 
@@ -47,8 +47,8 @@ For examples, see [Using Structs](../../programming-guide/classes-and-structs/us
 - [C# Keywords](index.md)
 - [Default Values Table](default-values-table.md)
 - [Built-In Types Table](built-in-types-table.md)
-- [Types](/dotnet/csharp/language-reference/keywords)
-- [Value Types](value-/dotnet/csharp/language-reference/keywords)
+- [Types](types.md)
+- [Value Types](value-types.md)
 - [class](class.md)
 - [interface](interface.md)
 - [Classes and Structs](../../programming-guide/classes-and-structs/index.md)

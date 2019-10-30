@@ -36,5 +36,5 @@ There are two kinds of types in C#: reference types and value types. Variables o
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Types](/dotnet/csharp/language-reference/keywords)
-- [Value Types](value-/dotnet/csharp/language-reference/keywords)
+- [Types](types.md)
+- [Value Types](value-types.md)

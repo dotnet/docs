@@ -1,6 +1,6 @@
 ---
 title: ASP.NET Core gRPC for WCF Developers - gRPC for WCF Developers
-description: TO BE WRITTEN
+description: Introduction to building gRPC Services in ASP.NET Core 3.0 with particular reference to WCF
 author: markrendle
 ms.date: 09/02/2019
 ---

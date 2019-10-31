@@ -15,7 +15,7 @@ This section provides detailed information on key C# language features and featu
   
  Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [Introduction to C# Tutorials](../tutorials/intro-to-csharp/index.md) or [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1), where no prior programming knowledge is required.  
   
- For information about specific keywords, operators and preprocessor directives, see [C# Reference](../language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](../language-reference/language-specification/index.md).  
+ For information about specific keywords, operators and preprocessor directives, see [C# Reference](../language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction).  
   
 ## Program sections
 
@@ -50,7 +50,7 @@ This section provides detailed information on key C# language features and featu
   
  [Iterators](./concepts/iterators.md)
   
- [LINQ Query Expressions](./linq-query-expressions/index.md)  
+ [LINQ Query Expressions](../linq/index.md)  
   
  [Lambda Expressions](./statements-expressions-operators/lambda-expressions.md)  
   

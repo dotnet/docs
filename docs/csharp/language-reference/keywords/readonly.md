@@ -155,6 +155,6 @@ You can also see the language specification proposals:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [const](const.md)
 - [Fields](../../programming-guide/classes-and-structs/fields.md)

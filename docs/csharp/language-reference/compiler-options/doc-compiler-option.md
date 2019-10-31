@@ -29,7 +29,7 @@ The **-doc** option allows you to place documentation comments in an XML file.
 ## Remarks  
  In source code files, documentation comments that precede the following can be processed and added to the XML file:  
   
-- Such user-defined types as a [class](../keywords/class.md), [delegate](../keywords/delegate.md), or [interface](../keywords/interface.md)  
+- Such user-defined types as a [class](../keywords/class.md), [delegate](../builtin-types/reference-types.md#the-delegate-type), or [interface](../keywords/interface.md)  
   
 - Such members as a field, [event](../keywords/event.md), [property](../../programming-guide/classes-and-structs/using-properties.md), or method  
   

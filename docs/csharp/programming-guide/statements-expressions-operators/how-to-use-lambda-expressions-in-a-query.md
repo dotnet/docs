@@ -22,7 +22,7 @@ You do not use lambda expressions directly in query syntax, but you do use them 
  [!code-csharp[csProgGuideLINQ#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csrefLINQHowTos.cs#2)]  
   
 ## Compiling the Code  
- To run this code, copy and paste the method into the `StudentClass` that is provided in [How to: Query a Collection of Objects](../linq-query-expressions/how-to-query-a-collection-of-objects.md) and call it from the `Main` method.  
+ To run this code, copy and paste the method into the `StudentClass` that is provided in [How to: Query a Collection of Objects](../../linq/query-a-collection-of-objects.md) and call it from the `Main` method.  
   
 ## See also
 

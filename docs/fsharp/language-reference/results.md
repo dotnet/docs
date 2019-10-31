@@ -14,8 +14,8 @@ Starting with F# 4.1, there is a `Result<'T,'TFailure>` type which you can use f
 [<StructuralEquality; StructuralComparison>]
 [<CompiledName("FSharpResult`2")>]
 [<Struct>]
-type Result<'T,'TError> = 
-    | Ok of ResultValue:'T 
+type Result<'T,'TError> =
+    | Ok of ResultValue:'T
     | Error of ErrorValue:'TError
 ```
 
@@ -27,7 +27,7 @@ The `Result` type is typically used in monadic error-handling, which is often re
 
 ```fsharp
 // Define a simple type which has fields that can be validated
-type Request = 
+type Request =
     { Name: string
       Email: string }
 
@@ -51,11 +51,11 @@ let validateEmail req =
     | _ -> Ok req
 
 let validateRequest reqResult =
-    reqResult 
+    reqResult
     |> Result.bind validateName
     |> Result.bind validateEmail
 
-let test() = 
+let test() =
     // Now, create a Request and pattern match on the result.
     let req1 = { Name = "Phillip"; Email = "phillip@contoso.biz" }
     let res1 = validateRequest (Ok req1)

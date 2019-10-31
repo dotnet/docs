@@ -7,7 +7,7 @@ ms.date: 10/30/2019
 zone_pivot_groups: operating-systems-set-one
 ---
 
-# Install for .NET Core
+# Install .NET Core
 
 This article provides information on what is required to install .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
 

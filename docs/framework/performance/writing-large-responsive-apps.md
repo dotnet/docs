@@ -62,7 +62,7 @@ public class BoxingExample
 {  
     public void Log(int id, int size)  
     {  
-        var s = $"{id}:{size}";  
+        var s = string.Format("{0}:{1}", id, size);  
         Logger.WriteLine(s);  
     }  
 }  

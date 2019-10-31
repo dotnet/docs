@@ -148,7 +148,7 @@ namespace MySparkApp
                 .AppName("word_count_sample")
                 .GetOrCreate();
 
-            // Create initial DataFrame
+            // Create initial DataFrame.
             DataFrame dataFrame = spark.Read().Text("input.txt");
 
             // Count words

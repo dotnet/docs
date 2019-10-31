@@ -33,7 +33,7 @@ ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
 Users interact with Windows Presentation Foundation (WPF) standalone applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. Standalone [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications provide their own windows by using the <xref:System.Windows.Window> class. This topic introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in standalone applications.  
   
 > [!NOTE]
-> Browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, including [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] and loose [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] pages, don't provide their own windows. Instead, they are hosted in windows provided by Windows Internet Explorer. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
+> Browser-hosted [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, including XAML browser applications (XBAPs) and loose [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] pages, don't provide their own windows. Instead, they are hosted in windows provided by Windows Internet Explorer. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
 
 <a name="TheWindowClass"></a>   
 ## The Window Class  
@@ -465,7 +465,7 @@ The default appearance of a window includes a taskbar button, like the one shown
   
  However, this falls outside the set of permissions granted to applications that are launched from the Internet or Local intranet zone using ClickOnce. Consequently, users will receive a ClickOnce security warning and will need to elevate the permission set for the application to full trust.  
   
- Additionally, [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] cannot show windows or dialog boxes by default. For a discussion on standalone application security considerations, see [WPF Security Strategy - Platform Security](../wpf-security-strategy-platform-security.md).  
+ Additionally, XBAPs cannot show windows or dialog boxes by default. For a discussion on standalone application security considerations, see [WPF Security Strategy - Platform Security](../wpf-security-strategy-platform-security.md).  
   
 <a name="Other_Types_of_Windows"></a>   
 ## Other Types of Windows  

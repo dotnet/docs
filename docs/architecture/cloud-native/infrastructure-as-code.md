@@ -61,7 +61,7 @@ Resource Manager templates can be run in a variety of ways. Perhaps the simplest
 
 A perceived disadvantage of Resource Manager templates is that they are specific to the Azure cloud. It's unusual to create applications that include resources from more than one cloud, but in cases where the business relies on spectacular uptime, the cost of supporting multiple clouds might be worthwhile. If there were one templating language that could be used across every cloud, then it would also allow for developer skills to be much more portable.
 
-Several technologies exist which do just that! The most mature offering in that space is known as [Terraform](https://www.terraform.io/). Terraform supports every major cloud player such as Azure, Google Cloud Platform, AWS, and AliCloud, and it also supports dozens of minor players such as Heroku and DigitalOcean. Instead of using JSON as the template definition language, it uses the slightly more terse YAML.
+Several technologies exist which do just that! The most mature offering in that space is known as [Terraform](https://www.terraform.io/). Terraform supports every major cloud player such as Azure, Google Cloud Platform, AWS, and AliCloud, and it also supports dozens of minor players such as Heroku and [DigitalOcean](https://www.terraform.io/docs/providers/do/index.html). Instead of using JSON as the template definition language, it uses the slightly more terse YAML.
 
 An example Terraform file that does the same as the previous Resource Manager template (Figure 11-11) is shown in Figure 11-12:
 

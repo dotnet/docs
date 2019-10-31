@@ -288,4 +288,3 @@ You can find the source code for this tutorial at the [dotnet/machinelearning-sa
 
 - [Machine learning tasks in ML.NET](../resources/tasks.md)
 - [Improve model accuracy](../resources/improve-machine-learning-model-ml-net.md)
-

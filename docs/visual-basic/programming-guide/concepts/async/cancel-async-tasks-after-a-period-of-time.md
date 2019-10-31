@@ -154,7 +154,7 @@ Class MainWindow
             Dim urlContents As Byte() = Await response.Content.ReadAsByteArrayAsync()
 
             resultsTextBox.Text &=
-                String.Format(vbCrLf & "Length of the downloaded string: {0}." & vbCrLf, urlContents.Length)
+                vbCrLf & $"Length of the downloaded string: {urlContents.Length}." & vbCrLf
         Next
     End Function
 

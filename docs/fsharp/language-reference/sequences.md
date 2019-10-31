@@ -129,9 +129,9 @@ The following code shows the behavior of and differences between `Seq.truncate` 
 The output, before the error occurs, is as follows.
 
 ```console
-1 4 9 16 25 
-1 4 9 16 25 36 49 64 81 100 
-1 4 9 16 25 
+1 4 9 16 25
+1 4 9 16 25 36 49 64 81 100
+1 4 9 16 25
 1 4 9 16 25 36 49 64 81 100
 ```
 
@@ -144,8 +144,8 @@ The following code example illustrates the behavior of and differences between `
 The output is as follows.
 
 ```console
-1 4 9 
-36 49 64 81 100 
+1 4 9
+36 49 64 81 100
 16 25 36 49 64 81 100
 ```
 
@@ -166,12 +166,12 @@ The output is as follows.
 Initial sequence:
 
 ```console
-1.0 1.5 2.0 1.5 1.0 1.5 
+1.0 1.5 2.0 1.5 1.0 1.5
 
-Windows of length 3: 
-[|1.0; 1.5; 2.0|] [|1.5; 2.0; 1.5|] [|2.0; 1.5; 1.0|] [|1.5; 1.0; 1.5|] 
+Windows of length 3:
+[|1.0; 1.5; 2.0|] [|1.5; 2.0; 1.5|] [|2.0; 1.5; 1.0|] [|1.5; 1.0; 1.5|]
 
-Moving average: 
+Moving average:
 1.5 1.666666667 1.5 1.333333333
 ```
 

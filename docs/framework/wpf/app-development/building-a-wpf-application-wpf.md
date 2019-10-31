@@ -134,9 +134,9 @@ The deployment manifest file describes the deployment model: the current version
 
 The application manifest (an .exe.manifest file) describes the application assemblies and dependent libraries and lists permissions required by the application. This file is intended to be authored by the application developer. In order to launch a ClickOnce application, a user opens the application's deployment manifest file.
 
-These manifest files are always created for [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]. For installed applications, they are not created unless the `GenerateManifests` property is specified in the project file with value `true`.
+These manifest files are always created for XBAPs. For installed applications, they are not created unless the `GenerateManifests` property is specified in the project file with value `true`.
 
-[!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] get two additional permissions over and above those permissions assigned to typical Internet zone applications: <xref:System.Security.Permissions.WebBrowserPermission> and <xref:System.Security.Permissions.MediaPermission>. The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] build system declares those permissions in the application manifest.
+XBAPs get two additional permissions over and above those permissions assigned to typical Internet zone applications: <xref:System.Security.Permissions.WebBrowserPermission> and <xref:System.Security.Permissions.MediaPermission>. The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] build system declares those permissions in the application manifest.
 
 <a name="Incremental_Build_Support"></a>
 

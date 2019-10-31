@@ -465,7 +465,7 @@ The default appearance of a window includes a taskbar button, like the one shown
   
  However, this falls outside the set of permissions granted to applications that are launched from the Internet or Local intranet zone using ClickOnce. Consequently, users will receive a ClickOnce security warning and will need to elevate the permission set for the application to full trust.  
   
- Additionally, [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] cannot show windows or dialog boxes by default. For a discussion on standalone application security considerations, see [WPF Security Strategy - Platform Security](../wpf-security-strategy-platform-security.md).  
+ Additionally, XBAPs cannot show windows or dialog boxes by default. For a discussion on standalone application security considerations, see [WPF Security Strategy - Platform Security](../wpf-security-strategy-platform-security.md).  
   
 <a name="Other_Types_of_Windows"></a>   
 ## Other Types of Windows  

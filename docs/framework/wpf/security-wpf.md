@@ -39,7 +39,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
 <a name="SafeTopLevelNavigation"></a>   
 ## Safe Navigation  
- For [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)], [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] distinguishes two types of navigation: application and browser.  
+ For XBAPs, [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] distinguishes two types of navigation: application and browser.  
   
  *Application navigation* is navigation between items of content within an application that is hosted by a browser. *Browser navigation* is navigation that changes the content and location URL of a browser itself. The relationship between application navigation (typically XAML) and browser navigation (typically HTML) is shown in the following illustration:
   
@@ -118,7 +118,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
 - **Loose XAML**. Controls whether Internet Explorer can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
   
-- **XAML browser applications**. Controls whether Internet Explorer can navigate to and run [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)]. (Enable, Disable, and Prompt options).  
+- **XAML browser applications**. Controls whether Internet Explorer can navigate to and run XBAPs. (Enable, Disable, and Prompt options).  
   
  By default, these settings are all enabled for the **Internet**, **Local intranet**, and **Trusted sites** zones, and disabled for the **Restricted sites** zone.  
   
@@ -214,7 +214,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  However, it is possible for an APTCA assembly to exhibit a security flaw after being installed into the  GAC . Once a security flaw is discovered, assembly publishers can produce a security update to fix the problem on existing installations, and to protect against installations that may occur after the problem is discovered. One option for the update is to uninstall the assembly, although that may break other fully trusted client applications that use the assembly.  
   
- [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] provides a mechanism by which an APTCA assembly can be disabled for partially trusted [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)] without uninstalling the APTCA assembly.  
+ [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] provides a mechanism by which an APTCA assembly can be disabled for partially trusted XBAPs without uninstalling the APTCA assembly.  
   
  To disable an APTCA assembly, you have to create a special registry key:  
   

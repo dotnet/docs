@@ -171,13 +171,13 @@ In the examples so far, the host application has been an installed standalone ap
 
 - The XBAP code to discover and load add-ins must use the ClickOnce application cache for the XBAP as the pipeline and add-in location.
 
-- The XBAP must load the add-in into a special security context if the add-in references loose files that are located at the site of origin; when hosted by [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)], add-ins can only reference loose files that are located at the host application's site of origin.
+- The XBAP must load the add-in into a special security context if the add-in references loose files that are located at the site of origin; when hosted by XBAPs, add-ins can only reference loose files that are located at the host application's site of origin.
 
 These tasks are described in detail in the following subsections.
 
 ### Configuring the Pipeline and Add-In for ClickOnce Deployment
 
-[!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are downloaded to and run from a safe folder in the ClickOnce deployment cache. In order for an XBAP to host an add-in, the pipeline and add-in assembly must also be downloaded to the safe folder. To achieve this, you need to configure the application manifest to include both the pipeline and add-in assembly for download. This is most easily done in Visual Studio, although the pipeline and add-in assembly needs to be in the host XBAP project's root folder in order for Visual Studio to detect the pipeline assemblies.
+XBAPs are downloaded to and run from a safe folder in the ClickOnce deployment cache. In order for an XBAP to host an add-in, the pipeline and add-in assembly must also be downloaded to the safe folder. To achieve this, you need to configure the application manifest to include both the pipeline and add-in assembly for download. This is most easily done in Visual Studio, although the pipeline and add-in assembly needs to be in the host XBAP project's root folder in order for Visual Studio to detect the pipeline assemblies.
 
 Consequently, the first step is to build the pipeline and add-in assembly to the XBAP project's root by setting the build output of each pipeline assembly and add-in assembly projects. The following table shows the build output paths for pipeline assembly projects and add-in assembly project that are in the same solution and root folder as the host XBAP project.
 
@@ -191,7 +191,7 @@ Table 1: Build Output Paths for the Pipeline Assemblies That Are Hosted by an XB
 |Host-Side Adapter|`..\HostXBAP\HostSideAdapters\`|
 |Add-In|`..\HostXBAP\AddIns\WPFAddIn1`|
 
-The next step is to specify the pipeline assemblies and add-in assembly as the [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] content files in Visual Studio by doing the following:
+The next step is to specify the pipeline assemblies and add-in assembly as the XBAPs content files in Visual Studio by doing the following:
 
 1. Including the pipeline and add-in assembly in the project by right-clicking each pipeline folder in Solution Explorer and choosing **Include In Project**.
 

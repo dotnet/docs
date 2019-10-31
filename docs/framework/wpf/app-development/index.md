@@ -89,7 +89,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  To facilitate navigation, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements the following:  
   
-- <xref:System.Windows.Navigation.NavigationService>, the shared navigation engine for processing navigation requests that is used by <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Navigation.NavigationWindow>, and [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] to support intra-application navigation.  
+- <xref:System.Windows.Navigation.NavigationService>, the shared navigation engine for processing navigation requests that is used by <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Navigation.NavigationWindow>, and XBAPs to support intra-application navigation.  
   
 - Navigation methods to initiate navigation.  
   
@@ -103,7 +103,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 <a name="Hosting"></a>   
 ## Hosting  
- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be hosted in Microsoft Internet Explorer or Firefox. Each hosting model has its own set of considerations and constraints that are covered in [Hosting](hosting-wpf-applications.md).  
+ XBAPs can be hosted in Microsoft Internet Explorer or Firefox. Each hosting model has its own set of considerations and constraints that are covered in [Hosting](hosting-wpf-applications.md).  
   
 <a name="Build_and_Deploy"></a>   
 ## Build and Deploy  

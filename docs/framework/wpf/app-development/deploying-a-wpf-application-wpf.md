@@ -81,7 +81,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 <a name="Deploying_XAML_Browser_Applications"></a>   
 ### Deploying XAML Browser Applications  
- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are compiled applications that require the following three files to be deployed:  
+ XBAPs are compiled applications that require the following three files to be deployed:  
   
 - *ApplicationName*.exe: The executable assembly application file.  
   
@@ -92,9 +92,9 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 > [!NOTE]
 > For more information about deployment and application manifests, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
- These files are produced when an XBAP is built. For more information, see [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)). Like markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages, [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are typically published to a Web server and viewed using Internet Explorer.  
+ These files are produced when an XBAP is built. For more information, see [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)). Like markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages, XBAPs are typically published to a Web server and viewed using Internet Explorer.  
   
- [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] can be deployed to clients using any of the deployment techniques. However, ClickOnce is recommended since it provides the following capabilities:  
+ XBAPs can be deployed to clients using any of the deployment techniques. However, ClickOnce is recommended since it provides the following capabilities:  
   
 1. Automatic updates when a new version is published.  
   

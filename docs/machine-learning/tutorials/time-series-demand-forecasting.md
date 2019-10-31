@@ -283,3 +283,9 @@ While the forecasted values are not predicting the exact number of rentals, they
 Congratulations! You've now successfully built a time series machine learning model to forecast bike rental demand.
 
 You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/Forecasting_BikeSharingDemand) repository.
+
+## Next steps
+
+- [Machine learning tasks in ML.NET](../resources/tasks.md)
+- [Improve model accuracy](../resources/improve-machine-learning-model-ml-net.md)
+

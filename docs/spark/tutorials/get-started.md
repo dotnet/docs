@@ -131,7 +131,7 @@ To use .NET for Apache Spark in an app, you need to install the Microsoft.Spark 
 
 ### 3. Code your app
 
-Open `Program.cs` in Visual Studio or any text editor and replace all of the code with the following:
+Open *Program.cs* in Visual Studio or any text editor and replace all of the code with the following:
 
 ```csharp
 using Microsoft.Spark.Sql;

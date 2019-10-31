@@ -66,7 +66,7 @@ As the figure shows, data binding is essentially the bridge between your binding
   - A binding source.
   - A path to the value in the binding source to use.
   
-> For example, if you want to bind the content of a `TextBox` to the `Employee.Name` property, your target object is the `TextBox`, the target property is the <xref:System.Windows.Controls.TextBox.Text%2A> property, the value to use is *Name*, and the source object is the *Employee* object.
+  > For example, if you want to bind the content of a `TextBox` to the `Employee.Name` property, your target object is the `TextBox`, the target property is the <xref:System.Windows.Controls.TextBox.Text%2A> property, the value to use is *Name*, and the source object is the *Employee* object.
 
 - The target property must be a dependency property. Most <xref:System.Windows.UIElement> properties are dependency properties, and most dependency properties, except read-only ones, support data binding by default. (Only types derived from <xref:System.Windows.DependencyObject> can define dependency properties; and all <xref:System.Windows.UIElement> types derive from `DependencyObject`.)
 

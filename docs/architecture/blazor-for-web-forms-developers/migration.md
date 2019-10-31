@@ -78,7 +78,7 @@ The Blazor project lists the dependencies you require within an `<ItemGroup>` el
 </ItemGroup>
 ```
 
-One NuGet package that simplifies the life of Web Forms developers is the [Windows Compatibility Pack](/dotnet/core/porting/windows-compat-pack). Although .NET Core is cross-platform, some features are only available on Windows. Windows-specific features are made available by installing the compatibility pack. Examples of such features include the Registry, WMI, and Directory Services. The package adds around 20,000 APIs and activates many services with which you may already be familiar. The eShop project doesn't require the compatibility pack; but if your projects use Windows-specific features, the package eases the migration efforts.
+One NuGet package that simplifies the life of Web Forms developers is the [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md). Although .NET Core is cross-platform, some features are only available on Windows. Windows-specific features are made available by installing the compatibility pack. Examples of such features include the Registry, WMI, and Directory Services. The package adds around 20,000 APIs and activates many services with which you may already be familiar. The eShop project doesn't require the compatibility pack; but if your projects use Windows-specific features, the package eases the migration efforts.
 
 ## Enable startup process
 

@@ -93,7 +93,7 @@ Other custom controls and components are not stand-alone projects. They must be 
 
    You can now debug your control or component as usual.
 
-For more information about debugging, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio) and [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md).
+For more information about debugging, see [Debugging in Visual Studio](/visualstudio/debugger/debugger-feature-tour) and [Walkthrough: Debugging Custom Windows Forms Controls at Design Time](walkthrough-debugging-custom-windows-forms-controls-at-design-time.md).
 
 ## Event Is Raised Twice in Inherited Control or Component
 

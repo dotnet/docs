@@ -47,7 +47,7 @@ Figure 4-21 shows structure of a gRPC service in Visual Studio 2019. Note how th
 
 **Figure 4-21**. gRPC project in Visual Studio 2019
 
-## gPRC Usage
+## gRPC Usage
 
 gRPC is well suited for the following scenarios:
 

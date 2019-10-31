@@ -184,7 +184,7 @@ This .NET app counts words with Apache Spark
 
 1. Run the following command to build your application:
 
-   ```powershell
+   ```dotnetcli
    dotnet build
    ```
 

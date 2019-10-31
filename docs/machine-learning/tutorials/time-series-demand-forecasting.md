@@ -103,7 +103,7 @@ The following is a sample of the data:
 
 1. Create `ModelOutput` class below the newly created `ModelInput` class.
 
-    [!code-csharp [ModelOutputClass](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L129-L137)]
+    [!code-csharp [ModelOutputClass](~/machinelearning-samples/samples/csharp/getting-started/Forecasting_BikeSharingDemand/BikeDemandForecasting/Program.cs#L129-L136)]
 
     The `ModelOutput` class contains the following columns:
 

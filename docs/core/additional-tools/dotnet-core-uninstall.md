@@ -354,3 +354,5 @@ In some cases, you no longer need the `NuGetFallbackFolder` and may wish to dele
 # [macOS](#tab/macos)
 
 Delete the downloaded *dotnet-core-uninstall.tar.gz* file from the directory where it was installed. If you unzipped the contents of this file into another directory, be sure to delete the content as well.
+
+---

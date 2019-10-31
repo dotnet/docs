@@ -165,7 +165,7 @@ Add-ins often provide multiple user interfaces for host applications to display.
 
 ## Add-Ins and XAML Browser Applications
 
-In the examples so far, the host application has been an installed standalone application. But [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] can also host add-ins, albeit with the following additional build and implementation requirements:
+In the examples so far, the host application has been an installed standalone application. But XAML browser applications (XBAPs) can also host add-ins, albeit with the following additional build and implementation requirements:
 
 - The XBAP application manifest must be configured specially to download the pipeline (folders and assemblies) and add-in assembly to the ClickOnce application cache on the client machine, in the same folder as the XBAP.
 

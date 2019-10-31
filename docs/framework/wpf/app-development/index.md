@@ -12,7 +12,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 - Standalone Applications (traditional style Windows applications built as executable assemblies that are installed to and run from the client computer).  
   
-- [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)] (applications composed of navigation pages that are built as executable assemblies and hosted by Web browsers such as Microsoft Internet Explorer or Mozilla Firefox).  
+- XAML browser applications (XBAPs) (applications composed of navigation pages that are built as executable assemblies and hosted by Web browsers such as Microsoft Internet Explorer or Mozilla Firefox).  
   
 - Custom Control Libraries (non-executable assemblies containing reusable controls).  
   
@@ -41,7 +41,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 - Managing windows in standalone applications.  
   
-- Tracking navigation in [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)], and standalone applications with navigation windows and frames.  
+- Tracking navigation in XAML browser applications (XBAPs), and standalone applications with navigation windows and frames.  
   
  These capabilities are implemented by the <xref:System.Windows.Application> class, which you add to your applications using an *application definition*.  
   
@@ -119,7 +119,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
 |[Application Management Overview](application-management-overview.md)|Provides an overview of the <xref:System.Windows.Application> class including managing application lifetime, windows, application resources, and navigation.|  
 |[Windows in WPF](windows-in-wpf-applications.md)|Provides details of managing windows in your application including how to use the <xref:System.Windows.Window> class and dialog boxes.|  
 |[Navigation Overview](navigation-overview.md)|Provides an overview of managing navigation between pages of your application.|  
-|[Hosting](hosting-wpf-applications.md)|Provides an overview of [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].|  
+|[Hosting](hosting-wpf-applications.md)|Provides an overview of XAML browser applications (XBAPs).|  
 |[Build and Deploy](building-and-deploying-wpf-applications.md)|Describes how to build and deploy your WPF application.|  
 |[Introduction to WPF in Visual Studio](../getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
 |[Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|

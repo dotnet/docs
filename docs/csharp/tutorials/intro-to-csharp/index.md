@@ -7,7 +7,7 @@ ms.custom: mvc
 # Introduction to C\#
 
 Welcome to the introduction to C# tutorials. These start with interactive lessons
-that you can run in your browser. You can learn the basics of C# from
+that you can run in your browser. You can learn the basics of C# from the
 [C# 101 video series](https://aka.ms/dotnet3-csharp) before starting these interactive lessons.
 
 > [!VIDEO https://channel9.msdn.com/Series/CSharp-101/What-is-C/player]

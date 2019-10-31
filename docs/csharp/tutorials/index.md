@@ -9,7 +9,7 @@ Welcome to the C# tutorials. These start with interactive lessons that you can r
 
 ## Introduction to C# interactive tutorials
 
-If you want to start your exploration in video format, [C# 101 video series](https://aka.ms/dotnet3-csharp) provides an introduction to C#. You'll learn about concepts you can explore in these tutorials.
+If you want to start your exploration in video format, the [C# 101 video series](https://aka.ms/dotnet3-csharp) provides an introduction to C#. You'll learn about concepts you can explore in these tutorials.
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,

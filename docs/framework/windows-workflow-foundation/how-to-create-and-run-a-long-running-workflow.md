@@ -234,7 +234,7 @@ The steps in this section add properties and helper methods to the form class th
     ' Get the workflow version and display it.
     ' If the workflow is just starting then this info will not
     ' be available in the persistence store so do not try and retrieve it.
-    If Not WorkflowStarting Then
+    If Not workflowStarting Then
         Dim instance As WorkflowApplicationInstance = _
             WorkflowApplication.GetInstance(WorkflowInstanceId, store)
 
@@ -258,7 +258,7 @@ The steps in this section add properties and helper methods to the form class th
     // Get the workflow version and display it.
     // If the workflow is just starting then this info will not
     // be available in the persistence store so do not try and retrieve it.
-    if (!WorkflowStarting)
+    if (!workflowStarting)
     {
         WorkflowApplicationInstance instance =
             WorkflowApplication.GetInstance(this.WorkflowInstanceId, store);
@@ -833,19 +833,19 @@ In order to resume a workflow instance, the host has to provide the workflow def
 4. Next, add the following code which adds the workflow to the workflow list and displays the workflow's version information on the form.
 
     ```vb
-    'A dd the workflow to the list and display the version information.
-    WorkflowStarting = True
+    ' Add the workflow to the list and display the version information.
+    workflowStarting = True
     InstanceId.SelectedIndex = InstanceId.Items.Add(wfApp.Id)
     WorkflowVersion.Text = identity.ToString()
-    WorkflowStarting = False
+    workflowStarting = False
     ```
 
     ```csharp
     // Add the workflow to the list and display the version information.
-    WorkflowStarting = true;
+    workflowStarting = true;
     InstanceId.SelectedIndex = InstanceId.Items.Add(wfApp.Id);
     WorkflowVersion.Text = identity.ToString();
-    WorkflowStarting = false;
+    workflowStarting = false;
     ```
 
 5. Call `ConfigureWorkflowApplication` to configure the instance store, extensions, and workflow lifecycle handlers for this `WorkflowApplication` instance.
@@ -899,10 +899,10 @@ In order to resume a workflow instance, the host has to provide the workflow def
         Dim wfApp = New WorkflowApplication(wf, inputs, identity)
 
         ' Add the workflow to the list and display the version information.
-        WorkflowStarting = True
+        workflowStarting = True
         InstanceId.SelectedIndex = InstanceId.Items.Add(wfApp.Id)
         WorkflowVersion.Text = identity.ToString()
-        WorkflowStarting = False
+        workflowStarting = False
 
         ' Configure the instance store, extensions, and
         ' workflow lifecycle handlers.
@@ -940,10 +940,10 @@ In order to resume a workflow instance, the host has to provide the workflow def
         var wfApp = new WorkflowApplication(wf, inputs, identity);
 
         // Add the workflow to the list and display the version information.
-        WorkflowStarting = true;
+        workflowStarting = true;
         InstanceId.SelectedIndex = InstanceId.Items.Add(wfApp.Id);
         WorkflowVersion.Text = identity.ToString();
-        WorkflowStarting = false;
+        workflowStarting = false;
 
         // Configure the instance store, extensions, and
         // workflow lifecycle handlers.

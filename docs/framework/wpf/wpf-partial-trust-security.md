@@ -111,7 +111,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
 <a name="Browser_Host_Detection"></a>   
 ### Browser Host Detection  
- Using CAS to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)].  
+ Using CAS to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your XAML browser application (XBAP) only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)].  
   
 > [!NOTE]
 > <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A> only distinguishes whether an application is running in a browser, not which set of permissions an application is running with.  

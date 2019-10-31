@@ -45,7 +45,7 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)
-- [Modifiers](/dotnet/csharp/language-reference/keywords)
+- [Modifiers](index.md)
 - [private](private.md)
 - [protected](protected.md)
 - [internal](internal.md)

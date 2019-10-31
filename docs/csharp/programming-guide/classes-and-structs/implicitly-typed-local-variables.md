@@ -93,7 +93,7 @@ However, the use of `var` does have at least the potential to make your code mor
 - [Anonymous Types](anonymous-types.md)
 - [Object and Collection Initializers](object-and-collection-initializers.md)
 - [var](../../language-reference/keywords/var.md)
-- [LINQ Query Expressions](../../linq/index.md)
+- [LINQ in C#](../../linq/index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [for](../../language-reference/keywords/for.md)
 - [foreach, in](../../language-reference/keywords/foreach-in.md)

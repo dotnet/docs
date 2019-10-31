@@ -23,7 +23,7 @@ var v = new { Amount = 108, Message = "Hello" };
 Console.WriteLine(v.Amount + v.Message);  
 ```  
   
- Anonymous types typically are used in the [select](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ Query Expressions](../../linq/index.md).  
+ Anonymous types typically are used in the [select](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ in C#](../../linq/index.md).  
   
  Anonymous types contain one or more public read-only properties. No other kinds of class members, such as methods or events, are valid. The expression that is used to initialize a property cannot be `null`, an anonymous function, or a pointer type.  
   
@@ -55,4 +55,4 @@ var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", 
 - [C# Programming Guide](../index.md)
 - [Object and Collection Initializers](./object-and-collection-initializers.md)
 - [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)
-- [LINQ Query Expressions](../../linq/index.md)
+- [LINQ in C#](../../linq/index.md)

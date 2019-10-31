@@ -120,5 +120,5 @@ The following example shows an object that implements <xref:System.Collections.I
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [LINQ Query Expressions](../../linq/index.md)
+- [LINQ in C#](../../linq/index.md)
 - [Anonymous Types](anonymous-types.md)

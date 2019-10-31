@@ -15,7 +15,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 - XCopy deployment.  
   
-- [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] deployment.  
+- Windows Installer deployment.  
   
 - ClickOnce deployment.  
   
@@ -33,15 +33,15 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 <a name="Windows_Installer"></a>   
 ### Windows Installer  
- [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] allows applications to be packaged as self-contained executables that can be easily distributed to clients and run. Furthermore, [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] is installed with Windows and enables integration with the desktop, the Start menu, and the Programs control panel.  
+ Windows Installer allows applications to be packaged as self-contained executables that can be easily distributed to clients and run. Furthermore, Windows Installer is installed with Windows and enables integration with the desktop, the Start menu, and the Programs control panel.  
   
- [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)] simplifies the installation and uninstallation of applications, but it does not provide facilities for ensuring that installed applications are kept up-to-date from a versioning standpoint.  
+ Windows Installer simplifies the installation and uninstallation of applications, but it does not provide facilities for ensuring that installed applications are kept up-to-date from a versioning standpoint.  
   
  For more information about Windows Installer, see [Windows Installer Deployment](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
   
 <a name="ClickOnce_Deployment"></a>   
 ### ClickOnce Deployment  
- ClickOnce enables Web-style application deployment for non-Web applications. Applications are published to and deployed from Web or file servers. Although ClickOnce does not support the full range of client features that [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]-installed applications do, it does support a subset that includes the following:  
+ ClickOnce enables Web-style application deployment for non-Web applications. Applications are published to and deployed from Web or file servers. Although ClickOnce does not support the full range of client features that Windows Installer-installed applications do, it does support a subset that includes the following:  
   
 - Integration with the Start menu and Programs control panel.  
   
@@ -67,7 +67,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 <a name="Deploying_Standalone_Applications"></a>   
 ### Deploying Standalone Applications  
- Standalone applications are deployed using either ClickOnce or [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]. Either way, standalone applications require full trust to run. Full trust is automatically granted to standalone applications that are deployed using [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]. Standalone applications that are deployed using ClickOnce are not automatically granted full trust. Instead, ClickOnce displays a security warning dialog that users must accept before a standalone application is installed. If accepted, the standalone application is installed and granted full trust. If not, the standalone application is not installed.  
+ Standalone applications are deployed using either ClickOnce or Windows Installer. Either way, standalone applications require full trust to run. Full trust is automatically granted to standalone applications that are deployed using Windows Installer. Standalone applications that are deployed using ClickOnce are not automatically granted full trust. Instead, ClickOnce displays a security warning dialog that users must accept before a standalone application is installed. If accepted, the standalone application is installed and granted full trust. If not, the standalone application is not installed.  
   
 <a name="Deploying_Markup_Only_XAML_Applications"></a>   
 ### Deploying Markup-Only XAML Applications  
@@ -75,7 +75,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  For more information about security for [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, see [Security](../security-wpf.md).  
   
- Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages can be installed to the local file system by using either XCopy or [!INCLUDE[TLA2#tla_wininstall](../../../../includes/tla2sharptla-wininstall-md.md)]. These pages can be viewed using Internet Explorer or Windows Explorer.  
+ Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages can be installed to the local file system by using either XCopy or Windows Installer. These pages can be viewed using Internet Explorer or Windows Explorer.  
   
  For more information about XAML, see [XAML Overview (WPF)](../advanced/xaml-overview-wpf.md).  
   

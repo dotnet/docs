@@ -32,7 +32,7 @@ There are different kinds of ways to develop .NET Core apps:
 
 ::: zone pivot="os-macos"
 
-- [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link).
+- [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Command-line with your favorite editor](../tutorials/using-with-xplat-cli.md)
 

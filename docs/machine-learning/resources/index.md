@@ -10,7 +10,7 @@ ms.date: 10/03/2019
 
 The following resources help you to learn more about ML.NET
 
-- [Glossary](glossary.md) of machine learning and Ml.NET terminology
+- [Glossary](glossary.md) of machine learning and ML.NET terminology
 - [ML.NET CLI telemetry](ml-net-cli-telemetry.md)
 - [Improve ML.NET Model Accuracy](improve-machine-learning-model-ml-net.md)
 - [Model evaluation metrics in ML.NET](metrics.md)

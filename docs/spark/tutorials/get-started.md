@@ -160,7 +160,7 @@ namespace MySparkApp
                 .Count()
                 .OrderBy(Functions.Col("count").Desc());
 
-            // Show results
+            // Show results.
             words.Show();
 
             // Stop Spark session

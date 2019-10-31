@@ -163,7 +163,7 @@ namespace MySparkApp
             // Show results.
             words.Show();
 
-            // Stop Spark session
+            // Stop Spark session.
             spark.Stop();
         }
     }

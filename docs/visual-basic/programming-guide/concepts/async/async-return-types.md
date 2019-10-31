@@ -70,9 +70,9 @@ The display statements in the following code verify that the values of the `resu
 ```vb
 ' Display the values of the result1 variable, the result2 variable, and
 ' the resultTask.Result property.
-textBox1.Text &= String.Format(vbCrLf & "Value of result1 variable:   {0}" & vbCrLf, result1)
-textBox1.Text &= String.Format("Value of result2 variable:   {0}" & vbCrLf, result2)
-textBox1.Text &= String.Format("Value of resultTask.Result:  {0}" & vbCrLf, integerTask.Result)
+textBox1.Text &= vbCrLf & $"Value of result1 variable:   {result1}" & vbCrLf
+textBox1.Text &= $"Value of result2 variable:   {result2}" & vbCrLf
+textBox1.Text &= $"Value of resultTask.Result:  {integerTask.Result}" & vbCrLf
 ```
 
 ## <a name="BKMK_TaskReturnType"></a> Task Return Type

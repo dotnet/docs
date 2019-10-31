@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 
 ## Prepare your environment
 
-Before you begin writing your app, you need to setup some prerequisite dependencies. If you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, follow the steps below.
+Before you begin writing your app, you need to setup some prerequisite dependencies. If you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, follow the following steps.
 
 ### 1. Install .NET
 

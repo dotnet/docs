@@ -170,7 +170,7 @@ The following code shows the complete example.
 ## See also
 
 - <xref:System.Type.Missing?displayProperty=nameWithType>
-- [dynamic](../../language-reference/keywords/dynamic.md)
+- [dynamic](../../language-reference/builtin-types/reference-types.md)
 - [Using Type dynamic](../types/using-type-dynamic.md)
 - [Named and Optional Arguments](../classes-and-structs/named-and-optional-arguments.md)
 - [How to: Use Named and Optional Arguments in Office Programming](../classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)

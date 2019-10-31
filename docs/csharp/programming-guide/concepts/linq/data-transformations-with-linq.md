@@ -97,5 +97,5 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
 - [LINQ to XML (C#)](./linq-to-xml-overview.md)
-- [LINQ Query Expressions](../../linq-query-expressions/index.md)
+- [LINQ Query Expressions](../../../linq/index.md)
 - [select clause](../../../language-reference/keywords/select-clause.md)

@@ -58,7 +58,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [object](../../language-reference/keywords/object.md)
+- [object](../../language-reference/builtin-types/reference-types.md)
 - [Inheritance](./inheritance.md)
 - [class](../../language-reference/keywords/class.md)
 - [struct](../../language-reference/keywords/struct.md)

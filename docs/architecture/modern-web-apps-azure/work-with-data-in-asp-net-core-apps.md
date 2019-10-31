@@ -338,17 +338,17 @@ NoSQL databases typically do not enforce [ACID](https://en.wikipedia.org/wiki/AC
 
 ## Azure Cosmos DB
 
-Azure Cosmos DB is a fully managed NoSQL database service that offers cloud-based schema-free data storage. Cosmos DB is built for fast and predictable performance, high availability, elastic scaling, and global distribution. Despite being a NoSQL database, developers can use rich and familiar SQL query capabilities on JSON data. All resources in Cosmos DB are stored as JSON documents. Resources are managed as _items_, which are documents containing metadata, and _feeds_, which are collections of items. Figure 8-2 shows the relationship between different Cosmos DB resources.
+Azure Cosmos DB is a fully managed NoSQL database service that offers cloud-based schema-free data storage. Azure Cosmos DB is built for fast and predictable performance, high availability, elastic scaling, and global distribution. Despite being a NoSQL database, developers can use rich and familiar SQL query capabilities on JSON data. All resources in Azure Cosmos DB are stored as JSON documents. Resources are managed as _items_, which are documents containing metadata, and _feeds_, which are collections of items. Figure 8-2 shows the relationship between different Azure Cosmos DB resources.
 
-![The hierarchical relationship between resources in Cosmos DB, a NoSQL JSON database](./media/image8-2.png)
+![The hierarchical relationship between resources in Azure Cosmos DB, a NoSQL JSON database](./media/image8-2.png)
 
-**Figure 8-2.** Cosmos DB resource organization.
+**Figure 8-2.** Azure Cosmos DB resource organization.
 
-The Cosmos DB query language is a simple yet powerful interface for querying JSON documents. The language supports a subset of ANSI SQL grammar and adds deep integration of JavaScript object, arrays, object construction, and function invocation.
+The Azure Cosmos DB query language is a simple yet powerful interface for querying JSON documents. The language supports a subset of ANSI SQL grammar and adds deep integration of JavaScript object, arrays, object construction, and function invocation.
 
-**References – Cosmos DB**
+**References – Azure Cosmos DB**
 
-- Cosmos DB Introduction  
+- Azure Cosmos DB Introduction  
   <https://docs.microsoft.com/azure/cosmos-db/introduction>
 
 ## Other persistence options

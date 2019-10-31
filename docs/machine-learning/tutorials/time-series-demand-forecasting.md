@@ -9,7 +9,7 @@ author: luisquintanilla
 #Customer intent: As a developer, I want to forecast demand for a product using time series analysis.
 ---
 
-# Tutorial: Forecast bike rental service demand with ML.NET
+# Tutorial: Forecast bike rental service demand with time series analysis and ML.NET
 
 Learn how to forecast demand for a bike rental service using univariate time series analysis on data stored in a SQL Server database with ML.NET.
 

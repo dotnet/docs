@@ -96,7 +96,7 @@ This tutorial shows you how to build a simple application on .NET Core that supp
 
 This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Windows Docker Container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
 
-## View and download samples
+## Viewing and downloading samples
 
 Many topics show source code and samples that are available for viewing or download from GitHub. To view a sample, just follow the sample link. To download the code, follow these instructions:
 

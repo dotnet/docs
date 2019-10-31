@@ -1,7 +1,7 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 05/29/2018
+ms.date: 10/31/2019
 ---
 # dotnet run
 
@@ -15,7 +15,15 @@ ms.date: 05/29/2018
 
 <!-- markdownlint-disable MD025 -->
 
-# [.NET Core 2.1](#tab/netcore21)
+# [.NET Core 3.0 and 3.1](#tab/netcore21)
+
+```dotnetcli
+dotnet run [-c|--configuration] [-f|--framework] [--force] [--interactive] [--launch-profile] [--no-build] [--no-dependencies]
+    [--no-launch-profile] [--no-restore] [-p|--project] [-r|--runtime] [-v|--verbosity] [[--] [application arguments]]
+dotnet run [-h|--help]
+```
+
+# [.NET Core 2.1 and 2.2](#tab/netcore21)
 
 ```dotnetcli
 dotnet run [-c|--configuration] [-f|--framework] [--force] [--launch-profile] [--no-build] [--no-dependencies]
@@ -62,7 +70,66 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ## Options
 
-# [.NET Core 2.1](#tab/netcore21)
+# [.NET Core 3.0 and 3.1](#tab/netcore21)
+
+`--`
+
+Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this delimiter are passed to the application run.
+
+`-c|--configuration {Debug|Release}`
+
+Defines the build configuration. The default value is `Debug`.
+
+`-f|--framework <FRAMEWORK>`
+
+Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
+
+`--force`
+
+Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
+
+`-h|--help`
+
+Prints out a short help for the command.
+
+`--interactive`
+
+Allows the command to stop and wait for user input or action (for example to complete authentication).
+
+`--launch-profile <NAME>`
+
+The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`,
+`Staging`, and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
+
+`--no-build`
+
+Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
+
+`--no-dependencies`
+
+When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
+
+`--no-launch-profile`
+
+Doesn't try to use *launchSettings.json* to configure the application.
+
+`--no-restore`
+
+Doesn't execute an implicit restore when running the command.
+
+`-p|--project <PATH>`
+
+Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
+
+`--runtime <RUNTIME_IDENTIFIER>`
+
+Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+`-v|--verbosity <LEVEL>`
+
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+
+# [.NET Core 2.1 and 2.2](#tab/netcore21)
 
 `--`
 

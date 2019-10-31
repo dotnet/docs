@@ -61,7 +61,7 @@ A type can be declared with one or more *type parameters* that serve as a placeh
   
 [!code-csharp[Generic types](../../samples/snippets/csharp/concepts/basic-types/generic-type.cs)]
   
-The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](language-reference/builtin-types/reference-types.md). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](programming-guide/generics/index.md).
+The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](language-reference/builtin-types/reference-types.md#the-object-type). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `strings` object in the previous example. For more information, see [Generics](programming-guide/generics/index.md).
 
 ## Implicit types, anonymous types, and tuple types
 

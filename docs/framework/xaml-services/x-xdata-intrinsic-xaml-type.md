@@ -16,7 +16,7 @@ Enables placement of XML data islands within a XAML production. XML elements wit
   
 ## XAML Object Element Usage  
   
-```  
+```xaml  
 <x:XData>  
   <elementDataRoot>  
     [elementData]  

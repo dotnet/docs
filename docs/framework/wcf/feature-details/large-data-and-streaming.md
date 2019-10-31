@@ -93,7 +93,7 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
 ### Programming Model  
  Regardless of which of the three built-in encoders you use in your application, the programming experience is identical with regards to transferring binary data. The difference is in how WCF handles the data based on their data types.  
   
-```  
+```csharp
 [DataContract]  
 class MyData  
 {  
@@ -184,7 +184,7 @@ class MyData
 ### Programming Model for Streamed Transfers  
  The programming model for streaming is straightforward. For receiving streamed data, specify an operation contract that has a single <xref:System.IO.Stream> typed input parameter. For returning streamed data, return a <xref:System.IO.Stream> reference.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IStreamedService  
 {  
@@ -203,7 +203,7 @@ public interface IStreamedService
   
  This rule similarly applies to message contracts. As shown in the following message contract, you can have only a single body member in your message contract that is a stream. If you want to communicate additional information with the stream, this information must be a carried in message headers. The message body is exclusively reserved for the stream content.  
   
-```  
+```csharp
 [MessageContract]  
 public class UploadStreamMessage  
 {  

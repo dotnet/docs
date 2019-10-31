@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 8589bba7-7304-45ba-9e31-7bf43dfd5c19
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess7::SetWriteableMetadataUpdateMode Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

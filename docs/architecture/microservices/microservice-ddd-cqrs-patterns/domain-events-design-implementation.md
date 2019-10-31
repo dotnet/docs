@@ -78,7 +78,7 @@ As shown in Figure 7-15, starting from the same domain event, you can handle mul
 
 The event handlers are typically in the application layer, because you will use infrastructure objects like repositories or an application API for the microservice’s behavior. In that sense, event handlers are similar to command handlers, so both are part of the application layer. The important difference is that a command should be processed only once. A domain event could be processed zero or *n* times, because it can be received by multiple receivers or event handlers with a different purpose for each handler.
 
-Having an open number of handlers per domain event allows you to add as many domain rules without as needed, without affecting  current code. For instance, implementing the following business rule might be as easy as adding a few event handlers (or even just one):
+Having an open number of handlers per domain event allows you to add as many domain rules as needed, without affecting  current code. For instance, implementing the following business rule might be as easy as adding a few event handlers (or even just one):
 
 > When the total amount purchased by a customer in the store, across any number of orders, exceeds $6,000, apply a 10% off discount to every new order and notify the customer with an email about that discount for future orders.
 
@@ -139,9 +139,9 @@ The deferred approach is what eShopOnContainers uses. First, you add the events 
 ```csharp
 public abstract class Entity
 {
-     //... 
+     //...
      private List<INotification> _domainEvents;
-     public List<INotification> DomainEvents => _domainEvents; 
+     public List<INotification> DomainEvents => _domainEvents;
 
      public void AddDomainEvent(INotification eventItem)
      {
@@ -188,7 +188,7 @@ public class OrderingContext : DbContext, IUnitOfWork
         // handlers that are using the same DbContext with Scope lifetime
         // B) Right AFTER committing data (EF SaveChanges) into the DB. This makes
         // multiple transactions. You will need to handle eventual consistency and
-        // compensatory actions in case of failures.        
+        // compensatory actions in case of failures.
         await _mediator.DispatchDomainEventsAsync(this);
 
         // After this line runs, all the changes (from the Command Handler and Domain
@@ -202,7 +202,7 @@ With this code, you dispatch the entity events to their respective event handler
 
 The overall result is that you have decoupled the raising of a domain event (a simple add into a list in memory) from dispatching it to an event handler. In addition, depending on what kind of dispatcher you are using, you could dispatch the events synchronously or asynchronously.
 
-Be aware that transactional boundaries come into significant play here. If your unit of work and transaction can span more than one aggregate (as when using EF Core and a relational database), this can work well. But if the transaction cannot span aggregates, such as when you are using a NoSQL database like Azure CosmosDB, you have to implement additional steps to achieve consistency. This is another reason why persistence ignorance is not universal; it depends on the storage system you use. 
+Be aware that transactional boundaries come into significant play here. If your unit of work and transaction can span more than one aggregate (as when using EF Core and a relational database), this can work well. But if the transaction cannot span aggregates, such as when you are using a NoSQL database like Azure CosmosDB, you have to implement additional steps to achieve consistency. This is another reason why persistence ignorance is not universal; it depends on the storage system you use.
 
 ### Single transaction across aggregates versus eventual consistency across aggregates
 
@@ -297,7 +297,7 @@ public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
 
     public async Task Handle(OrderStartedDomainEvent orderStartedEvent)
     {
-        var cardTypeId = (orderStartedEvent.CardTypeId != 0) ? orderStartedEvent.CardTypeId : 1;        
+        var cardTypeId = (orderStartedEvent.CardTypeId != 0) ? orderStartedEvent.CardTypeId : 1;
         var userGuid = _identityService.GetUserIdentity();
         var buyer = await _buyerRepository.FindAsync(userGuid);
         bool buyerOriginallyExisted = (buyer == null) ? false : true;
@@ -315,7 +315,7 @@ public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
                                        orderStartedEvent.CardExpiration,
                                        orderStartedEvent.Order.Id);
 
-        var buyerUpdated = buyerOriginallyExisted ? _buyerRepository.Update(buyer) 
+        var buyerUpdated = buyerOriginallyExisted ? _buyerRepository.Update(buyer)
                                                                       : _buyerRepository.Add(buyer);
 
         await _buyerRepository.UnitOfWork
@@ -369,7 +369,7 @@ As stated, use domain events to explicitly implement side effects of changes wit
   <https://blog.jayway.com/2013/06/20/dont-publish-domain-events-return-them/>
 
 - **Cesar de la Torre. Domain Events vs. Integration Events in DDD and microservices architectures** \
-  <https://blogs.msdn.microsoft.com/cesardelatorre/2017/02/07/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/>
+  <https://devblogs.microsoft.com/cesardelatorre/domain-events-vs-integration-events-in-domain-driven-design-and-microservices-architectures/>
 
 >[!div class="step-by-step"]
 >[Previous](client-side-validation.md)

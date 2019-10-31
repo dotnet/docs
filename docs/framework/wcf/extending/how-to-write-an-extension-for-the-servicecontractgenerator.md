@@ -12,7 +12,7 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
 1. Implement <xref:System.ServiceModel.Description.IServiceContractGenerationExtension>. To modify the generated service contract, use the <xref:System.ServiceModel.Description.ServiceContractGenerationContext> instance passed into the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> method.  
   
-    ```  
+    ```csharp
     public void GenerateContract(ServiceContractGenerationContext context)  
     {  
         Console.WriteLine("In generate contract.");  
@@ -22,7 +22,7 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
 2. Implement <xref:System.ServiceModel.Description.IWsdlImportExtension> on the same class. The <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> method can process a specific WSDL extension (WSDL annotations in this case) by adding a code generation extension to the imported <xref:System.ServiceModel.Description.ContractDescription> instance.  
   
-    ```  
+    ```csharp
     public void ImportContract(WsdlImporter importer, WsdlContractConversionContext context)  
        {  
                 // Contract documentation  
@@ -66,7 +66,7 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
 4. In the client code, create a `MetadataExchangeClient` and call `GetMetadata`.  
   
-    ```  
+    ```csharp  
     MetadataExchangeClient mexClient = new MetadataExchangeClient(metadataAddress);  
     mexClient.ResolveMetadataReferences = true;  
     MetadataSet metaDocs = mexClient.GetMetadata();  
@@ -74,13 +74,13 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
 5. Create a `WsdlImporter` and call `ImportAllContracts`.  
   
-    ```  
+    ```csharp  
     WsdlImporter importer = new WsdlImporter(metaDocs);            System.Collections.ObjectModel.Collection<ContractDescription> contracts = importer.ImportAllContracts();  
     ```  
   
 6. Create a `ServiceContractGenerator` and call `GenerateServiceContractType` for each contract.  
   
-    ```  
+    ```csharp  
     ServiceContractGenerator generator = new ServiceContractGenerator();  
     foreach (ContractDescription contract in contracts)  
     {  

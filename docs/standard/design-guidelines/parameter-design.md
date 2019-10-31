@@ -80,7 +80,7 @@ This section provides broad guidelines on parameter design, including sections w
 ### Members with Variable Number of Parameters  
  Members that can take a variable number of arguments are expressed by providing an array parameter. For example, <xref:System.String> provides the following method:  
   
-```  
+```csharp  
 public class String {  
     public static string Format(string format, object[] parameters);  
 }  
@@ -92,7 +92,7 @@ public class String {
   
  Adding the C# params keyword to an array parameter changes the parameter to a so-called params array parameter and provides a shortcut to creating a temporary array.  
   
-```  
+```csharp  
 public class String {  
     public static string Format(string format, params object[] parameters);  
 }  

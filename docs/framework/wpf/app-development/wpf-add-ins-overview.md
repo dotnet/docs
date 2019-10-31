@@ -21,7 +21,7 @@ ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
 
 ## Prerequisites
 
-Familiarity with the .NET Framework add-in model is required. For more information, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).
+Familiarity with the .NET Framework add-in model is required. For more information, see [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).
 
 <a name="AddInsOverview"></a>
 
@@ -60,7 +60,7 @@ In order for add-ins to be used, host applications need to find them and load th
 Ultimately, developing a robust add-in model is a non-trivial undertaking. For this reason, the .NET Framework provides an infrastructure for building add-in models.
 
 > [!NOTE]
-> For more detailed information on add-ins, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).
+> For more detailed information on add-ins, see [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)).
 
 <a name="NETFrameworkAddInModelOverview"></a>
 
@@ -121,7 +121,7 @@ How <xref:System.AddIn.Contract.INativeHandleContract>, <xref:System.AddIn.Pipel
 
 For an add-in to return a UI to a host application, the following are required:
 
-1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.
+1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.
 
 2. The contract must implement <xref:System.AddIn.Contract.IContract> and, to return a UI, the contract must declare a method with a return value of type <xref:System.AddIn.Contract.INativeHandleContract>.
 
@@ -141,7 +141,7 @@ For an example that demonstrates how to implement an add-in that returns a UI, s
 
 When an add-in is a UI, the following are required:
 
-1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.
+1. The host application, add-in, and pipeline must be created, as described by the .NET Framework [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)) documentation.
 
 2. The contract interface for the add-in must implement <xref:System.AddIn.Contract.INativeHandleContract>.
 
@@ -177,7 +177,7 @@ These tasks are described in detail in the following subsections.
 
 ### Configuring the Pipeline and Add-In for ClickOnce Deployment
 
-[!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are downloaded to and run from a safe folder in the ClickOnce deployment cache. In order for an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] to host an add-in, the pipeline and add-in assembly must also be downloaded to the safe folder. To achieve this, you need to configure the application manifest to include both the pipeline and add-in assembly for download. This is most easily done in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], although the pipeline and add-in assembly needs to be in the host [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project's root folder in order for [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] to detect the pipeline assemblies.
+[!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] are downloaded to and run from a safe folder in the ClickOnce deployment cache. In order for an [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] to host an add-in, the pipeline and add-in assembly must also be downloaded to the safe folder. To achieve this, you need to configure the application manifest to include both the pipeline and add-in assembly for download. This is most easily done in Visual Studio, although the pipeline and add-in assembly needs to be in the host [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project's root folder in order for Visual Studio to detect the pipeline assemblies.
 
 Consequently, the first step is to build the pipeline and add-in assembly to the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project's root by setting the build output of each pipeline assembly and add-in assembly projects. The following table shows the build output paths for pipeline assembly projects and add-in assembly project that are in the same solution and root folder as the host [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project.
 
@@ -191,13 +191,13 @@ Table 1: Build Output Paths for the Pipeline Assemblies That Are Hosted by an XB
 |Host-Side Adapter|`..\HostXBAP\HostSideAdapters\`|
 |Add-In|`..\HostXBAP\AddIns\WPFAddIn1`|
 
-The next step is to specify the pipeline assemblies and add-in assembly as the [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] content files in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] by doing the following:
+The next step is to specify the pipeline assemblies and add-in assembly as the [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] content files in Visual Studio by doing the following:
 
 1. Including the pipeline and add-in assembly in the project by right-clicking each pipeline folder in Solution Explorer and choosing **Include In Project**.
 
 2. Setting the **Build Action** of each pipeline assembly and add-in assembly to **Content** from the **Properties** window.
 
-The final step is to configure the application manifest to include the pipeline assembly files and add-in assembly file for download. The files should be located in folders at the root of the folder in the ClickOnce cache that the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] application occupies. The configuration can be achieved in [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] by doing the following:
+The final step is to configure the application manifest to include the pipeline assembly files and add-in assembly file for download. The files should be located in folders at the root of the folder in the ClickOnce cache that the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] application occupies. The configuration can be achieved in Visual Studio by doing the following:
 
 1. Right-click the [!INCLUDE[TLA2#tla_xbap](../../../../includes/tla2sharptla-xbap-md.md)] project, click **Properties**, click **Publish**, and then click the **Application Files** button.
 
@@ -305,7 +305,7 @@ By default, when multiple application domains are used, the various .NET Framewo
 ## See also
 
 - <xref:System.LoaderOptimizationAttribute>
-- [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
+- [Add-ins and Extensibility](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100))
 - [Application Domains](../../app-domains/application-domains.md)
 - [.NET Framework Remoting Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kwdt6w2k(v=vs.100))
 - [Making Objects Remotable](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/wcf3swha(v=vs.100))

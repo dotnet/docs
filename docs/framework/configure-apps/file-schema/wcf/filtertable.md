@@ -6,17 +6,18 @@ ms.assetid: e9f05441-3ad1-49b9-a267-71724aa094b4
 # \<filterTable>
 Represents a routing table that contains a list of filters to evaluate messages against and the client endpoint to route messages to if the filter evaluates to true.  
   
- \<system.serviceModel>  
-\<routing>  
-\<routingTables>  
-\<table>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<filterTables>**](filtertables.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filterTable>**  
   
 ## Syntax  
   
 ```xml  
 <routing>
   <filterTables>
-    <filterTable name="String">
+     name="String">
       <entries>
         <add backupList="String"
              endpointName="String"

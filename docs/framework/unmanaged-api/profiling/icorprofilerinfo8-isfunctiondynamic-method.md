@@ -43,7 +43,7 @@ A function is considered dynamic if it has no metadata. Certain methods like IL 
 
 **Library:** CorGuids.lib
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
 ## See also
 

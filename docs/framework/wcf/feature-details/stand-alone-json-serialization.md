@@ -1,9 +1,12 @@
 ---
-title: "Stand-Alone JSON Serialization"
+title: "Stand-Alone JSON Serialization using DataContractJsonSerializer"
 ms.date: "03/30/2017"
 ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
 ---
-# Stand-Alone JSON Serialization
+# Stand-Alone JSON Serialization using DataContractJsonSerializer
+
+> [!NOTE]
+> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the tools in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md). 
 
 JSON (JavaScript Object Notation) is a data format that is specifically designed to be used by JavaScript code running on Web pages inside the browser. It is the default data format used by ASP.NET AJAX services created in Windows Communication Foundation (WCF).
 

@@ -14,9 +14,11 @@ Microsoft provides debuggers for managed code in **Visual Studio** and **Visual 
 ## Visual Studio managed debugger
 
 **Visual Studio** is an integrated development environment with the most comprehensive debugger available. Visual Studio is an excellent choice for developers working on Windows.
+
 - [Tutorial - Debugging a .NET Core application on Windows with Visual Studio](../tutorials/debugging-with-visual-studio.md)
 
 While Visual Studio is a Windows application, it can still be used to debug Linux and macOS apps remotely.
+
 - [Debugging a .NET Core application on Linux/OSX with Visual Studio](https://github.com/Microsoft/MIEngine/wiki/Offroad-Debugging-of-.NET-Core-on-Linux---OSX-from-Visual-Studio)
 
  Debugging ASP.NET Core apps require slightly different instructions.

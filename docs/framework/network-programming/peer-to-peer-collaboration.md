@@ -36,4 +36,4 @@ The Peer-to-Peer Collaboration Infrastructure is a simplified implementation of 
 ## See also
 
 - <xref:System.Net.PeerToPeer.Collaboration>
-- [About the System.Net.PeerToPeer.Collaboration Namespace](../../../docs/framework/network-programming/about-the-system-net-peertopeer-collaboration-namespace.md)
+- [About the System.Net.PeerToPeer.Collaboration Namespace](about-the-system-net-peertopeer-collaboration-namespace.md)

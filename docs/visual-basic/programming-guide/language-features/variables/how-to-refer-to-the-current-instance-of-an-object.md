@@ -18,7 +18,7 @@ The *current instance* of an object is the instance in which the code is current
   
 - Use the `Me` keyword where you would normally use the name of an object variable.  
   
-    ```  
+    ```vb  
     Me.ForeColor = System.Drawing.Color.Crimson  
     Me.Close()  
     ```  

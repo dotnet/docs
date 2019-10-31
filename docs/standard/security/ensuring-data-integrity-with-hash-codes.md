@@ -44,13 +44,13 @@ A hash value is a numeric value of a fixed length that uniquely identifies data.
   
  If the two hash values match, this code displays the following to the console:  
   
-```  
+```console  
 The hash codes match.  
 ```  
   
  If they do not match, the code displays the following:  
   
-```  
+```console  
 The hash codes do not match.  
 ```  
   

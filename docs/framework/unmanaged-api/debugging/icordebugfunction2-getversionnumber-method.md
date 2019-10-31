@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e3a1ce48-9bb9-4ed6-a5fe-5e1819a6333f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction2::GetVersionNumber Method
 Gets the Edit and Continue version of this function.  

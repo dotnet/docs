@@ -23,4 +23,4 @@ This topic describes the new Identity and Access Tool for Visual Studio 11. You 
   
 ## See also
 
-- [WIF Features](../../../docs/framework/security/wif-features.md)
+- [WIF Features](wif-features.md)

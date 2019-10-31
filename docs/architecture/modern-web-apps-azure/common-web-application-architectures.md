@@ -180,7 +180,7 @@ You can build a single and monolithic-deployment based Web Application or Servic
 
 To manage this model, you deploy a single container to represent the application. To scale, just add additional copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or VM.
 
-![](./media/image5-13.png)
+![Figure 5-13](./media/image5-13.png)
 
 You can include multiple components/libraries or internal layers within each container, as illustrated in Figure 5-13. But, following the container principle of _"a container does one thing, and does it in one process_", the monolithic pattern might be a conflict.
 
@@ -192,7 +192,7 @@ In addition to the "scale everything" problem, changes to a single component req
 
 The monolithic approach is common, and many organizations are developing with this architectural approach. Many are having good enough results, while others are hitting limits. Many designed their applications in this model, because the tools and infrastructure were too difficult to build service-oriented architectures (SOA), and they didn't see the need until the app grew. If you find you're hitting the limits of the monolithic approach, breaking up the app to enable it to better leverage containers and microservices may be the next logical step.
 
-![](./media/image5-14.png)
+![Figure 5-14](./media/image5-14.png)
 
 Deploying monolithic applications in Microsoft Azure can be achieved using dedicated VMs for each instance. Using [Azure Virtual Machine Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/), you can easily scale the VMs. [Azure App Services](https://azure.microsoft.com/services/app-service/) can run monolithic applications and easily scale instances without having to manage the VMs. Azure App Services can run single instances of Docker containers as well, simplifying the deployment. Using Docker, you can deploy a single VM as a Docker host, and run multiple instances. Using the Azure balancer, as shown in the Figure 5-14, you can manage scaling.
 
@@ -286,16 +286,17 @@ Note that running Docker containers may be bound to ports you might otherwise tr
 If you want to add Docker support to your application using Visual Studio, make sure Docker Desktop is running when you do so. The wizard won't run correctly if Docker Desktop isn't running when you start the wizard. In addition, the wizard examines your current container choice to add the correct Docker support. If you want to add support for Windows Containers, you need to run the wizard while you have Docker Desktop running with Windows Containers configured. If you want to add support for Linux containers, run the wizard while you have Docker running with Linux containers configured.
 
 ### References – Common web architectures
-> - **The Clean Architecture**  
->   <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
-> - **The Onion Architecture**  
->   <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
-> - **The Repository Pattern**  
->   <https://deviq.com/repository-pattern/>
-> - **Clean Architecture Solution Sample**  
->   <https://github.com/ardalis/cleanarchitecture>
-> - **Architecting Microservices e-book**  
->   <https://aka.ms/MicroservicesEbook>
+
+- **The Clean Architecture**  
+  <https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html>
+- **The Onion Architecture**  
+  <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
+- **The Repository Pattern**  
+  <https://deviq.com/repository-pattern/>
+- **Clean Architecture Solution Sample**  
+  <https://github.com/ardalis/cleanarchitecture>
+- **Architecting Microservices e-book**  
+  <https://aka.ms/MicroservicesEbook>
 
 >[!div class="step-by-step"]
 >[Previous](architectural-principles.md)

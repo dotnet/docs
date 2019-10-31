@@ -38,7 +38,7 @@ Automatic proxy detection is a process by which a Web proxy server is identified
   
  Proxies are configured on a per-connectoid basis. A connectoid is an item in the network connection dialog, and can be a physical network device (a modem or Ethernet card) or a virtual interface (such as a VPN connection running over a network device). When a connectoid changes (for example, a wireless connection changes an access point, or a VPN is enabled), the proxy detection algorithm is run again.  
   
- By default, the Internet Explorer proxy settings are used to detect the proxy. If your application is running under a non-interactive account (without a convenient way to configure IE proxy settings), or if you want to use proxy settings different than the IE settings, you can configure your proxy by creating a configuration file with the [\<defaultProxy> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md) and [\<proxy> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/proxy-element-network-settings.md) elements defined.  
+ By default, the Internet Explorer proxy settings are used to detect the proxy. If your application is running under a non-interactive account (without a convenient way to configure IE proxy settings), or if you want to use proxy settings different than the IE settings, you can configure your proxy by creating a configuration file with the [\<defaultProxy> Element (Network Settings)](../configure-apps/file-schema/network/defaultproxy-element-network-settings.md) and [\<proxy> Element (Network Settings)](../configure-apps/file-schema/network/proxy-element-network-settings.md) elements defined.  
   
  For requests that you create, you can disable automatic proxy detection at the request level by using a null <xref:System.Net.WebRequest.Proxy%2A> with your request, as shown in the following code example.  
   
@@ -65,4 +65,4 @@ Public Shared Sub DisableForMyRequest(ByVal resource As Uri)
 
 - <xref:System.Net.WebProxy>
 - <xref:System.Net.WebRequest>
-- [\<system.Net> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)
+- [\<system.Net> Element (Network Settings)](../configure-apps/file-schema/network/system-net-element-network-settings.md)

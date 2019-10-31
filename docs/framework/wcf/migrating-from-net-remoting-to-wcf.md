@@ -9,7 +9,7 @@ This article describes how to migrate an application that uses .NET Remoting to 
  .NET Remoting is a legacy product that is supported only for backward compatibility. It is not secure across mixed-trust environments because it cannot maintain the separate trust levels between client and server. For example, you should never expose a .NET Remoting endpoint to the Internet or to untrusted clients. We recommend existing Remoting applications be migrated to newer and more secure technologies. If the application’s design uses only HTTP and is RESTful, we recommend ASP.NET Web API. For more information, see ASP.NET Web API. If the application is based on SOAP or requires non-Http protocols such as TCP, we recommend WCF.  
 
 ## Comparing .NET Remoting to WCF  
- This section compares the basic building blocks of .NET Remoting with their WCF equivalents. We will use these building blocks later to create some common client-server scenarios in WCF.The following chart summarizes the main similarities and differences between .NET Remoting and WCF.  
+ This section compares the basic building blocks of .NET Remoting with their WCF equivalents. We will use these building blocks later to create some common client-server scenarios in WCF. The following chart summarizes the main similarities and differences between .NET Remoting and WCF.  
   
 ||.NET Remoting|WCF|  
 |-|-------------------|---------|  

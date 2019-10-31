@@ -24,11 +24,11 @@ The SqlMetal command-line tool generates code and mapping for the [!INCLUDE[vbte
 > [!NOTE]
 > Developers who use Visual Studio can also use the Object Relational Designer to generate entity classes. The command-line approach scales well for large databases. Because SqlMetal is a command-line tool, you can use it in a build process.  
   
- To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).At the command prompt, type the following:  
+ To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 sqlmetal [options] [<input file>]  
 ```  
   
@@ -71,7 +71,7 @@ sqlmetal [options] [<input file>]
 |**/context:** *\<type>*|Specifies name of data context class. Default value: Derived from database name.|  
 |**/entitybase:** *\<type>*|Specifies the base class of the entity classes in the generated code. Default value: Entities have no base class.|  
 |**/pluralize**|Automatically pluralizes or singularizes class and member names.<br /><br /> This option is available only in the U.S. English version.|  
-|**/serialization:** *\<option>*|Generates serializable classes.<br /><br /> Valid *\<option>*: None, Unidirectional. Default value: None.<br /><br /> For more information, see [Serialization](../../../docs/framework/data/adonet/sql/linq/serialization.md).|  
+|**/serialization:** *\<option>*|Generates serializable classes.<br /><br /> Valid *\<option>*: None, Unidirectional. Default value: None.<br /><br /> For more information, see [Serialization](../data/adonet/sql/linq/serialization.md).|  
   
  **Input File**  
   
@@ -128,6 +128,6 @@ sqlmetal [options] [<input file>]
   
 ## See also
 
-- [How to: Generate the Object Model in Visual Basic or C#](../../../docs/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)
-- [Code Generation in LINQ to SQL](../../../docs/framework/data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
-- [External Mapping](../../../docs/framework/data/adonet/sql/linq/external-mapping.md)
+- [How to: Generate the Object Model in Visual Basic or C#](../data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp.md)
+- [Code Generation in LINQ to SQL](../data/adonet/sql/linq/code-generation-in-linq-to-sql.md)
+- [External Mapping](../data/adonet/sql/linq/external-mapping.md)

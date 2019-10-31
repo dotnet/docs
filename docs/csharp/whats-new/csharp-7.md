@@ -8,6 +8,7 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 # What's new in C# 7.0
 
 C# 7.0 adds a number of new features to the C# language:
+
 - [`out` variables](#out-variables)
   - You can declare `out` values inline as arguments to the method where they're used.
 - [Tuples](#tuples)

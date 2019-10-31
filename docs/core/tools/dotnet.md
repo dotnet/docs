@@ -13,16 +13,18 @@ ms.date: 06/04/2018
 
 ## Synopsis
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.1](#tab/netcore21)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
     [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
     [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx]
     [--runtimeconfig] [-v|--verbosity] [--version]
@@ -30,7 +32,7 @@ dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--de
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additionalprobingpath] [--depsfile] [-d|--diagnostics]
     [--fx-version] [-h|--help] [--info] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
@@ -88,6 +90,7 @@ Displays the installed .NET Core SDKs.
 `--roll-forward-on-no-candidate-fx <N>`
 
 Defines behavior when the required shared framework is not available. `N` can be:
+
 - `0` - Disable even minor version roll forward.
 - `1` - Roll forward on minor version, but not on major version. This is the default behavior.
 - `2` - Roll forward on minor and major versions.

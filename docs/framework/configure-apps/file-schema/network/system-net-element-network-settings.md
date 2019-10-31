@@ -12,8 +12,8 @@ ms.assetid: 52de4d6c-b24d-44aa-ba7d-6b5061f1357e
 # \<system.Net> Element (Network Settings)
 Contains settings that specify how the .NET Framework connects to the network.  
   
- \<configuration>  
-\<system.net>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;**\<system.net>**  
   
 ## Syntax  
   

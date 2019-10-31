@@ -322,7 +322,7 @@ This `BindingParameterCollection` is passed inside the `BindingContext` to each 
 
 1. Install ASP.NET 4.0 using the following command.
 
-    ```
+    ```console
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 
@@ -338,7 +338,7 @@ When running the sample, the following output is expected.
 
 Client:
 
-```
+```console
 Press enter when service is available
 
  > Sent chunk 1 of message 867c1fd1-d39e-4be1-bc7b-32066d7ced10
@@ -365,7 +365,7 @@ Press enter when service is available
 
 Server:
 
-```
+```console
 Service started, press enter to exit
  < Received chunk 1 of message 867c1fd1-d39e-4be1-bc7b-32066d7ced10
  < Received chunk 2 of message 867c1fd1-d39e-4be1-bc7b-32066d7ced10

@@ -1856,7 +1856,7 @@ query {
 
 And here is the full output when this code is run in F# Interactive.
 
-```
+```console
 --> Referenced 'C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\FSharp.Data.TypeProviders.dll'
 
 --> Referenced 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Data.dll'

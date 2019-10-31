@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 05dbbe2b-049c-4a60-be69-2ad7a949405e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo5::SetEventMask2 Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

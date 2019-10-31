@@ -43,15 +43,15 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 1. In **Solution Explorer**, right-click your project's name and then click **Add Reference**. The **Add Reference** dialog box appears.
 
-2. On the **Assemblies**  page, select **Microsoft.Office.Interop.Word** in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Excel**.  If you do not see the assemblies, you may need to ensure they are installed and displayed (see [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies))
+2. On the **Assemblies**  page, select **Microsoft.Office.Interop.Word** in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Excel**.  If you do not see the assemblies, you may need to ensure they are installed and displayed. See [How to: Install Office Primary Interop Assemblies](/visualstudio/vsto/how-to-install-office-primary-interop-assemblies).
 
 3. Click **OK**.
 
 ## To add necessary using directives
 
-1. In **Solution Explorer**, right-click the **Program.cs** file and then click **View Code**.
+1. In **Solution Explorer**, right-click the *Program.cs* file and then click **View Code**.
 
-2. Add the following `using` directives to the top of the code file.
+2. Add the following `using` directives to the top of the code file:
 
      [!code-csharp[csProgGuideOfficeHowTo#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#1)]
 
@@ -89,7 +89,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
      [!code-csharp[csProgGuideOfficeHowTo#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideofficehowto/cs/program.cs#14)]
 
-     C# 4, and later versions, converts the returned `Object` to `dynamic` automatically if the assembly is referenced by the [/link](../../language-reference/compiler-options/link-compiler-option.md) compiler option or, equivalently, if the Excel **Embed Interop Types** property is set to true. True is the default value for this property.
+     C# 4, and later versions, converts the returned `Object` to `dynamic` automatically if the assembly is referenced by the [-link](../../language-reference/compiler-options/link-compiler-option.md) compiler option or, equivalently, if the Excel **Embed Interop Types** property is set to true. True is the default value for this property.
 
 ## To run the project
 
@@ -131,7 +131,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 ## To set the Embed Interop Types property
 
-1. Additional enhancements are possible when you call a COM type that does not require a primary interop assembly (PIA) at run time. Removing the dependency on PIAs results in version independence and easier deployment. For more information about the advantages of programming without PIAs, see [Walkthrough: Embedding Types from Managed Assemblies](../concepts/assemblies-gac/walkthrough-embedding-types-from-managed-assemblies-in-visual-studio.md).
+1. Additional enhancements are possible when you call a COM type that does not require a primary interop assembly (PIA) at run time. Removing the dependency on PIAs results in version independence and easier deployment. For more information about the advantages of programming without PIAs, see [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md).
 
      In addition, programming is easier because the types that are required and returned by COM methods can be represented by using the type `dynamic` instead of `Object`. Variables that have type `dynamic` are not evaluated until run time, which eliminates the need for explicit casting. For more information, see [Using Type dynamic](../types/using-type-dynamic.md).
 
@@ -143,7 +143,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 3. If you cannot see the **Properties** window, press **F4**.
 
-4. Find **Embed Interop Types** in the list of properties, and change its value to **False**. Equivalently, you can compile by using the [/reference](../../language-reference/compiler-options/reference-compiler-option.md) compiler option instead of [/link](../../language-reference/compiler-options/link-compiler-option.md) at a command prompt.
+4. Find **Embed Interop Types** in the list of properties, and change its value to **False**. Equivalently, you can compile by using the [-reference](../../language-reference/compiler-options/reference-compiler-option.md) compiler option instead of [-link](../../language-reference/compiler-options/link-compiler-option.md) at a command prompt.
 
 ## To add additional formatting to the table
 

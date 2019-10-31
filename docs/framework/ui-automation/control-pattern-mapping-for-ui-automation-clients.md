@@ -72,4 +72,4 @@ ms.assetid: 8b81645b-8be3-4e26-9c98-4fb0fceca06b
   
 ## See also
 
-- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+- [UI Automation Overview](ui-automation-overview.md)

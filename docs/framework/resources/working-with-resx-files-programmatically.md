@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "resource files, .resx files"
   - ".resx files"
 ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Working with .resx files programmatically
 Because XML resource (.resx) files must consist of well-defined XML, including a header that must follow a specific schema followed by data in name/value pairs, you may find that creating these files manually is error-prone. As an alternative, you can create .resx files programmatically by using types and members in the .NET Class Library. You can also use the .NET Class Library to retrieve resources that are stored in .resx files. This topic explains how you can use the types and members in the <xref:System.Resources> namespace to work with .resx files.
@@ -40,9 +38,9 @@ The following example creates a .resx file named CarResources.resx that stores s
 [!code-vb[Conceptual.Resources.ResX#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/create1.vb#1)]
 
 > [!TIP]
-> You can also use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create .resx files. At compile time, Visual Studio uses the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to convert the .resx file to a binary resource (.resources) file, and also embeds it in either an application assembly or a satellite assembly.
+> You can also use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) to create .resx files. At compile time, Visual Studio uses the [Resource File Generator (Resgen.exe)](../tools/resgen-exe-resource-file-generator.md) to convert the .resx file to a binary resource (.resources) file, and also embeds it in either an application assembly or a satellite assembly.
 
-You cannot embed a .resx file in a runtime executable or compile it into a satellite assembly. You must convert your .resx file into a binary resource (.resources) file by using the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md). The resulting .resources file can then be embedded in an application assembly or a satellite assembly. For more information, see [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md).
+You cannot embed a .resx file in a runtime executable or compile it into a satellite assembly. You must convert your .resx file into a binary resource (.resources) file by using the [Resource File Generator (Resgen.exe)](../tools/resgen-exe-resource-file-generator.md). The resulting .resources file can then be embedded in an application assembly or a satellite assembly. For more information, see [Creating Resource Files](creating-resource-files-for-desktop-apps.md).
 
 ## Enumerate resources
  In some cases, you may want to retrieve all resources, instead of a specific resource, from a .resx file. To do this, you can use the <xref:System.Resources.ResXResourceReader?displayProperty=nameWithType> class, which provides an enumerator for all resources in the .resx file. The <xref:System.Resources.ResXResourceReader?displayProperty=nameWithType> class implements <xref:System.Collections.IDictionaryEnumerator>, which returns a <xref:System.Collections.DictionaryEntry> object that represents a particular resource for each iteration of the loop. Its <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=nameWithType> property returns the resource's key, and its <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=nameWithType> property returns the resource's value.
@@ -63,7 +61,7 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 ## Convert .resx files to binary .resources files
  Converting .resx files to embedded binary resource (.resources) files has significant advantages. Although .resx files are easy to read and maintain during application development, they are rarely included with finished applications. If they are distributed with an application, they exist as separate files apart from the application executable and its accompanying libraries. In contrast, .resources files are embedded in the application executable or its accompanying assemblies. In addition, for localized applications, relying on .resx files at run time places the responsibility for handling resource fallback on the developer. In contrast, if a set of satellite assemblies that contain embedded .resources files has been created, the common language runtime handles the resource fallback process.
 
- To convert a .resx file to a .resources file, you use the [Resource File Generator (Resgen.exe)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md), which has the following basic syntax:
+ To convert a .resx file to a .resources file, you use the [Resource File Generator (Resgen.exe)](../tools/resgen-exe-resource-file-generator.md), which has the following basic syntax:
 
  **Resgen.exe** *.resxFilename*
 
@@ -75,12 +73,12 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 
  **csc** *filename* **.cs -resource:** *.resourcesFilename*
 
- The .resources file can also be embedded in a satellite assembly by using [Assembly Linker (AL.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md), which has the following basic syntax:
+ The .resources file can also be embedded in a satellite assembly by using [Assembly Linker (AL.exe)](../tools/al-exe-assembly-linker.md), which has the following basic syntax:
 
  **al** *resourcesFilename* **-out:** *assemblyFilename*
 
 ## See also
 
-- [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)
-- [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md)
-- [Al.exe (Assembly Linker)](../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Creating Resource Files](creating-resource-files-for-desktop-apps.md)
+- [Resgen.exe (Resource File Generator)](../tools/resgen-exe-resource-file-generator.md)
+- [Al.exe (Assembly Linker)](../tools/al-exe-assembly-linker.md)

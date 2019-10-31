@@ -17,9 +17,8 @@ helpviewer_keywords:
   - "DLL functions"
   - "object fields in platform invoke"
 ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
+
 # Creating Prototypes in Managed Code
 This topic describes how to access unmanaged functions and introduces several attribute fields that annotate method definition in managed code. For examples that demonstrate how to construct .NET-based declarations to be used with platform invoke, see [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md).  
   
@@ -183,7 +182,7 @@ class PInvokeScenario
   
  The following COM interop interface declarations ignore the `Assert`, `Deny`, and `PermitOnly` modifiers, similarly to the platform invoke examples in the previous section.  
   
-```  
+```csharp
 [ComImport, Guid("12345678-43E6-43c9-9A13-47F40B338DE0")]  
 interface IAssertStubsItf  
 {  
@@ -214,7 +213,7 @@ interface IAssertStubsItf
   
  Additionally, the `Demand` modifier is not accepted in COM interop interface declaration scenarios, as shown in the following example.  
   
-```  
+```csharp  
 [ComImport, Guid("12345678-43E6-43c9-9A13-47F40B338DE0")]  
 interface IDemandStubsItf  
 {  

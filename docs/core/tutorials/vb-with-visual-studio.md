@@ -1,8 +1,6 @@
 ---
 title: .NET Core Hello World application with Visual Basic in Visual Studio 2017
 description: Learn how to build a simple .NET Core console application with Visual Basic using Visual Studio 2017.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs:
   - "vb"
@@ -14,7 +12,7 @@ This topic provides a step-by-step introduction to building, debugging, and publ
 
 ## Prerequisites
 
-[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.0.
+[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.1 or later versions.
 
 For more information, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md).
 

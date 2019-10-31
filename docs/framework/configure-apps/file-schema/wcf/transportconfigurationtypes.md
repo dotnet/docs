@@ -6,9 +6,10 @@ ms.assetid: 929c8b0a-5460-4f66-a098-2cb8d4e10b69
 # \<transportConfigurationTypes>
 Represents a collection of configuration elements that identify the type of a particular transport. This can be used to add custom WAS protocols.  
   
- \<system.ServiceModel>  
-\<ServiceHostingEnvironment>  
-\<transportConfigurationTypes>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceHostingEnvironment>**](servicehostingenvironment.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<transportConfigurationTypes>**  
   
 ## Syntax  
   

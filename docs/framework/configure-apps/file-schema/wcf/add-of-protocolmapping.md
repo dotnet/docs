@@ -6,9 +6,10 @@ ms.assetid: 08e62249-1641-41d1-91b1-66d7b46244e4
 # \<add> of \<protocolMapping>
 Represents a default protocol mapping between a transport protocol scheme (e.g., http, net.tcp, net.pipe, etc.) and a Windows Communication Foundation (WCF) binding. When creating default endpoints at runtime, WCF looks at the configured mappings and decides on which binding to use for a particular based address.  
   
- \<system.serviceModel>  
-\<protocolMapping>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<protocolMapping>**](protocolmapping.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   

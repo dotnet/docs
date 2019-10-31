@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7123a89b-eb9b-463a-a552-a081e33b0a3a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoadTypeLibWithResolver Function
 Loads a type library and uses the supplied [ITypeLibResolver interface](itypelibresolver-interface.md) to resolve any internally referenced type libraries.  

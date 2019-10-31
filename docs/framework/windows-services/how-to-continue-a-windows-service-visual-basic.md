@@ -47,4 +47,4 @@ This example uses the <xref:System.ServiceProcess.ServiceController> component t
 
 - <xref:System.ServiceProcess.ServiceController>
 - <xref:System.ServiceProcess.ServiceControllerStatus>
-- [How to: Pause a Windows Service (Visual Basic)](../../../docs/framework/windows-services/how-to-pause-a-windows-service-visual-basic.md)
+- [How to: Pause a Windows Service (Visual Basic)](how-to-pause-a-windows-service-visual-basic.md)

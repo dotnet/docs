@@ -185,7 +185,7 @@ You must have the following software installed to use this walkthrough:
 
 5. Build the solution and run the `OrderClient` application. The client will display the following text:
 
-    ```Output
+    ```output
     Sending start messageWorkflow service is idle...Press [ENTER] to send an add item message to reactivate the workflow service...
     ```
 
@@ -195,7 +195,7 @@ You must have the following software installed to use this walkthrough:
 
 7. Press enter to send the add item message to the workflow service. The client will display the following text:
 
-    ```Output
+    ```output
     Sending add item messageService returned: Item added to orderPress any key to continue . . .
     ```
 

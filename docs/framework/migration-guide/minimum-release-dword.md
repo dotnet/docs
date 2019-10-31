@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "versions, determining for .NET Framework"
   - ".NET Framework, determining version"
   - ".NET Framework, minimum version value"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # The minimum values of the Release DWORD for .NET Framework 4.5 and later versions
 

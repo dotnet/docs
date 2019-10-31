@@ -10,7 +10,7 @@ Although [Cloud-Native](https://azure.microsoft.com/overview/cloudnative/) appli
 
 Figure 4-3 positions Cloud-Native apps in the application modernization maturity levels:
 
-![Positioning Cloud-Native applications](./media/image3.png)
+![Diagram showing how to position cloud-native applications.](./media/what-about-cloud-native-applications/positioning-cloud-native-applications.png)
 
 **Figure 4-3.** Positioning Cloud-Native applications
 
@@ -20,7 +20,7 @@ The main pillars of Cloud-Native applications are based on microservices archite
 
 Figure 4-4 shows the main characteristics of the Cloud-Native model.
 
-![Cloud-Native characteristics are Microservices, containers, cloud-resilient, orchestrators and serverless](./media/image4.png)
+![Diagram listing the main cloud-native characteristics.](./media/what-about-cloud-native-applications/cloud-native-characteristics.png)
 
 **Figure 4-4.** Cloud-Native characteristics
 

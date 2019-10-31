@@ -16,12 +16,14 @@ After you've created and configured a Windows Communication Foundation (WCF) pro
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Add code to use the WCF client.
 > - Test the WCF client.
 
 ## Add code to use the WCF client
 
 The client code does the following steps:
+
 - Instantiates the WCF client.
 - Calls the service operations from the generated proxy.
 - Closes the client after the operation call is completed.
@@ -180,6 +182,7 @@ You've now completed all the tasks in the WCF get started tutorial. In this tuto
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Add code to use the WCF client.
 > - Test the WCF client.
 

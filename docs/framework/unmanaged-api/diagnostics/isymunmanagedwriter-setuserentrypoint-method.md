@@ -23,7 +23,7 @@ Specifies the user-defined method that is the entry point for this module. For e
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUserEntryPoint(  
     [in] mdMethodDef entryMethod);  
 ```  

@@ -23,7 +23,7 @@ Returns all variables defined at global scope within this namespace.
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT GetVariables(  
     [in]  ULONG32  cVars,  
     [out] ULONG32  *pcVars,  

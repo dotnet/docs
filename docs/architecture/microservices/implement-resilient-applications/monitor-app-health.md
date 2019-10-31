@@ -104,7 +104,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     //…
     app.UseHealthChecks("/hc");
     //…
-} 
+}
 ```
 
 When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health checks that are configured in the `AddHealthChecks()` method in the Startup class and shows the result.
@@ -273,7 +273,7 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
 - **Introduction to Service Fabric health monitoring** \
   [https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction](/azure/service-fabric/service-fabric-health-introduction)
 
-- **Azure Monitor**
+- **Azure Monitor**  
   <https://azure.microsoft.com/services/monitor/>
 
 >[!div class="step-by-step"]

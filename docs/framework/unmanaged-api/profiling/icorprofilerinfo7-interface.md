@@ -2,8 +2,6 @@
 title: "ICorProfilerInfo7 Interface"
 ms.date: "03/30/2017"
 ms.assetid: cf37c462-73c5-412a-a7f8-bb26ca746313
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo7 Interface
 [Supported in the .NET Framework 4.6.1 and later versions]  

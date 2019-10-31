@@ -154,13 +154,13 @@ public class main
   
  For the previous example to execute successfully, there must be a process listening on the IP address and port number specified in the <xref:System.Net.Sockets.TcpClient> class. If a listening process exists, the code will connect to the listening process, encrypt the stream using the Rijndael symmetric algorithm, and write "Hello World!" to the stream. If the code is successful, it displays the following text to the console:  
   
-```  
+```console  
 The message was sent.  
 ```  
   
  However, if no listening process is found or an exception is raised, the code displays the following text to the console:  
   
-```  
+```console  
 The connection failed.  
 ```  
   

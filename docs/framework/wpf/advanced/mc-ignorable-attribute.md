@@ -15,7 +15,7 @@ Specifies which [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md
   
 ## XAML Attribute Usage (Single Prefix)  
   
-```  
+```xaml  
 <object  
   xmlns:ignorablePrefix="ignorableUri"  
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
@@ -26,7 +26,7 @@ Specifies which [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md
   
 ## XAML Attribute Usage (Two Prefixes)  
   
-```  
+```xaml  
 <object  
   xmlns:ignorablePrefix1="ignorableUri"  
   xmlns:ignorablePrefix2="ignorableUri2"  

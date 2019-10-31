@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Category>A</Category>  
 <Price>24.50</Price>  

@@ -38,6 +38,7 @@ The following tutorials are available for learning about .NET Core.
 - [Get started with F#](../../fsharp/get-started/get-started-command-line.md)
 
 ## Other
+
 - [Unit Testing in .NET Core using dotnet test](../testing/unit-testing-with-dotnet-test.md)
 - [Unit testing with MSTest and .NET Core](../testing/unit-testing-with-mstest.md)
 - [Developing Libraries with Cross Platform Tools](libraries.md)

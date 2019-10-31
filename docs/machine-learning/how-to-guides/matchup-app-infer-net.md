@@ -24,7 +24,7 @@ Probabilistic programming allows you to create statistical models of real-world 
 
 1. Open a new command prompt and run the following commands:
 
-```console
+```dotnetcli
 dotnet new console -o myApp
 cd myApp
 ```
@@ -35,13 +35,13 @@ The `dotnet` command creates a `new` application of type `console`. The `-o` par
 
 To use Infer.NET, you need to install the `Microsoft.ML.Probabilistic.Compiler` package. In your command prompt, run the following command:
 
-```console
+```dotnetcli
 dotnet add package Microsoft.ML.Probabilistic.Compiler
 ```
 
 ## Design your model
 
-The example sample uses table tennis or foosball matches played in the office. You have the participants and outcome of each match.  You want to infer the player's skills from this data. Assume that each player has a normally distributed latent skill and their given match performance is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/en-us/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
+The example sample uses table tennis or foosball matches played in the office. You have the participants and outcome of each match.  You want to infer the player's skills from this data. Assume that each player has a normally distributed latent skill and their given match performance is a noisy version of this skill. The data constrains the winner’s performance to be greater than the loser’s performance. This is a simplified version of the popular [TrueSkill](https://www.microsoft.com/research/project/trueskill-ranking-system/) model, which also supports teams, draws, and other extensions. An [advanced version](https://www.microsoft.com/research/publication/trueskill-2-improved-bayesian-skill-rating-system/) of this model is used for matchmaking in the best-selling game titles Halo and Gears of War.
 
 You need to list the inferred player skills, alongside with their variance – the measure of uncertainty around the skills.
 
@@ -126,7 +126,7 @@ namespace myApp
 
 In your command prompt, run the following command:
 
-```console
+```dotnetcli
 dotnet run
 ```
 
@@ -134,7 +134,7 @@ dotnet run
 
 Your results should be similar to the following:
 
-```
+```console
 Compiling model...done.
 Iterating:
 .........|.........|.........|.........|.........| 50

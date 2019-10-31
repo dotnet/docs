@@ -8,10 +8,10 @@ ms.assetid: 3266700b-904b-44e4-93a7-e06a1a445100
 
 Defines a routing filter, which determines the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well any supporting data or parameters required by the filter.
 
-\<system.serviceModel>
-\<routing>
-\<filters>
-\<filter>
+[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<filters>**](filters-of-routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filter>**  
   
 ## Syntax  
   

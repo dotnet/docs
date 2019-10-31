@@ -212,4 +212,4 @@ author: "BrucePerlerMS"
   
 ## Related Items  
   
-- [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)
+- [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)

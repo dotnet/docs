@@ -42,9 +42,7 @@ The sample demonstrates a typical service that implements a contract that define
 
 The service implementation calculates and returns the appropriate result.
 
-```svc
-<%@ServiceHost language=c# Debug="true" Service="Microsoft.ServiceModel.Samples.CalculatorService" %>
-```
+`<%@ServiceHost language=c# Debug="true" Service="Microsoft.ServiceModel.Samples.CalculatorService" %>`
 
 ```csharp
 // Service class that implements the service contract.

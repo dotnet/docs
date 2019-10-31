@@ -24,6 +24,7 @@ You don't need machine learning expertise to use Model Builder. All you need is 
 You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 
 A scenario is a description of the type of prediction you want to make using your data. For example:
+
 - predict future product sales volume based on historical sales data
 - classify sentiments as positive or negative based on customer reviews
 - detect whether a banking transaction is fraudulent
@@ -36,6 +37,7 @@ In Model Builder, you need to select a machine learning model type. The type of 
 For scenarios that predict a number, the machine learning model type is called `regression`.
 
 For scenarios that predict a category, the model type is `classification`. There are two types of classification:
+
 - where there are only 2 categories: `binary classification`.
 - where there are three or more categories: `multiclass classification`.
 
@@ -84,10 +86,12 @@ Once you have chosen your model type, Model Builder asks you to provide a datase
 ### Choose the output to predict (label)
 
 A dataset is a table of rows of training examples, and columns of attributes. Each row has:
+
 - a **label** (the attribute that you want to predict)
 - **features** (attributes that are used as inputs to predict the label).
 
 For the house-price prediction scenario, the features could be:
+
 - the square footage of the house
 - the number of bedrooms and bathrooms
 - the zip code

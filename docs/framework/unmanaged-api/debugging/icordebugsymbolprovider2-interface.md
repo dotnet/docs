@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider2 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 1c9c3d92-f0de-4d4d-87f1-0c702a4808af
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider2 Interface
 Logically extends the [ICorDebugSymbolProvider](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md) interface to retrieve additional debug symbol information.  

@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "-deterministic compiler option [C#]"
   - "deterministic compiler option [C#]"
   - "/deterministic compiler option [C#]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # -deterministic
 

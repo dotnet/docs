@@ -17,7 +17,7 @@ XamlName Grammar is a specific grammar that is defined in the XAML language spec
   
  String values that are of type XamlName must conform to the following grammar:  
   
-```  
+```xaml  
 XamlName ::= NameStartChar ( NameChar )*   
 NameStartChar ::= LetterCharacter | '_'   
 NameChar ::= NameStartChar | DecimalDigit | CombiningCharacter   
@@ -27,33 +27,24 @@ CombiningCharacter ::= UnicodeMn | UnicodeMc
 ```  
   
  Which assumes the following general category values as defined in the Unicode Character Database  
-  
-```  
-Lu  
-Letter, Uppercase  
-Ll  
-Letter, Lowercase  
-Lt  
-Letter, Titlecase  
-Lm  
-Letter, Modifier  
-Lo  
-Letter, Other  
-Mn  
-Mark, Non-Spacing  
-Mc  
-Mark, Spacing Combining  
-Nd  
-Number, Decimal  
-Nl  
-Number, Letter  
-```  
-  
+
+| Unicode category   | Description                   |
+|--------------------|-------------------------------|
+| Lu                 | Letter, Uppercase             |
+| Ll                 | Letter, Lowercase             |
+| Lt                 | Letter, Titlecase             |
+| Lm                 | Letter, Modifier              |
+| Lo                 | Letter, Other                 |
+| Mn                 | Mark, Non-Spacing             |
+| Mc                 | Mark, Spacing Combining       |
+| Nd                 | Number, Decimal               |
+| Nl                 | Number, Letter                |
+ 
  XAML defines a second grammar, DottedXamlName, that is used for property and event qualified references, and also for attached members. For more information, see <xref:System.Windows.DependencyProperty> and [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md).  
   
  String values that are of type DottedXamlName must conform to the following grammar:  
   
-```  
+```xaml  
 DottedXamlName ::= XamlName '.' XamlName  
 ```  
   

@@ -19,7 +19,7 @@ Declares the name of a class and introduces the definition of the variables, pro
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] [ Partial ] _  
 Class name [ ( Of typelist ) ]  
     [ Inherits classname ]  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: fc51d6db-f7f8-408b-b93d-c166fc712c99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_GC_STAT_TYPES Enumeration
 Specifies the statistics to be recorded for a garbage collection.  

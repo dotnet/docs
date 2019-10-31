@@ -57,7 +57,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
   
 <a name="gamma_level"></a>   
 ## Gamma Level  
- The gamma level refers to the nonlinear relationship between a pixel value and luminance. The gamma level setting should correspond to the physical characteristics of the display device; otherwise, distortions in rendered output may occur. For example, test may appear too wide or too narrow, or color fringes may appear on the edges of vertical stems of glyphs.  
+ The gamma level refers to the nonlinear relationship between a pixel value and luminance. The gamma level setting should correspond to the physical characteristics of the display device; otherwise, distortions in rendered output may occur. For example, text may appear too wide or too narrow, or color fringes may appear on the edges of vertical stems of glyphs.  
   
  The gamma level is an integer value that ranges from 1000 to 2200. The default level is 1900.  
   

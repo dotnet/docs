@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 76a136b5-e444-417a-8ade-f1596d597dc7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishEnum Interface
 Serves as the abstract base interface for the enumerators that are used in the publishing of information about processes and application domains.  

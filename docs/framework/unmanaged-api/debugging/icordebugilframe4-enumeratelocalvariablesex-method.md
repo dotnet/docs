@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 6f60aae6-70ec-4c4c-963a-138df98c4668
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame4::EnumerateLocalVariablesEx Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
@@ -54,4 +52,4 @@ HRESULT EnumerateLocalVariablesEx(
 
 - [ICorDebugILFrame4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-interface.md)
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [ReJIT: A How-To Guide](https://blogs.msdn.com/b/davbr/archive/2011/10/12/rejit-a-how-to-guide.aspx)
+- [ReJIT: A How-To Guide](https://blogs.msdn.microsoft.com/davbr/2011/10/12/rejit-a-how-to-guide/)

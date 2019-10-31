@@ -22,7 +22,7 @@ Notifies the profiler that the currently executing function is about to perform 
   
 ## Syntax  
   
-```  
+```cpp
 void __stdcall FunctionTailcall2 (  
     [in] FunctionID         funcId,   
     [in] UINT_PTR           clientData,   

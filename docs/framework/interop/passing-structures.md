@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "platform invoke, calling unmanaged functions"
 ms.assetid: 9b92ac73-32b7-4e1b-862e-6d8d950cf169
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Passing Structures
 Many unmanaged functions expect you to pass, as a parameter to the function, members of structures (user-defined types in Visual Basic) or members of classes that are defined in managed code. When passing structures or classes to unmanaged code using platform invoke, you must provide additional information to preserve the original layout and alignment. This topic introduces the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, which you use to define formatted types. For managed structures and classes, you can select from several predictable layout behaviors supplied by the **LayoutKind** enumeration.  
@@ -32,7 +30,7 @@ Many unmanaged functions expect you to pass, as a parameter to the function, mem
 ## Declaring and Passing Structures  
  The following example shows how to define the `Point` and `Rect` structures in managed code, and pass the types as parameter to the **PtInRect** function in the User32.dll file. **PtInRect** has the following unmanaged signature:  
   
-```  
+```cpp
 BOOL PtInRect(const RECT *lprc, POINT pt);  
 ```  
   
@@ -86,7 +84,7 @@ internal static class NativeMethods
 ## Declaring and Passing Classes  
  You can pass members of a class to an unmanaged DLL function, as long as the class has a fixed member layout. The following example demonstrates how to pass members of the `MySystemTime` class, which are defined in sequential order, to the **GetSystemTime** in the User32.dll file. **GetSystemTime** has the following unmanaged signature:  
   
-```  
+```cpp
 void GetSystemTime(SYSTEMTIME* SystemTime);  
 ```  
   
@@ -171,6 +169,6 @@ public class TestPlatformInvoke
   
 ## See also
 
-- [Calling a DLL Function](../../../docs/framework/interop/calling-a-dll-function.md)
+- [Calling a DLL Function](calling-a-dll-function.md)
 - <xref:System.Runtime.InteropServices.StructLayoutAttribute>
 - <xref:System.Runtime.InteropServices.FieldOffsetAttribute>

@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, sample data"
 ms.assetid: 4fccbb35-eaa5-44e9-a252-a5c3d4bc7604
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PLINQ Data Sample
 This sample contains example data in .csv format, together with methods that transform it into in-memory collections of Customers, Products, Orders, and Order Details. To further experiment with PLINQ, you can paste code examples from certain other topics into the code in this topic and invoke it from the `Main` method. You can also use this data with your own PLINQ queries.  
@@ -29,7 +27,7 @@ This sample contains example data in .csv format, together with methods that tra
   
 4. Press F5 to verify that the project builds and runs correctly. The following output should be displayed in the console window.  
   
-    ```  
+    ```console  
     Customer count: 50  
     Product count: 77  
     Order count: 190  
@@ -42,7 +40,7 @@ This sample contains example data in .csv format, together with methods that tra
   
 ## Data  
   
-```  
+```console  
 CUSTOMERS  
 ALFKI,Alfreds Futterkiste,Obere Str. 57,Berlin,12209  
 ANATR,Ana Trujillo Emparedados y helados,Avda. de la Constitución 2222,México D.F.,05021  

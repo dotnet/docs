@@ -14,10 +14,10 @@ ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
 # \<remove> Element for webRequestModules (Network Settings)
 Removes a custom Web request module from the application.  
   
- \<configuration>  
-\<system.net>  
-\<webRequestModules>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<webRequestModules>**](webrequestmodules-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   

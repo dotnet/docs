@@ -106,7 +106,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  For flagwise enumerations, the behavior is based on the <xref:System.Enum.Parse%2A?displayProperty=nameWithType> method. You can specify multiple values for a flagwise enumeration by separating each value with a comma. However, you cannot combine enumeration values that are not flagwise. For instance, you cannot use the comma syntax to attempt to create a <xref:System.Windows.Trigger> that acts on multiple conditions of a nonflag enumeration:  
   
-```  
+```xaml  
 <!--This will not compile, because Visibility is not a flagwise enumeration.-->  
 ...  
 <Trigger Property="Visibility" Value="Collapsed,Hidden">  
@@ -191,7 +191,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ### XAML Content Property Values Must Be Contiguous  
  The value of a XAML content property must be given either entirely before or entirely after any other property elements on that object element. This is true whether the value of a XAML content property is specified as a string, or as one or more objects. For example, the following markup does not parse:  
   
-```  
+```xaml  
 <Button>I am a   
   <Button.Background>Blue</Button.Background>  
   blue button</Button>  
@@ -199,7 +199,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  This is illegal essentially because if this syntax were made explicit by using property element syntax for the content property, then the content property would be set twice:  
   
-```xml  
+```xaml  
 <Button>  
   <Button.Content>I am a </Button.Content>  
   <Button.Background>Blue</Button.Background>  
@@ -209,7 +209,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  A similarly illegal example is if the content property is a collection, and child elements are interspersed with property elements:  
   
-```xml  
+```xaml  
 <StackPanel>  
   <Button>This example</Button>  
   <StackPanel.Resources>  

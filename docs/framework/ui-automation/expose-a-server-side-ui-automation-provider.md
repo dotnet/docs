@@ -24,5 +24,5 @@ ms.assetid: 55d419c0-2201-4101-90c9-2888df4dbb47
   
 ## See also
 
-- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
-- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+- [UI Automation Providers Overview](ui-automation-providers-overview.md)
+- [Server-Side UI Automation Provider Implementation](server-side-ui-automation-provider-implementation.md)

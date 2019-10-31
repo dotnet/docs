@@ -13,6 +13,7 @@ This tutorial shows you how to create an application that accepts a search word 
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
+>
 > - In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which opens a window for filing a bug report. You can track your feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/41/index.html) portal.
 > - To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which takes you to the [Visual Studio for Mac Developer Community webpage](https://developercommunity.visualstudio.com/content/idea/post.html?space=41).
 

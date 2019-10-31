@@ -35,6 +35,6 @@ The <xref:System.Net> classes support a variety of client authentication mechani
   
 ## See also
 
-- [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)
-- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)
-- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
+- [Basic and Digest Authentication](basic-and-digest-authentication.md)
+- [NTLM and Kerberos Authentication](ntlm-and-kerberos-authentication.md)
+- [Security in Network Programming](security-in-network-programming.md)

@@ -31,6 +31,7 @@ includes security analyzers. In most cases, you'll want
 the [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet package. 
 The FxCopAnalyzers aggregate package contains all the framework analyzers included in the
 Framework.Analyzers package as well as the following analyzers:
+
 - [Microsoft.CodeQuality.Analyzers](https://www.nuget.org/packages/Microsoft.CodeQuality.Analyzers): Provides general guidance and guidance for .NET Standard APIs
 - [Microsoft.NetCore.Analyzers](https://www.nuget.org/packages/Microsoft.NetCore.Analyzers): Provides analyzers specific to .NET Core APIs.
 - [Text.Analyzers](https://www.nuget.org/packages/Text.Analyzers): Provides guidance for text included as code, including comments.
@@ -147,4 +148,4 @@ An attack making it computationally feasible to break this algorithm exists. Thi
 
 **Severity:** Warning
 
-Additional Information: [CA5351: Do not use broken cryptographic algorithms](/visualstudio/code-quality/ca5351-do-not-use-broken-cryptographic-algorithms)
+Additional Information: [CA5351: Do not use broken cryptographic algorithms](/visualstudio/code-quality/ca5351)

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "configuration switches"
   - "configuration"
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<AppContextSwitchOverrides> Element
 Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.  

@@ -40,7 +40,7 @@ All types and type members have an accessibility level, which controls whether t
   
  Derived classes cannot have greater accessibility than their base types. In other words, you cannot have a public class `B` that derives from an internal class `A`. If this were allowed, it would have the effect of making `A` public, because all protected or internal members of `A` are accessible from the derived class.  
   
- You can enable specific other assemblies to access your internal types by using the InternalsVisibleToAttribute. For more information, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
+ You can enable specific other assemblies to access your internal types by using the InternalsVisibleToAttribute. For more information, see [Friend Assemblies](../../../standard/assembly/friend.md).  
   
 ## Class and Struct Member Accessibility  
  Class members (including nested classes and structs) can be declared with any of the six types of access. Struct members cannot be declared as protected because structs do not support inheritance.  

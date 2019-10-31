@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ae0836d0-1170-4494-bac5-d0e809df51a2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityContext::Capture Method
 Gets a clone of the [IHostSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md) instance returned from a call to [IHostSecurityManager::GetSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-getsecuritycontext-method.md).  
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT Capture (  
     [out] IHostSecurityContext** ppClonedContext  
 );  

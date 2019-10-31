@@ -18,7 +18,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet nuget delete [<PACKAGE_NAME> <PACKAGE_VERSION>] [--force-english-output] [--interactive] [-k|--api-key] [--no-service-endpoint]
     [--non-interactive] [-s|--source]
 dotnet nuget delete [-h|--help]
@@ -72,12 +72,12 @@ The `dotnet nuget delete` command deletes or unlists a package from the server. 
 
 * Deletes version 1.0 of package `Microsoft.AspNetCore.Mvc`:
 
-  ```console
+  ```dotnetcli
   dotnet nuget delete Microsoft.AspNetCore.Mvc 1.0
   ```
 
 * Deletes version 1.0 of package `Microsoft.AspNetCore.Mvc`, not prompting user for credentials or other input:
 
-  ```console
+  ```dotnetcli
   dotnet nuget delete Microsoft.AspNetCore.Mvc 1.0 --non-interactive
   ```

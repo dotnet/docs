@@ -2,8 +2,6 @@
 title: "ICorDebugMutableDataTarget::ContinueStatusChanged Method"
 ms.date: "03/30/2017"
 ms.assetid: 5a66d3f4-dd16-4d62-9dcc-0eab7041d894
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMutableDataTarget::ContinueStatusChanged Method
 Changes the continuation status for the outstanding debug event on the specified thread.  

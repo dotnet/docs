@@ -8,7 +8,7 @@ The standard <xref:System.ServiceModel.ServiceHost> API for hosting services in 
   
  In the self-host environment, you do not have to create a custom <xref:System.ServiceModel.ServiceHost> because you write the code that instantiates the host and then call <xref:System.ServiceModel.ICommunicationObject.Open> on it after you instantiate it. Between those two steps you can do whatever you want. You could, for example, add a new <xref:System.ServiceModel.Description.IServiceBehavior>:  
   
-```  
+```csharp
 public static void Main()  
 {  
    ServiceHost host = new ServiceHost( typeof( MyService ) );  
@@ -23,7 +23,7 @@ public static void Main()
   
  However, a slight variation of the example can also be used to solve this problem. One approach is to move the code that adds the ServiceBehavior out of `Main()` and into the <xref:System.ServiceModel.Channels.CommunicationObject.OnOpening%2A> method of a custom derivative of <xref:System.ServiceModel.ServiceHost>:  
   
-```  
+```csharp
 public class DerivedHost : ServiceHost  
 {  
    public DerivedHost( Type t, params Uri baseAddresses ) :  
@@ -38,7 +38,7 @@ public class DerivedHost : ServiceHost
   
  Then, inside of `Main()` you can use:  
   
-```  
+```csharp
 public static void Main()  
 {  
    ServiceHost host = new DerivedHost( typeof( MyService ) );  
@@ -56,7 +56,7 @@ public static void Main()
   
  The intent is that for basic cases, implementing your own factory should be a straight forward exercise. For example, here is a custom <xref:System.ServiceModel.Activation.ServiceHostFactory> that returns a derived <xref:System.ServiceModel.ServiceHost>:  
   
-```  
+```csharp
 public class DerivedFactory : ServiceHostFactory  
 {  
    public override ServiceHost CreateServiceHost( Type t, Uri[] baseAddresses )  
@@ -68,10 +68,8 @@ public class DerivedFactory : ServiceHostFactory
   
  To use this factory instead of the default factory, provide the type name in the @ServiceHost directive as follows:  
   
-```  
-<% @ServiceHost Factory="DerivedFactory" Service="MyService" %>  
-```  
+`<% @ServiceHost Factory="DerivedFactory" Service="MyService" %>`  
   
- While there is no technical limit on doing what you want to the <xref:System.ServiceModel.ServiceHost> you return from <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%2A>, we suggest that you keep your factory implementations as simple as possible. If you have lots of custom logic, it is better to put that logic inside of you host instead of inside the factory so that it can be reusable.  
+ While there is no technical limit on doing what you want to the <xref:System.ServiceModel.ServiceHost> you return from <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%2A>, we suggest that you keep your factory implementations as simple as possible. If you have lots of custom logic, it is better to put that logic inside of your host instead of inside the factory so that it can be reusable.  
   
  There is one more layer to the hosting API that should be mentioned here. WCF also has <xref:System.ServiceModel.ServiceHostBase> and <xref:System.ServiceModel.Activation.ServiceHostFactoryBase>, from which <xref:System.ServiceModel.ServiceHost> and <xref:System.ServiceModel.Activation.ServiceHostFactory> respectively derive. Those exist for more advanced scenarios where you must swap out large parts of the metadata system with your own customized creations.

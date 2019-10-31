@@ -6,10 +6,11 @@ ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
 # \<add> of \<namespaceTable>
 Represents a configuration element that contains a namespace to prefix mapping that can then be used in XPath filters for routing.  
   
- \<system.serviceModel>  
-\<routing>  
-\<namespaceTable>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namespaceTable>**](namespacetable.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   

@@ -6,8 +6,10 @@ ms.assetid: 85cb5ecf-351b-45f3-aa29-aa2e4b64bcdd
 # \<webScriptEndpoint>
 This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](webhttpbinding.md) binding that automatically adds the [\<enableWebScript>](enablewebscript.md) behavior. Use this endpoint when you are writing a service that is called from an ASP.NET AJAX application.  
   
-\<system.ServiceModel>  
-\<standardEndpoints>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webScriptEndpoint>**  
   
 ## Syntax  
   

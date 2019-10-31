@@ -74,7 +74,7 @@ You need Visual Studio to complete this walkthrough.
 
 2. Add the following XAML to the opening <xref:System.Windows.Window> tag to create an XML namespace reference to the current application.
 
-    ```
+    ```xaml
     xmlns:local="clr-namespace:DragDropExample"
     ```
 

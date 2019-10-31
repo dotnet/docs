@@ -147,13 +147,13 @@ Before you recompile the provider, make sure that you have closed all instances 
 
 To debug this provider by using print statements, make a script that exposes a problem with the provider, and then use the following code:
 
-```
+```console
 fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 ```
 
 To debug this provider by using Visual Studio, open the Developer Command Prompt for Visual Studio with administrative credentials, and run the following command:
 
-```
+```console
 devenv.exe /debugexe fsc.exe -r:bin\Debug\HelloWorldTypeProvider.dll script.fsx
 ```
 
@@ -313,7 +313,7 @@ instanceProp.AddXmlDocDelayed(fun () -> "This is an instance property")
 t.AddMember instanceProp
 ```
 
-Getting this property will return the length of the string, which is the representation object. The `GetterCode` property returns an F# quotation that specifies the code that the host compiler generates to get the property. Like `InvokeCode`, the `GetterCode` function returns a quotation. The host compiler calls this function with a list of arguments. In this case, the arguments include just the single expression that represents the instance upon which the getter is being called, which you can access by using `args.[0]`.The implementation of `GetterCode` then splices into the result quotation at the erased type `obj`, and a cast is used to satisfy the compiler's mechanism for checking types that the object is a string. The next part of `makeOneProvidedType` provides an instance method with one parameter.
+Getting this property will return the length of the string, which is the representation object. The `GetterCode` property returns an F# quotation that specifies the code that the host compiler generates to get the property. Like `InvokeCode`, the `GetterCode` function returns a quotation. The host compiler calls this function with a list of arguments. In this case, the arguments include just the single expression that represents the instance upon which the getter is being called, which you can access by using `args.[0]`. The implementation of `GetterCode` then splices into the result quotation at the erased type `obj`, and a cast is used to satisfy the compiler's mechanism for checking types that the object is a string. The next part of `makeOneProvidedType` provides an instance method with one parameter.
 
 ```fsharp
 let instanceMeth =
@@ -894,7 +894,7 @@ let function1 () =
 
 Here’s an image of the resulting code decompiled by using ildasm.exe:
 
-```
+```il
 .class public abstract auto ansi sealed Module1
 extends [mscorlib]System.Object
 {
@@ -928,13 +928,11 @@ Observe the following conventions when authoring type providers.
 
 **Providers for Connectivity Protocols** In general, names of most provider DLLs for data and service connectivity protocols, such as OData or SQL connections, should end in `TypeProvider` or `TypeProviders`. For example, use a DLL name that resembles the following string:
 
-```
-  Fabrikam.Management.BasicTypeProviders.dll
-```
+`Fabrikam.Management.BasicTypeProviders.dll`
 
 Ensure that your provided types are members of the corresponding namespace, and indicate the connectivity protocol that you implemented:
 
-```
+```fsharp
   Fabrikam.Management.BasicTypeProviders.WmiConnection<…>
   Fabrikam.Management.BasicTypeProviders.DataProtocolConnection<…>
 ```
@@ -1123,8 +1121,8 @@ You can invoke type providers by using the following tools:
 
 You can often debug type providers most easily by using fsc.exe on a test script file (for example, script.fsx). You can launch a debugger from a command prompt.
 
-```
-  devenv /debugexe fsc.exe script.fsx
+```console
+devenv /debugexe fsc.exe script.fsx
 ```
 
   You can use print-to-stdout logging.

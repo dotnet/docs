@@ -15,7 +15,7 @@ ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
   
  The <xref:System.Windows.Automation.MultipleViewPattern> control pattern is used to support controls that provide, and are able to switch between, multiple representations of the same set of information or child controls.  
   
- Examples of controls that can present multiple views include the list view (which can show its contents as thumbnails, tiles, icons, or details), [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] charts (pie, line, bar, cell value with a formula), [!INCLUDE[TLA#tla_word](../../../includes/tlasharptla-word-md.md)] documents (normal, Web layout, print layout, reading layout, outline), Microsoft Outlook calendar (year, month, week, day), and [!INCLUDE[TLA#tla_wmp](../../../includes/tlasharptla-wmp-md.md)] skins. The supported views are determined by the control developer and are specific to each control.  
+ Examples of controls that can present multiple views include the list view (which can show its contents as thumbnails, tiles, icons, or details), [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] charts (pie, line, bar, cell value with a formula), [!INCLUDE[TLA#tla_word](../../../includes/tlasharptla-word-md.md)] documents (normal, Web layout, print layout, reading layout, outline), Microsoft Outlook calendar (year, month, week, day), and Microsoft Windows Media Player skins. The supported views are determined by the control developer and are specific to each control.  
   
 <a name="Implementation_Guidelines_and_Conventions"></a>   
 ## Implementation Guidelines and Conventions  
@@ -52,8 +52,8 @@ ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
   
 ## See also
 
-- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
-- [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
-- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
-- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [Support Control Patterns in a UI Automation Provider](support-control-patterns-in-a-ui-automation-provider.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)
+- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Use Caching in UI Automation](use-caching-in-ui-automation.md)

@@ -11,7 +11,7 @@ Although you can call user-defined functions inline, functions that are included
   
  When you call the same function outside a query, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] creates a simple query from the method call expression. The following is the SQL syntax (the parameter `@p0` is bound to the constant passed in):  
   
-```  
+```sql  
 SELECT dbo.ReverseCustName(@p0)  
 ```  
   
@@ -26,7 +26,7 @@ SELECT dbo.ReverseCustName(@p0)
  [!code-csharp[DLinqUDFS#5](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqUDFS/cs/Program.cs#5)]
  [!code-vb[DLinqUDFS#5](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqUDFS/vb/Module1.vb#5)]  
   
-```  
+```sql  
 SELECT [t0].[ContactName],  
     dbo.ReverseCustName([t0].[ContactTitle]) AS [Title]  
 FROM [Customers] AS [t0]  

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "marshaling, MsgBox sample"
   - "data marshaling, MsgBox sample"
 ms.assetid: 9e0edff6-cc0d-4d5c-a445-aecf283d9c3a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # MsgBox Sample
 This sample demonstrates how to pass string types by value as In parameters and when to use the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint>, <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>, and <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> fields.  
@@ -19,12 +17,12 @@ This sample demonstrates how to pass string types by value as In parameters and 
   
 - **MessageBox** exported from User32.dll.  
   
-    ```  
+    ```cpp
     int MessageBox(HWND hWnd, LPCTSTR lpText, LPCTSTR lpCaption,   
        UINT uType);  
     ```  
   
- In this sample, the `LibWrap` class contains a managed prototype for each unmanaged function called by the `MsgBoxSample` class. The managed prototype methods `MsgBox`, `MsgBox2`, and `MsgBox3` have different declarations for the same unmanaged function.  
+ In this sample, the `NativeMethods` class contains a managed prototype for each unmanaged function called by the `MsgBoxSample` class. The managed prototype methods `MsgBox`, `MsgBox2`, and `MsgBox3` have different declarations for the same unmanaged function.  
   
  The declaration for `MsgBox2` produces incorrect output in the message box because the character type, specified as ANSI, is mismatched with the entry point `MessageBoxW`, which is the name of the Unicode function. The declaration for `MsgBox3` creates a mismatch between the **EntryPoint**, **CharSet**, and **ExactSpelling** fields. When called, `MsgBox3` throws an exception. For detailed information on string naming and name marshaling, see [Specifying a Character Set](specifying-a-character-set.md).  
   

@@ -5,7 +5,7 @@ ms.assetid: f7864356-f72f-4cae-995c-18e0431f8a58
 author: "BrucePerlerMS"
 ---
 # WIF Configuration Schema Conventions
-This topic discusses conventions used throughout the Windows Identity Foundation (WIF) configuration topics and describes some common features and attributes used in the [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md) and the [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) sections.  
+This topic discusses conventions used throughout the Windows Identity Foundation (WIF) configuration topics and describes some common features and attributes used in the [\<system.identityModel>](../configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md) and the [\<system.identityModel.services>](../configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md) sections.  
   
 <a name="BKMK_Modes"></a>   
 ## Modes  
@@ -15,9 +15,7 @@ This topic discusses conventions used throughout the Windows Identity Foundation
 ## Timespan Values  
  Where <xref:System.TimeSpan> is used as the type of an attribute, see the <xref:System.TimeSpan.Parse%28System.String%29> method to see the allowed format. This format conforms to the following specification.  
   
-```  
-[ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]  
-```  
+`[ws][-]{ d | [d.]hh:mm[:ss[.ff]] }[ws]`  
   
  For example, "30", "30.00:00", "30.00:00:00" all mean 30 days; and "00:05", "00:05:00", "0.00:05:00.00" all mean 5 minutes.  
   
@@ -40,5 +38,5 @@ This topic discusses conventions used throughout the Windows Identity Foundation
   
 ## See also
 
-- [\<system.identityModel>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md)
-- [\<system.identityModel.services>](../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md)
+- [\<system.identityModel>](../configure-apps/file-schema/windows-identity-foundation/system-identitymodel.md)
+- [\<system.identityModel.services>](../configure-apps/file-schema/windows-identity-foundation/system-identitymodel-services.md)

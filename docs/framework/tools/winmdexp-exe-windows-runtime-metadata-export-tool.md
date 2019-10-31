@@ -5,21 +5,19 @@ helpviewer_keywords:
   - "Windows Runtime Metadata Export Tool"
   - "Winmdexp.exe"
 ms.assetid: d2ce0683-343d-403e-bb8d-209186f7a19d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Winmdexp.exe (Windows Runtime Metadata Export Tool)
 The Windows Runtime Metadata Export Tool (Winmdexp.exe) transforms a .NET Framework module into a file that contains Windows Runtime metadata. Although .NET Framework assemblies and Windows Runtime metadata files use the same physical format, there are differences in the content of the metadata tables, which means that .NET Framework assemblies are not automatically usable as Windows Runtime Components. The process of turning a .NET Framework module into a Windows Runtime component is referred to as *exporting*. In the .NET Framework 4.5 and .NET Framework 4.5.1, the resulting Windows metadata (.winmd) file contains both metadata and implementation.  
   
  When you use the **Windows Runtime Component** template, which is located under **Windows Store** for C# and Visual Basic in Visual Studio 2013 or Visual Studio 2012, the compiler target is a .winmdobj file, and a subsequent build step calls Winmdexp.exe to export the .winmdobj file to a .winmd file. This is the recommended way to build a Windows Runtime component. Use Winmdexp.exe directly when you want more control over the build process than Visual Studio provides.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 winmdexp [options] winmdmodule  
 ```  
   
@@ -27,7 +25,7 @@ winmdexp [options] winmdmodule
   
 |Argument or option|Description|  
 |------------------------|-----------------|  
-|`winmdmodule`|Specifies the module (.winmdobj) to be exported. Only one module is allowed. To create this module, use the `/target` compiler option with the `winmdobj` target. See [/target:winmdobj (C# Compiler Options)](../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md) or [/target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
+|`winmdmodule`|Specifies the module (.winmdobj) to be exported. Only one module is allowed. To create this module, use the `/target` compiler option with the `winmdobj` target. See [-target:winmdobj (C# Compiler Options)](../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md) or [-target (Visual Basic)](../../visual-basic/reference/command-line-compiler/target.md).|  
 |`/docfile:` `docfile`<br /><br /> `/d:` `docfile`|Specifies the output XML documentation file that Winmdexp.exe will produce. In the .NET Framework 4.5, the output file is essentially the same as the input XML documentation file.|  
 |`/moduledoc:` `docfile`<br /><br /> `/md:` `docfile`|Specifies the name of the XML documentation file that the compiler produced with `winmdmodule`.|  
 |`/modulepdb:` `symbolfile`<br /><br /> `/mp:` `symbolfile`|Specifies the name of the program database (PDB) file that contains symbols for `winmdmodule`.|  
@@ -48,5 +46,5 @@ winmdexp [options] winmdmodule
 
 - [.NET Framework Support for Windows Store Apps and Windows Runtime](../../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)
 - [Creating Windows Runtime Components in C# and Visual Basic](https://go.microsoft.com/fwlink/p/?LinkID=238313)
-- [Winmdexp.exe Error Messages](../../../docs/framework/tools/winmdexp-exe-error-messages.md)
+- [Winmdexp.exe Error Messages](winmdexp-exe-error-messages.md)
 - [Build, Deployment, and Configuration Tools (.NET Framework)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd233108(v=vs.100))

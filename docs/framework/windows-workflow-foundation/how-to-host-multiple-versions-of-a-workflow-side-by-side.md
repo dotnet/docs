@@ -552,7 +552,7 @@ In this section, the workflow definitions are updated. The two `WriteLine` activ
 
 2. Start a new workflow by clicking **New Game**. The version of the workflow is displayed under the status window and reflects the updated version from the associated `WorkflowIdentity`. Make a note of the `InstanceId` so you can view the tracking file for the workflow when it completes, and then enter guesses until the game is complete. Note how the user's guess is displayed in the information displayed in the status window based on the updates to the `WriteLine` activities.
 
-    ```
+    ```console
     Please enter a number between 1 and 10
     5 is too high.
     Please enter a number between 1 and 10
@@ -568,7 +568,7 @@ In this section, the workflow definitions are updated. The two `WriteLine` activ
 
 3. Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings) and open the tracking file using Notepad that corresponds to the completed workflow. If you did not make a note of the `InstanceId`, you can identify the correct tracking file by using the **Date modified** information in Windows Explorer.
 
-    ```
+    ```console
     Please enter a number between 1 and 10
     5 is too high.
     Please enter a number between 1 and 10

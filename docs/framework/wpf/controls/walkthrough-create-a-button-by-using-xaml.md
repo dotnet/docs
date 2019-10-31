@@ -10,7 +10,7 @@ ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
 The objective of this walkthrough is to learn how to create an animated button for use in a Windows Presentation Foundation (WPF) application. This walkthrough uses styles and a template to create a customized button resource that allows reuse of code and separation of button logic from the button declaration. This walkthrough is written entirely in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].
 
 > [!IMPORTANT]
-> This walkthrough guides you through the steps for creating the application by typing or copying and pasting [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] into Microsoft Visual Studio. If you would prefer to learn how to use a design tool (Microsoft Expression Blend) to create the same application, see [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md).
+> This walkthrough guides you through the steps for creating the application by typing or copying and pasting [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] into Visual Studio. If you would prefer to learn how to use a designer to create the same application, see [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md).
 
 The following figure shows the finished buttons.
 
@@ -163,7 +163,7 @@ So far, the control of how buttons look in the application has been confined to 
 
      Press F5 to run the application. It should look like the following.
 
-     ![](./media/custom-button-animatedbutton-4.gif "custom_button_AnimatedButton_4")
+     ![Window with 3 buttons](./media/custom-button-animatedbutton-4.gif)
 
 3. **Add a glasseffect to the template:** Next you will add the glass. First you create some resources that create a glass gradient effect. Add these gradient resources anywhere within the `Application.Resources` block:
 

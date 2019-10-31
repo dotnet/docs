@@ -23,7 +23,7 @@ The DataSvcUtil.exe tool is installed in the .NET Framework directory. In many c
 
 ## Syntax
 
-```
+```console
 datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/language:devlang] [/nologo] [/version:ver] [/help]
 ```
 

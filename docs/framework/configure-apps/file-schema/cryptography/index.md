@@ -14,23 +14,15 @@ ms.assetid: 1f55050a-b2a3-4868-a3c0-da20826150f3
 # Cryptography Settings Schema
 The cryptography settings schema contains elements that specify how to map friendly algorithm names to classes that implement cryptography algorithms.  
   
- [**\<configuration>**](../configuration-element.md)  
-  
- [**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)  
-  
- [**\<cryptographySettings>**](cryptographysettings-element.md)  
-  
- [**\<cryptoNameMapping>**](cryptonamemapping-element.md)  
-  
- [**\<cryptoClasses>**](cryptoclasses-element.md)  
-  
- [**\<cryptoClass>**](cryptoclass-element.md)  
-  
- [**\<nameEntry>**](nameentry-element.md)  
-  
- [**\<oidMap>**](oidmap-element.md)  
-  
- [**\<oidEntry>**](oidentry-element.md)  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptoNameMapping>**](cryptonamemapping-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptoClasses>**](cryptoclasses-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptoClass>**](cryptoclass-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<nameEntry>**](nameentry-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<oidMap>**](oidmap-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<oidEntry>**](oidentry-element.md)  
   
 |Element|Description|  
 |-------------|-----------------|  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5f6c2bcd-8102-4e3b-abc5-86ab0bd62def
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugUserState Enumeration
 Indicates the user state of a thread.  

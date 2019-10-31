@@ -31,7 +31,7 @@ The **-target** compiler option can be specified in one of four forms:
  [-target:winmdobj](./target-winmdobj-compiler-option.md)  
  To create an intermediate .winmdobj file.  
   
- Unless you specify **-target:module**, **-target** causes a .NET Framework assembly manifest to be placed in an output file. For more information, see [Assemblies in the Common Language Runtime](../../../framework/app-domains/assemblies-in-the-common-language-runtime.md) and [Common Attributes](../../programming-guide/concepts/attributes/common-attributes.md).  
+ Unless you specify **-target:module**, **-target** causes a .NET Framework assembly manifest to be placed in an output file. For more information, see [Assemblies in .NET](../../../standard/assembly/index.md) and [Common Attributes](../../programming-guide/concepts/attributes/common-attributes.md).  
   
  The assembly manifest is placed in the first .exe output file in the compilation or in the first DLL, if there is no .exe output file. For example, in the following command line, the manifest will be placed in `1.exe`:  
   

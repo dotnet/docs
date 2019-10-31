@@ -18,9 +18,9 @@ ms.author: "mairaw"
 
 The <xref:System.Diagnostics.Debug?displayProperty=nameWithType> and <xref:System.Diagnostics.Trace?displayProperty=nameWithType> classes send messages to objects called listeners that receive and process these messages. One such listener, the <xref:System.Diagnostics.DefaultTraceListener?displayProperty=nameWithType>, is automatically created and initialized when tracing or debugging is enabled. If you want <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.Debug> output to be directed to any additional sources, you must create and initialize additional trace listeners.
 
-The listeners you create should reflect your application's needs. For example, if you want a text record of all trace output, create a <xref:System.Diagnostics.TextWriterTraceListener> listener, which writes all output to a new text file when it is enabled. On the other hand, if you want to view output only during application execution, create a <xref:System.Diagnostics.ConsoleTraceListener> listener, which directs all output to a console window. The <xref:System.Diagnostics.EventLogTraceListener> can direct trace output to an event log. For more information, see [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md).
+The listeners you create should reflect your application's needs. For example, if you want a text record of all trace output, create a <xref:System.Diagnostics.TextWriterTraceListener> listener, which writes all output to a new text file when it is enabled. On the other hand, if you want to view output only during application execution, create a <xref:System.Diagnostics.ConsoleTraceListener> listener, which directs all output to a console window. The <xref:System.Diagnostics.EventLogTraceListener> can direct trace output to an event log. For more information, see [Trace Listeners](trace-listeners.md).
 
-You can create trace listeners in an [application configuration file](../../../docs/framework/configure-apps/index.md) or in your code. We recommend the use of application configuration files, because they let you add, modify, or remove trace listeners without having to change your code.
+You can create trace listeners in an [application configuration file](../configure-apps/index.md) or in your code. We recommend the use of application configuration files, because they let you add, modify, or remove trace listeners without having to change your code.
 
 ### To create and use a trace listener by using a configuration file
 
@@ -91,7 +91,7 @@ You can create trace listeners in an [application configuration file](../../../d
 
 ## See also
 
-- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
-- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
-- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [Trace Listeners](trace-listeners.md)
+- [Trace Switches](trace-switches.md)
+- [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)

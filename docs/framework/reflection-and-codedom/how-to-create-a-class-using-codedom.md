@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "CodeDOM, creating classes"
   - "CodeDOM, graphs"
 ms.assetid: 0ceb70fe-36e1-49bb-922b-e9f615c20a14
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create a Class Using CodeDOM
 The following procedures illustrate how to create and compile a CodeDOM graph that generates a class containing two fields, three properties, a method, a constructor, and an entry point.  
@@ -101,7 +99,7 @@ The following procedures illustrate how to create and compile a CodeDOM graph th
   
  The generated source code produces the following output when compiled and executed.  
   
-```  
+```output
 The object:  
  width = 5.3,  
  height = 6.9,  
@@ -114,5 +112,5 @@ The object:
   
 ## See also
 
-- [Using the CodeDOM](../../../docs/framework/reflection-and-codedom/using-the-codedom.md)
-- [Generating and Compiling Source Code from a CodeDOM Graph](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md)
+- [Using the CodeDOM](using-the-codedom.md)
+- [Generating and Compiling Source Code from a CodeDOM Graph](generating-and-compiling-source-code-from-a-codedom-graph.md)

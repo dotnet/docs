@@ -78,27 +78,27 @@ ms.author: "mairaw"
 ## Security Transparency Examples  
  To use the .NET Framework 2.0 transparency rules (level 1 transparency), use the following assembly annotation:  
   
-```  
+```csharp
 [assembly: SecurityRules(SecurityRuleSet.Level1)]  
 ```  
   
  If you want to make a whole assembly transparent to indicate that the assembly does not contain any critical code and does not elevate privileges in any way, you can explicitly add transparency to the assembly with the following attribute:  
   
-```  
+```csharp  
 [assembly: SecurityTransparent]  
 ```  
   
  If you want to mix critical and transparent code in the same assembly, start by marking the assembly with the <xref:System.Security.SecurityCriticalAttribute> attribute to indicate that the assembly can contain critical code, as follows:  
   
-```  
+```csharp  
 [assembly: SecurityCritical]  
 ```  
   
  If you want to perform security-critical actions, you must explicitly mark the code that will perform the critical action with another <xref:System.Security.SecurityCriticalAttribute> attribute, as shown in the following code example:  
   
-```  
+```csharp  
 [assembly: SecurityCritical]  
-Public class A  
+public class A  
 {  
     [SecurityCritical]  
     private void Critical()  
@@ -113,7 +113,7 @@ Public class A
     }  
 }  
 public class B  
-{      
+{
     internal string SomeOtherProperty  
     {  
         get { /* transparent */ }  

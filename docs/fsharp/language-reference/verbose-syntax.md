@@ -93,7 +93,7 @@ for counter = start to finish do
 
 </td><td>
 
-```
+```fsharp
 for counter = start to finish do
     ...
 done

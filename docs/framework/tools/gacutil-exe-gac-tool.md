@@ -17,20 +17,18 @@ helpviewer_keywords:
   - "global assembly cache, Gacutil.exe"
   - "Global Assembly Cache tool"
 ms.assetid: 4c7be9c8-72ae-481f-a01c-1a4716806e99
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Gacutil.exe (Global Assembly Cache Tool)
 
 The Global Assembly Cache tool allows you to view and manipulate the contents of the global assembly cache and download cache.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
 ## Syntax
 
-```
+```console
 gacutil [options] [assemblyName | assemblyPath | assemblyListFile]
 ```
 
@@ -60,7 +58,7 @@ gacutil [options] [assemblyName | assemblyPath | assemblyListFile]
 |**/u**  *assemblyName*|Uninstalls an assembly from the global assembly cache.|
 |**/uf**  *assemblyName*|Forces a specified assembly to uninstall by removing all references to the assembly.<br /><br /> Specifying this option is equivalent to specifying the **/u** and **/f** options together. **Note:**  You cannot use this option to remove an assembly that was installed using Microsoft Windows Installer. If you attempt this operation, the tool displays an error message.|
 |**/ul** *assemblyListFile*|Uninstalls one or more assemblies specified in *assemblyListFile* from the global assembly cache.|
-|**/u**[**ngen**] *assemblyName*|Uninstalls a specified assembly from the global assembly cache. If the specified assembly has existing reference counts, the tool displays the reference counts and does not remove the assembly from the global assembly cache. **Note:**  In the .NET Framework version 2.0, `/ungen` is not supported. Instead, use the `uninstall` command of the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md). <br /><br /> In the .NET Framework versions 1.0 and 1.1, specifying **/ungen** causes Gacutil.exe to remove the assembly from the native image cache. This cache stores the native images for assemblies that have been created using the [Ngen.exe (Native Image Generator)](../../../docs/framework/tools/ngen-exe-native-image-generator.md).|
+|**/u**[**ngen**] *assemblyName*|Uninstalls a specified assembly from the global assembly cache. If the specified assembly has existing reference counts, the tool displays the reference counts and does not remove the assembly from the global assembly cache. **Note:**  In the .NET Framework version 2.0, `/ungen` is not supported. Instead, use the `uninstall` command of the [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md). <br /><br /> In the .NET Framework versions 1.0 and 1.1, specifying **/ungen** causes Gacutil.exe to remove the assembly from the native image cache. This cache stores the native images for assemblies that have been created using the [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md).|
 |**/ur**  *assemblyName*<br /><br /> *scheme*<br /><br /> *id*<br /><br /> *description*|Uninstalls a reference to a specified assembly from the global assembly cache. To remove a reference to an assembly, you must specify the same *scheme*, *id*, and *description* parameters that were specified with the **/i** and **/r** (or **/ir)** options when the assembly was installed. For a description of the valid values you can specify for these parameters, see the **/r** option.<br /><br /> Specifying this option is equivalent to specifying the **/u** and **/r** options together.|
 |**/?**|Displays command syntax and options for the tool.|
 
@@ -75,7 +73,7 @@ Gacutil.exe provides options that support reference counting similar to the refe
 
 Use the **/il** or **/ul** options to install or uninstall a list of assemblies stored in an ANSI text file. The contents of the text file must be formatted correctly. To use a text file to install assemblies, specify the path to each assembly on a separate line in the file. The following example demonstrates the contents of a file containing assemblies to install.
 
-```
+```text
 myAssembly1.dll
 myAssembly2.dll
 myAssembly3.dll
@@ -83,7 +81,7 @@ myAssembly3.dll
 
 To use a text file to uninstall assemblies, specify the fully qualified assembly name for each assembly on a separate line in the file. The following example demonstrates the contents of a file containing assemblies to uninstall.
 
-```
+```text
 myAssembly1,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 myAssembly2,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 myAssembly3,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
@@ -92,11 +90,12 @@ myAssembly3,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 > [!NOTE]
 > Attempting to install an assembly with a filename longer than between 79 and 91 characters (excluding the file extension) can result in the following error:
 >
-> ```
+> ```output
 > Failure adding assembly to the cache:   The file name is too long.
 > ```
 >
 > This is because internally Gacutil.exe constructs a path of up to MAX_PATH characters that consists of the following elements:
+>
 > - GAC Root - 34 chars (ie. `C:\Windows\Microsoft.NET\assembly\`)
 > - Architecture - 7 or 9 chars (ie. `GAC_32\`, `GAC_64\`, `GAC_MSIL`)
 > - AssemblyName - Up to 91 chars, depending on the size of the other elements (eg. `System.Xml.Linq\`)
@@ -111,13 +110,13 @@ myAssembly3,Version=1.1.0.0,Culture=en,PublicKeyToken=874e23ab874e23ab
 
 The following command installs the assembly `mydll.dll` into the global assembly cache.
 
-```
+```console
 gacutil /i mydll.dll
 ```
 
 The following command removes the assembly `hello` from the global assembly cache as long as no reference counts exist for the assembly.
 
-```
+```console
 gacutil /u hello
 ```
 
@@ -125,55 +124,55 @@ Note that the previous command might remove more than one assembly from the asse
 
 Use the following example to avoid removing more than one assembly. This command removes only the `hello` assembly that matches the fully specified version number, culture, and public key.
 
-```
+```console
 gacutil /u hello, Version=1.0.0.1, Culture="de",PublicKeyToken=45e343aae32233ca
 ```
 
 The following command installs the assemblies specified in the file `assemblyList.txt` into the global assembly cache.
 
-```
+```console
 gacutil /il assemblyList.txt
 ```
 
 The following command removes the assemblies specified in the file `assemblyList.txt` from the global assembly cache.
 
-```
+```console
 gacutil /ul assemblyList.txt
 ```
 
 The following command installs `myDll.dll` into the global assembly cache and adds a reference to count it. The assembly `myDll.dll` is used by the application `MyApp`. The `UNINSTALL_KEY MyApp` parameter specifies the registry key that adds `MyApp` to Add/Remove Programs in Windows. The description parameter is specified as `My Application Description`.
 
-```
+```console
 gacutil /i /r myDll.dll UNINSTALL_KEY MyApp "My Application Description"
 ```
 
 The following command installs `myDll.dll` into the global assembly cache and adds a reference to count it. The scheme parameter, `FILEPATH`, and the id parameter, `c:\applications\myApp\myApp.exe`, specify the path to the application that is installing `myDll.dll.` The description parameter is specified as `MyApp`.
 
-```
+```console
 gacutil /i /r myDll.dll FILEPATH c:\applications\myApp\myApp.exe MyApp
 ```
 
 The following command installs `myDll.dll` into the global assembly cache and adds a reference to count it. The scheme parameter, `OPAQUE`, allows you to customize the id and description parameters.
 
-```
+```console
 gacutil /i /r mydll.dll OPAQUE "Insert custom application details here" "Insert Custom description information here"
 ```
 
 The following command removes the reference to `myDll.dll` by the application `myApp`. If this is the last reference to the assembly, it will also remove the assembly from the global assembly cache.
 
-```
+```console
 gacutil /u /r myDll.dll FILEPATH c:\applications\myApp\myApp.exe MyApp
 ```
 
 The following command lists the contents of the global assembly cache.
 
-```
+```console
 gacutil /l
 ```
 
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Global Assembly Cache](../../../docs/framework/app-domains/gac.md)
-- [Regasm.exe (Assembly Registration Tool)](../../../docs/framework/tools/regasm-exe-assembly-registration-tool.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Global Assembly Cache](../app-domains/gac.md)
+- [Regasm.exe (Assembly Registration Tool)](regasm-exe-assembly-registration-tool.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

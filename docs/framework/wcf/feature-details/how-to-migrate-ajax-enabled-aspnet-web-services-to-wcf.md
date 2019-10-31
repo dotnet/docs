@@ -55,7 +55,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 
 4. From Service1.asmx.cs, copy the following implementation of the `HelloWorld` operation.
 
-    ```
+    ```csharp
     public string HelloWorld()
     {
          return "Hello World";
@@ -64,7 +64,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 
 5. Paste to copied implementation of the `HelloWorld` operation into the WCFHello.svc.cs file in place of the following code.
 
-    ```
+    ```csharp
     public void DoWork()
     {
           // Add your operation implementation here
@@ -74,7 +74,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 
 6. Specify the `Namespace` attribute for <xref:System.ServiceModel.ServiceContractAttribute> as `WCFHello`.
 
-    ```
+    ```csharp
     [ServiceContract(Namespace="WCFHello")]
     [AspNetCompatibilityRequirements(RequirementsMode=AspNetCompatibilityRequirementsMode.Required)]
     public class WCFHello
@@ -83,7 +83,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
 
 7. Add the <xref:System.ServiceModel.Web.WebInvokeAttribute> to the `HelloWorld` operation and set the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A> property to return <xref:System.ServiceModel.Web.WebMessageFormat.Xml>. Note that, if not set, the default return type is <xref:System.ServiceModel.Web.WebMessageFormat.Json>.
 
-    ```
+    ```csharp
     [OperationContract]
     [WebInvoke(ResponseFormat=WebMessageFormat.Xml)]
     public string HelloWorld()
@@ -179,7 +179,7 @@ namespace ASPHello
 
  There are significant differences in behavior between the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> and the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>. For example, the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> represents a dictionary as an array of key/value pairs, whereas the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer> represents a dictionary as actual JSON objects. So the following is the dictionary represented in ASP.NET AJAX.
 
-```
+```csharp
 Dictionary<string, int> d = new Dictionary<string, int>();
 d.Add("one", 1);
 d.Add("two", 2);

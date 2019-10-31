@@ -67,7 +67,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added the MSTest SDK, the MSTest test framework, and the MSTest runner. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```console
+```dotnetcli
 dotnet add reference ../PrimeService/PrimeService.csproj
 ```
 

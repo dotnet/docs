@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 505a7f6c-d92b-42b4-b539-433f5102ea9b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugComObjectValue Interface
 Provides methods to retrieve information associated with a runtime callable wrapper (RCW).  

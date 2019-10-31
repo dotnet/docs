@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: b9b79b8b-d9bf-4f8c-b9d6-9578bc3219d3
 ---
 # How to: Access Keyed Collections in Windows Forms
+
 - You can access individual collection items by key. This functionality has been added to many collection classes that are typically used by Windows Forms applications. The following list shows some of the collection classes that have accessible keyed collections:  
   
 - <xref:System.Windows.Forms.ListView.ListViewItemCollection>  

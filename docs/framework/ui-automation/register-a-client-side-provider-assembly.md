@@ -25,4 +25,4 @@ ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
   
 ## See also
 
-- [Create a Client-Side UI Automation Provider](../../../docs/framework/ui-automation/create-a-client-side-ui-automation-provider.md)
+- [Create a Client-Side UI Automation Provider](create-a-client-side-ui-automation-provider.md)

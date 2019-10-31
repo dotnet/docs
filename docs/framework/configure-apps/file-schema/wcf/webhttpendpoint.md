@@ -6,8 +6,10 @@ ms.assetid: ecaaeb6f-ebd0-411d-8b53-92477cd45347
 # \<webHttpEndpoint>
 This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](webhttpbinding.md) binding that automatically adds the [\<webHttp>](webhttp.md) behavior. Use this endpoint when writing a REST service.  
   
-\<system.ServiceModel>  
-\<standardEndpoints>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webHttpEndpoint>**  
   
 ## Syntax  
   

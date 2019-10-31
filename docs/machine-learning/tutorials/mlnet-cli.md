@@ -15,6 +15,7 @@ Learn how to use ML.NET CLI to automatically generate an ML.NET model and underl
 
 In this tutorial, you will do the following steps:
 > [!div class="checklist"]
+>
 > - Prepare your data for the selected machine learning task
 > - Run the 'mlnet auto-train' command from the CLI
 > - Review the quality metric results
@@ -90,7 +91,8 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     You will see output from the CLI, similar to:
 
-    <!-- markdownlint-disable MD023 -->
+    <!-- markdownlint-disable MD023 MD025 -->
+
     # [Windows](#tab/windows)
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/mlnet-auto-train-binary-classification-powershell.gif)
@@ -198,7 +200,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
     Run the console app from the command-prompt by typing the following commands:
 
-     ```
+     ```bash
      > cd SampleBinaryClassification
      > cd SampleBinaryClassification.ConsoleApp
 
@@ -255,6 +257,7 @@ It is interesting to compare the chosen algorithm and pipeline configuration in 
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Prepare your data for the selected ML task (problem to solve)
 > - Run the 'mlnet auto-train' command in the CLI tool
 > - Review the quality metric results

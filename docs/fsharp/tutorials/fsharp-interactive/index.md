@@ -16,7 +16,7 @@ F# Interactive (fsi.exe) is used to run F# code interactively at the console, or
 To run F# Interactive from the console, run fsi.exe.  You will find fsi.exe in:
 
 ```console
-C:\Program Files (x86)\Microsoft Visual Studio\2017\<sku>\Common7\IDE\CommonExtensions\Microsoft\FSharp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\<sku>\Common7\IDE\CommonExtensions\Microsoft\FSharp
 ```
 
 where `sku` is either `Community`, `Professional`, or `Enterprise`.
@@ -80,7 +80,7 @@ printfn "%A" (MyAssembly.myFunction 10 40)
 
 The output is as follows:
 
-```
+```console
 Command line arguments: 
 file1.fsx
 test

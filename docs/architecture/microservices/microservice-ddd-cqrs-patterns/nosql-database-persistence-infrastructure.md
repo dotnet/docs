@@ -116,7 +116,7 @@ However, when you persist your model into the NoSQL database, the code and API c
 
 You can access Azure Cosmos DB databases from .NET code running in containers, like from any other .NET application. For instance, the Locations.API and Marketing.API microservices in eShopOnContainers are implemented so they can consume Azure Cosmos DB databases.
 
-However, there’s a limitation in Azure Cosmos DB from a Docker development environment point of view. Even when there’s a on-premises [Azure Cosmos DB Emulator](https://docs.microsoft.com/azure/cosmos-db/local-emulator) able to run in a local development machine (like a PC), as of late 2017, it just supports Windows, not Linux. 
+However, there’s a limitation in Azure Cosmos DB from a Docker development environment point of view. Even when there’s a on-premises [Azure Cosmos DB Emulator](https://docs.microsoft.com/azure/cosmos-db/local-emulator) able to run in a local development machine (like a PC), as of late 2017, it just supports Windows, not Linux.
 
 There is also the possibility to run this emulator on Docker, but just on Windows Containers, not with Linux Containers. That is an initial handicap for the development environment if your application is deployed as Linux containers, since, currently, you cannot deploy Linux and Windows Containers on Docker for Windows at the same time. Either all containers being deployed have to be for Linux or for Windows.
 
@@ -144,7 +144,7 @@ Your custom .NET Core containers can run on a local development Docker host (tha
 
 A clear benefit of using the MongoDB API is that your solution could run in both database engines, MongoDB or Azure Cosmos DB, so migrations to different environments should be easy. However, sometimes it is worthwhile to use a native API (that is the native Cosmos DB API) in order to take full advantage of the capabilities of a specific database engine.
 
-For further comparison between simply using MongoDB versus Cosmos DB in the cloud, see the [Benefits of using Azure Cosmos DB in this page](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction). 
+For further comparison between simply using MongoDB versus Cosmos DB in the cloud, see the [Benefits of using Azure Cosmos DB in this page](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction).
 
 ### Analyze your approach for production applications: MongoDB API vs. Cosmos DB API
 
@@ -188,12 +188,12 @@ public class Locations
     public string Description { get; set; }
     public double Latitude { get; set; }
     public double Longitude { get; set; }
-    public GeoJsonPoint<GeoJson2DGeographicCoordinates> Location 
+    public GeoJsonPoint<GeoJson2DGeographicCoordinates> Location
                                                              { get; private set; }
-    public GeoJsonPolygon<GeoJson2DGeographicCoordinates> Polygon 
+    public GeoJsonPolygon<GeoJson2DGeographicCoordinates> Polygon
                                                              { get; private set; }
     public void SetLocation(double lon, double lat) => SetPosition(lon, lat);
-    public void SetArea(List<GeoJson2DGeographicCoordinates> coordinatesList) 
+    public void SetArea(List<GeoJson2DGeographicCoordinates> coordinatesList)
                                                     => SetPolygon(coordinatesList);
 
     private void SetPosition(double lon, double lat)
@@ -240,7 +240,7 @@ public class LocationsContext
         {
             return _database.GetCollection<Locations>("Locations");
         }
-    }       
+    }
 }
 ```
 
@@ -274,7 +274,7 @@ services:
 
 ```
 
-The `ConnectionString` environment variable is resolved this way: If the `ESHOP_AZURE_COSMOSDB` global variable is defined in the `.env` file with the Azure Cosmos DB connection string, it will use it to access the Azure Cosmos DB database in the cloud. If it’s not defined, it will take the mongodb://nosql.data value and use the development mongodb container.
+The `ConnectionString` environment variable is resolved this way: If the `ESHOP_AZURE_COSMOSDB` global variable is defined in the `.env` file with the Azure Cosmos DB connection string, it will use it to access the Azure Cosmos DB database in the cloud. If it’s not defined, it will take the `mongodb://nosql.data` value and use the development mongodb container.
 
 The following code shows the `.env` file with the Azure Cosmos DB connection string global environment variable, as implemented in eShopOnContainers:
 
@@ -295,7 +295,7 @@ ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP=<YourDockerHostIP>
 
 You should uncomment the ESHOP_AZURE_COSMOSDB line and update it with your Azure Cosmos DB connection string obtained from the Azure portal as explained in [Connect a MongoDB application to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/connect-mongodb-account).
 
-If the `ESHOP_AZURE_COSMOSDB` global variable is empty, meaning that it is commented out in the `.env` file, then the container uses a default MongoDB connection string pointing to the local MongoDB container deployed in eShopOnContainers which is named `nosql.data` and was defined at the docker-compose file, as shown in the following .yml code. 
+If the `ESHOP_AZURE_COSMOSDB` global variable is empty, meaning that it is commented out in the `.env` file, then the container uses a default MongoDB connection string pointing to the local MongoDB container deployed in eShopOnContainers which is named `nosql.data` and was defined at the docker-compose file, as shown in the following .yml code.
 
 ``` yml
 # docker-compose.yml
@@ -318,7 +318,7 @@ services:
   <https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction>
 
 - **Azure Cosmos DB: Build a MongoDB API web app with .NET and the Azure portal**  \
-  [https://docs.microsoft.com/azure/cosmos-db/create-mongodb-dotnet](https://docs.microsoft.com/azure/cosmos-db/create-mongodb-dotnet )
+  <https://docs.microsoft.com/azure/cosmos-db/create-mongodb-dotnet>
 
 - **Use the Azure Cosmos DB Emulator for local development and testing**  \
   <https://docs.microsoft.com/azure/cosmos-db/local-emulator>

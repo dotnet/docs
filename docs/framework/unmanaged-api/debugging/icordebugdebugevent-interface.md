@@ -2,8 +2,6 @@
 title: "ICorDebugDebugEvent Interface"
 ms.date: "03/30/2017"
 ms.assetid: a226737a-cb99-4e97-bd94-9a37094ded41
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDebugEvent Interface
 Defines the base interface from which all `ICorDebug` debug events derive.  

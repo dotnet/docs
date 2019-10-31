@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 55e57640-b3d2-413d-b4f4-fbc27fb8e37c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget::ReadVirtual Method
 Gets a block of contiguous memory starting at the specified address, and returns it in the supplied buffer.  

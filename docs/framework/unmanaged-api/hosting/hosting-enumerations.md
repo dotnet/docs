@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "enumerations [.NET Framework hosting]"
   - "hosting enumerations [.NET Framework]"
 ms.assetid: e09131eb-1f7d-4f52-ae42-7393e9b62ef6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Hosting Enumerations
 This section describes the unmanaged enumerations that the hosting API uses.  

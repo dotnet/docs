@@ -10,7 +10,7 @@ The SELECT clause can have an optional TOP sub-clause following the optional ALL
 
 ## Syntax
 
-```
+```sql
 [ TOP (n) ]
 ```
 
@@ -45,7 +45,7 @@ The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses
 
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:
 
-    [!code-csharp[DP EntityServices Concepts 2#TOP](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#top)]
+    [!code-sql[DP EntityServices Concepts#TOP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#top)]
 
 ## See also
 

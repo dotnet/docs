@@ -23,7 +23,7 @@ Gets an enumerator for an array of generic parameter tokens associated with the 
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT EnumGenericParams (  
    [in, out] HCORENUM     *phEnum,   
    [in]  mdToken          tk,  

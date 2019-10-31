@@ -43,4 +43,4 @@ The `invalidGCHandleCookie` managed debugging assistant (MDA) is activated when 
 
 - <xref:System.Runtime.InteropServices.GCHandle.FromIntPtr%2A>
 - <xref:System.Runtime.InteropServices.GCHandle>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

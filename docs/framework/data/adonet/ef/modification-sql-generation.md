@@ -22,7 +22,7 @@ A DbModificationCommandTree is an object model representation of a modification 
 
 - DbDeleteCommandTree
 
-DbModificationCommandTree and its implementations that are produced by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] always represent a single row operation. This section describes these types with their constraints in the .NET Framework version 3.5.
+DbModificationCommandTree and its implementations that are produced by the Entity Framework always represent a single row operation. This section describes these types with their constraints in the .NET Framework version 3.5.
 
 ![Diagram](./media/558ba7b3-dd19-48d0-b91e-30a76415bf5f.gif "558ba7b3-dd19-48d0-b91e-30a76415bf5f")
 
@@ -57,9 +57,7 @@ The Returning value specifies a projection of results to be returned based on th
 
 SetClauses specifies the list of insert or update set clauses that define the insert or update operation.
 
-```
 The elements of the list are specified as type DbModificationClause, which specifies a single clause in an insert or update modification operation. DbSetClause inherits from DbModificationClause and specifies the clause in a modification operation that sets the value of a property. Beginning in version 3.5 of the .NET Framework, all elements in SetClauses are of type SetClause.
-```
 
 Property specifies the property that should be updated. It is always a DbPropertyExpression over a DbVariableReferenceExpression, which represents a reference to the Target of the corresponding DbModificationCommandTree.
 
@@ -85,7 +83,7 @@ Predicate specifies the predicate used to determine which members of the target 
 
 ## Modification SQL Generation in the Sample Provider
 
-The [Entity Framework Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0) demonstrates the components of ADO.NET Data Providers that support the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. It targets a SQL Server 2005 database and is implemented as a wrapper on top of System.Data.SqlClient ADO.NET 2.0 Data Provider.
+The [Entity Framework Sample Provider](https://code.msdn.microsoft.com/windowsdesktop/Entity-Framework-Sample-6a9801d0) demonstrates the components of ADO.NET Data Providers that support the Entity Framework. It targets a SQL Server 2005 database and is implemented as a wrapper on top of System.Data.SqlClient ADO.NET 2.0 Data Provider.
 
 The modification SQL generation module of the sample provider (located in the file SQL Generation\DmlSqlGenerator.cs) takes an input DbModificationCommandTree and produces a single modification SQL statement possibly followed by a select statement to return a reader if specified by the DbModificationCommandTree. Note that the shape of the commands generated is affected by the target SQL Server database.
 
@@ -155,7 +153,7 @@ using (NorthwindEntities northwindContext = new NorthwindEntities()) {
 
 This code produces the following command tree, which is passed to the provider:
 
-```
+```output
 DbInsertCommandTree
 |_Parameters
 |_Target : 'target'
@@ -225,7 +223,7 @@ using (NorthwindEntities northwindContext = new NorthwindEntities()) {
 
 This user code produces the following command tree, which is passed to the provider:
 
-```
+```output
 DbUpdateCommandTree
 |_Parameters
 |_Target : 'target'
@@ -276,7 +274,7 @@ using (NorthwindEntities northwindContext = new NorthwindEntities()) {
 
 This user code produces the following command tree, which is passed to the provider.
 
-```
+```output
 DbDeleteCommandTree
 |_Parameters
 |_Target : 'target'

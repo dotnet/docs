@@ -14,7 +14,7 @@ Creates a delegate instance that references the specific procedure.
   
 ## Syntax  
   
-```  
+```vb  
 AddressOf procedurename  
 ```  
   

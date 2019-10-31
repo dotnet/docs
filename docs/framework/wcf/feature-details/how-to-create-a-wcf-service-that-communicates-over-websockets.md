@@ -34,7 +34,7 @@ WCF services and clients can use the <xref:System.ServiceModel.NetHttpBinding> b
   
 3. Implement the service contract.  
   
-    ```  
+    ```csharp
     public class StockQuoteService : IStockQuoteService  
         {  
             public async Task StartSendingQuotes()  
@@ -185,7 +185,7 @@ namespace Server
 }  
 ```  
   
-```  
+```csharp
 // StockQuoteService.svc.cs  
 using System;  
 using System.Collections.Generic;  
@@ -251,7 +251,7 @@ namespace Server
 </configuration>  
 ```  
   
-```  
+```
 <!-- StockQuoteService.svc -->  
 <%@ ServiceHost Language="C#" Debug="true" Service="Server.StockQuoteService" CodeBehind="StockQuoteService.svc.cs" %>  
 ```  

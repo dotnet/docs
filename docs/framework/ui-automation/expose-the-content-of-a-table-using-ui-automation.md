@@ -37,9 +37,9 @@ ms.assetid: ac3c5eaa-49c7-4653-b83e-532e2a2604a2
   
 ## See also
 
-- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
-- [Implementing the UI Automation Table Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-table-control-pattern.md)
-- [Implementing the UI Automation TableItem Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-tableitem-control-pattern.md)
-- [Implementing the UI Automation Grid Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-grid-control-pattern.md)
-- [Implementing the UI Automation GridItem Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-griditem-control-pattern.md)
+- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)
+- [Implementing the UI Automation Table Control Pattern](implementing-the-ui-automation-table-control-pattern.md)
+- [Implementing the UI Automation TableItem Control Pattern](implementing-the-ui-automation-tableitem-control-pattern.md)
+- [Implementing the UI Automation Grid Control Pattern](implementing-the-ui-automation-grid-control-pattern.md)
+- [Implementing the UI Automation GridItem Control Pattern](implementing-the-ui-automation-griditem-control-pattern.md)

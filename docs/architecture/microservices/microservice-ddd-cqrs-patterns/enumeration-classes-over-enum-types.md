@@ -22,28 +22,28 @@ public abstract class Enumeration : IComparable
 
     public int Id { get; private set; }
 
-    protected Enumeration(int id, string name) 
+    protected Enumeration(int id, string name)
     {
-        Id = id; 
-        Name = name; 
+        Id = id;
+        Name = name;
     }
 
     public override string ToString() => Name;
 
     public static IEnumerable<T> GetAll<T>() where T : Enumeration
     {
-        var fields = typeof(T).GetFields(BindingFlags.Public | 
-                                         BindingFlags.Static | 
-                                         BindingFlags.DeclaredOnly); 
+        var fields = typeof(T).GetFields(BindingFlags.Public |
+                                         BindingFlags.Static |
+                                         BindingFlags.DeclaredOnly);
 
         return fields.Select(f => f.GetValue(null)).Cast<T>();
     }
 
-    public override bool Equals(object obj) 
+    public override bool Equals(object obj)
     {
-        var otherValue = obj as Enumeration; 
+        var otherValue = obj as Enumeration;
 
-        if (otherValue == null) 
+        if (otherValue == null)
             return false;
 
         var typeMatches = GetType().Equals(obj.GetType());
@@ -52,9 +52,9 @@ public abstract class Enumeration : IComparable
         return typeMatches && valueMatches;
     }
 
-    public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id); 
+    public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id);
 
-    // Other utility methods ... 
+    // Other utility methods ...
 }
 ```
 
@@ -93,7 +93,7 @@ public class CardType : Enumeration
 
 - **CardType.cs**. Sample Enumeration class in eShopOnContainers. \
   <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs>
-    
+
 - **SmartEnum**. Ardalis - Classes to help produce strongly typed smarter enums in .NET. \
   <https://www.nuget.org/packages/Ardalis.SmartEnum/>
 

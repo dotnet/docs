@@ -34,7 +34,7 @@ When using **Trace**, **Debug** and <xref:System.Diagnostics.TraceSource>, you m
   
 - An <xref:System.Diagnostics.XmlWriterTraceListener> directs tracing or debugging output as XML-encoded data to a <xref:System.IO.TextWriter> or to a <xref:System.IO.Stream>, such as a <xref:System.IO.FileStream>.  
   
- If you want any listener besides the <xref:System.Diagnostics.DefaultTraceListener> to receive **Debug**, **Trace** and <xref:System.Diagnostics.TraceSource> output, you must add it to the `Listeners` collection. For more information, see [How to: Create and Initialize Trace Listeners](../../../docs/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners.md) and [How to: Use TraceSource and Filters with Trace Listeners](../../../docs/framework/debug-trace-profile/how-to-use-tracesource-and-filters-with-trace-listeners.md). Any listener in the **Listeners** collection gets the same messages from the trace output methods. For example, suppose you set up two listeners: a **TextWriterTraceListener** and an **EventLogTraceListener**. Each listener receives the same message. The **TextWriterTraceListener** would direct its output to a stream, and the **EventLogTraceListener** would direct its output to an event log.  
+ If you want any listener besides the <xref:System.Diagnostics.DefaultTraceListener> to receive **Debug**, **Trace** and <xref:System.Diagnostics.TraceSource> output, you must add it to the `Listeners` collection. For more information, see [How to: Create and Initialize Trace Listeners](how-to-create-and-initialize-trace-listeners.md) and [How to: Use TraceSource and Filters with Trace Listeners](how-to-use-tracesource-and-filters-with-trace-listeners.md). Any listener in the **Listeners** collection gets the same messages from the trace output methods. For example, suppose you set up two listeners: a **TextWriterTraceListener** and an **EventLogTraceListener**. Each listener receives the same message. The **TextWriterTraceListener** would direct its output to a stream, and the **EventLogTraceListener** would direct its output to an event log.  
   
  The following example shows how to send output to the **Listeners** collection.  
   
@@ -76,5 +76,5 @@ System.Diagnostics.Trace.Listeners.Add(
 - <xref:System.Diagnostics.EventLogTraceListener>
 - <xref:System.Diagnostics.DefaultTraceListener>
 - <xref:System.Diagnostics.TraceListener>
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
-- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)
+- [Trace Switches](trace-switches.md)

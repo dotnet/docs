@@ -18,7 +18,7 @@ To create a new F# project, open Visual Studio Code in a new folder (you can nam
 
 Next, open the command palette (**View > Command Palette**) and type the following:
 
-```
+```console
 > F# new project
 ```
 
@@ -152,7 +152,7 @@ Select both lines of text and press Alt+Enter to execute these lines in FSI. The
 
 Next, in the FSI window, call the function with the `PigLatin` module that you defined earlier:
 
-```
+```console
 > PigLatin.toPigLatin "banana";;
 val it : string = "ananabay"
 > PigLatin.toPigLatin "apple";;

@@ -41,7 +41,7 @@ On the client, you must configure an address that the server can use to connect 
 
 If you create a client/service using the `WSHttpBinding` element and you do not include the client callback endpoint, you will receive the following error.
 
-```
+```console
 HTTP could not register URL
 htp://+:80/Temporary_Listen_Addresses/<guid> because TCP port 80 is being used by another application.
 ```
@@ -81,7 +81,7 @@ The following sample code shows how to specify the client endpoint address in co
 ```
 
 > [!WARNING]
-> The duplex model doesn't automatically detect when a service or client closes its channel. So if a client unexpectedly terminates, by default the service will not be notified, or if a service unexpectedly terminates, the client will not be notified. If you use a service that is disconnected, the <xref:System.ServiceModel.CommunicationException> exception is raised. Clients and services can implement their own protocol to notify each other if they so choose. For more information on error handling, see [WCF Error Handling](../wcf-error-handling.md)
+> The duplex model doesn't automatically detect when a service or client closes its channel. So if a client unexpectedly terminates, by default the service will not be notified, or if a service unexpectedly terminates, the client will not be notified. If you use a service that is disconnected, the <xref:System.ServiceModel.CommunicationException> exception is raised. Clients and services can implement their own protocol to notify each other if they so choose. For more information on error handling, see [WCF Error Handling](../wcf-error-handling.md).
 
 ## See also
 

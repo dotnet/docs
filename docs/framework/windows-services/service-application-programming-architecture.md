@@ -51,7 +51,7 @@ Windows Service applications are based on a class that inherits from the <xref:S
      [!code-vb[VbRadconService#6](../../../samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbRadconService/VB/MyNewService.vb#6)]  
   
     > [!NOTE]
-    > These examples use an array of type <xref:System.ServiceProcess.ServiceBase>, into which each service your application contains can be added, and then all of the services can be run together. If you are only creating a single service, however, you might choose not to use the array and simply declare a new object inheriting from <xref:System.ServiceProcess.ServiceBase> and then run it. For an example, see [How to: Write Services Programmatically](../../../docs/framework/windows-services/how-to-write-services-programmatically.md).  
+    > These examples use an array of type <xref:System.ServiceProcess.ServiceBase>, into which each service your application contains can be added, and then all of the services can be run together. If you are only creating a single service, however, you might choose not to use the array and simply declare a new object inheriting from <xref:System.ServiceProcess.ServiceBase> and then run it. For an example, see [How to: Write Services Programmatically](how-to-write-services-programmatically.md).  
   
 - A series of properties on the <xref:System.ServiceProcess.ServiceBase> class. These determine what methods can be called on your service. For example, when the <xref:System.ServiceProcess.ServiceBase.CanStop%2A> property is set to `true`, the <xref:System.ServiceProcess.ServiceBase.OnStop%2A> method on your service can be called. When the <xref:System.ServiceProcess.ServiceBase.CanPauseAndContinue%2A> property is set to `true`, the <xref:System.ServiceProcess.ServiceBase.OnPause%2A> and <xref:System.ServiceProcess.ServiceBase.OnContinue%2A> methods can be called. When you set one of these properties to `true`, you should then override and define processing for the associated methods.  
   
@@ -62,5 +62,5 @@ Windows Service applications are based on a class that inherits from the <xref:S
   
 ## See also
 
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
-- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)
+- [How to: Create Windows Services](how-to-create-windows-services.md)

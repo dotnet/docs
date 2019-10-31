@@ -12,7 +12,7 @@ Causes the compiler to treat the first occurrence of a warning as an error.
   
 ## Syntax  
   
-```  
+```console  
 -warnaserror[+ | -][:numberList]  
 ```  
   

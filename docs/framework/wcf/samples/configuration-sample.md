@@ -61,9 +61,7 @@ This sample demonstrates the use of a configuration file to make a service disco
   
  This configuration file goes beyond just those simple steps by modifying additional behaviors. It is possible to control discovery-related information by using specific endpoints. That is, a user can control whether an endpoint can be discovered and the user can also mark that endpoint with <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Scopes%2A> and custom XML metadata. To do this, the user must add a `behaviorConfiguration` property to the application endpoint. In this case, the following property is added to the application endpoint.  
   
-```  
-behaviorConfiguration="endpointBehaviorConfiguration"  
-```  
+`behaviorConfiguration="endpointBehaviorConfiguration"`  
   
  Now, through the behavior configuration element, you can control discovery-related attributes. In this case, two scopes are added to the application endpoint.  
   

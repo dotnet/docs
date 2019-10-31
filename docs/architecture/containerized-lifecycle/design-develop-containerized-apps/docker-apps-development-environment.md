@@ -14,7 +14,6 @@ No matter if you prefer a full and powerful IDE or a lightweight and agile edito
 If you prefer a lightweight, cross-platform editor supporting any development language, you can use Visual Studio Code and Docker CLI. These products provide a simple yet robust experience, which is critical for streamlining the developer workflow. By installing "Docker for Mac" or "Docker for Windows" (development environment), Docker developers can use a single Docker CLI to build apps for both Windows or Linux (runtime environment). Plus, Visual Studio Code supports extensions for Docker with IntelliSense for Dockerfiles and shortcut-tasks to run Docker commands from the editor.
 
 > [!NOTE]
->
 > To download Visual Studio Code, go to <https://code.visualstudio.com/download>.
 >
 > To download Docker for Mac and Windows, go to <https://www.docker.com/products/docker>.

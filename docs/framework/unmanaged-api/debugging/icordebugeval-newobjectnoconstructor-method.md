@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 80d509ca-b5e3-4c46-9c14-800db73d9bf7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::NewObjectNoConstructor Method
 Allocates a new object instance of the specified type, without attempting to call a constructor method.  

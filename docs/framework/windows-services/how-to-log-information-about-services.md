@@ -65,4 +65,4 @@ By default, all Windows Service projects have the ability to interact with the A
   
 ## See also
 
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)

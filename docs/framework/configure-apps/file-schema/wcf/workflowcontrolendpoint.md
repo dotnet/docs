@@ -6,8 +6,10 @@ ms.assetid: 6c89e76c-643b-4b6a-9b25-628f753d7027
 # \<workflowControlEndpoint>
 This configuration element defines a standard endpoint for controlling the execution of workflow instances (create, run, suspend, terminate, etc).  
   
-\<system.ServiceModel>  
-\<standardEndpoints>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowControlEndpoint>**  
   
 ## Syntax  
   

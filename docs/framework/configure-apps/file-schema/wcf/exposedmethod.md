@@ -6,10 +6,12 @@ ms.assetid: 61c938cd-4ee9-4b06-ab28-922ef491ab11
 # \<exposedMethod>
 Represents a COM+ method that is exposed when the interface on a COM+ component is exposed as a Web service.  
   
- \<system.ServiceModel>  
-\<comContracts>  
-\<comContract>  
-\<methods>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<comContracts>**](comcontracts.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<comContract>**](comcontract.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<exposedMethods>**](exposedmethods.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<exposedMethod>**  
   
 ## Syntax  
   

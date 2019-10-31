@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7c36a7c2-75a2-4971-bc23-abf54c812154
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EClrEvent Enumeration
 Describes the common language runtime (CLR) events for which the host can register callbacks.  

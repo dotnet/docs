@@ -12,7 +12,7 @@ The SQL generation module is responsible for generating a backend specific SQL q
 
 A query command tree is an object model representation of a query. Query command trees serve two purposes:
 
-- To express an input query that is specified against the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)].
+- To express an input query that is specified against the Entity Framework.
 
 - To express an output query that is given to a provider and describes a query against the backend.
 
@@ -20,7 +20,7 @@ Query command trees support richer semantics than SQL:1999 compliant queries, in
 
 The DBQueryCommandTree.Query property is the root of the expression tree that describes the query logic. The DBQueryCommandTree.Parameters property contains a list of parameters that are used in the query. The expression tree is composed of DbExpression objects.
 
-A DbExpression object represents some computation. Several kinds of expressions are provided by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] for composing query expressions, including constants, variables, functions, constructors, and standard relational operators like filter and join. Every DbExpression object has a ResultType property that represents the type of the result produced by that expression. This type is expressed as a TypeUsage.
+A DbExpression object represents some computation. Several kinds of expressions are provided by the Entity Framework for composing query expressions, including constants, variables, functions, constructors, and standard relational operators like filter and join. Every DbExpression object has a ResultType property that represents the type of the result produced by that expression. This type is expressed as a TypeUsage.
 
 ## Shapes of the Output Query Command Tree
 
@@ -70,7 +70,7 @@ The following function types can be passed:
 
 - User-defined functions.
 
-Canonical functions (see [Canonical Functions](./language-reference/canonical-functions.md) for more information) are specified as part of the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)], and providers should supply implementations for canonical functions based on those specifications. Store functions are based on the specifications in the corresponding provider manifest. User defined functions are based on specifications in the SSDL.
+Canonical functions (see [Canonical Functions](./language-reference/canonical-functions.md) for more information) are specified as part of the Entity Framework, and providers should supply implementations for canonical functions based on those specifications. Store functions are based on the specifications in the corresponding provider manifest. User defined functions are based on specifications in the SSDL.
 
 Also, functions having the NiladicFunction attribute have no arguments and should be translated without the parenthesis at the end.  That is, to *\<functionName>* instead of *\<functionName>()*.
 

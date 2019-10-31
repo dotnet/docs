@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "garbage collection, workstation garbage collection"
   - "garbage collection, managed heap"
 ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Fundamentals of garbage collection
 
@@ -119,7 +117,7 @@ Garbage collections occur on specific generations as conditions warrant. Collect
 
 Objects that are not reclaimed in a garbage collection are known as survivors, and are promoted to the next generation. Objects that survive a generation 0 garbage collection are promoted to generation 1; objects that survive a generation 1 garbage collection are promoted to generation 2; and objects that survive a generation 2 garbage collection remain in generation 2.
 
-When the garbage collector detects that the survival rate is high in a generation, it increases the threshold of allocations for that generation, so the next collection gets a substantial size of reclaimed memory. The CLR continually balances two priorities: not letting an application's working set get too big and not letting the garbage collection take too much time.
+When the garbage collector detects that the survival rate is high in a generation, it increases the threshold of allocations for that generation, so the next collection gets a substantial size of reclaimed memory. The CLR continually balances two priorities: not letting an application's working set get too big by delaying garbage collection and not letting the garbage collection run too frequently.
 
 ### Ephemeral generations and segments
 
@@ -170,8 +168,7 @@ Before a garbage collection starts, all managed threads are suspended except for
 
 The following illustration shows a thread that triggers a garbage collection and causes the other threads to be suspended.
 
-![When a thread triggers a Garbage Collection](../../../docs/standard/garbage-collection/media/gc-triggered.png "GC_Triggered")
-Thread that triggers a garbage collection
+![When a thread triggers a Garbage Collection](../../../docs/standard/garbage-collection/media/gc-triggered.png "When a thread triggers a Garbage Collection")
 
 [Back to top](#top)
 
@@ -203,8 +200,7 @@ The garbage collector is self-tuning and can work in a wide variety of scenarios
 
 The following illustration shows the dedicated threads that perform the garbage collection on a server.
 
-![Server Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-server.png "GC_Server")
-Server garbage collection
+![Server Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-server.png "Server Garbage Collection Threads")
 
 ### Configuring garbage collection
 
@@ -258,8 +254,7 @@ Concurrent garbage collection has a slightly bigger working set (compared with n
 
 The following illustration shows concurrent garbage collection performed on a separate dedicated thread.
 
-![Concurrent Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-concurrent.png "GC_Concurrent")
-Concurrent garbage collection
+![Concurrent Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-concurrent.png "Concurrent Garbage Collection Threads")
 
 [Back to top](#top)
 
@@ -267,7 +262,7 @@ Concurrent garbage collection
 
 ## Background workstation garbage collection
 
-In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. There is no setting for background garbage collection; it is automatically enabled with concurrent garbage collection. Background garbage collection is a replacement for concurrent garbage collection. As with concurrent garbage collection, background garbage collection is performed on a dedicated thread and is applicable only to generation 2 collections.
+Background garbage collection replaces concurrent workstation garbage collection starting with the .NET Framework 4, and it replaces concurrent server garbage collection starting with the .NET Framework 4.5.  In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. It is performed on a dedicated thread and is applicable only to generation 2 collections. Background garbage collection is automatically enabled by default, and can be enabled or disabled with the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration setting in .NET Framework applications. 
 
 > [!NOTE]
 > Background garbage collection is available only in the .NET Framework 4 and later versions. In the .NET Framework 4, it is supported only for workstation garbage collection. Starting with the .NET Framework 4.5, background garbage collection is available for both workstation and server garbage collection.
@@ -280,7 +275,7 @@ Background garbage collection removes allocation restrictions imposed by concurr
 
 The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation:
 
-![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png)
+![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png "Diagram that shows background workstation garbage collection.")
 
 [Back to top](#top)
 
@@ -292,7 +287,7 @@ Starting with the .NET Framework 4.5, background server garbage collection is th
 
 The following illustration shows background garbage collection performed on a separate dedicated thread on a server:
 
-![Diagram that shows background server garbage collection.](./media/fundamentals/background-server-garbage-collection.png)
+![Diagram that shows background server garbage collection.](./media/fundamentals/background-server-garbage-collection.png "Diagram that shows background server garbage collection.")
 
 ## See also
 

@@ -16,6 +16,7 @@ If you don't want to build the applications yourself, you can download "Async Sa
 In this walkthrough, you complete the following tasks:
 
 > [!div class="checklist"]
+>
 > - [Create a WPF application](#create-a-wpf-application)
 > - [Design a simple WPF MainWindow](#design-a-simple-wpf-mainwindow)
 > - [Add a reference](#add-a-reference)
@@ -74,7 +75,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
 6. Position the text box and the button so that both appear in the **MainWindow** window.
 
-    For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).
+    For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio).
 
 ## Add a reference
 
@@ -208,9 +209,9 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
 1. Choose the F5 key to run the program, and then choose the **Start** button.
 
-    Output that resembles the following list should appear.
+    Output that resembles the following list should appear:
 
-    ```
+    ```console
     msdn.microsoft.com/library/windows/apps/br211380.aspx        383832
     msdn.microsoft.com                                            33964
     msdn.microsoft.com/library/hh290136.aspx               225793

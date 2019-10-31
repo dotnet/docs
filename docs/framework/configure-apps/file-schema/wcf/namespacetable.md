@@ -8,9 +8,10 @@ ms.assetid: 64801766-01b7-4c65-9ce6-70ad5af67689
 
 Represents a configuration section for defining a set of elements that contain namespace to prefix mappings that can then be used in XPath filters for routing.
 
-**\<system.serviceModel>**   
-&nbsp;&nbsp;**\<routing>**   
-&nbsp;&nbsp;&nbsp;&nbsp;**\<namespaceTable>**
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<namespaceTable>**  
   
 ## Syntax  
   

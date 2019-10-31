@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0ac59d27-783f-4a87-b7a8-baa3ccc54582
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::LogSwitch Method
 Notifies the debugger that a common language runtime (CLR) managed thread has called a method in the <xref:System.Diagnostics.Switch> class to create, modify, or delete a debugging/tracing switch.  

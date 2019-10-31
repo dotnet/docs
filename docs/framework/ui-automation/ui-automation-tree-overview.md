@@ -51,4 +51,4 @@ ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
 ## See also
 
 - <xref:System.Windows.Automation.AutomationElement>
-- [UI Automation Overview](../../../docs/framework/ui-automation/ui-automation-overview.md)
+- [UI Automation Overview](ui-automation-overview.md)

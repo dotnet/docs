@@ -23,7 +23,7 @@ This tutorial takes you through an interactive experience building a sample solu
 Open a shell window. Create a directory called *unit-testing-with-fsharp* to hold the solution.
 Inside this new directory, run the following command to create a new solution file for the class library and the test project:
 
-```console
+```dotnetcli
 dotnet new sln
 ```
 
@@ -37,7 +37,7 @@ Next, create a *MathService* directory. The following outline shows the director
 
 Make *MathService* the current directory and run the following command to create the source project:
 
-```console
+```dotnetcli
 dotnet new classlib -lang F#
 ```
 
@@ -50,7 +50,7 @@ module MyMath =
 
 Change the directory back to the *unit-testing-with-fsharp* directory. Run the following command to add the class library project to the solution:
 
-```console
+```dotnetcli
 dotnet sln add .\MathService\MathService.fsproj
 ```
 
@@ -69,7 +69,7 @@ Next, create the *MathService.Tests* directory. The following outline shows the 
 
 Make the *MathService.Tests* directory the current directory and create a new project using the following command:
 
-```console
+```dotnetcli
 dotnet new nunit -lang F#
 ```
 
@@ -85,7 +85,7 @@ This creates a test project that uses NUnit as the test framework. The generated
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added NUnit and the NUnit test adapter. Now, add the `MathService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```console
+```dotnetcli
 dotnet add reference ../MathService/MathService.fsproj
 ```
 
@@ -106,7 +106,7 @@ You have the following final solution layout:
 
 Execute the following command in the *unit-testing-with-fsharp* directory:
 
-```console
+```dotnetcli
 dotnet sln add .\MathService.Tests\MathService.Tests.fsproj
 ```
 

@@ -16,7 +16,7 @@ Authors of the types that support type converter and markup extension usages mus
 ## Services for a Markup Extension  
  <xref:System.Windows.Markup.MarkupExtension> has only one virtual method, <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>. The input `serviceProvider` parameter is how the services are communicated to implementations when the markup extension is called by a XAML processor. The following pseudocode illustrates how a markup extension implementation might query for services in its <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>:  
   
-```  
+```csharp  
 public override object ProvideValue(IServiceProvider serviceProvider)  
 {  
 ...  
@@ -40,7 +40,7 @@ public override object ProvideValue(IServiceProvider serviceProvider)
   
  The following pseudocode illustrates how a type converter implementation for XAML usages might query for services in one of its overrides, in this case <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A>:  
   
-```  
+```csharp  
 public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,  
   CultureInfo cultureInfo,  
   object source)  

@@ -14,7 +14,7 @@ This topic shows how to use the [EDM Generator (EdmGen.exe)](edm-generator-edmge
   
 3. At the command prompt, execute the following command without line breaks:  
   
-    ```  
+    ```console  
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:EntityClassGeneration   
     /incsdl:.\School.csdl /outobjectlayer:.\School.Objects.vb /language:VB  
     ```  
@@ -27,7 +27,7 @@ This topic shows how to use the [EDM Generator (EdmGen.exe)](edm-generator-edmge
   
 3. At the command prompt, execute the following command without line breaks:  
   
-    ```  
+    ```console  
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:EntityClassGeneration   
     /incsdl:.\School.csdl /outobjectlayer:.\School.Objects.cs /language:CSharp  
     ```  

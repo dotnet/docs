@@ -56,9 +56,9 @@ Class MainWindow
 End Class
 ```
 
-Each of the labeled locations, "ONE" through "SIX," displays information about the current state of the program. The following output is produced.
+Each of the labeled locations, "ONE" through "SIX," displays information about the current state of the program. The following output is produced:
 
-```
+```console
 ONE:   Entering startButton_Click.
            Calling AccessTheWebAsync.
 
@@ -214,9 +214,9 @@ To run the project, perform the following steps:
 
 10. Choose the F5 key to run the program, and then choose the **Start** button.
 
-    The following output should appear.
+    The following output should appear:
 
-    ```
+    ```console
     ONE:   Entering startButton_Click.
                Calling AccessTheWebAsync.
 
@@ -268,7 +268,7 @@ Dim getStringTask As Task(Of String) = client.GetStringAsync("https://msdn.micro
 
 You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE," represent the opportunity to do independent work
 
-```
+```console
 THREE: Back in AccessTheWebAsync.
            Task getStringTask is started.
            About to await getStringTask & return a Task<int> to startButton_Click.
@@ -301,9 +301,9 @@ The following statement assigns this task to the `getLengthTask` variable.
 Dim getLengthTask As Task(Of Integer) = AccessTheWebAsync()
 ```
 
-As in `AccessTheWebAsync`, `startButton_Click` can continue with work that doesn’t depend on the results of the asynchronous task (`getLengthTask`) until the task is awaited. The following output lines represent that work.
+As in `AccessTheWebAsync`, `startButton_Click` can continue with work that doesn’t depend on the results of the asynchronous task (`getLengthTask`) until the task is awaited. The following output lines represent that work:
 
-```
+```console
 FOUR:  Back in startButton_Click.
            Task getLengthTask is started.
            About to await getLengthTask -- no caller to return to.
@@ -321,9 +321,9 @@ In the following illustration, the arrows show the flow of control from the awai
 
 ### Step FIVE
 
-When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing.
+When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing:
 
-```
+```console
 FIVE:  Back in AccessTheWebAsync.
            Task getStringTask is complete.
            Processing the return statement.
@@ -344,7 +344,7 @@ When `AccessTheWebAsync` signals that it’s complete, processing can continue p
 
 The following lines of output represent the resumption of processing in `startButton_Async`:
 
-```
+```console
 SIX:   Back in startButton_Click.
            Task getLengthTask is finished.
            Result from AccessTheWebAsync is stored in contentLength.

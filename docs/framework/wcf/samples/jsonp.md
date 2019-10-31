@@ -33,13 +33,13 @@ proxy.GetCustomer(onSuccess, onFail, null);
 
  ScriptManager manages the interaction with the service and hides away the complexity of manually implementing JSONP access. When `crossDomainScriptAccessEnabled` is set to `true` and the response format for an operation is JSON, the WCF infrastructure inspects the URI of the request for a callback query string parameter and wraps the JSON response with the value of the callback query string parameter. In the sample, the Web page calls the WCF REST service with the following URI.
 
-```
+```http
 http://localhost:33695/CustomerService/GetCustomer?callback=Sys._json0
 ```
 
  Because the callback query string parameter has a value of `JsonPCallback`, the WCF service returns a JSONP response shown in the following example.
 
-```
+```json
 Sys._json0({"__type":"Customer:#Microsoft.Samples.Jsonp","Address":"1 Example Way","Name":"Bob"});
 ```
 

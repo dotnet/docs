@@ -47,7 +47,7 @@ This method works for both dynamic and non-dynamic methods. It is a superset of 
 
 **Library:** CorGuids.lib
 
-**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)
+**.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
 
 ## See also
 

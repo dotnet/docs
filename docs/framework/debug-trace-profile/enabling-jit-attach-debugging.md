@@ -31,5 +31,5 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
   
 ## See also
 
-- [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)
-- [Making an Image Easier to Debug](../../../docs/framework/debug-trace-profile/making-an-image-easier-to-debug.md)
+- [Debugging, Tracing, and Profiling](index.md)
+- [Making an Image Easier to Debug](making-an-image-easier-to-debug.md)

@@ -266,7 +266,7 @@ public class PurchaseOrderDLQService : IOrderProcessor
 
  When running the client, the client displays the message:
 
-```
+```console
 Press <ENTER> to terminate client.
 ```
 
@@ -274,7 +274,7 @@ Press <ENTER> to terminate client.
 
  You then run the dead-letter service, which reads the message and displays the error code and resends the message back to the service.
 
-```
+```console
 The dead letter service is ready.
 Press <ENTER> to terminate service.
 
@@ -289,7 +289,7 @@ Purchase order resent
 
  The service starts and then reads the resent message and processes it.
 
-```
+```console
 The service is ready.
 Press <ENTER> to terminate service.
 

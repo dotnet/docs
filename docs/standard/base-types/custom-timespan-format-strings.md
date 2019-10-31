@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "custom TimeSpan format strings"
 ms.assetid: a63ebf55-7269-416b-b4f5-286f6c03bf0e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Custom TimeSpan format strings

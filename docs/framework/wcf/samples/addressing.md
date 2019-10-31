@@ -77,7 +77,7 @@ The Addressing sample demonstrates various aspects and features of endpoint addr
   
  When you run the sample, the service enumerates the address, binding name and contract name for each of its endpoints. The metadata exchange (MEX) endpoint is just another endpoint from the ServiceHost's perspective so it shows up in the list.  
   
-```  
+```console  
 Service endpoints:  
 Endpoint - address:  http://localhost:8000/ServiceModelSamples/service  
            binding:  WSHttpBinding  
@@ -101,7 +101,7 @@ Press <ENTER> to terminate service.
   
  When you run the client, the operation requests and responses are displayed in both the service and client console windows. Press ENTER in each console window to shut down the service and client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

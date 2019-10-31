@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5c15cf3b-164c-49d1-8e57-e42949d55acf
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameKeyInstall Method
 Imports a public/private key pair into a container.  

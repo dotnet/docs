@@ -29,7 +29,7 @@ Let's get started by writing some code first.  Make sure that the `Program.fs` f
 
 In the previous code sample, a function `square` has been defined which takes an input named `x` and multiplies it by itself.  Because F# uses [Type Inference](../language-reference/type-inference.md), the type of `x` doesn't need to be specified.  The F# compiler understands the types where multiplication is valid, and will assign a type to `x` based on how `square` is called.  If you hover over `square`, you should see the following:
 
-```
+```console
 val square: x:int -> int
 ```
 
@@ -45,7 +45,7 @@ You can run the code and see results by clicking on **Run** from the top level m
 
 You should now see the following printed to the console window that Visual Studio for Mac popped up:
 
-```
+```console
 12 squared is 144!
 ```
 
@@ -57,7 +57,7 @@ One of the best features of the Visual F# tooling in Visual Studio for Mac is th
 
 To begin using it, highlight the `square` function defined in your code.  Next, click on **Edit** from the top level menu.  Next select **Send selection to F# Interactive**.  This executes the code in the F# Interactive Window.  Alternatively, you can right click on the selection and choose **Send selection to F# Interactive**.  You should see the F# Interactive Window appear with the following in it:
 
-```
+```console
 >
 
 val square : x:int -> int
@@ -67,7 +67,7 @@ val square : x:int -> int
 
 This shows the same function signature for the `square` function, which you saw earlier when you hovered over the function.  Because `square` is now defined in the F# Interactive process, you can call it with different values:
 
-```
+```console
 > square 12;;
 val it : int = 144
 >square 13;;
@@ -76,7 +76,7 @@ val it : int = 169
 
 This executes the function, binds the result to a new name `it`, and displays the type and value of `it`.  Note that you must terminate each line with `;;`.  This is how F# Interactive knows when your function call is finished.  You can also define new functions in F# Interactive:
 
-```
+```console
 > let isOdd x = x % 2 <> 0;;
 
 val isOdd : x:int -> bool
@@ -87,14 +87,14 @@ val it : bool = false
 
 The above defines a new function, `isOdd`, which takes an `int` and checks to see if it's odd!  You can call this function to see what it returns with different inputs.  You can call functions within function calls:
 
-```
+```console
 > isOdd (square 15);;
 val it : bool = true
 ```
 
 You can also use the [pipe-forward operator](../language-reference/symbol-and-operator-reference/index.md) to pipeline the value into the two functions:
 
-```
+```console
 > 15 |> square |> isOdd;;
 val it : bool = true
 ```

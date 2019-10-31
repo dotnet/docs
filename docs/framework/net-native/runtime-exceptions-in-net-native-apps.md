@@ -2,14 +2,12 @@
 title: "Runtime Exceptions in .NET Native Apps"
 ms.date: "03/30/2017"
 ms.assetid: 5f050181-8fdd-4a4e-9d16-f84c22a88a97
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Runtime Exceptions in .NET Native Apps
 It is important to test the release builds of your Universal Windows Platform app on their target platforms because the debug and release configurations are completely different. By default, the debug configuration uses the .NET Core runtime to compile your app, but the release configuration uses .NET Native to compile your app to native code.  
   
 > [!IMPORTANT]
-> For information on dealing with the [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md), [MissingInteropDataException](../../../docs/framework/net-native/missinginteropdataexception-class-net-native.md), and [MissingRuntimeArtifactException](../../../docs/framework/net-native/missingruntimeartifactexception-class-net-native.md) exceptions that you may encounter when testing the release versions of your app, see  "Step 4: Manually resolve missing metadata: in the [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md) topic, as well as [Reflection and .NET Native](../../../docs/framework/net-native/reflection-and-net-native.md) and [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md).  
+> For information on dealing with the [MissingMetadataException](missingmetadataexception-class-net-native.md), [MissingInteropDataException](missinginteropdataexception-class-net-native.md), and [MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md) exceptions that you may encounter when testing the release versions of your app, see "Step 4: Manually resolve missing metadata: in the [Getting Started](getting-started-with-net-native.md) topic, as well as [Reflection and .NET Native](reflection-and-net-native.md) and [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md).  
   
 ## Debug and release builds  
  When the debug build executes against the .NET Core runtime, it has not been compiled to native code. This makes all of the services ordinarily provided by the runtime available to your app.  
@@ -31,7 +29,7 @@ It is important to test the release builds of your Universal Windows Platform ap
 ## Runtime exception messages  
  To minimize application executable size, .NET Native does not include the full text of exception messages. As a result, runtime exceptions thrown in release builds may not display the full text of exception messages. Instead, the text may consist of a substring along with a link to follow for more information. For example, the exception information may appear as:  
   
-```  
+```output
 Exception thrown: '$16_System.AggregateException' in Unknown Module.  
   
 Additional information: AggregateException_ctor_DefaultMessage  
@@ -41,7 +39,7 @@ If there is a handler for this exception, the program may be safely continued.
   
  If you need the complete exception message,  run the debug build instead. For example, the previous exception information  from the release build might appear as follows in the debug build:  
   
-```  
+```output
 Exception thrown: 'System.AggregateException' in NativeApp.exe.  
   
 Additional information: Value does not fall within the expected range.  
@@ -56,4 +54,4 @@ Additional information: Value does not fall within the expected range.
 ## See also
 
 - [Debugging .NET Native Windows Universal Apps](https://devblogs.microsoft.com/devops/debugging-net-native-windows-universal-apps/)
-- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)
+- [Getting Started](getting-started-with-net-native.md)

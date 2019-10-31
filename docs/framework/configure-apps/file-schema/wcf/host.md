@@ -6,10 +6,11 @@ ms.assetid: be566d55-9d50-4b2e-985d-52a5cc26cbbb
 # \<host>
 Specifies settings for a service host.  
   
- \<system.ServiceModel>  
-\<services>  
-\<service>  
-\<host>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<services>**](services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<service>**](service.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<host>**  
   
 ## Syntax  
   

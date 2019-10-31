@@ -102,8 +102,8 @@ class CreateLocation: Activity
   
  In the following example, taken from the [Database Access Activities](./samples/database-access-activities.md) sample, there are two overload groups: `ConnectionString` and `ConfigFileSectionName`. For this activity to be valid, either the `ProviderName` and `ConnectionString` arguments must be bound, or the `ConfigName` argument, but not both.  
   
-```  
-Public class DbUpdate: AsyncCodeActivity  
+```csharp  
+public class DbUpdate: AsyncCodeActivity  
 {  
     [RequiredArgument]  
     [OverloadGroup("ConnectionString")]  

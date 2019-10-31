@@ -16,7 +16,7 @@ ms.assetid: a24e807b-d7c3-4e93-ac48-80094c4e1c90
   
  This topic contains scenarios and sample code that show how and when the <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> can be used to locate an element within the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.  
   
- <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> uniquely identifies a UI Automation element from its siblings. For more information on property identifiers related to control identification, see [UI Automation Properties Overview](../../../docs/framework/ui-automation/ui-automation-properties-overview.md).  
+ <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> uniquely identifies a UI Automation element from its siblings. For more information on property identifiers related to control identification, see [UI Automation Properties Overview](ui-automation-properties-overview.md).  
   
 > [!NOTE]
 > <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> does not guarantee a unique identity throughout the tree; it typically needs container and scope information to be useful. For example, an application may contain a menu control with multiple top-level menu items that, in turn, have multiple child menu items. These secondary menu items may be identified by a generic scheme such as "Item1", "Item 2", and so on, allowing duplicate identifiers for children across top-level menu items.  
@@ -29,7 +29,7 @@ ms.assetid: a24e807b-d7c3-4e93-ac48-80094c4e1c90
   
 #### Use a unique and discoverable AutomationID to locate a specific element in the UI Automation tree  
   
-- Use a tool such as [!INCLUDE[TLA#tla_uispy](../../../includes/tlasharptla-uispy-md.md)] to report the <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> of a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] element of interest. This value can then be copied and pasted into a client application such as a test script for subsequent automated testing. This approach reduces and simplifies the code necessary to identify and locate an element at runtime.  
+- Use a tool such as UI Spy to report the <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty> of a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] element of interest. This value can then be copied and pasted into a client application such as a test script for subsequent automated testing. This approach reduces and simplifies the code necessary to identify and locate an element at runtime.  
   
 > [!CAUTION]
 > In general, you should try to obtain only direct children of the <xref:System.Windows.Automation.AutomationElement.RootElement%2A>. A search for descendants may iterate through hundreds or even thousands of elements, possibly resulting in a stack overflow. If you are attempting to obtain a specific element at a lower level, you should start your search from the application window or from a container at a lower level.  
@@ -53,5 +53,5 @@ ms.assetid: a24e807b-d7c3-4e93-ac48-80094c4e1c90
 ## See also
 
 - <xref:System.Windows.Automation.AutomationElement.AutomationIdProperty>
-- [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)
-- [Find a UI Automation Element Based on a Property Condition](../../../docs/framework/ui-automation/find-a-ui-automation-element-based-on-a-property-condition.md)
+- [UI Automation Tree Overview](ui-automation-tree-overview.md)
+- [Find a UI Automation Element Based on a Property Condition](find-a-ui-automation-element-based-on-a-property-condition.md)

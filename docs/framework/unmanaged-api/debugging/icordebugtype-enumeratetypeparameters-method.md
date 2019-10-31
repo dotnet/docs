@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1ee1f6e6-1bd7-4ebb-83b8-ff9a08ca03de
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType::EnumerateTypeParameters Method
 Gets an interface pointer to an ICorDebugTypeEnum that contains the <xref:System.Type> parameters of the class referenced by this ICorDebugType.  

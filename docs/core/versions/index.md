@@ -98,6 +98,8 @@ Each version of .NET Core implements a version of .NET Standard. Implementing a 
 | 1.0       | up to 1.6     |
 | 2.0       | up to 2.0     |
 | 2.1       | up to 2.0     |
+| 2.2       | up to 2.0     |
+| 3.0       | up to 2.1     |
 
 ## See also
 

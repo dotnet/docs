@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "ResetSecurity function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ResetSecurity function
 Assigns the supplied impersonation token to the current thread.   

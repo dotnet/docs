@@ -13,8 +13,6 @@ helpviewer_keywords:
 ms.assetid: 08dbd558-bd39-4263-94c2-71e70687aaf0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugComObjectValue::GetCachedInterfacePointers Method
 Gets the raw interface pointers cached on the current runtime callable wrapper (RCW).  

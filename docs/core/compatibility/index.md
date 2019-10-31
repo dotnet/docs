@@ -1,8 +1,6 @@
 ---
 title: Evaluate breaking changes - .NET Core
 description: Learn about the ways in which .NET Core attempts to maintain compatibility for developers across .NET versions.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 06/10/2019
 ---
 # Evaluate breaking changes in .NET Core

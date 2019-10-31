@@ -11,7 +11,7 @@ Specifies which [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object  
   xmlns:ignorablePrefix="ignorableUri"  
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  

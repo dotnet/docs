@@ -21,4 +21,4 @@ If your service application will not install correctly, check to make sure that 
   
 ## See also
 
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)

@@ -23,7 +23,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
 3. Open a Web browser on the local computer. In the address bar, enter the following URI:
 
-    ```
+    ```http
     http://localhost:12345/northwind.svc
     ```
 
@@ -33,7 +33,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
 1. In the address bar of your Web browser, enter the following URI:
 
-    ```
+    ```http
     http://localhost:12345/northwind.svc/Customers
     ```
 
@@ -41,7 +41,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
 2. In the address bar of your Web browser, enter the following URI:
 
-    ```
+    ```http
     http://localhost:12345/northwind.svc/Customers('ALFKI')
     ```
 
@@ -49,7 +49,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
 3. In the address bar of your Web browser, enter the following URI:
 
-    ```
+    ```http
     http://localhost:12345/northwind.svc/Customers('ALFKI')/Orders
     ```
 
@@ -57,7 +57,7 @@ This is the second task of the WCF Data Services quickstart. In this task, you s
 
 4. In the address bar of your Web browser, enter the following URI:
 
-    ```
+    ```http
     http://localhost:12345/northwind.svc/Customers('ALFKI')/Orders?$filter=OrderID eq 10643
     ```
 

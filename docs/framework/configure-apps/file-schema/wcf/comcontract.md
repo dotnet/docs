@@ -6,8 +6,10 @@ ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
 # \<comContract>
 Specifies a COM+ integration service contract.  
   
- \<system.ServiceModel>  
-\<comContracts>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<comContracts>**](comcontracts.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<comContract>**  
   
 ## Syntax  
   

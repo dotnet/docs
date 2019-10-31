@@ -45,7 +45,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  ![Relationship between application navigation and browser navigation.](./media/security-wpf/application-browser-navigation-relationship.png)  
   
- The type of content that is considered safe for an [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] to navigate to is primarily determined by whether application navigation or browser navigation is used.  
+ The type of content that is considered safe for an XBAP to navigate to is primarily determined by whether application navigation or browser navigation is used.  
   
 <a name="Application_Navigation_Security"></a>   
 ### Application Navigation Security  
@@ -77,7 +77,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
 - **Protocol**. The protocol being used is either **http**, **https**, **file**, or **mailto**.  
   
- If an [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] attempts to navigate to content in a manner that does not comply with these conditions, a <xref:System.Security.SecurityException> is thrown.  
+ If an XBAP attempts to navigate to content in a manner that does not comply with these conditions, a <xref:System.Security.SecurityException> is thrown.  
   
 <a name="InternetExplorerSecuritySettings"></a>   
 ## Web Browsing Software Security Settings  

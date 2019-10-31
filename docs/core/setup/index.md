@@ -1,6 +1,6 @@
 ---
 title: Install .NET Core on Windows, Linux, and macOS
-description: Learn where and what to install for .NET Core on Windows, Linux, and macOS versions. Discover the dependencies required to develop, deploy, and run .NET Core applications.
+description: Learn where and what to install for .NET Core on Windows, Linux, and macOS versions. Discover the dependencies required to develop, deploy, and run .NET Core apps.
 author: leecow
 ms.author: leecow
 ms.date: 10/30/2019
@@ -9,11 +9,11 @@ zone_pivot_groups: operating-systems-set-one
 
 # Install .NET Core
 
-This article provides information on what is required to install .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
+This article provides information on downloading .NET Core and what is required to install .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and apps.
 
-.NET Core is made up of two components, the runtime and the SDK. The **runtime** is required to run a .NET Core application that doesn't include the runtime. The **SDK** is required to build .NET Core applications.
+.NET Core is made up of two components, the runtime and the SDK. The **runtime** is required to run a .NET Core app, when that app doesn't include the runtime. The **SDK** is required to build .NET Core apps and libraries.
 
-There are different kinds of ways to develop .NET Core apps:
+There are different ways to develop .NET Core apps:
 
 ::: zone pivot="os-windows"
 
@@ -184,7 +184,7 @@ The requirements above are also required if you come across one of the following
 
 ### Visual Studio
 
-If you're using Visual Studio to develop .NET Core applications, the following table describes the minimum required version of Visual Studio based on the target .NET Core runtime.
+If you're using Visual Studio to develop .NET Core apps, the following table describes the minimum required version of Visual Studio based on the target .NET Core runtime.
 
 | .NET Core SDK version | Visual Studio version                      |
 | --------------------- | ------------------------------------------ |
@@ -305,7 +305,7 @@ For .NET Core 2.0, following dependencies are also required:
 - libunwind8
 - libuuid1
 
-For .NET Core applications that use the *System.Drawing.Common* assembly, you also need the following dependency:
+For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
 
 - libgdiplus (version 6.0.1 or later)
 
@@ -332,9 +332,9 @@ For .NET Core 2.0, following dependencies are also required:
 - libunwind
 - libuuid
 
-For more information about the dependencies, see [Self-contained Linux applications](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
+For more information about the dependencies, see [Self-contained Linux apps](https://github.com/dotnet/core/blob/master/Documentation/self-contained-linux-apps.md).
 
-For .NET Core applications that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
+For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also need the following dependency:
 
 - libgdiplus (version 6.0.1 or later)
 

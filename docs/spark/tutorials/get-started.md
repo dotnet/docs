@@ -142,7 +142,7 @@ namespace MySparkApp
     {
         static void Main(string[] args)
         {
-            // Create a Spark session
+            // Create a Spark session.
             var spark = SparkSession
                 .Builder()
                 .AppName("word_count_sample")

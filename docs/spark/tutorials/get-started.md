@@ -151,7 +151,7 @@ namespace MySparkApp
             // Create initial DataFrame.
             DataFrame dataFrame = spark.Read().Text("input.txt");
 
-            // Count words
+            // Count words.
             var words = dataFrame
                 .Select(Functions.Split(Functions.Col("value"), " ").Alias("words"))
                 .Select(Functions.Explode(Functions.Col("words"))

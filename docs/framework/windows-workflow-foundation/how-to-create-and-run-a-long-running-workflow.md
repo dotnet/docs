@@ -1016,7 +1016,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
     Dim wf As Activity = _
         WorkflowVersionMap.GetWorkflowDefinition(instance.DefinitionIdentity)
 
-    'Associate the WorkflowApplication with the correct definition
+    ' Associate the WorkflowApplication with the correct definition
     Dim wfApp As New WorkflowApplication(wf, instance.DefinitionIdentity)
     ```
 

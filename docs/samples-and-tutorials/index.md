@@ -90,17 +90,13 @@ This tutorial shows you how to build a complete .NET Core solution that includes
 
 This tutorial shows you how to build a simple application on .NET Core that supports a plugin architecture. The [completed sample](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin) is available in the dotnet/samples repository on GitHub.
 
-## Deploying to containers
+## Deploy to containers
 
 **[Running ASP.NET MVC Applications in Windows Docker Containers](/aspnet/mvc/overview/deployment/docker-aspnetmvc)**
 
 This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Windows Docker Container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
 
-**[Running .NET Framework Console Applications in Windows Containers](/dotnet/framework)**
-
-This tutorial demonstrates how to deploy an existing console app in a Windows container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
-
-## Viewing and downloading samples
+## View and download samples
 
 Many topics show source code and samples that are available for viewing or download from GitHub. To view a sample, just follow the sample link. To download the code, follow these instructions:
 

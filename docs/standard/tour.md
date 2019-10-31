@@ -31,7 +31,7 @@ Microsoft actively develops and supports three .NET languages: C#, F#, and Visua
 
 ## Automatic memory management
 
-.NET uses [garbage collection (GC)](/dotnet/standard/garbage-collection/) to provide automatic memory management for programs. The GC operates on a lazy approach to memory management, preferring app throughput to the immediate collection of memory. To learn more about the .NET GC, check out [Fundamentals of garbage collection (GC)](garbage-collection/fundamentals.md).
+.NET uses [garbage collection (GC)](garbage-collection/index.md) to provide automatic memory management for programs. The GC operates on a lazy approach to memory management, preferring app throughput to the immediate collection of memory. To learn more about the .NET GC, check out [Fundamentals of garbage collection (GC)](garbage-collection/fundamentals.md).
 
 The following two lines both allocate memory:
 

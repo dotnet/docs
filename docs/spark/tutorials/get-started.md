@@ -116,7 +116,7 @@ Finally, double-check that you can run `dotnet`, `java`, `mvn`, `spark-shell` fr
 
 In your command prompt, run the following commands to create a new console application:
 
-```
+```console
 dotnet new console -o mySparkApp
 cd mySparkApp
 ```

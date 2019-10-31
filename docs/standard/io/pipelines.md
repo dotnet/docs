@@ -306,8 +306,8 @@ The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the cal
 
 The previous code:
 
-* Requests a buffer of at least 5 bytes from the `PipeWriter` using <xref:System.IO.Pipelines.PipeWriter.GetSpan%2A>.
-* Writes bytes for the ASCII string `"Hello"` to the returned `Span<byte>`.
+* Requests a buffer of at least 5 bytes from the `PipeWriter` using <xref:System.IO.Pipelines.PipeWriter.GetMemory%2A>.
+* Writes bytes for the ASCII string `"Hello"` to the returned `Memory<byte>`.
 * Calls <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to indicate how many bytes were written to the buffer.
 * Flushes the `PipeWriter`, which sends the bytes to the underlying device.
 

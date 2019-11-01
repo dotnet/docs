@@ -5,7 +5,11 @@ ms.date: 10/31/2019
 ---
 # dotnet run
 
+**This article applies to: ✓** .NET Core 1.x SDK and later versions
+
+<!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+-->
 
 ## Name
 
@@ -15,7 +19,7 @@ ms.date: 10/31/2019
 
 <!-- markdownlint-disable MD025 -->
 
-# [.NET Core 3.0 and 3.1](#tab/netcore21)
+# [.NET Core 3.0 and 3.1](#tab/netcore30)
 
 ```dotnetcli
 dotnet run [-c|--configuration] [-f|--framework] [--force] [--interactive] [--launch-profile] [--no-build] [--no-dependencies]
@@ -70,7 +74,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ## Options
 
-# [.NET Core 3.0 and 3.1](#tab/netcore21)
+# [.NET Core 3.0 and 3.1](#tab/netcore30)
 
 `--`
 
@@ -94,7 +98,7 @@ Prints out a short help for the command.
 
 `--interactive`
 
-Allows the command to stop and wait for user input or action (for example to complete authentication).
+Allows the command to stop and wait for user input or action (for example, to complete authentication).
 
 `--launch-profile <NAME>`
 

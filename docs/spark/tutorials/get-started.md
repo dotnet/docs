@@ -40,7 +40,7 @@ Before you begin, make sure you can run `dotnet`, `java`, `mvn`, `spark-shell` f
     * Use the PowerShell command `java -version` to verify the installation.
 
 4. Install [Apache Maven 3.6.0+](https://maven.apache.org/download.cgi).
-    * Download [Apache Maven 3.6.2](https://mirror.metrocast.net/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.zip).
+    * Download [Apache Maven 3.6.2](http://mirror.metrocast.net/apache/maven/maven-3/3.6.2/binaries/apache-maven-3.6.2-bin.zip).
     * Extract to a local directory. For example, `c:\bin\apache-maven-3.6.2\`.
     * Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml). If you extracted to `c:\bin\apache-maven-3.6.2\`, you would add `c:\bin\apache-maven-3.6.2\bin` to your PATH.
     * Use the PowerShell command `mvn -version` to verify the installation.

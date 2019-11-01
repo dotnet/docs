@@ -34,7 +34,7 @@ Describes marshaling for COM interop and platform invoke.
 [How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)  
 Describes the mapping between exceptions and HRESULTs.
 
-[COM Wrappers](com-wrappers.md)  
+[COM Wrappers](../../standard/native-interop/com-wrappers.md)  
 Describes the wrappers provided by COM interop.
 
 [Type Equivalence and Embedded Interop Types](type-equivalence-and-embedded-interop-types.md)  

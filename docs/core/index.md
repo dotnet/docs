@@ -44,4 +44,4 @@ Hello World!
 
 .NET Core binary distributions are built and tested on Microsoft-maintained servers in Azure and supported just like any Microsoft product.
 
-[Red Hat supports .NET Core](http://redhatloves.net/) on Red Hat Enterprise Linux (RHEL). Red Hat builds .NET Core from source and makes it available in the [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
+[Red Hat supports .NET Core](https://developers.redhat.com/topics/dotnet/) on Red Hat Enterprise Linux (RHEL). Red Hat builds .NET Core from source and makes it available in the [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.

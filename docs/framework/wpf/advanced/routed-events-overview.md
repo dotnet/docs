@@ -24,7 +24,7 @@ This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient
 
 ## Prerequisites
 
-This topic assumes that you have basic knowledge of the common language runtime (CLR) and object-oriented programming, as well as the concept of how the relationships between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements can be conceptualized as a tree. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write very basic [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications or pages. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) and [XAML Overview (WPF)](xaml-overview-wpf.md).
+This topic assumes that you have basic knowledge of the common language runtime (CLR) and object-oriented programming, as well as the concept of how the relationships between [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements can be conceptualized as a tree. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write very basic [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications or pages. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) and [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md).
 
 <a name="routing"></a>
 
@@ -82,7 +82,7 @@ To add a handler for an event using [!INCLUDE[TLA2#tla_xaml](../../../../include
 
 [!code-xaml[EventOvwSupport#SimplestSyntax](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#simplestsyntax)]
 
-The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for adding standard CLR event handlers is the same for adding routed event handlers, because you are really adding handlers to the CLR event wrapper, which has a routed event implementation underneath. For more information about adding event handlers in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [XAML Overview (WPF)](xaml-overview-wpf.md).
+The [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] syntax for adding standard CLR event handlers is the same for adding routed event handlers, because you are really adding handlers to the CLR event wrapper, which has a routed event implementation underneath. For more information about adding event handlers in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], see [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md).
 
 <a name="routing_strategies"></a>
 

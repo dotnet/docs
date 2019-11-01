@@ -38,5 +38,5 @@ This example shows how to use the static resources of the <xref:System.Windows.S
 - [Use System Fonts Keys](how-to-use-system-fonts-keys.md)
 - [How-to Topics](resources-how-to-topics.md)
 - [x:Static Markup Extension](../../xaml-services/x-static-markup-extension.md)
-- [XAML Resources](xaml-resources.md)
+- [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [DynamicResource Markup Extension](dynamicresource-markup-extension.md)

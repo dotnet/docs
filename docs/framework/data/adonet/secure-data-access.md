@@ -49,7 +49,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Exception Handling Fundamentals](../../../standard/exceptions/exception-handling-fundamentals.md)|Describes the basic forms of try/catch/finally structured exception handling.|  
+|[Exception Handling Fundamentals](/dotnet/standard/exceptions/)|Describes the basic forms of try/catch/finally structured exception handling.|  
 |[Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md)|Describes best practices for handling exceptions.|  
   
 ## Protecting Microsoft Access and Excel Data Sources  

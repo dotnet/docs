@@ -25,7 +25,7 @@ The diagram below shows a conceptual model with three entity types: `Book`, `Pub
 
  ![Diagram showing a conceptual model with three entity types.](./media/navigation-property/conceptual-model-entity-types-associations.gif)  
 
-The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines the `Book` entity type shown in the diagram above:
+The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) to define conceptual models. The following CSDL defines the `Book` entity type shown in the diagram above:
 
 [!code-xml[EDM_Example_Model#EntityExample](~/samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]
 

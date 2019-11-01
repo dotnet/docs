@@ -57,7 +57,7 @@ In the table, versions of the .NET Framework that are installed on operating sys
   > [!NOTE]
   > .NET Framework 4.5.1 and .NET Framework 4.5 are used here only as examples. The principle described applies to any app that targets a later version of the .NET Framework than the one installed on the system on which it's running.  
   
-Some changes in the .NET Framework may require changes to your app code. If you're running an existing app on .NET Framework 4.5 or later, see [Application Compatibility](application-compatibility.md). For information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [Microsoft .NET Framework Support Lifecycle Policy](https://support.microsoft.com/help/17455/lifecycle-faq-net-framework) on the Microsoft Support website.  
+Some changes in the .NET Framework may require changes to your app code. If you're running an existing app on .NET Framework 4.5 or later, see [Application compatibility](application-compatibility.md). For information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [Microsoft .NET Framework Support Lifecycle Policy](https://support.microsoft.com/help/17455/lifecycle-faq-net-framework) on the Microsoft Support website.  
   
 ## Target and run apps for older versions  
 

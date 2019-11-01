@@ -13,7 +13,7 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
 # Optimizing Performance: Application Resources
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to share application resources so that you can support a consistent look or behavior across similar-typed elements. This topic provides a few recommendations in this area that can help you improve the performance of your applications.  
   
- For more information on resources, see [XAML Resources](xaml-resources.md).  
+ For more information on resources, see [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
 ## Sharing resources  
  If your application uses custom controls and defines resources in a <xref:System.Windows.ResourceDictionary> (or XAML Resources node), it is recommended that you either define the resources at the <xref:System.Windows.Application> or <xref:System.Windows.Window> object level, or define them in the default theme for the custom controls. Defining resources in a custom control's <xref:System.Windows.ResourceDictionary> imposes a performance impact for every instance of that control. For example, if you have performance-intensive brush operations defined as part of the resource definition of a custom control and many instances of the custom control, the application's working set will increase significantly.  

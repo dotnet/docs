@@ -256,4 +256,4 @@ A button that uses a custom control template in the pressed state
 
 ## See also
 
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

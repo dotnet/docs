@@ -31,6 +31,6 @@ This example shows how to implement the master-detail scenario.
 
 - <xref:System.Windows.HierarchicalDataTemplate>
 - [Bind to a Collection and Display Information Based on Selection](how-to-bind-to-a-collection-and-display-information-based-on-selection.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Data Templating Overview](data-templating-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

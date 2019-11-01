@@ -126,7 +126,7 @@ The data can be modeled by a class like `HouseData`.
 public class HouseData
 {
     public float Size { get; set; }
-    
+
     public float NumBed { get; set; }
 
     public float Price { get; set; }

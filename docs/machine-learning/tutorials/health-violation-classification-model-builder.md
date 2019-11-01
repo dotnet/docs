@@ -31,7 +31,7 @@ In this tutorial, you learn how to:
 
 For a list of prerequisites and installation instructions, visit the [Model Builder installation guide](../how-to-guides/install-model-builder.md).
 
-## Model Builder multiclass classification overview 
+## Model Builder multiclass classification overview
 
 This sample creates a C# .NET Core console application that categorizes the risk of health violations using a machine learning model built with Model Builder. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/MulticlassClassification_RestaurantViolations) GitHub repository.
 
@@ -54,7 +54,7 @@ Each row in the dataset contains information regarding violations observed durin
 | Routine - Unscheduled | Wiping cloths not clean or properly stored or inadequate sanitizer | Low Risk |
 
 - **InspectionType**: the type of inspection. This can either be a first-time inspection for a new establishment, a routine inspection, a complaint inspection, and many other types.
-- **ViolationDescription**: a description of the violation found during inspection. 
+- **ViolationDescription**: a description of the violation found during inspection.
 - **RiskCategory**: the risk severity a violation poses to public health and safety.
 
 The `label` is the column you want to predict. When performing a classification task, the goal is to assign a category (text or numerical). In this classification scenario, the severity of the violation is assigned the value of low, moderate, or high risk. Therefore, the **RiskCategory** is the label. The `features` are the inputs you give the model to predict the `label`. In this case, the **InspectionType** and **ViolationDescription** are used as features or inputs to predict the **RiskCategory**.
@@ -74,7 +74,7 @@ Model Builder accepts data from a SQL Server database or a local file in `csv` o
 
 1. In the data step of the Model Builder tool, select **SQL Server** from the data source dropdown.
 1. Select the button next to the **Connect to SQL Server database** text box.
-    1. In the **Choose Data** dialog, select **Microsoft SQL Server Database File**. 
+    1. In the **Choose Data** dialog, select **Microsoft SQL Server Database File**.
     1. Uncheck the **Always use this selection** checkbox and select **Continue**.
     1. In the **Connection Properties** dialog, select **Browse** and select the downloaded *RestaurantScores.mdf* file.
     1. Select **OK**.
@@ -120,11 +120,11 @@ Two projects are created as a result of the training process.
 
     [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L2)]
 
-1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the risk category is not part of the input. This is because the model generates the prediction for it. 
+1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the risk category is not part of the input. This is because the model generates the prediction for it.
 
     [!code-csharp [TestData](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L11-L15)]
 
-1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, creates a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model, and uses it to make predictions on new data. 
+1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, creates a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model, and uses it to make predictions on new data.
 
     [!code-csharp [Prediction](~/machinelearning-samples/samples/modelbuilder/MulticlassClassification_RestaurantViolations/RestaurantViolations/Program.cs#L17-L24)]
 

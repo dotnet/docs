@@ -6,7 +6,7 @@ ms.topic: reference
 ms.author: nakersha
 ms.date: 10/03/2019
 ---
-# ML.NET resources 
+# ML.NET resources
 
 The following resources help you to learn more about ML.NET
 

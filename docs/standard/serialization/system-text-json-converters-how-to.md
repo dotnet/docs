@@ -28,7 +28,7 @@ You can also write custom converters to extend `System.Text.Json` with functiona
 
 ## Create a custom converter
 
-There are two patterns for creating a custom converter: the basic pattern and the factory pattern. The factory pattern is for converters that handle type Enum or open generics. The basic pattern is for non-generic and closed generic types.  For example, converters for the following types require the factory pattern:
+There are two patterns for creating a custom converter: the basic pattern and the factory pattern. The factory pattern is for converters that handle type `Enum` or open generics. The basic pattern is for non-generic and closed generic types.  For example, converters for the following types require the factory pattern:
 
 * `Dictionary<TKey, TValue>`
 * `Enum`
@@ -42,7 +42,7 @@ Some examples of types that can be handled by the basic pattern include:
 * `DateTime`
 * `Int32`
 
-By following the basic pattern, you create a class at design time that can handle one type. When you follow the factory pattern, you create a class that analyzes the type needed at runtime and dynamically creates the appropriate converter.
+The basic pattern creates a class that can handle one type. The factory pattern creates a class that determines at runtime which specific type is required and dynamically creates the appropriate converter.
 
 ### The basic pattern
 
@@ -62,9 +62,9 @@ The following steps explain how to create a converter by following the factory p
 * Create an inner class that is a converter following the basic pattern.
 * Override the `CreateConverter` method to return an instance of the inner converter class. Configure the inner converter to handle the type-to-convert that is provided at runtime.
 
-The factory method is required because in .NET there is no universal way to convert an object to a string. And there is no universal way to parse a string and get an object of the desired type. Not every .NET type has a `Parse` method. For this reason, a converter for an open generic (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
+The factory pattern is required for open generics because in .NET there is no universal way to convert an object to a string. And there is no universal way to parse a string and get an object of the desired type. Not every .NET type has a `Parse` method. For this reason, a converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
 
-The same is true of `Enum`: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes. 
+The `Enum` type is similar to an open generic type: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes. 
 
 ## Error handling
 

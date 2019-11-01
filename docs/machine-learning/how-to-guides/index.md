@@ -4,7 +4,7 @@ description: Learn how to do specific tasks to assist with custom AI solutions c
 ms.custom: seodec18
 ms.date: 03/01/2019
 ---
-# .NET Machine learning how-to guides 
+# .NET Machine learning how-to guides
 
 In the How to section of the ML.NET Guide, you can find quick answers to common questions. In some cases, articles may be listed in multiple sections to make them easy to find.
 
@@ -17,7 +17,6 @@ In the How to section of the ML.NET Guide, you can find quick answers to common 
 * [Preprocess training data with normalizers to use in data processing.](normalizers-preprocess-data-ml-net.md)
 
 ## Train the model
-
 
 * [Train a machine learning model using cross-validation.](train-machine-learning-model-cross-validation-ml-net.md)
 
@@ -32,9 +31,6 @@ In the How to section of the ML.NET Guide, you can find quick answers to common 
 * [Determine the feature importance of models with Permutation Feature Importance.](explain-machine-learning-model-permutation-feature-importance-ml-net.md)
 
 * [Use Generalized Additive Models and shape functions for model explainability.](use-gams-for-model-explainability.md)
-
-
-
 
 ## Run
 

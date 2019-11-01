@@ -1,8 +1,6 @@
 ---
 title: "How to: Enable SQL Persistence for Workflows and Workflow Services"
 ms.date: "03/30/2017"
-dev_langs:
-  - "csharp"
 ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
 ---
 

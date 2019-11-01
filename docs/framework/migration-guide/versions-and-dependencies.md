@@ -43,6 +43,7 @@ In the table, versions of the .NET Framework that are installed on operating sys
 |1.0|1.0|Visual Studio .NET|-|-|See [instructions](how-to-determine-which-versions-are-installed.md)|  
 
 > [!NOTE]
+>
 > - The .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows-10.md#enable-the-net-framework-35-in-control-panel).
 > - In general, you should not uninstall any versions of the .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of the .NET Framework on a single computer at the same time. This means that you can install the .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../get-started/index.md).
 

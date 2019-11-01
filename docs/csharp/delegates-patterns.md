@@ -157,7 +157,7 @@ methods and generate messages to the console and a file:
 
 ```csharp
 var fileOutput = new FileLogger("log.txt");
-Logger.WriteMessage += LogginMethods.LogToConsole;
+Logger.WriteMessage += LoggingMethods.LogToConsole; // LoggingMethods is the static class we utilized earlier
 ```
 
 Later, even in the same application, you can remove one of the

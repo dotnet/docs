@@ -19,7 +19,7 @@ Review the following documents before you migrate your app from earlier versions
 
 - See [Versions and Dependencies](versions-and-dependencies.md) to understand the CLR version underlying each version of the .NET Framework and to review guidelines for targeting your apps successfully.
 
-- Review [Application Compatibility](application-compatibility.md) to find out about runtime and retargeting changes that might affect your app and how to handle them.
+- Review [Application compatibility](application-compatibility.md) to find out about runtime and retargeting changes that might affect your app and how to handle them.
 
 - Review [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md) to determine any types or members in your code that have been made obsolete, and the recommended alternatives.
 
@@ -27,7 +27,7 @@ Review the following documents before you migrate your app from earlier versions
 
 ## See also
 
-- [Application Compatibility](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)
 - [Migrating from the .NET Framework 1.1](migrating-from-the-net-framework-1-1.md)
 - [Version Compatibility](version-compatibility.md)
 - [Versions and Dependencies](versions-and-dependencies.md)

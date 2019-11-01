@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "ElementHost control"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Create new WPF content on Windows Forms at design time

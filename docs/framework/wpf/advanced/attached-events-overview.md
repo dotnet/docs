@@ -19,7 +19,7 @@ Extensible Application Markup Language (XAML) defines a language component and t
 
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you have read [Routed Events Overview](routed-events-overview.md) and [XAML Overview (WPF)](xaml-overview-wpf.md).  
+ This topic assumes that you have read [Routed Events Overview](routed-events-overview.md) and [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md).  
   
 <a name="Syntax"></a>   
 ## Attached Event Syntax  

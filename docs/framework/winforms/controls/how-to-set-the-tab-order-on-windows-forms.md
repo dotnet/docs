@@ -10,8 +10,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], setting tab order"
   - "Windows Forms, setting tab order"
 ms.assetid: 71fa8e76-0472-414b-ad3c-0f90166e0ad7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Set the tab order on Windows Forms

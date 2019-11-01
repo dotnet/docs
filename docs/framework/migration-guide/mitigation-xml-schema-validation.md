@@ -31,4 +31,4 @@ In the .NET Framework 4.6, XSD schema validation detects a violation of the uniq
   
 ## See also
 
-- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6.md)
+- [Retargeting Changes](application-compatibility.md)

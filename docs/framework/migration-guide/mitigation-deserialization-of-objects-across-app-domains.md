@@ -42,4 +42,4 @@ In some cases, when an app uses two or more app domains with different applicati
   
 ## See also
 
-- [Runtime Changes](runtime-changes-in-the-net-framework-4-5-1.md)
+- [Runtime Changes](application-compatibility.md)

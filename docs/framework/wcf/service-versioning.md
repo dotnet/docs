@@ -126,7 +126,7 @@ After initial deployment, and potentially several times during their lifetime, s
   
  One such mechanism is to use interfaces to define the members of each data contract and write internal implementation code in terms of the interfaces rather than the data contract classes that implement the interfaces. The following code for version 1 of a service shows an `IPurchaseOrderV1` interface and a `PurchaseOrderV1`:  
   
-```  
+```csharp  
 public interface IPurchaseOrderV1  
 {  
     string OrderId { get; set; }  
@@ -147,7 +147,7 @@ public class PurchaseOrderV1 : IPurchaseOrderV1
   
  While the service contract’s operations would be written in terms of `PurchaseOrderV1`, the actual business logic would be in terms of `IPurchaseOrderV1`. Then, in version 2, there would be a new `IPurchaseOrderV2` interface and a new `PurchaseOrderV2` class as shown in the following code:  
   
-```  
+```csharp
 public interface IPurchaseOrderV2  
 {  
     DateTime OrderDate { get; set; }  

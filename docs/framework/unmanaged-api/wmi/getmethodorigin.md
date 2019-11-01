@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetMethodOrigin function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetMethodOrigin function
 Determines the class in which a method is declared.

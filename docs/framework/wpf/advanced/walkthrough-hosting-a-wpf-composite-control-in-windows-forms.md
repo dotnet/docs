@@ -34,7 +34,7 @@ You need Visual Studio to complete this walkthrough.
 ### Creating the Project  
  To start the project:  
   
-1. Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch Visual Studio, and open the **New Project** dialog box.  
   
 2. In Visual C# and the Windows category, select the **WPF User Control Library** template.  
   
@@ -183,7 +183,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
 ### Creating the Project  
  To start the project:  
   
-1. Launch [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch Visual Studio, and open the **New Project** dialog box.  
   
 2. In Visual C# and the Windows category, select  the **Windows Forms Application** template.  
   
@@ -320,6 +320,6 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
 - [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md)

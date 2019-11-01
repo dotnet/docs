@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ea574c84-c622-4589-9a14-b55771af5e06
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule2::SetJITCompilerFlags Method
 Sets the flags that control the just-in-time (JIT) compilation of this ICorDebugModule2.  

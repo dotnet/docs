@@ -8,8 +8,6 @@ api_location:
 api_type: 
   - "DLLExport"
 ms.assetid: 3eb14c49-68c2-4516-ac89-e5bd7473831c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CertFreeAuthenticodeTimestamperInfo Function
 Frees resources allocated for the [AXL_AUTHENTICODE_TIMESTAMPER_INFO](axl-authenticode-timestamper-info-structure.md) structure.  

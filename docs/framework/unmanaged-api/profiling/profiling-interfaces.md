@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "profiling interfaces [.NET Framework]"
   - "interfaces [.NET Framework profiling]"
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Profiling Interfaces
 This section describes the unmanaged interfaces that enable you to profile a program that is being executed by the common language runtime (CLR).  

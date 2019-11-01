@@ -10,10 +10,9 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 24459679-291c-401a-9def-e42b29466fcf
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # ServicePointManager.s\_ServicePointTable Field
 
 `ServicePointManager.s_ServicePointTable` is a <xref:System.Collections.Hashtable> that contains the list of active HTTP connections (<xref:System.Net.ServicePoint>s) in the <xref:System.AppDomain>.

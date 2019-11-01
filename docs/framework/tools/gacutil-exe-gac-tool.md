@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "global assembly cache, Gacutil.exe"
   - "Global Assembly Cache tool"
 ms.assetid: 4c7be9c8-72ae-481f-a01c-1a4716806e99
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Gacutil.exe (Global Assembly Cache Tool)
 

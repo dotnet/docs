@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "CTLs"
   - "certificate revocation lists"
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Certmgr.exe (Certificate Manager Tool)
 The Certificate Manager tool (Certmgr.exe) manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).  

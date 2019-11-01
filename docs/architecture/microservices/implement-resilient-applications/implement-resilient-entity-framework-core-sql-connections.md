@@ -98,7 +98,7 @@ public class CatalogIntegrationEventService : ICatalogIntegrationEventService
         // https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
         await ResilientTransaction.New(_catalogContext).ExecuteAsync(async () =>
         {
-            // Achieving atomicity between original catalog database 
+            // Achieving atomicity between original catalog database
             // operation and the IntegrationEventLog thanks to a local transaction
             await _catalogContext.SaveChangesAsync();
             await _eventLogService.SaveEventAsync(evt,
@@ -122,7 +122,7 @@ public class ResilientTransaction
 
     public async Task ExecuteAsync(Func<Task> action)
     {
-        // Use of an EF Core resiliency strategy when using multiple DbContexts 
+        // Use of an EF Core resiliency strategy when using multiple DbContexts
         // within an explicit BeginTransaction():
         // https://docs.microsoft.com/ef/core/miscellaneous/connection-resiliency
         var strategy = _context.Database.CreateExecutionStrategy();

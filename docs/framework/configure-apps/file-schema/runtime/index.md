@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "configuration schema [.NET Framework], runtime settings"
   - "runtime settings schema"
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Runtime Settings Schema
 

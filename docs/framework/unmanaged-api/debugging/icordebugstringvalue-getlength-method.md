@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a1ebfc69-46a6-4225-8788-b7cfb2f15e1d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStringValue::GetLength Method
 Gets the number of characters in the string referenced by this ICorDebugStringValue.  

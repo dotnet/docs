@@ -64,7 +64,7 @@ regasm.exe /tlb:CalcProxy.tlb client.dll
   
  The assembly that is created should be added to the Global Assembly Cache. Though not strictly required, this simplifies the process of the runtime locating the assembly. The following command adds the assembly to the Global Assembly Cache.  
   
-```  
+```console  
 gacutil.exe /i client.dll  
 ```  
   

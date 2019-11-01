@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 496c3add-f60b-4073-943f-d1bcf33330cb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyName::SetProperty Method
 Sets the value of the property referenced by the specified property identifier.  

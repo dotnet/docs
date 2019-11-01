@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "constructs, alternation"
   - ".NET Framework regular expressions, alternation constructs"
 ms.assetid: 071e22e9-fbb0-4ecf-add1-8d2424f9f2d1
-author: "rpetrusha"
-ms.author: "ronpet"
 ms.custom: seodec18
 ---
 # Alternation Constructs in Regular Expressions

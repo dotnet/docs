@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "performance counters"
   - "performance monitoring, counters"
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Performance Counters in the .NET Framework
 This topic provides a list of performance counters you can find in the [Windows Performance Monitor](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249%28v=ws.11%29).  

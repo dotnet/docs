@@ -45,7 +45,7 @@ For discussion, see [aspnet/AspNetCore#7644](https://github.com/aspnet/AspNetCor
 
 #### New behavior
 
-These synchronous APIs are disallowed by default: 
+These synchronous APIs are disallowed by default:
 
 Expect errors similar to:
 

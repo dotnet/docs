@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 536d2357-1b97-49e0-a10c-c860aed74e6e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread2::InterceptCurrentException Method
 Allows a debugger to intercept the current exception on this thread.  

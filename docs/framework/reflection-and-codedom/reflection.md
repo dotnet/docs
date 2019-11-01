@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "discovering type information at run time"
   - "type system, reflection"
 ms.assetid: d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Reflection in .NET
 

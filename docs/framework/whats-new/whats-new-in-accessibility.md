@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "what's new [.NET Framework]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # What's new in accessibility in the .NET Framework

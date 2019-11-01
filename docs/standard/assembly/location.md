@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "locating assemblies"
   - "assemblies [.NET Framework], location"
 ms.assetid: 9f1f41a7-2954-49d3-a2c0-62b6ef4d40ab
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Assembly location
 An assembly's location determines whether the common language runtime can locate it when referenced, and can also determine whether the assembly can be shared with other assemblies. You can deploy an assembly in the following locations:  

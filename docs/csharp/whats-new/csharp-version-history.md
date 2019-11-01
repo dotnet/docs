@@ -99,7 +99,7 @@ C# version 4.0, released with Visual Studio 2010, would have had a difficult tim
 
 The next version did introduce some interesting new features:
 
-- [Dynamic binding](../language-reference/keywords/dynamic.md)
+- [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
 - [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)
@@ -127,7 +127,7 @@ But `async` and `await` are the real stars of this release. When these features 
 
 ## C# version 6.0
 
-With versions 3.0 and 5.0, C# had added major new features in an object-oriented language. With version 6.0, released with Visual Studio 2013, it would go away from doing a dominant killer feature and instead release many smaller features that made C# programming more productive. Here are some of them:
+With versions 3.0 and 5.0, C# had added major new features in an object-oriented language. With version 6.0, released with Visual Studio 2015, it would go away from doing a dominant killer feature and instead release many smaller features that made C# programming more productive. Here are some of them:
 
 - [Static imports](./csharp-6.md#using-static)
 - [Exception filters](./csharp-6.md#exception-filters)

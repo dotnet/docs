@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords:
   - "parallel foreach loop, how to use local state"
 ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Write a Parallel.ForEach loop with partition-local variables
 

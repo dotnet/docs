@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 93f79627-bd31-4f4f-b95d-46a032a52fe4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::MDANotification Method
 Provides notification that code execution has encountered a managed debugging assistant (MDA) in the application that is being debugged.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 26fb69f8-1467-4711-bd24-cb117c63938f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget2::FreeVirtual Method
 Called by the common language runtime (CLR) data access services to free memory that was previously allocated in the address space of the target process.  

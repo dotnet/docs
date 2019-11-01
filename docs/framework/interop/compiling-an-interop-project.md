@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, exposing COM components"
   - "COM interop, exposing COM components"
 ms.assetid: 6fcf6588-5e25-41af-b4ae-780974f2c3df
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Compiling an Interop Project
 

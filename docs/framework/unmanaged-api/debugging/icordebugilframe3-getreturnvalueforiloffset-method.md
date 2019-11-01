@@ -13,8 +13,6 @@ api_type:
 ms.assetid: 06522727-5f64-4391-9331-11386883c352
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame3::GetReturnValueForILOffset Method
 Gets an "ICorDebugValue" object that encapsulates the return value of a function.  

@@ -38,7 +38,7 @@ The match expression provides the value to match against the patterns in `case` 
 In C# 6 and earlier, the match expression must be an expression that returns a value of the following types:
 
 - a [char](char.md).
-- a [string](string.md).
+- a [string](../builtin-types/reference-types.md).
 - a [bool](bool.md).
 - an integral value, such as an [int](../builtin-types/integral-numeric-types.md) or a [long](../builtin-types/integral-numeric-types.md).
 - an [enum](enum.md) value.
@@ -119,7 +119,7 @@ where *constant* is the value to test for. *constant* can be any of the followin
 - The name of a declared `const` variable.
 - An enumeration constant.
 - A [char](char.md) literal.
-- A [string](string.md) literal.
+- A [string](../builtin-types/reference-types.md) literal.
 
 The constant expression is evaluated as follows:
 
@@ -189,7 +189,7 @@ Note that the `when` clause in the example that attempts to test whether a `Shap
 
 ## C# language specification
 
-For more information, see [The switch statement](~/_csharplang/spec/statements.md#the-switch-statement) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [The switch statement](~/_csharplang/spec/statements.md#the-switch-statement) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

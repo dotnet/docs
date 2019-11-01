@@ -10,8 +10,6 @@ api_type:
 ms.assetid: e795e6a2-1008-4a81-af88-d777888e942e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugCodeInvokeKind Enumeration
 Describes how an exported function invokes managed code.  

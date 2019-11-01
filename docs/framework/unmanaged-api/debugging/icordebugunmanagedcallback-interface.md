@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bc71cbca-7d73-40e5-84dd-2109fade3c2a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugUnmanagedCallback Interface
 Provides notification of native events that are not directly related to the common language runtime (CLR).  

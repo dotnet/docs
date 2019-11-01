@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e06fc19d-2cf4-4cad-81a3-137a68af8969
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue3::GetThreadOwningMonitorLock Method
 Returns the managed thread that owns the monitor lock on this object.  

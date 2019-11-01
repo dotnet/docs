@@ -10,8 +10,6 @@ api_type:
 ms.assetid: b22717b9-ead5-4eea-887e-789b52d613dc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction3 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, platform invoke"
   - "DLL functions"
 ms.assetid: 113646de-7ea0-4f0e-8df0-c46dab3e8733
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Calling a DLL Function
 Although calling unmanaged DLL functions is nearly identical to calling other managed code, there are differences that can make DLL functions seem confusing at first. This section introduces topics that describe some of the unusual calling-related issues.  

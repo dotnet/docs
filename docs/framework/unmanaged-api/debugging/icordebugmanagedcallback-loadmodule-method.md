@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 66ec04e9-87cb-42ce-9720-81522abb5d5a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::LoadModule Method
 Notifies the debugger that a common language runtime (CLR) module has been successfully loaded.  

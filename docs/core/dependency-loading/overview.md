@@ -34,4 +34,4 @@ The tutorial [Create a .NET Core application with plugins](../tutorials/creating
 
 ## How to use and debug assembly unloadability in .NET Core
 
-The [How to use and debug assembly unloadability in .NET Core](../../standard/assembly/unloadability-howto.md) article is a step-by-step tutorial. It shows how to load a .NET Core application, execute, and then unload it. The article also provides debugging tips.
+The [How to use and debug assembly unloadability in .NET Core](../../standard/assembly/unloadability.md) article is a step-by-step tutorial. It shows how to load a .NET Core application, execute, and then unload it. The article also provides debugging tips.

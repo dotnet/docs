@@ -2,8 +2,6 @@
 title: "Runtime Directive Policy Settings"
 ms.date: "03/30/2017"
 ms.assetid: cb52b1ef-47fd-4609-b69d-0586c818ac9e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Runtime Directive Policy Settings
 

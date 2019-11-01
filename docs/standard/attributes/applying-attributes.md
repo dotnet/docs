@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], attributes"
   - "attributes [.NET Framework], applying"
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Applying Attributes
 Use the following process to apply an attribute to an element of your code.  

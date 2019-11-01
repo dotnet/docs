@@ -21,9 +21,9 @@ gRPC is a modern RPC framework that is lightweight and highly performant. It use
 - While HTTP 1.1 is limited to processing one round-trip request/response at a time, HTTP/2 supports multiplexing, or multiple parallel requests over the same connection.
 - HTTP/2 supports full-duplex, or bidirectional communication, where both client and server and can communicate at the same time. The client can be uploading request data at the same time the server is sending back response data.
 - Streaming is built into HTTP/2 meaning that both requests and responses can asynchronously stream large data sets.
-- Combining gRPC and HTTP/2, performance dramatically increases. In [Windows Communication Foundation (WCF)](https://docs.microsoft.com/dotnet/framework/wcf/whats-wcf) parlance, gPRC performance meets and exceeds the speed and efficiency of [NetTCP bindings](https://docs.microsoft.com/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). However, unlike NetTCP, gRPC isn't constrained to Microsoft languages such as C# or VB.NET.
+- Combining gRPC and HTTP/2, performance dramatically increases. In [Windows Communication Foundation (WCF)](https://docs.microsoft.com/dotnet/framework/wcf/whats-wcf) parlance, gRPC performance meets and exceeds the speed and efficiency of [NetTCP bindings](https://docs.microsoft.com/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). However, unlike NetTCP, gRPC isn't constrained to Microsoft languages such as C# or VB.NET.
 
-gRPC is supported across most popular platforms, including Java, C#, Golang, and NodeJS. 
+gRPC is supported across most popular platforms, including Java, C#, Golang, and NodeJS.
 
 ## Protocol Buffers
 
@@ -39,7 +39,7 @@ The Microsoft .NET Core framework 3.0 includes tooling and native support for gR
 
 **Figure 4-20**. gRPC support in Visual Studio 2019
 
-.NET Core 3.0 seamlessly integrates gRPC into its framework, including endpoint routing, built-in IoC support, and logging. The open-source Kestrel web server fully supports HTTP/2 connections. 
+.NET Core 3.0 seamlessly integrates gRPC into its framework, including endpoint routing, built-in IoC support, and logging. The open-source Kestrel web server fully supports HTTP/2 connections.
 
 Figure 4-21 shows structure of a gRPC service in Visual Studio 2019. Note how the folder structure includes folders for the proto files and service code.
 
@@ -47,7 +47,7 @@ Figure 4-21 shows structure of a gRPC service in Visual Studio 2019. Note how th
 
 **Figure 4-21**. gRPC project in Visual Studio 2019
 
-## gPRC Usage
+## gRPC Usage
 
 gRPC is well suited for the following scenarios:
 
@@ -64,7 +64,7 @@ At the time of writing of this book, most browsers have limited support for gRPC
 
 Note in the previous figure how front-end traffic is invoked with HTTP while back-end microservice to microservice uses gRPC.
 
-Looking ahead, gRPC could play a major role in dethroning the dominance of REST for cloud-native systems. The performance benefits and ease of development are too good to pass up. However, make no mistake, REST will still be around for a long time. It still excels for publicly exposed APIs and for backward compatibility reasons. 
+Looking ahead, gRPC could play a major role in dethroning the dominance of REST for cloud-native systems. The performance benefits and ease of development are too good to pass up. However, make no mistake, REST will still be around for a long time. It still excels for publicly exposed APIs and for backward compatibility reasons.
 
 >[!div class="step-by-step"]
 >[Previous](service-to-service-communication.md)

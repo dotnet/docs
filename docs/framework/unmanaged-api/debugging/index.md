@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "debugging [.NET Framework], using the unmanaged API"
   - "native API reference [.NET Framework], debugging"
 ms.assetid: f0bf70be-42ef-4c46-8709-1694b5f99018
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Debugging (Unmanaged API Reference)
 The debugging API enables a debugger to debug code that runs in the common language runtime (CLR) environment. The code to be debugged can be any type of code that the CLR supports.  

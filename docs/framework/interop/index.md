@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, about interoperation"
   - "components [.NET Framework], interoperation with unmanaged code"
 ms.assetid: ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Interoperating with unmanaged code
 

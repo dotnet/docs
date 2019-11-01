@@ -71,7 +71,7 @@ This sample demonstrates how to perform transacted queued communication by using
   
  Running the sample yields the following output.  
   
-```  
+```console  
 Processing Purchase Order: 556b70be-31ee-4a3b-8df4-ed5e538015a4   
 Customer: somecustomer.com   
 OrderDetails   

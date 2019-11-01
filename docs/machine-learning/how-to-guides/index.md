@@ -18,7 +18,6 @@ In the How to section of the ML.NET Guide, you can find quick answers to common 
 
 ## Train the model
 
-* [Train a machine learning model with data that's not in a text file.](/dotnet/machine-learning/how-to-guides/load-data-ml-net)
 
 * [Train a machine learning model using cross-validation.](train-machine-learning-model-cross-validation-ml-net.md)
 
@@ -34,19 +33,16 @@ In the How to section of the ML.NET Guide, you can find quick answers to common 
 
 * [Use Generalized Additive Models and shape functions for model explainability.](use-gams-for-model-explainability.md)
 
-### Feature engineering
 
-* [Apply feature engineering for model training on categorical data.](prepare-data-ml-net.md)
 
-* [Apply feature engineering for model training on textual data with ML.NET.](prepare-data-ml-net.md)
 
 ## Run
 
 * [Inspect intermediate data values during ML.NET pipeline processing.](inspect-intermediate-data-ml-net.md)
 
-* [Operationalize a trained machine learning model in apps.](save-load-machine-learning-models-ml-net.md)
+* [Load a trained machine learning model.](save-load-machine-learning-models-ml-net.md)
 
-* [Use the PredictionFunction to make one prediction at a time.](machine-learning-model-predictions-ml-net.md)
+* [Make predictions with a trained model.](machine-learning-model-predictions-ml-net.md)
 
 ## Probabilistic (Infer.NET)
 

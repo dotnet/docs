@@ -157,14 +157,14 @@ methods and generate messages to the console and a file:
 
 ```csharp
 var fileOutput = new FileLogger("log.txt");
-Logger.WriteMessage += LogToConsole;
+Logger.WriteMessage += LogginMethods.LogToConsole;
 ```
 
 Later, even in the same application, you can remove one of the
 delegates without any other issues to the system:
 
 ```csharp
-Logger.WriteMessage -= LogToConsole;
+Logger.WriteMessage -= LoggingMethods.LogToConsole;
 ```
 
 ## Practices

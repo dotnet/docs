@@ -55,7 +55,7 @@ You can apply different styling to a WPF control to change its appearance and be
 
    `UserControl1` opens in the WPF Designer.
 
-1. In XAML view, insert the following XAML after the `<UserControl>` opening tag. This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../wpf/controls/styling-and-templating.md).
+1. In XAML view, insert the following XAML after the `<UserControl>` opening tag. This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
    ```xaml
    <UserControl.Resources>
@@ -136,4 +136,4 @@ You can apply different styling to a WPF control to change its appearance and be
 - [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [XAML Overview (WPF)](../../wpf/advanced/xaml-overview-wpf.md)
-- [Styling and Templating](../../wpf/controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

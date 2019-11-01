@@ -47,7 +47,7 @@ Time-critical functions can be derailed if the clock settings on two computers a
   
 1. Create a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) in the [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element section.  
   
-2. Create a [\<binding>](../../../../docs/framework/misc/binding.md) element and set the `name` attribute to an appropriate value. The following example sets it to `MaxClockSkewBinding`.  
+2. Create a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element and set the `name` attribute to an appropriate value. The following example sets it to `MaxClockSkewBinding`.  
   
 3. Add an encoding element. The example below adds a [\<textMessageEncoding>](../../../../docs/framework/configure-apps/file-schema/wcf/textmessageencoding.md).  
   

@@ -231,12 +231,9 @@
   items:
   - name: Versions and dependencies
     href: versions-and-dependencies.md
-  - name: Determine which .NET Framework versions are installed
+  - name: Installed versions
     href: how-to-determine-which-versions-are-installed.md
-    items:
-    - name: Minimum values of the Release DWORD for .NET Framework versions
-      href: minimum-release-dword.md
-  - name: Determine which .NET Framework updates are installed
+  - name: Installed updates
     href: how-to-determine-which-net-framework-updates-are-installed.md
 - name: Configure an app to support .NET Framework 4 or later
   href: how-to-configure-an-app-to-support-net-framework-4-or-4-5.md

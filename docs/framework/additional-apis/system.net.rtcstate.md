@@ -1,11 +1,11 @@
 ---
-title: "Connection Class (System.Net)"
+title: "RtcState Class (System.Net)"
 ms.date: "05/01/2017"
 ms.technology: "dotnet-networking"
 topic_type: 
   - "apiref"
 api_name: 
-  - "System.Net.Connection"
+  - "System.Net.RtcState"
 api_location: 
   - "System.dll"
 api_type: 
@@ -14,18 +14,18 @@ ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
 author: "mairaw"
 ms.author: "mairaw"
 ---
-# Connection Class
+# RtcState Class
 
-The `Connection` class parses server responses, queue requests, and pipeline requests.
+The `RtcState` class represents state date for a real-time communication (RTC) request.
 
 ## Syntax
   
 ```csharp  
-internal class Connection : PooledStream
+internal class RtcState
 ```
 
 > [!WARNING]
-> The `Connection` class is internal and is not meant to be used directly in your code.
+> The `RtcState` class is internal and is not meant to be used directly in your code.
 > 
 > Microsoft does not support the use of this class in a production application under any circumstance.
 
@@ -35,4 +35,4 @@ internal class Connection : PooledStream
 
 **Assembly:** System (in System.dll)
 
-**.NET Framework versions:** Available since 2.0.
+**.NET Framework versions:** Available since 4.5.

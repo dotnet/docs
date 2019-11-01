@@ -17,7 +17,7 @@ ms.date: 10/15/2019
 * DataFrame and SparkSQL for working with structured data
 * Spark Structured Streaming for working with streaming data
 * Spark SQL for writing queries with SQL syntax
-* Machine learning integration for faster training and prediction (i.e. use .NET for Apache Spark alongside [ML.NET](http://dot.net/ml))
+* Machine learning integration for faster training and prediction (i.e. use .NET for Apache Spark alongside [ML.NET](https://dot.net/ml))
 
 .NET for Apache Spark is compliant with .NET Standard, a formal specification of .NET APIs that are common across .NET implementations. This means you can use .NET for Apache Spark anywhere you write .NET code allowing you to reuse all the knowledge, skills, code, and libraries you already have as a .NET developer.
 

@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "errors [Windows Forms Designer]"
   - "design-time errors [Windows Forms Designer]"
 ms.assetid: ad408380-825a-46d8-9a4a-531b130b88ce
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Windows Forms Designer error page

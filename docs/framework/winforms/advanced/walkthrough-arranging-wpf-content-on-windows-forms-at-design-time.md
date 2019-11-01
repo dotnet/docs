@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "Windows Forms, anchoring and docking WPF content"
   - "interoperability [WPF]"
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Arrange WPF content on Windows Forms at design time

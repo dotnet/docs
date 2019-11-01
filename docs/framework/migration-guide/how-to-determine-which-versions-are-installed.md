@@ -33,10 +33,13 @@ The .NET Framework consists of two main components, which are versioned separate
 The registry contains a list of the .NET Framework versions installed on a computer. You can either use the Registry Editor to view the registry or query it with code:
 
 - Find newer .NET Framework versions (4.5 and later):
+
   - [Use the Registry Editor to find .NET Framework versions](#net_b)
   - [Use code to query the registry for .NET Framework versions](#net_d)
   - [Use PowerShell to query the registry for .NET Framework versions](#ps_a)
+
 - Find older .NET Framework versions (1 through 4):
+
   - [Use the Registry Editor to find .NET Framework versions](#net_a)
   - [Use code to query the registry for .NET Framework versions](#net_c)
 
@@ -93,7 +96,9 @@ To determine whether a *specific* version of the .NET Framework is installed on 
 
 #### Minimum version
 
-To determine whether a *minimum* version of the .NET Framework is present, use the smallest **RELEASE** DWORD value for that version from the previous table. For example, if your application runs under .NET Framework 4.8 or a later version, test for a **RELEASE** DWORD value that is *greater than or equal to* 528040. The minimum **RELEASE** DWORD values for each .NET Framework version are as follows:
+To determine whether a *minimum* version of the .NET Framework is present, use the smallest **RELEASE** DWORD value for that version from the previous table. (For convenience, the minimum values are also listed in the table that follows.)
+
+For example, if your application runs under .NET Framework 4.8 or a later version, test for a **RELEASE** DWORD value that is *greater than or equal to* 528040.
 
 |.NET Framework version|Minimum value of the Release DWORD|
 |--------------------------------|-------------|
@@ -145,7 +150,7 @@ The following examples check the value of the **Release** entry to determine whe
 (Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -ge 394802
 ```
 
-To check for a different minimum-required .NET Framework version, replace `394802` in the example with a value from the [.NET Framework version table](#version_table). To check for a minimum version, use the smallest value shown for that version.
+To check for a different minimum-required .NET Framework version, replace `394802` in the example with a value from the [.NET Framework version table](#version_table). Use the smallest value shown for that version.
 
 ## Find older .NET Framework versions (1 through 4)
 

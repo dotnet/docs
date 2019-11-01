@@ -19,7 +19,7 @@ ms.date: 10/31/2019
 
 <!-- markdownlint-disable MD025 -->
 
-# [.NET Core 3.0 and 3.1](#tab/netcore30)
+# [.NET Core 3.0](#tab/netcore30)
 
 ```dotnetcli
 dotnet run [-c|--configuration] [-f|--framework] [--force] [--interactive] [--launch-profile] [--no-build] [--no-dependencies]
@@ -27,7 +27,7 @@ dotnet run [-c|--configuration] [-f|--framework] [--force] [--interactive] [--la
 dotnet run [-h|--help]
 ```
 
-# [.NET Core 2.1 and 2.2](#tab/netcore21)
+# [.NET Core 2.1](#tab/netcore21)
 
 ```dotnetcli
 dotnet run [-c|--configuration] [-f|--framework] [--force] [--launch-profile] [--no-build] [--no-dependencies]
@@ -74,7 +74,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 ## Options
 
-# [.NET Core 3.0 and 3.1](#tab/netcore30)
+# [.NET Core 3.0](#tab/netcore30)
 
 `--`
 
@@ -82,7 +82,7 @@ Delimits arguments to `dotnet run` from arguments for the application being run.
 
 `-c|--configuration {Debug|Release}`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default value for most projects is `Debug`.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -133,7 +133,7 @@ Specifies the target runtime to restore packages for. For a list of Runtime Iden
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
-# [.NET Core 2.1 and 2.2](#tab/netcore21)
+# [.NET Core 2.1](#tab/netcore21)
 
 `--`
 
@@ -141,7 +141,7 @@ Delimits arguments to `dotnet run` from arguments for the application being run.
 
 `-c|--configuration {Debug|Release}`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default value for most projects is `Debug`.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -196,7 +196,7 @@ Delimits arguments to `dotnet run` from arguments for the application being run.
 
 `-c|--configuration {Debug|Release}`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default for most projects value is `Debug`.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -247,7 +247,7 @@ Delimits arguments to `dotnet run` from arguments for the application being run.
 
 `-c|--configuration {Debug|Release}`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default value for most projects is `Debug`.
 
 `-f|--framework <FRAMEWORK>`
 

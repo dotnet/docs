@@ -35,6 +35,7 @@ The `dotnet-trace` tool:
 ## Options
 
 - **`--version`**  
+
   Displays the version of the dotnet-counters utility.
 
 - **`-h|--help`**
@@ -145,7 +146,7 @@ To collect traces using `dotnet-trace`:
 
 - Get the process identifier (PID) of the .NET Core application to collect traces from.
 
-  - On Windows, for example, Task Manager or the `tasklist` command.
+  - On Windows, you can use Task Manager or the `tasklist` command, for example.
   - On Linux, for example, the `ps` command.
   - [dotnet-trace list-processes](#dotnet-trace-list-processes)
 
@@ -165,11 +166,11 @@ To collect traces using `dotnet-trace`:
   Recording trace 721.025 (KB)
   ```
 
-- Stop collection by pressing the `<Enter>` key. `dotnet-trace` will finish logging events to `trace.nettrace` file.
+- Stop collection by pressing the `<Enter>` key. `dotnet-trace` will finish logging events to the *trace.nettrace* file.
 
 ## View the trace captured from dotnet-trace
 
-On Windows, `.nettrace` files can be viewed on [PerfView](https://github.com/microsoft/perfview) for analysis: For traces collected on other platforms, the trace file can be moved to a Windows machine to be viewed on PerfView.
+On Windows, *.nettrace* files can be viewed on [PerfView](https://github.com/microsoft/perfview) for analysis: For traces collected on other platforms, the trace file can be moved to a Windows machine to be viewed on PerfView.
 
 On Linux, the trace can be viewed by changing the output format of `dotnet-trace` to `speedscope`. The output file format can be changed using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` produce a `speedscope` file. You can choose between `nettrace` (the default option) and `speedscope`. `Speedscope` files can be opened at <https://www.speedscope.app>.
 

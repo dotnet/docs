@@ -13,9 +13,6 @@ helpviewer_keywords:
 
 # How to write custom converters for JSON serialization in .NET
 
-> [!IMPORTANT]
-> The JSON serialization documentation is under construction. This article doesn't cover all scenarios. For more information, examine [System.Text.Json issues](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) in the dotnet/corefx repository on GitHub, especially those labeled [json-functionality-doc](https://github.com/dotnet/corefx/labels/json-functionality-doc).
-
 This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](system-text-json-how-to.md).
 
 A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters:
@@ -45,29 +42,41 @@ Some examples of types that can be handled by the basic pattern include:
 * `DateTime`
 * `Int32`
 
-The basic pattern creates a class at design time that can handle one type. The factory pattern creates a class that analyzes the type needed at runtime and dynamically creates a converter following the basic pattern.
+By following the basic pattern, you create a class at design time that can handle one type. When you follow the factory pattern, you create a class that analyzes the type needed at runtime and dynamically creates the appropriate converter.
 
 ### The basic pattern
 
 The following steps explain how to create a converter by following the basic pattern:
 
-* Create a class that derives from `JsonConverter<T>` where `T` is the type to be serialized and deserialized.
-* Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the `Utf8JsonReader` that is passed to the method to read the JSON.
-* Override the `Write` method to serialize the incoming object of type `T`. Use the `Utf8JsonWriter` that is passed to the method to write the JSON.
+* Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverter`1> where `T` is the type to be serialized and deserialized.
+* Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the <xref:System.Text.Json.Utf8JsonReader> that is passed to the method to read the JSON.
+* Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
 * Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
 
 ### The factory pattern
 
-The following steps explain how to create a converter by following the basic pattern:
+The following steps explain how to create a converter by following the factory pattern:
 
-* Create a class that derives from `JsonConverterFactory`.
+* Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverterFactory>.
 * Override the `CanConvert` method to return true when the type to convert is one that the converter can handle. For example, if the converter is for `List<T>` it might only handle `List<int>`, `List<string>`, and `List<DateTime>`. 
 * Create an inner class that is a converter following the basic pattern.
-* Override the CreateConverter method to return an instance of the inner converter class that handles the type to convert provided at runtime.
+* Override the `CreateConverter` method to return an instance of the inner converter class. Configure the inner converter to handle the type-to-convert that is provided at runtime.
 
-The factory method is required because in .NET there is no universal to convert an object to a string. And there is no universal way to parse a string and get an object of the desired type. Not every .NET type has a `Parse` method. For this reason, a converter for an open generic (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
+The factory method is required because in .NET there is no universal way to convert an object to a string. And there is no universal way to parse a string and get an object of the desired type. Not every .NET type has a `Parse` method. For this reason, a converter for an open generic (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
 
 The same is true of `Enum`: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes. 
+
+## Error handling
+
+If you need to throw an exception in error-handling code, consider throwing a <xref:System.Text.Json.JsonException> without a message. This exception type automatically creates a message that includes the path to the part of the JSON that caused the error. For example, the statement `throw new JsonException();` produces an error message like the following example:
+
+```text
+Unhandled exception. System.Text.Json.JsonException: 
+The JSON value could not be converted to System.Object. 
+Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
+```
+
+If you do provide a message (for example, `throw new JsonException("Error occurred)`, the exception still provides the path in the <xref:System.Text.Json.JsonException.Path> property.
 
 ### Sample basic converter
 
@@ -193,14 +202,23 @@ Here's code that creates a struct and applies the `[JsonConverter]` attribute to
 [JsonConverter(typeof(TemperatureConverter))]
 public struct Temperature
 {
-    public Temperature(int celsius)
+    public Temperature(int degrees, bool celsius)
     {
-        temp = celsius.ToString();
+        _degrees = degrees;
+        _isCelsius = celsius;
     }
-    private string temp;
-    public override string ToString()
+    private bool _isCelsius;
+    private int _degrees;
+    public int Degrees => _degrees;
+    public bool IsCelsius => _isCelsius; 
+    public bool IsFahrenheit => !_isCelsius;
+    public override string ToString() =>
+        $"{_degrees.ToString()}{(_isCelsius ? "C" : "F")}";
+    public static Temperature Parse(string input)
     {
-        return temp;
+        int degrees = int.Parse(input.Substring(0, input.Length - 1));
+        bool celsius = (input.Substring(input.Length - 1) == "C");
+        return new Temperature(degrees, celsius);
     }
 }
 ```
@@ -216,7 +234,7 @@ public class TemperatureConverter : JsonConverter<Temperature>
         JsonSerializerOptions options)
     {
         Debug.Assert(typeToConvert == typeof(Temperature));
-        return new Temperature(int.Parse(reader.GetString()));
+        return Temperature.Parse(reader.GetString());
     }
 
     public override void Write(

@@ -57,7 +57,7 @@ ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
 ## Alternatives to Using a Focus Visual Style  
  For situations where using a focus visual style is not appropriate, either because you are only styling single controls or because you want greater control over the control template, there are many other accessible properties and techniques that can create visual behavior in response to changes in focus.  
   
- Triggers, setters, and event setters are all discussed in detail in [Styling and Templating](../controls/styling-and-templating.md). Routed event handling is discussed in [Routed Events Overview](routed-events-overview.md).  
+ Triggers, setters, and event setters are all discussed in detail in [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md). Routed event handling is discussed in [Routed Events Overview](routed-events-overview.md).  
   
 ### IsKeyboardFocused  
  If you are specifically interested in keyboard focus, the <xref:System.Windows.UIElement.IsKeyboardFocused%2A> dependency property can be used for a property <xref:System.Windows.Trigger>. A property trigger in either a style or template is a more appropriate technique for defining a keyboard focus behavior that is very specifically for a single control, and which might not visually match the keyboard focus behavior for other controls.  
@@ -72,6 +72,6 @@ ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
 ## See also
 
 - <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Focus Overview](focus-overview.md)
 - [Input Overview](input-overview.md)

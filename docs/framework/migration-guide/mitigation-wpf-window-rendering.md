@@ -35,4 +35,4 @@ You can disable this change and revert to the previous behavior of clipping a WP
 
 ## See also
 
-- [Runtime Changes](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)

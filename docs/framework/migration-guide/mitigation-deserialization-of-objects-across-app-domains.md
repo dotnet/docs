@@ -42,4 +42,4 @@ In some cases, when an app uses two or more app domains with different applicati
   
 ## See also
 
-- [Runtime Changes](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)

@@ -36,4 +36,4 @@ In general, applications should depend on the recommended techniques for detecti
 
 ## See also
 
-- [Runtime Changes](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)

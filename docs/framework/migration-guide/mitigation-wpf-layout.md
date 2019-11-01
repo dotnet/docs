@@ -32,4 +32,4 @@ The layout of WPF controls can change slightly.
   
 ## See also
 
-- [Retargeting Changes](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)

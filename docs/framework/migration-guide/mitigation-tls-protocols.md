@@ -36,4 +36,4 @@ Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager?d
   
 ## See also
 
-- [Retargeting Changes](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)

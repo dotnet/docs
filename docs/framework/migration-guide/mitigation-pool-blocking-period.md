@@ -27,4 +27,4 @@ The connection pool blocking period has been removed for connections to Azure SQ
   
 ## See also
 
-- [Runtime Changes](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)

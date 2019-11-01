@@ -28,4 +28,4 @@ Starting with the .NET Framework 4.6, the <xref:System.Drawing.Icon.ToBitmap%2A?
   
 ## See also
 
-- [Retargeting Changes](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)

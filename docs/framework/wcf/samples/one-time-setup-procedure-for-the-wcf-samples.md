@@ -25,7 +25,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > [!WARNING]
     > If IIS is reinstalled, the following commands will need to be run again.
 
-    ```
+    ```console
     "%WINDIR%\Microsoft.Net\Framework\v4.0.30319\aspnet_regiis" –i –enable
     "%WINDIR%\Microsoft.Net\Framework\v4.0.30319\ServiceModelReg.exe" -r
     ```

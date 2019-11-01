@@ -111,7 +111,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 ### Additional resources
 
 - **Building Docker Images for .NET Core Applications** \
-  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](../../../core/docker/building-net-docker-images.md)
+  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 - **Build your own image**. In the official Docker documentation.\
   <https://docs.docker.com/engine/tutorials/dockerimages/>

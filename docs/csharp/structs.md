@@ -65,5 +65,5 @@ Ordinary value types cannot have a value of [null](language-reference/keywords/n
 
 ## See also
 
-- [Classes](classes.md)
+- [Classes](programming-guide/classes-and-structs/classes.md)
 - [Basic Types](basic-types.md)

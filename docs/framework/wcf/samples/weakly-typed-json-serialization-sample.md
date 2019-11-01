@@ -19,7 +19,7 @@ When serializing a user-defined type to a given wire format, or deserializing a 
   
  To deserialize this object, a WCF client must implement the following user-defined types.  
   
-```  
+```csharp  
 [DataContract]  
  public class MemberProfile  
  {  
@@ -54,7 +54,7 @@ When serializing a user-defined type to a given wire format, or deserializing a 
   
  The `JsonObject` type provided by this sample introduces a weakly-typed representation of the deserialized JSON object. `JsonObject` relies on the natural mapping between JSON objects and .NET Framework dictionaries, and the mapping between JSON arrays and .NET Framework arrays. The following code shows the `JsonObject` type.  
   
-```  
+```csharp  
 // Instantiation of JsonObject json omitted  
   
 string name = json["root"]["personal"]["name"];  
@@ -79,7 +79,7 @@ string[] favoriteBands = {
   
  To use the `JsonObject` type, the client operation contract must use <xref:System.ServiceModel.Channels.Message> as its return type.  
   
-```  
+```csharp  
 [ServiceContract]  
     interface IClientSideProfileService  
     {  
@@ -94,7 +94,7 @@ string[] favoriteBands = {
   
  The `JsonObject` is then instantiated as shown in the following code.  
   
-```  
+```csharp  
 // Code to instantiate IClientSideProfileService channel omitted…  
   
 // Make a request to the service and obtain the Json response  
@@ -108,7 +108,7 @@ JsonObject json = new JsonObject(reader);
   
  The program produces the following output:  
   
-```  
+```console  
 Service listening at http://localhost:8000/.  
 To view the JSON output from the sample, navigate to http://localhost:8000/GetMemberProfile  
 This is Paul's page. I am 23 years old and I am 1.7 meters tall.  

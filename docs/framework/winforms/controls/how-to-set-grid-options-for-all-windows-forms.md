@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "Windows Forms, grid options in designer"
   - "Windows Forms Designer"
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Set grid options for all Windows Forms

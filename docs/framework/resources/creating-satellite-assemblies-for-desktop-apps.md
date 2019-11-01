@@ -235,7 +235,7 @@ The following example uses a method in a .NET Framework class library to extract
 
     - To support the "ru-RU" or Russian (Russia) culture, create a resource file named *Strings.ru-RU.resx* or *Strings.ru-RU.txt* and store in it a single string named `Greeting` whose value is "Привет!".
 
-6. Use [Resgen.exe](../tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the *.resx* or *.txt file*s, but a *.resources* extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following command to compile the *.resx* files into *.resources* files:
+6. Use [Resgen.exe](../tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the *.resx* or *.txt* files, but a *.resources* extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following command to compile the *.resx* files into *.resources* files:
 
     ```console
     resgen filename

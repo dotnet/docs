@@ -1,5 +1,5 @@
 ---
-title: What is .NET for Apache Spark? 
+title: What is .NET for Apache Spark?
 description: Learn about .NET for Apache Spark, a free, open-source, and cross-platform big data analytics framework that takes Spark anywhere you write .NET code.
 author: mamccrea
 ms.topic: overview
@@ -34,7 +34,7 @@ You can learn about interop support for Spark language extensions from [the prop
 
 ## .NET for Apache Spark performance
 
-When compared against Python and Scala using the [TPC-H benchmark](http://www.tpc.org/tpch/), .NET for Apache Spark performs well in most cases and is 2x faster than Python when user-defined function performance is critical. There is an ongoing effort to improve and benchmark performance. 
+When compared against Python and Scala using the [TPC-H benchmark](http://www.tpc.org/tpch/), .NET for Apache Spark performs well in most cases and is 2x faster than Python when user-defined function performance is critical. There is an ongoing effort to improve and benchmark performance.
 
 To do your own benchmarking, see the benchmarks available on the [.NET for Apache Spark GitHub](https://github.com/dotnet/spark/tree/master/benchmark).
 

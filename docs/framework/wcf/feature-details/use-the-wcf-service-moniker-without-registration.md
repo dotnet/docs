@@ -21,7 +21,7 @@ To connect to and communicate with a Windows Communication Foundation (WCF) serv
 ```csharp
 using System.ServiceModel;  
   
-...  
+// ...
   
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Demo")]  
 public interface IAffiliate  

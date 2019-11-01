@@ -152,7 +152,7 @@ The conversion only takes place if the "/" characters are escaped (that is, the 
 
 #### XmlElement
 
-<xref:System.Xml.XmlElement> is serialized as is, with no wrapping. For example, data member "x" of type <xref:System.Xml.XmlElement> that contains \<abc/> is represented as follows.
+<xref:System.Xml.XmlElement> is serialized as is, with no wrapping. For example, data member "x" of type <xref:System.Xml.XmlElement> that contains \<abc/> is represented as follows:
 
 ```json
 {"x":"<abc/>"}

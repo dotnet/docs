@@ -21,5 +21,5 @@ The `ascending` contextual keyword is used in the [orderby clause](./orderby-cla
 ## See also
 
 - [C# Reference](../index.md)
-- [LINQ Query Expressions](../../programming-guide/linq-query-expressions/index.md)
+- [LINQ in C#](../../linq/index.md)
 - [descending](./descending.md)

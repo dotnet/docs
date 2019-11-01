@@ -2,8 +2,6 @@
 title: "ICorDebugVariableSymbol Interface"
 ms.date: "03/30/2017"
 ms.assetid: 0e58b85e-69bd-41ff-bedb-8cdc8be6a7a2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableSymbol Interface
 Retrieves the debug symbol information for a variable.  

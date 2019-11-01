@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 68e20e62-203d-46d8-bb91-8d3c61cfacc3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue::IsValid Method
 Gets a value that indicates whether the object represented by this ICorDebugHeapValue is valid.  

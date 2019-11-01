@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 450e350b-6a68-4634-a2a5-33f4dc33baf0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mapping the Object Hierarchy to XML Data
 When an XML document is in memory, the conceptual representation is a tree. For programming, you have an object hierarchy to access the nodes of the tree. The following example shows you how the XML content becomes nodes.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c7ba51a1-0dd5-4452-b471-232febe0f897
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssembly::EnumerateModules Method
 Gets an enumerator for the modules contained in the `ICorDebugAssembly`.  

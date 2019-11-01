@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7c0c92fe-8bd2-477f-b307-aca0143732ca
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugMDAFlags Enumeration
 Specifies the status of the thread on which the managed debugging assistant (MDA) is fired.  

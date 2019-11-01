@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions, compilation"
   - "regular expressions, engines"
 ms.assetid: 182ec76d-5a01-4d73-996c-0b0d14fcea18
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Compilation and Reuse in Regular Expressions
 You can optimize the performance of applications that make extensive use of regular expressions by understanding how the regular expression engine compiles expressions and by understanding how regular expressions are cached. This topic discusses both compilation and caching.  

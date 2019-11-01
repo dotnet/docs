@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "container tags, <probing> element"
   - "probing element"
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<probing> Element
 Specifies application base subdirectories for the common language runtime to search when loading assemblies.  

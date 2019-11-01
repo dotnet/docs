@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "gcConcurrent element"
   - "<gcConcurrent> element"
 ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<gcConcurrent> Element
 

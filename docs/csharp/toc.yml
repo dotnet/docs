@@ -1313,33 +1313,35 @@
       href: language-reference/keywords/index.md
     - name: Built-in types
       items:
-      - name: Value Types
+      - name: Value types
         items:
         - name: Features of value types
           href: language-reference/keywords/value-types.md
-        - name: bool
-          href: language-reference/keywords/bool.md
         - name: Integral numeric types
-          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer
+          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer, literal
           href: language-reference/builtin-types/integral-numeric-types.md
         - name: Floating-point numeric types
-          displayName: float, decimal, double, rational, real
+          displayName: float, decimal, double, rational, real, literal
           href: language-reference/builtin-types/floating-point-numeric-types.md
+        - name: Built-in numeric conversions
+          href: language-reference/builtin-types/numeric-conversions.md
+        - name: bool
+          href: language-reference/keywords/bool.md
         - name: char
           href: language-reference/keywords/char.md
         - name: enum
           href: language-reference/keywords/enum.md
         - name: struct
           href: language-reference/keywords/struct.md
-      - name: Reference Types
+      - name: Reference types
         items:
         - name: Features of reference types
           href: language-reference/keywords/reference-types.md
-        - name: class
-          href: language-reference/keywords/class.md
         - name: Built-in reference types
           displayName: object, delegate, dynamic, string
           href: language-reference/builtin-types/reference-types.md
+        - name: class
+          href: language-reference/keywords/class.md
         - name: interface
           href: language-reference/keywords/interface.md
       - name: void
@@ -1356,10 +1358,6 @@
           href: language-reference/keywords/value-types-table.md
         - name: Default values table
           href: language-reference/keywords/default-values-table.md
-        - name: Implicit numeric conversions table
-          href: language-reference/keywords/implicit-numeric-conversions-table.md
-        - name: Explicit numeric conversions table
-          href: language-reference/keywords/explicit-numeric-conversions-table.md
         - name: Formatting numeric results table
           href: language-reference/keywords/formatting-numeric-results-table.md
     - name: Modifiers
@@ -1581,15 +1579,16 @@
     items:
     - name: Overview
       href: language-reference/operators/index.md
+      displayName: operator precedence, operator associativity
     - name: Arithmetic operators
       href: language-reference/operators/arithmetic-operators.md
       displayName: ++, --, +, -, *, /, %, +=, -=, *=, /=, %=, checked, unchecked
     - name: Boolean logical operators
       href: language-reference/operators/boolean-logical-operators.md
-      displayName: "!, &&, ||, &, |, ^, &=, |=, ^="
+      displayName: "!, &&, ||, &, |, ^, &=, |=, ^=, AND, XOR, OR"
     - name: Bitwise and shift operators
       href: language-reference/operators/bitwise-and-shift-operators.md
-      displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>="
+      displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>=, AND, XOR, OR"
     - name: Equality operators
       href: language-reference/operators/equality-operators.md
       displayName: ==, !=
@@ -1601,16 +1600,16 @@
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
     - name: Type-testing and cast operators
       href: language-reference/operators/type-testing-and-cast.md
-      displayName: "is operator, is keyword, as operator, as keyword, typeof, (), conversion"
+      displayName: "is operator, is keyword, as operator, as keyword, typeof, (), explicit, conversion"
     - name: User-defined conversion operators
       href: language-reference/operators/user-defined-conversion-operators.md
       displayName: implicit, explicit
     - name: Pointer related operators
       href: language-reference/operators/pointer-related-operators.md
       displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
-    - name: "= operator"
+    - name: Assignment operators
       href: language-reference/operators/assignment-operator.md
-      displayName: "assignment, ref"
+      displayName: "=, ref, compound"
     - name: + and += operators
       href: language-reference/operators/addition-operator.md
       displayName: string concatenation, delegate combination, event subscription
@@ -1628,7 +1627,7 @@
       displayName: null-coalescing, assignment
     - name: => operator
       href: language-reference/operators/lambda-operator.md
-      displayName: lambda
+      displayName: lambda, expression body definition
     - name: ":: operator"
       href: language-reference/operators/namespace-alias-qualifier.md
       displayName: "namespace alias qualifier, global namespace"
@@ -1645,6 +1644,7 @@
       href: language-reference/operators/nameof.md
     - name: new operator
       href: language-reference/operators/new-operator.md
+      displayName: constructor
     - name: sizeof operator
       href: language-reference/operators/sizeof.md
     - name: stackalloc operator

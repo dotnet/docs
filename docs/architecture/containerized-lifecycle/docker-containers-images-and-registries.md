@@ -9,7 +9,7 @@ When using Docker, you create an app or service and package it and its dependenc
 
 To run the app or service, the app's image is instantiated to create a container, which will be running on the Docker host. Containers are initially tested in a development environment or PC.
 
-You store images in a registry, that acts as a library of images. You need a registry when deploying to production orchestrators. Docker maintains a public registry via [Docker Hub](https://hub.docker.com/); other vendors provide registries for different collections of images, including [Azure Container Registry](https://azure.microsoft.com/services/container-registry/). Alternatively, enterprises can have a private registry on-premises for their own Docker images.
+You store images in a registry that acts as a library of images. You need a registry when deploying to production orchestrators. Docker maintains a public registry via [Docker Hub](https://hub.docker.com/); other vendors provide registries for different collections of images, including [Azure Container Registry](https://azure.microsoft.com/services/container-registry/). Alternatively, enterprises can have a private registry on-premises for their own Docker images.
 
 Figure 1-4 shows how images and registries in Docker relate to other components. It also shows the multiple registry offerings from vendors.
 

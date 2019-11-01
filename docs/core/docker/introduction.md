@@ -35,7 +35,7 @@ The Microsoft Container Registry (MCR) is the official source of Microsoft-provi
 
 ### Dockerfile
 
-A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. For the most part, when you rebuild the image only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate to create a new image in the same manner you created it. While this allows you to distribute the *instructions* on how to create the image, the main way to distribute your image is to publish it to a registry.
+A **Dockerfile** is a file that defines a set of instructions that creates an image. Each instruction in the **Dockerfile** creates a layer in the image. For the most part, when you rebuild the image, only the layers that have changed are rebuilt. The **Dockerfile** can be distributed to others and allows them to recreate a new image in the same manner you created it. While this allows you to distribute the *instructions* on how to create the image, the main way to distribute your image is to publish it to a registry.
 
 ## .NET Core images
 
@@ -67,7 +67,7 @@ Store and manage container images across all types of Azure deployments.
 
 ## Next steps
 
-- [Learn how to containerize a .NET Core application.](build-docker-netcore-container.md)
+- [Learn how to containerize a .NET Core application.](build-container.md)
 - [Learn how to containerize an ASP.NET Core application.](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 - [Try the Learn ASP.NET Core Microservice tutorial.](https://dotnet.microsoft.com/learn/web/aspnet-microservice-tutorial/intro)
 - [Learn about Container Tools in Visual Studio](/visualstudio/containers/overview)

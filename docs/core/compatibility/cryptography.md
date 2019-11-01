@@ -2,8 +2,6 @@
 title: Cryptography breaking changes - .NET Core
 description: Lists the breaking cryptography-related changes in .NET Core.
 ms.date: "09/20/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Cryptography breaking changes
 

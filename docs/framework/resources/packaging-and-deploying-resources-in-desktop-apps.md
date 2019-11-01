@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "localizing resources"
   - "neutral cultures"
 ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Packaging and Deploying Resources in .NET Apps

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "names [.NET Framework], assemblies"
   - "assemblies [.NET Framework], names"
 ms.assetid: 009dae23-e1f6-4a64-9a9a-32e4c34802b0
-author: "rpetrusha"
-ms.author: "ronpet"
 dev_langs:
   - "csharp"
   - "vb"

@@ -9,7 +9,7 @@ You're probably reading this book because you're planning the development of new
 
 The adoption of new development paradigms must be taken with caution before starting a project, to assess the impact on your dev teams, your budget, or your infrastructure.
 
-Microsoft has been working in a rich guidance, sample applications, and a suite of e-books, that can help you make an informed decision, and guide your team through a successful development, deployment, and operations of your new applications.
+Microsoft has been working on rich guidance, sample applications, and a suite of e-books that can help you make an informed decision and guide your team through a successful development, deployment, and operations of your new applications.
 
 This book belongs to a Microsoft suite of guides that cover many of the needs and challenges you'll face during the process of developing new modern applications based on containers.
 

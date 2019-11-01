@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: ba28fe4e-5491-4670-bff7-7fde572d7593
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method
 

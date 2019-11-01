@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5d3ada6e-feea-47da-a7ed-b664107c137f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_PUB_ENUMPROCESS Enumeration
 Identifies the type of process to be enumerated.  

@@ -139,7 +139,7 @@ Where are the pages in the Blazor apps? Blazor doesn't define a separate file ex
 @page "/counter"
 ```
 
-Routing in Blazor is handled client-side, not on the server. As the user navigates in the browser, Blazor intercepts the navigation and then renders the component with the matching route. 
+Routing in Blazor is handled client-side, not on the server. As the user navigates in the browser, Blazor intercepts the navigation and then renders the component with the matching route.
 
 The component routes aren't currently inferred by the component's file location like they are with *.aspx* pages. This feature may be added in the future. Each route must be specified explicitly on the component. Storing routable components in a *Pages* folder has no special meaning and is purely a convention.
 

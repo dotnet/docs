@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "reflection emit, dynamic methods"
   - "dynamic methods"
 ms.assetid: 07d08a99-62c5-4254-bce2-2a75e55a18ab
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Define and Execute Dynamic Methods
 The following procedures show how to define and execute a simple dynamic method and a dynamic method bound to an instance of a class. For more information on dynamic methods, see the <xref:System.Reflection.Emit.DynamicMethod> class and [Reflection Emit Dynamic Method Scenarios](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sfk2s47t(v=vs.100)).  

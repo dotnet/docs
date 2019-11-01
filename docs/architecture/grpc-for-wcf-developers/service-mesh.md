@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # Service meshes
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 A service mesh is an infrastructure component that takes control of routing service requests within a network. Service meshes can handle all kinds of network-level concerns within a Kubernetes cluster, including:
 
 - Service discovery
@@ -39,9 +37,9 @@ Service meshes only apply to traffic within a cluster. For external clients, see
 
 There are three general-purpose service mesh implementations currently available for use with Kubernetes: Istio, Linkerd, and Consul Connect. All three provide request routing/proxying, traffic encryption, resilience, host-to-host authentication, and traffic control.
 
-Choosing a service mesh depends multiple factors: 
+Choosing a service mesh depends multiple factors:
 
-- The organization's specific requirements around costs, compliance, paid support plans, and so on. 
+- The organization's specific requirements around costs, compliance, paid support plans, and so on.
 - The nature of the cluster, its size, the number of services deployed, and the volume of traffic within the cluster network.
 - Ease of deploying and managing the mesh and using it with services.
 

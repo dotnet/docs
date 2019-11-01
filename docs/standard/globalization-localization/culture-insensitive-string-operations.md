@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "culture-sensitive string operations"
   - "culture-insensitive string operations"
 ms.assetid: e6e2bb94-a95d-44e2-b68c-cfdd1db77784
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Culture-insensitive string operations
 

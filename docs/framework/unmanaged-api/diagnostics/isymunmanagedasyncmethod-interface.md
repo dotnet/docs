@@ -2,8 +2,6 @@
 title: "ISymUnmanagedAsyncMethod Interface"
 ms.date: "03/30/2017"
 ms.assetid: f2de5224-fd91-45de-9e58-bc600c6d22f1
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedAsyncMethod Interface
 This interface is the reading complement to [ISymUnmanagedAsyncMethodPropertiesWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-interface.md).  

@@ -2,8 +2,6 @@
 title: "Mitigation: PNG Frames in Icon Objects"
 ms.date: "03/30/2017"
 ms.assetid: ca87fefb-7144-4b4e-8832-5a939adbb4b2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: PNG Frames in Icon Objects
 Starting with the .NET Framework 4.6, the <xref:System.Drawing.Icon.ToBitmap%2A?displayProperty=nameWithType> method successfully converts icons with PNG frames into <xref:System.Drawing.Bitmap> objects.  

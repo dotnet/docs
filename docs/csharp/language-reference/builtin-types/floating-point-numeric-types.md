@@ -1,7 +1,7 @@
 ---
 title: "Floating-point numeric types - C# reference"
 description: "Overview of the built-in C# floating-point types"
-ms.date: 10/18/2019
+ms.date: 10/22/2019
 f1_keywords:
   - "float"
   - "float_CSharpKeyword"
@@ -99,13 +99,7 @@ Console.WriteLine(m);  // output: 1500000
 
 ## Conversions
 
-There's an implicit conversion (called a *widening conversion*) from `float` to `double` because the range of `float` values is a proper subset of `double` and there is no loss of precision from `float` to `double`.
-
-You must use an explicit cast to convert one floating-point type to another floating-point type when an implicit conversion isn't defined from the source type to the destination type. This is called a *narrowing conversion*. The explicit case is required because the conversion can result in data loss. There's no implicit conversion between other floating-point types and the `decimal` type because the `decimal` type has greater precision than either `float` or `double`.
-
-For more information about implicit numeric conversions, see [Implicit Numeric Conversions Table](../keywords/implicit-numeric-conversions-table.md).
-
-For more information about explicit numeric conversions, see [Explicit Numeric Conversions Table](../keywords/explicit-numeric-conversions-table.md).
+There is only one implicit conversion between floating-point numeric types: from `float` to `double`. However, you can convert any floating-point type to any other floating-point type with the [explicit cast](../operators/type-testing-and-cast.md#cast-operator-). For more information, see [Built-in numeric conversions](numeric-conversions.md).
 
 ## C# language specification
 
@@ -118,10 +112,9 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [C# reference](../index.md)
-- [Integral types](integral-numeric-types.md)
 - [Built-in types table](../keywords/built-in-types-table.md)
-- [Numerics in .NET](../../../standard/numerics.md)
-- [Casting and Type Conversions](../../programming-guide/types/casting-and-type-conversions.md)
-- <xref:System.Numerics.Complex?displayProperty=nameWithType>
+- [Integral types](integral-numeric-types.md)
 - [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
+- [Numerics in .NET](../../../standard/numerics.md)
+- <xref:System.Numerics.Complex?displayProperty=nameWithType>

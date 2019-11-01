@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "64-bit applications [C++]"
   - "64-bit programming [C++]"
 ms.assetid: fd4026bc-2c3d-4b27-86dc-ec5e96018181
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # 64-bit Applications
 When you compile an application, you can specify that it should run on a Windows 64-bit operating system either as a native application or under WOW64 (Windows 32-bit on Windows 64-bit). WOW64 is a compatibility environment that enables a 32-bit application to run on a 64-bit system. WOW64 is included in all 64-bit versions of the Windows operating system.  
@@ -50,9 +48,9 @@ When you compile an application, you can specify that it should run on a Windows
   
 |Compiler|Compiler option|  
 |--------------|---------------------|  
-|Visual Basic|[/platform (Visual Basic)](../visual-basic/reference/command-line-compiler/platform.md)|  
-|Visual C#|[/platform (C# Compiler Options)](../csharp/language-reference/compiler-options/platform-compiler-option.md)|  
-|Visual C++|You can create platform-agnostic, Microsoft intermediate language (MSIL) applications by using **/clr:safe**. For more information, see [/clr (Common Language Runtime Compilation)](/cpp/build/reference/clr-common-language-runtime-compilation).<br /><br /> Visual C++ includes a separate compiler for each 64-bit operating system. For more information about how to use Visual C++ to create native applications that run on a 64-bit Windows operating system, see [64-bit Programming](/cpp/build/configuring-programs-for-64-bit-visual-cpp).|  
+|Visual Basic|[-platform (Visual Basic)](../visual-basic/reference/command-line-compiler/platform.md)|  
+|Visual C#|[-platform (C# Compiler Options)](../csharp/language-reference/compiler-options/platform-compiler-option.md)|  
+|Visual C++|You can create platform-agnostic, Microsoft intermediate language (MSIL) applications by using **/clr:safe**. For more information, see [-clr (Common Language Runtime Compilation)](/cpp/build/reference/clr-common-language-runtime-compilation).<br /><br /> Visual C++ includes a separate compiler for each 64-bit operating system. For more information about how to use Visual C++ to create native applications that run on a 64-bit Windows operating system, see [64-bit Programming](/cpp/build/configuring-programs-for-64-bit-visual-cpp).|  
   
 ## Determining the Status of an .exe File or .dll File  
  To determine whether an .exe file or .dll file is meant to run only on a specific platform or under WOW64, use [CorFlags.exe (CorFlags Conversion Tool)](./tools/corflags-exe-corflags-conversion-tool.md) with no options. You can also use CorFlags.exe to change the platform status of an .exe file or .dll file. The CLR header of a Visual Studio assembly has the major runtime version number set to 2 and the minor runtime version number set to 5. Applications that have the minor runtime version set to 0 are treated as legacy applications and are always executed under WOW64.  

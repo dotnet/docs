@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "parallel foreach loop, how to cancel"
   - "parallel for loops, how to cancel"
 ms.assetid: 9d19b591-ea95-4418-8ea7-b6266af9905b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Cancel a Parallel.For or ForEach Loop
 The <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWithType> methods support cancellation through the use of cancellation tokens. For more information about cancellation in general, see [Cancellation](../../../docs/standard/threading/cancellation-in-managed-threads.md). In a parallel loop, you supply the <xref:System.Threading.CancellationToken> to the method in the <xref:System.Threading.Tasks.ParallelOptions> parameter and then enclose the parallel call in a try-catch block.  

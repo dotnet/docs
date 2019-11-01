@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: ff25f20a-6ca2-467b-9e52-5cf439f5028e
 ---
 # -highentropyva (Visual Basic)
-Indicates whether a 64-bit executable or an executable that's marked by the [/platform:anycpu](../../../visual-basic/reference/command-line-compiler/platform.md) compiler option supports high entropy Address Space Layout Randomization (ASLR).  
+Indicates whether a 64-bit executable or an executable that's marked by the [-platform:anycpu](../../../visual-basic/reference/command-line-compiler/platform.md) compiler option supports high entropy Address Space Layout Randomization (ASLR).  
   
 ## Syntax  
   

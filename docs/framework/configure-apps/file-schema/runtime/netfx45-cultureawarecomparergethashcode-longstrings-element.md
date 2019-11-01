@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "GetHashCode method"
   - "hash codes, calculating"
 ms.assetid: 3a5f38d1-ebc8-44de-aaeb-2929f6e6b48f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<NetFx45_CultureAwareComparerGetHashCode_LongStrings> Element
 

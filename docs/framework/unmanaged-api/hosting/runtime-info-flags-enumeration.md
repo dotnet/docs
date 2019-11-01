@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: adba37be-f775-4cdb-8919-5746ce694f33
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # RUNTIME_INFO_FLAGS Enumeration
 Contains values that indicate what information about the common language runtime (CLR) should be returned.  

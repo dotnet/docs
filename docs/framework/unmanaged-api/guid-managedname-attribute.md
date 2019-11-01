@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 11e18095-e444-47bc-aff6-b887ac5dc01e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GUID_ManagedName Attribute
 Defines a custom interface attribute that specifies the managed namespace name for a component object model (COM) library.  

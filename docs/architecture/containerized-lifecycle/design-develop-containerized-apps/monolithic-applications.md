@@ -55,7 +55,7 @@ Because containers are inherently immutable, by design, you never need to worry 
 
 Although monolithic apps can benefit from Docker, we're touching on only the tips of the benefits. The larger benefits of managing containers come from deploying with container orchestrators that manage the various instances and life cycle of each container instance. Breaking up the monolithic application into subsystems that can be scaled, developed, and deployed individually is your entry point into the realm of microservices.
 
-To learn about how to “lift and shift” monolithic applications with containers and how you can modernize your applications, you can read this additional Microsoft guide, [Modernize existing .NET applications with Azure cloud and Windows Containers](../../modernize-with-azure-containers/index.md), that you can also download as PDF from <https://aka.ms/LiftAndShiftWithContainersEbook>.
+To learn about how to “lift and shift” monolithic applications with containers and how you can modernize your applications, you can read this additional Microsoft guide, [Modernize existing .NET applications with Azure cloud and Windows Containers](../../modernize-with-azure-containers/index.md), which you can also download as PDF from <https://aka.ms/LiftAndShiftWithContainersEbook>.
 
 ## Publish a single Docker container app to Azure App Service
 

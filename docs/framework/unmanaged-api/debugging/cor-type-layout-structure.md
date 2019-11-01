@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 43a7addd-f25a-4049-9907-abec3eb17af2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_TYPE_LAYOUT Structure
 Provides information about the layout of an object in memory.  

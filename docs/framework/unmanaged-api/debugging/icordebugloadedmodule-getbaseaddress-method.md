@@ -2,8 +2,6 @@
 title: "ICorDebugLoadedModule::GetBaseAddress Method"
 ms.date: "03/30/2017"
 ms.assetid: 7c036772-d58a-47f1-a5fa-31779898ef0d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugLoadedModule::GetBaseAddress Method
 Gets the base address of the loaded module.  

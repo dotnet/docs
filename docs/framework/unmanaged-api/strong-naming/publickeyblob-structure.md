@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b9240712-829c-4c8d-9a09-a6e7aa63f63a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PublicKeyBlob Structure
 Represents, in binary format, the public key of a public/private key pair.  

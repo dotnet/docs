@@ -70,7 +70,7 @@ Many COM methods allow for variation in argument types and return type by design
 
 |Title|Description|
 |-----------|-----------------|
-|[dynamic](../../language-reference/keywords/dynamic.md)|Describes the usage of the `dynamic` keyword.|
+|[dynamic](../../language-reference/builtin-types/reference-types.md)|Describes the usage of the `dynamic` keyword.|
 |[Dynamic Language Runtime Overview](../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md)|Provides an overview of the DLR, which is a runtime environment that adds a set of services for dynamic languages to the common language runtime (CLR).|
 |[Walkthrough: Creating and Using Dynamic Objects](walkthrough-creating-and-using-dynamic-objects.md)|Provides step-by-step instructions for creating a custom dynamic object and for creating a project that accesses an `IronPython` library.|
 |[How to: Access Office Interop Objects by Using Visual C# Features](../interop/how-to-access-office-onterop-objects.md)|Demonstrates how to create a project that uses named and optional arguments, the `dynamic` type, and other enhancements that simplify access to Office API objects.|

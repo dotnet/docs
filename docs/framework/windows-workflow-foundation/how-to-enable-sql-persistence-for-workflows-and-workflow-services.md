@@ -3,7 +3,6 @@ title: "How to: Enable SQL Persistence for Workflows and Workflow Services"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
-  - "vb"
 ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
 ---
 
@@ -135,9 +134,8 @@ The `SqlWorkflowInstanceStoreBehavior`, a service behavior that allows you to co
                     instanceCompletionAction="DeleteAll | DeleteNothing"
                     instanceLockedExceptionAction="NoRetry | BasicRetry |AggressiveRetry"
                     hostLockRenewalPeriod="00:00:30"
-                    runnableInstancesDetectionPeriod="00:00:05">
+                    runnableInstancesDetectionPeriod="00:00:05" />
 
-        <sqlWorkflowInstanceStore/>
     </behavior>
 </serviceBehaviors>
 ```
@@ -167,6 +165,6 @@ The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]
                     <add name="sqlWorkflowInstanceStore" type="System.Activities.DurableInstancing.SqlWorkflowInstanceStoreElement, System.Activities.DurableInstancing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
                 </behaviorExtensions>
             </extensions>
-        <system.serviceModel>
-    <configuration>
+        </system.serviceModel>
+    </configuration>
     ```

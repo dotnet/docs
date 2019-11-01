@@ -241,7 +241,7 @@ The following example uses a method in a .NET Framework class library to extract
     resgen filename
     ```
 
-    where *filename* is the optional path, file name, and extension of the *.resx* or text file.
+    Where *filename* is the optional path, file name, and extension of the *.resx* or text file.
 
 7. Compile the following source code for *StringLibrary.vb* or *StringLibrary.cs* along with the resources for the default culture into a delay signed library assembly named *StringLibrary.dll*:
 

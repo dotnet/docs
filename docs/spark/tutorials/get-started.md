@@ -37,37 +37,39 @@ If the command runs and prints out information about how to use dotnet, can move
 
 Install [Java 8.1](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
-   Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine. Then, use the command `java` to verify the installation.
+Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine. Then, use the command `java` to verify the installation.
    
-   ![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png?v=6BbJHoNyDO-PyYVciImr5wzh2AW_YHNcyb3p093AwPA)
+![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png?v=6BbJHoNyDO-PyYVciImr5wzh2AW_YHNcyb3p093AwPA)
 
 ### 3. Install 7-zip
 
 Apache Spark is downloaded as a compressed .tgz file. Use an extraction program, like 7-zip, to extract the file.
 
-   * Visit [7-Zip downloads](https://www.7-zip.org/).
-   * In the first table on the page, select the 32-bit x86 or 64-bit x64 download, depending on your operating system.
-   * When the download completes, run the installer.
+* Visit [7-Zip downloads](https://www.7-zip.org/).
+* In the first table on the page, select the 32-bit x86 or 64-bit x64 download, depending on your operating system.
+* When the download completes, run the installer.
    
-      ![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png?v=W6qWtFC1tTMKv3YGXz7lBa9F3M22uWyTvkMmunyroNk)
+![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png?v=W6qWtFC1tTMKv3YGXz7lBa9F3M22uWyTvkMmunyroNk)
 
 ### 4. Install Apache Spark
 
 [Download and install Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz). Then extract the **.tar** file and the Apache Spark files.
 
 To extract the nested **.tar** file:
-   * Locate the **spark-2.4.1-bin-hadoop2.7.tgz** file that you downloaded.
-   * Right click on the file and select **7-Zip -> Extract here**.
-   * **spark-2.4.1-bin-hadoop2.7.tar** is created alongside the **.tgz** file you downloaded.
+
+* Locate the **spark-2.4.1-bin-hadoop2.7.tgz** file that you downloaded.
+* Right click on the file and select **7-Zip -> Extract here**.
+* **spark-2.4.1-bin-hadoop2.7.tar** is created alongside the **.tgz** file you downloaded.
 
 To extract the Apache Spark files:
-   * Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip -> Extract files...**
-   * Enter **C:\bin** in the **Extract to** field.
-   * Uncheck the checkbox below the **Extract to** field.
-   * Select **OK**.
-   * The Apache Spark files are extracted to C:\bin\spark-2.4.1-bin-hadoop2.7\
+
+* Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip -> Extract files...**
+* Enter **C:\bin** in the **Extract to** field.
+* Uncheck the checkbox below the **Extract to** field.
+* Select **OK**.
+* The Apache Spark files are extracted to C:\bin\spark-2.4.1-bin-hadoop2.7\
       
-      ![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
+![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
     
 Run the following commands to set the environment variables used to locate Apache Spark:
 
@@ -87,13 +89,14 @@ If you receive a `'spark-submit' is not recognized as an internal or external co
 Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub. For example if you're on a Windows machine and plan to use .NET Core, [download the Windows x64 netcoreapp2.1 release](https://github.com/dotnet/spark/releases/download/v0.5.0/Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip).
 
 To extract the Microsoft.Spark.Worker:
-  * Locate the **Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip** file that you downloaded.
-  * Right click and select **7-Zip -> Extract files...**.
-  * Enter **C:\bin** in the **Extract to** field.
-  * Uncheck the checkbox below the **Extract to** field.
-  * Select **OK**.
+
+* Locate the **Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip** file that you downloaded.
+* Right click and select **7-Zip -> Extract files...**.
+* Enter **C:\bin** in the **Extract to** field.
+* Uncheck the checkbox below the **Extract to** field.
+* Select **OK**.
   
-     ![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png?v=jwCyum9mL0mGIi4V5zC7yuvLfcj1_nL-QFFD8TClhZk)
+![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png?v=jwCyum9mL0mGIi4V5zC7yuvLfcj1_nL-QFFD8TClhZk)
 
 ### 6. Install WinUtils
 

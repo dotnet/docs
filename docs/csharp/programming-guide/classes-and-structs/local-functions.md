@@ -44,7 +44,7 @@ Unlike a method definition, a local function definition cannot include the follo
 - The [static](../../language-reference/keywords/static.md) keyword. Including the `static` keyword generates compiler error CS0106, "The modifier 'static' is not valid for this item."
 
   > [!NOTE]
-  > Starting with C# 8, `static` local functions are valid. A `static` local function wouldn't be able to access variables from parent method or instance fields.
+  > Starting with C# 8.0, `static` local functions are valid. A `static` local function cannot access variables from the containing method or instance fields.
 
 In addition, attributes can't be applied to the local function or to its parameters and type parameters. 
  

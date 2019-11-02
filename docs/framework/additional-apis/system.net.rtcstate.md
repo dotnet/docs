@@ -1,6 +1,6 @@
 ---
 title: "RtcState Class (System.Net)"
-ms.date: "05/01/2017"
+ms.date: "11/01/2019"
 ms.technology: "dotnet-networking"
 topic_type: 
   - "apiref"
@@ -16,7 +16,7 @@ ms.author: "mairaw"
 ---
 # RtcState Class
 
-The `RtcState` class represents state date for a real-time communication (RTC) request.
+The `RtcState` class represents state data for a real-time communication (RTC) request.
 
 ## Syntax
   

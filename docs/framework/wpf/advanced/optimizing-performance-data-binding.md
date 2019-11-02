@@ -76,5 +76,5 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
 - [Application Resources](optimizing-performance-application-resources.md)
 - [Text](optimizing-performance-text.md)
 - [Other Performance Recommendations](optimizing-performance-other-recommendations.md)
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Walkthrough: Caching Application Data in a WPF Application](walkthrough-caching-application-data-in-a-wpf-application.md)

@@ -188,7 +188,7 @@ public class OrderStatusService : IOrderStatus
   
  The service displays the purchase order information and indicates it is sending back the order status to the order status queue.  
   
-```  
+```console  
 The service is ready.  
 Press <ENTER> to terminate service.  
   
@@ -205,7 +205,7 @@ Sending back order status information
   
  The client displays the order status information sent by the service.  
   
-```  
+```console  
 Press <ENTER> to terminate client.  
 Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending  
 ```  

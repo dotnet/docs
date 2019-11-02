@@ -29,4 +29,4 @@ The topics in this section describe how to use Windows Presentation Foundation (
  <xref:System.Windows.SystemFonts>  
   
 ## Related Sections  
- [XAML Resources](xaml-resources.md)
+ [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)

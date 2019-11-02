@@ -23,7 +23,7 @@ This topic discusses the different ways you can declare a binding.
 
 Before reading this topic, it is important that you are familiar with the concept and usage of markup extensions. For more information about markup extensions, see [Markup Extensions and WPF XAML](../advanced/markup-extensions-and-wpf-xaml.md).
 
-This topic does not cover data binding concepts. For a discussion of data binding concepts, see [Data Binding Overview](data-binding-overview.md).
+This topic does not cover data binding concepts. For a discussion of data binding concepts, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 <a name="BindinginXAML"></a>
 
@@ -136,7 +136,7 @@ The default behavior is as follows if not specified in the declaration.
 
 ## See also
 
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)
 - [Data Binding](../advanced/optimizing-performance-data-binding.md)
 - [PropertyPath XAML Syntax](../advanced/propertypath-xaml-syntax.md)

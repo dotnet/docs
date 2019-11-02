@@ -63,5 +63,5 @@ Specifies which [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md
 
 - <xref:System.Windows.Markup.XamlReader>
 - [PresentationOptions:Freeze Attribute](presentationoptions-freeze-attribute.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Documents in WPF](documents-in-wpf.md)

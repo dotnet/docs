@@ -41,7 +41,7 @@ When implementing the Invoke control pattern, note the following guidelines and 
 > [!NOTE]
 > This implementation is considered an accessibility issue if the control can be invoked only as a result of a mouse-related side effect.
 
-- Invoking a control is different from selecting an item. However, depending on the control, invoking it may cause the item to become selected as a side-effect. For example, invoking a [!INCLUDE[TLA#tla_word](../../../includes/tlasharptla-word-md.md)] document list item in the My Documents folder both selects the item and opens the document.
+- Invoking a control is different from selecting an item. However, depending on the control, invoking it may cause the item to become selected as a side-effect. For example, invoking a Microsoft Word document list item in the My Documents folder both selects the item and opens the document.
 
 - An element can disappear from the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree immediately upon being invoked. Requesting information from the element provided by the event callback may fail as a result. Pre-fetching cached information is the recommended workaround.
 

@@ -6,13 +6,11 @@ ms.date: 10/21/2019
 ---
 # Cloud-native data patterns
 
-As we've seen, a key pillar of a cloud-native system is a microservice-based architecture. Microservices favor small, independent data stores scoped to each service. While isolating data can increase agility, performance, and scalability, it also presents many challenges. In this section, we discuss these challenges and present patterns and best practices to help overcome them.  
+As we've seen, a key pillar of a cloud-native system is a microservice-based architecture. Microservices favor small, independent data stores scoped to each service. While isolating data can increase agility, performance, and scalability, it also presents many challenges. In this section, we discuss these challenges and present patterns and practices to help overcome them.  
 
 ## Cross-service queries
 
-While microservices are independent and focus on specific functional capabilities, like inventory, shipping, or ordering, they often require integration with other microservices to execute user operations. Typically the integration involves one microservice *querying* another for data. For these scenarios, how does a microservice *query* data that is owned by another microservice?
-
-Figure 5-4 shows the scenario.
+While microservices are independent and focus on specific functional capabilities, like inventory, shipping, or ordering, they often require integration with other microservices to execute user operations. Typically the integration involves one microservice *querying* another for data. Figure 5-4 shows the scenario.
 
 ![Querying across microservices](./media/cross-service-query.png)
 
@@ -20,17 +18,17 @@ Figure 5-4 shows the scenario.
 
 In the preceding figure, we see a shopping basket microservice that adds an item to a user's shopping basket. While the data store for this microservice contains basket and lineItem data, it doesn't maintain product or pricing data. Instead, those data items are found in the catalog and pricing microservices. This presents a problem. How can the shopping basket microservice add a product to the user's shopping basket when it doesn't have product nor pricing data in its database? 
 
-One option discussed in Chapter 4 is a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said direct HTTP calls couple microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages back and forth across microservices, but doing so could block an operation that needs a data query response to complete.
+One option discussed in Chapter 4 is a direct HTTP call from the shopping basket to the catalog and pricing microservices. However, we said direct HTTP calls *couple* microservices together, reducing their autonomy and diminishing their architectural benefits. We could also send asynchronous messages back and forth across microservices, but doing so could block an operation that needs a data query response to complete.
 
-As you can see, querying data across microservices is complex. A common approach to this problem that removes cross-service dependencies is the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
+As you can see, querying data across microservices is complex. A widely accepted pattern for removing cross-service dependencies is the [Materialized View Pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), shown in Figure 5-5.
 
 ![Materialized view pattern](./media/materialized-view-pattern.png)
 
 **Figure5-5**. Materialized View Pattern
 
-With this pattern, you place a local data table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data needed from the product and pricing microservices. Copying the data into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve service response time and reliability. Additionally, you make the system more resilient by separating data across multiple services. If one service should become unavailable, it will not directly impact other services. Other services can continue operating with data from their own store. 
+With this pattern, you place a local data table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data needed from the product and pricing microservices. Copying the data directly into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve the service's response time and reliability. Additionally, having its own copy of the data makes the shopping basket service more resilient. If catalog service should become unavailable, it wouldn't directly impact the shopping basket service. The shopping basket can continue operating with the data from its own store. 
 
-The catch with this approach is you now have duplicate data in your system. In cloud-native systems, duplicate data isn't considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and is a widely accepted practice. However, one and only one system can be the owner of a dataset.  You'll need to synchronize the read models when the system of record is updated. This is typically done by implementing asynchronous messaging with a publish/subscribe pattern.
+The catch with this approach is you now have duplicate data in your system. With cloud-native systems, however, duplicate data is an established practice and not considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern). However, one and only one system can be the owner of a dataset. You'll need to synchronize the read models when the system of record is updated. This is typically done by implementing asynchronous messaging with a publish/subscribe pattern, as shown above in Figure 5.5
 
 ## Transactional support
 

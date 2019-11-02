@@ -1,10 +1,10 @@
 ---
 title: Get started with .NET for Apache Spark
 description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows.
-ms.date: 06/27/2019
+ms.date: 11/04/2019
 ms.topic: tutorial
 ms.custom: mvc
-#Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
+# Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
 ---
 
 # Tutorial: Get started with .NET for Apache Spark
@@ -21,55 +21,55 @@ In this tutorial, you learn how to:
 
 ## Prepare your environment
 
-Before you begin writing your app, you need to setup some prerequisite dependencies. If you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, follow the following steps.
+Before you begin writing your app, you need to setup some prerequisite dependencies. If you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, do the following steps.
 
 ### 1. Install .NET
 
-To start building .NET apps, you just need to download and install the .NET SDK (Software Development Kit).
+To start building .NET apps, you need to download and install the .NET SDK (Software Development Kit).
 
 Download and install the [.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0). Installing the SDK adds the `dotnet` toolchain to your PATH. 
 
-Once you've installed, open a new command prompt and run `dotnet`.
+Once you've installed the .NET Core SDK, open a new command prompt and run `dotnet`.
 
-If the command runs, printing out information about how to use dotnet, you're good to go. If you receive a `'dotnet' is not recognized as an internal or external command` error, make sure you opened a **new** command prompt. 
+If the command runs and prints out information about how to use dotnet, can move to the next step. If you receive a `'dotnet' is not recognized as an internal or external command` error, make sure you opened a **new** command prompt before running the command. 
 
 ### 2. Install Java
 
 Install [Java 8.1](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
-   * Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine.
-    
+   Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine. Then, use the command `java` to verify the installation.
+   
    ![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png?v=6BbJHoNyDO-PyYVciImr5wzh2AW_YHNcyb3p093AwPA)
-    
-   * Use the command `java` to verify the installation.
 
 ### 3. Install 7-zip
 
-Apache Spark is downloaded as a compressed .tgz file. You'll need 7-zip to extract the file. If you already have an alternative extraction program installed, you can use that instead.
+Apache Spark is downloaded as a compressed .tgz file. Use an extraction program, like 7-zip, to extract the file.
 
    * Visit [7-Zip downloads](https://www.7-zip.org/).
-   * In the first table on the page, select either the 32-bit x86 or 64-bit x64 download, depending on your operating system.
+   * In the first table on the page, select the 32-bit x86 or 64-bit x64 download, depending on your operating system.
    * When the download completes, run the installer.
-    
-   ![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png?v=W6qWtFC1tTMKv3YGXz7lBa9F3M22uWyTvkMmunyroNk)
+   
+      ![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png?v=W6qWtFC1tTMKv3YGXz7lBa9F3M22uWyTvkMmunyroNk)
 
 ### 4. Install Apache Spark
 
-   * [Download and install Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz).
-   * Extract the nested **.tar** file:
-      * Locate the **spark-2.4.1-bin-hadoop2.7.tgz** file that you downloaded.
-      * Right click on the file and select **7-Zip -> Extract here**.
-      * **spark-2.4.1-bin-hadoop2.7.tar** is created alongside the **.tgz** file you downloaded.
-   * Extract Apache Spark files:
-      * Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip -> Extract files...**
-      * Enter **C:\bin** in the **Extract to** field.
-      * Uncheck the checkbox below the **Extract to** field.
-      * Click **OK**.
-      * The Apache Spark files are extracted to C:\bin\spark-2.4.1-bin-hadoop2.7\
+[Download and install Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz). Then extract the **.tar** file and the Apache Spark files.
+
+To extract the nested **.tar** file:
+   * Locate the **spark-2.4.1-bin-hadoop2.7.tgz** file that you downloaded.
+   * Right click on the file and select **7-Zip -> Extract here**.
+   * **spark-2.4.1-bin-hadoop2.7.tar** is created alongside the **.tgz** file you downloaded.
+
+To extract the Apache Spark files:
+   * Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip -> Extract files...**
+   * Enter **C:\bin** in the **Extract to** field.
+   * Uncheck the checkbox below the **Extract to** field.
+   * Select **OK**.
+   * The Apache Spark files are extracted to C:\bin\spark-2.4.1-bin-hadoop2.7\
       
-![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
-      
-You need to run a few commands to set environment variables used to locate Apache Spark:
+      ![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
+    
+Run the following commands to set the environment variables used to locate Apache Spark:
 
 `setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\`
@@ -78,33 +78,33 @@ Once you've installed everything and set your environment variables, open a **ne
 
 `%SPARK_HOME%\bin\spark-submit --version`
 
-If the command runs, printing out version information, you're good to go.
+If the command runs and prints version information, you can move to the next step.
 
 If you receive a `'spark-submit' is not recognized as an internal or external command` error, make sure you opened a **new** command prompt.
 
 ### 5. Install .NET for Apache Spark
 
-  * Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub. For example if you're on a Windows machine and planning to use .NET Core, [download the Windows x64 netcoreapp2.1 release](https://github.com/dotnet/spark/releases/download/v0.5.0/Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip).
+Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub. For example if you're on a Windows machine and plan to use .NET Core, [download the Windows x64 netcoreapp2.1 release](https://github.com/dotnet/spark/releases/download/v0.5.0/Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip).
+
+To extract the Microsoft.Spark.Worker:
   * Locate the **Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip** file that you downloaded.
-  * Right click and select **7-Zip -> Extract files...**
+  * Right click and select **7-Zip -> Extract files...**.
   * Enter **C:\bin** in the **Extract to** field.
   * Uncheck the checkbox below the **Extract to** field.
-  * Click **OK**.
+  * Select **OK**.
   
-![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png?v=jwCyum9mL0mGIi4V5zC7yuvLfcj1_nL-QFFD8TClhZk)
+     ![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png?v=jwCyum9mL0mGIi4V5zC7yuvLfcj1_nL-QFFD8TClhZk)
 
 ### 6. Install WinUtils
 
-.NET for Apache Spark requires WinUtils to be installed alongside Apache Spark.
+.NET for Apache Spark requires WinUtils to be installed alongside Apache Spark. [Download winutils.exe](https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe). Then, copy WinUtils into **C:\bin\spark-2.4.1-bin-hadoop2.7\bin**.
 
-  * [Download winutils.exe](https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe)
-  * Once **winutils.exe** downloads, copy it into **C:\bin\spark-2.4.1-bin-hadoop2.7\bin**.
-
-**Note:** If you are using a different version of Hadoop (which is annotated at the end of your Spark install folder name), you'll need to [select a version of WinUitls](https://github.com/steveloughran/winutils) compatible with your version of Hadoop. 
+> [!NOTE]
+> If you are using a different version of Hadoop, which is annotated at the end of your Spark install folder name, [select the version of WinUitls](https://github.com/steveloughran/winutils) that's compatible with your version of Hadoop. 
 
 ### 7. Set DOTNET_WORKER_DIR and check dependencies
 
-Run the following command to set the `DOTNET_WORKER_DIR` Environment Variable. This is used by .NET apps to locate .NET for Apache Spark:
+Run the following command to set the `DOTNET_WORKER_DIR` Environment Variable, which is used by .NET apps to locate .NET for Apache Spark:
 
 `setx DOTNET_WORKER_DIR "C:\bin\Microsoft.Spark.Worker-0.6.0"`
 
@@ -121,17 +121,17 @@ dotnet new console -o mySparkApp
 cd mySparkApp
 ```
 
-The `dotnet` command creates a `new` application of type `console` for you. The `-o` parameter creates a directory named mySparkApp where your app is stored, and populates it with the required files. The `cd mySparkApp` command puts you into the newly created app directory.
+The `dotnet` command creates a `new` application of type `console` for you. The `-o` parameter creates a directory named *mySparkApp* where your app is stored and populates it with the required files. The `cd mySparkApp` command changes the directory to the app directory you just created.
 
 ### 2. Install NuGet package
 
-To use .NET for Apache Spark in an app, you need to install the Microsoft.Spark package. In your command prompt, run the following command:
+To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your command prompt, run the following command:
 
 `dotnet add package Microsoft.Spark --version 0.6.0`
 
 ### 3. Code your app
 
-Open *Program.cs* in Visual Studio or any text editor and replace all of the code with the following:
+Open *Program.cs* in Visual Studio Code, or any text editor, and replace all of the code with the following:
 
 ```csharp
 using Microsoft.Spark.Sql;
@@ -172,7 +172,7 @@ namespace MySparkApp
 
 ### 4. Add data file
 
-Your app will be processing a file containing lines of text. Create an *input.txt* file in your *mySparkApp* directory, containing the following text:
+Your processes a file containing lines of text. Create an *input.txt* file in your *mySparkApp* directory, containing the following text:
 
 ```text
 Hello World
@@ -194,7 +194,7 @@ This .NET app counts words with Apache Spark
    %SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local bin\Debug\netcoreapp3.0\microsoft-spark-2.4.x-0.6.0.jar dotnet bin\Debug\netcoreapp3.0\mySparkApp.dll
    ```
 
-3. When your app runs, you will see the word count data written to the console.
+3. When your app runs, the word count data of the *input.txt* file is written to the console.
 
 Congratulations! You successfully authored and ran a .NET for Apache Spark app.
 

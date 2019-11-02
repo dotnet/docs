@@ -58,7 +58,7 @@ ms.assetid: cc229b33-234b-469b-ad60-f0254f32d45d
 |<xref:System.Windows.Automation.ScrollItemPattern>|<xref:System.Windows.Automation.Provider.IScrollItemProvider>|Used for controls that have individual items in a list that scrolls. For example, a list control that has individual items in the scroll list, such as a combo box control.|  
 |<xref:System.Windows.Automation.SelectionPattern>|<xref:System.Windows.Automation.Provider.ISelectionProvider>|Used for selection container controls. For example, list boxes and combo boxes.|  
 |<xref:System.Windows.Automation.SelectionItemPattern>|<xref:System.Windows.Automation.Provider.ISelectionItemProvider>|Used for individual items in selection container controls, such as list boxes and combo boxes.|  
-|<xref:System.Windows.Automation.TablePattern>|<xref:System.Windows.Automation.Provider.ITableProvider>|Used for controls that have a grid as well as header information. For example, [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] worksheets.|  
+|<xref:System.Windows.Automation.TablePattern>|<xref:System.Windows.Automation.Provider.ITableProvider>|Used for controls that have a grid as well as header information. For example, Microsoft Excel worksheets.|  
 |<xref:System.Windows.Automation.TableItemPattern>|<xref:System.Windows.Automation.Provider.ITableItemProvider>|Used for items in a table.|  
 |<xref:System.Windows.Automation.TextPattern>|<xref:System.Windows.Automation.Provider.ITextProvider>|Used for edit controls and documents that expose textual information.|  
 |<xref:System.Windows.Automation.TogglePattern>|<xref:System.Windows.Automation.Provider.IToggleProvider>|Used for controls where the state can be toggled. For example, check boxes and checkable menu items.|  

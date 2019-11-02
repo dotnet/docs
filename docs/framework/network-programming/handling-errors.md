@@ -164,5 +164,5 @@ When a **SocketException** is thrown, the **SocketException** class sets the <xr
   
 ## See also
 
-- [Exception Handling Fundamentals](../../standard/exceptions/index.md)
+- [Handling and throwing exceptions in .NET](../../standard/exceptions/index.md)
 - [Requesting Data](requesting-data.md)

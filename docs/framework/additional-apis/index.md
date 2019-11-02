@@ -1,6 +1,6 @@
 ---
 title: "Additional class libraries and APIs"
-ms.date: "10/17/2019"
+ms.date: "11/01/2019"
 helpviewer_keywords: 
   - "Additional class libraries"
   - "Additional managed libraries"

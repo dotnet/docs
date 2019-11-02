@@ -2,7 +2,7 @@
 title: Cloud-native data patterns
 description: Learn about common data patterns found in cloud-native applications
 author: robvet
-ms.date: 10/21/2019
+ms.date: 11/01/2019
 ---
 # Cloud-native data patterns
 

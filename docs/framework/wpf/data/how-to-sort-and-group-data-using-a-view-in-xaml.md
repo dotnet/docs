@@ -36,5 +36,5 @@ This example shows how to create a view of a data collection in [!INCLUDE[TLA#tl
 
 - <xref:System.Windows.Data.CollectionViewSource>
 - [Get the Default View of a Data Collection](how-to-get-the-default-view-of-a-data-collection.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

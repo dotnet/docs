@@ -25,5 +25,5 @@ To support <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows
 ## See also
 
 - [Binding Sources Overview](binding-sources-overview.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

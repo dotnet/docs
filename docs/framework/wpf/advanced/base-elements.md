@@ -33,5 +33,5 @@ Four key classes--<xref:System.Windows.UIElement>, <xref:System.Windows.ContentE
   [Events](events-wpf.md)  
   [Input](input-wpf.md)  
   [Resources](resources-wpf.md)  
-  [Styling and Templating](../controls/styling-and-templating.md)  
+  [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
   [Threading Model](threading-model.md)

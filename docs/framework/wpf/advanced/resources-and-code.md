@@ -41,4 +41,4 @@ This overview concentrates on how [!INCLUDE[TLA#tla_winclient](../../../../inclu
 ## See also
 
 - [XAML Resources](xaml-resources.md)
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

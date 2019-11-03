@@ -234,6 +234,9 @@ In this module, we took a detailed look at data in cloud-native systems. We cont
 
 - [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/)
 
+- [Exploring the different types of NoSQL Databases Part II](https://www.3pillarglobal.com/insights/exploring-the-different-types-of-nosql-databases)
+- [Microservice - Data Considerations](https://docs.microsoft.com/en-us/azure/architecture/microservices/design/data-considerations)
+
 tep-by-step"]
 >[Previous](data-patterns.md)
 >[Next](resiliency.md) <!-- Next Chapter -->

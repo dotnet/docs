@@ -100,7 +100,7 @@ Starting with F# 4.1, you can also have optional arguments with a default parame
 ```fsharp
 // A class with a method M, which takes in an optional integer argument.
 type C() =
-    __.M([<Optional; DefaultParameterValue(12)>] i) = i + 1
+    _.M([<Optional; DefaultParameterValue(12)>] i) = i + 1
 ```
 
 Note that the value passed in for `DefaultParameterValue` must match the input type.  In the above sample, it is an `int`.  Attempting to pass a non-integer value into `DefaultParameterValue` would result in a compile error.

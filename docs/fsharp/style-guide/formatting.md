@@ -812,7 +812,7 @@ Attributes can also be places on parameters. In this case, place then on the sam
 ```fsharp
 // Defines a class that takes an optional value as input defaulting to false.
 type C() =
-    member __.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
+    member _.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
 ```
 
 ### Formatting multiple attributes

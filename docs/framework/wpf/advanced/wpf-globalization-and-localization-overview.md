@@ -64,7 +64,7 @@ When you localize [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptl
 
 ## Localize a WPF Application
 
-When you localize a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application, you have several options. For example, you can bind the localizable resources in your application to an [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] file, store localizable text in resx tables, or have your localizer use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files. This section describes a localization workflow that uses the BAML form of XAML, which provides several benefits:
+When you localize a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application, you have several options. For example, you can bind the localizable resources in your application to an XML file, store localizable text in resx tables, or have your localizer use [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files. This section describes a localization workflow that uses the BAML form of XAML, which provides several benefits:
 
 - You can localize after you build.
 

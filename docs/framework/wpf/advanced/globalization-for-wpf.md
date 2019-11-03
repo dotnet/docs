@@ -13,7 +13,7 @@ This topic introduces issues that you should be aware of when writing [!INCLUDE[
 
 <a name="xaml_globalization"></a>
 ## XAML Globalization
- Extensible Application Markup Language (XAML) is based on XML and takes advantage of the globalization support defined in the [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] specification. The following sections describe some [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] features that you should be aware of.
+ Extensible Application Markup Language (XAML) is based on XML and takes advantage of the globalization support defined in the XML specification. The following sections describe some [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] features that you should be aware of.
 
 <a name="char_reference"></a>
 ### Character References

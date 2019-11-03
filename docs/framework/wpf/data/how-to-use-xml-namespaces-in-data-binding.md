@@ -9,7 +9,7 @@ ms.assetid: a47c832f-dc84-48f2-96d5-cde18fc4284b
 ---
 # How to: Use XML Namespaces in Data Binding
 ## Example
- This example shows how to handle namespaces specified in your [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] binding source.
+ This example shows how to handle namespaces specified in your XML binding source.
 
  If your [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data has the following [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] namespace definition:
 

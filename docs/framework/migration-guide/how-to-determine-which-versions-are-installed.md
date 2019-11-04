@@ -1,5 +1,5 @@
 ---
-title: Determine which .NET Framework versions you have
+title: Determine which .NET Framework versions are installed
 ms.date: "04/18/2019"
 dev_langs:
   - "csharp"
@@ -21,7 +21,7 @@ The .NET Framework consists of two main components, which are versioned separate
 - The common language runtime (CLR), which manages and executes your app's code. The CLR is identified by its own version number (see [Versions and dependencies](versions-and-dependencies.md)).
 
 > [!NOTE]
-> Each new version of the .NET Framework retains features from the previous versions and adds new features. You can load multiple versions of the .NET Framework on a single computer at the same time, which means that you can install the .NET Framework without having to uninstall previous versions. In general, you shouldn't uninstall previous versions of the .NET Framework, because an application you use may depend on a specific version and may break if it is removed.
+> Each new version of the .NET Framework retains features from the previous versions and adds new features. You can load multiple versions of the .NET Framework on a single computer at the same time, which means that you can install the .NET Framework without having to uninstall previous versions. In general, you shouldn't uninstall previous versions of the .NET Framework, because an application you use may depend on a specific version and may break if that version is removed.
 >
 > There is a difference between the .NET Framework version and the CLR version:
 >
@@ -119,7 +119,7 @@ To test for multiple versions, begin by testing for a value that is *greater tha
 
 <a name="net_d"></a>
 
-### Query registry with code
+### Query the registry using code
 
 1. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full** subkey in the Windows registry.
 
@@ -177,7 +177,7 @@ To check for a different minimum-required .NET Framework version, replace `39480
 
 <a name="net_c"></a>
 
-### Query registry with code (older framework versions)
+### Query the registry using code (older framework versions)
 
 Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the **HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP** subkey in the Windows registry.
 

@@ -47,7 +47,7 @@ In the table, versions of the .NET Framework that are installed on operating sys
 > - The .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows-10.md#enable-the-net-framework-35-in-control-panel).
 > - In general, you should not uninstall any versions of the .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of the .NET Framework on a single computer at the same time. This means that you can install the .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../get-started/index.md).
 
-## Target and run .NET Framework apps for version 4.5 and later
+## Target and run apps for version 4.5 and later
 
 .NET Framework 4.5 is an in-place update that replaces .NET Framework 4 on your computer, and similarly, .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, and 4.8 are in-place updates to .NET Framework 4.5, which means that they use the same runtime version, but the assembly versions are updated and include new types and members. After you install one of these updates, your .NET Framework 4, .NET Framework 4.5, .NET Framework 4.6, or .NET Framework 4.7 apps should continue to run without requiring recompilation. However, the reverse is not true. We do not recommend running apps that target a later version of the .NET Framework on an earlier version of the .NET Framework. For example, we do not recommend that you run an app the targets .NET Framework 4.6 on .NET Framework 4.5. The following guidelines apply:  
   

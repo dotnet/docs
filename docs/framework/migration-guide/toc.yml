@@ -4,7 +4,8 @@
   items:
   - name: Application compatibility 
     items:
-    - name: Application compatibility 
+    - name: Overview
+      displayName: App compatibility 
       href: application-compatibility.md
     - name: Runtime changes
       items:
@@ -234,9 +235,9 @@
   items:
   - name: Versions and dependencies
     href: versions-and-dependencies.md
-  - name: Installed versions
+  - name: Find installed versions
     href: how-to-determine-which-versions-are-installed.md
-  - name: Installed updates
+  - name: Find installed updates
     href: how-to-determine-which-net-framework-updates-are-installed.md
 - name: Configure an app to support .NET Framework 4 or later
   href: how-to-configure-an-app-to-support-net-framework-4-or-4-5.md

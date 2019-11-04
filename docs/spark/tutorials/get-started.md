@@ -75,8 +75,10 @@ To extract the Apache Spark files:
     
 Run the following commands to set the environment variables used to locate Apache Spark:
 
-`setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
-setx SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\`
+```console
+setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
+setx SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
+```
 
 Once you've installed everything and set your environment variables, open a **new** command prompt and run the following command:
 

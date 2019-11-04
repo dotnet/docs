@@ -46,11 +46,11 @@ You also can compare a variable of a nullable value type with `null` instead of 
 
 ## Conversion from a nullable value type to an underlying type
 
-If you need to assign a value of a nullable value type to a non-nullable value type variable, use the [null-coalescing operator `??`](../operators/null-coalescing-operator.md) to specify the value to be assigned if a value of a nullable value type is `null` (you also can use the <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> method to do that):
+If you want to assign a value of a nullable value type to a non-nullable value type variable, you might need to specify the value to be assigned in place of `null`. Use the [null-coalescing operator `??`](../operators/null-coalescing-operator.md) to do that (you also can use the <xref:System.Nullable%601.GetValueOrDefault(%600)?displayProperty=nameWithType> method for the same purpose):
 
 [!code-csharp-interactive[?? operator](~/samples/csharp/language-reference/builtin-types/NullableValueTypes.cs#NullCoalescing)]
 
-Use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method if the value to be used when a value of a nullable value type is `null` should be the [default](../keywords/default-values-table.md) value of the underlying value type.
+If you want to use the [default](../keywords/default-values-table.md) value of the underlying value type in place of `null`, use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method.
 
 You also can explicitly cast a nullable value type to a non-nullable type, as the following example shows:
 
@@ -110,6 +110,9 @@ Also, don't use the [is](../operators/type-testing-and-cast.md#is-operator) oper
 You can use the code presented in the following example to determine whether an instance is of a nullable value type:
 
 [!code-csharp-interactive[whether an instance is of a nullable type](~/samples/csharp/language-reference/builtin-types/NullableValueTypes.cs#IsInstanceNullable)]
+
+> [!NOTE]
+> The methods described in this section are not applicable in the case of [nullable reference types](../../nullable-references.md).
 
 ## C# language specification
 

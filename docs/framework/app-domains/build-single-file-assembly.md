@@ -13,8 +13,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Build a .NET Framework single-file assembly
 

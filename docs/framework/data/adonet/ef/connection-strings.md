@@ -35,9 +35,7 @@ The `Metadata` parameter contains a list of locations for the `EntityClient` pro
 
 Embedded resources are specified as follows:
 
-```
-Metadata=res://<assemblyFullName>/<resourceName>.
-```
+`Metadata=res://<assemblyFullName>/<resourceName>`
 
 The following options are available for defining the location of an embedded resource:
 
@@ -51,19 +49,19 @@ The following options are available for defining the location of an embedded res
 
 The following example loads all the model and mapping files in the calling assembly, referenced assemblies, and other assemblies in the bin directory of an application.
 
-```
+```csharp
 Metadata=res://*/
 ```
 
 The following example loads the model.csdl file from the AdventureWorks assembly, and loads the model.ssdl and model.msl files from the default directory of the running application.
 
-```
+```csharp
 Metadata=res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.csdl|model.ssdl|model.msl
 ```
 
 The following example loads the three specified resources from the specific assembly.
 
-```
+```csharp
 Metadata=res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.csdl|
 res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.ssdl|
 res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.msl
@@ -71,19 +69,19 @@ res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.msl
 
 The following example loads all the embedded resources with the extensions .csdl, .msl, and .ssdl from the assembly.
 
-```
+```csharp
 Metadata=res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/
 ```
 
 The following example loads all the resources in the relative file path plus "datadir\metadata\\" from the loaded assembly location.
 
-```
+```csharp
 Metadata=datadir\metadata\
 ```
 
 The following example loads all the resources in the relative file path from the loaded assembly location.
 
-```
+```csharp
 Metadata=.\
 ```
 

@@ -21,7 +21,7 @@ The TCP/IP protocol uses a 16-bit number, called a port, to differentiate connec
   
  The NetTcp Port Sharing Service is not enabled by default. Before running this sample, you must manually enable the service. For more information, see [How to: Enable the Net.TCP Port Sharing Service](../../../../docs/framework/wcf/feature-details/how-to-enable-the-net-tcp-port-sharing-service.md). If the service is disabled, an exception is thrown when the server application is started.  
   
-```  
+```console
 Unhandled Exception: System.ServiceModel.CommunicationException: The TransportManager failed to listen on the supplied URI using the NetTcpPortSharing service: failed to start the service because it is disabled. An administrator can enable it by running 'sc.exe config NetTcpPortSharing start= demand'.. ---> System.InvalidOperationException: Cannot start service NetTcpPortSharing on computer '.'. ---> System.ComponentModel.Win32Exception: The service cannot be started, either because it is disabled or because it has no enabled devices associated with it  
 ```  
   
@@ -45,7 +45,7 @@ host.Open();
 
  With port sharing enabled, you can run the service multiple times without having a conflict over the port number. If you change the code to disable port sharing, starting up two copies of the service results in the second failing with an <xref:System.ServiceModel.AddressAlreadyInUseException>.  
   
-```  
+```console  
 Unhandled Exception: System.ServiceModel.AddressAlreadyInUseException: There is already a listener on IP endpoint 0.0.0.0:9000.  Make sure that you are not trying to use this endpoint multiple times in your application and that there are no other applications listening on this endpoint. ---> System.Net.Sockets.SocketException: Only one usage of each socket address (protocol/network address/port) is normally permitted  
 ```  
   
@@ -98,14 +98,14 @@ class client
 
  Each instance of the service prints out its unique number and address. For instance, you may see the following text when you run service.exe.  
   
-```  
+```console  
 Service #4381 listening on net.tcp://localhost:9000/calculator/4381.  
 Press <ENTER> to terminate service.  
 ```  
   
  Enter the service number you see here when you run client.exe.  
   
-```  
+```console  
 Enter the service number to test: 4381  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
@@ -121,7 +121,7 @@ Press <ENTER> to terminate client.
   
 1. Install ASP.NET 4.0 using the following command.  
   
-    ```  
+    ```console  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   

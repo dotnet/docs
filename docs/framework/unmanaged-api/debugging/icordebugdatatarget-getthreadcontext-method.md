@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c8954268-1821-4b23-b665-dbb55f2af31b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget::GetThreadContext Method
 Returns the current thread context for the specified thread.  

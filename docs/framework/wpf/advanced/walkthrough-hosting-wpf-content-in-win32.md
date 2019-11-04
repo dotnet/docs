@@ -72,7 +72,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
 1. Open Visual Studio 2005, and select **New Project** from the **File** menu.
 
-2. Select **Win32** from the list of [!INCLUDE[TLA2#tla_visualcpp](../../../../includes/tla2sharptla-visualcpp-md.md)] project types. If your default language is not C++, you will find these project types under **Other Languages**.
+2. Select **Win32** from the list of Visual C++ project types. If your default language is not C++, you will find these project types under **Other Languages**.
 
 3. Select a **Win32 Project** template, assign a name to the project and click **OK** to launch the **Win32 Application Wizard**.
 

@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "Ilasm.exe"
   - "verifying MSIL performance"
 ms.assetid: 4ca3a4f0-4400-47ce-8936-8e219961c76f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Ilasm.exe (IL Assembler)
 

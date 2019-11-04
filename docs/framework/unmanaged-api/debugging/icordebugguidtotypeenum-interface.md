@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: aa32b12b-05fc-4ea8-a904-adae25034269
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugGuidToTypeEnum Interface
 Provides an enumerator that defines the mapping between a set of GUIDs and their corresponding types, which are represented by ICorDebugType instances. This interface inherits the methods from the ICorDebugEnum interface.  

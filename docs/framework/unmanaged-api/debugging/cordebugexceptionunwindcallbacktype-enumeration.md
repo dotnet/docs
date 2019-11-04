@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 783dce92-8a98-43db-8f78-888d943dd5b2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugExceptionUnwindCallbackType Enumeration
 Indicates the event that is being signaled by the callback during the unwind phase.  

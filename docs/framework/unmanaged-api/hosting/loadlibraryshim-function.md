@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 30931874-4d0e-4df1-b3d1-e425b50655d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoadLibraryShim Function
 Loads a specified version of a DLL that is included in the .NET Framework redistributable package.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 314d29f3-feb0-4a92-9530-b569c280cc31
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain2 Interface
 

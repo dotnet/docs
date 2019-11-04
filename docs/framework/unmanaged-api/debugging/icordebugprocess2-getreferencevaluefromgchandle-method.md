@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8bdd7f4c-19f2-4ede-875e-603773e8c128
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2::GetReferenceValueFromGCHandle Method
 Gets a reference pointer to the specified managed object that has a garbage collection handle.  

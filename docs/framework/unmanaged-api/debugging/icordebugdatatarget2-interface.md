@@ -2,8 +2,6 @@
 title: "ICorDebugDataTarget2 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 13f11388-2f91-48d8-98d6-6a4a63cb5746
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2 Interface
 Logically extends the [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md)interface.  

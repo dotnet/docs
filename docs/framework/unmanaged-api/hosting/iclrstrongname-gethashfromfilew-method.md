@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c6ff45fc-905d-4c6e-b00c-97c6c7c55d99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::GetHashFromFileW Method
 Generates a hash over the contents of the file specified by a Unicode string.  

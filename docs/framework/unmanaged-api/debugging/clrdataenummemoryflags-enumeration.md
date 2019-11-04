@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: e249f9fc-e24a-4506-903c-92781f6eab7c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLRDataEnumMemoryFlags Enumeration
 Indicates which memory regions a call to the [ICLRDataEnumMemoryRegions::EnumMemoryRegions](iclrdataenummemoryregions-enummemoryregions-method.md) method should include.  

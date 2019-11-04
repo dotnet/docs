@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 313e71e4-1790-4d2f-b68b-5040ebd1c149
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # StrongNameKeyDelete Function

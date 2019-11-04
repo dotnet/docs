@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: f1f2fab1-400b-488f-95f2-d49c4fca3556
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetRealProcAddress Function
 Gets the address of the specified function that is exported from the latest installed version of the common language runtime (CLR).  

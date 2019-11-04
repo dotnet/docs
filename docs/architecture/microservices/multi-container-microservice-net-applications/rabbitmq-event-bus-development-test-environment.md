@@ -29,7 +29,7 @@ The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. 
 
 ## Implementing a simple publish method with RabbitMQ
 
-The following code is a ***simplified*** version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository. 
+The following code is a ***simplified*** version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -76,7 +76,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
         where TH : IIntegrationEventHandler<T>
     {
         var eventName = _subsManager.GetEventKey<T>();
-        
+
         var containsKey = _subsManager.HasSubscriptionsForEvent(eventName);
         if (!containsKey)
         {

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5f5a311a-839a-465f-89d9-ff1c74da9736
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoUninitializeEE Function
 `CoUninitializeEE` is obsolete and provides no functionality.  

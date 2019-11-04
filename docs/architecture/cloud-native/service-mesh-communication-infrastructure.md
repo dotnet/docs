@@ -21,9 +21,9 @@ A key component of a service mesh is a proxy. In a cloud-native application, an 
 
 **Figure 4-23**. Service mesh with a side car
 
-Note in the previous figure how messages are intercepted by a proxy that runs alongside each microservice. Each proxy can be configured with traffic rules specific to the microservice. It understands messages and can route them across your services and the outside world. 
+Note in the previous figure how messages are intercepted by a proxy that runs alongside each microservice. Each proxy can be configured with traffic rules specific to the microservice. It understands messages and can route them across your services and the outside world.
 
-Along with managing service-to-service communication, the Service Mesh provides support for service discovery and load balancing. 
+Along with managing service-to-service communication, the Service Mesh provides support for service discovery and load balancing.
 
 Once configured, a service mesh is highly functional. The mesh retrieves a corresponding pool of instances from a service discovery endpoint. It sends a request to a specific service instance, recording the latency and response type of the result. It chooses the instance most likely to return a fast response based on different factors, including the observed latency for recent requests.
 
@@ -33,7 +33,7 @@ In chapter 6, we deep-dive into Service Mesh technologies including a discussion
 
 ## Summary
 
-In this chapter, we discussed cloud-native communication patterns. We started by examining how front-end clients communicate with back-end microservices. Along the way, we talked about API Gateway platforms and real-time communication. We then looked at how microservices communicate with other back-end services. We looked at both synchronous HTTP communication and asynchronous messaging across services. We covered gRPC, an upcoming technology in the cloud-native world. Finally, we introduced a new and rapidly evolving technology entitled Service Mesh that can streamline microservice communication. 
+In this chapter, we discussed cloud-native communication patterns. We started by examining how front-end clients communicate with back-end microservices. Along the way, we talked about API Gateway platforms and real-time communication. We then looked at how microservices communicate with other back-end services. We looked at both synchronous HTTP communication and asynchronous messaging across services. We covered gRPC, an upcoming technology in the cloud-native world. Finally, we introduced a new and rapidly evolving technology entitled Service Mesh that can streamline microservice communication.
 
 Special emphasis was on managed Azure services that can help implement communication in cloud-native systems:
 
@@ -47,25 +47,25 @@ Special emphasis was on managed Azure services that can help implement communica
 
 We next move to distributed data in cloud-native systems and the benefits and challenges that it presents.
 
-### References 
+### References
 
 - [.NET Microservices: Architecture for Containerized .NET applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook)
-  
+
 - [Designing Interservice Communication for Microservices](https://docs.microsoft.com/azure/architecture/microservices/design/interservice-communication)
 
 - [Azure SignalR Service, a fully managed service to add real-time functionality](https://azure.microsoft.com/blog/azure-signalr-service-a-fully-managed-service-to-add-real-time-functionality/)
-  
+
 - [Azure API Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/)
-  
+
 - [About Ingress in Azure Kubernetes Service (AKS)](https://vincentlauzon.com/2018/10/10/about-ingress-in-azure-kubernetes-service-aks/)
- 
+
 - [Practical gRPC](https://www.worldcat.org/title/practical-grpc/oclc/1042342319)
 
 - [gRPC Documentation](https://grpc.io/docs/guides/)
 
 - [gRPC for WCF Developers](https://bing.com) [Mark's gRPC book]
-  
-- [Comparing gRPC Services with HTTP APIs](https://docs.microsoft.com/en-us/aspnet/core/grpc/comparison?view=aspnetcore-3.0)
+
+- [Comparing gRPC Services with HTTP APIs](https://docs.microsoft.com/aspnet/core/grpc/comparison?view=aspnetcore-3.0)
 
 >[!div class="step-by-step"]
 >[Previous](rest-grpc.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ddf9085c-7161-44bd-9609-cd2732b9009f
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # ICorDebugModule2::ResolveAssembly Method

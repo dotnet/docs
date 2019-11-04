@@ -2,8 +2,6 @@
 title: "Measuring Startup Improvement with .NET Native"
 ms.date: "03/30/2017"
 ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Measuring Startup Improvement with .NET Native
 .NET Native significantly improves the launch time of apps. This improvement is particularly noticeable on portable, low-powered devices and with complex apps. This topic helps you get started with the basic instrumentation needed to measure this startup improvement.  

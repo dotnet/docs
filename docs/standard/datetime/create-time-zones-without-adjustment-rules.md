@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "time zones [.NET Framework], creating"
   - "adjustment rule [.NET Framework]"
 ms.assetid: a6af8647-7893-4f29-95a9-d94c65a6e8dd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create time zones without adjustment rules
 

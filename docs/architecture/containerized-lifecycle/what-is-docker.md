@@ -29,7 +29,11 @@ The images for these containers are created and work just the same way. The diff
 
 Figure 1-3 shows a comparison between VMs and Docker containers.
 
+<<<<<<< HEAD
 ![Diagram showing a comparison of VM and container environments.](./media/what-is-docker/comparison-vms-docker-conatiners.png)
+=======
+![For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries. On the other hand, For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, which keeps container isolated but sharing the base OS services.](./media/image3.png)
+>>>>>>> efce5db670c24455baffd7249cfd95a78b2f75d4
 
 **Figure 1-3**. Comparison of traditional virtual machines to Docker containers
 

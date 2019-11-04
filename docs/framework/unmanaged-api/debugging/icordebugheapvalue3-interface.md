@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9c421bb0-e647-4b2d-a986-f3d578cc7f20
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue3 Interface
 Exposes the monitor lock properties of objects. This interface extends the ICorDebugHeapValue and ICorDebugHeapValue2 interfaces.  

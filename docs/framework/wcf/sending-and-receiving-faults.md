@@ -10,7 +10,7 @@ ms.assetid: 7be6fb96-ce2a-450b-aebe-f932c6a4bc5d
 ---
 # Sending and Receiving Faults
 
-SOAP faults convey error condition information from a service to a client and in the duplex case from a client to a service in an interoperable way. Typically a service defines custom fault content and specifies which operations can return them. (For more information, see [Defining and Specifying Faults](../../../docs/framework/wcf/defining-and-specifying-faults.md).) This topic discusses how a service or duplex client can send those faults when the corresponding error condition has occurred and how a client or service application handles these faults. For an overview of error handling in Windows Communication Foundation (WCF) applications, see [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).
+SOAP faults convey error condition information from a service to a client and in the duplex case from a client to a service in an interoperable way. Typically a service defines custom fault content and specifies which operations can return them. (For more information, see [Defining and Specifying Faults](defining-and-specifying-faults.md).) This topic discusses how a service or duplex client can send those faults when the corresponding error condition has occurred and how a client or service application handles these faults. For an overview of error handling in Windows Communication Foundation (WCF) applications, see [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md).
 
 ## Sending SOAP Faults
 
@@ -96,12 +96,12 @@ In all cases, closing the channel instructs the channel to begin closing any und
 
 Because closing the channel can also throw exceptions, then, it is recommended that in addition to catching fault exceptions in the correct order, it is important to abort the channel that was used in making the call in the catch block.
 
-If the fault conveys error information specific to an operation and it remains possible that others can use it, there is no need to abort the channel (although these cases are rare). In all other cases, it is recommended that you abort the channel. For a sample that demonstrates all of these points, see [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md).
+If the fault conveys error information specific to an operation and it remains possible that others can use it, there is no need to abort the channel (although these cases are rare). In all other cases, it is recommended that you abort the channel. For a sample that demonstrates all of these points, see [Expected Exceptions](./samples/expected-exceptions.md).
 
 The following code example shows how to handle SOAP fault exceptions in a basic client application, including a declared fault and an undeclared fault.
 
 > [!NOTE]
-> This sample code does not use the `using` construct. Because closing channels can throw exceptions, it is recommended that applications create a WCF client first, and then open, use, and close the WCF client in the same try block. For details, see [WCF Client Overview](../../../docs/framework/wcf/wcf-client-overview.md) and [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md).
+> This sample code does not use the `using` construct. Because closing channels can throw exceptions, it is recommended that applications create a WCF client first, and then open, use, and close the WCF client in the same try block. For details, see [WCF Client Overview](wcf-client-overview.md) and [Use Close and Abort to release WCF client resources](./samples/use-close-abort-release-wcf-client-resources.md).
 
 [!code-csharp[FaultContractAttribute#3](../../../samples/snippets/csharp/VS_Snippets_CFX/faultcontractattribute/cs/client.cs#3)]
 [!code-vb[FaultContractAttribute#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/faultcontractattribute/vb/client.vb#3)]
@@ -111,5 +111,5 @@ The following code example shows how to handle SOAP fault exceptions in a basic 
 - <xref:System.ServiceModel.FaultException>
 - <xref:System.ServiceModel.FaultException%601>
 - <xref:System.ServiceModel.CommunicationException?displayProperty=nameWithType>
-- [Expected Exceptions](../../../docs/framework/wcf/samples/expected-exceptions.md)
-- [Use Close and Abort to release WCF client resources](../../../docs/framework/wcf/samples/use-close-abort-release-wcf-client-resources.md)
+- [Expected Exceptions](./samples/expected-exceptions.md)
+- [Use Close and Abort to release WCF client resources](./samples/use-close-abort-release-wcf-client-resources.md)

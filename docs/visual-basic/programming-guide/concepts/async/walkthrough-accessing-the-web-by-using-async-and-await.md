@@ -75,7 +75,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
 6. Position the text box and the button so that both appear in the **MainWindow** window.
 
-    For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).
+    For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio).
 
 ## Add a reference
 

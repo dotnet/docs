@@ -2,8 +2,6 @@
 title: Breaking changes, .NET Framework to .NET Core 3.0 - .NET Core
 description: Lists the breaking changes from .NET Framework to .NET Core 3.0 for Windows Forms and Windows Presentation Foundation.
 ms.date: "09/10/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Breaking changes for migration from .NET Framework to .NET Core 3.0
 

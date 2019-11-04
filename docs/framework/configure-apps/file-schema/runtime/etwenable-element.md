@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "etwEnable element"
   - "<etwEnable> element"
 ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<etwEnable> Element
 Specifies whether to enable event tracing for Windows (ETW) for common language runtime events.  

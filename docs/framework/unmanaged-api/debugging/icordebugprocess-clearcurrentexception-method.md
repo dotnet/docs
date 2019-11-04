@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9e02ee1a-e495-4578-bfb5-b946274bede7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::ClearCurrentException Method
 Clears the current unmanaged exception on the given thread.  

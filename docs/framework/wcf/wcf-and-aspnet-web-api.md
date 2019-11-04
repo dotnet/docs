@@ -22,5 +22,5 @@ WCF is Microsoft’s unified programming model for building service-oriented app
   
 ## See also
 
-- [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)
-- [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)
+- [What Is Windows Communication Foundation](whats-wcf.md)
+- [Fundamental Windows Communication Foundation Concepts](fundamental-concepts.md)

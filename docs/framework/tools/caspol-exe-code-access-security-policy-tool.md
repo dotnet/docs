@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "security policy [.NET Framework], modifying"
   - "manually editing security configuration files"
 ms.assetid: d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Caspol.exe (Code Access Security Policy Tool)
 The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and administrators to modify security policy for the machine policy level, the user policy level, and the enterprise policy level.  

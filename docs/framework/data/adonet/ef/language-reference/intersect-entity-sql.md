@@ -8,7 +8,7 @@ Returns a collection of any distinct values that are returned by both the query 
   
 ## Syntax  
   
-```  
+```sql  
 expression INTERSECT expression  
 ```  
   
@@ -29,7 +29,7 @@ expression INTERSECT expression
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#INTERSECT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#intersect)]  
+ [!code-sql[DP EntityServices Concepts#INTERSECT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#intersect)]  
   
 ## See also
 

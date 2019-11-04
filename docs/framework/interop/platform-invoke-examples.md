@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, platform invoke"
   - "DLL functions"
 ms.assetid: 15926806-f0b7-487e-93a6-4e9367ec689f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Platform Invoke Examples
 The following examples demonstrate how to define and call the **MessageBox** function in User32.dll, passing a simple string as an argument. In the examples, the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet?displayProperty=nameWithType> field is set to **Auto** to let the target platform determine the character width and string marshaling.  

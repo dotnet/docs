@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 93424a87-ba13-4fa1-b4dc-69d44437b7ae
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRErrorReportingManager::BeginCustomDump Method
 Specifies the configuration of custom heap dumps for error reporting.  

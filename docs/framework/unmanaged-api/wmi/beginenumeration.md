@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "BeginEnumeration function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # BeginEnumeration function
 Resets an enumerator back to the beginning of the enumeration.  

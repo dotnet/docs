@@ -37,7 +37,7 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 
   - **Azure portal** If you're using open-source orchestrators, Azure Kubernetes Service (AKS), Service Fabric and other orchestrators help you to set up and maintain your Docker environments. If you're using Azure Service Fabric, the Service Fabric Explorer tool makes it possible for you to visualize and configure your cluster.
 
-  - **Docker tools** You can manage your container applications using familiar tools. There's no need to change your existing Docker management practices to move container workloads to the cloud. Use the application management tools you're already familiar with and connect via the standard API endpoints for the orchestrator of your choice. You also can use other third-party tools to manage your Docker applications, such as Docker Datacenter or even CLI Docker tools. 
+  - **Docker tools** You can manage your container applications using familiar tools. There's no need to change your existing Docker management practices to move container workloads to the cloud. Use the application management tools you're already familiar with and connect via the standard API endpoints for the orchestrator of your choice. You also can use other third-party tools to manage your Docker applications, such as Docker Datacenter or even CLI Docker tools.
 
     Even if you're familiar with Linux commands, you can manage your container applications using Microsoft Windows and PowerShell with a Linux Subsystem command line and the products (Docker, Kubernetes…) clients running on this Linux Subsystem capability. You'll learn more about using these tools under Linux Subsystem using your favorite Microsoft Windows OS later in this book.
 

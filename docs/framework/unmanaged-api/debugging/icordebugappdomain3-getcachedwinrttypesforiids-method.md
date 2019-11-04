@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 23682ca0-1bcf-48e6-996e-69f7ba337682
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain3::GetCachedWinRTTypesForIIDs Method
 Gets an enumerator for cached Windows Runtime types in an application domain based on their interface identifiers.  

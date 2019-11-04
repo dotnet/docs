@@ -7,7 +7,7 @@ ms.date: 06/30/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-The first line of defense is software-enabled application resiliency. 
+The first line of defense is software-enabled application resiliency.
 
 While you could invest considerable time writing your own resiliency framework, such products already exist. For example, [Polly](http://www.thepollyproject.org/) is a comprehensive .NET resilience and transient-fault-handling library that allows developers to express resiliency policies in a fluent and thread-safe manner. Polly targets applications built with either the full .NET Framework or .NET Core. Figure 6-2 shows the resiliency policies (that is, functionality) available from the Polly Library. These policies can be applied individually or combined together.
 
@@ -39,7 +39,7 @@ The [Retry pattern](https://docs.microsoft.com/azure/architecture/patterns/retry
 
 In the previous figure, a retry pattern has been implemented for a request operation. It's configured to allow up to four retries before failing with a backoff interval (wait time) starting at two seconds, which exponentially doubles for each subsequent attempt.
 
-- The first invocation fails and returns an HTTP status code of 500. The application waits for two seconds and reties the call.
+- The first invocation fails and returns an HTTP status code of 500. The application waits for two seconds and retries the call.
 - The second invocation also fails and returns an HTTP status code of 500. The application now doubles the backoff interval to four seconds and retries the call.
 - Finally, the third call succeeds.
 - In this scenario, the retry operation would have attempted up to four retries while doubling the backoff duration before failing the call.

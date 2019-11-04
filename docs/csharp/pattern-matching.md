@@ -2,6 +2,7 @@
 title: Pattern Matching - C# Guide
 description: Learn about pattern matching expressions in C#
 ms.date: 04/10/2019
+ms.technology: csharp-fundamentals
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 ---
 

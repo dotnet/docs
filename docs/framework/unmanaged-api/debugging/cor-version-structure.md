@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5efaee1c-a001-4c73-9525-4160f4c71567
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_VERSION Structure
 Stores the standard four-part version number of the common language runtime.  

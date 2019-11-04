@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "fusion global static functions [.NET Framework]"
   - "global static functions [.NET Framework fusion]"
 ms.assetid: 229b2188-9168-4b44-a987-e1f515494688
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Fusion Global Static Functions
 This section describes the unmanaged global static functions that the fusion API uses.  

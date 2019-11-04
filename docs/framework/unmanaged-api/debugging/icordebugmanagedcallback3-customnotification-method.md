@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5e5422ac-afa1-403d-a894-2d7348673e38
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback3::CustomNotification Method
 Indicates that a custom debugger notification has been raised.  

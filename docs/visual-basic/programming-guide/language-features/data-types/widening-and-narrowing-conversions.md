@@ -92,7 +92,7 @@ An important consideration with a type conversion is whether the result of the c
 ## Changes During Reference Type Conversions  
  A conversion from a *reference type* copies only the pointer to the value. The value itself is neither copied nor changed in any way. The only thing that can change is the data type of the variable holding the pointer. In the following example, the data type is converted from the derived class to its base class, but the object that both variables now point to is unchanged.  
   
-```  
+```vb  
 ' Assume class cSquare inherits from class cShape.  
 Dim shape As cShape  
 Dim square As cSquare = New cSquare  

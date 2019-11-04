@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "interop marshaling, blittable types"
   - "blittable types, interop marshaling"
 ms.assetid: d03b050e-2916-49a0-99ba-f19316e5c1b3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Blittable and Non-Blittable Types
 Most data types have a common representation in both managed and unmanaged memory and do not require special handling by the interop marshaler. These types are called *blittable types* because they do not require conversion when they are passed between managed and unmanaged code.  

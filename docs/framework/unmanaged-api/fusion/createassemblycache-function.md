@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: 348c7c8c-8578-46ae-97cf-480d6015c3c6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateAssemblyCache Function
 Gets a pointer to a new [IAssemblyCache](iassemblycache-interface.md) instance that represents the global assembly cache.  

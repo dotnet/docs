@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ec00fbdd-6451-4888-ac6f-08e1e2d9b2fd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEditAndContinueSnapshot::SetPESymbolBytes Method
 `SetPESymbolBytes` is obsolete. Do not call this method.  

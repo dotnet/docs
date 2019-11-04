@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], constants"
   - "unmanaged API reference [.NET Framework], constants"
 ms.assetid: 77526f65-b71c-4483-9d19-3a3751fd8a45
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Constants (Unmanaged API Reference)
 This topic describes the language type, language vendor, and document type constants that are defined in CorSym.idl.  

@@ -30,6 +30,6 @@ To handle an event for an item in a <xref:System.Windows.Controls.ListView>, you
 
 - <xref:System.Xml.XmlElement>
 - [Data Binding Overview](../data/data-binding-overview.md)
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Bind to XML Data Using an XMLDataProvider and XPath Queries](../data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
 - [ListView Overview](listview-overview.md)

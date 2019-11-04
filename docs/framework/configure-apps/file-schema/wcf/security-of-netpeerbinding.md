@@ -53,7 +53,7 @@ Defines the security settings of the [\<netPeerTcpBinding>](netpeertcpbinding.md
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the [\<netPeerTcpBinding>](netpeertcpbinding.md).|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the [\<netPeerTcpBinding>](netpeertcpbinding.md).|  
   
 ## Remarks  
  Security can be either message- or transport-specific.  
@@ -69,4 +69,4 @@ Defines the security settings of the [\<netPeerTcpBinding>](netpeertcpbinding.md
 - [Bindings](../../../wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](bindings.md)

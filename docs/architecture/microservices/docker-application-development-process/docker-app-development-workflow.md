@@ -21,7 +21,9 @@ This section describes the *inner-loop* development workflow for Docker containe
 
 An application is composed of your own services plus additional libraries (dependencies). The following are the basic steps you usually take when building a Docker application, as illustrated in Figure 5-1.
 
-![Diagram showing the 7 steps it takes to create a containerized app.](./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png)
+:::image type="complex" source="./media/docker-app-development-workflow/life-cycle-containerized-apps-docker-cli.png" alt-text="Diagram showing the 7 steps it takes to create a containerized app.":::
+The development process for Docker apps: 1 - Code your App, 2 - Write Dockerfile/s, 3 - Create images defined at Dockerfile/s, 4 - (optional) Compose services in the docker-compose.yml file, 5 - Run container or docker-compose app, 6 - Test your app or microservices, 7 - Push to repo and repeat.
+:::image-end:::
 
 **Figure 5-1.** Step-by-step workflow for developing Docker containerized apps
 
@@ -534,7 +536,9 @@ If you're developing using the editor/CLI approach, debugging containers is more
 
 Effectively, the workflow when using Visual Studio is a lot simpler than if you use the editor/CLI approach. Most of the steps required by Docker related to the Dockerfile and docker-compose.yml files are hidden or simplified by Visual Studio, as shown in Figure 5-15.
 
-![Diagram showing the five simplified steps it takes to create an app.](./media/docker-app-development-workflow/simplified-life-cycle-containerized-apps-docker-cli.png)
+:::image type="complex" source="./media/docker-app-development-workflow/simplified-life-cycle-containerized-apps-docker-cli.png" alt-text="Diagram showing the five simplified steps it takes to create an app.":::
+The development process for Docker apps: 1 - Code your App, 2 - Write Dockerfile/s, 3 - Create images defined at Dockerfile/s, 4 - (optional) Compose services in the docker-compose.yml file, 5 - Run container or docker-compose app, 6 - Test your app or microservices, 7 - Push to repo and repeat.
+:::image-end:::
 
 **Figure 5-15**. Simplified workflow when developing with Visual Studio
 

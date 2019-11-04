@@ -2,7 +2,7 @@
 title: Cloud-native data patterns
 description: Learn about common data patterns found in cloud-native applications
 author: robvet
-ms.date: 11/01/2019
+ms.date: 11/03/2019
 ---
 # Cloud-native data patterns
 
@@ -120,7 +120,7 @@ NoSQL databases include a variety of data models for accessing and managing data
   
 - *Wide-Column Store* (hbase, Cassandra) - Related data is stored as a set of nested-key/value pairs within a single column. Read/write operations query against columns rather than rows. Popular for analytical workloads, columnar data can be retrieved as a single unit. Storing data in columns enables fast searching and data aggregation.
 
-- *Graph stores* (neo4j, titan) - Data is stored in a graph structure in the form of nodes, edges, and data properties. The *edges* represent relationships between nodes and are stored directly with the data. With this storage pattern, you can quickly traverse large amounts of related data. A recommendation engine is the classical use case for a graph database. It searches your browsing and purchase history along with that of other customers to recommend items to purchase.
+- *Graph stores* (neo4j, titan) - Data is stored in a graph structure in the form of nodes, edges, and data properties. The *edges* represent relationships between nodes and are stored directly with the data. With this storage pattern, you can quickly traverse large amounts of related data. A recommendation engine is the classical use case for a graph database. It searches your browsing and purchase history along with 675 of other customers to recommend items to purchase.
   
 Based upon specific data needs, a cloud-native-based microservice can either implement a relational, or a NoSQL datastore or both.
 

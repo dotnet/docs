@@ -11,14 +11,14 @@ ms.assetid: 4ce36ac1-81ef-48e8-b8b2-b5a5b0e2adcb
 ---
 # \<add> Element for \<listeners> for \<source>
 Adds a listener to the `Listeners` collection for a trace source.  
-  
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+
 ## Syntax  
   
 ```xml  

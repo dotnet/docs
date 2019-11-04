@@ -14,7 +14,7 @@ Configures mail sending options.
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<mailSettings>**\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<mailSettings>**
 
 ## Syntax  
   

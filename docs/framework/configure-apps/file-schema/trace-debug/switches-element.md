@@ -66,4 +66,3 @@ Contains trace switches and the level where the trace switches are set.
 - <xref:System.Diagnostics.TraceSwitch>
 - <xref:System.Diagnostics.BooleanSwitch>
 - [Trace and Debug Settings Schema](index.md)
- 

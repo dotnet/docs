@@ -55,7 +55,7 @@ Apache Spark is downloaded as a compressed .tgz file. Use an extraction program,
 
 [Download and install Apache Spark](https://spark.apache.org/downloads.html). You'll need to select from version 2.3.* or 2.4.0, 2.4.1, 2.4.3, or 2.4.4 (.NET for Apache Spark is not compatible with other versions of Apache Spark).  
 
-The commands used in the following steps will assume you have [downloaded and installed Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz). If you wish to use a different version, replace **2.4.1** with the appropriate version number. You then need to extract the **.tar** file and the Apache Spark files.
+The commands used in the following steps assume you have [downloaded and installed Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz). If you wish to use a different version, replace **2.4.1** with the appropriate version number. Then, extract the **.tar** file and the Apache Spark files.
 
 To extract the nested **.tar** file:
 

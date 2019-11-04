@@ -33,7 +33,7 @@ When you're using Visual Studio 2017, many of those steps are handled for you, w
 
 However, just because Visual Studio makes those steps automatic doesn't mean that you don't need to know what's going on underneath with Docker. Therefore, the following guidance details every step.
 
-![Image of the Step 1 tile from the step-by-step workflow.](./media/docker-app-development-workflow/step-1-code-your-app.png)
+![Image for Step 1.](./media/docker-app-development-workflow/step-1-code-your-app.png)
 
 ## Step 1. Start coding and create your initial application or service baseline
 
@@ -61,7 +61,7 @@ You can start coding your application in plain .NET (usually in .NET Core if you
 - **Visual Studio 2017** \
   [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
 
-![Image of the Step 2 tile from the step-by-step workflow.](./media/docker-app-development-workflow/step-2-write-dockerfile.png)
+![Image for Step 2.](./media/docker-app-development-workflow/step-2-write-dockerfile.png)
 
 ## Step 2. Create a Dockerfile related to an existing .NET base image
 
@@ -298,7 +298,7 @@ You can create your own Docker base image from scratch. This scenario is not rec
 - **Create a base image**. Official Docker documentation.\
   <https://docs.docker.com/develop/develop-images/baseimages/>
 
-![Image of the Step 3 tile from the step-by-step workflow.](./media/docker-app-development-workflow/step-3-create-dockerfile-defined-images.png)
+![Image for Step 3.](./media/docker-app-development-workflow/step-3-create-dockerfile-defined-images.png)
 
 ## Step 3. Create your custom Docker images and embed your application or service in them
 
@@ -330,7 +330,7 @@ You can find the existing images in your local repository by using the docker im
 
 When you use Visual Studio to create a project with Docker support, you don't explicitly create an image. Instead, the image is created for you when you press **F5** (or **Ctrl-F5**) to run the dockerized application or service. This step is automatic in Visual Studio and you won't see it happen, but it's important that you know what's going on underneath.
 
-![Image of the optional Step 4 tile from the step-by-step workflow.](./media/docker-app-development-workflow/step-4-define-services-docker-compose-yml.png)
+![Image for the optional Step 4.](./media/docker-app-development-workflow/step-4-define-services-docker-compose-yml.png)
 
 ## Step 4. Define your services in docker-compose.yml when building a multi-container Docker application
 
@@ -409,7 +409,7 @@ You have to repeat this operation form every project you want to include in the 
 
 At the time of this writing, Visual Studio supports Docker Compose and Service Fabric orchestrators.
 
-![Screenshot showing the Container Orchestrator Support option.](./media/docker-app-development-workflow/add-container-orchestrator-support-option.png)
+![Screenshot showing the Container Orchestrator Support option in the project context menu.](./media/docker-app-development-workflow/add-container-orchestrator-support-option.png)
 
 **Figure 5-7**. Adding Docker support in Visual Studio 2017 by right-clicking an ASP.NET Core project
 
@@ -421,7 +421,7 @@ After you add orchestrator support to your solution in Visual Studio, you will a
 
 You could deploy a multi-container application with a single docker-compose.yml file by using the `docker-compose up` command. However, Visual Studio adds a group of them so you can override values depending on the environment (development or production) and execution type (release or debug). This capability will be explained in later sections.
 
-![Image of the Step 5 tile from the step-by-step workflow.](./media/docker-app-development-workflow/step-5-run-containers-compose-app.png)
+![Image for the Step 5.](./media/docker-app-development-workflow/step-5-run-containers-compose-app.png)
 
 ## Step 5. Build and run your Docker application
 
@@ -494,13 +494,13 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 
 The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach for production deployments, where you should target orchestrators like [Kubernetes](https://kubernetes.io/) or [Service Fabric](https://azure.microsoft.com/services/service-fabric/). If you're using Kubernetes you have to use [pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) to organize containers and [services](https://kubernetes.io/docs/concepts/services-networking/service/) to network them. You also use [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to organize pod creation and modification.
 
-![Image of the Step 6 tile from the step-by-step workflow.](./media/docker-app-development-workflow/step-6-test-app-microservices.png)
+![Image for the Step 6.](./media/docker-app-development-workflow/step-6-test-app-microservices.png)
 
 ## Step 6. Test your Docker application using your local Docker host
 
 This step will vary depending on what your application is doing. In a simple .NET Core Web application that is deployed as a single container or service, you can access the service by opening a browser on the Docker host and navigating to that site, as shown in Figure 5-13. (If the configuration in the Dockerfile maps the container to a port on the host that is anything other than 80, include the host port in the URL.)
 
-![Browser view of the response from localhost/API/values.](./media/docker-app-development-workflow/test-docker-app-locally-localhost.png)
+![Screenshot of the response from localhost/API/values.](./media/docker-app-development-workflow/test-docker-app-locally-localhost.png)
 
 **Figure 5-13**. Example of testing your Docker application locally using localhost
 

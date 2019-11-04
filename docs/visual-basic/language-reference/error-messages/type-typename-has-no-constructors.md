@@ -26,4 +26,4 @@ A type does not support a call to `Sub New()`. One possible cause is a corrupted
 ## See also
 
 - [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

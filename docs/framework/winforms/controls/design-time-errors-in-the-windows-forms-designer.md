@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "errors [Windows Forms Designer]"
   - "design-time errors [Windows Forms Designer]"
 ms.assetid: ad408380-825a-46d8-9a4a-531b130b88ce
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Windows Forms Designer error page
@@ -207,7 +207,7 @@ You've tried to rename a component to an invalid value for that language. To cor
 
 ### The type '\<class name>' is made of several partial classes in the same file
 
-When you define a class in multiple files by using the [partial](/dotnet/csharp/language-reference/keywords/partial-type) keyword, you can only have one partial definition in each file.
+When you define a class in multiple files by using the [partial](../../../csharp/language-reference/keywords/partial-type.md) keyword, you can only have one partial definition in each file.
 
 To correct this error, remove all but one of the partial definitions of your class from the file.
 
@@ -255,7 +255,7 @@ Visual Studio could not load the designer for the class. If you see this error, 
 
 ### The designer must create an instance of type '\<type name>', but it can't because the type is declared as abstract
 
-This error occurred because the base class of the object being passed to the designer is [abstract](/dotnet/csharp/language-reference/keywords/abstract), which is not allowed.
+This error occurred because the base class of the object being passed to the designer is [abstract](../../../csharp/language-reference/keywords/abstract.md), which is not allowed.
 
 ### The file could not be loaded in the designer
 
@@ -357,7 +357,7 @@ This message is similar to "The language for this file does not support the nece
 
 ### Type '\<type name\>' does not have a constructor with parameters of types '\<parameter type names>'
 
-Visual Studio could not find a [constructor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) that had matching parameters. This may be the result of supplying a constructor with types other than those that are required. For example, a **Point** constructor might take two integers. If you provided floats, this error is raised.
+Visual Studio could not find a [constructor](../../../csharp/programming-guide/classes-and-structs/constructors.md) that had matching parameters. This may be the result of supplying a constructor with types other than those that are required. For example, a **Point** constructor might take two integers. If you provided floats, this error is raised.
 
 To correct this error, use a different constructor or explicitly cast the parameter types such that they match those provided by the constructor.
 

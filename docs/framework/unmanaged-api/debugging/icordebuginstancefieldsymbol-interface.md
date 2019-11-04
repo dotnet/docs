@@ -2,8 +2,6 @@
 title: "ICorDebugInstanceFieldSymbol Interface"
 ms.date: "03/30/2017"
 ms.assetid: a4a8f259-b83a-4425-ae8b-72b067dbc0d9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInstanceFieldSymbol Interface
 Represents the debug symbol information for an instance field.  

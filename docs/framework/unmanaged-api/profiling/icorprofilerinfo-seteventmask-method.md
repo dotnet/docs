@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 44bc0f56-32fa-491e-a62d-52fc96d48125
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo::SetEventMask Method
 Sets a value that specifies the types of events for which the profiler wants to receive notification from the common language runtime (CLR).  

@@ -26,4 +26,4 @@ This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltec
   
 ## See also
 
-- [Querying XML Trees (C#)](./querying-xml-trees.md)
+- [Querying XML Trees (C#)](how-to-find-an-element-with-a-specific-attribute.md)

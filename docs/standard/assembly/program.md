@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], programming"
   - "programming assemblies"
 ms.assetid: 25918b15-701d-42c7-95fc-c290d08648d6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Program with assemblies
 Assemblies are the building blocks of the .NET Framework; they form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions. An assembly provides the common language runtime with the information it needs to be aware of type implementations. It is a collection of types and resources that are built to work together and form a logical unit of functionality. To the runtime, a type does not exist outside the context of an assembly.  

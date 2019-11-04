@@ -33,18 +33,18 @@ Let's do a quick walkthrough:
 
 1. `dotnet new console`
 
-   [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
+   [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date *Hello.csproj* project file with the dependencies necessary to build a console app. It also creates a *Program.cs*, a basic file containing the entry point for the application.
 
-   `Hello.csproj`:
+   *Hello.csproj*:
 
-   [!code[Hello.csproj](../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]
+   [!code-xml[Hello.csproj](../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]
 
    The project file specifies everything that's needed to restore dependencies and build the program.
 
    - The `OutputType` tag specifies that we're building an executable, in other words a console application.
    - The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
 
-   `Program.cs`:
+   *Program.cs*:
 
    [!code-csharp[Program.cs](../../../samples/core/console-apps/HelloMsBuild/Program.cs)]
 

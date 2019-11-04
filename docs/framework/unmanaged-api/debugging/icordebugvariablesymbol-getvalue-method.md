@@ -2,8 +2,6 @@
 title: "ICorDebugVariableSymbol::GetValue Method"
 ms.date: "03/30/2017"
 ms.assetid: 90abece1-392e-4ade-94a1-30c75b0f7074
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableSymbol::GetValue Method
 Gets the value of a variable as a byte array.  

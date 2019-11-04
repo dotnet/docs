@@ -12,8 +12,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "ICLRDomainManager interface [.NET Framework hosting]"
 ms.assetid: f08b2390-d872-4521-a815-e9c237c4c45d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDomainManager Interface
 Enables the host to specify the application domain manager that will be used to initialize the default application domain, and to specify initialization properties.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8809d00e-beaa-4dcf-b4e8-e89d0a5406b7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_DEBUG_STEP_RANGE Structure
 Contains the offset information for a range of code.  

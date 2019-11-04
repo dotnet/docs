@@ -180,4 +180,4 @@ You can close WCF Test Client in the following ways:
 
 ## See also
 
-- [WCF Service Host (WcfSvcHost.exe)](../../../docs/framework/wcf/wcf-service-host-wcfsvchost-exe.md)
+- [WCF Service Host (WcfSvcHost.exe)](wcf-service-host-wcfsvchost-exe.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6382bdf6-d488-4952-b653-cb09b6e1c6c2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::SetDebugState Method
 Sets flags that describe the debugging state of this ICorDebugThread.  

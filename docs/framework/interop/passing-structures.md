@@ -7,8 +7,6 @@ dev_langs:
 helpviewer_keywords: 
   - "platform invoke, calling unmanaged functions"
 ms.assetid: 9b92ac73-32b7-4e1b-862e-6d8d950cf169
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Passing Structures
 Many unmanaged functions expect you to pass, as a parameter to the function, members of structures (user-defined types in Visual Basic) or members of classes that are defined in managed code. When passing structures or classes to unmanaged code using platform invoke, you must provide additional information to preserve the original layout and alignment. This topic introduces the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute, which you use to define formatted types. For managed structures and classes, you can select from several predictable layout behaviors supplied by the **LayoutKind** enumeration.  

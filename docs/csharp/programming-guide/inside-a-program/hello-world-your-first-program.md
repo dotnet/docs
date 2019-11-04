@@ -12,7 +12,7 @@ ms.assetid: 6493182a-b0b6-4539-a719-518a168cb730
 ---
 # Hello World -- Your first program
 
-In this article, you'll use Visual Studio to create the traditional "Hello World!" program. Visual Studio is a professional Integrated Development Environment (IDE) with many features designed for .NET development. You'll use only a few of the features in Visual Studio to create this program. To learn more about Visual Studio, see [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).
+In this article, you'll use Visual Studio to create the traditional "Hello World!" program. Visual Studio is a professional Integrated Development Environment (IDE) with many features designed for .NET development. You'll use only a few of the features in Visual Studio to create this program. To learn more about Visual Studio, see [Getting Started with Visual C#](/visualstudio/ide/quickstart-csharp-console).
 
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]
 
@@ -122,4 +122,4 @@ For more information about input/output methods, see <xref:System.IO>.
 - [C# Programming Guide](../index.md)
 - [Samples and tutorials](../../../samples-and-tutorials/index.md)
 - [Main() and Command-Line Arguments](../main-and-command-args/index.md)
-- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+- [Getting Started with Visual C#](/visualstudio/ide/quickstart-csharp-console)

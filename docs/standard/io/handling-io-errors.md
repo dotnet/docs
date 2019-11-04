@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "I/O, exception handling"
   - "I/O, errors"
-author: "rpetrusha"
-ms.author: "ronpet"
 ms.workload: 
   - "dotnet"
   - "dotnetcore"

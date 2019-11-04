@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetObjectText function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetObjectText function
 Returns a textual rendering of the object in the Managed Object Format (MOF) syntax.

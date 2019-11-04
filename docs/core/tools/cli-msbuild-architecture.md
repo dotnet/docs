@@ -8,6 +8,7 @@ ms.date: 03/06/2017
 This document describes the changes associated with moving from *project.json* to MSBuild and the *csproj* project system with information on the changes to the layering of the .NET Core tooling and the implementation of the CLI commands. These changes occurred with the release of .NET Core SDK 1.0 and Visual Studio 2017 on March 7, 2017 (see the [announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-tools-1-0/)) but were initially implemented with the release of the .NET Core SDK Preview 3.
 
 ## Moving away from project.json
+
 The biggest change in the tooling for .NET Core is certainly the [move away from project.json to csproj](https://devblogs.microsoft.com/dotnet/changes-to-project-json/) as the project system. The latest versions of the command-line tools don't support *project.json* files. That means that it cannot be used to build, run or publish project.json based applications and libraries. In order to use this version of the tools, you will need to migrate your existing projects or start new ones. 
 
 As part of this move, the custom build engine that was developed to build project.json projects was replaced with a mature and fully capable build engine called [MSBuild](https://github.com/Microsoft/msbuild). MSBuild is a well-known engine in the .NET community, since it has been a key technology since the platform's first release. Of course, because it needs to build .NET Core applications, MSBuild has been ported to .NET Core and can be used on any platform that .NET Core runs on. One of the main promises of .NET Core is that of a cross-platform development stack, and we have made sure that this move does not break that promise.
@@ -16,6 +17,7 @@ As part of this move, the custom build engine that was developed to build projec
 > If you are new to MSBuild and would like to learn more about it, you can start by reading the [MSBuild Concepts](/visualstudio/msbuild/msbuild-concepts) article. 
 
 ## The tooling layers
+
 With the move away from the existing project system as well as with building engine switches, the question that naturally follows is do any of these changes change the overall "layering" of the whole .NET Core tooling ecosystem? Are there new bits and components?
 
 Let's start with a quick refresher on Preview 2 layering as shown in the following picture:
@@ -40,23 +42,27 @@ The shared SDK component means that the majority of existing CLI commands have b
 
 From an usage perspective, it doesn't change the way you use the CLI. The CLI still has the core commands that exist in Preview 2 release:
 
-* `new`
-* `restore`
-* `run` 
-* `build`
-* `publish`
-* `test`
-* `pack` 
+- `new`
+- `restore`
+- `run` 
+- `build`
+- `publish`
+- `test`
+- `pack` 
 
 These commands still do what you expect them to do (new up a project, build it, publish it, pack it and so on). Majority of the options are not changed, and are still there, and you can consult either the commands' help screens (using `dotnet <command> --help`) or documentation on this site to get familiar with any changes. 
 
 From an execution perspective, the CLI commands will take their parameters and construct a call to "raw" MSBuild that will set the needed properties and run the desired target. To better illustrate this, consider the following command: 
 
-   `dotnet publish -o pub -c Release`
+   ```dotnetcli
+   dotnet publish -o pub -c Release
+   ```
     
 This command is publishing an application into a `pub` folder using the "Release" configuration. Internally, this command gets translated into the following MSBuild invocation: 
 
-   `dotnet msbuild -t:Publish -p:OutputPath=pub -p:Configuration=Release`
+   ```dotnetcli
+   dotnet msbuild -t:Publish -p:OutputPath=pub -p:Configuration=Release
+   ```
 
 The notable exception to this rule are `new` and `run` commands, as they have not been implemented as MSBuild targets.
 

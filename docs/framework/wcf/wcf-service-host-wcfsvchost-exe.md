@@ -109,7 +109,7 @@ To enable users without administrator privilege to develop WCF services, an ACL 
 
 You can modify access using the netsh.exe tool in [!INCLUDE[wv](../../../includes/wv-md.md)] under the elevated administrator account. The following is an example of using netsh.exe.
 
-```
+```console
 netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>
 ```
 
@@ -117,4 +117,4 @@ For more information on netsh.exe, see "[How to Use the Netsh.exe Tool and Comma
 
 ## See also
 
-- [WCF Test Client (WcfTestClient.exe)](../../../docs/framework/wcf/wcf-test-client-wcftestclient-exe.md)
+- [WCF Test Client (WcfTestClient.exe)](wcf-test-client-wcftestclient-exe.md)

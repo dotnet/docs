@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 34667162-f314-475f-ae1b-ce9cb0fcbb83
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModuleBreakpoint Interface
 

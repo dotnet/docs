@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "assemblyBinding element"
   - "container tags, <assemblyBinding> element"
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<assemblyBinding> Element for \<runtime>
 Contains information about assembly version redirection and the locations of assemblies.  

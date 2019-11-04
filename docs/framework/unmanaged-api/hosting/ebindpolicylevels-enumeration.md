@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a9e00b4f-b6d0-4257-bd88-4fe9af97b8fa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EBindPolicyLevels Enumeration
 Provides flags to specify the level at which to apply or modify assembly policy.  

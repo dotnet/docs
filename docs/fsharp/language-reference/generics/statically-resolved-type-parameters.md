@@ -56,7 +56,7 @@ Starting with F# 4.1, you can also specify concrete type names in statically res
 ```fsharp
 let inline konst x _ = x
 
-type CFunctor() = 
+type CFunctor() =
     static member inline fmap (f: ^a -> ^b, a: ^a list) = List.map f a
     static member inline fmap (f: ^a -> ^b, a: ^a option) =
         match a with

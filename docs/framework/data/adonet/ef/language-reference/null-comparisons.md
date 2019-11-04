@@ -11,7 +11,7 @@ A `null` value in the data source indicates that the value is unknown. In LINQ t
   
  By default in SQL Server, the null-equals-null comparison returns a null value. In the following example, the rows where `ShipDate` is null are excluded from the result set, and the Transact-SQL statement would return 0 rows.  
   
-```  
+```sql  
 -- Find order details and orders with no ship date.  
 SELECT h.SalesOrderID  
 FROM Sales.SalesOrderHeader h  

@@ -187,11 +187,11 @@ The serialized class instance might resemble the following, if two items are ord
         <Item>
             <ItemID>aaa111</ItemID>
             <ItemPrice>34.22</ItemPrice>
-        <Item>
+        </Item>
         <Item>
             <ItemID>bbb222</ItemID>
             <ItemPrice>2.89</ItemPrice>
-        <Item>
+        </Item>
     </ItemsOrders>
 </PurchaseOrder>
 ```
@@ -766,9 +766,9 @@ The XML output might resemble the following.
 
 ## See also
 
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
-- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)
-- [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)
+- [Introducing XML Serialization](introducing-xml-serialization.md)
+- [Controlling XML Serialization Using Attributes](controlling-xml-serialization-using-attributes.md)
+- [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)
 - [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)
-- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
-- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4657443f-dd12-431b-a648-175c23f13c83
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::CreateStepper Method
 Creates an ICorDebugStepper object that allows stepping through the active frame of this ICorDebugThread.  

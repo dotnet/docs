@@ -9,7 +9,7 @@ Pooling connections can significantly enhance the performance and scalability of
 ## Connection Pooling for OleDb  
  The .NET Framework Data Provider for OLE DB automatically pools connections using OLE DB session pooling. Connection string arguments can be used to enable or disable OLE DB services including pooling. For example, the following connection string disables OLE DB session pooling and automatic transaction enlistment.  
   
-```  
+```csharp
 Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=SSPI;  
 ```  
   

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6ae0204c-6bb2-4bda-b13e-94507203bc68
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEditAndContinueErrorInfo Interface
 `ICorDebugEditAndContinueErrorInfo` is obsolete. Do not use this interface.  

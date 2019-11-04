@@ -26,7 +26,7 @@ The following code example shows how to modify the computer configuration file, 
     ……………  
     </settings>  
     ………………  
-<system.net>  
+</system.net>  
 ```  
   
 ## See also

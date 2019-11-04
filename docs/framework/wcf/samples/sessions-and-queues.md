@@ -170,7 +170,7 @@ using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Requ
   
  On the client.  
   
-```  
+```console  
 Purchase Order created  
 Adding 10 quantities of blue widget  
 Adding 23 quantities of red widget  
@@ -181,7 +181,7 @@ Press <ENTER> to terminate client.
   
  On the service.  
   
-```  
+```console  
 The service is ready.  
 Press <ENTER> to terminate service.  
   

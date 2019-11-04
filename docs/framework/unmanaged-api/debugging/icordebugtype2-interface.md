@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 376fb03f-f1ef-4107-baa4-4d9d55884862
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType2 Interface
 Extends the ICorDebugType interface to retrieve the type identifier  of a base type or complex (user-defined) type.  

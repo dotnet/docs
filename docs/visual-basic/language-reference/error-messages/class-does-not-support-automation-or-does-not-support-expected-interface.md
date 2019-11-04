@@ -17,4 +17,4 @@ Either the class you specified in the `GetObject` or `CreateObject` function cal
 ## See also
 
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

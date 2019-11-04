@@ -2,8 +2,6 @@
 title: "<useLegacyJit> Element"
 ms.date: "04/26/2017"
 ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # \<useLegacyJit> Element

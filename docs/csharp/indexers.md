@@ -2,6 +2,7 @@
 title: Indexers
 description: Learn about C# indexers and how they implement indexed properties, which are properties referenced using one or more arguments.
 ms.date: 06/20/2016
+ms.technology: csharp-fundamentals
 ms.assetid: 0e9496da-e766-45a9-b92b-91820d4a350e
 ---
 
@@ -401,5 +402,5 @@ class where that property represents not a single value, but rather a collection
 of values where each individual item is identified by a set of arguments. Those
 arguments can uniquely identify which item in the collection should be referenced.
 Indexers extend the concept of [properties](properties.md), where a member is treated
-like a data item from outside the class, but like a method on the side. Indexers allow
+like a data item from outside the class, but like a method on the inside. Indexers allow
 arguments to find a single item in a property that represents a set of items.

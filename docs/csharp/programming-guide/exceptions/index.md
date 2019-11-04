@@ -47,7 +47,7 @@ See the following articles for more information about exceptions and exception h
 
 ## C# Language Specification
 
-For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

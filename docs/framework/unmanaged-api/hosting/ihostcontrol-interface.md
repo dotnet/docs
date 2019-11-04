@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a4ae0d1f-ade9-4b0a-a122-93ed11a5e6b3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostControl Interface
 Provides methods for configuring the loading of assemblies, and for determining which hosting interfaces the host supports.  

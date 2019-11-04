@@ -689,10 +689,10 @@ We're sorry, but we don’t have any specific information about this error. You 
 Provides a QA website for questions about and issues with Visual C#.  
 
  Also see:  
- [Additional Resources for Visual C# Programmers](../getting-started/additional-resources.md)  
+ [Additional Resources for Visual C# Programmers](../getting-started/index.md)  
   
 ## See also
 
 - [C# Programming Guide](../programming-guide/index.md)
 - [C# Reference](../language-reference/index.md)
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

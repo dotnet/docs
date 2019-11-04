@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "DataContractJsonSerializer changes"
   - "serialization changes"
 ms.assetid: e065d458-a128-44f2-9f17-66af9d5be954
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Serialization of Control Characters with the DataContractJsonSerializer
 
@@ -36,4 +34,4 @@ If this behavior is not desirable, you can opt out of this feature by adding the
  
 ## See also
 
-- [Retargeting Changes in the .NET Framework 4.7](retargeting-changes-in-the-net-framework-4-7.md)
+- [Application compatibility](application-compatibility.md)

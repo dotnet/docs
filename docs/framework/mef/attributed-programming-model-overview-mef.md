@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "MEF, attributed programming model"
   - "attributed programming model [MEF]"
 ms.assetid: 49b787ff-2741-4836-ad51-c3017dc592d4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Attributed Programming Model Overview (MEF)

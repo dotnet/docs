@@ -1,5 +1,5 @@
 ---
-title: "How to serialize and deserialize JSON using C# - .NET"
+title: "How to serialize and deserialize JSON - .NET"
 author: tdykstra
 ms.author: tdykstra
 ms.date: "09/16/2019"
@@ -8,6 +8,9 @@ helpviewer_keywords:
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
+dev_langs:
+  - vb
+  - csharp
 ---
 
 # How to serialize and deserialize JSON in .NET
@@ -19,11 +22,16 @@ This article shows how to use the <xref:System.Text.Json> namespace to serialize
 
 ## Namespaces
 
-The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. Therefore, the code examples shown in this article require one or both of the following `using` directives:
+The <xref:System.Text.Json> namespace contains all the entry points and the main types. The <xref:System.Text.Json.Serialization> namespace contains attributes and APIs for advanced scenarios and customization specific to serialization and deserialization. Therefore, the code examples shown in this article require one or both of the following C# `using` directives or Visual Basic `Imports` statements:
 
 ```csharp
 using System.Text.Json;
 using System.Text.Json.Serialization;
+```
+
+```vb
+Imports System.Text.Json
+Imports System.Text.Json.Serialization
 ```
 
 Attributes from the <xref:System.Runtime.Serialization> namespace aren't currently supported in `System.Text.Json`.
@@ -38,12 +46,24 @@ WeatherForecast weatherForecast;
 string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);
 ```
 
+```vb
+Dim weatherForecast As WeatherForecast
+'...
+Dim json AsString = JsonSerializer.Serialize(Of WeatherForecast)(weatherForecast)
+```
+
 You can omit the generic type parameter and use generic type inference instead:
 
 ```csharp
 WeatherForecast weatherForecast;
 //...
 string json = JsonSerializer.Serialize(weatherForecast);
+```
+
+```vb
+Dim weatherForecast As WeatherForecast
+'...
+Dim json As String = JsonSerializer.Serialize(weatherForecast)
 ```
 
 Here's an example type to be serialized, which contains collections and nested classes:
@@ -69,6 +89,26 @@ public class Temperature
 {
     public int DegreesCelsius { get; set; }
 }
+```
+
+```vb
+Public Class WeatherForecast
+    Public Property Date As DateTimeOffset
+    Public Property TemperatureC As Integer
+    Public Property Summary As String
+    Public Property DatesAvailableAs IList(Of DateTimeOffset)
+    Public Property TemperatureRanges As Dictionary(Of String, HighLowTemperatures)
+    Public Property SummaryWords As String()
+End Class
+
+Public Class HighLowTemperatures
+    Public Property High As Temperature
+    Public Property Low As Temperature
+End Class
+
+Public Class Temperature
+    Public Property DegreesCelsius As Integer
+End Class
 ```
 
 The JSON output is minified by default: 
@@ -124,6 +164,10 @@ To serialize to UTF-8, call the <xref:System.Text.Json.JsonSerializer.SerializeT
 byte[] utf8Json = JsonSerializer.SerializeToUtf8Bytes<WeatherForecast>(weatherForecast);
 ```
 
+```vb
+Dim utf8Json As Byte() = JsonSerializer.SerializeToUtf8Bytes(Of WeatherForecast)(weatherForecast)
+```
+
 As an alternative, a <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is available.
 
 Serializing to UTF-8 is about 5-10% faster than using the string-based methods. The difference is because the bytes (as UTF-8) don't need to be converted to strings (UTF-16).
@@ -158,6 +202,12 @@ string json = ... ;
 var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json);
 ```
 
+```vb
+Dim json As String = ...
+
+Dim weatherForecast = JsonSerializer.Deserialize(Of WeatherForecast)(json)
+```
+
 For an example, see the [serialize](#how-to-write-net-objects-to-json-serialize) section. The JSON and .NET object are the same, but the direction is reversed.
 
 Overloads of <xref:System.Text.Json.JsonSerializer.Deserialize*> let you deserialize from a `Stream`.  Async versions of the `Stream` overloads are available.
@@ -173,11 +223,25 @@ var readOnlySpan = new ReadOnlySpan<byte>(utf8Json);
 weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(readOnlySpan);
 ```
 
+```vb
+Dim utf8Json As Byte()
+'...
+Dim readOnlySpan As New ReadOnlySpan(Of Byte)(utf8Json)
+weatherForecast = JsonSerializer.Deserialize(Of WeatherForecastMin)(readOnlySpan)
+```
+
 ```csharp
 byte[] utf8Json;
 //...
 var utf8Reader = new Utf8JsonReader(utf8Json);
 weatherForecast = JsonSerializer.Deserialize<WeatherForecastMin>(ref utf8Reader);
+```
+
+```vb
+Dim utf8Json As Byte()
+'...
+Dim utf8Reader As New Utf8JsonReader(utf8Json)
+weatherForecast = JsonSerializer.Deserialize(Of WeatherForecastMin)(utf8Reader)
 ```
 
 ## Deserialization behavior
@@ -203,6 +267,11 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
+```vb
+Dim options As New JsonSerializerOptions With { .WriteIndented = True }
+json = JsonSerializer.Serialize(weatherForecast, options)
+```
+
 Here's an example type to be serialized and JSON output:
 
 ```csharp
@@ -212,6 +281,14 @@ class WeatherForecast
     public int TemperatureC { get; set; }
     public string Summary { get; set; }
 }
+```
+
+```vb
+Class WeatherForecast
+    Public Property Date As DateTimeOffset
+    Public Property TemperatureC As Integer
+    Public Property Summary As String
+End Class
 ```
 
 ```json
@@ -233,6 +310,11 @@ var options = new JsonSerializerOptions
     AllowTrailingCommas = true
 };
 var weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json, options);
+```
+
+```vb
+Dim options As New JsonSerializerOptions With { .ReadCommentHandling = JsonCommentHandling.Skip, .AllowTrailingCommas = True }
+Dim weatherForecast = JsonSerializer.Deserialize(Of WeatherForecast)(json, options)
 ```
 
 Here's example JSON with comments and a trailing comma:
@@ -271,6 +353,16 @@ class WeatherForecast
     [JsonPropertyName("Wind")]
     public int WindSpeed { get; set; }
 }
+```
+
+```vb
+Class WeatherForecast
+    Public Property Date As DateTimeOffset
+    Public Property TemperatureC As Integer
+    Public Property Summary As String
+    <JsonPropertyName("Wind")>
+    Public Property WindSpeed As Integer
+End Class
 ```
 
 ```json

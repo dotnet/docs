@@ -69,7 +69,7 @@ The first example uses a sequence expression that contains an iteration, a filte
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1507.fs)]
 
-The following code uses creates a multiplication table that consists of tuples of three elements, each consisting of two factors and the product.
+The following code creates a multiplication table that consists of tuples of three elements, each consisting of two factors and the product.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1508.fs)]
 

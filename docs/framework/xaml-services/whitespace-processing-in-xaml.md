@@ -13,7 +13,7 @@ The language rules for XAML state that significant white space must be processed
   
 <a name="whitespace_definition"></a>   
 ## White-space definition  
- Consistent with [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sharptla-xml-md.md)], white-space characters in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] are space, linefeed, and tab. These correspond to the Unicode values 0020, 000A, and 0009 respectively.  
+ Consistent with XML, white-space characters in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] are space, linefeed, and tab. These correspond to the Unicode values 0020, 000A, and 0009 respectively.  
   
 <a name="whitespace_normalization"></a>   
 ## White-space normalization  

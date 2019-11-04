@@ -21,4 +21,4 @@ DatePicker Control
 ## See also
 
 - [Controls](index.md)
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

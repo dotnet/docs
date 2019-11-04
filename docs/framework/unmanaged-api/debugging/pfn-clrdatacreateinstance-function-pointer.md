@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5c66ac57-d751-4de5-af9f-26ceb949af8b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PFN_CLRDataCreateInstance Function Pointer
 Points to a function that creates an interface object for the specified target item.  

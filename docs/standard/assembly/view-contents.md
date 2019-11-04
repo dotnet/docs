@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "MSIL"
   - "viewing MSIL information"
 ms.assetid: fb7baaab-4c0d-47ad-8fd3-4591cf834709
-author: "rpetrusha"
-ms.author: "ronpet"
 dev_langs: 
   - "csharp"
   - "vb"

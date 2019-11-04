@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2b94bda7-09ee-435d-91b9-c4e31af1896c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStringValue::GetString Method
 Gets the string referenced by this ICorDebugStringValue.  

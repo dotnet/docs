@@ -11,7 +11,7 @@ ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
 # Extension Methods (Visual Basic)
 
 Extension methods enable developers to add custom functionality to data types that are already defined without creating a new derived type. Extension methods make it possible to write a method that can be called as if it were an instance method of the existing type.
-  
+
 ## Remarks
 
 An extension method can be only a `Sub` procedure or a `Function` procedure. You cannot define an extension property, field, or event. All extension methods must be marked with the extension attribute `<Extension>` from the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace and must be defined in a [Module](../../../language-reference/statements/module-statement.md). If an extension method is defined outside a module, the Visual Basic compiler generates error [BC36551](../../../misc/bc36551.md), "Extension methods can be defined only in modules".
@@ -23,7 +23,7 @@ The `Extension` attribute can only be applied to a Visual Basic [`Module`](../..
 ## Example
 
 The following example defines a `Print` extension to the <xref:System.String> data type. The method uses `Console.WriteLine` to display a string. The parameter of the `Print` method, `aString`, establishes that the method extends the <xref:System.String> class.
-  
+
 [!code-vb[VbVbalrExtensionMethods#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrExtensionMethods/VB/StringExtensions.vb#1)]
 
 Notice that the extension method definition is marked with the extension attribute `<Extension()>`. Marking the module in which the method is defined is optional, but each extension method must be marked. <xref:System.Runtime.CompilerServices> must be imported in order to access the extension attribute.
@@ -39,7 +39,6 @@ The next example, `PrintAndPunctuate`, is also an extension to <xref:System.Stri
 The method is called by sending in a string argument for `punc`: `example.PrintAndPunctuate(".")`
 
 The following example shows `Print` and `PrintAndPunctuate` defined and called. <xref:System.Runtime.CompilerServices> is imported in the definition module in order to enable access to the extension attribute.
-
 
 ```vb
 Imports System.Runtime.CompilerServices

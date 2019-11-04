@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 634ef9f9-e94b-4776-a9e1-866df9a76c8f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyEnum Interface
 Represents an enumerator for an array of `IAssemblyName` objects.  

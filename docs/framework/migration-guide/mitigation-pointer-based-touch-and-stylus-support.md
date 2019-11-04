@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "WPF retargeting changes"
   - "WPF pointer-based touch and stylus stack"
 ms.assetid: f99126b5-c396-48f9-8233-8f36b4c9e717
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Pointer-based Touch and Stylus Support
 
@@ -50,4 +48,4 @@ Removing this entry or setting its value to `false` turns this optional stack of
 
 ## See also
 
-- [Retargeting Changes in the .NET Framework 4.7](retargeting-changes-in-the-net-framework-4-7.md)
+- [Application compatibility](application-compatibility.md)

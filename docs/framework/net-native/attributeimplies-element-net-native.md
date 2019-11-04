@@ -2,8 +2,6 @@
 title: "<AttributeImplies> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<AttributeImplies> Element (.NET Native)
 Defines policy for code elements the containing attribute is applied to.  

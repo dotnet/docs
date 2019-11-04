@@ -4,7 +4,7 @@ description: Supported macOS versions and .NET Core dependencies to develop, dep
 author: thraka
 ms.author: adegeo
 ms.custom: "updateeachvsrelease"
-ms.date: 09/27/2019
+ms.date: 10/11/2019
 ---
 # Prerequisites for .NET Core on macOS
 
@@ -39,6 +39,17 @@ Download and install the .NET Core SDK from the [.NET Core 2.1 downloads](https:
 For a list of known issues, see [.NET Core known issues](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-known-issues.md).
 
 ---
+
+## libgdiplus
+
+.NET Core applications that use the *System.Drawing.Common* assembly require libgdiplus to be installed.
+
+An easy way to obtain libgdiplus is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install libgdiplus by executing the following commands at a Terminal (command) prompt:
+
+```console
+brew update
+brew install libgdiplus
+```
 
 ## Visual Studio for Mac
 

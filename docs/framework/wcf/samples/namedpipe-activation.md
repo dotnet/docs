@@ -174,7 +174,7 @@ Press <ENTER> to terminate client.
 
     1. To support net.pipe activation, the default Web site must first be bound to the net.pipe protocol. This can be done using appcmd.exe, which is installed with the IIS 7.0 management toolset. From an elevated (administrator) command prompt, run the following command.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"
         -+bindings.[protocol='net.pipe',bindingInformation='*']
         ```
@@ -186,7 +186,7 @@ Press <ENTER> to terminate client.
 
     2. Although all applications within a site share a common net.pipe binding, each application can enable net.pipe support individually. To enable net.pipe for the /servicemodelsamples application, run the following command from an elevated command prompt.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.pipe
         ```
 
@@ -203,7 +203,7 @@ Press <ENTER> to terminate client.
 
     1. Remove net.tcp from the list of enabled protocols by running the following command from an elevated command prompt.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http
         ```
 
@@ -212,7 +212,7 @@ Press <ENTER> to terminate client.
 
     2. Remove the net.tcp site binding by running the following command from an elevated command prompt.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" --bindings.[protocol='net.pipe',bindingInformation='*']
         ```
 

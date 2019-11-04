@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "providers [.NET Framework], in observer design pattern"
   - "observables [.NET Framework], in observer design pattern"
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Implement a Provider
 The observer design pattern requires a division between a provider, which monitors data and sends notifications, and one or more observers, which receive notifications (callbacks) from the provider. This topic discusses how to create a provider. A related topic, [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md), discusses how to create an observer.  

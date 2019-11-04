@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b63a507a-ca97-4be0-8e4f-401cce2125f6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcessEnum Interface
 Implements ICorDebugEnum methods and enumerates ICorDebugProcess arrays.  

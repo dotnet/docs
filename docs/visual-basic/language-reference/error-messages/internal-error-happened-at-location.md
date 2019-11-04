@@ -12,4 +12,4 @@ An internal error has occurred. The line at which it occurred is contained in th
   
 ## See also
 
-- [Debugger Basics](/visualstudio/debugger/debugger-basics)
+- [Debugger Basics](/visualstudio/debugger/debugger-feature-tour)

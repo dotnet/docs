@@ -48,7 +48,7 @@ If you're connecting to Azure Storage Table service, you'll need your connection
 
 ### Get your Azure Cosmos DB connection string
 
-If you're connecting to Azure Cosmos DB, you'll need your connection string for this tutorial. You can copy your connection string from the Azure portal. In the Azure portal, in your Cosmos DB account, go to **Settings** > **Connection String**, and click the **Copy** button to copy your Primary Connection String. 
+If you're connecting to Azure Cosmos DB, you'll need your connection string for this tutorial. You can copy your connection string from the Azure portal. In the Azure portal, in your Cosmos DB account, go to **Settings** > **Connection String**, and click the **Copy** button to copy your Primary Connection String.
 
 For the tutorial, enter your connection string in your script, like the following example:
 
@@ -191,4 +191,3 @@ to learn about more complex storage tasks and the Azure Cosmos DB Table API.
 - [Azure Storage Type Provider](https://fsprojects.github.io/AzureStorageTypeProvider/)
 - [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Configuring Connection Strings](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
-- [Getting Started with Azure Table Storage in .NET](https://azure.microsoft.com/resources/samples/storage-table-dotnet-getting-started/)

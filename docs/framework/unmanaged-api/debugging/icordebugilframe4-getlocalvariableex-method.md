@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 0c8676f8-ca0d-4998-b64d-fefac7e38912
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame4::GetLocalVariableEx Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

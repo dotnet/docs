@@ -20,7 +20,7 @@ Terminates execution immediately.
   
 ## Syntax  
   
-```  
+```vb  
 End  
 ```  
   

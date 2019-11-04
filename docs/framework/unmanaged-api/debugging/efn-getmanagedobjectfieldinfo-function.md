@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3b93bcff-62a4-47b2-babc-6bcf4216119a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \_EFN\_GetManagedObjectFieldInfo Function
 Gets the offset from the start of an object to a field and the field's value, using the provided object pointer and field name.  

@@ -29,4 +29,4 @@ In Visual Basic, errors fall into one of three categories: syntax errors, run-ti
 ## See also
 
 - [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
-- [Debugger Basics](/visualstudio/debugger/debugger-basics)
+- [Debugger Basics](/visualstudio/debugger/debugger-feature-tour)

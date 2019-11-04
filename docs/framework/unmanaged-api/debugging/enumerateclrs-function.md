@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: f8d50cb3-ec4f-4529-8fe3-bd61fd28e13c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EnumerateCLRs Function
 Provides a mechanism for enumerating the CLRs in a process.  

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "resolving assembly binding requests"
   - "versioning, assemblies"
 ms.assetid: 775ad4fb-914f-453c-98ef-ce1089b6f903
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Assembly versioning
 

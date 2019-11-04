@@ -8,8 +8,6 @@ helpviewer_keywords:
   - ".NET Framework, documentation"
   - "documentation, .NET Framework"
 ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # .NET Framework Guide
@@ -58,4 +56,4 @@ Provides documentation for private .NET Framework APIs used by Microsoft tools.
 
 ## See also
 
-- [.NET Framework Class Library](/dotnet/api/?view=netframework-4.8)
+* [.NET Framework Class Library](/dotnet/api/?view=netframework-4.8)

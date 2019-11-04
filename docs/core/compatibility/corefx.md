@@ -2,8 +2,6 @@
 title: CoreFx breaking changes - .NET Core
 description: Lists the breaking changes in .NET CoreFx, the base class library.
 ms.date: "09/20/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoreFx breaking changes
 

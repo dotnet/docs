@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 55cb673a-e240-43a6-a406-6912e7c0fe66
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::LoadAssembly Method
 Notifies the debugger that a common language runtime (CLR) assembly has been successfully loaded.  

@@ -28,7 +28,7 @@ This section discusses programming tasks that you may want to learn more about a
  [Accessing Application Settings](../../../visual-basic/developing-apps/programming/app-settings/index.md)  
  Contains documentation on accessing an application's settings using the `My.Settings` object.  
   
- [Processing Drives, Directories, and Files](../../../visual-basic/developing-apps/programming/drives-directories-files/processing.md)  
+ [Processing Drives, Directories, and Files](drives-directories-files/index.md)  
  Contains documentation on how to access the file system using the `My.Computer.FileSystem` object.  
   
 ## See also

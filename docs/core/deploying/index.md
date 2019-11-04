@@ -1,8 +1,6 @@
 ---
 title: .NET Core Application Deployment
 description: Learn about the ways to deploy a .NET Core application.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 12/03/2018
 ms.custom: seodec18
 ---

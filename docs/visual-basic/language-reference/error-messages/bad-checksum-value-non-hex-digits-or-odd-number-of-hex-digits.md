@@ -28,4 +28,4 @@ A checksum value contains invalid hexadecimal digits or has an odd number of dig
 ## See also
 
 - [ASP.NET Overview](/aspnet/overview)
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

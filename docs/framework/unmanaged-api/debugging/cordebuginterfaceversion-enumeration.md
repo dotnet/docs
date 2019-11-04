@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7d1e6cd9-2a15-41c6-9b68-008705a4ed90
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugInterfaceVersion Enumeration
 Specifies an interface, a version of the .NET Framework, or a version of the .NET Framework in which an interface was introduced.  

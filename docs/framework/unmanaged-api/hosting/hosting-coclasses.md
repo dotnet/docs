@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "unmanaged coclasses [.NET Framework], hosting"
   - "coclasses [.NET Framework hosting]"
 ms.assetid: e32d8667-58ee-4760-814f-d22963881622
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Hosting Coclasses
 This section describes the unmanaged API coclasses that the hosting API uses.  

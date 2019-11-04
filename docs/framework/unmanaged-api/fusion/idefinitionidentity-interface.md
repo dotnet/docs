@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ce5ba888-5fbe-4efd-91cf-f0ff94d8428b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDefinitionIdentity Interface
 Represents the unique signature of the code that defines the application in the current scope.  

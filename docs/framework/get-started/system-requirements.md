@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "operating systems supported"
   - "hardware requirements"
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework system requirements
 

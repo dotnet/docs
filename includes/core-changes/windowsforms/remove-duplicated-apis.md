@@ -1,6 +1,6 @@
 ### Duplicated APIs removed from Windows Forms
 
-A number of APIs accidentally duplicated in the <xref:System.Windows.Forms?displayProperty=fullName> namespace starting in .NET Core 3.0 Preview 4 have been removed in .NET Core 3.0 RC1. 
+A number of APIs accidentally duplicated in the <xref:System.Windows.Forms?displayProperty=fullName> namespace starting in .NET Core 3.0 Preview 4 have been removed in .NET Core 3.0 RC1.
 
 #### Change description
 
@@ -30,7 +30,7 @@ Windows Forms
 
 - Not detectable via API analysis.
 
-<!-- 
+<!--
 
 ### Affected APIs
 

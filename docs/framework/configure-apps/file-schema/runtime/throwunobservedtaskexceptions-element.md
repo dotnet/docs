@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "ThrowUnobservedTaskExceptions element"
   - "<ThrowUnobservedTaskExceptions> element"
 ms.assetid: cea7e588-8b8d-48d2-9ad5-8feaf3642c18
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<ThrowUnobservedTaskExceptions> Element
 Specifies whether unhandled task exceptions should terminate a running process.  

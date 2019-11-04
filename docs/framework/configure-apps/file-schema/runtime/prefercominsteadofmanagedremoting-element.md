@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "<PreferComInsteadOfManagedRemoting> element"
   - "PreferComInsteadOfManagedRemoting element"
 ms.assetid: a279a42a-c415-4e79-88cf-64244ebda613
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<PreferComInsteadOfManagedRemoting> Element
 Specifies whether the runtime will use COM interop instead of remoting for all calls across application domain boundaries.  

@@ -49,7 +49,7 @@ The more you add synchronous dependencies between microservices, such as query r
 
 **Figure 4-15**. Anti-patterns and patterns in communication between microservices
 
-In synchronous communication a "chain" of requests is created between microservices while serving the client request. This is an anti-pattern. In asynchronous communication microservices use asynchronous messages or http polling to communicate with other microservices, but the client request is served right away.
+As shown in the above diagram, in synchronous communication a "chain" of requests is created between microservices while serving the client request. This is an anti-pattern. In asynchronous communication microservices use asynchronous messages or http polling to communicate with other microservices, but the client request is served right away.
 
 If your microservice needs to raise an additional action in another microservice, if possible, do not perform that action synchronously and as part of the original microservice request and reply operation. Instead, do it asynchronously (using asynchronous messaging or integration events, queues, etc.). But, as much as possible, do not invoke the action synchronously as part of the original synchronous request and reply operation.
 
@@ -95,7 +95,7 @@ Another possibility (usually for different purposes than REST) is a real-time an
 
 As Figure 4-17 shows, real-time HTTP communication means that you can have server code pushing content to connected clients as the data becomes available, rather than having the server wait for a client to request new data.
 
-![Diagram showing push and real-time comms based on HTTP.](./media/communication-in-microservice-architecture/one-to-many-communication.png)
+![Diagram showing push and real-time comms based on SignalR.](./media/communication-in-microservice-architecture/one-to-many-communication.png)
 
 **Figure 4-17**. One-to-one real-time asynchronous message communication
 

@@ -1,7 +1,7 @@
 ---
 title: Keyword Reference
 description: Find links to information about all of the F# language keywords.
-ms.date: 05/16/2016
+ms.date: 11/04/2019
 ---
 # Keyword Reference
 

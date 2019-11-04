@@ -1,7 +1,7 @@
 ---
 title: Caller information
 description: Describes how to use Caller Info Argument Attributes to obtain caller information from a method.
-ms.date: 04/25/2017
+ms.date: 11/04/2019
 ---
 # Caller information
 

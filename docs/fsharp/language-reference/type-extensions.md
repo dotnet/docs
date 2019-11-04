@@ -1,7 +1,7 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-ms.date: 02/08/2019
+ms.date: 11/04/2019
 ---
 # Type extensions
 

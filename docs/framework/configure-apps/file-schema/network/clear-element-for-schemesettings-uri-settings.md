@@ -8,7 +8,7 @@ Clears all existing scheme settings.
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax  

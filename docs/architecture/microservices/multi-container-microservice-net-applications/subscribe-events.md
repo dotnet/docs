@@ -138,7 +138,7 @@ Figure 6-22 shows the architecture for the first of these approaches.
 
 **Figure 6-22**. Atomicity when publishing events to the event bus
 
-One approach to handle atomicity when publishing events: use one transaction to commit event to an event-log table, and then another transaction to publish (used in eShopOnContainers). The approach illustrated in Figure 6-22 is missing an additional worker microservice that is in charge of checking and confirming the success of the published integration events. In case of failure, that additional checker worker microservice can read events from the table and republish them, that is, repeat step number 2.
+The approach illustrated in Figure 6-22 is missing an additional worker microservice that is in charge of checking and confirming the success of the published integration events. In case of failure, that additional checker worker microservice can read events from the table and republish them, that is, repeat step number 2.
 
 About the second approach: you use the EventLog table as a queue and always use a worker microservice to publish the messages. In that case, the process is like that shown in Figure 6-23. This shows an additional microservice, and the table is the single source when publishing events.
 
@@ -146,7 +146,7 @@ About the second approach: you use the EventLog table as a queue and always use 
 
 **Figure 6-23**. Atomicity when publishing events to the event bus with a worker microservice
 
-Another approach to handle atomicity: Publish to an event-log table and then have another microservice (a background worker) publish the event. For simplicity, the eShopOnContainers sample uses the first approach (with no additional processes or checker microservices) plus the event bus. However, the eShopOnContainers is not handling all possible failure cases. In a real application deployed to the cloud, you must embrace the fact that issues will arise eventually, and you must implement that check and resend logic. Using the table as a queue can be more effective than the first approach if you have that table as a single source of events when publishing them (with the worker) through the event bus.
+For simplicity, the eShopOnContainers sample uses the first approach (with no additional processes or checker microservices) plus the event bus. However, the eShopOnContainers is not handling all possible failure cases. In a real application deployed to the cloud, you must embrace the fact that issues will arise eventually, and you must implement that check and resend logic. Using the table as a queue can be more effective than the first approach if you have that table as a single source of events when publishing them (with the worker) through the event bus.
 
 ### Implementing atomicity when publishing integration events through the event bus
 
@@ -274,7 +274,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Even
 
 The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 6-24.
 
-![Screenshot of a browser showing change notification on the user cart.](./media/subscribe-events/display-item-price-change.png)
+![Screenshot of a browser showing the price change notification on the user cart.](./media/subscribe-events/display-item-price-change.png)
 
 **Figure 6-24**. Displaying an item price change in a basket, as communicated by integration events
 

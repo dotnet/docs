@@ -139,11 +139,11 @@ The reference application (eShopOnContainers) tests were recently restructured a
 
 Unit and integration test per microservice are contained in a test folder in each microservice and Application a Load tests are contained under the test folder in the solution folder, as shown in Figure 6-25.
 
-![Screenshot of VS pointing out all of the test files in the project.](./media/test-aspnet-core-services-web-apps/eshoponcontainers-test-folder-structure.png)
+![Screenshot of VS pointing out some of the test projects in the solution.](./media/test-aspnet-core-services-web-apps/eshoponcontainers-test-folder-structure.png)
 
 **Figure 6-25**. Test folder structure in eShopOnContainers
 
-Structure of tests in eShopOnContainers: Each service has a "test" folder that includes unit and functional tests. Under the solution "test" folder there are the application wide functional tests and load test. Microservice and Application functional/integration tests are run from Visual Studio, using the regular tests runner, but first you need to start the required infrastructure services, by means of a set of docker-compose files contained in the solution test folder:
+Microservice and Application functional/integration tests are run from Visual Studio, using the regular tests runner, but first you need to start the required infrastructure services, by means of a set of docker-compose files contained in the solution test folder:
 
 **docker-compose-test.yml**
 

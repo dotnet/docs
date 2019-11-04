@@ -60,11 +60,11 @@ So that you can focus on the architecture and technologies instead of thinking a
 
 The application consists of multiple subsystems, including several store UI front ends (a Web application and a native mobile app), along with the back-end microservices and containers for all the required server-side operations with several API Gateways as consolidated entry points to the internal microservices. Figure 6-1 shows the architecture of the reference application.
 
-![Diagram of an eShopOnContainers app in Client apps and Docker Host.](./media/microservice-application-design/eshoponcontainers-reference-application-architecture.png)
+![Diagram of client apps using eShopOnContainers in a single Docker host.](./media/microservice-application-design/eshoponcontainers-reference-application-architecture.png)
 
 **Figure 6-1**. The eShopOnContainers reference application architecture for development environment
 
-Mobile and SPA clients communicate to single API gateway endpoints, that then communicate to microservices. Traditional web clients communicate to MVC microservice, that communicates to microservices.
+The above diagram shows that Mobile and SPA clients communicate to single API gateway endpoints, that then communicate to microservices. Traditional web clients communicate to MVC microservice, that communicates to microservices through the API gateway.
 
 **Hosting environment**. In Figure 6-1, you see several containers deployed within a single Docker host. That would be the case when deploying to a single Docker host with the docker-compose up command. However, if you are using an orchestrator or container cluster, each container could be running in a different host (node), and any node could be running any number of containers, as we explained earlier in the architecture section.
 
@@ -167,7 +167,7 @@ You can also build microservices with many technologies and languages, such as A
 
 The important point is that no particular architecture pattern or style, nor any particular technology, is right for all situations. Figure 6-3 shows some approaches and technologies (although not in any particular order) that could be used in different microservices.
 
-![Diagram showing complex 12 microservice polyglot world architecture.](./media/microservice-application-design/multi-architectural-patterns-polyglot-microservices.png)
+![Diagram showing 12 complex microservices in a polyglot world architecture.](./media/microservice-application-design/multi-architectural-patterns-polyglot-microservices.png)
 
 **Figure 6-3**. Multi-architectural patterns and the polyglot microservices world
 

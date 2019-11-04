@@ -13,8 +13,6 @@ This section focuses on more advanced microservices that you implement when you 
 Difference between external architecture: microservice patterns, API gateways, resilient communications, pub/sub, etc., and internal architecture: data driven/CRUD, DDD patterns, dependency injection, multiple libraries, etc.
 :::image-end:::
 
-![]()
-
 **Figure 7-1**. External microservice architecture versus internal architecture patterns for each microservice
 
 However, most of the techniques for data driven microservices, such as how to implement an ASP.NET Core Web API service or how to expose Swagger metadata with Swashbuckle or NSwag, are also applicable to the more advanced microservices implemented internally with DDD patterns. This section is an extension of the previous sections, because most of the practices explained earlier also apply here or for any kind of microservice.

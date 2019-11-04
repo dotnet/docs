@@ -32,8 +32,6 @@ Transactional consistency means that an aggregate is guaranteed to be consistent
 A detailed view of the OrderAggregate folder: Address.cs is a value object, IOrderRepository is a repo interface, Order.cs is an aggregate root, OrderItem.cs is a child entity, and OrderStatus.cs is an enumeration class.
 :::image-end:::
 
-![]()
-
 **Figure 7-11**. The order aggregate in Visual Studio solution
 
 If you open any of the files in an aggregate folder, you can see how it is marked as either a custom base class or interface, like entity or value object, as implemented in the [SeedWork](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering/Ordering.Domain/SeedWork) folder.

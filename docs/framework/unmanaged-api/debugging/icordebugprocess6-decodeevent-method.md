@@ -2,8 +2,6 @@
 title: "ICorDebugProcess6::DecodeEvent Method"
 ms.date: "03/30/2017"
 ms.assetid: 1453bc0c-6e0d-4d5a-b176-22607f8a3e6c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::DecodeEvent Method
 Decodes managed debug events that have been encapsulated in the payload of specially crafted native exception debug events.  

@@ -1,8 +1,6 @@
 ---
 title: Build a Visual Basic .NET Standard class library in Visual Studio 2017
 description: Learn how to build a .NET Standard class library written in Visual Basic using Visual Studio 2017
-author: rpetrusha
-ms.author: ronpet
 ms.date: 08/07/2017
 dev_langs: 
   - "vb"

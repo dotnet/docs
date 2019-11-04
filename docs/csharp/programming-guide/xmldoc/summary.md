@@ -26,7 +26,7 @@ ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
   
  The text for the \<summary> tag is the only source of information about the type in IntelliSense, and is also displayed in the Object Browser Window.  
   
- Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [DocFX](https://dotnet.github.io/docfx/) or [Sandcastle](https://github.com/EWSoftware/SHFB).  
   
 ## Example  
  [!code-csharp[csProgGuideDocComments#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#12)]  

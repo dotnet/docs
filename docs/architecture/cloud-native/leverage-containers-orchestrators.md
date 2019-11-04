@@ -111,7 +111,7 @@ Organizations that deploy and must subsequently maintain large numbers of applic
 
 ## When should you avoid using containers and orchestrators?
 
-If you're unwilling or unable to build your application following Twelve-Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you can spin off certain pieces of functionality into separate containers or even serverless functions. 
+If you're unwilling or unable to build your application following Twelve-Factor App principles, you'll probably be better off avoiding containers and orchestrators. In these cases, it may be best to move forward with a VM-based hosting platform, or possibly some hybrid system in which you can spin off certain pieces of functionality into separate containers or even serverless functions.
 
 ## Development resources
 
@@ -186,7 +186,7 @@ The default behavior when the app runs is configured to use Docker as well. Figu
 
 **Figure 3-7**. Visual Studio Docker Run Options
 
-In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-10, you can also run the application in Azure Dev Spaces.
+In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
 
 If you don't add Docker support to your ASP.NET Core application when you create it, you can always add it later. From the Visual Studio Solution Explorer, right click on the project and select **Add** > **Docker Support**, as shown in Figure 3-8.
 
@@ -194,7 +194,7 @@ If you don't add Docker support to your ASP.NET Core application when you create
 
 **Figure 3-8**. Visual Studio Add Docker Support
 
-In addition to Docker support, you can also add Container Orchestration Support, also shown in Figure 3-11. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
+In addition to Docker support, you can also add Container Orchestration Support, also shown in Figure 3-8. By default, the orchestrator uses Kubernetes and Helm. Once you've chosen the orchestrator, a `azds.yaml` file is added to the project root and a `charts` folder is added containing the Helm charts used to configure and deploy the application to Kubernetes. Figure 3-9 shows the resulting files in a new project.
 
 ![Visual Studio Add Orchestrator Support](./media/visual-studio-add-orchestrator-support.png)
 

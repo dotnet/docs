@@ -57,7 +57,7 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>
 - [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 - [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
-- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
+- [-define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
 - [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
 - [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
 - [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)

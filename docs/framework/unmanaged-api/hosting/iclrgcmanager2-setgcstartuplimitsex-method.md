@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6c3a08a9-5d65-48d4-8bbf-2a86ed7d356a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRGCManager2::SetGCStartupLimitsEx Method
 Sets the size of a garbage collection segment and the maximum size of the garbage collection system's generation 0.  

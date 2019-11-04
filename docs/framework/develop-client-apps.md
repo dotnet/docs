@@ -14,16 +14,16 @@ helpviewer_keywords:
   - "client/server applications, Windows applications"
 ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
 ---
-# Developing client applications with the .NET Framework
+# Develop client applications with the .NET Framework
 
-There are several ways to develop Windows-based applications with the .NET Framework. You can use any of these tools and frameworks: 
+There are several ways to develop Windows-based applications with the .NET Framework. You can use any of these tools and frameworks:
 
 - [Universal Windows Platform (UWP)](https://developer.microsoft.com/windows/apps)
 - [Windows Presentation Foundation (WPF)](./wpf/index.md)
 - [Windows Forms](./winforms/index.md)
 
 This section contains topics that describe how to create Windows-based applications by using Windows Presentation Foundation or by using Windows Forms. However, you can also create web applications using the .NET Framework, and client applications for computers or devices that you make available through the Microsoft Store.
- 
+
 ## In this section
 
 [Windows Presentation Foundation](./wpf/index.md)  
@@ -31,9 +31,6 @@ Provides information about developing applications by using WPF.
 
 [Windows Forms](./winforms/index.md)  
 Provides information about developing applications by using Windows Forms.
-
-[Common Client Technologies](./common-client-technologies/index.md)  
-Provides information about additional technologies that can be used when developing client applications.
 
 ## Related sections
 

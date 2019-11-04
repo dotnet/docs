@@ -13,7 +13,13 @@ This tutorial expects you to have a machine you can use for development. The .NE
 
 ## Make decisions using the `if` statement
 
-Create a directory named *branches-tutorial*. Make that the current directory and run `dotnet new console -n BranchesAndLoops -o .`. This command creates a new .NET Core console application in the current directory.
+Create a directory named *branches-tutorial*. Make that the current directory and run the following command:
+
+```dotnetcli
+dotnet new console -n BranchesAndLoops -o .
+```
+
+This command creates a new .NET Core console application in the current directory.
 
 Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code:
 

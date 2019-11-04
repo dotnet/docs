@@ -8,7 +8,7 @@ The SET expression is used to convert a collection of objects into a set by yiel
   
 ## Syntax  
   
-```  
+```sql  
 SET ( expression )  
 ```  
   
@@ -19,7 +19,7 @@ SET ( expression )
 ## Remarks  
  The set expression `SET(c)` is logically equivalent to the following select statement:  
   
-```  
+```sql  
 SELECT VALUE DISTINCT c FROM c  
 ```  
   
@@ -32,7 +32,7 @@ SELECT VALUE DISTINCT c FROM c
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#SET](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#set)]  
+ [!code-sql[DP EntityServices Concepts#SET](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#set)]  
   
 ## See also
 

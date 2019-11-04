@@ -347,6 +347,7 @@ The output is as follows.
 ```console
 Found an element: 1
 Found an element: 729
+Failed to find a matching element.
 ```
 
 Use [`Array.tryPick`](https://msdn.microsoft.com/library/72d45f85-037b-43a9-97fd-17239f72713e) when you need to transform an element in addition to finding it. The result is the first element for which the function returns the transformed element as an option value, or `None` if no such element is found.
@@ -362,6 +363,7 @@ Found an element 1 with square root 1 and cube root 1.
 Found an element 64 with square root 8 and cube root 4.
 Found an element 729 with square root 27 and cube root 9.
 Found an element 4096 with square root 64 and cube root 16.
+Did not find an element that is both a perfect square and a perfect cube.
 ```
 
 ### Performing Computations on Arrays

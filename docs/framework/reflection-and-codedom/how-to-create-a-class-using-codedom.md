@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "CodeDOM, creating classes"
   - "CodeDOM, graphs"
 ms.assetid: 0ceb70fe-36e1-49bb-922b-e9f615c20a14
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create a Class Using CodeDOM
 The following procedures illustrate how to create and compile a CodeDOM graph that generates a class containing two fields, three properties, a method, a constructor, and an entry point.  

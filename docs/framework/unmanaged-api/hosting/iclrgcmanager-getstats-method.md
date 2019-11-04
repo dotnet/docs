@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ce259d1d-cd81-4490-a7a1-0d0ea0804872
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRGCManager::GetStats Method
 Gets a set of current statistics about the common language runtime's garbage collection system.  

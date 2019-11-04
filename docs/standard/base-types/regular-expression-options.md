@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "inline option constructs"
   - "options parameter"
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Regular Expression Options

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8b364ae1-8efa-4744-a7da-81fd093d84d6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CompareAssemblyIdentity Function
 Compares two assembly identities to determine whether they are equivalent.  

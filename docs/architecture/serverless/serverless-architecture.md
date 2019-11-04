@@ -21,12 +21,12 @@ Some projects may benefit from taking an "all-in" approach to serverless. Applic
 
 The full serverless back end is ideal for several types of scenarios, especially when building new or "green field" applications. An application with a large surface area of APIs may benefit from implementing each API as a serverless function. Apps that are based on microservices architecture are another example that could be implemented as a full serverless back end. The microservices communicate over various protocols with each other. Specific scenarios include:
 
-* API-based SaaS products (example: financial payments processor).
-* Message-driven applications (example: device monitoring solution).
-* Apps focused on integration between services (example: airline booking application).
-* Processes that run periodically (example: timer-based database clean-up).
-* Apps focused on data transformation (example: import triggered by file upload).
-* Extract Transform and Load (ETL) processes.
+- API-based SaaS products (example: financial payments processor).
+- Message-driven applications (example: device monitoring solution).
+- Apps focused on integration between services (example: airline booking application).
+- Processes that run periodically (example: timer-based database clean-up).
+- Apps focused on data transformation (example: import triggered by file upload).
+- Extract Transform and Load (ETL) processes.
 
 There are other, more specific use cases that are covered later in this document.
 
@@ -60,10 +60,10 @@ IoT refers to physical objects that are networked together. They're sometimes re
 
 The sheer volume of devices and information often dictates an event-driven architecture to route and process messages. Serverless is an ideal solution for several reasons:
 
-* Enables scale as the volume of devices and data increases.
-* Accommodates adding new endpoints to support new devices and sensors.
-* Facilitates independent versioning so developers can update the business logic for a specific device without having to deploy the entire system.
-* Resiliency and less downtime.
+- Enables scale as the volume of devices and data increases.
+- Accommodates adding new endpoints to support new devices and sensors.
+- Facilitates independent versioning so developers can update the business logic for a specific device without having to deploy the entire system.
+- Resiliency and less downtime.
 
 The pervasiveness of IoT has resulted in several serverless products that focus specifically on IoT concerns, such as [Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub). Serverless automates tasks such as device registration, policy enforcement, tracking, and even deployment of code to devices at *the edge*. The edge refers to devices like sensors and actuators that are connected to, but not an active part of, the Internet.
 

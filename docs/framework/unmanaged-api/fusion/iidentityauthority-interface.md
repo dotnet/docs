@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6277f914-51a8-49be-bec6-52d6d648527d
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # IIdentityAuthority Interface

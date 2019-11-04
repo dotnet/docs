@@ -26,4 +26,4 @@ public string FirstName { get; set; } = "Jane";
 ## See also
 
 - [Properties](./properties.md)
-- [Modifiers](../../language-reference/keywords/modifiers.md)
+- [Modifiers](/dotnet/csharp/language-reference/keywords)

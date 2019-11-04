@@ -52,7 +52,7 @@ This topic provides guidance and suggested patterns for how to implement a depen
 
 - <xref:System.Windows.FreezableCollection%601>
 - [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Dependency Property Metadata](dependency-property-metadata.md)

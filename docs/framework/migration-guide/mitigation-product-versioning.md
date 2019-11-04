@@ -2,8 +2,6 @@
 title: "Mitigation: Product Versioning"
 ms.date: "03/30/2017"
 ms.assetid: 1c4de9d7-9aba-427a-8f38-0ab9bfb8f85e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Product Versioning
 
@@ -38,4 +36,4 @@ In general, applications should depend on the recommended techniques for detecti
 
 ## See also
 
-- [Runtime Changes](runtime-changes-in-the-net-framework-4-6.md)
+- [Application compatibility](application-compatibility.md)

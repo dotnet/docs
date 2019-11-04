@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "locating assemblies"
   - "Assembly Binding Log Viewer"
 ms.assetid: e32fa443-0778-4cc3-bf36-5c8ea297d296
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Fuslogvw.exe (Assembly Binding Log Viewer)
 

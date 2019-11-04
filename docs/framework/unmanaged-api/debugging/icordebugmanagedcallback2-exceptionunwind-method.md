@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: aaf5938d-179c-4eaa-8d35-8523a4fadded
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::ExceptionUnwind Method
 Provides a status notification during the exception unwinding process.  

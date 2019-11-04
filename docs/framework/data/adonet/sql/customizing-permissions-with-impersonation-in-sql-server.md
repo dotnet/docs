@@ -11,7 +11,7 @@ Many applications use stored procedures to access data, relying on ownership cha
 ## Context Switching with the EXECUTE AS Statement  
  The Transact-SQL EXECUTE AS statement allows you to switch the execution context of a statement by impersonating another login or database user. This is a useful technique for testing queries and procedures as another user.  
   
-```  
+```sql  
 EXECUTE AS LOGIN = 'loginName';  
 EXECUTE AS USER = 'userName';  
 ```  
@@ -30,7 +30,7 @@ EXECUTE AS USER = 'userName';
   
 1. Create a proxy user in the database that is not mapped to a login. This is not required, but it helps when managing permissions.  
   
-```  
+```sql
 CREATE USER proxyUser WITHOUT LOGIN  
 ```  
   
@@ -38,7 +38,7 @@ CREATE USER proxyUser WITHOUT LOGIN
   
 2. Add the EXECUTE AS clause to the stored procedure or user-defined function.  
   
-```  
+```sql
 CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...  
 ```  
   

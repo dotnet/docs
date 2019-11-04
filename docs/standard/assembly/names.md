@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "names [.NET Framework], assemblies"
   - "assemblies [.NET Framework], names"
 ms.assetid: 8f8c2c90-f15d-400e-87e7-a757e4f04d0e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Assembly names
 An assembly's name is stored in metadata and has a significant impact on the assembly's scope and use by an application. A strong-named assembly has a fully qualified name that includes the assembly's name, culture, public key, and version number. This is frequently referred to as the display name, and for loaded assemblies can be obtained by using the <xref:System.Reflection.Assembly.FullName%2A> property.  

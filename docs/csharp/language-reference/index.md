@@ -1,5 +1,5 @@
 ---
-title: "C# Reference"
+title: "C# reference"
 ms.date: 02/14/2017
 helpviewer_keywords: 
   - "Visual C#, language reference"
@@ -9,10 +9,12 @@ helpviewer_keywords:
   - "reference, C# language"
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
 ---
-# C# Reference
+# C# reference
+
 This section provides reference material about C# keywords, operators, special characters, preprocessor directives, compiler options, and compiler errors and warnings.  
   
-## In This Section  
+## In this section
+
  [C# Keywords](./keywords/index.md)  
  Provides links to information about C# keywords and syntax.  
   

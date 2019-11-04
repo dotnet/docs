@@ -22,7 +22,7 @@ Specifies the return value of the property or function.
 ## Remarks  
  Use the `<returns>` tag in the comment for a method declaration to describe the return value.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<returns>` tag to explain what the `DoesRecordExist` function returns.  

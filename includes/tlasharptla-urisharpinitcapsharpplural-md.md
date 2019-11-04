@@ -1,1 +1,0 @@
-Uniform resource identifiers (URIs)

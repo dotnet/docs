@@ -4,7 +4,7 @@ The `Switch.System.Windows.Forms.EnableVisualStyleValidation` compatibility swit
 
 #### Change description
 
-In .NET Framework, the `Switch.System.Windows.Forms.EnableVisualStyleValidation` compatibility switch allowed an application to opt out of validation of visual styles supplied in a numeric form. 
+In .NET Framework, the `Switch.System.Windows.Forms.EnableVisualStyleValidation` compatibility switch allowed an application to opt out of validation of visual styles supplied in a numeric form.
 
 In .NET Core, the `Switch.System.Windows.Forms.EnableVisualStyleValidation` switch is not supported.
 

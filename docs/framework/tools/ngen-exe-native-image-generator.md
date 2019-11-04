@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "BypassNGenAttribute"
   - "System.Runtime.BypassNGenAttribute"
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Ngen.exe (Native Image Generator)
 

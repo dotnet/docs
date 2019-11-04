@@ -5,8 +5,6 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - ".NET Framework development"
 ms.assetid: 653da4ba-3752-4d1f-a08a-de017dc86ecc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework Application Essentials
 This section of the .NET Framework documentation provides information about basic application development tasks in the .NET Framework.  
@@ -48,7 +46,7 @@ This section of the .NET Framework documentation provides information about basi
  [Globalization and Localization](../../docs/standard/globalization-localization/index.md)  
  Provides information to help you design and develop world-ready applications.  
   
- Accessibility  
+ [Accessibility](../../docs/framework/ui-automation/index.md)
  Provides information about Microsoft UI Automation, which is an accessibility framework that addresses the needs of assistive technology products and automated test frameworks by providing programmatic access to information about the user interface (UI).  
   
  [Attributes](../../docs/standard/attributes/index.md)  

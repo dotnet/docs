@@ -30,7 +30,7 @@ Describes the language constructs in C# that support LINQ.
 
 ## Related sections
 
-[LINQ query expressions](../programming-guide/linq-query-expressions/index.md)  
+[LINQ query expressions](index.md)  
 Includes an overview of queries in LINQ and provides links to additional resources.
 
 [Standard query operators overview](../programming-guide/concepts/linq/standard-query-operators-overview.md)  

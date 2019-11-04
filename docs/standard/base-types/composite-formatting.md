@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "composite formatting"
   - "objects [.NET Framework], formatting multiple objects"
 ms.assetid: 87b7d528-73f6-43c6-b71a-f23043039a49
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Composite Formatting
 

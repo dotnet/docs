@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "binary resources files"
   - "embedding files in runtime binary executable"
 ms.assetid: 8ef159de-b660-4bec-9213-c3fbc4d1c6f4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Resgen.exe (Resource File Generator)
 The Resource File Generator (Resgen.exe) converts text (.txt or .restext) files and XML-based resource format (.resx) files to common language runtime binary (.resources) files that can be embedded in a runtime binary executable or satellite assembly. (See [Creating Resource Files](../resources/creating-resource-files-for-desktop-apps.md).)  
@@ -56,7 +54,7 @@ resgen /?
 ## Syntax  
   
 ```console  
-resgen  [/define:symbol1[,symbol2,...]] [/useSourcePath] filename.extension  | /compile filename.extension... [outputFilename.extension] [/r:assembly] [/str:lang[,namespace[,class[,file]]] [/publicclass]]   
+resgen  [-define:symbol1[,symbol2,...]] [/useSourcePath] filename.extension  | /compile filename.extension... [outputFilename.extension] [/r:assembly] [/str:lang[,namespace[,class[,file]]] [/publicclass]]   
 ```  
   
 ```console  

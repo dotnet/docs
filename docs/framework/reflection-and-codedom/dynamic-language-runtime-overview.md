@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "DLR"
   - "IronRuby"
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Dynamic Language Runtime Overview
 

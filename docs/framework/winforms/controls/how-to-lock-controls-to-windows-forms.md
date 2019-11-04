@@ -5,8 +5,8 @@ helpviewer_keywords:
   - "Windows Forms controls, locking"
   - "controls [Windows Forms], locking"
 ms.assetid: 94efe0d2-c14e-4d14-b903-63ea9b07e290
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Lock controls to Windows Forms

@@ -10,10 +10,9 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # Connection Class
 
 The `Connection` class parses server responses, queue requests, and pipeline requests.

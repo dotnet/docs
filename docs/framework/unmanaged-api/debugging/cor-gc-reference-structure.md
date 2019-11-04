@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 162e8179-0cd4-4110-8f06-5f387698bd62
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_GC_REFERENCE Structure
 Contains information about an object that is to be garbage-collected.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 10a40ba0-1b65-4721-bd11-cf12d57b280d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug::GetProcess Method
 Gets a pointer to the "ICorDebugProcess" instance for the specified process.  

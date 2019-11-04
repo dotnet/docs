@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "<NetFx40_PInvokeStackResilience> element"
   - "NetFx40_PInvokeStackResilience element"
 ms.assetid: 39fb1588-72a4-4479-af74-0605233b68bd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<NetFx40_PInvokeStackResilience> Element
 

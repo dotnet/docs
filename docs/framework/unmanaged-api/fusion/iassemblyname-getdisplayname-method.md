@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9a26547a-9a34-4284-a463-78a7d4b496cf
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyName::GetDisplayName Method
 Gets the human-readable name of the assembly referenced by this [IAssemblyName](iassemblyname-interface.md) object.  

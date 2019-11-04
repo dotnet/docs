@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 50dbb9af-58a1-41f4-b56d-3da20011884f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::GetResult Method
 Gets the results of this evaluation.  

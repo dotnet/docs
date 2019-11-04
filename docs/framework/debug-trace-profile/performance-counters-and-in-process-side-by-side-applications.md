@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "performance,.NET Framework applications"
   - "performance monitoring,counters"
 ms.assetid: 6888f9be-c65b-4b03-a07b-df7ebdee2436
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Performance Counters and In-Process Side-By-Side Applications
 Using the Performance Monitor (Perfmon.exe), it is possible to differentiate the performance counters on a per-runtime basis. This topic describes the registry change needed to enable this functionality.  

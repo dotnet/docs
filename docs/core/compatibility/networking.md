@@ -2,8 +2,6 @@
 title: Networking breaking changes - .NET Core
 description: Lists the breaking changes in networking in .NET Core.
 ms.date: "10/03/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Networking breaking changes 
 

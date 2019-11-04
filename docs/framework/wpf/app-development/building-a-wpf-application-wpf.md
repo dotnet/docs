@@ -40,7 +40,7 @@ Before building, MSBuild determines the location of important tools and librarie
 
 - The .NET Framework.
 
-- The [!INCLUDE[TLA2#tla_wcsdk](../../../../includes/tla2sharptla-wcsdk-md.md)] directories.
+- The Windows SDK directories.
 
 - The location of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] reference assemblies.
 

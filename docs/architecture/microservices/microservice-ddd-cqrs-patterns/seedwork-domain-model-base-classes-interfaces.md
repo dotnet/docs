@@ -9,7 +9,9 @@ The solution folder contains a *SeedWork* folder. This folder contains custom ba
 
 Figure 7-12 shows the classes that form the seedwork of the domain model in the ordering microservice. It has a few custom base classes like Entity, ValueObject, and Enumeration, plus a few interfaces. These interfaces (IRepository and IUnitOfWork) inform the infrastructure layer about what needs to be implemented. Those interfaces are also used through Dependency Injection from the application layer.
 
-![Screenshot of the classes contained in the SeedWork folder.](./media/seedwork-domain-model-base-classes-interfaces/vs-solution-seedwork-classes.png)
+:::image type="complex" source="./media/seedwork-domain-model-base-classes-interfaces/vs-solution-seedwork-classes.png" alt-text="Screenshot of the classes contained in the SeedWork folder.":::
+The detailed contents of the SeedWork folder, containing base classes and interfaces: Entity.cs, Enumeration.cs, IAggregateRoot.cs, IRepository.cs, IUnitOfWork.cs, and ValueObject.cs.
+:::image-end:::
 
 **Figure 7-12**. A sample set of domain model “seedwork" base classes and interfaces
 

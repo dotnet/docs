@@ -222,6 +222,8 @@ The following image shows a visual summary of the classes and interfaces involve
 
 **Figure 6-27**. Class diagram showing the multiple classes and interfaces related to IHostedService
 
+Class diagram: IWebHost and IHost can host many services, which inherit from BackgroundService, which implements IHostedService.
+
 ### Deployment considerations and takeaways
 
 It is important to note that the way you deploy your ASP.NET Core `WebHost` or .NET Core `Host` might impact the final solution. For instance, if you deploy your `WebHost` on IIS or a regular Azure App Service, your host can be shut down because of app pool recycles. But if you are deploying your host as a container into an orchestrator like Kubernetes or Service Fabric, you can control the assured number of live instances of your host. In addition, you could consider other approaches in the cloud especially made for these scenarios, like Azure Functions. Finally, if you need the service to be running all the time and are deploying on a Windows Server you could use a Windows Service.

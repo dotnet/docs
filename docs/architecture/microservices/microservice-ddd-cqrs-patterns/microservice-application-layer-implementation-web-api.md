@@ -12,7 +12,9 @@ As mentioned previously, the application layer can be implemented as part of the
 
 For instance, the application layer code of the ordering microservice is directly implemented as part of the **Ordering.API** project (an ASP.NET Core Web API project), as shown in Figure 7-23.
 
-![Screenshot of the Ordering.API microservice in the Solution Explorer.](./media/microservice-application-layer-implementation-web-api/ordering-api-microservice.png)
+:::image type="complex" source="./media/microservice-application-layer-implementation-web-api/ordering-api-microservice.png" alt-text="Screenshot of the Ordering.API microservice in the Solution Explorer.":::
+The Solution Explorer view of the Ordering.API microservice, showing the sub-folders under the Application folder: Behaviors, Commands, DomainEventHandlers, IntegrationEvents, Models, Queries and Validations.
+:::image-end:::
 
 **Figure 7-23**. The application layer in the Ordering.API ASP.NET Core Web API project
 
@@ -424,7 +426,7 @@ As shown in Figure 7-25, in a CQRS approach you use an intelligent mediator, sim
 
 **Figure 7-25**. Using the Mediator pattern in process in a single CQRS microservice
 
-Zooming in from the previous image: the ASP.NET Core controller sends the command to MediatR's command pipeline, so they get to the appropriate handler.
+The above diagram shows a zoom-in from image 7-24: the ASP.NET Core controller sends the command to MediatR's command pipeline, so they get to the appropriate handler.
 
 The reason that using the Mediator pattern makes sense is that in enterprise applications, the processing requests can get complicated. You want to be able to add an open number of cross-cutting concerns like logging, validations, audit, and security. In these cases, you can rely on a mediator pipeline (see [Mediator pattern](https://en.wikipedia.org/wiki/Mediator_pattern)) to provide a means for these extra behaviors or cross-cutting concerns.
 

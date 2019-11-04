@@ -126,7 +126,7 @@ The ideal and more straightforward deployment for a dev/test solution is to be a
 
 Cosmos DB databases support MongoDB API for .NET as well as the native MongoDB wire protocol. This means that by using existing drivers, your application written for MongoDB can now communicate with Cosmos DB and use Cosmos DB databases instead of MongoDB databases, as shown in Figure 7-20.
 
-![Diagram showing how Cosmos DB supports .NET and MongoDB wire protocol.](./media/nosql-database-persistence-infrastructure/mongodb-api-wire-protocol.png)
+![Diagram showing that Cosmos DB supports .NET and MongoDB wire protocol.](./media/nosql-database-persistence-infrastructure/mongodb-api-wire-protocol.png)
 
 **Figure 7-20**. Using MongoDB API and protocol to access Azure Cosmos DB
 
@@ -134,7 +134,7 @@ This is a very convenient approach for proof of concepts in Docker environments 
 
 As shown in the following image, by using the MongoDB API, eShopOnContainers supports MongoDB Linux and Windows containers for the local development environment but then, you can move to a scalable, PaaS cloud solution as Azure Cosmos DB by simply [changing the MongoDB connection string to point to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/connect-mongodb-account).
 
-![Diagram showing how to switch location of the microservice.](./media/nosql-database-persistence-infrastructure/eshoponcontainers-mongodb-containers.png)
+![Diagram showing that the Location microservice in eShopOnContainers can use either Cosmos DB or Mongo DB.](./media/nosql-database-persistence-infrastructure/eshoponcontainers-mongodb-containers.png)
 
 **Figure 7-21**. eShopOnContainers using MongoDB containers for dev-env or Azure Cosmos DB for production
 

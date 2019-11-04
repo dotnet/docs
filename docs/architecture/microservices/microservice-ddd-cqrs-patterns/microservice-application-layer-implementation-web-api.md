@@ -180,7 +180,7 @@ As shown in Figure 7-24, the pattern is based on accepting commands from the cli
 
 **Figure 7-24**. High-level view of the commands or “transactional side” in a CQRS pattern
 
-The high level view of the writes-side in CQRS: UI app sends a command through the API that gets to a CommandHandler, that depends on the Domain model and the Infrastructure to update the database.
+Figure 7-24 shows that the UI app sends a command through the API that gets to a `CommandHandler`, that depends on the Domain model and the Infrastructure, to update the database.
 
 ### The command class
 

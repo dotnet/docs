@@ -20,7 +20,7 @@ The .NET Framework defines the initial compiler settings in the machine configur
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<compiler>**](compiler-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<compiler>**](compiler-element.md)
   
 |Element|Description|  
 |-------------|-----------------|  

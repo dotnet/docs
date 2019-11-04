@@ -176,7 +176,7 @@ The Command pattern is intrinsically related to the CQRS pattern that was introd
 
 As shown in Figure 7-24, the pattern is based on accepting commands from the client side, processing them based on the domain model rules, and finally persisting the states with transactions.
 
-![The high level view of the writes-side in CQRS: UI app sends a command through the API that gets to a CommandHandler, that depends on the Domain model and the Infrastructure to update the database.](./media/image21.png)
+![The high level view of the writes-side in CQRS: UI app sends a command through the API that gets to a CommandHandler, which depends on the Domain model and the Infrastructure to update the database.](./media/image21.png)
 
 **Figure 7-24**. High-level view of the commands or “transactional side” in a CQRS pattern
 
@@ -393,10 +393,10 @@ These are additional steps a command handler should take:
   <https://blog.ploeh.dk/2011/05/31/AttheBoundaries,ApplicationsareNotObject-Oriented/>
 
 - **Commands and events** \
-  <http://cqrs.nu/Faq/commands-and-events>
+  <https://cqrs.nu/Faq/commands-and-events>
 
 - **What does a command handler do?** \
-  <http://cqrs.nu/Faq/command-handlers>
+  <https://cqrs.nu/Faq/command-handlers>
 
 - **Jimmy Bogard. Domain Command Patterns – Handlers** \
   <https://jimmybogard.com/domain-command-patterns-handlers/>

@@ -24,9 +24,9 @@ The following code is an example of an Entity base class where you can place cod
 public abstract class Entity
 {
     int? _requestedHashCode;
-    int _Id;    
+    int _Id;
     private List<INotification> _domainEvents;
-    public virtual int Id 
+    public virtual int Id
     {
         get
         {
@@ -38,7 +38,7 @@ public abstract class Entity
         }
     }
 
-    public List<INotification> DomainEvents => _domainEvents;        
+    public List<INotification> DomainEvents => _domainEvents;
     public void AddDomainEvent(INotification eventItem)
     {
         _domainEvents = _domainEvents ?? new List<INotification>();

@@ -16,7 +16,7 @@ Triggers an event declared at module level within a class, form, or document.
   
 ## Syntax  
   
-```  
+```vb  
 RaiseEvent eventname[( argumentlist )]  
 ```  
   

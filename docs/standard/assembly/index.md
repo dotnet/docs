@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework]"
   - "version boundaries"
   - "type boundaries"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Assemblies in .NET
@@ -110,6 +108,7 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 - [.NET assembly file format](file-format.md)
 - [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
+- [Reference assemblies](reference-assemblies.md)
 - [How to: Load and unload assemblies](load-unload.md)
 - [How to: Use and debug assembly unloadability in .NET Core](unloadability.md)
 - [How to: Determine if a file is an assembly](identify.md)

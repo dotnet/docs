@@ -159,6 +159,7 @@ public class CustomerService: ICustomerManager
                 address="http://localhost:8083/CustomerManager"   
                 binding="basicHttpBinding"   
                 contract="Shared.ICustomerManager"/>  
+    </client>  
   </system.serviceModel>  
 </configuration>  
 ```  

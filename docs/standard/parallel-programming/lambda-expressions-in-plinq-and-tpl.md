@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "Action delegate, creating with lambda expression"
   - "lambda expressions, with Action and Func"
 ms.assetid: 645b2c17-29d0-4ffa-8684-430743cc2f2d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Lambda Expressions in PLINQ and TPL
 

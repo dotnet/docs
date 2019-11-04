@@ -2,8 +2,6 @@
 title: "ICorDebugProcess6::EnableVirtualModuleSplitting Method"
 ms.date: "03/30/2017"
 ms.assetid: e7733bd3-68da-47f9-82ef-477db5f2e32d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::EnableVirtualModuleSplitting Method
 Enables or disables virtual module splitting.  

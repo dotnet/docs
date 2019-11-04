@@ -1,8 +1,6 @@
 ---
 title: WMI and Performance Counters (Unmanaged API Reference)
 description: Summarizes the .NET Framework unmanaged API for WMI and performance counter information.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 11/06/2017
 ---
 

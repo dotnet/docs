@@ -54,5 +54,5 @@ vbc -optioninfer+ test.vb
 - [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
 - [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
-- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
+- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
 - [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)

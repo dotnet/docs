@@ -17,7 +17,7 @@ Each container (an instance of a Docker image) includes the following components
 
 ## Workflow for developing Docker container-based applications
 
-This section describes the *inner-loop* development workflow for Docker container-based applications. The inner-loop workflow means it's not considering the broader DevOps workflow, that can include up to production deployment, and just focuses on the development work done on the developer's computer. The initial steps to set up the environment aren't included, since those steps are done only once.
+This section describes the *inner-loop* development workflow for Docker container-based applications. The inner-loop workflow means it's not considering the broader DevOps workflow, which can include up to production deployment, and just focuses on the development work done on the developer's computer. The initial steps to set up the environment aren't included, since those steps are done only once.
 
 An application is composed of your own services plus additional libraries (dependencies). The following are the basic steps you usually take when building a Docker application, as illustrated in Figure 5-1.
 
@@ -111,7 +111,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 ### Additional resources
 
 - **Building Docker Images for .NET Core Applications** \
-  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](../../../core/docker/building-net-docker-images.md)
+  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 - **Build your own image**. In the official Docker documentation.\
   <https://docs.docker.com/engine/tutorials/dockerimages/>

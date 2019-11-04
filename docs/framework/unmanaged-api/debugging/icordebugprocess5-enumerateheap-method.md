@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b0192104-6073-4089-a4df-dc29ee033074
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnumerateHeap Method
 Gets an enumerator for the objects on the managed heap.  

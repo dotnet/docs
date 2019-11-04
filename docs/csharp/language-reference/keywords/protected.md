@@ -44,7 +44,7 @@ If you change the access levels of `x` and `y` to [private](private.md), the com
 
 ## C# language specification  
 
-For more information, see [Declared accessibility](~/_csharplang/spec/basic-concepts.md#declared-accessibility) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Declared accessibility](~/_csharplang/spec/basic-concepts.md#declared-accessibility) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
@@ -53,7 +53,7 @@ For more information, see [Declared accessibility](~/_csharplang/spec/basic-conc
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [public](public.md)
 - [private](private.md)
 - [internal](internal.md)

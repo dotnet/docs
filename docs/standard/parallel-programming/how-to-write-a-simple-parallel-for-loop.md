@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "for loop, parallel construction in .NET"
   - "parallel for loops, how to use"
 ms.assetid: 9029ba7f-a9d1-4526-8c84-c88716dba5d4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Write a Simple Parallel.For Loop
 

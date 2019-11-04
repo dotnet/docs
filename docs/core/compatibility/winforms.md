@@ -2,8 +2,6 @@
 title: Windows Forms breaking changes - .NET Core
 description: Lists the breaking changes in Windows Forms for .NET Core.
 ms.date: "09/20/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Breaking changes in Windows Forms
 

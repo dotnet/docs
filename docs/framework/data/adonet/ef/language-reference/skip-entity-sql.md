@@ -9,7 +9,7 @@ You can perform physical paging by using the SKIP sub-clause in the ORDER BY cla
 
 ## Syntax
 
-```
+```sql
 [ SKIP n ]
 ```
 
@@ -28,7 +28,9 @@ If a SKIP expression sub-clause is present in an ORDER BY clause, the results wi
 > [!NOTE]
 > In SQL Server 2000, using SKIP with ORDER BY on non-key columns might return incorrect results. More than the specified number of rows might be skipped if the non-key column has duplicate data in it. This is due to how SKIP is translated for SQL Server 2000. For example, in the following code more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:
 >
-> `SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L`
+> ```sql
+> SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L
+> ```
 
 The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query in [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)) uses the ORDER BY operator with SKIP to specify the sort order used on objects returned in a SELECT statement.
 

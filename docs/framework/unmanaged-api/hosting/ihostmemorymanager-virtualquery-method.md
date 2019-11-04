@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 757af1e6-b9e8-49e7-b5db-342be3aa205f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::VirtualQuery Method
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualQuery` retrieves information about a range of pages in the virtual address space of the calling process.  

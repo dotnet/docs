@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "Windows Forms layout"
   - "Windows Forms dynamic resizing"
 ms.assetid: 075ea4c3-900c-4f8a-9dd2-13ea6804346b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # High DPI support in Windows Forms

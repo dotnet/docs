@@ -49,10 +49,10 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddMvc();
-        
+
         // some details omitted
         services.AddIdentityServer();
-        
+
           services.AddAuthentication()
             .AddGoogle("Google", options =>
             {
@@ -94,7 +94,7 @@ Many cloud-native applications leverage server-side APIs and rich client single 
 
 ## References
 
-- [IdentityServer documentation](http://docs.identityserver.io/)
+- [IdentityServer documentation](http://docs.identityserver.io/en/latest/)
 - [Application types](https://docs.microsoft.com/azure/active-directory/develop/app-types)
 - [JavaScript OIDC client](http://docs.identityserver.io/en/latest/quickstarts/6_javascript_client.html)
 

@@ -47,7 +47,7 @@ This example defines a base class named `Employee`, and a derived class named `S
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Inheritance](../../programming-guide/classes-and-structs/inheritance.md)
 - [C# Keywords](index.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [abstract](abstract.md)
 - [virtual](virtual.md)
 - [new (modifier)](new-modifier.md)

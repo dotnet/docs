@@ -9,7 +9,7 @@ ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
 ---
 # Interfaces (C# Programming Guide)
 
-An interface contains definitions for a group of related functionalities that a [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/keywords/struct.md) can implement.
+An interface contains definitions for a group of related functionalities that a non-abstract [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/keywords/struct.md) must implement.
   
 By using interfaces, you can, for example, include behavior from multiple sources in a class. That capability is important in C# because the language doesn't support multiple inheritance of classes. In addition, you must use an interface if you want to simulate inheritance for structs, because they can't actually inherit from another struct or class.  
   

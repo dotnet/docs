@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e8ab7c41-d508-4ed9-8a31-ead072b5a314
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugging::OpenVirtualProcess Method
 Gets the ICorDebugProcess interface that corresponds to a common language runtime (CLR) module loaded in the process.  

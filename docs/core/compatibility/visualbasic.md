@@ -2,8 +2,6 @@
 title: Visual Basic breaking changes - .NET Core
 description: Lists the breaking changes in Visual Basic used with .NET Core.
 ms.date: "09/20/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Visual Basic breaking changes
 

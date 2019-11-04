@@ -157,8 +157,6 @@ helpviewer_keywords:
   - "Windows Runtime Metadata Export Tool, error messages"
   - "error messages, Winmdexp.exe"
 ms.assetid: 8271973c-deba-47a6-8e5e-04ce63f146ad
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Winmdexp.exe Error Messages
 The build process calls [Winmdexp.exe (Windows Runtime Metadata Export Tool)](winmdexp-exe-windows-runtime-metadata-export-tool.md) when you use the **Windows Runtime Component** template in Visual Studio 2012, so Winmdexp.exe error messages appear in the **Error List**. Winmdexp.exe operates on a module that is compiled with the `/target:winmdobj` option. Because it requires a compiled module as input, its error messages don't appear unless compilation succeeds.  

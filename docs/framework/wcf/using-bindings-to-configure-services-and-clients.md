@@ -31,10 +31,10 @@ Bindings are objects that specify the communication details required to connect 
   
 - <xref:System.ServiceModel.NetMsmqBinding>: Uses the .NET binary encoding and framing technologies in conjunction with the Message Queuing (also known as MSMQ) to create queued message connections with other WCF endpoints.  
   
- For a complete list of system-provided bindings, with descriptions, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md).  
+ For a complete list of system-provided bindings, with descriptions, see [System-Provided Bindings](system-provided-bindings.md).  
   
 ## Custom Bindings  
- If the system-provided binding collection does not have the correct combination of features that a service application requires, you can create a <xref:System.ServiceModel.Channels.CustomBinding> binding. For more information about the elements of a <xref:System.ServiceModel.Channels.CustomBinding> binding, see [\<customBinding>](../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) and [Custom Bindings](../../../docs/framework/wcf/extending/custom-bindings.md).  
+ If the system-provided binding collection does not have the correct combination of features that a service application requires, you can create a <xref:System.ServiceModel.Channels.CustomBinding> binding. For more information about the elements of a <xref:System.ServiceModel.Channels.CustomBinding> binding, see [\<customBinding>](../configure-apps/file-schema/wcf/custombinding.md) and [Custom Bindings](./extending/custom-bindings.md).  
   
 ## Using Bindings  
  Using bindings entails two basic steps:  
@@ -46,14 +46,14 @@ Bindings are objects that specify the communication details required to connect 
 ## Code and Configuration  
  You can define or configure bindings through code or configuration. These two approaches are independent of the type of binding used, for example, whether you are using a system-provided or a <xref:System.ServiceModel.Channels.CustomBinding> binding. In general, using code gives you complete control over the definition of a binding when you compile. Using configuration, on the other hand, allows a system administrator or the user of a WCF service or client to change the parameters of bindings. This flexibility is often desirable because there is no way to predict the specific machine requirements and network conditions into which a WCF application is to be deployed. Separating the binding (and addressing) information from the code allows administrators to change the binding details without having to recompile or redeploy the application. Note that if the binding is defined in code, it overwrites any configuration-based definitions made in the configuration file. For examples of these approaches, see the following topics:  
   
-- [How to: Host a WCF Service in a Managed Application](../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md) provides an example of creating a binding in code.  
+- [How to: Host a WCF Service in a Managed Application](how-to-host-a-wcf-service-in-a-managed-application.md) provides an example of creating a binding in code.  
   
-- [Tutorial: Create a Windows Communication Foundation client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md) provides an example of creating a client by using configuration.  
+- [Tutorial: Create a Windows Communication Foundation client](how-to-create-a-wcf-client.md) provides an example of creating a client by using configuration.  
   
 ## See also
 
-- [Endpoint Creation Overview](../../../docs/framework/wcf/endpoint-creation-overview.md)
-- [How to: Specify a Service Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md)
-- [How to: Specify a Service Binding in Code](../../../docs/framework/wcf/how-to-specify-a-service-binding-in-code.md)
-- [How to: Specify a Client Binding in Configuration](../../../docs/framework/wcf/how-to-specify-a-client-binding-in-configuration.md)
-- [How to: Specify a Client Binding in Code](../../../docs/framework/wcf/how-to-specify-a-client-binding-in-code.md)
+- [Endpoint Creation Overview](endpoint-creation-overview.md)
+- [How to: Specify a Service Binding in Configuration](how-to-specify-a-service-binding-in-configuration.md)
+- [How to: Specify a Service Binding in Code](how-to-specify-a-service-binding-in-code.md)
+- [How to: Specify a Client Binding in Configuration](how-to-specify-a-client-binding-in-configuration.md)
+- [How to: Specify a Client Binding in Code](how-to-specify-a-client-binding-in-code.md)

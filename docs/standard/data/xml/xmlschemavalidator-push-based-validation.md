@@ -183,25 +183,25 @@ The following is an example <xref:System.Xml.Schema.XmlValueGetter>`delegate` ta
 ```vb
 Shared dateTimeGetterContent As Object
 
-Shared Function dateTimeGetterHandle() As Object
+Shared Function DateTimeGetterHandle() As Object
     Return dateTimeGetterContent
 End Function
 
-Shared Function dateTimeGetter(ByVal dateTime As DateTime) As XmlValueGetter
+Shared Function DateTimeGetter(dateTime As DateTime) As XmlValueGetter
     dateTimeGetterContent = dateTime
-    Return New XmlValueGetter(AddressOf dateTimeGetterHandle)
+    Return New XmlValueGetter(AddressOf DateTimeGetterHandle)
 End Function
 ```
 
 ```csharp
 static object dateTimeGetterContent;
 
-static object dateTimeGetterHandle()
+static object DateTimeGetterHandle()
 {
     return dateTimeGetterContent;
 }
 
-static XmlValueGetter dateTimeGetter(DateTime dateTime)
+static XmlValueGetter DateTimeGetter(DateTime dateTime)
 {
     dateTimeGetterContent = dateTime;
     return new XmlValueGetter(dateTimeGetterHandle);
@@ -254,11 +254,11 @@ For example, in the XML Schema Definition Language (XSD) schema and XML document
 ```vb
 Dim reader As XmlReader =  XmlReader.Create("input.xml")
 
-Dim schemaSet As XmlSchemaSet =  New XmlSchemaSet()
+Dim schemaSet As New XmlSchemaSet()
 schemaSet.Add(Nothing, "schema.xsd")
-Dim manager As XmlNamespaceManager =  New XmlNamespaceManager(reader.NameTable)
+Dim manager As New XmlNamespaceManager(reader.NameTable)
 
-Dim validator As XmlSchemaValidator =  New XmlSchemaValidator(reader.NameTable,schemaSet,manager,XmlSchemaValidationFlags.None)
+Dim validator As New XmlSchemaValidator(reader.NameTable,schemaSet,manager,XmlSchemaValidationFlags.None)
 validator.Initialize()
 
 validator.ValidateElement("book", "", Nothing)
@@ -297,11 +297,11 @@ validator.ValidateEndElement(Nothing)
 ```csharp
 XmlReader reader = XmlReader.Create("input.xml");
 
-XmlSchemaSet schemaSet = new XmlSchemaSet();
+var schemaSet = new XmlSchemaSet();
 schemaSet.Add(null, "schema.xsd");
-XmlNamespaceManager manager = new XmlNamespaceManager(reader.NameTable);
+var manager = new XmlNamespaceManager(reader.NameTable);
 
-XmlSchemaValidator validator = new XmlSchemaValidator(reader.NameTable, schemaSet, manager, XmlSchemaValidationFlags.None);
+var validator = new XmlSchemaValidator(reader.NameTable, schemaSet, manager, XmlSchemaValidationFlags.None);
 validator.Initialize();
 
 validator.ValidateElement("book", "", null);
@@ -341,7 +341,7 @@ validator.ValidateEndElement(null);
 validator.ValidateEndElement(null);
 ```
 
- The example takes the following XML as input.
+ The example takes the following XML as input:
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3c.org/2001/XMLSchema">
@@ -355,7 +355,7 @@ validator.ValidateEndElement(null);
 </xs:schema>
 ```
 
-The example takes the following XSD schema as input.
+The example takes the following XSD schema as input:
 
 ```xml
 <book>
@@ -398,7 +398,7 @@ Schema validation warnings have an <xref:System.Xml.Schema.XmlSeverityType> valu
 The following is an example of a <xref:System.Xml.Schema.ValidationEventHandler> that receives schema validation warnings and errors encountered during schema validation taken from the example in the introduction.
 
 ```vb
-Shared Sub SchemaValidationEventHandler(ByVal sender As Object, ByVal e As ValidationEventArgs)
+Shared Sub SchemaValidationEventHandler(sender As Object, e As ValidationEventArgs)
 
     Select Case e.Severity
         Case XmlSeverityType.Error

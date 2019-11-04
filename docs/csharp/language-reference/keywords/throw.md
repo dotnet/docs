@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "throw expression [C#]"
   - "throw keyword [C#]"
 ms.assetid: 5ac4feef-4b1a-4c61-aeb4-61d549e5dd42
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # throw (C# Reference)
 

@@ -7,7 +7,7 @@ ms.date: 02/15/2019
 
 Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using their preferred languages or platforms, and testing it locally (Figure 4-21). But in every case, you'll have an important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you're always developing and testing Docker containers, but locally.
 
-![Diagram showing the concept of an an inner loop dev environment.](./media/docker-apps-inner-loop-workflow/inner-loop-development-context.png)
+![Diagram showing the concept of an inner loop dev environment.](./media/docker-apps-inner-loop-workflow/inner-loop-development-context.png)
 
 **Figure 4-21**. Inner-loop development context
 
@@ -260,7 +260,7 @@ Visual Studio Code supports debugging Docker if you're using Node.js and other p
 You also can debug .NET Core or .NET Framework containers in Docker when using Visual Studio for Windows or Mac, as described in the next section.
 
 > [!TIP]
-> To learn more about debugging Node.js Docker containers, see <https://blog.docker.com/2016/07/live-debugging-docker/> and <https://blogs.msdn.microsoft.com/user_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more/>.
+> To learn more about debugging Node.js Docker containers, see <https://blog.docker.com/2016/07/live-debugging-docker/> and <https://blogs.msdn.microsoft.com/user_ed/2016/02/27/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more/>.
 
 >[!div class="step-by-step"]
 >[Previous](docker-apps-development-environment.md)

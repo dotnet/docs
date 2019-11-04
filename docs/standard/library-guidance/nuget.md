@@ -93,7 +93,7 @@ NuGet.org hosts its own [symbols server repository](/nuget/create-packages/symbo
 > [!IMPORTANT]
 > The NuGet.org symbol server only supports the new [portable symbol files](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) (`*.pdb`) created by SDK-style projects.
 >
-> To use the NuGet.org symbol server when debugging a .NET library, developers must have Visual Studio 2017 15.9 or later.
+> To use the NuGet.org symbol server when debugging a .NET library, developers must have Visual Studio 2017 version 15.9 or later.
 
 An alternative to creating a symbol package is embedding symbol files in the main NuGet package. The main NuGet package will be larger, but the embedded symbol files means developers don't need to configure the NuGet.org symbol server. If you're building your NuGet package using an SDK-style project, then you can embed symbol files by setting the `AllowedOutputExtensionsInPackageBuildOutputFolder` property:
 

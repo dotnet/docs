@@ -114,11 +114,11 @@ This topic describes security considerations that are specific to developing, de
   
 - A consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could call methods on the result that expose secure data or increase the size of the result set. For example, consider the following method signature:  
   
-    ```  
+    ```csharp  
     public IQueryable<Customer> GetCustomer(int customerId)  
     ```  
   
-     A consumer of this query could call `.Include("Orders")` on the returned `IQueryable<Customer>` to retrieve data that the query did not intend to expose. This can be avoided by changing the return type of the method to <xref:System.Collections.Generic.IEnumerable%601> and calling a method (such as `.ToList()`) that materializes the results.  
+    A consumer of this query could call `.Include("Orders")` on the returned `IQueryable<Customer>` to retrieve data that the query did not intend to expose. This can be avoided by changing the return type of the method to <xref:System.Collections.Generic.IEnumerable%601> and calling a method (such as `.ToList()`) that materializes the results.  
   
 - Because <xref:System.Linq.IQueryable%601> queries are executed when the results are iterated over, a consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could catch exceptions that are thrown. Exceptions could contain information not intended for the consumer.  
   

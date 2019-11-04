@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Member access operators (C# reference)
 
-You might use the following operators when you access a type member:
+You can use the following operators when you access a type member:
 
 - [`.` (member access)](#member-access-operator-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
@@ -82,11 +82,11 @@ For more information about arrays, see [Arrays](../../programming-guide/arrays/i
 
 ### Indexer access
 
-The following example uses .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
+The following example uses the .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
 
 [!code-csharp-interactive[indexer access](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Indexers)]
 
-Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer arguments can be declared to be of any type.
+Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer parameters can be declared to be of any type.
 
 For more information about indexers, see [Indexers](../../programming-guide/indexers/index.md).
 
@@ -116,7 +116,7 @@ The following example demonstrates the usage of the `?.` and `?[]` operators:
 
 [!code-csharp-interactive[null-conditional operators](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#NullConditional)]
 
-The preceding example also shows the usage of the [null-coalescing operator](null-coalescing-operator.md). You might use the null-coalescing operator to provide an alternative expression to evaluate in case the result of the null-conditional operation is `null`.
+The preceding example also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
 
 ### Thread-safe delegate invocation
 
@@ -192,6 +192,8 @@ For more information, see the following sections of the [C# language specificati
 - [Element access](~/_csharplang/spec/expressions.md#element-access)
 - [Null-conditional operator](~/_csharplang/spec/expressions.md#null-conditional-operator)
 - [Invocation expressions](~/_csharplang/spec/expressions.md#invocation-expressions)
+
+For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
 
 ## See also
 

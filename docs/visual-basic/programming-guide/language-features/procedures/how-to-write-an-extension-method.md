@@ -26,8 +26,8 @@ Extension methods enable you to add methods to an existing class. The extension 
     ```vb
     <Extension()>
     ```
- 
-   Note that the `Extension` attribute can only be applied to a method (a `Sub` or `Function` procedure) in a Visual Basic [Module](../../../language-reference/statements/module-statement.md). If you apply it to a method in a `Class` or a `Structure`, the Visual Basic compiler generates error [BC36551](../../../misc/bc36551.md), "Extension methods can be defined only in modules."
+
+    Note that the `Extension` attribute can only be applied to a method (a `Sub` or `Function` procedure) in a Visual Basic [Module](../../../language-reference/statements/module-statement.md). If you apply it to a method in a `Class` or a `Structure`, the Visual Basic compiler generates error [BC36551](../../../misc/bc36551.md), "Extension methods can be defined only in modules."
 
 4. Declare your method in the ordinary way, except that the type of the first parameter must be the data type you want to extend.
 
@@ -40,8 +40,8 @@ Extension methods enable you to add methods to an existing class. The extension 
 
 ## Example
 
- The following example declares an extension method in module `StringExtensions`. A second module, `Module1`, imports `StringExtensions` and calls the method. The extension method must be in scope when it is called. Extension method `PrintAndPunctuate` extends the <xref:System.String> class with a method that displays the string instance followed by a string of punctuation symbols sent in as a parameter.
-  
+The following example declares an extension method in module `StringExtensions`. A second module, `Module1`, imports `StringExtensions` and calls the method. The extension method must be in scope when it is called. Extension method `PrintAndPunctuate` extends the <xref:System.String> class with a method that displays the string instance followed by a string of punctuation symbols sent in as a parameter.
+
 ```vb
 ' Declarations will typically be in a separate module.
 Imports System.Runtime.CompilerServices
@@ -62,23 +62,23 @@ End Module
 Imports ConsoleApplication2.StringExtensions
 
 Module Module1
-  
+
     Sub Main()
         Dim example = "Hello"
         example.PrintAndPunctuate("?")
         example.PrintAndPunctuate("!!!!")
     End Sub
-    
+
 End Module
 ```
-  
- Notice that the method is defined with two parameters and called with only one. The first parameter, `aString`, in the method definition is bound to `example`, the instance of `String` that calls the method. The output of the example is as follows:
-  
- ```console
- Hello?
- Hello!!!!
- ```
-  
+
+Notice that the method is defined with two parameters and called with only one. The first parameter, `aString`, in the method definition is bound to `example`, the instance of `String` that calls the method. The output of the example is as follows:
+
+```console
+Hello?
+Hello!!!!
+```
+
 ## See also
 
 - <xref:System.Runtime.CompilerServices.ExtensionAttribute>

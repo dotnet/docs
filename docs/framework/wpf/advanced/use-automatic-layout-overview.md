@@ -8,7 +8,7 @@ ms.assetid: 6fed9264-18bb-4d05-8867-1fe356c6f687
 ---
 # Use Automatic Layout Overview
 
-This topic introduces guidelines for developers on how to write [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications with localizable [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]. In the past, localization of a UI was a time consuming process. Each language that the UI was adapted for required a pixel by pixel adjustment. Today with the right design and right coding standards, [!INCLUDE[TLA2#tla_ui#plural](../../../../includes/tla2sharptla-uisharpplural-md.md)] can be constructed so that localizers have less resizing and repositioning to do. The approach to writing applications that can be more easily resized and repositioned is called automatic layout, and can be achieved by using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application design.
+This topic introduces guidelines for developers on how to write [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications with localizable user interfaces (UIs). In the past, localization of a UI was a time consuming process. Each language that the UI was adapted for required a pixel by pixel adjustment. Today with the right design and right coding standards, UIs can be constructed so that localizers have less resizing and repositioning to do. The approach to writing applications that can be more easily resized and repositioned is called automatic layout, and can be achieved by using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application design.
 
 <a name="advantages_of_autolayout"></a>
 

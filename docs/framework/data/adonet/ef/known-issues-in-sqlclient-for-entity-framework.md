@@ -32,7 +32,7 @@ This section describes known issues related to the .NET Framework Data Provider 
 ## SKIP Operator  
  If you are using SQL Server 2000, using SKIP with ORDER BY on non-key columns might return incorrect results. More than the specified number of rows might be skipped if the non-key column has duplicate data in it. This is due to how SKIP is translated for SQL Server 2000. For example, in the following query, more than five rows might be skipped if `E.NonKeyColumn` has duplicate values:  
   
-```  
+```sql  
 SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L  
 ```  
   
@@ -42,11 +42,11 @@ SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP
  Certain database behaviors depend on the compatibility level set to the database. If your `ProviderManifestToken` attribute is set to 2005 and your SQL Server version is 2005, but the compatibility level of a database is set to "80" (SQL Server 2000), the generated Transact-SQL will be targeting SQL Server 2005, but might not execute as expected due to the compatibility level setting. For example, you might lose ordering information if a column name in the ORDER BY list matches a column name in the selector.  
   
 ## Nested Queries in Projection  
- Nested queries in a projection clause might get translated into Cartesian product queries on the server. On some back-end servers, including SLQ Server, this can cause the TempDB table to get quite large. This can decrease server performance.  
+ Nested queries in a projection clause might get translated into Cartesian product queries on the server. On some back-end servers, including SQL Server, this can cause the TempDB table to get quite large. This can decrease server performance.  
   
- The following is an example of  a nested query in a projection clause:  
+ The following is an example of a nested query in a projection clause:  
   
-```  
+```sql  
 SELECT c, (SELECT c, (SELECT c FROM AdventureWorksModel.Vendor AS c  ) As Inner2 FROM AdventureWorksModel.JobCandidate AS c  ) As Inner1 FROM AdventureWorksModel.EmployeeDepartmentHistory AS c  
 ```  
   

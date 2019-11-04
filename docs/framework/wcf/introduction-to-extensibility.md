@@ -24,28 +24,28 @@ The Windows Communication Foundation (WCF) application model is designed to solv
   
  Application messages contain data that is destined for a client or service operation that you or your customer has created. These messages are available to the application-level extension system in message or object form, depending upon your needs.  
   
- All messages pass through the channel system; only application messages are passed from the channel system into the application. To create new channel-level functionality, you must extend the channel system. To create new application-level functionality, you must extend the service or client runtime (dispatchers and channel factories, respectively). For more information about extending the application runtime, see [Extending ServiceHost and the Service Model Layer](../../../docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
+ All messages pass through the channel system; only application messages are passed from the channel system into the application. To create new channel-level functionality, you must extend the channel system. To create new application-level functionality, you must extend the service or client runtime (dispatchers and channel factories, respectively). For more information about extending the application runtime, see [Extending ServiceHost and the Service Model Layer](./extending/extending-servicehost-and-the-service-model-layer.md).  
   
 #### Extending Security  
- To build custom security mechanisms such as tokens and credentials, you must extend the security system. For more information, see [Extending Security](../../../docs/framework/wcf/extending/extending-security.md).  
+ To build custom security mechanisms such as tokens and credentials, you must extend the security system. For more information, see [Extending Security](./extending/extending-security.md).  
   
 #### Extending Metadata  
- To expose your metadata in differently than the default, you must extend the metadata system. For more information, see [Extending the Metadata System](../../../docs/framework/wcf/extending/extending-the-metadata-system.md).  
+ To expose your metadata in differently than the default, you must extend the metadata system. For more information, see [Extending the Metadata System](./extending/extending-the-metadata-system.md).  
   
 #### Extending Serialization  
- To build custom encoders, provide data surrogates, or other work involving the customization of transferred data, you must extend the serialization system. For more information, see [Extending Encoders and Serializers](../../../docs/framework/wcf/extending/extending-encoders-and-serializers.md).  
+ To build custom encoders, provide data surrogates, or other work involving the customization of transferred data, you must extend the serialization system. For more information, see [Extending Encoders and Serializers](./extending/extending-encoders-and-serializers.md).  
   
 #### Extending Bindings  
- To associate transport or protocol channels with the application layer, you must extend the binding system. For more information, see [Extending Bindings](../../../docs/framework/wcf/extending/extending-bindings.md).  
+ To associate transport or protocol channels with the application layer, you must extend the binding system. For more information, see [Extending Bindings](./extending/extending-bindings.md).  
   
 ### Extending the Channel System  
- To create channels that support custom transports or protocol functionality, see [Extending the Channel Layer](../../../docs/framework/wcf/extending/extending-the-channel-layer.md).  
+ To create channels that support custom transports or protocol functionality, see [Extending the Channel Layer](./extending/extending-the-channel-layer.md).  
   
 ### Extending the Service Hosting System  
- To modify the service-wide application model, you must extend <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType> class. For more information, see [Extending ServiceHost and the Service Model Layer](../../../docs/framework/wcf/extending/extending-servicehost-and-the-service-model-layer.md).  
+ To modify the service-wide application model, you must extend <xref:System.ServiceModel.ServiceHostBase?displayProperty=nameWithType> class. For more information, see [Extending ServiceHost and the Service Model Layer](./extending/extending-servicehost-and-the-service-model-layer.md).  
   
- To modify the relationship between the hosting application domain and the service host, you must extend the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> class. For more information, see [Extending Hosting Using ServiceHostFactory](../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md).  
+ To modify the relationship between the hosting application domain and the service host, you must extend the <xref:System.ServiceModel.Activation.ServiceHostFactory?displayProperty=nameWithType> class. For more information, see [Extending Hosting Using ServiceHostFactory](./extending/extending-hosting-using-servicehostfactory.md).  
   
 ## See also
 
-- [Extending WCF](../../../docs/framework/wcf/extending/index.md)
+- [Extending WCF](./extending/index.md)

@@ -41,4 +41,4 @@ You might have to reference two versions of assemblies that have the same fully-
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [:: Operator](../operators/namespace-alias-qualifier.md)
-- [/reference (C# Compiler Options)](../compiler-options/reference-compiler-option.md)
+- [-reference (C# Compiler Options)](../compiler-options/reference-compiler-option.md)

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "intranet applications, running in full trust"
   - "running intranet applications in full trust"
 ms.assetid: ee13c0a8-ab02-49f7-b8fb-9eab16c6c4f0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Running Intranet Applications in Full Trust
 

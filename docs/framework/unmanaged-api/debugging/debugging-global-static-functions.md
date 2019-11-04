@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "debugging global static functions [.NET Framework]"
   - "unmanaged global static functions [.NET Framework], debugging"
 ms.assetid: efc64414-77c3-48d0-881a-8594ed416aad
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Debugging Global Static Functions
 This section describes the unmanaged global static functions that the debugging API uses.  

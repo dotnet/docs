@@ -2,7 +2,6 @@
 title: "How to: create user-defined exceptions with localized exception messages"
 description: "Learn how to create user-defined exceptions with localized exception messages"
 author: Youssef1313
-ms.author: ronpet
 ms.date: 09/13/2019
 ---
 # How to: create user-defined exceptions with localized exception messages

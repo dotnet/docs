@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5fd30875-555e-4e96-877b-5dd266cde7c4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::ModifyLogSwitch Method
 Sets the severity level of the specified log switch.  

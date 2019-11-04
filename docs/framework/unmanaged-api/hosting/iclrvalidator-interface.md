@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 2edd0a10-77fb-4173-91eb-f2970cc364d0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRValidator Interface
 Provides methods for validating portable executable (PE) images and reporting validation errors.  

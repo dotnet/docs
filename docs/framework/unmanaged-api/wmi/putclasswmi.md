@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "PutClassWmi function [.NET WMI and performance counters]"
 topic_type:
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # PutClassWmi function

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: be9f47f1-f532-4603-a192-a73cb7a0c4b2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyCacheItem::AbortItem Method
 Allows the assembly in the global assembly cache to perform cleanup operations before it is released.  

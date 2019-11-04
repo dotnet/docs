@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1e172b14-ee22-4943-b3b8-3740e7bdcd2e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_TYPEID Structure
 Contains a type identifier.  

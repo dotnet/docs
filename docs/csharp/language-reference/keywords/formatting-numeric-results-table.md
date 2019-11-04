@@ -52,4 +52,4 @@ For more information, see [Standard Numeric Format Strings](../../../standard/ba
 - [Formatting types](../../../standard/base-types/formatting-types.md)
 - [Composite formatting](../../../standard/base-types/composite-formatting.md)
 - [String interpolation](../tokens/interpolated.md)
-- [string](string.md)
+- [string](../builtin-types/reference-types.md)

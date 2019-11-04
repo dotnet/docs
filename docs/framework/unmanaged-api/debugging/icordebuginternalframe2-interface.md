@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: d4755569-85b8-4ff4-bf50-0e608e76429f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInternalFrame2 Interface
 Provides information about internal frames, including stack address and position in relation to ICorDebugFrame objects.  

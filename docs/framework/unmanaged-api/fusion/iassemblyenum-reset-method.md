@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e08308d2-7397-4616-b7a6-f81b7686fed6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyEnum::Reset Method
 Resets this [IAssemblyEnum](iassemblyenum-interface.md) object to its starting position.  

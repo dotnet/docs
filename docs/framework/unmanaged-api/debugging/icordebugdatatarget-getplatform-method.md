@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9ee96c9d-7a3d-4129-a6cc-7675c7f2dda4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget::GetPlatform Method
 Provides information about the platform, including processor architecture and operating system, on which the target process is running.  

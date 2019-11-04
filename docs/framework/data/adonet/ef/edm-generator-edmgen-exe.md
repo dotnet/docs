@@ -20,7 +20,7 @@ The EdmGen.exe tool is installed in the .NET Framework directory. In many cases,
 
 ## Syntax
 
-```
+```console
 EdmGen /mode:choice [options]
 ```
 

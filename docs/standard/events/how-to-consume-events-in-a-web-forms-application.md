@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "events [.NET Framework], consuming"
   - "Web Forms, event handling"
 ms.assetid: 73bf8638-c4ec-4069-b0bb-a1dc79b92e32
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Consume Events in a Web Forms Application
 A common scenario in ASP.NET Web Forms applications is to populate a webpage with controls, and then perform a specific action based on which control the user clicks. For example, a <xref:System.Web.UI.WebControls.Button?displayProperty=nameWithType> control raises an event when the user clicks it in the webpage. By handling the event, your application can perform the appropriate application logic for that button click.  

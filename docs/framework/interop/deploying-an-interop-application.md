@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "signed assemblies"
   - "COM interop, exposing COM components"
 ms.assetid: ea8a403e-ae03-4faa-9d9b-02179ec72992
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Deploying an Interop Application
 An interop application typically includes a .NET client assembly, one or more interop assemblies representing distinct COM type libraries, and one or more registered COM components. Visual Studio and the Windows SDK provide tools to import and convert a type library to an interop assembly, as discussed in [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md). There are two ways to deploy an interop application:  

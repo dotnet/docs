@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "strong-named assemblies"
   - "strong naming [.NET Framework], enhanced"
 ms.assetid: 6cf17a82-62a1-4f6d-8d5a-d7d06dec2bb5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Enhanced strong naming
 A strong name signature is an identity mechanism in the .NET Framework for identifying assemblies. It is a public-key digital signature that is typically used to verify the integrity of data being passed from an originator (signer) to a recipient (verifier). This signature is used as a unique identity for an assembly and ensures that references to the assembly are not ambiguous. The assembly is signed as part of the build process and then verified when it is loaded.  

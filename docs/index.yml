@@ -20,7 +20,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: "C# introduction. A quick interactive start"
+    - title: "C# introduction. A quick interactive start."
       itemType: get-started
       url: csharp/tutorials/intro-to-csharp/hello-world.yml
     # Card
@@ -28,17 +28,17 @@ highlightedContent:
       itemType: download
       url: https://dotnet.microsoft.com/download
     # Card
-    - title: "Build your first .NET Core app. Learn how to build a .NET core console app"
+    - title: "Create your first desktop app. Learn how to build a .NET Core console app."
       itemType: get-started
       url: core/get-started.md
     # Card
-    - title: "Build your first web app. Learn how to build your first ASP.NET Core web app"
+    - title: "Create your first web app. Learn how to build an ASP.NET Core web app."
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
 
 # productDirectory section (optional)
 productDirectory:
-  title: Build your application # < 60 chars (optional)
+  title: Create your application # < 60 chars (optional)
   summary: "You can choose web, mobile, desktop, gaming, IoT, and more." # < 160 chars (optional)
   items:
     # Card
@@ -47,7 +47,7 @@ productDirectory:
       imageSrc: ./media/hub/net_small_purple.png
       links:
         - url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
-          text: Build your first web app
+          text: Create your first web app
         - url: /aspnet/core/tutorials
           text: ASP.NET Core tutorials
         - url: /aspnet/core
@@ -95,7 +95,7 @@ productDirectory:
       imageSrc: ./media/hub/net_small_purple.png
       links:
         - url: https://visualstudio.microsoft.com/vs/features/game-development/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link
-          text: Game Development with Visual Studio
+          text: Game development with Visual Studio
         - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
           text: Learn how to use CRYENGINE to build games with C#
         - url: http://www.monogame.net/documentation/?page=main
@@ -127,7 +127,7 @@ conceptualContent:
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
-    - title: .NET Guide
+    - title: .NET guide
       links:
         - url: standard/get-started.md
           itemType: get-started
@@ -137,13 +137,13 @@ conceptualContent:
           text: Tour of .NET
         - url: standard/components.md
           itemType: concept
-          text: .NET Architectural Components
+          text: .NET architectural components
       # footerLink (optional)
       footerLink:
         url: standard/index.md
         text: See more
     # Card
-    - title: .NET Core Guide
+    - title: .NET Core guide
       links:
         - url: core/get-started.md
           itemType: get-started
@@ -153,7 +153,7 @@ conceptualContent:
           text: Tutorials
         - url: core/porting/index.md
           itemType: how-to-guide
-          text: Porting your apps from .NET Framework
+          text: Port  apps from .NET Framework
       # footerLink (optional)
       footerLink:
         url: core/index.md
@@ -166,26 +166,26 @@ conceptualContent:
           text: Get started
         - url: framework/development-guide.md
           itemType: overview
-          text: Development Guide
+          text: Development guide
         - url: framework/develop-client-apps.md
           itemType: concept
-          text: Develop Client Apps
+          text: Develop client apps
       # footerLink (optional)
       footerLink:
         url: framework/index.md
         text: See more
     # Card
-    - title: .NET Architectural guides
+    - title: .NET architectural guides
       links:
         - url: architecture/microservices/index.md
           itemType: architecture
-          text: ".NET Microservices: Architecture for Containerized .NET Applications"
+          text: ".NET Microservices: Architecture for containerized .NET apps"
         - url: architecture/containerized-lifecycle/index.md
           itemType: architecture
-          text: "Containerized Docker Application Lifecycle with Microsoft Platform and Tools"
+          text: "Containerized Docker application lifecycle with Microsoft platform and tools"
         - url: architecture/modernize-with-azure-containers/index.md
           itemType: architecture
-          text: "Modernize existing .NET applications with Azure cloud and Windows Containers"
+          text: "Modernize existing .NET applications with Azure cloud and Windows containers"
       # footerLink (optional)
       footerLink:
         url: architecture/index.yml
@@ -195,10 +195,10 @@ conceptualContent:
 ## Languages: C#, VB, F#, 
 tools:
   title: Programming languages # < 60 chars (optional)
-  summary: "You can write your .NET apps in C#, F#, or Visual Basic."
+  summary: "You can write .NET apps in C#, F#, or Visual Basic."
   items:
     # Card
-    - title: "A modern object-oriented, type-safe member of the C family"
+    - title: "A modern, object-oriented, type-safe member of the C family"
       imageSrc: https://docs.microsoft.com/media/logos/logo_Csharp.svg
       url: csharp/index.md
     # Card
@@ -216,7 +216,7 @@ tools:
 additionalContent:
   # Supports up to 3 sections
   sections: 
-    - title: API Reference sections # < 60 chars (optional)
+    - title: API reference sections # < 60 chars (optional)
       summary: Search the .NET API reference documentation, scoped to your interest. # < 160 chars (optional)
       items:
         # Card
@@ -228,7 +228,7 @@ additionalContent:
         summary: API reference documentation for .NET Framework
         url: https://docs.microsoft.com/en-us/dotnet/api/?view=netframework-4.8
       # Card
-      - title: "ML.NET  API reference"
+      - title: "ML.NET API reference"
         summary: API reference documentation for ML.NET
         url: https://docs.microsoft.com/en-us/dotnet/api/?view=ml-dotnet
       # Card
@@ -249,4 +249,3 @@ additionalContent:
         url: visual-basic/language-reference/index.md
   # footer (optional)
   footer: "Contribute to .NET docs. Read our [contributor guide](https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md)."
-

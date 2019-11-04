@@ -179,7 +179,7 @@ namespace MySparkApp
 
 ### 4. Add data file
 
-Your processes a file containing lines of text. Create an *input.txt* file in your *mySparkApp* directory, containing the following text:
+Your app processes a file containing lines of text. Create an *input.txt* file in your *mySparkApp* directory, containing the following text:
 
 ```text
 Hello World

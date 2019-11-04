@@ -107,7 +107,7 @@ To extract the Microsoft.Spark.Worker:
 .NET for Apache Spark requires WinUtils to be installed alongside Apache Spark. [Download winutils.exe](https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe). Then, copy WinUtils into **C:\bin\spark-2.4.1-bin-hadoop2.7\bin**.
 
 > [!NOTE]
-> If you are using a different version of Hadoop, which is annotated at the end of your Spark install folder name, [select the version of WinUitls](https://github.com/steveloughran/winutils) that's compatible with your version of Hadoop. 
+> If you are using a different version of Hadoop, which is annotated at the end of your Spark install folder name, [select the version of WinUtils](https://github.com/steveloughran/winutils) that's compatible with your version of Hadoop. 
 
 ### 7. Set DOTNET_WORKER_DIR and check dependencies
 

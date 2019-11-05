@@ -48,7 +48,7 @@ Let's do a quick walkthrough:
 
    [!code-csharp[Program.cs](~/samples/core/console-apps/HelloMsBuild/Program.cs)]
 
-   The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes basic constructs such as `Console` class and `Console.WriteLine` method.
+   The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes the `Console` class.
 
    We then define a namespace called `Hello`. You can change this to anything you want. A class named `Program` is defined within that namespace, with a `Main` method that takes an array of strings as its argument. This array contains the list of arguments passed in when the compiled program is called. As it is, this array is not used: all the program is doing is to write "Hello World!" to the console. Later, we'll make changes to the code that will make use of this argument.
 

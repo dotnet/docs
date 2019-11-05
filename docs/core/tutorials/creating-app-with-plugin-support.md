@@ -283,4 +283,4 @@ Because plugin dependency loading uses the *.deps.json* file, there is a gotcha 
 
 ## Plugin framework references
 
-Currently plugins can not introduce new frameworks into the process. So for example trying to load a plugin which uses ASP.NET (`Microsoft.AspNetCore.App` framework) into an application which only uses the root `Microsoft.NETCore.App` framework is not allowed. The host application must declare references to all frameworks it itself and all potential plugins might need.
+Currently, plugins can't introduce new frameworks into the process. So for example, you can't load a plugin that uses the `Microsoft.AspNetCore.App` framework into an application that only uses the root `Microsoft.NETCore.App` framework. The host application must declare references to all frameworks needed by plugins.

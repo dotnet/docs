@@ -113,6 +113,7 @@ For more information about the IL Linker tool, see the [documentation](https://a
 The main benefit of TC is to enable (re-)jitting methods with a lower-quality-but-faster tier or a higher-quality-but-slower tier. This helps increase performance of an application as it goes through various stages of execution, from startup through steady-state. This contrasts with the non-TC approach, where every method is compiled a single way (the same as the high-quality tier), which is biased to steady-state over startup performance.
 
 When TC is enabled, during startup for a method that is called:
+
 - If the method has AOT-compiled code (ReadyToRun), the pregenerated code will be used
 - Otherwise, the method will be jitted. Typically, these methods currently are generics over value types.
   - Quick JIT produces lower-quality code more quickly. Quick JIT is enabled by default in .NET Core 3.0 for methods that do not contain loops and is preferred during startup.

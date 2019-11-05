@@ -2,7 +2,7 @@
 title: Cloud-native data patterns
 description: Learn about common data patterns found in cloud-native applications
 author: robvet
-ms.date: 11/03/2019
+ms.date: 11/04/2019
 ---
 # Cloud-native data patterns
 
@@ -108,7 +108,7 @@ If data replicas were to lose connectivity in a "highly available" NoSQL databas
 
 This kind of result is known as [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/), a characteristic of distributed data systems where ACID transactions aren't supported. It's a brief delay between the update of a data item and time that it takes to propagate that update to each of the replica nodes. Under normal conditions, the lag is typically short, but can increase when problems arise. For example, what would happen if you were to update a product item in a NoSQL database in the United States and query that same data item from a replica node in Europe? You would receive the earlier product information, until the cluster updates the European node with the product change. By immediately returning a query result and not waiting for all replica nodes to update, you gain enormous scale and volume, but with the possibility of presenting older data.
 
-Cloud-native services typically favor the guarantees of data availability and partition tolerance over strong consistency. To the business, high availability and massive scalability are often more critical than consistency. As we've discussed, developers can implement techniques and patterns such as Sagas, CQRS, and asynchronous messaging that embraces eventual consistency.  
+When possible, cloud-native services target the guarantees of data availability and partition tolerance over strong consistency. Often, high availability and massive scalability are often more critical to the business than consistency. Developers can implement techniques and patterns such as Sagas, CQRS, and asynchronous messaging that embraces eventual consistency.  
 
 > Some care must be taken with these descriptions as some databases support configurations that can *"toggle"* these principles. For example, MySQL can be configured as either consistent and available or available and partition tolerant. Azure Cosmos DB also support five different consistency models as we'll see in the next section.
 

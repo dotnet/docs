@@ -310,7 +310,7 @@ Here's an example class to serialize and JSON output:
 class WeatherForecast
 {
     public DateTimeOffset Date { get; set; }
-    public int TemperatureC { get; set; }
+    public int TemperatureCelsius { get; set; }
     public string Summary { get; set; }
     [JsonPropertyName("Wind")]
     public int WindSpeed { get; set; }
@@ -320,7 +320,7 @@ class WeatherForecast
 ```json
 {
   "date": "2019-08-01T00:00:00-07:00",
-  "temperatureC": 25,
+  "temperatureCelsius": 25,
   "summary": "Hot",
   "Wind": 35
 }
@@ -329,7 +329,7 @@ class WeatherForecast
 The camel case property naming policy:
 
 * Applies to serialization and deserialization.
-* Is overridden by `[JsonPropertyName]` attributes.
+* Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not camel case.
 
 ### Use a custom JSON property naming policy
 
@@ -380,7 +380,7 @@ class WeatherForecast
 The JSON property naming policy:
 
 * Applies to serialization and deserialization.
-* Is overridden by `[JsonPropertyName]` attributes.
+* Is overridden by `[JsonPropertyName]` attributes. This is why the JSON property name `Wind` in the example is not upper case.
 
 ### Camel case dictionary keys
 
@@ -394,7 +394,7 @@ var options = new JsonSerializerOptions
 json = JsonSerializer.Serialize(weatherForecast, options);
 ```
 
-Serializing an object with a dictionary named `TemperatureRanges` that has key-value pairs `"Cold", 20` and `"Hot", 40` would result in JSON output like the following example:
+Serializing an object with a dictionary named `TemperatureRanges` that has key-value pairs `"ColdMinTemp", 20` and `"HotMinTemp", 40` would result in JSON output like the following example:
 
 ```json
 {
@@ -402,13 +402,13 @@ Serializing an object with a dictionary named `TemperatureRanges` that has key-v
   "TemperatureC": 25,
   "Summary": "Hot",
   "TemperatureRanges": {
-    "cold": 20,
-    "hot": 40
+    "coldMinTemp": 20,
+    "hotMinTemp": 40
   }
 }
 ```
 
-The camel case naming policy applies to serialization only.
+The camel case naming policy for dictionary keys applies to serialization only. If you deserialize a dictionary, the keys will match the JSON file even if you specify `JsonNamingPolicy.CamelCase` for the `DictionaryKeyPolicy`.
 
 ### Enums as strings
 
@@ -677,7 +677,7 @@ class WeatherForecastWithWind : WeatherForecast
 }
 ```
 
-And suppose the type passed to the `Serialize` method at compile time is `WeatherForecast`:
+And suppose the type argument of the `Serialize` method at compile time is `WeatherForecast`:
 
 ```csharp
 string json = JsonSerializer.Serialize<WeatherForecast>(weatherForecast);

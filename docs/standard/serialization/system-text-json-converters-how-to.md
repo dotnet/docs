@@ -62,7 +62,7 @@ The following steps explain how to create a converter by following the factory p
 * Create an inner class that is a converter following the basic pattern.
 * Override the `CreateConverter` method to return an instance of the inner converter class. Configure the inner converter to handle the type-to-convert that is provided at runtime.
 
-The factory pattern is required for open generics because in .NET there is no universal way to convert an object to a string. And there is no universal way to parse a string and get an object of the desired type. Not every .NET type has a `Parse` method. For this reason, a converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
+The factory pattern is required for open generics because the code to convert an object to and from a string isn't the same for all types. A converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
 
 The `Enum` type is similar to an open generic type: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes. 
 
@@ -587,9 +587,9 @@ using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace SystemTextJsonConverters
+namespace SystemTextJsonSamples
 {
-    public class PersonConverterWithTypeDiscriminator : JsonConverter<Person> JsonConverterFactory
+    public class PersonConverterWithTypeDiscriminator : JsonConverter<Person>
     {
         enum TypeDiscriminator
         {
@@ -679,15 +679,15 @@ namespace SystemTextJsonConverters
         {
             writer.WriteStartObject();
 
-            if (value is Customer)
+            if (value is Customer customer)
             {
                 writer.WriteNumber("TypeDiscriminator", (int)TypeDiscriminator.Customer);
-                writer.WriteNumber("CreditLimit", ((Customer)value).CreditLimit);
+                writer.WriteNumber("CreditLimit", customer.CreditLimit);
             }
-            else if (value is Employee)
+            else if (value is Employee employee)
             {
                 writer.WriteNumber("TypeDiscriminator", (int)TypeDiscriminator.Employee);
-                writer.WriteString("OfficeNumber", ((Employee)value).OfficeNumber);
+                writer.WriteString("OfficeNumber", employee.OfficeNumber);
             }
 
             writer.WriteString("Name", value.Name);

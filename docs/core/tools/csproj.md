@@ -233,11 +233,15 @@ The way that pre-build and post-build events are specified in the project file h
 </PropertyGroup>
 ```
 
-In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild`. For the preceding example, use the following code:
+In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and set the `BeforeTargets` property for `PreBuild` or the `AfterTargets` property for `PostBuild`. For the preceding example, use the following code:
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
 </Target>
 ```
 

@@ -61,7 +61,7 @@ The second demonstrates *binary literals*, which allow you to specify bit patter
 
 ## Nullable value types
 
-Ordinary value types cannot have a value of [null](language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](./language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null or undefined. For more information, see [Nullable value types](programming-guide/nullable-types/index.md).
+Ordinary value types cannot have a value of [null](language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](./language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null or undefined. For more information, see [Nullable value types](language-reference/builtin-types/nullable-value-types.md).
 
 ## See also
 

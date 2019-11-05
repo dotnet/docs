@@ -34,7 +34,7 @@ dotnet new sln
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. If not specified, the command searches the current directory for one. If there are multiple solution files in the directory, one must be specified.
+  The solution file to use. The command searches the current directory for one if it's left unspecified, failing if there are multiple solution files.
 
 ## Options
 
@@ -58,7 +58,7 @@ dotnet sln list [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. If not specified, the command searches the current directory for one. It fails if there are multiple solution files in the directory.
+  The solution file to use. The command searches the current directory for one if it's left unspecified, failing if there are multiple solution files.
 
 #### Options
 
@@ -73,7 +73,7 @@ Adds one or more projects to the solution file.
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder] <PROJECT_PATH>
+dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <SOLUTION_FOLDER>] <PROJECT_PATH>
 dotnet sln add [-h|--help]
 ```
 
@@ -81,11 +81,11 @@ dotnet sln add [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. If not specified, the command searches the current directory for one. It fails if there are multiple solution files in the directory.
+  The solution file to use. The command searches the current directory for one if it's left unspecified, failing if there are multiple solution files.
 
 - **`PROJECT_PATH`**
 
-  The path to the project to add to the solution. Add multiple projects by adding one after the other separated by spaces. (See the fourth example.) Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to the project to add to the solution. Add multiple projects by adding one after the other separated by spaces. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 
@@ -116,11 +116,11 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. If not specified, the command searches the current directory for one. It fails if there are multiple solution files in the directory.
+  The solution file to use. The command searches the current directory for one if it's left unspecified, failing if there are multiple solution files.
 
 - **`PROJECT_PATH`**
 
-  The path to the project to remove from the solution. Remove multiple projects by adding one after the other separated by spaces. (See the fifth example.) Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to the project to remove from the solution. Remove multiple projects by adding one after the other separated by spaces. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 

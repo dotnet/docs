@@ -68,7 +68,7 @@ ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
   
  ![Screenshot that shows the dispatcher queue.](./media/threading-model/threading-dispatcher-queue.png)  
   
- [!INCLUDE[TLA#tla_word](../../../../includes/tlasharptla-word-md.md)] accomplishes spell checking using this mechanism. Spell checking is done in the background using the idle time of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] thread. Let's take a look at the code.  
+ Microsoft Word accomplishes spell checking using this mechanism. Spell checking is done in the background using the idle time of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] thread. Let's take a look at the code.  
   
  The following example shows the XAML that creates the user interface.  
   

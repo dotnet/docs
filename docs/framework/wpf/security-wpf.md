@@ -273,4 +273,4 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 - [Patterns and Practices Security Guidance for Applications](https://go.microsoft.com/fwlink/?LinkId=117426)
 - [Code Access Security](../misc/code-access-security.md)
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
-- [XAML Overview (WPF)](./advanced/xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../desktop-wpf/fundamentals/xaml.md)

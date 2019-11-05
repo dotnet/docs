@@ -241,6 +241,9 @@ In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild`. Fo
 </Target>
 ```
 
+> [!NOTE]
+>You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE. 
+
 ## NuGet metadata properties
 
 With the move to MSBuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK:

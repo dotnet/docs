@@ -88,7 +88,7 @@ Due to the cooperative nature of the unloading, it's easy to forget about refere
 > Object references that are stored in stack slots or processor registers and that could prevent unloading of an `AssemblyLoadContext` can occur in the following situations:
 >
 > - When function call results are passed directly to another function, even though there is no user-created local variable.
-> - When a reference to an object is available at any point in a method, and the JIT compiler keeps the reference for as long as it wants in the current function.
+> - When the JIT compiler keeps a reference to an object that was available at some point in a method.
 
 ## Debug unloading issues
 

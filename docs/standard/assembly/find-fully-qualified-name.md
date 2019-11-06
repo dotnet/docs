@@ -120,4 +120,3 @@ End Class
 - [Create and use strong-named assemblies](create-use-strong-named.md)
 - [Global assembly cache](../../framework/app-domains/gac.md)
 - [How the runtime locates assemblies](../../framework/deployment/how-the-runtime-locates-assemblies.md)
-- [Program with assemblies](program.md)

@@ -20,51 +20,47 @@
   href: reference-assemblies.md
 - name: Resolve assembly loads
   href: resolve-loads.md
-- name: Program with assemblies
+- name: Create assemblies
+  href: create.md
+- name: Assembly names
+  href: names.md
+- name: Find an assembly's fully qualified name
+  href: find-fully-qualified-name.md
+- name: Assembly location
+  href: location.md
+- name: Set assembly attributes
+  href: set-attributes.md
+- name: Strong-named assemblies
+  items:
+  - name: Create and use strong-named assemblies
+    href: create-use-strong-named.md
+  - name: Create a public-private key pair
+    href: create-public-private-key-pair.md
+  - name: Sign an assembly with a strong name
+    href: sign-strong-name.md
+  - name: Enhanced strong naming
+    href: enhanced-strong-naming.md
+  - name: Reference a strong-named assembly
+    href: reference-strong-named.md
+  - name: Disable strong-name bypass
+    href: disable-strong-name-bypass-feature.md
+- name: Delay-sign an assembly
+  href: delay-sign.md
+- name: View assembly contents
+  href: view-contents.md
+- name: Type forwarding in the CLR
+  href: type-forwarding.md
+- name: Friend assemblies
   items:
   - name: Overview
-    href: program.md
-  - name: Create assemblies
-    href: create.md
-  - name: Assembly names
-    href: names.md
-  - name: Find an assembly's fully qualified name
-    href: find-fully-qualified-name.md
-  - name: Assembly location
-    href: location.md
-  - name: Set assembly attributes
-    href: set-attributes.md
-  - name: Strong-named assemblies
-    items:
-    - name: Create and use strong-named assemblies
-      href: create-use-strong-named.md
-    - name: Create a public-private key pair
-      href: create-public-private-key-pair.md
-    - name: Sign an assembly with a strong name
-      href: sign-strong-name.md
-    - name: Enhanced strong naming
-      href: enhanced-strong-naming.md
-    - name: Reference a strong-named assembly
-      href: reference-strong-named.md
-    - name: Disable strong-name bypass
-      href: disable-strong-name-bypass-feature.md
-  - name: Delay-sign an assembly
-    href: delay-sign.md
-  - name: View assembly contents
-    href: view-contents.md
-  - name: Type forwarding in the CLR
-    href: type-forwarding.md
-  - name: Friend assemblies
-    items:
-    - name: Overview
-      href: friend.md
-    - name: Create unsigned friend assemblies
-      href: create-unsigned-friend.md
-    - name: Create signed friend assemblies
-      href: create-signed-friend.md
-  - name: Determine if a file is an assembly
-    href: identify.md
-  - name: Load and unload assemblies
-    href: load-unload.md
-  - name: "Walkthrough: Embed types from managed assemblies in Visual Studio"
-    href: embed-types-visual-studio.md
+    href: friend.md
+  - name: Create unsigned friend assemblies
+    href: create-unsigned-friend.md
+  - name: Create signed friend assemblies
+    href: create-signed-friend.md
+- name: Determine if a file is an assembly
+  href: identify.md
+- name: Load and unload assemblies
+  href: load-unload.md
+- name: "Walkthrough: Embed types from managed assemblies in Visual Studio"
+  href: embed-types-visual-studio.md

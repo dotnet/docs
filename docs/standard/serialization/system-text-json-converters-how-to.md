@@ -53,14 +53,16 @@ The following steps explain how to create a converter by following the basic pat
 * Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
 * Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
 
+You can refer to the [built-in converters source code](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
+
 ### The factory pattern
 
 The following steps explain how to create a converter by following the factory pattern:
 
 * Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverterFactory>.
 * Override the `CanConvert` method to return true when the type to convert is one that the converter can handle. For example, if the converter is for `List<T>` it might only handle `List<int>`, `List<string>`, and `List<DateTime>`. 
-* Create an inner class that is a converter following the basic pattern.
-* Override the `CreateConverter` method to return an instance of the inner converter class. Configure the inner converter to handle the type-to-convert that is provided at runtime.
+* Override the `CreateConverter` method to return an instance of a converter class that will handle the type-to-convert that is provided at runtime.
+* Create the converter class that the `CreateConverter` method instantiates. 
 
 The factory pattern is required for open generics because the code to convert an object to and from a string isn't the same for all types. A converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
 
@@ -90,7 +92,6 @@ private class ExampleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
         Type typeToConvert, 
         JsonSerializerOptions options)
     {
-        Debug.Assert(typeToConvert == typeof(DateTimeOffset));
         return DateTimeOffset.ParseExact(reader.GetString(), 
             "MM/dd/yyyy", CultureInfo.InvariantCulture);
     }
@@ -100,7 +101,8 @@ private class ExampleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
         DateTimeOffset value, 
         JsonSerializerOptions options)
     {
-        writer.WriteStringValue(value.ToString("MM/dd/yyyy"));
+        writer.WriteStringValue(value.ToString(
+            "MM/dd/yyyy", CultureInfo.InvariantCulture));
     }
 }
 ```
@@ -125,7 +127,7 @@ During serialization or deserialization, a converter is chosen for each JSON ele
 * A converter added to the `Converters` collection.
 * `[JsonConverter]` applied to a custom data type or POCO.
 
-If multiple custom converters for a type are registered in the `Converters` collection, the first converter that returns true to `CanConvert` is used.
+If multiple custom converters for a type are registered in the `Converters` collection, the first converter that returns true for `CanConvert` is used.
 
 A built-in converter is chosen only if no applicable custom converter is registered.
 
@@ -264,9 +266,17 @@ The following sections provide converter samples that address some common scenar
 
 ### Deserialize inferred types to Object properties
 
-When deserializing to a property of type `Object`, a `JsonElement` object is created. The reason is that the deserializer doesn't know what CLR type to create, and it doesn't try to guess. For example, if a JSON element has "true", the deserializer doesn't infer that the value is a `Boolean`, and if an element has "01/01/2019", the deserializer doesn't infer that it's a `DateTime`. You can implement type inference in a custom converter.
+When deserializing to a property of type `Object`, a `JsonElement` object is created. The reason is that the deserializer doesn't know what CLR type to create, and it doesn't try to guess. For example, if a JSON property has "true", the deserializer doesn't infer that the value is a `Boolean`, and if an element has "01/01/2019", the deserializer doesn't infer that it's a `DateTime`.
 
-The following code shows a converter that converts `true` or `false` values in JSON to Boolean in an Object property, numbers to `long`, dates to `DateTime`, and strings to `string`. For other values, the code falls back to `JsonElement`.
+Type inference can be inaccurate. If the deserializer parses a JSON number that has no decimal point as a `long`, that might result in out-of-range issues if the value was originally serialized as a `ulong` or `BigInteger`. Parsing a number that has a decimal point as a `double` might lose precision if the number was originally serialized as a `decimal`.
+
+For scenarios that require type inference, the following code shows a custom converter for `Object` properties. The code converts:
+
+* `true` and `false` to `Boolean`
+* Numbers to `long` or `double`
+* Dates to `DateTime`
+* Strings to `string`
+* Everything else to `JsonElement`
 
 ```csharp
 using System;
@@ -275,7 +285,7 @@ using System.Text.Json.Serialization;
 
 namespace SystemTextJsonSamples
 {
-    public class ConverterInferredTypesToObject
+    public class ObjectToInferredTypesConverter
         : JsonConverter<object>
     {
         public override object Read(
@@ -336,7 +346,7 @@ The following code registers the converter:
 
 ```csharp
 options = new JsonSerializerOptions();
-options.Converters.Add(new ConverterInferredTypesToObject());
+options.Converters.Add(new ObjectToInferredTypesConverter());
 ```
 
 Here's an example type with an Object property:
@@ -559,7 +569,7 @@ The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.
 
 ### Support polymorphic deserialization
 
-[Polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) is supported, but a custom converter is required for deserialization.
+[Polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) doesn't require a custom converter, but deserialization does require a custom converter.
 
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at runtime. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 

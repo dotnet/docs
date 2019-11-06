@@ -4,7 +4,7 @@ description: Using default interface members you can extend interfaces with opti
 ms.technology: csharp-advanced-concepts
 ms.date: 10/04/2019
 ---
-# Tutorial: Mixin functionality when creating classes using interfaces with default interface methods
+# Tutorial: Mix functionality in when creating classes using interfaces with default interface methods
 
 Beginning with C# 8.0 on .NET Core 3.0, you can define an implementation when you declare a member of an interface. This feature provides new capabilities where you can define default implementations for features declared in interfaces. Classes can pick when to override functionality, when to use the default functionality, and when not to declare support for discrete features.
 

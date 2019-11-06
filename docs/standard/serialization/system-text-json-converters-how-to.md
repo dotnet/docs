@@ -26,7 +26,7 @@ You can also write custom converters to extend `System.Text.Json` with functiona
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 
-## Create a custom converter
+## Custom converter patterns
 
 There are two patterns for creating a custom converter: the basic pattern and the factory pattern. The factory pattern is for converters that handle type `Enum` or open generics. The basic pattern is for non-generic and closed generic types.  For example, converters for the following types require the factory pattern:
 

@@ -4,8 +4,6 @@
   href: contents.md
 - name: Manifest
   href: manifest.md
-- name: Strong-named assemblies
-  href: strong-named.md
 - name: Security considerations
   href: security-considerations.md
 - name: Versioning
@@ -32,6 +30,8 @@
   href: set-attributes.md
 - name: Strong-named assemblies
   items:
+  - name: Overview
+    href: strong-named.md
   - name: Create and use strong-named assemblies
     href: create-use-strong-named.md
   - name: Create a public-private key pair

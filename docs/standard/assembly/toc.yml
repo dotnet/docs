@@ -2,27 +2,28 @@
   href: index.md
 - name: Assembly contents
   href: contents.md
-- name: Assembly manifest
+- name: Manifest
   href: manifest.md
 - name: Strong-named assemblies
   href: strong-named.md
-- name: Assembly security considerations
+- name: Security considerations
   href: security-considerations.md
-- name: Assembly versioning
+- name: Versioning
   href: versioning.md
-- name: Assemblies and side-by-side execution
+- name: Side-by-side execution
   href: side-by-side-execution.md
 - name: Assembly file format
   href: file-format.md
-- name: Assembly unloadability in .NET Core
+- name: Unloadability in .NET Core
   href: unloadability.md
 - name: Reference assemblies
   href: reference-assemblies.md
 - name: Resolve assembly loads
   href: resolve-loads.md
 - name: Program with assemblies
-  href: program.md
   items:
+  - name: Overview
+    href: program.md
   - name: Create assemblies
     href: create.md
   - name: Assembly names
@@ -51,11 +52,11 @@
     href: delay-sign.md
   - name: View assembly contents
     href: view-contents.md
-  - name: Type forwarding in the common language runtime
+  - name: Type forwarding in the CLR
     href: type-forwarding.md
   - name: Friend assemblies
     items:
-    - name: Overview  
+    - name: Overview
       href: friend.md
     - name: Create unsigned friend assemblies
       href: create-unsigned-friend.md

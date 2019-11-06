@@ -278,7 +278,7 @@ In real-life applications, your model training and evaluation code will be separ
 
 ## Next steps
 
-* You can learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](./tutorials/index.md).
+* Learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](./tutorials/index.md).
 
 * Or you can learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
 

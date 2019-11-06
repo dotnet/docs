@@ -114,4 +114,3 @@ The following code example shows the attributes to apply when using delay signin
 ## See also
 
 - [Create assemblies](create.md)
-- [Program with assemblies](program.md)

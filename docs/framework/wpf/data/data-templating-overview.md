@@ -140,7 +140,7 @@ In the previous example, we placed the trigger within the <xref:System.Windows.D
 
  [!code-xaml[DataTemplatingIntro_snip#ImportantTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#importanttemplate)]
 
-This example uses the <xref:System.Windows.FrameworkTemplate.Resources%2A?displayProperty=nameWithType> property. Resources defined in that section are shared by the elements within the <xref:System.Windows.DataTemplate>.
+This example uses the [DataTemplate.Resources](xref:System.Windows.FrameworkTemplate.Resources%2A) property. Resources defined in that section are shared by the elements within the <xref:System.Windows.DataTemplate>.
 
  To supply logic to choose which <xref:System.Windows.DataTemplate> to use based on the `Priority` value of the data object, create a subclass of <xref:System.Windows.Controls.DataTemplateSelector> and override the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method. In the following example, the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method provides logic to return the appropriate template based on the value of the `Priority` property. The template to return is found in the resources of the enveloping <xref:System.Windows.Window> element.
 

@@ -1,5 +1,5 @@
 ---
-title: Create mixin types using default interface methods
+title: Create mix in types using default interface methods
 description: Using default interface members you can extend interfaces with optional default implementations for implementors.
 ms.technology: csharp-advanced-concepts
 ms.date: 10/04/2019

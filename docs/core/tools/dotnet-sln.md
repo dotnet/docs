@@ -73,7 +73,7 @@ Adds one or more projects to the solution file.
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <SOLUTION_FOLDER>] <PROJECT_PATH>
+dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <SOLUTION_FOLDER>] <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln add [-h|--help]
 ```
 
@@ -85,7 +85,7 @@ dotnet sln add [-h|--help]
 
 - **`PROJECT_PATH`**
 
-  The path to the project to add to the solution. Add multiple projects by adding one after the other separated by spaces. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 
@@ -108,7 +108,7 @@ Removes a project or multiple projects from the solution file.
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH>
+dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 ```
 
@@ -120,7 +120,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`PROJECT_PATH`**
 
-  The path to the project to remove from the solution. Remove multiple projects by adding one after the other separated by spaces. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 
@@ -139,13 +139,13 @@ dotnet sln todo.sln list
 Add a C# project to a solution:
 
 ```dotnetcli
-dotnet sln todo.sln add todo-app/todo-app.csproj
+dotnet sln add todo-app/todo-app.csproj
 ```
 
 Remove a C# project from a solution:
 
 ```dotnetcli
-dotnet sln todo.sln remove todo-app/todo-app.csproj
+dotnet sln remove todo-app/todo-app.csproj
 ```
 
 Add multiple C# projects to the root of a solution:

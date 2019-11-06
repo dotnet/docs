@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "single-file assemblies"
   - "multifile assemblies [.NET Framework]"
 ms.assetid: 28116714-da77-45f7-826d-fa035d121948
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Assembly contents
 In general, a static assembly can consist of four elements:

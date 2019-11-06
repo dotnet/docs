@@ -2,8 +2,6 @@
 title: "Runtime Directives (rd.xml) Configuration File Reference"
 ms.date: "03/30/2017"
 ms.assetid: 8241523f-d8e1-4fb6-bf6a-b29bfe07b38a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Runtime Directives (rd.xml) Configuration File Reference

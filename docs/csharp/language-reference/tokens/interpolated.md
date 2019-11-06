@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "string interpolation [C#]"
   - "interpolated string [C#]"
 author: pkulikov
-ms.author: ronpet
 ---
 # $ - string interpolation (C# reference)
 

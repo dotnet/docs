@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0d6471bc-ad9b-4b1d-a307-c10443918863
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::FunctionRemapOpportunity Method
 Notifies the debugger that code execution has reached a sequence point in an older version of an edited function.  

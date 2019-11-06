@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords:
   - "what's new [.NET Framework]"
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # What's new in the .NET Framework
@@ -425,7 +423,7 @@ You can add SameSite for <xref:System.Web.Security.FormsAuthentication> and <xre
          <!-- ...   -->
       </forms>
    <authentication />
-   <sessionSate cookieSameSite="Lax"></sessionState>
+   <sessionState cookieSameSite="Lax"></sessionState>
 </system.web>
 ```
 

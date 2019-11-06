@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "<NetFx40_LegacySecurityPolicy> element"
   - "NetFx40_LegacySecurityPolicy element"
 ms.assetid: 07132b9c-4a72-4710-99d7-e702405e02d4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<NetFx40_LegacySecurityPolicy> Element
 

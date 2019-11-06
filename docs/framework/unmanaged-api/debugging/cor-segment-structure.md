@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 93aeecb9-7fef-4545-8daf-f566dfc47084
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_SEGMENT Structure
 Contains information about a region of memory in the managed heap.  

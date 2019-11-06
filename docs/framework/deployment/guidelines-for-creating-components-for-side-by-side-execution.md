@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "side-by-side execution, multiple application versions"
   - "side-by-side execution, multiple component versions"
 ms.assetid: 5c540161-6e40-42e9-be92-6175aee2c46a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Guidelines for Creating Components for Side-by-Side Execution
 Follow these general guidelines to create managed applications or components designed for side-by-side execution:  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2f09cd37-bf3a-4cc5-87b0-adc42a7eed31
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetCORVersion Function
 Returns the version number of the common language runtime (CLR) that is running in the current process.  

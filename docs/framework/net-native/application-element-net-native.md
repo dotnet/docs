@@ -2,8 +2,6 @@
 title: "<Application> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<Application> Element (.NET Native)
 Serves as a container for application-wide types and type members whose metadata is available for reflection at run time, and applies runtime reflection policy to all the program elements in an app.  

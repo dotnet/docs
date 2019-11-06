@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "RelativeBindForResources element"
   - "<relativeBindForResources> element"
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<relativeBindForResources> Element
 Optimizes the probe for satellite assemblies.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_Get function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # QualifierSet_Get function
 Gets the specified named qualifier.  

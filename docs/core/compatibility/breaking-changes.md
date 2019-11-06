@@ -2,8 +2,6 @@
 title: .NET Core breaking changes
 description: Learn about the breaking changes in each version of .NET Core.
 ms.date: "08/12/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Core breaking changes
 

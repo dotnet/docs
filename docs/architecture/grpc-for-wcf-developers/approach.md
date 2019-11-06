@@ -7,8 +7,6 @@ ms.date: 09/02/2019
 
 # How gRPC approaches RPC
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Windows Communication Foundation (WCF) and gRPC are both implementations of the *Remote Procedure Call* (RPC) pattern, which aims to make calls to services running on a different machine, or in a different process, seamlessly work as though they were just method calls in the client application. While the aims of WCF and gRPC are the same, the details of the implementation are quite different.
 
 The following table sets out how the key features of WCF relate to gRPC and where you can find more detailed explanations in the rest of the book.

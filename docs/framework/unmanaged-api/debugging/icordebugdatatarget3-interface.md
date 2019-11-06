@@ -2,8 +2,6 @@
 title: "ICorDebugDataTarget3 Interface"
 ms.date: "03/30/2017"
 ms.assetid: f477af85-994f-4df0-ae78-404ed252bf49
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget3 Interface
 Logically extends the [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) interface to provide information about loaded modules.  

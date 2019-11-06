@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b1e26bff-d3ea-436e-9867-29720df999f4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::ReverseEnterRuntime Method
 Notifies the host that a call is being made into the common language runtime (CLR) from unmanaged code.  

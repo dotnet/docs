@@ -10,8 +10,6 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, miscellaneous constructs"
   - "regular expressions, miscellaneous constructs"
 ms.assetid: 7d10d11f-680f-4721-b047-fb136316b4cd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Miscellaneous Constructs in Regular Expressions
 Regular expressions in .NET include three miscellaneous language constructs. One lets you enable or disable particular matching options in the middle of a regular expression pattern. The remaining two let you include comments in a regular expression.  

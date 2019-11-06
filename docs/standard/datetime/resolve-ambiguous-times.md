@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "time zones [.NET Framework], ambiguous time"
   - "ambiguous time [.NET Framework]"
 ms.assetid: 2cf5fb25-492c-4875-9245-98cac8348e97
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Resolve ambiguous times
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: dd639ba0-f77b-426d-9ff6-f92706840348
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame2::RemapFunction Method
 Remaps an edited function by specifying the new Microsoft intermediate language (MSIL) offset  

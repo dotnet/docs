@@ -28,7 +28,7 @@ Each of these techniques is conceptually introduced in this topic. For a more co
 
 ## WPF Interoperation Projects
 
-[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] APIs are managed code, but most existing [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programs are written in unmanaged C++.  You cannot call [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] APIs from a true unmanaged program. However, by using the `/clr` option with the [!INCLUDE[TLA#tla_visualcpp](../../../../includes/tlasharptla-visualcpp-md.md)] compiler, you can create a mixed managed-unmanaged program where you can seamlessly mix managed and unmanaged API calls.
+[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] APIs are managed code, but most existing [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] programs are written in unmanaged C++.  You cannot call [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] APIs from a true unmanaged program. However, by using the `/clr` option with the Microsoft Visual C++ compiler, you can create a mixed managed-unmanaged program where you can seamlessly mix managed and unmanaged API calls.
 
 One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] files into a C++ project.  There are several project division techniques to compensate for this.
 

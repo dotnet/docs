@@ -10,10 +10,9 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 235503c1-1d01-4f59-895f-ae2cf15b3345
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # Connection.m\_WriteList Field
 
 `Connection.m_WriteList` is an <xref:System.Collections.ArrayList> of <xref:System.Net.HttpWebRequest> objects that are queued up to be sent over HTTP.

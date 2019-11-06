@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5f3c91c9-c035-454f-96cc-011cab1ea06b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugGCReferenceEnum Interface
 Provides an enumerator for objects that will be garbage-collected.  

@@ -13,7 +13,7 @@ The need for continuous business innovation pushes development and operations te
 
 The bottom line is that when an organization builds and manages applications that are Cloud-Optimized, it can put solutions in the hands of customers sooner and bring new ideas to market when they are relevant.
 
-## Cloud-Optimized application principles and tenets 
+## Cloud-Optimized application principles and tenets
 
 Improvements in the cloud are mostly focused on meeting two goals: Reduce costs and improve business growth by improving agility. These goals are achieved by simplifying processes and reducing friction when you release and ship applications.
 

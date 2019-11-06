@@ -49,7 +49,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
 8. In your code-behind file, create an instance of the control hosting class and make it a child of the <xref:System.Windows.Controls.Border> element that is intended to host the window.  
   
-9. Communicate with the hosted window by sending it [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] messages and handling messages from its child windows, such as notifications sent by controls.  
+9. Communicate with the hosted window by sending it Microsoft Windows messages and handling messages from its child windows, such as notifications sent by controls.  
   
 <a name="page_layout"></a>   
 ## Implement the Page Layout  

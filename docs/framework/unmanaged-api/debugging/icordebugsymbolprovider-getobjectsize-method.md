@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetObjectSize Method"
 ms.date: "03/30/2017"
 ms.assetid: 3c564396-ac64-4ef3-b4f6-df96f1d46fc7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetObjectSize Method
 Returns the object size for an object based on its typespec signature.  

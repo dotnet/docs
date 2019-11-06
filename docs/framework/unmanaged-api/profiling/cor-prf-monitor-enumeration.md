@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9294d702-b4e5-441c-a930-e63d27b86bfd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_PRF_MONITOR Enumeration
 Contains values that are used to specify behavior, capabilities, or events to which the profiler wishes to subscribe.  

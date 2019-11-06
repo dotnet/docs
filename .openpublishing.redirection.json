@@ -1801,7 +1801,7 @@
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"   
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md",
@@ -1816,12 +1816,20 @@
             "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
         },
         {
+            "source_path": "docs/framework/network-programming/httplistener.md",
+            "redirect_url": "/dotnet/api/system.net.httplistener"
+        },
+        {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
             "redirect_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki"
         },
         {
             "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
             "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
+        },
+        {
+            "source_path": "docs/framework/wcf/wcf-system-requirements.md",
+            "redirect_url": "/dotnet/framework/get-started/system-requirements"
         },
         {
             "source_path": "docs/framework/wcf/diagnostics/etw/monitoring-service-operation-failures.md",
@@ -2464,6 +2472,11 @@
             "source_path": "docs/framework/wpf/data/data-binding-overview.md",
             "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/data/data-binding-wpf.md",
+            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
@@ -3261,6 +3274,14 @@
         {
             "source_path": "docs/visual-basic/language-reference/error-messages/as-any-is-not-supported-in-declare-statements.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30828",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/because-this-call-is-not-awaited-the-current-method-continues-to-run.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc42358",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/cannot-convert-anonymous-type-to-expression-tree.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc36548",
         },
         {
             "source_path": "docs/visual-basic/language-reference/queries/queries.md",

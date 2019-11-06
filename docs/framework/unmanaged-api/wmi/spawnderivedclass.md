@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "SpawnDerivedClass function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # SpawnDerivedClass function
 Creates a newly derived class object from a specified object.    

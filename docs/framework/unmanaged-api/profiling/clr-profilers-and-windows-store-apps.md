@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "profiling managed code"
   - "profiling managed code [Windows Store Apps]"
 ms.assetid: 1c8eb2e7-f20a-42f9-a795-71503486a0f5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # CLR Profilers and Windows Store Apps

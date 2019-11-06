@@ -14,17 +14,26 @@ Optional parameters must provide default values that can be used if no parameter
 
 **Error ID:** BC30812
 
-## To correct this error
+## Example
 
-Specify default values for optional parameters; for example:
+The following example generates BC30812:
 
 ```vb
-Sub Proc1(ByVal X As Integer,
-      Optional ByVal Y As String = "Default Value")
-    MsgBox("Default argument is: " & Y)
+Sub Proc1(x As Integer, Optional y As String)
+    Console.WriteLine("Default argument is: " & y)
+End Sub
+```
+
+## To correct this error
+
+Specify default values for optional parameters:
+
+```vb
+Sub Proc1(x As Integer, Optional y As String = "Default Value")
+    Console.WriteLine("Default argument is: " & y)
 End Sub
 ```
 
 ## See also
 
-- [Optional](../../../visual-basic/language-reference/modifiers/optional.md)
+- [Optional](../modifiers/optional.md)

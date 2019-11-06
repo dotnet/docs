@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "Dispose method"
   - "garbage collection, Dispose method"
 ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Implementing a Dispose method

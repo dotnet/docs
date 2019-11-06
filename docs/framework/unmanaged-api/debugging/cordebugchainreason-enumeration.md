@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c915da51-50b2-41df-841a-2b971f4d0975
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugChainReason Enumeration
 Indicates the reason or reasons for the initiation of a call chain.  

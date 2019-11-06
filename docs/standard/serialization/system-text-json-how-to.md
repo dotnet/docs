@@ -654,11 +654,11 @@ json = JsonSerializer.Serialize(weatherForecast, options);
 > [!CAUTION]
 > Unlike the default encoder, the `UnsafeRelaxedJsonEscaping` encoder:
 >
-> * Doesn't escape HTML-sensitive characters such as `<`, `>`, and `&`. 
-> * Doesn't escape some other characters, such as the quotation mark (`"`) and the plus sign (`+`).
-> * Specifies `UnicodeRanges.All`.
+> * Doesn't escape HTML-sensitive characters such as `<`, `>`, `&`, and `'`.
+> * Doesn't offer any additional defense-in-depth protections against XSS or information disclosure attacks, such as those which might result from the client and server disagreeing on the *charset*.
+> * Is more permissive than the default encoder on which characters are allowed to pass through unescaped.
 >
-> Use the unsafe encoder only if the output data is within a response whose content-type is known with a charset set to UTF-8.
+> Use the unsafe encoder only when it's known that the client will be interpreting the resulting payload as UTF-8 encoded JSON. For example, you can use it if the server is sending the response header `Content-Type: application/json; charset=utf-8`. Never allow the raw `UnsafeRelaxedJsonEscaping` output to be emitted into an HTML page or a `<script>` element.
 
 ## Serialize properties of derived classes
 

@@ -18,7 +18,7 @@ This article shows how to create custom converters for the JSON serialization cl
 A *converter* is a class that converts an object or a value to and from JSON. The `System.Text.Json` namespace has built-in converters for most primitive types that map to JavaScript primitives. You can write custom converters:
 
 * To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format instead of the default  ISO 8601-1:2019 format.
-* To support a custom data type. For example, a `PhoneNumber` struct.
+* To support a custom value type. For example, a `PhoneNumber` struct.
 
 You can also write custom converters to extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
 
@@ -44,43 +44,7 @@ Some examples of types that can be handled by the basic pattern include:
 
 The basic pattern creates a class that can handle one type. The factory pattern creates a class that determines at runtime which specific type is required and dynamically creates the appropriate converter.
 
-### The basic pattern
-
-The following steps explain how to create a converter by following the basic pattern:
-
-* Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverter%601> where `T` is the type to be serialized and deserialized.
-* Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the <xref:System.Text.Json.Utf8JsonReader> that is passed to the method to read the JSON.
-* Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
-* Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
-
-You can refer to the [built-in converters source code](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
-
-### The factory pattern
-
-The following steps explain how to create a converter by following the factory pattern:
-
-* Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverterFactory>.
-* Override the `CanConvert` method to return true when the type to convert is one that the converter can handle. For example, if the converter is for `List<T>` it might only handle `List<int>`, `List<string>`, and `List<DateTime>`. 
-* Override the `CreateConverter` method to return an instance of a converter class that will handle the type-to-convert that is provided at runtime.
-* Create the converter class that the `CreateConverter` method instantiates. 
-
-The factory pattern is required for open generics because the code to convert an object to and from a string isn't the same for all types. A converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
-
-The `Enum` type is similar to an open generic type: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes. 
-
-## Error handling
-
-If you need to throw an exception in error-handling code, consider throwing a <xref:System.Text.Json.JsonException> without a message. This exception type automatically creates a message that includes the path to the part of the JSON that caused the error. For example, the statement `throw new JsonException();` produces an error message like the following example:
-
-```text
-Unhandled exception. System.Text.Json.JsonException: 
-The JSON value could not be converted to System.Object. 
-Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
-```
-
-If you do provide a message (for example, `throw new JsonException("Error occurred)`, the exception still provides the path in the <xref:System.Text.Json.JsonException.Path> property.
-
-### Sample basic converter
+## Sample basic converter
 
 The following sample is a converter that overrides default serialization for an existing data type. The converter uses mm/dd/yyyy format for `DateTimeOffset` properties.
 
@@ -107,9 +71,191 @@ private class ExampleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
 }
 ```
 
-### Sample factory pattern converter
+## Sample factory pattern converter
 
-For a sample of a converter that is created according to the factory pattern, see [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
+The following code shows a custom converter that works with `Dictionary<Enum,TValue>`. The code follows the factory pattern because the first generic type parameter is `Enum` and the second is open. The `CanConvert` method returns `true` only for a `Dictionary` with two generic parameters, the first of which is an `Enum` type. The inner converter gets an existing converter to handle whichever type is provided at runtime for `TValue`. 
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Reflection;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
+namespace SystemTextJsonSamples
+{
+    public class ConverterDictionaryTKeyEnumTValue : JsonConverterFactory
+    {
+        public override bool CanConvert(Type typeToConvert)
+        {
+            if (!typeToConvert.IsGenericType)
+            {
+                return false;
+            }
+
+            if (typeToConvert.GetGenericTypeDefinition() != typeof(Dictionary<,>))
+            {
+                return false;
+            }
+
+            return typeToConvert.GetGenericArguments()[0].IsEnum;
+        }
+
+        public override JsonConverter CreateConverter(
+            Type type, 
+            JsonSerializerOptions options)
+        {
+            Type keyType = type.GetGenericArguments()[0];
+            Type valueType = type.GetGenericArguments()[1];
+
+            JsonConverter converter = (JsonConverter)Activator.CreateInstance(
+                typeof(DictionaryEnumConverterInner<,>).MakeGenericType(
+                    new Type[] { keyType, valueType }),
+                BindingFlags.Instance | BindingFlags.Public,
+                binder: null,
+                args: new object[] { options },
+                culture: null);
+
+            return converter;
+        }
+
+        private class DictionaryEnumConverterInner<TKey, TValue> : 
+            JsonConverter<Dictionary<TKey, TValue>> where TKey : struct, Enum
+        {
+            private readonly JsonConverter<TValue> _valueConverter;
+            private Type _keyType;
+            private Type _valueType;
+
+            public DictionaryEnumConverterInner(JsonSerializerOptions options)
+            {
+                // For performance, use the existing converter if available.
+                _valueConverter = (JsonConverter<TValue>)options
+                    .GetConverter(typeof(TValue));
+
+                // Cache the key and value types.
+                _keyType = typeof(TKey);
+                _valueType = typeof(TValue);
+            }
+
+            public override Dictionary<TKey, TValue> Read(
+                ref Utf8JsonReader reader, 
+                Type typeToConvert, 
+                JsonSerializerOptions options)
+            {
+                if (reader.TokenType != JsonTokenType.StartObject)
+                {
+                    throw new JsonException();
+                }
+
+                Dictionary<TKey, TValue> value = new Dictionary<TKey, TValue>();
+
+                while (reader.Read())
+                {
+                    if (reader.TokenType == JsonTokenType.EndObject)
+                    {
+                        return value;
+                    }
+
+                    // Get the key.
+                    if (reader.TokenType != JsonTokenType.PropertyName)
+                    {
+                        throw new JsonException();
+                    }
+
+                    string propertyName = reader.GetString();
+
+                    // For performance, parse with ignoreCase:false first.
+                    if (!Enum.TryParse(propertyName, ignoreCase: false, out TKey key) &&
+                        !Enum.TryParse(propertyName, ignoreCase: true, out key))
+                    {
+                        throw new JsonException(
+                            $"Unable to convert \"{propertyName}\" to Enum \"{_keyType}\".");
+                    }
+
+                    // Get the value.
+                    TValue v;
+                    if (_valueConverter != null)
+                    {
+                        reader.Read();
+                        v = _valueConverter.Read(ref reader, _valueType, options);
+                    }
+                    else
+                    {
+                        v = JsonSerializer.Deserialize<TValue>(ref reader, options);
+                    }
+
+                    // Add to dictionary.
+                    value.Add(key, v);
+                }
+
+                throw new JsonException();
+            }
+
+            public override void Write(
+                Utf8JsonWriter writer, 
+                Dictionary<TKey, TValue> value, 
+                JsonSerializerOptions options)
+            {
+                writer.WriteStartObject();
+
+                foreach (KeyValuePair<TKey, TValue> kvp in value)
+                {
+                    writer.WritePropertyName(kvp.Key.ToString());
+
+                    if (_valueConverter != null)
+                    {
+                        _valueConverter.Write(writer, kvp.Value, options);
+                    }
+                    else
+                    {
+                        JsonSerializer.Serialize(writer, kvp.Value, options);
+                    }
+                }
+
+                writer.WriteEndObject();
+            }
+        }
+    }
+}
+```
+
+The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
+
+## Steps to follow the basic pattern
+
+The following steps explain how to create a converter by following the basic pattern:
+
+* Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverter%601> where `T` is the type to be serialized and deserialized.
+* Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the <xref:System.Text.Json.Utf8JsonReader> that is passed to the method to read the JSON.
+* Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
+* Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
+
+You can refer to the [built-in converters source code](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
+
+## Steps to follow the factory pattern
+
+The following steps explain how to create a converter by following the factory pattern:
+
+* Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverterFactory>.
+* Override the `CanConvert` method to return true when the type to convert is one that the converter can handle. For example, if the converter is for `List<T>` it might only handle `List<int>`, `List<string>`, and `List<DateTime>`. 
+* Override the `CreateConverter` method to return an instance of a converter class that will handle the type-to-convert that is provided at runtime.
+* Create the converter class that the `CreateConverter` method instantiates. 
+
+The factory pattern is required for open generics because the code to convert an object to and from a string isn't the same for all types. A converter for an open generic type (`List<T>`, for example) has to create a converter for a closed generic type (`List<DateTime>`, for example) behind the scenes. Code must be written to handle each closed-generic type that the converter can handle.
+
+The `Enum` type is similar to an open generic type: a converter for `Enum` has to create a converter for a specific `Enum` (`WeekdaysEnum`, for example) behind the scenes. 
+
+## Error handling
+
+If you need to throw an exception in error-handling code, consider throwing a <xref:System.Text.Json.JsonException> without a message. This exception type automatically creates a message that includes the path to the part of the JSON that caused the error. For example, the statement `throw new JsonException();` produces an error message like the following example:
+
+```text
+Unhandled exception. System.Text.Json.JsonException: 
+The JSON value could not be converted to System.Object. 
+Path: $.Date | LineNumber: 1 | BytePositionInLine: 37.
+```
+
+If you do provide a message (for example, `throw new JsonException("Error occurred)`, the exception still provides the path in the <xref:System.Text.Json.JsonException.Path> property.
 
 ## Register a custom converter
 
@@ -117,21 +263,9 @@ For a sample of a converter that is created according to the factory pattern, se
 
 * Add an instance of the converter class to the <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> collection.
 * Apply the [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute) attribute to the properties that require the custom converter.
-* Apply the [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute) attribute to a class or struct that represents a custom data type.
+* Apply the [[JsonConverter]](xref:System.Text.Json.Serialization.JsonConverterAttribute) attribute to a class or a struct that represents a custom value type.
 
-### Converter registration precedence
-
-During serialization or deserialization, a converter is chosen for each JSON element in the following order, listed from highest priority to lowest:
-
-* `[JsonConverter]` applied to a property.
-* A converter added to the `Converters` collection.
-* `[JsonConverter]` applied to a custom data type or POCO.
-
-If multiple custom converters for a type are registered in the `Converters` collection, the first converter that returns true for `CanConvert` is used.
-
-A built-in converter is chosen only if no applicable custom converter is registered.
-
-### Registration sample - Converters collection 
+## Registration sample - Converters collection 
 
 Here's an example that makes the `ExampleDateTimeOffsetConverter` the default for properties of type `DateTimeOffset`:
 
@@ -172,7 +306,7 @@ options.Converters.Add(new ExampleDateTimeOffsetConverter());
 weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(json, options);
 ```
 
-### Sample registration - [JsonConverter] on a property
+## Registration sample - [JsonConverter] on a property
 
 The following code selects a custom converter for the `Date` property:
 
@@ -196,7 +330,7 @@ string json = JsonSerializer.Serialize(weatherForecastWithConverter);
 weatherForecast = JsonSerializer.Deserialize<WeatherForecastWithConverter>(json);
 ```
 
-### Sample registration - [JsonConverter] on a type
+## Registration sample - [JsonConverter] on a type
 
 Here's code that creates a struct and applies the `[JsonConverter]` attribute to it:
 
@@ -260,7 +394,19 @@ class WeatherForecastWithTemperatureStruct
 }
 ```
 
-## Samples for common scenarios
+## Converter registration precedence
+
+During serialization or deserialization, a converter is chosen for each JSON element in the following order, listed from highest priority to lowest:
+
+* `[JsonConverter]` applied to a property.
+* A converter added to the `Converters` collection.
+* `[JsonConverter]` applied to a custom value type or POCO.
+
+If multiple custom converters for a type are registered in the `Converters` collection, the first converter that returns true for `CanConvert` is used.
+
+A built-in converter is chosen only if no applicable custom converter is registered.
+
+## Converter samples for common scenarios
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
@@ -523,8 +669,6 @@ namespace SystemTextJsonSamples
     }
 }
 ```
-
-The preceding code follows the factory pattern because the first generic type parameter is `Enum` and the second is open. The `CanConvert` method returns `true` only for a `Dictionary` with two generic parameters, the first of which is an `Enum` type. The inner converter gets an existing converter to handle whichever type is provided at runtime for `TValue`. 
 
 The following code registers the converter:
 

@@ -83,10 +83,11 @@ Due to the cooperative nature of the unloading, it's easy to forget about refere
 - Instances of custom non-collectible `AssemblyLoadContext` types created inside of the collectible `AssemblyLoadContext`
 - Pending <xref:System.Threading.RegisteredWaitHandle> instances with callbacks set to methods in the custom `AssemblyLoadContext`
 
-Hints to find stack slot / processor register rooting an object:
-
-- Passing function call results directly to another function may create a root even though there is no user-created local variable.
-- If a reference to an object was available at any point in a method, the JIT might have decided to keep the reference in a stack slot / processor register for as long as it wants in the current function.
+> [!TIP]
+> Object references that are stored in stack slots or processor registers and that could prevent unloading of an `AssemblyLoadContext` can occur in the following situations:
+>
+> - When function call results are passed directly to another function, even though there is no user-created local variable.
+> - If a reference to an object was available at any point in a method, the JIT compiler might keep the reference in a stack slot or processor register for as long as it wants in the current function.
 
 ## Debug unloading issues
 

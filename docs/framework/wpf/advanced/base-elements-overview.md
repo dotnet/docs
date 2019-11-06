@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 2c997092-72c6-4767-bc84-74267f4eee72
 ---
 # Base Elements Overview
-A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] are derived from four classes which are commonly referred to in the [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)] documentation as the base element classes. These classes are <xref:System.Windows.UIElement>, <xref:System.Windows.FrameworkElement>, <xref:System.Windows.ContentElement>, and <xref:System.Windows.FrameworkContentElement>. The <xref:System.Windows.DependencyObject> class is also related, because it is a common base class of both <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>  
+A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] are derived from four classes which are commonly referred to in the SDK documentation as the base element classes. These classes are <xref:System.Windows.UIElement>, <xref:System.Windows.FrameworkElement>, <xref:System.Windows.ContentElement>, and <xref:System.Windows.FrameworkContentElement>. The <xref:System.Windows.DependencyObject> class is also related, because it is a common base class of both <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>  
 
 <a name="base_apis"></a>   
 ## Base Element APIs in WPF Classes  

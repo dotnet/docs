@@ -19,7 +19,7 @@ dev_langs:
 
 You can use the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) to view Microsoft intermediate language (MSIL) information in a file. If the file being examined is an assembly, this information can include the assembly's attributes and references to other modules and assemblies. This information can be helpful in determining whether a file is an assembly or part of an assembly and whether the file has references to other modules or assemblies.
 
-To display the contents of an assembly using *Ildasm.exe*, enter **ildasm** \<*assembly name*> at a command prompt. For example, the following command disassembles the *Hello.exe* assembly.
+To display the contents of an assembly using *Ildasm.exe*, enter **ildasm \<assembly name>** at a command prompt. For example, the following command disassembles the *Hello.exe* assembly.
 
 ```cmd
 ildasm Hello.exe
@@ -102,14 +102,14 @@ The following table describes each directive in the assembly manifest of the *He
 
 |Directive|Description|
 |---------------|-----------------|
-|**.assembly extern \<** *assembly name* **>**|Specifies another assembly that contains items referenced by the current module (in this example, `mscorlib`).|
-|**.publickeytoken \<** *token* **>**|Specifies the token of the actual key of the referenced assembly.|
-|**.ver \<** *version number* **>**|Specifies the version number of the referenced assembly.|
-|**.assembly \<** *assembly name* **>**|Specifies the assembly name.|
-|**.hash algorithm \<** *int32 value* **>**|Specifies the hash algorithm used.|
-|**.ver \<** *version number* **>**|Specifies the version number of the assembly.|
-|**.module \<** *file name* **>**|Specifies the name of the modules that make up the assembly. In this example, the assembly consists of only one file.|
-|**.subsystem \<** *value* **>**|Specifies the application environment required for the program. In this example, the value 3 indicates that this executable is run from a console.|
+|**.assembly extern \<assembly name>**|Specifies another assembly that contains items referenced by the current module (in this example, `mscorlib`).|
+|**.publickeytoken \<token>**|Specifies the token of the actual key of the referenced assembly.|
+|**.ver \<version number>**|Specifies the version number of the referenced assembly.|
+|**.assembly \<assembly name>**|Specifies the assembly name.|
+|**.hash algorithm \<int32 value>**|Specifies the hash algorithm used.|
+|**.ver \<version number>**|Specifies the version number of the assembly.|
+|**.module \<file name>**|Specifies the name of the modules that make up the assembly. In this example, the assembly consists of only one file.|
+|**.subsystem \<value>**|Specifies the application environment required for the program. In this example, the value 3 indicates that this executable is run from a console.|
 |**.corflags**|Currently a reserved field in the metadata.|
 
 An assembly manifest can contain a number of different directives, depending on the contents of the assembly. For an extensive list of the directives in the assembly manifest, see the Ecma documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set":

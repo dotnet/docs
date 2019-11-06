@@ -114,7 +114,7 @@ The main benefit of TC is to enable (re-)jitting methods with a lower-quality-bu
 
 When TC is enabled, during startup for a method that is called:
 
-- If the method has AOT-compiled code (ReadyToRun), the pregenerated code will be used
+- If the method has AOT-compiled code (ReadyToRun), the pregenerated code will be used.
 - Otherwise, the method will be jitted. Typically, these methods currently are generics over value types.
   - Quick JIT produces lower-quality code more quickly. Quick JIT is enabled by default in .NET Core 3.0 for methods that do not contain loops and is preferred during startup.
   - The fully-optimizing JIT produces higher-quality code more slowly. For methods where Quick JIT would not be used (for example, if the method is attributed with `[MethodImpl(MethodImplOptions.AggressiveOptimization)]`), the fully-optimizing JIT is used.

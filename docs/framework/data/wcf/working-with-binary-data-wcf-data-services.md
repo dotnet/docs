@@ -11,7 +11,7 @@ ms.assetid: aeccc45c-d5c5-4671-ad63-a492ac8043ac
 ---
 # Working with Binary Data (WCF Data Services)
 
-The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to retrieve and update binary data from an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed in one of the following ways:
+The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to retrieve and update binary data from an Open Data Protocol (OData) feed in one of the following ways:
 
 - As a primitive type property of an entity. This is the recommended method for working with small binary data objects that can be easily loaded into memory. In this case, the binary property is an entity property exposed by the data model, and the data service serializes the binary data as base-64 binary encoded XML in the response message.
 

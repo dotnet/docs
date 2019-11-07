@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: c832fa5b-cf86-4690-be5a-a226c0e49530
 ---
 # Getting Started with WCF Data Services
-The topics in this section help you quickly understand [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] and how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to expose and consume [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds by explaining the underlying technologies. This section includes both conceptual content and a [quickstart](quickstart-wcf-data-services.md) tutorial.  
+The topics in this section help you quickly understand Open Data Protocol (OData) and how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to expose and consume [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds by explaining the underlying technologies. This section includes both conceptual content and a [quickstart](quickstart-wcf-data-services.md) tutorial.  
   
 ## In This Section  
  The following topics describe how to create data services by using [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)].  

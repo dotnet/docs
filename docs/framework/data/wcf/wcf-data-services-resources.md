@@ -15,7 +15,7 @@ ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
  Describes how to design and access a data service by using [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], as illustrated by the [quickstart](quickstart-wcf-data-services.md).  
   
  [Application Scenarios](application-scenarios-wcf-data-services.md)  
- Provides a task-based approach to creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and applications that access [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds.  
+ Provides a task-based approach to creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and applications that access Open Data Protocol (OData) feeds.  
   
  [.NET Glossary](../../../standard/glossary.md)  
  Includes terms used in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] documentation.  

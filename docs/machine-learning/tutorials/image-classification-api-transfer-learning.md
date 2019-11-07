@@ -85,7 +85,7 @@ Now that you have a general understanding of transfer learning and the Image Cla
     1. Search for **Microsoft.ML**.
     1. Select the **Install** button.
     1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    1. Repeat these steps for the **Microsoft.ML.Vision** version **1.4.0**, **SciSharp.TensorFlow.Redist** version **1.15.0**,and **Microsoft.ML.ImageAnalytics** version **1.4.0** NuGet packages.
+    1. Repeat these steps for the **Microsoft.ML.Vision** version **1.4.0**, **SciSharp.TensorFlow.Redist** version **1.15.0**, and **Microsoft.ML.ImageAnalytics** version **1.4.0** NuGet packages.
 
 ### Prepare and understand the data
 
@@ -117,7 +117,15 @@ In this tutorial, only bridge deck images are used.
 
 1. Open the *Program.cs* file and replace the existing `using` statements at the top of the file with the following:
 
-    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L1-L7)]
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.IO;
+    using Microsoft.ML;
+    using static Microsoft.ML.DataOperationsCatalog;
+    using Microsoft.ML.Vision;
+    ```
 
 1. Below the `Program` class in *Program.cs*, create a class called `ImageData`. This class is used to represent the initially loaded data. 
 
@@ -292,10 +300,10 @@ Model training consists of a couple of steps. First, Image Classification API is
 
 1. Define the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) training pipeline that consists of both the `mapLabelEstimator` and the `ImageClassificationTrainer`.
 
-```csharp
-var trainingPipeline = mlContext.MulticlassClassification.Trainers.ImageClassification(classifierOptions)
-    .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
-```
+    ```csharp
+    var trainingPipeline = mlContext.MulticlassClassification.Trainers.ImageClassification(classifierOptions)
+        .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
+    ```
 
 1. Use the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit*) method to train your model.
 

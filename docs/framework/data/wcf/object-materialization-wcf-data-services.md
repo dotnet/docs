@@ -12,7 +12,7 @@ When you use the **Add Service Reference** dialog to consume an Open Data Protoc
 
 [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] also enables you to define your own client data service classes rather than using the tool-generated data classes. This enables you to use your own data classes, also known as "plain-old CLR object" (POCO) data classes. When using these types of custom data classes, you should attribute the data class with either <xref:System.Data.Services.Common.DataServiceKeyAttribute> or <xref:System.Data.Services.Common.DataServiceEntityAttribute> and ensure that type names on the client match type names in the data model of the data service.
 
-After the library receives the query response message, it materializes the returned data from the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed into instances of client data service classes that are of the type of the query. The general process for materializing these objects is as follows:
+After the library receives the query response message, it materializes the returned data from the OData feed into instances of client data service classes that are of the type of the query. The general process for materializing these objects is as follows:
 
 1. The client library reads the serialized type from the `entry` element in the response message feed and attempts to create a new instance of the correct type, in one of the following ways:
 

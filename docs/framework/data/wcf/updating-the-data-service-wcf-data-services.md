@@ -16,7 +16,7 @@ When you use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] cli
 > When you use an instance of <xref:System.Data.Services.Client.DataServiceCollection%601> to bind data to controls, changes made to data in the bound control are automatically reported to the <xref:System.Data.Services.Client.DataServiceContext>. For more information, see [Binding Data to Controls](binding-data-to-controls-wcf-data-services.md).  
   
 ## Adding, Modifying, and Changing Entities  
- When you use the **Add Service Reference** dialog in Visual Studio to add a reference to an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed, the resulting client data service classes each have a static *Create* method that takes one parameter for each non-nullable entity property. You can use this method to create instances of entity type classes, as in the following example:  
+ When you use the **Add Service Reference** dialog in Visual Studio to add a reference to an OData feed, the resulting client data service classes each have a static *Create* method that takes one parameter for each non-nullable entity property. You can use this method to create instances of entity type classes, as in the following example:  
   
  [!code-csharp[Astoria Northwind Client#CreateNewProduct](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#createnewproduct)]
  [!code-vb[Astoria Northwind Client#CreateNewProduct](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#createnewproduct)]  

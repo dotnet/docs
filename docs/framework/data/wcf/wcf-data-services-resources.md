@@ -18,10 +18,10 @@ ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
  Provides a task-based approach to creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and applications that access Open Data Protocol (OData) feeds.  
   
  [.NET Glossary](../../../standard/glossary.md)  
- Includes terms used in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] documentation.  
+ Includes terms used in [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and OData documentation.  
   
 ## External Resources  
- The following external resources provide additional information and support for creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] applications that expose and consume [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds.  
+ The following external resources provide additional information and support for creating [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] applications that expose and consume OData feeds.  
   
  [WCF Data Services Forum](https://go.microsoft.com/fwlink/?LinkId=150512)  
  Data programming support for [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] developers.  
@@ -30,13 +30,13 @@ ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
  Blog that contains updates and discussion of [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] features and functionality.  
   
  [OData Web Site](https://go.microsoft.com/fwlink/?LinkID=184554)  
- The primary source of information about [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)].  
+ The primary source of information about OData.  
   
  [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248)  
- Contains sample services, samples, and programming libraries that enable you to work with [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds.  
+ Contains sample services, samples, and programming libraries that enable you to work with OData feeds.  
   
  [OData Blog](https://go.microsoft.com/fwlink/?LinkId=185868)  
- Blog that contains discussions about [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] programming.  
+ Blog that contains discussions about OData programming.  
   
  [Data Access and Storage Developer Center](https://go.microsoft.com/fwlink/?LinkId=91903)  
  Central location for finding information and resources for working with data.  

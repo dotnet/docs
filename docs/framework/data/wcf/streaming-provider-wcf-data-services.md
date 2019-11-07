@@ -125,9 +125,9 @@ The following are things to consider when you implement a streaming provider and
 
 ## Versioning Requirements
 
-The streaming provider has the following [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol versioning requirements:
+The streaming provider has the following OData protocol versioning requirements:
 
-- The streaming provider requires that the data service support version 2.0 of the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] protocol and later versions.
+- The streaming provider requires that the data service support version 2.0 of the OData protocol and later versions.
 
 For more information, see [Data Service Versioning](data-service-versioning-wcf-data-services.md).
 

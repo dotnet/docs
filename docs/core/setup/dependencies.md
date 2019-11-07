@@ -7,6 +7,8 @@ ms.date: 11/06/2019
 zone_pivot_groups: operating-systems-set-one
 ---
 
+# .NET Core dependencies and requirements
+
 This article details which operating systems and CPU architecture are supported by .NET Core.
 
 ## Supported operating systems

@@ -46,7 +46,7 @@ The following Windows operating systems are supported with .NET Core 2.2:
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
-| Nano Server                   | Version 1709+                  | x64, ARM32      |
+| Nano Server                   | Version 1803+                   | x64, ARM32      |
 
 For more information about .NET Core 2.2 supported OS, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
 
@@ -62,6 +62,7 @@ The following Windows operating systems are supported with .NET Core 2.1:
 | Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1607+                  | x64, x86        |
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
+| Nano Server                   | Version 1803+                  | x64,            |
 
 For more information about .NET Core 2.1 supported OS, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 

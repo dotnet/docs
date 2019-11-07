@@ -116,7 +116,7 @@ The data contract versioning features, including the <xref:System.Runtime.Serial
 
 When using ASP.NET AJAX endpoints with the HTTP GET verb (using the <xref:System.ServiceModel.Web.WebGetAttribute> attribute), incoming parameters appear in the request URL instead of the message body. JSON is supported even in the request URL, so if you have an operation that takes an `Int` called "number" and a `Person` complex type called "p", the URL may resemble the following URL.
 
-```json
+```html
 http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 ```
 

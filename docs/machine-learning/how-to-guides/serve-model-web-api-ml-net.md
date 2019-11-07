@@ -1,7 +1,7 @@
 ---
 title: Deploy a model in an ASP.NET Core Web API
 description: Serve ML.NET sentiment analysis machine learning model over the internet using ASP.NET Core Web API
-ms.date: 09/11/2019
+ms.date: 11/07/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to
@@ -11,9 +11,6 @@ ms.custom: mvc,how-to
 # Deploy a model in an ASP.NET Core Web API
 
 Learn how to serve a pre-trained ML.NET machine learning model on the web using an ASP.NET Core Web API. Serving a model over a web API enables predictions via standard HTTP methods.
-
-> [!NOTE]
-> `PredictionEnginePool` service extension is currently in preview.
 
 ## Prerequisites
 

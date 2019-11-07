@@ -57,6 +57,13 @@ __Improved PrintPreviewControl and PrintPreviewDialog Accessibility support__
 __StringCollectionEditor Accessibility support__
 - Added StringCollectionEditor with improved accessibility support.
 
+__Improved MonthCalendar Accessibility support__
+- Added UI Automation server providers to MonthCalendar control, added UI Automation Grid pattern and Table pattern providers.
+- Changed _table_ accessible control type to _calendar_ accessible control type for MonthCalendar except the case when the control has a preceeding label control which defines MonthCalendar control accessible name, in this specific case accessible control type becomes _table_.
+- Improved announcement of selected date for MonthCalendar control.
+- Improved MounthCalendar control support for screen readers and other accessibility tools. At this moment users are able to navigate the control elements and interact with these elements using keyboard only input (For Narrator: ca use CAPS + arrow keys to navigation thru the control elements and CAPS + Enter to invoke element default action). Improved arrow key navigation across MonthCalendar child elements accompanied with focusing rectangle (blue focus rectangle for Narrator).
+- Improved accessibility for hit test action for MonthCalendar control elements to allow getting MonthCalendar child accessible element by provided coordinates.
+
 __UI automation support for DataGridView, PropertyGrid, ListBox, ComboBox, ToolStrip and other controls__
 Note: UI automation support is enabled for controls in runtime but is not used in design time.
 For an overview of UI automation, see the [UI Automation Overview](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-overview).

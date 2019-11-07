@@ -38,7 +38,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
     using System;
     using Microsoft.ML;
     using Microsoft.ML.Data;
-    
+
     class Program
     {
         public class HouseData
@@ -46,17 +46,17 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
             public float Size { get; set; }
             public float Price { get; set; }
         }
-    
+
         public class Prediction
         {
             [ColumnName("Score")]
             public float Price { get; set; }
         }
-    
+
         static void Main(string[] args)
         {
             MLContext mlContext = new MLContext();
-    
+
             // 1. Import or create training data
             HouseData[] houseData = {
                 new HouseData() { Size = 1.1F, Price = 1.2F },
@@ -68,10 +68,10 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
             // 2. Specify data preparation and model training pipeline
             var pipeline = mlContext.Transforms.Concatenate("Features", new[] { "Size" })
                 .Append(mlContext.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
-    
+
             // 3. Train model
             var model = pipeline.Fit(trainingData);
-    
+
             // 4. Make a prediction
             var size = new HouseData() { Size = 2.5F };
             var price = mlContext.Model.CreatePredictionEngine<HouseData, Prediction>(model).Predict(size);
@@ -80,7 +80,7 @@ The code in the following snippet demonstrates the simplest ML.NET application. 
 
             // Predicted price for size: 2500 sq ft= $261.98k
         }
-    } 
+    }
 ```
 
 ## Code workflow
@@ -95,7 +95,7 @@ The following diagram represents the application code structure, as well as the 
 - Load the model back into an **ITransformer** object
 - Make predictions by calling **CreatePredictionEngine.Predict()**
 
-![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/mldotnet-annotated-workflow.png) 
+![ML.NET application development flow including components for data generation, pipeline development, model training, model evaluation, and model usage](./media/mldotnet-annotated-workflow.png)
 
 Let's dig a little deeper into those concepts.
 
@@ -105,7 +105,7 @@ An ML.NET model is an object that contains transformations to perform on your in
 
 ### Basic
 
-The most basic model is two-dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example above. 
+The most basic model is two-dimensional linear regression, where one continuous quantity is proportional to another, as in the house price example above.
 
 ![Linear Regression Model with bias and weight parameters](./media/linear-regression-model.svg)
 
@@ -115,7 +115,7 @@ The model is simply: $Price = b + Size * w$. The parameters $b$ and $w$ are esti
 
 A more complex model classifies financial transactions into categories using the transaction text description.
 
-Each transaction description is broken down into a set of features by removing redundant words and characters, and counting word and character combinations. The feature set is used to train a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category. 
+Each transaction description is broken down into a set of features by removing redundant words and characters, and counting word and character combinations. The feature set is used to train a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category.
 
 ![Text Classification Model](./media/text-classification-model.svg)
 
@@ -133,7 +133,7 @@ You can find an appendix of all of the [available transformations](./resources/t
 
 ## Model evaluation
 
-Once you have trained your model, how do you know how well it will make future predictions? With ML.NET, you can evaluate your model against some new test data. 
+Once you have trained your model, how do you know how well it will make future predictions? With ML.NET, you can evaluate your model against some new test data.
 
 Each type of machine learning task has metrics used to evaluate the accuracy and precision of the model against the test data set.
 
@@ -150,7 +150,7 @@ For our house price example, we used the **Regression** task. To evaluate the mo
 
         var testHouseDataView = mlContext.Data.LoadFromEnumerable(testHouseData);
         var testPriceDataView = model.Transform(testHouseDataView);
-                
+
         var metrics = mlContext.Regression.Evaluate(testPriceDataView, labelColumnName: "Price");
 
         Console.WriteLine($"R^2: {metrics.RSquared:0.##}");
@@ -227,7 +227,7 @@ You can transform input data into predictions in bulk, or one input at a time. I
     var predEngine = mlContext.CreatePredictionEngine<HouseData, Prediction>(model);
     var price = predEngine.Predict(size);
 ```
- 
+
 The `CreatePredictionEngine()` method takes an input class and an output class. The field names and/or code attributes determine the names of the data columns used during model training and prediction. You can read about  [How to make a single prediction](./how-to-guides/single-predict-model-ml-net.md) in the How-to section.
 
 ### Data models and schema
@@ -256,7 +256,7 @@ All algorithms also create new columns after they have performed a prediction. T
         [ColumnName("Score")]
         public float Price { get; set; }
     }
-```    
+```
 
 You can find out more about output columns of different machine learning tasks in the [Machine Learning Tasks](resources/tasks.md) guide.
 
@@ -272,7 +272,7 @@ You can watch the `debug` variable in the debugger and examine its contents. Do 
 
 In real-life applications, your model training and evaluation code will be separate from your prediction. In fact, these two activities are often performed by separate teams. Your model development team can save the model for use in the prediction application.
 
-```csharp   
+```csharp
    mlContext.Model.Save(model, trainingData.Schema,"model.zip");
 ```
 

@@ -27,6 +27,7 @@ using Microsoft.ML.AutoML;
 ```
 
 ## Select the machine learning task type
+
 Before creating an experiment, determine the kind of machine learning problem you want to solve. Automated machine learning supports the following ML tasks:
 
 * Binary Classification

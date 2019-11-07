@@ -1,4 +1,4 @@
-- name: Application Compatibility
+- name: Application compatibility
   items:
   - name: Evaluate breaking changes
     href: index.md
@@ -8,18 +8,18 @@
     href: breaking-changes.md
   - name: By version
     items:
-    - name: .NET Framework - .NET Core
+    - name: .NET Framework to .NET Core
       href: framework-core.md
-    - name: 2.2 - 3.0
+    - name: 2.2 to 3.0
       href: 2.2-3.0.md
-    - name: 3.0 Preview 6 - 3.0 Preview 7
+    - name: 3.0 Preview 6 to 3.0 Preview 7
       href: 3.0.6-3.0.7.md
-    - name: 3.0 Preview 7 - 3.0 Preview 8
+    - name: 3.0 Preview 7 to 3.0 Preview 8
       href: 3.0.7-3.0.8.md
-    - name: 3.0 Preview 8 - 3.0 Preview 9
+    - name: 3.0 Preview 8 to 3.0 Preview 9
       href: 3.0.8-3.0.9.md
-    - name: 3.0 Preview 9 - 3.0 RC1
-      href: 3.0.9-3.0rc1.md   
+    - name: 3.0 Preview 9 to 3.0 RC1
+      href: 3.0.9-3.0rc1.md
   - name: By category
     items:
     - name: ASP.NET Core
@@ -37,4 +37,4 @@
     - name: Visual Basic
       href: visualbasic.md
     - name: Windows Forms
-      href: winforms.md 
+      href: winforms.md

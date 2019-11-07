@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bc7b51cf-39d3-48ec-a5cb-2f179fbefff8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \_CorDllMain Function
 

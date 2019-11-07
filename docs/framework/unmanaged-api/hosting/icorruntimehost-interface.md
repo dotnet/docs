@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 4369533d-7834-4497-bc37-bfea0ad737b1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost Interface
 Provides methods that enable the host to start and stop the common language runtime (CLR) explicitly, to create and configure application domains, to access the default domain, and to enumerate all domains running in the process.  

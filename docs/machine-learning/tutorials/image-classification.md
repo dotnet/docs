@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Generate an ML.NET image classification model from a pre-trained TensorFlow model'
 description: Learn how to transfer the knowledge from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
-ms.date: 09/30/2019
+ms.date: 10/30/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 author: natke
@@ -40,7 +40,7 @@ For this tutorial, you use part of a TensorFlow model - trained to classify imag
 * Microsoft.ML.ImageAnalytics 1.3.1 Nuget package
 * Microsoft.ML.TensorFlow 1.3.1 Nuget package
 
-* [The tutorial assets directory .ZIP file](https://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip)
+* [The tutorial assets directory .ZIP file](https://github.com/dotnet/samples/blob/master/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
 
 * [The InceptionV1 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
@@ -135,13 +135,13 @@ The training and testing images are located in the assets folders that you'll do
 
 ### Download assets
 
-1. Download [The project assets directory zip file](https://download.microsoft.com/download/0/E/5/0E5E0136-21CE-4C66-AC18-9917DED8A4AD/image-classifier-assets.zip), and unzip.
+1. Download [The project assets directory zip file](https://github.com/dotnet/samples/blob/master/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip), and unzip.
 
 1. Copy the `assets` directory into your *TransferLearningTF* project directory. This directory and its subdirectories contain the data and support files (except for the Inception model, which you'll download and add in the next step) needed for this tutorial.
 
 1. Download the [Inception model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip), and unzip.
 
-1. Copy the contents of the `inception5h` directory just unzipped into your *TransferLearningTF* project `assets/inputs-train/inception` directory. This directory contains the model and additional support files needed for this tutorial, as shown in the following image:
+1. Copy the contents of the `inception5h` directory just unzipped into your *TransferLearningTF* project `assets/inception` directory. This directory contains the model and additional support files needed for this tutorial, as shown in the following image:
 
    ![Inception directory contents](./media/image-classification/inception-files.png)
 
@@ -360,22 +360,14 @@ An ML.NET model pipeline is a chain of estimators. Note that no execution happen
 
     ```console
     =============== Training classification model ===============
-    Image: broccoli.jpg predicted as: food with score: 0.976743
-    Image: pizza.jpg predicted as: food with score: 0.9751652
-    Image: pizza2.jpg predicted as: food with score: 0.9660203
-    Image: teddy2.jpg predicted as: toy with score: 0.9748783
-    Image: teddy3.jpg predicted as: toy with score: 0.9829691
-    Image: teddy4.jpg predicted as: toy with score: 0.9868168
-    Image: toaster.jpg predicted as: appliance with score: 0.9769174
-    Image: toaster2.png predicted as: appliance with score: 0.9800823
+    Image: broccoli2.jpg predicted as: food with score: 0.8955513
+    Image: pizza3.jpg predicted as: food with score: 0.9667718
+    Image: teddy6.jpg predicted as: toy with score: 0.9797683
     =============== Classification metrics ===============
-    LogLoss is: 0.0228266745633507
-    PerClassLogLoss is: 0.0277501705149937 , 0.0186303530571291 , 0.0217359128952187
+    LogLoss is: 0.0653774699265059
+    PerClassLogLoss is: 0.110315812569315 , 0.0204391272836966 , 0
     =============== Making single image classification ===============
-    Image: toaster3.jpg predicted as: appliance with score: 0.9625379
-
-    C:\Program Files\dotnet\dotnet.exe (process 4304) exited with code 0.
-    Press any key to close this window . . .
+    Image: toaster3.jpg predicted as: appliance with score: 0.9646884
     ```
 
 Congratulations! You've now successfully built a machine learning model for image classification by applying transfer learning to a `TensorFlow` model in ML.NET.

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6d1dc41b-8aa2-4889-bb00-1cbccc00c123
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishProcess Interface
 Provides methods that access information to be displayed about a process.  

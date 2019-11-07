@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: edb4e4d2-3166-44d4-8b17-bf302f7ea093
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugNGenPolicy Enumeration
 Provides a value that determines whether a debugger loads native (NGen) images from the native image cache.  

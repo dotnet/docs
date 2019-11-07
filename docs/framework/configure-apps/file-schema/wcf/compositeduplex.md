@@ -35,7 +35,7 @@ Defines the binding element that is used when the client must expose an endpoint
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  This configuration element is used with transports that do not allow duplex communications natively, for example, HTTP. TCP, by contrast, allows duplex communications natively, and does not require the use of this binding element for the service to send messages back to a client.  

@@ -36,7 +36,7 @@ If you don't already have Visual Basic, you can download a free version of Visua
 - [COM Interop](../visual-basic/programming-guide/com-interop/index.md)  
   Explains the interoperability issues associated with creating and using component object model (COM) objects with Visual Basic.
 
-- [Samples](../visual-basic/sample-applications.md)  
+- [Samples](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)  
   Contains information about samples.
 
 - [Walkthroughs](../visual-basic/walkthroughs.md)  
@@ -44,7 +44,7 @@ If you don't already have Visual Basic, you can download a free version of Visua
 
 ## Related Sections
 
-- [Get Started Developing with Visual Studio](/visualstudio/ide/get-started-developing-with-visual-studio)  
+- [Get Started Developing with Visual Studio](/visualstudio/ide/visual-studio-ide)  
   Provides links to topics that help you learn about the basics of Visual Studio.
 
 - [.NET API Browser](../../api/index.md)  

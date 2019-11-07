@@ -2,6 +2,7 @@
 title: Design with nullable reference types
 description: This advanced tutorial provides an introduction to nullable reference types. You'll learn to express your design intent on when reference values may be null, and have the compiler enforce when they cannot be null.
 ms.date: 02/19/2019
+ms.technology: csharp-null-safety
 ms.custom: mvc
 ---
 # Tutorial: Migrate existing code with nullable reference types
@@ -25,7 +26,7 @@ This tutorial assumes you're familiar with C# and .NET, including either Visual 
 
 ## Explore the sample application
 
-The sample application that you'll migrate is an RSS feed reader web app. It reads from a single RSS feed and displays summaries for the most recent articles. You can click on any of the articles to visit the site. The application is relatively new but was written before nullable reference types were available. The design decisions for the application represented sound principles, but don't take advantage of this important language feature.
+The sample application that you'll migrate is an RSS feed reader web app. It reads from a single RSS feed and displays summaries for the most recent articles. You can select any of the articles to visit the site. The application is relatively new but was written before nullable reference types were available. The design decisions for the application represented sound principles, but don't take advantage of this important language feature.
 
 The sample application includes a unit test library that validates the major functionality of the app. That project will make it easier to upgrade safely, if you change any of the implementation based on the warnings generated. You can download the starter code from the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/nullable-reference-migration/start) GitHub repository.
 

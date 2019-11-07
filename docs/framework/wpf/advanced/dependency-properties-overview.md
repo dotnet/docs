@@ -55,7 +55,7 @@ The following XAML example specifies the background color of a button as red. Th
 
 [!code-xaml[PropertiesOvwSupport#MostBasicProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#mostbasicproperty)]
 
-XAML supports a variety of syntax forms for setting properties. Which syntax to use for a particular property will depend on the value type that a property uses, as well as other factors such as the presence of a type converter. For more information on XAML syntax for property setting, see [XAML Overview (WPF)](xaml-overview-wpf.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).
+XAML supports a variety of syntax forms for setting properties. Which syntax to use for a particular property will depend on the value type that a property uses, as well as other factors such as the presence of a type converter. For more information on XAML syntax for property setting, see [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).
 
 As an example of non-attribute syntax, the following XAML example shows another button background. This time rather than setting a simple solid color, the background is set to an image, with an element representing that image and the source of that image specified as an attribute of the nested element. This is an example of property element syntax.
 
@@ -194,5 +194,5 @@ Typically, you would not want styles to always apply and to obscure even a local
 
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Read-Only Dependency Properties](read-only-dependency-properties.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [WPF Architecture](wpf-architecture.md)

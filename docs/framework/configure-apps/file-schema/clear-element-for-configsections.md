@@ -7,10 +7,9 @@ helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
 ms.assetid: 77f1d761-ff45-4001-8f36-3a3e5c41fa63
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # \<clear> element for \<configSections>
 
 Clears all previously defined sections and section groups.

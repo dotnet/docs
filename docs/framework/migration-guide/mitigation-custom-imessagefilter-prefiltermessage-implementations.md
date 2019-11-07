@@ -2,8 +2,6 @@
 title: "Mitigation: Custom IMessageFilter.PreFilterMessage Implementations"
 ms.date: "03/30/2017"
 ms.assetid: 9cf47c5b-0bb2-45df-9437-61cd7e7c2f4d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Custom IMessageFilter.PreFilterMessage Implementations
 
@@ -43,4 +41,4 @@ In addition, apps that target previous versions of the .NET Framework but are ru
 
 ## See also
 
-- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-1.md)
+- [Application compatibility](application-compatibility.md)

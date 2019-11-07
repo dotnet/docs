@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ec34cc13-45a3-4695-abc3-b3347d4e6fc2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo::GetEventMask Method
 Gets the current event categories for which the profiler wants to receive event notifications from the common language runtime (CLR).  

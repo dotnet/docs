@@ -13,7 +13,11 @@ This tutorial expects you to have a machine you can use for development. The .NE
 
 ## Explore integer math
 
-Create a directory named *numbers-quickstart*. Make that the current directory and run `dotnet new console -n NumbersInCSharp -o .`.
+Create a directory named *numbers-quickstart*. Make that the current directory and run the following command:
+
+```dotnetcli
+dotnet new console -n NumbersInCSharp -o .
+```
 
 Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following:
 
@@ -35,10 +39,16 @@ You've just seen one of the fundamental math operations with integers. The `int`
 Start by exploring those different operations. Add these lines after the line that writes the value of `c`:
 
 ```csharp
+
+// subtraction
 c = a - b;
 Console.WriteLine(c);
+
+// multiplication
 c = a * b;
 Console.WriteLine(c);
+
+// division
 c = a / b;
 Console.WriteLine(c);
 ```
@@ -68,12 +78,20 @@ namespace NumbersInCSharp
         {
             int a = 18;
             int b = 6;
+            
+            // addition
             int c = a + b;
             Console.WriteLine(c);
+            
+            // subtraction
             c = a - b;
             Console.WriteLine(c);
+            
+            // multiplication
             c = a * b;
             Console.WriteLine(c);
+            
+            // division
             c = a / b;
             Console.WriteLine(c);
         }
@@ -152,12 +170,20 @@ namespace NumbersInCSharp
         {
             int a = 18;
             int b = 6;
+            
+            // addition
             int c = a + b;
             Console.WriteLine(c);
+            
+            // subtraction
             c = a - b;
             Console.WriteLine(c);
+            
+            // multiplication
             c = a * b;
             Console.WriteLine(c);
+            
+            // division
             c = a / b;
             Console.WriteLine(c);
         }

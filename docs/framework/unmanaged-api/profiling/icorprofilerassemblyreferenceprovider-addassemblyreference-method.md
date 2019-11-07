@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 3d5af8e7-c337-48f4-9fa6-97c83878b9b1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerAssemblyReferenceProvider::AddAssemblyReference Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

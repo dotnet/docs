@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 57e0f2d2-5f0e-4e2d-99ec-3f26632eb693
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # ICorDebugThread4::GetCurrentCustomDebuggerNotification Method

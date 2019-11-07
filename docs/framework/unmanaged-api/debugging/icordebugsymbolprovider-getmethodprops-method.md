@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetMethodProps Method"
 ms.date: "03/30/2017"
 ms.assetid: 8f836b80-b7a5-460b-bf76-5f0e45652aea
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetMethodProps Method
 Returns information about method properties, such as the method's metadata token and information about its generic parameters, given a relative virtual address (RVA) in that method.  

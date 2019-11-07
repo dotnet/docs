@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5944edd1-0914-4efa-aba0-d5a277c38b1a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugBlockingObject Structure
 Defines an object that is blocking a thread and the specific reason that the thread is blocked.  

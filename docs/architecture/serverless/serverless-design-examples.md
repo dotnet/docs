@@ -1,6 +1,6 @@
 ---
 title: Serverless design examples - Serverless apps
-description: Understand the variety of scenarios supported by serverless architectures, from scheduling and event-based processing to file triggers and stream process.  
+description: Understand the variety of scenarios supported by serverless architectures, from scheduling and event-based processing to file triggers and stream process.
 author: JEREMYLIKNESS
 ms.author: jeliknes
 ms.date: 06/26/2018

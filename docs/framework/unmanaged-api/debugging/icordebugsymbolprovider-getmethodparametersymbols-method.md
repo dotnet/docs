@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetMethodParameterSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: 58b7c0b9-f6ad-4b49-b92d-0e421cfd0ec6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetMethodParameterSymbols Method
 Gets a method's parameter symbols given the relative virtual address (RVA) of that method.  

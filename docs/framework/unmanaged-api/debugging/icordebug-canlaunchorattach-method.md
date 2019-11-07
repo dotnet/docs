@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ca7723db-7c07-4cdd-bd92-fba34928b623
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug::CanLaunchOrAttach Method
 Returns an HRESULT that indicates whether launching a new process or attaching to the specified existing process is possible within the context of the current machine and runtime configuration.  

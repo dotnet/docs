@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 883e413a-ad2f-4f7f-b1b9-aeb8fe5b65f8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameKeyGen Function
 Creates a new public/private key pair for strong name use.  

@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "side-by-side execution [.NET Framework]"
   - "assemblies [.NET Framework], side-by-side execution"
 ms.assetid: e42036ee-7590-47d1-b884-cc856e39bd5d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Assemblies and side-by-side execution
 

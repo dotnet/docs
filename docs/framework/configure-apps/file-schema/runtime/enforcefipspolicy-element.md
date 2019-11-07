@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "<enforceFIPSPolicy> element"
   - "Federal Information Processing Standards (FIPS)"
 ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<enforceFIPSPolicy> Element
 Specifies whether to enforce a computer configuration requirement that cryptographic algorithms must comply with the Federal Information Processing Standards (FIPS).  

@@ -11,11 +11,11 @@ One of the event bus custom implementation in eShopOnContainers is basically a l
 
 The event bus implementation with RabbitMQ lets microservices subscribe to events, publish events, and receive events, as shown in Figure 6-21.
 
-![RabbitMQ functions as an intermediary between message publisher and subscribers, to handle distribution.](./media/image22.png)
+![Diagram showing RabbitMQ between message sender and message receiver.](./media/rabbitmq-event-bus-development-test-environment/rabbitmq-implementation.png)
 
 **Figure 6-21.** RabbitMQ implementation of an event bus
 
-In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This is based on Dependency Injection so that you can swap from this dev/test version to a production version.
+RabbitMQ functions as an intermediary between message publisher and subscribers, to handle distribution. In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This is based on Dependency Injection so that you can swap from this dev/test version to a production version.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -29,7 +29,7 @@ The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. 
 
 ## Implementing a simple publish method with RabbitMQ
 
-The following code is a ***simplified*** version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository. 
+The following code is a ***simplified*** version of an event bus implementation for RabbitMQ, to showcase the whole scenario. You don't really handle the connection this way. To see the full implementation, see the actual code in the [dotnet-architecture/eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) repository.
 
 ```csharp
 public class EventBusRabbitMQ : IEventBus, IDisposable
@@ -76,7 +76,7 @@ public class EventBusRabbitMQ : IEventBus, IDisposable
         where TH : IIntegrationEventHandler<T>
     {
         var eventName = _subsManager.GetEventKey<T>();
-        
+
         var containsKey = _subsManager.HasSubscriptionsForEvent(eventName);
         if (!containsKey)
         {

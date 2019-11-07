@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 440bad90-5a88-45e7-9157-4596801d8d19
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLRDataCreateInstance Function
 Creates an interface object for the specified target item.  

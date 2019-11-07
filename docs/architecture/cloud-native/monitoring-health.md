@@ -7,7 +7,7 @@ ms.date: 09/23/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Microservices and cloud-native applications go hand in hand with good DevOps practices. DevOps is many things to many people but perhaps one of the better definitions comes from cloud advocate and DevOps evangelist Donovan Brown: 
+Microservices and cloud-native applications go hand in hand with good DevOps practices. DevOps is many things to many people but perhaps one of the better definitions comes from cloud advocate and DevOps evangelist Donovan Brown:
 
 "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 75f42a8b-ed68-4718-a030-a179cfba7d72
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::BeginDelayAbort Method
 Notifies the host that managed code is entering a period in which the current task must not be aborted.  

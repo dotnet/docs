@@ -5,28 +5,12 @@ helpviewer_keywords:
   - ".NET Framework 4, migration"
   - "application compatibility"
 ms.assetid: df478548-8c05-4de2-8ba7-adcdbe1c2a60
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework 4 migration issues
 
-This topic describes migration issues between the .NET Framework version 3.5 Service Pack 1 and the .NET Framework version 4, including fixes, changes for standards compliance and security, and changes based on customer feedback. Most of these changes do not require any programming modifications in your applications. For those that may involve modifications, see the Recommended changes column of the table.
+This topic describes migration issues between the .NET Framework version 3.5 Service Pack 1 and the .NET Framework version 4, including fixes, changes for standards compliance and security, and changes based on customer feedback. Most of these changes do not require any programming modifications in your applications. For those that may involve modifications, see the Recommended changes column of the table. Notable changes are broken down by area, for example, ASP.NET and Windows Presentation Foundation (WPF).
 
-This topic describes notable changes in the following areas:
-
-- [ASP.NET and Web](#aspnet-and-web)
-
-- [Core](#core)
-
-- [Data](#data)
-
-- [Windows Communication Foundation (WCF)](#windows-communication-foundation-wcf)
-
-- [Windows Presentation Foundation (WPF)](#windows-presentation-foundation-wpf)
-
-- [XML](#xml)
-
-For an higher-level overview of the issues in this topic, see the [Migration Guide to the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ff657133%28v=vs.100%29).
+For a higher-level overview of the issues in this topic, see the [Migration Guide to the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ff657133%28v=vs.100%29).
 
 For information about new features, see [What's New in the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms171868%28v=vs.100%29).
 

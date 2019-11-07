@@ -23,7 +23,7 @@ This example shows how to create a command source by implementing <xref:System.W
  [!code-csharp[ImplementICommandSource#ImplementICommandSourceClassDefinition](~/samples/snippets/csharp/VS_Snippets_Wpf/ImplementICommandSource/CSharp/CommandSlider.cs#implementicommandsourceclassdefinition)]
  [!code-vb[ImplementICommandSource#ImplementICommandSourceClassDefinition](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImplementICommandSource/visualbasic/commandslider.vb#implementicommandsourceclassdefinition)]  
   
- The next step is to implement the <xref:System.Windows.Input.ICommandSource> members.  In this example, the properties are implemented as <xref:System.Windows.DependencyProperty> objects.  This enables the properties to use data binding.  For more information about the <xref:System.Windows.DependencyProperty> class, see the [Dependency Properties Overview](dependency-properties-overview.md).  For more information about data binding, see the [Data Binding Overview](../data/data-binding-overview.md).  
+ The next step is to implement the <xref:System.Windows.Input.ICommandSource> members.  In this example, the properties are implemented as <xref:System.Windows.DependencyProperty> objects.  This enables the properties to use data binding.  For more information about the <xref:System.Windows.DependencyProperty> class, see the [Dependency Properties Overview](dependency-properties-overview.md).  For more information about data binding, see the [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).  
   
  Only the <xref:System.Windows.Input.ICommandSource.Command%2A> property is shown here.  
   

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3b8e15ca-3c72-4685-a937-da4c739cb9e9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnableNGENPolicy Method
 Sets a value that determines how an application loads native images while running under a managed debugger.  

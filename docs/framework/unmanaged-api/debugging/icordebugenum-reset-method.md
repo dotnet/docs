@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ab03dcb8-ceed-4f7a-abf8-9d31604bf90c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEnum::Reset Method
 Moves the cursor to the beginning of the enumeration.  

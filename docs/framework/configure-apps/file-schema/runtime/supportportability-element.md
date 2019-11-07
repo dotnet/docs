@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "supportPortability element"
   - "<supportPortability> element"
 ms.assetid: 6453ef66-19b4-41f3-b712-52d0c2abc9ca
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<supportPortability> Element
 Specifies that an application can reference the same assembly in two different implementations of the .NET Framework, by disabling the default behavior that treats the assemblies as equivalent for application portability purposes.  

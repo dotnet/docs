@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0d6a1cd9-370b-4462-adbf-e3980e897ea7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::HasQueuedCallbacks Method
 Gets a value that indicates whether any managed callbacks are currently queued for the specified thread.  

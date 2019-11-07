@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "asynchronous programming, state objects"
   - "IAsyncResult interface, samples"
 ms.assetid: e3e5475d-c5e9-43f0-928e-d18df8ca1f1d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Using an AsyncCallback Delegate and State Object
 When you use an <xref:System.AsyncCallback> delegate to process the results of the asynchronous operation in a separate thread, you can use a state object to pass information between the callbacks and to retrieve a final result. This topic demonstrates that practice by expanding the example in [Using an AsyncCallback Delegate to End an Asynchronous Operation](../../../docs/standard/asynchronous-programming-patterns/using-an-asynccallback-delegate-to-end-an-asynchronous-operation.md).  

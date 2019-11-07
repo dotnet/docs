@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 86c397c3-81d8-463e-a248-3cbe06c44d9d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnumerateGCReferences Method
 Gets an enumerator for all objects that are to be garbage-collected in a process.  

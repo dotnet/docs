@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 36bd10b9-9857-45f3-8d3b-0da091d6169e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameKeyGenEx Function
 Generates a new public/private key pair with the specified key size, for strong name use.  

@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "Windows Forms, anchoring and docking WPF content"
   - "interoperability [WPF]"
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Arrange WPF content on Windows Forms at design time
@@ -131,4 +131,4 @@ A WPF control hosted on a form has the same anchoring and docking behavior as ot
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
 - [Using WPF Controls](using-wpf-controls.md)
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

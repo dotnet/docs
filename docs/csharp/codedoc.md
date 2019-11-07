@@ -2,6 +2,7 @@
 title: Documenting your code with XML comments
 description: Learn how to document your code with XML documentation comments and generate an XML documentation file at compile time.
 ms.date: 02/14/2017
+ms.technology: csharp-fundamentals
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
 # Documenting your code with XML comments

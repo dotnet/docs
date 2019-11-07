@@ -1,8 +1,6 @@
 ---
 title: What's new in .NET Core 2.0
 description: Learn about the new features found in .NET Core.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 08/13/2017
 ---
 # What's new in .NET Core 2.0

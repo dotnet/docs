@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Forecast bike rental demand - time series'
 description: This tutorial shows you how to forecast demand for a bike rental service using univariate time-series analysis and ML.NET.
-ms.date: 10/31/2019
+ms.date: 11/07/2019
 ms.topic: tutorial
 ms.custom: mvc
 ms.author: luquinta
@@ -23,9 +23,6 @@ In this tutorial, you learn how to:
 > * Save a forecasting model
 > * Use a forecasting model
 
-> [!NOTE]
-> This tutorial uses a preview version of DatabaseLoader.
-
 ## Prerequisites
 
 - [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
@@ -45,13 +42,13 @@ The algorithm used in this tutorial is [Single Spectrum Analysis(SSA)](http://ss
 ## Create console application
 
 1. Create a new **C# .NET Core console application** called "BikeDemandForecasting".
-1. Install **Microsoft.ML** version **1.4.0-preview2** NuGet package
+1. Install **Microsoft.ML** version **1.4.0** NuGet package
     1. In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     1. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**.
     1. Check the **Include prerelease** checkbox.
     1. Select the **Install** button.
     1. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
-    1. Repeat these steps for **System.Data.SqlClient** version **4.7.0**, **Microsoft.ML.Experimental** version **0.16.0-preview2**, and **Microsoft.ML.TimeSeries** version **1.4.0-preview2**.
+    1. Repeat these steps for **System.Data.SqlClient** version **4.7.0** and **Microsoft.ML.TimeSeries** version **1.4.0**.
 
 ### Prepare and understand the data
 

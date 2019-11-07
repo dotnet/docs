@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bd9936a6-cc24-4869-8761-0988664464e6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemoteTarget Interface
 Provides methods that enable developers to debug Silverlight-based applications in the common language runtime (CLR) environment.  

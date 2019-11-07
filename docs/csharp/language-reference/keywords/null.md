@@ -11,7 +11,7 @@ ms.assetid: fecb1c60-6232-4efe-87f7-9a86ba2e9119
 ---
 # null (C# Reference)
 
-The `null` keyword is a literal that represents a null reference, one that does not refer to any object. `null` is the default value of reference-type variables. Ordinary value types cannot be null, except for [nullable value types](../../programming-guide/nullable-types/index.md).
+The `null` keyword is a literal that represents a null reference, one that does not refer to any object. `null` is the default value of reference-type variables. Ordinary value types cannot be null, except for [nullable value types](../builtin-types/nullable-value-types.md).
 
 The following example demonstrates some behaviors of the null keyword:
 

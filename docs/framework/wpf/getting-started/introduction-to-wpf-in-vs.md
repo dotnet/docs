@@ -23,7 +23,7 @@ Windows Presentation Foundation (WPF) in Visual Studio provides developers with 
 
  [Designing XAML in Visual Studio and Blend for Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
   
- [Introduction to WPF](/visualstudio/designers/introduction-to-wpf)  
+ [Introduction to WPF](../introduction-to-wpf.md)  
   
  [WPF in the .NET Framework](../index.md)  
   

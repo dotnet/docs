@@ -39,7 +39,7 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
 ## Modeling the In-Reply-To element  
  In this sample, the `<in-reply-to>` element is modeled as CLR that implements <xref:System.Xml.Serialization.IXmlSerializable>, which enables its use with the <xref:System.Runtime.Serialization.DataContractSerializer>. It also implements some methods and properties for accessing the element’s data, as shown in the following sample code.  
   
-```  
+```csharp  
 [XmlRoot(ElementName = "in-reply-to", Namespace = "http://contoso.org/syndication/thread/1.0")]  
 public class InReplyToElement : IXmlSerializable  
 {  

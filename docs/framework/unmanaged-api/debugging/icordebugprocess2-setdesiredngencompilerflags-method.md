@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 98320175-7c5e-4dbb-8683-86fa82e2641f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2::SetDesiredNGENCompilerFlags Method
 Sets the flags that must be embedded in a precompiled image in order for the runtime to load that image into the current process.  

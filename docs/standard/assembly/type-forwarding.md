@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], type forwarding"
   - "type forwarding"
 ms.assetid: 51f8ffa3-c253-4201-a3d3-c4fad85ae097
-author: "rpetrusha"
-ms.author: "ronpet"
 dev_langs: 
   - "csharp"
   - "cpp"

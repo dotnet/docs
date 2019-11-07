@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 2040e2be-119a-4cfb-ae52-b0b6f052665c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugReferenceValue Interface
 Provides methods that manage a value that is a reference to an object. (That is, this interface provides methods that manage a pointer.) This interface implements "ICorDebugValue".  

@@ -4,7 +4,7 @@ To facilitate the composition of <xref:System.Text.Json.Serialization.JsonConver
 
 #### Change description
 
-The signature of the `CreateConverter` method in .NET Core prior to version 3.0 Preview 8 was: 
+The signature of the `CreateConverter` method in .NET Core prior to version 3.0 Preview 8 was:
 
 ```csharp
 namespace System.Text.Json.Serialization

@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "forcePerformanceCounterUniqueSharedMemoryReads element"
   - "<forcePerformanceCounterUniqueSharedMemoryReads> element"
 ms.assetid: 91149858-4810-4f65-9b48-468488172c9b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<forcePerformanceCounterUniqueSharedMemoryReads> Element
 Specifies whether PerfCounter.dll uses the CategoryOptions registry setting in a .NET Framework version 1.1 application to determine whether to load performance counter data from category-specific shared memory or global memory.  

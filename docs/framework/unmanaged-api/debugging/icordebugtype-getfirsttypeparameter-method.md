@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 35bb594f-af6a-4349-83fe-e98702674e03
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType::GetFirstTypeParameter Method
 Gets an interface pointer to an ICorDebugType that represents the first <xref:System.Type> parameter of the type represented by this `ICorDebugType`.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 191015da-f54a-4bac-a28a-1de7ab3c3428
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorpubPublish Coclass
 Provides interfaces for publishing information about application domains and processes.  

@@ -50,4 +50,4 @@ After you have created an XML tree or loaded an XML document into an XML tree, y
   
 ## See also
 
-- [LINQ to XML Axes (C#)](./linq-to-xml-axes.md)
+- [LINQ to XML Axes (C#)](linq-to-xml-axes-overview.md)

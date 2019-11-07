@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "-deterministic compiler option [C#]"
   - "deterministic compiler option [C#]"
   - "/deterministic compiler option [C#]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # -deterministic
 
@@ -42,7 +40,7 @@ The compiler considers the following inputs for the purpose of determinism:
   - Additional files that may be used by analyzers
 - The current culture (for the language in which diagnostics and exception messages are produced).
 - The default encoding (or the current code page) if the encoding is not specified.
-- The existence, non-existence, and contents of files on the compiler's search paths (specified, for example, by `/lib` or `/recurse`).
+- The existence, non-existence, and contents of files on the compiler's search paths (specified, for example, by `-lib` or `-recurse`).
 - The CLR platform on which the compiler is run.
 - The value of `%LIBPATH%`, which can affect analyzer dependency loading.
 

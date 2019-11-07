@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "CorFlags.exe"
   - "portable executable files, CorFlags section"
 ms.assetid: ef900f8f-71ca-4dde-9b8c-95ddb0d7d89c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorFlags.exe (CorFlags Conversion Tool)
 The CorFlags Conversion tool allows you to configure the CorFlags section of the header of a portable executable image.  

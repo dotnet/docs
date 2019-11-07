@@ -21,13 +21,13 @@ The `readonly` keyword is a modifier that can be used in four contexts:
   - Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object isn't immutable. The `readonly` modifier prevents the field from being replaced by a different instance of the reference type. However, the modifier doesn't prevent the instance data of the field from being modified through the read-only field.
 
   > [!WARNING]
-  > An externally visible type that contains an externally visible read-only field that is a mutable reference type may be a security vulnerability and may trigger warning [CA2104](/visualstudio/code-quality/ca2104-do-not-declare-read-only-mutable-reference-types) : "Do not declare read only mutable reference types."
+  > An externally visible type that contains an externally visible read-only field that is a mutable reference type may be a security vulnerability and may trigger warning [CA2104](/visualstudio/code-quality/ca2104) : "Do not declare read only mutable reference types."
 
 - In a [`readonly struct` definition](#readonly-struct-example), `readonly` indicates that the `struct` is immutable.
 - In a [`readonly` member definition](#readonly-member-examples), `readonly` indicates that a member of a `struct` doesn't mutate the struct's internal state.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes aren't allowed to that reference.
 
-The `readonly sturct` and `ref readonly` contexts were added in C# 7.2. `readonly` struct members were added in C# 8.0
+The `readonly struct` and `ref readonly` contexts were added in C# 7.2. `readonly` struct members were added in C# 8.0
 
 ## Readonly field example
 
@@ -155,6 +155,6 @@ You can also see the language specification proposals:
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [const](const.md)
 - [Fields](../../programming-guide/classes-and-structs/fields.md)

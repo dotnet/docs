@@ -2,8 +2,6 @@
 title: "ICorDebugLoadedModule Interface"
 ms.date: "03/30/2017"
 ms.assetid: 34be6369-2e75-4a95-a538-3b29ac97cf6d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugLoadedModule Interface
 Provides information about a loaded module.  

@@ -104,6 +104,6 @@ This topic introduces the purpose of type conversion from string as a general XA
 ## See also
 
 - <xref:System.ComponentModel.TypeConverter>
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)

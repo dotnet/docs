@@ -33,20 +33,24 @@
       href: tutorials/image-classification-api-transfer-learning.md      
     - name: Classify images (model composition)
       href: tutorials/image-classification.md
+    - name: Forecast bike rental demand (time series)
+      href: tutorials/time-series-demand-forecasting.md
     - name: Product Sales Analysis (anomaly detection)
       href: tutorials/sales-anomaly-detection.md
     - name: Detect objects in images (object detection)
       href: tutorials/object-detection-onnx.md
     - name: Classify sentiment using TensorFlow (text classification)
       href: tutorials/text-classification-tf.md
-  - name: Tools
+  - name: Model Builder & CLI
     items:
-    - name: Predict prices with Model Builder
+    - name: Predict prices (Model Builder & regression)
       href: tutorials/predict-prices-with-model-builder.md
     - name: Analyze sentiment using the ML.NET CLI
       href: tutorials/mlnet-cli.md
-    - name: Analyze sentiment using Model Builder and Razor Pages
+    - name: Analyze sentiment in Razor Pages (Model Builder & binary classification)
       href: tutorials/sentiment-analysis-model-builder.md
+    - name: Categorize health violations (Model Builder & multiclass classification)
+      href: tutorials/health-violation-classification-model-builder.md
   - name: Infer.NET
     items:
     - name: Probabilistic programming with Infer.NET

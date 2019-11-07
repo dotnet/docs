@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3ff2ad2a-da5a-461b-8627-1a8eba49df9c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValue2 Interface
 Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" objects.  

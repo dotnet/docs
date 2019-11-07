@@ -4,8 +4,6 @@ description: Find short, simple tutorials that let you quickly learn introductor
 helpviewer_keywords: 
   - "Visual C#, getting started"
   - "getting started, Visual C#"
-author: rpetrusha
-ms.author: ronpet
 ms.date: 04/05/2019
 ms.custom: seoapril2019
 ---

@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "what's new [.NET Framework]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # What's new in accessibility in the .NET Framework
@@ -707,4 +705,4 @@ Accessibility changes in the Workflow Designer include the following:
 
 ## See also
 
-- [What's new in the .NET Framework](whats-new.md)
+- [What's new in the .NET Framework](index.md)

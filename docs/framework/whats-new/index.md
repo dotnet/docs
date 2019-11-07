@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords:
   - "what's new [.NET Framework]"
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # What's new in the .NET Framework
@@ -1262,7 +1260,7 @@ For more information on the .NET Framework 4.6.1, see the following topics:
 
 - [.NET Framework 4.6.1 list of changes](https://go.microsoft.com/fwlink/?LinkId=622964)
 
-- [Application Compatibility in 4.6.1](../migration-guide/application-compatibility-in-the-net-framework-4-6-1.md)
+- [Application Compatibility in 4.6.1](../migration-guide/application-compatibility.md)
 
 - [.NET Framework API diff](https://go.microsoft.com/fwlink/?LinkId=622989) (on GitHub)
 
@@ -1689,7 +1687,7 @@ With Ngen PDBs, NGen can create a PDB that contains the IL-to-native mapping wit
 
   The default value is 60 seconds. If `value` is set to 0, out-of-order requests are immediately rejected with a fault with text that looks like this:
 
-  ```
+  ```console
   Operation 'Request3|{http://tempuri.org/}IService' on service instance with identifier '2b0667b6-09c8-4093-9d02-f6c67d534292' cannot be performed at this time. Please ensure that the operations are performed in the correct order and that the binding in use provides ordered delivery guarantees.
   ```
 
@@ -2126,6 +2124,6 @@ The Portable Class Library project in Visual Studio 2012 (and later versions) en
 
 - [The .NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md)
 - [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)
-- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)
+- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017)
 - [ASP.NET](/aspnet)
 - [What’s New in Visual C++](/cpp/what-s-new-for-visual-cpp-in-visual-studio)

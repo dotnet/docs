@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], creating"
   - "multifile assemblies"
 ms.assetid: 54832ee9-dca8-4c8b-913c-c0b9d265e9a4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Create assemblies
 
@@ -42,7 +40,6 @@ There are special considerations when making common language runtime assemblies 
 
 ## See also
 
-- [Program with assemblies](program.md)
 - [Assembly versioning](versioning.md)
 - [How to: Build a single-file assembly](../../framework/app-domains/build-single-file-assembly.md)
 - [How to: Build a multifile assembly](../../framework/app-domains/build-multifile-assembly.md)

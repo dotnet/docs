@@ -24,7 +24,7 @@ The motivation is to combine the response body APIs into a single new feature in
 
 #### Recommended action
 
-Use `IHttpResponseBodyFeature` where you previously were using `IHttpResponseFeature.Body`, 
+Use `IHttpResponseBodyFeature` where you previously were using `IHttpResponseFeature.Body`,
 `IHttpSendFileFeature`, or `IHttpBufferingFeature`.
 
 #### Category
@@ -36,7 +36,7 @@ ASP.NET Core
 - <xref:Microsoft.AspNetCore.Http.Features.IHttpBufferingFeature?displayProperty=nameWithType>
 - <xref:Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.Body?displayProperty=fullName>
 - <xref:Microsoft.AspNetCore.Http.Features.IHttpSendFileFeature?displayProperty=nameWithType>
- 
+
 <!-- 
 
 #### Affected APIs

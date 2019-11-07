@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 7a4e3085-8f95-40ef-a4be-7d6146f47ce2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILCode2::GetInstrumentedILMap Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

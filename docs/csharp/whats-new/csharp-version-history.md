@@ -52,7 +52,7 @@ Now things start to get interesting. Let's take a look at some major features of
 - [Generics](../programming-guide/generics/index.md)
 - [Partial types](../programming-guide/classes-and-structs/partial-classes-and-methods.md#partial-classes)
 - [Anonymous methods](../language-reference/operators/delegate-operator.md)
-- [Nullable value types](../programming-guide/nullable-types/index.md)
+- [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)
 - [Iterators](../programming-guide/concepts/iterators.md)
 - [Covariance and contravariance](../programming-guide/concepts/covariance-contravariance/index.md)
 
@@ -99,7 +99,7 @@ C# version 4.0, released with Visual Studio 2010, would have had a difficult tim
 
 The next version did introduce some interesting new features:
 
-- [Dynamic binding](../language-reference/keywords/dynamic.md)
+- [Dynamic binding](../language-reference/builtin-types/reference-types.md)
 - [Named/optional arguments](../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - [Generic covariant and contravariant](../../standard/generics/covariance-and-contravariance.md)
 - [Embedded interop types](../../framework/interop/type-equivalence-and-embedded-interop-types.md)

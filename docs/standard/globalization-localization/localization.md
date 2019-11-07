@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "localization [.NET Framework], about localization"
   - "localizing resources"
 ms.assetid: 49d520d7-92d7-44ee-bb24-8b615db1d41b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Localization
 

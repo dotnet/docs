@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 6f60aae6-70ec-4c4c-963a-138df98c4668
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame4::EnumerateLocalVariablesEx Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

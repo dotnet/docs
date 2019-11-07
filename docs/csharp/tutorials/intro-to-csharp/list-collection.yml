@@ -16,7 +16,7 @@ items:
 - title: Create lists
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window (replace `<name>` with your name) and click the **Run** button:
+    Run the following code in the interactive window. Select the **Enter focus mode** button. Then, type the following code block in the interactive window (replace `<name>` with your name) and select **Run**:
 
     ```csharp
     var names = new List<string> { "<name>", "Ana", "Felipe" };
@@ -71,7 +71,7 @@ items:
     Console.WriteLine($"The list has {names.Count} people in it");
     ```
 
-    Click **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
+    Select **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).

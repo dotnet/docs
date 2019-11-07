@@ -62,7 +62,7 @@ For information about how to set this compiler option programmatically, see <xre
 |Version|Link|Description|
 |-------|----|-----------|
 |C# 7.0 and later||not currently available|
-|C# 6.0|[Link](../language-specification/index.md)|C# Language Specification Version 6 - Unofficial Draft: .NET Foundation|
+|C# 6.0|[Link](/dotnet/csharp/language-reference/language-specification/introduction)|C# Language Specification Version 6 - Unofficial Draft: .NET Foundation|
 |C# 5.0|[Download PDF](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)|Standard ECMA-334 5th Edition|
 |C# 3.0|[Download DOC](https://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc)|C# Language Specification Version 3.0: Microsoft Corporation|
 |C# 2.0|[Download PDF](https://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-334%204th%20edition%20June%202006.pdf)|Standard ECMA-334 4th Edition|

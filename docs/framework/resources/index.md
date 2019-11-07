@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "packaging application resources"
   - "localizing resources"
 ms.assetid: 8ad495d4-2941-40cf-bf64-e82e85825890
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Resources in .NET Apps
 Nearly every production-quality app has to use resources. A resource is any nonexecutable data that is logically deployed with an app. A resource might be displayed in an app as error messages or as part of the user interface. Resources can contain data in a number of forms, including strings, images, and persisted objects. (To write persisted objects to a resource file, the objects must be serializable.) Storing your data in a resource file enables you to change the data without recompiling your entire app. It also enables you to store data in a single location, and eliminates the need to rely on hard-coded data that is stored in multiple locations.  

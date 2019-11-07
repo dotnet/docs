@@ -13,7 +13,7 @@ This sample demonstrates how to implement a service that accepts message objects
   
  The sample demonstrates message dispatch based on the body content. The built-in Windows Communication Foundation (WCF) service model message dispatch mechanism is based on message Actions. However, there are many existing Web services that define all of their operations with Action="". It is impossible to build a service based on WSDL that keeps dispatching request messages based on Action information. This sample demonstrates a service contract that is based on WSDL (the WSDL is contained in Service.wsdl that is included with the sample). The service contract is Calculator, similar to the one used in [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). However the `[OperationContract]` specifies `Action=""` for all operations.  
   
-```  
+```csharp  
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples"),    
                  XmlSerializerFormat, DispatchByBodyBehavior]  
     public interface ICalculator  
@@ -33,7 +33,7 @@ This sample demonstrates how to implement a service that accepts message objects
   
  The client uses a proxy auto-generated from the WSDL exported by the service using [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
-```  
+```console  
 svcutil.exe  /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples /uxs http://localhost/servicemodelsamples/service.svc?wsdl /out:generatedProxy.cs  
 ```  
   
@@ -41,7 +41,7 @@ svcutil.exe  /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Sam
   
  The client code performs several calculations. When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console
 Add(100, 15.99) = 115.99  
 Subtract(145, 76.54) = 68.46  
 Multiply(9, 81.25) = 731.25  

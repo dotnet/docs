@@ -2,8 +2,6 @@
 title: "ICorDebugProcess8 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 7ab1a70f-ec11-46ff-8869-cd8ca679cc51
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess8 Interface
 [Supported in the .NET Framework 4.6 and later versions]  

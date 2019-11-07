@@ -24,7 +24,7 @@ This topic describes how to retrieve and publish validation errors in a rehosted
         {  
             public void ShowValidationErrors(IList<ValidationErrorInfo> errors)  
             {  
-                errors.ToList().ForEach(vei => Debug.WriteLine(string.Format("Error: {0} ", vei.Message)));  
+                errors.ToList().ForEach(vei => Debug.WriteLine($"Error: {vei.Message}"));  
             }  
         }  
     }  

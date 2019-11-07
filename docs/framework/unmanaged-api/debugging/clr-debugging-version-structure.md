@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 4d821186-3ddf-405a-ac44-d79438a9f7f3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLR_DEBUGGING_VERSION Structure
 Defines the product version of the common language runtime (CLR) for debugging purposes.  

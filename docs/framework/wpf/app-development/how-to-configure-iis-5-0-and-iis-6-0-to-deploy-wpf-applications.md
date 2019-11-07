@@ -58,7 +58,7 @@ You must register several MIME types and file extensions so that the browser on 
 > [!NOTE]
 > You do not need to register MIME types or file extensions on client systems. They are registered automatically when you install Microsoft .NET Framework.
 
-The following Microsoft Visual Basic Scripting Edition (VBScript) sample automatically adds the necessary MIME types to IIS. To use the script, copy the code to a .vbs file on your server. Then, run the script by running the file from the command line or double-clicking the file in [!INCLUDE[TLA#tla_winexpl](../../../../includes/tlasharptla-winexpl-md.md)].
+The following Microsoft Visual Basic Scripting Edition (VBScript) sample automatically adds the necessary MIME types to IIS. To use the script, copy the code to a .vbs file on your server. Then, run the script by running the file from the command line or double-clicking the file in Microsoft Windows Explorer.
 
 ```vb
 ' This script adds the necessary Windows Presentation Foundation MIME types

@@ -2,8 +2,6 @@
 title: "Mitigation: X509CertificateClaimSet.FindClaims Method"
 ms.date: "03/30/2017"
 ms.assetid: ee356e3b-f932-48f5-875a-5e42340bee63
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: X509CertificateClaimSet.FindClaims Method
 Starting with apps that target the .NET Framework 4.6.1,  the <xref:System.IdentityModel.Claims.X509CertificateClaimSet.FindClaims%2A?displayProperty=nameWithType> method will attempt to match the `claimType` argument with all the DNS entries in its SAN field.  
@@ -32,4 +30,4 @@ Starting with apps that target the .NET Framework 4.6.1,  the <xref:System.Ident
   
 ## See also
 
-- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-1.md)
+- [Application compatibility](application-compatibility.md)

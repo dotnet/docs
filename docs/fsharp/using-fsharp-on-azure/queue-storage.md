@@ -140,7 +140,7 @@ time to fully process each message. The following code example uses
 `GetMessages` to get 20 messages in one call and then processes
 each message. It also sets the invisibility timeout to five minutes for
 each message. Note that the 5 minutes starts for all messages at the same
-time, so after 5 minutes have passed since the call to `GetMessages`, any 
+time, so after 5 minutes have passed since the call to `GetMessages`, any
 messages which have not been deleted will become visible again.
 
 [!code-fsharp[QueueStorage](~/samples/snippets/fsharp/azure/queue-storage.fsx#L97-L99)]

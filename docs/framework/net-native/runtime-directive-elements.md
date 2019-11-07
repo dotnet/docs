@@ -2,8 +2,6 @@
 title: "Runtime Directive Elements"
 ms.date: "03/30/2017"
 ms.assetid: 3fe5848c-ecd7-4136-970b-8e48d250bde6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Runtime Directive Elements
 The runtime directives (rd.xml) file format supports the following runtime directive elements. See [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md) for a hierarchical representation.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1ee7c434-9681-4fa8-badd-652cb1a9742b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDENTITY_ATTRIBUTE Structure
 Contains metadata attribute information about an [IDefinitionIdentity](idefinitionidentity-interface.md) instance.  

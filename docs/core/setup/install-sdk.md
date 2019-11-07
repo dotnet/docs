@@ -1,9 +1,9 @@
 ---
 title: Install .NET Core SDK on Windows, Linux, and macOS
-description: Learn how to install for .NET Core on Windows, Linux, and macOS. Discover the dependencies required to develop .NET Core apps.
-author: leecow
-ms.author: leecow
-ms.date: 10/30/2019
+description: Learn how to install .NET Core on Windows, Linux, and macOS. Discover the dependencies required to develop .NET Core apps.
+author: thraka
+ms.author: adegeo
+ms.date: 11/06/2019
 zone_pivot_groups: operating-systems-set-one
 ---
 

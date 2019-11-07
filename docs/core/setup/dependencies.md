@@ -250,5 +250,5 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 
 ## Next steps
 
-- To develop and run apps, install the [.NET Core SDK](intall-sdk.md). (includes the runtime)
+- To develop and run apps, install the [.NET Core SDK](install-sdk.md). (includes the runtime)
 - To run apps others have created, install the [.NET Core runtime](install-runtime.md).

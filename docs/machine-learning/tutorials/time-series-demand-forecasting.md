@@ -196,7 +196,7 @@ Evaluate how well the model performs by forecasting next year's data and compari
     To evaluate performance, the following metrics are used:
 
     - **Mean Absolute Error**: Measures how close predictions are to the actual value. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
-    - **Root Mean Squared Error**: Summarizes thhe error in the model. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
+    - **Root Mean Squared Error**: Summarizes the error in the model. This value ranges between 0 and infinity. The closer to 0, the better the quality of the model.
 
 1. Output the metrics to the console.
 

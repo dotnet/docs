@@ -1,7 +1,7 @@
 ---
 title: What is ML.NET and how does it work?
-description: ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET.
-ms.date: 09/27/2019
+description: ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network to use ML.NET. This article explains the basics of machine learning in ML.NET. 
+ms.date: 11/5/2019
 ms.topic: overview
 ms.custom: mvc
 ms.author: nakersha
@@ -11,11 +11,15 @@ author: natke
 
 # What is ML.NET and how does it work?
 
-ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application without having to be connected to a network. This article explains the basics of machine learning in ML.NET.
+ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application.
+
+Central to ML.NET is a machine learning **model**. The model specifies the steps needed to transform your input data into a prediction. With ML.NET, you can train a custom model by specifying an algorithm, or you can import pre-trained TensorFlow and ONNX models.
+
+Once you have a model, you can add it to your application to make the predictions.
 
 ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, except for TensorFlow, LightGBM, and ONNX related functionality.
 
-Examples of the type of predictions that you can make with ML.NET include:
+Examples of the type of predictions that you can make with ML.NET:
 
 |||
 |-|-|
@@ -23,10 +27,12 @@ Examples of the type of predictions that you can make with ML.NET include:
 |Regression/Predict continuous values|Predict the price of houses based on size and location|
 |Anomaly Detection|Detect fraudulent banking transactions |
 |Recommendations|Suggest products that online shoppers may want to buy, based on their previous purchases|
+|Time series/sequential data|Forecast the weather/product sales|
+|Image classification|Categorize pathologies in medical images|
 
 ## Hello ML.NET World
 
-The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data. In your real-life applications, your data and model will be much more complex.
+The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data. 
 
  ```csharp
     using System;
@@ -270,10 +276,10 @@ In real-life applications, your model training and evaluation code will be separ
    mlContext.Model.Save(model, trainingData.Schema,"model.zip");
 ```
 
-## Where to now?
+## Next steps
 
-You can learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](./tutorials/index.md).
+* Learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](./tutorials/index.md).
 
-Or you can learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
+* Learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
 
-And if you're super keen, you can dive straight into the [API Reference documentation](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet)!
+* If you're super keen, you can dive straight into the [API Reference documentation](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet).

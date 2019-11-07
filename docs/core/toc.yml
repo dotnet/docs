@@ -3,7 +3,17 @@
 - name: About .NET Core
   href: about.md
 - name: Install
-  href: setup/index.md
+  items:
+  - name: Overview
+    href: setup/index.md
+  - name: Install SDK
+    href: setup/install-sdk.md
+  - name: Install runtime
+    href: setup/install-runtime.md
+  - name: Linux package installers
+    href: setup/linux-package-manager-rhel7.md
+  - name: How to check .NET Core versions
+    href: setup/how-to-detect-installed-versions.md
 - name: Get started
   href: get-started.md
   items:

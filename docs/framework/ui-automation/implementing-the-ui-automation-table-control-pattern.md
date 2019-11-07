@@ -26,7 +26,7 @@ ms.assetid: 880cd85c-aa8c-4fb5-9369-45491d34bb78
 - Column and row headers may include both a primary header as well as any supporting headers.  
   
 > [!NOTE]
-> This concept becomes evident in a [!INCLUDE[TLA#tla_xl](../../../includes/tlasharptla-xl-md.md)] spreadsheet where a user has defined a "First name" column. This column now has two headers—the "First name" header defined by the user and the alphanumeric designation for that column assigned by the application.  
+> This concept becomes evident in a Microsoft Excel spreadsheet where a user has defined a "First name" column. This column now has two headers—the "First name" header defined by the user and the alphanumeric designation for that column assigned by the application.  
   
 - See [Implementing the UI Automation Grid Control Pattern](implementing-the-ui-automation-grid-control-pattern.md) for related grid functionality.  
   

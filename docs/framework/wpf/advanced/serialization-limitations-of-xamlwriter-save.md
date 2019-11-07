@@ -34,4 +34,4 @@ The API <xref:System.Windows.Markup.XamlWriter.Save%2A> can be used to serialize
   
 - Rich text and flow documents: Text and all element formatting and element containment within it is preserved in the output. This can be useful for mechanisms that approximate a clipboard functionality.  
   
-- Preserving business object data: If you have stored data in custom elements, such as [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data, so long as your business objects follow basic [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] rules such as providing custom constructors and conversion for by-reference property values, these business objects can be perpetuated through serialization.
+- Preserving business object data: If you have stored data in custom elements, such as XML data, so long as your business objects follow basic [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] rules such as providing custom constructors and conversion for by-reference property values, these business objects can be perpetuated through serialization.

@@ -55,4 +55,4 @@ Apps that target the .NET Framework 4.6.1 or earlier but are running on the .NET
   
 ## See also
 
-- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-2.md)
+- [Application compatibility](application-compatibility.md)

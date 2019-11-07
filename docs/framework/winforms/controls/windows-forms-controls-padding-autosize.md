@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "layout [Windows Forms], margins and padding"
   - "Windows Forms, layout"
 ms.assetid: f8ae2a6b-db13-4630-8e25-d104091205c7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Lay out controls with padding, margins, and the AutoSize property

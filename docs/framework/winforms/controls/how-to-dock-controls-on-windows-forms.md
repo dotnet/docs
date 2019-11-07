@@ -6,8 +6,8 @@ helpviewer_keywords:
   - "Explorer-style applications [Windows Forms], creating"
   - "Windows Forms controls, filling client area"
 ms.assetid: bc11f2e4-e90a-4830-b0e2-f43b6e2b8bec
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Dock controls on Windows Forms

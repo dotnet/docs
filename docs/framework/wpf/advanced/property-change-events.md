@@ -53,7 +53,7 @@ ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
   
  Property triggers are generally appropriate for scenarios where one or more appearance properties should change, based on the state of another property on the same element.  
   
- To learn more about property triggers, see [Styling and Templating](../controls/styling-and-templating.md).  
+ To learn more about property triggers, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).  
   
 ## See also
 

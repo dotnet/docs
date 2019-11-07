@@ -155,7 +155,7 @@ This tutorial explains how to create a localized application by using the LocBam
   
 <a name="translate_loc_content"></a>   
 ## Translate the Localizable Content  
- Use any tool that you have available to translate the extracted content. A good way to do this is to write the resources to a .csv file and view them in [!INCLUDE[TLA#tla_xl](../../../../includes/tlasharptla-xl-md.md)], making translation changes to the last column (value).  
+ Use any tool that you have available to translate the extracted content. A good way to do this is to write the resources to a .csv file and view them in Microsoft Excel, making translation changes to the last column (value).  
   
 <a name="merge_translations"></a>   
 ## Use LocBaml to Generate a New .resources.dll File  

@@ -26,7 +26,7 @@ All value types are derived implicitly from the <xref:System.ValueType?displayPr
 
 Unlike with reference types, you cannot derive a new type from a value type. However, like reference types, structs can implement interfaces.
 
-Value type variables cannot be `null` by default. However, variables of the corresponding [nullable value types](../../programming-guide/nullable-types/index.md) can be `null`.
+Value type variables cannot be `null` by default. However, variables of the corresponding [nullable value types](../builtin-types/nullable-value-types.md) can be `null`.
 
 Each value type has an implicit parameterless constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).
 
@@ -98,9 +98,7 @@ For information about formatting the output of numeric types, see [Formatting nu
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [Types](/dotnet/csharp/language-reference/keywords)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
 - [Reference types](reference-types.md)
-- [Nullable value types](../../programming-guide/nullable-types/index.md)
+- [Nullable value types](../builtin-types/nullable-value-types.md)

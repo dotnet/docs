@@ -129,4 +129,4 @@ In applications, it is possible that handlers that are attached to event sources
 - <xref:System.Windows.WeakEventManager>
 - <xref:System.Windows.IWeakEventListener>
 - [Routed Events Overview](routed-events-overview.md)
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)

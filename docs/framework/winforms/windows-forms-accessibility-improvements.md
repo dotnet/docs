@@ -38,6 +38,7 @@ On .NET Core, Windows Forms includes the following changes that affect the xref:
 - Corrected DataGridView Bounds provided by accessibility properties for columns, rows, cells and corresponding headers, improved performance of bounding rectangle calculation. For now all accessibility bounds are represented correctly taking into account the bounds of entire control, its viewport and scrolls.
 - Corrected Value.IsReadOnly property value providing for accessible client applications. The property now shows correct IsReadOnly status for cells.
 - Fixed the issue with CellParsing event raising for the very first cell change. Cell value is now can be changed without any issues including the very first DataGridView control interaction.
+- Improved DataGridView background color contrast when using Windows High Contrast themes. Changed DataGridView default back color when using HC#1, HC#2, and HC Black themes.
 
 ## Improved PropertyGrid Accessibility support
 On .NET Core, Windows Forms includes the following changes that affect the xref:System.Windows.Forms.PropertyGrid control:
@@ -64,6 +65,9 @@ On .NET Core, Windows Forms includes the following changes that affect the xref:
 - Improved announcement of selected date for MonthCalendar control.
 - Improved MounthCalendar control support for screen readers and other accessibility tools. At this moment users are able to navigate the control elements and interact with these elements using keyboard only input (For Narrator: ca use CAPS + arrow keys to navigation thru the control elements and CAPS + Enter to invoke element default action). Improved arrow key navigation across MonthCalendar child elements accompanied with focusing rectangle (blue focus rectangle for Narrator).
 - Improved accessibility for hit test action for MonthCalendar control elements to allow getting MonthCalendar child accessible element by provided coordinates.
+
+## Improved ToolTips accessibility (available in .NET Core 3.1)
+- Added ability to announce a tooltip text by screen reader applications (NVDA/Narrator). Screen reader application can now announce the text of keyboard or mouse tooltip of any WinForms control that configured to show tooltip/s.
 
 ## UI automation support for DataGridView, PropertyGrid, ListBox, ComboBox, ToolStrip and other controls
 Note: UI automation support is enabled for controls in runtime but is not used in design time.

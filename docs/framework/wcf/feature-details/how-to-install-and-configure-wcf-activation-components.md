@@ -31,7 +31,7 @@ After installing and configuring WAS, see [How to: Host a WCF Service in WAS](..
 
 1. To support net.tcp activation, the default Web site must first be bound to a net.tcp port. You can do this by using Appcmd.exe, which is installed with the IIS 7.0 management toolset. In an administrator-level Command Prompt window, run the following command.
 
-    ```
+    ```console
     %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInformation='808:*']
     ```
 
@@ -40,7 +40,7 @@ After installing and configuring WAS, see [How to: Host a WCF Service in WAS](..
 
 2. Although all applications within a site share a common net.tcp binding, each application can enable net.tcp support individually. To enable net.tcp for the application, run the following command from an administrator-level command prompt.
 
-    ```
+    ```console
     %windir%\system32\inetsrv\appcmd.exe set app
     "Default Web Site/<WCF Application>" /enabledProtocols:http,net.tcp
     ```
@@ -54,7 +54,7 @@ After installing and configuring WAS, see [How to: Host a WCF Service in WAS](..
 
     1. Remove net.tcp from the list of enabled protocols by running the following command in an administrator-level Command Prompt window.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set app
         "Default Web Site/servicemodelsamples<WCF Application>" " /enabledProtocols:http
         ```
@@ -64,7 +64,7 @@ After installing and configuring WAS, see [How to: Host a WCF Service in WAS](..
 
     2. Remove the net.tcp site binding by running the following command in an elevated Command Prompt window:
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"
         --bindings.[protocol='net.tcp',bindingInformation='808:*']
         ```
@@ -76,7 +76,7 @@ After installing and configuring WAS, see [How to: Host a WCF Service in WAS](..
 
 1. To remove net.tcp from the list of enabled protocols, run the following command in an administrator-level Command Prompt window.
 
-    ```
+    ```console
     %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples<WCF Application>" " /enabledProtocols:http
     ```
 
@@ -87,7 +87,7 @@ After installing and configuring WAS, see [How to: Host a WCF Service in WAS](..
 
 1. To remove the net.tcp site binding run the following command in an administrator-level Command Prompt window.
 
-    ```
+    ```console
     %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"
     -bindings.[protocol='net.tcp',bindingInformation='808:*']
     ```

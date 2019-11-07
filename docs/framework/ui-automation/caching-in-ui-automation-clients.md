@@ -97,6 +97,6 @@ ms.assetid: 94c15031-4975-43cc-bcd5-c9439ed21c9c
   
 ## See also
 
-- [UI Automation Events for Clients](../../../docs/framework/ui-automation/ui-automation-events-for-clients.md)
-- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)
+- [UI Automation Events for Clients](ui-automation-events-for-clients.md)
+- [Use Caching in UI Automation](use-caching-in-ui-automation.md)
 - [FetchTimer Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90))

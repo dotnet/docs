@@ -13,7 +13,7 @@ Given an XML Schema that complies with the XML Schema definition language (XSD) 
   
  The following code shows the syntax for generating a **DataSet** using this tool.  
   
-```  
+```console  
 xsd.exe /d /l:CS XSDSchemaFileName.xsd /eld /n:XSDSchema.Namespace  
 ```  
   
@@ -21,7 +21,7 @@ xsd.exe /d /l:CS XSDSchemaFileName.xsd /eld /n:XSDSchema.Namespace
   
  The following code shows the syntax for compiling the generated code as a library using the C# compiler (csc.exe).  
   
-```  
+```console  
 csc.exe /t:library XSDSchemaFileName.cs /r:System.dll /r:System.Data.dll  
 ```  
   
@@ -67,7 +67,7 @@ foreach(CustomerDataSet.CustomersRow customerRow in customers.Customers)
   Console.WriteLine(customerRow.CustomerID);  
 ```  
   
- Following is the XML Schema used for the example.  
+ The following is the XML Schema used for the example:
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

@@ -26,11 +26,11 @@ The following code example shows how to modify the computer configuration file, 
     ……………  
     </settings>  
     ………………  
-<system.net>  
+</system.net>  
 ```  
   
 ## See also
 
-- [IPv6 Addressing](../../../docs/framework/network-programming/ipv6-addressing.md)
-- [Network Settings Schema](../../../docs/framework/configure-apps/file-schema/network/index.md)
-- [\<ipv6> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/ipv6-element-network-settings.md)
+- [IPv6 Addressing](ipv6-addressing.md)
+- [Network Settings Schema](../configure-apps/file-schema/network/index.md)
+- [\<ipv6> Element (Network Settings)](../configure-apps/file-schema/network/ipv6-element-network-settings.md)

@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "cancellation, how to poll for requests"
 ms.assetid: c7f2f022-d08e-4e00-b4eb-ae84844cb1bc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Listen for Cancellation Requests by Polling
 The following example shows one way that user code can poll a cancellation token at regular intervals to see whether cancellation has been requested from the calling thread. This example uses the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> type, but the same pattern applies to asynchronous operations created directly by the <xref:System.Threading.ThreadPool?displayProperty=nameWithType> type or the <xref:System.Threading.Thread?displayProperty=nameWithType> type.  

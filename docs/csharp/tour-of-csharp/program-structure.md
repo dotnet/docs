@@ -15,7 +15,7 @@ The example declares a class named `Stack` in a namespace called `Acme.Collectio
 
 The fully qualified name of this class is `Acme.Collections.Stack`. The class contains several members: a field named `top`, two methods named `Push` and `Pop`, and a nested class named `Entry`. The `Entry` class further contains three members: a field named `next`, a field named `data`, and a constructor. Assuming that the source code of the example is stored in the file `acme.cs`, the command line
 
-```
+```console
 csc /t:library acme.cs
 ```
 
@@ -32,13 +32,13 @@ Because an assembly is a self-describing unit of functionality containing both c
 
 If the program is stored in the file `example.cs`, when `example.cs` is compiled, the acme.dll assembly can be referenced using the compiler’s /r option:
 
-```
+```console
 csc /r:acme.dll example.cs
 ```
 
 This creates an executable assembly named `example.exe`, which, when run, produces the output:
 
-```
+```console
 100
 10
 1

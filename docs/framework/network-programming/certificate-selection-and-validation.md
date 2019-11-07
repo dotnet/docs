@@ -48,5 +48,5 @@ The *HttpCfg.exe* tool can be used to configure server certificates for the <xre
   
 ## See also
 
-- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+- [Security in Network Programming](security-in-network-programming.md)
+- [Network Programming in the .NET Framework](index.md)

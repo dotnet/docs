@@ -39,7 +39,7 @@ Custom activity templates are used to customize the configuration of activities,
 
 12. Open the MyDelayTemplate.cs file and add the following statements.
 
-    ```
+    ```csharp
     //Namespaces added
     using System.Activities;
     using System.Activities.Statements;
@@ -49,7 +49,7 @@ Custom activity templates are used to customize the configuration of activities,
 
 13. Implement the <xref:System.Activities.Presentation.IActivityTemplateFactory> with the `MyDelayActivity` class with the following code. This configures the delay to have a duration of 10 seconds.
 
-    ```
+    ```csharp
     public sealed class MyDelayActivity : IActivityTemplateFactory
     {
         public Activity Create(System.Windows.DependencyObject target)
@@ -89,7 +89,7 @@ Custom activity templates are used to customize the configuration of activities,
 ## Example
  The MyDelayActivity.cs file should contain the following code.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -14,7 +14,7 @@ Sends the next element of a collection to a `For Each...Next` statement.
   
 ## Syntax  
   
-```  
+```vb  
 Yield expression  
 ```  
   

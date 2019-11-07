@@ -8,7 +8,7 @@ Interoperability between ASP.NET Web services and Windows Communication Foundati
   
  Use ASP.NET 2.0 option of adding the <xref:System.Web.Services.WebService> and <xref:System.Web.Services.WebMethodAttribute> attributes to an interface rather than to a class, and writing a class to implement the interface, as shown in the following sample code.  
   
-```  
+```csharp
 [WebService]  
 public interface IEcho  
 {  

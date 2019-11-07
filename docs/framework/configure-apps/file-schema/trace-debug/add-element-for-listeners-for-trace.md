@@ -12,11 +12,11 @@ ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
 # \<add> Element for \<listeners> for \<trace>
 Adds a listener to the **Listeners** collection.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<trace>  
-\<listeners>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<trace>**](trace-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-trace.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   

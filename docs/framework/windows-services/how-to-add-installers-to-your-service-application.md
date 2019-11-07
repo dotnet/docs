@@ -41,11 +41,11 @@ Visual Studio ships installation components that can install resources associate
   
     |Value|Result|  
     |-----------|------------|  
-    |<xref:System.ServiceProcess.ServiceStartMode.Manual>|The service must be manually started after installation. For more information, see [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md).|  
+    |<xref:System.ServiceProcess.ServiceStartMode.Manual>|The service must be manually started after installation. For more information, see [How to: Start Services](how-to-start-services.md).|  
     |<xref:System.ServiceProcess.ServiceStartMode.Automatic>|The service will start by itself whenever the computer reboots.|  
     |<xref:System.ServiceProcess.ServiceStartMode.Disabled>|The service cannot be started.|  
   
-6. To determine the security context in which your service will run, click the <xref:System.ServiceProcess.ServiceProcessInstaller> component and set the appropriate property values. For more information, see [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md).  
+6. To determine the security context in which your service will run, click the <xref:System.ServiceProcess.ServiceProcessInstaller> component and set the appropriate property values. For more information, see [How to: Specify the Security Context for Services](how-to-specify-the-security-context-for-services.md).  
   
 7. Override any methods for which you need to perform custom processing.  
   
@@ -56,7 +56,7 @@ Visual Studio ships installation components that can install resources associate
   
 ## See also
 
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
-- [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md)
-- [How to: Start Services](../../../docs/framework/windows-services/how-to-start-services.md)
-- [How to: Specify the Security Context for Services](../../../docs/framework/windows-services/how-to-specify-the-security-context-for-services.md)
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)
+- [How to: Install and Uninstall Services](how-to-install-and-uninstall-services.md)
+- [How to: Start Services](how-to-start-services.md)
+- [How to: Specify the Security Context for Services](how-to-specify-the-security-context-for-services.md)

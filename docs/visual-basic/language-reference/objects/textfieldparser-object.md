@@ -12,7 +12,7 @@ Provides methods and properties for parsing structured text files.
   
 ## Syntax  
   
-```  
+```vb  
 Public Class TextFieldParser  
 ```  
   

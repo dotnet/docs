@@ -30,4 +30,4 @@ Internet security for applications using the <xref:System.Net> namespace is prov
 ## See also
 
 - [Security](../../standard/security/index.md)
-- [Security in Network Programming](../../../docs/framework/network-programming/security-in-network-programming.md)
+- [Security in Network Programming](security-in-network-programming.md)

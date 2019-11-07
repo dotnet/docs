@@ -12,7 +12,7 @@ Packages construction arguments for a non-parameterless constructor object eleme
   
 ## XAML Element Usage (Nonparameterless constructor)  
   
-```  
+```xaml  
 <object ...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
@@ -22,7 +22,7 @@ Packages construction arguments for a non-parameterless constructor object eleme
   
 ## XAML Element Usage (factory method)  
   
-```  
+```xaml  
 <object x:FactoryMethod="methodName"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
@@ -103,4 +103,4 @@ public Food TryLookupFood(string name)
 ## See also
 
 - [Defining Custom Types for Use with .NET Framework XAML Services](defining-custom-types-for-use-with-net-framework-xaml-services.md)
-- [XAML Overview (WPF)](../wpf/advanced/xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../desktop-wpf/fundamentals/xaml.md)

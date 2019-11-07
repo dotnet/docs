@@ -35,4 +35,4 @@ For more information on ASP.NET Core](/aspnet/core), see:
   
 ## See also
 
-- [Development Guide](../../docs/framework/development-guide.md)
+- [Development Guide](development-guide.md)

@@ -50,7 +50,7 @@ This sample demonstrates how to implement End-to-End (E2E) tracing using Event T
   
  The ETW Trace Listener supports circular logging. To enable this feature, go to **Start**, **Run** and type `cmd` to start a command console. In the following command, replace the `<logfilename>` parameter with the name of your log file.  
   
-```  
+```console  
 logman create trace Wcf -o <logfilename> -p "{411a0819-c24b-428c-83e2-26b41091702e}" -f bincirc -max 1000  
 ```  
   
@@ -58,14 +58,14 @@ logman create trace Wcf -o <logfilename> -p "{411a0819-c24b-428c-83e2-26b4109170
   
  To start the session, type in the following command.  
   
-```  
-Logman start Wcf  
+```console  
+logman start Wcf  
 ```  
   
  After you have finished logging, you can stop the session with the following command.  
   
-```  
-Logman stop Wcf  
+```console  
+logman stop Wcf  
 ```  
   
  This process generates binary circular logs that you can process with your tool of choice, including [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) or Tracerpt.  

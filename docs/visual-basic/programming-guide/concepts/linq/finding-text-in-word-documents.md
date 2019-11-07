@@ -149,7 +149,7 @@ End Module
 
 This example produces the following output:
 
-```
+```console
 StyleName:Code >        Console.WriteLine("Hello World")<
 StyleName:Code >Hello World<
 ```
@@ -290,7 +290,7 @@ End Module
 
 This example produces the following output:
 
-```
+```console
 StyleName:Code ><
 ```
 

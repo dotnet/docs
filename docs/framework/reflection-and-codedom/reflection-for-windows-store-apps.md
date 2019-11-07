@@ -37,5 +37,5 @@ Starting with the .NET Framework 4.5, the .NET Framework includes a set of refle
   
 ## See also
 
-- [Reflection](../../../docs/framework/reflection-and-codedom/reflection.md)
+- [Reflection](reflection.md)
 - [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/?LinkID=225700)

@@ -95,7 +95,7 @@ For example, here's how you might define slices for the <xref:System.ArraySegmen
 open System
 
 type ArraySegment<'TItem> with
-    member segment.GetSlice(?start, ?finish) =
+    member segment.GetSlice(start, finish) =
         let start = defaultArg start 0
         let finish = defaultArg finish segment.Count
         ArraySegment(segment.Array, segment.Offset + start, finish - start)
@@ -111,12 +111,19 @@ If you are defining slices for a type that is actually a struct, we recommend th
 ```fsharp
 open System
 
+type ReadOnlySpan<'T> with
+    // Note the 'inline' in the member definition
+    member sp.GetSlice(startIdx, endIdx) =
+        let s = defaultArg startIdx 0
+        let e = defaultArg endIdx sp.Length
+        sp.Slice(s, e - s)
+
 type Span<'T> with
     // Note the 'inline' in the member definition
     member inline sp.GetSlice(startIdx, endIdx) =
         let s = defaultArg startIdx 0
         let e = defaultArg endIdx sp.Length
-        sp.Slice(s, e)
+        sp.Slice(s, e - s)
 
 let printSpan (sp: Span<int>) =
     let arr = sp.ToArray()

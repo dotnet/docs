@@ -39,4 +39,4 @@ ms.assetid: 006c54c9-50bf-48d9-a855-9d62eb95603a
   
 ## See also
 
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)

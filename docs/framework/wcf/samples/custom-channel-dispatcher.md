@@ -28,7 +28,7 @@ This sample demonstrates how to build the channel stack in a custom way by imple
 ## Using the sample  
  Running the client application directly produces the following output.  
   
-```Output  
+```output  
 Client is talking to a request/reply WCF service.   
 Type what you want to say to the server: Howdy  
 Server replied: You said: Howdy. Message id: 1  

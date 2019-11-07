@@ -69,7 +69,7 @@ For example:
 int binaryValue = 0b_0101_0101;
 ```
 
-## _private protected_ access modifier
+## *private protected* access modifier
 
 A new compound access modifier: `private protected` indicates that a member may be
 accessed by containing class or derived classes that are declared in the same assembly. While `protected internal`

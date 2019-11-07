@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 73afa930-32cb-4c40-81f8-83e8e6fbe213
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet::SetThreadContext Method
 `SetThreadContext` is not implemented in the .NET Framework version 2.0. Do not call this method.  

@@ -6,13 +6,12 @@ helpviewer_keywords:
   - "platform invoke, attribute fields"
   - "attribute fields in platform invoke, EntryPoint"
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Specifying an Entry Point
+
 An entry point identifies the location of a function in a DLL. Within a managed project, the original name or ordinal entry point of a target function identifies that function across the interoperation boundary. Further, you can map the entry point to a different name, effectively renaming the function.  
   
- Following is a list of possible reasons to rename a DLL function:  
+ The following is a list of possible reasons to rename a DLL function:  
   
 - To avoid using case-sensitive API function names  
   
@@ -25,7 +24,8 @@ An entry point identifies the location of a function in a DLL. Within a managed 
  This topic demonstrates how to rename a DLL function in managed code.  
   
 ## Renaming a Function in Visual Basic  
- Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field. The following example shows a basic declaration.  
+ 
+Visual Basic uses the **Function** keyword in the **Declare** statement to set the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint?displayProperty=nameWithType> field. The following example shows a basic declaration.  
   
 ```vb
 Friend Class NativeMethods
@@ -37,7 +37,7 @@ Friend Class NativeMethods
 End Class
 ```
   
- You can replace the **MessageBox** entry point with **MsgBox** by including the **Alias** keyword in your definition, as shown in the following example. In both examples the **Auto** keyword eliminates the need to specify the character-set version of the entry point. For more information about selecting a character set, see [Specifying a Character Set](../../../docs/framework/interop/specifying-a-character-set.md).  
+You can replace the **MessageBox** entry point with **MsgBox** by including the **Alias** keyword in your definition, as shown in the following example. In both examples the **Auto** keyword eliminates the need to specify the character-set version of the entry point. For more information about selecting a character set, see [Specifying a Character Set](specifying-a-character-set.md).  
   
 ```vb
 Friend Class NativeMethods
@@ -87,6 +87,6 @@ extern "C" int MsgBox(
 ## See also
 
 - <xref:System.Runtime.InteropServices.DllImportAttribute>
-- [Creating Prototypes in Managed Code](../../../docs/framework/interop/creating-prototypes-in-managed-code.md)
-- [Platform Invoke Examples](../../../docs/framework/interop/platform-invoke-examples.md)
-- [Marshaling Data with Platform Invoke](../../../docs/framework/interop/marshaling-data-with-platform-invoke.md)
+- [Creating Prototypes in Managed Code](creating-prototypes-in-managed-code.md)
+- [Platform Invoke Examples](platform-invoke-examples.md)
+- [Marshaling Data with Platform Invoke](marshaling-data-with-platform-invoke.md)

@@ -28,7 +28,7 @@ This topic describes [!INCLUDE[esql](../../../../../../includes/esql-md.md)] sup
 ## String  
  A string is a series of characters enclosed in quote marks. Quotes can be either both single-quotes (`'`) or both double-quotes ("). Character string literals can be either Unicode or non-Unicode. To declare a character string literal as Unicode, prefix the literal with an uppercase "N". The default is non-Unicode character string literals. There can be no spaces between the N and the string literal payload, and the N must be uppercase.  
   
-```  
+```sql  
 'hello' -- non-Unicode character string literal  
 N'hello' -- Unicode character string literal  
 "x"  
@@ -45,7 +45,7 @@ N"This is a string!"
   
  There can be any number of spaces between the DATETIME symbol and the literal payload, but no new lines.  
   
-```  
+```sql  
 DATETIME'2006-10-1 23:11'  
 DATETIME'2006-12-25 01:01:00.0000000' -- same as DATETIME'2006-12-25 01:01'  
 ```  
@@ -55,7 +55,7 @@ DATETIME'2006-12-25 01:01:00.0000000' -- same as DATETIME'2006-12-25 01:01'
   
  There can be any number of spaces between the TIME symbol and the literal payload, but no new lines.  
   
-```  
+```sql  
 TIME‘23:11’  
 TIME‘01:01:00.1234567’  
 ```  
@@ -65,7 +65,7 @@ TIME‘01:01:00.1234567’
   
  There can be any number of spaces between the DATETIMEOFFSET symbol and the literal payload, but no new lines.  
   
-```  
+```sql  
 DATETIMEOFFSET‘2006-10-1 23:11 +02:00’  
 DATETIMEOFFSET‘2006-12-25 01:01:00.0000000 -08:30’  
 ```  
@@ -78,7 +78,7 @@ DATETIMEOFFSET‘2006-12-25 01:01:00.0000000 -08:30’
   
  Hexadecimal characters are also case insensitive. If the literal is composed of an odd number of hexadecimal digits, the literal will be aligned to the next even hexadecimal digit by prefixing the literal with a hexadecimal zero digit. There is no formal limit on the size of the binary string.  
   
-```  
+```sql  
 Binary'00ffaabb'  
 X'ABCabc'  
 BINARY    '0f0f0f0F0F0F0F0F0F0F'  
@@ -90,7 +90,7 @@ X'' –- empty binary string
   
  There can be any number of spaces between the GUID symbol and the literal payload, but no new lines.  
   
-```  
+```sql  
 Guid'1afc7f5c-ffa0-4741-81cf-f12eAAb822bf'  
 GUID  '1AFC7F5C-FFA0-4741-81CF-F12EAAB822BF'  
 ```  

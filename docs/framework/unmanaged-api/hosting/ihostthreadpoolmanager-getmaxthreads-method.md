@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: db268876-6178-4a81-aca3-318ee7f96001
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager::GetMaxThreads Method
 Gets the maximum number of threads that the host maintains concurrently in the thread pool.  

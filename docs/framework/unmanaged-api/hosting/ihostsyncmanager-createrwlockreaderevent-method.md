@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 68c4ea19-c47c-45c6-b420-d3a2ba1c2d50
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateRWLockReaderEvent Method
 Creates a manual-reset event object for the implementation of a reader lock.  

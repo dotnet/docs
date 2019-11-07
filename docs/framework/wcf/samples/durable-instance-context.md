@@ -291,11 +291,7 @@ public object GetInstance(InstanceContext instanceContext, Message message)
 
     instance = storageManager.GetInstance(contextId, serviceType);
 
-    if (instance == null)
-    {
-        instance = Activator.CreateInstance(serviceType);
-    }
-
+    instance ??= Activator.CreateInstance(serviceType);
     return instance;
 }
 ```
@@ -426,7 +422,7 @@ Furthermore you could try to implement a class (for example, `StateBag`), which 
 
 When you run the sample, the following output is displayed. The client adds two items to its shopping cart and then gets the list of items in its shopping cart from the service. Press ENTER in each console window to shut down the service and client.
 
-```
+```console
 Enter the name of the product: apples
 Enter the name of the product: bananas
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 4b5ffd7b-9ad7-41cd-9bba-34030ae3da7e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRGCManager2 Interface
 Provides methods that allow a host to interact with the common language runtime's garbage collection system.  

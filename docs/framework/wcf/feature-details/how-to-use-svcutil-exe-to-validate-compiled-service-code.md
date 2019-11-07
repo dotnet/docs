@@ -14,7 +14,7 @@ You can use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../d
   
 3. At the command prompt, launch the Svcutil.exe tool using the following format. For more information on the various parameters, see the Service Validationsection of the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) topic.  
   
-    ```  
+    ```console
     svcutil.exe /validate /serviceName:<serviceConfigName>  <assemblyPath>*  
     ```  
   
@@ -25,7 +25,7 @@ You can use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../d
 ## Example  
  The following command the service myServiceName implemented in the myServiceHost.exe executable file.  The configuration file for the service (myServiceHost.exe.config) is automatically loaded.  
   
-```  
+```console  
 svcutil /validate /serviceName:myServiceName myServiceHost.exe  
 ```  
   

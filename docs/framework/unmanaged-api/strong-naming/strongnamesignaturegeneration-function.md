@@ -13,8 +13,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "StrongNameSignatureGeneration function [.NET Framework strong naming]"
 ms.assetid: 839b765c-3e41-44ce-bf1b-dc10453db18e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameSignatureGeneration Function
 Generates a strong name signature for the specified assembly.  

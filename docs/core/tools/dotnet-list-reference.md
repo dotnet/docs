@@ -39,12 +39,12 @@ The `dotnet list reference` command provides a convenient option to list project
 
 * List the project references for the specified project:
 
-  ```console
+  ```dotnetcli
   dotnet list app/app.csproj reference
   ```
 
 * List the project references for the project in the current directory:
 
-  ```console
+  ```dotnetcli
   dotnet list reference
   ```

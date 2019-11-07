@@ -16,7 +16,7 @@ Generates a string concatenation of two expressions.
   
 ## Syntax  
   
-```  
+```vb  
 result = expression1 & expression2  
 ```  
   

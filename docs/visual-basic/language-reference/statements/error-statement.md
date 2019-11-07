@@ -16,7 +16,7 @@ Simulates the occurrence of an error.
   
 ## Syntax  
   
-```  
+```vb  
 Error errornumber  
 ```  
   
@@ -46,7 +46,7 @@ Error errornumber
 ## Example  
  This example uses the `Error` statement to generate error number 11.  
   
-```  
+```vb  
 On Error Resume Next   ' Defer error handling.  
 Error 11   ' Simulate the "Division by zero" error.  
 ```  

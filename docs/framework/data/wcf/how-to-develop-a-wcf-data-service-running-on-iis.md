@@ -142,7 +142,7 @@ After you create the service, you must explicitly provide access to data service
 
 2. In the **Add New Item** dialog box, select **WCF Data Service**.
 
-   ![WCF Data Service item template in Visual Studio 2015](media/wcf-data-service-item-template.png)
+   ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
    > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.

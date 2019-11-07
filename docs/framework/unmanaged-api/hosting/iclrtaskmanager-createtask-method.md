@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: eea570d9-2e53-4320-9ea0-eb777bf9dcf3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTaskManager::CreateTask Method
 Requests explicitly that the common language runtime (CLR) create a new task.  

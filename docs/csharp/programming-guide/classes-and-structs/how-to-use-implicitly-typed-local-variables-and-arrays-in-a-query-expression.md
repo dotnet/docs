@@ -27,4 +27,4 @@ You can use implicitly typed local variables whenever you want the compiler to d
 - [Extension Methods](./extension-methods.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [var](../../language-reference/keywords/var.md)
-- [LINQ Query Expressions](../linq-query-expressions/index.md)
+- [LINQ in C#](../../linq/index.md)

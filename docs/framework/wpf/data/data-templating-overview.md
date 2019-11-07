@@ -16,7 +16,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
 <a name="Prerequisites"></a>   
 ## Prerequisites  
- This topic focuses on data templating features and is not an introduction of data binding concepts. For information about basic data binding concepts, see the [Data Binding Overview](data-binding-overview.md).  
+ This topic focuses on data templating features and is not an introduction of data binding concepts. For information about basic data binding concepts, see the [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).  
   
  <xref:System.Windows.DataTemplate> is about the presentation of data and is one of the many features provided by the WPF styling and templating model. For an introduction of the WPF styling and templating model, such as how to use a <xref:System.Windows.Style> to set properties on controls, see the [Styling and Templating](../controls/styling-and-templating.md) topic.  
   
@@ -48,7 +48,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  ![Data templating sample screenshot](./media/datatemplatingintro-fig2.png "DataTemplatingIntro_fig2")  
   
- However, that is limiting and inflexible. Also, if you are binding to [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data, you wouldn't be able to override `ToString`.  
+ However, that is limiting and inflexible. Also, if you are binding to XML data, you wouldn't be able to override `ToString`.  
   
 <a name="defining_simple_datatemplate"></a>   
 ### Defining a Simple DataTemplate  
@@ -56,7 +56,7 @@ The WPF data templating model provides you with great flexibility to define the 
   
  [!code-xaml[DataTemplatingIntro_snip#Inline](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#inline)]  
   
- The underlying data for the examples in this topic is a collection of CLR objects. If you are binding to [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data, the fundamental concepts are the same, but there is a slight syntactic difference. For example, instead of having `Path=TaskName`, you would set <xref:System.Windows.Data.Binding.XPath%2A> to `@TaskName` (if `TaskName` is an attribute of your [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] node).  
+ The underlying data for the examples in this topic is a collection of CLR objects. If you are binding to XML data, the fundamental concepts are the same, but there is a slight syntactic difference. For example, instead of having `Path=TaskName`, you would set <xref:System.Windows.Data.Binding.XPath%2A> to `@TaskName` (if `TaskName` is an attribute of your XML node).  
   
  Now our <xref:System.Windows.Controls.ListBox> looks like the following:  
   
@@ -192,5 +192,5 @@ This concludes our discussion of this example. For the complete sample, see [Int
 - [Data Binding](../advanced/optimizing-performance-data-binding.md)
 - [Find DataTemplate-Generated Elements](how-to-find-datatemplate-generated-elements.md)
 - [Styling and Templating](../controls/styling-and-templating.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [GridView Column Header Styles and Templates Overview](../controls/gridview-column-header-styles-and-templates-overview.md)

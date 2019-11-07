@@ -2,8 +2,6 @@
 title: "MEF for .NET for Windows Store Apps"
 ms.date: "03/30/2017"
 ms.assetid: 7667770e-d163-4ad6-a303-085cf73db2f2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # MEF for .NET for Windows Store Apps
 <xref:System.Composition?displayProperty=nameWithType> and its child namespaces contain types for developing extensible [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps with Managed Extensibility Framework (MEF). These namespaces are part of the [!INCLUDE[net_win8_profile](../../../includes/net-win8-profile-md.md)] subset for the [!INCLUDE[win8](../../../includes/win8-md.md)] operating system.  
@@ -24,4 +22,4 @@ ms.author: "ronpet"
 
 - [.NET for Windows Store apps overview](https://go.microsoft.com/fwlink/p/?LinkID=238312)
 - [.NET for Windows Store apps – supported APIs](https://go.microsoft.com/fwlink/p/?LinkID=247912)
-- [Managed Extensibility Framework (MEF)](../../../docs/framework/mef/index.md)
+- [Managed Extensibility Framework (MEF)](index.md)

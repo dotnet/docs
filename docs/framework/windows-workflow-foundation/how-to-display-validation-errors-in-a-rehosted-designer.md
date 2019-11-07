@@ -12,7 +12,7 @@ This topic describes how to retrieve and publish validation errors in a rehosted
   
 1. Here is a code sample for a simple implementation that will write out the validation errors to the debug log.  
   
-    ```  
+    ```csharp  
     using System.Activities.Presentation.Validation;  
     using System.Collections.Generic;  
     using System.Diagnostics;  
@@ -24,7 +24,7 @@ This topic describes how to retrieve and publish validation errors in a rehosted
         {  
             public void ShowValidationErrors(IList<ValidationErrorInfo> errors)  
             {  
-                errors.ToList().ForEach(vei => Debug.WriteLine(string.Format("Error: {0} ", vei.Message)));  
+                errors.ToList().ForEach(vei => Debug.WriteLine($"Error: {vei.Message}"));  
             }  
         }  
     }  
@@ -34,6 +34,6 @@ This topic describes how to retrieve and publish validation errors in a rehosted
   
 1. Here is the code that will publish this to the editing context.  
   
-    ```  
+    ```csharp  
     wd.Context.Services.Publish<IValidationErrorService>(new DebugValidationErrorService());  
     ```

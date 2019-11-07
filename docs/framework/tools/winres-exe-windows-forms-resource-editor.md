@@ -16,9 +16,9 @@ ms.author: "mairaw"
 ---
 # Winres.exe (Windows Resource Localization Editor)
 
-The Windows Resource Localization Editor, Winres.exe, is a visual layout tool that helps localization experts localize Windows Forms user interface (UI) resources used by forms. The .resx or .resources files that are used as input to Winres.exe can be created using a visual design environment such as Microsoft Visual Studio. For information on deploying resources in .NET Framework applications, see [Resources in Desktop Apps](../../../docs/framework/resources/index.md).
+The Windows Resource Localization Editor, Winres.exe, is a visual layout tool that helps localization experts localize Windows Forms user interface (UI) resources used by forms. The .resx or .resources files that are used as input to Winres.exe can be created using a visual design environment such as Microsoft Visual Studio. For information on deploying resources in .NET Framework applications, see [Resources in Desktop Apps](../resources/index.md).
 
-Winres.exe is installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+Winres.exe is installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
 ## Syntax
 
@@ -49,7 +49,7 @@ The state of UI elements from a form in a Windows Forms project are typically st
 
 Also see [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/756hydy4(v=vs.110)) or [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120)).
 
-Winres.exe cannot convert a .resx file into its corresponding .resources file; use the Resgen.exe tool instead. For more information about Resgen.exe, see [Resgen.exe (Resource File Generator)](../../../docs/framework/tools/resgen-exe-resource-file-generator.md).
+Winres.exe cannot convert a .resx file into its corresponding .resources file; use the Resgen.exe tool instead. For more information about Resgen.exe, see [Resgen.exe (Resource File Generator)](resgen-exe-resource-file-generator.md).
 
 Winres.exe is a graphical application that recreates a design-time version of a Windows Forms form from just the resource file, without having access to the source code. Winres.exe hosts Visual Studio's **Windows Forms Form Designer** and **Properties** window. These features enable visual editing of a .resources or .resx file containing a Windows Forms form. Typically, localizers use Winres.exe to edit control labels and adjust the location and size of controls to accommodate the labels for the target culture.
 
@@ -70,7 +70,7 @@ To localize using Winres.exe, you must first develop an application using a visu
 > [!NOTE]
 > Winres.exe cannot be used to edit the default resource file. Winres.exe interprets all changed properties as localized properties and saves them to the target culture resource file.
 
-The final versions of the culture resource files can finally be used to create localized versions of the application. For more information, see [Resources in Desktop Apps](../../../docs/framework/resources/index.md).
+The final versions of the culture resource files can finally be used to create localized versions of the application. For more information, see [Resources in Desktop Apps](../resources/index.md).
 
 Winres.exe has the following features and capabilities:
 
@@ -121,7 +121,7 @@ You should use the version of Winres.exe that was released with the .NET Framewo
     ```
 
     > [!NOTE]
-    > If the form whose resources you are editing is an inherited form, both the assembly contained the inherited form and the assembly containing the inheriting (derived) form must either be registered in the Global Assembly Cache (GAC), or must reside in the same directory as WinRes.exe. For more information about installing .NET Framework components into the GAC, see [Global Assembly Cache](../../../docs/framework/app-domains/gac.md).
+    > If the form whose resources you are editing is an inherited form, both the assembly contained the inherited form and the assembly containing the inheriting (derived) form must either be registered in the Global Assembly Cache (GAC), or must reside in the same directory as WinRes.exe. For more information about installing .NET Framework components into the GAC, see [Global Assembly Cache](../app-domains/gac.md).
 
 3. Select controls on the form and change their <xref:System.Windows.Forms.Control.Text%2A> and other properties to reflect the localized culture and its language. Move or resize controls as necessary to accommodate the localized text.
 
@@ -129,7 +129,7 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 
 5. Select the appropriate culture and file mode then click **OK**.
 
-   The tool saves the file using the naming convention that the run time expects for localized resource files. For example, if you localize `TestApp.resources` for German in Germany, the tool saves the file as `TestApp.de-DE.resources`. If you localize `TestApp.resx` for German in Germany, the tool saves the file as `TestApp.de-DE.resx`. For more information about resource naming conventions, see [Packaging and Deploying Resources](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). For a list of the predefined culture names used by the run time, see the <xref:System.Globalization.CultureInfo> class.
+   The tool saves the file using the naming convention that the run time expects for localized resource files. For example, if you localize `TestApp.resources` for German in Germany, the tool saves the file as `TestApp.de-DE.resources`. If you localize `TestApp.resx` for German in Germany, the tool saves the file as `TestApp.de-DE.resx`. For more information about resource naming conventions, see [Packaging and Deploying Resources](../resources/packaging-and-deploying-resources-in-desktop-apps.md). For a list of the predefined culture names used by the run time, see the <xref:System.Globalization.CultureInfo> class.
 
 ## See also
 
@@ -138,6 +138,6 @@ You should use the version of Winres.exe that was released with the .NET Framewo
 - <xref:System.Resources.ResourceManager>
 - <xref:System.Resources.ResourceReader>
 - <xref:System.Resources.ResourceWriter>
-- [Tools](../../../docs/framework/tools/index.md)
-- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Tools](index.md)
+- [Resources in Desktop Apps](../resources/index.md)
 - [Globalization and Localization](../../standard/globalization-localization/index.md)

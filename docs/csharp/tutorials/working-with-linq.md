@@ -2,6 +2,7 @@
 title: Working with LINQ
 description: This tutorial teaches you how to generate sequences with LINQ, write methods for use in LINQ queries, and distinguish between eager and lazy evaluation.
 ms.date: 10/29/2018
+ms.technology: csharp-linq
 ms.assetid: 0db12548-82cb-4903-ac88-13103d70aa77
 ---
 
@@ -334,6 +335,7 @@ In practice, some algorithms run well using eager evaluation, and others run wel
 ## Conclusion
 
 In this project, you covered:
+
 - using LINQ queries to aggregate data into a meaningful sequence
 - writing Extension methods to add our own custom functionality to LINQ queries
 - locating areas in our code where our LINQ queries might run into performance issues like degraded speed
@@ -342,6 +344,7 @@ In this project, you covered:
 Aside from LINQ, you learned a bit about a technique magicians use for card tricks. Magicians use the Faro shuffle because they can control where every card moves in the deck. Now that you know, don't spoil it for everyone else!
 
 For more information on LINQ, see:
+
 - [Language Integrated Query (LINQ)](../programming-guide/concepts/linq/index.md)
   - [Introduction to LINQ](../programming-guide/concepts/linq/index.md)
   - [Basic LINQ Query Operations (C#)](../programming-guide/concepts/linq/basic-linq-query-operations.md)

@@ -31,7 +31,7 @@ A variable of the [Object Data Type](../../../../visual-basic/language-reference
   
  The following example uses `TypeOf` on object variables referring to value and reference types.  
   
-```  
+```vb  
 ' The following statement puts a value type (Integer) in an Object variable.  
 Dim num As Object = 10  
 ' The following statement puts a reference type (Form) in an Object variable.  

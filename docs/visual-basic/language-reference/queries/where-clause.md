@@ -14,7 +14,7 @@ Specifies the filtering condition for a query.
   
 ## Syntax  
   
-```  
+```vb  
 Where condition  
 ```  
   

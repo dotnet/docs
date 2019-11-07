@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "members, obsolete in .NET Framework"
   - "obsolete members [.NET Framework]"
 ms.assetid: 0ee25062-4071-4d3c-a552-87a75d3ecd34
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Obsolete Members in the .NET Framework
 

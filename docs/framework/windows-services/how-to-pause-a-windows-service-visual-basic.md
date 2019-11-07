@@ -46,4 +46,4 @@ This example uses the <xref:System.ServiceProcess.ServiceController> component t
 - <xref:System.ServiceProcess.ServiceController>
 - <xref:System.ServiceProcess.ServiceControllerStatus>
 - <xref:System.ServiceProcess.ServiceController.WaitForStatus%2A>
-- [How to: Continue a Windows Service (Visual Basic)](../../../docs/framework/windows-services/how-to-continue-a-windows-service-visual-basic.md)
+- [How to: Continue a Windows Service (Visual Basic)](how-to-continue-a-windows-service-visual-basic.md)

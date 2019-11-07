@@ -17,13 +17,13 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
   
 ## XAML Attribute Usage  
   
-```xml  
+```xaml  
 <object property="{} literalValue" .../>  
 ```  
   
 ## XAML Property Element Usage  
   
-```  
+```xaml  
 <object>  
   <object.property>  
     {} literalValue  

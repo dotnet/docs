@@ -13,7 +13,7 @@ Declares that a procedure handles a specified event.
   
 ## Syntax  
   
-```  
+```vb  
 proceduredeclaration Handles eventlist  
 ```  
   

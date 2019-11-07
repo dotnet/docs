@@ -13,7 +13,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
   
 ## Binding Expression Usage  
   
-```  
+```xaml  
 <object property="{Binding}" .../>  
 -or-  
 <object property="{Binding  bindProp1=value1[, bindPropN=valueN]*}" ...  
@@ -120,5 +120,5 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 
 - <xref:System.Windows.Data.Binding>
 - [Data Binding Overview](../data/data-binding-overview.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

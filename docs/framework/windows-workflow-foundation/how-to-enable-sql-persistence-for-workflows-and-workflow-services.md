@@ -1,9 +1,6 @@
 ---
 title: "How to: Enable SQL Persistence for Workflows and Workflow Services"
 ms.date: "03/30/2017"
-dev_langs:
-  - "csharp"
-  - "vb"
 ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
 ---
 
@@ -11,7 +8,7 @@ ms.assetid: ca7bf77f-3e5d-4b23-b17a-d0b60f46411d
 
 This topic describes how to configure the SQL Workflow Instance Store feature to enable persistence for your workflows and workflow services both programmatically and by using a configuration file.
 
-Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [App Fabric Persistence Configuration](https://go.microsoft.com/fwlink/?LinkId=201204)
+Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [App Fabric Persistence Configuration](https://go.microsoft.com/fwlink/?LinkId=201204).
 
 Before using the SQL Workflow Instance Store feature, create a database that the feature uses to persist workflow instances. The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] set-up program copies SQL script files associated with the SQL Workflow Instance Store feature to the %WINDIR%\Microsoft.NET\Framework\v4.xxx\SQL\EN folder. Run these script files against a SQL Server 2005 or SQL Server 2008 database that you want the SQL Workflow Instance Store to use to persist workflow instances. Run the SqlWorkflowInstanceStoreSchema.sql file first and then run the SqlWorkflowInstanceStoreLogic.sql file.
 
@@ -135,9 +132,8 @@ The `SqlWorkflowInstanceStoreBehavior`, a service behavior that allows you to co
                     instanceCompletionAction="DeleteAll | DeleteNothing"
                     instanceLockedExceptionAction="NoRetry | BasicRetry |AggressiveRetry"
                     hostLockRenewalPeriod="00:00:30"
-                    runnableInstancesDetectionPeriod="00:00:05">
+                    runnableInstancesDetectionPeriod="00:00:05" />
 
-        <sqlWorkflowInstanceStore/>
     </behavior>
 </serviceBehaviors>
 ```
@@ -167,6 +163,6 @@ The [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]
                     <add name="sqlWorkflowInstanceStore" type="System.Activities.DurableInstancing.SqlWorkflowInstanceStoreElement, System.Activities.DurableInstancing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
                 </behaviorExtensions>
             </extensions>
-        <system.serviceModel>
-    <configuration>
+        </system.serviceModel>
+    </configuration>
     ```

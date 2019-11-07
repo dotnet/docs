@@ -16,6 +16,7 @@ The following tutorials enable you to understand how to use [ML.NET](../index.ym
 - [Image classification](image-classification.md): demonstrates how to retrain an existing TensorFlow model to create a custom image classifier using ML.NET.
 - [Anomaly detection](sales-anomaly-detection.md): demonstrates how to build an anomaly detection application for product sales data analysis.
 - [Detect objects in images](object-detection-onnx.md): demonstrates how to detect objects in images using a pre-trained ONNX model.
+- [Classify sentiment of movie reviews](text-classification-tf.md): learn to load a pre-trained TensorFlow model to classify the sentiment of movie reviews.
 
 ## Next Steps
 

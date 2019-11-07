@@ -7,7 +7,7 @@ ms.assetid: bb07282c-161d-47e8-856d-b2374ba18181
 This section provides detailed documentation LINQ to Entities, [!INCLUDE[esql](../../../../../../includes/esql-md.md)], and the modeling and mapping languages used by the Entity Framework.
   
 ## In This Section  
- [CSDL, SSDL, and MSL Specifications](csdl-ssdl-and-msl-specifications.md)  
+ [CSDL, SSDL, and MSL Specifications](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)  
   
  [LINQ to Entities](linq-to-entities.md)  
   

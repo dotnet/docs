@@ -31,4 +31,4 @@ ms.assetid: afcd21dc-2ffa-48c9-9332-51269f44b7e9
   
 ## See also
 
-- [Obtaining UI Automation Elements](../../../docs/framework/ui-automation/obtaining-ui-automation-elements.md)
+- [Obtaining UI Automation Elements](obtaining-ui-automation-elements.md)

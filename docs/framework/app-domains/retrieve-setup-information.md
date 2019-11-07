@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "retrieving setup information"
   - "application domains, retrieving setup information"
 ms.assetid: 5cdb12ae-1e37-4a62-8ec7-93d6dcc6e8d9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Retrieving Setup Information from an Application Domain
 Each instance of an application domain consists of both properties and <xref:System.AppDomainSetup> information. You can retrieve setup information from an application domain using the <xref:System.AppDomain?displayProperty=nameWithType> class. This class provides several members that retrieve configuration information about an application domain.  
@@ -33,4 +31,4 @@ Each instance of an application domain consists of both properties and <xref:Sys
 ## See also
 
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Using Application Domains](use.md)

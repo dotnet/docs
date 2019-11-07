@@ -2,7 +2,7 @@
 title: 'Tutorial: Build a movie recommender - matrix factorization'
 description: This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
 author: briacht
-ms.date: 08/26/2019
+ms.date: 09/30/2019
 ms.custom: mvc, title-hack-0516
 ms.topic: tutorial
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
@@ -14,6 +14,7 @@ This tutorial shows you how to build a movie recommender with ML.NET in a .NET C
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > * Select a machine learning algorithm
 > * Prepare and load your data
 > * Build and train a model
@@ -33,7 +34,7 @@ You will use the following steps to accomplish your task, as well as any other M
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
 ## Select the appropriate machine learning task
 
@@ -68,7 +69,7 @@ There are several ways to approach recommendation problems, such as recommending
 
 2. In Solution Explorer, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-   ![copy if newer in VS](./media/movie-recommendation/copytoout.gif)
+   ![GIF of a user selecting copy if newer in VS.](./media/movie-recommendation/copy-to-output-if-newer.gif)
 
 ## Load your data
 
@@ -78,7 +79,7 @@ The recommendation ratings data is split into `Train` and `Test` datasets. The `
 
 Below is a preview of the data from your \*.csv files:
 
-![preview of data](./media/movie-recommendation/csv-dataset-preview.png)
+![Screenshot of the preview of the CVS dataset.](./media/movie-recommendation/csv-file-dataset-preview.png)
 
 In the \*.csv files, there are four columns:
 
@@ -166,11 +167,11 @@ There are three major concepts in ML.NET: [Data](../resources/glossary.md#data),
 
 Machine learning training algorithms require data in a certain format. `Transformers` are used to transform tabular data to a compatible format.
 
-![transformer image](./media/movie-recommendation/transformer.png)
+![Diagram of the Transformer dataflow.](./media/movie-recommendation/data-transformer-transformed.png)
 
 You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take in data and return `Transformers`.
 
-![estimator image](./media/movie-recommendation/estimator.png)
+![Diagram of the Estimator dataflow.](./media/movie-recommendation/data-estimator-transformer.png)
 
 The recommendation training algorithm you will use for training your model is an example of an `Estimator`.
 
@@ -315,7 +316,10 @@ Use the `PredictionEngine` to predict the rating by adding the following code to
 
 [!code-csharp[PredictionEngine](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#PredictionEngine "Create Prediction Engine")]
 
-The [PredictionEngine class](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass a single instance of data and then perform a prediction on this single instance of data.
+The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
+
+> [!NOTE]
+> `PredictionEnginePool` service extension is currently in preview.
 
 Create an instance of `MovieRating` called `testInput` and pass it to the Prediction Engine by adding the following as the next lines of code in the `UseModelForSinglePrediction()` method:
 
@@ -463,6 +467,7 @@ The data used in this tutorial is derived from [MovieLens Dataset](http://files.
 In this tutorial, you learned how to:
 
 > [!div class="checklist"]
+>
 > * Select a machine learning algorithm
 > * Prepare and load your data
 > * Build and train a model

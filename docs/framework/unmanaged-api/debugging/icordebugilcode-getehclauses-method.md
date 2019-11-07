@@ -12,8 +12,6 @@ api_type:
 ms.assetid: cf7a0e00-06ae-47a5-8037-598b26196802
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILCode::GetEHClauses Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

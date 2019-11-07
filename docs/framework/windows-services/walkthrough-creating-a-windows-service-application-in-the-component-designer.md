@@ -22,7 +22,7 @@ To begin, create the project and set the values that are required for the servic
 
 2. Navigate to and select the **Windows Service (.NET Framework)** project template. To find it, expand **Installed** and **Visual C#** or **Visual Basic**, then select **Windows Desktop**. Or, enter *Windows Service* in the search box on the upper right and press **Enter**.
 
-   ![Windows Service template in New Project dialog in Visual Studio](media/new-project-dialog.png)
+   ![Windows Service template in New Project dialog in Visual Studio](./media/new-project-dialog.png)
 
    > [!NOTE]
    > If you don't see the **Windows Service** template, you may need to install the **.NET desktop development** workload:
@@ -45,11 +45,11 @@ Rename the service from **Service1** to **MyNewService**.
 
 2. In the pop-up window, select **Yes**.
 
-    ![Rename prompt](media/windows-service-rename.png "Windows service rename prompt")
+    ![Rename prompt](./media/windows-service-rename.png "Windows service rename prompt")
 
 3. In the **Design** tab, select **Properties** from the shortcut menu. From the **Properties** window, change the **ServiceName** value to *MyNewService*.
 
-    ![Service properties](media/windows-service-properties.png "Windows service properties")
+    ![Service properties](./media/windows-service-properties.png "Windows service properties")
 
 4. Select **Save All** from the **File** menu.
 
@@ -334,7 +334,7 @@ Before you run a Windows service, you need to install it, which registers it wit
 
      This text appears in the **Description** column of the **Services** window and describes the service to the user.
 
-    ![Service description in the Services window.](media/windows-service-description.png "Service description")
+    ![Service description in the Services window.](./media/windows-service-description.png "Service description")
 
 6. Add text to the <xref:System.ServiceProcess.ServiceInstaller.DisplayName%2A> property. For example, *MyNewService Display Name*.
 
@@ -344,7 +344,7 @@ Before you run a Windows service, you need to install it, which registers it wit
 
 8. When you're finished, the **Properties** windows should look like the following figure:
 
-     ![Installer Properties for a Windows service](media/windows-service-installer-properties.png "Windows service installer properties")
+     ![Installer Properties for a Windows service](./media/windows-service-installer-properties.png "Windows service installer properties")
 
 9. In the **Design** view for **ProjectInstaller**, choose **serviceProcessInstaller1** for a Visual C# project, or **ServiceProcessInstaller1** for a Visual Basic project, then choose **Properties** from the shortcut menu. Set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> property to <xref:System.ServiceProcess.ServiceAccount.LocalSystem> from the drop-down list.
 
@@ -491,7 +491,7 @@ For more information, see [How to: Install and uninstall services](how-to-instal
 
      You should see your service listed in **Services**, displayed alphabetically by the display name that you set for it.
 
-     ![MyNewService in the Services window.](media/windowsservices-serviceswindow.PNG)
+     ![MyNewService in the Services window.](./media/windowsservices-serviceswindow.PNG)
 
 2. To start the service, choose **Start** from the service's shortcut menu.
 
@@ -510,7 +510,7 @@ For more information, see [How to: Install and uninstall services](how-to-instal
 
 3. Locate the listing for **MyNewLog** (or **MyLogFile1** if you followed the procedure to add command-line arguments) and expand it. You should see the entries for the two actions (start and stop) that your service performed.
 
-     ![Use the Event Viewer to see the event log entries](media/windows-service-event-viewer.png)
+     ![Use the Event Viewer to see the event log entries](./media/windows-service-event-viewer.png)
 
 ## Clean up resources
 

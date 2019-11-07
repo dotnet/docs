@@ -14,14 +14,14 @@ This sample demonstrates how to use the custom activity, `GetWorkflowInstanceId`
   
  `GetWorkflowInstanceId` is implemented as a <xref:System.Activities.CodeActivity%601> because it must return a value of type <xref:System.Guid>, and it must have access to the <xref:System.Activities.CodeActivityContext> for getting the workflow’s instance ID. Its implementation is fairly basic.  
   
-```  
+```csharp  
 public sealed class GetWorkflowInstanceId : CodeActivity<Guid>  
 {  
-protected override Guid Execute(CodeActivityContext context)  
-        {  
-            return context.WorkflowInstanceId;  
-        }  
-}  
+    protected override Guid Execute(CodeActivityContext context)  
+    {  
+        return context.WorkflowInstanceId;  
+    }  
+}
 ```  
   
 > [!IMPORTANT]

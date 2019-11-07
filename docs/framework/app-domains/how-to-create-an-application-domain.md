@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "application domains, creating"
 ms.assetid: ba1fa43e-49f5-47d9-bd7f-3024af16f4ba
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create an Application Domain
 A common language runtime host creates application domains automatically when they are needed. However, you can create your own application domains and load into them those assemblies that you want to manage personally. You can also create application domains from which you execute code.  
@@ -26,4 +24,4 @@ A common language runtime host creates application domains automatically when th
 ## See also
 
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Using Application Domains](use.md)

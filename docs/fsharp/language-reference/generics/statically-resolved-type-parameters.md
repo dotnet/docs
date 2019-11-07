@@ -9,7 +9,7 @@ A *statically resolved type parameter* is a type parameter that is replaced with
 
 ## Syntax
 
-```
+```fsharp
 ˆtype-parameter
 ```
 
@@ -46,7 +46,7 @@ when (^a or ^b) : (static member ( + ) : ^a * ^b -> ^d) and
 
 The output is as follows.
 
-```
+```console
 2
 1.500000
 ```
@@ -56,7 +56,7 @@ Starting with F# 4.1, you can also specify concrete type names in statically res
 ```fsharp
 let inline konst x _ = x
 
-type CFunctor() = 
+type CFunctor() =
     static member inline fmap (f: ^a -> ^b, a: ^a list) = List.map f a
     static member inline fmap (f: ^a -> ^b, a: ^a option) =
         match a with

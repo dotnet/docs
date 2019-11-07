@@ -16,7 +16,7 @@ Replaces a specified number of characters in a `String` variable with characters
   
 ## Syntax  
   
-```  
+```vb  
 Mid( _  
    ByRef Target As String, _  
    ByVal Start As Integer, _  

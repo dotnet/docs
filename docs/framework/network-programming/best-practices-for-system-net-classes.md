@@ -28,4 +28,4 @@ The following recommendations will help you use the classes contained in <xref:S
   
 ## See also
 
-- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+- [Network Programming in the .NET Framework](index.md)

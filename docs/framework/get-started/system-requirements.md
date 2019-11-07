@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "operating systems supported"
   - "hardware requirements"
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework system requirements
 
@@ -28,7 +26,7 @@ Development environments that enable you to develop apps for the .NET Framework 
 
 [!INCLUDE[net-framework-4-versions](../../../includes/net-framework-4x-versions.md)]
 
-For download information and links, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).
+For download information and links, see [Install the .NET Framework for developers](../install/guide-for-developers.md).
 
 For information on the support lifecycle of .NET Framework versions, see [Microsoft Support Lifecycle](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=Microsoft%20.NET%20Framework&Filter=FilterNO).
 
@@ -106,6 +104,6 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 ## See also
 
-- [Installation Guide](../../../docs/framework/install/index.md)
-- [Getting Started](../../../docs/framework/get-started/index.md)
-- [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+- [Installation Guide](../install/index.md)
+- [Getting Started](index.md)
+- [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)

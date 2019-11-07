@@ -49,7 +49,7 @@ Applications that consume query notifications have a common set of requirements.
   
  For the query notification samples to run correctly, the following Transact-SQL statements must be executed on the database server.  
   
-```  
+```sql
 CREATE QUEUE ContactChangeMessages;  
   
 CREATE SERVICE ContactChangeNotifications  

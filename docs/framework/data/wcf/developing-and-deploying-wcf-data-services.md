@@ -14,7 +14,7 @@ This topic provides information about developing and deploying WCF Data Services
 
 ## Develop WCF Data Services
 
-When you use WCF Data Services to create a data service that supports the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)], you must perform the following basic tasks during development:
+When you use WCF Data Services to create a data service that supports the Open Data Protocol (OData), you must perform the following basic tasks during development:
 
 1. **Define the data model**
 

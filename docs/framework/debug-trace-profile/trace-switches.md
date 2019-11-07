@@ -18,7 +18,7 @@ ms.author: "mairaw"
 # Trace Switches
 Trace switches enable you to enable, disable, and filter tracing output. They are objects that exist in your code and can be configured externally through the .config file. There are three types of trace switches provided in the .NET Framework: the <xref:System.Diagnostics.BooleanSwitch> class, the <xref:System.Diagnostics.TraceSwitch> class, and the <xref:System.Diagnostics.SourceSwitch> class. The <xref:System.Diagnostics.BooleanSwitch> class acts as a toggle switch, either enabling or disabling a variety of trace statements. The <xref:System.Diagnostics.TraceSwitch> and <xref:System.Diagnostics.SourceSwitch> classes allow you to enable a trace switch for a particular tracing level so that the <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.TraceSource> messages specified for that level and all levels below it appear. If you disable the switch, the trace messages will not appear. All these classes derive from the abstract (**MustInherit**) class **Switch**, as should any user-developed switches.  
   
- Trace switches can be useful for filtering information. For example, you might want to see every tracing message in a data access module, but only error messages in the rest of the application. In that case, you would use one trace switch for the data access module and one switch for the rest of the application. By using the .config file to configure the switches to the appropriate settings, you could control what types of trace message you received. For more information, see [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md).  
+ Trace switches can be useful for filtering information. For example, you might want to see every tracing message in a data access module, but only error messages in the rest of the application. In that case, you would use one trace switch for the data access module and one switch for the rest of the application. By using the .config file to configure the switches to the appropriate settings, you could control what types of trace message you received. For more information, see [How to: Create, Initialize and Configure Trace Switches](how-to-create-initialize-and-configure-trace-switches.md).  
   
  Typically, a deployed application is executed with its switches disabled, so that users need not observe a lot of irrelevant trace messages appearing on a screen or filling up a log file as the application runs. If a problem arises during application execution, you can stop the application, enable the switches, and restart the application. Then the tracing messages will be displayed.  
   
@@ -79,6 +79,6 @@ MessageBox.Show(myTraceSwitch.TraceVerbose.ToString());
   
 ## See also
 
-- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
-- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [Trace Listeners](trace-listeners.md)
+- [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 445a9ee3-e050-4f3a-931a-96b0efb00110
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValue::GetSize Method
 Gets the size, in bytes, of this "ICorDebugValue" object.  

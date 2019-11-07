@@ -60,7 +60,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 
 ## Remarks
 
-`{RelativeSource TemplatedParent}` binding usages are a key technique that addresses a larger concept of the separation of a control's UI and a control's logic. This enables binding from within the template definition to the templated parent (the run time object instance where the template is applied). For this case, the [TemplateBinding Markup Extension](templatebinding-markup-extension.md) is in fact a shorthand for the following binding expression: `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` or `{RelativeSource TemplatedParent}` usages are both only relevant within the XAML that defines a template. For more information, see [TemplateBinding Markup Extension](templatebinding-markup-extension.md)
+`{RelativeSource TemplatedParent}` binding usages are a key technique that addresses a larger concept of the separation of a control's UI and a control's logic. This enables binding from within the template definition to the templated parent (the run time object instance where the template is applied). For this case, the [TemplateBinding Markup Extension](templatebinding-markup-extension.md) is in fact a shorthand for the following binding expression: `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` or `{RelativeSource TemplatedParent}` usages are both only relevant within the XAML that defines a template. For more information, see [TemplateBinding Markup Extension](templatebinding-markup-extension.md).
 
 `{RelativeSource FindAncestor}` is mainly used in control templates or predictable self-contained UI compositions, for cases where a control is always expected to be in a visual tree of a certain ancestor type. For example, items of an items control might use `FindAncestor` usages to bind to properties of their items control parent ancestor. Or, elements that are part of control composition in a template can use `FindAncestor` bindings to the parent elements in that same composition structure.
 
@@ -98,7 +98,7 @@ In the following example, the first <xref:System.Windows.Controls.TextBlock> in 
     </ListBox.ItemTemplate>
 ```
 
-Describing data binding as a concept is not covered here, see [Data Binding Overview](../data/data-binding-overview.md).
+Describing data binding as a concept is not covered here, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 In the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] XAML processor implementation, the handling for this markup extension is defined by the <xref:System.Windows.Data.RelativeSource> class.
 
@@ -110,6 +110,6 @@ In the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient
 - [Styling and Templating](../controls/styling-and-templating.md)
 - [XAML Overview (WPF)](xaml-overview-wpf.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Binding Declarations Overview](../data/binding-declarations-overview.md)
 - [x:Type Markup Extension](../../xaml-services/x-type-markup-extension.md)

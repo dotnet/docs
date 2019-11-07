@@ -35,7 +35,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 > [!NOTE]
 > The <xref:System.Runtime.Caching.MemoryCache> class is modeled on the ASP.NET cache object that is defined in the <xref:System.Web.Caching> namespace. Therefore, the internal caching logic similar to the logic that was provided in earlier versions of ASP.NET.  
   
- For an example of how to use to caching in a WPF application, see [Walkthrough: Caching Application Data in a WPF Application](../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md).  
+ For an example of how to use to caching in a WPF application, see [Walkthrough: Caching Application Data in a WPF Application](../wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md).  
   
 ## Caching in ASP.NET Applications  
  The caching classes in the <xref:System.Runtime.Caching> namespace provide functionality for caching data in ASP.NET.  
@@ -63,7 +63,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
 - Create a custom class that derives from the <xref:System.Runtime.Caching.ObjectCache> class and then provide a custom cache implementation in the derived class.  
   
-- Create a class that derives from <xref:System.Runtime.Caching.MemoryCache> class and customize or extend the derived class. For an example of how to do this, see [Caching Application Data by Using Multiple Cache Objects in an ASP.NET Application](https://blogs.msdn.com/aspnetue/archive/2010/03/22/caching-application-data-by-using-multiple-cache-objects-in-an-asp-net-application.aspx).  
+- Create a class that derives from <xref:System.Runtime.Caching.MemoryCache> class and customize or extend the derived class. For an example of how to do this, see [Caching Application Data by Using Multiple Cache Objects in an ASP.NET Application](https://blogs.msdn.microsoft.com/aspnetue/2010/03/22/caching-application-data-by-using-multiple-cache-objects-in-an-asp-net-application/).  
   
 - Create a class that derives from the <xref:System.Web.Caching.OutputCacheProvider> class and configure the application to use the custom output cache provider.  
   
@@ -73,5 +73,5 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 - <xref:System.Runtime.Caching.ObjectCache>
 - <xref:System.Runtime.Caching.MemoryCache>
-- [Walkthrough: Caching Application Data in a WPF Application](../../../docs/framework/wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)
+- [Walkthrough: Caching Application Data in a WPF Application](../wpf/advanced/walkthrough-caching-application-data-in-a-wpf-application.md)
 - [Walkthrough: Caching Application Data in ASP.NET](https://docs.microsoft.com/previous-versions/ff477235(v=vs.100))

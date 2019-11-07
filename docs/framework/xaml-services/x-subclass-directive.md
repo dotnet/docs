@@ -16,7 +16,7 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:Class="namespace.classname" x:Subclass="subclassNamespace.subclassName">  
    ...  
 </object>  

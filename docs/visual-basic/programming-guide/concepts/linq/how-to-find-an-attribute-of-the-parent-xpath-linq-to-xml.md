@@ -36,7 +36,7 @@ Console.WriteLine(att1)
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 id="bk101"  
 ```  

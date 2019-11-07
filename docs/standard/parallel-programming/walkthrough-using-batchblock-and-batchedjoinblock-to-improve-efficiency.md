@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library, improving efficiency"
 ms.assetid: 5beb4983-80c2-4f60-8c51-a07f9fd94cb3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency
 
@@ -47,7 +45,6 @@ This walkthrough contains the following sections:
 
 ## Creating the Console Application
 
-<a name="consoleApp"></a>
 1. In Visual Studio, create a Visual C# or Visual Basic **Console Application** project. In this document, the project is named `DataflowBatchDatabase`.
 
 2. In your project, add a reference to System.Data.SqlServerCe.dll and a reference to System.Threading.Tasks.Dataflow.dll.

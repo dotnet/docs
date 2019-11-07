@@ -13,7 +13,7 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet tool uninstall <PACKAGE_NAME> <-g|--global>
 dotnet tool uninstall <PACKAGE_NAME> <--tool-path>
 dotnet tool uninstall <-h|--help>

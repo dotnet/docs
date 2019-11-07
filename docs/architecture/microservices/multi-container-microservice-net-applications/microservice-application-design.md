@@ -60,9 +60,11 @@ So that you can focus on the architecture and technologies instead of thinking a
 
 The application consists of multiple subsystems, including several store UI front ends (a Web application and a native mobile app), along with the back-end microservices and containers for all the required server-side operations with several API Gateways as consolidated entry points to the internal microservices. Figure 6-1 shows the architecture of the reference application.
 
-![Mobile and SPA clients communicate to single API gateway endpoints, that then communicate to microservices. Traditional web clients communicate to MVC microservice, that communicates to microservices](./media/image1.png)
+![Diagram of client apps using eShopOnContainers in a single Docker host.](./media/microservice-application-design/eshoponcontainers-reference-application-architecture.png)
 
 **Figure 6-1**. The eShopOnContainers reference application architecture for development environment
+
+The above diagram shows that Mobile and SPA clients communicate to single API gateway endpoints, that then communicate to microservices. Traditional web clients communicate to MVC microservice, that communicates to microservices through the API gateway.
 
 **Hosting environment**. In Figure 6-1, you see several containers deployed within a single Docker host. That would be the case when deploying to a single Docker host with the docker-compose up command. However, if you are using an orchestrator or container cluster, each container could be running in a different host (node), and any node could be running any number of containers, as we explained earlier in the architecture section.
 
@@ -84,8 +86,8 @@ Therefore, the units of deployment for microservices (and even for databases in 
 
 ### Additional resources
 
-- **eShopOnContainers GitHub repo. Source code for the reference application**\
-    <https://aka.ms/eShopOnContainers/>
+- **eShopOnContainers GitHub repo. Source code for the reference application** \
+  <https://aka.ms/eShopOnContainers/>
 
 ## Benefits of a microservice-based solution
 
@@ -113,7 +115,7 @@ A microservice based solution like this has many benefits:
 
 A microservice based solution like this also has some drawbacks:
 
-**Distributed application**. Distributing the application adds complexity for developers when they are designing and building the services. For example, developers must implement interservice communication using protocols like HTTP or AMPQ, which adds complexity for testing and exception handling. It also adds latency to the system.
+**Distributed application**. Distributing the application adds complexity for developers when they are designing and building the services. For example, developers must implement inter-service communication using protocols like HTTP or AMPQ, which adds complexity for testing and exception handling. It also adds latency to the system.
 
 **Deployment complexity**. An application that has dozens of microservices types and needs high scalability (it needs to be able to create many instances per service and balance those services across many hosts) means a high degree of deployment complexity for IT operations and management. If you are not using a microservice-oriented infrastructure (like an orchestrator and scheduler), that additional complexity can require far more development efforts than the business application itself.
 
@@ -135,7 +137,7 @@ As mentioned in the architecture section, when designing and building a complex 
 
 The external architecture is the microservice architecture composed by multiple services, following the principles described in the architecture section of this guide. However, depending on the nature of each microservice, and independently of high-level microservice architecture you choose, it is common and sometimes advisable to have different internal architectures, each based on different patterns, for different microservices. The microservices can even use different technologies and programming languages. Figure 6-2 illustrates this diversity.
 
-![Difference between external architecture: microservice patterns, API gateways, resilient communications, pub/sub, etc., and internal architecture: data driven/CRUD, DDD patterns, dependency injection, multiple libraries, etc.](./media/image2.png)
+![Diagram comparing external and internal architecture patterns.](./media/microservice-application-design/external-versus-internal-architecture.png)
 
 **Figure 6-2**. External versus internal architecture and design
 
@@ -153,7 +155,7 @@ There are many architectural patterns used by software architects and developers
 
 - [Traditional N-Layered](https://docs.microsoft.com/previous-versions/msp-n-p/ee658109(v=pandp.10)).
 
-- [Domain-Driven Design N-layered](https://blogs.msdn.microsoft.com/cesardelatorre/2011/07/03/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
+- [Domain-Driven Design N-layered](https://devblogs.microsoft.com/cesardelatorre/published-first-alpha-version-of-domain-oriented-n-layered-architecture-v2-0/).
 
 - [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) (as used with [eShopOnWeb](https://aka.ms/WebAppArchitecture))
 
@@ -165,11 +167,11 @@ You can also build microservices with many technologies and languages, such as A
 
 The important point is that no particular architecture pattern or style, nor any particular technology, is right for all situations. Figure 6-3 shows some approaches and technologies (although not in any particular order) that could be used in different microservices.
 
-![Multi-architectural pattern and polyglot microservices means you can mix and match languages and technologies to the needs of each microservice and still have them talking to each other.](./media/image3.png)
+![Diagram showing 12 complex microservices in a polyglot world architecture.](./media/microservice-application-design/multi-architectural-patterns-polyglot-microservices.png)
 
 **Figure 6-3**. Multi-architectural patterns and the polyglot microservices world
 
-As shown in Figure 6-3, in applications composed of many microservices (Bounded Contexts in domain-driven design terminology, or simply "subsystems" as autonomous microservices), you might implement each microservice in a different way. Each might have a different architecture pattern and use different languages and databases depending on the application's nature, business requirements, and priorities. In some cases, the microservices might be similar. But that is not usually the case, because each subsystem's context boundary and requirements are usually different.
+Multi-architectural pattern and polyglot microservices means you can mix and match languages and technologies to the needs of each microservice and still have them talking to each other. As shown in Figure 6-3, in applications composed of many microservices (Bounded Contexts in domain-driven design terminology, or simply "subsystems" as autonomous microservices), you might implement each microservice in a different way. Each might have a different architecture pattern and use different languages and databases depending on the application's nature, business requirements, and priorities. In some cases, the microservices might be similar. But that is not usually the case, because each subsystem's context boundary and requirements are usually different.
 
 For instance, for a simple CRUD maintenance application, it might not make sense to design and implement DDD patterns. But for your core domain or core business, you might need to apply more advanced patterns to tackle business complexity with ever-changing business rules.
 

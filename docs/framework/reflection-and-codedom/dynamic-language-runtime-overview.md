@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "DLR"
   - "IronRuby"
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Dynamic Language Runtime Overview
 
@@ -70,7 +68,7 @@ Examples of languages developed by using the DLR include the following:
 ## DLR Architecture
  The following illustration shows the architecture of the dynamic language runtime.
 
- ![Dynamic Language Runtime Architecture Overview](../../../docs/framework/reflection-and-codedom/media/dlr-archoverview.png "DLR_ArchOverview")
+ ![Dynamic Language Runtime Architecture Overview](./media/dlr-archoverview.png "DLR_ArchOverview")
 DLR architecture
 
  The DLR adds a set of services to the CLR for better supporting dynamic languages. These services include the following:

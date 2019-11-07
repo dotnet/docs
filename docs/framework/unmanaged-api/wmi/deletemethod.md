@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "DeleteMethod function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # DeleteMethod function
 Deletes the specified method from a CIM class definition.

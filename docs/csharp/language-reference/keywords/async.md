@@ -52,6 +52,7 @@ To run the code as a WPF app:
 - Add a `using` directive for System.Net.Http.  
   
 To run the code as a Windows Store app:  
+
 - Paste this code into the `MainPage` class in MainPage.xaml.cs.  
 - Add using directives for System.Net.Http and System.Threading.Tasks.  
   

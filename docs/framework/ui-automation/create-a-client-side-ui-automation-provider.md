@@ -23,5 +23,5 @@ ms.assetid: d91edaf2-be28-41ec-a508-af421cb43c3d
   
 ## See also
 
-- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
-- [Register a Client-Side Provider Assembly](../../../docs/framework/ui-automation/register-a-client-side-provider-assembly.md)
+- [UI Automation Providers Overview](ui-automation-providers-overview.md)
+- [Register a Client-Side Provider Assembly](register-a-client-side-provider-assembly.md)

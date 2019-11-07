@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "data marshaling, platform invoke"
   - "marshaling, platform invoke"
 ms.assetid: dc5c76cf-7b12-406f-b79c-d1a023ec245d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Marshaling Data with Platform Invoke
 
@@ -19,7 +17,7 @@ To call functions exported from an unmanaged library, a .NET Framework applicati
 
 - Substitute managed data types for unmanaged data types.
 
-You can use the documentation supplied with an unmanaged function to construct an equivalent managed prototype by applying the attribute with its optional fields and substituting managed data types for unmanaged types. For instructions about how to apply the <xref:System.Runtime.InteropServices.DllImportAttribute>, see [Consuming Unmanaged DLL Functions](../../../docs/framework/interop/consuming-unmanaged-dll-functions.md).
+You can use the documentation supplied with an unmanaged function to construct an equivalent managed prototype by applying the attribute with its optional fields and substituting managed data types for unmanaged types. For instructions about how to apply the <xref:System.Runtime.InteropServices.DllImportAttribute>, see [Consuming Unmanaged DLL Functions](consuming-unmanaged-dll-functions.md).
 
 This section provides samples that demonstrate how to create managed function prototypes for passing arguments to and receiving return values from functions exported by unmanaged libraries. The samples also demonstrate when to use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute and the <xref:System.Runtime.InteropServices.Marshal> class to explicitly marshal data.
 

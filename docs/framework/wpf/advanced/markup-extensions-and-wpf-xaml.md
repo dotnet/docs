@@ -98,7 +98,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 ## Nesting Markup Extensions in XAML Usage  
  Nesting of multiple markup extensions is supported, and each markup extension will be evaluated deepest first. For example, consider the following usage:  
   
-```  
+```xaml  
 <Setter Property="Background"  
   Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />  
 ```  
@@ -112,7 +112,7 @@ This topic introduces the concept of markup extensions for XAML, including their
   
 ## See also
 
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
 - [StaticResource Markup Extension](staticresource-markup-extension.md)

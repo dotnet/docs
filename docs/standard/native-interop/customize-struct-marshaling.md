@@ -21,7 +21,7 @@ Sometimes the default marshaling rules for structures aren't exactly what you ne
 
 **✔️ DO** only use `LayoutKind.Explicit` in marshaling when your native struct is also has an explicit layout, such as a union.
 
-**❌ AVOID** using `LayoutKind.Explicit` when marshaling structures on non-Windows platforms. The .NET Core runtime doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
+**❌ AVOID** using `LayoutKind.Explicit` when marshaling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
 ## Customizing boolean field marshaling
 
@@ -334,6 +334,7 @@ struct Currency
 ## Marshaling `System.Object`s
 
 On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types:
+
 - [`VARIANT`](/windows/win32/api/oaidl/ns-oaidl-variant)
 - [`IUnknown*`](/windows/desktop/api/unknwn/nn-unknwn-iunknown)
 - [`IDispatch*`](/windows/desktop/api/oaidl/nn-oaidl-idispatch)

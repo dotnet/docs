@@ -7,7 +7,7 @@ ms.date: 10/16/2018
 ---
 # Strong naming
 
-Strong naming refers to signing an assembly with a key, producing a [strong-named assembly](../../framework/app-domains/strong-named-assemblies.md). When an assembly is strong-named, it creates a unique identity based on the name and assembly version number, and it can help prevent assembly conflicts.
+Strong naming refers to signing an assembly with a key, producing a [strong-named assembly](../assembly/strong-named.md). When an assembly is strong-named, it creates a unique identity based on the name and assembly version number, and it can help prevent assembly conflicts.
 
 The downside to strong naming is that the .NET Framework on Windows enables strict loading of assemblies once an assembly is strong named. A strong-named assembly reference must exactly match the version referenced by an assembly, forcing developers to [configure binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) when using the assembly:
 
@@ -47,7 +47,7 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 
 > A publicly available key lets developers modify and recompile your library source code with the same key.
 > 
-> You shouldn't make the strong naming key public if it has been used in the past to give special permissions in [partial-trust scenarios](/dotnet/framework/misc/using-libraries-from-partially-trusted-code). Otherwise, you might compromise existing environments.
+> You shouldn't make the strong naming key public if it has been used in the past to give special permissions in [partial-trust scenarios](../../framework/misc/using-libraries-from-partially-trusted-code.md). Otherwise, you might compromise existing environments.
 
 > [!IMPORTANT]
 > When the identity of the publisher of the code is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Code Access Security (CAS) should not be used as a security mitigation.

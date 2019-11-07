@@ -30,9 +30,9 @@ ms.assetid: fdefc6c3-b836-4cfe-8dec-1484bfdc5551
   
 ## See also
 
-- [UI Automation TextPattern Overview](../../../docs/framework/ui-automation/ui-automation-textpattern-overview.md)
-- [Add Content to a Text Box Using UI Automation](../../../docs/framework/ui-automation/add-content-to-a-text-box-using-ui-automation.md)
-- [Find and Highlight Text Using UI Automation](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)
-- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
-- [Obtain Mixed Text Attribute Details Using UI Automation](../../../docs/framework/ui-automation/obtain-mixed-text-attribute-details-using-ui-automation.md)
+- [UI Automation TextPattern Overview](ui-automation-textpattern-overview.md)
+- [Add Content to a Text Box Using UI Automation](add-content-to-a-text-box-using-ui-automation.md)
+- [Find and Highlight Text Using UI Automation](find-and-highlight-text-using-ui-automation.md)
+- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)
+- [Obtain Mixed Text Attribute Details Using UI Automation](obtain-mixed-text-attribute-details-using-ui-automation.md)

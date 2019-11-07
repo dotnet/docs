@@ -2,6 +2,7 @@
 title: Translating Expression Trees
 description: Learn how to visit each node in an expression tree while building a modified copy of that expression tree.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 ---
 
@@ -236,7 +237,7 @@ This sample shows a small subset of the code you would build to traverse
 and interpret the algorithms represented by an expression tree. For a complete
 discussion of all the work necessary to build a general purpose library that
 translates expression trees into another language, please read
-[this series](https://blogs.msdn.com/b/mattwar/archive/2008/11/18/linq-links.aspx)
+[this series](https://blogs.msdn.microsoft.com/mattwar/2008/11/18/linq-building-an-iqueryable-provider-series/)
 by Matt Warren. It goes into great detail on how to translate any of the code
 you might find in an expression tree.
 

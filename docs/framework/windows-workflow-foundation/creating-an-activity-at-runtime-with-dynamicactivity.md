@@ -23,7 +23,7 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
   
 4. Open Program.cs. Add the following directive to the top of the file.  
   
-    ```  
+    ```csharp  
     using System.Collections.Generic;  
     ```  
   
@@ -74,13 +74,13 @@ ms.assetid: 1af85cc6-912d-449e-90c5-c5db3eca5ace
   
 5. Open Program.cs. Add the following directive to the top of the file.  
   
-    ```  
+    ```csharp  
     using System.Activities.XamlIntegration;  
     ```  
   
 6. Replace the contents of the `Main` method with the following code.  
   
-    ```  
+    ```csharp  
     Activity act2 = ActivityXamlServices.Load(@"Workflow1.xaml");  
                     results = WorkflowInvoker.Invoke(act2, new Dictionary<string, object> { { "TextToWrite", "HelloWorld!" } });  
     Console.ReadLine();  

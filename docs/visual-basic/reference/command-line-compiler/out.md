@@ -12,7 +12,7 @@ Specifies the name of the output file.
   
 ## Syntax  
   
-```  
+```console  
 -out:filename  
 ```  
   

@@ -15,7 +15,7 @@ After developing some new WCF services, you may decide that you want to be able 
   
 2. Create a Visual Basic script or Visual Basic application that contains the following code:  
   
-    ```  
+    ```vb
     monString = "service:mexaddress=http://localhost/ServiceModelSamples/Service.svc/MEX"  
     monString = monString + ", address=http://localhost/ServiceModelSamples/Service.svc"  
     monString = monString + ", contract=ICalculator, contractNamespace=http://Microsoft.ServiceModel.Samples"  

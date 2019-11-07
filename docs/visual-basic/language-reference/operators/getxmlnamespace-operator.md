@@ -14,7 +14,7 @@ Gets the <xref:System.Xml.Linq.XNamespace> object that corresponds to the specif
   
 ## Syntax  
   
-```  
+```vb  
 GetXmlNamespace(xmlNamespacePrefix)  
 ```  
   

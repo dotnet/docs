@@ -103,7 +103,7 @@ Web API projects should consider using the `[ApiController]` attribute, which ca
 > - **Filters**
  > <https://docs.microsoft.com/aspnet/core/mvc/controllers/filters>
 > - **ApiController Attribute**
- > <https://docs.microsoft.com/aspnet/core/web-api/?view=aspnetcore-2.2>
+ > <https://docs.microsoft.com/aspnet/core/web-api/>
 
 ## Working with dependencies
 

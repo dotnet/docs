@@ -21,13 +21,13 @@ ms.assetid: 11d11b59-acc4-48bf-8e4b-e97b516aa0a9
   
 2. In the top of the code window that appears, add a Using statement to `System.Servicemodel`.  
   
-    ```  
+    ```csharp  
     using System.ServiceModel;  
     ```  
   
 3. Change the sample class definition to the following interface definition.  
   
-    ```  
+    ```csharp  
     [ServiceContract]  
         public interface IBookService  
         {  

@@ -1,0 +1,66 @@
+- name: .NET Framework Guide
+  href: index.md
+- name: What's New
+  href: whats-new/
+- name: Get Started
+  href: get-started/
+- name: Installation guide
+  href: install/
+- name: Migration Guide
+  href: migration-guide/
+- name: Development Guide
+  href: development-guide.md
+  items:
+  - name: Application Domains and Assemblies
+    href: app-domains/
+  - name: Resources in Desktop Apps
+    href: resources/
+  - name: Accessibility
+    href: ui-automation/
+  - name: Data and Modeling
+    href: data/
+  - name: Client Applications
+    href: develop-client-apps.md
+    items:
+    - name: Windows Presentation Foundation
+      href: wpf/
+    - name: Windows Forms
+      href: winforms/
+  - name: Service-Oriented Applications with WCF
+    href: wcf/
+  - name: Windows Workflow Foundation
+    href: windows-workflow-foundation/
+  - name: Windows Service Applications
+    href: windows-services/
+  - name: 64-bit Applications
+    href: 64-bit-apps.md
+  - name: Web Applications with ASP.NET
+    href: develop-web-apps-with-aspnet.md
+  - name: Network Programming in the .NET Framework
+    href: network-programming/
+  - name: Configuring Apps
+    href: configure-apps/
+  - name: Compiling Apps with .NET Native
+    href: net-native/
+  - name: Windows Identity Foundation
+    href: security/
+  - name: Debugging, Tracing, and Profiling
+    href: debug-trace-profile/
+  - name: Deployment
+    href: deployment/
+  - name: Performance
+    href: performance/
+  - name: Dynamic Programming
+    href: reflection-and-codedom/
+  - name: Managed Extensibility Framework (MEF)
+    href: mef/
+  - name: Interoperating with Unmanaged Code
+    href: interop/
+  - name: Unmanaged API Reference
+    href: unmanaged-api/
+  - name: XAML Services
+    href: xaml-services/
+- name: Tools
+  href: tools/
+- name: Additional Class Libraries and APIs
+  href: additional-apis/

@@ -26,6 +26,7 @@ This simple technique is surprisingly powerful. It can be used in situations whe
 The <xref:System.Console?displayProperty=nameWithType>, <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, and <xref:System.Diagnostics.Debug?displayProperty=nameWithType> classes each provide similar print style APIs convenient for logging.
 
 The choice of which print style API to use is up to you. The key differences are:
+
 - <xref:System.Console?displayProperty=nameWithType>
   - Always enabled and always writes to the console.
   - Useful for information that your customer may need to see in the release.
@@ -74,6 +75,7 @@ The low-level APIs may not be the right choice for your logging needs. You may w
 The <xref:Microsoft.Extensions.Logging.ILogger> interface has been used to create a common logging interface where the loggers can be inserted through dependency injection.
 
 For instance, to allow you to make the best choice for your application `ASP.NET` offers support for a selection of built-in and third-party frameworks:
+
 - [ASP.NET built in logging providers](/aspnet/core/fundamentals/logging/#built-in-logging-providers)
 - [ASP.NET Third-party logging providers](/aspnet/core/fundamentals/logging/#third-party-logging-providers)
 
@@ -98,6 +100,7 @@ provides an overview of the logging techniques it supports.
 String formatting can take noticeable CPU processing time.
 
 In performance critical applications, it's recommended that you:
+
 - Avoid lots of logging when no one is listening. Avoid constructing costly logging messages by checking if logging is enabled first.
 - Only log what's useful.
 - Defer fancy formatting to the analysis stage.

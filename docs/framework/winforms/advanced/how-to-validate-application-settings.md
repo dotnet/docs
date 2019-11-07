@@ -97,9 +97,11 @@ The following procedures were written under the assumption that the application 
     ```csharp
     private void MyCustomSettings_SettingChanging(Object sender, SettingChangingEventArgs e)
     {
-        if (e.SettingName.Equals("DateOfBirth")) {
-            Date newDate = (Date)e.NewValue;
-            If (newDate > Date.Now) {
+        if (e.SettingName.Equals("DateOfBirth"))
+        {
+            var newDate = (DateTime)e.NewValue;
+            if (newDate > DateTime.Now)
+            {
                 e.Cancel = true;
                 // Inform the user.
             }

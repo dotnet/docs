@@ -21,7 +21,7 @@ ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
   
 2. Add an `Implements` clause to the end of the `Function`, `Sub`, `Property`, or `Event` statement. For example:  
   
-    ```  
+    ```vb  
     Public Event ItHappened() Implements IBaseInterface.ItHappened  
     ```  
   

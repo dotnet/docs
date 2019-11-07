@@ -31,7 +31,7 @@ helpviewer_keywords:
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 ---
 # XAML Syntax In Detail
-This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](xaml-overview-wpf.md).  
+This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md).  
 
 <a name="the_xaml_language_specification"></a>   
 ## The XAML Language Specification  
@@ -46,7 +46,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 #### Members of Types and Class Inheritance  
  Properties and events as they appear as XAML members of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] type are often inherited from base types. For example, consider this example: `<Button Background="Blue" .../>`. The <xref:System.Windows.Controls.Control.Background%2A> property is not an immediately declared property on the <xref:System.Windows.Controls.Button> class, if you were to look at the class definition, reflection results, or the documentation. Instead, <xref:System.Windows.Controls.Control.Background%2A> is inherited from the base <xref:System.Windows.Controls.Control> class.  
   
- The class inheritance behavior of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] XAML elements is a significant departure from a schema-enforced interpretation of XML markup. Class inheritance can become complex, particularly when intermediate base classes are abstract, or when interfaces are involved. This is one reason that the set of XAML elements and their permissible attributes is difficult to represent accurately and completely using the schema types that are typically used for [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] programming, such as DTD or XSD format. Another reason is that extensibility and type-mapping features of the XAML language itself preclude completeness of any fixed representation of the permissible types and members.  
+ The class inheritance behavior of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] XAML elements is a significant departure from a schema-enforced interpretation of XML markup. Class inheritance can become complex, particularly when intermediate base classes are abstract, or when interfaces are involved. This is one reason that the set of XAML elements and their permissible attributes is difficult to represent accurately and completely using the schema types that are typically used for XML programming, such as DTD or XSD format. Another reason is that extensibility and type-mapping features of the XAML language itself preclude completeness of any fixed representation of the permissible types and members.  
   
 <a name="object_element_syntax"></a>   
 ## Object Element Syntax  
@@ -106,7 +106,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  For flagwise enumerations, the behavior is based on the <xref:System.Enum.Parse%2A?displayProperty=nameWithType> method. You can specify multiple values for a flagwise enumeration by separating each value with a comma. However, you cannot combine enumeration values that are not flagwise. For instance, you cannot use the comma syntax to attempt to create a <xref:System.Windows.Trigger> that acts on multiple conditions of a nonflag enumeration:  
   
-```  
+```xaml  
 <!--This will not compile, because Visibility is not a flagwise enumeration.-->  
 ...  
 <Trigger Property="Visibility" Value="Collapsed,Hidden">  
@@ -191,7 +191,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ### XAML Content Property Values Must Be Contiguous  
  The value of a XAML content property must be given either entirely before or entirely after any other property elements on that object element. This is true whether the value of a XAML content property is specified as a string, or as one or more objects. For example, the following markup does not parse:  
   
-```  
+```xaml  
 <Button>I am a   
   <Button.Background>Blue</Button.Background>  
   blue button</Button>  
@@ -199,7 +199,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  This is illegal essentially because if this syntax were made explicit by using property element syntax for the content property, then the content property would be set twice:  
   
-```xml  
+```xaml  
 <Button>  
   <Button.Content>I am a </Button.Content>  
   <Button.Background>Blue</Button.Background>  
@@ -209,7 +209,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  A similarly illegal example is if the content property is a collection, and child elements are interspersed with property elements:  
   
-```xml  
+```xaml  
 <StackPanel>  
   <Button>This example</Button>  
   <StackPanel.Resources>  
@@ -309,7 +309,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 ## See also
 
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [XAML Namespace (x:) Language Features](../../xaml-services/xaml-namespace-x-language-features.md)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)

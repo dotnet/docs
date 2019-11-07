@@ -13,7 +13,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-```console
+```dotnetcli
 dotnet list [<PROJECT>|<SOLUTION>] package [--config] [--framework] [--highest-minor] [--highest-patch] 
    [--include-prerelease] [--include-transitive] [--interactive] [--outdated] [--source]
 dotnet list package [-h|--help]
@@ -115,18 +115,18 @@ The project or solution file to operate on. If not specified, the command search
 
 * List package references of a specific project:
 
-  ```console
+  ```dotnetcli
   dotnet list SentimentAnalysis.csproj package
   ```
 
 * List package references that have newer versions available, including prerelease versions:
 
-  ```console
+  ```dotnetcli
   dotnet list package --outdated --include-prerelease
   ```
 
 * List package references for a specific target framework:
 
-  ```console
+  ```dotnetcli
   dotnet list package --framework netcoreapp3.0
   ```

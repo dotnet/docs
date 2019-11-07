@@ -8,7 +8,7 @@ ms.date: 01/07/2019
 
 The Official .NET Docker images are Docker images created and optimized by Microsoft. They are publicly available in the Microsoft repositories on [Docker Hub](https://hub.docker.com/u/microsoft/). Each repository can contain multiple images, depending on .NET versions, and depending on the OS and versions (Linux Debian, Linux Alpine, Windows Nano Server, Windows Server Core, etc.).
 
-Since .NET Core 2.1, all the .NET Core images, including for ASP.NET Core are available at Docker Hub at the .NET Core image repo: https://hub.docker.com/_/microsoft-dotnet-core/
+Since .NET Core 2.1, all the .NET Core images, including for ASP.NET Core are available at Docker Hub at the .NET Core image repository: <https://hub.docker.com/_/microsoft-dotnet-core/>.
 
 Most image repos provide extensive tagging to help you select not just a specific framework version, but also to choose an OS (Linux distro or Windows version).
 
@@ -38,10 +38,10 @@ Although there are multiple versions of the .NET Core and ASP.NET Core images, t
 
 When you explore the .NET image repositories at Docker Hub, you will find multiple image versions classified or marked with tags. These tags help to decide which one to use, depending on the version you need, like those in the following table:
 
-| Image                                       | Comments                                                                                          |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Image | Comments |
+|-------|----------|
 | mcr.microsoft.com/dotnet/core/aspnet:**2.2** | ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux and Windows (multi-arch) |
-| mcr.microsoft.com/dotnet/core/sdk:**2.2**    | .NET Core, with SDKs included, on Linux and Windows (multi-arch)                                  |
+| mcr.microsoft.com/dotnet/core/sdk:**2.2** | .NET Core, with SDKs included, on Linux and Windows (multi-arch) |
 
 > [!div class="step-by-step"]
 > [Previous](net-container-os-targets.md)

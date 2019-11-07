@@ -44,12 +44,12 @@ The .NET Framework offers role-based security as well as code access security (C
  Depending on the type of application you are building, you should also consider implementing role-based permissions in the database. For more information on role-based security in SQL Server, see [SQL Server Security](./sql/sql-server-security.md).  
   
 ## Assemblies  
- Assemblies form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions for a .NET Framework application. An assembly provides a collection of types and resources that are built to work together and form a logical unit of functionality. To the CLR, a type does not exist outside the context of an assembly. For more information on creating and deploying assemblies, see [Programming with Assemblies](../../app-domains/programming-with-assemblies.md).  
+ Assemblies form the fundamental unit of deployment, version control, reuse, activation scoping, and security permissions for a .NET Framework application. An assembly provides a collection of types and resources that are built to work together and form a logical unit of functionality. To the CLR, a type does not exist outside the context of an assembly. For more information on creating and deploying assemblies, see [Programming with Assemblies](../../../standard/assembly/program.md).  
   
 ### Strong-naming Assemblies  
  A strong name, or digital signature, consists of the assembly's identity, which includes its simple text name, version number, and culture information (if provided), plus a public key and a digital signature. The digital signature is generated from an assembly file using the corresponding private key. The assembly file contains the assembly manifest, which contains the names and hashes of all the files that make up the assembly.  
   
- Strong naming an assembly gives an application or component a unique identity that other software can use to refer explicitly to it. Strong naming guards assemblies against being spoofed by an assembly that contains hostile code. Strong-naming also ensures versioning consistency among different versions of a component. You must strong name assemblies that will be deployed to the Global Assembly Cache (GAC). For more information, see [Creating and Using Strong-Named Assemblies](../../app-domains/create-and-use-strong-named-assemblies.md).  
+ Strong naming an assembly gives an application or component a unique identity that other software can use to refer explicitly to it. Strong naming guards assemblies against being spoofed by an assembly that contains hostile code. Strong-naming also ensures versioning consistency among different versions of a component. You must strong name assemblies that will be deployed to the Global Assembly Cache (GAC). For more information, see [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md).  
   
 ## Partial Trust in ADO.NET 2.0  
  In ADO.NET 2.0, the .NET Framework Data Provider for SQL Server, the .NET Framework Data Provider for OLE DB, the .NET Framework Data Provider for ODBC, and the .NET Framework Data Provider for Oracle can now all run in partially trusted environments. In previous releases of the .NET Framework, only <xref:System.Data.SqlClient> was supported in less than full-trust applications.  
@@ -169,7 +169,7 @@ AllowBlankPassword="False">
   
  You should see this output in the Console window:  
   
-```  
+```output  
 Failed, as expected: <IPermission class="System.Data.SqlClient.  
 SqlClientPermission, System.Data, Version=2.0.0.0,   
   Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1"  
@@ -186,7 +186,7 @@ Failed, as expected: Request failed.
 ## Interoperability with Unmanaged Code  
  Code that runs outside the CLR is called unmanaged code. Therefore, security mechanisms such as CAS cannot be applied to unmanaged code. COM components, ActiveX interfaces, and Windows API functions are examples of unmanaged code. Special security considerations apply when executing unmanaged code so that you do not jeopardize overall application security. For more information, see [Interoperating with Unmanaged Code](../../interop/index.md).  
   
- The .NET Framework also supports backward compatibility to existing COM components by providing access through COM interop. You can incorporate COM components into a .NET Framework application by using COM interop tools to import the relevant COM types. Once imported, the COM types are ready to use. COM interop also enables COM clients to access managed code by exporting assembly metadata to a type library and registering the managed component as a COM component. For more information, see [Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx).  
+ The .NET Framework also supports backward compatibility to existing COM components by providing access through COM interop. You can incorporate COM components into a .NET Framework application by using COM interop tools to import the relevant COM types. Once imported, the COM types are ready to use. COM interop also enables COM clients to access managed code by exporting assembly metadata to a type library and registering the managed component as a COM component. For more information, see [Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100)).  
   
 ## See also
 

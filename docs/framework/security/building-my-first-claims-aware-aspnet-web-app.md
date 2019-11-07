@@ -35,12 +35,12 @@ author: "BrucePerlerMS"
   
  To build your first claims-aware ASP.NET application using WIF, follow the instructions in one of the following:  
   
-- [How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md)  
+- [How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF](how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md)  
   
-- [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](../../../docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)  
+- [How To: Build Claims-Aware ASP.NET Web Forms Application Using WIF](how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md)  
   
-- [How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication](../../../docs/framework/security/claims-aware-aspnet-app-forms-authentication.md)  
+- [How To: Build Claims-Aware ASP.NET Application Using Forms-Based Authentication](claims-aware-aspnet-app-forms-authentication.md)  
   
 ## See also
 
-- [Getting Started With WIF](../../../docs/framework/security/getting-started-with-wif.md)
+- [Getting Started With WIF](getting-started-with-wif.md)

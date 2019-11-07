@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Next function [.NET WMI and performance counters]"
 topic_type:
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Next function
 Retrieves the next property in an enumeration that begins with a call to [BeginEnumeration](beginenumeration.md).

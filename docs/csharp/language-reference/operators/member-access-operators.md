@@ -1,12 +1,14 @@
 ---
 title: "Member access operators - C# reference"
 description: "Learn about C# operators that you can use to access type members."
-ms.date: 05/09/2019
+ms.date: 09/18/2019
 author: pkulikov
 f1_keywords: 
   - "._CSharpKeyword"
   - "[]_CSharpKeyword"
   - "()_CSharpKeyword"
+  - "^_CSharpKeyword"
+  - ".._CSharpKeyword"
 helpviewer_keywords: 
   - "member access operators [C#]"
   - "member access operator [C#]"
@@ -25,15 +27,22 @@ helpviewer_keywords:
   - "method invocation [C#]"
   - "delegate invocation [C#]"
   - "() operator [C#]"
+  - "^ operator [C#]"
+  - "index from end operator [C#]"
+  - "hat operator [C#]"
+  - ".. operator [C#]"
+  - "range operator [C#]"
 ---
 # Member access operators (C# reference)
 
-You might use the following operators when you access a type member:
+You can use the following operators when you access a type member:
 
 - [`.` (member access)](#member-access-operator-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
 - [`?.` and `?[]` (null-conditional operators)](#null-conditional-operators--and-): to perform a member or element access operation only if an operand is non-null
 - [`()` (invocation)](#invocation-operator-): to call an accessed method or invoke a delegate
+- [`^` (index from end)](#index-from-end-operator-): to indicate that the element position is from the end of a sequence
+- [`..` (range)](#range-operator-): to specify a range of indices that you can use to obtain a range of sequence elements
 
 ## Member access operator .
 
@@ -73,11 +82,11 @@ For more information about arrays, see [Arrays](../../programming-guide/arrays/i
 
 ### Indexer access
 
-The following example uses .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
+The following example uses the .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
 
 [!code-csharp-interactive[indexer access](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Indexers)]
 
-Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer arguments can be declared to be of any type.
+Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer parameters can be declared to be of any type.
 
 For more information about indexers, see [Indexers](../../programming-guide/indexers/index.md).
 
@@ -107,7 +116,7 @@ The following example demonstrates the usage of the `?.` and `?[]` operators:
 
 [!code-csharp-interactive[null-conditional operators](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#NullConditional)]
 
-The preceding example also shows the usage of the [null-coalescing operator](null-coalescing-operator.md). You might use the null-coalescing operator to provide an alternative expression to evaluate in case the result of the null-conditional operation is `null`.
+The preceding example also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
 
 ### Thread-safe delegate invocation
 
@@ -143,9 +152,37 @@ You also use parentheses to adjust the order in which to evaluate operations in 
 
 [Cast expressions](type-testing-and-cast.md#cast-operator-), which perform explicit type conversions, also use parentheses.
 
+## Index from end operator ^
+
+Available in C# 8.0 and later, the `^` operator indicates the element position from the end of a sequence. For a sequence of length `length`, `^n` points to the element with offset `length - n` from the start of a sequence. For example, `^1` points to the last element of a sequence and `^length` points to the first element of a sequence.
+
+[!code-csharp[index from end](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#IndexFromEnd)]
+
+As the preceding example shows, expression `^e` is of the <xref:System.Index?displayProperty=nameWithType> type. In expression `^e`, the result of `e` must be implicitly convertible to `int`.
+
+You also can use the `^` operator with the [range operator](#range-operator-) to create a range of indices. For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+
+## Range operator ..
+
+Available in C# 8.0 and later, the `..` operator specifies the start and end of a range of indices as its operands. The left-hand operand is an *inclusive* start of a range. The right-hand operand is an *exclusive* end of a range. Either of operands can be an index from the start or from the end of a sequence, as the following example shows:
+
+[!code-csharp[range examples](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Ranges)]
+
+As the preceding example shows, expression `a..b` is of the <xref:System.Range?displayProperty=nameWithType> type. In expression `a..b`, the results of `a` and `b` must be implicitly convertible to `int` or <xref:System.Index>.
+
+You can omit any of the operands of the `..` operator to obtain an open-ended range:
+
+- `a..` is equivalent to `a..^0`
+- `..b` is equivalent to `0..b`
+- `..` is equivalent to `0..^0`
+
+[!code-csharp[ranges with omitted operands](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#RangesOptional)]
+
+For more information, see [Indices and ranges](../../tutorials/ranges-indexes.md).
+
 ## Operator overloadability
 
-The `.` and `()` operators cannot be overloaded. The `[]` operator is also considered a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
+The `.`, `()`, `^`, and `..` operators cannot be overloaded. The `[]` operator is also considered a non-overloadable operator. Use [indexers](../../programming-guide/indexers/index.md) to support indexing with user-defined types.
 
 ## C# language specification
 
@@ -155,6 +192,8 @@ For more information, see the following sections of the [C# language specificati
 - [Element access](~/_csharplang/spec/expressions.md#element-access)
 - [Null-conditional operator](~/_csharplang/spec/expressions.md#null-conditional-operator)
 - [Invocation expressions](~/_csharplang/spec/expressions.md#invocation-expressions)
+
+For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
 
 ## See also
 

@@ -13,7 +13,7 @@ Returns a <xref:System.Type> object for the specified type. The <xref:System.Typ
   
 ## Syntax  
   
-```  
+```vb  
 GetType(typename)  
 ```  
   

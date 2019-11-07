@@ -28,7 +28,7 @@ The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotn
 
 The following example shows how to install the ML.NET CLI in the default NuGet feed location:
 
-```console
+```dotnetcli
 dotnet tool install -g mlnet
 ```
 
@@ -53,13 +53,13 @@ You should see the help for available commands for the mlnet tool such as the 'a
 
 If you're trying to install a pre-release version or a specific version of the tool, you can specify the [framework](../../standard/frameworks.md) using the following format:
 
-```console
+```dotnetcli
 dotnet tool install -g mlnet --framework <FRAMEWORK>
 ```
 
 You can also check if the package is properly installed by typing the following command:
 
-```console
+```dotnetcli
 dotnet tool list -g
 ```
 
@@ -67,7 +67,7 @@ dotnet tool list -g
 
 Type the following command to uninstall the package from your local machine:
 
-```console
+```dotnetcli
 dotnet tool uninstall mlnet -g
 ```
 
@@ -75,7 +75,7 @@ dotnet tool uninstall mlnet -g
 
 Type the following command to update the package from your local machine:
 
-```console
+```dotnetcli
 dotnet tool update -g mlnet
 ```
 
@@ -95,7 +95,7 @@ On the machine where you'd like to enable completion, you'll need to do two thin
 
 1. Install the `dotnet-suggest` global tool by running the following command:
 
-    ```console
+    ```dotnetcli
     dotnet tool install dotnet-suggest -g
     ```
 

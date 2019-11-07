@@ -168,7 +168,7 @@ As stated previously, you can implicitly type a local variable (but not class me
 
 In some cases, it is inconvenient to create a named type for simple sets of related values that you do not intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous Types](../classes-and-structs/anonymous-types.md).
 
-Ordinary value types cannot have a value of [null](../../language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable value types](../nullable-types/index.md).
+Ordinary value types cannot have a value of [null](../../language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).
 
 ## Related sections
 

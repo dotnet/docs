@@ -1171,14 +1171,6 @@
       href: programming-guide/namespaces/using-namespaces.md
     - name: "How to: use the My namespace"
       href: programming-guide/namespaces/how-to-use-the-my-namespace.md
-  - name: Nullable value types
-    items:
-    - name: Overview
-      href: programming-guide/nullable-types/index.md
-    - name: Using nullable value types
-      href: programming-guide/nullable-types/using-nullable-types.md
-    - name: "How to: identify a nullable value type"
-      href: programming-guide/nullable-types/how-to-identify-a-nullable-type.md
   - name: Unsafe Code and Pointers
     items:
     - name: Overview and restrictions
@@ -1333,6 +1325,9 @@
           href: language-reference/keywords/enum.md
         - name: struct
           href: language-reference/keywords/struct.md
+        - name: Nullable value types
+          href: language-reference/builtin-types/nullable-value-types.md
+          displayName: "? token, ? symbol"
       - name: Reference types
         items:
         - name: Features of reference types

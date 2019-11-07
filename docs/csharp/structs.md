@@ -47,21 +47,9 @@ Structs share most of the same syntax as classes, although structs are more limi
   
 - A struct can implement interfaces.
 
-## Literal values
-
-In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer the `double` type for the literal. For more information about which types can be specified with letter suffixes, see the reference pages for individual types in [Value Types](./language-reference/keywords/value-types.md).  
-  
-Because literals are typed, and all types derive ultimately from <xref:System.Object>, you can write and compile code such as the following:  
-  
-[!code-csharp[Literal Values](../../samples/snippets/csharp/concepts/structs/literals.cs)]
-
-The last two examples demonstrate language features introduced in C# 7.0. The first allows you to use an underscore character as a *digit separator* inside numeric literals. You can put them wherever you want between digits to improve readability. They have no effect on the value.
-
-The second demonstrates *binary literals*, which allow you to specify bit patterns directly instead of using hexadecimal notation.
-
 ## Nullable value types
 
-Ordinary value types cannot have a value of [null](language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](./language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null or undefined. For more information, see [Nullable value types](programming-guide/nullable-types/index.md).
+Ordinary value types cannot have a value of [null](language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](./language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null or undefined. For more information, see [Nullable value types](language-reference/builtin-types/nullable-value-types.md).
 
 ## See also
 

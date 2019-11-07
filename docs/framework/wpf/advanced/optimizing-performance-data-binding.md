@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
 ---
 # Optimizing Performance: Data Binding
-[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of CLR objects and [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)].  
+[!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of CLR objects and XML.  
   
  This topic provides data binding performance recommendations.  
 
@@ -63,7 +63,7 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
   
 <a name="Do_not_Convert_CLR_objects_to_Xml_Just_For_Data_Binding"></a>   
 ## Do not Convert CLR objects to XML Just for Data Binding.  
- [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to data bind to [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] content; however, data binding to [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] content is slower than data binding to CLR objects. Do not convert CLR object data to XML if the only purpose is for data binding.  
+ [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to data bind to XML content; however, data binding to XML content is slower than data binding to CLR objects. Do not convert CLR object data to XML if the only purpose is for data binding.  
   
 ## See also
 

@@ -225,7 +225,7 @@ public class Counter
 
    public override string ToString()
    {
-      return String.Format("{0}). ", ctr);
+      return $"{ctr}). ";
    }
 
    public UInt32 Value
@@ -271,7 +271,7 @@ Public Class Counter
    End Sub
 
    Public Overrides Function ToString() As String
-      Return String.Format("{0}). ", ctr)
+      Return $"{ctr}). "
    End Function
 
    Public ReadOnly Property Value As UInt32

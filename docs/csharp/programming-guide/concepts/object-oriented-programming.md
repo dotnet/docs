@@ -444,7 +444,7 @@ For more information, see:
 
 - [Delegates](../delegates/index.md)
 
-- [delegate](../../language-reference/keywords/delegate.md)
+- [delegate](../../language-reference/builtin-types/reference-types.md)
 
 ## See also
 

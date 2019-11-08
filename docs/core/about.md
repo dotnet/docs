@@ -10,7 +10,7 @@ ms.date: 09/17/2019
 - **Cross-platform:** Runs on Windows, macOS, and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
 - **Consistent across architectures:** Runs your code with the same behavior on multiple architectures, including x64, x86, and ARM.
 - **Command-line tools:**  Includes easy-to-use command-line tools that can be used for local development and in continuous-integration scenarios.
-- **Flexible deployment:** Can be included in your app or installed side-by-side (user-wide or system-wide installations). Can be used with [Docker containers](docker/index.md).
+- **Flexible deployment:** Can be included in your app or installed side-by-side (user-wide or system-wide installations). Can be used with [Docker containers](docker/introduction.md).
 - **Compatible:** .NET Core is compatible with .NET Framework, Xamarin, and Mono, via [.NET Standard](../standard/net-standard.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. .NET Core is a [.NET Foundation](https://dotnetfoundation.org/) project.
 - **Supported by Microsoft:** .NET Core is supported by Microsoft, per [.NET Core Support](https://dotnet.microsoft.com/platform/support/policy).

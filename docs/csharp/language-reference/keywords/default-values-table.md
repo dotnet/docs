@@ -20,7 +20,7 @@ The following table shows the default values of C# types:
 |[char](char.md)|`'\0'` (U+0000)|
 |[enum](enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
 |[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
-|Any [nullable value type](../../programming-guide/nullable-types/index.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of the nullable value type.|
+|Any [nullable value type](../builtin-types/nullable-value-types.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of a nullable value type.|
 
 Use the [default operator](../operators/default.md) to produce the default value of a type, as the following example shows:
 

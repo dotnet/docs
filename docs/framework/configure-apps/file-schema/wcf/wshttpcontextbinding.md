@@ -102,5 +102,5 @@ Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that require
 - [Bindings](../../../wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](bindings.md)
 - [\<wsHttpBinding>](wshttpbinding.md)

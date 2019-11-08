@@ -6,8 +6,8 @@ helpviewer_keywords:
   - "smart tags"
   - "designer actions"
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Perform Common Tasks Using Smart Tags

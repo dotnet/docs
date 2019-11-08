@@ -23,26 +23,26 @@ Sometimes developers must have full control of how data is returned from a servi
   
 2. Implement the service contract. The contract has only one operation (`GetImage`). This method generates a bitmap and then save it to a <xref:System.IO.MemoryStream> in .jpg format. The operation then returns that stream to the caller.  
   
-    ```  
-    public class Service : IImageServer  
-       {  
-           public Stream GetImage(int width, int height)  
-           {  
-               Bitmap bitmap = new Bitmap(width, height);  
-               for (int i = 0; i < bitmap.Width; i++)  
-               {  
-                   for (int j = 0; j < bitmap.Height; j++)  
-                   {  
-                       bitmap.SetPixel(i, j, (Math.Abs(i - j) < 2) ? Color.Blue : Color.Yellow);  
-                   }  
-               }  
-               MemoryStream ms = new MemoryStream();  
-               bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);  
-               ms.Position = 0;  
-               WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";  
-               return ms;  
-           }  
-       }  
+    ```csharp
+    public class Service : IImageServer
+    {
+        public Stream GetImage(int width, int height)
+        {
+            Bitmap bitmap = new Bitmap(width, height);
+            for (int i = 0; i < bitmap.Width; i++)
+            {
+                for (int j = 0; j < bitmap.Height; j++)
+                {
+                    bitmap.SetPixel(i, j, (Math.Abs(i - j) < 2) ? Color.Blue : Color.Yellow);
+                }
+            }
+            MemoryStream ms = new MemoryStream();
+            bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            ms.Position = 0;
+            WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";
+            return ms;
+        }
+    }
     ```  
   
      Notice the second to last line of code: `WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";`  
@@ -53,7 +53,7 @@ Sometimes developers must have full control of how data is returned from a servi
   
 1. Create a console application to host the service.  
   
-    ```  
+    ```csharp
     class Program  
     {  
         static void Main(string[] args)  

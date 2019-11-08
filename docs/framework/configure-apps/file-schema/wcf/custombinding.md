@@ -294,7 +294,7 @@ For a discussion on how to use a custom binding to modify a system-provided bind
 - <xref:System.ServiceModel.Channels.BindingElement>
 - <xref:System.ServiceModel.Configuration.BindingsSection>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](bindings.md)
 - [Bindings](../../../wcf/bindings.md)
 - [Extending Bindings](../../../wcf/extending/extending-bindings.md)
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)

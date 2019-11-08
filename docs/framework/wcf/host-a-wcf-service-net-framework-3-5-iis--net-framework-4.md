@@ -16,7 +16,7 @@ Unhandled Exception: System.ServiceModel.ProtocolException: The content type tex
 The application domain or application pool is currently running version 4.0 or later of the .NET Framework. This can occur if IIS settings have been set to 4.0 or later for this Web application, or if you are using version 4.0 or later of the ASP.NET Web Development Server. The <compilation> element in the Web.config file for this Web application does not contain the required 'targetFrameworkMoniker' attribute for this version of the .NET Framework (for example, '<compilation targetFrameworkMoniker=".NETFramework,Version=v4.0">'). Update the Web.config file with this attribute, or configure the Web application to use a different version of the .NET Framework.  
 ```  
   
- These errors occur because the application domain IIS is running within is running [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] and the WCF service is expecting to run under [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]. This topic explains the modifications required to get the service to run.  
+ These errors occur because the application domain IIS is running within is running [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] and the WCF service is expecting to run under .NET Framework 3.5. This topic explains the modifications required to get the service to run.  
   
  Next find the <`compilers`> element and change the CompilerVersion provider option to have a value of 4.0. By default, there are two <`compiler`> elements under the <`compilers`> element. You must update the CompilerVersion provider option for both as shown in the following example.  
   

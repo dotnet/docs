@@ -1,13 +1,13 @@
 ---
-title: "Runtime configuration with environment variables"
-description: "Use environment variables to configure the runtime behavior of .NET Core applications."
-ms.date: "06/19/2019"
+title: "Run-time configuration with environment variables"
+description: "Use environment variables to configure the run-time behavior of .NET Core apps."
+ms.date: "11/08/2019"
 ---
-# Runtime configuration with environment variables
+# Run-time configuration with environment variables
 
-.NET Core supports a number of environment variables that you can use to configure your applications. 
+.NET Core supports a number of environment variables that you can use to configure your applications.
 
-The following sections list selected supported environment variables by category. For a complete list of supported, as well as unsupported and internal environment variables, see [Host Configuration Knobs](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/clr-configuration-knobs.md).
+The following sections list selected supported environment variables by category. For a complete list of supported, as well as unsupported and internal environment variables, see [Configuration knobs](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/clr-configuration-knobs.md).
 
 > [!NOTE]
 > This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to add or correct the information. For information on submitting pull requests for the dotnet/docs repo, see the [contributor's guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
@@ -32,7 +32,7 @@ The following sections list selected supported environment variables by category
 |Variable name|Variable value|Description|
 |--|--|--|
 |`DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT`|0 or 1|Starting with .NET Core 3.0, indicates whether support for the HTTP/2 protocol is enabled (1) or disabled (0, the default value).|
-|`DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`|0 or 1|Enables the use of <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> (1, the default value) or of the legacy <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> (0) with high-level networking APIs.|
+|`DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER`|0 or 1|`1`, the default value, enables the use of <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> with high-level networking APIs. `0` enables the implementation of <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> that's based on [libcurl](https://curl.haxx.se/libcurl/).|
 
 ## Profiling
 

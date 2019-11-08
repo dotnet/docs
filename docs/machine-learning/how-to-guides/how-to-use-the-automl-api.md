@@ -1,7 +1,7 @@
 ---
 title: How to use the ML.NET automated ML API
 description: The ML.NET automated ML API automates the model building process and generates a model ready for deployment. Learn the options that you can use to configure automated machine learning tasks.
-ms.date: 04/24/2019
+ms.date: 11/7/2019
 ms.custom: mvc,how-to
 ---
 

@@ -31,7 +31,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     ```
 
     > [!WARNING]
-    > Running the command `aspnet_regiis –i –enable` will make the Default App Pool run using [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], which may produce incompatibility issues for other applications on the same computer.
+    > Running the command `aspnet_regiis –i –enable` will make the Default App Pool run using .NET Framework 4, which may produce incompatibility issues for other applications on the same computer.
 
 5. Follow the [Firewall Instructions](../../../../docs/framework/wcf/samples/firewall-instructions.md) for enabling the ports used by the samples.
 

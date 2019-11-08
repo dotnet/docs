@@ -27,10 +27,10 @@ Windows Workflow Foundation (WF) in .NET Framework version 4 changes several dev
 - New messaging activities such as <xref:System.ServiceModel.Activities.SendContent> and <xref:System.ServiceModel.Activities.ReceiveReply>.  
   
 ## Explicit Activity Data Model  
- [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] includes new options for storing or moving data. Data can be stored in an activity using <xref:System.Activities.Variable>. When moving data in and out of an activity, specialized argument types are used to determine which direction data is moving. These types are <xref:System.Activities.InArgument>, <xref:System.Activities.InOutArgument>, and <xref:System.Activities.OutArgument>. For more information, see [Windows Workflow Foundation Data Model](data-model.md).  
+ .NET Framework 4 includes new options for storing or moving data. Data can be stored in an activity using <xref:System.Activities.Variable>. When moving data in and out of an activity, specialized argument types are used to determine which direction data is moving. These types are <xref:System.Activities.InArgument>, <xref:System.Activities.InOutArgument>, and <xref:System.Activities.OutArgument>. For more information, see [Windows Workflow Foundation Data Model](data-model.md).  
   
 ## Enhanced Hosting, Persistence, and Tracking Options  
- [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] contains persistence enhancements such as the following:  
+ .NET Framework 4 contains persistence enhancements such as the following:  
   
 - There are more options for running workflows, including <xref:System.ServiceModel.Activities.WorkflowServiceHost>, <xref:System.Activities.WorkflowApplication>, and <xref:System.Activities.WorkflowInvoker>.  
   

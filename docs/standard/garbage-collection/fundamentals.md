@@ -50,7 +50,7 @@ The following list summarizes important CLR memory concepts.
 
 - You can run out of memory if there isn't enough virtual address space to reserve or physical space to commit.
 
-The page file is used even if physical memory pressure (that is, demand for physical memory) is low. The first time physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it's needed, so it's possible to encounter paging in situations where the physical memory pressure is very low.
+The page file is used even if physical memory pressure (that is, demand for physical memory) is low. The first time physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it's needed, so it's possible to encounter paging in situations where the physical memory pressure is low.
 
 ## Conditions for a garbage collection
 
@@ -103,7 +103,7 @@ Garbage collections occur on specific generations as conditions warrant. Collect
 
 Objects that are not reclaimed in a garbage collection are known as survivors and are promoted to the next generation. Objects that survive a generation 0 garbage collection are promoted to generation 1; objects that survive a generation 1 garbage collection are promoted to generation 2; and objects that survive a generation 2 garbage collection remain in generation 2.
 
-When the garbage collector detects that the survival rate is high in a generation, it increases the threshold of allocations for that generation. The next collection gets a substantial size of reclaimed memory. The CLR continually balances two priorities: not letting an application's working set get too big by delaying garbage collection and not letting the garbage collection run too frequently.
+When the garbage collector detects that the survival rate is high in a generation, it increases the threshold of allocations for that generation. The next collection gets a substantial size of reclaimed memory. The CLR continually balances two priorities: not letting an application's working set get too large by delaying garbage collection and not letting the garbage collection run too frequently.
 
 ### Ephemeral generations and segments
 
@@ -111,7 +111,7 @@ Because objects in generations 0 and 1 are short-lived, these generations are kn
 
 Ephemeral generations must be allocated in the memory segment that is known as the ephemeral segment. Each new segment acquired by the garbage collector becomes the new ephemeral segment and contains the objects that survived a generation 0 garbage collection. The old ephemeral segment becomes the new generation 2 segment.
 
-The size of the ephemeral segment varies depending on whether a system is 32- or 64-bit, and on the type of garbage collector it is running. Default values are shown in the following table.
+The size of the ephemeral segment varies depending on whether a system is 32-bit or 64-bit, and on the type of garbage collector it is running. Default values are shown in the following table.
 
 ||32-bit|64-bit|
 |-|-------------|-------------|
@@ -140,7 +140,7 @@ A garbage collection has the following phases:
 
 The garbage collector uses the following information to determine whether objects are live:
 
-- **Stack roots**. Stack variables provided by the just-in-time (JIT) compiler and stack walker. Note that JIT optimizations can lengthen or shorten regions of code within which stack variables are reported to the garbage collector.
+- **Stack roots**. Stack variables provided by the just-in-time (JIT) compiler and stack walker. JIT optimizations can lengthen or shorten regions of code within which stack variables are reported to the garbage collector.
 
 - **Garbage collection handles**. Handles that point to managed objects and that can be allocated by user code or by the common language runtime.
 
@@ -202,7 +202,7 @@ The following are threading and performance considerations for server garbage co
 
 - Because multiple garbage collection threads work together, server garbage collection is faster than workstation garbage collection on the same size heap.
 
-- Server garbage collection often has larger size segments. However, this is only a generalization: segment size is implementation specific and is subject to change. Don't make assumptions about the size of segments allocated by the garbage collector when tuning your app.
+- Server garbage collection often has larger size segments. However, this is only a generalization: segment size is implementation-specific and is subject to change. Don't make assumptions about the size of segments allocated by the garbage collector when tuning your app.
 
 - Server garbage collection can be resource-intensive. For example, if you have 12 processes running on a computer that has 4 processors, there will be 48 dedicated garbage collection threads if they are all using server garbage collection. In a high memory-load situation, if all the processes start doing garbage collection, the garbage collector has 48 threads to schedule.
 

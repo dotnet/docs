@@ -15,7 +15,7 @@ XML documentation comments, like all other comments, are ignored by the compiler
 
 You can generate the XML file at compile time by doing one of the following:
 
-- If you are developing an application with .NET Core from the command line, you can add `GenerateDocumentationFile` to the `<PropertyGroup>` section of your .csproj project file. You also can specify the path to the documentation file directly using [`DocumentationFile` element](/visualstudio/msbuild/common-msbuild-project-properties). The following example generates an XML file in the project directory with the same root filename as the assembly:
+- If you are developing an application with .NET Core from the command line, you can add `GenerateDocumentationFile` to the `<PropertyGroup>` section of your .csproj project file. You can also specify the path to the documentation file directly using [`DocumentationFile` element](/visualstudio/msbuild/common-msbuild-project-properties). The following example generates an XML file in the project directory with the same root filename as the assembly:
 
    ```xml
    <GenerateDocumentationFile>true</GenerateDocumentationFile>

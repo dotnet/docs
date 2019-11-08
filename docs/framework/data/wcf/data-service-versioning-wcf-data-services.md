@@ -59,7 +59,7 @@ The Open Data Protocol (OData) enables you to create data services so that clien
 |OData Protocol Version|Support introduced in…|
 |-----------------------------------------------------------------------------------|----------------------------|
 |Version 1|-   [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] Service Pack 1 (SP1)<br />-   Silverlight version 3|
-|Version 2|-   [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)]<br />-   An update to [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] SP1. You can download and install the update from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=158125).<br />-   Silverlight version 4|
+|Version 2|-   .NET Framework version 4<br />-   An update to [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] SP1. You can download and install the update from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=158125).<br />-   Silverlight version 4|
 |Version 3|-   You can download and install a pre-release version that supports OData version 3 from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=203885).|
 
 ### Metadata Versions

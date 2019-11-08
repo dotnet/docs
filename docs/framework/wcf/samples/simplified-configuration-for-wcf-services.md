@@ -6,7 +6,7 @@ ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
 # Simplified Configuration for WCF Services
 This sample demonstrates how to implement and configure a typical service and client using Windows Communication Foundation (WCF). This sample is the basis for all other basic technology samples.  
   
- This service, which exposes an endpoint for communicating with the service, uses the simplified configuration in [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)]. Prior to [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], the endpoint is typically defined in a configuration file (Web.config), as shown in the following example configuration code.  
+ This service, which exposes an endpoint for communicating with the service, uses the simplified configuration in .NET Framework version 4. Prior to [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], the endpoint is typically defined in a configuration file (Web.config), as shown in the following example configuration code.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  

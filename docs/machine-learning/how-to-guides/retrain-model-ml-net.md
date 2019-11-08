@@ -29,7 +29,7 @@ The following algorithms are re-trainable in ML.NET:
 
 ## Load pre-trained model
 
-First, load the pre-trained model into your application. To learn more about loading training pipelines and models, see the related [how-to article](./consuming-model-ml-net.md).
+First, load the pre-trained model into your application. To learn more about loading training pipelines and models, see [Save and load a trained model](save-load-machine-learning-models-ml-net.md).
 
 ```csharp
 // Create MLContext

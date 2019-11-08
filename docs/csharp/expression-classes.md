@@ -2,6 +2,7 @@
 title: Framework Types Supporting Expression Trees
 description: Learn about framework types supporting expression trees, creating expression trees, and techniques for working with expression tree APIs.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
 ---
 

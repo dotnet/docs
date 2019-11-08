@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "size [Windows Forms], controls"
   - "Windows Forms controls, size"
 ms.assetid: d2dba441-a8c0-4705-b8e8-2e5d86d6e7ec
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Resize controls on Windows Forms

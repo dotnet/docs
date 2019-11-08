@@ -41,7 +41,7 @@ End If
 
 This example produces the following output:
 
-```
+```console
 r1 and r2 have names that refer to the same instance.
 The name of r1 and the name in 'n' refer to the same instance.
 ```

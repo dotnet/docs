@@ -13,7 +13,7 @@ Used to release array variables and deallocate the memory used for their element
   
 ## Syntax  
   
-```  
+```vb  
 Erase arraylist  
 ```  
   

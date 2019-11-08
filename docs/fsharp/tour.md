@@ -5,7 +5,7 @@ ms.date: 11/06/2018
 ---
 # Tour of F\#
 
-The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](./tutorials/getting-started/index.md).
+The best way to learn about F# is to read and write F# code. This article will act as a tour through some of the key features of the F# language and give you some code snippets that you can execute on your machine. To learn about setting up a development environment, check out [Getting Started](get-started/index.md).
 
 There are two primary concepts in F#: functions and types.  This tour will emphasize features of the language which fall into these two concepts.
 
@@ -25,7 +25,7 @@ The most fundamental pieces of any F# program are ***functions*** organized into
 
 ## Numbers, Booleans, and Strings
 
-As a .NET language, F# supports the same underlying [primitive types](./language-reference/primitive-types.md) that exist in .NET.
+As a .NET language, F# supports the same underlying [primitive types](language-reference/basic-types.md) that exist in .NET.
 
 Here is how various numeric types are represented in F#:
 
@@ -185,7 +185,7 @@ Classes are great for a huge number of reasons, such as when you need to represe
 
 ## Next Steps
 
-Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](./tutorials/getting-started/index.md) to learn how to set up your development environment and write some code.
+Now that you've seen some of the primary features of the language, you should be ready to write your first F# programs!  Check out [Getting Started](get-started/index.md) to learn how to set up your development environment and write some code.
 
 The next steps for learning more can be whatever you like, but we recommend [Introduction to Functional Programming in F#](./introduction-to-functional-programming/index.md) to get comfortable with core Functional Programming concepts.  These will be essential in building robust programs in F#.
 

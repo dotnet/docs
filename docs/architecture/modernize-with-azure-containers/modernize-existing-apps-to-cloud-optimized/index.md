@@ -11,7 +11,7 @@ To take advantage of the benefits of the cloud and new technologies like contain
 
 Partially modernizing an app doesn’t necessarily mean a full migration and rearchitecture. You can initially modernize your existing applications with important but easy to do modernization. You can maintain your current code base, written in existing .NET Framework versions, with any Windows and IIS dependencies. Figure 4-1 highlights how Cloud-Optimized apps are positioned in Azure application modernization maturity models.
 
-![Positioning Cloud-Optimized applications](./media/image1.png)
+![Diagram of how to position cloud-optimized applications.](./media/index/position-cloud-optimized-application.png)
 
 **Figure 4-1.** Positioning Cloud-Optimized applications
 

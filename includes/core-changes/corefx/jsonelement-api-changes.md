@@ -25,14 +25,13 @@ In .NET Core 3.0 Preview 7, <xref:System.Text.Json.JsonElement> APIs have change
 
 1. `WriteValue` was renamed as <xref:System.Text.Json.JsonElement.WriteTo%2A>. This affects code such as the following:
 
-```csharp
-using (JsonDocument doc = JsonDocument.Parse(jsonString))
-{
-    JsonElement root = doc.RootElement;
-    root.WriteValue(writer);
-}
-
-```
+   ```csharp
+    using (JsonDocument doc = JsonDocument.Parse(jsonString))
+    {
+        JsonElement root = doc.RootElement;
+        root.WriteValue(writer);
+    }
+    ```
 
 1. <xref:System.Text.Json.JsonElement.WriteTo%2A> now throws an <xref:System.ArgumentNullException> when its method parameter is `null`.
 

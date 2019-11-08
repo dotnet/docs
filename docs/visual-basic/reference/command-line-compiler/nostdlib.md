@@ -12,7 +12,7 @@ Causes the compiler not to automatically reference the standard libraries.
   
 ## Syntax  
   
-```  
+```console  
 -nostdlib  
 ```  
   

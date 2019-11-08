@@ -2,8 +2,6 @@
 title: ".NET Native Reflection API Reference"
 ms.date: "03/30/2017"
 ms.assetid: 0429c049-22a3-4ba1-9cc8-f6ee91e31d9c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Native Reflection API Reference
 .NET Native includes three new exception types: [System.Runtime.CompilerServices.MissingInteropDataException](missinginteropdataexception-class-net-native.md), [System.Reflection.MissingMetadataException](missingmetadataexception-class-net-native.md), and [System.Reflection.MissingRuntimeArtifactException](missingruntimeartifactexception-class-net-native.md). Note the following about all three exception types:  

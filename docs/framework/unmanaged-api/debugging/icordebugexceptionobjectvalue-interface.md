@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 43416dd5-8892-4106-9f59-f9143b19ddb4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionObjectValue Interface
 Extends the "ICorDebugObjectValue" interface to provide stack trace information from a managed exception object.  

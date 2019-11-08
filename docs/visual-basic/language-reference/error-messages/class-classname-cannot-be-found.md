@@ -27,4 +27,4 @@ Class '\<classname>' cannot be found. This condition is usually the result of a 
   
 ## See also
 
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

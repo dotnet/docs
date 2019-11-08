@@ -12,8 +12,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "EInitializeNewDomainFlags enumeration [.NET Framework hosting]"
 ms.assetid: 3a120ab2-f5ef-4c9b-8595-d3ed7247c342
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EInitializeNewDomainFlags Enumeration
 Enables the host to provide the runtime with information about the initialization of an application domain.  

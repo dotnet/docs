@@ -19,7 +19,7 @@ An *entity container* is a logical grouping of [entity sets](entity-set.md), [as
   
  ![Example model with three entity types](./media/entity-container/example-model-three-entity-types.gif)  
   
- Although the diagram does not convey entity container information, the conceptual model must define an entity container. The [ADO.NET Entity Framework](./ef/index.md) uses a DSL called conceptual schema definition language ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines an entity container for the conceptual model shown in the diagram above. Note that the entity container name is defined in an XML attribute.  
+ Although the diagram does not convey entity container information, the conceptual model must define an entity container. The [ADO.NET Entity Framework](./ef/index.md) uses a DSL called conceptual schema definition language ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) to define conceptual models. The following CSDL defines an entity container for the conceptual model shown in the diagram above. Note that the entity container name is defined in an XML attribute.  
   
  [!code-xml[EDM_Example_Model#EntityContainerExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entitycontainerexample)]  
   

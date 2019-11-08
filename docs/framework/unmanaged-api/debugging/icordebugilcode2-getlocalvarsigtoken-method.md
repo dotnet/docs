@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 17665b77-1342-4115-94fd-9f45b0ecfb0f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILCode2::GetLocalVarSigToken Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

@@ -2,8 +2,6 @@
 title: "ISymUnmanagedWriter5::MapTokenToSourceSpan Method"
 ms.date: "03/30/2017"
 ms.assetid: d0fbbf61-71c6-4fb1-8c9f-d619ca5d7d68
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedWriter5::MapTokenToSourceSpan Method
 Maps the given metadata token to the given source line span in the specified source file.  

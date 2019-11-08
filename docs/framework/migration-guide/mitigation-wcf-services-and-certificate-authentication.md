@@ -2,8 +2,6 @@
 title: "Mitigation: WCF Services and Certificate Authentication"
 ms.date: "03/30/2017"
 ms.assetid: ef19c91a-b9df-4bf0-a28e-eb1e99c4bc95
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: WCF Services and Certificate Authentication
 
@@ -41,7 +39,7 @@ You can work around this issue so that a WCF client can connect to a WCF server 
                   </binding>
               </netTcpBinding>
           </bindings>
-      </system.ServiceModel>
+      </system.serviceModel>
   </configuration>
   ```
 
@@ -52,4 +50,4 @@ You can work around this issue so that a WCF client can connect to a WCF server 
 
 ## See also
 
-- [Runtime Changes](runtime-changes-in-the-net-framework-4-6.md)
+- [Application compatibility](application-compatibility.md)

@@ -19,7 +19,7 @@ A statement in the `Set` procedure of a property definition stores a value into 
   
  The following example illustrates the approach that can cause this error, followed by the recommended approach.  
   
-```  
+```vb  
 Public Class illustrateProperties  
 ' The code in the following property causes this error.  
     Public Property badProp() As Char  

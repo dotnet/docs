@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7263f9a9-4c0b-4d82-a181-288873fb2b18
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::ChangeConnection Method
 Notifies the debugger that the set of tasks associated with the specified connection has changed.  

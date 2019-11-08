@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f15b5b78-94f4-4eb9-b3b3-a621272f357c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval2::NewParameterizedObjectNoConstructor Method
 Instantiates a new parameterized type object of the specified class without attempting to call a constructor method.  

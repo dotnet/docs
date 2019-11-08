@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c3601255-d894-4d7c-b1df-c31334551700
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::LocksHeldByLogicalThread Method
 Retrieves the number of locks that current thread holds.  

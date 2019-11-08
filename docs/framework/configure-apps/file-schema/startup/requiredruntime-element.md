@@ -14,9 +14,9 @@ ms.assetid: 9fa1639e-beb8-43be-b7a4-12f7b229c34b
 
 Specifies that the application supports only version 1.0 of the common language runtime. This element is deprecated and should no longer be used. The [`supportedRuntime`](supportedruntime-element.md) element should be used instead.
 
-\<configuration>
-\<startup>
-\<requiredRuntime>
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<startup>**](startup-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<requiredRuntime>**  
 
 ## Syntax
 

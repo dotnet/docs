@@ -12,9 +12,9 @@ ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 # \<webRequestModules> Element (Network Settings)
 Specifies modules to use to request information from network hosts.  
   
- \<configuration>  
-\<system.net>  
-\<webRequestModules>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;\<webRequestModules>  
   
 ## Syntax  
   

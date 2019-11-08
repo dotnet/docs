@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "marshaling, MsgBox sample"
   - "data marshaling, MsgBox sample"
 ms.assetid: 9e0edff6-cc0d-4d5c-a445-aecf283d9c3a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # MsgBox Sample
 This sample demonstrates how to pass string types by value as In parameters and when to use the <xref:System.Runtime.InteropServices.DllImportAttribute.EntryPoint>, <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet>, and <xref:System.Runtime.InteropServices.DllImportAttribute.ExactSpelling> fields.  

@@ -22,7 +22,7 @@ Divides two numbers and returns a floating-point result.
   
 ## Syntax  
   
-```  
+```vb  
 expression1 / expression2  
 ```  
   

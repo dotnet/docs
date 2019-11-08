@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: e2f05155-9bef-4e11-b703-7f05890665ca
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget Interface
 Provides methods for interaction with a target item of the common language runtime (CLR).  

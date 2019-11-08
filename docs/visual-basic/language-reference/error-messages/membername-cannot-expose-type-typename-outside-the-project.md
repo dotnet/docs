@@ -13,7 +13,7 @@ A variable, procedure parameter, or function return is exposed outside its conta
   
  The following skeleton code shows a situation that generates this error.  
   
-```  
+```vb  
 Private Class privateClass  
 End Class  
 Public Class mainClass  

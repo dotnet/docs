@@ -14,7 +14,7 @@ Associates an event with an event handler at run time.
   
 ## Syntax  
   
-```  
+```vb  
 AddHandler event, AddressOf eventhandler  
 ```  
   

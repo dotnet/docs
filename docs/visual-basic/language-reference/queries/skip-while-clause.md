@@ -14,7 +14,7 @@ Bypasses elements in a collection as long as a specified condition is `true` and
   
 ## Syntax  
   
-```  
+```vb  
 Skip While expression  
 ```  
   

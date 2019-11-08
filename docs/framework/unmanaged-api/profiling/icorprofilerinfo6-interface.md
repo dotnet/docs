@@ -8,8 +8,6 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: 6f2bb148-1e2b-4e45-a5a5-0ceddc40064b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo6 Interface
 [Supported in the .NET Framework 4.6 and later versions]  

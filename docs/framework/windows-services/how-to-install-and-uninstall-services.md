@@ -15,7 +15,7 @@ author: "ghogen"
 ---
 # How to: Install and uninstall Windows services
 
-If you’re developing a Windows service with the .NET Framework, you can quickly install your service app by using the [*InstallUtil.exe*](../tools/installutil-exe-installer-tool.md) command-line utility. Developers who want to release a Windows service that users can install and uninstall should use InstallShield. For more information, see [Create an installer package (Windows client)](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
+If you’re developing a Windows service with the .NET Framework, you can quickly install your service app by using the [*InstallUtil.exe*](../tools/installutil-exe-installer-tool.md) command-line utility or [PowerShell](/powershell/scripting/overview). Developers who want to release a Windows service that users can install and uninstall should use InstallShield. For more information, see [Create an installer package (Windows client)](https://docs.microsoft.com/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-client).
 
 > [!WARNING]
 > If you want to uninstall a service from your computer, don’t follow the steps in this article. Instead, find out which program or software package installed the service, and then choose **Apps** in Settings to uninstall that program. Note that many services are integral parts of Windows; if you remove them, you might cause system instability.
@@ -27,7 +27,7 @@ You can't run Windows service projects directly from the Visual Studio developme
 > [!TIP]
 > You can use **Server Explorer** to verify that you've installed or uninstalled your service. For more information, see [How to use Server Explorer in Visual Studio](https://support.microsoft.com/help/316649/how-to-use-the-server-explorer-in-visual-studio-net-and-visual-studio).
 
-### Install your service manually
+### Install your service manually using InstallUtil.exe utility
 
 1. From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**.
 
@@ -47,7 +47,7 @@ You can't run Windows service projects directly from the Visual Studio developme
      - For the 32-bit version of the .NET Framework 4 or 4.5 and later, if your Windows installation directory is *C:\Windows*, the default path is *C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe*.
      - For the 64-bit version of the .NET Framework 4 or 4.5 and later, the default path is *C:\Windows\Microsoft.NET\Framework64\v4.0.30319\InstallUtil.exe*.
 
-### Uninstall your service manually
+### Uninstall your service manually using InstallUtil.exe utility
 
 1. From the **Start** menu, select the **Visual Studio \<*version*>** directory, then select **Developer Command Prompt for VS \<*version*>**.
 
@@ -60,6 +60,34 @@ You can't run Windows service projects directly from the Visual Studio developme
     ```
 
 3. After the executable for a service is deleted, the service might still be present in the registry. If that's the case, use the command [sc delete](/windows-server/administration/windows-commands/sc-delete) to remove the entry for the service from the registry.
+
+### Install your service manually using PowerShell
+
+1. From the **Start** menu, select the **Windows PowerShell** directory, then select **Windows PowerShell**.
+
+2. Access the directory where your project's compiled executable file is located.
+
+3. Run the [**New-Service**](/powershell/module/microsoft.powershell.management/new-service) cmdlet with the with your project's output and a service name as parameters:
+
+    ```powershell
+    New-Service -Name "YourServiceName" -BinaryPathName <yourproject>.exe
+    ```
+
+### Uninstall your service manually using PowerShell
+
+1. From the **Start** menu, select the **Windows PowerShell** directory, then select **Windows PowerShell**.
+
+2. Run the [**Remove-Service**](/powershell/module/microsoft.powershell.management/remove-service) cmdlet with the name of your service as parameter:
+
+    ```powershell
+    Remove-Service -Name "YourServiceName"
+    ```
+
+3. After the executable for a service is deleted, the service might still be present in the registry. If that's the case, use the command [sc delete](/windows-server/administration/windows-commands/sc-delete) to remove the entry for the service from the registry.
+
+    ```powershell
+    sc.exe delete "YourServiceName"
+    ```
 
 ## See also
 

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "installing .NET Framework"
   - "installation [.NET Framework]"
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Install the .NET Framework for developers
 
@@ -31,7 +29,7 @@ Use the following table for quick links, or read further for details. To view th
 
 |.NET Framework version|Developer installation|Redistributable installation|Platform support|
 |----------------------------|----------------------------|----------------------------------|----------------------|
-|**4.8**|[.NET Framework 4.8 Developer Pack](https://go.microsoft.com/fwlink/?linkid=2088517)|[Download Center 4.8 web installer](http://go.microsoft.com/fwlink/?LinkId=2085155)<br/><br/>[Download Center 4.8 offline installer](https://go.microsoft.com/fwlink/?linkid=2088631)|**Included in:**<br/><br/>Windows 10 May 2019 Update<br /><br /> **You can install on:**<br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))||
+|**4.8**|[.NET Framework 4.8 Developer Pack](https://go.microsoft.com/fwlink/?linkid=2088517)|[Download Center 4.8 web installer](https://go.microsoft.com/fwlink/?LinkId=2085155)<br/><br/>[Download Center 4.8 offline installer](https://go.microsoft.com/fwlink/?linkid=2088631)|**Included in:**<br/><br/>Windows 10 May 2019 Update<br /><br /> **You can install on:**<br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))||
 |**4.7.2**|[.NET Framework 4.7.2 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=874338)|[Download Center 4.7.2 web installer](https://go.microsoft.com/fwlink/?LinkId=863262)<br/><br/>[Download Center 4.7.2 offline installer](https://go.microsoft.com/fwlink/?LinkId=863265)|**Included in:** <br/><br/>Windows 10 October 2018 Update<br/>Windows 10 April 2018 Update<br/>Windows Server 2019<br/>Windows Server, Version 1809<br/>Windows Server, Version 1803<br /><br /> **You can install on:**<br/> <br/>Windows 10 Fall Creators Update<br/>Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server, version 1709 and earlier<br /><br/> (for a full list, see [system requirements](../get-started/system-requirements.md))||
 |**4.7.1**|[NET Framework 4.7.1 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=852105)|[Download page for 4.7.1 web installer](https://go.microsoft.com/fwlink/?LinkId=852095)<br /><br /> [Download page for 4.7.1 offline installer](https://go.microsoft.com/fwlink/?LinkId=852107)|**Included in:** <br/><br/>Windows 10 Fall Creators Update<br/>Windows Server, version 1709<br /><br /> **You can install on:**<br/><br/> Windows 10 Creators Update <br /> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](../get-started/system-requirements.md))||
 |**4.7**|[NET Framework 4.7 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=825319)|[Download page for 4.7 web installer](https://go.microsoft.com/fwlink/?LinkId=825299)<br /><br /> [Download page for 4.7 offline installer](https://go.microsoft.com/fwlink/?LinkId=825303)|**Included in:** <br/><br/>Windows 10 Creators Update<br /><br /> **You can install on:**<br /><br/> Windows 10 Anniversary Update<br /> Windows 8.1 and earlier<br /> Windows Server 2016 and earlier<br /> (for a full list, see [system requirements](../get-started/system-requirements.md))||
@@ -149,7 +147,7 @@ Both web and offline installers are designed for x86-based and x64-based compute
 
 - .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, and .NET Framework 4.8 replace .NET Framework 4. When you install these versions on a system that has .NET Framework 4 installed, the assemblies are replaced.
 
-- Uninstalling .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, or .NET Framework 4.8 also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. (See [Installing the .NET Framework 4](https://go.microsoft.com/fwlink/p/?LinkId=230665).)
+- Uninstalling .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point releases, or .NET Framework 4.8 also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. See [Installing the .NET Framework 4](https://go.microsoft.com/fwlink/p/?LinkId=230665).
 
 - You must have administrative credentials to install .NET Framework 4.5, its point releases, .NET Framework 4.6 and its point releases, .NET Framework 4.7 and its point release, and .NET Framework 4.8.
 
@@ -164,7 +162,7 @@ Language packs are executable files that contain the localized resources (such a
 
 1. Open the language pack download page for the .NET Framework version you've installed:
 
-    - [.NET Framework 4.8 language packs](http://go.microsoft.com/fwlink/?LinkId=2053984)
+    - [.NET Framework 4.8 language packs](https://go.microsoft.com/fwlink/?LinkId=2053984)
 
     - [.NET Framework 4.7.2 language packs](https://go.microsoft.com/fwlink/?LinkID=863258)
 

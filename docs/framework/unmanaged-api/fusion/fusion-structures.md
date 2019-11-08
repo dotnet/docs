@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "structures [.NET Framework fusion]"
   - "unmanaged structures [.NET Framework], fusion"
 ms.assetid: 3feb4fc5-a1e9-445d-929c-0a7490244114
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Fusion Structures
 This section describes the unmanaged structures that the fusion API uses.  

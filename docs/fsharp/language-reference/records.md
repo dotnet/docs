@@ -116,7 +116,7 @@ Records can be used with pattern matching. You can specify some fields explicitl
 
 The output of this code is as follows.
 
-```
+```console
 Point is at the origin.
 Point is on the x-axis. Value is 100.000000.
 Point is at (10.000000, 0.000000, -1.000000).
@@ -132,7 +132,7 @@ Like union and structure types, records have structural equality semantics. Clas
 
 The output of this code is as follows:
 
-```
+```console
 The records are equal.
 ```
 

@@ -25,13 +25,12 @@ If you want to use a .NET Core Global Tool:
 
 ## Find a .NET Core Global Tool
 
-Currently, there isn't a Global Tool search feature in the .NET Core Command-line Interface (CLI).
+Currently, there isn't a Global Tool search feature in the .NET Core Command-line Interface (CLI). The following are some recommendations on how to find tools:
 
-You can find .NET Core Global Tools on [NuGet](https://www.nuget.org). However, NuGet doesn't yet allow you to search specifically for .NET Core Global Tools.
-
-You may also find tool recommendations in blog posts or in the [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub repository.
-
-You can also see the source code for the Global Tools created by the ASP.NET team at the [aspnet/DotNetTools](https://github.com/aspnet/DotNetTools/) GitHub repository.
+* You can find .NET Core Global Tools on [NuGet](https://www.nuget.org). However, NuGet doesn't yet allow you to search specifically for .NET Core Global Tools.
+* You may find tool recommendations in blog posts or in the [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub repository.
+* You can see the source code for the Global Tools created by the ASP.NET team at the [aspnet/DotNetTools](https://github.com/aspnet/DotNetTools/) GitHub repository.
+* You can learn about diagnostic tools at [.NET Core dotnet diagnostic Global Tools](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
 
 ## Check the author and statistics
 
@@ -101,31 +100,6 @@ You can also look for usage instructions at the tool's website or by typing one 
 dotnet <command> --help
 ```
 
-### What could go wrong
-
-Global Tools are [framework-dependent applications](../deploying/index.md#framework-dependent-deployments-fdd), which means they rely on a .NET Core runtime installed on your machine. If the expected runtime is not found, they follow normal .NET Core runtime roll-forward rules such as:
-
-* An application rolls forward to the highest patch release of the specified major and minor version.
-* If there is no matching runtime with a matching major and minor version number, the next higher minor version is used.
-* Roll forward doesn't occur between preview versions of the runtime or between preview versions and release versions. Thus, Global Tools created using preview versions must be rebuilt and republished by the author and reinstalled.
-* Additional issues can occur with Global Tools created in .NET Core 2.1 Preview 1. For more information, see [.NET Core 2.1 Preview 2 Known Issues](https://github.com/dotnet/core/blob/master/release-notes/2.1/Preview/2.1.0-preview2-known-issues.md).
-
-If an application cannot find an appropriate runtime, it fails to run and reports an error.
-
-Another issue that might happen is that a Global Tool that was created during an earlier preview may not run with your currently installed .NET Core runtimes. You can see which runtimes are installed on your machine using the following command:
-
-```dotnetcli
-dotnet --list-runtimes
-```
-
-Contact the author of the Global Tool and see if they can recompile and republish their tool package to NuGet with an updated version number. Once they have updated the package on NuGet, you can update your copy.
-
-The .NET Core CLI tries to add the default locations to the PATH environment variable on its first usage. However, there are a couple of scenarios where the location might not be added to PATH automatically, such as:
-
-* If you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable.
-* On macOS, if you've installed the .NET Core SDK using *.tar.gz* files and not *.pkg*.
-* On Linux, you need to edit the shell environment file to configure the PATH.
-
 ## Other CLI commands
 
 The .NET Core SDK contains other commands that support .NET Core Global Tools. Use any of the `dotnet tool` commands with one of the following options:
@@ -156,3 +130,7 @@ To display all of the Global Tools currently installed on the machine, along wit
 ```dotnetcli
 dotnet tool list -g
 ```
+
+## See also
+
+* [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md)

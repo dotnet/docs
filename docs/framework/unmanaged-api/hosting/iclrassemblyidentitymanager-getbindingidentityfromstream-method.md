@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 40123b30-a589-46b3-95d3-af7b2b0baa05
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAssemblyIdentityManager::GetBindingIdentityFromStream Method
 Gets the canonical assembly identity data for the assembly in the specified stream.  

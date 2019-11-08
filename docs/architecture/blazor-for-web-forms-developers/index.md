@@ -7,7 +7,9 @@ ms.date: 09/11/2019
 ---
 # Blazor for ASP.NET Web Forms Developers
 
-![Screenshot that shows the Serverless Apps ebook cover.](./media/index/blazor-for-web-forms-developers-cover.png)
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
+![Screenshot that shows the Serverless Apps e-book cover.](./media/index/blazor-for-web-forms-developers-cover.png)
 
 > DOWNLOAD available at: <https://aka.ms/blazor-ebook>
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e8138f6e-a0a4-48d4-8dae-9466b4dc6180
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::GetMemoryLoad Method
 Gets the amount of physical memory that is currently in use, and therefore unavailable, as reported by the host.  

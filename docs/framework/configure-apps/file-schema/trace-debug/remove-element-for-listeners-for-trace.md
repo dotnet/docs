@@ -11,11 +11,11 @@ ms.assetid: 9a5cd1b5-be1a-485f-8f0c-2890ad3ef3e0
 # \<remove> Element for \<listeners> for \<trace>
 Removes a listener from the **Listeners** collection.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<trace>  
-\<listeners>  
-\<remove>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<trace>**](trace-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-trace.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
   
 ## Syntax  
   

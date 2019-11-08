@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "COM interop, importing type library"
   - "COM interop, exposing COM components"
 ms.assetid: d1898229-cd40-426e-a275-f3eb65fbc79f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Importing a Type Library as an Assembly
 

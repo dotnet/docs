@@ -11,7 +11,7 @@ You convert an `Object` variable to another data type by using a conversion keyw
 ## Example  
  The following example converts an `Object` variable to an `Integer` and a `String`.  
   
-```  
+```vb  
 Public Sub objectConversion(ByVal anObject As Object)  
     Dim anInteger As Integer  
     Dim aString As String  

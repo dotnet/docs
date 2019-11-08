@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: af317171-d66d-4114-89eb-063554c74940
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule3::CreateReaderForInMemorySymbols Method
 Creates a debug symbol reader for a dynamic module.  

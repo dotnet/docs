@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a95389d3-cf2e-47a4-9805-61426acc6b65
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback3 Interface
 Provides a callback method that indicates that an enabled custom debugger notification has been raised.  

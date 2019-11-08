@@ -2,8 +2,6 @@
 title: "<ImpliesType> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<ImpliesType> Element (.NET Native)
 Applies policy to a type, if that policy has been applied to the containing type or method.  
@@ -99,7 +97,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 <Type Name="MyType">  
     <Method Name="MakeEnumerable{T}" Signature="(System.String, T)" Dynamic="Included">  
         <ImpliesType Name="T[]" Dynamic="Public" />  
-        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public">  
+        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public" />  
     </Method>  
 </Type>  
 ```  

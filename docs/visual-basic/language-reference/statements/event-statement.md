@@ -24,7 +24,7 @@ Declares a user-defined event.
   
 ## Syntax  
   
-```  
+```vb  
 [ <attrlist> ] [ accessmodifier ] _  
 [ Shared ] [ Shadows ] Event eventname[(parameterlist)] _  
 [ Implements implementslist ]  

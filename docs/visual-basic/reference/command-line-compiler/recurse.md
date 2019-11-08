@@ -12,7 +12,7 @@ Compiles source-code files in all child directories of either the specified dire
   
 ## Syntax  
   
-```  
+```console  
 -recurse:[dir\]file  
 ```  
   

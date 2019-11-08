@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "strong-named assemblies, loading into trusted application domains"
   - "<bypassTrustedAppStrongNames> element"
 ms.assetid: 71b2ebf6-3843-41e2-ad52-ffa5cd083a40
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<bypassTrustedAppStrongNames> Element
 
@@ -68,7 +66,7 @@ The bypass feature applies to any assembly that is signed with a strong name and
 - Not delay-signed.
 
 > [!NOTE]
-> If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](../../../app-domains/how-to-disable-the-strong-name-bypass-feature.md).
+> If the bypass feature has been turned off for all applications on the computer by using a registry key, this configuration file setting has no effect. For more information, see [How to: Disable the Strong-Name Bypass Feature](../../../../standard/assembly/disable-strong-name-bypass-feature.md).
 
 ## Example
 

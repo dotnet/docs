@@ -21,4 +21,4 @@ The evaluation of an expression did not complete in a timely manner.
   
 ## See also
 
-- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
+- [Debugging in Visual Studio](/visualstudio/debugger/debugger-feature-tour)

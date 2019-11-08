@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "date and time strings"
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Standard Date and Time Format Strings
 

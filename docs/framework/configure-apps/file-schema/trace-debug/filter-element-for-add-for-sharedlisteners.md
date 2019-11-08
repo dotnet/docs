@@ -14,11 +14,11 @@ ms.assetid: 7d4e7faa-2e4e-4379-ac76-f6cd7f2f8fac
 # \<filter> Element for \<add> for \<sharedListeners>
 Adds a filter to a listener in the `sharedListeners` collection.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<sharedListeners> Element  
-\<add>  
-\<filter>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sharedListeners>**](sharedlisteners-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-element-for-sharedlisteners.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filter>**  
   
 ## Syntax  
   

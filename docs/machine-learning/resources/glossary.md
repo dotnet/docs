@@ -23,9 +23,9 @@ A [classification](#classification) case where the [label](#label) is only one o
 
 ## Calibration
 
-Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. 
+Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability.
 
-## Catalog 
+## Catalog
 
 In ML.NET, a catalog is a collection of extension functions, grouped by a common purpose.
 
@@ -130,7 +130,7 @@ In [classification](#classification), the recall for a class is the number of it
  Regularization penalizes a linear model for being too complicated. There are two types of regularization:
 
 - $L_1$ regularization zeros weights for insignificant features. The size of the saved model may become smaller after this type of regularization.
-- $L_2$ regularization minimizes weight range for insignificant features, This is a more general process and is less sensitive to outliers.
+- $L_2$ regularization minimizes weight range for insignificant features. This is a more general process and is less sensitive to outliers.
 
 ## Regression
 
@@ -164,7 +164,7 @@ The process of identifying a [model](#model) for a given training data set. For 
 
 An ML.NET class that implements the <xref:Microsoft.ML.ITransformer> interface.
 
-A transformer transforms one <xref:Microsoft.ML.IDataView> into another. A transformer is created by training an [estimator](#estimator), or an estimator pipeline. 
+A transformer transforms one <xref:Microsoft.ML.IDataView> into another. A transformer is created by training an [estimator](#estimator), or an estimator pipeline.
 
 ## Unsupervised machine learning
 

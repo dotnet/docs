@@ -15,7 +15,7 @@ The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winc
 
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you understand dependency properties both as consumer and author and have read [Dependency Properties Overview](dependency-properties-overview.md) and [Custom Dependency Properties](custom-dependency-properties.md). You should also have read [XAML Overview (WPF)](xaml-overview-wpf.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).  
+ This topic assumes that you understand dependency properties both as consumer and author and have read [Dependency Properties Overview](dependency-properties-overview.md) and [Custom Dependency Properties](custom-dependency-properties.md). You should also have read [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).  
   
 <a name="implementation"></a>   
 ## The WPF XAML Loader Implementation, and Performance  
@@ -37,7 +37,7 @@ The current [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winc
 ## See also
 
 - [Dependency Properties Overview](dependency-properties-overview.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Dependency Property Metadata](dependency-property-metadata.md)
 - [Collection-Type Dependency Properties](collection-type-dependency-properties.md)
 - [Dependency Property Security](dependency-property-security.md)

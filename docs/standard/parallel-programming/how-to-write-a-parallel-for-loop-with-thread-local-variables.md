@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "parallel for loops, how to use local state"
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Write a Parallel.For Loop with Thread-Local Variables
 This example shows how to use thread-local variables to store and retrieve state in each separate task that is created by a <xref:System.Threading.Tasks.Parallel.For%2A> loop. By using thread-local data, you can avoid the overhead of synchronizing a large number of accesses to shared state. Instead of writing to a shared resource on each iteration, you compute and store the value until all iterations for the task are complete. You can then write the final result once to the shared resource, or pass it to another method.  

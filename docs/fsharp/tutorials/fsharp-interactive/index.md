@@ -16,7 +16,7 @@ F# Interactive (fsi.exe) is used to run F# code interactively at the console, or
 To run F# Interactive from the console, run fsi.exe.  You will find fsi.exe in:
 
 ```console
-C:\Program Files (x86)\Microsoft Visual Studio\2017\<sku>\Common7\IDE\CommonExtensions\Microsoft\FSharp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\<sku>\Common7\IDE\CommonExtensions\Microsoft\FSharp
 ```
 
 where `sku` is either `Community`, `Professional`, or `Enterprise`.
@@ -38,9 +38,11 @@ If you have a project open that references some libraries, you can reference the
 You can control the F# Interactive command line arguments (options) by adjusting the settings. On the **Tools** menu, select **Options...**, and then expand **F# Tools**. The two settings that you can change are the F# Interactive options and the **64-bit F# Interactive** setting, which is relevant only if you are running F# Interactive on a 64-bit machine. This setting determines whether you want to run the dedicated 64-bit version of fsi.exe or fsianycpu.exe, which uses the machine architecture to determine whether to run as a 32-bit or 64-bit process.
 
 ## Scripting with F\#
+
 Scripts use the file extension **.fsx** or **.fsscript**. Instead of compiling source code and then later running the compiled assembly, you can just run **fsi.exe** and specify the filename of the script of F# source code, and F# interactive reads the code and executes it in real time.
 
 ## Differences Between the Interactive, Scripting and Compiled Environments
+
 When you are compiling code in F# Interactive, whether you are running interactively or running a script, the symbol **INTERACTIVE** is defined. When you are compiling code in the compiler, the symbol **COMPILED** is defined. Thus, if code needs to be different in compiled and interactive modes, you can use preprocessor directives for conditional compilation to determine which to use.
 
 Some directives are available when you are executing scripts in F# Interactive that are not available when you are executing the compiler. The following table summarizes directives that are available when you are using F# Interactive.
@@ -80,8 +82,8 @@ printfn "%A" (MyAssembly.myFunction 10 40)
 
 The output is as follows:
 
-```
-Command line arguments: 
+```console
+Command line arguments:
 file1.fsx
 test
 90

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: dfd4133f-a074-4db3-a7ee-4f250fe9ad3a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameSignatureVerificationEx2 Method
 Verifies the signature of a strongly named assembly, and provides a mapping from the ECMA key to a real key.  

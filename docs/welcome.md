@@ -26,7 +26,7 @@ Also follow the latest .NET events:
 - [Microsoft Build](https://www.microsoft.com/build)
 - [.NET Conf](https://www.dotnetconf.net/)
 - [Microsoft Connect()](https://www.microsoft.com/connectevent)
-- 
+
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
 - [What's new in .NET Core](core/whats-new/index.md)

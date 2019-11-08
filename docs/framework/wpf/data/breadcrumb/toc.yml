@@ -1,0 +1,39 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: .NET
+    tocHref: /dotnet/
+    topicHref: /dotnet/index
+    items:
+    - name: .NET Framework
+      tocHref: /dotnet/framework/
+      topicHref: /dotnet/framework/index
+      items:
+      - name: Windows Presentation Foundation
+        tocHref: /dotnet/framework/wpf/
+        topicHref: /dotnet/framework/wpf/index
+        items:
+        - name: Data
+          tocHref: /dotnet/framework/wpf/data/
+          topicHref: /dotnet/framework/wpf/data/index
+
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: .NET
+    tocHref: /dotnet/
+    topicHref: /dotnet/index
+    items:
+    - name: .NET Framework
+      tocHref: /dotnet/framework/
+      topicHref: /dotnet/framework/index
+      items:
+      - name: Windows Presentation Foundation
+        tocHref: /dotnet/desktop-wpf/
+        topicHref: /dotnet/framework/wpf/index
+        items:
+        - name: Data
+          tocHref: /dotnet/desktop-wpf/data/
+          topicHref: /dotnet/framework/wpf/data/index

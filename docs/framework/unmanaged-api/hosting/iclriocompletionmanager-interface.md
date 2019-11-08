@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c6c3ace6-e5e7-4450-8cc5-a9a48208c493
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRIoCompletionManager Interface
 Implements a callback method that allows the host to notify the common language runtime (CLR) of the status of specified I/O requests.  

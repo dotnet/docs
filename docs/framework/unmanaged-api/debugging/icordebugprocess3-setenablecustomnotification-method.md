@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: afd88ee9-2589-4461-a75a-9b6fe55a2525
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess3::SetEnableCustomNotification Method
 Enables and disables custom debugger notifications of the specified type.  

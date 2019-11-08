@@ -7,8 +7,6 @@ ms.date: 09/09/2019
 
 # Protobuf scalar data types
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Protobuf supports a range of native scalar value types. The following table lists them all with their equivalent C# type:
 
 | Protobuf type | C# type      | Notes |

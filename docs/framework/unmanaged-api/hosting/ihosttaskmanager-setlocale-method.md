@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 747ee407-ee8c-484d-9583-25089236d2d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::SetLocale Method
 Notifies the host that the common language runtime (CLR) has changed the locale, or culture, on the currently executing task.  

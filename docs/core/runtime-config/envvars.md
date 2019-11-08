@@ -58,7 +58,6 @@ The following sections list selected supported environment variables by category
 |--|--|--|
 |`COMPlus_TieredCompilation`|Enables (1, the default value starting with .NET Core 3.0) or disables (0, the default value in .NET Core 2.1 and 2.2) tiered compilation.|
 
-
 ## See also
 
 - [NET Core runtime configuration settings](index.md)

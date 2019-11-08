@@ -90,7 +90,7 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
   
 <a name="wpf_designer"></a>   
 ## WPF Designer  
- You can design your WPF content by using the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)]. The following sections list some common problems that can occur when authoring hybrid applications with the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
+ You can design your WPF content by using the WPF Designer for Visual Studio. The following sections list some common problems that can occur when authoring hybrid applications with the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
   
 ### BackColorTransparent is ignored at design time  
  The <xref:System.Windows.Forms.Integration.ElementHost.BackColorTransparent%2A> property might not work as expected at design time.  

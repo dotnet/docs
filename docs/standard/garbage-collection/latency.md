@@ -9,9 +9,22 @@ ms.assetid: 96278bb7-6eab-4612-8594-ceebfc887d81
 ---
 # Latency modes
 
-To reclaim objects, the garbage collector must stop all the executing threads in an application. In some situations, such as when an application retrieves data or displays content, a full garbage collection can occur at a critical time and impede performance. You can adjust the intrusiveness of the garbage collector by setting the <xref:System.Runtime.GCSettings.LatencyMode%2A?displayProperty=nameWithType> property to one of the <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> values.
+To reclaim objects, the garbage collector (GC) must stop all the executing threads in an application. In some situations, such as when an application retrieves data or displays content, a full garbage collection can occur at a critical time and impede performance. You can adjust the intrusiveness of the garbage collector by setting the <xref:System.Runtime.GCSettings.LatencyMode%2A?displayProperty=nameWithType> property to one of the <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> values.
 
-Latency refers to the time that the garbage collector intrudes in your application. During low latency periods, the garbage collector is more conservative and less intrusive in reclaiming objects. The <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> enumeration provides two low latency settings:
+*Latency* refers to the time that the garbage collector intrudes in your application. During low latency periods, the garbage collector is more conservative and less intrusive in reclaiming objects.
+
+The following table lists the application scenarios for using the <xref:System.Runtime.GCLatencyMode> values:
+
+|Latency mode|Application scenarios|
+|------------------|---------------------------|
+|[GCLatencyMode.Batch](xref:System.Runtime.GCLatencyMode.Batch)|For applications that have no UI or server-side operations.<br /><br />This is the default mode when [concurrent garbage collection](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) is disabled.|
+|[GCLatencyMode.Interactive](xref:System.Runtime.GCLatencyMode.Interactive)|For most applications that have a UI.<br /><br />This is the default mode for workstation and server garbage collection for a standalone executable that's not hosted. It's the default mode when [concurrent garbage collection](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) is enabled.|
+|[GCLatencyMode.LowLatency](xref:System.Runtime.GCLatencyMode.LowLatency)|For applications that have short-term, time-sensitive operations during which interruptions from the garbage collector could be disruptive. For example, applications that render animations or data acquisition functions.|
+|[GCLatencyMode.SustainedLowLatency](xref:System.Runtime.GCLatencyMode.SustainedLowLatency)|For applications that have time-sensitive operations for a contained but potentially longer duration of time during which interruptions from the garbage collector could be disruptive. For example, applications that need quick response times as market data changes during trading hours.<br /><br />This mode results in a larger managed heap size than other modes. Because it does not compact the managed heap, higher fragmentation is possible. Ensure that sufficient memory is available.|
+
+## Low latency settings
+
+The <xref:System.Runtime.GCLatencyMode?displayProperty=nameWithType> enumeration provides two low latency settings:
 
 - [GCLatencyMode.LowLatency](xref:System.Runtime.GCLatencyMode.LowLatency) suppresses generation 2 collections and performs only generation 0 and 1 collections. It can be used only for short periods of time. Over longer periods, if the system is under memory pressure, the garbage collector will trigger a collection, which can briefly pause the application and disrupt a time-critical operation. This setting is available only for workstation garbage collection.
 
@@ -22,15 +35,6 @@ During low latency periods, generation 2 collections are suppressed unless the f
 - The system receives a low memory notification from the operating system.
 
 - Application code induces a collection by calling the <xref:System.GC.Collect%2A?displayProperty=nameWithType> method and specifying 2 for the `generation` parameter.
-
-The following table lists the application scenarios for using the <xref:System.Runtime.GCLatencyMode> values:
-
-|Latency mode|Application scenarios|
-|------------------|---------------------------|
-|[GCLatencyMode.Batch](xref:System.Runtime.GCLatencyMode.Batch)|For applications that have no UI or server-side operations.<br /><br />This is the default mode when [concurrent garbage collection](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) is disabled.|
-|[GCLatencyMode.Interactive](xref:System.Runtime.GCLatencyMode.Interactive)|For most applications that have a UI.<br /><br />This is the default mode when [concurrent garbage collection](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) is enabled.|
-|[GCLatencyMode.LowLatency](xref:System.Runtime.GCLatencyMode.LowLatency)|For applications that have short-term, time-sensitive operations during which interruptions from the garbage collector could be disruptive. For example, applications that render animations or data acquisition functions.|
-|[GCLatencyMode.SustainedLowLatency](xref:System.Runtime.GCLatencyMode.SustainedLowLatency)|For applications that have time-sensitive operations for a contained but potentially longer duration of time during which interruptions from the garbage collector could be disruptive. For example, applications that need quick response times as market data changes during trading hours.<br /><br />This mode results in a larger managed heap size than other modes. Because it does not compact the managed heap, higher fragmentation is possible. Ensure that sufficient memory is available.|
 
 ## Guidelines for using low latency
 

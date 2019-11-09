@@ -210,6 +210,14 @@ Concurrent garbage collection is specified with the [\<gcConcurrent> element](..
 
 You can also specify server garbage collection with unmanaged hosting interfaces. Note that ASP.NET and SQL Server enable server garbage collection automatically if your application is hosted inside one of these environments.
 
+Starting with .NET Framework 4.6.2, some additional configuration options are available for server garbage collection:
+
+- By default, there is an affinity between the server GC heap and a CPU. That is, in server GC, the garbage collector assumes that a process owns the machine on which it is running, so it uses all available CPUs for garbage collection. It creates a dedicated heap, a GC thread, and, if background garbage collection is enabled, a background GC thread for each processor. This can result in poor performance, particularly on systems with multiple running instances of a server application. To not affinitize server GC threads with CPUs, use the [\<GCNoAffinitize>](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) setting in .NET Framework applications.
+
+- You can limit the number of heaps created by the garbage collector by using the [\<GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) setting in .NET Framework applications. If GC thread/processor affinity is disabled, this setting limits the number of GC heaps. If GC thread/processor affinity is enabled, this setting limits the number of GC heaps to the processors 0 to one-less-than its specified value.
+
+- If processor affinity is enabled, you can use the [\<GCHeapAffinitizeMask>](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) configuration element in .NET Framework applications to control the specific processors for which a GC heap and threads are created. Supply a decimal value. The value is a mask that defines the processors that are available to the process.
+
 ### Comparing workstation and server garbage collection
 
 The following are threading and performance considerations for workstation garbage collection:
@@ -262,7 +270,7 @@ The following illustration shows concurrent garbage collection performed on a se
 
 ## Background workstation garbage collection
 
-Background garbage collection replaces concurrent workstation garbage collection starting with the .NET Framework 4, and it replaces concurrent server garbage collection starting with the .NET Framework 4.5.  In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. It is performed on a dedicated thread and is applicable only to generation 2 collections. Background garbage collection is automatically enabled by default, and can be enabled or disabled with the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration setting in .NET Framework applications. 
+Background garbage collection replaces concurrent workstation garbage collection starting with the .NET Framework 4, and it replaces concurrent server garbage collection starting with the .NET Framework 4.5.  In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. It is performed on a dedicated thread and is applicable only to generation 2 collections. Background garbage collection is automatically enabled by default, and can be enabled or disabled with the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration setting in .NET Framework applications.
 
 > [!NOTE]
 > Background garbage collection is available only in the .NET Framework 4 and later versions. In the .NET Framework 4, it is supported only for workstation garbage collection. Starting with the .NET Framework 4.5, background garbage collection is available for both workstation and server garbage collection.

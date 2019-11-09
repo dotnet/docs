@@ -9,8 +9,8 @@ helpviewer_keywords:
 
 Defines the affinity between GC heaps and individual processors.
 
-\<configuration>
-&nbsp;&nbsp;\<runtime>
+\<configuration>\
+&nbsp;&nbsp;\<runtime>\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCHeapAffinitizeMask>
 
 ## Syntax

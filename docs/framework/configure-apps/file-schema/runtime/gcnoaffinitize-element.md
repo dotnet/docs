@@ -9,8 +9,8 @@ helpviewer_keywords:
 
 Specifies whether or not to affinitize server GC threads with CPUs.
 
-\<configuration>
-&nbsp;&nbsp;\<runtime>
+\<configuration>\
+&nbsp;&nbsp;\<runtime>\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCNoAffinitize>
 
 ## Syntax

@@ -9,8 +9,8 @@ helpviewer_keywords:
 
 Specifies the number of heaps/threads to use for server garbage collection.
 
-\<configuration>
-&nbsp;&nbsp;\<runtime>
+\<configuration>\
+&nbsp;&nbsp;\<runtime>\
 &nbsp;&nbsp;&nbsp;&nbsp;\<GCHeapCount>
 
 ## Syntax

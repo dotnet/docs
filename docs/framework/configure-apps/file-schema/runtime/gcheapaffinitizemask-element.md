@@ -60,7 +60,7 @@ By default, server GC threads are hard-affinitized with their respective CPU so 
 **nnnn** is a bit mask expressed as a decimal value. Bit 0 of byte 0 represents processor 0, bit 1 of byte 0 represents processor 1, and so on. For example:
 
 ```xml
-<GCHeapAffinitizeMask enabled=”1023″/>
+<GCHeapAffinitizeMask enabled="1023"/>
 ```
 
 A value of 1023 is 0x3FF or 0011 1111 1111b. The process uses 10 processors, from processor 0 through processor 9.
@@ -73,7 +73,7 @@ The following example indicates that an application uses server GC with 10 heaps
 <configuration>
    <runtime>
       <gcServer enabled="true"/>
-      <GCHeapCount enabled="10″"/>
+      <GCHeapCount enabled="10"/>
       <GCHeapAffinitizeMask enabled="1023"/>
    </runtime>
 </configuration>
@@ -82,7 +82,7 @@ The following example indicates that an application uses server GC with 10 heaps
 ## See also
 
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
-- [GCNoAffinitize element](gcnoaffinitize-element.md) element
+- [GCNoAffinitize element](gcnoaffinitize-element.md)
 - [GCHeapCount element](gcheapcount-element.md)
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)
 - [Runtime Settings Schema](index.md)

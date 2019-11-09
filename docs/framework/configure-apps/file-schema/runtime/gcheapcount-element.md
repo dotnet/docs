@@ -90,7 +90,7 @@ The following example does not affinitize server GC threads and limits the numbe
 ## See also
 
 - <xref:System.Runtime.GCSettings.IsServerGC%2A?displayProperty=nameWithType>
-- [GCNoAffinitize element](gcnoaffinitize-element.md) element
+- [GCNoAffinitize element](gcnoaffinitize-element.md)
 - [GCHeapAffinitizeMask element](gcheapaffinitizemask-element.md)
 - [Fundamentals of garbage collection](../../../../standard/garbage-collection/fundamentals.md)
 - [Runtime Settings Schema](index.md)

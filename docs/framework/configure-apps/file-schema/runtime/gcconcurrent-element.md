@@ -1,10 +1,10 @@
 ---
 title: "<gcConcurrent> Element"
 ms.date: "03/30/2017"
-f1_keywords: 
+f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcConcurrent"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#gcConcurrent"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "container tags, <gcConcurrent> element"
   - "gcConcurrent element"
   - "<gcConcurrent> element"
@@ -16,9 +16,9 @@ ms.author: "ronpet"
 
 Specifies whether the common language runtime runs garbage collection on a separate thread.
 
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<gcConcurrent>**  
+[\<configuration>](../configuration-element.md)\
+&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;\<gcConcurrent>
 
 ## Syntax
 

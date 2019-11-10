@@ -9,20 +9,14 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Security ETW Events
+
 Security events are raised during strong name verification and Authenticode verification.  
   
- This category consists of the following events:  
-  
-- [Security ETW Events](#security-etw-events)
-  - [StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events](#strongnameverificationstartv1-and-strongnameverificationstopv1-events)
-  - [AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events](#authenticodeverificationstartv1-and-authenticodeverificationstopv1-events)
-  - [See also](#see-also)
-  
-- [Security ETW Events](#security-etw-events)
-  - [StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events](#strongnameverificationstartv1-and-strongnameverificationstopv1-events)
-  - [AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events](#authenticodeverificationstartv1-and-authenticodeverificationstopv1-events)
-  - [See also](#see-also)
-  
+This category consists of the following events:
+
+- [StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events](#strongnameverificationstart_v1_and_strongnameverificationstop_v1_events)  
+- [AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events](#authenticodeverificationstart_v1_and_authenticodeverificationstop_v1_events)
+
 <a name="strongnameverificationstart_v1_and_strongnameverificationstop_v1_events"></a>   
 ## StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events  
  The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  

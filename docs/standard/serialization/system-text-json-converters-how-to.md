@@ -188,7 +188,7 @@ The following code registers the converter:
 
 [!code-csharp[](~/samples/standard/serialization/csharp/ConvertInferredTypesToObject.cs?name=SnippetRegister)]
 
-Here's an example type with an Object property:
+Here's an example type with Object properties:
 
 ```csharp[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithObjectProperties)]
 

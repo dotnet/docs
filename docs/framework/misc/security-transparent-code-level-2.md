@@ -12,8 +12,6 @@ ms.author: "mairaw"
 ---
 # Security-Transparent Code, Level 2
 
-<a name="top"></a>
-
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
 Level 2 transparency was introduced in the .NET Framework 4. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.

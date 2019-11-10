@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 4b721769-3e45-4be7-b7fe-b08dc4141b44
 ---
 # How to: Delete a File in Visual Basic
+
 The `DeleteFile` method of the `My.Computer.FileSystem` object allows you to delete a file. Among the options it offers are: whether to send the deleted file to the **Recycle Bin**, whether to ask the user to confirm that the file should be deleted, and what to do when the user cancels the operation.  
   
 ### To delete a text file  
@@ -30,6 +31,7 @@ The `DeleteFile` method of the `My.Computer.FileSystem` object allows you to del
      [!code-vb[VbFileIOMisc#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbFileIOMisc/VB/Class1.vb#10)]  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (starts with \\\\.\\) (<xref:System.ArgumentException>).  

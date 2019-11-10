@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 76e7bcf3-24ed-4cd5-945b-b98f1c76944b
 ---
 # Argument not optional (Visual Basic)
+
 The number and types of arguments must match those expected. Either there is an incorrect number of arguments, or an omitted argument is not optional. An argument can only be omitted from a call to a user-defined procedure if it was declared `Optional` in the procedure definition.  
   
 ## To correct this error  

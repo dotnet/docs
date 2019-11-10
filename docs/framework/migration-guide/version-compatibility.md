@@ -66,5 +66,5 @@ If you can't find a suitable workaround for your issue, remember that the .NET F
 - [What's New](../whats-new/index.md)
 - [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md)
 - [Application Compatibility](../migration-guide/application-compatibility.md)
-- [.NET Framework Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
+- [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
 - [.NET Framework 4 Migration Issues](../migration-guide/net-framework-4-migration-issues.md)

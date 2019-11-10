@@ -10,22 +10,15 @@ ms.author: "mairaw"
 ---
 # Interop ETW Events
 Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.  
-  
- This category consists of the following events:  
-  
-- [Interop ETW Events](#interop-etw-events)
-  - [ILStubGenerated Event](#ilstubgenerated-event)
-  - [ILStubCacheHit Event](#ilstubcachehit-event)
-  - [See also](#see-also)
-  
-- [Interop ETW Events](#interop-etw-events)
-  - [ILStubGenerated Event](#ilstubgenerated-event)
-  - [ILStubCacheHit Event](#ilstubcachehit-event)
-  - [See also](#see-also)
-  
-<a name="ilstubgenerated_event"></a>   
-## ILStubGenerated Event  
- The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
+
+This category consists of the following events:
+
+- [ILStubGenerated Event](#ilstubgenerated-event)  
+- [ILStubCacheHit Event](#ilstubcachehit-event)
+
+## ILStubGenerated Event
+
+The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -53,9 +46,9 @@ Interop events capture information about Microsoft intermediate language (MSIL) 
 |StubMethodILCode|win:UnicodeString|The MSIL code for the stub method.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
-<a name="ilstubcachehit_event"></a>   
 ## ILStubCacheHit Event  
- The following table shows the keyword and level.  
+
+The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  

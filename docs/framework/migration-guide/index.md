@@ -34,5 +34,5 @@ Review the following documents before you migrate your app from earlier versions
 - [How to: Configure an app to support .NET Framework 4 or later versions](how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
 - [What's New](../whats-new/index.md)
 - [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md)
-- [.NET Framework Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
+- [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
 - [.NET Framework 4 migration issues](net-framework-4-migration-issues.md)

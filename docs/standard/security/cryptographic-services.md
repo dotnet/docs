@@ -38,32 +38,14 @@ This overview provides a synopsis of the encryption methods and practices suppor
 
 This overview contains the following sections:
 
-- [Cryptographic Services](#cryptographic-services)
-  - [Cryptographic Primitives](#cryptographic-primitives)
-  - [Secret-Key Encryption](#secret-key-encryption)
-  - [Public-Key Encryption](#public-key-encryption)
-  - [Digital Signatures](#digital-signatures)
-  - [Hash Values](#hash-values)
-  - [Random Number Generation](#random-number-generation)
-  - [ClickOnce Manifests](#clickonce-manifests)
-  - [Suite B Support](#suite-b-support)
-  - [Cryptography Next Generation (CNG) Classes](#cryptography-next-generation-cng-classes)
-  - [Related Topics](#related-topics)
-
+- [Cryptographic Primitives](#primitives)
 - [Secret-Key Encryption](#secret_key)
-
 - [Public-Key Encryption](#public_key)
-
 - [Digital Signatures](#digital_signatures)
-
 - [Hash Values](#hash_values)
-
 - [Random Number Generation](#random_numbers)
-
 - [ClickOnce Manifests](#clickonce)
-
 - [Suite B Support](#suite_b)
-
 - [Related Topics](#related_topics)
 
 For additional information about cryptography and about Microsoft services, components, and tools that enable you to add cryptographic security to your applications, see the Win32 and COM Development, Security section of this documentation.

@@ -34,11 +34,11 @@ An `if` expression used in a sequence is a filter. For example, to generate a se
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1506.fs)]
 
-As mentioned previously, `do` is required here because there is no `else` branch that goes with the `if`. If you try to use `->`, you will get an error saying that not all branches return a value.
+As mentioned previously, `do` is required here because there is no `else` branch that goes with the `if`. If you try to use `->`, you'll get an error saying that not all branches return a value.
 
 ## The `yield!` keyword
 
-Sometimes, you may wish to include a sequence of elements into another sequence. To include a sequence within another sequence, you'll need to use the `yield!` keyword.
+Sometimes, you may wish to include a sequence of elements into another sequence. To include a sequence within another sequence, you'll need to use the `yield!` keyword:
 
 ```fsharp
 // Repeats '1 2 3 4 5' ten times
@@ -50,7 +50,7 @@ seq {
 
 Another way of thinking of `yield!` is that it flattens an inner sequence and then includes that in the containing sequence.
 
-When `yield!` is used in an expression, all other single values must use the `yield` keyword.
+When `yield!` is used in an expression, all other single values must use the `yield` keyword:
 
 ```fsharp
 // Combine repeated values with their values
@@ -61,7 +61,7 @@ seq {
 }
 ```
 
-Specifying only `x` is the previous example will result in the sequence generating no values.
+Specifying only `x` in the previous example will result in the sequence generating no values.
 
 ## Examples
 
@@ -69,7 +69,7 @@ The first example uses a sequence expression that contains an iteration, a filte
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1507.fs)]
 
-The following code creates a multiplication table that consists of tuples of three elements, each consisting of two factors and the product.
+The following example creates a multiplication table that consists of tuples of three elements, each consisting of two factors and the product:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1508.fs)]
 

@@ -166,7 +166,7 @@ When evaluated, the computation expression called by `yield!` will have its item
 
 `yield!` is defined by the `YieldFrom(x)` member on the builder type, where `x` is a collection of values.
 
-Unlike `yield`, `yield!` must be explicitly specified - its behavior is not implicit in computation expressions.
+Unlike `yield`, `yield!` must be explicitly specified. Its behavior isn't implicit in computation expressions.
 
 ### `return`
 

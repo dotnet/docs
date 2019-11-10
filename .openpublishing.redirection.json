@@ -282,8 +282,8 @@
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
-            "redirect_url": "/dotnet/core/tutorials/using-on-windows-full-solution",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md",
@@ -1184,11 +1184,23 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/nullable-types/boxing-nullable-types.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types#how-to-identify-a-nullable-value-type"
         },
         {
             "source_path": "docs/csharp/programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/using-nullable-types.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
         },
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md",
@@ -1510,7 +1522,7 @@
         },
         {
             "source_path": "docs/framework/app-domains/programming-with-assemblies.md",
-            "redirect_url": "/dotnet/standard/assembly/program"
+            "redirect_url": "/dotnet/standard/assembly/index"
         },
         {
             "source_path": "docs/framework/app-domains/resolve-assembly-loads.md",
@@ -1712,6 +1724,10 @@
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
+            "source_path": "docs/framework/migration-guide/minimum-release-dword.md",
+            "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
+        },
+        {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
             "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
         },
@@ -1764,52 +1780,60 @@
             "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
         },
         {
+            "source_path": "docs/framework/migration-guide/retargeting/index.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-1.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime/index.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-1.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"   
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/misc/binding.md",
@@ -2679,7 +2703,7 @@
         },
         {
             "source_path": "docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md",
-            "redirect_url": "/dotnet/core/tutorials/target-dotnetcore-with-msbuild"
+            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
         },
         {
             "source_path": "docs/standard/about.md",
@@ -2693,6 +2717,10 @@
         {
             "source_path": "docs/standard/assembly/friend-assemblies.md",
             "redirect_url": "/dotnet/standard/assembly/friend"
+        },
+        {
+            "source_path": "docs/standard/assembly/program.md",
+            "redirect_url": "/dotnet/standard/assembly/index"
         },
         {
             "source_path": "docs/standard/assembly/unloadability-howto.md",
@@ -3042,7 +3070,7 @@
         },
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
-            "redirect_url": "/dotnet/csharp/tutorials/microservices"
+            "redirect_url": "/dotnet/core/docker/"
         },
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/working-with-linq.md",
@@ -3376,7 +3404,7 @@
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
-            "redirect_url": "/dotnet/standard/assembly/friend-assemblies"
+            "redirect_url": "/dotnet/standard/assembly/friend"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md",

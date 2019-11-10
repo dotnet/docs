@@ -19,7 +19,7 @@ Services and client applications that use data types that are serializable using
   
 3. At the command prompt, launch the Svcutil.exe tool using the following format.  
   
-    ```  
+    ```console  
     svcutil.exe /t:xmlSerializer  <assemblyPath>*  
     ```  
   
@@ -47,7 +47,7 @@ Services and client applications that use data types that are serializable using
   
 4. Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to create a pre-generated serializer *.cs* file by using the command:  
   
-    ```  
+    ```console  
     svcutil.exe /t:xmlSerializer  <assemblyPath>*  
     ```  
   
@@ -55,7 +55,7 @@ Services and client applications that use data types that are serializable using
   
      Such as:  
   
-    ```  
+    ```console  
     svcutil.exe /t:xmlSerializer wcfclient.exe  
     ```  
   
@@ -65,7 +65,7 @@ Services and client applications that use data types that are serializable using
   
      Based on the example in the previous step, the compile command would be the following:  
   
-    ```  
+    ```console  
     csc /r:wcfclient.exe /out:WCFClient.XmlSerializers.dll /t:library WCFClient.XmlSerializers.dll.cs  
     ```  
   
@@ -76,7 +76,7 @@ Services and client applications that use data types that are serializable using
 ## Example  
  The following command generates serialization types for `XmlSerializer` types that any service contracts in the assembly use.  
   
-```  
+```console  
 svcutil /t:xmlserializer myContractLibrary.exe  
 ```  
   

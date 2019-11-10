@@ -51,9 +51,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
 ### Template String Syntax  
  A template has three parts: a path, an optional query, and an optional fragment. For an example, see the following template:  
   
-```  
-"/weather/{state}/{city}?forecast={length)#frag1  
-```  
+`"/weather/{state}/{city}?forecast={length)#frag1`  
   
  The path consists of "/weather/{state}/{city}", the query consists of "?forecast={length}, and the fragment consists of "#frag1".  
   
@@ -128,9 +126,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
 ### Named Wildcard Segments  
  A named wildcard segment is any path variable segment whose variable name begins with the wildcard character ‘\*’. The following template string contains a named wildcard segment named "shoe".  
   
-```  
-"literal/{*shoe}"  
-```  
+`"literal/{*shoe}"`  
   
  Wildcard segments must follow the following rules:  
   

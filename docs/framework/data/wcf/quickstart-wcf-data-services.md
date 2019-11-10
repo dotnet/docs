@@ -8,7 +8,7 @@ ms.assetid: 7b18ca1e-d4d6-4c7a-afb9-ce3cebb98a8d
 ---
 # Quickstart (WCF Data Services)
 
-This quickstart helps you become familiar with WCF Data Services and the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] through a series of tasks that support the topics in [Getting Started](getting-started-with-wcf-data-services.md).
+This quickstart helps you become familiar with WCF Data Services and the Open Data Protocol (OData) through a series of tasks that support the topics in [Getting Started](getting-started-with-wcf-data-services.md).
 
 ## What you'll learn
 

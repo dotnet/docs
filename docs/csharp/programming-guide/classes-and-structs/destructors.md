@@ -79,7 +79,7 @@ protected override void Finalize()
   
 ## C# language specification  
 
-For more information, see the [Destructors](~/_csharplang/spec/classes.md#destructors) section of the [C# language specification](../../language-reference/language-specification/index.md).
+For more information, see the [Destructors](~/_csharplang/spec/classes.md#destructors) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).
   
 ## See also
 

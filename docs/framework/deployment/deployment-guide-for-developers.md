@@ -2,7 +2,7 @@
 title: ".NET Framework deployment guide for developers"
 ms.custom: "updateeachrelease"
 ms.date: "04/18/2019"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"
 ms.assetid: 094d043e-33c4-40ba-a503-e0b20b55f4cf
@@ -12,7 +12,7 @@ This topic provides information for developers who want to install any version o
 
 For download links, see the section [Redistributable Packages](#redistributable-packages). You can also download the redistributable packages and language packs from these Microsoft Download Center pages:
 
-- .NET Framework 4.8 for all operating systems ([web installer](http://go.microsoft.com/fwlink/?LinkId=2085155) or [offline installer](https://go.microsoft.com/fwlink/?linkid=2088631))
+- .NET Framework 4.8 for all operating systems ([web installer](https://go.microsoft.com/fwlink/?LinkId=2085155) or [offline installer](https://go.microsoft.com/fwlink/?linkid=2088631))
 
 - .NET Framework 4.7.2 for all operating systems ([web installer](https://go.microsoft.com/fwlink/?LinkId=863262) or [offline installer](https://go.microsoft.com/fwlink/p/?LinkId=863265))
 
@@ -162,7 +162,7 @@ In Visual Studio, to choose InstallShield deployment and add a dependency on the
 
 ### Windows Installer XML (WiX) deployment
 
-The Windows Installer XML (WiX) toolset builds Windows installation packages from XML source code. WiX supports a command-line environment that can be integrated into your build processes to build MSI and MSM setup packages. By using WiX, you can [specify the .NET Framework as a prerequisite](http://wixtoolset.org/documentation/manual/v3/howtos/redistributables_and_install_checks/install_dotnet.html), or [create a chainer](http://wixtoolset.org/documentation/manual/v3/xsd/wix/exepackage.html) to fully control the .NET Framework deployment experience. For more information about WiX, see the [Windows Installer XML (WiX) toolset](http://wixtoolset.org/) website.
+The Windows Installer XML (WiX) toolset builds Windows installation packages from XML source code. WiX supports a command-line environment that can be integrated into your build processes to build MSI and MSM setup packages. By using WiX, you can [specify the .NET Framework as a prerequisite](https://wixtoolset.org/documentation/manual/v3/howtos/redistributables_and_install_checks/install_dotnet.html), or [create a chainer](https://wixtoolset.org/documentation/manual/v3/xsd/wix/exepackage.html) to fully control the .NET Framework deployment experience. For more information about WiX, see the [Windows Installer XML (WiX) toolset](https://wixtoolset.org/) website.
 
 <a name="installing_manually"></a>
 

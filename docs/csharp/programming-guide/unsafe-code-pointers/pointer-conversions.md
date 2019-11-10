@@ -37,7 +37,7 @@ The following table shows the predefined implicit pointer conversions. Implicit 
 
 - [C# Programming Guide](../index.md)
 - [Pointer types](./pointer-types.md)
-- [Types](../../language-reference/keywords/types.md)
+- [Types](/dotnet/csharp/language-reference/keywords)
 - [unsafe](../../language-reference/keywords/unsafe.md)
 - [fixed Statement](../../language-reference/keywords/fixed-statement.md)
 - [stackalloc](../../language-reference/operators/stackalloc.md)

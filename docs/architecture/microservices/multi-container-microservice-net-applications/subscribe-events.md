@@ -134,7 +134,7 @@ When implementing the steps of publishing the events, you have these choices:
 
 Figure 6-22 shows the architecture for the first of these approaches.
 
-![One approach to handle atomicity when publishing events: use one transaction to commit event to an event-log table, and then another transaction to publish (used in eShopOnContainers)](./media/image23.png)
+![Diagram of atomicity when publishing without a worker microservice.](./media/subscribe-events/atomicity-publish-event-bus.png)
 
 **Figure 6-22**. Atomicity when publishing events to the event bus
 
@@ -142,7 +142,7 @@ The approach illustrated in Figure 6-22 is missing an additional worker microser
 
 About the second approach: you use the EventLog table as a queue and always use a worker microservice to publish the messages. In that case, the process is like that shown in Figure 6-23. This shows an additional microservice, and the table is the single source when publishing events.
 
-![Another approach to handle atomicity: Publish to an event-log table and then have another microservice (a background worker) publish the event.](./media/image24.png)
+![Diagram of atomicity when publishing with a worker microservice.](./media/subscribe-events/atomicity-publish-worker-microservice.png)
 
 **Figure 6-23**. Atomicity when publishing events to the event bus with a worker microservice
 
@@ -274,7 +274,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Even
 
 The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 6-24.
 
-![Browser view of the process change notification on the user cart.](./media/image25.png)
+![Screenshot of a browser showing the price change notification on the user cart.](./media/subscribe-events/display-item-price-change.png)
 
 **Figure 6-24**. Displaying an item price change in a basket, as communicated by integration events
 

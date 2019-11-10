@@ -71,6 +71,6 @@ To determine whether to seal a class, method, or property, you should generally 
 - [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md)
 - [Abstract and Sealed Classes and Class Members](../../programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md)
 - [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [override](override.md)
 - [virtual](virtual.md)

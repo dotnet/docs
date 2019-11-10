@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "UserControl Test Container"
   - "UserControl class [Windows Forms], run-time behavior"
 ms.assetid: 4e4d5c49-1346-40ac-9d96-40211b573583
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Test the run-time behavior of a UserControl

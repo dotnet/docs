@@ -1,5 +1,5 @@
 ---
-title: Data transformations 
+title: Data transformations
 description: Explore the feature engineering components supported in ML.NET.
 author: natke
 ms.author: nakersha
@@ -16,7 +16,7 @@ Data transformations are used to:
 
 The transformations in this guide return classes that implement the [IEstimator](xref:Microsoft.ML.IEstimator%601) interface. Data transformations can be chained together. Each transformation both expects and produces data of specific types and formats, which are specified in the linked reference documentation.
 
-Some data transformations require training data to calculate their parameters. For example: the <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> transformer calculates the mean and variance of the training data during the `Fit()` operation, and uses those parameters in the `Transform()` operation. 
+Some data transformations require training data to calculate their parameters. For example: the <xref:Microsoft.ML.NormalizationCatalog.NormalizeMeanVariance%2A> transformer calculates the mean and variance of the training data during the `Fit()` operation, and uses those parameters in the `Transform()` operation.
 
 Other data transformations don't require training data. For example: the <xref:Microsoft.ML.ImageEstimatorsCatalog.ConvertToGrayscale*> transformation can perform the `Transform()` operation without having seen any training data during the `Fit()` operation.
 
@@ -57,7 +57,7 @@ Other data transformations don't require training data. For example: the <xref:M
 
 | Transform | Definition |
 | --- | --- |
-| <xref:Microsoft.ML.TextCatalog.FeaturizeText*> | Transform a text column into a float array of normalized ngrams and char-grams counts | 
+| <xref:Microsoft.ML.TextCatalog.FeaturizeText*> | Transform a text column into a float array of normalized ngrams and char-grams counts |
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoWords*> | Split one or more text columns into individual words |
 | <xref:Microsoft.ML.TextCatalog.TokenizeIntoCharactersAsKeys*> | Split one or more text columns into individual characters floats over a set of topics |
 | <xref:Microsoft.ML.TextCatalog.NormalizeText*> | Change case, remove diacritical marks, punctuation marks, and numbers |

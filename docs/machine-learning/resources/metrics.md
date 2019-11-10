@@ -41,7 +41,7 @@ Macro-accuracy overweights small teams in this example; a small team which gets 
 
 For further details on multi-class classification metrics read the following articles:
 
-- [Micro- and Macro-average of Precision, Recall and F-Score](http://rushdishams.blogspot.com/2011/08/micro-and-macro-average-of-precision.html)
+- [Micro- and Macro-average of Precision, Recall and F-Score](https://rushdishams.blogspot.com/2011/08/micro-and-macro-average-of-precision.html)
 - [Multiclass Classification with Imbalanced Dataset](https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a)
 
 ## Metrics for Regression

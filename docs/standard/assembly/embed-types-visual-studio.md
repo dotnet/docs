@@ -2,7 +2,7 @@
 title: "Walkthrough: Embed types from managed assemblies in Visual Studio"
 ms.date: 08/19/2019
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ---
@@ -28,7 +28,7 @@ In this walkthrough, you:
 
 ## Conditions and limitations
 
-You can embed type information from an assembly under the following conditions: 
+You can embed type information from an assembly under the following conditions:
 
 - The assembly exposes at least one public interface.
 - The embedded interfaces are annotated with `ComImport` attributes and `Guid` attributes with unique GUIDs.
@@ -315,5 +315,4 @@ Go to the build output folder location and run *TypeEquivalenceClient.exe*. Note
 - [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
 - [C# programming guide](../../csharp/programming-guide/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
-- [Program with assemblies](program.md)
 - [Assemblies in .NET](index.md)

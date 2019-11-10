@@ -58,7 +58,7 @@ In the table, versions of the .NET Framework that are installed on operating sys
   > [!NOTE]
   > .NET Framework 4.5.1 and .NET Framework 4.5 are used here only as examples. The principle described applies to any app that targets a later version of the .NET Framework than the one installed on the system on which it's running.  
   
-Some changes in the .NET Framework may require changes to your app code. If you're running an existing app on .NET Framework 4.5 or later, see [Application compatibility](application-compatibility.md). For information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [Microsoft .NET Framework Support Lifecycle Policy](https://support.microsoft.com/help/17455/lifecycle-faq-net-framework) on the Microsoft Support website.  
+Some changes in the .NET Framework may require changes to your app code; see [Application Compatibility](application-compatibility.md) before you run your existing apps with .NET Framework 4.5 or later versions. For more information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the .NET website.
   
 ## Target and run apps for older versions  
 
@@ -79,5 +79,5 @@ In addition, if your app targets version 2.0, 3.0, or 3.5, your users may be req
 ## See also
 
 - [Version compatibility](version-compatibility.md)
-- [Microsoft .NET Framework support lifecycle policy](https://support.microsoft.com/help/17455/lifecycle-faq-net-framework)
+- [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)

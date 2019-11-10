@@ -21,6 +21,7 @@ author: "rpetrusha"
 ms.author: "ronpet"
 ---
 # Standard TimeSpan Format Strings
+
 A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md) .  
   
  The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType> method, as well as by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=nameWithType>. For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md) and [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example illustrates the use of standard format strings in formatting operations.  
@@ -68,8 +69,6 @@ The following table lists the standard time interval format specifiers.
  [!code-csharp[Conceptual.TimeSpan.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/standardc1.cs#1)]
  [!code-vb[Conceptual.TimeSpan.Standard#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardc1.vb#1)]  
   
- [Back to table](#Top)  
-  
 <a name="GeneralShort"></a>   
 ## The General Short ("g") Format Specifier  
  The "g" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a compact form by including only the elements that are necessary. It has the following form:  
@@ -94,9 +93,7 @@ The following table lists the standard time interval format specifiers.
   
  [!code-csharp[Conceptual.TimeSpan.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/standardshort1.cs#4)]
  [!code-vb[Conceptual.TimeSpan.Standard#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardshort1.vb#4)]  
-  
- [Back to table](#Top)  
-  
+
 <a name="GeneralLong"></a>   
 ## The General Long ("G") Format Specifier  
  The "G" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a long form that always includes both days and fractional seconds. The string that results from the "G" standard format specifier has the following form:  
@@ -120,9 +117,7 @@ The following table lists the standard time interval format specifiers.
  The following example instantiates two <xref:System.TimeSpan> objects, uses them to perform arithmetic operations, and displays the result. In each case, it uses composite formatting to display the <xref:System.TimeSpan> value by using the "G" format specifier. In addition, it formats the <xref:System.TimeSpan> value by using the formatting conventions of the current system culture (which, in this case, is English - United States or en-US) and the French - France (fr-FR) culture.  
   
  [!code-csharp[Conceptual.TimeSpan.Standard#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/standardlong1.cs#5)]
- [!code-vb[Conceptual.TimeSpan.Standard#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardlong1.vb#5)]  
-  
- [Back to table](#Top)  
+ [!code-vb[Conceptual.TimeSpan.Standard#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardlong1.vb#5)]
   
 ## See also
 

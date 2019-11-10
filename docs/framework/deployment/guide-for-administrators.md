@@ -15,7 +15,7 @@ This step-by-step article describes how a system administrator can deploy the .N
 > [!NOTE]
 > The software referenced in this document, including, without limitation, the .NET Framework 4.5, System Center Configuration Manager, and Active Directory, are each subject to license terms and conditions. These instructions assume that such license terms and conditions have been reviewed and accepted by the appropriate licensees of the software. These instructions do not waive any of the terms and conditions of such license agreements.
 >
-> For information about support for the .NET Framework, see [.NET Framework Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the Microsoft Support website.
+> For information about support for the .NET Framework, see [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the Microsoft Support website.
 
 This topic contains the following sections:
 

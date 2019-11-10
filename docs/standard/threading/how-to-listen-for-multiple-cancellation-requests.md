@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "cancellation tokens, joining"
   - "LinkedTokenSource, how to"
 ms.assetid: 6f4f3804-2ed7-41b4-a97a-6e32b93f6e05
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Listen for Multiple Cancellation Requests
 This example shows how to listen to two cancellation tokens simultaneously so that you can cancel an operation if either token requests it.  

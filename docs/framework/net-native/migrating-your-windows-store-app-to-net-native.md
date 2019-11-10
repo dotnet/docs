@@ -2,10 +2,8 @@
 title: "Migrating Your Windows Store App to .NET Native"
 ms.date: "03/30/2017"
 ms.assetid: 4153aa18-6f56-4a0a-865b-d3da743a1d05
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# Migrating Your Windows Store App to .NET Native
+# Migrate Your Windows Store App to .NET Native
 
 .NET Native provides static compilation of apps in the Windows Store or on the developer’s computer. This differs from the dynamic compilation performed for Windows Store apps by the just-in-time (JIT) compiler or the [Native Image Generator (Ngen.exe)](../tools/ngen-exe-native-image-generator.md) on the device. Despite the differences, .NET Native tries to maintain compatibility with the [.NET for Windows Store apps](https://docs.microsoft.com/previous-versions/windows/apps/br230302%28v=vs.140%29). For the most part, things that work on the .NET for Windows Store apps also work with .NET Native.  However, in some cases, you may encounter behavioral changes. This document discusses these differences between the standard .NET for Windows Store apps and .NET Native in the following areas:
 
@@ -49,7 +47,7 @@ ms.author: "ronpet"
 
 For example, data binding requires an app to be able to map property names to functions. In .NET for Windows Store apps, the common language runtime automatically uses reflection to provide this capability for managed types and publicly available native types. In .NET Native, the compiler automatically includes metadata for types to which you bind data.
 
-The .NET Native compiler can also handle commonly used generic types such as <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602>, which work without requiring any hints or directives. The [dynamic](../../csharp/language-reference/keywords/dynamic.md) keyword is also supported within certain limits.
+The .NET Native compiler can also handle commonly used generic types such as <xref:System.Collections.Generic.List%601> and <xref:System.Collections.Generic.Dictionary%602>, which work without requiring any hints or directives. The [dynamic](../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) keyword is also supported within certain limits.
 
 > [!NOTE]
 > You should test all dynamic code paths thoroughly when porting your app to .NET Native.

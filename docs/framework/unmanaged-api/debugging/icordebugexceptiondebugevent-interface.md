@@ -2,8 +2,6 @@
 title: "ICorDebugExceptionDebugEvent Interface"
 ms.date: "03/30/2017"
 ms.assetid: f9ba60d8-b54d-417e-bb3e-fde4b41ca44c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionDebugEvent Interface
 Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) interface to support exception events.  

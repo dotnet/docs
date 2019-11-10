@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "strong-name bypass feature"
   - "strong-named assemblies, loading into trusted application domains"
 ms.assetid: 234e088c-3b11-495a-8817-e0962be79d82
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Disable the strong-name bypass feature
 Starting with the .NET Framework version 3.5 Service Pack 1 (SP1), strong-name signatures are not validated when an assembly is loaded into a full-trust <xref:System.AppDomain> object, such as the default <xref:System.AppDomain> for the `MyComputer` zone. This is referred to as the strong-name bypass feature. In a full-trust environment, demands for <xref:System.Security.Permissions.StrongNameIdentityPermission> always succeed for signed, full-trust assemblies regardless of their signature. The only restriction is that the assembly must be fully trusted because its zone is fully trusted. Because the strong name is not a determining factor under these conditions, there is no reason for it to be validated. Bypassing the validation of strong-name signatures provides significant performance improvements.  

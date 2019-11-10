@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateVersionStringFromModule Function
 Creates a version string from a common language runtime (CLR) path in a target process.  

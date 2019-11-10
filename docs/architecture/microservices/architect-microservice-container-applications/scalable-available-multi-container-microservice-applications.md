@@ -56,11 +56,11 @@ In figure 4-24 you can see the structure of a Kubernetes cluster where a master 
 
 In the development environment, [Docker announced in July 2018](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/) that Kubernetes can also run in a single development machine (Windows 10 or macOS) by simply installing [Docker Desktop](https://docs.docker.com/install/). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-25.
 
-![Diagram showing Kubernetes on a dev machine then deployed to AKS](./media/scalable-available-multi-container-microservice-applications/kubernetes-development-environment.png) 
+![Diagram showing Kubernetes on a dev machine then deployed to AKS](./media/scalable-available-multi-container-microservice-applications/kubernetes-development-environment.png)
 
 **Figure 4-25**. Running Kubernetes in dev machine and the cloud
 
-## Getting started with Azure Kubernetes Service (AKS) 
+## Getting started with Azure Kubernetes Service (AKS)
 
 To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more information on deploying a Kubernetes cluster in Azure, see [Deploy an Azure Kubernetes Service (AKS) cluster](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
 

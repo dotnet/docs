@@ -129,7 +129,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  Client:  
   
-```  
+```console  
 Calling soap://stockservice.contoso.com/wse/samples/2003/06/TcpSyncStockService  
   
 Symbol: FABRIKAM  
@@ -153,7 +153,7 @@ Press enter.
   
  Server:  
   
-```  
+```console  
 Listening for messages at soap://stockservice.contoso.com/wse/samples/2003/06/TcpSyncStockService  
   
 Press any key to exit when done...  

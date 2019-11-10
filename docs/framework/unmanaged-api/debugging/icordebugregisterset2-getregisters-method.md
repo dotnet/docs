@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: dbc498a8-ba3f-42f2-bdd9-b623c77a1019
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet2::GetRegisters Method
 Gets the value of each register (for the platform on which code is currently executing) that is specified by the given bit mask.  

@@ -2,8 +2,6 @@
 title: "ICorDebugStaticFieldSymbol::GetAddress Method"
 ms.date: "03/30/2017"
 ms.assetid: 5a6c9a5a-ec72-4c40-a9c3-cee7baa63687
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStaticFieldSymbol::GetAddress Method
 Gets the address of a static field.  

@@ -35,15 +35,15 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
         public double Add(double n1, double n2)  
         {  
             return n1 + n2;  
-        }  
-  
-    //Other operations omitted…  
+        }
+        // Other operations omitted…
+    }
     ```  
   
 3. Define a namespace for the `ICalculator` and `CalculatorService` implementations by wrapping them in a namespace block.  
   
     ```csharp
-    namespace Microsoft.Ajax.Samples  
+    namespace Microsoft.Ajax.Samples
     {  
         //Include the code for ICalculator and Caculator here.  
     }  

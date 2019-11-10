@@ -8,8 +8,6 @@ api_location:
 api_type: 
   - "DLLExport"
 ms.assetid: 8029633c-b6e4-4665-a7c2-89607c3247ef
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CertFreeAuthenticodeSignerInfo Function
 Frees resources allocated for the [AXL_AUTHENTICODE_SIGNER_INFO](axl-authenticode-signer-info-structure.md) structure.  

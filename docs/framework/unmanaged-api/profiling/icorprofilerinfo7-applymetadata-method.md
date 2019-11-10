@@ -10,8 +10,6 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: a1bfb649-4584-4d35-b3e6-8fe59b53992a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo7::ApplyMetaData Method
 [Supported in the .NET Framework 4.6.1 and later versions]  

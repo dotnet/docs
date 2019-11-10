@@ -11,7 +11,7 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
   
 - Loose (uncompiled) [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files (.xaml).  
   
-- [!INCLUDE[TLA#tla_xbap](../../../../includes/tlasharptla-xbap-md.md)] (.xbap).  
+- XAML browser application (XBAP) (.xbap).  
   
  For files of these types, Windows Presentation Foundation (WPF) Host:  
   

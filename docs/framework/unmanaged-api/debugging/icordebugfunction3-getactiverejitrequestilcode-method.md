@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 88584574-ade5-45b2-9778-489ed5c4dd7f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction3::GetActiveReJitRequestILCode Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

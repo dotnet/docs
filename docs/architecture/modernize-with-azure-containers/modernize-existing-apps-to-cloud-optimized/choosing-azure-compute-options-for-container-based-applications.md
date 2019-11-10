@@ -21,7 +21,7 @@ After a deeper analysis of the application’s needs, the product selected could
 
 In Figure 1, you can see a breakdown of different kinds of apps and their ideal Azure hosting scenarios.
 
-![Figure 1](./media/image8.5.png)
+![Table of which Azure hosting scenarios are best for different apps.](./media/choosing-azure-compute-options-for-container-based-applications/azure-hosting-scenarios-for-apps.png)
 
 > [!div class="step-by-step"]
 > [Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

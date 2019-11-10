@@ -68,7 +68,7 @@ You use the [struct](../../language-reference/keywords/struct.md), [class](../..
 
 It is important to understand two fundamental points about the type system in .NET:
 
-- It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=nameWithType> (C# keyword: [int](../../language-reference/builtin-types/integral-numeric-types.md)), derive ultimately from a single base type, which is <xref:System.Object?displayProperty=nameWithType> (C# keyword: [object](../../language-reference/keywords/object.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../classes-and-structs/inheritance.md).
+- It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=nameWithType> (C# keyword: [int](../../language-reference/builtin-types/integral-numeric-types.md)), derive ultimately from a single base type, which is <xref:System.Object?displayProperty=nameWithType> (C# keyword: [object](../../language-reference/builtin-types/reference-types.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../classes-and-structs/inheritance.md).
 
 - Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET class library and also your own user-defined types. Types that you define by using the [struct](../../language-reference/keywords/struct.md) keyword are value types; all the built-in numeric types are `structs`. Types that you define by using the [class](../../language-reference/keywords/class.md) keyword are reference types. Reference types and value types have different compile-time rules, and different run-time behavior.
 
@@ -120,7 +120,7 @@ All enums inherit from <xref:System.Enum?displayProperty=nameWithType>, which in
 
 ### Reference types
 
-A type that is defined as a [class](../../language-reference/keywords/class.md), [delegate](../../language-reference/keywords/delegate.md), array, or [interface](../../language-reference/keywords/interface.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../language-reference/keywords/null.md) until you explicitly create an object by using the [new](../../language-reference/operators/new-operator.md) operator, or assign it an object that has been created elsewhere by using `new`, as shown in the following example:
+A type that is defined as a [class](../../language-reference/keywords/class.md), [delegate](../../language-reference/builtin-types/reference-types.md), array, or [interface](../../language-reference/keywords/interface.md) is a *reference type*. At run time, when you declare a variable of a reference type, the variable contains the value [null](../../language-reference/keywords/null.md) until you explicitly create an object by using the [new](../../language-reference/operators/new-operator.md) operator, or assign it an object that has been created elsewhere by using `new`, as shown in the following example:
 
 ```csharp
 MyClass mc = new MyClass();
@@ -160,7 +160,7 @@ stringList.Add("String example");
 stringList.Add(4);
 ```
 
-The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../language-reference/keywords/object.md). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `stringList` object in the previous example. For more information, see [Generics](../generics/index.md).
+The use of the type parameter makes it possible to reuse the same class to hold any type of element, without having to convert each element to [object](../../language-reference/builtin-types/reference-types.md). Generic collection classes are called *strongly-typed collections* because the compiler knows the specific type of the collection's elements and can raise an error at compile-time if, for example, you try to add an integer to the `stringList` object in the previous example. For more information, see [Generics](../generics/index.md).
 
 ## Implicit types, anonymous types, and nullable value types
 
@@ -168,7 +168,7 @@ As stated previously, you can implicitly type a local variable (but not class me
 
 In some cases, it is inconvenient to create a named type for simple sets of related values that you do not intend to store or pass outside method boundaries. You can create *anonymous types* for this purpose. For more information, see [Anonymous Types](../classes-and-structs/anonymous-types.md).
 
-Ordinary value types cannot have a value of [null](../../language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable value types](../nullable-types/index.md).
+Ordinary value types cannot have a value of [null](../../language-reference/keywords/null.md). However, you can create nullable value types by affixing a `?` after the type. For example, `int?` is an `int` type that can also have the value [null](../../language-reference/keywords/null.md). Nullable value types are instances of the generic struct type <xref:System.Nullable%601?displayProperty=nameWithType>. Nullable value types are especially useful when you are passing data to and from databases in which numeric values might be null. For more information, see [Nullable value types](../../language-reference/builtin-types/nullable-value-types.md).
 
 ## Related sections
 

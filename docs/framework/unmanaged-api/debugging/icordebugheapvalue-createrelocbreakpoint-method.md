@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 54d31e7b-b1e2-4f2b-8a4f-867b8759fe41
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue::CreateRelocBreakpoint Method
 This method is not implemented in the current version of the .NET Framework.  

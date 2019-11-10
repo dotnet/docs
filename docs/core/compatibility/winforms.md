@@ -2,13 +2,8 @@
 title: Windows Forms breaking changes - .NET Core
 description: Lists the breaking changes in Windows Forms for .NET Core.
 ms.date: "09/20/2019"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Breaking changes in Windows Forms
-
-> [!IMPORTANT]
-> This article is under construction. This is not a complete list of .NET Core breaking changes. For more information on .NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repository on GitHub.
 
 The following is a list of breaking changes in Windows Forms by .NET Core version.
 

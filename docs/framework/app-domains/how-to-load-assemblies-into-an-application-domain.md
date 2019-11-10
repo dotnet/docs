@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "application domains, loading assemblies"
   - "loading assemblies"
 ms.assetid: 1432aa2d-bd83-4346-bf3b-a1b7920e2aa9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Load Assemblies into an Application Domain
 There are several ways to load an assembly into an application domain. The recommended way is to use the `static` (`Shared` in Visual Basic) <xref:System.Reflection.Assembly.Load%2A> method of the <xref:System.Reflection.Assembly?displayProperty=nameWithType> class. Other ways assemblies can be loaded include:  

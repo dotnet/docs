@@ -5,8 +5,6 @@ ms.date: 03/10/2017
 helpviewer_keywords: 
   - "using static directive [C#]"
 ms.assetid: 8b8f9e34-c75e-469b-ba85-6f2eb4090314
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # using static directive (C# Reference)
 

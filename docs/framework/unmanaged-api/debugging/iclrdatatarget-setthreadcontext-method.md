@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 103c8502-81fe-40d7-9c1e-9008d8fb19e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::SetThreadContext Method
 Sets the current context of the specified thread in the target process. This method is called by the common language runtime (CLR) data access services.  

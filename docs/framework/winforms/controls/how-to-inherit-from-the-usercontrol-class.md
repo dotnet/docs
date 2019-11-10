@@ -7,8 +7,8 @@ helpviewer_keywords:
   - "user controls [Windows Forms], creating"
   - "composite controls [Windows Forms], creating"
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Inherit from the UserControl Class

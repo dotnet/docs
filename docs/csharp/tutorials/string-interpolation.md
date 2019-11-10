@@ -2,6 +2,7 @@
 title: String interpolation in C#
 description: Learn how to include formatted expression results in a result string in C# with string interpolation.
 author: pkulikov
+ms.technology: csharp-fundamentals
 ms.date: 09/02/2019
 ---
 # String interpolation in C\#

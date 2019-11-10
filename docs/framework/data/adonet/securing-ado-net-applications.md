@@ -42,7 +42,7 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  [Resources for Creating Secure Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms165101(v=vs.100))  
  Provides links to topics for creating secure applications.  
   
- [Security Bibliography](/visualstudio/ide/security-bibliography)  
+ [Security Bibliography](/visualstudio/ide/securing-applications)  
  Provides links to external resources available online and in print.  
   
 ## See also

@@ -100,7 +100,7 @@ As mentioned earlier in the architecture section, you can have several approache
 
 - Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
 
-- Using the [Outbox pattern](http://gistlabs.com/2014/05/the-outbox/). This is a transactional table to store the integration events (extending the local transaction).
+- Using the [Outbox pattern](https://www.kamilgrzybek.com/design/the-outbox-pattern/). This is a transactional table to store the integration events (extending the local transaction).
 
 For this scenario, using the full Event Sourcing (ES) pattern is one of the best approaches, if not *the* best. However, in many application scenarios, you might not be able to implement a full ES system. ES means storing only domain events in your transactional database, instead of storing current state data. Storing only domain events can have great benefits, such as having the history of your system available and being able to determine the state of your system at any moment in the past. However, implementing a full ES system requires you to rearchitect most of your system and introduces many other complexities and requirements. For example, you would want to use a database specifically made for event sourcing, such as [Event Store](https://eventstore.org/), or a document-oriented database such as Azure Cosmos DB, MongoDB, Cassandra, CouchDB, or RavenDB. ES is a great approach for this problem, but not the easiest solution unless you are already familiar with event sourcing.
 
@@ -134,7 +134,7 @@ When implementing the steps of publishing the events, you have these choices:
 
 Figure 6-22 shows the architecture for the first of these approaches.
 
-![One approach to handle atomicity when publishing events: use one transaction to commit event to an event-log table, and then another transaction to publish (used in eShopOnContainers)](./media/image23.png)
+![Diagram of atomicity when publishing without a worker microservice.](./media/subscribe-events/atomicity-publish-event-bus.png)
 
 **Figure 6-22**. Atomicity when publishing events to the event bus
 
@@ -142,7 +142,7 @@ The approach illustrated in Figure 6-22 is missing an additional worker microser
 
 About the second approach: you use the EventLog table as a queue and always use a worker microservice to publish the messages. In that case, the process is like that shown in Figure 6-23. This shows an additional microservice, and the table is the single source when publishing events.
 
-![Another approach to handle atomicity: Publish to an event-log table and then have another microservice (a background worker) publish the event.](./media/image24.png)
+![Diagram of atomicity when publishing with a worker microservice.](./media/subscribe-events/atomicity-publish-worker-microservice.png)
 
 **Figure 6-23**. Atomicity when publishing events to the event bus with a worker microservice
 
@@ -274,7 +274,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.Even
 
 The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 6-24.
 
-![Browser view of the process change notification on the user cart.](./media/image25.png)
+![Screenshot of a browser showing the price change notification on the user cart.](./media/subscribe-events/display-item-price-change.png)
 
 **Figure 6-24**. Displaying an item price change in a basket, as communicated by integration events
 
@@ -321,7 +321,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     <https://go.particular.net/eShopOnContainers>
 
 - **Event Driven Messaging** \
-    [http://soapatterns.org/design\_patterns/event\_driven\_messaging](http://soapatterns.org/design_patterns/event_driven_messaging)
+    <https://patterns.arcitura.com/soa-patterns/design_patterns/event_driven_messaging>
 
 - **Jimmy Bogard. Refactoring Towards Resilience: Evaluating Coupling** \
     <https://jimmybogard.com/refactoring-towards-resilience-evaluating-coupling/>

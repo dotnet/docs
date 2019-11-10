@@ -34,7 +34,7 @@ You will use the following steps to accomplish your task, as well as any other M
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
 ## Select the appropriate machine learning task
 
@@ -69,7 +69,7 @@ There are several ways to approach recommendation problems, such as recommending
 
 2. In Solution Explorer, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
-   ![copy if newer in VS](./media/movie-recommendation/copytoout.gif)
+   ![GIF of a user selecting copy if newer in VS.](./media/movie-recommendation/copy-to-output-if-newer.gif)
 
 ## Load your data
 
@@ -79,7 +79,7 @@ The recommendation ratings data is split into `Train` and `Test` datasets. The `
 
 Below is a preview of the data from your \*.csv files:
 
-![preview of data](./media/movie-recommendation/csv-dataset-preview.png)
+![Screenshot of the preview of the CVS dataset.](./media/movie-recommendation/csv-file-dataset-preview.png)
 
 In the \*.csv files, there are four columns:
 
@@ -98,7 +98,7 @@ You want to predict movie ratings, so the rating column is the `Label`. The othe
 | `movieId`      |               |
 | `timestamp`     |               |
 
-It's up to you to decide which `Features` are used to predict the `Label`. You can also use methods like [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md) to help with selecting the best `Features`.
+It's up to you to decide which `Features` are used to predict the `Label`. You can also use methods like [permutation feature importance](../how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md) to help with selecting the best `Features`.
 
 In this case, you should eliminate the `timestamp` column as a `Feature` because the timestamp does not really affect how a user rates a given movie and thus would not contribute to making a more accurate prediction:
 
@@ -167,11 +167,11 @@ There are three major concepts in ML.NET: [Data](../resources/glossary.md#data),
 
 Machine learning training algorithms require data in a certain format. `Transformers` are used to transform tabular data to a compatible format.
 
-![transformer image](./media/movie-recommendation/transformer.png)
+![Diagram of the Transformer dataflow.](./media/movie-recommendation/data-transformer-transformed.png)
 
 You create `Transformers` in ML.NET by creating `Estimators`. `Estimators` take in data and return `Transformers`.
 
-![estimator image](./media/movie-recommendation/estimator.png)
+![Diagram of the Estimator dataflow.](./media/movie-recommendation/data-estimator-transformer.png)
 
 The recommendation training algorithm you will use for training your model is an example of an `Estimator`.
 
@@ -316,7 +316,7 @@ Use the `PredictionEngine` to predict the rating by adding the following code to
 
 [!code-csharp[PredictionEngine](~/samples/machine-learning/tutorials/MovieRecommendation/Program.cs#PredictionEngine "Create Prediction Engine")]
 
-The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](https://docs.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/serve-model-web-api-ml-net#register-predictionenginepool-for-use-in-the-application)
+The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
 
 > [!NOTE]
 > `PredictionEnginePool` service extension is currently in preview.
@@ -369,7 +369,7 @@ Add the following as the next line of code in the `Main()` method to call your `
 
 ### Use your saved model
 
-Once you have saved your trained model, you can consume the model in different environments (see the ["How-to guide"](../how-to-guides/consuming-model-ml-net.md) to learn how to operationalize a trained machine learning model in apps).
+Once you have saved your trained model, you can consume the model in different environments. See [Save and load trained models](../how-to-guides/save-load-machine-learning-models-ml-net.md) to learn how to operationalize a trained machine learning model in apps.
 
 ## Results
 
@@ -416,7 +416,7 @@ There are several ways that you can improve the performance of your model so tha
 
 Adding more training data that has enough samples for each user and movie id can help improve the quality of the recommendation model.
 
-[Cross validation](../how-to-guides/train-cross-validation-ml-net.md) is a technique for evaluating models that randomly splits up data into subsets (instead of extracting out test data from the dataset like you did in this tutorial) and takes some of the groups as train data and some of the groups as test data. This method outperforms making a train-test split in terms of model quality.
+[Cross validation](../how-to-guides/train-machine-learning-model-cross-validation-ml-net.md) is a technique for evaluating models that randomly splits up data into subsets (instead of extracting out test data from the dataset like you did in this tutorial) and takes some of the groups as train data and some of the groups as test data. This method outperforms making a train-test split in terms of model quality.
 
 ### Features
 
@@ -424,7 +424,7 @@ In this tutorial, you only use the three `Features` (`user id`, `movie id`, and 
 
 While this is a good start, in reality you might want to add other attributes or `Features` (for example, age, gender, geo-location, etc.) if they are included in the dataset. Adding more relevant `Features` can help improve the performance of your recommendation model.
 
-If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [Feature Permutation Importance](../how-to-guides/determine-global-feature-importance-in-model.md), which ML.NET provides to discover the most influential `Features`.
+If you are unsure about which `Features` might be the most relevant for your machine learning task, you can also make use of Feature Contribution Calculation (FCC) and [permutation feature importance](../how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md), which ML.NET provides to discover the most influential `Features`.
 
 ### Algorithm hyperparameters
 

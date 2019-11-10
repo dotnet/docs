@@ -79,8 +79,8 @@ Model Builder accepts data from two sources, a SQL Server database or a local fi
 
 1. In the data step of the Model Builder tool, select *File* from the data source dropdown.
 1. Select the button next to the *Select a file* text box and use File Explorer to browse and select the *taxi-fare-test.csv* in the *Data* directory
-1. Choose *fare_amount* in the *Column to Predict (Label)* dropdown and navigate to the train step of the Model Builder tool.
-1. Expand the *Input Columns (Features)* dropdown and uncheck the *trip_time_in_secs* column to exclude it as a feature during training.
+1. Choose *fare_amount* in the *Column to Predict (Label)* dropdown.
+1. Expand the *Input Columns (Features)* dropdown and uncheck the *trip_time_in_secs* column to exclude it as a feature during training.  Navigate to the train step of the Model Builder tool.
 
 ## Train the model
 
@@ -122,7 +122,7 @@ Two projects will be created as a result of the training process.
     using TaxiFarePredictionML.Model;
     ```
 
-1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the fare amount is not part of the input. This is because the model will generate the prediction for it. 
+1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the fare amount is not part of the input. This is because the model will generate the prediction for it.
 
     ```csharp
     // Create sample data
@@ -136,7 +136,7 @@ Two projects will be created as a result of the training process.
     };
     ```
 
-1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model and uses it to make predictions on new data. 
+1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model and uses it to make predictions on new data.
 
     ```csharp
     // Make prediction
@@ -176,4 +176,4 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Regression](../resources/glossary.md#regression)
 - [Regression Model Metrics](../resources/metrics.md#metrics-for-regression)
-- [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml)
+- [NYC TLC Taxi Trip data set](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)

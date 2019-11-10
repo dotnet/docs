@@ -45,7 +45,7 @@ These challenges create new demands when using DevOps tools, so you'll have to d
 
 - How can we use Open Source tools/platforms for containers in Microsoft Azure?
 
-If you can answer all those questions, you'll be better prepared to move your applications (existing or new apps) to Docker containers. 
+If you can answer all those questions, you'll be better prepared to move your applications (existing or new apps) to Docker containers.
 
 ## Introduction to a generic end-to-end Docker application life cycle workflow
 

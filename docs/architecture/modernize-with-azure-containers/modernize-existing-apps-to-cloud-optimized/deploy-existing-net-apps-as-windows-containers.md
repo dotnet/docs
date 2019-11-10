@@ -148,11 +148,11 @@ The products in Azure supporting containers that are at the same time positioned
 
 - **Azure App Service**
 - **Azure Kubernetes Service (AKS and ACS)**
-- **Azure Batch** 
+- **Azure Batch**
 
 Then, Azure Container Registry is a high scalable container registry hosted in Azure that you can use from all the previous products when registering and deploying your custom container images.
 
-In addition, from your containers, you can consume other managed services in Azure like Azure SQL Database, Azure Redis cache, Azure Cosmos DB, etc. plus there are third-party solutions/platforms available in Azure Marketplace like Cloud Foundry and OpenShift where you can also use containers within Azure. 
+In addition, from your containers, you can consume other managed services in Azure like Azure SQL Database, Azure Redis cache, Azure Cosmos DB, etc. plus there are third-party solutions/platforms available in Azure Marketplace like Cloud Foundry and OpenShift where you can also use containers within Azure.
 
 In the next sections, you can explore Microsoft's recommendations on when to use each of those Azure products and solutions specifically when targeting Windows Containers.
 

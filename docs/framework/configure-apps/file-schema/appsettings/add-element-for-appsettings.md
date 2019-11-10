@@ -7,10 +7,9 @@ helpviewer_keywords:
   - "add Element"
   - "<add> Element"
 ms.assetid: 8734efdc-00f6-4a65-bba6-084c5bc65246
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # \<add> element for \<appSettings>
 
 Adds a custom application setting.

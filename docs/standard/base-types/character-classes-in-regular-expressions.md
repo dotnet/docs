@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "characters, matching syntax"
   - ".NET Framework regular expressions, character classes"
 ms.assetid: 0f8bffab-ee0d-4e0e-9a96-2b4a252bb7e4
-author: "rpetrusha"
-ms.author: "ronpet"
 ms.custom: seodec18
 ---
 # Character classes in regular expressions

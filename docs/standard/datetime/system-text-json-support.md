@@ -208,11 +208,11 @@ The following levels of granularity are defined for formatting:
 2. 'Date time'
     1. "yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"
 
-        Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> without fractional seconds but with a UTC offset.
+        Used to format a <xref:System.DateTime> without fractional seconds but with a UTC offset.
 
     2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFFZ"
 
-        Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a UTC offset.
+        Used to format a <xref:System.DateTime> with fractional seconds and with a UTC offset.
 
     3. "yyyy'-'MM'-'dd'T'HH':'mm':'ss('+'/'-')HH':'mm"
 

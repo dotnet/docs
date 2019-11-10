@@ -19,7 +19,7 @@ ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
 ms.custom: seodec18
 ---
 # Anchors in Regular Expressions
-<a name="top"></a> Anchors, or atomic zero-width assertions, specify a position in the string where a match must occur. When you use an anchor in your search expression, the regular expression engine does not advance through the string or consume characters; it looks for a match in the specified position only. For example, `^` specifies that the match must start at the beginning of a line or string. Therefore, the regular expression `^http:` matches "http:" only when it occurs at the beginning of a line. The following table lists the anchors supported by the regular expressions in .NET.  
+Anchors, or atomic zero-width assertions, specify a position in the string where a match must occur. When you use an anchor in your search expression, the regular expression engine does not advance through the string or consume characters; it looks for a match in the specified position only. For example, `^` specifies that the match must start at the beginning of a line or string. Therefore, the regular expression `^http:` matches "http:" only when it occurs at the beginning of a line. The following table lists the anchors supported by the regular expressions in .NET.  
   
 |Anchor|Description|  
 |------------|-----------------|  
@@ -57,9 +57,7 @@ ms.custom: seodec18
 |`\s\d{4}`|Match a space followed by four decimal digits.|  
 |<code>(-(\d{4}&#124;present))?</code>|Match zero or one occurrence of a hyphen followed by four decimal digits or the string "present". This is the sixth capturing group. It also includes a seventh capturing group.|  
 |`,?`|Match zero or one occurrence of a comma.|  
-|<code>(\s\d{4}(-(\d{4}&#124;present))?,?)+</code>|Match one or more occurrences of the following: a space, four decimal digits, zero or one occurrence of a hyphen followed by four decimal digits or the string "present", and zero or one comma. This is the fifth capturing group.|  
-  
- [Back to top](#top)  
+|<code>(\s\d{4}(-(\d{4}&#124;present))?,?)+</code>|Match one or more occurrences of the following: a space, four decimal digits, zero or one occurrence of a hyphen followed by four decimal digits or the string "present", and zero or one comma. This is the fifth capturing group.| 
   
 <a name="End"></a>   
 ## End of String or Line: $  
@@ -70,9 +68,7 @@ ms.custom: seodec18
  The following example adds the `$` anchor to the regular expression pattern used in the example in the [Start of String or Line](#Start) section. When used with the original input string, which includes five lines of text, the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=nameWithType> method is unable to find a match, because the end of the first line does not match the `$` pattern. When the original input string is split into a string array, the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=nameWithType> method succeeds in matching each of the five lines. When the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method is called with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType>, no matches are found because the regular expression pattern does not account for the carriage return element (\u+000D). However, when the regular expression pattern is modified by replacing `$` with `\r?$`, calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> again finds five matches.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/endofstring1.cs#2)]
- [!code-vb[Conceptual.RegEx.Language.Assertions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/endofstring1.vb#2)]  
-  
- [Back to top](#top)  
+ [!code-vb[Conceptual.RegEx.Language.Assertions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/endofstring1.vb#2)]     
   
 <a name="StartOnly"></a>   
 ## Start of String Only: \A  
@@ -81,9 +77,7 @@ ms.custom: seodec18
  The following example is similar to the examples for the `^` and `$` anchors. It uses the `\A` anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The input string includes five lines. The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method finds only the first substring in the input string that matches the regular expression pattern. As the example shows, the <xref:System.Text.RegularExpressions.RegexOptions.Multiline> option has no effect.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/startofstring2.cs#3)]
- [!code-vb[Conceptual.RegEx.Language.Assertions#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/startofstring2.vb#3)]  
-  
- [Back to top](#top)  
+ [!code-vb[Conceptual.RegEx.Language.Assertions#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/startofstring2.vb#3)]     
   
 <a name="EndOrNOnly"></a>   
 ## End of String or Before Ending Newline: \Z  
@@ -94,9 +88,7 @@ ms.custom: seodec18
  The following example uses the `\Z` anchor in a regular expression that is similar to the example in the [Start of String or Line](#Start) section, which extracts information about the years during which some professional baseball teams existed. The subexpression `\r?\Z` in the regular expression `^((\w+(\s?)){2,}),\s(\w+\s\w+),(\s\d{4}(-(\d{4}|present))?,?)+\r?\Z` matches the end of a string, and also matches a string that ends with `\n` or `\r\n`. As a result, each element in the array matches the regular expression pattern.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/endofstring2.cs#4)]
- [!code-vb[Conceptual.RegEx.Language.Assertions#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/endofstring2.vb#4)]  
-  
- [Back to top](#top)  
+ [!code-vb[Conceptual.RegEx.Language.Assertions#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/endofstring2.vb#4)]     
   
 <a name="EndOnly"></a>   
 ## End of String Only: \z  
@@ -105,9 +97,7 @@ ms.custom: seodec18
  The following example uses the `\z` anchor in a regular expression that is otherwise identical to the example in the previous section, which extracts information about the years during which some professional baseball teams existed. The example tries to match each of five elements in a string array with the regular expression pattern `^((\w+(\s?)){2,}),\s(\w+\s\w+),(\s\d{4}(-(\d{4}|present))?,?)+\r?\z`. Two of the strings end with carriage return and line feed characters, one ends with a line feed character, and two end with neither a carriage return nor a line feed character. As the output shows, only the strings without a carriage return or line feed character match the pattern.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/endofstring3.cs#5)]
- [!code-vb[Conceptual.RegEx.Language.Assertions#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/endofstring3.vb#5)]  
-  
- [Back to top](#top)  
+ [!code-vb[Conceptual.RegEx.Language.Assertions#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/endofstring3.vb#5)]    
   
 <a name="Contiguous"></a>   
 ## Contiguous Matches: \G  
@@ -127,9 +117,7 @@ ms.custom: seodec18
 |`\s?`|Match zero or one space.|  
 |`\w*`|Match zero or more word characters.|  
 |`(\w+\s?\w*)`|Match one or more word characters followed by zero or one space, followed by zero or more word characters. This is the first capturing group.|  
-|`,?`|Match zero or one occurrence of a literal comma character.|  
-  
- [Back to top](#top)  
+|`,?`|Match zero or one occurrence of a literal comma character.|     
   
 <a name="WordBoundary"></a>   
 ## Word Boundary: \b  
@@ -148,8 +136,6 @@ ms.custom: seodec18
 |`are`|Match the substring "are".|  
 |`\w*`|Match zero or more word characters.|  
 |`\b`|End the match at a word boundary.|  
-  
- [Back to top](#top)  
   
 <a name="NonwordBoundary"></a>   
 ## Non-Word Boundary: \B  

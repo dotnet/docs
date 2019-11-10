@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
 ---
 # Substitutions in Regular Expressions
-<a name="Top"></a> Substitutions are language elements that are recognized only within replacement patterns. They use a regular expression pattern to define all or part of the text that is to replace matched text in the input string. The replacement pattern can consist of one or more substitutions along with literal characters. Replacement patterns are provided to overloads of the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method that have a `replacement` parameter and to the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method. The methods replace the matched pattern with the pattern that is defined by the `replacement` parameter.  
+Substitutions are language elements that are recognized only within replacement patterns. They use a regular expression pattern to define all or part of the text that is to replace matched text in the input string. The replacement pattern can consist of one or more substitutions along with literal characters. Replacement patterns are provided to overloads of the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method that have a `replacement` parameter and to the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method. The methods replace the matched pattern with the pattern that is defined by the `replacement` parameter.  
   
  The .NET Framework defines the substitution elements listed in the following table.  
   
@@ -64,8 +64,6 @@ ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
 |`\d*`|Match zero or more decimal digits.|  
 |`(\s?\d+[.,]?\d*)`|Match a white space followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the first capturing group. Because the replacement pattern is `$1`, the call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method replaces the entire matched substring with this captured group.|  
   
- [Back to top](#Top)  
-  
 <a name="Named"></a>   
 ## Substituting a Named Group  
  The `${`*name*`}` language element substitutes the last substring matched by the *name* capturing group, where *name* is the name of a capturing group defined by the `(?<`*name*`>)` language element. For more information about named capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
@@ -89,8 +87,6 @@ ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
 |`[.,]?`|Match zero or one period or comma.|  
 |`\d*`|Match zero or more decimal digits.|  
 |`(?<amount>\s?\d[.,]?\d*)`|Match a white space, followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the capturing group named `amount`. Because the replacement pattern is `${amount}`, the call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method replaces the entire matched substring with this captured group.|  
-  
- [Back to top](#Top)  
   
 <a name="DollarSign"></a>   
 ## Substituting a "$" Character  
@@ -130,8 +126,6 @@ ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
   
  The `"$&"` replacement pattern adds a literal quotation mark to the beginning and end of each match.  
   
- [Back to top](#Top)  
-  
 <a name="BeforeMatch"></a>   
 ## Substituting the Text Before the Match  
  The ``$` `` substitution replaces the matched string with the entire input string before the match. That is, it duplicates the input string up to the match while removing the matched text. Any text that follows the matched text is unchanged in the result string. If there are multiple matches in an input string, the replacement text is derived from the original input string, rather than from the string in which text has been replaced by earlier matches. \(The example provides an illustration.\) If there is no match, the ``$` `` substitution has no effect.  
@@ -149,9 +143,7 @@ ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
 |2|5|aa1bb|aaaabb**aa1bb**cc3dd4ee5|  
 |3|8|aa1bb2cc|aaaabbaa1bbcc**aa1bb2cc**dd4ee5|  
 |4|11|aa1bb2cc3dd|aaaabbaa1bbccaa1bb2ccdd**aa1bb2cc3dd**ee5|  
-|5|14|aa1bb2cc3dd4ee|aaaabbaa1bbccaa1bb2ccddaa1bb2cc3ddee**aa1bb2cc3dd4ee**|  
-  
- [Back to top](#Top)  
+|5|14|aa1bb2cc3dd4ee|aaaabbaa1bbccaa1bb2ccddaa1bb2cc3ddee**aa1bb2cc3dd4ee**| 
   
 <a name="AfterMatch"></a>   
 ## Substituting the Text After the Match  
@@ -172,8 +164,6 @@ ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
 |4|11|ee5|aabb2cc3dd4ee5bbcc3dd4ee5ccdd4ee5dd**ee5**ee5|  
 |5|14|<xref:System.String.Empty?displayProperty=nameWithType>|aabb2cc3dd4ee5bbcc3dd4ee5ccdd4ee5ddee5ee|  
   
- [Back to top](#Top)  
-  
 <a name="LastGroup"></a>   
 ## Substituting the Last Captured Group  
  The `$+` substitution replaces the matched string with the last captured group. If there are no captured groups or if the value of the last captured group is <xref:System.String.Empty?displayProperty=nameWithType>, the `$+` substitution has no effect.  
@@ -192,8 +182,6 @@ ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
 |`\s`|Match a white-space character.|  
 |`\1`|Match the first captured group.|  
 |`\b`|End the match at a word boundary.|  
-  
- [Back to top](#Top)  
   
 <a name="EntireString"></a>   
 ## Substituting the Entire Input String  

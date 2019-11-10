@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: f7180fc5-dd41-42d4-8a8e-1b34288e06de
 ---
 # Reflection and Generic Types
-<a name="top"></a> From the point of view of reflection, the difference between a generic type and an ordinary type is that a generic type has associated with it a set of type parameters (if it is a generic type definition) or type arguments (if it is a constructed type). A generic method differs from an ordinary method in the same way.  
+From the point of view of reflection, the difference between a generic type and an ordinary type is that a generic type has associated with it a set of type parameters (if it is a generic type definition) or type arguments (if it is a constructed type). A generic method differs from an ordinary method in the same way.  
   
  There are two keys to understanding how reflection handles generic types and methods:  
   
@@ -56,9 +56,7 @@ ms.assetid: f7180fc5-dd41-42d4-8a8e-1b34288e06de
  Generic type and method definitions are the templates from which instantiable types are created. Generic types in the .NET Framework class library, such as <xref:System.Collections.Generic.Dictionary%602>, are generic type definitions.  
   
 ### Is the Type or Method Open or Closed?  
- A generic type or method is closed if instantiable types have been substituted for all its type parameters, including all the type parameters of all enclosing types. You can only create an instance of a generic type if it is closed. The <xref:System.Type.ContainsGenericParameters%2A?displayProperty=nameWithType> property returns `true` if a type is open. For methods, the <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A?displayProperty=nameWithType> method performs the same function.  
-  
- [Back to top](#top)  
+ A generic type or method is closed if instantiable types have been substituted for all its type parameters, including all the type parameters of all enclosing types. You can only create an instance of a generic type if it is closed. The <xref:System.Type.ContainsGenericParameters%2A?displayProperty=nameWithType> property returns `true` if a type is open. For methods, the <xref:System.Reflection.MethodBase.ContainsGenericParameters%2A?displayProperty=nameWithType> method performs the same function.   
   
 <a name="generating_closed_generic_types"></a>   
 ## Generating Closed Generic Types  
@@ -69,9 +67,7 @@ ms.assetid: f7180fc5-dd41-42d4-8a8e-1b34288e06de
   
  For example, if you have a <xref:System.Type> object representing `Dictionary<int, string>` (`Dictionary(Of Integer, String)` in Visual Basic) and you want to create the type `Dictionary<string, MyClass>`, you can use the <xref:System.Type.GetGenericTypeDefinition%2A> method to get a <xref:System.Type> representing `Dictionary<TKey, TValue>` and then use the <xref:System.Type.MakeGenericType%2A> method to produce a <xref:System.Type> representing `Dictionary<int, MyClass>`.  
   
- For an example of an open generic type that is not a generic type, see "Type Parameter or Type Argument" later in this topic.  
-  
- [Back to top](#top)  
+ For an example of an open generic type that is not a generic type, see "Type Parameter or Type Argument" later in this topic.   
   
 <a name="examining_type_arguments"></a>   
 ## Examining Type Arguments and Type Parameters  
@@ -126,15 +122,11 @@ generic<typename V, typename W> ref class D : B<int, V> {};
  To determine whether a type parameter is covariant or contravariant, apply the <xref:System.Reflection.GenericParameterAttributes.VarianceMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, the type parameter is invariant. See [Covariance and Contravariance](../../standard/generics/covariance-and-contravariance.md).  
   
 #### Special Constraints  
- To determine the special constraints of a type parameter, apply the <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, there are no special constraints. A type parameter can be constrained to be a reference type, to be a non-nullable value type, and to have a parameterless constructor.  
-  
- [Back to top](#top)  
+ To determine the special constraints of a type parameter, apply the <xref:System.Reflection.GenericParameterAttributes.SpecialConstraintMask?displayProperty=nameWithType> mask to the <xref:System.Reflection.GenericParameterAttributes> value that is returned by the <xref:System.Type.GenericParameterAttributes%2A> property. If the result is <xref:System.Reflection.GenericParameterAttributes.None?displayProperty=nameWithType>, there are no special constraints. A type parameter can be constrained to be a reference type, to be a non-nullable value type, and to have a parameterless constructor.    
   
 <a name="invariants"></a>   
 ## Invariants  
  For a table of the invariant conditions for common terms in reflection for generic types, see <xref:System.Type.IsGenericType%2A?displayProperty=nameWithType>. For additional terms relating to generic methods, see <xref:System.Reflection.MethodBase.IsGenericMethod%2A?displayProperty=nameWithType>.  
-  
- [Back to top](#top)  
   
 <a name="related_topics"></a>   
 ## Related Topics  

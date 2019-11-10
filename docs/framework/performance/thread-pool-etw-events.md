@@ -9,7 +9,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Thread Pool ETW Events
-<a name="top"></a> These events collect information about worker and I/O threads.  
+These events collect information about worker and I/O threads.  
   
  There are two groups of thread pool events:  
   
@@ -118,8 +118,6 @@ ms.author: "mairaw"
 |NewcontrolSetting|win:Double|The number of active worker threads that will serve as the baseline for future variations in active thread count.|  
 |NewThreadWaveMagnitude|Win:UInt16|The magnitude of future variations in active thread count.|  
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
   
 <a name="io"></a>   
 ## I/O Thread Events  

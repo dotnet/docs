@@ -12,8 +12,6 @@ ms.author: "mairaw"
 ---
 # Security-Transparent Code, Level 2
 
-<a name="top"></a>
-
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
 Level 2 transparency was introduced in the .NET Framework 4. The three tenets of this model are transparent code, security-safe-critical code, and security-critical code.
@@ -99,8 +97,6 @@ The security attributes that are applied to a type also apply to the members tha
 
 - `SecuritySafeCritical`: The type or member is safe-critical. However, the type or member can be called from transparent (partially trusted) code and is as capable as any other critical code. The code must be audited for security.
 
-[Back to top](#top)
-
 <a name="override"></a>
 
 ## Override Patterns
@@ -114,8 +110,6 @@ The following table shows the method overrides allowed for level 2 transparency.
 |`SafeCritical`|`Transparent`|
 |`SafeCritical`|`SafeCritical`|
 |`Critical`|`Critical`|
-
-[Back to top](#top)
 
 <a name="inheritance"></a>
 
@@ -169,8 +163,6 @@ The following table shows the disallowed method inheritance patterns.
 
 > [!NOTE]
 > These inheritance rules apply to level 2 types and members. Types in level 1 assemblies can inherit from level 2 security-critical types and members. Therefore, level 2 types and members must have separate inheritance demands for level 1 inheritors.
-
-[Back to top](#top)
 
 <a name="additional"></a>
 

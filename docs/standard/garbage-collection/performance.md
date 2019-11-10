@@ -9,7 +9,7 @@ ms.assetid: c203467b-e95c-4ccf-b30b-953eb3463134
 ---
 # Garbage Collection and Performance
 
-<a name="top"></a> This topic describes issues related to garbage collection and memory usage. It addresses issues that pertain to the managed heap and explains how to minimize the effect of garbage collection on your applications. Each issue has links to procedures that you can use to investigate problems.
+This topic describes issues related to garbage collection and memory usage. It addresses issues that pertain to the managed heap and explains how to minimize the effect of garbage collection on your applications. Each issue has links to procedures that you can use to investigate problems.
 
 This topic contains the following sections:
 
@@ -66,8 +66,6 @@ Profilers can provide comprehensive information. However, complex profilers can 
 ### Application Domain Resource Monitoring
 
 Starting with the .NET Framework 4, Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md).
-
-[Back to top](#top)
 
 <a name="troubleshooting_performance_issues"></a>
 
@@ -207,8 +205,6 @@ The duration of a collection is primarily a factor of the number of objects that
 |------------------------|
 |[Determine if high CPU usage is caused by garbage collection.](#HighCPU)<br /><br /> [Set a breakpoint at the end of garbage collection.](#GenBreak)|
 
-[Back to top](#top)
-
 <a name="troubleshooting_guidelines"></a>
 
 ## Troubleshooting Guidelines
@@ -252,8 +248,6 @@ The following procedure describes how to set a breakpoint so that you can measur
   This command forces a break if **RestartEE** is executed after generation 2 objects have been reclaimed for garbage collection.
 
   In server garbage collection, only one thread calls **RestartEE**, so the breakpoint will occur only once during a generation 2 garbage collection.
-
-[Back to top](#top)
 
 <a name="performance_check_procedures"></a>
 

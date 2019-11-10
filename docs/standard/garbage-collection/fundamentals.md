@@ -14,7 +14,7 @@ ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
 ---
 # Fundamentals of garbage collection
 
-<a name="top"></a> In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:
+In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:
 
 - Enables you to develop your application without having to manually free memory for objects you create.
 
@@ -54,8 +54,6 @@ The following list summarizes important CLR memory concepts.
 
 Your page file is used even if physical memory pressure (that is, demand for physical memory) is low. The first time your physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it is needed, so it is possible to encounter paging in situations where the physical memory pressure is very low.
 
-[Back to top](#top)
-
 <a name="conditions_for_a_garbage_collection"></a>
 
 ## Conditions for a garbage collection
@@ -67,8 +65,6 @@ Garbage collection occurs when one of the following conditions is true:
 - The memory that is used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.
 
 - The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing.
-
-[Back to top](#top)
 
 <a name="the_managed_heap"></a>
 
@@ -92,8 +88,6 @@ The intrusiveness (frequency and duration) of garbage collections is the result 
 The heap can be considered as the accumulation of two heaps: the [large object heap](large-object-heap.md) and the small object heap.
 
 The [large object heap](large-object-heap.md) contains very large objects that are 85,000 bytes and larger. The objects on the large object heap are usually arrays. It is rare for an instance object to be extremely large.
-
-[Back to top](#top)
 
 <a name="generations"></a>
 
@@ -138,8 +132,6 @@ The ephemeral segment can include generation 2 objects. Generation 2 objects can
 
 The amount of freed memory from an ephemeral garbage collection is limited to the size of the ephemeral segment. The amount of memory that is freed is proportional to the space that was occupied by the dead objects.
 
-[Back to top](#top)
-
 <a name="what_happens_during_a_garbage_collection"></a>
 
 ## What happens during a garbage collection
@@ -170,8 +162,6 @@ The following illustration shows a thread that triggers a garbage collection and
 
 ![When a thread triggers a Garbage Collection](../../../docs/standard/garbage-collection/media/gc-triggered.png "When a thread triggers a Garbage Collection")
 
-[Back to top](#top)
-
 <a name="manipulating_unmanaged_resources"></a>
 
 ## Manipulating unmanaged resources
@@ -181,8 +171,6 @@ If your managed objects reference unmanaged objects by using their native file h
 Users of your managed object may not dispose the native resources used by the object. To perform the cleanup, you can make your managed object finalizable. Finalization consists of cleanup actions that you execute when the object is no longer in use. When your managed object dies, it performs cleanup actions that are specified in its finalizer method.
 
 When a finalizable object is discovered to be dead, its finalizer is put in a queue so that its cleanup actions are executed, but the object itself is promoted to the next generation. Therefore, you have to wait until the next garbage collection that occurs on that generation (which is not necessarily the next garbage collection) to determine whether the object has been reclaimed.
-
-[Back to top](#top)
 
 <a name="workstation_and_server_garbage_collection"></a>
 
@@ -242,8 +230,6 @@ The following are threading and performance considerations for server garbage co
 
 If you are running hundreds of instances of an application, consider using workstation garbage collection with concurrent garbage collection disabled. This will result in less context switching, which can improve performance.
 
-[Back to top](#top)
-
 <a name="concurrent_garbage_collection"></a>
 
 ## Concurrent garbage collection
@@ -264,8 +250,6 @@ The following illustration shows concurrent garbage collection performed on a se
 
 ![Concurrent Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-concurrent.png "Concurrent Garbage Collection Threads")
 
-[Back to top](#top)
-
 <a name="background_garbage_collection"></a>
 
 ## Background workstation garbage collection
@@ -284,8 +268,6 @@ Background garbage collection removes allocation restrictions imposed by concurr
 The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation:
 
 ![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png "Diagram that shows background workstation garbage collection.")
-
-[Back to top](#top)
 
 <a name="background_server_garbage_collection"></a>
 

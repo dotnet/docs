@@ -11,7 +11,6 @@ ms.author: "mairaw"
 
 # Method ETW Events
 
-<a name="top"></a>
 These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as the number of times a method was called.
 
 All method events have a level of "Informational (4)". All method verbose events have a level of "Verbose (5)".

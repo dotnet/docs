@@ -84,7 +84,7 @@ Namespaces: <xref:System>, <xref:System.Runtime.ExceptionServices>; assembly: ms
 
 | Feature | Differences from 3.5 SP1 | Recommended changes |
 | ------- | ------------------------ | ------------------- |
-| **Exceptions for corrupted process state** | The CLR no longer delivers exceptions for corrupted process state to exception handlers in managed code. | These exceptions indicate that the state of a process has been corrupted. We do not recommend that you run your application in this state.<br><br>For more information, see the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> and the entry [Handling Corrupted State Exceptions](https://msdn.microsoft.com/magazine/dd419661.aspx) in the MSDN magazine. |
+| **Exceptions for corrupted process state** | The CLR no longer delivers exceptions for corrupted process state to exception handlers in managed code. | These exceptions indicate that the state of a process has been corrupted. We do not recommend that you run your application in this state.<br><br>For more information, see the <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> and the entry [Handling Corrupted State Exceptions](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) in the MSDN magazine. |
 | **Execution engine exceptions** | <xref:System.ExecutionEngineException> is now obsolete, because a catchable exception will allow an unstable process to continue to run. This change improves predictability and reliability in the runtime. | Use an <xref:System.InvalidOperationException> to signal the condition. |
 
 ### Reflection
@@ -271,7 +271,7 @@ Namespaces: <xref:System.Xml.Linq>; <xref:System.Xml.Schema>, <xref:System.Xml.X
 | **Namespace attribute** | To prevent data corruption, an <xref:System.Xml.XPath.XPathNavigator> object now returns the local name of the `x:xmlns` attribute correctly. |
 | **Namespace declarations** | An <xref:System.Xml.XmlReader> object on a sub-tree no longer creates duplicate namespace declarations within one XML element. |
 | **Schema validation** | To prevent erroneous schema validation, the <xref:System.Xml.Schema.XmlSchemaSet> class allows for XSD schemas to be compiled correctly and consistently. These schemas can include other schemas; for example, `A.xsd` can include `B.xsd`, which can include `C.xsd`. Compiling any one of these causes this graph of dependencies to be traversed. |
-| **Script functions** | The [function-available function](https://msdn.microsoft.com/library/ms256124(v=vs.110).aspx) no longer incorrectly returns `false` when the function is actually available. |
+| **Script functions** | The [function-available function](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256124(v=vs.100)) no longer incorrectly returns `false` when the function is actually available. |
 | **URIs** | The <xref:System.Xml.Linq.XElement.Load%2A> method now returns the correct BaseURI in LINQ queries. |
 
 ### Validation

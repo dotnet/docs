@@ -48,13 +48,13 @@ The basic pattern creates a class that can handle one type. The factory pattern 
 
 The following sample is a converter that overrides default serialization for an existing data type. The converter uses mm/dd/yyyy format for `DateTimeOffset` properties.
 
-[!code-csharp[](~/samples/csharp/serialization-json/DateTimeOffsetConverter.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/DateTimeOffsetConverter.cs)]
 
 ## Sample factory pattern converter
 
 The following code shows a custom converter that works with `Dictionary<Enum,TValue>`. The code follows the factory pattern because the first generic type parameter is `Enum` and the second is open. The `CanConvert` method returns `true` only for a `Dictionary` with two generic parameters, the first of which is an `Enum` type. The inner converter gets an existing converter to handle whichever type is provided at runtime for `TValue`. 
 
-[!code-csharp[](~/samples/csharp/serialization-json/DictionaryTKeyEnumTValueConverter.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/DictionaryTKeyEnumTValueConverter.cs)]
 
 The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
 
@@ -106,11 +106,11 @@ If you do provide a message (for example, `throw new JsonException("Error occurr
 
 Here's an example that makes the `ExampleDateTimeOffsetConverter` the default for properties of type `DateTimeOffset`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RegisterConverterWithConvertersCollection.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RegisterConverterWithConvertersCollection.cs?name=SnippetSerialize)]
 
 Suppose you serialize the following type:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWF)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWF)]
 
 Here's an example of JSON output that shows the custom converter was used:
 
@@ -124,33 +124,33 @@ Here's an example of JSON output that shows the custom converter was used:
 
 The following code uses the same approach to deserialize using the custom `DateTimeOffset` converter:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RegisterConverterWithConvertersCollection.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RegisterConverterWithConvertersCollection.cs?name=SnippetDeserialize)]
 
 ## Registration sample - [JsonConverter] on a property
 
 The following code selects a custom converter for the `Date` property:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithConverter)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithConverter)]
 
 The code to serialize and deserialize `WeatherForecastWithConverter` doesn't require the use of `JsonSerializeOptions.Converters`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RegisterConverterWithAttributeOnProperty.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RegisterConverterWithAttributeOnProperty.cs?name=SnippetSerialize)]
 
-[!code-csharp[](~/samples/csharp/serialization-json/RegisterConverterWithAttributeOnProperty.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RegisterConverterWithAttributeOnProperty.cs?name=SnippetDeserialize)]
 
 ## Registration sample - [JsonConverter] on a type
 
 Here's code that creates a struct and applies the `[JsonConverter]` attribute to it:
 
-[!code-csharp[](~/samples/csharp/serialization-json/Temperature.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/Temperature.cs)]
 
 Here's the custom converter for the preceding struct:
 
-[!code-csharp[](~/samples/csharp/serialization-json/TemperatureConverter.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/TemperatureConverter.cs)]
 
 The `[JsonConvert]` attribute on the struct registers the custom converter as the default for properties of type `Temperature`. The converter is automatically used on the `TemperatureCelsius` property of the following type when you serialize or deserialize it:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithTemperatureStruct)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithTemperatureStruct)]
 
 ## Converter registration precedence
 
@@ -182,15 +182,15 @@ For scenarios that require type inference, the following code shows a custom con
 * Strings to `string`
 * Everything else to `JsonElement`
 
-[!code-csharp[](~/samples/csharp/serialization-json/ObjectToInferredTypesConverter.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/ObjectToInferredTypesConverter.cs)]
 
 The following code registers the converter:
 
-[!code-csharp[](~/samples/csharp/serialization-json/ConvertInferredTypesToObject.cs?name=SnippetRegister)]
+[!code-csharp[](~/samples/standard/serialization/csharp/ConvertInferredTypesToObject.cs?name=SnippetRegister)]
 
 Here's an example type with an Object property:
 
-```csharp[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithObjectProperties)]
+```csharp[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithObjectProperties)]
 
 The following example of JSON to deserialize contains values that will be deserialized as `DateTime`, `long`, and `string`:
 
@@ -212,15 +212,15 @@ The built-in support for dictionary collections is for `Dictionary<string, TValu
 
 The following code shows a custom converter that works with `Dictionary<Enum,TValue>`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/DictionaryTKeyEnumTValueConverter.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/DictionaryTKeyEnumTValueConverter.cs)]
 
 The following code registers the converter:
 
-[!code-csharp[](~/samples/csharp/serialization-json/ConvertDictionaryTkeyEnumTValue.cs?name=SnippetRegister)]
+[!code-csharp[](~/samples/standard/serialization/csharp/ConvertDictionaryTkeyEnumTValue.cs?name=SnippetRegister)]
 
 The converter can serialize and deserialize the `TemperatureRanges` property of the following class that uses the following `Enum`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithEnumDictionary)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithEnumDictionary)]
 
 The JSON output from serialization looks like the following example:
 
@@ -247,13 +247,13 @@ Suppose, for example, you have a `Person` abstract base class, with `Employee` a
 
 The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
 
-[!code-csharp[](~/samples/csharp/serialization-json/Person.cs?name=SnippetPerson)]
+[!code-csharp[](~/samples/standard/serialization/csharp/Person.cs?name=SnippetPerson)]
 
-[!code-csharp[](~/samples/csharp/serialization-json/PersonConverterWithTypeDiscriminator.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/PersonConverterWithTypeDiscriminator.cs)]
 
 The following code registers the converter:
 
-[!code-csharp[](~/samples/csharp/serialization-json/ConvertPolymorphic.cs?name=SnippetRegister)]
+[!code-csharp[](~/samples/standard/serialization/csharp/ConvertPolymorphic.cs?name=SnippetRegister)]
 
 The converter can deserialize JSON that was created by using the same converter to serialize, for example:
 

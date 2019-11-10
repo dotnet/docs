@@ -31,25 +31,25 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example creates JSON as a string:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToString.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToString.cs?name=SnippetSerialize)]
 
 The following example uses synchronous code to create a JSON file:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToFile.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToFile.cs?name=SnippetSerialize)]
 
 The following example uses asynchronous code to create a JSON file:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToFileAsync.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToFileAsync.cs?name=SnippetSerialize)]
 
 The preceding examples use type inference for the type being serialized. An overload of `Serialize()` takes a generic type parameter:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToString.cs?name=SnippetSerializeWithGenericParameter)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToString.cs?name=SnippetSerializeWithGenericParameter)]
 
 ### Serialization example
 
 Here's an example type that contains collections and nested classes:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
 
 The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified by default: 
 
@@ -98,7 +98,7 @@ The following example shows the same JSON, formatted (that is, pretty-printed wi
 
 To serialize to UTF-8, call the <xref:System.Text.Json.JsonSerializer.SerializeToUtf8Bytes%2A?displayProperty=nameWithType> method:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToUtf8.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToUtf8.cs?name=SnippetSerialize)]
 
 A <xref:System.Text.Json.JsonSerializer.Serialize%2A> overload that takes a <xref:System.Text.Json.Utf8JsonWriter> is also available.
 
@@ -132,15 +132,15 @@ To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example reads JSON from a string:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToString.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToString.cs?name=SnippetDeserialize)]
 
 To deserialize from a file by using synchronous code, read the file into a string, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToFile.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToFile.cs?name=SnippetDeserialize)]
 
 To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToFileAsync.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToFileAsync.cs?name=SnippetDeserialize)]
 
 For an example type and corresponding JSON, see the [Serialization example](#serialization-example) section.
 
@@ -148,9 +148,9 @@ For an example type and corresponding JSON, see the [Serialization example](#ser
 
 To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> overload that takes a `Utf8JsonReader` or a `ReadOnlySpan<byte>`, as shown in the following examples. The examples assume the JSON is in a byte array named jsonUtf8Bytes.
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToUtf8.cs?name=SnippetDeserialize1)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToUtf8.cs?name=SnippetDeserialize1)]
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToUtf8.cs?name=SnippetDeserialize2)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToUtf8.cs?name=SnippetDeserialize2)]
 
 ## Deserialization behavior
 
@@ -169,11 +169,11 @@ You can [implement custom converters](system-text-json-converters-how-to.md) to 
 
 To pretty-print the JSON output, set <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripToString.cs?name=SnippetSerializePrettyPrint)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripToString.cs?name=SnippetSerializePrettyPrint)]
 
 Here's an example type to be serialized and pretty-printed JSON output:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWF)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWF)]
 
 ```json
 {
@@ -201,7 +201,7 @@ To set the name of individual properties, use the [[JsonPropertyName]](xref:Syst
 
 Here's an example type to serialize and resulting JSON:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
 
 ```json
 {
@@ -221,11 +221,11 @@ The property name set by this attribute:
 
 To use camel case for all JSON property names, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundTripCamelCaePropertyNames.cs?name=Serialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundTripCamelCaePropertyNames.cs?name=Serialize)]
 
 Here's an example class to serialize and JSON output:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
 
 ```json
 {
@@ -245,15 +245,15 @@ The camel case property naming policy:
 
 To use a custom JSON property naming policy, create a class that derives from <xref:System.Text.Json.JsonNamingPolicy> and override the <xref:System.Text.Json.JsonNamingPolicy.ConvertName%2A> method, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/UpperCaseNamingPolicy.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/UpperCaseNamingPolicy.cs)]
 
 Then set the <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> property to an instance of your naming policy class:
 
-[!code-csharp[](~/samples/csharp/serialization-json/RoundtripPropertyNamingPolicy.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/RoundtripPropertyNamingPolicy.cs?name=SnippetSerialize)]
 
 Here's an example class to serialize and JSON output:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithPropertyNameAttribute)]
 
 ```json
 {
@@ -273,7 +273,7 @@ The JSON property naming policy:
 
 If a property of an object to be serialized is of type `Dictionary<string,TValue>`, the `string` keys can be converted to camel case. To do that, set <xref:System.Text.Json.JsonSerializerOptions.DictionaryKeyPolicy> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCamelCaseDictionaryKeys.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCamelCaseDictionaryKeys.cs?name=SnippetSerialize)]
 
 Serializing an object with a dictionary named `TemperatureRanges` that has key-value pairs `"ColdMinTemp", 20` and `"HotMinTemp", 40` would result in JSON output like the following example:
 
@@ -297,7 +297,7 @@ By default, enums are serialized as numbers. To serialize enum names as strings,
 
 For example, suppose you need to serialize the following class that has an enum:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithEnum)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithEnum)]
 
 If the Summary is `Hot`, by default the serialized JSON has the numeric value 3:
 
@@ -311,7 +311,7 @@ If the Summary is `Hot`, by default the serialized JSON has the numeric value 3:
 
 The following sample code serializes the enum names instead of the numeric values, and converts the names to camel case:
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCamelCaseDictionaryKeys.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCamelCaseDictionaryKeys.cs?name=SnippetSerialize)]
 
 The resulting JSON looks like the following example:
 
@@ -323,7 +323,7 @@ The resulting JSON looks like the following example:
 }
 ```
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCamelCaseDictionaryKeys.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCamelCaseDictionaryKeys.cs?name=SnippetDeserialize)]
 
 ## Exclude properties from serialization
 
@@ -339,7 +339,7 @@ To ignore individual properties, use the [[JsonIgnore]](xref:System.Text.Json.Se
 
 Here's an example type to serialize and JSON output:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithIgnoreAttribute)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithIgnoreAttribute)]
 
 ```json
 {
@@ -353,11 +353,11 @@ Here's an example type to serialize and JSON output:
 
 A property is read-only if it contains a public getter but not a public setter. To exclude all read-only properties, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreReadOnlyProperties?displayProperty=nameWithType> to `true`, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeExcludeReadOnlyProperties.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeExcludeReadOnlyProperties.cs?name=SnippetSerialize)]
 
 Here's an example type to serialize and JSON output:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithROProperty)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithROProperty)]
 
 ```json
 {
@@ -373,7 +373,7 @@ This option applies only to serialization. During deserialization, read-only pro
 
 To exclude all null value properties, set the <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues> property to `true`, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeExcludeNullValueProperties.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeExcludeNullValueProperties.cs?name=SnippetSerialize)]
 
 Here's an example object to serialize and JSON output:
 
@@ -408,9 +408,9 @@ By default, the serializer escapes all non-ASCII characters.  That is, it replac
 
 To serialize the character set(s) of one or more languages without escaping, specify [Unicode range(s)](xref:System.Text.Unicode.UnicodeRanges) when creating an instance of <xref:System.Text.Encodings.Web.JavaScriptEncoder?displayProperty=fullName>, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCustomEncoding.cs?name=SnippetUsings)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCustomEncoding.cs?name=SnippetUsings)]
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCustomEncoding.cs?name=SnippetLanguageSets)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCustomEncoding.cs?name=SnippetLanguageSets)]
 
 This code doesn't escape Cyrillic or Greek characters. If the `Summary` property is set to Cyrillic жарко, the `WeatherForecast` object is serialized as shown in this example:
 
@@ -428,9 +428,9 @@ To serialize all language sets without escaping, use <xref:System.Text.Unicode.U
 
 An alternative is to specify individual characters that you want to allow through without being escaped. The following example serializes only the first two characters of жарко:
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCustomEncoding.cs?name=SnippetUsings)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCustomEncoding.cs?name=SnippetUsings)]
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCustomEncoding.cs?name=SnippetSelectedCharacters)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCustomEncoding.cs?name=SnippetSelectedCharacters)]
 
 Here's an example of JSON produced by the preceding code:
 
@@ -446,9 +446,9 @@ Here's an example of JSON produced by the preceding code:
 
 To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping?displayProperty=nameWithType>, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCustomEncoding.cs?name=SnippetUsings)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCustomEncoding.cs?name=SnippetUsings)]
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializeCustomEncoding.cs?name=SnippetUnsafeRelaxed)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializeCustomEncoding.cs?name=SnippetUnsafeRelaxed)]
 
 > [!CAUTION]
 > The `UnsafeRelaxedJsonEscaping` encoder is more permissive than the default encoder on which characters are allowed to pass through unescaped:
@@ -462,13 +462,13 @@ To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncod
 
 Polymorphic serialization isn't supported when you specify at compile time the type to be serialized. For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastWithWind`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWF)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWF)]
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFDerived)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFDerived)]
 
 And suppose the type argument of the `Serialize` method at compile time is `WeatherForecast`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/SerializePolymorphic.cs?name=SnippetDefault)]
+[!code-csharp[](~/samples/standard/serialization/csharp/SerializePolymorphic.cs?name=SnippetDefault)]
 
 In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is actually a `WeatherForecastWithWind` object. Only the base class properties are serialized:
 
@@ -486,11 +486,11 @@ To serialize the properties of the derived type, use one of the following approa
 
 * Call an overload of <xref:System.Text.Json.JsonSerializer.Serialize%2A> that lets you specify the type at runtime:
 
-  [!code-csharp[](~/samples/csharp/serialization-json/SerializePolymorphic.cs?name=SnippetSerializeGetType)]
+  [!code-csharp[](~/samples/standard/serialization/csharp/SerializePolymorphic.cs?name=SnippetSerializeGetType)]
 
 * Declare the object to be serialized as `object`.
 
-  [!code-csharp[](~/samples/csharp/serialization-json/SerializePolymorphic.cs?name=SnippetSerializeObject)]
+  [!code-csharp[](~/samples/standard/serialization/csharp/SerializePolymorphic.cs?name=SnippetSerializeObject)]
 
 In the preceding example scenario, both approaches cause the `WindSpeed` property to be included in the JSON output:
 
@@ -510,7 +510,7 @@ For information about polymorphic deserialization, see [Support polymorphic dese
 By default, comments and trailing commas are not allowed in JSON. To allow comments in the JSON, set the <xref:System.Text.Json.JsonSerializerOptions.ReadCommentHandling?displayProperty=nameWithType> property to `JsonCommentHandling.Skip`.
 And to allow trailing commas, set the <xref:System.Text.Json.JsonSerializerOptions.AllowTrailingCommas?displayProperty=nameWithType> property to `true`. The following example shows how to allow both:
 
-[!code-csharp[](~/samples/csharp/serialization-json/DeserializeCommasComments.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/DeserializeCommasComments.cs?name=SnippetDeserialize)]
 
 Here's example JSON with comments and a trailing comma:
 
@@ -526,7 +526,7 @@ Here's example JSON with comments and a trailing comma:
 
 By default, deserialization looks for case-sensitive property name matches between JSON and the target object properties. To change that behavior, set the <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive?displayProperty=nameWithType> to `true`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/DeserializeCaseInsensitive.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/DeserializeCaseInsensitive.cs?name=SnippetDeserialize)]
 
 Here's example JSON with camel case property names. It can be deserialized into the following type that has Pascal case property names.
 
@@ -538,13 +538,13 @@ Here's example JSON with camel case property names. It can be deserialized into 
 }
 ```
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWF)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWF)]
 
 ## Handle overflow JSON
 
 While deserializing, you might receive data in the JSON that is not represented by properties of the target type. For example, suppose your target type is this:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWF)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWF)]
 
 And the JSON to be deserialized is this:
 
@@ -567,7 +567,7 @@ And the JSON to be deserialized is this:
 
 If you deserialize the JSON shown into the type shown, the `DatesAvailable` and `SummaryWords` properties have nowhere to go and are lost. To capture extra data such as these properties, apply the [JsonExtensionData](xref:System.Text.Json.Serialization.JsonExtensionDataAttribute) attribute to a property of type `Dictionary<string,object>` or `Dictionary<string,JsonElement>`:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithExtensionData)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithExtensionData)]
 
 When you deserialize the JSON shown earlier into this sample type, the extra data becomes key-value pairs of the `ExtensionData` property:
 
@@ -608,7 +608,7 @@ By default, if a property in JSON is null, the corresponding property in the tar
 
 For example, suppose the following code represents your target object:
 
-[!code-csharp[](~/samples/csharp/serialization-json/WeatherForecast.cs?name=SnippetWFWithDefault)]
+[!code-csharp[](~/samples/standard/serialization/csharp/WeatherForecast.cs?name=SnippetWFWithDefault)]
 
 And suppose the following JSON is deserialized:
 
@@ -624,7 +624,7 @@ After deserialization, the `Summary` property of the `WeatherForecastWithDefault
 
 To change this behavior, set <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType> to `true`, as shown in the following example:
 
-[!code-csharp[](~/samples/csharp/serialization-json/DeserializeIgnoreNull.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/DeserializeIgnoreNull.cs?name=SnippetDeserialize)]
 
 With this option, the `Summary` property of the `WeatherForecastWithDefault` object is the default value "No summary" after deserialization.
 
@@ -644,7 +644,7 @@ The following sections show how to use these tools for reading and writing JSON.
 
 The following example shows how to use the <xref:System.Text.Json.JsonDocument> class for random access to data:
 
-[!code-csharp[](~/samples/csharp/serialization-json/JsonDocumentDataAccess.cs?name=SnippetAverageGrades1)]
+[!code-csharp[](~/samples/standard/serialization/csharp/JsonDocumentDataAccess.cs?name=SnippetAverageGrades1)]
 
 The preceding code:
 
@@ -653,17 +653,17 @@ The preceding code:
 * Assigns a default grade of 70 for students who don't have a grade.
 * Counts students by incrementing a `count` variable with each iteration. An alternative is to call <xref:System.Text.Json.JsonElement.GetArrayLength%2A>, as shown in the following example:
 
-  [!code-csharp[](~/samples/csharp/serialization-json/JsonDocumentDataAccess.cs?name=SnippetAverageGrades2)]
+  [!code-csharp[](~/samples/standard/serialization/csharp/JsonDocumentDataAccess.cs?name=SnippetAverageGrades2)]
 
 Here's an example of the JSON that this code processes:
 
-[!code-json[](~/samples/csharp/serialization-json/GradesPrettyPrint.json)]
+[!code-json[](~/samples/standard/serialization/csharp/GradesPrettyPrint.json)]
 
 ## Use JsonDocument to write JSON
 
 The following example shows how to write JSON from a <xref:System.Text.Json.JsonDocument>:
 
-[!code-csharp[](~/samples/csharp/serialization-json/JsonDocumentWrite.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/JsonDocumentWrite.cs?name=SnippetSerialize)]
 
 The preceding code:
 
@@ -673,23 +673,23 @@ The preceding code:
 
 Here's an example of JSON input to be processed by the example code:
 
-[!code-json[](~/samples/csharp/serialization-json/Grades.json)]
+[!code-json[](~/samples/standard/serialization/csharp/Grades.json)]
 
 The result is the following pretty-printed JSON output:
 
-[!code-json[](~/samples/csharp/serialization-json/GradesPrettyPrint.json)]
+[!code-json[](~/samples/standard/serialization/csharp/GradesPrettyPrint.json)]
 
 ## Use Utf8JsonWriter
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonWriter> class:
 
-[!code-csharp[](~/samples/csharp/serialization-json/Utf8WriterToStream.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/Utf8WriterToStream.cs?name=SnippetSerialize)]
 
 ## Use Utf8JsonReader
 
 The following example shows how to use the <xref:System.Text.Json.Utf8JsonReader> class:
 
-[!code-csharp[](~/samples/csharp/serialization-json/Utf8ReaderFromBytes.cs?name=SnippetDeserialize)]
+[!code-csharp[](~/samples/standard/serialization/csharp/Utf8ReaderFromBytes.cs?name=SnippetDeserialize)]
 
 The preceding code assumes that the `jsonUtf8` variable is a byte array that contains valid JSON, encoded as UTF-8.
 
@@ -697,7 +697,7 @@ The preceding code assumes that the `jsonUtf8` variable is a byte array that con
 
 The following example shows how to read a file synchronously and search for a value:
 
-[!code-csharp[](~/samples/csharp/serialization-json/Utf8ReaderFromFile.cs)]
+[!code-csharp[](~/samples/standard/serialization/csharp/Utf8ReaderFromFile.cs)]
 
 The preceding code:
 
@@ -712,7 +712,7 @@ The preceding code:
 
 Here's a JSON sample that the preceding code can read. The resulting summary message is "2 out of 4 have names that end with 'University'":
 
-[!code-json[](~/samples/csharp/serialization-json/Universities.json)]
+[!code-json[](~/samples/standard/serialization/csharp/Universities.json)]
 
 ## Additional resources
 

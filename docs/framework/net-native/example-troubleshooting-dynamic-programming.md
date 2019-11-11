@@ -5,7 +5,7 @@ ms.assetid: 42ed860a-a022-4682-8b7f-7c9870784671
 ---
 # Example: Troubleshooting Dynamic Programming
 > [!NOTE]
-> This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
+> This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://docs.microsoft.com/dotnet/framework/net-native/index) (requires registration).  
   
  Not all metadata lookup failures in apps developed using the .NET Native tool chain result in an exception.  Some can manifest in unpredictable ways in an app.  The following example shows an access violation caused by referencing a null object:  
   

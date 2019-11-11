@@ -221,7 +221,6 @@ End Function
 The following code is a complete example that includes the `XForm` function. It includes a few of the typical uses of this type of transform:
 
 ```vb
-Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text

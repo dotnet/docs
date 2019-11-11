@@ -62,9 +62,8 @@ public bool ShouldSerializeMyFont() {
 Option Explicit
 Option Strict
 
-Imports System
-Imports System.Windows.Forms
 Imports System.Drawing
+Imports System.Windows.Forms
 
 Public Class MyControl
    Inherits Control

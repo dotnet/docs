@@ -6,7 +6,7 @@ ms.assetid: 7d0ac21a-6d90-4e2e-8903-528cb78615b7
 # Expression Trees (C#)
 Expression trees represent code in a tree-like data structure, where each node is an expression, for example, a method call or a binary operation such as `x < y`.  
   
- You can compile and run code represented by expression trees. This enables dynamic modification of executable code, the execution of LINQ queries in various databases, and the creation of dynamic queries. For more information about expression trees in LINQ, see [How to: Use Expression Trees to Build Dynamic Queries (C#)](./how-to-use-expression-trees-to-build-dynamic-queries.md).  
+ You can compile and run code represented by expression trees. This enables dynamic modification of executable code, the execution of LINQ queries in various databases, and the creation of dynamic queries. For more information about expression trees in LINQ, see [How to use expression trees to build dynamic queries (C#)](./how-to-use-expression-trees-to-build-dynamic-queries.md).
   
  Expression trees are also used in the dynamic language runtime (DLR) to provide interoperability between dynamic languages and the .NET Framework and to enable compiler writers to emit expression trees instead of Microsoft intermediate language (MSIL). For more information about the DLR, see [Dynamic Language Runtime Overview](../../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md).  
   
@@ -139,7 +139,7 @@ Console.WriteLine(expr.Compile()(4));
 // Also prints True.  
 ```  
   
- For more information, see [How to: Execute Expression Trees (C#)](./how-to-execute-expression-trees.md).  
+ For more information, see [How to execute expression trees (C#)](./how-to-execute-expression-trees.md).
   
 ## See also
 

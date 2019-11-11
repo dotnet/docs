@@ -1,7 +1,6 @@
 ---
 title: Create a new ASP.NET Core gRPC project - gRPC for WCF Developers
 description: Learn how to create a gRPC project using Visual Studio or from the command line.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

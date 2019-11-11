@@ -50,7 +50,7 @@ Next, you will add a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptl
 
 ### To add localizable content
 
-1. In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+1. In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the WPF Designer.
 
 2. Set the content of the <xref:System.Windows.Controls.Button> control using the following code.
 

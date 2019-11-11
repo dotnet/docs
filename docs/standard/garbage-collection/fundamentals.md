@@ -188,6 +188,14 @@ In the .NET Framework, specify concurrent or background garbage collection with 
 
 You can also specify server garbage collection with unmanaged hosting interfaces. ASP.NET and SQL Server enable server garbage collection automatically for apps that are hosted inside one of these environments.
 
+Starting with .NET Framework 4.6.2, some additional configuration options are available for server garbage collection:
+
+- By default, there is an affinity between the server GC heap and a CPU. That is, in server GC, the garbage collector assumes that a process owns the machine on which it is running, so it uses all available CPUs for garbage collection. It creates a dedicated heap, a GC thread, and, if background garbage collection is enabled, a background GC thread for each processor. This can result in poor performance, particularly on systems with multiple running instances of a server application. To not affinitize server GC threads with CPUs, use the [\<GCNoAffinitize>](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) setting in .NET Framework applications.
+
+- You can limit the number of heaps created by the garbage collector by using the [\<GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) setting in .NET Framework applications. If GC thread/processor affinity is disabled, this setting limits the number of GC heaps. If GC thread/processor affinity is enabled, this setting limits the number of GC heaps to the processors 0 to one-less-than its specified value.
+
+- If processor affinity is enabled, you can use the [\<GCHeapAffinitizeMask>](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) configuration element in .NET Framework applications to control the specific processors for which a GC heap and threads are created. Supply a decimal value. The value is a mask that defines the processors that are available to the process.
+
 ### Compare workstation and server garbage collection
 
 The following are threading and performance considerations for workstation garbage collection:
@@ -212,7 +220,13 @@ The following are threading and performance considerations for server garbage co
 
 If you are running hundreds of instances of an application, consider using workstation garbage collection with concurrent garbage collection disabled. This will result in less context switching, which can improve performance.
 
-## Background garbage collection
+## Concurrent garbage collection
+
+In workstation or server garbage collection, you can enable concurrent garbage collection, which enables threads to run concurrently with a dedicated thread that performs the garbage collection for most of the duration of the collection. This option affects only garbage collections in generation 2; generations 0 and 1 are always non-concurrent because they finish very fast.
+
+Concurrent garbage collection enables interactive applications to be more responsive by minimizing pauses for a collection. Managed threads can continue to run most of the time while the concurrent garbage collection thread is running. This results in shorter pauses while a garbage collection is occurring.
+
+To improve performance when several processes are running, disable concurrent garbage collection. You can do this by adding a [\<gcConcurrent> element](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) to the app's configuration file and setting the value of its `enabled` attribute to `"false"`.
 
 Background garbage collection replaces concurrent garbage collection in newer versions of the .NET Framework. In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. It's performed on a dedicated thread and is applicable only to generation 2 collections. Background garbage collection is automatically enabled by default. You can enable or disable background garbage collection for .NET Framework apps with the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration setting.
 

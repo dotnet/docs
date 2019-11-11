@@ -9,7 +9,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # JIT Tracing ETW Events
-<a name="top"></a> These events collect information relating to the success or failure of just-in-time (JIT) inlining and JIT tail calls.  
+These events collect information relating to the success or failure of just-in-time (JIT) inlining and JIT tail calls.  
   
  JIT tracing events consist of the following two categories:  
   
@@ -77,8 +77,6 @@ ms.author: "mairaw"
 |InlineeName|win:UnicodeString|The method the compiler is trying to inline (not generate a call to).|  
 |InlineeNameSignature|win:UnicodeString|The signature for the inlinee.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
   
 <a name="jit_tail_call_events"></a>   
 ## JIT Tail Call Events  

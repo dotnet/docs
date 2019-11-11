@@ -1,7 +1,6 @@
 ---
 title: Protobuf reserved fields - gRPC for WCF Developers
 description: Learn about reserved fields for cross-version compatibility.
-author: markrendle
 ms.date: 09/09/2019
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Encryption and network security - gRPC for WCF Developers
 description: Some notes on network security and encryption in gRPC
-author: markrendle
 ms.date: 09/02/2019
 ---
 

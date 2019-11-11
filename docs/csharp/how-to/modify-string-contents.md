@@ -1,10 +1,10 @@
 ---
-title: "How to: Modify string contents - C# Guide"
+title: "How to modify string contents - C# Guide"
 ms.date: 02/26/2018
 helpviewer_keywords: 
   - "strings [C#], modifying"
 ---
-# How to: Modify string contents in C\#
+# How to modify string contents in C\#
 
 This article demonstrates several techniques to produce a `string` by modifying an existing `string`. All the techniques demonstrated return the result of the modifications as a new `string` object. To clearly demonstrate this, the examples all store the result in a new variable. You can then examine both the original `string` and the `string` resulting from the modification when you run each example.
 

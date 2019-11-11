@@ -1,5 +1,5 @@
 ---
-title: "How to: Initialize Objects by Using an Object Initializer - C# Programming Guide"
+title: "How to initialize objects by using an object initializer - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 12/20/2018
 helpviewer_keywords: 
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "objects [C#], initializing"
 ms.assetid: 4b75ebb2-2e29-43de-929c-d736a8f27ce6
 ---
-# How to: Initialize Objects by Using an Object Initializer (C# Programming Guide)
+# How to initialize objects by using an object initializer (C# Programming Guide)
 
 You can use object initializers to initialize type objects in a declarative manner without explicitly invoking a constructor for the type.  
   

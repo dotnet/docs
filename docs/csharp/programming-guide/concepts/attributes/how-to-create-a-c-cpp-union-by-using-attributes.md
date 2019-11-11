@@ -1,5 +1,5 @@
 ---
-title: "How to create a C-C++ union by using attributes (C#)"
+title: "How to create a C/C++ union by using attributes (C#)"
 ms.date: 07/20/2015
 ms.assetid: 85f35e56-26e0-4d31-9f3a-89bd4005e71a
 ---

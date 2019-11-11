@@ -13,7 +13,7 @@ You can use object initializers to initialize type objects in a declarative mann
   
 The following examples show how to use object initializers with named objects. The compiler processes object initializers by first accessing the default instance constructor and then processing the member initializations. Therefore, if the parameterless constructor is declared as `private` in the class, object initializers that require public access will fail.
   
-You must use an object initializer if you're defining an anonymous type. For more information, see [How to: Return Subsets of Element Properties in a Query](how-to-return-subsets-of-element-properties-in-a-query.md).  
+You must use an object initializer if you're defining an anonymous type. For more information, see [How to return subsets of element properties in a query](how-to-return-subsets-of-element-properties-in-a-query.md).  
   
 ## Example  
 

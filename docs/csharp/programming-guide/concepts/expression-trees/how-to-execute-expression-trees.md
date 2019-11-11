@@ -43,4 +43,4 @@ Console.WriteLine(result);
 ## See also
 
 - [Expression Trees (C#)](./index.md)
-- [How to: Modify Expression Trees (C#)](./how-to-modify-expression-trees.md)
+- [How to modify expression trees (C#)](./how-to-modify-expression-trees.md)

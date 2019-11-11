@@ -112,7 +112,7 @@ Console.WriteLine("Decomposed expression: {0} => {1} {2} {3}",
 ```  
   
 ## Immutability of Expression Trees  
- Expression trees should be immutable. This means that if you want to modify an expression tree, you must construct a new expression tree by copying the existing one and replacing nodes in it. You can use an expression tree visitor to traverse the existing expression tree. For more information, see [How to: Modify Expression Trees (C#)](./how-to-modify-expression-trees.md).  
+ Expression trees should be immutable. This means that if you want to modify an expression tree, you must construct a new expression tree by copying the existing one and replacing nodes in it. You can use an expression tree visitor to traverse the existing expression tree. For more information, see [How to modify expression trees (C#)](./how-to-modify-expression-trees.md).
   
 ## Compiling Expression Trees  
  The <xref:System.Linq.Expressions.Expression%601> type provides the <xref:System.Linq.Expressions.Expression%601.Compile%2A> method that compiles the code represented by an expression tree into an executable delegate.  
@@ -144,8 +144,8 @@ Console.WriteLine(expr.Compile()(4));
 ## See also
 
 - <xref:System.Linq.Expressions>
-- [How to: Execute Expression Trees (C#)](./how-to-execute-expression-trees.md)
-- [How to: Modify Expression Trees (C#)](./how-to-modify-expression-trees.md)
+- [How to execute expression trees (C#)](./how-to-execute-expression-trees.md)
+- [How to modify expression trees (C#)](./how-to-modify-expression-trees.md)
 - [Lambda Expressions](../../statements-expressions-operators/lambda-expressions.md)
 - [Dynamic Language Runtime Overview](../../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md)
 - [Programming Concepts (C#)](../index.md)

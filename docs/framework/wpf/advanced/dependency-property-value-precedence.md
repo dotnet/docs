@@ -103,7 +103,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 <a name="animations"></a>   
 ## Coercion, Animations, and Base Value  
- Coercion and animation both act on a value that is termed as the "base value" throughout this [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)]. The base value is thus whatever value is determined through evaluating upwards in the items until item 2 is reached.  
+ Coercion and animation both act on a value that is termed as the "base value" throughout this SDK. The base value is thus whatever value is determined through evaluating upwards in the items until item 2 is reached.  
   
  For an animation, the base value can have an effect on the animated value, if that animation does not specify both "From" and "To" for certain behaviors, or if the animation deliberately reverts to the base value when completed. To see this in practice, run the [From, To, and By Animation Target Values Sample](https://go.microsoft.com/fwlink/?LinkID=159988). Try setting the local values of the rectangle height in the example, such that the initial local value differs from any "From" in the animation. You will note that the animations start right away using the "From" values and replace the base value once started. The animation might specify to return to the value found before animation once it is completed by specifying the Stop <xref:System.Windows.Media.Animation.FillBehavior>. Afterwards, normal precedence is used for the base value determination.  
   

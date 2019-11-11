@@ -24,9 +24,11 @@ helpviewer_keywords:
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
 ---
 # Creating, Deleting, and Moving Files and Directories in Visual Basic
+
 This section lists tasks associated with creating, deleting, moving, and renaming files and directories in Visual Basic.  
   
 ## In This Section  
+
  [How to: Copy Files with a Specific Pattern to a Directory](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-files-with-a-specific-pattern-to-a-directory.md)  
  Demonstrates how to copy files with a specific file name pattern, such as only .txt files, to a directory.  
   
@@ -70,6 +72,7 @@ This section lists tasks associated with creating, deleting, moving, and renamin
  Demonstrates how to use `My` methods to combine file paths.  
   
 ## Reference  
+
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  Describes the `My.Computer.FileSystem` object and its members.  
   
@@ -110,6 +113,7 @@ This section lists tasks associated with creating, deleting, moving, and renamin
  Describes the `SpecialDirectories` object.  
   
 ## Related Sections  
+
  [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
  Lists tasks associated with reading from files.  
   

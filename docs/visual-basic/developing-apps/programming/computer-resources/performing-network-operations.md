@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 8ecc47ce-7730-49cd-b21d-3a13477eec6b
 ---
 # Performing Network Operations (Visual Basic)
+
 The following tables list tasks associated with the `My.Computer.Network` object.  
   
 ## In This Section  
+
  [How to: Upload a File](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)  
  Demonstrates how to upload a file and store it to a remote location using `My.Computer.Network`.  
   
@@ -20,6 +22,7 @@ The following tables list tasks associated with the `My.Computer.Network` object
  Shows how to determine whether the computer has a working network connection.  
   
 ## Reference  
+
  <xref:Microsoft.VisualBasic.Devices.Network>  
  Lists methods, properties, and events for working with the network.  
   

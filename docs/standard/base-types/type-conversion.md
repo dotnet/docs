@@ -26,7 +26,7 @@ helpviewer_keywords:
 ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
 ---
 # Type Conversion in the .NET Framework
-<a name="top"></a> Every value has an associated type, which defines attributes such as the amount of space allocated to the value, the range of possible values it can have, and the members that it makes available. Many values can be expressed as more than one type. For example, the value 4 can be expressed as an integer or a floating-point value. Type conversion creates a value in a new type that is equivalent to the value of an old type, but does not necessarily preserve the identity (or exact value) of the original object.  
+Every value has an associated type, which defines attributes such as the amount of space allocated to the value, the range of possible values it can have, and the members that it makes available. Many values can be expressed as more than one type. For example, the value 4 can be expressed as an integer or a floating-point value. Type conversion creates a value in a new type that is equivalent to the value of an old type, but does not necessarily preserve the identity (or exact value) of the original object.  
   
  The .NET Framework automatically supports the following conversions:  
   
@@ -72,8 +72,6 @@ ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
  [!code-csharp[Conceptual.Conversion#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.conversion/cs/implicit1.cs#3)]
  [!code-vb[Conceptual.Conversion#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.conversion/vb/implicit1.vb#3)]  
   
- [Back to top](#top)  
-  
 <a name="explicit_conversion_with_the_explicit_operator"></a>   
 ## Explicit Conversion with the Explicit Operator  
  Narrowing conversions involve the creation of a new value from the value of an existing type that has either a greater range or a larger member list than the target type. Because a narrowing conversion can result in a loss of data, compilers often require that the conversion be made explicit through a call to a conversion method or a casting operator. That is, the conversion must be handled explicitly in developer code.  
@@ -115,8 +113,6 @@ ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
  [!code-csharp[Conceptual.Conversion#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.conversion/cs/explicit1.cs#6)]
  [!code-vb[Conceptual.Conversion#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.conversion/vb/explicit1.vb#6)]  
   
- [Back to top](#top)  
-  
 <a name="the_iconvertible_interface"></a>   
 ## The IConvertible Interface  
  To support the conversion of any type to a common language runtime base type, the .NET Framework provides the <xref:System.IConvertible> interface. The implementing type is required to provide the following:  
@@ -138,8 +134,6 @@ ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
 > In addition to the <xref:System.IConvertible> interface and the <xref:System.Convert> class provided by the .NET Framework, individual languages may also provide ways to perform conversions. For example, C# uses casting operators; Visual Basic uses compiler-implemented conversion functions such as `CType`, `CInt`, and `DirectCast`.  
   
  For the most part, the <xref:System.IConvertible> interface is designed to support conversion between the base types in the .NET Framework. However, the interface can also be implemented by a custom type to support conversion of that type to other custom types. For more information, see the section [Custom Conversions with the ChangeType Method](#ChangeType) later in this topic.  
-  
- [Back to top](#top)  
   
 <a name="Convert"></a>   
 ## The Convert Class  
@@ -179,8 +173,6 @@ ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
   
  [!code-csharp[Conceptual.Conversion#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.conversion/cs/iconvertible2.cs#11)]
  [!code-vb[Conceptual.Conversion#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.conversion/vb/iconvertible2.vb#11)]  
-  
- [Back to top](#top)  
   
 <a name="the_typeconverter_class"></a>   
 ## The TypeConverter Class  

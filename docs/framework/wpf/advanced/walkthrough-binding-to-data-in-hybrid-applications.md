@@ -53,7 +53,7 @@ You need the following components to complete this walkthrough:
 
     - System.Windows.Forms
 
-3. Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+3. Open MainWindow.xaml in the WPF Designer.
 
 4. In the <xref:System.Windows.Window> element, add the following [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespaces mapping.
 

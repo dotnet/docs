@@ -69,7 +69,7 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
 - **`--type <Heap|Mini>`**
 
-  Specifies the dumb type, which determines the kinds of information that are collected from the process. There are two types:
+  Specifies the dump type, which determines the kinds of information that are collected from the process. There are two types:
 
   - `Heap` - A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.
   - `Mini` - A small dump containing module lists, thread lists, exception information, and all stacks.

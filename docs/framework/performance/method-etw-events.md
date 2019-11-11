@@ -11,7 +11,6 @@ ms.author: "mairaw"
 
 # Method ETW Events
 
-<a name="top"></a>
 These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as the number of times a method was called.
 
 All method events have a level of "Informational (4)". All method verbose events have a level of "Verbose (5)".
@@ -62,8 +61,6 @@ The following table shows the event data:
 |MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
-[Back to top](#top)
-
 <a name="clr_method_marker_events"></a>
 
 ## CLR Method Marker Events
@@ -92,8 +89,6 @@ The following table shows the event data:
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-
-[Back to top](#top)
 
 <a name="clr_method_verbose_events"></a>
 
@@ -131,8 +126,6 @@ The following table shows the event data:
 |MethodName|win:UnicodeString|Full class name associated with the method.|
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-
-[Back to top](#top)
 
 <a name="methodjittingstarted_event"></a>
 

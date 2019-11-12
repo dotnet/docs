@@ -9,6 +9,7 @@ ms.date: 11/06/2019
 # RHEL 7 Package Manager - Install .NET Core
 
 > [!div class="op_single_selector"]
+>
 > - [RHEL 7 - x64](linux-package-manager-rhel7)
 > - [Ubuntu 16.04 - x64](linux-package-manager-ubuntu-1604)
 > - [Ubuntu 18.04 - x64](linux-package-manager-ubuntu-1804)

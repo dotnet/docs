@@ -179,6 +179,7 @@
       },
       "author": {
         "docs/architecture/**/**.md": "nishanil",
+        "docs/architecture/grpc-for-wcf-developers/**/**.md": "shirhatti",
         "docs/core/**/**.md": "mairaw",
         "docs/core/compatibility/**/**.md": "gewarren",
         "docs/core/deploying/**/**.md": "Thraka",
@@ -238,7 +239,7 @@
         "docs/standard/base-types/**/**.md": "Thraka",
         "docs/standard/collections/**/**.md": "billwagner",
         "docs/standard/data/**/**.md": "gewarren",
-        "docs/standard/datime/**/**.md": "Thraka",        
+        "docs/standard/datetime/**/**.md": "Thraka",        
         "docs/standard/design-guidelines/**/**.md": "mairaw",
         "docs/standard/events/**/**.md": "gewarren",
         "docs/standard/exceptions/**/**.md": "tdykstra",
@@ -257,10 +258,11 @@
         "docs/standard/whats-new/**/**.md": "mairaw",
         "docs/visual-basic/**/**.md": "KathleenDollard"
       },
-      "ms.author": {        
+      "ms.author": {
         "_csharplang/**/*.md": "wiwagn",
         "_vblang/spec/*.md": "wiwagn",
         "docs/architecture/**/**.md": "nanil",
+        "docs/architecture/grpc-for-wcf-developers/**/**.md": "soshir",
         "docs/core/**/**.md": "mairaw",
         "docs/core/docker/**.md": "adegeo",
         "docs/csharp/**/**.md": "wiwagn",

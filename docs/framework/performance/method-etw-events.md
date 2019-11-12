@@ -17,18 +17,6 @@ All method events have a level of "Informational (4)". All method verbose events
 
 All method events are raised by the `JITKeyword` (0x10) keyword or the `NGenKeyword` (0x20) keyword under the runtime provider, or `JitRundownKeyword` (0x10) or `NGENRundownKeyword` (0x20) under the rundown provider.
 
-CLR method events are further subdivided into the following:
-
-- [CLR Method Events](#clr_method_events)
-
-- [CLR Method Marker Events](#clr_method_marker_events)
-
-- [CLR Method Verbose Events](#clr_method_verbose_events)
-
-- [MethodJittingStarted Event](#methodjittingstarted_event)
-
-<a name="clr_method_events"></a>
-
 ## CLR Method Events
 
 The following table shows the keyword and level. For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).
@@ -61,8 +49,6 @@ The following table shows the event data:
 |MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
-<a name="clr_method_marker_events"></a>
-
 ## CLR Method Marker Events
 
 These events are raised only under the rundown provider. They signify the end of method enumeration during a start or end rundown. (That is, they are raised when the `NGENRundownKeyword`, `JitRundownKeyword`, `LoaderRundownKeyword`, or `AppDomainResourceManagementRundownKeyword` keyword is enabled.)
@@ -89,8 +75,6 @@ The following table shows the event data:
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-
-<a name="clr_method_verbose_events"></a>
 
 ## CLR Method Verbose Events
 
@@ -126,8 +110,6 @@ The following table shows the event data:
 |MethodName|win:UnicodeString|Full class name associated with the method.|
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-
-<a name="methodjittingstarted_event"></a>
 
 ## MethodJittingStarted Event
 

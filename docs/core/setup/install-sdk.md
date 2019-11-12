@@ -129,14 +129,9 @@ For more information about using .NET Core in a Docker container, see [Introduct
 
 - [C# Hello World tutorial](../tutorials/with-visual-studio.md).
 - [Visual Basic Hello World tutorial](../tutorials/vb-with-visual-studio.md).
-
 ::: zone-end
-
 ::: zone pivot="os-macos"
-
 - [Get started on macOS](../tutorials/using-on-mac-vs.md).
-
 ::: zone-end
-
 - [Create a new app with Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet) tutorial.
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md)

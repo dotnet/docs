@@ -70,3 +70,7 @@ Containers provide a lightweight way to isolate your application from the rest o
 Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) provides images that are built for running ASP.NET Core apps in production.
 
 For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
+
+## Next steps
+
+- [How to check if .NET Core is already installed](how-to-detect-installed-versions.md).

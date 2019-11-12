@@ -20,9 +20,9 @@ This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltec
 |[How to: Find All Nodes in a Namespace (C#)](./how-to-find-all-nodes-in-a-namespace.md)|Shows how to find all nodes that are in a specific namespace.|  
 |[How to: Sort Elements (C#)](./how-to-sort-elements.md)|Shows how to write a query that sorts its results.|  
 |[How to: Sort Elements on Multiple Keys (C#)](./how-to-sort-elements-on-multiple-keys.md)|Shows how to sort on multiple keys.|  
-|[How to: Calculate Intermediate Values (C#)](./how-to-calculate-intermediate-values.md)|Shows how to use the `Let` clause to calculate intermediate values in a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query.|  
+|[How to calculate intermediate values (C#)](./how-to-calculate-intermediate-values.md)|Shows how to use the `Let` clause to calculate intermediate values in a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query.|  
 |[How to: Write a Query that Finds Elements Based on Context (C#)](./how-to-write-a-query-that-finds-elements-based-on-context.md)|Shows how to select elements based on other elements in the tree.|  
-|[How to: Debug Empty Query Results Sets (C#)](./how-to-debug-empty-query-results-sets.md)|Shows the appropriate fix when debugging queries on XML that is in a default namespace.|  
+|[How to debug empty query results sets (C#)](./how-to-debug-empty-query-results-sets.md)|Shows the appropriate fix when debugging queries on XML that is in a default namespace.|  
   
 ## See also
 

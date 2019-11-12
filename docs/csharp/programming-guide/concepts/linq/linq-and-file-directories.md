@@ -19,7 +19,7 @@ Many file system operations are essentially queries and are therefore well-suite
  [How to: Query for the Total Number of Bytes in a Set of Folders (LINQ) (C#)](./how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md)  
  Shows how to return the total number of bytes in all the files in a specified directory tree.  
   
- [How to: Compare the Contents of Two Folders (LINQ) (C#)](./how-to-compare-the-contents-of-two-folders-linq.md)s  
+ [How to compare the contents of two folders (LINQ) (C#)](./how-to-compare-the-contents-of-two-folders-linq.md)s  
  Shows how to return all the files that are present in two specified folders, and also all the files that are present in one folder but not the other.  
   
  [How to: Query for the Largest File or Files in a Directory Tree (LINQ) (C#)](./how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md)  

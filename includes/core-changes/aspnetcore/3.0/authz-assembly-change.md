@@ -7,7 +7,6 @@ The core `AddAuthorization` methods that used to reside in `Microsoft.AspNetCore
 3.0
 
 #### Old behavior
-note
 `AddAuthorization` methods existed in `Microsoft.AspNetCore.Authorization`.
 
 #### New behavior

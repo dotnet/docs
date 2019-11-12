@@ -1,7 +1,7 @@
 ---
 title: Methods
 description: Learn how an F# method is a function associated with a type that are used to expose and implement the functionality and behavior of objects and types.
-ms.date: 05/16/2016
+ms.date: 11/04/2019
 ---
 # Methods
 
@@ -100,7 +100,7 @@ Starting with F# 4.1, you can also have optional arguments with a default parame
 ```fsharp
 // A class with a method M, which takes in an optional integer argument.
 type C() =
-    __.M([<Optional; DefaultParameterValue(12)>] i) = i + 1
+    _.M([<Optional; DefaultParameterValue(12)>] i) = i + 1
 ```
 
 Note that the value passed in for `DefaultParameterValue` must match the input type.  In the above sample, it is an `int`.  Attempting to pass a non-integer value into `DefaultParameterValue` would result in a compile error.

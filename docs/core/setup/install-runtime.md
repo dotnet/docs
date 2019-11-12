@@ -66,7 +66,3 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 ## Docker
 
 TODO
-
-## Next steps
-
-TODO

@@ -63,8 +63,6 @@ Selecting any of the managed workloads for **Web**, **Desktop**, or **Azure deve
 
 [![Windows Visual Studio 2019 with .NET Core workload](media/install-sdk/windows-install-visual-studio-2019.png)](media/install-sdk/windows-install-visual-studio-2019.png#lightbox)
 
-After you've installed Visual Studio, create your first app by following the [C# Hello World tutorial](../tutorials/with-visual-studio.md) or the [Visual Basic Hello World tutorial](../tutorials/vb-with-visual-studio.md).
-
 ::: zone-end
 
 ::: zone pivot="os-macos"
@@ -74,8 +72,6 @@ After you've installed Visual Studio, create your first app by following the [C#
 Visual Studio for Mac installs the .NET Core SDK when the **.NET Core workload** is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation).
 
 [![macOS Visual Studio 2019 for Mac with .NET Core workload feature](media/install-sdk/mac-install-selection.png)](media/install-sdk/mac-install-selection.png#lightbox)
-
-After you've installed Visual Studio for Mac, create your first app by following the [Get started on macOS](../tutorials/using-on-mac-vs.md) tutorial.
 
 ::: zone-end
 
@@ -88,8 +84,6 @@ While VS Code doesn't come with .NET Core support, adding .NET Core support is s
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
 01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 01. [Install the C# extension from the VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
-
-After you've installed .NET Core support for VS Code, create your first app by following the [Using .NET Core in Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet) tutorial.
 
 ::: zone pivot="os-windows"
 
@@ -125,4 +119,19 @@ TODO
 
 ## Next steps
 
-TODO
+::: zone pivot="os-windows"
+
+- [C# Hello World tutorial](../tutorials/with-visual-studio.md).
+- [Visual Basic Hello World tutorial](../tutorials/vb-with-visual-studio.md).
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+- [Get started on macOS](../tutorials/using-on-mac-vs.md).
+
+::: zone-end
+
+- [Create a new app with Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet) tutorial.
+
+::: zone-end

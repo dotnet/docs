@@ -9,7 +9,7 @@ zone_pivot_groups: operating-systems-set-one
 
 # Install the .NET Core SDK
 
-In this article you'll learn how to download and install the .NET Core SDK. The .NET Core SDK is used to create create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
+In this article you'll learn how to download and install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
 Here are links to the .NET Core downloads page by version:
 

@@ -11,9 +11,9 @@ zone_pivot_groups: operating-systems-set-one
 
 This article teaches you how to check which versions of the .NET Core runtime and SDK are installed on your computer. If you have a development IDE, such as Visual Studio or Visual Studio for Mac, .NET Core may have been installed.
 
-Installing an SDK will install the corresponding runtime.
+Installing an SDK installs the corresponding runtime.
 
-## Runtimes
+## SDK
 
 You can see which versions of the .NET Core SDK are currently installed with a terminal. Open a terminal and run the `dotnet --list-sdks` command.
 
@@ -65,15 +65,14 @@ dotnet --list-sdks
 
 ::: zone-end
 
-## SDKs
+## Runtime
 
-You can see which versions of the .NET Core SDK are currently installed with the `dotnet --list-sdks` command.
-You can see which versions of the .NET Core SDK are currently installed by using the `dotnet --list-sdks` command.
+You can see which versions of the .NET Core runtime are currently installed with the `dotnet --list-runtimes` command.
 
 ::: zone pivot="os-windows"
 
 ```console
-dotnet --list-sdks
+dotnet --list-runtimes
 
 Microsoft.AspNetCore.All 2.1.7 [c:\program files\dotnet\shared\Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.13 [c:\program files\dotnet\shared\Microsoft.AspNetCore.All]
@@ -100,7 +99,7 @@ Microsoft.WindowsDesktop.App 3.0.0 [c:\program files\dotnet\shared\Microsoft.Win
 ::: zone pivot="os-linux"
 
 ```bash
-dotnet --list-sdks
+dotnet --list-runtimes
 
 Microsoft.AspNetCore.All 2.1.7 [/home/user/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.13 [/home/user/dotnet/shared/Microsoft.AspNetCore.All]
@@ -151,7 +150,7 @@ Microsoft.NETCore.App 3.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 ## More information
 
-You can see both the SDK versions and runtime versions with the command `dotnet --info`. You'll also get a lot of other environmental related information, such as the operating system version and runtime-identifier (RID).
+You can see both the SDK versions and runtime versions with the command `dotnet --info`. You'll also get a lot of other environmental related information, such as the operating system version and runtime identifier (RID).
 
 ## Next steps
 

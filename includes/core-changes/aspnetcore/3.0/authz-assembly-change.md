@@ -1,13 +1,13 @@
 ### Authorization: AddAuthorization overload moved to different assembly
 
-The core `AddAuthorization` methods that used to reside in `Microsoft.AspNetCore.Authorization` were renamed to `AddAuthorizationCore`. The old `AddAuthorization` methods still exist, but are in the `Microsoft.AspNetCore.Authorization.Policy` package instead. Apps using both methods should see no impact. Apps that weren't using the policy package must switch to using `AddAuthorizationCore`.
+The core `AddAuthorization` methods that used to reside in `Microsoft.AspNetCore.Authorization` were renamed to `AddAuthorizationCore`. The old `AddAuthorization` methods still exist, but are in the `Microsoft.AspNetCore.Authorization.Policy` assembly instead. Apps using both methods should see no impact. Note that `Microsoft.AspNetCore.Authorization.Policy` now ships in the shared framework rather than a standalone package as discussed in [Shared framework: Assemblies removed from Microsoft.AspNetCore.App](#shared-framework-assemblies-removed-from-microsoftaspnetcoreapp).
 
 #### Version introduced
 
 3.0
 
 #### Old behavior
-
+note
 `AddAuthorization` methods existed in `Microsoft.AspNetCore.Authorization`.
 
 #### New behavior

@@ -1,5 +1,5 @@
 ---
-title: Install .NET Core on Ubuntu 16.04 with package manager
+title: Install .NET Core on Ubuntu 16.04 package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on Ubuntu 16.04.
 author: thraka
 ms.author: adegeo

@@ -1,5 +1,5 @@
 ---
-title: Install .NET Core on Linux RHEL 7 package manager
+title: Install .NET Core on Linux RHEL 7 package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on RHEL 7.
 author: thraka
 ms.author: adegeo

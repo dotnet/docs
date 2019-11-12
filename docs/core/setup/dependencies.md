@@ -1,5 +1,5 @@
 ---
-title: Core SDK and runtime dependencies for Windows, Linux, and macOS
+title: Core SDK and runtime dependencies for Windows, Linux, and macOS - .NET Core
 description: Details the operating system and CPU architecture prerequisites to install the .NET Core SDK and runtime on on Windows, Linux, and macOS.
 author: leecow
 ms.author: leecow

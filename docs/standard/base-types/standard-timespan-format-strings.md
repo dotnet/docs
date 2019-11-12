@@ -36,11 +36,10 @@ The following table lists the standard time interval format specifiers.
   
 |Format specifier|Name|Description|Examples|  
 |----------------------|----------|-----------------|--------------|  
-|"c"|Constant (invariant) format|This specifier is not culture-sensitive. It takes the form `[-][d'.']hh':'mm':'ss['.'fffffff]`.<br /><br /> (The "t" and "T" format strings produce the same results.)<br /><br /> More information: [The Constant ("c") Format Specifier](#Constant).|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
-|"g"|General short format|This specifier outputs only what is needed. It is culture-sensitive and takes the form `[-][d':']h':'mm':'ss[.FFFFFFF]`.<br /><br /> More information: [The General Short ("g") Format Specifier](#GeneralShort).|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
-|"G"|General long format|This specifier always outputs days and seven fractional digits. It is culture-sensitive and takes the form `[-]d':'hh':'mm':'ss.fffffff`.<br /><br /> More information: [The General Long ("G") Format Specifier](#GeneralLong).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
-  
-<a name="Constant"></a>   
+|"c"|Constant (invariant) format|This specifier is not culture-sensitive. It takes the form `[-][d'.']hh':'mm':'ss['.'fffffff]`.<br /><br /> (The "t" and "T" format strings produce the same results.)<br /><br /> More information: [The Constant ("c") Format Specifier](#the-constant-c-format-specifier).|`TimeSpan.Zero` -> 00:00:00<br /><br /> `New TimeSpan(0, 0, 30, 0)` -> 00:30:00<br /><br /> `New TimeSpan(3, 17, 25, 30, 500)` -> 3.17:25:30.5000000|  
+|"g"|General short format|This specifier outputs only what is needed. It is culture-sensitive and takes the form `[-][d':']h':'mm':'ss[.FFFFFFF]`.<br /><br /> More information: [The General Short ("g") Format Specifier](#the-general-short-g-format-specifier).|`New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50.5 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 500)` -> 1:3:16:50,5 (fr-FR)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50.599 (en-US)<br /><br /> `New TimeSpan(1, 3, 16, 50, 599)` -> 1:3:16:50,599 (fr-FR)|  
+|"G"|General long format|This specifier always outputs days and seven fractional digits. It is culture-sensitive and takes the form `[-]d':'hh':'mm':'ss.fffffff`.<br /><br /> More information: [The General Long ("G") Format Specifier](#the-general-long-g-format-specifier).|`New TimeSpan(18, 30, 0)` -> 0:18:30:00.0000000 (en-US)<br /><br /> `New TimeSpan(18, 30, 0)` -> 0:18:30:00,0000000 (fr-FR)|  
+
 ## The Constant ("c") Format Specifier  
  The "c" format specifier returns the string representation of a <xref:System.TimeSpan> value in the following form:  
   
@@ -66,8 +65,7 @@ The following table lists the standard time interval format specifiers.
   
  [!code-csharp[Conceptual.TimeSpan.Standard#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/standardc1.cs#1)]
  [!code-vb[Conceptual.TimeSpan.Standard#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardc1.vb#1)]  
-  
-<a name="GeneralShort"></a>   
+
 ## The General Short ("g") Format Specifier  
  The "g" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a compact form by including only the elements that are necessary. It has the following form:  
   
@@ -92,7 +90,6 @@ The following table lists the standard time interval format specifiers.
  [!code-csharp[Conceptual.TimeSpan.Standard#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.timespan.standard/cs/standardshort1.cs#4)]
  [!code-vb[Conceptual.TimeSpan.Standard#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.timespan.standard/vb/standardshort1.vb#4)]  
 
-<a name="GeneralLong"></a>   
 ## The General Long ("G") Format Specifier  
  The "G" <xref:System.TimeSpan> format specifier returns the string representation of a <xref:System.TimeSpan> value in a long form that always includes both days and fractional seconds. The string that results from the "G" standard format specifier has the following form:  
   

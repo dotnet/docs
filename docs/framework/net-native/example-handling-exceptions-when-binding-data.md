@@ -5,7 +5,7 @@ ms.assetid: bd63ed96-9853-46dc-ade5-7bd1b0f39110
 ---
 # Example: Handling Exceptions When Binding Data
 > [!NOTE]
-> This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://docs.microsoft.com/dotnet/framework/net-native/index) (requires registration).  
+> This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
   
  The following example shows how to resolve a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception that is thrown when an app compiled with the .NET Native tool chain tries to bind data. Here’s the exception information:  
   

@@ -14,8 +14,8 @@ ms.author: "mairaw"
 
 Adds a custom application setting.
 
-[**\<configuration>**](../configuration-element.md)   
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)   
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
 ## Syntax

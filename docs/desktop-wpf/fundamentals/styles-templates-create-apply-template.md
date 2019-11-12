@@ -74,15 +74,6 @@ This control template will be simple. A root element for the control, a <xref:Sy
 
 [!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window3.xaml#ControlTemplate)]
 
-```xaml
-<ControlTemplate x:Key="roundbutton" TargetType="Button">
-    <Grid>
-        <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" />
-        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-    </Grid>
-</ControlTemplate>
-```
-
 ### TemplateBinding
 
 When you create a new <xref:System.Windows.Controls.ControlTemplate>, you still might want to use the public properties to change the control's appearance. The [TemplateBinding](../../framework/wpf/advanced/templatebinding-markup-extension.md) markup extension binds a property of an element that is in the <xref:System.Windows.Controls.ControlTemplate> to a public property that is defined by the control. When you use a [TemplateBinding](../../framework/wpf/advanced/templatebinding-markup-extension.md), you enable properties on the control to act as parameters to the template. That is, when a property on a control is set, that value is passed on to the element that has the [TemplateBinding](../../framework/wpf/advanced/templatebinding-markup-extension.md) on it.
@@ -113,25 +104,11 @@ If the <xref:System.Windows.Controls.ControlTemplate> is applied to a <xref:Syst
 
 Find the buttons that were declared at the start of this article.
 
-```xaml
-<StackPanel Margin="10">
-    <Label>Unstyled Button</Label>
-    <Button>Button 1</Button>
-    <Label>Rounded Button</Label>
-    <Button>Button 2</Button>
-</StackPanel>
-```
+[!code-xaml[Initial](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window1.xaml#Initial)]
 
 Set the second button's <xref:System.Windows.Controls.Control.Template> property to the `roundbutton` resource:
 
-```xaml
-<StackPanel Margin="10">
-    <Label>Unstyled Button</Label>
-    <Button>Button 1</Button>
-    <Label>Rounded Button</Label>
-    <Button Template="{StaticResource roundbutton}">Button 2</Button>
-</StackPanel>
-```
+[!code-xaml[StyledButton](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window3.xaml#StyledButton)]
 
 If you run the project and look at the result, you'll see that the button has a rounded background.
 
@@ -139,14 +116,7 @@ If you run the project and look at the result, you'll see that the button has a 
 
 You may have noticed that the button isn't a circle but is skewed. Because of the way the `<Ellipse>` element works, it always expands to fill the available space. Make the circle uniform by changing the button's `width` and `height` properties to the same value:
 
-```xaml
-<StackPanel Margin="10">
-    <Label>Unstyled Button</Label>
-    <Button>Button 1</Button>
-    <Label>Rounded Button</Label>
-    <Button Template="{StaticResource roundbutton}" Width="65" Height="65">Button 2</Button>
-</StackPanel>
-```
+[!code-xaml[StyledButtonSize](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window3.xaml#StyledButtonSize)]
 
 ![WPF window with one template circular button](media/create-apply-template/styled-uniform-button.png)
 
@@ -158,33 +128,15 @@ With the dynamic event and property systems that WPF provides, you can watch a s
 
 For this to work though, you'll need to add a name to the `<Ellipse>` that you can reference. Give it the name of `backgroundElement`.
 
-```xaml
-<Ellipse x:Name="backgroundElement" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" />
-```
+[!code-xaml[EllipseName](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window4.xaml#EllipseName)]
 
 Next, add a new <xref:System.Windows.Trigger> to the [ControlTemplate.Triggers](xref:System.Windows.Controls.ControlTemplate.Triggers) collection. The trigger will watch the `IsMouseOver` for the value `true`.
 
-```xaml
-<ControlTemplate x:Key="roundbutton" TargetType="Button">
-    <Grid>
-        <Ellipse x:Name="backgroundElement" ... />
-        <ContentPresenter ... />
-    </Grid>
-    <ControlTemplate.Triggers>
-        <Trigger Property="IsMouseOver" Value="true">
-
-        </Trigger>
-    </ControlTemplate.Triggers>
-</ControlTemplate>
-```
+[!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window4.xaml?name=ControlTemplate&highlight=6-9)]
 
 Next, add a `<Setter>` to the `<Trigger>` that changes the `Fill` property of the `<Ellipse>` to a new color.
 
-```xaml
-<Trigger Property="IsMouseOver" Value="true">
-    <Setter Property="Fill" TargetName="backgroundElement" Value="AliceBlue"/>
-</Trigger>
-```
+[!code-xaml[MouseOver](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window5.xaml#MouseOver)]
 
 Run the project. Notice that when you move the mouse over the button, the color of the `<Ellipse>` changes.
 
@@ -196,77 +148,29 @@ Visual states are defined and triggered by a control. For example, when the mous
 
 To convert the **PropertyTrigger** to an animated visual state, First, remove the `<ControlTemplate.Triggers>` element from your template.
 
+[!code-xaml[CleanTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window5.xaml#CleanTemplate)]
+
 Next, in the `<Grid>` root of the control template, add the `<VisualStateManager.VisualStateGroups>` element with a `<VisualStateGroup>` for `CommonStates`. Define two states, `Normal` and `MouseOver`.
 
-```xaml
-<ControlTemplate x:Key="roundbutton" TargetType="Button">
-    <Grid>
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup Name="CommonStates">
-                <VisualState Name="Normal">
-                </VisualState>
-                <VisualState Name="MouseOver">
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
+[!code-xaml[VisualState](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window6.xaml#VisualState)]
 
-        ...
-```
-
-Any animations defined in a `<VisualState>` will be applied when that state is triggered. Create animations for each state.
+Any animations defined in a `<VisualState>` will be applied when that state is triggered. Create animations for each state. Animations are put inside of a `<Storyboard>` element. For more information about storyboards, see [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
 
 - Normal
 
   This state animates the ellipse fill, restoring it to the control's `Background` color.
 
-  ```xaml
-  <ColorAnimation Storyboard.TargetName="backgroundElement" 
-                  Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
-                  To="{TemplateBinding Background}"
-                  Duration="0:0:0.3"/>
-  ```
+  [!code-xaml[NormalState](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window6.xaml#NormalState)]
 
 - MouseOver
 
   This state animates the ellipse `Background` color to a new color: `Yellow`.
 
-  ```xaml
-  <ColorAnimation Storyboard.TargetName="backgroundElement" 
-                  Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" 
-                  To="Yellow" 
-                  Duration="0:0:0.3"/>
-  ```
+  [!code-xaml[MouseOverState](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window6.xaml#MouseOverState)]
 
 The `<ControlTemplate>` should now look like the following.
 
-```xaml
-<ControlTemplate x:Key="roundbutton" TargetType="Button">
-    <Grid>
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup Name="CommonStates">
-                <VisualState Name="Normal">
-                    <Storyboard>
-                        <ColorAnimation Storyboard.TargetName="backgroundElement" 
-                            Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
-                            To="{TemplateBinding Background}"
-                            Duration="0:0:0.3"/>
-                    </Storyboard>
-                </VisualState>
-                <VisualState Name="MouseOver">
-                    <Storyboard>
-                        <ColorAnimation Storyboard.TargetName="backgroundElement" 
-                            Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" 
-                            To="Yellow" 
-                            Duration="0:0:0.3"/>
-                    </Storyboard>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-        <Ellipse Name="backgroundElement" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" />
-        <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Center" VerticalAlignment="Center" />
-    </Grid>
-</ControlTemplate>
-```
+[!code-xaml[FinalTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window7.xaml#FinalTemplate)]
 
 Run the project. Notice that when you move the mouse over the button, the color of the `<Ellipse>` animates.
 

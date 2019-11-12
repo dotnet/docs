@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: b48f42ce-22ce-4f8d-8f0d-f7ddac9125ee
 ---
 # Hosting the Data Service (WCF Data Services)
-By using WCF Data Services, you can create a service that exposes data as an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed. This data service is defined as a class that inherits from <xref:System.Data.Services.DataService%601>. This class provides the functionality required to process request messages, perform updates against the data source, and generate responses messages, as required by OData. However, a data service cannot bind to and listen on a network socket for incoming HTTP requests. For this required functionality, the data service relies on a hosting component.
+By using WCF Data Services, you can create a service that exposes data as an Open Data Protocol (OData) feed. This data service is defined as a class that inherits from <xref:System.Data.Services.DataService%601>. This class provides the functionality required to process request messages, perform updates against the data source, and generate responses messages, as required by OData. However, a data service cannot bind to and listen on a network socket for incoming HTTP requests. For this required functionality, the data service relies on a hosting component.
 
  The data service host performs the following tasks on behalf of the data service:
 

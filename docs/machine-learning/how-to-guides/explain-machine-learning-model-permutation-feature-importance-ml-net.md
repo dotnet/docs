@@ -14,15 +14,15 @@ Learn how to explain ML.NET machine learning model predictions by understanding 
 
 Machine learning models are often thought of as black boxes that take inputs and generate an output. The intermediate steps or interactions among the features that influence the output are rarely understood. As machine learning is introduced into more aspects of everyday life such as healthcare, it's of utmost importance to understand why a machine learning model makes the decisions it does. For example, if diagnoses are made by a machine learning model, healthcare professionals need a way to look into the factors that went into making that diagnoses. Providing the right diagnosis could make a great difference on whether a patient has a speedy recovery or not. Therefore the higher the level of explainability in a model, the greater confidence healthcare professionals have to accept or reject the decisions made by the model.
 
-Various techniques are used to explain models, one of which is PFI. PFI is a technique used to explain classification and regression models that is inspired by [Breiman's *Random Forests* paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf) (see section 10). At a high level, the way it works is by randomly shuffling data one feature at a time for the entire dataset and calculating how much the performance metric of interest decreases. The larger the change, the more important that feature is. 
+Various techniques are used to explain models, one of which is PFI. PFI is a technique used to explain classification and regression models that is inspired by [Breiman's *Random Forests* paper](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf) (see section 10). At a high level, the way it works is by randomly shuffling data one feature at a time for the entire dataset and calculating how much the performance metric of interest decreases. The larger the change, the more important that feature is.
 
 Additionally, by highlighting the most important features, model builders can focus on using a subset of more meaningful features which can potentially reduce noise and training time.
 
 ## Load the data
 
-The features in the dataset being used for this sample are in columns 1-12. The goal is to predict `Price`. 
+The features in the dataset being used for this sample are in columns 1-12. The goal is to predict `Price`.
 
-| Column | Feature | Description 
+| Column | Feature | Description
 | --- | --- | --- |
 | 1 | CrimeRate | Per capita crime rate
 | 2 | ResidentialZones | Residential zones in town
@@ -99,7 +99,7 @@ The code sample below illustrates the process of training a linear regression mo
 
 ```csharp
 // 1. Get the column name of input features.
-string[] featureColumnNames = 
+string[] featureColumnNames =
     data.Schema
         .Select(column => column.Name)
         .Where(columnName => columnName != "Label").ToArray();
@@ -127,7 +127,7 @@ var sdcaModel = sdcaEstimator.Fit(preprocessedTrainData);
 In ML.NET use the [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) method for your respective task.
 
 ```csharp
-ImmutableArray<RegressionMetricsStatistics> permutationFeatureImportance = 
+ImmutableArray<RegressionMetricsStatistics> permutationFeatureImportance =
     mlContext
         .Regression
         .PermutationFeatureImportance(sdcaModel, preprocessedTrainData, permutationCount:3);
@@ -135,7 +135,7 @@ ImmutableArray<RegressionMetricsStatistics> permutationFeatureImportance =
 
 The result of using [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) on the training dataset is an [`ImmutableArray`](xref:System.Collections.Immutable.ImmutableArray) of [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) objects. [`RegressionMetricsStatistics`](xref:Microsoft.ML.Data.RegressionMetricsStatistics) provides summary statistics like mean and standard deviation for multiple observations of [`RegressionMetrics`](xref:Microsoft.ML.Data.RegressionMetrics) equal to the number of permutations specified by the `permutationCount` parameter.
 
-The importance, or in this case, the absolute average decrease in R-squared metric calculated by [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) can then be ordered from most important to least important.  
+The importance, or in this case, the absolute average decrease in R-squared metric calculated by [`PermutationFeatureImportance`](xref:Microsoft.ML.PermutationFeatureImportanceExtensions) can then be ordered from most important to least important.
 
 ```csharp
 // Order features by importance
@@ -152,7 +152,7 @@ foreach (var feature in featureImportanceMetrics)
 }
 ```
 
-Printing the values for each of the features in `featureImportanceMetrics` would generate output similar to that below. Keep in mind that you should expect to see different results because these values vary based on the data that they are given.  
+Printing the values for each of the features in `featureImportanceMetrics` would generate output similar to that below. Keep in mind that you should expect to see different results because these values vary based on the data that they are given.
 
 | Feature | Change to R-Squared |
 |:--|:--:|

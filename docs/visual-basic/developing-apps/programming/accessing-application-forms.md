@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 9aaf5aaf-2012-4f97-89c7-6e62b9d17863
 ---
 # Accessing Application Forms (Visual Basic)
+
 The `My.Forms` object provides an easy way to access an instance of each Windows Form declared in the application's project. You can also use properties of the `My.Application` object to access the application's splash screen and main form, and get a list of the application's open forms.  
   
 ## Tasks  
+
  The following table lists examples showing how to access an application's forms.  
   
 |To|See|  

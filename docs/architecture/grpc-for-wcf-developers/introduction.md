@@ -1,7 +1,6 @@
 ---
 title: Introduction - gRPC for WCF Developers
 description: Introduction
-author: markrendle
 ms.date: 09/02/2019
 ---
 

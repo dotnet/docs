@@ -1,7 +1,6 @@
 ---
 title: Repeated fields for lists and arrays - gRPC for WCF Developers
 description: Understand how collections are handled by Protobuf and how they relate to .NET collections.
-author: markrendle
 ms.date: 09/09/2019
 ---
 

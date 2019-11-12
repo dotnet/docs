@@ -54,7 +54,7 @@ If customer?.IsAllowedFreeShipping Then ApplyFreeShippingToOrders(customer)
 The null-conditional operators are short-circuiting.  If one operation in a chain of conditional member access and index operations returns `Nothing`, the rest of the chain’s execution stops.  In the following example, `C(E)` isn't evaluated if `A`, `B`, or `C` evaluates to `Nothing`.
 
 ```vb
-A?.B?.C?(E);
+A?.B?.C?(E)
 ```
 
 Another use for null-conditional member access is to invoke delegates in a thread-safe way with much less code.  The following example defines two types, a `NewsBroadcaster` and a `NewsReceiver`. News items are sent to the receiver by the `NewsBroadcaster.SendNews` delegate.

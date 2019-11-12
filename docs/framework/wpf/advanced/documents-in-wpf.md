@@ -119,13 +119,13 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
 <a name="XPS_Documents"></a>   
 ## XPS Documents  
- XML Paper Specification (XPS) document is a package that contains one or more fixed-documents along with all the resources and information required for rendering.  XPS is also the native [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] print spool file format.  An <xref:System.Windows.Xps.Packaging.XpsDocument> is stored in standard ZIP dataset, and can include a combination of XML and binary components, such as image and font files. [PackageRelationships](#PackageRelationships) are used to define the dependencies between the content and the resources required to fully render the document.  The <xref:System.Windows.Xps.Packaging.XpsDocument> design provides a single, high-fidelity document solution that supports multiple uses:  
+ XML Paper Specification (XPS) document is a package that contains one or more fixed-documents along with all the resources and information required for rendering.  XPS is also the native Windows Vista print spool file format.  An <xref:System.Windows.Xps.Packaging.XpsDocument> is stored in standard ZIP dataset, and can include a combination of XML and binary components, such as image and font files. [PackageRelationships](#PackageRelationships) are used to define the dependencies between the content and the resources required to fully render the document.  The <xref:System.Windows.Xps.Packaging.XpsDocument> design provides a single, high-fidelity document solution that supports multiple uses:  
   
 - Reading, writing, and storing fixed-document content and resources as a single, portable, and easy-to-distribute file.  
   
 - Displaying documents with the XPS Viewer application.  
   
-- Outputting documents in the native print spool output format of [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  
+- Outputting documents in the native print spool output format of Windows Vista.  
   
 - Routing documents directly to an XPS-compatible printer.  
   

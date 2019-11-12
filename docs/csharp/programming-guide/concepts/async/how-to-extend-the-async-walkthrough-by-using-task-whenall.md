@@ -1,9 +1,9 @@
 ---
-title: "How to: Extend the async Walkthrough by Using Task.WhenAll (C#)"
+title: "How to extend the async walkthrough by using Task.WhenAll (C#)"
 ms.date: 07/20/2015
 ms.assetid: f6927ef2-dc6c-43f8-bc82-bbeac42de423
 ---
-# How to: Extend the async Walkthrough by Using Task.WhenAll (C#)
+# How to extend the async walkthrough by using Task.WhenAll (C#)
 
 You can improve the performance of the async solution in [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md) by using the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> method. This method asynchronously awaits multiple asynchronous operations, which are represented as a collection of tasks.
 

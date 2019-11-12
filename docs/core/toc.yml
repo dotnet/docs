@@ -13,7 +13,11 @@
   - name: Supported OS and dependencies
     href: setup/dependencies.md
   - name: Linux package installers
-    href: setup/linux-package-manager-rhel7.md
+    items:
+      - name: RHEL 7 Package Manager
+        href: setup/linux-package-manager-rhel7.md
+      - name: Ubuntu 16.04 Package Manager
+        href: setup/linux-package-manager-ubuntu-1604.md
   - name: How to check .NET Core versions
     href: setup/how-to-detect-installed-versions.md
 - name: Get started

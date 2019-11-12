@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 11/06/2019
 ---
 
-# RHEL 7 Package Manager - Install .NET Core
+# Ubuntu 16.04 Package Manager - Install .NET Core
 
 > [!div class="op_single_selector"]
 >

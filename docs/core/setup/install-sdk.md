@@ -115,7 +115,13 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 
 ## Docker
 
-TODO
+Containers provide a lightweight way to isolate your application from the rest of the host system, sharing just the kernel, and using resources given to your application.
+
+.NET Core can run in a Docker container. Official .NET Core Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Core Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet-core/). Each repository contains images for different combinations of the .NET (SDK or Runtime) and OS that you can use.
+
+Microsoft provides images that are tailored for specific scenarios. For example, the [ASP.NET Core repository](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) provides images that are built for running ASP.NET Core apps in production.
+
+For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
 
 ## Next steps
 
@@ -135,3 +141,5 @@ TODO
 - [Create a new app with Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet) tutorial.
 
 ::: zone-end
+
+- [Tutorial: Containerize a .NET Core app](../docker/build-container.md)

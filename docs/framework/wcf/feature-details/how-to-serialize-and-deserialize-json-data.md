@@ -3,16 +3,16 @@ title: "How to: use DataContractJsonSerializer"
 ms.date: "03/25/2019"
 ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
 ---
-# How to: use DataContractJsonSerializer
+# How to use DataContractJsonSerializer
+
+> [!NOTE]
+> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the tools in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md).
 
 JSON (JavaScript Object Notation) is an efficient data encoding format that enables fast exchanges of small amounts of data between client browsers and AJAX-enabled Web services.
 
 This article demonstrates how to serialize .NET type objects into JSON-encoded data and then deserialize data in the JSON format back into instances of .NET types. This example uses a data contract to demonstrate serialization and deserialization of a user-defined `Person` type and uses <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>.
 
 Normally, JSON serialization and deserialization are handled automatically by Windows Communication Foundation (WCF) when you use data contract types in service operations that are exposed over AJAX-enabled endpoints. However, in some cases you may need to work with JSON data directly.
-
-> [!NOTE]
-> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the tools in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md).
 
 This article is based on the [DataContractJsonSerializer sample](../samples/json-serialization.md).
 

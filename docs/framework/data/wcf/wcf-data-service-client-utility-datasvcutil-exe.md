@@ -9,7 +9,7 @@ ms.assetid: 9d0af606-929b-4c03-b307-3ef5f705afce
 ---
 # WCF Data Service Client Utility (DataSvcUtil.exe)
 
-DataSvcUtil.exe is a command-line tool provided by WCF Data Services that consumes an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed and generates the client data service classes that are needed to access a data service from a .NET Framework client application. This utility can generate data classes by using the following metadata sources:
+DataSvcUtil.exe is a command-line tool provided by WCF Data Services that consumes an Open Data Protocol (OData) feed and generates the client data service classes that are needed to access a data service from a .NET Framework client application. This utility can generate data classes by using the following metadata sources:
 
 - The root URI of a data service. The utility requests the service metadata document, which describes the data model exposed by the data service. For more information, see [OData: Service Metadata Document](https://go.microsoft.com/fwlink/?LinkId=186070).
 

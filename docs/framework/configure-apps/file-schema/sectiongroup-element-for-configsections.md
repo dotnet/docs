@@ -14,8 +14,8 @@ ms.author: "mairaw"
 
 Defines a namespace for configuration sections.
 
-[**\<configuration>**](configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<sectionGroup>**
 
 ## Syntax

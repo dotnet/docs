@@ -84,8 +84,6 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [Overload Control for Scaling WeChat Microservices](https://www.cs.columbia.edu/~ruigu/papers/socc18-final100.pdf)
 
-- [RayGun - Case Study](https://raygun.com/case-study/ovation)
-
 >[!div class="step-by-step"]
 >[Previous](definition.md)
 >[Next](introduce-eshoponcontainers-reference-app.md)

@@ -14,7 +14,7 @@ You can add precision and flexibility to your async applications by using the me
   
 - `WhenAll` returns a task that completes when all tasks in a collection are complete.  
   
-     For more information and an example that uses `WhenAll`, see [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md).  
+     For more information and an example that uses `WhenAll`, see [How to extend the async walkthrough by using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
   
  This section includes the following examples.  
   

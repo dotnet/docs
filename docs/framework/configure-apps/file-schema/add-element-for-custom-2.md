@@ -14,8 +14,8 @@ ms.author: "mairaw"
 
 Adds custom application settings. Each **\<add>** tag contains a key/value pair.
 
-[**\<configuration>**](configuration-element.md)   
-&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
 
 ## Syntax

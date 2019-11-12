@@ -11,11 +11,6 @@ ms.author: "mairaw"
 # Interop ETW Events
 Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.  
 
-This category consists of the following events:
-
-- [ILStubGenerated Event](#ilstubgenerated-event)  
-- [ILStubCacheHit Event](#ilstubcachehit-event)
-
 ## ILStubGenerated Event
 
 The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  

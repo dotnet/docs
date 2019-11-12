@@ -40,30 +40,6 @@ Profiling a CLR application requires more support than profiling conventionally 
 
 JIT compilation at run time provides good opportunities for profiling. The profiling API enables a profiler to change the in-memory MSIL code stream for a routine before it is JIT-compiled. In this manner, the profiler can dynamically add instrumentation code to particular routines that need deeper investigation. Although this approach is possible in conventional scenarios, it is much easier to implement for the CLR by using the profiling API.
 
-This overview consists of the following sections:
-
-- [The Profiling API](#profiling_api)
-
-- [Supported Features](#support)
-
-- [Notification Threads](#notification_threads)
-
-- [Security](#security)
-
-- [Combining Managed and Unmanaged Code in a Code Profiler](#combining_managed_unmanaged)
-
-- [Profiling Unmanaged Code](#unmanaged)
-
-- [Using COM](#com)
-
-- [Call stacks](#call_stacks)
-
-- [Callbacks and Stack Depth](#callbacks)
-
-- [Related Topics](#related_topics)
-
-<a name="profiling_api"></a>
-
 ## The Profiling API
 
 Typically, the profiling API is used to write a *code profiler*, which is a program that monitors the execution of a managed application.
@@ -86,8 +62,6 @@ For example, a profiler could measure code performance through two notification 
 ### The Information Retrieval Interfaces
 
 The other main interfaces involved in profiling are [ICorProfilerInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md) and [ICorProfilerInfo2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md). The profiler calls these interfaces as required to obtain more information to help its analysis. For example, whenever the CLR calls the [FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md) function, it supplies a function identifier. The profiler can get more information about that function by calling the [ICorProfilerInfo2::GetFunctionInfo2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getfunctioninfo2-method.md) method to discover the function's parent class, its name, and so on.
-
-<a name="support"></a>
 
 ## Supported Features
 
@@ -147,23 +121,17 @@ The profiling API does not support the following functionality:
 
 - Profiling in production environments with high-availability requirements. The profiling API was created to support development-time diagnostics. It has not undergone the rigorous testing required to support production environments.
 
-<a name="notification_threads"></a>
-
 ## Notification Threads
 
 In most cases, the thread that generates an event also executes notifications. Such notifications (for example, [FunctionEnter](../../../../docs/framework/unmanaged-api/profiling/functionenter-function.md) and [FunctionLeave](../../../../docs/framework/unmanaged-api/profiling/functionleave-function.md)) do not need to supply the explicit `ThreadID`. Also, the profiler might decide to use thread-local storage to store and update its analysis blocks instead of indexing the analysis blocks in global storage, based on the `ThreadID` of the affected thread.
 
 Note that these callbacks are not serialized. Users must protect their code by creating thread-safe data structures and by locking the profiler code where necessary to prevent parallel access from multiple threads. Therefore, in certain cases you can receive an unusual sequence of callbacks. For example, assume that a managed application is spawning two threads that are executing identical code. In this case, it is possible to receive a [ICorProfilerCallback::JITCompilationStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md) event for some function from one thread and a `FunctionEnter` callback from the other thread before receiving the [ICorProfilerCallback::JITCompilationFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationfinished-method.md) callback. In this case, the user will receive a `FunctionEnter` callback for a function that may not have been fully just-in-time (JIT) compiled yet.
 
-<a name="security"></a>
-
 ## Security
 
 A profiler DLL is an unmanaged DLL that runs as part of the common language runtime execution engine. As a result, the code in the profiler DLL is not subject to the restrictions of managed code access security. The only limitations on the profiler DLL are those imposed by the operating system on the user who is running the profiled application.
 
 Profiler authors should take appropriate precautions to avoid security-related issues. For example, during installation, a profiler DLL should be added to an access control list (ACL) so that a malicious user cannot modify it.
-
-<a name="combining_managed_unmanaged"></a>
 
 ## Combining Managed and Unmanaged Code in a Code Profiler
 
@@ -179,8 +147,6 @@ It is also possible to use the older instrumentation methods to modify MSIL. Bef
 
 Alternatively, a code profiler can insert native hooks in the MSIL body of every managed function that calls into unmanaged code. This technique can be used for instrumentation and coverage. For example, a code profiler could insert instrumentation hooks after every MSIL block to ensure that the block has been executed. The modification of the MSIL body of a method is a very delicate operation, and there are many factors that should be taken into consideration.
 
-<a name="unmanaged"></a>
-
 ## Profiling Unmanaged Code
 
 The common language runtime (CLR) profiling API provides minimal support for profiling unmanaged code. The following functionality is provided:
@@ -193,13 +159,9 @@ In the .NET Framework versions 1.0 and 1.1, these methods are available through 
 
 In the .NET Framework 2.0 and later, you can use the [ICorProfilerInfo2::DoStackSnapshot](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md) method for this functionality.
 
-<a name="com"></a>
-
 ## Using COM
 
 Although the profiling interfaces are defined as COM interfaces, the common language runtime (CLR) does not actually initialize COM to use these interfaces. The reason is to avoid having to set the threading model by using the [CoInitialize](/windows/desktop/api/objbase/nf-objbase-coinitialize) function before the managed application has had a chance to specify its desired threading model. Similarly, the profiler itself should not call `CoInitialize`, because it may pick a threading model that is incompatible with the application being profiled and may cause the application to fail.
-
-<a name="call_stacks"></a>
 
 ## Call Stacks
 
@@ -217,13 +179,9 @@ Using the snapshot method too frequently can quickly create a performance issue.
 
 A shadow stack may obtain function arguments, return values, and information about generic instantiations. This information is available only through the shadow stack and may be obtained when control is handed to a function. However, this information may not be available later during the run of the function.
 
-<a name="callbacks"></a>
-
 ## Callbacks and Stack Depth
 
 Profiler callbacks may be issued in very stack-constrained circumstances, and a stack overflow in a profiler callback will lead to an immediate process exit. A profiler should make sure to use as little stack as possible in response to callbacks. If the profiler is intended for use against processes that are robust against stack overflow, the profiler itself should also avoid triggering stack overflow.
-
-<a name="related_topics"></a>
 
 ## Related Topics
 

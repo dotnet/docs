@@ -36,18 +36,6 @@ Level 2 transparency was introduced in the .NET Framework 4. The three tenets of
 
 - Security-critical code can call any code and is fully trusted, but it cannot be called by transparent code.
 
-This topic contains the following sections:
-
-- [Usage Examples and Behaviors](#examples)
-
-- [Override Patterns](#override)
-
-- [Inheritance Rules](#inheritance)
-
-- [Additional Information and Rules](#additional)
-
-<a name="examples"></a>
-
 ## Usage Examples and Behaviors
 
 To specify .NET Framework 4 rules (level 2 transparency), use the following annotation for an assembly:
@@ -97,8 +85,6 @@ The security attributes that are applied to a type also apply to the members tha
 
 - `SecuritySafeCritical`: The type or member is safe-critical. However, the type or member can be called from transparent (partially trusted) code and is as capable as any other critical code. The code must be audited for security.
 
-<a name="override"></a>
-
 ## Override Patterns
 
 The following table shows the method overrides allowed for level 2 transparency.
@@ -110,8 +96,6 @@ The following table shows the method overrides allowed for level 2 transparency.
 |`SafeCritical`|`Transparent`|
 |`SafeCritical`|`SafeCritical`|
 |`Critical`|`Critical`|
-
-<a name="inheritance"></a>
 
 ## Inheritance Rules
 
@@ -163,8 +147,6 @@ The following table shows the disallowed method inheritance patterns.
 
 > [!NOTE]
 > These inheritance rules apply to level 2 types and members. Types in level 1 assemblies can inherit from level 2 security-critical types and members. Therefore, level 2 types and members must have separate inheritance demands for level 1 inheritors.
-
-<a name="additional"></a>
 
 ## Additional Information and Rules
 

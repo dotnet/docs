@@ -1,7 +1,7 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-ms.date: 02/08/2019
+ms.date: 11/04/2019
 ---
 # Type extensions
 
@@ -77,15 +77,12 @@ Optional type extensions are useful for extending a type that you have not defin
 ```fsharp
 module Extensions
 
-open System.Collections.Generic
-
 type IEnumerable<'T> with
     /// Repeat each element of the sequence n times
     member xs.RepeatElements(n: int) =
         seq {
             for x in xs do
-                for i in 1 .. n do
-                    yield x
+                for _ in 1 .. n -> x
         }
 ```
 

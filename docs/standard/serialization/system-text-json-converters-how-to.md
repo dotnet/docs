@@ -49,7 +49,7 @@ The basic pattern creates a class that can handle one type. The factory pattern 
 The following sample is a converter that overrides default serialization for an existing data type. The converter uses mm/dd/yyyy format for `DateTimeOffset` properties.
 
 ```csharp
-private class ExampleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
+public class ExampleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
 {
     public override DateTimeOffset Read(
         ref Utf8JsonReader reader, 

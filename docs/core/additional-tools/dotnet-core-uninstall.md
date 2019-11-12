@@ -44,7 +44,7 @@ dotnet-core-uninstall list [options]
 
 #### Options
 
-# [Windows](#tab/windows)
+## [Windows](#tab/windows)
 
 * **`--aspnet-runtime`**
 
@@ -74,7 +74,7 @@ dotnet-core-uninstall list [options]
 
   List x86 .NET Core SDKs or Runtimes.
 
-# [macOS](#tab/macos)
+## [macOS](#tab/macos)
 
 * **`--runtime`**
 
@@ -152,7 +152,7 @@ The specified version to uninstall. You may list several versions. Response file
 
 #### Options
 
-# [Windows](#tab/windows)
+## [Windows](#tab/windows)
 
 * **`--all`**
 
@@ -226,7 +226,7 @@ Notes:
 2. `--all`, `--all-below`, `--all-but`, `--all-but-latest`, `--all-lower-patches`, `--all-previews`, `--all-previews-but-latest`, `--major-minor` and `[<VERSION>...]` are exclusive.
 3. If neither of `--x64` or `--x86` is specified, then both x64 and x86 will be removed.
 
-# [macOS](#tab/macos)
+## [macOS](#tab/macos)
 
 * **`--all`**
 
@@ -345,13 +345,13 @@ In some cases, you no longer need the `NuGetFallbackFolder` and may wish to dele
 
 ### Uninstalling the `dotnet-core-uninstall` tool
 
-# [Windows](#tab/windows)
+## [Windows](#tab/windows)
 
 1. Open `Add or Remove Programs`.
 2. Search for `Microsoft .NET Core SDK Uninstall Tool`.
 3. Select `Uninstall`.
 
-# [macOS](#tab/macos)
+## [macOS](#tab/macos)
 
 Delete the downloaded *dotnet-core-uninstall.tar.gz* file from the directory where it was installed. If you unzipped the contents of this file into another directory, be sure to delete the content as well.
 

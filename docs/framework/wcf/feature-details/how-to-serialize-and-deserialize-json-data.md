@@ -3,7 +3,7 @@ title: "How to: use DataContractJsonSerializer"
 ms.date: "03/25/2019"
 ms.assetid: 88abc1fb-8196-4ee3-a23b-c6934144d1dd
 ---
-# How to: use DataContractJsonSerializer
+# How to use DataContractJsonSerializer
 
 > [!NOTE]
 > This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the tools in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md).

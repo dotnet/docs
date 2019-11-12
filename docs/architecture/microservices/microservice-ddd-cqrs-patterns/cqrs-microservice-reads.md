@@ -183,7 +183,7 @@ You can see in the image above some example values based on the ViewModel types 
  <https://github.com/StackExchange/dapper-dot-net>
 
 - **Julie Lerman. Data Points - Dapper, Entity Framework and Hybrid Apps (MSDN magazine article)**  
-  <https://docs.microsoft.com/en-us/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps>
+  <https://docs.microsoft.com/archive/msdn-magazine/2016/may/data-points-dapper-entity-framework-and-hybrid-apps>
 
 - **ASP.NET Core Web API Help Pages using Swagger**  
   <https://docs.microsoft.com/aspnet/core/tutorials/web-api-help-pages-using-swagger?tabs=visual-studio>

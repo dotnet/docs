@@ -214,7 +214,7 @@ CentOS distributions require the following libraries installed:
 - libicu
 - zlib
 
-Fedora users: If your openssl's version >= 1.1, you'll need to install compat-openssl10.
+Fedora users: If your openssl's version >= 1.1, you'll need to install **compat-openssl10**.
 
 For .NET Core 2.0, following dependencies are also required:
 
@@ -247,7 +247,16 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 | 2.2               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) |
 | 2.1               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) |
 
----
+## libgdiplus
+
+.NET Core applications that use the *System.Drawing.Common* assembly require libgdiplus to be installed.
+
+An easy way to obtain libgdiplus is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install libgdiplus by executing the following commands at a Terminal (command) prompt:
+
+```console
+brew update
+brew install mono-libgdiplus
+```
 
 ::: zone-end
 

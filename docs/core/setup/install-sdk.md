@@ -10,7 +10,7 @@ zone_pivot_groups: operating-systems-set-one
 
 # Install the .NET Core SDK
 
-In this article you'll learn how to download and install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
+In this article, you'll learn how to download and install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
 You can download and install .NET Core directly with one of the following links:
 
@@ -18,11 +18,11 @@ You can download and install .NET Core directly with one of the following links:
 - [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2).
 - [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1).
 
-You can also install .NET Core as part of an integrated development environment (IDE) detailed in the sections below.
+You can also install .NET Core as part of an integrated development environment (IDE), detailed in the sections below.
 
 ## Install with an installer
 
-Both Windows and macOS have standalone installers which can be used to install the .NET Core SDK.
+Both Windows and macOS have standalone installers that can be used to install the .NET Core SDK.
 
 - Windows [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x64-installer) | [x32 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x86-installer)
 - macOS [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-macos-x64-installer)
@@ -89,7 +89,7 @@ While VS Code doesn't come with .NET Core support, adding .NET Core support is s
 
 ## Install with PowerShell automation
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for a automation and non-admin installs of the SDK. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the SDK. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is currently .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
 

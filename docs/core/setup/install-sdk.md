@@ -4,6 +4,7 @@ description: Learn how to install .NET Core on Windows, Linux, and macOS. Discov
 author: thraka
 ms.author: adegeo
 ms.date: 11/06/2019
+ms.custom: "updateeachrelease"
 zone_pivot_groups: operating-systems-set-one
 ---
 
@@ -11,42 +12,13 @@ zone_pivot_groups: operating-systems-set-one
 
 In this article you'll learn how to download and install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
-Here are links to the .NET Core downloads page by version:
+You can download and install .NET Core directly with one of the following links:
 
 - [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0).
 - [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2).
 - [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1).
 
-## Install with an IDE
-
-When you install a supported IDE, you can also install .NET Core. By keeping the IDE up-to-date, you'll receive the latest supported .NET Core SDK.
-
-::: zone pivot="os-windows"
-
-- Download [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)\
-For more information, see [Visual Studio](#visual-studio).
-
-- Download [Visual Studio Code](https://code.visualstudio.com/)\
-For more information, see [Install with Visual Studio Code](#install-with-visual-studio-code).
-
-::: zone-end
-
-::: zone pivot="os-linux"
-
-- Download [Visual Studio Code](https://code.visualstudio.com/)\
-For more information, see [Install with Visual Studio Code](#install-with-visual-studio-code).
-
-::: zone-end
-
-::: zone pivot="os-macos"
-
-- Download [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)\
-For more information, see [Install with Visual Studio for Mac](#install-with-visual-studio-for-mac).
-
-- Download [Visual Studio Code](https://code.visualstudio.com/)\
-For more information, see [Install with Visual Studio Code](#install-with-visual-studio-code).
-
-::: zone-end
+You can also install .NET Core as part of an integrated development environment (IDE) detailed in the sections below.
 
 ## Install with an installer
 
@@ -59,7 +31,7 @@ Both Windows and macOS have standalone installers which can be used to install t
 
 ## Install with a package manager
 
-If you want to install .NET Core, either SDK or runtime, use the [Linux Package Manager](linux-package-manager-rhel7.md) page.
+You can install .NET Core with many of the common linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
 
 ::: zone-end
 
@@ -123,15 +95,13 @@ After you've installed .NET Core support for VS Code, create your first app by f
 
 ## Install with PowerShell automation
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](../tools/dotnet-install-script.md).
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for a automation and non-admin installs of the SDK. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest "LTS" version, which is currently .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is currently .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
 
 ```powershell
 dotnet-install.ps1 -Channel 3.0
 ```
-
-The installer PowerShell script is used in automation scenarios and non-admin installations.
 
 ::: zone-end
 
@@ -139,15 +109,13 @@ The installer PowerShell script is used in automation scenarios and non-admin in
 
 ## Install with bash automation
 
-The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for a non-admin install of the CLI toolchain and the shared runtime. You can download the script from [dotnet-install script reference page](../tools/dotnet-install-script.md).
+The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the SDK. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest "LTS" version, which is currently .NET Core 2.1. To install the current release of .NET Core, which is 3.0, run the script with the following switch:
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is currently .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
 
 ```bash
 ./dotnet-install.sh -c Current
 ```
-
-The installer bash script is used in automation scenarios and non-admin installations.
 
 ::: zone-end
 

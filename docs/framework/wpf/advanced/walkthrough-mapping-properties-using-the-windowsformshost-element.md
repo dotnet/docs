@@ -51,7 +51,7 @@ The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md
 
 ### To define the application layout
 
-1. Open Window1.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+1. Open Window1.xaml in the WPF Designer.
 
 2. Replace the existing code with the following code.
 

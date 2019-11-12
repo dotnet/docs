@@ -10,7 +10,7 @@ The following tutorials enable you to understand how to use [ML.NET](../index.ym
 
 - [Sentiment analysis](sentiment-analysis.md): demonstrates how to apply a **binary classification** task using ML.NET.
 - [GitHub issue classification](github-issue-classification.md): demonstrates how to apply a **multiclass classification** task using ML.NET.
-- [Price predictor](taxi-fare.md): demonstrates how to apply a **regression** task using ML.NET.
+- [Price predictor](predict-prices.md): demonstrates how to apply a **regression** task using ML.NET.
 - [Iris clustering](iris-clustering.md): demonstrates how to apply a **clustering** task using ML.NET.
 - [Recommendation](movie-recommendation.md): generate movie **recommendations** based on previous user ratings
 - [Image classification](image-classification.md): demonstrates how to retrain an existing TensorFlow model to create a custom image classifier using ML.NET.

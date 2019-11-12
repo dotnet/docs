@@ -37,7 +37,7 @@ Applications often provide multiple serialization options which allow the user t
 
 ### XPS Print Path
 
-The Microsoft .NET Framework XPS print path also provides an extensible mechanism for writing documents through print output.  XPS serves as both a document file format and is the native print spool format for [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)].  XPS documents can be sent directly to XPS-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](printing-overview.md) for additional information on print path output options and capabilities.
+The Microsoft .NET Framework XPS print path also provides an extensible mechanism for writing documents through print output.  XPS serves as both a document file format and is the native print spool format for Windows Vista.  XPS documents can be sent directly to XPS-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](printing-overview.md) for additional information on print path output options and capabilities.
 
 <a name="PluginSerializers"></a>
 

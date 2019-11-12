@@ -1,7 +1,6 @@
 ---
 title: How gRPC approaches RPC - gRPC for WCF Developers
 description: Comparing the key features of WCF to gRPC.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

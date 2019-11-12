@@ -1,7 +1,6 @@
 ---
 title: Channel credentials - gRPC for WCF Developers
 description: How to implement and use gRPC channel credentials in ASP.NET Core 3.0.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

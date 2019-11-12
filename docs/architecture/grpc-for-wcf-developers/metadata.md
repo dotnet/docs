@@ -1,7 +1,6 @@
 ---
 title: Metadata - gRPC for WCF Developers
 description: How metadata is used in gRPC to pass additional context between clients and servers
-author: markrendle
 ms.date: 09/02/2019
 ---
 

@@ -20,7 +20,7 @@ ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
 ms.custom: seodec18
 ---
 # Backtracking in Regular Expressions
-<a name="top"></a> Backtracking occurs when a regular expression pattern contains optional [quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md) or [alternation constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.  
+Backtracking occurs when a regular expression pattern contains optional [quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md) or [alternation constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md), and the regular expression engine returns to a previous saved state to continue its search for a match. Backtracking is central to the power of regular expressions; it makes it possible for expressions to be powerful and flexible, and to match very complex patterns. At the same time, this power comes at a cost. Backtracking is often the single most important factor that affects the performance of the regular expression engine. Fortunately, the developer has control over the behavior of the regular expression engine and how it uses backtracking. This topic explains how backtracking works and how it can be controlled.  
   
 > [!NOTE]
 > In general, a Nondeterministic Finite Automaton (NFA) engine like .NET regular expression engine places the responsibility for crafting efficient, fast regular expressions on the developer.  
@@ -68,9 +68,7 @@ ms.custom: seodec18
 |18|\w|"d" (index 13)|Possible match.|  
 |19|\b|"" (index 14)|Match.|  
   
- If a regular expression pattern includes no optional quantifiers or alternation constructs, the maximum number of comparisons required to match the regular expression pattern with the input string is roughly equivalent to the number of characters in the input string. In this case, the regular expression engine uses 19 comparisons to identify possible matches in this 13-character string.  In other words, the regular expression engine runs in near-linear time if it contains no optional quantifiers or alternation constructs.  
-  
- [Back to top](#top)  
+ If a regular expression pattern includes no optional quantifiers or alternation constructs, the maximum number of comparisons required to match the regular expression pattern with the input string is roughly equivalent to the number of characters in the input string. In this case, the regular expression engine uses 19 comparisons to identify possible matches in this 13-character string.  In other words, the regular expression engine runs in near-linear time if it contains no optional quantifiers or alternation constructs.   
   
 <a name="backtracking_with_optional_quantifiers_or_alternation_constructs"></a>   
 ## Backtracking with Optional Quantifiers or Alternation Constructs  
@@ -93,9 +91,7 @@ ms.custom: seodec18
   
 - It compares "s" in the pattern to the "s" that follows the matched "e" character (the first "s" in "expressions"). The match is successful.  
   
- When you use backtracking, matching the regular expression pattern with the input string, which is 55 characters long, requires 67 comparison operations. Generally, if a regular expression pattern has a single alternation construct or a single optional quantifier, the number of comparison operations required to match the pattern is more than twice the number of characters in the input string.  
-  
- [Back to top](#top)  
+ When you use backtracking, matching the regular expression pattern with the input string, which is 55 characters long, requires 67 comparison operations. Generally, if a regular expression pattern has a single alternation construct or a single optional quantifier, the number of comparison operations required to match the pattern is more than twice the number of characters in the input string.   
   
 <a name="backtracking_with_nested_optional_quantifiers"></a>   
 ## Backtracking with Nested Optional Quantifiers  
@@ -112,9 +108,7 @@ ms.custom: seodec18
   
 - It returns to the previously saved match 3. It determines that there are two additional "a" characters to assign to an additional captured group. However, the end-of-string test fails. It then returns to match3 and tries to match the two additional "a" characters in two additional captured groups. The end-of-string test still fails. These failed matches require 12 comparisons. So far, a total of 25 comparisons have been performed.  
   
- Comparison of the input string with the regular expression continues in this way until the regular expression engine has tried all possible combinations of matches, and then concludes that there is no match. Because of the nested quantifiers, this comparison is an O(2<sup>n</sup>) or an exponential operation, where *n* is the number of characters in the input string. This means that in the worst case, an input string of 30 characters requires approximately 1,073,741,824 comparisons, and an input string of 40 characters requires approximately 1,099,511,627,776 comparisons. If you use strings of these or even greater lengths, regular expression methods can take an extremely long time to complete when they process input that does not match the regular expression pattern.  
-  
- [Back to top](#top)  
+ Comparison of the input string with the regular expression continues in this way until the regular expression engine has tried all possible combinations of matches, and then concludes that there is no match. Because of the nested quantifiers, this comparison is an O(2<sup>n</sup>) or an exponential operation, where *n* is the number of characters in the input string. This means that in the worst case, an input string of 30 characters requires approximately 1,073,741,824 comparisons, and an input string of 40 characters requires approximately 1,099,511,627,776 comparisons. If you use strings of these or even greater lengths, regular expression methods can take an extremely long time to complete when they process input that does not match the regular expression pattern. 
   
 <a name="controlling_backtracking"></a>   
 ## Controlling Backtracking  
@@ -206,8 +200,6 @@ ms.custom: seodec18
 |`((?=[A-Z])\w+\.)*`|Match the pattern of one or more word characters followed by a period zero or more times. The initial word character must be alphabetical.|  
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|  
 |`$`|End the match at the end of the input string.|  
-  
- [Back to top](#top)  
   
 ## See also
 

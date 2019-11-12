@@ -1,7 +1,6 @@
 ---
 title: WCF endpoints and gRPC methods - gRPC for WCF Developers
 description: Comparison of WCF endpoints declared with ServiceContract and OperationContract attributes, and gRPC methods declared in Protobuf
-author: markrendle
 ms.date: 09/02/2019
 ---
 

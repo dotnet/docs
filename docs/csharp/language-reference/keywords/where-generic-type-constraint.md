@@ -3,10 +3,10 @@ title: "where (generic type constraint) - C# Reference"
 ms.custom: seodec18
 
 ms.date: 04/12/2018
-f1_keywords: 
+f1_keywords:
   - "whereconstraint"
   - "whereconstraint_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "where (generic type constraint) [C#]"
 ---
 # where (generic type constraint) (C# Reference)
@@ -39,7 +39,7 @@ The `where` clause may also include an `unmanaged` constraint. The `unmanaged` c
 
 [!code-csharp[using the unmanaged constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#4)]
 
-The `where` clause may also include a constructor constraint, `new()`. That constraint makes it possible to create an instance of a type parameter using the `new` operator. The [new() Constraint](new-constraint.md) lets the compiler know that any type argument supplied must have an accessible parameterless--or default-- constructor. For example:
+The `where` clause may also include a constructor constraint, `new()`. That constraint makes it possible to create an instance of a type parameter using the `new` operator. The [new() Constraint](new-constraint.md) lets the compiler know that any type argument supplied must have an accessible parameterless constructor. For example:
 
 [!code-csharp[using the new constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#5)]
 

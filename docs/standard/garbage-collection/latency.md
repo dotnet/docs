@@ -33,8 +33,8 @@ The following table lists the application scenarios for using the <xref:System.R
 
 |Latency mode|Application scenarios|
 |------------------|---------------------------|
-|<xref:System.Runtime.GCLatencyMode.Batch>|For applications that have no user interface (UI) or server-side operations.<br /><br />This is the default mode for both server and workstation garbage collection when background GC is disabled.|
-|<xref:System.Runtime.GCLatencyMode.Interactive>|For most applications that have a UI.<br /><br />This is the default mode for workstation and server garbage collection for a standalone executable that's not hosted.<br /><br />This is the default mode for both server and workstation garbage collection when background GC is enabled.|
+|<xref:System.Runtime.GCLatencyMode.Batch>|For applications that have no user interface (UI) or server-side operations.<br /><br />This is the default mode for both server and workstation garbage collection when background garbage collection is disabled.|
+|<xref:System.Runtime.GCLatencyMode.Interactive>|For most applications that have a UI.<br /><br />This is the default mode for workstation and server garbage collection for a standalone executable that's not hosted.<br /><br />This is the default mode for both server and workstation garbage collection when background garbage collection is enabled.|
 |<xref:System.Runtime.GCLatencyMode.LowLatency>|For applications that have short-term, time-sensitive operations during which interruptions from the garbage collector could be disruptive. For example, applications that render animations or data acquisition functions.|
 |<xref:System.Runtime.GCLatencyMode.SustainedLowLatency>|For applications that have time-sensitive operations for a contained but potentially longer duration of time during which interruptions from the garbage collector could be disruptive. For example, applications that need quick response times as market data changes during trading hours.<br /><br />This mode results in a larger managed heap size than other modes. Because it does not compact the managed heap, higher fragmentation is possible. Ensure that sufficient memory is available.|
 

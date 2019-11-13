@@ -65,11 +65,19 @@
   - name: Developing Libraries with Cross Platform Tools
     href: tutorials/libraries.md
   - name: Create a .NET Core application with plugins
-    href: tutorials/creating-app-with-plugin-support.md      
+    href: tutorials/creating-app-with-plugin-support.md
   - name: Developing ASP.NET Core applications
     href: tutorials/aspnet-core.md
   - name: Hosting .NET Core from native code
     href: tutorials/netcore-hosting.md
+- name: Runtime configuration
+  items:
+  - name: Runtime configuration settings
+    href: runtime-config/index.md
+  - name: Runtime configuration with runtimeconfig.json
+    href: runtime-config/runtimeconfig.md
+  - name: Runtime configuration with environment variables
+    href: runtime-config/envvars.md
 - name: Native Interoperability
   items:
   - name: Exposing .NET Core Components to COM

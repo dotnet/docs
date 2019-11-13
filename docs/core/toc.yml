@@ -54,35 +54,47 @@
       href: tutorials/cli-templates-create-template-pack.md
   - name: Get started with .NET Core on macOS
     href: tutorials/using-on-macos.md
-  - name: Get started with .NET Core on macOS using Visual Studio for Mac
+  - name: Get started with .NET Core using Visual Studio for Mac
     href: tutorials/using-on-mac-vs.md
-  - name: Building a complete .NET Core solution on macOS using Visual Studio for Mac
+  - name: Build a complete .NET Core solution on macOS
     href: tutorials/using-on-mac-vs-full-solution.md
   - name: Get started with .NET Core using the CLI tools
     href: tutorials/using-with-xplat-cli.md
-  - name: Organizing and testing projects with the .NET Core command line
+  - name: Organize and test projects with the .NET Core CLI
     href: tutorials/testing-with-cli.md
-  - name: Developing Libraries with Cross Platform Tools
+  - name: Develop libraries with cross-platform tools
     href: tutorials/libraries.md
-  - name: Create a .NET Core application with plugins
+  - name: Create a .NET Core app with plugins
     href: tutorials/creating-app-with-plugin-support.md
-  - name: Developing ASP.NET Core applications
+  - name: Develop ASP.NET Core apps
     href: tutorials/aspnet-core.md
-  - name: Hosting .NET Core from native code
+  - name: Host .NET Core from native code
     href: tutorials/netcore-hosting.md
-- name: Runtime configuration
+- name: Run-time configuration
   items:
-  - name: Runtime configuration settings
-    href: runtime-config/index.md
-  - name: Runtime configuration with runtimeconfig.json
-    href: runtime-config/runtimeconfig.md
-  - name: Runtime configuration with environment variables
-    href: runtime-config/envvars.md
-- name: Native Interoperability
+  - name: Settings
+    href: run-time-config/index.md
+  - name: Compilation settings
+    href: run-time-config/compilation.md
+  - name: Date and time settings
+    href: run-time-config/date-time.md
+  - name: Debugging settings
+    href: run-time-config/debugging.md
+  - name: Garbage collector settings
+    href: run-time-config/garbage-collector.md
+  - name: Globalization settings
+    href: run-time-config/globalization.md
+  - name: Networking settings
+    href: run-time-config/networking.md
+  - name: Profiling settings
+    href: run-time-config/profiling.md
+  - name: Threading settings
+    href: run-time-config/threading.md
+- name: Native interoperability
   items:
-  - name: Exposing .NET Core Components to COM
+  - name: Expose .NET Core components to COM
     href: native-interop/expose-components-to-com.md
-- name: Packages, Metapackages and Frameworks
+- name: Packages, Metapackages, and Frameworks
   href: packages.md
 - name: Changes in CLI overview
   href: tools/cli-msbuild-architecture.md

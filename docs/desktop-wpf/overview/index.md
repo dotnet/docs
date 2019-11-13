@@ -14,7 +14,7 @@ Welcome to the Desktop Guide for Windows Presentation Foundation (WPF), a UI fra
 
 There are two implementations of WPF:
 
-01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/wpf). This version runs on .NET Core 3.0. The WPF Visual Designer for XAML requires, at a minimum, [Visual Studio 2019 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide).
+01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/wpf). This version runs on .NET Core 3.0. The WPF Visual Designer for XAML requires, at a minimum, [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide).
 
 01. The .NET Framework implementation that's supported by Visual Studio 2019 and Visual Studio 2017.
 

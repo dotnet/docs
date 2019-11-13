@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5c834aa1-f2db-408a-b230-c7bec093d364
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRPolicyManager Interface
 Provides methods that allow the host to specify policy actions to be taken in the event of failures and timeouts.  

@@ -13,7 +13,11 @@ This tutorial expects you to have a machine you can use for development. The .NE
 
 ## Explore integer math
 
-Create a directory named *numbers-quickstart*. Make that the current directory and run `dotnet new console -n NumbersInCSharp -o .`.
+Create a directory named *numbers-quickstart*. Make that the current directory and run the following command:
+
+```dotnetcli
+dotnet new console -n NumbersInCSharp -o .
+```
 
 Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following:
 
@@ -35,10 +39,16 @@ You've just seen one of the fundamental math operations with integers. The `int`
 Start by exploring those different operations. Add these lines after the line that writes the value of `c`:
 
 ```csharp
+
+// subtraction
 c = a - b;
 Console.WriteLine(c);
+
+// multiplication
 c = a * b;
 Console.WriteLine(c);
+
+// division
 c = a / b;
 Console.WriteLine(c);
 ```
@@ -68,12 +78,20 @@ namespace NumbersInCSharp
         {
             int a = 18;
             int b = 6;
+            
+            // addition
             int c = a + b;
             Console.WriteLine(c);
+            
+            // subtraction
             c = a - b;
             Console.WriteLine(c);
+            
+            // multiplication
             c = a * b;
             Console.WriteLine(c);
+            
+            // division
             c = a / b;
             Console.WriteLine(c);
         }
@@ -152,12 +170,20 @@ namespace NumbersInCSharp
         {
             int a = 18;
             int b = 6;
+            
+            // addition
             int c = a + b;
             Console.WriteLine(c);
+            
+            // subtraction
             c = a - b;
             Console.WriteLine(c);
+            
+            // multiplication
             c = a * b;
             Console.WriteLine(c);
+            
+            // division
             c = a / b;
             Console.WriteLine(c);
         }
@@ -349,8 +375,6 @@ your own development environment.
 
 You can learn more about numbers in C# in the following topics:
 
-- [Integral types](../../language-reference/builtin-types/integral-numeric-types.md)
-- [Floating-Point Types Table](../../language-reference/builtin-types/floating-point-numeric-types.md)
-- [Built-In Types Table](../../language-reference/keywords/built-in-types-table.md)
-- [Implicit Numeric Conversions Table](../../language-reference/keywords/implicit-numeric-conversions-table.md)
-- [Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md)
+- [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
+- [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)
+- [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md)

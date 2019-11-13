@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a6ac2531-ddfe-46fd-88fe-8b1eabe0b255
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugBlockingReason Enumeration
 Specifies the reasons why a thread may become blocked on a given object.  

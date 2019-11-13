@@ -43,4 +43,4 @@ Str = "The total count is " & count
 - [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)
 - [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
 - [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+- [Develop globalized and localized apps](/visualstudio/ide/globalizing-and-localizing-applications)

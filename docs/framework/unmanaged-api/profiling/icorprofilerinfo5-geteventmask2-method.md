@@ -12,8 +12,6 @@ api_type:
 ms.assetid: f854b68f-009c-4ffb-89cd-ca874d1c0fb7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo5::GetEventMask2 Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

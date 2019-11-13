@@ -1,13 +1,10 @@
 ---
 title: Introduction - gRPC for WCF Developers
 description: Introduction
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Introduction
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Helping machines communicate with each other has been one of the primary preoccupations of the digital age. In particular, there is an ongoing effort to determine the optimal remote communication mechanism that will suit the interoperability demands of the current infrastructure. As you can imagine, that mechanism changes as either the demands or the infrastructure evolves.
 

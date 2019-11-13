@@ -1,13 +1,10 @@
 ---
 title: Appendix - gRPC for WCF Developers
 description: Discussion of distributed transactions and their implementation in modern microservices architectures.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Appendix A - Transactions
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Windows Communication Foundation (WCF) supported distributed transactions, allowing atomic operations to be performed across multiple services. This functionality was based on the [Microsoft Distributed Transaction Coordinator](https://docs.microsoft.com/previous-versions/windows/desktop/ms684146(v=vs.85)).
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c568b737-fdb2-4816-accd-051f5ab760f1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode::GetFunction Method
 Gets the "ICorDebugFunction" associated with this "ICorDebugCode".  

@@ -444,7 +444,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 1. Open *ExpenseReportPage.xaml*.
 
-2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../data/data-binding-overview.md).
+2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../../../desktop-wpf/data/data-binding-overview.md).
 
     [!code-xaml[ExpenseIt#31](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseReportPage.xaml#31)]
 
@@ -485,7 +485,7 @@ For more information about creating applications, see the following topics:
 
 - [Application development](../app-development/index.md)
 - [Controls](../controls/index.md)
-- [Data binding overview](../data/data-binding-overview.md)
+- [Data binding overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Graphics and multimedia](../graphics-multimedia/index.md)
 - [Documents in WPF](../advanced/documents-in-wpf.md)
 

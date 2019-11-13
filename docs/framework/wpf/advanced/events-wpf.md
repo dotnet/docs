@@ -38,6 +38,6 @@ ms.assetid: d3b93c6f-aa6b-486d-a010-d097ea8a516b
   [Properties](properties-wpf.md)  
   [Input](input-wpf.md)  
   [Resources](resources-wpf.md)  
-  [Styling and Templating](../controls/styling-and-templating.md)  
+  [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
   [WPF Content Model](../controls/wpf-content-model.md)  
   [Threading Model](threading-model.md)

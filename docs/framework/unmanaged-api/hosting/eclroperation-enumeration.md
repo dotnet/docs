@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EClrOperation Enumeration
 Describes the set of operations for which a host can apply policy actions.  

@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "timers, about timers"
 ms.assetid: 7091500d-be18-499b-a942-95366ce185e5
 author: "pkulikov"
-ms.author: "ronpet"
 ---
 # Timers
 

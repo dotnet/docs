@@ -9,7 +9,7 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
 ## Simplified Configuration  
  In WCF service configuration files, the <`system.serviceModel`> section contains a <`service`> element for each service hosted. The <`service`> element contains a collection of <`endpoint`> elements that specify the endpoints exposed for each service and optionally a set of service behaviors. The <`endpoint`> elements specify the address, binding, and contract exposed by the endpoint, and optionally binding configuration and endpoint behaviors. The <`system.serviceModel`> section also contains a <`behaviors`> element that allows you to specify service or endpoint behaviors. The following example shows the <`system.serviceModel`> section of a configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
   <behaviors>  
     <serviceBehaviors>  

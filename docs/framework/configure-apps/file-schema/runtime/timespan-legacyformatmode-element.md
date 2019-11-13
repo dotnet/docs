@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<TimeSpan_LegacyFormatMode> element"
   - "TimeSpan_LegacyFormatMode element"
 ms.assetid: 865e7207-d050-4442-b574-57ea29d5e2d6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<TimeSpan_LegacyFormatMode> Element
 
@@ -71,13 +69,13 @@ The following example instantiates a <xref:System.TimeSpan> object and attempts 
 
 When you run the example on the .NET Framework 3.5 or on an earlier version, it displays the following output:
 
-```
+```console
 12:30:45
 ```
 
 This differs markedly from the output if you run the example on the .NET Framework 4 or later version:
 
-```
+```console
 Invalid Format
 ```
 

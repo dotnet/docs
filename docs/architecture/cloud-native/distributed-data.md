@@ -9,7 +9,7 @@ ms.date: 06/30/2019
 
 When constructing a cloud-native system that consists of many independent microservices, the way you think about data storage changes.
 
-Traditional monolithic applications favor a centralized data store shown in Figure 5-1. 
+Traditional monolithic applications favor a centralized data store shown in Figure 5-1.
 
 ![Single monolithic database](./media/single-monolithic-database.png)
 
@@ -26,7 +26,7 @@ Cloud-native systems favor a data architecture shown in Figure 5-2 in which each
 **Figure 5-2**. Multiple databases across microservices
 
 Note how in the previous figure each microservice owns and encapsulates it data store and only exposes data to the outside world from its public API.
- 
+
 This model enables each microservice to evolve independently without having to coordinate data schema changes with other microservices. Each microservice is free to implement the data store (relational database, document database, key-value store) type that best matches its needs. At runtime, each microservice can scale its data accordingly. This is shown in Figure 5-3:
 
 ![Polyglot data persistence](./media/polyglot-data-persistence.png)

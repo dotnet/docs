@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetMethodLocalSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: 8b989e38-e779-49d1-9e90-f1f920484b08
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetMethodLocalSymbols Method
 Gets a method's local symbols given the relative virtual address (RVA) of that method.  

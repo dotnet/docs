@@ -1,13 +1,10 @@
 ---
 title: Kubernetes - gRPC for WCF Developers
 description: Running ASP.NET Core gRPC services in a Kubernetes cluster.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Kubernetes
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Although it's possible to run containers manually on Docker hosts, for reliable production systems it's preferable to use a Container Orchestration Engine to manage multiple instances running across several servers in a cluster. There are various Container Orchestration Engines available, including Kubernetes, Docker Swarm and Apache Mesos. But of these engines, Kubernetes is far and away the most widely used, so it will be the focus of this chapter.
 
@@ -19,7 +16,7 @@ Kubernetes includes the following functionality:
 - **Ingress** exposes selected services externally, and generally provides load-balancing across instances of those services.
 - **Resource management** attaches external resources such as storage to containers.
 
-This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available from on the [RendleLabs/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub,
+This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available from on the [dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub,
 
 ## Kubernetes terminology
 

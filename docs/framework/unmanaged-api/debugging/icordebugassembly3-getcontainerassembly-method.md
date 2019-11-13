@@ -2,8 +2,6 @@
 title: "ICorDebugAssembly3::GetContainerAssembly Method"
 ms.date: "03/30/2017"
 ms.assetid: f5fddeb6-b82e-4ebb-b432-849ce8513c77
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssembly3::GetContainerAssembly Method
 Returns the container assembly of this `ICorDebugAssembly3` object.  

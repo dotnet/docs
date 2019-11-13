@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 6758f4d3-6bc7-4c99-8582-e9be00566784
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # WriteableMetadataUpdateMode Enumeration
 [Supported in the .NET Framework 4.5.2 and later versions]  

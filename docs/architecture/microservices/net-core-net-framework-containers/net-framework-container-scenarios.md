@@ -21,7 +21,7 @@ In addition, the [Windows Compatibility Pack](../../../core/porting/windows-comp
 
 However, even with that exceptional progression since .NET Standard 2.0 and .NET Core 2.1, there might be cases where certain NuGet packages need Windows to run and might not support .NET Core. If those packages are critical for your application, then you will need to use .NET Framework on Windows Containers.
 
-## Using .NET technologies not available for .NET Core 
+## Using .NET technologies not available for .NET Core
 
 Some .NET Framework technologies are not available in the current version of .NET Core (version 2.2 as of this writing). Some of them will be available in later .NET Core releases (.NET Core 2.x), but others do not apply to the new application patterns targeted by .NET Core and might never be available.
 
@@ -45,16 +45,16 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 
 ### Additional resources
 
-- **.NET Core Guide**  
+- **.NET Core Guide** \
   [https://docs.microsoft.com/dotnet/core/index](../../../core/index.md)
 
-- **Porting from .NET Framework to .NET Core**  
+- **Porting from .NET Framework to .NET Core** \
   [https://docs.microsoft.com/dotnet/core/porting/index](../../../core/porting/index.md)
 
-- **.NET Core on Docker Guide**
-    [https://docs.microsoft.com/dotnet/core/docker/introduction](../../../core/docker/introduction.md)
+- **.NET Core on Docker Guide** \
+  [https://docs.microsoft.com/dotnet/core/docker/introduction](../../../core/docker/introduction.md)
 
-- **.NET Components Overview**  
+- **.NET Components Overview** \
   [https://docs.microsoft.com/dotnet/standard/components](../../../standard/components.md)
 
 >[!div class="step-by-step"]

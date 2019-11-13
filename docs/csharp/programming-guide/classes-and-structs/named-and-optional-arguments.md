@@ -45,7 +45,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
 
  `PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");`
   
- However, out-of-order named arguments are invalid if they're followed by positional arguments.
+ Positional arguments that follow any out-of-order named arguments are invalid.
 
  ```csharp
  // This generates CS1738: Named argument specifications must appear after all fixed arguments have been specified.
@@ -107,7 +107,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
  [!code-csharp[csProgGuideNamedAndOptional#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/namedandoptcom.cs#13)]  
   
- For more information and examples, see [How to: Use Named and Optional Arguments in Office Programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to: Access Office Interop Objects by Using Visual C# Features](../interop/how-to-access-office-onterop-objects.md).  
+ For more information and examples, see [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to: Access Office Interop Objects by Using Visual C# Features](../interop/how-to-access-office-onterop-objects.md).  
   
 ## Overload Resolution  
  Use of named and optional arguments affects overload resolution in the following ways:  
@@ -123,7 +123,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
 ## See also
 
-- [How to: Use Named and Optional Arguments in Office Programming](./how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [How to: use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md)
 - [Using Type dynamic](../types/using-type-dynamic.md)
 - [Using Constructors](./using-constructors.md)
 - [Using Indexers](../indexers/using-indexers.md)

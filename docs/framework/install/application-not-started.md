@@ -1,8 +1,6 @@
 ---
 title: Troubleshooting 'This application could not be started'
 description: Learn what to do if you see a 'This application could not be started' dialog box.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 09/05/2019
 ---
 # Troubleshooting a 'This application could not be started' error message

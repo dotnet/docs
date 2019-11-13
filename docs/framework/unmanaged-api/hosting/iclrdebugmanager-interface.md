@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: e835062c-c7d6-4945-8a44-2de7ebf3928e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugManager Interface
 Provides methods that allow a host to associate a set of tasks with an identifier and a friendly name.  

@@ -23,7 +23,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 <a name="Prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you have read the [XAML Overview (WPF)](xaml-overview-wpf.md) and have some basic knowledge of the CLR and object-oriented programming.  
+ This topic assumes that you have read the [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md) and have some basic knowledge of the CLR and object-oriented programming.  
   
 <a name="codebehind_and_the_xaml_language"></a>   
 ## Code-Behind and the XAML Language  
@@ -44,7 +44,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 <a name="x_Code"></a>   
 ## x:Code  
- [x:Code](../../xaml-services/x-code-intrinsic-xaml-type.md) is a directive element defined in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. An `x:Code` directive element can contain inline programming code. The code that is defined inline can interact with the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] on the same page. The following example illustrates inline C# code. Notice that the code is inside the `x:Code` element and that the code must be surrounded by `<CDATA[`...`]]>` to escape the contents for [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)], so that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor (interpreting either the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] schema or the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] schema) will not try to interpret the contents literally as [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)].  
+ [x:Code](../../xaml-services/x-code-intrinsic-xaml-type.md) is a directive element defined in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. An `x:Code` directive element can contain inline programming code. The code that is defined inline can interact with the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] on the same page. The following example illustrates inline C# code. Notice that the code is inside the `x:Code` element and that the code must be surrounded by `<CDATA[`...`]]>` to escape the contents for XML, so that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor (interpreting either the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] schema or the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] schema) will not try to interpret the contents literally as XML.  
   
  [!code-xaml[XAMLOvwSupport#ButtonWithInlineCode](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page4.xaml#buttonwithinlinecode)]  
   
@@ -54,7 +54,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 ## See also
 
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [x:Code Intrinsic XAML Type](../../xaml-services/x-code-intrinsic-xaml-type.md)
 - [Building a WPF Application](../app-development/building-a-wpf-application-wpf.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)

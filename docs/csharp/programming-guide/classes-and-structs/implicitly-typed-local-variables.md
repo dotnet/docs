@@ -39,7 +39,7 @@ The `var` keyword may be used in the following contexts:
     using (var file = new StreamReader("C:\\myfile.txt")) {...}
     ```
 
-For more information, see [How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
+For more information, see [How to use implicitly typed local variables and arrays in a query expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 
 ## var and anonymous types
 
@@ -89,11 +89,11 @@ However, the use of `var` does have at least the potential to make your code mor
 
 - [C# Reference](../../language-reference/index.md)
 - [Implicitly Typed Arrays](../arrays/implicitly-typed-arrays.md)
-- [How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)
+- [How to use implicitly typed local variables and arrays in a query expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)
 - [Anonymous Types](anonymous-types.md)
 - [Object and Collection Initializers](object-and-collection-initializers.md)
 - [var](../../language-reference/keywords/var.md)
-- [LINQ Query Expressions](../linq-query-expressions/index.md)
+- [LINQ in C#](../../linq/index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [for](../../language-reference/keywords/for.md)
 - [foreach, in](../../language-reference/keywords/foreach-in.md)

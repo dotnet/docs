@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "tasks, creating pre-computed"
 ms.assetid: a73eafa2-1f49-4106-a19e-997186029b58
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create Pre-Computed Tasks
 This document describes how to use the <xref:System.Threading.Tasks.Task.FromResult%2A?displayProperty=nameWithType> method to retrieve the results of asynchronous download operations that are held in a cache. The <xref:System.Threading.Tasks.Task.FromResult%2A> method returns a finished <xref:System.Threading.Tasks.Task%601> object that holds the provided value as its <xref:System.Threading.Tasks.Task%601.Result%2A> property. This method is useful when you perform an asynchronous operation that returns a <xref:System.Threading.Tasks.Task%601> object, and the result of that <xref:System.Threading.Tasks.Task%601> object is already computed.  

@@ -2,6 +2,7 @@
 title: Executing Expression Trees
 description: Learn about executing expression trees by converting them into executable Intermediate Language (IL) instructions.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: 109e0ac5-2a9c-48b4-ac68-9b6219cdbccf
 ---
 

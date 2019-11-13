@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "registering primary interop assemblies"
   - "primary interop assemblies, registering"
 ms.assetid: 4b2fcf8a-429d-43ce-8334-e026040be8bb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Register Primary Interop Assemblies
 

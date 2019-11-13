@@ -1,6 +1,6 @@
 ---
 title: "Additional class libraries and APIs"
-ms.date: "10/09/2019"
+ms.date: "10/17/2019"
 helpviewer_keywords: 
   - "Additional class libraries"
   - "Additional managed libraries"
@@ -55,17 +55,22 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Net.Connection.m\_WriteList Field](m_writelist.md)
 * [System.Net.ConnectionGroup Class](connectiongroup.md)
 * [System.Net.ConnectionGroup.m\_ConnectionList Field](m_connectionlist.md)
+* [System.Net.ConnectStream.Connection Property](system.net.connectstream.connection.md)
 * [System.Net.CoreResponseData Class](coreresponsedata.md)
 * [System.Net.CoreResponseData.m\_ResponseHeaders Field](coreresponsedata_m_responseheaders.md)
 * [System.Net.CoreResponseData.m\_StatusCode Field](coreresponsedata_m_statuscode.md)
 * [System.Net.HttpWebRequest.\_AutoRedirects Field](_autoredirects.md)
 * [System.Net.HttpWebRequest.\_CoreResponse Field](httpwebrequest__coreresponse.md)
 * [System.Net.HttpWebRequest.\_HttpResponse Field](_httpresponse.md)
+* [System.Net.PooledStream.NetworkStream Property](system.net.pooledstream.networkstream.md)
 * [System.Net.ServicePoint.m\_ConnectionGroupList Field](m_connectiongrouplist.md)
 * [System.Net.ServicePointManager.s\_ServicePointTable Field](s_servicepointtable.md)
+* [System.Net.TlsStream.m_Worker Field](system.net.tlsstream.m_worker.md)
+* [System.Net.Security.SslState.SslProtocol Property](system.net.security.sslstate.sslprotocol.md)
 * [System.Windows.Diagnostics.VisualDiagnostics.s\_isDebuggerCheckDisabledForTestPurposes Field](s-isdebuggercheckdisabledfortestpurposes-field.md)
 * [System.Windows.Forms.Design.DataMemberFieldEditor Class](datamemberfieldeditor-class.md)
 * [System.Windows.Forms.Design.DataMemberListEditor Class](datamemberlisteditor-class.md)
+* [System.Xml.XmlReader.CreateSqlReader Method](system.xml.xmlreader.createsqlreader.md)
 * [adodb.Connection Interface](adodb.connection.md)
 * [adodb.EventReason Enum](adodb.eventreasonenum.md)
 * [adodb.EventStatus Enum](adodb.eventstatusenum.md)

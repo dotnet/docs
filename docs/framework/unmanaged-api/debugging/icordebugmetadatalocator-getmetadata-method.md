@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f9b0ff22-54db-45eb-9cc3-508000a3141d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMetaDataLocator::GetMetaData Method
 Asks the debugger to return the full path to a module whose metadata is needed to complete an operation the debugger requested.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 33f431d7-ab1a-494d-8af2-20ab15aba194
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug Interface
 Provides methods that allow developers to debug applications in the common language runtime (CLR) environment.  

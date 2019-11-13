@@ -32,7 +32,7 @@ The custom encoder implementation consists of a message encoder factory, a messa
 
 1. Install ASP.NET 4.0 using the following command.
 
-    ```
+    ```console
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 

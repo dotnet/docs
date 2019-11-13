@@ -334,7 +334,7 @@ You can persist non-string data either as binary data or as formatted data. If y
 The following example illustrates the limited portability that results from using culture-sensitive formatting to persist data. The example saves an array of date and time values to a file. These are formatted by using the conventions of the English (United States) culture. After the application changes the current thread culture to French (Switzerland), it tries to read the saved values by using the formatting conventions of the current culture. The attempt to read two of the data items throws a <xref:System.FormatException> exception, and the array of dates now contains two incorrect elements that are equal to <xref:System.DateTime.MinValue>.
 
 [!code-csharp[Conceptual.Strings.BestPractices#21](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/persistence.cs#21)]
- [!code-vb[Conceptual.Strings.BestPractices#21](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/persistence.vb#21)]
+[!code-vb[Conceptual.Strings.BestPractices#21](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/persistence.vb#21)]
 
 However, if you replace the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> property with <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> in the calls to <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType> and <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=nameWithType>,   the persisted date and time data is successfully restored, as the following output shows:
 

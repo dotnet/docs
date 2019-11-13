@@ -1,7 +1,7 @@
 ---
 title: Byrefs
 description: Learn about byref and byref-like types in F#, which are used for low-level programming.
-ms.date: 09/02/2018
+ms.date: 11/04/2019
 ---
 # Byrefs
 
@@ -194,9 +194,9 @@ You can also directly assign to a return `byref`. Consider the following (highly
 type C() =
     let mutable nums = [| 1; 3; 7; 15; 31; 63; 127; 255; 511; 1023 |]
 
-    override __.ToString() = String.Join(' ', nums)
+    override _.ToString() = String.Join(' ', nums)
 
-    member __.FindLargestSmallerThan(target: int) =
+    member _.FindLargestSmallerThan(target: int) =
         let mutable ctr = nums.Length - 1
 
         while ctr > 0 && nums.[ctr] >= target do ctr <- ctr - 1

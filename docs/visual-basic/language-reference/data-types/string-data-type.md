@@ -20,19 +20,23 @@ helpviewer_keywords:
 ms.assetid: 15ac03f5-cabd-42cc-a754-1df3893c25d9
 ---
 # String Data Type (Visual Basic)
+
 Holds sequences of unsigned 16-bit (2-byte) code points that range in value from 0 through 65535. Each *code point*, or character code, represents a single Unicode character. A string can contain from 0 to approximately two billion (2 ^ 31) Unicode characters.  
   
 ## Remarks  
+
  Use the `String` data type to hold multiple characters without the array management overhead of `Char()`, an array of `Char` elements.  
   
  The default value of `String` is `Nothing` (a null reference). Note that this is not the same as the empty string (value `""`).  
   
 ## Unicode Characters  
+
  The first 128 code points (0–127) of Unicode correspond to the letters and symbols on a standard U.S. keyboard. These first 128 code points are the same as those the ASCII character set defines. The second 128 code points (128–255) represent special characters, such as Latin-based alphabet letters, accents, currency symbols, and fractions. Unicode uses the remaining code points (256-65535) for a wide variety of symbols. This includes worldwide textual characters, diacritics, and mathematical and technical symbols.  
   
  You can use methods such as <xref:System.Char.IsDigit%2A> and <xref:System.Char.IsPunctuation%2A> on an individual character in a `String` variable to determine its Unicode classification.  
   
 ## Format Requirements  
+
  You must enclose a `String` literal within quotation marks (`" "`). If you must include a quotation mark as one of the characters in the string, you use two contiguous quotation marks (`""`). The following example illustrates this.  
   
 ```vb  
@@ -48,6 +52,7 @@ MsgBox("Joe said """ & h & """ to me.")
  Note that the contiguous quotation marks that represent a quotation mark in the string are independent of the quotation marks that begin and end the `String` literal.  
   
 ## String Manipulations  
+
  Once you assign a string to a `String` variable, that string is *immutable*, which means you cannot change its length or contents. When you alter a string in any way, Visual Basic creates a new string and abandons the previous one. The `String` variable then points to the new string.  
   
  You can manipulate the contents of a `String` variable by using a variety of string functions. The following example illustrates the <xref:Microsoft.VisualBasic.Strings.Left%2A> function  

@@ -260,7 +260,6 @@ The `docker-compose.yml` file references the `Dockerfile` in the `Web` project. 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
 WORKDIR /app
 
-COPY *.sln .
 COPY . .
 WORKDIR /app/src/Web
 RUN dotnet restore

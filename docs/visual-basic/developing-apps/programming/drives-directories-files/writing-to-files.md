@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e
 ---
 # Writing to Files in Visual Basic
+
 This section explains how to perform tasks that involve writing to files.  
   
 ## In This Section  
+
  [How to: Write Text to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md)  
  Demonstrates how to write to text files.  
   
@@ -29,6 +31,7 @@ This section explains how to perform tasks that involve writing to files.
  Demonstrates how to write to a file with a <xref:System.IO.StreamWriter?displayProperty=nameWithType> object.  
   
 ## Reference  
+
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
  Describes the `My.Computer.FileSystem` object and its methods and properties.  
   
@@ -42,6 +45,7 @@ This section explains how to perform tasks that involve writing to files.
  Describes the `WriteAllText` method.  
   
 ## Related Sections  
+
  [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
  Explains how to perform tasks that involve reading from files.  
   

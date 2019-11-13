@@ -11,18 +11,23 @@ helpviewer_keywords:
 ms.assetid: a8e9b44d-facb-4718-8c0f-466537171182
 ---
 # Troubleshooting: reading from and writing to text files (Visual Basic)
+
 This topic discusses common problems encountered when working with text files and suggests an approach to each.  
   
 ## Common problems  
+
  The most common issues encountered when working with text files include security exceptions, file encodings, or invalid paths.  
   
 ### Security exceptions  
+
  A <xref:System.Security.SecurityException> is thrown when a security error occurs. This is often a result of the user lacking necessary permissions, which may be solved by adding permissions or working with files in isolated storage.  
   
 ### File encodings  
+
  File encodings, also known as character encodings, specify how to represent characters when text processing. Unexpected characters in a text file may result from incorrect encoding. For most files, one encoding may be preferable over another in terms of which language characters it can or cannot handle, although Unicode is usually preferred. For more information, see [File Encodings](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md) and <xref:System.Text.Encoding>.  
   
 ### Incorrect paths  
+
  When parsing file paths, particularly relative paths, it is easy to supply the wrong data. Many problems can be corrected by making sure you are supplying the correct path. For more information, see [How to: Parse File Paths](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md).  
   
 ## See also

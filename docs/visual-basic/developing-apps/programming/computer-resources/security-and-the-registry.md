@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 9980aff7-2f69-492b-8f66-29a9a76d3df5
 ---
 # Security and the Registry (Visual Basic)
+
 This page discusses the security implications of storing data in the registry.  
   
 ## Permissions  
+
  It is not secure to store secrets, such as passwords, in the registry as plain text, even if the registry key is protected by ACLs (access control lists).  
   
  Working with the registry may compromise security by allowing inappropriate access to system resources or protected information. To use these properties, you must have read and write permissions from the <xref:System.Security.Permissions.RegistryPermissionAccess> enumeration, which controls access to registry variables. Any code running with full trust (under the default security policy, this is any code installed on the user's local hard disk) has the necessary permissions to access the registry. For more information, see <xref:System.Security.Permissions.RegistryPermission> class.  
@@ -27,6 +29,7 @@ This page discusses the security implications of storing data in the registry.
 |`Write`|Write|  
   
 ## Checking Values in Registry Keys  
+
  When you create a registry value, you need to decide what to do if that value already exists. Another process, perhaps a malicious one, may have already created the value and have access to it. When you put data in the registry value, the data is available to the other process. To prevent this, use the `GetValue` method. It returns `Nothing` if the key does not already exist.  
   
 > [!IMPORTANT]

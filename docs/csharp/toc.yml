@@ -339,9 +339,9 @@
         href: programming-guide/concepts/async/task-asynchronous-programming-model.md
       - name: "Walkthrough: Accessing the Web by Using async and await"
         href: programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md
-      - name: "How to: Extend the async Walkthrough by Using Task.WhenAll"
+      - name: "How to extend the async walkthrough by using Task.WhenAll"
         href: programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md
-      - name: "How to: Make Multiple Web Requests in Parallel by Using async and await"
+      - name: "How to make multiple web requests in parallel by using async and await"
         href: programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md
       - name: Async Return Types
         href: programming-guide/concepts/async/async-return-types.md
@@ -403,11 +403,11 @@
       items:
       - name: Overview
         href: programming-guide/concepts/expression-trees/index.md
-      - name: "How to: Execute Expression Trees"
+      - name: "How to execute expression trees"
         href: programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md
-      - name: "How to: Modify Expression Trees"
+      - name: "How to modify expression trees"
         href: programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md
-      - name: "How to: Use Expression Trees to Build Dynamic Queries"
+      - name: "How to use expression trees to build dynamic queries"
         href: programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md
       - name: Debugging Expression Trees in Visual Studio
         href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
@@ -967,7 +967,7 @@
         href: programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md
       - name: Knowing When to Use Override and New Keywords
         href: programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md
-      - name: "How to: Override the ToString Method"
+      - name: "How to override the ToString method"
         href: programming-guide/classes-and-structs/how-to-override-the-tostring-method.md
     - name: Members
       items:
@@ -983,9 +983,9 @@
         href: programming-guide/classes-and-structs/fields.md
       - name: Constants
         href: programming-guide/classes-and-structs/constants.md
-      - name: "How to: Define Abstract Properties"
+      - name: "How to define abstract properties"
         href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
-      - name: "How to: Define Constants in C#"
+      - name: "How to define constants in C#"
         href: programming-guide/classes-and-structs/how-to-define-constants.md
     - name: Properties
       items:
@@ -997,11 +997,11 @@
         href: programming-guide/classes-and-structs/interface-properties.md
       - name: Restricting Accessor Accessibility
         href: programming-guide/classes-and-structs/restricting-accessor-accessibility.md
-      - name: "How to: Declare and Use Read Write Properties"
+      - name: "How to declare and use read write properties"
         href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
       - name: Auto-Implemented Properties
         href: programming-guide/classes-and-structs/auto-implemented-properties.md
-      - name: "How to: Implement a Lightweight Class with Auto-Implemented Properties"
+      - name: "How to هmplement a مightweight ؤlass with auto-implemented properties"
         href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
     - name: Methods
       items:
@@ -1019,21 +1019,21 @@
           href: programming-guide/classes-and-structs/passing-value-type-parameters.md
         - name: Passing Reference-Type Parameters
           href: programming-guide/classes-and-structs/passing-reference-type-parameters.md
-        - name: "How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method"
+        - name: "How to know the difference between passing a struct and passing a class reference to a method"
           href: programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
       - name: Implicitly Typed Local Variables
         href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
-      - name: "How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression"
+      - name: "How to use implicitly typed local variables and arrays in a query expression"
         href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
       - name: Extension Methods
         href: programming-guide/classes-and-structs/extension-methods.md
-      - name: "How to: Implement and Call a Custom Extension Method"
+      - name: "How to implement and call a custom extension method"
         href: programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md
-      - name: "How to: Create a New Method for an Enumeration"
+      - name: "How to create a new method for an enumeration"
         href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
       - name: Named and Optional Arguments
         href: programming-guide/classes-and-structs/named-and-optional-arguments.md
-      - name: "How to: Use Named and Optional Arguments in Office Programming"
+      - name: "How to use named and optional arguments in Office programming"
         href: programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md
     - name: Constructors
       items:
@@ -1047,13 +1047,13 @@
         href: programming-guide/classes-and-structs/private-constructors.md
       - name: Static Constructors
         href: programming-guide/classes-and-structs/static-constructors.md
-      - name: "How to: Write a Copy Constructor"
+      - name: "How to write a copy constructor"
         href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
     - name: Finalizers
       href: programming-guide/classes-and-structs/destructors.md
     - name: Object and Collection Initializers
       href: programming-guide/classes-and-structs/object-and-collection-initializers.md
-    - name: "How to: Initialize Objects by Using an Object Initializer"
+    - name: "How to: initialize objects by using an object initializer"
       href: programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md
     - name: "How to: Initialize a Dictionary with a Collection Initializer"
       href: programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md
@@ -1063,7 +1063,7 @@
       href: programming-guide/classes-and-structs/partial-classes-and-methods.md
     - name: Anonymous Types
       href: programming-guide/classes-and-structs/anonymous-types.md
-    - name: "How to: Return Subsets of Element Properties in a Query"
+    - name: "How to return subsets of element properties in a query"
       href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
   - name: Interfaces
     items: 
@@ -1694,7 +1694,7 @@
       href: language-reference/compiler-options/index.md
     - name: Command-line Building With csc.exe
       href: language-reference/compiler-options/command-line-building-with-csc-exe.md
-    - name: "How to: Set Environment Variables for the Visual Studio Command Line"
+    - name: "How to set environment variables for the Visual Studio Command Line"
       href: language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md
     - name: C# Compiler Options Listed by Category
       href: language-reference/compiler-options/listed-by-category.md

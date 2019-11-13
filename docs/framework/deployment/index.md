@@ -60,7 +60,7 @@ Use the following links to other MSDN topics for specific information about depl
 
 **Servicing**
 
-- For general information, see the [.NET Framework blog](https://go.microsoft.com/fwlink/p/?LinkId=254977)
+- For general information, see the [.NET Framework blog](https://devblogs.microsoft.com/dotnet/).
 
 - [Detecting versions](../migration-guide/how-to-determine-which-versions-are-installed.md)
 

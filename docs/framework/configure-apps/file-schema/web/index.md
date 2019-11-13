@@ -18,11 +18,11 @@ Web settings are contained in Aspnet.config files, which are located in the inst
 `C:\Windows\Microsoft.NET\Framework\v2.0.50727\`  
   
 Web settings are not used in any other configuration files such as the machine.config file, the root Web.config, or application-level Web.config files.  
-  
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.web>**](system-web-element-web-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<applicationPool>**](applicationpool-element-web-settings.md)  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.web>**](system-web-element-web-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<applicationPool>**](applicationpool-element-web-settings.md)
+
 |Element|Description|  
 |-------------|-----------------|  
 |[\<system.web>](system-web-element-web-settings.md)|Contains information that the ASP.NET hosting layer uses.|  

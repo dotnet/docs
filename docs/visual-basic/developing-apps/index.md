@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
 ---
 # Developing Applications with Visual Basic
+
 This section covers conceptual documentation for the Visual Basic language.  
   
 ## In This Section  
+
  [Programming in Visual Basic](../../visual-basic/developing-apps/programming/index.md)  
  Covers a variety of programming subjects.  
   
@@ -29,6 +31,7 @@ This section covers conceptual documentation for the Visual Basic language.
  Describes how you can customize project templates to provide additional `My` objects.  
   
 ## Related Sections  
+
  [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)  
  Walks through the essential elements of programming with Visual Basic.  
   

@@ -38,7 +38,7 @@ The first step is to create the project for the WPF application.
 
 Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
 
-MainWindow.xaml opens in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+MainWindow.xaml opens in the WPF Designer.
 
 ## Importing the Direct3D9 Content
 

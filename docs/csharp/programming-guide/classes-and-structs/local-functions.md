@@ -37,11 +37,10 @@ Local functions can use the [async](../../language-reference/keywords/async.md) 
 
 Note that all local variables that are defined in the containing member, including its method parameters, are accessible in the local function. 
 
-Unlike a method definition, a local function definition cannot include the following elements:
+Unlike a method definition, a local function definition cannot include the member access modifier. Because all local functions are private, including an access modifier, such as the `private` keyword, generates compiler error CS0106, "The modifier 'private' is not valid for this item."
 
-- The member access modifier. Because all local functions are private, including an access modifier, such as the `private` keyword, generates compiler error CS0106, "The modifier 'private' is not valid for this item."
- 
-- The [static](../../language-reference/keywords/static.md) keyword. Including the `static` keyword generates compiler error CS0106, "The modifier 'static' is not valid for this item."
+> [!NOTE]
+> Prior to C# 8.0, local functions cannot include the `static` modifier. Including the `static` keyword generates compiler error CS0106, "The modifier 'static' is not valid for this item."
 
 In addition, attributes can't be applied to the local function or to its parameters and type parameters. 
  

@@ -1,7 +1,6 @@
 ---
 title: Docker - gRPC for WCF Developers
 description: Creating Docker images for ASP.NET Core gRPC applications
-author: markrendle
 ms.date: 09/02/2019
 ---
 

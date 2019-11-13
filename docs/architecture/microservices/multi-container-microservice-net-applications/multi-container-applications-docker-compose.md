@@ -172,9 +172,15 @@ You could use a single docker-compose.yml file as in the simplified examples sho
 
 By default, Compose reads two files, a docker-compose.yml and an optional docker-compose.override.yml file. As shown in Figure 6-11, when you are using Visual Studio and enabling Docker support, Visual Studio also creates an additional docker-compose.vs.debug.g.yml file for debugging the application, you can take a look at this file in folder obj\\Docker\\ in the main solution folder.
 
-![docker-compose project file structure: .dockerignore, to ignore files; docker-compose.yml, to compose microservices; docker-compose.override.yml, to configure microservices environment.](./media/image12.png)
+![Screenshot of the files in a docker compose project.](./media/multi-container-applications-docker-compose/docker-compose-file-visual-studio.png)
 
 **Figure 6-11**. docker-compose files in Visual Studio 2017
+
+**docker-compose** project file structure:
+
+* *.dockerignore* - used to ignore files
+* *docker-compose.yml* - used to compose microservices
+* *docker-compose.override.yml* - used to configure microservices environment
 
 You can edit the docker-compose files with any editor, like Visual Studio Code or Sublime, and run the application with the docker-compose up command.
 
@@ -186,11 +192,11 @@ The docker-compose.override.yml file, as its name suggests, contains configurati
 
 A typical use case is when you define multiple compose files so you can target multiple environments, like production, staging, CI, or development. To support these differences, you can split your Compose configuration into multiple files, as shown in Figure 6-12.
 
-![You can combine multiple docker-compose*.fml files to handle different environments.](./media/image13.png)
+![Diagram of three docker-compose files set to override the base file.](./media/multi-container-applications-docker-compose/multiple-docker-compose-files-override-base.png)
 
 **Figure 6-12**. Multiple docker-compose files overriding values in the base docker-compose.yml file
 
-You start with the base docker-compose.yml file. This base file has to contain the base or static configuration settings that do not change depending on the environment. For example, the eShopOnContainers has the following docker-compose.yml file (simplified with less services) as the base file.
+You can combine multiple docker-compose*.yml files to handle different environments. You start with the base docker-compose.yml file. This base file has to contain the base or static configuration settings that do not change depending on the environment. For example, the eShopOnContainers has the following docker-compose.yml file (simplified with less services) as the base file.
 
 ```yml
 #docker-compose.yml (Base)

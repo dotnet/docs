@@ -34,7 +34,7 @@ You need the following components to complete this walkthrough:
 
 1. Create a **WPF User Control Library** project named `HostingWpfUserControlInWf`.
 
-2. Open UserControl1.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+2. Open UserControl1.xaml in the WPF Designer.
 
 3. Replace the generated code with the following code:
 

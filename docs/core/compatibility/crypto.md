@@ -5,9 +5,6 @@ ms.date: "09/10/2019"
 ---
 # Breaking changes for migration from Version 2.2 to 3.0
 
-> [!IMPORTANT]
-> This article is under construction. This is not a complete list of .NET Core breaking changes. For more information on .NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repository on GitHub. 
-
 If you are migrating from version 2.2 to version 3.0 of .NET Core, ASP.NET Core, or EF Core, review the following topics for breaking changes that may affect your app:
 
 ## CoreFx

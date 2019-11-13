@@ -45,11 +45,11 @@ Create a new WPF application and in *MainWindow.xaml* (or another window of your
 
 Set the content of the `<Window>` element to the following XAML:
 
-[!code-xaml[Initial](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window1.xaml#Initial)]
+[!code-xaml[Initial](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window1.xaml#Initial)]
 
 In the end, the *MainWindow.xaml* file should look similar to the following:
 
-[!code-xaml[InitialWhole](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window1.xaml#InitialWhole)]
+[!code-xaml[InitialWhole](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window1.xaml#InitialWhole)]
 
 If you run the application, it looks like the following:
 
@@ -61,7 +61,7 @@ The most common way to declare a <xref:System.Windows.Controls.ControlTemplate> 
 
 To start with, add a `Window.Resources` element to your *MainWindow.xaml* file:
 
-[!code-xaml[WindowResStart](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window2.xaml#WindowResStart)]
+[!code-xaml[WindowResStart](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window2.xaml#WindowResStart)]
 
 Create a new `<ControlTemplate>` with the following properties set:
 
@@ -72,7 +72,7 @@ Create a new `<ControlTemplate>` with the following properties set:
 
 This control template will be simple. A root element for the control, a <xref:System.Windows.Controls.Grid>. An <xref:System.Windows.Shapes.Ellipse> to draw the rounded appearance of the button. And a <xref:System.Windows.Controls.ContentPresenter> to display the user-specified button content.
 
-[!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window3.xaml#ControlTemplate)]
+[!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window3.xaml#ControlTemplate)]
 
 ### TemplateBinding
 
@@ -104,11 +104,11 @@ If the <xref:System.Windows.Controls.ControlTemplate> is applied to a <xref:Syst
 
 Find the buttons that were declared at the start of this article.
 
-[!code-xaml[Initial](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window1.xaml#Initial)]
+[!code-xaml[Initial](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window1.xaml#Initial)]
 
 Set the second button's <xref:System.Windows.Controls.Control.Template> property to the `roundbutton` resource:
 
-[!code-xaml[StyledButton](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window3.xaml#StyledButton)]
+[!code-xaml[StyledButton](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window3.xaml#StyledButton)]
 
 If you run the project and look at the result, you'll see that the button has a rounded background.
 
@@ -116,7 +116,7 @@ If you run the project and look at the result, you'll see that the button has a 
 
 You may have noticed that the button isn't a circle but is skewed. Because of the way the `<Ellipse>` element works, it always expands to fill the available space. Make the circle uniform by changing the button's `width` and `height` properties to the same value:
 
-[!code-xaml[StyledButtonSize](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window3.xaml#StyledButtonSize)]
+[!code-xaml[StyledButtonSize](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window3.xaml#StyledButtonSize)]
 
 ![WPF window with one template circular button](media/create-apply-template/styled-uniform-button.png)
 
@@ -128,15 +128,15 @@ With the dynamic event and property systems that WPF provides, you can watch a s
 
 For this to work though, you'll need to add a name to the `<Ellipse>` that you can reference. Give it the name of `backgroundElement`.
 
-[!code-xaml[EllipseName](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window4.xaml#EllipseName)]
+[!code-xaml[EllipseName](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window4.xaml#EllipseName)]
 
 Next, add a new <xref:System.Windows.Trigger> to the [ControlTemplate.Triggers](xref:System.Windows.Controls.ControlTemplate.Triggers) collection. The trigger will watch the `IsMouseOver` for the value `true`.
 
-[!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window4.xaml?name=ControlTemplate&highlight=6-9)]
+[!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window4.xaml?name=ControlTemplate&highlight=6-9)]
 
 Next, add a `<Setter>` to the `<Trigger>` that changes the `Fill` property of the `<Ellipse>` to a new color.
 
-[!code-xaml[MouseOver](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window5.xaml#MouseOver)]
+[!code-xaml[MouseOver](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window5.xaml#MouseOver)]
 
 Run the project. Notice that when you move the mouse over the button, the color of the `<Ellipse>` changes.
 
@@ -148,11 +148,11 @@ Visual states are defined and triggered by a control. For example, when the mous
 
 To convert the **PropertyTrigger** to an animated visual state, First, remove the `<ControlTemplate.Triggers>` element from your template.
 
-[!code-xaml[CleanTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window5.xaml#CleanTemplate)]
+[!code-xaml[CleanTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window5.xaml#CleanTemplate)]
 
 Next, in the `<Grid>` root of the control template, add the `<VisualStateManager.VisualStateGroups>` element with a `<VisualStateGroup>` for `CommonStates`. Define two states, `Normal` and `MouseOver`.
 
-[!code-xaml[VisualState](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window6.xaml#VisualState)]
+[!code-xaml[VisualState](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window6.xaml#VisualState)]
 
 Any animations defined in a `<VisualState>` will be applied when that state is triggered. Create animations for each state. Animations are put inside of a `<Storyboard>` element. For more information about storyboards, see [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
 
@@ -160,17 +160,17 @@ Any animations defined in a `<VisualState>` will be applied when that state is t
 
   This state animates the ellipse fill, restoring it to the control's `Background` color.
 
-  [!code-xaml[NormalState](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window6.xaml#NormalState)]
+  [!code-xaml[NormalState](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window6.xaml#NormalState)]
 
 - MouseOver
 
   This state animates the ellipse `Background` color to a new color: `Yellow`.
 
-  [!code-xaml[MouseOverState](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window6.xaml#MouseOverState)]
+  [!code-xaml[MouseOverState](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window6.xaml#MouseOverState)]
 
 The `<ControlTemplate>` should now look like the following.
 
-[!code-xaml[FinalTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-create-apply-template/csharp/Window7.xaml#FinalTemplate)]
+[!code-xaml[FinalTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window7.xaml#FinalTemplate)]
 
 Run the project. Notice that when you move the mouse over the button, the color of the `<Ellipse>` animates.
 

@@ -3,7 +3,7 @@ title: 'Tutorial: Automated visual inspection using transfer learning'
 description: This tutorial illustrates how to use transfer learning to train a TensorFlow deep learning model in ML.NET using the image detection API to classify images of concrete surfaces as cracked or not cracked.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 11/07/2019
+ms.date: 11/14/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to use ML.NET so that I can use transfer learning in an image classification scenario to classify images using a pretrained TensorFlow model and ML.NET's Image Classification API.
@@ -127,6 +127,8 @@ In this tutorial, only bridge deck images are used.
     using Microsoft.ML.Vision;
     ```
 
+    [!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L1-L7)]
+
 1. Below the `Program` class in *Program.cs*, create a class called `ImageData`. This class is used to represent the initially loaded data.
 
     [!code-csharp [ImageDataClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L135-L140)]
@@ -178,6 +180,8 @@ When training and validation data do not change often, it is good practice to ca
     var workspaceRelativePath = Path.Combine(projectDirectory, "workspace");
     var assetsRelativePath = Path.Combine(projectDirectory, "assets");
     ```
+
+    [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L15-L17)]
 
 1. Then, initialize the `mlContext` variable with a new instance of [MLContext](xref:Microsoft.ML.MLContext).
 
@@ -249,6 +253,8 @@ public static IEnumerable<ImageData> LoadImagesFromDirectory(string folder, bool
             inputColumnName: "ImagePath"));
     ```
 
+    [!code-csharp [PreprocessingPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L27-L33)]
+
 1. Use the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit*) method to apply the data to the `preprocessingPipeline` [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) followed by the [`Transform`](xref:Microsoft.ML.Data.TransformerChain`1.Transform*) method, which returns an [`IDataView`](xref:Microsoft.ML.IDataView) containing the pre-processed data.
 
     [!code-csharp [PreprocessData](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L35-L37)]
@@ -286,6 +292,8 @@ Model training consists of a couple of steps. First, Image Classification API is
     };
     ```
 
+    [!code-csharp [ClassifierOptions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L46-L57)]
+
     An `ImageClassificationTrainer` takes several optional parameters:
 
     - `FeatureColumnName` is the column that is used as input for the model.
@@ -304,6 +312,8 @@ Model training consists of a couple of steps. First, Image Classification API is
     var trainingPipeline = mlContext.MulticlassClassification.Trainers.ImageClassification(classifierOptions)
         .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
     ```
+
+    [!code-csharp [TrainingPipeline](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L59-L60)]
 
 1. Use the [`Fit`](xref:Microsoft.ML.Data.EstimatorChain%601.Fit*) method to train your model.
 
@@ -384,10 +394,10 @@ Run your console app. The output should be similar to that below. You may see wa
 No value is printed for the image name because the images are loaded as a `byte[]` therefore there is no image name to display.
 
 ```test
-Phase: Bottleneck Computation, Dataset used:      Train, Image Index: 279, Image Name:
-Phase: Bottleneck Computation, Dataset used:      Train, Image Index: 280, Image Name:
-Phase: Bottleneck Computation, Dataset used: Validation, Image Index:   1, Image Name:
-Phase: Bottleneck Computation, Dataset used: Validation, Image Index:   2, Image Name:
+Phase: Bottleneck Computation, Dataset used:      Train, Image Index: 279
+Phase: Bottleneck Computation, Dataset used:      Train, Image Index: 280
+Phase: Bottleneck Computation, Dataset used: Validation, Image Index:   1
+Phase: Bottleneck Computation, Dataset used: Validation, Image Index:   2
 ```
 
 **Training phase**

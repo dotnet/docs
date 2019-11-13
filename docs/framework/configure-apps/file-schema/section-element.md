@@ -15,13 +15,13 @@ ms.author: "mairaw"
 
 Contains a configuration section declaration.
 
-[**\<configuration>**](configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
 
-[**\<configuration>**](configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)   
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sectionGroup>**](sectiongroup-element-for-configsections.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sectionGroup>**](sectiongroup-element-for-configsections.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
 
 ## Syntax

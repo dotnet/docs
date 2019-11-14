@@ -15,7 +15,7 @@ ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
 ## Using the WCF Web HTTP Help Page  
  The WCF WEB HTTP Help page displays a short description for each operation provided that you specify one using the <xref:System.ComponentModel.DescriptionAttribute>. This attribute takes a string that contains a short description of the operation it is applied to. For example, the following code shows how to use the <xref:System.ComponentModel.DescriptionAttribute> to provide a short description.  
   
-```  
+```csharp
 [OperationContract]  
 [WebGet(UriTemplate="/template1", BodyStyle = WebMessageBodyStyle.Bare)]  
 [Description("Description for GET /template1")]  
@@ -41,7 +41,7 @@ SyndicationFeedFormatter GetTemplate1();
   
  To enable the WCF Web HTTP Help page in code, add a service endpoint and add a <xref:System.ServiceModel.Description.WebHttpBehavior> to the endpoint setting <xref:System.ServiceModel.Description.WebHttpBehavior.HelpEnabled%2A> to `true`. The following code shows how to do this.  
   
-```  
+```csharp
 using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http://localhost:8000/Customers")))  
 {  
    host.AddServiceEndpoint(typeof(ICustomerCollection), new WebHttpBinding(), "");

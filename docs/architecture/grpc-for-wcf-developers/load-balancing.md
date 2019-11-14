@@ -1,7 +1,6 @@
 ---
 title: Load balancing gRPC - gRPC for WCF Developers
 description: Choosing a load balancer to work with gRPC services.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

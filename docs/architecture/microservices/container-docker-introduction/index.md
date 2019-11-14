@@ -13,7 +13,7 @@ Containers also isolate applications from each other on a shared OS. Containeriz
 
 Each container can run a whole web application or a service, as shown in Figure 2-1. In this example, Docker host is a container host, and App1, App2, Svc 1, and Svc 2 are containerized applications or services.
 
-![Two applications and two services running on the OS in a VM or a physical server](./media/image1.png)
+![Diagram showing four containers running in a VM or a server.](./media/index/multiple-containers-single-host.png)
 
 **Figure 2-1**. Multiple containers running on a container host
 

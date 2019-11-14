@@ -122,7 +122,7 @@ Two projects will be created as a result of the training process.
     using TaxiFarePredictionML.Model;
     ```
 
-1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the fare amount is not part of the input. This is because the model will generate the prediction for it. 
+1. To make a prediction on new data using the model, create a new instance of the `ModelInput` class inside the `Main` method of your application. Notice that the fare amount is not part of the input. This is because the model will generate the prediction for it.
 
     ```csharp
     // Create sample data
@@ -136,7 +136,7 @@ Two projects will be created as a result of the training process.
     };
     ```
 
-1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model and uses it to make predictions on new data. 
+1. Use the `Predict` method from the `ConsumeModel` class. The `Predict` method loads the trained model, create a [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) for the model and uses it to make predictions on new data.
 
     ```csharp
     // Make prediction
@@ -176,4 +176,4 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Regression](../resources/glossary.md#regression)
 - [Regression Model Metrics](../resources/metrics.md#metrics-for-regression)
-- [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml)
+- [NYC TLC Taxi Trip data set](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)

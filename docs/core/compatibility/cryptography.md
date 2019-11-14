@@ -5,9 +5,6 @@ ms.date: "09/20/2019"
 ---
 # Cryptography breaking changes
 
-> [!IMPORTANT]
-> This article is under construction. This is not a complete list of .NET Core breaking changes. For more information on .NET Core breaking changes, you can examine individual [breaking changes issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Abreaking-change) in the dotnet/docs repository on GitHub. 
-
 The following is a list of cryptography-related breaking changes by .NET Core version.
 
 ## .NET Core 3.0 Preview 9

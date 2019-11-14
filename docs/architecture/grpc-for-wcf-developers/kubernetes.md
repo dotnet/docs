@@ -1,7 +1,6 @@
 ---
 title: Kubernetes - gRPC for WCF Developers
 description: Running ASP.NET Core gRPC services in a Kubernetes cluster.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

@@ -156,7 +156,7 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 
         string fullPath = Path.Combine(assemblyFolderPath, relativePath);
         return fullPath;
-    }    
+    }
     ```
 
 1. Use the `GetAbsolutePath` method in the `Startup` class constructor to set the `_modelPath`.
@@ -197,7 +197,7 @@ Predictions will be made inside the main page of the application. Therefore, a m
     public IndexModel(PredictionEnginePool<ModelInput, ModelOutput> predictionEnginePool)
     {
         _predictionEnginePool = predictionEnginePool;
-    }    
+    }
     ```
 
 1. Create a method handler that uses the `PredictionEnginePool` to make predictions from user input received from the web page.

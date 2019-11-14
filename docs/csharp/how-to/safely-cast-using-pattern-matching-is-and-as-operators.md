@@ -1,5 +1,5 @@
 ---
-title: "How to: safely cast by using pattern matching and the is and as operators"
+title: "How to safely cast by using pattern matching and the is and as operators"
 description: Learn to use pattern matching techniques to safely cast variables to a different type. You can use pattern matching as well as the is and as operators to safely convert types.
 ms.date: 09/05/2018
 helpviewer_keywords: 
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "as operator [C#]"
   - "is operator [C#]"
 ---
-# How to: safely cast by using pattern matching and the is and as operators
+# How to safely cast by using pattern matching and the is and as operators
 
 Because objects are polymorphic, it's possible for a variable of a base class type to hold a derived [type](../programming-guide/types/index.md). To access the derived type's instance members, it's necessary to [cast](../programming-guide/types/casting-and-type-conversions.md) the value back to the derived type. However, a cast creates the risk of throwing an <xref:System.InvalidCastException>. C# provides [pattern matching](../pattern-matching.md) statements that perform a cast conditionally only when it will succeed. C# also provides the [is](../language-reference/operators/type-testing-and-cast.md#is-operator) and [as](../language-reference/operators/type-testing-and-cast.md#as-operator) operators to test if a value is of a certain type.
 
@@ -17,7 +17,7 @@ The following code demonstrates the pattern matching `is` statement. It contains
 
 The preceding sample demonstrates a few features of pattern matching syntax. The `if (a is Mammal m)` and `if (o is Mammal m)` statements combine the test with an initialization assignment. The assignment occurs only when the test succeeds. The variable `m` is only in scope in the embedded `if` statement where it has been assigned. You cannot access `m` later in the same method. Try it in the interactive window.
 
-You can also use the same syntax for testing if a [nullable value type](../programming-guide/nullable-types/index.md) has a value, as shown in the following sample code:
+You can also use the same syntax for testing if a [nullable value type](../language-reference/builtin-types/nullable-value-types.md) has a value, as shown in the following sample code:
 
 [!code-csharp[Pattern matching with nullable types](../../../samples/snippets/csharp/how-to/safelycast/nullablepatternmatching/Program.cs#PatternMatchingNullable)]
 

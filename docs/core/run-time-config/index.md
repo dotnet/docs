@@ -1,7 +1,7 @@
 ---
 title: Run-time config
 description: Learn how to configure .NET Core applications by using run-time configuration settings.
-ms.date: 11/192/2019
+ms.date: 11/13/2019
 ---
 # .NET Core run-time configuration settings
 
@@ -16,7 +16,7 @@ ms.date: 11/192/2019
 
 .NET Core provides the following mechanisms for configuring applications at run time:
 
-- The [runtimeconfig.json file](#runtimeconfig-json)
+- The [runtimeconfig.json file](#runtimeconfigjson)
 
 - [Environment variables](#environment-variables)
 
@@ -59,7 +59,9 @@ Some configuration values can also be set programmatically by calling the <xref:
 
 Environment variables can be used to to supply some run-time configuration information. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
 
-You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> on both Windows and Unix-based systems. The following examples show how to set an environment variable at the command line:
+You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> on both Windows and Unix-based systems.
+
+The following examples show how to set an environment variable at the command line:
 
 ```shell
 # Windows

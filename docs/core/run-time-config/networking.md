@@ -12,9 +12,10 @@ ms.topic: reference
 - Disabled by default.
 - Introduced in .NET Core 3.0.
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "System.Net.Http.SocketsHttpHandler.Http2Support" | true<br/><br/>false | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | 0 - disabled<br/><br/>1 - enabled |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | true<br/>false |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | (DWORD)<br/>0 - disabled<br/>1 - enabled |
 
 ## Sockets HTTP handler
 
@@ -22,6 +23,7 @@ ms.topic: reference
 - The default is to use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType>.
 - You can configure this setting programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "System.Net.Http.UseSocketsHttpHandler" | true<br/><br/>false | `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` | 0 - enables the use of <xref:System.Net.Http.HttpClientHandler> <br/><br/>1 - enables the use of <xref:System.Net.Http.SocketsHttpHandler> |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Net.Http.UseSocketsHttpHandler` | true<br/>false |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` | (DWORD)<br/>0 - enables the use of <xref:System.Net.Http.HttpClientHandler><br/>1 - enables the use of <xref:System.Net.Http.SocketsHttpHandler> |

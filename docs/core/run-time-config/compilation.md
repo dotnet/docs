@@ -12,6 +12,7 @@ ms.topic: reference
 - In .NET Core 3.0 and later, tiered compilation is enabled by default.
 - In .NET Core 2.1 and 2.2, tiered compilation is disabled by default.
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "System.Runtime.TieredCompilation" | `true` - enabled<br/><br/>`false` - disabled | `COMPlus_TieredCompilation` | 1 - enabled<br/><br/>0 - disabled |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Runtime.TieredCompilation` | `true` - enabled<br/>`false` - disabled |
+| **Environment variable** | `COMPlus_TieredCompilation` | (DWORD)<br/>0 - disabled<br/>1 - enabled |

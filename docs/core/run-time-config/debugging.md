@@ -8,6 +8,7 @@ ms.topic: reference
 
 ## Debugger and profiler diagnostics
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| | | `COMPlus_EnableDiagnostics` | 0 - disabled<br/><br/>1 - enabled |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** |  |  |
+| **Environment variable** | `COMPlus_EnableDiagnostics` | (DWORD)<br/>0 - disabled<br/>1 - enabled |

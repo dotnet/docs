@@ -12,9 +12,10 @@ ms.topic: reference
 - The default is to run the app with access to cultural data (value = `false`).
 - For more information, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md).
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "System.Globalization.Invariant" | true - no access to cultural data<br/><br/>false - access to cultural data | | |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Globalization.Invariant` | true - no access to cultural data<br/>false - access to cultural data |
+| **Environment variable** |  |  |
 
 ## Era year ranges
 
@@ -22,9 +23,10 @@ ms.topic: reference
 - The default value is that range check are relaxed (value = `false`).
 - For more information, see [Calendars, eras, and date ranges: Relaxed range checks](../../standard/datetime/working-with-calendars.md#calendars-eras-and-date-ranges-relaxed-range-checks).
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "Switch.System.Globalization.EnforceJapaneseEraYearRange" | true - overflows cause an exception<br/><br/>false - relaxed range checks | | |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `Switch.System.Globalization.EnforceJapaneseEraYearRange` | true - overflows cause an exception<br/>false - relaxed range checks |
+| **Environment variable** |  |  |
 
 ## Japanese date parsing
 
@@ -32,9 +34,10 @@ ms.topic: reference
 - The default value is to parse strings that contain either "1" or "Gannen" as the year (value = `false`).
 - For more information, see [Represent dates in calendars with multiple eras](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "Switch.System.Globalization.EnforceLegacyJapaneseDateParsing" | true - only "1" is supported<br/><br/>false - "Gannen" or "1" is supported | | |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `Switch.System.Globalization.EnforceLegacyJapaneseDateParsing` | true - only "1" is supported<br/>false - "Gannen" or "1" is supported |
+| **Environment variable** |  |  |
 
 ## Japanese year format
 
@@ -42,6 +45,7 @@ ms.topic: reference
 - The default is to format the first year as "gannen" (value = `false`).
 - For more information, see [Represent dates in calendars with multiple eras](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "Switch.System.Globalization.FormatJapaneseFirstYearAsANumber" | true - format as number<br/><br/>false - format as "gannen" | | |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | true - format as number<br/>false - format as "gannen" |
+| **Environment variable** |  |  |

@@ -11,24 +11,27 @@ ms.topic: reference
 - Configures whether threads are automatically distributed across CPU groups.
 - Disabled by default.
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| | | `COMPlus_Thread_UseAllCpuGroups` | 0 - disabled<br/><<br/>1 - enabled |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** |  |  |
+| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` | (DWORD)<br/>0 - disabled<<br/>1 - enabled |
 
 ## Minimum threads
 
 - Specifies the minimum number of threads for the worker threadpool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType> method.
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "System.Threading.ThreadPool.MinThreads" | An integer that represents the minimum number of threads |  |  |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Threading.ThreadPool.MinThreads` | An integer that represents the minimum number of threads |
+| **Environment variable** |  |  |
 
 ## Maximum threads
 
 - Specifies the maximum number of threads for the worker threadpool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType> method.
 
-| runtimeconfig.json | Values | Environment variable | Values |
-| - | - | - | - |
-| "System.Threading.ThreadPool.MaxThreads" | An integer that represents the maximum number of threads |  |  |
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | `System.Threading.ThreadPool.MaxThreads` | An integer that represents the maximum number of threads |
+| **Environment variable** |  |  |

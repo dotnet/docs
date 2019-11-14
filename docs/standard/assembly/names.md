@@ -11,7 +11,7 @@ An assembly's name is stored in metadata and has a significant impact on the ass
 
  The runtime uses this information to locate the assembly and differentiate it from other assemblies with the same name. For example, a strong-named assembly called `myTypes` could have the following fully qualified name:
 
-```console
+```
 myTypes, Version=1.0.1234.0, Culture=en-US, PublicKeyToken=b77a5c561934e089c, ProcessorArchitecture=msil
 ```
 
@@ -24,7 +24,7 @@ myTypes, Version=1.0.1234.0, Culture=en-US, PublicKeyToken=b77a5c561934e089c, Pr
 
  All assembly references to assemblies that make up the .NET Framework must also contain the fully qualified name of the assembly. For example, a reference to the System.Data .NET Framework assembly for version 1.0 would include:
 
-```console
+```
 System.data, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 ```
 

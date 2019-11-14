@@ -202,11 +202,13 @@ dotnet sln add src/TraderSys.PortfolioData
 
 Once the library has been created and added to the solution, delete the generated `Class1.cs` file and copy the files from the WCF solution's library into the new class library's folder, keeping the folder structure.
 
-- Models  
-  - Portfolio.cs
-  - PortfolioItem.cs
-- IPortfolioRepository.cs
-- PortfolioRepository.cs
+```
+Models  
+    Portfolio.cs
+    PortfolioItem.cs
+IPortfolioRepository.cs
+PortfolioRepository.cs
+```
 
 SDK-style .NET projects automatically include any `.cs` files in or under their own directory, so there's no need to explicitly add them to the project. The only step remaining is to remove the `DataContract` and `DataMember` attributes from the `Portfolio` and `PortfolioItem` classes so they're plain old C# classes.
 

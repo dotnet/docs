@@ -57,4 +57,17 @@ Some configuration values can also be set programmatically by calling the <xref:
 
 ## Environment variables
 
-Environment variables can be used to to supply some run-time configuration information. You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> on both Windows and Unix-based systems.
+Environment variables can be used to to supply some run-time configuration information. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
+
+You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> on both Windows and Unix-based systems. The following examples show how to set an environment variable at the command line:
+
+```shell
+# Windows
+set COMPlus_GCRetainVM=1
+
+# Powershell
+$env:COMPlus_GCRetainVM="1"
+
+# Unix
+export COMPlus_GCRetainVM=1
+```

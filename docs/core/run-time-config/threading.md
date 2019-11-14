@@ -1,5 +1,8 @@
 ---
-
+title: Threading config settings
+description: Learn about run-time settings for configuring threading.
+ms.date: 11/13/2019
+ms.topic: reference
 ---
 # Run-time configuration options for threading
 
@@ -12,8 +15,20 @@
 | - | - | - | - |
 | | | `COMPlus_Thread_UseAllCpuGroups` | 0 - disabled<br/><<br/>1 - enabled |
 
-runtimeconfig.json:
+## Minimum threads
 
-|"System.Threading.ThreadPool.MinThreads"|*n*|Specifies the minimum number of threads for the worker threadpool, where *n* is an integer that represents the minimum number of threads. This setting corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType> method.|
+- Specifies the minimum number of threads for the worker threadpool.
+- Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType> method.
 
-|"System.Threading.ThreadPool.MaxThreads"|*n*|Specifies the maximum number of threads for the worker threadpool, where *n* is an integer that represents the maximum number of threads. This setting corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType> method.|
+| runtimeconfig.json | Values | Environment variable | Values |
+| - | - | - | - |
+| "System.Threading.ThreadPool.MinThreads" | An integer that represents the minimum number of threads |  |  |
+
+## Maximum threads
+
+- Specifies the maximum number of threads for the worker threadpool.
+- Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType> method.
+
+| runtimeconfig.json | Values | Environment variable | Values |
+| - | - | - | - |
+| "System.Threading.ThreadPool.MaxThreads" | An integer that represents the maximum number of threads |  |  |

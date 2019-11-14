@@ -1,5 +1,8 @@
 ---
-
+title: Networking config settings
+description: Learn about run-time settings for configuring networking.
+ms.date: 11/13/2019
+ms.topic: reference
 ---
 # Run-time configuration options for networking
 

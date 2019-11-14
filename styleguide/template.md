@@ -326,6 +326,7 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 |VBScript|vbscript|
 |XAML|xaml|
 |XML|xml|
+|yml|yml|
 
 The `csharp-interactive` name specifies the C# language, and the ability to run the samples from the browser. These snippets are compiled and executed in a Docker container, and the results of that program execution are displayed in the user's browser window.
 

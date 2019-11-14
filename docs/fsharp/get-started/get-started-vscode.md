@@ -34,6 +34,8 @@ You'll first need to ensure that .NET Core scripting is your default scripting e
 1. Search for the term **F# Script**.
 1. Click the checkbox that says **FSharp: use SDK scripts**.
 
+This is currently necessary due to some legacy behaviors in .NET Framework-based scripting that do not work with .NET Core scripting, and Ionide is currently striving for that backwards compatibility. In the future, .NET Core scripting will become the default.
+
 ### Write your first script
 
 Once you've configured Visual Studio Code to use .NET Core scripting, navigate to the Explorer view in Visual Studio code and create a new file. Name it `MyFirstScript.fsx`.
@@ -44,7 +46,7 @@ Now add the following code to it:
 
 This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin). The next step is to evaluate it using F# Interactive (FSI).
 
-Highlight the entire function (it should be 11 lines long). Once it is highlighted, hold the **Alt** key and hit **Enter**. You'll notice a window pop up below, and it should show something like this:
+Highlight the entire function (it should be 11 lines long). Once it is highlighted, hold the **Alt** key and hit **Enter**. You'll notice a terminal window pop up below, and it should show something like this:
 
 ![Example of F# Interactive output with Ionide](./media/getting-started-vscode/vscode-fsi.png)
 
@@ -127,7 +129,7 @@ Next, create a new [`module`](../language-reference/modules.md) called `PigLatin
 
 [!code-fsharp[ToPigLatin](~/samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
 
-This module should be above the `main` function and below the `open System` declaration.
+This module should be above the `main` function and below the `open System` declaration. Order of declarations matters in F#, so you'll need to define the function before you call it in a file.
 
 Now, in the `main` function, call your Pig Latin generator function on the arguments:
 
@@ -137,6 +139,8 @@ let main argv =
     for name in argv do
         let newName = PigLatin.toPigLatin name
         printfn "%s in Pig Latin is: %s" name newName
+
+    0
 ```
 
 Now you can run your console app from the command line:
@@ -156,6 +160,7 @@ Here are a few ways you can troubleshoot certain problems that you might run int
 1. If you have invalid characters in your project directories, Ionide might not work.  Rename your project directories if this is the case.
 1. If none of the Ionide commands are working, check your [Visual Studio Code keybindings](https://code.visualstudio.com/docs/customization/keybindings#_customizing-shortcuts) to see if you're overriding them by accident.
 1. If Ionide is broken on your machine and none of the above has fixed your problem, try removing the `ionide-fsharp` directory on your machine and reinstall the plugin suite.
+1. If a project failed to load (the F# Solution Explorer will show this), right-click on that project and click **See details** to get more diagnostic info.
 
 Ionide is an open source project built and maintained by members of the F# community. Please report issues and feel free to contribute at the [ionide-vscode-fsharp GitHub repository](https://github.com/ionide/ionide-vscode-fsharp).
 

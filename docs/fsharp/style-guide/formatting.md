@@ -569,7 +569,7 @@ let pascalsTriangle =
 
 And as with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier.
 
-When generating arrays and lists programatically, prefer `->` over `do ... yield` when a value is always generated:
+When generating arrays and lists programmatically, prefer `->` over `do ... yield` when a value is always generated:
 
 ```fsharp
 // Preferred

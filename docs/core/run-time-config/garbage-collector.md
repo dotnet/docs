@@ -21,12 +21,12 @@ ms.topic: reference
 - Apples to server garbage collection (GC) only.
 - Configures whether the garbage collector uses CPU groups or not. When a computer has multiple CPU groups, enabling this element extends garbage collection across all CPU groups. The garbage collector uses all cores to create and balance heaps.
 - Disabled by default.
-- The corresponding setting for .NET Framework apps is [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** |  |  |
 | **Environment variable** | `COMPlus_GCCpuGroup` | (DWORD)<br/>0 - disabled<br/>1 - enabled |
+| **app.config for .NET Framework** | [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md) | |
 
 ## Latency level
 
@@ -54,12 +54,12 @@ ms.topic: reference
 - Configures whether background (concurrent) garbage collection is enabled.
 - Enabled by default.
 - For more information, see [Background garbage collection](../../standard/garbage-collection/fundamentals.md#background-workstation-garbage-collection) and [Background server garbage collection](../../standard/garbage-collection/fundamentals.md#background-server-garbage-collection).
-- The corresponding setting for .NET Framework apps is [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.GC.Concurrent` | true - background GC<br/>false - non-concurrent GC |
 | **Environment variable** | `COMPlus_gcConcurrent` |  |
+| **app.config for .NET Framework** | [gcConcurrent](../../framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) | |
 
 ## Retain virtual memory
 
@@ -76,12 +76,12 @@ ms.topic: reference
 - Configures whether the application uses server garbage collection or workstation garbage collection.
 - Workstation garbage collection is the default.
 - For more information, see [Configure garbage collection](../../standard/garbage-collection/fundamentals.md#configuring-garbage-collection).
-- The corresponding setting for .NET Framework apps is [GCServer](../../framework/configure-apps/file-schema/runtime/gcserver-element.md).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.GC.Server` | true - server<br/>false - workstation |
 | **Environment variable** | `COMPlus_gcServer` | (DWORD)<br/>0<br/>1 |
+| **app.config for .NET Framework** | [GCServer](../../framework/configure-apps/file-schema/runtime/gcserver-element.md) | |
 
 ## Specific processors
 
@@ -89,12 +89,12 @@ ms.topic: reference
 - If processor affinity is enabled, specifies the exact processors for which a GC heap and threads are created.
 - The decimal value is a mask that defines the processors that are available to the process.
 - Introduced in .NET Core 3.0.
-- The corresponding setting for .NET Framework apps is [GCHeapAffinitizeMask](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapAffinitizeMask` | *decimal value* |
 | **Environment variable** | `COMPlus_GCHeapAffinitizeMask` |  |
+| **app.config for .NET Framework** | [GCHeapAffinitizeMask](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) | |
 
 ## No processor affinity
 
@@ -102,12 +102,12 @@ ms.topic: reference
 - Specifies whether to affinitize garbage collection threads with processors. That is, whether to create a dedicated heap, GC thread, and background GC thread (if background garbage collection is enabled) for each processor.
 - By default, garbage collection threads are affinitized with processors (value = `false`). Because the garbage collector uses all available processors in server GC, this can result in poor performance, particularly on systems with multiple running instances of a server application.
 - Introduced in .NET Core 3.0.
-- The corresponding setting for .NET Framework apps is [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.GC.NoAffinitize` | true - don't affinitize<br/>false - affinitize |
 | **Environment variable** | `COMPlus_GCNoAffinitize` | (DWORD)<br/>0<br/>1 |
+| **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | |
 
 ## Limit number of heaps
 
@@ -116,12 +116,12 @@ ms.topic: reference
 - If GC thread/processor affinity is disabled, this setting limits the number of GC heaps. If GC thread/processor affinity is enabled, this setting limits the number of GC heaps to the processors 0 to one-less-than its specified value.
 - This setting is typically used together with "System.GC.HeapAffinitizeMask" and "System.GC.NoAffinitize". For more information, see the [GCHeapCount remarks](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md#remarks).
 - Introduced in .NET Core 3.0.
-- The corresponding setting for .NET Framework apps is [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapCount` | *number* |
 | **Environment variable** | `COMPlus_GCHeapCount` |  |
+| **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | |
 
 ## Processor numbers
 
@@ -141,8 +141,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimit` | *number* |
-| **Environment variable** |
-| "System.GC.HeapHardLimit" | *number* | `COMPlus_GCHeapHardLimit` | (DWORD) *number* |
+| **Environment variable** | `COMPlus_GCHeapHardLimit` | (DWORD) *number* |
 
 ## Heap usage as percentage
 

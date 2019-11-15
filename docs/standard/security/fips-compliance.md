@@ -1,5 +1,5 @@
 ---
-title: .NET Core FIPS compliance
+title: FIPS compliance - .NET Core
 description: Explains .NET Core FIPS compliance.
 ms.date: 11/20/2019
 author: "Rick-Anderson"

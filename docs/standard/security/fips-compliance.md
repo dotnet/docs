@@ -10,8 +10,8 @@ ms.date: 11/20/2019
 
 * Does **not** implement any cryptographic primitives.
 * Passes cryptographic primitives calls through to the standard modules the underlying operating system provides.
-* Does **not** enforce FIPS compliance in .NET Core app.
-* Does **not** stop developers using non-FIPS compliant algorithms, even on systems configured for FIPS compliance.
+* Does **not** enforce FIPS compliance in .NET Core apps.
+* Does **not** stop developers from using non-FIPS compliant algorithms, even on systems configured for FIPS compliance.
 
 It's the responsibility of the system administrator to configure FIPS compliance for an operating system.
 

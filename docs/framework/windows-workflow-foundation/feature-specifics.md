@@ -350,6 +350,6 @@ The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> is a SQL
 
 1. In Visual Studio 2012, create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.
 
-2. Samples: [Persistence](./samples/persistence.md)
+2. Samples: [Persistence](/previous-versions/dotnet/netframework-4.0/dd699769(v%3dvs.100))
 
 3. Conceptual documentation: [SQL Workflow Instance Store](sql-workflow-instance-store.md).

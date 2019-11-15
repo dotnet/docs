@@ -33,7 +33,7 @@ On the other hand, if you need a control with new functionality, different prope
 
 ## Prerequisites
 
-Create a new WPF application and in *MainWindow.xaml* (or another window of your choice) set the following properties on the `<Window>` element:
+Create a new WPF application and in *MainWindow.xaml* (or another window of your choice) set the following properties on the **\<Window>** element:
 
 |     |     |
 | --- | --- |
@@ -41,7 +41,7 @@ Create a new WPF application and in *MainWindow.xaml* (or another window of your
 | **SizetoContent** | `WidthAndHeight` |
 | **MinWidth**      | `250` |
 
-Set the content of the `<Window>` element to the following XAML:
+Set the content of the **\<Window>** element to the following XAML:
 
 [!code-xaml[Initial](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window1.xaml#Initial)]
 
@@ -61,7 +61,7 @@ To start with, add a `Window.Resources` element to your *MainWindow.xaml* file:
 
 [!code-xaml[WindowResStart](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window2.xaml#WindowResStart)]
 
-Create a new `<ControlTemplate>` with the following properties set:
+Create a new **\<ControlTemplate>** with the following properties set:
 
 |     |     |
 | --- | --- |
@@ -81,7 +81,7 @@ When you create a new <xref:System.Windows.Controls.ControlTemplate>, you still 
 
 ### Ellipse
 
-Notice that the `Fill` and `Stroke` properties of the `<Ellipse>` element are bound to the control's <xref:System.Windows.Controls.Control.Foreground> and <xref:System.Windows.Controls.Control.Background> properties.
+Notice that the **Fill** and **Stroke** properties of the **\<Ellipse>** element are bound to the control's <xref:System.Windows.Controls.Control.Foreground> and <xref:System.Windows.Controls.Control.Background> properties.
 
 ### ContentPresenter
 
@@ -97,7 +97,7 @@ A [\<ContentPresenter>](xref:System.Windows.Controls.ContentPresenter) element i
 </Button>
 ```
 
-In both of the previous examples, the text and the checkbox are set as the [Button.Content](xref:System.Windows.Controls.ContentControl.Content) property. Whatever is set as the content can be presented through a `<ContentPresenter>`, which is what the template does.
+In both of the previous examples, the text and the checkbox are set as the [Button.Content](xref:System.Windows.Controls.ContentControl.Content) property. Whatever is set as the content can be presented through a **\<ContentPresenter>**, which is what the template does.
 
 If the <xref:System.Windows.Controls.ControlTemplate> is applied to a <xref:System.Windows.Controls.ContentControl> type, such as a `Button`, a <xref:System.Windows.Controls.ContentPresenter> is searched for in the element tree. If the `ContentPresenter` is found, the template automatically binds the control's <xref:System.Windows.Controls.ContentControl.Content> property to the `ContentPresenter`.
 
@@ -115,7 +115,7 @@ If you run the project and look at the result, you'll see that the button has a 
 
 ![WPF window with one template oval button](media/create-apply-template/styled-button.png)
 
-You may have noticed that the button isn't a circle but is skewed. Because of the way the `<Ellipse>` element works, it always expands to fill the available space. Make the circle uniform by changing the button's `width` and `height` properties to the same value:
+You may have noticed that the button isn't a circle but is skewed. Because of the way the **\<Ellipse>** element works, it always expands to fill the available space. Make the circle uniform by changing the button's **width** and **height** properties to the same value:
 
 [!code-xaml[StyledButtonSize](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window3.xaml#StyledButtonSize)]
 
@@ -125,9 +125,9 @@ You may have noticed that the button isn't a circle but is skewed. Because of th
 
 Even though a button with a template applied looks different, it behaves the same as any other button. If you press the button, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event fires. However, you may have noticed that when you move your mouse over the button, the button's visuals don't change. These visual interactions are all defined by the template.
 
-With the dynamic event and property systems that WPF provides, you can watch a specific property for a value and then restyle the template when appropriate. In this example, you'll watch the button's <xref:System.Windows.UIElement.IsMouseOver> property. When the mouse is over the control, style the `<Ellipse>` with a new color. This type of trigger is known as a **PropertyTrigger**.
+With the dynamic event and property systems that WPF provides, you can watch a specific property for a value and then restyle the template when appropriate. In this example, you'll watch the button's <xref:System.Windows.UIElement.IsMouseOver> property. When the mouse is over the control, style the **\<Ellipse>** with a new color. This type of trigger is known as a *PropertyTrigger*.
 
-For this to work, you'll need to add a name to the `<Ellipse>` that you can reference. Give it the name of **backgroundElement**.
+For this to work, you'll need to add a name to the **\<Ellipse>** that you can reference. Give it the name of **backgroundElement**.
 
 [!code-xaml[EllipseName](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window4.xaml#EllipseName)]
 
@@ -135,27 +135,27 @@ Next, add a new <xref:System.Windows.Trigger> to the [ControlTemplate.Triggers](
 
 [!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window4.xaml?name=ControlTemplate&highlight=6-9)]
 
-Next, add a `<Setter>` to the `<Trigger>` that changes the `Fill` property of the `<Ellipse>` to a new color.
+Next, add a **\<Setter>** to the **\<Trigger>** that changes the **Fill** property of the **\<Ellipse>** to a new color.
 
 [!code-xaml[MouseOver](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window5.xaml#MouseOver)]
 
-Run the project. Notice that when you move the mouse over the button, the color of the `<Ellipse>` changes.
+Run the project. Notice that when you move the mouse over the button, the color of the **\<Ellipse>** changes.
 
 ![mouse moves over WPF button to change the fill color](media/create-apply-template/mouse-move-over-button.gif)
 
 ## Use a VisualState
 
-Visual states are defined and triggered by a control. For example, when the mouse is moved on top of the control, the `CommonStates.MouseOver` state is triggered. You can animate property changes based on the current state of the control. In the previous section, a **PropertyTrigger** was used to change the foreground of the button to `AliceBlue` when the `IsMouseOver` property was `true`. Instead, create a visual state that animates the change of this color, providing a smooth transition. For more information about `VisualStates`, see [Styles and templates in WPF](../fundamentals/styles-templates-overview.md#visual-states).
+Visual states are defined and triggered by a control. For example, when the mouse is moved on top of the control, the `CommonStates.MouseOver` state is triggered. You can animate property changes based on the current state of the control. In the previous section, a **\<PropertyTrigger>** was used to change the foreground of the button to `AliceBlue` when the `IsMouseOver` property was `true`. Instead, create a visual state that animates the change of this color, providing a smooth transition. For more information about *VisualStates*, see [Styles and templates in WPF](../fundamentals/styles-templates-overview.md#visual-states).
 
-To convert the **PropertyTrigger** to an animated visual state, First, remove the `<ControlTemplate.Triggers>` element from your template.
+To convert the **\<PropertyTrigger>** to an animated visual state, First, remove the **\<ControlTemplate.Triggers>** element from your template.
 
 [!code-xaml[CleanTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window5.xaml#CleanTemplate)]
 
-Next, in the `<Grid>` root of the control template, add the `<VisualStateManager.VisualStateGroups>` element with a `<VisualStateGroup>` for `CommonStates`. Define two states, `Normal` and `MouseOver`.
+Next, in the **\<Grid>** root of the control template, add the **\<VisualStateManager.VisualStateGroups>** element with a **\<VisualStateGroup>** for `CommonStates`. Define two states, `Normal` and `MouseOver`.
 
 [!code-xaml[VisualState](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window6.xaml#VisualState)]
 
-Any animations defined in a `<VisualState>` are applied when that state is triggered. Create animations for each state. Animations are put inside of a `<Storyboard>` element. For more information about storyboards, see [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
+Any animations defined in a **\<VisualState>** are applied when that state is triggered. Create animations for each state. Animations are put inside of a **\<Storyboard>** element. For more information about storyboards, see [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
 
 - Normal
 
@@ -169,11 +169,11 @@ Any animations defined in a `<VisualState>` are applied when that state is trigg
 
   [!code-xaml[MouseOverState](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window6.xaml#MouseOverState)]
 
-The `<ControlTemplate>` should now look like the following.
+The **\<ControlTemplate>** should now look like the following.
 
 [!code-xaml[FinalTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window7.xaml#FinalTemplate)]
 
-Run the project. Notice that when you move the mouse over the button, the color of the `<Ellipse>` animates.
+Run the project. Notice that when you move the mouse over the button, the color of the **\<Ellipse>** animates.
 
 ![mouse moves over WPF button to change the fill color](media/create-apply-template/mouse-move-over-button-visualstate.gif)
 

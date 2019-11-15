@@ -25,11 +25,11 @@ In this article, you'll explore creating a new <xref:System.Windows.Controls.Con
 
 ## When to create a ControlTemplate
 
-Controls have many properties, such as <xref:System.Windows.Controls.Border.Background%2A>, <xref:System.Windows.Controls.Control.Foreground%2A>, and <xref:System.Windows.Controls.Control.FontFamily%2A>. These properties control different aspects of the control's appearance, but the changes that you can make by setting these properties are limited. For example, you can set the <xref:System.Windows.Controls.Control.Foreground%2A> property to blue and <xref:System.Windows.Controls.Control.FontStyle%2A> to italic on a <xref:System.Windows.Controls.CheckBox>. You create a <xref:System.Windows.Controls.ControlTemplate> when you want to customize the control's appearance beyond what setting the other properties on the control will do.
+Controls have many properties, such as <xref:System.Windows.Controls.Border.Background%2A>, <xref:System.Windows.Controls.Control.Foreground%2A>, and <xref:System.Windows.Controls.Control.FontFamily%2A>. These properties control different aspects of the control's appearance, but the changes that you can make by setting these properties are limited. For example, you can set the <xref:System.Windows.Controls.Control.Foreground%2A> property to blue and <xref:System.Windows.Controls.Control.FontStyle%2A> to italic on a <xref:System.Windows.Controls.CheckBox>. When you want to customize the control's appearance beyond what setting the other properties on the control can do, you create a <xref:System.Windows.Controls.ControlTemplate>.
 
-In most user interfaces, a button has the same general appearance: a rectangle with some text. If you wanted to create a rounded button, you normally have to create a new control that inherits from the button or recreates the functionality of the button. Your new user control would then provide that circular visual.
+In most user interfaces, a button has the same general appearance: a rectangle with some text. If you wanted to create a rounded button, you could create a new control that inherits from the button or recreates the functionality of the button. In addition, the new user control would provide the circular visual.
 
-You can avoid creating new controls by customizing the visual layout of an existing control. With a rounded button, you create a <xref:System.Windows.Controls.ControlTemplate> with the wanted visual layout.
+You can avoid creating new controls by customizing the visual layout of an existing control. With a rounded button, you create a <xref:System.Windows.Controls.ControlTemplate> with the desired visual layout.
 
 On the other hand, if you need a control with new functionality, different properties, and new settings, you would create a new <xref:System.Windows.Controls.UserControl>.
 
@@ -70,7 +70,10 @@ Create a new `<ControlTemplate>` with the following properties set:
 | **x:Key**         | `roundbutton` |
 | **TargetType**    | `Button` |
 
-This control template will be simple. A root element for the control, a <xref:System.Windows.Controls.Grid>. An <xref:System.Windows.Shapes.Ellipse> to draw the rounded appearance of the button. And a <xref:System.Windows.Controls.ContentPresenter> to display the user-specified button content.
+This control template will be simple:
+- a root element for the control, a <xref:System.Windows.Controls.Grid>
+- an <xref:System.Windows.Shapes.Ellipse> to draw the rounded appearance of the button
+- a <xref:System.Windows.Controls.ContentPresenter> to display the user-specified button content
 
 [!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window3.xaml#ControlTemplate)]
 
@@ -80,11 +83,11 @@ When you create a new <xref:System.Windows.Controls.ControlTemplate>, you still 
 
 ### Ellipse
 
-Notice that the `Fill` and `Stroke` properties of the `<Ellipse>` element are bound to the controls <xref:System.Windows.Controls.Control.Foreground> and <xref:System.Windows.Controls.Control.Background> properties.
+Notice that the `Fill` and `Stroke` properties of the `<Ellipse>` element are bound to the control's <xref:System.Windows.Controls.Control.Foreground> and <xref:System.Windows.Controls.Control.Background> properties.
 
 ### ContentPresenter
 
-A [\<ContentPresenter>](xref:System.Windows.Controls.ContentPresenter) element is also added to the template. Because this template is designed for a button, we have to take into consideration that the button inherits from <xref:System.Windows.Controls.ContentControl>. The button presents the content of the element. You can set anything inside of the button, such as plain text or even another control. Both of the following are valid buttons:
+A [\<ContentPresenter>](xref:System.Windows.Controls.ContentPresenter) element is also added to the template. Because this template is designed for a button, take into consideration that the button inherits from <xref:System.Windows.Controls.ContentControl>. The button presents the content of the element. You can set anything inside of the button, such as plain text or even another control. Both of the following are valid buttons:
 
 ```xaml
 <Button>My Text</Button>
@@ -96,7 +99,7 @@ A [\<ContentPresenter>](xref:System.Windows.Controls.ContentPresenter) element i
 </Button>
 ```
 
-In both of the examples above, the text and the checkbox are set as to the [Button.Content](xref:System.Windows.Controls.ContentControl.Content) property. Whatever is set as the content can be presented through a `<ContentPresenter>`, which is what the template does.
+In both of the previous examples, the text and the checkbox are set as the [Button.Content](xref:System.Windows.Controls.ContentControl.Content) property. Whatever is set as the content can be presented through a `<ContentPresenter>`, which is what the template does.
 
 If the <xref:System.Windows.Controls.ControlTemplate> is applied to a <xref:System.Windows.Controls.ContentControl> type, such as a `Button`, a <xref:System.Windows.Controls.ContentPresenter> is searched for in the element tree. If the `ContentPresenter` is found, the template automatically binds the control's <xref:System.Windows.Controls.ContentControl.Content> property to the `ContentPresenter`.
 
@@ -126,11 +129,11 @@ Even though a button with a template applied looks different, it behaves the sam
 
 With the dynamic event and property systems that WPF provides, you can watch a specific property for a value and then restyle the template when appropriate. In this example, you'll watch the button's <xref:System.Windows.UIElement.IsMouseOver> property. When the mouse is over the control, style the `<Ellipse>` with a new color. This type of trigger is known as a **PropertyTrigger**.
 
-For this to work though, you'll need to add a name to the `<Ellipse>` that you can reference. Give it the name of `backgroundElement`.
+For this to work, you'll need to add a name to the `<Ellipse>` that you can reference. Give it the name of **backgroundElement**.
 
 [!code-xaml[EllipseName](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window4.xaml#EllipseName)]
 
-Next, add a new <xref:System.Windows.Trigger> to the [ControlTemplate.Triggers](xref:System.Windows.Controls.ControlTemplate.Triggers) collection. The trigger will watch the `IsMouseOver` for the value `true`.
+Next, add a new <xref:System.Windows.Trigger> to the [ControlTemplate.Triggers](xref:System.Windows.Controls.ControlTemplate.Triggers) collection. The trigger will watch the `IsMouseOver` event for the value `true`.
 
 [!code-xaml[ControlTemplate](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window4.xaml?name=ControlTemplate&highlight=6-9)]
 
@@ -154,7 +157,7 @@ Next, in the `<Grid>` root of the control template, add the `<VisualStateManager
 
 [!code-xaml[VisualState](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window6.xaml#VisualState)]
 
-Any animations defined in a `<VisualState>` will be applied when that state is triggered. Create animations for each state. Animations are put inside of a `<Storyboard>` element. For more information about storyboards, see [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
+Any animations defined in a `<VisualState>` are applied when that state is triggered. Create animations for each state. Animations are put inside of a `<Storyboard>` element. For more information about storyboards, see [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
 
 - Normal
 

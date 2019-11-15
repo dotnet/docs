@@ -15,7 +15,7 @@ Windows Presentation Foundation (WPF) styling and templating refer to a suite of
 
 Another feature of the WPF styling model is the separation of presentation and logic. Designers can work on the appearance of an app by using only XAML at the same time that developers work on the programming logic by using C# or Visual Basic.
 
-This overview focuses on the styling and templating aspects of the app and doesn't discuss any data binding concepts. For information about data binding, see [Data Binding Overview](../data/data-binding-overview.md).
+This overview focuses on the styling and templating aspects of the app and doesn't discuss any data-binding concepts. For information about data binding, see [Data Binding Overview](../data/data-binding-overview.md).
 
 It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](xaml-resources-define.md).
 
@@ -57,9 +57,9 @@ Each control has a default template assigned to the [Control.Template](xref:Syst
 
 Commonly you declare a template as a resource on the `Resources` section of a XAML file. As with all resources, scoping rules apply.
 
-Control templates are a lot more involved than a style. This is more involved because the control template rewrites the visual appearance of the entire control. A style simply applies property changes to the existing control. However, since the template of a control is applied by setting the [Control.Template](xref:System.Windows.Controls.Control.Template) property, you can use a style to define or set a template.
+Control templates are a lot more involved than a style. This is because the control template rewrites the visual appearance of the entire control, while a style simply applies property changes to the existing control. However, since the template of a control is applied by setting the [Control.Template](xref:System.Windows.Controls.Control.Template) property, you can use a style to define or set a template.
 
-Designers generally allow you to create a copy of an existing template and modify it. For example, in the Visual Studio WPF designer, select a `CheckBox` control, **right-click** > **Edit template** > **Create a copy...**. This command generates a *style that defines a template*.
+Designers generally allow you to create a copy of an existing template and modify it. For example, in the Visual Studio WPF designer, select a `CheckBox` control, and then right-click and select **Edit template** > **Create a copy**. This command generates a *style that defines a template*.
 
 ```xaml
 <Style x:Key="CheckBoxStyle1" TargetType="{x:Type CheckBox}">
@@ -98,7 +98,7 @@ For an example, see [Create a template for a control](styles-templates-create-ap
 
 ### TemplateBinding
 
-You may have noticed that the template resource defined above uses the [TemplateBinding Markup Extension](../../framework/wpf/advanced/templatebinding-markup-extension.md). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` is useful for binding parts of the template to properties of the control. For example, each control has a <xref:System.Windows.Controls.Control.BorderThickness> property. Use a `TemplateBinding` to manage which element in the template is affected by this control setting.
+You may have noticed that the template resource defined in the previous section uses the [TemplateBinding Markup Extension](../../framework/wpf/advanced/templatebinding-markup-extension.md). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` is useful for binding parts of the template to properties of the control. For example, each control has a <xref:System.Windows.Controls.Control.BorderThickness> property. Use a `TemplateBinding` to manage which element in the template is affected by this control setting.
 
 ### ContentControl and ItemsControl
 

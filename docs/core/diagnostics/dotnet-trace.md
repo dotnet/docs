@@ -48,7 +48,7 @@ The `dotnet-trace` tool:
 | ----------------------------------------------------------- |
 | [dotnet-trace collect](#dotnet-trace-collect)               |
 | [dotnet-trace convert](#dotnet-trace-convert)               |
-| [dotnet-trace list-processes](#dotnet-trace-list-processes) |
+| [dotnet-trace ps ](#dotnet-trace-ps) |
 | [dotnet-trace list-profiles](#dotnet-trace-list-profiles)   |
 
 ## dotnet-trace collect
@@ -120,14 +120,14 @@ dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 
   Output filename. Extension of target format will be added.
 
-## dotnet-trace list-processes
+## dotnet-trace ps
 
 Lists dotnet processes that can be traced.
 
 ### Synopsis
 
 ```console
-dotnet-trace list-processes [-h|--help]
+dotnet-trace ps  [-h|--help]
 ```
 
 ## dotnet-trace list-profiles

@@ -94,7 +94,7 @@ Designers generally allow you to create a copy of an existing template and modif
 
 Editing a copy of a template is a great way to learn how templates work. Instead of creating a new blank template, it's easier to edit a copy and change a few aspects of the visual presentation.
 
-For an example, see [Create a template for a control](styles-templates-create-apply-template.md).
+For an example, see [Create a template for a control](../themes/how-to-create-apply-template.md).
 
 ### TemplateBinding
 

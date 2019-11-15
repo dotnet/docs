@@ -8,39 +8,48 @@ You can create an XML tree, create an <xref:System.Xml.XmlReader> from the XML t
   
 ## Example  
   
-```csharp  
-string xslMarkup = @"<?xml version='1.0'?>  
-<xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
-    <xsl:template match='/Parent'>  
-        <Root>  
-            <C1>  
-            <xsl:value-of select='Child1'/>  
-            </C1>  
-            <C2>  
-            <xsl:value-of select='Child2'/>  
-            </C2>  
-        </Root>  
-    </xsl:template>  
-</xsl:stylesheet>";  
-  
-XDocument xmlTree = new XDocument(  
-    new XElement("Parent",  
-        new XElement("Child1", "Child1 data"),  
-        new XElement("Child2", "Child2 data")  
-    )  
-);  
-  
-XDocument newTree = new XDocument();  
-using (XmlWriter writer = newTree.CreateWriter()) {  
-    // Load the style sheet.  
-    XslCompiledTransform xslt = new XslCompiledTransform();  
-    xslt.Load(XmlReader.Create(new StringReader(xslMarkup)));  
-  
-    // Execute the transform and output the results to a writer.  
-    xslt.Transform(xmlTree.CreateReader(), writer);  
-}  
-  
-Console.WriteLine(newTree);  
+```csharp
+string xslt = @"<?xml version='1.0'?>  
+    <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
+        <xsl:template match='/Parent'>  
+            <Root>  
+                <C1>  
+                <xsl:value-of select='Child1'/>  
+                </C1>  
+                <C2>  
+                <xsl:value-of select='Child2'/>  
+                </C2>  
+            </Root>  
+        </xsl:template>  
+    </xsl:stylesheet>";
+
+XDocument oldDocument = new XDocument(
+    new XElement("Parent",
+        new XElement("Child1", "Child1 data"),
+        new XElement("Child2", "Child2 data")
+    )
+);
+
+XDocument newDocument = new XDocument();
+
+using (StringReader xsltStringReader = new StringReader(xslt))
+{
+    using (XmlReader xsltReader = XmlReader.Create(xsltStringReader))
+    {
+        XslCompiledTransform transformer = new XslCompiledTransform();
+        transformer.Load(xsltReader);
+        using (XmlReader oldDocumentReader = oldDocument.CreateReader())
+        {
+            using (XmlWriter newDocumentWriter = newDocument.CreateWriter())
+            {
+                transformer.Transform(oldDocumentReader, newDocumentWriter);
+            }
+        }
+    }
+}
+
+string result = newDocument.ToString();
+Console.WriteLine(result);
 ```  
   
  This example produces the following output:  

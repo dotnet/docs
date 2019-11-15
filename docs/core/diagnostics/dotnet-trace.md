@@ -122,7 +122,7 @@ dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 
 ## dotnet-trace ps
 
-Lists dotnet processes that can be traced.
+Lists dotnet processes that can be attached to.
 
 ### Synopsis
 

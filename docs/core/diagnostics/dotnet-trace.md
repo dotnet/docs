@@ -13,7 +13,7 @@ ms.date: 10/28/2019
 
 Install `dotnet-trace` [NuGet package](https://www.nuget.org/packages/dotnet-trace) with the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
-```console
+```dotnetcli
 dotnet tool install --global dotnet-trace
 ```
 
@@ -27,7 +27,7 @@ dotnet-trace [-h, --help] [--version] <command>
 
 The `dotnet-trace` tool:
 
-* Is a cross-platform CLI global tool.
+* Is a cross-platform .NET Core tool.
 * Enables the collection of .NET Core traces of a running process without a native profiler.
 * Is built around the cross-platform `EventPipe` technology of the .NET Core runtime.
 * Delivers the same experience on Windows, Linux, or macOS.

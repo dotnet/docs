@@ -110,7 +110,7 @@ The full code sample can be found at <xref:System.Xml.XmlDocument.CreateAttribut
 
 You can also create an **XmlAttribute** node and use the **InsertBefore** or **InsertAfter** methods to place it in the appropriate position in the collection. If an attribute with the same name is already present in the attribute collection, the existing **XmlAttribute** node is removed from the collection and the new **XmlAttribute** node is inserted. This performs the same way as the **SetAttribute** method. These methods take, as a parameter, an existing node as a reference point to do the **InsertBefore** and **InsertAfter**. If you do not provide a reference node indicating where to insert the new node, the default for the **InsertAfter** method is to insert the new node at the beginning of the collection. The default position for the **InsertBefore**, if no reference node is provided, is at the end of the collection.
 
-If you created an **XmlNamedNodeMap** of attributes, you can add an attribute by name using the <xref:System.Xml.XmlNamedNodeMap.SetNamedItem%2A>. For more information, see [Node Collections in NamedNodeMaps and NodeLists](node-collections-in-namednodemaps-and-nodelists.md).
+If you created an **XmlNamedNodeMap** of attributes, you can add an attribute by name using the <xref:System.Xml.XmlNamedNodeMap.SetNamedItem%2A> method. For more information, see [Node Collections in NamedNodeMaps and NodeLists](node-collections-in-namednodemaps-and-nodelists.md).
 
 ## Default attributes
 
@@ -118,7 +118,7 @@ If you create an element that is declared to have a default attribute, then a ne
 
 ## Attribute child nodes
 
-The value of an attribute node becomes its child nodes. There are only two types of valid child nodes: **XmlText** nodes, and **XmlEntityReference** nodes. These are child nodes in the sense that methods such as **FirstChild** and **LastChild** process them as child nodes. This distinction of an attribute having child nodes is important when trying to remove attributes or attribute child nodes. For more information, see [Removing Attributes from an Element Node in the DOM](removing-attributes-from-an-element-node-in-the-dom.md).
+The value of an attribute node becomes its child nodes. There are only two types of valid child nodes: **XmlText** nodes and **XmlEntityReference** nodes. These are child nodes in the sense that methods such as **FirstChild** and **LastChild** process them as child nodes. This distinction of an attribute having child nodes is important when trying to remove attributes or attribute child nodes. For more information, see [Removing Attributes from an Element Node in the DOM](removing-attributes-from-an-element-node-in-the-dom.md).
 
 ## See also
 

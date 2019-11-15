@@ -20,7 +20,6 @@ It's the responsibility of the system administrator to configure FIPS compliance
 If code is written for a FIPS-compliant environment, it's the responsibility of the developer to esure that:
 
 * Non-compliant FIPS algorithms are not used.
-* FIPS compliance is met.
 
 For more information on FIPS compliance, see the following articles:
 

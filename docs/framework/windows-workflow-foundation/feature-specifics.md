@@ -6,7 +6,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
 
 # Windows Workflow Foundation Feature Specifics
 
-.NET Framework version 4 adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
+.NET Framework 4 adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
 
 ## Messaging Activities
 

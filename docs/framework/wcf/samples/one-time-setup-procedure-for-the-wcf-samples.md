@@ -16,7 +16,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 1. Ensure that ASP.NET is set up. For more information about how to set up ASP.NET, see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).
 
-2. Ensure that .NET Framework version 4 is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
+2. Ensure that .NET Framework 4 is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
 
 3. If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).
 

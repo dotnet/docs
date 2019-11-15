@@ -46,7 +46,7 @@ Flowcharts are updated for .NET Framework 4.5 and have the following new capabil
 
 ## Support for Partial Trust
 
-Workflows in .NET Framework version 4 required a fully trusted application domain. In .NET Framework 4.5, workflows can operate in a partial trust environment. In a partial trust environment, third-party components can be used without granting them full access to the resources of the host. Some concerns about running workflows in partial trust are as follows:
+Workflows in .NET Framework 4 required a fully trusted application domain. In .NET Framework 4.5, workflows can operate in a partial trust environment. In a partial trust environment, third-party components can be used without granting them full access to the resources of the host. Some concerns about running workflows in partial trust are as follows:
 
 1. Using legacy components (including Rules) contained in the <xref:System.Activities.Statements.Interop> activity is not supported under partial trust.
 

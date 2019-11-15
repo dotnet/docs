@@ -75,7 +75,7 @@ This sample may already be installed on your computer. Check for the following (
  This sample demonstrates that the hosting layer is capable of composing with the classes in the <xref:System.Web.Routing> namespace for routing the requests of services hosted over HTTP.  
   
 > [!NOTE]
-> You must update the default application pool version to .NET Framework version 4 if it’s set to version 2.  
+> You must update the default application pool version to .NET Framework 4 if it’s set to version 2.  
   
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: .NET Core FIPS compliance
-description: Explains .NET Core FIPS compliance
+description: Explains .NET Core FIPS compliance.
 ms.date: 11/20/2019
 author: "Rick-Anderson"
 ms.author: "riande"
@@ -15,9 +15,9 @@ ms.author: "riande"
 * Does **not** enforce FIPS compliance in .NET Core apps.
 * Does **not** stop developers from using non-FIPS compliant algorithms, even on systems configured for FIPS compliance.
 
-It's the responsibility of the system administrator to configure FIPS compliance for an operating system.
+The system administrator is responsible for configuring the FIPS compliance for an operating system.
 
-If code is written for a FIPS-compliant environment, it's the responsibility of the developer to esure that:
+If code is written for a FIPS-compliant environment, the developer is responsible for ensuring that non-compliant FIPS algorithms aren't used.
 
 * Non-compliant FIPS algorithms are not used.
 

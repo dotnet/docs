@@ -3,8 +3,7 @@ title: Create a template in WPF - .NET Desktop
 description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET Core.
 author: thraka
 ms.author: adegeo
-ms.date: 10/20/2019
-dev_langs: ["csharp", "vb"]
+ms.date: 11/15/2019
 helpviewer_keywords: 
   - "control contract [WPF]"
   - "controls [WPF], visual structure changes"
@@ -12,7 +11,6 @@ helpviewer_keywords:
   - "skinning controls [WPF]"
   - "controls [WPF], appearance specified by state"
   - "templates [WPF], custom for existing controls"
-ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
 ---
 
 # Create a template for a control
@@ -147,7 +145,7 @@ Run the project. Notice that when you move the mouse over the button, the color 
 
 ## Use a VisualState
 
-Visual states are defined and triggered by a control. For example, when the mouse is moved on top of the control, the `CommonStates.MouseOver` state is triggered. You can animate property changes based on the current state of the control. In the previous section, a **PropertyTrigger** was used to change the foreground of the button to `AliceBlue` when the `IsMouseOver` property was `true`. Instead, create a visual state that animates the change of this color, providing a smooth transition. For more information about `VisualStates`, see [Styles and templates in WPF](styles-templates-overview.md#visual-states).
+Visual states are defined and triggered by a control. For example, when the mouse is moved on top of the control, the `CommonStates.MouseOver` state is triggered. You can animate property changes based on the current state of the control. In the previous section, a **PropertyTrigger** was used to change the foreground of the button to `AliceBlue` when the `IsMouseOver` property was `true`. Instead, create a visual state that animates the change of this color, providing a smooth transition. For more information about `VisualStates`, see [Styles and templates in WPF](../fundamentals/styles-templates-overview.md#visual-states).
 
 To convert the **PropertyTrigger** to an animated visual state, First, remove the `<ControlTemplate.Triggers>` element from your template.
 
@@ -181,6 +179,6 @@ Run the project. Notice that when you move the mouse over the button, the color 
 
 ## Next steps
 
-- [Create a style for a control in WPF](styles-templates-create-apply-style.md)
-- [Styles and templates in WPF](styles-templates-overview.md)
-- [Overview of XAML Resources](xaml-resources-define.md)
+- [Create a style for a control in WPF](../fundamentals/styles-templates-create-apply-style.md)
+- [Styles and templates in WPF](../fundamentals/styles-templates-overview.md)
+- [Overview of XAML Resources](../fundamentals/xaml-resources-define.md)

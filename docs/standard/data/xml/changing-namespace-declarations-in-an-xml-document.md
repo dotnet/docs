@@ -29,7 +29,7 @@ doc.documentElement.RemoveAttribute("xmlns");
  Likewise, if you add a different `xmlns` attribute to the `doc` element as follows, then the `test` element still has **NamespaceURI** `123`.  
   
 ```vb  
-doc.documentElement.SetAttribute("xmlns","456");  
+doc.documentElement.SetAttribute("xmlns","456")
 ```  
   
 ```csharp  

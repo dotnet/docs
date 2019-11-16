@@ -10,7 +10,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Reducing System Restarts During .NET Framework 4.5 Installations
-The .NET Framework 4.5 installer uses the [Restart Manager](https://go.microsoft.com/fwlink/?LinkId=231425) to prevent system restarts whenever possible during installation. If your app setup program installs the .NET Framework, it can interface with the Restart Manager to take advantage of this feature. For more information, see [How to: Get Progress from the .NET Framework 4.5 Installer](how-to-get-progress-from-the-dotnet-installer.md).  
+The .NET Framework 4.5 installer uses the [Restart Manager](/windows/win32/rstmgr/about-restart-manager) to prevent system restarts whenever possible during installation. If your app setup program installs the .NET Framework, it can interface with the Restart Manager to take advantage of this feature. For more information, see [How to: Get Progress from the .NET Framework 4.5 Installer](how-to-get-progress-from-the-dotnet-installer.md).  
   
 ## Reasons for a Restart  
  The .NET Framework 4.5 installation requires a system restart if a .NET Framework 4 app is in use during the installation. This is because the .NET Framework 4.5 replaces .NET Framework 4 files and requires those files to be available during installation. In many cases, the restart can be prevented by preemptively detecting and closing.NET Framework 4 apps that are in use. However, some system apps should not be closed. In these cases, a restart cannot be avoided.  

@@ -162,7 +162,7 @@ The following example shows a binding, and sets the <xref:System.Windows.Framewo
 For more information, see [Property Value Inheritance](property-value-inheritance.md).
 
 ### WPF designer integration
-A custom control with properties that are implemented as dependency properties will receive appropriate [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] support. One example is the ability to edit direct and attached dependency properties with the **Properties** window. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).
+A custom control with properties that are implemented as dependency properties will receive appropriate WPF Designer for Visual Studio support. One example is the ability to edit direct and attached dependency properties with the **Properties** window. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).
 
 ## Dependency property value precedence
 When you get the value of a dependency property, you are potentially obtaining a value that was set on that property through any one of the other property-based inputs that participate in the WPF property system. Dependency property value precedence exists so that a variety of scenarios for how properties obtain their values can interact in a predictable way.

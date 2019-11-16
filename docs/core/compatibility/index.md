@@ -97,7 +97,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   Note that introducing an override might cause previous consumers to skip over the override when calling [base](../../csharp/language-reference/keywords/base.md).
 
-- **✔️ Adding a constructor to a class, along with a default (parameterless) constructor if the class previously had no constructors**
+- **✔️ Adding a constructor to a class, along with a parameterless constructor if the class previously had no constructors**
 
    However, adding a constructor to a class that previously had no constructors *without* adding the parameterless constructor is not allowed.
 

@@ -203,7 +203,7 @@ Event Grid is a fully managed serverless cloud service. It dynamically scales ba
 
 ### Streaming messages in the Azure cloud
 
-Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events like a new document has been inserted into a Cosmos DB. But, what if your cloud-native system needs to process a *stream of related events*? [Event streams](https://msdn.microsoft.com/magazine/dn904671) are more complex. They're typically time-ordered, interrelated, and must be processed as a group.
+Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events like a new document has been inserted into a Cosmos DB. But, what if your cloud-native system needs to process a *stream of related events*? [Event streams](https://docs.microsoft.com/archive/msdn-magazine/2015/february/microsoft-azure-the-rise-of-event-stream-oriented-systems) are more complex. They're typically time-ordered, interrelated, and must be processed as a group.
 
 [Azure Event Hub](https://azure.microsoft.com/services/event-hubs/) is a data streaming platform and event ingestion service that collects, transforms, and stores events. It's fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context. The service is highly scalable and can store and [process millions of events per second](https://docs.microsoft.com/azure/event-hubs/event-hubs-about). Shown in Figure 4-18, it's often a front door for an event pipeline, decoupling ingest stream from event consumption.
 

@@ -61,7 +61,7 @@ This topic describes how to troubleshoot Windows Communication Foundation (WCF) 
  To workaround this problem, use the [WorkFlow Service Registration Tool (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) with the `/c` switch to properly configure IIS script maps on the machine. [WorkFlow Service Registration Tool (WFServicesReg.exe)](workflow-service-registration-tool-wfservicesreg-exe.md) can be found at %windir%\Microsoft.NET\framework\v3.5\ or %windir%\Microsoft.NET\framework64\v3.5\  
   
 ## Could not load type ‘System.ServiceModel.Activation.HttpModule’ from assembly ‘System.ServiceModel, Version 3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089’  
- This error occurs if [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] is installed and then WCF HTTP Activation is enabled. To resolve the issue run the following command-line from inside the Developer Command Prompt for Visual Studio:  
+ This error occurs if .NET Framework 4 is installed and then WCF HTTP Activation is enabled. To resolve the issue run the following command-line from inside the Developer Command Prompt for Visual Studio:  
   
 ```console
 aspnet_regiis.exe -i -enable  

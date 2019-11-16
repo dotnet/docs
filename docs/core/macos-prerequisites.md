@@ -48,7 +48,7 @@ An easy way to obtain libgdiplus is by using the [Homebrew ("brew")](https://bre
 
 ```console
 brew update
-brew install libgdiplus
+brew install mono-libgdiplus
 ```
 
 ## Visual Studio for Mac

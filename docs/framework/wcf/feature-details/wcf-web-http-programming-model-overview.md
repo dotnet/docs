@@ -52,7 +52,7 @@ The Windows Communication Foundation (WCF) WEB HTTP programming model provides t
 ## WebGet and WebInvoke Attributes  
  WCF WEB HTTP services make use of retrieval verbs (for example HTTP GET) in addition to various invoke verbs (for example HTTP POST, PUT, and DELETE). The WCF WEB HTTP programming model allows service developers to control the both the URI template and verb associated with their service operations with the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute>. The <xref:System.ServiceModel.Web.WebGetAttribute> and the <xref:System.ServiceModel.Web.WebInvokeAttribute> allow you to control how individual operations get bound to URIs and the HTTP methods associated with those URIs. For example, adding <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> in the following code.  
   
-```  
+```csharp
 [ServiceContract]  
 interface ICustomer  
 {  
@@ -76,7 +76,7 @@ interface ICustomer
   
  <xref:System.ServiceModel.Web.WebInvokeAttribute> defaults to POST but you can use it for other verbs too.  
   
-```  
+```csharp
 [ServiceContract]  
 interface ICustomer  
 {  

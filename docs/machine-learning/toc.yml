@@ -7,7 +7,7 @@
     items:
     - name: The ML.NET API
       href: how-does-mldotnet-work.md
-  - name: Tools
+  - name: Model Builder & CLI
     items:
     - name: The ML.NET Model Builder tool
       href: automate-training-with-model-builder.md
@@ -97,7 +97,7 @@
         href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
       - name: Deploy a model to a web API
         href: how-to-guides/serve-model-web-api-ml-net.md
-  - name: Tools
+  - name: Model Builder & CLI
     items:
     - name: Load data into Model Builder
       href: how-to-guides/load-data-model-builder.md
@@ -109,18 +109,12 @@
       href: how-to-guides/how-to-use-the-automl-api.md
 - name: Reference
   items:
-  - name: API
-    items:
-    - name: ML.NET API Reference
-      href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
-    - name: ML.NET API Preview API Reference
-      href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
-  - name: Tools
-    items:
-    - name: CLI reference
-      href: reference/ml-net-cli-reference.md
-    - name: ML.NET AutoML API reference
-      href: https://docs.microsoft.com/dotnet/api/index?view=automl-dotnet
+  - name: ML.NET API Reference
+    href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+  - name: ML.NET API Preview API Reference
+    href: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet-preview
+  - name: CLI reference
+    href: reference/ml-net-cli-reference.md
 - name: Resources
   items:
   - name: Overview

@@ -11,7 +11,7 @@ When you define custom types that are business objects or are types that do not 
 ## Constructor Patterns and Type Definitions for XAML  
  To be instantiated as an object element in XAML, a custom class must meet the following requirements:  
   
-- The custom class must be public and must expose a default (parameterless) public constructor. (See following section for notes regarding structures.)  
+- The custom class must be public and must expose a parameterless public constructor. (See following section for notes regarding structures.)  
   
 - The custom class must not be a nested class. The extra "dot" in the full-name path makes the class-namespace division ambiguous, and interferes with other XAML features such as attached properties.  
   

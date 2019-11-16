@@ -6,11 +6,13 @@ helpviewer_keywords:
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
 ---
 # Classes Used in .NET Framework File I/O and the File System (Visual Basic)
+
 The following tables list the classes commonly used for .NET Framework file I/O, categorized into file I/O classes, classes used for creating streams, and classes used to read and write to streams.  
   
 For a more comprehensive listing, see [Class Library Overview](../../../../standard/class-library-overview.md).  
   
 ## Basic I/O Classes for Files, Drives, and Directories  
+
  The following table lists and describes the main classes used for file I/O.  
   
 |Class|Description|  
@@ -28,6 +30,7 @@ For a more comprehensive listing, see [Class Library Overview](../../../../stand
 |<xref:System.Security.Permissions.FileIOPermission?displayProperty=nameWithType>|Controls the access of files and folders by defining <xref:System.Security.Permissions.FileIOPermissionAttribute.Read%2A>, <xref:System.Security.Permissions.FileIOPermissionAttribute.Write%2A>, <xref:System.Security.Permissions.FileIOPermissionAttribute.Append%2A> and <xref:System.Security.Permissions.FileIOPermissionAttribute.PathDiscovery%2A> permissions.|  
   
 ## Classes Used to Create Streams  
+
  The following table lists and describes the main classes used to create streams.  
   
 |Class|Description|  
@@ -39,6 +42,7 @@ For a more comprehensive listing, see [Class Library Overview](../../../../stand
 |<xref:System.Security.Cryptography.CryptoStream?displayProperty=nameWithType>|Defines a stream that links data streams to cryptographic transformations.|  
   
 ## Classes Used to Read from and Write to Streams  
+
  The following table shows the specific classes used for reading from and writing to files with streams.  
   
 |**Class**|**Description**|  

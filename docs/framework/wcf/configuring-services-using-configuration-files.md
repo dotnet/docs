@@ -97,7 +97,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 For more information about configuring services and clients, see [Configuring WCF services](configuring-services.md).
   
- [\<binding>](../misc/binding.md)  
+ [\<binding>](../configure-apps/file-schema/wcf/bindings.md)  
   
 ### The \<behaviors> Element  
  This is a container element for the `behavior` elements that define the behaviors for a service.  
@@ -261,4 +261,4 @@ For more information about configuring services and clients, see [Configuring WC
 - [Simplified Configuration](simplified-configuration.md)
 - [Configuring WCF services](configuring-services.md)
 - [\<service>](../configure-apps/file-schema/wcf/service.md)
-- [\<binding>](../misc/binding.md)
+- [\<binding>](../configure-apps/file-schema/wcf/bindings.md)

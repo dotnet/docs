@@ -1,5 +1,5 @@
 ---
-title: "How to: Write a Copy Constructor - C# Programming Guide"
+title: "How to write a copy constructor - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "copy constructor [C#]"
 ms.assetid: fba899b5-fc41-428e-a745-3ebdbf37990a
 ---
-# How to: Write a Copy Constructor (C# Programming Guide)
+# How to write a copy constructor (C# Programming Guide)
 C# doesn't provide a copy constructor for objects, but you can write one yourself.  
   
 ## Example  

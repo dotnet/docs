@@ -11,9 +11,8 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # CLR ETW Keywords and Levels
-<a name="top"></a> Event tracing for Windows (ETW) events can be filtered by category and level. Event [CLR ETW Keywords](#keywords) enable the filtering of events by category; they are used in combinations for the runtime and rundown providers. The [event levels](#levels) are identified by flags.  
+Event tracing for Windows (ETW) events can be filtered by category and level. Event [CLR ETW Keywords](#clr-etw-keywords) enable the filtering of events by category; they are used in combinations for the runtime and rundown providers. The [event levels](#etw-event-levels) are identified by flags.  
   
-<a name="keywords"></a>   
 ## CLR ETW Keywords  
  The keywords are flags that can be combined to generate values. In practice, you use the hexadecimal values of the keywords instead of the keyword names when you call the command-line utilities.  
   
@@ -50,8 +49,6 @@ ms.author: "mairaw"
 |`PerfTrackKeyWord`|0x2000000|Enables the collection of the `ModuleLoad` and `ModuleRange` events.|  
 |`StackKeyword`|0x40000000|Enables the collection of CLR [stack trace events](stack-etw-event.md).|  
   
- [Back to top](#top)  
-  
 <a name="rundown"></a>   
 ### CLR ETW Rundown Keywords  
  The following table lists the CLR ETW rundown keywords, their values, and what they are used for.  
@@ -66,9 +63,7 @@ ms.author: "mairaw"
 |`AppDomainResourceManagementRundownKeyword`|0x00000800|Enables the collection of events for resource monitoring at an <xref:System.AppDomain> level when used with `StartRundownKeyword` or `EndRundownKeyword`.|  
 |`ThreadingKeyword`|0x00010000|Enables the collection of thread pool events.|  
 |`OverrideAndSuppressNGenEventsRundownKeyword`|0x00040000|(Available in the .NET Framework 4.5 and later.) Suppresses the high-overhead `NGenRundownKeyword` keyword and prevents the generation of events for methods that are inside NGen modules. Starting with the .NET Framework 4.5, profiling tools should use `OverrideAndSuppressNGenEventsRundownKeyword` and `NGenRundownKeyword` together to suppress the generation of events for methods in NGen modules. This enables the profiling tool to use the more efficient NGen PDBs to get information about methods in NGen modules. The CLR in the .NET Framework 4 and earlier versions does not support the creation of NGen PDBs. In these earlier versions, the CLR will not recognize `OverrideAndSuppressNGenEventsRundownKeyword` and will process `NGenRundownKeyword` to generate events for methods in NGen modules.|  
-|`PerfTrackKeyWord`|0x2000000|Enables the collection of the `ModuleDCStart`, `ModuleDCEnd`, `ModuleRangeDCStart`, and `ModuleRangeDCEnd` events.|  
-  
- [Back to top](#top)  
+|`PerfTrackKeyWord`|0x2000000|Enables the collection of the `ModuleDCStart`, `ModuleDCEnd`, `ModuleRangeDCStart`, and `ModuleRangeDCEnd` events.|   
   
 <a name="runtime_combo"></a>   
 ### Keyword Combinations for Symbol Resolution for the Runtime Provider  
@@ -82,8 +77,6 @@ ms.author: "mairaw"
 |`NGenKeyword` +<br /><br /> `StartEnumerationKeyword`|None.|Load events.|Not applicable.|  
 |`NGenKeyword` +<br /><br /> `EndEnumerationKeyword`|None.|Unload events.|Not applicable.|  
   
- [Back to top](#top)  
-  
 <a name="rundown_combo"></a>   
 ### Keyword Combinations for Symbol Resolution for the Rundown Provider  
   
@@ -95,10 +88,7 @@ ms.author: "mairaw"
 |`JITKeyword` +<br /><br /> `EndRundownKeyword`|None.|`DCEnd` events.|  
 |`NGenKeyword` +<br /><br /> `StartRundownKeyword`|None.|`DCStart` events.|  
 |`NGenKeyword` +<br /><br /> `EndRundownKeyword`|None.|`DCEnd` events.|  
-  
- [Back to top](#top)  
-  
-<a name="levels"></a>   
+
 ## ETW Event Levels  
  ETW events can also be filtered by level. If the level is set at 0x5, events of all levels, including 0x5 and below (which are events that belong to categories enabled through keywords) are raised. If the level is set at 0x2, only events that belong to level 0x2 and below are raised.  
   

@@ -32,7 +32,7 @@ You need Visual Studio to complete this walkthrough.
 
     - System.Windows.Forms
 
-3. Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+3. Open MainWindow.xaml in the WPF Designer.
 
 4. Name the <xref:System.Windows.Controls.Grid> element `grid1`.
 

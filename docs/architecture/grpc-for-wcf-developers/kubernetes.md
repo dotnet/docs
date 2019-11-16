@@ -1,30 +1,30 @@
 ---
-title: Kubernetes - gRPC for WCF Developers
+title: Kubernetes - gRPC for WCF developers
 description: Running ASP.NET Core gRPC services in a Kubernetes cluster.
 ms.date: 09/02/2019
 ---
 
 # Kubernetes
 
-Although it's possible to run containers manually on Docker hosts, for reliable production systems it's preferable to use a Container Orchestration Engine to manage multiple instances running across several servers in a cluster. There are various Container Orchestration Engines available, including Kubernetes, Docker Swarm and Apache Mesos. But of these engines, Kubernetes is far and away the most widely used, so it will be the focus of this chapter.
+Although it's possible to run containers manually on Docker hosts, for reliable production systems it's better to use a container orchestration engine to manage multiple instances running across several servers in a cluster. There are various container orchestration engines available, including Kubernetes, Docker Swarm, and Apache Mesos. But of these engines, Kubernetes is far and away the most widely used, so it will be the focus of this chapter.
 
 Kubernetes includes the following functionality:
 
 - **Scheduling** runs containers on multiple nodes within a cluster, ensuring balanced usage of the available resource, keeping containers running if there are outages, and handling rolling updates to new versions of images or new configurations.
 - **Health checks** monitor containers to ensure continued service.
 - **DNS & service discovery** handles routing between services within a cluster.
-- **Ingress** exposes selected services externally, and generally provides load-balancing across instances of those services.
-- **Resource management** attaches external resources such as storage to containers.
+- **Ingress** exposes selected services externally and generally provides load-balancing across instances of those services.
+- **Resource management** attaches external resources like storage to containers.
 
-This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available from on the [dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub,
+This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available in the [dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub.
 
 ## Kubernetes terminology
 
-Kubernetes uses *desired state configuration*: the API is used to describe objects such as *Pods*, *Deployments* and *Services*, and the *Control Plane* takes care of implementing the desired state across all the *nodes* in a *cluster*. A Kubernetes cluster has a *Master* node that runs the *Kubernetes API*, which can be communicated with programmatically or using the `kubectl` command-line tool. `kubectl` can create and manage objects using command-line arguments, but works best with YAML files that contain declaration data for Kubernetes objects.
+Kubernetes uses *desired state configuration*: the API is used to describe objects like *Pods*, *Deployments*, and *Services*, and the *Control Plane* takes care of implementing the desired state across all the *nodes* in a *cluster*. A Kubernetes cluster has a *Master* node that runs the *Kubernetes API*, which you can communicate with programmatically or by using the `kubectl` command-line tool. `kubectl` can create and manage objects through command-line arguments, but it works best with YAML files that contain declaration data for Kubernetes objects.
 
 ### Kubernetes YAML files
 
-Every Kubernetes YAML file will have at least three top-level properties.
+Every Kubernetes YAML file will have at least three top-level properties:
 
 ```yaml
 apiVersion: v1
@@ -33,13 +33,13 @@ metadata:
   # Object properties
 ```
 
-The `apiVersion` property is used to specify which version (and which API) the file is intended for. The `kind` property specifies the kind of object the YAML represents. The `metadata` property contains object properties such as `name`, `namespace`, or `labels`.
+The `apiVersion` property is used to specify which version (and which API) the file is intended for. The `kind` property specifies the kind of object the YAML represents. The `metadata` property contains object properties like `name`, `namespace`, and `labels`.
 
 Most Kubernetes YAML files will also have a `spec` section that describes the resources and configuration necessary to create the object.
 
 ### Pods
 
-Pods are the basic units of execution in Kubernetes. They can run multiple containers, but are also used to run single containers. The pod also includes any storage resources required by the container(s), and the network IP address.
+Pods are the basic units of execution in Kubernetes. They can run multiple containers, but they're also used to run single containers. The pod also includes any storage resources required by the container(s), and the network IP address.
 
 ### Services
 

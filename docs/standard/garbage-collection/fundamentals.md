@@ -1,7 +1,7 @@
 ---
-title: "Fundamentals of garbage collection"
-description: "Learn how the garbage collector works and how it can be configured for optimum performance."
-ms.date: 11/11/2019
+title: Fundamentals of garbage collection
+description: Learn how the garbage collector works and how it can be configured for optimum performance.
+ms.date: 11/15/2019
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "garbage collection, generations"
@@ -16,7 +16,7 @@ ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
 
 In the common language runtime (CLR), the garbage collector (GC) serves as an automatic memory manager. It provides the following benefits:
 
-- Enables you to develop your application without having to free memory.
+- Enables you to develop your application without having to manually free memory.
 
 - Allocates objects on the managed heap efficiently.
 
@@ -89,7 +89,7 @@ The heap is organized into generations so it can handle long-lived and short-liv
 
 - **Generation 0**. This is the youngest generation and contains short-lived objects. An example of a short-lived object is a temporary variable. Garbage collection occurs most frequently in this generation.
 
-  Newly allocated objects form a new generation of objects and are implicitly generation 0 collections, unless they are large objects, in which case they go on the large object heap in a generation 2 collection.
+  Newly allocated objects form a new generation of objects and are implicitly generation 0 collections. However, if they are large objects, they go on the large object heap in a generation 2 collection.
 
   Most objects are reclaimed for garbage collection in generation 0 and do not survive to the next generation.
 
@@ -136,7 +136,10 @@ A garbage collection has the following phases:
 
   Because generation 2 collections can occupy multiple segments, objects that are promoted into generation 2 can be moved into an older segment. Both generation 1 and generation 2 survivors can be moved to a different segment, because they are promoted to generation 2.
 
-  Ordinarily, the large object heap is not compacted, because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework starting with .NET Framework 4.5.1, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand.
+  Ordinarily, the large object heap (LOH) is not compacted, because copying large objects imposes a performance penalty. However, in .NET Core and in .NET Framework 4.5.1 and later, you can use the <xref:System.Runtime.GCSettings.LargeObjectHeapCompactionMode%2A?displayProperty=nameWithType> property to compact the large object heap on demand. In addition, the LOH is automatically compacted when a hard limit is set by specifying either:
+
+  - a memory limit on a container, or
+  - the `GCHeapHardLimit` or `GCHeapHardLimitPercent` run-time configuration options
 
 The garbage collector uses the following information to determine whether objects are live:
 
@@ -166,7 +169,7 @@ For more information about finalization, see <xref:System.Object.Finalize?displa
 
 The garbage collector is self-tuning and can work in a wide variety of scenarios. You can use a configuration file setting to set the type of garbage collection based on the characteristics of the workload. The CLR provides the following types of garbage collection:
 
-- Workstation garbage collection, which is for all client workstations and stand-alone PCs. This is the default setting for the [gcServer element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) in the runtime configuration schema.
+- Workstation garbage collection (GC), which is for all client workstations, stand-alone PCs, and mobile apps built using Xamarin. Workstation GC is the default setting for the [gcServer element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) in the run-time configuration schema.
 
   Workstation garbage collection can be concurrent or non-concurrent. Concurrent garbage collection enables managed threads to continue operations during a garbage collection. [Background garbage collection](#background-garbage-collection) replaces [concurrent garbage collection](#concurrent-garbage-collection) in .NET Framework 4 and later versions.
 
@@ -174,7 +177,7 @@ The garbage collector is self-tuning and can work in a wide variety of scenarios
 
   - In .NET Core, server garbage collection can be non-concurrent or background.
 
-  - In .NET Framework 4.5 and later versions, server garbage collection can be non-concurrent or background (background garbage collection replaces concurrent garbage collection). In .NET Framework 4 and previous versions, server garbage collection can be concurrent or non-concurrent.
+  - In .NET Framework 4.5 and later versions, server garbage collection can be non-concurrent or background (background garbage collection replaces concurrent garbage collection). In .NET Framework 4 and previous versions, server garbage collection is non-concurrent.
 
 The following illustration shows the dedicated threads that perform the garbage collection on a server:
 
@@ -184,9 +187,7 @@ The following illustration shows the dedicated threads that perform the garbage 
 
 The following are threading and performance considerations for workstation garbage collection:
 
-- The collection occurs on the user thread that triggered the garbage collection and remains at the same priority. Because user threads typically run at normal priority, the garbage collector (which runs on a normal priority thread) must compete with other threads for CPU time.
-
-  Threads that are running native code are not suspended.
+- The collection occurs on the user thread that triggered the garbage collection and remains at the same priority. Because user threads typically run at normal priority, the garbage collector (which runs on a normal priority thread) must compete with other threads for CPU time. (Threads that run native code are not suspended on either server or workstation garbage collection.)
 
 - Workstation garbage collection is always used on a computer that has only one processor, regardless of the [gcServer](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) setting in .NET Framework apps or the `System.GC.Server` setting in .NET Core apps. If you specify server garbage collection on such a computer, the CLR uses workstation garbage collection with concurrency disabled.
 
@@ -225,7 +226,7 @@ The following illustration shows background garbage collection performed on a se
 
 ### Background server garbage collection
 
-Starting with .NET Framework 4.5, background server garbage collection is the default mode for server garbage collection. To choose this mode, set the `enabled` attribute of the [gcServer element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) to `true` in the runtime configuration schema. This mode functions similarly to background workstation garbage collection, described in the previous section, but there are a few differences:
+Starting with .NET Framework 4.5, background server garbage collection is the default mode for server garbage collection. To choose this mode, set the `enabled` attribute of the [gcServer element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) to `true` in the run-time configuration schema. This mode functions similarly to background workstation garbage collection, described in the previous section, but there are a few differences:
 
 - Background workstation garbage collection uses one dedicated background garbage collection thread, whereas background server garbage collection uses multiple threads. Typically, there's a dedicated thread for each logical processor.
 

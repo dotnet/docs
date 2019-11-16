@@ -11,34 +11,34 @@ To begin, ensure that you have [F# and the Ionide plugin correctly installed](in
 
 ## Create your first project with Ionide
 
-To create a new F# project, open a command-line and create a new project with the .NET CLI:
+To create a new F# project, open a command line and create a new project with the .NET Core CLI:
 
-```console
+```dotnetcli
 dotnet new console -lang F# -o FirstIonideProject
 ```
 
-Once it it completes, change directory to the project and open Visual Studio Code:
+Once it completes, change directory to the project and open Visual Studio Code:
 
 ```console
 cd FirstIonideProject
 code .
 ```
 
-After a short while, you should see the F# Solution Explorer pane on the left-hand side of your window open. This means Ionide has successfully loaded the project you just created. You can write code in the editor before this point in time, but once this happens everything will be loaded.
+After the project loads on Visual Studio Code, you should see the F# Solution Explorer pane on the left-hand side of your window open. This means Ionide has successfully loaded the project you just created. You can write code in the editor before this point in time, but once this happens, everything has finished loading.
 
 ## Configure F# interactive
 
-You'll first need to ensure that .NET Core scripting is your default scripting environment.
+First, ensure that .NET Core scripting is your default scripting environment:
 
-1. Open the Visual Studio Code settings (**Code > Preferences > Settings**).
+1. Open the Visual Studio Code settings (**Code** > **Preferences** > **Settings**).
 1. Search for the term **F# Script**.
 1. Click the checkbox that says **FSharp: use SDK scripts**.
 
-This is currently necessary due to some legacy behaviors in .NET Framework-based scripting that do not work with .NET Core scripting, and Ionide is currently striving for that backwards compatibility. In the future, .NET Core scripting will become the default.
+This is currently necessary due to some legacy behaviors in .NET Framework-based scripting that don't work with .NET Core scripting, and Ionide is currently striving for that backwards compatibility. In the future, .NET Core scripting will become the default.
 
 ### Write your first script
 
-Once you've configured Visual Studio Code to use .NET Core scripting, navigate to the Explorer view in Visual Studio code and create a new file. Name it `MyFirstScript.fsx`.
+Once you've configured Visual Studio Code to use .NET Core scripting, navigate to the Explorer view in Visual Studio Code and create a new file. Name it *MyFirstScript.fsx*.
 
 Now add the following code to it:
 
@@ -46,7 +46,7 @@ Now add the following code to it:
 
 This function converts a word to a form of [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin). The next step is to evaluate it using F# Interactive (FSI).
 
-Highlight the entire function (it should be 11 lines long). Once it is highlighted, hold the **Alt** key and hit **Enter**. You'll notice a terminal window pop up below, and it should show something like this:
+Highlight the entire function (it should be 11 lines long). Once it's highlighted, hold the **Alt** key and hit **Enter**. You'll notice a terminal window pop up on the bottom of the screen, and it should look similar to this:
 
 ![Example of F# Interactive output with Ionide](./media/getting-started-vscode/vscode-fsi.png)
 
@@ -123,7 +123,7 @@ The previous sections in this article demonstrated a common first step in writin
 
 The next step in REPL-driven development is to move working code into an F# implementation file. It can then be compiled by the F# compiler into an assembly that can be executed.
 
-To begin, open `Program.fs` file that you created earlier with the .NET CLI.  You'll notice that some code is already in there.
+To begin, open the *Program.fs* file that you created earlier with the .NET Core CLI. You'll notice that some code is already in there.
 
 Next, create a new [`module`](../language-reference/modules.md) called `PigLatin` and copy the `toPigLatin` function you created earlier into it as such:
 

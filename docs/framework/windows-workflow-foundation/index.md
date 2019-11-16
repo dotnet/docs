@@ -20,7 +20,7 @@ This section describes the programming model, samples, and tools of the Windows 
  Describes the new features in Windows Workflow Foundation in [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)].  
   
  [Windows Workflow Foundation Feature Specifics](feature-specifics.md)  
- Describes the new features in Windows Workflow Foundation in  [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)]  
+ Describes the new features in Windows Workflow Foundation in .NET Framework 4.
   
  [Windows Workflow Conceptual Overview](conceptual-overview.md)  
  A set of topics that discusses the larger concepts behind Windows Workflow Foundation.  

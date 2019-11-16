@@ -26,5 +26,4 @@ For more information on FIPS compliance, see the following articles:
 
 * [Windows FIPS Compliance](/windows/security/threat-protection/fips-140-validation)
 * [Configuring Windows for FIPS Compliance](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing)
-* [OpenSSL FIPS Compliance](https://www.openssl.org/docs/fips.html)
-* [Configuring OpenSSL for FIPS Compliance](https://www.openssl.org/docs/fips/UserGuide.pdf)
+

@@ -69,6 +69,7 @@ Create a new **\<ControlTemplate>** with the following properties set:
 | **TargetType**    | `Button` |
 
 This control template will be simple:
+
 - a root element for the control, a <xref:System.Windows.Controls.Grid>
 - an <xref:System.Windows.Shapes.Ellipse> to draw the rounded appearance of the button
 - a <xref:System.Windows.Controls.ContentPresenter> to display the user-specified button content

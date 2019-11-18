@@ -4,6 +4,7 @@ description: Learn how to create and reference a control template in Windows Pre
 author: thraka
 ms.author: adegeo
 ms.date: 11/15/2019
+no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>"]
 helpviewer_keywords: 
   - "control contract [WPF]"
   - "controls [WPF], visual structure changes"
@@ -82,7 +83,7 @@ When you create a new <xref:System.Windows.Controls.ControlTemplate>, you still 
 
 ### Ellipse
 
-Notice that the **Fill** and **Stroke** properties of the **\<Ellipse>** element are bound to the control's <xref:System.Windows.Controls.Control.Foreground> and <xref:System.Windows.Controls.Control.Background> properties.
+Notice that the **:::no-loc text="Fill":::** and **:::no-loc text="Stroke":::** properties of the **\<Ellipse>** element are bound to the control's <xref:System.Windows.Controls.Control.Foreground> and <xref:System.Windows.Controls.Control.Background> properties.
 
 ### ContentPresenter
 
@@ -116,7 +117,7 @@ If you run the project and look at the result, you'll see that the button has a 
 
 ![WPF window with one template oval button](media/create-apply-template/styled-button.png)
 
-You may have noticed that the button isn't a circle but is skewed. Because of the way the **\<Ellipse>** element works, it always expands to fill the available space. Make the circle uniform by changing the button's **width** and **height** properties to the same value:
+You may have noticed that the button isn't a circle but is skewed. Because of the way the **\<Ellipse>** element works, it always expands to fill the available space. Make the circle uniform by changing the button's  **:::no-loc text="width":::** and **:::no-loc text="height":::** properties to the same value:
 
 [!code-xaml[StyledButtonSize](~/samples/snippets/desktop-guide/wpf/styles-templates-create-apply-template/csharp/Window3.xaml#StyledButtonSize)]
 

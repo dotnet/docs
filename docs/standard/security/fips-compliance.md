@@ -12,7 +12,6 @@ The Federal Information Processing Standard (FIPS) Publication 140-2 is a U.S. g
 
 .NET Core:
 
-* Does **not** implement any cryptographic primitives.
 * Passes cryptographic primitives calls through to the standard modules the underlying operating system provides.
 * Does **not** enforce the use of FIPS Approved algorithms or key sizes in .NET Core apps.
 
@@ -20,10 +19,8 @@ The system administrator is responsible for configuring the FIPS compliance for 
 
 If code is written for a FIPS-compliant environment, the developer is responsible for ensuring that non-compliant FIPS algorithms aren't used.
 
-* Non-compliant FIPS algorithms are not used.
-
 For more information on FIPS compliance, see the following articles:
 
 * [Windows FIPS Compliance](/windows/security/threat-protection/fips-140-validation)
 * [Configuring Windows for FIPS Compliance](/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing)
-
+* [10.2. FEDERAL INFORMATION PROCESSING STANDARD (FIPS)](https://access.redhat.com/documentation/red_hat_enterprise_linux/6/html/security_guide/sect-security_guide-federal_standards_and_regulations-federal_information_processing_standard)

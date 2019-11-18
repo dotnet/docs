@@ -16,7 +16,7 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # App Resources for Libraries That Target Multiple Platforms
-You can use the .NET Framework [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) project type to ensure that resources in your class libraries can be accessed from multiple platforms. This project type is available in Visual Studio 2012 and targets the portable subset of the .NET Framework class library. Using  a Portable Class Library ensures that your library can be accessed from desktop apps, Silverlight apps, Windows Phone apps, and [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.
+You can use the .NET Framework [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) project type to ensure that resources in your class libraries can be accessed from multiple platforms. This project type is available in Visual Studio 2012 and targets the portable subset of the .NET Framework class library. Using  a Portable Class Library ensures that your library can be accessed from desktop apps, Silverlight apps, Windows Phone apps, and Windows 8.x Store apps.
 
 [!INCLUDE[standard](../../../includes/pcl-to-standard.md)]
 
@@ -39,11 +39,11 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
  The exclusion of other <xref:System.Resources.ResourceManager> members from the Portable Class Library means that serialized objects, non-string data, and images cannot be retrieved from a resource file. To use resources from a Portable Class Library, you should store all  object data in string form. For example, you can store numeric values in a resource file by converting them to strings, and you can retrieve them and then convert them back to numbers by using the numeric data type's `Parse` or `TryParse` method. You can convert images or other binary data to a string representation by calling the <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> method, and restore them to a byte array by calling the <xref:System.Convert.FromBase64String%2A?displayProperty=nameWithType> method.
 
 ## The Portable Class Library and Windows Store Apps
- Portable Class Library projects store resources in .resx files, which are then compiled into .resources files and embedded in the main assembly or in satellite assemblies at compile time. [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, on the other hand, require resources to be stored in .resw files, which are then compiled into a single package resource index (PRI) file. However, despite the incompatible file formats, your Portable Class Library will work in a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app.
+ Portable Class Library projects store resources in .resx files, which are then compiled into .resources files and embedded in the main assembly or in satellite assemblies at compile time. Windows 8.x Store apps, on the other hand, require resources to be stored in .resw files, which are then compiled into a single package resource index (PRI) file. However, despite the incompatible file formats, your Portable Class Library will work in a Windows 8.x Store app.
 
- To consume your class library from a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app, add a reference to it in your Windows Store app project. Visual Studio will transparently extract the resources from your assembly into a .resw file and use it to generate a PRI file from which the Windows Runtime can extract resources. At run time, the Windows Runtime executes the code in your Portable Class Library, but it retrieves your Portable Class Library's resources from the PRI file.
+ To consume your class library from a Windows 8.x Store app, add a reference to it in your Windows Store app project. Visual Studio will transparently extract the resources from your assembly into a .resw file and use it to generate a PRI file from which the Windows Runtime can extract resources. At run time, the Windows Runtime executes the code in your Portable Class Library, but it retrieves your Portable Class Library's resources from the PRI file.
 
- If your Portable Class Library project includes localized resources, you use the hub-and-spoke model to deploy them just as you would for a library in a desktop app. To consume your main resource file and any localized resource files in your [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app, you add a reference to the main assembly. At compile time, Visual Studio extracts the resources from your main resource file and any localized resource files into separate .resw files. It then compiles the .resw files into a single PRI file that the Windows Runtime accesses at run time.
+ If your Portable Class Library project includes localized resources, you use the hub-and-spoke model to deploy them just as you would for a library in a desktop app. To consume your main resource file and any localized resource files in your Windows 8.x Store app, you add a reference to the main assembly. At compile time, Visual Studio extracts the resources from your main resource file and any localized resource files into separate .resw files. It then compiles the .resw files into a single PRI file that the Windows Runtime accesses at run time.
 
 <a name="NonLoc"></a>
 ## Example: Non-Localized Portable Class Library
@@ -71,7 +71,7 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
  [!code-csharp[Conceptual.Resources.Portable#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portable/cs/program.cs#2)]
  [!code-vb[Conceptual.Resources.Portable#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portable/vb/module1.vb#2)]
 
- The following code illustrates how the `UILibrary` class and its resources can be accessed from a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app. It requires a reference to UILibrary.dll to be added to the Windows Store app project.
+ The following code illustrates how the `UILibrary` class and its resources can be accessed from a Windows 8.x Store app. It requires a reference to UILibrary.dll to be added to the Windows Store app project.
 
  [!code-csharp[Conceptual.Resources.PortableMetro#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portablemetro/cs/blankpage.xaml.cs#1)]
 
@@ -93,7 +93,7 @@ You can use the .NET Framework [Portable Class Library](../../../docs/standard/c
  [!code-csharp[Conceptual.Resources.Portable#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portable/cs/program2.cs#3)]
  [!code-vb[Conceptual.Resources.Portable#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portable/vb/module2.vb#3)]
 
- The following code illustrates how the `UILibrary` class and its resources can be accessed from a [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] app. It requires a reference to UILibrary.dll to be added to the Windows Store app project. It uses the static `ApplicationLanguages.PrimaryLanguageOverride` property to set the app's preferred language to French.
+ The following code illustrates how the `UILibrary` class and its resources can be accessed from a Windows 8.x Store app. It requires a reference to UILibrary.dll to be added to the Windows Store app project. It uses the static `ApplicationLanguages.PrimaryLanguageOverride` property to set the app's preferred language to French.
 
  [!code-csharp[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.portablemetroloc/cs/blankpage.xaml.cs#1)]
  [!code-vb[Conceptual.Resources.PortableMetroLoc#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.portablemetroloc/vb/blankpage.xaml.vb#1)]  

@@ -221,7 +221,7 @@ The property name set by this attribute:
 
 To use camel case for all JSON property names, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNamingPolicy?displayProperty=nameWithType> to `JsonNamingPolicy.CamelCase`, as shown in the following example:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundTripCamelCaePropertyNames.cs?name=Serialize)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundTripCamelCasePropertyNames.cs?name=Serialize)]
 
 Here's an example class to serialize and JSON output:
 
@@ -663,7 +663,7 @@ Here's an example of the JSON that this code processes:
 
 The following example shows how to write JSON from a <xref:System.Text.Json.JsonDocument>:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/JsonDocumentWrite.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/JsonDocumentWriteJson.cs?name=SnippetSerialize)]
 
 The preceding code:
 

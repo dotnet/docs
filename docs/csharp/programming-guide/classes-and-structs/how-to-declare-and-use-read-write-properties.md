@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare and Use Read Write Properties - C# Programming Guide"
+title: "How to declare and use read write properties - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "accessors [C#], declaring properties with"
 ms.assetid: a4962fef-af7e-4c4b-a929-4ae4d646ab8a
 ---
-# How to: Declare and Use Read Write Properties (C# Programming Guide)
+# How to declare and use read write properties (C# Programming Guide)
 Properties provide the convenience of public data members without the risks that come with unprotected, uncontrolled, and unverified access to an object's data. This is accomplished through *accessors*: special methods that assign and retrieve values from the underlying data member. The [set](../../language-reference/keywords/set.md) accessor enables data members to be assigned, and the [get](../../language-reference/keywords/get.md) accessor retrieves data member values.  
   
  This sample shows a `Person` class that has two properties: `Name` (string) and `Age` (int). Both properties provide `get` and `set` accessors, so they are considered read/write properties.  

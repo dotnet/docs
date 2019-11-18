@@ -13,7 +13,7 @@ Once you have designed and implemented your service contract, you are ready to c
   
 ## In This Section  
  [Simplified Configuration](simplified-configuration.md)  
- Starting with [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)], WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with default endpoints, bindings, and behaviors.  
+ Starting with .NET Framework 4, WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with default endpoints, bindings, and behaviors.  
   
  [Configuring Services Using Configuration Files](configuring-services-using-configuration-files.md)  
  A Windows Communication Foundation (WCF) service is configurable using the .NET Framework configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a WCF service. The elements allow you to change details, such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis.  

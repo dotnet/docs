@@ -1,7 +1,7 @@
 ---
 title: Computation Expressions
 description: Learn how to create convenient syntax for writing computations in F# that can be sequenced and combined using control flow constructs and bindings.
-ms.date: 03/15/2019
+ms.date: 11/04/2019
 ---
 # Computation Expressions
 
@@ -106,6 +106,34 @@ for sq in squares do
     printfn "%d" sq
 ```
 
+In most cases, it can be omitted by callers. The most common way to omit `yield` is with the `->` operator:
+
+```fsharp
+let squares =
+    seq {
+        for i in 1..10 -> i * i
+    }
+
+for sq in squares do
+    printfn "%d" sq
+```
+
+For more complex expressions that might yield many different values, and perhaps conditionally, simply omitting the keyword can do:
+
+```fsharp
+let weekdays includeWeekend =
+    seq {
+        "Monday"
+        "Tuesday"
+        "Wednesday"
+        "Thursday"
+        "Friday"
+        if includeWeekend then
+            "Saturday"
+            "Sunday"
+    }
+```
+
 As with the [yield keyword in C#](../../csharp/language-reference/keywords/yield.md), each element in the computation expression is yielded back as it is iterated.
 
 `yield` is defined by the `Yield(x)` member on the builder type, where `x` is the item to yield back.
@@ -137,6 +165,8 @@ printfn "%A" squaresAndCubes // Prints - 1; 4; 9; 1; 8; 27
 When evaluated, the computation expression called by `yield!` will have its items yielded back one-by-one, flattening the result.
 
 `yield!` is defined by the `YieldFrom(x)` member on the builder type, where `x` is a collection of values.
+
+Unlike `yield`, `yield!` must be explicitly specified. Its behavior isn't implicit in computation expressions.
 
 ### `return`
 
@@ -388,7 +418,7 @@ The following example shows the extension of the existing `Microsoft.FSharp.Linq
 type Microsoft.FSharp.Linq.QueryBuilder with
 
     [<CustomOperation("existsNot")>]
-    member __.ExistsNot (source: QuerySource<'T, 'Q>, predicate) =
+    member _.ExistsNot (source: QuerySource<'T, 'Q>, predicate) =
         Enumerable.Any (source.Source, Func<_,_>(predicate)) |> not
 ```
 

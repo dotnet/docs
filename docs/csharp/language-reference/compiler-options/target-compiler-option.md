@@ -14,7 +14,7 @@ ms.assetid: a18bbd8e-bbf7-49e7-992c-717d0eb1f76f
 The **-target** compiler option can be specified in one of four forms:  
   
  [-target:appcontainerexe](./target-appcontainerexe-compiler-option.md)  
- To create an .exe file for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
+ To create an .exe file for Windows 8.x Store apps.  
   
  [-target:exe](./target-exe-compiler-option.md)  
  To create an .exe file.  

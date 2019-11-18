@@ -12,7 +12,11 @@ helpviewer_keywords:
 
 # How to serialize and deserialize JSON in .NET
 
-This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON). The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
+This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON).
+
+The directions and sample code use the library directly, not through a framework such as [ASP.NET Core](/aspnet/core/).
+
+Most of the serialization sample code sets <xref:System.Text.Json.JsonSerializerOptions.WriteIndented?displayProperty=nameWithType> to `true` to "pretty-print" the JSON (with indentation and whitespace for human readability). For production use, you would typically accept the default value of `false` for this setting.
 
 ## Namespaces
 
@@ -47,14 +51,14 @@ The preceding examples use type inference for the type being serialized. An over
 
 ### Serialization example
 
-Here's an example type that contains collections and nested classes:
+Here's an example class that contains collections and a nested class:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
 
 The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified by default: 
 
 ```json
-{"Date":"2019-08-01T00:00:00-07:00","TemperatureC":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":{"DegreesCelsius":20},"Low":{"DegreesCelsius":-10}},"Hot":{"High":{"DegreesCelsius":60},"Low":{"DegreesCelsius":20}}},"SummaryWords":["Cool","Windy","Humid"]}
+{"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":20,"Low":-10},"Hot":{"High":60,"Low":20}},"SummaryWords":["Cool","Windy","Humid"]}
 ```
 
 The following example shows the same JSON, formatted (that is, pretty-printed with whitespace and indentation):
@@ -62,7 +66,7 @@ The following example shows the same JSON, formatted (that is, pretty-printed wi
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "Hot",
   "DatesAvailable": [
     "2019-08-01T00:00:00-07:00",
@@ -70,20 +74,12 @@ The following example shows the same JSON, formatted (that is, pretty-printed wi
   ],
   "TemperatureRanges": {
     "Cold": {
-      "High": {
-        "DegreesCelsius": 20
-      },
-      "Low": {
-        "DegreesCelsius": -10
-      }
+      "High": 20,
+      "Low": -10
     },
     "Hot": {
-      "High": {
-        "DegreesCelsius": 60
-      },
-      "Low": {
-        "DegreesCelsius": 20
-      }
+      "High": 60,
+      "Low": 20
     }
   },
   "SummaryWords": [
@@ -107,10 +103,10 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 ## Serialization behavior
 
 * By default, all public properties are serialized. You can [specify properties to exclude](#exclude-properties-from-serialization).
-* The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
+* The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
-* Circular references are detected and exceptions thrown. For more information, see the [issue on circular references](https://github.com/dotnet/corefx/issues/38579) in the dotnet/corefx repository on GitHub.
+* Circular references are detected and exceptions thrown. For more information, see [issue 38579 on circular references](https://github.com/dotnet/corefx/issues/38579) in the dotnet/corefx repository on GitHub.
 * Currently, fields are excluded.
 
 Supported types include:
@@ -124,13 +120,13 @@ Supported types include:
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
 
-You can [implement custom converters](system-text-json-converters-how-to.md) to handle additional types or provide functionality that isn't supported by the built-in converters.
+You can [implement custom converters](system-text-json-converters-how-to.md) to handle additional types or to provide functionality that isn't supported by the built-in converters.
 
 ## How to read JSON into .NET objects (deserialize)
 
 To deserialize from a string or a file, call the <xref:System.Text.Json.JsonSerializer.Deserialize%2A?displayProperty=nameWithType> method.
 
-The following example reads JSON from a string:
+The following example reads JSON from a string and creates an instance of the `WeatherForecast` class shown earlier for the [serialization example](#serialization-example):
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripToString.cs?name=SnippetDeserialize)]
 
@@ -141,8 +137,6 @@ To deserialize from a file by using synchronous code, read the file into a strin
 To deserialize from a file by using asynchronous code, call the <xref:System.Text.Json.JsonSerializer.DeserializeAsync%2A> method:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripToFileAsync.cs?name=SnippetDeserialize)]
-
-For an example type and corresponding JSON, see the [Serialization example](#serialization-example) section.
 
 ### Deserialize from UTF-8
 
@@ -157,7 +151,7 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Deserialization to reference types without a parameterless constructor isn't supported.
-* Deserialization to immutable objects or read-only properties isn't supported. For more information, see the GitHub [issue on immutable object support](https://github.com/dotnet/corefx/issues/38569) and the [issue on read-only property support](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx repository on GitHub.
+* Deserialization to immutable objects or read-only properties isn't supported. For more information, see GitHub [issue 38569 on immutable object support](https://github.com/dotnet/corefx/issues/38569) and [issue 38163 on read-only property support](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx repository on GitHub.
 * By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
 * Fields aren't supported.
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
@@ -178,7 +172,7 @@ Here's an example type to be serialized and pretty-printed JSON output:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "Hot"
 }
 ```
@@ -187,11 +181,11 @@ Here's an example type to be serialized and pretty-printed JSON output:
 
 By default, property names and dictionary keys are unchanged in the JSON output, including case. Enum values are represented as numbers. This section explains how to:
 
-* Customize individual property names
-* Convert all property names to camel case
-* Implement a custom property naming policy
-* Convert dictionary keys to camel case
-* Convert enums to strings and camel case 
+* [Customize individual property names](#customize-individual-property-names)
+* [Convert all property names to camel case](#use-camel-case-for-all-json-property-names)
+* [Implement a custom property naming policy](#use-a-custom-json-property-naming-policy)
+* [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
+* [Convert enums to strings and camel case](#enums-as-strings) 
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](system-text-json-converters-how-to.md).
 
@@ -206,7 +200,7 @@ Here's an example type to serialize and resulting JSON:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "Hot",
   "Wind": 35
 }
@@ -258,7 +252,7 @@ Here's an example class to serialize and JSON output:
 ```json
 {
   "DATE": "2019-08-01T00:00:00-07:00",
-  "TEMPERATUREC": 25,
+  "TEMPERATURECELSIUS": 25,
   "SUMMARY": "Hot",
   "Wind": 35
 }
@@ -280,7 +274,7 @@ Serializing an object with a dictionary named `TemperatureRanges` that has key-v
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "Hot",
   "TemperatureRanges": {
     "coldMinTemp": 20,
@@ -304,34 +298,36 @@ If the Summary is `Hot`, by default the serialized JSON has the numeric value 3:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": 3
 }
 ```
 
 The following sample code serializes the enum names instead of the numeric values, and converts the names to camel case:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializeCamelCaseDictionaryKeys.cs?name=SnippetSerialize)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripEnumAsString.cs?name=SnippetSerialize)]
 
 The resulting JSON looks like the following example:
 
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "hot"
 }
 ```
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializeCamelCaseDictionaryKeys.cs?name=SnippetDeserialize)]
+Enum string names can be deserialized as well, as shown in the following example:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripEnumAsString.cs?name=SnippetDeserialize)]
 
 ## Exclude properties from serialization
 
 By default, all public properties are serialized. If you don't want some of them to appear in the JSON output, you have several options. This section explains how to exclude:
 
-* Individual properties
-* All read-only properties
-* All null-value properties 
+* [Individual properties](#exclude-individual-properties)
+* [All read-only properties](#exclude-all-read-only-properties)
+* [All null-value properties](#exclude-all-null-value-properties)
 
 ### Exclude individual properties
 
@@ -344,8 +340,7 @@ Here's an example type to serialize and JSON output:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
-  "Summary": "Hot"
+  "TemperatureCelsius": 25,
 }
 ```
 
@@ -362,7 +357,7 @@ Here's an example type to serialize and JSON output:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "Hot",
 }
 ```
@@ -399,7 +394,7 @@ By default, the serializer escapes all non-ASCII characters.  That is, it replac
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "\u0436\u0430\u0440\u043A\u043E"
 }
 ```
@@ -417,7 +412,7 @@ This code doesn't escape Cyrillic or Greek characters. If the `Summary` property
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "жарко"
 }
 ```
@@ -437,7 +432,7 @@ Here's an example of JSON produced by the preceding code:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "жа\u0440\u043A\u043E"
 }
 ```
@@ -451,7 +446,7 @@ To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncod
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializeCustomEncoding.cs?name=SnippetUnsafeRelaxed)]
 
 > [!CAUTION]
-> The `UnsafeRelaxedJsonEscaping` encoder is more permissive than the default encoder on which characters are allowed to pass through unescaped:
+> Compared to the default encoder, the `UnsafeRelaxedJsonEscaping` encoder is more permissive about allowing characters to pass through unescaped:
 >
 > * It doesn't escape HTML-sensitive characters such as `<`, `>`, `&`, and `'`.
 > * It doesn't offer any additional defense-in-depth protections against XSS or information disclosure attacks, such as those which might result from the client and server disagreeing on the *charset*.
@@ -468,14 +463,14 @@ Polymorphic serialization isn't supported when you specify at compile time the t
 
 And suppose the type argument of the `Serialize` method at compile time is `WeatherForecast`:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetDefault)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetSerializeDefault)]
 
 In this scenario, the `WindSpeed` property is not serialized even if the `weatherForecast` object is actually a `WeatherForecastWithWind` object. Only the base class properties are serialized:
 
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "Hot"
 }
 ```
@@ -497,7 +492,7 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25,
+  "TemperatureCelsius": 25,
   "Summary": "Hot",
   "WindSpeed": 35
 }
@@ -517,14 +512,14 @@ Here's example JSON with comments and a trailing comma:
 ```json
 {
   "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureC": 25, // Fahrenheit 77
+  "TemperatureCelsius": 25, // Fahrenheit 77
   "Summary": "Hot", /* Zharko */
 }
 ```
 
 ## Case-insensitive property matching
 
-By default, deserialization looks for case-sensitive property name matches between JSON and the target object properties. To change that behavior, set the <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive?displayProperty=nameWithType> to `true`:
+By default, deserialization looks for case-sensitive property name matches between JSON and the target object properties. To change that behavior, set <xref:System.Text.Json.JsonSerializerOptions.PropertyNameCaseInsensitive?displayProperty=nameWithType> to `true`:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DeserializeCaseInsensitive.cs?name=SnippetDeserialize)]
 
@@ -574,7 +569,7 @@ When you deserialize the JSON shown earlier into this sample type, the extra dat
 |Property |Value  |Notes  |
 |---------|---------|---------|
 | Date    | 8/1/2019 12:00:00 AM -07:00||
-| TemperatureC| 0 | Case-sensitive mismatch (`temperatureCelsius` in the JSON), so the property isn't set. |
+| TemperatureCelsius| 0 | Case-sensitive mismatch (`temperatureCelsius` in the JSON), so the property isn't set. |
 | Summary | Hot ||
 | ExtensionData | temperatureCelsius: 25 |Since the case didn't match, this JSON property is an extra and becomes a key-value pair in the dictionary.|
 || DatesAvailable:<br>  8/1/2019 12:00:00 AM -07:00<br>8/2/2019 12:00:00 AM -07:00 |Extra property from the JSON becomes a key-value pair, with an array as the value object.|
@@ -628,7 +623,7 @@ To change this behavior, set <xref:System.Text.Json.JsonSerializerOptions.Ignore
 
 With this option, the `Summary` property of the `WeatherForecastWithDefault` object is the default value "No summary" after deserialization.
 
-Null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions. For more information, see the [issue on non-nullable value types](https://github.com/dotnet/corefx/issues/40922) in the dotnet/corefx repository on GitHub.
+Null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions. For more information, see [issue 40922 on non-nullable value types](https://github.com/dotnet/corefx/issues/40922) in the dotnet/corefx repository on GitHub.
 
 ## Utf8JsonReader, Utf8JsonWriter, and JsonDocument
 
@@ -642,7 +637,7 @@ The following sections show how to use these tools for reading and writing JSON.
 
 ## Use JsonDocument for access to data
 
-The following example shows how to use the <xref:System.Text.Json.JsonDocument> class for random access to data:
+The following example shows how to use the <xref:System.Text.Json.JsonDocument> class for random access to data in a JSON string:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/JsonDocumentDataAccess.cs?name=SnippetAverageGrades1)]
 

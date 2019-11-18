@@ -65,11 +65,29 @@
   - name: Developing Libraries with Cross Platform Tools
     href: tutorials/libraries.md
   - name: Create a .NET Core application with plugins
-    href: tutorials/creating-app-with-plugin-support.md      
+    href: tutorials/creating-app-with-plugin-support.md
   - name: Developing ASP.NET Core applications
     href: tutorials/aspnet-core.md
   - name: Hosting .NET Core from native code
     href: tutorials/netcore-hosting.md
+- name: Run-time configuration
+  items:
+  - name: Settings
+    href: run-time-config/index.md
+  - name: Compilation settings
+    href: run-time-config/compilation.md
+  - name: Debugging settings
+    href: run-time-config/debugging.md
+  - name: Garbage collector settings
+    href: run-time-config/garbage-collector.md
+  - name: Globalization settings
+    href: run-time-config/globalization.md
+  - name: Networking settings
+    href: run-time-config/networking.md
+  - name: Profiling settings
+    href: run-time-config/profiling.md
+  - name: Threading settings
+    href: run-time-config/threading.md
 - name: Native Interoperability
   items:
   - name: Exposing .NET Core Components to COM

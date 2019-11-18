@@ -2126,4 +2126,4 @@ The Portable Class Library project in Visual Studio 2012 (and later versions) en
 - [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)
 - [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017)
 - [ASP.NET](/aspnet)
-- [What’s New in Visual C++](/cpp/what-s-new-for-visual-cpp-in-visual-studio)
+- [What's New for C++ in Visual Studio](/cpp/what-s-new-for-visual-cpp-in-visual-studio)

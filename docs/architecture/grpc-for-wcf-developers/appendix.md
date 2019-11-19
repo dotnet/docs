@@ -8,7 +8,7 @@ ms.date: 09/02/2019
 
 Windows Communication Foundation (WCF) supports distributed transactions, allowing you to perform atomic operations across multiple services. This functionality is based on the [Microsoft Distributed Transaction Coordinator](https://docs.microsoft.com/previous-versions/windows/desktop/ms684146(v=vs.85)).
 
-In the newer, microservices landscape, this type of automated distributed transaction processing isn't possible. There are too many different technologies involved, including relational databases, NoSQL data stores, and messaging systems. There might also be a mix of operating systems, programming languages, and frameworks in use in a single environment.
+In the newer microservices landscape, this type of automated distributed transaction processing isn't possible. There are too many different technologies involved, including relational databases, NoSQL data stores, and messaging systems. There might also be a mix of operating systems, programming languages, and frameworks in use in a single environment.
 
 WCF distributed transaction is an implementation of what is known as a [two-phase commit (2PC)](https://en.wikipedia.org/wiki/Two-phase_commit_protocol). You can implement 2PC transactions manually by coordinating messages across services, creating open transactions within each service, and sending commit or rollback messages, depending upon success or failure. However, the complexity involved in managing 2PC can increase exponentially as systems evolve. Open transactions hold database locks that can negatively affect performance, or, worse, cause cross-service deadlocks.
 

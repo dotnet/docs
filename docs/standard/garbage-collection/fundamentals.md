@@ -171,7 +171,7 @@ The garbage collector is self-tuning and can work in a wide variety of scenarios
 
 - Workstation garbage collection (GC) is designed for client apps. It is the default GC flavor for standalone apps. For hosted apps, for example, those hosted by ASP.NET, the host determines the default GC flavor.
 
-  Workstation garbage collection can be concurrent or non-concurrent. Concurrent garbage collection enables managed threads to continue operations during a garbage collection. [Background garbage collection](#background-garbage-collection) replaces [concurrent garbage collection](#concurrent-garbage-collection) in .NET Framework 4 and later versions.
+  Workstation garbage collection can be concurrent or non-concurrent. Concurrent garbage collection enables managed threads to continue operations during a garbage collection. [Background garbage collection](#background-workstation-garbage-collection) replaces [concurrent garbage collection](#concurrent-garbage-collection) in .NET Framework 4 and later versions.
 
 - Server garbage collection, which is intended for server applications that need high throughput and scalability.
 
@@ -246,7 +246,7 @@ The following illustration shows background garbage collection performed on a se
 > - .NET Framework 3.5 and earlier for workstation garbage collection
 > - .NET Framework 4 and earlier for server garbage collection
 >
-> Concurrent garbage is replaced by [background garbage collection](#background-garbage-collection) in later versions.
+> Concurrent garbage is replaced by [background garbage collection](#background-workstation-garbage-collection) in later versions.
 
 In workstation or server garbage collection, you can enable concurrent garbage collection, which enables threads to run concurrently with a dedicated thread that performs the garbage collection for most of the duration of the collection. This option affects only garbage collections in generation 2; generations 0 and 1 are always non-concurrent because they finish very fast.
 

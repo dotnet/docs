@@ -10,7 +10,7 @@ As the name implies, channel credentials are attached to the underlying gRPC cha
 
 You can combine channel credentials with call credentials to provide comprehensive security for a gRPC service. The channel credentials prove that the client application is allowed to access the service, and the call credentials provide information about the person who is using the client application.
 
-Client certificate authentication works for gRPC the same way it works for ASP.NET Core. For more information, see [Configure certificate authentication in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/authentication/certauth?view=aspnetcore-3.0).
+Client certificate authentication works for gRPC the same way it works for ASP.NET Core. For more information, see [Configure certificate authentication in ASP.NET Core](/aspnet/core/security/authentication/certauth).
 
 For development purposes you can use a self-signed certificate, but for production you should use a proper HTTPS certificate signed by a trusted authority.
 

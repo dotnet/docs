@@ -42,7 +42,7 @@ public class StockData : Stocks.StocksBase
 
 Many log messages, such as requests and exceptions, are provided by the ASP.NET Core and gRPC framework components. Add your own log messages to provide detail and context about application logic, rather than lower-level concerns.
 
-For more information about writing log messages and available logging sinks and targets, see  [Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/logging/?view=aspnetcore-3.0).
+For more information about writing log messages and available logging sinks and targets, see  [Logging in .NET Core and ASP.NET Core](/aspnet/core/fundamentals/logging/).
 
 ## Metrics in ASP.NET Core gRPC
 

@@ -13,11 +13,11 @@ On this page, settings are arranged into groups of settings that you can use in 
 > [!NOTE]
 >
 > - These settings can also be changed dynamically by the app as it's running, so any run-time settings you set may be overridden.
-> - Some settings, such as [latency level](../../standard/garbage-collection/latency.md)), are typically set only through the API at design time. Such settings are omitted from this page.
+> - Some settings, such as [latency level](../../standard/garbage-collection/latency.md), are typically set only through the API at design time. Such settings are omitted from this page.
 
 ## Flavors of garbage collection
 
-The main two flavors of garbage collection are workstation and server. For more information about differences between the two, see [Fundamentals of garbage collection](../../standard/garbage-collection/fundamentals.md#workstation-and-server-garbage-collection). The sub-flavors of garbage collection are background and non-concurrent. Use the settings described in this section to select these flavors of garbage collection.
+The main two flavors of garbage collection are workstation and server. For more information about differences between the two, see [Fundamentals of garbage collection](../../standard/garbage-collection/fundamentals.md#workstation-and-server-garbage-collection). The subflavors of garbage collection are background and non-concurrent. Use the settings described in this section to select these flavors of garbage collection.
 
 ### System.GC.Server/COMPlus_gcServer
 

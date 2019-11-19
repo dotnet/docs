@@ -188,7 +188,7 @@ The following are threading and performance considerations for workstation garba
 
   Threads that are running native code are not suspended.
 
-- Workstation garbage collection is always used on a computer that has only one processor, regardless of the [gcServer](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) setting in .NET Framework apps or the `System.GC.Server` setting in .NET Core apps. If you specify server garbage collection on such a computer, the CLR uses workstation garbage collection with concurrency disabled.
+- Workstation garbage collection is always used on a computer that has only one processor, regardless of the [gcServer](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) setting in .NET Framework apps or the `System.GC.Server` setting in .NET Core apps.
 
 The following are threading and performance considerations for server garbage collection:
 
@@ -200,13 +200,13 @@ The following are threading and performance considerations for server garbage co
 
 - Server garbage collection often has larger size segments. However, this is only a generalization: segment size is implementation-specific and is subject to change. Don't make assumptions about the size of segments allocated by the garbage collector when tuning your app.
 
-- Server garbage collection can be resource-intensive. For example, if you have 12 processes running on a computer that has 4 processors, there will be 48 dedicated garbage collection threads if they are all using server garbage collection. In a high memory-load situation, if all the processes start doing garbage collection, the garbage collector has 48 threads to schedule.
+- Server garbage collection can be resource intensive. For example, imagine that there are 12 processes that use server GC running on a computer that has 4 processors. If all the processes happen to collect garbage at the same time, they would interfere with each other, as there would be 12 threads scheduled on the same processor. If the processes are active, it's not a good idea to have them all use server GC.
 
 If you're running hundreds of instances of an application, consider using workstation garbage collection with concurrent garbage collection disabled. This will result in less context switching, which can improve performance.
 
-## Background garbage collection
+## Background workstation garbage collection
 
-In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. Background *workstation* garbage collection is performed on a dedicated thread and applies only to generation 2 collections.
+In background workstation garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. Background workstation garbage collection is performed on a dedicated thread and applies only to generation 2 collections.
 
 Background garbage collection is enabled by default and can be enabled or disabled with the [gcConcurrent](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration setting in .NET Framework applications.
 

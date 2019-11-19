@@ -66,6 +66,6 @@ Note in the previous figure how front-end traffic (both browser and mobile) is i
 
 Looking ahead, gRPC could well play a major role in dethroning the dominance of REST for cloud-native systems. The performance benefits and ease of development are too good to pass up. However, make no mistake, REST will still be around for a long time. It still excels for publicly exposed APIs and for backward compatibility reasons.
 
->[!div class="step-by-step"]
+>[!div class="step-by-step"] 
 >[Previous](service-to-service-communication.md)
 >[Next](service-mesh-communication-infrastructure.md)

@@ -33,7 +33,7 @@ The Resource File Generator (Resgen.exe) converts text (.txt or .restext) files 
   
  If Resgen.exe fails for any reason, the return value is –1.  
   
- To get help with Resgen,exe, you can use the following command, with no options specified, to display the command syntax and options for Resgen.exe:  
+ To get help with Resgen.exe, you can use the following command, with no options specified, to display the command syntax and options for Resgen.exe:  
   
 ```console  
 resgen  
@@ -45,7 +45,7 @@ resgen
 resgen /?  
 ```  
   
- If you use Resgen,exe to generate binary .resources files, you can use a language compiler to embed the binary files into executable assemblies, or you can use the [Assembly Linker (Al.exe)](al-exe-assembly-linker.md) to compile them into satellite assemblies.  
+ If you use Resgen.exe to generate binary .resources files, you can use a language compiler to embed the binary files into executable assemblies, or you can use the [Assembly Linker (Al.exe)](al-exe-assembly-linker.md) to compile them into satellite assemblies.  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
@@ -307,7 +307,7 @@ resgen inputFilename [outputFilename] /str:language[,namespace,[classname[,filen
   
  The strongly typed resource class has the following members:  
   
-- A parameterless constructor, which can be used to instantiate the strongly typed resource class..  
+- A parameterless constructor, which can be used to instantiate the strongly typed resource class.  
   
 - A `static` (C#) or `Shared` (Visual Basic) and read-only `ResourceManager` property, which returns the <xref:System.Resources.ResourceManager> instance that manages the strongly typed resource.  
   

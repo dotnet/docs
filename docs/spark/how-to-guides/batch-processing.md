@@ -18,7 +18,7 @@ Batch processing is the transformation of data at rest, meaning that the source 
 
 The following steps demonstrate batch processing of GitHub projects data. 
 
-[GHTorrent](http://ghtorrent.org/) monitors all public GitHub events, such as info about projects, commits, and watchers, and stores the events and their structure in databases. Data collected over different time periods is available as downloadable archives. Because the dump files are very large, this guide uses a [truncated version of the dump file]() that can be downloaded from GitHub.
+[GHTorrent](http://ghtorrent.org/) monitors all public GitHub events, such as info about projects, commits, and watchers, and stores the events and their structure in databases. Data collected over different time periods is available as downloadable archives. Because the dump files are very large, this guide uses a [truncated version of the dump file](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Batch/projects_smaller.csv) that can be downloaded from GitHub.
 
 ### Problem
 
@@ -28,7 +28,7 @@ The goal is to analyze information about GitHub projects. First, the data is pre
 
 The following steps walk you through how to process the GitHub projects data. You can see the [full solution](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/Sql/Batch/GitHubProjects.cs) on GitHub.
 
-1. Create a new .NET console app and add the Microsft.Spark NuGet package. Then, add the following using statements to your code.
+1. Create a new .NET console app and add the `Microsft.Spark` NuGet package. Then, add the following using statements to your code.
 
    ```csharp
    using System;
@@ -46,8 +46,7 @@ The following steps walk you through how to process the GitHub projects data. Yo
    {
        if (args.Length != 1)
        {
-            Console.Error.WriteLine(
-            "Usage: GitHubProjects <path to projects.csv>");
+            Console.Error.WriteLine("Usage: GitHubProjects <path to projects.csv>");
             Environment.Exit(1);
         }
     }
@@ -57,12 +56,12 @@ The following steps walk you through how to process the GitHub projects data. Yo
 
    ```csharp
    SparkSession spark = SparkSession
-                .Builder()
-                .AppName("GitHub and Spark Batch")
-                .GetOrCreate();
+        .Builder()
+        .AppName("GitHub and Spark Batch")
+        .GetOrCreate();
    ```
 
-1. Read the input file into a DataFrame, which is a distributed collection of data organized into named columns.
+1. Read the input file into a DataFrame, which is a distributed collection of data organized into named columns. You can set the columns for your data through `.Schema()`. Use `.Show()` to display the data in your DataFrame.
 
    ```csharp
    DataFrame projectsDf = spark
@@ -81,13 +80,14 @@ The following steps walk you through how to process the GitHub projects data. Yo
    ```csharp
    // Drop any rows with NA values
    DataFrameNaFunctions dropEmptyProjects = projectsDf.Na();
-   DataFrame cleanedProjects = dropEmptyProjects.Drop("any");   
+   DataFrame cleanedProjects = dropEmptyProjects.Drop("any");
+
    // Remove unnecessary columns
    cleanedProjects = cleanedProjects.Drop("id", "url", "owner_id");
    cleanedProjects.Show();
    ```
 
-1. Spark SQL allows you to make SQL calls on your data. It's common to combine user-defined functions and Spark SQL so to apply a user-defined function to all rows of your DataFrame.
+1. Spark SQL allows you to make SQL calls on your data. It's common to combine user-defined functions and Spark SQL to apply a user-defined function to all rows of your DataFrame.
 
    You can specifically call `spark.Sql` to mimic standard SQL calls seen in other types of apps. You can also call methods like `GroupBy` and `Agg` to specifically combine, filter, and perform calculations on your data.
 
@@ -95,30 +95,35 @@ The following steps walk you through how to process the GitHub projects data. Yo
    // Average number of times each language has been forked
    DataFrame groupedDF = cleanedProjects
        .GroupBy("language")
-       .Agg(Avg(cleanedProjects["forked_from"])   
+       .Agg(Avg(cleanedProjects["forked_from"]) 
+
    // Sort by most forked languages first
-   groupedDF.OrderBy(Desc("avg(forked_from)")).Show(   
+   groupedDF.OrderBy(Desc("avg(forked_from)")).Show(); 
+
    spark.Udf().Register<string, bool>(
        "MyUDF",
-       (date) => DateTime.TryParse(date, out DateTi   convertedDate) &&
-           (convertedDate > s_referenceDate)   
-   cleanedProjects.CreateOrReplaceTempView("dateView"   
+       (date) => DateTime.TryParse(date, out DateTime   convertedDate) &&
+           (convertedDate > s_referenceDate);   
+   cleanedProjects.CreateOrReplaceTempView("dateView"); 
+
    DataFrame dateDf = spark.Sql(
-       "SELECT *, MyUDF(dateView.updated_at) AS datebefo   FROM dateView");
+       "SELECT *, MyUDF(dateView.updated_at) AS datebefore FROM dateView");
    dateDf.Show();
    ```
 
 1. Call `spark.Stop()` to end the SparkSession.
 
-1. Use `spark-submit` to run your app.
+1. Use `spark-submit` to run your app. Be sure to update the following command with the actual paths to your Microsoft Spark jar file and **projects_smaller.csv**.
+
 
    ```console
-   spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local C:\GitHub\spark\src\scala\microsoft-spark-2.4.x\target\microsoft-spark-2.4.x-0.5.0.jar Microsoft.Spark.CSharp.Examples.exe Batch.GitHubProjects %SPARK_HOME%\examples\src\main\resources\projects_smaller.csv
+   spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /<path>/to/microsoft-spark-<version>.jar Microsoft.Spark.CSharp.Examples.exe Sql.Batch.GitHubProjects /<path>/projects_smaller.csv
    ```
 
 ## Next steps
 
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)
+* [.NET for Apache Spark 101 video series](https://channel9.msdn.com/Series/NET-for-Apache-Spark-101)
 * [Deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md)
 * [Deploy a .NET for Apache Spark application to Databricks](../tutorials/databricks-deployment.md)
 * [Deploy a .NET for Apache Spark application to Amazon EMR Spark](../tutorials/amazon-emr-spark-deployment.md)

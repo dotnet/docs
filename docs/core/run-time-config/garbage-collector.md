@@ -65,6 +65,7 @@ For more information about some of these settings, see the [Middle ground betwee
 ### System.GC.HeapHardLimit/COMPlus_GCHeapHardLimit
 
 - Specifies the maximum commit size for the GC heap.
+- The value can range from 0 to 18446744073709551615.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -74,21 +75,22 @@ For more information about some of these settings, see the [Middle ground betwee
 ### System.GC.HeapHardLimitPercent/COMPlus_GCHeapHardLimitPercent
 
 - Specifies the GC heap usage as a percentage of the total memory.
+- Example value: 25
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimitPercent` |  | .NET Core 3.0 |
-| **Environment variable** | `COMPlus_GCHeapHardLimitPercent` |  | .NET Core 3.0 |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitPercent` | *percentage* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitPercent` | *percentage* | .NET Core 3.0 |
 
 ### System.GC.RetainVM/COMPlus_GCRetainVM
 
 - Configures whether segments that should be deleted are put on a standby list for future use or are released back to the operating system (OS).
-- By default, segments are released back to the operating system.
+- Default: Release segments back to the operating system (`false`).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.RetainVM` | `true` - put on standby<br/>`false` - release to OS | .NET Core 1.0 |
-| **Environment variable** | `COMPlus_GCRetainVM` | 0<br/>1 | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCRetainVM` | 0 - release to OS<br/>1 - put on standby | .NET Core 1.0 |
 
 ### System.GC.HeapAffinitizeMask/COMPlus_GCHeapAffinitizeMask
 
@@ -138,25 +140,26 @@ For more information about some of these settings, see the [Middle ground betwee
 
 - Specifies whether to affinitize garbage collection threads with processors. That is, whether to create a dedicated heap, GC thread, and background GC thread (if background garbage collection is enabled) for each processor.
 - Applies to server garbage collection (GC) only.
-- By default, garbage collection threads are affinitized with processors (value = `false`).
+- Default: Affinitize garbage collection threads with processors (`false`).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.NoAffinitize` | `true` - don't affinitize<br/>`false` - affinitize | .NET Core 3.0 |
-| **Environment variable** | `COMPlus_GCNoAffinitize` | 0<br/>1 | .NET Core 3.0 |
-| **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) |  |  |
+| **Environment variable** | `COMPlus_GCNoAffinitize` | 0 - affinitize<br/>1 - don't affinitize | .NET Core 3.0 |
+| **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | `true` - don't affinitize<br/>`false` - affinitize |  |
 
 ## Large pages
 
 ### COMPlus_GCLargePages
 
 - Specifies whether large pages should be used when a heap hard limit is set.
+- Default: Disabled (0).
 - This is an experimental setting.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
-| **Environment variable** | `COMPlus_GCLargePages` |  | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCLargePages` | 0 - disabled<br/>1 - enabled | .NET Core 1.0 |
 | **app.config for .NET Framework** | N/A | N/A | N/A |
 
 ## Large objects
@@ -176,12 +179,12 @@ For more information about some of these settings, see the [Middle ground betwee
 
 ### System.GC.LOHThreshold/COMPlus_GCLOHThreshold
 
-- Specifies the threshold size that causes objects to go on the large object heap (LOH).
+- Specifies the threshold size, in bytes, that causes objects to go on the large object heap (LOH).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.LOHThreshold` |  | .NET Core 1.0 |
-| **Environment variable** | `COMPlus_GCLOHThreshold` |  | .NET Core 1.0 |
+| **runtimeconfig.json** | `System.GC.LOHThreshold` | *size in bytes* | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCLOHThreshold` | *size in bytes* | .NET Core 1.0 |
 
 ## Standalone GC
 

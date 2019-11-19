@@ -1,5 +1,5 @@
 ---
-title: "The large object heap on Windows systems"
+title: LOH on Windows
 ms.date: "05/02/2018"
 helpviewer_keywords:
   - large object heap (LOH)"
@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "garbage collection, large object heap"
   - "GC [.NET ], large object heap"
 ---
-
 # The large object heap on Windows systems
 
 The .NET Garbage Collector (GC) divides objects up into small and large objects. When an object is large, some of its attributes become more significant than if the object is small. For instance, compacting it -- that is, copying it in memory elsewhere on the heap -- can be expensive. Because of this, the .NET Garbage Collector places large objects on the large object heap (LOH). In this topic, we'll look at the large object heap in depth. We'll discuss what qualifies an object as a large object, how these large objects are collected, and what kind of performance implications large objects impose.
@@ -17,7 +16,7 @@ The .NET Garbage Collector (GC) divides objects up into small and large objects.
 
 ## How an object ends up on the large object heap and how GC handles them
 
-If an object is greater than or equal to 85,000 bytes, it’s considered a large object. This number was determined by performance tuning. When an object allocation request is for 85,000 or more bytes, the runtime allocates it on the large object heap.
+If an object is greater than or equal to 85,000 bytes in size, it’s considered a large object. This number was determined by performance tuning. When an object allocation request is for 85,000 or more bytes, the runtime allocates it on the large object heap.
 
 To understand what this means, it's useful to examine some fundamentals about the .NET GC.
 
@@ -149,7 +148,7 @@ These performance counters are usually a good first step in investigating perfor
 
 A common way to look at performance counters is with Performance Monitor (perfmon.exe). Use “Add Counters” to add the interesting counter for processes that you care about. You can save the performance counter data to a log file, as Figure 4 shows:
 
-![Screenshow that shows adding performance counters.](media/large-object-heap/add-performance-counter.png)
+![Screenshot that shows adding performance counters.](media/large-object-heap/add-performance-counter.png)
 Figure 4: The LOH after a generation 2 GC
 
 Performance counters can also be queried programmatically. Many people collect them this way as part of their routine testing process. When they spot counters with values that are out of the ordinary, they use other means to get more detailed data to help with the investigation.
@@ -301,7 +300,7 @@ To verify whether the LOH is causing VM fragmentation, you can set a breakpoint 
 bp kernel32!virtualalloc "j (dwo(@esp+8)>800000) 'kb';'g'"
 ```
 
-This command breaks into the debugger and shows the callstack only if [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) is called with an allocation size greater than 8MB (0x800000).
+This command breaks into the debugger and shows the call stack only if [VirtualAlloc](/windows/desktop/api/memoryapi/nf-memoryapi-virtualalloc) is called with an allocation size greater than 8MB (0x800000).
 
 CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarios where segments (including on the large and small object heaps) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called `STARTUP_HOARD_GC_VM` via the hosting API. Instead of releasing empty segments back to the OS, the CLR decommits the memory on these segments and puts them on a standby list. (Note that the CLR doesn't do this for segments that are too large.) The CLR later uses those segments to satisfy new segment requests. The next time that your app needs a new segment, the CLR uses one from this standby list if it can find one that’s big enough.
 

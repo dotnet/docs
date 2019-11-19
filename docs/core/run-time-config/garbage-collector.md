@@ -8,7 +8,7 @@ ms.topic: reference
 
 This page contains information about garbage collector (GC) settings that can be changed at run time. If you're trying to achieve peak performance of a running app, consider using these settings. However, the defaults provide optimum performance for most applications in typical situations.
 
-On this page, settings are arranged into groups of settings that you can use in conjunction with each other to achieve a specific result.
+Settings are arranged into groups on this page. The settings within each group are commonly used in conjunction with each other to achieve a specific result.
 
 > [!NOTE]
 >
@@ -31,9 +31,9 @@ Use the following settings to select flavors of garbage collection:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.Server` | `true` - server<br/>`false` - workstation | .NET Core 1.0 |
+| **runtimeconfig.json** | `System.GC.Server` | `false` - workstation<br/>`true` - server | .NET Core 1.0 |
 | **Environment variable** | `COMPlus_gcServer` | 0 - workstation<br/>1 - server | .NET Core 1.0 |
-| **app.config for .NET Framework** | [GCServer](../../framework/configure-apps/file-schema/runtime/gcserver-element.md) | `true` - server<br/>`false` - workstation |  |
+| **app.config for .NET Framework** | [GCServer](../../framework/configure-apps/file-schema/runtime/gcserver-element.md) | `false` - workstation<br/>`true` - server |  |
 
 ### System.GC.Concurrent/COMPlus_gcConcurrent
 
@@ -109,7 +109,7 @@ For more information about some of these settings, see the [Middle ground betwee
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
 | **Environment variable** | `COMPlus_GCCpuGroup` | 0 - disabled<br/>1 - enabled | .NET Core 1.0 |
-| **app.config for .NET Framework** | [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md) | `true` - enabled<br/>`false` - disabled |  |
+| **app.config for .NET Framework** | [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md) | `false` - disabled<br/>`true` - enabled |  |
 
 ### System.GC.NoAffinitize/COMPlus_GCNoAffinitize
 
@@ -119,9 +119,9 @@ For more information about some of these settings, see the [Middle ground betwee
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.NoAffinitize` | `true` - don't affinitize<br/>`false` - affinitize | .NET Core 3.0 |
+| **runtimeconfig.json** | `System.GC.NoAffinitize` | `false` - affinitize<br/>`true` - don't affinitize | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCNoAffinitize` | 0 - affinitize<br/>1 - don't affinitize | .NET Core 3.0 |
-| **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | `true` - don't affinitize<br/>`false` - affinitize | 4.6.2 |
+| **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | `false` - affinitize<br/>`true` - don't affinitize | 4.6.2 |
 
 ### System.GC.HeapHardLimit/COMPlus_GCHeapHardLimit
 
@@ -130,8 +130,8 @@ For more information about some of these settings, see the [Middle ground betwee
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimit` | *number* | .NET Core 3.0 |
-| **Environment variable** | `COMPlus_GCHeapHardLimit` | *number* | .NET Core 3.0 |
+| **runtimeconfig.json** | `System.GC.HeapHardLimit` | *decimal value* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapHardLimit` | *decimal value* | .NET Core 3.0 |
 
 ### System.GC.HeapHardLimitPercent/COMPlus_GCHeapHardLimitPercent
 

@@ -47,6 +47,7 @@ Here is an example file:
          "System.GC.RetainVM": true,
          "System.Threading.ThreadPool.MinThreads": "4",
          "System.Threading.ThreadPool.MaxThreads": "25"
+      }
    }
 }
 ```

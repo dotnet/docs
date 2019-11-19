@@ -6,7 +6,7 @@ ms.topic: reference
 ---
 # Run-time configuration options for garbage collection
 
-This page contains information about garbage collector (GC) settings that can be changed at run time. If you're trying to achieve peak performance of a running app, consider using these settings. However, most users will not need to concern themselves with these settings.
+This page contains information about garbage collector (GC) settings that can be changed at run time. If you're trying to achieve peak performance of a running app, consider using these settings. However, the defaults provide optimum performance for most applications in typical situations.
 
 On this page, settings are arranged into groups of settings that you can use in conjunction with each other to achieve a specific result.
 
@@ -21,7 +21,7 @@ The two main flavors of garbage collection are workstation GC and server GC. For
 
 The subflavors of garbage collection are background and non-concurrent.
 
-Use the settings described in this section to select flavors of garbage collection.
+Use the following settings to select flavors of garbage collection:
 
 ### System.GC.Server/COMPlus_gcServer
 
@@ -87,7 +87,7 @@ For more information about some of these settings, see the [Middle ground betwee
 - For Windows operating systems, prefix the processor number or range with the corresponding [CPU group](/windows/win32/procthread/processor-groups), for example, "0:1-10,0:12,1:50-52,1:70".
 - If processor affinity is disabled by setting `System.GC.NoAffinitize` to `true`, this setting is ignored.
 - Applies to server garbage collection (GC) only.
-- For more information, see [Maoni Stephens' blog entry](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/).
+- For more information, see [Making CPU configuration better for GC on machines with > 64 CPUs](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/) on Maoni Stephens' blog.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -126,7 +126,7 @@ For more information about some of these settings, see the [Middle ground betwee
 ### System.GC.HeapHardLimit/COMPlus_GCHeapHardLimit
 
 - Specifies the maximum commit size, in bytes, for the GC heap.
-- The value can range from 0 to 18446744073709551615.
+- The value can range from 0 to 18,446,744,073,709,551,615.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -150,7 +150,7 @@ For more information about some of these settings, see the [Middle ground betwee
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.RetainVM` | `true` - put on standby<br/>`false` - release to OS | .NET Core 1.0 |
+| **runtimeconfig.json** | `System.GC.RetainVM` | `false` - release to OS<br/>`true` - put on standby| .NET Core 1.0 |
 | **Environment variable** | `COMPlus_GCRetainVM` | 0 - release to OS<br/>1 - put on standby | .NET Core 1.0 |
 
 ## Large pages
@@ -178,7 +178,7 @@ For more information about some of these settings, see the [Middle ground betwee
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
-| **Environment variable** | `COMPlus_gcAllowVeryLargeObjects` | 0 - disabled<br/>1 - enabled | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_gcAllowVeryLargeObjects` | 1 - enabled<br/> 0 - disabled | .NET Core 1.0 |
 
 ## Large object heap threshold
 

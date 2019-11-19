@@ -1,5 +1,5 @@
 ---
-title: LOH on Windows
+title: LOH on Windows - .NET
 ms.date: "05/02/2018"
 helpviewer_keywords:
   - large object heap (LOH)"

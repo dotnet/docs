@@ -12,7 +12,7 @@ ms.date: 11/13/2019
 - Multiple instances of your application run at the same time on a single system, and you want to configure each for optimum performance.
 
 > [!NOTE]
-> This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to address the issue. For information on submitting pull requests for the dotnet/docs repo, see the [contributor's guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
+> This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to address the issue. For information on submitting pull requests for the dotnet/docs repository, see the [contributor's guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
 
 .NET Core provides the following mechanisms for configuring applications at run time:
 
@@ -59,7 +59,7 @@ Some configuration values can also be set programmatically by calling the <xref:
 
 Environment variables can be used to to supply some run-time configuration information. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
 
-You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> on both Windows and Unix-based systems.
+You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 
 The following examples show how to set an environment variable at the command line:
 

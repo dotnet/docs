@@ -1,9 +1,9 @@
 ---
-title: "How to: Find a List of Child Elements (XPath-LINQ to XML) (C#)"
+title: "How to find a list of child elements (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 7c589dd8-f680-4cdb-9d6a-78d57e2555e8
 ---
-# How to: Find a List of Child Elements (XPath-LINQ to XML) (C#)
+# How to find a list of child elements (XPath-LINQ to XML) (C#)
 This topic compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.  
   
  The XPath expression is: `./*`  

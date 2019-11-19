@@ -158,7 +158,7 @@
       href: delegates-strongly-typed.md
     - name: Common Patterns for Delegates
       href: delegates-patterns.md
-    - name: Introduction to Events
+    - name: Introduction to events
       href: events-overview.md
     - name: Standard .NET event patterns
       href: event-pattern.md
@@ -373,7 +373,7 @@
         href: programming-guide/concepts/attributes/attributeusage.md
       - name: Accessing Attributes by Using Reflection
         href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
-      - name: "How to: Create a C-C++ Union by Using Attributes"
+      - name: "How to create a C/C++ union by using attributes"
         href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
       - name: Common Attributes
         href: programming-guide/concepts/attributes/common-attributes.md
@@ -481,13 +481,13 @@
           href: programming-guide/concepts/linq/linq-and-strings.md
         - name: How to articles
           items:
-          - name: "How to: Count Occurrences of a Word in a String (LINQ)"
+          - name: "How to count occurrences of a word in a string (LINQ)"
             href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
           - name: "How to: Query for Sentences that Contain a Specified Set of Words (LINQ)"
             href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
           - name: "How to: Query for Characters in a String (LINQ)"
             href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
-          - name: "How to: Combine LINQ Queries with Regular Expressions"
+          - name: "How to combine LINQ queries with regular expressions"
             href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
           - name: "How to: Find the Set Difference Between Two Lists (LINQ)"
             href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
@@ -495,7 +495,7 @@
             href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
           - name: "How to: Reorder the Fields of a Delimited File (LINQ)"
             href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
-          - name: "How to: Combine and Compare String Collections (LINQ)"
+          - name: "How to combine and compare string collections (LINQ)"
             href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
           - name: "How to: Populate Object Collections from Multiple Sources (LINQ)"
             href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
@@ -503,7 +503,7 @@
             href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
           - name: "How to: Join Content from Dissimilar Files (LINQ)"
             href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
-          - name: "How to: Compute Column Values in a CSV Text File (LINQ)"
+          - name: "How to compute column values in a CSV text file (LINQ)"
             href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
         - name: LINQ and Reflection
           href: programming-guide/concepts/linq/linq-and-reflection.md
@@ -519,7 +519,7 @@
             href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
           - name: "How to: Query for the Total Number of Bytes in a Set of Folders (LINQ)"
             href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
-          - name: "How to: Compare the Contents of Two Folders (LINQ)"
+          - name: "How to compare the contents of two folders (LINQ)"
             href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
           - name: "How to: Query for the Largest File or Files in a Directory Tree (LINQ)"
             href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
@@ -529,7 +529,7 @@
             href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
         - name: "How to: Query an ArrayList with LINQ"
           href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
-        - name: "How to: Add Custom Methods for LINQ Queries"
+        - name: "How to add custom methods for LINQ queries"
           href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
       - name: LINQ to XML
         items:
@@ -555,7 +555,7 @@
               href: programming-guide/concepts/linq/xattribute-class-overview.md
             - name: XDocument Class Overview
               href: programming-guide/concepts/linq/xdocument-class-overview.md
-            - name: "How to: Build LINQ to XML Examples"
+            - name: "How to build LINQ to XML examples"
               href: programming-guide/concepts/linq/how-to-build-linq-to-xml-examples.md
           - name: XML Trees
             items:
@@ -571,9 +571,9 @@
                 href: programming-guide/concepts/linq/how-to-load-xml-from-a-file.md
               - name: Preserving White Space while Loading or Parsing XML
                 href: programming-guide/concepts/linq/preserving-white-space-while-loading-or-parsing-xml1.md
-              - name: "How to: Catch Parsing Errors"
+              - name: "How to catch parsing errors"
                 href: programming-guide/concepts/linq/how-to-catch-parsing-errors.md
-              - name: "How to: Create a Tree from an XmlReader"
+              - name: "How to create a tree from an XmlReader"
                 href: programming-guide/concepts/linq/how-to-create-a-tree-from-an-xmlreader.md
               - name: "How to: Stream XML Fragments from an XmlReader"
                 href: programming-guide/concepts/linq/how-to-stream-xml-fragments-from-an-xmlreader.md
@@ -587,9 +587,9 @@
             items:
             - name: Namespaces Overview (LINQ to XML)
               href: programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md
-            - name: "How to: Create a Document with Namespaces (LINQ to XML)"
+            - name: "How to create a document with namespaces (LINQ to XML)"
               href: programming-guide/concepts/linq/how-to-create-a-document-with-namespaces-linq-to-xml.md
-            - name: "How to: Control Namespace Prefixes (LINQ to XML)"
+            - name: "How to control namespace prefixes (LINQ to XML)"
               href: programming-guide/concepts/linq/how-to-control-namespace-prefixes-linq-to-xml.md
             - name: Scope of Default Namespaces in C#
               href: programming-guide/concepts/linq/scope-of-default-namespaces.md
@@ -613,9 +613,9 @@
               href: programming-guide/concepts/linq/how-to-retrieve-a-collection-of-elements-linq-to-xml.md
             - name: "How to: Retrieve the Value of an Element (LINQ to XML)"
               href: programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-element-linq-to-xml.md
-            - name: "How to: Filter on Element Names (LINQ to XML)"
+            - name: "How to filter on element names (LINQ to XML)"
               href: programming-guide/concepts/linq/how-to-filter-on-element-names-linq-to-xml.md
-            - name: "How to: Chain Axis Method Calls (LINQ to XML)"
+            - name: "How to chain axis method calls (LINQ to XML)"
               href: programming-guide/concepts/linq/how-to-chain-axis-method-calls-linq-to-xml.md
             - name: "How to: Retrieve a Single Child Element (LINQ to XML)"
               href: programming-guide/concepts/linq/how-to-retrieve-a-single-child-element-linq-to-xml.md
@@ -631,31 +631,31 @@
             items:
             - name: Basic Queries (LINQ to XML)
               items:
-              - name: "How to: Find an Element with a Specific Attribute"
+              - name: "How to find an element with a specific attribute"
                 href: programming-guide/concepts/linq/how-to-find-an-element-with-a-specific-attribute.md
-              - name: "How to: Find an Element with a Specific Child Element"
+              - name: "How to find an element with a specific child element"
                 href: programming-guide/concepts/linq/how-to-find-an-element-with-a-specific-child-element.md
               - name: Querying an XDocument vs. Querying an XElement
                 href: programming-guide/concepts/linq/querying-an-xdocument-vs-querying-an-xelement.md
-              - name: "How to: Find Descendants with a Specific Element Name"
+              - name: "How to find descendants with a specific element same"
                 href: programming-guide/concepts/linq/how-to-find-descendants-with-a-specific-element-name.md
-              - name: "How to: Find a Single Descendant Using the Descendants Method"
+              - name: "How to find a single descendant using the descendants method"
                 href: programming-guide/concepts/linq/how-to-find-a-single-descendant-using-the-descendants-method.md
               - name: "How to: Write Queries with Complex Filtering"
                 href: programming-guide/concepts/linq/how-to-write-queries-with-complex-filtering.md
-              - name: "How to: Filter on an Optional Element"
+              - name: "How to filter on an optional element"
                 href: programming-guide/concepts/linq/how-to-filter-on-an-optional-element.md
-              - name: "How to: Find All Nodes in a Namespace"
+              - name: "How to find all nodes in a namespace"
                 href: programming-guide/concepts/linq/how-to-find-all-nodes-in-a-namespace.md
               - name: "How to: Sort Elements"
                 href: programming-guide/concepts/linq/how-to-sort-elements.md
               - name: "How to: Sort Elements on Multiple Keys"
                 href: programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md
-              - name: "How to: Calculate Intermediate Values"
+              - name: "How to calculate intermediate values"
                 href: programming-guide/concepts/linq/how-to-calculate-intermediate-values.md
               - name: "How to: Write a Query that Finds Elements Based on Context"
                 href: programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md
-              - name: "How to: Debug Empty Query Results Sets"
+              - name: "How to debug empty query results sets"
                 href: programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md
             - name: Projections and Transformations (LINQ to XML)
               items:
@@ -663,7 +663,7 @@
                 href: programming-guide/concepts/linq/how-to-work-with-dictionaries-using-linq-to-xml.md
               - name: "How to: Transform the Shape of an XML Tree"
                 href: programming-guide/concepts/linq/how-to-transform-the-shape-of-an-xml-tree.md
-              - name: "How to: Control the Type of a Projection"
+              - name: "How to control the type of a projection"
                 href: programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md
               - name: "How to: Project a New Type (LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-project-a-new-type-linq-to-xml.md
@@ -679,7 +679,7 @@
               items:
               - name: "How to: Join Two Collections (LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-join-two-collections-linq-to-xml.md
-              - name: "How to: Create Hierarchy Using Grouping"
+              - name: "How to create hierarchy using grouping"
                 href: programming-guide/concepts/linq/how-to-create-hierarchy-using-grouping.md
               - name: "How to: Query LINQ to XML Using XPath"
                 href: programming-guide/concepts/linq/how-to-query-linq-to-xml-using-xpath.md
@@ -699,37 +699,37 @@
               items:
               - name: Comparison of XPath and LINQ to XML
                 href: programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml.md
-              - name: "How to: Find a Child Element (XPath-LINQ to XML)"
+              - name: "How to find a child element (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-a-child-element-xpath-linq-to-xml.md
-              - name: "How to: Find a List of Child Elements (XPath-LINQ to XML)"
+              - name: "How to find a list of child elements (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-a-list-of-child-elements-xpath-linq-to-xml.md
               - name: "How to: Find the Root Element (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-the-root-element-xpath-linq-to-xml.md
-              - name: "How to: Find Descendant Elements (XPath-LINQ to XML)"
+              - name: "How to find descendant elements (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-descendant-elements-xpath-linq-to-xml.md
-              - name: "How to: Filter on an Attribute (XPath-LINQ to XML)"
+              - name: "How to filter on an attribute (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-filter-on-an-attribute-xpath-linq-to-xml.md
-              - name: "How to: Find Related Elements (XPath-LINQ to XML)"
+              - name: "How to find related elements (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-related-elements-xpath-linq-to-xml.md
-              - name: "How to: Find Elements in a Namespace (XPath-LINQ to XML)"
+              - name: "How to find elements in a namespace (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-elements-in-a-namespace-xpath-linq-to-xml.md
-              - name: "How to: Find Preceding Siblings (XPath-LINQ to XML)"
+              - name: "How to find preceding siblings (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-preceding-siblings-xpath-linq-to-xml.md
-              - name: "How to: Find Descendants of a Child Element (XPath-LINQ to XML)"
+              - name: "How to find descendants of a child element (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-descendants-of-a-child-element-xpath-linq-to-xml.md
-              - name: "How to: Find a Union of Two Location Paths (XPath-LINQ to XML)"
+              - name: "How to find a union of two location paths (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-a-union-of-two-location-paths-xpath-linq-to-xml.md
-              - name: "How to: Find Sibling Nodes (XPath-LINQ to XML)"
+              - name: "How to find sibling nodes (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-sibling-nodes-xpath-linq-to-xml.md
-              - name: "How to: Find an Attribute of the Parent (XPath-LINQ to XML)"
+              - name: "How to find an attribute of the parent (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml.md
-              - name: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML)"
+              - name: "How to find attributes of siblings with a specific name (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-attributes-of-siblings-with-a-specific-name-xpath-linq-to-xml.md
-              - name: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML)"
+              - name: "How to find elements with a specific attribute (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-elements-with-a-specific-attribute-xpath-linq-to-xml.md
-              - name: "How to: Find Child Elements Based on Position (XPath-LINQ to XML)"
+              - name: "How to find child elements based on position (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-child-elements-based-on-position-xpath-linq-to-xml.md
-              - name: "How to: Find the Immediate Preceding Sibling (XPath-LINQ to XML)"
+              - name: "How to find the immediate preceding sibling (XPath-LINQ to XML)"
                 href: programming-guide/concepts/linq/how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md
             - name: Pure Functional Transformations of XML
               items:
@@ -809,7 +809,7 @@
               href: programming-guide/concepts/linq/removing-elements-attributes-and-nodes-from-an-xml-tree.md
             - name: Maintaining Name-Value Pairs
               href: programming-guide/concepts/linq/maintaining-name-value-pairs.md
-            - name: "How to: Change the Namespace for an Entire XML Tree"
+            - name: "How to change the namespace for an entire XML tree"
               href: programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md
           - name: Performance (LINQ to XML)
             items:

@@ -26,7 +26,7 @@ When a query is executing as parallel, PLINQ partitions the source sequence so t
   
 - `Not Buffered`  
   
-     The <xref:System.Linq.ParallelMergeOptions.NotBuffered> option causes each processed element to be returned from each thread as soon as it is produced. This behavior is analogous to "streaming" the output. If the <xref:System.Linq.ParallelEnumerable.AsOrdered%2A> operator is present in the query, `NotBuffered` preserves the order of the source elements. Although `NotBuffered` starts yielding results as soon as they're available,, the total time to produce all the results might still be longer than using one of the other merge options.  
+     The <xref:System.Linq.ParallelMergeOptions.NotBuffered> option causes each processed element to be returned from each thread as soon as it is produced. This behavior is analogous to "streaming" the output. If the <xref:System.Linq.ParallelEnumerable.AsOrdered%2A> operator is present in the query, `NotBuffered` preserves the order of the source elements. Although `NotBuffered` starts yielding results as soon as they're available, the total time to produce all the results might still be longer than using one of the other merge options.  
   
 - `Auto Buffered`  
   

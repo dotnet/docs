@@ -14,7 +14,7 @@ metadata:
 # linkListType: | concept | get-started | how-to-guide | overview  | reference | tutorial | video | whats-new
 
 landingContent:
-  - title: "Learn to program in C#" 
+  - title: "Learn to program in C#"
     linkLists:
       - linkListType: get-started
         links:
@@ -22,7 +22,7 @@ landingContent:
             url: tutorials/intro-to-csharp/hello-world.yml
           - text: "Math and numbers in C#"
             url: tutorials/intro-to-csharp/numbers-in-csharp.yml
-          - text: List all itnroductory tutotials
+          - text: Introductory tutorials
             url: tutorials/intro-to-csharp/index.md
       - linkListType: video
         links:
@@ -30,19 +30,36 @@ landingContent:
             url: https://channel9.msdn.com/Series/CSharp-101/What-is-C/player
           - text: "C# 101 video series"
             url: https://aka.ms/dotnet3-csharp
+
+  - title: "C# language fundamentals"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "A tour of C#"
+            url: tour-of-csharp/index.md
+          - text: "Inside a C# program"
+            url: programming-guide/inside-a-program/index.md
+          - text: Main() and command-line Arguments
+            url: programming-guide/main-and-command-args/index.md
+      - linkListType: concept
+        links:
+          - text: "The C# and .NET type system"
+            url: programming-guide/types/index.md
+          - text: Language Integrated Query (LINQ)
+            url: linq/index.md
+          - text: async and await
+            url: programming-guide/concepts/async/index.md
+      - linkListType: tutorial
+        links:
+          - text: Object oriented inheritance
+            url: tutorials/inheritance.md
+          - text: Use LINQ to query data
+            url: tutorials/working-with-linq.md
+          - text: Format strings using interpolation
+            url: tutorials/string-interpolation.md
+          - text: Fundamental language tutorials
+            url: tutorials/index.md
   
-# Get started landing page?
-
-
-  # - title: "C# language fundamentals"
-  
-  # basic tutorials
-  # tour
-  # type system
-  # delegates and events
-  ## tutorials home page.
-  ## Check programming guide.
-
   - title: "What's new in C#"
     linkLists:
       - linkListType: whats-new
@@ -55,7 +72,7 @@ landingContent:
             url: pattern-matching.md
           - text: Nullable reference types
             url: nullable-references.md
-          - text: Annotating your APIs for nullabiity
+          - text: Annotating your APIs for nullability
             url: nullable-attributes.md
           - text: Specify language version
             url: language-reference/configure-language-version.md
@@ -78,9 +95,9 @@ landingContent:
 
   - title: "Language reference"
     linkLists:
-    - linkListType: reference
-      links:
-        - text: "Language reference"
-          url: language-reference/index.md
-        - text: "C# Language specification"
-          url: language-reference/specification/
+      - linkListType: reference
+        links:
+          - text: "Language reference"
+            url: language-reference/index.md
+          - text: "C# Language specification"
+            url: language-reference/specification/

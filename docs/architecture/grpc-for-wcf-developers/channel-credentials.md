@@ -117,7 +117,7 @@ class Program
 }
 ```
 
-## Combine channel and call credentials
+## Combine ChannelCredentials and CallCredentials
 
 You can configure your server to use both certificate and token authentication. Do this by applying the certificate changes to the Kestrel server, and using the JWT bearer middleware in ASP.NET Core.
 

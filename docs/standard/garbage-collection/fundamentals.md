@@ -169,7 +169,7 @@ For more information about finalization, see <xref:System.Object.Finalize?displa
 
 The garbage collector is self-tuning and can work in a wide variety of scenarios. You can use a configuration file setting to set the type of garbage collection based on the characteristics of the workload. The CLR provides the following types of garbage collection:
 
-- Workstation garbage collection (GC), which is for all client workstations, stand-alone PCs, and mobile apps built using Xamarin. Workstation GC is the default setting for the [gcServer element](../../../docs/framework/configure-apps/file-schema/runtime/gcserver-element.md) in the run-time configuration schema.
+- Workstation garbage collection (GC) is designed for client apps. It is the default GC flavor for standalone apps. For hosted apps, for example, those hosted by ASP.NET, the host determines the default GC flavor.
 
   Workstation garbage collection can be concurrent or non-concurrent. Concurrent garbage collection enables managed threads to continue operations during a garbage collection. [Background garbage collection](#background-garbage-collection) replaces [concurrent garbage collection](#concurrent-garbage-collection) in .NET Framework 4 and later versions.
 

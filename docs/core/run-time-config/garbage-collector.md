@@ -17,7 +17,11 @@ On this page, settings are arranged into groups of settings that you can use in 
 
 ## Flavors of garbage collection
 
-The main two flavors of garbage collection are workstation and server. For more information about differences between the two, see [Fundamentals of garbage collection](../../standard/garbage-collection/fundamentals.md#workstation-and-server-garbage-collection). The subflavors of garbage collection are background and non-concurrent. Use the settings described in this section to select these flavors of garbage collection.
+The two main flavors of garbage collection are workstation GC and server GC. For more information about differences between the two, see [Fundamentals of garbage collection](../../standard/garbage-collection/fundamentals.md#workstation-and-server-garbage-collection).
+
+The subflavors of garbage collection are background and non-concurrent.
+
+Use the settings described in this section to select flavors of garbage collection.
 
 ### System.GC.Server/COMPlus_gcServer
 
@@ -53,48 +57,19 @@ For more information about some of these settings, see the [Middle ground betwee
 
 - Limits the number of heaps created by the garbage collector.
 - Applies to server garbage collection (GC) only.
-- If GC thread/processor affinity is disabled, this setting limits the number of GC heaps. If GC thread/processor affinity is enabled, this setting limits the number of GC heaps to the processors 0 to one-less-than its specified value.
+- If GC thread/processor affinity is enabled, which is the default, the heap count setting affinitizes *number* GC heaps/threads to the first *number* processors. (Use the affinitize mask or affinitize ranges settings to specify exactly which processors to affinitize.)
+- If GC thread/processor affinity is disabled, this setting limits the number of GC heaps.
 - For more information, see the [GCHeapCount remarks](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md#remarks).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapCount` | *number* | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCHeapCount` | *number* | .NET Core 3.0 |
-| **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | *number* |  |
-
-### System.GC.HeapHardLimit/COMPlus_GCHeapHardLimit
-
-- Specifies the maximum commit size for the GC heap.
-- The value can range from 0 to 18446744073709551615.
-
-| | Setting name | Values | Version introduced |
-| - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimit` | *number* | .NET Core 3.0 |
-| **Environment variable** | `COMPlus_GCHeapHardLimit` | *number* | .NET Core 3.0 |
-
-### System.GC.HeapHardLimitPercent/COMPlus_GCHeapHardLimitPercent
-
-- Specifies the GC heap usage as a percentage of the total memory.
-- Example value: 25
-
-| | Setting name | Values | Version introduced |
-| - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimitPercent` | *percentage* | .NET Core 3.0 |
-| **Environment variable** | `COMPlus_GCHeapHardLimitPercent` | *percentage* | .NET Core 3.0 |
-
-### System.GC.RetainVM/COMPlus_GCRetainVM
-
-- Configures whether segments that should be deleted are put on a standby list for future use or are released back to the operating system (OS).
-- Default: Release segments back to the operating system (`false`).
-
-| | Setting name | Values | Version introduced |
-| - | - | - | - |
-| **runtimeconfig.json** | `System.GC.RetainVM` | `true` - put on standby<br/>`false` - release to OS | .NET Core 1.0 |
-| **Environment variable** | `COMPlus_GCRetainVM` | 0 - release to OS<br/>1 - put on standby | .NET Core 1.0 |
+| **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | *number* | 4.6.2 |
 
 ### System.GC.HeapAffinitizeMask/COMPlus_GCHeapAffinitizeMask
 
-- Specifies the exact processors that garbage collector threads should use as a bit mask.
+- Specifies the exact processors that garbage collector threads should use.
 - If processor affinity is disabled by setting `System.GC.NoAffinitize` to `true`, this setting is ignored.
 - Applies to server garbage collection (GC) only.
 - The decimal value is a bit mask that defines the processors that are available to the process. For example, a decimal value of 1023 is equivalent to 0x3FF in hexadecimal notation and 0011 1111 1111 in binary notation. This specifies that the first 10 processors are to be used. To specify the next 10 processors, that is, processors 10-19, specify a decimal value of 1047552, which is equivalent to 0xFFC00 in hexadecimal and 1111 1111 1100 0000 0000 in binary.
@@ -103,7 +78,7 @@ For more information about some of these settings, see the [Middle ground betwee
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapAffinitizeMask` | *decimal value* | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCHeapAffinitizeMask` | *decimal value* | .NET Core 3.0 |
-| **app.config for .NET Framework** | [GCHeapAffinitizeMask](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) | *decimal value* |  |
+| **app.config for .NET Framework** | [GCHeapAffinitizeMask](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) | *decimal value* | 4.6.2 |
 
 ### System.GC.GCHeapAffinitizeRanges/COMPlus_GCHeapAffinitizeRanges
 
@@ -146,7 +121,37 @@ For more information about some of these settings, see the [Middle ground betwee
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.NoAffinitize` | `true` - don't affinitize<br/>`false` - affinitize | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCNoAffinitize` | 0 - affinitize<br/>1 - don't affinitize | .NET Core 3.0 |
-| **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | `true` - don't affinitize<br/>`false` - affinitize |  |
+| **app.config for .NET Framework** | [GCNoAffinitize](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) | `true` - don't affinitize<br/>`false` - affinitize | 4.6.2 |
+
+### System.GC.HeapHardLimit/COMPlus_GCHeapHardLimit
+
+- Specifies the maximum commit size for the GC heap.
+- The value can range from 0 to 18446744073709551615.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.HeapHardLimit` | *number* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapHardLimit` | *number* | .NET Core 3.0 |
+
+### System.GC.HeapHardLimitPercent/COMPlus_GCHeapHardLimitPercent
+
+- Specifies the GC heap usage as a percentage of the total memory.
+- Example value: 25
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitPercent` | *percentage* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapHardLimitPercent` | *percentage* | .NET Core 3.0 |
+
+### System.GC.RetainVM/COMPlus_GCRetainVM
+
+- Configures whether segments that should be deleted are put on a standby list for future use or are released back to the operating system (OS).
+- Default: Release segments back to the operating system (`false`).
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.RetainVM` | `true` - put on standby<br/>`false` - release to OS | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCRetainVM` | 0 - release to OS<br/>1 - put on standby | .NET Core 1.0 |
 
 ## Large pages
 

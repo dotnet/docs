@@ -70,10 +70,10 @@ landingContent:
             url: pattern-matching.md
           - text: Nullable reference types
             url: nullable-references.md
+      - linkListType: concept
+        links:
           - text: Annotating your APIs for nullability
             url: nullable-attributes.md
-          - text: Specify language version
-            url: language-reference/configure-language-version.md
       - linkListType: tutorial
         links:
           - text: Consume and generate async streams
@@ -97,5 +97,11 @@ landingContent:
         links:
           - text: "Language reference"
             url: language-reference/index.md
+          - text: "C# keywords"
+            url: language-reference/keywords/index.md
+          - text: "C# operators"
+            url: language-reference/operators/index.md
+          - text: Configure language version
+            url: language-reference/configure-language-version.md
           - text: "C# language specification"
             url: ../../_csharplang/spec/introduction.md

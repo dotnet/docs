@@ -24,7 +24,7 @@ ASP.NET Core 3.0 can handle JWTs by using the JWT Bearer package. The configurat
 
 The JWT Bearer package isn't included in ASP.NET Core 3.0 by default. Install the [Microsoft.AspNetCore.Authentication.JwtBearer](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer) NuGet package in your app.
 
-Add the Authentication service in the Startup class, and configure the JWT Bearer handler.
+Add the Authentication service in the Startup class, and configure the JWT Bearer handler:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)

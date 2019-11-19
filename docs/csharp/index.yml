@@ -22,12 +22,18 @@ landingContent:
             url: tutorials/intro-to-csharp/numbers-in-csharp.yml
           - text: Introductory tutorials
             url: tutorials/intro-to-csharp/index.md
+          - text: "Create C# apps with Visual Studio"
+            url: https://docs.microsoft.com/visualstudio/get-started/csharp/?view=vs-2019
       - linkListType: video
         links:
           - text: "What is C#?"
             url: https://channel9.msdn.com/Series/CSharp-101/What-is-C/player
           - text: "C# 101 video series"
             url: https://aka.ms/dotnet3-csharp
+      - linkListType: download
+        links:
+          - text: Download the .NET Core SDK
+            url: https://dotnet.microsoft.com/download
 
   - title: "C# language fundamentals"
     linkLists:
@@ -58,7 +64,7 @@ landingContent:
           - text: Fundamental language tutorials
             url: tutorials/index.md
   
-  - title: "New features in C#"
+  - title: "New features in C# 8.0"
     linkLists:
       - linkListType: whats-new
         links:

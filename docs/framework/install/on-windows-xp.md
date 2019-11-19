@@ -28,7 +28,7 @@ You can install the [.NET Framework 4](https://dotnet.microsoft.com/download/dot
 
 ## .NET Framework 3.5
 
-You can install the [.NET Framework 3.5](https://www.microsoft.com/download/confirmation.aspx?id=21) on Windows XP.
+You can install the [.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) on Windows XP.
 
 The .NET Framework 3.5 can be used to run applications built for .NET Framework 1.0 through 3.5.
 

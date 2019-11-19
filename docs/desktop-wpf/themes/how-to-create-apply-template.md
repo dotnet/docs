@@ -4,7 +4,7 @@ description: Learn how to create and reference a control template in Windows Pre
 author: thraka
 ms.author: adegeo
 ms.date: 11/15/2019
-no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>"]
+no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>", "SizeToContent", "MinWidth", "TargetType", "Title"]
 helpviewer_keywords: 
   - "control contract [WPF]"
   - "controls [WPF], visual structure changes"
@@ -39,7 +39,7 @@ Create a new WPF application and in *MainWindow.xaml* (or another window of your
 |     |     |
 | --- | --- |
 | **Title**         | `Template Intro Sample` |
-| **SizetoContent** | `WidthAndHeight` |
+| **SizeToContent** | `WidthAndHeight` |
 | **MinWidth**      | `250` |
 
 Set the content of the **\<Window>** element to the following XAML:

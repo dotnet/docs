@@ -65,7 +65,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: "What's new in C# 8.0"
-            url: whats-new/csharp-8
+            url: whats-new/csharp-8.md
       - linkListType: overview
         links:
           - text: Pattern matching
@@ -79,7 +79,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Consume and generate async streams
-            url: tutorials/generate-consume-asynchronous-streams.md
+            url: tutorials/generate-consume-asynchronous-stream.md
           - text: Develop with nullable reference types
             url: tutorials/nullable-reference-types.md
           - text: Upgrade existing code to use nullable nullable-references
@@ -100,4 +100,4 @@ landingContent:
           - text: "Language reference"
             url: language-reference/index.md
           - text: "C# Language specification"
-            url: language-reference/specification/
+            url: ../../_csharplang/spec/introduction.md

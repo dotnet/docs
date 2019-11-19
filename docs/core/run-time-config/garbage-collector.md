@@ -125,7 +125,7 @@ For more information about some of these settings, see the [Middle ground betwee
 
 ### System.GC.HeapHardLimit/COMPlus_GCHeapHardLimit
 
-- Specifies the maximum commit size for the GC heap.
+- Specifies the maximum commit size, in bytes, for the GC heap.
 - The value can range from 0 to 18446744073709551615.
 
 | | Setting name | Values | Version introduced |

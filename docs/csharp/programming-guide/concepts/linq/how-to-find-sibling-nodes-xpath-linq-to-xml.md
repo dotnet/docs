@@ -1,9 +1,9 @@
 ---
-title: "How to: Find Sibling Nodes (XPath-LINQ to XML) (C#)"
+title: "How to find sibling nodes (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: e2c73d10-a8ca-4e11-b5aa-d055de285874
 ---
-# How to: Find Sibling Nodes (XPath-LINQ to XML) (C#)
+# How to find sibling nodes (XPath-LINQ to XML) (C#)
 You might want to find all siblings of a node that have a specific name. The resulting collection might include the context node if the context node also has the specific name.  
   
  The XPath expression is:  

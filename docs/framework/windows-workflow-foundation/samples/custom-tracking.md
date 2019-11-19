@@ -12,7 +12,7 @@ This sample demonstrates how to create a custom tracking participant and write t
 |Component|Description|
 |---------------|-----------------|
 |Tracking runtime|Provides the infrastructure to emit tracking records.|
-|Tracking participants|Consumes the tracking records. [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)] ships with a tracking participant that writes tracking records as Event Tracing for Windows (ETW) events.|
+|Tracking participants|Consumes the tracking records. .NET Framework 4 ships with a tracking participant that writes tracking records as Event Tracing for Windows (ETW) events.|
 |Tracking profile|A filtering mechanism that allows a tracking participant to subscribe for a subset of the tracking records emitted from a workflow instance.|
 
  The following table details the tracking records that the workflow runtime emits.

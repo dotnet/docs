@@ -52,7 +52,7 @@ public void ConfigureServices(IServiceCollection services)
 
 The `IssuerSigningKey` property requires an implementation of `Microsoft.IdentityModels.Tokens.SecurityKey` with the cryptographic data necessary to validate the signed tokens. Store this token securely in a *secrets server*, like Azure Key Vault.
 
-Next, add the Authorization service, which controls access to the system.
+Next, add the Authorization service, which controls access to the system:
 
 ```csharp
     services.AddAuthorization(options =>

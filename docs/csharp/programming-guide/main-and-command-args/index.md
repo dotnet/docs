@@ -32,7 +32,7 @@ The `Main` method is the entry point of a C# application. (Libraries and service
 
 The following is a list of valid `Main` signatures:
 
-    ```csharp
+```csharp
 public static void Main() { }
 public static int Main() { }
 public static void Main(string[] args) { }

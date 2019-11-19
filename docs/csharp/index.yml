@@ -39,7 +39,7 @@ landingContent:
             url: tour-of-csharp/index.md
           - text: "Inside a C# program"
             url: programming-guide/inside-a-program/index.md
-          - text: Main() and command-line Arguments
+          - text: Main() and command-line arguments
             url: programming-guide/main-and-command-args/index.md
       - linkListType: concept
         links:
@@ -82,7 +82,7 @@ landingContent:
             url: tutorials/generate-consume-asynchronous-stream.md
           - text: Develop with nullable reference types
             url: tutorials/nullable-reference-types.md
-          - text: Upgrade existing code to use nullable nullable-references
+          - text: Upgrade existing code to use nullable reference types
             url: tutorials/upgrade-to-nullable-references.md
           - text: Use pattern matching for more expressive algorithms
             url: tutorials/pattern-matching.md
@@ -90,7 +90,7 @@ landingContent:
             url: tutorials/default-interface-methods-versions.md
           - text: Mix in functionality with default interface members
             url: tutorials/mixins-with-default-interface-methods.md
-          - text: Work with subsets using ranges and indexes
+          - text: Work with subsets using ranges and indices
             url: tutorials/ranges-indexes.md
 
   - title: "Language reference"
@@ -99,5 +99,5 @@ landingContent:
         links:
           - text: "Language reference"
             url: language-reference/index.md
-          - text: "C# Language specification"
+          - text: "C# language specification"
             url: ../../_csharplang/spec/introduction.md

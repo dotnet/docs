@@ -684,7 +684,7 @@ namespace AsyncExampleWPF
 
 ## See also
 
-- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/hh300224(v=vs.110))
+- [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/hh300224(v=vs.110))
 - [async](../../../language-reference/keywords/async.md)
 - [await](../../../language-reference/operators/await.md)
 - [Asynchronous Programming with async and await (C#)](./index.md)

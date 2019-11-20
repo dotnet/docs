@@ -25,6 +25,8 @@ C# 8.0 adds the following features and enhancements to the C# language:
 - [Stackalloc in nested expressions](#stackalloc-in-nested-expressions)
 - [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
 
+C# 8.0 is supported on **.NET Core 3.x** and **.NET Standard 2.1**. You can find more details in [C# language versioning](https://docs.microsoft.com/dotnet/csharp/language-reference/configure-language-version)
+
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
 
 1. Install the [dotnet-try](https://github.com/dotnet/try/blob/master/README.md#setup) global tool.

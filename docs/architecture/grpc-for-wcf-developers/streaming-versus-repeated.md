@@ -1,10 +1,10 @@
 ---
-title: gRPC streaming services versus repeated fields - gRPC for WCF developers
+title: gRPC streaming services vs. repeated fields - gRPC for WCF developers
 description: Comparing repeated fields to streaming services as ways of passing collections of data by using gRPC.
 ms.date: 09/02/2019
 ---
 
-# gRPC streaming services versus repeated fields
+# gRPC streaming services vs. repeated fields
 
 gRPC services provide two ways of returning datasets, or lists of objects. The Protocol Buffers message specification uses the `repeated` keyword for declaring lists or arrays of messages within another message. The gRPC service specification uses the `stream` keyword to declare a long-running persistent connection. Over that connection, multiple messages are sent, and can be processed, individually. 
 

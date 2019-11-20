@@ -12,7 +12,7 @@
       href: interface-definition-language.md
     - name: Network protocols
       href: network-protocols.md
-    - name: Why gRPC is recommended for WCF developers
+    - name: Why we recommend gRPC for WCF developers
       href: Why-grpc.md
   - name: Protocol Buffers
     href: protocol-buffers.md
@@ -27,7 +27,7 @@
       href: protobuf-repeated.md
     - name: Protobuf reserved fields
       href: protobuf-reserved.md
-    - name: Protobuf Any and OneOf fields for variant types
+    - name: Protobuf Any and Oneof fields for variant types
       href: protobuf-any-oneof.md
     - name: Protobuf enumerations
       href: protobuf-enums.md
@@ -36,7 +36,7 @@
   - name: Comparing WCF services to gRPC
     href: wcf-services-to-grpc-comparison.md
     items:
-    - name: WCF Endpoints and gRPC methods
+    - name: WCF endpoints and gRPC methods
       href: wcf-endpoints-grpc-methods.md
     - name: WCF bindings and transports
       href: wcf-bindings.md
@@ -57,7 +57,7 @@
       href: migrate-request-reply.md
     - name: Migrate WCF duplex services to gRPC
       href: migrate-duplex-services.md
-    - name: gRPC streaming services vs repeated fields
+    - name: gRPC streaming services vs. repeated fields
       href: streaming-versus-repeated.md
     - name: Client libraries
       href: client-libraries.md
@@ -79,11 +79,11 @@
       href: docker.md
     - name: Kubernetes
       href: kubernetes.md
-    - name: gRPC and Service Mesh
+    - name: Service meshes
       href: service-mesh.md
-    - name: Load-balancing
+    - name: Load balancing
       href: load-balancing.md
-    - name: Application Performance Management
+    - name: Application performance management
       href: application-performance-management.md
   - name: Appendix
     href: appendix.md

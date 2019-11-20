@@ -124,7 +124,7 @@ The ASP.NET Core gRPC client and server libraries include explicit support for `
 > [!NOTE]
 > All of this happens only if a listener is consuming the diagnostic information. If there's no listener, no diagnostics are written and no activities are created.
 
-### Add your own diagnostic sources and activities
+### Add your own `DiagnosticSource` and `Activity`
 
 To add your own diagnostics or create explicit spans within your application code, see the [DiagnosticSource User Guide](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md#instrumenting-with-diagnosticsourcediagnosticlistener) and [Activity User Guide](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#activity-usage).
 

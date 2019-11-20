@@ -1,16 +1,16 @@
 ---
-title: Install .NET Core on Ubuntu 16.04 package manager - .NET Core
-description: Use a package manager to install .NET Core SDK and runtime on Ubuntu 16.04.
+title: Install .NET Core on Ubuntu 19.04 package manager - .NET Core
+description: Use a package manager to install .NET Core SDK and runtime on Ubuntu 19.04.
 author: thraka
 ms.author: adegeo
 ms.date: 11/06/2019
 ---
 
-# Ubuntu 16.04 Package Manager - Install .NET Core
+# Ubuntu 19.04 Package Manager - Install .NET Core
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on Ubuntu 16.04. If you're installing the runtime, we suggest you install the [ASP.NET Core runtime](#install-the-aspnet-core-runtime), as it includes both .NET Core and ASP.NET Core runtimes.
+This article describes how to use a package manager to install .NET Core on Ubuntu 19.04. If you're installing the runtime, we suggest you install the [ASP.NET Core runtime](#install-the-aspnet-core-runtime), as it includes both .NET Core and ASP.NET Core runtimes.
 
 ## Register Microsoft key and feed
 
@@ -19,7 +19,7 @@ Before installing .NET Core, you'll need to register the Microsoft key, register
 Open a terminal and run the following commands.
 
 ```bash
-wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 ```
 
@@ -49,7 +49,7 @@ sudo apt-get install dotnet-sdk-3.0
 > sudo apt-get install -y gpg
 > wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
 > sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-> wget -q https://packages.microsoft.com/config/ubuntu/16.04/prod.list
+> wget -q https://packages.microsoft.com/config/ubuntu/19.04/prod.list
 > sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 > sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 > sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
@@ -84,7 +84,7 @@ sudo apt-get install dotnet-runtime-3.0
 > sudo apt-get install -y gpg
 > wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
 > sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-> wget -q https://packages.microsoft.com/config/ubuntu/16.04/prod.list
+> wget -q https://packages.microsoft.com/config/ubuntu/19.04/prod.list
 > sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 > sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 > sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
@@ -119,7 +119,7 @@ sudo apt-get install aspnetcore-runtime-3.0
 > sudo apt-get install -y gpg
 > wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
 > sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
-> wget -q https://packages.microsoft.com/config/ubuntu/16.04/prod.list
+> wget -q https://packages.microsoft.com/config/ubuntu/19.04/prod.list
 > sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list
 > sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 > sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list

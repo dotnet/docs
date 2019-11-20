@@ -182,7 +182,7 @@ In the .NET Framework 4.7.2, WPF added the ability to draw <xref:System.Windows.
 
 To use this property, simply add it to your XAML code and use the appropriate brush or binding. The resulting text selection looks like this:
 
-![Screenshot of what it looks like when you use the SelectionTextBrush.](./media/whats-new-in-accessibility/selectiontextbrush-property.png)
+![Screenshot of the app running with the words Hello World selected.](./media/whats-new-in-accessibility/selectiontextbrush-property.png)
 
 You can combine the use of the `SelectionBrush` and `SelectionTextBrush` properties to generate any background and foreground color combination that you deem appropriate.
 

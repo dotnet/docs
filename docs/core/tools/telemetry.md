@@ -108,7 +108,7 @@ If the .NET Core CLI/SDK crashes, it collects the name of the exception and stac
 
 The following example shows the kind of data that is collected:
 
-```
+```console
 System.IO.IOException
 at System.ConsolePal.WindowsConsoleStream.Write(Byte[] buffer, Int32 offset, Int32 count)
 at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)

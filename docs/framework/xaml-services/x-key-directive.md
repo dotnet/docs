@@ -80,7 +80,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 ### XAML Element Usage (XAML 2009 only)  
   
-```  
+```xaml  
 <object>  
   <x:Key>  
 keyObject  

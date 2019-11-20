@@ -46,7 +46,7 @@ Enables or disables networking performance counters.
 ## Remarks  
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
- Networking performance counters need to be enabled in the configuration file to be used. All networking performance counters are enabled or disabled with a single setting in the configuration file. Individual networking performance counters cannot be enabled or disabled. For more information on the specific networking performance counters, see [Networking Performance Counters](../../../debug-trace-profile/performance-counters.md#networking).  
+ Networking performance counters need to be enabled in the configuration file to be used. All networking performance counters are enabled or disabled with a single setting in the configuration file. Individual networking performance counters cannot be enabled or disabled. For more information on the specific networking performance counters, see [Networking performance counters](../../../debug-trace-profile/performance-counters.md#networking-performance-counters).  
   
  The default value is that networking performance counters are disabled.  
   
@@ -72,4 +72,4 @@ Enables or disables networking performance counters.
 - <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=nameWithType>
 - <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=nameWithType>
 - [Network Settings Schema](index.md)
-- [Networking Performance Counters](../../../debug-trace-profile/performance-counters.md#networking)
+- [Networking Performance Counters](../../../debug-trace-profile/performance-counters.md#networking-performance-counters)

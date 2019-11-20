@@ -4,11 +4,12 @@ ms.date: "03/30/2017"
 ms.assetid: cb65c132-58c9-4028-b3d4-1efc71d5e60e
 ---
 # Migration Guidance
-In the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microsoft is releasing the second major version of Windows Workflow Foundation (WF). [!INCLUDE[wf1](../../../includes/wf1-md.md)] was released in WinFX (this included the types in the System.Workflow.\* namespaces; now referred to as WF3) and enhanced in [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]. WF3 is also part of the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], but it exists there alongside new workflow technology (the types in the System.Activities.\* namespaces; referred to as WF4). When considering when to adopt WF4, it is important to first recognize that you control the timing.  
+
+In the .NET Framework 4, Microsoft is releasing the second major version of Windows Workflow Foundation (WF). [!INCLUDE[wf1](../../../includes/wf1-md.md)] was released in WinFX (this included the types in the System.Workflow.\* namespaces; now referred to as WF3) and enhanced in .NET Framework 3.5. WF3 is also part of the .NET Framework 4, but it exists there alongside new workflow technology (the types in the System.Activities.\* namespaces; referred to as WF4). When considering when to adopt WF4, it is important to first recognize that you control the timing.  
   
-- WF3 is a fully supported part of the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)].  
+- WF3 is a fully supported part of the .NET Framework 4.  
   
-- WF3 applications run on the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] without modification and continue to be fully supported.  
+- WF3 applications run on the .NET Framework 4 without modification and continue to be fully supported.  
   
 - New WF3 applications can be created and your existing applications can be edited in Visual Studio 2012 and are fully supported.  
   
@@ -24,7 +25,7 @@ In the [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], Microso
  Discusses how to design WF3 artifacts so they can be more easily migrated to WF4.  
   
  [WF Guidance: Rules](https://go.microsoft.com/fwlink/?LinkId=153854)  
- Discusses how to bring rules-related investments forward into [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] solutions.  
+ Discusses how to bring rules-related investments forward into .NET Framework 4 solutions.  
   
  [WF Guidance: State Machine](https://go.microsoft.com/fwlink/?LinkId=153855)  
  Discusses WF4 control flow modeling in the absence of a State-Machine activity.  

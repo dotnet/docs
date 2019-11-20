@@ -57,12 +57,14 @@
     {
       "path_to_root": "_csharplang",
       "url": "https://github.com/dotnet/csharplang",
-      "branch": "master"
+      "branch": "master",
+      "include_in_build": true
     },
     {
       "path_to_root": "_vblang",
       "url": "https://github.com/dotnet/vblang",
-      "branch": "master"
+      "branch": "master",
+      "include_in_build": true
     },
     {
       "path_to_root": "samples",

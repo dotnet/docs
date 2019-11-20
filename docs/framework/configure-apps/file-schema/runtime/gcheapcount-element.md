@@ -57,7 +57,7 @@ By default, server GC threads are hard-affinitized with their respective CPU so 
 
 - [GCHeapAffinitizeMask](gcheapaffinitizemask-element.md), which controls the affinity of GC threads/heaps with CPUs.
 
-If **GCHeapCount** is set and **GCNoAffinitize** is disabled (its default setting), there is an affinity between the *nn* GC threads/heaps and the first *nn* processors. You can use the **GCHeapAffinitizeMask** element to specify which processors are used by the process' server GC heaps. Otherwise, if multiple server processes are running on a system, their processor usage will overlap.
+If **GCHeapCount** is set and **GCNoAffinitize** is disabled (its default setting), there is an affinity between the *nn* GC threads/heaps and the first *nn* processors. You can use the **GCHeapAffinitizeMask** element to specify which processors are used by the process's server GC heaps. Otherwise, if multiple server processes are running on a system, their processor usage will overlap.
 
 If **GCHeapCount** is set and **GCNoAffinitize** is enabled, the garbage collector limits the number of processors used for server GC but does not affinitize GC heaps and processors.
 

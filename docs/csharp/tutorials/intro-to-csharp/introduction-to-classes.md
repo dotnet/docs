@@ -172,7 +172,7 @@ catch (ArgumentOutOfRangeException e)
 You use the [`try` and `catch` statements](../../language-reference/keywords/try-catch.md) to mark a block of code that may throw exceptions and to catch those errors that you expect. You can use the same technique to test the code that throws an exception for a negative balance:
 
 ```csharp
-// Test for a negative balance:
+// Test for a negative balance.
 try
 {
     account.MakeWithdrawal(750, DateTime.Now, "Attempt to overdraw");
@@ -202,8 +202,8 @@ Console.WriteLine(account.GetAccountHistory());
 
 Type `dotnet run` to see the results.
 
-## Next Steps
+## Next steps
 
-If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/samples/tree/master/csharp/classes-quickstart/)
+If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/samples/tree/master/csharp/classes-quickstart/).
 
-Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../index.md)
+Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../index.md).

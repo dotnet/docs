@@ -46,7 +46,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 - **✔️ Changing a [struct](../../csharp/language-reference/keywords/struct.md) type to a `readonly struct` type**
 
   Note that changing a `readonly struct` type to a `struct` type is not allowed.
-  
+
 - **✔️ Adding the [sealed](../../csharp/language-reference/keywords/sealed.md) or [abstract](../../csharp/language-reference/keywords/abstract.md) keyword to a type when there are no *accessible* (public or protected) constructors**
 
 - **✔️ Expanding the visibility of a type**
@@ -97,7 +97,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   Note that introducing an override might cause previous consumers to skip over the override when calling [base](../../csharp/language-reference/keywords/base.md).
 
-- **✔️ Adding a constructor to a class, along with a default (parameterless) constructor if the class previously had no constructors**
+- **✔️ Adding a constructor to a class, along with a parameterless constructor if the class previously had no constructors**
 
    However, adding a constructor to a class that previously had no constructors *without* adding the parameterless constructor is not allowed.
 
@@ -132,9 +132,9 @@ Changes in this category *modify* the public surface area of a type. Most of the
 - **❌ Renaming a parameter (including changing its case)**
 
   This is considered breaking for two reasons:
-  
+
   - It breaks late-bound scenarios such as the late binding feature in Visual Basic and [dynamic](../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) in C#.
-  
+
   - It breaks [source compatibility](categories.md#source-compatibility) when developers use [named arguments](../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md#named-arguments).
 
 - **❌ Changing from a `ref` return value to a `ref readonly` return value**
@@ -147,9 +147,9 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   While this often is not a breaking change because the C# compiler tends to emit [callvirt](<xref:System.Reflection.Emit.OpCodes.Callvirt>) Intermediate Language (IL) instructions to call non-virtual methods (`callvirt` performs a null check, while a normal call doesn't), this behavior is not invariable for several reasons:
   - C# is not the only language that .NET targets.
-  
+
   - The C# compiler increasingly tries to optimize `callvirt` to a normal call whenever the target method is non-virtual and is probably not null (such as a method accessed through the [?. null propagation operator](../../csharp/language-reference/operators/member-access-operators.md#null-conditional-operators--and-)).
-  
+
   Making a method virtual means that the consumer code would often end up calling it non-virtually.
 
 - **❌ Adding the [virtual](../../csharp/language-reference/keywords/virtual.md) keyword to a member**

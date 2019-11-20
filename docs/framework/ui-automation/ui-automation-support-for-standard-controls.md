@@ -71,7 +71,7 @@ ms.assetid: 3770ea8a-2655-4add-9c59-fe0610ad5084
 |SysTreeView32|Tree|  
 |SysTreeView32|TreeItem|  
   
- **Note** The RichEdit control is supported only for versions shipped with [!INCLUDE[TLA#tla_winvista](../../../includes/tlasharptla-winvista-md.md)] (in RichEd20.dll version 3.1 and later, and MsftEdit.dll version 4.1 and later).  
+ **Note** The RichEdit control is supported only for versions shipped with Windows Vista (in RichEd20.dll version 3.1 and later, and MsftEdit.dll version 4.1 and later).  
   
  The following controls are not supported.  
   

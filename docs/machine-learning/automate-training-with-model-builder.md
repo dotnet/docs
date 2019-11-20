@@ -55,7 +55,7 @@ If your scenario requires classification into two categories, you can use this t
 
 #### Predict a category (when there are three or more categories)
 
-Multiclass classification can be used to categorize data into three or more classes. 
+Multiclass classification can be used to categorize data into three or more classes.
 
 ![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png)
 

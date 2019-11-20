@@ -15,7 +15,7 @@ This step-by-step article describes how a system administrator can deploy the .N
 > [!NOTE]
 > The software referenced in this document, including, without limitation, the .NET Framework 4.5, System Center Configuration Manager, and Active Directory, are each subject to license terms and conditions. These instructions assume that such license terms and conditions have been reviewed and accepted by the appropriate licensees of the software. These instructions do not waive any of the terms and conditions of such license agreements.
 >
-> For information about support for the .NET Framework, see [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607) on the Microsoft Support website.
+> For information about support for the .NET Framework, see [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the Microsoft Support website.
 
 This topic contains the following sections:
 
@@ -129,9 +129,9 @@ The following table describes the command-line options specified in step 7.
 |------------|-----------------|
 |**/q**|Sets quiet mode. No user input is required, and no output is shown.|
 |**/norestart**|Prevents the Setup program from rebooting automatically. If you use this option, Configuration Manager must handle the computer restart.|
-|**/chainingpackage** *PackageName*|Specifies the name of the package that is doing the chaining. This information is reported with other installation session information for those who have signed up for the [Microsoft Customer Experience Improvement Program (CEIP)](https://go.microsoft.com/fwlink/p/?LinkId=248244). If the package name includes spaces, use double quotation marks as delimiters; for example: **/chainingpackage "Chaining Product"**.|
+|**/chainingpackage** *PackageName*|Specifies the name of the package that is doing the chaining. This information is reported with other installation session information for those who have signed up for the Microsoft Customer Experience Improvement Program (CEIP). If the package name includes spaces, use double quotation marks as delimiters; for example: **/chainingpackage "Chaining Product"**.|
 
-These steps create a package named .NET Framework 4.5. The program deploys a silent installation of the .NET Framework 4.5. In a silent installation, users do not interact with the installation process, and the chaining application has to capture the return code and handle rebooting; see [Getting Progress Information from an Installation Package](https://go.microsoft.com/fwlink/?LinkId=179606).
+These steps create a package named .NET Framework 4.5. The program deploys a silent installation of the .NET Framework 4.5. In a silent installation, users do not interact with the installation process, and the chaining application has to capture the return code and handle rebooting; see [Getting Progress Information from an Installation Package](https://docs.microsoft.com/previous-versions/cc825975(v=vs.100)).
 
 <a name="select_dist_point"></a>
 

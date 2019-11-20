@@ -12,11 +12,11 @@ ms.custom: mvc, how-to, title-hack-0625
 
 Learn how to use ML.NET to prepare data for additional processing or building a model.
 
-Data is often unclean and sparse. ML.NET machine learning algorithms expect input or features to be in a single numerical vector. Similarly, the value to predict (label), especially when it's categorical data, has to be encoded. Therefore one of the goals of data preparation is to get the data into the format expected by ML.NET algorithms. 
+Data is often unclean and sparse. ML.NET machine learning algorithms expect input or features to be in a single numerical vector. Similarly, the value to predict (label), especially when it's categorical data, has to be encoded. Therefore one of the goals of data preparation is to get the data into the format expected by ML.NET algorithms.
 
 ## Filter data
 
-Sometimes, not all data in a dataset is relevant for analysis. An approach to remove irrelevant data is filtering. The [`DataOperationsCatalog`](xref:Microsoft.ML.DataOperationsCatalog) contains a set of filter operations that take in an [`IDataView`](xref:Microsoft.ML.IDataView) containing all of the data and return an [IDataView](xref:Microsoft.ML.IDataView) containing only the data points of interest. It's important to note that because filter operations are not an [`IEstimator`](xref:Microsoft.ML.IEstimator%601) or [`ITransformer`](xref:Microsoft.ML.ITransformer) like those in the [`TransformsCatalog`](xref:Microsoft.ML.TransformsCatalog), they cannot be included as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) or [`TransformerChain`](xref:Microsoft.ML.Data.TransformerChain%601) data preparation pipeline. 
+Sometimes, not all data in a dataset is relevant for analysis. An approach to remove irrelevant data is filtering. The [`DataOperationsCatalog`](xref:Microsoft.ML.DataOperationsCatalog) contains a set of filter operations that take in an [`IDataView`](xref:Microsoft.ML.IDataView) containing all of the data and return an [IDataView](xref:Microsoft.ML.IDataView) containing only the data points of interest. It's important to note that because filter operations are not an [`IEstimator`](xref:Microsoft.ML.IEstimator%601) or [`ITransformer`](xref:Microsoft.ML.ITransformer) like those in the [`TransformsCatalog`](xref:Microsoft.ML.TransformsCatalog), they cannot be included as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) or [`TransformerChain`](xref:Microsoft.ML.Data.TransformerChain%601) data preparation pipeline.
 
 Using the following input data which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView):
 
@@ -52,7 +52,7 @@ The sample above takes rows in the dataset with a price between 200000 and 10000
 
 ## Replace missing values
 
-Missing values are a common occurrence in datasets. One approach to dealing with missing values is to replace them with the default value for the given type if any or another meaningful value such as the mean value in the data. 
+Missing values are a common occurrence in datasets. One approach to dealing with missing values is to replace them with the default value for the given type if any or another meaningful value such as the mean value in the data.
 
 Using the following input data which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView):
 
@@ -95,11 +95,11 @@ IDataView transformedData = replacementTransformer.Transform(data);
 ```
 
 ML.NET supports various [replacement modes](xref:Microsoft.ML.Transforms.MissingValueReplacingEstimator.ReplacementMode). The sample above uses the `Mean` replacement mode which will fill in the missing value with that column's average value. The replacement
-'s result fills in the `Price` property for the last element in our data with 200,000 since it's the average of 100,000 and 300,000. 
+'s result fills in the `Price` property for the last element in our data with 200,000 since it's the average of 100,000 and 300,000.
 
 ## Use normalizers
 
-[Normalization](https://en.wikipedia.org/wiki/Feature_scaling) is a data pre-processing technique used to standardize features that are not on the same scale which helps algorithms converge faster. For example, the ranges for values like age and income vary significantly with age generally being in the range of 0-100 and income generally being in the range of zero to thousands. Visit the [transforms page](../resources/transforms.md) for a more detailed list and description of normalization transforms. 
+[Normalization](https://en.wikipedia.org/wiki/Feature_scaling) is a data pre-processing technique used to standardize features that are not on the same scale which helps algorithms converge faster. For example, the ranges for values like age and income vary significantly with age generally being in the range of 0-100 and income generally being in the range of zero to thousands. Visit the [transforms page](../resources/transforms.md) for a more detailed list and description of normalization transforms.
 
 ### Min-Max normalization
 
@@ -139,7 +139,7 @@ The original price values `[200000,100000]` are converted to `[ 1, 0.5 ]` using 
 
 ### Binning
 
-[Binning](https://en.wikipedia.org/wiki/Data_binning) converts continuous values into a discrete representation of the input. For example, suppose one of your features is age. Instead of using the actual age value,  binning creates ranges for that value. 0-18 could be one bin, another could be 19-35 and so on. 
+[Binning](https://en.wikipedia.org/wiki/Data_binning) converts continuous values into a discrete representation of the input. For example, suppose one of your features is age. Instead of using the actual age value,  binning creates ranges for that value. 0-18 could be one bin, another could be 19-35 and so on.
 
 Using the following input data which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView):
 
@@ -164,7 +164,7 @@ HomeData[] homeDataList = new HomeData[]
 };
 ```
 
-Normalize the data into bins using the [`NormalizeBinning`](xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning*) method. The `maximumBinCount` parameter enables you to specify the number of bins needed to classify your data. In this example, data will be put into two bins.  
+Normalize the data into bins using the [`NormalizeBinning`](xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning*) method. The `maximumBinCount` parameter enables you to specify the number of bins needed to classify your data. In this example, data will be put into two bins.
 
 ```csharp
 // Define binning estimator
@@ -182,12 +182,12 @@ The result of binning creates bin bounds of `[0,200000,Infinity]`. Therefore the
 
 ## Work with categorical data
 
-Non-numeric categorical data needs to be converted to a number before being used to build a machine learning model. 
+Non-numeric categorical data needs to be converted to a number before being used to build a machine learning model.
 
 Using the following input data which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView):
 
 ```csharp
-CarData[] cars = new CarData[] 
+CarData[] cars = new CarData[]
 {
     new CarData
     {
@@ -207,7 +207,7 @@ CarData[] cars = new CarData[]
 };
 ```
 
-The categorical `VehicleType` property can be converted into a number using the [`OneHotEncoding`](xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding*) method. 
+The categorical `VehicleType` property can be converted into a number using the [`OneHotEncoding`](xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding*) method.
 
 ```csharp
 // Define categorical transform estimator
@@ -221,7 +221,7 @@ ITransformer categoricalTransformer = categoricalEstimator.Fit(data);
 IDataView transformedData = categoricalTransformer.Transform(data);
 ```
 
-The resulting transform converts the text value of `VehicleType` to a number. The entries in the `VehicleType` column become the following when the transform is applied: 
+The resulting transform converts the text value of `VehicleType` to a number. The entries in the `VehicleType` column become the following when the transform is applied:
 
 ```text
 [
@@ -253,7 +253,7 @@ ReviewData[] reviews = new ReviewData[]
 };
 ```
 
-The minimum step to convert text to a numerical vector representation is to use the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) method. By using the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) transform, a series of transformations is applied to the input text column resulting in a numerical vector representing the lp-normalized word and character ngrams. 
+The minimum step to convert text to a numerical vector representation is to use the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) method. By using the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) transform, a series of transformations is applied to the input text column resulting in a numerical vector representing the lp-normalized word and character ngrams.
 
 ```csharp
 // Define text transform estimator
@@ -285,7 +285,7 @@ var textEstimator = mlContext.Transforms.Text.NormalizeText("Description")
     .Append(mlContext.Transforms.NormalizeLpNorm("Description"));
 ```
 
-`textEstimator` contains a subset of operations performed by the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) method. The benefit of a more complex pipeline is control and visibility over the transformations applied to the data. 
+`textEstimator` contains a subset of operations performed by the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) method. The benefit of a more complex pipeline is control and visibility over the transformations applied to the data.
 
 Using the first entry as an example, the following is a detailed description of the results produced by the transformation steps defined by `textEstimator`:
 

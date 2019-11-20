@@ -15,7 +15,7 @@ Console.WriteLine($"Name = {name}, hours = {hours:hh}")
 contains two interpolated expressions, '{name}' and '{hours:hh}'. The equivalent composite format string is:
 
 ```vb
-Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours);
+Console.WriteLine("Name = {0}, hours = {1:hh}", name, hours)
 ```
 
 The structure of an interpolated string is:

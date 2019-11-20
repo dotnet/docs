@@ -13,12 +13,12 @@ ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
 ---
 # \<add> Element for connectionManagement (Network Settings)
 Adds an IP address or DNS name to the connection management list.  
-  
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+
 ## Syntax  
   
 ```xml  

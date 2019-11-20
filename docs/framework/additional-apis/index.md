@@ -1,6 +1,6 @@
 ---
 title: "Additional class libraries and APIs"
-ms.date: "11/01/2019"
+ms.date: "11/19/2019"
 helpviewer_keywords: 
   - "Additional class libraries"
   - "Additional managed libraries"
@@ -51,6 +51,7 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Data.SqlTypes.SqlStreamChars.Seek Method](system.data.sqltypes.sqlstreamchars.seek.md)
 * [System.Data.SqlTypes.SqlStreamChars.SetLength Method](system.data.sqltypes.sqlstreamchars.setlength.md)
 * [System.Data.SqlTypes.SqlStreamChars.Write Method](system.data.sqltypes.sqlstreamchars.write.md)
+* [System.IO.MemoryStream.InternalGetOriginAndLength Method](system.io.memorystream.internalgetoriginandlength.md)
 * [System.Net.Connection Class](connection.md)
 * [System.Net.Connection.m\_WriteList Field](m_writelist.md)
 * [System.Net.ConnectionGroup Class](connectiongroup.md)

@@ -1184,11 +1184,23 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/nullable-types/boxing-nullable-types.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types#how-to-identify-a-nullable-value-type"
         },
         {
             "source_path": "docs/csharp/programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/using-nullable-types.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
         },
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md",
@@ -1510,7 +1522,7 @@
         },
         {
             "source_path": "docs/framework/app-domains/programming-with-assemblies.md",
-            "redirect_url": "/dotnet/standard/assembly/program"
+            "redirect_url": "/dotnet/standard/assembly/index"
         },
         {
             "source_path": "docs/framework/app-domains/resolve-assembly-loads.md",
@@ -1710,6 +1722,10 @@
         {
             "source_path": "docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-7.md",
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/minimum-release-dword.md",
+            "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
         },
         {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
@@ -2701,6 +2717,10 @@
         {
             "source_path": "docs/standard/assembly/friend-assemblies.md",
             "redirect_url": "/dotnet/standard/assembly/friend"
+        },
+        {
+            "source_path": "docs/standard/assembly/program.md",
+            "redirect_url": "/dotnet/standard/assembly/index"
         },
         {
             "source_path": "docs/standard/assembly/unloadability-howto.md",

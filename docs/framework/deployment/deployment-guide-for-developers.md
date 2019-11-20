@@ -162,7 +162,7 @@ In Visual Studio, to choose InstallShield deployment and add a dependency on the
 
 ### Windows Installer XML (WiX) deployment
 
-The Windows Installer XML (WiX) toolset builds Windows installation packages from XML source code. WiX supports a command-line environment that can be integrated into your build processes to build MSI and MSM setup packages. By using WiX, you can [specify the .NET Framework as a prerequisite](http://wixtoolset.org/documentation/manual/v3/howtos/redistributables_and_install_checks/install_dotnet.html), or [create a chainer](http://wixtoolset.org/documentation/manual/v3/xsd/wix/exepackage.html) to fully control the .NET Framework deployment experience. For more information about WiX, see the [Windows Installer XML (WiX) toolset](http://wixtoolset.org/) website.
+The Windows Installer XML (WiX) toolset builds Windows installation packages from XML source code. WiX supports a command-line environment that can be integrated into your build processes to build MSI and MSM setup packages. By using WiX, you can [specify the .NET Framework as a prerequisite](https://wixtoolset.org/documentation/manual/v3/howtos/redistributables_and_install_checks/install_dotnet.html), or [create a chainer](https://wixtoolset.org/documentation/manual/v3/xsd/wix/exepackage.html) to fully control the .NET Framework deployment experience. For more information about WiX, see the [Windows Installer XML (WiX) toolset](https://wixtoolset.org/) website.
 
 <a name="installing_manually"></a>
 

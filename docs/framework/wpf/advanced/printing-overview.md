@@ -17,13 +17,13 @@ helpviewer_keywords:
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
 ---
 # Printing Overview
-With Microsoft .NET Framework, application developers using Windows Presentation Foundation (WPF) have a rich new set of printing and print system management APIs. With [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], some of these print system enhancements are also available to developers creating [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications and developers using unmanaged code. At the core of this new functionality is the new XML Paper Specification (XPS) file format and the XPS print path.  
+With Microsoft .NET Framework, application developers using Windows Presentation Foundation (WPF) have a rich new set of printing and print system management APIs. With Windows Vista, some of these print system enhancements are also available to developers creating [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications and developers using unmanaged code. At the core of this new functionality is the new XML Paper Specification (XPS) file format and the XPS print path.  
   
  This topic contains the following sections.  
   
 <a name="introduction_to_XPS"></a>   
 ## About XPS  
- XPS is an electronic document format, a spool file format and a page description language. It is an open document format that uses [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)], Open Packaging Conventions (OPC), and other industry standards to create cross-platform documents. XPS simplifies the process by which digital documents are created, shared, printed, viewed, and archived. For additional information on XPS, see [XPS Documents](/windows/desktop/printdocs/documents).  
+ XPS is an electronic document format, a spool file format and a page description language. It is an open document format that uses XML, Open Packaging Conventions (OPC), and other industry standards to create cross-platform documents. XPS simplifies the process by which digital documents are created, shared, printed, viewed, and archived. For additional information on XPS, see [XPS Documents](/windows/desktop/printdocs/documents).  
   
  Several techniques for printing XPS-based content using [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] are demonstrated in [Programmatically Print XPS Files](how-to-programmatically-print-xps-files.md). You may find it useful to reference these samples during review of content contained in this topic. (Unmanaged code developers should see documentation for the [MXDC_ESCAPE function](/windows/desktop/printdocs/mxdc-escape). Windows Forms developers must use the API in the <xref:System.Drawing.Printing> namespace which does not support the full XPS print path, but does support a hybrid GDI-to-XPS print path. See **Print Path Architecture** below.)  
   
@@ -31,13 +31,13 @@ With Microsoft .NET Framework, application developers using Windows Presentation
 ## XPS Print Path  
  The XML Paper Specification (XPS) print path is a new Windows feature that redefines how printing is handled in Windows applications. Because XPS can replace a document presentation language (such as RTF), a print spooler format (such as WMF), and a page description language (such as PCL or Postscript); the new print path maintains the XPS format from application publication to the final processing in the print driver or device.  
   
- The XPS print path is built upon the XPS printer driver model (XPSDrv), which provides several benefits for developers such as [!INCLUDE[TLA#tla_wys](../../../../includes/tlasharptla-wys-md.md)] printing, improved color support, and significantly improved print performance. (For more on XPSDrv, see the [Windows Driver Kit documentation](/windows-hardware/drivers/).)  
+ The XPS print path is built upon the XPS printer driver model (XPSDrv), which provides several benefits for developers such as "what you see is what you get" (WYSIWYG) printing, improved color support, and significantly improved print performance. (For more on XPSDrv, see the [Windows Driver Kit documentation](/windows-hardware/drivers/).)  
   
  The operation of the print spooler for XPS documents is essentially the same as in previous versions of Windows. However, it has been enhanced to support the XPS print path in addition to the existing GDI print path. The new print path natively consumes an XPS spool file. While user-mode printer drivers written for previous versions of Windows will continue to work, an XPS printer driver (XPSDrv) is required in order to use the XPS print path.  
   
  The benefits of the XPS print path are significant, and include:  
   
-- [!INCLUDE[TLA2#tla_wys](../../../../includes/tla2sharptla-wys-md.md)] print support  
+- WYSIWYG print support  
   
 - Native support of advanced color profiles, which include 32 bits per channel (bpc), CMYK, named-colors, n-inks, and native support of transparency and gradients.  
   
@@ -72,7 +72,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
  To access the complete set of XPS features, the advanced print API must be used. Several relevant API are described in greater detail below. For a complete list of XPS print path APIs, see the <xref:System.Windows.Xps> and <xref:System.Printing> namespace references.  
   
 #### PrintTicket and PrintCapabilities  
- The <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes are the foundation of the advanced XPS features. Both types of objects are [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] formatted structures of print-oriented features such as collation, two-sided printing, stapling, etc. These structures are defined by the print schema. A <xref:System.Printing.PrintTicket> instructs a printer how to process a print job. The <xref:System.Printing.PrintCapabilities> class defines the capabilities of a printer. By querying the capabilities of a printer, a <xref:System.Printing.PrintTicket> can be created that takes full advantage of a printer's supported features. Similarly, unsupported features can be avoided.  
+ The <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes are the foundation of the advanced XPS features. Both types of objects are XML formatted structures of print-oriented features such as collation, two-sided printing, stapling, etc. These structures are defined by the print schema. A <xref:System.Printing.PrintTicket> instructs a printer how to process a print job. The <xref:System.Printing.PrintCapabilities> class defines the capabilities of a printer. By querying the capabilities of a printer, a <xref:System.Printing.PrintTicket> can be created that takes full advantage of a printer's supported features. Similarly, unsupported features can be avoided.  
   
  The following example demonstrates how to query the <xref:System.Printing.PrintCapabilities> of a printer and create a <xref:System.Printing.PrintTicket> using code.  
   

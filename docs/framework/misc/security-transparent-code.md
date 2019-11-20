@@ -10,24 +10,12 @@ ms.author: "mairaw"
 ---
 # Security-Transparent Code
 
-<a name="top"></a>
-
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
 Security involves three interacting pieces: sandboxing, permissions, and enforcement. Sandboxing refers to the practice of creating isolated domains where some code is treated as fully trusted and other code is restricted to the permissions in the grant set for the sandbox. The application code that runs within the grant set of the sandbox is considered to be transparent; that is, it cannot perform any operations that can affect security. The grant set for the sandbox is determined by evidence (<xref:System.Security.Policy.Evidence> class). Evidence identifies what specific permissions are required by sandboxes, and what kinds of sandboxes can be created. Enforcement refers to allowing transparent code to execute only within its grant set.
 
 > [!IMPORTANT]
 > Security policy was a key element in previous versions of the .NET Framework. Starting with the .NET Framework 4, security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](code-access-security-policy-compatibility-and-migration.md).
-
-This topic describes the transparency model in more detail. It contains the following sections:
-
-- [Purpose of the Transparency Model](#purpose)
-
-- [Specifying the Transparency Level](#level)
-
-- [Transparency Enforcement](#enforcement)
-
-<a name="purpose"></a>
 
 ## Purpose of the Transparency Model
 
@@ -42,10 +30,6 @@ Transparency was introduced in the .NET Framework version 2.0 to simplify the se
 
 > [!NOTE]
 > When you develop a partially trusted application, you have to be aware of the permission requirements for your target hosts. You can develop an application that uses resources that are not allowed by some hosts. This application will compile without error, but will fail when it is loaded into the hosted environment. If you have developed your application using Visual Studio, you can enable debugging in partial trust or in a restricted permission set from the development environment. For more information, see [How to: Debug a ClickOnce Application with Restricted Permissions](/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions). The Calculate Permissions feature provided for ClickOnce applications is also available for any partially trusted application.
-
-[Back to top](#top)
-
-<a name="level"></a>
 
 ## Specifying the Transparency Level
 
@@ -101,10 +85,6 @@ The level 1 transparency model has the following limitations:
 - Inheritance rules are not enforced.
 
 - The potential exists for transparent code to do harmful things when run in full trust.
-
-[Back to top](#top)
-
-<a name="enforcement"></a>
 
 ## Transparency Enforcement
 

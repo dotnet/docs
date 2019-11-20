@@ -52,7 +52,7 @@ The Windows Communication Foundation (WCF) WEB HTTP programming model provides t
 ## WebGet and WebInvoke Attributes  
  WCF WEB HTTP services make use of retrieval verbs (for example HTTP GET) in addition to various invoke verbs (for example HTTP POST, PUT, and DELETE). The WCF WEB HTTP programming model allows service developers to control the both the URI template and verb associated with their service operations with the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute>. The <xref:System.ServiceModel.Web.WebGetAttribute> and the <xref:System.ServiceModel.Web.WebInvokeAttribute> allow you to control how individual operations get bound to URIs and the HTTP methods associated with those URIs. For example, adding <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> in the following code.  
   
-```  
+```csharp
 [ServiceContract]  
 interface ICustomer  
 {  
@@ -76,7 +76,7 @@ interface ICustomer
   
  <xref:System.ServiceModel.Web.WebInvokeAttribute> defaults to POST but you can use it for other verbs too.  
   
-```  
+```csharp
 [ServiceContract]  
 interface ICustomer  
 {  
@@ -129,7 +129,7 @@ interface ICustomer
   
  This means the WCF WEB HTTP programming model can handle any type of data but, you may be programming against <xref:System.IO.Stream>.  
   
- [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] provides support for JSON data (AJAX) as well as Syndication feeds (including ATOM and RSS). For more information about these features, see [WCF Web HTTP Formatting](../../../../docs/framework/wcf/feature-details/wcf-web-http-formatting.md)[WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md) and [AJAX Integration and JSON Support](../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md).  
+ .NET Framework 3.5 provides support for JSON data (AJAX) as well as Syndication feeds (including ATOM and RSS). For more information about these features, see [WCF Web HTTP Formatting](../../../../docs/framework/wcf/feature-details/wcf-web-http-formatting.md)[WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md) and [AJAX Integration and JSON Support](../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md).  
   
 ## WCF WEB HTTP Programming Model and Security  
  Because the WCF WEB HTTP programming model does not support the WS-* protocols, the only way to secure a WCF WEB HTTP service is to expose the service over HTTPS using SSL. For more information about setting up SSL with IIS 7.0, see [How to implement SSL in IIS](https://go.microsoft.com/fwlink/?LinkId=131613)  

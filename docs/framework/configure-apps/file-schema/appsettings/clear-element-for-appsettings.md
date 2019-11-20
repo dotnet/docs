@@ -14,8 +14,8 @@ ms.author: "mairaw"
 
 Clears custom application settings.
 
-[**\<configuration>**](../configuration-element.md)   
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)   
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax

@@ -1,9 +1,9 @@
 ---
-title: "How to: Find Related Elements (XPath-LINQ to XML) (C#)"
+title: "How to find related elements (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 41b386ee-562d-4841-bd6b-e44a7eb69f26
 ---
-# How to: Find Related Elements (XPath-LINQ to XML) (C#)
+# How to find related elements (XPath-LINQ to XML) (C#)
 This topic shows how to get an element selecting on an attribute that is referred to by the value of another element.  
   
  The XPath expression is:  

@@ -14,8 +14,8 @@ ms.author: "mairaw"
 
 Removes a predefined section or section group.
 
-[**\<configuration>**](configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## Syntax

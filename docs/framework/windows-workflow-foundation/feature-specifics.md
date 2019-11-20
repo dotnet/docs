@@ -6,7 +6,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
 
 # Windows Workflow Foundation Feature Specifics
 
-[!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
+.NET Framework 4 adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
 
 ## Messaging Activities
 
@@ -350,6 +350,6 @@ The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> is a SQL
 
 1. In Visual Studio 2012, create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.
 
-2. Samples: [Persistence](./samples/persistence.md)
+2. Samples: [Persistence](/previous-versions/dotnet/netframework-4.0/dd699769(v%3dvs.100))
 
 3. Conceptual documentation: [SQL Workflow Instance Store](sql-workflow-instance-store.md).

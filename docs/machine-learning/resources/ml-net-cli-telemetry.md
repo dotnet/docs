@@ -12,7 +12,7 @@ The [ML.NET CLI](https://aka.ms/mlnet-cli) includes a telemetry feature that col
 
 ## How Microsoft uses the data
 
-The product team uses ML.NET CLI telemetry data to help understand how to improve the tools. For example, if customers infrequently use a particular machine learning task, the product team investigates why and uses findings to prioritize feature development. ML.NET CLI telemetry also helps with debugging of issues such as crashes and code anomalies. 
+The product team uses ML.NET CLI telemetry data to help understand how to improve the tools. For example, if customers infrequently use a particular machine learning task, the product team investigates why and uses findings to prioritize feature development. ML.NET CLI telemetry also helps with debugging of issues such as crashes and code anomalies.
 
 While the product team appreciates this insight, we also know that not everyone wants to send this data. [Find out how to disable telemetry.](#opt-out-of-data-collection)
 
@@ -52,6 +52,7 @@ The feature collects the following data:
 The data is sent securely to Microsoft servers using [Azure Application Insights](https://azure.microsoft.com/services/application-insights/) technology, held under restricted access, and used under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.
 
 ### Data points not collected
+
 The telemetry feature *doesn't* collect:
 
 - personal data, such as usernames

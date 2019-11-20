@@ -16,7 +16,7 @@ The topics in this section describe the flow-control paradigms used in workflow 
  Shows how to create workflows using a basic, sequential execution paradigm.  
   
  [State Machine Workflows](state-machine-workflows.md)  
- Discusses how to use Flowchart workflows to implement event-driven workflows in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], as a replacement for the State Machine model used in previous versions.  
+ Discusses how to use Flowchart workflows to implement event-driven workflows in .NET Framework 4, as a replacement for the State Machine model used in previous versions.  
   
  [Authoring Workflows, Activities, and Expressions Using Imperative Code](authoring-workflows-activities-and-expressions-using-imperative-code.md)  
  Describes how to author a workflow with imperative code.

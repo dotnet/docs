@@ -1,0 +1,19 @@
+name: "bc-notification"
+on: 
+  issues:
+    types: [edited, labeled]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: timheuer/issue-notifier@v1.0.2
+      env:
+        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API }}
+      with:
+        fromMailAddress: '${{ secrets.BC_NOTIFY }}'
+        toMailAddress: '${{ secrets.BC_NOTIFY }}'
+        subject: 'BC:'
+        subjectPrefix: 'BC:'
+        labelsToMonitor: "breaking-change"

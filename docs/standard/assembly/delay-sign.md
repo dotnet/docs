@@ -83,4 +83,3 @@ To delay-sign an assembly:
 - [Create assemblies](create.md)
 - [How to: Create a public-private key pair](create-public-private-key-pair.md)
 - [Sn.exe (Strong Name tool)](../../framework/tools/sn-exe-strong-name-tool.md)
-- [Program with assemblies](program.md)

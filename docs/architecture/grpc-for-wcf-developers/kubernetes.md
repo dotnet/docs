@@ -47,7 +47,7 @@ Services are meta-objects that describe Pods (or sets of Pods) and provide a way
 
 ### Deployments
 
-Deployments are the *described state* objects for Pods. If you create a pod manually, it won't be restarted when it terminates. Deployments are used to tell the cluster which Pods, and how many replicas of those Pods, should be running at the present time.
+Deployments are the *desired state* objects for Pods. If you create a pod manually, it won't be restarted when it terminates. Deployments are used to tell the cluster which Pods, and how many replicas of those Pods, should be running at the present time.
 
 ### Other objects
 

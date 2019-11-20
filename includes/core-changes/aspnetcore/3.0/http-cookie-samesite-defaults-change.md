@@ -1,6 +1,6 @@
 ### HTTP: Some cookie SameSite defaults changed to None
 
-`SameSite` is an option for cookies that can help mitigate some Cross-Site Request Forgery (CSRF) attacks. When this option was initially introduced, inconsistent defaults were used across various ASP.NET Core APIs. The inconsistency has led to confusing results. As of ASP.NET Core 3.0, these defaults are better aligned. This is an opt-in feature on a per-component basis.
+`SameSite` is an option for cookies that can help mitigate some Cross-Site Request Forgery (CSRF) attacks. When this option was initially introduced, inconsistent defaults were used across various ASP.NET Core APIs. The inconsistency has led to confusing results. As of ASP.NET Core 3.0, these defaults are better aligned. You must opt in to this feature on a per-component basis.
 
 #### Version introduced
 
@@ -8,11 +8,11 @@
 
 #### Old behavior
 
-APIs defaulted to `SameSiteMode.Lax`.
+Similar ASP.NET Core APIs used different default <xref:Microsoft.AspNetCore.Http.SameSiteMode> values. An example of the inconsistency is seen in `HttpResponse.Cookies.Append(String, String)` and `HttpResponse.Cookies.Append(String, String, CookieOptions)`, which defaulted to `SameSiteMode.None` and `SameSiteMode.Lax`, respectively.
 
 #### New behavior
 
-APIs default to `SameSiteMode.None`.
+All the affected APIs default to `SameSiteMode.None`.
 
 #### Reason for change
 
@@ -39,4 +39,3 @@ ASP.NET Core
 - `Overload:Microsoft.AspNetCore.Builder.CookiePolicyOptions.MinimumSameSitePolicy`
 
 -->
- 

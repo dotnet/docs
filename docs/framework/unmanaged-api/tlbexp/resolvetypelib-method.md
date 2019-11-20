@@ -13,8 +13,6 @@ helpviewer_keywords:
 ms.assetid: 95d2aa0d-8eeb-4a9f-a216-5249f7e2c167
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ResolveTypeLib Method
 Resolves the simple name of a type library by returning its fully qualified path.  

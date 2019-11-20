@@ -15,7 +15,7 @@ Removes the association between an event and an event handler.
   
 ## Syntax  
   
-```  
+```vb  
 RemoveHandler event, AddressOf eventhandler  
 ```  
   

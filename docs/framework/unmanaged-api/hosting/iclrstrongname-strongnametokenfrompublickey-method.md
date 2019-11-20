@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7962ce88-7e86-4a6f-8298-621b01ffc3c2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameTokenFromPublicKey Method
 Gets a token that represents a public key. A strong name token is the shortened form of a public key.  

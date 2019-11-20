@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 701281dd-2936-45c8-a1f0-3bf7332b093b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugMappingResult Enumeration
 Provides the details of how the value of the instruction pointer (IP) was obtained.  

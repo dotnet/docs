@@ -1,13 +1,10 @@
 ---
 title: WCF endpoints and gRPC methods - gRPC for WCF Developers
 description: Comparison of WCF endpoints declared with ServiceContract and OperationContract attributes, and gRPC methods declared in Protobuf
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # WCF endpoints and gRPC methods
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 In WCF, when you're writing your application code, you use one of the following methods:
 

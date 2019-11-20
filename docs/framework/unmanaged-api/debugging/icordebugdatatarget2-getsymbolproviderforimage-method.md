@@ -2,8 +2,6 @@
 title: "ICorDebugDataTarget2::GetSymbolProviderForImage Method"
 ms.date: "03/30/2017"
 ms.assetid: b7c0a2f0-e904-43b3-98e1-d669e8a589e8
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2::GetSymbolProviderForImage Method
 Returns the symbol-provider for a module from the base address of that module.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9e15a0c1-8ab6-43d0-ae28-6ec7a4edd913
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLROnEventManager Interface
 Provides methods that allow the host to register and unregister callbacks for common language runtime (CLR) events.  

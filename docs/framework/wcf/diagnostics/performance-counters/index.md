@@ -112,19 +112,16 @@ config.Save();
 > If you have duplicate operation names on a contract, you only get one counter instances for both operations.  
   
 ## Programming the WCF Performance Counters  
- Several files are installed in the SDK install folder so that you can access the WCF performance counters programmatically. These files are listed as follows.  
+
+Several files are installed in the SDK install folder so that you can access the WCF performance counters programmatically. These files are listed as follows:
   
-- _ServiceModelEndpointPerfCounters.vrg  
+- *\_ServiceModelEndpointPerfCounters.vrg*
+- *\_ServiceModelOperationPerfCounters.vrg*
+- *\_ServiceModelServicePerfCounters.vrg*  
+- *\_SMSvcHostPerfCounters.vrg*
+- *\_TransactionBridgePerfCounters.vrg*
   
-- _ServiceModelOperationPerfCounters.vrg  
-  
-- _ServiceModelServicePerfCounters.vrg  
-  
-- _SMSvcHostPerfCounters.vrg  
-  
-- _TransactionBridgePerfCounters.vrg  
-  
- For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://go.microsoft.com/fwlink/?LinkId=95179).  
+For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90)).
   
 ## See also
 

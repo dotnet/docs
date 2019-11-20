@@ -6,44 +6,24 @@ helpviewer_keywords:
   - "garbage collection, troubleshooting"
   - "garbage collection, performance"
 ms.assetid: c203467b-e95c-4ccf-b30b-953eb3463134
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Garbage Collection and Performance
 
-<a name="top"></a> This topic describes issues related to garbage collection and memory usage. It addresses issues that pertain to the managed heap and explains how to minimize the effect of garbage collection on your applications. Each issue has links to procedures that you can use to investigate problems.
-
-This topic contains the following sections:
-
-- [Performance Analysis Tools](#performance_analysis_tools)
-
-- [Troubleshooting Performance Issues](#troubleshooting_performance_issues)
-
-- [Troubleshooting Guidelines](#troubleshooting_guidelines)
-
-- [Performance Check Procedures](#performance_check_procedures)
-
-<a name="performance_analysis_tools"></a>
+This topic describes issues related to garbage collection and memory usage. It addresses issues that pertain to the managed heap and explains how to minimize the effect of garbage collection on your applications. Each issue has links to procedures that you can use to investigate problems.
 
 ## Performance Analysis Tools
 
-The following sections describe the tools that are available for investigating memory usage and garbage collection issues. The [procedures](#performance_check_procedures) provided later in this topic refer to these tools.
-
-<a name="perf_counters"></a>
+The following sections describe the tools that are available for investigating memory usage and garbage collection issues. The [procedures](#performance-check-procedures) provided later in this topic refer to these tools.
 
 ### Memory Performance Counters
 
 You can use performance counters to gather performance data. For instructions, see [Runtime Profiling](../../../docs/framework/debug-trace-profile/runtime-profiling.md). The .NET CLR Memory category of performance counters, as described in [Performance Counters in the .NET Framework](../../../docs/framework/debug-trace-profile/performance-counters.md), provides information about the garbage collector.
-
-<a name="sos"></a>
 
 ### Debugging with SOS
 
 You can use the [Windows Debugger (WinDbg)](/windows-hardware/drivers/debugger/index) to inspect objects on the managed heap.
 
 To install WinDbg, install Debugging Tools for Windows from the [Download Debugging Tools for Windows](/windows-hardware/drivers/debugger/debugger-download-tools) page.
-
-<a name="etw"></a>
 
 ### Garbage Collection ETW Events
 
@@ -57,8 +37,6 @@ Event tracing for Windows (ETW) is a tracing system that supplements the profili
 
 ETW event logging is efficient and will not mask any performance problems associated with garbage collection. A process can provide its own events in conjunction with ETW events. When logged, both the application's events and the garbage collection events can be correlated to determine how and when heap problems occur. For example, a server application could provide events at the start and end of a client request.
 
-<a name="profiling_api"></a>
-
 ### The Profiling API
 
 The common language runtime (CLR) profiling interfaces provide detailed information about the objects that were affected during garbage collection. A profiler can be notified when a garbage collection starts and ends. It can provide reports about the objects on the managed heap, including an identification of objects in each generation. For more information, see [Profiling Overview](../../../docs/framework/unmanaged-api/profiling/profiling-overview.md).
@@ -68,10 +46,6 @@ Profilers can provide comprehensive information. However, complex profilers can 
 ### Application Domain Resource Monitoring
 
 Starting with the .NET Framework 4, Application domain resource monitoring (ARM) enables hosts to monitor CPU and memory usage by application domain. For more information, see [Application Domain Resource Monitoring](../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md).
-
-[Back to top](#top)
-
-<a name="troubleshooting_performance_issues"></a>
 
 ## Troubleshooting Performance Issues
 
@@ -209,10 +183,6 @@ The duration of a collection is primarily a factor of the number of objects that
 |------------------------|
 |[Determine if high CPU usage is caused by garbage collection.](#HighCPU)<br /><br /> [Set a breakpoint at the end of garbage collection.](#GenBreak)|
 
-[Back to top](#top)
-
-<a name="troubleshooting_guidelines"></a>
-
 ## Troubleshooting Guidelines
 
 This section describes guidelines that you should consider as you begin your investigations.
@@ -254,10 +224,6 @@ The following procedure describes how to set a breakpoint so that you can measur
   This command forces a break if **RestartEE** is executed after generation 2 objects have been reclaimed for garbage collection.
 
   In server garbage collection, only one thread calls **RestartEE**, so the breakpoint will occur only once during a generation 2 garbage collection.
-
-[Back to top](#top)
-
-<a name="performance_check_procedures"></a>
 
 ## Performance Check Procedures
 

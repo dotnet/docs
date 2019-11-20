@@ -11,7 +11,7 @@ ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
 A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. There is no null-terminating character at the end of a C# string; therefore a C# string can contain any number of embedded null characters ('\0'). The <xref:System.String.Length%2A> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object.  
   
 ## string vs. System.String  
- In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, and you can use whichever naming convention you prefer. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/keywords/string.md). For more information about the type and its methods, see <xref:System.String>.  
+ In C#, the `string` keyword is an alias for <xref:System.String>. Therefore, `String` and `string` are equivalent, and you can use whichever naming convention you prefer. The `String` class provides many methods for safely creating, manipulating, and comparing strings. In addition, the C# language overloads some operators to simplify common string operations. For more information about the keyword, see [string](../../language-reference/builtin-types/reference-types.md). For more information about the type and its methods, see <xref:System.String>.  
   
 ## Declaring and Initializing Strings  
  You can declare and initialize strings in various ways, as shown in the following example:  
@@ -31,7 +31,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
   
  [!code-csharp[csProgGuideStrings#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#25)]  
   
- For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see [How to: Modify String Contents](../../how-to/modify-string-contents.md).  
+ For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see [How to modify string contents](../../how-to/modify-string-contents.md).  
   
 ## Regular and Verbatim String Literals  
  Use regular string literals when you must embed escape characters provided by C#, as shown in the following example:  
@@ -85,7 +85,7 @@ The <xref:System.String.Format%2A?displayProperty=nameWithType> utilizes placeho
 For more information on formatting .NET types see [Formatting Types in .NET](../../../standard/base-types/formatting-types.md).
   
 ## Substrings  
- A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring%2A> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf%2A> method. Use the <xref:System.String.Replace%2A> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring%2A> method, <xref:System.String.Replace%2A> actually returns a new string and does not modify the original string. For more information, see [How to: search strings](../../how-to/search-strings.md) and [How to: Modify String Contents](../../how-to/modify-string-contents.md).  
+ A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring%2A> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf%2A> method. Use the <xref:System.String.Replace%2A> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring%2A> method, <xref:System.String.Replace%2A> actually returns a new string and does not modify the original string. For more information, see [How to search strings](../../how-to/search-strings.md) and [How to modify string contents](../../how-to/modify-string-contents.md).
   
  [!code-csharp[csProgGuideStrings#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/Strings.cs#9)]  
   
@@ -125,12 +125,12 @@ string s = String.Empty;
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[How to: Modify String Contents](../../how-to/modify-string-contents.md)|Illustrates techniques to transform strings and modify the contents of strings.|  
-|[How to: Compare Strings](../../how-to/compare-strings.md)|Shows how to perform ordinal and culture specific comparisons of strings.|  
-|[How to: Concatenate Multiple Strings](../../how-to/concatenate-multiple-strings.md)|Demonstrates various ways to join multiple strings into one.|
-|[How to: Parse Strings Using String.Split](../../how-to/parse-strings-using-split.md)|Contains code examples that illustrate how to use the `String.Split` method to parse strings.|  
-|[How to: Search Strings](../../how-to/search-strings.md)|Explains how to use search for specific text or patterns in strings.|  
-|[How to: Determine Whether a String Represents a Numeric Value](./how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
+|[How to modify string contents](../../how-to/modify-string-contents.md)|Illustrates techniques to transform strings and modify the contents of strings.|  
+|[How to compare strings](../../how-to/compare-strings.md)|Shows how to perform ordinal and culture specific comparisons of strings.|  
+|[How to concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)|Demonstrates various ways to join multiple strings into one.|
+|[How to parse strings using String.Split](../../how-to/parse-strings-using-split.md)|Contains code examples that illustrate how to use the `String.Split` method to parse strings.|  
+|[How to search strings](../../how-to/search-strings.md)|Explains how to use search for specific text or patterns in strings.|  
+|[How to determine whether a string represents a numeric value](./how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
 |[String interpolation](../../language-reference/tokens/interpolated.md)|Describes the string interpolation feature that provides a convenient syntax to format strings.|
 |[Basic String Operations](../../../standard/base-types/basic-string-operations.md)|Provides links to topics that use <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> methods to perform basic string operations.|  
 |[Parsing Strings](../../../standard/base-types/parsing-strings.md)|Describes how to convert string representations of .NET base types to instances of the corresponding types.|  

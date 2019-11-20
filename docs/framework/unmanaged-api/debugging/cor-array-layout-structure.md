@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: aa20ac3d-6f60-4aa2-91c5-f3a86f82eba8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_ARRAY_LAYOUT Structure
 Provides information about the layout of an array object in memory.  

@@ -2,8 +2,6 @@
 title: "ICorDebugDataTarget3::GetLoadedModules Method"
 ms.date: "03/30/2017"
 ms.assetid: 9a48c05b-1949-416e-933c-52549b6fcf5e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget3::GetLoadedModules Method
 Gets a list of the modules that have been loaded so far.  

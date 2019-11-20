@@ -11,7 +11,7 @@ In a microservices architecture, each microservice exposes a set of (typically) 
 
 A possible approach is to use a direct client-to-microservice communication architecture. In this approach, a client app can make requests directly to some of the microservices, as shown in Figure 4-12.
 
-![Diagram showing client-to-microservice communication architecture.](./media/direct-client-to-microservice-communication-versus-the-API-Gateway-pattern/direct-client-to-microservice-communication.png)
+![Diagram showing client-to-microservice communication architecture.](./media/direct-client-to-microservice-communication.png)
 
 **Figure 4-12**. Using a direct client-to-microservice communication architecture
 
@@ -126,7 +126,7 @@ There can be many more cross-cutting concerns offered by the API Gateways produc
 
 **Figure 4-14**. Using Azure API Management for your API Gateway
 
-Azure API Management solves both your API Gateway and Management needs like logging, security, metering, etc. In this case, when using a product like Azure API Management, the fact that you might have a single API Gateway is not so risky because these kinds of API Gateways are "thinner", meaning that you don't implement custom C# code that could evolve towards a monolithic component. 
+Azure API Management solves both your API Gateway and Management needs like logging, security, metering, etc. In this case, when using a product like Azure API Management, the fact that you might have a single API Gateway is not so risky because these kinds of API Gateways are "thinner", meaning that you don't implement custom C# code that could evolve towards a monolithic component.
 
 The API Gateway products usually act like a reverse proxy for ingress communication, where you can also filter the APIs from the internal microservices plus apply authorization to the published APIs in this single tier.
 

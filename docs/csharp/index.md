@@ -14,6 +14,8 @@ helpviewer_keywords:
 The C# guide provides many resources about the C# language. This site has many different audiences. Depending on your experience with programming, or with the C# language and .NET, you may wish to explore different sections of this guide.
 
 - For brand-new developers:
+  - Watch the [C# 101 video series](https://aka.ms/dotnet3-csharp). It provides an introduction to the important concepts you'll explore in these tutorials.
+
   - Start with the [Introduction to C# tutorials](tutorials/intro-to-csharp/index.md). These tutorials let you explore the C# language interactively in your browser. From there, you can move on to other [tutorials](tutorials/index.md). These tutorials show you how to create C# programs from scratch. The tutorials provide a step-by-step process to create programs. They show the language concepts and how to build C# programs on your own. If you prefer reading overview information first, try the [tour of the C# language](tour-of-csharp/index.md). It explains the concepts of the C# language. After reading this, you'll have a basic understanding of the language, and be ready to try the tutorials, or build something on your own.
 
 - For developers new to C#:
@@ -55,11 +57,11 @@ There are several sections in the C# Guide. You can read them in order, or jump 
 - [Language Reference](language-reference/index.md)
   - This section contains the reference material on the C# language. This material helps you understand the syntax and semantics of C#. It also includes reference material on types, operators, attributes, preprocessor directives, compiler switches, compiler errors, and compiler warnings.
 
-- [C# Language Specification](./language-reference/language-specification/index.md)
+- [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction)
   - Links to the latest versions of the C# language specification.
 
 ## See also
 
-- [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)
+- [Getting Started with Visual C#](/visualstudio/ide/quickstart-csharp-console)
 - [.NET Guide](../standard/index.md)
 - [C# Samples](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)

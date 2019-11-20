@@ -55,7 +55,7 @@ On the client, you must configure an address that the server can use to connect 
 
 When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.
 
-```
+```console
 Press <ENTER> to terminate client once the output is displayed.
 
 Result(100)
@@ -71,7 +71,7 @@ When you run the sample, you see the messages returned to the client on the call
 
 1. Install ASP.NET 4.0 using the following command.
 
-    ```
+    ```console
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 
@@ -82,7 +82,7 @@ When you run the sample, you see the messages returned to the client on the call
 4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
 
     > [!IMPORTANT]
-    > When running the client in a cross-machine configuration, be sure to replace localhost in both the `address` attribute of the [\<endpoint> of \<client>](../../configure-apps/file-schema/wcf/endpoint-of-client.md) element and the `clientBaseAddress` attribute of the [\<binding>](../../../../docs/framework/misc/binding.md) element of the [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md) element with the name of the appropriate machine, as shown:
+    > When running the client in a cross-machine configuration, be sure to replace localhost in both the `address` attribute of the [\<endpoint> of \<client>](../../configure-apps/file-schema/wcf/endpoint-of-client.md) element and the `clientBaseAddress` attribute of the [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element of the [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md) element with the name of the appropriate machine, as shown:
 
     ```xml
     <client>

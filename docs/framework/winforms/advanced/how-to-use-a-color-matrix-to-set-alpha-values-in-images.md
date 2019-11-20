@@ -19,7 +19,7 @@ The <xref:System.Drawing.Bitmap> class (which inherits from the <xref:System.Dra
   
  During rendering, the alpha values in the bitmap are converted to 80 percent of what they were. This results in an image that is blended with the background. As the following illustration shows, the bitmap image looks transparent; you can see the solid black line through it.  
   
- ![Alpha Blending Using a Matrix](./media/image2.png "image2")  
+ ![Screenshot of alpha blending using a matrix.](./media/how-to-use-a-color-matrix-to-set-alpha-values-in-images/alpha-blending-matrix.png "image2")  
   
  Where the image is over the white portion of the background, the image has been blended with the color white. Where the image crosses the black line, the image is blended with the color black.  
   

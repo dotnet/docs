@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "fusion interfaces [.NET Framework]"
   - "unmanaged interfaces [.NET Framework], fusion"
 ms.assetid: e2cf98b7-40c1-4f74-86c7-8a76dd9da677
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Fusion Interfaces
 This section describes the unmanaged interfaces that the fusion API uses to access the properties of an application's resources and to locate the correct versions of those resources for the application.  

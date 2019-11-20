@@ -9,7 +9,9 @@ The solution folder contains a *SeedWork* folder. This folder contains custom ba
 
 Figure 7-12 shows the classes that form the seedwork of the domain model in the ordering microservice. It has a few custom base classes like Entity, ValueObject, and Enumeration, plus a few interfaces. These interfaces (IRepository and IUnitOfWork) inform the infrastructure layer about what needs to be implemented. Those interfaces are also used through Dependency Injection from the application layer.
 
-![The detailed contents of the SeedWork folder, containing base classes and interfaces: Entity.cs, Enumeration.cs, IAggregateRoot.cs, IRepository.cs, IUnitOfWork.cs, and ValueObject.cs](./media/image13.PNG)
+:::image type="complex" source="./media/seedwork-domain-model-base-classes-interfaces/vs-solution-seedwork-classes.png" alt-text="Screenshot of the classes contained in the SeedWork folder.":::
+The detailed contents of the SeedWork folder, containing base classes and interfaces: Entity.cs, Enumeration.cs, IAggregateRoot.cs, IRepository.cs, IUnitOfWork.cs, and ValueObject.cs.
+:::image-end:::
 
 **Figure 7-12**. A sample set of domain model “seedwork" base classes and interfaces
 
@@ -24,9 +26,9 @@ The following code is an example of an Entity base class where you can place cod
 public abstract class Entity
 {
     int? _requestedHashCode;
-    int _Id;    
+    int _Id;
     private List<INotification> _domainEvents;
-    public virtual int Id 
+    public virtual int Id
     {
         get
         {
@@ -38,7 +40,7 @@ public abstract class Entity
         }
     }
 
-    public List<INotification> DomainEvents => _domainEvents;        
+    public List<INotification> DomainEvents => _domainEvents;
     public void AddDomainEvent(INotification eventItem)
     {
         _domainEvents = _domainEvents ?? new List<INotification>();

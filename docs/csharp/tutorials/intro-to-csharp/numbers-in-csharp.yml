@@ -18,7 +18,7 @@ items:
 - title: Explore integer math
   durationInMinutes: 4
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the **Run** button:
+    Run the following code in the interactive window. Select the **Enter focus mode** button. Then, type the following code block in the interactive window and select **Run**:
 
     ```csharp
     int a = 18;
@@ -38,7 +38,7 @@ items:
     > [!TIP]
     > Throughout this interactive tutorial, you can explore on your own by modifying the code you've written in the interactive window. This tutorial provides examples that you can try at each step.
 
-    Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, click the **Run** button.
+    Start by exploring those different operations. Modify the third line to try each of these operations. After each edit, select the **Run** button.
 
     Subtraction:
 
@@ -120,7 +120,7 @@ items:
     Console.WriteLine(d);
     ```
 
-    Click **Run** again to see the results.
+    Select **Run** again to see the results.
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
@@ -295,13 +295,11 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
-    You've completed the "Numbers in C#" interactive tutorial. You can click the **Branches and Loops** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
+    You've completed the "Numbers in C#" interactive tutorial. You can select the **Branches and Loops** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
     You can learn more about numbers in C# in the following topics:
 
-    - [Integral types](../../language-reference/builtin-types/integral-numeric-types.md)
-    - [Floating-Point Types Table](../../language-reference/builtin-types/floating-point-numeric-types.md)
-    - [Built-In Types Table](../../language-reference/keywords/built-in-types-table.md)
-    - [Implicit Numeric Conversions Table](../../language-reference/keywords/implicit-numeric-conversions-table.md)
-    - [Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md)
+    - [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
+    - [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)
+    - [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md)
 

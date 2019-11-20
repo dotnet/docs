@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 67a8a9f2-dee3-44b2-a1c0-f307a3bdf90f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameTokenFromAssemblyEx Function
 Creates a strong name token from the specified assembly file, and returns the public key that the token represents.  

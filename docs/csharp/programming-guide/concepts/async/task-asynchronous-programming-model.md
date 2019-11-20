@@ -40,7 +40,7 @@ You can find a complete Windows Presentation Foundation (WPF) example file at th
 
 ```csharp
 async Task<int> AccessTheWebAsync()
-{ 
+{
     // You need to add a reference to System.Net.Http to declare client.
     var client = new HttpClient();
 
@@ -54,7 +54,7 @@ async Task<int> AccessTheWebAsync()
     // The await operator suspends AccessTheWebAsync.
     //  - AccessTheWebAsync can't continue until getStringTask is complete.
     //  - Meanwhile, control returns to the caller of AccessTheWebAsync.
-    //  - Control resumes here when getStringTask is complete. 
+    //  - Control resumes here when getStringTask is complete.
     //  - The await operator then retrieves the string result from getStringTask.
     string urlContents = await getStringTask;
 
@@ -237,8 +237,8 @@ You can ignore the convention where an event, base class, or interface contract 
 |Title|Description|Sample|
 |-----------|-----------------|------------|
 |[Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md)|Shows how to convert a synchronous WPF solution to an asynchronous WPF solution. The application downloads a series of websites.|[Async Sample: Accessing the Web Walkthrough](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)|
-|[How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md)|Adds <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> to the previous walkthrough. The use of `WhenAll` starts all the downloads at the same time.||
-|[How to: Make Multiple Web Requests in Parallel by Using async and await (C#)](./how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)|Demonstrates how to start several tasks at the same time.|[Async Sample: Make Multiple Web Requests in Parallel](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e)|
+|[How to extend the async walkthrough by using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md)|Adds <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> to the previous walkthrough. The use of `WhenAll` starts all the downloads at the same time.||
+|[How to make multiple web requests in parallel by using async and await (C#)](./how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)|Demonstrates how to start several tasks at the same time.|[Async Sample: Make Multiple Web Requests in Parallel](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e)|
 |[Async Return Types (C#)](./async-return-types.md)|Illustrates the types that async methods can return and explains when each type is appropriate.||
 |[Control Flow in Async Programs (C#)](./control-flow-in-async-programs.md)|Traces in detail the flow of control through a succession of await expressions in an asynchronous program.|[Async Sample: Control Flow in Async Programs](https://code.msdn.microsoft.com/Async-Sample-Control-Flow-5c804fc0)|
 |[Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md)|Shows how to add the following functionality to your async solution:<br /><br /> - [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md)<br />- [Cancel Async Tasks after a Period of Time (C#)](./cancel-async-tasks-after-a-period-of-time.md)<br />- [Cancel Remaining Async Tasks after One Is Complete (C#)](./cancel-remaining-async-tasks-after-one-is-complete.md)<br />- [Start Multiple Async Tasks and Process Them As They Complete (C#)](./start-multiple-async-tasks-and-process-them-as-they-complete.md)|[Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)|
@@ -253,7 +253,7 @@ You can ignore the convention where an event, base class, or interface contract 
 
 The following code is the *MainWindow.xaml.cs* file from the WPF application that this article discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs/).
 
-[!code-csharp[async](~/samples/async/async-and-await/cs/MainWindow.xaml.cs)] 
+[!code-csharp[async](~/samples/async/async-and-await/cs/MainWindow.xaml.cs)]
 
 ## See also
 
@@ -261,4 +261,3 @@ The following code is the *MainWindow.xaml.cs* file from the WPF application tha
 - [await](../../../language-reference/operators/await.md)
 - [Asynchronous programming](../../../async.md)
 - [Async overview](../../../../standard/async.md)
- 

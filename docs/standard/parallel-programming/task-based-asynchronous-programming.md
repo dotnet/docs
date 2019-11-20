@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "parallelism, task"
 ms.assetid: 458b5e69-5210-45e5-bc44-3888f86abd6f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Task-based asynchronous programming
 
@@ -264,7 +262,7 @@ The TPL has several new public types that are useful in both parallel and sequen
 
 We recommend that you do not inherit from <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> or <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>. Instead, we recommend that you use the <xref:System.Threading.Tasks.Task.AsyncState%2A> property to associate additional data or state with a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> object. You can also use extension methods to extend the functionality of the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> classes. For more information about extension methods, see [Extension Methods](../../csharp/programming-guide/classes-and-structs/extension-methods.md) and [Extension Methods](../../visual-basic/programming-guide/language-features/procedures/extension-methods.md).
 
-If you must inherit from <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, you cannot use <xref:System.Threading.Tasks.Task.Run%2A>, <xref:System.Threading.Tasks.Task.Run%2A>, or the <xref:System.Threading.Tasks.TaskFactory?displayProperty=nameWithType>, <xref:System.Threading.Tasks.TaskFactory%601?displayProperty=nameWithType>, or <xref:System.Threading.Tasks.TaskCompletionSource%601?displayProperty=nameWithType> classes to create instances of your custom task type because these mechanisms create only <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. In addition, you cannot use the task continuation mechanisms that are provided by <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.TaskFactory>, and  <xref:System.Threading.Tasks.TaskFactory%601> to create instances of your custom task type because these mechanisms also create only <xref:System.Threading.Tasks.Task> and  <xref:System.Threading.Tasks.Task%601> objects.
+If you must inherit from <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, you cannot use <xref:System.Threading.Tasks.Task.Run%2A>, or the <xref:System.Threading.Tasks.TaskFactory?displayProperty=nameWithType>, <xref:System.Threading.Tasks.TaskFactory%601?displayProperty=nameWithType>, or <xref:System.Threading.Tasks.TaskCompletionSource%601?displayProperty=nameWithType> classes to create instances of your custom task type because these mechanisms create only <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> objects. In addition, you cannot use the task continuation mechanisms that are provided by <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.TaskFactory>, and  <xref:System.Threading.Tasks.TaskFactory%601> to create instances of your custom task type because these mechanisms also create only <xref:System.Threading.Tasks.Task> and  <xref:System.Threading.Tasks.Task%601> objects.
 
 ## Related topics
 

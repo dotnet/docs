@@ -13,9 +13,9 @@ ms.date: 06/26/2018
 
 The major features of event grid include:
 
-* Fully managed event routing.
-* Near real-time event delivery at scale.
-* Broad coverage both inside and outside of Azure.
+- Fully managed event routing.
+- Near real-time event delivery at scale.
+- Broad coverage both inside and outside of Azure.
 
 ## Scenarios
 
@@ -51,13 +51,13 @@ For a more in-depth comparison, see [Compare messaging services](https://docs.mi
 
 Using Event Grid you can take advantage of the following performance guarantees:
 
-* Subsecond end-to-end latency in the 99th percentile.
-* 99.99% availability.
-* 10 million events per second per region.
-* 100 million subscriptions per region.
-* 50-ms publisher latency.
-* 24-hour retry with exponential back-off for guaranteed delivery in the 1-day window.
-* Transparent regional failover.
+- Subsecond end-to-end latency in the 99th percentile.
+- 99.99% availability.
+- 10 million events per second per region.
+- 100 million subscriptions per region.
+- 50-ms publisher latency.
+- 24-hour retry with exponential back-off for guaranteed delivery in the 1-day window.
+- Transparent regional failover.
 
 ## Event Grid schema
 
@@ -114,26 +114,26 @@ In this chapter you learned about the Azure serverless platform that is composed
 
 ## Recommended resources
 
-* [App service plans](https://docs.microsoft.com/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)
-* [Application Insights](https://docs.microsoft.com/azure/application-insights)
-* [Application Insights Analytics](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)
-* [Azure: Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/events/Connect/2017/E102)
-* [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview)
-* [Azure Event Grid event schema](https://docs.microsoft.com/azure/event-grid/event-schema)
-* [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs)
-* [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions)
-* [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
-* [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps)
-* [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging)
-* [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
-* [Compare functions 1.x and 2.x](https://docs.microsoft.com/azure/azure-functions/functions-versions)
-* [Connecting to on-premises data sources with Azure On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)
-* [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
-* [Create your first function using the Azure CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli)
-* [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)
-* [Functions supported languages](https://docs.microsoft.com/azure/azure-functions/supported-languages)
-* [Monitor Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-monitoring)
-* [Work with Azure Functions Proxies](https://docs.microsoft.com/azure/azure-functions/functions-proxies)
+- [App service plans](https://docs.microsoft.com/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)
+- [Application Insights](https://docs.microsoft.com/azure/application-insights)
+- [Application Insights Analytics](https://docs.microsoft.com/azure/application-insights/app-insights-analytics)
+- [Azure: Bring your app to the cloud with serverless Azure Functions](https://channel9.msdn.com/events/Connect/2017/E102)
+- [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview)
+- [Azure Event Grid event schema](https://docs.microsoft.com/azure/event-grid/event-schema)
+- [Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs)
+- [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions)
+- [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
+- [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps)
+- [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging)
+- [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
+- [Compare functions 1.x and 2.x](https://docs.microsoft.com/azure/azure-functions/functions-versions)
+- [Connecting to on-premises data sources with Azure On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)
+- [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
+- [Create your first function using the Azure CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli)
+- [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)
+- [Functions supported languages](https://docs.microsoft.com/azure/azure-functions/supported-languages)
+- [Monitor Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-monitoring)
+- [Work with Azure Functions Proxies](https://docs.microsoft.com/azure/azure-functions/functions-proxies)
 
 >[!div class="step-by-step"]
 >[Previous](logic-apps.md)

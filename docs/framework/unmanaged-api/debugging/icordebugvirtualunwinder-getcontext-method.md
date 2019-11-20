@@ -2,8 +2,6 @@
 title: "ICorDebugVirtualUnwinder::GetContext Method"
 ms.date: "03/30/2017"
 ms.assetid: fe502a76-3068-47e5-a0a0-85ccb72dfac3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVirtualUnwinder::GetContext Method
 Gets the current context of this unwinder.  

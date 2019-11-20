@@ -1,13 +1,10 @@
 ---
 title: Protobuf enumerations - gRPC for WCF Developers
 description: Learn how to declare and use enumerations in Protobuf.
-author: markrendle
 ms.date: 09/09/2019
 ---
 
 # Protobuf enumerations
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Protobuf supports enumeration types, as seen in the previous section where an enum was used to determine the type of a `oneof` field. You can define your own enumeration types and Protobuf will compile them to C# enum types. Since Protobuf can be used with different languages, the naming conventions for enumerations are different from the C# conventions. However, the code generator is clever and converts the names to the traditional C# case. If the Pascal-case equivalent of the field name starts with the enumeration name, then it's removed.
 
@@ -64,7 +61,7 @@ enum Region {
 }
 
 message Product {
-  Region availableIn = 1;
+  Region available_in = 1;
 }
 ```
 

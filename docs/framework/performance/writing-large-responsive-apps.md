@@ -6,9 +6,10 @@ author: "BillWagner"
 ms.author: "wiwagn"
 ---
 # Writing Large, Responsive .NET Framework Apps
+
 This article provides tips for improving the performance of large .NET Framework apps, or apps that process a large amount of data such as files or databases. These tips come from rewriting the C# and Visual Basic compilers in managed code, and this article includes several real examples from the C# compiler. 
   
- The .NET Framework is highly productive for building apps. Powerful and safe languages and a rich collection of libraries make app building highly fruitful. However, with great productivity comes responsibility. You should use all the power of the .NET Framework, but be prepared to tune your code’s performance when needed. 
+The .NET Framework is highly productive for building apps. Powerful and safe languages and a rich collection of libraries make app building highly fruitful. However, with great productivity comes responsibility. You should use all the power of the .NET Framework, but be prepared to tune your code’s performance when needed. 
   
 ## Why the new compiler performance applies to your app  
  The .NET Compiler Platform ("Roslyn") team rewrote the C# and Visual Basic compilers in managed code to provide new APIs for modeling and analyzing code, building tools, and enabling much richer, code-aware experiences in Visual Studio. Rewriting the compilers and building Visual Studio experiences on the new compilers revealed useful performance insights that are applicable to any large .NET Framework app or any app that processes a lot of data. You don't need to know about compilers to take advantage of the insights and examples from the C# compiler. 
@@ -298,7 +299,7 @@ Func<Symbol, bool> predicate = s => s.Name == name;
      return symbols.FirstOrDefault(predicate);  
 ```  
   
- In the first line, the [lambda expression](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](https://blogs.msdn.microsoft.com/ericlippert/2003/09/17/what-are-closures/) the local variable `name`. This means that in addition to allocating an object for the [delegate](../../csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`. The compiler generates code like the following:  
+ In the first line, the [lambda expression](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) `s => s.Name == name` [closes over](https://blogs.msdn.microsoft.com/ericlippert/2003/09/17/what-are-closures/) the local variable `name`. This means that in addition to allocating an object for the [delegate](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`. The compiler generates code like the following:  
   
 ```csharp  
 // Compiler-generated class to hold environment state for lambda  

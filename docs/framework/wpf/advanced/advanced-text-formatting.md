@@ -53,7 +53,7 @@ The Windows Presentation Foundation (WPF) provides a robust set of APIs for incl
   
 - The accumulated width of text runs exceeds the maximum line width specified in either the call to create the text formatter or the call to the text formatter's <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A> method.  
   
-- A [!INCLUDE[TLA#tla_unicode](../../../../includes/tlasharptla-unicode-md.md)] newline sequence, such as "CF", "LF", or "CRLF", is returned.  
+- A Unicode newline sequence, such as "CF", "LF", or "CRLF", is returned.  
   
 <a name="section4"></a>   
 ## Providing Text Runs  

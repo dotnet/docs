@@ -70,7 +70,7 @@ This procedure also creates an instance of the <xref:System.ServiceModel.WSHttpB
 
 This example uses only code to create the client. As an alternative, you can use a configuration file, which is shown in the section following this procedure.
 
-##### To use a binding in a client with code
+#### To use a binding in a client with code
 
 1. Use the SvcUtil.exe tool to generate the proxy code from the service's metadata. For more information, see [How to: Create a Client](how-to-create-a-wcf-client.md). The generated proxy code inherits from the <xref:System.ServiceModel.ClientBase%601> class, which ensures that every client has the necessary constructors, methods, and properties to communicate with a WCF service. In this example, the generated code includes the `CalculatorClient` class, which implements the `ICalculator` interface, enabling compatibility with the service code.
 
@@ -126,7 +126,7 @@ If you do not already have a service defined, see [Designing and Implementing Se
 
 This procedure shows how to generate two files: a proxy that communicates with the service and a configuration file. It also describes changes to the client program, which is the third file used on the client.
 
-##### To use a binding in a client with configuration
+#### To use a binding in a client with configuration
 
 1. Use the SvcUtil.exe tool to generate the proxy code and configuration file from the service's metadata. For more information, see [How to: Create a Client](how-to-create-a-wcf-client.md).
 

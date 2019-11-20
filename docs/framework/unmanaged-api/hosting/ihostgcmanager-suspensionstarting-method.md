@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c381f524-94cf-4fa2-9298-50f847a03431
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostGCManager::SuspensionStarting Method
 Notifies the host that the common language runtime (CLR) is suspending execution of tasks, to perform a garbage collection.  

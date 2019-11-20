@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "time zone objects [.NET Framework], serializing"
   - "time zone objects [.NET Framework], saving"
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Save time zones to an embedded resource
 

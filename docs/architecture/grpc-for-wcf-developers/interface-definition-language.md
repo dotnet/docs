@@ -1,13 +1,10 @@
 ---
 title: Interface Definition Language - gRPC for WCF Developers
 description: Introducing the Protocol Buffers IDL.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Interface Definition Language
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 With WCF, services can expose description metadata using the Web Service Definition Language (WSDL), which is generated dynamically using .NET Reflection at runtime. Developers can use this metadata to generate clients for those services, potentially in other languages if a platform-neutral binding such as SOAP over HTTP is used.
 

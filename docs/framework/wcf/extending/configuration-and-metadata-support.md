@@ -66,10 +66,9 @@ protected override void OnApplyConfiguration(string configurationName)
   
             if (binding.GetType() != typeof(SampleProfileUdpBinding))  
             {  
-                throw new ArgumentException(string.Format(CultureInfo.CurrentCulture,  
-                    "Invalid type for binding. Expected type: {0}. Type passed in: {1}.",  
-                    typeof(SampleProfileUdpBinding).AssemblyQualifiedName,  
-                    binding.GetType().AssemblyQualifiedName));  
+                var expectedType = typeof(SampleProfileUdpBinding).AssemblyQualifiedName;
+                var typePassedIn = binding.GetType().AssemblyQualifiedName;
+                throw new ArgumentException($"Invalid type for binding. Expected type: {expectedType}. Type passed in: {typePassedIn}.");  
             }  
             SampleProfileUdpBinding udpBinding = (SampleProfileUdpBinding)binding;  
   

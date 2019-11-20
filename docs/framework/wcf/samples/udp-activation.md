@@ -71,7 +71,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
 1. Install ASP.NET 4.0 using the following command.  
   
-    ```  
+    ```console  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
@@ -117,7 +117,7 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
 3. Once the activator is started, you can run the client code by running Client.exe from a command window. The following is the sample output:  
   
-    ```  
+    ```console  
     Testing Udp Activation.  
     Start the status service.  
     Sending UDP datagrams.  

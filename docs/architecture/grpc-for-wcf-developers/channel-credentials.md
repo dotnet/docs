@@ -1,13 +1,10 @@
 ---
 title: Channel credentials - gRPC for WCF Developers
 description: How to implement and use gRPC channel credentials in ASP.NET Core 3.0.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Channel credentials
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 As the name implies, channel credentials are attached to the underlying gRPC channel. The standard form of channel credentials uses Client Certificate authentication, where the client provides a TLS certificate when it's making the connection, which is verified by the server before allowing any calls to be made.
 

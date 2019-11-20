@@ -17,8 +17,6 @@ helpviewer_keywords:
 ms.assetid: 8c2ff5d8-8c04-4423-b1e1-e1c8764b36d3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode3::GetReturnValueLiveOffset Method
 For a specified IL offset, gets the native offsets where a breakpoint should be placed so that the debugger can obtain the return value from a function.  

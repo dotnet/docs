@@ -4,11 +4,11 @@ description: Using Azure Monitor to gain visibility into your system is running.
 ms.date: 09/23/2019
 ---
 
-# Azure Monitor 
+# Azure Monitor
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-No other cloud provider has as mature of a cloud application monitoring solution as that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system, insights into any problems and optimization of your application. 
+No other cloud provider has as mature of a cloud application monitoring solution as that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system, insights into any problems and optimization of your application.
 
 ![Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.](./media/azure-monitor.png)
 **Figure 7-9**. Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.
@@ -29,12 +29,12 @@ No modern application would be complete without some artificial intelligence or 
 
 Application Insights provides a powerful query language called Kusto that can be used to find records, summarize them, and even plot charts. For instance, this query will locate all the records for the month of November 2007, group them by state, and plot the top 10 as a pie chart.
 
-```
-StormEvents 
+```kusto
+StormEvents
 | where StartTime >= datetime(2007-11-01) and StartTime < datetime(2007-12-01)
 | summarize count() by State
 | top 10 by count_
-| render piechart 
+| render piechart
 ```
 
 ![The result of the Application Insights Query](./media/azure-monitor.png)
@@ -44,7 +44,7 @@ There is a [playground for experimenting with Kusto](https://dataexplorer.azure.
 
 ## Dashboards
 
-There are several different dashboard technologies that may be used to surface the information from Azure Monitor. Perhaps the simplest is to just run queries in Application Insights and [plot the data into a chart](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards). 
+There are several different dashboard technologies that may be used to surface the information from Azure Monitor. Perhaps the simplest is to just run queries in Application Insights and [plot the data into a chart](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards).
 
 ![An example of Application Insights charts embedded in the main Azure Dashboard](./media/azure-monitor.png)
 **Figure 7-11**. An example of Application Insights charts embedded in the main Azure Dashboard.
@@ -58,17 +58,17 @@ These charts can then be embedded in the Azure portal proper through use of the 
 
 Sometimes, having data dashboards is insufficient. If nobody is awake to watch the dashboards, then it can still be many hours before a problem is addressed, or even detected. To this end, Azure Monitor also provides a top notch [alerting solution](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview). Alerts can be triggered by a wide range of conditions including:
 
-* Metric values
-* Log search queries
-* Activity Log events
-* Health of the underlying Azure platform
-* Tests for web site availability
+- Metric values
+- Log search queries
+- Activity Log events
+- Health of the underlying Azure platform
+- Tests for web site availability
 
 When triggered, the alerts can perform a wide variety of tasks. On the simple side, the alerts may just send an e-mail notification to a mailing list or a text message to an individual. More involved alerts might trigger a workflow in a tool such as PagerDuty, which is aware of who is on call for a particular application. Alerts can trigger actions in [Microsoft Flow](https://flow.microsoft.com/) unlocking near limitless possibilities for workflows.
 
-As common causes of alerts are identified, the alerts can be enhanced with details about the common causes of the alerts and the steps to take to resolve them. Highly mature Cloud Native Application deployments may opt to kick off self-healing tasks, which perform actions such as removing failing nodes from a scale set or triggering an autoscaling activity. Eventually it may no longer be necessary to wake up on-call personnel at 2AM to resolve a live-site issue as the system will be able to adjust itself to compensate or at least limp along until somebody arrives at work the next morning. 
+As common causes of alerts are identified, the alerts can be enhanced with details about the common causes of the alerts and the steps to take to resolve them. Highly mature Cloud Native Application deployments may opt to kick off self-healing tasks, which perform actions such as removing failing nodes from a scale set or triggering an autoscaling activity. Eventually it may no longer be necessary to wake up on-call personnel at 2AM to resolve a live-site issue as the system will be able to adjust itself to compensate or at least limp along until somebody arrives at work the next morning.
 
-Azure Monitor automatically leverages machine learning to understand the normal operating parameters of deployed applications. This enables it to detect services that are operating outside of their normal parameters. For instance, the typical weekday traffic on the site might be 10,000 requests per minute. And then, on a given week, suddenly the number of requests hits a highly unusual 20,000 requests per minute. [Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics) will notice this deviation from the norm and trigger an alert. At the same time, the trend analysis is smart enough to avoid firing false positives when the traffic load is expected.  
+Azure Monitor automatically leverages machine learning to understand the normal operating parameters of deployed applications. This enables it to detect services that are operating outside of their normal parameters. For instance, the typical weekday traffic on the site might be 10,000 requests per minute. And then, on a given week, suddenly the number of requests hits a highly unusual 20,000 requests per minute. [Smart Detection](https://docs.microsoft.com/azure/azure-monitor/app/proactive-diagnostics) will notice this deviation from the norm and trigger an alert. At the same time, the trend analysis is smart enough to avoid firing false positives when the traffic load is expected.
 
 >[!div class="step-by-step"]
 >[Previous](monitoring-azure-kubernetes.md)

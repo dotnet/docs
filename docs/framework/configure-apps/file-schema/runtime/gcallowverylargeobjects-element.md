@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "gcAllowVeryLargeObjects element"
   - "<gcAllowVeryLargeObjects> element"
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<gcAllowVeryLargeObjects> Element
 On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.  

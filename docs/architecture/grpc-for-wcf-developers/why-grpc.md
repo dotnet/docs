@@ -1,13 +1,10 @@
 ---
 title: Why gRPC is recommended for WCF developers - gRPC for WCF Developers
 description: A discussion of why gRPC is a good fit for WCF developers looking to migrate to modern architectures and platforms.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Why gRPC is recommended for WCF developers
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Before diving deeply into the language and techniques of gRPC, it's worth discussing why gRPC is the right solution for WCF developers who want to migrate to .NET Core, given there are alternatives available.
 

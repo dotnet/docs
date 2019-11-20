@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "BeginMethodEnumeration function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # BeginEnumeration function
 Begins an enumeration of the methods available for the object.  

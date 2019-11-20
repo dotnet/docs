@@ -11,12 +11,10 @@ helpviewer_keywords:
   - "garbage collection, workstation garbage collection"
   - "garbage collection, managed heap"
 ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Fundamentals of garbage collection
 
-<a name="top"></a> In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:
+In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:
 
 - Enables you to develop your application without having to manually free memory for objects you create.
 
@@ -27,8 +25,6 @@ ms.author: "ronpet"
 - Provides memory safety by making sure that an object cannot use the content of another object.
 
  This topic describes the core concepts of garbage collection.
-
-<a name="fundamentals_of_memory"></a>
 
 ## Fundamentals of memory
 
@@ -56,10 +52,6 @@ The following list summarizes important CLR memory concepts.
 
 Your page file is used even if physical memory pressure (that is, demand for physical memory) is low. The first time your physical memory pressure is high, the operating system must make room in physical memory to store data, and it backs up some of the data that is in physical memory to the page file. That data is not paged until it is needed, so it is possible to encounter paging in situations where the physical memory pressure is very low.
 
-[Back to top](#top)
-
-<a name="conditions_for_a_garbage_collection"></a>
-
 ## Conditions for a garbage collection
 
 Garbage collection occurs when one of the following conditions is true:
@@ -69,10 +61,6 @@ Garbage collection occurs when one of the following conditions is true:
 - The memory that is used by allocated objects on the managed heap surpasses an acceptable threshold. This threshold is continuously adjusted as the process runs.
 
 - The <xref:System.GC.Collect%2A?displayProperty=nameWithType> method is called. In almost all cases, you do not have to call this method, because the garbage collector runs continuously. This method is primarily used for unique situations and testing.
-
-[Back to top](#top)
-
-<a name="the_managed_heap"></a>
 
 ## The managed heap
 
@@ -95,10 +83,6 @@ The heap can be considered as the accumulation of two heaps: the [large object h
 
 The [large object heap](large-object-heap.md) contains very large objects that are 85,000 bytes and larger. The objects on the large object heap are usually arrays. It is rare for an instance object to be extremely large.
 
-[Back to top](#top)
-
-<a name="generations"></a>
-
 ## Generations
 
 The heap is organized into generations so it can handle long-lived and short-lived objects. Garbage collection primarily occurs with the reclamation of short-lived objects that typically occupy only a small part of the heap. There are three generations of objects on the heap:
@@ -119,7 +103,7 @@ Garbage collections occur on specific generations as conditions warrant. Collect
 
 Objects that are not reclaimed in a garbage collection are known as survivors, and are promoted to the next generation. Objects that survive a generation 0 garbage collection are promoted to generation 1; objects that survive a generation 1 garbage collection are promoted to generation 2; and objects that survive a generation 2 garbage collection remain in generation 2.
 
-When the garbage collector detects that the survival rate is high in a generation, it increases the threshold of allocations for that generation, so the next collection gets a substantial size of reclaimed memory. The CLR continually balances two priorities: not letting an application's working set get too big and not letting the garbage collection take too much time.
+When the garbage collector detects that the survival rate is high in a generation, it increases the threshold of allocations for that generation, so the next collection gets a substantial size of reclaimed memory. The CLR continually balances two priorities: not letting an application's working set get too big by delaying garbage collection and not letting the garbage collection run too frequently.
 
 ### Ephemeral generations and segments
 
@@ -139,10 +123,6 @@ The size of the ephemeral segment varies depending on whether a system is 32- or
 The ephemeral segment can include generation 2 objects. Generation 2 objects can use multiple segments (as many as your process requires and memory allows for).
 
 The amount of freed memory from an ephemeral garbage collection is limited to the size of the ephemeral segment. The amount of memory that is freed is proportional to the space that was occupied by the dead objects.
-
-[Back to top](#top)
-
-<a name="what_happens_during_a_garbage_collection"></a>
 
 ## What happens during a garbage collection
 
@@ -172,10 +152,6 @@ The following illustration shows a thread that triggers a garbage collection and
 
 ![When a thread triggers a Garbage Collection](../../../docs/standard/garbage-collection/media/gc-triggered.png "When a thread triggers a Garbage Collection")
 
-[Back to top](#top)
-
-<a name="manipulating_unmanaged_resources"></a>
-
 ## Manipulating unmanaged resources
 
 If your managed objects reference unmanaged objects by using their native file handles, you have to explicitly free the unmanaged objects, because the garbage collector tracks memory only on the managed heap.
@@ -183,10 +159,6 @@ If your managed objects reference unmanaged objects by using their native file h
 Users of your managed object may not dispose the native resources used by the object. To perform the cleanup, you can make your managed object finalizable. Finalization consists of cleanup actions that you execute when the object is no longer in use. When your managed object dies, it performs cleanup actions that are specified in its finalizer method.
 
 When a finalizable object is discovered to be dead, its finalizer is put in a queue so that its cleanup actions are executed, but the object itself is promoted to the next generation. Therefore, you have to wait until the next garbage collection that occurs on that generation (which is not necessarily the next garbage collection) to determine whether the object has been reclaimed.
-
-[Back to top](#top)
-
-<a name="workstation_and_server_garbage_collection"></a>
 
 ## Workstation and server garbage collection
 
@@ -212,6 +184,14 @@ Concurrent garbage collection is specified with the [\<gcConcurrent> element](..
 
 You can also specify server garbage collection with unmanaged hosting interfaces. Note that ASP.NET and SQL Server enable server garbage collection automatically if your application is hosted inside one of these environments.
 
+Starting with .NET Framework 4.6.2, some additional configuration options are available for server garbage collection:
+
+- By default, there is an affinity between the server GC heap and a CPU. That is, in server GC, the garbage collector assumes that a process owns the machine on which it is running, so it uses all available CPUs for garbage collection. It creates a dedicated heap, a GC thread, and, if background garbage collection is enabled, a background GC thread for each processor. This can result in poor performance, particularly on systems with multiple running instances of a server application. To not affinitize server GC threads with CPUs, use the [\<GCNoAffinitize>](../../framework/configure-apps/file-schema/runtime/gcnoaffinitize-element.md) setting in .NET Framework applications.
+
+- You can limit the number of heaps created by the garbage collector by using the [\<GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) setting in .NET Framework applications. If GC thread/processor affinity is disabled, this setting limits the number of GC heaps. If GC thread/processor affinity is enabled, this setting limits the number of GC heaps to the processors 0 to one-less-than its specified value.
+
+- If processor affinity is enabled, you can use the [\<GCHeapAffinitizeMask>](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) configuration element in .NET Framework applications to control the specific processors for which a GC heap and threads are created. Supply a decimal value. The value is a mask that defines the processors that are available to the process.
+
 ### Comparing workstation and server garbage collection
 
 The following are threading and performance considerations for workstation garbage collection:
@@ -236,10 +216,6 @@ The following are threading and performance considerations for server garbage co
 
 If you are running hundreds of instances of an application, consider using workstation garbage collection with concurrent garbage collection disabled. This will result in less context switching, which can improve performance.
 
-[Back to top](#top)
-
-<a name="concurrent_garbage_collection"></a>
-
 ## Concurrent garbage collection
 
 In workstation or server garbage collection, you can enable concurrent garbage collection, which enables threads to run concurrently with a dedicated thread that performs the garbage collection for most of the duration of the collection. This option affects only garbage collections in generation 2; generations 0 and 1 are always non-concurrent because they finish very fast.
@@ -258,13 +234,9 @@ The following illustration shows concurrent garbage collection performed on a se
 
 ![Concurrent Garbage Collection Threads](../../../docs/standard/garbage-collection/media/gc-concurrent.png "Concurrent Garbage Collection Threads")
 
-[Back to top](#top)
-
-<a name="background_garbage_collection"></a>
-
 ## Background workstation garbage collection
 
-Background garbage collection replaces concurrent workstation garbage collection starting with the .NET Framework 4, and it replaces concurrent server garbage collection starting with the .NET Framework 4.5.  In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. It is performed on a dedicated thread and is applicable only to generation 2 collections. Background garbage collection is automatically enabled by default, and can be enabled or disabled with the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration setting in .NET Framework applications. 
+Background garbage collection replaces concurrent workstation garbage collection starting with the .NET Framework 4, and it replaces concurrent server garbage collection starting with the .NET Framework 4.5.  In background garbage collection, ephemeral generations (0 and 1) are collected as needed while the collection of generation 2 is in progress. It is performed on a dedicated thread and is applicable only to generation 2 collections. Background garbage collection is automatically enabled by default, and can be enabled or disabled with the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration setting in .NET Framework applications.
 
 > [!NOTE]
 > Background garbage collection is available only in the .NET Framework 4 and later versions. In the .NET Framework 4, it is supported only for workstation garbage collection. Starting with the .NET Framework 4.5, background garbage collection is available for both workstation and server garbage collection.
@@ -278,10 +250,6 @@ Background garbage collection removes allocation restrictions imposed by concurr
 The following illustration shows background garbage collection performed on a separate dedicated thread on a workstation:
 
 ![Diagram that shows background workstation garbage collection.](./media/fundamentals/background-workstation-garbage-collection.png "Diagram that shows background workstation garbage collection.")
-
-[Back to top](#top)
-
-<a name="background_server_garbage_collection"></a>
 
 ## Background server garbage collection
 

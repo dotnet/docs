@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 6643c2af-2ee6-4789-aa25-1d8eaf500c94
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget3::GetExceptionRecord Method
 Called by the common language runtime (CLR) data access services to retrieve the exception record associated with the target process. For example, for a dump target, this would be equivalent to the exception record passed in via the `ExceptionParam` argument to the [MiniDumpWriteDump](/windows/desktop/api/minidumpapiset/nf-minidumpapiset-minidumpwritedump) function in the Windows Debug Help Library (DbgHelp).  

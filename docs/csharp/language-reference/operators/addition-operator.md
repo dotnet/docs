@@ -17,23 +17,23 @@ ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
 ---
 # + and += operators (C# reference)
 
-The `+` operator is supported by the built-in numeric types, [string](../keywords/string.md) type, and [delegate](../keywords/delegate.md) types.
+The `+` and `+=` operators are supported by the built-in [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types, the [string](../builtin-types/reference-types.md#the-string-type) type, and [delegate](../builtin-types/reference-types.md#the-delegate-type) types.
 
 For information about the arithmetic `+` operator, see the [Unary plus and minus operators](arithmetic-operators.md#unary-plus-and-minus-operators) and [Addition operator +](arithmetic-operators.md#addition-operator-) sections of the [Arithmetic operators](arithmetic-operators.md) article.
 
 ## String concatenation
 
-When one or both operands are of type [string](../keywords/string.md), the `+` operator concatenates the string representations of its operands:
+When one or both operands are of type [string](../builtin-types/reference-types.md#the-string-type), the `+` operator concatenates the string representations of its operands:
 
 [!code-csharp-interactive[string concatenation](~/samples/csharp/language-reference/operators/AdditionOperator.cs#AddStrings)]
 
-Starting with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
+Beginning with C# 6, [string interpolation](../tokens/interpolated.md) provides a more convenient way to format strings:
 
 [!code-csharp-interactive[string interpolation](~/samples/csharp/language-reference/operators/AdditionOperator.cs#UseStringInterpolation)]
 
 ## Delegate combination
 
-For operands of the same [delegate](../keywords/delegate.md) type, the `+` operator returns a new delegate instance that, when invoked, invokes the left-hand operand and then invokes the right-hand operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
+For operands of the same [delegate](../builtin-types/reference-types.md#the-delegate-type) type, the `+` operator returns a new delegate instance that, when invoked, invokes the left-hand operand and then invokes the right-hand operand. If any of the operands is `null`, the `+` operator returns the value of another operand (which also might be `null`). The following example shows how delegates can be combined with the `+` operator:
 
 [!code-csharp-interactive[delegate combination](~/samples/csharp/language-reference/operators/AdditionOperator.cs#AddDelegates)]
 
@@ -56,7 +56,7 @@ x = x + y
 ```
 
 except that `x` is only evaluated once.
-  
+
 The following example demonstrates the usage of the `+=` operator:
 
 [!code-csharp-interactive[+= examples](~/samples/csharp/language-reference/operators/AdditionOperator.cs#AddAndAssign)]
@@ -75,9 +75,7 @@ For more information, see the [Unary plus operator](~/_csharplang/spec/expressio
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
-- [String interpolation](../tokens/interpolated.md)
-- [How to: concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
-- [Delegates](../../programming-guide/delegates/index.md)
+- [How to concatenate multiple strings](../../how-to/concatenate-multiple-strings.md)
 - [Events](../../programming-guide/events/index.md)
 - [Arithmetic operators](arithmetic-operators.md)
 - [- and -= operators](subtraction-operator.md)

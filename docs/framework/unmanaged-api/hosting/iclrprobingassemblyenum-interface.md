@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: e7d3ccab-b0f0-4872-8935-0ed72920171b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRProbingAssemblyEnum Interface
 Provides methods that enable the host to get the probing identities of an assembly by using the assembly's identity information that is internal to the common language runtime (CLR), without needing to create or understand that identity.  

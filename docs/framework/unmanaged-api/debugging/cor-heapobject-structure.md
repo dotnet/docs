@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a92fdf95-492b-49ae-a741-2186e5c1d7c5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_HEAPOBJECT Structure
 Provides information about an object on the managed heap.  

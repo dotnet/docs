@@ -41,14 +41,14 @@ You can find a complete Windows Presentation Foundation (WPF) example file at th
 
 ```vb
 ' Three things to note about writing an Async Function:
-'  - The function has an Async modifier. 
+'  - The function has an Async modifier.
 '  - Its return type is Task or Task(Of T). (See "Return Types" section.)
 '  - As a matter of convention, its name ends in "Async".
 Async Function AccessTheWebAsync() As Task(Of Integer)
     Using client As New HttpClient()
-        ' Call and await separately. 
+        ' Call and await separately.
         '  - AccessTheWebAsync can do other things while GetStringAsync is also running.
-        '  - getStringTask stores the task we get from the call to GetStringAsync. 
+        '  - getStringTask stores the task we get from the call to GetStringAsync.
         '  - Task(Of String) means it is a task which returns a String when it is done.
         Dim getStringTask As Task(Of String) =
             client.GetStringAsync("https://docs.microsoft.com/dotnet")
@@ -63,9 +63,9 @@ Async Function AccessTheWebAsync() As Task(Of Integer)
         ' The Return statement specifies an Integer result.
         ' A method which awaits AccessTheWebAsync receives the Length value.
         Return urlContents.Length
-        
+
     End Using
-    
+
 End Function
 ```
 
@@ -75,7 +75,7 @@ If `AccessTheWebAsync` doesn't have any work that it can do between calling `Get
 Dim urlContents As String = Await client.GetStringAsync()
 ```
 
- The following characteristics summarize what makes the previous example an async method:
+The following characteristics summarize what makes the previous example an async method:
 
 - The method signature includes an `Async` modifier.
 - The name of an async method, by convention, ends with an "Async" suffix.

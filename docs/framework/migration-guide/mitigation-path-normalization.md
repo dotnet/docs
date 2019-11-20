@@ -2,8 +2,6 @@
 title: "Mitigation: Path Normalization"
 ms.date: "03/30/2017"
 ms.assetid: 158d47b1-ba6d-4fa6-8963-a012666bdc31
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Path Normalization
 Starting with apps the target  the .NET Framework 4.6.2, path normalization in the .NET Framework has changed.  
@@ -57,4 +55,4 @@ Apps that target the .NET Framework 4.6.1 or earlier but are running on the .NET
   
 ## See also
 
-- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-2.md)
+- [Application compatibility](application-compatibility.md)

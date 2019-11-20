@@ -28,7 +28,7 @@ ms.assetid: dea454e2-abd8-4c53-ba37-d3ed53187d64
 ## Related Sections  
  [Controls](../controls/index.md)  
   
- [Styling and Templating](../controls/styling-and-templating.md)  
+ [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
   
  [Data Binding](../advanced/optimizing-performance-data-binding.md)  
   

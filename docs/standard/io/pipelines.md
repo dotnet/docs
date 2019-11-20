@@ -17,6 +17,7 @@ ms.author: riande
 <a name="solve"></a>
 
 ## What problem does System.IO.Pipelines solve
+
 <!-- corner case doesn't MT (machine translate)   -->
 Apps that parse streaming data are composed of boilerplate code having many specialized and unusual code flows. The boilerplate and special case code is complex and difficult to maintain.
 
@@ -32,7 +33,7 @@ async Task ProcessLinesAsync(NetworkStream stream)
 {
     var buffer = new byte[1024];
     await stream.ReadAsync(buffer, 0, buffer.Length);
-    
+
     // Process a single line from the buffer
     ProcessLine(buffer);
 }
@@ -49,13 +50,13 @@ To fix the preceding problems, the following changes are required:
 
 * Buffer the incoming data until a new line is found.
 * Parse all the lines returned in the buffer.
-* It's possible that the line is bigger than 1 KB (1024 bytes). The code needs to resize the input buffer a complete line is found.
+* It's possible that the line is bigger than 1 KB (1024 bytes). The code needs to resize the input buffer until the delimiter is found in order to fit the complete line inside the buffer.
 
   * If the buffer is resized, more buffer copies are made as longer lines appear in the input.
   * To reduce wasted space, compact the buffer used for reading lines.
 
 * Consider using buffer pooling to avoid allocating memory repeatedly.
-* The following code address some of these problems:
+* The following code addresses some of these problems:
 
 [!code-csharp[](~/samples/snippets/csharp/pipelines/ProcessLinesAsync.cs?name=snippet)]
 
@@ -92,7 +93,7 @@ In the second loop, the `PipeReader` consumes the buffers written by `PipeWriter
 * Returns a <xref:System.IO.Pipelines.ReadResult> that contains two important pieces of information:
 
   * The data that was read in the form of `ReadOnlySequence<byte>`.
-  * A boolean `IsCompleted` that indicates if the end of data (EOF) has been reached. 
+  * A boolean `IsCompleted` that indicates if the end of data (EOF) has been reached.
 
 After finding the end of line (EOL) delimiter and parsing the line:
 
@@ -299,14 +300,14 @@ When writing helpers that read the buffer, any returned payload should be copied
 
 ## PipeWriter
 
-The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the caller's behalf. `PipeWriter` implements [`IBufferWriter<byte>`](xref:System.Buffers.IBufferWriter`1). `IBufferWriter<byte>` makes it possible to get access to buffers to perform writes without additional buffer copies.
+The <xref:System.IO.Pipelines.PipeWriter> manages buffers for writing on the caller's behalf. `PipeWriter` implements [`IBufferWriter<byte>`](xref:System.Buffers.IBufferWriter%601). `IBufferWriter<byte>` makes it possible to get access to buffers to perform writes without additional buffer copies.
 
 [!code-csharp[MyPipeWriter](~/samples/snippets/csharp/pipelines/MyPipeWriter.cs?name=snippet)]
 
 The previous code:
 
-* Requests a buffer of at least 5 bytes from the `PipeWriter` using <xref:System.IO.Pipelines.PipeWriter.GetSpan%2A>.
-* Writes bytes for the ASCII string `"Hello"` to the returned `Span<byte>`.
+* Requests a buffer of at least 5 bytes from the `PipeWriter` using <xref:System.IO.Pipelines.PipeWriter.GetMemory%2A>.
+* Writes bytes for the ASCII string `"Hello"` to the returned `Memory<byte>`.
 * Calls <xref:System.IO.Pipelines.PipeWriter.Advance%2A> to indicate how many bytes were written to the buffer.
 * Flushes the `PipeWriter`, which sends the bytes to the underlying device.
 

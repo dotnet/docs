@@ -9,8 +9,6 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: d62c4a4c-8a62-45aa-8f01-a8387cf36159
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo7::GetInMemorySymbolsLength Method
 [Supported in the .NET Framework 4.6.1 and later versions]  

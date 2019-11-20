@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6a81c6fe-cc22-4062-ae27-d6eeee03a7b9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAssemblyIdentityManager Interface
 Provides methods that support communication between the host and the common language runtime (CLR) about assemblies.  

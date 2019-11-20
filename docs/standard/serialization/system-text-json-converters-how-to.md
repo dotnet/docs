@@ -104,7 +104,7 @@ If you do provide a message (for example, `throw new JsonException("Error occurr
 
 ## Registration sample - Converters collection 
 
-Here's an example that makes the `DateTimeOffsetConverter` the default for properties of type `DateTimeOffset`:
+Here's an example that makes the <xref:System.ComponentModel.DateTimeOffsetConverter> the default for properties of type <xref:System.DateTimeOffset>:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RegisterConverterWithConvertersCollection.cs?name=SnippetSerialize)]
 
@@ -194,7 +194,7 @@ The following code registers the converter:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ConvertInferredTypesToObject.cs?name=SnippetRegister)]
 
-Here's an example type with Object properties:
+Here's an example type with `Object` properties:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithObjectProperties)]
 

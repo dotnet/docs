@@ -59,7 +59,7 @@ Kubernetes clusters are designed to scale to hundreds or thousands of nodes and 
 
 ## Get started with Kubernetes
 
-If you're running Docker Desktop for Windows and macOS, Kubernetes is already available. Just enable it in the **Kubernetes** section of the **Settings** window:
+If you're running Docker Desktop for Windows or Docker Desktop for Mac, Kubernetes is already available. Just enable it in the **Kubernetes** section of the **Settings** window:
 
 ![Enable Kubernetes in Docker Desktop](media/kubernetes/enable-kubernetes-docker-desktop.png)
 

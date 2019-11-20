@@ -48,7 +48,7 @@ It was into this environment that gRPC was launched, 10 years after Microsoft fi
 
 ## About this guide
 
-This guide covers the key features of gRPC. The early chapters take a high-level look at the main features of WCF and compare them to those of gRPC. It identifies where the are direct correlations between WCF and gRPC and also where gRPC offers an advantage. When there's no correlation between WCF and gRPC, or when gRPC isn't able to offer an equivalent solution to WCF, this guide will suggest workarounds or where to go for more information.
+This guide covers the key features of gRPC. The early chapters take a high-level look at the main features of WCF and compare them to those of gRPC. It identifies where there are direct correlations between WCF and gRPC and also where gRPC offers an advantage. When there's no correlation between WCF and gRPC, or when gRPC isn't able to offer an equivalent solution to WCF, this guide will suggest workarounds or where to go for more information.
 
 Using a set of sample WCF applications, Chapter 5 is a deep-dive look at converting the main types of WCF service (simple request-reply, one-way, and streaming) to their equivalents in gRPC.
 

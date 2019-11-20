@@ -30,6 +30,19 @@ The `Main` method is the entry point of a C# application. (Libraries and service
 - If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` may include the [`async`](../../language-reference/keywords/async.md) modifier. Note that this specifically excludes an `async void Main` method.
 - The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the [command-line arguments](command-line-arguments.md). Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument in the `args` array, but it is the first element of the <xref:System.Environment.GetCommandLineArgs> method.
 
+The following is a list of valid `Main` signatures:
+
+```csharp
+public static void Main() { }
+public static int Main() { }
+public static void Main(string[] args) { }
+public static int Main(string[] args) { }
+public static async Task Main() { }
+public static async Task<int> Main() { }
+public static async Task Main(string[] args) { }
+public static async Task<int> Main(string[] args) { }
+```
+
 The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.
 
 ## C# language specification

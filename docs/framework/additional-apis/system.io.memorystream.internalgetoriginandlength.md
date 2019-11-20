@@ -12,7 +12,7 @@ api_location:
 api_type:
   - "Assembly"
 ---
-# MemoryStream.InternalGetOriginAndLength Method
+# MemoryStream.InternalGetOriginAndLength method
 
 Gets the internal values of origin and length of the memory stream.
 
@@ -23,7 +23,7 @@ internal void InternalGetOriginAndLength(out int origin, out int length)
 ## Parameters
 
 - `origin` <xref:System.Int32>\
-  When this method returns, the offset of the byte array specified when creating a new <xref:System.IO.MemoryStream> object. Returns 0 if the byte array was created by <xref:System.IO.MemoryStream>.
+  When this method returns, the offset of the byte array specified when creating a new <xref:System.IO.MemoryStream> object. Contains 0 if the byte array was created by <xref:System.IO.MemoryStream>.
 
 - `length` <xref:System.Int32>\
   When this method returns, the number of bytes within the memory stream.

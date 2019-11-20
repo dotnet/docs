@@ -4,7 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: e7e62229-23ea-4e53-bef5-380d951bf95f
 ---
 # -target:appcontainerexe (C# Compiler Options)
-If you use the **-target:appcontainerexe** compiler option, the compiler creates a Windows executable (.exe) file that must be run in an app container. This option is equivalent to [-target:winexe](./target-winexe-compiler-option.md) but is designed for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
+If you use the **-target:appcontainerexe** compiler option, the compiler creates a Windows executable (.exe) file that must be run in an app container. This option is equivalent to [-target:winexe](./target-winexe-compiler-option.md) but is designed for Windows 8.x Store apps.  
   
 ## Syntax  
   
@@ -25,7 +25,7 @@ If you use the **-target:appcontainerexe** compiler option, the compiler creates
   
 2. On the **Application** tab, in the **Output type** list, choose **Windows Store App**.  
   
-     This option is available only for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app templates.  
+     This option is available only for Windows 8.x Store app templates.  
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   

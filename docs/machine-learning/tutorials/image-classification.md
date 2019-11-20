@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Generate an ML.NET image classification model from a pre-trained TensorFlow model'
 description: Learn how to transfer the knowledge from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
-ms.date: 10/30/2019
+ms.date: 11/15/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 author: natke
@@ -35,13 +35,7 @@ For this tutorial, you use part of a TensorFlow model - trained to classify imag
 ## Prerequisites
 
 * [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
-
-* Microsoft.ML 1.3.1 Nuget package
-* Microsoft.ML.ImageAnalytics 1.3.1 Nuget package
-* Microsoft.ML.TensorFlow 1.3.1 Nuget package
-
 * [The tutorial assets directory .ZIP file](https://github.com/dotnet/samples/blob/master/machine-learning/tutorials/TransferLearningTF/image-classifier-assets.zip)
-
 * [The InceptionV1 machine learning model](https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip)
 
 ## Select the right machine learning task
@@ -128,10 +122,10 @@ The training and testing images are located in the assets folders that you'll do
 
     * In Solution Explorer, right-click on your project and select **Manage NuGet Packages**.
     * Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**.
-    * Click on the **Version** drop-down, select the **1.3.1** package in the list, and select the **Install** button.
+    * Click on the **Version** drop-down, select the **1.4.0** package in the list, and select the **Install** button.
     * Select the **OK** button on the **Preview Changes** dialog.
     * Select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
-    * Repeat these steps for **Microsoft.ML.ImageAnalytics v1.3.1** and **Microsoft.ML.TensorFlow v1.3.1**.
+    * Repeat these steps for **Microsoft.ML.ImageAnalytics v1.4.0**, **SciSharp.TensorFlow.Redist v1.15.0** and **Microsoft.ML.TensorFlow v1.4.0**.
 
 ### Download assets
 

@@ -44,7 +44,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
     1. In the New Project dialog, select the **Visual C#** node followed by the **Web** node.
     1. Then select the **ASP.NET Core Web Application** project template.
     1. In the **Name** text box, type "SentimentRazor".
-    1. Make sure **Place solution and project in the same directory** is unchecked (VS 2019), or **Create directory for solution** is checked (VS 2017).
+    1. Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
     1. Select the **OK** button.
     1. Choose **Web Application** in the window that displays the different types of ASP.NET Core Projects, and then select the **OK** button.
 

@@ -37,7 +37,7 @@ This sample creates a C# .NET Core console application that categorizes the risk
 
 ## Create a console application
 
-1. Create a **C# .NET Core console application** called "RestaurantViolations". Make sure **Place solution and project in the same directory** is unchecked (VS 2019), or **Create directory for solution** is checked (VS 2017).
+1. Create a **C# .NET Core console application** called "RestaurantViolations". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
 
 ## Prepare and understand the data
 

@@ -34,7 +34,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Create a console application
 
-1. Create a **C# .NET Core Console Application** called "TaxiFarePrediction". Make sure **Place solution and project in the same directory** is unchecked (VS 2019), or **Create directory for solution** is checked (VS 2017).
+1. Create a **C# .NET Core Console Application** called "TaxiFarePrediction". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
 
 ## Prepare and understand the data
 

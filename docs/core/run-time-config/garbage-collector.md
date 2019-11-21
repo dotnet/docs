@@ -28,7 +28,7 @@ Use the following settings to select flavors of garbage collection:
 
 - Configures whether the application uses workstation garbage collection or server garbage collection.
 - Default: Workstation garbage collection (`false`).
-- For more information, see [Configure garbage collection](../../standard/garbage-collection/fundamentals.md#configuring-garbage-collection).
+- For more information, see [Configure garbage collection](../../standard/garbage-collection/fundamentals.md#configure-garbage-collection).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

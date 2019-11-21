@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 920b6483-7064-4d64-8613-fcc38ccf9b1e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::EnumModuleFrozenObjects Method
 Gets an enumerator that allows iteration over the frozen objects in the specified module.This method is obsolete.  

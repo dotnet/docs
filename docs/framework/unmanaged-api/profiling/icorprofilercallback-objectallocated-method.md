@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: eb412622-77cc-4abd-a2cd-c910fe8edd54
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ObjectAllocated Method
 Notifies the profiler that memory within the heap has been allocated for an object.  

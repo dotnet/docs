@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3b5cff02-2005-44eb-a2bc-50214c4b0e1d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback4::ReJITCompilationFinished Method
 Notifies the profiler that the just-in-time (JIT) compiler has finished recompiling a function.  

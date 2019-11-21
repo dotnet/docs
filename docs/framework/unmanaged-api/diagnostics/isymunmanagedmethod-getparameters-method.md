@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3a8074f1-facc-4a3f-bb9b-d6574fc2fc74
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetParameters Method
 Gets the parameters for this method. The parameters are returned in the order in which they are defined within the method's signature.  

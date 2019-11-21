@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e2847a36-f460-45e2-9b6c-b33b008f40d9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo3::EnumJITedFunctions Method
 Returns an enumerator for all functions that were previously JIT-compiled.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 28c8b00d-2c14-40b4-aed5-a1db0e2428eb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EmitInternalExportedTypes Method
 Emits types added to the assembly. Call this method after known internal types have been added.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: da941118-01b7-4197-ae5b-9f2f8adcd623
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_TRANSITION_REASON Enumeration
 Indicates the reason for a transition from managed to unmanaged code, or vice versa.  

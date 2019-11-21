@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 864f1267-d267-4696-8df7-1f83f8444d6f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorDeclSecurity Enumeration
 Specifies the security actions that can be performed using declarative security.  

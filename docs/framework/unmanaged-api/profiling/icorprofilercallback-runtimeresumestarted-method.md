@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5854bfb2-c568-4f19-904a-7c9d41e7b995
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeResumeStarted Method
 Notifies the profiler that the runtime is resuming all run-time threads.  

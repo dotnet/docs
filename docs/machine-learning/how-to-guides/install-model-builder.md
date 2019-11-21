@@ -21,7 +21,7 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 - .NET Core 2.1 SDK or later.
 
 > [!NOTE]
-> .NET Core 3.0 SDK is not currentl supported.
+> .NET Core 3.0 SDK is not currently supported.
 
 ## Limitations
 

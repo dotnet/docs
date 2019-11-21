@@ -57,7 +57,7 @@ For more information about some of these settings, see the [Middle ground betwee
 
 - Limits the number of heaps created by the garbage collector.
 - Applies to server garbage collection (GC) only.
-- If GC thread/processor affinity is enabled, which is the default, the heap count setting affinitizes *number* GC heaps/threads to the first *number* processors. (Use the affinitize mask or affinitize ranges settings to specify exactly which processors to affinitize.)
+- If GC processor affinity is enabled, which is the default, the heap count setting affinitizes *number* GC heaps/threads to the first *number* processors. (Use the affinitize mask or affinitize ranges settings to specify exactly which processors to affinitize.)
 - If GC thread/processor affinity is disabled, this setting limits the number of GC heaps.
 - For more information, see the [GCHeapCount remarks](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md#remarks).
 
@@ -67,17 +67,20 @@ For more information about some of these settings, see the [Middle ground betwee
 | **Environment variable** | `COMPlus_GCHeapCount` | *number* | .NET Core 3.0 |
 | **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | *number* | 4.6.2 |
 
+> [!TIP]
+> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the number of heaps to 16, the values would be 16 for the JSON file and 10 for the environment variable.
+
 ### System.GC.HeapAffinitizeMask/COMPlus_GCHeapAffinitizeMask
 
 - Specifies the exact processors that garbage collector threads should use.
 - If processor affinity is disabled by setting `System.GC.NoAffinitize` to `true`, this setting is ignored.
 - Applies to server garbage collection (GC) only.
-- The decimal value is a bit mask that defines the processors that are available to the process. For example, a decimal value of 1023 is equivalent to 0x3FF in hexadecimal notation and 0011 1111 1111 in binary notation. This specifies that the first 10 processors are to be used. To specify the next 10 processors, that is, processors 10-19, specify a decimal value of 1047552, which is equivalent to 0xFFC00 in hexadecimal and 1111 1111 1100 0000 0000 in binary.
+- The value is a bit mask that defines the processors that are available to the process. For example, a decimal value of 1023 (or a hexadecimal value of 0x3FF if you're using the environment variable) is 0011 1111 1111 in binary notation. This specifies that the first 10 processors are to be used. To specify the next 10 processors, that is, processors 10-19, specify a decimal value of 1047552 (or a hexadecimal value of 0xFFC00), which is equivalent to a binary value of 1111 1111 1100 0000 0000.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapAffinitizeMask` | *decimal value* | .NET Core 3.0 |
-| **Environment variable** | `COMPlus_GCHeapAffinitizeMask` | *decimal value* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapAffinitizeMask` | *hexadecimal value* | .NET Core 3.0 |
 | **app.config for .NET Framework** | [GCHeapAffinitizeMask](../../framework/configure-apps/file-schema/runtime/gcheapaffinitizemask-element.md) | *decimal value* | 4.6.2 |
 
 ### System.GC.GCHeapAffinitizeRanges/COMPlus_GCHeapAffinitizeRanges
@@ -91,8 +94,8 @@ For more information about some of these settings, see the [Middle ground betwee
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 1.0 |
-| **Environment variable** | `COMPlus_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 1.0 |
+| **runtimeconfig.json** | `System.GC.GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
 | **app.config for .NET Framework** | N/A | N/A | N/A |
 
 ### COMPlus_GCCpuGroup
@@ -103,7 +106,7 @@ For more information about some of these settings, see the [Middle ground betwee
 
 - Applies to server garbage collection (GC) on 64-bit Windows operation systems only.
 - Default: Disabled (0).
-- For more information, see [Maoni Stephens' blog entry](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/).
+- For more information, see [Making CPU configuration better for GC on machines with > 64 CPUs](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/) on Maoni Stephens' blog.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -111,9 +114,12 @@ For more information about some of these settings, see the [Middle ground betwee
 | **Environment variable** | `COMPlus_GCCpuGroup` | 0 - disabled<br/>1 - enabled | .NET Core 1.0 |
 | **app.config for .NET Framework** | [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md) | `false` - disabled<br/>`true` - enabled |  |
 
+> [!NOTE]
+> To configure the common language runtime (CLR) to also distribute threads from the thread pool across all CPU groups, enable the [](../../framework/configure-apps/file-schema/runtime/thread-useallcpugroups-element.md) option. For .NET Core apps, you can enable this option by setting the value of the `COMPlus_Thread_UseAllCpuGroups` environment variable to `1`.
+
 ### System.GC.NoAffinitize/COMPlus_GCNoAffinitize
 
-- Specifies whether to affinitize garbage collection threads with processors. That is, whether to create a dedicated heap, GC thread, and background GC thread (if background garbage collection is enabled) for each processor.
+- Specifies whether to *affinitize* garbage collection threads with processors. To affinitize a GC thread means that it can only run on its specific CPU. A heap is created for each GC thread.
 - Applies to server garbage collection (GC) only.
 - Default: Affinitize garbage collection threads with processors (`false`).
 
@@ -125,13 +131,15 @@ For more information about some of these settings, see the [Middle ground betwee
 
 ### System.GC.HeapHardLimit/COMPlus_GCHeapHardLimit
 
-- Specifies the maximum commit size, in bytes, for the GC heap.
-- The value can range from 0 to 18,446,744,073,709,551,615.
+- Specifies the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapHardLimit` | *decimal value* | .NET Core 3.0 |
-| **Environment variable** | `COMPlus_GCHeapHardLimit` | *decimal value* | .NET Core 3.0 |
+| **Environment variable** | `COMPlus_GCHeapHardLimit` | *hexadecimal value* | .NET Core 3.0 |
+
+> [!TIP]
+> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 80,000 bytes, the values would be 80000 for the JSON file and 13880 for the environment variable.
 
 ### System.GC.HeapHardLimitPercent/COMPlus_GCHeapHardLimitPercent
 
@@ -164,7 +172,7 @@ For more information about some of these settings, see the [Middle ground betwee
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
-| **Environment variable** | `COMPlus_GCLargePages` | 0 - disabled<br/>1 - enabled | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCLargePages` | 0 - disabled<br/>1 - enabled | .NET Core 3.0 |
 | **app.config for .NET Framework** | N/A | N/A | N/A |
 
 ## Large objects
@@ -179,6 +187,7 @@ For more information about some of these settings, see the [Middle ground betwee
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
 | **Environment variable** | `COMPlus_gcAllowVeryLargeObjects` | 1 - enabled<br/> 0 - disabled | .NET Core 1.0 |
+| **app.config for .NET Framework** | [gcAllowVeryLargeObjects](../../framework/configure-apps/file-schema/runtime/gcallowverylargeobjects-element.md) | 1 - enabled<br/> 0 - disabled | .NET Framework 4.5 |
 
 ## Large object heap threshold
 
@@ -190,6 +199,7 @@ For more information about some of these settings, see the [Middle ground betwee
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.LOHThreshold` | *size in bytes* | .NET Core 1.0 |
 | **Environment variable** | `COMPlus_GCLOHThreshold` | *size in bytes* | .NET Core 1.0 |
+| **app.config for .NET Framework** | GCLOHThreshold | *size in bytes* | .NET Framework 4.8 |
 
 ## Standalone GC
 
@@ -201,4 +211,4 @@ For more information about some of these settings, see the [Middle ground betwee
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
-| **Environment variable** | `COMPlus_GCName` | *string_path* | .NET Core 1.0 |
+| **Environment variable** | `COMPlus_GCName` | *string_path* | .NET Core 2.0 |

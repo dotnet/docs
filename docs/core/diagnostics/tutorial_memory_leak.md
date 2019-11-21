@@ -17,6 +17,7 @@ This tutorial uses a sample app which is designed to intentionally leak memory. 
 In this tutorial, you will:
 
 > [!div class="checklist"]
+>
 > * Examine managed memory usage with [dotnet-counters](dotnet-counters.md)
 > * Generate a dump file
 > * Analyze the memory usage using the dump file

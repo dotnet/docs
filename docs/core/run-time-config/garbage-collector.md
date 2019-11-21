@@ -76,7 +76,7 @@ For more information about some of these settings, see the [Middle ground betwee
 - Specifies the exact processors that garbage collector threads should use.
 - If processor affinity is disabled by setting `System.GC.NoAffinitize` to `true`, this setting is ignored.
 - Applies to server garbage collection (GC) only.
-- The value is a bit mask that defines the processors that are available to the process. For example, a decimal value of 1023 (or a hexadecimal value of 0x3FF if you're using the environment variable) is 0011 1111 1111 in binary notation. This specifies that the first 10 processors are to be used. To specify the next 10 processors, that is, processors 10-19, specify a decimal value of 1047552 (or a hexadecimal value of 0xFFC00), which is equivalent to a binary value of 1111 1111 1100 0000 0000.
+- The value is a bit mask that defines the processors that are available to the process. For example, a decimal value of 1023 (or a hexadecimal value of 3FF if you're using the environment variable) is 0011 1111 1111 in binary notation. This specifies that the first 10 processors are to be used. To specify the next 10 processors, that is, processors 10-19, specify a decimal value of 1047552 (or a hexadecimal value of FFC00), which is equivalent to a binary value of 1111 1111 1100 0000 0000.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -116,7 +116,7 @@ For more information about some of these settings, see the [Middle ground betwee
 | **app.config for .NET Framework** | [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md) | `false` - disabled<br/>`true` - enabled |  |
 
 > [!NOTE]
-> To configure the common language runtime (CLR) to also distribute threads from the thread pool across all CPU groups, enable the [](../../framework/configure-apps/file-schema/runtime/thread-useallcpugroups-element.md) option. For .NET Core apps, you can enable this option by setting the value of the `COMPlus_Thread_UseAllCpuGroups` environment variable to `1`.
+> To configure the common language runtime (CLR) to also distribute threads from the thread pool across all CPU groups, enable the [Thread_UseAllCpuGroups element](../../framework/configure-apps/file-schema/runtime/thread-useallcpugroups-element.md) option. For .NET Core apps, you can enable this option by setting the value of the `COMPlus_Thread_UseAllCpuGroups` environment variable to `1`.
 
 ### System.GC.NoAffinitize/COMPlus_GCNoAffinitize
 

@@ -43,3 +43,7 @@ After registering with the Subscription Manager, you are ready to install and en
 yum install rh-dotnet30-dotnet-runtime-3.0 -y
 scl enable rh-dotnet30 bash
 ```
+
+## How to install other versions
+
+[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]

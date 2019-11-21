@@ -11,7 +11,6 @@ This example shows how to use the <xref:System.Text.RegularExpressions.Regex> cl
 
 ```vb
 Imports System.IO
-Imports System.Linq
 Imports System.Text.RegularExpressions
 
 Class LinqRegExVB
@@ -81,7 +80,7 @@ Note that you can also query the <xref:System.Text.RegularExpressions.MatchColle
 
 ## Compiling the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a VB.NET console application project, copy and paste the code sample, and adjust the Startup object value in the project properties.
 
 ## See also
 

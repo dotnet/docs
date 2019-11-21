@@ -11,14 +11,13 @@ This example shows how to query over all the files in a specified directory tree
   
 ```vb
 Imports System.IO
-Imports System.Linq
 
 Module Module1  
     'QueryContents  
     Public Sub Main()  
   
         ' Modify this path as necessary.  
-        Dim startFolder = "c:\program files\Microsoft Visual Studio 9.0\VB\"  
+        Dim startFolder = "C:\Program Files (x86)\Microsoft Visual Studio 14.0"  
 
         ' Take a snapshot of the folder contents.
         Dim dir As New DirectoryInfo(startFolder)
@@ -30,7 +29,7 @@ Module Module1
         ' A regular expression created with the RegEx class
         ' could be used instead of the Contains method.
         Dim queryMatchingFiles = From file In fileList _
-                                 Where file.Extension = ".htm" _
+                                 Where file.Extension = ".html" _
                                  Let fileText = GetFileText(file.FullName) _
                                  Where fileText.Contains(searchTerm) _
                                  Select file.FullName
@@ -70,7 +69,7 @@ End Module
 
 ## Compiling the code
 
-Create a VB.NET console application project, with an `Imports` statement for the <xref:System.Linq> namespace.
+Create a VB.NET console application project, copy and paste the code sample, and adjust the Startup object value in the project properties.
 
 ## See also
 

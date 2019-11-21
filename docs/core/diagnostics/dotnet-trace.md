@@ -70,7 +70,7 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
 
 - **`--buffersize <size>`**
 
-  Sets the size of the in-memory circular buffer in megabytes. Default 256 MB.
+  Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
 
 - **`-o|--output <trace-file-path>`**
 
@@ -90,9 +90,9 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
 
   A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly.
 
-- **`--format <NetTrace|Speedscope>`**
+- **`--format {NetTrace|Speedscope}`**
 
-  Sets the output format for the trace file conversion.
+  Sets the output format for the trace file conversion. The default is `NetTrace`.
 
 ## dotnet-trace convert
 

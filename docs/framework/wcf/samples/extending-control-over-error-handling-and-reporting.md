@@ -114,7 +114,7 @@ catch (Exception e)
   
  When you run the sample, the operation requests and responses are displayed in the client console window. You see the division by zero and the argument-out-of-range conditions being reported as faults. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(15,3) = 18  
 Subtract(145,76) = 69  
 Multiply(9,81) = 729  

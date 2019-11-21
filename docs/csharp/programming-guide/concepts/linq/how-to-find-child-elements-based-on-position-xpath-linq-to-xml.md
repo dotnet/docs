@@ -1,9 +1,9 @@
 ---
-title: "How to: Find Child Elements Based on Position (XPath-LINQ to XML) (C#)"
+title: "How to find child elements based on position (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: e35bb269-ec86-4c96-8321-12491a0eb2c3
 ---
-# How to: Find Child Elements Based on Position (XPath-LINQ to XML) (C#)
+# How to find child elements based on position (XPath-LINQ to XML) (C#)
 Sometimes you want to find elements based on their position. You might want to find the second element, or you might want to find the third through the fifth element.  
   
  The XPath expression is:  

@@ -97,7 +97,7 @@ text representations are compliant with one of the "R", "l", "O", or "G"
 or you want to write according to one of these formats. This is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
 
 This example shows a custom converter that serializes and deserializes <xref:System.DateTime> values according to
-[the "R" standard format](../base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier.md):
+[the "R" standard format](../base-types/standard-date-and-time-format-strings.md#the-rfc1123-r-r-format-specifier):
 
 [!code-csharp[example-showing-utf8-parser-and-formatter](~/samples/snippets/standard/datetime/json/csharp/datetime-converter-examples/example2/Program.cs)]
 

@@ -13,13 +13,13 @@ The following types are no longer available:
 - <xref:System.Windows.Forms.MainMenu>
 - <xref:System.Windows.Forms.ContextMenu>
 - <xref:System.Windows.Forms.MenuItem>
-- <xref:System.Windows.Forms.Toolbar>
-- <xref:System.Windows.Forms.ToolbarAppearance>
-- <xref:System.Windows.Forms.ToolbarButton>
-- <xref:System.Windows.Forms.Toolbar.ToolbarButtonCollection>
-- <xref:System.Windows.Forms.ToolbarButtonClickEventArgs>
-- <xref:System.Windows.Forms.ToolbarButtonStyle>
-- <xref:System.Windows.Forms.ToolbarTextAlign>
+- <xref:System.Windows.Forms.ToolBar>
+- <xref:System.Windows.Forms.ToolBarAppearance>
+- <xref:System.Windows.Forms.ToolBarButton>
+- <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection>
+- <xref:System.Windows.Forms.ToolBarButtonClickEventArgs>
+- <xref:System.Windows.Forms.ToolBarButtonStyle>
+- <xref:System.Windows.Forms.ToolBarTextAlign>
 - <xref:System.Windows.Forms.DataGrid>
 - <xref:System.Windows.Forms.DataGridBoolColumn>
 - <xref:System.Windows.Forms.DataGridCell>
@@ -48,7 +48,7 @@ Each removed control has a recommended replacement control. Refer to the followi
 | Removed control (API) | Recommended replacement | Associated APIs that are removed |
 |-|-|-|
 | DataGrid | DataGridView | DataGridCell, DataGridRow, DataGridTableCollection, DataGridColumnCollection, DataGridTableStyle, DataGridColumnStyle, DataGridLineStyle, DataGridParentRowsLabel, DataGridParentRowsLabelStyle, DataGridBoolColumn, DataGridTextBox, GridColumnStylesCollection, GridTableStylesCollection, HitTestType |
-| Toolbar | ToolStrip | ToolBarAppearance |
+| ToolBar | ToolStrip | ToolBarAppearance |
 | ToolBarButton | ToolStripButton | ToolBarButtonClickEventArgs, ToolBarButtonClickEventHandler, ToolBarButtonStyle, ToolBarTextAlign|
 | ContextMenu | ContextMenuStrip | |
 | Menu | ToolStripDropDown, ToolstripDropDownMenu | MenuItemCollection |
@@ -66,13 +66,13 @@ Windows Forms
 - <xref:System.Windows.Forms.MainMenu?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.ContextMenu?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.MenuItem?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.Toolbar?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.ToolbarAppearance?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.ToolbarButton?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.Toolbar.ToolbarButtonCollection?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.ToolbarButtonClickEventArgs?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.ToolbarButtonStyle?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.ToolbarTextAlign?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.ToolBar?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.ToolBarAppearance?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.ToolBarButton?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.ToolBar.ToolBarButtonCollection?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.ToolBarButtonClickEventArgs?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.ToolBarButtonStyle?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.ToolBarTextAlign?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGrid?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridBoolColumn?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.DataGridCell?displayProperty=nameWithType>
@@ -99,13 +99,13 @@ Windows Forms
 - `T:System.Windows.Forms.MainMenu`
 - `T:System.Windows.Forms.ContextMenu`
 - `T:System.Windows.Forms.MenuItem`
-- `T:System.Windows.Forms.Toolbar`
-- `T:System.Windows.Forms.ToolbarAppearance`
-- `T:System.Windows.Forms.ToolbarButton`
-- `T:System.Windows.Forms.Toolbar.ToolbarButtonCollection`
-- `T:System.Windows.Forms.ToolbarButtonClickEventArgs`
-- `T:System.Windows.Forms.ToolbarButtonStyle`
-- `T:System.Windows.Forms.ToolbarTextAlign`
+- `T:System.Windows.Forms.ToolBar`
+- `T:System.Windows.Forms.ToolBarAppearance`
+- `T:System.Windows.Forms.ToolBarButton`
+- `T:System.Windows.Forms.ToolBar.ToolBarButtonCollection`
+- `T:System.Windows.Forms.ToolBarButtonClickEventArgs`
+- `T:System.Windows.Forms.ToolBarButtonStyle`
+- `T:System.Windows.Forms.ToolBarTextAlign`
 - `T:System.Windows.Forms.DataGrid`
 - `T:System.Windows.Forms.DataGridBoolColumn`
 - `T:System.Windows.Forms.DataGridCell`

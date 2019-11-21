@@ -59,14 +59,14 @@ For more information about some of these settings, see the [Middle ground betwee
 - Limits the number of heaps created by the garbage collector.
 - Applies to server garbage collection (GC) only.
 - If GC processor affinity is enabled, which is the default, the heap count setting affinitizes `n` GC heaps/threads to the first `n` processors. (Use the affinitize mask or affinitize ranges settings to specify exactly which processors to affinitize.)
-- If GC thread/processor affinity is disabled, this setting limits the number of GC heaps.
+- If GC processor affinity is disabled, this setting limits the number of GC heaps.
 - For more information, see the [GCHeapCount remarks](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md#remarks).
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.HeapCount` | *decimal value* | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCHeapCount` | *hexadecimal value* | .NET Core 3.0 |
-| **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | *number* | 4.6.2 |
+| **app.config for .NET Framework** | [GCHeapCount](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md) | *decimal value* | 4.6.2 |
 
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the number of heaps to 16, the values would be 16 for the JSON file and 10 for the environment variable.
@@ -195,15 +195,17 @@ For more information about some of these settings, see the [Middle ground betwee
 ### System.GC.LOHThreshold/COMPlus_GCLOHThreshold
 
 - Specifies the threshold size, in bytes, that causes objects to go on the large object heap (LOH).
+- The default threshold is 85,000 bytes.
+- The value you specify must be larger than the default threshold.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.LOHThreshold` | *decimal value* | .NET Core 1.0 |
 | **Environment variable** | `COMPlus_GCLOHThreshold` | *hexadecimal value* | .NET Core 1.0 |
-| **app.config for .NET Framework** | [GCLOHThreshold](../../framework/configure-apps/file-schema/runtime/gclohthreshold-element.md) | *size in bytes* | .NET Framework 4.8 |
+| **app.config for .NET Framework** | [GCLOHThreshold](../../framework/configure-apps/file-schema/runtime/gclohthreshold-element.md) | *decimal value* | .NET Framework 4.8 |
 
 > [!TIP]
-> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to set a threshold size of 500,000,000 bytes, the values would be 500000000 for the JSON file and 1F4 for the environment variable.
+> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to set a threshold size of 120,000 bytes, the values would be 120000 for the JSON file and 1D4C0 for the environment variable.
 
 ## Standalone GC
 

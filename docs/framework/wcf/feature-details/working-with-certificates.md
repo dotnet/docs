@@ -178,7 +178,7 @@ With this capability enabled, you can set the <xref:System.ServiceModel.Security
 
 Mapping an X.509 certificate to the token that represents a Windows user account is considered an elevation of privilege because, once mapped, the Windows token can be used to gain access to protected resources. Therefore, domain policy requires the X.509 certificate to comply with its policy prior to mapping. The *SChannel* security package enforces this requirement.
 
-When using [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] or later, WCF ensures the certificate conforms to domain policy before it is mapped to a Windows account.
+When using .NET Framework 3.5 or later versions, WCF ensures the certificate conforms to domain policy before it is mapped to a Windows account.
 
 In the first release of WCF, mapping is done without consulting the domain policy. Therefore it is possible that older applications that used to work when running under the first release, fails if the mapping is enabled and the X.509 certificate does not satisfy the domain policy.
 

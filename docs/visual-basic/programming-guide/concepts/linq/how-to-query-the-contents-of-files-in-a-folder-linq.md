@@ -23,7 +23,7 @@ Module Module1
         Dim dir As New DirectoryInfo(startFolder)
         Dim fileList = dir.GetFiles("*.*", SearchOption.AllDirectories)
 
-        Dim searchTerm = "Visual Studio"
+        Dim searchTerm = "Welcome"
 
         ' Search the contents of each file.
         ' A regular expression created with the RegEx class

@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: b0662fa1-16d7-4320-b26b-c1804e565a44
 ---
 # ComboBox Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.ComboBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.ComboBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
   
 ## ComboBox Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.ComboBox> control.  
@@ -78,4 +78,4 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
 - [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
+- [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md)

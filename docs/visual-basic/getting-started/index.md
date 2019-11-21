@@ -47,7 +47,7 @@ Covers how to receive support and give feedback.
 - [Visual Studio](/visualstudio/)\
 Provides links into the Visual Studio documentation.
 
-- [C#](../../csharp/index.md)\
+- [C#](../../csharp/index.yml)\
 Provides links into the documentation on application development with Visual C#.
 
 - [Visual C++](/cpp/)\

@@ -3,7 +3,7 @@ title: Diagnostics tools overview - .NET Core
 description: An overview of the tools and techniques available to diagnose .NET Core applications.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 10/14/2019
+ms.date: 11/21/2019
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
@@ -39,16 +39,8 @@ The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows a
 
 .NET Core includes what is called the `EventPipe` through which diagnostics data is exposed. The [dotnet-trace](dotnet-trace.md) tool allows you to consume interesting profiling data from your app that can help in scenarios where you need to root cause apps running slow.
 
-## .NET Core diagnostics walk throughs
+## .NET Core diagnostics tutorials
 
 ### Debugging a memory leak
 
-[Debugging a memory leak](app_is_leaking_memory_eventual_crash.md) walks through finding a memory leak. The [dotnet-counters](dotnet-counters.md) tool is used to confirm the leak. Then the [dotnet-dump](dotnet-dump.md) tool is used to diagnose the leak.
-
-### Debugging a slow running application
-
-[Debugging high CPU usage](app_running_slow_highcpu.md) walks through investigating high CPU usage. It uses the [dotnet-counters](dotnet-counters.md) tool to confirm the high CPU usage. It then walks through using [Trace for performance analysis utility (`dotnet-trace`)](dotnet-trace.md) or Linux `perf` to collect and view CPU usage profile.
-
-### Debugging deadlock
-
-The [debugging deadlock](hung_app.md) tutorial explores using the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
+[Tutorial: Debugging a memory leak](tutorial_memory_leak.md) walks through finding a memory leak. The [dotnet-counters](dotnet-counters.md) tool is used to confirm the leak. Then the [dotnet-dump](dotnet-dump.md) tool is used to diagnose the leak.

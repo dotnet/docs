@@ -7,7 +7,7 @@ ms.date: 10/14/2019
 ---
 # Trace for performance analysis utility (`dotnet-trace`)
 
-**This article applies to: ✓** .NET Core 3.0 SDK and later versions
+**This article applies to:** .NET Core 3.0 SDK and later versions
 
 ## Installing `dotnet-trace`
 

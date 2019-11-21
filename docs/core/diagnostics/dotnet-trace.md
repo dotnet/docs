@@ -127,7 +127,7 @@ Lists dotnet processes that can be attached to.
 ### Synopsis
 
 ```console
-dotnet-trace ps  [-h|--help]
+dotnet-trace ps [-h|--help]
 ```
 
 ## dotnet-trace list-profiles

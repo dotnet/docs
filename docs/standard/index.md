@@ -51,7 +51,7 @@ If you're interested in some of the major concepts of .NET, check out:
 
 Additionally, check out each language guide to learn about the three major .NET languages:
 
-* [C# Guide](../csharp/index.md)
+* [C# Guide](../csharp/index.yml)
 * [F# Guide](../fsharp/index.md)
 * [Visual Basic Guide](../visual-basic/index.md)
 

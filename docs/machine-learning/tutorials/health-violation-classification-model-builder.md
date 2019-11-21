@@ -3,7 +3,7 @@ title: 'Tutorial: Classify health violations with Model Builder'
 description: This tutorial illustrates how to build a multiclass classification model using ML.NET Model Builder to classify restaurant health violation severity in San Francisco.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/30/2019
+ms.date: 11/21/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
@@ -37,7 +37,7 @@ This sample creates a C# .NET Core console application that categorizes the risk
 
 ## Create a console application
 
-1. Create a **C# .NET Core console application** called "RestaurantViolations".
+1. Create a **C# .NET Core console application** called "RestaurantViolations". Make sure **Place solution and project in the same directory** is unchecked (VS 2019), or **Create directory for solution** is checked (VS 2017).
 
 ## Prepare and understand the data
 

@@ -577,11 +577,11 @@ Some examples of high contrast changes include:
 
   Before:
 
-  ![Screenshot of disabled text before accessibility improvements.](./media/whats-new-in-accessibility/wf-disabled-menu-item-before.png) 
+  ![Screenshot of an app that uses different controls running in high contrast mode before accessibility improvements.](./media/whats-new-in-accessibility/high-contrast-mode-menu-items-before.png) 
 
   After:
 
-  ![Screenshot of an app that uses different controls running in high contrast mode after accessibility improvements.](./media/whats-new-in-accessibility/wf-disabled-menu-item-after.png) 
+  ![Screenshot of an app that uses different controls running in high contrast mode after accessibility improvements.](./media/whats-new-in-accessibility/high-contrast-mode-menu-items-after.png) 
 
 - High contrast improvements in the Thread Exception Dialog.
 

@@ -1,5 +1,5 @@
 ---
-title: The .NET Framework Analyzers - .NET
+title: .NET Framework Analyzers - .NET
 description: Learn how to use the .NET Framework Analyzers in the .NET Framework Analyzers package to find and address security risks
 author: billwagner
 ms.author: wiwagn

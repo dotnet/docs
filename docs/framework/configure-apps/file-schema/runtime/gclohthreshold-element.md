@@ -7,7 +7,7 @@ helpviewer_keywords:
 ---
 # GCLOHThreshold element
 
-Specifies the threshold size, in bytes, that causes objects to go on the large object heap (LOH).
+Specifies the threshold size, in bytes, that causes the garbage collector to put objects on the large object heap (LOH).
 
 [\<configuration>](../configuration-element.md)\
 &nbsp;&nbsp;[\<runtime>](runtime-element.md)\

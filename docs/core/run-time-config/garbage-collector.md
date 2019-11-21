@@ -97,7 +97,6 @@ For more information about some of these settings, see the [Middle ground betwee
 | - | - | - | - |
 | **runtimeconfig.json** | `System.GC.GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
 | **Environment variable** | `COMPlus_GCHeapAffinitizeRanges` | Comma-separated list of processor numbers or ranges of processor numbers.<br/>Unix example: "1-10,12,50-52,70"<br/>Windows example: "0:1-10,0:12,1:50-52,1:70" | .NET Core 3.0 |
-| **app.config for .NET Framework** | N/A | N/A | N/A |
 
 ### COMPlus_GCCpuGroup
 
@@ -176,7 +175,6 @@ For more information about some of these settings, see the [Middle ground betwee
 | - | - | - | - |
 | **runtimeconfig.json** | N/A | N/A | N/A |
 | **Environment variable** | `COMPlus_GCLargePages` | 0 - disabled<br/>1 - enabled | .NET Core 3.0 |
-| **app.config for .NET Framework** | N/A | N/A | N/A |
 
 ## Large objects
 

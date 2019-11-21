@@ -148,7 +148,7 @@ To collect traces using `dotnet-trace`:
 
   - On Windows, you can use Task Manager or the `tasklist` command, for example.
   - On Linux, for example, the `ps` command.
-  - [dotnet-trace list-processes](#dotnet-trace-list-processes)
+  - [dotnet-trace ps](#dotnet-trace-ps)
 
 - Run the following command:
 

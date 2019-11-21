@@ -1,5 +1,5 @@
 ---
-title: dotnet-trace - .NET Core
+title: dotnet-trace tool - .NET Core
 description: Installing and using the dotnet-trace command-line tool.
 author: sdmaclea
 ms.author: stmaclea

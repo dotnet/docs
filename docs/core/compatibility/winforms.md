@@ -61,4 +61,4 @@ The following is a list of breaking changes in Windows Forms by .NET Core versio
 
 ## .NET Core 3.1
 
-[!INCLUDE[Deprecated controls](~/includes/core-changes/windowsforms/deprecated-controls-3.1.md)]
+[!INCLUDE[Removed controls](~/includes/core-changes/windowsforms/removed-controls-3.1.md)]

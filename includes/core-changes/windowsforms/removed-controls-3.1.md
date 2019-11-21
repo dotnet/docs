@@ -1,4 +1,4 @@
-### Deprecated controls
+### Removed controls
 
 Starting in .NET Core 3.1, some Windows Forms controls are no longer available.
 
@@ -43,7 +43,7 @@ The following types are no longer available:
 
 #### Recommended action
 
-Each deprecated control has a recommended replacement control. Refer to the following table:
+Each removed control has a recommended replacement control. Refer to the following table:
 
 | Removed control (API) | Recommended replacement | Associated APIs that are removed |
 |-|-|-|

@@ -58,3 +58,7 @@ The following is a list of breaking changes in Windows Forms by .NET Core versio
 ***
 
 [!INCLUDE[Modernization of the FolderBrowserDialog](~/includes/core-changes/windowsforms/modernized-folderbrowserdialog.md)]
+
+## .NET Core 3.1
+
+[!INCLUDE[Deprecated controls](~/includes/core-changes/windowsforms/deprecated-controls-3.1.md)]

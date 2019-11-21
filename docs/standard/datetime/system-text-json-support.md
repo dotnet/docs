@@ -79,8 +79,8 @@ the extended ISO 8601-1:2019 profile. This approach is significantly less perfor
 
 For serializing, you can use the `DateTime(Offset).ToString` method in your converter write logic. This allows you to write <xref:System.DateTime>
 and <xref:System.DateTimeOffset> values using any of the
-[standard date and time formats](../standard/base-types/standard-date-and-time-format-strings.md), and the
-[custom date and time formats](../standard/base-types/custom-date-and-time-format-strings.md).
+[standard date and time formats](../base-types/standard-date-and-time-format-strings.md), and the
+[custom date and time formats](../base-types/custom-date-and-time-format-strings.md).
 This is also significantly less performant than using the serializer's native implementation.
 
 [!code-csharp[example-showing-datetime-parse](~/samples/snippets/standard/datetime/json/csharp/datetime-converter-examples/example1/Program.cs)]
@@ -93,11 +93,11 @@ The parameter is useful for handling polymorphic cases and when using generics t
 
 You can use fast UTF-8-based parsing and formatting methods in your converter logic if your input <xref:System.DateTime> or <xref:System.DateTimeOffset>
 text representations are compliant with one of the "R", "l", "O", or "G"
-[standard date and time format strings](../standard/base-types/standard-date-and-time-format-strings.md),
+[standard date and time format strings](../base-types/standard-date-and-time-format-strings.md),
 or you want to write according to one of these formats. This is much faster than using `DateTime(Offset).Parse` and `DateTime(Offset).ToString`.
 
 This example shows a custom converter that serializes and deserializes <xref:System.DateTime> values according to
-[the "R" standard format](../standard/base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier.md):
+[the "R" standard format](../base-types/standard-date-and-time-format-strings#the-rfc1123-r-r-format-specifier.md):
 
 [!code-csharp[example-showing-utf8-parser-and-formatter](~/samples/snippets/standard/datetime/json/csharp/datetime-converter-examples/example2/Program.cs)]
 
@@ -171,7 +171,7 @@ The following levels of granularity are defined for parsing:
 
 3. "'Full date''T''Partial time'"
     1. "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
-    ([The Sortable ("s") Format Specifier](../standard/base-types/standard-date-and-time-format-strings.md#the-sortable-s-format-specifier))
+    ([The Sortable ("s") Format Specifier](../base-types/standard-date-and-time-format-strings.md#the-sortable-s-format-specifier))
     2. "yyyy'-'MM'-'dd'T'HH':'mm':'ss'.'FFFFFFF"
 
 4. "'Full date''T''Time hour'':''Minute''Time offset'"
@@ -197,7 +197,7 @@ The following levels of granularity are defined for formatting:
 
 1. "'Full date''T''Partial time'"
     1. "yyyy'-'MM'-'dd'T'HH':'mm':'ss"
-        ([The Sortable ("s") Format Specifier](../standard/base-types/standard-date-and-time-format-strings.md#the-sortable-s-format-specifier))
+        ([The Sortable ("s") Format Specifier](../base-types/standard-date-and-time-format-strings.md#the-sortable-s-format-specifier))
 
         Used to format a <xref:System.DateTime> without fractional seconds and without offset information.
 

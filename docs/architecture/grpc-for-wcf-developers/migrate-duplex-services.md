@@ -1,22 +1,22 @@
 ---
-title: Migrate WCF duplex services to gRPC - gRPC for WCF Developers
-description: Learn how to migrate various forms of WCF duplex service to gRPC streaming services.
+title: Migrate WCF duplex services to gRPC - gRPC for WCF developers
+description: Learn how to migrate various forms of WCF duplex services to gRPC streaming services.
 ms.date: 09/02/2019
 ---
 
 # Migrate WCF duplex services to gRPC
 
-Now that the basic concepts are in place, this section will look at the more complicated *streaming* gRPC services.
+Now that you have a sense of the basic concepts, in this section, you'll look at the more complicated *streaming* gRPC services.
 
-There are multiple ways to use duplex services in Windows Communication Foundation (WCF). Some services are initiated by the client and then they stream data from the server. Other full-duplex services might involve more ongoing two-way communication like the classic "Calculator" example from the WCF documentation. This chapter will take two possible WCF "Stock Ticker" implementations and migrate them to gRPC: one using a server streaming RPC, and the other one using a bidirectional streaming RPC.
+There are multiple ways to use duplex services in Windows Communication Foundation (WCF). Some services are initiated by the client and then they stream data from the server. Other full-duplex services might involve more ongoing two-way communication, like the classic Calculator example in the WCF documentation. This chapter will take two possible WCF stock ticker implementations and migrate them to gRPC: one that uses a server streaming RPC and another one that uses a bidirectional streaming RPC.
 
 ## Server streaming RPC
 
-In the [sample SimpleStockTicker WCF solution](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/SimpleStockTickerSample/wcf/SimpleStockTicker), *SimpleStockPriceTicker*, there's a duplex service where the client starts the connection with a list of stock symbols, and the server uses the *callback interface* to send updates as they become available. The client implements that interface to respond to calls from the server.
+In the [sample SimpleStockTicker WCF solution](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/SimpleStockTickerSample/wcf/SimpleStockTicker), SimpleStockPriceTicker, there's a duplex service for which the client starts the connection with a list of stock symbols, and the server uses the *callback interface* to send updates as they become available. The client implements that interface to respond to calls from the server.
 
 ### The WCF solution
 
-The WCF solution is implemented as a self-hosted NetTCP server in a .NET Framework 4.x console application.
+The WCF solution is implemented as a self-hosted Net.TCP server in a .NET Framework 4.*x* console application.
 
 #### The ServiceContract
 
@@ -29,7 +29,7 @@ public interface ISimpleStockTickerService
 }
 ```
 
-The service has a single method with no return type, because it will be using the callback interface `ISimpleStockTickerCallback` to send data to the client in real time.
+The service has a single method with no return type because it will be using the callback interface `ISimpleStockTickerCallback` to send data to the client in real time.
 
 #### The callback interface
 
@@ -42,13 +42,13 @@ public interface ISimpleStockTickerCallback
 }
 ```
 
-The implementations of these interfaces can be found in the solution, along with faked external dependencies to provide test data.
+You can find the implementations of these interfaces in the solution, along with faked external dependencies to provide test data.
 
 ### gRPC streaming
 
-The gRPC way of handling real-time data is different. A call from client to server can create a persistent stream, which can be monitored for messages arriving asynchronously. Despite the difference, streams can be a more intuitive way of dealing with this data and are more relevant in modern programming with the emphasis on LINQ, Reactive Streams, functional programming, and so on.
+The gRPC process for handling real-time data is different. A call from client to server can create a persistent stream, which can be monitored for messages that arrive asynchronously. Despite the difference, streams can be a more intuitive way of dealing with this data and are more relevant in modern programming, which emphasizes LINQ, Reactive Streams, functional programming, and so on.
 
-The service definition needs two messages: one for the request, and one for the stream. The service returns a stream of the `StockTickerUpdate` message using the `stream` keyword in its `return` declaration. It's recommended that you add a `Timestamp` to the update to show the exact time the price changed.
+The service definition needs two messages: one for the request and one for the stream. The service returns a stream of the `StockTickerUpdate` message with the `stream` keyword in its `return` declaration. We recommend that you add a `Timestamp` to the update to show the exact time of the price change.
 
 #### simple_stock_ticker.proto
 
@@ -78,7 +78,7 @@ message StockTickerUpdate {
 
 ### Implement the SimpleStockTicker
 
-Reuse the fake `StockPriceSubscriber` from the WCF project by copying the three classes from the `TraderSys.StockMarket` class library into a new .NET Standard class library in the target solution. To better follow best practices, add a `Factory` type to create instances of it and register the `IStockPriceSubscriberFactory` with ASP.NET Core's dependency injection services.
+Reuse the fake `StockPriceSubscriber` from the WCF project by copying the three classes from the `TraderSys.StockMarket` class library into a new .NET Standard class library in the target solution. To better follow best practices, add a `Factory` type to create instances of it, and register the `IStockPriceSubscriberFactory` with the ASP.NET Core dependency injection services.
 
 #### The factory implementation
 
@@ -97,7 +97,7 @@ public class StockPriceSubscriberFactory : IStockPriceSubscriberFactory
 }
 ```
 
-#### Registering the factory
+#### Register the factory
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -107,7 +107,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-Now, this class can be used to implement the gRPC StockTicker service.
+This class can now be used to implement the gRPC StockTickerService.
 
 #### StockTickerService.cs
 
@@ -144,7 +144,7 @@ public class StockTickerService : Protos.SimpleStockTicker.SimpleStockTickerBase
         }
         catch (Exception e)
         {
-            // Handle any errors due to broken connection etc.
+            // Handle any errors caused by broken connection, etc.
             _logger.LogError($"Failed to write message: {e.Message}");
         }
     }
@@ -158,15 +158,15 @@ public class StockTickerService : Protos.SimpleStockTicker.SimpleStockTickerBase
 }
 ```
 
-As you can see, although the declaration in the `.proto` file says the method "returns" a stream of `StockTickerUpdate` messages, in fact it returns a vanilla `Task`. The job of creating the stream is handled by the generated code and the gRPC runtime libraries, which provide the `IServerStreamWriter<StockTickerUpdate>` response stream, ready to use.
+As you can see, although the declaration in the `.proto` file says the method returns a stream of `StockTickerUpdate` messages, it actually returns a generic `Task`. The job of creating the stream is handled by the generated code and the gRPC runtime libraries, which provide the `IServerStreamWriter<StockTickerUpdate>` response stream, ready to use.
 
-Unlike a WCF duplex service, where the instance of the service class is kept alive while the connection is open, the gRPC service uses the returned Task to keep the service alive. The Task shouldn't complete until the connection is closed.
+Unlike a WCF duplex service, where the instance of the service class is kept alive while the connection is open, the gRPC service uses the returned task to keep the service alive. The task shouldn't complete until the connection is closed.
 
-The service can tell when the client has closed the connection by using the `CancellationToken` from the `ServerCallContext`. A simple static method, `AwaitCancellation`, is used to create a Task that completes when the token is canceled.
+The service can tell when the client has closed the connection by using the `CancellationToken` from the `ServerCallContext`. A simple static method, `AwaitCancellation`, is used to create a task that completes when the token is canceled.
 
-In the `Subscribe` method, then, get a `StockPriceSubscriber` and add an event handler that writes to the response stream. Then wait for the connection to be closed, before immediately disposing the `subscriber` to prevent it trying to write data to the closed stream.
+In the `Subscribe` method, then, get a `StockPriceSubscriber` and add an event handler that writes to the response stream. Then wait for the connection to be closed before immediately disposing the `subscriber` to prevent it from trying to write data to the closed stream.
 
-The `WriteUpdateAsync` method has a `try`/`catch` block to handle any errors that might happen when writing a message to the stream. This is an important consideration in persistent connections over networks, which could be broken at any millisecond, whether intentionally or because of a failure somewhere.
+The `WriteUpdateAsync` method has a `try`/`catch` block to handle any errors that might happen when it writes a message to the stream. This consideration is important in persistent connections over networks, which could be broken at any millisecond, whether intentionally or because of a failure somewhere.
 
 ### Using the StockTickerService from a client application
 
@@ -199,18 +199,18 @@ class Program
 }
 ```
 
-In this case, the `Subscribe` method on the generated client isn't asynchronous. The stream is created and usable right away, because its `MoveNext` method is asynchronous and the first time it's called it won't complete until the connection is alive.
+In this case, the `Subscribe` method on the generated client isn't asynchronous. The stream is created and usable right away because its `MoveNext` method is asynchronous and the first time it's called it won't complete until the connection is alive.
 
-The stream is passed to an async `DisplayAsync` method; the application then waits for the user to press a key, then cancels the `DisplayAsync` method and waits for the task to complete before exiting.
+The stream is passed to an asynchronous `DisplayAsync` method. The application then waits for the user to press a key, and then cancels the `DisplayAsync` method and waits for the task to complete before exiting.
 
 > [!NOTE]
-> This code is using the new C# 8 "using declaration" syntax to dispose of the stream and the channel when the `Main` method exits. It's a small change, but a nice one that reduces indentations and empty lines.
+> This code uses the new C# 8 `using` declaration syntax to dispose of the stream and the channel when the `Main` method exits. It's a small change, but a nice one that reduces indentations and empty lines.
 
 #### Consume the stream
 
-WCF used callback interfaces to allow the server to call methods directly on the client. gRPC streams work differently. The client iterates over the returned stream and processes messages, just as though they were returned from a local method returning an `IEnumerable`.
+WCF uses callback interfaces to allow the server to call methods directly on the client. gRPC streams work differently. The client iterates over the returned stream and processes messages, just as though they were returned from a local method returning an `IEnumerable`.
 
-The `IAsyncStreamReader<T>` type works much like an `IEnumerator<T>`: there's a `MoveNext` method that will return true as long as there's more data, and a `Current` property that returns the latest value. The only difference is that the `MoveNext` method returns a `Task<bool>` instead of just a `bool`. The `ReadAllAsync` extension method wraps the stream in a standard C# 8 `IAsyncEnumerable` that can be used with the new `await foreach` syntax.
+The `IAsyncStreamReader<T>` type works much like an `IEnumerator<T>`. There's a `MoveNext` method that returns true as long as there's more data, and a `Current` property that returns the latest value. The only difference is that the `MoveNext` method returns a `Task<bool>` instead of just a `bool`. The `ReadAllAsync` extension method wraps the stream in a standard C# 8 `IAsyncEnumerable` that can be used with the new `await foreach` syntax.
 
 ```csharp
 static async Task DisplayAsync(IAsyncStreamReader<StockTickerUpdate> stream, CancellationToken token)

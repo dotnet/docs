@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (Visual Basic)"
+title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style"
 ms.date: 07/20/2015
 ms.assetid: 08e91fa2-dac2-4463-9ef1-87b1ac3fa890
 ---

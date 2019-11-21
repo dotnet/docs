@@ -1,5 +1,5 @@
 ---
-title: "Sub or Function not defined (Visual Basic)"
+title: "Sub or Function not defined"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID35"

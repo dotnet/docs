@@ -1,5 +1,5 @@
 ---
-title: "Data Types of Operator Results (Visual Basic)"
+title: "Data Types of Operator Results"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "data types [Visual Basic], operator result data types"

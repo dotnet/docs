@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Data Types (Visual Basic)"
+title: "Troubleshooting Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Char data type [Visual Basic], converting"

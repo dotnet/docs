@@ -1,5 +1,5 @@
 ---
-title: "Overview of LINQ to XML in Visual Basic"
+title: "Overview of LINQ to XML"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "LINQ to XML [Visual Basic], about LINQ to XML"

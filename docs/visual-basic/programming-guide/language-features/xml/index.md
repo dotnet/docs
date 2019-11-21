@@ -1,5 +1,5 @@
 ---
-title: "XML in Visual Basic"
+title: "XML"
 description: "Learn how to use XML and LINQ to XML features in your Visual Basic code."
 ms.date: 10/20/2017
 helpviewer_keywords: 

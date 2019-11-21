@@ -1,5 +1,5 @@
 ---
-title: "How to: Combine LINQ Queries with Regular Expressions (Visual Basic)"
+title: "How to: Combine LINQ Queries with Regular Expressions"
 ms.date: 07/20/2015
 ms.assetid: 3da1bd10-b0d8-4d5b-a637-966891c13592
 ---

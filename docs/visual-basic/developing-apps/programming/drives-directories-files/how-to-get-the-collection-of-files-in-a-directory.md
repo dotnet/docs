@@ -1,5 +1,5 @@
 ---
-title: "How to: Get the Collection of Files in a Directory in Visual Basic"
+title: "How to: Get the Collection of Files in a Directory"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "folders, working with"

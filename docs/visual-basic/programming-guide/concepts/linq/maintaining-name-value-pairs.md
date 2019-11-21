@@ -1,5 +1,5 @@
 ---
-title: "Maintaining Name-Value Pairs (Visual Basic)"
+title: "Maintaining Name-Value Pairs"
 ms.date: 07/20/2015
 ms.assetid: 57ac2072-d9f5-432b-84f0-a889c62fd813
 ---

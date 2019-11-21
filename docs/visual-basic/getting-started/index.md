@@ -1,5 +1,5 @@
 ---
-title: "Get started with Visual Basic"
+title: "Get started"
 ms.date: 09/10/2018
 helpviewer_keywords:
   - "get started, Visual Basic"

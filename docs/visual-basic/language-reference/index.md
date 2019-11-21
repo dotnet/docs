@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Language Reference"
+title: "Language Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic language reference"

@@ -36,6 +36,14 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 1. Create a **C# .NET Core Console Application** called "TaxiFarePrediction".
 
+    # [Visual Studio 2017](#tab/visual-studio-2017)
+
+    1\. Do stuff
+
+    # [Visual Studio 2019](#tab/visual-studio-2019)
+
+    1\. Do stuff
+
 ## Prepare and understand the data
 
 1. Create a directory named *Data* in your project to store the data set files.

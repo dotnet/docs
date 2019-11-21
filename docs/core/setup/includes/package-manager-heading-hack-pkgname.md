@@ -14,10 +14,9 @@ Chooses the SDK or the runtime. Valid options are:
   - runtime
 
 - **version**\
-The version of the SDK or runtime to install. This article will always give the instructions for the latest supported version. Valid options are:
+The version of the SDK or runtime to install. This article will always give the instructions for the latest supported version. Valid options are any released version such as:
 
   - 3.0
-  - 3.1-preview
   - 2.2
   - 2.1
 

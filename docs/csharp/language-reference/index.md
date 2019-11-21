@@ -55,9 +55,6 @@ The features that have been implemented in C# versions after 6.0 are represented
   
 ## Related Sections  
 
- [C# Guide](../index.md)  
- Provides a portal to Visual C# documentation.  
-  
  [Using the Visual Studio Development Environment for C#](/visualstudio/get-started/csharp)  
  Provides links to conceptual and task topics that describe the IDE and Editor.  
   

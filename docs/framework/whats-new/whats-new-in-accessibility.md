@@ -476,11 +476,11 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   Before: 
 
-  ![Screenshot of the expander control with focus before improvements.](./media/whats-new-in-accessibility/expander-control-before.png)
+  ![Screenshot of the expander control with focus and no focus visual.](./media/whats-new-in-accessibility/expander-control-before.png)
 
   After: 
 
-  ![Screenshot of the expander control with focus after improvements.](./media/whats-new-in-accessibility/expander-control-after.png)
+  ![Screenshot of the expander control with focus showing a dotted line around the control's text.](./media/whats-new-in-accessibility/expander-control-after.png)
 
 - <xref:System.Windows.Controls.CheckBox> and <xref:System.Windows.Controls.RadioButton> controls
 
@@ -488,11 +488,11 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   Before: 
 
-  ![Screenshot of high contrast radio button before improvements.](./media/whats-new-in-accessibility/high-contrast-radio-button-before.png)
+  ![Screenshot of radio and check buttons with poor text visibility on high contrast themes.](./media/whats-new-in-accessibility/high-contrast-radio-button-before.png)
 
   After: 
 
-  ![Screenshot of high contrast radio button after improvements.](./media/whats-new-in-accessibility/high-contrast-radio-button-after.png)
+  ![Screenshot of radio and check buttons with better text visibility on high contrast themes.](./media/whats-new-in-accessibility/high-contrast-radio-button-after.png)
 
 - <xref:System.Windows.Controls.ComboBox> control
 
@@ -500,31 +500,31 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   Before: 
 
-  ![Screenshot of ComboBox disabled before accessibility improvements.](./media/whats-new-in-accessibility/combo-disabled-before.png)
+  ![Screenshot of a disabled ComboBox with border and control text in different colors.](./media/whats-new-in-accessibility/combo-disabled-before.png)
 
   After:   
 
-  ![Screenshot of ComboBox disabled after accessibility improvements.](./media/whats-new-in-accessibility/combo-disabled-after.png)
+  ![Screenshot of a disabled ComboBox with border the same color as the control text.](./media/whats-new-in-accessibility/combo-disabled-after.png)
 
   In addition, disabled and focused buttons use the correct theme color.
 
   Before:
 
-  ![Screenshot of button theme colors before accessibility improvements.](./media/whats-new-in-accessibility/button-theme-colors-before.png) 
+  ![Screenshot of a black button with gray text saying Focus Me.](./media/whats-new-in-accessibility/button-theme-colors-before.png) 
 
   After: 
 
-  ![Screenshot of button theme colors after accessibility improvements.](./media/whats-new-in-accessibility/button-theme-colors-after.png) 
+  ![Screenshot of a blue button with black text saying Focus Me.](./media/whats-new-in-accessibility/button-theme-colors-after.png) 
 
   Finally, in .NET Framework 4.7 and earlier versions, setting a <xref:System.Windows.Controls.ComboBox> control’s style to `Toolbar.ComboBoxStyleKey` caused the drop-down arrow to be invisible. This issue is fixed starting with .NET Framework 4.7.1. For example:
 
   Before: 
 
-  ![Screenshot of Toolbar.ComboBoxStyleKey before improvements.](./media/whats-new-in-accessibility/combo-box-style-key-before.png) 
+  ![Screenshot of a ComboBox control with an invisible drop-down arrow.](./media/whats-new-in-accessibility/combo-box-style-key-before.png) 
 
   After: 
 
-  ![Screenshot of Toolbar.ComboBoxStyleKey after improvements.](./media/whats-new-in-accessibility/combo-box-style-key-after.png) 
+  ![Screenshot of a ComBoxBox control displaying the drop-down arrow.](./media/whats-new-in-accessibility/combo-box-style-key-after.png) 
 
 - <xref:System.Windows.Controls.DataGrid> control
 
@@ -542,11 +542,11 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   Before: 
 
-  ![Screenshot of DataGrid default link style before improvements.](./media/whats-new-in-accessibility/default-link-style-before.png) 
+  ![Screenshot of a link saying Click Me! in red.](./media/whats-new-in-accessibility/default-link-style-before.png) 
 
   After:    
 
-  ![Screenshot of DataGrid default link style after improvements.](./media/whats-new-in-accessibility/default-link-style-after.png) 
+  ![Screenshot of a link saying Click Me! in yellow.](./media/whats-new-in-accessibility/default-link-style-after.png) 
 
 For more information on WPF accessibility improvements in .NET Framework 4.7.1, see [Accessibility improvements in WPF](../migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf).
 
@@ -581,7 +581,7 @@ Some examples of high contrast changes include:
 
   After:
 
-  ![Screenshot of disabled text after accessibility improvements.](./media/whats-new-in-accessibility/wf-disabled-menu-item-after.png) 
+  ![Screenshot of an app that uses different controls running in high contrast mode after accessibility improvements.](./media/whats-new-in-accessibility/wf-disabled-menu-item-after.png) 
 
 - High contrast improvements in the Thread Exception Dialog.
 

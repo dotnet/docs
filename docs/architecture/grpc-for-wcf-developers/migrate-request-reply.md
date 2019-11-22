@@ -189,7 +189,7 @@ The base class declares `virtual` methods for `Get` and `GetAll` that can be ove
 
 The signature for all gRPC unary service methods in ASP.NET Core is consistent. There are two parameters: the first is the message type declared in the `.proto` file, and the second is a `ServerCallContext` that works similarly to the `HttpContext` from ASP.NET Core. In fact, there's an extension method called `GetHttpContext` on the `ServerCallContext` class that you can use to get the underlying `HttpContext`, although you shouldn't need to use it often. We'll take a look at `ServerCallContext` later in this chapter, and also in the chapter that discusses authentication.
 
-The method's return type is a `Task<T>` where `T` is the response message type. All gRPC service methods are asynchronous.
+The method's return type is a `Task<T>`, where `T` is the response message type. All gRPC service methods are asynchronous.
 
 ## Migrate the PortfolioData library to .NET Core
 

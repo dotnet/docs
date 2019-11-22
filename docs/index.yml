@@ -37,29 +37,6 @@ highlightedContent:
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
 
 # conceptualContent section (optional)
-## Sections:
-## .NET Guide
-## .NET Core Guide
-## .NET Standard Guide
-## Architecture
-# From Maira:
-# Remove "guide"
-### Get Started
-## .NET Fundamentals (standard, core, framework landing pages)
-## drive people to the cross-platform / open source content?
-## Drive to port from framework
-## New application model (deployment, docker, CLI, etc)
-## Tutorials 
-
-## Another model:
-## Fundamentals / Architecture (fundamentals is the wrong word)
-## Deployment / versioning / sdk
-## 
-
-## .NET Core
-## .NET Framework
-## Architecture guides
-
 ## What to highlight:
 ## The .NET STandard thing
 ## The .NET Core App model.
@@ -69,36 +46,13 @@ highlightedContent:
 ## The setup / install / etc (Andy's work)
 ## .NET Core Desktop development (for existing .NET devs)
 
-## Card titles:  .NET Environment (1)  || Tools and Deployments (2)   || .NET Software Development (3)  || (existing architecture guids)
-
-# Cards:
-## .NET Core
-## .NET Concepts / Primer / Ecosystem / Achirectural components / tools & sdks / Environment
-## Architectural guides
-
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   title: ".NET: Free. Cross-platform. Open source." # < 60 chars (optional)
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
-    - title: .NET guide
-      links:
-        - url: standard/get-started.md
-          itemType: get-started
-          text: Get started
-        - url: standard/tour.md
-          itemType: overview
-          text: Tour of .NET
-        - url: standard/components.md
-          itemType: concept
-          text: .NET architectural components
-      # footerLink (optional)
-      footerLink:
-        url: standard/index.md
-        text: See more
-    # Card
-    - title: .NET Core guide
+    - title: .NET Core
       links:
         - url: core/get-started.md
           itemType: get-started
@@ -114,8 +68,17 @@ conceptualContent:
         url: core/index.md
         text: See more
     # Card
-    - title: .NET Framework guide
+    - title: .NET Concepts
       links:
+        - url: standard/get-started.md
+          itemType: get-started
+          text: Get started
+        - url: standard/tour.md
+          itemType: overview
+          text: Tour of .NET
+        - url: standard/components.md
+          itemType: concept
+          text: .NET architectural components
         - url: framework/get-started/index.md
           itemType: get-started
           text: Get started
@@ -127,15 +90,17 @@ conceptualContent:
           text: Develop client apps
       # footerLink (optional)
       footerLink:
-        url: framework/index.md
+        url: standard/index.md
         text: See more
     # Card
-    ## Add https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/
     - title: .NET architectural guides
       links:
         - url: architecture/microservices/index.md
           itemType: architecture
           text: ".NET Microservices: Architecture for containerized .NET apps"
+        - url: architecture/modern-web-apps-azure/index.md
+          itemType: architecture
+          text: Architect Modern Web Applications with ASP.NET Core and Azure
         - url: architecture/containerized-lifecycle/index.md
           itemType: architecture
           text: "Containerized Docker application lifecycle with Microsoft platform and tools"

@@ -47,5 +47,5 @@ The Peer Name Resolution Protocol demonstrates the following properties:
 - [Network Programming Samples](network-programming-samples.md)
 
 <!-- to-do: review sample links
-- [PeerToPeer Technology Sample](https://docs.microsoft.com/samples/browse/-samples)
+- [PeerToPeer Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179571)
 -->

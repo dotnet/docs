@@ -10,9 +10,9 @@ ms.date: 11/06/2019
 
 This article provides information on how to download and install .NET Core. There are two parts to .NET Core, the **runtime** which is used to run apps, and the **SDK** which is used to create apps. The SDK includes the runtime.
 
-- If you're a user who needs .NET Core to run apps, see the [Download the runtime](install-runtime.md) article.
+- If you're a user who needs .NET Core to run apps, see [Install the .NET Core Runtime](install-runtime.md).
 
-- If you're a developer who needs .NET Core to create apps, see the [Download the SDK](install-sdk.md) article.
+- If you're a developer who needs .NET Core to create apps, see the [Install the .NET Core SDK](install-sdk.md).
 
 > [!NOTE]
 > The .NET Core SDK includes the runtime.

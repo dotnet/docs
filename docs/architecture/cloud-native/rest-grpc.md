@@ -2,7 +2,7 @@
 title: REST and gRPC
 description: Learn about gRPC, its role in cloud-native applications and how it differs from HTTP REST
 author: robvet
-ms.date: 11/19/2019
+ms.date: 11/21/2019
 ---
 
 # gRPC
@@ -29,7 +29,7 @@ gRPC is supported across most popular platforms, including Java, JavaSript, C#, 
 
 gRPC embraces another open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). This technology provides a highly efficient, platform-neutral engine for serializing structured data that one service can send to another. Using a common Interface Definition Language (IDL), the developer defines a service contract for each microservice. The contract describes the methods, inputs, and outputs for each service, implemented as a ".proto" file. Then, using the Protobuf compiler, "Proton," the developer generates both client and server code for any of the supported platforms. The generated code is optimized for fast serialization/deserialization of data. At runtime, each message is serialized as a standard Protobuf representation and sent to a remote service.
 
-The book, [gRPC for WCF Developers](https://docs.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/), available for free from Microsoft, provides detailed coverage of the mechanics of gRPC and Protocol Buffers. 
+The book, [gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/), available for free from Microsoft, provides detailed coverage of the mechanics of gRPC and Protocol Buffers. 
 
 ## gRPC support in .NET
 

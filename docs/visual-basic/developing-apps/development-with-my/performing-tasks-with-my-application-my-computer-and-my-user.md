@@ -1,5 +1,5 @@
 ---
-title: "Performing Tasks with My.Application, My.Computer, and My.User (Visual Basic)"
+title: "Performing Tasks with My.Application, My.Computer, and My.User"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Application object [Visual Basic], developing applications"

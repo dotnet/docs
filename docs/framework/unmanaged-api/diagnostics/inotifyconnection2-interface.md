@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9868cfb3-dd51-4812-bca9-171d7829afe9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifyConnection2 Interface
 Declares methods for registering and unregistering a connection notification source.  

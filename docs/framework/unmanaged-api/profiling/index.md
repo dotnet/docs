@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], profiling"
   - "unmanaged API reference [.NET Framework], profiling"
 ms.assetid: 14c68e84-657e-49c2-aa8b-4978dbaf4454
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Profiling (Unmanaged API Reference)
 

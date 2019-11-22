@@ -1,5 +1,5 @@
 ---
-title: "Modifiers (Visual Basic)"
+title: "Modifiers"
 ms.date: 07/20/2015
 ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Development with My (Visual Basic)"
+title: "Development with My"
 ms.date: 07/20/2015
 f1_keywords: 
   - "My.MyWpfExtension.Windows"

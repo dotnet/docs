@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Single Child Element (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve a Single Child Element (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 0033e258-d9c4-4569-86f6-79b7c06d1204
 ---

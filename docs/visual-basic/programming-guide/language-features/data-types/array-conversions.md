@@ -1,5 +1,5 @@
 ---
-title: "Array Conversions (Visual Basic)"
+title: "Array Conversions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arrays [Visual Basic], converting type"

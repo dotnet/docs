@@ -1,5 +1,5 @@
 ---
-title: "Using Regular Expressions with the MaskedTextBox Control in Visual Basic"
+title: "Using Regular Expressions with the MaskedTextBox Control"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], regular expressions"

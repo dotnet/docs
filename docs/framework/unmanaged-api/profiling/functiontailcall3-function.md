@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1e48243f-5de6-4bd6-a1d0-e1d248bca4b8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionTailcall3 Function
 Notifies the profiler that the currently executing function is about to perform a tail call to another function.  

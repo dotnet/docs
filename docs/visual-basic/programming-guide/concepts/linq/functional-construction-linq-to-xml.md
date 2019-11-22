@@ -1,5 +1,5 @@
 ---
-title: "Functional Construction (LINQ to XML) (Visual Basic)"
+title: "Functional Construction (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: feac4273-39ab-43ae-bab7-4059c807a785
 ---

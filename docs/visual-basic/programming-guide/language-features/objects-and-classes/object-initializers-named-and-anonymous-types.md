@@ -1,5 +1,5 @@
 ---
-title: "Object Initializers: Named and Anonymous Types (Visual Basic)"
+title: "Object Initializers: Named and Anonymous Types"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ObjectInitializer"

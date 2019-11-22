@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a Conversion Operator (Visual Basic)"
+title: "How to: Define a Conversion Operator"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], defining"

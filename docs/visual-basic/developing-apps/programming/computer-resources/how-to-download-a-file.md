@@ -1,5 +1,5 @@
 ---
-title: "How to: Download a File in Visual Basic"
+title: "How to: Download a File"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "downloading Internet resources [Visual Basic], files"

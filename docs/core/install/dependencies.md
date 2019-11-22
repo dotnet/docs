@@ -263,5 +263,5 @@ brew install mono-libgdiplus
 
 ## Next steps
 
-- To develop and run apps, install the [.NET Core SDK](install-sdk.md) (includes the runtime).
-- To run apps others have created, install the [.NET Core runtime](install-runtime.md).
+- To develop and run apps, install the [.NET Core SDK](sdk.md) (includes the runtime).
+- To run apps others have created, install the [.NET Core runtime](runtime.md).

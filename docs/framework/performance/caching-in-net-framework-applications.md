@@ -54,7 +54,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 ## Caching in WCF REST Services  
  For WCF REST services, the .NET Framework enables you to take advantage of the declarative output caching that is available in ASP.NET. This enables you to cache responses from your WCF REST service operations. When a user sends an HTTP GET request to a service that is configured for caching, ASP.NET sends back the cached response, and the service method is not called. After the cache expires, the next time that a user sends an HTTP GET request, your service method is called and the response is again cached.  
   
- The .NET Framework also enables you to implement conditional HTTP GET caching. In REST scenarios, a conditional HTTP GET request is often used by services to implement intelligent HTTP caching as described in the [HTTP Specification](https://go.microsoft.com/fwlink/?LinkId=165800). For more information, see [Caching Support for WCF Web HTTP Services](https://go.microsoft.com/fwlink/?LinkId=184598).  
+ The .NET Framework also enables you to implement conditional HTTP GET caching. In REST scenarios, a conditional HTTP GET request is often used by services to implement intelligent HTTP caching as described in the [HTTP Specification](https://www.w3.org/Protocols/rfc2616/rfc2616.html). For more information, see [Caching Support for WCF Web HTTP Services](../wcf/feature-details/caching-support-for-wcf-web-http-services.md).  
   
 ## Extending Caching in the .NET Framework  
  Caching in the .NET Framework is designed to be extensible. The <xref:System.Runtime.Caching.ObjectCache> class enables you to create a custom cache implementation. This class provides members that are available to all managed applications, including Windows Forms, Windows Presentation Foundation (WPF), and Windows Communications Foundation (WCF). You might do this in order to create a cache class that uses a different storage mechanism, or if you want granular control over cache operations.  
@@ -67,7 +67,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
   
 - Create a class that derives from the <xref:System.Web.Caching.OutputCacheProvider> class and configure the application to use the custom output cache provider.  
   
- For more information, see the entry [Extensible Output Caching with ASP.NET 4 (VS 2010 and .NET 4.0 Series)](https://go.microsoft.com/fwlink/?LinkId=185772) on Scott Guthrie's blog.  
+ For more information, see the entry [Extensible Output Caching with ASP.NET 4 (VS 2010 and .NET 4.0 Series)](https://weblogs.asp.net/scottgu/extensible-output-caching-with-asp-net-4-vs-2010-and-net-4-0-series) on Scott Guthrie's blog.  
   
 ## See also
 

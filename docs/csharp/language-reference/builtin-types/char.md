@@ -34,7 +34,7 @@ As the preceding example shows, you also can cast the value of a character code 
 > [!NOTE]
 > In the case of a Unicode escape sequence, you must specify all four hexadecimal digits. That is, `\u006A` is a valid escape sequence, while `\u06A` and `\u6A` are not valid.
 >
-> In the case of a hexadecimal escape sequence, you can omit the leading zeros. That is, `\x006A`, `\x06A`, and `\x6A` escape sequences are valid and correspond to the same character.
+> In the case of a hexadecimal escape sequence, you can omit the leading zeros. That is, the `\x006A`, `\x06A`, and `\x6A` escape sequences are valid and correspond to the same character.
 
 ## Conversions
 

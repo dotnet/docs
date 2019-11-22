@@ -149,7 +149,7 @@ Writing minidump with heap to .\core_20190430_185145
 Complete
 ```
 
-### Recover the failed process
+### Restart the failed process
 
 Once the dump is collected, you should have sufficient information to diagnose the failed process. If the failed process is running on a production server, now is the ideal time for short-term remediation by restarting the process.
 
@@ -250,7 +250,7 @@ This general procedure allows you to identify the source of major memory leaks.
 
 ## Clean up resources
 
-In this tutorial, we started a sample web server. This server should have been shut down in [Remediation](#remediation) above.
+In this tutorial, we started a sample web server. This server should have been shut down in [Restart the failed process](#restart-the-failed-process) above.
 
 We also created a dump file that can be deleted from a console.
 

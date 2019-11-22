@@ -16,29 +16,29 @@ This article describes how to use a package manager to install .NET Core on RHEL
 
 In order to install .NET Core from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this has not been done on your system, or if you are unsure, see the [Red Hat Product Documentation for .NET Core](https://access.redhat.com/documentation/net_core/).
 
-## Install the .NET SDK
+## Install the .NET Core SDK
 
-After registering with the Subscription Manager, you are ready to install and enable the .NET SDK. In your terminal, run the following commands.
+After registering with the Subscription Manager, you are ready to install and enable the .NET Core SDK. In your terminal, run the following commands.
 
 ```bash
 yum install rh-dotnet30 -y
 scl enable rh-dotnet30 bash
 ```
 
-## Install the .NET Runtime
+## Install the ASP.NET Core Runtime
 
-After registering with the Subscription Manager, you are ready to install and enable the .NET Runtime. In your terminal, run the following commands.
+After registering with the Subscription Manager, you are ready to install and enable the ASP.NET Core Runtime. In your terminal, run the following commands.
 
+<!-- TODO: is this the correct value? Taken from the webpage but it doesn't have aspnet in the name -->
 ```bash
 yum install rh-dotnet30-dotnet-runtime-3.0 -y
 scl enable rh-dotnet30 bash
 ```
 
-## Install the ASP.NET Core Runtime
+## Install the .NET Core Runtime
 
-After registering with the Subscription Manager, you are ready to install and enable the ASP.NET Runtime. In your terminal, run the following commands.
+After registering with the Subscription Manager, you are ready to install and enable the .NET Core Runtime. In your terminal, run the following commands.
 
-<!-- TODO: is this the correct value? Taken from the webpage but it doesn't have aspnet in the name -->
 ```bash
 yum install rh-dotnet30-dotnet-runtime-3.0 -y
 scl enable rh-dotnet30 bash

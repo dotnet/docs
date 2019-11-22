@@ -14,7 +14,13 @@ This article describes how to use a package manager to install .NET Core on Debi
 
 ## Register Microsoft key and feed
 
-Before installing .NET, you'll need to register the Microsoft key, register the product repository, and install required dependencies. This only needs to be done once per machine.
+Before installing .NET, you'll need to:
+
+- Register the Microsoft key
+- register the product repository
+- Install required dependencies
+
+This only needs to be done once per machine.
 
 Open a terminal and run the following commands.
 
@@ -38,17 +44,6 @@ sudo apt-get update
 sudo apt-get install dotnet-sdk-3.0
 ```
 
-## Install the .NET Core runtime
-
-Update the products available for installation, then install the .NET Core runtime. In your terminal, run the following commands.
-
-```bash
-sudo apt-get update
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install dotnet-runtime-3.0
-```
-
 ## Install the ASP.NET Core runtime
 
 Update the products available for installation, then install the ASP.NET runtime. In your terminal, run the following commands.
@@ -58,6 +53,17 @@ sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install aspnetcore-runtime-3.0
+```
+
+## Install the .NET Core runtime
+
+Update the products available for installation, then install the .NET Core runtime. In your terminal, run the following commands.
+
+```bash
+sudo apt-get update
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt-get install dotnet-runtime-3.0
 ```
 
 ## How to install other versions

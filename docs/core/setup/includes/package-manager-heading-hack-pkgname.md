@@ -1,5 +1,5 @@
 
-The packages added to feeds are named in a hackable format: `{product}-{type}-{version}`.
+The packages added to the package manager feeds are named in a hackable format: `{product}-{type}-{version}`.
 
 - **product**\
 The type of .NET product to install. Valid options are:

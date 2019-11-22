@@ -30,7 +30,7 @@ Both Windows and macOS have standalone installers that can be used to install th
 
 ## Install with a package manager
 
-You can install .NET Core with many of the common linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
+You can install .NET Core with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
 
 ::: zone-end
 

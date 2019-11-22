@@ -10,7 +10,7 @@ zone_pivot_groups: operating-systems-set-one
 
 # Install the .NET Core SDK
 
-In this article, you'll learn how to download and install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
+In this article, you'll learn how to install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
 You can download and install .NET Core directly with one of the following links:
 
@@ -38,9 +38,9 @@ You can install the .NET Core SDK with many of the common Linux package managers
 
 ::: zone pivot="os-windows"
 
-## Visual Studio
+## Install with Visual Studio
 
-If you're using Visual Studio to develop .NET Core apps, the following table describes the minimum required version of Visual Studio based on the target .NET Core runtime.
+If you're using Visual Studio to develop .NET Core apps, the following table describes the minimum required version of Visual Studio based on the target .NET Core SDK version.
 
 | .NET Core SDK version | Visual Studio version                      |
 | --------------------- | ------------------------------------------ |
@@ -51,7 +51,7 @@ If you're using Visual Studio to develop .NET Core apps, the following table des
 If you already have Visual Studio installed, you can check your version with the following steps.
 
 01. Open Visual Studio.
-01. Select the **Help** menu > **About Microsoft Visual Studio**.
+01. Select **Help** > **About Microsoft Visual Studio**.
 01. Read the version number from the **About** dialog.
 
 ### Download
@@ -75,7 +75,7 @@ When installing Visual Studio, select one of the following workloads, depending 
 
 ## Install with Visual Studio for Mac
 
-Visual Studio for Mac installs the .NET Core SDK when the **.NET Core workload** is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation).
+Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation).
 
 [![macOS Visual Studio 2019 for Mac with .NET Core workload feature](media/install-sdk/mac-install-selection.png)](media/install-sdk/mac-install-selection.png#lightbox)
 

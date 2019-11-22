@@ -16,7 +16,7 @@ Installing an SDK installs the corresponding runtime.
 
 If any command in this article fails, you don't have the runtime or SDK installed. For more information, see [Download and install .NET Core](index.md).
 
-## SDK
+## Check SDK versions
 
 You can see which versions of the .NET Core SDK are currently installed with a terminal. Open a terminal and run the `dotnet --list-sdks` command.
 
@@ -68,7 +68,7 @@ dotnet --list-sdks
 
 ::: zone-end
 
-## Runtime
+## Check runtime versions
 
 You can see which versions of the .NET Core runtime are currently installed with the `dotnet --list-runtimes` command.
 

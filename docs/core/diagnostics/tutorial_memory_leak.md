@@ -55,7 +55,7 @@ dotnet-trace ps
 The output should be similar to:
 
 ```console
-4807 DiagnosticScena /home/stmaclea/git/samples/core/diagnostics/DiagnosticScenarios/bin/Debug/netcoreapp3.0/DiagnosticScenarios
+4807 DiagnosticScena /home/user/git/samples/core/diagnostics/DiagnosticScenarios/bin/Debug/netcoreapp3.0/DiagnosticScenarios
 ```
 
 Now, check managed memory usage with the [dotnet-counters](dotnet-counters.md) tool. The `--refresh-interval` specifies the number of seconds between refreshes:
@@ -154,18 +154,16 @@ You'll be presented with a prompt where you can enter SOS commands. Commonly, th
 Statistics:
               MT    Count    TotalSize Class Name
 ...
-00007faddbd3fb88      576        59904 System.Reflection.RuntimeMethodInfo
-00007faddda59088     1024        65536 System.Collections.Concurrent.ConcurrentDictionary`2+<GetEnumerator>d__32[[System.Int64, System.Private.CoreLib],[Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.ConnectionReference, Microsoft.AspNetCore.Server.Kestrel.Core]]
-00007faddbab6b50      721        92288 System.IO.FileStream
-00007faddaa521c8     1679        96688 System.SByte[]
-00007faddb5d4a18      169       128310 System.Char[]
-00007faddaa45510      244       136584 System.Object[]
-00007faddaa514c0     1380       480608 System.Byte[]
-00000000008c9db0    30434       856112      Free
-00007fadde494cb0        3     25165896 testwebapi.Controllers.Customer[]
-00007faddd8b7578  2000000     48000000 testwebapi.Controllers.Customer
-00007faddaa50f90  2010315    189071078 System.String
-Total 4062979 objects
+00007f6c1eeefba8      576        59904 System.Reflection.RuntimeMethodInfo
+00007f6c1dc021c8     1749        95696 System.SByte[]
+00000000008c9db0     3847       116080      Free
+00007f6c1e784a18      175       128640 System.Char[]
+00007f6c1dbf5510      217       133504 System.Object[]
+00007f6c1dc014c0      467       416464 System.Byte[]
+00007f6c21625038        6      4063376 testwebapi.Controllers.Customer[]
+00007f6c20a67498   200000      4800000 testwebapi.Controllers.Customer
+00007f6c1dc00f90   206770     19494060 System.String
+Total 428516 objects
 ```
 
 Here you can see that most of the objects are either `String` or `Customer` objects.

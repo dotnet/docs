@@ -43,7 +43,7 @@ The tutorial requires permissions to generate a dump file.
 
 Before you dig into collecting diagnostics data to help us root cause this scenario, you need to convince ourselves that what you are actually seeing is a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to get at this information.
 
-Lets run the [Sample debug target](sample-debug-target.md).
+Run the [Sample debug target](sample-debug-target.md):
 
 ```dotnetcli
 # Assumes https://github.com/dotnet/samples was cloned into samples
@@ -51,19 +51,19 @@ cd samples/core/diagnostics/DiagnosticScenarios/
 dotnet run
 ```
 
-From a separate console find the process ID using:
+From a separate console find the process ID using the [dotnet-trace](dotnet-trace.md) tool:
 
 ```console
 dotnet-trace ps
 ```
 
-The output should be similar to
+The output should be similar to:
 
 ```console
 4807 DiagnosticScena /home/stmaclea/git/samples/core/diagnostics/DiagnosticScenarios/bin/Debug/netcoreapp3.0/DiagnosticScenarios
 ```
 
-Before causing the leak, check managed memory usage with [dotnet-counters](dotnet-counters.md):
+Now, check managed memory usage with the [dotnet-counters](dotnet-counters.md) tool. The `--refresh-interval` specifies the number of seconds between refreshes:
 
 ```console
 dotnet-counters monitor --refresh-interval 1 -p 4807
@@ -103,23 +103,23 @@ Focusing on this line:
     GC Heap Size (MB)                                  4
 ```
 
-You can see that right after startup, the managed heap memory is 4 MB.
+You can see that the managed heap memory is 4-MB right after startup.
 
-Now, hit the URL [http://localhost:5000/api/diagscenario/memleak/20000](http://localhost:5000/api/diagscenario/memleak/20000)
+Now, hit the URL `http://localhost:5000/api/diagscenario/memleak/20000`.
 
-The memory usage has grown to 30 MB.
+Observe that the memory usage has grown to 30 MB.
 
 ```console
     GC Heap Size (MB)                                 30
 ```
 
-By watching the memory usage, you can safely say that memory is growing or leaking. The next step is collect the right data for memory analysis.
+By watching the memory usage, you can safely say that memory is growing or leaking. The next step is to collect the right data for memory analysis.
 
-### Memory dump generation
+### Generate memory dumps
 
 When analyzing possible memory leaks, you need access to the apps memory heap. You then analyze the memory contents. Looking at relationships between objects, you create theories on why memory isn't being freed. A common diagnostics data source is a memory dump (Win) or the equivalent core dump (Linux). To generate a dump of a .NET Core application, you can use the [dotnet-dump)](dotnet-dump.md) tool.
 
-#### Linux core dump
+#### Generate Linux core dump
 
 Using the [Sample debug target](sample-debug-target.md) started above, run the following command to generate a Linux core dump:
 
@@ -134,7 +134,7 @@ Writing minidump with heap to ./core_20190430_185145
 Complete
 ```
 
-#### Windows memory dump
+#### Generate Windows memory dump
 
 Using the [Sample debug target](sample-debug-target.md) started above, from an administrator console run the following command to generate a Windows memory dump:
 
@@ -149,13 +149,13 @@ Writing minidump with heap to .\core_20190430_185145
 Complete
 ```
 
-### Remediation
+### Recover the failed process
 
 Once the dump is collected, you should have sufficient information to diagnose the failed process. If the failed process is running on a production server, now is the ideal time for short-term remediation by restarting the process.
 
 In this tutorial, we're now done with the [Sample debug target](sample-debug-target.md). It can now be terminated. Navigate to the terminal that started the server and press `Control-C`.
 
-### Analyzing the core dump
+### Analyze the core dump
 
 Now that you have a core dump generated, use the [dotnet-dump)](dotnet-dump.md) tool to analyze the dump:
 
@@ -166,7 +166,7 @@ dotnet-dump analyze core_20190430_185145
 Where `core_20190430_185145` is the name of the core dump you want to analyze.
 
 > [!NOTE]
-> If you see an error complaining that libdl.so cannot be found, you may have to install the libc6-dev package.
+> If you see an error complaining that *libdl.so* cannot be found, you may have to install the *libc6-dev* package. For more information, see [Prerequisites for .NET Core on Linux](../linux-prerequisites).
 
 You'll be presented with a prompt where you can enter SOS commands. Commonly, the first thing you want to look at is the overall state of the managed heap:
 
@@ -213,7 +213,7 @@ Statistics:
 Total 206770 objects
 ```
 
-You can now use the `gcroot` command on a `System.String` instance to see how/why the object is rooted. Be patient for this 30-MB heap this command takes several minutes:
+You can now use the `gcroot` command on a `System.String` instance to see how and why the object is rooted. Be patient for this 30-MB heap this command takes several minutes:
 
 ```console
 > gcroot -all 00007f6ad09421f8

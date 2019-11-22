@@ -92,7 +92,7 @@ While VS Code doesn't come with .NET Core support, adding .NET Core support is s
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the SDK. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is currently .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
 
 ```powershell
 dotnet-install.ps1 -Channel 3.0
@@ -106,7 +106,7 @@ dotnet-install.ps1 -Channel 3.0
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the SDK. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is currently .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
 
 ```bash
 ./dotnet-install.sh -c Current

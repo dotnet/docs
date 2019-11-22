@@ -10,11 +10,11 @@ zone_pivot_groups: operating-systems-set-one
 
 # How to verify .NET Core is already installed
 
-This article teaches you how to check which versions of the .NET Core runtime and SDK are installed on your computer. If you have an integrated development environment, such as Visual Studio or Visual Studio for Mac, .NET Core may have been installed.
+This article teaches you how to check which versions of the .NET Core runtime and SDK are installed on your computer. .NET core may have already been installed if you have an integrated development environment, such as Visual Studio or Visual Studio for Mac.
 
 Installing an SDK installs the corresponding runtime.
 
-If any command in this article fails, you do not have the runtime or SDK installed. For more information, see [Download and install .NET Core](index.md).
+If any command in this article fails, you don't have the runtime or SDK installed. For more information, see [Download and install .NET Core](index.md).
 
 ## SDK
 
@@ -153,7 +153,7 @@ Microsoft.NETCore.App 3.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 ## More information
 
-You can see both the SDK versions and runtime versions with the command `dotnet --info`. You'll also get a lot of other environmental related information, such as the operating system version and runtime identifier (RID).
+You can see both the SDK versions and runtime versions with the command `dotnet --info`. You'll also get other environmental related information, such as the operating system version and runtime identifier (RID).
 
 ## Next steps
 

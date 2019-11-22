@@ -1,5 +1,5 @@
 ---
-title: "ReDim Statement (Visual Basic)"
+title: "ReDim Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ReDim"

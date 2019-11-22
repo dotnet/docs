@@ -12,10 +12,10 @@ ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
 # \<mailSettings> Element (Network Settings)
 Configures mail sending options.  
 
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;**\<mailSettings>**  
-  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<mailSettings>**
+
 ## Syntax  
   
 ```xml  

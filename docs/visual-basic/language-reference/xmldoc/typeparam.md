@@ -1,5 +1,5 @@
 ---
-title: "<typeparam> (Visual Basic)"
+title: "<typeparam>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "typeparam XML tag"

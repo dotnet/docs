@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: add68d3f-45fd-4bef-af94-eb5273f26b11
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetModuleFromScope Method
 Gets a metadata token for the module referenced in the current metadata scope.  

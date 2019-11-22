@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f9671e5a-7b14-4f5b-8404-58136422c8b2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ThreadAssignedToOSThread Method
 Notifies the profiler that a managed thread is being implemented using a particular operating system thread.  

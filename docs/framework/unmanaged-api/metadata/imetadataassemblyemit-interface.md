@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 34fb03cc-2285-4a45-ac48-ad993b7a921a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit Interface
 Provides methods that support the self-description model used by the common language runtime to resolve and consume resources.  

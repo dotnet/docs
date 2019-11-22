@@ -1,5 +1,5 @@
 ---
-title: "How to: Assign One Array to Another Array (Visual Basic)"
+title: "How to: Assign One Array to Another Array"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "covariance, arrays"

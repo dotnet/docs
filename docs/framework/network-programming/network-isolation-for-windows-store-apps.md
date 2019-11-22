@@ -17,13 +17,13 @@ Classes in the <xref:System.Net>,  <xref:System.Net.Http>, and <xref:System.Net.
   
 4. Deploy and run your app to test it using the network isolation tools provided for troubleshooting.  
   
- For more detailed information on how to configure network capabilities and isolation tools used for troubleshooting network isolation, see [How to configure network isolation capabilities](https://go.microsoft.com/fwlink/?LinkID=228265) in the [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] developer documentation.  
+ For more detailed information on how to configure network capabilities and isolation tools used for troubleshooting network isolation, see [How to configure network isolation capabilities](https://docs.microsoft.com/previous-versions/windows/apps/hh770532(v=win.10)) in the Windows 8.x Store developer documentation.
   
 ## See also
 
-- [Connecting to a web service](https://go.microsoft.com/fwlink/?LinkID=245696)
-- [Guidelines and checklist for network isolation](https://go.microsoft.com/fwlink/?LinkID=228265)
-- [Quickstart: Connecting using HttpClient](https://go.microsoft.com/fwlink/?LinkId=245697)
-- [How to use HttpClient handlers](https://go.microsoft.com/fwlink/?LinkId=245699)
-- [How to secure HttpClient connections](https://go.microsoft.com/fwlink/?LinkId=245698)
-- [HttpClient Sample](https://go.microsoft.com/fwlink/?LinkId=242550)
+- [Connecting to a web service](https://docs.microsoft.com/previous-versions/windows/apps/hh761504(v=win.10))
+- [Guidelines and checklist for network isolation](https://docs.microsoft.com/previous-versions/windows/apps/hh770532(v=win.10))
+- [Quickstart: Connecting using HttpClient](https://docs.microsoft.com/previous-versions/windows/apps/hh781239(v=win.10))
+- [How to use HttpClient handlers](https://docs.microsoft.com/previous-versions/windows/apps/hh781241(v=win.10))
+- [How to secure HttpClient connections](https://docs.microsoft.com/previous-versions/windows/apps/hh781240(v=win.10))
+- [HttpClient Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664)

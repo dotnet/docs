@@ -14,8 +14,8 @@ ms.author: "mairaw"
 
 Clears all previously defined settings in a section.
 
-[**\<configuration>**](configuration-element.md)   
-&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<sectionName>**](custom-element-2.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax

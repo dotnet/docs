@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a C-C++ Union by Using Attributes (Visual Basic)"
+title: "How to: Create a C-C++ Union by Using Attributes"
 ms.date: 07/20/2015
 ms.assetid: 9352a7e4-c0da-4d07-aa14-55ed43736fcb
 ---

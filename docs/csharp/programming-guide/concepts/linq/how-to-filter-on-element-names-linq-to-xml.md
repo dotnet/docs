@@ -1,9 +1,9 @@
 ---
-title: "How to: Filter on Element Names (LINQ to XML) (C#)"
+title: "How to filter on element names (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 1849fb03-f075-421f-863c-e8fb32773cdf
 ---
-# How to: Filter on Element Names (LINQ to XML) (C#)
+# How to filter on element names (LINQ to XML) (C#)
 When you call one of the methods that return <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, you can filter on the element name.  
   
 ## Example  

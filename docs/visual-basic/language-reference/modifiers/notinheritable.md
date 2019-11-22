@@ -1,5 +1,5 @@
 ---
-title: "NotInheritable (Visual Basic)"
+title: "NotInheritable"
 ms.date: 07/20/2015
 f1_keywords: 
   - "NotInheritable"

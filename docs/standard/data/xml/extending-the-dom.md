@@ -121,7 +121,6 @@ class LineInfoElement : XmlElement, IXmlLineInfo {
 The following example counts the number of elements in an XML document:
 
 ```vb
-Imports System
 Imports System.Xml
 Imports System.IO
 

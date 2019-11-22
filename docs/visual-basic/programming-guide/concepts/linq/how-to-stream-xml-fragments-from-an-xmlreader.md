@@ -1,5 +1,5 @@
 ---
-title: "How to: Stream XML Fragments from an XmlReader (Visual Basic)"
+title: "How to: Stream XML Fragments from an XmlReader"
 ms.date: 07/20/2015
 ms.assetid: f67ce598-4a12-4dcb-9a07-24deca02a111
 ---

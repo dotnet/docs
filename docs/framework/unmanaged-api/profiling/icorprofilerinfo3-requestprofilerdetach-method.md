@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ea102e62-0454-4477-bcf3-126773acd184
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo3::RequestProfilerDetach Method
 Instructs the runtime to detach the profiler.  

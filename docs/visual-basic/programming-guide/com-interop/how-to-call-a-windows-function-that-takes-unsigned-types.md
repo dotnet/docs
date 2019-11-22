@@ -1,5 +1,5 @@
 ---
-title: "How to: Call a Windows Function that Takes Unsigned Types (Visual Basic)"
+title: "How to: Call a Windows Function that Takes Unsigned Types"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Windows functions [Visual Basic], calling"

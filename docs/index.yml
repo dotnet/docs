@@ -37,15 +37,6 @@ highlightedContent:
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
 
 # conceptualContent section (optional)
-## What to highlight:
-## The .NET STandard thing
-## The .NET Core App model.
-## Deployments / docker / cloud
-## Unit testing and software dev practices
-## Port from framework o Core
-## The setup / install / etc (Andy's work)
-## .NET Core Desktop development (for existing .NET devs)
-
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   title: ".NET: Free. Cross-platform. Open source." # < 60 chars (optional)
@@ -57,6 +48,15 @@ conceptualContent:
         - url: core/get-started.md
           itemType: get-started
           text: Get started
+        - url: core/whats-new/dotnet-core-3-0
+          itemType: whats-new
+          text: What's new in .NET Core 3.0
+        - url: core/deploying/index.md
+          itemType: deploy
+          text: Deploying .NET Core apps
+        - url: core/docker/build-container.md
+          itemType: tutorial
+          text: Containerize .NET Core apps with Docker
         - url: core/tutorials/index.md
           itemType: tutorial
           text: Tutorials
@@ -79,19 +79,37 @@ conceptualContent:
         - url: standard/components.md
           itemType: concept
           text: .NET architectural components
-        - url: framework/get-started/index.md
-          itemType: get-started
-          text: Get started
-        - url: framework/development-guide.md
+        - url: standard/net-standard/index.md
           itemType: overview
-          text: Development guide
-        - url: framework/develop-client-apps.md
-          itemType: concept
-          text: Develop client apps
+          text: .NET Standard
+        - url: framework/index.md
+          itemType: overview
+          text: .NET Framework (Windows) apps
       # footerLink (optional)
       footerLink:
         url: standard/index.md
         text: See more
+    # Card
+    - title: Develop .NET apps
+      links:
+        - url: core/sdk/index.md
+          itemType: download
+          text: Download the .NET Core SDK
+        - url: dotnet/core/tools/index.md
+          itemType: overview
+          text: .NET Core CLI overview
+        - url: core/testing/index.md
+          itemType: tutorial
+          text: Unit testing with .NET Core apps
+        - url: core/porting/index.md
+          itemType: how-to-guide
+          text: Porting from .NET Framework to .NET Core
+        - url: desktop-wpf/overview/index.md
+          itemType: overview
+          text: Create .NET Core desktop apps
+        - url: standard/library-guidance/index.md
+          itemType: concept
+          text: Open Source library guidance
     # Card
     - title: .NET architectural guides
       links:

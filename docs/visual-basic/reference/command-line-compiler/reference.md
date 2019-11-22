@@ -1,5 +1,5 @@
 ---
-title: "-reference (Visual Basic)"
+title: "-reference"
 ms.date: 03/13/2018
 helpviewer_keywords: 
   - "/reference compiler option [Visual Basic]"

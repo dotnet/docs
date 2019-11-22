@@ -1,5 +1,5 @@
 ---
-title: "How to: Show Available Serial Ports in Visual Basic"
+title: "How to: Show Available Serial Ports"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "serial ports, availability"

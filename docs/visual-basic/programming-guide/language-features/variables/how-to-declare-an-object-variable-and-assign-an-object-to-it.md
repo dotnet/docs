@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare an Object Variable and Assign an Object to It in Visual Basic"
+title: "How to: Declare an Object Variable and Assign an Object to It"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "object variables [Visual Basic], declaring"

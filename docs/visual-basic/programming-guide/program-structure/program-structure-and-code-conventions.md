@@ -1,5 +1,5 @@
 ---
-title: "Program Structure and Code Conventions (Visual Basic)"
+title: "Program Structure and Code Conventions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "coding conventions"

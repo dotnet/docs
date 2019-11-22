@@ -1,5 +1,5 @@
 ---
-title: "Operators (Visual Basic)"
+title: "Operators"
 ms.date: 10/17/2018
 helpviewer_keywords: 
   - "operators [Visual Basic]"

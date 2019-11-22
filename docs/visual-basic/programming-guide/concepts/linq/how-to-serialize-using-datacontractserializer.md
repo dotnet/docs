@@ -1,5 +1,5 @@
 ---
-title: "How to: Serialize Using DataContractSerializer (Visual Basic)"
+title: "How to: Serialize Using DataContractSerializer"
 ms.date: 07/20/2015
 ms.assetid: ecaea518-8a0f-4249-b4e5-9b3fb0cdd8ad
 ---

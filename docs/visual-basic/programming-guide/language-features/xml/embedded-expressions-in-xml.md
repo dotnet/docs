@@ -1,5 +1,5 @@
 ---
-title: "Embedded Expressions in XML (Visual Basic)"
+title: "Embedded Expressions in XML"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlEmbeddedExpression"

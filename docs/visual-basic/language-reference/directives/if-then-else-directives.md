@@ -1,5 +1,5 @@
 ---
-title: "#If...Then...#Else Directives (Visual Basic)"
+title: "#If...Then...#Else Directives"
 ms.date: 04/11/2018
 f1_keywords:
   - "vb.#EndIf"

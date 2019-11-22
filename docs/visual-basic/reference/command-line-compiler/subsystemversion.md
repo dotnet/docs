@@ -1,5 +1,5 @@
 ---
-title: "-subsystemversion (Visual Basic)"
+title: "-subsystemversion"
 ms.date: 03/13/2018
 helpviewer_keywords:
   - "/subsystemversion compiler option [Visual Basic]"

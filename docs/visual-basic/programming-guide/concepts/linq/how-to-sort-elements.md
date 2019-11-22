@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort Elements (Visual Basic)"
+title: "How to: Sort Elements"
 ms.date: 07/20/2015
 ms.assetid: c2c09279-6c8a-482e-8e71-b1453a815052
 ---

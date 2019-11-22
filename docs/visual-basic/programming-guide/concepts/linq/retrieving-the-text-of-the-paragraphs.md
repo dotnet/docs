@@ -1,5 +1,5 @@
 ---
-title: "Retrieving the Text of the Paragraphs (Visual Basic)"
+title: "Retrieving the Text of the Paragraphs"
 ms.date: 07/20/2015
 ms.assetid: 095fa0d9-7b1b-4cbb-9c13-e2c9d8923d31
 ---

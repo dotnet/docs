@@ -1,5 +1,5 @@
 ---
-title: "Writing Queries in Visual Basic"
+title: "Writing Queries"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "queries [LINQ in Visual Basic], writing"

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)"
+title: "Walkthrough: Accessing the Web by Using Async and Await"
 ms.date: 07/20/2015
 ms.assetid: 84fd047f-fab8-4d89-8ced-104fb7310a91
 ---

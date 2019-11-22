@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic command-line compiler"
+title: "Command-line compiler"
 ms.date: 02/20/2018
 helpviewer_keywords: 
   - "compilers [Visual Basic], Visual Basic options"

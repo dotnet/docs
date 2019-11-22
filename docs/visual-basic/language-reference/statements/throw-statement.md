@@ -1,5 +1,5 @@
 ---
-title: "Throw Statement (Visual Basic)"
+title: "Throw Statement"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.Throw"

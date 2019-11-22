@@ -1,5 +1,5 @@
 ---
-title: "LINQ and File Directories (Visual Basic)"
+title: "LINQ and File Directories"
 ms.date: 07/20/2015
 ms.assetid: 159fd5c3-3926-4071-ae78-d8e423287eb7
 ---

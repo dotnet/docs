@@ -81,7 +81,7 @@ Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload
 
 ::: zone-end
 
-## Install with Visual Studio Code
+## Install from Visual Studio Code
 
 Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.
 

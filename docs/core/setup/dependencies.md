@@ -1,6 +1,6 @@
 ---
 title: .NET Core SDK and runtime dependencies for Windows, Linux, and macOS - .NET Core
-description: Details the operating system and CPU architecture prerequisites to install the .NET Core SDK and runtime on on Windows, Linux, and macOS.
+description: Details the operating system and CPU architecture prerequisites to install the .NET Core SDK and runtime on Windows, Linux, and macOS.
 author: leecow
 ms.author: leecow
 ms.date: 11/06/2019
@@ -32,11 +32,11 @@ The following Windows operating systems are supported with .NET Core 3.0:
 | Windows Server                | 2012 R2+                       | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
 
-For more information about .NET Core 3.0 supported OS, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
+For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
 
 # [.NET Core 2.2](#tab/netcore22)
 
-The following Windows operating systems are supported with .NET Core 2.2:
+The following Windows versions are supported with .NET Core 2.2:
 
 > [!NOTE]
 > A `+` symbol represents the minimum version.
@@ -72,7 +72,7 @@ For more information about .NET Core 2.1 supported OS, distributions, and lifecy
 
 ### Windows 7 / 8.1 / Server 2008 R2
 
-Additional dependencies are required if you're installing the .NET SDK or Runtime on the following Windows operating systems:
+Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows operating systems:
 
 - Windows 7 SP1
 - Windows 8.1

@@ -54,13 +54,13 @@ If you already have Visual Studio installed, you can check your version with the
 01. Select the **Help** menu > **About Microsoft Visual Studio**.
 01. Read the version number from the **About** dialog.
 
-### Download
-
 Visual Studio can install the latest .NET Core SDK and runtime.
 
 - [Download Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
 
-When installing Visual Studio, select one of the following workloads, depending on the kind of application you're building:
+### Select a workload
+
+When installing or modifying Visual Studio, select one of the following workloads, depending on the kind of application you're building:
 
 - The **.NET Core cross-platform development** workload in the **Other Toolsets** section.
 - The **ASP.NET and web development** workload in the **Web & Cloud** section.

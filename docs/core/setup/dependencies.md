@@ -70,11 +70,12 @@ For more information about .NET Core 2.1 supported operating systems, distributi
 
 <!-- markdownlint-disable MD001 -->
 
-### Windows 7 / 8.1 / Server 2008 R2
+### Windows 7 / Vista / 8.1 / Server 2008 R2
 
 Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
 
 - Windows 7 SP1
+- Windows Vista SP 2
 - Windows 8.1
 - Windows Server 2008 R2
 - Windows Server 2012 R2

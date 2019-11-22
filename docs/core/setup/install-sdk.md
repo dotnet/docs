@@ -83,13 +83,13 @@ Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload
 
 ## Install with Visual Studio Code
 
-Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. VS Code is available for Windows, macOS, and Linux.
+Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.
 
-While VS Code doesn't come with .NET Core support, adding .NET Core support is simple.
+While Visual Studio Code doesn't come with .NET Core support, adding .NET Core support is simple.
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
 01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).
-01. [Install the C# extension from the VS Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
+01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
 
 ::: zone pivot="os-windows"
 
@@ -121,7 +121,7 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 
 ## Docker
 
-Containers provide a lightweight way to isolate your application from the rest of the host system, sharing just the kernel, and using resources given to your application.
+Containers provide a lightweight way to isolate your application from the rest of the host system. Containers on the same machine share just the kernel and use resources given to your application.
 
 .NET Core can run in a Docker container. Official .NET Core Docker images are published to the Microsoft Container Registry (MCR) and are discoverable at the [Microsoft .NET Core Docker Hub repository](https://hub.docker.com/_/microsoft-dotnet-core/). Each repository contains images for different combinations of the .NET (SDK or Runtime) and OS that you can use.
 

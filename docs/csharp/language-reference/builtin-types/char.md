@@ -24,7 +24,7 @@ The [string](reference-types.md#the-string-type) type represents text as a seque
 You can specify a `char` value with:
 
 - a character literal.
-- a Unicode escape sequence, which is `\u` followed by the four-digit hexadecimal representation of a character code.
+- a Unicode escape sequence, which is `\u` followed by the four-symbol hexadecimal representation of a character code.
 - a hexadecimal escape sequence, which is `\x` followed by the hexadecimal representation of a character code.
 
 [!code-csharp-interactive[char literals](~/samples/csharp/language-reference/builtin-types/CharType.cs#Literals)]

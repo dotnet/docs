@@ -2,18 +2,18 @@
 title: REST and gRPC
 description: Learn about gRPC, its role in cloud-native applications and how it differs from HTTP REST
 author: robvet
-ms.date: 09/08/2019
+ms.date: 11/19/2019
 ---
 
 # gRPC
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. REST is an architectural style that promotes interoperability between services distributed across computer systems. It's implemented with a HTTP-based request/response model. Every response from the server is a reply to a request from a client. While REST is widely implemented, a newer communication technology, entitled gRPC, is rapidly gaining popularity for cloud-native applications.
+So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. REST is an architectural style that promotes interoperability between services distributed across computer systems. Embracing a request/response communication model, it's typically implemented with HTTP. Every response from the server is a reply to a request from a client. While widely implemented, a newer communication technology, gRPC, is rapidly gaining popularity for cloud-native applications.
 
 ## Introduction
 
-gRPC is an open-source communication protocol that originates from Google. It's built upon the [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) model, popular in distributed computing. A local client program exposes an in-process method to execute what appears to be a local operation. Behind the scenes, however, the local call invokes an out-of-process call to a remote microservice across a distributed network. The developer codes the operation as a local procedure call. The underlying platform abstracts the point-to-point networking communication, serialization, and execution.
+gRPC is an open-source communication protocol that originates from Google. It's built upon the [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) model, found in distributed computing. A local client program exposes an in-process method to execute what appears to be a local operation. Behind the scenes, however, the local method invokes an out-of-process call to a remote microservice across a distributed network. The developer codes the operation as a local procedure call. The underlying platform abstracts the point-to-point networking communication, serialization, and execution.
 
 gRPC is a modern RPC framework that is lightweight and highly performant. It uses HTTP/2 for its transport protocol. While compatible with HTTP 1.1, HTTP/2 features many advanced capabilities:
 
@@ -23,13 +23,13 @@ gRPC is a modern RPC framework that is lightweight and highly performant. It use
 - HTTP/2 features built-in streaming with which both requests and responses can asynchronously stream large data sets. Multiple data streams can process independently on the same HTTP/2 connection.
 - Combining gRPC and HTTP/2, performance dramatically increases. In Microsoft [Windows Communication Foundation (WCF)](https://docs.microsoft.com/dotnet/framework/wcf/whats-wcf) parlance, gRPC performance meets and exceeds the speed and efficiency of [NetTCP bindings](https://docs.microsoft.com/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). However, unlike NetTCP, which favors the Microsoft stack, gRPC is cross-platform.
 
-gRPC is supported across most popular platforms, including Java, JavaSript, C#, Golang, and NodeJS.
+gRPC is supported across most popular platforms, including Java, JavaSript, C#, Golang, Swift, and NodeJS.
 
 ## Protocol Buffers
 
-gRPC embraces another open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). This technology is used to define service contracts for each microservice. Using a common Interface Definition Language (IDL), the developer creates a ".proto" file that describes each service along with its methods, inputs, and outputs. Then, using the Protobuf compiler, "Proton," the developer generates both client and server code for any of the supported platforms. The generated code is optimized for fast serialization/deserialization of data. At runtime, each message is wrapped in the strongly-typed service contract and serialized in a standard Protobuf representation.
+gRPC embraces another open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). This technology provides a highly efficient, platform-neutral engine for serializing structured data that one service can send to another. Using a common Interface Definition Language (IDL), the developer defines a service contract for each microservice. The contract describes the methods, inputs, and outputs for each service, implemented as a ".proto" file. Then, using the Protobuf compiler, "Proton," the developer generates both client and server code for any of the supported platforms. The generated code is optimized for fast serialization/deserialization of data. At runtime, each message is serialized as a standard Protobuf representation and sent to a remote service.
 
-The book, [gRPC for WCF Developers](https://docs.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/), available for free from Microsoft, provides detailed coverage of gRPC and Protocol Buffers. 
+The book, [gRPC for WCF Developers](https://docs.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/), available for free from Microsoft, provides detailed coverage of the mechanics of gRPC and Protocol Buffers. 
 
 ## gRPC support in .NET
 

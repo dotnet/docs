@@ -18,9 +18,10 @@ To install .NET Core from Red Hat on RHEL, you first need to register using the 
 
 ## Install the .NET Core SDK
 
-After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following commands.
+After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following commands to enable the RHEL 7 dotnet channel and install .
 
 ```bash
+subscription-manager repos --enable=rhel-7-server-dotnet-rpms
 yum install rh-dotnet30 -y
 scl enable rh-dotnet30 bash
 ```
@@ -31,6 +32,7 @@ After registering with the Subscription Manager, you're ready to install and ena
 
 <!-- TODO: is this the correct value? Taken from the webpage but it doesn't have aspnet in the name -->
 ```bash
+subscription-manager repos --enable=rhel-7-server-dotnet-rpms
 yum install rh-dotnet30-dotnet-runtime-3.0 -y
 scl enable rh-dotnet30 bash
 ```
@@ -40,10 +42,7 @@ scl enable rh-dotnet30 bash
 After registering with the Subscription Manager, you're ready to install and enable the .NET Core Runtime. In your terminal, run the following commands.
 
 ```bash
+subscription-manager repos --enable=rhel-7-server-dotnet-rpms
 yum install rh-dotnet30-dotnet-runtime-3.0 -y
 scl enable rh-dotnet30 bash
 ```
-
-## How to install other versions
-
-[!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]

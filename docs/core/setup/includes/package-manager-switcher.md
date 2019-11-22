@@ -2,6 +2,7 @@
 > [!div class="op_single_selector"]
 >
 > - [RHEL 7 - x64](../linux-package-manager-rhel7.md)
+> - [RHEL 8.1 - x64](../linux-package-manager-rhel81.md)
 > - [Ubuntu 16.04 - x64](../linux-package-manager-ubuntu-1604.md)
 > - [Ubuntu 18.04 - x64](../linux-package-manager-ubuntu-1804.md)
 > - [Ubuntu 19.04 - x64](../linux-package-manager-ubuntu-1904.md)

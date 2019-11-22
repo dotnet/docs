@@ -8,7 +8,7 @@ ms.custom: "updateeachrelease"
 zone_pivot_groups: operating-systems-set-one
 ---
 
-# How to check if .NET Core is already installed
+# How to verify .NET Core is already installed
 
 This article teaches you how to check which versions of the .NET Core runtime and SDK are installed on your computer. If you have an integrated development environment, such as Visual Studio or Visual Studio for Mac, .NET Core may have been installed.
 

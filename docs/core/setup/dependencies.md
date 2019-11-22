@@ -215,9 +215,9 @@ CentOS distributions require the following libraries installed:
 - libicu
 - zlib
 
-Fedora users: If your openssl's version >= 1.1, you'll need to install **compat-openssl10**.
+Fedora users: If your OpenSSL's version >= 1.1, you'll need to install **compat-openssl10**.
 
-For .NET Core 2.0, following dependencies are also required:
+For .NET Core 2.0, the following dependencies are also required:
 
 - libunwind
 - libuuid
@@ -263,5 +263,5 @@ brew install mono-libgdiplus
 
 ## Next steps
 
-- To develop and run apps, install the [.NET Core SDK](install-sdk.md). (includes the runtime)
+- To develop and run apps, install the [.NET Core SDK](install-sdk.md) (includes the runtime).
 - To run apps others have created, install the [.NET Core runtime](install-runtime.md).

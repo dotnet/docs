@@ -21,7 +21,7 @@ You can download and install .NET Core directly with one of the following links:
 
 ## Install with an installer
 
-Both Windows and macOS have standalone installers that can be used to install the .NET Core runtime.
+Both Windows and macOS have standalone installers that can be used to install the .NET Core 3.0 runtime.
 
 - Windows [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-windows-x64-installer) | [x32 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-windows-x86-installer)
 - macOS [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-macos-x64-installer)
@@ -30,7 +30,7 @@ Both Windows and macOS have standalone installers that can be used to install th
 
 ## Install with a package manager
 
-You can install .NET Core with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
+You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
 
 ::: zone-end
 

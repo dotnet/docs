@@ -18,7 +18,7 @@ In the [sample SimpleStockTicker WCF solution](https://github.com/dotnet-archite
 
 The WCF solution is implemented as a self-hosted Net.TCP server in a .NET Framework 4.*x* console application.
 
-#### The ServiceContract
+#### ServiceContract
 
 ```csharp
 [ServiceContract(SessionMode = SessionMode.Required, CallbackContract = typeof(ISimpleStockTickerCallback))]
@@ -46,7 +46,7 @@ You can find the implementations of these interfaces in the solution, along with
 
 ### gRPC streaming
 
-The gRPC process for handling real-time data is different. A call from client to server can create a persistent stream, which can be monitored for messages that arrive asynchronously. Despite the difference, streams can be a more intuitive way of dealing with this data and are more relevant in modern programming, which emphasizes LINQ, Reactive Streams, functional programming, and so on.
+The gRPC process for handling real-time data is different from the WCF process. A call from client to server can create a persistent stream, which can be monitored for messages that arrive asynchronously. Despite the difference, streams can be a more intuitive way of dealing with this data and are more relevant in modern programming, which emphasizes LINQ, Reactive Streams, functional programming, and so on.
 
 The service definition needs two messages: one for the request and one for the stream. The service returns a stream of the `StockTickerUpdate` message with the `stream` keyword in its `return` declaration. We recommend that you add a `Timestamp` to the update to show the exact time of the price change.
 
@@ -76,7 +76,7 @@ message StockTickerUpdate {
 }
 ```
 
-### Implement the SimpleStockTicker
+### Implement SimpleStockTicker
 
 Reuse the fake `StockPriceSubscriber` from the WCF project by copying the three classes from the `TraderSys.StockMarket` class library into a new .NET Standard class library in the target solution. To better follow best practices, add a `Factory` type to create instances of it, and register the `IStockPriceSubscriberFactory` with the ASP.NET Core dependency injection services.
 
@@ -168,7 +168,7 @@ In the `Subscribe` method, then, get a `StockPriceSubscriber` and add an event h
 
 The `WriteUpdateAsync` method has a `try`/`catch` block to handle any errors that might happen when it writes a message to the stream. This consideration is important in persistent connections over networks, which could be broken at any millisecond, whether intentionally or because of a failure somewhere.
 
-### Using the StockTickerService from a client application
+### Use StockTickerService from a client application
 
 Follow the same steps in the previous section to create a shareable client class library from the `.proto` file. In the sample, there's a .NET Core 3.0 console application that demonstrates how to use the client.
 
@@ -240,7 +240,7 @@ Again, be sure to catch exceptions here because of the possibility of network fa
 
 ## Bidirectional streaming
 
-A WCF full-duplex service allows for asynchronous, real-time messaging in both directions. In the server streaming example, the client starts a request, then receives a stream of updates. A better version of that service would allow the client to add and remove stocks from the list without having to stop and create a new subscription. That functionality has been implemented in the [FullStockTicker sample solution](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/wcf/FullStockTicker).
+A WCF full-duplex service allows for asynchronous, real-time messaging in both directions. In the server streaming example, the client starts a request and then receives a stream of updates. A better version of that service would allow the client to add and remove stocks from the list without having to stop and create a new subscription. That functionality has been implemented in the [FullStockTicker sample solution](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/wcf/FullStockTicker).
 
 The `IFullStockTickerService` interface provides three methods:
 
@@ -265,9 +265,9 @@ public interface IFullStockTickerService
 
 The callback interface remains the same.
 
-Implementing this pattern in gRPC is less straightforward, because there are now two streams of data with messages being passed: one from client to server, and another from server to client. It isn't possible to use multiple methods to implement the Add and Remove operation, but more than one type of message can be passed on a single stream, using either the `Any` type or `oneof` keyword, which were covered in [Chapter 3](protobuf-any-oneof.md).
+Implementing this pattern in gRPC is less straightforward because there are now two streams of data with messages being passed: one from client to server and another from server to client. It isn't possible to use multiple methods to implement the add and remove operations, but you can pass more than one type of message on a single stream by using either the `Any` type or the `oneof` keyword, which were covered in [Chapter 3](protobuf-any-oneof.md).
 
-For a case where there's a specific set of types that are acceptable, `oneof` is a better way to go. Use an `ActionMessage` that can hold either an `AddSymbolRequest` or a `RemoveSymbolRequest`.
+In a case where there's a specific set of types that are acceptable, `oneof` is a better way to go. Use an `ActionMessage` that can hold either an `AddSymbolRequest` or a `RemoveSymbolRequest`:
 
 ```protobuf
 message ActionMessage {
@@ -286,7 +286,7 @@ message RemoveSymbolRequest {
 }
 ```
 
-Declare a bi-directional streaming service that takes a stream of `ActionMessage` messages.
+Declare a bidirectional streaming service that takes a stream of `ActionMessage` messages:
 
 ```protobuf
 service FullStockTicker {
@@ -294,7 +294,7 @@ service FullStockTicker {
 }
 ```
 
-The implementation for this service is similar to the previous example, except the first parameter of the `Subscribe` method is now an `IAsyncStreamReader<ActionMessage>`, which can be used to handle the `Add` and `Remove` requests.
+The implementation for this service is similar to that of the previous example, except the first parameter of the `Subscribe` method is now an `IAsyncStreamReader<ActionMessage>`, which can be used to handle the `Add` and `Remove` requests:
 
 ```csharp
 public override async Task Subscribe(IAsyncStreamReader<ActionMessage> requestStream, IServerStreamWriter<StockTickerUpdate> responseStream, ServerCallContext context)
@@ -327,7 +327,7 @@ private async Task WriteUpdateAsync(IServerStreamWriter<StockTickerUpdate> strea
     }
     catch (Exception e)
     {
-        // Handle any errors due to broken connection etc.
+        // Handle any errors caused by broken connection, etc.
         _logger.LogError($"Failed to write message: {e.Message}");
     }
 }
@@ -340,7 +340,7 @@ private static Task AwaitCancellation(CancellationToken token)
 }
 ```
 
-The `ActionMessage` class that gRPC has generated for us guarantees that only one of the `Add` and `Remove` properties can be set, and finding which one isn't `null` is a valid way of finding which type of message is used, but there's a better way. The code generation also created an `enum ActionOneOfCase` in the `ActionMessage` class, which looks like this:
+The `ActionMessage` class that gRPC has generated guarantees that only one of the `Add` and `Remove` properties can be set. Finding which one isn't `null` is a valid way to determine which type of message is used, but there's a better way. The code generation also created an `enum ActionOneOfCase` in the `ActionMessage` class, which looks like this:
 
 ```csharp
 public enum ActionOneofCase {
@@ -350,7 +350,7 @@ public enum ActionOneofCase {
 }
 ```
 
-The property `ActionCase` on the `ActionMessage` object can be used with a `switch` statement to determine which field is set.
+The property `ActionCase` on the `ActionMessage` object can be used with a `switch` statement to determine which field is set:
 
 ```csharp
 private async Task HandleActions(IAsyncStreamReader<ActionMessage> requestStream, IFullStockPriceSubscriber subscriber, CancellationToken token)
@@ -377,13 +377,13 @@ private async Task HandleActions(IAsyncStreamReader<ActionMessage> requestStream
 ```
 
 > [!TIP]
-> The `switch` statement has a `default` case that logs a warning if an unknown `ActionOneOfCase` value is encountered. This could be useful in indicating that a client is using a later version of the `.proto` file which has added more actions. This is one reason why using a `switch` is better than testing for `null` on known fields.
+> The `switch` statement has a `default` case that logs a warning if it encounters an unknown `ActionOneOfCase` value. This could be useful to indicate that a client is using a later version of the `.proto` file that has added more actions. This is one reason why using a `switch` is better than testing for `null` on known fields.
 
-### Use the FullStockTickerService from a client application
+### Use FullStockTickerService from a client application
 
-There's a simple .NET Core 3.0 WPF application to demonstrate use of this more complex client. The full application can be found [on GitHub](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTicker).
+There's a simple .NET Core 3.0 WPF application that demonstrates the use of this more complex client. You can find the full application on [GitHub](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/FullStockTickerSample/grpc/FullStockTicker).
 
-The client is used in the `MainWindowViewModel` class, which gets an instance of the `FullStockTicker.FullStockTickerClient` type from dependency injection.
+The client is used in the `MainWindowViewModel` class, which gets an instance of the `FullStockTicker.FullStockTickerClient` type from dependency injection:
 
 ```csharp
 public class MainWindowViewModel : IAsyncDisposable, INotifyPropertyChanged
@@ -405,7 +405,7 @@ public class MainWindowViewModel : IAsyncDisposable, INotifyPropertyChanged
     }
 ```
 
-The object returned by the `client.Subscribe()` method is now an instance of the gRPC library type `AsyncDuplexStreamingCall<TRequest, TResponse>`, which provides a `RequestStream` for sending requests to the server, and a `ResponseStream` for handling responses.
+The object returned by the `client.Subscribe()` method is now an instance of the gRPC library type `AsyncDuplexStreamingCall<TRequest, TResponse>`, which provides a `RequestStream` for sending requests to the server and a `ResponseStream` for handling responses.
 
 The request stream is used from some WPF `ICommand` methods to add and remove symbols. For each operation, set the relevant field on an `ActionMessage` object:
 
@@ -426,9 +426,9 @@ public async Task Remove(PriceViewModel priceViewModel)
 ```
 
 > [!IMPORTANT]
-> Setting a `oneof` field's value on a message automatically clears any fields that have been previously set.
+> Setting a `oneof` field's value on a message automatically clears any fields that have been set previously.
 
-The stream of responses is handled in an `async` method, and the `Task` it returns is held to be disposed when the window is closed.
+The stream of responses is handled in an `async` method. The `Task` it returns is held to be disposed when the window is closed:
 
 ```csharp
 private async Task HandleResponsesAsync(CancellationToken token)
@@ -455,9 +455,9 @@ private async Task HandleResponsesAsync(CancellationToken token)
 }
 ```
 
-### Client clean-up
+### Client cleanup
 
-When the window is closed and the `MainWindowViewModel` is disposed (from the `Closed` event of `MainWindow`), it's recommended that you properly dispose the `AsyncDuplexStreamingCall` object. In particular, the `CompleteAsync` method on the `RequestStream` should be called to gracefully close the stream on the server. The following example shows the `DisposeAsync` method from the sample view-model:
+When the window is closed and the `MainWindowViewModel` is disposed (from the `Closed` event of `MainWindow`), we recommend that you properly dispose the `AsyncDuplexStreamingCall` object. In particular, the `CompleteAsync` method on the `RequestStream` should be called to gracefully close the stream on the server. This example shows the `DisposeAsync` method from the sample view-model:
 
 ```csharp
 public ValueTask DisposeAsync()
@@ -474,7 +474,7 @@ public ValueTask DisposeAsync()
 }
 ```
 
-Closing request streams enables the server to dispose of its own resources in a timely manner. This improves the efficiency and scalability of services and prevents exceptions.
+Closing request streams enables the server to dispose of its own resources in a timely way. This improves the efficiency and scalability of services and prevents exceptions.
 
 >[!div class="step-by-step"]
 >[Previous](migrate-request-reply.md)

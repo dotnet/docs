@@ -1,6 +1,5 @@
 ---
-title: "char type- C# reference"
-ms.custom: seodec18
+title: "char type - C# reference"
 ms.date: 11/22/2019
 f1_keywords:
   - "char"

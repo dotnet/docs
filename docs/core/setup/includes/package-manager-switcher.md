@@ -10,7 +10,6 @@
 > - [Fedora 29 - x64](../linux-package-manager-fedora29.md)
 > - [Fedora 30 - x64](../linux-package-manager-fedora30.md)
 > - [CentOS 7 - x64](../linux-package-manager-centos7.md)
-> - [OpenSUSE 42.3 - x64](../linux-package-manager-opensuse423.md)
 > - [OpenSUSE 15 - x64](../linux-package-manager-opensuse15.md)
 > - [SLES 12 - x64](../linux-package-manager-sles12.md)
 > - [SLES 15 - x64](../linux-package-manager-sles15.md)

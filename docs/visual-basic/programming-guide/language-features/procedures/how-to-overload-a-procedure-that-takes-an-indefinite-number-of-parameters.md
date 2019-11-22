@@ -1,5 +1,5 @@
 ---
-title: "How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic)"
+title: "How to: Overload a Procedure that Takes an Indefinite Number of Parameters"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], parameters"

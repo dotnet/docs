@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 60600178-c2b5-4cab-b3a5-f0f61acebaf1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::GetURL Method
 Returns the uniform resource locator (URL) for this document.  

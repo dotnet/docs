@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "security, profiling API considerations"
   - "stack depth [.NET Framework profiling]"
 ms.assetid: 864c2344-71dc-46f9-96b2-ed59fb6427a8
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Profiling Overview
 

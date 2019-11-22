@@ -1,5 +1,5 @@
 ---
-title: "Aggregation Operations (Visual Basic)"
+title: "Aggregation Operations"
 ms.date: 07/20/2015
 ms.assetid: 0f47e92c-5dd2-4007-baf4-c5fe5dc3b4a8
 ---

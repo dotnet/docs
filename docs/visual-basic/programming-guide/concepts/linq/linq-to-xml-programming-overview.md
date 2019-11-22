@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Programming Overview (Visual Basic)"
+title: "LINQ to XML Programming Overview"
 ms.date: 07/20/2015
 ms.assetid: a7c07d0a-1fae-4610-ae51-56dd7075cc14
 ---

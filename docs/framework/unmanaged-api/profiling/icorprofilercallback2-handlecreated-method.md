@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6bbb7786-7c38-490f-9834-91aa2795c355
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::HandleCreated Method
 Notifies the code profiler that a garbage collection handle has been created.  

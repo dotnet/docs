@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Lambda Expression (Visual Basic)"
+title: "How to: Create a Lambda Expression"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [Visual Basic]"

@@ -1,5 +1,5 @@
 ---
-title: "Security and the Registry (Visual Basic)"
+title: "Security and the Registry"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "security [Visual Basic], registry"

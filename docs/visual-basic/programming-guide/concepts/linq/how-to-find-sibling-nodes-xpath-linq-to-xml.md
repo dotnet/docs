@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Sibling Nodes (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Sibling Nodes (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 73082738-2113-4438-8545-98d5df0927cb
 ---

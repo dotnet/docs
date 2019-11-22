@@ -1,5 +1,5 @@
 ---
-title: "How to: Group Files by Extension (LINQ) (Visual Basic)"
+title: "How to: Group Files by Extension (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 904dc6d7-7162-4655-a7f4-5785d669bc5a
 ---

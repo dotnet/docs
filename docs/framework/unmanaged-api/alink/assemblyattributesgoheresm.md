@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4cf9bf39-1527-49e0-a0e9-55e7a018bf66
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # AssemblyAttributesGoHereSM Class
 

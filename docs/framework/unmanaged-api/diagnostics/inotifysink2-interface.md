@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c1018789-4206-455d-aacc-2d876fc0d0bb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifySink2 Interface
 Declares methods for sink notification.  

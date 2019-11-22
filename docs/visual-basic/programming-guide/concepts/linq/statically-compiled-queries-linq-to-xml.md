@@ -1,5 +1,5 @@
 ---
-title: "Statically Compiled Queries (LINQ to XML) (Visual Basic)"
+title: "Statically Compiled Queries (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 3f4825c7-c3b0-48da-ba4e-8e97fb2a2f34
 ---

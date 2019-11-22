@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e525aa16-c923-4b16-833b-36f1f0dd70fc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetTokenAndMetadataFromFunction Method
 Gets the metadata token and a metadata interface instance that can be used against the token for the specified function.  

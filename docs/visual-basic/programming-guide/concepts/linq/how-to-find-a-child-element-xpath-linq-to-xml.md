@@ -1,5 +1,5 @@
 ---
-title: "How to: Find a Child Element (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find a Child Element (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: adb46c98-a650-42e2-b62d-835920fe8421
 ---

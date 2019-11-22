@@ -1,5 +1,5 @@
 ---
-title: "Developing Applications with Visual Basic"
+title: "Developing Applications"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic, developing applications"

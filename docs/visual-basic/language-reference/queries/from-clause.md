@@ -1,5 +1,5 @@
 ---
-title: "From Clause (Visual Basic)"
+title: "From Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryFrom"

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1a6e5dae-d366-4497-9c02-7b5b1f43f9ec
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::SetFunctionIDMapper Method
 Specifies the profiler-implemented function that will be called to map `FunctionID` values to alternative values, which are passed to the profiler's function entry/exit hooks.  

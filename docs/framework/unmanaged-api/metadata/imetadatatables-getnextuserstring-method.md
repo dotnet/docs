@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b7cb40ee-67b7-4f4e-8dcc-ee7ac8bc986b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetNextUserString Method
 Gets the index of the row that contains the next hard-coded string in the current table column.  

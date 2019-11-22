@@ -1,5 +1,5 @@
 ---
-title: "Group Join Clause (Visual Basic)"
+title: "Group Join Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryGroupJoinIn"

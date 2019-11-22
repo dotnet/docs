@@ -1,5 +1,5 @@
 ---
-title: "Interpolated Strings (Visual Basic)"
+title: "Interpolated Strings"
 ms.date: "10/31/2017"
 ---
 # Interpolated Strings (Visual Basic Reference)

@@ -1,5 +1,5 @@
 ---
-title: "Directives (Visual Basic)"
+title: "Directives"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "directives, Visual Basic compiler"

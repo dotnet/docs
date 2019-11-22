@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8027df7c-cfad-4724-bda0-7538d9519070
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorNativeLinkFlags Enumeration
 Provides flag values used by the linker when linking native code.  

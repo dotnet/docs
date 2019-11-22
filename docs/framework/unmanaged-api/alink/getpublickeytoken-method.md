@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 4a16374c-94b0-47b0-9fed-88c2b0cdccd4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetPublicKeyToken Method
 Retrieves the public key token for a given keyfile or key container.  

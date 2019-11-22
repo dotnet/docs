@@ -1,5 +1,5 @@
 ---
-title: "Type Relationships in Query Operations (Visual Basic)"
+title: "Type Relationships in Query Operations"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "variable relationships [LINQ in Visual Basic]"

@@ -34,11 +34,6 @@ The tutorial uses:
 
 The tutorial assumes the sample and tools are installed and ready to use.
 
-The tutorial requires permissions to generate a dump file.
-
-- To run the full tutorial on Linux, you'll need to use `sudo`.
-- To run the full tutorial on Windows, you'll need administrator access.
-
 ## Examine managed memory usage
 
 Before you dig into collecting diagnostics data to help us root cause this scenario, you need to convince ourselves that what you are actually seeing is a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to get at this information.
@@ -115,37 +110,20 @@ Observe that the memory usage has grown to 30 MB.
 
 By watching the memory usage, you can safely say that memory is growing or leaking. The next step is to collect the right data for memory analysis.
 
-### Generate memory dumps
+### Generate memory dump
 
 When analyzing possible memory leaks, you need access to the apps memory heap. You then analyze the memory contents. Looking at relationships between objects, you create theories on why memory isn't being freed. A common diagnostics data source is a memory dump (Win) or the equivalent core dump (Linux). To generate a dump of a .NET Core application, you can use the [dotnet-dump)](dotnet-dump.md) tool.
-
-#### Generate Linux core dump
 
 Using the [Sample debug target](sample-debug-target.md) started above, run the following command to generate a Linux core dump:
 
 ```dotnetcli
-sudo dotnet-dump collect -p 4807
+dotnet-dump collect -p 4807
 ```
 
 The result is a core dump located in the same folder.
 
 ```console
 Writing minidump with heap to ./core_20190430_185145
-Complete
-```
-
-#### Generate Windows memory dump
-
-Using the [Sample debug target](sample-debug-target.md) started above, from an administrator console run the following command to generate a Windows memory dump:
-
-```dotnetcli
-dotnet-dump collect -p 4807
-```
-
-The result is a memory dump located in the same folder.
-
-```console
-Writing minidump with heap to .\core_20190430_185145
 Complete
 ```
 

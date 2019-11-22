@@ -1,12 +1,12 @@
 ---
-title: Protobuf nested types - gRPC for WCF Developers
+title: Protobuf nested types - gRPC for WCF developers
 description: Learn about nested message types in Protobuf and gRPC and how they're generated in C#.
 ms.date: 09/09/2019
 ---
 
 # Protobuf nested types
 
-Just like C# allows you to declare classes inside other classes, Protobuf allows you to nest message definitions within other messages. The following example shows how to create nested message types:
+Just as C# allows you to declare classes inside other classes, Protocol Buffer (Protobuf) allows you to nest message definitions within other messages. The following example shows how to create nested message types:
 
 ```protobuf
 message Outer {

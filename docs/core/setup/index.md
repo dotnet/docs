@@ -20,5 +20,3 @@ This article provides information on how to download and install .NET Core. Ther
 ## Dependencies
 
 .NET Core is supported on Windows, Linux, and macOS. For a full list of requirements, see [Supported operating systems](dependencies.md).
-
-TODO

@@ -15,7 +15,7 @@ The following table shows the C# value types:
 |----------------|--------------|
 |[bool](bool.md)|Boolean|
 |`byte`|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)|
-|[char](char.md)|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)|
+|[char](../builtin-types/char.md)|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)|
 |`decimal`|Numeric, [floating-point](../builtin-types/floating-point-numeric-types.md)|
 |`double`|Numeric, [floating-point](../builtin-types/floating-point-numeric-types.md)|
 |[enum](enum.md)|Enumeration|

@@ -1,5 +1,5 @@
 ---
-title: .NET Core SDK and runtime dependencies for Windows, Linux, and macOS - .NET Core
+title: .NET Core SDK and runtime dependencies - .NET Core
 description: Details the operating system and CPU architecture prerequisites to install the .NET Core SDK and runtime on Windows, Linux, and macOS.
 author: leecow
 ms.author: leecow
@@ -20,7 +20,7 @@ This article details which operating systems and CPU architecture are supported 
 
 # [.NET Core 3.0](#tab/netcore30)
 
-The following Windows operating systems are supported with .NET Core 3.0:
+The following Windows versions are supported with .NET Core 3.0:
 
 > [!NOTE]
 > A `+` symbol represents the minimum version.
@@ -48,11 +48,11 @@ The following Windows versions are supported with .NET Core 2.2:
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
 | Nano Server                   | Version 1803+                   | x64, ARM32      |
 
-For more information about .NET Core 2.2 supported OS, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
+For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
 
 # [.NET Core 2.1](#tab/netcore21)
 
-The following Windows operating systems are supported with .NET Core 2.1:
+The following Windows versions are supported with .NET Core 2.1:
 
 > [!NOTE]
 > A `+` symbol represents the minimum version.
@@ -64,7 +64,7 @@ The following Windows operating systems are supported with .NET Core 2.1:
 | Windows Server                | 2008 R2 SP1+                   | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64,            |
 
-For more information about .NET Core 2.1 supported OS, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
+For more information about .NET Core 2.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 
 ---
 
@@ -72,7 +72,7 @@ For more information about .NET Core 2.1 supported OS, distributions, and lifecy
 
 ### Windows 7 / 8.1 / Server 2008 R2
 
-Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows operating systems:
+Additional dependencies are required if you're installing the .NET SDK or runtime on the following Windows versions:
 
 - Windows 7 SP1
 - Windows 8.1
@@ -118,7 +118,7 @@ The requirements above are also required if you come across one of the following
 | SUSE Enterprise Linux (SLES)   | 12 SP2+               | x64 |
 | Alpine Linux                   | 3.8+                  | x64, ARM64 |
 
-For more information about .NET Core 3.0 supported OS, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
+For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
 
 For more information about how to install .NET Core 3.0 on ARM64, see [Installing .NET Core 3.0 on Linux ARM64](https://gist.github.com/richlander/467813274cea8abc624553ee72b28213).
 
@@ -144,7 +144,7 @@ For more information about how to install .NET Core 3.0 on ARM64, see [Installin
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |
 | Alpine Linux                   |  3.8+                   | x64 |
 
-For more information about .NET Core 2.2 supported OS, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
+For more information about .NET Core 2.2 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.2 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md).
 
 # [.NET Core 2.1](#tab/netcore21)
 
@@ -168,7 +168,7 @@ For more information about .NET Core 2.2 supported OS, distributions, and lifecy
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |
 | Alpine Linux                   |  3.8+                   | x64 |
 
-For more information about .NET Core 2.1 supported OS, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
+For more information about .NET Core 2.1 supported operating systems, distributions, and lifecycle policy, see [.NET Core 2.1 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md).
 
 ---
 

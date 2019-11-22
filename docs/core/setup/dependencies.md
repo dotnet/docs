@@ -182,7 +182,7 @@ Based on your linux distribution, you may need to install additional dependencie
 
 ### Ubuntu
 
-Ubuntu distributions require the following libraries installed:
+Ubuntu distributions require the following libraries to be installed:
 
 - liblttng-ust0
 - libcurl3 (for 14.x and 16.x)

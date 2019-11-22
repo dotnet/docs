@@ -153,7 +153,7 @@ To collect traces using `dotnet-trace`:
 - Run the following command:
 
   ```console
-    dotnet-trace collect --process-id <PID>
+  dotnet-trace collect --process-id <PID>
   ```
 
   The preceding command generates output similar to the following:

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: f8ba6fc8-f5aa-4066-ac96-56332758f5ec
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SetNonAssemblyFlags Method
 Sets flags that are not assembly-specific.  

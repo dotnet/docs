@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d23a3408-b525-4aec-a186-2ac7ca65d7a4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AppDomainShutdownStarted Method
 Notifies the profiler that an application domain is being unloaded from a process.  

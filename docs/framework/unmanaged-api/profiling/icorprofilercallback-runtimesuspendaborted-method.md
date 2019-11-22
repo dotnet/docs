@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5a8a4277-345b-448b-a028-fc8cff9998aa
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeSuspendAborted Method
 Notifies the profiler that the runtime has aborted the runtime suspension that was occurring.  

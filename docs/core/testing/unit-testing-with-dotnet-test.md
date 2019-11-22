@@ -8,11 +8,11 @@ ms.custom: "seodec18"
 ---
 # Unit testing C# in .NET Core using dotnet test and xUnit
 
-This tutorial show how to build a solution containing a unit test project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+This tutorial shows how to build a solution containing a unit test project and source code project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Create the solution
 
-In the section you create a solution that contains the source and test projects. The completed solution has the following directory structure:
+In this section, you create a solution that contains the source and test projects. The completed solution has the following directory structure:
 
 The directory and file structure of the completed project:
 
@@ -20,10 +20,10 @@ The directory and file structure of the completed project:
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
-        Source Files
+        PrimeService.cs
         PrimeService.csproj
     /PrimeService.Tests
-        Testing Source Files
+        PrimeService_IsPrimeShould.cs
         PrimeServiceTests.csproj
 ```
 
@@ -31,37 +31,39 @@ The following instructions provide the steps to create the test solution. See [C
 
 * Open a shell window.
 * Run the following command:
+
   ```dotnetcli
   dotnet new sln -o unit-testing-using-dotnet-test
   ```
-  The preceding command create a new solution in the *unit-testing-using-dotnet-test* directory.
+
+  The [`dotnet new sln`](../tools/dotnet-new.md) command creates a new solution in the *unit-testing-using-dotnet-test* directory.
 * Change directories to the *unit-testing-using-dotnet-test* folder.
 * Run the following command:
+
   ```dotnetcli
   dotnet new classlib -o PrimeService
   ```
-   The `dotnet new classlib` command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.
+
+   The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.
 * Rename *Class1.cs* to *PrimeService.cs*.
 * Replace the code in *PrimeService.cs* with the following code:
   
-```csharp
+  ```csharp
+    using System;
 
-using System;
-
-namespace Prime.Services
-{
-    public class PrimeService
+    namespace Prime.Services
     {
-        public bool IsPrime(int candidate)
+        public class PrimeService
         {
-            throw new NotImplementedException("Not implemented.");
+            public bool IsPrime(int candidate)
+            {
+                throw new NotImplementedException("Not implemented.");
+            }
         }
     }
-}
-```
+  ```
 
- The preceding code:
-
+* The preceding code:
   * Throws a <xref:System.NotImplementedException> with a message indicating it's not implemented.
   * Is updated later in the tutorial.
 
@@ -91,13 +93,14 @@ dotnet new xunit -o PrimeService.Tests
 * Add the test project to the solution file by running the following command:
 
   ```dotnetcli
-dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj  ```
+  dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj  
+  ```
 
 <a name="create-test-cmd"></a>
 
 ### Commands to create test solution
 
-This section contains all the commands in the previous section. Skip this section if you've create the test solution.
+This section contains all the commands in the previous section. Skip this section if you've created the test solution.
 
 The following commands create the test solution on a windows machine. For MacOS and unix, update the `ren` command to the OS version to rename a file:
 
@@ -112,19 +115,16 @@ dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeServi
 dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 ```
 
-<!--
-del .\PrimeService.Tests\UnitTest1.cs
-
--->
-
 Follow the instructions for "Replace the code in *PrimeService.cs* with the following code" in the previous section.
 
 ## Create a test
 
 A popular approach in test driven development (TDD) is to write a test before implementing the target code. This tutorial uses the TDD approach. The `IsPrime` method is callable, but not implemented. A test call to `IsPrime` fails. With TDD, a test is written that is know to fail. The target code is updated to make the test pass. You keep repeating this approach, writing a failing test and then updating the target code to pass.
 
+Update the *PrimeService.Tests* project:
+
 * Delete *PrimeService.Tests/UnitTest1.cs*.
-* Create the C# file *PrimeService.Tests/PrimeService_IsPrimeShould.cs*
+* Create a *PrimeService.Tests/PrimeService_IsPrimeShould.cs*  file.
 * Replace the code in *PrimeService_IsPrimeShould.cs* with the following code:
 
 ```csharp
@@ -153,7 +153,7 @@ namespace Prime.UnitTests.Services
 }
 ```
 
-The `[Fact]` attribute indicates a test method that is run by the test runner. From the *PrimeService.Tests* folder, run `dotnet test`. The `dotnet test` command builds and runs the tests. The xUnit test runner contains the program entry point to run the tests.  [`dotnet test`](../tools/dotnet-test.md) starts the test runner using the unit test project.
+The `[Fact]` attribute declares a test method that's run by the test runner. From the *PrimeService.Tests* folder, run `dotnet test`. The [dotnet test](../tools/dotnet-test.md) command builds both projects and runs the tests. The xUnit test runner contains the program entry point to run the tests. `dotnet test` starts the test runner using the unit test project.
 
 The test fails because `IsPrime` hasn't been implemented. Using the TDD approach, write only enough code so this test passes. Update `IsPrime` with the following code:
 

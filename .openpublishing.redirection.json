@@ -140,6 +140,19 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/linux-prerequisites.md",
+            "redirect_url": "/dotnet/core/setup/dependencies"
+        },
+        {
+              "source_path": "docs/core/macos-prerequisites.md",
+              "redirect_url": "/dotnet/core/setup/dependencies"
+        },
+        {
+            "source_path": "docs/core/windows-prerequisites.md",
+            "redirect_url": "/dotnet/core/setup/dependencies",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/core/preview3/deploying/index.md",
             "redirect_url": "/dotnet/core/deploying",
             "redirect_document_id": true
@@ -305,7 +318,7 @@
         },
         {
             "source_path": "docs/core/preview3/windows-prerequisites.md",
-            "redirect_url": "/dotnet/core/windows-prerequisites"
+            "redirect_url": "/dotnet/core/setup/index"
         },
         {
             "source_path": "docs/core/testing/using-mstest-on-windows.md",
@@ -509,6 +522,10 @@
         {
             "source_path": "docs/csharp/language-reference/keywords/byte.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/char.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/char"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/conversion-keywords.md",
@@ -1331,12 +1348,12 @@
         {
             "source_path": "docs/csharp/quick-starts/branches-and-loops.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/quick-starts/hello-world.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/hello-world",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/quick-starts/index.md",
@@ -1351,7 +1368,7 @@
         {
             "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
             "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/quick-starts/introduction-to-classes.md",
@@ -1361,7 +1378,7 @@
         {
             "source_path": "docs/csharp/quick-starts/list-collection.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/list-collection",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/quick-starts/local-environment.md",
@@ -1376,7 +1393,7 @@
         {
             "source_path": "docs/csharp/quick-starts/numbers-in-csharp.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/reference-semantics-with-value-types.md",
@@ -2988,7 +3005,7 @@
         {
             "source_path": "docs/standard/guidance-architecture.md",
             "redirect_url": "/dotnet/architecture/index",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/standard/library.md",
@@ -3315,6 +3332,22 @@
         {
             "source_path": "docs/visual-basic/language-reference/error-messages/cannot-convert-anonymous-type-to-expression-tree.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc36548",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/cannot-refer-to-an-instance-member-of-a-class.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30369",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/cannot-refer-to-name-because-it-is-member-of-value-typed-field-name-of-class.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30310",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/can-t-open-filename-for-writing.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc2012",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/class-classname-cannot-be-found.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc31098",
         },
         {
             "source_path": "docs/visual-basic/language-reference/queries/queries.md",

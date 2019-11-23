@@ -62,3 +62,7 @@ The following is a list of breaking changes in Windows Forms by .NET Core versio
 ## .NET Core 3.1
 
 [!INCLUDE[Removed controls](~/includes/core-changes/windowsforms/remove-controls-3.1.md)]
+
+***
+
+[!INCLUDE[CellFormatting event](~/includes/core-changes/windowsforms/cellformatting-event-not-raised.md)]

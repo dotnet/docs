@@ -35,7 +35,7 @@ The following instructions provide the steps to create the test solution. See [C
   ```
 
   The [`dotnet new sln`](../tools/dotnet-new.md) command creates a new solution in the *unit-testing-using-dotnet-test* directory.
-* Change directories to the *unit-testing-using-dotnet-test* folder.
+* Change directory to the *unit-testing-using-dotnet-test* folder.
 * Run the following command:
 
   ```dotnetcli

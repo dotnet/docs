@@ -41,13 +41,13 @@ This article does not provide comprehensive information about each new feature a
 
 You can download .NET Framework 4.8  from the following locations:
 
-- [.NET Framework 4.8 Web Installer](https://support.microsoft.com/help/912817)
+- [.NET Framework 4.8 Web Installer](https://go.microsoft.com/fwlink/?LinkId=2085155)
 
-- [NET Framework 4.8 Offline Installer](https://support.microsoft.com/help/912817)
+- [NET Framework 4.8 Offline Installer](https://go.microsoft.com/fwlink/?linkid=2088631)
 
 .NET Framework 4.8 can be installed on Windows 10, Windows 8.1, Windows 7 SP1, and the corresponding server platforms starting with Windows Server 2008 R2 SP1. You can install .NET Framework 4.8 by using either the web installer or the offline installer. The recommended way for most users is to use the web installer.
 
-You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing the [.NET Framework 4.8 Developer Pack](https://support.microsoft.com/help/912817).
+You can target .NET Framework 4.8 in Visual Studio 2012 or later by installing the [.NET Framework 4.8 Developer Pack](https://go.microsoft.com/fwlink/?LinkId=2085167).
 
 ### What's new in .NET Framework 4.8
 

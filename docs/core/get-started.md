@@ -47,7 +47,7 @@ You can get started developing .NET Core applications by following these step-by
 - Watch a video on [how to install and use Visual Studio 2017 and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-Started-NET-Core-Visual-Studio-2017/).
 - [Getting started with .NET Core using the command-line.](tutorials/using-with-xplat-cli.md)
 
-See the [.NET Core dependencies and requirements](../install/dependencies.md?tabs=netcore30&pivots=os-windows) article for a list of the supported Windows versions.
+See the [.NET Core dependencies and requirements](install/dependencies.md?tabs=netcore30&pivots=os-windows) article for a list of the supported Windows versions.
 
 # [Linux](#tab/linux)
 
@@ -56,7 +56,7 @@ You can get started developing .NET Core application by following these step-by-
 - [Getting started with .NET Core using the command-line.](tutorials/using-with-xplat-cli.md)
 - Watch a video on [getting started with Visual Studio Code using C# and .NET Core on Ubuntu](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 
-See the [.NET Core dependencies and requirements](../install/dependencies.md?tabs=netcore30&pivots=os-linux) article for a list of the supported Linux distros and versions.
+See the [.NET Core dependencies and requirements](install/dependencies.md?tabs=netcore30&pivots=os-linux) article for a list of the supported Linux distros and versions.
 
 # [macOS](#tab/macos)
 
@@ -68,6 +68,6 @@ You can get started developing .NET Core application by following these step-by-
 - [Getting started with .NET Core on macOS using Visual Studio for Mac.](tutorials/using-on-mac-vs.md)
 - [Build a complete .NET Core solution on macOS using Visual Studio for Mac.](tutorials/using-on-mac-vs-full-solution.md)
 
-See the [.NET Core dependencies and requirements](../install/dependencies.md?tabs=netcore30&pivots=os-macos) article for a list of the supported OS X / macOS versions.
+See the [.NET Core dependencies and requirements](install/dependencies.md?tabs=netcore30&pivots=os-macos) article for a list of the supported OS X / macOS versions.
 
 ---

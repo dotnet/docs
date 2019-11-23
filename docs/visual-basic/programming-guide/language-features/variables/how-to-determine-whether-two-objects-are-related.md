@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Whether Two Objects Are Related (Visual Basic)"
+title: "How to: Determine Whether Two Objects Are Related"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "inheritance [Visual Basic], Visual Basic objects"

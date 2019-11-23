@@ -1,5 +1,5 @@
 ---
-title: "Get started with Visual Basic"
+title: "Get started"
 ms.date: 09/10/2018
 helpviewer_keywords:
   - "get started, Visual Basic"
@@ -47,7 +47,7 @@ Covers how to receive support and give feedback.
 - [Visual Studio](/visualstudio/)\
 Provides links into the Visual Studio documentation.
 
-- [C#](../../csharp/index.md)\
+- [C#](../../csharp/index.yml)\
 Provides links into the documentation on application development with Visual C#.
 
 - [Visual C++](/cpp/)\

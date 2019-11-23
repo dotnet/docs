@@ -1,5 +1,5 @@
 ---
-title: "-link (Visual Basic)"
+title: "-link"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "l compiler option [Visual Basic]"

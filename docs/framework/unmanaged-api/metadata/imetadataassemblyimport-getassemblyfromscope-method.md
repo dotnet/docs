@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0b437f70-561d-48c7-abe0-0cb9ace10c08
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::GetAssemblyFromScope Method
 Gets a pointer to the assembly in the current scope.  

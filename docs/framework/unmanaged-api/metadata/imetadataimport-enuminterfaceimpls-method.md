@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ba6e178f-128b-4e47-a13c-b4be73eb106c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumInterfaceImpls Method
 Enumerates all interfaces implemented by the specified `TypeDef`. 

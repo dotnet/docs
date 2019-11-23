@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Language Features"
+title: "Language Features"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic code, elements of"

@@ -449,10 +449,8 @@
         "docs/core/tools/**.md": ".NET Core CLI",
         "docs/core/tutorials/**.md": ".NET Core",
         "docs/core/versions/**.md": ".NET Core",
-        "docs/machine-learning/**.md": "ML.NET",
-        "docs/machine-learning/how-to-guides/**.md": "ML.NET",
-        "docs/machine-learning/resources/**.md": "ML.NET",
-        "docs/machine-learning/tutorials/**.md": "ML.NET"
+        "docs/machine-learning/**/**.md": "ML.NET",
+        "docs/visual-basic/**/**.md": "Visual Basic"
       },
       "ms.custom": {
         "docs/fsharp/tutorials/**/**.md": "seodec18",

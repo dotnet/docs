@@ -1,5 +1,5 @@
 ---
-title: "Programming in Visual Basic"
+title: "Programming"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "programming [Visual Basic], Visual Basic"

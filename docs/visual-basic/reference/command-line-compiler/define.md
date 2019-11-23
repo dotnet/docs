@@ -1,5 +1,5 @@
 ---
-title: "-define (Visual Basic)"
+title: "-define"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "-d compiler option [Visual Basic]"

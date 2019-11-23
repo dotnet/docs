@@ -1,5 +1,5 @@
 ---
-title: "Refactoring Using a Pure Function (Visual Basic)"
+title: "Refactoring Using a Pure Function"
 ms.date: 07/20/2015
 ms.assetid: af0ea62f-4f57-4868-b624-a85524055935
 ---

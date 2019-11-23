@@ -1,5 +1,5 @@
 ---
-title: "Iterators (Visual Basic)"
+title: "Iterators"
 ms.date: 07/20/2015
 ms.assetid: f26b5c1e-fe9d-4004-b287-da7919d717ae
 ---

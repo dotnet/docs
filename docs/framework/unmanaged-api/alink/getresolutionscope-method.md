@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5b48ca60-dacd-44b2-9979-4a5122f00812
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetResolutionScope Method
 Retrieves the scope of a given type.  

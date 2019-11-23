@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b595798a-5d40-4cac-ab4f-911c61d2c5d2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ModuleAttachedToAssembly Method
 Notifies the profiler that a module is being attached to its parent assembly.  

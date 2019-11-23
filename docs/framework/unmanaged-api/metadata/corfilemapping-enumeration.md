@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3ca41592-b8da-475a-8032-a15627730003
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorFileMapping Enumeration
 Contains values that describe the type of file mapping that is returned from a call to the [IMetaDataInfo::GetFileMapping](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-getfilemapping-method.md) method.  

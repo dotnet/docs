@@ -1,5 +1,5 @@
 ---
-title: "Operators Listed by Functionality (Visual Basic)"
+title: "Operators Listed by Functionality"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operators [Visual Basic]"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort Elements on Multiple Keys (Visual Basic)"
+title: "How to: Sort Elements on Multiple Keys"
 ms.date: 07/20/2015
 ms.assetid: 0c4c1462-3047-4766-b9e2-7e0e9cc7f421
 ---

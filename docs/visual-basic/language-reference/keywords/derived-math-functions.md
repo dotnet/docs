@@ -1,5 +1,5 @@
 ---
-title: "Derived Math Functions (Visual Basic)"
+title: "Derived Math Functions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arithmetic operations, derived math functions"

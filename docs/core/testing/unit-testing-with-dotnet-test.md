@@ -100,7 +100,7 @@ The following instructions provide the steps to create the test solution. See [C
 
 <a name="create-test-cmd"></a>
 
-### Commands to create test solution
+### Commands to create the solution
 
 This section contains all the commands in the previous section. Skip this section if you've created the test solution.
 

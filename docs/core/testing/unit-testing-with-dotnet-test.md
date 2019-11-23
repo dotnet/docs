@@ -82,9 +82,9 @@ The following instructions provide the steps to create the test solution. See [C
 * The preceding command:
   * Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [xUnit](https://xunit.github.io/) as the test library.
   * Configures the test runner by adding the following `<PackageReference />`elements to the project file:
-     * "Microsoft.NET.Test.Sdk"
-     * "xunit"
-     * "xunit.runner.visualstudio"
+    * "Microsoft.NET.Test.Sdk"
+    * "xunit"
+    * "xunit.runner.visualstudio"
 
 * Add the test project to the solution file by running the following command:
 

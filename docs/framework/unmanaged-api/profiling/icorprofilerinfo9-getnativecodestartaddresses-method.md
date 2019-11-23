@@ -49,7 +49,7 @@ When tiered compilation is enabled, a function may have more than one native cod
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/setup/index.md).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 

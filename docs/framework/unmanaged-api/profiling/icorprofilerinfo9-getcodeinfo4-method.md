@@ -54,7 +54,7 @@ Alternatively, you can first call `GetCodeInfo4` with a zero-length `codeInfos` 
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/setup/index.md).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 

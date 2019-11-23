@@ -287,7 +287,7 @@ The following tables list the types that have been declared obsolete in system a
 
 |Type|Message|
 |----------|-------------|
-|<xref:System.Web.Mobile.CookielessData?displayProperty=nameWithType>|The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see [ASP.NET for Mobiles](https://docs.microsoft.com/aspnet/mobile/overview).|
+|<xref:System.Web.Mobile.CookielessData?displayProperty=nameWithType>|The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see [ASP.NET for Mobiles](/aspnet/mobile/overview).|
 |<xref:System.Web.Mobile.DeviceFilterElement?displayProperty=nameWithType>|The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see [ASP.NET for Mobiles](https://docs.microsoft.com/aspnet/mobile/overview).|
 |<xref:System.Web.Mobile.DeviceFilterElementCollection?displayProperty=nameWithType>|The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see [ASP.NET for Mobiles](https://docs.microsoft.com/aspnet/mobile/overview).|
 |<xref:System.Web.Mobile.DeviceFiltersSection?displayProperty=nameWithType>|The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see [ASP.NET for Mobiles](https://docs.microsoft.com/aspnet/mobile/overview).|

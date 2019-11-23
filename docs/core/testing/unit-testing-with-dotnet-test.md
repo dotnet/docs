@@ -69,21 +69,19 @@ The following instructions provide the steps to create the test solution. See [C
 
 <!-- preceding code shows an english bias. Message makes no sense outside english -->
 
-* Change the directory to *unit-testing-using-dotnet-test*.
-* Run the following command to add the class library project to the solution:
+* In the *unit-testing-using-dotnet-test* directory, run the following command to add the class library project to the solution:
 
-```dotnetcli
-dotnet sln add ./PrimeService/PrimeService.csproj
-```
+  ```dotnetcli
+  dotnet sln add ./PrimeService/PrimeService.csproj
+  ```
 
 * Create the *PrimeService.Tests* project by running the following command:
 
-```dotnetcli
-dotnet new xunit -o PrimeService.Tests
-```
+  ```dotnetcli
+  dotnet new xunit -o PrimeService.Tests
+  ```
 
-  The preceding command:
-
+* The preceding command:
   * Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [xUnit](https://xunit.github.io/) as the test library.
   * Configures the test runner by adding the following `<PackageReference />`elements to the project file:
      * "Microsoft.NET.Test.Sdk"
@@ -91,6 +89,12 @@ dotnet new xunit -o PrimeService.Tests
      * "xunit.runner.visualstudio"
 
 * Add the test project to the solution file by running the following command:
+
+  ```dotnetcli
+  dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
+  ```
+
+* Add the `PrimeService` class library as a dependency to the *PrimeService.Tests* project:
 
   ```dotnetcli
   dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj  

@@ -8,13 +8,11 @@ ms.custom: "seodec18"
 ---
 # Unit testing C# in .NET Core using dotnet test and xUnit
 
-This tutorial shows how to build a solution containing a unit test project and source code project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/) before you begin. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+This tutorial shows how to build a solution containing a unit test project and source code project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Create the solution
 
-In this section, you create a solution that contains the source and test projects. The completed solution has the following directory structure:
-
-The directory and file structure of the completed project:
+In this section, a solution is created that contains the source and test projects. The completed solution has the following directory structure:
 
 ```
 /unit-testing-using-dotnet-test
@@ -27,7 +25,7 @@ The directory and file structure of the completed project:
         PrimeServiceTests.csproj
 ```
 
-The following instructions provide the steps to create the test solution. See [Commands to create test solution](#create-test-cmd) for the commands to create the test solution in one step.
+The following instructions provide the steps to create the test solution. See [Commands to create test solution](#create-test-cmd) for instructions to create the test solution in one step.
 
 * Open a shell window.
 * Run the following command:
@@ -106,7 +104,7 @@ The following instructions provide the steps to create the test solution. See [C
 
 This section contains all the commands in the previous section. Skip this section if you've created the test solution.
 
-The following commands create the test solution on a windows machine. For MacOS and unix, update the `ren` command to the OS version to rename a file:
+The following commands create the test solution on a windows machine. For MacOS and unix, update the `ren` command to the OS version of `ren` to rename a file:
 
 ```dotnetcli
 dotnet new sln -o unit-testing-using-dotnet-test
@@ -123,7 +121,7 @@ Follow the instructions for "Replace the code in *PrimeService.cs* with the foll
 
 ## Create a test
 
-A popular approach in test driven development (TDD) is to write a test before implementing the target code. This tutorial uses the TDD approach. The `IsPrime` method is callable, but not implemented. A test call to `IsPrime` fails. With TDD, a test is written that is know to fail. The target code is updated to make the test pass. You keep repeating this approach, writing a failing test and then updating the target code to pass.
+A popular approach in test driven development (TDD) is to write a test before implementing the target code. This tutorial uses the TDD approach. The `IsPrime` method is callable, but not implemented. A test call to `IsPrime` fails. With TDD, a test is written that is known to fail. The target code is updated to make the test pass. You keep repeating this approach, writing a failing test and then updating the target code to pass.
 
 Update the *PrimeService.Tests* project:
 
@@ -190,7 +188,7 @@ Copying test code when only a parameter changes results in code duplication and 
 
 - `[InlineData]` attribute specifies values for those inputs.
 
-Rather than creating new tests, apply the preceding xUnit attributes to create a single theory. The theory is a method that tests several values less than two. Two is the lowest prime number. Replace the following code:
+Rather than creating new tests, apply the preceding xUnit attributes to create a single theory. Replace the following code:
 
 ```csharp
 [Fact]
@@ -205,6 +203,8 @@ public void IsPrime_InputIs1_ReturnFalse()
 with the following code:
 
 [!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
+
+In the preceding code, `[Theory]` and `[InlineData]` enable testing several values less than two. Two is the smallest prime number.
 
 Run `dotnet test`, two of the tests fail. To make all of the tests pass, update the `IsPrime` method with the following code:
 

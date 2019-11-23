@@ -10,5 +10,5 @@ Client applications using Windows Communication Foundation (WCF) may be deployed
   
 ## See also
 
-- [Trusted Application Deployment Overview](https://docs.microsoft.com/visualstudio/deployment/trusted-application-deployment-overview?view=vs-2015&redirectedfrom=MSDN)
+- [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)
 - [ClickOnce Deployment for Windows Forms Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/wh45kb66(v=vs.90))

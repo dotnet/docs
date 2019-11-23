@@ -101,7 +101,7 @@ public class AsyncExample
 }  
 ```  
   
- For more information about the Event-based Asynchronous Pattern, see [The Event-Based Asynchronous Pattern](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview).  
+ For more information about the Event-based Asynchronous Pattern, see [The Event-Based Asynchronous Pattern](../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   
 #### IAsyncResult Asynchronous Pattern  
  A service operation can be implemented in an asynchronous fashion using the .NET Framework asynchronous programming pattern and marking the `<Begin>` method with the <xref:System.ServiceModel.OperationContractAttribute.AsyncPattern%2A> property set to `true`. In this case, the asynchronous operation is exposed in metadata in the same form as a synchronous operation: It is exposed as a single operation with a request message and a correlated response message. Client programming models then have a choice. They can represent this pattern as a synchronous operation or as an asynchronous one, so long as when the service is invoked a request-response message exchange takes place.  

@@ -129,7 +129,7 @@ if (null != workflowServiceHost)
 ```
 
 > [!NOTE]
-> For more information on tracking profiles, refer to [Tracking Profiles](https://docs.microsoft.com/dotnet/framework/windows-workflow-foundation/tracking-profiles).
+> For more information on tracking profiles, refer to [Tracking Profiles](tracking-profiles.md).
 
 ### Configuring tracking using WorkflowInvoker
 

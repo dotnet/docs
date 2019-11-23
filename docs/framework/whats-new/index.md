@@ -2054,7 +2054,7 @@ In the .NET Framework 4.5, the following features have been added to make it sim
 
 - Support for WCF services that use internationalized domain names (IDNs).
 
-For more information, see [What's New in Windows Communication Foundation](https://docs.microsoft.com/dotnet/framework/wcf/whats-new).
+For more information, see [What's New in Windows Communication Foundation](../wcf/whats-new.md).
 
 <a name="windows_workflow_foundation" />
 
@@ -2108,7 +2108,7 @@ In the .NET Framework 4.5, several new features were added to Windows Workflow F
 
 - Contract-first workflow service development, which provides support for automatically generating activities to match an existing service contract.
 
-For more information, see [What's New in Windows Workflow Foundation](https://docs.microsoft.com/dotnet/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet).
+For more information, see [What's New in Windows Workflow Foundation](../windows-workflow-foundation/whats-new-in-wf-in-dotnet.md).
 
 <a name="tailored" />
 

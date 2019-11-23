@@ -104,7 +104,7 @@ The following instructions provide the steps to create the test solution. See [C
 
 This section contains all the commands in the previous section. Skip this section if you've created the test solution.
 
-The following commands create the test solution on a windows machine. For MacOS and unix, update the `ren` command to the OS version of `ren` to rename a file:
+The following commands create the test solution on a windows machine. For macOS and Unix, update the `ren` command to the OS version of `ren` to rename a file:
 
 ```dotnetcli
 dotnet new sln -o unit-testing-using-dotnet-test

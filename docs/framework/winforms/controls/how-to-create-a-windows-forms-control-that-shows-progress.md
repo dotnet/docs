@@ -85,7 +85,18 @@ The following code example shows a custom control called `FlashTrackBar` that ca
   
  [!code-csharp[System.Windows.Forms.FlashTrackBar#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/CS/HostApp.cs#30)]
  [!code-vb[System.Windows.Forms.FlashTrackBar#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/VB/HostApp.vb#30)]  
-  
+
+Compile the component and the HostApp
+```console
+        csc -t:library -out:CustomWinControls.dll -r:System.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll FlashTrackBar.cs FlashTrackBarDarkenByEditor.cs FlashTrackBarValueEditor.cs
+```
+provides CustomWinControls.dll
+
+```console
+        csc -r:CustomWinControls.dll -r:System.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll HostApp.cs
+```
+Provides HostApp.exe
+        
 ## See also
 
 - [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))

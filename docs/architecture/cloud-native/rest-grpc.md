@@ -29,9 +29,9 @@ gRPC is supported across most popular platforms, including Java, JavaSript, C#, 
 
 gRPC embraces another open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). This technology provides a highly efficient, platform-neutral engine for serializing structured messages that services communicate to one another. Using a common Interface Definition Language (IDL), the developer defines a service contract for each microservice. The contract, implemented as a ".proto" file, describes the methods, inputs, and outputs for each service. Then, using the Protobuf compiler, "Proton," both client and service code is automatically generated, including:
 
- - A strongly-typed DTO (Data Transfer Object) that the client and service can share.
- - A base class containing the necessary network plumbing that the service can inherit and extend.
- - A stub for the client that contains the necessary plumbing to invoke the remote service.
+- A strongly-typed DTO (Data Transfer Object) that the client and service can share.
+- A base class containing the necessary network plumbing that the service can inherit and extend.
+- A stub for the client that contains the necessary plumbing to invoke the remote service.
 
 Code that is optimized for fast data serialization/deserialization can be generated for any of the supported platforms. At runtime, an HTTP/2 connection is established. Each message is serialized as a standard Protobuf representation and exchanged across clients and remote services.
 

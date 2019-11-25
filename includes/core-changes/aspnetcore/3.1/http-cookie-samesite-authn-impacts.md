@@ -1,6 +1,6 @@
 ### HTTP: Browser SameSite changes impact authentication
 
-Browsers, such as Chrome and Firefox, are making breaking changes to their implementations of `SameSite` for cookies. The changes impact remote authentication scenarios, such as OpenIdConnect and WsFederation, which must opt out by sending `SameSite=None`. However, `SameSite=None` breaks on iOS 12 and some older versions of other browsers. The app needs to sniff these versions and omit `SameSite`.
+Browsers, such as Chrome and Firefox, are making breaking changes to their implementations of `SameSite` for cookies. The changes impact remote authentication scenarios, such as OpenID Connect and WS-Federation, which must opt out by sending `SameSite=None`. However, `SameSite=None` breaks on iOS 12 and some older versions of other browsers. The app needs to sniff these versions and omit `SameSite`.
 
 For discussion on this issue, see [aspnet/AspNetCore#14996](https://github.com/aspnet/AspNetCore/issues/14996).
 
@@ -14,9 +14,9 @@ For discussion on this issue, see [aspnet/AspNetCore#14996](https://github.com/a
 
 #### New behavior
 
-Google is pushing a new draft standard that isn't backwards compatible. The standard changes the default mode to `Lax` and adds a new entry `None` to opt out. `Lax` is okay for most app cookies; however, it breaks cross-site scenarios like OpenIdConnect and WsFederation login. Most OAuth logins aren't affected due to differences in how the request flows. The new `None` parameter causes compatibility problems with clients that implemented the prior draft standard (for example, iOS 12). Chrome plans to go live with their changes in Chrome 80 in February 2020.
+Google is pushing a new draft standard that isn't backwards compatible. The standard changes the default mode to `Lax` and adds a new entry `None` to opt out. `Lax` suffices for most app cookies; however, it breaks cross-site scenarios like OpenID Connect and WS-Federation login. Most OAuth logins aren't affected due to differences in how the request flows. The new `None` parameter causes compatibility problems with clients that implemented the prior draft standard (for example, iOS 12). Chrome plans to go live with their changes in Chrome 80 in February 2020.
 
-ASP.NET Core 3.1 has been updated to implement the new `SameSite` behavior. The update redefines the behavior of `SameSiteMode.None` to emit `SameSite=None` and adds a new value `SameSiteMode.Unspecified` to omit the `SameSite` attribute. All cookie APIs now default to `Unspecified`, though some components that use cookies set values more specific to their scenarios such as the OpenIdConnect correlation and nonce cookies.
+ASP.NET Core 3.1 has been updated to implement the new `SameSite` behavior. The update redefines the behavior of `SameSiteMode.None` to emit `SameSite=None` and adds a new value `SameSiteMode.Unspecified` to omit the `SameSite` attribute. All cookie APIs now default to `Unspecified`, though some components that use cookies set values more specific to their scenarios such as the OpenID Connect correlation and nonce cookies.
 
 For other recent changes in this area, see the [3.0 announcement](https://github.com/aspnet/Announcements/issues/348). In ASP.NET Core 3.0, most defaults were changed from `Lax` to `None` (but still using the prior standard).
 
@@ -35,13 +35,13 @@ See below for testing and browser sniffing instructions.
 
 **How to determine if you're affected**
 
-Test your web app using a client version that can opt-in to the new behavior. Chrome, Firefox, and Microsoft Edge Chromium all have new opt-in feature flags that can be used for testing. You'll also want to do compatibility testing with older client versions after you've applied the patches, especially Safari. See "Support older browsers" below.
+Test your web app using a client version that can opt into the new behavior. Chrome, Firefox, and Microsoft Edge Chromium all have new opt-in feature flags that can be used for testing. You'll also want to do compatibility testing with older client versions after you've applied the patches, especially Safari. See "Support older browsers" below.
 
 **Chrome:**
 
 Chrome 78 and later yield misleading test results. Those versions have a temporary mitigation in place and allow cookies less than two minutes old. With the appropriate test flags enabled, Chrome 76 and 77 yield more accurate results. To test the new behavior, toggle `chrome://flags/#same-site-by-default-cookies` to enabled. Chrome 75 and earlier are reported to fail with the new `None` setting. See "Support older browsers" below.
 
-Google doesn't make older Chrome versions available. You can, however, download older versions of Chromium, which will suffice for testing. Follow the instructions at [chromium.org/getting-involved/download-chromium](https://www.chromium.org/getting-involved/download-chromium).
+Google doesn't make older Chrome versions available. You can, however, download older versions of Chromium, which will suffice for testing. Follow the instructions at [Download Chromium](https://www.chromium.org/getting-involved/download-chromium).
 
 * [Chromium 76 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/664998/)
 * [Chromium 74 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/638880/)
@@ -64,7 +64,7 @@ The feature flag is `edge://flags/#same-site-by-default-cookies`. No compatibili
 
 **Electron:**
 
-Versions of Electron include older versions of Chromium. For example, the version of Electron used by Teams is Chromium 66, which exhibits the older behavior. Perform your own compatibility testing with the version of Electron your product uses. See "Support older browsers" below.
+Versions of Electron include older versions of Chromium. For example, the version of Electron used by Microsoft Teams is Chromium 66, which exhibits the older behavior. Perform your own compatibility testing with the version of Electron your product uses. See "Support older browsers" below.
 
 **Support older browsers:**
 
@@ -79,7 +79,7 @@ private void CheckSameSite(HttpContext httpContext, CookieOptions options)
     { 
         var userAgent = httpContext.Request.Headers["User-Agent"].ToString(); 
         // TODO: Use your User Agent library of choice here. 
-        if (/* UserAgent doesn’t support new behavior */) 
+        if (/* UserAgent doesn't support new behavior */) 
         { 
             options.SameSite = SameSiteMode.Unspecified; 
         }
@@ -110,7 +110,7 @@ public void Configure(IApplicationBuilder app)
 
 **Opt-out switches:**
 
-The `Microsoft.AspNetCore.SuppressSameSiteNone` compatibility switch enables you to temporarily opt-out of the new ASP.NET Core cookie behavior. Add the following JSON to a *runtimeconfig.template.json* file in your project:
+The `Microsoft.AspNetCore.SuppressSameSiteNone` compatibility switch enables you to temporarily opt out of the new ASP.NET Core cookie behavior. Add the following JSON to a *runtimeconfig.template.json* file in your project:
 
 ```json
 { 

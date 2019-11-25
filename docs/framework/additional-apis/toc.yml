@@ -84,6 +84,8 @@
       items:
       - name: NetworkStream property
         href: system.net.pooledstream.networkstream.md
+    - name: RtcState class
+      href: system.net.rtcstate.md
     - name: ServicePoint class
       items:
       - name: m_ConnectionGroupList field
@@ -100,6 +102,14 @@
       items:
       - name: SslProtocol property
         href: system.net.security.sslstate.sslprotocol.md
+  - name: System.ServiceModel.Channels
+    items:
+    - name: Message Class
+      items:
+      - name: BodyToString method
+        href: system.servicemodel.channels.message.bodytostring.md
+      - name: WriteStartHeaders method
+        href: system.servicemodel.channels.message.writestartheaders.md
   - name: System.Windows.Diagnostics
     items:
     - name: VisualDiagnostics class
@@ -118,7 +128,7 @@
       items:
       - name: raise__WritingCancelled method
         href: xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
-      - name: raise__WritingCompleted Method 
+      - name: raise__WritingCompleted method 
         href: xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
       - name: raise__WritingPrintTicketRequired method
         href: xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md

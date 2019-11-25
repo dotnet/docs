@@ -1,6 +1,6 @@
 ### HTTP: Browser SameSite changes impact authentication
 
-Browsers, such as Chrome and Firefox, are making breaking changes to their implementations of `SameSite` for cookies. The changes impact remote authentication scenarios, such as OpenID Connect and WS-Federation, which must opt out by sending `SameSite=None`. However, `SameSite=None` breaks on iOS 12 and some older versions of other browsers. The app needs to sniff these versions and omit `SameSite`.
+Some browsers, such as Chrome and Firefox, made breaking changes to their implementations of `SameSite` for cookies. The changes impact remote authentication scenarios, such as OpenID Connect and WS-Federation, which must opt out by sending `SameSite=None`. However, `SameSite=None` breaks on iOS 12 and some older versions of other browsers. The app needs to sniff these versions and omit `SameSite`.
 
 For discussion on this issue, see [aspnet/AspNetCore#14996](https://github.com/aspnet/AspNetCore/issues/14996).
 
@@ -14,28 +14,28 @@ For discussion on this issue, see [aspnet/AspNetCore#14996](https://github.com/a
 
 #### New behavior
 
-Google is pushing a new draft standard that isn't backwards compatible. The standard changes the default mode to `Lax` and adds a new entry `None` to opt out. `Lax` suffices for most app cookies; however, it breaks cross-site scenarios like OpenID Connect and WS-Federation login. Most OAuth logins aren't affected due to differences in how the request flows. The new `None` parameter causes compatibility problems with clients that implemented the prior draft standard (for example, iOS 12). Chrome plans to go live with their changes in Chrome 80 in February 2020.
+Google proposed a new draft standard that isn't backwards compatible. The standard changes the default mode to `Lax` and adds a new entry `None` to opt out. `Lax` suffices for most app cookies; however, it breaks cross-site scenarios like OpenID Connect and WS-Federation login. Most OAuth logins aren't affected because of differences in how the request flows. The new `None` parameter causes compatibility problems with clients that implemented the prior draft standard (for example, iOS 12). Chrome 80 will include the changes. See [SameSite Updates](https://www.chromium.org/updates/same-site) for the Chrome product launch timeline.
 
 ASP.NET Core 3.1 has been updated to implement the new `SameSite` behavior. The update redefines the behavior of `SameSiteMode.None` to emit `SameSite=None` and adds a new value `SameSiteMode.Unspecified` to omit the `SameSite` attribute. All cookie APIs now default to `Unspecified`, though some components that use cookies set values more specific to their scenarios such as the OpenID Connect correlation and nonce cookies.
 
-For other recent changes in this area, see the [3.0 announcement](https://github.com/aspnet/Announcements/issues/348). In ASP.NET Core 3.0, most defaults were changed from `Lax` to `None` (but still using the prior standard).
+For other recent changes in this area, see [HTTP: Some cookie SameSite defaults changed to None](/dotnet/core/compatibility/2.2-3.0#http-some-cookie-samesite-defaults-changed-to-none). In ASP.NET Core 3.0, most defaults were changed from <xref:Microsoft.AspNetCore.Http.SameSiteMode.Lax?displayProperty=nameWithType> to <xref:Microsoft.AspNetCore.Http.SameSiteMode.None?displayProperty=nameWithType> (but still using the prior standard).
 
 #### Reason for change
 
-Browser and specification changes as outlined above.
+Browser and specification changes as outlined in the preceding text.
 
 #### Recommended action
 
 Apps that interact with remote sites, such as through third-party login, need to:
 
 * Test those scenarios on multiple browsers.
-* Apply the `CookiePolicy` browser sniffing mitigation discussed below.
+* Apply the `CookiePolicy` browser sniffing mitigation discussed in [Support older browsers](#support-older-browsers).
 
-See below for testing and browser sniffing instructions.
+For testing and browser sniffing instructions, see the following section.
 
 ##### Determine if you're affected
 
-Test your web app using a client version that can opt into the new behavior. Chrome, Firefox, and Microsoft Edge Chromium all have new opt-in feature flags that can be used for testing. You'll also want to do compatibility testing with older client versions after you've applied the patches, especially Safari. For more information, see [Support older browsers](#support-older-browsers).
+Test your web app using a client version that can opt into the new behavior. Chrome, Firefox, and Microsoft Edge Chromium all have new opt-in feature flags that can be used for testing. Verify that your app is compatible with older client versions after you've applied the patches, especially Safari. For more information, see [Support older browsers](#support-older-browsers).
 
 ##### Chrome
 
@@ -48,7 +48,7 @@ Google doesn't make older Chrome versions available. You can, however, download 
 
 ##### Safari
 
-Safari 12 strictly implemented the prior draft and fails if it sees the new `None` value in cookies. This must be avoided via the browser sniffing code shown below. Ensure you test Safari 12 and 13 as well as WebKit-based, OS-style logins using Microsoft Authentication Library (MSAL), Active Directory Authentication Library (ADAL), or whatever library you're using. The problem is dependent on the underlying OS version. OSX Mojave 10.14 and iOS 12 are known to have compatibility problems with the new behavior. Upgrading to OSX Catalina 10.15 or iOS 13 fixes the problem. Safari doesn't currently have an opt-in flag for testing the new specification behavior.
+Safari 12 strictly implemented the prior draft and fails if it sees the new `None` value in cookies. This must be avoided via the browser sniffing code shown in [Support older browsers](#support-older-browsers). Ensure you test Safari 12 and 13 as well as WebKit-based, OS-style logins using Microsoft Authentication Library (MSAL), Active Directory Authentication Library (ADAL), or whichever library you're using. The problem is dependent on the underlying OS version. OSX Mojave 10.14 and iOS 12 are known to have compatibility problems with the new behavior. Upgrading to OSX Catalina 10.15 or iOS 13 fixes the problem. Safari doesn't currently have an opt-in flag for testing the new specification behavior.
 
 ##### Firefox
 
@@ -68,20 +68,20 @@ Versions of Electron include older versions of Chromium. For example, the versio
 
 ##### Support older browsers
 
-The 2016 `SameSite` standard mandated that unknown values must be treated as `SameSite=Strict` values. Consequently, any older browsers that support the original standard may break when they see a `SameSite` property with a value of `None`. Web apps must implement browser sniffing if they intend to support these old browsers. ASP.NET Core doesn't implement browser sniffing for you because `User-Agent` request header values are highly unstable and change on a weekly basis. What is available is an extension point in `CookiePolicy` allowing you to plug in `User-Agent`-specific logic.
+The 2016 `SameSite` standard mandated that unknown values be treated as `SameSite=Strict` values. Consequently, any older browsers that support the original standard may break when they see a `SameSite` property with a value of `None`. Web apps must implement browser sniffing if they intend to support these old browsers. ASP.NET Core doesn't implement browser sniffing for you because `User-Agent` request header values are highly unstable and change on a weekly basis. Instead, an extension point in `CookiePolicy` allows you to add `User-Agent`-specific logic.
 
 In *Startup.cs*, add the following code:
 
 ```csharp
-private void CheckSameSite(HttpContext httpContext, CookieOptions options) 
+private void CheckSameSite(HttpContext httpContext, CookieOptions options)
 {
     if (options.SameSite == SameSiteMode.None) 
     { 
-        var userAgent = httpContext.Request.Headers["User-Agent"].ToString(); 
+        var userAgent = httpContext.Request.Headers["User-Agent"].ToString();
         // TODO: Use your User Agent library of choice here. 
         if (/* UserAgent doesn't support new behavior */) 
         { 
-            options.SameSite = SameSiteMode.Unspecified; 
+            options.SameSite = SameSiteMode.Unspecified;
         }
     }
 }
@@ -90,9 +90,9 @@ public void ConfigureServices(IServiceCollection services)
 { 
     services.Configure<CookiePolicyOptions>(options => 
     { 
-        options.MinimumSameSitePolicy = SameSiteMode.Unspecified; 
+        options.MinimumSameSitePolicy = SameSiteMode.Unspecified;
         options.OnAppendCookie = cookieContext =>
-            CheckSameSite(cookieContext.Context, cookieContext.CookieOptions); 
+            CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
         options.OnDeleteCookie = cookieContext =>
             CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
     }); 
@@ -100,7 +100,7 @@ public void ConfigureServices(IServiceCollection services)
 
 public void Configure(IApplicationBuilder app) 
 { 
-    // Before UseAuthentication or anything else that writes cookies. 
+    // Before UseAuthentication or anything else that writes cookies.
     app.UseCookiePolicy();
 
     app.UseAuthentication(); 
@@ -119,8 +119,6 @@ The `Microsoft.AspNetCore.SuppressSameSiteNone` compatibility switch enables you
   } 
 }
 ```
-
-The preceding switch will be removed in the next major version of ASP.NET Core.
 
 ##### Other Versions
 

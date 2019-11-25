@@ -21,12 +21,16 @@ You can download and install .NET Core directly with one of the following links:
 
 You can also install .NET Core as part of an integrated development environment (IDE), detailed in the sections below.
 
+::: zone pivot="os-windows,os-macos"
+
 ## Install with an installer
 
 Both Windows and macOS have standalone installers that can be used to install the .NET Core 3.0 SDK.
 
 - Windows [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x64-installer) | [x32 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x86-installer)
 - macOS [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-macos-x64-installer)
+
+::: zone-end
 
 ::: zone pivot="os-linux"
 

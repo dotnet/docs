@@ -62,7 +62,7 @@ conceptualContent:
           text: Tutorials
         - url: core/porting/index.md
           itemType: how-to-guide
-          text: Port  apps from .NET Framework
+          text: Port apps from .NET Framework
       # footerLink (optional)
       footerLink:
         url: core/index.md
@@ -109,10 +109,10 @@ conceptualContent:
           text: Porting from .NET Framework to .NET Core
         - url: desktop-wpf/overview/index.md
           itemType: overview
-          text: Create .NET Core desktop apps
+          text: Create .NET Core desktop apps for Windows
         - url: standard/library-guidance/index.md
           itemType: concept
-          text: Open Source library guidance
+          text: Open source library guidance
     # Card
     - title: .NET architectural guides
       links:
@@ -121,7 +121,7 @@ conceptualContent:
           text: ".NET Microservices: Architecture for containerized .NET apps"
         - url: architecture/modern-web-apps-azure/index.md
           itemType: architecture
-          text: Architect Modern Web Applications with ASP.NET Core and Azure
+          text: Architect modern web applications with ASP.NET Core and Azure
         - url: architecture/containerized-lifecycle/index.md
           itemType: architecture
           text: "Containerized Docker application lifecycle with Microsoft platform and tools"

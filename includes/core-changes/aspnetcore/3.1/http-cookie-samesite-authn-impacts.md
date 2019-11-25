@@ -33,40 +33,40 @@ Apps that interact with remote sites, such as through third-party login, need to
 
 See below for testing and browser sniffing instructions.
 
-**How to determine if you're affected**
+##### Determine if you're affected
 
-Test your web app using a client version that can opt into the new behavior. Chrome, Firefox, and Microsoft Edge Chromium all have new opt-in feature flags that can be used for testing. You'll also want to do compatibility testing with older client versions after you've applied the patches, especially Safari. See "Support older browsers" below.
+Test your web app using a client version that can opt into the new behavior. Chrome, Firefox, and Microsoft Edge Chromium all have new opt-in feature flags that can be used for testing. You'll also want to do compatibility testing with older client versions after you've applied the patches, especially Safari. For more information, see [Support older browsers](#support-older-browsers).
 
-**Chrome:**
+##### Chrome
 
-Chrome 78 and later yield misleading test results. Those versions have a temporary mitigation in place and allow cookies less than two minutes old. With the appropriate test flags enabled, Chrome 76 and 77 yield more accurate results. To test the new behavior, toggle `chrome://flags/#same-site-by-default-cookies` to enabled. Chrome 75 and earlier are reported to fail with the new `None` setting. See "Support older browsers" below.
+Chrome 78 and later yield misleading test results. Those versions have a temporary mitigation in place and allow cookies less than two minutes old. With the appropriate test flags enabled, Chrome 76 and 77 yield more accurate results. To test the new behavior, toggle `chrome://flags/#same-site-by-default-cookies` to enabled. Chrome 75 and earlier are reported to fail with the new `None` setting. For more information, see [Support older browsers](#support-older-browsers).
 
 Google doesn't make older Chrome versions available. You can, however, download older versions of Chromium, which will suffice for testing. Follow the instructions at [Download Chromium](https://www.chromium.org/getting-involved/download-chromium).
 
 * [Chromium 76 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/664998/)
 * [Chromium 74 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/638880/)
 
-**Safari:**
+##### Safari
 
 Safari 12 strictly implemented the prior draft and fails if it sees the new `None` value in cookies. This must be avoided via the browser sniffing code shown below. Ensure you test Safari 12 and 13 as well as WebKit-based, OS-style logins using Microsoft Authentication Library (MSAL), Active Directory Authentication Library (ADAL), or whatever library you're using. The problem is dependent on the underlying OS version. OSX Mojave 10.14 and iOS 12 are known to have compatibility problems with the new behavior. Upgrading to OSX Catalina 10.15 or iOS 13 fixes the problem. Safari doesn't currently have an opt-in flag for testing the new specification behavior.
 
-**Firefox:**
+##### Firefox
 
 Firefox support for the new standard can be tested on version 68 and later by opting in on the `about:config` page with the feature flag `network.cookie.sameSite.laxByDefault`. No compatibility issues have been reported on older versions of Firefox.
 
-**Microsoft Edge:**
+##### Microsoft Edge
 
 While Microsoft Edge supports the old `SameSite` standard, as of version 44 it didn't have any compatibility problems with the new standard.
 
-**Microsoft Edge Chromium:**
+##### Microsoft Edge Chromium
 
 The feature flag is `edge://flags/#same-site-by-default-cookies`. No compatibility issues were observed when testing with Microsoft Edge Chromium 78.
 
-**Electron:**
+##### Electron
 
-Versions of Electron include older versions of Chromium. For example, the version of Electron used by Microsoft Teams is Chromium 66, which exhibits the older behavior. Perform your own compatibility testing with the version of Electron your product uses. See "Support older browsers" below.
+Versions of Electron include older versions of Chromium. For example, the version of Electron used by Microsoft Teams is Chromium 66, which exhibits the older behavior. Perform your own compatibility testing with the version of Electron your product uses. For more information, see [Support older browsers](#support-older-browsers).
 
-**Support older browsers:**
+##### Support older browsers
 
 The 2016 `SameSite` standard mandated that unknown values must be treated as `SameSite=Strict` values. Consequently, any older browsers that support the original standard may break when they see a `SameSite` property with a value of `None`. Web apps must implement browser sniffing if they intend to support these old browsers. ASP.NET Core doesn't implement browser sniffing for you because `User-Agent` request header values are highly unstable and change on a weekly basis. What is available is an extension point in `CookiePolicy` allowing you to plug in `User-Agent`-specific logic.
 
@@ -108,7 +108,7 @@ public void Configure(IApplicationBuilder app)
 }
 ```
 
-**Opt-out switches:**
+##### Opt-out switches
 
 The `Microsoft.AspNetCore.SuppressSameSiteNone` compatibility switch enables you to temporarily opt out of the new ASP.NET Core cookie behavior. Add the following JSON to a *runtimeconfig.template.json* file in your project:
 
@@ -122,7 +122,7 @@ The `Microsoft.AspNetCore.SuppressSameSiteNone` compatibility switch enables you
 
 The preceding switch will be removed in the next major version of ASP.NET Core.
 
-**Other Versions:**
+##### Other Versions
 
 Related `SameSite` patches are forthcoming for:
 

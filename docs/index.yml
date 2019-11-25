@@ -48,7 +48,7 @@ conceptualContent:
         - url: core/get-started.md
           itemType: get-started
           text: Get started
-        - url: core/whats-new/dotnet-core-3-0
+        - url: core/whats-new/dotnet-core-3-0.md
           itemType: whats-new
           text: What's new in .NET Core 3.0
         - url: core/deploying/index.md
@@ -82,7 +82,7 @@ conceptualContent:
         - url: standard/components.md
           itemType: concept
           text: .NET architectural components
-        - url: standard/net-standard/index.md
+        - url: standard/net-standard.md
           itemType: overview
           text: .NET Standard
         - url: framework/index.md
@@ -95,10 +95,10 @@ conceptualContent:
     # Card
     - title: Develop .NET apps
       links:
-        - url: core/sdk/index.md
+        - url: core/sdk.md
           itemType: download
           text: Download the .NET Core SDK
-        - url: dotnet/core/tools/index.md
+        - url: dotnet/core/tools.md
           itemType: overview
           text: .NET Core CLI overview
         - url: core/testing/index.md

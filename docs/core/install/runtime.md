@@ -19,12 +19,16 @@ You can download and install .NET Core directly with one of the following links:
 - [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
 
+::: zone pivot="os-windows,os-macos"
+
 ## Install with an installer
 
 Both Windows and macOS have standalone installers that can be used to install the .NET Core 3.0 runtime.
 
 - Windows [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-windows-x64-installer) | [x32 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-windows-x86-installer)
 - macOS [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-macos-x64-installer)
+
+::: zone-end
 
 ::: zone pivot="os-linux"
 

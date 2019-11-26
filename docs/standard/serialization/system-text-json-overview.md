@@ -32,7 +32,7 @@ The library also provides classes for working with an in-memory document object 
 * [How to use the library](system-text-json-how-to.md)
 * [Source code](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json)
 * [API reference](xref:System.Text.Json)
-* [Roadmap](https://github.com/dotnet/runtime/blob/master/src/System.Text.Json/roadmap/README.md)
+* [Roadmap](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/roadmap/README.md)
 * GitHub issues in the dotnet/corefx repository
   * [Discussion about the development of System.Text.Json](https://github.com/dotnet/corefx/issues/33115) <!-- TODO: Issues are still not moved to the new repo-->
   * [All System.Text.Json issues](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json)

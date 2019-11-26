@@ -16,7 +16,7 @@ The following table shows the default values of C# types:
 |Any reference type|`null`|
 |Any [built-in integral numeric type](../builtin-types/integral-numeric-types.md)|0 (zero)|
 |Any [built-in floating-point numeric type](../builtin-types/floating-point-numeric-types.md)|0 (zero)|
-|[bool](bool.md)|`false`|
+|[bool](../builtin-types/bool.md)|`false`|
 |[char](../builtin-types/char.md)|`'\0'` (U+0000)|
 |[enum](enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
 |[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|

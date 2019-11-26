@@ -15,7 +15,7 @@ The following table shows the keywords for built-in C# types, which are aliases 
 
 |C# type|.NET type|  
 |--------------|-------------------------|  
-|[bool](bool.md)|<xref:System.Boolean?displayProperty=nameWithType>|  
+|[bool](../builtin-types/bool.md)|<xref:System.Boolean?displayProperty=nameWithType>|  
 |[byte](../builtin-types/integral-numeric-types.md)|<xref:System.Byte?displayProperty=nameWithType>|  
 |[sbyte](../builtin-types/integral-numeric-types.md)|<xref:System.SByte?displayProperty=nameWithType>|  
 |[char](../builtin-types/char.md)|<xref:System.Char?displayProperty=nameWithType>|  

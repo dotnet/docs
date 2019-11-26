@@ -78,4 +78,3 @@ type C() =
         b:int, c:int,
         d:int) = 1
 ```
-

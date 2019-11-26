@@ -16,6 +16,8 @@ The `char` type keyword is an alias for the .NET <xref:System.Char?displayProper
 |----------|-----------|----------|-------------------------|
 |`char`|U+0000 to U+FFFF|16 bit|<xref:System.Char?displayProperty=nameWithType>|
 
+The default value of the `char` type is `\0`, that is, U+0000.
+
 The [string](reference-types.md#the-string-type) type represents text as a sequence of `char` values.
 
 ## Literals

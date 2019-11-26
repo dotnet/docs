@@ -31,7 +31,7 @@ The size of the 128 element `char` array is 256 bytes. Fixed size [char](../../l
 
 The  preceding example demonstrates accessing `fixed` fields without pinning, which is available starting with C# 7.3.
 
-Another common fixed-size array is the [bool](../../language-reference/keywords/bool.md) array. The elements in a `bool` array are always one byte in size. `bool` arrays are not appropriate for creating bit arrays or buffers.
+Another common fixed-size array is the [bool](../../language-reference/builtin-types/bool.md) array. The elements in a `bool` array are always one byte in size. `bool` arrays are not appropriate for creating bit arrays or buffers.
 
 > [!NOTE]
 > Except for memory created by using [stackalloc](../../language-reference/operators/stackalloc.md), the C# compiler and the common language runtime (CLR) do not perform any security buffer overrun checks. As with all unsafe code, use caution.

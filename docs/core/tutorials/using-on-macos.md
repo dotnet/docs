@@ -13,7 +13,7 @@ This document provides the steps and workflow to create a .NET Core solution for
 
 ## Prerequisites
 
-Install the [.NET Core SDK](https://dotnet.microsoft.com/download). The .NET Core SDK includes the latest release of the .NET Core framework and run-time.
+Install the [.NET Core SDK](https://dotnet.microsoft.com/download). The .NET Core SDK includes the latest release of the .NET Core framework and runtime.
 
 Install [Visual Studio Code](https://code.visualstudio.com). During the course of this article, you also install Visual Studio Code extensions that improve the .NET Core development experience.
 

@@ -62,7 +62,7 @@ public class Service1 : IService1
        config.Description.Behaviors.Add( new ServiceMetadataBehavior { HttpGetEnabled = true });   
        // set up support for http, https, net.tcp, net.pipe   
        config.EnableProtocol(new BasicHttpBinding());   
-       config.EnableProtocol(new BasicHttpBinding());   
+       config.EnableProtocol(new BasicHttpsBinding());   
        config.EnableProtocol(new NetTcpBinding());   
        config.EnableProtocol(new NetNamedPipeBinding());   
        // add an extra BasicHttpBinding endpoint at http:///basic   

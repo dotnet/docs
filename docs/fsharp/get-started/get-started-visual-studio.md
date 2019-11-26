@@ -53,7 +53,7 @@ Congratulations!  You've created your first F# project in Visual Studio, written
 
 ## Next steps
 
-If you haven't already, check out the [Tour of F#](../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio and run.  You can also learn more about the F# documentation in the [F# docs homepage](../index.md).
+If you haven't already, check out the [Tour of F#](../tour.md), which covers some of the core features of the F# language.  It will give you an overview of some of the capabilities of F#, and provide ample code samples that you can copy into Visual Studio and run.  You can also learn more about the F# documentation in the [F# docs homepage](../index.yml).
 
 ## See also
 

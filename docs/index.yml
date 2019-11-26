@@ -24,12 +24,8 @@ highlightedContent:
       itemType: get-started
       url: csharp/tutorials/intro-to-csharp/hello-world.yml
     # Card
-    - title: "Download the .NET SDK"
-      itemType: download
-      url: https://dotnet.microsoft.com/download
-    # Card
     - title: "Create your first console app."
-      itemType: get-started
+      itemType: tutorial
       url: core/get-started.md
     # Card
     - title: "Create your first web app."
@@ -43,7 +39,8 @@ conceptualContent:
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
-    - title: .NET Core
+    - title: Get started
+      summary: Start developing apps with .NET Core
       links:
         - url: core/get-started.md
           itemType: get-started
@@ -69,6 +66,7 @@ conceptualContent:
         text: See more
     # Card
     - title: .NET Concepts
+      summary: Learn the core concepts of .NET
       links:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
@@ -94,6 +92,7 @@ conceptualContent:
         text: See more
     # Card
     - title: Develop .NET apps
+      summary: Start developing with .NET
       links:
         - url: core/sdk.md
           itemType: download
@@ -115,6 +114,7 @@ conceptualContent:
           text: Open source library guidance
     # Card
     - title: .NET architectural guides
+      summary: Read foundational development and architectural guidance for .NET
       links:
         - url: architecture/microservices/index.md
           itemType: architecture

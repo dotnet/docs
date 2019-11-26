@@ -9,7 +9,7 @@ In .NET Core 3.0 Preview 6 through Preview 8, the serializer would throw a <xref
 - <xref:System.Collections.IList>
 - <xref:System.Collections.Generic.ICollection%601>
 - <xref:System.Collections.Generic.Stack%601>
-- <xref:System.Collections.Generic.Queue%601>`
+- <xref:System.Collections.Generic.Queue%601>
 - <xref:System.Collections.IDictionary>
 - [IDictionary\<String,T>](xref:System.Collections.Generic.IDictionary%602)
 

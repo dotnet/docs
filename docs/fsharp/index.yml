@@ -50,7 +50,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: "Async programming in F#"
-            url: asynchronous-and-concurrent-programming/async.md
+            url: tutorials/asynchronous-and-concurrent-programming/async.md
 
   - title: "F# language reference"
     linkLists:
@@ -59,9 +59,9 @@ landingContent:
           - text: "Language reference"
             url: language-reference/index.md
           - text: "Keyword reference"
-            url: language-reference/keywords-reference.md
+            url: language-reference/keyword-reference.md
           - text: "Symbol and operator reference"
-            url: language-reference/symbol-and-operator-reference.md
+            url: language-reference/symbol-and-operator-reference/index.md
           - text: "Functions"
             url: language-reference/functions/index.md
           - text: "F# types"

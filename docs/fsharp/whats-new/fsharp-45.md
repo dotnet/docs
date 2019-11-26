@@ -43,7 +43,7 @@ let stackSpan = Span<byte>(mem2, 100)
 safeSum(stackSpan) |> printfn "res = %d"
 ```
 
-An important aspect to this is that Span and other [byref-like structs](../language-reference/structures.md#byref-like-structs) have very rigid static analysis performed by the compiler that restrict their usage in ways you might find to be unexpected. This is the fundamental tradeoff between performance, expressiveness, and safety that is introduced in F# 4.5.
+An important aspect to this is that Span and other [byref-like structs](../language-reference/structures.md#byreflike-structs) have very rigid static analysis performed by the compiler that restrict their usage in ways you might find to be unexpected. This is the fundamental tradeoff between performance, expressiveness, and safety that is introduced in F# 4.5.
 
 ## Revamped byrefs
 
@@ -105,7 +105,7 @@ let funcWithString (s: string) =
 }
 ```
 
-This allows you to shorten code that often involves mixing options (or other types) with computation expressions such as async. To learn more, see [match!](../language-reference/computation-expressions#match).
+This allows you to shorten code that often involves mixing options (or other types) with computation expressions such as async. To learn more, see [match!](../language-reference/computation-expressions.md#match).
 
 ## Relaxed upcasting requirements in array, list, and sequence expressions
 

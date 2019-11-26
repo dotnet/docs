@@ -13,7 +13,7 @@ F# 4.6 is available in all .NET Core distributions and Visual Studio tooling. [G
 
 ## Anonymous records
 
-[Anonymous records](../language-reference/anonymous-records) are a new kind of F# type introduced in F# 4.6. They are simple aggregates of named values that don't need to be declared before use. You can declare them as either structs or reference types. They're reference types by default.
+[Anonymous records](../language-reference/anonymous-records.md) are a new kind of F# type introduced in F# 4.6. They are simple aggregates of named values that don't need to be declared before use. You can declare them as either structs or reference types. They're reference types by default.
 
 ```fsharp
 open System
@@ -49,7 +49,7 @@ printfn "Circle with radius: %f has diameter %f, area %f, and circumference %f"
     r stats.Diameter stats.Area stats.Circumference
 ```
 
-They're quite powerful and can be used in numerous scenarios. Learn more at [Anonymous records](../language-reference/anonymous-records).
+They're quite powerful and can be used in numerous scenarios. Learn more at [Anonymous records](../language-reference/anonymous-records.md).
 
 ## ValueOption functions
 

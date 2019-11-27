@@ -28,7 +28,7 @@ In this article, various names are used to identify types of files used for migr
 
 - A working Windows Forms project in a solution that builds and runs without issue.
 - A project coded in C#.
-- The latest [.NET Core 3.0](https://aka.ms/netcore3download) preview.
+- [.NET Core](https://dotnet.microsoft.com/download/dotnet-core) 3.0 or later.
 
 > [!NOTE]
 > **Visual Studio 2017** doesn't support .NET Core 3.0 projects. **Visual Studio 2019** supports .NET Core 3.0 projects but doesn't yet support the visual designer for .NET Core 3.0 Windows Forms projects. To use the visual designer, you must have a .NET Windows Forms project in a solution that shares the forms files with the .NET Core project.

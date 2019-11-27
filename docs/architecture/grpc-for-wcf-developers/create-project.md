@@ -11,7 +11,7 @@ The .NET Core SDK comes with a powerful CLI tool, `dotnet`, which enables you to
 ## Create the project by using Visual Studio
 
 > [!IMPORTANT]
-> To develop any ASP.NET Core 3.0 app, you need Visual Studio 2019.3 or later, with the **ASP.NET and web development** workload installed.
+> To develop any ASP.NET Core 3.0 app, you need Visual Studio 2019 16.3 or later, with the **ASP.NET and web development** workload installed.
 
 Create an empty solution called **TraderSys** from the *Blank Solution* template. Add a solution folder called `src`. Then, right-click on the folder and choose **Add** > **New Project**. Enter `grpc` in the template search box, and you should see a project template called `gRPC Service`.
 

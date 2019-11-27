@@ -108,6 +108,8 @@ For production scenarios check the additional resources below, specific for Rabb
 
 ## Additional resources
 
+A production-ready RabbitMQ-specific solution.
+
 - **EasyNetQ** - Open Source .NET API client for RabbitMQ \
   <http://easynetq.com/>
 

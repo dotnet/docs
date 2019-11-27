@@ -12,23 +12,14 @@ zone_pivot_groups: operating-systems-set-one
 
 In this article, you'll learn how to install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
-You can download and install .NET Core directly with one of the following links:
-
-- [.NET Core 3.1 Preview 3 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
-- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-
-You can also install .NET Core as part of an integrated development environment (IDE), detailed in the sections below.
-
 ::: zone pivot="os-windows,os-macos"
 
 ## Install with an installer
 
 Both Windows and macOS have standalone installers that can be used to install the .NET Core 3.0 SDK.
 
-- Windows [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x64-installer) | [x32 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-windows-x86-installer)
-- macOS [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-3.0.100-macos-x64-installer)
+- Windows [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0) | [x86 (32-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- macOS [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 
 ::: zone-end
 
@@ -36,7 +27,30 @@ Both Windows and macOS have standalone installers that can be used to install th
 
 ## Install with a package manager
 
-You can install the .NET Core SDK with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
+You can install the .NET Core SDK with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
+
+## Download and manually install
+
+After [downloading](#all-net-core-downloads) a .NET Core binary release. Open a terminal and run the following commands to extract the SDK and make the commands available at the terminal.
+
+```bash
+mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.0.101-linux-musl-x64.tar.gz -C $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
+> [!WARNING]
+> The above commands will only make the .NET SDK commands available for the terminal session in which it was run.
+>
+> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
+>
+> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
+> - **Korn Shell**: *~/.kshrc* or *.profile*
+> - **Z Shell**: *~/.zshrc* or *.zprofile*
+> 
+> Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
+>
+> Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
 
 ::: zone-end
 
@@ -48,6 +62,7 @@ If you're using Visual Studio to develop .NET Core apps, the following table des
 
 | .NET Core SDK version | Visual Studio version                      |
 | --------------------- | ------------------------------------------ |
+| 3.1 Preview           | Visual Studio 2019 version 16.4 preview or higher. |
 | 3.0                   | Visual Studio 2019 version 16.3 or higher. |
 | 2.2                   | Visual Studio 2017 version 15.9 or higher. |
 | 2.1                   | Visual Studio 2017 version 15.7 or higher. |
@@ -85,11 +100,11 @@ Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload
 
 ::: zone-end
 
-## Install from Visual Studio Code
+## Install along side Visual Studio Code
 
 Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.
 
-While Visual Studio Code doesn't come with .NET Core support, adding .NET Core support is simple.
+While Visual Studio Code doesn't come with an automated .NET Core installer like Visual Studio does, adding .NET Core support is simple.
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
 01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).
@@ -122,6 +137,15 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 ```
 
 ::: zone-end
+
+## All .NET Core downloads
+
+You can download and install .NET Core directly with one of the following links:
+
+- [.NET Core 3.1 Preview downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
 
 ## Docker
 

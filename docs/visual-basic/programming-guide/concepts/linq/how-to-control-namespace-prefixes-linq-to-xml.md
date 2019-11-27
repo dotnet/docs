@@ -1,5 +1,5 @@
 ---
-title: "How to: Control Namespace Prefixes (Visual Basic) (LINQ to XML)"
+title: "How to: Control Namespace Prefixes (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 2fcf28a5-31b6-409d-84ea-27c22f71fc9f
 ---

@@ -1,5 +1,5 @@
 ---
-title: "<list> (Visual Basic)"
+title: "<list>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "listheader XML tag"

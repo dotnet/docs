@@ -1,5 +1,5 @@
 ---
-title: "@ (Specify Response File) (Visual Basic)"
+title: "@ (Specify Response File)"
 ms.date: 03/13/2018
 helpviewer_keywords:
   - "@ (Specify Response File) compiler option [Visual Basic]"

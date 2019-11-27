@@ -1,5 +1,5 @@
 ---
-title: "Numeric Data Types (Visual Basic)"
+title: "Numeric Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "integral types [Visual Basic], Visual Basic"

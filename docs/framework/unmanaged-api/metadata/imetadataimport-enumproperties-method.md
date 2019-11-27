@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 60573ad7-8821-4721-a068-3f7a6d25926a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumProperties Method
 Enumerates PropertyDef tokens representing the properties of the type referenced by the specified TypeDef token.  

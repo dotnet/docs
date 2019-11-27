@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: bb8c105e-4d9a-4684-8c05-ed6909cc1b8c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo4::GetCodeInfo3 Method
 Gets the extents of native code associated with the JIT-recompiled version of the specified function.  

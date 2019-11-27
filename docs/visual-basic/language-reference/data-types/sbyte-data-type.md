@@ -1,5 +1,5 @@
 ---
-title: "SByte Data Type (Visual Basic)"
+title: "SByte Data Type"
 ms.date: 04/20/2017
 f1_keywords:
   - "vb.sbyte"

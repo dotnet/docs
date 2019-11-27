@@ -1,5 +1,5 @@
 ---
-title: "Get Statement (Visual Basic)"
+title: "Get Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Get"

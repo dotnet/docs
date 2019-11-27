@@ -1,7 +1,7 @@
 ---
 title: Windows Forms breaking changes - .NET Core
 description: Lists the breaking changes in Windows Forms for .NET Core.
-ms.date: "09/20/2019"
+ms.date: 11/21/2019
 ---
 # Breaking changes in Windows Forms
 
@@ -58,3 +58,11 @@ The following is a list of breaking changes in Windows Forms by .NET Core versio
 ***
 
 [!INCLUDE[Modernization of the FolderBrowserDialog](~/includes/core-changes/windowsforms/modernized-folderbrowserdialog.md)]
+
+## .NET Core 3.1
+
+[!INCLUDE[Removed controls](~/includes/core-changes/windowsforms/remove-controls-3.1.md)]
+
+***
+
+[!INCLUDE[CellFormatting event](~/includes/core-changes/windowsforms/cellformatting-event-not-raised.md)]

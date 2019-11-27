@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Registry Object (Visual Basic)"
+title: "My.Computer.Registry Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "DeleteSetting function [Visual Basic], increasing performance"

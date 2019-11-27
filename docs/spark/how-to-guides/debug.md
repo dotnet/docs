@@ -24,7 +24,7 @@ spark-submit \
 
 When you run the command, you see the following output:
 
-```
+```console
 ***********************************************************************
 * .NET Backend running debug mode. Press enter to exit *
 ***********************************************************************

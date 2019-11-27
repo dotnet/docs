@@ -1,6 +1,6 @@
 ---
 title: "Additional class libraries and APIs"
-ms.date: "10/17/2019"
+ms.date: "11/19/2019"
 helpviewer_keywords: 
   - "Additional class libraries"
   - "Additional managed libraries"
@@ -51,6 +51,7 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Data.SqlTypes.SqlStreamChars.Seek Method](system.data.sqltypes.sqlstreamchars.seek.md)
 * [System.Data.SqlTypes.SqlStreamChars.SetLength Method](system.data.sqltypes.sqlstreamchars.setlength.md)
 * [System.Data.SqlTypes.SqlStreamChars.Write Method](system.data.sqltypes.sqlstreamchars.write.md)
+* [System.IO.MemoryStream.InternalGetOriginAndLength Method](system.io.memorystream.internalgetoriginandlength.md)
 * [System.Net.Connection Class](connection.md)
 * [System.Net.Connection.m\_WriteList Field](m_writelist.md)
 * [System.Net.ConnectionGroup Class](connectiongroup.md)
@@ -63,10 +64,13 @@ These APIs support the product infrastructure and are not intended/supported to 
 * [System.Net.HttpWebRequest.\_CoreResponse Field](httpwebrequest__coreresponse.md)
 * [System.Net.HttpWebRequest.\_HttpResponse Field](_httpresponse.md)
 * [System.Net.PooledStream.NetworkStream Property](system.net.pooledstream.networkstream.md)
+* [System.Net.RtcState class](system.net.rtcstate.md)
 * [System.Net.ServicePoint.m\_ConnectionGroupList Field](m_connectiongrouplist.md)
 * [System.Net.ServicePointManager.s\_ServicePointTable Field](s_servicepointtable.md)
 * [System.Net.TlsStream.m_Worker Field](system.net.tlsstream.m_worker.md)
 * [System.Net.Security.SslState.SslProtocol Property](system.net.security.sslstate.sslprotocol.md)
+* [System.ServiceModel.Channels.Message.BodyToString Method](system.servicemodel.channels.message.bodytostring.md)
+* [System.ServiceModel.Channels.Message.WriteStartHeaders Method](system.servicemodel.channels.message.writestartheaders.md)
 * [System.Windows.Diagnostics.VisualDiagnostics.s\_isDebuggerCheckDisabledForTestPurposes Field](s-isdebuggercheckdisabledfortestpurposes-field.md)
 * [System.Windows.Forms.Design.DataMemberFieldEditor Class](datamemberfieldeditor-class.md)
 * [System.Windows.Forms.Design.DataMemberListEditor Class](datamemberlisteditor-class.md)

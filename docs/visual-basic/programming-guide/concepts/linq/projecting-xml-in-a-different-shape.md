@@ -1,5 +1,5 @@
 ---
-title: "Projecting XML in a Different Shape (Visual Basic)"
+title: "Projecting XML in a Different Shape"
 ms.date: 07/20/2015
 ms.assetid: 2da7ec97-34f7-443d-9a48-b162ac58236b
 ---

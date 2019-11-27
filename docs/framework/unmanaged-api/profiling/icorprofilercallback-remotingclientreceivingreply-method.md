@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 15cfc300-8231-4ecb-9a04-19851c3eb484
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingClientReceivingReply Method
 Notifies the profiler that the server-side portion of a remoting call has completed and the client is now receiving and about to process the reply.  

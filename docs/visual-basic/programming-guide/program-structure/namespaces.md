@@ -1,5 +1,5 @@
 ---
-title: "Namespaces in Visual Basic"
+title: "Namespaces"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.global"

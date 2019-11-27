@@ -1,5 +1,5 @@
 ---
-title: "How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic)"
+title: "How to: Query for Sentences that Contain a Specified Set of Words (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: a5ae8ced-61fe-4c10-bb8a-95630e50f603
 ---

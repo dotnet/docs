@@ -83,4 +83,3 @@ This section provides detailed information on key C# language features and featu
 ## See also
 
 - [C# Reference](../language-reference/index.md)
-- [C#](../index.md)

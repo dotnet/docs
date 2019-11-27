@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5604d21f-e6b7-490e-b469-42122a7568e1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingServerReceivingMessage Method
 Notifies the profiler that the process has received a remote method invocation or activation request.  

@@ -1,5 +1,5 @@
 ---
-title: "Serializing to an XmlReader (Invoking XSLT) (Visual Basic)"
+title: "Serializing to an XmlReader (Invoking XSLT)"
 ms.date: 07/20/2015
 ms.assetid: 8b64f95a-e8f6-40f7-99f9-a8002c63af96
 ---

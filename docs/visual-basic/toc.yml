@@ -970,15 +970,15 @@
     - name: Cannot create ActiveX Component
       href: language-reference/error-messages/cannot-create-activex-component.md
     - name: Cannot refer to '<name>' because it is a member of the value-typed field '<name>' of class '<classname>' which has 'System.MarshalByRefObject' as a base class
-      href: language-reference/error-messages/cannot-refer-to-name-because-it-is-member-of-value-typed-field-name-of-class.md
+      href: language-reference/error-messages/bc30310.md
     - name: Cannot refer to an instance member of a class from within a shared method or shared member initializer without an explicit instance of the class
-      href: language-reference/error-messages/cannot-refer-to-an-instance-member-of-a-class.md
+      href: language-reference/error-messages/bc30369.md
     - name: Can't create necessary temporary file
       href: language-reference/error-messages/can-t-create-necessary-temporary-file.md
     - name: Can't open '<filename>' for writing
-      href: language-reference/error-messages/can-t-open-filename-for-writing.md
+      href: language-reference/error-messages/bc2012.md
     - name: Class '<classname>' cannot be found
-      href: language-reference/error-messages/class-classname-cannot-be-found.md
+      href: language-reference/error-messages/bc31098.md
     - name: Class does not support Automation or does not support expected interface
       href: language-reference/error-messages/class-does-not-support-automation-or-does-not-support-expected-interface.md
     - name: "'Class' statement must end with a matching 'End Class'"

@@ -10,7 +10,10 @@ This section covers the creation of Docker images for ASP.NET Core gRPC applicat
 
 ## Microsoft base images for ASP.NET Core applications
 
-Microsoft provides a range of base images for building and running .NET Core applications. To create an ASP.NET Core 3.0 image, you use two base images: an SDK image to build and publish the application, and a runtime image for deployment.
+Microsoft provides a range of base images for building and running .NET Core applications. To create an ASP.NET Core 3.0 image, you use two base images: 
+
+- An SDK image to build and publish the application.
+- A runtime image for deployment.
 
 | Image | Description |
 | ----- | ----------- |

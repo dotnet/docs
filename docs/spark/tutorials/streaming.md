@@ -163,6 +163,6 @@ This tutorial uses the [StructuredNetworkCharacterCount.cs](https://github.com/d
 
 ## Next steps
 
-Advance to the next article to learn how to do batch processing with .NET for Apache Spark.
+Advance to the next article to learn how to deploy your .NET for Apache Spark application to Databricks.
 > [!div class="nextstepaction"]
-> [Batch processing with .NET for Apache Spark](batch-processing.md)
+> [Tutorial: Deploy a .NET for Apache Spark application to Databricks](databricks-deployment.md)

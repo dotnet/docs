@@ -58,7 +58,7 @@ let f (dt: inref<DateTime>) =
     dt <- DateTime.Now // ERROR - cannot write to an inref!
 ```
 
-By default, type inference will infer managed pointed to by `inref<'T>` to be in line with the immutable nature of F# code. To make something writable, you'll need to declare a type as `mutable` before passing its address to a function or member that manipulates it. To learn more, see [Byrefs](../language-reference/byrefs.md).
+By default, type inference will infer managed pointers as `inref<'T>` to be in line with the immutable nature of F# code, unless something has already been declared as mutable. To make something writable, you'll need to declare a type as `mutable` before passing its address to a function or member that manipulates it. To learn more, see [Byrefs](../language-reference/byrefs.md).
 
 ## Readonly structs
 

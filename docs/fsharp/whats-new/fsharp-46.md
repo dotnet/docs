@@ -53,87 +53,26 @@ They're quite powerful and can be used in numerous scenarios. Learn more at [Ano
 
 ## ValueOption functions
 
-The ValueOption type added in F# 4.5 now has "module-bound function parity" with the Option type. The functions are defined as such:
+The ValueOption type added in F# 4.5 now has "module-bound function parity" with the Option type. Some of the more commonly-used examples are as follows:
 
 ```fsharp
-module ValueOption =
-    [<CompiledName("IsSome")>]
-    val inline isSome: voption:'T voption -> bool
+// Multiply a value option by 2 if it has  value
+let xOpt = ValueSome 99
+let result = xOpt |> ValueOption.map (fun v -> v * 2)
 
-    [<CompiledName("IsNone")>]
-    val inline isNone: voption:'T voption -> bool
+// Reverse a string if it exists
+let strOpt = ValueSome "Mirror image"
+let reverse (str: string) =
+    match str with
+    | null
+    | "" -> None
+    | s ->
+        str.ToCharArray()
+        |> Array.rev
+        |> string
+        |> Some
 
-    [<CompiledName("DefaultValue")>]
-    val defaultValue: value:'T -> voption:'T voption -> 'T
-
-    [<CompiledName("DefaultWith")>]
-    val defaultWith: defThunk:(unit -> 'T) -> voption:'T voption -> 'T
-
-    [<CompiledName("OrElse")>]
-    val orElse: ifNone:'T voption -> voption:'T voption -> 'T voption
-
-    [<CompiledName("OrElseWith")>]
-    val orElseWith: ifNoneThunk:(unit -> 'T voption) -> voption:'T voption -> 'T voption
-
-    [<CompiledName("GetValue")>]
-    val get: voption:'T voption -> 'T
-
-    [<CompiledName("Count")>]
-    val count: voption:'T voption -> int
-
-    [<CompiledName("Fold")>]
-    val fold<'T,'State> : folder:('State -> 'T -> 'State) -> state:'State -> voption:'T voption -> 'State
-
-    [<CompiledName("FoldBack")>]
-    val foldBack<'T,'State> : folder:('T -> 'State -> 'State) -> voption:'T voption -> state:'State -> 'State
-
-    [<CompiledName("Exists")>]
-    val exists: predicate:('T -> bool) -> voption:'T voption -> bool
-
-    [<CompiledName("ForAll")>]
-    val forall: predicate:('T -> bool) -> voption:'T voption -> bool
-
-    [<CompiledName("Contains")>]
-    val inline contains: value:'T -> voption:'T voption -> bool when 'T : equality
-
-    [<CompiledName("Iterate")>]
-    val iter: action:('T -> unit) -> voption:'T voption -> unit
-
-    [<CompiledName("Map")>]
-    val map: mapping:('T -> 'U) -> voption:'T voption -> 'U voption
-
-    [<CompiledName("Map2")>]
-    val map2: mapping:('T1 -> 'T2 -> 'U) -> voption1: 'T1 voption -> voption2: 'T2 voption -> 'U voption
-
-    [<CompiledName("Map3")>]
-    val map3: mapping:('T1 -> 'T2 -> 'T3 -> 'U) -> 'T1 voption -> 'T2 voption -> 'T3 voption -> 'U voption
-
-    [<CompiledName("Bind")>]
-    val bind: binder:('T -> 'U voption) -> voption:'T voption -> 'U voption
-
-    [<CompiledName("Flatten")>]
-    val flatten: voption:'T voption voption -> 'T voption
-
-    [<CompiledName("Filter")>]
-    val filter: predicate:('T -> bool) -> voption:'T voption -> 'T voption
-
-    [<CompiledName("ToArray")>]
-    val toArray: voption:'T voption -> 'T[]
-
-    [<CompiledName("ToList")>]
-    val toList: voption:'T voption -> 'T list
-
-    [<CompiledName("ToNullable")>]
-    val toNullable: voption:'T voption -> Nullable<'T>
-
-    [<CompiledName("OfNullable")>]
-    val ofNullable: value:Nullable<'T> -> 'T voption
-
-    [<CompiledName("OfObj")>]
-    val ofObj: value: 'T -> 'T voption  when 'T : null
-
-    [<CompiledName("ToObj")>]
-    val toObj: value: 'T voption -> 'T when 'T : null
+let reversedString = strOpt |> Option.bind reverse
 ```
 
 This allows for ValueOption to be used just like Option in scenarios where having a value type improves performance.

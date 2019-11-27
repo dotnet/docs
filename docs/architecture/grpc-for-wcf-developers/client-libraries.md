@@ -60,7 +60,7 @@ namespace Grpc.Core
 > [!IMPORTANT]
 > This observable implementation allows the `Subscribe` method to be called only once, because having multiple subscribers trying to read from the stream would result in chaos. There are operators, such as `Replay` in the [System.Reactive.Linq](https://www.nuget.org/packages/System.Reactive.Linq), that enable buffering and repeatable sharing of observables, which can be used with this implementation.
 
-The `GrpcStreamSubscription` class handles the enumeration of the `IAsyncStreamReader`.
+The `GrpcStreamSubscription` class handles the enumeration of the `IAsyncStreamReader`:
 
 ```csharp
 public class GrpcStreamSubscription : IDisposable

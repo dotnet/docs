@@ -1,9 +1,9 @@
 ---
-title: Breaking changes for WinForms in .NET Core
+title: Breaking changes for WinForms - .NET Framework to .NET Core
 description: Lists the breaking changes from .NET Framework to .NET Core for Windows Forms apps.
 ms.date: 11/27/2019
 ---
-# Breaking changes for Windows Forms
+# Breaking changes from .NET Framework to .NET Core for Windows Forms
 
 WPF and Windows Forms support were added to .NET Core in version 3.0. If you're migrating a Windows Forms or Windows Presentation Foundation app from .NET Framework to .NET Core, the breaking changes listed in this article may affect your app.
 
@@ -72,3 +72,4 @@ Breaking changes are grouped by the .NET Core version in which they were introdu
 ## See also
 
 - [Evaluate breaking changes in .NET Core](../compatibility/index.md)
+- [.NET Core breaking changes in Windows Forms](../compatibility/winforms.md)

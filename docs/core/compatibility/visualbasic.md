@@ -9,16 +9,16 @@ The following is a list of breaking changes in Visual Basic by .NET Core version
 
 ## .NET Core 3.0 Preview 9
 
-[!INCLUDE[Types in Microsoft.VisualBasic.ApplicationServices namespace not available](~/includes/core-changes/visualbasic/microsoft.visualbasic.applicationservices-unavailable.md)]
+[!INCLUDE[Types in Microsoft.VisualBasic.ApplicationServices namespace not available](~/includes/core-changes/visualbasic/3.0/microsoft.visualbasic.applicationservices-unavailable.md)]
 
 ***
 
-[!INCLUDE[Types in Microsoft.VisualBasic.Devices namespace not available](~/includes/core-changes/visualbasic/microsoft.visualbasic.devices-unavailable.md)]
+[!INCLUDE[Types in Microsoft.VisualBasic.Devices namespace not available](~/includes/core-changes/visualbasic/3.0/microsoft.visualbasic.devices-unavailable.md)]
 
 ***
 
-[!INCLUDE[Types in Microsoft.VisualBasic.MyServices namespace not available](~/includes/core-changes/visualbasic/microsoft.visualbasic.myservices-unavailable.md)]
+[!INCLUDE[Types in Microsoft.VisualBasic.MyServices namespace not available](~/includes/core-changes/visualbasic/3.0/microsoft.visualbasic.myservices-unavailable.md)]
 
 ## .NET Core 3.0 Preview 8
 
-[!INCLUDE[vbNewLine is obsolete](~/includes/core-changes/visualbasic/vbnewline-is-obsolete.md)]
+[!INCLUDE[vbNewLine is obsolete](~/includes/core-changes/visualbasic/3.0/vbnewline-is-obsolete.md)]

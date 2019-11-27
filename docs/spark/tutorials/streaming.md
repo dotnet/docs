@@ -14,6 +14,7 @@ This tutorial teaches you how to invoke Spark Structured Streaming using .NET fo
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * Create and run a .NET for Apache Spark application
 > * Use netcat to create a data stream
 > * Use user-defined functions and SparkSQL to analyze streaming data

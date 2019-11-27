@@ -1,4 +1,4 @@
-- name: .NET Core guide
+- name: .NET Core Guide
   href: index.md
 - name: About .NET Core
   href: about.md
@@ -47,21 +47,21 @@
   items:
   - name: Get started with C# and Visual Studio Code
     href: tutorials/with-visual-studio-code.md
-  - name: Build a C# Hello World app in Visual Studio
+  - name: Build a C# Hello World app with .NET Core in Visual Studio 2017
     href: tutorials/with-visual-studio.md
-  - name: Build a Visual Basic Hello World app in Visual Studio
+  - name: Build a Visual Basic Hello World app with .NET Core in Visual Studio 2017
     href: tutorials/vb-with-visual-studio.md
-  - name: Debug an application using Visual Studio
+  - name: Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio 2017
     href: tutorials/debugging-with-visual-studio.md
-  - name: Publish an application with Visual Studio
+  - name: Publish your Hello World application with Visual Studio 2017
     href: tutorials/publishing-with-visual-studio.md
-  - name: Build a .NET Standard library with C# in Visual Studio
+  - name: Build a .NET Standard library with C# and .NET Core in Visual Studio 2017
     href: tutorials/library-with-visual-studio.md
-  - name: Build a .NET Standard library with Visual Basic in Visual Studio
+  - name: Build a .NET Standard library with Visual Basic and .NET Core in Visual Studio 2017
     href: tutorials/vb-library-with-visual-studio.md
-  - name: Test a .NET Standard library in Visual Studio
+  - name: Test a .NET Standard library with .NET Core in Visual Studio 2017
     href: tutorials/testing-library-with-visual-studio.md
-  - name: Consume a .NET Standard library in Visual Studio
+  - name: Consume a .NET Standard library in Visual Studio 2017
     href: tutorials/consuming-library-with-visual-studio.md
 - name: What's new in .NET Core
   items:
@@ -74,7 +74,7 @@
   - name: What's new in .NET Core 2.0
     href: whats-new/dotnet-core-2-0.md
 - name: Breaking changes
-  displayName: application compatibility
+  displayName: app compatibility
   href: compatibility/
 - name: Tutorials
   href: tutorials/index.md
@@ -115,7 +115,7 @@
   items:
   - name: Expose .NET Core components to COM
     href: native-interop/expose-components-to-com.md
-- name: Packages, metapackages, and frameworks
+- name: Packages, Metapackages, and Frameworks
   href: packages.md
 - name: Changes in CLI overview
   href: tools/cli-msbuild-architecture.md
@@ -128,20 +128,20 @@
   items:
   - name: .NET Core 2.0 to 2.1
     href: migration/20-21.md
-  - name: Migrate from project.json
+  - name: Migrating from project.json
     href: migration/index.md
-  - name: Map between project.json and csproj
+  - name: Mapping between project.json and csproj
     href: tools/project-json-to-csproj.md
-  - name: Migrate from DNX
+  - name: Migrating from DNX
     href: migration/from-dnx.md
-- name: Application deployment
+- name: Application Deployment
   href: deploying/index.md
   items:
   - name: Deploy apps with CLI tools
     href: deploying/deploy-with-cli.md
   - name: Deploy apps with Visual Studio
     href: deploying/deploy-with-vs.md
-  - name: Create a NuGet package with cross-platform tools
+  - name: Creating a NuGet Package with Cross Platform Tools
     href: deploying/creating-nuget-packages.md
   - name: Self-contained deployment runtime roll forward
     href: deploying/runtime-patch-selection.md
@@ -153,7 +153,7 @@
     href: docker/introduction.md
   - name: Containerize a .NET Core app
     href: docker/build-container.md
-  - name: Container tools in Visual Studio
+  - name: Container Tools in Visual Studio
     href: /visualstudio/containers/overview
 - name: Diagnostic tools
   items:
@@ -171,7 +171,7 @@
       href: diagnostics/dotnet-dump.md
     - name: dotnet-trace
       href: diagnostics/dotnet-trace.md
-- name: Unit testing
+- name: Unit Testing
   href: testing/index.md
   items:
   - name: Unit testing best practices
@@ -194,24 +194,24 @@
     href: testing/unit-testing-visual-basic-with-nunit.md
   - name: VB unit testing with MSTest
     href: testing/unit-testing-visual-basic-with-mstest.md
-  - name: Run selective unit tests
+  - name: Running selective unit tests
     href: testing/selective-unit-tests.md
-  - name: Unit test published output
+  - name: Unit testing published output
     href: testing/unit-testing-published-output.md
-  - name: Live unit test .NET Core projects with Visual Studio
+  - name: Live unit testing .NET Core projects with Visual Studio
     href: /visualstudio/test/live-unit-testing-start
-- name: Continuous integration
+- name: Continuous Integration
   href: tools/using-ci-with-cli.md
 - name: Versioning
   href: versions/index.md
   items:
   - name: .NET Core version selection
     href: versions/selection.md
-  - name: Remove outdated runtimes and SDKs
+  - name: Removing outdated runtimes and SDKs
     href: versions/remove-runtime-sdk-versions.md
 - name: Runtime Identifier (RID) catalog
   href: rid-catalog.md
-- name: .NET Core SDK overview
+- name: .NET Core SDK Overview
   href: sdk.md
 - name: .NET Core CLI
   items:
@@ -220,22 +220,22 @@
   - name: Tools
     expanded: true
     items:
-    - name: Global tools
+    - name: Global Tools
       expanded: true
       items:
       - name: Overview
         href: tools/global-tools.md
-      - name: Create a global tool
+      - name: Create a Global Tool
         href: tools/global-tools-how-to-create.md
     - name: Troubleshoot tool usage issues
       href: tools/troubleshoot-usage-issues.md
   - name: Elevated access
     href: tools/elevated-access.md
-  - name: Extensibility model
+  - name: Extensibility Model
     href: tools/extensibility.md
   - name: Custom templates
     href: tools/custom-templates.md
-  - name: Enable Tab completion
+  - name: Enable TAB completion
     href: tools/enable-tab-autocomplete.md
   - name: Telemetry
     href: tools/telemetry.md
@@ -311,7 +311,7 @@
         href: tools/dotnet-list-package.md
       - name: dotnet remove package
         href: tools/dotnet-remove-package.md
-- name: .NET Core additional tools
+- name: .NET Core Additional Tools
   href: additional-tools/index.md
   items:
   - name: WCF Web Service Reference Provider
@@ -322,20 +322,20 @@
     href: additional-tools/dotnet-svcutil.xmlserializer-guide.md
   - name: XML Serializer Generator
     href: additional-tools/xml-serializer-generator.md
-- name: Port from .NET Framework
+- name: Porting from .NET Framework
   href: porting/index.md
   items:
   - name: .NET Framework technologies unavailable for .NET Core
     href: porting/net-framework-tech-unavailable.md
-  - name: Analyze third-party dependencies
+  - name: Analyzing third-party dependencies
     href: porting/third-party-deps.md
-  - name: Port libraries
+  - name: Porting libraries
     href: porting/libraries.md
-  - name: Organize projects for .NET Core
+  - name: Organizing projects for .NET Core
     href: porting/project-structure.md
   - name: Tools to help with porting to .NET Core
     href: porting/tools.md
-  - name: Use the Windows Compatibility Pack
+  - name: Using the Windows Compatibility Pack
     href: porting/windows-compat-pack.md
   - name: Port Windows Forms projects
     href: porting/winforms.md
@@ -345,17 +345,17 @@
   items:
   - name: Overview
     href: dependency-loading/overview.md
-  - name: Understand AssemblyLoadContext
+  - name: Understanding AssemblyLoadContext
     href: dependency-loading/understanding-assemblyloadcontext.md
   - name: Loading details
     items:
     - name: Default dependency probing
       href: dependency-loading/default-probing.md
-    - name: Load managed assemblies
+    - name: Loading managed assemblies
       href: dependency-loading/loading-managed.md
-    - name: Load satellite assemblies
+    - name: Loading satellite assemblies
       href: dependency-loading/loading-resources.md
-    - name: Load unmanaged libraries
+    - name: Loading unmanaged libraries
       href: dependency-loading/loading-unmanaged.md
   - name: Tutorials
     items:

@@ -119,11 +119,11 @@
         tocHref: /dotnet/core/install/
         topicHref: /dotnet/core/install/index
       - name: Get started
-        tocHref: /dotnet/core/tutorials/
-        topicHref: /dotnet/core/tutorials/index
+        tocHref: /dotnet/core/get-started/
+        topicHref: /dotnet/core/get-started/index
       - name: What's new
         tocHref: /dotnet/core/whats-new/
-        topicHref: /dotnet/core/whats-new/dotnet-core-3-0.md
+        topicHref: /dotnet/core/whats-new/dotnet-core-3-0
       - name: Breaking changes
         tocHref: /dotnet/core/compatibility/
         topicHref: /dotnet/core/compatibility/index
@@ -135,7 +135,7 @@
         topicHref: /dotnet/core/run-time-config/index
       - name: Native interoperability
         tocHref: /dotnet/core/native-interop/
-        topicHref: /dotnet/core/native-interop/expose-components-to-com.md
+        topicHref: /dotnet/core/native-interop/expose-components-to-com
       - name: Migration
         tocHref: /dotnet/core/migration/
         topicHref: /dotnet/core/migration/index
@@ -144,7 +144,7 @@
         topicHref: /dotnet/core/deploying/index
       - name: Docker
         tocHref: /dotnet/core/docker/
-        topicHref: /dotnet/core/docker/introduction.md
+        topicHref: /dotnet/core/docker/introduction
       - name: Diagnostic tools
         tocHref: /dotnet/core/diagnostics/
         topicHref: /dotnet/core/diagnostics/index
@@ -154,7 +154,7 @@
       - name: Versioning
         tocHref: /dotnet/core/versions/
         topicHref: /dotnet/core/versions/index
-      - name: CLI
+      - name: Tools
         tocHref: /dotnet/core/tools/
         topicHref: /dotnet/core/tools/index
       - name: Additional tools
@@ -165,7 +165,7 @@
         topicHref: /dotnet/core/porting/index
       - name: Dependency loading
         tocHref: /dotnet/core/dependency-loading/
-        topicHref: /dotnet/core/dependency-loading/overview.md
+        topicHref: /dotnet/core/dependency-loading/overview
       - name: Build .NET Core
         tocHref: /dotnet/core/build/
         topicHref: /dotnet/core/build/index

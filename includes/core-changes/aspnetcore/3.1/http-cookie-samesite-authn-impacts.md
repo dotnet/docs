@@ -29,7 +29,7 @@ Browser and specification changes as outlined in the preceding text.
 Apps that interact with remote sites, such as through third-party login, need to:
 
 * Test those scenarios on multiple browsers.
-* Apply the `CookiePolicy` browser sniffing mitigation discussed in [Support older browsers](#support-older-browsers).
+* Apply the cookie policy browser sniffing mitigation discussed in [Support older browsers](#support-older-browsers).
 
 For testing and browser sniffing instructions, see the following section.
 
@@ -68,7 +68,7 @@ Versions of Electron include older versions of Chromium. For example, the versio
 
 ##### Support older browsers
 
-The 2016 `SameSite` standard mandated that unknown values be treated as `SameSite=Strict` values. Consequently, any older browsers that support the original standard may break when they see a `SameSite` property with a value of `None`. Web apps must implement browser sniffing if they intend to support these old browsers. ASP.NET Core doesn't implement browser sniffing for you because `User-Agent` request header values are highly unstable and change on a weekly basis. Instead, an extension point in `CookiePolicy` allows you to add `User-Agent`-specific logic.
+The 2016 `SameSite` standard mandated that unknown values be treated as `SameSite=Strict` values. Consequently, any older browsers that support the original standard may break when they see a `SameSite` property with a value of `None`. Web apps must implement browser sniffing if they intend to support these old browsers. ASP.NET Core doesn't implement browser sniffing for you because `User-Agent` request header values are highly unstable and change on a weekly basis. Instead, an extension point in the cookie policy allows you to add `User-Agent`-specific logic.
 
 In *Startup.cs*, add the following code:
 

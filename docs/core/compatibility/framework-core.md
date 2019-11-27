@@ -1,11 +1,11 @@
 ---
-title: Breaking changes, .NET Framework to .NET Core 3.0 - .NET Core
+title: Breaking changes for WPF and WinForms .NET Core 3.0
 description: Lists the breaking changes from .NET Framework to .NET Core 3.0 for Windows Forms and Windows Presentation Foundation.
 ms.date: "09/10/2019"
 ---
-# Breaking changes for migration from .NET Framework to .NET Core 3.0
+# Breaking changes for WPF and Windows Forms&mdash;.NET Core 3.0
 
-If you're migrating a Windows Forms or Windows Presentation Foundation application from .NET Framework to .NET Core 3.0, review the following topics for breaking changes that may affect your app:
+WPF and Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms or Windows Presentation Foundation app from .NET Framework to .NET Core 3.0, review the following topics for breaking changes that may affect your app:
 
 ## Windows Forms
 
@@ -50,3 +50,11 @@ If you're migrating a Windows Forms or Windows Presentation Foundation applicati
 ***
 
 [!INCLUDE[Switch.System.Windows.Forms.UseLegacyImages compatibility switch not supported](~/includes/core-changes/windowsforms/deprecate-uselegacyimages.md)]
+
+***
+
+[!INCLUDE[Change of access for AccessibleObject.RuntimeIDFirstItem](~/includes/core-changes/windowsforms/changed-access-for-runtimeidfirstitem.md)]
+
+***
+
+[!INCLUDE[Duplicated APIs removed from Windows Forms](~/includes/core-changes/windowsforms/remove-duplicated-apis.md)]

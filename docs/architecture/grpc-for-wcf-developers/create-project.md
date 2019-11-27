@@ -44,7 +44,7 @@ ASP.NET Core 3.0 comes with a CLI template for gRPC services. Create the new pro
 dotnet new grpc -o src/TraderSys.Portfolios
 ```
 
-Finally, add the project to the solution by using the `dotnet sln` command.
+Finally, add the project to the solution by using the `dotnet sln` command:
 
 ```dotnetcli
 dotnet sln add src/TraderSys.Portfolios

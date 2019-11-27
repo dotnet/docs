@@ -333,12 +333,16 @@
     href: porting/libraries.md
   - name: Organize projects for .NET Core
     href: porting/project-structure.md
-  - name: Tools to help with porting to .NET Core
+  - name: Tools
     href: porting/tools.md
   - name: Use the Windows Compatibility Pack
     href: porting/windows-compat-pack.md
   - name: Port Windows Forms projects
-    href: porting/winforms.md
+    items:
+    - name: How to port a project
+      href: porting/winforms.md
+    - name: Breaking changes
+      href: porting/winforms-breaking-changes.md
   - name: Port WPF projects
     href: porting/wpf.md
 - name: Dependency loading

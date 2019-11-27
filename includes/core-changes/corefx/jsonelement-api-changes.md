@@ -43,7 +43,7 @@ In .NET Core 3.0 Preview 7, <xref:System.Text.Json.JsonElement> APIs have change
 
 If your code is affected by these changes, you can do the following:
 
-- There is no replacement API for the `WriteProperty` overloads in <xref:System.Text.Json.JsonElement>. Instead, you can call one of the <xref:System.Text.Json.Utf8JsonWriter.WritePropertyName%2A?displayProperty=nameWithType> overloads along with the <xref:System.Text.Json.JsonElement.WriteTo%2A> method to archive the same result. For example:
+- There is no replacement API for the `WriteProperty` overloads in <xref:System.Text.Json.JsonElement>. Instead, you can call one of the <xref:System.Text.Json.Utf8JsonWriter.WritePropertyName%2A?displayProperty=nameWithType> overloads along with the <xref:System.Text.Json.JsonElement.WriteTo%2A> method to achieve the same result. For example:
 
    ```csharp
    using (JsonDocument doc = JsonDocument.Parse(jsonString))

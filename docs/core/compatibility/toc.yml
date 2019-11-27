@@ -8,11 +8,11 @@
   items:
   - name: 3.0 to 3.1
     href: 3.0-3.1.md
+  - name: 2.2 to 3.1
+    href: 2.2-3.1.md
   - name: 2.2 to 3.0
     href: 2.2-3.0.md
-  - name: .NET Framework to .NET Core 3.0 (WPF and Windows Forms)
-    href: framework-core.md
-- name: By category
+- name: By area
   items:
   - name: ASP.NET Core
     href: aspnetcore.md
@@ -30,3 +30,5 @@
     href: visualbasic.md
   - name: Windows Forms
     href: winforms.md
+- name: Migrate WPF and Windows Forms apps from .NET Framework
+  href: framework-core.md

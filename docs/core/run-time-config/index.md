@@ -58,7 +58,7 @@ Some configuration values can also be set programmatically by calling the <xref:
 
 ## Environment variables
 
-Environment variables can be used to to supply some run-time configuration information. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
+Environment variables can be used to supply some run-time configuration information. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
 
 You can define environment variables from the Windows Control Panel, at the command line, or programmatically by calling the <xref:System.Environment.SetEnvironmentVariable(System.String,System.String)?displayProperty=nameWithType> method on both Windows and Unix-based systems.
 

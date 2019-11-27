@@ -105,5 +105,5 @@ The official ISO/IEC documents are available from the ISO/IEC [Publicly Availabl
 - [.NET Core Guide](../core/index.md)
 - [.NET Framework Guide](../framework/index.md)
 - [C# Guide](../csharp/index.yml)
-- [F# Guide](../fsharp/index.md)
+- [F# Guide](../fsharp/index.yml)
 - [VB.NET Guide](../visual-basic/index.md)

@@ -520,6 +520,10 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/await"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/bool.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/byte.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
         },
@@ -561,7 +565,11 @@
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/false.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/false-literal"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/false-literal.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/false-operator.md",
@@ -677,11 +685,15 @@
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/true-literal"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true-false-operators.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/true-literal.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true-operator.md",

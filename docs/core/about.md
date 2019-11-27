@@ -23,14 +23,14 @@ C#, Visual Basic, and F# languages can be used to write applications and librari
 - [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 - Sublime Text
 - Vim
- 
+
 This integration is provided, in part, by the contributors of the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
 
 ## APIs
 
 .NET Core exposes APIs for many scenarios, a few of which follow:
 
-- Primitive types, such as [bool](../csharp/language-reference/keywords/bool.md) and [int](../csharp/language-reference/builtin-types/integral-numeric-types.md).
+- Primitive types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
 - Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/).

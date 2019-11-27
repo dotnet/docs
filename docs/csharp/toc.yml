@@ -1318,9 +1318,11 @@
         - name: Built-in numeric conversions
           href: language-reference/builtin-types/numeric-conversions.md
         - name: bool
-          href: language-reference/keywords/bool.md
+          href: language-reference/builtin-types/bool.md
+          displayName: "Boolean, true, false"
         - name: char
           href: language-reference/builtin-types/char.md
+          displayName: "Unicode, character, UTF-16"
         - name: enum
           href: language-reference/keywords/enum.md
         - name: struct
@@ -1510,10 +1512,8 @@
       items:
       - name: "null"
         href: language-reference/keywords/null.md
-      - name: "true"
-        href: language-reference/keywords/true-literal.md
-      - name: "false"
-        href: language-reference/keywords/false-literal.md
+      - name: "true and false"
+        href: language-reference/builtin-types/bool.md
       - name: default
         href: language-reference/keywords/default.md
     - name: Contextual Keywords

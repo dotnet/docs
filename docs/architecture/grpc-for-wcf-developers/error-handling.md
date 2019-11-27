@@ -1,6 +1,6 @@
 ---
 title: Error handling - gRPC for WCF Developers
-description: Various topics pertaining to error handling in gRPC. Includes a table of the most commonly used status codes.
+description: Topics pertaining to error handling in gRPC. Includes a table of the most commonly used status codes.
 ms.date: 09/02/2019
 ---
 

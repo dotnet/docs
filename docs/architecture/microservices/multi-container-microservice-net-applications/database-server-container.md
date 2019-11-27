@@ -156,7 +156,7 @@ However, when you run Redis in production, it is better to look for a high-avail
 
 Redis provides a Docker image with Redis. That image is available from Docker Hub at this URL:
 
-<https://hub.docker.com/\_/redis/>
+<https://hub.docker.com/_/redis/>
 
 You can directly run a Docker Redis container by executing the following Docker CLI command in your command prompt:
 

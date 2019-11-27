@@ -29,7 +29,7 @@ For each image, there are four variants based on different Linux distributions, 
 | 3.0-disco | Ubuntu 19.04 | |
 | 3.0-bionic | Ubuntu 18.04 | |
 
-The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ubuntu images. Some software packages or libraries might not be available, however, in Alpine's package management. If you're not sure which image to use, you should probably choose the default Debian.
+The Alpine base image is around 100 MB, compared to 200 MB for the Debian and Ubuntu images. Some software packages or libraries might not be available in Alpine's package management. If you're not sure which image to use, you should probably choose the default Debian.
 
 > [!IMPORTANT]
 > Make sure you use the same variant of Linux for the build and the runtime. Applications built and published on one variant might not work on another.

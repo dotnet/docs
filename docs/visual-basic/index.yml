@@ -1,0 +1,61 @@
+### YamlMime:Landing
+
+title: VB.NET documentation # < 60 chars
+summary: "VB is engineered for productively building type-safe and object-oriented apps. VB.NET continues the tradition of a fast and easy way to create .NET apps." # < 160 chars
+
+metadata:
+  title: "VB.NET docs - get started, tutorials, reference."
+  description: "Learn VB.NET programming - for beginning developers, developers new to VB.NET, and experienced VB.NET developers"
+  ms.topic: landing-page # Required
+  ms.date: 11/27/2019
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Build a "Hello World" app with .NET Core
+            url: ../core/tutorials/vb-with-visual-studio.md
+          - text: Build a class library with .NET Core`
+            url: ../core/tutorials/vb-library-with-visual-studio.md
+          - text: Additional resources
+            url: getting-started/additional-resources.md
+          - text: Walkthroughs that demonstrate aspects of VB.
+            url: walkthroughs.md
+
+  - title: "VB fundamentals"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "Programming concepts"
+            url: programming-guide/concepts/index.md
+      - linkListType: concept
+        links:
+          - text: "Program structure and code conventions"
+            url: programming-guide/program-structure/program-structure-and-code-conventions.md
+          - text: "Develop apps with VB"
+            url: developing-apps/index.md
+          - text: "Program structure and code conventions"
+            url: programming-guide/program-structure/program-structure-and-code-conventions.md
+          - text: "Language features - LINQ, XML literals"
+            url: programming-guide/language-features/index.md
+          - text: "COM Interop"
+            url: programming-guide/com-interop/index.md
+
+  - title: "VB language reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Language reference"
+            url: language-reference/index.md
+          - text: "keywords"
+            url: language-reference/keywords/index.md
+          - text: "operators"
+            url: language-reference/operators/index.md
+          - text: "VB language specification"
+            url: reference/language-specification/index.md

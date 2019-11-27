@@ -1,7 +1,7 @@
 ---
 title: Windows Forms breaking changes - .NET Core
 description: Lists the breaking changes in Windows Forms for .NET Core.
-ms.date: 11/21/2019
+ms.date: 11/27/2019
 ---
 # Breaking changes in Windows Forms
 
@@ -66,3 +66,7 @@ The following is a list of breaking changes in Windows Forms by .NET Core versio
 ***
 
 [!INCLUDE[SerializableAttribute removed from some Windows Forms types](~/includes/core-changes/windowsforms/3.0/remove-serializationattribute.md)]
+
+## See also
+
+- [Breaking changes for Windows Forms (.NET Framework to .NET Core)](../porting/winforms-breaking-changes.md)

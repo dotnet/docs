@@ -1,14 +1,14 @@
 ---
 title: .NET Core breaking changes
 description: Learn about the breaking changes in each version of .NET Core.
-ms.date: "08/12/2019"
+ms.date: 11/27/2019
 ---
 # .NET Core breaking changes
 
 The following version and area selectors provide a filtered list of applicable breaking changes between different versions of .NET Core, ASP.NET Core, and EF Core. Instead of using the selectors, you can also browse version to version or category articles in the table of contents.
 
 > [!NOTE]
-> Windows Presentation Foundation (WPF) and Windows Forms support were added to .NET Core in version 3.0. For more information about migrating from .NET Framework to .NET Core for these technologies, see [Breaking changes for Windows Forms](../porting/winforms-breaking-changes.md) and [Differences in WPF](../../desktop-wpf/migration/differences-from-net-framework.md).
+> Windows Forms and Windows Presentation Foundation (WPF) support were added to .NET Core in version 3.0. For more information about migrating from .NET Framework to .NET Core for these technologies, see [Breaking changes for Windows Forms](../porting/winforms-breaking-changes.md) and [Differences in WPF](../../desktop-wpf/migration/differences-from-net-framework.md).
 
 ## By version
 

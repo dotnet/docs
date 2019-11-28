@@ -1,7 +1,7 @@
 ---
 title: Compilation config settings
 description: Learn about run-time settings for configuring how the JIT compiler works.
-ms.date: 11/13/2019
+ms.date: 11/27/2019
 ms.topic: reference
 ---
 # Run-time configuration options for compilation
@@ -15,4 +15,4 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPlus_TieredCompilation` | (DWORD)<br/>0 - disabled<br/>1 - enabled |
+| **Environment variable** | `COMPlus_TieredCompilation` | 1 - enabled<br/>0 - disabled |

@@ -133,9 +133,9 @@ The following tables show these features and restrictions:
 ||Add an assembly|Not supported|OK|
 ||Remove an assembly|Not supported|OK|
 
- Mage.exe creates new manifests that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. ClickOnce applications that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] can run on both the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] and the full version of the .NET Framework 4. If your application targets the full version of the .NET Framework 4 and cannot run on the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)], remove the client `<framework>` element by using a text editor and re-sign the manifest.
+ Mage.exe creates new manifests that target the .NET Framework 4 Client Profile. ClickOnce applications that target the .NET Framework 4 Client Profile can run on both the .NET Framework 4 Client Profile and the full version of the .NET Framework 4. If your application targets the full version of the .NET Framework 4 and cannot run on the .NET Framework 4 Client Profile, remove the client `<framework>` element by using a text editor and re-sign the manifest.
 
-The following is a sample `<framework>` element that targets the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]:
+The following is a sample `<framework>` element that targets the .NET Framework 4 Client Profile:
 
 ```xml
 <framework targetVersion="4.0" profile="client" supportedRuntime="4.0.20506" />

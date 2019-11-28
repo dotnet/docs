@@ -45,7 +45,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
   
  ![Graphic showing the union of two sequences.](./media/set-operations/union-operation-two-sequences.png)  
 
-[!code-csharp[Union](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#4)]
+[!code-csharp-interactive[Union](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#4)]
  
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 title: Networking config settings
 description: Learn about run-time settings for configuring networking.
-ms.date: 11/13/2019
+ms.date: 11/27/2019
 ms.topic: reference
 ---
 # Run-time configuration options for networking
@@ -10,12 +10,11 @@ ms.topic: reference
 
 - Configures whether support for the HTTP/2 protocol is enabled.
 - Disabled by default.
-- Introduced in .NET Core 3.0.
 
-| | Setting name | Values |
+| | Setting name | Values | Introduced version |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | true<br/>false |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | (DWORD)<br/>0 - disabled<br/>1 - enabled |
+| **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled | .NET Core 3.0 |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | 0 - disabled<br/>1 - enabled | .NET Core 3.0 |
 
 ## Sockets HTTP handler
 
@@ -25,5 +24,5 @@ ms.topic: reference
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Net.Http.UseSocketsHttpHandler` | true<br/>false |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` | (DWORD)<br/>0 - enables the use of <xref:System.Net.Http.HttpClientHandler><br/>1 - enables the use of <xref:System.Net.Http.SocketsHttpHandler> |
+| **runtimeconfig.json** | `System.Net.Http.UseSocketsHttpHandler` | `true` - enables the use of <xref:System.Net.Http.SocketsHttpHandler><br/>`false` - enables the use of <xref:System.Net.Http.HttpClientHandler> |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` | 1 - enables the use of <xref:System.Net.Http.SocketsHttpHandler><br/>0 - enables the use of <xref:System.Net.Http.HttpClientHandler> |

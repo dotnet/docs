@@ -1,7 +1,7 @@
 ---
 title: Threading config settings
 description: Learn about run-time settings for configuring threading.
-ms.date: 11/13/2019
+ms.date: 11/27/2019
 ms.topic: reference
 ---
 # Run-time configuration options for threading
@@ -14,7 +14,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** |  |  |
-| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` | (DWORD)<br/>0 - disabled<<br/>1 - enabled |
+| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` | 0 - disabled<<br/>1 - enabled |
 
 ## Minimum threads
 

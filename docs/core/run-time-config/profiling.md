@@ -1,7 +1,7 @@
 ---
 title: Profiling config settings
 description: Learn about run-time settings for configuring profiling.
-ms.date: 11/13/2019
+ms.date: 11/27/2019
 ms.topic: reference
 ---
 # Run-time configuration options for profiling
@@ -14,7 +14,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** |  |  |
-| **Environment variable** | `CORECLR_ENABLE_PROFILING` | (DWORD)<br/>0 - disabled<br/>1 - enabled |
+| **Environment variable** | `CORECLR_ENABLE_PROFILING` | 0 - disabled<br/>1 - enabled |
 
 ## Profiler GUID
 
@@ -44,7 +44,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** |  |  |
-| **Environment variable** | `PerfMapEnabled` | (DWORD)<br/>0 - disable<br/>1 - enable |
+| **Environment variable** | `PerfMapEnabled` | 0 - disabled<br/>1 - enabled |
 
 ## Perf log markers
 
@@ -54,4 +54,4 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** |  |  |
-| **Environment variable** | `PerfMapIgnoreSignal` | (DWORD)<br/>0 - disable<br/>1 - enable |
+| **Environment variable** | `PerfMapIgnoreSignal` | 0 - disabled<br/>1 - enabled |

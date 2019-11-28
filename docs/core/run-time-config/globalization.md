@@ -1,7 +1,7 @@
 ---
 title: Globalization config settings
 description: Learn about run-time settings for configuring globalization aspects of an app, for example, how it parses Japanese dates.
-ms.date: 11/13/2019
+ms.date: 11/27/2019
 ms.topic: reference
 ---
 # Run-time configuration options for globalization
@@ -14,7 +14,7 @@ ms.topic: reference
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Globalization.Invariant` | true - no access to cultural data<br/>false - access to cultural data |
+| **runtimeconfig.json** | `System.Globalization.Invariant` | `false` - access to cultural data<br/>`true` - no access to cultural data |
 | **Environment variable** |  |  |
 
 ## Era year ranges
@@ -25,7 +25,7 @@ ms.topic: reference
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `Switch.System.Globalization.EnforceJapaneseEraYearRange` | true - overflows cause an exception<br/>false - relaxed range checks |
+| **runtimeconfig.json** | `Switch.System.Globalization.EnforceJapaneseEraYearRange` | `false` - relaxed range checks<br/>`true` - overflows cause an exception |
 | **Environment variable** |  |  |
 
 ## Japanese date parsing
@@ -36,7 +36,7 @@ ms.topic: reference
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `Switch.System.Globalization.EnforceLegacyJapaneseDateParsing` | true - only "1" is supported<br/>false - "Gannen" or "1" is supported |
+| **runtimeconfig.json** | `Switch.System.Globalization.EnforceLegacyJapaneseDateParsing` | `false` - "Gannen" or "1" is supported<br/>`true` - only "1" is supported |
 | **Environment variable** |  |  |
 
 ## Japanese year format
@@ -47,5 +47,5 @@ ms.topic: reference
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | true - format as number<br/>false - format as "gannen" |
+| **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | `false` - format as "gannen"<br/>`true` - format as number |
 | **Environment variable** |  |  |

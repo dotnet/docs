@@ -9,6 +9,10 @@ ms.author: "scaddie"
 
 The following is a list of ASP.NET Core breaking changes by ASP.NET Core version. ASP.NET Core provides the web app development features used by .NET Core.
 
+## ASP.NET Core 3.1
+
+[!INCLUDE[HTTP: Browser SameSite changes impact authentication](~/includes/core-changes/aspnetcore/3.1/http-cookie-samesite-authn-impacts.md)]
+
 ## ASP.NET Core 3.0
 
 [!INCLUDE[obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](~/includes/core-changes/aspnetcore/3.0/obsolete-apis-removed.md)]
@@ -196,7 +200,3 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 ***
 
 [!INCLUDE[Target framework: .NET Framework not supported](~/includes/core-changes/aspnetcore/3.0/targetfx-netfx-tfm-support.md)]
-
-## ASP.NET Core 3.1
-
-[!INCLUDE[HTTP: Browser SameSite changes impact authentication](~/includes/core-changes/aspnetcore/3.1/http-cookie-samesite-authn-impacts.md)]

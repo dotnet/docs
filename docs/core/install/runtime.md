@@ -12,21 +12,14 @@ zone_pivot_groups: operating-systems-set-one
 
 In this article, you'll learn how to download and install the .NET Core runtime. The .NET Core runtime is used to run apps created with .NET Core.
 
-You can download and install .NET Core directly with one of the following links:
-
-- [.NET Core 3.1 Preview 3 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
-- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
-
 ::: zone pivot="os-windows,os-macos"
 
 ## Install with an installer
 
 Both Windows and macOS have standalone installers that can be used to install the .NET Core 3.0 runtime.
 
-- Windows [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-windows-x64-installer) | [x32 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-windows-x86-installer)
-- macOS [x64 CPUs](https://dotnet.microsoft.com/download/thank-you/dotnet-runtime-3.0.0-macos-x64-installer)
+- Windows [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0) | [x86 (32-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- macOS [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 
 ::: zone-end
 
@@ -65,6 +58,15 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 ```
 
 ::: zone-end
+
+## All .NET Core downloads
+
+You can download and install .NET Core directly with one of the following links:
+
+- [.NET Core 3.1 Preview downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
+- [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
 
 ## Docker
 

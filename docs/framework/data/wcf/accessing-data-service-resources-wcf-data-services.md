@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 9665ff5b-3e3a-495d-bf83-d531d5d060ed
 ---
 # Accessing Data Service Resources (WCF Data Services)
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports the Open Data Protocol (OData) to expose your data as a feed with resources that are addressable by URIs. These resources are represented according to the entity-relationship conventions of the [Entity Data Model](../adonet/entity-data-model.md). In this model, entities represent operational units of data that are data types in an application domain, such as customers, orders, items, and products. Entity data is accessed and changed by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE.  
+WCF Data Services supports the Open Data Protocol (OData) to expose your data as a feed with resources that are addressable by URIs. These resources are represented according to the entity-relationship conventions of the [Entity Data Model](../adonet/entity-data-model.md). In this model, entities represent operational units of data that are data types in an application domain, such as customers, orders, items, and products. Entity data is accessed and changed by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE.  
   
 ## Addressing Resources  
  In OData, you address any data exposed by the data model by using a URI. For example, the following URI returns a feed that is the Customers entity set, which contains entries for all instances of the Customer entity type:  
@@ -50,7 +50,7 @@ ms.assetid: 9665ff5b-3e3a-495d-bf83-d531d5d060ed
   
  The entries in the returned feed are also ordered by the value of the ShipCity property of the orders.  
   
- [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports the following OData system query options:  
+ WCF Data Services supports the following OData system query options:  
   
 |Query Option|Description|  
 |------------------|-----------------|  

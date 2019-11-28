@@ -19,7 +19,7 @@ A data service can expose large object binary data. This binary data might repre
 
 - Media link entry - an entity that has a reference to a related media resource stream.
 
-With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you define a binary resource stream by implementing a streaming data provider. The streaming provider implementation supplies the data service with the media resource stream associated with a specific entity as an <xref:System.IO.Stream> object. This implementation enables the data service to accept and return media resources over HTTP as binary data streams of a specified MIME type.
+With WCF Data Services, you define a binary resource stream by implementing a streaming data provider. The streaming provider implementation supplies the data service with the media resource stream associated with a specific entity as an <xref:System.IO.Stream> object. This implementation enables the data service to accept and return media resources over HTTP as binary data streams of a specified MIME type.
 
 Configuring a data service to support the streaming of binary data requires the following steps:
 
@@ -73,7 +73,7 @@ To create a data service that supports binary data streams, you must implement t
 
 ## Creating the Streaming Data Service
 
-To provide the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] runtime with access to the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> implementation, the data service that you create must also implement the <xref:System.IServiceProvider> interface. The following example shows how to implement the <xref:System.IServiceProvider.GetService%2A> method to return an instance of the `PhotoServiceStreamProvider` class that implements <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
+To provide the WCF Data Services runtime with access to the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> implementation, the data service that you create must also implement the <xref:System.IServiceProvider> interface. The following example shows how to implement the <xref:System.IServiceProvider.GetService%2A> method to return an instance of the `PhotoServiceStreamProvider` class that implements <xref:System.Data.Services.Providers.IDataServiceStreamProvider>.
 
 [!code-csharp[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_photo_streaming_service/cs/photodata.svc.cs#photoservicestreamingprovider)]
 [!code-vb[Astoria Photo Streaming Service#PhotoServiceStreamingProvider](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_photo_streaming_service/vb/photodata.svc.vb#photoservicestreamingprovider)]
@@ -93,7 +93,7 @@ By default, Internet Information Services (IIS) also limits the size of requests
 
 ## Using Data Streams in a Client Application
 
-The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to both retrieve and update these exposed resources as binary streams on the client. For more information, see [Working with Binary Data](working-with-binary-data-wcf-data-services.md).
+The WCF Data Services client library enables you to both retrieve and update these exposed resources as binary streams on the client. For more information, see [Working with Binary Data](working-with-binary-data-wcf-data-services.md).
 
 ## Considerations for Working with a Streaming Provider
 

@@ -203,7 +203,7 @@ let result = Async.RunSynchronously req
 
 ### `match!`
 
-Starting with F# 4.5, the `match!` keyword allows you to inline a call to another computation expression and pattern match on its result:
+The `match!` keyword allows you to inline a call to another computation expression and pattern match on its result:
 
 ```fsharp
 let doThingsAsync url =

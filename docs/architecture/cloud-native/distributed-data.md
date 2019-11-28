@@ -58,34 +58,3 @@ We'll explore these different types of data stores and some common cloud-native 
 >[!div class="step-by-step"]
 >[Previous](service-mesh-communication-infrastructure.md)
 >[Next](data-patterns.md)
-
-
-
-======================
-
-
-
-
-
-With cloud native, however, we embrace a more complex system design: Applications are built as small, independent microservices. These services...
-
-- Encapsulate specific business capabilities
-- Evolve independently
-- Deploy frequently
-- Scale separately
-- Isolate failure
-
-Designing for cloud-native, we segregate business functionality into separate microservices. We also segregate the data for each service. Note on the right-side of Figure 5-1 how each microservice encapsulates its data in its own data store
-
-In the figure above, each microservice owns and encapsulates its data. The monolithic database model decomposes into a *distributed data model* with many smaller databases that each align with a microservice.
-
-This distributed data model provides many benefits:
-
-- Each microservice owns its own domain data.
-- Each microservice can evolve its data schema without affecting other microservices.
-- Each microservice can scale its own data independently of others.
-- Each microservice improves it resiliency from failures in other services.
-
-Instead of single, shared database, each service encapsulates its data in its own data store.
-
-

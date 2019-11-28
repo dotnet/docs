@@ -135,7 +135,6 @@ Some production-ready messaging solutions:
 - **MassTransit** \
   <https://masstransit-project.com/>
 
-
 > [!div class="step-by-step"]
 > [Previous](database-server-container.md)
 > [Next](rabbitmq-event-bus-development-test-environment.md)

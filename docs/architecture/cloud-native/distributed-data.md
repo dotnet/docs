@@ -4,7 +4,7 @@ description: Contrast data storage in monolithic and cloud-native applications
 author: robvet
 ms.date: 11/29/2019
 ---
-# Cloud-native data
+# Database-per-microservice
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
@@ -28,9 +28,11 @@ Designing for cloud-native, we take a different approach. On the right-side of F
 - Scales separately
 - Isolates failure
 
-The design also segregates the data for each microservice. The monolithic database decomposes into a *distributed data model* with many smaller databases, each aligning with a microservice.
+The design also segregates the data for each microservice. The monolithic database decomposes into a distributed data model with many smaller databases, each aligning with a microservice. When the smoke clears, we emerge with a *database per microservice*.
 
-This distributed data model provides many benefits. Each microservice...
+## Why?
+
+Such a distributed data model provides many benefits. Each microservice...
 
 - Owns its own domain data
 - Evolves its data schema without affecting other services
@@ -39,11 +41,11 @@ This distributed data model provides many benefits. Each microservice...
 
 This data independence also enables each microservice to implement the data store that is best optimized for its workload, storage needs, and read/write patterns. Choices include relational, document, key-value, and even graph-based data stores.
 
-Figure 5-3 presents the principle of polyglot persistence in a cloud-native system.
+Figure 5-2 presents the principle of polyglot persistence in a cloud-native system.
 
 ![Polyglot data persistence](./media/polyglot-data-persistence.png)
 
-**Figure 5-3**. Polyglot data persistence
+**Figure 5-2**. Polyglot data persistence
 
 Note in the above figure how each microservice supports a different type of data store.
 
@@ -53,8 +55,28 @@ Note in the above figure how each microservice supports a different type of data
   
 While relational databases remain relevant for microservices with complex data, NoSQL databases have gained considerable popularity. They provide massive scale and high availability. Their schemaless nature allows developers to move away from an architecture of typed data classes and ORMs that make change expensive and time-consuming.
 
-We'll explore these different types of data stores and some common cloud-native data patterns in this chapter.
+## Increased complexity
+
+Cloud-native application design favor small, independent data stores scoped to each microservice. While isolating data can increase agility, performance, and scalability, it also presents many challenges. In this section, we discuss these challenges and present patterns and practices to help overcome them.  
+
+
+
+
+
+
+
+
 
 >[!div class="step-by-step"]
 >[Previous](service-mesh-communication-infrastructure.md)
 >[Next](data-patterns.md)
+
+
+
+
+================================
+
+As we've seen, a key pillar of a cloud-native system is a microservice-based architecture.
+
+
+We'll explore these different types of data stores and some common cloud-native data patterns in this chapter.

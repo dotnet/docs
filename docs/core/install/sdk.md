@@ -31,7 +31,7 @@ You can install the .NET Core SDK with many of the common Linux package managers
 
 ## Download and manually install
 
-After [downloading](#all-net-core-downloads) a .NET Core binary release. Open a terminal and run the following commands to extract the SDK and make the commands available at the terminal.
+To extract the SDK and make the commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
 
 ```bash
 mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.0.101-linux-musl-x64.tar.gz -C $HOME/dotnet
@@ -39,7 +39,7 @@ export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 ```
 
-> [!WARNING]
+> [!TIP]
 > The above commands will only make the .NET SDK commands available for the terminal session in which it was run.
 >
 > You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
@@ -100,14 +100,14 @@ Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload
 
 ::: zone-end
 
-## Install along side Visual Studio Code
+## Install alongside Visual Studio Code
 
 Visual Studio Code is a powerful and lightweight source code editor that runs on your desktop. Visual Studio Code is available for Windows, macOS, and Linux.
 
 While Visual Studio Code doesn't come with an automated .NET Core installer like Visual Studio does, adding .NET Core support is simple.
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
-01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core).
 01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
 
 ::: zone pivot="os-windows"

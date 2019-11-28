@@ -59,21 +59,6 @@ sudo apt-get install aspnetcore-runtime-3.0
 > [!IMPORTANT]
 > If you receive an error message similar to **Unable to locate package aspnetcore-runtime-3.0**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
 
-## Install the .NET Core runtime
-
-Update the products available for installation, then install the .NET Core runtime. In your terminal, run the following commands.
-
-```bash
-sudo add-apt-repository universe
-sudo apt-get update
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install dotnet-runtime-3.0
-```
-
-> [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package dotnet-runtime-3.0**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
-
 ## How to install other versions
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]

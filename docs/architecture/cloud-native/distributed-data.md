@@ -2,7 +2,7 @@
 title: Cloud-native data
 description: Contrast data storage in monolithic and cloud-native applications
 author: robvet
-ms.date: 10/29/2019
+ms.date: 11/28/2019
 ---
 # Cloud-native data
 
@@ -12,7 +12,7 @@ While cloud native transforms the way you design systems, it also changes the wa
 
 To experienced developers, the shared, monolithic database from figure 5-1 should look all too familiar.
 
-![Single monolithic database](./media/single-monolithic-database.png)
+![Single monolithic database](./media/distributed-data.png)
 
 **Figure 5-1**. Data storage in monolithic applications
 

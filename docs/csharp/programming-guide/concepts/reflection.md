@@ -9,6 +9,9 @@ Reflection provides objects (of type <xref:System.Type>) that describe assemblie
 
 Here's a simple example of reflection using the <xref:System.Object.GetType> method - inherited by all types from the `Object` base class - to obtain the type of a variable:
 
+> [!NOTE]
+> Make sure you add `using System;` and `using System.Reflection;` at the top of your *.cs* file.
+
 ```csharp
 // Using GetType to obtain type information:
 int i = 42;
@@ -22,7 +25,7 @@ The following example uses reflection to obtain the full name of the loaded asse
 
 ```csharp
 // Using Reflection to get information of an Assembly:
-Reflection.Assembly info = typeof(int).Assembly;
+Assembly info = typeof(int).Assembly;
 Console.WriteLine(info);
 ```
 

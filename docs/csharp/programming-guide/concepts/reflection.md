@@ -12,8 +12,8 @@ Here's a simple example of reflection using the <xref:System.Object.GetType> met
 ```csharp
 // Using GetType to obtain type information:
 int i = 42;
-System.Type type = i.GetType();
-System.Console.WriteLine(type);
+Type type = i.GetType();
+Console.WriteLine(type);
 ```
 
 The output is: `System.Int32`.
@@ -22,8 +22,8 @@ The following example uses reflection to obtain the full name of the loaded asse
 
 ```csharp
 // Using Reflection to get information of an Assembly:
-System.Reflection.Assembly info = typeof(System.Int32).Assembly;
-System.Console.WriteLine(info);
+Reflection.Assembly info = typeof(System.Int32).Assembly;
+Console.WriteLine(info);
 ```
 
 The output is: `System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e`.

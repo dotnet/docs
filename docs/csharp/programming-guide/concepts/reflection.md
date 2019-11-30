@@ -22,7 +22,7 @@ The following example uses reflection to obtain the full name of the loaded asse
 
 ```csharp
 // Using Reflection to get information of an Assembly:
-Reflection.Assembly info = typeof(System.Int32).Assembly;
+Reflection.Assembly info = typeof(int).Assembly;
 Console.WriteLine(info);
 ```
 

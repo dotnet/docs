@@ -54,23 +54,6 @@ Language compilers and tools expose the runtime's functionality in ways that are
 
 - Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see [Common Type System](../../docs/standard/base-types/common-type-system.md).
 
-## CLR versions
-
-The version number of the .NET Framework doesn't necessarily correspond to the version number of the CLR it includes. The following table shows how the two version numbers correlate:
-
-|.NET Framework version|Includes CLR version|
-|----------------------------|--------------------------|
-|1.0|1.0|
-|1.1|1.1|
-|2.0|2.0|
-|3.0|2.0|
-|3.5|2.0|
-|4|4|
-|4.5 (including 4.5.1 and 4.5.2)|4|
-|4.6 (including 4.6.1 and 4.6.2)|4|
-|4.7 (including 4.7.1 and 4.7.2)|4|
-|4.8|4|
-
 ## Related topics
 
 |Title|Description|

@@ -185,7 +185,7 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
 3. From a Developer Command Prompt for Visual Studio, open the \client\bin folder, under the language-specific folder.  
   
     > [!NOTE]
-    > If you are using [!INCLUDE[wv](../../../../includes/wv-md.md)], [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, make sure that you run the command prompt with administrator privileges.  
+    > If you are using Windows Vista, [!INCLUDE[lserver](../../../../includes/lserver-md.md)], Windows 7, or Windows Server 2008 R2, make sure that you run the command prompt with administrator privileges.  
   
 4. Type in `tlbexp.exe client.dll /out:CalcProxy.tlb` to export the dll to a tlb file. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
   
@@ -215,7 +215,7 @@ WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9,
   
 6. Copy the Client.dll library from the \client\bin folder, under the language-specific folder, to a directory on the client computer.  
   
-7. From a command prompt, navigate to that destination directory on the client computer. If using [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], make sure to run the command prompt as Administrator.  
+7. From a command prompt, navigate to that destination directory on the client computer. If using Windows Vista or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], make sure to run the command prompt as Administrator.  
   
 8. Type in `tlbexp.exe client.dll /out:CalcProxy.tlb` to export the dll to a tlb file. A "Type library exporter warning" is expected but is not an issue because the generic type is not required.  
   

@@ -496,7 +496,7 @@ Notes:
 
 ### Delete NuGetFallbackFolder (optional)
 
-In some cases, you no longer need the `NuGetFallbackFolder` and may wish to delete it. For more information about deleting this folder, see [Remove the NuGetFallbackFolder](../versions/remove-runtime-sdk-versions.md#remove-the-nugetfallbackfolder).
+In some cases, you no longer need the `NuGetFallbackFolder` and may wish to delete it. For more information about deleting this folder, see [Remove the NuGetFallbackFolder](../versions/remove-runtime-sdk-versions.md#remove-the-nuget-fallback-folder).
 
 ## [Windows](#tab/windows)
 

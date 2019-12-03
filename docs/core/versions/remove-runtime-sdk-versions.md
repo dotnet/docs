@@ -1,10 +1,10 @@
 ---
 title: Remove the .NET Core runtime and SDK
 description: This article describes how to determine which versions of the .NET Core Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
-ms.date: 07/28/2018
+ms.date: 12/02/2019
 author: billwagner
 ms.author: wiwagn
-ms.custom: "seodec18"
+ms.custom: "updateeachrelease"
 ---
 
 # How to remove the .NET Core Runtime and SDK
@@ -15,7 +15,7 @@ Over time, as you install updated versions of the .NET Core runtime and SDK, you
 
 The [.NET Core version selection](selection.md) behaviors and the runtime compatibility of .NET Core across updates enables safe removal of previous versions. .NET Core runtime updates are compatible within a major version 'band' such as 1.x and 2.x. Additionally, newer releases of the .NET Core SDK generally maintain the ability to build applications that target previous versions of the runtime in a compatible manner.
 
-In general, you only need the latest SDK and latest patch version of the runtimes required for your application. Instances where retaining older SDK or Runtime versions include maintaining **project.json**-based applications. Unless your application has specific reasons for earlier SDKs or runtimes, you may safely remove older versions.
+In general, you only need the latest SDK and latest patch version of the runtimes required for your application. Instances where keeping older SDK or Runtime versions include maintaining **project.json**-based applications. Unless your application has specific reasons for earlier SDKs or runtimes, you may safely remove older versions.
 
 ## Determine what is installed
 
@@ -146,7 +146,7 @@ There are more options to uninstall .NET Core (either SDK or runtime) on Linux. 
 > [!IMPORTANT]
 > For Red Hat installations, consult the [Red Hat Getting Started Guide](https://access.redhat.com/documentation/en-us/net_core/2.0/html/getting_started_guide/gs_install_dotnet#install_register_rehel) for information on installing and uninstalling .NET Core.
 
-Starting with .NET Core 2.1, there is no need to uninstall the .NET Core SDK when upgrading it using a package manager. The package manager `update` or `refresh` commands will automatically remove the older version upon the successful installation of a newer version.
+Starting with .NET Core 2.1, there's no need to uninstall the .NET Core SDK when upgrading it using a package manager. The package manager `update` or `refresh` commands will automatically remove the older version upon the successful installation of a newer version.
 
 If you installed .NET Core using a package manager, you use that same package manager to uninstall .NET SDK or runtime. .NET Core installations support most popular package managers. Consult the documentation for your distribution's package manager for the precise syntax on your environment:
 
@@ -161,13 +161,13 @@ The package name for the .NET Core SDK installation for most package managers is
 
 For machines that have installed only the runtime, and not the SDK, the package name is `dotnet-runtime-<version>` for the .NET Core runtime, and `aspnetcore-runtime-<version>` for the entire runtime stack.
 
-.NET Core installations prior to 2.0 did not uninstall the host application when the SDK was uninstalled using the package manager. Using `apt-get`, the command is:
+.NET Core installations earlier than 2.0 didn't uninstall the host application when the SDK was uninstalled using the package manager. Using `apt-get`, the command is:
 
 ```bash
 apt-get remove dotnet-host
 ```
 
-Note that there is no version attached to `dotnet-host`.
+Note that there's no version attached to `dotnet-host`.
 
 If you installed using a tarball, you must remove .NET Core using the manual method.
 
@@ -199,31 +199,32 @@ The parent directories for the SDK and runtime are listed in the output from the
 
 ## .NET Core Uninstall Tool
 
-The [.NET Core Uninstall Tool](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) (`dotnet-core-uninstall`) lets you clean-up .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled.
+The [.NET Core Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) lets you remove .NET Core SDKs and Runtimes from a system. A collection of options is available to specify which versions should be uninstalled.
 
-The documentation of the tool is available [here](../additional-tools/dotnet-core-uninstall.md).
+## Visual Studio dependency on .NET Core SDK versions
 
-## Visual Studio dependencies on .NET Core SDK versions
-
-Visual Studio installers prior to Visual Studio 2019 Update 16.3 call the standalone .NET Core SDK installer. As a result, these versions of the SDK appear in the Windows **Add/Remove Programs** dialog. Hence, be aware that removing .NET Core SDKs installed prior to Visual Studio 2019 Update 16.3 may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
+Before Visual Studio 2019 version 16.3, Visual Studio installers called the standalone .NET Core SDK installer. As a result, the SDK versions appear in the Windows **Add/Remove Programs** dialog. Removing .NET Core SDKs that were installed by Visual Studio using the standalone installer may break Visual Studio. If Visual Studio has problems after you uninstall SDKs, run Repair on that specific version of Visual Studio. The following table shows some of the Visual Studio dependencies on .NET Core SDK versions:
 
 | Visual Studio version | .NET Core SDK version |
 | -- | -- |
-| Visual Studio 2019 16.2 (Update 2) | .NET Core SDK 2.2.4xx, 2.1.8xx |
-| Visual Studio 2019 16.1 (Update 1) | .NET Core SDK 2.2.3xx, 2.1.7xx |
-| Visual Studio 2019 16.0 | .NET Core SDK 2.2.2xx, 2.1.6xx |
-| Visual Studio 2017 15.9 (Update 9) | .NET Core SDK 2.2.1xx, 2.1.5xx |
-| Visual Studio 2017 15.8 (Update 8) | .NET Core SDK 2.1.4xx |
+| Visual Studio 2019 version 16.2 | .NET Core SDK 2.2.4xx, 2.1.8xx |
+| Visual Studio 2019 version 16.1 | .NET Core SDK 2.2.3xx, 2.1.7xx |
+| Visual Studio 2019 version 16.0 | .NET Core SDK 2.2.2xx, 2.1.6xx |
+| Visual Studio 2017 version 15.9 | .NET Core SDK 2.2.1xx, 2.1.5xx |
+| Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx |
 
-## Removing the NuGet Fallback Folder
+## Remove the NuGet fallback folder
 
-Prior to .NET Core SDK 3.0, the .NET Core SDK installers used the `NuGetFallbackFolder` to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The `NuGetFallbackFolder` is located at *C:\Program Files\dotnet\sdk* on Windows and at */usr/local/share/dotnet/sdk* on macOS.
+Before .NET Core 3.0 SDK, the .NET Core SDK installers used the *NuGetFallbackFolder* to store a cache of NuGet packages. This cache was used during operations such as `dotnet restore` or `dotnet build /t:Restore`. The `NuGetFallbackFolder` is located at *C:\Program Files\dotnet\sdk* on Windows and at */usr/local/share/dotnet/sdk* on macOS.
 
-In some cases you may want to remove this folder:
+You may want to remove this folder, if:
 
-* You are no longer doing .NET development with SDKs below .NET Core SDK 3.0.
-* You are doing development on lower SDKs, but you don't mind being on line and things being slower once.
+* You're only developing using .NET Core 3.0 SDK or later versions.
+* You're developing using .NET Core SDK versions earlier than 3.0, but you can work online and things can be slower once.
 
-If you want to remove the NuGet Fallback folder, you can delete it, although you will need admin privileges.
+If you want to remove the NuGet fallback folder, you can delete it, but you'll need admin privileges to do so.
 
-It is generally undesirable to delete the `dotnet` folder. Doing so would remove any global tools you have installed. Also, on Windows, you will break Visual Studio 2019 Update 16.3 (run **Repair** to recover) and if there are SDK entries in the **Add/Remove Programs** dialog they will be orphaned.
+It's not recommended to delete the *dotnet* folder. Doing so would remove any global tools you've previously installed. Also, on Windows:
+
+- You'll break Visual Studio 2019 version 16.3 and later versions. You can run **Repair** to recover.
+- If there are .NET Core SDK entries in the **Add/Remove Programs** dialog, they'll be orphaned.

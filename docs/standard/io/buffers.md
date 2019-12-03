@@ -10,7 +10,7 @@ ms.author: riande
 ---
 # Work with Buffers in .NET
 
-The types in this document help you read data that runs across multiple buffers. They're primarily used to support `PipeReader`.
+This article gives you an overview of types that help you read data that runs across multiple buffers. They're primarily used to support <xref:System.IO.Pipelines.PipeReader> objects.
 
 ## IBufferWriter\<T\>
 
@@ -90,7 +90,7 @@ SequencePosition? FindIndexOf(in ReadOnlySequence<byte> buffer, byte data) => bu
 
 Processing a `ReadOnlySequence<T>` can be challenging since data may be split across multiple segments within the sequence. For the best performance, split code into two paths:
 
-- A fast path, that deals with the single segment case.
+- A fast path that deals with the single segment case.
 - A slow path that deals with the data split across segments.
 
 There are a few approaches that can be used to process data in multi-segmented sequences:
@@ -141,11 +141,11 @@ There are several unusual outcomes when dealing with a `ReadOnlySequence<T>`/`Se
 - Two `SequencePosition` can't be compared, making it difficult to:
   - Know if one position is greater than or less than another position.
   - Write some parsing algorithms.
-- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by [in](/dotnet/csharp/language-reference/keywords/in-parameter-modifier) or [ref](/dotnet/csharp/language-reference/keywords/ref) where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](../../csharp/language-reference/keywords/struct.md).
+- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by [in](../../csharp/language-reference/keywords/in-parameter-modifier.md) or [ref](../../csharp/language-reference/keywords/ref.md) where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](../../csharp/language-reference/keywords/struct.md).
 - Empty segments:
-  - Are valid within a `ReadOnlySequence<T>`
-  - Can appear when iterating using `ReadOnlySequence<T>.TryGet` 
-  - Can appear slicing the sequence using `ReadOnlySequence<T>.Slice()` with `SequencePosition`(s).
+  - Are valid within a `ReadOnlySequence<T>`.
+  - Can appear when iterating using the `ReadOnlySequence<T>.TryGet` method.
+  - Can appear slicing the sequence using the `ReadOnlySequence<T>.Slice()` method with `SequencePosition` objects.
 
 ## SequenceReader\<T\>
 
@@ -183,6 +183,6 @@ The following example parses a 4-byte big-endian integer length from the start o
 
 ### SequenceReader\<T\> problem areas
 
-- `SequenceReader<T>` is a mutable struct, it should always be passed by [reference](../../csharp/language-reference/keywords/ref.md).
+- Because `SequenceReader<T>` is a mutable struct, it should always be passed by [reference](../../csharp/language-reference/keywords/ref.md).
 - `SequenceReader<T>` is a [ref struct](../../csharp/language-reference/keywords/ref.md#ref-struct-types) so it can only be used in synchronous methods and can't be stored in fields. For more information, see [Write safe and efficient C# code](../../csharp/write-safe-efficient-code.md).
 - `SequenceReader<T>` is optimized for use as a forward-only reader. `Rewind` is intended for small backups that can't be addressed utilizing other `Read`, `Peek`, and `IsNext` APIs.

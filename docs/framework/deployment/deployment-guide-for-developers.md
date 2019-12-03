@@ -45,7 +45,7 @@ For download links, see the section [Redistributable Packages](#redistributable-
 
 - You must have administrator privileges to install .NET Framework 4.5 and its point releases.
 
-- .NET Framework 4.5 is included in Windows 8 and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in [!INCLUDE[win81](../../../includes/win81-md.md)] and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update.  .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update. For a full list of hardware and software requirements, see [System Requirements](../get-started/system-requirements.md).
+- .NET Framework 4.5 is included in Windows 8 and [!INCLUDE[winserver8](../../../includes/winserver8-md.md)], so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in Windows 8.1 and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update.  .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update. For a full list of hardware and software requirements, see [System Requirements](../get-started/system-requirements.md).
 
 - Starting with .NET Framework 4.5, your users can view a list of running .NET Framework apps during setup and close them easily. This may help avoid system restarts caused by .NET Framework installations. See [Reducing System Restarts](reducing-system-restarts.md).
 
@@ -270,7 +270,7 @@ The .NET Framework installer writes registry keys when installation is successfu
 |.NET Framework 4.6 installed on Windows 10|393295|
 |.NET Framework 4.6 installed on all OS versions other than Windows 10|393297|
 |.NET Framework 4.5.2|379893|
-|.NET Framework 4.5.1 installed with [!INCLUDE[win81](../../../includes/win81-md.md)] or Windows Server 2012 R2|378675|
+|.NET Framework 4.5.1 installed with Windows 8.1 or Windows Server 2012 R2|378675|
 |.NET Framework 4.5.1 installed on Windows 8, Windows 7|378758|
 |.NET Framework 4.5|378389|
 

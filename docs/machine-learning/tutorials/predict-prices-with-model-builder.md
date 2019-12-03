@@ -3,7 +3,7 @@ title: 'Tutorial: Predict prices using regression with Model Builder'
 description: This tutorial illustrates how to build a regression model using ML.NET Model Builder to predict prices, specifically, New York City taxi fares.
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 10/08/2019
+ms.date: 11/21/2019
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to predict prices using Model Builder.
@@ -34,7 +34,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
 
 ## Create a console application
 
-1. Create a **.NET Core Console Application** called "TaxiFarePrediction".
+1. Create a **C# .NET Core Console Application** called "TaxiFarePrediction". Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
 
 ## Prepare and understand the data
 

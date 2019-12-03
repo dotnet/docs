@@ -1,9 +1,9 @@
 ---
-title: Evaluate breaking changes - .NET Core
-description: Learn about the ways in which .NET Core attempts to maintain compatibility for developers across .NET versions.
+title: Types of breaking changes - .NET Core
+description: Learn how .NET Core attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
 ms.date: 06/10/2019
 ---
-# Evaluate breaking changes in .NET Core
+# Changes that affect compatibility
 
 Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true for .NET Core. Although .NET Core can be considered as a new technology that is independent of the .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
 
@@ -13,19 +13,19 @@ Throughout its history, .NET has attempted to maintain a high level of compatibi
 
 Along with compatibility across .NET implementations, developers expect a high level of compatibility across .NET Core versions. In particular, code written for an earlier version of .NET Core should run seamlessly on a later version of .NET Core. In fact, many developers expect that the new APIs found in newly released versions of .NET Core should also be compatible with the pre-release versions in which those APIs were introduced.
 
-This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who are opening pull requests in the [dotnet/corefx](https://github.com/dotnet/corefx) GitHub repository that modify the behavior of existing APIs.
+This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who open pull requests in the [dotnet/corefx](https://github.com/dotnet/corefx) GitHub repository that modify the behavior of existing APIs.
 
 > [!NOTE]
 > For a definition of compatibility categories, such as binary compatibility and backward compatibility, see [Breaking change categories](categories.md).
 
-The following sections describes the categories of changes made to .NET Core APIs and their impact on application compatibility. The ✔️ icon indicates that a particular kind of change is allowed, ❌ indicates that it is disallowed, and  ❓ indicates a change that may or may not be allowed. Changes in this last category require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was.
+The following sections describes the categories of changes made to .NET Core APIs and their impact on application compatibility. The ✔️ icon indicates that a particular kind of change is allowed, ❌ indicates that it is disallowed, and  ❓ indicates a change that may or may not be allowed. Changes in this last category require judgement and an evaluation of how predictable, obvious, and consistent the previous behavior was.
 
 > [!NOTE]
 > In addition to serving as a guide to how changes to .NET Core libraries are evaluated, library developers can also use these criteria to evaluate changes to their libraries that target multiple .NET implementations and versions.
 
 ## Modifications to the public contract
 
-Changes in this category *modify* the public surface area of a type. Most of the changes in this category are disallowed since they violate *backwards compatibility* (the ability of an application that was developed with a previous version of an API to execute without recompilation on a later version).
+Changes in this category modify the public surface area of a type. Most of the changes in this category are disallowed since they violate *backwards compatibility* (the ability of an application that was developed with a previous version of an API to execute without recompilation on a later version).
 
 ### Types
 

@@ -24,12 +24,12 @@ The information stored in a type can include the following:
   
 - The kinds of operations that are permitted.  
   
-The compiler uses type information to make sure that all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [int](language-reference/builtin-types/integral-numeric-types.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [bool](language-reference/keywords/bool.md), the compiler generates an error, as shown in the following example:  
+The compiler uses type information to make sure that all operations that are performed in your code are *type safe*. For example, if you declare a variable of type [int](language-reference/builtin-types/integral-numeric-types.md), the compiler allows you to use the variable in addition and subtraction operations. If you try to perform those same operations on a variable of type [bool](language-reference/builtin-types/bool.md), the compiler generates an error, as shown in the following example:  
   
 [!code-csharp[Type Safety](../../samples/snippets/csharp/concepts/basic-types/type-safety.cs)]  
   
 > [!NOTE]  
-> C and C++ developers, notice that in C#, [bool](language-reference/keywords/bool.md) is not convertible to [int](language-reference/builtin-types/integral-numeric-types.md).  
+> C and C++ developers, notice that in C#, [bool](language-reference/builtin-types/bool.md) is not convertible to [int](language-reference/builtin-types/integral-numeric-types.md).  
   
 The compiler embeds the type information into the executable file as metadata. The common language runtime (CLR) uses that metadata at run time to further guarantee type safety when it allocates and reclaims memory.  
 
@@ -43,7 +43,7 @@ The types of method parameters and return values are specified in the method sig
   
 [!code-csharp[Method Signature](../../samples/snippets/csharp/concepts/basic-types/method-signature.cs)]  
   
-After a variable is declared, it cannot be re-declared with a new type, and it cannot be assigned a value that is not compatible with its declared type. For example, you cannot declare an [int](language-reference/builtin-types/integral-numeric-types.md) and then assign it a Boolean value of [true](language-reference/keywords/true-literal.md). However, values can be converted to other types, for example when they are assigned to new variables or passed as method arguments. A *type conversion* that does not cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code.
+After a variable is declared, it cannot be re-declared with a new type, and it cannot be assigned a value that is not compatible with its declared type. For example, you cannot declare an [int](language-reference/builtin-types/integral-numeric-types.md) and then assign it a Boolean value of `true`. However, values can be converted to other types, for example when they are assigned to new variables or passed as method arguments. A *type conversion* that does not cause data loss is performed automatically by the compiler. A conversion that might cause data loss requires a *cast* in the source code.
 
 For more information, see [Casting and type conversions](programming-guide/types/casting-and-type-conversions.md).
 

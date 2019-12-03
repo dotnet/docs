@@ -35,7 +35,7 @@ More information on unit testing in .NET Core projects:
 .NET Core unit test projects are supported for:
 
 - [C#](../../csharp/index.yml)
-- [F#](../../fsharp/index.md)
+- [F#](../../fsharp/index.yml)
 - [Visual Basic](../../visual-basic/index.md) 
 
 You can also choose between:

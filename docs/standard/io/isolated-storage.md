@@ -114,7 +114,7 @@ Sometimes it is helpful to verify a change to isolated storage by using the file
 |Windows 2000, Windows XP, Windows Server 2003  (upgrade from Windows NT 4.0)|Roaming-enabled stores =<br /><br /> \<SYSTEMROOT>\Profiles\\<user\>\Application Data<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMROOT>\Profiles\\<user\>\Local Settings\Application Data|
 |Windows 2000  - clean installation (and upgrades from Windows 98 and Windows NT 3.51)|Roaming-enabled stores =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Application Data<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Local Settings\Application Data|
 |Windows XP, Windows Server 2003 - clean installation (and upgrades from Windows 2000 and Windows 98)|Roaming-enabled stores =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Application Data<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMDRIVE>\Documents and Settings\\<user\>\Local Settings\Application Data|
-|[!INCLUDE[win8](../../../includes/win8-md.md)], Windows 7, Windows Server 2008, Windows Vista|Roaming-enabled stores =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Roaming<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Local|
+|Windows 8, Windows 7, Windows Server 2008, Windows Vista|Roaming-enabled stores =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Roaming<br /><br /> Nonroaming stores =<br /><br /> \<SYSTEMDRIVE>\Users\\<user\>\AppData\Local|
 
 <a name="isolated_storage_tasks"></a>
 

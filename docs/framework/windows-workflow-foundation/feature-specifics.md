@@ -92,9 +92,9 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 - [A Developer's Guide to WCF 4.0](https://docs.microsoft.com/previous-versions/dotnet/articles/ee354381(v=msdn.10))
 
-- [Configuration Channel Factory](https://docs.microsoft.com/dotnet/api/system.servicemodel.configuration.configurationchannelfactory-1&view=netframework-4.8)
+- [Configuration Channel Factory](xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601)
 
-- [Standard Endpoint Element](https://docs.microsoft.com/dotnet/api/system.servicemodel.configuration.standardendpointelement&view=netframework-4.8)
+- [Standard Endpoint Element](xref:System.ServiceModel.Configuration.StandardEndpointElement)
 
 - [Service configuration improvements in .NET Framework 4](https://blogs.msdn.microsoft.com/endpoint/2009/06/30/service-configuration-improvements-in-net-4/)
 
@@ -120,7 +120,7 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 ### Getting Started
 
-- [Data Contract Resolver API documentation](https://docs.microsoft.com/dotnet/api/system.runtime.serialization.datacontractresolver&view=netframework-4.8)
+- [Data Contract Resolver API documentation](xref:System.Runtime.Serialization.DataContractResolver)
 
 - [Introducing the Data Contract Resolver](https://blogs.msdn.microsoft.com/youssefm/2009/06/05/configuring-known-types-dynamically-introducing-the-datacontractresolver/)
 

@@ -165,7 +165,7 @@ There are built-in methods for dealing with processing both binary and delimited
 
 The `CurrentSpan` exposes the current segment's `Span`, which is similar to what was done in the method manually.
 
-### Position
+### Use position
 
 The following code is an example implementation of `FindIndexOf` using the `SequenceReader<T>`:
 

@@ -117,8 +117,8 @@ the converter successfully parses the data using <xref:System.DateTime.Parse(Sys
 
 If you want to write a custom <xref:System.DateTime> or <xref:System.DateTimeOffset> text representation with <xref:System.Text.Json.Utf8JsonWriter>,
 you can format your custom representation to a <xref:System.String>, `ReadOnlySpan<Byte>`, `ReadOnlySpan<Char>`, or <xref:System.Text.Json.JsonEncodedText>,
-then pass it to the corresponding <xref:system.text.json.utf8jsonwriter.writestringvalue?displayProperty=nameWithType>
-or <xref:system.text.json.utf8jsonwriter.writestring?displayProperty=nameWithType> method.
+then pass it to the corresponding <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A?displayProperty=nameWithType>
+or <xref:System.Text.Json.Utf8JsonWriter.WriteString%2A?displayProperty=nameWithType> method.
 
 The following example shows how a custom <xref:System.DateTime> format can be created with <xref:System.DateTime.ToString(System.String,System.IFormatProvider)>,
 then written with the <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue(System.String)> method:

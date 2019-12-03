@@ -1,5 +1,5 @@
 ---
-title: "Accessing XML in Visual Basic"
+title: "Accessing XML"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "LINQ to XML [Visual Basic], accessing XML"

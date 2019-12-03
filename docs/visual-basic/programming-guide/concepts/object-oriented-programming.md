@@ -1,5 +1,5 @@
 ---
-title: "Object-oriented programming (Visual Basic)"
+title: "Object-oriented programming"
 ms.date: 07/20/2015
 ms.assetid: 49794de4-64c3-473c-b8ed-fe98835df69c
 ---

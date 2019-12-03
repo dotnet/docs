@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Descendants with a Specific Element Name (Visual Basic)"
+title: "How to: Find Descendants with a Specific Element Name"
 ms.date: 07/20/2015
 ms.assetid: 78915518-0d25-4051-ab55-929779989510
 ---

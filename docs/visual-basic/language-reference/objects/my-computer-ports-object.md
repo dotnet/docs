@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Ports Object (Visual Basic)"
+title: "My.Computer.Ports Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Ports object"

@@ -37,7 +37,7 @@ XML documentation comments use triple forward slashes (`///`) and an XML formatt
 
 ## Walkthrough
 
-Let's walk through documenting a very basic math library to make it easy for new developers to understand/contribute and for third party developers to use.
+Let's walk through documenting a very basic math library to make it easy for new developers to understand/contribute and for third-party developers to use.
 
 Here's code for the simple math library:
 
@@ -45,7 +45,7 @@ Here's code for the simple math library:
 
 The sample library supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` data types.
 
-Now you want to be able to create an API reference document from your code for third party developers who use your library but don't have access to the source code.
+Now you want to be able to create an API reference document from your code for third-party developers who use your library but don't have access to the source code.
 As mentioned earlier XML documentation tags can be used to achieve this. You will now be introduced to the standard XML tags the C# compiler supports.
 
 ## \<summary>
@@ -53,7 +53,7 @@ As mentioned earlier XML documentation tags can be used to achieve this. You wil
 The `<summary>` tag adds brief information about a type or member.
 I'll demonstrate its use by adding it to the `Math` class definition and the first `Add` method. Feel free to apply it to the rest of your code.
 
-[!code-csharp[Summary Tag](../../samples/snippets/csharp/concepts/codedoc/summary-tag.cs)]
+[!code-csharp[Summary Tag](~/samples/snippets/csharp/concepts/codedoc/summary-tag.cs)]
 
 The `<summary>` tag is very important, and we recommend that you include it because its content is the primary source of type or member information in IntelliSense or an API reference document.
 
@@ -61,28 +61,28 @@ The `<summary>` tag is very important, and we recommend that you include it beca
 
 The `<remarks>` tag supplements the information about types or members that the `<summary>` tag provides. In this example, you'll just add it to the class.
 
-[!code-csharp[Remarks Tag](../../samples/snippets/csharp/concepts/codedoc/remarks-tag.cs)]
+[!code-csharp[Remarks Tag](~/samples/snippets/csharp/concepts/codedoc/remarks-tag.cs)]
 
 ## \<returns>
 
 The `<returns>` tag describes the return value of a method declaration.
 As before, the following example illustrates the `<returns>` tag on the first `Add` method. You can do the same on other methods.
 
-[!code-csharp[Returns Tag](../../samples/snippets/csharp/concepts/codedoc/returns-tag.cs)]
+[!code-csharp[Returns Tag](~/samples/snippets/csharp/concepts/codedoc/returns-tag.cs)]
 
 ## \<value>
 
 The `<value>` tag is similar to the `<returns>` tag, except that you use it for properties.
 Assuming your `Math` library had a static property called `PI`, here's how you'd use this tag:
 
-[!code-csharp[Value Tag](../../samples/snippets/csharp/concepts/codedoc/value-tag.cs)]
+[!code-csharp[Value Tag](~/samples/snippets/csharp/concepts/codedoc/value-tag.cs)]
 
 ## \<example>
 
 You use the `<example>` tag to include an example in your XML documentation.
 This involves using the child `<code>` tag.
 
-[!code-csharp[Example Tag](../../samples/snippets/csharp/concepts/codedoc/example-tag.cs)]
+[!code-csharp[Example Tag](~/samples/snippets/csharp/concepts/codedoc/example-tag.cs)]
 
 The `code` tag preserves line breaks and indentation for longer examples.
 
@@ -91,7 +91,7 @@ The `code` tag preserves line breaks and indentation for longer examples.
 You use the `<para>` tag to format the content within its parent tag. `<para>` is usually used inside a tag, such as `<remarks>` or `<returns>`, to divide text into paragraphs.
 You can format the contents of the `<remarks>` tag for your class definition.
 
-[!code-csharp[Para Tag](../../samples/snippets/csharp/concepts/codedoc/para-tag.cs)]
+[!code-csharp[Para Tag](~/samples/snippets/csharp/concepts/codedoc/para-tag.cs)]
 
 ## \<c>
 
@@ -99,7 +99,7 @@ Still on the topic of formatting, you use the `<c>` tag for marking part of text
 It's like the `<code>` tag but inline. It's useful when you want to show a quick code example as part of a tag's content.
 Let's update the documentation for the `Math` class.
 
-[!code-csharp[C Tag](../../samples/snippets/csharp/concepts/codedoc/c-tag.cs)]
+[!code-csharp[C Tag](~/samples/snippets/csharp/concepts/codedoc/c-tag.cs)]
 
 ## \<exception>
 
@@ -107,7 +107,7 @@ By using the `<exception>` tag, you let your developers know that a method can t
 Looking at your `Math` library, you can see that both `Add` methods throw an exception if a certain condition is met. Not so obvious, though,
 is that integer `Divide` method throws as well if the `b` parameter is zero. Now add exception documentation to this method.
 
-[!code-csharp[Exception Tag](../../samples/snippets/csharp/concepts/codedoc/exception-tag.cs)]
+[!code-csharp[Exception Tag](~/samples/snippets/csharp/concepts/codedoc/exception-tag.cs)]
 
 The `cref` attribute represents a reference to an exception that is available from the current compilation environment.
 This can be any type defined in the project or a referenced assembly. The compiler will issue a warning if its value cannot be resolved.
@@ -116,7 +116,7 @@ This can be any type defined in the project or a referenced assembly. The compil
 
 The `<see>` tag lets you create a clickable link to a documentation page for another code element. In our next example, we'll create a clickable link between the two `Add` methods.
 
-[!code-csharp[See Tag](../../samples/snippets/csharp/concepts/codedoc/see-tag.cs)]
+[!code-csharp[See Tag](~/samples/snippets/csharp/concepts/codedoc/see-tag.cs)]
 
 The `cref` is a **required** attribute that represents a reference to a type or its member that is available from the current compilation environment.
 This can be any type defined in the project or a referenced assembly.
@@ -125,7 +125,7 @@ This can be any type defined in the project or a referenced assembly.
 
 You use the `<seealso>` tag in the same way you do the `<see>` tag. The only difference is that its content is typically placed in a "See Also" section. Here we'll add a `seealso` tag on the integer `Add` method to reference other methods in the class that accept integer parameters:
 
-[!code-csharp[Seealso Tag](../../samples/snippets/csharp/concepts/codedoc/seealso-tag.cs)]
+[!code-csharp[Seealso Tag](~/samples/snippets/csharp/concepts/codedoc/seealso-tag.cs)]
 
 The `cref` attribute represents a reference to a type or its member that is available from the current compilation environment.
 This can be any type defined in the project or a referenced assembly.
@@ -135,14 +135,14 @@ This can be any type defined in the project or a referenced assembly.
 You use the `<param>` tag to describe a method's parameters. Here's an example on the double `Add` method:
 The parameter the tag describes is specified in the **required** `name` attribute.
 
-[!code-csharp[Param Tag](../../samples/snippets/csharp/concepts/codedoc/param-tag.cs)]
+[!code-csharp[Param Tag](~/samples/snippets/csharp/concepts/codedoc/param-tag.cs)]
 
 ## \<typeparam>
 
 You use `<typeparam>` tag just like the `<param>` tag but for generic type or method declarations to describe a generic parameter.
 Add a quick generic method to your `Math` class to check if one quantity is greater than another.
 
-[!code-csharp[Typeparam Tag](../../samples/snippets/csharp/concepts/codedoc/typeparam-tag.cs)]
+[!code-csharp[Typeparam Tag](~/samples/snippets/csharp/concepts/codedoc/typeparam-tag.cs)]
 
 ## \<paramref>
 
@@ -150,21 +150,21 @@ Sometimes you might be in the middle of describing what a method does in what co
 to a parameter. The `<paramref>` tag is great for just this. Let's update the summary of our double based `Add` method. Like the `<param>` tag
 the parameter name is specified in the **required** `name` attribute.
 
-[!code-csharp[Paramref Tag](../../samples/snippets/csharp/concepts/codedoc/paramref-tag.cs)]
+[!code-csharp[Paramref Tag](~/samples/snippets/csharp/concepts/codedoc/paramref-tag.cs)]
 
 ## \<typeparamref>
 
 You use `<typeparamref>` tag just like the `<paramref>` tag but for generic type or method declarations to describe a generic parameter.
 You can use the same generic method you previously created.
 
-[!code-csharp[Typeparamref Tag](../../samples/snippets/csharp/concepts/codedoc/typeparamref-tag.cs)]
+[!code-csharp[Typeparamref Tag](~/samples/snippets/csharp/concepts/codedoc/typeparamref-tag.cs)]
 
 ## \<list>
 
 You use the `<list>` tag to format documentation information as an ordered list, unordered list or table.
 Make an unordered list of every math operation your `Math` library supports.
 
-[!code-csharp[List Tag](../../samples/snippets/csharp/concepts/codedoc/list-tag.cs)]
+[!code-csharp[List Tag](~/samples/snippets/csharp/concepts/codedoc/list-tag.cs)]
 
 You can make an ordered list or table by changing the `type` attribute to `number` or `table`, respectively.
 
@@ -172,7 +172,7 @@ You can make an ordered list or table by changing the `type` attribute to `numbe
 
 If you've followed this tutorial and applied the tags to your code where necessary, your code should now look similar to the following:
 
-[!code-csharp[Tagged Library](../../samples/snippets/csharp/concepts/codedoc/tagged-library.cs)]
+[!code-csharp[Tagged Library](~/samples/snippets/csharp/concepts/codedoc/tagged-library.cs)]
 
 From your code, you can generate a detailed documentation website complete with clickable cross-references. But you're faced with another problem: your code has become hard to read.
 There's so much information to sift through that this is going to be a nightmare for any developer who wants to contribute to this code.
@@ -184,12 +184,12 @@ The `<include>` tag lets you refer to comments in a separate XML file that descr
 
 Now you're going to move all your XML tags into a separate XML file named `docs.xml`. Feel free to name the file whatever you want.
 
-[!code-xml[Sample XML](../../samples/snippets/csharp/concepts/codedoc/include.xml)]
+[!code-xml[Sample XML](~/samples/snippets/csharp/concepts/codedoc/include.xml)]
 
 In the above XML, each member's documentation comments appear directly inside a tag named after what they do. You can choose your own strategy.
 Now that you have your XML comments in a separate file, let's see how your code can be made more readable by using the `<include>` tag:
 
-[!code-csharp[Include Tag](../../samples/snippets/csharp/concepts/codedoc/include-tag.cs)]
+[!code-csharp[Include Tag](~/samples/snippets/csharp/concepts/codedoc/include-tag.cs)]
 
 And there you have it: our code is back to being readable, and no documentation information has been lost.
 

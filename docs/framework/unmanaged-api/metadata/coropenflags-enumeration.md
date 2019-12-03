@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: e27a83b5-2698-4996-9032-1e0fed8b91ca
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorOpenFlags Enumeration
 Contains flag values that control metadata behavior upon opening manifest files.  

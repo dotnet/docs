@@ -1,5 +1,5 @@
 ---
-title: "Parameter Arrays (Visual Basic)"
+title: "Parameter Arrays"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "parameter arrays [Visual Basic], about parameter arrays"

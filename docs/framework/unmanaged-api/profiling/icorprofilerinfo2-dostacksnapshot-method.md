@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 287b11e9-7c52-4a13-ba97-751203fa97f4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::DoStackSnapshot Method
 Walks the managed frames on the stack for the specified thread, and sends information to the profiler through a callback.  

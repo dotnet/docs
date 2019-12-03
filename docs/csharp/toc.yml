@@ -1,8 +1,8 @@
-- name: C# Guide
-  href: index.md
+- name: C# documentation
+  href: index.yml
 - name: Get Started
   items:
-  - name: How to use this guide
+  - name: Overview
     href: getting-started/index.md
   - name: Introduction to the C# language and the .NET framework
     href: getting-started/introduction-to-the-csharp-language-and-the-net-framework.md
@@ -1001,7 +1001,7 @@
         href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
       - name: Auto-Implemented Properties
         href: programming-guide/classes-and-structs/auto-implemented-properties.md
-      - name: "How to هmplement a مightweight ؤlass with auto-implemented properties"
+      - name: "How to implement a lightweight class with auto-implemented properties"
         href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
     - name: Methods
       items:
@@ -1318,9 +1318,11 @@
         - name: Built-in numeric conversions
           href: language-reference/builtin-types/numeric-conversions.md
         - name: bool
-          href: language-reference/keywords/bool.md
+          href: language-reference/builtin-types/bool.md
+          displayName: "Boolean, true, false"
         - name: char
-          href: language-reference/keywords/char.md
+          href: language-reference/builtin-types/char.md
+          displayName: "Unicode, character, UTF-16"
         - name: enum
           href: language-reference/keywords/enum.md
         - name: struct
@@ -1510,10 +1512,8 @@
       items:
       - name: "null"
         href: language-reference/keywords/null.md
-      - name: "true"
-        href: language-reference/keywords/true-literal.md
-      - name: "false"
-        href: language-reference/keywords/false-literal.md
+      - name: "true and false"
+        href: language-reference/builtin-types/bool.md
       - name: default
         href: language-reference/keywords/default.md
     - name: Contextual Keywords

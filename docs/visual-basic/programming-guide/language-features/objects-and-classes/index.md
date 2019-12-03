@@ -1,5 +1,5 @@
 ---
-title: "Objects and classes in Visual Basic"
+title: "Objects and classes"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "classes [Visual Basic]"

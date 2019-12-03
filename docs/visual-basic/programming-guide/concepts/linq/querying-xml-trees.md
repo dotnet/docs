@@ -1,5 +1,5 @@
 ---
-title: "Querying XML Trees (Visual Basic)"
+title: "Querying XML Trees"
 ms.date: 07/20/2015
 ms.assetid: 2e35c1ab-08c8-4378-9ca8-8ff344756eda
 ---

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f165200e-3a91-47f7-88fc-13ff10c8babc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::SurvivingReferences Method
 Reports the layout of objects in the heap as a result of a non-compacting garbage collection.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c42baa79-f469-4330-95a2-baf7f021c2fc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COUNINITIEE Enumeration
 Specifies constants used by [CoUninitializeEE](../../../../docs/framework/unmanaged-api/hosting/couninitializeee-function.md) when initializing the common language runtime.  

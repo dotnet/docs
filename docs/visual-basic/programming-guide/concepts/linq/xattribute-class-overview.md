@@ -1,5 +1,5 @@
 ---
-title: "XAttribute Class Overview (Visual Basic)"
+title: "XAttribute Class Overview"
 ms.date: 07/20/2015
 ms.assetid: 7781580a-9583-4a1b-ae1e-91c5936eb0b1
 ---

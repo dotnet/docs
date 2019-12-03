@@ -1,5 +1,5 @@
 ---
-title: "String Data Type (Visual Basic)"
+title: "String Data Type"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.String"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Hierarchy Using Grouping (Visual Basic)"
+title: "How to: Create Hierarchy Using Grouping"
 ms.date: 07/20/2015
 ms.assetid: 4eb3ca6b-1aed-43de-b8b9-41c769c993f8
 ---

@@ -1,5 +1,5 @@
 ---
-title: "#Const Directive (Visual Basic)"
+title: "#Const Directive"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.#Const"

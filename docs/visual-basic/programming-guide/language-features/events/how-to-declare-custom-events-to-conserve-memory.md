@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare Custom Events To Conserve Memory (Visual Basic)"
+title: "How to: Declare Custom Events To Conserve Memory"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring events [Visual Basic], custom"

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 996c71ae-0676-4616-a085-84ebf507649d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::MovedReferences Method
 Called to report the new layout of objects in the heap as a result of a compacting garbage collection.  

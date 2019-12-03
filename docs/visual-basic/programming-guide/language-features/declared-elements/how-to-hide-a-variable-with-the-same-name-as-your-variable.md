@@ -1,5 +1,5 @@
 ---
-title: "How to: Hide a Variable with the Same Name as Your Variable (Visual Basic)"
+title: "How to: Hide a Variable with the Same Name as Your Variable"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "qualification [Visual Basic], of element names"

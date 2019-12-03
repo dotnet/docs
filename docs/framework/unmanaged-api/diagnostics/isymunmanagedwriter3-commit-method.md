@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f6961922-46ec-4d2c-8369-85f880731f37
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter3::Commit Method
 Commits the changes written so far to the stream.  

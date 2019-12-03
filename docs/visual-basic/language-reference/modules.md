@@ -1,5 +1,5 @@
 ---
-title: "Modules (Visual Basic)"
+title: "Modules"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "modules, Visual Basic"

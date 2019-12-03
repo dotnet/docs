@@ -1,5 +1,5 @@
 ---
-title: "Finding Text in Word Documents (Visual Basic)"
+title: "Finding Text in Word Documents"
 ms.date: 07/20/2015
 ms.assetid: eea9819b-a78a-4552-bf13-8837fc0e7a37
 ---

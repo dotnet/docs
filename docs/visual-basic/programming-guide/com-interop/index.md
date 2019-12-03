@@ -1,5 +1,5 @@
 ---
-title: "COM Interop (Visual Basic)"
+title: "COM Interop"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic code, COM interop"

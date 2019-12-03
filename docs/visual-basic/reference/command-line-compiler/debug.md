@@ -1,5 +1,5 @@
 ---
-title: "/debug (Visual Basic)"
+title: "/debug"
 ms.date: 03/10/2018
 helpviewer_keywords:
   - "debug compiler switches"

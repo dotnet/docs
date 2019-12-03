@@ -1,5 +1,5 @@
 ---
-title: "Lifetime in Visual Basic"
+title: "Lifetime"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "static variables [Visual Basic], lifetime"

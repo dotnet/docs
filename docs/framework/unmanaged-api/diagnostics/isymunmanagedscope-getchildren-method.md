@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0bed524e-cc48-4bf0-b9fa-25d665e63ddb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope::GetChildren Method
 Gets the children of this scope.  

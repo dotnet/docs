@@ -49,4 +49,4 @@ scl enable rh-dotnet30 bash
 
 ## See also
 
-- For more information on installing .NET Core 3.0 with RHEL, see [Using .NET Core 3.0 on Red Hat Enterprise Linux 7](https://access.redhat.com/documentation/en-us/net_core/3.0/html/getting_started_guide/gs_install_dotnet).
+- [Using .NET Core 3.0 on Red Hat Enterprise Linux 7](https://access.redhat.com/documentation/en-us/net_core/3.0/html/getting_started_guide/gs_install_dotnet)

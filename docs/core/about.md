@@ -34,7 +34,7 @@ This integration is provided, in part, by the contributors of the [OmniSharp](ht
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
 - Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/).
-- High-performance types, such as <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines](https://devblogs.microsoft.com/dotnet/system-io-pipelines-high-performance-io-in-net/).
+- High-performance types, such as <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines](../standard/io/pipelines.md).
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
 

@@ -150,7 +150,7 @@ To learn more about querying the `systemd` journal from the command line by usin
 
 When you're running a gRPC application in production, you should use a TLS certificate from a trusted certificate authority (CA). This CA might be a public CA, or an internal one for your organization.
 
-On Windows hosts, you can load the certificate from a secure [certificate store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) by using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). You can also use the `X509Store` class with the OpenSSL key store on some Linux hosts.
+On Windows hosts, you can load the certificate from a secure [certificate store](/windows/win32/seccrypto/managing-certificates-with-certificate-stores) by using the <xref:System.Security.Cryptography.X509Certificates.X509Store> class. You can also use the `X509Store` class with the OpenSSL key store on some Linux hosts.
 
 You can also create certificates by using one of the [X509Certificate2 constructors](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), from either:
 

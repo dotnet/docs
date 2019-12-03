@@ -1,6 +1,6 @@
 ---
 title: Globalization config settings
-description: Learn about run-time settings for configuring globalization aspects of an app, for example, how it parses Japanese dates.
+description: Learn about run-time settings that configure globalization aspects of a .NET Core app, for example, how it parses Japanese dates.
 ms.date: 11/27/2019
 ms.topic: reference
 ---
@@ -9,43 +9,43 @@ ms.topic: reference
 ## Invariant mode
 
 - Determines whether a .NET Core app runs in globalization invariant mode without access to culture-specific data and behavior or whether it has access to cultural data.
-- The default is to run the app with access to cultural data (value = `false`).
-- For more information, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md).
+- Default: Run the app with access to cultural data (`false`).
+- For more information, see [.NET Core globalization invariant mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md).
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `System.Globalization.Invariant` | `false` - access to cultural data<br/>`true` - no access to cultural data |
-| **Environment variable** |  |  |
+| **runtimeconfig.json** | `System.Globalization.Invariant` | `false` - access to cultural data<br/>`true` - run in invariant mode |
+| **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` | 0 - access to cultural data<br/>1 - run in invariant mode |
 
 ## Era year ranges
 
 - Determines whether range checks for calendars that support multiple eras are relaxed or whether dates that overflow an era's date range throw an <xref:System.ArgumentOutOfRangeException>.
-- The default value is that range check are relaxed (value = `false`).
+- Default: Range checks are relaxed (`false`).
 - For more information, see [Calendars, eras, and date ranges: Relaxed range checks](../../standard/datetime/working-with-calendars.md#calendars-eras-and-date-ranges-relaxed-range-checks).
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `Switch.System.Globalization.EnforceJapaneseEraYearRange` | `false` - relaxed range checks<br/>`true` - overflows cause an exception |
-| **Environment variable** |  |  |
+| **runtimeconfig.json** | `Switch.System.Globalization.EnforceJapaneseEraYearRanges` | `false` - relaxed range checks<br/>`true` - overflows cause an exception |
+| **Environment variable** | N/A | N/A |
 
 ## Japanese date parsing
 
 - Determines whether a string that contains either "1" or "Gannen" as the year parses successfully or whether only "1" is supported.
-- The default value is to parse strings that contain either "1" or "Gannen" as the year (value = `false`).
+- Default: Parse strings that contain either "1" or "Gannen" as the year (`false`).
 - For more information, see [Represent dates in calendars with multiple eras](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `Switch.System.Globalization.EnforceLegacyJapaneseDateParsing` | `false` - "Gannen" or "1" is supported<br/>`true` - only "1" is supported |
-| **Environment variable** |  |  |
+| **Environment variable** | N/A | N/A |
 
 ## Japanese year format
 
 - Determines whether the first year of a Japanese calendar era is formatted as "gannen" or as a number.
-- The default is to format the first year as "gannen" (value = `false`).
+- Default: Format the first year as "gannen" (`false`).
 - For more information, see [Represent dates in calendars with multiple eras](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | `false` - format as "gannen"<br/>`true` - format as number |
-| **Environment variable** |  |  |
+| **Environment variable** | N/A | N/A |

@@ -1,6 +1,6 @@
 ---
 title: Networking config settings
-description: Learn about run-time settings for configuring networking.
+description: Learn about run-time settings that configure networking for .NET Core apps.
 ms.date: 11/27/2019
 ms.topic: reference
 ---
@@ -9,7 +9,7 @@ ms.topic: reference
 ## HTTP/2 protocol
 
 - Configures whether support for the HTTP/2 protocol is enabled.
-- Disabled by default.
+- Default: Disabled (`false`).
 
 | | Setting name | Values | Introduced version |
 | - | - | - |
@@ -19,7 +19,7 @@ ms.topic: reference
 ## Sockets HTTP handler
 
 - Configures whether high-level networking APIs, such as <xref:System.Net.Http.HttpClient>, use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> or the implementation of <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> that's based on [libcurl](https://curl.haxx.se/libcurl/).
-- The default is to use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType>.
+- Default: Use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> (`true`).
 - You can configure this setting programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
 | | Setting name | Values |

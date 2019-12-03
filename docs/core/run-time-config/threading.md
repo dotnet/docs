@@ -1,6 +1,6 @@
 ---
 title: Threading config settings
-description: Learn about run-time settings for configuring threading.
+description: Learn about run-time settings that configure threading for .NET Core apps.
 ms.date: 11/27/2019
 ms.topic: reference
 ---
@@ -9,7 +9,7 @@ ms.topic: reference
 ## CPU groups
 
 - Configures whether threads are automatically distributed across CPU groups.
-- Disabled by default.
+- Default: Disabled (0).
 
 | | Setting name | Values |
 | - | - | - |

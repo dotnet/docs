@@ -1,6 +1,6 @@
 ---
 title: Garbage collector config settings
-description: Learn about run-time settings for configuring how the garbage collector manages memory.
+description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET Core apps.
 ms.date: 11/13/2019
 ms.topic: reference
 ---

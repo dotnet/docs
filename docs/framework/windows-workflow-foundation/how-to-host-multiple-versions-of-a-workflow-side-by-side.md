@@ -11,7 +11,7 @@ ms.assetid: 09c575df-e0a3-4f3b-9e01-a7ac59d65287
 `WorkflowIdentity` provides a way for workflow application developers to associate a name and a version with a workflow definition, and for this information to be associated with a persisted workflow instance. This identity information can be used by workflow application developers to enable scenarios such as side-by-side execution of multiple versions of a workflow definition, and provides the cornerstone for other functionality such as dynamic update. This step in the tutorial demonstrates how to use `WorkflowIdentity` to host multiple versions of a workflow at the same time.
 
 > [!NOTE]
-> To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://docs.microsoft.com/samples/browse/-samples).
+> To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
 
 ## In this topic
 

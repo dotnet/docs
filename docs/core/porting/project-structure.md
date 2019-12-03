@@ -18,12 +18,12 @@ Learn how to create a solution that compiles for both .NET Framework and .NET Co
   - Allows you to write code for a specific .NET Framework version in your libraries through the use of compiler directives.
 
   *Unsupported scenarios:*
-  - Requires developers to use Visual Studio 2017 to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
+  - Requires developers to use Visual Studio 2017 os later versions to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
 
 - <a name="support-vs"></a>[**Keep existing projects and new .NET Core projects separate**](#keep-existing-projects-and-create-a-net-core-project)
 
   *What this is good for:*
-  - Continuing to support development on existing projects without having to upgrade for developers/contributors who may not have Visual Studio 2017.
+  - Continuing to support development on existing projects without having to upgrade for developers/contributors who may not have Visual Studio 2017 or later versions.
   - Decreasing the possibility of creating new bugs in existing projects because no code churn is required in those projects.
 
 ## Example

@@ -2125,5 +2125,6 @@ The Portable Class Library project in Visual Studio 2012 (and later versions) en
 - [The .NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md)
 - [What's new in accessibility in the .NET Framework](whats-new-in-accessibility.md)
 - [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017)
+- [What's New in Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019)
 - [ASP.NET](/aspnet)
 - [What's New for C++ in Visual Studio](/cpp/what-s-new-for-visual-cpp-in-visual-studio)

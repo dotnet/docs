@@ -9,14 +9,14 @@ helpviewer_keywords:
   - "<specifiedPickupDirectory> element"
 ms.assetid: 0121f49d-bff2-4bc6-af06-f1628dcd61f1
 ---
-# \<specifiedPickupDirectory> Element (Network Settings)
+# :::no-loc text="\<specifiedPickupDirectory>"::: Element (Network Settings)
 Configures the local directory for a Simple Mail Transport Protocol (SMTP) server.  
   
-[**\<configuration>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<mailSettings>**](mailsettings-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<smtp>**](smtp-element-network-settings.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<specifiedPickupDirectory>**  
+[**:::no-loc text="\<configuration>":::**](../configuration-element.md)\
+&nbsp;&nbsp;[**:::no-loc text="\<system.net>":::**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**:::no-loc text="\<mailSettings>":::**](mailsettings-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**:::no-loc text="\<smtp>":::**](smtp-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**:::no-loc text="\<specifiedPickupDirectory>":::**  
   
 ## Syntax  
   
@@ -42,7 +42,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<smtp> Element (Network Settings)](smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
+|[":::\<smtp>"::: Element (Network Settings)](smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
   
 ## Remarks  
  The `specifiedPickupDirectory` attribute sets the directory where applications save mail messages to be processed by the SMTP server.  

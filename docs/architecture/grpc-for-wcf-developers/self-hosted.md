@@ -46,7 +46,7 @@ To publish a framework-dependent build, omit the `-r` flag.
 dotnet publish -c Release -o ./publish
 ```
 
-Copy the complete contents of the `publish` directory to an installation folder. Then, use the [sc tool](https://docs.microsoft.com/windows/desktop/services/controlling-a-service-using-sc) to create a Windows service for the executable file.
+Copy the complete contents of the `publish` directory to an installation folder. Then, use the [sc tool](/windows/desktop/services/controlling-a-service-using-sc) to create a Windows service for the executable file.
 
 ```console
 sc create MyService binPath=C:\MyService\MyService.exe

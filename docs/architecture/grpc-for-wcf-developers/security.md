@@ -9,7 +9,7 @@ ms.date: 09/02/2019
 In any real-world scenario, securing applications and services is essential. Security covers three key areas: 
 
 * Encrypting network traffic to prevent malicious hackers from intercepting it.
-* Authenticating clients and servers to establish identity and trust
+* Authenticating clients and servers to establish identity and trust.
 * Authorizing clients to control access to systems and apply permissions based on identity
 
 > [!NOTE]

@@ -121,9 +121,9 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 #### Arguments
 
-`VERSION`
+* **`VERSION`**
 
-The specified version to uninstall. You may list several versions one after the other, separated by spaces. Response files are also supported.
+  The specified version to uninstall. You may list several versions one after the other, separated by spaces. Response files are also supported.
 
   > [!TIP]
   > Response files are an alternative to placing all the versions on the command line.
@@ -302,9 +302,9 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 #### Arguments
 
-`VERSION`
+* **`VERSION`**
 
-The specified version to uninstall. You may list several versions one after the other, separated by spaces. Response files are also supported.
+  The specified version to uninstall. You may list several versions one after the other, separated by spaces. Response files are also supported.
 
   > [!TIP]
   > Response files are an alternative to placing all the versions on the command line.
@@ -495,7 +495,7 @@ Notes:
   2.1.700
   ```
 
-## Step 4 - Delete the NuGet fallback folder (optional)
+### Step 4 - Delete the NuGet fallback folder (optional)
 
 In some cases, you no longer need the `NuGetFallbackFolder` and may wish to delete it. For more information about deleting this folder, see [Remove the NuGetFallbackFolder](../versions/remove-runtime-sdk-versions.md#remove-the-nuget-fallback-folder).
 

@@ -40,7 +40,7 @@ Choosing a service mesh depends on multiple factors:
 
 - The organization's specific requirements around costs, compliance, paid support plans, and so on.
 - The nature of the cluster, its size, the number of services deployed, and the volume of traffic within the cluster network.
-- Ease of deploying and managing the mesh and using it with services
+- Ease of deploying and managing the mesh and using it with services.
 
 ## Example: Add Linkerd to a deployment
 

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b064497c-d956-46b8-838d-7a0223c7e200
 ---
 # Network Isolation for Windows Store Apps
-Classes in the <xref:System.Net>,  <xref:System.Net.Http>, and <xref:System.Net.Http.Headers> namespaces can be used to develop Windows Store  apps  or desktop apps. When used in a Windows Store app, classes in these namespaces are affected by network isolation, part of the application security model used by the [!INCLUDE[win8](../../../includes/win8-md.md)]. The appropriate network capabilities must be enabled in the app manifest for a Windows Store app for the system to allow network access.  
+Classes in the <xref:System.Net>,  <xref:System.Net.Http>, and <xref:System.Net.Http.Headers> namespaces can be used to develop Windows Store  apps  or desktop apps. When used in a Windows Store app, classes in these namespaces are affected by network isolation, part of the application security model used by the Windows 8. The appropriate network capabilities must be enabled in the app manifest for a Windows Store app for the system to allow network access.  
   
 ## Checklist for Network Isolation  
  Use this checklist to be sure that network isolation is configured for your Windows Store app.  

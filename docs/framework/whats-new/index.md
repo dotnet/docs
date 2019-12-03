@@ -1922,9 +1922,9 @@ For new features in ASP.NET 4.5.1, see [ASP.NET and Web Tools for Visual Studio 
 
 - Ability to customize a reflection context to override default reflection behavior through the <xref:System.Reflection.Context.CustomReflectionContext> class.
 
-- Support for the 2008 version of the Internationalized Domain Names in Applications (IDNA) standard when the <xref:System.Globalization.IdnMapping?displayProperty=nameWithType> class is used  on [!INCLUDE[win8](../../../includes/win8-md.md)].
+- Support for the 2008 version of the Internationalized Domain Names in Applications (IDNA) standard when the <xref:System.Globalization.IdnMapping?displayProperty=nameWithType> class is used  on Windows 8.
 
-- Delegation of string comparison to the operating system, which implements Unicode 6.0, when the .NET Framework is used on [!INCLUDE[win8](../../../includes/win8-md.md)]. When running on other platforms, the .NET Framework includes its own string comparison data, which implements Unicode 5.x. See the <xref:System.String> class and the Remarks section of the <xref:System.Globalization.SortVersion> class.
+- Delegation of string comparison to the operating system, which implements Unicode 6.0, when the .NET Framework is used on Windows 8. When running on other platforms, the .NET Framework includes its own string comparison data, which implements Unicode 5.x. See the <xref:System.String> class and the Remarks section of the <xref:System.Globalization.SortVersion> class.
 
 - Ability to compute the hash codes for strings on a per application domain basis. See [\<UseRandomizedStringHashAlgorithm> Element](../configure-apps/file-schema/runtime/userandomizedstringhashalgorithm-element.md).
 

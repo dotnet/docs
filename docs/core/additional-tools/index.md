@@ -26,6 +26,6 @@ On the .NET Framework, you can pre-generate a serialization assembly using the s
 
 Like the [Xml Serializer Generator (sgen.exe)](../../standard/serialization/xml-serializer-generator-tool-sgen-exe.md) for the .NET Framework, the [Microsoft.XmlSerializer.Generator NuGet package](https://www.nuget.org/packages/Microsoft.XmlSerializer.Generator) is the solution for .NET Core and .NET Standard libraries. It creates an XML serialization assembly for types contained in an assembly to improve the startup performance of XML serialization when serializing or de-serializing objects of those types using <xref:System.Xml.Serialization.XmlSerializer>.
 
-## [.NET Core Uninstall Tool](dotnet-core-uninstall.md)
+## [.NET Core Uninstall Tool](uninstall-tool.md)
 
 The [.NET Core Uninstall Tool](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) (`dotnet-core-uninstall`) lets you clean-up .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled.

@@ -10,7 +10,7 @@ In any real-world scenario, securing applications and services is essential. Sec
 
 * Encrypting network traffic to prevent malicious hackers from intercepting it.
 * Authenticating clients and servers to establish identity and trust.
-* Authorizing clients to control access to systems and apply permissions based on identity
+* Authorizing clients to control access to systems and apply permissions based on identity.
 
 > [!NOTE]
 > *Authentication* is concerned with establishing the identity of a client or server. *Authorization* is concerned with determining whether a client has permission to access a resource or issue a command.

@@ -32,7 +32,7 @@ Now publish your application by using one of these methods:
 * From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.
 * From the .NET Core CLI.
 
-When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, see the [.NET Core application deployment](https://docs.microsoft.com/dotnet/core/deploying/) documentation.
+When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, see the [.NET Core application deployment](../../core/deploying/index.md) documentation.
 
 To publish a self-contained build of the application that does not require the .NET Core 3.0 runtime to be installed on the host, specify the runtime to be included with the application. Use the `-r` (or `--runtime`) flag.
 

@@ -121,6 +121,7 @@ let main argv =
     argv
     |> Array.map printTotalFileBytes
     |> Async.Sequential
+    |> Async.Ignore
     |> Async.RunSynchronously
     |> ignore
 ```

@@ -55,7 +55,7 @@ DynamicUpdateServices.PrepareForUpdate(ab);
 ```
 
 > [!NOTE]
-> To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).
+> To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://docs.microsoft.com/samples/browse/-samples).
 
 ### <a name="Update"></a> Update the workflow definition to reflect the desired changes
 
@@ -193,4 +193,4 @@ wfApp.Load(InstanceId);
 ```
 
 > [!NOTE]
-> To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://go.microsoft.com/fwlink/?LinkId=227905).
+> To download the sample code that accompanies this topic, see [Dynamic Update sample code](https://docs.microsoft.com/samples/browse/-samples).

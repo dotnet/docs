@@ -14,7 +14,7 @@ Enables the use of local type inference in variable declarations.
   
 ## Syntax  
   
-```  
+```console  
 -optioninfer[+ | -]  
 ```  
   
@@ -25,7 +25,7 @@ Enables the use of local type inference in variable declarations.
 |`+` &#124; `-`|Optional. Specify `-optioninfer+` to enable local type inference, or `-optioninfer-` to block it. The `-optioninfer` option, with no value specified, is the same as `-optioninfer+`. The default value when the `-optioninfer` switch is not present is also `-optioninfer+`. The default value is set in the Vbc.rsp response file.|  
   
 > [!NOTE]
->  You can use the `-noconfig` option to retain the compiler's internal defaults instead of those specified in vbc.rsp. The compiler default for this option is `-optioninfer-`.  
+> You can use the `-noconfig` option to retain the compiler's internal defaults instead of those specified in vbc.rsp. The compiler default for this option is `-optioninfer-`.  
   
 ## Remarks  
  If the source code file contains an [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md), the statement overrides the `-optioninfer` command-line compiler setting.  
@@ -54,5 +54,5 @@ vbc -optioninfer+ test.vb
 - [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
 - [Visual Basic Defaults, Projects, Options Dialog Box](/visualstudio/ide/reference/visual-basic-defaults-projects-options-dialog-box)
 - [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
-- [/noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
+- [-noconfig](../../../visual-basic/reference/command-line-compiler/noconfig.md)
 - [Building from the Command Line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Find an Element with a Specific Child Element (Visual Basic)"
+title: "How to: Find an Element with a Specific Child Element"
 ms.date: 07/20/2015
 ms.assetid: b0d0a463-6a85-46c3-8453-ad25b0ecf93c
 ---
@@ -24,7 +24,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 0002  
 0006  
 ```  
@@ -32,7 +32,7 @@ Next
  Note that this example uses the [XML Child axis property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md), the [XML Attribute axis property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md), and the [XML Value property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md).  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
  This example uses the following XML document: [Sample XML File: Test Configuration in a Namespace](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace.md).  
   
@@ -55,7 +55,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 0002  
 0006  
 ```  

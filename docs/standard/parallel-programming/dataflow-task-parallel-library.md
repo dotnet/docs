@@ -9,34 +9,21 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library"
 ms.assetid: 643575d0-d26d-4c35-8de7-a9c403e97dd6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Dataflow (Task Parallel Library)
-<a name="top"></a> The Task Parallel Library (TPL) provides dataflow components to help increase the robustness of concurrency-enabled applications. These dataflow components are collectively referred to as the *TPL Dataflow Library*. This dataflow model promotes actor-based programming by providing in-process message passing for coarse-grained dataflow and pipelining tasks. The dataflow components build on the types and scheduling infrastructure of the TPL and integrate with the C#, Visual Basic, and F# language support for asynchronous programming. These dataflow components are useful when you have multiple operations that must communicate with one another asynchronously or when you want to process data as it becomes available. For example, consider an application that processes image data from a web camera. By using the dataflow model, the application can process image frames as they become available. If the application enhances image frames, for example, by performing light correction or red-eye reduction, you can create a *pipeline* of dataflow components. Each stage of the pipeline might use more coarse-grained parallelism functionality, such as the functionality that is provided by the TPL, to transform the image.  
+The Task Parallel Library (TPL) provides dataflow components to help increase the robustness of concurrency-enabled applications. These dataflow components are collectively referred to as the *TPL Dataflow Library*. This dataflow model promotes actor-based programming by providing in-process message passing for coarse-grained dataflow and pipelining tasks. The dataflow components build on the types and scheduling infrastructure of the TPL and integrate with the C#, Visual Basic, and F# language support for asynchronous programming. These dataflow components are useful when you have multiple operations that must communicate with one another asynchronously or when you want to process data as it becomes available. For example, consider an application that processes image data from a web camera. By using the dataflow model, the application can process image frames as they become available. If the application enhances image frames, for example, by performing light correction or red-eye reduction, you can create a *pipeline* of dataflow components. Each stage of the pipeline might use more coarse-grained parallelism functionality, such as the functionality that is provided by the TPL, to transform the image.  
   
  This document provides an overview of the TPL Dataflow Library. It describes the programming model, the predefined dataflow block types, and how to configure dataflow blocks to meet the specific requirements of your applications.  
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
-  
- This document contains the following sections:  
-  
-- [Programming Model](#model)  
-  
-- [Predefined Dataflow Block Types](#predefined_types)  
-  
-- [Configuring Dataflow Block Behavior](#behavior)  
-  
-- [Custom Dataflow Blocks](#custom)  
-  
-<a name="model"></a>   
-## Programming Model  
+
+## Programming Model
  The TPL Dataflow Library provides a foundation for message passing and parallelizing CPU-intensive and I/O-intensive applications that have high throughput and low latency. It also gives you explicit control over how data is buffered and moves around the system. To better understand the dataflow programming model, consider an application that asynchronously loads images from disk and creates a composite of those images. Traditional programming models typically require that you use callbacks and synchronization objects, such as locks, to coordinate tasks and access to shared data. By using the dataflow programming model, you can create dataflow objects that process images as they are read from disk. Under the dataflow model, you declare how data is handled when it becomes available, and also any dependencies between data. Because the runtime manages dependencies between data, you can often avoid the requirement to synchronize access to shared data. In addition, because the runtime schedules work based on the asynchronous arrival of data, dataflow can improve responsiveness and throughput by efficiently managing the underlying threads. For an example that uses the dataflow programming model to implement image processing in a Windows Forms application, see [Walkthrough: Using Dataflow in a Windows Forms Application](../../../docs/standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md).  
   
 ### Sources and Targets  
  The TPL Dataflow Library consists of *dataflow blocks*, which are data structures that buffer and process data. The TPL defines three kinds of dataflow blocks: *source blocks*, *target blocks*, and *propagator blocks*. A source block acts as a source of data and can be read from. A target block acts as a receiver of data and can be written to. A propagator block acts as both a source block and a target block, and can be read from and written to. The TPL defines the <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601?displayProperty=nameWithType> interface to represent sources, <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601?displayProperty=nameWithType> to represent targets, and <xref:System.Threading.Tasks.Dataflow.IPropagatorBlock%602?displayProperty=nameWithType> to represent propagators. <xref:System.Threading.Tasks.Dataflow.IPropagatorBlock%602> inherits from both <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601>, and <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601>.  
   
- The TPL Dataflow Library provides several predefined dataflow block types that implement the <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601>, <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601>, and <xref:System.Threading.Tasks.Dataflow.IPropagatorBlock%602> interfaces. These dataflow block types are described in this document in the section [Predefined Dataflow Block Types](#predefined_types).  
+ The TPL Dataflow Library provides several predefined dataflow block types that implement the <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601>, <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601>, and <xref:System.Threading.Tasks.Dataflow.IPropagatorBlock%602> interfaces. These dataflow block types are described in this document in the section [Predefined Dataflow Block Types](#predefined-dataflow-block-types).  
   
 ### Connecting Blocks  
  You can connect dataflow blocks to form *pipelines*, which are linear sequences of dataflow blocks, or *networks*, which are graphs of dataflow blocks. A pipeline is one form of network. In a pipeline or network, sources asynchronously propagate data to targets as that data becomes available. The <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.LinkTo%2A?displayProperty=nameWithType> method links a source dataflow block to a target block. A source can be linked to zero or more targets; targets can be linked from zero or more sources. You can add or remove dataflow blocks to or from a pipeline or network concurrently. The predefined dataflow block types handle all thread-safety aspects of linking and unlinking.  
@@ -47,7 +34,7 @@ ms.author: "ronpet"
  When you call the <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601.LinkTo%2A?displayProperty=nameWithType> method to link a source to a target, you can supply a delegate that determines whether the target block accepts or rejects a message based on the value of that message. This filtering mechanism is a useful way to guarantee that a dataflow block receives only certain values. For most of the predefined dataflow block types, if a source block is connected to multiple target blocks, when a target block rejects a message, the source offers that message to the next target. The order in which a source offers messages to targets is defined by the source and can vary according to the type of the source. Most source block types stop offering a message after one target accepts that message. One exception to this rule is the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, which offers each message to all targets, even if some targets reject the message. For an example that uses filtering to process only certain messages, see [Walkthrough: Using Dataflow in a Windows Forms Application](../../../docs/standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md).  
   
 > [!IMPORTANT]
->  Because each predefined source dataflow block type guarantees that messages are propagated out in the order in which they are received, every message must be read from the source block before the source block can process the next message. Therefore, when you use filtering to connect multiple targets to a source, make sure that at least one target block receives each message. Otherwise, your application might deadlock.  
+> Because each predefined source dataflow block type guarantees that messages are propagated out in the order in which they are received, every message must be read from the source block before the source block can process the next message. Therefore, when you use filtering to connect multiple targets to a source, make sure that at least one target block receives each message. Otherwise, your application might deadlock.  
   
 ### Message Passing  
  The dataflow programming model is related to the concept of *message passing*, where independent components of a program communicate with one another by sending messages. One way to propagate messages among application components is to call the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Post%2A> and <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A?displayProperty=nameWithType> methods to send messages to target dataflow blocks post (<xref:System.Threading.Tasks.Dataflow.DataflowBlock.Post%2A> acts synchronously; <xref:System.Threading.Tasks.Dataflow.DataflowBlock.SendAsync%2A> acts asynchronously) and the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Receive%2A>, <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A>, and <xref:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive%2A> methods to receive messages from source blocks. You can combine these methods with dataflow pipelines or networks by sending input data to the head node (a target block), and receiving output data from the terminal node of the pipeline or the terminal nodes of the network (one or more source blocks). You can also use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Choose%2A> method to read from the first of the provided sources that has data available and perform action on that data.  
@@ -74,10 +61,7 @@ ms.author: "ronpet"
  [!code-vb[TPLDataflow_Overview#11](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_overview/vb/program.vb#11)]  
   
  You can also use properties such as <xref:System.Threading.Tasks.Task.IsCanceled%2A> in the body of the continuation task to determine additional information about the completion status of a dataflow block. For more information about continuation tasks and how they relate to cancellation and error handling, see [Chaining Tasks by Using Continuation Tasks](../../../docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md), [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md), and [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
-  
- [[go to top](#top)]  
-  
-<a name="predefined_types"></a>   
+
 ## Predefined Dataflow Block Types  
  The TPL Dataflow Library provides several predefined dataflow block types. These types are divided into three categories: *buffering blocks*, *execution blocks*, and *grouping blocks*. The following sections describe the block types that make up these categories.  
   
@@ -105,7 +89,7 @@ ms.author: "ronpet"
  For a complete example that demonstrates how to use <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> to broadcast a message to multiple target blocks, see [How to: Specify a Task Scheduler in a Dataflow Block](../../../docs/standard/parallel-programming/how-to-specify-a-task-scheduler-in-a-dataflow-block.md).  
   
 #### WriteOnceBlock(T)  
- The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class resembles the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object can be written to one time only. You can think of <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> as being similar to the C# [readonly](~/docs/csharp/language-reference/keywords/readonly.md) ([ReadOnly](~/docs/visual-basic/language-reference/modifiers/readonly.md) in Visual Basic) keyword, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object becomes immutable after it receives a value instead of at construction. Like the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, when a target receives a message from a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object, that message is not removed from that object. Therefore, multiple targets receive a copy of the message. The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class is useful when you want to propagate only the first of multiple messages.  
+ The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class resembles the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object can be written to one time only. You can think of <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> as being similar to the C# [readonly](../../csharp/language-reference/keywords/readonly.md) ([ReadOnly](../../visual-basic/language-reference/modifiers/readonly.md) in Visual Basic) keyword, except that a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object becomes immutable after it receives a value instead of at construction. Like the <xref:System.Threading.Tasks.Dataflow.BroadcastBlock%601> class, when a target receives a message from a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object, that message is not removed from that object. Therefore, multiple targets receive a copy of the message. The <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> class is useful when you want to propagate only the first of multiple messages.  
   
  The following basic example posts multiple <xref:System.String> values to a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object and then reads the value back from that object. Because a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object can be written to one time only, after a <xref:System.Threading.Tasks.Dataflow.WriteOnceBlock%601> object receives a message, it discards subsequent messages.  
   
@@ -197,10 +181,7 @@ ms.author: "ronpet"
  [!code-vb[TPLDataflow_Overview#9](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_overview/vb/program.vb#9)]  
   
  For a complete example that uses <xref:System.Threading.Tasks.Dataflow.BatchedJoinBlock%602> to capture both the results and any exceptions that occur while the program reads from a database, see [Walkthrough: Using BatchBlock and BatchedJoinBlock to Improve Efficiency](../../../docs/standard/parallel-programming/walkthrough-using-batchblock-and-batchedjoinblock-to-improve-efficiency.md).  
-  
- [[go to top](#top)]  
-  
-<a name="behavior"></a>   
+
 ## Configuring Dataflow  Block Behavior  
  You can enable additional options by providing a <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions?displayProperty=nameWithType> object to the constructor of dataflow block types. These options control behavior such the scheduler that manages the underlying task and the degree of parallelism. The <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions> also has derived types that specify behavior that is specific to certain dataflow block types. The following table summarizes which options type is associated with each dataflow block type.  
   
@@ -229,7 +210,7 @@ ms.author: "ronpet"
  The default value of <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A> is 1, which guarantees that the dataflow block processes one message at a time. Setting this property to a value that is larger than 1 enables the dataflow block to process multiple messages concurrently. Setting this property to <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.Unbounded?displayProperty=nameWithType> enables the underlying task scheduler to manage the maximum degree of concurrency.  
   
 > [!IMPORTANT]
->  When you specify a maximum degree of parallelism that is larger than 1, multiple messages are processed simultaneously, and therefore messages might not be processed in the order in which they are received. The order in which the messages are output from the block is, however, the same one in which they are received.  
+> When you specify a maximum degree of parallelism that is larger than 1, multiple messages are processed simultaneously, and therefore messages might not be processed in the order in which they are received. The order in which the messages are output from the block is, however, the same one in which they are received.  
   
  Because the <xref:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism%2A> property represents the maximum degree of parallelism, the dataflow block might execute with a lesser degree of parallelism than you specify. The dataflow block might use a lesser degree of parallelism to meet its functional requirements or because there is a lack of available system resources. A dataflow block never chooses more parallelism than you specify.  
   
@@ -250,16 +231,11 @@ ms.author: "ronpet"
   
  For join block types such as <xref:System.Threading.Tasks.Dataflow.JoinBlock%602>, greedy mode means that the block immediately accepts data even if the corresponding data with which to join is not yet available. Non-greedy mode means that the block postpones all incoming messages until one is available on each of its targets to complete the join. If any of the postponed messages are no longer available, the join block releases all postponed messages and restarts the process. For the <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> class, greedy and non-greedy behavior is similar, except that under non-greedy mode, a <xref:System.Threading.Tasks.Dataflow.BatchBlock%601> object postpones all incoming messages until enough are available from distinct sources to complete a batch.  
   
- To specify non-greedy mode for a dataflow block, set <xref:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.Greedy%2A> to `False`. For an example that demonstrates how to use non-greedy mode to enable multiple join blocks to share a data source more efficiently, see [How to: Use JoinBlock to Read Data From Multiple Sources](../../../docs/standard/parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md).  
-  
- [[go to top](#top)]  
-  
-<a name="custom"></a>   
+ To specify non-greedy mode for a dataflow block, set <xref:System.Threading.Tasks.Dataflow.GroupingDataflowBlockOptions.Greedy%2A> to `False`. For an example that demonstrates how to use non-greedy mode to enable multiple join blocks to share a data source more efficiently, see [How to: Use JoinBlock to Read Data From Multiple Sources](../../../docs/standard/parallel-programming/how-to-use-joinblock-to-read-data-from-multiple-sources.md).
+
 ## Custom Dataflow Blocks  
- Although the TPL Dataflow Library provides many predefined block types, you can create additional block types that perform custom behavior. Implement the <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601> or <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> interfaces directly or use the  <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate%2A> method to build a complex block that encapsulates the behavior of existing block types. For examples that show how to implement custom dataflow block functionality, see [Walkthrough: Creating a Custom Dataflow Block Type](../../../docs/standard/parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md).  
-  
- [[go to top](#top)]  
-  
+ Although the TPL Dataflow Library provides many predefined block types, you can create additional block types that perform custom behavior. Implement the <xref:System.Threading.Tasks.Dataflow.ISourceBlock%601> or <xref:System.Threading.Tasks.Dataflow.ITargetBlock%601> interfaces directly or use the  <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Encapsulate%2A> method to build a complex block that encapsulates the behavior of existing block types. For examples that show how to implement custom dataflow block functionality, see [Walkthrough: Creating a Custom Dataflow Block Type](../../../docs/standard/parallel-programming/walkthrough-creating-a-custom-dataflow-block-type.md).
+
 ## Related Topics  
   
 |Title|Description|  

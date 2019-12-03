@@ -6,8 +6,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT [.NET Framework profiling]"
 ms.assetid: f2fc441f-d62e-4f72-a011-354ea13c8c59
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
 The CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT was introduced in the .NET Framework version 2.0. The .NET Framework 4 returns this HRESULT in two scenarios:  

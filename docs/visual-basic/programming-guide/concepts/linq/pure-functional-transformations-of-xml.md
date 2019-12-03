@@ -1,5 +1,5 @@
 ---
-title: "Pure Functional Transformations of XML (Visual Basic)"
+title: "Pure Functional Transformations of XML"
 ms.date: 07/20/2015
 ms.assetid: 5e19b74a-7773-4b58-b110-953ffd364c55
 ---

@@ -14,23 +14,23 @@ Async methods can have the following return types:
 
 - Starting with C# 7.0, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
   
-For more information about async methods, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).  
+For more information about async methods, see [Asynchronous Programming with async and await (C#)](./index.md).  
   
 Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
 ## <a name="BKMK_TaskTReturnType"></a> Task\<TResult\> Return Type  
-The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../../csharp/language-reference/keywords/return.md) (C#) statement in which the operand has type `TResult`.  
+The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../language-reference/keywords/return.md) (C#) statement in which the operand has type `TResult`.  
   
 In the following example, the `GetLeisureHours` async method contains a `return` statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a string.
   
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns1.cs)]
 
-When `GetLeisureHours` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) that's stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../../../../csharp/language-reference/keywords/await.md).  
+When `GetLeisureHours` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) that's stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../../../language-reference/operators/await.md).  
   
 You can better understand how this happens by separating the call to `GetLeisureHours` from the application of `await`, as the following code shows. A call to method `GetLeisureHours` that isn't immediately awaited returns a `Task<int>`, as you would expect from the declaration of the method. The task is assigned to the `integerTask` variable in the example. Because `integerTask` is a <xref:System.Threading.Tasks.Task%601>, it contains a <xref:System.Threading.Tasks.Task%601.Result> property of type `TResult`. In this case, `TResult` represents an integer type. When `await` is applied to `integerTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task%601.Result%2A> property of `integerTask`. The value is assigned to the `ret` variable.  
   
 > [!IMPORTANT]
->  The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `await` instead of accessing the property directly. <br/> The previous example retrieved the value of the <xref:System.Threading.Tasks.Task%601.Result%2A> property to block the main thread so that the `ShowTodaysInfo` method could finish execution before the application ended.  
+> The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `await` instead of accessing the property directly. <br/> The previous example retrieved the value of the <xref:System.Threading.Tasks.Task%601.Result%2A> property to block the main thread so that the `ShowTodaysInfo` method could finish execution before the application ended.  
 
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns1a.cs#1)]
   
@@ -74,7 +74,7 @@ Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task
 ## See also
 
 - <xref:System.Threading.Tasks.Task.FromResult%2A>
-- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
-- [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)
-- [async](../../../../csharp/language-reference/keywords/async.md)
-- [await](../../../../csharp/language-reference/keywords/await.md)
+- [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Control Flow in Async Programs (C#)](./control-flow-in-async-programs.md)
+- [async](../../../language-reference/keywords/async.md)
+- [await](../../../language-reference/operators/await.md)

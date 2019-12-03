@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 70f07c9e-0614-4bee-ac34-09fe6c51c5a9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode3 Interface
 Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide information about a managed return value.  
@@ -29,7 +27,7 @@ Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide i
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

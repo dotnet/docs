@@ -9,11 +9,11 @@ helpviewer_keywords:
 ms.assetid: 9a316cbd-9612-4482-a541-a10bc78b2635
 ---
 # How to: Enable Paging of Data Service Results (WCF Data Services)
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to limit the number of entities returned by a data service query. Page limits are defined in the method that is called when the service is initialized and can be set separately for each entity set.  
+WCF Data Services enables you to limit the number of entities returned by a data service query. Page limits are defined in the method that is called when the service is initialized and can be set separately for each entity set.  
   
- When paging is enabled, the final entry in the feed contains a link to the next page of data. For more information, see [Configuring the Data Service](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md).  
+ When paging is enabled, the final entry in the feed contains a link to the next page of data. For more information, see [Configuring the Data Service](configuring-the-data-service-wcf-data-services.md).  
   
- This topic shows how to modify a data service to enable paging of returned `Customers` and `Orders` entity sets. The example in this topic uses the Northwind sample data service. This service is created when you complete the [WCF Data Services quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md).  
+ This topic shows how to modify a data service to enable paging of returned `Customers` and `Orders` entity sets. The example in this topic uses the Northwind sample data service. This service is created when you complete the [WCF Data Services quickstart](quickstart-wcf-data-services.md).  
   
 ### How to enable paging of returned Customers and Orders entity sets  
   
@@ -24,5 +24,5 @@ ms.assetid: 9a316cbd-9612-4482-a541-a10bc78b2635
   
 ## See also
 
-- [Loading Deferred Content](../../../../docs/framework/data/wcf/loading-deferred-content-wcf-data-services.md)
-- [How to: Load Paged Results](../../../../docs/framework/data/wcf/how-to-load-paged-results-wcf-data-services.md)
+- [Loading Deferred Content](loading-deferred-content-wcf-data-services.md)
+- [How to: Load Paged Results](how-to-load-paged-results-wcf-data-services.md)

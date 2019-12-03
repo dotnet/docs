@@ -15,7 +15,7 @@ ms.assetid: a1f74f29-048c-4723-85fa-b9d375ab8f4b
 The following code example makes the splitter that divides the <xref:System.Windows.Forms.SplitContainer> control horizontal.  
   
 > [!NOTE]
->  The <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control determines the direction of the splitter, not of the control itself.  
+> The <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control determines the direction of the splitter, not of the control itself.  
   
 ### To split a window horizontally  
   

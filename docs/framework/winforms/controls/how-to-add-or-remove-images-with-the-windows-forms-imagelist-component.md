@@ -18,7 +18,7 @@ ms.assetid: c5eacc56-f769-4e2e-bfb7-f756620913db
 The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically populated with images before it is associated with a control. However, you can add and remove images after associating the image list with a control.  
   
 > [!NOTE]
->  When you remove images, verify that the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property of any associated controls is still valid.  
+> When you remove images, verify that the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property of any associated controls is still valid.  
   
 ### To add images programmatically  
   

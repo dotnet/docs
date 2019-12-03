@@ -50,7 +50,7 @@ Next, you will add a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptl
 
 ### To add localizable content
 
-1. In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+1. In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the WPF Designer.
 
 2. Set the content of the <xref:System.Windows.Controls.Button> control using the following code.
 
@@ -116,7 +116,7 @@ You can map your localizable content to resource assemblies by using resource id
 
 2. Use the following command to assign resource identifiers to your localizable content.
 
-    ```
+    ```console
     msbuild -t:updateuid LocalizingWpfInWf.csproj
     ```
 
@@ -136,7 +136,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 2. In the Command Prompt window, use the following command to extract resource strings into a temporary file.
 
-    ```
+    ```console
     LocBaml /parse LocalizingWpfInWf.g.en-US.resources /out:temp.csv
     ```
 
@@ -146,7 +146,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 5. Use the following command to generate the localized resource file.
 
-    ```
+    ```console
     LocBaml /generate /trans:temp.csv LocalizingWpfInWf.g.en-US.resources /out:. /cul:es-ES
     ```
 
@@ -154,7 +154,7 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 
 6. Use the following command to build the localized satellite assembly.
 
-    ```
+    ```console
     Al.exe /out:LocalizingWpfInWf.resources.dll /culture:es-ES /embed:LocalizingWpfInWf.Form1.es-ES.resources /embed:LocalizingWpfInWf.g.es-ES.resources
     ```
 
@@ -172,4 +172,4 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Localize an Application](how-to-localize-an-application.md)
 - [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

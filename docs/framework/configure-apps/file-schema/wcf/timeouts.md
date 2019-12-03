@@ -6,11 +6,12 @@ ms.assetid: 7fccd436-b326-48ec-8de1-c16817a09e0d
 # \<timeOuts>
 Represents a configuration element that specifies the interval of time allowed for the service host to open or close.  
   
- \<system.ServiceModel>  
-\<client>  
-\<endpoint>  
-\<host>  
-\<timeOuts>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<services>**](services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<service>**](service.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<host>**](host.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<timeOuts>**  
   
 ## Syntax  
   
@@ -36,10 +37,10 @@ Represents a configuration element that specifies the interval of time allowed f
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<host>](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|A configuration element that specifies settings for a service host.|  
+|[\<host>](host.md)|A configuration element that specifies settings for a service host.|  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.HostElement>
 - <xref:System.ServiceModel.ServiceHost>
-- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+- [Hosting](../../../wcf/feature-details/hosting.md)

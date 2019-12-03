@@ -6,7 +6,7 @@ ms.assetid: fd0891c8-d068-4e30-a76f-7c375f078bf7
 # Summary of the DataSet Schema Inference Process
 The inference process first determines, from the XML document, which elements will be inferred as tables. From the remaining XML, the inference process determines the columns for those tables. For nested tables, the inference process generates nested <xref:System.Data.DataRelation> and <xref:System.Data.ForeignKeyConstraint> objects.  
   
- Following is a brief summary of inference rules:  
+ The following is a brief summary of inference rules:  
   
 - Elements that have attributes are inferred as tables.  
   
@@ -26,9 +26,9 @@ The inference process first determines, from the XML document, which elements wi
   
 ## See also
 
-- [Inferring DataSet Relational Structure from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-dataset-relational-structure-from-xml.md)
-- [Loading a DataSet from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-a-dataset-from-xml.md)
-- [Loading DataSet Schema Information from XML](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/loading-dataset-schema-information-from-xml.md)
-- [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)
-- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Inferring DataSet Relational Structure from XML](inferring-dataset-relational-structure-from-xml.md)
+- [Loading a DataSet from XML](loading-a-dataset-from-xml.md)
+- [Loading DataSet Schema Information from XML](loading-dataset-schema-information-from-xml.md)
+- [Using XML in a DataSet](using-xml-in-a-dataset.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

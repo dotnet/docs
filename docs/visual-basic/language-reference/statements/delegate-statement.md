@@ -1,5 +1,5 @@
 ---
-title: "Delegate Statement (Visual Basic)"
+title: "Delegate Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Delegate"
@@ -13,7 +13,7 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
   
 ## Syntax  
   
-```  
+```vb  
 [ <attrlist> ] [ accessmodifier ] _  
 [ Shadows ] Delegate [ Sub | Function ] name [( Of typeparamlist )] [([ parameterlist ])] [ As type ]  
 ```  

@@ -2,8 +2,6 @@
 title: "Mitigation: Path Normalization"
 ms.date: "03/30/2017"
 ms.assetid: 158d47b1-ba6d-4fa6-8963-a012666bdc31
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Path Normalization
 Starting with apps the target  the .NET Framework 4.6.2, path normalization in the .NET Framework has changed.  
@@ -39,7 +37,7 @@ For apps that target the .NET Framework 4.6.2 or later, these changes are on  by
 Apps that target the .NET Framework 4.6.1 and earlier versions but are running under the .NET Framework 4.6.2 or later are unaffected by this change.  
   
 ## Mitigation  
- Apps that target the .NET Framework 4.6.2 or later can opt out of this change and use legacy normalization by adding the following to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file:  
+ Apps that target the .NET Framework 4.6.2 or later can opt out of this change and use legacy normalization by adding the following to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file:  
   
 ```xml  
 <runtime>  
@@ -47,7 +45,7 @@ Apps that target the .NET Framework 4.6.1 and earlier versions but are running u
 </runtime>  
 ```  
   
-Apps that target the .NET Framework 4.6.1 or earlier but are running on the .NET Framework 4.6.2 or later can enable the changes to path normalization by adding the following line to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application .configuration file:  
+Apps that target the .NET Framework 4.6.1 or earlier but are running on the .NET Framework 4.6.2 or later can enable the changes to path normalization by adding the following line to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the application .configuration file:  
   
 ```xml  
 <runtime>  
@@ -57,4 +55,4 @@ Apps that target the .NET Framework 4.6.1 or earlier but are running on the .NET
   
 ## See also
 
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-2.md)
+- [Application compatibility](application-compatibility.md)

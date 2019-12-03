@@ -1,5 +1,5 @@
 ---
-title: "How to: Find a Single Descendant Using the Descendants Method (Visual Basic)"
+title: "How to: Find a Single Descendant Using the Descendants Method"
 ms.date: 07/20/2015
 ms.assetid: 0c03468c-efc8-4140-98f3-fb67acd9e8e1
 ---
@@ -33,12 +33,12 @@ Console.WriteLine(grandChild3)
   
  This code produces the following output:  
   
-```  
+```console  
 GC3 Value  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
 ```vb  
 Imports <xmlns:aw='http://www.adventure-works.com'>  
@@ -70,7 +70,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 GC3 Value  
 ```  
   

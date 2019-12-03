@@ -1,5 +1,5 @@
 ---
-title: "Let Clause (Visual Basic)"
+title: "Let Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryLet"
@@ -14,7 +14,7 @@ Computes a value and assigns it to a new variable within the query.
   
 ## Syntax  
   
-```  
+```vb  
 Let variable = expression [, ...]  
 ```  
   

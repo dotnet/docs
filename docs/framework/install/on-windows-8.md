@@ -42,6 +42,6 @@ You can [contact Microsoft for help](mailto:dotnet-install-help@service.microsof
 
 ## See also
 
-- [Download the .NET Framework](https://www.microsoft.com/net/download/framework?utm_source=ms-docs&utm_medium=referral)
+- [Download the .NET Framework](https://dotnet.microsoft.com/download)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](troubleshoot-blocked-installations-and-uninstallations.md)
 - [Install the .NET Framework for developers](guide-for-developers.md)

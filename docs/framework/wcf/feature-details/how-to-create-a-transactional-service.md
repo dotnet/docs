@@ -211,4 +211,4 @@ This sample demonstrates various aspects of creating a transactional service and
     ```  
   
     > [!NOTE]
-    >  Since the instance lifetime is a behavior that is internal to the service, and controlled through the <xref:System.ServiceModel.ServiceBehaviorAttribute> property, no modification to the service configuration or service contract is required to set the instance behavior. In addition, the wire will contain no representation of this.
+    > Since the instance lifetime is a behavior that is internal to the service, and controlled through the <xref:System.ServiceModel.ServiceBehaviorAttribute> property, no modification to the service configuration or service contract is required to set the instance behavior. In addition, the wire will contain no representation of this.

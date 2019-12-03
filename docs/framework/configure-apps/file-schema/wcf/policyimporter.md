@@ -6,11 +6,12 @@ ms.assetid: b0d03456-546f-44bb-ab12-1b2ce7f98fca
 # \<policyImporter>
 Specifies a policy importer that controls the import of custom policy assertions about bindings.  
   
- \<system.ServiceModel>  
-\<client>  
-\<metadata>  
-\<policyImporters>  
-\<policyImporter>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<client>**](client.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<metadata>**](metadata.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<policyImporters>**](policyimporters.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<policyImporter>**  
   
 ## Syntax  
   
@@ -38,7 +39,7 @@ Specifies a policy importer that controls the import of custom policy assertions
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<policyImporters>](../../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md)|Specifies all the policy importers that control the import of custom policy assertions about bindings.|  
+|[\<policyImporters>](policyimporters.md)|Specifies all the policy importers that control the import of custom policy assertions about bindings.|  
   
 ## Remarks  
  A policy importer is used to search custom policy assertions about binding features, as well as attach a custom binding element that implements the features the assertion requires.  
@@ -49,5 +50,5 @@ Specifies a policy importer that controls the import of custom policy assertions
 - <xref:System.ServiceModel.Configuration.PolicyImporterElement>
 - <xref:System.ServiceModel.Configuration.MetadataElement>
 - <xref:System.ServiceModel.Description.MetadataImporter>
-- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
-- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)
+- [WCF Client Configuration](../../../wcf/feature-details/client-configuration.md)
+- [Clients](../../../wcf/feature-details/clients.md)

@@ -13,8 +13,6 @@ api_type:
 ms.assetid: 8b391afb-d79f-41bd-94ce-43ce62c6b5fc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback6::GetAssemblyReferences Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

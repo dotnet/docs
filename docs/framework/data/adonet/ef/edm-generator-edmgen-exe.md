@@ -6,13 +6,13 @@ ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
 
 # EDM Generator (EdmGen.exe)
 
-EdmGen.exe is a command-line tool used for working with [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] model and mapping files. You can use the EdmGen.exe tool to do the following:
+EdmGen.exe is a command-line tool used for working with Entity Framework model and mapping files. You can use the EdmGen.exe tool to do the following:
 
-- Connect to a data source by using a data source–specific .NET Framework data provider, and generate the conceptual model (.csdl), storage model (.ssdl), and mapping (.msl) files that are used by the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).
+- Connect to a data source by using a data source–specific .NET Framework data provider, and generate the conceptual model (.csdl), storage model (.ssdl), and mapping (.msl) files that are used by the Entity Framework. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).
 
-- Validate an existing model. For more information, see [How to: Use EdmGen.exe to Validate Model and Mapping Files](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md).
+- Validate an existing model. For more information, see [How to: Use EdmGen.exe to Validate Model and Mapping Files](how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md).
 
-- Generate a C# or Visual Basic code file that contains the object classes generated from a conceptual model (.csdl) file. For more information, see [How to: Use EdmGen.exe to Generate Object-Layer Code](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md).
+- Generate a C# or Visual Basic code file that contains the object classes generated from a conceptual model (.csdl) file. For more information, see [How to: Use EdmGen.exe to Generate Object-Layer Code](how-to-use-edmgen-exe-to-generate-object-layer-code.md).
 
 - Generate a C# or Visual Basic code file that contains the pre-generated views for an existing model. For more information, [How to: Pre-Generate Views to Improve Query Performance](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100)).
 
@@ -20,7 +20,7 @@ The EdmGen.exe tool is installed in the .NET Framework directory. In many cases,
 
 ## Syntax
 
-```
+```console
 EdmGen /mode:choice [options]
 ```
 
@@ -63,14 +63,14 @@ When using the EdmGen.exe tool, you must specify one of the following modes.
 
 ## In This Section
 
-[How to: Use EdmGen.exe to Generate the Model and Mapping Files](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)
+[How to: Use EdmGen.exe to Generate the Model and Mapping Files](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)
 
-[How to: Use EdmGen.exe to Generate Object-Layer Code](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-generate-object-layer-code.md)
+[How to: Use EdmGen.exe to Generate Object-Layer Code](how-to-use-edmgen-exe-to-generate-object-layer-code.md)
 
-[How to: Use EdmGen.exe to Validate Model and Mapping Files](../../../../../docs/framework/data/adonet/ef/how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)
+[How to: Use EdmGen.exe to Validate Model and Mapping Files](how-to-use-edmgen-exe-to-validate-model-and-mapping-files.md)
 
 ## See also
 
 - [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
-- [Entity Data Model](../../../../../docs/framework/data/adonet/entity-data-model.md)
-- [CSDL, SSDL, and MSL Specifications](../../../../../docs/framework/data/adonet/ef/language-reference/csdl-ssdl-and-msl-specifications.md)
+- [Entity Data Model](../entity-data-model.md)
+- [CSDL, SSDL, and MSL Specifications](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)

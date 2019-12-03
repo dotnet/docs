@@ -7,12 +7,12 @@ ms.assetid: ef5ba300-6d7c-455e-a7bd-d0cc6d211ad4
 ---
 # Reflection Provider (WCF Data Services)
 
-In addition to exposing data from a data model through the Entity Framework, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] can expose data that is not strictly defined in an entity-based model. The reflection provider exposes data in classes that return types that implement the <xref:System.Linq.IQueryable%601> interface. [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] uses reflection to infer a data model for these classes and can translate address-based queries against resources into language integrated query (LINQ)-based queries against the exposed <xref:System.Linq.IQueryable%601> types.
+In addition to exposing data from a data model through the Entity Framework, WCF Data Services can expose data that is not strictly defined in an entity-based model. The reflection provider exposes data in classes that return types that implement the <xref:System.Linq.IQueryable%601> interface. WCF Data Services uses reflection to infer a data model for these classes and can translate address-based queries against resources into language integrated query (LINQ)-based queries against the exposed <xref:System.Linq.IQueryable%601> types.
 
 > [!NOTE]
 > You can use the <xref:System.Linq.Queryable.AsQueryable%2A> method to return an <xref:System.Linq.IQueryable%601> interface from any class that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. This enables most generic collection types to be used as a data source for your data service.
 
-The reflection provider supports type hierarchies. For more information, see [How to: Create a Data Service Using the Reflection Provider](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md).
+The reflection provider supports type hierarchies. For more information, see [How to: Create a Data Service Using the Reflection Provider](create-a-data-service-using-rp-wcf-data-services.md).
 
 ## Inferring the Data Model
 
@@ -40,7 +40,7 @@ When you create the data service, the provider infers the data model by using re
   - If the return type of the property is a value type, then the property represents a complex type.
 
 > [!NOTE]
-> Unlike a data model that is based on the entity-relational model, models that are based on the reflection provider do not understand relational data. You should use the Entity Framework to expose relational data through [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)].
+> Unlike a data model that is based on the entity-relational model, models that are based on the reflection provider do not understand relational data. You should use the Entity Framework to expose relational data through WCF Data Services.
 
 ## Data Type Mapping
 
@@ -67,7 +67,7 @@ When a data model is inferred from .NET Framework classes, the primitive types i
 
 ## Enabling Updates in the Data Model
 
-To allow updates to data that is exposed through this kind of data model, the reflection provider defines an <xref:System.Data.Services.IUpdatable> interface. This interface instructs the data service on how to persist updates to the exposed types. To enable updates to resources that are defined by the data model, the entity container class must implement the <xref:System.Data.Services.IUpdatable> interface. For an example of an implementation of the <xref:System.Data.Services.IUpdatable> interface, see [How to: Create a Data Service Using a LINQ to SQL Data Source](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md).
+To allow updates to data that is exposed through this kind of data model, the reflection provider defines an <xref:System.Data.Services.IUpdatable> interface. This interface instructs the data service on how to persist updates to the exposed types. To enable updates to resources that are defined by the data model, the entity container class must implement the <xref:System.Data.Services.IUpdatable> interface. For an example of an implementation of the <xref:System.Data.Services.IUpdatable> interface, see [How to: Create a Data Service Using a LINQ to SQL Data Source](create-a-data-service-using-linq-to-sql-wcf.md).
 
 The <xref:System.Data.Services.IUpdatable> interface requires that the following members be implemented so that updates can be propagated to the data source by using the reflection provider:
 
@@ -88,12 +88,12 @@ The <xref:System.Data.Services.IUpdatable> interface requires that the following
 
 ## Handling Concurrency
 
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports an optimistic concurrency model by enabling you to define a concurrency token for an entity. This concurrency token, which includes one or more properties of the entity, is used by the data service to determine whether a change has occurred in the data that is being requested, updated, or deleted. When token values obtained from the eTag in the request differ from the current values of the entity, an exception is raised by the data service. The <xref:System.Data.Services.ETagAttribute> is applied to an entity type to define a concurrency token in the reflection provider. The concurrency token cannot include a key property or a navigation property. For more information, see [Updating the Data Service](../../../../docs/framework/data/wcf/updating-the-data-service-wcf-data-services.md).
+WCF Data Services supports an optimistic concurrency model by enabling you to define a concurrency token for an entity. This concurrency token, which includes one or more properties of the entity, is used by the data service to determine whether a change has occurred in the data that is being requested, updated, or deleted. When token values obtained from the eTag in the request differ from the current values of the entity, an exception is raised by the data service. The <xref:System.Data.Services.ETagAttribute> is applied to an entity type to define a concurrency token in the reflection provider. The concurrency token cannot include a key property or a navigation property. For more information, see [Updating the Data Service](updating-the-data-service-wcf-data-services.md).
 
 ## Using LINQ to SQL with the Reflection Provider
 
-Because the Entity Framework is natively supported by default, it is the recommended data provider for using relational data with [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]. However, you can use the reflection provider to use LINQ to SQL classes with a data service. The <xref:System.Data.Linq.Table%601> result sets that are returned by methods on the <xref:System.Data.Linq.DataContext> generated by the LINQ to SQL Object Relational Designer (O/R Designer) implement the <xref:System.Linq.IQueryable%601> interface. This enables the reflection provider to access these methods and return entity data from SQL Server by using the generated LINQ to SQL classes. However, because LINQ to SQL does not implement the <xref:System.Data.Services.IUpdatable> interface, you need to add a partial class that extends the existing <xref:System.Data.Linq.DataContext> partial class to add the <xref:System.Data.Services.IUpdatable> implementation. For more information, see [How to: Create a Data Service Using a LINQ to SQL Data Source](../../../../docs/framework/data/wcf/create-a-data-service-using-linq-to-sql-wcf.md).
+Because the Entity Framework is natively supported by default, it is the recommended data provider for using relational data with WCF Data Services. However, you can use the reflection provider to use LINQ to SQL classes with a data service. The <xref:System.Data.Linq.Table%601> result sets that are returned by methods on the <xref:System.Data.Linq.DataContext> generated by the LINQ to SQL Object Relational Designer (O/R Designer) implement the <xref:System.Linq.IQueryable%601> interface. This enables the reflection provider to access these methods and return entity data from SQL Server by using the generated LINQ to SQL classes. However, because LINQ to SQL does not implement the <xref:System.Data.Services.IUpdatable> interface, you need to add a partial class that extends the existing <xref:System.Data.Linq.DataContext> partial class to add the <xref:System.Data.Services.IUpdatable> implementation. For more information, see [How to: Create a Data Service Using a LINQ to SQL Data Source](create-a-data-service-using-linq-to-sql-wcf.md).
 
 ## See also
 
-- [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
+- [Data Services Providers](data-services-providers-wcf-data-services.md)

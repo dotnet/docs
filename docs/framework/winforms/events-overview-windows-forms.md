@@ -18,7 +18,7 @@ An event is an action which you can respond to, or "handle," in code. Events can
  The types of events raised by an object vary, but many types are common to most controls. For example, most objects will handle a <xref:System.Windows.Forms.Control.Click> event. If a user clicks a form, code in the form's <xref:System.Windows.Forms.Control.Click> event handler is executed.
 
 > [!NOTE]
->  Many events occur in conjunction with other events. For example, in the course of the <xref:System.Windows.Forms.Control.DoubleClick> event occurring, the <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseUp>, and <xref:System.Windows.Forms.Control.Click> events occur.
+> Many events occur in conjunction with other events. For example, in the course of the <xref:System.Windows.Forms.Control.DoubleClick> event occurring, the <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseUp>, and <xref:System.Windows.Forms.Control.Click> events occur.
 
  For information about how to raise and consume an event, see [Events](../../standard/events/index.md).
 
@@ -27,7 +27,7 @@ An event is an action which you can respond to, or "handle," in code. Events can
 
  This event model uses *delegates* to bind events to the methods that are used to handle them. The delegate enables other classes to register for event notification by specifying a handler method. When the event occurs, the delegate calls the bound method. For more information about how to define delegates, see [Events](../../standard/events/index.md).
 
- Delegates can be bound to a single method or to multiple methods, referred to as multicasting. When creating a delegate for an event, you (or the Windows) typically create a multicast event. A rare exception might be an event that results in a specific procedure (such as displaying a dialog box) that would not logically repeat multiple times per event. For information about how to create a multicast delegate, see [How to: Combine Delegates (Multicast Delegates)](~/docs/csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md).
+ Delegates can be bound to a single method or to multiple methods, referred to as multicasting. When creating a delegate for an event, you (or the Windows) typically create a multicast event. A rare exception might be an event that results in a specific procedure (such as displaying a dialog box) that would not logically repeat multiple times per event. For information about how to create a multicast delegate, see [How to: Combine Delegates (Multicast Delegates)](../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md).
 
  A multicast delegate maintains an invocation list of the methods it is bound to. The multicast delegate supports a <xref:System.Delegate.Combine%2A> method to add a method to the invocation list and a <xref:System.Delegate.Remove%2A> method to remove it.
 

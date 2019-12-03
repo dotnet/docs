@@ -7,26 +7,29 @@ dev_langs:
 ms.assetid: 63c0ef2c-44b5-4c54-9804-ba0b9b001ac7
 ---
 # How to: Enable a WebRequest to Use a Proxy to Communicate With the Internet
-This example creates a global proxy instance that will enable any <xref:System.Net.WebRequest> to use a proxy to communicate with the Internet. The example assumes that the proxy server is named `webproxy` and that it communicates on port 80, the standard HTTP port.  
-  
-## Example  
-  
-```csharp  
-WebProxy proxyObject = new WebProxy("http://webproxy:80/");  
-GlobalProxySelection.Select = proxyObject;  
-```  
-  
-```vb  
-Dim proxyObject As WebProxy = New WebProxy("http://webproxy:80/")  
-GlobalProxySelection.Select = proxyObject  
-```  
-  
-## Compiling the Code  
- This example requires:  
-  
-- A [`using` directive](../../csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.  
-  
+
+This example creates a global proxy instance that will enable any <xref:System.Net.WebRequest> to use a proxy to communicate with the Internet. The example assumes that the proxy server is named `webproxy` and that it communicates on port 80, the standard HTTP port.
+
+## Example
+
+```csharp
+var proxyObject = new WebProxy("http://webproxy:80/");
+GlobalProxySelection.Select = proxyObject;
+```
+
+```vb
+Dim proxyObject As New WebProxy("http://webproxy:80/")
+GlobalProxySelection.Select = proxyObject
+```
+
+## Compiling the Code
+
+This example requires:
+
+- A C# [`using` directive](../../csharp/language-reference/keywords/using-directive.md) for the **System.Net** namespace.
+- A Visual Basic [`Imports` statement](../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md) for the **System.Net** namespace.
+
 ## See also
 
-- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
-- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)
+- [Using Application Protocols](using-application-protocols.md)
+- [Accessing the Internet Through a Proxy](accessing-the-internet-through-a-proxy.md)

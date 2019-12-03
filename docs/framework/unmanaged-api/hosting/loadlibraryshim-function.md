@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 30931874-4d0e-4df1-b3d1-e425b50655d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoadLibraryShim Function
 Loads a specified version of a DLL that is included in the .NET Framework redistributable package.  
@@ -59,7 +57,7 @@ HRESULT LoadLibraryShim (
  This function is used to load DLLs that are included in the .NET Framework redistributable package. It does not load user-generated DLLs.  
   
 > [!NOTE]
->  Beginning with the .NET Framework version 2.0, loading Fusion.dll causes the CLR to be loaded. This is because the functions in Fusion.dll are now wrappers whose implementations are provided by the runtime.  
+> Beginning with the .NET Framework version 2.0, loading Fusion.dll causes the CLR to be loaded. This is because the functions in Fusion.dll are now wrappers whose implementations are provided by the runtime.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

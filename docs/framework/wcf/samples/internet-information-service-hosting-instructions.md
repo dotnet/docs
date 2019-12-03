@@ -157,7 +157,7 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
 4. A Web page with the text "Hello World" should appear.  
   
 > [!NOTE]
->  Each time you install a new version of the .NET Framework, you must re-register aspnet_isapi as a Web service extension for IIS. To do so, issue the `aspnet_regiis –I –enable` command.  
+> Each time you install a new version of the .NET Framework, you must re-register aspnet_isapi as a Web service extension for IIS. To do so, issue the `aspnet_regiis –I –enable` command.  
   
 ## Sample Code  
   

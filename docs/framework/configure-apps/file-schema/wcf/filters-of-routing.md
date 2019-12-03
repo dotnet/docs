@@ -8,9 +8,9 @@ ms.assetid: 7993cf90-9afd-4c3c-9608-184d5da1105c
 
 Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF) <xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages.
 
-[**\<system.serviceModel>**](system-servicemodel.md)   
-&nbsp;&nbsp;[**\<routing>**](routing.md)   
-&nbsp;&nbsp;&nbsp;&nbsp;**\<filters>**
+[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;[**\<routing>**](routing.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<filters>**  
   
 ## Syntax  
   
@@ -39,13 +39,13 @@ None
 
 |     | Description |
 | --- | ----------- |
-| [**\<filter>**](../../../../../docs/framework/configure-apps/file-schema/wcf/filter.md) | Contains a routing filter that determines the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> will be used when evaluating incoming messages. |
+| [**\<filter>**](filter.md) | Contains a routing filter that determines the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> will be used when evaluating incoming messages. |
 
 ### Parent elements
 
 |     | Description |
 | --- | ----------- |
-| [**\<routing>**](../../../../../docs/framework/configure-apps/file-schema/wcf/routing.md) | Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches. |
+| [**\<routing>**](routing.md) | Represents a configuration section for defining a set of routing filters, which determine the type of Windows Communication Foundation (WCF)<xref:System.ServiceModel.Dispatcher.MessageFilter> to be used when evaluating incoming messages, as well as routing tables that define the target endpoints to send messages to when a filter matches. |
 
 ## See also
 

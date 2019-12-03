@@ -34,7 +34,7 @@ This topic provides a brief overview of the concept of federated security. It al
  This scenario includes two organizations: A and B. Organization B has a Web resource (a Web service) that some users in organization A find valuable.  
   
 > [!NOTE]
->  This section uses the terms *resource*, *service*, and *Web service* interchangeably.  
+> This section uses the terms *resource*, *service*, and *Web service* interchangeably.  
   
  Typically, organization B requires that a user from organization A provide some valid form of authentication before accessing the service. In addition, the organization may also require that the user be authorized to access the specific resource in question. One way to address this problem and enable users in organization A to access the resource in organization B is as follows:  
   
@@ -142,7 +142,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 ```  
   
 > [!NOTE]
->  A subtle point should be noted about the claims required by `MyService`. The second figure indicates that `MyService` requires a SAML token with the `accessAuthorized` claim. To be more precise, this specifies the claim type that `MyService` requires. The fully-qualified name of this claim type is `http://tempuri.org:accessAuthorized` (along with the associated namespace), which is used in the service configuration file. The value of this claim indicates the presence of this claim and is assumed to be set to `true` by STS B.  
+> A subtle point should be noted about the claims required by `MyService`. The second figure indicates that `MyService` requires a SAML token with the `accessAuthorized` claim. To be more precise, this specifies the claim type that `MyService` requires. The fully-qualified name of this claim type is `http://tempuri.org:accessAuthorized` (along with the associated namespace), which is used in the service configuration file. The value of this claim indicates the presence of this claim and is assumed to be set to `true` by STS B.  
   
  At runtime, this policy is enforced by the `MyServiceOperationRequirement` class that is implemented as part of the `MyService`.  
   
@@ -201,7 +201,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
 ```  
   
 > [!NOTE]
->  Again, the `userAuthenticated` claim is the claim type that is required by STS B. The fully-qualified name of this claim type is `http://tempuri.org:userAuthenticated` (along with the associated namespace), which is used in the STS configuration file. The value of this claim indicates the presence of this claim and is assumed to be set to `true` by STS A.  
+> Again, the `userAuthenticated` claim is the claim type that is required by STS B. The fully-qualified name of this claim type is `http://tempuri.org:userAuthenticated` (along with the associated namespace), which is used in the STS configuration file. The value of this claim indicates the presence of this claim and is assumed to be set to `true` by STS A.  
   
  At runtime, the `STS_B_OperationRequirement` class enforces this policy, which is implemented as part of STS B.  
   

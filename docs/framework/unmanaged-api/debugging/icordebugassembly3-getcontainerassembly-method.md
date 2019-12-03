@@ -2,8 +2,6 @@
 title: "ICorDebugAssembly3::GetContainerAssembly Method"
 ms.date: "03/30/2017"
 ms.assetid: f5fddeb6-b82e-4ebb-b432-849ce8513c77
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssembly3::GetContainerAssembly Method
 Returns the container assembly of this `ICorDebugAssembly3` object.  
@@ -27,7 +25,7 @@ HRESULT GetContainerAssembly(
  If this assembly has been merged with others inside a single container assembly, this method returns the container assembly. For more information and terminology, see the [ICorDebugProcess6::EnableVirtualModuleSplitting](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-enablevirtualmodulesplitting-method.md) topic.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

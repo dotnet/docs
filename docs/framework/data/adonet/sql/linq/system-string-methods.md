@@ -51,4 +51,4 @@ ms.assetid: ce307f14-87e6-4816-8694-8a4147f6b784
   
 ## See also
 
-- [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md)
+- [Data Types and Functions](data-types-and-functions.md)

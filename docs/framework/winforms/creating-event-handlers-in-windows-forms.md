@@ -38,5 +38,5 @@ An event handler is a procedure in your code that determines what actions are pe
  [Events](../../standard/events/index.md)\
  Provides links to topics on handling and raising events using the .NET Framework.
 
- [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)\
+ [Troubleshooting Inherited Event Handlers in Visual Basic](../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)\
  Lists common issues that occur with event handlers in inherited components.

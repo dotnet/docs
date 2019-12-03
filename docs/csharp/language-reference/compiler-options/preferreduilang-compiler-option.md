@@ -33,4 +33,4 @@ csc.exe -preferreduilang:ja-JP
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)

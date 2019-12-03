@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Compiler Options Listed Alphabetically"
+title: "Compiler Options Listed Alphabetically"
 ms.date: 04/12/2018
 helpviewer_keywords: 
   - "Visual Basic compiler, options"
@@ -77,4 +77,4 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 ## See also
 
 - [Visual Basic Compiler Options Listed by Category](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
-- [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)
+- [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties)

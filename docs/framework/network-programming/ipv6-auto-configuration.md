@@ -20,5 +20,5 @@ One important goal for IPv6 is to support node Plug and Play. That is, it should
   
 ## See also
 
-- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
-- [Sockets](../../../docs/framework/network-programming/sockets.md)
+- [Internet Protocol Version 6](internet-protocol-version-6.md)
+- [Sockets](sockets.md)

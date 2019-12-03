@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "ConnectServerWmi function [.NET WMI and performance counters]"
 topic_type:
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ConnectServerWmi function
 
@@ -104,7 +102,7 @@ For local access to the default namespace, `strNetworkResource` can be a simple 
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** WMINet_Utils.idl
 

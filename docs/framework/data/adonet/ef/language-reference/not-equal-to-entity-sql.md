@@ -8,9 +8,9 @@ Compares two expressions to determine whether the left expression is not equal t
   
 ## Syntax  
   
-```  
+```sql  
 expression != expression  
-or  
+-- or  
 expression <> expression  
 ```  
   
@@ -24,12 +24,12 @@ expression <> expression
 ## Example  
  The following Entity SQL query uses the != operator to compare two expressions to determine whether the left expression is not equal to the right expression. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#NOT_EQUALS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#not_equals)]  
+ [!code-sql[DP EntityServices Concepts#NOT_EQUALS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#not_equals)]  
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Reference](entity-sql-reference.md)

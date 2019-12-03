@@ -1,5 +1,5 @@
 ---
-title: "How to: Write to an Application Event Log (Visual Basic)"
+title: "How to: Write to an Application Event Log"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Computer.EventLog element"
@@ -17,7 +17,7 @@ You cannot write to the Security log. In order to write to the System log, you m
 
 To view an event log, you can use **Server Explorer** or **Windows Event Viewer**. For more information, see [ETW Events in the .NET Framework](../../../../framework/performance/etw-events.md).
 
-### To add and configure the event log listener
+## To add and configure the event log listener
 
 1. Right-click app.config in **Solution Explorer** and choose **Open**.
 
@@ -56,11 +56,11 @@ To view an event log, you can use **Server Explorer** or **Windows Event Viewer*
     > [!NOTE]
     > Typically, an application writes only errors to the event log. For information on filtering log output, see [Walkthrough: Filtering My.Application.Log Output](../../../../visual-basic/developing-apps/programming/log-info/walkthrough-filtering-my-application-log-output.md).
 
-### To write event information to the event log
+## To write event information to the event log
 
-- Use the `My.Application.Log.WriteEntry` or `My.Application.Log.WriteException` method to write information to the event log. For more information, see [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md) and [How to: Log Exceptions](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md).
+Use the `My.Application.Log.WriteEntry` or `My.Application.Log.WriteException` method to write information to the event log. For more information, see [How to: Write Log Messages](../../../../visual-basic/developing-apps/programming/log-info/how-to-write-log-messages.md) and [How to: Log Exceptions](../../../../visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md).
 
-    After you configure the event log listener for an assembly, it receives all messages that `My.Application.Log` writes from that assembly.
+After you configure the event log listener for an assembly, it receives all messages that `My.Application.Log` writes from that assembly.
 
 ## See also
 

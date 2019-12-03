@@ -9,12 +9,12 @@ ms.assetid: f42a55a8-3af8-4394-9fdd-bf12a93780eb
 When an application interface is added or removed by using the COM+ Service Configuration tool, the Web service configuration is updated within the application's configuration file. In the COM+ hosted mode, the Application.config file is placed in the Application Root Directory (%PROGRAMFILES%\ComPlus Applications\\{appid} is the default). In either of the Web-hosted modes, the Web.config file is placed in the specified vroot directory.  
   
 > [!NOTE]
->  Message signing should be used to protect against tampering of messages between a client and a server. Also, message or transport layer encryption should be used to protect against information disclosure from messages between a client and a server. As with Windows Communication Foundation (WCF) services, you should use throttling to limit the number of concurrent calls, connections, instances, and pending operations. This helps prevent over-consumption of resources. Throttling behavior is specified through service configuration file settings.  
+> Message signing should be used to protect against tampering of messages between a client and a server. Also, message or transport layer encryption should be used to protect against information disclosure from messages between a client and a server. As with Windows Communication Foundation (WCF) services, you should use throttling to limit the number of concurrent calls, connections, instances, and pending operations. This helps prevent over-consumption of resources. Throttling behavior is specified through service configuration file settings.  
   
 ## Example  
  Consider a component that implements the following interface:  
   
-```  
+```csharp
 [Guid("C551FBA9-E3AA-4272-8C2A-84BD8D290AC7")]  
 public interface IFinances  
 {  
@@ -25,7 +25,7 @@ public interface IFinances
   
  If the component is exposed as a Web service, the corresponding service contract that is exposed, and that clients would need to conform to, is as follows:  
   
-```  
+```csharp
 [ServiceContract(Session = true,  
 Namespace = "http://tempuri.org/C551FBA9-E3AA-4272-8C2A-84BD8D290AC7",  
 Name = "IFinances")]  
@@ -39,7 +39,7 @@ public interface IFinancesContract : IDisposable
 ```  
   
 > [!NOTE]
->  IID forms part of the initial namespace for the contract.  
+> IID forms part of the initial namespace for the contract.  
   
  Client applications that use this service would need to conform to this contract, along with using a binding that is compatible with the one specified in the application configuration.  
   

@@ -48,7 +48,7 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
  You can use the <xref:System.Drawing.Graphics.PageUnit%2A> property of the <xref:System.Drawing.Graphics> class to specify a unit of measure other than the pixel.  
   
 > [!NOTE]
->  You cannot set the <xref:System.Drawing.Graphics.PageUnit%2A> property to <xref:System.Drawing.GraphicsUnit.World>, as this is not a physical unit and will cause an exception.  
+> You cannot set the <xref:System.Drawing.Graphics.PageUnit%2A> property to <xref:System.Drawing.GraphicsUnit.World>, as this is not a physical unit and will cause an exception.  
   
  The following example draws a line from (0, 0) to (2, 1), where the point (2, 1) is 2 inches to the right and 1 inch down from the point (0, 0):  
   
@@ -56,7 +56,7 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
  [!code-vb[System.Drawing.CoordinateSystems#32](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/VB/Class1.vb#32)]  
   
 > [!NOTE]
->  If you don't specify a pen width when you construct your pen, the preceding example will draw a line that is one inch wide. You can specify the pen width in the second argument to the <xref:System.Drawing.Pen> constructor:  
+> If you don't specify a pen width when you construct your pen, the preceding example will draw a line that is one inch wide. You can specify the pen width in the second argument to the <xref:System.Drawing.Pen> constructor:  
   
  [!code-csharp[System.Drawing.CoordinateSystems#33](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/CS/Class1.cs#33)]
  [!code-vb[System.Drawing.CoordinateSystems#33](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/VB/Class1.vb#33)]  

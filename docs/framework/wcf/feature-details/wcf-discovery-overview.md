@@ -24,8 +24,7 @@ The Discovery APIs provide a unified programming model for the dynamic publicati
  To make a service discoverable, a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> must be added to the service host and a discovery endpoint must be added to specify where to listen for discovery messages. The following code example shows how a self-hosted service can be modified to make it discoverable.  
   
 ```csharp  
-Uri baseAddress = new Uri(string.Format("http://{0}:8000/discovery/scenarios/calculatorservice/{1}/",  
-        System.Net.Dns.GetHostName(), Guid.NewGuid().ToString()));
+Uri baseAddress = new Uri($"http://{System.Net.Dns.GetHostName()}:8000/discovery/scenarios/calculatorservice/{Guid.NewGuid().ToString()}/");
 
 // Create a ServiceHost for the CalculatorService type.
 using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress))
@@ -56,8 +55,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
  By default, service publication does not send out announcement messages. The service must be configured to send out announcement messages. This provides additional flexibility for service writers because they can announce the service separately from listening for discovery messages. Service announcement can also be used as a mechanism for registering services with a discovery proxy or other service registries. The following code shows how to configure a service to send announcement messages over a UDP binding.  
   
 ```csharp  
-Uri baseAddress = new Uri(string.Format("http://{0}:8000/discovery/scenarios/calculatorservice/{1}/",
-        System.Net.Dns.GetHostName(), Guid.NewGuid().ToString()));
+Uri baseAddress = new Uri($"http://{System.Net.Dns.GetHostName()}:8000/discovery/scenarios/calculatorservice/{Guid.NewGuid().ToString()}/");
 
 // Create a ServiceHost for the CalculatorService type.
 using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress))
@@ -154,4 +152,4 @@ class Client
  A discovery proxy can be used to communicate on behalf of the WCF service when the service is not running. The proxy can listen for probe or resolve messages and respond to the client. The client can then send messages directly to the service. When the client sends a message to the service it will be instantiated to respond to the message. For more information about implementing a discovery proxy see, [Implementing a Discovery Proxy](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md).  
   
 > [!NOTE]
->  For WCF Discovery to work correctly, all NICs (Network Interface Controller) should only have 1 IP address.
+> For WCF Discovery to work correctly, all NICs (Network Interface Controller) should only have 1 IP address.

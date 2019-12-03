@@ -25,8 +25,8 @@ In addition to querying a single table, you can also perform cross-table queries
   
 ## See also
 
-- [Querying DataSets](../../../../docs/framework/data/adonet/querying-datasets-linq-to-dataset.md)
-- [Single-Table Queries](../../../../docs/framework/data/adonet/single-table-queries-linq-to-dataset.md)
-- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)
+- [Querying DataSets](querying-datasets-linq-to-dataset.md)
+- [Single-Table Queries](single-table-queries-linq-to-dataset.md)
+- [Querying Typed DataSets](querying-typed-datasets.md)
 - [Join Operations](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb397908(v=vs.120))
-- [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)
+- [LINQ to DataSet Examples](linq-to-dataset-examples.md)

@@ -9,10 +9,11 @@ ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
 # \<add> Element for \<namedCaches>
 Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.  
   
- \<system.runtime.caching>  
-\<memoryCache>  
-\<namedCaches>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<memoryCache>**](memorycache-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<namedCaches>**](namedcaches-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
@@ -45,10 +46,10 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<namedCaches>](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)|Contains a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances.|  
+|[\<namedCaches>](namedcaches-element-cache-settings.md)|Contains a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances.|  
   
 ## Remarks  
- The `add` element adds an entry to the `namedCaches` collection for a memory cache. You can use the [clear](../../../../../docs/framework/configure-apps/file-schema/runtime/clear-element-for-namedcaches.md) element before you use the `add` element to be certain that there are no other named caches in the collection. This element can be used in the machine.config file and in the Web.config file.  
+ The `add` element adds an entry to the `namedCaches` collection for a memory cache. You can use the [clear](clear-element-for-namedcaches.md) element before you use the `add` element to be certain that there are no other named caches in the collection. This element can be used in the machine.config file and in the Web.config file.  
   
 ## Example  
  The following example shows how to define settings for the default `namedCache` entry to the `namedCaches` collection for a memory cache.  
@@ -72,4 +73,4 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
   
 ## See also
 
-- [\<namedCaches> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)
+- [\<namedCaches> Element (Cache Settings)](namedcaches-element-cache-settings.md)

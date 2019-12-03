@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ea38ae20-7e0a-427a-be77-d78fae719d82
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval2::CreateValueForType Method
 Gets a pointer to a new ICorDebugValue of the specified type, with an initial value of zero or null.  

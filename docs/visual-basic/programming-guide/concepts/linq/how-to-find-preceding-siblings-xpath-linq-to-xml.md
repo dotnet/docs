@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Preceding Siblings (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Preceding Siblings (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 59055718-d0a7-4db3-8901-18dd33587703
 ---
@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <CompanyName>Great Lakes Food Market</CompanyName>  
 <ContactName>Howard Snyder</ContactName>  

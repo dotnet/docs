@@ -44,7 +44,7 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
   
  The following code example shows the default <xref:System.ServiceModel.InstanceContextMode> value, <xref:System.ServiceModel.InstanceContextMode.PerSession> being explicitly set on a service class.  
   
-```  
+```csharp  
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]   
 public class CalculatorService : ICalculatorInstance   
 {   
@@ -57,7 +57,7 @@ public class CalculatorService : ICalculatorInstance
 ### Well-Known Singleton Services  
  One variation on single instance service objects is sometimes useful: you can create a service object yourself and create the service host using that object. To do so, you must also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.InstanceContextMode.Single> or an exception is thrown when the service host is opened.  
   
- Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=nameWithType> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default parameterless public constructor).  
+ Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=nameWithType> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a parameterless public constructor).  
   
  Note that when an object is provided to this constructor, some features related to the Windows Communication Foundation (WCF) instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> has no effect when a singleton object instance is provided. Similarly, any other instance-release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> for all operations.  
   
@@ -76,13 +76,13 @@ public class CalculatorService : ICalculatorInstance
 - <xref:System.ServiceModel.ConcurrencyMode.Reentrant>: Each service instance processes one message at a time, but accepts re-entrant operation calls. The service only accepts these calls when it is calling out through a WCF client object.  
   
 > [!NOTE]
->  Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. For more information, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
+> Understanding and developing code that safely uses more than one thread can be difficult to write successfully. Before using <xref:System.ServiceModel.ConcurrencyMode.Multiple> or <xref:System.ServiceModel.ConcurrencyMode.Reentrant> values, ensure that your service is properly designed for these modes. For more information, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A>.  
   
  The use of concurrency is related to the instancing mode. In <xref:System.ServiceModel.InstanceContextMode.PerCall> instancing, concurrency is not relevant, because each message is processed by a new <xref:System.ServiceModel.InstanceContext> and, therefore, never more than one thread is active in the <xref:System.ServiceModel.InstanceContext>.  
   
  The following code example demonstrates setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property to <xref:System.ServiceModel.ConcurrencyMode.Multiple>.  
   
-```  
+```csharp
 [ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple, InstanceContextMode = InstanceContextMode.Single)]   
 public class CalculatorService : ICalculatorConcurrency   
 {   

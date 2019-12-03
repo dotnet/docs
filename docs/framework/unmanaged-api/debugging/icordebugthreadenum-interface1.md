@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 796de687-7dd4-4b7b-a10b-8bf22dc7779f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThreadEnum Interface
 Implements ICorDebugEnum methods and enumerates ICorDebugThread arrays.  
@@ -29,7 +27,7 @@ Implements ICorDebugEnum methods and enumerates ICorDebugThread arrays.
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

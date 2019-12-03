@@ -49,7 +49,7 @@ Applications that consume query notifications have a common set of requirements.
   
  For the query notification samples to run correctly, the following Transact-SQL statements must be executed on the database server.  
   
-```  
+```sql
 CREATE QUEUE ContactChangeMessages;  
   
 CREATE SERVICE ContactChangeNotifications  
@@ -80,5 +80,5 @@ CREATE SERVICE ContactChangeNotifications
   
 ## See also
 
-- [Query Notifications in SQL Server](../../../../../docs/framework/data/adonet/sql/query-notifications-in-sql-server.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Query Notifications in SQL Server](query-notifications-in-sql-server.md)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Project an Anonymous Type (Visual Basic)"
+title: "How to: Project an Anonymous Type"
 ms.date: 07/20/2015
 ms.assetid: 30b42987-0e0e-4b2b-adb1-5255ddfbcd7b
 ---
@@ -40,7 +40,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 GREAL:Great Lakes Food Market:Howard Snyder  
 HUNGC:Hungry Coyote Import Store:Yoshi Latimer  
 LAZYK:Lazy K Kountry Store:John Steel  

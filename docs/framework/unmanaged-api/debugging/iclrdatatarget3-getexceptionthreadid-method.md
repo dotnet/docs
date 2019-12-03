@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 307d6ac7-4a86-45f3-999d-6b47004a68f2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget3::GetExceptionThreadID Method
 Called by the common language runtime (CLR) data access services to get the ID of the thread that threw the exception.  

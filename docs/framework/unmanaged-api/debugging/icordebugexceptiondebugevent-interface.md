@@ -2,8 +2,6 @@
 title: "ICorDebugExceptionDebugEvent Interface"
 ms.date: "03/30/2017"
 ms.assetid: f9ba60d8-b54d-417e-bb3e-fde4b41ca44c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionDebugEvent Interface
 Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) interface to support exception events.  
@@ -28,7 +26,7 @@ Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debug
 - [MANAGED_EXCEPTION_UNHANDLED](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md)  
   
 > [!NOTE]
->  The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
+> The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

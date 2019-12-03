@@ -170,7 +170,7 @@ Some of the terminology used when discussing security may be unfamiliar. This to
  A user account name (sometimes referred to as the *user logon name*) and a domain name identifying the domain in which the user account is located. This is the standard usage for logging on to a Windows domain. The format is: someone@example.com (as for an email address).  
   
 > [!NOTE]
->  In addition to standard UPN form, WCF accepts UPNs in down-level form, for example, cohowinery.com\someone.  
+> In addition to standard UPN form, WCF accepts UPNs in down-level form, for example, cohowinery.com\someone.  
   
  X.509  
  An internationally recognized standard for certificates that defines their required parts.  

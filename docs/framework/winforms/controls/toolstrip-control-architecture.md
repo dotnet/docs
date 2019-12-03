@@ -321,7 +321,7 @@ You can add a <xref:System.Windows.Forms.ToolStripSeparator> at design time by c
 
 - Construct a <xref:System.Windows.Forms.ToolStripControlHost> with a class that derives from <xref:System.Windows.Forms.Control>. To fully access the hosted control and properties, you must cast the <xref:System.Windows.Forms.ToolStripControlHost.Control%2A> property back to the actual class it represents.
 
-- Extend <xref:System.Windows.Forms.ToolStripControlHost>, and in the inherited class's default constructor, call the base class constructor passing a class that derives from <xref:System.Windows.Forms.Control>. This option lets you wrap common control methods and properties for easy access in a <xref:System.Windows.Forms.ToolStrip>.
+- Extend <xref:System.Windows.Forms.ToolStripControlHost>, and in the inherited class's parameterless constructor, call the base class constructor passing a class that derives from <xref:System.Windows.Forms.Control>. This option lets you wrap common control methods and properties for easy access in a <xref:System.Windows.Forms.ToolStrip>.
 
 ### ToolStripComboBox
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 159ccfcf-b37c-4ad9-8e0d-a9a443262472
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugTypeEnum Interface
 Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.  
@@ -29,7 +27,7 @@ Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

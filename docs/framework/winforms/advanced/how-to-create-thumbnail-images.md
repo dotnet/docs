@@ -20,7 +20,7 @@ A thumbnail image is a small version of an image. You can create a thumbnail ima
  ![Screenshot that shows the output thumbnail.](./media/how-to-create-thumbnail-images/construct-thumbnail-image.png)  
   
 > [!NOTE]
->  In this example, a callback method is declared, but never used. This supports all versions of GDI+.  
+> In this example, a callback method is declared, but never used. This supports all versions of GDI+.  
   
  [!code-csharp[System.Drawing.WorkingWithImages#71](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#71)]
  [!code-vb[System.Drawing.WorkingWithImages#71](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#71)]  

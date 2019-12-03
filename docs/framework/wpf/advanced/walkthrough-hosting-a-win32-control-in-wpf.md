@@ -21,7 +21,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  Because the sample that accompanies this topic is implemented in C#, it makes use of Platform Invocation Services (PInvoke) to access the Windows API. Some familiarity with PInvoke is helpful but not essential.  
   
 > [!NOTE]
->  This topic includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. You can obtain or view complete code from [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control).  
+> This topic includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. You can obtain or view complete code from [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control).  
   
 <a name="basic_procedure"></a>   
 ## The Basic Procedure  
@@ -49,7 +49,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
 8. In your code-behind file, create an instance of the control hosting class and make it a child of the <xref:System.Windows.Controls.Border> element that is intended to host the window.  
   
-9. Communicate with the hosted window by sending it [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] messages and handling messages from its child windows, such as notifications sent by controls.  
+9. Communicate with the hosted window by sending it Microsoft Windows messages and handling messages from its child windows, such as notifications sent by controls.  
   
 <a name="page_layout"></a>   
 ## Implement the Page Layout  
@@ -111,7 +111,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
  The sample attaches a handler to the <xref:System.Windows.Interop.HwndHost.MessageHook> event of the `ControlHost` to receive messages from the control. This event is raised for every message sent to the hosted window. In this case, these are the messages sent to window that wraps the actual ListBox control, including notifications from the control. The sample calls SendMessage to obtain information from the control and modify its contents. The details of how the page communicates with the control are discussed in the next section.  
   
 > [!NOTE]
->  Notice that there are two PInvoke declarations for SendMessage. This is necessary because one uses the `wParam` parameter to pass a string and the other uses it to pass an integer. You need a separate declaration for each signature to ensure that the data is marshaled correctly.  
+> Notice that there are two PInvoke declarations for SendMessage. This is necessary because one uses the `wParam` parameter to pass a string and the other uses it to pass an integer. You need a separate declaration for each signature to ensure that the data is marshaled correctly.  
   
  [!code-csharp[WPFHostingWin32Control#HostWindowClass](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/Page1.xaml.cs#hostwindowclass)]
  [!code-vb[WPFHostingWin32Control#HostWindowClass](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFHostingWin32Control/VisualBasic/Page1.xaml.vb#hostwindowclass)]  

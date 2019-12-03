@@ -37,7 +37,7 @@ The following example program creates a form that calculates Fibonacci numbers. 
 ## Robust Programming  
   
 > [!CAUTION]
->  When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
+> When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.  
   
 ## See also
 

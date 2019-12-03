@@ -48,7 +48,7 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
 ```  
   
 > [!NOTE]
->  Simply defining a filter does not cause messages to be evaluated against the filter. The filter must be added to a filter table, which is then associated with the service endpoint exposed by the Routing Service.  
+> Simply defining a filter does not cause messages to be evaluated against the filter. The filter must be added to a filter table, which is then associated with the service endpoint exposed by the Routing Service.  
   
 ### Namespace Table  
  When using an XPath filter, the filter data that contains the XPath query can become extremely large due to the use of namespaces. To alleviate this problem the Routing Service provides the ability to define your own namespace prefixes by using the namespace table.  
@@ -102,7 +102,7 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
  More complex routing logic can be implemented by specifying priority levels for each filter; the Routing Service evaluates all filters at the highest priority level first. If a message matches a filter of this level, no filters of a lower priority are processed. For example, an incoming one-way message is first evaluated against all filters with a priority of 2. The message does not match any filter at this priority level, so next the message is compared against filters with a priority of 1. Two priority 1 filters match the message, and because it is a one-way message it is routed to both destination endpoints.  Because a match was found among the priority 1 filters, no filters of priority 0 are evaluated.  
   
 > [!NOTE]
->  If no priority is specified, the default priority of 0 is used.  
+> If no priority is specified, the default priority of 0 is used.  
   
  The following example defines a filter table that specifies priorities of 2, 1, and 0 for the filters referenced in the table.  
   
@@ -124,7 +124,7 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
  In the preceding example, if a message matches the XPathFilter, it will be routed to the roundingCalcEndpoint and no further filters in the table will be evaluated because all other filters are of a lower priority. However, if the message does not match the XPathFilter it will then be evaluated against all filters of the next lower priority, EndpointNameFilter and PrefixAddressFilter.  
   
 > [!NOTE]
->  When possible, use exclusive filters instead of specifying a priority because priority evaluation can result in performance degradation.  
+> When possible, use exclusive filters instead of specifying a priority because priority evaluation can result in performance degradation.  
   
 ### Backup Lists  
  Each filter in the filter table can optionally specify a backup list, which is a named collection of endpoints (<xref:System.ServiceModel.Routing.Configuration.BackupEndpointCollection>). This collection contains an ordered list of endpoints that the message will be transmitted to in the event of a <xref:System.ServiceModel.CommunicationException> when sending to the primary endpoint specified in <xref:System.ServiceModel.Routing.Configuration.FilterTableEntryElement.EndpointName%2A>. The following example defines a backup list named "backupServiceEndpoints" that contains two endpoints.  

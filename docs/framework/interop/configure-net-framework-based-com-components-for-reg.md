@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "registration-free COM interop, configuring .NET-based components"
   - "activation, registration-free"
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Configure .NET Framework-Based COM Components for Registration-Free Activation
 Registration-free activation for .NET Framework-based components is only slightly more complicated than it is for COM components. The setup requires two manifests:  
@@ -160,11 +158,9 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 3. Compile the assembly's source file again and specify the resource file by using the **/win32res** option:  
   
-    ```  
-    /win32res:myresource.res  
-    ```  
+    `/win32res:myresource.res`  
   
-     Again, `myresource.res` is the name of the resource file containing embedded resource.  
+     Again, `myresource.res` is the name of the resource file containing embedded resources.  
   
 ## See also
 

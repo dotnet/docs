@@ -8,20 +8,20 @@ You can make entities serializable when you generate your code. Entity classes a
   
  Developers using Visual Studio can use the Object Relational Designer for this purpose.  
   
- If you are using the SQLMetal command-line tool, use the **/serialization** option with the `unidirectional` argument. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md).  
+ If you are using the SQLMetal command-line tool, use the **/serialization** option with the `unidirectional` argument. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## Example  
  The following SQLMetal command lines produce files that have serializable entities.  
   
-```  
+```console  
 sqlmetal /code:nwserializable.vb /language:vb "c:\northwnd.mdf" /sprocs /functions /pluralize /serialization:unidirectional  
 ```  
   
-```  
+```console  
 sqlmetal /code:nwserializable.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize /serialization:unidirectional  
 ```  
   
 ## See also
 
-- [Serialization](../../../../../../docs/framework/data/adonet/sql/linq/serialization.md)
-- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
+- [Serialization](serialization.md)
+- [Creating the Object Model](creating-the-object-model.md)

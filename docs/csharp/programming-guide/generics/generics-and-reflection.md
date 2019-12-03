@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 162fd9b4-dd5b-4abb-8c9b-e44e21e2f451
 ---
 # Generics and Reflection (C# Programming Guide)
-Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md).  
+Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](./generics-in-the-run-time.md).  
   
  In the .NET Framework 2.0, several new members are added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
@@ -41,7 +41,7 @@ Because the Common Language Runtime (CLR) has access to generic type information
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Generics](../../../csharp/programming-guide/generics/index.md)
+- [C# Programming Guide](../index.md)
+- [Generics](./index.md)
 - [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../standard/generics/index.md)

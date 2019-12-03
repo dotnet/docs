@@ -8,14 +8,13 @@ ms.assetid: 6ebf0240-d7be-4493-b0fe-f00fd5989d77
 
 Defines the SOAP message security settings on this `netMsmqBinding` binding.
 
-```xml
-<system.ServiceModel>
-  <bindings>
-    <netMsmqBinding>
-      <binding>
-        <security>
-          <message>
-```
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<netMsmqBinding>**](netmsmqbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<security>**](security-of-netmsmqbinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<message>**  
 
 ## Syntax
 
@@ -49,7 +48,7 @@ None
 
 |Element|Description|
 |-------------|-----------------|
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-netmsmqbinding.md)|Defines the security settings for a binding.|
+|[\<security>](security-of-netmsmqbinding.md)|Defines the security settings for a binding.|
 
 ## See also
 
@@ -57,9 +56,9 @@ None
 - <xref:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message%2A>
 - <xref:System.ServiceModel.NetMsmqSecurity.Message%2A>
 - <xref:System.ServiceModel.MessageSecurityOverMsmq>
-- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
-- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)
-- [Using Bindings to Configure Services and Clients](../../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../../../docs/framework/misc/binding.md)
+- [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
+- [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
+- [\<binding>](bindings.md)

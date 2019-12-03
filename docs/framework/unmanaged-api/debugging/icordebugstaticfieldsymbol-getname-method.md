@@ -2,8 +2,6 @@
 title: "ICorDebugStaticFieldSymbol::GetName Method"
 ms.date: "03/30/2017"
 ms.assetid: e2be4af2-15d1-4e6a-8b68-1d78c93294a4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStaticFieldSymbol::GetName Method
 Gets the name of the static field.  
@@ -31,7 +29,7 @@ HRESULT GetName(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

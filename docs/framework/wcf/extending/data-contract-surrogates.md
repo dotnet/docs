@@ -56,7 +56,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
   
  The `targetType` parameter refers to the declared type of the member. This parameter is the surrogated type returned by the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDataContractType%2A> method. The serializer does not enforce that the object returned is assignable to this type. The `obj` parameter is the object to serialize, and will be converted to its surrogate if necessary. This method must return the input object if the surrogated does not handle the object. Otherwise, the new surrogate object will be returned. The surrogate is not called if the object is null. Numerous surrogate mappings for different instances may be defined within this method.  
   
- When creating a <xref:System.Runtime.Serialization.DataContractSerializer>, you can instruct it to preserve object references. (For more information, see [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md).) This is done by setting the `preserveObjectReferences` parameter in its constructor to `true`. In that case, the surrogate is called only once for an object since all subsequent serializations just write the reference into the stream. If `preserveObjectReferences` is set to `false`, then the surrogate is called every time an instance is encountered.  
+ When creating a <xref:System.Runtime.Serialization.DataContractSerializer>, you can instruct it to preserve object references. (For more information, see [Serialization and Deserialization](../feature-details/serialization-and-deserialization.md).) This is done by setting the `preserveObjectReferences` parameter in its constructor to `true`. In that case, the surrogate is called only once for an object since all subsequent serializations just write the reference into the stream. If `preserveObjectReferences` is set to `false`, then the surrogate is called every time an instance is encountered.  
   
  If the type of the instance serialized differs from the declared type, type information is written into the stream, for example, `xsi:type` to allow the instance to be deserialized at the other end. This process occurs whether the object is surrogated or not.  
   
@@ -125,7 +125,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
 ### GetKnownCustomDataTypes Method  
  This method obtains custom data types defined from the schema. The method is optional for schema importation.  
   
- The method is called at the beginning of schema export and import. The method returns the custom data types used in the schema exported or imported. The method is passed a <xref:System.Collections.ObjectModel.Collection%601> (the `customDataTypes` parameter), which is a collection of types. The method should add additional known types to this collection. The known custom data types are needed to enable serialization and deserialization of custom data using the <xref:System.Runtime.Serialization.DataContractSerializer>. For more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md).  
+ The method is called at the beginning of schema export and import. The method returns the custom data types used in the schema exported or imported. The method is passed a <xref:System.Collections.ObjectModel.Collection%601> (the `customDataTypes` parameter), which is a collection of types. The method should add additional known types to this collection. The known custom data types are needed to enable serialization and deserialization of custom data using the <xref:System.Runtime.Serialization.DataContractSerializer>. For more information, see [Data Contract Known Types](../feature-details/data-contract-known-types.md).  
   
 ## Implementing a Surrogate  
  To use the data contract surrogate within WCF, you must follow a few special procedures.  
@@ -135,7 +135,7 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
   
 ##### To implement serialization and deserialization  
   
-1. Create an instance of the <xref:System.ServiceModel.ServiceHost> for your service. For complete instructions, see [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md).  
+1. Create an instance of the <xref:System.ServiceModel.ServiceHost> for your service. For complete instructions, see [Basic WCF Programming](../basic-wcf-programming.md).  
   
 2. For every <xref:System.ServiceModel.Description.ServiceEndpoint> of the specified service host, find its <xref:System.ServiceModel.Description.OperationDescription>.  
   
@@ -192,4 +192,4 @@ The data contract *surrogate* is an advanced feature built upon the Data Contrac
 - <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior>
 - <xref:System.Runtime.Serialization.ImportOptions>
 - <xref:System.Runtime.Serialization.ExportOptions>
-- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+- [Using Data Contracts](../feature-details/using-data-contracts.md)

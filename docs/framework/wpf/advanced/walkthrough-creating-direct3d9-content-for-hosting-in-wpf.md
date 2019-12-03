@@ -112,7 +112,7 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 
 11. Replace the automatically generated code with the following code.
 
-    ```
+    ```cpp
     LIBRARY "D3DContent"
 
     EXPORTS

@@ -1,5 +1,5 @@
 ---
-title: "Performance of Chained Queries (LINQ to XML) (Visual Basic)"
+title: "Performance of Chained Queries (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 589f2adc-69f9-404d-b9d6-4c28dabea7f7
 ---
@@ -24,7 +24,7 @@ Next
 
 This example produces the following output:
 
-```
+```console
 4
 ```
 

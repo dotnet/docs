@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare and Use XML Namespace Prefixes (Visual Basic)"
+title: "How to: Declare and Use XML Namespace Prefixes"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "LINQ to XML [Visual Basic], XML namespace prefixes"

@@ -8,8 +8,11 @@ ms.assetid: e5b01fc8-ee84-48b7-95fd-95ab54fa871f
 
 A configuration element that allows you to define virtual service activation settings that map to your Windows Communication Foundation (WCF) service types. This makes it possible to activate services hosted in WAS/IIS without an .svc file.
 
-\<system.ServiceModel>\
-\<serviceHostingEnvironment>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceHostingEnvironment>**](servicehostingenvironment.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceActivations>**](serviceactivations.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
 
 ## Syntax
 
@@ -42,7 +45,7 @@ None.
 
 |Element|Description|
 |-------------|-----------------|
-|[\<serviceHostingEnvironment>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md)|A configuration section that describes activation settings.|
+|[\<serviceHostingEnvironment>](servicehostingenvironment.md)|A configuration section that describes activation settings.|
 
 ## Remarks
 

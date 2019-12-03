@@ -6,7 +6,7 @@ ms.assetid: 01b8e746-12d3-471d-b811-7539e4547784
 # LINQ to XML vs. Other XML Technologies
 This topic compares [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to the following XML technologies: <xref:System.Xml.XmlReader>, XSLT, MSXML, and XmlLite. This information can help you decide which technology to use.  
   
- For a comparison of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to the Document Object Model (DOM), see [LINQ to XML vs. DOM (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-vs-dom.md).  
+ For a comparison of [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to the Document Object Model (DOM), see [LINQ to XML vs. DOM (C#)](./linq-to-xml-vs-dom.md).  
   
 ## LINQ to XML vs. XmlReader  
  <xref:System.Xml.XmlReader> is a fast, forward-only, non-caching parser.  
@@ -48,4 +48,4 @@ This topic compares [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to the
   
 ## See also
 
-- [Getting Started (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)
+- [Getting Started (LINQ to XML)](./linq-to-xml-overview.md)

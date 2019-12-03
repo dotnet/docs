@@ -1,5 +1,5 @@
 ---
-title: "<remarks> (Visual Basic)"
+title: "<remarks>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<remarks> XML tag"
@@ -24,7 +24,7 @@ Specifies a remarks section for the member.
   
  This information appears in the Object Browser. For information about the Object Browser, see [Viewing the Structure of Code](/visualstudio/ide/viewing-the-structure-of-code).  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<remarks>` tag to explain what the `UpdateRecord` method does.  

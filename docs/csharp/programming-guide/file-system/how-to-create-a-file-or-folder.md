@@ -65,5 +65,5 @@ You can programmatically create a folder on your computer, create a subfolder, c
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+- [C# Programming Guide](../index.md)
+- [File System and the Registry (C# Programming Guide)](./index.md)

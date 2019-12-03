@@ -1,5 +1,5 @@
 ---
-title: "Embedded Expressions in XML (Visual Basic)"
+title: "Embedded Expressions in XML"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlEmbeddedExpression"
@@ -72,7 +72,7 @@ Embedded expressions enable you to create XML literals that contain expressions 
  Within an XML literal, you can access the XML namespace prefixes declared with the `Imports` statement. You can declare a new XML namespace prefix, or shadow an existing XML namespace prefix, in an element by using the `xmlns` attribute. The new namespace is available to the child nodes of that element, but not to XML literals in embedded expressions.  
   
 > [!NOTE]
->  When you declare an XML namespace prefix by using the `xmlns` namespace attribute, the attribute value must be a constant string. In this regard, using the `xmlns` attribute is like using the `Imports` statement to declare an XML namespace. You cannot use an embedded expression to specify the XML namespace value.  
+> When you declare an XML namespace prefix by using the `xmlns` namespace attribute, the attribute value must be a constant string. In this regard, using the `xmlns` attribute is like using the `Imports` statement to declare an XML namespace. You cannot use an embedded expression to specify the XML namespace value.  
   
 ## See also
 

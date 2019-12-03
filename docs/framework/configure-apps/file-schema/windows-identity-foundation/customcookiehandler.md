@@ -7,10 +7,11 @@ author: "BrucePerlerMS"
 # \<customCookieHandler>
 Sets the custom cookie handler type. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
   
- \<system.identityModel.services>  
-\<federationConfiguration>  
-\<cookieHandler>  
-\<customCookieHandler>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<cookieHandler>**](cookiehandler.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<customCookieHandler>**  
   
 ## Syntax  
   
@@ -32,7 +33,7 @@ Sets the custom cookie handler type. This element may only be present if the `mo
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|Specifies a custom type that derives from the <xref:System.IdentityModel.Services.CookieHandler> class. For more information about how to specify the `type` attribute, see [Custom Type References](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md).|  
+|type|Specifies a custom type that derives from the <xref:System.IdentityModel.Services.CookieHandler> class. For more information about how to specify the `type` attribute, see [Custom Type References](../windows-workflow-foundation/index.md).|  
   
 ### Child Elements  
  None  
@@ -41,7 +42,7 @@ Sets the custom cookie handler type. This element may only be present if the `mo
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<cookieHandler>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md)|Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> uses to read and write cookies.|  
+|[\<cookieHandler>](cookiehandler.md)|Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> uses to read and write cookies.|  
   
 ## Remarks  
  When you specify a custom cookie handler by setting the `mode` attribute of the `<cookieHandler>` element to "Custom", you must specify the type of the custom cookie handler by including a `<customCookieHandler>` child element that references the cookie handler type. This element cannot be specified when the `mode` attribute is set to "Chunked" or "Default". Custom cookie handlers must derive from the <xref:System.IdentityModel.Services.CookieHandler> class.  

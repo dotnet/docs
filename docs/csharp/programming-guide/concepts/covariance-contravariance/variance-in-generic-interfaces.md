@@ -8,7 +8,7 @@ ms.assetid: 4828a8f9-48c0-4128-9749-7fcd6bf19a06
 
 .NET Framework 4 introduced variance support for several existing generic interfaces. Variance support enables implicit conversion of classes that implement these interfaces. 
 
-Staring with .NET Framework 4, the following interfaces are variant:
+Starting with .NET Framework 4, the following interfaces are variant:
 
 - <xref:System.Collections.Generic.IEnumerable%601> (T is covariant)
 
@@ -71,7 +71,7 @@ class Program
 }
 ```
 
-For more examples, see [Using Variance in Interfaces for Generic Collections (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md).
+For more examples, see [Using Variance in Interfaces for Generic Collections (C#)](./using-variance-in-interfaces-for-generic-collections.md).
 
 Variance in generic interfaces is supported for reference types only. Value types do not support variance. For example, `IEnumerable<int>` cannot be implicitly converted to `IEnumerable<object>`, because integers are represented by a value type.
 
@@ -95,7 +95,7 @@ IEnumerable<Object> listObjects = new List<String>();
 
 ## See also
 
-- [Using Variance in Interfaces for Generic Collections (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md)
-- [Creating Variant Generic Interfaces (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md)
+- [Using Variance in Interfaces for Generic Collections (C#)](./using-variance-in-interfaces-for-generic-collections.md)
+- [Creating Variant Generic Interfaces (C#)](./creating-variant-generic-interfaces.md)
 - [Generic Interfaces](../../../../standard/generics/interfaces.md)
-- [Variance in Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/variance-in-delegates.md)
+- [Variance in Delegates (C#)](./variance-in-delegates.md)

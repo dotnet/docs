@@ -180,6 +180,6 @@ partial class Customer
 ## See also
 
 - [Partial Classes and Methods](../../../../../csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)
-- [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)
+- [Partial Methods](../../../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)
 - [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)
-- [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)
+- [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md)

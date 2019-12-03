@@ -5,7 +5,7 @@ title: [ARTICLE TITLE]
 description:
 author: [GITHUB USERNAME]
 ms.author: [MICROSOFT ALIAS OF INTERNAL OWNER]
-ms.date: [CREATION/UPDATE DATE - mm/dd/yyyy]
+ms.date: [CREATION/UPDATE DATE - MM/dd/yyyy]
 ms.topic: [TOPIC TYPE]
 ms.prod: [PRODUCT VALUE]
 helpviewer_keywords: [OFFLINE BOOK INDEX ENTRIES]
@@ -15,13 +15,13 @@ helpviewer_keywords: [OFFLINE BOOK INDEX ENTRIES]
 #ROBOTS:
 #ms.technology:
 #keywords:
-#ms.devlang: [LANGUAGES]
+#dev_langs: [LANGUAGES]
 #manager: [MICROSOFT ALIAS]
 
 ---
 # Metadata and Markdown Template
 
-This dotnet/docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
+This dotnet/docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content.
 
@@ -36,10 +36,10 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.
 - **author** and **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The **ms.author** field, on the other hand, should contain a Microsoft alias and indicates the person responsible for maintaining the article.
 - **ms.topic**: The topic type. The most common value is `conceptual` and is set at a global level. Other common values used are `tutorial`, `overview`, and `reference`.
-- **ms.devlang** defines the language filter displayed for the topic. You can see a list of the supported values in the [Supported languages](#supported-languages) section. Only needs to be set when there's more than one programming language covered in the topic. Typically, we only use `csharp`, `vb`, `fsharp`, and `cpp` for this value in our content.
+- **dev_langs** defines the language filter displayed for the topic. You can see a list of the supported values in the [Supported languages](#supported-languages) section. Only needs to be set when there's more than one programming language covered in the topic. Typically, we only use `csharp`, `vb`, `fsharp`, and `cpp` for this value in our content.
 - **ms.prod**: Product identification used for BI purposes. They're usually set at a global level, so they don't usually appear in the metadata block of each article.
 - **ms.technology**: Additional BI classification. Some of the supported values are: `devlang-csharp` for C# topics, `devlang-fsharp` for F# topics, and `devlang-visual-basic` for VB topics. For other guides, the values will vary, so ask a member of the team for guidance.
-- **ms.date**: A date in the format MM/DD/YYYY. Displayed on the published page to indicate the last time the article was substantially edited or guaranteed "fresh" (that is, the article was reviewed and considered up-to-date).
+- **ms.date**: A date in the format MM/dd/yyyy. Displayed on the published page to indicate the last time the article was substantially edited or guaranteed "fresh" (that is, the article was reviewed and considered up-to-date).
 - **helpviewer_keywords**: Entries are used for the offline books index (functionality in Visual Studio).
 - **f1_keywords**: Connects the article to the F1 key (functionality in Visual Studio).
 
@@ -52,32 +52,31 @@ All basic and GitHub Flavored Markdown (GFM) is supported. For more information 
 
 Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
 
-- Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
-- Use the [HTML entity code](https://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
+- Put a backslash before the special character to "escape" it (for example, `\*` for an \*)
+- Use the [HTML entity code](https://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for an &#42;).
 
 ## File name
 
 File names use the following rules:
 
-* Contain only lowercase letters, numbers, and hyphens.
-* No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
-* No small words - don't include a, and, the, in, or, etc.
-* Must be in Markdown and use the .md file extension.
-* Keep file names reasonably short. They are part of the URL for your articles.
+- Contain only lowercase letters, numbers, and hyphens.
+- No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
+- Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
+- No small words - don't include a, and, the, in, or, etc.
+- Must be in Markdown and use the .md file extension.
+- Keep file names reasonably short. They are part of the URL for your articles.
 
 ## Headings
 
-Use sentence-style capitalization. Always capitalize:
+Use sentence-style capitalization. Capitalize the first letter of the first word of a heading, proper nouns, and the first letter following a colon (for example, "Tutorial: Predict prices using regression with ML.NET").
 
-- The first word of a heading.
-- The word following a colon in a title or heading (for example, "How to: Sort an array").
+Don't add a colon after "How to" (for example, "How to sort an array" and not "How to: Sort an array").
 
 Headings should be done using atx-style, that is, use 1-6 hash characters (#) at the start of the line to indicate a heading, corresponding to HTML headings levels H1 through H6. Examples of first- and second-level headers are used above.
 
 There **must** be only one first-level heading (H1) in your topic, which will be displayed as the on-page title.
 
-If your heading finishes with a `#` character, you need to add an extra `#` character in the end in order for the title to render correctly. For example, `# Async Programming in F# #`.
+If your heading ends in a `#` character, you need to escape it for the title to render correctly. For example, `# Async programming in F\#`.
 
 Second-level headings will generate the on-page TOC that appears in the "In this article" section underneath the on-page title.
 
@@ -144,9 +143,9 @@ The UID equates to the fully qualified type and member name.
 
 If you add a \* (or %2A) after the UID, the link then represents the overload page and not a specific API. For example, you can use that when you want to link to the [List\<T>.BinarySearch Method](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) page in a generic way instead of a specific overload such as [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). You can also use \* to link to a member page when the member is not overloaded; this saves you from having to include the parameter list in the UID.
 
-To link to a specific method overload, you must include the fully qualified type name of each of the method's parameters. For example, \<xref:System.DateTime.ToString> links to the parameterless [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) method, while \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> links to the  [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) method. You can find the UIDs of a particular overloaded member from `https://xref.docs.microsoft.com/autocomplete`. The query string "?text=*\<type-member-name>*" identifies the type or member whose UIDs you'd like to see. For example, `https://xref.docs.microsoft.com/autocomplete?text=string.format` retrieves the [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) overloads.
+To link to a specific method overload, you must include the fully qualified type name of each of the method's parameters. For example, \<xref:System.DateTime.ToString> links to the parameterless [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString) method, while \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> links to the  [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_) method. You can find the UIDs of a particular overloaded member from <https://xref.docs.microsoft.com/autocomplete>. The query string "?text=*\<type-member-name>*" identifies the type or member whose UIDs you'd like to see. For example, <https://xref.docs.microsoft.com/autocomplete?text=string.format> retrieves the [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format) overloads.
 
-To link to a generic type, such as [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), you use the ` (%60) character followed by the number of generic type parameters. For example, \<xref:System.Nullable%601> links to the [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) type, while \<xref:System.Func%602> links to the [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) delegate.
+To link to a generic type, such as [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), you use the \` (%60) character followed by the number of generic type parameters. For example, \<xref:System.Nullable%601> links to the [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1) type, while \<xref:System.Func%602> links to the [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2) delegate.
 
 You can use one of the following syntax:
 
@@ -169,7 +168,7 @@ For more information about using this notation, see [Using cross reference](http
 There are two ways to find the UID:
 
 - View the source for the API page you want to link to and find the ms.assetid value. Note that individual overload values are not shown in the source.
-- Use the following tool to search for UIDs: https://xref.docs.microsoft.com/autocomplete?text=tostring (replace tostring with parts of the API name you're trying to find). The tool searches for the provided `text` query parameter in any part of the UID. For example, you can search for member name (ToString), partial member name (ToStri), type and member name (Double.ToString), etc.
+- Use the following tool to search for UIDs: <https://xref.docs.microsoft.com/autocomplete?text=tostring> (replace tostring with parts of the API name you're trying to find). The tool searches for the provided `text` query parameter in any part of the UID. For example, you can search for member name (ToString), partial member name (ToStri), type and member name (Double.ToString), etc.
 
 When the UID contains the special characters \`, \# or \*, the UID value needs to be HTML encoded as `%60`, `%23` and `%2A` respectively. You'll sometimes see parentheses encoded but it's not a requirement.
 
@@ -246,22 +245,22 @@ You can include the code using the following syntax:
 [!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
 ```
 
-* `-<language>` (*optional* but *recommended*)
-  * Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
+- `-<language>` (*optional* but *recommended*)
+  - Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
 
-* `<name>` (*optional*)
-  * Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
+- `<name>` (*optional*)
+  - Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
 
-* `<pathToFile>` (*mandatory*)
-  * Relative path in the file system that indicates the code snippet file to reference.
+- `<pathToFile>` (*mandatory*)
+  - Relative path in the file system that indicates the code snippet file to reference.
 
-* `<queryoption>` and `<queryoptionvalue>` (*optional*)
-  * Used together to specify how the code should be retrieved from the file:
-    * `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
+- `<queryoption>` and `<queryoptionvalue>` (*optional*)
+  - Used together to specify how the code should be retrieved from the file:
+    - `#`:  `#L{startlinenumber}-L{endlinenumber}` (line range) *or* `#{tagname}` (tag name).
     We discourage the use of line numbers because they are very brittle. Tag name is the preferred way of referencing code snippets.
-    * `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
-    * `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
-    * `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
+    - `range`: `?range=1,3-5` A range of lines. This example includes lines 1, 3, 4, and 5.
+    - `dedent`: `?dedent=8` Dedents the lines by a number of spaces--in this case, 8. This can be combined with the `range` and other query options that select a subset of the lines of a file.
+    - `outdent`: `?outdent=8` Reverses the indent of the lines by a number of spaces--in this case, 8. This can be combined with `range` and other query options that select a subset of the lines of a file.
 
 We recommend using the tag name option whenever possible. The tag name is the name of a region or of a code comment in the format of `Snippettagname` present in the source code. The following example shows how to refer to the tag name `1`:
 
@@ -283,35 +282,57 @@ Use three backticks (\`\`\`) + a language ID to apply language-specific color co
 
 |Name|Markdown label|
 |-----|-------|
-|ASP.NET with C#|aspx-csharp|
-|ASP.NET with VB|aspx-vb|
+|.NET Console|dotnetcli|
+|ASP.NET (C#)|aspx-csharp|
+|ASP.NET (VB)|aspx-vb|
 |Azure CLI|azurecli|
 |AzCopy|azcopy|
+|Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
+|C++/CX|cppcx|
+|C++/WinRT|cppwinrt|
 |C#|csharp|
 |C# in browser|csharp-interactive|
 |Console|console|
+|CSHTML|cshtml|
+|DAX|dax|
+|Dockerfile|dockerfile|
 |F#|fsharp|
+|Go|go|
+|HTML|html|
+|HTTP|http|
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto Query Language|kusto|
+|Markdown|md|
 |NodeJS|nodejs|
 |Objective-C|objc|
+|OData|odata|
 |PHP|php|
+|protobuf|protobuf|
+|PowerApps (dot decimal separator)|powerapps-dot|
+|PowerApps (comma decimal separator)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
+|Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
-|VB|vb|
+|TypeScript|typescript|
+|Visual Basic|vb|
+|VBScript|vbscript|
 |XAML|xaml|
 |XML|xml|
+|yml|yml|
 
 The `csharp-interactive` name specifies the C# language, and the ability to run the samples from the browser. These snippets are compiled and executed in a Docker container, and the results of that program execution are displayed in the user's browser window.
 
 The following are examples of code blocks using the language IDs for C# (\`\`\`csharp), Python (\`\`\`python), and PowerShell (\`\`\`powershell).
 
-##### C&#9839;
+##### C\#
 
 ```csharp
 using System;
@@ -420,7 +441,7 @@ docs.microsoft provides a few additional extensions to GitHub Flavored Markdown.
 
 ### Alerts
 
-It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't diferentiate them.
+It's important to use the following alert styles so they render with the proper style in the documentation site. However, the rendering engine on GitHub doesn't differentiate them.
 
 ```markdown
 > [!NOTE]
@@ -453,11 +474,12 @@ You can embed the Markdown of one file into another using an include.
 A custom style is available for lists. You can render lists with green check marks.
 
 > [!div class="checklist"]
-> * How to create a .NET Core app
-> * How to add a reference to the Microsoft.XmlSerializer.Generator package
-> * How to edit your MyApp.csproj to add dependencies
-> * How to add a class and an XmlSerializer
-> * How to build and run the application
+>
+> - How to create a .NET Core app
+> - How to add a reference to the Microsoft.XmlSerializer.Generator package
+> - How to edit your MyApp.csproj to add dependencies
+> - How to add a class and an XmlSerializer
+> - How to build and run the application
 
 You can see an example of checked lists in action in the [.NET Core docs](https://docs.microsoft.com/dotnet/core/additional-tools/xml-serializer-generator).
 
@@ -471,8 +493,9 @@ You can see an example of buttons in action in the [Visual Studio docs](https://
 ### Selectors
 
 > [!div class="op_single_selector"]
-- [macOS](../docs/core/tutorials/using-on-macos.md)
-- [Windows](../docs/core/tutorials/with-visual-studio.md)
+>
+> - [macOS](../docs/core/tutorials/using-on-macos.md)
+> - [Windows](../docs/core/tutorials/with-visual-studio.md)
 
 You can see an example of selectors in action at the [Azure docs](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
 

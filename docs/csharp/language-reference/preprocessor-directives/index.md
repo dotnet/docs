@@ -11,20 +11,20 @@ ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
 # C# preprocessor directives
 This section contains information about the following C# preprocessor directives:
 
-- [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)
-- [#else](../../../csharp/language-reference/preprocessor-directives/preprocessor-else.md)
-- [#elif](../../../csharp/language-reference/preprocessor-directives/preprocessor-elif.md)
-- [#endif](../../../csharp/language-reference/preprocessor-directives/preprocessor-endif.md)
-- [#define](../../../csharp/language-reference/preprocessor-directives/preprocessor-define.md)
-- [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)
-- [#warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-warning.md)
-- [#error](../../../csharp/language-reference/preprocessor-directives/preprocessor-error.md)
-- [#line](../../../csharp/language-reference/preprocessor-directives/preprocessor-line.md)
-- [#region](../../../csharp/language-reference/preprocessor-directives/preprocessor-region.md)
-- [#endregion](../../../csharp/language-reference/preprocessor-directives/preprocessor-endregion.md)
-- [#pragma](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma.md)
-- [#pragma warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md)
-- [#pragma checksum](../../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-checksum.md)
+- [#if](./preprocessor-if.md)
+- [#else](./preprocessor-else.md)
+- [#elif](./preprocessor-elif.md)
+- [#endif](./preprocessor-endif.md)
+- [#define](./preprocessor-define.md)
+- [#undef](./preprocessor-undef.md)
+- [#warning](./preprocessor-warning.md)
+- [#error](./preprocessor-error.md)
+- [#line](./preprocessor-line.md)
+- [#region](./preprocessor-region.md)
+- [#endregion](./preprocessor-endregion.md)
+- [#pragma](./preprocessor-pragma.md)
+- [#pragma warning](./preprocessor-pragma-warning.md)
+- [#pragma checksum](./preprocessor-pragma-checksum.md)
 
 See the individual topics for more information and examples.
 
@@ -34,5 +34,5 @@ A preprocessor directive must be the only instruction on a line.
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)

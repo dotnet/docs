@@ -3,7 +3,7 @@ title: Enable tab completion
 description: This article teaches you how to enable tab completion for the .NET Core CLI for PowerShell, Bash, and zsh.
 author: thraka
 ms.author: adegeo
-ms.date: 12/17/2018
+ms.date: 11/03/2019
 ---
 
 # How to enable TAB completion for .NET Core CLI
@@ -14,7 +14,7 @@ Starting with .NET Core 2.0 SDK, the .NET Core CLI supports tab completion. This
 
 Once setup, tab completion for the .NET Core CLI is triggered by typing a `dotnet` command in the shell, and then pressing the TAB key. The current command line is sent to the `dotnet complete` command, and the results are processed by your shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
 
-```
+```console
 > dotnet complete "dotnet a"
 add
 clean
@@ -39,7 +39,7 @@ Input                                | becomes                                  
 
 ## PowerShell
 
-To add tab completion to **PowerShell** for the .NET Core CLI, create or edit the profile stored in the variable `$PROFILE`. For more information, see [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6#how-to-create-a-profile) and [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-6#profiles-and-execution-policy). 
+To add tab completion to **PowerShell** for the .NET Core CLI, create or edit the profile stored in the variable `$PROFILE`. For more information, see [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) and [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy). 
 
 Add the following code to your profile:
 
@@ -53,7 +53,7 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
  }
 ```
 
-## Bash
+## bash
 
 To add tab completion to your **bash** shell for the .NET Core CLI, add the following code to your `.bashrc` file:
 
@@ -65,7 +65,10 @@ _dotnet_bash_complete()
   local word=${COMP_WORDS[COMP_CWORD]}
 
   local completions
-  completions="$(dotnet complete --position "${COMP_POINT}" "${COMP_LINE}")"
+  completions="$(dotnet complete --position "${COMP_POINT}" "${COMP_LINE}" 2>/dev/null)"
+  if [ $? -ne 0 ]; then
+    completions=""
+  fi
 
   COMPREPLY=( $(compgen -W "$completions" -- "$word") )
 }
@@ -73,7 +76,7 @@ _dotnet_bash_complete()
 complete -f -F _dotnet_bash_complete dotnet
 ```
 
-## Zsh
+## zsh
 
 To add tab completion to your **zsh** shell for the .NET Core CLI, add the following code to your `.zshrc` file:
 

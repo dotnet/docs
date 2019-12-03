@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: e41d7f1a-0a6a-4dee-97d1-c6a8b6a07fc2
 ---
 # Location-Based Cache Policies
-A location-based cache policy defines the freshness of valid cached entries based on where the requested resource can be taken from. A cached resource is valid if using it does not does not violate server-specified revalidation requirements. A location-based cache policy is created programmatically by using a <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> class constructor. The type of location-based policy is passed to the constructor using a <xref:System.Net.Cache.RequestCacheLevel> or <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration value. For code examples that create location-based cache policies, see [How to: Set a Location-Based Cache Policy for an Application](../../../docs/framework/network-programming/how-to-set-a-location-based-cache-policy-for-an-application.md). The following sections explain each type of location-based cache policy for Hypertext Transfer Protocol (http and https) resources.  
+A location-based cache policy defines the freshness of valid cached entries based on where the requested resource can be taken from. A cached resource is valid if using it does not does not violate server-specified revalidation requirements. A location-based cache policy is created programmatically by using a <xref:System.Net.Cache.RequestCachePolicy> or <xref:System.Net.Cache.HttpRequestCachePolicy> class constructor. The type of location-based policy is passed to the constructor using a <xref:System.Net.Cache.RequestCacheLevel> or <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration value. For code examples that create location-based cache policies, see [How to: Set a Location-Based Cache Policy for an Application](how-to-set-a-location-based-cache-policy-for-an-application.md). The following sections explain each type of location-based cache policy for Hypertext Transfer Protocol (http and https) resources.  
   
 ## Cache If Available Policy  
  If a valid requested resource is in the local cache, the cached resource is used; otherwise, the request for the resource is sent to the server. If the requested resource is available in any cache between the client and the server, the request can be satisfied by an intermediate cache.  
@@ -42,8 +42,8 @@ A location-based cache policy defines the freshness of valid cached entries base
   
 ## See also
 
-- [Cache Management for Network Applications](../../../docs/framework/network-programming/cache-management-for-network-applications.md)
-- [Cache Policy](../../../docs/framework/network-programming/cache-policy.md)
-- [Time-Based Cache Policies](../../../docs/framework/network-programming/time-based-cache-policies.md)
-- [Configuring Caching in Network Applications](../../../docs/framework/network-programming/configuring-caching-in-network-applications.md)
-- [\<requestCaching> Element (Network Settings)](../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)
+- [Cache Management for Network Applications](cache-management-for-network-applications.md)
+- [Cache Policy](cache-policy.md)
+- [Time-Based Cache Policies](time-based-cache-policies.md)
+- [Configuring Caching in Network Applications](configuring-caching-in-network-applications.md)
+- [\<requestCaching> Element (Network Settings)](../configure-apps/file-schema/network/requestcaching-element-network-settings.md)

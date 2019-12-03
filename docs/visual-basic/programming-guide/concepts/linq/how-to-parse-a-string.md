@@ -1,5 +1,5 @@
 ---
-title: "How to: Parse a String (Visual Basic)"
+title: "How to: Parse a String"
 ms.date: 07/20/2015
 ms.assetid: 896e1b4b-f9bd-4975-8bc1-55b6badce1ac
 ---
@@ -12,7 +12,7 @@ This topic shows how to create an XML tree in C#.
  By using XML literals, you can just copy and paste your XML into your Visual Basic program.  
   
 > [!NOTE]
->  Parsing text or loading an XML document from a text file is less efficient than functional construction. If you are initializing an XML tree from code, it takes less processor time to use functional construction than to parse text.  
+> Parsing text or loading an XML document from a text file is less efficient than functional construction. If you are initializing an XML tree from code, it takes less processor time to use functional construction than to parse text.  
   
 ```vb  
 Dim contacts as XElement = _  

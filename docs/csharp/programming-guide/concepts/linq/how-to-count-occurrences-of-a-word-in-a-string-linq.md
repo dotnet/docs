@@ -1,9 +1,9 @@
 ---
-title: "How to: Count Occurrences of a Word in a String (LINQ) (C#)"
+title: "How to count occurrences of a word in a string (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: f8e6f546-7c14-4aa1-8a75-e8d09f3b8ccd
 ---
-# How to: Count Occurrences of a Word in a String (LINQ) (C#)
+# How to count occurrences of a word in a string (LINQ) (C#)
 This example shows how to use a LINQ query to count the occurrences of a specified word in a string. Note that to perform the count, first the <xref:System.String.Split%2A> method is called to create an array of words. There is a performance cost to the <xref:System.String.Split%2A> method. If the only operation on the string is to count the words, you should consider using the <xref:System.Text.RegularExpressions.Regex.Matches%2A> or <xref:System.String.IndexOf%2A> methods instead. However, if performance is not a critical issue, or you have already split the sentence in order to perform other types of queries over it, then it makes sense to use LINQ to count the words or phrases as well.  
   
 ## Example  
@@ -53,4 +53,4 @@ class CountWords
   
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)

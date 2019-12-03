@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 935aa600-16e6-4947-a905-37a189a583dd
 ---
 # ProgressBar Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.ProgressBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.ProgressBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
   
 ## ProgressBar Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.ProgressBar> control.  
@@ -50,5 +50,5 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](styling-and-templating.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
+- [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md)

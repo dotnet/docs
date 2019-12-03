@@ -17,7 +17,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
 - The Northwind sample database.  
   
-     If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md). After you have downloaded the database, copy the northwnd.mdf file to the c:\linqtest6 folder.  
+     If you do not have this database on your development computer, you can download it from the Microsoft download site. For instructions, see [Downloading Sample Databases](downloading-sample-databases.md). After you have downloaded the database, copy the northwnd.mdf file to the c:\linqtest6 folder.  
   
 - A C# code file generated from the Northwind database.  
   
@@ -25,7 +25,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
      **sqlmetal /code:"c:\linqtest6\northwind.cs" /language:csharp "C:\linqtest6\northwnd.mdf" /pluralize**  
   
-     For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md).  
+     For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ## Overview  
  This walkthrough consists of six main tasks:  
@@ -153,8 +153,8 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
 4. Press Enter in the **Console** window to close the application.  
   
 > [!NOTE]
->  After you have added the new customer by submitting the changes, you cannot execute this solution again as is. To execute the solution again, change the name of the customer and customer ID to be added.  
+> After you have added the new customer by submitting the changes, you cannot execute this solution again as is. To execute the solution again, change the name of the customer and customer ID to be added.  
   
 ## See also
 
-- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+- [Learning by Walkthroughs](learning-by-walkthroughs.md)

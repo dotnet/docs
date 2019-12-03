@@ -1,5 +1,5 @@
 ---
-title: "SyncLock Statement (Visual Basic)"
+title: "SyncLock Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.SyncLock"
@@ -15,7 +15,7 @@ Acquires an exclusive lock for a statement block before executing the block.
   
 ## Syntax  
   
-```  
+```vb  
 SyncLock lockobject  
     [ block ]  
 End SyncLock  

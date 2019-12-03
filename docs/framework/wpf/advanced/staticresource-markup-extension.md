@@ -37,9 +37,9 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 ## Remarks  
   
 > [!IMPORTANT]
->  A `StaticResource` must not attempt to make a forward reference to a resource that is defined lexically further within the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file. Attempting to do so is not supported, and even if such a reference does not fail, attempting the forward reference will incur a load time performance penalty when the internal hash tables representing a <xref:System.Windows.ResourceDictionary> are searched. For best results, adjust the composition of your resource dictionaries such that forward references can be avoided. If you cannot avoid a forward reference, use [DynamicResource Markup Extension](dynamicresource-markup-extension.md) instead.  
+> A `StaticResource` must not attempt to make a forward reference to a resource that is defined lexically further within the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file. Attempting to do so is not supported, and even if such a reference does not fail, attempting the forward reference will incur a load time performance penalty when the internal hash tables representing a <xref:System.Windows.ResourceDictionary> are searched. For best results, adjust the composition of your resource dictionaries such that forward references can be avoided. If you cannot avoid a forward reference, use [DynamicResource Markup Extension](dynamicresource-markup-extension.md) instead.  
   
- The specified <xref:System.Windows.StaticResourceExtension.ResourceKey%2A> should correspond to an existing resource, identified with an [x:Key Directive](../../xaml-services/x-key-directive.md) at some level in your page, application, the available control themes and external resources, or system resources. The resource lookup occurs in that order. For more information about resource lookup behavior for static and dynamic resources, see [XAML Resources](xaml-resources.md).  
+ The specified <xref:System.Windows.StaticResourceExtension.ResourceKey%2A> should correspond to an existing resource, identified with an [x:Key Directive](../../xaml-services/x-key-directive.md) at some level in your page, application, the available control themes and external resources, or system resources. The resource lookup occurs in that order. For more information about resource lookup behavior for static and dynamic resources, see [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
  A resource key can be any string defined in the [XamlName Grammar](../../xaml-services/xamlname-grammar.md). A resource key can also be other object types, such as a <xref:System.Type>. A <xref:System.Type> key is fundamental to how controls can be styled by themes, through an implicit style key. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).  
   
@@ -66,5 +66,5 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 - [Styling and Templating](../controls/styling-and-templating.md)
 - [XAML Overview (WPF)](xaml-overview-wpf.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
-- [XAML Resources](xaml-resources.md)
+- [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [Resources and Code](resources-and-code.md)

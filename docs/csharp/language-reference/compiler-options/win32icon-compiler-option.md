@@ -25,7 +25,7 @@ The **-win32icon** option inserts an .ico file in the output file, which gives t
 ## Remarks  
  An .ico file can be created with the [Resource Compiler](/windows/desktop/menurc/resource-compiler). The Resource Compiler is invoked when you compile a Visual C++ program; an .ico file is created from the .rc file.  
   
- See [-linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md) (to reference) or [-resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) (to attach) a .NET Framework resource file. See [-win32res](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md) to import a .res file.  
+ See [-linkresource](./linkresource-compiler-option.md) (to reference) or [-resource](./resource-compiler-option.md) (to attach) a .NET Framework resource file. See [-win32res](./win32res-compiler-option.md) to import a .res file.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -46,5 +46,5 @@ csc -win32icon:rf.ico in.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

@@ -2,13 +2,12 @@
 title: .NET Framework technologies unavailable on .NET Core
 description: Learn about .NET Framework technologies that are unavailable on .NET Core
 author: cartermp
-ms.author: mairaw
 ms.date: 04/30/2019
 ---
 
 # .NET Framework technologies unavailable on .NET Core
 
-Several technologies available to .NET Framework libraries aren't available for use with .NET Core, such as AppDomains, Remoting, Code Access Security (CAS), and Security Transparency. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined below. For more information on API compatibility, the CoreFX team maintains a [List of behavioral changes/compat breaks and deprecated/legacy APIs](https://github.com/dotnet/corefx/wiki/ApiCompat) at GitHub.
+Several technologies available to .NET Framework libraries aren't available for use with .NET Core, such as AppDomains, Remoting, Code Access Security (CAS), Security Transparency, and System.EnterpriseServices. If your libraries rely on one or more of these technologies, consider the alternative approaches outlined below. For more information on API compatibility, see the [.NET Core breaking changes](../compatibility/breaking-changes.md) article.
 
 Just because an API or technology isn't currently implemented doesn't imply it's intentionally unsupported. You should first search the GitHub repositories for .NET Core to see if a particular issue you encounter is by design, but if you cannot find such an indicator, please file an issue in the [dotnet/corefx repository issues](https://github.com/dotnet/corefx/issues) at GitHub to ask for specific APIs and technologies. [Porting requests in the issues](https://github.com/dotnet/corefx/labels/port-to-core) are marked with the `port-to-core` label.
 
@@ -28,13 +27,13 @@ Across machines, use a network-based solution as an alternative. Preferably, use
 
 ## Code Access Security (CAS)
 
-Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](~/docs/framework/misc/code-access-security.md) and therefore is also not supported on .NET Core. There are too many cases in the .NET Framework and the runtime where an elevation of privileges occurs to continue treating CAS as a security boundary. In addition, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.
+Sandboxing, which relies on the runtime or the framework to constrain which resources a managed application or library uses or runs, [isn't supported on .NET Framework](../../framework/misc/code-access-security.md) and therefore is also not supported on .NET Core. There are too many cases in the .NET Framework and the runtime where an elevation of privileges occurs to continue treating CAS as a security boundary. In addition, CAS makes the implementation more complicated and often has correctness-performance implications for applications that don't intend to use it.
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the minimum set of privileges.
 
 ## Security Transparency
 
-Similar to CAS, Security Transparency separates sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](~/docs/framework/misc/security-transparent-code.md). This feature is heavily used by Silverlight. 
+Similar to CAS, Security Transparency separates sandboxed code from security critical code in a declarative fashion but is [no longer supported as a security boundary](../../framework/misc/security-transparent-code.md). This feature is heavily used by Silverlight. 
 
 Use security boundaries provided by the operating system, such as virtualization, containers, or user accounts for running processes with the least set of privileges.
 

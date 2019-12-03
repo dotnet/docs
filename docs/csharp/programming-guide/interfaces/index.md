@@ -9,7 +9,7 @@ ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
 ---
 # Interfaces (C# Programming Guide)
 
-An interface contains definitions for a group of related functionalities that a [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/keywords/struct.md) can implement.
+An interface contains definitions for a group of related functionalities that a non-abstract [class](../../language-reference/keywords/class.md) or a [struct](../../language-reference/keywords/struct.md) must implement.
   
 By using interfaces, you can, for example, include behavior from multiple sources in a class. That capability is important in C# because the language doesn't support multiple inheritance of classes. In addition, you must use an interface if you want to simulate inheritance for structs, because they can't actually inherit from another struct or class.  
   
@@ -21,11 +21,11 @@ The name of the struct must be a valid C# [identifier name](../inside-a-program/
 
 Any class or struct that implements the <xref:System.IEquatable%601> interface must contain a definition for an <xref:System.IEquatable%601.Equals%2A> method that matches the signature that the interface specifies. As a result, you can count on a class that implements `IEquatable<T>` to contain an `Equals` method with which an instance of the class can determine whether it's equal to another instance of the same class.  
   
-The definition of `IEquatable<T>` doesn’t provide an implementation for `Equals`. The interface defines only the signature. In that way, an interface in C# is similar to an abstract class in which all the methods are abstract. However, a class or struct can implement multiple interfaces, but a class can inherit only a single class, abstract or not.
+The definition of `IEquatable<T>` doesn’t provide an implementation for `Equals`. A class or struct can implement multiple interfaces, but a class can only inherit from a single class.
   
 For more information about abstract classes, see [Abstract and Sealed Classes and Class Members](../classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   
-Interfaces can contain methods, properties, events, indexers, or any combination of those four member types. For links to examples, see [Related Sections](../interfaces/index.md#BKMK_RelatedSections). An interface can't contain constants, fields, operators, instance constructors, finalizers, or types. Interface members are automatically public, and they can't include any access modifiers. Members also can't be [static](../../language-reference/keywords/static.md).  
+Interfaces can contain methods, properties, events, indexers, or any combination of those four member types. For links to examples, see [Related Sections](./index.md#BKMK_RelatedSections). An interface can't contain constants, fields, operators, instance constructors, finalizers, or types. Interface members are automatically public, and they can't include any access modifiers. Members also can't be [static](../../language-reference/keywords/static.md).  
   
 To implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member.  
   

@@ -13,7 +13,7 @@ ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
 ---
 # How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control
 > [!NOTE]
->  The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
+> The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
  After you have created a Windows Forms <xref:System.Windows.Forms.DataGrid> using the design-time features, you may also wish to dynamically change elements of the <xref:System.Data.DataSet> object of the grid at run time. This can include changes to either individual values of the table or changing which data source is bound to the <xref:System.Windows.Forms.DataGrid> control. Changes to individual values are done through the <xref:System.Data.DataSet> object, not the <xref:System.Windows.Forms.DataGrid> control.  
   
@@ -22,7 +22,7 @@ ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
 1. Specify the desired table from the <xref:System.Data.DataSet> object and the desired row and field from the table and set the cell equal to the new value.  
   
     > [!NOTE]
-    >  To specify the first table of the <xref:System.Data.DataSet> or the first row of the table, use 0.  
+    > To specify the first table of the <xref:System.Data.DataSet> or the first row of the table, use 0.  
   
      The following example shows how to change the second entry of the first row of the first table of a dataset by clicking `Button1`. The <xref:System.Data.DataSet> (`ds`) and Tables (`0` and `1`) were previously created.  
   

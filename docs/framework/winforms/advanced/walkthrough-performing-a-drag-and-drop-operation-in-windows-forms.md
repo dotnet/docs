@@ -18,7 +18,7 @@ To perform drag-and-drop operations within Windows-based applications you must h
  In the following example, the <xref:System.Windows.Forms.Control.MouseDown> event is used to start the drag operation because it is the most intuitive (most drag-and-drop actions begin with the mouse button being depressed). However, remember that any event could be used to initiate a drag-and-drop procedure.  
   
 > [!NOTE]
->  Certain controls have custom drag-specific events. The <xref:System.Windows.Forms.ListView> and <xref:System.Windows.Forms.TreeView> controls, for example, have an <xref:System.Windows.Forms.TreeView.ItemDrag> event.  
+> Certain controls have custom drag-specific events. The <xref:System.Windows.Forms.ListView> and <xref:System.Windows.Forms.TreeView> controls, for example, have an <xref:System.Windows.Forms.TreeView.ItemDrag> event.  
   
 #### To start a drag operation  
   
@@ -42,7 +42,7 @@ To perform drag-and-drop operations within Windows-based applications you must h
     ```  
   
     > [!NOTE]
-    >  Any data can be used as a parameter in the `DoDragDrop` method; in the example above, the <xref:System.Windows.Forms.Control.Text%2A> property of the <xref:System.Windows.Forms.Button> control was used (rather than hard-coding a value or retrieving data from a dataset) because the property was related to the location being dragged from (the <xref:System.Windows.Forms.Button> control). Keep this in mind as you incorporate drag-and-drop operations into your Windows-based applications.  
+    > Any data can be used as a parameter in the `DoDragDrop` method; in the example above, the <xref:System.Windows.Forms.Control.Text%2A> property of the <xref:System.Windows.Forms.Button> control was used (rather than hard-coding a value or retrieving data from a dataset) because the property was related to the location being dragged from (the <xref:System.Windows.Forms.Button> control). Keep this in mind as you incorporate drag-and-drop operations into your Windows-based applications.  
   
  While a drag operation is in effect, you can handle the <xref:System.Windows.Forms.Control.QueryContinueDrag> event, which "asks permission" of the system to continue the drag operation. When handling this method, it is also the appropriate point for you to call methods that will have an effect on the drag operation, such as expanding a <xref:System.Windows.Forms.TreeNode> in a <xref:System.Windows.Forms.TreeView> control when the cursor hovers over it.  
   
@@ -77,7 +77,7 @@ To perform drag-and-drop operations within Windows-based applications you must h
     ```  
   
     > [!NOTE]
-    >  You can define your own <xref:System.Windows.Forms.DataFormats> by specifying your own object as the <xref:System.Object> parameter of the <xref:System.Windows.Forms.DataObject.SetData%2A> method. Be sure, when doing this, that the object specified is serializable. For more information, see <xref:System.Runtime.Serialization.ISerializable>.  
+    > You can define your own <xref:System.Windows.Forms.DataFormats> by specifying your own object as the <xref:System.Object> parameter of the <xref:System.Windows.Forms.DataObject.SetData%2A> method. Be sure, when doing this, that the object specified is serializable. For more information, see <xref:System.Runtime.Serialization.ISerializable>.  
   
 3. In the <xref:System.Windows.Forms.Control.DragDrop> event for the control where the drop will occur, use the <xref:System.Windows.Forms.DataObject.GetData%2A> method to retrieve the data being dragged. For more information, see <xref:System.Security.Cryptography.Xml.DataObject.Data%2A>.  
   
@@ -98,7 +98,7 @@ To perform drag-and-drop operations within Windows-based applications you must h
     ```  
   
     > [!NOTE]
-    >  Additionally, you can work with the <xref:System.Windows.Forms.DragEventArgs.KeyState%2A> property, so that, depending on keys depressed during the drag-and-drop operation, certain effects occur (for example, it is standard to copy the dragged data when the CTRL key is pressed).  
+    > Additionally, you can work with the <xref:System.Windows.Forms.DragEventArgs.KeyState%2A> property, so that, depending on keys depressed during the drag-and-drop operation, certain effects occur (for example, it is standard to copy the dragged data when the CTRL key is pressed).  
   
 ## See also
 

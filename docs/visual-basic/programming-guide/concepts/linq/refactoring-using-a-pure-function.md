@@ -1,5 +1,5 @@
 ---
-title: "Refactoring Using a Pure Function (Visual Basic)"
+title: "Refactoring Using a Pure Function"
 ms.date: 07/20/2015
 ms.assetid: af0ea62f-4f57-4868-b624-a85524055935
 ---
@@ -143,7 +143,7 @@ End Module
   
  This example produces the same output as before the refactoring:  
   
-```  
+```console  
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<  
 StyleName:Normal ><  
 StyleName:Normal >The following example prints to the console.<  

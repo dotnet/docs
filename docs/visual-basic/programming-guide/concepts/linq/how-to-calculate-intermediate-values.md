@@ -1,5 +1,5 @@
 ---
-title: "How to: Calculate Intermediate Values (Visual Basic)"
+title: "How to: Calculate Intermediate Values"
 ms.date: 07/20/2015
 ms.assetid: 933a97b2-dfe7-4f4d-94ad-e6e20df84abd
 ---
@@ -26,7 +26,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 55.92  
 73.50  
 89.99  
@@ -35,7 +35,7 @@ Next
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
  This example uses the following XML document: [Sample XML File: Numerical Data in a Namespace](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md).  
   
@@ -60,7 +60,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 55.92  
 73.50  
 89.99  

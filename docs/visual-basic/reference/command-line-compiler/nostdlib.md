@@ -1,5 +1,5 @@
 ---
-title: "-nostdlib (Visual Basic)"
+title: "-nostdlib"
 ms.date: 03/13/2018
 helpviewer_keywords: 
   - "nostdlib compiler option [Visual Basic]"
@@ -12,7 +12,7 @@ Causes the compiler not to automatically reference the standard libraries.
   
 ## Syntax  
   
-```  
+```console  
 -nostdlib  
 ```  
   
@@ -20,10 +20,10 @@ Causes the compiler not to automatically reference the standard libraries.
  The `-nostdlib` option removes the automatic reference to the System.dll assembly and prevents the compiler from reading the Vbc.rsp file. The Vbc.rsp file, which is located in the same directory as the Vbc.exe file, references the commonly used .NET Framework assemblies and imports the `System` and `Microsoft.VisualBasic` namespaces.  
   
 > [!NOTE]
->  The Mscorlib.dll and Microsoft.VisualBasic.dll assemblies are always referenced.  
+> The Mscorlib.dll and Microsoft.VisualBasic.dll assemblies are always referenced.  
   
 > [!NOTE]
->  The `-nostdlib` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-nostdlib` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code compiles `T2.vb` without referencing the standard libraries. You must set the `_MYTYPE` conditional-compilation constant to the string "Empty" to remove the `My` object.  

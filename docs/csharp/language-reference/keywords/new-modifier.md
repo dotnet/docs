@@ -10,7 +10,7 @@ ms.assetid: a2e20856-33b9-4620-b535-a60dbce8349b
 
 When used as a declaration modifier, the `new` keyword explicitly hides a member that is inherited from a base class. When you hide an inherited member, the derived version of the member replaces the base class version. Although you can hide members without using the `new` modifier, you get a compiler warning. If you use `new` to explicitly hide a member, it suppresses this warning.
 
-You can also use the `new` keyword to [create an instance of a type](../operators/new-operator.md) or as a [generic type constraint](../keywords/new-constraint.md).
+You can also use the `new` keyword to [create an instance of a type](../operators/new-operator.md) or as a [generic type constraint](./new-constraint.md).
 
 To hide an inherited member, declare it in the derived class by using the same member name, and modify it with the `new` keyword. For example:
 
@@ -57,6 +57,6 @@ For more information, see [The new modifier](~/_csharplang/spec/classes.md#the-n
 - [C# Reference](../../language-reference/index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [Versioning with the Override and New Keywords](../../programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)
 - [Knowing When to Use Override and New Keywords](../../programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md)

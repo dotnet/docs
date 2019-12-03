@@ -12,7 +12,7 @@ ms.assetid: 3ddb3b7b-1d6b-4dba-8678-5a68e868aadb
 ---
 # Traverse Text Using UI Automation
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
  This topic shows how to use [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] to traverse the textual content of a document by <xref:System.Windows.Automation.Text.TextUnit> increments.  
   
@@ -20,7 +20,7 @@ ms.assetid: 3ddb3b7b-1d6b-4dba-8678-5a68e868aadb
  The following code example demonstrates how to traverse the content of a UI Automation text provider. The <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> method moves the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> and <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> endpoints of a <xref:System.Windows.Automation.Text.TextPatternRange>. This text range is typically a degenerate range representing the text insertion point.  
   
 > [!NOTE]
->  Since only text-based embedded objects are considered part of the text stream, embedded objects such as images do not affect `Move` or its return value.  
+> Since only text-based embedded objects are considered part of the text stream, embedded objects such as images do not affect `Move` or its return value.  
   
 [!code-csharp[FindText#StartApp](../../../samples/snippets/csharp/VS_Snippets_Wpf/FindText/CSharp/SearchWindow.cs#startapp)]
 [!code-vb[FindText#StartApp](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/FindText/VisualBasic/SearchWindow.vb#startapp)]  
@@ -33,8 +33,8 @@ ms.assetid: 3ddb3b7b-1d6b-4dba-8678-5a68e868aadb
   
 ## See also
 
-- [UI Automation TextPattern Overview](../../../docs/framework/ui-automation/ui-automation-textpattern-overview.md)
-- [Add Content to a Text Box Using UI Automation](../../../docs/framework/ui-automation/add-content-to-a-text-box-using-ui-automation.md)
-- [Find and Highlight Text Using UI Automation](../../../docs/framework/ui-automation/find-and-highlight-text-using-ui-automation.md)
-- [UI Automation Control Patterns Overview](../../../docs/framework/ui-automation/ui-automation-control-patterns-overview.md)
-- [UI Automation Control Patterns for Clients](../../../docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md)
+- [UI Automation TextPattern Overview](ui-automation-textpattern-overview.md)
+- [Add Content to a Text Box Using UI Automation](add-content-to-a-text-box-using-ui-automation.md)
+- [Find and Highlight Text Using UI Automation](find-and-highlight-text-using-ui-automation.md)
+- [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md)
+- [UI Automation Control Patterns for Clients](ui-automation-control-patterns-for-clients.md)

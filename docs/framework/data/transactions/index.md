@@ -13,10 +13,10 @@ When you purchase a book from an online bookstore, you exchange money (in the fo
  This section provides both general information on transaction processing, and specific information on how to write transactional applications and resource managers using the Microsoft .NET Framework.  
   
 ## In This Section  
- [Transaction Fundamentals](../../../../docs/framework/data/transactions/transaction-fundamentals.md)  
+ [Transaction Fundamentals](transaction-fundamentals.md)  
  Introduces basic transaction processing terms and concepts.  
   
- [Features Provided by System.Transactions](../../../../docs/framework/data/transactions/features-provided-by-system-transactions.md)  
+ [Features Provided by System.Transactions](features-provided-by-system-transactions.md)  
  Discusses how you can use features in System.Transactions to write your own transactional application.  
   
 ## Reference  

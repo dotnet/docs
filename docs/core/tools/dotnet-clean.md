@@ -17,7 +17,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-```
+```dotnetcli
 dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--interactive] 
     [--nologo] [-o|--output] [-r|--runtime] [-v|--verbosity]
 dotnet clean [-h|--help]
@@ -71,12 +71,12 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 * Clean a default build of the project:
 
-  ```console
+  ```dotnetcli
   dotnet clean
   ```
 
 * Clean a project built using the Release configuration:
 
-  ```console
+  ```dotnetcli
   dotnet clean --configuration Release
   ```

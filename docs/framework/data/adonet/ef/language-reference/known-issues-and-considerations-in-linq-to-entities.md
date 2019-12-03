@@ -36,7 +36,7 @@ This section provides information about known issues with LINQ to Entities queri
   
 <a name="UnsignedIntsUnsupported"></a>   
 ## Unsigned Integers Not Supported  
- Specifying an unsigned integer type in a LINQ to Entities query is not supported because the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] does not support unsigned integers. If you specify an unsigned integer, an <xref:System.ArgumentException> exception will be thrown during the query expression translation, as shown in the following example. This example queries for an order with ID 48000.  
+ Specifying an unsigned integer type in a LINQ to Entities query is not supported because the Entity Framework does not support unsigned integers. If you specify an unsigned integer, an <xref:System.ArgumentException> exception will be thrown during the query expression translation, as shown in the following example. This example queries for an order with ID 48000.  
   
  [!code-csharp[DP L2E Conceptual Examples#UIntAsQueryParam](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#uintasqueryparam)]
  [!code-vb[DP L2E Conceptual Examples#UIntAsQueryParam](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#uintasqueryparam)]  
@@ -52,7 +52,7 @@ This section provides information about known issues with LINQ to Entities queri
  Referencing a non-scalar variables, such as an entity, in a query is not supported. When such a query executes, a <xref:System.NotSupportedException> exception is thrown with a message that states "Unable to create a constant value of type `EntityType`. Only primitive types ('such as Int32, String, and Guid') are supported in this context."  
   
 > [!NOTE]
->  Referencing a collection of scalar variables is supported.  
+> Referencing a collection of scalar variables is supported.  
   
  [!code-csharp[DP L2E Conceptual Examples#SBUDT555877](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#sbudt555877)]
  [!code-vb[DP L2E Conceptual Examples#SBUDT555877](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#sbudt555877)]  
@@ -75,4 +75,4 @@ This section provides information about known issues with LINQ to Entities queri
   
 ## See also
 
-- [LINQ to Entities](../../../../../../docs/framework/data/adonet/ef/language-reference/linq-to-entities.md)
+- [LINQ to Entities](linq-to-entities.md)

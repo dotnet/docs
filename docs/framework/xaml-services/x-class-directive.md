@@ -12,11 +12,11 @@ helpviewer_keywords:
 ms.assetid: bc4a3d8e-76e2-423e-a5d1-159a023e82ec
 ---
 # x:Class Directive
-Configures XAML markup compilation to join partial classes between markup and code-behind. The code partial class is defined in a separate code file in a [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)] language, whereas the markup partial class is typically created by code generation during XAML compilation.  
+Configures XAML markup compilation to join partial classes between markup and code-behind. The code partial class is defined in a separate code file in a Common Language Specification (CLS) language, whereas the markup partial class is typically created by code generation during XAML compilation.  
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:Class="namespace.classname"...>  
   ...  
 </object>  
@@ -26,8 +26,8 @@ Configures XAML markup compilation to join partial classes between markup and co
   
 |||  
 |-|-|  
-|`namespace`|Optional. Specifies a [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] namespace that contains the partial class identified by `classname`. If `namespace` is specified, a dot (.) separates `namespace` and `classname`. See Remarks.|  
-|`classname`|Required. Specifies the [!INCLUDE[TLA2#tla_clr](../../../includes/tla2sharptla-clr-md.md)] name of the partial class that connects the loaded XAML and your code-behind for that XAML.|  
+|`namespace`|Optional. Specifies a CLR namespace that contains the partial class identified by `classname`. If `namespace` is specified, a dot (.) separates `namespace` and `classname`. See Remarks.|  
+|`classname`|Required. Specifies the CLR name of the partial class that connects the loaded XAML and your code-behind for that XAML.|  
   
 ## Dependencies  
  `x:Class` can only be specified on the root element of a XAML production. `x:Class` is invalid on any object that has a parent in the XAML production. For more information, see [\[MS-XAML\] Section 4.3.1.6](https://go.microsoft.com/fwlink/?LinkId=114525).  

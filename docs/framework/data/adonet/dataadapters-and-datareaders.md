@@ -11,37 +11,37 @@ You can use the ADO.NET **DataReader** to retrieve a read-only, forward-only str
  Each .NET Framework data provider included with the .NET Framework has a <xref:System.Data.Common.DbDataReader> and a <xref:System.Data.Common.DbDataAdapter> object: the .NET Framework Data Provider for OLE DB includes an <xref:System.Data.OleDb.OleDbDataReader> and an <xref:System.Data.OleDb.OleDbDataAdapter> object, the .NET Framework Data Provider for SQL Server includes a <xref:System.Data.SqlClient.SqlDataReader> and a <xref:System.Data.SqlClient.SqlDataAdapter> object, the .NET Framework Data Provider for ODBC includes an <xref:System.Data.Odbc.OdbcDataReader> and an <xref:System.Data.Odbc.OdbcDataAdapter> object, and the .NET Framework Data Provider for Oracle includes an <xref:System.Data.OracleClient.OracleDataReader> and an <xref:System.Data.OracleClient.OracleDataAdapter> object.  
   
 ## In This Section  
- [Retrieving Data Using a DataReader](../../../../docs/framework/data/adonet/retrieving-data-using-a-datareader.md)  
+ [Retrieving Data Using a DataReader](retrieving-data-using-a-datareader.md)  
  Describes the ADO.NET **DataReader** object and how to use it to return a stream of results from a data source.  
   
- [Populating a DataSet from a DataAdapter](../../../../docs/framework/data/adonet/populating-a-dataset-from-a-dataadapter.md)  
+ [Populating a DataSet from a DataAdapter](populating-a-dataset-from-a-dataadapter.md)  
  Describes how to fill a `DataSet` with tables, columns, and rows by using a `DataAdapter`.  
   
- [DataAdapter Parameters](../../../../docs/framework/data/adonet/dataadapter-parameters.md)  
+ [DataAdapter Parameters](dataadapter-parameters.md)  
  Describes how to use parameters with the command properties of a `DataAdapter` including how to map the contents of a column in a `DataSet` to a command parameter.  
   
- [Adding Existing Constraints to a DataSet](../../../../docs/framework/data/adonet/adding-existing-constraints-to-a-dataset.md)  
+ [Adding Existing Constraints to a DataSet](adding-existing-constraints-to-a-dataset.md)  
  Describes how to add existing constraints to a `DataSet`.  
   
- [DataAdapter DataTable and DataColumn Mappings](../../../../docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md)  
+ [DataAdapter DataTable and DataColumn Mappings](dataadapter-datatable-and-datacolumn-mappings.md)  
  Describes how to set up `DataTableMappings` and `ColumnMappings` for a `DataAdapter`.  
   
- [Paging Through a Query Result](../../../../docs/framework/data/adonet/paging-through-a-query-result.md)  
+ [Paging Through a Query Result](paging-through-a-query-result.md)  
  Provides an example of viewing the results of a query as pages of data.  
   
- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
+ [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)  
  Describes how to use a `DataAdapter` to resolve changes in a `DataSet` back to the database.  
   
- [Handling DataAdapter Events](../../../../docs/framework/data/adonet/handling-dataadapter-events.md)  
+ [Handling DataAdapter Events](handling-dataadapter-events.md)  
  Describes `DataAdapter` events and how to use them.  
   
- [Performing Batch Operations Using DataAdapters](../../../../docs/framework/data/adonet/performing-batch-operations-using-dataadapters.md)  
+ [Performing Batch Operations Using DataAdapters](performing-batch-operations-using-dataadapters.md)  
  Describes enhancing application performance by reducing the number of round trips to SQL Server when applying updates from the `DataSet`.  
   
 ## See also
 
-- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
-- [Commands and Parameters](../../../../docs/framework/data/adonet/commands-and-parameters.md)
-- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)
-- [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Connecting to a Data Source](connecting-to-a-data-source.md)
+- [Commands and Parameters](commands-and-parameters.md)
+- [Transactions and Concurrency](transactions-and-concurrency.md)
+- [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md)
+- [ADO.NET Overview](ado-net-overview.md)

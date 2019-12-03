@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "first-chance exception notifications"
   - "exceptions, first chance notifications"
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Receive First-Chance Exception Notifications
 The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDomain> class lets you receive a notification that an exception has been thrown, before the common language runtime has begun searching for exception handlers.
@@ -85,7 +83,7 @@ The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDo
  Each time the `Thrower` method throws an exception in `AD1`, the <xref:System.AppDomain.FirstChanceException> event is raised in `AD1`, and the event handler displays a message. The runtime then looks for an exception handler. In the first case, the exception handler is found in `AD1`. In the second case, the exception is unhandled in `AD1`, and instead is caught in the default application domain.
 
 > [!NOTE]
->  The name of the default application domain is the same as the name of the executable.
+> The name of the default application domain is the same as the name of the executable.
 
  If you add a handler for the <xref:System.AppDomain.FirstChanceException> event to the default application domain, the event is raised and handled before the default application domain handles the exception. To see this, add the C# code `AppDomain.CurrentDomain.FirstChanceException += FirstChanceException;` (in Visual Basic, `AddHandler AppDomain.CurrentDomain.FirstChanceException, FirstChanceException`) at the beginning of `Main()`.
 

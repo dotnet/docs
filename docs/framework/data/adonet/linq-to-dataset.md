@@ -13,9 +13,9 @@ LINQ to DataSet makes it easier and faster to query over data cached in a <xref:
  ![Diagram showing that LINQ to DataSet is based on the ADO.NET provider.](./media/linq-to-dataset/linq-dataset-ado-dotnet-provider.gif)  
   
 ## In This Section  
- [Getting Started](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)  
+ [Getting Started](getting-started-linq-to-dataset.md)  
   
- [Programming Guide](../../../../docs/framework/data/adonet/programming-guide-linq-to-dataset.md)  
+ [Programming Guide](programming-guide-linq-to-dataset.md)  
   
 ## Reference  
  <xref:System.Data.DataTableExtensions>  
@@ -28,5 +28,5 @@ LINQ to DataSet makes it easier and faster to query over data cached in a <xref:
 
 - [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md)
 - [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md)
-- [LINQ and ADO.NET](../../../../docs/framework/data/adonet/linq-and-ado-net.md)
-- [ADO.NET](../../../../docs/framework/data/adonet/index.md)
+- [LINQ and ADO.NET](linq-and-ado-net.md)
+- [ADO.NET](index.md)

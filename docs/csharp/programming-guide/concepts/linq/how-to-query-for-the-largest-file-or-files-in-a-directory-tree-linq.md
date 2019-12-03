@@ -141,5 +141,5 @@ Create a C# console application project, with `using` directives for the System.
  
 ## See also
 
-- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ to Objects (C#)](./linq-to-objects.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

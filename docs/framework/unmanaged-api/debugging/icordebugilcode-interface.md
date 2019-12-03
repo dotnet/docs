@@ -10,8 +10,6 @@ api_type:
 ms.assetid: 51c4de0c-3813-4142-be25-a85bb84efb90
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILCode Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

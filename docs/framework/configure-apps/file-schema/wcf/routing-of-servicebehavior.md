@@ -6,11 +6,12 @@ ms.assetid: d8f9c844-4629-4a45-9599-856dc8f01794
 # \<routing> of \<serviceBehavior>
 Provides run-time access to the routing service to allow dynamic modification of the routing configuration.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<routing>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<routing>**  
   
 ## Syntax  
   
@@ -33,7 +34,7 @@ Provides run-time access to the routing service to allow dynamic modification of
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|filterTable|A string that specifies the name of the routing table that contains filters to be evaluated by the routing service. This value must match the `name` attribute of a [\<filterTable>](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertable.md) element in the [\<filterTables>](../../../../../docs/framework/configure-apps/file-schema/wcf/filtertables.md) section.|  
+|filterTable|A string that specifies the name of the routing table that contains filters to be evaluated by the routing service. This value must match the `name` attribute of a [\<filterTable>](filtertable.md) element in the [\<filterTables>](filtertables.md) section.|  
 |routeOnHeaderOnly|A Boolean value that specifies whether the filter will examine both the message body and the header, or the header only. The default is `true`.|  
 |soapProcessingEnabled|A Boolean value that specifies whether SOAP processing should occur.|  
   
@@ -44,7 +45,7 @@ Provides run-time access to the routing service to allow dynamic modification of
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
  When added to the service’s behavior configuration, this configuration element enables routing for the service. You can specify the actual routing table to be used by the service in this element.  

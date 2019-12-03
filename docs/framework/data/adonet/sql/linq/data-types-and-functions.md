@@ -10,22 +10,22 @@ The topics listed in the following table describe LINQ to SQL support for member
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)|Provides a detailed matrix of mappings between CLR types and SQL Server types.|  
-|[Basic Data Types](../../../../../../docs/framework/data/adonet/sql/linq/basic-data-types.md)|Summarizes differences in behavior from the .NET Framework.|  
-|[Boolean Data Types](../../../../../../docs/framework/data/adonet/sql/linq/boolean-data-types.md)|Summarizes differences in behavior from the .NET Framework.|  
-|[Null Semantics](../../../../../../docs/framework/data/adonet/sql/linq/null-semantics.md)|Provides links to [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] topics that discuss null and nullable issues.|  
-|[Numeric and Comparison Operators](../../../../../../docs/framework/data/adonet/sql/linq/numeric-and-comparison-operators.md)|Summarizes differences in behavior from the .NET Framework.|  
-|[Sequence Operators](../../../../../../docs/framework/data/adonet/sql/linq/sequence-operators.md)|Summarizes differences in behavior from the .NET Framework.|  
-|[System.Convert Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-convert-methods.md)|Summarizes differences in behavior from the .NET Framework.|  
-|[System.DateTime Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-datetime-methods.md)|Describes LINQ to SQL support for members of the <xref:System.DateTime?displayProperty=nameWithType> structure.|  
-|[System.DateTimeOffset Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-datetimeoffset-methods.md)|Describes LINQ to SQL support for members of the <xref:System.DateTimeOffset?displayProperty=nameWithType> structure.|  
-|[System.Math Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-math-methods.md)|Summarizes differences in behavior from the .NET Framework.|  
-|[System.Object Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-object-methods.md)|Summarizes differences in behavior from the .NET Framework.|  
-|[System.String Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-string-methods.md)|Summarizes differences in behavior from the .NET Framework.|  
-|[System.TimeSpan Methods](../../../../../../docs/framework/data/adonet/sql/linq/system-timespan-methods.md)|Describes LINQ to SQL support for members of the <xref:System.TimeSpan?displayProperty=nameWithType> structure.|  
-|[Unsupported Functionality](../../../../../../docs/framework/data/adonet/sql/linq/unsupported-functionality.md)|Describes functionality that is not supported in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|  
+|[SQL-CLR Type Mapping](sql-clr-type-mapping.md)|Provides a detailed matrix of mappings between CLR types and SQL Server types.|  
+|[Basic Data Types](basic-data-types.md)|Summarizes differences in behavior from the .NET Framework.|  
+|[Boolean Data Types](boolean-data-types.md)|Summarizes differences in behavior from the .NET Framework.|  
+|[Null Semantics](null-semantics.md)|Provides links to [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] topics that discuss null and nullable issues.|  
+|[Numeric and Comparison Operators](numeric-and-comparison-operators.md)|Summarizes differences in behavior from the .NET Framework.|  
+|[Sequence Operators](sequence-operators.md)|Summarizes differences in behavior from the .NET Framework.|  
+|[System.Convert Methods](system-convert-methods.md)|Summarizes differences in behavior from the .NET Framework.|  
+|[System.DateTime Methods](system-datetime-methods.md)|Describes LINQ to SQL support for members of the <xref:System.DateTime?displayProperty=nameWithType> structure.|  
+|[System.DateTimeOffset Methods](system-datetimeoffset-methods.md)|Describes LINQ to SQL support for members of the <xref:System.DateTimeOffset?displayProperty=nameWithType> structure.|  
+|[System.Math Methods](system-math-methods.md)|Summarizes differences in behavior from the .NET Framework.|  
+|[System.Object Methods](system-object-methods.md)|Summarizes differences in behavior from the .NET Framework.|  
+|[System.String Methods](system-string-methods.md)|Summarizes differences in behavior from the .NET Framework.|  
+|[System.TimeSpan Methods](system-timespan-methods.md)|Describes LINQ to SQL support for members of the <xref:System.TimeSpan?displayProperty=nameWithType> structure.|  
+|[Unsupported Functionality](unsupported-functionality.md)|Describes functionality that is not supported in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].|  
   
 ## See also
 
-- [SQL-CLR Type Mismatches](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mismatches.md)
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [SQL-CLR Type Mismatches](sql-clr-type-mismatches.md)
+- [Reference](reference.md)

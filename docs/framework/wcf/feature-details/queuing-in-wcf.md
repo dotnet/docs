@@ -49,7 +49,7 @@ This section describes how to use queued communication in Windows Communication 
  For `ExactlyOnce` reliable transfer, MSMQ requires the queue to be transactional. Also, MSMQ requires a transaction to read from a transactional queue. As such, when you use the `NetMsmqBinding`, remember that a transaction is required to send or receive messages when `ExactlyOnce` is set to `true`. Similarly, MSMQ requires the queue to be non-transactional for best-effort assurances, such as when `ExactlyOnce` is `false` and for volatile messaging. Thus, when setting `ExactlyOnce` to `false` or durable to `false`, you cannot send or receive using a transaction.  
   
 > [!NOTE]
->  Ensure that the correct queue (transactional or non-transactional) is created based on settings in the bindings. If `ExactlyOnce` is `true`, use a transactional queue; otherwise, use a non-transactional queue.  
+> Ensure that the correct queue (transactional or non-transactional) is created based on settings in the bindings. If `ExactlyOnce` is `true`, use a transactional queue; otherwise, use a non-transactional queue.  
   
 #### Dead-Letter Queue Properties  
  The dead-letter queue is used to store messages that fail delivery. The user can write compensating logic that reads messages out of the dead-letter queue.  

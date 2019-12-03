@@ -27,4 +27,4 @@ The following are code samples for Windows Identity Foundation 4.5:
 
 ## See also
 
-- [Windows Identity Foundation](../../../docs/framework/security/index.md)
+- [Windows Identity Foundation](index.md)

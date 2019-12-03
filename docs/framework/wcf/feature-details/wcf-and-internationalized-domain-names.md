@@ -30,10 +30,10 @@ Support has been added to allow for WCF services with Internationalized Domain N
  When the IDN setting is set to "None", no conversions are performed by Uri.Host or Uri.DnsSafeHost. When the IDN setting is set to "All", uri.Host remains Unicode and uri.DnsSafeHost is converted to Punycode. When the IDN setting is set to "AllExceptIntranet", uri.DnsSafeHost is converted to Punycode for internet addresses, and remains Unicode for intranet addresses. This setting is important for correct DNS name resolution. Note this setting is not required to be configured for Windows 8 and newer versions.  
   
 > [!WARNING]
->  You should never hard-code an address using Punycode. WCF will convert it for you based on the configuration settings you apply.  
+> You should never hard-code an address using Punycode. WCF will convert it for you based on the configuration settings you apply.  
   
 > [!WARNING]
->  When adding Unicode characters to applicationHost.exe.config, save the file using the UTF-8 encoding.  
+> When adding Unicode characters to applicationHost.exe.config, save the file using the UTF-8 encoding.  
   
 ## See also
 

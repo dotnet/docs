@@ -2,8 +2,6 @@
 title: "ICorDebugMergedAssemblyRecord::GetCulture Method"
 ms.date: "03/30/2017"
 ms.assetid: 030b2f8c-8c21-40b7-855d-3afa78975a17
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMergedAssemblyRecord::GetCulture Method
 Gets the culture name string of the assembly.  
@@ -32,7 +30,7 @@ HRESULT GetCulture(
  The culture name is a unique string that identifies a culture, such as "en-US" (for the English (United States) culture), or "neutral" (for a neutral culture).  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

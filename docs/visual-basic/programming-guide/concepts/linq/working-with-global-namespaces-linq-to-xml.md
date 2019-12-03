@@ -1,5 +1,5 @@
 ---
-title: "Working with Global Namespaces (Visual Basic) (LINQ to XML)"
+title: "Working with Global Namespaces (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 0a8064d5-e02f-4315-ad48-6deaa443a2f0
 ---
@@ -128,7 +128,7 @@ Console.WriteLine(root.<Child>.Count())
   
  This example indicates that there are no `Child` elements. It produces the following output:  
   
-```  
+```console  
 0  
 ```  
   
@@ -150,7 +150,7 @@ End Module
   
  This example indicates that there is one `Child` element. It produces the following output:  
   
-```  
+```console  
 1  
 ```  
   
@@ -187,10 +187,10 @@ End Module
   
  This example produces the following output:  
   
-```  
+```console  
 http://www.adventure-works.com  
 ```  
   
 ## See also
 
-- [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+- [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md)

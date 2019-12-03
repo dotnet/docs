@@ -1,7 +1,6 @@
 ---
 title: "enum keyword - C# Reference"
 ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords:
   - "enum"
@@ -30,7 +29,7 @@ enum Day {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
 
 In this enumeration, the sequence of elements is forced to start from `1` instead of `0`. However, including a constant that has the value of 0 is recommended. For more information, see [Enumeration Types](../../programming-guide/enumeration-types.md).
 
-Every enumeration type has an underlying type, which can be any [integral numeric type](../builtin-types/integral-numeric-types.md). The [char](char.md) type cannot be an underlying type of an enum. The default underlying type of enumeration elements is [int](../builtin-types/integral-numeric-types.md). To declare an enum of another integral type, such as [byte](../builtin-types/integral-numeric-types.md), use a colon after the identifier followed by the type, as shown in the following example.
+Every enumeration type has an underlying type, which can be any [integral numeric type](../builtin-types/integral-numeric-types.md). The [char](../builtin-types/char.md) type cannot be an underlying type of an enum. The default underlying type of enumeration elements is [int](../builtin-types/integral-numeric-types.md). To declare an enum of another integral type, such as [byte](../builtin-types/integral-numeric-types.md), use a colon after the identifier followed by the type, as shown in the following example.
 
 ```csharp
 enum Day : byte {Sat=1, Sun, Mon, Tue, Wed, Thu, Fri};
@@ -94,8 +93,6 @@ If you remove `Flags`, the example displays the following values:
 - [C# Reference](../index.md)
 - [Enumeration Types](../../programming-guide/enumeration-types.md)
 - [C# Keywords](index.md)
-- [Integral types](../../../csharp/language-reference/builtin-types/integral-numeric-types.md)
+- [Integral types](../builtin-types/integral-numeric-types.md)
 - [Built-In Types Table](built-in-types-table.md)
-- [Implicit Numeric Conversions Table](implicit-numeric-conversions-table.md)
-- [Explicit Numeric Conversions Table](explicit-numeric-conversions-table.md)
 - [Enum Naming Conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)

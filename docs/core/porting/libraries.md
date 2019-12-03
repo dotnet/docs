@@ -23,16 +23,16 @@ You should also become familiar with the content of the following topics:
 [.NET Standard](../../standard/net-standard.md)\
 This topic describes the formal specification of .NET APIs that are intended to be available on all .NET implementations.
 
-[Packages, Metapackages and Frameworks](~/docs/core/packages.md)   
+[Packages, Metapackages and Frameworks](../packages.md)   
 This article discusses how .NET Core defines and uses packages and how packages support code running on multiple .NET implementations.
 
-[Developing Libraries with Cross Platform Tools](~/docs/core/tutorials/libraries.md)   
+[Developing Libraries with Cross Platform Tools](../tutorials/libraries.md)   
 This topic explains how to write libraries for .NET using cross-platform CLI tools.
 
-[Additions to the *csproj* format for .NET Core](~/docs/core/tools/csproj.md)   
+[Additions to the *csproj* format for .NET Core](../tools/csproj.md)   
 This article outlines the changes that were added to the project file as part of the move to *csproj* and MSBuild.
 
-[Porting to .NET Core - Analyzing your Third-Party Party Dependencies](~/docs/core/porting/third-party-deps.md)   
+[Porting to .NET Core - Analyzing your Third-Party Party Dependencies](third-party-deps.md)   
 This topic discusses the portability of third-party dependencies and what to do when a NuGet package dependency doesn't run on .NET Core.
 
 ## Retargeting your .NET Framework code to .NET Framework 4.7.2
@@ -107,11 +107,11 @@ It's likely that you'll mix the above approaches on a per-project basis. You sho
 The best way to make sure everything works when you've ported your code is to test your code as you port it to .NET Core. To do this, you'll need to use a testing framework that builds and runs tests for .NET Core. Currently, you have three options:
 
 - [xUnit](https://xunit.github.io/)
-  * [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
-  * [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
+  - [Getting Started](https://xunit.github.io/docs/getting-started-dotnet-core.html)
+  - [Tool to convert an MSTest project to xUnit](https://github.com/dotnet/codeformatter/tree/master/src/XUnitConverter)
 - [NUnit](https://nunit.org/)
-  * [Getting Started](https://github.com/nunit/docs/wiki/Installation)
-  * [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
+  - [Getting Started](https://github.com/nunit/docs/wiki/Installation)
+  - [Blog post about migrating from MSTest to NUnit](https://www.florian-rappl.de/News/Page/275/convert-mstest-to-nunit)
 - [MSTest](https://docs.microsoft.com/visualstudio/test/unit-test-basics)
 
 ## Recommended approach to porting

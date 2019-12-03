@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetTypeProps Method"
 ms.date: "03/30/2017"
 ms.assetid: 35ac4140-91ea-4c77-b1c4-1daf41986ca5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetTypeProps Method
 Returns information about a type's properties, such as the number of signature of its generic parameters, given a relative virtual address (RVA) in a vtable.  
@@ -36,7 +34,7 @@ HRESULT GetTypeProps(
  To get the required size of the type's `signature` array, set the `cbSignature` argument to 0 and `signature` to **null**. When the method returns, `pcbSignature` will contain the number of bytes required for the `signature` array.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

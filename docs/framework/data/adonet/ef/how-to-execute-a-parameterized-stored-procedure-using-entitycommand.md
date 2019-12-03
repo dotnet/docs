@@ -11,7 +11,7 @@ This topic shows how to execute a parameterized stored procedure by using the <x
   
 ### To run the code in this example  
   
-1. Add the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) to your project and configure your project to use the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)]. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
+1. Add the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)) to your project and configure your project to use the Entity Framework. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
 2. In the code page for your application, add the following `using` statements (`Imports` in Visual Basic):  
   
@@ -28,4 +28,4 @@ This topic shows how to execute a parameterized stored procedure by using the <x
   
 ## See also
 
-- [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
+- [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md)

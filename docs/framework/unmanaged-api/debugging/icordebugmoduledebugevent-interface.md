@@ -2,8 +2,6 @@
 title: "ICorDebugModuleDebugEvent Interface"
 ms.date: "03/30/2017"
 ms.assetid: 41950c52-1ac8-4212-b814-c77e20879f91
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModuleDebugEvent Interface
 Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) interface to support module-level events.  
@@ -18,7 +16,7 @@ Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debug
  The [MODULE_LOADED](../../../../docs/framework/unmanaged-api/debugging/cordebugdebugeventkind-enumeration.md) and [MODULE_UNLOADED](../../../../docs/framework/unmanaged-api/debugging/cordebugdebugeventkind-enumeration.md) event types implement this interface.  
   
 > [!NOTE]
->  The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
+> The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

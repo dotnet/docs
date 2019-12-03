@@ -118,7 +118,7 @@ If you want a property of your control to support any of this functionality, you
 
   - The metadata for the property. The metadata contains the property's default value, a <xref:System.Windows.CoerceValueCallback> and a <xref:System.Windows.PropertyChangedCallback>.
 
-- Define a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] wrapper property named `Value`, which is the same name that is used to register the dependency property, by implementing the property's `get` and `set` accessors. Note that the `get` and `set` accessors only call <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> respectively. It is recommended that the accessors of dependency properties not contain additional logic because clients and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] can bypass the accessors and call <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> directly. For example, when a property is bound to a data source, the property's `set` accessor is not called.  Instead of adding additional logic to the get and set accessors, use the <xref:System.Windows.ValidateValueCallback>, <xref:System.Windows.CoerceValueCallback>, and <xref:System.Windows.PropertyChangedCallback> delegates to respond to or check the value when it changes.  For more information on these callbacks, see [Dependency Property Callbacks and Validation](../advanced/dependency-property-callbacks-and-validation.md).
+- Define a CLR wrapper property named `Value`, which is the same name that is used to register the dependency property, by implementing the property's `get` and `set` accessors. Note that the `get` and `set` accessors only call <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> respectively. It is recommended that the accessors of dependency properties not contain additional logic because clients and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] can bypass the accessors and call <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> directly. For example, when a property is bound to a data source, the property's `set` accessor is not called.  Instead of adding additional logic to the get and set accessors, use the <xref:System.Windows.ValidateValueCallback>, <xref:System.Windows.CoerceValueCallback>, and <xref:System.Windows.PropertyChangedCallback> delegates to respond to or check the value when it changes.  For more information on these callbacks, see [Dependency Property Callbacks and Validation](../advanced/dependency-property-callbacks-and-validation.md).
 
 - Define a method for the <xref:System.Windows.CoerceValueCallback> named `CoerceValue`. `CoerceValue` ensures that `Value` is greater or equal to `MinValue` and less than or equal to `MaxValue`.
 
@@ -131,7 +131,7 @@ For more information, see [Custom Dependency Properties](../advanced/custom-depe
 
 ### Use Routed Events
 
-Just as dependency properties extend the notion of [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] properties with additional functionality, routed events extend the notion of standard [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] events. When you create a new [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control, it is also good practice to implement your event as a routed event because a routed event supports the following behavior:
+Just as dependency properties extend the notion of CLR properties with additional functionality, routed events extend the notion of standard CLR events. When you create a new [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control, it is also good practice to implement your event as a routed event because a routed event supports the following behavior:
 
 - Events can be handled on a parent of multiple controls. If an event is a bubbling event, a single parent in the element tree can subscribe to the event. Then application authors can use one handler to respond to the event of multiple controls. For example, if your control is a part of each item in a <xref:System.Windows.Controls.ListBox> (because it is included in a <xref:System.Windows.DataTemplate>), the application developer can define the event handler for your control's event on the <xref:System.Windows.Controls.ListBox>. Whenever the event occurs on any of the controls, the event handler is called.
 
@@ -177,15 +177,15 @@ The following example uses binding to accomplish the same thing.
 
 [!code-xaml[UserControlNumericUpDown#Binding](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#binding)]
 
-For more information about data binding, see [Data Binding Overview](../data/data-binding-overview.md).
+For more information about data binding, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 ### Design for Designers
 
-To receive support for custom WPF controls in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)], see [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).
+To receive support for custom WPF controls in the WPF Designer for Visual Studio (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the WPF Designer, see [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio).
 
 #### Dependency Properties
 
-Be sure to implement [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] `get` and `set` accessors as described earlier, in "Use Dependency Properties." Designers may use the wrapper to detect the presence of a dependency property, but they, like [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and clients of the control, are not required to call the accessors when getting or setting the property.
+Be sure to implement CLR `get` and `set` accessors as described earlier, in "Use Dependency Properties." Designers may use the wrapper to detect the presence of a dependency property, but they, like [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and clients of the control, are not required to call the accessors when getting or setting the property.
 
 #### Attached Properties
 
@@ -258,7 +258,7 @@ Resources that are specific to a theme are kept in a resource dictionary with a 
 
 You do not need to define a resource for every theme. If a resource is not defined for a specific theme, then the control checks `Classic.xaml` for the resource. If the resource is not defined in the file that corresponds to the current theme or in `Classic.xaml`, the control uses the generic resource, which is in a resource dictionary file named `generic.xaml`.  The `generic.xaml` file is located in the same folder as the theme-specific resource dictionary files. Although `generic.xaml` does not correspond to a specific Windows theme, it is still a theme-level dictionary.
 
-[NumericUpDown Custom Control with Theme and UI Automation Support Sample](https://go.microsoft.com/fwlink/?LinkID=160025) contains two resource dictionaries for the `NumericUpDown` control: one is in generic.xaml and one is in Luna.NormalColor.xaml.  You can run the application and switch between the Silver theme in Windows XP and another theme to see the difference between the two control templates. (If you are running Windows Vista, you can rename Luna.NormalColor.xaml to Aero.NormalColor.xaml and switch between two themes, such as Windows Classic and the default theme for Windows Vista.)
+The [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown custom control with theme and UI automation support sample contains two resource dictionaries for the `NumericUpDown` control: one is in generic.xaml, and the other is in Luna.NormalColor.xaml. 
 
 When you put a <xref:System.Windows.Controls.ControlTemplate> in any of the theme-specific resource dictionary files, you must create a static constructor for your control and call the <xref:System.Windows.DependencyProperty.OverrideMetadata%28System.Type%2CSystem.Windows.PropertyMetadata%29> method on the <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A>, as shown in the following example.
 
@@ -286,6 +286,6 @@ The following example sets the <xref:System.Windows.ThemeInfoAttribute.GenericDi
 
 ## See also
 
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md)
 - [Control Customization](control-customization.md)

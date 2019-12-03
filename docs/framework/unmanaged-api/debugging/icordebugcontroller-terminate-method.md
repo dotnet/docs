@@ -15,14 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4275af0c-b5a7-4e4c-97c9-7e41f36b2dd8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::Terminate Method
 Terminates the process with the specified exit code.  
   
 > [!NOTE]
->  This method is a wrapper for the Win32 `TerminateProcess` function. Thus, `Terminate` uses the exit code in the same way that the Win32 `TerminateProcess` function uses it.  
+> This method is a wrapper for the Win32 `TerminateProcess` function. Thus, `Terminate` uses the exit code in the same way that the Win32 `TerminateProcess` function uses it.  
   
 ## Syntax  
   
@@ -40,7 +38,7 @@ HRESULT Terminate (
  If the process is stopped when `Terminate` is called, the process should be continued by using the [ICorDebugController::Continue](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md) method so that the debugger receives confirmation of the termination through the [ICorDebugManagedCallback::ExitProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitprocess-method.md) or [ICorDebugManagedCallback::ExitAppDomain](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitappdomain-method.md) callback.  
   
 > [!NOTE]
->  This method is not implemented by an application domain. That is, it is not implemented at the <xref:System.AppDomain> level.  
+> This method is not implemented by an application domain. That is, it is not implemented at the <xref:System.AppDomain> level.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

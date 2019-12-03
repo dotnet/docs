@@ -291,11 +291,7 @@ public object GetInstance(InstanceContext instanceContext, Message message)
 
     instance = storageManager.GetInstance(contextId, serviceType);
 
-    if (instance == null)
-    {
-        instance = Activator.CreateInstance(serviceType);
-    }
-
+    instance ??= Activator.CreateInstance(serviceType);
     return instance;
 }
 ```
@@ -426,7 +422,7 @@ Furthermore you could try to implement a class (for example, `StateBag`), which 
 
 When you run the sample, the following output is displayed. The client adds two items to its shopping cart and then gets the list of items in its shopping cart from the service. Press ENTER in each console window to shut down the service and client.
 
-```
+```console
 Enter the name of the product: apples
 Enter the name of the product: bananas
 
@@ -455,6 +451,6 @@ Press ENTER to shut down client
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Durable`

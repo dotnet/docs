@@ -1,5 +1,5 @@
 ---
-title: "Class Statement (Visual Basic)"
+title: "Class Statement"
 ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Class"
@@ -19,7 +19,7 @@ Declares the name of a class and introduces the definition of the variables, pro
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] [ Partial ] _  
 Class name [ ( Of typelist ) ]  
     [ Inherits classname ]  

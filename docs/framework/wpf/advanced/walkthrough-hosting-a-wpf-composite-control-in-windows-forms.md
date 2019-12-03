@@ -18,7 +18,7 @@ ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
   
 - Implementing the Windows Forms host application.  
   
- For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a WPF Composite Control in Windows Forms Sample](https://go.microsoft.com/fwlink/?LinkID=159996).  
+ For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a WPF Composite Control in Windows Forms Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WindowsFormsHostingWpfControl).  
   
 ## Prerequisites  
 
@@ -34,7 +34,7 @@ You need Visual Studio to complete this walkthrough.
 ### Creating the Project  
  To start the project:  
   
-1. Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch Visual Studio, and open the **New Project** dialog box.  
   
 2. In Visual C# and the Windows category, select the **WPF User Control Library** template.  
   
@@ -81,7 +81,7 @@ You need Visual Studio to complete this walkthrough.
 #### Styling the UI Elements  
  Many of the elements on the data-entry form have a similar appearance, which means that they have identical settings for several of their properties. Rather than setting each element's attributes separately, the previous XAML uses <xref:System.Windows.Style> elements to define standard property settings for classes of elements. This approach reduces the complexity of the control and enables you to change the appearance of multiple elements through a single style attribute.  
   
- The <xref:System.Windows.Style> elements are contained in the <xref:System.Windows.Controls.Grid> element's <xref:System.Windows.FrameworkElement.Resources%2A> property, so they can be used by all elements in the control. If a style is named, you apply it to an element by adding a <xref:System.Windows.Style> element set to the style's name. Styles that are not named become the default style for the element. For more information about [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] styles, see [Styling and Templating](../controls/styling-and-templating.md).  
+ The <xref:System.Windows.Style> elements are contained in the <xref:System.Windows.Controls.Grid> element's <xref:System.Windows.FrameworkElement.Resources%2A> property, so they can be used by all elements in the control. If a style is named, you apply it to an element by adding a <xref:System.Windows.Style> element set to the style's name. Styles that are not named become the default style for the element. For more information about [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] styles, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).  
   
  The following XAML shows the <xref:System.Windows.Style> elements for the composite control. To see how the styles are applied to elements, see the previous XAML. For example, the last <xref:System.Windows.Controls.TextBlock> element has the `inlineText` style, and the last <xref:System.Windows.Controls.TextBox> element uses the default style.  
   
@@ -110,7 +110,7 @@ You need Visual Studio to complete this walkthrough.
 #### The Basic Structure of the Code-Behind File  
  The code-behind file consists of a single namespace, `MyControls`, which will contain two classes, `MyControl1` and `MyControlEventArgs`.  
   
-```  
+```csharp  
 namespace MyControls  
 {  
   public partial class MyControl1 : Grid  
@@ -183,7 +183,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
 ### Creating the Project  
  To start the project:  
   
-1. Launch [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch Visual Studio, and open the **New Project** dialog box.  
   
 2. In Visual C# and the Windows category, select  the **Windows Forms Application** template.  
   
@@ -320,6 +320,6 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
 - [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md)

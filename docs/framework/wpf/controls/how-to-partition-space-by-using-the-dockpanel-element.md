@@ -23,7 +23,7 @@ The following example creates a simple [!INCLUDE[TLA#tla_ui](../../../../include
  [!code-xaml[DockPanelOvwSample#1](~/samples/snippets/xaml/VS_Snippets_Wpf/DockPanelOvwSample/XAML/default.xaml#1)]  
   
 > [!NOTE]
->  By default, the last child of a <xref:System.Windows.Controls.DockPanel> element fills the remaining unallocated space. If you do not want this behavior, set `LastChildFill="False"`.  
+> By default, the last child of a <xref:System.Windows.Controls.DockPanel> element fills the remaining unallocated space. If you do not want this behavior, set `LastChildFill="False"`.  
   
  The compiled application yields a new UI that looks like this.  
   

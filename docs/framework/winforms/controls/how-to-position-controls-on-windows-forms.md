@@ -15,8 +15,11 @@ helpviewer_keywords:
   - "snaplines"
   - "controls [Windows Forms], positioning"
 ms.assetid: 4693977e-34a4-4f19-8221-68c3120c2b2b
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ---
-# How to: Position Controls on Windows Forms
+# How to: Position controls on Windows Forms
 
 To position controls, use the Windows Forms Designer in Visual Studio or specify the <xref:System.Windows.Forms.Control.Location%2A> property.
 
@@ -29,14 +32,14 @@ In Visual Studio, drag the control to the appropriate location with the mouse.
 
 ## Position a control using the Properties window
 
-1. In Visual Studio, click the control you want to position.
+1. In Visual Studio, select the control you want to position.
 
-2. In the **Properties** window, type values for the <xref:System.Windows.Forms.Control.Location%2A> property, separated by a comma, to position the control within its container.
+2. In the **Properties** window, enter values for the <xref:System.Windows.Forms.Control.Location%2A> property, separated by a comma, to position the control within its container.
 
-     The first number (X) is the distance from the left border of the container; the second number (Y) is the distance from the upper border of the container area, measured in pixels.
+   The first number (X) is the distance from the left border of the container; the second number (Y) is the distance from the upper border of the container area, measured in pixels.
 
-    > [!NOTE]
-    > You can expand the <xref:System.Windows.Forms.Control.Location%2A> property to type the **X** and **Y** values individually.
+   > [!NOTE]
+   > You can expand the <xref:System.Windows.Forms.Control.Location%2A> property to type the **X** and **Y** values individually.
 
 ## Position a control programmatically
 
@@ -93,7 +96,6 @@ button1->Left += 200;
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
-- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
 - [Windows Forms Controls by Function](windows-forms-controls-by-function.md)

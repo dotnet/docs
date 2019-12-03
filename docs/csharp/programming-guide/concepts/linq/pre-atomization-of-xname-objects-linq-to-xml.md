@@ -113,4 +113,4 @@ Console.WriteLine("Time to construct:{0}", t2 - t1);
   
 ## See also
 
-- [Atomized XName and XNamespace Objects (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/atomized-xname-and-xnamespace-objects-linq-to-xml.md)
+- [Atomized XName and XNamespace Objects (LINQ to XML) (C#)](./atomized-xname-and-xnamespace-objects-linq-to-xml.md)

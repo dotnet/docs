@@ -7,16 +7,15 @@ helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
 ms.assetid: 77f1d761-ff45-4001-8f36-3a3e5c41fa63
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # \<clear> element for \<configSections>
 
 Clears all previously defined sections and section groups.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)   
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)   
 &nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax
@@ -35,7 +34,7 @@ Clears all previously defined sections and section groups.
 
 |     | Description |
 | --- | ----------- |
-| [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [**\<configSections>** Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
 
 ## Child elements
 
@@ -88,4 +87,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-- [Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](index.md)

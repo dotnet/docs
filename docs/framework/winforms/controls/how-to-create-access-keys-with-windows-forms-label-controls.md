@@ -34,7 +34,7 @@ Windows Forms <xref:System.Windows.Forms.Label> controls can be used to define a
 3. Use an ampersand (&) in the label's <xref:System.Windows.Forms.Label.Text%2A> property to assign the access key for the label. For more information, see [Creating Access Keys for Windows Forms Controls](how-to-create-access-keys-for-windows-forms-controls.md).  
   
     > [!NOTE]
-    >  You may want to display ampersands in a label control, rather than use them to create access keys. This may occur if you bind a label control to a field in a recordset where the data includes ampersands. To display ampersands in a label control, set the <xref:System.Windows.Forms.Label.UseMnemonic%2A> property to `false`. If you wish to display ampersands and also have an access key, set the <xref:System.Windows.Forms.Label.UseMnemonic%2A> property to `true` and indicate the access key with one ampersand (&) and the ampersand to display with two ampersands.  
+    > You may want to display ampersands in a label control, rather than use them to create access keys. This may occur if you bind a label control to a field in a recordset where the data includes ampersands. To display ampersands in a label control, set the <xref:System.Windows.Forms.Label.UseMnemonic%2A> property to `false`. If you wish to display ampersands and also have an access key, set the <xref:System.Windows.Forms.Label.UseMnemonic%2A> property to `true` and indicate the access key with one ampersand (&) and the ampersand to display with two ampersands.  
   
     ```vb  
     Label1.UseMnemonic = True  

@@ -2,8 +2,6 @@
 title: "ICorDebugDebugEvent Interface"
 ms.date: "03/30/2017"
 ms.assetid: a226737a-cb99-4e97-bd94-9a37094ded41
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDebugEvent Interface
 Defines the base interface from which all `ICorDebug` debug events derive.  
@@ -23,7 +21,7 @@ Defines the base interface from which all `ICorDebug` debug events derive.
 - [ICorDebugModuleDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugmoduledebugevent-interface.md)  
   
 > [!NOTE]
->  The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
+> The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

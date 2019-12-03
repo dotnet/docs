@@ -6,8 +6,6 @@ f1_keywords:
 helpviewer_keywords:
   - "PrintPreviewDialog control (using designer), about PrintPreviewDialog"
 ms.assetid: efd4ee8d-6edd-47ec-88e4-4a4759bd2384
-author: rpetrusha
-ms.author: ronpet
 ---
 # PrintPreviewDialog control overview (Windows Forms)
 

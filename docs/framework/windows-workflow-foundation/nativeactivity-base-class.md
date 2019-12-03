@@ -62,7 +62,7 @@ ms.assetid: 254a4c50-425b-426d-a32f-0f7234925bac
 
 9. Use the <xref:System.Activities.NativeActivityContext> object to schedule a bookmark. See <xref:System.Activities.WorkflowApplicationIdleEventArgs.Bookmarks%2A> for details on how to create, schedule, and resume a bookmark.
 
-    ```
+    ```csharp
     protected override void Execute(NativeActivityContext context)
         {
             // Create a Bookmark and wait for it to be resumed.

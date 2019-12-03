@@ -15,10 +15,10 @@ ms.assetid: 7a151659-b803-4c27-b5ce-1c4aa0d5a823
 
 Specifies the compiler configuration attributes for a language provider.
 
-\<configuration Element>
-\<system.codedom Element>
-\<compilers Element>
-\<compiler> Element
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.codedom>**](system-codedom-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<compilers>**](compilers-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<compiler>**
 
 ## Syntax
 
@@ -43,22 +43,22 @@ The following sections describe attributes, child elements, and parent elements.
 |`compilerOptions`|Optional attribute.<br /><br /> Specifies additional compiler-specific arguments for compilation. The values for the `compilerOptions` attribute are typically listed in a compiler options topic for the compiler.|
 |`extension`|Required attribute.<br /><br /> Provides a semicolon-separated list of file name extensions used by source files for the language provider. For example, ".cs".|
 |`language`|Required attribute.<br /><br /> Provides a semicolon-separated list of language names supported by the language provider. For example, "c#;cs;csharp".|
-|`type`|Required attribute.<br /><br /> Specifies the type name of the language provider, including the name of the assembly containing the provider implementation. The type name must meet the requirements defined in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|
+|`type`|Required attribute.<br /><br /> Specifies the type name of the language provider, including the name of the assembly containing the provider implementation. The type name must meet the requirements defined in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|
 |`warningLevel`|Optional attribute.<br /><br /> Specifies the default compiler warning level; determines the level at which the language provider treats compilation warnings as errors.|
 
 ### Child Elements
 
 |Element|Description|
 |-------------|-----------------|
-|[\<providerOption> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/provideroption-element.md)|Specifies compiler version attributes for a language provider.|
+|[\<providerOption> Element](provideroption-element.md)|Specifies compiler version attributes for a language provider.|
 
 ### Parent Elements
 
 |Element|Description|
 |-------------|-----------------|
-|[\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
-|[\<system.codedom> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|
-|[\<compilers> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)|Container for compiler configuration elements; contains zero or more `<compiler>` elements.|
+|[\<configuration> Element](../configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
+|[\<system.codedom> Element](system-codedom-element.md)|Specifies compiler configuration settings for available language providers.|
+|[\<compilers> Element](compilers-element.md)|Container for compiler configuration elements; contains zero or more `<compiler>` elements.|
 
 ## Remarks
 
@@ -98,7 +98,7 @@ The following example illustrates a typical compiler configuration element:
 
 - <xref:System.CodeDom.Compiler.CompilerInfo>
 - <xref:System.CodeDom.Compiler.CodeDomProvider>
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [\<compilers> Element](../../../../../docs/framework/configure-apps/file-schema/compiler/compilers-element.md)
-- [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md)
+- [Configuration File Schema](../index.md)
+- [\<compilers> Element](compilers-element.md)
+- [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md)
 - [compiler Element for compilers for compilation (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a15ebt6c(v=vs.100))

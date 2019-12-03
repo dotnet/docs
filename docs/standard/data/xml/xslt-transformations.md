@@ -12,7 +12,7 @@ The Extensible Stylesheet Language Transformation (XSLT) lets you transform the 
  The <xref:System.Xml.Xsl.XslCompiledTransform> class is the XSLT processor in .NET. The <xref:System.Xml.Xsl.XslCompiledTransform> class supports the [W3C XSLT 1.0 recommendation](https://www.w3.org/TR/xslt-10/).  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is a new implementation of the XSLT engine. It includes performance improvements and new security features. The recommended practice is to create XSLT applications using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
+> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in .NET Framework version 2.0. The <xref:System.Xml.Xsl.XslCompiledTransform> class is a new implementation of the XSLT engine. It includes performance improvements and new security features. The recommended practice is to create XSLT applications using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
 ## In This Section  
  [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md)  

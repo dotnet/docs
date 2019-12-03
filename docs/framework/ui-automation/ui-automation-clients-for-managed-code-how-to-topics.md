@@ -10,16 +10,16 @@ ms.assetid: 665b01b5-25f5-47a1-ab11-cffe8ebbf2a7
 ---
 # UI Automation Clients for Managed Code How-to Topics
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
  This section provides detailed information about implementing features of [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] in a client application.  
   
 ## In This Section  
- [Find a UI Automation Element Based on a Property Condition](../../../docs/framework/ui-automation/find-a-ui-automation-element-based-on-a-property-condition.md)  
- [Navigate Among UI Automation Elements with TreeWalker](../../../docs/framework/ui-automation/navigate-among-ui-automation-elements-with-treewalker.md)  
- [Find a UI Automation Element for a List Item](../../../docs/framework/ui-automation/find-a-ui-automation-element-for-a-list-item.md)  
- [Get UI Automation Element Properties](../../../docs/framework/ui-automation/get-ui-automation-element-properties.md)  
- [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
- [Subscribe to UI Automation Events](../../../docs/framework/ui-automation/subscribe-to-ui-automation-events.md)  
- [Register a Client-Side Provider Assembly](../../../docs/framework/ui-automation/register-a-client-side-provider-assembly.md)  
- [Use the AutomationID Property](../../../docs/framework/ui-automation/use-the-automationid-property.md)
+ [Find a UI Automation Element Based on a Property Condition](find-a-ui-automation-element-based-on-a-property-condition.md)  
+ [Navigate Among UI Automation Elements with TreeWalker](navigate-among-ui-automation-elements-with-treewalker.md)  
+ [Find a UI Automation Element for a List Item](find-a-ui-automation-element-for-a-list-item.md)  
+ [Get UI Automation Element Properties](get-ui-automation-element-properties.md)  
+ [Use Caching in UI Automation](use-caching-in-ui-automation.md)  
+ [Subscribe to UI Automation Events](subscribe-to-ui-automation-events.md)  
+ [Register a Client-Side Provider Assembly](register-a-client-side-provider-assembly.md)  
+ [Use the AutomationID Property](use-the-automationid-property.md)

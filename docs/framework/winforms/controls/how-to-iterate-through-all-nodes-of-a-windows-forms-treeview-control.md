@@ -120,4 +120,4 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
 ## See also
 
 - [TreeView Control](treeview-control-windows-forms.md)
-- [Recursive Procedures](~/docs/visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)
+- [Recursive Procedures](../../../visual-basic/programming-guide/language-features/procedures/recursive-procedures.md)

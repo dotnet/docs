@@ -9,7 +9,7 @@ ms.assetid: 35900aa2-5615-4174-8212-ba184c6b82fb
 # Inserting an Image from a File
 You can write a binary large object (BLOB) to a database as either binary or character data, depending on the type of field at your data source. BLOB is a generic term that refers to the `text`, `ntext`, and `image` data types, which typically contain documents and pictures.  
   
- To write a BLOB value to your database, issue the appropriate INSERT or UPDATE statement and pass the BLOB value as an input parameter (see [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)). If your BLOB is stored as text, such as a SQL Server `text` field, you can pass the BLOB as a string parameter. If the BLOB is stored in binary format, such as a SQL Server `image` field, you can pass an array of type `byte` as a binary parameter.  
+ To write a BLOB value to your database, issue the appropriate INSERT or UPDATE statement and pass the BLOB value as an input parameter (see [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md)). If your BLOB is stored as text, such as a SQL Server `text` field, you can pass the BLOB as a string parameter. If the BLOB is stored in binary format, such as a SQL Server `image` field, you can pass an array of type `byte` as a binary parameter.  
   
 ## Example  
  The following code example adds employee information to the Employees table in the Northwind database. A photo of the employee is read from a file and added to the Photo field in the table, which is an image field.  
@@ -126,8 +126,8 @@ public static byte[] GetPhoto(string filePath)
   
 ## See also
 
-- [Using Commands to Modify Data](../../../../../docs/framework/data/adonet/using-commands-to-modify-data.md)
-- [Retrieving Binary Data](../../../../../docs/framework/data/adonet/retrieving-binary-data.md)
-- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
-- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Using Commands to Modify Data](../using-commands-to-modify-data.md)
+- [Retrieving Binary Data](../retrieving-binary-data.md)
+- [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md)
+- [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
+- [ADO.NET Overview](../ado-net-overview.md)

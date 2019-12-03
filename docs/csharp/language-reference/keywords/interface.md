@@ -49,7 +49,7 @@ The following example demonstrates interface implementation. In this example, th
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
+- [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Reference Types](reference-types.md)

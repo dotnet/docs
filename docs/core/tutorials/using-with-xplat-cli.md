@@ -1,8 +1,9 @@
 ---
 title: Get started with .NET Core using the CLI
 description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
-author: cartermp
-ms.date: 09/10/2018
+author: thraka
+ms.author: adegeo
+ms.date: 08/07/2019
 ms.technology: dotnet-cli
 ms.custom: "seodec18"
 ---
@@ -14,7 +15,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Prerequisites
 
-- [.NET Core SDK 2.1](https://www.microsoft.com/net/download/core).
+- [.NET Core SDK 2.1](https://dotnet.microsoft.com/download) or later versions.
 - A text editor or code editor of your choice.
 
 ## Hello, Console App!
@@ -23,7 +24,7 @@ You can [view or download the sample code](https://github.com/dotnet/samples/tre
 
 Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
 
-```console
+```dotnetcli
 dotnet new console
 dotnet run
 ```
@@ -32,22 +33,22 @@ Let's do a quick walkthrough:
 
 1. `dotnet new console`
 
-   [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date `Hello.csproj` project file with the dependencies necessary to build a console app.  It also creates a `Program.cs`, a basic file containing the entry point for the application.
+   [`dotnet new`](../tools/dotnet-new.md) creates an up-to-date *Hello.csproj* project file with the dependencies necessary to build a console app. It also creates a *Program.cs*, a basic file containing the entry point for the application.
 
-   `Hello.csproj`:
+   *Hello.csproj*:
 
-   [!code[Hello.csproj](../../../samples/core/console-apps/HelloMsBuild/Hello.csproj)]
+   [!code-xml[Hello.csproj](~/samples/core/console-apps/HelloMsBuild/Hello.csproj)]
 
    The project file specifies everything that's needed to restore dependencies and build the program.
 
-   * The `OutputType` tag specifies that we're building an executable, in other words a console application.
-   * The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
+   - The `OutputType` tag specifies that we're building an executable, in other words a console application.
+   - The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 2.1.
 
-   `Program.cs`:
+   *Program.cs*:
 
-   [!code-csharp[Program.cs](../../../samples/core/console-apps/HelloMsBuild/Program.cs)]
+   [!code-csharp[Program.cs](~/samples/core/console-apps/HelloMsBuild/Program.cs)]
 
-   The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes basic constructs such as `string`, or numeric types.
+   The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes the `Console` class.
 
    We then define a namespace called `Hello`. You can change this to anything you want. A class named `Program` is defined within that namespace, with a `Main` method that takes an array of strings as its argument. This array contains the list of arguments passed in when the compiled program is called. As it is, this array is not used: all the program is doing is to write "Hello World!" to the console. Later, we'll make changes to the code that will make use of this argument.
 
@@ -109,7 +110,7 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that in 
    15: 377
    ```
 
-And that's it!  You can augment `Program.cs` any way you like.
+And that's it!  You can augment *Program.cs* any way you like.
 
 ## Working with multiple files
 
@@ -118,11 +119,11 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
 
 1. Add a new file inside the *Hello* directory named *FibonacciGenerator.cs* with the following code:
 
-   [!code-csharp[Fibonacci Generator](../../../samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]
+   [!code-csharp[Fibonacci Generator](~/samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]
 
 2. Change the `Main` method in your *Program.cs* file to instantiate the new class and call its method as in the following example:
 
-   [!code-csharp[New Program.cs](../../../samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
+   [!code-csharp[New Program.cs](~/samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
 
 3. Execute [`dotnet build`](../tools/dotnet-build.md) to compile the changes.
 
@@ -147,10 +148,23 @@ Let's build off of the previous Fibonacci example by caching some Fibonacci valu
    377
    ```
 
-And that's it! Now, you can start using the basic concepts learned here to create your own programs.
+## Publish your app
 
-Note that the commands and steps shown in this tutorial to run your application are used during development time only. Once you're ready to deploy your app, you'll want to take a look at the different [deployment strategies](../deploying/index.md) for .NET Core apps and the [`dotnet publish`](../tools/dotnet-publish.md) command.
+Once you're ready to distribute your app, use the [`dotnet publish`](../tools/dotnet-publish.md) command to generate the _publish_ folder at _bin\\debug\\netcoreapp2.1\\publish\\_ (use `/` for non-Windows systems). You can distribute the contents of the _publish_ folder to other platforms as long as they've already installed the dotnet runtime.
+
+You can run your published app with the [dotnet](../tools/dotnet.md) command:
+
+```console
+$ dotnet bin\Debug\netcoreapp2.1\publish\Hello.dll
+Hello World!
+```
+
+## Conclusion
+
+And that's it! Now, you can start using the basic concepts learned here to create your own programs.
 
 ## See also
 
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
+- [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md)
+- [Learn more about app deployment](../deploying/index.md)

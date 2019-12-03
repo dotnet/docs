@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "regular expressions, behavior"
   - ".NET Framework regular expressions, behavior"
 ms.assetid: 0ee1a6b8-caac-41d2-917f-d35570021b10
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Details of Regular Expression Behavior
 The .NET Framework regular expression engine is a backtracking regular expression matcher that incorporates a traditional Nondeterministic Finite Automaton (NFA) engine such as that used by Perl, Python, Emacs, and Tcl. This distinguishes it from faster, but more limited, pure regular expression Deterministic Finite Automaton (DFA) engines such as those found in awk, egrep, or lex. This also distinguishes it from standardized, but slower, POSIX NFAs. The following section describes the three types of regular expression engines, and explains why regular expressions in the .NET Framework are implemented by using a traditional NFA engine.  
@@ -25,7 +23,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
  Traditional NFA engines are favored by programmers because they offer greater control over string matching than either DFA or POSIX NFA engines. Although, in the worst case, they can run slowly, you can steer them to find matches in linear or polynomial time by using patterns that reduce ambiguities and limit backtracking. In other words, although NFA engines trade performance for power and flexibility, in most cases they offer good to acceptable performance if a regular expression is well-written and avoids cases in which backtracking degrades performance exponentially.  
   
 > [!NOTE]
->  For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md).  
+> For information about the performance penalty caused by excessive backtracking and ways to craft a regular expression to work around them, see [Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md).  
   
 ## .NET Framework Engine Capabilities  
  To take advantage of the benefits of a traditional NFA engine, the .NET Framework regular expression engine includes a complete set of constructs to enable programmers to steer the backtracking engine. These constructs can be used to find matches faster or to favor specific expansions over others.  
@@ -37,7 +35,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
      [!code-csharp[Conceptual.RegularExpressions.Design#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lazy1.cs#1)]
      [!code-vb[Conceptual.RegularExpressions.Design#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lazy1.vb#1)]  
   
-     The greedy and lazy versions of this regular expression are defined as shown in the following table.`  
+     The greedy and lazy versions of this regular expression are defined as shown in the following table:
   
     |Pattern|Description|  
     |-------------|-----------------|  
@@ -92,7 +90,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |`^`|Begin the match at the beginning of a line.|  
     |`(?<Pvt>\<PRIVATE\>\s)?`|Match zero or one occurrence of the string `<PRIVATE>` followed by a white-space character. Assign the match to a capturing group named `Pvt`.|  
     |`(?(Pvt)((\w+\p{P}?\s)+)`|If the `Pvt` capturing group exists, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the first capturing group.|  
-    |<code>&#124;((\w+\p{P}?\s)+))<code>|If the `Pvt` capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the third capturing group.|  
+    |<code>&#124;((\w+\p{P}?\s)+))</code>|If the `Pvt` capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the third capturing group.|  
     |`\r?$`|Match the end of a line or the end of the string.|  
   
      For more information about conditional evaluation, see [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md).  
@@ -123,13 +121,13 @@ The .NET Framework regular expression engine is a backtracking regular expressio
      [!code-csharp[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lookbehind1.cs#5)]
      [!code-vb[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lookbehind1.vb#5)]  
   
-     The regular expression `^[A-Z0-9]([-!#$%&'.*+/=?^`{}|~\w])*(?<=[A-Z0-9])$` is defined as shown in the following table.  
+     The regular expression ``^[A-Z0-9]([-!#$%&'.*+/=?^`{}|~\w])*(?<=[A-Z0-9])$`` is defined as shown in the following table.  
   
     |Pattern|Description|  
     |-------------|-----------------|  
     |`^`|Begin the match at the beginning of the string.|  
     |`[A-Z0-9]`|Match any numeric or alphanumeric character. (The comparison is case-insensitive.)|  
-    |<code>([-!#$%&'.*+/=?^\`{}&#124;~\w])*<code>|Match zero or more occurrences of any word character, or any of the following characters:  -, !, #, $, %, &, ', ., *, +, /, =, ?, ^, \`, {, }, &#124;, or ~.|  
+    |<code>([-!#$%&'.*+/=?^\`{}&#124;~\w])\*</code>|Match zero or more occurrences of any word character, or any of the following characters:  -, !, #, $, %, &, ', ., \*, +, /, =, ?, ^, \`, {, }, &#124;, or ~.|  
     |`(?<=[A-Z0-9])`|Look behind to the previous character, which must be numeric or alphanumeric. (The comparison is case-insensitive.)|  
     |`$`|End the match at the end of the string.|  
   

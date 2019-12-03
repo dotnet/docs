@@ -17,7 +17,7 @@ Windows Communication Foundation (WCF) provides an automatic mechanism for integ
   
  Any additional method calls also occur within the scope of the same operation’s transaction.  
   
-```  
+```csharp
 [ServiceContract()]  
 public interface ICustomerServiceContract  
 {  
@@ -58,7 +58,7 @@ public class CustomerService : ICustomerServiceContract
 ## Integrating Enterprise Services with a Client  
  The following code demonstrates client code using a <xref:System.Transactions.TransactionScope> instance with the <xref:System.Transactions.EnterpriseServicesInteropOption.Full> setting. In this scenario, calls to service operations that support transaction flow occur within the scope of the same transaction as the calls to Enterprise Services components.  
   
-```  
+```csharp
 static void Main()  
 {  
     // Create a client  

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "Managed Extensibility Framework, overview"
   - "MEF, overview"
 ms.assetid: 6c61b4ec-c6df-4651-80f1-4854f8b14dde
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Managed Extensibility Framework (MEF)
 
@@ -97,19 +95,19 @@ Add the following constructor to the `Program` class:
 
 ```vb
 Public Sub New()
-    'An aggregate catalog that combines multiple catalogs
+    ' An aggregate catalog that combines multiple catalogs.
      Dim catalog = New AggregateCatalog()
 
-    'Adds all the parts found in the same assembly as the Program class
+    ' Adds all the parts found in the same assembly as the Program class.
     catalog.Catalogs.Add(New AssemblyCatalog(GetType(Program).Assembly))
 
-    'Create the CompositionContainer with the parts in the catalog
+    ' Create the CompositionContainer with the parts in the catalog.
     _container = New CompositionContainer(catalog)
 
-    'Fill the imports of this object
+    ' Fill the imports of this object.
     Try
         _container.ComposeParts(Me)
-    Catch ex As Exception
+    Catch ex As CompositionException
         Console.WriteLine(ex.ToString)
     End Try
 End Sub
@@ -118,15 +116,15 @@ End Sub
 ```csharp
 private Program()
 {
-    //An aggregate catalog that combines multiple catalogs
+    // An aggregate catalog that combines multiple catalogs.
     var catalog = new AggregateCatalog();
-    //Adds all the parts found in the same assembly as the Program class
+    // Adds all the parts found in the same assembly as the Program class.
     catalog.Catalogs.Add(new AssemblyCatalog(typeof(Program).Assembly));
 
-    //Create the CompositionContainer with the parts in the catalog
+    // Create the CompositionContainer with the parts in the catalog.
     _container = new CompositionContainer(catalog);
 
-    //Fill the imports of this object
+    // Fill the imports of this object.
     try
     {
         this._container.ComposeParts(this);
@@ -203,6 +201,7 @@ class MySimpleCalculator : ICalculator
 
 ```vb
 Sub Main()
+    ' Composition is performed in the constructor.
     Dim p As New Program()
     Dim s As String
     Console.WriteLine("Enter Command:")
@@ -216,7 +215,8 @@ End Sub
 ```csharp
 static void Main(string[] args)
 {
-    Program p = new Program(); //Composition is performed in the constructor
+    // Composition is performed in the constructor.
+    var p = new Program();
     String s;
     Console.WriteLine("Enter Command:");
     while (true)
@@ -309,12 +309,14 @@ class Add: IOperation
 Public Function Calculate(ByVal input As String) As String Implements ICalculator.Calculate
     Dim left, right As Integer
     Dim operation As Char
-    Dim fn = FindFirstNonDigit(input) 'Finds the operator
+    ' Finds the operator.
+    Dim fn = FindFirstNonDigit(input)
     If fn < 0 Then
         Return "Could not parse command."
     End If
     operation = input(fn)
     Try
+        ' Separate out the operands.
         left = Integer.Parse(input.Substring(0, fn))
         right = Integer.Parse(input.Substring(fn + 1))
     Catch ex As Exception
@@ -334,13 +336,14 @@ public String Calculate(String input)
 {
     int left;
     int right;
-    Char operation;
-    int fn = FindFirstNonDigit(input); //finds the operator
+    char operation;
+    // Finds the operator.
+    int fn = FindFirstNonDigit(input); 
     if (fn < 0) return "Could not parse command.";
 
     try
     {
-        //separate out the operands
+        // Separate out the operands.
         left = int.Parse(input.Substring(0, fn));
         right = int.Parse(input.Substring(fn + 1));
     }
@@ -365,7 +368,7 @@ public String Calculate(String input)
 
 ```vb
 Private Function FindFirstNonDigit(ByVal s As String) As Integer
-    For i = 0 To s.Length
+    For i = 0 To s.Length - 1
         If (Not (Char.IsDigit(s(i)))) Then Return i
     Next
     Return -1
@@ -373,7 +376,7 @@ End Function
 ```
 
 ```csharp
-private int FindFirstNonDigit(String s)
+private int FindFirstNonDigit(string s)
 {
     for (int i = 0; i < s.Length; i++)
     {

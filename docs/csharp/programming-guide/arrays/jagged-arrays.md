@@ -39,7 +39,7 @@ A jagged array is an array whose elements are arrays. The elements of a jagged a
   
  [!code-csharp[csProgGuideArrays#24](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#24)]  
   
- It is possible to mix jagged and multidimensional arrays. The following is a declaration and initialization of a single-dimensional jagged array that contains three two-dimensional array elements of different sizes. For more information about two-dimensional arrays, see [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md).  
+ It is possible to mix jagged and multidimensional arrays. The following is a declaration and initialization of a single-dimensional jagged array that contains three two-dimensional array elements of different sizes. For more information about two-dimensional arrays, see [Multidimensional Arrays](./multidimensional-arrays.md).  
   
  [!code-csharp[csProgGuideArrays#25](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#25)]  
   
@@ -62,7 +62,7 @@ A jagged array is an array whose elements are arrays. The elements of a jagged a
 ## See also
 
 - <xref:System.Array>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Arrays](../../../csharp/programming-guide/arrays/index.md)
-- [Single-Dimensional Arrays](../../../csharp/programming-guide/arrays/single-dimensional-arrays.md)
-- [Multidimensional Arrays](../../../csharp/programming-guide/arrays/multidimensional-arrays.md)
+- [C# Programming Guide](../index.md)
+- [Arrays](./index.md)
+- [Single-Dimensional Arrays](./single-dimensional-arrays.md)
+- [Multidimensional Arrays](./multidimensional-arrays.md)

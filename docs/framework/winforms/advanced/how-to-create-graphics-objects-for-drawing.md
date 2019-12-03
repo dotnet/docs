@@ -138,7 +138,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
     ```  
   
 > [!NOTE]
->  You can only create <xref:System.Drawing.Graphics> objects from nonindexed .bmp files, such as 16-bit, 24-bit, and 32-bit .bmp files. Each pixel of nonindexed .bmp files holds a color, in contrast to pixels of indexed .bmp files, which hold an index to a color table.  
+> You can only create <xref:System.Drawing.Graphics> objects from nonindexed .bmp files, such as 16-bit, 24-bit, and 32-bit .bmp files. Each pixel of nonindexed .bmp files holds a color, in contrast to pixels of indexed .bmp files, which hold an index to a color table.  
   
 ## Drawing and Manipulating Shapes and Images  
  After it is created, a <xref:System.Drawing.Graphics> object may be used to draw lines and shapes, render text, or display and manipulate images. The principal objects that are used with the <xref:System.Drawing.Graphics> object are:  

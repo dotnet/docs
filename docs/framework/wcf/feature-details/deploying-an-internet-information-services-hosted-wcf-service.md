@@ -23,7 +23,7 @@ For a detailed walkthrough of creating an IIS-hosted WCF service, see [How to: H
 
 WCF, IIS, and ASP.NET must be installed for IIS-hosted WCF services to function correctly. The procedures for installing WCF (as part of the .NET Framework), ASP.NET, and IIS vary depending on your operating system. For more information about installing WCF and the .NET Framework, see [Install the .NET Framework for developers](../../install/guide-for-developers.md). To install IIS on Windows 10, open **Programs and Features** in **Control Panel** and then select **Turn Windows features on or off**. In **Windows Features**, select **Internet Information Services** and then choose **OK**.
 
-![Windows Features with IIS highlighted](media/windows-features-iis.png)
+![Windows Features with IIS highlighted](./media/windows-features-iis.png)
 
 Instructions for installing IIS on other operating systems can be found at [Install IIS on Windows Vista and Windows 7](/iis/install/installing-iis-7/installing-iis-on-windows-vista-and-windows-7) and [Install IIS 8.5 on Windows Server 2012 R2](/iis/install/installing-iis-85/installing-iis-85-on-windows-server-2012-r2).
 
@@ -43,9 +43,7 @@ Note that IIS 6.0 and later versions periodically restart an isolated object-ori
 
 WCF services hosted in IIS are represented as special content files (.svc files) inside the IIS application. This model is similar to the way ASMX pages are represented inside of an IIS application as .asmx files. A .svc file contains a WCF-specific processing directive ([\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md)) that allows the WCF hosting infrastructure to activate hosted services in response to incoming messages. The most common syntax for a .svc file is in the following statement.
 
-```
-<% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>
-```
+`<% @ServiceHost Service="MyNamespace.MyServiceImplementationTypeName" %>`
 
 It consists of the [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive and a single attribute, `Service`. The value of the `Service` attribute is the common language runtime (CLR) type name of the service implementation. Using this directive is basically equivalent to creating a service host using the following code.
 

@@ -95,7 +95,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  [!code-xml[C_SchemaImportExport#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]  
   
 > [!NOTE]
->  Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to WCF is present in the schema. The annotation indicates that a given pattern represents an association. For more information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
+> Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to WCF is present in the schema. The annotation indicates that a given pattern represents an association. For more information, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
  Normally, a list is imported as a collection data contract that derives from a Generic List or as a .NET Framework array, depending on whether or not the schema follows the standard naming pattern for collections. This is described in more detail in [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md). Associations are normally imported as either a <xref:System.Collections.Generic.Dictionary%602> or a collection data contract that derives from the dictionary object. For example, consider the following schema.  
   
@@ -135,7 +135,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  The `ReferencedTypes` property corresponds to the **/reference** switch in certain modes of operation of the Svcutil.exe tool.  
   
 > [!NOTE]
->  When using the Svcutil.exe or (in Visual Studio) the **Add Service Reference** tools, all of the types in MsCorLib.dll are automatically referenced.  
+> When using the Svcutil.exe or (in Visual Studio) the **Add Service Reference** tools, all of the types in MsCorLib.dll are automatically referenced.  
   
 #### Import Options: Importing Non-DataContract Schema as IXmlSerializable types  
  The <xref:System.Runtime.Serialization.XsdDataContractImporter> supports a limited subset of the schema. If unsupported schema constructs are present (for example, XML attributes), the import attempt fails with an exception. However, setting the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property to `true` extends the range of schema supported. When set to `true`, the <xref:System.Runtime.Serialization.XsdDataContractImporter> generates types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. This enables direct access to the XML representation of these types.  
@@ -164,7 +164,7 @@ To generate classes from schemas that are usable with Windows Communication Foun
  This is accomplished by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute to the generated `IXmlSerializable` classes and specifying a method that calls the <xref:System.Runtime.Serialization.XmlSerializableServices.AddDefaultSchema%2A> method to generate the "anyType" type.  
   
 > [!NOTE]
->  The <xref:System.Runtime.Serialization.XmlSerializableServices> type exists solely to support this particular feature. It is not recommended for use for any other purpose.  
+> The <xref:System.Runtime.Serialization.XmlSerializableServices> type exists solely to support this particular feature. It is not recommended for use for any other purpose.  
   
 #### Import Options: Advanced Options  
  The following are advanced import options:  

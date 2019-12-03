@@ -7,7 +7,7 @@ ms.assetid: 593b675f-938c-44ff-807b-0ca9fea30103
 This section contains detailed information about the serialization tools. You can run all the tools from the command line.  
   
 > [!IMPORTANT]
->  For the .NET Framework tools to function properly, you must set your Path, Include, and Lib environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\v2.0\Bin directory. SDKVars.bat must be executed in every command shell.  
+> For the .NET Framework tools to function properly, you must set your Path, Include, and Lib environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\v2.0\Bin directory. SDKVars.bat must be executed in every command shell.  
   
 ## In This Section  
   

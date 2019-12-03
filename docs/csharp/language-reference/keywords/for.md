@@ -1,5 +1,5 @@
 ---
-title: C# for statement
+title: for statement - C# reference
 ms.date: 06/13/2018
 f1_keywords:
   - "for"
@@ -47,7 +47,7 @@ The statements in the *initializer* section are executed only once, before enter
 
   - creation of an object by using the [new](../operators/new-operator.md) operator
 
-  - [await](await.md) expression
+  - [await](../operators/await.md) expression
 
 The *initializer* section in the example above declares and initializes the local loop variable `i`:
 
@@ -79,7 +79,7 @@ The *iterator* section defines what happens after each iteration of the body of 
 
 - creation of an object by using the [new](../operators/new-operator.md) operator
 
-- [await](await.md) expression
+- [await](../operators/await.md) expression
 
 The *iterator* section in the example above increments the local loop variable:
 
@@ -99,7 +99,7 @@ The following example defines the infinite `for` loop:
 
 ## C# language specification
 
-For more information, see [The for statement](~/_csharplang/spec/statements.md#the-for-statement) section of the [C# language specification](../language-specification/index.md).
+For more information, see [The for statement](~/_csharplang/spec/statements.md#the-for-statement) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).
 
 ## See also
 

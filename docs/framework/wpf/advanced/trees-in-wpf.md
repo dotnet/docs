@@ -17,7 +17,7 @@ In many technologies, elements and components are organized in a tree structure 
  Even though you do not always manipulate either the logical tree or the visual tree directly, understanding the concepts of how the trees interact is useful for understanding WPF as a technology. Thinking of WPF as a tree metaphor of some kind is also crucial to understanding how property inheritance and event routing work in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
   
 > [!NOTE]
->  Because the object tree is more of a concept than an actual API, another way to think of the concept is as an object graph. In practice, there are relationships between objects at run time where the tree metaphor will break down. Nevertheless, particularly with XAML-defined UI, the tree metaphor is relevant enough that most WPF documentation will use the term object tree when referencing this general concept.  
+> Because the object tree is more of a concept than an actual API, another way to think of the concept is as an object graph. In practice, there are relationships between objects at run time where the tree metaphor will break down. Nevertheless, particularly with XAML-defined UI, the tree metaphor is relevant enough that most WPF documentation will use the term object tree when referencing this general concept.  
   
 <a name="logical_tree"></a>   
 ## The Logical Tree  
@@ -37,7 +37,7 @@ In many technologies, elements and components are organized in a tree structure 
 ### The Purpose of the Logical Tree  
  The logical tree exists so that content models can readily iterate over their possible child objects, and so that content models can be extensible. Also, the logical tree provides a framework for certain notifications, such as when all objects in the logical tree are loaded. Basically, the logical tree is an approximation of a run time object graph at the framework level, which excludes visuals, but is adequate for many querying operations against your own run time application's composition.  
   
- In addition, both static and dynamic resource references are resolved by looking upwards through the logical tree for <xref:System.Windows.FrameworkElement.Resources%2A> collections on the initial requesting object, and then continuing up the logical tree and checking each <xref:System.Windows.FrameworkElement> (or <xref:System.Windows.FrameworkContentElement>) for another `Resources` value that contains a <xref:System.Windows.ResourceDictionary>, possibly containing that key. The logical tree is used for resource lookup when both the logical tree and the visual tree are present. For more information on resource dictionaries and lookup, see [XAML Resources](xaml-resources.md).  
+ In addition, both static and dynamic resource references are resolved by looking upwards through the logical tree for <xref:System.Windows.FrameworkElement.Resources%2A> collections on the initial requesting object, and then continuing up the logical tree and checking each <xref:System.Windows.FrameworkElement> (or <xref:System.Windows.FrameworkContentElement>) for another `Resources` value that contains a <xref:System.Windows.ResourceDictionary>, possibly containing that key. The logical tree is used for resource lookup when both the logical tree and the visual tree are present. For more information on resource dictionaries and lookup, see [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
 <a name="composition"></a>   
 ### Composition of the Logical Tree  
@@ -66,7 +66,7 @@ In many technologies, elements and components are organized in a tree structure 
  The visual tree also supports a helper class for visual tree traversal, <xref:System.Windows.Media.VisualTreeHelper>. The visual tree is not exposed as conveniently through control-specific properties, so the <xref:System.Windows.Media.VisualTreeHelper> class is the recommended way to traverse the visual tree if that is necessary for your programming scenario. For more information, see [WPF Graphics Rendering Overview](../graphics-multimedia/wpf-graphics-rendering-overview.md).  
   
 > [!NOTE]
->  Sometimes it is necessary to examine the visual tree of an applied template. You should be careful when using this technique. Even if you are traversing a visual tree for a control where you define the template, consumers of your control can always change the template by setting the <xref:System.Windows.Controls.Control.Template%2A> property on instances, and even the end user can influence the applied template by changing the system theme.  
+> Sometimes it is necessary to examine the visual tree of an applied template. You should be careful when using this technique. Even if you are traversing a visual tree for a control where you define the template, consumers of your control can always change the template by setting the <xref:System.Windows.Controls.Control.Template%2A> property on instances, and even the end user can influence the applied template by changing the system theme.  
   
 <a name="routes"></a>   
 ## Routes for Routed Events as a "Tree"  
@@ -76,7 +76,7 @@ In many technologies, elements and components are organized in a tree structure 
 ## Resource Dictionaries and Trees  
  Resource dictionary lookup for all `Resources` defined in a page traverses basically the logical tree. Objects that are not in the logical tree can reference keyed resources, but the resource lookup sequence begins at the point where that object is connected to the logical tree. In WPF, only logical tree nodes can have a `Resources` property that contains a <xref:System.Windows.ResourceDictionary>, therefore there is no benefit in traversing the visual tree looking for keyed resources from a <xref:System.Windows.ResourceDictionary>.  
   
- However, resource lookup can also extend beyond the immediate logical tree. For application markup, the resource lookup can then continue onward to application-level resource dictionaries and then to theme support and system values that are referenced as static properties or keys. Themes themselves can also reference system values outside of the theme logical tree if the resource references are dynamic. For more information on resource dictionaries and the lookup logic, see [XAML Resources](xaml-resources.md).  
+ However, resource lookup can also extend beyond the immediate logical tree. For application markup, the resource lookup can then continue onward to application-level resource dictionaries and then to theme support and system values that are referenced as static properties or keys. Themes themselves can also reference system values outside of the theme logical tree if the resource references are dynamic. For more information on resource dictionaries and the lookup logic, see [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
 ## See also
 

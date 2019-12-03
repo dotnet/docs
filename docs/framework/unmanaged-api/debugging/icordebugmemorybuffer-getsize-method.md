@@ -2,8 +2,6 @@
 title: "ICorDebugMemoryBuffer::GetSize Method"
 ms.date: "03/30/2017"
 ms.assetid: 9ffd5482-268e-4680-9fd1-bfb0b7d66450
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMemoryBuffer::GetSize Method
 Gets the size of the memory buffer in bytes.  
@@ -23,7 +21,7 @@ HRESULT GetSize(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

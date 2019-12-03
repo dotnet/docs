@@ -5,12 +5,13 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
 ---
 # Windows Workflow Foundation 4 Performance
 
- Microsoft [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] includes a major revision of the Windows Workflow Foundation (WF) with heavy investments in performance.  This new revision introduces significant design changes from the previous versions of [!INCLUDE[wf1](../../../includes/wf1-md.md)] that shipped as part of .NET Framework 3.0 and [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)]. It has been re-architected from the core of the programming model, runtime, and tooling to greatly improve performance and usability. This topic shows the important performance characteristics of these revisions and compares them against those of the previous version.
+ .NET Framework 4 includes a major revision of the Windows Workflow Foundation (WF) with heavy investments in performance. This new revision introduces significant design changes from the previous versions of [!INCLUDE[wf1](../../../includes/wf1-md.md)] that shipped as part of .NET Framework 3.0 and .NET Framework 3.5. It has been re-architected from the core of the programming model, runtime, and tooling to greatly improve performance and usability. This topic shows the important performance characteristics of these revisions and compares them against those of the previous version.
 
  Individual workflow component performance has increased by orders of magnitude between WF3 and WF4.  This leaves the gap between hand-coded Windows Communication Foundation (WCF) services and WCF workflow services to be quite small.  Workflow latency has been significantly reduced in WF4.  Persistence performance has increased by a factor of 2.5 - 3.0.  Health monitoring by means of workflow tracking has significantly less overhead.  These are compelling reasons to migrate to or adopt WF4 in your applications.
 
 ## Terminology
- The version of [!INCLUDE[wf1](../../../includes/wf1-md.md)] introduced in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] will be referred to as WF4 for the rest of this topic.  [!INCLUDE[wf1](../../../includes/wf1-md.md)] was introduced in .NET 3.0 and had a few minor revisions through [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] SP1. The [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] version of Workflow Foundation will be referred to as WF3 for the rest of this topic. WF3 is shipped in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] side-by-side with WF4. For more information about migrating WF3 artifacts to WF4 see: [Windows Workflow Foundation 4 Migration Guide](https://go.microsoft.com/fwlink/?LinkID=153313)
+
+ The version of [!INCLUDE[wf1](../../../includes/wf1-md.md)] introduced in .NET Framework 4 will be referred to as WF4 for the rest of this topic. [!INCLUDE[wf1](../../../includes/wf1-md.md)] was introduced in .NET Framework 3.0 and had a few minor revisions through .NET Framework 3.5 SP1. The .NET Framework 3.5 version of Workflow Foundation will be referred to as WF3 for the rest of this topic. WF3 is shipped in .NET Framework 4 side-by-side with WF4. For more information about migrating WF3 artifacts to WF4 see: [Windows Workflow Foundation 4 Migration Guide](https://go.microsoft.com/fwlink/?LinkID=153313).
 
  Windows Communication Foundation (WCF) is Microsoft’s unified programming model for building service-oriented applications. It was first introduced as part of .NET 3.0 together with WF3 and now is one of the key components of the .NET Framework.
 
@@ -48,7 +49,7 @@ ms.assetid: 67d2b3e8-3777-49f8-9084-abbb33b5a766
  The unified message processing pipeline provided in WCF in .NET 4 helps WF4 services to have significantly better performance and scalability than WF3. WF4 also provides richer messaging programming support that can model complex Message Exchange Patterns (MEPs). Developers can use either typed service contracts to achieve easy programming or un-typed service contracts to achieve better performance without paying serialization costs. The client-side channel caching support through the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class in WF4 helps developers build fast applications with minimal effort. For more information, see [Changing the Cache Sharing Levels for Send Activities](../wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).
 
 ### Declarative Programming
- WF4 provides a clean and simple declarative programming framework to model business processes and services. The programming model supports fully declarative composition of activities, with no code-beside, greatly simplifying workflow authoring. In [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], the XAML-based declarative programming framework has been unified into the single assembly System.Xaml.dll to support both WPF and WF.
+ WF4 provides a clean and simple declarative programming framework to model business processes and services. The programming model supports fully declarative composition of activities, with no code-beside, greatly simplifying workflow authoring. In .NET Framework 4, the XAML-based declarative programming framework has been unified into the single assembly System.Xaml.dll to support both WPF and WF.
 
  In WF4, XAML provides a truly declarative experience and allows for the entire definition of the workflow to be defined in XML markup, referencing activities and types built using .NET. This was difficult to do in WF3 with XOML format without involving custom code-behind logic. The new XAML-stack in .NET 4 has much better performance in serializing/deserializing workflow artifacts and makes declarative programming more attractive and solid.
 
@@ -132,9 +133,9 @@ class WorkScope :
     }
 ```
 
- The fault handler targets the `WorkScope` activity.The WF4 workflow is equally simplistic.  A <xref:System.Activities.Statements.CompensableActivity> has a body and a compensation handler.  An explicit compensate is next in the sequence.  The body activity and compensation handler activity are both empty implementations:
+ The fault handler targets the `WorkScope` activity. The WF4 workflow is equally simplistic.  A <xref:System.Activities.Statements.CompensableActivity> has a body and a compensation handler.  An explicit compensate is next in the sequence.  The body activity and compensation handler activity are both empty implementations:
 
-```
+```csharp
 public sealed class CompensableActivityEmptyCompensation : CodeActivity
     {
         public CompensableActivityEmptyCompensation()

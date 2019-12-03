@@ -1,5 +1,5 @@
 ---
-title: "Interface Statement (Visual Basic)"
+title: "Interface Statement"
 ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Interface"
@@ -13,7 +13,7 @@ Declares the name of an interface and introduces the definitions of the members 
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] [ Shadows ] _  
 Interface name [ ( Of typelist ) ]  
     [ Inherits interfacenames ]  

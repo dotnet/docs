@@ -42,7 +42,7 @@ The **XmlResolver** property of the **XmlDocument** is used by the **XmlDocument
  Setting the XmlResolver to contain the correct credentials allows access to external resources.  
   
 > [!NOTE]
->  There is no way to retrieve the **XmlResolver** property. This helps to prevent a user from reusing an **XmlResolver** on which credentials have been set. Also, if an **XmlTextReader** or validating <xref:System.Xml.XmlReader> is used to load the **XmlDocument** and the **XmlDocument** has a resolver that has been set, the resolvers from these readers are not cached by the **XmlDocument** after the **Load** phase, since this also presents a security risk.  
+> There is no way to retrieve the **XmlResolver** property. This helps to prevent a user from reusing an **XmlResolver** on which credentials have been set. Also, if an **XmlTextReader** or validating <xref:System.Xml.XmlReader> is used to load the **XmlDocument** and the **XmlDocument** has a resolver that has been set, the resolvers from these readers are not cached by the **XmlDocument** after the **Load** phase, since this also presents a security risk.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlResolver> reference page.  
   

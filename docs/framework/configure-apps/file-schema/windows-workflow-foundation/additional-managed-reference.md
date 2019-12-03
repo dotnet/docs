@@ -5,7 +5,7 @@ ms.topic: "reference"
 ms.assetid: 453917f7-5fb9-4572-a681-853f80b2b7c5
 ---
 # Additional Managed Reference
-This topic documents the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
+This topic documents the [Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder](microsoft-visualstudio-activities-asr-clientactivitybuilder.md) class.  
   
 ## In This Section  
  This class is used by the wfd1 infrastructure and is not intended to be called by users.

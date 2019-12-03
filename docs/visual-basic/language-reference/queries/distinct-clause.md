@@ -1,5 +1,5 @@
 ---
-title: "Distinct Clause (Visual Basic)"
+title: "Distinct Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryDistinct"
@@ -14,7 +14,7 @@ Restricts the values of the current range variable to eliminate duplicate values
   
 ## Syntax  
   
-```  
+```vb  
 Distinct  
 ```  
   

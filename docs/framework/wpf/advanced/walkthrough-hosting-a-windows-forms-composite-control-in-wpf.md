@@ -38,7 +38,7 @@ You need Visual Studio to complete this walkthrough.
 ### Creating the Project  
  To start the project:  
   
-1. Launch [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)], and open the **New Project** dialog box.  
+1. Launch Visual Studio, and open the **New Project** dialog box.  
   
 2. In the Window category, select the **Windows Forms Control Library** template.  
   
@@ -106,13 +106,13 @@ You need Visual Studio to complete this walkthrough.
 ### Giving the Assembly a Strong Name and Building the Assembly
  For this assembly to be referenced by a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application, it must have a strong name. To create a strong name, create a key file with Sn.exe and add it to your project.
 
-1. Open a [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] command prompt. To do so, click the **Start** menu, and then select **All Programs/Microsoft Visual Studio 2010/Visual Studio Tools/Visual Studio Command Prompt**. This launches a console window with customized environment variables.
+1. Open a Visual Studio command prompt. To do so, click the **Start** menu, and then select **All Programs/Microsoft Visual Studio 2010/Visual Studio Tools/Visual Studio Command Prompt**. This launches a console window with customized environment variables.
 
 2. At the command prompt, use the `cd` command to go to your project folder.
 
 3. Generate a key file named MyControls.snk by running the following command.
 
-    ```
+    ```console
     Sn.exe -k MyControls.snk
     ```
 
@@ -130,7 +130,7 @@ The following image shows the complete application, including the control embedd
 ### Creating the Project
  To start the project:
 
-1. Open [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)], and select **New Project**.
+1. Open Visual Studio, and select **New Project**.
 
 2. In the Window category, select the **WPF Application** template.
 
@@ -236,6 +236,6 @@ using MyControls;
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Walkthrough: Hosting a Windows Forms Control in WPF](walkthrough-hosting-a-windows-forms-control-in-wpf.md)
 - [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

@@ -13,7 +13,7 @@ This topic provides a quick reference to [!INCLUDE[esql](../../../../../../inclu
   
  The following is an example of a Non-Unicode string literal:  
   
-```  
+```sql  
 'hello'  
 --same as  
 "hello"  
@@ -30,7 +30,7 @@ This topic provides a quick reference to [!INCLUDE[esql](../../../../../../inclu
   
  Example:  
   
-```  
+```sql  
 DATETIME '2006-12-25 01:01:00.000'   
 --same as  
 DATETIME '2006-12-25 01:01'  
@@ -47,7 +47,7 @@ DATETIME '2006-12-25 01:01'
   
  Example:  
   
-```  
+```sql  
 --a collection of integers  
 {1, 2, 3}  
 ```  
@@ -66,13 +66,13 @@ DATETIME '2006-12-25 01:01'
 ## Type Constructors  
   
 ### ROW  
- [ROW](../../../../../../docs/framework/data/adonet/ef/language-reference/row-entity-sql.md) constructs an anonymous, structurally-typed (record) value as in: `ROW(1 AS myNumber, ‘Name’ AS myName).`  
+ [ROW](row-entity-sql.md) constructs an anonymous, structurally-typed (record) value as in: `ROW(1 AS myNumber, ‘Name’ AS myName).`  
   
  Example:  
   
-```  
-SELECT VALUE row (product.ProductID as ProductID, product.Name   
-    as ProductName) FROM AdventureWorksEntities.Product AS product  
+```sql  
+SELECT VALUE row (product.ProductID AS ProductID, product.Name
+    AS ProductName) FROM AdventureWorksEntities.Product AS product
 ```  
   
  Output:  
@@ -85,13 +85,13 @@ SELECT VALUE row (product.ProductID as ProductID, product.Name
 |...|...|  
   
 ### MULTISET  
- [MULTISET](../../../../../../docs/framework/data/adonet/ef/language-reference/multiset-entity-sql.md) constructs collections, such as:  
+ [MULTISET](multiset-entity-sql.md) constructs collections, such as:  
   
  `MULTISET(1,2,2,3)` `--same as`-`{1,2,2,3}.`  
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE product FROM AdventureWorksEntities.Product AS product WHERE product.ListPrice IN MultiSet (125, 300)  
 ```  
   
@@ -102,11 +102,11 @@ SELECT VALUE product FROM AdventureWorksEntities.Product AS product WHERE produc
 |842|Touring-Panniers, Large|PA-T100|…|  
   
 ### Object  
- [Named Type Constructor](../../../../../../docs/framework/data/adonet/ef/language-reference/named-type-constructor-entity-sql.md) constructs (named) user-defined objects, such as `person("abc", 12)`.  
+ [Named Type Constructor](named-type-constructor-entity-sql.md) constructs (named) user-defined objects, such as `person("abc", 12)`.  
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE AdventureWorksModel.SalesOrderDetail (o.SalesOrderDetailID, o.CarrierTrackingNumber, o.OrderQty,   
 o.ProductID, o.SpecialOfferID, o.UnitPrice, o.UnitPriceDiscount,   
 o.rowguid, o.ModifiedDate) FROM AdventureWorksEntities.SalesOrderDetail   
@@ -124,9 +124,9 @@ AS o
 ## References  
   
 ### REF  
- [REF](../../../../../../docs/framework/data/adonet/ef/language-reference/ref-entity-sql.md) creates a reference to an entity type instance. For example, the following query returns references to each Order entity in the Orders entity set:  
+ [REF](ref-entity-sql.md) creates a reference to an entity type instance. For example, the following query returns references to each Order entity in the Orders entity set:  
   
-```  
+```sql  
 SELECT REF(o) AS OrderID FROM Orders AS o  
 ```  
   
@@ -143,9 +143,9 @@ SELECT REF(o) AS OrderID FROM Orders AS o
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE REF(p).Name FROM   
-    AdventureWorksEntities.Product as p  
+    AdventureWorksEntities.Product AS p
 ```  
   
  Output:  
@@ -158,13 +158,13 @@ SELECT VALUE REF(p).Name FROM
 |...|  
   
 ### DEREF  
- [DEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/deref-entity-sql.md) dereferences a reference value and produces the result of that dereference. For example, the following query produces the Order entities for each Order in the Orders entity set: `SELECT DEREF(o2.r) FROM (SELECT REF(o) AS r FROM LOB.Orders AS o) AS o2`..  
+ [DEREF](deref-entity-sql.md) dereferences a reference value and produces the result of that dereference. For example, the following query produces the Order entities for each Order in the Orders entity set: `SELECT DEREF(o2.r) FROM (SELECT REF(o) AS r FROM LOB.Orders AS o) AS o2`..  
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE DEREF(REF(p)).Name FROM   
-    AdventureWorksEntities.Product as p  
+    AdventureWorksEntities.Product AS p
 ```  
   
  Output:  
@@ -177,13 +177,13 @@ SELECT VALUE DEREF(REF(p)).Name FROM
 |...|  
   
 ### CREATEREF AND KEY  
- [CREATEREF](../../../../../../docs/framework/data/adonet/ef/language-reference/createref-entity-sql.md) creates a reference passing a key. [KEY](../../../../../../docs/framework/data/adonet/ef/language-reference/key-entity-sql.md) extracts the key portion of an expression with type reference.  
+ [CREATEREF](createref-entity-sql.md) creates a reference passing a key. [KEY](key-entity-sql.md) extracts the key portion of an expression with type reference.  
   
  Example:  
   
-```  
+```sql  
 SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))   
-    FROM AdventureWorksEntities.Product as p  
+    FROM AdventureWorksEntities.Product AS p
 ```  
   
  Output:  
@@ -198,12 +198,12 @@ SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))
 ## Functions  
   
 ### Canonical  
- The namespace for [canonical functions](../../../../../../docs/framework/data/adonet/ef/language-reference/canonical-functions.md) is Edm, as in `Edm.Length("string")`. You do not have to specify the namespace unless another namespace is imported that contains a function with the same name as a canonical function. If two namespaces have the same function, the user should specific the full name.  
+ The namespace for [canonical functions](canonical-functions.md) is Edm, as in `Edm.Length("string")`. You do not have to specify the namespace unless another namespace is imported that contains a function with the same name as a canonical function. If two namespaces have the same function, the user should specific the full name.  
   
  Example:  
   
-```  
-SELECT Length(c. FirstName) As NameLen FROM   
+```sql  
+SELECT Length(c. FirstName) AS NameLen FROM
     AdventureWorksEntities.Contact AS c   
     WHERE c.ContactID BETWEEN 10 AND 12  
 ```  
@@ -217,12 +217,12 @@ SELECT Length(c. FirstName) As NameLen FROM
 |5|  
   
 ### Microsoft Provider-Specific  
- [Microsoft provider-specific functions](../../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md) are in the `SqlServer` namespace.  
+ [Microsoft provider-specific functions](../sqlclient-for-ef-functions.md) are in the `SqlServer` namespace.  
   
  Example:  
   
-```  
-SELECT SqlServer.LEN(c.EmailAddress) As EmailLen FROM   
+```sql  
+SELECT SqlServer.LEN(c.EmailAddress) AS EmailLen FROM
     AdventureWorksEntities.Contact AS c WHERE   
     c.ContactID BETWEEN 10 AND 12  
 ```  
@@ -236,11 +236,11 @@ SELECT SqlServer.LEN(c.EmailAddress) As EmailLen FROM
 |26|  
   
 ## Namespaces  
- [USING](../../../../../../docs/framework/data/adonet/ef/language-reference/using-entity-sql.md) specifies namespaces used in a query expression.  
+ [USING](using-entity-sql.md) specifies namespaces used in a query expression.  
   
  Example:  
   
-```  
+```sql  
 using SqlServer; LOWER('AA');  
 ```  
   
@@ -251,12 +251,12 @@ using SqlServer; LOWER('AA');
 |aa|  
   
 ## Paging  
- Paging can be expressed by declaring a [SKIP](../../../../../../docs/framework/data/adonet/ef/language-reference/skip-entity-sql.md) and [LIMIT](../../../../../../docs/framework/data/adonet/ef/language-reference/limit-entity-sql.md) sub-clauses to the [ORDER BY](../../../../../../docs/framework/data/adonet/ef/language-reference/order-by-entity-sql.md) clause.  
+ Paging can be expressed by declaring a [SKIP](skip-entity-sql.md) and [LIMIT](limit-entity-sql.md) sub-clauses to the [ORDER BY](order-by-entity-sql.md) clause.  
   
  Example:  
   
-```  
-SELECT c.ContactID as ID, c.LastName as Name FROM   
+```sql  
+SELECT c.ContactID as ID, c.LastName AS Name FROM
     AdventureWorks.Contact AS c ORDER BY c.ContactID SKIP 9 LIMIT 3;  
 ```  
   
@@ -269,12 +269,12 @@ SELECT c.ContactID as ID, c.LastName as Name FROM
 |12|Aguilar|  
   
 ## Grouping  
- [GROUPING BY](../../../../../../docs/framework/data/adonet/ef/language-reference/group-by-entity-sql.md) specifies groups into which objects returned by a query ([SELECT](../../../../../../docs/framework/data/adonet/ef/language-reference/select-entity-sql.md)) expression are to be placed.  
+ [GROUPING BY](group-by-entity-sql.md) specifies groups into which objects returned by a query ([SELECT](select-entity-sql.md)) expression are to be placed.  
   
  Example:  
   
-```  
-SELECT VALUE name FROM AdventureWorksEntities.Product as P   
+```sql  
+SELECT VALUE name FROM AdventureWorksEntities.Product AS P
     GROUP BY P.Name HAVING MAX(P.ListPrice) > 5  
 ```  
   
@@ -288,11 +288,11 @@ SELECT VALUE name FROM AdventureWorksEntities.Product as P
 |...|  
   
 ## Navigation  
- The relationship navigation operator allows you to navigate over the relationship from one entity (from end) to another (to end). [NAVIGATE](../../../../../../docs/framework/data/adonet/ef/language-reference/navigate-entity-sql.md) takes the relationship type qualified as \<namespace>.\<relationship type name>. Navigate returns Ref\<T> if the cardinality of the to end is 1. If the cardinality of the to end is n, the Collection<Ref\<T>> will be returned.  
+ The relationship navigation operator allows you to navigate over the relationship from one entity (from end) to another (to end). [NAVIGATE](navigate-entity-sql.md) takes the relationship type qualified as \<namespace>.\<relationship type name>. Navigate returns Ref\<T> if the cardinality of the to end is 1. If the cardinality of the to end is n, the Collection<Ref\<T>> will be returned.  
   
  Example:  
   
-```  
+```sql  
 SELECT a.AddressID, (SELECT VALUE DEREF(v) FROM   
     NAVIGATE(a, AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID) AS v)   
     FROM AdventureWorksEntities.Address AS a  
@@ -314,8 +314,8 @@ SELECT a.AddressID, (SELECT VALUE DEREF(v) FROM
   
  Example:  
   
-```  
-SELECT VALUE p.Name FROM AdventureWorksEntities.Product as p  
+```sql  
+SELECT VALUE p.Name FROM AdventureWorksEntities.Product AS p
 ```  
   
  Output:  
@@ -342,11 +342,11 @@ SELECT VALUE p.Name FROM AdventureWorksEntities.Product as p
 |...|...|  
   
 ## CASE EXPRESSION  
- The [case expression](../../../../../../docs/framework/data/adonet/ef/language-reference/case-entity-sql.md) evaluates a set of Boolean expressions to determine the result.  
+ The [case expression](case-entity-sql.md) evaluates a set of Boolean expressions to determine the result.  
   
  Example:  
   
-```  
+```sql  
 CASE WHEN AVG({25,12,11}) < 100 THEN TRUE ELSE FALSE END  
 ```  
   
@@ -358,5 +358,5 @@ CASE WHEN AVG({25,12,11}) < 100 THEN TRUE ELSE FALSE END
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Entity SQL Overview](entity-sql-overview.md)

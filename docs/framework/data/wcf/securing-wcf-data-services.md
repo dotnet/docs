@@ -44,10 +44,10 @@ context.Credentials = _
     New NetworkCredential(userName, password, domain)  
 ```  
   
- For more information, see [How to: Specify Client Credentials for a Data Service Request](../../../../docs/framework/data/wcf/specify-client-creds-for-a-data-service-request-wcf.md).  
+ For more information, see [How to: Specify Client Credentials for a Data Service Request](specify-client-creds-for-a-data-service-request-wcf.md).  
   
  When the data service requires login credentials that cannot be specified by using a <xref:System.Net.NetworkCredential> object, such as a claims-based token or cookie, you must manually set headers in the HTTP request, usually the `Authorization` and `Cookie` headers. For more information about this kind of authentication scenario, see the blog post [
-OData and Authentication – Part 3 – ClientSide Hooks](https://devblogs.microsoft.com/odata/odata-and-authentication-part-3-clientside-hooks/). For an example of how to set HTTP headers in a request message, see [How to: Set Headers in the Client Request](../../../../docs/framework/data/wcf/how-to-set-headers-in-the-client-request-wcf-data-services.md).  
+OData and Authentication – Part 3 – ClientSide Hooks](https://devblogs.microsoft.com/odata/odata-and-authentication-part-3-clientside-hooks/). For an example of how to set HTTP headers in a request message, see [How to: Set Headers in the Client Request](how-to-set-headers-in-the-client-request-wcf-data-services.md).  
   
 ## Impersonation  
  Generally, the data service accesses required resources, such as files on the server or a database, by using the credentials of the worker process that is hosting the data service. When using impersonation, ASP.NET applications can execute with the Windows identity (user account) of the user making the request. Impersonation is commonly used in applications that rely on IIS to authenticate the user, and the credentials of this principle are used to access the required resources. For more information, see [ASP.NET Impersonation](https://docs.microsoft.com/previous-versions/aspnet/xh507fc5(v=vs.100)).  
@@ -56,13 +56,13 @@ OData and Authentication – Part 3 – ClientSide Hooks](https://devblogs.micro
  Authorization is the granting of access to application resources to a principle or process that is identified based on a previously successful authentication. As a general practice, you should only grant sufficient rights to users of the data service to perform the operations required by client applications.  
   
 ### Restrict Access to Data Service Resources  
- By default, WCF Data Services enables you to grant common read and write access against data service resources (entity set and service operations) to any user that is able to access the data service. Rules that define read and write access can be defined separately for each entity set exposed by the data service, as well as to any service operations. We recommend limiting both read and write access to only the resources required by the client application. For more information, see [Minimum Resource Access Requirements](../../../../docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md#accessRequirements).  
+ By default, WCF Data Services enables you to grant common read and write access against data service resources (entity set and service operations) to any user that is able to access the data service. Rules that define read and write access can be defined separately for each entity set exposed by the data service, as well as to any service operations. We recommend limiting both read and write access to only the resources required by the client application. For more information, see [Minimum Resource Access Requirements](configuring-the-data-service-wcf-data-services.md#accessRequirements).  
   
 ### Implement Role-Based Interceptors  
- Interceptors enable you to intercept requests against data service resources before they are acted on by the data service. For more information, see [Interceptors](../../../../docs/framework/data/wcf/interceptors-wcf-data-services.md). Interceptors enable you to make authorization decisions based the authenticated user that is making the request. For an example of how to restrict access to data service resources based on an authenticated user identity, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  
+ Interceptors enable you to intercept requests against data service resources before they are acted on by the data service. For more information, see [Interceptors](interceptors-wcf-data-services.md). Interceptors enable you to make authorization decisions based the authenticated user that is making the request. For an example of how to restrict access to data service resources based on an authenticated user identity, see [How to: Intercept Data Service Messages](how-to-intercept-data-service-messages-wcf-data-services.md).  
   
 ### Restrict Access to the Persisted Data Store and Local Resources  
- The accounts that are used to access the persisted store should be granted only enough rights in a database or the file system to support the requirements of the data service. When anonymous authentication is used, this is the account used to run the hosting application. For more information, see [How to: Develop a WCF Data Service Running on IIS](../../../../docs/framework/data/wcf/how-to-develop-a-wcf-data-service-running-on-iis.md). When impersonation is used, authenticated users must be granted access to these resources, usually as part of a Windows group.  
+ The accounts that are used to access the persisted store should be granted only enough rights in a database or the file system to support the requirements of the data service. When anonymous authentication is used, this is the account used to run the hosting application. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md). When impersonation is used, authenticated users must be granted access to these resources, usually as part of a Windows group.  
   
 ## Other Security Considerations  
   
@@ -75,7 +75,7 @@ OData is based on the HTTP protocol. In an HTTP message, the header may contain 
  Cookies can be used as part of an authentication scheme, such as with ASP.NET Forms Authentication. However, any HTTP cookies set on an incoming request are ignored by WCF DataServices. The host of a data service may process the cookie, but the WCF Data Services runtime never analyzes or returns cookies. The WCF Data Services client library also does not process cookies sent in the response.  
   
 ### Custom Hosting Requirements  
- By default, WCF Data Services is created as an ASP.NET application hosted in IIS. This enables the data service to leverage the secure behaviors of this platform. You can define WCF Data Services that are hosted by a custom host. For more information, see [Hosting the Data Service](../../../../docs/framework/data/wcf/hosting-the-data-service-wcf-data-services.md). The components and platform hosting a data service must ensure the following security behaviors to prevent attacks on the data service:  
+ By default, WCF Data Services is created as an ASP.NET application hosted in IIS. This enables the data service to leverage the secure behaviors of this platform. You can define WCF Data Services that are hosted by a custom host. For more information, see [Hosting the Data Service](hosting-the-data-service-wcf-data-services.md). The components and platform hosting a data service must ensure the following security behaviors to prevent attacks on the data service:  
   
 - Limit the length of the URI accepted in a data service request for all possible operations.  
   
@@ -107,5 +107,5 @@ OData is based on the HTTP protocol. In an HTTP message, the header may contain 
   
 ## See also
 
-- [Defining WCF Data Services](../../../../docs/framework/data/wcf/defining-wcf-data-services.md)
-- [WCF Data Services Client Library](../../../../docs/framework/data/wcf/wcf-data-services-client-library.md)
+- [Defining WCF Data Services](defining-wcf-data-services.md)
+- [WCF Data Services Client Library](wcf-data-services-client-library.md)

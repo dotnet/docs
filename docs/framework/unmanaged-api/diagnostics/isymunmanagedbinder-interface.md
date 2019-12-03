@@ -14,14 +14,12 @@ helpviewer_keywords:
 ms.assetid: b22fbe19-b30f-4696-8175-e6b91da9edab
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedBinder Interface
 Represents a symbol binder for unmanaged code.  
   
 > [!IMPORTANT]
->  It is a security risk to open a program database (PDB) file from an untrusted source.  
+> It is a security risk to open a program database (PDB) file from an untrusted source.  
   
 ## Methods  
   

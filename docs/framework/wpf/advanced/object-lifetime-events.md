@@ -30,7 +30,7 @@ This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../incl
 
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] (see [XAML Overview (WPF)](xaml-overview-wpf.md)) and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
+ This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] (see [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)) and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
   
 <a name="intro"></a>   
 ## Object Lifetime Events  
@@ -51,7 +51,7 @@ This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../incl
  The mechanism by which the <xref:System.Windows.FrameworkElement.Loaded> event is raised is different than <xref:System.Windows.FrameworkElement.Initialized>. The <xref:System.Windows.FrameworkElement.Initialized> event is raised element by element, without a direct coordination by a completed element tree. By contrast, the <xref:System.Windows.FrameworkElement.Loaded> event is raised as a coordinated effort throughout the entire element tree (specifically, the logical tree). When all elements in the tree are in a state where they are considered loaded, the <xref:System.Windows.FrameworkElement.Loaded> event is first raised on the root element. The <xref:System.Windows.FrameworkElement.Loaded> event is then raised successively on each child element.  
   
 > [!NOTE]
->  This behavior might superficially resemble tunneling for a routed event. However, no information is carried from event to event. Each element always has the opportunity to handle its <xref:System.Windows.FrameworkElement.Loaded> event, and marking the event data as handled has no effect beyond that element.  
+> This behavior might superficially resemble tunneling for a routed event. However, no information is carried from event to event. Each element always has the opportunity to handle its <xref:System.Windows.FrameworkElement.Loaded> event, and marking the event data as handled has no effect beyond that element.  
   
 ### Unloaded  
  <xref:System.Windows.FrameworkElement.Unloaded> is raised last and is initiated by either the presentation source or the visual parent being removed. When <xref:System.Windows.FrameworkElement.Unloaded> is raised and handled, the element that is the event source parent (as determined by <xref:System.Windows.FrameworkElement.Parent%2A> property) or any given element upwards in the logical or visual trees may have already been unset, meaning that data binding, resource references, and styles may not be set to their normal or last known run-time value.  

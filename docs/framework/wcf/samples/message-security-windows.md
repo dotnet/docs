@@ -9,7 +9,7 @@ ms.assetid: d2221d1c-c9cb-48d1-b044-a3b4445c7f05
 This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBinding> binding to use message-level security with Windows authentication. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). In this sample, the service is hosted in Internet Information Services (IIS) and the client is a console application (.exe).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The default security for the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) is message security using Windows authentication. The configuration files in this sample explicitly set the `mode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) to `Message` and the `clientCredentialType` attribute to `Windows`. These values are the default values for this binding, but they have been explicitly configured, as shown in the following sample configuration to demonstrate their use.  
   

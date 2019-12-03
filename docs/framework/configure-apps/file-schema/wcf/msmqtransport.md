@@ -6,11 +6,12 @@ ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
 # \<msmqTransport>
 Causes a channel to transfers messages on the MSMQ transport when it is included in a custom binding.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<msmqIntegration>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<msmqTransport>**  
   
 ## Syntax  
   
@@ -67,13 +68,13 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<msmqTransportSecurity>](../../../../../docs/framework/configure-apps/file-schema/wcf/msmqtransportsecurity.md)|Specifies transport security settings for this binding. This element is of type <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>.|  
+|[\<msmqTransportSecurity>](msmqtransportsecurity.md)|Specifies transport security settings for this binding. This element is of type <xref:System.ServiceModel.Configuration.MsmqTransportSecurityElement>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  The `msmqTransport` element enables the user to set the properties of the queued communication channel. The queued communication channel uses Message Queuing for its transport.  
@@ -86,10 +87,10 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
 - <xref:System.ServiceModel.Channels.MsmqTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Queues in WCF](../../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)
-- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)
+- [Transports](../../../wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

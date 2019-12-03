@@ -1,5 +1,5 @@
 ---
-title: "-highentropyva (Visual Basic)"
+title: "-highentropyva"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "highentropyva compiler option (Visual Basic)"
@@ -7,11 +7,11 @@ helpviewer_keywords:
 ms.assetid: ff25f20a-6ca2-467b-9e52-5cf439f5028e
 ---
 # -highentropyva (Visual Basic)
-Indicates whether a 64-bit executable or an executable that's marked by the [/platform:anycpu](../../../visual-basic/reference/command-line-compiler/platform.md) compiler option supports high entropy Address Space Layout Randomization (ASLR).  
+Indicates whether a 64-bit executable or an executable that's marked by the [-platform:anycpu](../../../visual-basic/reference/command-line-compiler/platform.md) compiler option supports high entropy Address Space Layout Randomization (ASLR).  
   
 ## Syntax  
   
-```  
+```console  
 -highentropyva[+ | -]  
 ```  
   

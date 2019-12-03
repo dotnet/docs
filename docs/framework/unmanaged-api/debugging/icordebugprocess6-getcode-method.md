@@ -2,8 +2,6 @@
 title: "ICorDebugProcess6::GetCode Method"
 ms.date: "03/30/2017"
 ms.assetid: faa538c2-60c9-4064-b996-1b4c24ebd751
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::GetCode Method
 Gets information about the managed code at a particular code address.  
@@ -26,7 +24,7 @@ HRESULT GetCode(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

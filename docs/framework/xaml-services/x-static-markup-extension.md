@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 056aee79-7cdd-434f-8174-dfc856cad343
 ---
 # x:Static Markup Extension
-References any static by-value code entity that is defined in a [!INCLUDE[TLA#tla_cls](../../../includes/tlasharptla-cls-md.md)]–compliant way. The static property that is referenced can be used to provide the value of a property in XAML.  
+References any static by-value code entity that is defined in a Common Language Specification (CLS)–compliant way. The static property that is referenced can be used to provide the value of a property in XAML.  
   
 ## XAML Attribute Usage  
   
@@ -68,7 +68,7 @@ In the .NET Framework XAML Services implementation, the handling for this markup
 ## WPF Usage Notes  
  The default XAML namespace you use for WPF programming does not contain many useful static properties, and most of the useful static properties have support such as type converters that facilitate the usage without requiring `{x:Static}` . For static properties, you must map a prefix for a XAML namespace if one of the following is true:  
   
-- You are referencing a type that exists in WPF but is not part of the default XAML namespace for WPF ([!INCLUDE[TLA#tla_wpfxmlnsv1](../../../includes/tlasharptla-wpfxmlnsv1-md.md)]). This is a fairly common scenario for using `x:Static`. For example, you might use an `x:Static` reference with a XAML namespace mapping to the <xref:System> CLR namespace and mscorlib assembly in order to reference the static properties of the <xref:System.Environment> class.  
+- You are referencing a type that exists in WPF but is not part of the default XAML namespace for WPF (`http://schemas.microsoft.com/winfx/2006/xaml/presentation`). This is a fairly common scenario for using `x:Static`. For example, you might use an `x:Static` reference with a XAML namespace mapping to the <xref:System> CLR namespace and mscorlib assembly in order to reference the static properties of the <xref:System.Environment> class.  
   
 - You are referencing a type from a custom assembly.  
   

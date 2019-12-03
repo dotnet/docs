@@ -19,9 +19,7 @@ Beginning in SQL Server code name Denali, a lightweight version of SQL Server, c
   
 - Specify a LocalDB instance in your connection string. For example, your instance name is `myInstance`, the connection string would include:  
   
-    ```  
-    server=(localdb)\\myInstance  
-    ```  
+    `server=(localdb)\\myInstance`  
   
  `User Instance=True` is not allowed when connecting to a LocalDB database.  
   
@@ -54,5 +52,5 @@ Beginning in SQL Server code name Denali, a lightweight version of SQL Server, c
   
 ## See also
 
-- [SQL Server Features and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-features-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server Features and ADO.NET](sql-server-features-and-adonet.md)
+- [ADO.NET Overview](../ado-net-overview.md)

@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 8da9bbf4-bce9-4b08-b2e5-f64c11c56514
 ---
 # Boxing and Unboxing (C# Programming Guide)
-Boxing is the process of converting a [value type](../../../csharp/language-reference/keywords/value-types.md) to the type `object` or to any interface type implemented by this value type. When the CLR boxes a value type, it wraps the value inside a <xref:System.Object?displayProperty=nameWithType> instance and stores it on the managed heap. Unboxing extracts the value type from the object. Boxing is implicit; unboxing is explicit. The concept of boxing and unboxing underlies the C# unified view of the type system in which a value of any type can be treated as an object.  
+Boxing is the process of converting a [value type](../../language-reference/keywords/value-types.md) to the type `object` or to any interface type implemented by this value type. When the CLR boxes a value type, it wraps the value inside a <xref:System.Object?displayProperty=nameWithType> instance and stores it on the managed heap. Unboxing extracts the value type from the object. Boxing is implicit; unboxing is explicit. The concept of boxing and unboxing underlies the C# unified view of the type system in which a value of any type can be treated as an object.  
   
  In the following example, the integer variable `i` is *boxed* and assigned to object `o`.  
   
@@ -27,10 +27,10 @@ Boxing is the process of converting a [value type](../../../csharp/language-refe
  [!code-csharp[csProgGuideTypes#47](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#47)]  
   
 ## Performance  
- In relation to simple assignments, boxing and unboxing are computationally expensive processes. When a value type is boxed, a new object must be allocated and constructed. To a lesser degree, the cast required for unboxing is also expensive computationally. For more information, see [Performance](../../../../docs/framework/performance/performance-tips.md).  
+ In relation to simple assignments, boxing and unboxing are computationally expensive processes. When a value type is boxed, a new object must be allocated and constructed. To a lesser degree, the cast required for unboxing is also expensive computationally. For more information, see [Performance](../../../framework/performance/performance-tips.md).  
   
 ## Boxing  
- Boxing is used to store value types in the garbage-collected heap. Boxing is an implicit conversion of a [value type](../../../csharp/language-reference/keywords/value-types.md) to the type `object` or to any interface type implemented by this value type. Boxing a value type allocates an object instance on the heap and copies the value into the new object.  
+ Boxing is used to store value types in the garbage-collected heap. Boxing is an implicit conversion of a [value type](../../language-reference/keywords/value-types.md) to the type `object` or to any interface type implemented by this value type. Boxing a value type allocates an object instance on the heap and copies the value into the new object.  
   
  Consider the following declaration of a value-type variable:  
   
@@ -55,7 +55,7 @@ Boxing is the process of converting a [value type](../../../csharp/language-refe
  [!code-csharp[csProgGuideTypes#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#16)]  
   
 ## Unboxing  
- Unboxing is an explicit conversion from the type `object` to a [value type](../../../csharp/language-reference/keywords/value-types.md) or from an interface type to a value type that implements the interface. An unboxing operation consists of:  
+ Unboxing is an explicit conversion from the type `object` to a [value type](../../language-reference/keywords/value-types.md) or from an interface type to a value type that implements the interface. An unboxing operation consists of:  
   
 - Checking the object instance to make sure that it is a boxed value of the given value type.  
   
@@ -102,10 +102,10 @@ int j = (int) o;
 ## Related Sections  
  For more information:  
   
-- [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)  
+- [Reference Types](../../language-reference/keywords/reference-types.md)  
   
-- [Value Types](../../../csharp/language-reference/keywords/value-types.md)  
+- [Value Types](../../language-reference/keywords/value-types.md)  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Programming Guide](../index.md)

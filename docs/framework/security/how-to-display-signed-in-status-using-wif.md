@@ -93,7 +93,7 @@ author: "BrucePerlerMS"
   
 2. Replace the existing markup in the **Default.aspx** file with the following markup:  
   
-    ```  
+    ```aspx-csharp  
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>  
   
     <!DOCTYPE html>  
@@ -111,7 +111,7 @@ author: "BrucePerlerMS"
 3. Save **Default.aspx**, and then open its code behind file named **Default.aspx.cs**.  
   
     > [!NOTE]
-    >  **Default.aspx.cs** may be hidden beneath **Default.aspx** in Solution Explorer. If **Default.aspx.cs** is not visible, expand **Default.aspx** by clicking on the triangle next to it.  
+    > **Default.aspx.cs** may be hidden beneath **Default.aspx** in Solution Explorer. If **Default.aspx.cs** is not visible, expand **Default.aspx** by clicking on the triangle next to it.  
   
 4. Replace the existing code in **Default.aspx.cs** with the following code:  
   

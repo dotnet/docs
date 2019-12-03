@@ -12,7 +12,7 @@ A connection string contains initialization information that is passed as a para
 
 A connection string is a semicolon-delimited list of key/value parameter pairs:
 
-```
+```csharp
 keyword1=value; keyword2=value;
 ```
 
@@ -20,21 +20,28 @@ Keywords are not case-sensitive. Values, however, may be case-sensitive, dependi
 
 If a value contains the semicolon, [Unicode control characters](https://en.wikipedia.org/wiki/Unicode_control_characters), or leading or trailing white space, it must be enclosed in single or double quotation marks. For example:
 
-```
+```csharp
 Keyword=" whitespace  ";
 Keyword='special;character';
 ```
 
 The enclosing character may not occur within the value it encloses. Therefore, a value containing single quotation marks can be enclosed only in double quotation marks, and vice versa:
 
-```
+```csharp
 Keyword='double"quotation;mark';
 Keyword="single'quotation;mark";
 ```
 
+You can also escape the enclosing character by using two of them together:
+
+```csharp
+Keyword="double""quotation";
+Keyword='single''quotation';
+```
+
 The quotation marks themselves, as well as the equals sign, do not require escaping, so the following connection strings are valid:
 
-```
+```csharp
 Keyword=no "escaping" 'required';
 Keyword=a=b=c
 ```
@@ -45,23 +52,23 @@ All connection strings share the same basic syntax described above. The set of r
 
 Typing mistakes can cause errors. For example, `Integrated Security=true` is valid, but `IntegratedSecurity=true` causes an error.
 
-Connection strings constructed manually at run time from unvalidated user input are vulnerable to string-injection attacks and jeopardize security at the data source. To address these problems, *ADO.NET* 2.0 introduced [connection string builders](../../../../docs/framework/data/adonet/connection-string-builders.md) for each *.NET Framework* data provider. These connection string builders expose parameters as strongly-typed properties, and make it possible to validate the connection string before it's sent to the data source.
+Connection strings constructed manually at run time from unvalidated user input are vulnerable to string-injection attacks and jeopardize security at the data source. To address these problems, *ADO.NET* 2.0 introduced [connection string builders](connection-string-builders.md) for each *.NET Framework* data provider. These connection string builders expose parameters as strongly-typed properties, and make it possible to validate the connection string before it's sent to the data source.
 
 ## In This Section
 
-[Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)\
+[Connection String Builders](connection-string-builders.md)\
 Demonstrates how to use the `ConnectionStringBuilder` classes to construct valid connection strings at run time.
 
-[Connection Strings and Configuration Files](../../../../docs/framework/data/adonet/connection-strings-and-configuration-files.md)\
+[Connection Strings and Configuration Files](connection-strings-and-configuration-files.md)\
 Demonstrates how to store and retrieve connection strings in configuration files.
 
-[Connection String Syntax](../../../../docs/framework/data/adonet/connection-string-syntax.md)\
+[Connection String Syntax](connection-string-syntax.md)\
 Describes how to configure provider-specific connection strings for `SqlClient`, `OracleClient`, `OleDb`, and `Odbc`.
 
-[Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)\
+[Protecting Connection Information](protecting-connection-information.md)\
 Demonstrates techniques for protecting information used to connect to a data source.
 
 ## See also
 
 - [Connecting to a Data Source](/cpp/data/odbc/connecting-to-a-data-source)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)

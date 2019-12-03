@@ -17,4 +17,4 @@ Use the <xref:System.Linq.Queryable.Distinct%2A> operator to eliminate duplicate
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](query-examples.md)

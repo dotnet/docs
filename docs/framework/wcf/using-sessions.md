@@ -56,13 +56,13 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
   
  WCF provides the following types of session-based application behavior:  
   
-- The <xref:System.ServiceModel.Channels.SecurityBindingElement?displayProperty=nameWithType> supports security-based sessions, in which both ends of communication have agreed upon a specific secure conversation. For more information, see [Securing Services](../../../docs/framework/wcf/securing-services.md). For example, the <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType> binding, which contains support for both security sessions and reliable sessions, by default uses only a secure session that encrypts and digitally signs messages.  
+- The <xref:System.ServiceModel.Channels.SecurityBindingElement?displayProperty=nameWithType> supports security-based sessions, in which both ends of communication have agreed upon a specific secure conversation. For more information, see [Securing Services](securing-services.md). For example, the <xref:System.ServiceModel.WSHttpBinding?displayProperty=nameWithType> binding, which contains support for both security sessions and reliable sessions, by default uses only a secure session that encrypts and digitally signs messages.  
   
 - The <xref:System.ServiceModel.NetTcpBinding?displayProperty=nameWithType> binding supports TCP/IP-based sessions to ensure that all messages are correlated by the connection at the socket level.  
   
-- The <xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType> element, which implements the WS-ReliableMessaging specification, provides support for reliable sessions in which messages can be configured to be delivered in order and exactly once, ensuring messages are received even when messages travel across multiple nodes during the conversation. For more information, see [Reliable Sessions](../../../docs/framework/wcf/feature-details/reliable-sessions.md).  
+- The <xref:System.ServiceModel.Channels.ReliableSessionBindingElement?displayProperty=nameWithType> element, which implements the WS-ReliableMessaging specification, provides support for reliable sessions in which messages can be configured to be delivered in order and exactly once, ensuring messages are received even when messages travel across multiple nodes during the conversation. For more information, see [Reliable Sessions](./feature-details/reliable-sessions.md).  
   
-- The <xref:System.ServiceModel.NetMsmqBinding?displayProperty=nameWithType> binding provides MSMQ datagram sessions. For more information, see [Queues in WCF](../../../docs/framework/wcf/feature-details/queues-in-wcf.md).  
+- The <xref:System.ServiceModel.NetMsmqBinding?displayProperty=nameWithType> binding provides MSMQ datagram sessions. For more information, see [Queues in WCF](./feature-details/queues-in-wcf.md).  
   
  Setting the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property does not specify the type of session the contract requires, only that it requires one.  
   
@@ -100,7 +100,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
  *Terminating operations*, conversely, are those that must be called as the last message in an existing session. In the default case, WCF recycles the service object and its context after the session with which the service was associated is closed. You can, therefore, create a kind of destructor by declaring terminating operations designed to perform a function appropriate to the end of the service instance.  
   
 > [!NOTE]
->  Although the default behavior bears a resemblance to local constructors and destructors, it is only a resemblance. Any WCF service operation can be an initiating or terminating operation, or both at the same time. In addition, in the default case, initiating operations can be called any number of times in any order; no additional sessions are created once the session is established and associated with an instance unless you explicitly control the lifetime of the service instance (by manipulating the <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object). Finally, the state is associated with the session and not the service object.  
+> Although the default behavior bears a resemblance to local constructors and destructors, it is only a resemblance. Any WCF service operation can be an initiating or terminating operation, or both at the same time. In addition, in the default case, initiating operations can be called any number of times in any order; no additional sessions are created once the session is established and associated with an instance unless you explicitly control the lifetime of the service instance (by manipulating the <xref:System.ServiceModel.InstanceContext?displayProperty=nameWithType> object). Finally, the state is associated with the session and not the service object.  
   
  For example, the `ICalculatorSession` contract used in the preceding example requires that the WCF client object first call the `Clear` operation prior to any other operation and that the session with this WCF client object should terminate when it calls the `Equals` operation. The following code example shows a contract that enforces these requirements. `Clear` must be called first to initiate a session, and that session ends when `Equals` is called.  
   
@@ -111,7 +111,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
   
 - <xref:System.ServiceModel.ICommunicationObject.Open%2A?displayProperty=nameWithType> on the channel returned by a call to <xref:System.ServiceModel.ChannelFactory%601.CreateChannel%2A?displayProperty=nameWithType>.  
   
-- <xref:System.ServiceModel.ClientBase%601.Open%2A?displayProperty=nameWithType> on the WCF client object generated by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).  
+- <xref:System.ServiceModel.ClientBase%601.Open%2A?displayProperty=nameWithType> on the WCF client object generated by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md).  
   
 - An initiating operation on either type of WCF client object (by default, all operations are initiating). When the first operation is called, the WCF client object automatically opens the channel and initiates a session.  
   
@@ -123,12 +123,12 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
   
 - A terminating operation on either type of WCF client object (by default, no operations are terminating; the contract must explicitly specify a terminating operation). When the first operation is called, the WCF client object automatically opens the channel and initiates a session.  
   
- For examples, see [How to: Create a Service That Requires Sessions](../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md) as well as the [Default Service Behavior](../../../docs/framework/wcf/samples/default-service-behavior.md) and [Instancing](../../../docs/framework/wcf/samples/instancing.md) samples.  
+ For examples, see [How to: Create a Service That Requires Sessions](./feature-details/how-to-create-a-service-that-requires-sessions.md) as well as the [Default Service Behavior](./samples/default-service-behavior.md) and [Instancing](./samples/instancing.md) samples.  
   
- For more information about clients and sessions, see [Accessing Services Using a WCF Client](../../../docs/framework/wcf/feature-details/accessing-services-using-a-client.md).  
+ For more information about clients and sessions, see [Accessing Services Using a WCF Client](./feature-details/accessing-services-using-a-client.md).  
   
 ## Sessions Interact with InstanceContext Settings  
- There is an interaction between the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property, which controls the association between channels and specific service objects. For more information, see [Sessions, Instancing, and Concurrency](../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
+ There is an interaction between the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property, which controls the association between channels and specific service objects. For more information, see [Sessions, Instancing, and Concurrency](./feature-details/sessions-instancing-and-concurrency.md).  
   
 ### Sharing InstanceContext Objects  
  You can also control which session-based channel or call is associated with which <xref:System.ServiceModel.InstanceContext> object by performing that association yourself. 
@@ -137,7 +137,7 @@ In Windows Communication Foundation (WCF) applications, a *session* correlates a
  When you have a large amount of data to transfer, the streaming transfer mode in WCF is a feasible alternative to the default behavior of buffering and processing messages in memory in their entirety. You may get unexpected behavior when streaming calls with a session-based binding. All streaming calls are made through a single channel (the datagram channel) that does not support sessions even if the binding being used is configured to use sessions. If multiple clients make streaming calls to the same service object over a session-based binding, and the service object's concurrency mode is set to single and its instance context mode is set to `PerSession`, all calls must go through the datagram channel and so only one call is processed at a time. One or more clients may then time out. You can work around this issue by either setting the service object's `InstanceContextMode` to `PerCall` or Concurrency to multiple.  
   
 > [!NOTE]
->  MaxConcurrentSessions have no effect in this case because there is only one "session" available.  
+> MaxConcurrentSessions have no effect in this case because there is only one "session" available.  
   
 ## See also
 

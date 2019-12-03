@@ -85,7 +85,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
      You will receive two compiler warnings:  
   
-    ```  
+    ```console  
     warning CS0067: The event 'AsynchronousPatternExample.PrimeNumberCalculator.ProgressChanged' is never used  
     warning CS0067: The event 'AsynchronousPatternExample.PrimeNumberCalculator.CalculatePrimeCompleted' is never used  
     ```  
@@ -156,7 +156,7 @@ If you are writing a class with some operations that may incur noticeable delays
   
      You will receive one compiler warning:  
   
-    ```  
+    ```console  
     warning CS0169: The private field 'AsynchronousPatternExample.PrimeNumberCalculator.workerDelegate' is never used  
     ```  
   
@@ -170,7 +170,7 @@ If you are writing a class with some operations that may incur noticeable delays
  The `CalculateWorker` method is wrapped in a delegate and is invoked asynchronously with a call to `BeginInvoke`.  
   
 > [!NOTE]
->  Progress reporting is implemented in the `BuildPrimeNumberList` method. On fast computers, `ProgressChanged` events can be raised in rapid succession. The client thread, on which these events are raised, must be able to handle this situation. User interface code may be flooded with messages and unable to keep up, resulting in unresponsiveness. For an example user interface that handles this situation, see [How to: Implement a Client of the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
+> Progress reporting is implemented in the `BuildPrimeNumberList` method. On fast computers, `ProgressChanged` events can be raised in rapid succession. The client thread, on which these events are raised, must be able to handle this situation. User interface code may be flooded with messages and unable to keep up, resulting in unresponsiveness. For an example user interface that handles this situation, see [How to: Implement a Client of the Event-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
 ### To execute the prime number calculation asynchronously:  
   

@@ -24,7 +24,7 @@ Custom serialization is the process of controlling the serialization and deseria
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
   
 > [!IMPORTANT]
->  In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using the GetObjectData. Starting with version 4.0, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
+> In versions previous to .NET Framework 4.0, serialization of custom user data in a partially trusted assembly was accomplished using the GetObjectData. Starting with version 4.0, that method is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute which prevents execution in partially trusted assemblies. To work around this condition, implement the <xref:System.Runtime.Serialization.ISafeSerializationData> interface.  
   
 ## Running custom methods during and after serialization  
  The best practice and easiest way (introduced in version 2.0 of the .NET Framework) is to apply the following attributes to methods that are used to correct data during and after serialization:  

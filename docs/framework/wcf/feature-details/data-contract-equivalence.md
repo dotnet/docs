@@ -16,7 +16,7 @@ For a client to successfully send data of a certain type to a service, or a serv
  For data members to be equivalent, they must have the same name. Additionally, they must represent the same type of data; that is, their data contracts must be equivalent.  
   
 > [!NOTE]
->  Note that data contract names and namespaces, as well as data member names, are case-sensitive.  
+> Note that data contract names and namespaces, as well as data member names, are case-sensitive.  
   
  For more information about data contract names and namespaces, as well as data member names, see [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md).  
   

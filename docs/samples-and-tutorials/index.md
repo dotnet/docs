@@ -8,7 +8,7 @@ ms.date: 04/11/2017
 
 # .NET samples and tutorials
 
-The .NET documentation contains a set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://www.microsoft.com/net/learn/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
+The .NET documentation contains a set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn.html). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
 
 ## .NET Core
 
@@ -44,7 +44,7 @@ This sample demonstrates the syntax and features for creating and consuming C# i
 
 This sample demonstrates the syntax and features for C# indexers. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/indexers) is available in the dotnet/samples repository on GitHub.
 
-**[Delegates and Events](../csharp/delegates-events.md)**
+**[Delegates and Events](../csharp/delegates-overview.md)**
 
 This sample demonstrates the syntax and features for C# delegates and events. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/delegates-and-events) is available in the dotnet/samples repository on GitHub. A [second sample](https://github.com/dotnet/samples/tree/master/csharp/events) focused on events is also in the same repository.
 
@@ -90,15 +90,11 @@ This tutorial shows you how to build a complete .NET Core solution that includes
 
 This tutorial shows you how to build a simple application on .NET Core that supports a plugin architecture. The [completed sample](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin) is available in the dotnet/samples repository on GitHub.
 
-## Deploying to containers
+## Deploy to containers
 
-**[Running ASP.NET MVC Applications in Windows Docker Containers](../framework/docker/aspnetmvc.md)**
+**[Running ASP.NET MVC Applications in Windows Docker Containers](/aspnet/mvc/overview/deployment/docker-aspnetmvc)**
 
 This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Windows Docker Container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
-
-**[Running .NET Framework Console Applications in Windows Containers](../framework/docker/console.md)**
-
-This tutorial demonstrates how to deploy an existing console app in a Windows container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
 
 ## Viewing and downloading samples
 

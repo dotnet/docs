@@ -3,8 +3,9 @@ title: .NET Standard
 description: Learn about .NET Standard, its versions and the .NET implementations that support it.
 author: mairaw
 ms.author: mairaw
-ms.date: 02/25/2019
+ms.date: 09/23/2019
 ms.technology: dotnet-standard
+ms.custom: "updateeachrelease"
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
 # .NET Standard
@@ -157,3 +158,5 @@ You can see the set of PCL profiles that are compatible with the .NET Standard:
 ## See also
 
 - [.NET Standard Versions](https://github.com/dotnet/standard/blob/master/docs/versions.md)
+- [Build a .NET Standard library](../core/tutorials/library-with-visual-studio.md)
+- [Cross-platform targeting](./library-guidance/cross-platform-targeting.md)

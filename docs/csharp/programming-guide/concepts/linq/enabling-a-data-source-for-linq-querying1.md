@@ -1,5 +1,5 @@
 ---
-title: "Enabling a Data Source for LINQ Querying1"
+title: "Enabling a Data Source for LINQ Querying"
 ms.date: 07/20/2015
 ms.assetid: d2ef04a5-31a6-45cb-af9a-a5ce7732662c
 ---
@@ -38,5 +38,5 @@ There are various ways to extend [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md
 - <xref:System.Linq.IQueryable%601>
 - <xref:System.Collections.Generic.IEnumerable%601>
 - <xref:System.Linq.Enumerable>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [LINQ to Objects (C#)](./linq-to-objects.md)

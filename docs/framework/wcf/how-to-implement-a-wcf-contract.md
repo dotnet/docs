@@ -16,6 +16,7 @@ The next step for creating a WCF application is to add code to implement the WCF
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Add code to implement the WCF service contract.
 > - Build the solution.
 
@@ -113,6 +114,7 @@ End Namespace
 ## Edit App.config
 
 Edit **App.config** in **GettingStartedLib** to reflect the changes you made to the code.
+
 - For Visual C# projects:
   - Change line 14 to `<service name="GettingStartedLib.CalculatorService">`
   - Change line 17 to `<add baseAddress = "http://localhost:8000/GettingStarted/CalculatorService" />`
@@ -131,6 +133,7 @@ Build the solution to verify there aren't any compilation errors. If you're usin
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Add code to implement the WCF service contract.
 > - Build the solution.
 

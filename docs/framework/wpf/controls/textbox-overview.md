@@ -19,7 +19,7 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
 |<xref:System.Windows.Controls.RichTextBox>|Yes|Yes|Yes (see [RichTextBox Overview](richtextbox-overview.md))|Yes (see [RichTextBox Overview](richtextbox-overview.md))|  
   
 > [!NOTE]
->  Although <xref:System.Windows.Controls.TextBox> does not support formatting related editing commands like <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> (Ctr+B), many basic commands are supported by both controls such as <xref:System.Windows.Documents.EditingCommands.MoveToLineEnd%2A>. See <xref:System.Windows.Documents.EditingCommands> for more information.  
+> Although <xref:System.Windows.Controls.TextBox> does not support formatting related editing commands like <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> (Ctr+B), many basic commands are supported by both controls such as <xref:System.Windows.Documents.EditingCommands.MoveToLineEnd%2A>. See <xref:System.Windows.Documents.EditingCommands> for more information.  
   
  Features supported by <xref:System.Windows.Controls.TextBox> are covered in the sections below. For more information about <xref:System.Windows.Controls.RichTextBox>, see [RichTextBox Overview](richtextbox-overview.md).  
   

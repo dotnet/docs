@@ -12,7 +12,7 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
  This scenario is interoperable because it uses WS-Security with the X.509 certificate token profile.  
   
 > [!NOTE]
->  This scenario does not perform negotiation of the service certificate. The service certificate must be provided to the client in advance of any communication. The server certificate can be distributed with the application or provided in an out-of-band communication.  
+> This scenario does not perform negotiation of the service certificate. The service certificate must be provided to the client in advance of any communication. The server certificate can be distributed with the application or provided in an out-of-band communication.  
   
  ![Message security with mutual certificates](../../../../docs/framework/wcf/feature-details/media/f4157312-b17c-416c-a5ee-fa7b54db211b.gif "f4157312-b17c-416c-a5ee-fa7b54db211b")  
   

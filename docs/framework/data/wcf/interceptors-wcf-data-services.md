@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
 ---
 # Interceptors (WCF Data Services)
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables an application to intercept request messages so that you can add custom logic to an operation. You can use this custom logic to validate data in incoming messages. You can also use it to further restrict the scope of a query request, such as to insert a custom authorization policy on a per request basis.  
+WCF Data Services enables an application to intercept request messages so that you can add custom logic to an operation. You can use this custom logic to validate data in incoming messages. You can also use it to further restrict the scope of a query request, such as to insert a custom authorization policy on a per request basis.  
   
- Interception is performed by specially attributed methods in the data service. These methods are called by [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] at the appropriate point in message processing. Interceptors are defined on a per-entity set basis, and interceptor methods cannot accept parameters from the request like service operations can. Query interceptor methods, which are called when processing an HTTP GET request, must return a lambda expression that determines whether an instance of the interceptor's entity set should be returned by the query results. This expression is used by the data service to further refine the requested operation. The following is an example definition of a query interceptor.  
+ Interception is performed by specially attributed methods in the data service. These methods are called by WCF Data Services at the appropriate point in message processing. Interceptors are defined on a per-entity set basis, and interceptor methods cannot accept parameters from the request like service operations can. Query interceptor methods, which are called when processing an HTTP GET request, must return a lambda expression that determines whether an instance of the interceptor's entity set should be returned by the query results. This expression is used by the data service to further refine the requested operation. The following is an example definition of a query interceptor.  
   
  [!code-csharp[Astoria Northwind Service#QueryInterceptorDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#queryinterceptordef)]
  [!code-vb[Astoria Northwind Service#QueryInterceptorDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#queryinterceptordef)]  
   
- For more information, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  
+ For more information, see [How to: Intercept Data Service Messages](how-to-intercept-data-service-messages-wcf-data-services.md).  
   
  Change interceptors, which are called when processing non-query operations, must return `void` (`Nothing` in Visual Basic). Change interceptor methods must accept the following two parameters:  
   
@@ -30,7 +30,7 @@ ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
  [!code-csharp[Astoria Northwind Service#ChangeInterceptorDef](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_service/cs/northwind2.svc.cs#changeinterceptordef)]
  [!code-vb[Astoria Northwind Service#ChangeInterceptorDef](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind2.svc.vb#changeinterceptordef)]  
   
- For more information, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  
+ For more information, see [How to: Intercept Data Service Messages](how-to-intercept-data-service-messages-wcf-data-services.md).  
   
  The following attributes are supported for interception.  
   
@@ -40,8 +40,8 @@ ms.assetid: e33ae8dc-8069-41d0-99a0-75ff28db7050
  **[ChangeInterceptor(** *EntitySetName* **)]**  
  Methods with the <xref:System.Data.Services.ChangeInterceptorAttribute> attribute applied are called when an HTTP request other than HTTP GET request is received for the targeted entity set resource. These methods must always return `void` (`Nothing` in Visual Basic).  
   
- For more information, see [How to: Intercept Data Service Messages](../../../../docs/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services.md).  
+ For more information, see [How to: Intercept Data Service Messages](how-to-intercept-data-service-messages-wcf-data-services.md).  
   
 ## See also
 
-- [Service Operations](../../../../docs/framework/data/wcf/service-operations-wcf-data-services.md)
+- [Service Operations](service-operations-wcf-data-services.md)

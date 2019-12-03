@@ -16,4 +16,4 @@ This example shows how to set the title of the window in which a <xref:System.Wi
  [!code-xaml[HOWTONavigationSnippets#SetPageWindowTitleXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowTitlePage.xaml#setpagewindowtitlexaml)]  
   
 > [!NOTE]
->  Setting the <xref:System.Windows.Controls.Page.Title%2A> property of a page does not change the value of the window title. Instead, <xref:System.Windows.Controls.Page.Title%2A> specifies the name of a page entry in navigation history.
+> Setting the <xref:System.Windows.Controls.Page.Title%2A> property of a page does not change the value of the window title. Instead, <xref:System.Windows.Controls.Page.Title%2A> specifies the name of a page entry in navigation history.

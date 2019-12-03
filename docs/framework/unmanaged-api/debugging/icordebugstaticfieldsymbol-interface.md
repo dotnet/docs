@@ -2,8 +2,6 @@
 title: "ICorDebugStaticFieldSymbol Interface"
 ms.date: "03/30/2017"
 ms.assetid: c0b93609-631e-4b15-878a-189ede922631
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStaticFieldSymbol Interface
 Represents the debug symbol information for a static field.  
@@ -20,7 +18,7 @@ Represents the debug symbol information for a static field.
  The `ICorDebugStaticFieldSymbol` interface is used to retrieve the debug symbol information for a static field.  
   
 > [!NOTE]
->  This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
+> This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

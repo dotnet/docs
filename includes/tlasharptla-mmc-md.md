@@ -1,1 +1,0 @@
-Microsoft Management Console (MMC)

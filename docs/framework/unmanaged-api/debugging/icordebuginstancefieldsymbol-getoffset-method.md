@@ -2,8 +2,6 @@
 title: "ICorDebugInstanceFieldSymbol::GetOffset Method"
 ms.date: "03/30/2017"
 ms.assetid: 7e470150-2b92-4425-989c-315f48964fd2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInstanceFieldSymbol::GetOffset Method
 Gets the offset in bytes of this instance field in its parent class.  
@@ -23,7 +21,7 @@ HRESULT GetOffset(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

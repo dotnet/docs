@@ -16,7 +16,7 @@ ms.assetid: e2ce4990-661d-4882-a116-8a9eb575dc84
   
 ### To host a control in a ToolStripControlHost by derivation  
   
-1. Extend <xref:System.Windows.Forms.ToolStripControlHost>. Implement a default constructor that calls the base class constructor passing in the desired control.  
+1. Extend <xref:System.Windows.Forms.ToolStripControlHost>. Implement a parameterless constructor that calls the base class constructor passing in the desired control.  
   
      [!code-cpp[System.Windows.Forms.ToolStripControlHost#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripControlHost/CPP/form1.cpp#10)]
      [!code-csharp[System.Windows.Forms.ToolStripControlHost#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStripControlHost/CS/form1.cs#10)]

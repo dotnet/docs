@@ -2,6 +2,7 @@
 title: Console Application
 description: This tutorial teaches you a number of features in .NET Core and the C# language.
 ms.date: 03/06/2017
+ms.technology: csharp-fundamentals
 ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 ---
 
@@ -24,7 +25,7 @@ There are a lot of features in this tutorial. Let’s build them one by one.
 ## Prerequisites
 
 You’ll need to setup your machine to run .NET Core. You can find the
-installation instructions on the [.NET Core](https://www.microsoft.com/net/core)
+installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page. You can run this
 application on Windows, Linux, macOS or in a Docker container.
 You’ll need to install your favorite code editor.

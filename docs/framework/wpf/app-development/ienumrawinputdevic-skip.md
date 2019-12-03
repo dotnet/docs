@@ -10,7 +10,7 @@ Instructs the enumerator to skip the next `celt` elements in the enumeration so 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip( [in] ULONG celt);  
 ```  
   

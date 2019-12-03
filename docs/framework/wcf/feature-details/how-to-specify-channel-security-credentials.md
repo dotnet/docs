@@ -7,7 +7,7 @@ ms.assetid: f8e03f47-9c4f-4dd5-8f85-429e6d876119
 The Windows Communication Foundation (WCF) Service Moniker allows COM applications to call WCF services. Most WCF services require the client to specify credentials for authentication and authorization. When calling a WCF service from a WCF client, you can specify these credentials in managed code or in an application configuration file. When calling a WCF service from a COM application, you can use the <xref:System.ServiceModel.ComIntegration.IChannelCredentials> interface to specify credentials. This topic will illustrate various ways to specify credentials using the <xref:System.ServiceModel.ComIntegration.IChannelCredentials> interface.  
   
 > [!NOTE]
->  <xref:System.ServiceModel.ComIntegration.IChannelCredentials> is an IDispatch-based interface and you will not get IntelliSense functionality in the Visual Studio environment.  
+> <xref:System.ServiceModel.ComIntegration.IChannelCredentials> is an IDispatch-based interface and you will not get IntelliSense functionality in the Visual Studio environment.  
   
  This article will use the WCF service defined in the [Message Security Sample](../../../../docs/framework/wcf/samples/message-security-sample.md).  
   
@@ -25,7 +25,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
 6. Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
-    ```  
+    ```vb  
         monString = "service:mexAddress=http://localhost:8000/ServiceModelSamples/Service?wsdl"  
         monString = monString + ", address=http://localhost:8000/ServiceModelSamples/Service"  
         monString = monString + ", contract=ICalculator, contractNamespace=http://Microsoft.ServiceModel.Samples"  
@@ -46,15 +46,15 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
      The Visual Basic application will display a message box with the result from calling Add(3, 4). <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetClientCertificateFromFile%28System.String%2CSystem.String%2CSystem.String%29> or <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetClientCertificateFromStoreByName%28System.String%2CSystem.String%2CSystem.String%29> can also be used in place of <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetClientCertificateFromStore%28System.String%2CSystem.String%2CSystem.String%2CSystem.Object%29> to set the Client Certificate:  
   
-    ```  
+    ```vb  
     monikerProxy.ChannelCredentials.SetClientCertificateFromFile "C:\MyClientCert.pfx", "password", "DefaultKeySet"  
     ```  
   
 > [!NOTE]
->  For this call to work, the client certificate needs to be trusted on the machine the client is running on.  
+> For this call to work, the client certificate needs to be trusted on the machine the client is running on.  
   
 > [!NOTE]
->  If the moniker is malformed or if the service is unavailable, the call to `GetObject` will return an error saying "Invalid Syntax." If you receive this error, make sure the moniker you are using is correct and the service is available.  
+> If the moniker is malformed or if the service is unavailable, the call to `GetObject` will return an error saying "Invalid Syntax." If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
 ### To specify user name and password  
   
@@ -64,7 +64,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 
 3. Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
-    ```  
+    ```vb
     monString = "service:mexAddress=http://localhost:8000/ServiceModelSamples/Service?wsdl"  
     monString = monString + ", address=http://localhost:8000/ServiceModelSamples/Service"  
     monString = monString + ", contract=ICalculator, contractNamespace=http://Microsoft.ServiceModel.Samples"  
@@ -81,7 +81,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 4. Run the Visual Basic application and verify the results. The Visual Basic application will display a message box with the result from calling Add(3, 4).  
   
     > [!NOTE]
-    >  The binding specified in the service moniker in this sample has been changed to WSHttpBinding_ICalculator. Also note that you must supply a valid user name and password in the call to <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetUserNameCredential%28System.String%2CSystem.String%29>.  
+    > The binding specified in the service moniker in this sample has been changed to WSHttpBinding_ICalculator. Also note that you must supply a valid user name and password in the call to <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetUserNameCredential%28System.String%2CSystem.String%29>.  
   
 ### To specify Windows Credentials  
   
@@ -89,7 +89,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 
 2. Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
-    ```  
+    ```vb
     monString = "service:mexAddress=http://localhost:8000/ServiceModelSamples/Service?wsdl"  
     monString = monString + ", address=http://localhost:8000/ServiceModelSamples/Service"  
     monString = monString + ", contract=ICalculator, contractNamespace=http://Microsoft.ServiceModel.Samples"  
@@ -105,7 +105,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
 3. Run the Visual Basic application and verify the results. The Visual Basic application will display a message box with the result from calling Add(3, 4).  
   
     > [!NOTE]
-    >  You must replace "domain", "userID", and "password" with valid values.  
+    > You must replace "domain", "userID", and "password" with valid values.  
   
 ### To specify an issue token  
   
@@ -113,7 +113,7 @@ The Windows Communication Foundation (WCF) Service Moniker allows COM applicatio
   
      The following Visual Basic code example illustrates how to call the <xref:System.ServiceModel.ComIntegration.IChannelCredentials.SetIssuedToken%28System.String%2CSystem.String%2CSystem.String%29> method:  
   
-    ```  
+    ```vb
         monString = "service:mexAddress=http://localhost:8000/ServiceModelSamples/Service?wsdl"  
         monString = monString + ", address=http://localhost:8000/SomeService/Service"  
         monString = monString + ", contract=ICalculator, contractNamespace=http://SomeService.Samples"  

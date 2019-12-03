@@ -11,20 +11,18 @@ helpviewer_keywords:
   - "DateTimeOffset structure, converting to DateTime"
   - "DateTimeOffset structure, instantiating"
 ms.assetid: 9648375f-d368-4373-a976-3332ece00c0a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Instantiating a DateTimeOffset object
 
 The <xref:System.DateTimeOffset> structure offers a number of ways to create new <xref:System.DateTimeOffset> values. Many of them correspond directly to the methods available for instantiating new <xref:System.DateTime> values, with enhancements that allow you to specify the date and time value's offset from Coordinated Universal Time (UTC). In particular, you can instantiate a <xref:System.DateTimeOffset> value in the following ways:
 
-* By using a date and time literal.
+- By using a date and time literal.
 
-* By calling a <xref:System.DateTimeOffset> constructor.
+- By calling a <xref:System.DateTimeOffset> constructor.
 
-* By implicitly converting a value to <xref:System.DateTimeOffset> value.
+- By implicitly converting a value to <xref:System.DateTimeOffset> value.
 
-* By parsing the string representation of a date and time.
+- By parsing the string representation of a date and time.
 
 This topic provides greater detail and code examples that illustrate these methods of instantiating new <xref:System.DateTimeOffset> values.
 
@@ -75,13 +73,13 @@ The offset of the resulting <xref:System.DateTimeOffset> value depends on the <x
 
 The <xref:System.DateTimeOffset> type supports four methods that allow you to convert the string representation of a date and time into a <xref:System.DateTimeOffset> value:
 
-* <xref:System.DateTimeOffset.Parse%2A>, which tries to convert the string representation of a date and time to a <xref:System.DateTimeOffset> value and throws an exception if the conversion fails.
+- <xref:System.DateTimeOffset.Parse%2A>, which tries to convert the string representation of a date and time to a <xref:System.DateTimeOffset> value and throws an exception if the conversion fails.
 
-* <xref:System.DateTimeOffset.TryParse%2A>, which tries to convert the string representation of a date and time to a <xref:System.DateTimeOffset> value and returns `false` if the conversion fails.
+- <xref:System.DateTimeOffset.TryParse%2A>, which tries to convert the string representation of a date and time to a <xref:System.DateTimeOffset> value and returns `false` if the conversion fails.
 
-* <xref:System.DateTimeOffset.ParseExact%2A>, which tries to convert the string representation of a date and time in a specified format to a <xref:System.DateTimeOffset> value. The method throws an exception if the conversion fails.
+- <xref:System.DateTimeOffset.ParseExact%2A>, which tries to convert the string representation of a date and time in a specified format to a <xref:System.DateTimeOffset> value. The method throws an exception if the conversion fails.
 
-* <xref:System.DateTimeOffset.TryParseExact%2A>, which tries to convert the string representation of a date and time in a specified format to a <xref:System.DateTimeOffset> value. The method returns `false` if the conversion fails.
+- <xref:System.DateTimeOffset.TryParseExact%2A>, which tries to convert the string representation of a date and time in a specified format to a <xref:System.DateTimeOffset> value. The method returns `false` if the conversion fails.
 
 The following example illustrates calls to each of these four string conversion methods to instantiate a <xref:System.DateTimeOffset> value.
 

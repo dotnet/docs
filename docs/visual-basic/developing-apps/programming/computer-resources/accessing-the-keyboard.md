@@ -1,5 +1,5 @@
 ---
-title: "Accessing the Keyboard (Visual Basic)"
+title: "Accessing the Keyboard"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "keyboards [Visual Basic], accessing [Visual Basic]"
@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: aa37d54c-5c98-4b44-b98a-c26d2a03c038
 ---
 # Accessing the Keyboard (Visual Basic)
+
 The `My.Computer.Keyboard` object provides properties for accessing the current state of the keyboard, such as what keys are currently pressed, and provides a method to send keystrokes to the active window.  
   
 ## Tasks  
+
  This table lists tasks associated with the `My.Computer.Keyboard` object and points to topics demonstrating how to perform each task.  
   
 |To|See|  

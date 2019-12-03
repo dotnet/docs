@@ -33,4 +33,4 @@ Follow these steps to enable LINQ to DataSet functionality in an existing projec
 
 ## See also
 
-- [Get started with LINQ to DataSet](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)
+- [Get started with LINQ to DataSet](getting-started-linq-to-dataset.md)

@@ -49,7 +49,7 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
     ```  
   
     > [!NOTE]
-    >  Even if the value is displayed on the form as hexadecimal, any tests you perform on the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property will be testing its decimal value.  
+    > Even if the value is displayed on the form as hexadecimal, any tests you perform on the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property will be testing its decimal value.  
   
 ## See also
 

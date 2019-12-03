@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 33f97d13-3022-43da-8b18-cdb5c88df9c2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: TLS Protocols
 Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType> classes are allowed to use one of the following three protocols: Tls1.0, Tls1.1, or Tls 1.2. The SSL3.0 protocol and RC4 cipher are not supported.  
@@ -28,7 +26,7 @@ Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager?d
   
      Because the <xref:System.Net.ServicePointManager> object is initialized only once, defining these compatibility settings must be the first thing the application does.  
   
-- By adding the following line to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
+- By adding the following line to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
     ```xml  
     <AppContextSwitchOverrides value="Switch.System.Net.DontEnableSchUseStrongCrypto=true"/>  
@@ -38,4 +36,4 @@ Starting with the .NET Framework 4.6, the <xref:System.Net.ServicePointManager?d
   
 ## See also
 
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)
+- [Application compatibility](application-compatibility.md)

@@ -22,7 +22,7 @@ You can control access in several way with Windows Communication Foundation (WCF
  A feature of ASP.NET is the membership provider. Even though the membership provider is not technically an access control mechanism, it allows controlling access to the service by limiting the set of possible identities that can access the service's endpoint. The membership feature includes a database that can be populated with user name/password combinations that enable users of a Web site to establish accounts with the site. To access a service that uses the membership provider, a user must log on with his or her user name and password.  
   
 > [!NOTE]
->  You must first populate the database using the ASP.NET feature before a WCF service can use it for authorization purposes.  
+> You must first populate the database using the ASP.NET feature before a WCF service can use it for authorization purposes.  
   
  You can also use the membership feature if you already have a membership database from an existing ASP.NET Web site and you want to enable the same users to use your service, authorized with the same user names and passwords.  
   

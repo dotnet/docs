@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 208e5c2d-3f3f-404e-8b3c-7cccc14ddb16
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugBlockingObjectEnum Interface
 Provides an enumerator for a list of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structures. This interface is a subclass of the ICorDebugEnum interface.  
@@ -30,7 +28,7 @@ Provides an enumerator for a list of [CorDebugBlockingObject](../../../../docs/f
  Each `CorDebugBlockingObject` structure represents an object that is blocking a thread.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

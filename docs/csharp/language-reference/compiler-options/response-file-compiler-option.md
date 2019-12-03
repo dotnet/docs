@@ -13,7 +13,7 @@ The @ option lets you specify a file that contains compiler options and source c
   
 ## Syntax  
   
-```  
+```console  
 @response_file  
 ```  
   
@@ -26,17 +26,17 @@ The @ option lets you specify a file that contains compiler options and source c
   
  To specify more than one response file in a compilation, specify multiple response file options. For example:  
   
-```  
+```console  
 @file1.rsp @file2.rsp  
 ```  
   
  In a response file, multiple compiler options and source code files can appear on one line. A single compiler option specification must appear on one line (cannot span multiple lines). Response files can have comments that begin with the # symbol.  
   
- Specifying compiler options from within a response file is just like issuing those commands on the command line. See [Building from the Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) for more information.  
+ Specifying compiler options from within a response file is just like issuing those commands on the command line. See [Building from the Command Line](./how-to-set-environment-variables-for-the-visual-studio-command-line.md) for more information.  
   
  The compiler processes the command options as they are encountered. Therefore, command line arguments can override previously listed options in response files. Conversely, options in a response file will override options listed previously on the command line or in other response files.  
   
- C# provides the csc.rsp file, which is located in the same directory as the csc.exe file. See [-noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) for more information on csc.rsp.  
+ C# provides the csc.rsp file, which is located in the same directory as the csc.exe file. See [-noconfig](./noconfig-compiler-option.md) for more information on csc.rsp.  
   
  This compiler option cannot be set in the Visual Studio development environment, nor can it be changed programmatically.  
   
@@ -50,4 +50,4 @@ The @ option lets you specify a file that contains compiler options and source c
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)

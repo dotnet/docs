@@ -16,7 +16,7 @@ When users view data displayed in a Windows Forms <xref:System.Windows.Forms.Dat
  To achieve this behavior, you can freeze columns in the control. When you freeze a column, all the columns to its left (or to its right in right-to-left language scripts) are frozen as well. Frozen columns remain in place while all other columns can scroll.  
   
 > [!NOTE]
->  If column reordering is enabled, the frozen columns are treated as a group distinct from the unfrozen columns. Users can reposition columns in either group, but they cannot move a column from one group to the other.  
+> If column reordering is enabled, the frozen columns are treated as a group distinct from the unfrozen columns. Users can reposition columns in either group, but they cannot move a column from one group to the other.  
   
  The <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> property of a column determines whether the column is always visible within the grid.  
   

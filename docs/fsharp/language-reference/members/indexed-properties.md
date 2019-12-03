@@ -1,7 +1,7 @@
 ---
 title: Indexed Properties
 description: Learn about indexed properties in F#, which allow for array-like access to ordered data.
-ms.date: 10/17/2018
+ms.date: 11/04/2019
 ---
 
 # Indexed Properties
@@ -43,7 +43,7 @@ Regardless of which form you use, you should always use the curried form for the
 
 The following code example illustrates the definition and use of default and non-default indexed properties that have get and set methods.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet3301.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3301.fs)]
 
 ## Output
 
@@ -65,7 +65,7 @@ open System.Collections.Generic
 /// Basic implementation of a sparse matrix based on a dictionary
 type SparseMatrix() =
     let table = new Dictionary<(int * int), float>()
-    member __.Item
+    member _.Item
         // Because the key is comprised of two values, 'get' has two index values
         with get(key1, key2) = table.[(key1, key2)]
 

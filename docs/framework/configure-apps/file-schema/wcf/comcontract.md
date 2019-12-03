@@ -6,8 +6,10 @@ ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
 # \<comContract>
 Specifies a COM+ integration service contract.  
   
- \<system.ServiceModel>  
-\<comContracts>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<comContracts>**](comcontracts.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<comContract>**  
   
 ## Syntax  
   
@@ -86,6 +88,6 @@ Specifies a COM+ integration service contract.
 
 - <xref:System.ServiceModel.Configuration.ComContractElementCollection>
 - <xref:System.ServiceModel.Configuration.ComContractElement>
-- [\<comContracts>](../../../../../docs/framework/configure-apps/file-schema/wcf/comcontracts.md)
-- [Integrating with COM+ Applications](../../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)
-- [How to: Configure COM+ Service Settings](../../../../../docs/framework/wcf/feature-details/how-to-configure-com-service-settings.md)
+- [\<comContracts>](comcontracts.md)
+- [Integrating with COM+ Applications](../../../wcf/feature-details/integrating-with-com-plus-applications.md)
+- [How to: Configure COM+ Service Settings](../../../wcf/feature-details/how-to-configure-com-service-settings.md)

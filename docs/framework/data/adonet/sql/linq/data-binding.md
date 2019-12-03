@@ -115,4 +115,4 @@ This section calls out several items that might help troubleshoot your [!INCLUDE
 
 ## See also
 
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Background Information](background-information.md)

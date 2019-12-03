@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "what's new [.NET Framework]"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # What's new in accessibility in the .NET Framework
@@ -17,7 +15,7 @@ The .NET Framework aims at making applications more accessible for your users. A
 
 ## Accessibility switches
 
-You can configure your app to opt into accessibility features if it targets .NET Framework 4.7 or an earlier version but is running on .NET Framework 4.7.1 or later. You can also configure your app to use legacy features (and not take advantage of accessibility features) if it targets .NET Framework 4.7.1 or later. Each version of the .NET Framework that includes accessibility features has a version-specific accessibility switch, which you add to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file. The following are the supported switches:
+You can configure your app to opt into accessibility features if it targets .NET Framework 4.7 or an earlier version but is running on .NET Framework 4.7.1 or later. You can also configure your app to use legacy features (and not take advantage of accessibility features) if it targets .NET Framework 4.7.1 or later. Each version of the .NET Framework that includes accessibility features has a version-specific accessibility switch, which you add to the [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](../configure-apps/file-schema/runtime/index.md) section of the application's configuration file. The following are the supported switches:
 
 |Version|Switch|
 |---|---|
@@ -27,7 +25,7 @@ You can configure your app to opt into accessibility features if it targets .NET
 
 ### Taking advantage of accessibility enhancements
 
-The new accessibility features are enabled by default for applications that target .NET Framework 4.7.1 or later. In addition, applications that target an earlier version of the .NET Framework but are running on .NET Framework 4.7.1 or later can opt out of legacy accessibility behaviors (and thereby take advantage of accessibility improvements) by adding switches to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file and setting their value to `false`. The following shows how to opt in to accessibility enhancements introduced in .NET Framework 4.7.1:
+The new accessibility features are enabled by default for applications that target .NET Framework 4.7.1 or later. In addition, applications that target an earlier version of the .NET Framework but are running on .NET Framework 4.7.1 or later can opt out of legacy accessibility behaviors (and thereby take advantage of accessibility improvements) by adding switches to the [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](../configure-apps/file-schema/runtime/index.md) section of the application's configuration file and setting their value to `false`. The following shows how to opt in to accessibility enhancements introduced in .NET Framework 4.7.1:
 
 ```xml
 <runtime>
@@ -36,7 +34,7 @@ The new accessibility features are enabled by default for applications that targ
 </runtime>
 ```
 
-If you choose to opt in to accessibility features in a later version of the .NET Framework, you must also explicitly opt in to the features from earlier versions of the .NET Framework. Configuring your app to take advantage of accessibility improvements in both .NET Framework 4.7.1 and 4.7.2 requires the following [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
+If you choose to opt in to accessibility features in a later version of the .NET Framework, you must also explicitly opt in to the features from earlier versions of the .NET Framework. Configuring your app to take advantage of accessibility improvements in both .NET Framework 4.7.1 and 4.7.2 requires the following [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
 
 ```xml
 <runtime>
@@ -45,7 +43,7 @@ If you choose to opt in to accessibility features in a later version of the .NET
 </runtime>
 ```
 
-Configuring your app to take advantage of accessibility improvements in .NET Framework 4.7.1, 4.7.2, and 4.8 requires the following [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
+Configuring your app to take advantage of accessibility improvements in .NET Framework 4.7.1, 4.7.2, and 4.8 requires the following [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element:
 
 ```xml
 <runtime>
@@ -56,7 +54,7 @@ Configuring your app to take advantage of accessibility improvements in .NET Fra
 
 ### Restoring legacy behavior
 
-Applications that target versions of the .NET Framework starting with 4.7.1 can disable accessibility features by adding switches to the [`<AppContextSwitchOverrides>`](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](~/docs/framework/configure-apps/file-schema/runtime/index.md) section of the application's configuration file and setting their value to `true`. For example, the following configuration opts out of accessibility features introduced in .NET Framework 4.7.2:
+Applications that target versions of the .NET Framework starting with 4.7.1 can disable accessibility features by adding switches to the [`<AppContextSwitchOverrides>`](../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [`<runtime>`](../configure-apps/file-schema/runtime/index.md) section of the application's configuration file and setting their value to `true`. For example, the following configuration opts out of accessibility features introduced in .NET Framework 4.7.2:
 
 ```xml
 <runtime>
@@ -164,7 +162,7 @@ In applications that target .NET Framework 4.7.2 and earlier versions, a control
 
 The following figure shows the tooltip when the user has selected a button with the keyboard.
 
-![Tooltip when user navigates to a button with the keyboard](media/tooltip.png)
+![Screenshot of tooltip when user navigates to button with the keyboard.](./media/whats-new-in-accessibility/select-tooltip-with-keyboard.png)
 
 <a name="wpf48" />
 
@@ -184,7 +182,7 @@ In the .NET Framework 4.7.2, WPF added the ability to draw <xref:System.Windows.
 
 To use this property, simply add it to your XAML code and use the appropriate brush or binding. The resulting text selection looks like this:
 
-![Tooltip when user navigates to a button with the keyboard](media/selectiontextbrush-property.png)
+![Screenshot of the app running with the words Hello World selected.](./media/whats-new-in-accessibility/selectiontextbrush-property.png)
 
 You can combine the use of the `SelectionBrush` and `SelectionTextBrush` properties to generate any background and foreground color combination that you deem appropriate.
 
@@ -478,11 +476,11 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   Before: 
 
-  ![Expander control with focus before accessibility improvements](media/expander-before.png)
+  ![Screenshot of the expander control with focus and no focus visual.](./media/whats-new-in-accessibility/expander-control-before.png)
 
   After: 
 
-  ![Expander control with focus after accessibility improvements](media/expander-after.png)
+  ![Screenshot of the expander control with focus showing a dotted line around the control's text.](./media/whats-new-in-accessibility/expander-control-after.png)
 
 - <xref:System.Windows.Controls.CheckBox> and <xref:System.Windows.Controls.RadioButton> controls
 
@@ -490,11 +488,11 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   Before: 
 
-  ![High contrast radio button with focus before accessibility improvements](media/radio-button-before.png)
+  ![Screenshot of radio and check buttons with poor text visibility on high contrast themes.](./media/whats-new-in-accessibility/high-contrast-radio-button-before.png)
 
   After: 
 
-  ![High contrast radio button with focus after accessibility improvements](media/radio-button-after.png)
+  ![Screenshot of radio and check buttons with better text visibility on high contrast themes.](./media/whats-new-in-accessibility/high-contrast-radio-button-after.png)
 
 - <xref:System.Windows.Controls.ComboBox> control
 
@@ -502,31 +500,31 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   Before: 
 
-  ![ComboBox disabled border and text before accessibility improvements](media/combo-disabled-before.png)
+  ![Screenshot of a disabled ComboBox with border and control text in different colors.](./media/whats-new-in-accessibility/combo-disabled-before.png)
 
   After:   
 
-  ![ComboBox disabled border and text after accessibility improvements](media/combo-disabled-after.png)
+  ![Screenshot of a disabled ComboBox with border the same color as the control text.](./media/whats-new-in-accessibility/combo-disabled-after.png)
 
   In addition, disabled and focused buttons use the correct theme color.
 
   Before:
 
-  ![Button theme colors before accessibility improvements](media/button-themes-before.png) 
+  ![Screenshot of a black button with gray text saying Focus Me.](./media/whats-new-in-accessibility/button-theme-colors-before.png) 
 
   After: 
 
-  ![Button theme colors after accessibility improvements](media/button-themes-after.png) 
+  ![Screenshot of a blue button with black text saying Focus Me.](./media/whats-new-in-accessibility/button-theme-colors-after.png) 
 
   Finally, in .NET Framework 4.7 and earlier versions, setting a <xref:System.Windows.Controls.ComboBox> control’s style to `Toolbar.ComboBoxStyleKey` caused the drop-down arrow to be invisible. This issue is fixed starting with .NET Framework 4.7.1. For example:
 
   Before: 
 
-  ![Toolbar.ComboBoxStyleKey before accessibility improvements](media/comboboxstylekey-before.png) 
+  ![Screenshot of a ComboBox control with an invisible drop-down arrow.](./media/whats-new-in-accessibility/combo-box-style-key-before.png) 
 
   After: 
 
-  ![Toolbar.ComboBoxStyleKey after accessibility improvements](media/comboboxstylekey-after.png) 
+  ![Screenshot of a ComBoxBox control displaying the drop-down arrow.](./media/whats-new-in-accessibility/combo-box-style-key-after.png) 
 
 - <xref:System.Windows.Controls.DataGrid> control
 
@@ -534,21 +532,21 @@ Starting with .NET Framework 4.7.1, improvements in high contrast have been made
 
   Before: 
 
-  ![Sort indicator arrow before accessibility improvements](media/sort-indicator-before.png) 
+  ![Screenshot of sort indicator arrow before improvements.](./media/whats-new-in-accessibility/sort-indicator-before.png) 
 
   After:   
 
-  ![Sort indicator arrow after accessibility improvements](media/sort-indicator-after.png) 
+  ![Screenshot of sort indicator arrow after improvements.](./media/whats-new-in-accessibility/sort-indicator-after.png) 
 
   In addition, in .NET Framework 4.7 and earlier versions, the default link style changed to an incorrect color on mouse over in high contrast modes. This is resolved starting with .NET Framework 4.7.1. Similarly, <xref:System.Windows.Controls.DataGrid> checkbox columns uses the expected colors for keyboard focus feedback starting with .NET Framework 4.7.1.
 
   Before: 
 
-  ![DataGrid default link style before accessibility improvements](media/default-link-style-before.png) 
+  ![Screenshot of a link saying Click Me! in red.](./media/whats-new-in-accessibility/default-link-style-before.png) 
 
   After:    
 
-  ![DataGrid default link style after accessibility improvements](media/default-link-style-after.png) 
+  ![Screenshot of a link saying Click Me! in yellow.](./media/whats-new-in-accessibility/default-link-style-after.png) 
 
 For more information on WPF accessibility improvements in .NET Framework 4.7.1, see [Accessibility improvements in WPF](../migration-guide/retargeting/4.7-4.7.1.md#accessibility-improvements-in-wpf).
 
@@ -579,11 +577,11 @@ Some examples of high contrast changes include:
 
   Before:
 
-  ![Disabled text before accessibility improvements](media/wf-disabled-before.png) 
+  ![Screenshot of an app that uses different controls running in high contrast mode before accessibility improvements.](./media/whats-new-in-accessibility/high-contrast-mode-menu-items-before.png) 
 
   After:
 
-  ![Disabled text after accessibility improvements](media/wf-disabled-after.png) 
+  ![Screenshot of an app that uses different controls running in high contrast mode after accessibility improvements.](./media/whats-new-in-accessibility/high-contrast-mode-menu-items-after.png) 
 
 - High contrast improvements in the Thread Exception Dialog.
 
@@ -624,7 +622,7 @@ Starting with .NET Framework 4.7.1, Windows Forms includes:
 
 ### ASP.NET web controls
 
-Starting with .NET Framework 4.7.1 and Visual Studio 2017 15.3, ASP.NET improves how ASP.NET web controls work with accessibility technology in Visual Studio. Changes include the following:
+Starting with .NET Framework 4.7.1 and Visual Studio 2017 version 15.3, ASP.NET improves how ASP.NET web controls work with accessibility technology in Visual Studio. Changes include the following:
 
 - Changes to implement missing UI accessibility patterns in controls, like the **Add Field** dialog in the **Details View** wizard, or the **Configure ListView** dialog of the **ListView** wizard.
 
@@ -707,4 +705,4 @@ Accessibility changes in the Workflow Designer include the following:
 
 ## See also
 
-- [What's new in the .NET Framework](whats-new.md)
+- [What's new in the .NET Framework](index.md)

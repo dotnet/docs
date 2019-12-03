@@ -11,7 +11,7 @@ ms.assetid: f4bf3416-b3d8-4568-b98e-3eda8f6dbf7a
 This example shows how to modify the shape at the start or end of an open <xref:System.Windows.Shapes.Shape> element. To change the cap at the beginning of an open <xref:System.Windows.Shapes.Shape>, use its <xref:System.Windows.Shapes.Shape.StrokeStartLineCap%2A> property. To change the cap at the end of an open <xref:System.Windows.Shapes.Shape>, use its <xref:System.Windows.Shapes.Shape.StrokeEndLineCap%2A> property. To view the available line caps, see the <xref:System.Windows.Media.PenLineCap> enumeration.  
   
 > [!NOTE]
->  This property only affects an open shape, such as a <xref:System.Windows.Shapes.Line>, a <xref:System.Windows.Shapes.Polyline>, or an open <xref:System.Windows.Shapes.Path> element.  
+> This property only affects an open shape, such as a <xref:System.Windows.Shapes.Line>, a <xref:System.Windows.Shapes.Polyline>, or an open <xref:System.Windows.Shapes.Path> element.  
   
  The following example draws four <xref:System.Windows.Shapes.Polyline> elements and uses a different set of shapes on the ends of each.  
   

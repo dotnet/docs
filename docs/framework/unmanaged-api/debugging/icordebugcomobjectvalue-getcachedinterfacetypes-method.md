@@ -13,8 +13,6 @@ helpviewer_keywords:
 ms.assetid: d492284f-d3c5-4614-adb8-d718d5042500
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugComObjectValue::GetCachedInterfaceTypes Method
 Provides an enumerator for the interface types that the current object has been cast to or used as.  

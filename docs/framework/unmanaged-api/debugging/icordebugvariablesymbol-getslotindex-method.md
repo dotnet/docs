@@ -2,8 +2,6 @@
 title: "ICorDebugVariableSymbol::GetSlotIndex Method"
 ms.date: "03/30/2017"
 ms.assetid: 09c19f5f-afc4-4e0c-bffe-cd7147bc7a43
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableSymbol::GetSlotIndex Method
 Gets the managed slot index of a local variable.  
@@ -27,7 +25,7 @@ HRESULT GetSlotIndex(
  The managed slot index of a local variable can be used to retrieve the variable's metadata information  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

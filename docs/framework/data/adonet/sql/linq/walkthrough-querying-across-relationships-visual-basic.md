@@ -13,7 +13,7 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
  This walkthrough was written by using Visual Basic Development Settings.  
   
 ## Prerequisites  
- You must have completed [Walkthrough: Simple Object Model and Query (Visual Basic)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-visual-basic.md). This walkthrough builds on that one, including the presence of the northwnd.mdf file in c:\linqtest.  
+ You must have completed [Walkthrough: Simple Object Model and Query (Visual Basic)](walkthrough-simple-object-model-and-query-visual-basic.md). This walkthrough builds on that one, including the presence of the northwnd.mdf file in c:\linqtest.  
   
 ## Overview  
  This walkthrough consists of three main tasks:  
@@ -83,8 +83,8 @@ This walkthrough demonstrates the use of [!INCLUDE[vbtecdlinq](../../../../../..
 5. On the **File** menu, click **Save All** if you want to save this application.  
   
 ## Next Steps  
- The next walkthrough ([Walkthrough: Manipulating Data (Visual Basic)](../../../../../../docs/framework/data/adonet/sql/linq/walkthrough-manipulating-data-visual-basic.md)) demonstrates how to manipulate data. That walkthrough does not require that you save the two walkthroughs in this series that you have already completed.  
+ The next walkthrough ([Walkthrough: Manipulating Data (Visual Basic)](walkthrough-manipulating-data-visual-basic.md)) demonstrates how to manipulate data. That walkthrough does not require that you save the two walkthroughs in this series that you have already completed.  
   
 ## See also
 
-- [Learning by Walkthroughs](../../../../../../docs/framework/data/adonet/sql/linq/learning-by-walkthroughs.md)
+- [Learning by Walkthroughs](learning-by-walkthroughs.md)

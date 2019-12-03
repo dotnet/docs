@@ -32,12 +32,12 @@ ms.assetid: 146e1c66-2a76-4ed3-98a5-fd77851a06d9
  If you want to have deterministic behavior when using Windows authentication together with impersonation you need to explicitly set the Windows credential or you need to establish a security context with the service. To do this, use a message security session or a transport security session. For example, the net.tcp transport can provide a transport security session. Additionally, you must use only a synchronous version of client operations when calling the service. If you establish a message security context, you should not keep the connection to the service open longer than the configured session renewal period, because the identity can also change during the session renewal process.  
   
 ### Credentials Capture  
- The following applies to [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)], and subsequent versions.  
+ The following applies to .NET Framework 3.5, and subsequent versions.  
   
  Credentials used by the client or the service are based on the current context thread. The credentials are obtained when the `Open` method (or `BeginOpen`, for asynchronous calls) of the client or service is called. For both the <xref:System.ServiceModel.ServiceHost> and <xref:System.ServiceModel.ClientBase%601> classes, the `Open` and `BeginOpen` methods inherit from the <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> and <xref:System.ServiceModel.Channels.CommunicationObject.BeginOpen%2A> methods of the <xref:System.ServiceModel.Channels.CommunicationObject> class.  
   
 > [!NOTE]
->  When using the `BeginOpen` method, the credentials captured cannot be guaranteed to be the credentials of the process that calls the method.  
+> When using the `BeginOpen` method, the credentials captured cannot be guaranteed to be the credentials of the process that calls the method.  
   
 ## Token Caches Allow Replay Using Obsolete Data  
  WCF uses the local security authority (LSA) `LogonUser` function to authenticate users by user name and password. Because the logon function is a costly operation, WCF allows you to cache tokens that represent authenticated users to increase performance. The caching mechanism saves the results from `LogonUser` for subsequent uses. This mechanism is disabled by default; to enable it, set the <xref:System.ServiceModel.Security.UserNamePasswordServiceCredential.CacheLogonTokens%2A> property to `true`, or use the `cacheLogonTokens` attribute of the [\<userNameAuthentication>](../../../../docs/framework/configure-apps/file-schema/wcf/usernameauthentication.md).  

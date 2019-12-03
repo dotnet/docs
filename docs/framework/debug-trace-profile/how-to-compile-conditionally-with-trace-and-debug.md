@@ -49,7 +49,7 @@ While you are debugging an application during development, both your tracing and
      For C#: **csc -r:System.dll -d:TRACE -d:DEBUG=FALSE MyApplication.cs**  
   
     > [!TIP]
-    >  To compile more than one application file, leave a blank space between the file names, for example, **MyApplication1.vb MyApplication2.vb MyApplication3.vb** or **MyApplication1.cs MyApplication2.cs MyApplication3.cs**.  
+    > To compile more than one application file, leave a blank space between the file names, for example, **MyApplication1.vb MyApplication2.vb MyApplication3.vb** or **MyApplication1.cs MyApplication2.cs MyApplication3.cs**.  
   
      The meaning of the conditional-compilation directives used in the above examples is as follows:  
   
@@ -61,7 +61,7 @@ While you are debugging an application during development, both your tracing and
     |`-d:`|Defines a conditional compilation symbol|  
   
     > [!NOTE]
-    >  You must spell TRACE or DEBUG with uppercase letters. For more information about the conditional compilation commands, enter `vbc /?` (for Visual Basic) or `csc /?` (for C#) at the command prompt. For more information, see [Building from the Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) (C#) or [Invoking the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) (Visual Basic).  
+    > You must spell TRACE or DEBUG with uppercase letters. For more information about the conditional compilation commands, enter `vbc /?` (for Visual Basic) or `csc /?` (for C#) at the command prompt. For more information, see [Building from the Command Line](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md) (C#) or [Invoking the Command-Line Compiler](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md) (Visual Basic).  
   
 ### To perform conditional compilation using #CONST or #define  
   
@@ -87,14 +87,14 @@ Delete the compiler directive from your source code.
 Comment out the compiler directive.  
   
 > [!NOTE]
->  When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
+> When you are ready to compile, you can either choose **Build** from the **Build** menu, or use the command line method but without typing the **d:** to define conditional compilation symbols.  
   
 ## See also
 
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
-- [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)
-- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
-- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
-- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
-- [How to: Set Environment Variables for the Visual Studio Command Line](~/docs/csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
-- [How to: Invoke the Command-Line Compiler](~/docs/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)
+- [How to: Create, Initialize and Configure Trace Switches](how-to-create-initialize-and-configure-trace-switches.md)
+- [Trace Switches](trace-switches.md)
+- [Trace Listeners](trace-listeners.md)
+- [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md)
+- [How to set environment variables for the Visual Studio Command Line](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [How to: Invoke the Command-Line Compiler](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)

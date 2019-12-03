@@ -78,7 +78,7 @@ This topic introduces the purpose of type conversion from string as a general XA
  Each <xref:System.ComponentModel.TypeConverter> implementation can have its own interpretation of what constitutes a valid string for a conversion, and can also use or ignore the type description or culture contexts passed as parameters. However, the WPF XAML processing might not pass values to the type description context in all cases, and also might not pass culture based on `xml:lang`.  
   
 > [!NOTE]
->  Do not use the curly brace characters, particularly {, as a possible element of your string format. These characters are reserved as the entry and exit for a markup extension sequence.  
+> Do not use the curly brace characters, particularly {, as a possible element of your string format. These characters are reserved as the entry and exit for a markup extension sequence.  
   
 ### Implementing ConvertTo  
  <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> is potentially used for serialization support. Serialization support through <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> for your custom type and its type converter is not an absolute requirement. However, if you are implementing a control, or using serialization of as part of the features or design of your class, you should implement <xref:System.ComponentModel.TypeConverter.ConvertTo%2A>.  
@@ -97,13 +97,13 @@ This topic introduces the purpose of type conversion from string as a general XA
   
 <a name="Applying_the_TypeConverterAttribute"></a>   
 ## Applying the TypeConverterAttribute  
- In order for your custom type converter to be used as the acting type converter for a custom class by a XAML processor, you must apply the [!INCLUDE[TLA#tla_netframewkattr](../../../../includes/tlasharptla-netframewkattr-md.md)] <xref:System.ComponentModel.TypeConverterAttribute> to your class definition. The <xref:System.ComponentModel.TypeConverterAttribute.ConverterTypeName%2A> that you specify through the attribute must be the type name of your custom type converter. With this attribute applied, when a XAML processor handles values where the property type uses your custom class type, it can input strings and return object instances.  
+ In order for your custom type converter to be used as the acting type converter for a custom class by a XAML processor, you must apply the <xref:System.ComponentModel.TypeConverterAttribute> to your class definition. The <xref:System.ComponentModel.TypeConverterAttribute.ConverterTypeName%2A> that you specify through the attribute must be the type name of your custom type converter. With this attribute applied, when a XAML processor handles values where the property type uses your custom class type, it can input strings and return object instances.  
   
- You can also provide a type converter on a per-property basis. Instead of applying a [!INCLUDE[TLA#tla_netframewkattr](../../../../includes/tlasharptla-netframewkattr-md.md)] <xref:System.ComponentModel.TypeConverterAttribute> to the class definition, apply it to a property definition (the main definition, not the `get`/`set` implementations within it). The type of the property must match the type that is processed by your custom type converter. With this attribute applied, when a XAMLprocessor handles values of that property, it can process input strings and return object instances. The per-property type converter technique is particularly useful if you choose to use a property type from Microsoft .NET Framework or from some other library where you cannot control the class definition and cannot apply a <xref:System.ComponentModel.TypeConverterAttribute> there.  
+ You can also provide a type converter on a per-property basis. Instead of applying a <xref:System.ComponentModel.TypeConverterAttribute> to the class definition, apply it to a property definition (the main definition, not the `get`/`set` implementations within it). The type of the property must match the type that is processed by your custom type converter. With this attribute applied, when a XAML processor handles values of that property, it can process input strings and return object instances. The per-property type converter technique is particularly useful if you choose to use a property type from Microsoft .NET Framework or from some other library where you cannot control the class definition and cannot apply a <xref:System.ComponentModel.TypeConverterAttribute> there.  
   
 ## See also
 
 - <xref:System.ComponentModel.TypeConverter>
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)

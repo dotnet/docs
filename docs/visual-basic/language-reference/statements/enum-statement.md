@@ -1,5 +1,5 @@
 ---
-title: "Enum Statement (Visual Basic)"
+title: "Enum Statement"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.Enum"
@@ -18,7 +18,7 @@ Declares an enumeration and defines the values of its members.
 
 ## Syntax
 
-```
+```vb
 [ <attributelist> ] [ accessmodifier ]  [ Shadows ]
 Enum enumerationname [ As datatype ]
    memberlist

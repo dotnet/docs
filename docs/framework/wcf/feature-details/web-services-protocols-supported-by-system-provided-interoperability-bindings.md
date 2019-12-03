@@ -16,7 +16,7 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
  The [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md), [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), and [\<ws2007HttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/ws2007httpbinding.md) bindings support the following protocols.  
   
 > [!NOTE]
->  For information about bindings used to publish metadata, see the "System-Provided Metadata Bindings" section later in this topic.  
+> For information about bindings used to publish metadata, see the "System-Provided Metadata Bindings" section later in this topic.  
   
 |Category|Protocol|Specification and Usage|  
 |--------------|--------------|-----------------------------|  

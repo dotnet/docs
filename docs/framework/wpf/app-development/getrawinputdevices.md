@@ -10,7 +10,7 @@ Allows PresentationHost.exe to discover the raw input devices (Human Interface D
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRawInputDevices( [out] IEnumRAWINPUTDEVICE **ppEnum );  
 ```  
   

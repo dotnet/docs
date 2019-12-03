@@ -7,12 +7,12 @@ ms.assetid: f1c94802-95c4-49e4-b1e2-ee9dd126ff93
 This sample demonstrates the hosting layer’s integration with the classes in the <xref:System.Web.Routing> namespace. The classes in the <xref:System.Web.Routing> namespace allow an application to use URLs that do not directly correspond to a physical resource. Using Web routing allows the developer to create virtual addresses for HTTP that are then mapped back to actual WCF services. This is useful when a WCF service must be hosted without requiring a physical file or resource, or when services must be accessed with URLs that do not contain files such as .html or .aspx. This sample demonstrates how to utilize the <xref:System.Web.Routing.RouteTable> class to create virtual URIs that map to running services defined in global.asax. 
 
 > [!NOTE]
->  The classes in the <xref:System.Web.Routing> namespace only work for services hosted over HTTP.  
+> The classes in the <xref:System.Web.Routing> namespace only work for services hosted over HTTP.  
   
 This example uses WCF to create two RSS feeds: a `movies` feed and a `channels` feed. The URLs to activate the services do not contain an extension and are registered in the `Application_Start` method of the `Global` class derived from the <xref:System.Web.HttpApplication> class.  
   
 > [!NOTE]
->  This sample only works in Internet Information Services (IIS) 7.0 and later, as IIS 6.0 uses a different method for supporting extension-less URLs.  
+> This sample only works in Internet Information Services (IIS) 7.0 and later, as IIS 6.0 uses a different method for supporting extension-less URLs.  
 
 #### To download this sample
   
@@ -20,7 +20,7 @@ This sample may already be installed on your computer. Check for the following (
    
 `<InstallDrive>:\WF_WCF_Samples`  
    
- If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+ If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
    
 `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WebRoutingIntegration`  
   
@@ -75,7 +75,7 @@ This sample may already be installed on your computer. Check for the following (
  This sample demonstrates that the hosting layer is capable of composing with the classes in the <xref:System.Web.Routing> namespace for routing the requests of services hosted over HTTP.  
   
 > [!NOTE]
->  You must update the default application pool version to [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] if it’s set to version 2.  
+> You must update the default application pool version to .NET Framework 4 if it’s set to version 2.  
   
 ## See also
 

@@ -6,11 +6,12 @@ ms.assetid: a337d064-1e64-4209-b4a9-db7fdb7e3eaf
 # \<serviceThrottling>
 Specifies the throttling mechanism of a Windows Communication Foundation (WCF) service.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<serviceThrottling>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceThrottling>**  
   
 ## Syntax  
   
@@ -38,7 +39,7 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
  Throttling controls place limits on the number of concurrent calls, instances, or sessions to prevent over-consumption of resources.  
@@ -46,7 +47,7 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
  A trace is written every time the value of attributes is reached. The first trace is written as a warning.  
   
 ## Example  
- The following configuration example specifies that the service limits the maximum concurrent calls to 2, and the maximum number of concurrent instances to 10. For a detailed example of running this example, see [Throttling](../../../../../docs/framework/wcf/samples/throttling.md).  
+ The following configuration example specifies that the service limits the maximum concurrent calls to 2, and the maximum number of concurrent instances to 10. For a detailed example of running this example, see [Throttling](../../../wcf/samples/throttling.md).  
   
 ```xml  
 <behaviors>
@@ -66,4 +67,4 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
 
 - <xref:System.ServiceModel.Description.ServiceThrottlingBehavior>
 - <xref:System.ServiceModel.Configuration.ServiceThrottlingElement>
-- [Using ServiceThrottlingBehavior to Control WCF Service Performance](../../../../../docs/framework/wcf/feature-details/using-servicethrottlingbehavior-to-control-wcf-service-performance.md)
+- [Using ServiceThrottlingBehavior to Control WCF Service Performance](../../../wcf/feature-details/using-servicethrottlingbehavior-to-control-wcf-service-performance.md)

@@ -18,4 +18,4 @@ A constant expression consists of a constant value. Constant values are directly
   
 ## See also
 
-- [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md)
+- [Expressions in LINQ to Entities Queries](expressions-in-linq-to-entities-queries.md)

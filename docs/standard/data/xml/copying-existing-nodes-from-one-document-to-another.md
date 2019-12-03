@@ -32,7 +32,7 @@ The **ImportNode** method is the mechanism by which a node or entire node subtre
 |All other node types|These node types cannot be imported.|These node types cannot be imported.|  
   
 > [!NOTE]
->  Although DocumentType nodes can be imported, a document can only have one DocumentType. So, once you have imported the document type, before inserting it into tree you have to make sure that there is no document type in the document. For information on removing nodes, see [Removing Nodes, Content, and Values from an XML Document](../../../../docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md).  
+> Although DocumentType nodes can be imported, a document can only have one DocumentType. So, once you have imported the document type, before inserting it into tree you have to make sure that there is no document type in the document. For information on removing nodes, see [Removing Nodes, Content, and Values from an XML Document](../../../../docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md).  
   
 ## See also
 

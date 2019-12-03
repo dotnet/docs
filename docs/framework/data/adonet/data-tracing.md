@@ -26,7 +26,7 @@ For more information about setting and configuring managed tracing in ADO.NET, s
 
 ## Accessing Diagnostic Information in the Extended Events Log
 
-In the .NET Framework Data Provider for SQL Server, data access tracing ([Data Access Tracing](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/hh880086(v=msdn.10))) has been updated to make it easier to easier to correlate client events with diagnostic information, such as connection failures, from the server's connectivity ring buffer and application performance information in the extended events log. For information about reading the extended events log, see [View Event Session Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/hh710068(v=sql.110)).
+In the .NET Framework Data Provider for SQL Server, data access tracing ([Data Access Tracing](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/hh880086(v=msdn.10))) has been updated to make it easier to correlate client events with diagnostic information, such as connection failures, from the server's connectivity ring buffer and application performance information in the extended events log. For information about reading the extended events log, see [View Event Session Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/hh710068(v=sql.110)).
 
 For connection operations, ADO.NET will send a client connection ID. If the connection fails, you can access the connectivity ring buffer ([Connectivity troubleshooting in SQL Server 2008 with the Connectivity Ring Buffer](https://go.microsoft.com/fwlink/?LinkId=207752)) and find the `ClientConnectionID` field and get diagnostic information about the connection failure. Client connection IDs are logged in the ring buffer only if an error occurs. (If a connection fails before sending the prelogin packet, a client connection ID will not be generated.) The client connection ID is a 16-byte GUID. You can also find the client connection ID in the extended events target output, if the `client_connection_id` action is added to events in an extended events session. You can enable data access tracing and rerun the connection command and observe the `ClientConnectionID` field in the data access trace, if you need further client driver diagnostic assistance.
 
@@ -50,6 +50,6 @@ add target ring_buffer with (track_causality=on)
 
 ## See also
 
-- [Network Tracing in the .NET Framework](../../../../docs/framework/network-programming/network-tracing.md)
-- [Tracing and Instrumenting Applications](../../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Network Tracing in the .NET Framework](../../network-programming/network-tracing.md)
+- [Tracing and Instrumenting Applications](../../debug-trace-profile/tracing-and-instrumenting-applications.md)
+- [ADO.NET Overview](ado-net-overview.md)

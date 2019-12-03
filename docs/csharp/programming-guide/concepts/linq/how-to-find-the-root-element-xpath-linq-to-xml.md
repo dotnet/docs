@@ -13,7 +13,7 @@ This topic shows how to get the root element with XPath and [!INCLUDE[sqltecxlin
 ## Example  
  This example finds the root element.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XDocument po = XDocument.Load("PurchaseOrders.xml");  
@@ -33,7 +33,7 @@ Console.WriteLine(el1.Name);
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 PurchaseOrders  
 ```  

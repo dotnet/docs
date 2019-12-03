@@ -1,5 +1,5 @@
 ---
-title: "Aggregate Clause (Visual Basic)"
+title: "Aggregate Clause"
 ms.date: 08/28/2018
 f1_keywords: 
   - "vb.QueryAggregateIn"
@@ -16,7 +16,7 @@ Applies one or more aggregate functions to a collection.
   
 ## Syntax  
   
-```  
+```vb  
 Aggregate element [As type] In collection _  
   [, element2 [As type2] In collection2, [...]]  
   [ clause ]  

@@ -7,7 +7,7 @@ ms.date: 01/22/2019
 
 In F#, a slice is a subset of a data type. To be able to take a slice from a data type, the data type must either define a `GetSlice` method or in a [type extension](type-extensions.md) that is in scope. This article explains how to take slices from existing F# types and how to define your own.
 
-Slices are similar to [indexers](members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones.
+Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones.
 
 F# currently has intrinsic support for slicing strings, lists, arrays, and 2D arrays.
 
@@ -95,7 +95,7 @@ For example, here's how you might define slices for the <xref:System.ArraySegmen
 open System
 
 type ArraySegment<'TItem> with
-    member segment.GetSlice(?start, ?finish) =
+    member segment.GetSlice(start, finish) =
         let start = defaultArg start 0
         let finish = defaultArg finish segment.Count
         ArraySegment(segment.Array, segment.Offset + start, finish - start)
@@ -111,12 +111,19 @@ If you are defining slices for a type that is actually a struct, we recommend th
 ```fsharp
 open System
 
+type ReadOnlySpan<'T> with
+    // Note the 'inline' in the member definition
+    member sp.GetSlice(startIdx, endIdx) =
+        let s = defaultArg startIdx 0
+        let e = defaultArg endIdx sp.Length
+        sp.Slice(s, e - s)
+
 type Span<'T> with
     // Note the 'inline' in the member definition
     member inline sp.GetSlice(startIdx, endIdx) =
         let s = defaultArg startIdx 0
         let e = defaultArg endIdx sp.Length
-        sp.Slice(s, e)
+        sp.Slice(s, e - s)
 
 let printSpan (sp: Span<int>) =
     let arr = sp.ToArray()
@@ -131,4 +138,4 @@ printSpan sp.[1..2] // |2; 3|]
 
 ## See also
 
-- [Indexed properties](members/indexed-properties.md)
+- [Indexed properties](./members/indexed-properties.md)

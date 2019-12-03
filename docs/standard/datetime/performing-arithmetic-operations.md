@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "DateTime structure, arithmetic operations"
   - "DateTimeOffset structure, arithmetic operations"
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Performing arithmetic operations with dates and times
 
@@ -32,17 +30,17 @@ The <xref:System.DateTime.CompareTo%28System.DateTime%29> method reports that th
 
 More generally, the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property does not affect the results returned by <xref:System.DateTime.Kind> comparison and arithmetic methods (as the comparison of two identical points in time indicates), although it can affect the interpretation of those results. For example:
 
-* The result of any arithmetic operation performed on two date and time values whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> properties both equal <xref:System.DateTimeKind> reflects the actual time interval between the two values. Similarly, the comparison of two such date and time values accurately reflects the relationship between times.
+- The result of any arithmetic operation performed on two date and time values whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> properties both equal <xref:System.DateTimeKind> reflects the actual time interval between the two values. Similarly, the comparison of two such date and time values accurately reflects the relationship between times.
 
-* The result of any arithmetic or comparison operation performed on two date and time values whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> properties both equal <xref:System.DateTimeKind> or on two date and time values with different <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property values reflects the difference in clock time between the two values.
+- The result of any arithmetic or comparison operation performed on two date and time values whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> properties both equal <xref:System.DateTimeKind> or on two date and time values with different <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property values reflects the difference in clock time between the two values.
 
-* Arithmetic or comparison operations on local date and time values do not consider whether a particular value is ambiguous or invalid, nor do they take account of the effect of any adjustment rules that result from the local time zone's transition to or from daylight saving time.
+- Arithmetic or comparison operations on local date and time values do not consider whether a particular value is ambiguous or invalid, nor do they take account of the effect of any adjustment rules that result from the local time zone's transition to or from daylight saving time.
 
-* Any operation that compares or calculates the difference between UTC and a local time includes a time interval equal to the local time zone's offset from UTC in the result.
+- Any operation that compares or calculates the difference between UTC and a local time includes a time interval equal to the local time zone's offset from UTC in the result.
 
-* Any operation that compares or calculates the difference between an unspecified time and either UTC or the local time reflects simple clock time. Time zone differences are not considered, and the result does not reflect the application of time zone adjustment rules.
+- Any operation that compares or calculates the difference between an unspecified time and either UTC or the local time reflects simple clock time. Time zone differences are not considered, and the result does not reflect the application of time zone adjustment rules.
 
-* Any operation that compares or calculates the difference between two unspecified times may include an unknown interval that reflects the difference between the time in two different time zones.
+- Any operation that compares or calculates the difference between two unspecified times may include an unknown interval that reflects the difference between the time in two different time zones.
 
 There are many scenarios in which time zone differences do not affect date and time calculations (for a discussion of some of these, see [Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)) or in which the context of the date and time data defines the meaning of comparison or arithmetic operations.
 
@@ -66,9 +64,9 @@ To illustrate, the transition to daylight saving time in the U.S. Central Standa
 
 The <xref:System.TimeZoneInfo> class includes a number of conversion methods that automatically apply adjustments when they convert times from one time zone to another. These include the following:
 
-* The <xref:System.TimeZoneInfo.ConvertTime%2A> and <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> methods, which convert times between any two time zones.
+- The <xref:System.TimeZoneInfo.ConvertTime%2A> and <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> methods, which convert times between any two time zones.
 
-* The <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods, which convert the time in a particular time zone to UTC, or convert UTC to the time in a particular time zone.
+- The <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods, which convert the time in a particular time zone to UTC, or convert UTC to the time in a particular time zone.
 
 For details, see [Converting times between time zones](../../../docs/standard/datetime/converting-between-time-zones.md).
 

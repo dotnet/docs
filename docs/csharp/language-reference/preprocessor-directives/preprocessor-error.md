@@ -19,7 +19,7 @@ ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b
 ## Remarks  
  A common use of `#error` is in a conditional directive.  
   
- It is also possible to generate a user-defined warning with [#warning](../../../csharp/language-reference/preprocessor-directives/preprocessor-warning.md).  
+ It is also possible to generate a user-defined warning with [#warning](./preprocessor-warning.md).  
   
 ## Example  
   
@@ -40,6 +40,6 @@ class MainClass
   
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Preprocessor Directives](./index.md)

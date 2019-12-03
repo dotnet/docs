@@ -9,14 +9,12 @@ helpviewer_keywords:
   - "cancellation tokens, joining"
   - "LinkedTokenSource, how to"
 ms.assetid: 6f4f3804-2ed7-41b4-a97a-6e32b93f6e05
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Listen for Multiple Cancellation Requests
 This example shows how to listen to two cancellation tokens simultaneously so that you can cancel an operation if either token requests it.  
   
 > [!NOTE]
->  When "Just My Code" is enabled, Visual Studio in some cases will break on the line that throws the exception and display an error message that says "exception not handled by user code." This error is benign. You can press F5 to continue from it, and see the exception-handling behavior that is demonstrated in the examples below. To prevent Visual Studio from breaking on the first error, just uncheck the "Just My Code" checkbox under **Tools, Options, Debugging, General**.  
+> When "Just My Code" is enabled, Visual Studio in some cases will break on the line that throws the exception and display an error message that says "exception not handled by user code." This error is benign. You can press F5 to continue from it, and see the exception-handling behavior that is demonstrated in the examples below. To prevent Visual Studio from breaking on the first error, just uncheck the "Just My Code" checkbox under **Tools, Options, Debugging, General**.  
   
 ## Example  
  In the following example, the <xref:System.Threading.CancellationTokenSource.CreateLinkedTokenSource%2A> method is used to join two tokens into one token. This enables the token to be passed to methods that take just one cancellation token as an argument. The example demonstrates a common scenario in which a method must observe both a token passed in from outside the class, and a token generated inside the class.  

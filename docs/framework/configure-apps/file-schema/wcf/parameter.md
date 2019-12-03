@@ -6,12 +6,13 @@ ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
 # \<parameter>
 Specifies the generic parameter when a declared type is a generic type.  
   
- \<system.runtime.serialization>  
-\<dataContractSerializer>  
-\<declaredTypes> Element  
-\<add> element for \<declaredTypes>  
-\<knownType> Element  
-\<parameter> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.serialization>**](system-runtime-serialization.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<dataContractSerializer>**](datacontractserializer.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<declaredTypes>**](declaredtypes.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-of-declaredtypes-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<knownType>**](knowntype.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<parameter>**  
   
 ## Syntax  
   
@@ -44,18 +45,18 @@ Specifies the generic parameter when a declared type is a generic type.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<knownType>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowntype.md)|Specifies a known type that can be returned by a field or property of the declared type.|  
+|[\<knownType>](knowntype.md)|Specifies a known type that can be returned by a field or property of the declared type.|  
   
 ## Remarks  
- For more information about known types, see [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
+ For more information about known types, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
- See the [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md) for an example of using this element.  
+ See the [\<dataContractSerializer>](datacontractserializer-element.md) for an example of using this element.  
   
  This configuration element cannot have both attributes at the same time. If both attributes are set, a <xref:System.Configuration.ConfigurationErrorsException> occurs.  
   
 ## See also
 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
-- [Data Contract Known Types](../../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)
-- [\<dataContractSerializer>](../../../../../docs/framework/configure-apps/file-schema/wcf/datacontractserializer-element.md)
-- [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-declaredtypes-element.md)
+- [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md)
+- [\<dataContractSerializer>](datacontractserializer-element.md)
+- [\<add>](add-of-declaredtypes-element.md)

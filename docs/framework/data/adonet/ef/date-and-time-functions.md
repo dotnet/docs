@@ -29,4 +29,4 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides date and ti
   
 ## See also
 
-- [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)
+- [SqlClient for Entity Framework Functions](sqlclient-for-ef-functions.md)

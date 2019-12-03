@@ -65,4 +65,4 @@ Create a C# console application project, with `using` directives for the System.
 
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)

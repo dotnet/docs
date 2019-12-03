@@ -15,7 +15,7 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control displays a list o
 ## What You Can Do with the ListView Control  
   
 > [!NOTE]
->  An additional view mode, Tile, is only available on Windows XP and the Windows Server 2003 operating system. For more information, see [How to: Enable Tile View in a Windows Forms ListView Control](how-to-enable-tile-view-in-a-windows-forms-listview-control.md).  
+> An additional view mode, Tile, is only available on Windows XP and the Windows Server 2003 operating system. For more information, see [How to: Enable Tile View in a Windows Forms ListView Control](how-to-enable-tile-view-in-a-windows-forms-listview-control.md).  
   
  The LargeIcon mode displays large icons next to the item text; the items appear in multiple columns if the control is large enough. The SmallIcon mode is the same except that it displays small icons. The List mode displays small icons but is always in a single column. The Details mode displays items in multiple columns. For details, see [How to: Add Columns to the Windows Forms ListView Control](how-to-add-columns-to-the-windows-forms-listview-control.md). The view mode is determined by the <xref:System.Windows.Forms.ListView.View%2A> property. All of the view modes can display images from image lists. For details, see [How to: Display Icons for the Windows Forms ListView Control](how-to-display-icons-for-the-windows-forms-listview-control.md).  
   

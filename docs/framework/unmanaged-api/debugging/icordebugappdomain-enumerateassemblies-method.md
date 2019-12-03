@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7add64f9-19a8-46a9-be62-905d5e7d1bd8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain::EnumerateAssemblies Method
 Gets an enumerator for the assemblies in the application domain.  

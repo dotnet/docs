@@ -1,5 +1,5 @@
 ---
-title: "Sub Expression (Visual Basic)"
+title: "Sub Expression"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [Visual Basic], sub expression"
@@ -12,7 +12,7 @@ Declares the parameters and code that define a subroutine lambda expression.
   
 ## Syntax  
   
-```  
+```vb  
 Sub ( [ parameterlist ] ) statement  
 - or -  
 Sub ( [ parameterlist ] )  

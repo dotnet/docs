@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Environment Variables for the Visual Studio Command Line"
+title: "How to set environment variables for the Visual Studio Command Line"
 ms.date: "09/29/2017"
 f1_keywords:
   - "cs.build.commandline"
@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "compiling source code, from command line"
 ms.assetid: 7ec09480-5612-4f6a-8d00-ad90ea9bca5d
 ---
-# How to: Set Environment Variables for the Visual Studio Command Line
+# How to set environment variables for the Visual Studio Command Line
 
 The VsDevCmd.bat file sets the appropriate environment variables to enable command-line builds.
 
@@ -46,4 +46,4 @@ VsDevCmd.bat -help
 
 ## See also
 
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [Command-line Building With csc.exe](./command-line-building-with-csc-exe.md)

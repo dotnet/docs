@@ -27,7 +27,7 @@ The following code example demonstrates how to use a component that adheres to t
  Any pending operation can be canceled with the **Cancel** button. Multiple selections can be made.  
   
 > [!NOTE]
->  Most numbers will not be prime. If you have not found a prime number after several completed operations, simply start more tasks, and eventually you will find some prime numbers.  
+> Most numbers will not be prime. If you have not found a prime number after several completed operations, simply start more tasks, and eventually you will find some prime numbers.  
   
 ## Example  
  [!code-csharp[System.ComponentModel.AsyncOperationManager#10](../../../samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#10)]

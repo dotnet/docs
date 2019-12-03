@@ -7,7 +7,7 @@ ms.assetid: 299a6987-ae6b-43c6-987f-12b034b583ae
 This sample demonstrates how to catch expected exceptions when using a typed client. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample demonstrates catching and handling the two expected exception types that correct programs must handle: `TimeoutException` and `CommunicationException`.  
   
@@ -42,13 +42,13 @@ catch (CommunicationException exception)
  If an expected exception occurs, the client may or may not be usable afterwards. To determine if the client is still usable, check that the `State` property is `CommunicationState`.Opened. If it is still opened, then it is still usable. Otherwise you should abort the client and release all references to it.  
   
 > [!CAUTION]
->  You may observe that clients that have a session are often no longer usable after an exception, and clients that do not have a session are often still usable after an exception. However, neither of these is guaranteed, so if you want to try to continue using the client after an exception your application should check the `State` property to verify the client is still opened.  
+> You may observe that clients that have a session are often no longer usable after an exception, and clients that do not have a session are often still usable after an exception. However, neither of these is guaranteed, so if you want to try to continue using the client after an exception your application should check the `State` property to verify the client is still opened.  
   
  When you run the sample, the operation responses and exceptions are displayed in the client console window.  
   
  The client process runs two scenarios, each of which attempts to call `Add` followed by `Divide`. The first scenario simulates a network issue by aborting the client before making the call to `Divide`. The second scenario causes a timeout condition by setting the timeout too short for the method to complete. The expected output from the client process is:  
   
-```  
+```output
 Add(100,15.99) = 115.99  
 Simulated network problem occurs...  
 Got System.ServiceModel.CommunicationObjectAbortedException  
@@ -66,10 +66,10 @@ Got System.TimeoutException
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\ExpectedExceptions`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\ExpectedExceptions`  

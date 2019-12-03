@@ -6,7 +6,7 @@ ms.assetid: 165bc2bc-60a1-40e0-9b89-7c68ef979079
 # XML Schema Constraints and Relationships
 In an XML Schema definition language (XSD) schema, you can specify constraints (unique, key, and keyref constraints) and relationships (using the **msdata:Relationship** annotation). This topic explains how the constraints and relationships specified in an XML Schema are interpreted to generate the <xref:System.Data.DataSet>.  
   
- In general, in an XML Schema, you specify the **msdata:Relationship** annotation if you want to generate only relationships in the **DataSet**. For more information, see [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md). You specify constraints (unique, key, and keyref) if you want to generate constraints in the **DataSet**. Note that the key and keyref constraints are also used to generate relationships, as explained later in this topic.  
+ In general, in an XML Schema, you specify the **msdata:Relationship** annotation if you want to generate only relationships in the **DataSet**. For more information, see [Generating DataSet Relations from XML Schema (XSD)](generating-dataset-relations-from-xml-schema-xsd.md). You specify constraints (unique, key, and keyref) if you want to generate constraints in the **DataSet**. Note that the key and keyref constraints are also used to generate relationships, as explained later in this topic.  
   
 ## Generating a Relationship from key and keyref Constraints  
  Instead of specifying the **msdata:Relationship** annotation, you can specify key and keyref constraints, which are used during the XML Schema mapping process to generate not only the constraints but also the relationship in the **DataSet**. However, if you specify `msdata:ConstraintOnly="true"` in the **keyref** element, the **DataSet** will include only the constraints and will not include the relationship.  
@@ -55,7 +55,7 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
   
  The **DataSet** that is generated during the XML Schema mapping process includes the **Order** and **OrderDetail** tables. In addition, the **DataSet** includes relationships and constraints. The following example shows these relationships and constraints. Note that the schema does not specify the **msdata:Relationship** annotation; instead, the key and keyref constraints are used to generate the relation.  
   
-```  
+```text
 ....ConstraintName: OrderNumberKey  
 ....Type: UniqueConstraint  
 ....Table: Order  
@@ -79,7 +79,7 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
 ..Nested: False  
 ```  
   
- In the previous schema example, the **Order** and **OrderDetail** elements are not nested. In the following schema example, these elements are nested. However, no **msdata:Relationship** annotation is specified; therefore, an implicit relation is assumed. For more information, see [Map Implicit Relations Between Nested Schema Elements](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/map-implicit-relations-between-nested-schema-elements.md). The schema also specifies key and keyref constraints.  
+ In the previous schema example, the **Order** and **OrderDetail** elements are not nested. In the following schema example, these elements are nested. However, no **msdata:Relationship** annotation is specified; therefore, an implicit relation is assumed. For more information, see [Map Implicit Relations Between Nested Schema Elements](map-implicit-relations-between-nested-schema-elements.md). The schema also specifies key and keyref constraints.  
   
 ```xml  
 <xs:schema id="MyDataSet" xmlns=""   
@@ -125,14 +125,14 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
   
  The **DataSet** resulting from the XML Schema mapping process includes two tables:  
   
-```  
+```text  
 Order(OrderNumber, EmpNumber, Order_Id)  
 OrderDetail(OrderNumber, ItemNumber, Order_Id)  
 ```  
   
  The **DataSet** also includes the two relationships (one based on the **msdata:relationship** annotation and the other based on the key and keyref constraints) and various constraints. The following example shows the relations and constraints.  
   
-```  
+```text
 ..RelationName: Order_OrderDetail  
 ..ParentTable: Order  
 ..ParentColumns: Order_Id  
@@ -182,5 +182,5 @@ OrderDetail(OrderNumber, ItemNumber, Order_Id)
   
 ## See also
 
-- [Deriving DataSet Relational Structure from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/deriving-dataset-relational-structure-from-xml-schema-xsd.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Deriving DataSet Relational Structure from XML Schema (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)
+- [ADO.NET Overview](../ado-net-overview.md)

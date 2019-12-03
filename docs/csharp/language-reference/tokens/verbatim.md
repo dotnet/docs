@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "@ special character [C#]"
   - "@ language element [C#]"
 ms.assetid: 89bc7e53-85f5-478a-866d-1cca003c4e8c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # @ (C# Reference)
 
@@ -35,6 +33,6 @@ The `@` special character serves as a verbatim identifier. It can be used in the
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [C# Special Characters](../../../csharp/language-reference/tokens/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Special Characters](./index.md)

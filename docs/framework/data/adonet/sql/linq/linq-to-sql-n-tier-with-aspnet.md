@@ -10,4 +10,4 @@ In ASP.NET applications that use [!INCLUDE[vbtecdlinq](../../../../../../include
   
 ## See also
 
-- [N-Tier and Remote Applications with LINQ to SQL](../../../../../../docs/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql.md)
+- [N-Tier and Remote Applications with LINQ to SQL](n-tier-and-remote-applications-with-linq-to-sql.md)

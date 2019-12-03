@@ -2,8 +2,6 @@
 title: "ICorDebugDataTarget2::GetImageFromPointer Method"
 ms.date: "03/30/2017"
 ms.assetid: 939cabe1-b647-4090-b662-eeec23c6c58d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2::GetImageFromPointer Method
 Returns the module base address and size from an address in that module.  
@@ -31,7 +29,7 @@ HRESULT GetImageFromPointer(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

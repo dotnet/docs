@@ -46,7 +46,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
  <xref:System.Windows.Controls.Panel> also defines the <xref:System.Windows.Controls.Panel.OnRender%2A> method, which can be used to override the default presentation behavior of a <xref:System.Windows.Controls.Panel>.  
   
 #### Attached Properties  
- Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] property "wrapper". Attached properties have a specialized syntax in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], which can be seen in several of the examples that follow.  
+ Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional common language runtime (CLR) property "wrapper". Attached properties have a specialized syntax in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], which can be seen in several of the examples that follow.  
   
  One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], which is extremely useful for application layout. For more information, see [Attached Properties Overview](../advanced/attached-properties-overview.md).  
   
@@ -112,7 +112,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 ### DockPanel  
  The <xref:System.Windows.Controls.DockPanel> element uses the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> attached property as set in child content elements to position content along the edges of a container. When <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Controls.Dock.Top> or <xref:System.Windows.Controls.Dock.Bottom>, it positions child elements above or below each other. When <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Controls.Dock.Left> or <xref:System.Windows.Controls.Dock.Right>, it positions child elements to the left or right of each other. The <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property determines the position of the final element added as a child of a <xref:System.Windows.Controls.DockPanel>.  
   
- You can use <xref:System.Windows.Controls.DockPanel> to position a group of related controls, such as a set of buttons. Alternately, you can use it to create a "paned" [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], similar to that found in [!INCLUDE[TLA#tla_outlook](../../../../includes/tlasharptla-outlook-md.md)].  
+ You can use <xref:System.Windows.Controls.DockPanel> to position a group of related controls, such as a set of buttons. Alternately, you can use it to create a "paned" [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], similar to that found in Microsoft Outlook.  
   
 #### Sizing to Content  
  If its <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties are not specified, <xref:System.Windows.Controls.DockPanel> sizes to its content. The size can increase or decrease to accommodate the size of its child elements. However, when these properties are specified and there is no longer room for the next specified child element, <xref:System.Windows.Controls.DockPanel> does not display that child element or subsequent child elements and does not measure subsequent child elements.  
@@ -143,7 +143,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
  Columns and rows defined within a <xref:System.Windows.Controls.Grid> can take advantage of <xref:System.Windows.GridUnitType.Star> sizing in order to distribute remaining space proportionally. When <xref:System.Windows.GridUnitType.Star> is selected as the Height or Width of a row or column, that column or row receives a weighted proportion of remaining available space. This is in contrast to <xref:System.Windows.GridUnitType.Auto>, which will distribute space evenly based on the size of the content within a column or row. This value is expressed as `*` or `2*` when using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. In the first case, the row or column would receive one times the available space, in the second case, two times, and so on. By combining this technique to proportionally distribute space with a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value of `Stretch` it is possible to partition layout space by percentage of screen space. <xref:System.Windows.Controls.Grid> is the only layout panel that can distribute space in this manner.  
   
 #### Defining and Using a Grid  
- The following example demonstrates how to build a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] similar to that found on the Run dialog available on the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Start menu.  
+ The following example demonstrates how to build a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] similar to that found on the Run dialog available on the Windows Start menu.  
   
  [!code-csharp[GridRunDialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GridRunDialog/CSharp/window1.xaml.cs#1)]
  [!code-vb[GridRunDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridRunDialog/VisualBasic/grid_vb.vb#1)]  
@@ -244,7 +244,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Grid>, and <xref:System.Windows.Controls.StackPanel> are all good choices for localizable [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. <xref:System.Windows.Controls.Canvas> is not a good choice, however, because it positions content absolutely, making it difficult to localize.  
   
- For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]s, see the [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md).  
+ For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable user interfaces (UIs)s, see the [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md).  
   
 ## See also
 

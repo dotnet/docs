@@ -48,8 +48,8 @@ Symbols are similar in concept to the CLR type system as represented by the <xre
 
 A semantic model represents all the semantic information for a single source file. You can use it to discover the following: 
 
-* The symbols referenced at a specific location in source.
-* The resultant type of any expression.
-* All diagnostics, which are errors and warnings.
-* How variables flow in and out of regions of source.
-* The answers to more speculative questions.
+- The symbols referenced at a specific location in source.
+- The resultant type of any expression.
+- All diagnostics, which are errors and warnings.
+- How variables flow in and out of regions of source.
+- The answers to more speculative questions.

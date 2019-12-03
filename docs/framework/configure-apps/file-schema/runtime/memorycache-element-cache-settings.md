@@ -8,11 +8,11 @@ helpviewer_keywords:
 ms.assetid: 182a622f-f7cf-472d-9d0b-451d2fd94525
 ---
 # \<memoryCache> Element (Cache Settings)
-Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class. The <xref:System.Runtime.Caching.Configuration.MemoryCacheElement> class defines a [memoryCache](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md) element that you can use to configure the cache. Multiple instances of the <xref:System.Runtime.Caching.MemoryCache> class can be used in a single application. Each `memoryCache` element in the configuration file can contain settings for a named <xref:System.Runtime.Caching.MemoryCache> instance.  
+Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class. The <xref:System.Runtime.Caching.Configuration.MemoryCacheElement> class defines a [memoryCache](memorycache-element-cache-settings.md) element that you can use to configure the cache. Multiple instances of the <xref:System.Runtime.Caching.MemoryCache> class can be used in a single application. Each `memoryCache` element in the configuration file can contain settings for a named <xref:System.Runtime.Caching.MemoryCache> instance.  
   
- \<configuration>  
-\<system.runtime.caching>  
-\<memoryCache>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<memoryCache>**  
   
 ## Syntax  
   
@@ -43,16 +43,17 @@ Defines an element that is used to configure a cache that is based on the <xref:
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<namedCaches>](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)|Contains a collection of configuration settings for the `namedCache` instance.|  
+|[\<namedCaches>](namedcaches-element-cache-settings.md)|Contains a collection of configuration settings for the `namedCache` instance.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<system.runtime.caching>](../../../../../docs/framework/configure-apps/file-schema/runtime/system-runtime-caching-element-cache-settings.md)|Contains types that let you implement output caching in applications that are built into the .NET Framework.|  
+|[\<configuration>](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
+|[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Contains types that let you implement output caching in applications that are built into the .NET Framework.|  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.MemoryCache> class is a concrete implementation of the abstract <xref:System.Runtime.Caching.ObjectCache> class. Instances of the <xref:System.Runtime.Caching.MemoryCache> class can be supplied with configuration information from application configuration files. The [memoryCache](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md) configuration section contains a `namedCaches` configuration collection.  
+ The <xref:System.Runtime.Caching.MemoryCache> class is a concrete implementation of the abstract <xref:System.Runtime.Caching.ObjectCache> class. Instances of the <xref:System.Runtime.Caching.MemoryCache> class can be supplied with configuration information from application configuration files. The [memoryCache](memorycache-element-cache-settings.md) configuration section contains a `namedCaches` configuration collection.  
   
  When a memory-based cache object is initialized, it first tries to find a `namedCaches` entry that matches the name in the parameter that is passed to the memory cache constructor. If a `namedCaches` entry is found, the polling and memory-management information are retrieved from the configuration file.  
   
@@ -87,5 +88,5 @@ Defines an element that is used to configure a cache that is based on the <xref:
 ## See also
 
 - <xref:System.Runtime.Caching.MemoryCache>
-- [\<system.runtime.caching> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/system-runtime-caching-element-cache-settings.md)
-- [\<namedCaches> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/namedcaches-element-cache-settings.md)
+- [\<system.runtime.caching> Element (Cache Settings)](system-runtime-caching-element-cache-settings.md)
+- [\<namedCaches> Element (Cache Settings)](namedcaches-element-cache-settings.md)

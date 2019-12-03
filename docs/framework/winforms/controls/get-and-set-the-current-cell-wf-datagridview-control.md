@@ -14,7 +14,7 @@ ms.assetid: b0e41e57-493a-4bd0-9376-a6f76723540c
 Interaction with the <xref:System.Windows.Forms.DataGridView> often requires that you programmatically discover which cell is currently active. You may also need to change the current cell. You can perform these tasks with the <xref:System.Windows.Forms.DataGridView.CurrentCell%2A> property.  
   
 > [!NOTE]
->  You cannot set the current cell in a row or column that has its <xref:System.Windows.Forms.DataGridViewBand.Visible%2A> property set to `false`.  
+> You cannot set the current cell in a row or column that has its <xref:System.Windows.Forms.DataGridViewBand.Visible%2A> property set to `false`.  
   
  Depending on the <xref:System.Windows.Forms.DataGridView> control's selection mode, changing the current cell can change the selection. For more information, see [Selection Modes in the Windows Forms DataGridView Control](selection-modes-in-the-windows-forms-datagridview-control.md).  
   

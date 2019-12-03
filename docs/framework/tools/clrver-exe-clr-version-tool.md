@@ -11,13 +11,13 @@ ms.author: "mairaw"
 # Clrver.exe (CLR Version Tool)
 The CLR Version tool (Clrver.exe) reports all the installed versions of the common language runtime (CLR) on the computer.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 clrver [option]  
 ```  
   
@@ -33,7 +33,7 @@ clrver [option]
  If you call Clrver.exe with no options, it displays all installed CLR versions. If you specify a PID for another user, you must have administrative permissions to obtain the version information.  
   
 > [!NOTE]
->  In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute code that requires administrative permission, you must first elevate your privileges from standard user to administrator. You can do this when you start the command prompt by right-clicking the command prompt icon and indicating that you want to run as an administrator.  
+> In Windows Vista and later, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute code that requires administrative permission, you must first elevate your privileges from standard user to administrator. You can do this when you start the command prompt by right-clicking the command prompt icon and indicating that you want to run as an administrator.  
   
  Attempting to determine the CLR version for SYSTEM, LOCAL SERVICE, and NETWORK SERVICE processes results in a message indicating that the PID doesn't exist.  
   
@@ -52,5 +52,5 @@ clrver [option]
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

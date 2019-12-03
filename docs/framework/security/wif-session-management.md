@@ -14,7 +14,7 @@ When a client first tries to access a protected resource that is hosted by a rel
  If a new session token is issued with the session ID of the original session token, <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler?displayProperty=nameWithType> does not update the session token in the token cache. You should always instantiate a session token with a unique session ID.  
   
 > [!NOTE]
->  Session.SecurityTokenHandler.ReadToken throws a <xref:System.Xml.XmlException> exception if it receives invalid input; for example, if the cookie that contains the session token is corrupted. We recommend that you catch this exception and provide application-specific behavior.  
+> Session.SecurityTokenHandler.ReadToken throws a <xref:System.Xml.XmlException> exception if it receives invalid input; for example, if the cookie that contains the session token is corrupted. We recommend that you catch this exception and provide application-specific behavior.  
   
  If a protected Web page contains lots of resources (such as small graphics) that are also in the protected domain, the client must re-authenticate itself to the relying party to download each of those resources. Use of a session authentication token avoids the need to authenticate to the STS for each request, but it still means that many cookies are being sent over. You might want to set up the Web page so that the important data and resources are stored in the protected domain while minor items are stored in an unprotected domain and linked to from the main Web page. Also, set the cookie path to reference only the protected domain.  
   

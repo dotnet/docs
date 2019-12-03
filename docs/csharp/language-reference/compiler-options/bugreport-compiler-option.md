@@ -49,6 +49,6 @@ Specifies that debug information should be placed in a file for later analysis.
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
-- [-errorreport (C# Compiler Options)](../../../csharp/language-reference/compiler-options/errorreport-compiler-option.md)
+- [C# Compiler Options](./index.md)
+- [-errorreport (C# Compiler Options)](./errorreport-compiler-option.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

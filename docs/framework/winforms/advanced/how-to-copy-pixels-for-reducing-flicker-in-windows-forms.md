@@ -22,7 +22,7 @@ When you animate a simple graphic, users can sometimes encounter flicker or othe
  In the example below, a shape is drawn on the form in its <xref:System.Windows.Forms.Control.Paint> event handler. Then, the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method is used to duplicate the shape.  
   
 > [!NOTE]
->  Setting the form's <xref:System.Windows.Forms.Control.DoubleBuffered%2A> property to `true` will make graphics-based code in the <xref:System.Windows.Forms.Control.Paint> event be double-buffered. While this will not have any discernible performance gains when using the code below, it is something to keep in mind when working with more complex graphics-manipulation code.  
+> Setting the form's <xref:System.Windows.Forms.Control.DoubleBuffered%2A> property to `true` will make graphics-based code in the <xref:System.Windows.Forms.Control.Paint> event be double-buffered. While this will not have any discernible performance gains when using the code below, it is something to keep in mind when working with more complex graphics-manipulation code.  
   
 ## Example  
   

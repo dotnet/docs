@@ -46,14 +46,14 @@ A .NET Framework data provider is used for connecting to a database, executing c
  The .NET Framework Data Provider for SQL Server (SqlClient) uses its own protocol to communicate with SQL Server. It is lightweight and performs well because it is optimized to access a SQL Server directly without adding an OLE DB or Open Database Connectivity (ODBC) layer. The following illustration contrasts the .NET Framework Data Provider for SQL Server with the .NET Framework Data Provider for OLE DB. The .NET Framework Data Provider for OLE DB communicates to an OLE DB data source through both the OLE DB Service component, which provides connection pooling and transaction services, and the OLE DB provider for the data source.  
   
 > [!NOTE]
->  The .NET Framework Data Provider for ODBC has a similar architecture to the .NET Framework Data Provider for OLE DB; for example, it calls into an ODBC Service Component.  
+> The .NET Framework Data Provider for ODBC has a similar architecture to the .NET Framework Data Provider for OLE DB; for example, it calls into an ODBC Service Component.  
   
- ![Data providers](../../../../docs/framework/data/adonet/media/netdataproviders-bpuedev11.gif "NETDataProviders_bpuedev11")  
+ ![Data providers](./media/netdataproviders-bpuedev11.gif "NETDataProviders_bpuedev11")  
 Comparison of the .NET Framework Data Provider for SQL Server and the .NET Framework Data Provider for OLE DB  
   
  The .NET Framework Data Provider for SQL Server classes are located in the <xref:System.Data.SqlClient> namespace.  
   
- The .NET Framework Data Provider for SQL Server supports both local and distributed transactions. For distributed transactions, the .NET Framework Data Provider for SQL Server, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services or <xref:System.Transactions>. For more information, see [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md).  
+ The .NET Framework Data Provider for SQL Server supports both local and distributed transactions. For distributed transactions, the .NET Framework Data Provider for SQL Server, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services or <xref:System.Transactions>. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  The following code example shows how to include the `System.Data.SqlClient` namespace in your applications.  
   
@@ -66,7 +66,7 @@ using System.Data.SqlClient;
 ```  
   
 ## .NET Framework Data Provider for OLE DB  
- The .NET Framework Data Provider for OLE DB (OleDb) uses native OLE DB through COM interop to enable data access. The .NET Framework Data Provider for OLE DB supports both local and distributed transactions. For distributed transactions, the .NET Framework Data Provider for OLE DB, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services. For more information, see [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md).  
+ The .NET Framework Data Provider for OLE DB (OleDb) uses native OLE DB through COM interop to enable data access. The .NET Framework Data Provider for OLE DB supports both local and distributed transactions. For distributed transactions, the .NET Framework Data Provider for OLE DB, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  The following table shows the providers that have been tested with ADO.NET.  
   
@@ -77,7 +77,7 @@ using System.Data.SqlClient;
 |Microsoft.Jet.OLEDB.4.0|OLE DB provider for Microsoft Jet|  
   
 > [!NOTE]
->  Using an Access (Jet) database as a data source for multithreaded applications, such as ASP.NET applications, is not recommended. If you must use Jet as a data source for an ASP.NET application, realize that ASP.NET applications connecting to an Access database can encounter connection problems.  
+> Using an Access (Jet) database as a data source for multithreaded applications, such as ASP.NET applications, is not recommended. If you must use Jet as a data source for an ASP.NET application, realize that ASP.NET applications connecting to an Access database can encounter connection problems.  
   
  The .NET Framework Data Provider for OLE DB does not support OLE DB version 2.5 interfaces. OLE DB Providers that require support for OLE DB 2.5 interfaces will not function correctly with the .NET Framework Data Provider for OLE DB. This includes the Microsoft OLE DB provider for Exchange and the Microsoft OLE DB provider for Internet Publishing.  
   
@@ -94,7 +94,7 @@ using System.Data.OleDb;
 ```  
   
 ## .NET Framework Data Provider for ODBC  
- The .NET Framework Data Provider for ODBC (Odbc) uses the native ODBC Driver Manager (DM) to enable data access. The ODBC data provider supports both local and distributed transactions. For distributed transactions, the ODBC data provider, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services. For more information, see [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md).  
+ The .NET Framework Data Provider for ODBC (Odbc) uses the native ODBC Driver Manager (DM) to enable data access. The ODBC data provider supports both local and distributed transactions. For distributed transactions, the ODBC data provider, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  The following table shows the ODBC drivers tested with ADO.NET.  
   
@@ -117,10 +117,10 @@ using System.Data.Odbc;
 ```  
   
 > [!NOTE]
->  The .NET Framework Data Provider for ODBC requires MDAC 2.6 or a later version, and MDAC 2.8 SP1 is recommended. You can download MDAC 2.8 SP1 from the [Data Access and Storage Developer Center](https://go.microsoft.com/fwlink/?linkid=4173).  
+> The .NET Framework Data Provider for ODBC requires MDAC 2.6 or a later version, and MDAC 2.8 SP1 is recommended. You can download MDAC 2.8 SP1 from the [Data Access and Storage Developer Center](https://go.microsoft.com/fwlink/?linkid=4173).  
   
 ## .NET Framework Data Provider for Oracle  
- The .NET Framework Data Provider for Oracle (OracleClient) enables data access to Oracle data sources through Oracle client connectivity software. The data provider supports Oracle client software version 8.1.7 or a later version. The data provider supports both local and distributed transactions. For more information, see [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md).  
+ The .NET Framework Data Provider for Oracle (OracleClient) enables data access to Oracle data sources through Oracle client connectivity software. The data provider supports Oracle client software version 8.1.7 or a later version. The data provider supports both local and distributed transactions. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  The .NET Framework Data Provider for Oracle requires Oracle client software (version 8.1.7 or a later version) on the system before you can connect to an Oracle data source.  
   
@@ -153,6 +153,5 @@ using System.Data.OracleClient;
   
 ## See also
 
-- [ADO.NET Overview](../../../../docs/framework/data/adonet/ado-net-overview.md)
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](ado-net-overview.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)

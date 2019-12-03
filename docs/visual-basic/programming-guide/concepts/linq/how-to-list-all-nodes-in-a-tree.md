@@ -1,5 +1,5 @@
 ---
-title: "How to: List All Nodes in a Tree (Visual Basic)"
+title: "How to: List All Nodes in a Tree"
 ms.date: 07/20/2015
 ms.assetid: e19289c4-26d1-435b-b0db-fb8bc856b753
 ---
@@ -33,7 +33,7 @@ Sometimes it is helpful to list all nodes in a tree. This can be useful when lea
   
  The following is the list of nodes in the above XML tree, expressed as XPath expressions:  
   
-```  
+```console
 /processing-instruction()  
 /Root  
 /Root/@AttName  

@@ -7,16 +7,14 @@ helpviewer_keywords:
   - "GetHashCode method"
   - "hash codes, calculating"
 ms.assetid: 3a5f38d1-ebc8-44de-aaeb-2929f6e6b48f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<NetFx45_CultureAwareComparerGetHashCode_LongStrings> Element
 
 Specifies whether the runtime uses a fixed amount of memory to calculate hash codes for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method.
 
-\<configuration>\
-\<runtime>\
-\<NetFx45_CultureAwareComparerGetHashCode_LongStrings>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<NetFx45_CultureAwareComparerGetHashCode_LongStrings>**  
 
 ## Syntax
 
@@ -62,5 +60,5 @@ By default, the common language runtime allocates a variable amount of memory fo
 ## See also
 
 - <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType>
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

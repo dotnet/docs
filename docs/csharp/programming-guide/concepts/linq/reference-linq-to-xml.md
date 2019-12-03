@@ -15,4 +15,4 @@ This topic contains links to the LINQ to XML reference topics.
   
 ## See also
 
-- [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md)
+- [LINQ to XML (C#)](./linq-to-xml-overview.md)

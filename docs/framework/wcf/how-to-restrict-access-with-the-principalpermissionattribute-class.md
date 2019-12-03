@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 5162f5c4-8781-4cc4-9425-bb7620eaeaf4
 ---
 # How to: Restrict Access with the PrincipalPermissionAttribute Class
-Controlling the access to resources on a Windows-domain computer is a basic security task. For example, only certain users should be able to view sensitive data, such as payroll information. This topic explains how to restrict access to a method by demanding that the user belong to a predefined group. For a working sample, see [Authorizing Access to Service Operations](../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md).  
+Controlling the access to resources on a Windows-domain computer is a basic security task. For example, only certain users should be able to view sensitive data, such as payroll information. This topic explains how to restrict access to a method by demanding that the user belong to a predefined group. For a working sample, see [Authorizing Access to Service Operations](./samples/authorizing-access-to-service-operations.md).  
   
  The task consists of two separate procedures. The first creates the group and populates it with users. The second applies the <xref:System.Security.Permissions.PrincipalPermissionAttribute> class to specify the group.  
   
@@ -33,7 +33,7 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
   
 ### To demand user membership  
   
-1. Open the Windows Communication Foundation (WCF) code file that contains the implemented service contract code. For more information about implementing a contract, see [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md).  
+1. Open the Windows Communication Foundation (WCF) code file that contains the implemented service contract code. For more information about implementing a contract, see [Implementing Service Contracts](implementing-service-contracts.md).  
   
 2. Apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to each method that must be restricted to a specific group. Set the <xref:System.Security.Permissions.SecurityAttribute.Action%2A> property to <xref:System.Security.Permissions.SecurityAction.Demand> and the <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A> property to the name of the group. For example:  
   
@@ -41,12 +41,12 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
      [!code-vb[c_PrincipalPermissionAttribute#1](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_principalpermissionattribute/vb/source.vb#1)]  
   
     > [!NOTE]
-    >  If you apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to a contract a <xref:System.Security.SecurityException> will be thrown. You can only apply the attribute at the method level.  
+    > If you apply the <xref:System.Security.Permissions.PrincipalPermissionAttribute> attribute to a contract a <xref:System.Security.SecurityException> will be thrown. You can only apply the attribute at the method level.  
   
 ## Using a Certificate to Control Access to a Method  
  You can also use the `PrincipalPermissionAttribute` class to control access to a method if the client credential type is a certificate. To do this, you must have the certificate's subject and thumbprint.  
   
- To examine a certificate for its properties, see [How to: View Certificates with the MMC Snap-in](../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md). To find the thumbprint value, see [How to: Retrieve the Thumbprint of a Certificate](../../../docs/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md).  
+ To examine a certificate for its properties, see [How to: View Certificates with the MMC Snap-in](./feature-details/how-to-view-certificates-with-the-mmc-snap-in.md). To find the thumbprint value, see [How to: Retrieve the Thumbprint of a Certificate](./feature-details/how-to-retrieve-the-thumbprint-of-a-certificate.md).  
   
 #### To control access using a certificate  
   
@@ -83,6 +83,6 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
 - <xref:System.Security.Permissions.SecurityAction.Demand>
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A>
-- [Authorizing Access to Service Operations](../../../docs/framework/wcf/samples/authorizing-access-to-service-operations.md)
-- [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Implementing Service Contracts](../../../docs/framework/wcf/implementing-service-contracts.md)
+- [Authorizing Access to Service Operations](./samples/authorizing-access-to-service-operations.md)
+- [Security Overview](./feature-details/security-overview.md)
+- [Implementing Service Contracts](implementing-service-contracts.md)

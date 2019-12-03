@@ -35,7 +35,7 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
  You can also set other properties, including the type of key used as a proof key in the issued token, the algorithm suite to use between the client and the service, whether to negotiate or explicitly specify the service credential, any specific claims the service expects the issued token to contain, and any additional XML elements that must be added to the request the client sends to the security token service.
 
 > [!NOTE]
->  The `NegotiateServiceCredential` property is only relevant when the `SecurityMode` is set to `Message`. If `SecurityMode` is set to `TransportWithMessageCredential`, then the `NegotiateServiceCredential` property is ignored.
+> The `NegotiateServiceCredential` property is only relevant when the `SecurityMode` is set to `Message`. If `SecurityMode` is set to `TransportWithMessageCredential`, then the `NegotiateServiceCredential` property is ignored.
 
 ## To configure a WSFederationHttpBinding in code
 
@@ -63,9 +63,9 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
 
 1. Create a [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) as a child of the [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element in the application configuration file.
 
-2. Create a [\<binding>](../../../../docs/framework/misc/binding.md) element as a child of [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and set the `name` attribute to an appropriate value.
+2. Create a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element as a child of [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and set the `name` attribute to an appropriate value.
 
-3. Create a `<security>` element as a child of the [\<binding>](../../../../docs/framework/misc/binding.md) element.
+3. Create a `<security>` element as a child of the [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element.
 
 4. Set the `mode` attribute on the `<security>` element to a value of `Message` or `TransportWithMessageCredential`, as required.
 
@@ -85,7 +85,7 @@ In Windows Communication Foundation (WCF), the <xref:System.ServiceModel.WSFeder
 
 12. For more information, see [Service Identity and Authentication](service-identity-and-authentication.md).
 
-13. Required on the client if no local issuer is specified; not used on the service. Create a [\<binding>](../../../../docs/framework/misc/binding.md) element in the bindings section that can be used to communicate with the security token service. For more information about creating a binding, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).
+13. Required on the client if no local issuer is specified; not used on the service. Create a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element in the bindings section that can be used to communicate with the security token service. For more information about creating a binding, see [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).
 
 14. Specify the binding created in the previous step by setting the `binding` and `bindingConfiguration` attributes of the `<issuer>` element.
 

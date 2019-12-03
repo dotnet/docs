@@ -1,5 +1,5 @@
 ---
-title: "XML Child Axis Property (Visual Basic)"
+title: "XML Child Axis Property"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlPropertyChildAxis"
@@ -16,7 +16,7 @@ Provides access to the children of one of the following: an <xref:System.Xml.Lin
   
 ## Syntax  
   
-```  
+```vb  
 object.<child>  
 ```  
   

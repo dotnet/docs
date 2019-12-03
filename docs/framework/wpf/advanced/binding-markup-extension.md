@@ -13,7 +13,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
   
 ## Binding Expression Usage  
   
-```  
+```xaml  
 <object property="{Binding}" .../>  
 -or-  
 <object property="{Binding  bindProp1=value1[, bindPropN=valueN]*}" ...  
@@ -101,12 +101,12 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 ## Remarks  
   
 > [!IMPORTANT]
->  In terms of dependency property precedence, a `Binding` expression is equivalent to a locally set value. If you set a local value for a property that previously had a `Binding` expression, the `Binding` is completely removed. For details, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).  
+> In terms of dependency property precedence, a `Binding` expression is equivalent to a locally set value. If you set a local value for a property that previously had a `Binding` expression, the `Binding` is completely removed. For details, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).  
   
  Describing data binding at a basic level is not covered in this topic. See [Data Binding Overview](../data/data-binding-overview.md).  
   
 > [!NOTE]
->  <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding> do not support a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] extension syntax. You would instead use property elements. See reference topics for <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding>.  
+> <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding> do not support a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] extension syntax. You would instead use property elements. See reference topics for <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding>.  
   
  Boolean values for XAML are case insensitive. For example you could specify either `{Binding NotifyOnValidationError=true}` or `{Binding NotifyOnValidationError=True}`.  
   
@@ -120,5 +120,5 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 
 - <xref:System.Windows.Data.Binding>
 - [Data Binding Overview](../data/data-binding-overview.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

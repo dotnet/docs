@@ -12,7 +12,7 @@ ms.assetid: ea8bd66a-5ed6-491b-b9da-63873e275a0a
 This topic provides links to <xref:System.Windows.Forms.DataGridView>-related code examples available in the documentation.  
   
 > [!NOTE]
->  A link always jumps to the top of the topic in which the code example is found.  
+> A link always jumps to the top of the topic in which the code example is found.  
   
  Additional code examples are available in the class library reference documentation. For a list of the principal classes and interfaces associated with the <xref:System.Windows.Forms.DataGridView> control, see the table in [DataGridView Control Technology Summary](datagridview-control-technology-summary-windows-forms.md).  
   

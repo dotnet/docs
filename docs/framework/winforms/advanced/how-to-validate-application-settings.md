@@ -55,7 +55,7 @@ The following procedures show how to test for a valid birth date using either th
 
     -or-
 
-  - If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](~/docs/visual-basic/language-reference/objects/my-settings-object.md).
+  - If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](../../../visual-basic/language-reference/objects/my-settings-object.md).
 
     -or-
 
@@ -97,9 +97,11 @@ The following procedures were written under the assumption that the application 
     ```csharp
     private void MyCustomSettings_SettingChanging(Object sender, SettingChangingEventArgs e)
     {
-        if (e.SettingName.Equals("DateOfBirth")) {
-            Date newDate = (Date)e.NewValue;
-            If (newDate > Date.Now) {
+        if (e.SettingName.Equals("DateOfBirth"))
+        {
+            var newDate = (DateTime)e.NewValue;
+            if (newDate > DateTime.Now)
+            {
                 e.Cancel = true;
                 // Inform the user.
             }

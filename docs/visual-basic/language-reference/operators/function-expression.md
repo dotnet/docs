@@ -1,5 +1,5 @@
 ---
-title: "Function Expression (Visual Basic)"
+title: "Function Expression"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Function expression [Visual Basic]"
@@ -12,7 +12,7 @@ Declares the parameters and code that define a function lambda expression.
   
 ## Syntax  
   
-```  
+```vb  
 Function ( [ parameterlist ] ) expression  
 - or -  
 Function ( [ parameterlist ] )  

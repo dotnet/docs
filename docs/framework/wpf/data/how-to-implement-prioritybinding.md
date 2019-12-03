@@ -21,7 +21,7 @@ ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
  The get accessor of `SlowestDP` waits for 5 seconds before returning the value of the `_slowestDP` data member.  
   
 > [!NOTE]
->  This example is for demonstration purposes only. The [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. For more information, see [Choosing Between Properties and Methods](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229054(v=vs.100)).  
+> This example is for demonstration purposes only. The .NET guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. For more information, see [Choosing Between Properties and Methods](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229054(v=vs.100)).  
   
  [!code-csharp[PriorityBinding#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PriorityBinding/CSharp/Window1.xaml.cs#1)]
  [!code-vb[PriorityBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PriorityBinding/VisualBasic/AsyncDataSource.vb#1)]  
@@ -41,5 +41,5 @@ ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
 ## See also
 
 - <xref:System.Windows.Data.Binding.IsAsync%2A?displayProperty=nameWithType>
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

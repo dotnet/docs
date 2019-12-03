@@ -2,8 +2,6 @@
 title: "ICorDebugProcess6 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 34a10ac2-882c-4797-8369-f120e8e640c7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6 Interface
 Logically extends the ICorDebugProcess interface to enable features such as decoding managed debug events that are encoded in native exception debug events and virtual module splitting.  
@@ -22,7 +20,7 @@ Logically extends the ICorDebugProcess interface to enable features such as deco
 ## Remarks  
   
 > [!NOTE]
->  The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
+> The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

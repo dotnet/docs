@@ -19,7 +19,7 @@ This topic is the third of three topics that discusses how to implement a discov
 3. Add the GeneratedClient.cs found at the bottom of this topic to the project.  
   
     > [!NOTE]
-    >  This file is usually generated using a tool such as Svcutil.exe. It is provided in this topic to simplify the task.  
+    > This file is usually generated using a tool such as Svcutil.exe. It is provided in this topic to simplify the task.  
   
 4. Open the Program.cs file and add the following method. This method takes an endpoint address and uses it to initialize the service client (proxy).  
   

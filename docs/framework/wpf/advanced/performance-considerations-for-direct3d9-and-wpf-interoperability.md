@@ -10,7 +10,7 @@ ms.assetid: ea8baf91-12fe-4b44-ac4d-477110ab14dd
 You can host Direct3D9 content by using the <xref:System.Windows.Interop.D3DImage> class. Hosting Direct3D9 content can affect the performance of your application. This topic describes best practices to optimize performance when hosting Direct3D9 content in a Windows Presentation Foundation (WPF) application. These best practices include how to use <xref:System.Windows.Interop.D3DImage> and best practices when you are using Windows Vista, Windows XP, and multi-monitor displays.  
   
 > [!NOTE]
->  For code examples that demonstrate these best practices, see [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md).  
+> For code examples that demonstrate these best practices, see [WPF and Direct3D9 Interoperation](wpf-and-direct3d9-interoperation.md).  
   
 ## Use D3DImage Sparingly  
  Direct3D9 content hosted in a <xref:System.Windows.Interop.D3DImage> instance does not render as fast as in a pure Direct3D application. Copying the surface and flushing the command buffer can be costly operations. As the number of <xref:System.Windows.Interop.D3DImage> instances increases, more flushing occurs, and performance degrades. Therefore, you should use <xref:System.Windows.Interop.D3DImage> sparingly.  
@@ -19,7 +19,7 @@ You can host Direct3D9 content by using the <xref:System.Windows.Interop.D3DImag
  For best performance on Windows Vista with a display that is configured to use the Windows Display Driver Model (WDDM), create your Direct3D9 surface on an `IDirect3DDevice9Ex` device. This enables surface sharing. The video card must support the `D3DDEVCAPS2_CAN_STRETCHRECT_FROM_TEXTURES` and `D3DCAPS2_CANSHARERESOURCE` driver capabilities on Windows Vista. Any other settings cause the surface to be copied through software, which reduces performance significantly.  
   
 > [!NOTE]
->  If Windows Vista has a display that is configured to use the Windows XP Display Driver Model (XDDM), the surface is always copied through software, regardless of settings. With the proper settings and video card, you will see better performance on Windows Vista when you use the WDDM because surface copies are performed in hardware.  
+> If Windows Vista has a display that is configured to use the Windows XP Display Driver Model (XDDM), the surface is always copied through software, regardless of settings. With the proper settings and video card, you will see better performance on Windows Vista when you use the WDDM because surface copies are performed in hardware.  
   
 ## Best Practices on Windows XP  
  For best performance on Windows XP, which uses the Windows XP Display Driver Model (XDDM), create a lockable surface that behaves correctly when the `IDirect3DSurface9::GetDC` method is called. Internally, the `BitBlt` method transfers the surface across devices in hardware. The `GetDC` method always works on XRGB surfaces. However, if the client computer is running Windows XP with SP3 or SP2, and if the client also has the hotfix for the layered-window feature, this method only works on ARGB surfaces. The video card must support the `D3DDEVCAPS2_CAN_STRETCHRECT_FROM_TEXTURES` driver capability.  
@@ -29,7 +29,7 @@ You can host Direct3D9 content by using the <xref:System.Windows.Interop.D3DImag
  If you are developing for Windows Vista and Windows XP, test the performance on Windows XP. Running out of video memory on Windows XP is a concern. In addition, <xref:System.Windows.Interop.D3DImage> on Windows XP uses more video memory and bandwidth than Windows Vista WDDM, due to a necessary extra video memory copy. Therefore, you can expect performance to be worse on Windows XP than on Windows Vista for the same video hardware.  
   
 > [!NOTE]
->  XDDM is available on both Windows XP and Windows Vista; however, WDDM is available only on Windows Vista.  
+> XDDM is available on both Windows XP and Windows Vista; however, WDDM is available only on Windows Vista.  
   
 ## General Best Practices  
  When you create the device, use the `D3DCREATE_MULTITHREADED` creation flag. This reduces performance, but the WPF rendering system calls methods on this device from another thread. Be sure to follow the locking protocol correctly, so that no two threads access the device at the same time.  

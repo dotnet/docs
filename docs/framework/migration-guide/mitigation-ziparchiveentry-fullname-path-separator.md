@@ -8,8 +8,6 @@ helpviewer_keywords:
   - ".NET Framework 4.6.1 retargeting changes"
   - "retargeting changes"
 ms.assetid: 8d575722-4fb6-49a2-8a06-f72d62dc3766
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: ZipArchiveEntry.FullName Path Separator
 Starting with apps that target the .NET Framework 4.6.1, the path separator used in the <xref:System.IO.Compression.ZipArchiveEntry.FullName%2A?displayProperty=nameWithType> property has changed from the backslash ("\\") used in previous versions of the .NET Framework to a forward slash ("/").   <xref:System.IO.Compression.ZipArchiveEntry?displayProperty=nameWithType> objects are created by calling one of the overloads of the <xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=nameWithType> method.  
@@ -22,7 +20,7 @@ Starting with apps that target the .NET Framework 4.6.1, the path separator used
  The impact of this change on .ZIP files that are decompressed on the Windows operating system by APIs in the .NET Framework <xref:System.IO> namespace should be minimal, since these APIs can seamlessly handle either a slash ("/") or a backslash ("\\") as the path separator character.  
   
 ## Mitigation  
- If this behavior is undesirable, you can opt out of by adding a configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your application configuration file. The following shows both the `<runtime>` section and the opt-out switch.  
+ If this behavior is undesirable, you can opt out of by adding a configuration setting to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of your application configuration file. The following shows both the `<runtime>` section and the opt-out switch.  
   
 ```xml  
 <runtime>  
@@ -30,7 +28,7 @@ Starting with apps that target the .NET Framework 4.6.1, the path separator used
 </runtime>  
 ```  
   
- In addition, apps that target previous versions of the .NET Framework but are running on the .NET Framework 4.6.1 and later versions can opt in to this behavior by adding a configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file. The following shows both the `<runtime>` section and the opt-in switch.  
+ In addition, apps that target previous versions of the .NET Framework but are running on the .NET Framework 4.6.1 and later versions can opt in to this behavior by adding a configuration setting to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file. The following shows both the `<runtime>` section and the opt-in switch.  
   
 ```xml  
 <runtime>  
@@ -40,5 +38,5 @@ Starting with apps that target the .NET Framework 4.6.1, the path separator used
   
 ## See also
 
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-1.md)
-- [Application Compatibility in 4.6.1](../../../docs/framework/migration-guide/application-compatibility-in-the-net-framework-4-6-1.md)
+- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-1.md)
+- [Application compatibility](application-compatibility.md)

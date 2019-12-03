@@ -15,7 +15,7 @@ Specifies where to align the sections of the output file.
   
 ## Syntax  
   
-```  
+```console  
 -filealign:number  
 ```  
   
@@ -31,7 +31,7 @@ Specifies where to align the sections of the output file.
  By specifying the section size, you can change the size of the output file. Modifying section size may be useful for programs that will run on smaller devices.  
   
 > [!NOTE]
->  The `-filealign` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-filealign` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## See also
 

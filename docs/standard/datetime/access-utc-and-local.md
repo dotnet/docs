@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "time zones [.NET Framework], retrieving"
   - "time zones [.NET Framework], UTC"
 ms.assetid: 961fb70b-83f0-4dab-a042-cb5fcd817cf5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Access the predefined UTC and local time zone objects
 
@@ -45,7 +43,7 @@ You should always access the local time zone through the <xref:System.TimeZoneIn
 
 This example requires:
 
-* That the <xref:System> namespace be imported with the `using` statement (required in C# code).
+- That the <xref:System> namespace be imported with the `using` statement (required in C# code).
 
 ## See also
 

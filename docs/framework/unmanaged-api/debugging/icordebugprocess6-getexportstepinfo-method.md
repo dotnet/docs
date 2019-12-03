@@ -2,8 +2,6 @@
 title: "ICorDebugProcess6::GetExportStepInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: a927e0ac-f110-426d-bbec-9377a29c8f17
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::GetExportStepInfo Method
 Provides information on runtime exported functions to help step through managed code.  
@@ -39,7 +37,7 @@ HRESULT GetExportStepInfo(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

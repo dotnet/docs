@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1bdeccb6-0698-4c97-ad69-eae2b69e59f1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetaHostPolicy Interface
 Provides the [GetRequestedRuntime](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-getrequestedruntime-method.md) method, which returns a pointer to a common language runtime (CLR) interface based on a policy criteria, managed assembly, version and configuration file.  
@@ -36,7 +34,7 @@ HRESULT hr = CLRCreateInstance(CLSID_CLRMetaHostPolicy,
 ```  
   
 > [!NOTE]
->  This interface does not actually load or activate the CLR, but simply returns the preferred CLR version based on the available versions that are installed or loaded.  
+> This interface does not actually load or activate the CLR, but simply returns the preferred CLR version based on the available versions that are installed or loaded.  
   
  The .NET Framework 4 hosting API consolidates policies so that hosts with specific needs may use basic functionality without incurring unintended penalties. For example, many of the MSCorEE.dll exports will bind to a specific CLR, although a method might not logically require it. The [METAHOST_POLICY_FLAGS](../../../../docs/framework/unmanaged-api/hosting/metahost-policy-flags-enumeration.md) enumeration provides binding policies that are common to the majority of hosts.  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Single Child Element (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve a Single Child Element (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 0033e258-d9c4-4569-86f6-79b7c06d1204
 ---
@@ -30,7 +30,7 @@ Console.WriteLine(e)
 ```  
   
 ## Example  
- The following example shows the same code for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same code for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md).  
   

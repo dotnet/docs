@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Collection of Elements (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve a Collection of Elements (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 2269f9de-8fb9-4666-b8a1-a4e754fa6a81
 ---
@@ -24,7 +24,7 @@ Next
   
  This example produces the following output.  
   
-```  
+```console  
 Name: Address  
 Name: Address  
 Name: DeliveryNotes  

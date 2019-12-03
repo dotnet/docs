@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "application domains, configuring"
   - "ApplicationBase property"
 ms.assetid: 07ea8438-7a34-49f0-a7e8-3d6ff7e4a482
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Configure an Application Domain
 You can provide the common language runtime with configuration information for a new application domain using the <xref:System.AppDomainSetup> class. When creating your own application domains, the most important property is <xref:System.AppDomainSetup.ApplicationBase%2A>. The other **AppDomainSetup** properties are used mainly by runtime hosts to configure a particular application domain.  
@@ -18,7 +16,7 @@ You can provide the common language runtime with configuration information for a
  The **ApplicationBase** property defines the root directory of the application. When the runtime needs to satisfy a type request, it probes for the assembly containing the type in the directory specified by the **ApplicationBase** property.  
   
 > [!NOTE]
->  A new application domain inherits only the **ApplicationBase** property of the creator.  
+> A new application domain inherits only the **ApplicationBase** property of the creator.  
   
  The following example creates an instance of the **AppDomainSetup** class, uses this class to create a new application domain, writes the information to console, and then unloads the application domain.  
   
@@ -30,4 +28,4 @@ You can provide the common language runtime with configuration information for a
 ## See also
 
 - [Programming with Application Domains](application-domains.md#programming-with-application-domains)
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+- [Using Application Domains](use.md)

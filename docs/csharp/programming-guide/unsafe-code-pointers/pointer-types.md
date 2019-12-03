@@ -15,18 +15,9 @@ type* identifier;
 void* identifier; //allowed but not recommended
 ```
 
-The type specified before the `*` in a pointer type is called the **referent type**. Any of the following types may be a referent type:
+The type specified before the `*` in a pointer type is called the **referent type**. Only an [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md) can be a referent type.
 
-- Any integral type: [sbyte](../../language-reference/builtin-types/integral-numeric-types.md), [byte](../../language-reference/builtin-types/integral-numeric-types.md), [short](../../language-reference/builtin-types/integral-numeric-types.md), [ushort](../../language-reference/builtin-types/integral-numeric-types.md), [int](../../language-reference/builtin-types/integral-numeric-types.md), [uint](../../language-reference/builtin-types/integral-numeric-types.md), [long](../../language-reference/builtin-types/integral-numeric-types.md), [ulong](../../language-reference/builtin-types/integral-numeric-types.md).
-- Any floating-point type: [float](../../language-reference/builtin-types/floating-point-numeric-types.md), [double](../../language-reference/builtin-types/floating-point-numeric-types.md).
-- [char](../../language-reference/keywords/char.md).
-- [bool](../../language-reference/keywords/bool.md).
-- [decimal](../../language-reference/builtin-types/floating-point-numeric-types.md).
-- Any [enum](../../language-reference/keywords/enum.md) type.
-- Any pointer type. This allows expressions such as `void**`.
-- Any user-defined struct type that contains fields of unmanaged types only.
-
-Pointer types do not inherit from [object](../../language-reference/keywords/object.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing do not support pointers. However, you can convert between different pointer types and between pointer types and integral types.
+Pointer types do not inherit from [object](../../language-reference/builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing do not support pointers. However, you can convert between different pointer types and between pointer types and integral types.
 
 When you declare multiple pointers in the same declaration, the asterisk (*) is written together with the underlying type only; it is not used as a prefix to each pointer name. For example:
 
@@ -55,7 +46,7 @@ int* myVariable;
 
 The expression `*myVariable` denotes the `int` variable found at the address contained in `myVariable`.
 
-There are several examples of pointers in the topics [fixed Statement](../../language-reference/keywords/fixed-statement.md) and [Pointer Conversions](../../programming-guide/unsafe-code-pointers/pointer-conversions.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md) compiler option set.
+There are several examples of pointers in the topics [fixed Statement](../../language-reference/keywords/fixed-statement.md) and [Pointer Conversions](./pointer-conversions.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md) compiler option set.
 
 [!code-csharp[Using pointer types](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#5)]
 
@@ -90,5 +81,5 @@ For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#
 - [C# Programming Guide](../index.md)
 - [Unsafe Code and Pointers](index.md)
 - [Pointer Conversions](pointer-conversions.md)
-- [Types](../../language-reference/keywords/types.md)
+- [Types](/dotnet/csharp/language-reference/keywords)
 - [unsafe](../../language-reference/keywords/unsafe.md)

@@ -60,8 +60,8 @@ Securing an application is an ongoing process. There will never be a point where
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Code Access Security and ADO.NET](../../../../docs/framework/data/adonet/code-access-security.md)|Describes the interactions between code access security, role-based security, and partially trusted environments from the perspective of an ADO.NET application.|  
-|[Code Access Security](../../../../docs/framework/misc/code-access-security.md)|Contains links to additional topics describing CAS in the .NET Framework.|  
+|[Code Access Security and ADO.NET](code-access-security.md)|Describes the interactions between code access security, role-based security, and partially trusted environments from the perspective of an ADO.NET application.|  
+|[Code Access Security](../../misc/code-access-security.md)|Contains links to additional topics describing CAS in the .NET Framework.|  
   
 ## Database Security  
  The principle of least privilege also applies to your data source. Some general guidelines for database security include:  
@@ -82,7 +82,7 @@ Securing an application is an ongoing process. There will never be a point where
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)|Provides an overview of SQL Server security with application scenarios that provide guidance for creating secure ADO.NET applications that target SQL Server.|  
+|[SQL Server Security](./sql/sql-server-security.md)|Provides an overview of SQL Server security with application scenarios that provide guidance for creating secure ADO.NET applications that target SQL Server.|  
 |[Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|  
   
 ## Security Policy and Administration  
@@ -97,7 +97,7 @@ Securing an application is an ongoing process. There will never be a point where
   
 ## See also
 
-- [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
+- [Securing ADO.NET Applications](securing-ado-net-applications.md)
 - [Security in .NET](../../../standard/security/index.md)
-- [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server Security](./sql/sql-server-security.md)
+- [ADO.NET Overview](ado-net-overview.md)

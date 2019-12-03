@@ -4,12 +4,12 @@ ms.date: "03/30/2017"
 ms.assetid: 01a35307-a41f-4ef6-a3db-322af40afc99
 ---
 # Creating a BindingElement
-Bindings and binding elements (objects that extend <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType>, respectively) are the place where the Windows Communication Foundation (WCF) application model is associated with channel factories and channel listeners. Without bindings, using custom channels requires programming at the channel level as described in [Service Channel-Level Programming](../../../../docs/framework/wcf/extending/service-channel-level-programming.md) and [Client Channel-Level Programming](../../../../docs/framework/wcf/extending/client-channel-level-programming.md). This topic discusses the minimum requirement to enable using your channel in WCF, the development of a <xref:System.ServiceModel.Channels.BindingElement> for your channel, and enable use from the application as described in step 4 of [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
+Bindings and binding elements (objects that extend <xref:System.ServiceModel.Channels.Binding?displayProperty=nameWithType> and <xref:System.ServiceModel.Channels.BindingElement?displayProperty=nameWithType>, respectively) are the place where the Windows Communication Foundation (WCF) application model is associated with channel factories and channel listeners. Without bindings, using custom channels requires programming at the channel level as described in [Service Channel-Level Programming](service-channel-level-programming.md) and [Client Channel-Level Programming](client-channel-level-programming.md). This topic discusses the minimum requirement to enable using your channel in WCF, the development of a <xref:System.ServiceModel.Channels.BindingElement> for your channel, and enable use from the application as described in step 4 of [Developing Channels](developing-channels.md).  
   
 ## Overview  
  Creating a <xref:System.ServiceModel.Channels.BindingElement> for your channel enables developers to use it in an WCF application. <xref:System.ServiceModel.Channels.BindingElement> objects can be used from the <xref:System.ServiceModel.ServiceHost?displayProperty=nameWithType> class to connect an WCF application to your channel without having to the precise type information of your channel.  
   
- Once a <xref:System.ServiceModel.Channels.BindingElement> has been created, you can enable more functionality depending upon your requirements by following the remaining channel development steps described in [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md).  
+ Once a <xref:System.ServiceModel.Channels.BindingElement> has been created, you can enable more functionality depending upon your requirements by following the remaining channel development steps described in [Developing Channels](developing-channels.md).  
   
 ## Adding a Binding Element  
  To implement a custom <xref:System.ServiceModel.Channels.BindingElement>, write a class that inherits from <xref:System.ServiceModel.Channels.BindingElement>. For example, if you have developed a `ChunkingChannel` that can break up large messages into chunks and reassemble them on the other end, you can use this channel in any binding by implementing a <xref:System.ServiceModel.Channels.BindingElement> and configuring the binding to use it. The remainder of this topic uses the `ChunkingChannel` as an example to demonstrate the requirements of implementing a binding element.  
@@ -20,7 +20,7 @@ Bindings and binding elements (objects that extend <xref:System.ServiceModel.Cha
   
  <xref:System.ServiceModel.Channels.BindingElement.BuildChannelListener%2A> has a similar implementation for creating `ChunkingChannelListener` and passing it the inner channel listener.  
   
- As another example using a transport channel, the [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md) sample provides the following override.  
+ As another example using a transport channel, the [Transport: UDP](../samples/transport-udp.md) sample provides the following override.  
   
  In the sample, the binding element is `UdpTransportBindingElement`, which derives from <xref:System.ServiceModel.Channels.TransportBindingElement>. It overrides the following methods to build the factories associated with the channel.  
   
@@ -61,12 +61,12 @@ public IChannelListener<TChannel> BuildChannelListener<TChannel>(BindingContext 
   
  For a complete listing of optional methods and properties for user-defined encoding binding elements, see <xref:System.ServiceModel.Channels.MessageEncodingBindingElement>.  
   
- For more information on creating a new binding element, see [Creating User-Defined Bindings](../../../../docs/framework/wcf/extending/creating-user-defined-bindings.md).  
+ For more information on creating a new binding element, see [Creating User-Defined Bindings](creating-user-defined-bindings.md).  
   
- Once you have created a binding element for your channel, return to the [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md) topic to see whether you want to add configuration file support to your binding element, if and how to add metadata publication support, and whether and how to construct a user-defined binding that uses your binding element.  
+ Once you have created a binding element for your channel, return to the [Developing Channels](developing-channels.md) topic to see whether you want to add configuration file support to your binding element, if and how to add metadata publication support, and whether and how to construct a user-defined binding that uses your binding element.  
   
 ## See also
 
 - <xref:System.ServiceModel.Channels.BindingElement>
-- [Developing Channels](../../../../docs/framework/wcf/extending/developing-channels.md)
-- [Transport: UDP](../../../../docs/framework/wcf/samples/transport-udp.md)
+- [Developing Channels](developing-channels.md)
+- [Transport: UDP](../samples/transport-udp.md)

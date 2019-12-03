@@ -69,4 +69,4 @@ The samples and walkthroughs in the LINQ to DataSet documentation use the Advent
   
 ## See also
 
-- [Getting Started](../../../../docs/framework/data/adonet/getting-started-linq-to-dataset.md)
+- [Getting Started](getting-started-linq-to-dataset.md)

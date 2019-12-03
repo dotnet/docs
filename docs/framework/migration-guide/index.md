@@ -6,8 +6,6 @@ helpviewer_keywords:
   - ".NET Framework, migrating applications to"
   - "migration, .NET Framework"
 ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Migration Guide to the .NET Framework 4.8, 4.7, 4.6, and 4.5
 
@@ -21,7 +19,7 @@ Review the following documents before you migrate your app from earlier versions
 
 - See [Versions and Dependencies](versions-and-dependencies.md) to understand the CLR version underlying each version of the .NET Framework and to review guidelines for targeting your apps successfully.
 
-- Review [Application Compatibility](application-compatibility.md) to find out about runtime and retargeting changes that might affect your app and how to handle them.
+- Review [Application compatibility](application-compatibility.md) to find out about runtime and retargeting changes that might affect your app and how to handle them.
 
 - Review [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md) to determine any types or members in your code that have been made obsolete, and the recommended alternatives.
 
@@ -29,13 +27,12 @@ Review the following documents before you migrate your app from earlier versions
 
 ## See also
 
-- [Application Compatibility](application-compatibility.md)
+- [Application compatibility](application-compatibility.md)
 - [Migrating from the .NET Framework 1.1](migrating-from-the-net-framework-1-1.md)
 - [Version Compatibility](version-compatibility.md)
 - [Versions and Dependencies](versions-and-dependencies.md)
 - [How to: Configure an app to support .NET Framework 4 or later versions](how-to-configure-an-app-to-support-net-framework-4-or-4-5.md)
 - [What's New](../whats-new/index.md)
 - [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md)
-- [.NET Framework Version and Assembly Information](https://go.microsoft.com/fwlink/?LinkId=201701)
-- [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607)
+- [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
 - [.NET Framework 4 migration issues](net-framework-4-migration-issues.md)

@@ -11,7 +11,7 @@ This topic outlines the basic steps required to partition messages across multip
  The message sent from the client does not have any unique data that can be used to identify which service instance the message should be routed to. To allow each client to route data to a specific destination service we will implement two service endpoints that will be used to receive messages.  
   
 > [!NOTE]
->  While this example uses specific endpoints to partition data, this could also be accomplished using information contained within the message itself such as header or body data.  
+> While this example uses specific endpoints to partition data, this could also be accomplished using information contained within the message itself such as header or body data.  
   
 ### Implement Service Data Partitioning  
   

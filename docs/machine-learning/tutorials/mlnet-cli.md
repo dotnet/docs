@@ -1,6 +1,6 @@
 ---
-title: Auto generate a binary classifier using the ML.NET CLI 
-description: Automatically generate an ML model and related C# code from a sample dataset 
+title: Analyze sentiment using the ML.NET CLI
+description: Automatically generate an ML model and related C# code from a sample dataset
 author: cesardl
 ms.author: cesardl
 ms.date: 04/24/2019
@@ -9,20 +9,21 @@ ms.topic: tutorial
 #Customer intent: As a developer, I want to automatically generate an ML model and related C# code from my own data.
 ---
 
-# Auto generate a binary classifier using the CLI
+# Analyze sentiment using the ML.NET CLI
 
 Learn how to use ML.NET CLI to automatically generate an ML.NET model and underlying C# code. You provide your dataset and the machine learning task you want to implement, and the CLI uses the AutoML engine to create model generation and deployment source code, as well as the binary model.
 
 In this tutorial, you will do the following steps:
 > [!div class="checklist"]
-> * Prepare your data for the selected machine learning task
-> * Run the 'mlnet auto-train' command from the CLI
-> * Review the quality metric results
-> * Understand the generated C# code to use the model in your application
-> * Explore the generated C# code that was used to train the model
+>
+> - Prepare your data for the selected machine learning task
+> - Run the 'mlnet auto-train' command from the CLI
+> - Review the quality metric results
+> - Understand the generated C# code to use the model in your application
+> - Explore the generated C# code that was used to train the model
 
 > [!NOTE]
-> This topic refers to the ML.NET CLI tool, which is currently in Preview, and material may be subject to change. For more information, visit [the ML.NET introduction](https://www.microsoft.com/net/learn/apps/machine-learning-and-ai/ml-dotnet).
+> This topic refers to the ML.NET CLI tool, which is currently in Preview, and material may be subject to change. For more information, visit the [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) page.
 
 The ML.NET CLI is part of ML.NET and its main goal is to "democratize" ML.NET for .NET developers when learning ML.NET so you don't need to code from scratch to get started.
 
@@ -90,7 +91,8 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     You will see output from the CLI, similar to:
 
-    <!-- markdownlint-disable MD023 -->
+    <!-- markdownlint-disable MD023 MD025 -->
+
     # [Windows](#tab/windows)
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/mlnet-auto-train-binary-classification-powershell.gif)
@@ -99,7 +101,7 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/mlnet-auto-train-binary-classification-bash.gif)
 
-    In this particular case, in only 10 seconds and with the small dataset provided, the CLI tool was able to run quite a few iterations, meaning training multiple times based on different combinations of algorithms/configuration with different internal data transformations and algorithm's hyper-parameters. 
+    In this particular case, in only 10 seconds and with the small dataset provided, the CLI tool was able to run quite a few iterations, meaning training multiple times based on different combinations of algorithms/configuration with different internal data transformations and algorithm's hyper-parameters.
 
     Finally, the "best quality" model found in 10 seconds is a model using a particular trainer/algorithm with any specific configuration. Depending on the exploration time, the command can produce a different result. The selection is based on the multiple metrics shown, such as `Accuracy`.
 
@@ -112,16 +114,16 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
     For additional metrics and more **detailed information about the metrics** such as Accuracy, AUC, AUCPR, F1-score used to evaluate the different models, you can read [Understanding ML.NET metrics](../resources/metrics.md)
 
     > [!NOTE]
-    >  You can try this very same dataset and specify a few minutes for `--max-exploration-time` (for instance three minutes so you specify 180 seconds) which will find a better "best model" for you with a different training pipeline configuration for this dataset (which is pretty small, 1000 rows). 
-        
-    In order to find a "best/good quality" model that is a "production-ready model" targeting larger datasets, you should make experiments with the CLI usually specifying much more exploration time depending on the size of the dataset. In fact, in many cases you might require multiple hours of exploration time especially if the dataset is large on rows and columns. 
+    > You can try this very same dataset and specify a few minutes for `--max-exploration-time` (for instance three minutes so you specify 180 seconds) which will find a better "best model" for you with a different training pipeline configuration for this dataset (which is pretty small, 1000 rows).
+
+    In order to find a "best/good quality" model that is a "production-ready model" targeting larger datasets, you should make experiments with the CLI usually specifying much more exploration time depending on the size of the dataset. In fact, in many cases you might require multiple hours of exploration time especially if the dataset is large on rows and columns.
 
 1. The previous command execution has generated the following assets:
 
-    - A serialized model .zip ("best model") ready to use. 
+    - A serialized model .zip ("best model") ready to use.
     - C# code to run/score that generated model (To make predictions in your end-user apps with that model).
     - C# training code used to generate that model (Learning purposes).
-    - A log file with all the iterations explored having specific detailed information about each algorithm tried with its combination of hyper-parameters and data transformations. 
+    - A log file with all the iterations explored having specific detailed information about each algorithm tried with its combination of hyper-parameters and data transformations.
 
     The first two assets (.ZIP file model and C# code to run that model) can directly be used in your end-user apps (ASP.NET Core web app, services, desktop app, etc.) to make predictions with that generated ML model.
 
@@ -139,10 +141,10 @@ Those enumerated assets are explained in the following steps of the tutorial.
     ![VS solution generated by the CLI](./media/mlnet-cli/generated-csharp-solution-detailed.png)
 
     - The generated **class library** containing the serialized ML model (.zip file) and the data classes (data models) is something you can directly use in your end-user application, even by directly referencing that class library (or moving the code, as you prefer).
-    - The generated **console app** contains execution code that you must review and then you usually reuse the 'scoring code' (code that runs the ML model to make predictions) by moving that simple code (just a few lines) to your end-user application where you want to make the predictions. 
+    - The generated **console app** contains execution code that you must review and then you usually reuse the 'scoring code' (code that runs the ML model to make predictions) by moving that simple code (just a few lines) to your end-user application where you want to make the predictions.
 
-1. Open the **ModelInput.cs** and **ModelOutput.cs** class files within the class library project. You will see that these classes are 'data classes' or POCO classes used to hold data. It is 'boilerplate code' but useful to have it generated if your dataset has tens or even hundreds of columns. 
-    - The `ModelInput` class is used when reading data from the dataset. 
+1. Open the **ModelInput.cs** and **ModelOutput.cs** class files within the class library project. You will see that these classes are 'data classes' or POCO classes used to hold data. It is 'boilerplate code' but useful to have it generated if your dataset has tens or even hundreds of columns.
+    - The `ModelInput` class is used when reading data from the dataset.
     - The `ModelOutput` class is used to get the prediction result (prediction data).
 
 1. Open the Program.cs file and explore the code. In just a few lines, you are able to run the model and make a sample prediction.
@@ -158,7 +160,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
         ITransformer mlModel = mlContext.Model.Load(MODEL_FILEPATH, out DataViewSchema inputSchema);
         var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 
-        // Create sample data to do a single prediction with it 
+        // Create sample data to do a single prediction with it
         ModelInput sampleData = CreateSingleDataSample(mlContext, DATA_FILEPATH);
 
         // Try a single prediction
@@ -168,7 +170,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
     }
     ```
 
-- The first line of code simply creates an `MLContext` object needed whenever you run ML.NET code. 
+- The first line of code simply creates an `MLContext` object needed whenever you run ML.NET code.
 
 - The second line of code is commented because you don't need to train the model since it was already trained for you by the CLI tool and saved into the model's serialized .ZIP file. But if you want to see *"how the model was trained"* by the CLI, you could uncomment that line and run/debug the training code used for that particular ML model.
 
@@ -198,7 +200,7 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
     Run the console app from the command-prompt by typing the following commands:
 
-     ```
+     ```bash
      > cd SampleBinaryClassification
      > cd SampleBinaryClassification.ConsoleApp
 
@@ -209,11 +211,11 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
     ---
 
-1. Try changing the hard-coded sample data to other sentences with different sentiment and see how the model predicts positive or negative sentiment. 
+1. Try changing the hard-coded sample data to other sentences with different sentiment and see how the model predicts positive or negative sentiment.
 
 ## Infuse your end-user applications with ML model predictions
 
-You can use similar 'ML model scoring code' to run the model in your end-user application and make predictions. 
+You can use similar 'ML model scoring code' to run the model in your end-user application and make predictions.
 
 For instance, you could directly move that code to any Windows desktop application such as **WPF** and **WinForms** and run the model in the same way than it was done in the console app.
 
@@ -223,14 +225,14 @@ However, the way you implement those lines of code to run an ML model should be 
 
 The creation of the model object (`ITransformer` loaded from a model's .zip file) and the `PredictionEngine` object should be optimized especially when running on scalable web apps and distributed services. For the first case, the model object (`ITransformer`) the optimization is straightforward. Since the `ITransformer` object is thread-safe, you can cache the object as a singleton or static object so you load the model once.
 
-For the second object, the `PredictionEngine` object, it is not so easy because the `PredictionEngine` object is not thread-safe, therefore you cannot instantiate this object as singleton or static object in an ASP.NET Core app. This thread-safe and scalability problem is deeply discussed in this [Blog Post](https://devblogs.microsoft.com/cesardelatorre/how-to-optimize-and-run-ml-net-models-on-scalable-asp-net-core-webapis-or-web-apps/). 
+For the second object, the `PredictionEngine` object, it is not so easy because the `PredictionEngine` object is not thread-safe, therefore you cannot instantiate this object as singleton or static object in an ASP.NET Core app. This thread-safe and scalability problem is deeply discussed in this [Blog Post](https://devblogs.microsoft.com/cesardelatorre/how-to-optimize-and-run-ml-net-models-on-scalable-asp-net-core-webapis-or-web-apps/).
 
 However, things got a lot easier for you than what's explained in that blog post. We worked on a simpler approach for you and have created a nice **'.NET Core Integration Package'** that you can  easily use in your ASP.NET Core apps and services by registering it in the application DI services (Dependency Injection services) and then directly use it from your code. Check the following tutorial and example for doing that:
 
 - [Tutorial: Running ML.NET models on scalable ASP.NET Core web apps and WebAPIs](https://aka.ms/mlnet-tutorial-netcoreintegrationpkg)
 - [Sample: Scalable ML.NET model on ASP.NET Core WebAPI](https://aka.ms/mlnet-sample-netcoreintegrationpkg)
 
-## Explore the generated C# code that was used to train the "best quality" model 
+## Explore the generated C# code that was used to train the "best quality" model
 
 For more advanced learning purposes, you can also explore the generated C# code that was used by the CLI tool to train the generated model.
 
@@ -247,7 +249,7 @@ It is interesting to compare the chosen algorithm and pipeline configuration in 
 - [Automate model training with the ML.NET CLI](../automate-training-with-cli.md)
 - [Tutorial: Running ML.NET models on scalable ASP.NET Core web apps and WebAPIs](https://aka.ms/mlnet-tutorial-netcoreintegrationpkg)
 - [Sample: Scalable ML.NET model on ASP.NET Core WebAPI](https://aka.ms/mlnet-sample-netcoreintegrationpkg)
-- [ML.NET CLI auto-train command reference guide](../reference/ml-net-cli-reference.md) 
+- [ML.NET CLI auto-train command reference guide](../reference/ml-net-cli-reference.md)
 - [How to install the ML.NET Command-Line Interface (CLI) tool](../how-to-guides/install-ml-net-cli.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)
 
@@ -255,11 +257,12 @@ It is interesting to compare the chosen algorithm and pipeline configuration in 
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
-> * Prepare your data for the selected ML task (problem to solve)
-> * Run the 'mlnet auto-train' command in the CLI tool
-> * Review the quality metric results
-> * Understand the generated C# code to run the model (Code to use in your end-user app)
-> * Explore the generated C# code that was used to train the "best quality" model (Learning purposes)
+>
+> - Prepare your data for the selected ML task (problem to solve)
+> - Run the 'mlnet auto-train' command in the CLI tool
+> - Review the quality metric results
+> - Understand the generated C# code to run the model (Code to use in your end-user app)
+> - Explore the generated C# code that was used to train the "best quality" model (Learning purposes)
 
 > [!div class="nextstepaction"]
 > [Automate model training with the ML.NET CLI](../automate-training-with-cli.md)

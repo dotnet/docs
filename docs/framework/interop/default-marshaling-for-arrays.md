@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "interop marshaling, arrays"
   - "arrays, interop marshaling"
 ms.assetid: 8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Default Marshaling for Arrays
 In an application consisting entirely of managed code, the common language runtime passes array types as In/Out parameters. In contrast, the interop marshaler passes an array as In parameters by default.  
@@ -49,7 +47,7 @@ In an application consisting entirely of managed code, the common language runti
   
  **Unmanaged signature**  
   
-```  
+```cpp
 HRESULT New1([in] SAFEARRAY( int ) ar);  
 HRESULT New2([in] SAFEARRAY( DATE ) ar);  
 HRESULT New3([in, out] SAFEARRAY( BSTR ) *ar);  
@@ -89,7 +87,7 @@ void New3([MarshalAs(UnmanagedType.SafeArray, SafeArraySubType=VT_BSTR)]
   
  **Unmanaged signature**  
   
-```  
+```cpp
 HRESULT New1(int ar[10]);  
 HRESULT New2(double ar[10][20]);  
 HRESULT New3(LPWStr ar[10]);  
@@ -118,7 +116,7 @@ void New2([MarshalAs(UnmanagedType.LPArray,
   
  **Unmanaged signature**  
   
-```  
+```cpp
 HRESULT New1(int ar[]);  
 HRESULT New2(int ArSize, [size_is(ArSize)] double ar[]);  
 HRESULT New3(int ElemCnt, [length_is(ElemCnt)] LPStr ar[]);  
@@ -169,7 +167,7 @@ void New3(ref String ar);
  When marshaling arrays from unmanaged code to managed code, the marshaler checks the **MarshalAsAttribute** associated with the parameter to determine the array size. If the array size is not specified, only one element is marshaled.  
   
 > [!NOTE]
->  The **MarshalAsAttribute** has no effect on marshaling managed arrays to unmanaged code. In that direction, the array size is determined by examination. There is no way to marshal a subset of a managed array.  
+> The **MarshalAsAttribute** has no effect on marshaling managed arrays to unmanaged code. In that direction, the array size is determined by examination. There is no way to marshal a subset of a managed array.  
   
  The interop marshaler uses the **CoTaskMemAlloc** and **CoTaskMemFree** methods to allocate and retrieve memory. Memory allocation performed by unmanaged code must also use these methods.  
   
@@ -201,8 +199,8 @@ void New(String[] ar );
   
 #### Unmanaged signature  
   
-```  
-HRESULT New([in] SAFEARRAY( long ) ar);   
+```cpp
+HRESULT New([in] SAFEARRAY( long ) ar);
 HRESULT New([in] SAFEARRAY( BSTR ) ar);  
 ```  
   
@@ -234,9 +232,9 @@ void New([MarshalAs(UnmanagedType.LPArray, ArraySubType=
   
 #### Unmanaged signature  
   
-```  
-HRESULT New(long ar[]);   
-HRESULT New(BSTR ar[]);   
+```cpp
+HRESULT New(long ar[]);
+HRESULT New(BSTR ar[]);
 HRESULT New(LPStr ar[]);  
 ```  
   
@@ -259,8 +257,8 @@ void New( String [,] ar );
   
 #### Unmanaged signature  
   
-```  
-HRESULT New([in] SAFEARRAY( long ) ar);   
+```cpp
+HRESULT New([in] SAFEARRAY( long ) ar);
 HRESULT New([in] SAFEARRAY( BSTR ) ar);  
 ```  
   
@@ -288,8 +286,8 @@ void New([MarshalAs(UnmanagedType.LPARRAY,
   
 #### Unmanaged signature  
   
-```  
-HRESULT New(long ar[]);   
+```cpp
+HRESULT New(long ar[]);
 HRESULT New(LPStr ar[]);  
 ```  
   
@@ -322,8 +320,8 @@ void New2( [MarshalAs(UnmanagedType.Safe array)] System.Array ar );
   
 #### Unmanaged signature  
   
-```  
-HRESULT New([in] _Array *ar);   
+```cpp
+HRESULT New([in] _Array *ar);
 HRESULT New([in] SAFEARRAY(VARIANT) ar);  
 ```  
   
@@ -332,7 +330,7 @@ HRESULT New([in] SAFEARRAY(VARIANT) ar);
   
 #### Unmanaged representation  
   
-```  
+```cpp
 struct MyStruct {  
     short s1[128];  
 }  

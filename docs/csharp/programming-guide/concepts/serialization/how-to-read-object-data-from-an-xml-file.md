@@ -37,7 +37,7 @@ public void ReadXML()
 ```  
   
 ## Compiling the Code  
- Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data. For more information about serializing data, see [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md).  
+ Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data. For more information about serializing data, see [How to: Write Object Data to an XML File (C#)](./how-to-write-object-data-to-an-xml-file.md).  
   
  The class must have a public constructor without parameters.  
   
@@ -58,6 +58,6 @@ public void ReadXML()
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)
-- [Serialization (C#)](../../../../csharp/programming-guide/concepts/serialization/index.md)
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [How to: Write Object Data to an XML File (C#)](./how-to-write-object-data-to-an-xml-file.md)
+- [Serialization (C#)](./index.md)
+- [C# Programming Guide](../../index.md)

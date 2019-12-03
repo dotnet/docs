@@ -9,16 +9,16 @@ After a <xref:System.Data.DataSet> object has been populated with data, you can 
  As with other implementations of [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)], you can create LINQ to DataSet queries in two different forms: query expression syntax and method-based query syntax. You can use query expression syntax or method-based query syntax to perform queries against single tables in a <xref:System.Data.DataSet>, against multiple tables in a <xref:System.Data.DataSet>, or against tables in a typed <xref:System.Data.DataSet>.  
   
 ## In This Section  
- [Single-Table Queries](../../../../docs/framework/data/adonet/single-table-queries-linq-to-dataset.md)  
+ [Single-Table Queries](single-table-queries-linq-to-dataset.md)  
  Describes how to perform single-table queries.  
   
- [Cross-Table Queries](../../../../docs/framework/data/adonet/cross-table-queries-linq-to-dataset.md)  
+ [Cross-Table Queries](cross-table-queries-linq-to-dataset.md)  
  Describes how to perform cross-table queries.  
   
- [Querying Typed DataSets](../../../../docs/framework/data/adonet/querying-typed-datasets.md)  
+ [Querying Typed DataSets](querying-typed-datasets.md)  
  Describes how to query typed <xref:System.Data.DataSet> objects.  
   
 ## See also
 
-- [LINQ to DataSet Examples](../../../../docs/framework/data/adonet/linq-to-dataset-examples.md)
-- [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)
+- [LINQ to DataSet Examples](linq-to-dataset-examples.md)
+- [Loading Data Into a DataSet](loading-data-into-a-dataset.md)

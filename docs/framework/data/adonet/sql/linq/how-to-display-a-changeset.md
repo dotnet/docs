@@ -47,4 +47,4 @@ Total changes: {Added: 0, Removed: 0, Modified: 8}
   
 ## See also
 
-- [Debugging Support](../../../../../../docs/framework/data/adonet/sql/linq/debugging-support.md)
+- [Debugging Support](debugging-support.md)

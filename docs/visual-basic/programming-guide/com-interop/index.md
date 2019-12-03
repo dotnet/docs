@@ -1,5 +1,5 @@
 ---
-title: "COM Interop (Visual Basic)"
+title: "COM Interop"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic code, COM interop"
@@ -50,5 +50,5 @@ The Component Object Model (COM) allows an object to expose its functionality to
  [Exposing .NET Framework Components to COM](../../../framework/interop/exposing-dotnet-components-to-com.md)  
  Describes the preparation and use of managed types from COM.  
   
- [Applying Interop Attributes](../../../framework/interop/applying-interop-attributes.md)  
+ [Applying Interop Attributes](../../../standard/native-interop/apply-interop-attributes.md)  
  Covers attributes you can use when working with unmanaged code.

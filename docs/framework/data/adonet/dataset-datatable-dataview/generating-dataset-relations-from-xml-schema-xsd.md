@@ -75,22 +75,22 @@ msdata:childkey="" />
  The mapping process uses the **Relationship** element to create a parent-child relationship between the **OrderNumber** column in the **Order** table and the **OrderNo** column in the **OrderDetail** table in the **DataSet**. The mapping process only specifies the relationship; it does not automatically specify any constraints on the values in these columns, as do the primary key/foreign key constraints in relational databases.  
   
 ### In This Section  
- [Map Implicit Relations Between Nested Schema Elements](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/map-implicit-relations-between-nested-schema-elements.md)  
+ [Map Implicit Relations Between Nested Schema Elements](map-implicit-relations-between-nested-schema-elements.md)  
  Describes the constraints and relations that are implicitly created in a **DataSet** when nested elements are encountered in XML Schema.  
   
- [Map Relations Specified for Nested Elements](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/map-relations-specified-for-nested-elements.md)  
+ [Map Relations Specified for Nested Elements](map-relations-specified-for-nested-elements.md)  
  Describes how to explicitly set relations in a **DataSet** for nested elements in XML Schema.  
   
- [Specify Relations Between Elements with No Nesting](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/specify-relations-between-elements-with-no-nesting.md)  
+ [Specify Relations Between Elements with No Nesting](specify-relations-between-elements-with-no-nesting.md)  
  Describes how to create relations in a **DataSet** between XML Schema elements that are not nested.  
   
 ### Related Sections  
- [Deriving DataSet Relational Structure from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
+ [Deriving DataSet Relational Structure from XML Schema (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md)  
  Describes the relational structure, or schema, of a **DataSet** that is created from XML Schema definition language (XSD) schema.  
   
- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
+ [Mapping XML Schema (XSD) Constraints to DataSet Constraints](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Describes the XML Schema elements used to create unique and foreign key constraints in a **DataSet**.  
   
 ## See also
 
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [ADO.NET Overview](../ado-net-overview.md)

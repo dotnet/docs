@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve Paragraphs from an Office Open XML Document (Visual Basic)"
+title: "How to: Retrieve Paragraphs from an Office Open XML Document"
 ms.date: 07/20/2015
 ms.assetid: 66053f21-9217-473c-a6f3-a0897be07756
 ---
@@ -148,7 +148,7 @@ End Module
   
  When run with the sample Open XML document described in [Creating the Source Office Open XML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md), this example produces the following output:  
   
-```  
+```console  
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<  
 StyleName:Normal ><  
 StyleName:Normal >The following example prints to the console.<  

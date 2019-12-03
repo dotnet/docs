@@ -1,5 +1,5 @@
 ---
-title: "How to: Transform the Shape of an XML Tree (Visual Basic)"
+title: "How to: Transform the Shape of an XML Tree"
 ms.date: 07/20/2015
 ms.assetid: 84b60854-48b2-452c-87f2-77d53e1d653a
 ---

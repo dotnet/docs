@@ -2,6 +2,7 @@
 title: System.Delegate and the `delegate` keyword
 description: Learn about the classes in the .NET Framework that support delegates and how those map to the 'delegate' keyword.
 ms.date: 06/20/2016
+ms.technology: csharp-fundamentals
 ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 ---
 
@@ -39,7 +40,7 @@ The compiler generates a class, derived from `System.Delegate`
 that matches the signature used (in this case, a method that
 returns an integer, and has two arguments). The type
 of that delegate is `Comparison`. The `Comparison` delegate
-type is a generic type. For details on generics see [here](generics.md).
+type is a generic type. For details on generics see [here](programming-guide/generics/index.md).
 
 Notice that the syntax may appear as though it is declaring
 a variable, but it is actually declaring a *type*. You can

@@ -14,7 +14,7 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
  A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a separate window relative to an element or point on the screen. When the <xref:System.Windows.Controls.Primitives.Popup> is visible, the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property is set to `true`.  
   
 > [!NOTE]
->  A <xref:System.Windows.Controls.Primitives.Popup> does not automatically open when the mouse pointer moves over its parent object. If you want a <xref:System.Windows.Controls.Primitives.Popup> to automatically open, use the <xref:System.Windows.Controls.ToolTip> or <xref:System.Windows.Controls.ToolTipService> class. For more information, see [ToolTip Overview](tooltip-overview.md).  
+> A <xref:System.Windows.Controls.Primitives.Popup> does not automatically open when the mouse pointer moves over its parent object. If you want a <xref:System.Windows.Controls.Primitives.Popup> to automatically open, use the <xref:System.Windows.Controls.ToolTip> or <xref:System.Windows.Controls.ToolTipService> class. For more information, see [ToolTip Overview](tooltip-overview.md).  
   
 <a name="APopupExample"></a>   
 ## Creating a Popup  

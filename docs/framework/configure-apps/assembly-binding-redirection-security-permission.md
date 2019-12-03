@@ -11,7 +11,7 @@ Explicit assembly binding redirection in an application configuration file requi
   
  The security permission is granted to applications running in the Trusted Zone (local machine) and Intranet Zone. Applications running in the Internet Zone are strictly prohibited from performing assembly binding redirection.  
   
- The permission is not required if assembly redirection is performed in a publisher policy file that is controlled by the component publisher, or in the machine configuration file that is controlled by the administrator. However, the permission is required for an application to explicitly ignore publisher policy using the [\<publisherPolicy apply="no"/>](../../../docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md) element in the application configuration file.  
+ The permission is not required if assembly redirection is performed in a publisher policy file that is controlled by the component publisher, or in the machine configuration file that is controlled by the administrator. However, the permission is required for an application to explicitly ignore publisher policy using the [\<publisherPolicy apply="no"/>](./file-schema/runtime/publisherpolicy-element.md) element in the application configuration file.  
   
  The following table shows the default security settings for the **BindingRedirects** flag.  
   
@@ -27,5 +27,5 @@ Explicit assembly binding redirection in an application configuration file requi
 ## See also
 
 - [Publisher Policy Files and Side-by-Side Execution](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/06d2bae3(v=vs.100))
-- [How to: Enable and Disable Automatic Binding Redirection](../../../docs/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection.md)
-- [Side-by-Side Execution](../../../docs/framework/deployment/side-by-side-execution.md)
+- [How to: Enable and Disable Automatic Binding Redirection](how-to-enable-and-disable-automatic-binding-redirection.md)
+- [Side-by-Side Execution](../deployment/side-by-side-execution.md)

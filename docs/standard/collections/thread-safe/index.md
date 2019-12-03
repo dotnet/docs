@@ -24,7 +24,7 @@ The .NET Framework 4 introduces the <xref:System.Collections.Concurrent?displayP
  The <xref:System.Collections.Concurrent.ConcurrentQueue%601> and <xref:System.Collections.Concurrent.ConcurrentStack%601> classes do not use locks at all. Instead, they rely on <xref:System.Threading.Interlocked> operations to achieve thread-safety.  
   
 > [!NOTE]
->  Because the concurrent collections classes support <xref:System.Collections.ICollection>, they provide implementations for the <xref:System.Collections.ICollection.IsSynchronized%2A> and <xref:System.Collections.ICollection.SyncRoot%2A> properties, even though these properties are irrelevant. `IsSynchronized` always returns `false` and `SyncRoot` is always `null` (`Nothing` in Visual Basic).  
+> Because the concurrent collections classes support <xref:System.Collections.ICollection>, they provide implementations for the <xref:System.Collections.ICollection.IsSynchronized%2A> and <xref:System.Collections.ICollection.SyncRoot%2A> properties, even though these properties are irrelevant. `IsSynchronized` always returns `false` and `SyncRoot` is always `null` (`Nothing` in Visual Basic).  
   
  The following table lists the collection types in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace.  
   

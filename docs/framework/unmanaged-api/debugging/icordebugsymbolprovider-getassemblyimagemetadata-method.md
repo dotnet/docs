@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetAssemblyImageMetadata Method"
 ms.date: "03/30/2017"
 ms.assetid: c3c9de67-b865-4ecf-b887-1f1d0719a0c0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetAssemblyImageMetadata Method
 Returns the metadata from a merged assembly.  
@@ -23,7 +21,7 @@ HRESULT GetAssemblyImageMetadata(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

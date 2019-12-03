@@ -5,16 +5,14 @@ f1_keywords:
   - "Crst_DisableSpinWait"
 helpviewer_keywords: 
   - "Crst_DisableSpinWait element"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<Crst_DisableSpinWait> element
 
 Specifies whether to disable spin-waiting for a critical section when contended.  
   
- \<configuration>  
-\<runtime>  
-\<Crst_DisableSpinWait>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<Crst_DisableSpinWait>**  
   
 ## Syntax  
   
@@ -63,5 +61,5 @@ The following example disables spin-waiting in critical sections when contended.
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

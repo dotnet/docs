@@ -24,7 +24,7 @@ On occasion, you will want to provide a command that operates on the control tha
 1. Within a method, copy the text of the active control of the active child form to the Clipboard.  
   
     > [!NOTE]
-    >  This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](how-to-create-mdi-parent-forms.md).  
+    > This example assumes there is an MDI parent form (`Form1`) that has one or more MDI child windows containing a <xref:System.Windows.Forms.RichTextBox> control. For more information, see [Creating MDI Parent Forms](how-to-create-mdi-parent-forms.md).  
   
     ```vb  
     Public Sub mniCopy_Click(ByVal sender As Object, _  

@@ -8,7 +8,7 @@ ms.assetid: 0a90c33f-7ed7-4501-ad5f-6224c5da8e9b
 ---
 # SQL-CLR Type Mismatches
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] automates much of the translation between the object model and SQL Server. Nevertheless, some situations prevent exact translation. These key mismatches between the common language runtime (CLR) types and the SQL Server database types are summarized in the following sections. You can find more details about specific type mappings and function translation at [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md) and [Data Types and Functions](../../../../../../docs/framework/data/adonet/sql/linq/data-types-and-functions.md).
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] automates much of the translation between the object model and SQL Server. Nevertheless, some situations prevent exact translation. These key mismatches between the common language runtime (CLR) types and the SQL Server database types are summarized in the following sections. You can find more details about specific type mappings and function translation at [SQL-CLR Type Mapping](sql-clr-type-mapping.md) and [Data Types and Functions](data-types-and-functions.md).
 
 ## Data Types
 
@@ -47,7 +47,7 @@ The following types do not have reasonable counterparts.
 
 ### Multiple Mappings
 
-There are many SQL Server data types that you can map to one or more CLR data types. There are also many CLR types that you can map to one or more SQL Server types. Although a mapping may be supported by LINQ to SQL, it does not mean that the two types mapped between the CLR and SQL Server are a perfect match in precision, range, and semantics. Some mappings may include differences in any or all of these dimensions. You can find details about these potential differences for the various mapping possibilities at [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md).
+There are many SQL Server data types that you can map to one or more CLR data types. There are also many CLR types that you can map to one or more SQL Server types. Although a mapping may be supported by LINQ to SQL, it does not mean that the two types mapped between the CLR and SQL Server are a perfect match in precision, range, and semantics. Some mappings may include differences in any or all of these dimensions. You can find details about these potential differences for the various mapping possibilities at [SQL-CLR Type Mapping](sql-clr-type-mapping.md).
 
 ### User-defined Types
 
@@ -301,4 +301,4 @@ In addition to semantic differences, it is important to consider impacts to perf
 
 ## See also
 
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Background Information](background-information.md)

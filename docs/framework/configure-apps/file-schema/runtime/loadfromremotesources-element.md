@@ -5,18 +5,16 @@ helpviewer_keywords:
   - "loadFromRemoteSources element"
   - "<loadFromRemoteSources> element"
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<loadFromRemoteSources> element
 Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
   
 > [!NOTE]
->  If you were directed to this article because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
+> If you were directed to this article because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
   
- \<configuration>  
-\<runtime>  
-\<loadFromRemoteSources>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<loadFromRemoteSources>**  
   
 ## Syntax  
   
@@ -68,7 +66,7 @@ so this load may be dangerous. If this load is not intended to sandbox the assem
 
 To load the assembly and execute its code, you must either:
 
-- Explicitly create a sandbox for the assembly (see [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)).
+- Explicitly create a sandbox for the assembly (see [How to: Run Partially Trusted Code in a Sandbox](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)).
 
 - Run the assembly's code in full trust. You do this by configuring the `<loadFromRemoteSources>` element. It lets you specify that the assemblies that run in partial trust in earlier versions of the .NET Framework now run in full trust in the .NET Framework 4 and later versions.
 
@@ -112,7 +110,7 @@ The following example shows how to grant full trust to assemblies loaded from re
 ## See also
 
 - [More Implicit Uses of CAS Policy: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)
-- [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [How to: Run Partially Trusted Code in a Sandbox](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
 - <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>

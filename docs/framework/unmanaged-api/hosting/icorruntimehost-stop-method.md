@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 46a0d450-b516-4bef-8b71-8d3bf265cbed
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::Stop Method
 Stops the execution of code in the runtime for the current process.  
@@ -40,7 +38,7 @@ HRESULT Stop ();
  It is typically unnecessary to call the `Stop` method, because the code stops executing when the process exits.  
   
 > [!NOTE]
->  After a call to `Stop`, the CLR cannot be reinitialized into the same process.  
+> After a call to `Stop`, the CLR cannot be reinitialized into the same process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

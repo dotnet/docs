@@ -2,8 +2,6 @@
 title: "ICorDebugLoadedModule Interface"
 ms.date: "03/30/2017"
 ms.assetid: 34be6369-2e75-4a95-a538-3b29ac97cf6d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugLoadedModule Interface
 Provides information about a loaded module.  
@@ -20,7 +18,7 @@ Provides information about a loaded module.
  The `ICorDebugLoadedModule` interface is implemented by a debugger and is used by the CLR debugging interfaces to get information about the loaded module from the debugger.  
   
 > [!NOTE]
->  This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
+> This interface is available with .NET Native only. If you implement this interface for ICorDebug scenarios outside of .NET Native, the common language runtime will ignore this interface.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetCORSystemDirectory Function
 Returns the installation directory of the common language runtime (CLR) that is loaded into the process. The installation directory is fully qualified, for example, "c:\windows\microsoft.net\framework\v1.0.3705".  
@@ -46,7 +44,7 @@ HRESULT GetCORSystemDirectory (
 ## Remarks  
   
 > [!CAUTION]
->  Do not use this function in processes that are running version 4 of the CLR. If an earlier version of the CLR is installed on the computer, this function returns the installation directory for that version.  
+> Do not use this function in processes that are running version 4 of the CLR. If an earlier version of the CLR is installed on the computer, this function returns the installation directory for that version.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -40,7 +40,7 @@ module InteropWithNative =
 InteropWithNative.HelloWorld()
 ```
 
-Interoperability with native code is referred to as *platform invoke* and is a feature of the CLR. For more information, see [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md). The information in that section is applicable to F#.
+Interoperability with native code is referred to as *platform invoke* and is a feature of the CLR. For more information, see [Interoperating with Unmanaged Code](../../../framework/interop/index.md). The information in that section is applicable to F#.
 
 ## See also
 

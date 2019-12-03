@@ -1,5 +1,5 @@
 ---
-title: "Enumerations Overview (Visual Basic)"
+title: "Enumerations Overview"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic code, enumerations"

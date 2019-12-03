@@ -7,7 +7,7 @@ ms.assetid: c6b25b8b-0bdd-41b2-9c7c-661f070c2247
 The .NET Framework Data Provider for Oracle supports the Oracle **REF CURSOR** data type. When using the data provider to work with Oracle REF CURSORs, you should consider the following behaviors.  
   
 > [!NOTE]
->  Some behaviors differ from those of the Microsoft OLE DB Provider for Oracle (MSDAORA).  
+> Some behaviors differ from those of the Microsoft OLE DB Provider for Oracle (MSDAORA).  
   
 - For performance reasons, the Data Provider for Oracle does not automatically bind **REF CURSOR** data types, as MSDAORA does, unless you explicitly specify them.  
   
@@ -24,19 +24,19 @@ The .NET Framework Data Provider for Oracle supports the Oracle **REF CURSOR** d
 - The PL/SQL **TABLE** data type is not supported. However, REF CURSORs are more efficient. If you must use a **TABLE** data type, use the OLE DB .NET Data Provider with MSDAORA.  
   
 ## In This Section  
- [REF CURSOR Examples](../../../../docs/framework/data/adonet/ref-cursor-examples.md)  
+ [REF CURSOR Examples](ref-cursor-examples.md)  
  Contains three examples that demonstrate using REF CURSORs.  
   
- [REF CURSOR Parameters in an OracleDataReader](../../../../docs/framework/data/adonet/ref-cursor-parameters-in-an-oracledatareader.md)  
+ [REF CURSOR Parameters in an OracleDataReader](ref-cursor-parameters-in-an-oracledatareader.md)  
  Demonstrates how to execute a PL/SQL stored procedure that returns a REF CURSOR parameter, and reads the value as an **OracleDataReader**.  
   
- [Retrieving Data from Multiple REF CURSORs Using an OracleDataReader](../../../../docs/framework/data/adonet/retrieving-data-from-multiple-ref-cursors.md)  
+ [Retrieving Data from Multiple REF CURSORs Using an OracleDataReader](retrieving-data-from-multiple-ref-cursors.md)  
  Demonstrates how to execute a PL/SQL stored procedure that returns two REF CURSOR parameters, and reads the values using an **OracleDataReader**.  
   
- [Filling a DataSet Using One or More REF CURSORs](../../../../docs/framework/data/adonet/filling-a-dataset-using-one-or-more-ref-cursors.md)  
+ [Filling a DataSet Using One or More REF CURSORs](filling-a-dataset-using-one-or-more-ref-cursors.md)  
  Demonstrates how to execute a PL/SQL stored procedure that returns two REF CURSOR parameters, and fills a <xref:System.Data.DataSet> with the rows that are returned.  
   
 ## See also
 
-- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Oracle and ADO.NET](oracle-and-adonet.md)
+- [ADO.NET Overview](ado-net-overview.md)

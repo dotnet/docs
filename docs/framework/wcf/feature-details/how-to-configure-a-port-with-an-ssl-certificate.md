@@ -37,13 +37,13 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 1. In [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool to view the current port configuration, using the **query** and **ssl** switches, as shown in the following example.  
   
-    ```  
+    ```console
     httpcfg query ssl  
     ```  
   
 2. In [!INCLUDE[wv](../../../../includes/wv-md.md)], use the Netsh.exe tool to view the current port configuration, as shown in the following example.  
   
-    ```  
+    ```console  
     netsh http show sslcert  
     ```  
   
@@ -61,7 +61,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 1. In [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool in "set" mode on the Secure Sockets Layer (SSL) store to bind the certificate to a port number. The tool uses the thumbprint to identify the certificate, as shown in the following example.  
   
-    ```  
+    ```console  
     httpcfg set ssl -i 0.0.0.0:8012 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6  
     ```  
   
@@ -71,7 +71,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 2. In [!INCLUDE[wv](../../../../includes/wv-md.md)], use the Netsh.exe tool, as shown in the following example.  
   
-    ```  
+    ```console  
     netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF}   
     ```  
   
@@ -85,7 +85,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 1. In [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], to support clients that authenticate with X.509 certificates at the transport layer, follow the preceding procedure but pass an additional command-line parameter to HttpCfg.exe, as shown in the following example.  
   
-    ```  
+    ```console  
     httpcfg set ssl -i 0.0.0.0:8012 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6 -f 2  
     ```  
   
@@ -93,7 +93,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 2. In [!INCLUDE[wv](../../../../includes/wv-md.md)], to support clients that authenticate with X.509 certificates at the transport layer, follow the preceding procedure, but with an additional parameter, as shown in the following example.  
   
-    ```  
+    ```console  
     netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF} clientcertnegotiation=enable  
     ```  
   
@@ -101,19 +101,19 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 1. Use the HttpCfg.exe or Netsh.exe tool to see the ports and thumbprints of all bindings on the computer. To print the information to disk, use the redirection character ">", as shown in the following example.  
   
-    ```  
+    ```console  
     httpcfg query ssl>myMachinePorts.txt  
-    ```  
+    ```
   
 2. In [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], use the HttpCfg.exe tool with the **delete** and **ssl** keywords. Use the **-i** switch to specify the `IP`:`port` number, and the **-h** switch to specify the thumbprint.  
   
-    ```  
+    ```console  
     httpcfg delete ssl -i 0.0.0.0:8005 -h 0000000000003ed9cd0c315bbb6dc1c08da5e6  
     ```  
   
 3. In [!INCLUDE[wv](../../../../includes/wv-md.md)], use the Netsh.exe tool, as shown in the following example.  
   
-    ```  
+    ```console  
     Netsh http delete sslcert ipport=0.0.0.0:8005  
     ```  
   

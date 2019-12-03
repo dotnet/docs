@@ -26,7 +26,7 @@ All value types are derived implicitly from the <xref:System.ValueType?displayPr
 
 Unlike with reference types, you cannot derive a new type from a value type. However, like reference types, structs can implement interfaces.
 
-Value type variables cannot be `null` by default. However, variables of the corresponding [nullable types](../../../csharp/programming-guide/nullable-types/index.md) can be `null`.
+Value type variables cannot be `null` by default. However, variables of the corresponding [nullable value types](../builtin-types/nullable-value-types.md) can be `null`.
 
 Each value type has an implicit parameterless constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).
 
@@ -34,9 +34,9 @@ Each value type has an implicit parameterless constructor that initializes the d
 
 The *simple types* are a set of predefined struct types provided by C# and comprise the following types:
 
-- [Integral types](../builtin-types/integral-numeric-types.md): integer numeric types and the [char](char.md) type
+- [Integral types](../builtin-types/integral-numeric-types.md): integer numeric types and the [char](../builtin-types/char.md) type
 - [Floating-point types](../builtin-types/floating-point-numeric-types.md)
-- [bool](bool.md)
+- [bool](../builtin-types/bool.md)
 
 The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](../builtin-types/integral-numeric-types.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
 
@@ -48,7 +48,7 @@ The simple types differ from other struct types in that they permit certain addi
 
 - Constant expressions, whose operands are all simple type constants, are evaluated at compile time.
 
-For more information, see the [Simple types](~/_csharplang/spec/types.md#simple-types) section of the [C# language specification](../language-specification/index.md).
+For more information, see the [Simple types](~/_csharplang/spec/types.md#simple-types) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).
 
 ## Initializing value types
 
@@ -82,7 +82,7 @@ int myInt = new int();
 int myInt = 0;
 ```
 
-Using the [new](../operators/new-operator.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling default constructors, see [Default values table](default-values-table.md).
+Using the [new](../operators/new-operator.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling parameterless constructors, see [Default values table](default-values-table.md).
 
 With user-defined types, use [new](../operators/new-operator.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
 
@@ -98,9 +98,7 @@ For information about formatting the output of numeric types, see [Formatting nu
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [Types](types.md)
-- [Reference Types](reference-types.md)
-- [Nullable types](../../programming-guide/nullable-types/index.md)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
+- [Reference types](reference-types.md)
+- [Nullable value types](../builtin-types/nullable-value-types.md)

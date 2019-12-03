@@ -15,7 +15,7 @@ The examples in this section fall into two categories:
 
 You can query, analyze, and modify text blocks by splitting them into a queryable array of smaller strings by using the <xref:System.String.Split%2A?displayProperty=nameWithType> method or the <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=nameWithType> method. You can split the source text into words, sentences, paragraphs, pages, or any other criteria, and then perform additional splits if they are required in your query.
 
-- [How to: Count Occurrences of a Word in a String (LINQ) (C#)](how-to-count-occurrences-of-a-word-in-a-string-linq.md)  
+- [How to count occurrences of a word in a string (LINQ) (C#)](how-to-count-occurrences-of-a-word-in-a-string-linq.md)  
   Shows how to use LINQ for simple querying over text.
 
 - [How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (C#)](how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md)
@@ -26,7 +26,7 @@ You can query, analyze, and modify text blocks by splitting them into a queryabl
 
   Demonstrates that a string is a queryable type.
 
-- [How to: Combine LINQ Queries with Regular Expressions (C#)](how-to-combine-linq-queries-with-regular-expressions.md)
+- [How to combine LINQ queries with regular expressions (C#)](how-to-combine-linq-queries-with-regular-expressions.md)
 
   Shows how to use regular expressions in LINQ queries for complex pattern matching on filtered query results.
 
@@ -46,7 +46,7 @@ Many different types of text files consist of a series of lines, often with simi
 
   Shows how to reorder fields in a line in a .csv file.
 
-- [How to: Combine and Compare String Collections (LINQ) (C#)](how-to-combine-and-compare-string-collections-linq.md)
+- [How to: combine and compare string collections (LINQ) (C#)](how-to-combine-and-compare-string-collections-linq.md)
 
   Shows how to combine string lists in various ways.
 
@@ -62,7 +62,7 @@ Many different types of text files consist of a series of lines, often with simi
   
   Shows how to create new files by using a single file as a data source.
 
-- [How to: Compute Column Values in a CSV Text File (LINQ) (C#)](how-to-compute-column-values-in-a-csv-text-file-linq.md)
+- [How to compute column values in a CSV text file (LINQ) (C#)](how-to-compute-column-values-in-a-csv-text-file-linq.md)
   
   Shows how to perform mathematical computations on text data in .csv files.
 

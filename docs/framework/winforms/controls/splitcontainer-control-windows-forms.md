@@ -10,7 +10,7 @@ ms.assetid: 2e36f17f-5c39-4fb4-bb09-7ce3ef823402
 The Windows Forms `SplitContainer` control can be thought of as a composite; it is two panels separated by a movable bar. When the mouse pointer is over the bar, the pointer changes shape to show that the bar is movable.  
   
 > [!NOTE]
->  In the **Toolbox**, this control replaces the <xref:System.Windows.Forms.Splitter> control that was there in the previous version of Visual Studio. The `SplitContainer` control is much preferred over the <xref:System.Windows.Forms.Splitter> control. The <xref:System.Windows.Forms.Splitter> class is still included in the .NET Framework for compatibility with existing applications, but we strongly encourage you to use the `SplitContainer` control for new projects.  
+> In the **Toolbox**, this control replaces the <xref:System.Windows.Forms.Splitter> control that was there in the previous version of Visual Studio. The `SplitContainer` control is much preferred over the <xref:System.Windows.Forms.Splitter> control. The <xref:System.Windows.Forms.Splitter> class is still included in the .NET Framework for compatibility with existing applications, but we strongly encourage you to use the `SplitContainer` control for new projects.  
   
  The `SplitContainer` control lets you create complex user interfaces; often, a selection in one panel determines what objects are shown in the other panel. This arrangement is very effective for displaying and browsing information. Having two panels allow you to aggregate information in areas, and the bar, or "splitter," makes it easy for users to resize the panels.  
   

@@ -27,4 +27,4 @@ The **-fullpaths** option causes the compiler to specify the full path to the fi
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)

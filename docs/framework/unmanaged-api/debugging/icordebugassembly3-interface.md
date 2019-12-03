@@ -2,8 +2,6 @@
 title: "ICorDebugAssembly3 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 17fc5d76-75a9-4933-83f0-594de7f973f3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssembly3 Interface
 Logically extends the ICorDebugAssembly interface to provide support for container assemblies and their contained assemblies.  
@@ -18,7 +16,7 @@ Logically extends the ICorDebugAssembly interface to provide support for contain
 ## Remarks  
   
 > [!NOTE]
->  The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
+> The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

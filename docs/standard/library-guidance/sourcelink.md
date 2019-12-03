@@ -17,7 +17,7 @@ Source Link is a technology that enables source code debugging of .NET assemblie
 
 Instructions for using Source Link can be found on the [dotnet/sourcelink](https://github.com/dotnet/sourcelink/blob/master/README.md) GitHub repository.
 
-You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) to confirm that the Source Link metadata has been successfully embedded in the package. Check the `Repository` metadata is present with a comment identifier and that .pdb files are located with each target's .dll.
+You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) to confirm that the Source Link metadata has been successfully embedded in the package. Check the `Repository` metadata is present with a commit identifier and that .pdb files are located with each target's .dll.
 
 ![Source Link in NuGet Package Explorer](./media/sourcelink/nuget-package-explorer-sourcelink.png "Source Link in NuGet Package Explorer")
 
@@ -25,6 +25,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 > [!TIP]
 > You can further enhance a developer's debugging experience by adding debugger attributes to your types.
+>
 > * <xref:System.Diagnostics.DebuggerDisplayAttribute> can customize how a class or field is displayed in the debugger variable windows.
 > * <xref:System.Diagnostics.DebuggerStepThroughAttribute> instructs the debugger to step through the code instead of stepping into the code.
 > * <xref:System.Diagnostics.DebuggerBrowsableAttribute> controls whether a member is displayed in the debugger variable windows.

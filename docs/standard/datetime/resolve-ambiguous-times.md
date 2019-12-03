@@ -9,16 +9,14 @@ helpviewer_keywords:
   - "time zones [.NET Framework], ambiguous time"
   - "ambiguous time [.NET Framework]"
 ms.assetid: 2cf5fb25-492c-4875-9245-98cac8348e97
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Resolve ambiguous times
 
 An ambiguous time is a time that maps to more than one Coordinated Universal Time (UTC). It occurs when the clock time is adjusted back in time, such as during the transition from a time zone's daylight saving time to its standard time. When handling an ambiguous time, you can do one of the following:
 
-* Make an assumption about how the time maps to UTC. For example, you can assume that an ambiguous time is always expressed in the time zone's standard time.
+- Make an assumption about how the time maps to UTC. For example, you can assume that an ambiguous time is always expressed in the time zone's standard time.
 
-* If the ambiguous time is an item of data entered by the user, you can leave it to the user to resolve the ambiguity.
+- If the ambiguous time is an item of data entered by the user, you can leave it to the user to resolve the ambiguity.
 
 This topic shows how to resolve an ambiguous time by assuming that it represents the time zone's standard time.
 
@@ -47,7 +45,7 @@ In this example, all references to the local time zone are made through the <xre
 
 This example requires:
 
-* That the <xref:System> namespace be imported with the `using` statement (required in C# code).
+- That the <xref:System> namespace be imported with the `using` statement (required in C# code).
 
 ## See also
 

@@ -1,5 +1,5 @@
 ---
-title: "Early and Late Binding (Visual Basic)"
+title: "Early and Late Binding"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "early binding [Visual Basic]"
@@ -29,7 +29,7 @@ The Visual Basic compiler performs a process called `binding` when an object is 
  You should use early-bound objects whenever possible, because they allow the compiler to make important optimizations that yield more efficient applications. Early-bound objects are significantly faster than late-bound objects and make your code easier to read and maintain by stating exactly what kind of objects are being used. Another advantage to early binding is that it enables useful features such as automatic code completion and Dynamic Help because the Visual Studio integrated development environment (IDE) can determine exactly what type of object you are working with as you edit the code. Early binding reduces the number and severity of run-time errors because it allows the compiler to report errors when a program is compiled.  
   
 > [!NOTE]
->  Late binding can only be used to access type members that are declared as `Public`. Accessing members declared as `Friend` or `Protected Friend` results in a run-time error.  
+> Late binding can only be used to access type members that are declared as `Public`. Accessing members declared as `Friend` or `Protected Friend` results in a run-time error.  
   
 ## See also
 

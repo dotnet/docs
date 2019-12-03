@@ -9,7 +9,7 @@ ms.assetid: 23cb338e-4b59-4b52-b294-96431f9c9568
 Bitmap effects enable designers and developers to apply visual effects to rendered Windows Presentation Foundation (WPF) content. For example, bitmap effects allow you to easily apply a <xref:System.Windows.Media.Effects.DropShadowBitmapEffect> effect or a blur effect to an image or a button.  
   
 > [!IMPORTANT]
->  In the .NET Framework 4 or later, the <xref:System.Windows.Media.Effects.BitmapEffect> class is obsolete. If you try to use the <xref:System.Windows.Media.Effects.BitmapEffect> class, you will get an obsolete exception. The non-obsolete alternative to the <xref:System.Windows.Media.Effects.BitmapEffect> class is the <xref:System.Windows.Media.Effects.Effect> class. In most situations, the <xref:System.Windows.Media.Effects.Effect> class is significantly faster.  
+> In the .NET Framework 4 or later, the <xref:System.Windows.Media.Effects.BitmapEffect> class is obsolete. If you try to use the <xref:System.Windows.Media.Effects.BitmapEffect> class, you will get an obsolete exception. The non-obsolete alternative to the <xref:System.Windows.Media.Effects.BitmapEffect> class is the <xref:System.Windows.Media.Effects.Effect> class. In most situations, the <xref:System.Windows.Media.Effects.Effect> class is significantly faster.  
 
 <a name="wpf_effects"></a>   
 ## WPF Bitmap Effects  
@@ -28,10 +28,10 @@ Bitmap effects enable designers and developers to apply visual effects to render
 - <xref:System.Windows.Media.Effects.EmbossBitmapEffect> creates a bump mapping of a <xref:System.Windows.Media.Visual> to give the impression of depth and texture from an artificial light source.  
   
 > [!NOTE]
->  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects are rendered in software mode. Any object that applies an effect will also be rendered in software. Performance is degraded the most when using Bitmap effects on large visuals or animating properties of a Bitmap effect. This is not to say that you should not use Bitmap effects in this way at all, but you should use caution and test thoroughly to ensure that your users are getting the experience you expect.  
+> [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects are rendered in software mode. Any object that applies an effect will also be rendered in software. Performance is degraded the most when using Bitmap effects on large visuals or animating properties of a Bitmap effect. This is not to say that you should not use Bitmap effects in this way at all, but you should use caution and test thoroughly to ensure that your users are getting the experience you expect.  
   
 > [!NOTE]
->  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects do not support partial trust execution. An application must have full trust permissions to use bitmap effects.  
+> [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects do not support partial trust execution. An application must have full trust permissions to use bitmap effects.  
   
 <a name="applyeffects"></a>   
 ## How to Apply an Effect  
@@ -46,7 +46,7 @@ Bitmap effects enable designers and developers to apply visual effects to render
  [!code-csharp[EffectsGallery_snip#CodeBehindBlurCodeBehindExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/EffectsGallery_snip/CSharp/blurcodebehindexample.xaml.cs#codebehindblurcodebehindexampleinline)]  
   
 > [!NOTE]
->  When a <xref:System.Windows.Media.Effects.BitmapEffect> is applied to a layout container, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Canvas>, the effect is applied to the visual tree of the element or visual, including all of its child elements.  
+> When a <xref:System.Windows.Media.Effects.BitmapEffect> is applied to a layout container, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Canvas>, the effect is applied to the visual tree of the element or visual, including all of its child elements.  
   
 <a name="customeffects"></a>   
 ## Creating Custom Effects  

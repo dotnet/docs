@@ -16,7 +16,7 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 
 ## Syntax
 
-```shell
+```console
 ![command] [options]
 ```
 
@@ -69,7 +69,7 @@ The SOS Debugging Extension (SOS.dll) helps you debug managed programs in Visual
 |**IP2MD** \<*Code address*>|Displays the `MethodDesc` structure at the specified address in code that has been JIT-compiled.|
 |`ListNearObj` (`lno`) *\<obj_address>*|Displays the objects preceding and following the specified address. The command looks for the address in the garbage collection heap that looks like a valid beginning of a managed object (based on a valid method table) and the object following the argument address.|
 |**MinidumpMode** [**0**] [**1**]|Prevents running unsafe commands when using a minidump.<br /><br /> Pass **0** to disable this feature or **1** to enable this feature. By default, the **MinidumpMode** value is set to **0**.<br /><br /> Minidumps created with the **.dump /m** command or **.dump** command have limited CLR-specific data and allow you to run only a subset of SOS commands correctly. Some commands may fail with unexpected errors because required areas of memory are not mapped or are only partially mapped. This option protects you from running unsafe commands against minidumps.|
-|**Name2EE** \<*module name*> \<*type or method name*><br /><br /> -or-<br /><br /> **Name2EE** \<*module name*>**!**\<*type or method name*>|Displays the `MethodTable` structure and `EEClass` structure for the specified type or method in the specified module.<br /><br /> The specified module must be loaded in the process.<br /><br /> To get the proper type name, browse the module by using the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md). You can also pass `*` as the module name parameter to search all loaded managed modules. The *module name* parameter can also be the debugger's name for a module, such as `mscorlib` or `image00400000`.<br /><br /> This command supports the Windows debugger syntax of <`module`>`!`<`type`>. The type must be fully qualified.|
+|**Name2EE** \<*module name*> \<*type or method name*><br /><br /> -or-<br /><br /> **Name2EE** \<*module name*>**!**\<*type or method name*>|Displays the `MethodTable` structure and `EEClass` structure for the specified type or method in the specified module.<br /><br /> The specified module must be loaded in the process.<br /><br /> To get the proper type name, browse the module by using the [Ildasm.exe (IL Disassembler)](ildasm-exe-il-disassembler.md). You can also pass `*` as the module name parameter to search all loaded managed modules. The *module name* parameter can also be the debugger's name for a module, such as `mscorlib` or `image00400000`.<br /><br /> This command supports the Windows debugger syntax of <`module`>`!`<`type`>. The type must be fully qualified.|
 |**ObjSize** [\<*Object address*>] &#124; [**-aggregate**] [**-stat**]|Displays the size of the specified object. If you do not specify any parameters, the **ObjSize** command displays the size of all objects found on managed threads, displays all garbage collector handles in the process, and totals the size of any objects pointed to by those handles. The **ObjSize** command includes the size of all child objects in addition to the parent.<br /><br /> The **-aggregate** option can be used in conjunction with the **-stat** argument to get a detailed view of the types that are still rooted. By using **!dumpheap -stat** and **!objsize -aggregate -stat**, you can determine which objects are no longer rooted and diagnose various memory issues.|
 |**PrintException** [**-nested**] [**-lines**] [\<*Exception object address*>]<br /><br /> -or-<br /><br /> **PE** [**-nested**] [\<*Exception object address*>]|Displays and formats fields of any object derived from the <xref:System.Exception> class at the specified address. If you do not specify an address, the **PrintException** command displays the last exception thrown on the current thread.<br /><br /> The **-nested** option displays details about nested exception objects.<br /><br /> The **-lines** option displays source information, if available.<br /><br /> You can use this command to format and view the `_stackTrace` field, which is a binary array.|
 |**ProcInfo** [**-env**] [**-time**] [**-mem**]|Displays environment variables for the process, kernel CPU time, and memory usage statistics.|
@@ -99,7 +99,7 @@ You can also use the SOS Debugging Extension by loading it into the [WinDbg.exe 
 
 To load the SOS Debugging Extension into the WinDbg.exe debugger, run the following command in the tool:
 
-```
+```console
 .loadby sos clr
 ```
 
@@ -109,7 +109,7 @@ To use a dump file created on another computer, make sure that the Mscorwks.dll 
 
 To load a specific version of SOS.dll, type the following command into the Windows Debugger:
 
-```
+```console
 .load <full path to sos.dll>
 ```
 
@@ -117,89 +117,89 @@ To load a specific version of SOS.dll, type the following command into the Windo
 
 The following command displays the contents of an array at the address `00ad28d0`.  The display starts from the second element and continues for five elements.
 
-```
+```console
 !dumparray -start 2 -length 5 -detail 00ad28d0
 ```
 
 The following command displays the contents of an assembly at the address `1ca248`.
 
-```
+```console
 !dumpassembly 1ca248
 ```
 
 The following command displays information about the garbage collector heap.
 
-```
+```console
 !dumpheap
 ```
 
 The following command writes the contents of the in-memory stress log to a (default) file called StressLog.txt in the current directory.
 
-```
+```console
 !DumpLog
 ```
 
 The following command displays the `MethodDesc` structure at the address `902f40`.
 
-```
+```console
 !dumpmd 902f40
 ```
 
 The following command displays information about a module at the address `1caa50`.
 
-```
+```console
 !dumpmodule 1caa50
 ```
 
 The following command displays information about an object at the address `a79d40`.
 
-```
+```console
 !DumpObj a79d40
 ```
 
 The following command displays the fields of a value class at the address `00a79d9c` using the method table at the address `0090320c`.
 
-```
+```console
 !DumpVC 0090320c 00a79d9c
 ```
 
 The following command displays the process memory used by the garbage collector.
 
-```
+```console
 !eeheap -gc
 ```
 
 The following command displays all objects scheduled for finalization.
 
-```
+```console
 !finalizequeue
 ```
 
 The following command determines the application domain of an object at the address `00a79d98`.
 
-```
+```console
 !findappdomain 00a79d98
 ```
 
 The following command displays all garbage collector handles in the current process.
 
-```
+```console
 !gcinfo 5b68dbb8
 ```
 
 The following command displays the `MethodTable` and `EEClass` structures for the `Main` method in the class `MainClass` in the module `unittest.exe`.
 
-```
+```console
 !name2ee unittest.exe MainClass.Main
 ```
 
 The following command displays information about the metadata token at the address `02000003` in the module `unittest.exe`.
 
-```
+```console
 !token2ee unittest.exe 02000003
 ```
 
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

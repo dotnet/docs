@@ -24,10 +24,10 @@ The purpose of a `finally` statement is to ensure that the necessary cleanup of 
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
-- [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)
-- [using Statement](../../../csharp/language-reference/keywords/using-statement.md)
-- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)
-- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)
-- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+- [C# Programming Guide](../index.md)
+- [Exceptions and Exception Handling](./index.md)
+- [Exception Handling](./exception-handling.md)
+- [using Statement](../../language-reference/keywords/using-statement.md)
+- [try-catch](../../language-reference/keywords/try-catch.md)
+- [try-finally](../../language-reference/keywords/try-finally.md)
+- [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)

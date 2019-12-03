@@ -63,6 +63,7 @@ For more information on string marshaling, see [Default Marshaling for Strings](
 as `UnmanagedType.BSTR`.  
 > **For most APIs with an output string buffer:**  
 > The passed in character count must include the null. If the returned value is less than the passed in character count the call has succeeded and the value is the number of characters *without* the trailing null. Otherwise the count is the required size of the buffer *including* the null character.  
+>
 > - Pass in 5, get 4: The string is 4 characters long with a trailing null.
 > - Pass in 5, get 6: The string is 5 characters long, need a 6 character buffer to hold the null.  
 > [Windows Data Types for Strings](/windows/desktop/Intl/windows-data-types-for-strings)

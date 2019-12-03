@@ -12,9 +12,9 @@ ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 # \<webRequestModules> Element (Network Settings)
 Specifies modules to use to request information from network hosts.  
   
- \<configuration>  
-\<system.net>  
-\<webRequestModules>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;\<webRequestModules>  
   
 ## Syntax  
   
@@ -33,15 +33,15 @@ Specifies modules to use to request information from network hosts.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[add](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-webrequestmodules-network-settings.md)|Adds a custom Web request module to the application.|  
-|[clear](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-webrequestmodules-network-settings.md)|Removes all registered Web request modules from the application.|  
-|[remove](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-webrequestmodules-network-settings.md)|Removes a custom Web request module from the application.|  
+|[add](add-element-for-webrequestmodules-network-settings.md)|Adds a custom Web request module to the application.|  
+|[clear](clear-element-for-webrequestmodules-network-settings.md)|Removes all registered Web request modules from the application.|  
+|[remove](remove-element-for-webrequestmodules-network-settings.md)|Removes a custom Web request module from the application.|  
   
 ### Parent Elements  
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[system.net](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
+|[system.net](system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Remarks  
  The `webRequestModules` element registers descendants of the <xref:System.Net.WebRequest> class to handle information requests to network hosts. Web request modules must implement the <xref:System.Net.IWebRequestCreate> interface.  
@@ -71,4 +71,4 @@ Specifies modules to use to request information from network hosts.
 
 - <xref:System.Net.WebRequest>
 - <xref:System.Net.IWebRequestCreate>
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+- [Network Settings Schema](index.md)

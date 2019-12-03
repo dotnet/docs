@@ -14,7 +14,8 @@ With .NET Core, you can create and deploy templates that generate projects, file
 In this part of the series you'll learn how to:
 
 > [!div class="checklist"]
-> * Create a _.csproj* project to build a template pack
+>
+> * Create a \*.csproj project to build a template pack
 > * Configure the project file for packing
 > * Install a template from a NuGet package file
 > * Uninstall a template by package ID
@@ -39,7 +40,7 @@ The pack you'll create will include the [item template](cli-templates-create-ite
 
 In your terminal, navigate to the _working_ folder. Create a new project and set the name to `templatepack` and the output folder to the current folder.
 
-```console
+```dotnetcli
 dotnet new console -n templatepack -o .
 ```
 
@@ -97,7 +98,7 @@ The `<ItemGroup>` contains two settings. First, the `<Content>` setting includes
 
 Save this file and then run the pack command
 
-```console
+```dotnetcli
 dotnet pack
 ```
 

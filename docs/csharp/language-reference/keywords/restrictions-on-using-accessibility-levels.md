@@ -29,7 +29,7 @@ The following table summarizes the restrictions on declared accessibility levels
 |[Properties](../../programming-guide/classes-and-structs/properties.md)|The type of a property must be at least as accessible as the property itself.|
 |[Events](../../programming-guide/events/index.md)|The type of an event must be at least as accessible as the event itself.|
 |[Indexers](../../programming-guide/indexers/index.md)|The type and parameter types of an indexer must be at least as accessible as the indexer itself.|
-|[Operators](../../programming-guide/statements-expressions-operators/operators.md)|The return type and parameter types of an operator must be at least as accessible as the operator itself.|
+|[Operators](../operators/index.md)|The return type and parameter types of an operator must be at least as accessible as the operator itself.|
 |[Constructors](../../programming-guide/classes-and-structs/constructors.md)|The parameter types of a constructor must be at least as accessible as the constructor itself.|
 
 ## Example

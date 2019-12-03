@@ -13,7 +13,7 @@ The nodes of the tree are processed from the bottom up. First, an intermediate s
 
 - To rename aliases, you must identify all used aliases to avoid collisions during renaming. To defer the renaming choices in SqlBuilder, use Symbol objects to represent the columns that are candidates for renaming.
 
-![Diagram](../../../../../docs/framework/data/adonet/ef/media/de1ca705-4f7c-4d2d-ace5-afefc6d3cefa.gif "de1ca705-4f7c-4d2d-ace5-afefc6d3cefa")
+![Diagram](./media/de1ca705-4f7c-4d2d-ace5-afefc6d3cefa.gif "de1ca705-4f7c-4d2d-ace5-afefc6d3cefa")
 
 In the first phase, while visiting the expression tree, expressions are grouped into SqlSelectStatements, joins are flattened, and join aliases are flattened. During this pass, Symbol objects represent columns or input aliases that may be renamed.
 
@@ -221,7 +221,7 @@ The IsParentAJoin property helps determine whether a given join can be flattened
 
 Input alias redirecting is accomplished with the symbol table.
 
-To explain input alias redirecting, refer to the first example in [Generating SQL from Command Trees - Best Practices](../../../../../docs/framework/data/adonet/ef/generating-sql-from-command-trees-best-practices.md).  There "a" needed to be redirected to "b" in the projection.
+To explain input alias redirecting, refer to the first example in [Generating SQL from Command Trees - Best Practices](generating-sql-from-command-trees-best-practices.md).  There "a" needed to be redirected to "b" in the projection.
 
 When a SqlSelectStatement object is created, the extent that is the input to the node is put in the From property of the SqlSelectStatement. A Symbol (\<symbol_b>) is created based on the input binding name ("b") to represent that extent and "AS  " + \<symbol_b> is appended to the From Clause.  The symbol is also added to the FromExtents property.
 
@@ -369,9 +369,9 @@ When DbNewInstanceExpression has a collection return type, and defines a new col
 
 - If DbNewInstanceExpression has DbElementExpression as the only argument, it is translated as follows:
 
-    ```
-    NewInstance(Element(X)) =>  SELECT TOP 1 …FROM X
-    ```
+```sql
+NewInstance(Element(X)) =>  SELECT TOP 1 …FROM X
+```
 
 If DbNewInstanceExpression has no arguments (represents an empty table), DbNewInstanceExpression is translated into:
 
@@ -403,9 +403,9 @@ The method that visits DbElementExpression is only invoked for visiting a DbElem
 
 ### DbQuantifierExpression
 
-Depending on the expression type (Any or All), DbQuantifierExpression is translated it as:
+Depending on the expression type (Any or All), DbQuantifierExpression is translated as:
 
-```
+```sql
 Any(input, x) => Exists(Filter(input,x))
 All(input, x) => Not Exists(Filter(input, not(x))
 ```
@@ -414,7 +414,7 @@ All(input, x) => Not Exists(Filter(input, not(x))
 
 In some cases it is possible to collapse the translation of DbNotExpression with its input expression. For example:
 
-```
+```sql
 Not(IsNull(a)) =>  "a IS NOT NULL"
 Not(All(input, x) => Not (Not Exists(Filter(input, not(x))) => Exists(Filter(input, not(x))
 ```
@@ -425,7 +425,7 @@ The reason the second collapse is performed is because inefficiencies were intro
 
 DbIsEmptyExpression is translated as:
 
-```
+```sql
 IsEmpty(input) = Not Exists(input)
 ```
 
@@ -441,4 +441,4 @@ To produce unique names both for extent aliases and for columns, use \<existing_
 
 ## See also
 
-- [SQL Generation in the Sample Provider](../../../../../docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md)
+- [SQL Generation in the Sample Provider](sql-generation-in-the-sample-provider.md)

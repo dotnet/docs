@@ -1,33 +1,28 @@
-- name: Windows Forms Controls
+- name: Windows Forms controls
   href: index.md
   items:
-  - name: Arranging Controls on Windows Forms
-    href: arranging-controls-on-windows-forms.md
+  - name: Arrange controls on Windows Forms
     items:
-    - name: "How to: Align Multiple Controls on Windows Forms"
+    - name: "How to: Align Multiple Controls"
       href: how-to-align-multiple-controls-on-windows-forms.md
-    - name: "How to: Anchor Controls on Windows Forms"
+    - name: "How to: Anchor Controls"
       href: how-to-anchor-controls-on-windows-forms.md
-    - name: "How to: Copy Controls Between Windows Forms"
-      href: how-to-copy-controls-between-windows-forms.md
-    - name: "How to: Dock Controls on Windows Forms"
+    - name: "How to: Dock Controls"
       href: how-to-dock-controls-on-windows-forms.md
-    - name: "How to: Layer Objects on Windows Forms"
+    - name: "How to: Layer Objects"
       href: how-to-layer-objects-on-windows-forms.md
-    - name: "How to: Lock Controls to Windows Forms"
+    - name: "How to: Lock Controls"
       href: how-to-lock-controls-to-windows-forms.md
-    - name: "How to: Position Controls on Windows Forms"
+    - name: "How to: Position Controls"
       href: how-to-position-controls-on-windows-forms.md
-    - name: "How to: Resize Controls on Windows Forms"
+    - name: "How to: Resize Controls"
       href: how-to-resize-controls-on-windows-forms.md
     - name: "How to: Set Grid Options for All Windows Forms"
       href: how-to-set-grid-options-for-all-windows-forms.md
-    - name: "How to: Set the Tab Order on Windows Forms"
+    - name: "How to: Set the Tab Order"
       href: how-to-set-the-tab-order-on-windows-forms.md
-    - name: "Walkthrough: Arranging Controls on Windows Forms Using Snaplines"
+    - name: "Walkthrough: Arrange Controls Using Snaplines"
       href: walkthrough-arranging-controls-on-windows-forms-using-snaplines.md
-    - name: "How to: Arrange Controls with Snaplines and the Grid in Windows Forms"
-      href: how-to-arrange-controls-with-snaplines-and-the-grid-in-windows-forms.md
     - name: "How to: Reassign Existing Controls to a Different Parent"
       href: how-to-reassign-existing-controls-to-a-different-parent.md
     - name: "Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property"
@@ -35,34 +30,29 @@
   - name: Putting Controls on Windows Forms
     href: putting-controls-on-windows-forms.md
     items:
-    - name: "How to: Add Controls to Windows Forms"
+    - name: "How to: Add Controls"
       href: how-to-add-controls-to-windows-forms.md
-    - name: "How to: Add Controls Without a User Interface to Windows Forms"
+    - name: "How to: Add Controls Without a User Interface"
       href: how-to-add-controls-without-a-user-interface-to-windows-forms.md
     - name: "How to: Add to or Remove from a Collection of Controls at Run Time"
       href: how-to-add-to-or-remove-from-a-collection-of-controls-at-run-time.md
     - name: "Walkthrough: Automatically Populating the Toolbox with Custom Components"
       href: walkthrough-automatically-populating-the-toolbox-with-custom-components.md
-    - name: "How to: Add ActiveX Controls to Windows Forms"
+    - name: "How to: Add ActiveX Controls"
       href: how-to-add-activex-controls-to-windows-forms.md
     - name: Considerations When Hosting an ActiveX Control on a Windows Form
       href: considerations-when-hosting-an-activex-control-on-a-windows-form.md
-  - name: Labeling Individual Windows Forms Controls and Providing Shortcuts to Them
-    href: labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md
+  - name: Label controls and provide shortcuts
     items:
-    - name: "How to: Create Access Keys for Windows Forms Controls"
+    - name: Overview
+      href: labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md
+    - name: Create access keys for controls
       href: how-to-create-access-keys-for-windows-forms-controls.md
-    - name: "How to: Create Access Keys for Windows Forms Controls Using the Designer"
-      href: how-to-create-access-keys-for-windows-forms-controls-using-the-designer.md
-    - name: "How to: Set the Text Displayed by a Windows Forms Control"
+    - name: Set the text displayed by a control
       href: how-to-set-the-text-displayed-by-a-windows-forms-control.md
-    - name: "How to: Set the Text Displayed by a Windows Forms Control Using the Designer"
-      href: how-to-set-the-text-displayed-by-a-windows-forms-control-using-the-designer.md
-    - name: "How to: Set the Image Displayed by a Windows Forms Control"
+    - name: Set the image displayed by a control
       href: how-to-set-the-image-displayed-by-a-windows-forms-control.md
-    - name: "How to: Set the Image Displayed by a Windows Forms Control Using the Designer"
-      href: how-to-set-the-image-displayed-by-a-windows-forms-control-using-the-designer.md
-    - name: Providing Accessibility Information for Controls on a Windows Form
+    - name: Provide accessibility information for controls
       href: providing-accessibility-information-for-controls-on-a-windows-form.md
   - name: Controls to Use on Windows Forms
     href: controls-to-use-on-windows-forms.md
@@ -145,7 +135,7 @@
         href: how-to-designate-a-windows-forms-button-as-the-cancel-button.md
       - name: "How to: Designate a Windows Forms Button as the Cancel Button Using the Designer"
         href: designate-a-wf-button-as-the-cancel-button-using-the-designer.md
-      - name: "How to: Respond to Windows Forms Button Clicks"
+      - name: "How to: Respond to Button Clicks"
         href: how-to-respond-to-windows-forms-button-clicks.md
       - name: Ways to Select a Windows Forms Button Control
         href: ways-to-select-a-windows-forms-button-control.md
@@ -154,9 +144,9 @@
       items:
       - name: CheckBox Control Overview
         href: checkbox-control-overview-windows-forms.md
-      - name: "How to: Respond to Windows Forms CheckBox Clicks"
+      - name: "How to: Respond to CheckBox Clicks"
         href: how-to-respond-to-windows-forms-checkbox-clicks.md
-      - name: "How to: Set Options with Windows Forms CheckBox Controls"
+      - name: "How to: Set Options with CheckBox Controls"
         href: how-to-set-options-with-windows-forms-checkbox-controls.md
     - name: CheckedListBox Control
       href: checkedlistbox-control-windows-forms.md
@@ -335,9 +325,9 @@
           href: how-to-change-the-order-of-columns-in-the-windows-forms-datagridview-control.md
         - name: "How to: Add an Unbound Column to a Data-Bound Windows Forms DataGridView Control"
           href: unbound-column-to-a-data-bound-datagridview.md
-        - name: "How to: Bind Objects to Windows Forms DataGridView Controls"
+        - name: "How to: Bind Objects to DataGridView Controls"
           href: how-to-bind-objects-to-windows-forms-datagridview-controls.md
-        - name: "How to: Access Objects Bound to Windows Forms DataGridView Rows"
+        - name: "How to: Access Objects Bound to DataGridView Rows"
           href: how-to-access-objects-bound-to-windows-forms-datagridview-rows.md
         - name: "How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List"
           href: access-objects-in-a-wf-datagridviewcomboboxcell-drop-down-list.md
@@ -467,7 +457,7 @@
       items:
       - name: DomainUpDown Control Overview
         href: domainupdown-control-overview-windows-forms.md
-      - name: "How to: Add Items to Windows Forms DomainUpDown Controls Programmatically"
+      - name: "How to: Add Items to DomainUpDown Controls Programmatically"
         href: how-to-add-items-to-windows-forms-domainupdown-controls-programmatically.md
       - name: "How to: Remove Items from Windows Forms DomainUpDown Controls"
         href: how-to-remove-items-from-windows-forms-domainupdown-controls.md
@@ -1183,38 +1173,35 @@
         href: how-to-use-a-background-thread-to-search-for-files.md
   - name: Windows Forms Controls in the .NET Framework by Function
     href: windows-forms-controls-by-function.md
-  - name: Developing Windows Forms Controls at Design Time
-    href: developing-windows-forms-controls-at-design-time.md
+  - name: Develop Controls at Design Time
     items:
-    - name: "Walkthrough: Authoring a Composite Control with Visual Basic"
-      href: walkthrough-authoring-a-composite-control-with-visual-basic.md
-    - name: "Walkthrough: Authoring a Composite Control with Visual C#"
+    - name: Overview
+      href: developing-windows-forms-controls-at-design-time.md
+    - name: "Walkthrough: Author a Composite Control"
       href: walkthrough-authoring-a-composite-control-with-visual-csharp.md
-    - name: "Walkthrough: Inheriting from a Windows Forms Control with Visual Basic"
-      href: walkthrough-inheriting-from-a-windows-forms-control-with-visual-basic.md
-    - name: "Walkthrough: Inheriting from a Windows Forms Control with Visual C#"
+    - name: "Walkthrough: Inherit from a Control"
       href: walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md
-    - name: "Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls"
+    - name: "Walkthrough: Perform Common Tasks Using Smart Tags"
       href: performing-common-tasks-using-smart-tags-on-wf-controls.md
-    - name: "Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute"
+    - name: "Walkthrough: Serialize Collections of Standard Types"
       href: serializing-collections-designerserializationvisibilityattribute.md
-    - name: "Walkthrough: Debugging Custom Windows Forms Controls at Design Time"
+    - name: "Walkthrough: Debug Custom Controls"
       href: walkthrough-debugging-custom-windows-forms-controls-at-design-time.md
-    - name: "Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features"
+    - name: "Walkthrough: Create a Control That Takes Advantage of Design-Time Features"
       href: creating-a-wf-control-design-time-features.md
-    - name: "How to: Author Controls for Windows Forms"
+    - name: "How to: Author Controls"
       href: how-to-author-controls-for-windows-forms.md
     - name: "How to: Author Composite Controls"
       href: how-to-author-composite-controls.md
     - name: "How to: Inherit from the UserControl Class"
       href: how-to-inherit-from-the-usercontrol-class.md
-    - name: "How to: Inherit from Existing Windows Forms Controls"
+    - name: "How to: Inherit from Existing Controls"
       href: how-to-inherit-from-existing-windows-forms-controls.md
     - name: "How to: Inherit from the Control Class"
       href: how-to-inherit-from-the-control-class.md
-    - name: "How to: Align a Control to the Edges of Forms at Design Time"
+    - name: "How to: Align a Control to the Edges of Forms"
       href: how-to-align-a-control-to-the-edges-of-forms-at-design-time.md
-    - name: "How to: Display a Control in the Choose Toolbox Items Dialog Box"
+    - name: "How to: Display a Control in Choose Toolbox Items"
       href: how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md
     - name: "How to: Provide a Toolbox Bitmap for a Control"
       href: how-to-provide-a-toolbox-bitmap-for-a-control.md
@@ -1222,5 +1209,5 @@
       href: how-to-test-the-run-time-behavior-of-a-usercontrol.md
     - name: Design-Time Errors in the Windows Forms Designer
       href: design-time-errors-in-the-windows-forms-designer.md
-    - name: Troubleshooting Control and Component Authoring
+    - name: Troubleshoot Control and Component Authoring
       href: troubleshooting-control-and-component-authoring.md

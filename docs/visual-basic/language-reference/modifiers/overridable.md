@@ -1,5 +1,5 @@
 ---
-title: "Overridable (Visual Basic)"
+title: "Overridable"
 ms.date: 07/20/2015
 f1_keywords: 
   - "Overridable"

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: d4755569-85b8-4ff4-bf50-0e608e76429f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInternalFrame2 Interface
 Provides information about internal frames, including stack address and position in relation to ICorDebugFrame objects.  
@@ -31,7 +29,7 @@ Provides information about internal frames, including stack address and position
  This interface extends the ICorDebugInternalFrame interface.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

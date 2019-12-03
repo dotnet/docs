@@ -1,5 +1,5 @@
 ---
-title: "Scope of Default Namespaces in Visual Basic"
+title: "Scope of Default Namespaces"
 ms.date: 07/20/2015
 ms.assetid: d4cce80c-342f-4097-be8b-40ab0bfa90ba
 ---
@@ -44,7 +44,7 @@ End Module
 ### Comments  
  This example produces the following result:  
   
-```  
+```console  
 Result set follows:  
 End of result set  
 ```  
@@ -85,7 +85,7 @@ End Module
 ### Comments  
  This example produces the following result:  
   
-```  
+```console  
 Result set follows:  
 1  
 2  
@@ -95,4 +95,4 @@ End of result set
   
 ## See also
 
-- [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+- [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a17b3155-7216-4e16-8c9f-abce21f549e7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IEnumReferenceIdentity Interface
 Serves as an enumerator for a collection of `IReferenceIdentity` objects.  
@@ -30,7 +28,7 @@ Serves as an enumerator for a collection of `IReferenceIdentity` objects.
 |`IEnumReferenceIdentity::Skip`|Moves the instruction pointer forward by the specified number of elements, starting at the current position.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   
@@ -38,5 +36,5 @@ Serves as an enumerator for a collection of `IReferenceIdentity` objects.
   
 ## See also
 
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
-- [IReferenceIdentity Interface](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md)
+- [Fusion Interfaces](fusion-interfaces.md)
+- [IReferenceIdentity Interface](ireferenceidentity-interface.md)

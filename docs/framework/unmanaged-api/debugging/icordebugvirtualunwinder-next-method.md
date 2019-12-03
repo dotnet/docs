@@ -2,8 +2,6 @@
 title: "ICorDebugVirtualUnwinder::Next Method"
 ms.date: "03/30/2017"
 ms.assetid: 790e0426-e5cd-49fd-a792-f8c8635d72fe
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVirtualUnwinder::Next Method
 Advances to the caller's context.  
@@ -26,7 +24,7 @@ HRESULT Next();
  The stack walker should ensure that it makes forward progress, so that eventually a call to `Next` will return a failing HRESULT or `CORDBG_S_AT_END_OF_STACK`. Returning `S_OK` indefinitely may cause an infinite loop.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

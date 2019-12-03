@@ -2,15 +2,13 @@
 title: "ICorDebugExceptionDebugEvent::GetFlags Method"
 ms.date: "03/30/2017"
 ms.assetid: 73225303-8852-487e-9a0e-9f0cb95e99d9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugExceptionDebugEvent::GetFlags Method
 Gets a flag that indicates whether the exception can be intercepted.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFlags(  
    [out] CorDebugExceptionFlags *pdwFlags  
 );  
@@ -23,7 +21,7 @@ HRESULT GetFlags(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

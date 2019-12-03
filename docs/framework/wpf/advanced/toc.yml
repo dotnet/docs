@@ -1,4 +1,4 @@
-- name: Advanced
+- name: Advanced WPF Areas
   href: index.md
   items:
   - name: WPF Architecture
@@ -56,7 +56,7 @@
         href: mc-ignorable-attribute.md
       - name: "mc:ProcessContent Attribute"
         href: mc-processcontent-attribute.md
-  - name: Base Elements
+  - name: Base Element Classes
     href: base-elements.md
     items:
     - name: Base Elements Overview
@@ -104,7 +104,7 @@
         href: how-to-find-an-element-by-its-name.md
       - name: Override the Logical Tree
         href: how-to-override-the-logical-tree.md
-  - name: Properties
+  - name: WPF Property System
     href: properties-wpf.md
     items:
     - name: Dependency Properties Overview

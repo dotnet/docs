@@ -38,4 +38,4 @@ SQL Server Compact is the default database installed with Visual Studio. For mor
   
 ## See also
 
-- [Reference](../../../../../../docs/framework/data/adonet/sql/linq/reference.md)
+- [Reference](reference.md)

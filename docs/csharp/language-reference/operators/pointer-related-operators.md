@@ -42,7 +42,7 @@ The unary `&` operator returns the address of its operand:
 
 [!code-csharp[address of local](~/samples/csharp/language-reference/operators/PointerOperators.cs#AddressOf)]
 
-The operand of the `&` operator must be a fixed variable. *Fixed* variables are variables that reside in storage locations that are unaffected by operation of the [garbage collector](../../../standard/garbage-collection/index.md). In the preceding example, the local variable `number` is a fixed variable, because it resides on the stack. Variables that reside in storage locations that can be affected by the garbage collector (for example, relocated) are called *movable* variables. Object fields and array elements are examples of movable variables. You can get the address of a movable variable if you "fix", or "pin", it with the [fixed](../keywords/fixed-statement.md) statement. The obtained address is valid only for the duration of the `fixed` statement block. The following example shows how to use the `fixed` statement and the `&` operator:
+The operand of the `&` operator must be a fixed variable. *Fixed* variables are variables that reside in storage locations that are unaffected by operation of the [garbage collector](../../../standard/garbage-collection/index.md). In the preceding example, the local variable `number` is a fixed variable, because it resides on the stack. Variables that reside in storage locations that can be affected by the garbage collector (for example, relocated) are called *movable* variables. Object fields and array elements are examples of movable variables. You can get the address of a movable variable if you "fix", or "pin", it with a [`fixed` statement](../keywords/fixed-statement.md). The obtained address is valid only inside the block of a `fixed` statement. The following example shows how to use a `fixed` statement and the `&` operator:
 
 [!code-csharp[address of fixed](~/samples/csharp/language-reference/operators/PointerOperators.cs#AddressOfFixed)]
 
@@ -64,7 +64,7 @@ The binary `*` operator computes the [product](arithmetic-operators.md#multiplic
 
 ## Pointer member access operator ->
 
-The `->` operator combines [pointer indirection](#pointer-indirection-operator-) and [member access](member-access-operators.md#member-access-operator-). That is, if `x` is a pointer of type `T*` and `y` is an accessible member of `T`, an expression of the form
+The `->` operator combines [pointer indirection](#pointer-indirection-operator-) and [member access](member-access-operators.md#member-access-operator-). That is, if `x` is a pointer of type `T*` and `y` is an accessible member of type `T`, an expression of the form
 
 ```csharp
 x->y
@@ -118,7 +118,7 @@ For a pointer `p` of type `T*` and an expression `n` of a type implicitly conver
 - Both `p + n` and `n + p` expressions produce a pointer of type `T*` that results from adding `n * sizeof(T)` to the address given by `p`.
 - The `p - n` expression produces a pointer of type `T*` that results from subtracting `n * sizeof(T)` from the address given by `p`.
 
-The [`sizeof` operator](../keywords/sizeof.md) obtains the size of a type in bytes.
+The [`sizeof` operator](sizeof.md) obtains the size of a type in bytes.
 
 The following example demonstrates the usage of the `+` operator with a pointer:
 
@@ -160,7 +160,7 @@ The following list orders pointer related operators starting from the highest pr
 
 Use parentheses, `()`, to change the order of evaluation imposed by operator precedence.
 
-For the complete list of C# operators ordered by precedence level, see [C# operators](index.md).
+For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
 ## Operator overloadability
 
@@ -187,4 +187,4 @@ For more information, see the following sections of the [C# language specificati
 - [unsafe keyword](../keywords/unsafe.md)
 - [fixed keyword](../keywords/fixed-statement.md)
 - [stackalloc operator](stackalloc.md)
-- [sizeof operator](../keywords/sizeof.md)
+- [sizeof operator](sizeof.md)

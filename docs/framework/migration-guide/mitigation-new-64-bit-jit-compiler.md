@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "JIT compilation, 64-bit"
   - "RyuJIT compiler"
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: New 64-bit JIT Compiler
 Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT compiler for just-in-time compilation. This change does not affect compilation with the  32-bit JIT compiler.  
@@ -16,7 +14,7 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
  In some cases, compilation with the new 64-bit JIT compiler results in a runtime exception or in behavior that is not observed when executing code compiled by the older 64-bit JIT compiler. The known differences include the following:  
   
 > [!IMPORTANT]
->  All of these known issues have been addressed in the new 64-bit compiler released with the .NET Framework 4.6.2. Most have also been addressed in service releases of the .NET Framework 4.6 and 4.6.1 that are included with Windows Update. You can eliminate these issues by ensuring that your version of Windows is up to date, or by upgrading to the .NET Framework 4.6.2.  
+> All of these known issues have been addressed in the new 64-bit compiler released with the .NET Framework 4.6.2. Most have also been addressed in service releases of the .NET Framework 4.6 and 4.6.1 that are included with Windows Update. You can eliminate these issues by ensuring that your version of Windows is up to date, or by upgrading to the .NET Framework 4.6.2.  
   
 - Under certain conditions, an unboxing operation may throw a <xref:System.NullReferenceException> in Release builds with optimization turned on.  
   
@@ -46,7 +44,7 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
 ## Mitigation of other issues  
  If you encounter any other difference in behavior between code compiled with the older 64-bit compiler and the new 64-bit JIT compiler, or between the debug and release versions of your app that are both compiled with the new 64-bit JIT compiler, you can do the following to compile your app with the older 64-bit JIT compiler:  
   
-- On a per-application basis, you can add the [\<useLegacyJit>](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md) element to your application's configuration file. The following disables compilation with the new 64-bit JIT compiler and instead uses the legacy 64-bit JIT compiler.  
+- On a per-application basis, you can add the [\<useLegacyJit>](../configure-apps/file-schema/runtime/uselegacyjit-element.md) element to your application's configuration file. The following disables compilation with the new 64-bit JIT compiler and instead uses the legacy 64-bit JIT compiler.  
   
     ```xml  
     <?xml version ="1.0"?>  
@@ -65,5 +63,5 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
   
 ## See also
 
-- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md)
-- [\<useLegacyJit> Element](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md)
+- [Application compatibility](application-compatibility.md)
+- [\<useLegacyJit> Element](../configure-apps/file-schema/runtime/uselegacyjit-element.md)

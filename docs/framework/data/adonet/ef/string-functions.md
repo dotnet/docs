@@ -42,5 +42,5 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides `String` fu
   
 ## See also
 
-- [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)
-- [Known Issues in SqlClient for Entity Framework](../../../../../docs/framework/data/adonet/ef/known-issues-in-sqlclient-for-entity-framework.md)
+- [SqlClient for Entity Framework Functions](sqlclient-for-ef-functions.md)
+- [Known Issues in SqlClient for Entity Framework](known-issues-in-sqlclient-for-entity-framework.md)

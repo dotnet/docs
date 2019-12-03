@@ -21,7 +21,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
  A <xref:System.Windows.Media.Transform> defines how to map, or transform, points from one coordinate space to another coordinate space. This mapping is described by a transformation <xref:System.Windows.Media.Matrix>, which is a collection of three rows with three columns of <xref:System.Double> values.  
   
 > [!NOTE]
->  Windows Presentation Foundation (WPF) uses row-major matrices. Vectors are expressed as row-vectors, not column vectors.  
+> Windows Presentation Foundation (WPF) uses row-major matrices. Vectors are expressed as row-vectors, not column vectors.  
   
  The following table shows the structure of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] matrix.  
   
@@ -140,7 +140,7 @@ LayoutTransform used to rotate the button
   
 <a name="freezable_features"></a>   
 ## Freezable Features  
- Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Transform> class  provide several special features: <xref:System.Windows.Media.Transform> objects can be declared as [resources](../advanced/xaml-resources.md), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  
+ Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Transform> class  provide several special features: <xref:System.Windows.Media.Transform> objects can be declared as [resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  
   
 ## See also
 

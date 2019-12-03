@@ -1,13 +1,16 @@
 ---
 title: Introduction to C# - interactive tutorials
 description: Learn C# in your browser, and get started with your own development environment
-ms.date: 01/30/2018
+ms.date: 08/22/2019
 ms.custom: mvc
 ---
 # Introduction to C\#
 
 Welcome to the introduction to C# tutorials. These start with interactive lessons
-that you can run in your browser.
+that you can run in your browser. You can learn the basics of C# from the
+[C# 101 video series](https://aka.ms/dotnet3-csharp) before starting these interactive lessons.
+
+> [!VIDEO https://channel9.msdn.com/Series/CSharp-101/What-is-C/player]
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
@@ -61,4 +64,4 @@ This tutorial assumes that you have finished the lessons listed above.
 This final tutorial is only available to run on your machine, using your own local development environment and .NET Core.
 You'll build a console application and see the basic object-oriented features that are part of the C# language.
 
-This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://www.microsoft.com/net/download) and [Visual Studio Code](https://code.visualstudio.com/).
+This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/).

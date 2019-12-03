@@ -29,7 +29,7 @@ The Discovery specification does not require that endpoints that participate in 
 ```  
   
 > [!NOTE]
->  The `PrefixList` was added in the 2008 Discovery version protocol.  
+> The `PrefixList` was added in the 2008 Discovery version protocol.  
   
  To compute the signature, the sample determines the expanded signature items. An XML signature (`SignedInfo`) is created, using the `ds` namespace prefix, as required by the WS-Discovery specification. The body and all the headers in discovery and addressing namespaces are referenced in the signature, so they cannot be tampered with. Each referenced element is transformed using the Exclusive Canonicalization (http://www.w3.org/2001/10/xml-exc-c14n# ), and then an SHA-1 digest value is computed (http://www.w3.org/2000/09/xmldsig#sha1 ). Based on all referenced elements and their digest values, the signature value is computed using the RSA algorithm (http://www.w3.org/2000/09/xmldsig#rsa-sha1 ).  
   
@@ -50,7 +50,7 @@ The Discovery specification does not require that endpoints that participate in 
 - **AnnouncementListener**: A self-hosted service that listens for online and offline announcements and uses the secure announcement endpoint.  
   
 > [!NOTE]
->  If Setup.bat is run multiple times, the certificate manager prompts you for choosing a certificate to add, as there are duplicate certificates. In that case, Setup.bat should be aborted and Cleanup.bat should be called, because the duplicates have already been created. Cleanup.bat also prompts you to choose a certificate to delete. Select a certificate from the list and continue executing Cleanup.bat until no certificates are remaining.  
+> If Setup.bat is run multiple times, the certificate manager prompts you for choosing a certificate to add, as there are duplicate certificates. In that case, Setup.bat should be aborted and Cleanup.bat should be called, because the duplicates have already been created. Cleanup.bat also prompts you to choose a certificate to delete. Select a certificate from the list and continue executing Cleanup.bat until no certificates are remaining.  
   
 #### To use this sample  
   
@@ -61,10 +61,10 @@ The Discovery specification does not require that endpoints that participate in 
 3. After you are done with the sample, execute the Cleanup.bat script that removes the certificates created for this sample.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DiscoveryScenario`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DiscoveryScenario`  

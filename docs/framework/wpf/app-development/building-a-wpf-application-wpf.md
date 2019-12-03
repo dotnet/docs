@@ -18,11 +18,11 @@ Windows Presentation Foundation (WPF) applications can be built as .NET Framewor
 
 A WPF application can be compiled in the following ways:
 
-- Command-line. The application must contain only code (no XAML) and an application definition file. For more information, see [Command-line Building With csc.exe](~/docs/csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Building from the Command Line (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/building-from-the-command-line.md).
+- Command-line. The application must contain only code (no XAML) and an application definition file. For more information, see [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Building from the Command Line (Visual Basic)](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).
 
 - Microsoft Build Engine (MSBuild). In addition to the code and XAML files, the application must contain an MSBuild project file. For more information, see "MSBuild".
 
-- Visual Studio. Visual Studio is an integrated development environment that compiles WPF applications with MSBuild and includes a visual designer for creating UI. For more information, see [Write and manage code using Visual Studio](/visualstudio/ide/index-writing-code) and [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).
+- Visual Studio. Visual Studio is an integrated development environment that compiles WPF applications with MSBuild and includes a visual designer for creating UI. For more information, see [Write and manage code using Visual Studio](/visualstudio/ide/index-writing-code) and [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio).
 
 <a name="The_Windows_Presentation_Foundation_Build_Pipeline"></a>
 
@@ -36,17 +36,17 @@ When a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] pro
 
 ### Pre-Build Initializations
 
-Before building, [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] determines the location of important tools and libraries, including the following:
+Before building, MSBuild determines the location of important tools and libraries, including the following:
 
 - The .NET Framework.
 
-- The [!INCLUDE[TLA2#tla_wcsdk](../../../../includes/tla2sharptla-wcsdk-md.md)] directories.
+- The Windows SDK directories.
 
 - The location of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] reference assemblies.
 
 - The property for the assembly search paths.
 
-The first location where [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] searches for assemblies is the reference assembly directory (%ProgramFiles%\Reference Assemblies\Microsoft\Framework\v3.0\\). During this step, the build process also initializes the various properties and item groups and performs any required cleanup work.
+The first location where MSBuild searches for assemblies is the reference assembly directory (%ProgramFiles%\Reference Assemblies\Microsoft\Framework\v3.0\\). During this step, the build process also initializes the various properties and item groups and performs any required cleanup work.
 
 <a name="Resolving_references"></a>
 
@@ -58,7 +58,7 @@ The build process locates and binds the assemblies required to build the applica
 
 ### Markup Compilation—Pass 1
 
-In this step, [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files are parsed and compiled so that the runtime does not spend time parsing [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] and validating property values. The compiled [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file is pre-tokenized so that, at run time, loading it should be much faster than loading a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file.
+In this step, [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] files are parsed and compiled so that the runtime does not spend time parsing XML and validating property values. The compiled [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file is pre-tokenized so that, at run time, loading it should be much faster than loading a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file.
 
 During this step, the following activities take place for every [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file that is a `Page` build item:
 
@@ -102,7 +102,7 @@ Public Sub InitializeComponent() _
 End Sub
 ```
 
-By default, markup compilation runs in the same <xref:System.AppDomain> as the [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] engine. This provides significant performance gains. This behavior can be toggled with the `AlwaysCompileMarkupFilesInSeparateDomain` property. This has the advantage of unloading all reference assemblies by unloading the separate <xref:System.AppDomain>.
+By default, markup compilation runs in the same <xref:System.AppDomain> as the MSBuild engine. This provides significant performance gains. This behavior can be toggled with the `AlwaysCompileMarkupFilesInSeparateDomain` property. This has the advantage of unloading all reference assemblies by unloading the separate <xref:System.AppDomain>.
 
 <a name="Pass_2_of_Markup_Compilation"></a>
 
@@ -128,15 +128,15 @@ The core compile step involves compilation of code files. This is orchestrated b
 
 ### Manifest Generation
 
-At the end of the build process, after all the application assemblies and content files are ready, the [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] manifests for the application are generated.
+At the end of the build process, after all the application assemblies and content files are ready, the ClickOnce manifests for the application are generated.
 
-The deployment manifest file describes the deployment model: the current version, update behavior, and publisher identity along with digital signature. This manifest is intended to be authored by administrators who handle deployment. The file extension is .xbap (for [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)]) and .application for installed applications. The former is dictated by the `HostInBrowser` project property and as a result the manifest identifies the application as browser-hosted.
+The deployment manifest file describes the deployment model: the current version, update behavior, and publisher identity along with digital signature. This manifest is intended to be authored by administrators who handle deployment. The file extension is .xbap (for XAML browser applications (XBAPs)) and .application for installed applications. The former is dictated by the `HostInBrowser` project property and as a result the manifest identifies the application as browser-hosted.
 
-The application manifest (an .exe.manifest file) describes the application assemblies and dependent libraries and lists permissions required by the application. This file is intended to be authored by the application developer. In order to launch a [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] application, a user opens the application's deployment manifest file.
+The application manifest (an .exe.manifest file) describes the application assemblies and dependent libraries and lists permissions required by the application. This file is intended to be authored by the application developer. In order to launch a ClickOnce application, a user opens the application's deployment manifest file.
 
-These manifest files are always created for [!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)]. For installed applications, they are not created unless the `GenerateManifests` property is specified in the project file with value `true`.
+These manifest files are always created for XBAPs. For installed applications, they are not created unless the `GenerateManifests` property is specified in the project file with value `true`.
 
-[!INCLUDE[TLA2#tla_xbap#plural](../../../../includes/tla2sharptla-xbapsharpplural-md.md)] get two additional permissions over and above those permissions assigned to typical Internet zone applications: <xref:System.Security.Permissions.WebBrowserPermission> and <xref:System.Security.Permissions.MediaPermission>. The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] build system declares those permissions in the application manifest.
+XBAPs get two additional permissions over and above those permissions assigned to typical Internet zone applications: <xref:System.Security.Permissions.WebBrowserPermission> and <xref:System.Security.Permissions.MediaPermission>. The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] build system declares those permissions in the application manifest.
 
 <a name="Incremental_Build_Support"></a>
 

@@ -20,7 +20,7 @@ In the .NET Framework version 2.0, the core XML classes have been enhanced to in
 - The **ValueAs** and <xref:System.Xml.XPath.XPathNavigator.TypedValue%2A> properties on the <xref:System.Xml.XPath.XPathNavigator> class return a node value and convert it to a CLR value in a single method call.  
   
 > [!NOTE]
->  In the .NET Framework version 1.0 the <xref:System.Xml.XmlConvert> class was needed to convert between XML Schema and CLR types.  
+> In the .NET Framework version 1.0 the <xref:System.Xml.XmlConvert> class was needed to convert between XML Schema and CLR types.  
   
 ## In This Section  
  [Mapping XML Data Types to CLR Types](../../../../docs/standard/data/xml/mapping-xml-data-types-to-clr-types.md)  

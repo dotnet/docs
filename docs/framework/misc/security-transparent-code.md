@@ -10,24 +10,12 @@ ms.author: "mairaw"
 ---
 # Security-Transparent Code
 
-<a name="top"></a>
-
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
 Security involves three interacting pieces: sandboxing, permissions, and enforcement. Sandboxing refers to the practice of creating isolated domains where some code is treated as fully trusted and other code is restricted to the permissions in the grant set for the sandbox. The application code that runs within the grant set of the sandbox is considered to be transparent; that is, it cannot perform any operations that can affect security. The grant set for the sandbox is determined by evidence (<xref:System.Security.Policy.Evidence> class). Evidence identifies what specific permissions are required by sandboxes, and what kinds of sandboxes can be created. Enforcement refers to allowing transparent code to execute only within its grant set.
 
 > [!IMPORTANT]
-> Security policy was a key element in previous versions of the .NET Framework. Starting with the .NET Framework 4, security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](../../../docs/framework/misc/code-access-security-policy-compatibility-and-migration.md).
-
-This topic describes the transparency model in more detail. It contains the following sections:
-
-- [Purpose of the Transparency Model](#purpose)
-
-- [Specifying the Transparency Level](#level)
-
-- [Transparency Enforcement](#enforcement)
-
-<a name="purpose"></a>
+> Security policy was a key element in previous versions of the .NET Framework. Starting with the .NET Framework 4, security policy is obsolete. The elimination of security policy is separate from security transparency. For information about the effects of this change, see [Code Access Security Policy Compatibility and Migration](code-access-security-policy-compatibility-and-migration.md).
 
 ## Purpose of the Transparency Model
 
@@ -42,10 +30,6 @@ Transparency was introduced in the .NET Framework version 2.0 to simplify the se
 
 > [!NOTE]
 > When you develop a partially trusted application, you have to be aware of the permission requirements for your target hosts. You can develop an application that uses resources that are not allowed by some hosts. This application will compile without error, but will fail when it is loaded into the hosted environment. If you have developed your application using Visual Studio, you can enable debugging in partial trust or in a restricted permission set from the development environment. For more information, see [How to: Debug a ClickOnce Application with Restricted Permissions](/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions). The Calculate Permissions feature provided for ClickOnce applications is also available for any partially trusted application.
-
-[Back to top](#top)
-
-<a name="level"></a>
 
 ## Specifying the Transparency Level
 
@@ -102,15 +86,11 @@ The level 1 transparency model has the following limitations:
 
 - The potential exists for transparent code to do harmful things when run in full trust.
 
-[Back to top](#top)
-
-<a name="enforcement"></a>
-
 ## Transparency Enforcement
 
 Transparency rules are not enforced until transparency is calculated. At that time, an <xref:System.InvalidOperationException> is thrown if a transparency rule is violated. The time that transparency is calculated depends on multiple factors and cannot be predicted. It is calculated as late as possible. In the .NET Framework 4, assembly-level transparency calculation occurs sooner than it does in the .NET Framework 2.0. The only guarantee is that transparency calculation will occur by the time it is needed. This is similar to how the just-in-time (JIT) compiler can change the point when a method is compiled and any errors in that method are detected. Transparency calculation is invisible if your code does not have any transparency errors.
 
 ## See also
 
-- [Security-Transparent Code, Level 1](../../../docs/framework/misc/security-transparent-code-level-1.md)
-- [Security-Transparent Code, Level 2](../../../docs/framework/misc/security-transparent-code-level-2.md)
+- [Security-Transparent Code, Level 1](security-transparent-code-level-1.md)
+- [Security-Transparent Code, Level 2](security-transparent-code-level-2.md)

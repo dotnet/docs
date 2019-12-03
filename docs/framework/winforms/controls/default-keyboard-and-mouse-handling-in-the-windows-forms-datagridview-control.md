@@ -16,7 +16,7 @@ ms.assetid: 4519b928-bfc8-4e8b-bb9c-b1e76a0ca552
 The following tables describe how users can interact with the <xref:System.Windows.Forms.DataGridView> control through a keyboard and a mouse.  
   
 > [!NOTE]
->  To customize keyboard behavior, you can handle standard keyboard events such as <xref:System.Windows.Forms.Control.KeyDown>. In edit mode, however, the hosted editing control receives the keyboard input and the keyboard events do not occur for the <xref:System.Windows.Forms.DataGridView> control. To handle editing control events, attach your handlers to the editing control in an <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event handler. Alternatively, you can customize keyboard behavior in a <xref:System.Windows.Forms.DataGridView> subclass by overriding the <xref:System.Windows.Forms.DataGridView.ProcessDialogKey%2A> and <xref:System.Windows.Forms.DataGridView.ProcessDataGridViewKey%2A> methods.  
+> To customize keyboard behavior, you can handle standard keyboard events such as <xref:System.Windows.Forms.Control.KeyDown>. In edit mode, however, the hosted editing control receives the keyboard input and the keyboard events do not occur for the <xref:System.Windows.Forms.DataGridView> control. To handle editing control events, attach your handlers to the editing control in an <xref:System.Windows.Forms.DataGridView.EditingControlShowing> event handler. Alternatively, you can customize keyboard behavior in a <xref:System.Windows.Forms.DataGridView> subclass by overriding the <xref:System.Windows.Forms.DataGridView.ProcessDialogKey%2A> and <xref:System.Windows.Forms.DataGridView.ProcessDataGridViewKey%2A> methods.  
   
 ## Default keyboard handling  
   
@@ -74,7 +74,7 @@ The following tables describe how users can interact with the <xref:System.Windo
 ### Basic mouse handling
   
 > [!NOTE]
->  Clicking a cell with the left mouse button always changes the current cell. Clicking a cell with the right mouse button opens a shortcut menu, when one is available.  
+> Clicking a cell with the left mouse button always changes the current cell. Clicking a cell with the right mouse button opens a shortcut menu, when one is available.  
   
 |Mouse action|Description|  
 |------------------|-----------------|  

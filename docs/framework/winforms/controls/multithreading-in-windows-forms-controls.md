@@ -10,7 +10,7 @@ ms.assetid: c311d652-0f26-45fa-bdcc-b1615d73ce4e
 In many applications, you can make your user interface (UI) more responsive by performing time-consuming operations on another thread. A number of tools are available for multithreading your Windows Forms controls, including the <xref:System.Threading> namespace, the <xref:System.Windows.Forms.Control.BeginInvoke%2A?displayProperty=nameWithType> method, and the `BackgroundWorker` component.  
   
 > [!NOTE]
->  The `BackgroundWorker` component replaces and adds functionality to the <xref:System.Threading> namespace and the <xref:System.Windows.Forms.Control.BeginInvoke%2A?displayProperty=nameWithType> method; however, these are retained for both backward compatibility and future use, if you choose. For more information, see [BackgroundWorker Component Overview](backgroundworker-component-overview.md).  
+> The `BackgroundWorker` component replaces and adds functionality to the <xref:System.Threading> namespace and the <xref:System.Windows.Forms.Control.BeginInvoke%2A?displayProperty=nameWithType> method; however, these are retained for both backward compatibility and future use, if you choose. For more information, see [BackgroundWorker Component Overview](backgroundworker-component-overview.md).  
   
 ## In This Section  
  [How to: Make Thread-Safe Calls to Windows Forms Controls](how-to-make-thread-safe-calls-to-windows-forms-controls.md)  

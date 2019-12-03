@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetPropertyOrigin function [.NET WMI and performance counters]"
 topic_type:
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # GetPropertyOrigin function
@@ -71,7 +69,7 @@ The `pstrClassName` parameter must not point to a valid `BSTR` before the functi
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** WMINet_Utils.idl
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c2ec2748-e9ae-4e1b-80db-6fcec5cb81a1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IEnumIDENTITY_ATTRIBUTE Interface
 Serves as an enumerator for the attributes of the code object in the current scope.  
@@ -31,7 +29,7 @@ Serves as an enumerator for the attributes of the code object in the current sco
 |`IEnumIDENTITY_ATTRIBUTE::Skip`|Moves the instruction pointer forward by the specified number of elements, starting at the current position.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Isolation.h  
   
@@ -39,4 +37,4 @@ Serves as an enumerator for the attributes of the code object in the current sco
   
 ## See also
 
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
+- [Fusion Interfaces](fusion-interfaces.md)

@@ -9,7 +9,7 @@ ms.assetid: 1f41d787-accb-4a10-bfc6-a807671d1581
 # How to: Import Custom Policy Assertions
 Policy assertions describe the capabilities and requirements of a service endpoint.  Client applications can use policy assertions in service metadata to configure the client binding or to customize the service contract for a service endpoint.  
   
- Custom policy assertions are imported by implementing the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface and passing that object to the metadata system or by registering the implementation type in your application configuration file.  Implementations of the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface must provide a default constructor.  
+ Custom policy assertions are imported by implementing the <xref:System.ServiceModel.Description.IPolicyImportExtension?displayProperty=nameWithType> interface and passing that object to the metadata system or by registering the implementation type in your application configuration file.  Implementations of the <xref:System.ServiceModel.Description.IPolicyImportExtension> interface must provide a parameterless constructor.  
   
 ### To import custom policy assertions  
   
@@ -19,7 +19,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
   
 3. Using a configuration file. See the following procedures.  
   
-4. Using a configuration file with [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). See the following procedures.  
+4. Using a configuration file with [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). See the following procedures.  
   
 5. Programmatically inserting the policy importer. See the following procedures.  
   
@@ -38,7 +38,7 @@ Policy assertions describe the capabilities and requirements of a service endpoi
   
 ### To insert the custom policy importer into the metadata System using a configuration file  
   
-1. Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) element in the client configuration file.  
+1. Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../configure-apps/file-schema/wcf/policyimporters.md) element in the client configuration file.  
   
      [!code-xml[CustomPolicySample#7](../../../../samples/snippets/csharp/VS_Snippets_CFX/custompolicysample/cs/client.exe.config#7)]   
   
@@ -49,9 +49,9 @@ Policy assertions describe the capabilities and requirements of a service endpoi
   
 ### To insert the custom policy importer into the metadata system using Svcutil.exe  
   
-1. Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../../../docs/framework/configure-apps/file-schema/wcf/policyimporters.md) element in the Svcutil.exe.config configuration file. You can also point Svcutil.exe to load policy importer types registered in a different configuration file by using the `/svcutilConfig` option.  
+1. Add the importer type to the `<extensions>` element inside the [\<policyImporters>](../../configure-apps/file-schema/wcf/policyimporters.md) element in the Svcutil.exe.config configuration file. You can also point Svcutil.exe to load policy importer types registered in a different configuration file by using the `/svcutilConfig` option.  
   
-2. Use [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to import the metadata and the importer is invoked automatically.  
+2. Use [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) to import the metadata and the importer is invoked automatically.  
   
 ### To insert the custom policy importer into the metadata system programmatically  
   
@@ -62,4 +62,4 @@ Policy assertions describe the capabilities and requirements of a service endpoi
 - <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType>
 - <xref:System.ServiceModel.Description.MetadataResolver?displayProperty=nameWithType>
-- [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)
+- [Extending the Metadata System](extending-the-metadata-system.md)

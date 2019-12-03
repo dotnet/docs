@@ -70,7 +70,7 @@ The .NET Framework provides support for rendering controls and other Windows use
  To determine when a user enables or disables visual styles, or switches from one visual style to another, check for the <xref:Microsoft.Win32.UserPreferenceCategory.VisualStyle?displayProperty=nameWithType> value in the handlers for the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging?displayProperty=nameWithType> or <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged?displayProperty=nameWithType> events.  
   
 > [!IMPORTANT]
->  If you want to use <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to render a control or UI element when the user enables or switches visual styles, make sure that you do this when handling the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event instead of the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. An exception will be thrown if you use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class when handling <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging>.  
+> If you want to use <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to render a control or UI element when the user enables or switches visual styles, make sure that you do this when handling the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event instead of the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. An exception will be thrown if you use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class when handling <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging>.  
   
 ## See also
 

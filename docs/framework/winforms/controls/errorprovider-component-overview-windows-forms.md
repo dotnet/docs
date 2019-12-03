@@ -18,7 +18,7 @@ The Windows Forms [ErrorProvider](errorprovider-component-windows-forms.md) comp
  The <xref:System.Windows.Forms.ErrorProvider.Icon%2A> property can be set to a custom error icon instead of the default. When the <xref:System.Windows.Forms.ErrorProvider.DataSource%2A> property is set, the <xref:System.Windows.Forms.ErrorProvider> component can display error messages for a dataset. The key method of the <xref:System.Windows.Forms.ErrorProvider> component is the <xref:System.Windows.Forms.ErrorProvider.SetError%2A> method, which specifies the error message string and where the error icon should appear.  
   
 > [!NOTE]
->  The <xref:System.Windows.Forms.ErrorProvider> component does not provide built-in support for accessibility clients. To make your application accessible when using this component, you must provide an additional, accessible feedback mechanism.  
+> The <xref:System.Windows.Forms.ErrorProvider> component does not provide built-in support for accessibility clients. To make your application accessible when using this component, you must provide an additional, accessible feedback mechanism.  
   
 ## See also
 

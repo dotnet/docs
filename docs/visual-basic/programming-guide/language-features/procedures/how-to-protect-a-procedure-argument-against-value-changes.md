@@ -1,5 +1,5 @@
 ---
-title: "How to: Protect a Procedure Argument Against Value Changes (Visual Basic)"
+title: "How to: Protect a Procedure Argument Against Value Changes"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], arguments"

@@ -21,10 +21,10 @@ ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
 5. On the **Build** menu, click **Build Solution**.  
   
 > [!NOTE]
->  The first five steps in this list are optional. The .NET Framework runtime will automatically generate the Web service the first time the service is requested.  
+> The first five steps in this list are optional. The .NET Framework runtime will automatically generate the Web service the first time the service is requested.  
   
 > [!NOTE]
->  The following steps are required to build the sample.  
+> The following steps are required to build the sample.  
   
 1. Open File Explorer and navigate to the \CS subdirectory.  
   
@@ -33,7 +33,7 @@ ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
 3. In the **Web Sharing** tab, select **Share this Folder**.  
   
 > [!IMPORTANT]
->  Take note of the virtual directory name that is listed in the **Aliases** pane, because you will need it to run the sample.  
+> Take note of the virtual directory name that is listed in the **Aliases** pane, because you will need it to run the sample.  
   
 ### To build the sample using Internet Information Services  
   
@@ -46,7 +46,7 @@ ms.assetid: cdc15ea4-f678-4729-8ebe-188ae720bef7
 4. Enter the path to the directory where you saved the sample (normally the \CS\GenericsService subdirectory) and click **Next**. Click **Next** to finish the wizard.  
   
 > [!IMPORTANT]
->  Take note of the virtual directory name that is listed in the **Alias** pane, because you will need it to run the sample.  
+> Take note of the virtual directory name that is listed in the **Alias** pane, because you will need it to run the sample.  
   
 ### To run the sample  
   

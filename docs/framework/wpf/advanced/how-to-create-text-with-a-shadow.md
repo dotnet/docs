@@ -20,7 +20,7 @@ The examples in this section show how to create a shadow effect for displayed te
  [!code-xaml[TextShadowSnippets#TextShadowSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/SingleShadows.xaml#textshadowsnippet1)]  
   
 > [!NOTE]
->  These shadow effects do not go through the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] text rendering pipeline. As a result, ClearType is disabled when using these effects.  
+> These shadow effects do not go through the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] text rendering pipeline. As a result, ClearType is disabled when using these effects.  
   
  The following example shows a hard drop shadow effect applied to text. In this case, the shadow is not blurred.  
   

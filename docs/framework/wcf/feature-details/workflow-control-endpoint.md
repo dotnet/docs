@@ -7,7 +7,7 @@ ms.assetid: 1b883334-1590-4fbb-b0d6-65197efe0700
 The workflow control endpoint allows developers to call control operations to remotely control workflow instances hosted using <xref:System.ServiceModel.Activities.WorkflowServiceHost>. This feature can be used to programmatically perform control operations like suspend, resume, and terminate.  
   
 > [!WARNING]
->  If using the workflow control endpoint within a transaction and the workflow being controlled contains a <xref:System.Activities.Statements.Persist> activity, the workflow instance will block until the transaction times out.  
+> If using the workflow control endpoint within a transaction and the workflow being controlled contains a <xref:System.Activities.Statements.Persist> activity, the workflow instance will block until the transaction times out.  
   
 ## Workflow Instance Management  
  [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] defines a new contract called <xref:System.ServiceModel.Activities.IWorkflowInstanceManagement>. This contract defines a series of control operations that allow you remotely control workflow instances hosted by <xref:System.ServiceModel.Activities.WorkflowServiceHost>. <xref:System.ServiceModel.Activities.WorkflowControlEndpoint> is a standard endpoint that provides an implementation of the <xref:System.ServiceModel.Activities.IWorkflowInstanceManagement> contract. <xref:System.ServiceModel.Activities.WorkflowControlClient> is a class that is used to send the control operations to the <xref:System.ServiceModel.Activities.WorkflowControlEndpoint>.  

@@ -9,7 +9,7 @@ WCF Data Services is a component of the .NET Framework that enables you to creat
 
 ## Using the sample Northwind OData service
 
-The examples in this topic use the sample Northwind data service located at [http://services.odata.org/Northwind/Northwind.svc/](https://go.microsoft.com/fwlink/?LinkID=187426). This service is provided as part of the [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248) and provides read-only access to the sample Northwind database. If write access is desired, or if a local WCF Data Service is desired, you can follow the steps of the [WCF Data Services Quickstart](https://go.microsoft.com/fwlink/?LinkID=131076) to create a local OData service that provides access to the Northwind database. If you follow the quickstart, substitute the local URI for the one provided in the example code in this topic.
+The examples in this topic use the sample Northwind data service located at <https://services.odata.org/Northwind/Northwind.svc/>. This service is provided as part of the [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248) and provides read-only access to the sample Northwind database. If write access is desired, or if a local WCF Data Service is desired, you can follow the steps of the [WCF Data Services Quickstart](https://go.microsoft.com/fwlink/?LinkID=131076) to create a local OData service that provides access to the Northwind database. If you follow the quickstart, substitute the local URI for the one provided in the example code in this topic.
 
 ## Consuming an OData feed using the client libraries
 

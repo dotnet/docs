@@ -9,7 +9,7 @@ ms.assetid: 2f05da1e-845b-4f14-83e4-c6353a850553
 
 # How to: Execute a Polymorphic Query
 
-This topic shows how to execute a polymorphic [!INCLUDE[esql](../../../../../includes/esql-md.md)] query using the [OFTYPE](../../../../../docs/framework/data/adonet/ef/language-reference/oftype-entity-sql.md) operator.
+This topic shows how to execute a polymorphic [!INCLUDE[esql](../../../../../includes/esql-md.md)] query using the [OFTYPE](./language-reference/oftype-entity-sql.md) operator.
 
 ### To run the code in this example
 
@@ -31,5 +31,5 @@ The following example uses an OFTYPE operator to get and display a collection of
 
 ## See also
 
-- [EntityClient Provider for the Entity Framework](../../../../../docs/framework/data/adonet/ef/entityclient-provider-for-the-entity-framework.md)
-- [Entity SQL Language](../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-language.md)
+- [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md)
+- [Entity SQL Language](./language-reference/entity-sql-language.md)

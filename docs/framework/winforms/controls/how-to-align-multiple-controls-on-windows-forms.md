@@ -7,24 +7,26 @@ helpviewer_keywords:
   - "controls [Windows Forms], positioning"
   - "controls [Windows Forms], aligning"
 ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ---
 # How to: Align Multiple Controls on Windows Forms
 
 To standardize the layout of the user interface (UI) of your Windows-based application, you can position groups of controls with a single command.
 
-### To align multiple controls on a form
+## To align multiple controls on a form
 
-1. In Visual Studio, open the form containing the controls you want to position in the **Windows Forms Designer**.
+1. In Visual Studio, open the form that contains the controls you want to position in the **Windows Forms Designer**.
 
-2. Select the controls you want to align so that the first control you select is the primary control to which the others should be aligned.
+2. Select the controls you want to align. The first control you select is the primary control to which the others will be aligned.
 
-3. On the **Format** menu, point to **Align**, and then click one of the seven choices available.
+3. On the **Format** menu, select **Align**, and then select one of the seven choices available.
 
 ## See also
 
 - [Windows Forms Controls](index.md)
 - [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
-- [Arranging Controls on Windows Forms](arranging-controls-on-windows-forms.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
 - [Windows Forms Controls by Function](windows-forms-controls-by-function.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)

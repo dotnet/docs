@@ -8,8 +8,10 @@ ms.assetid: fae2f48b-a635-4e4b-859d-a1432ac37e1c
 
 This configuration element defines a standard endpoint with a fixed discovery contract. When added to the service configuration, it specifies where to listen for the discovery messages. When added to the client configuration it specifies where to send the discovery queries.  
   
-\<system.serviceModel>  
-\<standardEndpoints>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<discoveryEndpoint>**  
   
 ## Syntax  
   
@@ -47,7 +49,7 @@ None.
 
 | Element | Description |  
 | ------- | ----------- |  
-| [\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md) | A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed. |  
+| [\<standardEndpoints>](standardendpoints.md) | A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed. |  
   
 ## Example
 

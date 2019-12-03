@@ -19,7 +19,7 @@ With ADO.NET, you can create many different data structures to suit the binding 
 
 ## Consumers of Data-Binding Interfaces
 
-Following sections describe two groups of interface objects. The first group lists interfaces that are implemented on data sources by data source authors. These interfaces are designed to be consumed by data source consumers, which are in most cases Windows Forms controls or components. The second group lists interfaces designed for use by component authors. Component authors use these interfaces when they are creating a component that supports data binding to be consumed by the Windows Forms data-binding engine. You can implement these interfaces within classes associated with your form to enable data binding; each case presents a class that implements an interface that enables interaction with data. Visual Studio rapid application development (RAD) data design experience tools already take advantage of this functionality.
+The following sections describe two groups of interface objects. The first group lists interfaces that are implemented on data sources by data source authors. These interfaces are designed to be consumed by data source consumers, which are in most cases Windows Forms controls or components. The second group lists interfaces designed for use by component authors. Component authors use these interfaces when they are creating a component that supports data binding to be consumed by the Windows Forms data-binding engine. You can implement these interfaces within classes associated with your form to enable data binding; each case presents a class that implements an interface that enables interaction with data. Visual Studio rapid application development (RAD) data design experience tools already take advantage of this functionality.
 
 ### Interfaces for Implementation by Data Source Authors
 
@@ -30,7 +30,7 @@ The following interfaces are designed to be consumed by Windows Forms controls:
   A class that implements the <xref:System.Collections.IList> interface could be an <xref:System.Array>, <xref:System.Collections.ArrayList>, or <xref:System.Collections.CollectionBase>. These are indexed lists of items of type <xref:System.Object>. These lists must contain homogenous types, because the first item of the index determines the type. <xref:System.Collections.IList> would be available for binding only at run time.
 
   > [!NOTE]
-  >  If you want to create a list of business objects for binding with Windows Forms, you should consider using the <xref:System.ComponentModel.BindingList%601>. The <xref:System.ComponentModel.BindingList%601> is an extensible class that implements the primary interfaces required for two-way Windows Forms data binding.
+  > If you want to create a list of business objects for binding with Windows Forms, you should consider using the <xref:System.ComponentModel.BindingList%601>. The <xref:System.ComponentModel.BindingList%601> is an extensible class that implements the primary interfaces required for two-way Windows Forms data binding.
 
 - <xref:System.ComponentModel.IBindingList> interface
 

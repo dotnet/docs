@@ -13,7 +13,7 @@ Request-reply services are the default type of operation contract in Windows Com
   
  To create a request-reply service contract, define your service contract, and apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, as shown in the following sample code.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IRequestReplyCalculator  
 {  

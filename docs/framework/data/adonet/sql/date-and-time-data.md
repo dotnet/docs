@@ -28,7 +28,7 @@ SQL Server 2008 introduces new data types for handling date and time information
 |`datetimeoffset`|The `datetimeoffset` data type has all the features of `datetime2` with an additional time zone offset. The time zone offset is represented as [+&#124;-] HH:MM. HH is 2 digits ranging from 00 to 14 that represent the number of hours in the time zone offset. MM is 2 digits ranging from 00 to 59 that represent the number of additional minutes in the time zone offset. Time formats are supported to 100 nanoseconds. The mandatory + or - sign indicates whether the time zone offset is added or subtracted from UTC (Universal Time Coordinate or Greenwich Mean Time) to obtain the local time.|  
   
 > [!NOTE]
->  For more information about using the `Type System Version` keyword, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
+> For more information about using the `Type System Version` keyword, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.  
   
 ## Date Format and Date Order  
  How SQL Server parses date and time values depends not only on the type system version and server version, but also on the server's default language and format settings. A date string that works for the date formats of one language might be unrecognizable if the query is executed by a connection that uses a different language and date format setting.  
@@ -38,7 +38,7 @@ SQL Server 2008 introduces new data types for handling date and time information
  If you do not specify any DATEFORMAT for the connection, SQL Server uses the default language associated with the connection. For example, a date string of '01/02/03' would be interpreted as MDY (January 2, 2003) on a server with a language setting of United States English, and as DMY (February 1, 2003) on a server with a language setting of British English. The year is determined by using SQL Server's cutoff year rule, which defines the cutoff date for assigning the century value. For more information, see [two digit year cutoff Option](https://go.microsoft.com/fwlink/?LinkId=120473) in SQL Server Books Online.  
   
 > [!NOTE]
->  The YDM date format is not supported when converting from a string format to `date`, `time`, `datetime2`, or `datetimeoffset`.  
+> The YDM date format is not supported when converting from a string format to `date`, `time`, `datetime2`, or `datetimeoffset`.  
   
  For more information about how SQL Server interprets date and time data, see [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361) in SQL Server 2008 Books Online.  
   
@@ -82,7 +82,7 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
   
 |Property|Description|  
 |--------------|-----------------|  
-|<xref:System.Data.SqlClient.SqlParameter.IsNullable%2A>|Gets or sets whether a value is nullable. When you send a null parameter value to the server, you must specify <xref:System.DBNull>, rather than `null` (`Nothing` in Visual Basic). For more information about database nulls, see [Handling Null Values](../../../../../docs/framework/data/adonet/sql/handling-null-values.md).|  
+|<xref:System.Data.SqlClient.SqlParameter.IsNullable%2A>|Gets or sets whether a value is nullable. When you send a null parameter value to the server, you must specify <xref:System.DBNull>, rather than `null` (`Nothing` in Visual Basic). For more information about database nulls, see [Handling Null Values](handling-null-values.md).|  
 |<xref:System.Data.SqlClient.SqlParameter.Precision%2A>|Gets or sets the maximum number of digits used to represent the value. This setting is ignored for date and time data types.|  
 |<xref:System.Data.SqlClient.SqlParameter.Scale%2A>|Gets or sets the number of decimal places to which the time portion of the value is resolved for `Time`, `DateTime2`,and `DateTimeOffset`. The default value is 0, which means that the actual scale is inferred from the value and sent to the server.|  
 |<xref:System.Data.SqlClient.SqlParameter.Size%2A>|Ignored for date and time data types.|  
@@ -90,12 +90,12 @@ You can specify the data type of a <xref:System.Data.SqlClient.SqlParameter> by 
 |<xref:System.Data.SqlClient.SqlParameter.SqlValue%2A>|Gets or sets the parameter value.|  
   
 > [!NOTE]
->  Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
+> Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
   
 ### Creating Parameters  
  You can create a <xref:System.Data.SqlClient.SqlParameter> object by using its constructor, or by adding it to a <xref:System.Data.SqlClient.SqlCommand><xref:System.Data.SqlClient.SqlCommand.Parameters%2A> collection by calling the `Add` method of the <xref:System.Data.SqlClient.SqlParameterCollection>. The `Add` method will take as input either constructor arguments or an existing parameter object.  
   
- The next sections in this topic provide examples of how to specify date and time parameters. For additional examples of working with parameters, see [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md) and [DataAdapter Parameters](../../../../../docs/framework/data/adonet/dataadapter-parameters.md).  
+ The next sections in this topic provide examples of how to specify date and time parameters. For additional examples of working with parameters, see [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md) and [DataAdapter Parameters](../dataadapter-parameters.md).  
   
 ### Date Example  
  The following code fragment demonstrates how to specify a `date` parameter.  
@@ -208,7 +208,7 @@ command.Parameters.AddWithValue( _
 |<xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A>|Returns a <xref:System.Data.DataTable> that describes the metadata of the result set.|  
   
 > [!NOTE]
->  The new date and time `SqlDbTypes` are not supported for code that is executing in-process in SQL Server. An exception will be raised if one of these types is passed to the server.  
+> The new date and time `SqlDbTypes` are not supported for code that is executing in-process in SQL Server. An exception will be raised if one of these types is passed to the server.  
   
 ## Specifying Date and Time Values as Literals  
  You can specify date and time data types by using a variety of different literal string formats, which SQL Server then evaluates at run time, converting them to internal date/time structures. SQL Server recognizes date and time data that is enclosed in single quotation marks ('). The following examples demonstrate some formats:  
@@ -220,7 +220,7 @@ command.Parameters.AddWithValue( _
 - Unseparated string formats, such as `'20061015'`, which would be interpreted as October 15, 2006 if you are using the ISO standard date format.  
   
 > [!NOTE]
->  You can find complete documentation for all of the literal string formats and other features of the date and time data types in SQL Server Books Online.  
+> You can find complete documentation for all of the literal string formats and other features of the date and time data types in SQL Server Books Online.  
   
  Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
   
@@ -235,7 +235,7 @@ command.Parameters.AddWithValue( _
   
 ## See also
 
-- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)
-- [Configuring Parameters and Parameter Data Types](../../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)
-- [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
+- [Configuring Parameters and Parameter Data Types](../configuring-parameters-and-parameter-data-types.md)
+- [SQL Server Data Types and ADO.NET](sql-server-data-types.md)
+- [ADO.NET Overview](../ado-net-overview.md)

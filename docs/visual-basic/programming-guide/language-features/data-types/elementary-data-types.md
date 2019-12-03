@@ -1,5 +1,5 @@
 ---
-title: "Elementary Data Types (Visual Basic)"
+title: "Elementary Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "elementary data types [Visual Basic]"
@@ -10,7 +10,7 @@ ms.assetid: dfad6fe9-2da6-49a4-b0b1-2d7ae0283de5
 Visual Basic supplies a set of predefined data types, which you can use for many of your programming elements. This section describes these types and how to use them.  
   
 > [!NOTE]
->  Every elementary data type in Visual Basic is supported by a structure or a class that is in the <xref:System> namespace. The compiler uses each data type keyword as an alias for the underlying structure or class. For example, declaring a variable by using the reserved word `Byte` is the same as declaring it by using the fully qualified structure name <xref:System.Byte?displayProperty=nameWithType>.  
+> Every elementary data type in Visual Basic is supported by a structure or a class that is in the <xref:System> namespace. The compiler uses each data type keyword as an alias for the underlying structure or class. For example, declaring a variable by using the reserved word `Byte` is the same as declaring it by using the fully qualified structure name <xref:System.Byte?displayProperty=nameWithType>.  
   
 ## In This Section  
  [Numeric Data Types](../../../../visual-basic/programming-guide/language-features/data-types/numeric-data-types.md)  

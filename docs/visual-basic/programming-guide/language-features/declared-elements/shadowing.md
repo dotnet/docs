@@ -1,5 +1,5 @@
 ---
-title: "Shadowing in Visual Basic"
+title: "Shadowing"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "inheritance [Visual Basic], shadowing"
@@ -53,7 +53,7 @@ When two programming elements share the same name, one of them can hide, or *sha
   
  The following example shows an inheritance hierarchy of three classes. Each class defines a `Sub` procedure `display`, and each derived class shadows the `display` procedure in its base class.  
   
-```  
+```vb  
 Public Class firstClass  
     Public Sub display()  
         MsgBox("This is firstClass")  
@@ -104,7 +104,7 @@ End Module
 ### Declaration of the Object Variable  
  How you create the object variable can also affect whether the derived class accesses a shadowing element or the shadowed element. The following example creates two objects from a derived class, but one object is declared as the base class and the other as the derived class.  
   
-```  
+```vb  
 Public Class baseCls  
     ' The following statement declares the element that is to be shadowed.  
     Public z As Integer = 100  

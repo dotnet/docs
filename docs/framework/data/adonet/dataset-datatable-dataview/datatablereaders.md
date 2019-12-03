@@ -11,13 +11,13 @@ The <xref:System.Data.DataTableReader> presents the contents of a <xref:System.D
  A **DataTableReader** may contain multiple result sets if it was created by calling <xref:System.Data.DataSet.CreateDataReader%2A>. The results are in the same order as the **DataTables** in the **DataSet** object's <xref:System.Data.DataSet.Tables%2A> collection.  
   
 ## In This Section  
- [Creating a DataReader](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/creating-a-datareader.md)  
+ [Creating a DataReader](creating-a-datareader.md)  
  Discusses how to create a **DataTableReader** object.  
   
- [Navigating DataTables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/navigating-datatables.md)  
+ [Navigating DataTables](navigating-datatables.md)  
  Describes the use of the **Read** method to move through the contents of a **DataTableReader**.  
   
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md)
+- [ADO.NET Overview](../ado-net-overview.md)

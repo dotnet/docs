@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: b0efcc88-e8aa-4df4-a00b-8bdef70b7673
 ---
 # -lib (C# Compiler Options)
-The **-lib** option specifies the location of assemblies referenced by means of the [-reference (C# Compiler Options)](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) option.  
+The **-lib** option specifies the location of assemblies referenced by means of the [-reference (C# Compiler Options)](./reference-compiler-option.md) option.  
   
 ## Syntax  
   
@@ -63,5 +63,5 @@ csc -lib:c:\ -reference:t2.dll t2.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

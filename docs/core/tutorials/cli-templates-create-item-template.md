@@ -14,6 +14,7 @@ With .NET Core, you can create and deploy templates that generate projects, file
 In this part of the series, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > * Create a class for an item template
 > * Create the template config folder and file
 > * Install a template from a file path
@@ -22,7 +23,7 @@ In this part of the series, you'll learn how to:
 
 ## Prerequisites
 
-* [.NET Core 2.2 SDK](https://www.microsoft.com/net/core) or later versions.
+* [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download) or later versions.
 * Read the reference article [Custom templates for dotnet new](../tools/custom-templates.md).
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.

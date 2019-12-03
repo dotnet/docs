@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b600b3a2-9908-42d8-8093-ab6f39e9a2c9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::GetLocalMemoryValue Method
 Gets the value of an argument or local variable that is stored in the specified memory location for this native frame.  

@@ -37,7 +37,7 @@ CryptoStream cryptStream = new CryptoStream(myStream, rmCrypto.CreateEncryptor()
  The following example shows the entire process of creating a stream, encrypting the stream, writing to the stream, and closing the stream. This example creates a network stream that is encrypted using the **CryptoStream** class and the **RijndaelManaged** class. A message is written to the encrypted stream with the <xref:System.IO.StreamWriter> class.  
   
 > [!NOTE]
->  You can also use this example to write to a file. To do that, delete the <xref:System.Net.Sockets.TcpClient> reference and replace the <xref:System.Net.Sockets.NetworkStream> with a <xref:System.IO.FileStream>.  
+> You can also use this example to write to a file. To do that, delete the <xref:System.Net.Sockets.TcpClient> reference and replace the <xref:System.Net.Sockets.NetworkStream> with a <xref:System.IO.FileStream>.  
   
 ```vb  
 Imports System  
@@ -154,13 +154,13 @@ public class main
   
  For the previous example to execute successfully, there must be a process listening on the IP address and port number specified in the <xref:System.Net.Sockets.TcpClient> class. If a listening process exists, the code will connect to the listening process, encrypt the stream using the Rijndael symmetric algorithm, and write "Hello World!" to the stream. If the code is successful, it displays the following text to the console:  
   
-```  
+```console  
 The message was sent.  
 ```  
   
  However, if no listening process is found or an exception is raised, the code displays the following text to the console:  
   
-```  
+```console  
 The connection failed.  
 ```  
   

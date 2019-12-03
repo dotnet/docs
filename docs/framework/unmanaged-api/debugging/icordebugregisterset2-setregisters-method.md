@@ -15,14 +15,12 @@ helpviewer_keywords:
 ms.assetid: fe0ac7e7-c9e1-4ec1-9f4e-1c56d63d73ac
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet2::SetRegisters Method
 `SetRegisters` is not implemented in the .NET Framework version 2.0. Do not call this method.  
   
 > [!NOTE]
->  Use the higher-level operations such as [ICorDebugILFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-setip-method.md) or [ICorDebugNativeFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md).  
+> Use the higher-level operations such as [ICorDebugILFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-setip-method.md) or [ICorDebugNativeFrame::SetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe-setip-method.md).  
   
 ## Syntax  
   

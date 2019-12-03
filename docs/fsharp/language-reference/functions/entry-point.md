@@ -24,7 +24,7 @@ The entry point function has type `string array -> int`. The arguments provided 
 
 The following example illustrates a simple `main` function.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/entry-point/snippet501.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/entry-point/snippet501.fs)]
 
 When this code is executed with the command line `EntryPoint.exe 1 2 3`, the output is as follows.
 

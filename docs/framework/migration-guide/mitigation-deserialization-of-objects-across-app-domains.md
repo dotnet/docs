@@ -2,8 +2,6 @@
 title: "Mitigation: Deserialization of Objects Across App Domains"
 ms.date: "03/30/2017"
 ms.assetid: 30c2d66c-04a8-41a5-ad31-646b937f61b5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Deserialization of Objects Across App Domains
 In some cases, when an app uses two or more app domains with different application bases, the attempt to deserialize objects in the logical call context across app domains throws an exception.  
@@ -38,10 +36,10 @@ In some cases, when an app uses two or more app domains with different applicati
   
 2. Identify the place in the app where no objects are added to the logical call context and add the following code:  
   
-    ```  
+    ```csharp
     System.Configuration.ConfigurationManager.GetSection("system.xml/xmlReader");  
-    ```  
+    ```
   
 ## See also
 
-- [Runtime Changes](../../../docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md)
+- [Application compatibility](application-compatibility.md)

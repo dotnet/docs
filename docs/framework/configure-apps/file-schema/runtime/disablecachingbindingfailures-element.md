@@ -10,15 +10,13 @@ helpviewer_keywords:
   - "<disableCachingBindingFailures> element"
   - "disableCachingBindingFailures element"
 ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<disableCachingBindingFailures> Element
 Specifies whether to disable the caching of binding failures that occur because the assembly was not found by probing.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<disableCachingBindingFailures>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<disableCachingBindingFailures>**  
   
 ## Syntax  
   
@@ -76,6 +74,6 @@ Specifies whether to disable the caching of binding failures that occur because 
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

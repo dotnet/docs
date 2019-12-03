@@ -19,5 +19,5 @@ Use the <xref:System.Linq.Queryable.Intersect%2A> operator to return the set int
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
-- [Standard Query Operator Translation](../../../../../../docs/framework/data/adonet/sql/linq/standard-query-operator-translation.md)
+- [Query Examples](query-examples.md)
+- [Standard Query Operator Translation](standard-query-operator-translation.md)

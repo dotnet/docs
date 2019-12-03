@@ -2,8 +2,6 @@
 title: "ICorDebugMergedAssemblyRecord::GetVersion Method"
 ms.date: "03/30/2017"
 ms.assetid: c6858b06-ae26-4312-b325-ea6025016675
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMergedAssemblyRecord::GetVersion Method
 Gets the assembly's version information.  
@@ -36,7 +34,7 @@ HRESULT GetVersion(
  For information on assembly version numbers, see the <xref:System.Version> class topic.  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -25,4 +25,4 @@ The **-utf8output** option displays compiler output using UTF-8 encoding.
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)

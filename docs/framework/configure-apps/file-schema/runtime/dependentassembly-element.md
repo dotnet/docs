@@ -9,16 +9,14 @@ helpviewer_keywords:
   - "dependentAssembly element"
   - "<dependentAssembly> element"
 ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<dependentAssembly> Element
 Encapsulates binding policy and assembly location for each assembly. Use one `dependentAssembly` element for each assembly.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<dependentAssembly>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<dependentAssembly>**  
   
 ## Syntax  
   
@@ -76,6 +74,6 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

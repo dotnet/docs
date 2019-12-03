@@ -75,7 +75,7 @@ The following chart shows the member names that are returned when you use the `C
 
 ## See also
 
-- [Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/index.md)
-- [Common Attributes (C#)](../../../csharp/programming-guide/concepts/attributes/common-attributes.md)
-- [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md)
-- [Programming Concepts (C#)](../../../csharp/programming-guide/concepts/index.md)
+- [Attributes (C#)](./attributes/index.md)
+- [Common Attributes (C#)](./attributes/common-attributes.md)
+- [Named and Optional Arguments](../classes-and-structs/named-and-optional-arguments.md)
+- [Programming Concepts (C#)](./index.md)

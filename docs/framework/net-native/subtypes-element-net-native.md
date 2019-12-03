@@ -2,8 +2,6 @@
 title: "<Subtypes> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: fb854070-248b-46cf-9dab-c322e2b4d624
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<Subtypes> Element (.NET Native)
 Applies runtime policy to all classes inherited from the containing type.  
@@ -45,7 +43,7 @@ Applies runtime policy to all classes inherited from the containing type.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md).|  
+|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
  None.  
@@ -54,7 +52,7 @@ Applies runtime policy to all classes inherited from the containing type.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
+|[\<Type>](type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
   
 ## Remarks  
  The `<Subtypes>` element applies policy to all the subtypes of its containing type. You use it when you want to apply different policies to derived types and their base classes.  
@@ -85,7 +83,7 @@ Applies runtime policy to all classes inherited from the containing type.
   
 ## See also
 
-- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
-- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
-- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [\<Type> Element](type-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](runtime-directive-policy-settings.md)

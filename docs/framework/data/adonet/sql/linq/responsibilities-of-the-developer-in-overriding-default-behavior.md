@@ -22,4 +22,4 @@ ms.assetid: c6909ddd-e053-46a8-980c-0e12a9797be1
   
 ## See also
 
-- [Customizing Insert, Update, and Delete Operations](../../../../../../docs/framework/data/adonet/sql/linq/customizing-insert-update-and-delete-operations.md)
+- [Customizing Insert, Update, and Delete Operations](customizing-insert-update-and-delete-operations.md)

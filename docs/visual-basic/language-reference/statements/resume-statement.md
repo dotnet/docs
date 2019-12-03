@@ -1,5 +1,5 @@
 ---
-title: "Resume Statement (Visual Basic)"
+title: "Resume Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Resume"
@@ -23,7 +23,7 @@ Resumes execution after an error-handling routine is finished.
   
 ## Syntax  
   
-```  
+```vb  
 Resume [ Next | line ]  
 ```  
   
@@ -40,7 +40,7 @@ Resume [ Next | line ]
 ## Remarks  
   
 > [!NOTE]
->  We recommend that you use structured exception handling in your code whenever possible, rather than using unstructured exception handling and the `On Error` and `Resume` statements. For more information, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  
+> We recommend that you use structured exception handling in your code whenever possible, rather than using unstructured exception handling and the `On Error` and `Resume` statements. For more information, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  
   
  If you use a `Resume` statement anywhere other than in an error-handling routine, an error occurs.  
   

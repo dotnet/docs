@@ -19,7 +19,7 @@ This scenario sample demonstrates how to flow caller's identity information from
  The façade service is responsible for validating the request and authenticating the caller. After successful authentication and validation, it forwards the request to the backend service using the controlled communication channel from the perimeter network to the internal network. As a part of the forwarded request, the façade service includes information about the caller's identity so that the backend service can use this information in its processing. The caller's identity is transmitted using a `Username` security token inside the message `Security` header. The sample uses the WCF security infrastructure to transmit and extract this information from the `Security` header.  
   
 > [!IMPORTANT]
->  The backend service trusts the façade service to authenticate the caller. Because of this, the backend service does not authenticate the caller again; it uses the identity information provided by the façade service in the forwarded request. Because of this trust relationship, the backend service must authenticate the façade service to ensure that the forwarded message comes from a trusted source - in this case, the façade service.  
+> The backend service trusts the façade service to authenticate the caller. Because of this, the backend service does not authenticate the caller again; it uses the identity information provided by the façade service in the forwarded request. Because of this trust relationship, the backend service must authenticate the façade service to ensure that the forwarded message comes from a trusted source - in this case, the façade service.  
   
 ## Implementation  
  There are two communication paths in this sample. First is between the client and the façade service, the second is between the façade service and the backend service.  
@@ -41,7 +41,7 @@ This scenario sample demonstrates how to flow caller's identity information from
   
  The façade service authenticates the caller using custom `UserNamePasswordValidator` implementation. For demonstration purposes, the authentication only ensures that the caller's username matches the presented password. In the real world situation, the user is probably authenticated using Active Directory or custom ASP.NET Membership provider. The validator implementation resides in `FacadeService.cs` file.  
   
-```  
+```csharp  
 public class MyUserNamePasswordValidator : UserNamePasswordValidator  
 {  
     public override void Validate(string userName, string password)  
@@ -109,7 +109,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  The following code shows how `GetCallerIdentity` method is implemented on the façade service. Other methods use the same pattern.  
   
-```  
+```csharp  
 public string GetCallerIdentity()  
 {  
     CalculatorClient client = new CalculatorClient();  
@@ -124,7 +124,7 @@ public string GetCallerIdentity()
   
  On the backend service, the information contained in the username security token must be authenticated. By default, WCF security attempts to map the user to a Windows account using the provided password. In this case, there is no password provided and the backend service is not required to authenticate the username because the authentication was already performed by the façade service. To implement this functionality in WCF, a custom `UserNamePasswordValidator` is provided that only enforces that a username is specified in the token and does not perform any additional authentication.  
   
-```  
+```csharp  
 public class MyUserNamePasswordValidator : UserNamePasswordValidator  
 {  
     public override void Validate(string userName, string password)  
@@ -162,7 +162,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  To extract the username information and information about the trusted façade service account, the backend service implementation uses the `ServiceSecurityContext` class. The following code shows how the `GetCallerIdentity` method is implemented.  
   
-```  
+```csharp  
 public string GetCallerIdentity()  
 {  
     // Facade service is authenticated using Windows authentication.  
@@ -208,7 +208,7 @@ public string GetCallerIdentity()
 ## Running the sample  
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client. You can press ENTER in the façade and backend service console windows to shut down the services.  
   
-```  
+```console  
 Username authentication required.  
 Provide a valid machine or domain ac  
    Enter username:  
@@ -232,7 +232,7 @@ Press <ENTER> to terminate client.
   
      The following lines from the Setup.bat batch file create the server certificate to be used.  
   
-    ```  
+    ```console  
     echo ************  
     echo Server cert setup starting  
     echo %SERVER_NAME%  
@@ -248,7 +248,7 @@ Press <ENTER> to terminate client.
   
      The following line copies the façade service's certificate into the client trusted people store. This step is required because certificates generated by Makecert.exe are not implicitly trusted by the client system. If you already have a certificate that is rooted in a client trusted root certificate—for example, a Microsoft-issued certificate—this step of populating the client certificate store with the server certificate is not required.  
   
-    ```  
+    ```console  
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r CurrentUser -s TrustedPeople  
     ```  
   
@@ -277,10 +277,10 @@ Press <ENTER> to terminate client.
 1. Run Cleanup.bat in the samples folder once you have finished running the sample.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\TrustedFacade`  

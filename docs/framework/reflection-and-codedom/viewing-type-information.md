@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "viewing type information"
   - "reflection, viewing type information"
 ms.assetid: 7e7303a9-4064-4738-b4e7-b75974ed70d2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Viewing Type Information
 The <xref:System.Type?displayProperty=nameWithType> class is central to reflection. The common language runtime creates the **Type** for a loaded type when reflection requests it. You can use a **Type** object's methods, fields, properties, and nested classes to find out everything about that type.  
@@ -20,7 +18,7 @@ The <xref:System.Type?displayProperty=nameWithType> class is central to reflecti
  Use <xref:System.Reflection.Assembly.GetType%2A?displayProperty=nameWithType> or <xref:System.Reflection.Assembly.GetTypes%2A?displayProperty=nameWithType> to obtain **Type** objects from assemblies that have not been loaded, passing in the name of the type or types you want. Use <xref:System.Type.GetType%2A?displayProperty=nameWithType> to get the **Type** objects from an assembly that is already loaded. Use <xref:System.Reflection.Module.GetType%2A?displayProperty=nameWithType> and <xref:System.Reflection.Module.GetTypes%2A?displayProperty=nameWithType> to obtain module **Type** objects.  
   
 > [!NOTE]
->  If you want to examine and manipulate generic types and methods, please see the additional information provided in [Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md) and [How to: Examine and Instantiate Generic Types with Reflection](../../../docs/framework/reflection-and-codedom/how-to-examine-and-instantiate-generic-types-with-reflection.md).  
+> If you want to examine and manipulate generic types and methods, please see the additional information provided in [Reflection and Generic Types](reflection-and-generic-types.md) and [How to: Examine and Instantiate Generic Types with Reflection](how-to-examine-and-instantiate-generic-types-with-reflection.md).  
   
  The following example shows the syntax necessary to get the <xref:System.Reflection.Assembly> object and module for an assembly.  
   
@@ -84,4 +82,4 @@ The <xref:System.Type?displayProperty=nameWithType> class is central to reflecti
 - <xref:System.Reflection.FieldInfo>
 - <xref:System.Reflection.EventInfo>
 - <xref:System.Reflection.ParameterInfo>
-- [Reflection and Generic Types](../../../docs/framework/reflection-and-codedom/reflection-and-generic-types.md)
+- [Reflection and Generic Types](reflection-and-generic-types.md)

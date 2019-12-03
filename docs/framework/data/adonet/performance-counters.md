@@ -49,7 +49,7 @@ ADO.NET 2.0 introduced expanded support for performance counters that includes s
  The following console application shows how to retrieve performance counter values in your application. Connections must be open and active for information to be returned for all of the ADO.NET performance counters.  
   
 > [!NOTE]
->  This example uses the sample **AdventureWorks** database included with SQL Server. The connection strings provided in the sample code assume that the database is installed and available on the local computer with an instance name of SqlExpress, and that you have created SQL Server logins that match those supplied in the connection strings. You may need to enable SQL Server logins if your server is configured using the default security settings which allow only Windows Authentication. Modify the connection strings as necessary to suit your environment.  
+> This example uses the sample **AdventureWorks** database included with SQL Server. The connection strings provided in the sample code assume that the database is installed and available on the local computer with an instance name of SqlExpress, and that you have created SQL Server logins that match those supplied in the connection strings. You may need to enable SQL Server logins if your server is configured using the default security settings which allow only Windows Authentication. Modify the connection strings as necessary to suit your environment.  
   
 ### Example  
   
@@ -390,9 +390,9 @@ class Program
 
 ## See also
 
-- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
-- [OLE DB, ODBC, and Oracle Connection Pooling](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)
+- [Connecting to a Data Source](connecting-to-a-data-source.md)
+- [OLE DB, ODBC, and Oracle Connection Pooling](ole-db-odbc-and-oracle-connection-pooling.md)
 - [Performance Counters for ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/fxk122b4(v=vs.100))
-- [Runtime Profiling](../../../../docs/framework/debug-trace-profile/runtime-profiling.md)
+- [Runtime Profiling](../../debug-trace-profile/runtime-profiling.md)
 - [Introduction to Monitoring Performance Thresholds](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
 - [ADO.NET Overview](ado-net-overview.md)

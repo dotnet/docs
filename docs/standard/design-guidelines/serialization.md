@@ -1,5 +1,5 @@
 ---
-title: "Serialization1"
+title: "Serialization"
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac

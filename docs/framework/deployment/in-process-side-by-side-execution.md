@@ -39,7 +39,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
     |4|Yes|Yes|Not applicable|  
   
 > [!NOTE]
->  .NET Framework versions 3.0 and 3.5 are built incrementally on version 2.0, and do not need to run side by side. These are inherently the same version.  
+> .NET Framework versions 3.0 and 3.5 are built incrementally on version 2.0, and do not need to run side by side. These are inherently the same version.  
   
 <a name="scenarios"></a>   
 ## Common Side-by-Side Hosting Scenarios  
@@ -54,7 +54,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
   
      .NET Framework versions installed: An earlier version of the .NET Framework and the .NET Framework 4.  
   
-     What to do: In the [application configuration file](../../../docs/framework/configure-apps/index.md) in the application directory, use the [\<startup> element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md) and the [\<supportedRuntime> element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) set as follows:  
+     What to do: In the [application configuration file](../configure-apps/index.md) in the application directory, use the [\<startup> element](../configure-apps/file-schema/startup/startup-element.md) and the [\<supportedRuntime> element](../configure-apps/file-schema/startup/supportedruntime-element.md) set as follows:  
   
     ```xml  
     <configuration>  
@@ -169,5 +169,5 @@ int _tmain(int argc, _TCHAR* argv[])
   
 ## See also
 
-- [\<startup> Element](../../../docs/framework/configure-apps/file-schema/startup/startup-element.md)
-- [\<supportedRuntime> Element](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md)
+- [\<startup> Element](../configure-apps/file-schema/startup/startup-element.md)
+- [\<supportedRuntime> Element](../configure-apps/file-schema/startup/supportedruntime-element.md)

@@ -25,7 +25,7 @@ This topic provides an overview of hit testing functionality provided by the vis
 - Ignoring <xref:System.Windows.UIElement> hit testing policy: This applies when you need to ignore the <xref:System.Windows.UIElement> hit testing policy, which takes into consideration such factors as whether an element is disabled or invisible.  
   
 > [!NOTE]
->  For a complete code sample illustrating hit testing at the visual layer, see [Hit Test Using DrawingVisuals Sample](https://go.microsoft.com/fwlink/?LinkID=159994) and [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995).  
+> For a complete code sample illustrating hit testing at the visual layer, see [Hit Test Using DrawingVisuals Sample](https://go.microsoft.com/fwlink/?LinkID=159994) and [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995).  
   
 <a name="hit_testing_support"></a>   
 ## Hit Testing Support  
@@ -48,14 +48,14 @@ Diagram of the z-order of a visual tree
  If you want to enumerate all visual objects under a specific point or geometry, return <xref:System.Windows.Media.HitTestResultBehavior.Continue> from the <xref:System.Windows.Media.HitTestResultCallback>. This means you can hit test for visual objects that are beneath other objects, even if they are wholly obscured. See the sample code in the section "Using a Hit Test Results Callback" for more information.  
   
 > [!NOTE]
->  A visual object that is transparent can also be hit test.  
+> A visual object that is transparent can also be hit test.  
   
 <a name="using_default_hit_testing"></a>   
 ## Using Default Hit Testing  
  You can identify whether a point is within the geometry of a visual object, by using the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to specify a visual object and a point coordinate value to test against. The visual object parameter identifies the starting point in the visual tree for the hit test search. If a visual object is found in the visual tree whose geometry contains the coordinate, it is set to the <xref:System.Windows.Media.HitTestResult.VisualHit%2A> property of a <xref:System.Windows.Media.HitTestResult> object. The <xref:System.Windows.Media.HitTestResult> is then returned from the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method. If the point is not contained with the visual sub-tree you are hit testing, <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> returns `null`.  
   
 > [!NOTE]
->  Default hit testing always returns the top-most object in the z-order. In order to identify all visual objects, even those that may be partly or wholly obscured, use a hit test result callback.  
+> Default hit testing always returns the top-most object in the z-order. In order to identify all visual objects, even those that may be partly or wholly obscured, use a hit test result callback.  
   
  The coordinate value you pass as the point parameter for the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method has to be relative to the coordinate space of the visual object you are hit testing against. For example, if you have nested visual objects defined at (100, 100) in the parent's coordinate space, then hit testing a child visual at (0, 0) is equivalent to hit testing at (100, 100) in the parent's coordinate space.  
   
@@ -71,7 +71,7 @@ Diagram of the z-order of a visual tree
 Diagram of a visual tree hierarchy  
   
 > [!NOTE]
->  The <xref:System.Windows.UIElement.IsHitTestVisible%2A> property gets or sets a value that declares whether a <xref:System.Windows.UIElement>-derived object can possibly be returned as a hit test result from some portion of its rendered content. This allows you to selectively alter the visual tree to determine which visual objects are involved in a hit test.  
+> The <xref:System.Windows.UIElement.IsHitTestVisible%2A> property gets or sets a value that declares whether a <xref:System.Windows.UIElement>-derived object can possibly be returned as a hit test result from some portion of its rendered content. This allows you to selectively alter the visual tree to determine which visual objects are involved in a hit test.  
   
 <a name="using_a_hit_test_result_callback"></a>   
 ## Using a Hit Test Result Callback  
@@ -88,7 +88,7 @@ Diagram of a visual tree hierarchy
  [!code-vb[HitTestingOverview#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#102)]  
   
 > [!NOTE]
->  The order of enumeration of hit visual objects is by z-order. The visual object at the top-most z-order level is the first object enumerated. Any other visual objects enumerated are at decreasing z-order level. This order of enumeration corresponds to the rendering order of the visuals.  
+> The order of enumeration of hit visual objects is by z-order. The visual object at the top-most z-order level is the first object enumerated. Any other visual objects enumerated are at decreasing z-order level. This order of enumeration corresponds to the rendering order of the visuals.  
   
  You can stop the enumeration of visual objects at any time in the hit test callback function by returning <xref:System.Windows.Media.HitTestResultBehavior.Stop>.  
   
@@ -116,7 +116,7 @@ Pruning a visual tree
  [!code-vb[HitTestingOverview#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#106)]  
   
 > [!NOTE]
->  The hit test filter callback will sometimes be called in cases where the hit test results callback is not called.  
+> The hit test filter callback will sometimes be called in cases where the hit test results callback is not called.  
   
 <a name="overriding_default_hit_testing"></a>   
 ## Overriding Default Hit Testing  

@@ -16,7 +16,7 @@ Several [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.
 
 The actionArgument is used to flow the individual items in the collection to the WriteLine. When the workflow is invoked, the following output is displayed to the console.
 
-```
+```console
 HelloWorld.
 ```
 

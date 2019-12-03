@@ -19,11 +19,11 @@ The <xref:System.ServiceModel.Description.ServiceMetadataBehavior?displayPropert
  If a MEX metadata endpoint uses a different binding than one of the standard MEX bindings, you can configure the binding used by the <xref:System.ServiceModel.Description.MetadataExchangeClient> using code or by providing an <xref:System.ServiceModel.Description.IMetadataExchange> client endpoint configuration. The Svcutil.exe tool automatically loads from its configuration file an <xref:System.ServiceModel.Description.IMetadataExchange> client endpoint configuration that has the same name as the URI scheme for the metadata endpoint address.  
   
 ## Security  
- When publishing metadata over a custom binding, ensure that the binding provides the security support that your metadata requires. For example, to prevent information disclosure and ensure your client has the right to obtain the metadata, you can make your metadata and your application more secure by configuring your <xref:System.ServiceModel.Description.IMetadataExchange> endpoint to require authentication and encryption. The sample [Custom Secure Metadata Endpoint](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md) demonstrates this scenario.  
+ When publishing metadata over a custom binding, ensure that the binding provides the security support that your metadata requires. For example, to prevent information disclosure and ensure your client has the right to obtain the metadata, you can make your metadata and your application more secure by configuring your <xref:System.ServiceModel.Description.IMetadataExchange> endpoint to require authentication and encryption. The sample [Custom Secure Metadata Endpoint](../samples/custom-secure-metadata-endpoint.md) demonstrates this scenario.  
   
 ## See also
 
-- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
-- [WS-MetadataExchange Bindings](../../../../docs/framework/wcf/extending/ws-metadataexchange-bindings.md)
-- [How to: Configure a Custom WS-Metadata Exchange Binding](../../../../docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md)
-- [How to: Retrieve Metadata Over a non-MEX Binding](../../../../docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md)
+- [Securing Services](../securing-services.md)
+- [WS-MetadataExchange Bindings](ws-metadataexchange-bindings.md)
+- [How to: Configure a Custom WS-Metadata Exchange Binding](how-to-configure-a-custom-ws-metadata-exchange-binding.md)
+- [How to: Retrieve Metadata Over a non-MEX Binding](how-to-retrieve-metadata-over-a-non-mex-binding.md)

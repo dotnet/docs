@@ -9,7 +9,7 @@ Once mapped in the object model or external mapping file, LINQ to SQL allows you
  The only methods not supported are those inherited from <xref:System.Object?displayProperty=nameWithType> that do not make sense in the context of LINQ to SQL queries, such as: `Finalize`, `GetHashCode`, `GetType`, and `MemberwiseClone`. These methods are not supported because LINQ to SQL cannot translate them for execution on the SQL Server.  
   
 > [!NOTE]
->  The common language runtime (CLR) <xref:System.DateTimeOffset?displayProperty=nameWithType> structure, and the ability to map it to a SQL `DATETIMEOFFSET` column with LINQ to SQL, requires the .NET Framework 3.5 SP1 or beyond. The SQL `DATETIMEOFFSET` column is only available in Microsoft SQL Server 2008 and beyond.  
+> The common language runtime (CLR) <xref:System.DateTimeOffset?displayProperty=nameWithType> structure, and the ability to map it to a SQL `DATETIMEOFFSET` column with LINQ to SQL, requires the .NET Framework 3.5 SP1 or beyond. The SQL `DATETIMEOFFSET` column is only available in Microsoft SQL Server 2008 and beyond.  
   
 ## SQLMethods Date and Time Methods  
  In addition to the methods offered by the <xref:System.DateTimeOffset> structure, LINQ to SQL offers the methods listed in the following table from the <xref:System.Data.Linq.SqlClient.SqlMethods?displayProperty=nameWithType> class for working with date and time.  
@@ -22,6 +22,6 @@ Once mapped in the object model or external mapping file, LINQ to SQL allows you
   
 ## See also
 
-- [Query Concepts](../../../../../../docs/framework/data/adonet/sql/linq/query-concepts.md)
-- [Creating the Object Model](../../../../../../docs/framework/data/adonet/sql/linq/creating-the-object-model.md)
-- [SQL-CLR Type Mapping](../../../../../../docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md)
+- [Query Concepts](query-concepts.md)
+- [Creating the Object Model](creating-the-object-model.md)
+- [SQL-CLR Type Mapping](sql-clr-type-mapping.md)

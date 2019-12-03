@@ -73,7 +73,7 @@ From the <xref:Microsoft.CodeAnalysis.SymbolInfo> object you can obtain the <xre
 
 Run the program and you should see the following output:
 
-```
+```output
 System.Collections
 System.Configuration
 System.Deployment
@@ -130,7 +130,7 @@ You can also build the full query using the LINQ query syntax, and then display 
 
 Build and run the program. You should see the following output:
 
-```
+```output
 Join
 Substring
 Trim

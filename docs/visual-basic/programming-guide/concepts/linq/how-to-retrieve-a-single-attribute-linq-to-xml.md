@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Single Attribute (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve a Single Attribute (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 11b938d7-c011-4048-900e-8b9183c41c94
 ---
@@ -26,7 +26,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 home  
 work  
 ```  
@@ -49,7 +49,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 home  
 work  
 ```  
@@ -57,7 +57,7 @@ work
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides explicit cast operators for the <xref:System.Xml.Linq.XAttribute> class to `string`, `bool`, `bool?`, `int`, `int?`, `uint`, `uint?`, `long`, `long?`, `ulong`, `ulong?`, `float`, `float?`, `double`, `double?`, `decimal`, `decimal?`, `DateTime`, `DateTime?`, `TimeSpan`, `TimeSpan?`, `GUID`, and `GUID?`.  
   
 ## Example  
- The following example shows the same code for an attribute that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same code for an attribute that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
 ```vb  
 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -81,7 +81,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 home  
 work  
 ```  

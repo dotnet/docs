@@ -29,7 +29,7 @@ Regardless of how many changes you make to your objects, changes are made only t
   
 ## See also
 
-- [How to: Detect and Resolve Conflicting Submissions](../../../../../../docs/framework/data/adonet/sql/linq/how-to-detect-and-resolve-conflicting-submissions.md)
-- [How to: Manage Change Conflicts](../../../../../../docs/framework/data/adonet/sql/linq/how-to-manage-change-conflicts.md)
-- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
-- [Making and Submitting Data Changes](../../../../../../docs/framework/data/adonet/sql/linq/making-and-submitting-data-changes.md)
+- [How to: Detect and Resolve Conflicting Submissions](how-to-detect-and-resolve-conflicting-submissions.md)
+- [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)
+- [Making and Submitting Data Changes](making-and-submitting-data-changes.md)

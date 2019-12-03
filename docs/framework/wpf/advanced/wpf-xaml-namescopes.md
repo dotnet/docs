@@ -21,7 +21,7 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
  In WPF XAML, elements that are common root elements (such as <xref:System.Windows.Controls.Page>, and <xref:System.Windows.Window>) always control a XAML namescope. If an element such as <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> is the root element of the page in markup, a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor adds a <xref:System.Windows.Controls.Page> root implicitly so that the <xref:System.Windows.Controls.Page> can provide a working XAML namescope.  
   
 > [!NOTE]
->  WPF build actions create a XAML namescope for a XAML production even if no `Name` or `x:Name` attributes are defined on any elements in the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup.  
+> WPF build actions create a XAML namescope for a XAML production even if no `Name` or `x:Name` attributes are defined on any elements in the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup.  
   
  If you try to use the same name twice in any XAML namescope, an exception is raised. For WPF XAML that has code-behind and is part of a compiled application, the exception is raised at build time by WPF build actions, when creating the generated class for the page during the initial markup compile. For XAML that is not markup-compiled by any build action, exceptions related to XAML namescope issues might be raised when the XAML is loaded. XAML designers might also anticipate XAML namescope issues at design time.  
   

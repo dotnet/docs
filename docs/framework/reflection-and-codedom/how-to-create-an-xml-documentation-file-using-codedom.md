@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "XML documentation, creating using CodeDOM"
   - "Code Document Object Model, generating XML documentation"
 ms.assetid: e3b80484-36b9-41dd-9d21-a2f9a36381dc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create an XML Documentation File Using CodeDOM
 CodeDOM can be used to create code that generates XML documentation. The process involves creating the CodeDOM graph that contains the XML documentation comments, generating the code, and compiling the generated code with the compiler option that creates the XML documentation output.  
@@ -75,6 +73,6 @@ CodeDOM can be used to create code that generates XML documentation. The process
   
 ## See also
 
-- [Documenting Your Code with XML](~/docs/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
-- [XML Documentation Comments](~/docs/csharp/programming-guide/xmldoc/index.md)
+- [Documenting Your Code with XML](../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)
+- [XML Documentation Comments](../../csharp/programming-guide/xmldoc/index.md)
 - [XML Documentation](/cpp/ide/xml-documentation-visual-cpp)

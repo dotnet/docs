@@ -1,5 +1,5 @@
 ---
-title: "-utf8output (Visual Basic)"
+title: "-utf8output"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "-utf8output compiler option [Visual Basic]"
@@ -12,7 +12,7 @@ Displays compiler output using UTF-8 encoding.
   
 ## Syntax  
   
-```  
+```console  
 -utf8output[+ | -]  
 ```  
   
@@ -24,7 +24,7 @@ Displays compiler output using UTF-8 encoding.
  In some international configurations, compiler output cannot be displayed correctly in the console. In such situations, use `-utf8output` and redirect compiler output to a file.  
   
 > [!NOTE]
->  The `-utf8output` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
+> The `-utf8output` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code compiles `In.vb` and directs the compiler to display output using UTF-8 encoding.  

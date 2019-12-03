@@ -2,8 +2,6 @@
 title: "ICorDebugDataTarget2::EnumerateThreadIDs Method"
 ms.date: "03/30/2017"
 ms.assetid: af02460f-2a45-496e-bc4e-a1ac4f80fe11
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2::EnumerateThreadIDs Method
 Returns a list of active thread IDs.  
@@ -31,7 +29,7 @@ HRESULT EnumerateThreadIDs(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).**Header:** CorDebug.idl, CorDebug.h  

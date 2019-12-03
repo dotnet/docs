@@ -8,15 +8,13 @@ helpviewer_keywords:
   - "configuration switches"
   - "configuration"
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<AppContextSwitchOverrides> Element
 Defines one or more switches used by the <xref:System.AppContext> class to provide an opt-out mechanism for new functionality.  
   
- \<configuration>  
- \<runtime>  
-\<AppContextSwitchOverrides>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<AppContextSwitchOverrides>**  
   
 ## Syntax  
   
@@ -88,7 +86,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Runtime.Serialization.`<br/>`DoNotUseECMAScriptV6EscapeControlCharacter` |Controls whether the [DataContractJsonSerializer](xref:System.Runtime.Serialization.Json.DataContractJsonSerializer) serializes some control characters based on the ECMAScript V6 and V8 standards. For more information, see [Mitigation: Serialization of Control Characters with the DataContractJsonSerializer](../../../migration-guide/mitigation-serialization-control-characters.md)| .NET Framework 4.7 |
 |`Switch.System.Runtime.Serialization.`<br/>`DoNotUseTimeZoneInfo`|Controls whether the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> supports multiple adjustments or only a single adjustment for a time zone. If `true`, it uses the <xref:System.TimeZoneInfo> type to serialize and deserialize date and time data; otherwise, it uses the <xref:System.TimeZone> type, which does not support multiple adjustment rules.|.NET Framework 4.6.2|
 |`Switch.System.Runtime.Serialization.UseNewMaxArraySize`|Controls whether <xref:System.Runtime.Serialization.ObjectManager?displayProperty=nameWithType> uses a larger array size during object serialization and deserialization. Set this switch to `true` to improve the performance of serialization and deserialization of large object graphs by types such as <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>. |.NET Framework 4.7.2|
-|`Switch.System.Security.ClaimsIdentity.`<br/>`SetActorAsReferenceWhenCopyingClaimsIdentity`|Controls whether the <xref:System.Security.Claims.ClaimsIdentity.%23ctor%28System.Security.Principal.IIdentity%29?displayProperty=nameWithType> constructor sets the  new object's <xref:System.Security.Claims.ClaimsIdentity.Actor%2A?displayProperty=nameWithType> property with an existing object reference. For more information, see [Mitigation: ClaimsIdentity Constructor](../../../migration-guide/mitigation-claimsidentity-constructor.md).|.NET Framework 4.6.2|  
+|`Switch.System.Security.ClaimsIdentity.`<br/>`SetActorAsReferenceWhenCopyingClaimsIdentity`|Controls whether the <xref:System.Security.Claims.ClaimsIdentity.%23ctor%28System.Security.Principal.IIdentity%29?displayProperty=nameWithType> constructor sets the  new object's <xref:System.Security.Claims.ClaimsIdentity.Actor%2A?displayProperty=nameWithType> property with an existing object reference. For more information, see [Mitigation: ClaimsIdentity Constructor](../../../migration-guide/retargeting/4.6.1-4.6.2.md).|.NET Framework 4.6.2|  
 |`Switch.System.Security.Cryptography.`<br/>`AesCryptoServiceProvider.DontCorrectlyResetDecryptor`|Controls whether the attempt to reuse an <xref:System.Security.Cryptography.AesCryptoServiceProvider> decryptor throws a <xref:System.Security.Cryptography.CryptographicException>. For more information, see [AesCryptoServiceProvider decryptor provides a reusable transform](../../../migration-guide/retargeting/4.6.1-4.6.2.md#aescryptoserviceprovider-decryptor-provides-a-reusable-transform).|.NET Framework 4.6.2|
 |`Switch.System.Security.Cryptography.`<br/>`DoNotAddrOfCspParentWindowHandle`|Controls whether the value of the [CspParameters.ParentWindowHandle](xref:System.Security.Cryptography.CspParameters.ParentWindowHandle) property is an [IntPtr](xref:System.IntPtr) that represents the memory location of a window handle, or whether it is a window handle (an HWND). For more information, see [Mitigation: CspParameters.ParentWindowHandle Expects an HWND](../../../migration-guide/retargeting/4.6.2-4.7.md#cspparametersparentwindowhandle-now-expects-hwnd-value). |.NET Framework 4.7|   
 |`Switch.System.Security.Cryptography.`<br/>`UseLegacyFipsThrow`|Controls whether the use of managed cryptography classes in FIPS mode throws a <xref:System.Security.Cryptography.CryptographicException> (`true`) or relies on the implementation of system libraries (`false`).|.NET Framework 4.8|
@@ -112,7 +110,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Windows.Controls.Grid.`<br/>`StarDefinitionsCanExceedAvailableSpace` |Determines whether Windows Presentation Foundation applies an old algorithm (`true`) or a new algorithm (`false`) in allocating space to \*-columns. For more information, see [Mitigation: Grid Control's Space Allocation to Star-columns](../../../migration-guide/retargeting/4.6.2-4.7.md#wpf-grid-allocation-of-space-to-star-columns). |.NET Framework 4.7 |
 |`Switch.System.Windows.Controls.TabControl.`<br/>`SelectionPropertiesCanLagBehindSelectionChangedEvent`|Controls whether a selector or a tab control always updates the value of its selected value property before raising the selection changed event.|.NET Framework 4.7.1|
 |`Switch.System.Windows.Controls.Text.`<br/>`UseAdornerForTextboxSelectionRendering`|Determines whether non-Adorner based selection rendering is available for the <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.PasswordBox> controls to prevent occluded text (`false`), or whether text is rendered only in the Adorner layer (`true`).|.NET Framework 4.7.2|
-|`Switch.System.Windows.Data.Binding.`<br/>`IListIndexerHidesCustomIndexer`|Controls whether custom IList indexers are used incorrectly (`false`) or correctly (`true`) by the <xref:System.Windows.Data.Binding?displayProperty=nameWithType> class.|.NET Framework 4.8|
+|`Switch.System.Windows.Data.Binding.`<br/>`IListIndexerHidesCustomIndexer`|Controls whether custom IList indexers are used incorrectly (`true`) or correctly (`false`) by the <xref:System.Windows.Data.Binding?displayProperty=nameWithType> class.|.NET Framework 4.8|
 |`Switch.System.Windows.DoNotScaleForDpiChanges`|Determines whether DPI changes occur on a per-system (a value of `false`) or per-monitor basis (a value of `true`).|.NET Framework 4.6.2|
 |`Switch.System.Windows.`<br/>`DoNotUsePresentationDpiCapabilityTier2OrGreater`|Controls whether improvements in sizing of controls in a <xref:System.Windows.Interop.HwndHost?displayProperty=nameWithType> when WPF is run in per-monitor aware mode are disabled (`true`) or enabled (`false`).|.NET Framework 4.8|
 |`Switch.System.Windows.Forms.`<br/>`DomainUpDown.UseLegacyScrolling`|Determines whether the developer needs to specially handle the <xref:System.Windows.Forms.DomainUpDown.UpButton?displayProperty=nameWithType> action when control text is present. `true` to handle the <xref:System.Windows.Forms.DomainUpDown.UpButton> action; `false` for the <xref:System.Windows.Forms.DomainUpDown.UpButton?displayProperty=nameWithType> and <xref:System.Windows.Forms.DomainUpDown.DownButton?displayProperty=nameWithType> actions to be properly in sync.|.NET Framework 4.7.2|
@@ -132,13 +130,13 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`System.Xml.`<br /><br /> `IgnoreEmptyKeySequences`|Controls whether empty key sequences in compound keys are ignored by XSD schema validation. For more information, see [Mitigation: XML Schema Validation](../../../migration-guide/mitigation-xml-schema-validation.md).|.NET Framework 4.6|  
   
 > [!NOTE]
->  Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the `static` (in C#) or `Shared` (in Visual Basic) <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.  
+> Instead of adding an `AppContextSwitchOverrides` element to an application configuration file, you can also set the switches programmatically by calling the `static` (in C#) or `Shared` (in Visual Basic) <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.  
   
  Library developers can also define custom switches to allow callers to opt out of changed functionality introduced  in later versions of their libraries. For more information, see the <xref:System.AppContext> class.  
   
 ## Switches in ASP.NET applications
 
-You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](../../../configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../../../configure-apps/file-schema/appsettings/index.md) section of the web.config file. 
+You can configure an ASP.NET application to use compatibility settings by adding an [\<Add>](../appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](../appsettings/index.md) section of the web.config file. 
 
 The following example uses the `<add>` element to add two settings to the `<appSettings>` section of a web.config file:
 

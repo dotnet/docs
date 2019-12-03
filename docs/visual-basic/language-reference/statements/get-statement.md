@@ -1,5 +1,5 @@
 ---
-title: "Get Statement (Visual Basic)"
+title: "Get Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Get"
@@ -17,7 +17,7 @@ Declares a `Get` property procedure used to retrieve the value of a property.
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] Get()  
     [ statements ]  
 End Get  

@@ -14,14 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0020b62c-ea88-40c7-a9ee-16b064f81624
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataError Interface
 Provides a callback mechanism for reporting errors during the metadata merge.  
   
 > [!NOTE]
->  The `IMetaDataError` interface must be implemented by the client.  
+> The `IMetaDataError` interface must be implemented by the client.  
   
 ## Methods  
   

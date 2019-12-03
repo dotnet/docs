@@ -36,7 +36,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 - (ReceiveRetryCount + 1) on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
 > [!NOTE]
->  No retries are made for a message that is delivered successfully.  
+> No retries are made for a message that is delivered successfully.  
   
  To keep track of the number of times a message read is attempted, [!INCLUDE[wv](../../../../includes/wv-md.md)] maintains a durable message property that counts the number of aborts and a move count property that counts the number of times the message moves between the application queue and subqueues. The WCF channel uses these to compute the receive retry count and the retry cycles count. On [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], the abort count is maintained in memory by the WCF channel and is reset if the application fails. Also, the WCF channel can hold the abort counts for up to 256 messages in memory at any time. If a 257th message is read, then the oldest message's abort count is reset.  
   
@@ -51,7 +51,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
 - <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding>. A binding suitable for communicating with existing Message Queuing applications.  
   
 > [!NOTE]
->  You can alter properties in these bindings based on the requirements of your WCF service. The entire poison message handling mechanism is local to the receiving application. The process is invisible to the sending application unless the receiving application ultimately stops and sends a negative acknowledgment back to the sender. In that case, the message is moved to the sender's dead-letter queue.  
+> You can alter properties in these bindings based on the requirements of your WCF service. The entire poison message handling mechanism is local to the receiving application. The process is invisible to the sending application unless the receiving application ultimately stops and sends a negative acknowledgment back to the sender. In that case, the message is moved to the sender's dead-letter queue.  
   
 ## Best Practice: Handling MsmqPoisonMessageException  
  When the service determines that a message is poison, the queued transport throws a <xref:System.ServiceModel.MsmqPoisonMessageException> that contains the `LookupId` of the poison message.  

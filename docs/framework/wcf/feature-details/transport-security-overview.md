@@ -10,10 +10,10 @@ ms.assetid: 00959326-aa9d-44d0-af61-54933d4adc7f
 Transport security mechanisms in Windows Communication Foundation (WCF) depend on the binding and transport being used. For example, when using the <xref:System.ServiceModel.WSHttpBinding> class, the transport is HTTP, and the primary mechanism for securing the transport is Secure Sockets Layer (SSL) over HTTP, commonly called HTTPS. This topic discusses the major transport security mechanisms used in the WCF system-provided bindings.  
   
 > [!NOTE]
->  When SSL security is used with .NET Framework 3.5 and later an WCF client uses both the intermediate certificates in its certificate store and the intermediate certificates received during SSL negotiation to perform certificate chain validation on the service's certificate. .NET Framework 3.0 only uses the intermediate certificates installed in the local certificate store.  
+> When SSL security is used with .NET Framework 3.5 and later an WCF client uses both the intermediate certificates in its certificate store and the intermediate certificates received during SSL negotiation to perform certificate chain validation on the service's certificate. .NET Framework 3.0 only uses the intermediate certificates installed in the local certificate store.  
   
 > [!WARNING]
->  When transport security is used, the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property may be overwritten. To prevent this from happening set the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermissionMode%2A?displayProperty=nameWithType> to <xref:System.ServiceModel.Description.PrincipalPermissionMode.None?displayProperty=nameWithType>. <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> is a service behavior that can be set on the service description.  
+> When transport security is used, the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=nameWithType> property may be overwritten. To prevent this from happening set the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermissionMode%2A?displayProperty=nameWithType> to <xref:System.ServiceModel.Description.PrincipalPermissionMode.None?displayProperty=nameWithType>. <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior> is a service behavior that can be set on the service description.  
   
 ## BasicHttpBinding  
  By default, the <xref:System.ServiceModel.BasicHttpBinding> class does not provide security. This binding is designed for interoperability with Web service providers that do not implement security. However, you can switch on security by setting the <xref:System.ServiceModel.BasicHttpSecurity.Mode%2A> property to any value except <xref:System.ServiceModel.BasicHttpSecurityMode.None>. To enable transport security, set the property to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>.  
@@ -80,7 +80,7 @@ Transport security mechanisms in Windows Communication Foundation (WCF) depend o
  On the client, you must specify a certificate using the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A> method of the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential> class.  
   
 > [!NOTE]
->  If you are using Windows security, a certificate is not required.  
+> If you are using Windows security, a certificate is not required.  
   
  The following code uses the thumbprint of the certificate, which uniquely identifies it. For more information about certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   

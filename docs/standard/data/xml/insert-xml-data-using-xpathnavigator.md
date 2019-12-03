@@ -230,7 +230,7 @@ navigator.SetTypedValue(DateTime.Now);
 - If the prefix as well as the namespace URI in both the <xref:System.Xml.XmlReader> object's context and the <xref:System.Xml.XPath.XPathNavigator> object's context is the same, no new namespace declaration is added to the newly inserted node.  
   
 > [!NOTE]
->  The description above also applies to namespace declarations with the empty `string` as a prefix (for example, the default namespace declaration).  
+> The description above also applies to namespace declarations with the empty `string` as a prefix (for example, the default namespace declaration).  
   
  The following are the possible `xml:lang` conflicts.  
   

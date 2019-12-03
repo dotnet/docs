@@ -13,7 +13,7 @@ F# provides conversion operators for arithmetic conversions between various prim
 
 Each of these operators has the same name as the name of the destination type. For example, in the following code, in which the types are explicitly annotated, `byte` appears with two different meanings. The first occurrence is the type and the second is the conversion operator.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4401.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4401.fs)]
 
 The following table shows conversion operators defined in F#.
 
@@ -41,7 +41,7 @@ In addition to built-in primitive types, you can use these operators with types 
 
 The `enum` operator is a generic operator that takes one type parameter that represents the type of the `enum` to convert to. When it converts to an enumerated type, type inference attempts to determine the type of the `enum` that you want to convert to. In the following example, the variable `col1` is not explicitly annotated, but its type is inferred from the later equality test. Therefore, the compiler can deduce that you are converting to a `Color` enumeration. Alternatively, you can supply a type annotation, as with `col2` in the following example.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4402.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4402.fs)]
 
 You can also specify the target enumeration type explicitly as a type parameter, as in the following code:
 
@@ -92,7 +92,7 @@ As for the `upcast` operator, if the compiler cannot infer a specific target typ
 
 The following code illustrates the use of the `:>` and `:?>` operators. The code illustrates that the `:?>` operator is best used when you know that conversion will succeed, because it throws `InvalidCastException` if the conversion fails. If you do not know that a conversion will succeed, a type test that uses a `match` expression is better because it avoids the overhead of generating an exception.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet4403.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4403.fs)]
 
 Because generic operators `downcast` and `upcast` rely on type inference to determine the argument and return type, in the above code, you can replace
 

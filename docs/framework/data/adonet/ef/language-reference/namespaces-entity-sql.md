@@ -17,7 +17,7 @@ ms.assetid: 83991c21-60db-4af9-aca3-b416f6cae98e
   
  Next, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] tries to search all unqualified namespaces (specified in the prolog) for the identifier. If the identifier can be located in exactly one namespace, that location is returned. If more than one namespace has a match for that identifier, an exception is thrown. If no namespace can be identified for the identifier, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] passes the name onto the next outward scope (the <xref:System.Data.Common.DbCommand> or <xref:System.Data.Common.DbConnection> object), as illustrated in the following example:  
   
-```  
+```sql  
 SELECT TREAT(p AS NamespaceName.Employee)  
 FROM ContainerName.Person AS p  
 WHERE p IS OF (NamespaceName.Employee)  
@@ -31,5 +31,5 @@ WHERE p IS OF (NamespaceName.Employee)
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
-- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+- [Entity SQL Reference](entity-sql-reference.md)
+- [Entity SQL Overview](entity-sql-overview.md)

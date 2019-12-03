@@ -35,7 +35,7 @@ In this step of the tutorial, the `WriteLine` activities in the workflow are mod
 > Before following the steps in this topic, run the application, start several workflows of each type, and making one or two guesses for each one. These persisted workflows are used in this step and the following step, [How to: Update the Definition of a Running Workflow Instance](how-to-update-the-definition-of-a-running-workflow-instance.md).
 
 > [!NOTE]
-> Each step in the Getting Started tutorial depends on the previous steps. If you did not complete the previous steps you can download a completed version of the tutorial from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://docs.microsoft.com/samples/browse/-samples).
+> Each step in the Getting Started tutorial depends on the previous steps. If you did not complete the previous steps you can download a completed version of the tutorial from [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
 
 ### <a name="BKMK_BackupCopy"></a> To make a copy of the NumberGuessWorkflowActivities project
 

@@ -33,7 +33,7 @@ After registering with the Subscription Manager, you're ready to install and ena
 <!-- TODO: is this the correct value? Taken from the webpage but it doesn't have aspnet in the name -->
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms
-yum install rh-dotnet30-dotnet-runtime-3.0 -y
+yum install rh-dotnet30-aspnetcore-runtime-3.0 -y
 scl enable rh-dotnet30 bash
 ```
 
@@ -46,3 +46,7 @@ subscription-manager repos --enable=rhel-7-server-dotnet-rpms
 yum install rh-dotnet30-dotnet-runtime-3.0 -y
 scl enable rh-dotnet30 bash
 ```
+
+## See also
+
+- For more information on installing .NET Core 3.0 with RHEL, see [Using .NET Core 3.0 on Red Hat Enterprise Linux 7](https://access.redhat.com/documentation/en-us/net_core/3.0/html/getting_started_guide/gs_install_dotnet).

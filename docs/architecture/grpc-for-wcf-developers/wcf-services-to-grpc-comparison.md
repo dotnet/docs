@@ -69,7 +69,7 @@ namespace HelloGrpc
 }
 ```
 
-This chapter will refer to this example code when explaining concepts and features of gRPC.
+This chapter will refer to this example code when explaining different concepts and features of gRPC.
 
 >[!div class="step-by-step"]
 >[Previous](protobuf-maps.md)

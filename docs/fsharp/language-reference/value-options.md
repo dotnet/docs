@@ -1,7 +1,7 @@
 ---
 title: Value Options
 description: Learn about the F# Value Option type, which is a struct version of the Option type.
-ms.date: 02/06/2019
+ms.date: 12/04/2019
 ---
 
 # Value Options

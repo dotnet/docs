@@ -10,7 +10,7 @@ ms.author: riande
 ---
 # Work with Buffers in .NET
 
-This article provides an overview of types that help you read data that runs across multiple buffers. They're primarily used to support <xref:System.IO.Pipelines.PipeReader> objects.
+This article provides an overview of types that help read data that runs across multiple buffers. They're primarily used to support <xref:System.IO.Pipelines.PipeReader> objects.
 
 ## IBufferWriter\<T\>
 

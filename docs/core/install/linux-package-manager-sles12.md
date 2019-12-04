@@ -3,7 +3,7 @@ title: Install .NET Core on SLES 12 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on SLES 12.
 author: thraka
 ms.author: adegeo
-ms.date: 11/06/2019
+ms.date: 12/04/2019
 ---
 
 # SLES 12 Package Manager - Install .NET Core

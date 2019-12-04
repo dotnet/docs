@@ -3,7 +3,7 @@ title: Install .NET Core on CentOS 7 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on CentOS 7.
 author: thraka
 ms.author: adegeo
-ms.date: 11/06/2019
+ms.date: 12/04/2019
 ---
 
 # CentOS 7 Package Manager - Install .NET Core

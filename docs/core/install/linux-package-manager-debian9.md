@@ -3,7 +3,7 @@ title: Install .NET Core on Debian 9 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on Debian 9.
 author: thraka
 ms.author: adegeo
-ms.date: 11/06/2019
+ms.date: 12/04/2019
 ---
 
 # Debian 9 Package Manager - Install .NET Core

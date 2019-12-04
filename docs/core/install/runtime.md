@@ -3,7 +3,7 @@ title: Install .NET Core runtime on Windows, Linux, and macOS - .NET Core
 description: Learn how to install .NET Core on Windows, Linux, and macOS. Discover the dependencies required to run .NET Core apps.
 author: thraka
 ms.author: adegeo
-ms.date: 11/06/2019
+ms.date: 12/04/2019
 ms.custom: "updateeachrelease"
 zone_pivot_groups: operating-systems-set-one
 ---

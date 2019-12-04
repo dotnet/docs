@@ -70,7 +70,7 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 
 * **`--skip-duplicate`**
 
-  When pushing multiple packages to an HTTP(S) server, treat any 409 Conflict response as a warning so that the push can continue. Available since .NET Core 3.1 SDK.
+  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue. Available since .NET Core 3.1 SDK.
                                  
 * **`-sk|--symbol-api-key <API_KEY>`**
 

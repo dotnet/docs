@@ -37,7 +37,7 @@ You can install the .NET Core Runtime with many of the common Linux package mana
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the runtime. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `Channel` switch.
 
 ```powershell
 dotnet-install.ps1 -Channel 3.0
@@ -51,10 +51,10 @@ dotnet-install.ps1 -Channel 3.0
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the runtime. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 2.1. To install the current release of .NET Core (3.0), run the script with the following switch:
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `current` switch.
 
 ```bash
-./dotnet-install.sh -c Current
+./dotnet-install.sh --current 3.0
 ```
 
 ::: zone-end
@@ -63,7 +63,7 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 
 You can download and install .NET Core directly with one of the following links:
 
-- [.NET Core 3.1 Preview downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 - [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)

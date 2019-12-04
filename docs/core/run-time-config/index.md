@@ -24,7 +24,7 @@ The articles in this section of the documentation include are organized by categ
 
 ## runtimeconfig.json
 
-Specify run-time configuration options in the **configProperties** section of the *runtimeconfig.json* file. This section has the form:
+Specify run-time configuration options in the **configProperties** section of the app's *runtimeconfig.json* file. This section has the form:
 
 ```json
 {

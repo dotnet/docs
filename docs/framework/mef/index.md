@@ -266,7 +266,7 @@ public interface IOperationData
 }
 ```
 
- In this case, the metadata for each operation is the symbol that represents that operation, such as +, -, *, and so on. To make the addition operation available, add the following class to the module or `SimpleCalculator` namespace:
+ In this case, the metadata for each operation is the symbol that represents that operation, such as +, -, \*, and so on. To make the addition operation available, add the following class to the module or `SimpleCalculator` namespace:
 
 ```vb
 <Export(GetType(IOperation))>

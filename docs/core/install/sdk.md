@@ -16,10 +16,10 @@ In this article, you'll learn how to install the .NET Core SDK. The .NET Core SD
 
 ## Install with an installer
 
-Windows has standalone installers that can be used to install the .NET Core 3.0 SDK:
+Windows has standalone installers that can be used to install the .NET Core 3.1 SDK:
 
-- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0) 
-- [x86 (32-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [x86 (32-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
 ::: zone-end
 
@@ -27,9 +27,9 @@ Windows has standalone installers that can be used to install the .NET Core 3.0 
 
 ## Install with an installer
 
-macOS has standalone installers that can be used to install the .NET Core 3.0 SDK:
+macOS has standalone installers that can be used to install the .NET Core 3.1 SDK:
 
-- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
 ::: zone-end
 
@@ -44,7 +44,7 @@ You can install the .NET Core SDK with many of the common Linux package managers
 To extract the SDK and make the commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
 
 ```bash
-mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.0.101-linux-musl-x64.tar.gz -C $HOME/dotnet
+mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.101-linux-musl-x64.tar.gz -C $HOME/dotnet
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 ```
@@ -72,7 +72,7 @@ If you're using Visual Studio to develop .NET Core apps, the following table des
 
 | .NET Core SDK version | Visual Studio version                      |
 | --------------------- | ------------------------------------------ |
-| 3.1 Preview           | Visual Studio 2019 version 16.4 preview or higher. |
+| 3.1                   | Visual Studio 2019 version 16.4 or higher. |
 | 3.0                   | Visual Studio 2019 version 16.3 or higher. |
 | 2.2                   | Visual Studio 2017 version 15.9 or higher. |
 | 2.1                   | Visual Studio 2017 version 15.7 or higher. |
@@ -104,7 +104,7 @@ When installing or modifying Visual Studio, select one of the following workload
 
 ## Install with Visual Studio for Mac
 
-Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation).
+Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation). For the latest release, .NET Core 3.1, you must use the Visual Studio for Mac 8.4 Preview.
 
 [![macOS Visual Studio 2019 for Mac with .NET Core workload feature](media/install-sdk/mac-install-selection.png)](media/install-sdk/mac-install-selection.png#lightbox)
 
@@ -173,7 +173,7 @@ For more information about using .NET Core in a Docker container, see [Introduct
 
 - [Tutorial: C# Hello World tutorial](../tutorials/with-visual-studio.md).
 - [Tutorial: Visual Basic Hello World tutorial](../tutorials/vb-with-visual-studio.md).
-- [Tutorial: Create a new app with Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet).
+- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
 
 ::: zone-end
@@ -181,7 +181,14 @@ For more information about using .NET Core in a Docker container, see [Introduct
 ::: zone pivot="os-macos"
 
 - [Tutorial: Get started on macOS](../tutorials/using-on-mac-vs.md).
-- [Tutorial: Create a new app with Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet).
+- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
+- [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
+
+::: zone-end
+
+::: zone pivot="os-linux"
+
+- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.mdt).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
 
 ::: zone-end

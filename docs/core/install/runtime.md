@@ -12,14 +12,24 @@ zone_pivot_groups: operating-systems-set-one
 
 In this article, you'll learn how to download and install the .NET Core runtime. The .NET Core runtime is used to run apps created with .NET Core.
 
-::: zone pivot="os-windows,os-macos"
+::: zone pivot="os-windows"
 
 ## Install with an installer
 
-Both Windows and macOS have standalone installers that can be used to install the .NET Core 3.0 runtime.
+Windows has standalone installers that can be used to install the .NET Core 3.1 runtime:
 
-- Windows [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0) | [x86 (32-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- macOS [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [x86 (32-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+## Install with an installer
+
+macOS has standalone installers that can be used to install the .NET Core 3.1 runtime:
+
+- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
 ::: zone-end
 
@@ -37,11 +47,14 @@ You can install the .NET Core Runtime with many of the common Linux package mana
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the runtime. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `Channel` switch.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `Channel` switch. Include the `Runtime` switch to install a runtime. Otherwise, the script will install the [SDK](sdk.md).
 
 ```powershell
-dotnet-install.ps1 -Channel 3.0
+dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore
 ```
+
+> [!NOTE]
+> The command above installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET Core runtime.
 
 ::: zone-end
 
@@ -51,11 +64,14 @@ dotnet-install.ps1 -Channel 3.0
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the runtime. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `current` switch.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `current` switch. Include the `runtime` switch to install a runtime. Otherwise, the script will install the [SDK](sdk.md).
 
 ```bash
-./dotnet-install.sh --current 3.0
+./dotnet-install.sh --current 3.1 --runtime aspnetcore
 ```
+
+> [!NOTE]
+> The command above installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET Core runtime.
 
 ::: zone-end
 

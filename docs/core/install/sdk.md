@@ -12,14 +12,24 @@ zone_pivot_groups: operating-systems-set-one
 
 In this article, you'll learn how to install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
-::: zone pivot="os-windows,os-macos"
+::: zone pivot="os-windows"
 
 ## Install with an installer
 
-Both Windows and macOS have standalone installers that can be used to install the .NET Core 3.0 SDK.
+Windows has standalone installers that can be used to install the .NET Core 3.0 SDK:
 
-- Windows [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0) | [x86 (32-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- macOS [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0) 
+- [x86 (32-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+## Install with an installer
+
+macOS has standalone installers that can be used to install the .NET Core 3.0 SDK:
+
+- [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 
 ::: zone-end
 

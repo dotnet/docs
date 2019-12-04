@@ -17,7 +17,7 @@ This article gives you an overview of types that help you read data that runs ac
 <xref:System.Buffers.IBufferWriter%601?displayProperty=fullName> is a contract for synchronous buffered writing. At the lowest level, the interface:
 
 - Is basic and not difficult to use.
-- Allows access to a <xref:System.Memory%601> or <xref:System.Span%601>. The `Memory<T>` or `Span<T>` can be written too and you can determine how many `T` items were written.
+- Allows access to a <xref:System.Memory%601> or <xref:System.Span%601>. The `Memory<T>` or `Span<T>` can be written to and you can determine how many `T` items were written.
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet)]
 
@@ -37,7 +37,7 @@ This method of writing uses the `Memory<T>`/`Span<T>` buffer provided by the `IB
 
 - `GetSpan` and `GetMemory` return a buffer with at least the requested amount of memory. Don't assume exact buffer sizes.
 - There's no guarantee that successive calls will return the same buffer or the same-sized buffer.
-- A new buffer must be requested after calling `Advance` to continue writing more data. A previously acquired buffer cannot be written to.
+- A new buffer must be requested after calling `Advance` to continue writing more data. A previously acquired buffer cannot be written to after `Advance` has been called.
 
 ## ReadOnlySequence\<T\>
 
@@ -98,7 +98,7 @@ There are a few approaches that can be used to process data in multi-segmented s
 - Use the [`SequenceReader<T>`](#sequencereadert).
 - Parse data segment by segment, keeping track of the `SequencePosition` and index within the segment parsed. This avoids unnecessary allocations but may be inefficient, especially for small buffers.
 - Copy the `ReadOnlySequence<T>` to a contiguous array and treat it like a single buffer:
-  - If the `ReadOnlySequence<T>` has a length less than 256, it may be reasonable to copy the data into a stack-allocated buffer using the [stackalloc](../../csharp/language-reference/operators/stackalloc.md) operator.
+  - If the size of the `ReadOnlySequence<T>` is small, it may be reasonable to copy the data into a stack-allocated buffer using the [stackalloc](../../csharp/language-reference/operators/stackalloc.md) operator.
   - Copy the `ReadOnlySequence<T>` into a pooled array using <xref:System.Buffers.ArrayPool%601.Shared%2A?displayProperty=nameWithType>.
   - Use [`ReadOnlySequence<T>.ToArray()`](xref:System.Buffers.BuffersExtensions.ToArray%2A). This isn't recommended in hot paths as it allocates a new `T[]` on the heap.
 

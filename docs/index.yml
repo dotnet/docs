@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 10/29/2019
+  ms.date: 12/05/2019
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -39,7 +39,7 @@ conceptualContent:
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
-    - title: Get started
+    - title: Open source .NET
       summary: Start developing apps with .NET Core
       links:
         - url: core/get-started.md
@@ -173,7 +173,7 @@ additionalContent:
           - url: /aspnet/mvc/overview/deployment/docker-aspnetmvc
             text: ASP.NET MVC apps in Windows containers
       # Card
-      - title: Cloud
+      - title: Cloud native and microservices
         links:
           - url: /dotnet/azure/
             text: Azure for .NET documentation
@@ -181,6 +181,10 @@ additionalContent:
             text: Storage
           - url: /dotnet/fsharp/using-fsharp-on-azure/
             text: Using F# on Azure
+          - url: architecture/serverless/index.md
+            text: "Serverless apps: Architecture, patterns, and Azure implementation"
+          - url: architecture/microservices/index.md
+            text: ".NET Microservices: Architecture for Containerized .NET Applications"
       # Card
       - title: Mobile
         links:
@@ -225,6 +229,17 @@ additionalContent:
             text: Azure machine learning
           - url: spark/index.yml
             text: .NET for Apache Spark
+      # Card
+      - title: Internet of things (IoT)
+        links:
+          - url: https://channel9.msdn.com/Shows/On-NET/IoT-support-for-NET-Core
+            text: "On .NET: Learn about IoT support in .NET Core"
+          - url: https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0
+            text: Cross-Platform IoT Programming with .NET Core 3.0
+          - url: https://github.com/dotnet/iot
+            text: .NET Core IoT libraries
+          - url: https://www.nuget.org/packages/System.Device.Gpio
+            text: System.Device.Gpio NuGet package
 
     - title: API reference sections # < 60 chars (optional)
       summary: Search the .NET API reference documentation, scoped to your interest. # < 160 chars (optional)

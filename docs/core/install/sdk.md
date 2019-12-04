@@ -188,7 +188,7 @@ For more information about using .NET Core in a Docker container, see [Introduct
 
 ::: zone pivot="os-linux"
 
-- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.mdt).
+- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
 
 ::: zone-end

@@ -30,10 +30,10 @@ The topics in this section help you quickly understand Open Data Protocol (OData
  Provides links to WCF Data Services and OData resources.  
   
 ## Related Sections  
- [WCF Data Services (Silverlight)](https://go.microsoft.com/fwlink/?LinkID=143149)  
+ [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))  
   
  [Getting Started](../adonet/ef/getting-started.md)  
   
 ## See also
 
-- [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
+- [OData SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip)

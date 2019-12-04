@@ -13,7 +13,7 @@ ms.assetid: 0121f49d-bff2-4bc6-af06-f1628dcd61f1
 Configures the local directory for a Simple Mail Transport Protocol (SMTP) server.  
   
 [**\<:::no-loc text="configuration":::>**](../configuration-element.md)\
-&nbsp;&nbsp;[**\<:::no-loc text="system.net":::>"](system-net-element-network-settings.md)\
+&nbsp;&nbsp;[**\<:::no-loc text="system.net":::>**](system-net-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<:::no-loc text="mailSettings":::>**](mailsettings-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<:::no-loc text="smtp":::>**](smtp-element-network-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<:::no-loc text="specifiedPickupDirectory":::>**  

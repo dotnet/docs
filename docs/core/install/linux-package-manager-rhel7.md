@@ -18,7 +18,7 @@ To install .NET Core from Red Hat on RHEL, you first need to register using the 
 
 ## Install the .NET Core SDK
 
-After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following commands to enable the RHEL 7 dotnet channel and install .
+After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following commands to enable the RHEL 7 dotnet channel and install.
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9c37185f-d1e0-4a6e-8b99-707f7df61d88
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetGenerationBounds Method
 Gets the memory regions, which are segments of the heap, that make up the various garbage collection generations.  

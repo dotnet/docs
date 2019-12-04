@@ -1,5 +1,5 @@
 ---
-title: "Other Control Structures (Visual Basic)"
+title: "Other Control Structures"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "statements [Visual Basic], control flow"

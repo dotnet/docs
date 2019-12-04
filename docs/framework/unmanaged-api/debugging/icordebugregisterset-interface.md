@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: d3d9676d-0b87-4bc3-b679-7bbc7a186c88
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet Interface
 Represents the set of registers available on the computer that is currently executing code.  

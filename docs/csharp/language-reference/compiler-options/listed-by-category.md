@@ -111,4 +111,4 @@ The following compiler options are sorted by category. For an alphabetical list,
 
 - [C# Compiler Options](index.md)
 - [C# Compiler Options Listed Alphabetically](listed-alphabetically.md)
-- [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [How to set environment variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)

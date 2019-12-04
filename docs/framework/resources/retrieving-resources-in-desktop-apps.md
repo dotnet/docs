@@ -18,11 +18,10 @@ helpviewer_keywords:
   - "translating resources into languages"
   - "localizing resources"
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Retrieving Resources in Desktop Apps
-When you work with localized resources in .NET Framework desktop apps, you should ideally package the resources for the default or neutral culture with the main assembly and create a separate satellite assembly for each language or culture that your app supports. You can then use the <xref:System.Resources.ResourceManager> class as described in the next section to access named resources. If you choose not to embed your resources in the main assembly and satellite assemblies, you can also access binary .resources files directly, as discussed in the section [Retrieving Resources from .resources files](#from_file) later in this article.  To retrieve resources in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Creating and retrieving resources in Windows Store apps](https://go.microsoft.com/fwlink/p/?LinkID=241674) in the Windows Dev Center.  
+
+When you work with localized resources in .NET Framework desktop apps, you should ideally package the resources for the default or neutral culture with the main assembly and create a separate satellite assembly for each language or culture that your app supports. You can then use the <xref:System.Resources.ResourceManager> class as described in the next section to access named resources. If you choose not to embed your resources in the main assembly and satellite assemblies, you can also access binary .resources files directly, as discussed in the section [Retrieving Resources from .resources files](#from_file) later in this article.  To retrieve resources in Windows 8.x Store apps, see [Creating and retrieving resources in Windows Store apps](https://docs.microsoft.com/previous-versions/windows/apps/hh694557(v=vs.140)).  
   
 <a name="from_assembly"></a>   
 ## Retrieving Resources from Assemblies  
@@ -201,4 +200,4 @@ csc Example.cs
 - [Resources in Desktop Apps](index.md)
 - [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
-- [Creating and retrieving resources in Windows Store apps](https://go.microsoft.com/fwlink/p/?LinkID=241674)
+- [Creating and retrieving resources in Windows Store apps](https://docs.microsoft.com/previous-versions/windows/apps/hh694557(v=vs.140))

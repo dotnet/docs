@@ -36,7 +36,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  There are really two core concepts to understand when discussing concurrency in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] – the dispatcher and thread affinity.  
   
- During the design phase of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], the goal was to move to a single thread of execution, but a non-thread "affinitized" model. Thread affinity happens when a component uses the identity of the executing thread to store some type of state. The most common form of this is to use the thread local store (TLS) to store state. Thread affinity requires that each logical thread of execution be owned by only one physical thread in the operating system, which can become memory intensive. In the end, WPF’s threading model was kept in sync with the existing User32 threading model of single threaded execution with thread affinity. The primary reason for this was interoperability – systems like [!INCLUDE[TLA2#tla_ole2.0](../../../../includes/tla2sharptla-ole2-0-md.md)], the clipboard, and Internet Explorer all require single thread affinity (STA) execution.  
+ During the design phase of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], the goal was to move to a single thread of execution, but a non-thread "affinitized" model. Thread affinity happens when a component uses the identity of the executing thread to store some type of state. The most common form of this is to use the thread local store (TLS) to store state. Thread affinity requires that each logical thread of execution be owned by only one physical thread in the operating system, which can become memory intensive. In the end, WPF’s threading model was kept in sync with the existing User32 threading model of single threaded execution with thread affinity. The primary reason for this was interoperability – systems like OLE 2.0, the clipboard, and Internet Explorer all require single thread affinity (STA) execution.  
   
  Given that you have objects with STA threading, you need a way to communicate between threads, and validate that you are on the correct thread. Herein lies the role of the dispatcher. The dispatcher is a basic message dispatching system, with multiple prioritized queues. Examples of messages include raw input notifications (mouse moved), framework functions (layout), or user commands (execute this method). By deriving from <xref:System.Windows.Threading.DispatcherObject>, you create a CLR object that has STA behavior, and will be given a pointer to a dispatcher at creation time.  
   
@@ -143,6 +143,6 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
 - <xref:System.Windows.Threading.DispatcherObject>
 - <xref:System.Windows.Input.CommandBinding>
 - <xref:System.Windows.Controls.Control>
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Layout](layout.md)
 - [Animation Overview](../graphics-multimedia/animation-overview.md)

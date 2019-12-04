@@ -1,5 +1,5 @@
 ---
-title: "Named argument not found (Visual Basic)"
+title: "Named argument not found"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID448"

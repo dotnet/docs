@@ -2,8 +2,6 @@
 title: "ICorDebugProcess6::MarkDebuggerAttached Method"
 ms.date: "03/30/2017"
 ms.assetid: bf94f090-5265-4112-8e57-5b4e20e070d0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::MarkDebuggerAttached Method
 Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method in the .NET Framework Class Library returns `true`.  

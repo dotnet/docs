@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7c9e9120-3104-42f0-86ce-19a025f20dcc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumMembersWithName Method
 Enumerates MemberDef tokens representing members of the specified type with the specified name.  

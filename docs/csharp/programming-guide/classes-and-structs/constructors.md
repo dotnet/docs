@@ -49,7 +49,7 @@ For more information and examples, see [Static Constructors](./static-constructo
   
  [Static Constructors](./static-constructors.md)  
   
- [How to: Write a Copy Constructor](./how-to-write-a-copy-constructor.md)  
+ [How to write a copy constructor](./how-to-write-a-copy-constructor.md)  
   
 ## See also
 

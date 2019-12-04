@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, exposing COM components"
   - "COM interop, exposing COM components"
 ms.assetid: e78b14f1-e487-43cd-9c6d-1a07483f1730
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Exposing COM Components to the .NET Framework
 This section summarizes the process needed to expose an existing COM component to managed code. For details about writing COM servers that tightly integrate with the .NET Framework, see [Design Considerations for Interoperation](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/61aax4kh(v=vs.100)).

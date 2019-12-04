@@ -90,6 +90,26 @@
             "redirect_url": "/dotnet/core/deploying/index"
         },
         {
+            "source_path": "docs/core/compatibility/3.0.6-3.0.7.md",
+            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+        },
+        {
+            "source_path": "docs/core/compatibility/3.0.7-3.0.8.md",
+            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+        },
+        {
+            "source_path": "docs/core/compatibility/3.0.8-3.0.9.md",
+            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+        },
+        {
+            "source_path": "docs/core/compatibility/3.0.9-3.0rc1.md",
+            "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
+        },
+        {
+            "source_path": "docs/core/compatibility/framework-core.md",
+            "redirect_url": "/dotnet/core/porting/winforms-breaking-changes"
+        },
+        {
             "source_path": "docs/core/deploying/applications.md",
             "redirect_url": "/dotnet/core/deploying/index"
         },
@@ -137,6 +157,19 @@
         {
             "source_path": "docs/core/porting/wpf.md",
             "redirect_url": "/dotnet/desktop-wpf/migration/convert-project-from-net-framework",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/core/linux-prerequisites.md",
+            "redirect_url": "/dotnet/core/install/dependencies"
+        },
+        {
+              "source_path": "docs/core/macos-prerequisites.md",
+              "redirect_url": "/dotnet/core/install/dependencies"
+        },
+        {
+            "source_path": "docs/core/windows-prerequisites.md",
+            "redirect_url": "/dotnet/core/install/dependencies",
             "redirect_document_id": true
         },
         {
@@ -282,8 +315,8 @@
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017-full-solution.md",
-            "redirect_url": "/dotnet/core/tutorials/using-on-windows-full-solution",
-            "redirect_document_id": true
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-on-windows-vs-2017.md",
@@ -305,7 +338,7 @@
         },
         {
             "source_path": "docs/core/preview3/windows-prerequisites.md",
-            "redirect_url": "/dotnet/core/windows-prerequisites"
+            "redirect_url": "/dotnet/core/setup/index"
         },
         {
             "source_path": "docs/core/testing/using-mstest-on-windows.md",
@@ -507,8 +540,16 @@
             "redirect_url": "/dotnet/csharp/language-reference/operators/await"
         },
         {
+            "source_path": "docs/csharp/language-reference/keywords/bool.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
+        },
+        {
             "source_path": "docs/csharp/language-reference/keywords/byte.md",
             "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/char.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/char"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/conversion-keywords.md",
@@ -544,7 +585,11 @@
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/false.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/false-literal"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/false-literal.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/false-operator.md",
@@ -660,11 +705,15 @@
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true.md",
-            "redirect_url": "/dotnet/csharp/language-reference/keywords/true-literal"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true-false-operators.md",
             "redirect_url": "/dotnet/csharp/language-reference/operators/true-false-operators"
+        },
+        {
+            "source_path": "docs/csharp/language-reference/keywords/true-literal.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
         },
         {
             "source_path": "docs/csharp/language-reference/keywords/true-operator.md",
@@ -1184,11 +1233,23 @@
         },
         {
             "source_path": "docs/csharp/programming-guide/nullable-types/boxing-nullable-types.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types#how-to-identify-a-nullable-value-type"
         },
         {
             "source_path": "docs/csharp/programming-guide/nullable-types/how-to-safely-cast-from-bool-to-bool.md",
-            "redirect_url": "/dotnet/csharp/programming-guide/nullable-types/using-nullable-types"
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/index.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
+        },
+        {
+            "source_path": "docs/csharp/programming-guide/nullable-types/using-nullable-types.md",
+            "redirect_url": "/dotnet/csharp/language-reference/builtin-types/nullable-value-types"
         },
         {
             "source_path": "docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md",
@@ -1319,12 +1380,12 @@
         {
             "source_path": "docs/csharp/quick-starts/branches-and-loops.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/branches-and-loops",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/quick-starts/hello-world.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/hello-world",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/quick-starts/index.md",
@@ -1339,7 +1400,7 @@
         {
             "source_path": "docs/csharp/quick-starts/interpolated-strings.md",
             "redirect_url": "/dotnet/csharp/tutorials/exploration/interpolated-strings",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/quick-starts/introduction-to-classes.md",
@@ -1349,7 +1410,7 @@
         {
             "source_path": "docs/csharp/quick-starts/list-collection.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/list-collection",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/quick-starts/local-environment.md",
@@ -1364,7 +1425,7 @@
         {
             "source_path": "docs/csharp/quick-starts/numbers-in-csharp.md",
             "redirect_url": "/dotnet/csharp/tutorials/intro-to-csharp/numbers-in-csharp",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/csharp/reference-semantics-with-value-types.md",
@@ -1510,7 +1571,7 @@
         },
         {
             "source_path": "docs/framework/app-domains/programming-with-assemblies.md",
-            "redirect_url": "/dotnet/standard/assembly/program"
+            "redirect_url": "/dotnet/standard/assembly/index"
         },
         {
             "source_path": "docs/framework/app-domains/resolve-assembly-loads.md",
@@ -1712,6 +1773,10 @@
             "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
+            "source_path": "docs/framework/migration-guide/minimum-release-dword.md",
+            "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
+        },
+        {
             "source_path": "docs/framework/migration-guide/migration-guide/mitigation-culture-and-asynchronous-operations.md",
             "redirect_url": "/dotnet/framework/migration-guide/retargeting/4.5.2-4.6"
         },
@@ -1764,64 +1829,290 @@
             "redirect_url": "/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed"
         },
         {
+            "source_path": "docs/framework/migration-guide/retargeting/index.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-1.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-5-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-1.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-7.md",
-            "redirect_url": "/dotnet/framework/migration-guide/retargeting/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
+        },
+        {
+            "source_path": "docs/framework/migration-guide/runtime/index.md",
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-1.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-5-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-1.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6-2.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-6.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/migration-guide/runtime-changes-in-the-net-framework-4-7.md",
-            "redirect_url": "/dotnet/framework/migration-guide/runtime/index"
+            "redirect_url": "/dotnet/framework/migration-guide/application-compatibility"
         },
         {
             "source_path": "docs/framework/misc/binding.md",
             "redirect_url": "/dotnet/framework/configure-apps/file-schema/wcf/bindings"
         },
         {
+            "source_path": "docs/framework/network-programming/httplistener.md",
+            "redirect_url": "/dotnet/api/system.net.httplistener"
+        },
+        {
+            "source_path": "docs/framework/security/building-my-first-claims-aware-aspnet-web-app.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/building-my-first-claims-aware-aspnet-web-app",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/building-my-first-claims-aware-wcf-service.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/building-my-first-claims-aware-wcf-service",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/claims-aware-aspnet-app-forms-authentication.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/claims-aware-aspnet-app-forms-authentication",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/claims-based-authorization-using-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/claims-based-authorization-using-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/claims-based-identity-model.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/claims-based-identity-model",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/custom-token-handlers.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/custom-token-handlers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/downloading-the-json-web-token-handler-package.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/downloading-the-json-web-token-handler-package",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/downloading-the-validating-issuer-name-registry-package.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/downloading-the-validating-issuer-name-registry-package",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/getting-started-with-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/getting-started-with-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-display-signed-in-status-using-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-display-signed-in-status-using-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-enable-token-replay-detection.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-token-replay-detection",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-enable-wif-for-a-wcf-web-service-application.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-wif-for-a-wcf-web-service-application",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-enable-wif-tracing.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-wif-tracing",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-transform-incoming-claims.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-transform-incoming-claims",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/identity-and-access-tool-for-vs.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/identity-and-access-tool-for-vs",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/json-web-token-handler.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/json-web-token-handler",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
             "redirect_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki"
         },
         {
+            "source_path": "docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/secure-coding-guidelines-for-unmanaged-code.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/security-changes.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/security-changes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/validating-issuer-name-registry-api-reference.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/validating-issuer-name-registry-api-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/validating-issuer-name-registry.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/validating-issuer-name-registry",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/whats-new-in-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/whats-new-in-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-and-web-farms.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-and-web-farms",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-api-reference.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-api-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-claims-programming-model.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-claims-programming-model",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-code-sample-index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-code-sample-index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-configuration-reference.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-configuration-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-configuration-schema-conventions.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-configuration-schema-conventions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-extensions.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-features.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-features",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-guidelines.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-guidelines",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-how-tos-index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-how-tos-index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-overview.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-session-management.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-session-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wsfederation-authentication-module-overview.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wsfederation-authentication-module-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wstrustchannelfactory-and-wstrustchannel.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wstrustchannelfactory-and-wstrustchannel",
+            "redirect_document_id": true
+        },  
+        {
             "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
             "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
+        },
+        {
+            "source_path": "docs/framework/wcf/wcf-system-requirements.md",
+            "redirect_url": "/dotnet/framework/get-started/system-requirements"
         },
         {
             "source_path": "docs/framework/wcf/diagnostics/etw/monitoring-service-operation-failures.md",
@@ -2431,6 +2722,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md",
+            "redirect_url": "/dotnet/desktop-wpf/fundamentals/how-to-create-apply-template",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/wpf/controls/datepicker-syles-and-templates.md",
             "redirect_url": "/dotnet/framework/wpf/controls/datepicker-styles-and-templates",
             "redirect_document_id": true
@@ -2464,6 +2760,11 @@
             "source_path": "docs/framework/wpf/data/data-binding-overview.md",
             "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/wpf/data/data-binding-wpf.md",
+            "redirect_url": "/dotnet/desktop-wpf/data/data-binding-overview",
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
@@ -2666,7 +2967,7 @@
         },
         {
             "source_path": "docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md",
-            "redirect_url": "/dotnet/core/tutorials/target-dotnetcore-with-msbuild"
+            "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
         },
         {
             "source_path": "docs/standard/about.md",
@@ -2680,6 +2981,10 @@
         {
             "source_path": "docs/standard/assembly/friend-assemblies.md",
             "redirect_url": "/dotnet/standard/assembly/friend"
+        },
+        {
+            "source_path": "docs/standard/assembly/program.md",
+            "redirect_url": "/dotnet/standard/assembly/index"
         },
         {
             "source_path": "docs/standard/assembly/unloadability-howto.md",
@@ -2942,7 +3247,7 @@
         {
             "source_path": "docs/standard/guidance-architecture.md",
             "redirect_url": "/dotnet/architecture/index",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "docs/standard/library.md",
@@ -3029,7 +3334,7 @@
         },
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
-            "redirect_url": "/dotnet/csharp/tutorials/microservices"
+            "redirect_url": "/dotnet/core/docker/"
         },
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/working-with-linq.md",
@@ -3263,6 +3568,30 @@
             "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30828",
         },
         {
+            "source_path": "docs/visual-basic/language-reference/error-messages/because-this-call-is-not-awaited-the-current-method-continues-to-run.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc42358",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/cannot-convert-anonymous-type-to-expression-tree.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc36548",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/cannot-refer-to-an-instance-member-of-a-class.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30369",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/cannot-refer-to-name-because-it-is-member-of-value-typed-field-name-of-class.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc30310",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/can-t-open-filename-for-writing.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc2012",
+        },
+        {
+            "source_path": "docs/visual-basic/language-reference/error-messages/class-classname-cannot-be-found.md",
+            "redirect_url": "/dotnet/visual-basic/language-reference/error-messages/bc31098",
+        },
+        {
             "source_path": "docs/visual-basic/language-reference/queries/queries.md",
             "redirect_url": "/dotnet/visual-basic/language-reference/queries/index",
             "redirect_document_id": true
@@ -3355,7 +3684,7 @@
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/friend-assemblies.md",
-            "redirect_url": "/dotnet/standard/assembly/friend-assemblies"
+            "redirect_url": "/dotnet/standard/assembly/friend"
         },
         {
             "source_path": "docs/visual-basic/programming-guide/concepts/assemblies-gac/walkthrough-embedding-type-information-from-microsoft-office-assemblies-in-vs.md",

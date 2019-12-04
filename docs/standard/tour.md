@@ -23,15 +23,15 @@ To learn how to set up a development environment to run the code samples, see th
 
 Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic (VB). 
 
-* C# is simple, powerful, type-safe, and object-oriented, while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages finds few problems in adapting to C#. Check out the [C# Guide](../csharp/index.md) to learn more about C#.
+* C# is simple, powerful, type-safe, and object-oriented, while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages finds few problems in adapting to C#. Check out the [C# Guide](../csharp/index.yml) to learn more about C#.
 
-* F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming. Check out the [F# Guide](../fsharp/index.md) to learn more about F#.
+* F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming. Check out the [F# Guide](../fsharp/index.yml) to learn more about F#.
 
 * Visual Basic is an easy language to learn that you use to build a variety of apps that run on .NET. Among the .NET languages, the syntax of VB is the closest to ordinary human language, often making it easier for people new to software development.
 
 ## Automatic memory management
 
-.NET uses [garbage collection (GC)](garbagecollection/index.md) to provide automatic memory management for programs. The GC operates on a lazy approach to memory management, preferring app throughput to the immediate collection of memory. To learn more about the .NET GC, check out [Fundamentals of garbage collection (GC)](garbagecollection/fundamentals.md).
+.NET uses [garbage collection (GC)](garbage-collection/index.md) to provide automatic memory management for programs. The GC operates on a lazy approach to memory management, preferring app throughput to the immediate collection of memory. To learn more about the .NET GC, check out [Fundamentals of garbage collection (GC)](garbage-collection/fundamentals.md).
 
 The following two lines both allocate memory:
 

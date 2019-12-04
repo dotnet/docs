@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 697ab0f4-470c-4baa-a415-4a975c42d0d5
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # IAssemblyCacheItem::CreateStream Method

@@ -11,16 +11,16 @@ ms.assetid: aeccc45c-d5c5-4671-ad63-a492ac8043ac
 ---
 # Working with Binary Data (WCF Data Services)
 
-The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to retrieve and update binary data from an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed in one of the following ways:
+The WCF Data Services client library enables you to retrieve and update binary data from an Open Data Protocol (OData) feed in one of the following ways:
 
 - As a primitive type property of an entity. This is the recommended method for working with small binary data objects that can be easily loaded into memory. In this case, the binary property is an entity property exposed by the data model, and the data service serializes the binary data as base-64 binary encoded XML in the response message.
 
 - As a separate binary resource stream. This is the recommended method for accessing and changing binary large object (BLOB) data that may represent a photo, video, or any other type of binary encoded data.
 
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] implements the streaming of binary data by using HTTP as defined in the [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]. In this mechanism, binary data is treated as a media resource that is separate from but related to an entity, which is called a media link entry. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).
+WCF Data Services implements the streaming of binary data by using HTTP as defined in the OData. In this mechanism, binary data is treated as a media resource that is separate from but related to an entity, which is called a media link entry. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).
 
 > [!TIP]
-> For a step-by-step example of how to create a Windows Presentation Foundation (WPF) client application that downloads binary image files from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](https://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](https://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.
+> For a step-by-step example of how to create a Windows Presentation Foundation (WPF) client application that downloads binary image files from an OData service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](https://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](https://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.
 
 ## Entity Metadata
 
@@ -28,14 +28,14 @@ An entity that has a related media resource stream is indicated in the data serv
 
 [!code-xml[Astoria Photo Streaming Service#HasStream](../../../../samples/snippets/xml/VS_Snippets_Misc/astoria_photo_streaming_service/xml/photodata.edmx#hasstream)]
 
-The remaining examples in this topic show how to access and change the media resource stream. For a complete example of how to consume a media resource stream in a .NET Framework client application by using the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library, see the post [Accessing a Media Resource Stream from the Client](https://go.microsoft.com/fwlink/?LinkID=201637).
+The remaining examples in this topic show how to access and change the media resource stream. For a complete example of how to consume a media resource stream in a .NET Framework client application by using the WCF Data Services client library, see the post [Accessing a Media Resource Stream from the Client](https://go.microsoft.com/fwlink/?LinkID=201637).
 
 ## Accessing the Binary Resource Stream
 
-The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library provides methods for accessing binary resource streams from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-based data service. When downloading a media resource, you can either use the URI of the media resource or you can get a binary stream that contains the media resource data itself. You can also upload media resource data as a binary stream.
+The WCF Data Services client library provides methods for accessing binary resource streams from an OData-based data service. When downloading a media resource, you can either use the URI of the media resource or you can get a binary stream that contains the media resource data itself. You can also upload media resource data as a binary stream.
 
 > [!TIP]
-> For a step-by-step example of how to create a Windows Presentation Foundation (WPF) client application that downloads binary image files from an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](https://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](https://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.
+> For a step-by-step example of how to create a Windows Presentation Foundation (WPF) client application that downloads binary image files from an OData service that stores photos, see the post [Data Services Streaming Provider Series-Part 2: Accessing a Media Resource Stream from the Client](https://go.microsoft.com/fwlink/?LinkId=201637). To download the sample code for the stream photo data service featured in the blog post, see the [Streaming Photo Data Service Sample](https://go.microsoft.com/fwlink/?LinkId=198988) in MSDN Code Gallery.
 
 ### Getting the URI of the Binary Stream
 

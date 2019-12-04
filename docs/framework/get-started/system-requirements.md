@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "operating systems supported"
   - "hardware requirements"
 ms.assetid: 298275e2-da1d-4618-9f74-6a3567832350
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework system requirements
 
@@ -58,8 +56,8 @@ The .NET Framework requires administrator privileges for installation. If you do
 | Windows 10 Anniversary Update | 32-bit and 64-bit | .NET Framework 4.6.2 |.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8  |
 | Windows 10 November Update | 32-bit and 64-bit | .NET Framework 4.6.1 | .NET Framework 4.6.2 |
 | Windows 10 | 32-bit and 64-bit | .NET Framework 4.6 | .NET Framework 4.6.1 <br/><br/> .NET Framework 4.6.2 |
-| [!INCLUDE[win81](../../../includes/win81-md.md)] | 32-bit, 64-bit, and ARM | .NET Framework 4.5.1 | .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
-| [!INCLUDE[win8](../../../includes/win8-md.md)] | 32-bit, 64-bit, and ARM | .NET Framework 4.5 | .NET Framework 4.5.1<br /><br />.NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1 |
+| Windows 8.1 | 32-bit, 64-bit, and ARM | .NET Framework 4.5.1 | .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
+| Windows 8 | 32-bit, 64-bit, and ARM | .NET Framework 4.5 | .NET Framework 4.5.1<br /><br />.NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1 |
 | Windows 7 SP1|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
 | Windows Vista SP2|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6 |
 | Windows XP |32-bit and 64-bit | -- | .NET Framework 4 |
@@ -72,7 +70,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 - .NET Framework 4 also supports the IA64 platform.
 
-- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and install critical updates available from the [Windows Update website](https://go.microsoft.com/fwlink/?LinkId=168461) to ensure the best compatibility and security.
+- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and install critical updates available from [Windows Update](https://support.microsoft.com/help/12373/windows-update-faq) to ensure the best compatibility and security.
 
 - On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and| native 64-bit processing.
 
@@ -100,7 +98,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
 - On Windows Server 2008 SP2, the .NET Framework is not supported in the Server Core Role.
 
-- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and critical updates available from the [Windows Update website](https://go.microsoft.com/fwlink/?LinkId=168461) to ensure the best compatibility and security. Installation of the latest Windows Service Pack may be required on some operating systems.
+- For all platforms, we recommend that you upgrade to the latest Windows Service Pack and critical updates available from [Windows Update](https://support.microsoft.com/help/12373/windows-update-faq) to ensure the best compatibility and security. Installation of the latest Windows Service Pack may be required on some operating systems.
 
 - On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and native 64-bit processing.
 

@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 32f9b588-c832-44c4-a7e0-fcce635df59a
 ---
 # Loading Deferred Content (WCF Data Services)
-By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits the amount of data that a query returns. However, you can explicitly load additional data, including related entities, paged response data, and binary data streams, from the data service when it is needed. This topic describes how to load such deferred content into your application.  
+By default, WCF Data Services limits the amount of data that a query returns. However, you can explicitly load additional data, including related entities, paged response data, and binary data streams, from the data service when it is needed. This topic describes how to load such deferred content into your application.  
   
 ## Related Entities  
  When you execute a query, only entities in the addressed entity set are returned. For example, when a query against the Northwind data service returns `Customers` entities, by default the related `Orders` entities are not returned, even though there is a relationship between `Customers` and `Orders`. Also, when paging is enabled in the data service, you must explicitly load subsequent data pages from the service. There are two ways to load related entities:  
@@ -21,7 +21,7 @@ By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits t
      [!code-csharp[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#expandorderdetailsspecific)]
      [!code-vb[Astoria Northwind Client#ExpandOrderDetailsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#expandorderdetailsspecific)]  
   
-     [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits to 12 the number of entity sets that can be included in a single query by using the `$expand` query option.  
+     WCF Data Services limits to 12 the number of entity sets that can be included in a single query by using the `$expand` query option.  
   
 - **Explicit loading**: You can call the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method on the <xref:System.Data.Services.Client.DataServiceContext> instance to explicitly load related entities. Each call to the <xref:System.Data.Services.Client.DataServiceContext.LoadProperty%2A> method creates a separate request to the data service. The following example explicitly loads `Order_Details` for an `Orders` entity:  
   
@@ -49,7 +49,7 @@ By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] limits t
  For more information, see [How to: Load Paged Results](how-to-load-paged-results-wcf-data-services.md).  
   
 ## Binary Data Streams  
- [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] enables you to access binary large object (BLOB) data as a data stream. Streaming defers the loading of binary data until it is needed, and the client can more efficiently process this data. In order to take advantage of this functionality, the data service must implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md). When streaming is enabled, entity types are returned without the related binary data. In this case, you must use the <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> method of the <xref:System.Data.Services.Client.DataServiceContext> class to access the data stream for the binary data from the service. Similarly, use the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method to add or change binary data for an entity as a stream. For more information, see [Working with Binary Data](working-with-binary-data-wcf-data-services.md).  
+ WCF Data Services enables you to access binary large object (BLOB) data as a data stream. Streaming defers the loading of binary data until it is needed, and the client can more efficiently process this data. In order to take advantage of this functionality, the data service must implement the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> provider. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md). When streaming is enabled, entity types are returned without the related binary data. In this case, you must use the <xref:System.Data.Services.Client.DataServiceContext.GetReadStream%2A> method of the <xref:System.Data.Services.Client.DataServiceContext> class to access the data stream for the binary data from the service. Similarly, use the <xref:System.Data.Services.Client.DataServiceContext.SetSaveStream%2A> method to add or change binary data for an entity as a stream. For more information, see [Working with Binary Data](working-with-binary-data-wcf-data-services.md).  
   
 ## See also
 

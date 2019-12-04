@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c1d3d1eb-8370-4f25-8297-3bd262b4740a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInternalFrame2::IsCloserToLeaf Method
 Checks whether the `this` internal frame is closer to the leaf than the specified ICorDebugFrame object.  

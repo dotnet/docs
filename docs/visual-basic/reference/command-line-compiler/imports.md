@@ -1,5 +1,5 @@
 ---
-title: "-imports (Visual Basic)"
+title: "-imports"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "/imports compiler option [Visual Basic]"

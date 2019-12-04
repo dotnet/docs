@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f1de4584-92df-42f3-9da4-fca03a1c6821
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetID Method
 Gets the current operating system identifier of the active part of this ICorDebugThread.  

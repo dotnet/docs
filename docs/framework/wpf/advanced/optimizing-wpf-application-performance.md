@@ -53,7 +53,7 @@ This section is intended as a reference for [!INCLUDE[TLA#tla_winclient](../../.
 - [Documents in WPF](documents-in-wpf.md)
 - [Drawing Formatted Text](drawing-formatted-text.md)
 - [Typography in WPF](typography-in-wpf.md)
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Navigation Overview](../app-development/navigation-overview.md)
 - [Animation Tips and Tricks](../graphics-multimedia/animation-tips-and-tricks.md)
 - [Walkthrough: Caching Application Data in a WPF Application](walkthrough-caching-application-data-in-a-wpf-application.md)

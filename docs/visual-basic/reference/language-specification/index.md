@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Language Specification"
+title: "Language Specification"
 ms.date: 08/02/2017
 helpviewer_keywords: 
   - "resources [Visual Basic], specifications"

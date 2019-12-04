@@ -34,7 +34,7 @@ You need the following components to complete this walkthrough:
 
 1. Create a **WPF User Control Library** project named `HostingWpfUserControlInWf`.
 
-2. Open UserControl1.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+2. Open UserControl1.xaml in the WPF Designer.
 
 3. Replace the generated code with the following code:
 
@@ -83,7 +83,7 @@ You need the following components to complete this walkthrough:
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
 - [Hosting a WPF Composite Control in Windows Forms Sample](https://go.microsoft.com/fwlink/?LinkID=160001)

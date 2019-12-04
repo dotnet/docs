@@ -7,8 +7,6 @@ helpviewer_keywords:
   - ".NET Framework, compatibility with earlier versions"
   - ".NET Framework versions, compatibility"
 ms.assetid: 2f25e522-456a-48c3-8a53-e5f39275649f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Version compatibility in the .NET Framework
 
@@ -45,13 +43,13 @@ In practice, this compatibility can be broken by seemingly inconsequential chang
 
 If your app or component doesn't work as expected on the .NET Framework 4.5 (including its point releases, the .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8), use the following checklists:
 
-- If your app was developed to run on any version of the .NET Framework starting with the .NET Framework 4.0, see [Application Compatibility in the .NET Framework](application-compatibility.md) to generate lists of changes between your targeted .NET Framework version and the version on which your app is running.
+- If your app was developed to run on any version of the .NET Framework starting with the .NET Framework 4.0, see [Application compatibility](application-compatibility.md) to generate lists of changes between your targeted .NET Framework version and the version on which your app is running.
 
 - If you have a .NET Framework 3.5 app, also see [.NET Framework 4 Migration Issues](../migration-guide/net-framework-4-migration-issues.md).
 
-- If you have a .NET Framework 2.0 app, also see [Changes in .NET Framework 3.5 SP1](https://go.microsoft.com/fwlink/?LinkId=186989).
+- If you have a .NET Framework 2.0 app, also see [Changes in .NET Framework 3.5 SP1](https://docs.microsoft.com/previous-versions/dotnet/articles/dd310284(v=msdn.10)).
 
-- If you have a .NET Framework 1.1 app, also see [Changes in .NET Framework 2.0](https://go.microsoft.com/fwlink/?LinkID=125263).
+- If you have a .NET Framework 1.1 app, also see [Changes in .NET Framework 2.0](https://docs.microsoft.com/previous-versions/aa570326(v=msdn.10)).
 
 - If you're recompiling existing source code to run on the .NET Framework 4.5 or its point releases, or if you're developing a new version of an app or component that targets the .NET Framework 4.5 or its point releases from an existing source code base, check [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md) for obsolete types and members, and apply the workaround described. (Previously compiled code will continue to run against types and members that have been marked as obsolete.)
 
@@ -68,5 +66,5 @@ If you can't find a suitable workaround for your issue, remember that the .NET F
 - [What's New](../whats-new/index.md)
 - [What's Obsolete in the Class Library](../whats-new/whats-obsolete.md)
 - [Application Compatibility](../migration-guide/application-compatibility.md)
-- [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/p/?LinkId=248212)
+- [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
 - [.NET Framework 4 Migration Issues](../migration-guide/net-framework-4-migration-issues.md)

@@ -1,5 +1,5 @@
 ---
-title: "Programming Guide (LINQ to XML) (Visual Basic)"
+title: "Programming Guide (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: f1f942bf-3404-4354-b4c5-4fe35e37a02b
 ---

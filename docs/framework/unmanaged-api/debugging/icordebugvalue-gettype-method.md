@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 41e2d503-e1f1-407b-abe0-6a29adb3e0d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValue::GetType Method
 Gets the primitive type of this "ICorDebugValue" object.  

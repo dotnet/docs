@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert an Object to Another Type in Visual Basic"
+title: "How to: Convert an Object to Another Type"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "objects [Visual Basic], converting"

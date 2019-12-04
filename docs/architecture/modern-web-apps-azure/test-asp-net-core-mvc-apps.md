@@ -193,7 +193,7 @@ namespace Microsoft.eShopWeb.FunctionalTests.Web.Controllers
                     .AddEntityFrameworkInMemoryDatabase()
                     .BuildServiceProvider();
 
-                // Add a database context (ApplicationDbContext) using an in-memory 
+                // Add a database context (ApplicationDbContext) using an in-memory
                 // database for testing.
                 services.AddDbContext<CatalogContext>(options =>
                 {
@@ -280,12 +280,16 @@ This functional test exercises the full ASP.NET Core MVC / Razor Pages applicati
 
 > ### References – Test ASP.NET Core MVC apps
 >
-> - **Testing in ASP.NET Core**  
+> - **Testing in ASP.NET Core** \
 >   <https://docs.microsoft.com/aspnet/core/testing/>
-> - **Unit Test Naming Convention**  
+> - **Unit Test Naming Convention** \
 >   <https://ardalis.com/unit-test-naming-convention>
-> - **Testing EF Core**  
+> - **Testing EF Core** \
 >   <https://docs.microsoft.com/ef/core/miscellaneous/testing/>
+> - **Integration tests in ASP.NET Core** \
+>   <https://docs.microsoft.com/aspnet/core/test/integration-tests>
+> - **ASP.NET Community Standup - May 15, 2018 - MVC Testing with Javier C. Nelson** - YouTube video \
+>   <https://www.youtube.com/watch?v=wtOE-xmFJkw&list=PL1rZQsJPBU2StolNg0aqvQswETPcYnNKL&index=5>
 
 >[!div class="step-by-step"]
 >[Previous](work-with-data-in-asp-net-core-apps.md)

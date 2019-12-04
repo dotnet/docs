@@ -14,10 +14,10 @@ ms.assetid: 74388a3a-4b69-4a9d-ba1f-e107636bd660
 
 # Extend Glass Frame Into a WPF Application
 
-This topic demonstrates how to extend the [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] glass frame into the client area of a Windows Presentation Foundation (WPF) application.
+This topic demonstrates how to extend the Windows Vista glass frame into the client area of a Windows Presentation Foundation (WPF) application.
 
 > [!NOTE]
-> This example will only work on a [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] machine running the Desktop Window Manager (DWM) with glass enabled. [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] Home Basic edition does not support the transparent glass effect. Areas that would typically render with the transparent glass effect on other editions of [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] are rendered opaque.
+> This example will only work on a Windows Vista machine running the Desktop Window Manager (DWM) with glass enabled. Windows Vista Home Basic edition does not support the transparent glass effect. Areas that would typically render with the transparent glass effect on other editions of Windows Vista are rendered opaque.
 
 ## Example
 

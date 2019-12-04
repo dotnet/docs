@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 159ccfcf-b37c-4ad9-8e0d-a9a443262472
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugTypeEnum Interface
 Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.  

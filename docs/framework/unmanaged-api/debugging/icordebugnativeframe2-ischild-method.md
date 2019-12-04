@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9e2aae09-49cb-4fbd-81e5-e29cd864a88b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame2::IsChild Method
 Determines whether the current frame is a child frame.  

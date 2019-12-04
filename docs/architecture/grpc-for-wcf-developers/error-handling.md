@@ -1,13 +1,10 @@
 ---
 title: Error handling - gRPC for WCF Developers
 description: TO BE WRITTEN
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Error handling
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 WCF uses `FaultException<T>` and `FaultContract` to provide detailed error information, including supporting the SOAP Fault standard.
 
@@ -56,7 +53,7 @@ catch (RpcException ex) when (ex.StatusCode == StatusCode.PermissionDenied)
     var userEntry = ex.Trailers.FirstOrDefault(e => e.Key == "User");
     Console.WriteLine($"User '{userEntry.Value}' does not have permission to view this portfolio.");
 }
-catch (RpcException) 
+catch (RpcException)
 {
     // Handle any other error type ...
 }

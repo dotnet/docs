@@ -6,12 +6,10 @@ helpviewer_keywords:
   - "configuration schema [.NET Framework], runtime settings"
   - "runtime settings schema"
 ms.assetid: f04816ab-110d-4e28-9283-845d6d9a4a68
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# Runtime Settings Schema
+# Run-time settings schema
 
-Runtime settings are used by the common language runtime to configure applications that target the .NET Framework.
+Run-time settings are used by the common language runtime to configure applications that target the .NET Framework.
 
 ## The \<runtime> section and its parent and child elements
 
@@ -44,6 +42,10 @@ Runtime settings are used by the common language runtime to configure applicatio
 &nbsp;&nbsp;&nbsp;&nbsp;[\<gcAllowVeryLargeObjects>](gcconcurrent-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<gcConcurrent>](gcconcurrent-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<GCCpuGroup>](gccpugroup-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<GCHeapAffinitizeMask>](gcheapaffinitizemask-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<GCHeapCount>](gcheapcount-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<GCLOHThreshold>](gclohthreshold-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<GCNoAffinitize>](gcnoaffinitize-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<gcServer>](gcserver-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<generatePublisherEvidence>](generatepublisherevidence-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<legacyCorruptedStateExceptionsPolicy>](legacycorruptedstateexceptionspolicy-element.md)\
@@ -66,7 +68,7 @@ Runtime settings are used by the common language runtime to configure applicatio
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<namedCaches>](namedcaches-element-cache-settings.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<add>](add-element-for-namedcaches.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<clear>](clear-element-for-namedcaches.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<remove>](remove-element-for-namedcaches.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[\<remove>](remove-element-for-namedcaches.md)
 
 ## Alphabetical list of \<runtime> elements
 
@@ -97,6 +99,10 @@ Runtime settings are used by the common language runtime to configure applicatio
 |[\<gcAllowVeryLargeObjects>](gcallowverylargeobjects-element.md)|On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.|
 |[\<gcConcurrent>](gcconcurrent-element.md)|Specifies whether the runtime runs garbage collection concurrently.|
 |[\<GCCpuGroup>](gccpugroup-element.md)|Specifies whether garbage collection supports multiple CPU groups.|
+|[\<GCHeapAffinitizeMask>](gcheapaffinitizemask-element.md)|Defines the affinity between GC heaps and individual processors.|
+|[\<GCHeapCount>](gcheapcount-element.md)|Specifies the number of heaps/threads to use for server garbage collection.  |
+|[\<GCLOHThreshold>](gclohthreshold-element.md)|Specifies the threshold size that causes objects to go on the large object heap (LOH).|
+|[\<GCNoAffinitize>](gcnoaffinitize-element.md)|Specifies whether or not to affinitize server GC threads with CPUs.|
 |[\<gcServer>](gcserver-element.md)|Specifies whether the common language runtime runs server garbage collection.|
 |[\<generatePublisherEvidence>](generatepublisherevidence-element.md)|Specifies whether the runtime uses code access security (CAS) publisher policy.|
 |[\<legacyCorruptedStateExceptionsPolicy>](legacycorruptedstateexceptionspolicy-element.md)|Specifies whether the runtime allows managed code to catch access violations and other corrupted state exceptions.|

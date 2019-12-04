@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c6ec3800-e0d9-4387-afb8-ddc0b818114c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetTableIndex Method
 Gets the index for the table referenced by the specified token.  

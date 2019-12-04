@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "SortedList class, culture-insensitive string operations"
   - "culture parameter"
 ms.assetid: 5cdc9396-a64b-4615-a1cd-b605db4c5983
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Performing Culture-Insensitive String Operations in Collections
 
@@ -74,7 +72,6 @@ internalHashtable = new Hashtable(new CaseInsensitiveHashCodeProvider
 A `SortedList` represents a collection of key-and-value pairs that are sorted by the keys and are accessible by key and by index. When you use a `SortedList` where strings are the keys, the sorting and lookup can be affected by the `Thread.CurrentCulture` property. To obtain culture-insensitive behavior from a `SortedList`, create a `SortedList` using one of the constructors that accepts a `comparer` parameter. The `comparer` parameter specifies the <xref:System.Collections.IComparer> implementation to use when comparing keys. For the parameter, specify a custom comparer class that uses `CultureInfo.InvariantCulture` to compare keys. The following example illustrates a custom culture-insensitive comparer class that you can specify as the `comparer` parameter to a `SortedList` constructor.
 
 ```vb
-Imports System
 Imports System.Collections
 Imports System.Globalization
 

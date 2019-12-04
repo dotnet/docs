@@ -1,5 +1,5 @@
 ---
-title: "AndAlso Operator (Visual Basic)"
+title: "AndAlso Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.AndAlso"

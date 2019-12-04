@@ -1,13 +1,10 @@
 ---
 title: Self-hosted gRPC applications - gRPC for WCF Developers
 description: Deploying ASP.NET Core gRPC applications as self-hosted services.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Self-hosted gRPC applications
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Although ASP.NET Core 3.0 applications can be hosted in IIS on Windows Server, currently it isn't possible to host a gRPC application in IIS because some of the HTTP/2 functionality isn't yet supported. This functionality is expected in a future update to Windows Server.
 

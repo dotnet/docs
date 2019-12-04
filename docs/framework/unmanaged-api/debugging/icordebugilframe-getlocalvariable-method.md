@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c8706356-d50b-4f87-a40c-39c3b7f4fd38
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::GetLocalVariable Method
 Gets the value of the specified local variable in this Microsoft intermediate language (MSIL) stack frame.  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Query LINQ to XML Using XPath (Visual Basic)"
+title: "How to: Query LINQ to XML Using XPath"
 ms.date: 07/20/2015
 ms.assetid: e1f69a20-1efa-452d-9089-c472fa84b3d5
 ---

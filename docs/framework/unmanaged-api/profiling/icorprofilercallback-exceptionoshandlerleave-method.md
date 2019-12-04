@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4d164676-0ee9-4f67-a8ea-cb474db09053
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionOSHandlerLeave Method
 Not implemented. A profiler that needs unmanaged exception information must obtain this information through other means.  

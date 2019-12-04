@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 06e583d6-d88a-4ff5-bb95-5c48618a461c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugBreakpoint::IsActive Method
 Gets a value that indicates whether this `ICorDebugBreakpoint` is active.  

@@ -1,5 +1,5 @@
 ---
-title: "Lambda Expressions (Visual Basic)"
+title: "Lambda Expressions"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.LambdaFunction"

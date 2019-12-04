@@ -1,5 +1,5 @@
 ---
-title: "Applicability of Functional Transformation (Visual Basic)"
+title: "Applicability of Functional Transformation"
 ms.date: 07/20/2015
 ms.assetid: 3b74e134-e19b-44bc-8d06-e26c48305040
 ---

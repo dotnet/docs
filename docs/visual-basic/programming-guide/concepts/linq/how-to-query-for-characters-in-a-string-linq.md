@@ -1,5 +1,5 @@
 ---
-title: "How to: Query for Characters in a String (LINQ) (Visual Basic)"
+title: "How to: Query for Characters in a String (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 499ebbe0-746c-4235-9dba-ce722c12b50e
 ---
@@ -56,5 +56,5 @@ Create a VB.NET console application project, with an `Imports` statement for the
 
 ## See also
 
-- [LINQ and Strings (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-and-strings.md)
-- [How to: Combine LINQ Queries with Regular Expressions (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md)
+- [LINQ and Strings (Visual Basic)](linq-and-strings.md)
+- [How to combine LINQ queries with regular expressions (Visual Basic)](how-to-combine-linq-queries-with-regular-expressions.md)

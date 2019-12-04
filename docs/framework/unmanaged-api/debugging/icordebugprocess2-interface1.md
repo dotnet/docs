@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 73332138-5fea-441f-b893-61af87d45a42
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2 Interface
 A logical extension of the ICorDebugProcess interface, which represents a process running managed code.  

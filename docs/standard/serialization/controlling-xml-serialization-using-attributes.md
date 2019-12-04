@@ -196,7 +196,7 @@ A serialized instance might resemble the following.
     <Employee xsi:type = "Manager">
         <Name>Ann</Name>
         <Level>3</Level>
-    <Employee>
+    </Employee>
 </Employees>
 </Group>
 ```

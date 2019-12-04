@@ -23,16 +23,16 @@ helpviewer_keywords:
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 ---
 # Imaging Overview
-This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../includes/tlasharptla-wic-md.md)]. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] enables developers to display, transform, and format images.  
+This topic provides an introduction to the Microsoft Windows Presentation Foundation Imaging Component. WPF Imaging enables developers to display, transform, and format images.  
 
 ## WPF Imaging Component  
- [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] provides significant enhancements in imaging capabilities within [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)]. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ libraries. These API provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] is designed to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
+ WPF Imaging provides significant enhancements in imaging capabilities within Microsoft Windows. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ libraries. These API provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. WPF Imaging is designed to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
   
- There are two ways to access the [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] API, a managed component and an unmanaged component. The unmanaged component provides the following features.  
+ There are two ways to access the WPF Imaging API, a managed component and an unmanaged component. The unmanaged component provides the following features.  
   
 - Extensibility model for new or proprietary image formats.  
   
-- Improved performance and security on native image formats including bitmap (BMP), Joint Photographics Experts Group (JPEG), Portable Network Graphics (PNG), Tagged Image File Format (TIFF), [!INCLUDE[TLA#tla_wdp](../../../../includes/tlasharptla-wdp-md.md)], Graphics Interchange Format (GIF), and icon (.ico).  
+- Improved performance and security on native image formats including bitmap (BMP), Joint Photographics Experts Group (JPEG), Portable Network Graphics (PNG), Tagged Image File Format (TIFF), Microsoft Windows Media Photo, Graphics Interchange Format (GIF), and icon (.ico).  
   
 - Preservation of high bit-depth image data up to 8 bits per channel (32 bits per pixel).  
   
@@ -44,15 +44,16 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
   
 - The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] features such as [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], animation, and graphics. The managed component also benefits from the Windows Presentation Foundation (WPF) imaging codec extensibility model which enables automatic recognition of new image formats in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
- The majority of the managed [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] API reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
+ The majority of the managed WPF Imaging API reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
   
  This topic provides additional information about the managed component. For more information on the unmanaged API see the [Unmanaged WPF Imaging Component](/windows/desktop/wic/-wic-lh) documentation.  
   
 <a name="_imageformats"></a>   
 ## WPF Image Formats  
- A codec is used to decode or encode a specific media format. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] includes a codec  for BMP, JPEG, PNG, TIFF, [!INCLUDE[TLA2#tla_wdp](../../../../includes/tla2sharptla-wdp-md.md)], GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
+
+ A codec is used to decode or encode a specific media format. WPF Imaging includes a codec  for BMP, JPEG, PNG, TIFF, Windows Media Photo, GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
   
- <xref:System.Windows.Media.Imaging.BitmapSource> is an important class used in the decoding and encoding of images. It is the basic building block of the [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] pipeline and represents a single, constant set of pixels at a certain size and resolution. A <xref:System.Windows.Media.Imaging.BitmapSource> can be an individual frame of a multiple frame image, or it can be the result of a transform performed on a <xref:System.Windows.Media.Imaging.BitmapSource>. It is the parent of many of the primary classes used in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] imaging such as <xref:System.Windows.Media.Imaging.BitmapFrame>.  
+ <xref:System.Windows.Media.Imaging.BitmapSource> is an important class used in the decoding and encoding of images. It is the basic building block of the WPF Imaging pipeline and represents a single, constant set of pixels at a certain size and resolution. A <xref:System.Windows.Media.Imaging.BitmapSource> can be an individual frame of a multiple frame image, or it can be the result of a transform performed on a <xref:System.Windows.Media.Imaging.BitmapSource>. It is the parent of many of the primary classes used in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] imaging such as <xref:System.Windows.Media.Imaging.BitmapFrame>.  
   
  A <xref:System.Windows.Media.Imaging.BitmapFrame> is used to store the actual bitmap data of an image format. Many image formats only support a single <xref:System.Windows.Media.Imaging.BitmapFrame>, although formats such as GIF and TIFF support multiple frames per image. Frames are used by decoders as input data and are passed to encoders to create image files.  
   
@@ -62,7 +63,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
  [!code-vb[BitmapFrameExample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
   
 ### Image Format Decoding  
- Image decoding is the translation of an image format to image data that can be used by the system. The image data can then be used to display, process, or encode to a different format. Decoder selection is based on the image format. Codec selection is automatic unless a specific decoder is specified. The examples in the [Displaying Images in WPF](#_displayingimages) section demonstrate automatic decoding. Custom format decoders developed using the unmanaged [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] interfaces and registered with the system automatically participate in decoder selection. This allows custom formats to be displayed automatically in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
+ Image decoding is the translation of an image format to image data that can be used by the system. The image data can then be used to display, process, or encode to a different format. Decoder selection is based on the image format. Codec selection is automatic unless a specific decoder is specified. The examples in the [Displaying Images in WPF](#_displayingimages) section demonstrate automatic decoding. Custom format decoders developed using the unmanaged WPF Imaging interfaces and registered with the system automatically participate in decoder selection. This allows custom formats to be displayed automatically in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
  The following example demonstrates the use of a bitmap decoder to decode a BMP format image.  
   
@@ -71,7 +72,7 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
  [!code-vb[BmpBitmapDecoderEncoder#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/VB/BitmapFrame.vb#5)]  
   
 ### Image Format Encoding  
- Image encoding is the translation of image data to a specific image format. The encoded image data can then be used to create new image files. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] provides encoders for each of the image formats described above.  
+ Image encoding is the translation of image data to a specific image format. The encoded image data can then be used to create new image files. WPF Imaging provides encoders for each of the image formats described above.  
   
  The following example demonstrates the use of an encoder to save a newly created bitmap image.  
   
@@ -156,9 +157,9 @@ Image brushes can fill shapes, controls, text, and more
   
 <a name="_metadata"></a>   
 ## Image Metadata  
- Some image files contain metadata that describes the content or the characteristics of the file. For example, most digital cameras create images that contain metadata about the make and model of the camera used to capture the image. Each image format handles metadata differently but [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] provides a uniform way of storing and retrieving metadata for each supported image format.  
+ Some image files contain metadata that describes the content or the characteristics of the file. For example, most digital cameras create images that contain metadata about the make and model of the camera used to capture the image. Each image format handles metadata differently but WPF Imaging provides a uniform way of storing and retrieving metadata for each supported image format.  
   
- Access to metadata is provided through the <xref:System.Windows.Media.Imaging.BitmapSource.Metadata%2A> property of a <xref:System.Windows.Media.Imaging.BitmapSource> object. <xref:System.Windows.Media.Imaging.BitmapSource.Metadata%2A> returns a <xref:System.Windows.Media.Imaging.BitmapMetadata> object that includes all the metadata contained by the image. This data may be in one metadata schema or a combination of different schemes. [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] supports the following image metadata schemas: Exchangeable image file (Exif), tEXt (PNG Textual Data), image file directory (IFD), International Press Telecommunications Council (IPTC), and [!INCLUDE[TLA#tla_xmp](../../../../includes/tlasharptla-xmp-md.md)].  
+ Access to metadata is provided through the <xref:System.Windows.Media.Imaging.BitmapSource.Metadata%2A> property of a <xref:System.Windows.Media.Imaging.BitmapSource> object. <xref:System.Windows.Media.Imaging.BitmapSource.Metadata%2A> returns a <xref:System.Windows.Media.Imaging.BitmapMetadata> object that includes all the metadata contained by the image. This data may be in one metadata schema or a combination of different schemes. WPF Imaging supports the following image metadata schemas: Exchangeable image file (Exif), tEXt (PNG Textual Data), image file directory (IFD), International Press Telecommunications Council (IPTC), and Extensible Metadata Platform (XMP).  
   
  In order to simplify the process of reading metadata, <xref:System.Windows.Media.Imaging.BitmapMetadata> provides several named properties that can be easily accessed such as <xref:System.Windows.Media.Imaging.BitmapMetadata.Author%2A>, <xref:System.Windows.Media.Imaging.BitmapMetadata.Title%2A>, and <xref:System.Windows.Media.Imaging.BitmapMetadata.CameraModel%2A>. Many of these named properties can also be used to write metadata. Additional support for reading metadata is provided by the metadata query reader. The <xref:System.Windows.Media.Imaging.BitmapMetadata.GetQuery%2A> method is used to retrieve a metadata query reader by providing a string query such as *"/app1/exif/"*. In the following example, <xref:System.Windows.Media.Imaging.BitmapMetadata.GetQuery%2A> is used to obtain the text stored in the *"/Text/Description"* location.  
   
@@ -174,7 +175,7 @@ Image brushes can fill shapes, controls, text, and more
   
 <a name="_extensibility"></a>   
 ## Codec Extensibility  
- A core feature of [!INCLUDE[TLA2#tla_wic](../../../../includes/tla2sharptla-wic-md.md)] is the extensibility model for new image codecs. These unmanaged interfaces enable codec developers to integrate codecs with [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] so new image formats can automatically be used by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
+ A core feature of WPF Imaging is the extensibility model for new image codecs. These unmanaged interfaces enable codec developers to integrate codecs with [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] so new image formats can automatically be used by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
   
  For a sample of the extensibility API, see the [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
   

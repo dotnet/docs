@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Limitations"
+title: "Limitations"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "limits"

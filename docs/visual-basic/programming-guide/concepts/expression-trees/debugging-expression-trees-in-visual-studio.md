@@ -1,5 +1,5 @@
 ---
-title: "Debugging Expression Trees in Visual Studio (Visual Basic)"
+title: "Debugging Expression Trees in Visual Studio"
 ms.date: 07/20/2015
 ms.assetid: 492cc28f-b7a2-4c47-b582-b3c437b8a5d5
 ---
@@ -35,6 +35,6 @@ Alternatively, you can install and use [a custom visualizer](https://docs.micros
 ## See also
 
 - [Expression Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/expression-trees/index.md)
-- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
+- [Debugging in Visual Studio](/visualstudio/debugger/debugger-feature-tour)
 - [Create Custom Visualizers](/visualstudio/debugger/create-custom-visualizers-of-data)
 - [`DebugView` syntax](debugview-syntax.md)

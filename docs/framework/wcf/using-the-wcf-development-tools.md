@@ -33,11 +33,11 @@ This section describes the Visual Studio development tools that can assist you i
   
  You can modify access using the Netsh.exe tool in [!INCLUDE[wv](../../../includes/wv-md.md)] under the elevated administrator account. The following is an example of using Netsh.exe.  
   
-```  
+```console  
 netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>  
 ```  
   
- For more information about Netsh.exe, see [How to Use the Netsh.exe Tool and Command-Line Switches](https://go.microsoft.com/fwlink/?LinkId=97877).  
+ For more information about Netsh.exe, see [How to Use the Netsh.exe Tool and Command-Line Switches](https://docs.microsoft.com/previous-versions/tn-archive/bb490939(v=technet.10)).  
   
 ## See also
 

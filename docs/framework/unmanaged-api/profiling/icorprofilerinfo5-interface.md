@@ -10,8 +10,6 @@ api_type:
 ms.assetid: 7bd48c34-37ed-4230-9eec-39a17280f05d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo5 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  

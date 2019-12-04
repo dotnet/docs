@@ -1,11 +1,9 @@
 ---
-title: Evaluate breaking changes - .NET Core
-description: Learn about the ways in which .NET Core attempts to maintain compatibility for developers across .NET versions.
-author: rpetrusha
-ms.author: ronpet
+title: Types of breaking changes - .NET Core
+description: Learn how .NET Core attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
 ms.date: 06/10/2019
 ---
-# Evaluate breaking changes in .NET Core
+# Changes that affect compatibility
 
 Throughout its history, .NET has attempted to maintain a high level of compatibility from version to version and across flavors of .NET. This continues to be true for .NET Core. Although .NET Core can be considered as a new technology that is independent of the .NET Framework, two major factors limit the ability of .NET Core to diverge from .NET Framework:
 
@@ -15,19 +13,19 @@ Throughout its history, .NET has attempted to maintain a high level of compatibi
 
 Along with compatibility across .NET implementations, developers expect a high level of compatibility across .NET Core versions. In particular, code written for an earlier version of .NET Core should run seamlessly on a later version of .NET Core. In fact, many developers expect that the new APIs found in newly released versions of .NET Core should also be compatible with the pre-release versions in which those APIs were introduced.
 
-This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who are opening pull requests in the [dotnet/corefx](https://github.com/dotnet/corefx) GitHub repository that modify the behavior of existing APIs.
+This article outlines the categories of compatibility changes (or breaking changes) and the way in which the .NET team evaluates changes in each of these categories. Understanding how the .NET team approaches possible breaking changes is particularly helpful for developers who open pull requests in the [dotnet/corefx](https://github.com/dotnet/corefx) GitHub repository that modify the behavior of existing APIs.
 
 > [!NOTE]
 > For a definition of compatibility categories, such as binary compatibility and backward compatibility, see [Breaking change categories](categories.md).
 
-The following sections describes the categories of changes made to .NET Core APIs and their impact on application compatibility. The ✔️ icon indicates that a particular kind of change is allowed, ❌ indicates that it is disallowed, and  ❓ indicates a change that may or may not be allowed. Changes in this last category require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was.
+The following sections describes the categories of changes made to .NET Core APIs and their impact on application compatibility. The ✔️ icon indicates that a particular kind of change is allowed, ❌ indicates that it is disallowed, and  ❓ indicates a change that may or may not be allowed. Changes in this last category require judgement and an evaluation of how predictable, obvious, and consistent the previous behavior was.
 
 > [!NOTE]
 > In addition to serving as a guide to how changes to .NET Core libraries are evaluated, library developers can also use these criteria to evaluate changes to their libraries that target multiple .NET implementations and versions.
 
 ## Modifications to the public contract
 
-Changes in this category *modify* the public surface area of a type. Most of the changes in this category are disallowed since they violate *backwards compatibility* (the ability of an application that was developed with a previous version of an API to execute without recompilation on a later version).
+Changes in this category modify the public surface area of a type. Most of the changes in this category are disallowed since they violate *backwards compatibility* (the ability of an application that was developed with a previous version of an API to execute without recompilation on a later version).
 
 ### Types
 
@@ -48,7 +46,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 - **✔️ Changing a [struct](../../csharp/language-reference/keywords/struct.md) type to a `readonly struct` type**
 
   Note that changing a `readonly struct` type to a `struct` type is not allowed.
-  
+
 - **✔️ Adding the [sealed](../../csharp/language-reference/keywords/sealed.md) or [abstract](../../csharp/language-reference/keywords/abstract.md) keyword to a type when there are no *accessible* (public or protected) constructors**
 
 - **✔️ Expanding the visibility of a type**
@@ -99,7 +97,7 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   Note that introducing an override might cause previous consumers to skip over the override when calling [base](../../csharp/language-reference/keywords/base.md).
 
-- **✔️ Adding a constructor to a class, along with a default (parameterless) constructor if the class previously had no constructors**
+- **✔️ Adding a constructor to a class, along with a parameterless constructor if the class previously had no constructors**
 
    However, adding a constructor to a class that previously had no constructors *without* adding the parameterless constructor is not allowed.
 
@@ -134,9 +132,9 @@ Changes in this category *modify* the public surface area of a type. Most of the
 - **❌ Renaming a parameter (including changing its case)**
 
   This is considered breaking for two reasons:
-  
-  - It breaks late-bound scenarios such as the late binding feature in Visual Basic and [dynamic](../../csharp/language-reference/keywords/dynamic.md) in C#.
-  
+
+  - It breaks late-bound scenarios such as the late binding feature in Visual Basic and [dynamic](../../csharp/language-reference/builtin-types/reference-types.md#the-dynamic-type) in C#.
+
   - It breaks [source compatibility](categories.md#source-compatibility) when developers use [named arguments](../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md#named-arguments).
 
 - **❌ Changing from a `ref` return value to a `ref readonly` return value**
@@ -149,9 +147,9 @@ Changes in this category *modify* the public surface area of a type. Most of the
 
   While this often is not a breaking change because the C# compiler tends to emit [callvirt](<xref:System.Reflection.Emit.OpCodes.Callvirt>) Intermediate Language (IL) instructions to call non-virtual methods (`callvirt` performs a null check, while a normal call doesn't), this behavior is not invariable for several reasons:
   - C# is not the only language that .NET targets.
-  
+
   - The C# compiler increasingly tries to optimize `callvirt` to a normal call whenever the target method is non-virtual and is probably not null (such as a method accessed through the [?. null propagation operator](../../csharp/language-reference/operators/member-access-operators.md#null-conditional-operators--and-)).
-  
+
   Making a method virtual means that the consumer code would often end up calling it non-virtually.
 
 - **❌ Adding the [virtual](../../csharp/language-reference/keywords/virtual.md) keyword to a member**

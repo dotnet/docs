@@ -1,13 +1,10 @@
 ---
 title: Overview of gRPC - gRPC for WCF Developers
 description: Learn about the set of principles guiding the development of gRPC.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # gRPC overview
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 After looking at the genesis of both WCF and gRPC in the last chapter, this chapter will consider some of the key features of gRPC and how they compare to WCF.
 

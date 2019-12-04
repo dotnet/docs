@@ -4,9 +4,6 @@ description: Build a .NET Core application that calls members of another class l
 author: BillWagner
 ms.author: wiwagn
 ms.date: 06/05/2018
-dev_langs: 
-  - "csharp"
-  - "vb"
 ms.custom: "vs-dotnet, seodec18"
 ---
 

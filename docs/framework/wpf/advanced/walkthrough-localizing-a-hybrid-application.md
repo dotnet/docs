@@ -50,7 +50,7 @@ Next, you will add a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptl
 
 ### To add localizable content
 
-1. In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+1. In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the WPF Designer.
 
 2. Set the content of the <xref:System.Windows.Controls.Button> control using the following code.
 
@@ -172,4 +172,4 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Localize an Application](how-to-localize-an-application.md)
 - [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

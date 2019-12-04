@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8c4aa124-5e00-46d9-b1e8-57ba6574bb0d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostPolicyManager Interface
 Provides methods that notify the host of the actions the common language runtime (CLR) performs in case of aborts, timeouts, or failures.  

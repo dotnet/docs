@@ -6,8 +6,8 @@ helpviewer_keywords:
   - "interoperability [WDF]"
   - "styles [Windows Forms], WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Style WPF content
@@ -55,7 +55,7 @@ You can apply different styling to a WPF control to change its appearance and be
 
    `UserControl1` opens in the WPF Designer.
 
-1. In XAML view, insert the following XAML after the `<UserControl>` opening tag. This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../wpf/controls/styling-and-templating.md).
+1. In XAML view, insert the following XAML after the `<UserControl>` opening tag. This XAML creates a gradient with a contrasting gradient border. When the control is clicked, the gradients are changed to generate a pressed button look. For more information, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
    ```xaml
    <UserControl.Resources>
@@ -134,6 +134,6 @@ You can apply different styling to a WPF control to change its appearance and be
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
 - [Using WPF Controls](using-wpf-controls.md)
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [XAML Overview (WPF)](../../wpf/advanced/xaml-overview-wpf.md)
-- [Styling and Templating](../../wpf/controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

@@ -50,14 +50,14 @@ A schema can include an **msdata:Relationship** annotation to explicitly specify
   
 - An **Order** and an **OrderDetail** table.  
   
-    ```  
+    ```text  
     Order(OrderNumber, EmpNumber)  
     OrderDetail(OrderNo, ItemNo)  
     ```  
   
 - A relationship between the **Order** and **OrderDetail** tables. The **Nested** property for this relationship is set to **True** because the **Order** and **OrderDetail** elements are nested in the schema.  
   
-    ```  
+    ```text  
     ParentTable: Order  
     ParentColumns: OrderNumber   
     ChildTable: OrderDetail  

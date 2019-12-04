@@ -1,5 +1,5 @@
 ---
-title: "Imports Statement - XML Namespace (Visual Basic)"
+title: "Imports Statement - XML Namespace"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.ImportsXmlns"

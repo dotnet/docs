@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "data marshaling, Callback sample"
   - "marshaling, Callback sample"
 ms.assetid: 6ddd7866-9804-4571-84de-83f5cc017a5a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Marshaling a Delegate as a Callback Method
 This sample demonstrates how to pass delegates to an unmanaged function expecting function pointers. A delegate is a class that can hold a reference to a method and is equivalent to a type-safe function pointer or a callback function.

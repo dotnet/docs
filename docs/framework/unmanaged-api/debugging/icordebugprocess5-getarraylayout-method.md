@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9a7393b9-9735-43c6-8616-afb103c432fd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::GetArrayLayout Method
 Provides information about the layout of array types.  

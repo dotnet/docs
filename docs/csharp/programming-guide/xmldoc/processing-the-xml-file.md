@@ -11,9 +11,9 @@ ms.assetid: 60c71193-9dac-4cd3-98c5-100bd0edcc42
 
 The compiler generates an ID string for each construct in your code that is tagged to generate documentation. (For information about how to tag your code, see [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md).) The ID string uniquely identifies the construct. Programs that process the XML file can use the ID string to identify the corresponding .NET Framework metadata/reflection item that the documentation applies to.
 
- The XML file is not a hierarchical representation of your code; it is a flat list that has a generated ID for each element.
+The XML file is not a hierarchical representation of your code; it is a flat list that has a generated ID for each element.
 
- The compiler observes the following rules when it generates the ID strings:
+The compiler observes the following rules when it generates the ID strings:
 
 - No white space is in the string.
 
@@ -35,7 +35,7 @@ The compiler generates an ID string for each construct in your code that is tagg
 
   - Base types. Regular types (ELEMENT_TYPE_CLASS or ELEMENT_TYPE_VALUETYPE) are represented as the fully qualified name of the type.
 
-  - Intrinsic types (for example, ELEMENT_TYPE_I4, ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF. and ELEMENT_TYPE_VOID) are represented as the fully qualified name of the corresponding full type. For example, System.Int32 or System.TypedReference.
+  - Intrinsic types (for example, ELEMENT_TYPE_I4, ELEMENT_TYPE_OBJECT, ELEMENT_TYPE_STRING, ELEMENT_TYPE_TYPEDBYREF, and ELEMENT_TYPE_VOID) are represented as the fully qualified name of the corresponding full type. For example, System.Int32 or System.TypedReference.
 
   - ELEMENT_TYPE_PTR is represented as a '\*' following the modified type.
 

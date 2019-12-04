@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "profiling applications"
   - "Performance Console"
 ms.assetid: ccd68284-f3a8-47b8-bc3f-92e5fe3a1640
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Runtime Profiling
 Profiling is a method of gathering performance data in any development or deployment scenario. This section is for developers and system administrators who want to gather information about application performance.  

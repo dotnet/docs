@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a3cea59d-7622-4323-897a-0a464c40f77f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerModuleEnum::Next Method
 Gets the specified number of contiguous modules from a sequential collection of modules, starting at the enumerator's current position in the sequence.  

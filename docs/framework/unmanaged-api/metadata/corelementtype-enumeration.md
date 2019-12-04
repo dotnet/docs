@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c3809c8f-1737-4f0f-9442-0c01ee689871
 topic_type:
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorElementType Enumeration
 

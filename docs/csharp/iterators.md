@@ -2,6 +2,7 @@
 title: Iterators
 description: Learn how to use built-in C# iterators and how to create your own custom iterator methods.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: 5cf36f45-f91a-4fca-a0b7-87f233e108e9
 ---
 

@@ -9,7 +9,7 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
 ---
 # Using UI Automation for Automated Testing
 > [!NOTE]
-> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
  This overview describes how [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] can be useful as a framework for programmatic access in automated testing scenarios.  
   
@@ -17,7 +17,7 @@ ms.assetid: 3a0435c0-a791-4ad7-ba92-a4c1d1231fde
   
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] was developed as a successor to Microsoft Active Accessibility. Active Accessibility is an existing framework designed to provide a solution for making controls and applications accessible. Active Accessibility was not designed with test automation in mind even though it evolved into that role due to the very similar requirements of accessibility and automation. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], in addition to providing more refined solutions for accessibility, is also specifically designed to provide robust functionality for automated testing. For example, Active Accessibility relies on a single interface to both expose information about the UI and collect the information needed by AT products; [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] separates the two models.  
   
- Both a provider and client are required to implement [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] for it to be useful as an automated test tool. UI Automation providers are applications such as Microsoft Word, Excel, and other third-party applications or controls based on the [!INCLUDE[TLA#tla_win](../../../includes/tlasharptla-win-md.md)] operating system. UI Automation clients include automated test scripts and assistive technology applications.  
+ Both a provider and client are required to implement [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] for it to be useful as an automated test tool. UI Automation providers are applications such as Microsoft Word, Excel, and other third-party applications or controls based on the Microsoft Windows operating system. UI Automation clients include automated test scripts and assistive technology applications.  
   
 > [!NOTE]
 > The intent of this overview is to showcase the new and improved automated testing capabilities of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)]. This overview is not intended to provide information on accessibility features and will not address accessibility other than where necessary.  

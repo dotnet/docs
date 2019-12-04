@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, sample data"
 ms.assetid: 4fccbb35-eaa5-44e9-a252-a5c3d4bc7604
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PLINQ Data Sample
 This sample contains example data in .csv format, together with methods that transform it into in-memory collections of Customers, Products, Orders, and Order Details. To further experiment with PLINQ, you can paste code examples from certain other topics into the code in this topic and invoke it from the `Main` method. You can also use this data with your own PLINQ queries.  

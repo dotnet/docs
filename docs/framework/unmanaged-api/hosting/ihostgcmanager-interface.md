@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 820330a4-244c-4f67-ab5e-f24b0b3c2080
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostGCManager Interface
 Provides methods that notify the host of events in the garbage collection mechanism implemented by the common language runtime (CLR).  

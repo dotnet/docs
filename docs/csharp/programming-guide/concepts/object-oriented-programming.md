@@ -152,7 +152,7 @@ A class can have several implementations, or *overloads*, of the same method tha
 To overload a method:
 
 ```csharp
-public int sampleMethod(string sampleParam) {};
+public int sampleMethod(string sampleParam) {}
 public int sampleMethod(int sampleParam) {}
 ```
 
@@ -180,9 +180,7 @@ public class SampleClass
 }
 ```
 
-For more information, see:
-
-[Constructors](../classes-and-structs/constructors.md).
+For more information, see [Constructors](../classes-and-structs/constructors.md).
 
 #### <a name="Finalizers"></a> Finalizers
 
@@ -444,7 +442,7 @@ For more information, see:
 
 - [Delegates](../delegates/index.md)
 
-- [delegate](../../language-reference/keywords/delegate.md)
+- [delegate](../../language-reference/builtin-types/reference-types.md)
 
 ## See also
 

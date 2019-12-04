@@ -1,7 +1,6 @@
 ---
 title: "do - C# Reference"
 ms.custom: seodec18
-
 ms.date: 05/28/2018
 f1_keywords: 
   - "do_CSharpKeyword"
@@ -28,7 +27,7 @@ The following example shows the usage of the `do` statement. Select **Run** to r
 
 ## C# language specification
 
-For more information, see [The do statement](~/_csharplang/spec/statements.md#the-do-statement) section of the [C# language specification](../language-specification/index.md).
+For more information, see [The do statement](~/_csharplang/spec/statements.md#the-do-statement) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).
 
 ## See also
 

@@ -14,7 +14,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
-| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` | `0` - disabled<<br/>`1` - enabled |
+| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` | `0` - disabled<br/>`1` - enabled |
 
 ## Minimum threads
 

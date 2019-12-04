@@ -10,11 +10,12 @@ ms.topic: reference
 
 - Configures whether support for the HTTP/2 protocol is enabled.
 - Default: Disabled (`false`).
+- Introduced in .NET Core 3.0.
 
-| | Setting name | Values | Introduced version |
-| - | - | - |
-| **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled | .NET Core 3.0 |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | `0` - disabled<br/>`1` - enabled | .NET Core 3.0 |
+| | Setting name | Values |
+| - | - |
+| **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | `0` - disabled<br/>`1` - enabled |
 
 ## Sockets HTTP handler
 

@@ -10,7 +10,7 @@ ms.date: 12/03/2019
 
 [!INCLUDE [package-manager-switcher](includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on RHEL 7.
+This article describes how to use a package manager to install .NET Core on RHEL 7. .NET Core 3.1 is not yet available for RHEL 7.
 
 ## Register your Red Hat subscription
 

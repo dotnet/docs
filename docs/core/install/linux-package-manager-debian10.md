@@ -41,7 +41,7 @@ Update the products available for installation, then install the .NET Core SDK. 
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install dotnet-sdk-3.0
+sudo apt-get install dotnet-sdk-3.1
 ```
 
 ## Install the ASP.NET Core runtime
@@ -52,7 +52,7 @@ Update the products available for installation, then install the ASP.NET runtime
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install aspnetcore-runtime-3.0
+sudo apt-get install aspnetcore-runtime-3.1
 ```
 
 ## Install the .NET Core runtime
@@ -63,7 +63,7 @@ Update the products available for installation, then install the .NET Core runti
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install dotnet-runtime-3.0
+sudo apt-get install dotnet-runtime-3.1
 ```
 
 ## How to install other versions

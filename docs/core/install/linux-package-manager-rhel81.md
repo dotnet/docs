@@ -10,7 +10,7 @@ ms.date: 12/03/2019
 
 [!INCLUDE [package-manager-switcher](includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on RHEL 8.1.
+This article describes how to use a package manager to install .NET Core on RHEL 8.1. .NET Core 3.1 is not yet available for RHEL 8.1.
 
 > [!NOTE]
 > RHEL 8.0 does not include .NET Core 3.0. Use the command `yum upgrade` to update to RHEL 8.1.

@@ -3,7 +3,7 @@ title: Structured Streaming with .NET for Apache Spark tutorial
 description: In this tutorial, you learn how to use .NET for Apache Spark for Spark Structured Streaming.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 11/27/2019
+ms.date: 12/04/2019
 ms.topic: tutorial
 ---
 
@@ -37,7 +37,7 @@ If this is your first .NET for Apache Spark application, start with the [Getting
 1. To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your console, run the following command:
 
    ```console
-   dotnet add package Microsoft.Spark --version 0.6.0
+   dotnet add package Microsoft.Spark
    ```
 
 ## Establish and connect to a data stream
@@ -125,7 +125,7 @@ Use SparkSQL to perform various functions on the data stored in your DataFrame. 
 DataFrame arrayDF = lines.Select(Explode(udfArray(lines["value"])));
 ```
 
-This code snippet applies *udfArray* to each value in your DataFrame, which represents each string read from your netcat terminal. Apply the SparkSQL method `Explode` to put each entry of your array in its own row. Finally, use `Select` to place the columns you've produced in the new DataFrame *arrayDF.*
+This code snippet applies *udfArray* to each value in your DataFrame, which represents each string read from your netcat terminal. Apply the SparkSQL method <xref:Microsoft.Spark.Sql.Functions.Explode> to put each entry of your array in its own row. Finally, use <xref:Microsoft.Spark.Sql.DataFrame.Select%2A> to place the columns you've produced in the new DataFrame *arrayDF.*
 
 ## Display your stream
 

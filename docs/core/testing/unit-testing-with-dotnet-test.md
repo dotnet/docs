@@ -102,7 +102,7 @@ The following instructions provide the steps to create the test solution. See [C
 
 ### Commands to create the solution
 
-This section contains all the commands in the previous section. Skip this section if you've created the test solution.
+This section summarizes all the commands in the previous section. Skip this section if you've completed the steps in the previous section.
 
 The following commands create the test solution on a windows machine. For macOS and Unix, update the `ren` command to the OS version of `ren` to rename a file:
 

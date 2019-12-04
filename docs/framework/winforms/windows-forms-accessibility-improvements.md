@@ -49,8 +49,8 @@ On .NET Core, Windows Forms includes the following changes that affect the <xref
 
 ## Improved ToolStrip Accessibility support
 On .NET Core, Windows Forms includes the following changes that affect the <xref:System.Windows.Forms.ToolStrip control>:
-- Improved navigation through ToolStrip items. Corrected ToolStrip and Menu shift-tab navigation (back-looping the menu items when shift-tab up-arrow is pressed - navigate to the bottom menu element)
-- Improved Menu accessible navigation, corrected menu accessible control types for submenus to make submenus of type 'Menu' instead of 'MenuItem'.
+- Improved navigation through ToolStrip, MenuStrip and StatusStrip items. Corrected ToolStrip and MenuStrip shift-tab navigation (back-looping the menu items when shift-tab up-arrow is pressed - navigate to the bottom menu element)
+- Improved MenuStrip accessible navigation, corrected menu accessible control types for submenus to make submenus of type 'Menu' instead of 'MenuItem'.
 
 ## Improved PrintPreviewControl and PrintPreviewDialog Accessibility support
 On .NET Core, Windows Forms includes the following changes that affect the print controls:

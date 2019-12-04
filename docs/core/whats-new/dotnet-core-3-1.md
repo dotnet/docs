@@ -10,7 +10,7 @@ ms.date: 12/04/2019
 
 # What's new in .NET Core 3.1
 
-This article describes what is new in .NET Core 3.1. This release contains minor improvements to .NET Core 3.0, focusing on small, but important, fixes. The most important feature about .NET Core 3.1 is that it's a long-term supported (LTS) release. For more information, see the [.NET Core support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
+This article describes what is new in .NET Core 3.1. This release contains minor improvements to .NET Core 3.0, focusing on small, but important, fixes. The most important feature about .NET Core 3.1 is that it's a [long-term support (LTS)](#long-term-support) release.
 
 If you're using Visual Studio 2019, you must update to [Visual Studio 2019 16.4](https://visualstudio.microsoft.com/downloads/) to work with .NET Core 3.1 projects. For more information on what is new in Visual Studio, see the [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/tis-the-season-visual-studio-2019/).
 
@@ -18,7 +18,7 @@ Visual Studio for Mac also supports and includes .NET Core 3.1, in the Visual St
 
 For more information about the release, see the [.NET Core 3.1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/).
 
-- [Download and get started with .NET Core 3.0](https://dotnet.microsoft.com/download/dotnet-core/3.1) on Windows, macOS, or Linux.
+- [Download and get started with .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) on Windows, macOS, or Linux.
 
 ## Long-term support
 
@@ -28,7 +28,7 @@ For more information about the release, see the [.NET Core 3.1 announcement](htt
 | ------- | ---- |
 | .NET Core 3.0 | End of life on March 3, 2020.     |
 | .NET Core 2.2 | End of life on December 23, 2019. |
-| .NET Core 2.1 | End of life on August 21, 2021    |
+| .NET Core 2.1 | End of life on August 21, 2021.    |
 
 For more information, see the [.NET Core support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
@@ -39,7 +39,7 @@ For more information, see the [.NET Core support policy](https://dotnet.microsof
 > [!WARNING]
 > There are breaking changes in Windows Forms.
 
-Legacy controls were included in Windows Forms that have been unavailable in the Visual Studio Designer Toolbox for some time. These were replaced with new controls back in .NET Framework 2.0. These have been removed from the Desktop SDK for .NET Core 3.1
+Legacy controls were included in Windows Forms that have been unavailable in the Visual Studio Designer Toolbox for some time. These were replaced with new controls back in .NET Framework 2.0. These have been removed from the Desktop SDK for .NET Core 3.1.
 
 | Removed control | Recommended replacement | Associated APIs removed |
 | --------------- | ----------------------- | ----------------------- |
@@ -51,7 +51,7 @@ Legacy controls were included in Windows Forms that have been unavailable in the
 | MainMenu        | MenuStrip               |  |
 | MenuItem        | ToolStripMenuItem       |  |
 
-We recommend you update your applications to .NET Core 3.1 and move to the replacement controls. Replacing the controls is a straight-forward process, essentially "find and replace" on the type.
+We recommend you update your applications to .NET Core 3.1 and move to the replacement controls. Replacing the controls is a straightforward process, essentially "find and replace" on the type.
 
 ## C++/CLI
 

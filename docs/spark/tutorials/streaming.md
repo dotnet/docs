@@ -129,7 +129,7 @@ This code snippet applies *udfArray* to each value in your DataFrame, which repr
 
 ## Display your stream
 
-Use `DataFrame.WriteStream()` to establish characteristics of your output, such as printing results to the console and displaying only the most recent output.
+Use <xref:Microsoft.Spark.Sql.DataFrame.WriteStream> to establish characteristics of your output, such as printing results to the console and displaying only the most recent output.
 
 ```csharp
 StreamingQuery query = arrayDf

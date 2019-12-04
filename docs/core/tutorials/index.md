@@ -6,13 +6,13 @@ ms.date: 03/16/2017
 titleSuffix: ""
 ms.custom: seodec18
 ---
-# Learn .NET Core and the .NET Core SDK tools by exploring these Tutorials
+# Learn .NET Core and the .NET Core SDK tools by exploring these tutorials
 
 The following tutorials are available for learning about .NET Core.
 
-## Building applications with Visual Studio 2017
+## Create applications with Visual Studio
 
-- [Building a C# Hello World application](with-visual-studio.md)
+- [Create a C# Hello World console application](with-visual-studio.md)
 - [Debugging your C# Hello World application](debugging-with-visual-studio.md)
 - [Publishing your C# Hello World application](publishing-with-visual-studio.md)
 - [Building a C# class library](library-with-visual-studio.md)

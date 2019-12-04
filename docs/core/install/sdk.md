@@ -167,9 +167,9 @@ Microsoft provides images that are tailored for specific scenarios. For example,
 
 For more information about using .NET Core in a Docker container, see [Introduction to .NET and Docker](../docker/introduction.md) and [Samples](https://github.com/dotnet/dotnet-docker/blob/master/samples/README.md).
 
-## Next steps
-
 ::: zone pivot="os-windows"
+
+## Next steps
 
 - [Tutorial: C# Hello World tutorial](../tutorials/with-visual-studio.md).
 - [Tutorial: Visual Basic Hello World tutorial](../tutorials/vb-with-visual-studio.md).
@@ -179,6 +179,8 @@ For more information about using .NET Core in a Docker container, see [Introduct
 ::: zone-end
 
 ::: zone pivot="os-macos"
+
+## Next steps
 
 - [Tutorial: Get started on macOS](../tutorials/using-on-mac-vs.md).
 - [Tutorial: Create a new app with Visual Studio Code](https://code.visualstudio.com/docs/languages/dotnet).

@@ -42,7 +42,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
   
 |Element|Description|  
 |-------------|-----------------|  
-|[":::\<smtp>"::: Element (Network Settings)](smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
+|[\<:::no-loc text="smtp":::> Element (Network Settings)](smtp-element-network-settings.md)|Configures Simple Mail Transport Protocol (SMTP) mail sending options.|  
   
 ## Remarks  
  The `specifiedPickupDirectory` attribute sets the directory where applications save mail messages to be processed by the SMTP server.  

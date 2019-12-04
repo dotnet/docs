@@ -106,4 +106,4 @@ The official ISO/IEC documents are available from the ISO/IEC [Publicly Availabl
 - [.NET Framework Guide](../framework/index.md)
 - [C# Guide](../csharp/index.yml)
 - [F# Guide](../fsharp/index.yml)
-- [VB.NET Guide](../visual-basic/index.md)
+- [VB.NET Guide](../visual-basic/index.yml)

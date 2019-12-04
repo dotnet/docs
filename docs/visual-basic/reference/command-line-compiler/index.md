@@ -26,7 +26,3 @@ Lists compiler options in an alphabetical table
 [Visual Basic Compiler Options Listed by Category](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)  
 Presents compiler options in functional groups.
   
-## Related sections
-
-[Visual Basic Guide](../../index.md)  
-The starting point for the Visual Basic documentation.

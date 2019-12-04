@@ -2,7 +2,7 @@
 title: dotnet nuget push command
 description: The dotnet nuget push command pushes a package to the server and publishes it.
 author: karann-msft
-ms.date: 06/26/2019
+ms.date: 12/04/2019
 ---
 # dotnet nuget push
 

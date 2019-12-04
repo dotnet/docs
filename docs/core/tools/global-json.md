@@ -38,7 +38,7 @@ The following example shows the contents of a *global.json* file:
 ```json
 {
   "sdk": {
-    "version": "3.1.100"
+    "version": "2.2.100"
   }
 }
 ```

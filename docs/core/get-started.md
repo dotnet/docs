@@ -4,6 +4,7 @@ description: Find resources to learn how to build .NET Core applications on Wind
 author: thraka
 ms.author: adegeo
 ms.date: 12/03/2019
+ms.custom: vs-dotnet
 ---
 
 # Get started with .NET Core

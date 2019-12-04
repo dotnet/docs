@@ -125,7 +125,7 @@ Use SparkSQL to perform various functions on the data stored in your DataFrame. 
 DataFrame arrayDF = lines.Select(Explode(udfArray(lines["value"])));
 ```
 
-This code snippet applies *udfArray* to each value in your DataFrame, which represents each string read from your netcat terminal. Apply the SparkSQL method <xref:Microsoft.Spark.Sql.Functions.Explode> to put each entry of your array in its own row. Finally, use <xref:Microsoft.Spark.Sql.DataFrame.Select%2A> to place the columns you've produced in the new DataFrame *arrayDF.*
+This code snippet applies *udfArray* to each value in your DataFrame, which represents each string read from your netcat terminal. Apply the SparkSQL method <xref:Microsoft.Spark.Sql.Functions.Explode%2A> to put each entry of your array in its own row. Finally, use <xref:Microsoft.Spark.Sql.DataFrame.Select%2A> to place the columns you've produced in the new DataFrame *arrayDF.*
 
 ## Display your stream
 

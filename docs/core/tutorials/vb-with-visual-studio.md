@@ -57,7 +57,7 @@ Begin by creating a simple "Hello World" console application. Follow these steps
 
 ## Enhance the app
 
-Enhance your application to prompt the user for his or her name and to display it along with the date and time. To modify and test the program, do the following:
+Enhance your application to prompt the user for their name and to display it along with the date and time. To modify and test the program, do the following:
 
 1. Enter the following Visual Basic code in the code window immediately after the opening bracket that follows the `Sub Main(args As String())` line and before the first closing bracket:
 
@@ -71,7 +71,7 @@ Enhance your application to prompt the user for his or her name and to display i
 
 1. Compile the program by choosing **Build** > **Build Solution**.
 
-1. Run the program in Debug mode in Visual Studio by selecting the green arrow on the toolbar, pressing F5, or choosing the **Debug** > **Start Debugging** menu item. Respond to the prompt by entering a name and pressing the Enter key.
+1. Run the program in Debug mode in Visual Studio by selecting the green arrow on the toolbar, pressing **F5**, or choosing **Debug** > **Start Debugging**. Respond to the prompt by entering a name and pressing the **Enter** key.
 
    ![Console window with modified program output](./media/with-visual-studio/hello-world-update.png)
 
@@ -79,10 +79,10 @@ Enhance your application to prompt the user for his or her name and to display i
 
 You've created and run your application. To develop a professional application, take some additional steps to make your application ready for release:
 
-- To debug your application, see [Debug your .NET Core Hello World application using Visual Studio 2017](debugging-with-visual-studio.md).
+- To debug your application, see [Debug your .NET Core Hello World application using Visual Studio](debugging-with-visual-studio.md).
 
-- To publish a distributable version of your application, see [Publish your .NET Core Hello World application with Visual Studio 2017](publishing-with-visual-studio.md).
+- To publish a distributable version of your application, see [Publish your .NET Core Hello World application with Visual Studio](publishing-with-visual-studio.md).
 
 ## Related topics
 
-Instead of a console application, you can also build a .NET Standard class library with Visual Basic, .NET Core, and Visual Studio 2017. For a step-by-step introduction, see [Build a .NET Standard library with Visual Basic and .NET Core SDK in Visual Studio 2017](vb-library-with-visual-studio.md).
+Instead of a console application, you can also build a .NET Standard class library with Visual Basic, .NET Core, and Visual Studio. For a step-by-step introduction, see [Build a .NET Standard library with Visual Basic and .NET Core SDK in Visual Studio](vb-library-with-visual-studio.md).

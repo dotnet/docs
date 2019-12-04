@@ -20,7 +20,6 @@ For public APIs, you should always use TLS connections, and provide valid certif
 
 For internal services across a corporate network, you should still consider using TLS to secure network traffic to and from your gRPC services.
 
-Communication between microservices in a cluster like Kubernetes or Docker Swarm is, in general, automatically encrypted by the container networking layer. Implementing TLS in services running exclusively in such a cluster isn't necessary.
 
 If you need to use explicit TLS between services running in Kubernetes, consider using an in-cluster certificate authority and a certificate manager controller like [cert-manager](https://docs.cert-manager.io/en/latest/). You can then automatically assign certificates to services at deployment time.
 

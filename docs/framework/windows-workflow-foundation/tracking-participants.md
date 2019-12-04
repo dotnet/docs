@@ -61,7 +61,7 @@ Tracking participants are extensibility points that allow a workflow developer t
   
  The size of an ETW event is limited by the ETW buffer size, or the by the maximum payload for an ETW event, whichever value is smaller. If the size of the event exceeds either of these ETW limits, the event is truncated and its content removed in an arbitrary manner. Variables, arguments, annotations and custom data are not selectively removed. In the case of truncation, all of these are truncated regardless of the value that caused the event size to exceed the ETW limit.  The removed data is replaced with `<item>..<item>`.  
   
- Complex types in variables, arguments, and custom data items are serialized to the ETW event record using the [NetDataContractSerializer Class](https://docs.microsoft.com/dotnet/api/system.runtime.serialization.netdatacontractserializer&view=netframework-4.8). This class includes CLR-type information in the serialized XML steam.  
+ Complex types in variables, arguments, and custom data items are serialized to the ETW event record using the <xref:System.Runtime.Serialization.NetDataContractSerializer> class. This class includes CLR-type information in the serialized XML steam.  
   
  Truncation of payload data due to ETW limits can result in duplicate tracking records being sent to an ETW session. This can occur if more than one session is listening for the events and the sessions have different payload limits for the events.  
   

@@ -28,7 +28,8 @@ On .NET Core, Windows Forms includes the following changes that affect the <xref
 
 ## Improved CheckedListBox Accessibility support
 On .NET Core, Windows Forms includes the following changes that affect the <xref:System.Windows.Forms.CheckedListBox control>:
-- Corrected CheckedListBox Bounds provided by accessibility properties for entries. Improved overall ListBox and CheckedListBox accessibility (corrected pproperty values and event model).
+- Corrected CheckedListBox Bounds provided by accessibility properties for entries. 
+- Improved overall ListBox and CheckedListBox accessibility (corrected property values and event model).
 
 ## Improved ComboBox Accessibility support
 On .NET Core, Windows Forms includes the following changes that affect the <xref:System.Windows.Forms.ComboBox control>:

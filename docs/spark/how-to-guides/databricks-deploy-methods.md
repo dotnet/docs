@@ -25,7 +25,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 
 2. Navigate to your job and select **Edit** to configure your job's cluster. Set the Databricks Runtime Version based on the version of Apache Spark you wish to use in your deployment. Then select **Advanced Options > Init Scripts**, and set Init Script Path as `dbfs:/spark-dotnet/db-init.sh`. Select **Confirm** to confirm your cluster settings.
 
-3. Navigate to your job and select **Run Now** to run your job on your newly configured Spark cluster. It takes a few minutes for the job's cluster to create. Once it is created, your job will be submitted. You can view the output by selecting **Clusters** from the left menu of your Databricks workspace, then select **Driver Logs**.
+3. Navigate to your job and select **Run Now** to run your job on your newly configured Spark cluster. It takes a few minutes for the job's cluster to be created. Once it is created, your job will be submitted. You can view the output by selecting **Clusters** from the left menu of your Databricks workspace, then select **Driver Logs**.
 
 ## Deploy using Set Jar
 

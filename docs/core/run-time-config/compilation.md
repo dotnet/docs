@@ -15,4 +15,4 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation` | `true` - enabled<br/>`false` - disabled |
-| **Environment variable** | `COMPlus_TieredCompilation` | 1 - enabled<br/>0 - disabled |
+| **Environment variable** | `COMPlus_TieredCompilation` | `1` - enabled<br/>`0` - disabled |

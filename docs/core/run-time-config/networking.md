@@ -14,7 +14,7 @@ ms.topic: reference
 | | Setting name | Values | Introduced version |
 | - | - | - |
 | **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled | .NET Core 3.0 |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | 0 - disabled<br/>1 - enabled | .NET Core 3.0 |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | `0` - disabled<br/>`1` - enabled | .NET Core 3.0 |
 
 ## Sockets HTTP handler
 
@@ -25,4 +25,4 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Net.Http.UseSocketsHttpHandler` | `true` - enables the use of <xref:System.Net.Http.SocketsHttpHandler><br/>`false` - enables the use of <xref:System.Net.Http.HttpClientHandler> |
-| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` | 1 - enables the use of <xref:System.Net.Http.SocketsHttpHandler><br/>0 - enables the use of <xref:System.Net.Http.HttpClientHandler> |
+| **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` | `1` - enables the use of <xref:System.Net.Http.SocketsHttpHandler><br/>`0` - enables the use of <xref:System.Net.Http.HttpClientHandler> |

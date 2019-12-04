@@ -9,12 +9,12 @@ ms.topic: reference
 ## CPU groups
 
 - Configures whether threads are automatically distributed across CPU groups.
-- Default: Disabled (0).
+- Default: Disabled (`0`).
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** |  |  |
-| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` | 0 - disabled<<br/>1 - enabled |
+| **runtimeconfig.json** | N/A | N/A |
+| **Environment variable** | `COMPlus_Thread_UseAllCpuGroups` | `0` - disabled<<br/>`1` - enabled |
 
 ## Minimum threads
 
@@ -24,7 +24,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Threading.ThreadPool.MinThreads` | An integer that represents the minimum number of threads |
-| **Environment variable** |  |  |
+| **Environment variable** | N/A | N/A |
 
 ## Maximum threads
 
@@ -34,4 +34,4 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Threading.ThreadPool.MaxThreads` | An integer that represents the maximum number of threads |
-| **Environment variable** |  |  |
+| **Environment variable** | N/A | N/A |

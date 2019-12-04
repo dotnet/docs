@@ -15,7 +15,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Globalization.Invariant` | `false` - access to cultural data<br/>`true` - run in invariant mode |
-| **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` | 0 - access to cultural data<br/>1 - run in invariant mode |
+| **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` | `0` - access to cultural data<br/>`1` - run in invariant mode |
 
 ## Era year ranges
 
@@ -41,11 +41,11 @@ ms.topic: reference
 
 ## Japanese year format
 
-- Determines whether the first year of a Japanese calendar era is formatted as "gannen" or as a number.
-- Default: Format the first year as "gannen" (`false`).
+- Determines whether the first year of a Japanese calendar era is formatted as "Gannen" or as a number.
+- Default: Format the first year as "Gannen" (`false`).
 - For more information, see [Represent dates in calendars with multiple eras](../../standard/datetime/working-with-calendars.md#represent-dates-in-calendars-with-multiple-eras).
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | `false` - format as "gannen"<br/>`true` - format as number |
+| **runtimeconfig.json** | `Switch.System.Globalization.FormatJapaneseFirstYearAsANumber` | `false` - format as "Gannen"<br/>`true` - format as number |
 | **Environment variable** | N/A | N/A |

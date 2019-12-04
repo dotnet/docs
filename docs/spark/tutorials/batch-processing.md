@@ -16,9 +16,10 @@ Batch processing is generally performed over large, flat datasets that need to b
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> * All tutorials include a list summarizing the steps to completion
-> * Each of these bullet points align to a key H2
-> * Use these green checkboxes in a tutorial
+>
+> * Create and run a .NET for Apache Spark application
+> * Read data into a DataFrame and prepare it for analysis
+> * Process the data using Spark SQL
 
 ## Prerequisites 
 

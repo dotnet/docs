@@ -42,10 +42,15 @@ Get started developing .NET Core applications by following these step-by-step tu
 - [Create your first C# .NET Core console application in Visual Studio 2019](tutorials/with-visual-studio.md)
 - [Build a C# class library with .NET Standard in Visual Studio](./tutorials/library-with-visual-studio.md)
 - [Build a Visual Basic "Hello World" application with .NET Core in Visual Studio](./tutorials/vb-with-visual-studio.md)
-- [Build a class library with Visual Basic and .NET Standard in Visual Studio](./tutorials/vb-library-with-visual-studio.md)  
-- Watch the [how to install and use Visual Studio Code and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core/)
-- Watch the [.NET Core 101](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) videos on YouTube
-- [Getting started with .NET Core using the .NET Core CLI](tutorials/using-with-xplat-cli.md)
+- [Build a class library with Visual Basic and .NET Standard in Visual Studio](./tutorials/vb-library-with-visual-studio.md)
+- [Get started with .NET Core using the .NET Core CLI](tutorials/using-with-xplat-cli.md)
+
+|   |   |
+|---|---|
+| ![movie camera icon for video](media/video-icon.png "Watch a video") | Watch the [how to install and use Visual Studio Code and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core/) video on Channel 9. |
+| ![movie camera icon for video](media/video-icon.png "Watch a video") | Watch the [.NET Core 101](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) videos on YouTube. |
+
+See the [.NET Core dependencies and requirements](install/dependencies.md?tabs=netcore30&pivots=os-windows) article for a list of the supported Windows versions.
 
 See the [.NET Core SDK and runtime dependencies](install/dependencies.md?pivots=os-windows) article for a list of the supported Windows versions.
 

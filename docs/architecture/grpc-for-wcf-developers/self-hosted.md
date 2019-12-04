@@ -155,7 +155,7 @@ When you're running a gRPC application in production, you should use a TLS certi
 
 On Windows hosts, you can load the certificate from a secure [certificate store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) by using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). You can also use the `X509Store` class with the OpenSSL key store on some Linux hosts.
 
-You can also create certificates by using one of the [X509Certificate2 constructors](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), from either:
+You can also create certificates by using one of the [X509Certificate2 constructors](xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor%2A), from either:
 
 * A file, such as a `.pfx` file protected by a strong password
 * Binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)

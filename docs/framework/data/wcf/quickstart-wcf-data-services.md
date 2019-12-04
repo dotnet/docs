@@ -20,7 +20,7 @@ To complete this quickstart, you must install the following components:
 
 - Visual Studio
 
-- An instance of SQL Server. This includes SQL Server Express, which is included in a default installation of Visual Studio 2015, or as part of the **Data storage and processing** workload in Visual Studio 2017.
+- An instance of SQL Server. This includes SQL Server Express, which is included in a default installation of Visual Studio 2015, or as part of the **Data storage and processing** workload in Visual Studio 2017 or later.
 
 - The Northwind sample database. To download this sample database, see the download page, [Sample Databases for SQL Server](https://go.microsoft.com/fwlink/?linkid=24758).
 

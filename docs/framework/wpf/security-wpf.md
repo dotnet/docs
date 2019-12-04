@@ -203,7 +203,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  If you run a partial-trust XAML browser application (XBAP) that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Windows Internet Explorer, WPF hosts the WebBrowser ActiveX control in the address space of the Internet Explorer process. Since the WebBrowser ActiveX control is hosted in the Internet Explorer process, all of the feature controls for Internet Explorer are also enabled for the WebBrowser ActiveX control.  
   
- XBAPs running in Internet Explorer also get an additional level of security compared to normal standalone applications. This additional security is because Internet Explorer, and therefore the WebBrowser ActiveX control, runs in protected mode by default on Windows Vista and [!INCLUDE[win7](../../../includes/win7-md.md)]. For more information about protected mode, see [Understanding and Working in Protected Mode Internet Explorer](https://go.microsoft.com/fwlink/?LinkId=179393).  
+ XBAPs running in Internet Explorer also get an additional level of security compared to normal standalone applications. This additional security is because Internet Explorer, and therefore the WebBrowser ActiveX control, runs in protected mode by default on Windows Vista and Windows 7. For more information about protected mode, see [Understanding and Working in Protected Mode Internet Explorer](https://go.microsoft.com/fwlink/?LinkId=179393).  
   
 > [!NOTE]
 > If you try to run an XBAP that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Firefox, while in the Internet zone, a <xref:System.Security.SecurityException> will be thrown. This is due to WPF security policy.  
@@ -252,7 +252,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  With this setting, external content will be loaded into a process that is separate from the process that is hosting the application. This process is restricted to the default Internet zone permission set, effectively isolating it from the hosting application and the client computer.  
   
 > [!NOTE]
-> Even though navigation to loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application is implemented based on the WPF browser hosting infrastructure, involving the PresentationHost process, the security level is slightly less than when the content is loaded directly in Internet Explorer on Windows Vista and [!INCLUDE[win7](../../../includes/win7-md.md)] (which would still be through PresentationHost). This is because a standalone WPF application using a Web browser does not provide the additional Protected Mode security feature of Internet Explorer.  
+> Even though navigation to loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application is implemented based on the WPF browser hosting infrastructure, involving the PresentationHost process, the security level is slightly less than when the content is loaded directly in Internet Explorer on Windows Vista and Windows 7 (which would still be through PresentationHost). This is because a standalone WPF application using a Web browser does not provide the additional Protected Mode security feature of Internet Explorer.  
   
 <a name="BestPractices"></a>   
 ## Resources for Developing WPF Applications that Promote Security  

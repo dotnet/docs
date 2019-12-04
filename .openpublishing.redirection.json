@@ -1893,9 +1893,219 @@
             "redirect_url": "/dotnet/api/system.net.httplistener"
         },
         {
+            "source_path": "docs/framework/security/building-my-first-claims-aware-aspnet-web-app.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/building-my-first-claims-aware-aspnet-web-app",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/building-my-first-claims-aware-wcf-service.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/building-my-first-claims-aware-wcf-service",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/claims-aware-aspnet-app-forms-authentication.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/claims-aware-aspnet-app-forms-authentication",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/claims-based-authorization-using-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/claims-based-authorization-using-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/claims-based-identity-model.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/claims-based-identity-model",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/custom-token-handlers.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/custom-token-handlers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/downloading-the-json-web-token-handler-package.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/downloading-the-json-web-token-handler-package",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/downloading-the-validating-issuer-name-registry-package.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/downloading-the-validating-issuer-name-registry-package",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/getting-started-with-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/getting-started-with-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-display-signed-in-status-using-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-display-signed-in-status-using-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-enable-token-replay-detection.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-token-replay-detection",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-enable-wif-for-a-wcf-web-service-application.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-wif-for-a-wcf-web-service-application",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-enable-wif-tracing.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-enable-wif-tracing",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/how-to-transform-incoming-claims.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/how-to-transform-incoming-claims",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/identity-and-access-tool-for-vs.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/identity-and-access-tool-for-vs",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/json-web-token-handler.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/json-web-token-handler",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
             "redirect_url": "https://github.com/AzureAD/azure-activedirectory-identitymodel-extensions-for-dotnet/wiki"
         },
+        {
+            "source_path": "docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/secure-coding-guidelines-for-unmanaged-code.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/security-changes.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/security-changes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/validating-issuer-name-registry-api-reference.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/validating-issuer-name-registry-api-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/validating-issuer-name-registry.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/validating-issuer-name-registry",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/whats-new-in-wif.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/whats-new-in-wif",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-and-web-farms.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-and-web-farms",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-api-reference.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-api-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-claims-programming-model.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-claims-programming-model",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-code-sample-index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-code-sample-index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-configuration-reference.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-configuration-reference",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-configuration-schema-conventions.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-configuration-schema-conventions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-extensions.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-extensions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-features.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-features",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-guidelines.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-guidelines",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-how-tos-index.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-how-tos-index",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-overview.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wif-session-management.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wif-session-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wsfederation-authentication-module-overview.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wsfederation-authentication-module-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/framework/security/wstrustchannelfactory-and-wstrustchannel.md",
+            "redirect_url": "/previous-versions/dotnet/framework/security/wstrustchannelfactory-and-wstrustchannel",
+            "redirect_document_id": true
+        },  
         {
             "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
             "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"

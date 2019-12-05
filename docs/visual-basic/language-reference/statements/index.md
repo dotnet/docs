@@ -28,4 +28,3 @@ The topics in this section contain tables of the Visual Basic declaration and ex
 ## Related Sections  
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
   
- [Visual Basic](../../../visual-basic/index.md)

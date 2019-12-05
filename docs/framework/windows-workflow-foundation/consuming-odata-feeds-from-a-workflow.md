@@ -9,7 +9,7 @@ WCF Data Services is a component of the .NET Framework that enables you to creat
 
 ## Using the sample Northwind OData service
 
-The examples in this topic use the sample Northwind data service located at <https://services.odata.org/Northwind/Northwind.svc/>. This service is provided as part of the [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248) and provides read-only access to the sample Northwind database. If write access is desired, or if a local WCF Data Service is desired, you can follow the steps of the [WCF Data Services Quickstart](https://go.microsoft.com/fwlink/?LinkID=131076) to create a local OData service that provides access to the Northwind database. If you follow the quickstart, substitute the local URI for the one provided in the example code in this topic.
+The examples in this topic use the sample Northwind data service located at <https://services.odata.org/Northwind/Northwind.svc/>. This service is provided as part of the [OData SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip) and provides read-only access to the sample Northwind database. If write access is desired, or if a local WCF Data Service is desired, you can follow the steps of the [WCF Data Services Quickstart](../data/wcf/quickstart-wcf-data-services.md) to create a local OData service that provides access to the Northwind database. If you follow the quickstart, substitute the local URI for the one provided in the example code in this topic.
 
 ## Consuming an OData feed using the client libraries
 
@@ -148,4 +148,4 @@ xmlns="http://www.w3.org/2005/Atom">
 ...
 ```
 
-This example provides one method that workflow application authors can use to consume the raw data returned from an OData service. For more information about accessing WCF Data Services using URIs, see [Accessing Data Service Resources (WCF Data Services)](../data/wcf/accessing-data-service-resources-wcf-data-services.md) and [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=185564).
+This example provides one method that workflow application authors can use to consume the raw data returned from an OData service. For more information about accessing WCF Data Services using URIs, see [Accessing Data Service Resources (WCF Data Services)](../data/wcf/accessing-data-service-resources-wcf-data-services.md) and [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).

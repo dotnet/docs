@@ -27,4 +27,3 @@ Visual Basic provides several modules that enable you to simplify common tasks i
 ## See also
 
 - [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
-- [Visual Basic](../../visual-basic/index.md)

@@ -92,7 +92,7 @@ This topic discusses how clients address services that read from queues and how 
   
  The MSMQ-format-name is of the form specified by MSMQ in [About Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94837).  
   
- Note that you can only use direct format names, and public and private format names (requires Active Directory integration) when receiving messages from a queue using `MsmqIntegrationBinding`. However, it is advised that you use direct format names. For example, on [!INCLUDE[wv](../../../../includes/wv-md.md)], using any other format name causes an error because the system attempts to open a subqueue, which can only be opened with direct format names.  
+ Note that you can only use direct format names, and public and private format names (requires Active Directory integration) when receiving messages from a queue using `MsmqIntegrationBinding`. However, it is advised that you use direct format names. For example, on Windows Vista, using any other format name causes an error because the system attempts to open a subqueue, which can only be opened with direct format names.  
   
  When addressing SRMP using `MsmqIntegrationBinding`, there is no requirement to add /msmq/ in the direct format name to help Internet Information Services (IIS) with dispatching. For example: When addressing a queue abc using the SRMP protocol, instead of DIRECT=http://adatum.com/msmq/private$/abc, you should use DIRECT=http://adatum.com/private$/abc.  
   

@@ -15,6 +15,9 @@ This article describes how to use a package manager to install .NET Core on RHEL
 > [!NOTE]
 > RHEL 8.0 does not include .NET Core 3.0. Use the command `yum upgrade` to update to RHEL 8.1.
 
+> [!NOTE]
+> RHEL 8.0 does not include .NET Core 3.0. Use the command `yum upgrade` to update to RHEL 8.1.
+
 ## Register your Red Hat subscription
 
 To install .NET Core from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET Core](https://access.redhat.com/documentation/net_core/).

@@ -47,7 +47,7 @@ None.
 
 |Element|Description|
 |-------------|-----------------|
-|[configuration](configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
+|[configuration](../configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
 |[runtime](runtime-element.md)|Contains information about assembly binding and garbage collection.|
 
 ## Remarks

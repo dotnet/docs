@@ -71,7 +71,7 @@ The following instructions create a simple Hello World console application:
 
    The console app template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the `args` parameter.
 
-   ![Visual Studio and the new HelloWorld project](media/vb-with-visual-studio/visual-studio-main-window.png)
+   ![Visual Studio and the new HelloWorld project](media/with-visual-studio/vb/visual-studio-main-window.png)
 
 ---
 
@@ -96,7 +96,12 @@ Enhance your application to prompt the user for their name and display it along 
 1. Replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:
 
    [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
-   [!code-vb[GettingStarted#1](../../../samples/snippets/core/tutorials/vb-with-visual-studio/helloworld.vb#1)]
+   [!code-vb[GettingStarted#1](~/samples/snippets/core/tutorials/vb-with-visual-studio/helloworld.vb#1)]
+
+   > [!TIP]
+   > To see the code examples in your preferred programming language, choose it using the language picker at the top-right corner of the browser window.
+   >
+   > ![Code language picker control on docs.microsoft.com](../media/code-language-picker.png)
 
    This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../csharp/language-reference/tokens/interpolated.md) to display these values in the console window.
 
@@ -112,7 +117,7 @@ Enhance your application to prompt the user for their name and display it along 
 
 ## Next steps
 
-In this article, you've created and run your first .NET Core application. To learn more about how to debug your apps, see:
+In this article, you've created and run your first .NET Core application. In the next step, you debug your app.
 
 > [!div class="nextstepaction"]
-> [Debug your .NET Core Hello World application using Visual Studio 2019](debugging-with-visual-studio.md)
+> [Debug a .NET Core Hello World application in Visual Studio](debugging-with-visual-studio.md)

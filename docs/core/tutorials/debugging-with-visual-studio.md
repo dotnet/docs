@@ -6,15 +6,15 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio 2017
 
-So far, you've followed the steps in [Create your first C# .NET Core console application in Visual Studio 2019](with-visual-studio.md) or [Build a Visual Basic Hello World Application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
+So far, you've followed the steps in [Create your first .NET Core console application in Visual Studio 2019](with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use to troubleshoot your application.
 
 ## Debugging in Debug mode
 
 *Debug* and *Release* are two of Visual Studio's default build configurations. The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile your application in **Debug** mode.
 
-   ![default Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-debug.png)
+![default Visual Studio toolbar with debug highlighted](./media/debugging-with-visual-studio/visual-studio-toolbar-debug.png)
 
-You should always begin by testing your program in Debug mode. Debug mode turns off most compiler optimizations and provides richer information during the build process.
+Begin by testing your program in Debug mode. Debug mode turns off most compiler optimizations and provides richer information during the build process.
 
 ## Setting a breakpoint
 

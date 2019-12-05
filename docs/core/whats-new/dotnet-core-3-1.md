@@ -43,13 +43,13 @@ Legacy controls were included in Windows Forms that have been unavailable in the
 
 | Removed control | Recommended replacement | Associated APIs removed |
 | --------------- | ----------------------- | ----------------------- |
-| DataGrid        | DataGridView            | DataGridCell<br/>DataGridRow<br/>DataGridTableCollection<br/>DataGridColumnCollection<br/>DataGridTableStyle<br/>DataGridColumnStyle<br/>DataGridLineStyle<br/>DataGridParentRowsLabel<br/>DataGridParentRowsLabelStyle<br/>DataGridBoolColumn<br/>DataGridTextBox<br/>GridColumnStylesCollection<br/>GridTableStylesCollection<br/>HitTestType |
-| ToolBar         | ToolStrip               | ToolBarAppearance |
-| ToolBarButton   | ToolStripButton         | ToolBarButtonClickEventArgs<br/>ToolBarButtonClickEventHandler<br/>ToolBarButtonStyle<br/>ToolBarTextAlign |
-| ContextMenu     | ContextMenuStrip        |  |
-| :::no-loc text="Menu":::            | ToolStripDropDown<br/>ToolStripDropDownMenu | MenuItemCollection |
-| MainMenu        | MenuStrip               |  |
-| MenuItem        | ToolStripMenuItem       |  |
+| DataGrid        | <xref:System.Windows.Forms.DataGridView>      | DataGridCell<br/>DataGridRow<br/>DataGridTableCollection<br/>DataGridColumnCollection<br/>DataGridTableStyle<br/>DataGridColumnStyle<br/>DataGridLineStyle<br/>DataGridParentRowsLabel<br/>DataGridParentRowsLabelStyle<br/>DataGridBoolColumn<br/>DataGridTextBox<br/>GridColumnStylesCollection<br/>GridTableStylesCollection<br/>HitTestType |
+| ToolBar         | <xref:System.Windows.Forms.ToolStrip>         | ToolBarAppearance |
+| ToolBarButton   | <xref:System.Windows.Forms.ToolStripButton>   | ToolBarButtonClickEventArgs<br/>ToolBarButtonClickEventHandler<br/>ToolBarButtonStyle<br/>ToolBarTextAlign |
+| ContextMenu     | <xref:System.Windows.Forms.ContextMenuStrip>  |  |
+| :::no-loc text="Menu"::: | <xref:System.Windows.Forms.ToolStripDropDown><br/><xref:System.Windows.Forms.ToolStripDropDownMenu> | MenuItemCollection |
+| MainMenu        | <xref:System.Windows.Forms.MenuStrip>         |  |
+| MenuItem        | <xref:System.Windows.Forms.ToolStripMenuItem> |  |
 
 We recommend you update your applications to .NET Core 3.1 and move to the replacement controls. Replacing the controls is a straightforward process, essentially "find and replace" on the type.
 
@@ -59,7 +59,7 @@ We recommend you update your applications to .NET Core 3.1 and move to the repla
 
 Support has been added for creating C++/CLI (also known as "managed C++") projects. Binaries produced from these projects are compatible with .NET Core 3.0 and later versions.
 
-To add support for C++/CLI in Visual Studio 2019 16.4, install the **Desktop development with C++** workload. This workload adds two templates to Visual Studio:
+To add support for C++/CLI in Visual Studio 2019 16.4, install the [Desktop development with C++ workload](https://docs.microsoft.com/cpp/build/vscpp-step-0-installation?view=vs-2019#step-4---choose-workloads). This workload adds two templates to Visual Studio:
 
 - CLR Class Library (.NET Core)
 - CLR Empty Project (.NET Core)

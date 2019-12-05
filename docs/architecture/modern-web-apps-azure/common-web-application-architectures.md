@@ -3,7 +3,7 @@ title: Common web application architectures
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Explore the common web application architectures
 author: ardalis
 ms.author: wiwagn
-ms.date: 01/30/2019
+ms.date: 12/4/2019
 ---
 # Common web application architectures
 
@@ -85,7 +85,7 @@ This unit can be scaled up or out to take advantage of cloud-based on-demand sca
 
 The simplest approach to scaling a web application in Azure is to configure scaling manually in the application's App Service Plan. Figure 5-6 shows the appropriate Azure dashboard screen to configure how many instances are serving an app.
 
-![App Service Plan scaling in Azure](./media/image5-6.png)
+![App Service Plan scaling in Azure](./media/image5-6.png) TODO: Update screenshot
 
 **Figure 5-6.** App Service Plan scaling in Azure.
 
@@ -93,8 +93,7 @@ The simplest approach to scaling a web application in Azure is to configure scal
 
 Applications that follow the Dependency Inversion Principle as well as the Domain-Driven Design (DDD) principles tend to arrive at a similar architecture. This architecture has gone by many names over the years. One of the first names was Hexagonal Architecture, followed by Ports-and-Adapters. More recently, it's been cited as the [Onion Architecture](https://jeffreypalermo.com/blog/the-onion-architecture-part-1/) or [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). The latter name, Clean Architecture, is used as the name for this architecture in this e-book.
 
-> [!NOTE]
-> The term Clean Architecture can be applied to applications that are built using DDD Principles as well as to those that are not built using DDD. In the case of the former, this combination may be referred to as "Clean DDD Architecture".
+The eShopOnWeb reference application uses the Clean Architecture approach in organizing its code into projects. You can find a solution template you can use as a staring point for your own ASP.NET Core on GitHub at [github.com/ardalis/cleanarchitecture](https://github.com/ardalis/cleanarchitecture).
 
 Clean architecture puts the business logic and application model at the center of the application. Instead of having business logic depend on data access or other infrastructure concerns, this dependency is inverted: infrastructure and implementation details depend on the Application Core. This is achieved by defining abstractions, or interfaces, in the Application Core, which are then implemented by types defined in the Infrastructure layer. A common way of visualizing this architecture is to use a series of concentric circles, similar to an onion. Figure 5-7 shows an example of this style of architectural representation.
 
@@ -206,7 +205,7 @@ Deploying updates as Docker images is far faster and network efficient. Docker I
 
 As containers are inherently immutable by design, you never need to worry about corrupted VMs, whereas update scripts might forget to account for some specific configuration or file left on disk.
 
-You can use Docker containers for monolithic deployment of simpler web applications. This improves continuous integration and continuous deployment pipelines and helps achieve deployment-to-production success. No more “It works in my machine, why does it not work in production?”
+You can use Docker containers for monolithic deployment of simpler web applications. This improves continuous integration and continuous deployment pipelines and helps achieve deployment-to-production success. No more “It works on my machine, why does it not work in production?”
 
 A microservices-based architecture has many benefits, but those benefits come at a cost of increased complexity. In some cases, the costs outweigh the benefits, so a monolithic deployment application running in a single container or in just a few containers is a better option.
 
@@ -274,7 +273,8 @@ COPY --from=build /app/src/Web/out ./
 # ENV ASPNETCORE_ENVIRONMENT Development
 
 ENTRYPOINT ["dotnet", "Web.dll"]
-```
+
+```TODO: update this to the latest 3.x version; make sure it renders in PDF properly
 
 ### Troubleshooting Docker problems
 
@@ -292,7 +292,7 @@ If you want to add Docker support to your application using Visual Studio, make 
   <https://jeffreypalermo.com/blog/the-onion-architecture-part-1/>
 - **The Repository Pattern**  
   <https://deviq.com/repository-pattern/>
-- **Clean Architecture Solution Sample**  
+- **Clean Architecture Solution Template**  
   <https://github.com/ardalis/cleanarchitecture>
 - **Architecting Microservices e-book**  
   <https://aka.ms/MicroservicesEbook>

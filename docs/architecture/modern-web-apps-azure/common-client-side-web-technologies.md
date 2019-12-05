@@ -3,7 +3,7 @@ title: Common client side web technologies
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client side web technologies
 author: ardalis
 ms.author: wiwagn
-ms.date: 01/30/2019
+ms.date: 12/4/2019
 ---
 # Common client side web technologies
 
@@ -13,6 +13,8 @@ ms.date: 01/30/2019
 ASP.NET Core applications are web applications and they typically rely on client-side web technologies like HTML, CSS, and JavaScript. By separating the content of the page (the HTML) from its layout and styling (the CSS), and its behavior (via JavaScript), complex web apps can leverage the Separation of Concerns principle. Future changes to the structure, design, or behavior of the application can be made more easily when these concerns are not intertwined.
 
 While HTML and CSS are relatively stable, JavaScript, by means of the application frameworks and utilities developers work with to build web-based applications, is evolving at breakneck speed. This chapter looks at a few ways JavaScript is used by web developers as part of developing applications, as provides a high-level overview of the Angular and React client side libraries.
+
+**Note:** Blazor provides an alternative to JavaScript frameworks for building rich, interactive client user interfaces. Client-side Blazor support is still in preview so for now it is out of scope for this chapter.
 
 ## HTML
 
@@ -52,7 +54,7 @@ You can perform all of these tasks with JavaScript alone, but many libraries exi
 
 ### Legacy web apps with jQuery
 
-Although ancient by JavaScript framework standards, jQuery continues to be a very commonly used library for working with HTML/CSS and building applications that make AJAX calls to web APIs. However, jQuery operates at the level of the browser document object model (DOM), and by default offers only an imperative, rather than declarative, model.
+Although ancient by JavaScript framework standards, jQuery continues to be a very commonly used library for working with HTML/CSS and building applications that make client-side calls to web APIs. However, jQuery operates at the level of the browser document object model (DOM), and by default offers only an imperative, rather than declarative, model.
 
 For example, imagine that if a textbox's value exceeds 10, an element on the page should be made visible. In jQuery, this would typically be implemented by writing an event handler with code that would inspect the textbox's value and set the visibility of the target element based on that value. This is an imperative, code-based approach. Another framework might instead use databinding to bind the visibility of the element to the value of the textbox declaratively. This would not require writing any code, but instead only requires decorating the elements involved with data binding attributes. As client side behaviors grow more complex, data binding approaches frequently result in simpler solutions with less code and conditional complexity.
 
@@ -73,7 +75,7 @@ Data binding is a great example of this. In jQuery, it usually only takes one li
 
 ### Angular SPAs
 
-AngularJS quickly became one of the world's most popular JavaScript frameworks. With Angular 2, the team rebuilt the framework from the ground up (using [TypeScript](https://www.typescriptlang.org/)) and rebranded from AngularJS to simply Angular. Currently on version 4, Angular continues to be a robust framework for building Single Page Applications.
+Angular remains one of the world's most popular JavaScript frameworks. Since Angular 2, the team rebuilt the framework from the ground up (using [TypeScript](https://www.typescriptlang.org/)) and rebranded from the original AngularJS name to simply Angular. Now several years old, the redesigned Angular continues to be a robust framework for building Single Page Applications.
 
 Angular applications are built from components. Components combine HTML templates with special objects and control a portion of the page. A simple component from Angular's docs is shown here:
 
@@ -98,7 +100,7 @@ Microsoft has developed a reference application, [eShopOnContainers](https://aka
 
 ### React
 
-Unlike Angular, which offers a full Model-View-Controller pattern implementation, React is only concerned with views. It's not a framework, just a library, so to build a SPA you'll need to leverage additional libraries.
+Unlike Angular, which offers a full Model-View-Controller pattern implementation, React is only concerned with views. It's not a framework, just a library, so to build a SPA you'll need to leverage additional libraries. There are a number of libraries that are designed to be used with React to produce rich single page applications.
 
 One of React's most important features is its use of a virtual DOM. The virtual DOM provides React with several advantages, including performance (the virtual DOM can optimize which parts of the actual DOM need to be updated) and testability (no need to have a browser to test React and its interactions with its virtual DOM).
 
@@ -115,6 +117,10 @@ React is also unusual in how it works with HTML. Rather than having a strict sep
 If you already know JavaScript, learning React should be easy. There isn't nearly as much learning curve or special syntax involved as with Angular or other popular libraries.
 
 Because React isn't a full framework, you'll typically want other libraries to handle things like routing, web API calls, and dependency management. The nice thing is, you can pick the best library for each of these, but the disadvantage is that you need to make all of these decisions and verify all of your chosen libraries work well together when you're done. If you want a good starting point, you can use a starter kit like React Slingshot, which prepackages a set of compatible libraries together with React.
+
+### Vue
+
+TODO: Describe Vue with a small example
 
 ### Choosing a SPA Framework
 
@@ -157,7 +163,8 @@ JavaScript frameworks continue to evolve with breakneck speed. Use the considera
 > - **React vs Angular 2 Comparison**  
 > <https://www.codementor.io/codementorteam/react-vs-angular-2-comparison-beginners-guide-lvz5710ha>
 > - **5 Best JavaScript Frameworks of 2017**  
-> <https://hackernoon.com/5-best-javascript-frameworks-in-2017-7a63b3870282>
+> <https://hackernoon.com/5-best-javascript-frameworks-in-2017-7a63b3870282> TODO: Update to a 2019 article?
+TODO: add link to Vue
 
 >[!div class="step-by-step"]
 >[Previous](common-web-application-architectures.md)

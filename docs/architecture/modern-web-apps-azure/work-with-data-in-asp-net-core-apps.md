@@ -3,7 +3,7 @@ title: Work with data in ASP.NET Core Apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Working with data in ASP.NET Core apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 01/30/2019
+ms.date: 12/4/2019
 ---
 # Working with Data in ASP.NET Core Apps
 
@@ -197,6 +197,8 @@ private void ConfigureOrder(EntityTypeBuilder<Order> builder)
 In this example, the `ShipToAddress` property is of type `Address`. `Address` is a value object with several properties such as `Street` and `City`. EF Core maps the `Order` object to its table with one column per `Address` property, prefixing each column name with the name of the property. In this example, the `Order` table would include columns such as `ShipToAddress_Street` and `ShipToAddress_City`.
 
 [EF Core 2.2 introduces support for collections of owned entities](https://docs.microsoft.com/ef/core/what-is-new/ef-core-2.2#collections-of-owned-entities)
+
+TODO: Discuss updates to owned entities in 3.0
 
 ### Resilient connections
 

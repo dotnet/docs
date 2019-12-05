@@ -1,5 +1,5 @@
 ---
-title: gcConcurrent Element
+title: gcConcurrent element
 ms.date: "03/30/2017"
 f1_keywords:
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/gcConcurrent"
@@ -10,48 +10,45 @@ helpviewer_keywords:
   - "<gcConcurrent> element"
 ms.assetid: 503f55ba-26ed-45ac-a2ea-caf994da04cd
 ---
-# \<gcConcurrent> element
+# gcConcurrent element
 
 Specifies whether the common language runtime runs garbage collection on a separate thread.
 
-[\<configuration>](../configuration-element.md)\
-&nbsp;&nbsp;[\<runtime>](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;\<gcConcurrent>
+```xml
+<configuration>
+  <runtime>
+    <gcConcurrent>
+```
 
 ## Syntax
 
 ```xml
-<gcConcurrent
-   enabled="true|false"/>
+<gcConcurrent enabled="true|false"/>
 ```
 
-## Attributes and elements
-
-The following sections describe attributes, child elements, and parent elements.
-
-### Attributes
+## Attributes
 
 |Attribute|Description|
 |---------------|-----------------|
 |`enabled`|Required attribute.<br /><br />Specifies whether the runtime runs garbage collection concurrently.|
 
-#### enabled attribute
+### enabled attribute
 
 |Value|Description|
 |-----------|-----------------|
 |`false`|Doesn't run garbage collection concurrently.|
 |`true`|Runs garbage collection concurrently. This is the default.|
 
-### Child elements
+## Child elements
 
 None.
 
-### Parent elements
+## Parent elements
 
 |Element|Description|
 |-------------|-----------------|
-|`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
-|`runtime`|Contains information about assembly binding and garbage collection.|
+|[configuration](configuration-element.md)|The root element in every configuration file used by the common language runtime and .NET Framework applications.|
+|[runtime](runtime-element.md)|Contains information about assembly binding and garbage collection.|
 
 ## Remarks
 

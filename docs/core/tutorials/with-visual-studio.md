@@ -4,6 +4,9 @@ description: Learn how to create your first .NET Core console application with C
 author: BillWagner
 ms.author: wiwagn
 ms.date: 12/03/2019
+dev_langs:
+ - CSharp
+ - VB
 ms.custom: "vs-dotnet, seodec18"
 ---
 # Tutorial: Create your first .NET Core console application in Visual Studio 2019
@@ -20,44 +23,46 @@ For more information, see the [Install with Visual Studio](../install/sdk.md?piv
 
 The following instructions create a simple Hello World console application:
 
-1. Open Visual Studio 2019.
-
 <!-- markdownlint-disable MD025 -->
 
 # [C#](#tab/csharp)
+
+1. Open Visual Studio 2019.
 
 1. Create a new C# .NET Core console app project named "HelloWorld".
 
    1. On the start window, choose **Create a new project**.
 
-      ![Create a new project button selected on the Visual Studio start window](./media/with-visual-studio/start-window.png)
+      ![Create a new project button selected on the Visual Studio start window](media/with-visual-studio/start-window.png)
 
    1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** from the Language list, and then choose **Windows** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
 
-      ![Create a new project window with filters selected](./media/with-visual-studio/create-new-project.png)
+      ![Create a new project window with filters selected](media/with-visual-studio/create-new-project.png)
 
       > [!TIP]
       > If you don't see the .NET Core templates, you're probably missing the required workload installed. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET Core cross-platform development** workload installed.
 
    1. On the **Configure your new project** page,  enter **HelloWorld** in the **Project name** box. Then, choose **Create**.
 
-      ![Configure your new project window with Project name, location, and solution name fields](./media/with-visual-studio/configure-new-project.png)
+      ![Configure your new project window with Project name, location, and solution name fields](media/with-visual-studio/configure-new-project.png)
 
    The C# Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-   ![Visual Studio and the new HelloWorld project](./media/with-visual-studio/visual-studio-main-window.png)
+   ![Visual Studio and the new HelloWorld project](media/with-visual-studio/visual-studio-main-window.png)
 
 # [Visual Basic](#tab/vb)
+
+1. Open Visual Studio 2019.
 
 1. Create a new Visual Basic .NET Core console app project named "HelloWorld".
 
    1. On the start window, choose **Create a new project**.
 
-      ![Create a new project button selected on the Visual Studio start window](./media/with-visual-studio/start-window.png)
+      ![Create a new project button selected on the Visual Studio start window](media/with-visual-studio/start-window.png)
 
    1. On the **Create a new project** page, enter **console** in the search box. Next, choose **Visual Basic** from the Language list, and then choose **Windows** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
 
-      ![Choose the Visual Basic template for the Console App (.NET Framework)](media/vb-with-visual-studio/vb-create-new-project-search-console-net-core-filtered.png)
+      ![Choose the Visual Basic template for the Console App (.NET Framework)](media/with-visual-studio/vb/create-new-project.png)
 
       > [!TIP]
       > If you don't see the .NET Core templates, you're probably missing the required workload installed. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET Core cross-platform development** workload installed.
@@ -88,31 +93,12 @@ The following instructions create a simple Hello World console application:
 
 Enhance your application to prompt the user for their name and display it along with the date and time. The following instructions modify and run the app again:
 
-# [C#](#tab/csharp)
-
-1. Enter the following C# code in the code window immediately after the opening bracket that follows the `static void Main(string[] args)` line and before the first closing curly bracket:
+1. Replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:
 
    [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
-
-   This code replaces the contents of the `Main` method.
-
-   ![Visual Studio Program C# file with updated Main method](./media/with-visual-studio/visual-csharp-code-window.png)
-
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../csharp/language-reference/tokens/interpolated.md) to display these values in the console window.
-
-# [Visual Basic](#tab/vb)
-
-1. Enter the following Visual Basic code in the code window immediately after the opening bracket that follows the `Sub Main(args As String())` line and before the first closing bracket:
-
    [!code-vb[GettingStarted#1](../../../samples/snippets/core/tutorials/vb-with-visual-studio/helloworld.vb#1)]
 
-   This code replaces the contents of the `Main` method.
-
-   ![Visual Studio Program file with updated Main method](media/vb-with-visual-studio/visual-basic-code-window.png)
-
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. Finally, it uses an [interpolated string](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) to display these values in the console window.
-
----
+   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../csharp/language-reference/tokens/interpolated.md) to display these values in the console window.
 
 1. Compile the program by choosing **Build** > **Build Solution**.
 

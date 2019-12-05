@@ -37,4 +37,3 @@ The topics in this section document the Visual Basic source code compiler direct
 
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
   
- [Visual Basic](../../../visual-basic/index.md)

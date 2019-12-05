@@ -28,4 +28,3 @@ ms.assetid: 3d3421df-fcc5-4888-9249-d78f16774ce6
 ## Related sections
 
 - [Visual Basic language reference](../index.md)
-- [Visual Basic](../../index.md)

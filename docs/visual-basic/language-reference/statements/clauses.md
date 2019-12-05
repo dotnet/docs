@@ -25,5 +25,3 @@ The topics in this section document Visual Basic run-time clauses.
   
 ## Related Sections  
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
-  
- [Visual Basic](../../../visual-basic/index.md)

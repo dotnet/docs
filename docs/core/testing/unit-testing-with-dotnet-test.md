@@ -3,7 +3,7 @@ title: Unit testing C# code in .NET Core using dotnet test and xUnit
 description: Learn unit test concepts in C# and .NET Core through an interactive experience building a sample solution step-by-step using dotnet test and xUnit.
 author: ardalis
 ms.author: wiwagn
-ms.date: 11/29/2017
+ms.date: 12/04/2019
 ms.custom: "seodec18"
 ---
 # Unit testing C# in .NET Core using dotnet test and xUnit

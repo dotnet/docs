@@ -3,7 +3,7 @@ title: Developing ASP.NET Core MVC apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 01/30/2019
+ms.date: 12/4/2019
 ---
 # Develop ASP.NET Core MVC apps
 
@@ -39,7 +39,7 @@ ASP.NET Core MVC apps can use conventional routes, attribute routes, or both. Co
 ```csharp
 app.UseMvc(routes =>
 {
-    routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
+    routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}"); TODO: update to UseEndpoint
 });
 ```
 
@@ -123,9 +123,9 @@ public class Startup
     public Startup(IHostingEnvironment env)
     {
         var builder = new ConfigurationBuilder()
-        .SetBasePath(env.ContentRootPath)
-        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+            .SetBasePath(env.ContentRootPath)
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
     }
 }
 ```
@@ -146,7 +146,7 @@ public void Configure(IApplicationBuilder app,
 The ConfigureServices method is the exception to this behavior; it must take just one parameter of type IServiceCollection. It doesn't really need to support dependency injection, since on the one hand it is responsible for adding objects to the services container, and on the other it has access to all currently configured services via the IServiceCollection parameter. Thus, you can work with dependencies defined in the ASP.NET Core services collection in every part of the Startup class, either by requesting the needed service as a parameter or by working with the IServiceCollection in ConfigureServices.
 
 > [!NOTE]
-> If you need to ensure certain services are available to your Startup class, you can configure them using WebHostBuilder and its ConfigureServices method.
+> If you need to ensure certain services are available to your Startup class, you can configure them using WebHostBuilder and its ConfigureServices method. TODO: Change to HostBuilder for 3.x
 
 The Startup class is a model for how you should structure other parts of your ASP.NET Core application, from Controllers to Middleware to Filters to your own Services. In each case, you should follow the [Explicit Dependencies Principle](https://deviq.com/explicit-dependencies-principle/), requesting your dependencies rather than directly creating them, and leveraging dependency injection throughout your application. Be careful of where and how you directly instantiate implementations, especially services and objects that work with infrastructure or have side effects. Prefer working with abstractions defined in your application core and passed in as arguments to hardcoding references to specific implementation types.
 
@@ -183,7 +183,7 @@ public class HomeController
 ```
 
 You also need to add area support to your routes:
-
+TODO: Change to UseEndpoints
 ```csharp
 app.UseMvc(routes =>
 {
@@ -328,6 +328,7 @@ ASP.NET Core Identity is a membership system you can use to support login functi
 
 ASP.NET Core Identity is included in new project templates if the Individual User Accounts option is selected. This template includes support for registration, login, external logins, forgotten passwords, and additional functionality.
 
+TODO: Update Screenshot to use VS2019 and 3.x
 ![Select Individual User Accounts to have Identity preconfigured](./media/image7-3.png)
 
 **Figure 7-3**. Select Individual User Accounts to have Identity preconfigured.
@@ -358,6 +359,7 @@ public void Configure(IApplicationBuilder app)
     });
 }
 ```
+TODO: Change UseMvc to UseEndpoints
 
 It's important that UseIdentity appear before UseMvc in the Configure method. When configuring Identity in ConfigureServices, you'll notice a call to AddDefaultTokenProviders. This has nothing to do with tokens that may be used to secure web communications, but instead refers to providers that create prompts that can be sent to users via SMS or email in order for them to confirm their identity.
 
@@ -438,8 +440,6 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 ## Client communication
 
 In addition to serving pages and responding to requests for data via web APIs, ASP.NET Core apps can communicate directly with connected clients. This outbound communication can use a variety of transport technologies, the most common being WebSockets. ASP.NET Core SignalR is a library that makes it simple to add real-time server-to-client communication functionality to your applications. SignalR supports a variety of transport technologies, including WebSockets, and abstracts away many of the implementation details from the developer.
-
-ASP.NET Core SignalR has been available with ASP.NET Core since version 2.1.
 
 Real-time client communication, whether using WebSockets directly or other techniques, are useful in a variety of application scenarios. Some examples include:
 
@@ -553,7 +553,7 @@ There are a few steps involved in the process of deploying your ASP.NET Core app
 
 ASP.NET Core applications are console applications that must be started when the server boots and restarted if the application (or server) crashes. A process manager can be used to automate this process. The most common process managers for ASP.NET Core are Nginx and Apache on Linux and IIS or Windows Service on Windows.
 
-In addition to a process manager, ASP.NET Core applications hosted in the Kestrel web server must use a reverse proxy server. A reverse proxy server receives HTTP requests from the internet and forwards them to Kestrel after some preliminary handling. Reverse proxy servers provide a layer of security for the application, and are required for edge deployments (exposed to traffic from the Internet). Kestrel is relatively new and does not yet offer defenses against certain attacks. Kestrel also doesn't support hosting multiple applications on the same port, so techniques like host headers cannot be used with it to enable hosting multiple applications on the same port and IP address.
+In addition to a process manager, ASP.NET Core applications may use a reverse proxy server. A reverse proxy server receives HTTP requests from the Internet and forwards them to Kestrel after some preliminary handling. Reverse proxy servers provide a layer of security for the application. Kestrel also doesn't support hosting multiple applications on the same port, so techniques like host headers cannot be used with it to enable hosting multiple applications on the same port and IP address.
 
 ![Kestrel to Internet](./media/image7-5.png)
 

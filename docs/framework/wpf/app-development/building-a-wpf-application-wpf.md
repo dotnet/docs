@@ -1,5 +1,5 @@
 ---
-title: "Building a WPF Application (WPF)"
+title: "Building a WPF Application"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

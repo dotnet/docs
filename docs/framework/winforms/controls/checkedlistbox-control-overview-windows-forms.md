@@ -1,5 +1,5 @@
 ---
-title: "CheckedListBox Control Overview (Windows Forms)"
+title: "CheckedListBox Control Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "CheckedListBox"

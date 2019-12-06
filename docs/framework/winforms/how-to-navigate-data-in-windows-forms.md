@@ -1,5 +1,5 @@
 ---
-title: "How to: Navigate Data in Windows Forms"
+title: "How to: Navigate Data"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

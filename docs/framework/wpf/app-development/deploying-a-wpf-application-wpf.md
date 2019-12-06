@@ -1,5 +1,5 @@
 ---
-title: "Deploying a WPF Application (WPF)"
+title: "Deploying a WPF Application"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WPF applications [WPF], deployment"

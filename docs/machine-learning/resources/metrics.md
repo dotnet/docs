@@ -88,3 +88,11 @@ For further details on regression metrics, read the following articles:
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
 |**Discounted Cumulative Gains**|Discounted cumulative gain (DCG) is a measure of ranking quality. It is derived from two assumptions. One: Highly relevant items are more useful when appearing higher in ranking order. Two: usefulness tracks relevance i.e. the higher the relevance, the more useful an item. Discounted cumulative gain is calculated for a particular position in the ranking order. It sums the relevance grading divided by the logarithm of the ranking index up to the the position of interest. $\sum_{i=0}^{p} \frac {rel_i} {\log_{e}{i+1}}$ Relevance gradings are provided to a ranking training algorithm as ground truth labels.|Higher values are better|
+|**Normalized Discounted Cumulative Gains**|Normalizing DCG allows the metric to be compared for ranking lists of different lengths|**Values closer to 1 are better**|
+
+## Metrics for Anomaly detection
+
+| Metric   |      Description      |  Look for |
+|----------|-----------------------|-----------|
+|**Area Under Roc Curve**|Area under the receiver operator curve measures how well the model separates anomalous and usual data points.|**Values closer to 1 are better**. Only values greater than 0.5 demonstrate effectiveness of the model. Values of 0.5 or below indicate that the model is no better than randomly allocating the inputs to anomalous and usual categories|
+|**Detection Rate At False Positive Count**|Detection rate at false positive count is the ratio of the number of correctly identified anomalies to the total number of anomalies in a test set, indexed by each false positive. That is, there is a value for detection rate at false positive count for each false positive item.|**Values closer to 1 are better**. If there are no false positives then this value is 1|

@@ -45,7 +45,7 @@ You can get started developing .NET Core applications by following these step-by
 - [Build a class library with Visual Basic and .NET Core in Visual Studio 2017.](./tutorials/vb-library-with-visual-studio.md)  
 - Watch a video on [how to install and use Visual Studio Code and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core/).
 - Watch a video on [how to install and use Visual Studio 2017 and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-Started-NET-Core-Visual-Studio-2017/).
-- [Getting started with .NET Core using the command-line.](tutorials/using-with-xplat-cli.md)
+- [Getting started with .NET Core using the command-line.](tutorials/cli-create-console-app.md)
 
 See the [.NET Core dependencies and requirements](install/dependencies.md?tabs=netcore30&pivots=os-windows) article for a list of the supported Windows versions.
 
@@ -53,7 +53,7 @@ See the [.NET Core dependencies and requirements](install/dependencies.md?tabs=n
 
 You can get started developing .NET Core application by following these step-by-step tutorials:
 
-- [Getting started with .NET Core using the command-line.](tutorials/using-with-xplat-cli.md)
+- [Getting started with .NET Core using the command-line.](tutorials/cli-create-console-app.md)
 - Watch a video on [getting started with Visual Studio Code using C# and .NET Core on Ubuntu](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
 
 See the [.NET Core dependencies and requirements](install/dependencies.md?tabs=netcore30&pivots=os-linux) article for a list of the supported Linux distros and versions.
@@ -64,7 +64,7 @@ You can get started developing .NET Core application by following these step-by-
 
 - Watch a video on [Getting started with Visual Studio Code using C# and .NET Core on macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-VSCode-NET-Core-Mac).
 - [Getting started with .NET Core on macOS, using Visual Studio Code.](tutorials/using-on-macos.md)
-- [Getting started with .NET Core using the command-line.](tutorials/using-with-xplat-cli.md)
+- [Getting started with .NET Core using the command-line.](tutorials/cli-create-console-app.md)
 - [Getting started with .NET Core on macOS using Visual Studio for Mac.](tutorials/using-on-mac-vs.md)
 - [Build a complete .NET Core solution on macOS using Visual Studio for Mac.](tutorials/using-on-mac-vs-full-solution.md)
 

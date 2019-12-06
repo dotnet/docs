@@ -28,7 +28,7 @@ The following instructions create a simple Hello World console application:
 
 1. On the **Create a new project** window, select the following filters:
 
-   - **C#** in the **All Languages** dropdown. 
+   - **C#** in the **All Languages** dropdown.
    - **Console** in the **All Project Types** dropdown.
 
    After the filters are applied, choose the **Console App (.NET Core)** template and choose **Next**.
@@ -36,7 +36,7 @@ The following instructions create a simple Hello World console application:
    ![Create a new project window with filters selected](./media/with-visual-studio/create-new-project.png)
 
    > [!TIP]
-   > If you don't see the .NET Core templates, you're probably missing the required workload installed. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. 
+   > If you don't see the .NET Core templates, you're probably missing the required workload installed. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens.
    > Make sure you have the ".NET Core cross-platform development" workload installed.
 
 1. On the **Configure your new project** window, type "HelloWorld" in the **Project name** and choose **Create**.
@@ -77,7 +77,7 @@ Enhance your application to prompt the user for their name and display it along 
 
 1. Compile the program by choosing **Build** > **Build Solution**.
 
-1. Choose **HelloWorld** on the toolbar to run your program, or press **F5**. 
+1. Choose **HelloWorld** on the toolbar to run your program, or press **F5**.
 
 1. Respond to the prompt by entering a name and pressing the Enter key.
 

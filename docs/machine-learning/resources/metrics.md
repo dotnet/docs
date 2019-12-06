@@ -1,10 +1,24 @@
 ---
 title: ML.NET metrics
 description: Understand the metrics that are used to evaluate the performance of an ML.NET model
-ms.date: 04/29/2019
+ms.date: 12/03/2019
 author: natke
+ms.author: nakersha
+
 ---
-# Model evaluation metrics in ML.NET
+# Evaluate your ML.NET model with metrics
+
+Understand the metrics used to evaluate the performance of different types of ML.NET models.
+
+Evaluation metrics are specific to the type of machine learning task that a model performs.
+
+For example, for the classification task, the model is evaluated by measuring how well a predicted categories matches the actual category. And for clustering, evaluation is based on how many items are placed into the c
+
+- Recommendation metrics
+- Clustering metrics
+- Ranking metrics
+- Anomaly detection metrics
+- Image classification metrics?
 
 ## Metrics for Binary Classification
 
@@ -46,8 +60,8 @@ For further details on multi-class classification metrics read the following art
 
 ## Metrics for Regression
 
-| Metrics   |      Description      |  Look for |
-|-----------|-----------------------|-----------|
+| Metric   |      Description      |  Look for |
+|----------|-----------------------|-----------|
 | **R-Squared** |  [R-squared (R2)](https://en.wikipedia.org/wiki/Coefficient_of_determination), or *Coefficient of determination* represents the predictive power of the model as a value between -inf and 1.00. 1.00 means there is a perfect fit, and the fit can be arbitrarily poor so the scores can be negative. A score of 0.00 means the model is guessing the expected value for the label. R2 measures how close the actual test data values are to the predicted values. | **The closer to 1.00, the better quality**. However, sometimes low R-squared values (such as 0.50) can be entirely normal or good enough for your scenario and high R-squared values are not always good and be suspicious. |
 | **Absolute-loss** |  [Absolute-loss](https://en.wikipedia.org/wiki/Mean_absolute_error) or *Mean absolute error (MAE)* measures how close the predictions are to the actual outcomes. It is the average of all the model errors, where model error is the absolute distance between the predicted label value and the correct label value. This prediction error is calculated for each record of the test data set. Finally, the mean value is calculated for all recorded absolute errors.| **The closer to 0.00, the better quality.** Note that the mean absolute error uses the same scale as the data being measured (is not normalized to specific range). Absolute-loss, Squared-loss, and RMS-loss can only be used to make comparisons between models for the same dataset or dataset with a similar label value distribution. |
 | **Squared-loss** |  [Squared-loss](https://en.wikipedia.org/wiki/Mean_squared_error) or *Mean Squared Error (MSE)*, also called *Mean Squared Deviation (MSD)*, tells you how close a regression line is to a set of test data values. It does this by taking the distances from the points to the regression line (these distances are the errors E) and squaring them. The squaring gives more weight to larger differences. | It is always non-negative, and **values closer to 0.00 are better**. Depending on your data, it may be impossible to get a very small value for the mean squared error.|
@@ -60,3 +74,17 @@ For further details on regression metrics, read the following articles:
 - [R-Squared Definition](https://www.investopedia.com/terms/r/r-squared.asp)
 - [Mean Squared Error Definition](https://www.statisticshowto.datasciencecentral.com/mean-squared-error/)
 - [What are Mean Squared Error and Root Mean Squared Error?](https://www.vernier.com/til/1014/)
+
+## Metrics for clustering
+
+| Metric   |      Description      |  Look for |
+|----------|-----------------------|-----------|
+|**Average Distance**|Average of the distance between data points and the center of their assigned cluster. The average distance is a measure of proximity of the data points to cluster centroids. It's a measure of how 'tight' the cluster is.|Values closer to **0** are better. The closer to zero the average distance is, the more clustered the data is. Note though, that this metric will decrease if the number of clusters is increased, and in the extreme case (where each distinct data point is its own cluster) it will be equal to zero.
+|**Davies Bouldin Index**|The average ratio of within-cluster distances to between-cluster distances. The tighter the cluster, and the further apart the clusters are, the lower this value is.|Values closer to **0** are better. Clusters that are farther apart and less dispersed will result in a better score.|
+|**Normalized Mutual Information**|Can be used when the training data used to train the clustering model also comes with with ground truth labels (i.e. supervised clustering). The Normalized Mutual Information metric measures whether similar data points get assigned to the same cluster and disparate data points get assigned to different clusters. Normalized mutual information is a value between 0 and 1|Values closer to **1** are better|
+
+## Metrics for ranking
+
+| Metric   |      Description      |  Look for |
+|----------|-----------------------|-----------|
+|**Discounted Cumulative Gains**|Discounted cumulative gain (DCG) is a measure of ranking quality. It is derived from two assumptions. One: Highly relevant items are more useful when appearing higher in ranking order. Two: usefulness tracks relevance i.e. the higher the relevance, the more useful an item. Discounted cumulative gain is calculated for a particular position in the ranking order. It sums the relevance grading divided by the logarithm of the ranking index up to the the position of interest. $\sum_{i=0}^{p} \frac {rel_i} {\log_{e}{i+1}}$ Relevance gradings are provided to a ranking training algorithm as ground truth labels.|Higher values are better|

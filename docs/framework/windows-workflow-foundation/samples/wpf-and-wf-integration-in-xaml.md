@@ -20,7 +20,7 @@ This sample demonstrates how to create an application that uses Windows Presenta
 > [!NOTE]
 > The default designer does not support the ShowWindow activity; as such, the ShowWindow.Xaml file does not display correctly in the designer.
 
-### Run the sample
+## Run the sample
 
 1. Using Visual Studio, open the WPFWFIntegration.sln solution file.
 

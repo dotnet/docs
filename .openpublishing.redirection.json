@@ -161,15 +161,15 @@
         },
         {
             "source_path": "docs/core/linux-prerequisites.md",
-            "redirect_url": "/dotnet/core/install/dependencies"
+            "redirect_url": "/dotnet/core/install/dependencies?pivots=os-linux"
         },
         {
               "source_path": "docs/core/macos-prerequisites.md",
-              "redirect_url": "/dotnet/core/install/dependencies"
+              "redirect_url": "/dotnet/core/install/dependencies?pivots=os-macos"
         },
         {
             "source_path": "docs/core/windows-prerequisites.md",
-            "redirect_url": "/dotnet/core/install/dependencies",
+            "redirect_url": "/dotnet/core/install/dependencies?pivots=os-windows",
             "redirect_document_id": true
         },
         {
@@ -333,7 +333,7 @@
         },
         {
             "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md",
-            "redirect_url": "/dotnet/core/tutorials/using-with-xplat-cli",
+            "redirect_url": "/dotnet/core/tutorials/cli-create-console-app",
             "redirect_document_id": true
         },
         {
@@ -376,6 +376,10 @@
         {
             "source_path": "docs/core/tutorials/using-on-windows-full-solution.md",
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+          "source_path": "docs/core/tutorials/using-with-xplat-cli.md",
+          "redirect_url": "/dotnet/core/tutorials/cli-create-console-app"
         },
         {
             "source_path": "docs/core/versions/install-management.md",

@@ -55,7 +55,7 @@ Language compilers and tools expose the runtime's functionality in ways that are
 - Use of delegates instead of function pointers for increased type safety and security. For more information about delegates, see [Common Type System](../../docs/standard/base-types/common-type-system.md).
 ## CLR versions	
 
-The .NET Framework version number doesn't necessarily correspond to the version number of the CLR it includes. For a list of .NET Framework versions and their corresponding CLR versions, see [.NET Framework versions and dependencies](../../framework/migration-guide/versions-and-dependencies.md). .NET Core releases have a single product version, that is, there is no separate CLR version. For a list of .NET Core versions, see [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
+The .NET Framework version number doesn't necessarily correspond to the version number of the CLR it includes. For a list of .NET Framework versions and their corresponding CLR versions, see [.NET Framework versions and dependencies](../framework/migration-guide/versions-and-dependencies.md). .NET Core releases have a single product version, that is, there is no separate CLR version. For a list of .NET Core versions, see [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
 ## Related topics
 
 |Title|Description|
@@ -64,7 +64,3 @@ The .NET Framework version number doesn't necessarily correspond to the version 
 |[Automatic Memory Management](automatic-memory-management.md)|Describes how the garbage collector allocates and releases memory.|
 |[Overview of the .NET Framework](../framework/get-started/overview.md)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|
 |[Common Type System](./base-types/common-type-system.md)|Describes how types are declared, used, and managed in the runtime in support of cross-language integration.|
-
-## See also
-
-- [Versions and Dependencies](../framework/migration-guide/versions-and-dependencies.md)

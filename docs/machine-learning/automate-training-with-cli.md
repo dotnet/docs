@@ -80,7 +80,7 @@ The following displays the multi-class classification ML task metrics list for t
 
 ![image](media/automate-training-with-cli/cli-multiclass-classification-metrics.png)
 
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for multiclass classification](resources/evaluation-metrics.md#metrics-for-multi-class-classification).
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for multiclass classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification).
 
 ### Metrics for Regression models
 
@@ -90,7 +90,7 @@ You will see a similar list of metrics for the best top five quality models foun
 
 ![image](media/automate-training-with-cli/cli-regression-metrics.png)
 
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for regression](resources/evaluation-metrics.md#metrics-for-regression).
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for regression](resources/metrics.md#evaluation-metrics-for-regression).
 
 ## See also
 

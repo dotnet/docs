@@ -120,7 +120,36 @@ Implementing CQRS can improve application performance for cloud-native services.
 
 ## Event Sourcing
 
-Blah, blah, blah
+Another approach to storing data involved [Event Sourcing](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing).
+
+In a normal database transaction, we store the current state of a data entity. If you change your phone number, for example, your customer record is updated with the new number. In high volume systems, the overhead from frequent update operations can impact database performance, responsiveness, and limit scalability. As well, if there is not an audit mechanism, you lose your history.
+
+With Event Sourcing, we take a different approach to capturing data. Each data operation triggers an event which is recorded in an event store, constructing a sequence of actions applied to each data entity. Each event is immutable (cannot be changed) and stored using an append-only operation. The Event Store becomes the system of record and can be used to create a materialized views of data items for a microservice. Events can be replayed to create a projection of the current state for each data item. For example, the Shopping Basket microservice could maintain a materialized view for each customer as shown in Figure 5.7 below.
+
+![Event Sourcing](./media/event-sourcing.png)
+
+**Figure 5-7**. Event Sourcing
+
+Note in the figure above how each entry for a user's shopping cart is appended as an event to the Event Store. Then, the events for each shopping cart are replayed to project the current state of the shopping basket in the materialized view, which is then exposed back to the UI.
+
+
+
+of each order, by replaying all events associated with the order.   
+
+In addition, at any point it's possible for applications to read the history of events, and use it to materialize the current state of an entity by playing back and consuming all the events related to that entity. This can occur on demand to materialize a domain object when handling a request, or through a scheduled task so that the state of the entity can be stored as a materialized view to support the presentation layer.
+
+
+
+We typically use a database specifically made for event sourcing, such as Event Store, or a document-oriented database. Options include Azure Cosmos DB, MongoDB, Cassandra, CouchDB, or RavenDB. 
+
+
+
+
+Instead of storing the current state of a data entity, each event that pertains to a data item is appended to store to record the full series of action taken on the data.
+
+End with complexity of Event Sourcing.
+
+lah, blah, blah
 
 >[!div class="step-by-step"]
 >[Previous](service-mesh-communication-infrastructure.md)

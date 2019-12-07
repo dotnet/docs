@@ -8,19 +8,13 @@ ms.author: nakersha
 ---
 # Evaluate your ML.NET model with metrics
 
-Understand the metrics used to evaluate the performance of different types of ML.NET models.
+Understand the performance metrics used to evaluate an ML.NET model.
 
 Evaluation metrics are specific to the type of machine learning task that a model performs.
 
-For example, for the classification task, the model is evaluated by measuring how well a predicted categories matches the actual category. And for clustering, evaluation is based on how many items are placed into the c
+For example, for the classification task, the model is evaluated by measuring how well a predicted categories matches the actual category. And for clustering, evaluation is based how close together items are, and how much separation there is between the clusters.
 
-- Recommendation metrics
-- Clustering metrics
-- Ranking metrics
-- Anomaly detection metrics
-- Image classification metrics?
-
-## Metrics for Binary Classification
+## Evaluation metrics for Binary Classification
 
 | Metrics   |      Description      |  Look for |
 |-----------|-----------------------|-----------|
@@ -35,7 +29,7 @@ For further details on binary classification metrics read the following articles
 - [Binary Classification Metrics class](xref:Microsoft.ML.Data.BinaryClassificationMetrics)
 - [The Relationship Between Precision-Recall and ROC Curves](http://pages.cs.wisc.edu/~jdavis/davisgoadrichcamera2.pdf)
 
-## Metrics for Multi-class Classification
+## Evaluation metrics for Multi-class Classification
 
 | Metrics   |      Description      |  Look for |
 |-----------|-----------------------|-----------|
@@ -58,7 +52,7 @@ For further details on multi-class classification metrics read the following art
 - [Micro- and Macro-average of Precision, Recall and F-Score](https://rushdishams.blogspot.com/2011/08/micro-and-macro-average-of-precision.html)
 - [Multiclass Classification with Imbalanced Dataset](https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a)
 
-## Metrics for Regression
+## Evaluation metrics for Regression
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
@@ -75,7 +69,7 @@ For further details on regression metrics, read the following articles:
 - [Mean Squared Error Definition](https://www.statisticshowto.datasciencecentral.com/mean-squared-error/)
 - [What are Mean Squared Error and Root Mean Squared Error?](https://www.vernier.com/til/1014/)
 
-## Metrics for clustering
+## Evaluation metrics for Clustering
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
@@ -83,16 +77,20 @@ For further details on regression metrics, read the following articles:
 |**Davies Bouldin Index**|The average ratio of within-cluster distances to between-cluster distances. The tighter the cluster, and the further apart the clusters are, the lower this value is.|Values closer to **0** are better. Clusters that are farther apart and less dispersed will result in a better score.|
 |**Normalized Mutual Information**|Can be used when the training data used to train the clustering model also comes with with ground truth labels (i.e. supervised clustering). The Normalized Mutual Information metric measures whether similar data points get assigned to the same cluster and disparate data points get assigned to different clusters. Normalized mutual information is a value between 0 and 1|Values closer to **1** are better|
 
-## Metrics for ranking
+## Evaluation metrics for Ranking
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
-|**Discounted Cumulative Gains**|Discounted cumulative gain (DCG) is a measure of ranking quality. It is derived from two assumptions. One: Highly relevant items are more useful when appearing higher in ranking order. Two: usefulness tracks relevance i.e. the higher the relevance, the more useful an item. Discounted cumulative gain is calculated for a particular position in the ranking order. It sums the relevance grading divided by the logarithm of the ranking index up to the the position of interest. $\sum_{i=0}^{p} \frac {rel_i} {\log_{e}{i+1}}$ Relevance gradings are provided to a ranking training algorithm as ground truth labels.|Higher values are better|
+|**Discounted Cumulative Gains**|Discounted cumulative gain (DCG) is a measure of ranking quality. It is derived from two assumptions. One: Highly relevant items are more useful when appearing higher in ranking order. Two: usefulness tracks relevance i.e. the higher the relevance, the more useful an item. Discounted cumulative gain is calculated for a particular position in the ranking order. It sums the relevance grading divided by the logarithm of the ranking index up to the the position of interest. It is calculated using $\sum_{i=0}^{p} \frac {rel_i} {\log_{e}{i+1}}$ Relevance gradings are provided to a ranking training algorithm as ground truth labels.|**Higher values are better**|
 |**Normalized Discounted Cumulative Gains**|Normalizing DCG allows the metric to be compared for ranking lists of different lengths|**Values closer to 1 are better**|
 
-## Metrics for Anomaly detection
+## Evaluation metrics for Anomaly Detection
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
 |**Area Under Roc Curve**|Area under the receiver operator curve measures how well the model separates anomalous and usual data points.|**Values closer to 1 are better**. Only values greater than 0.5 demonstrate effectiveness of the model. Values of 0.5 or below indicate that the model is no better than randomly allocating the inputs to anomalous and usual categories|
 |**Detection Rate At False Positive Count**|Detection rate at false positive count is the ratio of the number of correctly identified anomalies to the total number of anomalies in a test set, indexed by each false positive. That is, there is a value for detection rate at false positive count for each false positive item.|**Values closer to 1 are better**. If there are no false positives then this value is 1|
+
+## Evaluation metrics for Recommender models
+
+

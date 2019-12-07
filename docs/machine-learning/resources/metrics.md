@@ -12,7 +12,7 @@ Understand the performance metrics used to evaluate an ML.NET model.
 
 Evaluation metrics are specific to the type of machine learning task that a model performs.
 
-For example, for the classification task, the model is evaluated by measuring how well a predicted categories matches the actual category. And for clustering, evaluation is based how close together items are, and how much separation there is between the clusters.
+For example, for the classification task, the model is evaluated by measuring how well a predicted categories matches the actual category. And for clustering, evaluation is based on how close clustered items are to each other, and how much separation there is between the clusters.
 
 ## Evaluation metrics for Binary Classification
 

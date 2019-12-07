@@ -18,7 +18,7 @@ The following procedure requires a **Windows Application** project with a form c
 To enable grouping, you must first create one or more <xref:System.Windows.Forms.ListViewGroup> objects either in the designer or programmatically. Once a group has been defined, you can assign items to it.
 
 > [!NOTE]
-> <xref:System.Windows.Forms.ListView> groups are available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to groups has no effect and the groups will not appear. For more information, see <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType>.
+> <xref:System.Windows.Forms.ListView> groups are available only on Windows XP Home Edition, Windows XP Professional, Windows Server 2003 when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to groups has no effect and the groups will not appear. For more information, see <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=nameWithType>.
 
 ## To add or remove groups in the designer
 

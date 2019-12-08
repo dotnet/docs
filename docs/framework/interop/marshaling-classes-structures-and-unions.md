@@ -27,7 +27,7 @@ The following table lists marshaling options for classes, structures, and unions
 
 |Type|Description|Sample|
 |----------|-----------------|------------|
-|Class by value.|Passes a class with integer members as an In/Out parameter, like the managed case.|[SysTime sample](#systime-sample]|
+|Class by value.|Passes a class with integer members as an In/Out parameter, like the managed case.|[SysTime sample](#systime-sample)|
 |Structure by value.|Passes structures as In parameters.|[Structures sample](#structures-sample)|
 |Structure by reference.|Passes structures as In/Out parameters.|OSInfo sample|
 |Structure with nested structures (flattened).|Passes a class that represents a structure with nested structures in the unmanaged function. The structure is flattened to one big structure in the managed prototype.|[FindFile sample](#findfile-sample)|

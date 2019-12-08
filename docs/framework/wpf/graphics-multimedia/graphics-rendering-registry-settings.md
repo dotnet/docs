@@ -51,7 +51,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
 |------------------|----------------|  
 |`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics\MaxMultisampleType`|DWORD|  
   
- The **maximum multisample value** enables you to adjust the maximum amount of antialiasing of 3-D content. Use this level to disable 3-D antialiasing in Windows Vista or enable it in Microsoft Windows XP.  
+ The **maximum multisample value** enables you to adjust the maximum amount of antialiasing of 3-D content. Use this level to disable 3-D antialiasing in Windows Vista.  
   
  The **maximum multisample value** is a DWORD value that ranges from 0 to 16. A value of 0 specifies that multisample antialiasing of 3-D content should be disabled, and a value of 16 will attempt to use up to 16x multisample antialiasing, if supported by the video card. Beware that setting this registry key value on computers using XPDM drivers will cause applications to use a large amount of additional video memory, decrease the performance of 3-D rendering, and has the potential to introduce rendering errors and stability problems.  
   

@@ -2,7 +2,7 @@
 title: Data storage in Azure
 description: Learn about data storage options in Azure for cloud-native applications.
 author: robvet
-ms.date: 11/06/2019
+ms.date: 12/08/2019
 ---
 # Data storage in Azure
 
@@ -225,6 +225,8 @@ In this module, we took a detailed look at data in cloud-native systems. We cont
 ### References
 
 - [Command and Query Responsibility Segregation (CQRS) pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
+
+- [Event Sourcing pattern](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
 
 - [RDBMSs vs. NoSQL Databases: Overview](https://maxivak.com/rdbms-vs-nosql-databases/)
 

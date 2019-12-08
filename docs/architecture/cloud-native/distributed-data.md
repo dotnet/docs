@@ -72,11 +72,11 @@ Instead, a widely accepted pattern for removing cross-service dependencies is th
 
 With this pattern, you place a local data table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data needed from the product and pricing microservices. Copying the data directly into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve the service's response time and reliability. Additionally, having its own copy of the data makes the shopping basket service more resilient. If the catalog service should become unavailable, it wouldn't directly impact the shopping basket service. The shopping basket can continue operating with the data from its own store. 
 
-The catch with this approach is that you now have duplicate data in your system. However, *strategically* duplicating data in cloud-native systems is an established practice and not considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern). Keep in mind that *one and only one service* can own a dataset and have authority over it. You'll need to synchronize the read models when the system of record is updated. Synchronization is typically implemented via asynchronous messaging with a [publish/subscribe pattern](./service-to-service-communication.md#events), also shown above in Figure 5.5
+The catch with this approach is that you now have duplicate data in your system. However, *strategically* duplicating data in cloud-native systems is an established practice and not considered an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern). Keep in mind that *one and only one service* can own a data set and have authority over it. You'll need to synchronize the read models when the system of record is updated. Synchronization is typically implemented via asynchronous messaging with a [publish/subscribe pattern](./service-to-service-communication.md#events), also shown above in Figure 5.5
 
 ## Distributed transactions
 
-While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency across independent data sources in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage distributed transactions programmatically. You move from a world of *immediate consistency* to that of *eventual consistency*. 
+While querying data across microservices is difficult, implementing a transaction across several microservices is even more complex. The inherent challenge of maintaining data consistency across independent data sources in different microservices can't be understated. The lack of distributed transactions in cloud-native applications means that you must manage distributed transactions programmatically. You move from a world of *immediate consistency* to that of *eventual consistency*.
 
 Figure 5-5 shows the problem.
 
@@ -86,7 +86,7 @@ Figure 5-5 shows the problem.
 
 In the preceding figure, five independent microservices participate in a distributed transaction that creates an order. Each microservice maintains its own data store and implements a local transaction for its store. To create the order, the local transaction for *each* individual microservice must succeed, or *all* must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction that would span across all five services to keep data consistent.
 
-Instead, you must construct this distributed transaction *programmatically*. 
+Instead, you must construct this distributed transaction *programmatically*.
 
 A popular pattern for adding distributed transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together programmatically and sequentially invoking each one. If any of the local transactions fail, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction). The compensating transactions undo the changes made by the preceding local transactions and restore data consistency. Figure 5-6 shows a failed transaction with the Saga pattern.
 
@@ -100,11 +100,11 @@ Saga patterns are typically choreographed as a series of related events, or orch
 
 ## High volume data
 
-Cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques sometimes cause bottlenecks. For complex systems that deploy on a large scale, both CQRS and Event Sourcing may be improve application performance.  
+Cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques sometimes cause bottlenecks. For complex systems that deploy on a large scale, both CQRS and Event Sourcing may improve application performance.  
 
 ### CQRS
 
-CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those that write data. 
+CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those operations that write data. 
 
 For normal scenarios, the same entity model and [data repository](https://martinfowler.com/eaaCatalog/repository.html) object are used for *both* read and write operations.
 
@@ -112,71 +112,37 @@ However, a high volume data scenario can benefit from separate models and data t
 
 Figure 5-7 shows an implementation of the CQRS pattern.
 
-![CQRS implementation](./media/cqrs-implementation.png)
+![Command and Query Responsibility Segregation](./media/cqrs-implementation.png)
 
 **Figure 5-7**. CQRS implementation
 
 In the previous figure, separate command and query models are implemented. Each data write operation is saved to the write store and then propagated to the read store. Pay close attention to how the data propagation process operates on the principle of [eventual consistency](http://www.cloudcomputingpatterns.org/eventual_consistency/). The read model eventually synchronizes with the write model, but there may be some lag in the process. We discuss eventual consistency in the next section.
 
-This separation enables reads and writes to scale independently. Read operations use a schema optimized for queries, while the writes use a schema optimized for updates. Read queries go against denormalized data, while complex business logic can be applied to the write model. As well, you might impose tighter security on write operations than those concerning reads.
+This separation enables reads and writes to scale independently. Read operations use a schema optimized for queries, while the writes use a schema optimized for updates. Read queries go against denormalized data, while complex business logic can be applied to the write model. As well, you might impose tighter security on write operations than those exposing reads.
 
 Implementing CQRS can improve application performance for cloud-native services. However, it does result in a more complex design. Apply this principle carefully and strategically to those sections of your cloud-native application that will benefit from it. For more on CQRS, see the Microsoft book [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns).
 
 ### Event Sourcing
 
-Another approach to storing data involves [Event Sourcing](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing).
+Another approach to optimizing high volume data scenarios involves [Event Sourcing](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing).
 
-A database typically stores the current state of a data entity. If a user changes their phone number, the customer record is updated with the new number. We always know the current state of a data item, but each update overwrites the previous state. Without some kind audit mechanism, we lose the history.
+A system typically stores the current state of a data entity. If a user changes their phone number, for example, the customer record is updated with the new number. We always know the current state of a data entity, but each update overwrites the previous state. 
 
-In high volume systems, however, overhead from transactional locking and frequent database update operations can sometimes impact database performance, responsiveness, and limit scalability.
+In most cases, this model works fine. In high volume systems, however, overhead from transactional locking and frequent update operations can impact database performance, responsiveness, and limit scalability.
 
-Event Sourcing takes a different approach to capturing data. Each operation that affects data is added to an event store. Instead of changing the state of a data record, we append each change to a sequential list of past events - similar to an accountant's ledger. The Event Store becomes the system of record and is used to create materialized data views for a microservice. Processing each event in the sequence will project the current state of a data entity. Figure 5.7 depicts the pattern. 
+Event Sourcing takes a different approach to capturing data. Each operation that affects data is persisted to an event store. Instead of updating the state of a data record, we append each change to a sequential list of past events - similar to an accountant's ledger. The Event Store becomes the system of record for the data. It's used to propagate various [materialized views](https://docs.microsoft.com/azure/architecture/patterns/materialized-view) within the bounded context of a microservice. Figure 5.7 shows the pattern.
 
 ![Event Sourcing](./media/event-sourcing.png)
 
 **Figure 5-7**. Event Sourcing
 
-In the figure above note how each entry (in blue) for a user's shopping cart is appended to the underlying event store. In the materialized view, the system derives the current state by replaying all the events associated with each shopping cart, which is then exposed back to the UI. Events can also be integrated with external systems and applications or queried to determine the current state of an entity.
+In the figure above note how each entry (in blue) for a user's shopping cart is appended to an underlying event store. In the adjoining [materialized view](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), the system projects the current state by replaying all the events associated with each shopping cart. This view, or read model, is then exposed back to the UI. Events can also be integrated with external systems and applications or queried to determine the current state of an entity. With this approach, you maintain history. You know not only the current state of an entity, but also how you reached this state.
 
-Event sourcing provides an efficient write model since information is always appended with no locking - each event is immutable and there are no updates or deletes. This minimizes the contention found implementing database transactions.
+Mechanically speaking, event sourcing simplifies the write model. There are no updates or deletes. Appending each data entry as an immutable event minimizes contention, locking, and concurrency conflicts associated with relational databases. Building read models with the [materialized view pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view) enables you to decouple the view from the write model and choose the best data store to optimize the needs of your application UI.
 
-Implementing read models using materialized views enables you to decouple from the write model and choose the best data store to optimize the needs of your application.
+For this pattern, consider a data store that directly supports event sourcing. Azure Cosmos DB, MongoDB, Cassandra, CouchDB, and RavenDB are good candidates.
 
-In the event of an incorrect event entry, a compensating event can be added cancel out the earlier event and correct the mistake.
-
-
-can help prevent concurrent updates from causing conflicts because it avoids the requirement to directly update objects in the data store.
-
-Based on the system requirements We can achieve better performance and scalability, but at the expense of complexity
-
-
--- Extra
-
-This way we not only know the current state of the system but we can easily track how we reached this state.
-
-Events can be replayed to create a projection of the current state for each data item. For example, the Shopping Basket microservice could maintain a materialized view for each customer
-
-In addition, at any point it's possible for applications to read the history of events, and use it to materialize the current state of an entity by playing back and consuming all the events related to that entity. This can occur on demand to materialize a domain object when handling a request, or through a scheduled task so that the state of the entity can be stored as a materialized view to support the presentation layer.
-
-
-What are some advantages of event sourcing?
-- Ability to put the system in any prior state. Useful for debugging. (I.e. what did the system look like last week?)
-- Having a true history of the system. Gives further benefits such as audit and traceability. In some fields this is required by law.
-- We mitigate the negative effects of not being able to predict future needs, by storing all events and being able to create arbitrary read-side projections as needed. This allows for more nimble responses to new requirements.
-- The kind of operations made on an event store is very limited, making the persistence very predictable and thus easing testing.
-- Event stores are conceptually simpler than full RDBMS solutions, and it's easy to scale up from an in-memory list of events to a full-featured event store.
-- Compensating actions are what you can add in order to correct actual mistakes. They are simply events which cancel out earlier events.
-
-An optimization where a snapshot of the aggregate's state is also saved (conceptually) in the event queue every so often, so that event application can start from the snapshot instead of from scratch. This can speed things up. Snapshots can always be discarded or re-created as needed, since they represent computed information from the event stream.
-
-just as in an accountant's ledger, incidentally.) 
-
-Use cases:
-
-Financial transactions, air traffic control systems
-
-End with complexity of Event Sourcing.
-
+As with all patterns and technologies, implement strategically and when needed. While event sourcing can provide increased performance and scalability, it comes at the expense of complexity and a learning curve.
 
 >[!div class="step-by-step"]
 >[Previous](service-mesh-communication-infrastructure.md)

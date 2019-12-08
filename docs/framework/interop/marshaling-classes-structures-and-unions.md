@@ -36,7 +36,7 @@ The following table lists marshaling options for classes, structures, and unions
 |Array of structures with integers and strings by reference.|Passes an array of structures that contain integers and strings as an Out parameter. The called function allocates memory for the array.|[OutArrayOfStructs Sample](#outarrayofstructs-sample)|
 |Unions with value types.|Passes unions with value types (integer and double).|[Unions sample](#unions-sample)|
 |Unions with mixed types.|Passes unions with mixed types (integer and string).|[Unions sample](#unions-sample)|
-|Null values in structure.|Passes a null reference (**Nothing** in Visual Basic) instead of a reference to a value type.|HandleRef sample|
+|Null values in structure.|Passes a null reference (**Nothing** in Visual Basic) instead of a reference to a value type.|[HandleRef sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/hc662t8k(v=vs.85))|
 
 ## Structures sample
 

@@ -51,7 +51,7 @@ Beginning with C# 7.3, you can use `System.Enum` in a base class constraint (tha
 
 You cannot define a method inside the definition of an enumeration type, but you can create an [extension method](../../programming-guide/classes-and-structs/extension-methods.md) to add functionality to an enumeration type.
 
-Like with any [constant](../../programming-guide/classes-and-structs/constants.md), at compile time all references to individual values of an enumeration type are replaced with the corresponding integral values.
+Like with any [constant](../../programming-guide/classes-and-structs/constants.md), all references to individual values of an enumeration type are replaced with the corresponding integral values at compile time.
 
 ## Conversions
 
@@ -65,7 +65,7 @@ For any enumeration type, there exist [boxing and unboxing](../../programming-gu
 
 ## Enumeration types as bit flags
 
-Typically you use an enumeration type to represent a set of mutually exclusive values. However, in some scenarios a combination of enumeration values can also be a meaningful enumeration value. Then, you can define only those enum members that represent a bit field in an enumeration value and use the [bitwise logical operators](../operators/bitwise-and-shift-operators.md#enumeration-logical-operators) to combine enumeration values. The associated values of the enum members that represent a bit field should be the powers of two. To indicate that an enumeration type declares bit fields, apply the [Flags](xref:System.FlagsAttribute) attribute to it. The following example defines the `Days` enumeration type and shows the behavior of the bitwise operators with its instances.
+You typically use an enumeration type to represent a set of mutually exclusive values. However, in some scenarios, a combination of enumeration values can also be a meaningful enumeration value. Then, you can define only those enum members that represent a bit field in an enumeration value and use the [bitwise logical operators](../operators/bitwise-and-shift-operators.md#enumeration-logical-operators) to combine enumeration values. The associated values of the enum members that represent a bit field should be the powers of two. To indicate that an enumeration type declares bit fields, apply the [Flags](xref:System.FlagsAttribute) attribute to it. The following example defines the `Days` enumeration type and shows the behavior of the bitwise operators with its instances.
 
 [!code-csharp[enum flags](~/samples/csharp/language-reference/builtin-types/EnumType.cs#Flags)]
 

@@ -144,6 +144,6 @@ For this pattern, consider a data store that directly supports event sourcing. A
 
 As with all patterns and technologies, implement strategically and when needed. While event sourcing can provide increased performance and scalability, it comes at the expense of complexity and a learning curve.
 
->[!div class="step-by-step"]
+j
 >[Previous](service-mesh-communication-infrastructure.md)
->[Next](data-patterns.md)
+>[Next](azure-data-storage.md)

@@ -218,37 +218,6 @@ One of the more time consuming tasks is migrating data from one data platform to
   
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 
-## Summary
-
-In this module, we took a detailed look at data in cloud-native systems. We contrasted data storage in monolithic applications with that in cloud-native systems. We looked data patterns implemented in cloud-native systems, including cross-service queries and transactions. We contrasted SQL with NoSQL data stores. Finally, we looked at data storage options available in Azure that include both Microsoft-centric and open source options.
-
-### References
-
-- [Command and Query Responsibility Segregation (CQRS) pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
-
-- [Event Sourcing pattern](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing)
-
-- [RDBMSs vs. NoSQL Databases: Overview](https://maxivak.com/rdbms-vs-nosql-databases/)
-
-- [Why isn't RDBMS Partition Tolerant in CAP Theorem and why is it Available?](https://stackoverflow.com/questions/36404765/why-isnt-rdbms-partition-tolerant-in-cap-theorem-and-why-is-it-available)
-
-- [Materialized View](https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view)
-
-- [All you really need to know about open source databases](https://www.ibm.com/blogs/systems/all-you-really-need-to-know-about-open-source-databases/)
-
-- [Compensating Transaction pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction)
-
-- [Saga Pattern](https://microservices.io/patterns/data/saga.html)
-
-- [Saga Patterns | How to implement business transactions using microservices](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/)
-
-- [Compensating Transaction pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction)
-
-- [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/)
-
-- [Exploring the different types of NoSQL Databases Part II](https://www.3pillarglobal.com/insights/exploring-the-different-types-of-nosql-databases)
-- [Microservice - Data Considerations](https://docs.microsoft.com/en-us/azure/architecture/microservices/design/data-considerations)
-
-tep-by-step"]
->[Previous](data-patterns.md)
->[Next](resiliency.md) <!-- Next Chapter -->
+>[!div class="step-by-step"]
+>[Previous](distributed-data.md)
+>[Next](azure-caching.md) 

@@ -1,7 +1,7 @@
 ---
 title: Build a .NET Standard class library in Visual Studio
 description: Learn how to build a .NET Standard class library written in C# or Visual Basic using Visual Studio
-ms.date: 12/03/2019
+ms.date: 12/09/2019
 dev_langs:
  - CSharp
  - VB

@@ -3,10 +3,7 @@ title: Create a Hello World application with .NET Core in Visual Studio
 description: Learn how to create your first .NET Core console application with C# or Visual Basic using Visual Studio.
 author: BillWagner
 ms.author: wiwagn
-ms.date: 12/03/2019
-dev_langs:
- - CSharp
- - VB
+ms.date: 12/09/2019
 ms.custom: "vs-dotnet, seodec18"
 ---
 # Tutorial: Create your first .NET Core console application in Visual Studio 2019
@@ -93,15 +90,11 @@ The following instructions create a simple Hello World console application:
 
 Enhance your application to prompt the user for their name and display it along with the date and time. The following instructions modify and run the app again:
 
+# [C#](#tab/csharp)
+
 1. Replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:
 
    [!code-csharp[GettingStarted#1](~/samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
-   [!code-vb[GettingStarted#1](~/samples/snippets/core/tutorials/vb-with-visual-studio/helloworld.vb#1)]
-
-   > [!TIP]
-   > To see the code examples in your preferred programming language, choose it using the language picker at the top-right corner of the browser window.
-   >
-   > ![Code language picker control on docs.microsoft.com](../media/code-language-picker.png)
 
    This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../csharp/language-reference/tokens/interpolated.md) to display these values in the console window.
 
@@ -114,6 +107,26 @@ Enhance your application to prompt the user for their name and display it along 
    ![Console window with modified program output](./media/with-visual-studio/hello-world-update.png)
 
 1. Press any key to close the console window.
+
+# [Visual Basic](#tab/vb)
+
+1. Replace the contents of the `Main` method, which is currently just the line that calls `Console.WriteLine`, with the following code:
+
+   [!code-vb[GettingStarted#1](~/samples/snippets/core/tutorials/vb-with-visual-studio/helloworld.vb#1)]
+
+   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) to display these values in the console window.
+
+1. Compile the program by choosing **Build** > **Build Solution**.
+
+1. To run the program, choose **HelloWorld** on the toolbar, or press **F5**.
+
+1. Respond to the prompt by entering a name and pressing the **Enter** key.
+
+   ![Console window with modified program output](./media/with-visual-studio/hello-world-update.png)
+
+1. Press any key to close the console window.
+
+---
 
 ## Next steps
 

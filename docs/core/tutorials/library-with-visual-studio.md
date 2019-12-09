@@ -2,9 +2,6 @@
 title: Build a .NET Standard class library in Visual Studio
 description: Learn how to build a .NET Standard class library written in C# or Visual Basic using Visual Studio
 ms.date: 12/09/2019
-dev_langs:
- - CSharp
- - VB
 ms.custom: "vs-dotnet, seodec18"
 ---
 # Build a .NET Standard library in Visual Studio
@@ -37,7 +34,11 @@ To create the blank solution:
 
 ## Create a class library project
 
-1. Add a new Visual Basic .NET Standard class library project named "StringLibrary" to the solution.
+<!-- markdownlint-disable MD025 -->
+
+# [C#](#tab/csharp)
+
+1. Add a new C# .NET Standard class library project named "StringLibrary" to the solution.
 
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
 
@@ -49,16 +50,39 @@ To create the blank solution:
 
    ![Project properties for the class library](./media/library-with-visual-studio/library-project-properties.png)
 
-1. (For Visual Basic projects only) In the **Properties** dialog, clear the text in the **Root namespace** text box. For each project, Visual Basic automatically creates a namespace that corresponds to the project name. In this tutorial, you define a top-level namespace by using the [`namespace`](../../visual-basic/language-reference/statements/namespace-statement.md) keyword in the code file.
-
 1. Replace the code in the code window with the following code and save the file:
 
    [!CODE-csharp[ClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/classlib.cs)]
+
+   The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
+
+1. On the menu bar, select **Build** > **Build Solution**.
+
+# [Visual Basic](#tab/vb)
+
+1. Add a new Visual Basic .NET Standard class library project named "StringLibrary" to the solution.
+
+   1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
+
+   1. On the **Add a new project** page, enter **library** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **Windows** from the Platform list. Choose the **Class Library (.NET Standard)** template, and then choose **Next**.
+
+   1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box. Then, choose **Create**.
+
+1. Check to make sure that the library targets the correct version of .NET Standard. Right-click on the library project in **Solution Explorer**, and then select **Properties**. The **Target Framework** text box shows that the project targets .NET Standard 2.0.
+
+   ![Project properties for the class library](./media/library-with-visual-studio/vb/library-project-properties.png)
+
+1. In the **Properties** dialog, clear the text in the **Root namespace** text box. For each project, Visual Basic automatically creates a namespace that corresponds to the project name. In this tutorial, you define a top-level namespace by using the [`namespace`](../../visual-basic/language-reference/statements/namespace-statement.md) keyword in the code file.
+
+1. Replace the code in the code window with the following code and save the file:
+
    [!CODE-vb[ClassLib#1](../../../samples/snippets/core/tutorials/vb-library-with-visual-studio/stringlibrary.vb)]
 
    The class library, `UtilityLibraries.StringLibrary`, contains a method named `StartsWithUpper`. This method returns a <xref:System.Boolean> value that indicates whether the current string instance begins with an uppercase character. The Unicode standard distinguishes uppercase characters from lowercase characters. The <xref:System.Char.IsUpper(System.Char)?displayProperty=nameWithType> method returns `true` if a character is uppercase.
 
 1. On the menu bar, select **Build** > **Build Solution**.
+
+---
 
    The project should compile without error.
 

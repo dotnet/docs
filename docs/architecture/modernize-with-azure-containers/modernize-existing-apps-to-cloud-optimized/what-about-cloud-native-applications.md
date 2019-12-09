@@ -36,7 +36,10 @@ The [Twelve-Factor App](https://12factor.net/) (a collection of patterns that ar
 
 The [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) is a primary promoter of cloud-native principles. Microsoft is a [member of the CNCF](https://azure.microsoft.com/blog/announcing-cncf/).
 
-For a sample definition and for more information about the characteristics of cloud-native applications, see the section [Introduction to cloud-native applications](https://docs.microsoft.com/dotnet/architecture/cloud-native/introduction) from the [Architecting Cloud Native .NET Applications for Azure](https://docs.microsoft.com/dotnet/architecture/cloud-native/). For specific guidance from Microsoft about how to implement a cloud-native application, see [.NET microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
+For detailed guidance on how to design and develop cloud-native applications, read the following free e-Books:
+
+*  [Architecting Cloud-Native .NET Applications for Azure](https://docs.microsoft.com/dotnet/architecture/cloud-native/introduction)
+*  [.NET Microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
 
 The most important factor to consider if you migrate a full application to the cloud-native model is that you must rearchitect to a microservices-based architecture. This clearly requires a significant investment in development because of the large refactoring process involved. This option usually is chosen for mission-critical applications that need new levels of scalability and long-term agility. But, you could start moving toward cloud-native by adding microservices for just a few new scenarios, and eventually refactor the application fully as microservices. This is an incremental approach that is the best option for some scenarios.
 

@@ -10,10 +10,10 @@ The benefits of caching to improve performance and scalability are well understo
 
 Caching is a widely accepted technique to improve the performance and scalability of individual services and the overall system. It works by temporarily copying frequently accessed data to fast storage that's located (somewhat) close to the application. Caching is most effective when a client repeatedly reads the same data, especially when the original data store...
 
- - Remains relatively static.
- - Is slow compared to the speed of the cache.
- - Is subject to a high level of contention.
- - Is far away where network latency can cause access to be slow.
+- Remains relatively static.
+- Is slow compared to the speed of the cache.
+- Is subject to a high level of contention.
+- Is far away where network latency can cause access to be slow.
 
 ## Caching architecture
 

@@ -1,7 +1,7 @@
 ---
 title: "Enumeration types - C# reference"
 description: "Learn about C# enumeration types that represent a set of named constants and how to define them with the `enum` keyword"
-ms.date: 09/12/2019
+ms.date: 12/09/2019
 f1_keywords:
   - "enum"
   - "enum_CSharpKeyword"

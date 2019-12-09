@@ -12,7 +12,7 @@ Constants are fields whose values are set at compile time and can never be chang
 > [!NOTE]
 > In C# the [#define](../../language-reference/preprocessor-directives/preprocessor-define.md) preprocessor directive cannot be used to define constants in the way that is typically used in C and C++.  
   
- To define constant values of integral types (`int`, `byte`, and so on) use an enumerated type. For more information, see [enum](../../language-reference/keywords/enum.md).  
+ To define constant values of integral types (`int`, `byte`, and so on) use an enumerated type. For more information, see [enum](../../language-reference/builtin-types/enum.md).  
   
  To define non-integral constants, one approach is to group them in a single static class named `Constants`. This will require that all references to the constants be prefaced with the class name, as shown in the following example.  
   

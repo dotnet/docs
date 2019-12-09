@@ -1075,8 +1075,6 @@
       href: programming-guide/interfaces/how-to-explicitly-implement-interface-members.md
     - name: "How to: Explicitly Implement Members of Two Interfaces"
       href: programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md
-  - name: Enumeration Types
-    href: programming-guide/enumeration-types.md
   - name: Delegates
     items:
     - name: Overview
@@ -1323,8 +1321,9 @@
         - name: char
           href: language-reference/builtin-types/char.md
           displayName: "Unicode, character, UTF-16"
-        - name: enum
-          href: language-reference/keywords/enum.md
+        - name: Enumeration types
+          href: language-reference/builtin-types/enum.md
+          displayName: "enum, flags, bit field"
         - name: struct
           href: language-reference/keywords/struct.md
         - name: Nullable value types

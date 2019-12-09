@@ -29,10 +29,10 @@ The following table lists marshaling options for classes, structures, and unions
 |----------|-----------------|------------|
 |Class by value.|Passes a class with integer members as an In/Out parameter, like the managed case.|[SysTime sample](#systime-sample)|
 |Structure by value.|Passes structures as In parameters.|[Structures sample](#structures-sample)|
-|Structure by reference.|Passes structures as In/Out parameters.|OSInfo sample|
+|Structure by reference.|Passes structures as In/Out parameters.|[OSInfo sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|
 |Structure with nested structures (flattened).|Passes a class that represents a structure with nested structures in the unmanaged function. The structure is flattened to one big structure in the managed prototype.|[FindFile sample](#findfile-sample)|
 |Structure with a pointer to another structure.|Passes a structure that contains a pointer to a second structure as a member.|[Structures Sample](#structures-sample)|
-|Array of structures with integers by value.|Passes an array of structures that contain only integers as an In/Out parameter. Members of the array can be changed.|Arrays Sample|
+|Array of structures with integers by value.|Passes an array of structures that contain only integers as an In/Out parameter. Members of the array can be changed.|[Arrays Sample](marshaling-different-types-of-arrays.md)|
 |Array of structures with integers and strings by reference.|Passes an array of structures that contain integers and strings as an Out parameter. The called function allocates memory for the array.|[OutArrayOfStructs Sample](#outarrayofstructs-sample)|
 |Unions with value types.|Passes unions with value types (integer and double).|[Unions sample](#unions-sample)|
 |Unions with mixed types.|Passes unions with mixed types (integer and string).|[Unions sample](#unions-sample)|

@@ -44,7 +44,7 @@ You can install the .NET Core SDK with many of the common Linux package managers
 To extract the SDK and make the commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
 
 ```bash
-mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-musl-x64.tar.gz -C $HOME/dotnet
+mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-x64.tar.gz -C $HOME/dotnet
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 ```
@@ -152,7 +152,7 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 
 You can download and install .NET Core directly with one of the following links:
 
-- [.NET Core 3.1 Preview downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+- [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 - [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
 - [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)

@@ -61,6 +61,8 @@
     href: tutorials/consuming-library-with-visual-studio.md
 - name: What's new in .NET Core
   items:
+  - name: What's new in .NET Core 3.1
+    href: whats-new/dotnet-core-3-1.md
   - name: What's new in .NET Core 3.0
     href: whats-new/dotnet-core-3-0.md
   - name: What's new in .NET Core 2.2
@@ -105,8 +107,18 @@
   items:
   - name: Settings
     href: run-time-config/index.md
+  - name: Compilation settings
+    href: run-time-config/compilation.md
+  - name: Debugging and profiling settings
+    href: run-time-config/debugging-profiling.md
   - name: Garbage collector settings
     href: run-time-config/garbage-collector.md
+  - name: Globalization settings
+    href: run-time-config/globalization.md
+  - name: Networking settings
+    href: run-time-config/networking.md
+  - name: Threading settings
+    href: run-time-config/threading.md
 - name: Native interoperability
   items:
   - name: Expose .NET Core components to COM

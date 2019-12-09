@@ -20,11 +20,11 @@ ms.date: 11/13/2019
 
 - [Environment variables](#environment-variables)
 
-The articles in this section of the documentation include are organized by category, for example, debugging and garbage collection. Available configuration options are shown for *runtimeconfig.json* (.NET Core only), *app.config* (.NET Framework only), and environment variables.
+The articles in this section of the documentation include are organized by category, for example, debugging and garbage collection. Where applicable, configuration options are shown for *runtimeconfig.json* (.NET Core only), *app.config* (.NET Framework only), and environment variables.
 
 ## runtimeconfig.json
 
-Specify run-time configuration options in the **configProperties** section of the *runtimeconfig.json* file. This section has the form:
+Specify run-time configuration options in the **configProperties** section of the app's *runtimeconfig.json* file. This section has the form:
 
 ```json
 {

@@ -131,7 +131,7 @@ The scenarios that are supported for managed Windows Runtime Components depend o
 - The types in your component can derive from Windows Runtime types. Controls can derive from the primitive control types in the <xref:Windows.UI.Xaml.Controls.Primitives> namespace or from more finished controls such as <xref:Windows.UI.Xaml.Controls.Button>.
 
   > [!IMPORTANT]
-  > Starting with [!INCLUDE[win8](../../../includes/win8-md.md)] and the .NET Framework 4.5, all public types in a managed Windows Runtime component must be sealed. A type in another Windows Runtime component can't derive from them. If you want to provide polymorphic behavior in your component, you can create an interface and implement it in the polymorphic types.
+  > Starting with Windows 8 and the .NET Framework 4.5, all public types in a managed Windows Runtime component must be sealed. A type in another Windows Runtime component can't derive from them. If you want to provide polymorphic behavior in your component, you can create an interface and implement it in the polymorphic types.
 
 - All parameter and return types on the public types in your component must be Windows Runtime types (including the Windows Runtime types that your component defines).
 

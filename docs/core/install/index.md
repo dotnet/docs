@@ -3,7 +3,7 @@ title: Install .NET Core on Windows, Linux, and macOS - .NET Core
 description: Learn where and what to install for .NET Core on Windows, Linux, and macOS versions. Discover the dependencies required to develop, deploy, and run .NET Core apps.
 author: thraka
 ms.author: adegeo
-ms.date: 11/06/2019
+ms.date: 12/04/2019
 ---
 
 # Download and install .NET Core

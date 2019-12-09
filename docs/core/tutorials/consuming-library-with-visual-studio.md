@@ -8,7 +8,7 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Consume a .NET Standard library in Visual Studio 2017
 
-Once you've created a .NET Standard class library by following the steps in [Building a C# class library with .NET Standard in Visual Studio](./library-with-visual-studio.md) or [Building a Visual Basic class library with .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md), tested it in [Testing a class library with .NET Core in Visual Studio 2017](testing-library-with-visual-studio.md), and built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
+Once you've created a .NET Standard class library by following the steps in [Building a C# class library with .NET Standard in Visual Studio](./library-with-visual-studio.md) or [Building a Visual Basic class library with .NET Core in Visual Studio](vb-library-with-visual-studio.md), tested it in [Testing a class library with .NET Core in Visual Studio](testing-library-with-visual-studio.md), and built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
 
 * If the library will be used by a single solution (for example, if it's a component in a single large application), you can include it as a project in your solution.
 

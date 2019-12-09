@@ -6,7 +6,6 @@ ms.author: wiwagn
 ms.date: 06/05/2018
 ms.custom: "vs-dotnet, seodec18"
 ---
-
 # Consume a .NET Standard library in Visual Studio 2017
 
 Once you've created a .NET Standard class library by following the steps in [Create a class library with .NET Standard in Visual Studio](./library-with-visual-studio.md), tested it in [Test a class library with .NET Core in Visual Studio](testing-library-with-visual-studio.md), and built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
@@ -15,7 +14,7 @@ Once you've created a .NET Standard class library by following the steps in [Cre
 
 * If the library will be generally accessible, you can distribute it as a NuGet package.
 
-## Including a library as a project in a solution
+## Include a library as a project in a solution
 
 Just as you included unit tests in the same solution as your class library, you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
@@ -89,11 +88,13 @@ Just as you included unit tests in the same solution as your class library, you 
 
 You can debug and publish the application that uses this library by following the steps in [Debugging your Hello World application with Visual Studio 2017](debugging-with-visual-studio.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio.md).
 
-## Distributing the library in a NuGet package
+## Distribute the library in a NuGet package
 
 You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../tools/dotnet.md):
 
-1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
+1. Open a console window.
+
+   For example, enter **Command Prompt** in the search box on the Windows task bar. Select the **Command Prompt** desktop app or press **Enter** if it's already selected in the search results.
 
 1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the *Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary* directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
 

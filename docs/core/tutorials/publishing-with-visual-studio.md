@@ -8,9 +8,9 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Publish your .NET Core Hello World application with Visual Studio 2017
 
-In [Build a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio.md) or [Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017](vb-with-visual-studio.md), you built a Hello World console application. In [Debug your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application, and you can deploy the files by copying them to a target machine.
+In [Build a Hello World application with .NET Core in Visual Studio](with-visual-studio.md), you built a Hello World console application. In [Debug your Hello World application with Visual Studio](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application, and you can deploy the files by copying them to a target machine.
 
-To publish and run your application: 
+To publish and run your application:
 
 1. Make sure that Visual Studio is building the Release version of your application. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
@@ -29,10 +29,10 @@ To publish and run your application:
       * *HelloWorld.deps.json*
 
          The application's runtime dependencies file. It defines the .NET Core components and the libraries (including the dynamic link library that contains your application) needed to run your application. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
- 
+
       * *HelloWorld.dll*
 
-         The file that contains your application. It is a dynamic link library that can be executed by entering the `dotnet HelloWorld.dll` command in a console window. 
+         The file that contains your application. It is a dynamic link library that can be executed by entering the `dotnet HelloWorld.dll` command in a console window.
 
       * *HelloWorld.pdb* (optional for deployment)
 
@@ -40,7 +40,7 @@ To publish and run your application:
 
       * *HelloWorld.runtimeconfig.json*
 
-         The application's runtime configuration file. It identifies the version of .NET Core that your application was built to run on. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).  
+         The application's runtime configuration file. It identifies the version of .NET Core that your application was built to run on. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
 
    ![Console window showing published files](media/publishing-with-visual-studio/published-files-output.png)
 

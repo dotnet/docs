@@ -8,7 +8,7 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Consume a .NET Standard library in Visual Studio 2017
 
-Once you've created a .NET Standard class library by following the steps in [Building a C# class library with .NET Standard in Visual Studio](./library-with-visual-studio.md) or [Building a Visual Basic class library with .NET Core in Visual Studio](vb-library-with-visual-studio.md), tested it in [Testing a class library with .NET Core in Visual Studio](testing-library-with-visual-studio.md), and built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
+Once you've created a .NET Standard class library by following the steps in [Create a class library with .NET Standard in Visual Studio](./library-with-visual-studio.md), tested it in [Test a class library with .NET Core in Visual Studio](testing-library-with-visual-studio.md), and built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
 
 * If the library will be used by a single solution (for example, if it's a component in a single large application), you can include it as a project in your solution.
 
@@ -22,7 +22,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
 # [C#](#tab/csharp)
 
-1. Open the `ClassLibraryProjects` solution you created in the [Building a C# Class Library with .NET Standard in Visual Studio](./library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
+1. Open the `ClassLibraryProjects` solution you created in the [Building a Class Library with .NET Standard in Visual Studio](library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
 
 1. In the **Add New Project** dialog, expand the **Visual C#** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
 
@@ -54,7 +54,7 @@ Just as you included unit tests in the same solution as your class library, you 
 
 # [Visual Basic](#tab/vb)
 
-1. Open the `ClassLibraryProjects` solution you created in the [Building a class Library with Visual Basic and .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
+1. Open the `ClassLibraryProjects` solution you created in the [Building a class Library with .NET Standard in Visual Studio](library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
 
 1. In the **Add New Project** dialog, expand the **Visual Basic** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
 

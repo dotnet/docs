@@ -4,14 +4,14 @@ description: Create a unit test project for your .NET Core class library. Verify
 author: BillWagner
 ms.author: wiwagn
 ms.date: 08/07/2017
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.custom: "vs-dotnet, seodoc18"
 ---
 # Test a .NET Standard library with .NET Core in Visual Studio 2017
 
-In [Build a .NET Standard library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md) or [Build a .NET Standard library with Visual Basic and .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md), you created a simple class library that adds an extension method to the <xref:System.String> class. Now, you'll create a unit test to make sure that it works as expected. You'll add your unit test project to the solution you created in the previous article.
+In [Build a .NET Standard library with .NET Core in Visual Studio](library-with-visual-studio.md), you created a simple class library that adds an extension method to the <xref:System.String> class. Now, you'll create a unit test to make sure that it works as expected. You'll add your unit test project to the solution you created in the previous article.
 
 ## Creating a unit test project
 
@@ -27,7 +27,7 @@ To create the unit test project, do the following:
 
    ![Add New Project dialog with unit test project displayed - C#](./media/testing-library-with-visual-studio/create-new-test-project.png)
 
-   > [!NOTE]  
+   > [!NOTE]
    > In addition to an MSTest Test project, you can also use Visual Studio to create an xUnit test project for .NET Core.
 
 1. Visual Studio creates the project and opens the *UnitTest1.cs* file in the code window.
@@ -58,7 +58,7 @@ To create the unit test project, do the following:
 
    ![Add New Project dialog with unit test project displayed - Visual Basic](./media/testing-library-with-visual-studio/vb-create-new-test-project.png)
 
-   > [!NOTE]  
+   > [!NOTE]
    > In addition to an MSTest Test project, you can also use Visual Studio to create an xUnit test project for .NET Core.
 
 1. Visual Studio creates the project and opens the *UnitTest1.vb* file in the code window.

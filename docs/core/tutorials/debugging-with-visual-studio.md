@@ -114,7 +114,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Select **Close** to close the dialog.
 
-1. Start the programming with debugging by pressing **F5**.
+1. Start the program with debugging by pressing **F5**.
 
 1. In the console window, press the **Enter** key when prompted to enter your name.
 
@@ -152,7 +152,7 @@ To set a conditional breakpoint and test what happens when the user fails to ent
 
 1. Select **Close** to close the dialog.
 
-1. Start the programming with debugging by pressing **F5**.
+1. Start the program with debugging by pressing **F5**.
 
 1. In the console window, press the **Enter** key when prompted to enter your name.
 
@@ -235,7 +235,7 @@ Visual Studio also allows you to step line by line through a program and monitor
 
 ## Build a Release version
 
-Once you've tested the Debug version of your application, you should also compile and test the Release version. The Release version incorporates compiler optimizations that can sometimes negatively affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in asynchronous or multithreaded applications.
+Once you've tested the Debug version of your application, you should also compile and test the Release version. The Release version incorporates compiler optimizations that can sometimes negatively affect the behavior of an application. For example, compiler optimizations that are designed to improve performance can create race conditions in multithreaded applications.
 
 To build and test the Release version of your console application, change the build configuration on the toolbar from **Debug** to **Release**.
 

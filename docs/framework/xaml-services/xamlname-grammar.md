@@ -49,4 +49,4 @@ DottedXamlName ::= XamlName '.' XamlName
 ```  
   
 ## Remarks  
- For the complete specification, see [\[MS-XAML\]](https://go.microsoft.com/fwlink/?LinkId=114525).
+ For the complete specification, see [\[MS-XAML\]](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).

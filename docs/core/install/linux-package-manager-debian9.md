@@ -3,7 +3,7 @@ title: Install .NET Core on Debian 9 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on Debian 9.
 author: thraka
 ms.author: adegeo
-ms.date: 11/06/2019
+ms.date: 12/04/2019
 ---
 
 # Debian 9 Package Manager - Install .NET Core
@@ -41,7 +41,7 @@ Update the products available for installation, then install the .NET Core SDK. 
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install dotnet-sdk-3.0
+sudo apt-get install dotnet-sdk-3.1
 ```
 
 ## Install the ASP.NET Core runtime
@@ -52,7 +52,7 @@ Update the products available for installation, then install the ASP.NET runtime
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install aspnetcore-runtime-3.0
+sudo apt-get install aspnetcore-runtime-3.1
 ```
 
 ## Install the .NET Core runtime
@@ -63,7 +63,7 @@ Update the products available for installation, then install the .NET Core runti
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install dotnet-runtime-3.0
+sudo apt-get install dotnet-runtime-3.1
 ```
 
 ## How to install other versions

@@ -34,6 +34,3 @@ The topics in this section help you quickly understand Open Data Protocol (OData
   
  [Getting Started](../adonet/ef/getting-started.md)  
   
-## See also
-
-- [OData SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip)

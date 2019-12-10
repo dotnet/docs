@@ -22,7 +22,7 @@ Securing an application is an ongoing process. There will never be a point where
   
 |Resource|Description|  
 |--------------|-----------------|  
-|The [Threat Modeling](https://www.microsoft.com/msrc?rtc=1) site on the MSDN Security Developer Center|The resources on this page will help you understand the threat modeling process and build threat models that you can use to secure your own applications|  
+|The [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling) site on the Security Engineering Portal|The resources on this page will help you understand the threat modeling process and build threat models that you can use to secure your own applications|  
   
 ## The Principle of Least Privilege  
  When you design, build, and deploy your application, you must assume that your application will be attacked. Often these attacks come from malicious code that executes with the permissions of the user running the code. Others can originate with well-intentioned code that has been exploited by an attacker. When planning security, always assume the worst-case scenario will occur.  

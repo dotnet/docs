@@ -33,4 +33,3 @@ The topics in this section help you quickly understand Open Data Protocol (OData
  [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))  
   
  [Getting Started](../adonet/ef/getting-started.md)  
-  

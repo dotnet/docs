@@ -40,17 +40,20 @@ conceptualContent:
   items:
     # Card
     - title: Open-source .NET
-      summary: Start developing apps with .NET Core
+      summary: Learn about .NET Core
       links:
         - url: core/index.md
           itemType: overview
-          text: .NET Core
+          text: .NET Core overview
         - url: core/whats-new/dotnet-core-3-0.md
           itemType: whats-new
           text: What's new in .NET Core 3.1
+        - url: standard/tour.md
+          itemType: overview
+          text: Tour of .NET
         - url: core/deploying/index.md
           itemType: deploy
-          text: Deploying .NET Core apps
+          text: Deploy .NET Core apps
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET Core apps with Docker
@@ -64,18 +67,18 @@ conceptualContent:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
           text: What is .NET?
-        - url: standard/get-started.md
-          itemType: get-started
-          text: Get started
-        - url: standard/tour.md
+        - url: standard/index.md
           itemType: overview
-          text: Tour of .NET
-        - url: standard/components.md
-          itemType: concept
-          text: .NET architectural components
+          text: Overview of .NET
         - url: standard/net-standard.md
           itemType: overview
           text: .NET Standard
+        - url: standard/get-started.md
+          itemType: get-started
+          text: Get started
+        - url: standard/components.md
+          itemType: concept
+          text: .NET architectural components
         - url: framework/index.md
           itemType: overview
           text: .NET Framework (Windows) apps
@@ -89,9 +92,6 @@ conceptualContent:
         - url: core/tools/index.md
           itemType: overview
           text: .NET Core CLI overview
-        - url: core/testing/index.md
-          itemType: tutorial
-          text: Unit testing with .NET Core apps
         - url: core/porting/index.md
           itemType: how-to-guide
           text: Porting from .NET Framework to .NET Core

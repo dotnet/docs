@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
 title: .NET documentation
-summary: Learn to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
+summary: Learn to use .NET to create applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
 brand: dotnet
 
 metadata:
   title: .NET documentation
-  description: Learn to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
+  description: Learn to use .NET to create applications on any platform using C#, Visual Basic, and F#. Browse API reference, sample code, tutorials, and more.
   ms.product: dotnet
   ms.topic: hub-page
   ms.collection: collection
@@ -39,31 +39,27 @@ conceptualContent:
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
-    - title: Open source .NET
-      summary: Start developing apps with .NET Core
+    - title: Open-source .NET
+      summary: Learn about .NET Core
       links:
-        - url: core/get-started.md
-          itemType: get-started
-          text: Get started
+        - url: core/index.md
+          itemType: overview
+          text: .NET Core overview
         - url: core/whats-new/dotnet-core-3-0.md
           itemType: whats-new
-          text: What's new in .NET Core 3.0
+          text: What's new in .NET Core 3.1
+        - url: standard/tour.md
+          itemType: overview
+          text: Tour of .NET
         - url: core/deploying/index.md
           itemType: deploy
-          text: Deploying .NET Core apps
+          text: Deploy .NET Core apps
         - url: core/docker/build-container.md
           itemType: tutorial
           text: Containerize .NET Core apps with Docker
         - url: core/tutorials/index.md
           itemType: tutorial
           text: Tutorials
-        - url: core/porting/index.md
-          itemType: how-to-guide
-          text: Port apps from .NET Framework
-      # footerLink (optional)
-      footerLink:
-        url: core/index.md
-        text: See more
     # Card
     - title: .NET concepts
       summary: Learn the fundamental concepts of .NET
@@ -71,25 +67,21 @@ conceptualContent:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
           text: What is .NET?
-        - url: standard/get-started.md
-          itemType: get-started
-          text: Get started
-        - url: standard/tour.md
+        - url: standard/index.md
           itemType: overview
-          text: Tour of .NET
-        - url: standard/components.md
-          itemType: concept
-          text: .NET architectural components
+          text: Overview of .NET
         - url: standard/net-standard.md
           itemType: overview
           text: .NET Standard
+        - url: standard/get-started.md
+          itemType: get-started
+          text: Get started
+        - url: standard/components.md
+          itemType: concept
+          text: .NET architectural components
         - url: framework/index.md
           itemType: overview
           text: .NET Framework (Windows) apps
-      # footerLink (optional)
-      footerLink:
-        url: standard/index.md
-        text: See more
     # Card
     - title: Develop .NET apps
       summary: Start developing with .NET
@@ -100,9 +92,6 @@ conceptualContent:
         - url: core/tools/index.md
           itemType: overview
           text: .NET Core CLI overview
-        - url: core/testing/index.md
-          itemType: tutorial
-          text: Unit testing with .NET Core apps
         - url: core/porting/index.md
           itemType: how-to-guide
           text: Porting from .NET Framework to .NET Core
@@ -112,9 +101,6 @@ conceptualContent:
         - url: standard/library-guidance/index.md
           itemType: concept
           text: Open source library guidance
-      footerLink:
-        url: core/index.md
-        text: See more
     # Card
     - title: .NET architectural guides
       summary: Read foundational development and architectural guidance for .NET
@@ -134,7 +120,7 @@ conceptualContent:
       # footerLink (optional)
       footerLink:
         url: architecture/index.yml
-        text: See more
+        text: All architecture guides
 
 # tools section (optional)
 ## Languages: C#, VB, F#, 

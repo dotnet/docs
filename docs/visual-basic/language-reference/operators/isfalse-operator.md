@@ -1,5 +1,5 @@
 ---
-title: "IsFalse Operator (Visual Basic)"
+title: "IsFalse Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.isfalse"

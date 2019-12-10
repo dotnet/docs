@@ -13,7 +13,7 @@ ms.assetid: c817242e-b12c-4baa-a57e-73ee138f34d1
 ---
 # group clause (C# Reference)
 
-The `group` clause returns a sequence of <xref:System.Linq.IGrouping%602> objects that contain zero or more items that match the key value for the group. For example, you can group a sequence of strings according to the first letter in each string. In this case, the first letter is the key and has a type [char](char.md), and is stored in the `Key` property of each <xref:System.Linq.IGrouping%602> object. The compiler infers the type of the key.
+The `group` clause returns a sequence of <xref:System.Linq.IGrouping%602> objects that contain zero or more items that match the key value for the group. For example, you can group a sequence of strings according to the first letter in each string. In this case, the first letter is the key and has a type [char](../builtin-types/char.md), and is stored in the `Key` property of each <xref:System.Linq.IGrouping%602> object. The compiler infers the type of the key.
 
 You can end a query expression with a `group` clause, as shown in the following example:
 

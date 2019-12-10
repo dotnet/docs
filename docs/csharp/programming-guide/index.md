@@ -34,8 +34,6 @@ This section provides detailed information on key C# language features and featu
   
  [Interfaces](./interfaces/index.md)  
 
- [Enumeration Types](./enumeration-types.md)  
-  
  [Delegates](./delegates/index.md)  
 
  [Arrays](./arrays/index.md)  

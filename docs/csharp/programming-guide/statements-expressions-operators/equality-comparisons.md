@@ -22,7 +22,7 @@ It is sometimes necessary to compare two values for equality. In some cases, you
 
 ## Value equality
 
- Value equality means that two objects contain the same value or values. For primitive value types such as [int](../../language-reference/builtin-types/integral-numeric-types.md) or [bool](../../language-reference/keywords/bool.md), tests for value equality are straightforward. You can use the [==](../../language-reference/operators/equality-operators.md#equality-operator-) operator, as shown in the following example.  
+ Value equality means that two objects contain the same value or values. For primitive value types such as [int](../../language-reference/builtin-types/integral-numeric-types.md) or [bool](../../language-reference/builtin-types/bool.md), tests for value equality are straightforward. You can use the [==](../../language-reference/operators/equality-operators.md#equality-operator-) operator, as shown in the following example.  
   
 ```csharp  
 int a = GetOriginalValue();  

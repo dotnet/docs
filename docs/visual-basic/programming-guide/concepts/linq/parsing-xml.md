@@ -1,5 +1,5 @@
 ---
-title: "Parsing XML (Visual Basic)"
+title: "Parsing XML"
 ms.date: 07/20/2015
 ms.assetid: 5bcbd7e2-d9f1-4c8f-80d6-39915fe17bd1
 ---

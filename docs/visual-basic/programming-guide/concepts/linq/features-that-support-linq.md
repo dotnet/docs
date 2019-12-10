@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Features That Support LINQ"
+title: "Features That Support LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic, LINQ features"

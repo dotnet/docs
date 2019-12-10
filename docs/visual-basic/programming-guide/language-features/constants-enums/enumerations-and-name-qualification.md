@@ -1,5 +1,5 @@
 ---
-title: "Enumerations and Name Qualification (Visual Basic)"
+title: "Enumerations and Name Qualification"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declarations [Visual Basic], enumerations"

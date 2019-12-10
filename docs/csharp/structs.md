@@ -11,7 +11,7 @@ A *struct* is a value type. When a struct is created, the variable to which the 
 
 Value type variables directly contain their values, which means that the memory is allocated inline in whatever context the variable is declared. There is no separate heap allocation or garbage collection overhead for value-type variables.  
   
-There are two categories of value types: [struct](./language-reference/keywords/struct.md) and [enum](./language-reference/keywords/enum.md).  
+There are two categories of value types: [struct](language-reference/keywords/struct.md) and [enum](language-reference/builtin-types/enum.md).  
   
 The built-in numeric types are structs, and they have properties and methods that you can access:  
   

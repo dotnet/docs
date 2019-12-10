@@ -1,5 +1,5 @@
 ---
-title: "How to: Modify an Office Open XML Document (Visual Basic)"
+title: "How to: Modify an Office Open XML Document"
 ms.date: 07/20/2015
 ms.assetid: 1cefd7f5-8e39-44c4-869c-f8021538a777
 ---

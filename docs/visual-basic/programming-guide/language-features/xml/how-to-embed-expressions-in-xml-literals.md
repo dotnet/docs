@@ -1,5 +1,5 @@
 ---
-title: "How to: Embed Expressions in XML Literals (Visual Basic)"
+title: "How to: Embed Expressions in XML Literals"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "embedded expressions [Visual Basic]"

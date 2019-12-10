@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], metadata"
   - "metadata [.NET Framework], using the unmanaged API"
 ms.assetid: 10cfea92-db5e-4bcb-b301-ef029bcf77a3
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Metadata (Unmanaged API Reference)
 The metadata API enables a client, such as a compiler, to generate or access a component's metadata without the types being loaded by the common language runtime (CLR).  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 886ea6c5-6b26-4b88-8bf6-448d6d191950
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ExportNestedTypeForwarder Method
 Adds a type forwarder for a nested type to the type table of the given assembly.  

@@ -1,5 +1,5 @@
 ---
-title: "Partial Methods (Visual Basic)"
+title: "Partial Methods"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.PartialMethod"

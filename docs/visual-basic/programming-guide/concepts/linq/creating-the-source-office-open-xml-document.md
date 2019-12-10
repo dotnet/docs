@@ -1,5 +1,5 @@
 ---
-title: "Creating the Source Office Open XML Document (Visual Basic)"
+title: "Creating the Source Office Open XML Document"
 ms.date: 07/20/2015
 ms.assetid: 61ccd6fb-0c47-4075-afdf-5b5021330f21
 ---

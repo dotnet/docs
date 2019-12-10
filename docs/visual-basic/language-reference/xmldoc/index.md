@@ -1,5 +1,5 @@
 ---
-title: "Recommended XML Tags for Documentation Comments (Visual Basic)"
+title: "Recommended XML Tags for Documentation Comments"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlDocComment"

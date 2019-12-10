@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 274e73cf-8333-47ba-ac12-70214e2b0112
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedSymbolSearchInfo::GetSearchPathLength Method
 Gets the search path length.  

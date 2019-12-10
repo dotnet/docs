@@ -1,5 +1,5 @@
 ---
-title: "Manipulating Files and Directories in Visual Basic"
+title: "Manipulating Files and Directories"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [Visual Basic], reading text"

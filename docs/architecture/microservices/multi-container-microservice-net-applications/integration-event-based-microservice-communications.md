@@ -122,6 +122,19 @@ The `Publish` method is straightforward. The event bus will broadcast the integr
 
 The `Subscribe` methods (you can have several implementations depending on the arguments) are used by the microservices that want to receive events. This method has two arguments. The first is the integration event to subscribe to (`IntegrationEvent`). The second argument is the integration event handler (or callback method), named `IIntegrationEventHandler<T>`, to be executed when the receiver microservice gets that integration event message.
 
+## Additional resources
+
+Some production-ready messaging solutions:
+
+- **Azure Service Bus** \
+  <https://docs.microsoft.com/azure/service-bus-messaging/>
+  
+- **NServiceBus** \
+  <https://particular.net/nservicebus>
+  
+- **MassTransit** \
+  <https://masstransit-project.com/>
+
 > [!div class="step-by-step"]
 > [Previous](database-server-container.md)
 > [Next](rabbitmq-event-bus-development-test-environment.md)

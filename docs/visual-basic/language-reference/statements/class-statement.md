@@ -1,5 +1,5 @@
 ---
-title: "Class Statement (Visual Basic)"
+title: "Class Statement"
 ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Class"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Upload a File in Visual Basic"
+title: "How to: Upload a File"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "networks, uploading files"

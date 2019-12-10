@@ -1,5 +1,5 @@
 ---
-title: "Shape of WordprocessingML Documents (Visual Basic)"
+title: "Shape of WordprocessingML Documents"
 ms.date: 07/20/2015
 ms.assetid: 2dfb446b-5a07-4c00-9ab3-a74ba734ff3a
 ---

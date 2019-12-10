@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Keyboard Object (Visual Basic)"
+title: "My.Computer.Keyboard Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Keyboard object"

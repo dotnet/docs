@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b50488a5-3cf0-483c-82dc-2892a3ec61ac
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport2::EnumGenericParams Method
 Gets an enumerator for an array of generic parameter tokens associated with the specified TypeDef or MethodDef token.  

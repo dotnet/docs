@@ -2,7 +2,7 @@
 title: dotnet nuget push command
 description: The dotnet nuget push command pushes a package to the server and publishes it.
 author: karann-msft
-ms.date: 06/26/2019
+ms.date: 12/04/2019
 ---
 # dotnet nuget push
 
@@ -20,7 +20,7 @@ ms.date: 06/26/2019
 
 ```dotnetcli
 dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output] [--interactive] [-k|--api-key] [-n|--no-symbols]
-    [--no-service-endpoint] [-s|--source] [-sk|--symbol-api-key] [-ss|--symbol-source] [-t|--timeout]
+    [--no-service-endpoint] [-s|--source] [--skip-duplicate] [-sk|--symbol-api-key] [-ss|--symbol-source] [-t|--timeout]
 dotnet nuget push [-h|--help]
 ```
 
@@ -46,7 +46,7 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 
 * **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
 * **`--interactive`**
 
@@ -68,6 +68,10 @@ Prints out a short help for the command.
 
   Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
 
+* **`--skip-duplicate`**
+
+  When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue. Available since .NET Core 3.1 SDK.
+                                 
 * **`-sk|--symbol-api-key <API_KEY>`**
 
   The API key for the symbol server.
@@ -122,3 +126,9 @@ Prints out a short help for the command.
   > If this command doesn't work, it might be due to a bug that existed in older versions of the SDK (.NET Core 2.1 SDK and earlier versions).
   > To fix this, upgrade your SDK version or run the following command instead:
   > `dotnet nuget push **/*.nupkg`
+  
+* Pushes all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
+
+  ```dotnetcli
+  dotnet nuget push *.nupkg --skip-duplicate
+  ```

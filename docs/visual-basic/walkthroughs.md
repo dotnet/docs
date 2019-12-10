@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Language Walkthroughs"
+title: "Language Walkthroughs"
 description: Step-by-step instructions for common scenarios in Visual Basic development
 ms.date: 07/20/2015
 helpviewer_keywords:

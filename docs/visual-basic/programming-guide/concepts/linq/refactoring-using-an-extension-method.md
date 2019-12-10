@@ -1,5 +1,5 @@
 ---
-title: "Refactoring Using an Extension Method (Visual Basic)"
+title: "Refactoring Using an Extension Method"
 ms.date: 07/20/2015
 ms.assetid: d87ae99a-cfa9-4a31-a5e4-9d6437be6810
 ---

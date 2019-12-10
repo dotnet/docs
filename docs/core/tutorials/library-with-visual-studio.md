@@ -42,7 +42,7 @@ To create the blank solution:
 
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
 
-   1. On the **Add a new project** page, enter **library** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **Windows** from the Platform list. Choose the **Class Library (.NET Standard)** template, and then choose **Next**.
+   1. On the **Add a new project** page, enter **library** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Class Library (.NET Standard)** template, and then choose **Next**.
 
    1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box. Then, choose **Create**.
 
@@ -64,7 +64,7 @@ To create the blank solution:
 
    1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
 
-   1. On the **Add a new project** page, enter **library** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **Windows** from the Platform list. Choose the **Class Library (.NET Standard)** template, and then choose **Next**.
+   1. On the **Add a new project** page, enter **library** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Class Library (.NET Standard)** template, and then choose **Next**.
 
    1. On the **Configure your new project** page, enter **StringLibrary** in the **Project name** box. Then, choose **Create**.
 

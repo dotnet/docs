@@ -32,7 +32,7 @@ The following instructions create a simple Hello World console application:
 
       ![Create a new project button selected on the Visual Studio start window](media/with-visual-studio/start-window.png)
 
-   1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** from the Language list, and then choose **Windows** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
+   1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
 
       ![Create a new project window with filters selected](media/with-visual-studio/create-new-project.png)
 
@@ -57,7 +57,7 @@ The following instructions create a simple Hello World console application:
 
       ![Create a new project button selected on the Visual Studio start window](media/with-visual-studio/start-window.png)
 
-   1. On the **Create a new project** page, enter **console** in the search box. Next, choose **Visual Basic** from the Language list, and then choose **Windows** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
+   1. On the **Create a new project** page, enter **console** in the search box. Next, choose **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
 
       ![Choose the Visual Basic template for the Console App (.NET Framework)](media/with-visual-studio/vb/create-new-project.png)
 

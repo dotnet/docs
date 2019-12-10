@@ -39,10 +39,8 @@ Get started developing .NET Core applications by following these step-by-step tu
 
 # [Windows](#tab/windows)
 
-- [Create your first C# .NET Core console application in Visual Studio 2019](tutorials/with-visual-studio.md)
-- [Build a C# class library with .NET Standard in Visual Studio](./tutorials/library-with-visual-studio.md)
-- [Build a Visual Basic "Hello World" application with .NET Core in Visual Studio](./tutorials/vb-with-visual-studio.md)
-- [Build a class library with Visual Basic and .NET Standard in Visual Studio](./tutorials/vb-library-with-visual-studio.md)
+- [Create your first .NET Core console application in Visual Studio 2019](tutorials/with-visual-studio.md)
+- [Build a class library with .NET Standard in Visual Studio](./tutorials/library-with-visual-studio.md)
 - [Get started with .NET Core using the .NET Core CLI](tutorials/using-with-xplat-cli.md)
 
 |   |   |

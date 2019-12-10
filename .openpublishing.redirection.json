@@ -378,6 +378,14 @@
             "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
         },
         {
+            "source_path": "docs/core/tutorials/vb-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+        },
+        {
+            "source_path": "docs/core/tutorials/vb-library-with-visual-studio.md",
+            "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
+        },
+        {
             "source_path": "docs/core/versions/install-management.md",
             "redirect_url": "/dotnet/core/versions/remove-runtime-sdk-versions"
         },
@@ -2105,7 +2113,7 @@
             "source_path": "docs/framework/security/wstrustchannelfactory-and-wstrustchannel.md",
             "redirect_url": "/previous-versions/dotnet/framework/security/wstrustchannelfactory-and-wstrustchannel",
             "redirect_document_id": true
-        },  
+        },
         {
             "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
             "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"

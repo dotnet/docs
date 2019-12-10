@@ -6,7 +6,7 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio
 
-So far, you've followed the steps in [Create your first .NET Core console application in Visual Studio](with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use when testing and troubleshooting your application.
+So far, you've followed the steps in [Create your first .NET Core console application in Visual Studio 2019](with-visual-studio.md) to create and run a simple console application. Once you've written and compiled your application, you can begin testing it. Visual Studio includes a comprehensive set of debugging tools that you can use to troubleshoot your application.
 
 ## Debug build configuration
 
@@ -24,9 +24,11 @@ Run your program and try a few debugging features:
 
 # [C#](#tab/csharp)
 
-1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
+1. Set a *breakpoint* on the line that reads `Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");` by clicking in the left margin of the code window on that line. You can also set a breakpoint by placing the caret in the line of code and then pressing **F9** or choosing **Debug** > **Toggle Breakpoint** from the menu bar.
 
-   Set a breakpoint on the line that reads `Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");` by clicking in the left margin of the code window on that line. You can also set a breakpoint by placing the caret in the line of code and then pressing **F9** or choosing **Debug** > **Toggle Breakpoint** from the menu bar. As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
+   A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
+
+   As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/set-breakpoint-in-editor.png)
 
@@ -58,9 +60,11 @@ Run your program and try a few debugging features:
 
 # [Visual Basic](#tab/vb)
 
-1. A *breakpoint* temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
+1. Set a *breakpoint* on the line that reads `Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}!")` by clicking in the left margin of the code window on that line. You can also set a breakpoint by placing the caret on the desired line and then choosing **Debug** > **Toggle Breakpoint** from the menu bar.
 
-   Set a breakpoint on the line that reads `Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}!")` by clicking in the left margin of the code window on that line. You can also set a breakpoint by placing the caret on the desired line and then choosing **Debug** > **Toggle Breakpoint** from the menu bar. As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
+   A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
+   
+   As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/vb/set-breakpoint-in-editor.png)
 

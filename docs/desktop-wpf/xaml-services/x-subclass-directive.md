@@ -53,4 +53,4 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
 ## See also
 
 - [x:Class Directive](x-class-directive.md)
-- [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

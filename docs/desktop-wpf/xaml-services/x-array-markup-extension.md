@@ -58,9 +58,9 @@ Provides general support for arrays of objects in XAML through a markup extensio
 </x:Array>
 ```
   
- For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
+ For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
   
 ## See also
 
-- [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
 - [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)

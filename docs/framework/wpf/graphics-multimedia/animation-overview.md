@@ -286,7 +286,7 @@ Assigning a name to a <xref:System.Windows.FrameworkElement> differs from assign
 
 - To make a <xref:System.Windows.FrameworkElement> an animation target, you give it a name by setting its <xref:System.Windows.FrameworkElement.Name%2A> property. In code, you must also use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the element name with the page to which it belongs.
 
-- To make a <xref:System.Windows.Freezable> object an animation target in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](../../xaml-services/x-name-directive.md) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.
+- To make a <xref:System.Windows.Freezable> object an animation target in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](../../../desktop-wpf/xaml-services/x-name-directive.md) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.
 
 The sections that follow provide an example of naming an element in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and code. For more detailed information about naming and targeting, see the [Storyboards Overview](storyboards-overview.md).
 

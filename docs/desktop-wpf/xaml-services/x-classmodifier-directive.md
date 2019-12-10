@@ -50,7 +50,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 ## See also
 
 - [x:Class Directive](x-class-directive.md)
-- [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [x:FieldModifier Directive](x-fieldmodifier-directive.md)
-- [Security (WPF)](../wpf/security-wpf.md)
+- [Security (WPF)](../../framework/wpf/security-wpf.md)
 - [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)

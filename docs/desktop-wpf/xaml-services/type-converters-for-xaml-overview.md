@@ -105,4 +105,4 @@ Type converters supply logic for an object writer that converts from a string in
 
 - <xref:System.ComponentModel.TypeConverterAttribute>
 - [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md)
-- [XAML Overview (WPF)](../../desktop-wpf/fundamentals/xaml.md)
+- [XAML Overview (WPF)](../fundamentals/xaml.md)

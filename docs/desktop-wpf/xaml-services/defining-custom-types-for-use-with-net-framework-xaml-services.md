@@ -33,7 +33,7 @@ When you define custom types that are business objects or are types that do not 
 ## Enumerations  
  Enumerations have XAML native type conversion behavior. Enumeration constant names specified in XAML are resolved against the underlying enumeration type, and return the enumeration value to a XAML object writer.  
   
- XAML supports a flags-style usage for enumerations with <xref:System.FlagsAttribute> applied. For more information, see [XAML Syntax In Detail](../wpf/advanced/xaml-syntax-in-detail.md). ([XAML Syntax In Detail](../wpf/advanced/xaml-syntax-in-detail.md) is written for the WPF audience, but most of the information in that topic is relevant for XAML that is not specific to a particular implementing framework.)  
+ XAML supports a flags-style usage for enumerations with <xref:System.FlagsAttribute> applied. For more information, see [XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md). ([XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md) is written for the WPF audience, but most of the information in that topic is relevant for XAML that is not specific to a particular implementing framework.)  
   
 ## Member Definitions  
  Types can define members for XAML usage. It is possible for types that define members that are XAML-usable even if that specific type is not XAML-usable. This is possible because of CLR inheritance. So long as some type that inherits the member supports XAML usage as a type, and the member supports XAML usage for its underlying type or has a native XAML syntax available, that member is XAML-usable.  

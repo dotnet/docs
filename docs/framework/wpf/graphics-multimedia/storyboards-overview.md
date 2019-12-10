@@ -101,7 +101,7 @@ After it has a name, you can animate a property of that element.
 
 <xref:System.Windows.Freezable> types are those classes that inherit from the <xref:System.Windows.Freezable> class. Examples of <xref:System.Windows.Freezable> include <xref:System.Windows.Media.SolidColorBrush>, <xref:System.Windows.Media.RotateTransform>, and <xref:System.Windows.Media.GradientStop>.
 
-To enable the targeting of a <xref:System.Windows.Freezable> by an animation in  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](../../xaml-services/x-name-directive.md) to assign it a name. In code, you use the  <xref:System.Windows.NameScope.RegisterName%2A> method to register its name with the element for which you've created a <xref:System.Windows.NameScope>.
+To enable the targeting of a <xref:System.Windows.Freezable> by an animation in  [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](../../../desktop-wpf/xaml-services/x-name-directive.md) to assign it a name. In code, you use the  <xref:System.Windows.NameScope.RegisterName%2A> method to register its name with the element for which you've created a <xref:System.Windows.NameScope>.
 
 The following example assigns a name to a <xref:System.Windows.Freezable> object.
 

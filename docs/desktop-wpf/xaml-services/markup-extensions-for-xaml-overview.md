@@ -169,4 +169,4 @@ If you are working with a XAML node stream on the save path, there generally is 
 
 - <xref:System.Windows.Markup.MarkupExtension>
 - [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md)
-- [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

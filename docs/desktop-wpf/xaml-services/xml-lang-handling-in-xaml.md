@@ -39,4 +39,4 @@ The `xml:lang` attribute is an XML-defined attribute that declares the language 
   
 ## See also
 
-- [Globalization for WPF](../wpf/advanced/globalization-for-wpf.md)
+- [Globalization for WPF](../../framework/wpf/advanced/globalization-for-wpf.md)

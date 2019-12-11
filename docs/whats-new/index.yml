@@ -1,0 +1,53 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: .NET Documentation What's New?
+metadata:
+  title: .NET Documentation What's New?
+  description: What's new in .NET docs.
+  ms.topic: landing-page
+  ms.date: 12/12/2019
+abstract:
+  description: Welcome to what's new in .NET docs.
+sections:
+- title: What's new?
+  items:
+  - type: list
+    style: cards
+    className: cardsB
+    items:
+    - href: 2019-11.md
+      html: "What's new in .NET docs in November 2019"
+      image:
+        src: https://docs.microsoft.com/media/common/i_article.svg
+        href: 2019-11.md
+      title: November 2019
+- title: Open source contributions
+  items:
+  - type: list
+    style: cards
+    className: cardsB
+    items:
+    - href: https://github.com/dotnet/docs/blob/master/README.md
+      html: The .NET Docs repo provides a roadmap to the repos that are part of .NET docs and information on working with us.
+      image:
+        src: https://docs.microsoft.com/media/common/i_library.svg
+        href: https://github.com/dotnet/docs/blob/master/README.md
+      title: .NET Docs source repo overview
+    - href: https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md
+      html: If you are interested in contributing to .NET content, start with this contributor guide.
+      image:
+        src: https://docs.microsoft.com/media/common/i_library.svg
+        href: https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md
+      title: Contributor Guide
+    - href: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
+      html: If you want to contribute to the .NET API docs, you can do so at the .NET docs API repo.
+      image:
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+        href: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
+      title: .NET API docs contributor guide
+    - href: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
+      html: If you want to contribute to the .NET samples, you can do so at the .NET docs samples repo.
+      image:
+        src: https://docs.microsoft.com/media/common/i_api-reference.svg
+        href: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
+      title: .NET docs samples contributor guide

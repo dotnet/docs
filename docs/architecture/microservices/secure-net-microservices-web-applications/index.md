@@ -31,17 +31,48 @@ When microservices are accessed directly, trust, that includes authentication an
 
 The primary mechanism in ASP.NET Core for identifying an application’s users is the [ASP.NET Core Identity](/aspnet/core/security/authentication/identity) membership system. ASP.NET Core Identity stores user information (including sign-in information, roles, and claims) in a data store configured by the developer. Typically, the ASP.NET Core Identity data store is an Entity Framework store provided in the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` package. However, custom stores or other third-party packages can be used to store identity information in Azure Table Storage, CosmosDB, or other locations.
 
-The following code is taken from the ASP.NET Core Web Application project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using EntityFramework.Core in the Startup.ConfigureServices method.
+> [!TIP]
+> ASP.NET Core 2.1 and later provides [ASP.NET Core Identity](xref:security/authentication/identity) as a [Razor Class Library](xref:razor-pages/ui-class), so you won't see much of the necessary code in your project, as occurred in previous versions. See the [Scaffold Identity in ASP.NET Core projects](/aspnet/core/security/authentication/scaffold-identity) section for details on how to customize the Identity code to suit your needs.
+
+The following code is taken from the ASP.NET Core Web Application MVC (v3.1) project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using EntityFramework.Core in the Startup.ConfigureServices method.
 
 ```csharp
-services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-    services.AddIdentity<ApplicationUser, IdentityRole>()
-        .AddEntityFrameworkStores<ApplicationDbContext>()
-        .AddDefaultTokenProviders();
+public void ConfigureServices(IServiceCollection services)
+{
+    //...
+    services.AddDbContext<ApplicationDbContext>(options =>
+        options.UseSqlServer(
+            Configuration.GetConnectionString("DefaultConnection")));
+
+    services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+        .AddEntityFrameworkStores<ApplicationDbContext>();
+
+    services.AddRazorPages();
+    //...
+}
 ```
 
-Once ASP.NET Core Identity is configured, you enable it by calling app.UseIdentity in the service’s `Startup.Configure` method.
+Once ASP.NET Core Identity is configured, you enable it by adding the `app.UseAuthentication()` and `endpoints.MapRazorPages()` as shown in the following code in the service’s `Startup.Configure` method:
+
+```csharp
+public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+{
+    //...
+    app.UseRouting();
+
+    app.UseAuthentication();
+    app.UseAuthorization();
+
+    app.UseEndpoints(endpoints =>
+    {
+        endpoints.MapRazorPages();
+    });
+    //...
+}
+```
+
+> [!IMPORTANT]
+> The lines in the code above **MUST BE IN THE ORDER SHOWN** for Identity to work correctly.
 
 Using ASP.NET Core Identity enables several scenarios:
 
@@ -59,7 +90,27 @@ For authentication scenarios that make use of a local user data store and that p
 
 ASP.NET Core also supports using [external authentication providers](/aspnet/core/security/authentication/social/) to let users sign in via [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) flows. This means that users can sign in using existing authentication processes from providers like Microsoft, Google, Facebook, or Twitter and associate those identities with an ASP.NET Core identity in your application.
 
-To use external authentication, you include the appropriate authentication middleware in your application’s HTTP request processing pipeline. This middleware is responsible for handling requests to return URI routes from the authentication provider, capturing identity information, and making it available via the SignInManager.GetExternalLoginInfo method.
+To use external authentication, besides including the authentication middleware as mentioned before, using the `app.UseAuthentication()` method, you also have to register the external provider in `Startup` as shown below.
+
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    //...
+    services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+        .AddEntityFrameworkStores<ApplicationDbContext>();
+
+    services.AddAuthentication()
+        .AddMicrosoftAccount(microsoftOptions =>
+        {
+            microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
+            microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
+        })
+        .AddGoogle(googleOptions => { ... })
+        .AddTwitter(twitterOptions => { ... })
+        .AddFacebook(facebookOptions => { ... });
+    //...
+}
+```
 
 Popular external authentication providers and their associated NuGet packages are shown in the following table:
 
@@ -70,15 +121,15 @@ Popular external authentication providers and their associated NuGet packages ar
 | **Facebook**  | **Microsoft.AspNetCore.Authentication.Facebook**         |
 | **Twitter**   | **Microsoft.AspNetCore.Authentication.Twitter**          |
 
-In all cases, the middleware is registered with a call to a registration method similar to `app.Use{ExternalProvider}Authentication` in `Startup.Configure`. These registration methods take an options object that contains an application ID and secret information (a password, for instance), as needed by the provider. External authentication providers require the application to be registered (as explained in [ASP.NET Core documentation](/aspnet/core/security/authentication/social/)) so that they can inform the user what application is requesting access to their identity.
+In all cases, You have to complete an application registration procedure that's vendor dependent, and usually involves:
+
+1. Getting a Client Application Id.
+2. Getting a Client Application Secret.
+3. Configuring an redirection URL, that's handled by the authorization middleware and the registered provider
+
+For details on configuring your app for external provider, see the [External provider authentication in the ASP.NET Core documentation](/aspnet/core/security/authentication/social/)).
 
 Once the middleware is registered in `Startup.Configure`, you can prompt users to sign in from any controller action. To do this, you create an `AuthenticationProperties` object that includes the authentication provider’s name and a redirect URL. You then return a Challenge response that passes the `AuthenticationProperties` object. The following code shows an example of this.
-
-```csharp
-var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider,
-    redirectUrl);
-return Challenge(properties, provider);
-```
 
 The redirectUrl parameter includes the URL that the external provider should redirect to once the user has authenticated. The URL should represent an action that will sign the user in based on external identity information, as in the following simplified example:
 
@@ -115,11 +166,12 @@ else
 }
 ```
 
-If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, all the code necessary to sign in with an external provider is already in the project, as shown in Figure 9-3.
+> [!TIP]
+If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, as shown in Figure 9-3, all the code necessary to sign in with an external provider is already in the project, and you don't need to implement the code above.
 
 ![Screenshot of the New ASP.NET Core Web Application dialog.](./media/index/select-external-authentication-option.png)
 
-**Figure 9-3**. Selecting an option for using external authentication when creating a web application project
+**Figure 9-3**. Selecting an option for using external authentication when creating a web application project in Visual Studio 2019.
 
 In addition to the external authentication providers listed previously, third-party packages are available that provide middleware for using many more external authentication providers. For a list, see the [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) repo on GitHub.
 
@@ -141,31 +193,36 @@ If user information is stored in Azure Active Directory or another identity solu
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
     //…
-    // Configure the pipeline to use authentication
     app.UseAuthentication();
     //…
-    app.UseMvc();
+    app.UseEndpoints(endpoints =>
+    {
+        //...
+    });
 }
 
 public void ConfigureServices(IServiceCollection services)
 {
     var identityUrl = Configuration.GetValue<string>("IdentityUrl");
     var callBackUrl = Configuration.GetValue<string>("CallBackUrl");
+    var sessionCookieLifetime = configuration.GetValue("SessionCookieLifetimeMinutes", 60);
 
     // Add Authentication services
 
     services.AddAuthentication(options =>
     {
         options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-        options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
     })
-    .AddCookie()
+    .AddCookie(setup => setup.ExpireTimeSpan = TimeSpan.FromMinutes(sessionCookieLifetime))
     .AddOpenIdConnect(options =>
     {
         options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-        options.Authority = identityUrl;
-        options.SignedOutRedirectUri = callBackUrl;
+        options.Authority = identityUrl.ToString();
+        options.SignedOutRedirectUri = callBackUrl.ToString();
+        options.ClientId = useLoadTest ? "mvctest" : "mvc";
         options.ClientSecret = "secret";
+        options.ResponseType = useLoadTest ? "code id_token token" : "code id_token";
         options.SaveTokens = true;
         options.GetClaimsFromUserInfoEndpoint = true;
         options.RequireHttpsMetadata = false;
@@ -212,12 +269,16 @@ When you specify clients and resources for IdentityServer4 to use, you can pass 
 A sample configuration for IdentityServer4 to use in-memory resources and clients provided by a custom IClientStore type might look like the following example:
 
 ```csharp
-// Add IdentityServer services
-services.AddSingleton<IClientStore, CustomClientStore>();
-services.AddIdentityServer()
-    .AddSigningCredential("CN=sts")
-    .AddInMemoryApiResources(MyApiResourceProvider.GetAllResources())
-    .AddAspNetIdentity<ApplicationUser>();
+public IServiceProvider ConfigureServices(IServiceCollection services)
+{
+    //...
+    services.AddSingleton<IClientStore, CustomClientStore>();
+    services.AddIdentityServer()
+        .AddSigningCredential("CN=sts")
+        .AddInMemoryApiResources(MyApiResourceProvider.GetAllResources())
+        .AddAspNetIdentity<ApplicationUser>();
+    //...
+}
 ```
 
 ### Consume security tokens
@@ -235,7 +296,10 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     // Configure the pipeline to use authentication
     app.UseAuthentication();
     //…
-    app.UseMvc();
+    app.UseEndpoints(endpoints =>
+    {
+        //...
+    });
 }
 
 public void ConfigureServices(IServiceCollection services)
@@ -246,8 +310,8 @@ public void ConfigureServices(IServiceCollection services)
 
     services.AddAuthentication(options =>
     {
-        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultAuthenticateScheme = AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme;
 
     }).AddJwtBearer(options =>
     {

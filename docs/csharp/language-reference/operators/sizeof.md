@@ -31,7 +31,7 @@ The `sizeof` operator requires an [unsafe](../keywords/unsafe.md) context. Howev
 |`sizeof(decimal)`|16|
 |`sizeof(bool)`|1|
 
-You also don't need to use an unsafe context when the operand of the `sizeof` operator is the name of an [enum](../keywords/enum.md) type.
+You also don't need to use an unsafe context when the operand of the `sizeof` operator is the name of an [enum](../builtin-types/enum.md) type.
 
 The following example demonstrates the usage of the `sizeof` operator:
 

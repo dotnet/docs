@@ -41,7 +41,7 @@ The following provides an overview of C#’s type system.
 
 [ValueTypes]: ../language-reference/keywords/value-types-table.md
 [SimpleTypes]: ../language-reference/keywords/value-types.md#simple-types
-[EnumTypes]: ../language-reference/keywords/enum.md
+[EnumTypes]: ../language-reference/builtin-types/enum.md
 [StructTypes]: ../language-reference/keywords/struct.md
 [NullableTypes]: ../language-reference/builtin-types/nullable-value-types.md
 [ReferenceTypes]: ../language-reference/keywords/reference-types.md

@@ -16,7 +16,7 @@ There are two kinds of value types:
 
 - [Structs](struct.md)
 
-- [Enumerations](enum.md)
+- [Enumerations](../builtin-types/enum.md)
 
 ## Main features of value types
 

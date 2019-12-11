@@ -41,7 +41,7 @@ In C# 6 and earlier, the match expression must be an expression that returns a v
 - a [string](../builtin-types/reference-types.md).
 - a [bool](../builtin-types/bool.md).
 - an [integral](../builtin-types/integral-numeric-types.md) value, such as an `int` or a `long`.
-- an [enum](enum.md) value.
+- an [enum](../builtin-types/enum.md) value.
 
 Starting with C# 7.0, the match expression can be any non-null expression.
 

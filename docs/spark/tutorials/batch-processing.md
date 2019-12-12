@@ -3,7 +3,7 @@ title: Batch processing with .NET for Apache Spark tutorial
 description: Learn how to do batch processing using .NET for Apache Spark.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 12/12/2019
+ms.date: 12/13/2019
 ms.topic: tutorial
 ---
 
@@ -45,7 +45,7 @@ If this is your first time using .NET for Apache Spark, check out the [Get start
 
 1. To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your console, run the following command:
 
-   ```console
+   ```dotnetcli
    dotnet add package Microsoft.Spark
    ```
 
@@ -146,7 +146,7 @@ The goal of this app is to gain some insights about the GitHub projects data. Ad
 
 1. Use the following command to build your .NET app:
 
-   ```console
+   ```dotnetcli
    dotnet build
    ```
 

@@ -80,7 +80,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 ### XAML Element Usage (XAML 2009 only)  
   
-```  
+```xaml  
 <object>  
   <x:Key>  
 keyObject  
@@ -102,7 +102,7 @@ keyObject
 - *keyObject* could also be a markup extension usage in object element form, rather than a direct object instance.  
   
 ## Silverlight Usage Notes  
- `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=199081).  
+ `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).  
   
 ## See also
 

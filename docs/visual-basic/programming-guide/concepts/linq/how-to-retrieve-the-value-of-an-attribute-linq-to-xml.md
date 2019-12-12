@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve the Value of an Attribute (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve the Value of an Attribute (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 5f4b3790-c83f-4eb3-a889-e3587edf3ca1
 ---

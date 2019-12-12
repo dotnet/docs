@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert Hexadecimal Strings to Numbers (Visual Basic)"
+title: "How to: Convert Hexadecimal Strings to Numbers"
 ms.date: 01/31/2018
 helpviewer_keywords:
   - "numbers [Visual Basic], hexadecimals"

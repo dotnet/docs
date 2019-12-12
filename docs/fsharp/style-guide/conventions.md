@@ -1,7 +1,7 @@
 ---
 title: F# coding conventions
 description: Learn general guidelines and idioms when writing F# code.
-ms.date: 10/22/2019
+ms.date: 11/04/2019
 ---
 # F# coding conventions
 
@@ -166,8 +166,8 @@ Instead, just use a simple class to hold dependencies:
 
 ```fsharp
 type MyParametricApi(dep1, dep2, dep3) =
-    member __.Function1 arg1 = doStuffWith dep1 dep2 dep3 arg1
-    member __.Function2 arg2 = doStuffWith dep1 dep2 dep3 arg2
+    member _.Function1 arg1 = doStuffWith dep1 dep2 dep3 arg1
+    member _.Function2 arg2 = doStuffWith dep1 dep2 dep3 arg2
 ```
 
 This enables the following:
@@ -367,7 +367,7 @@ module Transactions =
         ...
 
 type Transactor(ctx, currentBalance) =
-    member __.ExecuteTransaction(txnType) =
+    member _.ExecuteTransaction(txnType) =
         Transactions.doTransaction ctx txtType currentBalance
         ...
 ```
@@ -395,8 +395,8 @@ open TransactionsTestingUtil.TransactionsTestable
 
 let testableContext =
     { new ITransactionContext with
-        member __.TheFirstMember() = ...
-        member __.TheSecondMember() = ... }
+        member _.TheFirstMember() = ...
+        member _.TheSecondMember() = ... }
 
 let transactionRoutine = getTestableTransactionRoutine testableContext
 
@@ -489,15 +489,15 @@ open System.Collections.Generic
 type Closure1Table() =
     let t = Dictionary<Item0, HashSet<TerminalIndex>>()
 
-    member __.Add(key, value) =
+    member _.Add(key, value) =
         if not (t.ContainsKey(key)) then
             t.Add(key, value)
         else
             t.[key] <- value
 
-    member __.Count = t.Count
+    member _.Count = t.Count
 
-    member __.Contains(key, value) =
+    member _.Contains(key, value) =
         match t.TryGetValue(key) with
         | (true, v) -> v.Equals(value)
         | (false, _) -> false

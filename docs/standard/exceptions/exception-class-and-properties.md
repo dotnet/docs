@@ -13,12 +13,10 @@ ms.author: "mairaw"
 
 The <xref:System.Exception> class is the base class from which exceptions inherit. For example, the <xref:System.InvalidCastException> class hierarchy is as follows:
 
-```
-Object
-  Exception
-    SystemException
-       InvalidCastException
-```
+<xref:System.Object>\
+&nbsp;&nbsp;<xref:System.Exception>\
+&nbsp;&nbsp;&nbsp;&nbsp;<xref:System.SystemException>\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xref:System.InvalidCastException>
 
 The <xref:System.Exception> class has the following properties that help make understanding an exception easier.
 

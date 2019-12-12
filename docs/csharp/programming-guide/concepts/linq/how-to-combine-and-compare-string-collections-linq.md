@@ -1,9 +1,9 @@
 ---
-title: "How to: Combine and Compare String Collections (LINQ) (C#)"
+title: "How to combine and compare string collections (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 25926e5b-fde2-4dc1-86a0-16ead7aa13d2
 ---
-# How to: Combine and Compare String Collections (LINQ) (C#)
+# How to combine and compare string collections (LINQ) (C#)
 This example shows how to merge files that contain lines of text and then sort the results. Specifically, it shows how to perform a simple concatenation, a union, and an intersection on the two sets of text lines.  
   
 ### To set up the project and the text files  

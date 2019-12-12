@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b97493fb-713e-49d5-a73e-5688b2ad0700
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetClassFromObject Method
 Gets the `ClassID` of an object, given its `ObjectID`.  

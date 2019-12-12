@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Language Reference"
+title: "Language Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic language reference"
@@ -79,8 +79,5 @@ This section provides reference information for various aspects of the Visual Ba
   
 ## Related Sections  
 
- [Visual Basic](../../visual-basic/index.md)  
- Provides comprehensive help on all areas of the Visual Basic language.  
-  
  [Visual Basic Command-Line Compiler](../../visual-basic/reference/command-line-compiler/index.md)  
  Describes how to use the command-line compiler as an alternative to compiling programs from within the Visual Studio integrated development environment (IDE).

@@ -1,5 +1,5 @@
 ---
-title: "Grouping Data (Visual Basic)"
+title: "Grouping Data"
 ms.date: 07/20/2015
 ms.assetid: 8f3a0871-6958-4aef-8f6f-493e189fd57d
 ---

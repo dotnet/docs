@@ -1,5 +1,5 @@
 ---
-title: "Validating Passwords Complexity (Visual Basic)"
+title: "Validating Passwords Complexity"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "String data type [Visual Basic], validation"

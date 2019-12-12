@@ -1,5 +1,5 @@
 ---
-title: "Properties (Visual Basic)"
+title: "Properties"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "properties [Visual Basic]"
@@ -27,4 +27,3 @@ This page lists the properties that are members of Visual Basic modules. Other p
 ## See also
 
 - [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
-- [Visual Basic](../../visual-basic/index.md)

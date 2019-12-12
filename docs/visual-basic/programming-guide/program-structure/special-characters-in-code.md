@@ -1,5 +1,5 @@
 ---
-title: "Special Characters in Code (Visual Basic)"
+title: "Special Characters in Code"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.)"

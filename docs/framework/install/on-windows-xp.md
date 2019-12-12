@@ -20,15 +20,15 @@ These instructions will help you install the .NET Framework versions you need. T
 
 ## .NET Framework 4.0.3
 
-The [.NET Framework 4.0.3](https://go.microsoft.com/fwlink/?LinkID=213834) is the latest supported .NET Framework version on Windows XP and Windows Server 2003. The .NET Framework 4.0.3 requires that the [.NET Framework 4](https://go.microsoft.com/fwlink/?LinkID=213834) is installed first. Both of these .NET Framework versions are no longer supported by Microsoft.
+The [.NET Framework 4.0.3](https://www.microsoft.com/download/details.aspx?id=29053) is the latest supported .NET Framework version on Windows XP and Windows Server 2003. The .NET Framework 4.0.3 requires that the [.NET Framework 4](https://dotnet.microsoft.com/download/dotnet-framework/net40) is installed first. Both of these .NET Framework versions are no longer supported by Microsoft.
 
 ## .NET Framework 4
 
-You can install the [.NET Framework 4](https://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows XP. It's no longer supported by Microsoft.
+You can install the [.NET Framework 4](https://dotnet.microsoft.com/download/dotnet-framework/net40) on Windows XP. It's no longer supported by Microsoft.
 
 ## .NET Framework 3.5
 
-You can install the [.NET Framework 3.5](https://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows XP.
+You can install the [.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) on Windows XP.
 
 The .NET Framework 3.5 can be used to run applications built for .NET Framework 1.0 through 3.5.
 

@@ -26,5 +26,5 @@ A <xref:System.Activities.Tracking.CustomTrackingRecord> is emitted in a code ac
 
 ## See also
 
-- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
-- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)
+- [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10))
+- [Monitoring Applications with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: da984f89-4f53-4ab0-ae6f-3e2ee6085994
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeThreadResumed Method
 Notifies the profiler that the specified thread has resumed after being suspended.  

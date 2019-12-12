@@ -50,4 +50,4 @@ Console.WriteLine(contactNodes[0]);
 
 ## See also
 
-- [How to: Find an Element with a Specific Attribute (C#)](how-to-find-an-element-with-a-specific-attribute.md)
+- [How to find an element with a specific attribute (C#)](how-to-find-an-element-with-a-specific-attribute.md)

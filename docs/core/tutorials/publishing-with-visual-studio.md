@@ -30,7 +30,7 @@ In [Build a Hello World application with .NET Core in Visual Studio](with-visual
    
 ## Inspect the files
 
-The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on any platform supported by .NET Core with .NET Core installed on the system. Users can run the published app by issuing the `dotnet HelloWorld.dll` command from a command prompt.
+The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on any platform supported by .NET Core with .NET Core installed on the system. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
 
 In the following steps, you'll look at the files created by the publish process.
 
@@ -62,6 +62,6 @@ In the following steps, you'll look at the files created by the publish process.
 
    ![Console window showing published files](media/publishing-with-visual-studio/published-files-output.png)
 
-## See also
+## Additional resources
 
 - [.NET Core application deployment](../deploying/index.md)

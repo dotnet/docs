@@ -8,7 +8,7 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Publish your .NET Core Hello World application with Visual Studio 2019
 
-In [Build a Hello World application with .NET Core in Visual Studio](with-visual-studio.md), you built a Hello World console application. In [Debug your Hello World application with Visual Studio](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application. To then deploy the files, copy them to the target machine.
+In [Build a Hello World application with .NET Core in Visual Studio](with-visual-studio.md), you built a Hello World console application. In [Debug your Hello World application with Visual Studio](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 
 ## Publish the app
 
@@ -54,7 +54,7 @@ In the following steps, you'll look at the files created by the publish process.
 
       * *HelloWorld.pdb* (optional for deployment)
 
-         This is the debug symbols. You aren't required to deploy this file along with your application, although you should save it in the event that you need to debug the published version of your application.
+         This is the debug symbols file. You aren't required to deploy this file along with your application, although you should save it in the event that you need to debug the published version of your application.
 
       * *HelloWorld.runtimeconfig.json*
 

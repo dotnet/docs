@@ -115,7 +115,7 @@ The model is simply: $Price = b + Size * w$. The parameters $b$ and $w$ are esti
 
 A more complex model classifies financial transactions into categories using the transaction text description.
 
-Each transaction description is broken down into a set of features by removing redundant words and characters, and counting word and character combinations. The feature set is used to train a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category.
+Each transaction description is broken down into a set of features by removing redundant words and characters and counting word and character combinations. The feature set is used to train a linear model based on the set of categories in the training data. The more similar a new description is to the ones in the training set, the more likely it will be assigned to the same category.
 
 ![Text Classification Model](./media/text-classification-model.svg)
 
@@ -123,11 +123,11 @@ Both the house price model and the text classification model are **linear** mode
 
 ## Data preparation
 
-In most cases, the data that you have available isn't suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled.
+In most cases, the data that you have available isn't suitable to be used directly to train a machine learning model. The raw data needs to be prepared or pre-processed before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled.
 
 The [ML.NET tutorials](./tutorials/index.md) teach you about different data processing pipelines for text, image, numerical, and time-series data used for specific machine learning tasks.
 
-[How to prepare your data](./how-to-guides/prepare-data-ml-net.md) shows you how to applied data preparation more generally.
+[How to prepare your data](./how-to-guides/prepare-data-ml-net.md) shows you how to apply data preparation more generally.
 
 You can find an appendix of all of the [available transformations](./resources/transforms.md) in the resources section.
 
@@ -238,7 +238,7 @@ Each transformation in the pipeline has an input schema (data names, types, and 
 
 If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
 
-A data view object has columns and rows. Each column has a name and a type and a length. For example: the input columns in the house price example are **Size** and **Price**. They are both type  and they are scalar quantities rather than vector ones.
+A data view object has columns and rows. Each column has a name and a type and a length. For example the input columns in the house price example are **Size** and **Price**. They are both type and they are scalar quantities rather than vector ones.
 
    ![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
 

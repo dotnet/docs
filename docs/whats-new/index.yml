@@ -1,53 +1,35 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Landing
+
 title: .NET Documentation What's New?
+summary: "Welcome to What's new in .NET docs. Quickly find the latest changes in .NET docs."
+
 metadata:
   title: .NET Documentation What's New?
-  description: What's new in .NET docs.
+  description: "Welcome to What's new in .NET docs."
   ms.topic: landing-page
   ms.date: 12/12/2019
-abstract:
-  description: Welcome to what's new in .NET docs.
-sections:
-- title: What's new?
-  items:
-  - type: list
-    style: cards
-    className: cardsB
-    items:
-    - href: 2019-11.md
-      html: "What's new in .NET docs in November 2019"
-      image:
-        src: https://docs.microsoft.com/media/common/i_article.svg
-        href: 2019-11.md
-      title: November 2019
-- title: Open source contributions
-  items:
-  - type: list
-    style: cards
-    className: cardsB
-    items:
-    - href: https://github.com/dotnet/docs/blob/master/README.md
-      html: The .NET Docs repo provides a roadmap to the repos that are part of .NET docs and information on working with us.
-      image:
-        src: https://docs.microsoft.com/media/common/i_library.svg
-        href: https://github.com/dotnet/docs/blob/master/README.md
-      title: .NET Docs source repo overview
-    - href: https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md
-      html: If you are interested in contributing to .NET content, start with this contributor guide.
-      image:
-        src: https://docs.microsoft.com/media/common/i_library.svg
-        href: https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md
-      title: Contributor Guide
-    - href: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
-      html: If you want to contribute to the .NET API docs, you can do so at the .NET docs API repo.
-      image:
-        src: https://docs.microsoft.com/media/common/i_api-reference.svg
-        href: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
-      title: .NET API docs contributor guide
-    - href: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
-      html: If you want to contribute to the .NET samples, you can do so at the .NET docs samples repo.
-      image:
-        src: https://docs.microsoft.com/media/common/i_api-reference.svg
-        href: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
-      title: .NET docs samples contributor guide
+
+landingContent:
+  - title: "What's new"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: November 2019
+            url: 2019-11.md
+
+  - title: "Open source contributions"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: ".NET Docs repositories overview."
+            url: https://github.com/dotnet/docs/blob/master/README.md
+          - text: "Understand our project structure and label usage for issues and PRs."
+            url: https://github.com/dotnet/docs/blob/master/styleguide/labels-projects.md
+      - linkListType: concept
+        links:
+          - text: ".NET docs Contributor guide"
+            url: https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md
+          - text: ".NET API reference docs Contributor guide"
+            url: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
+          - text: ".NET samples Contributor guide"
+            url: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md

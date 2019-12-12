@@ -1,5 +1,5 @@
 ---
-title: "Formatting Types in .NET"
+title: "Formatting types in .NET"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:

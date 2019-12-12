@@ -25,7 +25,7 @@ The SQL Server container in the sample application is configured with the follow
 
 In a similar way, instead of using `docker-compose`, the following `docker run` command can run that container:
 
-```console
+```powershell
 docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pass@word' -p 5433:1433 -d microsoft/mssql-server-linux:2017-latest
 ```
 

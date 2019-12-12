@@ -34,7 +34,7 @@ To implement a simple CRUD microservice using .NET Core and Visual Studio, you s
 
 ![Screenshot of Visual Studios showing the set up of the project.](./media/data-driven-crud-microservice/create-asp-net-core-web-api-project.png)
 
-**Figure 6-6**. Creating an ASP.NET Core Web API project in Visual Studio
+**Figure 6-6**. Creating an ASP.NET Core Web API project in Visual Studio 2019
 
 To create an ASP.NET Core Web API Project, first select an ASP.NET Core Web Application and then select the API type. After creating the project, you can implement your MVC controllers as you would in any other Web API project, using the Entity Framework API or other API. In a new Web API project, you can see that the only dependency you have in that microservice is on ASP.NET Core itself. Internally, within the *Microsoft.AspNetCore.All* dependency, it is referencing Entity Framework and many other .NET Core NuGet packages, as shown in Figure 6-7.
 

@@ -7,6 +7,8 @@ ms.date: 01/07/2019
 
 While .NET Core offers significant benefits for new applications and application patterns, .NET Framework will continue to be a good choice for many existing scenarios.
 
+However, the recent release of [.NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/), and even more recent [3.1 release](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/), with Long Term Support (LTS). includes significant performance improvements that can help justify a migration. The Windows Desktop related features don't really have an impact on the microservices applications.
+
 ## Migrating existing applications directly to a Windows Server container
 
 You might want to use Docker containers just to simplify deployment, even if you are not creating microservices. For example, perhaps you want to improve your DevOps workflow with Docker—containers can give you better isolated test environments and can also eliminate deployment issues caused by missing dependencies when you move to a production environment. In cases like these, even if you are deploying a monolithic application, it makes sense to use Docker and Windows Containers for your current .NET Framework applications.
@@ -15,7 +17,7 @@ In most cases for this scenario, you will not need to migrate your existing appl
 
 ## Using third-party .NET libraries or NuGet packages not available for .NET Core
 
-Third-party libraries are quickly embracing the [.NET Standard](../../../standard/net-standard.md), which enables code sharing across all .NET flavors, including .NET Core. With the .NET Standard Library 2.0 and beyond the API surface compatibility across different frameworks has become significantly larger and in .NET Core 2.x applications can also directly reference existing .NET Framework libraries (see [.NET Framework 4.6.1 supporting .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/planning/netstandard-2.0/README.md#net-framework-461-supporting-net-standard-20)).
+Third-party libraries are quickly embracing the [.NET Standard](../../../standard/net-standard.md), which enables code sharing across all .NET flavors, including .NET Core. With the .NET Standard Library 2.0 and beyond the API surface compatibility across different frameworks has become significantly larger and, from .NET Core 2.x applications, can also directly reference existing .NET Framework libraries (see [.NET Framework 4.6.1 supporting .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/planning/netstandard-2.0/README.md#net-framework-461-supporting-net-standard-20)).
 
 In addition, the [Windows Compatibility Pack](../../../core/porting/windows-compat-pack.md) was released on NOV-2017 to extend the API surface available for .NET Standard 2.0 on Windows. This pack allows recompiling most existing code to .NET Standard 2.x with little or no modification, to run on Windows.
 
@@ -34,8 +36,6 @@ The following list shows most of the technologies that are not available in .NET
 - Workflow-related services. Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as ADO.NET Data Services) are only available on .NET Framework. There are currently no plans to bring them to .NET Core.
 
 In addition to the technologies listed in the official [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap), other features might be ported to .NET Core. For a full list, look at the items tagged as [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core) on the CoreFX GitHub site. Note that this list does not represent a commitment from Microsoft to bring those components to .NET Core — the items simply capture requests from the community. If you care about any of the components listed above, consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, please [file a new issue in the CoreFX repository](https://github.com/dotnet/corefx/issues/new).
-
-Even though .NET Core 3 (at the time of this writing this is in the works) will include support for a lot of existing .NET Framework APIs, these are desktop oriented so, currently, they are of no use in the container world.
 
 ## Using a platform or API that does not support .NET Core
 

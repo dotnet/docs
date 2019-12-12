@@ -33,7 +33,9 @@ Containers are commonly used in conjunction with a microservices architecture, a
 
 You could use the traditional .NET Framework for building microservices-based applications (without containers) by using plain processes. That way, because the .NET Framework is already installed and shared across processes, processes are light and fast to start. However, if you are using containers, the image for the traditional .NET Framework is also based on Windows Server Core and that makes it too heavy for a microservices-on-containers approach.
 
-In contrast, .NET Core is the best candidate if you are embracing a microservices-oriented system that is based on containers, because .NET Core is lightweight. In addition, its related container images, either the Linux image or the Windows Nano image, are lean and small making containers light and fast to start.
+However, it's important to keep an eye on the news, because [Windows Server Core images have recently been reduced by more that 40%](https://devblogs.microsoft.com/dotnet/we-made-windows-server-core-container-images-40-smaller/), so the possible scenarios can change fast.
+
+On the other hand, .NET Core is the best candidate if you are embracing a microservices-oriented system that is based on containers, because .NET Core is lightweight. In addition, its related container images, for either Linux or Windows Nano Server, are lean and small, making containers light and fast to start.
 
 A microservice is meant to be as small as possible: to be light when spinning up, to have a small footprint, to have a small Bounded Context (check DDD, [Domain-Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design)), to represent a small area of concerns, and to be able to start and stop fast. For those requirements, you will want to use small and fast-to-instantiate container images like the .NET Core container image.
 

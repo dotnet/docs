@@ -8,7 +8,7 @@ ms.custom: "vs-dotnet, seodec18"
 ---
 # Publish your .NET Core Hello World application with Visual Studio 2019
 
-In [Build a Hello World application with .NET Core in Visual Studio](with-visual-studio.md), you built a Hello World console application. In [Debug your Hello World application with Visual Studio](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
+In [Create a Hello World application with .NET Core in Visual Studio](with-visual-studio.md), you built a Hello World console application. In [Debug your Hello World application with Visual Studio](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 
 ## Publish the app
 
@@ -38,7 +38,11 @@ In the following steps, you'll look at the files created by the publish process.
 
    One way to open a command prompt is to enter **Command Prompt** (or **cmd** for short) in the search box on the Windows taskbar. Select the **Command Prompt** desktop app, or press **Enter** if it's already selected in the search results.
 
-1. Navigate to the published application in the *bin\Release\netcoreapp3.1\publish* subdirectory of the application's project directory. As the following image shows, the published output includes the following files:
+1. Navigate to the published application in the *bin\Release\netcoreapp3.1\publish* subdirectory of the application's project directory.
+
+   ![Console window showing published files](media/publishing-with-visual-studio/published-files-output.png)
+
+   As the image shows, the published output includes the following files:
 
       * *HelloWorld.deps.json*
 
@@ -59,8 +63,6 @@ In the following steps, you'll look at the files created by the publish process.
       * *HelloWorld.runtimeconfig.json*
 
          This is the application's runtime configuration file. It identifies the version of .NET Core that your application was built to run on. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
-
-   ![Console window showing published files](media/publishing-with-visual-studio/published-files-output.png)
 
 ## Additional resources
 

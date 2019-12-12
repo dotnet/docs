@@ -58,7 +58,7 @@ The Image Classification API starts the training process by loading a pretrained
 1. Bottleneck phase
 2. Training phase
 
-![Training Steps](./media/image-classification-api-transfer-learning/training.png)
+![Training Steps](./media/image-classification-api-transfer-learning/training.jpg)
 
 ### Bottleneck phase
 
@@ -94,7 +94,7 @@ Now that you have a general understanding of transfer learning and the Image Cla
 
 SDNET2018 is an image dataset that contains annotations for cracked and non-cracked concrete structures (bridge decks, walls, and pavement).
 
-![SDNET2018 dataset bridge deck samples](./media/image-classification-api-transfer-learning/sdnet2018decksamples.png)
+![SDNET2018 dataset bridge deck samples](./media/image-classification-api-transfer-learning/sdnet2018decksamples.jpg)
 
 The data is organized in three subdirectories:
 

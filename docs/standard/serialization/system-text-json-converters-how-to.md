@@ -20,11 +20,7 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 * To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format instead of the default  ISO 8601-1:2019 format.
 * To support a custom value type. For example, a `PhoneNumber` struct.
 
-You can also write custom converters to extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
-
-* [Deserialize inferred types to Object properties](#deserialize-inferred-types-to-object-properties).
-* [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
-* [Support polymorphic deserialization](#support-polymorphic-deserialization).
+You can also write custom converters to extend `System.Text.Json` with functionality not included in the current release. For more information, see [How to migrate from Newtonsoft Json.NET to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md).
 
 ## Custom converter patterns
 
@@ -56,8 +52,6 @@ The following code shows a custom converter that works with `Dictionary<Enum,TVa
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DictionaryTKeyEnumTValueConverter.cs)]
 
-The preceding code is the same as what is shown in the [Support Dictionary with non-string key](#support-dictionary-with-non-string-key) later in this article.
-
 ## Steps to follow the basic pattern
 
 The following steps explain how to create a converter by following the basic pattern:
@@ -65,9 +59,9 @@ The following steps explain how to create a converter by following the basic pat
 * Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverter%601> where `T` is the type to be serialized and deserialized.
 * Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the <xref:System.Text.Json.Utf8JsonReader> that is passed to the method to read the JSON.
 * Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
-* Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
+* Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see [Polymorphic deserialization](system-text-json-migrate-from-newtonsoft-how-to.md#polymorphic-deserialization).
 
-You can refer to the [built-in converters source code](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
+You can refer to the [built-in converters source code](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
 
 ## Steps to follow the factory pattern
 
@@ -168,9 +162,9 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 ## Other custom converter samples
 
-The [Migrate from Newtonsoft Json.NET](system-text-json-how-to.md) article contains samples of custom converters. See the [Workarounds with sample code](system-text-json-migrate-from-newtonsoft-how-to.md#workarounds-with-sample-code) section.
+The [Migrate from Newtonsoft Json.NET](system-text-json-how-to.md) article contains samples of custom converters.
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
+The [unit tests folder](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 
 * `Int32` converter that converts null to 0 on deserialize
 * `Int32` converter that allows both string and number values on deserialize
@@ -185,5 +179,5 @@ If you need to make a converter that modifies the behavior of an existing built-
 * [System.Text.Json overview](system-text-json-overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [How to use System.Text.Json](system-text-json-how-to.md)
-* [Source code for built-in converters](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/)
+* [Source code for built-in converters](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/)
 * [GitHub issue related to custom converters](https://github.com/dotnet/corefx/issues/36639)

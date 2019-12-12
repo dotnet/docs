@@ -429,7 +429,7 @@ To write null values by using `Utf8JsonWriter`, call:
 * <xref:System.Text.Json.Utf8JsonWriter.WriteNull%2A> to write a key-value pair with null as the value.
 * <xref:System.Text.Json.Utf8JsonWriter.WriteNullValue%2A> to write null as an element of a JSON array.
 
-For a string property, if the string is null, <xref:System.Xml.XmlDictionaryWriter.WriteString%2A> and <xref:System.Xml.XmlDictionaryWriter.WriteStringValue%2A> are equivalent to `WriteNull` and `WriteNullValue`.
+For a string property, if the string is null, <xref:System.Text.Json.Utf8JsonWriter.WriteString%2A> and <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A> are equivalent to `WriteNull` and `WriteNullValue`.
 
 ## Multi-targeting
 

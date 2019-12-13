@@ -145,6 +145,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/core/install/linux-package-managers.md",
+      "redirect_url": "linux-package-manager-ubuntu-1904",
+      "ms.custom": "updateeachrelease"
+    },
+    {
       "source_path": "docs/core/migrating-from-dnx.md",
       "redirect_url": "/dotnet/core/migration/from-dnx",
       "redirect_document_id": true
@@ -395,6 +400,11 @@
     {
       "source_path": "docs/core/versions/version-history.md",
       "redirect_url": "/dotnet/core/versions/selection"
+    },
+    {
+      "source_path": "docs/core/whats-new/index.md",
+      "redirect_url": "dotnet-core-3-1",
+      "ms.custom": "updateeachrelease"
     },
     {
       "source_path": "docs/core/whats-new/whats-new-in-core-20.md",
@@ -1476,9 +1486,34 @@
       "redirect_url": "/dotnet/csharp/programming-guide/types/index"
     },
     {
+      "source_path": "docs/csharp/whats-new/index.md",
+      "redirect_url": "csharp-8",
+      "ms.custom": "updateeachrelease"
+    },
+    {
       "source_path": "docs/csharp/whats-new.md",
       "redirect_url": "/dotnet/csharp/whats-new/index",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/desktop-wpf/data/index.md",
+      "redirect_url": "data-binding-overview"
+    },
+    {
+      "source_path": "docs/desktop-wpf/fundamentals/index.md",
+      "redirect_url": "xaml"
+    },
+    {
+      "source_path": "docs/desktop-wpf/getting-started/index.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json"
+    },
+    {
+      "source_path": "docs/desktop-wpf/index.md",
+      "redirect_url": "overview/index"
+    },
+    {
+      "source_path": "docs/desktop-wpf/migration/index.md",
+      "redirect_url": "differences-from-net-framework"
     },
     {
       "source_path": "docs/framework/add-ins/index.md",
@@ -1715,7 +1750,7 @@
     },
     {
       "source_path": "docs/framework/docker/aspnetmvc.md",
-      "redirect_url": "https://docs.microsoft.com/aspnet/mvc/overview/deployment/docker-aspnetmvc",
+      "redirect_url": "https://docs.microsoft.com/aspnet/mvc/overview/deployment/docker-aspnetmvc"
     },
     {
       "source_path": "docs/framework/docker/console.md",
@@ -1904,91 +1939,91 @@
     },
     {
       "source_path": "docs/framework/security/building-my-first-claims-aware-aspnet-web-app.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/building-my-first-claims-aware-aspnet-web-app",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/building-my-first-claims-aware-aspnet-web-app"
     },
     {
       "source_path": "docs/framework/security/building-my-first-claims-aware-wcf-service.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/building-my-first-claims-aware-wcf-service",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/building-my-first-claims-aware-wcf-service"
     },
     {
       "source_path": "docs/framework/security/claims-aware-aspnet-app-forms-authentication.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/claims-aware-aspnet-app-forms-authentication",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/claims-aware-aspnet-app-forms-authentication"
     },
     {
       "source_path": "docs/framework/security/claims-based-authorization-using-wif.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/claims-based-authorization-using-wif",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/claims-based-authorization-using-wif"
     },
     {
       "source_path": "docs/framework/security/claims-based-identity-model.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/claims-based-identity-model",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/claims-based-identity-model"
     },
     {
       "source_path": "docs/framework/security/custom-token-handlers.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/custom-token-handlers",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/custom-token-handlers"
     },
     {
       "source_path": "docs/framework/security/downloading-the-json-web-token-handler-package.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/downloading-the-json-web-token-handler-package",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/downloading-the-json-web-token-handler-package"
     },
     {
       "source_path": "docs/framework/security/downloading-the-validating-issuer-name-registry-package.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/downloading-the-validating-issuer-name-registry-package",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/downloading-the-validating-issuer-name-registry-package"
     },
     {
       "source_path": "docs/framework/security/getting-started-with-wif.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/getting-started-with-wif",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/getting-started-with-wif"
     },
     {
       "source_path": "docs/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/guidelines-for-migrating-an-application-built-using-wif-3-5-to-wif-4-5"
     },
     {
       "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-app-using-windows-authentication"
     },
     {
       "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-mvc-web-app-using-wif"
     },
     {
       "source_path": "docs/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-build-claims-aware-aspnet-web-forms-app-using-wif"
     },
     {
       "source_path": "docs/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-debug-claims-aware-applications-and-services-using-wif-tracing"
     },
     {
       "source_path": "docs/framework/security/how-to-display-signed-in-status-using-wif.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-display-signed-in-status-using-wif",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-display-signed-in-status-using-wif"
     },
     {
       "source_path": "docs/framework/security/how-to-enable-token-replay-detection.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-enable-token-replay-detection",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-enable-token-replay-detection"
     },
     {
       "source_path": "docs/framework/security/how-to-enable-wif-for-a-wcf-web-service-application.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-enable-wif-for-a-wcf-web-service-application",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-enable-wif-for-a-wcf-web-service-application"
     },
     {
       "source_path": "docs/framework/security/how-to-enable-wif-tracing.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-enable-wif-tracing",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-enable-wif-tracing"
     },
     {
       "source_path": "docs/framework/security/how-to-transform-incoming-claims.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-transform-incoming-claims",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/how-to-transform-incoming-claims"
     },
     {
       "source_path": "docs/framework/security/identity-and-access-tool-for-vs.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/identity-and-access-tool-for-vs",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/identity-and-access-tool-for-vs"
     },
     {
       "source_path": "docs/framework/security/index.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/index",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/index"
     },
     {
       "source_path": "docs/framework/security/json-web-token-handler.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/json-web-token-handler",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/json-web-token-handler"
     },
     {
       "source_path": "docs/framework/security/json-web-token-handler-api-reference.md",
@@ -1996,83 +2031,83 @@
     },
     {
       "source_path": "docs/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/namespace-mapping-between-wif-3-5-and-wif-4-5"
     },
     {
       "source_path": "docs/framework/security/secure-coding-guidelines-for-unmanaged-code.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code"
     },
     {
       "source_path": "docs/framework/security/security-changes.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes"
     },
     {
       "source_path": "docs/framework/security/validating-issuer-name-registry-api-reference.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/validating-issuer-name-registry-api-reference",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/validating-issuer-name-registry-api-reference"
     },
     {
       "source_path": "docs/framework/security/validating-issuer-name-registry.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/validating-issuer-name-registry",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/validating-issuer-name-registry"
     },
     {
       "source_path": "docs/framework/security/whats-new-in-wif.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/whats-new-in-wif",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/whats-new-in-wif"
     },
     {
       "source_path": "docs/framework/security/wif-and-web-farms.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-and-web-farms",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-and-web-farms"
     },
     {
       "source_path": "docs/framework/security/wif-api-reference.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-api-reference",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-api-reference"
     },
     {
       "source_path": "docs/framework/security/wif-claims-programming-model.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-claims-programming-model",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-claims-programming-model"
     },
     {
       "source_path": "docs/framework/security/wif-code-sample-index.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-code-sample-index",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-code-sample-index"
     },
     {
       "source_path": "docs/framework/security/wif-configuration-reference.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-configuration-reference",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-configuration-reference"
     },
     {
       "source_path": "docs/framework/security/wif-configuration-schema-conventions.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-configuration-schema-conventions",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-configuration-schema-conventions"
     },
     {
       "source_path": "docs/framework/security/wif-extensions.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-extensions",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-extensions"
     },
     {
       "source_path": "docs/framework/security/wif-features.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-features",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-features"
     },
     {
       "source_path": "docs/framework/security/wif-guidelines.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-guidelines",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-guidelines"
     },
     {
       "source_path": "docs/framework/security/wif-how-tos-index.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-how-tos-index",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-how-tos-index"
     },
     {
       "source_path": "docs/framework/security/wif-overview.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-overview",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-overview"
     },
     {
       "source_path": "docs/framework/security/wif-session-management.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-session-management",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wif-session-management"
     },
     {
       "source_path": "docs/framework/security/wsfederation-authentication-module-overview.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wsfederation-authentication-module-overview",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wsfederation-authentication-module-overview"
     },
     {
       "source_path": "docs/framework/security/wstrustchannelfactory-and-wstrustchannel.md",
-      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wstrustchannelfactory-and-wstrustchannel",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/framework/security/wstrustchannelfactory-and-wstrustchannel"
     },
     {
       "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
@@ -2770,6 +2805,10 @@
       "redirect_url": "/dotnet/fsharp/language-reference/signature-files"
     },
     {
+      "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/index.md",
+      "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async"
+    },
+    {
       "source_path": "docs/fsharp/tutorials/getting-started/getting-started-command-line.md",
       "redirect_url": "/dotnet/fsharp/get-started/get-started-command-line",
       "redirect_document_id": true
@@ -2799,6 +2838,10 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/fsharp/tutorials/index.md",
+      "redirect_url": "/dotnet/fsharp/index"
+    },
+    {
       "source_path": "docs/fsharp/tutorials/type-providers/accessing-a-sql-database-entities.md",
       "redirect_url": "/dotnet/fsharp/tutorials/type-providers/index"
     },
@@ -2824,19 +2867,28 @@
     },
     {
       "source_path": "docs/fsharp/using-fsharp-in-visual-studio/configuring-projects.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/ide/fsharp-visual-studio",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/ide/fsharp-visual-studio"
     },
     {
       "source_path": "docs/fsharp/using-fsharp-in-visual-studio/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/ide/fsharp-visual-studio",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/ide/fsharp-visual-studio"
     },
     {
       "source_path": "docs/fsharp/using-fsharp-in-visual-studio/targeting-older-versions-of-net.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/ide/fsharp-target-older-dotnet-versions",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/ide/fsharp-target-older-dotnet-versions"
     },
     {
       "source_path": "docs/fsharp/using-fsharp-in-visual-studio/visual-fsharp-development-environment-features.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/ide/fsharp-visual-studio",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/ide/fsharp-visual-studio"
+    },
+    {
+      "source_path": "docs/fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md",
+      "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index"
+    },
+    {
+      "source_path": "docs/fsharp/whats-new/index.md",
+      "redirect_url": "fsharp-47",
+      "ms.custom": "updateeachrelease"
     },
     {
       "source_path": "docs/machine-learning/tutorials/taxi-fare.md",
@@ -3741,66 +3793,6 @@
     {
       "source_path": "docs/visual-basic/reference/vb6-support.md",
       "redirect_url": "https://docs.microsoft.com/previous-versions/visualstudio/visual-basic-6/visual-basic-6-support-policy"
-    },
-    {
-      "source_path": "docs/fsharp/using-fsharp-on-azure/using-fsharp-on-azure-service-fabric.md",
-      "redirect_url": "/dotnet/fsharp/using-fsharp-on-azure/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/fsharp/tutorials/index.md",
-      "redirect_url": "/dotnet/fsharp/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/fsharp/tutorials/asynchronous-and-concurrent-programming/index.md",
-      "redirect_url": "/dotnet/fsharp/tutorials/asynchronous-and-concurrent-programming/async",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/core/install/linux-package-managers.md",
-      "redirect_url": "linux-package-manager-ubuntu-1904",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/core/whats-new/index.md",
-      "redirect_url": "dotnet-core-3-1",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/csharp/whats-new/index.md",
-      "redirect_url": "csharp-8",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/desktop-wpf/data/index.md",
-      "redirect_url": "data-binding-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/desktop-wpf/fundamentals/index.md",
-      "redirect_url": "xaml",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/desktop-wpf/getting-started/index.md",
-      "redirect_url": "https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/desktop-wpf/index.md",
-      "redirect_url": "overview/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/desktop-wpf/migration/index.md",
-      "redirect_url": "differences-from-net-framework",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/fsharp/whats-new/index.md",
-      "redirect_url": "fsharp-47",
-      "redirect_document_id": false
     }
   ]
 }

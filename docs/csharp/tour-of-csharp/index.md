@@ -4,6 +4,7 @@ description: New to C#? Learn the basics of the language.
 ms.date: 04/05/2019
 ms.custom: seoapril2019
 ---
+
 # A Tour of the C# Language
 
 C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language. If you want to explore the language through interactive examples, try our [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
@@ -42,8 +43,6 @@ The "Hello, World" program starts with a `using` directive that references the `
 The `Hello` class declared by the "Hello, World" program has a single member, the method named `Main`. The `Main` method is declared with the static modifier. While instance methods can reference a particular enclosing object instance using the keyword `this`, static methods operate without reference to a particular object. By convention, a static method named `Main` serves as the entry point of a program.
 
 The output of the program is produced by the `WriteLine` method of the `Console` class in the `System` namespace. This class is provided by the standard class libraries, which, by default, are automatically referenced by the compiler.
-
-## Elements of the C# language
 
 There's a lot more to learn about C#. The following topics provide an overview of the elements of the C# language. These overviews will provide basic information about all elements of the language and give you the information necessary to dive deeper into elements of the C# language:
 

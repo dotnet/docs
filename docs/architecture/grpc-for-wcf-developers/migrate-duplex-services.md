@@ -107,7 +107,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-This class can now be used to implement the gRPC StockTickerService.
+This class can now be used to implement the gRPC `StockTickerService`.
 
 #### StockTickerService.cs
 

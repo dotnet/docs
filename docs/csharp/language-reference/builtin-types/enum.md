@@ -14,7 +14,7 @@ ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
 ---
 # Enumeration types (C# reference)
 
-An enumeration type (or enum type) is a value type that is defined by a set of named constants of the underlying [integral numeric](integral-numeric-types.md) type. To define an enumeration type, use the `enum` keyword and specify the names of *enum members*:
+An enumeration type (or enum type) is a value type defined by a set of named constants of the underlying [integral numeric](integral-numeric-types.md) type. To define an enumeration type, use the `enum` keyword and specify the names of *enum members*:
 
 ```csharp
 enum Season
@@ -42,7 +42,7 @@ You cannot define a method inside the definition of an enumeration type. To add 
 
 The default value of an enumeration type `E` is the value produced by expression `(E)0`, even if zero doesn't have the corresponding enum member.
 
-You use an enumeration type to represent a choice from a set of mutually exclusive values or a combination of choices. To be able to represent a combination of choices, define an enumeration type as bit flags.
+You use an enumeration type to represent a choice from a set of mutually exclusive values or a combination of choices. To represent a combination of choices, define an enumeration type as bit flags.
 
 ## Enumeration types as bit flags
 
@@ -60,7 +60,7 @@ Beginning with C# 7.3, you can use `System.Enum` in a base class constraint (tha
 
 ## Conversions
 
-For an enumeration type `E` with an underlying type `U`, there exist explicit conversions from `E` to `U` and from `U` to `E`. If you [cast](../operators/type-testing-and-cast.md#cast-operator-) an enum value of type `E` to an underlying type `U`, the result is the associated integral value of an enum member.
+For any enumeration type, there exist explicit conversions between the enumeration type and its underlying intergral type. If you [cast](../operators/type-testing-and-cast.md#cast-operator-) an enum value to its underlying type, the result is the associated integral value of an enum member.
 
 [!code-csharp[enum conversions](~/samples/csharp/language-reference/builtin-types/EnumType.cs#Conversions)]
 

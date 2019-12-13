@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 This article shows how to migrate from [Newtonsoft Json.NET](https://www.newtonsoft.com/json) to the JSON serialization tools in the [System.Text.Json namespace](system-text-json-overview.md).
 
-`System.Text.Json` is relatively new, and its initial focus is on performance, security, and standards compliance. It lacks built-in features to handle some common scenarios, and some default behaviors differ from Newtonsoft. For some scenarios, `System.Text.Json` has no built-in functionality, but workarounds are recommended. For other scenarios,  workarounds are impractical. If your application depends on a missing feature that has no workaround, consider delaying your migration to `System.Text.Json`. For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/roadmap/README.md).
+`System.Text.Json` is relatively new, and its initial focus is on performance, security, and standards compliance. It lacks built-in features to handle some common scenarios, and some default behaviors differ from Newtonsoft. For some scenarios, `System.Text.Json` has no built-in functionality, but therre are recommended workarounds. For other scenarios,  workarounds are impractical. If your application depends on a missing feature that has no workaround, consider delaying your migration to `System.Text.Json`. For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/roadmap/README.md).
 
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> Document Object Model (DOM) API and the <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> API. The article is organized into sections in the following order:
 
@@ -52,7 +52,7 @@ The Newtonsoft registration precedence for custom converters is as follows:
 
 This order means that a custom converter in the `Converters` collection is overridden by a converter that is registered by applying an attribute at the type level. Both of those registrations are overridden by an attribute at the property level.
 
-The `System.Text.Json` registration precedence is different:
+The `System.Text.Json` registration precedence for custom converters is different:
 
 * Attribute on property
 * `Converters` collection
@@ -86,9 +86,7 @@ If your scenario requires type inference for `Object` properties, you can implem
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ObjectToInferredTypesConverter.cs)]
 
-The following code registers the converter:
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DeserializeInferredTypesToObject.cs?name=SnippetRegister)]
+[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding it to the `Converters` collection or by using the `[JsonConvert]` attribute on a property.
 
 Here's an example type with `Object` properties:
 
@@ -116,9 +114,7 @@ The following code shows a custom converter that works with `Dictionary<Enum,TVa
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DictionaryTKeyEnumTValueConverter.cs)]
 
-The following code registers the converter:
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripDictionaryTkeyEnumTValue.cs?name=SnippetRegister)]
+[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding it to the `Converters` collection or by using the `[JsonConvert]` attribute on a property.
 
 The converter can serialize and deserialize the `TemperatureRanges` property of the following class that uses the following `Enum`:
 
@@ -150,9 +146,7 @@ The following code shows a base class, two derived classes, and a custom convert
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/PersonConverterWithTypeDiscriminator.cs)]
 
-The following code registers the converter:
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripPolymorphic.cs?name=SnippetRegister)]
+[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding it to the `Converters` collection.
 
 The converter can deserialize JSON that was created by using the same converter to serialize, for example:
 
@@ -175,7 +169,7 @@ For more information, see issue [37787](https://github.com/dotnet/corefx/issues/
 
 ## Quoted numbers
 
-Newtonsoft can serialize or deserialize numbers in quotes, for example, it can accept: `{ "DegreesCelsius":"23" }` instead of `{ "DegreesCelsius":23 }`. To enable that behavior in `System.Text.Json`, implement a custom converter like the following example, which uses quotes for properties defined as `long`.
+Newtonsoft can serialize or deserialize numbers in quotes. For example, it can accept: `{ "DegreesCelsius":"23" }` instead of `{ "DegreesCelsius":23 }`. To enable that behavior in `System.Text.Json`, implement a custom converter like the following example, which uses quotes for properties defined as `long`.
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/LongToStringConverter.cs)]
 
@@ -185,7 +179,7 @@ Newtonsoft can serialize or deserialize numbers in quotes, for example, it can a
 
 During deserialization, `System.Text.Json` doesn't throw an exception if no value is received in the JSON for one of the properties of the target type. For example, if you have a `WeatherForecast` class:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWeatherForecast)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWF)]
 
 The following JSON is deserialized without error:
 
@@ -254,11 +248,11 @@ The Newtonsoft `DefaultContractResolver` lets you select properties to include o
 
 These options don't let you selectively omit properties from serialization based on criteria evaluated at run time. For that functionality, you can write a custom converter. Here's a sample POCO and a custom converter for it that illustrates this approach:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs#WeatherForecast)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWF)]
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecastRuntimeIgnoreConverter.cs)]
 
-The converter causes the `TemperatureCelsius` property to be omitted from serialization if its value is outside of a specified range. 
+The converter causes the `Summary` property to be omitted from serialization if its value is null, an empty string, or "N/A". 
 
 [Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding the converter to the `Converters` collection or by applying the `[JsonConvert]` attribute to the class.
 
@@ -381,7 +375,7 @@ while (reader.Read())
 }
 ```
 
-## Read and write with UTF-8 text
+### Read and write with UTF-8 text
 
 To achieve the best possible performance while using the `Utf8JsonReader` and `Utf8JsonWriter`, read and write JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For example, if you're writing string literals, consider caching them as static byte arrays, and write those instead. For a code example, see [Filter data using Utf8JsonReader](system-text-json-how-to.md#filter-data-using-utf8jsonreader).
 
@@ -431,7 +425,7 @@ To write null values by using `Utf8JsonWriter`, call:
 
 For a string property, if the string is null, <xref:System.Text.Json.Utf8JsonWriter.WriteString%2A> and <xref:System.Text.Json.Utf8JsonWriter.WriteStringValue%2A> are equivalent to `WriteNull` and `WriteNullValue`.
 
-## Multi-targeting
+### Multi-targeting
 
 If you need to continue to use Newtonsoft for certain target frameworks, you can multi-target and have two implementations. However, this is not trivial and would require some `#ifdefs` and source duplication. One way to share as much code as possible is to create a `ref struct` wrapper around `Utf8JsonReader` and Newtonsoft `JsonTextReader`, and a wrapper around `Utf8JsonWriter` and `JsonTextWriter`. This wrapper would unify the public surface area while isolating the behavioral differences. This lets you isolate the changes mainly to the construction of the type, along with passing the new type around by reference. This is the pattern that the [.NET Core installer](https://github.com/dotnet/runtime/tree/master/src/installer) follows:
 

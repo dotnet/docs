@@ -198,7 +198,7 @@ The following JSON is deserialized without error:
 
 To make deserialization fail if no `Date` property is in the JSON, implement a custom converter. The following sample converter code throws an exception if the `Date` property isn't set after deserialization is complete:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecastPropertyRequiredConverter.cs)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecastRequiredPropertyConverter.cs)]
 
 [Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on the POCO class or by adding the converter to the `Converters` collection.
 

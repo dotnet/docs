@@ -9,9 +9,6 @@ helpviewer_keywords:
   - "I/O, long paths"
   - "long paths"
   - "path formats, Windows"
-dev_langs: 
-  - "csharp"
-  - "vb"
 ---
 # File path formats on Windows systems
 

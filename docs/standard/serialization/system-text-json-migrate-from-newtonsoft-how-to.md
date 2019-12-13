@@ -165,7 +165,7 @@ The converter can deserialize JSON that was created by using the same converter 
 ]
 ```
 
-For more information, see issue [37787](https://github.com/dotnet/corefx/issues/37787) in the dotnet/corefx GitHub repository.
+For more information, see issue [38650](https://github.com/dotnet/corefx/issues/38650) and issue [39031](https://github.com/dotnet/corefx/issues/39031) in the dotnet/corefx GitHub repository.
 
 ## Quoted numbers
 
@@ -174,6 +174,8 @@ Newtonsoft can serialize or deserialize numbers in quotes. For example, it can a
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/LongToStringConverter.cs)]
 
 [Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on individual `long` properties or by adding the converter to the `Converters` collection.
+
+For more information, see issue [39473](https://github.com/dotnet/corefx/issues/39473) in the dotnet/corefx GitHub repository.
 
 ## Required properties
 
@@ -237,7 +239,7 @@ And here's a converter that serializes and deserializes this struct:
 
 For an example of a similar converter that handles open generic properties, see the [built-in converter for key-value pairs](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/JsonValueConverterKeyValuePair.cs).
 
-For more information, see issues [38569](https://github.com/dotnet/corefx/issues/38569) and [38163](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx GitHub repository.
+For more information, see issue [38569](https://github.com/dotnet/corefx/issues/38569) in the dotnet/corefx GitHub repository.
 
 ## Specify constructor to use
 
@@ -265,11 +267,11 @@ This approach requires complex code if:
 * The POCO includes complex properties.
 * You need to handle attributes such as `[JsonIgnore]` or options such as custom encoders.
 
-For more information, see issue [42001](https://github.com/dotnet/corefx/issues/42001) in the dotnet/corefx GitHub repository.
+For more information, see issue [42001](https://github.com/dotnet/corefx/issues/42001) and issue [40600](https://github.com/dotnet/corefx/issues/40600) in the dotnet/corefx GitHub repository.
 
 ## Specify date format
 
-Newtonsoft provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
+Newtonsoft provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md) and issue [41456](https://github.com/dotnet/corefx/issues/41456) in the dotnet/corefx GitHub repository.
 
 ## Callbacks
 

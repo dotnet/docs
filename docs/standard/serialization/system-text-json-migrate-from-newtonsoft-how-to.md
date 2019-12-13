@@ -14,7 +14,9 @@ helpviewer_keywords:
 
 This article shows how to migrate from [Newtonsoft Json.NET](https://www.newtonsoft.com/json) to the JSON serialization tools in the [System.Text.Json namespace](system-text-json-overview.md).
 
-`System.Text.Json` is relatively new, and its initial focus is on performance, security, and standards compliance. It lacks built-in features to handle some common scenarios, and some default behaviors differ from Newtonsoft. For some scenarios, `System.Text.Json` has no built-in functionality, but therre are recommended workarounds. For other scenarios,  workarounds are impractical. If your application depends on a missing feature that has no workaround, consider delaying your migration to `System.Text.Json`. For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/roadmap/README.md).
+`System.Text.Json` is relatively new, and its initial focus is on performance, security, and standards compliance. It lacks built-in features to handle some common scenarios, and some default behaviors differ from Newtonsoft. For some scenarios, `System.Text.Json` has no built-in functionality, but therre are recommended workarounds. For other scenarios,  workarounds are impractical. If your application depends on a missing feature that has no workaround, consider delaying your migration to `System.Text.Json`. 
+
+<!-- For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/roadmap/README.md). [Restore this when the roadmap is updated.]-->
 
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> Document Object Model (DOM) API and the <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> API. The article is organized into sections in the following order:
 
@@ -474,4 +476,4 @@ For a code example, see [Use JsonDocument for access to data](system-text-json-h
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [How to use System.Text.Json](system-text-json-how-to.md)
 * [How to write custom converters](system-text-json-converters-how-to.md)
-* [Roadmap](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/roadmap/README.md)
+* <!-- [Roadmap](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->

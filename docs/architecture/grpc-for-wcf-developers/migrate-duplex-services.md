@@ -29,7 +29,7 @@ public interface ISimpleStockTickerService
 }
 ```
 
-The service has a single method with no return type because it will be using the callback interface `ISimpleStockTickerCallback` to send data to the client in real time.
+The service has a single method with no return type because it uses the callback interface `ISimpleStockTickerCallback` to send data to the client in real time.
 
 #### The callback interface
 

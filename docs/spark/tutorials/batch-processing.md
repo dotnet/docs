@@ -164,4 +164,4 @@ You can see the [full solution](https://github.com/dotnet/spark/blob/master/exam
 
 Advance to the next article to learn how to process streaming data with .NET for Apache Spark.
 > [!div class="nextstepaction"]
-> [Tutorial: Structured Streaming with .NET for Apache Spark](structured-streaming.md)
+> [Tutorial: Structured Streaming with .NET for Apache Spark](streaming.md)

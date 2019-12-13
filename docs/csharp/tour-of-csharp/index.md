@@ -46,7 +46,7 @@ The `Hello` class declared by the "Hello, World" program has a single member, th
 
 The output of the program is produced by the `WriteLine` method of the `Console` class in the `System` namespace. This class is provided by the standard class libraries, which, by default, are automatically referenced by the compiler.
 
-## Elements of C#
+## Elements of the C# language
 
 There's a lot more to learn about C#. The following topics provide an overview of the elements of the C# language. These overviews provide basic information about all elements of the language and give you the information necessary to dive deeper:
 

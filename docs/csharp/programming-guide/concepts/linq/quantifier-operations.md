@@ -25,17 +25,17 @@ Quantifier operations return a <xref:System.Boolean> value that indicates whethe
 ### All  
 The following example uses the `All` to check that all strings are of a specific length.
   
-[!code-csharp-interactive[All](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#All)]  
+[!code-csharp[All](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#All)]  
   
 ### Any  
 The following example uses the `Any` to check that any strings are start with 'o'.  
   
-[!code-csharp-interactive[Any](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#Any)]  
+[!code-csharp[Any](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#Any)]  
   
 ### Contains  
 The following example uses the `Contains` to check an array have a specific element.  
   
-[!code-csharp-interactive[Contains](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#Contains)]  
+[!code-csharp[Contains](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQQuantifier/CS/Quantifier.cs#Contains)]  
   
 ## See also
 

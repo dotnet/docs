@@ -17,9 +17,9 @@ IntelliSense is a code-completion aid that is available in different integrated 
 ## Download and install the localized IntelliSense files
 
 1. Go to the [Download IntelliSense files](https://dotnet.microsoft.com/download/dotnet-core) page.
-2. Download the IntelliSense file for the language and version you'd like to use.
-3. Extract the contents of the zip file.
-4. Navigate to the .NET Core installation folder. By default, it's under *C:\Program Files\dotnet\packs*.
+1. Download the IntelliSense file for the language and version you'd like to use.
+1. Extract the contents of the zip file.
+1. Navigate to the .NET Core installation folder. By default, it's under *C:\Program Files\dotnet\packs*.
 
    - Choose which SDK you want to install the IntelliSense for and navigate to the associated path. You have the following options:
 
@@ -35,7 +35,7 @@ IntelliSense is a code-completion aid that is available in different integrated 
 
    So, the full path that you'd navigate to would look similar to *C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1*.
 
-5. Create a subfolder inside the moniker folder you just opened. The name of the folder indicates which language you want to use. The following table specifies the different options:
+1. Create a subfolder inside the moniker folder you just opened. The name of the folder indicates which language you want to use. The following table specifies the different options:
 
 | Language              | Folder name |
 | --------------------- | ----------- |
@@ -49,11 +49,9 @@ IntelliSense is a code-completion aid that is available in different integrated 
 | Russian               | *ru*        |
 | Spanish               | *es*        |
 
-6. Copy all the *.xml* files you extracted on step 3 to this new folder. If you're copying this to the .NET Standard path, then you can just copy the *netstandard.xml* file.
+1. Copy all the *.xml* files you extracted on step 3 to this new folder. If you're copying this to the .NET Standard path, then you can just copy the *netstandard.xml* file.
 
 ## Modify Visual Studio language
-
-
 
 ## See also
 

@@ -125,7 +125,7 @@ message Portfolio {
 }
 ```
 
-Now that we have the data messages, we can declare the service RPC endpoints.
+Now that you have the data messages, you can declare the service RPC endpoints.
 
 ## Convert ServiceContract to a gRPC service
 

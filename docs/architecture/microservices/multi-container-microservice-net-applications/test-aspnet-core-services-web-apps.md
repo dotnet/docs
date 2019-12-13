@@ -154,7 +154,7 @@ services:
   rabbitmq:
     image: rabbitmq:3-management-alpine
   sql.data:
-    image: microsoft/mssql-server-linux:2017-latest
+    image: mcr.microsoft.com/mssql/server:2017-latest
   nosql.data:
     image: mongo
 ```

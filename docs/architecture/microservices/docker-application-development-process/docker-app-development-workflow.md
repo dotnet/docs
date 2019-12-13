@@ -91,14 +91,14 @@ In a similar fashion, Visual Studio can also add a `docker-compose.yml` file for
 
 You usually build a custom image for your container on top of a base image you get from an official repository like the [Docker Hub](https://hub.docker.com/) registry. That is precisely what happens under the covers when you enable Docker support in Visual Studio. Your Dockerfile will use an existing `aspnetcore` image.
 
-Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is `mcr.microsoft.com/dotnet/core/aspnet:2.2`. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding `FROM mcr.microsoft.com/dotnet/core/aspnet:2.2` to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
+Earlier we explained which Docker images and repos you can use, depending on the framework and OS you have chosen. For instance, if you want to use ASP.NET Core (Linux or Windows), the image to use is `mcr.microsoft.com/dotnet/core/aspnet:3.1`. Therefore, you just need to specify what base Docker image you will use for your container. You do that by adding `FROM mcr.microsoft.com/dotnet/core/aspnet:3.1` to your Dockerfile. This will be automatically performed by Visual Studio, but if you were to update the version, you update this value.
 
 Using an official .NET image repository from Docker Hub with a version number ensures that the same language features are available on all machines (including development, testing, and production).
 
 The following example shows a sample Dockerfile for an ASP.NET Core container.
 
 ```Dockerfile
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 ARG source
 WORKDIR /app
 EXPOSE 80
@@ -106,7 +106,7 @@ COPY ${source:-obj/Docker/publish} .
 ENTRYPOINT ["dotnet", " MySingleContainerWebApp.dll "]
 ```
 
-In this case, the image is based on version 2.2 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM mcr.microsoft.com/dotnet/core/aspnet:2.2`. (For more information about this base image, see the [.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
+In this case, the image is based on version 3.1 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows). This is the setting `FROM mcr.microsoft.com/dotnet/core/aspnet:3.1`. (For more information about this base image, see the [.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
 
 You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the ENTRYPOINT line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET Core application. If you're using the SDK and the .NET Core CLI (dotnet CLI) to build and run the .NET application, this setting would be different. The bottom line is that the ENTRYPOINT line and other settings will be different depending on the language and platform you choose for your application.
 
@@ -130,16 +130,16 @@ A single repo can contain platform variants, such as a Linux image and a Windows
 
 If you specify a tag, targeting a platform that is explicit like in the following cases:
 
-- `microsoft/dotnet:2.2-aspnetcore-runtime-stretch-slim` \
-  Targets: .NET Core 2.2 runtime-only on Linux
+- `mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim` \
+  Targets: .NET Core 3.1 runtime-only on Linux
 
-- `microsoft/dotnet:2.2-aspnetcore-runtime-nanoserver-1809` \
-  Targets: .NET Core 2.2 runtime-only on Windows Nano Server
+- `mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1909` \
+  Targets: .NET Core 3.1 runtime-only on Windows Nano Server
 
-But, if you specify the same image name, even with the same tag, the multi-arch images (like the `aspnetcore` image) will use the Linux or Windows version depending on the Docker host OS you're deploying, as shown in the following example:
+But, if you specify the same image name, even with the same tag, the multi-arch images (like the `aspnet` image) will use the Linux or Windows version depending on the Docker host OS you're deploying, as shown in the following example:
 
-- `microsoft/dotnet:2.2-aspnetcore-runtime` \
-  Multi-arch: .NET Core 2.2 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
+- `mcr.microsoft.com/dotnet/core/aspnet:3.1` \
+  Multi-arch: .NET Core 3.1 runtime-only on Linux or Windows Nano Server depending on the Docker host OS
 
 This way, when you pull an image from a Windows host, it will pull the Windows variant, and pulling the same image name from a Linux host will pull the Linux variant.
 
@@ -168,11 +168,11 @@ Probably the best way to understand multi-stage is going through a Dockerfile in
 The initial Dockerfile might look something like this:
 
 ```Dockerfile
- 1  FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS base
+ 1  FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
  2  WORKDIR /app
  3  EXPOSE 80
  4
- 5  FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
+ 5  FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
  6  WORKDIR /src
  7  COPY src/Services/Catalog/Catalog.API/Catalog.API.csproj …
  8  COPY src/BuildingBlocks/HealthChecks/src/Microsoft.AspNetCore.HealthChecks …
@@ -271,11 +271,11 @@ For the final optimization, it just happens that line 20 is redundant, as line 2
 The resulting file is then:
 
 ```Dockerfile
- 1  FROM mcr.microsoft.com/dotnet/core/aspnet:2.2 AS base
+ 1  FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
  2  WORKDIR /app
  3  EXPOSE 80
  4
- 5  FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS publish
+ 5  FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS publish
  6  WORKDIR /src
  7  COPY . .
  8  RUN dotnet restore /ignoreprojectextensions:.dcproj
@@ -554,7 +554,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/index) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
 
 ```Dockerfile
-FROM microsoft/windowsservercore
+FROM mcr.microsoft.com/windows/servercore
 LABEL Description="IIS" Vendor="Microsoft" Version="10"
 RUN powershell -Command Add-WindowsFeature Web-Server
 CMD [ "ping", "localhost", "-t" ]

@@ -155,9 +155,9 @@ void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration)
 
 However, the persistence of that value object into the database was performed like a regular entity in a different table.
 
-With EF Core 2.0, there are new and better ways to persist value objects.
+With EF Core 2.0 and up, there are new and better ways to persist value objects.
 
-## Persist value objects as owned entity types in EF Core 2.0
+## Persist value objects as owned entity types in EF Core 2.0 and up
 
 Even with some gaps between the canonical value object pattern in DDD and the owned entity type in EF Core, it's currently the best way to persist value objects with EF Core 2.0. You can see limitations at the end of this section.
 

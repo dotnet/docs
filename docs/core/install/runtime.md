@@ -39,6 +39,29 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 ru
 
 You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
 
+## Download and manually install
+
+To extract the SDK and make the commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
+
+```bash
+mkdir -p $HOME/dotnet && tar zxf aspnetcore-runtime-3.1.0-linux-x64.tar.gz -C $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
+> [!TIP]
+> The above `export` commands will only make the .NET Core commands available for the terminal session in which it was run.
+>
+> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
+>
+> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
+> - **Korn Shell**: *~/.kshrc* or *.profile*
+> - **Z Shell**: *~/.zshrc* or *.zprofile*
+> 
+> Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
+>
+> Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
+
 ::: zone-end
 
 ::: zone pivot="os-windows"

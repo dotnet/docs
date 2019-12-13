@@ -40,7 +40,7 @@ During deserialization, Newtonsoft ignores trailing commas by default. In some c
 
 ## Character escaping
 
-During serialization, Newtonsoft is relatively permissive about letting characters through without escaping them. (That is, it doesn't replace them with `\uxxxx` where `xxxx` is the Unicode code of the character.) `System.Text.Json` escapes more characters by default to provide defense-in-depth protections against cross-site scripting (XSS) or information disclosure attacks. For information about how to override the default `System.Text.Json` behavior, see [Customize character encoding](system-text-json-how-to.md#customize-character-encoding).
+During serialization, Newtonsoft is relatively permissive about letting characters through without escaping them. (That is, it doesn't replace them with `\uxxxx` where `xxxx` is the Unicode code of the character.) `System.Text.Json` escapes more characters by default to provide defense-in-depth protections against cross-site scripting (XSS) or information disclosure attacks. `System.Text.Json` escapes all non-ASCII characters by default, so you don't need to do anything if you're using `StringEscapeHandling.EscapeNonAscii`. For information about how to override the default `System.Text.Json` behavior, see [Customize character encoding](system-text-json-how-to.md#customize-character-encoding).
 
 ## Converter registration precedence
 
@@ -71,7 +71,7 @@ Other functions of the Newtonsoft `[JsonProperty]` attribute have no equivalent 
 
 ## Deserialize inferred types to Object properties
 
-When deserializing JSON data to a property of type `Object`, Newtonsoft infers the type of a property based on the JSON property value. For example, if a JSON property has "01/01/2020", the deserializer infers that it's a `DateTime`. When `System.Text.Json` deserializes to type `Object`, it always creates a `JsonElement` object.
+When deserializing JSON data to a property of type `Object`, Newtonsoft infers the type of a property based on the JSON property value. For example, if a JSON property has "2020-01-01T05:40Z", the Newtonsoft deserializer infers that it's a `DateTime` unless you specify `DateParseHandling.None`. When `System.Text.Json` deserializes to type `Object`, it always creates a `JsonElement` object. 
 
 The `System.Text.Json` deserializer doesn't guess what type a given property value represents because type inference can be inaccurate. If the deserializer parses a JSON number that has no decimal point as a `long`, that might result in out-of-range issues if the value was originally serialized as a `ulong` or `BigInteger`. Parsing a number that has a decimal point as a `double` might lose precision if the number was originally serialized as a `decimal`.
 
@@ -223,7 +223,7 @@ For more information, see issue [40922](https://github.com/dotnet/corefx/issues/
 
 ## Deserialize to immutable classes and structs
 
-Newtonsoft can deserialize to immutable classes and structs because it can use constructors that have parameters. The current release of `System.Text.Json` supports only parameterless constructors. But you can use a constructor with a parameters in a custom converter.
+Newtonsoft can deserialize to immutable classes and structs because it can use constructors that have parameters. The current release of `System.Text.Json` supports only parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
 
 Here's an immutable struct with multiple constructor parameters:
 
@@ -237,7 +237,11 @@ And here's a converter that serializes and deserializes this struct:
 
 For an example of a similar converter that handles open generic properties, see the [built-in converter for key-value pairs](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/JsonValueConverterKeyValuePair.cs).
 
-For more information, see issues [38569](https://github.com/dotnet/corefx/issues/38569) and [38163](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx GitHub repository. Issue 
+For more information, see issues [38569](https://github.com/dotnet/corefx/issues/38569) and [38163](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx GitHub repository.
+
+## Specify constructor to use
+
+The Newtonsoft `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO. The current release of `System.Text.Json` supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
 
 ## Ignore a property at run-time
 

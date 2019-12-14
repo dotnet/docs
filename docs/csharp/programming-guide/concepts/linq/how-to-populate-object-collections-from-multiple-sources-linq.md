@@ -1,9 +1,9 @@
 ---
-title: "How to: Populate Object Collections from Multiple Sources (LINQ) (C#)"
+title: "How to populate object collections from multiple sources (LINQ) (C#)"
 ms.date: 06/12/2018
 ms.assetid: 8ad7d480-b46c-4ccc-8c57-76f2d04ccc6d
 ---
-# How to: Populate Object Collections from Multiple Sources (LINQ) (C#)
+# How to populate object collections from multiple sources (LINQ) (C#)
 
 This example shows how to merge data from different sources into a sequence of new types.
 

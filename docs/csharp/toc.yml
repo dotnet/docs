@@ -24,7 +24,7 @@
       href: tutorials/intro-to-csharp/list-collection.yml
     - name: Work in your local environment
       items:
-      - name: Setup your environment
+      - name: Set up your environment
         href: tutorials/intro-to-csharp/local-environment.md
       - name: Numbers in C#
         href: tutorials/intro-to-csharp/numbers-in-csharp-local.md
@@ -62,9 +62,9 @@
     href: tutorials/console-webapiclient.md
   - name: Inheritance in C# and .NET
     href: tutorials/inheritance.md
-  - name: Working with LINQ
+  - name: Work with LINQ
     href: tutorials/working-with-linq.md
-  - name: Using Attributes
+  - name: Use Attributes
     href: tutorials/attributes.md
 - name: Tour of C#
   items:
@@ -168,7 +168,7 @@
       href: modern-events.md
     - name: Distinguishing Delegates and Events
       href: distinguish-delegates-events.md
-  - name: Language Integrated Query (LINQ)
+  - name: Language-Integrated Query (LINQ)
     items:
     - name: Overview of LINQ
       href: linq/index.md
@@ -325,7 +325,7 @@
       href: programming-guide/main-and-command-args/index.md
     - name: Command-Line Arguments
       href: programming-guide/main-and-command-args/command-line-arguments.md
-    - name: "How to: Display Command Line Arguments"
+    - name: "How to: Display Command-Line Arguments"
       href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
     - name: Main() Return Values
       href: programming-guide/main-and-command-args/main-return-values.md
@@ -1068,7 +1068,7 @@
     - name: "How to return subsets of element properties in a query"
       href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
   - name: Interfaces
-    items: 
+    items:
     - name: Overview
       href: programming-guide/interfaces/index.md
     - name: Explicit Interface Implementation
@@ -1197,7 +1197,7 @@
       href: programming-guide/xmldoc/delimiters-for-documentation-tags.md
     - name: "How to: Use the XML Documentation Features"
       href: programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md
-    - name: Documentation tag reference  
+    - name: Documentation tag reference
       items:
       - name: <c>
         href: programming-guide/xmldoc/code-inline.md
@@ -1600,7 +1600,7 @@
     - name: User-defined conversion operators
       href: language-reference/operators/user-defined-conversion-operators.md
       displayName: implicit, explicit
-    - name: Pointer related operators
+    - name: Pointer-related operators
       href: language-reference/operators/pointer-related-operators.md
       displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
     - name: Assignment operators

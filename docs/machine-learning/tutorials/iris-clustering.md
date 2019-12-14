@@ -115,7 +115,7 @@ The <xref:Microsoft.ML.MLContext?displayProperty=nameWithType> class represents 
 
 ## Setup data loading
 
-Add the following code to the `Main` method to setup the way to load data:
+Add the following code to the `Main` method to set up the way to load data:
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
 

@@ -12,7 +12,7 @@ This example shows how to merge data from different sources into a sequence of n
 
 ## To create the data file
 
-Copy the names.csv and scores.csv files into your project folder, as described in [How to: Join Content from Dissimilar Files (LINQ) (C#)](./how-to-join-content-from-dissimilar-files-linq.md).
+Copy the names.csv and scores.csv files into your project folder, as described in [How to join content from dissimilar files (LINQ) (C#)](./how-to-join-content-from-dissimilar-files-linq.md).
 
 ## Example
 
@@ -35,8 +35,8 @@ class PopulateCollection
 {
     static void Main()
     {
-        // These data files are defined in How to: Join Content from
-        // Dissimilar Files (LINQ).
+        // These data files are defined in How to join content from
+        // dissimilar files (LINQ).
 
         // Each line of names.csv consists of a last name, a first name, and an
         // ID number, separated by commas. For example, Omelchenko,Svetlana,111

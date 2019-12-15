@@ -258,8 +258,8 @@ The Newtonsoft `[JsonConstructor]` attribute lets you specify which constructor 
 Newtonsoft has several ways to conditionally ignore a property on serialization or deserialization:
 
 * `DefaultContractResolver` lets you select properties to include or exclude, based on arbitrary criteria. 
-* The `NullValueHandling` setting on `JsonSerializerOptions` lets you specify that all null-value properties should be ignored.
-* The `NullValueHandling` setting on `[JsonProperty]` attribute lets you specify individual properties that should be ignored when null.
+* The `NullValueHandling` and `DefaultValueHandling` setting on `JsonSerializerOptions` lets you specify that all null-value or default-value properties should be ignored.
+* The `NullValueHandling` and `DefaultValueHandling` setting on `[JsonProperty]` attribute lets you specify individual properties that should be ignored when set to null or default value.
 
 `System.Text.Json` provides the following ways to omit properties while serializing:
 
@@ -268,7 +268,9 @@ Newtonsoft has several ways to conditionally ignore a property on serialization 
 
 These options don't let you:
 
-* Ignore selected properties if their value is null. 
+* Ignore all properties that have the default value for the type.
+* Ignore selected properties that have the default value for the type.
+* Ignore selected properties if their value is null.
 * Ignore selected properties based on arbitrary criteria evaluated at run time. 
 
 For that functionality, you can write a custom converter. Here's a sample POCO and a custom converter for it that illustrates this approach:
@@ -286,7 +288,11 @@ This approach requires complex code if:
 * The POCO includes complex properties.
 * You need to handle attributes such as `[JsonIgnore]` or options such as custom encoders.
 
-For more information, see issue [42001](https://github.com/dotnet/corefx/issues/42001) and issue [40600](https://github.com/dotnet/corefx/issues/40600) in the dotnet/corefx GitHub repository.
+For more information, see the following issues in the dotnet/corefx GitHub repository:
+
+* [42001](https://github.com/dotnet/corefx/issues/42001) Equivalent of DefaultContractResolver
+* [40600](https://github.com/dotnet/corefx/issues/40600) Ignore selected properties when null 
+* [38878](https://github.com/dotnet/corefx/issues/38878) Ignore default values
 
 ## Specify date format
 
@@ -316,12 +322,16 @@ For more information, see issue [36639](https://github.com/dotnet/corefx/issues/
 
 ## Types without built-in support
 
-The following list shows some of the types that the current release of `System.Text.Json` doesn't provide built-in support for:
+`System.Text.Json` doesn't provide built-in support for the following types. The list includes links to the issues that track the request for support:
 
-* <xref:System.Data.DataTable> and related types. For more information, see issue [38712](https://github.com/dotnet/corefx/issues/38712) in the dotnet/corefx GitHub repository.
-* F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md). For more information, see issue [38348](https://github.com/dotnet/corefx/issues/38348).
-* Collections in the <xref:System.Collections.Specialized> namespace. For more information, see issue [40370](https://github.com/dotnet/corefx/issues/40370).
-* The <xref:System.Dynamic.ExpandoObject> type.  For more information, see issue [38007](https://github.com/dotnet/corefx/issues/38007).
+* <xref:System.Data.DataTable> and related types. [38712](https://github.com/dotnet/corefx/issues/38712)
+* F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md). [38348](https://github.com/dotnet/corefx/issues/38348)
+* Collection types in the <xref:System.Collections.Specialized> namespace. [40370](https://github.com/dotnet/corefx/issues/40370)
+* <xref:System.Dynamic.ExpandoObject>. [38007](https://github.com/dotnet/corefx/issues/38007)
+* <xref:System.TimeZoneInfo>. [41348](https://github.com/dotnet/corefx/issues/41348)
+* <xref:System.Numerics.BigInteger>. [33458](https://github.com/dotnet/corefx/issues/33458)
+* <xref:System.TimeSpan>. [38641](https://github.com/dotnet/corefx/issues/38641)
+* <xref:System.DBNull>. [418](https://github.com/dotnet/runtime/issues/418)
 
 ## Fields
 
@@ -358,10 +368,17 @@ Newtonsoft treats numbers with a leading zero as octal numbers. `System.Text.Jso
 
 Newtonsoft has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing, and it uses the metadata while deserializing. The current release of `System.Text.Json` lacks this feature. For more information, see issue [39031](https://github.com/dotnet/corefx/issues/39031) in the dotnet/corefx GitHub repository.
 
-
 ## Populate existing objects
 
-Newtonsoft can deserialize to an existing instance of a class, instead of creating a new instance. The current release of `System.Text.Json` always creates a new instance of the target type by using the default parameterless constructor. For more information, see issue [37627](https://github.com/dotnet/corefx/issues/37627) and [42515](https://github.com/dotnet/corefx/issues/42515) in the dotnet/corefx GitHub repository.
+The Newtonsoft `JsonConvert.PopulateObject` method deserializes a JSON document to an existing instance of a class, instead of creating a new instance. The current release of `System.Text.Json` always creates a new instance of the target type by using the default parameterless constructor. For more information, see issue [37627](https://github.com/dotnet/corefx/issues/37627) in the dotnet/corefx GitHub repository.
+
+## Reuse rather than replace properties
+
+The Newtonsoft `ObjetCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. The current release of `System.Text.Json` always replaces objects in properties. For more information, see issue [42515](https://github.com/dotnet/corefx/issues/42515) in the dotnet/corefx GitHub repository.
+
+## Add to collections without setters
+
+During deserialization, Newtonsoft adds objects to a collection even if the property has no setter. The current release of `System.Text.Json` ignores properties that don't have setters. For more information, see issue [39477](https://github.com/dotnet/corefx/issues/39477) in the dotnet/corefx GitHub repository.
 
 ## MissingMemberHandling
 

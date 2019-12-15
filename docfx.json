@@ -16,7 +16,6 @@
         "dest": ".",
         "exclude": [
           "api/overwrites/**",
-          "samples/**/*.*",
           "**/includes/**",
           "***/contributing.md"
         ]
@@ -80,7 +79,6 @@
         "dest": ".",
         "exclude": [
           "**/obj/**",
-          "samples/**/*.*",
           "_themes/DocPacker/**"
         ]
       }

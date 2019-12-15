@@ -167,7 +167,13 @@ The converter can deserialize JSON that was created by using the same converter 
 ]
 ```
 
-For more information, see issue [38650](https://github.com/dotnet/corefx/issues/38650) and issue [39031](https://github.com/dotnet/corefx/issues/39031) in the dotnet/corefx GitHub repository.
+For more information, see the following issues in the dotnet/corefx GitHub repository:
+
+* [38650](https://github.com/dotnet/corefx/issues/38650) Support polymorphic serialization
+* [39031](https://github.com/dotnet/corefx/issues/39031) Support polymorphic deserialization
+* [41758](https://github.com/dotnet/corefx/issues/41758) System.Text.Json ignores JsonPropertyName on base class
+* [38154](https://github.com/dotnet/corefx/issues/38154) New modifier is not hiding base property
+* [39905](https://github.com/dotnet/corefx/issues/39905) Allow custom converters for base-classes
 
 ## Quoted numbers
 
@@ -247,14 +253,25 @@ For more information, see issue [38569](https://github.com/dotnet/corefx/issues/
 
 The Newtonsoft `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO. The current release of `System.Text.Json` supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
 
-## Ignore a property at run-time
+## Conditionally ignore a property
 
-The Newtonsoft `DefaultContractResolver` lets you select properties to include or exclude during serialization, based on criteria that are evaluated at run time. `System.Text.Json` provides the following ways to omit properties while serializing:
+Newtonsoft has several ways to conditionally ignore a property on serialization or deserialization:
 
-* A [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
-* The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) flag lets you exclude all null-value properties during serialization.
+* `DefaultContractResolver` lets you select properties to include or exclude, based on arbitrary criteria. 
+* The `NullValueHandling` setting on `JsonSerializerOptions` lets you specify that all null-value properties should be ignored.
+* The `NullValueHandling` setting on `[JsonProperty]` attribute lets you specify individual properties that should be ignored when null.
 
-These options don't let you selectively omit properties from serialization based on criteria evaluated at run time. For that functionality, you can write a custom converter. Here's a sample POCO and a custom converter for it that illustrates this approach:
+`System.Text.Json` provides the following ways to omit properties while serializing:
+
+* The [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
+* The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) global option lets you exclude all null-value properties.
+
+These options don't let you:
+
+* Ignore selected properties if their value is null. 
+* Ignore selected properties based on arbitrary criteria evaluated at run time. 
+
+For that functionality, you can write a custom converter. Here's a sample POCO and a custom converter for it that illustrates this approach:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWF)]
 
@@ -306,9 +323,26 @@ The following list shows some of the types that the current release of `System.T
 * Collections in the <xref:System.Collections.Specialized> namespace. For more information, see issue [40370](https://github.com/dotnet/corefx/issues/40370).
 * The <xref:System.Dynamic.ExpandoObject> type.  For more information, see issue [38007](https://github.com/dotnet/corefx/issues/38007).
 
+## Fields
+
+Newtonsoft can serialize and deserialize fields as well as properties. The current release of `System.Text.Json` only works with properties. For more information, see issue [36505](https://github.com/dotnet/corefx/issues/36505) in the dotnet/corefx GitHub repository.
+
 ## Private setters
 
 Newtonsoft can use private property setters. The current release of `System.Text.Json` supports only public setters. For more information, see issue [38163](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx GitHub repository.
+
+## Preserve object references and handle loops
+
+By default, Newtonsoft serializes by value. For example, if an object contains two properties that contain a reference to the same `Person` object, the values of that `Person` object's properties are duplicated in the JSON.
+
+Newtonsoft has a `PreserveReferencesHandling` setting on `JsonSerializerSettings` that lets you serialize by reference:
+
+* A token is added to the JSON created for the first `Person` object.
+* The JSON that is created for the second `Person` object contains that token instead of property values.
+
+Newtonsoft also has a `ReferenceLoopHandling` setting that lets you ignore circular references rather than throw an exception.
+
+The current release of `System.Text.Json` supports only serialization by value. For more information, see issues [37786](https://github.com/dotnet/corefx/issues/37786), [38579](https://github.com/dotnet/corefx/issues/38579), and [41002](https://github.com/dotnet/corefx/issues/41002) in the dotnet/corefx GitHub repository.
 
 ## System.Runtime.Serialization attributes
 
@@ -320,26 +354,14 @@ For more information, see issue [38758](https://github.com/dotnet/corefx/issues/
 
 Newtonsoft treats numbers with a leading zero as octal numbers. `System.Text.Json` doesn't allow leading zeroes because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't allow them. The lack of support for octal numbers is by design and is not expected to change in future versions of `System.Text.Json`. Options for handling JSON that deviates from the specification are offered for only a few high-priority scenarios, such as comments and trailing commas.
 
-## Object reference handling
-
-By default, both Newtonsoft and `System.Text.Json` serialize objects by value. For example, if an object contains two properties that contain a reference to the same `Person` object, the values of that `Person` object's properties are duplicated in the JSON. Newtonsoft offers the option of serializing by reference:
-
-* A token is added to the JSON created for the first `Person` object.
-* The JSON that is created for the second `Person` object contains that token instead of property values.
-
-For more information, see issues [37786](https://github.com/dotnet/corefx/issues/37786) and [38579](https://github.com/dotnet/corefx/issues/38579) in the dotnet/corefx GitHub repository.
-
 ## Type name handling
 
-Newtonsoft can add type name metadata to the JSON while serializing, and it uses the metadata while deserializing. The current release of `System.Text.Json` lacks this feature.
+Newtonsoft has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing, and it uses the metadata while deserializing. The current release of `System.Text.Json` lacks this feature. For more information, see issue [39031](https://github.com/dotnet/corefx/issues/39031) in the dotnet/corefx GitHub repository.
+
 
 ## Populate existing objects
 
 Newtonsoft can deserialize to an existing instance of a class, instead of creating a new instance. The current release of `System.Text.Json` always creates a new instance of the target type by using the default parameterless constructor. For more information, see issue [37627](https://github.com/dotnet/corefx/issues/37627) and [42515](https://github.com/dotnet/corefx/issues/42515) in the dotnet/corefx GitHub repository.
-
-## Fields
-
-Newtonsoft can serialize and deserialize fields as well as properties. The current release of `System.Text.Json` only works with properties. For more information, see issue [36505](https://github.com/dotnet/corefx/issues/36505) in the dotnet/corefx GitHub repository.
 
 ## MissingMemberHandling
 
@@ -455,7 +477,7 @@ If you need to continue to use Newtonsoft for certain target frameworks, you can
 Since the `System.Text.Json` DOM can't add, remove, or modify JSON elements. If your scenario currently uses a writable DOM, one of the following workarounds might be feasible:
 
 * To build a `JsonDocument` from scratch, write JSON text by using the `Utf8JsonWriter` and parse the output from that to make a new `JsonDocument`.
-* To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`. For more information, see issue [38589](https://github.com/dotnet/corefx/issues/38589) in the dotnet/corefx GitHub repository.
+* To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`. For more information, see issue [38589](https://github.com/dotnet/corefx/issues/38589) and issue [39922](https://github.com/dotnet/corefx/issues/39922) in the dotnet/corefx GitHub repository.
 
 ### JsonElement
 

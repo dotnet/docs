@@ -62,8 +62,6 @@ There's a lot more to learn about C#. The following topics provide an overview o
   - An ***array*** is a data structure that contains a number of variables that are accessed through computed indices.
 - [Interfaces](interfaces.md)
   - An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
-- [Enums](enums.md)
-  - An ***enum type*** is a distinct value type with a set of named constants.
 - [Delegates](delegates.md)
   - A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
 - [Attributes](attributes.md)

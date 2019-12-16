@@ -1,9 +1,9 @@
 ---
-title: "How to: Perform Streaming Transform of Large XML Documents (C#)"
+title: "How to perform streaming transform of large XML documents (C#)"
 ms.date: 07/20/2015
 ms.assetid: 5f16d1f8-5370-4b55-b0c8-e497df163037
 ---
-# How to: Perform Streaming Transform of Large XML Documents (C#)
+# How to perform streaming transform of large XML documents (C#)
 Sometimes you have to transform large XML files, and write your application so that the memory footprint of the application is predictable. If you try to populate an XML tree with a very large XML file, your memory usage will be proportional to the size of the file (that is, excessive). Therefore, you should use a streaming technique instead.  
   
  Streaming techniques are best applied in situations where you need to process the source document only once, and you can process the elements in document order. Certain standard query operators, such as <xref:System.Linq.Enumerable.OrderBy%2A>, iterate their source, collect all of the data, sort it, and then finally yield the first item in the sequence. Note that if you use a query operator that materializes its source before yielding the first item, you will not retain a small memory footprint for your application.  

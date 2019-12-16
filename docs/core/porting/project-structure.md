@@ -7,7 +7,7 @@ ms.custom: seodec18
 ---
 # Organize your project to support both .NET Framework and .NET Core
 
-Learn how to create a solution that compiles for both .NET Framework and .NET Core side-by-side. See several options to organize projects to help you achieve this goal. Here are some typical scenarios to consider when you're deciding how to setup your project layout with .NET Core. The list may not cover everything you want; prioritize based on your project's needs.
+Learn how to create a solution that compiles for both .NET Framework and .NET Core side-by-side. See several options to organize projects to help you achieve this goal. Here are some typical scenarios to consider when you're deciding how to set up your project layout with .NET Core. The list may not cover everything you want; prioritize based on your project's needs.
 
 - [**Combine existing projects and .NET Core projects into single projects**](#replace-existing-projects-with-a-multi-targeted-net-core-project)
 

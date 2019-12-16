@@ -111,6 +111,17 @@ The following examples how to use the exact specified version:
 }
 ```
 
+The following example shows how to use the highest patch version installed of an specific version (in the form, 3.0.1xx):
+
+```json
+{
+  "sdk": {
+    "version": "3.0.100",
+    "rollForward": "latestPatch"
+  }
+}
+```
+
 ## global.json and the .NET Core CLI
 
 It's helpful to know which versions are available in order to set one in the *global.json* file. You can find the full list of supported available SDKs at the [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core) page. Starting with .NET Core 2.1 SDK, you can run the following command to verify which SDK versions are already installed on your machine:

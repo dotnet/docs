@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement Interface Events - C# Programming Guide"
+title: "How to implement interface events - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "events [C#], in interfaces"
 ms.assetid: 63527447-9535-4880-8e95-35e2075827df
 ---
-# How to: Implement Interface Events (C# Programming Guide)
+# How to implement interface events (C# Programming Guide)
 An [interface](../../language-reference/keywords/interface.md) can declare an [event](../../language-reference/keywords/event.md). The following example shows how to implement interface events in a class. Basically the rules are the same as when you implement any interface method or property.  
   
 ## To implement interface events in a class  

@@ -155,7 +155,7 @@ Starting with .NET Core 3.0, the following rules apply when determining which ve
 
 ## [.NET Core 2.x](#tab/netcore2x)
 
-Starting with .NET Core 2.0, the following rules apply when determining which version of the SDK to use:
+In .NET Core 2.x SDK, the following rules apply when determining which version of the SDK to use:
 
 - If no *global.json* file is found or *global.json* doesn't specify an SDK version, the latest installed SDK version is used. Latest SDK version can be either release or prerelease - the highest version number wins.
 - If *global.json* does specify an SDK version:

@@ -5,9 +5,11 @@ ms.date: 04/05/2019
 ms.custom: seoapril2019
 ---
 
-# A Tour of the C# Language
+# A tour of the C# language
 
-C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language. If you want to explore the language through interactive examples, try our [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
+C# (pronounced "See Sharp") is a simple, modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers.
+
+This tour provides an overview of the major components of the language in C# 7 and later. If you want to explore the language through interactive examples, try the [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
 
 C# is an object-oriented language, but C# further includes support for ***component-oriented*** programming. Contemporary software design increasingly relies on software components in the form of self-contained and self-describing packages of functionality. Key to such components is that they present a programming model with properties, methods, and events; they have attributes that provide declarative information about the component; and they incorporate their own documentation. C# provides language constructs to support directly these concepts, making C# a very natural language in which to create and use software components.
 
@@ -44,7 +46,9 @@ The `Hello` class declared by the "Hello, World" program has a single member, th
 
 The output of the program is produced by the `WriteLine` method of the `Console` class in the `System` namespace. This class is provided by the standard class libraries, which, by default, are automatically referenced by the compiler.
 
-There's a lot more to learn about C#. The following topics provide an overview of the elements of the C# language. These overviews will provide basic information about all elements of the language and give you the information necessary to dive deeper into elements of the C# language:
+## Elements of the C# language
+
+There's a lot more to learn about C#. The following topics provide an overview of the elements of the C# language. These overviews provide basic information about all elements of the language and give you the information necessary to dive deeper:
 
 - [Program Structure](program-structure.md)
   - Learn the key organizational concepts in the C# language: ***programs***, ***namespaces***, ***types***, ***members***, and ***assemblies***.
@@ -66,6 +70,9 @@ There's a lot more to learn about C#. The following topics provide an overview o
   - A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
 - [Attributes](attributes.md)
   - ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
+  
+> [!NOTE]
+> These articles apply to C# 7.0 and later. Some features may not be available in earlier versions.
 
 > [!div class="step-by-step"]
 > [Next](program-structure.md)

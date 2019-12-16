@@ -1,5 +1,5 @@
 ---
-title: Globalization and localization
+title: Globalization and localization overview
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "globalization [WPF], about globalization"

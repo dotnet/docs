@@ -1,5 +1,5 @@
 ---
-title: Defining an Event in Controls
+title: Define an event in controls
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

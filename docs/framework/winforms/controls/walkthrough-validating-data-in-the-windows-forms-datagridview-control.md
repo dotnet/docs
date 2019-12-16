@@ -1,5 +1,5 @@
 ---
-title: Walkthrough: Validating Data in DataGridView Control
+title: "Walkthrough: Validate data in DataGridView control"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

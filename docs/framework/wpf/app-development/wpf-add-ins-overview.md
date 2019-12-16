@@ -1,5 +1,5 @@
 ---
-title: Add-ins
+title: Add-ins overview
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "add-ins and XAML browser applications [WPF]"

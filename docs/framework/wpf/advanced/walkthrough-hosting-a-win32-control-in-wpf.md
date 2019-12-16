@@ -1,5 +1,6 @@
 ---
-title: Host a Win32 control
+title: Host a Win32 control in WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

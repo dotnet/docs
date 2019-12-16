@@ -1,5 +1,6 @@
 ---
-title: Arrange Windows Forms controls
+title: Arrange Windows Forms controls in WPF
+titleSuffix: ""
 ms.date: "04/03/2018"
 dev_langs:
   - "csharp"

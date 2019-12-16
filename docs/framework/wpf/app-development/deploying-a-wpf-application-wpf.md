@@ -1,12 +1,13 @@
 ---
-title: "Deploying a WPF Application"
+title: "Deploy an app"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WPF applications [WPF], deployment"
   - "deployment [WPF], applications"
 ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d
 ---
-# Deploying a WPF Application (WPF)
+# Deploy a WPF Application
+
 After Windows Presentation Foundation (WPF) applications are built, they need to be deployed. Windows and the .NET Framework include several deployment technologies. The deployment technology that is used to deploy a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depends on the application type. This topic provides a brief overview of each deployment technology, and how they are used in conjunction with the deployment requirements of each [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application type.  
 
 <a name="Deployment_Technologies"></a>   

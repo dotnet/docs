@@ -1,5 +1,5 @@
 ---
-title: Create new WPF Content
+title: Create new WPF Content on Windows Forms
 titleSuffix: ""
 ms.date: 08/18/2018
 helpviewer_keywords:

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Performing a Drag-and-Drop Operation"
+title: "Walkthrough: Perform a drag-and-drop operation"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

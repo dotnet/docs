@@ -1,5 +1,6 @@
 ---
-title: Host a Windows Forms composite control
+title: Host a Windows Forms composite control in WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

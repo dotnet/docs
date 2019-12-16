@@ -15,4 +15,4 @@
 > - [SLES 12 - x64](../linux-package-manager-sles12.md)
 > - [SLES 15 - x64](../linux-package-manager-sles15.md)
 
-_Package manager installs are only supported on **64-bit** CPUs_. Other CPUs must [manually install the .NET Core SDK](../sdk.md?pivots=os-linux#download-and-manually-install) or [manually install the .NET Core Runtime](../runtime.md?pivots=os-linux#download-and-manually-install). For more information, see [.NET Core dependencies and requirements](../dependencies.md).
+_Package manager installs are only supported on **x32-64** architectures_. Other architectures, such as ARM, must [manually install the .NET Core SDK](../sdk.md?pivots=os-linux#download-and-manually-install) or [manually install the .NET Core Runtime](../runtime.md?pivots=os-linux#download-and-manually-install). For more information, see [.NET Core dependencies and requirements](../dependencies.md).

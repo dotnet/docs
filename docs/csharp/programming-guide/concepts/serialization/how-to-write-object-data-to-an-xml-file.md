@@ -58,5 +58,5 @@ public class XMLWrite
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Read Object Data from an XML File (C#)](./how-to-read-object-data-from-an-xml-file.md)
+- [How to read object data from an XML file (C#)](./how-to-read-object-data-from-an-xml-file.md)
 - [Serialization (C#)](./index.md)

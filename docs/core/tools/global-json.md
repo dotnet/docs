@@ -133,7 +133,7 @@ dotnet new globaljson --sdk-version 3.0.100
 > The matching rules are governed by the apphost, which is part of the .NET Core runtime.
 > The latest version of the host is used when you have multiple runtimes installed side-by-side.
 
-# [.NET Core 3.x](#tab/netcore30)
+# [.NET Core 3.x](#tab/netcore3x)
 
 Starting with .NET Core 3.0, the following rules apply when determining which version of the SDK to use:
 
@@ -146,7 +146,7 @@ Starting with .NET Core 3.0, the following rules apply when determining which ve
   - If no `rollFoward` value is set, it uses `major` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
   - Whether prerelease versions are considered and what's the default behavior when `allowPrerelease` isn't set is described in the [allowPrerelease](#allowprerelease) section.
 
-# [.NET Core 2.x](#tab/netcore20)
+# [.NET Core 2.x](#tab/netcore2x)
 
 Starting with .NET Core 2.0, the following rules apply when determining which version of the SDK to use:
 

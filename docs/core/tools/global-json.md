@@ -93,7 +93,7 @@ The following example shows how to use the highest version installed that is gre
 
 ```json
 {
-  "sdk": {
+  "sdk": {
     "version": "3.0.100",
     "rollForward": "latestMajor"
   }
@@ -104,7 +104,7 @@ The following examples how to use the exact specified version:
 
 ```json
 {
-  "sdk": {
+  "sdk": {
     "version": "3.0.100",
     "rollForward": "disable"
   }

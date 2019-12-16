@@ -39,6 +39,8 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 SD
 
 You can install the .NET Core SDK with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
 
+Installing with a package manager is only supported for 64-bit CPUs. If you're installing the .NET Core Runtime with a 32-bit CPU, follow the [Download and manually install](#download-and-manually-install) instructions below.
+
 ## Download and manually install
 
 To extract the SDK and make the commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.

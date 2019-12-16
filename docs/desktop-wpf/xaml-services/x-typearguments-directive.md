@@ -67,7 +67,7 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
 ## XAML 2009 or XAML 2006 with No WPF 3.0 or WPF 3.5 Dependency  
  In .NET Framework XAML Services for either XAML 2006 or XAML 2009, the WPF-related restrictions on generic XAML usage are relaxed. You can instantiate a generic object element at any position in XAML markup that the backing type system and object model can support.  
   
- If you use XAML 2009 instead of mapping the CLR base types to obtain XAML types for common language primitives, you can use [Built-in Types for Common XAML Language Primitives](built-in-types-for-common-xaml-language-primitives.md) as information items in a `typeString`. For example, you could declare the following (prefix mappings not shown, but x is the XAML language XAML namespace for XAML 2009):  
+ If you use XAML 2009 instead of mapping the CLR base types to obtain XAML types for common language primitives, you can use [Built-in Types for Common XAML Language Primitives](types-for-primitives.md) as information items in a `typeString`. For example, you could declare the following (prefix mappings not shown, but x is the XAML language XAML namespace for XAML 2009):  
   
 ```xaml  
 <my:BusinessObject x:TypeArguments="x:String,x:Int32"/>  
@@ -79,5 +79,5 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
 
 - [x:Class Directive](x-class-directive.md)
 - [x:Type Markup Extension](x-type-markup-extension.md)
-- [Built-in Types for Common XAML Language Primitives](built-in-types-for-common-xaml-language-primitives.md)
+- [Built-in Types for Common XAML Language Primitives](types-for-primitives.md)
 - [Generics in XAML](generics-in-xaml.md)

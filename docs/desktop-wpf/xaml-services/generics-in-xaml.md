@@ -21,7 +21,7 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
  The XAML attribute syntax form enabled by <xref:System.Xaml.Schema.XamlTypeTypeConverter> alters the typical MSIL / CLR syntax convention that uses angle brackets for types and constraints of generics, and instead substitutes parentheses for the constraint container. For an example, see [x:TypeArguments Directive](x-typearguments-directive.md).  
   
 ## Generics and XAML 2009 Features  
- If you use XAML 2009 instead of mapping the CLR base types to obtain XAML types for common language primitives, you can use [XAML 2009 built-in types](built-in-types-for-common-xaml-language-primitives.md) as information items in `x:TypeArguments`. For example, you could declare the following (prefix mappings not shown, but `x` is the XAML language XAML namespace for XAML 2009):  
+ If you use XAML 2009 instead of mapping the CLR base types to obtain XAML types for common language primitives, you can use [XAML 2009 built-in types](types-for-primitives.md) as information items in `x:TypeArguments`. For example, you could declare the following (prefix mappings not shown, but `x` is the XAML language XAML namespace for XAML 2009):  
   
 ```xaml  
 <my:BusinessObject x:TypeArguments="x:String,x:Int32"/>  
@@ -40,4 +40,4 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
 
 - [x:TypeArguments Directive](x-typearguments-directive.md)
 - [x:Class Directive](x-class-directive.md)
-- [Built-in Types for Common XAML Language Primitives](built-in-types-for-common-xaml-language-primitives.md)
+- [Built-in Types for Common XAML Language Primitives](types-for-primitives.md)

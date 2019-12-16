@@ -113,7 +113,7 @@ In the `Main` method, replace the `Console.WriteLine("Hello World!");` line with
 
 The <xref:Microsoft.ML.MLContext?displayProperty=nameWithType> class represents the machine learning environment and provides mechanisms for logging and entry points for data loading, model training, prediction, and other tasks. This is comparable conceptually to using `DbContext` in Entity Framework.
 
-## Setup data loading
+## Set up data loading
 
 Add the following code to the `Main` method to set up the way to load data:
 

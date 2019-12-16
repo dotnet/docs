@@ -74,7 +74,7 @@ There's a lot more to learn about C#. The following topics provide an overview o
   - ***Attributes*** enable programs to specify additional declarative information about types, members, and other entities.
   
 > [!NOTE]
-> These articles apply to C# 7 and later. Some features may not be available in earlier versions.
+> These articles apply to C# 7.0 and later. Some features may not be available in earlier versions.
 
 > [!div class="step-by-step"]
 > [Next](program-structure.md)

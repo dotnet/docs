@@ -10,7 +10,7 @@ metadata:
   ms.date: 12/12/2019
 
 landingContent:
-  - title: "Find updates"
+  - title: "Find .NET updates"
     linkLists:
       - linkListType: whats-new
         links:
@@ -33,3 +33,22 @@ landingContent:
             url: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
           - text: ".NET samples contributor guide"
             url: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
+
+  - title: "Related What's new pages"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Xamarin docs updates
+            url: https://docs.microsoft.com/xamarin/whats-new/
+          - text: .NET Core release notes
+            url: https://github.com/dotnet/core/blob/master/release-notes/README.md
+          - text: ASP.NET Core release notes
+            url: https://docs.microsoft.com/aspnet/core/release-notes/aspnetcore-3.1
+          - text: C# compiler (roslyn) release notes
+            url: https://github.com/dotnet/roslyn/tree/master/docs/ide
+          - text: Visual Studio release notes
+            url: https://docs.microsoft.com//visualstudio/releases/2019/release-notes
+          - text: Visual Studio for Mac release notes
+            url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
+          - text: Visual Studio Code release notes
+            url: https://code.visualstudio.com/updates

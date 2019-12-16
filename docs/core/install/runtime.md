@@ -37,7 +37,7 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 ru
 
 ## Install with a package manager
 
-You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
+You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
 
 Installing with a package manager is only supported for 64-bit CPUs. If you're installing the .NET Core Runtime with a 32-bit CPU, follow the [Download and manually install](#download-and-manually-install) instructions below.
 

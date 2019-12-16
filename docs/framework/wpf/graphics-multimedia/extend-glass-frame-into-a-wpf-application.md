@@ -1,5 +1,6 @@
 ---
-title: "Extend Glass Frame Into a WPF Application"
+title: "Extend Glass Frame Into a WPF app"
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

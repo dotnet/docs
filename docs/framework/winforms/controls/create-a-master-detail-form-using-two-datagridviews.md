@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Master-Detail Form Using Two Windows Forms DataGridView Controls"
+title: Create a Master-Detail Form Using Two DataGridView Controls
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

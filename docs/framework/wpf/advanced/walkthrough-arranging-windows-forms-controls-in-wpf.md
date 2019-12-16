@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Arranging Windows Forms Controls in WPF"
+title: Arrange Windows Forms controls
 ms.date: "04/03/2018"
 dev_langs:
   - "csharp"

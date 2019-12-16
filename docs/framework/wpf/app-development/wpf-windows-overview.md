@@ -1,5 +1,5 @@
 ---
-title: "WPF Windows Overview"
+title: Windows overview
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: "WPF Brushes Overview"
+title: Brushes
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

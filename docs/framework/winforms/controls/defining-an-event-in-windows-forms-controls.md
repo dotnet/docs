@@ -1,5 +1,5 @@
 ---
-title: "Defining an Event in Windows Forms Controls"
+title: Defining an Event in Controls
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

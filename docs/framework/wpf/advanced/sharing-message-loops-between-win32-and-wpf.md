@@ -1,5 +1,6 @@
 ---
 title: "Sharing Message Loops Between Win32 and WPF"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Win32 code [WPF], sharing message loops"

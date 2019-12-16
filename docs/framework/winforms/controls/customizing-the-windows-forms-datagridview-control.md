@@ -1,5 +1,5 @@
 ---
-title: "Customizing the Windows Forms DataGridView Control"
+title: Customize DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data grids [Windows Forms], customization"

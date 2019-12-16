@@ -1,5 +1,5 @@
 ---
-title: "How to: Add a Splash Screen to a WPF Application"
+title: "How to: Add a Splash Screen"
 ms.date: 08/18/2018
 helpviewer_keywords:
   - "WPF [WPF], splash screen"

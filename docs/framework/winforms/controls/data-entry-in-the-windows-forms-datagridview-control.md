@@ -1,5 +1,5 @@
 ---
-title: "Data Entry in the Windows Forms DataGridView Control"
+title: Data Entry in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], data entry"

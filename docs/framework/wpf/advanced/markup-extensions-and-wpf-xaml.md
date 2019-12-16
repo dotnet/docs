@@ -1,5 +1,6 @@
 ---
 title: "Markup Extensions and WPF XAML"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "brace character [WPF]"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Display More than One Month in the Windows Forms MonthCalendar Control"
+title: Display More than One Month in MonthCalendar Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

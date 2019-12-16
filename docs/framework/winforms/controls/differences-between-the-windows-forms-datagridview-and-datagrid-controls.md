@@ -1,5 +1,5 @@
 ---
-title: "Differences Between the Windows Forms DataGridView and DataGrid Controls"
+title: Differences Between DataGridView and DataGrid Controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data grids [Windows Forms"

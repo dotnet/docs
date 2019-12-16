@@ -1,5 +1,5 @@
 ---
-title: "System Information and Windows Forms"
+title: System Information
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

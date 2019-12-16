@@ -1,5 +1,5 @@
 ---
-title: "Resizing Columns and Rows in the Windows Forms DataGridView Control"
+title: Resizing Columns and Rows in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], sizing rows and columns"

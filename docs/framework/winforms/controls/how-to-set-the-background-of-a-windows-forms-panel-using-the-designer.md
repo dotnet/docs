@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Background of a Windows Forms Panel Using the Designer"
+title: Set the Background of a Panel Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "background colors [Windows Forms], Windows Forms Panel controls"

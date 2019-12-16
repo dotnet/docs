@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Checked Items in the Windows Forms CheckedListBox Control"
+title: Determine Checked Items in CheckedListBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: "WPF Architecture"
+title: Architecture
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "properties [WPF], attached"

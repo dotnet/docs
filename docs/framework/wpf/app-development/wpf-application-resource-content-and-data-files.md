@@ -1,5 +1,5 @@
 ---
-title: "WPF Application Resource, Content, and Data Files"
+title: Application Resource, Content, and Data Files
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

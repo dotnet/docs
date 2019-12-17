@@ -476,10 +476,10 @@ For a string property, if the string is null, <xref:System.Text.Json.Utf8JsonWri
 
 If you need to continue to use Json.NET for certain target frameworks, you can multi-target and have two implementations. However, this is not trivial and would require some `#ifdefs` and source duplication. One way to share as much code as possible is to create a `ref struct` wrapper around `Utf8JsonReader` and Json.NET `JsonTextReader`, and a wrapper around `Utf8JsonWriter` and `JsonTextWriter`. This wrapper would unify the public surface area while isolating the behavioral differences. This lets you isolate the changes mainly to the construction of the type, along with passing the new type around by reference. This is the pattern that the [.NET Core installer](https://github.com/dotnet/runtime/tree/master/src/installer) follows:
 
-* [UnifiedJsonReader.JsonTextReader.cs](https://github.com/dotnet/runtime/blob/master/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.JsonTextReader.cs)
-* [UnifiedJsonReader.Utf8JsonReader.cs](https://github.com/dotnet/runtime/blob/master/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.Utf8JsonReader.cs)
-* [UnifiedJsonWriter.JsonTextWriter.cs](https://github.com/dotnet/runtime/blob/master/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonWriter.JsonTextWriter.cs)
-* [UnifiedJsonWriter.Utf8JsonWriter.cs](https://github.com/dotnet/runtime/blob/master/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonWriter.Utf8JsonWriter.cs)
+* [UnifiedJsonReader.JsonTextReader.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.JsonTextReader.cs)
+* [UnifiedJsonReader.Utf8JsonReader.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.Utf8JsonReader.cs)
+* [UnifiedJsonWriter.JsonTextWriter.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonWriter.JsonTextWriter.cs)
+* [UnifiedJsonWriter.Utf8JsonWriter.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonWriter.Utf8JsonWriter.cs)
 
 ## JsonDocument
 

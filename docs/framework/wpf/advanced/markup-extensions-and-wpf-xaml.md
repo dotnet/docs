@@ -35,7 +35,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 ## XAML-Defined Markup Extensions  
  Several markup extensions exist that are not specific to the WPF implementation of XAML, but are instead implementations of intrinsics or features of XAML as a language. These markup extensions are implemented in the System.Xaml assembly as part of the general .NET Framework XAML services, and are within the XAML language XAML namespace. In terms of common markup usage, these markup extensions are typically identifiable by the `x:` prefix in the usage. The <xref:System.Windows.Markup.MarkupExtension> base class (also defined in System.Xaml) provides the pattern that all markup extensions should use in order to be supported in XAML readers and XAML writers, including in WPF XAML.  
   
-- `x:Type` supplies the <xref:System.Type> object for the named type. This facility is used most frequently in styles and templates. For details, see [x:Type Markup Extension](../../../desktop-wpf/xaml-services/x-type-markup-extension.md).  
+- `x:Type` supplies the <xref:System.Type> object for the named type. This facility is used most frequently in styles and templates. For details, see [x:Type Markup Extension](../../../desktop-wpf/xaml-services/xtype-markup-extension.md).  
   
 - `x:Static` produces static values. The values come from value-type code entities that are not directly the type of a target property's value, but can be evaluated to that type. For details, see [x:Static Markup Extension](../../../desktop-wpf/xaml-services/xstatic-markup-extension.md).  
   
@@ -118,4 +118,4 @@ This topic introduces the concept of markup extensions for XAML, including their
 - [StaticResource Markup Extension](staticresource-markup-extension.md)
 - [Binding Markup Extension](binding-markup-extension.md)
 - [DynamicResource Markup Extension](dynamicresource-markup-extension.md)
-- [x:Type Markup Extension](../../../desktop-wpf/xaml-services/x-type-markup-extension.md)
+- [x:Type Markup Extension](../../../desktop-wpf/xaml-services/xtype-markup-extension.md)

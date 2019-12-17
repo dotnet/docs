@@ -24,7 +24,7 @@ ms.assetid: e1f47225-9996-4fbf-ab86-62d2e955f3fc
  [x:Property Directive](xproperty-directive.md)  
  [x:Static Markup Extension](xstatic-markup-extension.md)  
  [x:Subclass Directive](xsubclass-directive.md)  
- [x:Type Markup Extension](x-type-markup-extension.md)  
+ [x:Type Markup Extension](xtype-markup-extension.md)  
  [x:TypeArguments Directive](xtypearguments-directive.md)  
  [x:Uid Directive](x-uid-directive.md)  
  [x:XData Intrinsic XAML Type](x-xdata-intrinsic-xaml-type.md)  

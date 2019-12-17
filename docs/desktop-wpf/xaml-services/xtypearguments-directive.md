@@ -78,6 +78,6 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
 ## See also
 
 - [x:Class Directive](xclass-directive.md)
-- [x:Type Markup Extension](x-type-markup-extension.md)
+- [x:Type Markup Extension](xtype-markup-extension.md)
 - [Built-in Types for Common XAML Language Primitives](types-for-primitives.md)
 - [Generics in XAML](../../csharp/programming-guide/generics/generics.md)

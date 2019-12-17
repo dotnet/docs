@@ -145,13 +145,13 @@ Styles for controls can be both created with and referenced with an implicit key
 
 [!code-xaml[FEResourceSH_snip#ImplicitStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page2.xaml#implicitstyle)]
 
-That style really does have a key: the implicit key `typeof(System.Windows.Controls.Button)`. In markup, you can specify a <xref:System.Windows.Style.TargetType%2A> directly as the type name (or you can optionally use [{x:Type...}](../xaml-services/x-type-markup-extension.md) to return a <xref:System.Type>.
+That style really does have a key: the implicit key `typeof(System.Windows.Controls.Button)`. In markup, you can specify a <xref:System.Windows.Style.TargetType%2A> directly as the type name (or you can optionally use [{x:Type...}](../xaml-services/xtype-markup-extension.md) to return a <xref:System.Type>.
 
 Through the default theme style mechanisms used by WPF, that style is applied as the runtime style of a <xref:System.Windows.Controls.Button> on the page, even though the <xref:System.Windows.Controls.Button> itself doesn't attempt to specify its <xref:System.Windows.FrameworkElement.Style%2A> property or a specific resource reference to the style. Your style defined in the page is found earlier in the lookup sequence than the theme dictionary style, using the same key that the theme dictionary style has. You could just specify `<Button>Hello</Button>` anywhere in the page, and the style you defined with <xref:System.Windows.Style.TargetType%2A> of `Button` would apply to that button. If you want, you can still explicitly key the style with the same type value as <xref:System.Windows.Style.TargetType%2A> for clarity in your markup, but that is optional.
 
 Implicit keys for styles do not apply on a control if <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> is `true`. (Also note that <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> might be set as part of native behavior for the control class, rather than explicitly on an instance of the control.) Also, in order to support implicit keys for derived class scenarios, the control must override <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> (all existing controls provided as part of WPF include this override). For more information about styles, themes, and control design, see [Guidelines for Designing Stylable Controls](../../framework/wpf/controls/guidelines-for-designing-stylable-controls.md).
 
-<xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../xaml-services/x-type-markup-extension.md). For details, see [Data Templating Overview](../../framework/wpf/data/data-templating-overview.md).
+<xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../xaml-services/xtype-markup-extension.md). For details, see [Data Templating Overview](../../framework/wpf/data/data-templating-overview.md).
 
 ## See also
 
@@ -160,6 +160,6 @@ Implicit keys for styles do not apply on a control if <xref:System.Windows.Frame
 - [Resources and code](../../framework/wpf/advanced/resources-and-code.md)
 - [Define and reference a resource](../../framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
 - [Application management overview](../../framework/wpf/app-development/application-management-overview.md)
-- [x:Type markup extension](../xaml-services/x-type-markup-extension.md)
+- [x:Type markup extension](../xaml-services/xtype-markup-extension.md)
 - [StaticResource markup extension](../../framework/wpf/advanced/staticresource-markup-extension.md)
 - [DynamicResource markup extension](../../framework/wpf/advanced/dynamicresource-markup-extension.md)

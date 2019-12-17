@@ -231,7 +231,7 @@ In the previous root element example, the prefix `x:` was used to map the XAML n
 
 - [x:Static](../xaml-services/xstatic-markup-extension.md): Enables a reference that returns a static value that is not otherwise a XAML-compatible property.
 
-- [x:Type](../xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../xaml-services/x-type-markup-extension.md) markup extension usage is optional.
+- [x:Type](../xaml-services/xtype-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../xaml-services/xtype-markup-extension.md) markup extension usage is optional.
 
 There are additional programming constructs in the `x:` prefix/XAML namespace, which are not as common. For details, see [XAML Namespace (x:) Language Features](../xaml-services/namespace-language-features.md).
 

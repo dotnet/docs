@@ -78,5 +78,5 @@ In the .NET Framework XAML Services implementation, the handling for this markup
   
 ## See also
 
-- [x:Type Markup Extension](x-type-markup-extension.md)
+- [x:Type Markup Extension](xtype-markup-extension.md)
 - [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)

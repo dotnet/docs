@@ -30,5 +30,5 @@ ms.assetid: e1f47225-9996-4fbf-ab86-62d2e955f3fc
  [x:XData Intrinsic XAML Type](x-xdata-intrinsic-xaml-type.md)  
  [XamlName Grammar](xamlname-grammar.md)  
  [{} Escape Sequence - Markup Extension](escape-sequence-markup-extension.md)  
- [xml:lang Handling in XAML](xml-lang-handling-in-xaml.md)  
+ [xml:lang Handling in XAML](xml-language-handling.md)  
  [xml:space Handling in XAML](xml-space-handling-in-xaml.md)

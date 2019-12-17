@@ -20,7 +20,7 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 * To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format instead of the default  ISO 8601-1:2019 format.
 * To support a custom value type. For example, a `PhoneNumber` struct.
 
-You can also write custom converters to extend `System.Text.Json` with functionality not included in the current release. For more information, see [How to migrate from Newtonsoft Json.NET to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md).
+You can also write custom converters to extend `System.Text.Json` with functionality not included in the current release. For more information, see [How to migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md).
 
 ## Custom converter patterns
 
@@ -162,7 +162,7 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 ## Other custom converter samples
 
-The [Migrate from Newtonsoft Json.NET](system-text-json-how-to.md) article contains samples of custom converters.
+The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md) article contains samples of custom converters.
 
 The [unit tests folder](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 

@@ -28,7 +28,7 @@ When you define custom types that are business objects or are types that do not 
  Interfaces can be used as underlying types of members. The XAML type system checks the assignable list and expects that the object that is provided as the value can be assigned to the interface. There is no concept of how the interface must be presented as a XAML type as long as a relevant assignable type supports the XAML construction requirements.  
   
 ### Factory Methods  
- Factory methods are a XAML 2009 feature. They modify the XAML principle that objects must have parameterless constructors. Factory methods are not documented in this topic. See [x:FactoryMethod Directive](x-factorymethod-directive.md).  
+ Factory methods are a XAML 2009 feature. They modify the XAML principle that objects must have parameterless constructors. Factory methods are not documented in this topic. See [x:FactoryMethod Directive](xfactorymethod-directive.md).  
   
 ## Enumerations  
  Enumerations have XAML native type conversion behavior. Enumeration constant names specified in XAML are resolved against the underlying enumeration type, and return the enumeration value to a XAML object writer.  
@@ -51,7 +51,7 @@ When you define custom types that are business objects or are types that do not 
  If you define events as a public CLR event, the XAML type system can report the event as a member with <xref:System.Xaml.XamlMember.IsEvent%2A> as `true`. Wiring the event handlers is not within the scope of .NET Framework XAML Services capabilities; this is left to specific frameworks and implementations.  
   
 ### Methods  
- Inline code for methods is not a default XAML capability. In most cases you do not directly reference method members from XAML, and the role of methods in XAML is only to provide support for specific XAML patterns. [x:FactoryMethod Directive](x-factorymethod-directive.md) is an exception.  
+ Inline code for methods is not a default XAML capability. In most cases you do not directly reference method members from XAML, and the role of methods in XAML is only to provide support for specific XAML patterns. [x:FactoryMethod Directive](xfactorymethod-directive.md) is an exception.  
   
 ### Fields  
  CLR design guidelines discourage nonstatic fields. For static fields, you can access static field values only through [x:Static Markup Extension](x-static-markup-extension.md); in this case you are not doing anything special in the CLR definition to expose a field for [x:Static](x-static-markup-extension.md) usages.  

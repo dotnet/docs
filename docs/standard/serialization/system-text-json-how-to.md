@@ -498,7 +498,7 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 }
 ```
 
-For information about polymorphic deserialization, see [Polymorphic deserialization](system-text-json-migrate-from-newtonsoft-how-to.md#polymorphic-deserialization).
+This section shows how to do **serialization**. For information about polymorphic **deserialization**, see [Polymorphic deserialization](system-text-json-migrate-from-newtonsoft-how-to.md#polymorphic-deserialization).
 
 ## Allow comments and trailing commas
 

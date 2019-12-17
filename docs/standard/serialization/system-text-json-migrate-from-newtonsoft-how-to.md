@@ -12,13 +12,13 @@ helpviewer_keywords:
 
 # How to migrate from Newtonsoft Json.NET to System.Text.Json
 
-This article shows how to migrate from [Newtonsoft Json.NET](https://www.newtonsoft.com/json) to the JSON serialization tools in the [System.Text.Json namespace](system-text-json-overview.md).
+This article shows how to migrate from [Newtonsoft Json.NET](https://www.newtonsoft.com/json) to the classes and methods in the [System.Text.Json namespace](system-text-json-overview.md).
 
-`System.Text.Json` is relatively new, and its initial focus is on performance, security, and standards compliance. It lacks built-in features to handle some common scenarios, and some default behaviors differ from Newtonsoft. For some scenarios, `System.Text.Json` has no built-in functionality, but therre are recommended workarounds. For other scenarios,  workarounds are impractical. If your application depends on a missing feature that has no workaround, consider delaying your migration to `System.Text.Json`. 
+ `System.Text.Json` focuses primarily on performance, security, and standards compliance. It lacks built-in features to handle some common scenarios, and some default behaviors differ from Newtonsoft. For some scenarios, `System.Text.Json` has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical. If your application depends on a missing feature that has no workaround, consider delaying your migration to `System.Text.Json`. 
 
 <!-- For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/roadmap/README.md). [Restore this when the roadmap is updated.]-->
 
-Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> Document Object Model (DOM) API and the <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> API. The article is organized into sections in the following order:
+Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> Document Object Model (DOM) and the <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> API. The article is organized into sections in the following order:
 
 * Differences in default `System.Text.Json.JsonSerializer` behavior compared to Newtonsoft.
 * Scenarios that `JsonSerializer` doesn't support, but workarounds might be feasible. [Go to the first of these sections.](#deserialize-inferred-types-to-object-properties)

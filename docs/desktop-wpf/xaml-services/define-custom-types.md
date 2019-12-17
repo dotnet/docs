@@ -45,7 +45,7 @@ When you define custom types that are business objects or are types that do not 
   
  In the absence of a text syntax or native XAML conversion and in the absence of further indirection, such as a markup extension usage, the type of a property (<xref:System.Xaml.XamlMember.TargetType%2A> in the XAML type system) must be able to return an instance to a XAML object writer by treating the target type as a CLR type.  
   
- If using XAML 2009, [x:Reference Markup Extension](x-reference-markup-extension.md) can be used to provide values if the previous considerations are not met; however, that is more of a usage issue than a type definition issue.  
+ If using XAML 2009, [x:Reference Markup Extension](xreference-markup-extension.md) can be used to provide values if the previous considerations are not met; however, that is more of a usage issue than a type definition issue.  
   
 ### Events  
  If you define events as a public CLR event, the XAML type system can report the event as a member with <xref:System.Xaml.XamlMember.IsEvent%2A> as `true`. Wiring the event handlers is not within the scope of .NET Framework XAML Services capabilities; this is left to specific frameworks and implementations.  

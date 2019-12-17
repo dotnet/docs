@@ -38,7 +38,7 @@ Several markup extensions are implemented by .NET Framework XAML Services for XA
 
 ### x:Reference
 
-`x:Reference` is part of XAML 2009, an extension of the original (2006) language set. `x:Reference` represents a reference to another existing object in an object graph. That object is identified by its `x:Name`. For more information, see [x:Reference Markup Extension](x-reference-markup-extension.md).
+`x:Reference` is part of XAML 2009, an extension of the original (2006) language set. `x:Reference` represents a reference to another existing object in an object graph. That object is identified by its `x:Name`. For more information, see [x:Reference Markup Extension](xreference-markup-extension.md).
 
 ### Other x: Constructs
 

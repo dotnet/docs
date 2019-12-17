@@ -99,7 +99,7 @@ doc.AppendChild(name);
  Another problem with the DOM is that it does not let you change the name of a node. Instead, you have to create a new node and copy all the child nodes to it, losing the original node identity. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] avoids this problem by enabling you to set the <xref:System.Xml.Linq.XName> property on a node.  
   
 ## Static Method Support for Loading XML  
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] lets you load XML by using static methods, instead of instance methods. This simplifies loading and parsing. For more information, see [How to: Load XML from a File (C#)](./how-to-load-xml-from-a-file.md).  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] lets you load XML by using static methods, instead of instance methods. This simplifies loading and parsing. For more information, see [How to load XML from a file (C#)](./how-to-load-xml-from-a-file.md).  
   
 ## Removal of Support for DTD Constructs  
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] further simplifies XML programming by removing support for entities and entity references. The management of entities is complex, and is rarely used. Removing their support increases performance and simplifies the programming interface. When a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] tree is populated, all DTD entities are expanded.  

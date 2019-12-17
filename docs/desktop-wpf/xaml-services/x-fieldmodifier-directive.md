@@ -23,7 +23,7 @@ Modifies XAML compilation behavior so that fields for named object references ar
 |*Public*|The exact string you pass to specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> versus <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> varies, depending on the code-behind programming language that is used. See Remarks.|  
   
 ## Dependencies  
- If a XAML production uses `x:FieldModifier` anywhere, the root element of that XAML production must declare an [x:Class Directive](x-class-directive.md).  
+ If a XAML production uses `x:FieldModifier` anywhere, the root element of that XAML production must declare an [x:Class Directive](xclass-directive.md).  
   
 ## Remarks  
  `x:FieldModifier` is not relevant for declaring the general access level of a class or its members. It is relevant only for XAML-processing behavior when a particular XAML object that is part of a XAML production is processed, and becomes an object that is potentially accessible in the object graph of an application. By default, the field reference for such an object is kept private, which prevents control consumers from modifying the object graph directly. Instead, control consumers are expected to modify the object graph by using standard patterns that are enabled by programming models, such as by obtaining the layout root, the child element collections, the dedicated public properties, and so on.  

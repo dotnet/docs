@@ -32,7 +32,7 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
 |`subclassName`|Required. Specifies the CLR name of the subclass.|  
   
 ## Dependencies  
- [x:Class Directive](x-class-directive.md) must also be provided on the same object, and that object must be the root element of the XAML production.  
+ [x:Class Directive](xclass-directive.md) must also be provided on the same object, and that object must be the root element of the XAML production.  
   
 ## Remarks  
  `x:Subclass` usage is primarily intended for languages that do not support partial class declarations.  
@@ -52,5 +52,5 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
   
 ## See also
 
-- [x:Class Directive](x-class-directive.md)
+- [x:Class Directive](xclass-directive.md)
 - [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)

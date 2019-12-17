@@ -11,7 +11,7 @@ ms.assetid: e1f47225-9996-4fbf-ab86-62d2e955f3fc
 # XAML Namespace (x:) Language Features
 ## In This Section  
  [x:Array Markup Extension](xarray-markup-extension.md)  
- [x:Class Directive](x-class-directive.md)  
+ [x:Class Directive](xclass-directive.md)  
  [x:ClassModifier Directive](x-classmodifier-directive.md)  
  [x:Code Intrinsic XAML Type](x-code-intrinsic-xaml-type.md)  
  [x:FieldModifier Directive](x-fieldmodifier-directive.md)  

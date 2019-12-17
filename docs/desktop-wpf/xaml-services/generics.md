@@ -28,7 +28,7 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
 ```  
   
 ## Generics Support in WPF and Other v3.5 Frameworks  
- For XAML 2006 usage when specifically targeting WPF, [x:Class](x-class-directive.md) must also be provided on the same element as `x:TypeArguments`, and that element must be the root element in a XAML document. The root element must map to a generic type with at least one type argument. An example is <xref:System.Windows.Navigation.PageFunction%601>.  
+ For XAML 2006 usage when specifically targeting WPF, [x:Class](xclass-directive.md) must also be provided on the same element as `x:TypeArguments`, and that element must be the root element in a XAML document. The root element must map to a generic type with at least one type argument. An example is <xref:System.Windows.Navigation.PageFunction%601>.  
   
  Possible workarounds to support generic usages include defining a custom markup extension that can return generic types, or providing a wrapping class definition that derives from a generic type but flattens the generic constraint in its own class definition.  
   
@@ -39,5 +39,5 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
 ## See also
 
 - [x:TypeArguments Directive](x-typearguments-directive.md)
-- [x:Class Directive](x-class-directive.md)
+- [x:Class Directive](xclass-directive.md)
 - [Built-in Types for Common XAML Language Primitives](types-for-primitives.md)

@@ -29,7 +29,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 |*NotPublic*|The exact string to pass to specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> versus <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> varies, depending on the code-behind programming language that you use. See Remarks.|  
   
 ## Dependencies  
- [x:Class](x-class-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
+ [x:Class](xclass-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
   
 ## Remarks  
  The value of `x:ClassModifier` in .NET Framework XAML Services usage varies by programming language. The string to use depends on how each language implements its <xref:System.CodeDom.Compiler.CodeDomProvider> and the type converters it returns to define the meanings for <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> and <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType>, and whether that language is case sensitive.  
@@ -49,7 +49,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
   
 ## See also
 
-- [x:Class Directive](x-class-directive.md)
+- [x:Class Directive](xclass-directive.md)
 - [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [x:FieldModifier Directive](x-fieldmodifier-directive.md)
 - [Security (WPF)](../../framework/wpf/security-wpf.md)

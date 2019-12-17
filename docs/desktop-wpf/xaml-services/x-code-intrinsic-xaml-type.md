@@ -34,7 +34,7 @@ Allows placement of code within a XAML production. Such code can either be compi
   
 - The `x:Code` directive element must be an immediate child element of the root element of the XAML production.  
   
-- [x:Class Directive](x-class-directive.md) must be provided on the parent root element.  
+- [x:Class Directive](xclass-directive.md) must be provided on the parent root element.  
   
 - The code placed within `x:Code` will be treated by compilation to be within the scope of the partial class that is already being created for that XAML page. Therefore all code you define must be members or variables of that partial class.  
   
@@ -44,6 +44,6 @@ Allows placement of code within a XAML production. Such code can either be compi
   
 ## See also
 
-- [x:Class Directive](x-class-directive.md)
+- [x:Class Directive](xclass-directive.md)
 - [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [XAML Overview (WPF)](../fundamentals/xaml.md)

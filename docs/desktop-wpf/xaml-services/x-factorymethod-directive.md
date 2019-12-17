@@ -52,4 +52,4 @@ Specifies a method other than a constructor that a XAML processor should use to 
   
 ## See also
 
-- [x:Arguments Directive](x-arguments-directive.md)
+- [x:Arguments Directive](xarguments-directive.md)

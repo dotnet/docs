@@ -21,7 +21,7 @@ This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> Document Object Model (DOM) and the <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> API. The article is organized into sections in the following order:
 
 * Differences in default `System.Text.Json.JsonSerializer` behavior compared to `Newtonsoft.Json`.
-* Scenarios that `JsonSerializer` doesn't support, but workarounds might be feasible. [Go to the first of these sections.](#deserialize-inferred-types-to-object-properties)
+* Scenarios that `JsonSerializer` doesn't support, but workarounds might be feasible. [Go to the first of these sections.](#specify-date-format)
 * Scenarios that `JsonSerializer` doesn't support, and workarounds are relatively difficult or impractical. [Go to the first of these sections.](#types-without-built-in-support).
 * [Utf8JsonReader and Utf8JsonWriter](#utf8jsonreader-and-utf8jsonwriter).
 * [JsonDocument](#jsondocument).
@@ -39,10 +39,6 @@ During deserialization, `Newtonsoft.Json` ignores comments in the JSON by defaul
 ## Trailing commas
 
 During deserialization, `Newtonsoft.Json` ignores trailing commas by default. In some cases, it ignores multiple trailing commas (for example, `[{"Color":"Red"},{"Color":"Green"},,]`). The `System.Text.Json` default is to throw exceptions for trailing commas because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't include them. For information about how to allow trailing commas, see [Allow comments and trailing commas](system-text-json-how-to.md#allow-comments-and-trailing-commas). There's no way to allow multiple trailing commas.
-
-## Character escaping
-
-During serialization, `Newtonsoft.Json` is relatively permissive about letting characters through without escaping them. (That is, it doesn't replace them with `\uxxxx` where `xxxx` is the Unicode code of the character.) `System.Text.Json` escapes more characters by default to provide defense-in-depth protections against cross-site scripting (XSS) or information disclosure attacks. `System.Text.Json` escapes all non-ASCII characters by default, so you don't need to do anything if you're using `StringEscapeHandling.EscapeNonAscii`. For information about how to override the default `System.Text.Json` behavior, see [Customize character encoding](system-text-json-how-to.md#customize-character-encoding).
 
 ## Converter registration precedence
 
@@ -70,6 +66,24 @@ The difference here is that a custom converter in the `Converters` collection ov
 * [[JsonConverter]](system-text-json-converters-how-to.md#register-a-custom-converter)
 
 Other functions of the `Newtonsoft.Json` `[JsonProperty]` attribute have no equivalent attribute in `System.Text.Json`. For some of those functions, there are other ways to accomplish the same purpose, as detailed in the following sections of this article.
+
+## Character escaping
+
+During serialization, `Newtonsoft.Json` is relatively permissive about letting characters through without escaping them. (That is, it doesn't replace them with `\uxxxx` where `xxxx` is the Unicode code of the character.) `System.Text.Json` escapes more characters by default to provide defense-in-depth protections against cross-site scripting (XSS) or information disclosure attacks. `System.Text.Json` escapes all non-ASCII characters by default, so you don't need to do anything if you're using `StringEscapeHandling.EscapeNonAscii`. For information about how to override the default `System.Text.Json` behavior, see [Customize character encoding](system-text-json-how-to.md#customize-character-encoding).
+
+## Specify date format
+
+`Newtonsoft.Json` provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md) and issue [41456](https://github.com/dotnet/corefx/issues/41456) in the dotnet/corefx GitHub repository.
+
+## Quoted numbers
+
+`Newtonsoft.Json` can serialize or deserialize numbers in quotes. For example, it can accept: `{ "DegreesCelsius":"23" }` instead of `{ "DegreesCelsius":23 }`. To enable that behavior in `System.Text.Json`, implement a custom converter like the following example, which uses quotes for properties defined as `long`.
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/LongToStringConverter.cs)]
+
+[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on individual `long` properties or by adding the converter to the `Converters` collection.
+
+For more information, see issue [39473](https://github.com/dotnet/corefx/issues/39473) in the dotnet/corefx GitHub repository.
 
 ## Deserialize inferred types to Object properties
 
@@ -174,16 +188,6 @@ For more information, see the following issues in the dotnet/corefx GitHub repos
 * [41758](https://github.com/dotnet/corefx/issues/41758) System.Text.Json ignores JsonPropertyName on base class
 * [38154](https://github.com/dotnet/corefx/issues/38154) New modifier is not hiding base property
 * [39905](https://github.com/dotnet/corefx/issues/39905) Allow custom converters for base-classes
-
-## Quoted numbers
-
-`Newtonsoft.Json` can serialize or deserialize numbers in quotes. For example, it can accept: `{ "DegreesCelsius":"23" }` instead of `{ "DegreesCelsius":23 }`. To enable that behavior in `System.Text.Json`, implement a custom converter like the following example, which uses quotes for properties defined as `long`.
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/LongToStringConverter.cs)]
-
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on individual `long` properties or by adding the converter to the `Converters` collection.
-
-For more information, see issue [39473](https://github.com/dotnet/corefx/issues/39473) in the dotnet/corefx GitHub repository.
 
 ## Required properties
 
@@ -293,10 +297,6 @@ For more information, see the following issues in the dotnet/corefx GitHub repos
 * [42001](https://github.com/dotnet/corefx/issues/42001) Equivalent of DefaultContractResolver
 * [40600](https://github.com/dotnet/corefx/issues/40600) Ignore selected properties when null 
 * [38878](https://github.com/dotnet/corefx/issues/38878) Ignore default values
-
-## Specify date format
-
-`Newtonsoft.Json` provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md) and issue [41456](https://github.com/dotnet/corefx/issues/41456) in the dotnet/corefx GitHub repository.
 
 ## Callbacks
 

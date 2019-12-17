@@ -4,11 +4,11 @@
   - name: "XAML Namespace (x:) Language Features"
     href: xaml-namespace-x-language-features.md
     items:
-    - name: XAML 2009 Language Features
+    - name: XAML 2009 (not WPF) Language Features
       href: xaml-2009-language-features.md
       items:
       - name: Built-in Types for Common XAML Language Primitives
-        href: built-in-types-for-common-xaml-language-primitives.md
+        href: types-for-primitives.md
       - name: "x:Arguments Directive"
         href: x-arguments-directive.md
       - name: "x:FactoryMethod Directive"
@@ -66,27 +66,27 @@
   - name: XAMLServices Class and Basic XAML Reading or Writing
     href: xamlservices-class-and-basic-xaml-reading-or-writing.md
   - name: Type Converters and Markup Extensions for XAML
-    href: type-converters-and-markup-extensions-for-xaml.md
+    href: type-converters-and-markup-extensions.md
     items:
     - name: Markup Extensions for XAML Overview
-      href: markup-extensions-for-xaml-overview.md
+      href: markup-extensions-overview.md
     - name: Type Converters for XAML Overview
-      href: type-converters-for-xaml-overview.md
+      href: type-converters-overview.md
     - name: Service Contexts Available to Type Converters and Markup Extensions
-      href: service-contexts-available-to-type-converters-and-markup-extensions.md
+      href: service-contexts-with-type-converters-and-markup-extensions.md
   - name: Generics in XAML
-    href: generics-in-xaml.md
+    href: generics.md
   - name: Defining Custom Types for Use with .NET Framework XAML Services
-    href: defining-custom-types-for-use-with-net-framework-xaml-services.md
+    href: define-custom-types.md
     items:
     - name: XAML-Related CLR Attributes for Custom Types and Libraries
       href: xaml-related-clr-attributes-for-custom-types-and-libraries.md
     - name: Collections and Collection Types for XAML
-      href: collections-and-collection-types-for-xaml.md
+      href: collections-and-types.md
   - name: XAML Namespaces
     href: xaml-namespaces-for-net-framework-xaml-services.md
   - name: Default XAML Schema Context and WPF XAML Schema Context
-    href: default-xaml-schema-context-and-wpf-xaml-schema-context.md
+    href: default-schema-context.md
   - name: XAML Security Considerations
     href: xaml-security-considerations.md
   - name: White-space processing in XAML

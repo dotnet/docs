@@ -123,7 +123,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  **Service API:**  <xref:System.Xaml.IXamlSchemaContextProvider.SchemaContext%2A>  
   
- XAML schema context is necessary for any defer load operations, because the same schema context must act on the deferred area in order to integrate the deferred content. For more information about the role of the XAML schema context, see [XAML Services](index.md).  
+ XAML schema context is necessary for any defer load operations, because the same schema context must act on the deferred area in order to integrate the deferred content. For more information about the role of the XAML schema context, see [XAML Services](../../../api/index.md).  
   
 ### IRootObjectProvider  
  **Reference documentation**: <xref:System.Xaml.IRootObjectProvider>  

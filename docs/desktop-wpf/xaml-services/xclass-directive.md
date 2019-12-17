@@ -39,7 +39,7 @@ Configures XAML markup compilation to join partial classes between markup and co
   
  The value of the `x:Class` directive must be a string that specifies the fully qualified name of a class but without any assembly information (equivalent to the <xref:System.Type.FullName%2A?displayProperty=nameWithType>). For simple applications, you can omit CLR namespace information if the code-behind is also structured in that manner (code definition starts at the class level).  
   
- The code-behind file for a page or application definition must be within a code file that is included as part of the project that produces a compiled application and involves markup compilation. You must follow name rules for CLR classes. For more information, see [Framework Design Guidelines](../../../api/index.md). By default, the code-behind class must be `public`; however, you can define it at a different access level by using the [x:ClassModifier Directive](x-classmodifier-directive.md).  
+ The code-behind file for a page or application definition must be within a code file that is included as part of the project that produces a compiled application and involves markup compilation. You must follow name rules for CLR classes. For more information, see [Framework Design Guidelines](../../../api/index.md). By default, the code-behind class must be `public`; however, you can define it at a different access level by using the [x:ClassModifier Directive](xclassmodifier-directive.md).  
   
  This interpretation of the `x:Class` attribute applies only to a CLR-based XAML implementation, in particular to .NET Framework XAML Services. Other XAML implementations that are not based on CLR and that do not use .NET Framework XAML Services might use a different resolution formula for connecting XAML markup and backing run-time code. For more information about more general interpretations of `x:Class`, see [\[MS-XAML\]](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
   
@@ -58,5 +58,5 @@ Configures XAML markup compilation to join partial classes between markup and co
 
 - [x:Subclass Directive](x-subclass-directive.md)
 - [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
-- [x:ClassModifier Directive](x-classmodifier-directive.md)
+- [x:ClassModifier Directive](xclassmodifier-directive.md)
 - [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)

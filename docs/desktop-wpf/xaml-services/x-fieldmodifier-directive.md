@@ -42,7 +42,7 @@ Modifies XAML compilation behavior so that fields for named object references ar
   
  `x:FieldModifier` is only relevant for elements with an [x:Name Directive](x-name-directive.md) because that name is used to reference the field after it is public.  
   
- By default, the partial class for the root element is public; however, you can make it nonpublic by using the [x:ClassModifier Directive](x-classmodifier-directive.md). The [x:ClassModifier Directive](x-classmodifier-directive.md) also affects the access level of the instance of the root element class. You can put both `x:Name` and `x:FieldModifier` on the root element, but this only makes a public field copy of the root element, with the true root element class access level still controlled by [x:ClassModifier Directive](x-classmodifier-directive.md).  
+ By default, the partial class for the root element is public; however, you can make it nonpublic by using the [x:ClassModifier Directive](xclassmodifier-directive.md). The [x:ClassModifier Directive](xclassmodifier-directive.md) also affects the access level of the instance of the root element class. You can put both `x:Name` and `x:FieldModifier` on the root element, but this only makes a public field copy of the root element, with the true root element class access level still controlled by [x:ClassModifier Directive](xclassmodifier-directive.md).  
   
 ## See also
 
@@ -50,4 +50,4 @@ Modifies XAML compilation behavior so that fields for named object references ar
 - [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [x:Name Directive](x-name-directive.md)
 - [Building a WPF Application (WPF)](../../framework/wpf/app-development/building-a-wpf-application-wpf.md)
-- [x:ClassModifier Directive](x-classmodifier-directive.md)
+- [x:ClassModifier Directive](xclassmodifier-directive.md)

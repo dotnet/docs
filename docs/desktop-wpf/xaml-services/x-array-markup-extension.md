@@ -63,4 +63,4 @@ Provides general support for arrays of objects in XAML through a markup extensio
 ## See also
 
 - [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
-- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)
+- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)

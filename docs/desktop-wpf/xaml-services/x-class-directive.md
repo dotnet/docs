@@ -59,4 +59,4 @@ Configures XAML markup compilation to join partial classes between markup and co
 - [x:Subclass Directive](x-subclass-directive.md)
 - [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
 - [x:ClassModifier Directive](x-classmodifier-directive.md)
-- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)
+- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)

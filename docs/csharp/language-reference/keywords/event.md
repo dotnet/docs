@@ -15,7 +15,7 @@ ms.assetid: 7858fd85-153b-4259-85d0-6aa13c35f174
 The `event` keyword is used to declare an event in a publisher class.  
   
 ## Example  
- The following example shows how to declare and raise an event that uses <xref:System.EventHandler> as the underlying delegate type. For the complete code example that also shows how to use the generic <xref:System.EventHandler%601> delegate type and how to subscribe to an event and create an event handler method, see [How to: Publish Events that Conform to .NET Framework Guidelines](../../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).  
+ The following example shows how to declare and raise an event that uses <xref:System.EventHandler> as the underlying delegate type. For the complete code example that also shows how to use the generic <xref:System.EventHandler%601> delegate type and how to subscribe to an event and create an event handler method, see [How to publish events that conform to .NET Framework Guidelines](../../programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md).
   
  [!code-csharp[csrefKeywordsModifiers#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#7)]
   
@@ -48,4 +48,4 @@ The `event` keyword is used to declare an event in a publisher class.
 - [add](./add.md)
 - [remove](./remove.md)
 - [Modifiers](index.md)
-- [How to: Combine Delegates (Multicast Delegates)](../../programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)
+- [How to combine delegates (Multicast Delegates)](../../programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

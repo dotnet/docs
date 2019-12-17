@@ -9,7 +9,7 @@ ms.assetid: 835bfed7-585c-4216-ae67-b674edab8b92
 The .NET Framework XAML Services as implemented in System.Xaml provides support for using generic CLR types. This support includes specifying the constraints of generics as a type argument and enforcing the constraint by calling the appropriate `Add` method for generic collection cases. This topic describes aspects of using and referencing generic types in XAML.  
   
 ## x:TypeArguments  
- `x:TypeArguments` is a directive defined by the XAML language. When it is used as a member of a XAML type that is backed by a generic type, `x:TypeArguments` passes constraining type arguments of the generic to the backing constructor. For reference syntax that pertains to .NET Framework XAML Services use of `x:TypeArguments`, which includes syntax examples, see [x:TypeArguments Directive](x-typearguments-directive.md).  
+ `x:TypeArguments` is a directive defined by the XAML language. When it is used as a member of a XAML type that is backed by a generic type, `x:TypeArguments` passes constraining type arguments of the generic to the backing constructor. For reference syntax that pertains to .NET Framework XAML Services use of `x:TypeArguments`, which includes syntax examples, see [x:TypeArguments Directive](xtypearguments-directive.md).  
   
  Because `x:TypeArguments` takes a string, and has type converter backing, it is typically declared in XAML usage as an attribute.  
   
@@ -18,7 +18,7 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
 ## Rules and Syntax Conventions for Generics in XAML  
  In XAML, a generic type must always be represented as a constrained generic; an unconstrained generic is never present in the XAML type system or a XAML node stream and cannot be represented in XAML markup. A generic can be referenced within XAML attribute syntax, for cases where it is a nested type constraint of a generic being referenced by `x:TypeArguments`, or for cases where `x:Type` supplies a CLR type reference for a generic type. This is supported through the <xref:System.Xaml.Schema.XamlTypeTypeConverter> class defined by .NET Framework XAML Services.  
   
- The XAML attribute syntax form enabled by <xref:System.Xaml.Schema.XamlTypeTypeConverter> alters the typical MSIL / CLR syntax convention that uses angle brackets for types and constraints of generics, and instead substitutes parentheses for the constraint container. For an example, see [x:TypeArguments Directive](x-typearguments-directive.md).  
+ The XAML attribute syntax form enabled by <xref:System.Xaml.Schema.XamlTypeTypeConverter> alters the typical MSIL / CLR syntax convention that uses angle brackets for types and constraints of generics, and instead substitutes parentheses for the constraint container. For an example, see [x:TypeArguments Directive](xtypearguments-directive.md).  
   
 ## Generics and XAML 2009 Features  
  If you use XAML 2009 instead of mapping the CLR base types to obtain XAML types for common language primitives, you can use [XAML 2009 built-in types](types-for-primitives.md) as information items in `x:TypeArguments`. For example, you could declare the following (prefix mappings not shown, but `x` is the XAML language XAML namespace for XAML 2009):  
@@ -38,6 +38,6 @@ The .NET Framework XAML Services as implemented in System.Xaml provides support 
   
 ## See also
 
-- [x:TypeArguments Directive](x-typearguments-directive.md)
+- [x:TypeArguments Directive](xtypearguments-directive.md)
 - [x:Class Directive](xclass-directive.md)
 - [Built-in Types for Common XAML Language Primitives](types-for-primitives.md)

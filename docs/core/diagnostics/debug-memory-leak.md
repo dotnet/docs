@@ -18,9 +18,9 @@ In this tutorial, you will:
 
 > [!div class="checklist"]
 >
-> * Examine managed memory usage with [dotnet-counters](dotnet-counters.md)
-> * Generate a dump file
-> * Analyze the memory usage using the dump file
+> - Examine managed memory usage with [dotnet-counters](dotnet-counters.md).
+> - Generate a dump file.
+> - Analyze the memory usage using the dump file.
 
 ## Prerequisites
 

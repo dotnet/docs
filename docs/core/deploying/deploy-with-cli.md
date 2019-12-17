@@ -138,7 +138,7 @@ If you use the [example app](#sample-app), run `dotnet publish -f netcoreapp2.2 
 
 When you publish a self-contained deployment (SCD), the .NET Core SDK creates a platform-specific executable. Publishing an SCD includes all required .NET Core files to run your app but it doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md). These dependencies must be present on the system before the app runs.
 
-Publishing an SCD creates an app that doesn't roll-forward to the latest available .NET Core security patch. For more information on version binding at compile time, see [Select the .NET Core version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
+Publishing an SCD creates an app that doesn't roll forward to the latest available .NET Core security patch. For more information on version binding at compile time, see [Select the .NET Core version to use](../versions/selection.md#self-contained-deployments-include-the-selected-runtime).
 
 You must use the following switches with the `dotnet publish` command to publish an SCD:
 

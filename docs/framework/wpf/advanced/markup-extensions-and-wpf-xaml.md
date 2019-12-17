@@ -37,7 +37,7 @@ This topic introduces the concept of markup extensions for XAML, including their
   
 - `x:Type` supplies the <xref:System.Type> object for the named type. This facility is used most frequently in styles and templates. For details, see [x:Type Markup Extension](../../../desktop-wpf/xaml-services/x-type-markup-extension.md).  
   
-- `x:Static` produces static values. The values come from value-type code entities that are not directly the type of a target property's value, but can be evaluated to that type. For details, see [x:Static Markup Extension](../../../desktop-wpf/xaml-services/x-static-markup-extension.md).  
+- `x:Static` produces static values. The values come from value-type code entities that are not directly the type of a target property's value, but can be evaluated to that type. For details, see [x:Static Markup Extension](../../../desktop-wpf/xaml-services/xstatic-markup-extension.md).  
   
 - `x:Null` specifies `null` as a value for a property and can be used either for attributes or property element values. For details, see [x:Null Markup Extension](../../../desktop-wpf/xaml-services/xnull-markup-extension.md).  
   

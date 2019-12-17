@@ -26,7 +26,7 @@ Several markup extensions are implemented by .NET Framework XAML Services for XA
 
 ### x:Static
 
-`x:Static` produces static values from value-type code entities that are not directly the type of a property's value, but can be evaluated to that type. This is useful for specifying values that already exist as well-known constants in a type definition. For more information, see [x:Static Markup Extension](x-static-markup-extension.md).
+`x:Static` produces static values from value-type code entities that are not directly the type of a property's value, but can be evaluated to that type. This is useful for specifying values that already exist as well-known constants in a type definition. For more information, see [x:Static Markup Extension](xstatic-markup-extension.md).
 
 ### x:Null
 

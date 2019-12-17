@@ -229,7 +229,7 @@ In the previous root element example, the prefix `x:` was used to map the XAML n
 
 - [x:Name](../xaml-services/xname-directive.md): Specifies a run-time object name for the instance that exists in run-time code after an object element is processed. In general, you will frequently use a WPF-defined equivalent property for [x:Name](../xaml-services/xname-directive.md). Such properties map specifically to a CLR backing property and are thus more convenient for app programming, where you frequently use run-time code to find the named elements from initialized XAML. The most common such property is <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>. You might still use [x:Name](../xaml-services/xname-directive.md) when the equivalent WPF framework-level <xref:System.Windows.FrameworkElement.Name%2A> property is not supported in a particular type. This occurs in certain animation scenarios.
 
-- [x:Static](../xaml-services/x-static-markup-extension.md): Enables a reference that returns a static value that is not otherwise a XAML-compatible property.
+- [x:Static](../xaml-services/xstatic-markup-extension.md): Enables a reference that returns a static value that is not otherwise a XAML-compatible property.
 
 - [x:Type](../xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../xaml-services/x-type-markup-extension.md) markup extension usage is optional.
 

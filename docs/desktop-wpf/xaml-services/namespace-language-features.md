@@ -22,7 +22,7 @@ ms.assetid: e1f47225-9996-4fbf-ab86-62d2e955f3fc
  [x:Null Markup Extension](xnull-markup-extension.md)  
  [x:Shared Attribute](xshared-attribute.md)  
  [x:Property Directive](xproperty-directive.md)  
- [x:Static Markup Extension](x-static-markup-extension.md)  
+ [x:Static Markup Extension](xstatic-markup-extension.md)  
  [x:Subclass Directive](x-subclass-directive.md)  
  [x:Type Markup Extension](x-type-markup-extension.md)  
  [x:TypeArguments Directive](x-typearguments-directive.md)  

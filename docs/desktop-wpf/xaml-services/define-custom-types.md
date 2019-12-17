@@ -54,7 +54,7 @@ When you define custom types that are business objects or are types that do not 
  Inline code for methods is not a default XAML capability. In most cases you do not directly reference method members from XAML, and the role of methods in XAML is only to provide support for specific XAML patterns. [x:FactoryMethod Directive](xfactorymethod-directive.md) is an exception.  
   
 ### Fields  
- CLR design guidelines discourage nonstatic fields. For static fields, you can access static field values only through [x:Static Markup Extension](x-static-markup-extension.md); in this case you are not doing anything special in the CLR definition to expose a field for [x:Static](x-static-markup-extension.md) usages.  
+ CLR design guidelines discourage nonstatic fields. For static fields, you can access static field values only through [x:Static Markup Extension](xstatic-markup-extension.md); in this case you are not doing anything special in the CLR definition to expose a field for [x:Static](xstatic-markup-extension.md) usages.  
   
 ## Attachable Members  
  Attachable members are exposed to XAML through an accessor method pattern on a defining type. The defining type itself does not need to be XAML-usable as an object. In fact, a common pattern is to declare a service class whose role is to own the attachable member and implement the related behaviors, but serve no other function such as a UI representation. For the following sections, the placeholder *PropertyName* represents the name of your attachable member. That name must be valid in the [XamlName Grammar](xamlname-grammar.md).  

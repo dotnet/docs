@@ -90,7 +90,7 @@ You will see a similar list of metrics for the best top five quality models foun
 
 ![image](media/automate-training-with-cli/cli-regression-metrics.png)
 
-To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for regression](resources/metrics.md#evaluation-metrics-for-regression).
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for regression](resources/metrics.md#evaluation-metrics-for-regression-and-recommendation).
 
 ## See also
 

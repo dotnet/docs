@@ -52,7 +52,9 @@ For further details on multi-class classification metrics read the following art
 - [Micro- and Macro-average of Precision, Recall and F-Score](https://rushdishams.blogspot.com/2011/08/micro-and-macro-average-of-precision.html)
 - [Multiclass Classification with Imbalanced Dataset](https://towardsdatascience.com/machine-learning-multiclass-classification-with-imbalanced-data-set-29f6a177c1a)
 
-## Evaluation metrics for Regression
+## Evaluation metrics for Regression and Recommendation
+
+Both the regression and recommendation tasks predict a number. In the case of regression, the number can be any output property, which is influenced by the input properties. For recommendation, the number is usually a rating value (between 1 and 5 for example), or a yes/no recommendation (represented by 1 and 0 respectively).
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|
@@ -90,5 +92,3 @@ For further details on regression metrics, read the following articles:
 |----------|-----------------------|-----------|
 |**Area Under Roc Curve**|Area under the receiver operator curve measures how well the model separates anomalous and usual data points.|**Values closer to 1 are better**. Only values greater than 0.5 demonstrate effectiveness of the model. Values of 0.5 or below indicate that the model is no better than randomly allocating the inputs to anomalous and usual categories|
 |**Detection Rate At False Positive Count**|Detection rate at false positive count is the ratio of the number of correctly identified anomalies to the total number of anomalies in a test set, indexed by each false positive. That is, there is a value for detection rate at false positive count for each false positive item.|**Values closer to 1 are better**. If there are no false positives then this value is 1|
-
-## Evaluation metrics for Recommender models

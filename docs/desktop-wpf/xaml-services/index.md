@@ -84,7 +84,7 @@ This topic describes the capabilities of a technology set known as .NET Framewor
   
 - <xref:System.Xaml.XamlServices.Transform%2A> converts XAML by linking a load path and a save path as a single operation. A different schema context or different backing type system could be used for <xref:System.Xaml.XamlReader> and <xref:System.Xaml.XamlWriter>, which is what influences how the resulting XAML is transformed.  
   
- For more information about how to use <xref:System.Xaml.XamlServices>, see [XAMLServices Class and Basic XAML Reading or Writing](xamlservices-class-and-basic-xaml-reading-or-writing.md).  
+ For more information about how to use <xref:System.Xaml.XamlServices>, see [XAMLServices Class and Basic XAML Reading or Writing](basic-reading-writing.md).  
   
 ## XAML Type System  
  The XAML type system provides the APIs that are required to work with a given individual node of a XAML node stream.  

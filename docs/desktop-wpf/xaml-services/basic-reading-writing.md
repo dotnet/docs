@@ -59,4 +59,4 @@ ms.assetid: 6ac27fad-3687-4d7a-add1-3e90675fdfde
 
 - <xref:System.Xaml.XamlObjectWriter>
 - <xref:System.Xaml.XamlServices>
-- [XAML Services](index.md)
+- [XAML Services](../../../api/index.md)

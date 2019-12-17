@@ -61,7 +61,7 @@ Static resource references work best for the following circumstances:
 
 - You're using resources to set large numbers of dependency properties. Dependency properties have effective value caching as enabled by the property system, so if you provide a value for a dependency property that can be evaluated at load time, the dependency property doesn't have to check for a reevaluated expression and can return the last effective value. This technique can be a performance benefit.
 
-- You want to change the underlying resource for all consumers, or you want to maintain separate writable instances for each consumer by using the [x:Shared Attribute](../xaml-services/x-shared-attribute.md).
+- You want to change the underlying resource for all consumers, or you want to maintain separate writable instances for each consumer by using the [x:Shared Attribute](../xaml-services/xshared-attribute.md).
 
 ### Static resource lookup behavior
 

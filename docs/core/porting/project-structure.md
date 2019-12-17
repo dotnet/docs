@@ -40,7 +40,7 @@ The following describes several ways to add support for .NET Core for this repos
 
 Reorganize the repository so that any existing *\*.csproj* files are removed and a single *\*.csproj* file is created that targets multiple frameworks. This is a great option because a single project is able to compile for different frameworks. It also has the power to handle different compilation options and dependencies per targeted framework.
 
-![Create an csproj that targets multiple frameworks](./media/project-structure/multi-targeted-project.png)
+![Create a csproj that targets multiple frameworks](./media/project-structure/multi-targeted-project.png)
 
 [**Source Code**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/)
 

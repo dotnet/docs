@@ -3,7 +3,7 @@ title: Diagnostics tools overview - .NET Core
 description: An overview of the tools and techniques available to diagnose .NET Core applications.
 author: sdmaclea
 ms.author: stmaclea
-ms.date: 11/21/2019
+ms.date: 12/17/2019
 ms.topic: overview
 #Customer intent: As a .NET Core developer I want to find the best tools to help me diagnose problems so that I can be productive.
 ---
@@ -43,4 +43,4 @@ The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows a
 
 ### Debugging a memory leak
 
-[Tutorial: Debugging a memory leak](tutorial_memory_leak.md) walks through finding a memory leak. The [dotnet-counters](dotnet-counters.md) tool is used to confirm the leak. Then the [dotnet-dump](dotnet-dump.md) tool is used to diagnose the leak.
+[Tutorial: Debugging a memory leak](tutorial_memory_leak.md) walks through finding a memory leak. The [dotnet-counters](dotnet-counters.md) tool is used to confirm the leak and the [dotnet-dump](dotnet-dump.md) tool is used to diagnose the leak.

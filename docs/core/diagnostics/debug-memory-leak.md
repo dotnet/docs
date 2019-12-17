@@ -1,5 +1,5 @@
 ---
-title: Debugging a memory leak tutorial - .NET Core
+title: Debug a memory leak tutorial
 description: A tutorial walk-through, debugging a memory leak in .NET Core.
 author: sdmaclea
 ms.author: stmaclea
@@ -26,19 +26,19 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- .NET Core 3.0 SDK or a later version
+- [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
 - [dotnet-trace](dotnet-trace.md) to list processes.
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage.
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
-- [Sample debug target](sample-debug-target.md) a sample app to diagnose.
+- A [sample debug target](sample-debug-target.md) app to diagnose.
 
 The tutorial assumes the sample and tools are installed and ready to use.
 
 ## Examine managed memory usage
 
-Before you dig into collecting diagnostics data to help us root cause this scenario, you need to convince ourselves that what you are actually seeing is a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to get at this information.
+Before you start collecting diagnostics data to help us root cause this scenario, you need to make sure that you're actually seeing a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
 
-Run the [Sample debug target](sample-debug-target.md):
+Open a console window and navigate to the directory where you cloned the samples repository. Run the [sample debug target](sample-debug-target.md):
 
 ```dotnetcli
 # Assumes https://github.com/dotnet/samples was cloned into samples
@@ -46,7 +46,7 @@ cd samples/core/diagnostics/DiagnosticScenarios/
 dotnet run
 ```
 
-From a separate console find the process ID using the [dotnet-trace](dotnet-trace.md) tool:
+From a separate console, find the process ID using the [dotnet-trace](dotnet-trace.md) tool:
 
 ```console
 dotnet-trace ps
@@ -98,7 +98,7 @@ Focusing on this line:
     GC Heap Size (MB)                                  4
 ```
 
-You can see that the managed heap memory is 4-MB right after startup.
+You can see that the managed heap memory is 4 MB right after startup.
 
 Now, hit the URL `http://localhost:5000/api/diagscenario/memleak/20000`.
 
@@ -112,9 +112,9 @@ By watching the memory usage, you can safely say that memory is growing or leaki
 
 ### Generate memory dump
 
-When analyzing possible memory leaks, you need access to the apps memory heap. You then analyze the memory contents. Looking at relationships between objects, you create theories on why memory isn't being freed. A common diagnostics data source is a memory dump (Win) or the equivalent core dump (Linux). To generate a dump of a .NET Core application, you can use the [dotnet-dump)](dotnet-dump.md) tool.
+When analyzing possible memory leaks, you need access to the app's memory heap. Then you can analyze the memory contents. Looking at relationships between objects, you create theories on why memory isn't being freed. A common diagnostics data source is a memory dump on Windows or the equivalent core dump on Linux. To generate a dump of a .NET Core application, you can use the [dotnet-dump)](dotnet-dump.md) tool.
 
-Using the [Sample debug target](sample-debug-target.md) started above, run the following command to generate a Linux core dump:
+Using the [sample debug target](sample-debug-target.md) previously started, run the following command to generate a Linux core dump:
 
 ```dotnetcli
 dotnet-dump collect -p 4807
@@ -166,9 +166,9 @@ Statistics:
 Total 428516 objects
 ```
 
-Here you can see that most of the objects are either `String` or `Customer` objects.
+Here you can see that most objects are either `String` or `Customer` objects.
 
-You can use the `dumpheap` command again with the method table (MT) to get a list of all the `String` instances.
+You can use the `dumpheap` command again with the method table (MT) to get a list of all the `String` instances:
 
 ```console
 > dumpheap -mt 00007faddaa50f90
@@ -189,7 +189,7 @@ Statistics:
 Total 206770 objects
 ```
 
-You can now use the `gcroot` command on a `System.String` instance to see how and why the object is rooted. Be patient for this 30-MB heap this command takes several minutes:
+You can now use the `gcroot` command on a `System.String` instance to see how and why the object is rooted. Be patient because this command takes several minutes with a 30 MB heap:
 
 ```console
 > gcroot -all 00007f6ad09421f8
@@ -220,15 +220,15 @@ Found 2 roots.
 
 You can see that the `String` is directly held by the `Customer` object and indirectly held by a `CustomerCache` object.
 
-You can continue dumping out objects to see that most `String` objects follow a similar pattern. At this point, the investigation provided sufficient info to identify the root cause in your code.
+You can continue dumping out objects to see that most `String` objects follow a similar pattern. At this point, the investigation provided sufficient information to identify the root cause in your code.
 
 This general procedure allows you to identify the source of major memory leaks.
 
 ## Clean up resources
 
-In this tutorial, we started a sample web server. This server should have been shut down in [Restart the failed process](#restart-the-failed-process) above.
+In this tutorial, you started a sample web server. This server should have been shut down as explained in the [Restart the failed process](#restart-the-failed-process) section.
 
-We also created a dump file that can be deleted from a console.
+You can also delete the dump file that was created.
 
 ## Next steps
 
@@ -236,7 +236,7 @@ Congratulations on completing this tutorial.
 
 We're still publishing more diagnostic tutorials. You can read the [draft versions here](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial).
 
-This tutorial covered the basics of key .NET diagnostic tools. For advanced usage see the reference docs:
+This tutorial covered the basics of key .NET diagnostic tools. For advanced usage, see the following reference documentation:
 
 * [dotnet-trace](dotnet-trace.md) to list processes.
 * [dotnet-counters](dotnet-counters.md) to check managed memory usage.

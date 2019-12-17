@@ -89,7 +89,7 @@ When you define custom types that are business objects or are types that do not 
 ## XAML-Related CLR Attributes  
  Correctly attributing your types, members, and assemblies is important in order to report XAML type system information to .NET Framework XAML Services. This is relevant if you intend your types for use with XAML systems that are directly based on .NET Framework XAML Services XAML readers and XAML writers, or if you define or use a XAML-utilizing framework that is based on those XAML readers and XAML writers.  
   
- For a listing of each XAML-related attribute that is relevant for XAML support of your custom types, see [XAML-Related CLR Attributes for Custom Types and Libraries](xaml-related-clr-attributes-for-custom-types-and-libraries.md).  
+ For a listing of each XAML-related attribute that is relevant for XAML support of your custom types, see [XAML-Related CLR Attributes for Custom Types and Libraries](clr-attributes-with-custom-types-and-libraries.md).  
   
 ## Usage  
  Usage of custom types requires that the markup author must map a prefix for the assembly and CLR namespace that contain the custom type. This procedure is not documented in this topic.  
@@ -110,5 +110,5 @@ When you define custom types that are business objects or are types that do not 
   
 ## See also
 
-- [XAML-Related CLR Attributes for Custom Types and Libraries](xaml-related-clr-attributes-for-custom-types-and-libraries.md)
+- [XAML-Related CLR Attributes for Custom Types and Libraries](clr-attributes-with-custom-types-and-libraries.md)
 - [XAML Services](../../../api/index.md)

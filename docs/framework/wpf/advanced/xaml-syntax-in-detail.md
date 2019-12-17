@@ -152,7 +152,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 - Type implements <xref:System.Collections.IDictionary>.  
   
-- Type derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../../desktop-wpf/xaml-services/x-array-markup-extension.md).)  
+- Type derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../../desktop-wpf/xaml-services/xarray-markup-extension.md).)  
   
  If the type of a property is a collection, then the inferred collection type does not need to be specified in the markup as an object element. Instead, the elements that are intended to become the items in the collection are specified as one or more child elements of the property element. Each such item is evaluated to an object during loading and added to the collection by calling the `Add` method of the implied collection. For example, the <xref:System.Windows.Style.Triggers%2A> property of <xref:System.Windows.Style> takes the specialized collection type <xref:System.Windows.TriggerCollection>, which implements <xref:System.Collections.IList>. It is not necessary to instantiate a <xref:System.Windows.TriggerCollection> object element in the markup. Instead, you specify one or more <xref:System.Windows.Trigger> items as elements within the `Style.Triggers` property element, where <xref:System.Windows.Trigger> (or a derived class) is the type expected as the item type for the strongly typed and implicit <xref:System.Windows.TriggerCollection>.  
   

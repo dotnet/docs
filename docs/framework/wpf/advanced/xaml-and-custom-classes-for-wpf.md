@@ -79,7 +79,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
 - Implements <xref:System.Collections.IDictionary> or the generic equivalent (<xref:System.Collections.Generic.IDictionary%602>).  
   
-- Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../../desktop-wpf/xaml-services/x-array-markup-extension.md).)  
+- Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../../desktop-wpf/xaml-services/xarray-markup-extension.md).)  
   
 - Implements <xref:System.Windows.Markup.IAddChild> (an interface defined by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]).  
   

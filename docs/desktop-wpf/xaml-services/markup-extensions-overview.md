@@ -34,7 +34,7 @@ Several markup extensions are implemented by .NET Framework XAML Services for XA
 
 ### x:Array
 
-`x:Array` supports creation of general arrays in XAML syntax in cases where the collection support that is provided by base elements and control models is deliberately not used. For more information, see [x:Array Markup Extension](x-array-markup-extension.md). In XAML 2009 specifically, arrays are accessed as language primitives instead of as an extension. For more information, see [XAML 2009 Language Features](xaml-2009-language-features.md).
+`x:Array` supports creation of general arrays in XAML syntax in cases where the collection support that is provided by base elements and control models is deliberately not used. For more information, see [x:Array Markup Extension](xarray-markup-extension.md). In XAML 2009 specifically, arrays are accessed as language primitives instead of as an extension. For more information, see [XAML 2009 Language Features](xaml-2009-language-features.md).
 
 ### x:Reference
 

@@ -30,7 +30,7 @@ Several markup extensions are implemented by .NET Framework XAML Services for XA
 
 ### x:Null
 
-`x:Null` specifies `null` as a value for a XAML member. Depending on the design of specific types or on larger framework concepts, `null` is not always a default value for a property, or the implied value of an empty string attribute. For more information, see [x:Null Markup Extension](x-null-markup-extension.md).
+`x:Null` specifies `null` as a value for a XAML member. Depending on the design of specific types or on larger framework concepts, `null` is not always a default value for a property, or the implied value of an empty string attribute. For more information, see [x:Null Markup Extension](xnull-markup-extension.md).
 
 ### x:Array
 

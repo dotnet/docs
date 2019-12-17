@@ -39,7 +39,7 @@ This topic introduces the concept of markup extensions for XAML, including their
   
 - `x:Static` produces static values. The values come from value-type code entities that are not directly the type of a target property's value, but can be evaluated to that type. For details, see [x:Static Markup Extension](../../../desktop-wpf/xaml-services/x-static-markup-extension.md).  
   
-- `x:Null` specifies `null` as a value for a property and can be used either for attributes or property element values. For details, see [x:Null Markup Extension](../../../desktop-wpf/xaml-services/x-null-markup-extension.md).  
+- `x:Null` specifies `null` as a value for a property and can be used either for attributes or property element values. For details, see [x:Null Markup Extension](../../../desktop-wpf/xaml-services/xnull-markup-extension.md).  
   
 - `x:Array` provides support for creation of general arrays in XAML syntax, for cases where the collection support provided by WPF base elements and control models is deliberately not used. For details, see [x:Array Markup Extension](../../../desktop-wpf/xaml-services/xarray-markup-extension.md).  
   

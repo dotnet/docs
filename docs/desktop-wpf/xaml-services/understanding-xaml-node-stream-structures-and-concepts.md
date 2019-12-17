@@ -234,4 +234,4 @@ Certain directives are intended specifically to provide more information for the
 
 - <xref:System.Xaml.XamlObjectReader>
 - [XAML Services](index.md)
-- [XAML Namespaces](xaml-namespaces-for-net-framework-xaml-services.md)
+- [XAML Namespaces](namespaces.md)

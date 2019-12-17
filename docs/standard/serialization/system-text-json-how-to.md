@@ -712,7 +712,8 @@ Here's a JSON sample that the preceding code can read. The resulting summary mes
 ## Additional resources
 
 * [System.Text.Json overview](system-text-json-overview.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [Write custom converters for System.Text.Json](system-text-json-converters-how-to.md)
+* [How to write custom converters](system-text-json-converters-how-to.md)
+* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
-* [GitHub issues in the dotnet/corefx repository labeled json-functionality-doc](https://github.com/dotnet/corefx/labels/json-functionality-doc) 
+* [System.Text.Json API reference](xref:System.Text.Json)
+<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/roadmap/README.md)-->

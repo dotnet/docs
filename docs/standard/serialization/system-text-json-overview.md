@@ -30,10 +30,13 @@ The library also provides classes for working with an in-memory document object 
 ## Additional resources
 
 * [How to use the library](system-text-json-how-to.md)
-* [Source code](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json)
-* [API reference](xref:System.Text.Json)
-* [Roadmap](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/roadmap/README.md)
-* GitHub issues in the dotnet/corefx repository
-  * [Discussion about the development of System.Text.Json](https://github.com/dotnet/corefx/issues/33115) <!-- TODO: Issues are still not moved to the new repo-->
-  * [All System.Text.Json issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json)
-  * [System.Text.Json issues labeled json-functionality-doc](https://github.com/dotnet/runtime/labels/json-functionality-doc)
+* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [How to write converters](system-text-json-converters-how-to.md)
+* [System.Text.Json source code](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json)
+* [System.Text.Json API reference](xref:System.Text.Json)
+<!-- * [Roadmap](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/roadmap/README.md)-->
+* GitHub issues in the dotnet/corefx and dotnet/runtime repositories
+  * [Discussion about the development of System.Text.Json](https://github.com/dotnet/corefx/issues/33115)
+  * [System.Text.Json issues in dotnet/corefx](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json)
+  * [System.Text.Json issues in dotnet/runtime](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json)
+

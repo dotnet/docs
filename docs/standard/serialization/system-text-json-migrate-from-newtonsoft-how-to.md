@@ -514,8 +514,9 @@ For a code example, see [Use JsonDocument for access to data](system-text-json-h
 
 ## Additional resources
 
+* <!-- [System.Text.Json roadmap](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->
 * [System.Text.Json overview](system-text-json-overview.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
 * [How to use System.Text.Json](system-text-json-how-to.md)
 * [How to write custom converters](system-text-json-converters-how-to.md)
-* <!-- [Roadmap](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->
+* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
+* [System.Text.Json API reference](xref:System.Text.Json)

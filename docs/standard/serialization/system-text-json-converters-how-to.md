@@ -176,8 +176,11 @@ If you need to make a converter that modifies the behavior of an existing built-
 
 ## Additional resources
 
-* [System.Text.Json overview](system-text-json-overview.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
-* [How to use System.Text.Json](system-text-json-how-to.md)
-* [Source code for built-in converters](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/)
 * [GitHub issue related to custom converters](https://github.com/dotnet/corefx/issues/36639)
+* [Source code for built-in converters](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/)
+* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
+* [System.Text.Json overview](system-text-json-overview.md)
+* [How to use System.Text.Json](system-text-json-how-to.md)
+* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [System.Text.Json API reference](xref:System.Text.Json)
+<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/roadmap/README.md)-->

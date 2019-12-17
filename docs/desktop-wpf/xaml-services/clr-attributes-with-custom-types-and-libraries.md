@@ -97,7 +97,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that specifies the name of the run-time name property on the attributed type.  
   
- <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> reports a property of the attributed type that maps to the XAML [x:Name Directive](x-name-directive.md). The property must be of type <xref:System.String> and must be read/write.  
+ <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> reports a property of the attributed type that maps to the XAML [x:Name Directive](xname-directive.md). The property must be of type <xref:System.String> and must be read/write.  
   
  The definition inherits to all derived types that are assignable to the defining type. You can override the definition on a specific derived type by applying <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> on the specific derived type.  
   

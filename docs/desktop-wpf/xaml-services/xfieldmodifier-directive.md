@@ -40,7 +40,7 @@ Modifies XAML compilation behavior so that fields for named object references ar
   
  <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> is the default behavior because it is infrequent that code outside the assembly that compiled the XAML needs access to a XAML-created element. WPF security architecture together with XAML compilation behavior will not declare fields that store element instances as public, unless you specifically set the `x:FieldModifier` to allow public access.  
   
- `x:FieldModifier` is only relevant for elements with an [x:Name Directive](x-name-directive.md) because that name is used to reference the field after it is public.  
+ `x:FieldModifier` is only relevant for elements with an [x:Name Directive](xname-directive.md) because that name is used to reference the field after it is public.  
   
  By default, the partial class for the root element is public; however, you can make it nonpublic by using the [x:ClassModifier Directive](xclassmodifier-directive.md). The [x:ClassModifier Directive](xclassmodifier-directive.md) also affects the access level of the instance of the root element class. You can put both `x:Name` and `x:FieldModifier` on the root element, but this only makes a public field copy of the root element, with the true root element class access level still controlled by [x:ClassModifier Directive](xclassmodifier-directive.md).  
   
@@ -48,6 +48,6 @@ Modifies XAML compilation behavior so that fields for named object references ar
 
 - [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
 - [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
-- [x:Name Directive](x-name-directive.md)
+- [x:Name Directive](xname-directive.md)
 - [Building a WPF Application (WPF)](../../framework/wpf/app-development/building-a-wpf-application-wpf.md)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)

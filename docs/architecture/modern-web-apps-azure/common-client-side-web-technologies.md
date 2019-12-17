@@ -120,7 +120,37 @@ Because React isn't a full framework, you'll typically want other libraries to h
 
 ### Vue
 
-TODO: Describe Vue with a small example
+From its getting started guide, "Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries."
+
+Getting started with Vue simply requires including its script within an HTML file:
+
+```html
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+```
+
+With the framework added, you're then able to declaratively render data to the DOM using Vue's straightforward templating syntax:
+
+```html
+<div id="app">
+  {{ message }}
+</div>
+```
+
+and then adding the following script:
+
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+```
+
+This is enough to render "Hello Vue!" on the page. Note, however, that Vue isn't simply rendering the message to the div once. It supports databinding and dynamic updates such that if the value of `message` changes, the value in the `<div>` is immediately updated to reflect it.
+
+Of course, this only scratches the surface of what Vue is capable of. It's gained a great deal of popularity in the last several years and has a lot of community support. There's a [huge and growing list of supporting components and libraries](https://github.com/vuejs/awesome-vue#redux) that work with Vue to extend it as well. If you're looking to add client-side behavior to your web application or considering building a full SPA, Vue is worth investigating.
 
 ### Choosing a SPA Framework
 
@@ -157,14 +187,13 @@ JavaScript frameworks continue to evolve with breakneck speed. Use the considera
 > - **Angular**  
 > <https://angular.io/>
 > - **React**  
-> <https://facebook.github.io/react/>
-> - **React Slingshot**  
-> <https://github.com/coryhouse/react-slingshot>
-> - **React vs Angular 2 Comparison**  
-> <https://www.codementor.io/codementorteam/react-vs-angular-2-comparison-beginners-guide-lvz5710ha>
-> - **5 Best JavaScript Frameworks of 2017**  
-> <https://hackernoon.com/5-best-javascript-frameworks-in-2017-7a63b3870282> TODO: Update to a 2019 article?
-TODO: add link to Vue
+> <https://reactjs.org/>
+> - **Vue**  
+> <https://vuejs.org/>
+> - **Angular vs React vs Vue: Which Framework to Choose in 2020**
+> <https://www.codeinwp.com/blog/angular-vs-vue-vs-react/>
+> - **The Top JavaScript Frameworks for Front-End Development in 2020**  
+> <https://www.freecodecamp.org/news/complete-guide-for-front-end-developers-javascript-frameworks-2019/>
 
 >[!div class="step-by-step"]
 >[Previous](common-web-application-architectures.md)

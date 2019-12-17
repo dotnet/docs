@@ -82,7 +82,7 @@ Writing SPAs requires familiarity with JavaScript and/or TypeScript and client-s
 > - **Angular**  
 >   <https://angular.io>
 > - **React**
->   <https://react.com> TODO: Fix link
+>   <https://reactjs.org/>
 > - **Comparison of JavaScript Frameworks**  
 >   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
 

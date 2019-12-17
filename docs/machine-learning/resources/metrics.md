@@ -54,7 +54,7 @@ For further details on multi-class classification metrics read the following art
 
 ## Evaluation metrics for Regression and Recommendation
 
-Both the regression and recommendation tasks predict a number. In the case of regression, the number can be any output property, which is influenced by the input properties. For recommendation, the number is usually a rating value (between 1 and 5 for example), or a yes/no recommendation (represented by 1 and 0 respectively).
+Both the regression and recommendation tasks predict a number. In the case of regression, the number can be any output property that is influenced by the input properties. For recommendation, the number is usually a rating value (between 1 and 5 for example), or a yes/no recommendation (represented by 1 and 0 respectively).
 
 | Metric   |      Description      |  Look for |
 |----------|-----------------------|-----------|

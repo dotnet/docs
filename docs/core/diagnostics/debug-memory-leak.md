@@ -30,7 +30,7 @@ The tutorial uses:
 - [dotnet-trace](dotnet-trace.md) to list processes.
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage.
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
-- A [sample debug target](sample-debug-target.md) app to diagnose.
+- A [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) app to diagnose.
 
 The tutorial assumes the sample and tools are installed and ready to use.
 
@@ -38,7 +38,7 @@ The tutorial assumes the sample and tools are installed and ready to use.
 
 Before you start collecting diagnostics data to help us root cause this scenario, you need to make sure that you're actually seeing a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
 
-Open a console window and navigate to the directory where you cloned the samples repository. Run the [sample debug target](sample-debug-target.md):
+Open a console window and navigate to the directory where you cloned the samples repository. Run the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/):
 
 ```dotnetcli
 # Assumes https://github.com/dotnet/samples was cloned into samples
@@ -114,7 +114,7 @@ By watching the memory usage, you can safely say that memory is growing or leaki
 
 When analyzing possible memory leaks, you need access to the app's memory heap. Then you can analyze the memory contents. Looking at relationships between objects, you create theories on why memory isn't being freed. A common diagnostics data source is a memory dump on Windows or the equivalent core dump on Linux. To generate a dump of a .NET Core application, you can use the [dotnet-dump)](dotnet-dump.md) tool.
 
-Using the [sample debug target](sample-debug-target.md) previously started, run the following command to generate a Linux core dump:
+Using the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) previously started, run the following command to generate a Linux core dump:
 
 ```dotnetcli
 dotnet-dump collect -p 4807
@@ -131,7 +131,7 @@ Complete
 
 Once the dump is collected, you should have sufficient information to diagnose the failed process. If the failed process is running on a production server, now is the ideal time for short-term remediation by restarting the process.
 
-In this tutorial, we're now done with the [Sample debug target](sample-debug-target.md). It can now be terminated. Navigate to the terminal that started the server and press `Control-C`.
+In this tutorial, we're now done with the [Sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/). It can now be terminated. Navigate to the terminal that started the server and press `Control-C`.
 
 ### Analyze the core dump
 

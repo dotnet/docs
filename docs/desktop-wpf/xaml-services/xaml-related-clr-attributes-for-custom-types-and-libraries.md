@@ -75,7 +75,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A <xref:System.Type> that specifies the most precise type to expect as the `ProvideValue` result of the attributed <xref:System.Windows.Markup.MarkupExtension>.  
   
- For more information, see [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md).  
+ For more information, see [Markup Extensions for XAML Overview](markup-extensions-overview.md).  
   
 ### NameScopePropertyAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.NameScopePropertyAttribute>  

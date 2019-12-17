@@ -36,7 +36,7 @@ Type converters and markup extensions are two techniques that XAML type systems 
   
  Markup extensions are associated with a single supporting service class, but can be applied for any member value. (However, you can implement your markup extension to deliberately restrict its use to certain members or destination types, by using service context.) Markup extensions can override a type converter association. Or you can use them to specify an attribute value for members that would not otherwise support a text syntax.  
   
- For more information about the markup extension implementation pattern for XAML, see [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md).  
+ For more information about the markup extension implementation pattern for XAML, see [Markup Extensions for XAML Overview](markup-extensions-overview.md).  
   
 > [!NOTE]
 > The <xref:System.Windows.Markup.MarkupExtension> and <xref:System.Windows.Markup.ValueSerializer> types are both in the <xref:System.Windows.Markup> namespace and not in the <xref:System.Xaml> namespace. This does not imply that these types are specific to either the WPF or Windows Forms technologies that otherwise populate CLR namespaces that contain the string `Windows`. <xref:System.Windows.Markup.MarkupExtension> and <xref:System.Windows.Markup.ValueSerializer> are in the System.Xaml assembly and have no specific framework dependency. These types existed in the CLR namespace for .NET Framework 3.0 and remain in the CLR namespace in .NET Framework 4 to avoid breaking references in existing WPF projects. For more information, see [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md).  
@@ -63,6 +63,6 @@ Type converters and markup extensions are two techniques that XAML type systems 
 
 - <xref:System.Windows.Markup.MarkupExtension>
 - <xref:System.Xaml.XamlObjectWriter>
-- [Markup Extensions for XAML Overview](markup-extensions-for-xaml-overview.md)
+- [Markup Extensions for XAML Overview](markup-extensions-overview.md)
 - [Type Converters for XAML Overview](type-converters-for-xaml-overview.md)
 - [Service Contexts Available to Type Converters and Markup Extensions](service-contexts-available-to-type-converters-and-markup-extensions.md)

@@ -1,9 +1,9 @@
 ---
-title: Development Process for Docker Based Applications
+title: Development process for Docker-based applications
 description: Get a high-level overview of the options for developing Docker-based applications. Using your choice of Visual Studio for Windows, Visual Studio for Mac, or Visual Studio Code for multiplatform support (Windows, macOS, and Linux).
 ms.date: 09/27/2018
 ---
-# Development Process for Docker-Based Applications
+# Development process for Docker-based applications
 
 *Develop containerized .NET applications the way you like, either IDE focused with Visual Studio and Visual Studio tools for Docker or CLI/Editor focused with Docker CLI and Visual Studio Code.*
 

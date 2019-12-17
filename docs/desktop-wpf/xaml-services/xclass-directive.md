@@ -35,7 +35,7 @@ Configures XAML markup compilation to join partial classes between markup and co
 ## Remarks  
  The `namespace` value may contain additional dots to organize related namespaces into name hierarchies, which is a common technique in .NET Framework programming. Only the last dot in a string of `x:Class` values is interpreted to separate `namespace` and `classname.` The class that is used as `x:Class` cannot be a nested class. Nested classes are not allowed because determining the meaning of dots for `x:Class` strings is ambiguous if nested classes are permitted.  
   
- In existing programming models that use `x:Class`, `x:Class` is optional in the sense that it is entirely valid to have a XAML page that has no code-behind. However, that capability interacts with the build actions as implemented by frameworks that use XAML. `x:Class` capability is also influenced by the roles that various classifications of XAML-specified content have in an application model and in the corresponding build actions. If your XAML declares event-handling attribute values or instantiates custom elements where the defining classes are in the code-behind class, you have to provide the `x:Class` directive reference (or [x:Subclass](x-subclass-directive.md)) to the appropriate class for code-behind.  
+ In existing programming models that use `x:Class`, `x:Class` is optional in the sense that it is entirely valid to have a XAML page that has no code-behind. However, that capability interacts with the build actions as implemented by frameworks that use XAML. `x:Class` capability is also influenced by the roles that various classifications of XAML-specified content have in an application model and in the corresponding build actions. If your XAML declares event-handling attribute values or instantiates custom elements where the defining classes are in the code-behind class, you have to provide the `x:Class` directive reference (or [x:Subclass](xsubclass-directive.md)) to the appropriate class for code-behind.  
   
  The value of the `x:Class` directive must be a string that specifies the fully qualified name of a class but without any assembly information (equivalent to the <xref:System.Type.FullName%2A?displayProperty=nameWithType>). For simple applications, you can omit CLR namespace information if the code-behind is also structured in that manner (code definition starts at the class level).  
   
@@ -56,7 +56,7 @@ Configures XAML markup compilation to join partial classes between markup and co
   
 ## See also
 
-- [x:Subclass Directive](x-subclass-directive.md)
+- [x:Subclass Directive](xsubclass-directive.md)
 - [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)
 - [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)

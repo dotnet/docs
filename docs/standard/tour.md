@@ -41,7 +41,7 @@ There's no analogous keyword to de-allocate memory, as de-allocation happens aut
 
 The garbage collector is one of the services that help ensure *memory safety*. A program is memory safe if it accesses only allocated memory. For instance, the runtime ensures that an app doesn't access unallocated memory beyond the bounds of an array.
 
-In the following example, the runtime throws an `InvalidIndexException` exception to enforce memory safety:
+In the following example, the runtime throws an <xref:System.IndexOutOfRangeException> exception to enforce memory safety:
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
@@ -91,7 +91,7 @@ In .NET, delegates are commonly used in event handlers, in defining asynchronous
 
 Generics allow the programmer to introduce a *type parameter* when designing their classes that allows the client code (the users of the type) to specify the exact type to use in place of the type parameter.
 
-Generics were added to help programmers implement generic data structures. Before their arrival in order for a type such as the `List` type to be generic, it would have to work with elements that were of type `object`. This had various performance and semantic problems, along with possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an `InvalidCastException` is thrown on working with the list's members.
+Generics were added to help programmers implement generic data structures. Before their arrival, in order for a type such as the `List` type to be generic, it would have to work with elements that were of type `object`. This had various performance and semantic problems, along with possible subtle run-time errors. A common run-time error is when a data structure contains, for example, both integers and strings, and an <xref:System.InvalidCastException> is thrown while processing the list's members.
 
 The following sample shows a basic program running using an instance of <xref:System.Collections.Generic.List%601> types:
 

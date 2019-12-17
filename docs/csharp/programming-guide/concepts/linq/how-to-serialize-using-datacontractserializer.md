@@ -1,9 +1,9 @@
 ---
-title: "How to: Serialize Using DataContractSerializer (C#)"
+title: "How to serialize using DataContractSerializer (C#)"
 ms.date: 07/20/2015
 ms.assetid: 3320ecbf-cdbe-480e-979c-2c14bbef9988
 ---
-# How to: Serialize Using DataContractSerializer (C#)
+# How to serialize using DataContractSerializer (C#)
 This topic shows an example that serializes and deserializes using <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 ## Example  

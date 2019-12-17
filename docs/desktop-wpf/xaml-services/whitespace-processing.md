@@ -29,7 +29,7 @@ The language rules for XAML state that significant white space must be processed
   
 5. A space immediately before the end tag is deleted.  
   
- "Default" corresponds to the state denoted by the default value of the [xml:space](xml-space-handling-in-xaml.md) attribute.  
+ "Default" corresponds to the state denoted by the default value of the [xml:space](xml-space-handling.md) attribute.  
   
 <a name="whitespace_in_inner_text_and_string_primitives"></a>   
 ## White space in inner text, and string primitives  
@@ -72,4 +72,4 @@ The language rules for XAML state that significant white space must be processed
 
 - [XAML overview (WPF)](../fundamentals/xaml.md)
 - [XML character entities and XAML](xml-character-entities.md)
-- [xml:space handling in XAML](xml-space-handling-in-xaml.md)
+- [xml:space handling in XAML](xml-space-handling.md)

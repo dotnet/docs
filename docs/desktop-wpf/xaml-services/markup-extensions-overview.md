@@ -42,7 +42,7 @@ Several markup extensions are implemented by .NET Framework XAML Services for XA
 
 ### Other x: Constructs
 
-Other `x:` constructs to support XAML language features exist, but these are not implemented as markup extensions. For more information, see [XAML Namespace (x:) Language Features](xaml-namespace-x-language-features.md).
+Other `x:` constructs to support XAML language features exist, but these are not implemented as markup extensions. For more information, see [XAML Namespace (x:) Language Features](namespace-language-features.md).
 
 <a name="the_markupextension_base_class"></a>
 

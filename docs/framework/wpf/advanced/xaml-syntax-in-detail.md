@@ -250,7 +250,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  Here, `StaticResource` identifies the <xref:System.Windows.StaticResourceExtension> class providing the markup extension implementation. The next string `MyStyle` is used as the input for the non-default <xref:System.Windows.StaticResourceExtension> constructor, where the parameter as taken from the extension string declares the requested <xref:System.Windows.ResourceKey>. `MyStyle` is expected to be the [x:Key](../../../desktop-wpf/xaml-services/x-key-directive.md) value of a <xref:System.Windows.Style> defined as a resource. The [StaticResource Markup Extension](staticresource-markup-extension.md) usage requests that the resource be used to provide the <xref:System.Windows.Style> property value through static resource lookup logic at load time.  
   
- For more information about markup extensions, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). For a reference of markup extensions and other XAML programming features enabled in the general .NET XAML implementation, see [XAML Namespace (x:) Language Features](../../../desktop-wpf/xaml-services/xaml-namespace-x-language-features.md). For WPF-specific markup extensions, see [WPF XAML Extensions](wpf-xaml-extensions.md).  
+ For more information about markup extensions, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). For a reference of markup extensions and other XAML programming features enabled in the general .NET XAML implementation, see [XAML Namespace (x:) Language Features](../../../desktop-wpf/xaml-services/namespace-language-features.md). For WPF-specific markup extensions, see [WPF XAML Extensions](wpf-xaml-extensions.md).  
   
 <a name="attached_properties"></a>   
 ## Attached Properties  
@@ -310,7 +310,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ## See also
 
 - [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
-- [XAML Namespace (x:) Language Features](../../../desktop-wpf/xaml-services/xaml-namespace-x-language-features.md)
+- [XAML Namespace (x:) Language Features](../../../desktop-wpf/xaml-services/namespace-language-features.md)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [TypeConverters and XAML](typeconverters-and-xaml.md)

@@ -185,7 +185,7 @@ For example, the following markup sets the value of the <xref:System.Windows.Fra
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources3](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources3)]
 
 <!-- TODO 
-For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../xaml-services/xaml-namespace-x-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). -->
+For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../xaml-services/namespace-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). -->
 
 ## Type converters
 
@@ -233,7 +233,7 @@ In the previous root element example, the prefix `x:` was used to map the XAML n
 
 - [x:Type](../xaml-services/x-type-markup-extension.md): Constructs a <xref:System.Type> reference based on a type name. This is used to specify attributes that take <xref:System.Type>, such as <xref:System.Windows.Style.TargetType%2A?displayProperty=nameWithType>, although frequently the property has native string-to-<xref:System.Type> conversion in such a way that the [x:Type](../xaml-services/x-type-markup-extension.md) markup extension usage is optional.
 
-There are additional programming constructs in the `x:` prefix/XAML namespace, which are not as common. For details, see [XAML Namespace (x:) Language Features](../xaml-services/xaml-namespace-x-language-features.md).
+There are additional programming constructs in the `x:` prefix/XAML namespace, which are not as common. For details, see [XAML Namespace (x:) Language Features](../xaml-services/namespace-language-features.md).
 
 ## Custom prefixes and custom types in XAML
 
@@ -344,7 +344,7 @@ WPF uses a particular application model that is based on the <xref:System.Window
 
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)
 - [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)
-- [XAML Namespace (x:) Language Features](../xaml-services/xaml-namespace-x-language-features.md)
+- [XAML Namespace (x:) Language Features](../xaml-services/namespace-language-features.md)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
 - [Base Elements Overview](base-elements-overview.md)
 - [Trees in WPF](trees-in-wpf.md)

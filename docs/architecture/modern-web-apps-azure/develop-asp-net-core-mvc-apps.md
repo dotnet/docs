@@ -328,7 +328,6 @@ ASP.NET Core Identity is a membership system you can use to support login functi
 
 ASP.NET Core Identity is included in new project templates if the Individual User Accounts option is selected. This template includes support for registration, login, external logins, forgotten passwords, and additional functionality.
 
-TODO: Update Screenshot to use VS2019 and 3.x
 ![Select Individual User Accounts to have Identity preconfigured](./media/image7-3.png)
 
 **Figure 7-3**. Select Individual User Accounts to have Identity preconfigured.

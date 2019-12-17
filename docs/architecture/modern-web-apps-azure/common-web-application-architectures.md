@@ -85,7 +85,7 @@ This unit can be scaled up or out to take advantage of cloud-based on-demand sca
 
 The simplest approach to scaling a web application in Azure is to configure scaling manually in the application's App Service Plan. Figure 5-6 shows the appropriate Azure dashboard screen to configure how many instances are serving an app.
 
-![App Service Plan scaling in Azure](./media/image5-6.png) TODO: Update screenshot
+![App Service Plan scaling in Azure](./media/image5-6.png)
 
 **Figure 5-6.** App Service Plan scaling in Azure.
 

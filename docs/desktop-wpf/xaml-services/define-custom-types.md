@@ -17,7 +17,7 @@ When you define custom types that are business objects or are types that do not 
   
  If an object can be instantiated as an object element, the created object can fill the property element form of any properties that take the object as their underlying type.  
   
- You can still provide object values for types that do not meet these criteria, if you enable a value converter. For more information, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).  
+ You can still provide object values for types that do not meet these criteria, if you enable a value converter. For more information, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).  
   
 ### Structures  
  Structures are always able to be constructed in XAML, by CLR definition. This is because a CLR compiler implicitly creates a parameterless constructor for a structure. This constructor initializes all property values to their defaults.  
@@ -41,7 +41,7 @@ When you define custom types that are business objects or are types that do not 
 ### Properties  
  If you define properties as a public CLR property using the typical CLR `get` and `set` accessor patterns and language-appropriate keywording, the XAML type system can report the property as a member with appropriate information provided for <xref:System.Xaml.XamlMember> properties, such as <xref:System.Xaml.XamlMember.IsReadPublic%2A> and <xref:System.Xaml.XamlMember.IsWritePublic%2A>.  
   
- Specific properties can enable a text syntax by applying <xref:System.ComponentModel.TypeConverterAttribute>. For more information, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).  
+ Specific properties can enable a text syntax by applying <xref:System.ComponentModel.TypeConverterAttribute>. For more information, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).  
   
  In the absence of a text syntax or native XAML conversion and in the absence of further indirection, such as a markup extension usage, the type of a property (<xref:System.Xaml.XamlMember.TargetType%2A> in the XAML type system) must be able to return an instance to a XAML object writer by treating the target type as a CLR type.  
   

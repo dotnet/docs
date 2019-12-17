@@ -50,7 +50,7 @@ Other `x:` constructs to support XAML language features exist, but these are not
 
 To define a custom markup extension that can interact with the default implementations of XAML readers and XAML writers in System.Xaml, you derive a class from the abstract <xref:System.Windows.Markup.MarkupExtension> class. That class has one method to override, which is <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>. You might also need to define additional constructors to support arguments to the markup extension usage, and matching settable properties.
 
-Through <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>, a custom markup extension has access to a service context that reports the environment where the markup extension is actually invoked by a XAML processor. In the load path this is typically a <xref:System.Xaml.XamlObjectWriter>. In the save path this is typically a <xref:System.Xaml.XamlXmlWriter>. Each report the service context as an internal XAML service provider context class that implements a service provider pattern. For more information about the available services and what they represent, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).
+Through <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>, a custom markup extension has access to a service context that reports the environment where the markup extension is actually invoked by a XAML processor. In the load path this is typically a <xref:System.Xaml.XamlObjectWriter>. In the save path this is typically a <xref:System.Xaml.XamlXmlWriter>. Each report the service context as an internal XAML service provider context class that implements a service provider pattern. For more information about the available services and what they represent, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).
 
 Your markup extension class must use a public access level; XAML processors must always be able to instantiate the markup extension's support class in order to use its services.
 
@@ -118,7 +118,7 @@ Markup extensions as specified by XAML can also use a named arguments form for u
 <a name="accessing_service_provider_context_from_a_markup_extension_implementation"></a>
 ## Accessing Service Provider Context from a Markup Extension Implementation
 
-The services available are the same for any value converter. The difference is in how each value converter receives the service context. Accessing services and the services available are documented in the topic [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).
+The services available are the same for any value converter. The difference is in how each value converter receives the service context. Accessing services and the services available are documented in the topic [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).
 
 <a name="property_element_usage_of_a_markup_extension"></a>
 ## Property element usage of a markup extension
@@ -168,5 +168,5 @@ If you are working with a XAML node stream on the save path, there generally is 
 ## See also
 
 - <xref:System.Windows.Markup.MarkupExtension>
-- [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md)
+- [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md)
 - [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

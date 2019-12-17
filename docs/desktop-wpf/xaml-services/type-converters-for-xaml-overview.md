@@ -95,7 +95,7 @@ Type converters supply logic for an object writer that converts from a string in
   
 <a name="accessing_service_provider_context_from_a_markup_extension_implementation"></a>   
 ## Accessing Service Provider Context from a Markup Extension Implementation  
- The available services are the same for any value converter. The difference is in how each value converter receives the service context. Accessing services and the services available are documented in the topic [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md).  
+ The available services are the same for any value converter. The difference is in how each value converter receives the service context. Accessing services and the services available are documented in the topic [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).  
   
 <a name="type_converters_in_the_xaml_node_stream"></a>   
 ## Type Converters in the XAML Node Stream  
@@ -104,5 +104,5 @@ Type converters supply logic for an object writer that converts from a string in
 ## See also
 
 - <xref:System.ComponentModel.TypeConverterAttribute>
-- [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions-for-xaml.md)
+- [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md)
 - [XAML Overview (WPF)](../fundamentals/xaml.md)

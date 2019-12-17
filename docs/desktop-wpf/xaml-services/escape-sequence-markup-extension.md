@@ -55,4 +55,4 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
 ## See also
 
 - [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md)
-- [XML Character Entities and XAML](xml-character-entities-and-xaml.md)
+- [XML Character Entities and XAML](xml-character-entities.md)

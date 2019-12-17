@@ -71,5 +71,5 @@ The language rules for XAML state that significant white space must be processed
 ## See also
 
 - [XAML overview (WPF)](../fundamentals/xaml.md)
-- [XML character entities and XAML](xml-character-entities-and-xaml.md)
+- [XML character entities and XAML](xml-character-entities.md)
 - [xml:space handling in XAML](xml-space-handling-in-xaml.md)

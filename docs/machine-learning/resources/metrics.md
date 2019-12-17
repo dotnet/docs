@@ -8,7 +8,7 @@ ms.author: nakersha
 ---
 # Evaluate your ML.NET model with metrics
 
-Understand the performance metrics used to evaluate an ML.NET model.
+Understand the metrics used to evaluate an ML.NET model.
 
 Evaluation metrics are specific to the type of machine learning task that a model performs.
 

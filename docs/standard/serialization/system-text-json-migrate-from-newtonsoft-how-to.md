@@ -356,13 +356,13 @@ Json.NET also has a `ReferenceLoopHandling` setting that lets you ignore circula
 
 ## System.Runtime.Serialization attributes
 
-`System.Text.Json` doesn't support attributes from the `System.Runtime.Serialization` namespace, such as `DataMemberAttribute` and `IgnoreDataMemberAttribute`. This lack of support is a design decision that is not likely to change in the future.
+`System.Text.Json` doesn't support attributes from the `System.Runtime.Serialization` namespace, such as `DataMemberAttribute` and `IgnoreDataMemberAttribute`.
 
 For more information, see issue [38758](https://github.com/dotnet/corefx/issues/38758) in the dotnet/corefx GitHub repository.
 
 ## Octal numbers
 
-Json.NET treats numbers with a leading zero as octal numbers. `System.Text.Json` doesn't allow leading zeroes because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't allow them. The lack of support for octal numbers is by design and is not expected to change in future versions of `System.Text.Json`. Options for handling JSON that deviates from the specification are offered for only a few high-priority scenarios, such as comments and trailing commas.
+Json.NET treats numbers with a leading zero as octal numbers. `System.Text.Json` doesn't allow leading zeroes because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't allow them.
 
 ## Type name handling
 

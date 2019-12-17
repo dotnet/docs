@@ -27,7 +27,7 @@ ms.assetid: e1f47225-9996-4fbf-ab86-62d2e955f3fc
  [x:Type Markup Extension](xtype-markup-extension.md)  
  [x:TypeArguments Directive](xtypearguments-directive.md)  
  [x:Uid Directive](xuid-directive.md)  
- [x:XData Intrinsic XAML Type](x-xdata-intrinsic-xaml-type.md)  
+ [x:XData Intrinsic XAML Type](xdata-intrinsic-xaml-type.md)  
  [XamlName Grammar](xamlname-grammar.md)  
  [{} Escape Sequence - Markup Extension](escape-sequence-markup-extension.md)  
  [xml:lang Handling in XAML](xml-language-handling.md)  

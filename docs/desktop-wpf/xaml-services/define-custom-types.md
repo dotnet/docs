@@ -111,4 +111,4 @@ When you define custom types that are business objects or are types that do not 
 ## See also
 
 - [XAML-Related CLR Attributes for Custom Types and Libraries](xaml-related-clr-attributes-for-custom-types-and-libraries.md)
-- [XAML Services](index.md)
+- [XAML Services](../../../api/index.md)

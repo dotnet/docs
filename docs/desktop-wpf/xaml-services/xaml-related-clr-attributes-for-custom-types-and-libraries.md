@@ -265,4 +265,4 @@ This topic describes the common language runtime (CLR) attributes that are defin
 ## See also
 
 - <xref:System.Attribute>
-- [Defining Custom Types for Use with .NET Framework XAML Services](defining-custom-types-for-use-with-net-framework-xaml-services.md)
+- [Defining Custom Types for Use with .NET Framework XAML Services](define-custom-types.md)

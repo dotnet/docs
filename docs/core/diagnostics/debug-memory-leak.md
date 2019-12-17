@@ -38,11 +38,9 @@ The tutorial assumes the sample and tools are installed and ready to use.
 
 Before you start collecting diagnostics data to help us root cause this scenario, you need to make sure that you're actually seeing a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
 
-Open a console window and navigate to the directory where you cloned the samples repository. Run the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/):
+Open a console window and navigate to the directory where you downloaded and unzipped the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/). Run the target:
 
 ```dotnetcli
-# Assumes https://github.com/dotnet/samples was cloned into samples
-cd samples/core/diagnostics/DiagnosticScenarios/
 dotnet run
 ```
 

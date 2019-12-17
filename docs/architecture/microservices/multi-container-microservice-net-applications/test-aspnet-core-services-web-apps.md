@@ -153,9 +153,9 @@ services:
     image: redis:alpine
   rabbitmq:
     image: rabbitmq:3-management-alpine
-  sql.data:
+  sqldata:
     image: mcr.microsoft.com/mssql/server:2017-latest
-  nosql.data:
+  nosqldata:
     image: mongo
 ```
 
@@ -172,13 +172,13 @@ services:
     ports:
       - "15672:15672"
       - "5672:5672"
-  sql.data:
+  sqldata:
     environment:
       - SA_PASSWORD=Pass@word
       - ACCEPT_EULA=Y
     ports:
       - "5433:1433"
-  nosql.data:
+  nosqldata:
     ports:
       - "27017:27017"
 ```

@@ -95,9 +95,9 @@ public class SqlConnectionHealthCheck : IHealthCheck
 }
 ```
 
-Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries efficient so that these operations are quick and don’t result in a higher utilization of resources.
+Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries efficient so that these operations are quick and don’t result in a higher utilization of resources.
 
-Finally, add a middleware that responds to the url path “/hc”:
+Finally, add a middleware that responds to the url path `/hc`:
 
 ```csharp
 // Startup.cs from .NET Core 3.1 Web Api sample
@@ -285,7 +285,7 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
 - **Introduction to Service Fabric health monitoring** \
   [https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction](/azure/service-fabric/service-fabric-health-introduction)
 
-- **Azure Monitor**  
+- **Azure Monitor** \
   <https://azure.microsoft.com/services/monitor/>
 
 >[!div class="step-by-step"]

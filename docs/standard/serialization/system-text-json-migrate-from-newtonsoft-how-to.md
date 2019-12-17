@@ -140,7 +140,7 @@ The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.
 
 ## Polymorphic deserialization
 
-Json.NET can do polymorphic serialization and deserialization. Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at runtime. To do that, the deserializer has to find clues that identify the required type in the JSON. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. Json.NET provides attributes that specify how to handle polymorphic deserialization scenarios. The current release of `System.Text.Json` doesn't provide such attributes. If there's no need for polymorphic deserialization, `System.Text.Json` can do [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes). But the ability to do polymorphic deserialization or convert the same data in both directions requires a custom converter.
+Json.NET can do polymorphic serialization and deserialization. Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at runtime. To do that, the deserializer has to find clues that identify the required type in the JSON. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. Json.NET provides attributes that specify how to handle polymorphic deserialization scenarios. `System.Text.Json` doesn't provide such attributes. If there's no need for polymorphic deserialization, `System.Text.Json` can do [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes). But the ability to do polymorphic deserialization or convert the same data in both directions requires a custom converter.
 
 The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
 
@@ -233,7 +233,7 @@ For more information, see issue [40922](https://github.com/dotnet/corefx/issues/
 
 ## Deserialize to immutable classes and structs
 
-Json.NET can deserialize to immutable classes and structs because it can use constructors that have parameters. The current release of `System.Text.Json` supports only parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
+Json.NET can deserialize to immutable classes and structs because it can use constructors that have parameters. `System.Text.Json` supports only parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
 
 Here's an immutable struct with multiple constructor parameters:
 
@@ -251,7 +251,7 @@ For more information, see issue [38569](https://github.com/dotnet/corefx/issues/
 
 ## Specify constructor to use
 
-The Json.NET `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO. The current release of `System.Text.Json` supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
+The Json.NET `[JsonConstructor]` attribute lets you specify which constructor to call when deserializing to a POCO. `System.Text.Json` supports only parameterless constructors. As a workaround, you can call whichever constructor you need in a custom converter. See the example for [Deserialize to immutable classes and structs](#deserialize-to-immutable-classes-and-structs).
 
 ## Conditionally ignore a property
 
@@ -335,11 +335,11 @@ For more information, see issue [36639](https://github.com/dotnet/corefx/issues/
 
 ## Fields
 
-Json.NET can serialize and deserialize fields as well as properties. The current release of `System.Text.Json` only works with properties. For more information, see issue [36505](https://github.com/dotnet/corefx/issues/36505) in the dotnet/corefx GitHub repository.
+Json.NET can serialize and deserialize fields as well as properties. `System.Text.Json` only works with properties. For more information, see issue [36505](https://github.com/dotnet/corefx/issues/36505) in the dotnet/corefx GitHub repository.
 
 ## Private setters
 
-Json.NET can use private property setters. The current release of `System.Text.Json` supports only public setters. For more information, see issue [38163](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx GitHub repository.
+Json.NET can use private property setters. `System.Text.Json` supports only public setters. For more information, see issue [38163](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx GitHub repository.
 
 ## Preserve object references and handle loops
 
@@ -352,7 +352,7 @@ Json.NET has a `PreserveReferencesHandling` setting on `JsonSerializerSettings` 
 
 Json.NET also has a `ReferenceLoopHandling` setting that lets you ignore circular references rather than throw an exception.
 
-The current release of `System.Text.Json` supports only serialization by value. For more information, see issues [37786](https://github.com/dotnet/corefx/issues/37786), [38579](https://github.com/dotnet/corefx/issues/38579), and [41002](https://github.com/dotnet/corefx/issues/41002) in the dotnet/corefx GitHub repository.
+`System.Text.Json` supports only serialization by value. For more information, see issues [37786](https://github.com/dotnet/corefx/issues/37786), [38579](https://github.com/dotnet/corefx/issues/38579), and [41002](https://github.com/dotnet/corefx/issues/41002) in the dotnet/corefx GitHub repository.
 
 ## System.Runtime.Serialization attributes
 
@@ -366,19 +366,19 @@ Json.NET treats numbers with a leading zero as octal numbers. `System.Text.Json`
 
 ## Type name handling
 
-Json.NET has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing, and it uses the metadata while deserializing. The current release of `System.Text.Json` lacks this feature. For more information, see issue [39031](https://github.com/dotnet/corefx/issues/39031) in the dotnet/corefx GitHub repository.
+Json.NET has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing, and it uses the metadata while deserializing. `System.Text.Json` lacks this feature. For more information, see issue [39031](https://github.com/dotnet/corefx/issues/39031) in the dotnet/corefx GitHub repository.
 
 ## Populate existing objects
 
-The Json.NET `JsonConvert.PopulateObject` method deserializes a JSON document to an existing instance of a class, instead of creating a new instance. The current release of `System.Text.Json` always creates a new instance of the target type by using the default parameterless constructor. For more information, see issue [37627](https://github.com/dotnet/corefx/issues/37627) in the dotnet/corefx GitHub repository.
+The Json.NET `JsonConvert.PopulateObject` method deserializes a JSON document to an existing instance of a class, instead of creating a new instance. `System.Text.Json` always creates a new instance of the target type by using the default parameterless constructor. For more information, see issue [37627](https://github.com/dotnet/corefx/issues/37627) in the dotnet/corefx GitHub repository.
 
 ## Reuse rather than replace properties
 
-The Json.NET `ObjetCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. The current release of `System.Text.Json` always replaces objects in properties. For more information, see issue [42515](https://github.com/dotnet/corefx/issues/42515) in the dotnet/corefx GitHub repository.
+The Json.NET `ObjetCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. `System.Text.Json` always replaces objects in properties. For more information, see issue [42515](https://github.com/dotnet/corefx/issues/42515) in the dotnet/corefx GitHub repository.
 
 ## Add to collections without setters
 
-During deserialization, Json.NET adds objects to a collection even if the property has no setter. The current release of `System.Text.Json` ignores properties that don't have setters. For more information, see issue [39477](https://github.com/dotnet/corefx/issues/39477) in the dotnet/corefx GitHub repository.
+During deserialization, Json.NET adds objects to a collection even if the property has no setter. `System.Text.Json` ignores properties that don't have setters. For more information, see issue [39477](https://github.com/dotnet/corefx/issues/39477) in the dotnet/corefx GitHub repository.
 
 ## MissingMemberHandling
 
@@ -386,7 +386,7 @@ Json.NET can be configured to throw exceptions during deserialization if the JSO
 
 ## TraceWriter
 
-Json.NET lets you debug by using a `TraceWriter` to view logs that are generated by serialization or deserialization. The current release of `System.Text.Json` doesn't do logging.
+Json.NET lets you debug by using a `TraceWriter` to view logs that are generated by serialization or deserialization. `System.Text.Json` doesn't do logging.
 
 ## Utf8JsonReader and Utf8JsonWriter
 

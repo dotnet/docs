@@ -223,7 +223,7 @@ The WPF implementation of its XAML processor includes an infrastructure that has
 
 In the previous root element example, the prefix `x:` was used to map the XAML namespace `http://schemas.microsoft.com/winfx/2006/xaml`, which is the dedicated XAML namespace that supports XAML language constructs. This `x:` prefix is used for mapping this XAML namespace in the templates for projects, in examples, and in documentation throughout this SDK. The XAML namespace for the XAML language contains several programming constructs that you will use frequently in your XAML. The following is a listing of the most common `x:` prefix programming constructs you will use:
 
-- [x:Key](../xaml-services/x-key-directive.md): Sets a unique key for each resource in a <xref:System.Windows.ResourceDictionary> (or similar dictionary concepts in other frameworks). `x:Key` will probably account for 90 percent of the `x:` usages you will see in a typical WPF app's markup.
+- [x:Key](../xaml-services/xkey-directive.md): Sets a unique key for each resource in a <xref:System.Windows.ResourceDictionary> (or similar dictionary concepts in other frameworks). `x:Key` will probably account for 90 percent of the `x:` usages you will see in a typical WPF app's markup.
 
 - [x:Class](../xaml-services/xclass-directive.md): Specifies the CLR namespace and class name for the class that provides code-behind for a XAML page. You must have such a class to support code-behind per the WPF programming model, and therefore you almost always see `x:` mapped, even if there are no resources.
 

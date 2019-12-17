@@ -15,7 +15,7 @@ ms.assetid: e1f47225-9996-4fbf-ab86-62d2e955f3fc
  [x:ClassModifier Directive](xclassmodifier-directive.md)  
  [x:Code Intrinsic XAML Type](xcode-intrinsic-xaml-type.md)  
  [x:FieldModifier Directive](xfieldmodifier-directive.md)  
- [x:Key Directive](x-key-directive.md)  
+ [x:Key Directive](xkey-directive.md)  
  [x:Member Directive](x-member-directive.md)  
  [x:Members Directive](x-members-directive.md)  
  [x:Name Directive](x-name-directive.md)  

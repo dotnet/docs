@@ -18,7 +18,7 @@ XAML 2009 is the shorthand term for new XAML language features that extend the e
  XAML 2009 also introduces additional features that either modify the previous XAML 2006 constructs or that modify the basic markup forms.  
   
 ### x:Key as an Object Element  
- XAML 2009 can support `x:Key` as an object (a property element that has object element value); however, XAML 2006 only supported `x:Key` as an attribute. See the "XAML 2009" section of [x:Key Directive](x-key-directive.md).  
+ XAML 2009 can support `x:Key` as an object (a property element that has object element value); however, XAML 2006 only supported `x:Key` as an attribute. See the "XAML 2009" section of [x:Key Directive](xkey-directive.md).  
   
 ### xmlns on Property Elements  
  XAML 2009 can support XAML namespace (xmlns) definitions on property elements; however, XAML 2006 only supports xmlns definitions on object elements.  

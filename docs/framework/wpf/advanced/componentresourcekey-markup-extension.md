@@ -41,7 +41,7 @@ Defines and references keys for resources that are loaded from external assembli
 |||  
 |-|-|  
 |`targetTypeName`|The name of the public common language runtime (CLR) type that is defined in the resource assembly.|  
-|`targetID`|The key for the resource. When resources are looked up, `targetID` will be analogous to the [x:Key Directive](../../../desktop-wpf/xaml-services/x-key-directive.md) of the resource.|  
+|`targetID`|The key for the resource. When resources are looked up, `targetID` will be analogous to the [x:Key Directive](../../../desktop-wpf/xaml-services/xkey-directive.md) of the resource.|  
   
 ## Remarks  
  As seen in the usages above, a {`ComponentResourceKey`} markup extension usage is found in two places:  

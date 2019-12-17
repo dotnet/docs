@@ -67,7 +67,7 @@ In the example, the `printTotalFileBytes` function is of type `string -> Async<u
 
 Another important line is the call to `Async.RunSynchronously`. This is one of the Async module starting functions that you'll need to call if you want to actually execute an F# asynchronous computation.
 
-This is a fundamental difference with the C#/VB style of `async` programming. In F#, asynchronous computations can be thought of as **Cold tasks**. They must be explicitly started to actually execute. This has some advantages, as it allows you to combine and sequence asynchronous work much more easily than in C#/VB.
+This is a fundamental difference with the C#/Visual Basic style of `async` programming. In F#, asynchronous computations can be thought of as **Cold tasks**. They must be explicitly started to actually execute. This has some advantages, as it allows you to combine and sequence asynchronous work much more easily than in C# or Visual Basic.
 
 ## Combining asynchronous computations
 

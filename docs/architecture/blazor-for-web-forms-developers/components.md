@@ -125,7 +125,7 @@ To add members to the Razor component class, use the `@code` directive. This tec
 }
 ```
 
-Because Razor is based on C#, it must be compiled from within a C# project (*.csproj*). You can't compile *.razor* files from a VB project (*.vbproj*). You can still reference VB projects from your Blazor project. The opposite is true too.
+Because Razor is based on C#, it must be compiled from within a C# project (*.csproj*). You can't compile *.razor* files from a Visual Basic project (*.vbproj*). You can still reference Visual Basic projects from your Blazor project. The opposite is true too.
 
 For a full Razor syntax reference, see [Razor syntax reference for ASP.NET Core](/aspnet/core/mvc/views/razor).
 

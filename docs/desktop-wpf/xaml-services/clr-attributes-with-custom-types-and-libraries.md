@@ -136,7 +136,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that references the relevant property by name.  
   
- Indicates the CLR property of a class that aliases the [x:Uid Directive](x-uid-directive.md).  
+ Indicates the CLR property of a class that aliases the [x:Uid Directive](xuid-directive.md).  
   
 ### UsableDuringInitializationAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.UsableDuringInitializationAttribute>  

@@ -50,7 +50,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |-|-|-|  
 |Normal|CommonStates|The default state.|  
 |Disabled|CommonStates|The control is disabled.|  
-|MouseOver|CommonStates|The mouse pointer is over the <xref:System.Windows.Controls.ComboBox> control.|  
+|MouseOver|CommonStates|The mouse pointer is over the <xref:System.Windows.Controls.ComboBoxItem> control.|  
 |Focused|FocusStates|The control has focus.|  
 |Unfocused|FocusStates|The control does not have focus.|  
 |Selected|SelectionStates|The item is currently selected.|  

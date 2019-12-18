@@ -120,7 +120,7 @@ dotnet run -- hello from the bot
 
 All arguments after the `--` delimiter are passed to your application.
 
-## Setup the global tool
+## Set up the global tool
 
 Before you can pack and distribute the application as a Global Tool, you need to modify the project file. Open the `botsay.csproj` file and add three new XML nodes to the `<Project><PropertyGroup>` node:
 

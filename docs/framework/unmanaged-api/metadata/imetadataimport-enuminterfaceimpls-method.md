@@ -42,7 +42,7 @@ HRESULT EnumInterfaceImpls (
  [out] The array used to store the MethodDef tokens.  
   
  `cMax`  
- [in] The maximum size of the `rImpls` array.  
+ [in] The maximum length of the `rImpls` array.  
   
  `pcImpls`  
  [out] The actual number of tokens returned in `rImpls`.  

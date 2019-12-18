@@ -1,6 +1,6 @@
 ---
 title: .NET Core Guide
-description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and Mac apps. Learn about .NET Core to get started.
+description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and macOS apps. Learn about .NET Core to get started.
 author: richlander
 ms.date: 12/04/2019
 ms.custom: "updateeachrelease"

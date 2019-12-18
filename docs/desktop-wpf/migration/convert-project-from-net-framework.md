@@ -1,5 +1,5 @@
 ---
-title: Migrating WPF Apps to .NET Core 3.0 - .NET Desktop
+title: Migrating WPF Apps to .NET Core 3.0
 description: Learn how to migrate a Windows Presentation Foundation (WPF) app to .NET Core 3.0.
 author: mjrousos
 ms.date: 09/12/2019
@@ -316,3 +316,4 @@ After removing the `BeginInvoke` usage, the Bean Trader app runs successfully on
 ![Bean Trader running on .NET Core](./media/convert-project-from-net-framework/running-on-core.png)
 
 All apps are different, so the specific steps needed to migrate your own apps to .NET Core will vary. But hopefully the Bean Trader sample demonstrates the general workflow and the types of issues that can be expected. And, despite this article's length, the actual changes needed in the Bean Trader sample to make it work on .NET Core were fairly limited. Many apps migrate to .NET Core in this same way; with limited or even no code changes needed.
+ 

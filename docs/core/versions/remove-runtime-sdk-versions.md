@@ -1,7 +1,7 @@
 ---
 title: Remove the .NET Core runtime and SDK
 description: This article describes how to determine which versions of the .NET Core Runtime and SDK are currently installed, and then, how to remove them on Windows, Mac, and Linux.
-ms.date: 12/02/2019
+ms.date: 12/17/2019
 author: billwagner
 ms.author: wiwagn
 ms.custom: "seodec18,updateeachrelease"
@@ -214,6 +214,8 @@ Before Visual Studio 2019 version 16.3, Visual Studio installers called the stan
 | Visual Studio 2019 version 16.0 | .NET Core SDK 2.2.2xx, 2.1.6xx |
 | Visual Studio 2017 version 15.9 | .NET Core SDK 2.2.1xx, 2.1.5xx |
 | Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx |
+
+Starting with Visual Studio 2019 16.3, Visual Studio is in charge of its own copy of the .NET Core SDK. For that reason, you no longer see those SDK versions in the **Add/Remove Programs** dialog.
 
 ## Remove the NuGet fallback folder
 

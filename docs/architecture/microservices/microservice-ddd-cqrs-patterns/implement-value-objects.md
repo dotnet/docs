@@ -173,7 +173,7 @@ The identity of instances of owned types is not completely their own. It consist
 
 - The navigation property pointing to them
 
-- In the case of collections of owned types, an independent component (not yet supported in EF Core 2.0, coming up on 2.2).
+- In the case of collections of owned types, an independent component (in 2.2 and up).
 
 For example, in the Ordering domain model at eShopOnContainers, as part of the Order entity, the Address value object is implemented as an owned entity type within the owner entity, which is the Order entity. Address is a type with no identity property defined in the domain model. It is used as a property of the Order type to specify the shipping address for a particular order.
 
@@ -233,7 +233,7 @@ orderConfiguration.OwnsOne(p => p.Address)
                             .Property(p=>p.City).HasColumnName("ShippingCity");
 ```
 
-It is possible to chain the `OwnsOne` method in a fluent mapping. In the following hypothetical example, `OrderDetails` owns `BillingAddress` and `ShippingAddress`, which are both `Address` types. Then `OrderDetails` is owned by the `Order` type.
+It's possible to chain the `OwnsOne` method in a fluent mapping. In the following hypothetical example, `OrderDetails` owns `BillingAddress` and `ShippingAddress`, which are both `Address` types. Then `OrderDetails` is owned by the `Order` type.
 
 ```csharp
 orderConfiguration.OwnsOne(p => p.OrderDetails, cb =>
@@ -270,7 +270,7 @@ public class Address
 
 - The identity (key) of an owned type instance in our stack is a composite of the identity of the owner type and the definition of the owned type.
 
-#### Owned entities capabilities:
+#### Owned entities capabilities
 
 - Owned types can reference other entities, either owned (nested owned types) or non-owned (regular reference navigation properties to other entities).
 
@@ -280,17 +280,17 @@ public class Address
 
 - Eager loading is performed automatically on owned types, i.e. no need to call Include() on the query.
 
-- Can be configured with attribute \[Owned\], as of EF Core 2.1
+- Can be configured with attribute `[Owned]`, from EF Core 2.1 up.
 
-#### Owned entities limitations:
+- Can handle collections of owned types (from 2.2 up).
 
-- You cannot create a DbSet\<T\> of an owned type (by design).
+#### Owned entities limitations
 
-- You cannot call ModelBuilder.Entity\<T\>() on owned types (currently by design).
+- You cannot create a `DbSet<T>` of an owned type (by design).
 
-- No collections of owned types yet (as of EF Core 2.1, but they will be supported in 2.2).
+- You cannot call `ModelBuilder.Entity<T>()` on owned types (currently by design).
 
-- No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (i.e. using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
+- No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (that is, using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
 
 - No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
 
@@ -310,6 +310,9 @@ public class Address
 
 - **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects) \
   <https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/>
+
+- **Owned Entity Types** \
+  [https://docs.microsoft.com/ef/core/modeling/owned-entities](/ef/core/modeling/owned-entities)
 
 - **Shadow Properties** \
   [https://docs.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)

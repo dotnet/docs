@@ -4,7 +4,7 @@ description: This article describes how to determine which versions of the .NET 
 ms.date: 12/02/2019
 author: billwagner
 ms.author: wiwagn
-ms.custom: "seodec18"
+ms.custom: "seodec18,updateeachrelease"
 ---
 
 # How to remove the .NET Core Runtime and SDK

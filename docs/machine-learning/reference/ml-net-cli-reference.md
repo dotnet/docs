@@ -14,7 +14,7 @@ The `auto-train` command is the main command provided by the ML.NET CLI tool. Th
 
 You can generate those assets from your own datasets without coding by yourself, so it also improves your productivity even if you already know ML.NET.
 
-Currently, the ML Tasks supported by the ML.NET CLI are:
+Currently, the following ML Tasks are supported by the ML.NET CLI:
 
 - `binary-classification`
 - `multiclass-classification`
@@ -22,6 +22,7 @@ Currently, the ML Tasks supported by the ML.NET CLI are:
 
 - Future: Other machine learning tasks, such as
   - `recommendation`
+  - `ranking`
   - `anomaly-detection`
   - `clustering`
 
@@ -125,9 +126,7 @@ A single string providing the ML problem to solve. For instance, any of the foll
 - `binary-classification` - Choose if the ML Model result has two possible categorical boolean values (0 or 1).
 - `multiclass-classification` - Choose if the ML Model result has multiple categorical possible values.
 
-In future releases additional ML Tasks and scenarios such as `recommendations`, `clustering` and `ranking` will be supported.
-
- Only one ML task should be provided in this argument.
+Only one ML task should be provided in this argument.
 
  ----------------------------------------------------------
 

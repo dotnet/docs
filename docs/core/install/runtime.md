@@ -39,7 +39,7 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 ru
 
 You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
 
-Installing with a package manager is only supported on the x64 architecture. If you're installing the .NET Core Runtime with a different architecture, such as ARM, follow the [Download and manually install](#download-and-manually-install) instructions below. For more information about what architectures are supported, see [.NET Core dependencies and requirements](dependencies.md).
+Installing it with a package manager is only supported on the x64 architecture. If you're installing the .NET Core Runtime with a different architecture, such as ARM, follow the instructions on the [Download and manually install](#download-and-manually-install) section. For more information about what architectures are supported, see [.NET Core dependencies and requirements](dependencies.md).
 
 ## Download and manually install
 
@@ -52,7 +52,7 @@ export PATH=$PATH:$HOME/dotnet
 ```
 
 > [!TIP]
-> The above `export` commands will only make the .NET Core commands available for the terminal session in which it was run.
+> The preceding `export` commands only make the .NET Core commands available for the terminal session in which it was run.
 >
 > You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
 >

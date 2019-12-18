@@ -1,12 +1,12 @@
 ---
 title: Debug a memory leak tutorial
-description: A tutorial walk-through, debugging a memory leak in .NET Core.
+description: Learn how to debug a memory leak in .NET Core.
 author: sdmaclea
 ms.author: stmaclea
 ms.topic: tutorial
-ms.date: 11/24/2019
+ms.date: 12/17/2019
 ---
-# Tutorial: Debugging a memory leak
+# Tutorial: Debug a memory leak in .NET Core
 
 **This article applies to: ✓** .NET Core 3.0 SDK and later versions
 
@@ -36,7 +36,7 @@ The tutorial assumes the sample and tools are installed and ready to use.
 
 ## Examine managed memory usage
 
-Before you start collecting diagnostics data to help us root cause this scenario, you need to make sure that you're actually seeing a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
+Before you start collecting diagnostics data to help us root cause this scenario, you need to make sure you're actually seeing a memory leak (memory growth). You can use the [dotnet-counters](dotnet-counters.md) tool to confirm that.
 
 Open a console window and navigate to the directory where you downloaded and unzipped the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/). Run the target:
 
@@ -127,9 +127,9 @@ Complete
 
 ### Restart the failed process
 
-Once the dump is collected, you should have sufficient information to diagnose the failed process. If the failed process is running on a production server, now is the ideal time for short-term remediation by restarting the process.
+Once the dump is collected, you should have sufficient information to diagnose the failed process. If the failed process is running on a production server, now it's the ideal time for short-term remediation by restarting the process.
 
-In this tutorial, we're now done with the [Sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/). It can now be terminated. Navigate to the terminal that started the server and press `Control-C`.
+In this tutorial, you're now done with the [Sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) and you can close it. Navigate to the terminal that started the server and press `Control-C`.
 
 ### Analyze the core dump
 
@@ -187,7 +187,7 @@ Statistics:
 Total 206770 objects
 ```
 
-You can now use the `gcroot` command on a `System.String` instance to see how and why the object is rooted. Be patient because this command takes several minutes with a 30 MB heap:
+You can now use the `gcroot` command on a `System.String` instance to see how and why the object is rooted. Be patient because this command takes several minutes with a 30-MB heap:
 
 ```console
 > gcroot -all 00007f6ad09421f8
@@ -232,7 +232,7 @@ You can also delete the dump file that was created.
 
 Congratulations on completing this tutorial.
 
-We're still publishing more diagnostic tutorials. You can read the [draft versions here](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial).
+We're still publishing more diagnostic tutorials. You can read the draft versions on the [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial) repository.
 
 This tutorial covered the basics of key .NET diagnostic tools. For advanced usage, see the following reference documentation:
 

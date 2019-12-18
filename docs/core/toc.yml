@@ -183,7 +183,11 @@
       href: diagnostics/dotnet-dump.md
     - name: dotnet-trace
       href: diagnostics/dotnet-trace.md
-- name: Unit testing
+  - name: .NET Core diagnostics tutorials
+    items:
+    - name: Debugging a memory leak
+      href: diagnostics/debug-memory-leak.md
+- name: Unit Testing
   href: testing/index.md
   items:
   - name: Unit testing best practices

@@ -43,7 +43,7 @@ Installing with a package manager is only supported on the x64 architecture. If 
 
 ## Download and manually install
 
-To extract the SDK and make the commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
+To extract the SDK and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
 
 ```bash
 mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-x64.tar.gz -C $HOME/dotnet
@@ -52,7 +52,7 @@ export PATH=$PATH:$HOME/dotnet
 ```
 
 > [!TIP]
-> The preceding `export` commands only make the .NET Core SDK commands available for the terminal session in which it was run.
+> The preceding `export` commands only make the .NET Core CLI commands available for the terminal session in which it was run.
 >
 > You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
 >

@@ -5,7 +5,7 @@ summary: "Welcome to what's new in .NET docs. Use this page to quickly find the 
 
 metadata:
   title: .NET documentation what's new?
-  description: "Welcome to what's new in .NET docs."
+  description: "Learn about new and updated content in .NET docs."
   ms.topic: landing-page
   ms.date: 12/12/2019
 
@@ -25,7 +25,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: ".NET Docs repositories."
+          - text: ".NET docs repository"
             url: https://github.com/dotnet/docs/blob/master/README.md
           - text: Project structure and labels for issues and pull requests
             url: https://github.com/dotnet/docs/blob/master/styleguide/labels-projects.md
@@ -50,7 +50,7 @@ landingContent:
             url: https://github.com/dotnet/core/blob/master/release-notes/README.md
           - text: ASP.NET Core release notes
             url: https://docs.microsoft.com/aspnet/core/release-notes/aspnetcore-3.1
-          - text: C# compiler (roslyn) release notes
+          - text: C# compiler (Roslyn) release notes
             url: https://github.com/dotnet/roslyn/tree/master/docs/ide
           - text: Visual Studio release notes
             url: https://docs.microsoft.com//visualstudio/releases/2019/release-notes

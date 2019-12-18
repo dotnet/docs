@@ -52,7 +52,7 @@ export PATH=$PATH:$HOME/dotnet
 ```
 
 > [!TIP]
-> The above `export` commands will only make the .NET SDK commands available for the terminal session in which it was run.
+> The preceding `export` commands only make the .NET Core SDK commands available for the terminal session in which it was run.
 >
 > You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
 >

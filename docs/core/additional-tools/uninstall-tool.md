@@ -26,7 +26,14 @@ You can download the .NET Core Uninstall Tool from the [dotnet/cli-lab](https://
 > [!NOTE]
 > The tool requires elevation to uninstall .NET Core SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as *C:\Program Files* on Windows or */usr/local/bin* on macOS. See also [Elevated access for dotnet commands](../tools/elevated-access.md). Detailed installation instructions are available on the [GitHub Releases page](https://github.com/dotnet/cli-lab/releases).
 
-## Use the tool
+## Run the tool
+
+The following steps show the recommended approach for running the uninstall tool:
+
+- [Step 1 - Display installed .NET Core SDKs and runtimes](#step-1---display-installed-net-core-sdks-and-runtimes)
+- [Step 2 - Do a dry run](#step-2---do-a-dry-run)
+- [Step 3 - Uninstall .NET Core SDKs and Runtimes](#step-3---uninstall-net-core-sdks-and-runtimes)
+- [Step 4 - Delete the NuGet fallback folder (optional)](#step-4---delete-the-nuget-fallback-folder-optional)
 
 ### Step 1 - Display installed .NET Core SDKs and runtimes
 

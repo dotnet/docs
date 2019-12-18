@@ -31,6 +31,10 @@ highlightedContent:
     - title: "Create your first web app."
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
+    # Card
+    - title: "What's new in .NET docs"
+      itemType: whats-new
+      url: whats-new/index.yml
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -45,7 +49,7 @@ conceptualContent:
         - url: core/index.md
           itemType: overview
           text: .NET Core overview
-        - url: core/whats-new/dotnet-core-3-0.md
+        - url: core/whats-new/dotnet-core-3-1.md
           itemType: whats-new
           text: What's new in .NET Core 3.1
         - url: standard/tour.md

@@ -491,7 +491,7 @@
             href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
           - name: "How to find the set difference between two lists (LINQ)"
             href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
-          - name: "How to: Sort or Filter Text Data by Any Word or Field (LINQ)"
+          - name: "How to sort or filter text data by any word or field (LINQ)"
             href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
           - name: "How to reorder the fields of a delimited file (LINQ)"
             href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
@@ -499,7 +499,7 @@
             href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
           - name: "How to populate object collections from multiple sources (LINQ)"
             href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
-          - name: "How to: Split a File Into Many Files by Using Groups (LINQ)"
+          - name: "How to split a file into many files by using groups (LINQ)"
             href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
           - name: "How to join content from dissimilar files (LINQ)"
             href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
@@ -575,11 +575,11 @@
                 href: programming-guide/concepts/linq/how-to-catch-parsing-errors.md
               - name: "How to create a tree from an XmlReader"
                 href: programming-guide/concepts/linq/how-to-create-a-tree-from-an-xmlreader.md
-              - name: "How to: Stream XML Fragments from an XmlReader"
+              - name: "How to stream XML fragments from an XmlReader"
                 href: programming-guide/concepts/linq/how-to-stream-xml-fragments-from-an-xmlreader.md
             - name: "How to populate an XML tree with an XmlWriter (LINQ to XML)"
               href: programming-guide/concepts/linq/how-to-populate-an-xml-tree-with-an-xmlwriter-linq-to-xml.md
-            - name: "How to: Validate Using XSD (LINQ to XML)"
+            - name: "How to validate using XSD (LINQ to XML)"
               href: programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md
             - name: Valid Content of XElement and XDocument Objects
               href: programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects3.md
@@ -593,7 +593,7 @@
               href: programming-guide/concepts/linq/how-to-control-namespace-prefixes-linq-to-xml.md
             - name: Scope of Default Namespaces in C#
               href: programming-guide/concepts/linq/scope-of-default-namespaces.md
-            - name: "How to: Write Queries on XML in Namespaces"
+            - name: "How to write queries on XML in namespaces"
               href: programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md
           - name: Serializing XML Trees
             items:
@@ -641,27 +641,27 @@
                 href: programming-guide/concepts/linq/how-to-find-descendants-with-a-specific-element-name.md
               - name: "How to find a single descendant using the descendants method"
                 href: programming-guide/concepts/linq/how-to-find-a-single-descendant-using-the-descendants-method.md
-              - name: "How to: Write Queries with Complex Filtering"
+              - name: "How to write queries with complex filtering"
                 href: programming-guide/concepts/linq/how-to-write-queries-with-complex-filtering.md
               - name: "How to filter on an optional element"
                 href: programming-guide/concepts/linq/how-to-filter-on-an-optional-element.md
               - name: "How to find all nodes in a namespace"
                 href: programming-guide/concepts/linq/how-to-find-all-nodes-in-a-namespace.md
-              - name: "How to: Sort Elements"
+              - name: "How to sort elements"
                 href: programming-guide/concepts/linq/how-to-sort-elements.md
               - name: "How to sort elements on multiple keys"
                 href: programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md
               - name: "How to calculate intermediate values"
                 href: programming-guide/concepts/linq/how-to-calculate-intermediate-values.md
-              - name: "How to: Write a Query that Finds Elements Based on Context"
+              - name: "How to write a query that finds elements based on context"
                 href: programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md
               - name: "How to debug empty query results sets"
                 href: programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md
             - name: Projections and Transformations (LINQ to XML)
               items:
-              - name: "How to: Work with Dictionaries Using LINQ to XML"
+              - name: "How to work with dictionaries using LINQ to XML"
                 href: programming-guide/concepts/linq/how-to-work-with-dictionaries-using-linq-to-xml.md
-              - name: "How to: Transform the Shape of an XML Tree"
+              - name: "How to transform the shape of an XML tree"
                 href: programming-guide/concepts/linq/how-to-transform-the-shape-of-an-xml-tree.md
               - name: "How to control the type of a projection"
                 href: programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md
@@ -683,7 +683,7 @@
                 href: programming-guide/concepts/linq/how-to-create-hierarchy-using-grouping.md
               - name: "How to query LINQ to XML using XPath"
                 href: programming-guide/concepts/linq/how-to-query-linq-to-xml-using-xpath.md
-              - name: "How to: Write a LINQ to XML Axis Method"
+              - name: "How to write a LINQ to XML axis method"
                 href: programming-guide/concepts/linq/how-to-write-a-linq-to-xml-axis-method.md
               - name: "How to perform streaming transformations of text to XML"
                 href: programming-guide/concepts/linq/how-to-perform-streaming-transformations-of-text-to-xml.md
@@ -831,7 +831,7 @@
               href: programming-guide/concepts/linq/programming-with-nodes.md
             - name: Mixed Declarative Code-Imperative Code Bugs (LINQ to XML)
               href: programming-guide/concepts/linq/mixed-declarative-code-imperative-code-bugs-linq-to-xml.md
-            - name: "How to: Stream XML Fragments with Access to Header Information"
+            - name: "How to stream XML fragments with access to header information"
               href: programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md
             - name: "How to perform streaming transform of large XML documents"
               href: programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md
@@ -839,7 +839,7 @@
               href: programming-guide/concepts/linq/how-to-read-and-write-an-encoded-document.md
             - name: Using XSLT to Transform an XML Tree
               href: programming-guide/concepts/linq/using-xslt-to-transform-an-xml-tree.md
-            - name: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style"
+            - name: "How to use annotations to transform LINQ to XML trees in an XSLT style"
               href: programming-guide/concepts/linq/how-to-use-annotations-to-transform-linq-to-xml-trees-in-an-xslt-style.md
             - name: Serializing Object Graphs that Contain XElement Objects
               items:
@@ -893,9 +893,9 @@
       items:
       - name: Overview
         href: programming-guide/concepts/serialization/index.md
-      - name: "How to: Write Object Data to an XML File"
+      - name: "How to write object data to an XML file"
         href: programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md
-      - name: "How to: Read Object Data from an XML File"
+      - name: "How to read object data from an XML file"
         href: programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md
       - name: "Walkthrough: Persisting an Object in Visual Studio"
         href: programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md
@@ -1083,9 +1083,9 @@
       href: programming-guide/delegates/using-delegates.md
     - name: Delegates with Named vs. Anonymous Methods
       href: programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md
-    - name: "How to: Combine Delegates (Multicast Delegates)(C# Programming Guide)"
+    - name: "How to combine delegates (Multicast Delegates) (C# Programming Guide)"
       href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
-    - name: "How to: Declare, Instantiate, and Use a Delegate"
+    - name: "How to declare, instantiate, and use a delegate"
       href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
   - name: Arrays
     items:
@@ -1125,15 +1125,15 @@
     items:
     - name: Overview
       href: programming-guide/events/index.md
-    - name: "How to: Subscribe to and Unsubscribe from Events"
+    - name: "How to subscribe to and unsubscribe from events"
       href: programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md
-    - name: "How to: Publish Events that Conform to .NET Framework Guidelines"
+    - name: "How to publish events that conform to .NET Framework Guidelines"
       href: programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md
-    - name: "How to: Raise Base Class Events in Derived Classes"
+    - name: "How to raise base class events in derived classes"
       href: programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md
-    - name: "How to: Implement Interface Events"
+    - name: "How to implement interface events"
       href: programming-guide/events/how-to-implement-interface-events.md
-    - name: "How to: Implement Custom Event Accessors"
+    - name: "How to implement custom event accessors"
       href: programming-guide/events/how-to-implement-custom-event-accessors.md
   - name: Generics
     items:
@@ -1247,11 +1247,11 @@
       href: programming-guide/exceptions/creating-and-throwing-exceptions.md
     - name: Compiler-Generated Exceptions
       href: programming-guide/exceptions/compiler-generated-exceptions.md
-    - name: "How to: Handle an Exception Using try-catch"
+    - name: "How to handle an exception using try-catch"
       href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
-    - name: "How to: Execute Cleanup Code Using finally"
+    - name: "How to execute cleanup code using finally"
       href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
-    - name: "How to: Catch a non-CLS Exception"
+    - name: "How to catch a non-CLS exception"
       href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
   - name: File System and the Registry
     items:

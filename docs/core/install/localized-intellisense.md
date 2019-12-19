@@ -5,7 +5,7 @@ author: mairaw
 ms.author: mairaw
 ms.date: 12/18/2019
 ---
-# How to install localized IntelliSense files for .NET Core in Visual Studio
+# How to install localized IntelliSense files for .NET Core
 
 IntelliSense is a code-completion aid that is available in different integrated development environments (IDEs), such as Visual Studio. By default, when you're developing .NET Core projects, the SDK only includes the English version of the IntelliSense files. This article explains:
 

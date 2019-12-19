@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "objects, serializing"
 ---
 
-# How to serialize and deserialize JSON in .NET
+# How to serialize and deserialize (marshal and unmarshal) JSON in .NET
 
 This article shows how to use the <xref:System.Text.Json> namespace to serialize and deserialize to and from JavaScript Object Notation (JSON).
 

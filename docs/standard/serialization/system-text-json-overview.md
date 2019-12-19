@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
 ---
 
-# JSON serialization in .NET - overview
+# JSON serialization and deserialization (marshalling and unmarshalling) in .NET - overview
 
 The `System.Text.Json` namespace provides functionality for serializing to and deserializing from JavaScript Object Notation (JSON).
 

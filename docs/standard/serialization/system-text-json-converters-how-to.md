@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "converters"
 ---
 
-# How to write custom converters for JSON serialization in .NET
+# How to write custom converters for JSON serialization (marshalling) in .NET
 
 This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](system-text-json-how-to.md).
 

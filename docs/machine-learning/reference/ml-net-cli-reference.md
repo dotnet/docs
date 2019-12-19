@@ -1,30 +1,17 @@
 ---
-title: The auto-train command in the ML.NET CLI tool
+title: ML.NET CLI Command Reference
 description: Overview, samples, and reference for the auto-train command in the ML.NET CLI tool.
-ms.date: 04/16/2019
-ms.custom: ""
+ms.date: 12/18/2019
 ---
 
-# The 'auto-train' command in ML.NET CLI
+# The ML.NET CLI command reference
+
+The `auto-train` command is the main command provided by the ML.NET CLI tool. The command allows you to generate a good quality ML.NET model (serialized model .zip file) plus the example C# code to run/score that model. In addition, the C# code to create/train that model is also generated for you to research what algorithm and settings it is using for that generated "best model".
 
 > [!NOTE]
 > This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
 
-The `auto-train` command is the main command provided by the ML.NET CLI tool. The command allows you to generate a good quality ML.NET model (serialized model .zip file) plus the example C# code to run/score that model. In addition, the C# code to create/train that model is also generated for you to research what algorithm and settings it is using for that generated "best model".
-
-You can generate those assets from your own datasets without coding by yourself, so it also improves your productivity even if you already know ML.NET.
-
-Currently, the following ML Tasks are supported by the ML.NET CLI:
-
-- `binary-classification`
-- `multiclass-classification`
-- `regression`
-
-- Future: Other machine learning tasks, such as
-  - `recommendation`
-  - `ranking`
-  - `anomaly-detection`
-  - `clustering`
+## Overview
 
 Example of usage on the command prompt:
 
@@ -38,19 +25,9 @@ The `mlnet auto-train` command generates the following assets:
 - C# code to run/score that generated model (To make predictions in your end-user apps with that model).
 - C# code with the training code used to generate that model (Learning purposes).
 
-The first two assets can directly be used in your end-user apps (ASP.NET Core web app, services, desktop app, etc.) to make predictions with that generated ML model.
+The first two assets can directly be used in your end-user apps (ASP.NET Core web app, services, desktop app and more) to make predictions with the model.
 
 The third asset, the training code, shows you what ML.NET API code was used by the CLI to train the generated model, so you can investigate what specific trainer/algorithm and hyper-parameters were selected by the CLI and the ML.NET AutoML engine.
-
-## The 'auto-train' command uses the AutoML engine
-
-The CLI uses the ML.NET AutoML engine (NuGet package) to intelligently search for the best quality models, as shown in the following diagram:
-
-![image](./media/ml-net-automl-working-diagram.png "AutoML engine working inside the ML.NET CLI")
-
-When running the ML.NET CLI tool with the `auto-train- command, you'll see the tool trying many iterations with different algorithms and combinations of configuration.
-
-## Reference for 'auto-train' command
 
 ## Examples
 
@@ -114,7 +91,7 @@ Create and train a binary-classification model with a train dataset, a test data
 
 Invalid input options should cause the CLI tool to emit a list of valid inputs and an error message explaining which arg is missing, if that is the case.
 
-## Options
+## Task
 
  ----------------------------------------------------------
 
@@ -128,6 +105,8 @@ A single string providing the ML problem to solve. For instance, any of the foll
 
 Only one ML task should be provided in this argument.
 
+## Dataset
+
  ----------------------------------------------------------
 
 `--dataset | -d` (string)
@@ -138,6 +117,8 @@ This argument provides the filepath to either one of the following options:
 
 - *B: The training dataset file:* If the user is also providing datasets for model validation (using `--test-dataset` and optionally `--validation-dataset`), then the `--dataset` argument means to only have the "training dataset". For example, when using an 80% - 20% approach to validate the quality of the model and to obtain accuracy metrics, the "training dataset" will have 80% of the data and the "test dataset" would have 20% of the data.
 
+## Test dataset
+
 ----------------------------------------------------------
 
 `--test-dataset | -t` (string)
@@ -147,6 +128,8 @@ File path pointing to the test dataset file, for example when using an 80% - 20%
 If using `--test-dataset`, then `--dataset` is also required.
 
 The `--test-dataset` argument is optional unless the --validation-dataset is used. In that case, the user must use the three arguments.
+
+## Validation dataset
 
 ----------------------------------------------------------
 
@@ -175,6 +158,8 @@ Hence, the separation of data could be 80/10/10 or 75/15/10. For example:
 
 In any case, those percentages will be decided by the user using the CLI who will provide the files already split.
 
+## Label column name
+
 ----------------------------------------------------------
 
 `--label-column-name | -n` (string)
@@ -182,6 +167,8 @@ In any case, those percentages will be decided by the user using the CLI who wil
 With this argument, a specific objective/target column (the variable that you want to predict) can be specified by using the column's name set in the dataset's header.
 
 This argument is used only for supervised ML tasks such as a *classification problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
+
+## Label column index
 
 ----------------------------------------------------------
 
@@ -192,6 +179,8 @@ With this argument, a specific objective/target column (the variable that you wa
 *Note:* If the user is also using the `--label-column-name`, the `--label-column-name` is the one being used.
 
 This argument is used only for supervised ML task such as a *classification problem*. It cannot be used for unsupervised ML Tasks such as *clustering*.
+
+## Ignore columns
 
 ----------------------------------------------------------
 
@@ -204,6 +193,8 @@ Specify the columns names that you want to ignore. Use ', ' (comma with space) o
 Example:
 
 `--ignore-columns email, address, id, logged_in`
+
+## Has header
 
 ----------------------------------------------------------
 
@@ -219,6 +210,8 @@ The by default value is `true` if this argument is not specified by the user.
 
 In order to use the `--label-column-name` argument, you need to have a header in the dataset file and `--has-header` set to `true` (which is by default).
 
+## Max exploration time
+
 ----------------------------------------------------------
 
 `--max-exploration-time | -x` (string)
@@ -229,6 +222,7 @@ This argument sets the maximum time (in seconds) for the process to explore mult
 
 The needed time for iterations can vary depending on the size of the dataset.
 
+## Cache
 ----------------------------------------------------------
 
 `--cache | -c` (string)
@@ -247,6 +241,8 @@ You can specify the following values:
 
 If you don't specify the `--cache` parameter, then the cache `auto` configuration will be used by default.
 
+## Name
+
 ----------------------------------------------------------
 
 `--name | -N` (string)
@@ -255,11 +251,15 @@ The name for the created output project or solution. If no name is specified, th
 
 The ML.NET model file (.ZIP file) will get the same name, as well.
 
+## Output path
+
 ----------------------------------------------------------
 
 `--output-path | -o` (string)
 
 Root location/folder to place the generated output. The default is the current directory.
+
+## Verbosity
 
 ----------------------------------------------------------
 
@@ -275,6 +275,7 @@ Allowed values are:
 
 By default, the CLI tool should show some minimum feedback (minimal) when working, such as mentioning that it is working and if possible how much time is left or what % of the time is completed.
 
+## Help
 ----------------------------------------------------------
 
 `-h|--help`

@@ -12,8 +12,7 @@ ms.date: 06/10/2019
 - [source compatibility](#source-compatibility)
 - [design-time compatibility](#design-time-compatibility)
 - [backwards compatibility](#backwards-compatibility)
-
-[Forward compatibility](#forward-compatibility) is not a goal of .NET Core.
+- [forward compatibility](#forward-compatibility) (not a goal of .NET Core)
 
 ## Behavioral change
 

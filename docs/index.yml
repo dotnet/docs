@@ -31,6 +31,10 @@ highlightedContent:
     - title: "Create your first web app."
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
+    # Card
+    - title: "What's new in .NET docs"
+      itemType: whats-new
+      url: whats-new/index.yml
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -73,6 +77,12 @@ conceptualContent:
         - url: standard/net-standard.md
           itemType: overview
           text: .NET Standard
+        - url: /aspnet/core/
+          itemType: overview
+          text: ASP.NET Core
+        - url: /ef/core/
+          itemType: overview
+          text: Entity Framework Core
         - url: standard/get-started.md
           itemType: get-started
           text: Get started

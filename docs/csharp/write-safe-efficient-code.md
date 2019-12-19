@@ -132,7 +132,7 @@ public struct Point3D
 }
 ```
 
-You don't want callers modifying the origin, so you should return the value by `readonly ref`:
+You don't want callers modifying the origin, so you should return the value by `ref readonly`:
 
 ```csharp
 public struct Point3D
@@ -147,7 +147,7 @@ public struct Point3D
 
 Returning `ref readonly` enables you to save copying larger structures and preserve the immutability of your internal data members.
 
-At the call site, callers make the choice to use the `Origin` property as a `readonly ref` or as a value:
+At the call site, callers make the choice to use the `Origin` property as a `ref readonly` or as a value:
 
 [!code-csharp[AssignRefReadonly](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 

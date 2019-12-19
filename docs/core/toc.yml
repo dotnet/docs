@@ -185,7 +185,11 @@
       href: diagnostics/dotnet-dump.md
     - name: dotnet-trace
       href: diagnostics/dotnet-trace.md
-- name: Unit testing
+  - name: .NET Core diagnostics tutorials
+    items:
+    - name: Debugging a memory leak
+      href: diagnostics/debug-memory-leak.md
+- name: Unit Testing
   href: testing/index.md
   items:
   - name: Unit testing best practices
@@ -328,6 +332,8 @@
 - name: .NET Core additional tools
   href: additional-tools/index.md
   items:
+  - name: .NET Core Uninstall Tool
+    href: additional-tools/uninstall-tool.md
   - name: WCF Web Service Reference Provider
     href: additional-tools/wcf-web-service-reference-guide.md
   - name: dotnet-svcutil

@@ -17,7 +17,7 @@ Central to ML.NET is a machine learning **model**. The model specifies the steps
 
 Once you have a model, you can add it to your application to make the predictions.
 
-ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, except for TensorFlow, LightGBM, and ONNX related functionality.
+ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, except for TensorFlow, LightGBM, and ONNX-related functionality.
 
 Examples of the type of predictions that you can make with ML.NET:
 
@@ -238,7 +238,7 @@ Each transformation in the pipeline has an input schema (data names, types, and 
 
 If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
 
-A data view object has columns and rows. Each column has a name and a type and a length. For example the input columns in the house price example are **Size** and **Price**. They are both type and they are scalar quantities rather than vector ones.
+A data view object has columns and rows. Each column has a name and a type and a length. For example, the input columns in the house price example are **Size** and **Price**. They are both type and they are scalar quantities rather than vector ones.
 
    ![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
 

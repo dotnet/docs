@@ -96,6 +96,6 @@ To explore and understand the metrics that are output by the CLI, see [Metrics f
 ## See also
 
 - [How to install the ML.NET CLI tool](how-to-guides/install-ml-net-cli.md)
-- [Tutorial: Auto generate a binary classifier using the ML.NET CLI](tutorials/mlnet-cli.md)
+- [Tutorial: Auto generate a binary classifier using the ML.NET CLI](tutorials/sentiment-analysis-cli.md)
 - [ML.NET CLI command reference](reference/ml-net-cli-reference.md)
 - [Telemetry in ML.NET CLI](resources/ml-net-cli-telemetry.md)

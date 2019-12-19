@@ -130,7 +130,7 @@ In this case, the .NET Core CLI doesn't add this location automatically to the P
 
 ## Next steps
 
-- [Get started with the ML.NET CLI tool](../tutorials/mlnet-cli.md)
+- [Get started with the ML.NET CLI tool](../tutorials/sentiment-analysis-cli.md)
 - [How to automatically train models with the ML.NET CLI tool](../automate-training-with-cli.md)
 - [ML.NET CLI auto-train command reference guide](../reference/ml-net-cli-reference.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)

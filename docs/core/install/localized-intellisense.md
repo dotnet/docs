@@ -7,15 +7,15 @@ ms.date: 12/18/2019
 ---
 # How to install localized IntelliSense files for .NET Core
 
-IntelliSense is a code-completion aid that is available in different integrated development environments (IDEs), such as Visual Studio. By default, when you're developing .NET Core projects, the SDK only includes the English version of the IntelliSense files. This article explains:
+[IntelliSense](/visualstudio/ide/using-intellisense) is a code-completion aid that is available in different integrated development environments (IDEs), such as Visual Studio. By default, when you're developing .NET Core projects, the SDK only includes the English version of the IntelliSense files. This article explains:
 
 - How to install the localized version of those files.
-- Modify the Visual Studio installation to use a different language.
+- How to modify the Visual Studio installation to use a different language.
 
 ## Prerequisites
 
-- [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core) or later versions.
-- [Visual Studio 2019 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later versions.
+- [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
+- [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or a later version.
 
 ## Download and install the localized IntelliSense files
 
@@ -28,9 +28,9 @@ IntelliSense is a code-completion aid that is available in different integrated 
 
 1. Extract the contents of the zip file.
 
-1. Navigate to the .NET Core installation folder. By default, it's under *C:\Program Files\dotnet\packs*.
+1. Navigate to the .NET Core installation folder. By default, it's under *%ProgramFiles%\dotnet\packs*.
 
-   - Choose which SDK you want to install the IntelliSense for and navigate to the associated path. You have the following options:
+   - Choose which SDK you want to install the IntelliSense for, and navigate to the associated path. You have the following options:
 
       | SDK type        | Path                               |
       | --------------- | ---------------------------------- |
@@ -63,11 +63,11 @@ IntelliSense is a code-completion aid that is available in different integrated 
 
 ## Modify Visual Studio language
 
-For Visual Studio to use a different language for IntelliSense, it requires you to install the language pack you want to use. This can be done [during installation](/visualstudio/install/install-visual-studio#step-6---install-language-packs-optional) or at a later time by modifying the Visual Studio installation. If you already have Visual Studio configured to the language of your choice, your IntelliSense installation is ready.
+For Visual Studio to use a different language for IntelliSense, install the appropriate language pack. This can be done [during installation](/visualstudio/install/install-visual-studio#step-6---install-language-packs-optional) or at a later time by modifying the Visual Studio installation. If you already have Visual Studio configured to the language of your choice, your IntelliSense installation is ready.
 
 ### Install the language pack
 
-If you haven't installed the desired language pack during installation, update your installation as follows to get the language pack installed:
+If you didn't install the desired language pack during setup, update Visual Studio as follows to install the language pack:
 
 > [!IMPORTANT]
 > To install, update, or modify Visual Studio, you must log on with an account that has administrative permissions. For more information, see [User permissions and Visual Studio](/visualstudio/ide/user-permissions-and-visual-studio).
@@ -85,7 +85,7 @@ If you haven't installed the desired language pack during installation, update y
 
    You might have to update the installer before continuing. If so, follow the prompts.
 
-1. In the installer, look for the edition of Visual Studio that you installed, and then choose **Modify**.
+1. In the installer, look for the edition of Visual Studio that you want to add the language pack to, and then choose **Modify**.
 
    ![Update or modify Visual Studio](./media/localized-intellisense/vs-installer-modify.png)
 
@@ -101,11 +101,11 @@ If you haven't installed the desired language pack during installation, update y
 
 ### Modify language settings in Visual Studio
 
-Once you have the desired language packs installed, modify your Visual Studio settings to use a different language:
+Once you've installed the desired language packs, modify your Visual Studio settings to use a different language:
 
 1. Open Visual Studio.
 
-1. Choose **Continue without code**.
+1. On the start window, choose **Continue without code**.
 
 1. On the main menu, select **Tools** > **Options**. The Options dialog opens.
 

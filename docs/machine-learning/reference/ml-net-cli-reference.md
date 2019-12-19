@@ -16,7 +16,7 @@ The `auto-train` command is the main command provided by the ML.NET CLI tool. Th
 Example of usage on the command prompt:
 
 ```console
-> mlnet auto-train --task regression --dataset "cars.csv" --label-column-name price
+mlnet auto-train --task regression --dataset "cars.csv" --label-column-name price
 ```
 
 The `mlnet auto-train` command generates the following assets:
@@ -34,19 +34,19 @@ The third asset, the training code, shows you what ML.NET API code was used by t
 Simplest CLI command for a binary classification problem (AutoML will need to infer most of the configuration from the provided data):
 
 ```console
-> mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
+mlnet auto-train --task binary-classification --dataset "customer-feedback.tsv" --label-column-name Sentiment
 ```
 
 Another simple CLI command for a regression problem:
 
 ``` console
-> mlnet auto-train --task regression --dataset "cars.csv" --label-column-name Price
+mlnet auto-train --task regression --dataset "cars.csv" --label-column-name Price
 ```
 
 Create and train a binary-classification model with a train dataset, a test dataset, and further customization explicit arguments:
 
 ```console
-> mlnet auto-train --task binary-classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-column-name "InsuranceRisk" --cache on --max-exploration-time 600
+mlnet auto-train --task binary-classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-column-name "InsuranceRisk" --cache on --max-exploration-time 600
 ```
 
 ## Name
@@ -56,7 +56,7 @@ Create and train a binary-classification model with a train dataset, a test data
 ## Synopsis
 
 ```console
-> mlnet auto-train
+mlnet auto-train
 
 --task | --mltask | -T <value>
 

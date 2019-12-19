@@ -48,6 +48,7 @@ IntelliSense is a code-completion aid that is available in different integrated 
 
    | Language              | Folder name |
    | --------------------- | ----------- |
+   | Brazilian Portuguese  | *pt-br*     |
    | Chinese (simplified)  | *zh-hans*   |
    | Chinese (traditional) | *zh-hant*   |
    | French                | *fr*        |
@@ -55,7 +56,6 @@ IntelliSense is a code-completion aid that is available in different integrated 
    | Italian               | *it*        |
    | Japanese              | *ja*        |
    | Korean                | *ko*        |
-   | Brazilian Portuguese  | *pt-br*     |
    | Russian               | *ru*        |
    | Spanish               | *es*        |
 
@@ -91,7 +91,7 @@ If you haven't installed the desired language pack during installation, update y
 
    > [!IMPORTANT]
    > If you don't see a **Modify** button but you see an **Update** one instead, you need to update your Visual Studio before you can modify your installation.
-   > Choose **Update**. After the update is finished, the **Modify** button should appear.
+   > After the update is finished, the **Modify** button should appear.
 
 1. In the **Language packs** tab, select or deselect the languages you want to install or uninstall.
 

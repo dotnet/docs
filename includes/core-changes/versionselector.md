@@ -3,6 +3,7 @@
 > - [(3.0 | 3.1)](~/docs/core/compatibility/3.0-3.1.md)
 > - [(2.2 | 3.1)](~/docs/core/compatibility/2.2-3.1.md)
 > - [(2.2 | 3.0)](~/docs/core/compatibility/2.2-3.0.md)
+> - [(.NET Framework | .NET Core)](~/docs/core/compatibility/fx-core.md)
 
 <!--
 

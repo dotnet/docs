@@ -29,7 +29,7 @@ Download the [Visual Studio for Mac installer](https://visualstudio.microsoft.co
 
 ## Creating a project
 
-1. Select **New** on the Start Window.
+1. Select **New** on the start window.
 
    ![New button on the Visual Studio for Mac Start screen](./media/using-on-mac-vs/visual-studio-mac-new-project.png)
 

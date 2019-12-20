@@ -1,11 +1,11 @@
 ---
-title: Building a complete .NET Core solution on macOS using Visual Studio for Mac
+title: Build a complete .NET Core solution using Visual Studio for Mac
 description: This article walks you through building a .NET Core solution that includes a reusable library and unit testing.
 author: mairaw
 ms.date: 12/19/2019
 ms.custom: seodec18
 ---
-# Building a complete .NET Core solution on macOS using Visual Studio for Mac
+# Build a complete .NET Core solution on macOS using Visual Studio for Mac
 
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This article walks you through building a .NET Core solution that includes a reusable library and unit testing.
 
@@ -22,11 +22,11 @@ This tutorial shows you how to create an application that accepts a search word 
 - [.NET Core SDK 3.1 or later](https://dotnet.microsoft.com/download)
 - [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
 
-For more information on prerequisites, see the [.NET Core dependencies and requirements](../install/dependencies.md?tabs=netcore31&pivots=os-macos). For the full system requirements of Visual Studio 2019 for Mac, see [Visual Studio 2019 for Mac Product Family System Requirements](/visualstudio/productinfo/vs2019-system-requirements-mac).
+For more information on prerequisites, see the [.NET Core dependencies and requirements](../install/dependencies.md?pivots=os-macos). For the full system requirements of Visual Studio 2019 for Mac, see [Visual Studio 2019 for Mac Product Family System Requirements](/visualstudio/productinfo/vs2019-system-requirements-mac).
 
 ## Building a library
 
-1. On the Welcome screen, select **New Project**. In the **New Project** dialog under the **.NET Core** node, select the **.NET Standard Library** template. This command creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.1 of the [.NET Standard](../../standard/net-standard.md). If you have multiple versions of the .NET Core SDK installed, you can choose different versions of .NET Standard for your library. Choose ".NET Standard 2.1" and select **Next**.
+1. On the start window, select **New Project**. In the **New Project** dialog under the **.NET Core** node, select the **.NET Standard Library** template. This command creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.1 of the [.NET Standard](../../standard/net-standard.md). If you have multiple versions of the .NET Core SDK installed, you can choose different versions of .NET Standard for your library. Choose ".NET Standard 2.1" and select **Next**.
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio for Mac New project dialog](./media/using-on-mac-vs-full-solution/visual-studio-mac-new-project.png)

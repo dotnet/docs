@@ -1,6 +1,5 @@
 ---
-title: Batching - Microsoft.Data.Sqlite
-author: bricelam
+title: Batching
 ms.date: 12/13/2019
 description: Learn how to execute a batch of SQL statements in a single command.
 ---

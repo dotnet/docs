@@ -1,6 +1,5 @@
 ---
-title: Custom SQLite Versions - Microsoft.Data.Sqlite
-author: bricelam
+title: Custom SQLite Versions
 ms.date: 12/13/2019
 description: Learn how to use a custom version of the native SQLite library.
 ---

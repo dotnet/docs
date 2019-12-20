@@ -1,6 +1,5 @@
 ---
-title: Collation - Microsoft.Data.Sqlite
-author: bricelam
+title: Collation
 ms.date: 12/13/2019
 description: Learn how to create a custom collating sequence.
 ---

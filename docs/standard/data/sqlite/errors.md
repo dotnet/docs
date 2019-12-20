@@ -1,6 +1,5 @@
 ---
-title: Database Errors - Microsoft.Data.Sqlite
-author: bricelam
+title: Database Errors
 ms.date: 12/13/2019
 description: Describes how database errors and retires are handled by the library.
 ---

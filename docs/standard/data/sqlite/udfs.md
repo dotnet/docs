@@ -1,6 +1,5 @@
 ---
-title: User-Defined Functions - Microsoft.Data.Sqlite
-author: bricelam
+title: User-Defined Functions
 ms.date: 12/13/2019
 description: Learn how to create user-defined scalar and aggregate functions.
 ---

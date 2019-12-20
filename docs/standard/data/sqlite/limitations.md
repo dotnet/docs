@@ -1,6 +1,5 @@
 ---
-title: ADO.NET Limitations - Microsoft.Data.Sqlite
-author: bricelam
+title: ADO.NET Limitations
 ms.date: 12/13/2019
 description: Describes some of the ADO.NET limitations you might encounter.
 ---

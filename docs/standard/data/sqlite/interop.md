@@ -1,6 +1,5 @@
 ---
-title: Interoperability - Microsoft.Data.Sqlite
-author: bricelam
+title: Interoperability
 ms.date: 12/13/2019
 description: Learn how to interoperate with other SQLite libraries.
 ---

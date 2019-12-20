@@ -1,6 +1,5 @@
 ---
-title: Xamarin Limitations - Microsoft.Data.Sqlite
-author: bricelam
+title: Xamarin Limitations
 ms.date: 12/13/2019
 description: Describes some of the limitations you will encounter when using Xamarin.
 ---

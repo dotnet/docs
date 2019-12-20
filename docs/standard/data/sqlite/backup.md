@@ -1,6 +1,5 @@
 ---
-title: Online Backup - Microsoft.Data.Sqlite
-author: bricelam
+title: Online Backup
 ms.date: 12/13/2019
 description: Learn how to use SQLite's online backup feature.
 ---

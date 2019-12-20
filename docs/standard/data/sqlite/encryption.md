@@ -1,6 +1,5 @@
 ---
-title: Encryption - Microsoft.Data.Sqlite
-author: bricelam
+title: Encryption
 ms.date: 12/13/2019
 description: Learn how to encrpt your database file.
 ---

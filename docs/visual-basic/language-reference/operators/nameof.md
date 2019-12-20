@@ -5,7 +5,7 @@ ms.date: 10/27/2019
 helpviewer_keywords:
   - "NameOf operator [Visual Basic]"
 ---
-# NameOf operator
+# NameOf operator - Visual Basic
 
 The `NameOf` operator obtains the name of a variable, type, or member as the string constant:
 

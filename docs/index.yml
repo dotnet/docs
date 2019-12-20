@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 12/05/2019
+  ms.date: 12/19/2019
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -105,6 +105,9 @@ conceptualContent:
         - url: core/porting/index.md
           itemType: how-to-guide
           text: Porting from .NET Framework to .NET Core
+        - url: core/compatibility/index.md
+          itemType: concept
+          text: .NET Core breaking changes
         - url: desktop-wpf/overview/index.md
           itemType: overview
           text: Create .NET Core desktop apps for Windows

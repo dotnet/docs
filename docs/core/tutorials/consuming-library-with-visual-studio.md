@@ -13,23 +13,25 @@ Once you've created a .NET Standard class library, tested it, and built a releas
 - If the library will be used by a single solution (for example, if it's a component in a single large application), you can include it as a project in your solution.
 - If the library will be publicly available, you can distribute it as a NuGet package.
 
-## Include a library as a project in a solution
+## Add a console app to your solution
 
 Just as you included unit tests in the same solution as your class library in [Test a .NET Standard library with .NET Core in Visual Studio 2017](testing-library-with-visual-studio.md), you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
-<!-- markdownlint-disable MD025 -->
+## [C#](#tab/csharp)
 
-# [C#](#tab/csharp)
+1. Open the `ClassLibraryProjects` solution you created in the [Build a .NET Standard library in Visual Studio](library-with-visual-studio.md) article.
 
-1. Open the `ClassLibraryProjects` solution you created in the [Build a .NET Standard library in Visual Studio](library-with-visual-studio.md) article. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
+1. Add a new C# .NET Core console application named "ShowCase" to the solution.
 
-1. In the **Add New Project** dialog, expand the **Visual C#** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
+   1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
 
-   ![Add New Project dialog in Visual Studio](./media/consuming-library-with-visual-studio/add-new-project-dialog.png)
+   1. On the **Add a new project** page, enter **console** in the search box. Choose **C#** from the Language list,  and then choose **All platforms** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
+
+   1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then, choose **Create**.
 
 1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu.
 
-   ![Visual Studio project context menu to set startup project- C#](./media/consuming-library-with-visual-studio/set-startup-project-context-menu.png)
+   ![Visual Studio project context menu to set startup project](./media/consuming-library-with-visual-studio/set-startup-project-context-menu.png)
 
 1. Initially, your project doesn't have access to your class library. To allow it to call methods in your class library, you create a reference to the class library. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node and select **Add Reference**.
 
@@ -37,21 +39,21 @@ Just as you included unit tests in the same solution as your class library in [T
 
 1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, and select the **OK** button.
 
-   ![Visual Studio Manage references dialog - C#](./media/consuming-library-with-visual-studio/manage-project-references.png)
+   ![Reference Manager dialog with StringLibrary selected](./media/consuming-library-with-visual-studio/manage-project-references.png)
 
 1. In the code window for the *Program.cs* file, replace all of the code with the following code:
 
-   [!code-csharp[UsingClassLib#1](~/samples/snippets/csharp/getting_started/with_visual_studio_2019/showcase.cs)]
+   [!code-csharp[UsingClassLib#1](~/samples/snippets/csharp/getting_started/with_visual_studio_2017/showcase.cs)]
 
-   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it is greater than or equal to 25, the code clears the console window and displays a message to the user.
+   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
-   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application terminates, and the console window closes.
+   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
 
 1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
    ![Visual Studio project toolbar showing Debug button - C#](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
 
-# [Visual Basic](#tab/vb)
+## [Visual Basic](#tab/vb)
 
 1. Open the `ClassLibraryProjects` solution you created in the [Building a class Library with .NET Standard in Visual Studio](library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
 
@@ -75,7 +77,7 @@ Just as you included unit tests in the same solution as your class library in [T
 
     [!code-vb[UsingClassLib#1](~/samples/snippets/core/tutorials/vb-library-with-visual-studio/showcase.vb)]
 
-   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it is greater than or equal to 25, the code clears the console window and displays a message to the user.
+   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
    The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
 
@@ -89,7 +91,7 @@ You can debug and publish the application that uses this library by following th
 
 ## Distribute the library in a NuGet package
 
-You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../tools/dotnet.md):
+You can make your class library widely available by publishing it as a NuGet package. Visual Studio doesn't support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../tools/dotnet.md):
 
 1. Open a console window.
 

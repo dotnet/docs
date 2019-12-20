@@ -1,33 +1,33 @@
 - name: Overview
   href: index.md
-- name: Connection Strings
+- name: Connection strings
   href: connection-strings.md
-- name: Data Types
-  href: data-types.md
+- name: Data types
+  href: types.md
 - name: Parameters
   href: parameters.md
-- name: Database Errors
-  displayName: Busy, Locked, Retries, Timeouts
-  href: errors.md
+- name: Database errors
+  displayName: Busy, locked, retries, timeouts
+  href: database-errors.md
 - name: Transactions
   href: transactions.md
 - name: Batching
   href: batching.md
 - name: Metadata
   href: metadata.md
-- name: SQLite Features
+- name: SQLite features
   items:
-    - name: In-Memory Databases
-      href: memory.md
+    - name: In-Memory databases
+      href: in-memory-databases.md
     - name: Encryption
       href: encryption.md
-    - name: Online Backup
+    - name: Online backup
       href: backup.md
-    - name: User-Defined Functions
+    - name: User-defined functions
       displayName: UDFs
-      href: udfs.md
-    - name: Custom SQLite Versions
-      href: custom-sqlite.md
+      href: user-defined-functions.md
+    - name: Custom SQLite versions
+      href: custom-versions.md
     - name: Collation
       href: collation.md
     - name: BLOB I/O
@@ -43,12 +43,12 @@
       href: limitations.md
     - name: Async
       href: async.md
-    - name: Bulk Insert
+    - name: Bulk insert
       href: bulk-insert.md
     - name: Entity Framework Core
       href: /ef/core/providers/sqlite/limitations
     - name: Dapper
-      href: dapper.md
+      href: dapper-limitations.md
     - name: System.Data.SQLite
       href: compare.md
     - name: Xamarin

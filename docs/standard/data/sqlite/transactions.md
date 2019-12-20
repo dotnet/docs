@@ -9,9 +9,9 @@ Transactions let you group multiple SQL statements into a single unit of work th
 
 ## Concurrency
 
-In SQLite, only one transaction is allowed to have changes pending in the database at a time. Because of this, calls to [BeginTransaction](/dotnet/api/microsoft.data.sqlite.sqliteconnection.begintransaction) and the Execute methods on [SqliteCommand](/dotnet/api/microsoft.data.sqlite.sqlitecommand) may time out if another transaction takes too long to complete.
+In SQLite, only one transaction is allowed to have changes pending in the database at a time. Because of this, calls to <xref:Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction%2A> and the `Execute` methods on <xref:Microsoft.Data.Sqlite.SqliteCommand> may time out if another transaction takes too long to complete.
 
-For more information about locking, retries, and timeouts, see [Database Errors](errors.md).
+For more information about locking, retries, and timeouts, see [Database errors](database-errors.md).
 
 ## Isolation levels
 
@@ -25,7 +25,7 @@ A *nonrepeatable read* occurs when a transaction queries same row twice, but the
 
 *Phantoms* are rows that get changed or added to meet the where clause of a query during a transaction. If allowed, the same query could return different rows when executed twice in the same transaction.
 
-Microsoft.Data.Sqlite treats the IsolationLevel passed to [BeginTransaction](/dotnet/api/microsoft.data.sqlite.sqliteconnection.begintransaction) as a minimum level. The actual isolation level will be promoted to either read uncommitted or serializable.
+Microsoft.Data.Sqlite treats the IsolationLevel passed to <xref:Microsoft.Data.Sqlite.SqliteConnection.BeginTransaction%2A> as a minimum level. The actual isolation level will be promoted to either read uncommitted or serializable.
 
 The following code simulates a dirty read. Note, the connection string must include `Cache=Shared`.
 

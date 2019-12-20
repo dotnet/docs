@@ -1,9 +1,9 @@
 ---
-title: Connection Strings
+title: Connection strings
 ms.date: 12/13/2019
 description: The supported keywords and values of connection strings.
 ---
-# Connection Strings
+# Connection strings
 
 A connection string is used to specify how to connect to the database. Connection strings in Microsoft.Data.Sqlite
 follow the standard [ADO.NET syntax](../../../framework/data/adonet/connection-strings.md) as a semicolon-separated list of
@@ -13,7 +13,7 @@ keywords and values.
 
 The following connection string keyword can be used with Microsoft.Data.Sqlite.
 
-### Data Source
+### Data source
 
 The path to the database file. *DataSource* (without a space) and *Filename* are aliases of this keyword.
 
@@ -21,7 +21,7 @@ SQLite treats paths relative to the current working directory. Absolute paths ca
 
 If **empty**, SQLite creates a temporary on-disk database that gets deleted when the connection is closed.
 
-If `:memory:`, an in-memory database is used. For more information, see [In-Memory Databases](memory.md).
+If `:memory:`, an in-memory database is used. For more information, see [In-Memory databases](in-memory-databases.md).
 
 Paths that start with the `|DataDirectory|` substitution string are treated the same as relative paths. If set, paths are made relative to the DataDirectory application domain property value.
 
@@ -68,7 +68,7 @@ A value indicating whether to enable foreign key constraints.
 There's no need enable foreign keys if, like in e_sqlite3, SQLITE_DEFAULT_FOREIGN_KEYS was used to compile the native
 SQLite library.
 
-### Recursive Triggers
+### Recursive triggers
 
 A value indicating whether to enable recursive triggers.
 
@@ -79,7 +79,7 @@ A value indicating whether to enable recursive triggers.
 
 ## Connection string builder
 
-You can use [SqliteConnectionStringBuilder](/dotnet/api/microsoft.data.sqlite.sqliteconnectionstringbuilder) as a strongly-typed way of creating connection strings. It can also be used to prevent connection string injection attacks.
+You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a strongly-typed way of creating connection strings. It can also be used to prevent connection string injection attacks.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 
@@ -128,5 +128,5 @@ Data Source=Sharable;Mode=Memory;Cache=Shared
 ## See also
 
 * [Connection Strings in ADO.NET](../../../framework/data/adonet/connection-strings.md)
-* [In-Memory Databases](memory.md)
+* [In-Memory databases](in-memory-databases.md)
 * [Transactions](transactions.md)

@@ -11,11 +11,11 @@ Parameters can be prefixed with either `:`, `@`, or `$`.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/HelloWorldSample/Program.cs?name=snippet_Parameter)]
 
-See [Data Types](data-types.md) for details about how .NET values are mapped to SQLite values.
+See [Data types](types.md) for details about how .NET values are mapped to SQLite values.
 
 ## Truncation
 
-Use the [Size](/dotnet/api/microsoft.data.sqlite.sqliteparameter.size) property to truncate TEXT and BLOB values.
+Use the <xref:Microsoft.Data.Sqlite.SqliteParameter.Size> property to truncate TEXT and BLOB values.
 
 ```csharp
 // Truncate name to 30 characters
@@ -24,9 +24,9 @@ command.Parameters.AddWithValue("$name", name).Length = 30;
 
 ## Alternative types
 
-Sometimes, you may want to use an alternative SQLite type. Do this by setting the [SqliteType](/dotnet/api/microsoft.data.sqlite.sqliteparameter.sqlitetype) property.
+Sometimes, you may want to use an alternative SQLite type. Do this by setting the <xref:Microsoft.Data.Sqlite.SqliteParameter.SqliteType> property.
 
-The following alternative type mappings can be used. See [Data Types](data-types.md) for the default mappings.
+The following alternative type mappings can be used. For the default mappings, see [Data types](types.md).
 
 | Value          | SqliteType | Remarks          |
 | -------------- | ---------- | ---------------- |
@@ -44,4 +44,4 @@ SQLite doesn't support output parameters. Return values in the query results ins
 
 ## See also
 
-* [Data Types](data-types.md)
+* [Data types](types.md)

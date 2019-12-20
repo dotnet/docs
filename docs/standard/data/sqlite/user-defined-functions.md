@@ -1,17 +1,17 @@
 ---
-title: User-Defined Functions
+title: User-defined functions
 ms.date: 12/13/2019
 description: Learn how to create user-defined scalar and aggregate functions.
 ---
-# User-Defined Functions
+# User-defined functions
 
 Most databases have a procedural dialect of SQL that you can use to define your own functions. SQLite however, runs in-process with your app. Instead of inventing a new dialect of SQL, they cleverly just let you use the programming language of your app.
 
 ## Scalar functions
 
-Scalar functions return a single, scalar value for each row in a query. Define new scalar functions and override the built-in ones using [CreateFunction](/dotnet/api/microsoft.data.sqlite.sqliteconnection.createfunction).
+Scalar functions return a single, scalar value for each row in a query. Define new scalar functions and override the built-in ones using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateFunction%2A>.
 
-See [Data Types](data-types.md) for a list of supported parameter and return types for the func argument.
+See [Data types](types.md) for a list of supported parameter and return types for the func argument.
 
 Specifying the `state` argument will pass that value into every invocation of the function. Use this to avoid closures.
 
@@ -39,7 +39,7 @@ The following example shows how to define the regexp function to enable its corr
 
 ## Aggregate functions
 
-Aggregate functions return a single, aggregated value for all the rows in a query. Define and override aggregate functions using [CreateAggregate](/dotnet/api/microsoft.data.sqlite.sqliteconnection.createaggregate).
+Aggregate functions return a single, aggregated value for all the rows in a query. Define and override aggregate functions using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateAggregate%2A>.
 
 The `seed` argument specifies the initial state of the context. Use this to avoid closures also.
 
@@ -49,7 +49,7 @@ If no `resultSelector` is specified, the final state of the context is used as t
 
 Specify `resultSelector` to calculate the final result from the context after iterating through all the rows.
 
-See [Data Types](data-types.md) for a list of supported parameter types for the func argument and return types for resultSelector.
+See [Data types](types.md) for a list of supported parameter types for the func argument and return types for resultSelector.
 
 Specify `isDeterministic` if your function is deterministic to allow SQLite to use additional optimizations when compiling queries.
 
@@ -59,9 +59,9 @@ The following example defines an aggregate function to calculate the standard de
 
 ## Errors
 
-If a user-defined function throws an exception, the message is returned to SQLite. SQLite will then raise an error and Microsoft.Data.Sqlite will throw a SqliteException. For more information, see [Database Errors](errors.md).
+If a user-defined function throws an exception, the message is returned to SQLite. SQLite will then raise an error and Microsoft.Data.Sqlite will throw a SqliteException. For more information, see [Database errors](database-errors.md).
 
-By default, the error SQLite error code will be SQLITE_ERROR (or 1). You can, however, change it by throwing a [SqliteException](/dotnet/api/microsoft.data.sqlite.sqliteexception) in your function with the desired [SqliteErrorCode](/dotnet/api/microsoft.data.sqlite.sqliteexception.sqliteerrorcode) specified.
+By default, the error SQLite error code will be SQLITE_ERROR (or 1). You can, however, change it by throwing a <xref:Microsoft.Data.Sqlite.SqliteException> in your function with the desired <xref:Microsoft.Data.Sqlite.SqliteException.SqliteErrorCode> specified.
 
 ## Debugging
 
@@ -69,6 +69,6 @@ SQLite calls your implementation directly. This lets you add breakpoints that tr
 
 ## See also
 
-* [Data Types](data-types.md)
+* [Data types](types.md)
 * [SQLite Core functions](https://www.sqlite.org/lang_corefunc.html)
 * [SQLite Aggregate Functions](https://www.sqlite.org/lang_aggfunc.html)

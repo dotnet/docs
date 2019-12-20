@@ -11,7 +11,7 @@ Start by inserting a row as normal. Use the zeroblob() SQL function to allocate 
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/StreamingSample/Program.cs?name=snippet_Insert)]
 
-After inserting the row, open a stream to write the large object using [SqliteBlob](/dotnet/api/microsoft.data.sqlite.sqliteblob).
+After inserting the row, open a stream to write the large object using <xref:Microsoft.Data.Sqlite.SqliteBlob>.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/StreamingSample/Program.cs?name=snippet_Write)]
 

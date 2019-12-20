@@ -1,9 +1,9 @@
 ---
-title: Bulk Insert
+title: Bulk insert
 ms.date: 12/13/2019
 description: Performance tips you can use when making a lot of changes to the database.
 ---
-# Bulk Insert
+# Bulk insert
 
 SQLite doesn't have any special way to bulk insert data. To get optimal performance when inserting or updating data, ensure that you do the following.
 

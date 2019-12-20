@@ -31,7 +31,7 @@ Let's get started by writing some code. Make sure that the `Program.fs` file is 
 
 [!code-fsharp[HelloSquare](~/samples/snippets/fsharp/getting-started/hello-square.fs)]
 
-The code sample defines a function called `square` that takes an input named `x` and multiplies it by itself. Because F# uses [Type inference](../language-reference/type-inference.md), the type of `x` doesn't need to be specified. The F# compiler understands the types where multiplication is valid and assigns a type to `x` based on how `square` is called. If you hover over `square`, you should see the following:
+The previous code sample defines a function called `square` that takes an input named `x` and multiplies it by itself. Because F# uses [Type inference](../language-reference/type-inference.md), the type of `x` doesn't need to be specified. The F# compiler understands the types where multiplication is valid and assigns a type to `x` based on how `square` is called. If you hover over `square`, you should see the following:
 
 ```fsharp
 val square: x:int -> int
@@ -64,7 +64,6 @@ If you haven't already, check out the [Tour of F#](../tour.md), which covers som
 
 ## See also
 
-- [F# docs homepage](../index.yml)
 - [F# language reference](../language-reference/index.md)
 - [Type inference](../language-reference/type-inference.md)
 - [Symbol and operator reference](../language-reference/symbol-and-operator-reference/index.md)

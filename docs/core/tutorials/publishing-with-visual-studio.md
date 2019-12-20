@@ -6,7 +6,7 @@ ms.author: wiwagn
 ms.date: 12/10/2019
 ms.custom: "vs-dotnet, seodec18"
 ---
-# Publish your .NET Core Hello World application with Visual Studio 2019
+# Publish your .NET Core Hello World application with Visual Studio
 
 In [Create a Hello World application with .NET Core in Visual Studio](with-visual-studio.md), you built a Hello World console application. In [Debug your Hello World application with Visual Studio](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application. To deploy the files, copy them to the target machine.
 

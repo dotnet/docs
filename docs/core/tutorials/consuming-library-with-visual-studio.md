@@ -61,7 +61,7 @@ Just as you included unit tests in the same solution as your class library in [T
 
    ![Visual Studio project toolbar showing Debug button](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
 
-You can debug and publish the application that uses this library by following the steps in [Debugging your Hello World application with Visual Studio 2019](debugging-with-visual-studio.md) and [Publishing your Hello World Application with Visual Studio 2019](publishing-with-visual-studio.md).
+You can debug and publish the application that uses this library by following the steps in [Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio](debugging-with-visual-studio.md) and [Publish your .NET Core Hello World application with Visual Studio](publishing-with-visual-studio.md).
 
 ## Create a NuGet package
 

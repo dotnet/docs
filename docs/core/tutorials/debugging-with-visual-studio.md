@@ -245,4 +245,4 @@ When you press **F5** or choose **Build Solution** from the **Build** menu, Visu
 
 ## Next steps
 
-Once you've debugged your application, the next step is to publish a deployable version of the app. For information on how to do this, see [Publish the Hello World application with Visual Studio](publishing-with-visual-studio.md).
+Once you've debugged your application, the next step is to publish a deployable version of the app. For information on how to do this, see [Publish your .NET Core Hello World application with Visual Studio](publishing-with-visual-studio.md).

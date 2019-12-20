@@ -389,8 +389,6 @@ CoreFx
 - <xref:System.UIntPtr?displayProperty=fullName>
 - <xref:System.Windows.Forms.ColorDialog.Color?displayProperty=fullName>
 - <xref:System.Windows.Media.Animation.KeyTime?displayProperty=fullName>
-- <xref:System.Windows.Media.Animation.Matrix?displayProperty=fullName>
-- <xref:System.Windows.Media.Animation.Matrix3D?displayProperty=fullName>
 - <xref:System.Windows.Media.Animation.RepeatBehavior?displayProperty=fullName>
 - <xref:System.Xml.Serialization.XmlDeserializationEvents?displayProperty=fullName>
 - <xref:Windows.Foundation.Point?displayProperty=fullName>
@@ -401,6 +399,8 @@ CoreFx
 - <xref:Windows.UI.Xaml.CornerRadius?displayProperty=fullName>
 - <xref:Windows.UI.Xaml.Duration?displayProperty=fullName>
 - <xref:Windows.UI.Xaml.GridLength?displayProperty=fullName>
+- <xref:Windows.UI.Xaml.Media.Matrix?displayProperty=fullName>
+- <xref:Windows.UI.Xaml.Media.Media3D.Matrix3D?displayProperty=fullName>
 - <xref:Windows.UI.Xaml.Thickness?displayProperty=fullName>
 
 <!--

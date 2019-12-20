@@ -1,6 +1,6 @@
 ---
-title: "Mitigation: Serialization of Control Characters with the DataContractJsonSerializer"
-ms.date: "04/07/2017"
+title: "Mitigation: Serialize Control Characters - DataContractJsonSerializer"
+ms.date: 04/07/2017
 helpviewer_keywords: 
   - ".NET Framework 4.7 retargeting changes"
   - "retargeting changes"

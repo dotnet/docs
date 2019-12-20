@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Core breaking changes - .NET Core
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: "11/25/2019"
+ms.date: "12/18/2019"
 author: "scottaddie"
 ms.author: "scaddie"
 ---
@@ -140,6 +140,10 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 ***
 
 [!INCLUDE[MVC: Controller action Async suffix removed](~/includes/core-changes/aspnetcore/3.0/mvc-action-async-suffix-trimmed.md)]
+
+***
+
+[!INCLUDE[MVC: JsonResult moved to Microsoft.AspNetCore.Mvc.Core](~/includes/core-changes/aspnetcore/3.0/mvc-jsonresult-moved.md)]
 
 ***
 

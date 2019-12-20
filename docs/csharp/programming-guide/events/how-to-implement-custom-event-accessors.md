@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement Custom Event Accessors - C# Programming Guide"
+title: "How to implement custom event accessors - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "remove accessor [C#]"
 ms.assetid: bf903abf-03a4-4f7b-ab6b-b7e59bc2ee1e
 ---
-# How to: Implement Custom Event Accessors (C# Programming Guide)
+# How to implement custom event accessors (C# Programming Guide)
 An event is a special kind of multicast delegate that can only be invoked from within the class that  it is declared in. Client code subscribes to the event by providing a reference to a method that should be invoked when the event is fired. These methods are added to the delegate's invocation list through event accessors, which resemble property accessors, except that event accessors are named `add` and `remove`. In most cases, you do not have to supply custom event accessors. When no custom event accessors are supplied in your code, the compiler will add them automatically. However, in some cases you may have to provide custom behavior. One such case is shown in the topic [How to:  Implement Interface Events](./how-to-implement-interface-events.md).  
   
 ## Example  

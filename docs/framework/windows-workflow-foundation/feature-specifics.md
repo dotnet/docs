@@ -184,7 +184,7 @@ A flowchart activity can be used to implement a guessing game. The guessing game
 
 ## Procedural activities (Sequence, If, ForEach, Switch, Assign, DoWhile, While)
 
-Procedural activities provide a mechanism to model sequential control flow using concepts that are familiar to programmers. These activities enable traditionally structured programming language constructs and, when appropriate, provide language parity with common procedural languages such as C#/VB.
+Procedural activities provide a mechanism to model sequential control flow using concepts that are familiar to programmers. These activities enable traditionally structured programming language constructs and, when appropriate, provide language parity with common procedural languages such as C# and Visual Basic.
 
 ### Getting Started
 
@@ -226,7 +226,7 @@ The <xref:System.Activities.Statements.InvokeMethod> activity allows invoking pu
 
 ## Error handling activities
 
-The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism for catching exceptions that occur during the execution of a set of contained activities (similar to the Try/Catch construct in C#/VB). <xref:System.Activities.Statements.TryCatch> provides exception handling at the workflow level. When an unhandled exception is thrown, the workflow is aborted and the Finally block won’t be executed. This behavior is consistent with C#.
+The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism for catching exceptions that occur during the execution of a set of contained activities (similar to the Try/Catch construct in C# and Visual Basic). <xref:System.Activities.Statements.TryCatch> provides exception handling at the workflow level. When an unhandled exception is thrown, the workflow is aborted and the Finally block won’t be executed. This behavior is consistent with C#.
 
 ### Getting Started
 

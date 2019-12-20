@@ -1,12 +1,12 @@
 ---
-title: "How to: Publish Events that Conform to .NET Framework Guidelines - C# Programming Guide"
+title: "How to publish events that conform to .NET Framework Guidelines - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "events [C#], implementation guidelines"
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
 ---
-# How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide)
+# How to publish events that conform to .NET Framework Guidelines (C# Programming Guide)
 The following procedure demonstrates how to add events that follow the standard .NET Framework pattern to your classes and structs. All events in the .NET Framework class library are based on the <xref:System.EventHandler> delegate, which is defined as follows:  
   
 ```csharp  

@@ -9,9 +9,12 @@ The following version and area selectors provide a filtered list of applicable b
 
 ## By version
 
-Select the .NET Core version that you're currently targeting and then the .NET Core version you wish to migrate to:
+Select the .NET version that you're currently targeting and then the .NET Core version you wish to migrate to:
 
 [!INCLUDE[versionselector](~/includes/core-changes/versionselector.md)]
+
+> [!TIP]
+> If you're migrating a Windows Forms app from .NET Framework to .NET Core, see [Breaking changes in Windows Forms (.NET Framework to .NET Core)](../porting/winforms-breaking-changes.md) instead of using the version selector.
 
 ## By area
 

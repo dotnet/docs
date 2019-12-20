@@ -1,10 +1,10 @@
 ### Private fields added to built-in struct types
 
-Private fields were added to built-in struct types in [reference assemblies](~/standard/assembly/reference-assemblies.md). As a result, in C#, struct types must always be instantiated by using the [new operator](language-reference/operators/new-operator.md) or [default literal](language-reference/operators/default.md#default-literal), or by initializing each of the private fields.
+Private fields were added to built-in struct types in [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md). As a result, in C#, struct types must always be instantiated by using the [new operator](../../../../docs/csharp/language-reference/operators/new-operator.md) or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal), or by initializing each of the private fields.
 
 #### Change description
 
-In .NET Core 2.0 and previous versions, some built-in struct types, for example, <xref:System.ConsoleKeyInfo>, could be instantiated without using the `new` operator or [default literal](language-reference/operators/default.md#default-literal) in C#. This was because the [reference assemblies](~/standard/assembly/reference-assemblies.md) used by the C# compiler didn't contain the private fields for the structs. All private fields for .NET struct types are added to the reference assemblies starting in .NET Core 2.1.
+In .NET Core 2.0 and previous versions, some built-in struct types, for example, <xref:System.ConsoleKeyInfo>, could be instantiated without using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal) in C#. This was because the [reference assemblies](../../../../docs/standard/assembly/reference-assemblies.md) used by the C# compiler didn't contain the private fields for the structs. All private fields for .NET struct types are added to the reference assemblies starting in .NET Core 2.1.
 
 For example, the following C# code compiles in .NET Core 2.0, but not in .NET Core 2.1:
 
@@ -25,7 +25,7 @@ In .NET Core 2.1, the previous code results in the following compiler error: **C
 
 #### Recommended action
 
-Instantiate struct types by using the `new` operator or [default literal](language-reference/operators/default.md#default-literal).
+Instantiate struct types by using the `new` operator or [default literal](../../../../docs/csharp/language-reference/operators/default.md#default-literal).
 
 For example:
 
@@ -89,43 +89,42 @@ CoreFx
 <xref:System.Span%601?displayProperty=fullName>
 <xref:System.Span%601.Enumerator?displayProperty=fullName>
 <xref:System.TimeSpan?displayProperty=fullName>
-<xref:System.TransitionTime?displayProperty=fullName>
+<xref:System.TimeZoneInfo.TransitionTime?displayProperty=fullName>
 <xref:System.TypedReference?displayProperty=fullName>
 <xref:System.UInt16?displayProperty=fullName>
 <xref:System.UInt32?displayProperty=fullName>
 <xref:System.UInt64?displayProperty=fullName>
 <xref:System.UIntPtr?displayProperty=fullName>
-<xref:System.MemoryHandle?displayProperty=fullName>
 <xref:System.Buffers.MemoryHandle?displayProperty=fullName>
 <xref:System.Buffers.StandardFormat?displayProperty=fullName>
-<xref:System.DictionaryEntry?displayProperty=fullName>
-<xref:System.KeyValuePair%602?displayProperty=fullName>
-<xref:System.CustomAttributeNamedArgument?displayProperty=fullName>
-<xref:System.CustomAttributeTypedArgument?displayProperty=fullName>
-<xref:System.ParameterModifier?displayProperty=fullName>
-<xref:System.AsyncValueTaskMethodBuilder%601?displayProperty=fullName>
-<xref:System.ConfiguredTaskAwaitable?displayProperty=fullName>
-<xref:System.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter?displayProperty=fullName>
-<xref:System.ConfiguredTaskAwaitable%601?displayProperty=fullName>
-<xref:System.ConfiguredTaskAwaitable%601.ConfiguredTaskAwaiter?displayProperty=fullName>
-<xref:System.ConfiguredValueTaskAwaitable%601?displayProperty=fullName>
-<xref:System.ConfiguredValueTaskAwaitable%601.ConfiguredTaskAwaiter?displayProperty=fullName>
-<xref:System.TaskAwaiter?displayProperty=fullName>
-<xref:System.TaskAwaiter%601?displayProperty=fullName>
-<xref:System.ValueTaskAwaiter%601?displayProperty=fullName>
-<xref:System.GCHandle?displayProperty=fullName>
-<xref:System.SerializationEntry?displayProperty=fullName>
-<xref:System.StreamingContext?displayProperty=fullName>
-<xref:System.CancellationToken?displayProperty=fullName>
-<xref:System.CancellationTokenRegistration?displayProperty=fullName>
-<xref:System.ValueTask%601?displayProperty=fullName>
+<xref:System.Collections.DictionaryEntry?displayProperty=fullName>
+<xref:System.Collections.Generic.KeyValuePair%602?displayProperty=fullName>
+<xref:System.Reflection.CustomAttributeNamedArgument?displayProperty=fullName>
+<xref:System.Reflection.CustomAttributeTypedArgument?displayProperty=fullName>
+<xref:System.Reflection.ParameterModifier?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder%601?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.ConfiguredTaskAwaitable?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.ConfiguredTaskAwaitable%601?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.ConfiguredTaskAwaitable%601.ConfiguredTaskAwaiter?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable%601?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable%601.ConfiguredTaskAwaiter?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.TaskAwaiter?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.TaskAwaiter%601?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.ValueTaskAwaiter%601?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.GCHandle?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.SerializationEntry?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.StreamingContext?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.CancellationToken?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.CancellationTokenRegistration?displayProperty=fullName>
+<xref:System.Runtime.CompilerServices.ValueTask%601?displayProperty=fullName>
 <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>
-<xref:System.Collections.Immutable.Builder.Enumerator?displayProperty=fullName>
-<xref:System.Collections.Immutable.ImmutableDictionary%601.Enumerator?displayProperty=fullName>
+<xref:System.Collections.Immutable.ImmutableArray%601.Enumerator?displayProperty=fullName>
+<xref:System.Collections.Immutable.ImmutableDictionary%602.Enumerator?displayProperty=fullName>
 <xref:System.Collections.Immutable.ImmutableHashSet%601.Enumerator?displayProperty=fullName>
 <xref:System.Collections.Immutable.ImmutableList%601.Enumerator?displayProperty=fullName>
 <xref:System.Collections.Immutable.ImmutableQueue%601.Enumerator?displayProperty=fullName>
-<xref:System.Collections.Immutable.ImmutableSortedDictionary%601.Enumerator?displayProperty=fullName>
+<xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Enumerator?displayProperty=fullName>
 <xref:System.Collections.Immutable.ImmutableSortedSet%601.Enumerator?displayProperty=fullName>
 <xref:System.Collections.Immutable.ImmutableStack%601.Enumerator?displayProperty=fullName>
 <xref:System.Collections.Specialized.BitVector32?displayProperty=fullName>
@@ -189,11 +188,11 @@ CoreFx
 <xref:Windows.UI.Xaml.Duration?displayProperty=fullName>
 <xref:Windows.UI.Xaml.GridLength?displayProperty=fullName>
 <xref:Windows.UI.Xaml.Thickness?displayProperty=fullName>
-<xref:Windows.UI.Xaml.GeneratorPosition?displayProperty=fullName>
-<xref:Windows.UI.Xaml.Matrix?displayProperty=fullName>
-<xref:Windows.UI.Xaml.KeyTime?displayProperty=fullName>
-<xref:Windows.UI.Xaml.RepeatBehavior?displayProperty=fullName>
-<xref:Windows.UI.Xaml.Matrix3D?displayProperty=fullName>
+<xref:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition?displayProperty=fullName>
+<xref:Windows.UI.Xaml.Controls.Primitives.Matrix?displayProperty=fullName>
+<xref:Windows.UI.Xaml.Controls.Primitives.KeyTime?displayProperty=fullName>
+<xref:Windows.UI.Xaml.Controls.Primitives.RepeatBehavior?displayProperty=fullName>
+<xref:Windows.UI.Xaml.Controls.Primitives.Matrix3D?displayProperty=fullName>
 <xref:Windows.Foundation.Point?displayProperty=fullName>
 <xref:Windows.Foundation.Rect?displayProperty=fullName>
 <xref:Windows.Foundation.Size?displayProperty=fullName>
@@ -235,7 +234,7 @@ CoreFx
 <xref:System.Reflection.Metadata.AssemblyReferenceHandleCollection?displayProperty=fullName>
 <xref:System.Reflection.Metadata.AssemblyReferenceHandleCollection.Enumerator?displayProperty=fullName>
 <xref:System.Reflection.Metadata.Blob?displayProperty=fullName>
-<xref:System.Reflection.Metadata.Blobs?displayProperty=fullName>
+<xref:System.Reflection.Metadata.BlobBuilder.Blobs?displayProperty=fullName>
 <xref:System.Reflection.Metadata.BlobContentId?displayProperty=fullName>
 <xref:System.Reflection.Metadata.BlobHandle?displayProperty=fullName>
 <xref:System.Reflection.Metadata.BlobReader?displayProperty=fullName>
@@ -292,8 +291,8 @@ CoreFx
 <xref:System.Reflection.Metadata.ImportDefinitionCollection.Enumerator?displayProperty=fullName>
 <xref:System.Reflection.Metadata.ImportScope?displayProperty=fullName>
 <xref:System.Reflection.Metadata.ImportScopeHandle?displayProperty=fullName>
-<xref:System.Reflection.Metadata.ImportScopeHandleCollection?displayProperty=fullName>
-<xref:System.Reflection.Metadata.ImportScopeHandleCollection.Enumerator?displayProperty=fullName>
+<xref:System.Reflection.Metadata.ImportScopeCollection?displayProperty=fullName>
+<xref:System.Reflection.Metadata.ImportScopeCollection.Enumerator?displayProperty=fullName>
 <xref:System.Reflection.Metadata.InterfaceImplementation?displayProperty=fullName>
 <xref:System.Reflection.Metadata.InterfaceImplementationHandle?displayProperty=fullName>
 <xref:System.Reflection.Metadata.InterfaceImplementationHandleCollection?displayProperty=fullName>
@@ -305,8 +304,8 @@ CoreFx
 <xref:System.Reflection.Metadata.LocalScope?displayProperty=fullName>
 <xref:System.Reflection.Metadata.LocalScopeHandle?displayProperty=fullName>
 <xref:System.Reflection.Metadata.LocalScopeHandleCollection?displayProperty=fullName>
+<xref:System.Reflection.Metadata.LocalScopeHandleCollection.ChildrenEnumerator?displayProperty=fullName>
 <xref:System.Reflection.Metadata.LocalScopeHandleCollection.Enumerator?displayProperty=fullName>
-<xref:System.Reflection.Metadata.Enumerator?displayProperty=fullName>
 <xref:System.Reflection.Metadata.LocalVariable?displayProperty=fullName>
 <xref:System.Reflection.Metadata.LocalVariableHandle?displayProperty=fullName>
 <xref:System.Reflection.Metadata.LocalVariableHandleCollection?displayProperty=fullName>

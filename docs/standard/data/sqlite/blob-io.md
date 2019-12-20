@@ -1,6 +1,5 @@
 ---
-title: BLOB I/O - Microsoft.Data.Sqlite
-author: bricelam
+title: BLOB I/O
 ms.date: 12/13/2019
 description: Learn how to use SQLite's BLOB I/O feature.
 ---

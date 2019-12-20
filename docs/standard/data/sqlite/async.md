@@ -1,6 +1,5 @@
 ---
-title: Async Limitations - Microsoft.Data.Sqlite
-author: bricelam
+title: Async Limitations
 ms.date: 12/13/2019
 description: Explains the limitations of the async APIs and some alternatives that you can use instead.
 ---

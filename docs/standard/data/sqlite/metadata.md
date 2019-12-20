@@ -1,6 +1,5 @@
 ---
-title: Metadata - Microsoft.Data.Sqlite
-author: bricelam
+title: Metadata
 ms.date: 12/13/2019
 description: Learn how to retrieve metadata about the database.
 ---

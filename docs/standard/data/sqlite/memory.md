@@ -1,6 +1,5 @@
 ---
-title: In-Memory Databases - Microsoft.Data.Sqlite
-author: bricelam
+title: In-Memory Databases
 ms.date: 12/13/2019
 description: Learn how to use in-memory SQLite databases.
 ---

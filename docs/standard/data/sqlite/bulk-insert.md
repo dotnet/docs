@@ -1,6 +1,5 @@
 ---
-title: Bulk Insert - Microsoft.Data.Sqlite
-author: bricelam
+title: Bulk Insert
 ms.date: 12/13/2019
 description: Performance tips you can use when making a lot of changes to the database.
 ---

@@ -1,6 +1,5 @@
 ---
-title: Connection Strings - Microsoft.Data.Sqlite
-author: bricelam
+title: Connection Strings
 ms.date: 12/13/2019
 description: The supported keywords and values of connection strings.
 ---

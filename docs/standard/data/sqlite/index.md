@@ -1,6 +1,5 @@
 ---
-title: Overview - Microsoft.Data.Sqlite
-author: bricelam
+title: Overview
 ms.date: 12/13/2019
 description: An overview of Microsoft.Data.Sqlite
 ---

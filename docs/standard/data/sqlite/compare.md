@@ -1,6 +1,5 @@
 ---
-title: Comparison to System.Data.SQLite - Microsoft.Data.Sqlite
-author: bricelam
+title: Comparison to System.Data.SQLite
 ms.date: 12/13/2019
 description: Describes some of the differences between the Microsoft.Data.Sqlite and System.Data.SQLite libraries.
 ---

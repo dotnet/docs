@@ -134,10 +134,13 @@ Microsoft continues its commitment to keeping Azure an “open platform” by of
 
 You can create an open-source database server in one of three different pricing tiers: Basic, General Purpose, and Memory Optimized. The tiers are differentiated by the amount of processing cores, memory, and underlying storage technology. All resources are provisioned at the database server level. A server can have one to many databases.
 
-Pricing tier	Target workloads
-Basic	Workloads that require light compute and I/O performance. Examples include servers used for development or testing or small-scale infrequently used applications.
-General Purpose	Most business workloads that require balanced compute and memory with scalable I/O throughput. Examples include servers for hosting web and mobile apps and other enterprise applications.
-Memory Optimized	High-performance database workloads that require in-memory performance for faster transaction processing and higher concurrency. Examples include servers for processing real-time data and high-performance transactional or analytical apps.
+Pricing tier Target workloads
+Basic Workloads that require light compute and I/O performance. Examples include servers used for development or testing or small-scale infrequently used applications.
+
+General Purpose Most business workloads that require balanced compute and memory with scalable I/O throughput. Examples include servers for hosting web and mobile apps and other enterprise applications.
+
+Memory Optimized High-performance database workloads that require in-memory performance for faster transaction processing and higher concurrency. Examples include servers for processing real-time data and high-performance transactional or analytical apps.
+
 After you create your server, you can dynamically change the virtual cores, hardware generation, pricing tier (except to and from Basic), amount of storage, and backup retention period. While changing the number of vCores requires approximately a minute of interruption, scaling storage and changing the backup retention period are true online operations. There's no downtime, and your application isn't affected.
 
 ### Azure Database for MySQL

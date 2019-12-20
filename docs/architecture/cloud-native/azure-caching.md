@@ -87,4 +87,5 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 
 >[!div class="step-by-step"]
 >[Previous](azure-data-storage.md)
->[Next](resiliency.md) <!-- Next Chapter --> 
+>[Next](resiliency.md) <!-- Next Chapter -->
+ 

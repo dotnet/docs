@@ -130,11 +130,11 @@ A system typically stores the current state of a data entity. If a user changes 
 
 In most cases, this model works fine. In high volume systems, however, overhead from transactional locking and frequent update operations can impact database performance, responsiveness, and limit scalability.
 
-Event Sourcing takes a different approach to capturing data. Each operation that affects data is persisted to an event store. Instead of updating the state of a data record, we append each change to a sequential list of past events - similar to an accountant's ledger. The Event Store becomes the system of record for the data. It's used to propagate various [materialized views](https://docs.microsoft.com/azure/architecture/patterns/materialized-view) within the bounded context of a microservice. Figure 5.7 shows the pattern.
+Event Sourcing takes a different approach to capturing data. Each operation that affects data is persisted to an event store. Instead of updating the state of a data record, we append each change to a sequential list of past events - similar to an accountant's ledger. The Event Store becomes the system of record for the data. It's used to propagate various [materialized views](https://docs.microsoft.com/azure/architecture/patterns/materialized-view) within the bounded context of a microservice. Figure 5.8 shows the pattern.
 
 ![Event Sourcing](./media/event-sourcing.png)
 
-**Figure 5-7**. Event Sourcing
+**Figure 5-8**. Event Sourcing
 
 In the figure above note how each entry (in blue) for a user's shopping cart is appended to an underlying event store. In the adjoining [materialized view](https://docs.microsoft.com/azure/architecture/patterns/materialized-view), the system projects the current state by replaying all the events associated with each shopping cart. This view, or read model, is then exposed back to the UI. Events can also be integrated with external systems and applications or queried to determine the current state of an entity. With this approach, you maintain history. You know not only the current state of an entity, but also how you reached this state.
 

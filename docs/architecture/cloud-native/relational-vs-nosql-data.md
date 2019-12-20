@@ -45,7 +45,6 @@ NoSQL databases include a variety of data models for accessing and managing data
 ![Overview of Cosmos DB](./media/types-of-nosql-datastores.png)
 
 **Figure 5-10**: Data models for NoSQL databases
-
  
 Based upon specific data needs, a cloud-native-based microservice can  implement a relational, NoSQL datastore or both.
 
@@ -62,13 +61,6 @@ Based upon specific data needs, a cloud-native-based microservice can  implement
 |||
 
 Next, we look at how data storage requirements for cloud-natve systems can be implemented in the Azure cloud.
-
-## Cloud-native databases
-
-
-
-
-
 
 ## Relational Data in Azure
 
@@ -277,7 +269,6 @@ One of the more time consuming tasks is migrating data from one data platform to
 - CosmosDB
   
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
-
 
 >[!div class="step-by-step"]
 >[Previous](distributed-data.md)

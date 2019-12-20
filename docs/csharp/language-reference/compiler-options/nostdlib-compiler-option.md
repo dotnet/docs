@@ -1,6 +1,6 @@
 ---
 title: "-nostdlib (C# Compiler Options)"
-ms.date: 07/20/2015
+ms.date: 12/20/2019
 f1_keywords:
   - "/nostdlib"
 helpviewer_keywords:

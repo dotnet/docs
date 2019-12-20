@@ -16,9 +16,15 @@ Once you've created a .NET Standard class library, tested it, and built a releas
 - If the library will be used by a single solution (for example, if it's a component in a single large application), you can include it as a project in your solution.
 - If the library will be publicly available, you can distribute it as a NuGet package.
 
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+>
+> - Add a console app to your solution that references a .NET Standard library project.
+> - Create a NuGet package that contains a .NET Standard library project.
+
 ## Add a console app to your solution
 
-Just as you included unit tests in the same solution as your class library in [Test a .NET Standard library with .NET Core in Visual Studio 2017](testing-library-with-visual-studio.md), you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
+Just as you included unit tests in the same solution as your class library in [Test a .NET Standard library in Visual Studio](testing-library-with-visual-studio.md), you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
 1. Open the `ClassLibraryProjects` solution you created in the [Build a .NET Standard library in Visual Studio](library-with-visual-studio.md) article.
 
@@ -57,9 +63,9 @@ Just as you included unit tests in the same solution as your class library in [T
 
 You can debug and publish the application that uses this library by following the steps in [Debugging your Hello World application with Visual Studio 2019](debugging-with-visual-studio.md) and [Publishing your Hello World Application with Visual Studio 2019](publishing-with-visual-studio.md).
 
-## Distribute the library in a NuGet package
+## Create a NuGet package
 
-You can make your class library widely available by publishing it as a NuGet package. Visual Studio doesn't support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../tools/dotnet.md):
+You can make your class library widely available by publishing it as a NuGet package. Visual Studio doesn't support the creation of NuGet packages. To create one, you need to use the .NET Core CLI commands:
 
 1. Open a console window.
 
@@ -67,7 +73,7 @@ You can make your class library widely available by publishing it as a NuGet pac
 
 1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the *Documents\Visual Studio 2019\Projects\ClassLibraryProjects\StringLibrary* directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
 
-1. Run the following command to generate a package with a *.nupkg* extension:
+1. Run the [dotnet pack](../tools/dotnet-pack.md) command to generate a package with a *.nupkg* extension:
 
    ```dotnetcli
    dotnet pack --no-build

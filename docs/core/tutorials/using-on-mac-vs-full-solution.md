@@ -28,10 +28,12 @@ For more information on prerequisites, see the [.NET Core dependencies and requi
 
 1. On the Welcome screen, select **New Project**. In the **New Project** dialog under the **.NET Core** node, select the **.NET Standard Library** template. This command creates a .NET Standard library that targets .NET Core as well as any other .NET implementation that supports version 2.1 of the [.NET Standard](../../standard/net-standard.md). If you have multiple versions of the .NET Core SDK installed, you can choose different versions of .NET Standard for your library. Choose ".NET Standard 2.1" and select **Next**.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac New project dialog](./media/using-on-mac-vs-full-solution/visual-studio-mac-new-project.png)
 
 1. Name the project "TextUtils" (a short name for "Text Utilities") and the solution "WordCounter". Leave **Create a project directory within the solution directory** checked. Select **Create**.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac New project dialog options](./media/using-on-mac-vs-full-solution/visual-studio-mac-new-project-options.png)
 
 1. In the **Solution** pad, expand the `TextUtils` node to reveal the class file provided by the template, *Class1.cs*. Ctrl-click the file, select **Rename** from the context menu, and rename the file to *WordCount.cs*. Open the file and replace the contents with the following code:
@@ -40,16 +42,19 @@ For more information on prerequisites, see the [.NET Core dependencies and requi
 
 1. Save the file by using any of three different methods: use the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, select **File** > **Save** from the menu, or ctrl-click on the file's tab and select **Save** from the contextual menu. The following image shows the IDE window:
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac IDE window with class library file and method](./media/using-on-mac-vs-full-solution/visual-studio-mac-editor.png)
 
 1. Select **Errors** in the margin at the bottom of the IDE window to open the **Errors** panel. Select the **Build Output** button.
 
+   [!div class="mx-imgBorder"]
    ![Bottom margin of the Visual Studio Mac IDE showing the Errors button](./media/using-on-mac-vs-full-solution/visual-studio-mac-error-button.png)
 
 1. Select **Build** > **Build All** from the menu.
 
    The solution builds. The build output panel shows that the build is successful.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio Mac Build output pane of the Errors panel with Build successful message](./media/using-on-mac-vs-full-solution/visual-studio-mac-build-panel.png)
 
 ## Creating a test project
@@ -60,16 +65,19 @@ Unit tests provide automated software testing during your development and publis
 
 1. In the **New Project** dialog, select **Tests** from the **.NET Core** node. Select the **xUnit Test Project** followed by **Next**.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio Mac New Project dialog creating xUnit test project](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-project.png)
 
 1. If you have multiple versions of the .NET Core SDK, you'll need to select the version for this project. Select **.NET Core 3.1**. Name the new project "TestLibrary" and select **Create**.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio Mac New Project dialog providing project name](./media/using-on-mac-vs-full-solution/visual-studio-mac-new-project-name.png)
 
 1. In order for the test library to work with the `WordCount` class, add a reference to the `TextUtils` project. In the **Solution** sidebar, ctrl-click **Dependencies** under **TestLibrary**. Select **Edit References** from the context menu.
 
 1. In the **Edit References** dialog, select the **TextUtils** project on the **Projects** tab. Select **OK**.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio Mac Edit References dialog](./media/using-on-mac-vs-full-solution/visual-studio-mac-edit-references.png)
 
 1. In the **TestLibrary** project, rename the *UnitTest1.cs* file to *TextUtilsTests.cs*.
@@ -98,28 +106,33 @@ Unit tests provide automated software testing during your development and publis
 
    The following image shows the IDE with the unit test code in place. Pay attention to the `Assert.NotEqual` statement.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac Initial unit test in the IDE main window](./media/using-on-mac-vs-full-solution/visual-studio-mac-assert-test.png)
 
    It's important to make a new test fail once to confirm its testing logic is correct. The method passes in the name "Jack" (uppercase) and a string with "Jack" and "jack" (uppercase and lowercase). If the `GetWordCount` method is working properly, it returns a count of two instances of the search word. In order to fail this test on purpose, you first implement the test asserting that two instances of the search word "Jack" aren't returned by the `GetWordCount` method. Continue to the next step to fail the test on purpose.
 
 1. Open the **Unit Tests** panel on the right side of the screen. Select **View** > **Tests** from the menu.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac Unit Tests panel](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-panel.png)
 
 1. Click the **Dock** icon to keep the panel open. (Highlighted in the following image.)
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac Unit Tests panel dock icon](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-dock-icon.png)
 
 1. Click the **Run All** button.
 
    The test fails, which is the correct result. The test method asserts that two instances of the `inputString`, "Jack," aren't returned from the string "Jack jack" provided to the `GetWordCount` method. Since word casing was factored out in the `GetWordCount` method, two instances are returned. The assertion that 2 *is not equal to* 2 fails. This result is the correct outcome, and the logic of our test is good.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac test failure display](./media/using-on-mac-vs-full-solution/visual-studio-for-mac-unit-test-failure.png)
 
 1. Modify the `IgnoreCasing` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file by using the keyboard shortcut <kbd>Ctrl</kbd>+<kbd>s</kbd>, **File** > **Save** from the menu, or ctrl-clicking on the file's tab and selecting **Save** from the context menu.
 
    You expect that the `searchWord` "Jack" returns two instances with `inputString` "Jack jack" passed into `GetWordCount`. Run the test again by clicking the **Run Tests** button in the **Unit Tests** panel or the **Rerun Tests** button in the **Test Results** panel at the bottom of the screen. The test passes. There are two instances of "Jack" in the string "Jack jack" (ignoring casing), and the test assertion is `true`.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac tests pass display](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-pass.png)
 
 1. Testing individual return values with a `Fact` is only the beginning of what you can do with unit testing. Another powerful technique allows you to test several values at once using a `Theory`. Add the following method to your `TextUtils_GetWordCountShould` class. You have two methods in the class after you add this method:
@@ -142,10 +155,12 @@ Unit tests provide automated software testing during your development and publis
 
 1. Save the file and run the tests again. The casing test passes but the three count tests fail. This outcome is exactly what you expect to happen.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac expected test failure](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-failure.png)
 
 1. Modify the `CountInstancesCorrectly` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file. Run the tests again. All tests pass.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac expected test passes](./media/using-on-mac-vs-full-solution/visual-studio-mac-unit-test-pass.png)
 
 ## Adding a console app
@@ -160,24 +175,30 @@ Unit tests provide automated software testing during your development and publis
 
 1. Ctrl-click on the `WordCounterApp` project and select **Run project** from the context menu. When you run the app, provide values for the search word and input string at the prompts in the console window. The app indicates the number of times the search word appears in the string.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac console window showing your app running](./media/using-on-mac-vs-full-solution/visual-studio-mac-console-window.png)
 
 1. The last feature to explore is debugging with Visual Studio for Mac. Set a breakpoint on the `Console.WriteLine` statement: Select in the left margin of line 23, and you see a red circle appear next to the line of code. Alternatively, select anywhere on the line of code and select **Run** > **Toggle Breakpoint** from the menu.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac breakpoint set](./media/using-on-mac-vs-full-solution/visual-studio-mac-breakpoint.png)
 
 1. ctrl-click the `WordCounterApp` project. Select **Start Debugging Project** from the context menu. When the app runs, enter the search word "cat" and "The dog chased the cat, but the cat escaped." for the string to search. When the `Console.WriteLine` statement is reached, program execution halts before the statement is executed. In the **Locals** tab, you can see the `searchWord`, `inputString`, `wordCount`, and `pluralChar` values.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac debugger program execution stopped](./media/using-on-mac-vs-full-solution/visual-studio-mac-debugger.png)
 
 1. In the **Immediate** pane, type "wordCount = 999;" and press Enter. This command assigns a nonsense value of 999 to the `wordCount` variable showing that you can replace variable values while debugging.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac changing values in the immediate window](./media/using-on-mac-vs-full-solution/visual-studio-mac-immediate-window.png)
 
 1. In the toolbar, click the *continue* arrow. Look at the output in the console window. It reports the incorrect value of 999 that you set when you were debugging the app.
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac continue button in the toolbar](./media/using-on-mac-vs-full-solution/visual-studio-mac-toolbar.png)
 
+   [!div class="mx-imgBorder"]
    ![Visual Studio for Mac console window output](./media/using-on-mac-vs-full-solution/visual-studio-mac-output.png)
 
 You can use the same process to debug code using your unit test project. Instead of starting the WordCount app project, ctrl-click the **Test Library** project, and select **Start Debugging Project** from the context menu. Visual Studio for Mac starts your test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project, or the underlying library code.

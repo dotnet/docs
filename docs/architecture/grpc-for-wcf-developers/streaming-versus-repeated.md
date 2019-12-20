@@ -1,6 +1,6 @@
 ---
-title: gRPC streaming services vs. repeated fields - gRPC for WCF developers
-description: Comparing repeated fields to streaming services as ways of passing collections of data by using gRPC.
+title: Streaming services vs. repeated fields - gRPC for WCF developers
+description: Compare repeated fields to streaming services as ways of passing collections of data by using gRPC.
 ms.date: 09/02/2019
 ---
 

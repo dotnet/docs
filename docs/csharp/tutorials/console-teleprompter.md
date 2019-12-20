@@ -24,7 +24,7 @@ There are a lot of features in this tutorial. Let’s build them one by one.
 
 ## Prerequisites
 
-You’ll need to setup your machine to run .NET Core. You can find the
+You’ll need to set up your machine to run .NET Core. You can find the
 installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
 page. You can run this
 application on Windows, Linux, macOS or in a Docker container.
@@ -64,7 +64,7 @@ using System;
 This statement tells the compiler that any types from the `System` namespace
 are in scope. Like other Object Oriented languages you may have used, C#
 uses namespaces to organize types. This Hello World program is no
-different. You can see that the program is enclosed in the namespace with the name 
+different. You can see that the program is enclosed in the namespace with the name
 based on the name of the current directory. For this tutorial, let's change the name of the namespace to `TeleprompterConsole`:
 
 ```csharp
@@ -102,19 +102,19 @@ using System.IO;
 The <xref:System.Collections.Generic.IEnumerable%601> interface is defined in the
 <xref:System.Collections.Generic> namespace. The <xref:System.IO.File> class is defined in the <xref:System.IO> namespace.
 
-This method is a special type of C# method called an *Iterator method*. 
-Enumerator methods return sequences that are evaluated lazily. That means 
-each item in the sequence is generated as it is requested by the code 
-consuming the sequence. Enumerator methods are methods that contain one or 
-more [`yield return`](../language-reference/keywords/yield.md) statements. The object returned by the `ReadFrom` 
-method contains the code to generate each item in the sequence. In this 
-example, that involves reading the next line of text from the source file, 
-and returning that string. Each time the calling code requests the next 
+This method is a special type of C# method called an *Iterator method*.
+Enumerator methods return sequences that are evaluated lazily. That means
+each item in the sequence is generated as it is requested by the code
+consuming the sequence. Enumerator methods are methods that contain one or
+more [`yield return`](../language-reference/keywords/yield.md) statements. The object returned by the `ReadFrom`
+method contains the code to generate each item in the sequence. In this
+example, that involves reading the next line of text from the source file,
+and returning that string. Each time the calling code requests the next
 item from the sequence, the code reads the next line of text from the file
-and returns it. When the file is completely read, the sequence 
+and returns it. When the file is completely read, the sequence
 indicates that there are no more items.
 
-There are two other C# syntax elements that may be new to you. The [`using`](../language-reference/keywords/using-statement.md) 
+There are two other C# syntax elements that may be new to you. The [`using`](../language-reference/keywords/using-statement.md)
 statement in this method manages resource cleanup. The variable that is
 initialized in the `using` statement (`reader`, in this example) must
 implement the <xref:System.IDisposable> interface. That interface
@@ -222,7 +222,7 @@ pace.
 
 In this final step, you’ll add the code to write the output asynchronously
 in one task, while also running another task to read input from the user
-if they want to speed up or slow down the text display, or stop the text display altogether. 
+if they want to speed up or slow down the text display, or stop the text display altogether.
 This has a few steps in it and by the end, you’ll have all the updates that you need.
 The first step is to create an asynchronous <xref:System.Threading.Tasks.Task> returning method that
 represents the code you’ve created so far to read and display the file.
@@ -310,7 +310,7 @@ the ‘X’ or ‘x’  keys, which allow the user to stop the text display at a
 This method uses <xref:System.Console.ReadKey> to block and wait for the user to press a key.
 
 To finish this feature, you need to create a new `async Task` returning
-method that starts both of these tasks (`GetInput` and 
+method that starts both of these tasks (`GetInput` and
 `ShowTeleprompter`), and also manages the shared data between these two
 tasks.
 
@@ -408,7 +408,7 @@ private static async Task GetInput(TelePrompterConfig config)
 ```
 
 This new version of `ShowTeleprompter` calls a new method in the
-`TeleprompterConfig` class. Now, you need to update `Main` to call 
+`TeleprompterConfig` class. Now, you need to update `Main` to call
 `RunTeleprompter` instead of `ShowTeleprompter`:
 
 ```csharp

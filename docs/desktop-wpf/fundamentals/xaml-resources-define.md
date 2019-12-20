@@ -1,5 +1,5 @@
 ---
-title: Define XAML resources for WPF - .NET Desktop
+title: Define XAML resources
 description: Learn about XAML resources in WPF for .NET Core. Understand the types of XAML resources and learn how to define XAML resources.
 author: thraka
 ms.author: adegeo

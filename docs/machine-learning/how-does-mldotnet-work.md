@@ -17,7 +17,7 @@ Central to ML.NET is a machine learning **model**. The model specifies the steps
 
 Once you have a model, you can add it to your application to make the predictions.
 
-ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, except for TensorFlow, LightGBM, and ONNX related functionality.
+ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, except for TensorFlow, LightGBM, and ONNX-related functionality.
 
 Examples of the type of predictions that you can make with ML.NET:
 
@@ -123,11 +123,11 @@ Both the house price model and the text classification model are **linear** mode
 
 ## Data preparation
 
-In most cases, the data that you have available isn't suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled.
+In most cases, the data that you have available isn't suitable to be used directly to train a machine learning model. The raw data needs to be prepared, or pre-processed, before it can be used to find the parameters of your model. Your data may need to be converted from string values to a numerical representation. You might have redundant information in your input data. You may need to reduce or expand the dimensions of your input data. Your data might need to be normalized or scaled.
 
 The [ML.NET tutorials](./tutorials/index.md) teach you about different data processing pipelines for text, image, numerical, and time-series data used for specific machine learning tasks.
 
-[How to prepare your data](./how-to-guides/prepare-data-ml-net.md) shows you how to applied data preparation more generally.
+[How to prepare your data](./how-to-guides/prepare-data-ml-net.md) shows you how to apply data preparation more generally.
 
 You can find an appendix of all of the [available transformations](./resources/transforms.md) in the resources section.
 
@@ -238,7 +238,7 @@ Each transformation in the pipeline has an input schema (data names, types, and 
 
 If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
 
-A data view object has columns and rows. Each column has a name and a type and a length. For example: the input columns in the house price example are **Size** and **Price**. They are both type  and they are scalar quantities rather than vector ones.
+A data view object has columns and rows. Each column has a name and a type and a length. For example, the input columns in the house price example are **Size** and **Price**. They are both type and they are scalar quantities rather than vector ones.
 
    ![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
 

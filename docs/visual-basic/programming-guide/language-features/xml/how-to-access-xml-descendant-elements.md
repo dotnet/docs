@@ -14,7 +14,7 @@ This example shows how to use a descendant axis property to access all XML eleme
 ## Example  
  [!code-vb[VbXMLSamples#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#31)]  
   
-## Compiling the Code  
+## Compile the code  
  This example requires:  
   
 - A reference to the <xref:System.Xml.Linq> namespace.  

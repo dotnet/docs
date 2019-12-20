@@ -1,9 +1,9 @@
 ---
-title: "How to: Find the Root Element (XPath-LINQ to XML) (C#)"
+title: "How to find the root element (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 4fd824e0-4d39-429b-b092-f6a5c046ee6c
 ---
-# How to: Find the Root Element (XPath-LINQ to XML) (C#)
+# How to find the root element (XPath-LINQ to XML) (C#)
 This topic shows how to get the root element with XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].  
   
  The XPath expression is:  

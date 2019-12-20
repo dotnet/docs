@@ -19,6 +19,9 @@
 # In each subsection folders are order first by depth, then alphabetically.
 # This should make it easy to add new rules without breaking existing ones.
 
+############ WHATS NEW ###############
+/docs/whats-new/** @mairaw @billwagner
+
 ############  GUIDES  ################
 # .NET Core
 /docs/core/** @mairaw
@@ -62,6 +65,8 @@
 /docs/core/install/** @Thraka
 # Breaking changes
 /docs/core/compatibility/** @gewarren
+# Config settings
+/docs/core/run-time-config/** @gewarren
 # Tools
 /docs/core/tools/** @tdykstra
 # Tools - CLI ref
@@ -84,8 +89,6 @@
 /docs/framework/reflection-and-codedom/** @Thraka
 # Resources
 /docs/framework/resources/** @Thraka
-# Security
-/docs/framework/security/** @mairaw
 # Tools
 /docs/framework/tools/** @tdykstra
 # UI Automation
@@ -123,6 +126,8 @@
 /docs/standard/collections/** @BillWagner
 # Data
 /docs/standard/data/** @gewarren
+# Data - SQLite
+/docs/standard/data/sqlite/** @bricelam
 # Datetime
 /docs/standard/datetime/** @Thraka
 # Design guidelines

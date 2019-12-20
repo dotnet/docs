@@ -37,7 +37,7 @@ The code sample defines a function called `square` that takes an input named `x`
 val square: x:int -> int
 ```
 
-This is what is known as the function's type signature. It can be read like this: "Square is a function that takes an integer named x and produces an integer". Note that the compiler gave `square` the `int` type for now; this is because multiplication is not generic across *all* types but rather a closed set of types. The F# compiler will adjust the type signature if you call `square` with a different input type, such as a `float`.
+This is what is known as the function's type signature. It can be read like this: "Square is a function that takes an integer named x and produces an integer". The compiler gave `square` the `int` type for now; this is because multiplication is not generic across *all* types but rather a closed set of types. The F# compiler will adjust the type signature if you call `square` with a different input type, such as a `float`.
 
 Another function, `main`, is defined, which is decorated with the `EntryPoint` attribute. This attribute tells the F# compiler that program execution should start there. It follows the same convention as other [C-style programming languages](https://en.wikipedia.org/wiki/Entry_point#C_and_C.2B.2B), where command-line arguments can be passed to this function, and an integer code is returned (typically `0`).
 

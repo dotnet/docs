@@ -2,7 +2,7 @@
 title: "Serialize and deserialize JSON using C# - .NET"
 author: tdykstra
 ms.author: tdykstra
-ms.date: "09/16/2019"
+ms.date: "12/20/2019"
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"

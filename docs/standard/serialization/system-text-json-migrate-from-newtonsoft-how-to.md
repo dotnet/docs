@@ -2,7 +2,7 @@
 title: "Migrate from Newtonsoft.Json to System.Text.Json - .NET"
 author: tdykstra
 ms.author: tdykstra
-ms.date: "12/02/2019"
+ms.date: "12/20/2019"
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"

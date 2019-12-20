@@ -71,7 +71,7 @@ You can make your class library widely available by publishing it as a NuGet pac
 
    For example, enter **Command Prompt** in the search box on the Windows task bar. Select the **Command Prompt** desktop app or press **Enter** if it's already selected in the search results.
 
-1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the *Documents\Visual Studio 2019\Projects\ClassLibraryProjects\StringLibrary* directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
+1. Navigate to your library's project directory. The directory contains your source code and a project file, *StringLibrary.csproj* or *StringLibrary.vbproj*.
 
 1. Run the [dotnet pack](../tools/dotnet-pack.md) command to generate a package with a *.nupkg* extension:
 

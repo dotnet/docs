@@ -8,7 +8,7 @@ As of ASP.NET Core 3.0, MVC doesn't add [AllowAnonymousFilters](xref:Microsoft.A
 
 #### Old behavior
 
-<xref:Microsoft.AspNetCore.Authorization.IAllowAnonymous> appeared in the [AuthorizationFilterContext.Filters](xref:Microsoft.AspNetCore.Mvc.Filters.FilterContext.Filters%2A) collection. Testing for the interface's presence was a valid approach to override/disable the filter on individual controller methods.
+<xref:Microsoft.AspNetCore.Authorization.IAllowAnonymous> appeared in the [AuthorizationFilterContext.Filters](xref:Microsoft.AspNetCore.Mvc.Filters.FilterContext.Filters%2A) collection. Testing for the interface's presence was a valid approach to override or disable the filter on individual controller methods.
 
 #### New behavior
 

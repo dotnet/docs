@@ -42,6 +42,8 @@
       href: install/linux-package-manager-sles12.md
     - name: SLES 15
       href: install/linux-package-manager-sles15.md
+  - name: Install localized IntelliSense
+    href: install/localized-intellisense.md
 - name: Get started
   href: get-started.md
   items:
@@ -92,7 +94,7 @@
   - name: Build a complete .NET Core solution on macOS
     href: tutorials/using-on-mac-vs-full-solution.md
   - name: Get started with .NET Core using the CLI tools
-    href: tutorials/using-with-xplat-cli.md
+    href: tutorials/cli-create-console-app.md
   - name: Organize and test projects with the .NET Core CLI
     href: tutorials/testing-with-cli.md
   - name: Develop libraries with cross-platform tools
@@ -179,7 +181,11 @@
       href: diagnostics/dotnet-dump.md
     - name: dotnet-trace
       href: diagnostics/dotnet-trace.md
-- name: Unit testing
+  - name: .NET Core diagnostics tutorials
+    items:
+    - name: Debugging a memory leak
+      href: diagnostics/debug-memory-leak.md
+- name: Unit Testing
   href: testing/index.md
   items:
   - name: Unit testing best practices
@@ -322,6 +328,8 @@
 - name: .NET Core additional tools
   href: additional-tools/index.md
   items:
+  - name: .NET Core Uninstall Tool
+    href: additional-tools/uninstall-tool.md
   - name: WCF Web Service Reference Provider
     href: additional-tools/wcf-web-service-reference-guide.md
   - name: dotnet-svcutil

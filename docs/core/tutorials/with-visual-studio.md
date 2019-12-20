@@ -14,7 +14,7 @@ This article provides a step-by-step introduction to create and run a Hello Worl
 
 - [Visual Studio 2019 version 16.4 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. .NET Core 3.1 SDK is automatically installed when you select this workload.
 
-For more information, see the [Install with Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) section on the [Install the .NET Core SDK](../install/sdk.md) article.
+For more information, see the [Install with Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) section on the [Install the .NET Core SDK](../install/sdk.md?pivots=os-windows) article.
 
 ## Create the app
 
@@ -30,22 +30,22 @@ The following instructions create a simple Hello World console application:
 
    1. On the start window, choose **Create a new project**.
 
-      ![Create a new project button selected on the Visual Studio start window](media/with-visual-studio/start-window.png)
+      ![Create a new project button selected on the Visual Studio start window](./media/with-visual-studio/start-window.png)
 
    1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
 
-      ![Create a new project window with filters selected](media/with-visual-studio/create-new-project.png)
+      ![Create a new project window with filters selected](./media/with-visual-studio/create-new-project.png)
 
       > [!TIP]
       > If you don't see the .NET Core templates, you're probably missing the required workload installed. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET Core cross-platform development** workload installed.
 
    1. On the **Configure your new project** page,  enter **HelloWorld** in the **Project name** box. Then, choose **Create**.
 
-      ![Configure your new project window with Project name, location, and solution name fields](media/with-visual-studio/configure-new-project.png)
+      ![Configure your new project window with Project name, location, and solution name fields](./media/with-visual-studio/configure-new-project.png)
 
    The C# Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-   ![Visual Studio and the new HelloWorld project](media/with-visual-studio/visual-studio-main-window.png)
+   ![Visual Studio and the new HelloWorld project](./media/with-visual-studio/visual-studio-main-window.png)
 
 # [Visual Basic](#tab/vb)
 
@@ -55,11 +55,11 @@ The following instructions create a simple Hello World console application:
 
    1. On the start window, choose **Create a new project**.
 
-      ![Create a new project button selected on the Visual Studio start window](media/with-visual-studio/start-window.png)
+      ![Create a new project button selected on the Visual Studio start window](./media/with-visual-studio/start-window.png)
 
    1. On the **Create a new project** page, enter **console** in the search box. Next, choose **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
 
-      ![Choose the Visual Basic template for the Console App (.NET Framework)](media/with-visual-studio/vb/create-new-project.png)
+      ![Choose the Visual Basic template for the Console App (.NET Framework)](./media/with-visual-studio/vb/create-new-project.png)
 
       > [!TIP]
       > If you don't see the .NET Core templates, you're probably missing the required workload installed. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET Core cross-platform development** workload installed.
@@ -68,7 +68,7 @@ The following instructions create a simple Hello World console application:
 
    The console app template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the `args` parameter.
 
-   ![Visual Studio and the new HelloWorld project](media/with-visual-studio/vb/visual-studio-main-window.png)
+   ![Visual Studio and the new HelloWorld project](./media/with-visual-studio/vb/visual-studio-main-window.png)
 
 ---
 

@@ -1,9 +1,9 @@
 ---
-title: "How to: Write Object Data to an XML File (C#)"
+title: "How to write object data to an XML file (C#)"
 ms.date: 07/20/2015
 ms.assetid: 7681eb98-703d-4005-a369-26a7bca0f894
 ---
-# How to: Write Object Data to an XML File (C#)
+# How to write object data to an XML file (C#)
 This example writes the object from a class to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
   
 ## Example  
@@ -58,5 +58,5 @@ public class XMLWrite
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Read Object Data from an XML File (C#)](./how-to-read-object-data-from-an-xml-file.md)
+- [How to read object data from an XML file (C#)](./how-to-read-object-data-from-an-xml-file.md)
 - [Serialization (C#)](./index.md)

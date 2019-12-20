@@ -25,9 +25,13 @@
       "build_source_folder": ".",
       "build_output_subfolder": ".",
       "locale": "en-us",
-      "xref_query_tags": ["/uwp/api"],
+      "xref_query_tags": [
+        "/uwp/api"
+      ],
       "monikers": [],
-      "filemap_share_depots": ["VS.dotnet-api-docs"],
+      "filemap_share_depots": [
+        "VS.dotnet-api-docs"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "ZonePivotGroups": "Toc",
@@ -79,5 +83,8 @@
       "url": "https://github.com/dotnet/machinelearning-samples",
       "branch": "master"
     }
-  ]
+  ],
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }

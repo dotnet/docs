@@ -19,7 +19,7 @@ This process can be automated with the ML.NET CLI, which implements the ML.NET A
 
 ## What is the ML.NET Command-line Interface (CLI)?
 
-You can run the ML.NET CLI on any command-prompt (Windows, Mac, or Linux) for generating good quality ML.NET models and source code based on your training dataset.
+You can run the ML.NET CLI on any command-prompt (Windows, macOS, or Linux) for generating good quality ML.NET models and source code based on your training dataset.
 
 As shown in the figure below, it is simple to generate a high quality ML.NET model (serialized model .zip file) plus the sample C# code to run/score that model. In addition, the C# code to create/train that model is also generated, so that you can research and iterate on the algorithm and settings used for that generated "best model".
 

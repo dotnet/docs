@@ -69,7 +69,7 @@ A class can contain declarations of the following members:
 
 - [Structs](../../programming-guide/classes-and-structs/structs.md)
 
-- [Enumerations](../../programming-guide/enumeration-types.md)
+- [Enumerations](../builtin-types/enum.md)
 
 ## Example
 

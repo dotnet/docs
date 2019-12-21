@@ -2,7 +2,7 @@
 title: Relational vs. NoSQL data
 description: Learn about relational and NoSQL data in cloud-native applications
 author: robvet
-ms.date: 12/19/2019
+ms.date: 12/20/2019
 ---
 # Relational vs. NoSQL data
 
